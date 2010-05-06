@@ -488,14 +488,14 @@ public class MaximumEntropyClassifierTester {
     // add feature for previous label:
     features.add("PREV_LABEL-" + prevLabel);
 
-    //TEST : 
+    // current word and previous label (GOOD)
     features.add("WORD-"+word+", PREV_LABEL-"+prevLabel);
 
     // Does word contain a digit?
     for (char c : word.toCharArray()) {
       if (Character.isDigit(c)) {
         features.add("HAS_DIGIT");
-        //TEST : features.add("HAS_DIGIT, PREV_LABEL-"+prevLabel);
+        //TEST : BAD :    features.add("HAS_DIGIT, PREV_LABEL-"+prevLabel); 
         break;
       }
     }
@@ -503,11 +503,11 @@ public class MaximumEntropyClassifierTester {
     // add feature for previous words
     if (position > 0){
       features.add("PREV_WORD-" + sentence.get(position - 1));
-      //TEST : features.add("PREV_WORD-"+sentence.get(position-1)+", PREV_LABEL-"+prevLabel);
+      //TEST : BAD : features.add("PREV_WORD-"+sentence.get(position-1)+", PREV_LABEL-"+prevLabel);
     }
     if (position > 1){
       features.add("PREV_PREV_WORD-" + sentence.get(position - 2));
-      // TEST : features.add("PREV_PREV_WORD-" + sentence.get(position - 2)+", PREV_LABEL-"+prevLabel);
+      // TEST :  BAD : features.add("PREV_PREV_WORD-" + sentence.get(position - 2)+", PREV_LABEL-"+prevLabel); 
     }
     
     // add feature for next words
@@ -519,6 +519,16 @@ public class MaximumEntropyClassifierTester {
     if (position < sentence.size() - 2)
       features.add("NEXT_NEXT_WORD-" + sentence.get(position + 2));
 
+    // Does the word contain "cell"?
+    if (word.contains("cell")) {
+    	features.add("HAS_CELL");
+    	// TEST : BAD    	features.add("HAS_CELL, PREV_LABEL-"+prevLabel);
+    	if (position>0){
+    	// TEST : 
+    		features.add("HAS_CELL, PREV_WORD-"+ sentence.get(position-1));
+    	}
+    }
+    
     // Does word contain a dash?
     for (char c : word.toCharArray()) {
       if (c == '-') {
@@ -570,14 +580,7 @@ public class MaximumEntropyClassifierTester {
       features.add("PREFIX_4-" + word.substring(0, 4));
     }
 
-    // Does the word contain "cell"?
-    if (word.contains("cell")) {
-    	features.add("HAS_CELL");
-    	// TEST : features.add("HAS_CELL, PREV_LABEL-"+prevLabel);
-    	if (position>0){
-    	// TEST : features.add("HAS_CELL, PREV_WORD-"+ sentences.get(position-1));
-    	}
-    }
+
 
     // Does the word contain an x?
     if (lword.contains("x")) {
