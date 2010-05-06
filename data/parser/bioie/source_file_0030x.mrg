@@ -1,0 +1,331 @@
+;PMID: 2021946
+;source_file_1243.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..125] = [t:42..125]
+;2)section:[e:129..194] = [t:129..194]
+;3)section:[e:198..285] = [t:198..285]
+;4)sentence:[e:289..608] = [t:289..608]
+;5)sentence:[e:609..781] = [t:609..781]
+;6)sentence:[e:782..831] = [t:782..831]
+;7)sentence:[e:832..912] = [t:832..912]
+;8)sentence:[e:913..1062] = [t:913..1062]
+;9)sentence:[e:1063..1286] = [t:1063..1286]
+;10)sentence:[e:1288..1358] = [t:1288..1358]
+;11)section:[e:1362..1406] = [t:1362..1406]
+
+;section 0 Span:0..37
+;Cancer Res  1991 May 15;51(10):2690-3
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1991)
+        (MD:[17..20] May) (DT:[21..27] 15;51-LRB-) (CD:[27..29] 10)
+        (-RRB-:[29..30] -RRB-) (CD:[30..35] :2690) (::[35..36] -)
+        (CD:[36..37] 3)))
+
+;sentence 1 Span:42..125
+;High rates of ras codon 61 mutation in thyroid tumors in an iodide-deficient 
+;area.
+;[56..59]:gene-rna:"ras"
+;[60..68]:variation-location:"codon 61"
+;[69..77]:variation-event:"mutation"
+;[81..95]:malignancy:"thyroid tumors"
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..46] High) (NNS:[47..52] rates))
+    (PP (IN:[53..55] of)
+      (NP (NN:[56..59] ras)
+        (NML (NN:[60..65] codon) (CD:[66..68] 61))
+        (NN:[69..77] mutation)))
+    (PP-LOC (IN:[78..80] in)
+      (NP (JJ:[81..88] thyroid) (NNS:[89..95] tumors)))
+    (PP-LOC (IN:[96..98] in)
+      (NP (DT:[99..101] an)
+        (ADJP (NN:[102..108] iodide) (HYPH:[108..109] -)
+              (JJ:[109..118] deficient))
+        (NN:[120..124] area)))
+    (.:[124..125] .)))
+
+;section 2 Span:129..194
+;Shi YF, Zou MJ, Schmidt H, Juhasz F, Stensky V, Robb D, Farid NR.
+(SEC
+  (FRAG (NNP:[129..132] Shi) (NNP:[133..135] YF) (,:[135..136] ,)
+        (NNP:[137..140] Zou) (NNP:[141..143] MJ) (,:[143..144] ,)
+        (NNP:[145..152] Schmidt) (NNP:[153..154] H) (,:[154..155] ,)
+        (NNP:[156..162] Juhasz) (NNP:[163..164] F) (,:[164..165] ,)
+        (NNP:[166..173] Stensky) (NNP:[174..175] V) (,:[175..176] ,)
+        (NNP:[177..181] Robb) (NNP:[182..183] D) (,:[183..184] ,)
+        (NNP:[185..190] Farid) (NNP:[191..193] NR) (.:[193..194] .)))
+
+;section 3 Span:198..285
+;Thyroid Research Laboratory, Health Sciences Centre, St. John's,
+;Newfoundland,  Canada.
+(SEC
+  (FRAG (NNP:[198..205] Thyroid) (NNP:[206..214] Research)
+        (NNP:[215..225] Laboratory) (,:[225..226] ,) (NNP:[227..233] Health)
+        (NNPS:[234..242] Sciences) (NNP:[243..249] Centre) (,:[249..250] ,)
+        (NNP:[251..254] St.) (NNP:[255..259] John) (POS:[259..261] 's)
+        (,:[261..262] ,) (NNP:[263..275] Newfoundland) (,:[275..276] ,)
+        (NNP:[278..284] Canada) (.:[284..285] .)))
+
+;sentence 4 Span:289..608
+;Using polymerase chain reaction and sequence-specific oligonucleotide 
+;hybridization, the frequency of three ras oncogene mutations (N-ras, Ha-ras,
+;and  K-ras) in thyroid tumors (25 adenomas, 16 follicular carcinomas, and 22 
+;papillary carcinomas) was investigated in both iodide-deficient and 
+;iodide-sufficient areas.
+;[295..305]:gene-protein:"polymerase"
+;[398..401]:gene-rna:"ras"
+;[422..427]:gene-rna:"N-ras"
+;[429..435]:gene-rna:"Ha-ras"
+;[442..447]:gene-rna:"K-ras"
+;[452..466]:malignancy:"thyroid tumors"
+;[471..479]:malignancy:"adenomas"
+;[484..505]:malignancy:"follicular carcinomas"
+;[515..535]:malignancy:"papillary carcinomas"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[289..289] *))
+      (VP (VBG:[289..294] Using)
+        (NP
+          (NP (NN:[295..305] polymerase) (NN:[306..311] chain)
+              (NN:[312..320] reaction))
+          (CC:[321..324] and)
+          (NP
+            (ADJP (NN:[325..333] sequence) (HYPH:[333..334] -)
+                  (JJ:[334..342] specific))
+            (NN:[343..358] oligonucleotide) (NN:[360..373] hybridization)))))
+    (,:[373..374] ,)
+    (NP-SBJ-2
+      (NP (DT:[375..378] the) (NN:[379..388] frequency))
+      (PP (IN:[389..391] of)
+        (NP
+          (NP (CD:[392..397] three)
+            (NML (NN:[398..401] ras) (NN:[402..410] oncogene))
+            (NNS:[411..420] mutations)
+            (PRN (-LRB-:[421..422] -LRB-)
+              (NP (NN:[422..427] N-ras) (,:[427..428] ,) (NN:[429..435] Ha-ras)
+                  (,:[435..436] ,) (CC:[437..440] and) (NN:[442..447] K-ras))
+              (-RRB-:[447..448] -RRB-)))
+          (PP (IN:[449..451] in)
+            (NP
+               (JJ:[452..459] thyroid) (NNS:[460..466] tumors)
+              (PRN (-LRB-:[467..468] -LRB-)
+                (NP
+                  (NP (CD:[468..470] 25) (NNS:[471..479] adenomas))
+                  (,:[479..480] ,)
+                  (NP (CD:[481..483] 16)
+                     (JJ:[484..494] follicular) (NNS:[495..505] carcinomas))
+                  (,:[505..506] ,) (CC:[507..510] and)
+                  (NP (CD:[511..513] 22)
+                     (JJ:[515..524] papillary) (NNS:[525..535] carcinomas)))
+                (-RRB-:[535..536] -RRB-)))))))
+    (VP (VBD:[537..540] was)
+      (VP (VBN:[541..553] investigated)
+        (NP-2 (-NONE-:[553..553] *))
+        (PP-LOC (IN:[554..556] in)
+          (NP (CC:[557..561] both)
+            (NP
+              (NML (NN:[562..568] iodide) (HYPH:[568..569] -)
+                   (JJ:[569..578] deficient))
+              (NML-1 (-NONE-:[578..578] *P*)))
+            (CC:[579..582] and)
+            (NP
+              (NML (NN:[584..590] iodide) (HYPH:[590..591] -)
+                   (JJ:[591..601] sufficient))
+              (NML-1 (NNS:[602..607] areas)))))))
+    (.:[607..608] .)))
+
+;sentence 5 Span:609..781
+;The ras oncogene mutation rate was significantly higher  in the
+;iodide-deficient area, being 85 versus 17% in the adenomas, and 50 versus 
+;10% in the follicular carcinomas.
+;[613..616]:gene-rna:"ras"
+;[723..731]:malignancy:"adenomas"
+;[759..780]:malignancy:"follicular carcinomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[609..612] The)
+      (NML (NN:[613..616] ras) (NN:[617..625] oncogene))
+      (NN:[626..634] mutation) (NN:[635..639] rate))
+    (VP (VBD:[640..643] was)
+      (ADJP-PRD (RB:[644..657] significantly) (JJR:[658..664] higher))
+      (PP (IN:[666..668] in)
+        (NP (DT:[669..672] the)
+          (ADJP (NN:[673..679] iodide) (HYPH:[679..680] -)
+                (JJ:[680..689] deficient))
+          (NN:[690..694] area)))
+      (,:[694..695] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[695..695] *))
+        (VP
+          (VP (VBG:[696..701] being)
+            (NP-PRD
+              (NP (CD:[702..704] 85)
+                (NML-2 (-NONE-:[704..704] *P*)))
+              (PP (IN:[705..711] versus)
+                (NP (CD:[712..714] 17)
+                  (NML-2 (NN:[714..715] %)))))
+            (PP (IN:[716..718] in)
+              (NP (DT:[719..722] the) (NNS:[723..731] adenomas))))
+          (,:[731..732] ,) (CC:[733..736] and)
+          (VP
+            (NP-PRD
+              (NP (CD:[737..739] 50)
+                (NML-1 (-NONE-:[739..739] *P*)))
+              (PP (IN:[740..746] versus)
+                (NP (CD:[748..750] 10)
+                  (NML-1 (NN:[750..751] %)))))
+            (PP-LOC (IN:[752..754] in)
+              (NP (DT:[755..758] the)
+                 (JJ:[759..769] follicular) (NNS:[770..780] carcinomas)))))))
+    (.:[780..781] .)))
+
+;sentence 6 Span:782..831
+;No mutations were found in papillary  carcinomas.
+;[809..830]:malignancy:"papillary  carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[782..784] No) (NNS:[785..794] mutations))
+    (VP (VBD:[795..799] were)
+      (VP (VBN:[800..805] found)
+        (NP-1 (-NONE-:[805..805] *))
+        (PP-LOC (IN:[806..808] in)
+          (NP (JJ:[809..818] papillary) (NNS:[820..830] carcinomas)))))
+    (.:[830..831] .)))
+
+;sentence 7 Span:832..912
+;The most common mutation site was Ha-ras codon 61 with Gln----Arg 
+;substitution.
+;[848..856]:variation-event:"mutation"
+;[866..872]:gene-rna:"Ha-ras"
+;[873..881]:variation-location:"codon 61"
+;[887..890]:variation-state-original:"Gln"
+;[894..897]:variation-state-altered:"Arg"
+;[899..911]:variation-type:"substitution"
+(SENT
+  (S
+    (NP-SBJ (DT:[832..835] The)
+      (ADJP (RBS:[836..840] most) (JJ:[841..847] common))
+      (NN:[848..856] mutation) (NN:[857..861] site))
+    (VP (VBD:[862..865] was)
+      (NP-PRD
+        (NP (NN:[866..872] Ha-ras)
+           (NN:[873..878] codon) (CD:[879..881] 61))
+        (PP (IN:[882..886] with)
+          (NP
+            (NML (NN:[887..890] Gln) (SYM:[890..894] ----) (NN:[894..897] Arg))
+            (NN:[899..911] substitution)))))
+    (.:[911..912] .)))
+
+;sentence 8 Span:913..1062
+;Two ras mutations at codon 61 (Gln----Lys in N-ras and Gln----Arg  in Ha-ras)
+;were found in a microfollicular adenoma specimen from Eastern  Hungary.
+;[917..920]:gene-rna:"ras"
+;[921..930]:variation-event:"mutations"
+;[934..942]:variation-location:"codon 61"
+;[944..947]:variation-state-original:"Gln"
+;[951..954]:variation-state-altered:"Lys"
+;[958..963]:gene-rna:"N-ras"
+;[968..971]:variation-state-original:"Gln"
+;[975..978]:variation-state-altered:"Arg"
+;[983..989]:gene-rna:"Ha-ras"
+;[1007..1030]:malignancy:"microfollicular adenoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[913..916] Two) (NN:[917..920] ras) (NNS:[921..930] mutations))
+      (PP-LOC (IN:[931..933] at)
+        (NP (NN:[934..939] codon) (CD:[940..942] 61)))
+      (PRN (-LRB-:[943..944] -LRB-)
+        (NP
+          (NP (NN:[944..947] Gln) (SYM:[947..951] ----) (NN:[951..954] Lys))
+          (PP-LOC (IN:[955..957] in)
+            (NP (NN:[958..963] N-ras))))
+        (CC:[964..967] and)
+        (NP
+          (NP (NN:[968..971] Gln) (SYM:[971..975] ----) (NN:[975..978] Arg))
+          (PP-LOC (IN:[980..982] in)
+            (NP (NN:[983..989] Ha-ras))))
+        (-RRB-:[989..990] -RRB-)))
+    (VP (VBD:[991..995] were)
+      (VP (VBN:[996..1001] found)
+        (NP-1 (-NONE-:[1001..1001] *))
+        (PP-LOC (IN:[1002..1004] in)
+          (NP
+            (NP (DT:[1005..1006] a)
+               (JJ:[1007..1022] microfollicular) (NN:[1023..1030] adenoma)
+              (NN:[1031..1039] specimen))
+            (PP-LOC (IN:[1040..1044] from)
+              (NP (JJ:[1045..1052] Eastern) (NNP:[1054..1061] Hungary)))))))
+    (.:[1061..1062] .)))
+
+;sentence 9 Span:1063..1286
+;We conclude that dietary iodine may modulate ras oncogene mutations,  and
+;that in the iodide-deficient area, ras oncogene activation may play a more 
+;important role in the initiation and/or maintenance of follicular tumors.
+;[1108..1111]:gene-rna:"ras"
+;[1172..1175]:gene-rna:"ras"
+;[1268..1285]:malignancy:"follicular tumors"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1063..1065] We))
+    (VP (VBP:[1066..1074] conclude)
+      (SBAR
+        (SBAR (IN:[1075..1079] that)
+          (S
+            (NP-SBJ (JJ:[1080..1087] dietary) (NN:[1088..1094] iodine))
+            (VP (MD:[1095..1098] may)
+              (VP (VB:[1099..1107] modulate)
+                (NP
+                  (NML (NN:[1108..1111] ras) (NN:[1112..1120] oncogene))
+                  (NNS:[1121..1130] mutations))))))
+        (,:[1130..1131] ,) (CC:[1133..1136] and)
+        (SBAR (IN:[1137..1141] that)
+          (S
+            (PP (IN:[1142..1144] in)
+              (NP (DT:[1145..1148] the)
+                (ADJP (NN:[1149..1155] iodide) (HYPH:[1155..1156] -)
+                      (JJ:[1156..1165] deficient))
+                (NN:[1166..1170] area)))
+            (,:[1170..1171] ,)
+            (NP-SBJ (NN:[1172..1175] ras) (NN:[1176..1184] oncogene)
+                    (NN:[1185..1195] activation))
+            (VP (MD:[1196..1199] may)
+              (VP (VB:[1200..1204] play)
+                (NP (DT:[1205..1206] a)
+                  (ADJP (RBR:[1207..1211] more) (JJ:[1213..1222] important))
+                  (NN:[1223..1227] role))
+                (PP (IN:[1228..1230] in)
+                  (NP
+                    (NP (DT:[1231..1234] the) (NN:[1235..1245] initiation)
+                        (CC:[1246..1252] and/or) (NN:[1253..1264] maintenance))
+                    (PP (IN:[1265..1267] of)
+                      (NP (JJ:[1268..1278] follicular) (NNS:[1279..1285] tumors)))))))))))
+    (.:[1285..1286] .)))
+
+;sentence 10 Span:1288..1358
+;Additional factors are, however, necessary to initiate carcinogenesis.
+(SENT
+  (S
+    (NP-SBJ (JJ:[1288..1298] Additional) (NNS:[1299..1306] factors))
+    (VP (VBP:[1307..1310] are) (,:[1310..1311] ,)
+      (ADVP (RB:[1312..1319] however))
+      (,:[1319..1320] ,)
+      (ADJP-PRD (JJ:[1321..1330] necessary)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1330..1330] *))
+          (VP (TO:[1331..1333] to)
+            (VP (VB:[1334..1342] initiate)
+              (NP (NN:[1343..1357] carcinogenesis)))))))
+    (.:[1357..1358] .)))
+
+;section 11 Span:1362..1406
+;PMID: 2021946 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1362..1366] PMID) (::[1366..1367] :) (CD:[1368..1375] 2021946)
+        (NN:[1376..1377] -LSB-) (NNP:[1377..1383] PubMed) (::[1384..1385] -)
+        (NN:[1386..1393] indexed) (IN:[1394..1397] for)
+        (NNP:[1398..1406] MEDLINE-RSB-)))

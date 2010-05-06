@@ -1,0 +1,333 @@
+;PMID: 2384072
+;source_file_895.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..143] = [t:50..143]
+;2)section:[e:147..173] = [t:147..173]
+;3)section:[e:177..260] = [t:177..260]
+;4)sentence:[e:264..506] = [t:264..506]
+;5)sentence:[e:507..656] = [t:507..656]
+;6)sentence:[e:657..902] = [t:657..902]
+;7)sentence:[e:903..1016] = [t:903..1016]
+;8)sentence:[e:1017..1121] = [t:1017..1121]
+;9)sentence:[e:1122..1301] = [t:1122..1301]
+;10)sentence:[e:1302..1538] = [t:1302..1538]
+;11)section:[e:1542..1586] = [t:1542..1586]
+
+;section 0 Span:0..44
+;Environ Health Perspect. 1990 Apr;85:95-100.
+(SEC
+  (FRAG (NNP:[0..7] Environ) (NNP:[8..14] Health) (NNP:[15..23] Perspect)
+        (.:[23..24] .) (CD:[25..29] 1990) (IN:[30..36] Apr;85) (CD:[36..39] :95)
+        (::[39..40] -) (CD:[40..43] 100) (.:[43..44] .)))
+
+;sentence 1 Span:50..143
+;Protection against chemical-induced lung injury by inhibition of pulmonary 
+;cytochrome P-450.
+;[69..77]:substance:"chemical"
+;[126..142]:cyp450:"cytochrome P-450"
+(SENT
+  (NP-HLN
+    (NP (NN:[50..60] Protection))
+    (PP (IN:[61..68] against)
+      (NP
+        (ADJP (NN:[69..77] chemical) (HYPH:[77..78] -) (VBN:[78..85] induced))
+        (NN:[86..90] lung) (NN:[91..97] injury)))
+    (PP (IN:[98..100] by)
+      (NP
+        (NP (NN:[101..111] inhibition))
+        (PP (IN:[112..114] of)
+          (NP (JJ:[115..124] pulmonary)
+             (NN:[126..136] cytochrome) (NN:[137..142] P-450)))))
+    (.:[142..143] .)))
+
+;section 2 Span:147..173
+;Verschoyle RD, Dinsdale D.
+(SEC
+  (FRAG (NNP:[147..157] Verschoyle) (NNP:[158..160] RD) (,:[160..161] ,)
+        (NNP:[162..170] Dinsdale) (NNP:[171..173] D.)))
+
+;section 3 Span:177..260
+;MRC Toxicology Unit, Medical Research Council Laboratories, Carshalton
+;Surrey,  UK.
+(SEC
+  (FRAG (NNP:[177..180] MRC) (NNP:[181..191] Toxicology) (NNP:[192..196] Unit)
+        (,:[196..197] ,) (NNP:[198..205] Medical) (NNP:[206..214] Research)
+        (NNP:[215..222] Council) (NNP:[223..235] Laboratories) (,:[235..236] ,)
+        (NNP:[237..247] Carshalton) (NNP:[248..254] Surrey) (,:[254..255] ,)
+        (NNP:[257..260] UK.)))
+
+;sentence 4 Span:264..506
+;Protection afforded by trialkyl phosphorothionates against the lung injury 
+;caused by trialkyl phosphorothiolates probably results from the inhibition by
+; the P = S moiety of the thionates, of one or more pulmonary cytochrome P-450
+; isozymes.
+;[287..314]:substance:"trialkyl phosphorothionates"
+;[350..377]:substance:"trialkyl phosphorothiolates"
+;[443..452]:substance:"thionates"
+;[479..505]:cyp450:"cytochrome P-450  isozymes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[264..274] Protection))
+      (VP (VBN:[275..283] afforded)
+        (NP (-NONE-:[283..283] *))
+        (PP (IN:[284..286] by)
+          (NP-LGS (NN:[287..295] trialkyl) (NNS:[296..314] phosphorothionates))))
+      (PP (IN:[315..322] against)
+        (NP
+          (NP (DT:[323..326] the) (NN:[327..331] lung) (NN:[332..338] injury))
+          (VP (VBN:[340..346] caused)
+            (NP (-NONE-:[346..346] *))
+            (PP (IN:[347..349] by)
+              (NP-LGS (NN:[350..358] trialkyl)
+                      (NNS:[359..377] phosphorothiolates)))))))
+    (ADVP (RB:[378..386] probably))
+    (VP (VBZ:[387..394] results)
+      (PP-CLR (IN:[395..399] from)
+        (NP
+          (NP (DT:[400..403] the) (NN:[404..414] inhibition))
+          (PP (IN:[415..417] by)
+            (NP
+              (NP (DT:[419..422] the)
+                (NML (NN:[423..424] P) (SYM:[425..426] =) (NN:[427..428] S))
+                (NN:[429..435] moiety))
+              (PP (IN:[436..438] of)
+                (NP (DT:[439..442] the) (NNS:[443..452] thionates)))))
+          (,:[452..453] ,)
+          (PP (IN:[454..456] of)
+            (NP
+              (QP (CD:[457..460] one) (CC:[461..463] or) (JJR:[464..468] more))
+              (JJ:[469..478] pulmonary)
+              
+              (NML (NN:[479..489] cytochrome) (NN:[490..495] P-450))
+              (NNS:[497..505] isozymes))))))
+    (.:[505..506] .)))
+
+;sentence 5 Span:507..656
+;The aromatic hydrocarbons p-xylene and pseudocumene also protect  against
+;this injury and inhibit some P-450 isozymes, but by a different  mechanism.
+;[511..532]:substance:"aromatic hydrocarbons"
+;[533..541]:substance:"p-xylene"
+;[546..558]:substance:"pseudocumene"
+;[610..624]:cyp450:"P-450 isozymes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[507..510] The)
+         (JJ:[511..519] aromatic) (NNS:[520..532] hydrocarbons))
+      (NP (NN:[533..541] p-xylene) (CC:[542..545] and)
+          (NN:[546..558] pseudocumene)))
+    (ADVP (RB:[559..563] also))
+    (VP
+      (VP (VBP:[564..571] protect)
+        (PP-CLR (IN:[573..580] against)
+          (NP (DT:[581..585] this) (NN:[586..592] injury))))
+      (CC:[593..596] and)
+      (VP (VBP:[597..604] inhibit)
+        (NP (DT:[605..609] some)
+           (NN:[610..615] P-450) (NNS:[616..624] isozymes)))
+      (,:[624..625] ,)
+      (NAC (CC:[626..629] but)
+        (PP-MNR (IN:[630..632] by)
+          (NP (DT:[633..634] a) (JJ:[635..644] different)
+              (NN:[646..655] mechanism)))))
+    (.:[655..656] .)))
+
+;sentence 6 Span:657..902
+;OOS-Trimethylphosphorothionate and p-xylene were compared as  protective
+;agents against the effect of OOS-trimethylphosphorothiolate and two  other
+;lung toxins ipomeanol and 1-nitronaphthalene that are known to be  activated
+;by cytochrome P-450.
+;[657..687]:substance:"OOS-Trimethylphosphorothionate"
+;[692..700]:substance:"p-xylene"
+;[730..736]:substance:"agents"
+;[759..789]:substance:"OOS-trimethylphosphorothiolate"
+;[810..816]:substance:"toxins"
+;[817..826]:substance:"ipomeanol"
+;[831..849]:substance:"1-nitronaphthalene"
+;[885..901]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[657..687] OOS-Trimethylphosphorothionate) (CC:[688..691] and)
+              (NN:[692..700] p-xylene))
+    (VP (VBD:[701..705] were)
+      (VP (VBN:[706..714] compared)
+        (NP-2 (-NONE-:[714..714] *))
+        (PP (IN:[715..717] as)
+          (NP
+            (NP (JJ:[719..729] protective) (NNS:[730..736] agents))
+            (PP (IN:[737..744] against)
+              (NP
+                (NP (DT:[745..748] the) (NN:[749..755] effect))
+                (PP (IN:[756..758] of)
+                  (NP
+                    (NP (NN:[759..789] OOS-trimethylphosphorothiolate))
+                    (CC:[790..793] and)
+                    (NP
+                      (NP
+                        (NP (CD:[794..797] two) (JJ:[799..804] other)
+                            (NN:[805..809] lung) (NNS:[810..816] toxins))
+                        (NP (NN:[817..826] ipomeanol) (CC:[827..830] and)
+                            (NN:[831..849] 1-nitronaphthalene)))
+                      (SBAR
+                        (WHNP-1 (WDT:[850..854] that))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[854..854] *T*))
+                          (VP (VBP:[855..858] are)
+                            (VP (VBN:[859..864] known)
+                              (S
+                                (NP-SBJ-1 (-NONE-:[864..864] *))
+                                (VP (TO:[865..867] to)
+                                  (VP (VB:[868..870] be)
+                                    (VP (VBN:[872..881] activated)
+                                      (NP-1 (-NONE-:[881..881] *))
+                                      (PP (IN:[882..884] by)
+                                        (NP-LGS (NN:[885..895] cytochrome)
+                                                (NN:[896..901] P-450))))))))))))))))))))
+    (.:[901..902] .)))
+
+;sentence 7 Span:903..1016
+;The effects of these protective compounds, in  vivo, on pulmonary cytochrome
+;P-450 activity were also determined.
+;[935..944]:substance:"compounds"
+;[969..985]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[903..906] The) (NNS:[907..914] effects))
+      (PP (IN:[915..917] of)
+        (NP (DT:[918..923] these) (JJ:[924..934] protective)
+            (NNS:[935..944] compounds)))
+      (,:[944..945] ,)
+      (ADVP (FW:[946..948] in) (FW:[950..954] vivo))
+      (,:[954..955] ,)
+      (PP (IN:[956..958] on)
+        (NP (JJ:[959..968] pulmonary)
+          (NML (NN:[969..979] cytochrome) (NN:[980..985] P-450))
+          (NN:[986..994] activity))))
+    (VP (VBD:[995..999] were)
+      (ADVP (RB:[1000..1004] also))
+      (VP (VBN:[1005..1015] determined)
+        (NP-1 (-NONE-:[1015..1015] *))))
+    (.:[1015..1016] .)))
+
+;sentence 8 Span:1017..1121
+;Both  compounds inhibited pentoxyresorufin O-deethylase activity, but not 
+;ethoxyresorufin O-deethylase.
+;[1023..1032]:substance:"compounds"
+;[1043..1072]:substance:"pentoxyresorufin O-deethylase"
+;[1092..1120]:substance:"ethoxyresorufin O-deethylase"
+(SENT
+  (S
+    (NP-SBJ (DT:[1017..1021] Both) (NNS:[1023..1032] compounds))
+    (VP (VBD:[1033..1042] inhibited)
+      (NP
+        (NP
+          (NML (NN:[1043..1059] pentoxyresorufin) (NN:[1060..1072] O-deethylase))
+          (NML-1 (NN:[1073..1081] activity)))
+        (,:[1081..1082] ,)
+        (CONJP (CC:[1083..1086] but) (RB:[1087..1090] not))
+        (NP
+          (NML (NN:[1092..1107] ethoxyresorufin) (NN:[1108..1120] O-deethylase))
+          (NML-1 (-NONE-:[1120..1120] *P*)))))
+    (.:[1120..1121] .)))
+
+;sentence 9 Span:1122..1301
+;The phosphorothionate was most effective against  lung injury caused by the
+;phosphorothiolates and 1-nitronaphthalene, whereas  p-xylene was much more
+;effective against ipomeanol.
+;[1126..1143]:substance:"phosphorothionate"
+;[1198..1216]:substance:"phosphorothiolates"
+;[1221..1239]:substance:"1-nitronaphthalene"
+;[1250..1258]:substance:"p-xylene"
+;[1291..1300]:substance:"ipomeanol"
+(SENT
+  (S
+    (NP-SBJ (DT:[1122..1125] The) (NN:[1126..1143] phosphorothionate))
+    (VP (VBD:[1144..1147] was)
+      (ADJP-PRD (RBS:[1148..1152] most) (JJ:[1153..1162] effective)
+        (PP (IN:[1163..1170] against)
+          (NP
+            (NP (NN:[1172..1176] lung) (NN:[1177..1183] injury))
+            (VP (VBN:[1184..1190] caused)
+              (NP (-NONE-:[1190..1190] *))
+              (PP (IN:[1191..1193] by)
+                (NP-LGS
+                  (NP (DT:[1194..1197] the)
+                      (NNS:[1198..1216] phosphorothiolates))
+                  (CC:[1217..1220] and)
+                  (NP (NN:[1221..1239] 1-nitronaphthalene)))))))))
+    (,:[1239..1240] ,)
+    (SBAR-ADV (IN:[1241..1248] whereas)
+      (S
+        (NP-SBJ (NN:[1250..1258] p-xylene))
+        (VP (VBD:[1259..1262] was)
+          (ADJP-PRD
+            (ADVP (RB:[1263..1267] much) (RBR:[1268..1272] more))
+            (JJ:[1273..1282] effective)
+            (PP (IN:[1283..1290] against)
+              (NP (NN:[1291..1300] ipomeanol)))))))
+    (.:[1300..1301] .)))
+
+;sentence 10 Span:1302..1538
+;beta-Naphthoflavone, which  induces pulmonary ethoxyresorufin O-deethylase
+;activity, did not protect against  phosphorothiolate or 1-nitronaphthalene
+;injury, and it was only marginally  effective in decreasing the toxicity of
+;ipomeanol.
+;[1302..1321]:substance:"beta-Naphthoflavone"
+;[1348..1376]:substance:"ethoxyresorufin O-deethylase"
+;[1412..1429]:substance:"phosphorothiolate"
+;[1433..1451]:substance:"1-nitronaphthalene"
+;[1528..1537]:substance:"ipomeanol"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[1302..1321] beta-Naphthoflavone))
+        (,:[1321..1322] ,)
+        (SBAR
+          (WHNP-2 (WDT:[1323..1328] which))
+          (S
+            (NP-SBJ-2 (-NONE-:[1328..1328] *T*))
+            (VP (VBZ:[1330..1337] induces)
+              (NP (JJ:[1338..1347] pulmonary)
+                (NML (NN:[1348..1363] ethoxyresorufin)
+                     (NN:[1364..1376] O-deethylase))
+                (NN:[1377..1385] activity))))))
+      (,:[1385..1386] ,)
+      (VP (VBD:[1387..1390] did) (RB:[1391..1394] not)
+        (VP (VB:[1395..1402] protect)
+          (PP (IN:[1403..1410] against)
+            (NP
+              (NP (NN:[1412..1429] phosphorothiolate)
+                (NML-1 (-NONE-:[1429..1429] *P*)))
+              (CC:[1430..1432] or)
+              (NP (NN:[1433..1451] 1-nitronaphthalene)
+                (NML-1 (NN:[1452..1458] injury))))))))
+    (,:[1458..1459] ,) (CC:[1460..1463] and)
+    (S
+      (NP-SBJ (PRP:[1464..1466] it))
+      (VP (VBD:[1467..1470] was)
+        (ADJP-PRD
+          (ADVP (RB:[1471..1475] only) (RB:[1476..1486] marginally))
+          (JJ:[1488..1497] effective))
+        (PP (IN:[1498..1500] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1500..1500] *))
+            (VP (VBG:[1501..1511] decreasing)
+              (NP
+                (NP (DT:[1512..1515] the) (NN:[1516..1524] toxicity))
+                (PP (IN:[1525..1527] of)
+                  (NP (NN:[1528..1537] ipomeanol)))))))))
+    (.:[1537..1538] .)))
+
+;section 11 Span:1542..1586
+;PMID: 2384072 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1542..1546] PMID) (::[1546..1547] :) (CD:[1548..1555] 2384072)
+        (NN:[1556..1557] -LSB-) (NNP:[1557..1563] PubMed) (::[1564..1565] -)
+        (NN:[1566..1573] indexed) (IN:[1574..1577] for)
+        (NNP:[1578..1586] MEDLINE-RSB-)))

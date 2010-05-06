@@ -1,0 +1,196 @@
+;PMID: 9009246
+;source_file_1226.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..150] = [t:43..150]
+;2)section:[e:154..191] = [t:154..191]
+;3)section:[e:195..295] = [t:195..295]
+;4)sentence:[e:299..563] = [t:299..563]
+;5)sentence:[e:564..644] = [t:564..644]
+;6)sentence:[e:645..724] = [t:645..724]
+;7)sentence:[e:725..803] = [t:725..803]
+;8)section:[e:807..851] = [t:807..851]
+
+;section 0 Span:0..38
+;Leuk Res  1996 Nov-Dec;20(11-12):901-3
+(SEC
+  (FRAG (VBG:[0..4] Leuk) (RB:[5..8] Res) (CD:[10..14] 1996) (IN:[15..19] Nov-)
+        (CD:[19..26] Dec;20-LRB-) (CD:[26..28] 11) (::[28..29] -)
+        (CD:[29..31] 12) (-RRB-:[31..32] -RRB-) (CD:[32..36] :901)
+        (::[36..37] -) (CD:[37..38] 3)))
+
+;sentence 1 Span:43..150
+;RAS gene mutations in Chinese leukaemia patients and members of a family with
+; high incidence of leukaemia.
+;[43..46]:gene-rna:"RAS"
+;[73..82]:malignancy:"leukaemia"
+;[140..149]:malignancy:"leukaemia"
+(SENT
+  (NP-HLN
+    (NP (NN:[43..46] RAS) (NN:[47..51] gene) (NNS:[52..61] mutations))
+    (PP-LOC (IN:[62..64] in)
+      (NP
+        (NP (JJ:[65..72] Chinese) (NN:[73..82] leukaemia)
+            (NNS:[83..91] patients))
+        (CC:[92..95] and)
+        (NP
+          (NP (NNS:[96..103] members))
+          (PP (IN:[104..106] of)
+            (NP
+              (NP (DT:[107..108] a) (NN:[109..115] family))
+              (PP (IN:[116..120] with)
+                (NP
+                  (NP (JJ:[122..126] high) (NN:[127..136] incidence))
+                  (PP (IN:[137..139] of)
+                    (NP (NN:[140..149] leukaemia))))))))))
+    (.:[149..150] .)))
+
+;section 2 Span:154..191
+;He LZ, Stephenson J, He GY, Mufti GJ.
+(SEC
+  (FRAG (NNP:[154..156] He) (NNP:[157..159] LZ) (,:[159..160] ,)
+        (NNP:[161..171] Stephenson) (NNP:[172..174] J,) (NNP:[175..177] He)
+        (NNP:[178..180] GY) (,:[180..181] ,) (NNP:[182..187] Mufti)
+        (NNP:[188..191] GJ.)))
+
+;section 3 Span:195..295
+;Department of Haematological Medicine, King's College School of Medicine and 
+;Dentistry, London, UK.
+(SEC
+  (FRAG (NNP:[195..205] Department) (IN:[206..208] of)
+        (NNP:[209..223] Haematological) (NNP:[224..232] Medicine)
+        (,:[232..233] ,) (NNP:[234..238] King) (POS:[238..240] 's)
+        (NNP:[241..248] College) (NNP:[249..255] School) (IN:[256..258] of)
+        (NNP:[259..267] Medicine) (CC:[268..271] and) (NNP:[273..282] Dentistry)
+        (,:[282..283] ,) (NNP:[284..290] London) (,:[290..291] ,)
+        (NNP:[292..295] UK.)))
+
+;sentence 4 Span:299..563
+;We investigated mutations of N-RAS and K-RAS by using polymerase chain
+;reaction  (PCR)-oligonucleotide hybridization techniques in 40 cases of
+;Chinese leukaemia  patients and 17 presently healthy members of a family with
+;high incidence of  acute myeloid leukaemia.
+;[328..333]:gene-rna:"N-RAS"
+;[338..343]:gene-rna:"K-RAS"
+;[353..363]:gene-protein:"polymerase"
+;[450..459]:malignancy:"leukaemia"
+;[539..562]:malignancy:"acute myeloid leukaemia"
+(SENT
+  (S
+    (NP-SBJ (PRP:[299..301] We))
+    (VP (VBD:[302..314] investigated)
+      (NP
+        (NP (NNS:[315..324] mutations))
+        (PP (IN:[325..327] of)
+          (NP
+            (NP (NN:[328..333] N-RAS))
+            (CC:[334..337] and)
+            (NP (NN:[338..343] K-RAS)))))
+      (PP-MNR (IN:[344..346] by)
+        (S
+          (NP-SBJ (-NONE-:[346..346] *))
+          (VP (VBG:[347..352] using)
+            (NP
+              (NML
+                (NML
+                  (NML (NN:[353..363] polymerase) (NN:[364..369] chain)
+                       (NN:[370..378] reaction))
+                  (NML (-LRB-:[380..381] -LRB-) (NN:[381..384] PCR)
+                       (-RRB-:[384..385] -RRB-)))
+                (HYPH:[385..386] -)
+                (NML (NN:[386..401] oligonucleotide)
+                     (NN:[402..415] hybridization)))
+              (NNS:[416..426] techniques))
+            (PP (IN:[427..429] in)
+              (NP
+                (NP (CD:[430..432] 40) (NNS:[433..438] cases))
+                (PP (IN:[439..441] of)
+                  (NP
+                    (NP (JJ:[442..449] Chinese) (NN:[450..459] leukaemia)
+                        (NNS:[461..469] patients))
+                    (CC:[470..473] and)
+                    (NP
+                      (NP (CD:[474..476] 17)
+                        (ADJP (RB:[477..486] presently) (JJ:[487..494] healthy))
+                        (NNS:[495..502] members))
+                      (PP (IN:[503..505] of)
+                        (NP
+                          (NP (DT:[506..507] a) (NN:[508..514] family))
+                          (PP (IN:[515..519] with)
+                            (NP
+                              (NP (JJ:[520..524] high) (NN:[525..534] incidence))
+                              (PP (IN:[535..537] of)
+                                (NP (JJ:[539..544] acute)
+                                    (JJ:[545..552] myeloid)
+                                    (NN:[553..562] leukaemia))))))))))))))))
+    (.:[562..563] .)))
+
+;sentence 5 Span:564..644
+;The results showed only two patients carried the  mutation in codon 12 of
+;N-RAS.
+;[614..622]:variation-event:"mutation"
+;[626..634]:variation-location:"codon 12"
+;[638..643]:gene-rna:"N-RAS"
+(SENT
+  (S
+    (NP-SBJ (DT:[564..567] The) (NNS:[568..575] results))
+    (VP (VBD:[576..582] showed)
+      (SBAR (-NONE-:[582..582] 0)
+        (S
+          (NP-SBJ
+            (ADVP (RB:[583..587] only))
+            (CD:[588..591] two) (NNS:[592..600] patients))
+          (VP (VBD:[601..608] carried)
+            (NP
+              (NP (DT:[609..612] the) (NN:[614..622] mutation))
+              (PP-LOC (IN:[623..625] in)
+                (NP
+                  (NP (NN:[626..631] codon) (CD:[632..634] 12))
+                  (PP (IN:[635..637] of)
+                    (NP (NN:[638..643] N-RAS))))))))))
+    (.:[643..644] .)))
+
+;sentence 6 Span:645..724
+;Strikingly, however, in both cases the  malignancies involved lymphoid
+;lineage.
+;[685..697]:malignancy:"malignancies"
+(SENT
+  (S
+    (ADVP (RB:[645..655] Strikingly))
+    (,:[655..656] ,)
+    (ADVP (RB:[657..664] however))
+    (,:[664..665] ,)
+    (PP (IN:[666..668] in)
+      (NP (DT:[669..673] both) (NNS:[674..679] cases)))
+    (NP-SBJ (DT:[680..683] the) (NNS:[685..697] malignancies))
+    (VP (VBD:[698..706] involved)
+      (NP (JJ:[707..715] lymphoid) (NN:[716..723] lineage)))
+    (.:[723..724] .)))
+
+;sentence 7 Span:725..803
+;There was no hereditary RAS mutation in  the members of the remarkable
+;family.
+;[749..752]:gene-rna:"RAS"
+(SENT
+  (S
+    (NP-SBJ (EX:[725..730] There))
+    (VP (VBD:[731..734] was)
+      (NP-PRD (DT:[735..737] no) (JJ:[738..748] hereditary) (NN:[749..752] RAS)
+              (NN:[753..761] mutation))
+      (PP (IN:[762..764] in)
+        (NP
+          (NP (DT:[766..769] the) (NNS:[770..777] members))
+          (PP (IN:[778..780] of)
+            (NP (DT:[781..784] the) (JJ:[785..795] remarkable)
+                (NN:[796..802] family))))))
+    (.:[802..803] .)))
+
+;section 8 Span:807..851
+;PMID: 9009246 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[807..811] PMID) (::[811..812] :) (CD:[813..820] 9009246)
+        (NN:[821..822] -LSB-) (NNP:[822..828] PubMed) (::[829..830] -)
+        (NN:[831..838] indexed) (IN:[839..842] for)
+        (NNP:[843..851] MEDLINE-RSB-)))

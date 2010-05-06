@@ -1,0 +1,324 @@
+;PMID: 4065181
+;source_file_837.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..49] = [t:0..49]
+;1)sentence:[e:55..189] = [t:55..189]
+;2)section:[e:193..265] = [t:193..265]
+;3)sentence:[e:269..379] = [t:269..379]
+;4)sentence:[e:380..646] = [t:380..646]
+;5)sentence:[e:648..899] = [t:648..899]
+;6)sentence:[e:900..1131] = [t:900..1131]
+;7)sentence:[e:1132..1211] = [t:1132..1211]
+;8)sentence:[e:1212..1324] = [t:1212..1324]
+;9)section:[e:1328..1372] = [t:1328..1371]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1328..1372][t:1328..1371]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1371..1372] ]
+;ERROR_POS mismatch [30..33] t:token e:NNP Sep
+
+;section 0 Span:0..49
+;Eur J Cancer Clin Oncol. 1985 Sep;21(9):1099-106.
+(SEC
+  (FRAG (NNP:[0..3] Eur) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..17] Clin)
+        (NNP:[18..23] Oncol) (.:[23..24] .) (CD:[25..29] 1985)
+        (token:[30..33] Sep) (::[33..34] ;) (CD:[34..36] 21)
+        (-LRB-:[36..37] -LRB-) (NNP:[37..38] 9) (-RRB-:[38..39] -RRB-)
+        (::[39..40] :) (CD:[40..44] 1099) (::[44..45] -) (CD:[45..48] 106)
+        (.:[48..49] .)))
+
+;sentence 1 Span:55..189
+;The role of metabolic activation by cytochrome P-450 in covalent binding of
+;VP  16-213 to rat liver and HeLa cell microsomal proteins.
+;[91..107]:cyp450:"cytochrome P-450"
+;[131..141]:substance:"VP  16-213"
+;[180..188]:substance:"proteins"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (DT:[55..58] The) (NN:[59..63] role))
+      (PP (IN:[64..66] of)
+        (NP
+          (NP (JJ:[67..76] metabolic) (NN:[77..87] activation))
+          (PP (IN:[88..90] by)
+            (NP (NN:[91..101] cytochrome) (NN:[102..107] P-450))))))
+    (PP (IN:[108..110] in)
+      (NP
+        (NP (JJ:[111..119] covalent) (NN:[120..127] binding))
+        (PP (IN:[128..130] of)
+          (NP (NN:[131..133] VP) (NN:[135..141] 16-213)))
+        (PP (TO:[142..144] to)
+          (NP
+            (NP
+              (NML (NN:[145..148] rat) (NN:[149..154] liver))
+              (NML-1 (-NONE-:[154..154] *P*)))
+            (CC:[155..158] and)
+            (NP
+              (NML (NN:[159..163] HeLa) (NN:[164..168] cell))
+              (NML-1 (JJ:[169..179] microsomal) (NNS:[180..188] proteins)))))))
+    (.:[188..189] .)))
+
+;section 2 Span:193..265
+;van Maanen JM, de Ruiter C, de Vries J, Kootstra PR, Gobas F, Pinedo HM.
+(SEC
+  (FRAG (NNP:[193..196] van) (NNP:[197..203] Maanen) (NNP:[204..206] JM)
+        (,:[206..207] ,) (IN:[208..210] de) (NNP:[211..217] Ruiter)
+        (NNP:[218..219] C) (,:[219..220] ,) (NNP:[221..223] de)
+        (NNP:[224..229] Vries) (NNP:[230..231] J) (,:[231..232] ,)
+        (NNP:[233..241] Kootstra) (NNP:[242..244] PR) (,:[244..245] ,)
+        (NNP:[246..251] Gobas) (NNP:[252..253] F) (,:[253..254] ,)
+        (NNP:[255..261] Pinedo) (NNP:[262..264] HM) (.:[264..265] .)))
+
+;sentence 3 Span:269..379
+;Covalent binding of 3H-labeled VP 16-213 to rat liver and HeLa cell
+;microsomal  proteins was studied in vitro.
+;[289..291]:substance:"3H"
+;[300..309]:substance:"VP 16-213"
+;[349..357]:substance:"proteins"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[269..277] Covalent) (NN:[278..285] binding))
+      (PP (IN:[286..288] of)
+        (NP
+          (ADJP (NN:[289..291] 3H) (HYPH:[291..292] -) (JJ:[292..299] labeled))
+           (NN:[300..302] VP) (NN:[303..309] 16-213)))
+      (PP (TO:[310..312] to)
+        (NP
+          (NP
+            (NML (NN:[313..316] rat) (NN:[317..322] liver))
+            (NML-1 (-NONE-:[322..322] *P*)))
+          (CC:[323..326] and)
+          (NP
+            (NML (NN:[327..331] HeLa) (NN:[332..336] cell))
+            (NML-1 (JJ:[337..347] microsomal) (NNS:[349..357] proteins))))))
+    (VP (VBD:[358..361] was)
+      (VP (VBN:[362..369] studied)
+        (NP-2 (-NONE-:[369..369] *))
+        (ADVP (FW:[370..372] in) (FW:[373..378] vitro))))
+    (.:[378..379] .)))
+
+;sentence 4 Span:380..646
+;Metabolic activation by cytochrome P-450 was  found to play a role in the
+;covalent binding of VP 16-213 to rat liver  microsomal proteins, as shown by
+;the need of NADPH cofactor, the increased  binding after phenobarbital
+;pretreatment and the inhibition by SFK-525A.
+;[404..420]:cyp450:"cytochrome P-450"
+;[474..483]:substance:"VP 16-213"
+;[509..517]:substance:"proteins"
+;[543..557]:substance:"NADPH cofactor"
+;[588..601]:substance:"phenobarbital"
+;[637..645]:substance:"SFK-525A"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[380..389] Metabolic) (NN:[390..400] activation))
+      (PP (IN:[401..403] by)
+        (NP (NN:[404..414] cytochrome) (NN:[415..420] P-450))))
+    (VP (VBD:[421..424] was)
+      (VP (VBN:[426..431] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[431..431] *))
+          (VP (TO:[432..434] to)
+            (VP (VB:[435..439] play)
+              (NP (DT:[440..441] a) (NN:[442..446] role))
+              (PP (IN:[447..449] in)
+                (NP
+                  (NP (DT:[450..453] the) (JJ:[454..462] covalent)
+                      (NN:[463..470] binding))
+                  (PP (IN:[471..473] of)
+                    (NP
+                      (NP (NN:[474..476] VP) (NN:[477..483] 16-213))
+                      (PP (TO:[484..486] to)
+                        (NP
+                          (NML (NN:[487..490] rat) (NN:[491..496] liver))
+                          (JJ:[498..508] microsomal) (NNS:[509..517] proteins))))))))))
+        (,:[517..518] ,)
+        (SBAR-ADV (IN:[519..521] as)
+          (S
+            (NP-SBJ-2 (-NONE-:[521..521] *))
+            (VP (VBN:[522..527] shown)
+              (NP-2 (-NONE-:[527..527] *))
+              (PP (IN:[528..530] by)
+                (NP
+                  (NP
+                    (NP (DT:[531..534] the) (NN:[535..539] need))
+                    (PP (IN:[540..542] of)
+                      (NP (NN:[543..548] NADPH) (NN:[549..557] cofactor))))
+                  (,:[557..558] ,)
+                  (NP
+                    (NP (DT:[559..562] the) (JJ:[563..572] increased)
+                        (NN:[574..581] binding))
+                    (PP (IN:[582..587] after)
+                      (NP (NN:[588..601] phenobarbital)
+                          (NN:[602..614] pretreatment))))
+                  (CC:[615..618] and)
+                  (NP
+                    (NP (DT:[619..622] the) (NN:[623..633] inhibition))
+                    (PP (IN:[634..636] by)
+                      (NP (NN:[637..645] SFK-525A)))))))))))
+    (.:[645..646] .)))
+
+;sentence 5 Span:648..899
+;Addition of ascorbic acid or alpha-phenyl-N-tert. butylnitrone to the
+;incubation  mixture depressed covalent binding by about 85%, suggesting that
+;formation of a  reactive metabolite from the phenolic structure may be
+;involved in the binding  process.
+;[660..673]:substance:"ascorbic acid"
+;[677..710]:substance:"alpha-phenyl-N-tert. butylnitrone"
+;[774..777]:quantitative-value:"85%"
+;[820..830]:substance:"metabolite"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[648..656] Addition))
+      (PP (IN:[657..659] of)
+        (NP
+          (NP (JJ:[660..668] ascorbic) (NN:[669..673] acid))
+          (CC:[674..676] or)
+          (NP (NN:[677..696] alpha-phenyl-N-tert) (.:[696..697] .)
+              (NN:[698..710] butylnitrone))))
+      (PP (TO:[711..713] to)
+        (NP (DT:[714..717] the) (NN:[718..728] incubation)
+            (NN:[730..737] mixture))))
+    (VP (VBD:[738..747] depressed)
+      (NP (JJ:[748..756] covalent) (NN:[757..764] binding))
+      (PP-EXT (IN:[765..767] by)
+        (NP
+          (QP (IN:[768..773] about) (CD:[774..776] 85))
+          (NN:[776..777] %)))
+      (,:[777..778] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[778..778] *))
+        (VP (VBG:[779..789] suggesting)
+          (SBAR (IN:[790..794] that)
+            (S
+              (NP-SBJ-1
+                (NP (NN:[795..804] formation))
+                (PP (IN:[805..807] of)
+                  (NP (DT:[808..809] a) (JJ:[811..819] reactive)
+                      (NN:[820..830] metabolite)))
+                (PP (IN:[831..835] from)
+                  (NP (DT:[836..839] the) (JJ:[840..848] phenolic)
+                      (NN:[849..858] structure))))
+              (VP (MD:[859..862] may)
+                (VP (VB:[863..865] be)
+                  (VP (VBN:[866..874] involved)
+                    (NP-1 (-NONE-:[874..874] *))
+                    (PP-CLR (IN:[875..877] in)
+                      (NP (DT:[878..881] the) (NN:[882..889] binding)
+                          (NN:[891..898] process)))))))))))
+    (.:[898..899] .)))
+
+;sentence 6 Span:900..1131
+;VP 16-213 did not inhibit aminopyrine N-demethylase at the  concentration
+;used in the binding experiments (17 microM), indicating that  metabolism of
+;its methylenedioxy group does not play a role in binding to  microsomal
+;proteins.
+;[900..909]:substance:"VP 16-213"
+;[926..951]:substance:"aminopyrine N-demethylase"
+;[1007..1009]:quantitative-value:"17"
+;[1010..1016]:quantitative-units:"microM"
+;[1122..1130]:substance:"proteins"
+(SENT
+  (S
+    (NP-SBJ (NN:[900..902] VP) (NN:[903..909] 16-213))
+    (VP (VBD:[910..913] did) (RB:[914..917] not)
+      (VP (VB:[918..925] inhibit)
+        (NP (NN:[926..937] aminopyrine) (NN:[938..951] N-demethylase))
+        (PP (IN:[952..954] at)
+          (NP
+            (NP (DT:[955..958] the) (NN:[960..973] concentration))
+            (VP (VBN:[974..978] used)
+              (NP (-NONE-:[978..978] *))
+              (PP (IN:[979..981] in)
+                (NP (DT:[982..985] the) (NN:[986..993] binding)
+                    (NNS:[994..1005] experiments))))
+            (PRN (-LRB-:[1006..1007] -LRB-)
+              (NP (CD:[1007..1009] 17) (NN:[1010..1016] microM))
+              (-RRB-:[1016..1017] -RRB-))))
+        (,:[1017..1018] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1018..1018] *))
+          (VP (VBG:[1019..1029] indicating)
+            (SBAR (IN:[1030..1034] that)
+              (S
+                (NP-SBJ
+                  (NP (NN:[1036..1046] metabolism))
+                  (PP (IN:[1047..1049] of)
+                    (NP (PRP$:[1050..1053] its) (NN:[1054..1068] methylenedioxy)
+                        (NN:[1069..1074] group))))
+                (VP (VBZ:[1075..1079] does) (RB:[1080..1083] not)
+                  (VP (VB:[1084..1088] play)
+                    (NP (DT:[1089..1090] a) (NN:[1091..1095] role))
+                    (PP (IN:[1096..1098] in)
+                      (NP
+                        (NP (NN:[1099..1106] binding))
+                        (PP (TO:[1107..1109] to)
+                          (NP (JJ:[1111..1121] microsomal)
+                              (NNS:[1122..1130] proteins)))))))))))))
+    (.:[1130..1131] .)))
+
+;sentence 7 Span:1132..1211
+;HeLa cell microsomes were found to possess aminopyrine  N-demethylase
+;activity.
+;[1175..1201]:substance:"aminopyrine  N-demethylase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[1132..1136] HeLa) (NN:[1137..1141] cell))
+      (NNS:[1142..1152] microsomes))
+    (VP (VBD:[1153..1157] were)
+      (VP (VBN:[1158..1163] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1163..1163] *))
+          (VP (TO:[1164..1166] to)
+            (VP (VB:[1167..1174] possess)
+              (NP
+                (NML (NN:[1175..1186] aminopyrine)
+                     (NN:[1188..1201] N-demethylase))
+                (NN:[1202..1210] activity)))))))
+    (.:[1210..1211] .)))
+
+;sentence 8 Span:1212..1324
+;Covalent binding of radiolabeled VP 16-213 to HeLa cell  microsomes decreased
+;by about 64% if NADPH was omitted.
+;[1245..1254]:substance:"VP 16-213"
+;[1299..1302]:quantitative-value:"64%"
+;[1306..1311]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1212..1220] Covalent) (NN:[1221..1228] binding))
+      (PP (IN:[1229..1231] of)
+        (NP (VBN:[1232..1244] radiolabeled)
+           (NN:[1245..1247] VP) (NN:[1248..1254] 16-213)))
+      (PP (TO:[1255..1257] to)
+        (NP
+          (NML (NN:[1258..1262] HeLa) (NN:[1263..1267] cell))
+          (NNS:[1269..1279] microsomes))))
+    (VP (VBD:[1280..1289] decreased)
+      (PP-EXT (IN:[1290..1292] by)
+        (NP
+          (QP (IN:[1293..1298] about) (CD:[1299..1301] 64))
+          (NN:[1301..1302] %)))
+      (SBAR-ADV (IN:[1303..1305] if)
+        (S
+          (NP-SBJ-1 (NN:[1306..1311] NADPH))
+          (VP (VBD:[1312..1315] was)
+            (VP (VBN:[1316..1323] omitted)
+              (NP-1 (-NONE-:[1323..1323] *)))))))
+    (.:[1323..1324] .)))
+
+;section 9 Span:1328..1371
+;PMID: 4065181 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1328..1332] PMID) (::[1332..1333] :) (CD:[1334..1341] 4065181)
+        (-LRB-:[1342..1343] -LSB-) (NNP:[1343..1349] PubMed) (::[1350..1351] -)
+        (VBN:[1352..1359] indexed) (IN:[1360..1363] for)
+        (NNP:[1364..1371] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1371..EOF] ]
+
+(ORPH -RSB-)

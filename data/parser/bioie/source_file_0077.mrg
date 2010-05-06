@@ -1,0 +1,316 @@
+;PMID: 7720092
+;source_file_880.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..176] = [t:42..176]
+;2)section:[e:180..233] = [t:180..233]
+;3)section:[e:237..303] = [t:237..303]
+;4)sentence:[e:307..447] = [t:307..447]
+;5)sentence:[e:448..566] = [t:448..566]
+;6)sentence:[e:567..692] = [t:567..692]
+;7)sentence:[e:693..787] = [t:693..787]
+;8)sentence:[e:788..942] = [t:788..942]
+;9)sentence:[e:943..1024] = [t:943..1024]
+;10)section:[e:1028..1072] = [t:1028..1072]
+
+;section 0 Span:0..36
+;Cell Immunol. 1995 Feb;160(2):305-8.
+(SEC
+  (FRAG (NNP:[0..4] Cell) (NNP:[5..12] Immunol) (.:[12..13] .)
+        (CD:[14..18] 1995) (.:[19..27] Feb;160-LRB-) (CD:[27..28] 2)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :305) (::[33..34] -)
+        (CD:[34..36] 8.)))
+
+;sentence 1 Span:42..176
+;The upregulating effect of dexamethasone on tumor necrosis factor production
+;is  mediated by a nitric oxide-producing cytochrome P450.
+;[69..82]:substance:"dexamethasone"
+;[86..107]:substance:"tumor necrosis factor"
+;[137..149]:substance:"nitric oxide"
+;[160..175]:cyp450:"cytochrome P450"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (DT:[42..45] The) (VBG:[46..58] upregulating) (NN:[59..65] effect))
+      (PP (IN:[66..68] of)
+        (NP (NN:[69..82] dexamethasone)))
+      (PP (IN:[83..85] on)
+        (NP
+          (NML (NN:[86..91] tumor) (NN:[92..100] necrosis)
+               (NN:[101..107] factor))
+          (NN:[108..118] production))))
+    (VP (VBZ:[119..121] is)
+      (VP (VBN:[123..131] mediated)
+        (NP-1 (-NONE-:[131..131] *))
+        (PP (IN:[132..134] by)
+          (NP-LGS (DT:[135..136] a)
+            (ADJP
+              (NML (JJ:[137..143] nitric) (NN:[144..149] oxide))
+              (HYPH:[149..150] -) (VBG:[150..159] producing))
+             (NN:[160..170] cytochrome) (NN:[171..175] P450)))))
+    (.:[175..176] .)))
+
+;section 2 Span:180..233
+;Fantuzzi G, Galli G, Zinetti M, Fratelli M, Ghezzi P.
+(SEC
+  (FRAG (NNP:[180..188] Fantuzzi) (NNP:[189..190] G) (,:[190..191] ,)
+        (NNP:[192..197] Galli) (NNP:[198..199] G) (,:[199..200] ,)
+        (NNP:[201..208] Zinetti) (NNP:[209..211] M,) (NNP:[212..220] Fratelli)
+        (NNP:[221..223] M,) (NNP:[224..230] Ghezzi) (NNP:[231..233] P.)))
+
+;section 3 Span:237..303
+;Mario Negri, Institute for Pharmacological Research, Milan, Italy.
+(SEC
+  (FRAG (NNP:[237..242] Mario) (NNP:[243..248] Negri) (,:[248..249] ,)
+        (NNP:[250..259] Institute) (IN:[260..263] for)
+        (NNP:[264..279] Pharmacological) (NNP:[280..288] Research)
+        (,:[288..289] ,) (NNP:[290..295] Milan) (,:[295..296] ,)
+        (NNP:[297..302] Italy) (.:[302..303] .)))
+
+;sentence 4 Span:307..447
+;Dexamethasone (DEX) is a well-known inhibitor of tumor necrosis factor (TNF) 
+;production when given shortly before lipopolysaccharide (LPS).
+;[307..320]:substance:"Dexamethasone"
+;[322..325]:substance:"DEX"
+;[343..352]:substance:"inhibitor"
+;[356..377]:substance:"tumor necrosis factor"
+;[379..382]:substance:"TNF"
+;[422..440]:substance:"lipopolysaccharide"
+;[442..445]:substance:"LPS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[307..320] Dexamethasone))
+      (NP (-LRB-:[321..322] -LRB-) (NN:[322..325] DEX))
+      (-RRB-:[325..326] -RRB-))
+    (VP (VBZ:[327..329] is)
+      (NP-PRD
+        (NP (DT:[330..331] a)
+          (ADJP (RB:[332..336] well) (HYPH:[336..337] -) (VBN:[337..342] known))
+          (NN:[343..352] inhibitor))
+        (PP (IN:[353..355] of)
+          (NP
+            (NML
+              (NML (NN:[356..361] tumor) (NN:[362..370] necrosis)
+                   (NN:[371..377] factor))
+              (NML (-LRB-:[378..379] -LRB-) (NN:[379..382] TNF)
+                   (-RRB-:[382..383] -RRB-)))
+            (NN:[385..395] production))))
+      (SBAR-ADV
+        (WHADVP-1 (WRB:[396..400] when))
+        (S
+          (NP-SBJ-2 (-NONE-:[400..400] *))
+          (VP (VBN:[401..406] given)
+            (NP-2 (-NONE-:[406..406] *))
+            (PP-TMP
+              (ADVP (RB:[407..414] shortly))
+              (IN:[415..421] before)
+              (NP
+                (NP (NN:[422..440] lipopolysaccharide))
+                (NP (-LRB-:[441..442] -LRB-) (NN:[442..445] LPS)
+                    (-RRB-:[445..446] -RRB-))))
+            (ADVP-TMP-1 (-NONE-:[446..446] *T*))))))
+    (.:[446..447] .)))
+
+;sentence 5 Span:448..566
+;However, DEX (10  mg/kg, ip) potentiates TNF production when administered
+;24-48 hr before LPS (16  micrograms/kg, ip).
+;[457..460]:substance:"DEX"
+;[462..464]:quantitative-value:"10"
+;[466..471]:quantitative-units:"mg/kg"
+;[489..492]:substance:"TNF"
+;[522..527]:quantitative-value:"24-48"
+;[528..530]:quantitative-units:"hr"
+;[538..541]:substance:"LPS"
+;[543..545]:quantitative-value:"16"
+;[547..560]:quantitative-units:"micrograms/kg"
+(SENT
+  (S
+    (ADVP (RB:[448..455] However))
+    (,:[455..456] ,)
+    (NP-SBJ (NN:[457..460] DEX)
+      (PRN (-LRB-:[461..462] -LRB-)
+        (NP
+          (NP (CD:[462..464] 10) (NN:[466..468] mg))
+          (PP (SYM:[468..469] /)
+            (NP (NN:[469..471] kg)))
+          (,:[471..472] ,)
+          (ADVP (RB:[473..475] ip)))
+        (-RRB-:[475..476] -RRB-)))
+    (VP (VBZ:[477..488] potentiates)
+      (NP (NN:[489..492] TNF) (NN:[493..503] production))
+      (SBAR-ADV
+        (WHADVP-2 (WRB:[504..508] when))
+        (S
+          (NP-SBJ-1 (-NONE-:[508..508] *))
+          (VP (VBN:[509..521] administered)
+            (NP-1 (-NONE-:[521..521] *))
+            (PP-TMP
+              (NP-ADV
+                (QP (CD:[522..524] 24) (HYPH:[524..525] -) (CD:[525..527] 48))
+                (NN:[528..530] hr))
+              (IN:[531..537] before)
+              (NP (NN:[538..541] LPS)))
+            (PRN (-LRB-:[542..543] -LRB-)
+              (NP
+                (NP (CD:[543..545] 16) (NNS:[547..557] micrograms))
+                (PP (SYM:[557..558] /)
+                  (NP (NN:[558..560] kg)))
+                (,:[560..561] ,)
+                (ADVP (RB:[562..564] ip)))
+              (-RRB-:[564..565] -RRB-))
+            (ADVP-TMP-2 (-NONE-:[565..565] *T*))))))
+    (.:[565..566] .)))
+
+;sentence 6 Span:567..692
+;We have found that this is probably due to DEX induction of  cytochrome P450
+;3A, which is known to produce nitric oxide (NO).
+;[610..613]:substance:"DEX"
+;[628..646]:cyp450:"cytochrome P450 3A"
+;[674..686]:substance:"nitric oxide"
+;[688..690]:substance:"NO"
+(SENT
+  (S
+    (NP-SBJ (PRP:[567..569] We))
+    (VP (VBP:[570..574] have)
+      (VP (VBN:[575..580] found)
+        (SBAR (IN:[581..585] that)
+          (S
+            (NP-SBJ (DT:[586..590] this))
+            (VP (VBZ:[591..593] is)
+              (ADVP (RB:[594..602] probably))
+              (PP-PRD (JJ:[603..606] due)
+                (PP (TO:[607..609] to)
+                  (NP
+                    (NP
+                      (NP (NN:[610..613] DEX) (NN:[614..623] induction))
+                      (PP (IN:[624..626] of)
+                        (NP (NN:[628..638] cytochrome) (NN:[639..643] P450)
+                            (NN:[644..646] 3A))))
+                    (,:[646..647] ,)
+                    (SBAR
+                      (WHNP-1 (WDT:[648..653] which))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[653..653] *T*))
+                        (VP (VBZ:[654..656] is)
+                          (VP (JJ:[657..662] known)
+                            (S
+                              (NP-SBJ-1 (-NONE-:[662..662] *))
+                              (VP (TO:[663..665] to)
+                                (VP (VB:[666..673] produce)
+                                  (NP
+                                    (NP (JJ:[674..680] nitric)
+                                        (NN:[681..686] oxide))
+                                    (NP (-LRB-:[687..688] -LRB-)
+                                        (NN:[688..690] NO)
+                                        (-RRB-:[690..691] -RRB-))))))))))))))))))
+    (.:[691..692] .)))
+
+;sentence 7 Span:693..787
+;The  upregulating effect of DEX on TNF production is associated with
+;increased NO  production.
+;[721..724]:substance:"DEX"
+;[728..731]:substance:"TNF"
+;[772..774]:substance:"NO"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[693..696] The) (VBG:[698..710] upregulating)
+          (NN:[711..717] effect))
+      (PP (IN:[718..720] of)
+        (NP (NN:[721..724] DEX)))
+      (PP (IN:[725..727] on)
+        (NP (NN:[728..731] TNF) (NN:[732..742] production))))
+    (VP (VBZ:[743..745] is)
+      (VP (VBN:[746..756] associated)
+        (NP-1 (-NONE-:[756..756] *))
+        (PP-CLR (IN:[757..761] with)
+          (NP (JJ:[762..771] increased) (NN:[772..774] NO)
+              (NN:[776..786] production)))))
+    (.:[786..787] .)))
+
+;sentence 8 Span:788..942
+;Both the upregulation of NO and of TNF production by DEX are  inhibited by
+;co-administration of the P450 3A inhibitor troleandomycin (TAO, 40  mg/kg,
+;ip).
+;[813..815]:substance:"NO"
+;[823..826]:substance:"TNF"
+;[841..844]:substance:"DEX"
+;[888..895]:cyp450:"P450 3A"
+;[896..905]:substance:"inhibitor"
+;[906..920]:substance:"troleandomycin"
+;[922..925]:substance:"TAO"
+;[927..929]:quantitative-value:"40"
+;[931..936]:quantitative-units:"mg/kg"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[788..792] Both)
+      (NP (DT:[793..796] the) (NN:[797..809] upregulation))
+      (PP
+        (PP (IN:[810..812] of)
+          (NP (NN:[813..815] NO)))
+        (CC:[816..819] and)
+        (PP (IN:[820..822] of)
+          (NP (NN:[823..826] TNF) (NN:[827..837] production))))
+      (PP (IN:[838..840] by)
+        (NP (NN:[841..844] DEX))))
+    (VP (VBP:[845..848] are)
+      (VP (VBN:[850..859] inhibited)
+        (NP-1 (-NONE-:[859..859] *))
+        (PP (IN:[860..862] by)
+          (NP-LGS
+            (NP (AFX:[863..865] co) (HYPH:[865..866] -)
+                (NN:[866..880] administration))
+            (PP (IN:[881..883] of)
+              (NP
+                (NP (DT:[884..887] the)
+                  (NML (NN:[888..892] P450) (NN:[893..895] 3A))
+                  (NN:[896..905] inhibitor))
+                (NP (NN:[906..920] troleandomycin))))
+            (PRN (-LRB-:[921..922] -LRB-)
+              (S
+                (NP-SBJ (NN:[922..925] TAO))
+                (,:[925..926] ,)
+                (NP-PRD
+                  (NP (CD:[927..929] 40) (NN:[931..933] mg))
+                  (PP (SYM:[933..934] /)
+                    (NP (NN:[934..936] kg))))
+                (,:[936..937] ,)
+                (ADVP (RB:[938..940] ip)))
+              (-RRB-:[940..941] -RRB-))))))
+    (.:[941..942] .)))
+
+;sentence 9 Span:943..1024
+;These data suggest that P450 3A-generated NO might be involved in  TNF
+;induction.
+;[967..974]:cyp450:"P450 3A"
+;[985..987]:substance:"NO"
+;[1010..1013]:substance:"TNF"
+(SENT
+  (S
+    (NP-SBJ (DT:[943..948] These) (NNS:[949..953] data))
+    (VP (VBP:[954..961] suggest)
+      (SBAR (IN:[962..966] that)
+        (S
+          (NP-SBJ-1
+            (ADJP
+              (NML (NN:[967..971] P450) (NN:[972..974] 3A))
+              (HYPH:[974..975] -) (VBN:[975..984] generated))
+            (NN:[985..987] NO))
+          (VP (MD:[988..993] might)
+            (VP (VB:[994..996] be)
+              (VP (VBN:[997..1005] involved)
+                (NP-1 (-NONE-:[1005..1005] *))
+                (PP-CLR (IN:[1006..1008] in)
+                  (NP (NN:[1010..1013] TNF) (NN:[1014..1023] induction)))))))))
+    (.:[1023..1024] .)))
+
+;section 10 Span:1028..1072
+;PMID: 7720092 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1028..1032] PMID) (::[1032..1033] :) (CD:[1034..1041] 7720092)
+        (NN:[1042..1043] -LSB-) (NNP:[1043..1049] PubMed) (::[1050..1051] -)
+        (NN:[1052..1059] indexed) (IN:[1060..1063] for)
+        (NNP:[1064..1072] MEDLINE-RSB-)))

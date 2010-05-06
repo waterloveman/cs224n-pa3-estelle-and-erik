@@ -1,0 +1,369 @@
+;PMID: 10189891
+;source_file_539.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..110] = [t:43..110]
+;2)section:[e:114..173] = [t:114..173]
+;3)section:[e:177..243] = [t:177..243]
+;4)sentence:[e:247..621] = [t:247..621]
+;5)sentence:[e:622..701] = [t:622..701]
+;6)sentence:[e:702..863] = [t:702..863]
+;7)sentence:[e:864..1062] = [t:864..1062]
+;8)sentence:[e:1063..1221] = [t:1063..1221]
+;9)sentence:[e:1222..1448] = [t:1222..1448]
+;10)section:[e:1452..1497] = [t:1452..1497]
+
+;section 0 Span:0..38
+;Jpn J Cancer Res  1999 Feb;90(2):205-9
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 1999) (CD:[23..28] Feb;9) (CD:[28..29] 0)
+        (-LRB-:[29..30] -LRB-) (CD:[30..31] 2) (-RRB-:[31..32] -RRB-)
+        (VBP:[32..33] :) (CD:[33..35] 20) (CD:[35..38] 5-9)))
+
+;sentence 1 Span:43..110
+;Frequent beta-catenin abnormalities in bone and soft-tissue tumors.
+;[52..64]:gene-rna:"beta-catenin"
+;[65..78]:variation-event:"abnormalities"
+;[82..86]:malignancy-type:"bone"
+;[82..86]:malignancy:"bone"
+;[91..109]:malignancy:"soft-tissue tumors"
+(SENT
+  (NP-HLN
+    (NP (JJ:[43..51] Frequent) (NN:[52..64] beta-catenin)
+        (NNS:[65..78] abnormalities))
+    (PP-LOC (IN:[79..81] in)
+      (NP
+        (NP (NN:[82..86] bone)
+          (NML-1 (-NONE-:[86..86] *P*)))
+        (CC:[87..90] and)
+        (NP (JJ:[91..102] soft-tissue)
+          (NML-1 (NNS:[103..109] tumors)))))
+    (.:[109..110] .)))
+
+;section 2 Span:114..173
+;Iwao K, Miyoshi Y, Nawa G, Yoshikawa H, Ochi T, Nakamura Y.
+(SEC
+  (FRAG (NNP:[114..118] Iwao) (NNP:[119..121] K,) (NNP:[122..129] Miyoshi)
+        (NNP:[130..131] Y) (,:[131..132] ,) (NNP:[133..137] Nawa)
+        (NNP:[138..140] G,) (NNP:[141..150] Yoshikawa) (NNP:[151..153] H,)
+        (NNP:[154..158] Ochi) (NNP:[159..160] T) (,:[160..161] ,)
+        (NNP:[162..170] Nakamura) (NNP:[171..172] Y) (.:[172..173] .)))
+
+;section 3 Span:177..243
+;Department of Medical Genetics, Biomedical Research Center, Osaka.
+(SEC
+  (FRAG (NNP:[177..187] Department) (IN:[188..190] of) (NNP:[191..198] Medical)
+        (NNP:[199..207] Genetics) (,:[207..208] ,) (NNP:[209..219] Biomedical)
+        (NNP:[220..228] Research) (NNP:[229..235] Center) (IN:[235..236] ,)
+        (NNP:[237..242] Osaka) (.:[242..243] .)))
+
+;sentence 4 Span:247..621
+;We have screened mutations of the beta-catenin gene by using the polymerase 
+;chain reaction-single strand conformation polymorphism (PCR-SSCP) method in
+;62  malignant bone and soft-tissue tumors, including malignant fibrous
+;histiocytomas  (MFHs), osteosarcomas, synovial sarcomas, liposarcomas,
+;malignant schwannomas,  and other types of tumors, as well as 11 benign
+;tumors.
+;[281..293]:gene-rna:"beta-catenin"
+;[312..322]:gene-protein:"polymerase"
+;[404..418]:malignancy-type:"malignant bone"
+;[404..418]:malignancy:"malignant bone"
+;[423..441]:malignancy:"soft-tissue tumors"
+;[453..484]:malignancy:"malignant fibrous histiocytomas"
+;[487..491]:malignancy:"MFHs"
+;[494..507]:malignancy:"osteosarcomas"
+;[509..526]:malignancy:"synovial sarcomas"
+;[528..540]:malignancy:"liposarcomas"
+;[542..563]:malignancy:"malignant schwannomas"
+;[607..620]:malignancy:"benign tumors"
+(SENT
+  (S
+    (NP-SBJ (PRP:[247..249] We))
+    (VP (VBP:[250..254] have)
+      (VP (VBN:[255..263] screened)
+        (NP
+          (NP (NNS:[264..273] mutations))
+          (PP (IN:[274..276] of)
+            (NP (DT:[277..280] the) (NN:[281..293] beta-catenin)
+                (NN:[294..298] gene))))
+        (PP-MNR (IN:[299..301] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[301..301] *))
+            (VP (VBG:[302..307] using)
+              (NP (DT:[308..311] the)
+                (NML
+                  (NML
+                    (NML (NN:[312..322] polymerase) (NN:[324..329] chain)
+                         (NN:[330..338] reaction))
+                    (HYPH:[338..339] -)
+                    (NML (JJ:[339..345] single) (NN:[346..352] strand)
+                         (NN:[353..365] conformation)
+                         (NN:[366..378] polymorphism)))
+                  (-LRB-:[379..380] -LRB-)
+                  (NML (NN:[380..383] PCR) (HYPH:[383..384] -)
+                       (NN:[384..388] SSCP))
+                  (-RRB-:[388..389] -RRB-))
+                (NN:[390..396] method)))))
+        (PP-LOC (IN:[397..399] in)
+          (NP
+            (NP
+              (NP (CD:[400..402] 62)
+                (NML
+                  (NML
+                    
+                    (ADJP-2 (JJ:[404..413] malignant))
+                    (NN:[414..418] bone)
+                    (NML-1 (-NONE-:[418..418] *P*)))
+                  (CC:[419..422] and)
+                  (NML
+                    (ADJP-2 (-NONE-:[422..422] *P*))
+                     (JJ:[423..434] soft-tissue)
+                    (NML-1 (NNS:[435..441] tumors)))))
+              (,:[441..442] ,)
+              (PP (VBG:[443..452] including)
+                (NP
+                  (NP
+                    (NP (JJ:[453..462] malignant) (JJ:[463..470] fibrous)
+                        (NNS:[471..484] histiocytomas))
+                    (NP (-LRB-:[486..487] -LRB-) (NNS:[487..491] MFHs)
+                        (-RRB-:[491..492] -RRB-)))
+                  (,:[492..493] ,)
+                  (NP (NNS:[494..507] osteosarcomas))
+                  (,:[507..508] ,)
+                  (NP (JJ:[509..517] synovial) (NNS:[518..526] sarcomas))
+                  (,:[526..527] ,)
+                  (NP (NNS:[528..540] liposarcomas))
+                  (,:[540..541] ,)
+                  (NP (JJ:[542..551] malignant) (NNS:[552..563] schwannomas))
+                  (,:[563..564] ,) (CC:[566..569] and)
+                  (NP
+                    (NP (JJ:[570..575] other) (NNS:[576..581] types))
+                    (PP (IN:[582..584] of)
+                      (NP (NNS:[585..591] tumors)))))))
+            (,:[591..592] ,)
+            (CONJP (RB:[593..595] as) (RB:[596..600] well) (IN:[601..603] as))
+            (NP (CD:[604..606] 11)
+               (JJ:[607..613] benign) (NNS:[614..620] tumors))))))
+    (.:[620..621] .)))
+
+;sentence 5 Span:622..701
+;beta-Catenin-activating  missense mutations were found in two malignant
+;tumors.
+;[622..634]:gene-rna:"beta-Catenin"
+;[647..665]:variation-type:"missense mutations"
+;[684..700]:malignancy:"malignant tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (NN:[622..634] beta-Catenin) (HYPH:[634..635] -)
+            (VBG:[635..645] activating))
+       (JJ:[647..655] missense) (NNS:[656..665] mutations))
+    (VP (VBD:[666..670] were)
+      (VP (VBN:[671..676] found)
+        (NP-1 (-NONE-:[676..676] *))
+        (PP-LOC (IN:[677..679] in)
+          (NP (CD:[680..683] two)
+             (JJ:[684..693] malignant) (NNS:[694..700] tumors)))))
+    (.:[700..701] .)))
+
+;sentence 6 Span:702..863
+;One found in MFH occurred  at codon 45 and caused an amino acid substitution
+;from serine (one of the GSK3  beta-targeted phosphorylation sites) to
+;phenylalanine.
+;[715..718]:malignancy:"MFH"
+;[732..740]:variation-location:"codon 45"
+;[755..778]:variation-type:"amino acid substitution"
+;[784..790]:variation-state-original:"serine"
+;[803..813]:gene-protein:"GSK3  beta"
+;[849..862]:variation-state-altered:"phenylalanine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[702..705] One))
+      (VP (VBN:[706..711] found)
+        (NP (-NONE-:[711..711] *))
+        (PP-LOC (IN:[712..714] in)
+          (NP (NN:[715..718] MFH)))))
+    (VP
+      (VP (VBD:[719..727] occurred)
+        (PP-LOC (IN:[729..731] at)
+          (NP (NN:[732..737] codon) (CD:[738..740] 45))))
+      (CC:[741..744] and)
+      (VP (VBD:[745..751] caused)
+        (NP
+          (NP (DT:[752..754] an)
+            
+            (NML (JJ:[755..760] amino) (NN:[761..765] acid))
+            (NN:[766..778] substitution))
+          (PP (IN:[779..783] from)
+            (NP (NN:[784..790] serine)
+              (PRN (-LRB-:[791..792] -LRB-)
+                (NP
+                  (NP (CD:[792..795] one))
+                  (PP (IN:[796..798] of)
+                    (NP (DT:[799..802] the)
+                      (ADJP
+                        (NML (NN:[803..807] GSK3) (SYM:[809..813] beta))
+                        (HYPH:[813..814] -) (VBN:[814..822] targeted))
+                      (NN:[823..838] phosphorylation) (NNS:[839..844] sites))))
+                (-RRB-:[844..845] -RRB-))))
+          (PP (TO:[846..848] to)
+            (NP (NN:[849..862] phenylalanine))))))
+    (.:[862..863] .)))
+
+;sentence 7 Span:864..1062
+;The other, detected in  synovial sarcoma at codon 32, resulted in an amino
+;acid change from aspartic  acid (located adjacent to the phosphorylation
+;target, serine, encoded by codon  33) to tyrosine.
+;[888..904]:malignancy:"synovial sarcoma"
+;[908..916]:variation-location:"codon 32"
+;[933..950]:variation-type:"amino acid change"
+;[956..970]:variation-state-original:"aspartic  acid"
+;[1039..1048]:variation-location:"codon  33"
+;[1053..1061]:variation-state-altered:"tyrosine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[864..867] The) (NN:[868..873] other))
+      (,:[873..874] ,)
+      (VP (VBN:[875..883] detected)
+        (NP (-NONE-:[883..883] *))
+        (PP (IN:[884..886] in)
+          (NP (JJ:[888..896] synovial) (NN:[897..904] sarcoma)))
+        (PP-LOC (IN:[905..907] at)
+          (NP (NN:[908..913] codon) (CD:[914..916] 32)))))
+    (,:[916..917] ,)
+    (VP (VBD:[918..926] resulted)
+      (PP-CLR (IN:[927..929] in)
+        (NP
+          (NP (DT:[930..932] an)
+            
+            (NML (JJ:[933..938] amino) (NN:[939..943] acid))
+            (NN:[944..950] change))
+          (PP (IN:[951..955] from)
+            (NP
+               (JJ:[956..964] aspartic) (NN:[966..970] acid)
+              (PRN (-LRB-:[971..972] -LRB-)
+                (VP (VBN:[972..979] located)
+                  (S
+                    (NP-SBJ (-NONE-:[979..979] *))
+                    (ADJP-PRD (JJ:[980..988] adjacent)
+                      (PP (TO:[989..991] to)
+                        (NP
+                          (NP
+                            (NP (DT:[992..995] the)
+                                (NN:[996..1011] phosphorylation)
+                                (NN:[1012..1018] target))
+                            (,:[1018..1019] ,)
+                            (NP (NN:[1020..1026] serine)))
+                          (,:[1026..1027] ,)
+                          (VP (VBN:[1028..1035] encoded)
+                            (NP (-NONE-:[1035..1035] *))
+                            (PP (IN:[1036..1038] by)
+                              (NP-LGS (NN:[1039..1044] codon)
+                                      (CD:[1046..1048] 33)))))))))
+                (-RRB-:[1048..1049] -RRB-))))
+          (PP (TO:[1050..1052] to)
+            (NP (NN:[1053..1061] tyrosine))))))
+    (.:[1061..1062] .)))
+
+;sentence 8 Span:1063..1221
+;Furthermore, we found accumulation of beta-catenin by  western-blotting
+;analysis in 12 of 19 malignant tumors in which we found no  mutation
+;involving exon 3.
+;[1101..1113]:gene-protein:"beta-catenin"
+;[1156..1172]:malignancy:"malignant tumors"
+;[1191..1203]:variation-event:"no  mutation"
+;[1214..1220]:variation-location:"exon 3"
+(SENT
+  (S
+    (ADVP (RB:[1063..1074] Furthermore))
+    (,:[1074..1075] ,)
+    (NP-SBJ (PRP:[1076..1078] we))
+    (VP (VBD:[1079..1084] found)
+      (NP
+        (NP (NN:[1085..1097] accumulation))
+        (PP (IN:[1098..1100] of)
+          (NP (NN:[1101..1113] beta-catenin))))
+      (PP-MNR (IN:[1114..1116] by)
+        (NP
+          (NML (JJ:[1118..1125] western) (HYPH:[1125..1126] -)
+               (NN:[1126..1134] blotting))
+          (NN:[1135..1143] analysis)))
+      (PP-LOC (IN:[1144..1146] in)
+        (NP
+          (NP (CD:[1147..1149] 12))
+          (PP (IN:[1150..1152] of)
+            (NP
+              (NP (CD:[1153..1155] 19)
+                 (JJ:[1156..1165] malignant) (NNS:[1166..1172] tumors))
+              (SBAR
+                (WHPP-1 (IN:[1173..1175] in)
+                  (WHNP (WDT:[1176..1181] which)))
+                (S
+                  (NP-SBJ (PRP:[1182..1184] we))
+                  (VP (VBD:[1185..1190] found)
+                    (NP
+                      (NP (DT:[1191..1193] no) (NN:[1195..1203] mutation))
+                      (VP (VBG:[1204..1213] involving)
+                        (NP (NN:[1214..1218] exon) (CD:[1219..1220] 3))))
+                    (PP-LOC-1 (-NONE-:[1220..1220] *T*))))))))))
+    (.:[1220..1221] .)))
+
+;sentence 9 Span:1222..1448
+;Our results suggested the possible involvement of  beta-catenin activation,
+;by beta-catenin gene mutation or alteration of other  factor(s), in the
+;formation and/or progression of various types of bone and  soft-tissue
+;tumors.
+;[1273..1285]:gene-rna:"beta-catenin"
+;[1301..1313]:gene-rna:"beta-catenin"
+;[1319..1327]:variation-event:"mutation"
+;[1419..1423]:malignancy-type:"bone"
+;[1419..1423]:malignancy:"bone"
+;[1429..1447]:malignancy:"soft-tissue tumors"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1222..1225] Our) (NNS:[1226..1233] results))
+    (VP (VBD:[1234..1243] suggested)
+      (NP
+        (NP (DT:[1244..1247] the) (JJ:[1248..1256] possible)
+            (NN:[1257..1268] involvement))
+        (PP (IN:[1269..1271] of)
+          (NP (NN:[1273..1285] beta-catenin) (NN:[1286..1296] activation)))
+        (,:[1296..1297] ,)
+        (PP (IN:[1298..1300] by)
+          (NP
+            (NP (NN:[1301..1313] beta-catenin) (NN:[1314..1318] gene)
+                (NN:[1319..1327] mutation))
+            (CC:[1328..1330] or)
+            (NP
+              (NP (NN:[1331..1341] alteration))
+              (PP (IN:[1342..1344] of)
+                (NP (JJ:[1345..1350] other) (NNS:[1352..1361] factor-LRB-s-RRB-))))))
+        (,:[1361..1362] ,)
+        (PP (IN:[1363..1365] in)
+          (NP
+            (NP (DT:[1366..1369] the) (NN:[1370..1379] formation)
+                (CC:[1380..1386] and/or) (NN:[1387..1398] progression))
+            (PP (IN:[1399..1401] of)
+              (NP
+                (NP (JJ:[1402..1409] various) (NNS:[1410..1415] types))
+                (PP (IN:[1416..1418] of)
+                  (NP
+                    (NP (NN:[1419..1423] bone)
+                      (NML-1 (-NONE-:[1423..1423] *P*)))
+                    (CC:[1424..1427] and)
+                    (NP (JJ:[1429..1440] soft-tissue)
+                      (NML-1 (NNS:[1441..1447] tumors)))))))))))
+    (.:[1447..1448] .)))
+
+;section 10 Span:1452..1497
+;PMID: 10189891 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1452..1456] PMID) (::[1456..1457] :) (CD:[1458..1466] 10189891)
+        (NN:[1467..1468] -LSB-) (NNP:[1468..1474] PubMed) (::[1475..1476] -)
+        (NN:[1477..1484] indexed) (IN:[1485..1488] for)
+        (NNP:[1489..1497] MEDLINE-RSB-)))

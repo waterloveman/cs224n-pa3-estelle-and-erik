@@ -1,0 +1,330 @@
+;PMID: 6205121
+;source_file_2863.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..142] = [t:42..142]
+;2)section:[e:146..191] = [t:146..191]
+;3)sentence:[e:195..332] = [t:195..332]
+;4)sentence:[e:333..519] = [t:333..519]
+;5)sentence:[e:520..720] = [t:520..720]
+;6)sentence:[e:721..980] = [t:721..980]
+;7)sentence:[e:981..1184] = [t:981..1184]
+;8)sentence:[e:1185..1324] = [t:1185..1324]
+;9)section:[e:1328..1372] = [t:1328..1372]
+
+;section 0 Span:0..36
+;J Neural Transm.  1984;59(4):309-17.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Neural) (NNP:[9..15] Transm) (.:[15..16] .)
+        (CD:[18..22] 1984) (CD:[22..24] ;5) (CD:[24..25] 9) (NN:[25..26] -LRB-)
+        (NN:[26..27] 4) (NN:[27..28] -RRB-) (::[28..29] :) (CD:[29..32] 309)
+        (CD:[32..35] -17) (.:[35..36] .)))
+
+;sentence 1 Span:42..142
+;Herpes simplex virus persistence in mouse neuroblastoma (C 1300) cell
+;cultures:  role of interferon.
+;[84..97]:malignancy-type:"neuroblastoma"
+;[131..141]:gene-protein:"interferon"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NML
+          (NML (NN:[42..48] Herpes) (NN:[49..56] simplex))
+          (NN:[57..62] virus))
+        (NN:[63..74] persistence))
+      (PP (IN:[75..77] in)
+        (NP (NN:[78..83] mouse) (NN:[84..97] neuroblastoma)
+          (PRN (-LRB-:[98..99] -LRB-)
+            (NP (NN:[99..100] C) (CD:[101..105] 1300))
+            (-RRB-:[105..106] -RRB-))
+          (NN:[107..111] cell) (NNS:[112..120] cultures))))
+    (::[120..121] :)
+    (NP
+      (NP (NN:[123..127] role))
+      (PP (IN:[128..130] of)
+        (NP (NN:[131..141] interferon))))
+    (.:[141..142] .)))
+
+;section 2 Span:146..191
+;Dawson GJ, Mowshowitz SL, Cohen R, Elizan TS.
+(SEC
+  (FRAG (NNP:[146..152] Dawson) (NNP:[153..155] GJ) (,:[155..156] ,)
+        (NNP:[157..167] Mowshowitz) (NNP:[168..170] SL) (,:[170..171] ,)
+        (NNP:[172..177] Cohen) (NNP:[178..179] R) (,:[179..180] ,)
+        (NNP:[181..187] Elizan) (NNP:[188..190] TS) (.:[190..191] .)))
+
+;sentence 3 Span:195..332
+;The Mp strain of herpes simplex virus type 1 (HSV1) induced a persistent 
+;infection in the mouse C 1300 neuronal cell line (clone N 115).
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[195..198] The) (NN:[199..201] Mp) (NN:[202..208] strain))
+      (PP (IN:[209..211] of)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[212..218] herpes) (NN:[219..226] simplex))
+              (NN:[227..232] virus))
+            (NN:[233..237] type) (CD:[238..239] 1))
+          (NP (-LRB-:[240..241] -LRB-) (NN:[241..245] HSV1)
+              (-RRB-:[245..246] -RRB-)))))
+    (VP (VBD:[247..254] induced)
+      (NP (DT:[255..256] a) (JJ:[257..267] persistent) (NN:[269..278] infection))
+      (PP-LOC (IN:[279..281] in)
+        (NP (DT:[282..285] the) (NN:[286..291] mouse)
+          (NML (NN:[292..293] C) (CD:[294..298] 1300))
+          (JJ:[299..307] neuronal) (NN:[308..312] cell) (NN:[313..317] line)
+          (PRN (-LRB-:[318..319] -LRB-)
+            (NP (NN:[319..324] clone) (NN:[325..326] N) (CD:[327..330] 115))
+            (-RRB-:[330..331] -RRB-)))))
+    (.:[331..332] .)))
+
+;sentence 4 Span:333..519
+;C 1300 cultures  infected at an MOI of 0.01 or 0.001 survived the initial
+;infection and continued  to produce infectious virus and viral antigens for
+;185 days and 31 days,  respectively.
+;[464..478]:gene-protein:"viral antigens"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML (NN:[333..334] C) (CD:[335..339] 1300))
+        (NNS:[340..348] cultures))
+      (VP (VBN:[350..358] infected)
+        (NP (-NONE-:[358..358] *))
+        (PP (IN:[359..361] at)
+          (NP
+            (NP (DT:[362..364] an) (NN:[365..368] MOI))
+            (PP (IN:[369..371] of)
+              (NP (CD:[372..376] 0.01) (CC:[377..379] or) (CD:[380..385] 0.001)))))))
+    (VP
+      (VP (VBD:[386..394] survived)
+        (NP (DT:[395..398] the) (JJ:[399..406] initial)
+            (NN:[407..416] infection)))
+      (CC:[417..420] and)
+      (VP (VBD:[421..430] continued)
+        (S
+          (NP-SBJ-1 (-NONE-:[430..430] *))
+          (VP (TO:[432..434] to)
+            (VP (VB:[435..442] produce)
+              (NP
+                (NP
+                  (NP (JJ:[443..453] infectious) (NN:[454..459] virus))
+                  (CC:[460..463] and)
+                  (NP (JJ:[464..469] viral) (NNS:[470..478] antigens)))
+                (PP-TMP (IN:[479..482] for)
+                  (NP
+                    (NP (CD:[483..486] 185) (NNS:[487..491] days))
+                    (CC:[492..495] and)
+                    (NP (CD:[496..498] 31) (NNS:[499..503] days)))))
+              (,:[503..504] ,)
+              (ADVP (RB:[506..518] respectively)))))))
+    (.:[518..519] .)))
+
+;sentence 5 Span:520..720
+;Viral antigens were not detected in cultures no longer producing  infectious
+;virus; these "cured" cultures had comparable susceptibility to  reinfection
+;with HSV as previously uninfected C 1300 cells.
+;[520..534]:gene-protein:"Viral antigens"
+;[597..602]:malignancy-type:"virus"
+;[678..681]:malignancy-type:"HSV"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (JJ:[520..525] Viral) (NNS:[526..534] antigens))
+      (VP (VBD:[535..539] were) (RB:[540..543] not)
+        (VP (VBN:[544..552] detected)
+          (NP-1 (-NONE-:[552..552] *))
+          (PP-LOC (IN:[553..555] in)
+            (NP
+              (NP (NNS:[556..564] cultures))
+              (VP
+                (ADVP-TMP (RB:[565..567] no) (JJR:[568..574] longer))
+                (VBG:[575..584] producing)
+                (NP (JJ:[586..596] infectious) (NN:[597..602] virus))))))))
+    (::[602..603] ;)
+    (S
+      (NP-SBJ (DT:[604..609] these) (``:[610..611] ") (VBN:[611..616] cured)
+              ('':[616..617] ") (NNS:[618..626] cultures))
+      (VP (VBD:[627..630] had)
+        (NP
+          (NP (JJ:[631..641] comparable) (NN:[642..656] susceptibility))
+          (PP (TO:[657..659] to)
+            (NP
+              (NP (NN:[661..672] reinfection))
+              (PP (IN:[673..677] with)
+                (NP (NN:[678..681] HSV)))))
+          (PP (IN:[682..684] as)
+            (NP
+              (ADJP (RB:[685..695] previously) (JJ:[696..706] uninfected))
+              (NML (NN:[707..708] C) (CD:[709..713] 1300))
+              (NNS:[714..719] cells))))))
+    (.:[719..720] .)))
+
+;sentence 6 Span:721..980
+;While significant  amounts of interferon were produced by C 1300 cells when
+;challenged with  Newcastle Disease Virus (NDV) or when treated with poly I:C,
+;HSV-induced  interferon could not be detected in either the acutely or
+;persistently infected  cell lines.
+;[751..761]:gene-protein:"interferon"
+;[888..898]:gene-protein:"interferon"
+(SENT
+  (S
+    (SBAR-ADV (IN:[721..726] While)
+      (S
+        (NP-SBJ-1
+          (NP (JJ:[727..738] significant) (NNS:[740..747] amounts))
+          (PP (IN:[748..750] of)
+            (NP (NN:[751..761] interferon))))
+        (VP (VBD:[762..766] were)
+          (VP (VBN:[767..775] produced)
+            (NP-1 (-NONE-:[775..775] *))
+            (PP (IN:[776..778] by)
+              (NP-LGS
+                (NML (NN:[779..780] C) (CD:[781..785] 1300))
+                (NNS:[786..791] cells)))
+            (SBAR-ADV
+              (SBAR
+                (WHADVP-2 (WRB:[792..796] when))
+                (S
+                  (NP-SBJ-4 (-NONE-:[796..796] *))
+                  (VP (VBN:[797..807] challenged)
+                    (NP-4 (-NONE-:[807..807] *))
+                    (PP-MNR (IN:[808..812] with)
+                      (NP
+                        (NML (NNP:[814..823] Newcastle) (NNP:[824..831] Disease))
+                        (NNP:[832..837] Virus)
+                        (NP (-LRB-:[838..839] -LRB-) (NN:[839..842] NDV)
+                            (-RRB-:[842..843] -RRB-))))
+                    (ADVP-TMP-2 (-NONE-:[843..843] *T*)))))
+              (CC:[844..846] or)
+              (SBAR
+                (WHADVP-3 (WRB:[847..851] when))
+                (S
+                  (NP-SBJ-5 (-NONE-:[851..851] *))
+                  (VP (VBN:[852..859] treated)
+                    (NP-5 (-NONE-:[859..859] *))
+                    (PP-MNR (IN:[860..864] with)
+                      (NP (NN:[865..869] poly) (NN:[870..871] I)
+                          (SYM:[871..872] :) (NN:[872..873] C)))
+                    (ADVP-TMP-3 (-NONE-:[873..873] *T*))))))))))
+    (,:[873..874] ,)
+    (NP-SBJ-6
+      (ADJP (NN:[875..878] HSV) (HYPH:[878..879] -) (VBN:[879..886] induced))
+      (NN:[888..898] interferon))
+    (VP (MD:[899..904] could) (RB:[905..908] not)
+      (VP (VB:[909..911] be)
+        (VP (VBN:[912..920] detected)
+          (NP-6 (-NONE-:[920..920] *))
+          (PP-LOC (IN:[921..923] in)
+            (NP (CC:[924..930] either) (DT:[931..934] the)
+              (NML
+                (NML
+                  (ADJP (RB:[935..942] acutely)
+                    (ADJP-7 (-NONE-:[942..942] *P*)))
+                  (NML-8 (-NONE-:[942..942] *P*)))
+                (CC:[943..945] or)
+                (NML
+                  (ADJP (RB:[946..958] persistently)
+                    (ADJP-7 (VBN:[959..967] infected)))
+                  (NML-8 (NN:[969..973] cell) (NNS:[974..979] lines)))))))))
+    (.:[979..980] .)))
+
+;sentence 7 Span:981..1184
+;The persistent state was not significantly altered by the addition  of 1,000
+;units/ml of murine interferon alpha plus beta (MuIFN alpha + beta), nor  was
+;it affected by the addition of antibody to MuIFN.
+;[1077..1093]:gene-protein:"interferon alpha"
+;[1077..1087]...[1099..1103]:gene-protein:"interferon"..."beta"
+;[1105..1116]:gene-protein:"MuIFN alpha"
+;[1105..1110]...[1119..1123]:gene-protein:"MuIFN"..."beta"
+;[1166..1174]:gene-protein:"antibody"
+;[1178..1183]:gene-protein:"MuIFN"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[981..984] The) (JJ:[985..995] persistent)
+                (NN:[996..1001] state))
+      (VP (VBD:[1002..1005] was) (RB:[1006..1009] not)
+        (ADVP (RB:[1010..1023] significantly))
+        (VP (VBN:[1024..1031] altered)
+          (NP-1 (-NONE-:[1031..1031] *))
+          (PP (IN:[1032..1034] by)
+            (NP-LGS
+              (NP (DT:[1035..1038] the) (NN:[1039..1047] addition))
+              (PP (IN:[1049..1051] of)
+                (NP
+                  (NP (CD:[1052..1057] 1,000) (NNS:[1058..1063] units))
+                  (PP (SYM:[1063..1064] /)
+                    (NP (NN:[1064..1066] ml)))
+                  (PP (IN:[1067..1069] of)
+                    (NP
+                      (NP
+                        (NML-2 (JJ:[1070..1076] murine)
+                               (NN:[1077..1087] interferon))
+                        (SYM:[1088..1093] alpha))
+                      (CC:[1094..1098] plus)
+                      (NP
+                        (NML-2 (-NONE-:[1098..1098] *P*))
+                        (SYM:[1099..1103] beta))
+                      (PRN (-LRB-:[1104..1105] -LRB-)
+                        (NP
+                          (NP
+                            (NML-3 (NN:[1105..1110] MuIFN))
+                            (SYM:[1111..1116] alpha))
+                          (SYM:[1117..1118] +)
+                          (NP
+                            (NML-3 (-NONE-:[1118..1118] *P*))
+                            (SYM:[1119..1123] beta)))
+                        (-RRB-:[1123..1124] -RRB-)))))))))))
+    (,:[1124..1125] ,) (CC:[1126..1129] nor)
+    (SINV (VBD:[1131..1134] was)
+      (NP-SBJ-4 (PRP:[1135..1137] it))
+      (VP (VBN:[1138..1146] affected)
+        (NP-4 (-NONE-:[1146..1146] *))
+        (PP (IN:[1147..1149] by)
+          (NP-LGS
+            (NP (DT:[1150..1153] the) (NN:[1154..1162] addition))
+            (PP (IN:[1163..1165] of)
+              (NP (NN:[1166..1174] antibody)))
+            (PP (TO:[1175..1177] to)
+              (NP (NN:[1178..1183] MuIFN)))))))
+    (.:[1183..1184] .)))
+
+;sentence 8 Span:1185..1324
+;It appears that IFN does  not play an important role in the establishment
+;and/or maintenance of viral  persistence in this neuronal system.
+;[1201..1204]:gene-protein:"IFN"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1185..1187] It))
+    (VP (VBZ:[1188..1195] appears)
+      (SBAR (IN:[1196..1200] that)
+        (S
+          (NP-SBJ (NN:[1201..1204] IFN))
+          (VP (VBZ:[1205..1209] does) (RB:[1211..1214] not)
+            (VP (VB:[1215..1219] play)
+              (NP (DT:[1220..1222] an) (JJ:[1223..1232] important)
+                  (NN:[1233..1237] role))
+              (PP (IN:[1238..1240] in)
+                (NP
+                  (NP (DT:[1241..1244] the) (NN:[1245..1258] establishment)
+                      (CC:[1259..1265] and/or) (NN:[1266..1277] maintenance))
+                  (PP (IN:[1278..1280] of)
+                    (NP (JJ:[1281..1286] viral) (NN:[1288..1299] persistence)))))
+              (PP (IN:[1300..1302] in)
+                (NP (DT:[1303..1307] this) (JJ:[1308..1316] neuronal)
+                    (NN:[1317..1323] system))))))))
+    (.:[1323..1324] .)))
+
+;section 9 Span:1328..1372
+;PMID: 6205121 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1328..1332] PMID) (::[1332..1333] :) (CD:[1334..1341] 6205121)
+        (NN:[1342..1343] -LSB-) (NNP:[1343..1349] PubMed) (::[1350..1351] -)
+        (NN:[1352..1359] indexed) (IN:[1360..1363] for)
+        (NNP:[1364..1372] MEDLINE-RSB-)))

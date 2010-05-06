@@ -1,0 +1,511 @@
+;PMID: 11422031
+;source_file_823.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..157] = [t:45..157]
+;2)section:[e:161..231] = [t:161..231]
+;3)section:[e:235..306] = [t:235..306]
+;4)sentence:[e:310..321] = [t:310..321]
+;5)sentence:[e:322..519] = [t:322..519]
+;6)sentence:[e:520..531] = [t:520..531]
+;7)sentence:[e:533..875] = [t:533..875]
+;8)sentence:[e:876..884] = [t:876..884]
+;9)sentence:[e:885..1027] = [t:885..1027]
+;10)sentence:[e:1028..1036] = [t:1028..1036]
+;11)sentence:[e:1037..1177] = [t:1037..1177]
+;12)sentence:[e:1178..1430] = [t:1178..1430]
+;13)sentence:[e:1431..1657] = [t:1431..1657]
+;14)sentence:[e:1658..1670] = [t:1658..1670]
+;15)sentence:[e:1671..1767] = [t:1671..1767]
+;16)sentence:[e:1768..1915] = [t:1768..1915]
+;17)section:[e:1919..1964] = [t:1919..1964]
+
+;section 0 Span:0..39
+;Br J Dermatol. 2001 Jun;144(6):1127-32.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..13] Dermatol) (.:[13..14] .)
+        (CD:[15..19] 2001) (CC:[20..28] Jun;144-LRB-) (CD:[28..30] 6-RRB-)
+        (CD:[30..35] :1127) (HYPH:[35..36] -) (CD:[36..38] 32) (.:[38..39] .)))
+
+;sentence 1 Span:45..157
+;Liver cytochrome P450 CYP1A2 is markedly inhibited by systemic but not by
+;bath  PUVA in dermatological patients.
+;[51..73]:cyp450:"cytochrome P450 CYP1A2"
+(SENT
+  (S-HLN
+    (NP-SBJ-3
+      (NP (NN:[45..50] Liver) (NN:[51..61] cytochrome) (NN:[62..66] P450))
+      (NP (NN:[67..73] CYP1A2)))
+    (VP (VBZ:[74..76] is)
+      (ADVP (RB:[77..85] markedly))
+      (VP
+        (VP (VBN:[86..95] inhibited)
+          (NP-3 (-NONE-:[95..95] *))
+          (PP=2 (IN:[96..98] by)
+            (NP-LGS (JJ:[99..107] systemic)
+              (NML-1 (-NONE-:[107..107] *P*))))
+          (PP-LOC-4 (-NONE-:[107..107] *RNR*)))
+        (CC:[108..111] but) (RB:[112..115] not)
+        (VP
+          (PP=2 (IN:[116..118] by)
+            (NP-LGS (NN:[119..123] bath)
+              (NML-1 (NN:[125..129] PUVA))))
+          (PP-LOC-4 (-NONE-:[129..129] *RNR*)))
+        (PP-LOC-4 (IN:[130..132] in)
+          (NP (JJ:[133..147] dermatological) (NNS:[148..156] patients)))))
+    (.:[156..157] .)))
+
+;section 2 Span:161..231
+;Tantcheva-Poor I, Servera-Llaneras M, Scharffetter-Kochanek K, Fuhr U.
+(SEC
+  (FRAG (NNP:[161..170] Tantcheva) (HYPH:[170..171] -) (NNP:[171..175] Poor)
+        (NNP:[176..177] I) (,:[177..178] ,) (NNP:[179..186] Servera)
+        (HYPH:[186..187] -) (NNP:[187..195] Llaneras) (NNP:[196..198] M,)
+        (NNP:[199..211] Scharffetter) (HYPH:[211..212] -)
+        (NNP:[212..220] Kochanek) (NNP:[221..222] K) (,:[222..223] ,)
+        (NNP:[224..228] Fuhr) (NNP:[229..231] U.)))
+
+;section 3 Span:235..306
+;Institute for Pharmacology, Clinical Pharmacology, 50931 Koln, Germany.
+(SEC
+  (FRAG (NNP:[235..244] Institute) (IN:[245..248] for)
+        (NNP:[249..261] Pharmacology) (,:[261..262] ,) (NNP:[263..271] Clinical)
+        (NNP:[272..284] Pharmacology) (,:[284..285] ,) (CD:[286..291] 50931)
+        (NNPS:[292..296] Koln) (,:[296..297] ,) (NNP:[298..305] Germany)
+        (.:[305..306] .)))
+
+;sentence 4 Span:310..321
+;BACKGROUND:
+(SENT
+  (NP (NN:[310..320] BACKGROUND) (::[320..321] :)))
+
+;sentence 5 Span:322..519
+;Methoxsalen (8-MOP) may cause important pharmacokinetic drug  interactions as
+;it has been shown to inhibit and/or induce several  drug-metabolizing enzymes
+;in vitro, in animal models and in humans.
+;[322..333]:substance:"Methoxsalen"
+;[335..340]:substance:"8-MOP"
+;[378..382]:substance:"drug"
+;[452..477]:substance:"drug-metabolizing enzymes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[322..333] Methoxsalen))
+      (NP (-LRB-:[334..335] -LRB-) (NN:[335..340] 8-MOP)
+          (-RRB-:[340..341] -RRB-)))
+    (VP (MD:[342..345] may)
+      (VP (VB:[346..351] cause)
+        (NP (JJ:[352..361] important) (JJ:[362..377] pharmacokinetic)
+            (NN:[378..382] drug) (NNS:[384..396] interactions))
+        (SBAR-ADV (IN:[397..399] as)
+          (S
+            (NP-SBJ-1 (PRP:[400..402] it))
+            (VP (VBZ:[403..406] has)
+              (VP (VBN:[407..411] been)
+                (VP (VBN:[412..417] shown)
+                  (S
+                    (NP-SBJ-1 (-NONE-:[417..417] *))
+                    (VP (TO:[418..420] to)
+                      (VP (VB:[421..428] inhibit) (CC:[429..435] and/or)
+                          (VB:[436..442] induce)
+                        (NP (JJ:[443..450] several)
+                          
+                          (ADJP (NN:[452..456] drug) (HYPH:[456..457] -)
+                                (VBG:[457..469] metabolizing))
+                          (NNS:[470..477] enzymes))
+                        (ADVP (FW:[478..480] in) (FW:[481..486] vitro))
+                        (,:[486..487] ,)
+                        (PP-LOC
+                          (PP (IN:[488..490] in)
+                            (NP (NN:[491..497] animal) (NNS:[498..504] models)))
+                          (CC:[505..508] and)
+                          (PP (IN:[509..511] in)
+                            (NP (NNS:[512..518] humans))))))))))))))
+    (.:[518..519] .)))
+
+;sentence 6 Span:520..531
+;OBJECTIVES:
+(SENT
+  (NP (NNS:[520..530] OBJECTIVES) (::[530..531] :)))
+
+;sentence 7 Span:533..875
+;In order to assess the clinical importance of acute and chronic 8-MOP effects
+;on  the liver cytochrome P-450 enzyme CYP1A2 in vivo, we measured caffeine
+;clearance  in dermatological patients before the onset of systemic or bath
+;psoralen +  ultraviolet A radiation (PUVA) (8-MOP + UVA) therapy, on the
+;first day and after  1 week of treatment.
+;[597..602]:substance:"8-MOP"
+;[625..655]:cyp450:"cytochrome P-450 enzyme CYP1A2"
+;[677..685]:substance:"caffeine"
+;[761..769]:substance:"psoralen"
+;[805..810]:substance:"8-MOP"
+;[834..839]:quantitative-value:"first"
+;[840..843]:quantitative-units:"day"
+;[855..856]:quantitative-value:"1"
+;[857..861]:quantitative-units:"week"
+(SENT
+  (S
+    (SBAR-PRP (IN:[533..535] In) (NN:[536..541] order)
+      (S
+        (NP-SBJ (-NONE-:[541..541] *))
+        (VP (TO:[542..544] to)
+          (VP (VB:[545..551] assess)
+            (NP
+              (NP (DT:[552..555] the) (JJ:[556..564] clinical)
+                  (NN:[565..575] importance))
+              (PP (IN:[576..578] of)
+                (NP
+                  (NP
+                    (NP (JJ:[579..584] acute)
+                      (NML-1 (-NONE-:[584..584] *P*)))
+                    (CC:[585..588] and)
+                    (NP (JJ:[589..596] chronic)
+                      (NML-1 (NN:[597..602] 8-MOP) (NNS:[603..610] effects))))
+                  (PP (IN:[611..613] on)
+                    (NP
+                      (NP (DT:[615..618] the) (NN:[619..624] liver)
+                        (NML (NN:[625..635] cytochrome) (NN:[636..641] P-450))
+                        (NN:[642..648] enzyme))
+                      (NP (NN:[649..655] CYP1A2)))))))
+            (ADVP (FW:[656..658] in) (FW:[659..663] vivo))))))
+    (,:[663..664] ,)
+    (NP-SBJ (PRP:[665..667] we))
+    (VP (VBD:[668..676] measured)
+      (NP (NN:[677..685] caffeine) (NN:[686..695] clearance))
+      (PP-LOC (IN:[697..699] in)
+        (NP (JJ:[700..714] dermatological) (NNS:[715..723] patients)))
+      (PP-TMP (IN:[724..730] before)
+        (NP
+          (NP (DT:[731..734] the) (NN:[735..740] onset))
+          (PP (IN:[741..743] of)
+            (NP
+              (NP
+                (NML (JJ:[744..752] systemic)
+                  (NML-3 (-NONE-:[752..752] *P*)))
+                (NML-4 (-NONE-:[752..752] *P*)))
+              (CC:[753..755] or)
+              (NP
+                (NML (NN:[756..760] bath)
+                  (NML-3
+                    (NML
+                      (NML
+                        (NP (NN:[761..769] psoralen))
+                        (SYM:[770..771] +)
+                        (NP
+                          (NML (JJ:[773..784] ultraviolet) (NN:[785..786] A))
+                          (NN:[787..796] radiation)))
+                      (NML (-LRB-:[797..798] -LRB-) (NN:[798..802] PUVA)
+                           (-RRB-:[802..803] -RRB-)))
+                    (PRN (-LRB-:[804..805] -LRB-)
+                      (NP (NN:[805..810] 8-MOP) (SYM:[811..812] +)
+                          (NN:[813..816] UVA))
+                      (-RRB-:[816..817] -RRB-))))
+                (NML-4 (NN:[818..825] therapy)))))))
+      (,:[825..826] ,)
+      (PP-TMP
+        (PP (IN:[827..829] on)
+          (NP
+            (NP (DT:[830..833] the) (JJ:[834..839] first) (NN:[840..843] day))
+            (PP-2 (-NONE-:[843..843] *P*))))
+        (CC:[844..847] and)
+        (PP (IN:[848..853] after)
+          (NP
+            (NP (CD:[855..856] 1) (NN:[857..861] week))
+            (PP-2 (IN:[862..864] of)
+              (NP (NN:[865..874] treatment)))))))
+    (.:[874..875] .)))
+
+;sentence 8 Span:876..884
+;METHODS:
+(SENT
+  (NP (NNS:[876..883] METHODS) (::[883..884] :)))
+
+;sentence 9 Span:885..1027
+;Data from four patients with systemic PUVA and  seven patients with bath PUVA
+;were available (age range 23-71 years, five women  and six men).
+;[989..994]:quantitative-value:"23-71"
+;[995..1000]:quantitative-units:"years"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[885..889] Data))
+      (PP (IN:[890..894] from)
+        (NP
+          (NP
+            (NP (CD:[895..899] four) (NNS:[900..908] patients))
+            (PP (IN:[909..913] with)
+              (NP (JJ:[914..922] systemic) (NN:[923..927] PUVA))))
+          (CC:[928..931] and)
+          (NP
+            (NP (CD:[933..938] seven) (NNS:[939..947] patients))
+            (PP (IN:[948..952] with)
+              (NP (NN:[953..957] bath) (NN:[958..962] PUVA)))))))
+    (VP (VBD:[963..967] were)
+      (ADJP-PRD (JJ:[968..977] available))
+      (PRN (-LRB-:[978..979] -LRB-)
+        (FRAG
+          (S
+            (NP-SBJ (NN:[979..982] age) (NN:[983..988] range))
+            (NP-PRD
+              (QP (CD:[989..991] 23) (HYPH:[991..992] -) (CD:[992..994] 71))
+              (NNS:[995..1000] years)))
+          (,:[1000..1001] ,)
+          (NP
+            (NP (CD:[1002..1006] five) (NNS:[1007..1012] women))
+            (CC:[1014..1017] and)
+            (NP (CD:[1018..1021] six) (NNS:[1022..1025] men))))
+        (-RRB-:[1025..1026] -RRB-)))
+    (.:[1026..1027] .)))
+
+;sentence 10 Span:1028..1036
+;RESULTS:
+(SENT
+  (NP (NNS:[1028..1035] RESULTS) (::[1035..1036] :)))
+
+;sentence 11 Span:1037..1177
+;For all of the patients, individual pre-PUVA caffeine  clearance values were
+;above the lower limit of previously assessed reference  ranges.
+;[1082..1090]:substance:"caffeine"
+(SENT
+  (S
+    (PP (IN:[1037..1040] For)
+      (NP
+        (NP (DT:[1041..1044] all))
+        (PP (IN:[1045..1047] of)
+          (NP (DT:[1048..1051] the) (NNS:[1052..1060] patients)))))
+    (,:[1060..1061] ,)
+    (NP-SBJ (JJ:[1062..1072] individual)
+      (NML (AFX:[1073..1076] pre) (HYPH:[1076..1077] -) (NN:[1077..1081] PUVA))
+      (NML (NN:[1082..1090] caffeine) (NN:[1092..1101] clearance))
+      (NNS:[1102..1108] values))
+    (VP (VBD:[1109..1113] were)
+      (PP-PRD (IN:[1114..1119] above)
+        (NP
+          (NP (DT:[1120..1123] the) (JJR:[1124..1129] lower)
+              (NN:[1130..1135] limit))
+          (PP (IN:[1136..1138] of)
+            (NP
+              (ADJP (RB:[1139..1149] previously) (VBN:[1150..1158] assessed))
+              (NN:[1159..1168] reference) (NNS:[1170..1176] ranges))))))
+    (.:[1176..1177] .)))
+
+;sentence 12 Span:1178..1430
+;Systemic PUVA markedly decreased caffeine clearance by factors of 0.17  [90%
+;confidence interval (CI) 0.07-0.42] on the first day and 0.14 (90% CI 
+;0.05-0.36) after 1 week of treatment, respectively, and values thus dropped 
+;below the reference ranges.
+;[1211..1219]:substance:"caffeine"
+;[1244..1248]:quantitative-value:"0.17"
+;[1251..1254]:quantitative-value:"90%"
+;[1276..1278]:quantitative-name:"CI"
+;[1280..1289]:quantitative-value:"0.07-0.42"
+;[1312..1316]:quantitative-value:"0.14"
+;[1318..1321]:quantitative-value:"90%"
+;[1322..1324]:quantitative-name:"CI"
+;[1326..1335]:quantitative-value:"0.05-0.36"
+;[1343..1344]:quantitative-value:"1"
+;[1345..1349]:quantitative-units:"week"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[1178..1186] Systemic) (NN:[1187..1191] PUVA))
+      (VP
+        (VP
+          (ADVP (RB:[1192..1200] markedly))
+          (VBD:[1201..1210] decreased)
+          (NP (NN:[1211..1219] caffeine) (NN:[1220..1229] clearance))
+          (PP-EXT (IN:[1230..1232] by)
+            (NP
+              (NP (NNS:[1233..1240] factors))
+              (PP (IN:[1241..1243] of)
+                (NP=2 (CD:[1244..1248] 0.17)
+                  (PRN (-LRB-:[1250..1251] -LSB-)
+                    (S
+                      (NP-SBJ
+                        (NML (CD:[1251..1253] 90) (NN:[1253..1254] %))
+                        (NML
+                          (NML (NN:[1255..1265] confidence)
+                               (NN:[1266..1274] interval))
+                          (NML (-LRB-:[1275..1276] -LRB-) (NN:[1276..1278] CI)
+                               (-RRB-:[1278..1279] -RRB-))))
+                      (NP-PRD
+                        (QP (CD:[1280..1284] 0.07) (HYPH:[1284..1285] -)
+                            (CD:[1285..1289] 0.42))))
+                    (-RRB-:[1289..1290] -RSB-))))))
+          (PP-TMP=1 (IN:[1291..1293] on)
+            (NP
+              (NP (DT:[1294..1297] the) (JJ:[1298..1303] first)
+                  (NN:[1304..1307] day))
+              (PP-3 (-NONE-:[1307..1307] *P*)))))
+        (CC:[1308..1311] and)
+        (VP
+          (NP=2 (CD:[1312..1316] 0.14)
+            (PRN (-LRB-:[1317..1318] -LRB-)
+              (S
+                (NP-SBJ
+                  (NML (CD:[1318..1320] 90) (NN:[1320..1321] %))
+                  (NN:[1322..1324] CI))
+                (NP-PRD
+                  (QP (CD:[1326..1330] 0.05) (HYPH:[1330..1331] -)
+                      (CD:[1331..1335] 0.36))))
+              (-RRB-:[1335..1336] -RRB-)))
+          (PP-TMP=1 (IN:[1337..1342] after)
+            (NP
+              (NP (CD:[1343..1344] 1) (NN:[1345..1349] week))
+              (PP-3 (IN:[1350..1352] of)
+                (NP (NN:[1353..1362] treatment))))))
+        (,:[1362..1363] ,)
+        (ADVP (RB:[1364..1376] respectively))))
+    (,:[1376..1377] ,) (CC:[1378..1381] and)
+    (S
+      (NP-SBJ (NNS:[1382..1388] values))
+      (ADVP (RB:[1389..1393] thus))
+      (VP (VBD:[1394..1401] dropped)
+        (PP (IN:[1403..1408] below)
+          (NP (DT:[1409..1412] the) (NN:[1413..1422] reference)
+              (NNS:[1423..1429] ranges)))))
+    (.:[1429..1430] .)))
+
+;sentence 13 Span:1431..1657
+;In contrast, bath PUVA had no obvious effect on  pre-PUVA clearance values as
+;the latter changed by factors of 1.00 (90% CI  0.81-1.23) and 1.05 (90% CI
+;0.75-1.49) on the first day and after 1 week of  treatment, respectively.
+;[1542..1546]:quantitative-value:"1.00"
+;[1548..1551]:quantitative-value:"90%"
+;[1552..1554]:quantitative-name:"CI"
+;[1556..1565]:quantitative-value:"0.81-1.23"
+;[1571..1575]:quantitative-value:"1.05"
+;[1577..1580]:quantitative-value:"90%"
+;[1581..1583]:quantitative-name:"CI"
+;[1584..1593]:quantitative-value:"0.75-1.49"
+;[1602..1607]:quantitative-value:"first"
+;[1608..1611]:quantitative-units:"day"
+;[1622..1623]:quantitative-value:"1"
+;[1624..1628]:quantitative-units:"week"
+(SENT
+  (S
+    (PP (IN:[1431..1433] In)
+      (NP (NN:[1434..1442] contrast)))
+    (,:[1442..1443] ,)
+    (NP-SBJ (NN:[1444..1448] bath) (NN:[1449..1453] PUVA))
+    (VP (VBD:[1454..1457] had)
+      (NP
+        (NP (DT:[1458..1460] no) (JJ:[1461..1468] obvious)
+            (NN:[1469..1475] effect))
+        (PP (IN:[1476..1478] on)
+          (NP
+            (NML (AFX:[1480..1483] pre) (HYPH:[1483..1484] -)
+                 (NN:[1484..1488] PUVA))
+            (NN:[1489..1498] clearance) (NNS:[1499..1505] values))))
+      (SBAR-ADV (IN:[1506..1508] as)
+        (S
+          (NP-SBJ (DT:[1509..1512] the) (JJ:[1513..1519] latter))
+          (VP (VBD:[1520..1527] changed)
+            (PP-EXT (IN:[1528..1530] by)
+              (NP
+                (NP (NNS:[1531..1538] factors))
+                (PP (IN:[1539..1541] of)
+                  (NP
+                    (NP (CD:[1542..1546] 1.00)
+                      (PRN (-LRB-:[1547..1548] -LRB-)
+                        (S
+                          (NP-SBJ
+                            (NML (CD:[1548..1550] 90) (NN:[1550..1551] %))
+                            (NN:[1552..1554] CI))
+                          (NP-PRD
+                            (QP (CD:[1556..1560] 0.81) (HYPH:[1560..1561] -)
+                                (CD:[1561..1565] 1.23))))
+                        (-RRB-:[1565..1566] -RRB-)))
+                    (CC:[1567..1570] and)
+                    (NP (CD:[1571..1575] 1.05)
+                      (PRN (-LRB-:[1576..1577] -LRB-)
+                        (S
+                          (NP-SBJ
+                            (NML (CD:[1577..1579] 90) (NN:[1579..1580] %))
+                            (NN:[1581..1583] CI))
+                          (NP-PRD
+                            (QP (CD:[1584..1588] 0.75) (HYPH:[1588..1589] -)
+                                (CD:[1589..1593] 1.49))))
+                        (-RRB-:[1593..1594] -RRB-)))))))
+            (PP-TMP
+              (PP (IN:[1595..1597] on)
+                (NP
+                  (NP (DT:[1598..1601] the) (JJ:[1602..1607] first)
+                      (NN:[1608..1611] day))
+                  (PP-1 (-NONE-:[1611..1611] *P*))))
+              (CC:[1612..1615] and)
+              (PP (IN:[1616..1621] after)
+                (NP
+                  (NP (CD:[1622..1623] 1) (NN:[1624..1628] week))
+                  (PP-1 (IN:[1629..1631] of)
+                    (NP (NN:[1633..1642] treatment))))))
+            (,:[1642..1643] ,)
+            (ADVP (RB:[1644..1656] respectively))))))
+    (.:[1656..1657] .)))
+
+;sentence 14 Span:1658..1670
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1658..1669] CONCLUSIONS) (::[1669..1670] :)))
+
+;sentence 15 Span:1671..1767
+;Systemic PUVA causes pronounced inhibition  of liver CYP1A2, while bath PUVA
+;has no such effect.
+;[1724..1730]:cyp450:"CYP1A2"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1671..1679] Systemic) (NN:[1680..1684] PUVA))
+    (VP (VBZ:[1685..1691] causes)
+      (NP
+        (NP (JJ:[1692..1702] pronounced) (NN:[1703..1713] inhibition))
+        (PP (IN:[1715..1717] of)
+          (NP (NN:[1718..1723] liver) (NN:[1724..1730] CYP1A2))))
+      (,:[1730..1731] ,)
+      (SBAR-ADV (IN:[1732..1737] while)
+        (S
+          (NP-SBJ (NN:[1738..1742] bath) (NN:[1743..1747] PUVA))
+          (VP (VBZ:[1748..1751] has)
+            (NP (DT:[1752..1754] no) (JJ:[1755..1759] such)
+                (NN:[1760..1766] effect))))))
+    (.:[1766..1767] .)))
+
+;sentence 16 Span:1768..1915
+;The extent of interaction  makes a dose adjustment for most CYP1A2 substrates
+;such as theophylline  mandatory in patients undergoing systemic PUVA.
+;[1828..1834]:cyp450:"CYP1A2"
+;[1835..1845]:substance:"substrates"
+;[1854..1866]:substance:"theophylline"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1768..1771] The) (NN:[1772..1778] extent))
+      (PP (IN:[1779..1781] of)
+        (NP (NN:[1782..1793] interaction))))
+    (VP (VBZ:[1795..1800] makes)
+      (S
+        (NP-SBJ
+          (NP (DT:[1801..1802] a) (NN:[1803..1807] dose)
+              (NN:[1808..1818] adjustment))
+          (PP (IN:[1819..1822] for)
+            (NP
+              (NP (JJS:[1823..1827] most) (NN:[1828..1834] CYP1A2)
+                  (NNS:[1835..1845] substrates))
+              (PP (JJ:[1846..1850] such) (IN:[1851..1853] as)
+                (NP (NN:[1854..1866] theophylline))))))
+        (ADJP-PRD (JJ:[1868..1877] mandatory)))
+      (PP-LOC (IN:[1878..1880] in)
+        (NP
+          (NP (NNS:[1881..1889] patients))
+          (VP (VBG:[1890..1900] undergoing)
+            (NP (JJ:[1901..1909] systemic) (NN:[1910..1914] PUVA))))))
+    (.:[1914..1915] .)))
+
+;section 17 Span:1919..1964
+;PMID: 11422031 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1919..1923] PMID) (::[1923..1924] :) (CD:[1925..1933] 11422031)
+        (IN:[1934..1935] -LSB-) (NNP:[1935..1941] PubMed) (HYPH:[1942..1943] -)
+        (JJ:[1944..1951] indexed) (IN:[1952..1955] for)
+        (NNP:[1956..1964] MEDLINE-RSB-)))

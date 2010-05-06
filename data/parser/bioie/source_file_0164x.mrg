@@ -1,0 +1,315 @@
+;PMID: 9600124
+;source_file_679.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:45..131] = [t:45..131]
+;2)section:[e:135..244] = [t:135..244]
+;3)section:[e:248..323] = [t:248..323]
+;4)sentence:[e:327..425] = [t:327..425]
+;5)sentence:[e:426..544] = [t:426..544]
+;6)sentence:[e:545..837] = [t:545..837]
+;7)sentence:[e:838..971] = [t:838..971]
+;8)sentence:[e:972..1100] = [t:972..1100]
+;9)sentence:[e:1101..1159] = [t:1101..1159]
+;10)sentence:[e:1160..1240] = [t:1160..1240]
+;11)section:[e:1244..1288] = [t:1244..1288]
+
+;section 0 Span:0..40
+;Jpn J Cancer Res  1998 Mar;89(3):299-306
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 1998) (CC:[23..30] Mar;89-LRB-) (CD:[30..31] 3)
+        (-RRB-:[31..32] -RRB-) (CD:[32..36] :299) (::[36..37] -)
+        (CD:[37..40] 306)))
+
+;sentence 1 Span:45..131
+;Genetic alterations of mixed hyperplastic adenomatous polyps in the colon and
+; rectum.
+;[68..118]:malignancy:"mixed hyperplastic adenomatous polyps in the colon"
+;[68..112]...[124..130]:malignancy:"mixed hyperplastic adenomatous polyps in
+;the"..."rectum"
+(SENT
+  (NP-HLN
+    (NP (JJ:[45..52] Genetic) (NNS:[53..64] alterations))
+    (PP (IN:[65..67] of)
+      (NP (JJ:[68..73] mixed) (JJ:[74..86] hyperplastic)
+          (JJ:[87..98] adenomatous) (NNS:[99..105] polyps)))
+    (PP-LOC (IN:[106..108] in)
+      (NP (DT:[109..112] the) (NN:[113..118] colon) (CC:[119..122] and)
+          (NN:[124..130] rectum)))
+    (.:[130..131] .)))
+
+;section 2 Span:135..244
+;Uchida H, Ando H, Maruyama K, Kobayashi H, Toda H, Ogawa H, Ozawa T, Matsuda
+;Y,  Sugimura H, Kanno T, Baba S.
+(SEC
+  (FRAG (NNP:[135..141] Uchida) (NNP:[142..143] H) (,:[143..144] ,)
+        (NNP:[145..149] Ando) (NNP:[150..151] H) (,:[151..152] ,)
+        (NNP:[153..161] Maruyama) (NNP:[162..163] K) (,:[163..164] ,)
+        (NNP:[165..174] Kobayashi) (NNP:[175..176] H) (,:[176..177] ,)
+        (NNP:[178..182] Toda) (NNP:[183..184] H) (,:[184..185] ,)
+        (NNP:[186..191] Ogawa) (NNP:[192..193] H) (,:[193..194] ,)
+        (NNP:[195..200] Ozawa) (NNP:[201..202] T) (,:[202..203] ,)
+        (NNP:[204..211] Matsuda) (NNP:[212..213] Y) (,:[213..214] ,)
+        (NNP:[216..224] Sugimura) (NNP:[225..226] H) (,:[226..227] ,)
+        (NNP:[228..233] Kanno) (NNP:[234..235] T) (,:[235..236] ,)
+        (NNP:[237..241] Baba) (NNP:[242..244] S.)))
+
+;section 3 Span:248..323
+;Department of Laboratory Medicine, Hamamatsu University School of Medicine.
+(SEC
+  (FRAG (NNP:[248..258] Department) (IN:[259..261] of)
+        (NNP:[262..272] Laboratory) (NNP:[273..281] Medicine) (,:[281..282] ,)
+        (NNP:[283..292] Hamamatsu) (NNP:[293..303] University)
+        (NNP:[304..310] School) (IN:[311..313] of) (NNP:[314..322] Medicine)
+        (.:[322..323] .)))
+
+;sentence 4 Span:327..425
+;Some mixed hyperplastic adenomatous polyps (MHAPs) contain dysplastic lesions
+;or  even carcinomas.
+;[332..369]:malignancy:"mixed hyperplastic adenomatous polyps"
+;[371..376]:malignancy:"MHAPs"
+;[386..404]:malignancy:"dysplastic lesions"
+;[414..424]:malignancy:"carcinomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[327..331] Some)
+         (JJ:[332..337] mixed) (JJ:[338..350] hyperplastic)
+         (JJ:[351..362] adenomatous) (NNS:[363..369] polyps))
+      (NP (-LRB-:[370..371] -LRB-) (NNS:[371..376] MHAPs)
+          (-RRB-:[376..377] -RRB-)))
+    (VP (VBP:[378..385] contain)
+      (NP
+        (NP (JJ:[386..396] dysplastic) (NNS:[397..404] lesions))
+        (CC:[405..407] or)
+        (NP (RB:[409..413] even) (NNS:[414..424] carcinomas))))
+    (.:[424..425] .)))
+
+;sentence 5 Span:426..544
+;These polyps are considered to be different from ordinary  hyperplastic
+;polyps and may have a preneoplastic potential.
+;[432..438]:malignancy:"polyps"
+;[485..504]:malignancy:"hyperplastic polyps"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[426..431] These) (NNS:[432..438] polyps))
+    (VP
+      (VP (VBP:[439..442] are)
+        (VP (VBN:[443..453] considered)
+          (S
+            (NP-SBJ-1 (-NONE-:[453..453] *))
+            (VP (TO:[454..456] to)
+              (VP (VB:[457..459] be)
+                (ADJP-PRD (JJ:[460..469] different)
+                  (PP (IN:[470..474] from)
+                    (NP (JJ:[475..483] ordinary)
+                       (JJ:[485..497] hyperplastic) (NNS:[498..504] polyps)))))))))
+      (CC:[505..508] and)
+      (VP (MD:[509..512] may)
+        (VP (VB:[513..517] have)
+          (NP (DT:[518..519] a) (JJ:[520..533] preneoplastic)
+              (NN:[534..543] potential)))))
+    (.:[543..544] .)))
+
+;sentence 6 Span:545..837
+;We investigated APC  and K-ras mutations in MHAPs of the colon and rectum,
+;and also in colorectal  adenomas and hyperplastic polyps to identify
+;molecular differences between  MHAPs, adenomas and hyperplastic polyps, using
+;direct sequencing of mutation  cluster regions (MCR) in APC and K-ras.
+;[561..564]:gene-rna:"APC"
+;[570..575]:gene-rna:"K-ras"
+;[589..607]:malignancy:"MHAPs of the colon"
+;[589..601]...[612..618]:malignancy:"MHAPs of the"..."rectum"
+;[632..652]:malignancy:"colorectal  adenomas"
+;[657..676]:malignancy:"hyperplastic polyps"
+;[720..725]:malignancy:"MHAPs"
+;[727..735]:malignancy:"adenomas"
+;[740..759]:malignancy:"hyperplastic polyps"
+;[823..826]:gene-rna:"APC"
+;[831..836]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[545..547] We))
+    (VP (VBD:[548..560] investigated)
+      (NP
+        (NP
+          (NP (NN:[561..564] APC)
+            (NML-1 (-NONE-:[564..564] *P*)))
+          (CC:[566..569] and)
+          (NP (NN:[570..575] K-ras)
+            (NML-1 (NNS:[576..585] mutations))))
+        (PP-LOC
+          (PP (IN:[586..588] in)
+            (NP
+              (NP (NNS:[589..594] MHAPs))
+              (PP (IN:[595..597] of)
+                (NP (DT:[598..601] the) (NN:[602..607] colon)
+                    (CC:[608..611] and) (NN:[612..618] rectum)))))
+          (,:[618..619] ,)
+          (CONJP (CC:[620..623] and) (RB:[624..628] also))
+          (PP (IN:[629..631] in)
+            (NP
+              (NP (JJ:[632..642] colorectal) (NNS:[644..652] adenomas))
+              (CC:[653..656] and)
+              (NP (JJ:[657..669] hyperplastic) (NNS:[670..676] polyps))))))
+      (S-PRP
+        (NP-SBJ (-NONE-:[676..676] *))
+        (VP (TO:[677..679] to)
+          (VP (VB:[680..688] identify)
+            (NP
+              (NP (JJ:[689..698] molecular) (NNS:[699..710] differences))
+              (PP (IN:[711..718] between)
+                (NP
+                  (NP (NNS:[720..725] MHAPs))
+                  (,:[725..726] ,)
+                  (NP (NNS:[727..735] adenomas))
+                  (CC:[736..739] and)
+                  (NP (JJ:[740..752] hyperplastic) (NNS:[753..759] polyps))))))))
+      (,:[759..760] ,)
+      (S-MNR
+        (NP-SBJ (-NONE-:[760..760] *))
+        (VP (VBG:[761..766] using)
+          (NP
+            (NP (JJ:[767..773] direct) (NN:[774..784] sequencing))
+            (PP (IN:[785..787] of)
+              (NP
+                (NP
+                  (NP (NN:[788..796] mutation) (NN:[798..805] cluster)
+                      (NNS:[806..813] regions))
+                  (NP (-LRB-:[814..815] -LRB-) (NN:[815..818] MCR)
+                      (-RRB-:[818..819] -RRB-)))
+                (PP-LOC (IN:[820..822] in)
+                  (NP
+                    (NP (NN:[823..826] APC))
+                    (CC:[827..830] and)
+                    (NP (NN:[831..836] K-ras))))))))))
+    (.:[836..837] .)))
+
+;sentence 7 Span:838..971
+;No APC mutations were identified in 12  MHAPs and 8 hyperplastic polyps,
+;whereas 10 of 27 (37.0%) adenomas showed  somatic mutations.
+;[841..844]:gene-rna:"APC"
+;[878..883]:malignancy:"MHAPs"
+;[890..909]:malignancy:"hyperplastic polyps"
+;[936..944]:malignancy:"adenomas"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[838..840] No) (NN:[841..844] APC) (NNS:[845..854] mutations))
+    (VP (VBD:[855..859] were)
+      (VP (VBN:[860..870] identified)
+        (NP-1 (-NONE-:[870..870] *))
+        (PP-LOC (IN:[871..873] in)
+          (NP
+            (NP (CD:[874..876] 12) (NNS:[878..883] MHAPs))
+            (CC:[884..887] and)
+            (NP (CD:[888..889] 8)
+               (JJ:[890..902] hyperplastic) (NNS:[903..909] polyps))))
+        (,:[909..910] ,)
+        (SBAR-ADV (IN:[911..918] whereas)
+          (S
+            (NP-SBJ
+              (NP (CD:[919..921] 10))
+              (PP (IN:[922..924] of)
+                (NP (CD:[925..927] 27)
+                  (PRN (-LRB-:[928..929] -LRB-)
+                    (NP (CD:[929..933] 37.0) (NN:[933..934] %))
+                    (-RRB-:[934..935] -RRB-))
+                  (NNS:[936..944] adenomas))))
+            (VP (VBD:[945..951] showed)
+              (NP (JJ:[953..960] somatic) (NNS:[961..970] mutations)))))))
+    (.:[970..971] .)))
+
+;sentence 8 Span:972..1100
+;K-ras mutations were identified in one of 12 (8.3%) MHAPs,  one of 8 (12.5%)
+;hyperplastic polyps, and 10 of 27 (37.0%) adenomas.
+;[972..977]:gene-rna:"K-ras"
+;[1024..1029]:malignancy:"MHAPs"
+;[1049..1068]:malignancy:"hyperplastic polyps"
+;[1091..1099]:malignancy:"adenomas"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[972..977] K-ras) (NNS:[978..987] mutations))
+    (VP (VBD:[988..992] were)
+      (VP (VBN:[993..1003] identified)
+        (NP-1 (-NONE-:[1003..1003] *))
+        (PP (IN:[1004..1006] in)
+          (NP
+            (NP
+              (NP (CD:[1007..1010] one))
+              (PP (IN:[1011..1013] of)
+                (NP (CD:[1014..1016] 12)
+                  (PRN (-LRB-:[1017..1018] -LRB-)
+                    (NP (CD:[1018..1021] 8.3) (NN:[1021..1022] %))
+                    (-RRB-:[1022..1023] -RRB-))
+                  (NNS:[1024..1029] MHAPs))))
+            (,:[1029..1030] ,)
+            (NP
+              (NP (CD:[1032..1035] one))
+              (PP (IN:[1036..1038] of)
+                (NP (CD:[1039..1040] 8)
+                  (PRN (-LRB-:[1041..1042] -LRB-)
+                    (NP (CD:[1042..1046] 12.5) (NN:[1046..1047] %))
+                    (-RRB-:[1047..1048] -RRB-))
+                   (JJ:[1049..1061] hyperplastic) (NNS:[1062..1068] polyps))))
+            (,:[1068..1069] ,) (CC:[1070..1073] and)
+            (NP
+              (NP (CD:[1074..1076] 10))
+              (PP (IN:[1077..1079] of)
+                (NP (CD:[1080..1082] 27)
+                  (PRN (-LRB-:[1083..1084] -LRB-)
+                    (NP (CD:[1084..1088] 37.0) (NN:[1088..1089] %))
+                    (-RRB-:[1089..1090] -RRB-))
+                  (NNS:[1091..1099] adenomas))))))))
+    (.:[1099..1100] .)))
+
+;sentence 9 Span:1101..1159
+;p53  mutation was found in a carcinoma arising in an MHAP.
+;[1101..1104]:gene-rna:"p53"
+;[1130..1139]:malignancy:"carcinoma"
+;[1154..1158]:malignancy:"MHAP"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1101..1104] p53) (NN:[1106..1114] mutation))
+    (VP (VBD:[1115..1118] was)
+      (VP (VBN:[1119..1124] found)
+        (NP-1 (-NONE-:[1124..1124] *))
+        (PP-LOC (IN:[1125..1127] in)
+          (NP
+            (NP (DT:[1128..1129] a) (NN:[1130..1139] carcinoma))
+            (VP (VBG:[1140..1147] arising)
+              (PP-LOC (IN:[1148..1150] in)
+                (NP (DT:[1151..1153] an) (NN:[1154..1158] MHAP))))))))
+    (.:[1158..1159] .)))
+
+;sentence 10 Span:1160..1240
+;Mutations other than APC  mutations may play a role in the development of
+;MHAPs.
+;[1181..1184]:gene-rna:"APC"
+;[1234..1239]:malignancy:"MHAPs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1160..1169] Mutations))
+      (ADJP (JJ:[1170..1175] other)
+        (PP (IN:[1176..1180] than)
+          (NP (NN:[1181..1184] APC) (NNS:[1186..1195] mutations)))))
+    (VP (MD:[1196..1199] may)
+      (VP (VB:[1200..1204] play)
+        (NP (DT:[1205..1206] a) (NN:[1207..1211] role))
+        (PP (IN:[1212..1214] in)
+          (NP
+            (NP (DT:[1215..1218] the) (NN:[1219..1230] development))
+            (PP (IN:[1231..1233] of)
+              (NP (NNS:[1234..1239] MHAPs)))))))
+    (.:[1239..1240] .)))
+
+;section 11 Span:1244..1288
+;PMID: 9600124 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1244..1248] PMID) (::[1248..1249] :) (CD:[1250..1257] 9600124)
+        (NN:[1258..1259] -LSB-) (NNP:[1259..1265] PubMed) (::[1266..1267] -)
+        (NN:[1268..1275] indexed) (IN:[1276..1279] for)
+        (NNP:[1280..1288] MEDLINE-RSB-)))

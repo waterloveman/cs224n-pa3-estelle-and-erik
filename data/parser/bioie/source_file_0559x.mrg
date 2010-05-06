@@ -1,0 +1,309 @@
+;PMID: 2403598
+;source_file_487.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)sentence:[e:34..98] = [t:34..98]
+;2)section:[e:102..155] = [t:102..155]
+;3)section:[e:159..243] = [t:159..243]
+;4)sentence:[e:247..329] = [t:247..329]
+;5)sentence:[e:330..595] = [t:330..595]
+;6)sentence:[e:596..697] = [t:596..697]
+;7)sentence:[e:698..1010] = [t:698..1010]
+;8)sentence:[e:1011..1114] = [t:1011..1114]
+;9)sentence:[e:1115..1277] = [t:1115..1277]
+;10)section:[e:1281..1325] = [t:1281..1325]
+
+;section 0 Span:0..29
+;J Urol  1990 Jan;143(1):175-8
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Urol) (CD:[8..12] 1990) (CC:[13..19] Jan;14)
+        (CD:[19..20] 3) (NN:[20..21] -LRB-) (CD:[21..22] 1) (NN:[22..23] -RRB-)
+        (::[23..24] :) (CD:[24..26] 17) (::[26..29] 5-8)))
+
+;sentence 1 Span:34..98
+;Infrequent ras oncogene point mutations in renal cell carcinoma.
+;[45..48]:gene-rna:"ras"
+;[58..73]:variation-type:"point mutations"
+;[77..97]:malignancy:"renal cell carcinoma"
+(SENT
+  (NP-HLN
+    (NP (JJ:[34..44] Infrequent)
+      (NML (NN:[45..48] ras) (NN:[49..57] oncogene))
+       (NN:[58..63] point) (NNS:[64..73] mutations))
+    (PP (IN:[74..76] in)
+      (NP
+        (NML (JJ:[77..82] renal) (NN:[83..87] cell))
+        (NN:[88..97] carcinoma)))
+    (.:[97..98] .)))
+
+;section 2 Span:102..155
+;Nanus DM, Mentle IR, Motzer RJ, Bander NH, Albino AP.
+(SEC
+  (FRAG (NNP:[102..107] Nanus) (NNP:[108..110] DM) (,:[110..111] ,)
+        (NNP:[112..118] Mentle) (NNP:[119..121] IR) (,:[121..122] ,)
+        (NNP:[123..129] Motzer) (NNP:[130..132] RJ) (,:[132..133] ,)
+        (NNP:[134..140] Bander) (NNP:[141..143] NH) (,:[143..144] ,)
+        (NNP:[145..151] Albino) (NNP:[152..154] AP) (.:[154..155] .)))
+
+;section 3 Span:159..243
+;Department of Medicine, Memorial Sloan Kettering Cancer Center, New York, NY 
+;10021.
+(SEC
+  (FRAG (NNP:[159..169] Department) (IN:[170..172] of) (NNP:[173..181] Medicine)
+        (,:[181..182] ,) (NNP:[183..191] Memorial) (NNP:[192..197] Sloan)
+        (NNP:[198..207] Kettering) (NNP:[208..214] Cancer)
+        (NNP:[215..221] Center) (,:[221..222] ,) (NNP:[223..226] New)
+        (NNP:[227..231] York) (,:[231..232] ,) (NNP:[233..235] NY)
+        (CD:[237..242] 10021) (.:[242..243] .)))
+
+;sentence 4 Span:247..329
+;The role of ras oncogenes in the pathogenesis of renal cell carcinoma is 
+;unclear.
+;[259..262]:gene-rna:"ras"
+;[296..316]:malignancy:"renal cell carcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[247..250] The) (NN:[251..255] role))
+      (PP (IN:[256..258] of)
+        (NP (NN:[259..262] ras) (NNS:[263..272] oncogenes)))
+      (PP (IN:[273..275] in)
+        (NP
+          (NP (DT:[276..279] the) (NN:[280..292] pathogenesis))
+          (PP (IN:[293..295] of)
+            (NP
+              (NML (JJ:[296..301] renal) (NN:[302..306] cell))
+              (NN:[307..316] carcinoma))))))
+    (VP (VBZ:[317..319] is)
+      (ADJP-PRD (JJ:[321..328] unclear)))
+    (.:[328..329] .)))
+
+;sentence 5 Span:330..595
+;We have previously shown that insertion of a mutated ras oncogene into 
+;cultured human proximal tubular cells, the normal counterpart of renal cell 
+;carcinomas, initiates a series of transformation events which results in
+;cells  possessing a renal cancer phenotype.
+;[383..386]:gene-rna:"ras"
+;[467..489]:malignancy:"renal cell  carcinomas"
+;[572..584]:malignancy:"renal cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[330..332] We))
+    (VP (VBP:[333..337] have)
+      (ADVP-TMP (RB:[338..348] previously))
+      (VP (VBN:[349..354] shown)
+        (SBAR (IN:[355..359] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[360..369] insertion))
+              (PP (IN:[370..372] of)
+                (NP (DT:[373..374] a) (JJ:[375..382] mutated)
+                    (NN:[383..386] ras) (NN:[387..395] oncogene)))
+              (PP (IN:[396..400] into)
+                (NP
+                  (NP (JJ:[402..410] cultured) (JJ:[411..416] human)
+                      (JJ:[417..425] proximal) (JJ:[426..433] tubular)
+                      (NNS:[434..439] cells))
+                  (,:[439..440] ,)
+                  (NP
+                    (NP (DT:[441..444] the) (JJ:[445..451] normal)
+                        (NN:[452..463] counterpart))
+                    (PP (IN:[464..466] of)
+                      (NP
+                        (NML (JJ:[467..472] renal) (NN:[473..477] cell))
+                        (NNS:[479..489] carcinomas)))))))
+            (,:[489..490] ,)
+            (VP (VBZ:[491..500] initiates)
+              (NP
+                (NP
+                  (NP (DT:[501..502] a) (NN:[503..509] series))
+                  (PP (IN:[510..512] of)
+                    (NP (NN:[513..527] transformation) (NNS:[528..534] events))))
+                (SBAR
+                  (WHNP-1 (WDT:[535..540] which))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[540..540] *T*))
+                    (VP (VBZ:[541..548] results)
+                      (PP-CLR (IN:[549..551] in)
+                        (NP
+                          (NP (NNS:[552..557] cells))
+                          (VP (VBG:[559..569] possessing)
+                            (NP (DT:[570..571] a)
+                              (NML (JJ:[572..577] renal) (NN:[578..584] cancer))
+                              (NN:[585..594] phenotype))))))))))))))
+    (.:[594..595] .)))
+
+;sentence 6 Span:596..697
+;These data suggested a role for mutated ras  genes in the initiation and
+;maintenance of this disease.
+;[636..639]:gene-rna:"ras"
+;[689..696]:malignancy:"disease"
+(SENT
+  (S
+    (NP-SBJ (DT:[596..601] These) (NNS:[602..606] data))
+    (VP (VBD:[607..616] suggested)
+      (NP
+        (NP (DT:[617..618] a) (NN:[619..623] role))
+        (PP (IN:[624..627] for)
+          (NP (JJ:[628..635] mutated) (NN:[636..639] ras) (NNS:[641..646] genes))))
+      (PP (IN:[647..649] in)
+        (NP
+          (NP (DT:[650..653] the) (NN:[654..664] initiation) (CC:[665..668] and)
+              (NN:[669..680] maintenance))
+          (PP (IN:[681..683] of)
+            (NP (DT:[684..688] this) (NN:[689..696] disease))))))
+    (.:[696..697] .)))
+
+;sentence 7 Span:698..1010
+;Therefore, to assess  the involvement of ras genes in renal carcinogenesis,
+;51 primary and metastatic  renal carcinomas, including three oncocytomas,
+;were analyzed for point mutations  in codons 12, 13 and 61 of the Ha-ras,
+;Ki-ras and N-ras proto-oncogenes using  polymerase-catalyzed chain reaction
+;methodology.
+;[739..742]:gene-rna:"ras"
+;[777..784]...[801..817]:malignancy-type:"primary"..."renal carcinomas"
+;[789..817]:malignancy:"metastatic  renal carcinomas"
+;[835..846]:malignancy:"oncocytomas"
+;[866..881]:variation-type:"point mutations"
+;[886..895]:variation-location:"codons 12"
+;[886..892]...[904..906]:variation-location:"codons"..."61"
+;[886..892]...[897..899]:variation-location:"codons"..."13"
+;[914..920]:gene-rna:"Ha-ras"
+;[922..928]:gene-rna:"Ki-ras"
+;[933..938]:gene-rna:"N-ras"
+;[962..972]:gene-protein:"polymerase"
+(SENT
+  (S
+    (ADVP (RB:[698..707] Therefore))
+    (,:[707..708] ,)
+    (S-PRP
+      (NP-SBJ (-NONE-:[708..708] *))
+      (VP (TO:[709..711] to)
+        (VP (VB:[712..718] assess)
+          (NP
+            (NP (DT:[720..723] the) (NN:[724..735] involvement))
+            (PP (IN:[736..738] of)
+              (NP (NN:[739..742] ras) (NNS:[743..748] genes))))
+          (PP (IN:[749..751] in)
+            (NP (JJ:[752..757] renal) (NN:[758..772] carcinogenesis))))))
+    (,:[772..773] ,)
+    (NP-SBJ-3 (CD:[774..776] 51)
+      (ADJP (JJ:[777..784] primary) (CC:[785..788] and)
+            (JJ:[789..799] metastatic))
+      (JJ:[801..806] renal) (NNS:[807..817] carcinomas))
+    (,:[817..818] ,)
+    (PP (VBG:[819..828] including)
+      (NP (CD:[829..834] three) (NNS:[835..846] oncocytomas)))
+    (,:[846..847] ,)
+    (VP (VBD:[848..852] were)
+      (VP (VBN:[853..861] analyzed)
+        (NP-3 (-NONE-:[861..861] *))
+        (PP (IN:[862..865] for)
+          (NP
+            (NP (NN:[866..871] point) (NNS:[872..881] mutations))
+            (PP (IN:[883..885] in)
+              (NP
+                (NP
+                  (NP
+                    (NML-2 (NNS:[886..892] codons))
+                    (CD:[893..895] 12))
+                  (,:[895..896] ,)
+                  (NP
+                    (NML-2 (-NONE-:[896..896] *P*))
+                    (CD:[897..899] 13))
+                  (CC:[900..903] and)
+                  (NP
+                    (NML-2 (-NONE-:[903..903] *P*))
+                    (CD:[904..906] 61)))
+                (PP (IN:[907..909] of)
+                  (NP (DT:[910..913] the)
+                    (NML
+                      (NML (NN:[914..920] Ha-ras)
+                        (NML-1 (-NONE-:[920..920] *P*)))
+                      (,:[920..921] ,)
+                      (NML (NN:[922..928] Ki-ras)
+                        (NML-1 (-NONE-:[928..928] *P*)))
+                      (CC:[929..932] and)
+                      (NML (NN:[933..938] N-ras)
+                        (NML-1 (AFX:[939..944] proto) (HYPH:[944..945] -)
+                               (NNS:[945..954] oncogenes))))))))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[954..954] *))
+          (VP (VBG:[955..960] using)
+            (NP
+              (ADJP (NN:[962..972] polymerase) (HYPH:[972..973] -)
+                    (VBN:[973..982] catalyzed))
+              (NML (NN:[983..988] chain) (NN:[989..997] reaction))
+              (NN:[998..1009] methodology))))))
+    (.:[1009..1010] .)))
+
+;sentence 8 Span:1011..1114
+;A mutated Ha-ras gene was found  in one renal cancer metastatic to lung for
+;an overall incidence of 2%.
+;[1021..1027]:gene-rna:"Ha-ras"
+;[1051..1082]:malignancy:"renal cancer metastatic to lung"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1011..1012] A) (JJ:[1013..1020] mutated)
+              (NN:[1021..1027] Ha-ras) (NN:[1028..1032] gene))
+    (VP (VBD:[1033..1036] was)
+      (VP (VBN:[1037..1042] found)
+        (NP-1 (-NONE-:[1042..1042] *))
+        (PP (IN:[1044..1046] in)
+          (NP
+            (NP (CD:[1047..1050] one) (JJ:[1051..1056] renal)
+                (NN:[1057..1063] cancer))
+            (ADJP (JJ:[1064..1074] metastatic)
+              (PP (TO:[1075..1077] to)
+                (NP (NN:[1078..1082] lung))))))
+        (PP (IN:[1083..1086] for)
+          (NP
+            (NP (DT:[1087..1089] an) (JJ:[1090..1097] overall)
+                (NN:[1098..1107] incidence))
+            (PP (IN:[1108..1110] of)
+              (NP (CD:[1111..1112] 2) (NN:[1112..1113] %)))))))
+    (.:[1113..1114] .)))
+
+;sentence 9 Span:1115..1277
+;These  data indicate that ras oncogenes, activated by point mutations, do not
+;play a  major role in the initiation, maintenance or metastases of renal
+;carcinomas.
+;[1141..1144]:gene-rna:"ras"
+;[1169..1184]:variation-type:"point mutations"
+;[1246..1276]:malignancy:"metastases of renal carcinomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[1115..1120] These) (NNS:[1122..1126] data))
+    (VP (VBP:[1127..1135] indicate)
+      (SBAR (IN:[1136..1140] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1141..1144] ras) (NNS:[1145..1154] oncogenes))
+            (,:[1154..1155] ,)
+            (VP (VBN:[1156..1165] activated)
+              (NP (-NONE-:[1165..1165] *))
+              (PP (IN:[1166..1168] by)
+                (NP-LGS (NN:[1169..1174] point) (NNS:[1175..1184] mutations)))))
+          (,:[1184..1185] ,)
+          (VP (VBP:[1186..1188] do) (RB:[1189..1192] not)
+            (VP (VB:[1193..1197] play)
+              (NP (DT:[1198..1199] a) (JJ:[1201..1206] major)
+                  (NN:[1207..1211] role))
+              (PP (IN:[1212..1214] in)
+                (NP
+                  (NP (DT:[1215..1218] the) (NN:[1219..1229] initiation)
+                      (,:[1229..1230] ,) (NN:[1231..1242] maintenance)
+                      (CC:[1243..1245] or) (NNS:[1246..1256] metastases))
+                  (PP (IN:[1257..1259] of)
+                    (NP (JJ:[1260..1265] renal) (NNS:[1266..1276] carcinomas))))))))))
+    (.:[1276..1277] .)))
+
+;section 10 Span:1281..1325
+;PMID: 2403598 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1281..1285] PMID) (::[1285..1286] :) (CD:[1287..1294] 2403598)
+        (NN:[1295..1296] -LSB-) (NNP:[1296..1302] PubMed) (::[1303..1304] -)
+        (NN:[1305..1312] indexed) (IN:[1313..1316] for)
+        (NNP:[1317..1325] MEDLINE-RSB-)))

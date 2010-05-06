@@ -1,0 +1,557 @@
+;PMID: 10780971
+;source_file_847.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..191] = [t:46..191]
+;2)section:[e:195..300] = [t:195..300]
+;3)section:[e:304..429] = [t:304..429]
+;4)sentence:[e:433..531] = [t:433..531]
+;5)sentence:[e:532..730] = [t:532..730]
+;6)sentence:[e:732..934] = [t:732..934]
+;7)sentence:[e:935..1028] = [t:935..1028]
+;8)sentence:[e:1029..1183] = [t:1029..1183]
+;9)sentence:[e:1184..1340] = [t:1184..1340]
+;10)sentence:[e:1341..1429] = [t:1341..1429]
+;11)sentence:[e:1430..1501] = [t:1430..1501]
+;12)sentence:[e:1502..1697] = [t:1502..1697]
+;13)sentence:[e:1698..1815] = [t:1698..1815]
+;14)sentence:[e:1816..2186] = [t:1816..2186]
+;15)sentence:[e:2187..2375] = [t:2187..2375]
+;16)section:[e:2379..2424] = [t:2379..2424]
+
+;section 0 Span:0..40
+;Br J Pharmacol. 2000 Apr;129(8):1655-67.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..14] Pharmacol) (.:[14..15] .)
+        (CD:[16..20] 2000) (::[21..29] Apr;129-LRB-) (CD:[29..30] 8)
+        (-RRB-:[30..31] -RRB-) (CD:[31..36] :1655) (::[36..37] -)
+        (CD:[37..39] 67) (.:[39..40] .)))
+
+;sentence 1 Span:46..191
+;Identification of the cytochrome P450 enzymes involved in the metabolism of 
+;cisapride: in vitro studies of potential co-medication interactions.
+;[68..91]:cyp450:"cytochrome P450 enzymes"
+;[123..132]:substance:"cisapride"
+;[167..177]:substance:"medication"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[46..60] Identification))
+      (PP (IN:[61..63] of)
+        (NP
+          (NP (DT:[64..67] the)
+             (NN:[68..78] cytochrome) (NN:[79..83] P450) (NNS:[84..91] enzymes))
+          (VP (JJ:[92..100] involved)
+            (NP (-NONE-:[100..100] *))
+            (PP-CLR (IN:[101..103] in)
+              (NP
+                (NP (DT:[104..107] the) (NN:[108..118] metabolism))
+                (NP (IN:[119..121] of)
+                  (NP (NN:[123..132] cisapride)))))))))
+    (::[132..133] :)
+    (NP
+      (NP
+        (ADJP (FW:[134..136] in) (FW:[137..142] vitro))
+        (NNS:[143..150] studies))
+      (PP (IN:[151..153] of)
+        (NP (JJ:[154..163] potential)
+          (NML (AFX:[164..166] co) (HYPH:[166..167] -)
+               (NN:[167..177] medication))
+          (NNS:[178..190] interactions))))
+    (.:[190..191] .)))
+
+;section 2 Span:195..300
+;Bohets H, Lavrijsen K, Hendrickx J, van Houdt J, van Genechten V, Verboven P,
+; Meuldermans W, Heykants J.
+(SEC
+  (FRAG (NNP:[195..201] Bohets) (NNP:[202..203] H) (,:[203..204] ,)
+        (NNP:[205..214] Lavrijsen) (NNP:[215..216] K) (,:[216..217] ,)
+        (NNP:[218..227] Hendrickx) (NNP:[228..230] J,) (NNP:[231..234] van)
+        (NNP:[235..240] Houdt) (NNP:[241..243] J,) (NNP:[244..247] van)
+        (NNP:[248..257] Genechten) (NNP:[258..259] V) (,:[259..260] ,)
+        (NNP:[261..269] Verboven) (NNP:[270..271] P) (,:[271..272] ,)
+        (NNP:[274..285] Meuldermans) (NNP:[286..287] W) (,:[287..288] ,)
+        (NNP:[289..297] Heykants) (NNP:[298..300] J.)))
+
+;section 3 Span:304..429
+;Janssen Research Foundation, Department of Pharmacokinetics, Turnhoutseweg
+;30,  B-2340 Beerse, Belgium. hbohets@janbe.jnj.com
+(SEC
+  (FRAG (NNP:[304..311] Janssen) (NNP:[312..320] Research)
+        (NNP:[321..331] Foundation) (,:[331..332] ,) (NNP:[333..343] Department)
+        (IN:[344..346] of) (NNP:[347..363] Pharmacokinetics) (,:[363..364] ,)
+        (NNP:[365..378] Turnhoutseweg) (CD:[379..381] 30) (,:[381..382] ,)
+        (NNP:[384..385] B) (::[385..386] -) (CD:[386..390] 2340)
+        (NNP:[391..397] Beerse) (,:[397..398] ,) (NNP:[399..406] Belgium)
+        (.:[406..407] .) (``:[408..421] hbohets@janbe) (NN:[421..429] .jnj.com)))
+
+;sentence 4 Span:433..531
+;Cisapride is a prokinetic drug that is widely used to facilitate 
+;gastrointestinal tract motility.
+;[433..442]:substance:"Cisapride"
+;[459..463]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ (NN:[433..442] Cisapride))
+    (VP (VBZ:[443..445] is)
+      (NP-PRD
+        (NP (DT:[446..447] a) (JJ:[448..458] prokinetic) (NN:[459..463] drug))
+        (SBAR
+          (WHNP-1 (WDT:[464..468] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[468..468] *T*))
+            (VP (VBZ:[469..471] is)
+              (VP
+                (ADVP (RB:[472..478] widely))
+                (VBN:[479..483] used)
+                (NP-1 (-NONE-:[483..483] *))
+                (S-PRP
+                  (NP-SBJ (-NONE-:[483..483] *))
+                  (VP (TO:[484..486] to)
+                    (VP (VB:[487..497] facilitate)
+                      (NP
+                        (NML (JJ:[499..515] gastrointestinal)
+                             (NN:[516..521] tract))
+                        (NN:[522..530] motility)))))))))))
+    (.:[530..531] .)))
+
+;sentence 5 Span:532..730
+;Structurally, cisapride is a substituted  piperidinyl benzamide that
+;interacts with 5-hydroxytryptamine-4 receptors and  which is largely without
+;central depressant or antidopaminergic side-effects.
+;[546..555]:substance:"cisapride"
+;[574..595]:substance:"piperidinyl benzamide"
+;[616..647]:substance:"5-hydroxytryptamine-4 receptors"
+(SENT
+  (S
+    (ADVP (RB:[532..544] Structurally))
+    (,:[544..545] ,)
+    (NP-SBJ (NN:[546..555] cisapride))
+    (VP (VBZ:[556..558] is)
+      (NP-PRD
+        (NP (DT:[559..560] a) (JJ:[561..572] substituted)
+           (NN:[574..585] piperidinyl) (NN:[586..595] benzamide))
+        (SBAR
+          (SBAR
+            (WHNP-3 (WDT:[596..600] that))
+            (S
+              (NP-SBJ-3 (-NONE-:[600..600] *T*))
+              (VP (VBZ:[601..610] interacts)
+                (PP-CLR (IN:[611..615] with)
+                  (NP (NN:[616..637] 5-hydroxytryptamine-4)
+                      (NNS:[638..647] receptors))))))
+          (CC:[648..651] and)
+          (SBAR
+            (WHNP-2 (WDT:[653..658] which))
+            (S
+              (NP-SBJ-2 (-NONE-:[658..658] *T*))
+              (VP (VBZ:[659..661] is)
+                (PP-PRD
+                  (ADVP (RB:[662..669] largely))
+                  (IN:[670..677] without)
+                  (NP
+                    (NP
+                      (NML (JJ:[678..685] central) (JJ:[686..696] depressant))
+                      (NML-1 (-NONE-:[696..696] *P*)))
+                    (CC:[697..699] or)
+                    (NP (JJ:[700..716] antidopaminergic)
+                      (NML-1 (NN:[717..721] side) (HYPH:[721..722] -)
+                             (NNS:[722..729] effects)))))))))))
+    (.:[729..730] .)))
+
+;sentence 6 Span:732..934
+;The aims of this study were to investigate the metabolism of cisapride in
+;human  liver microsomes and to determine which cytochrome P-450 (CYP)
+;isoenzyme(s) are  involved in cisapride biotransformation.
+;[793..802]:substance:"cisapride"
+;[853..888]:cyp450:"cytochrome P-450 (CYP) isoenzyme(s)"
+;[906..915]:substance:"cisapride"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[732..735] The) (NNS:[736..740] aims))
+      (PP (IN:[741..743] of)
+        (NP (DT:[744..748] this) (NN:[749..754] study))))
+    (VP (VBD:[755..759] were)
+      (S-PRP-PRD
+        (S
+          (NP-SBJ (-NONE-:[759..759] *))
+          (VP (TO:[760..762] to)
+            (VP (VB:[763..774] investigate)
+              (NP
+                (NP (DT:[775..778] the) (NN:[779..789] metabolism))
+                (PP (IN:[790..792] of)
+                  (NP (NN:[793..802] cisapride))))
+              (PP-LOC (IN:[803..805] in)
+                (NP (JJ:[806..811] human) (NN:[813..818] liver)
+                    (NNS:[819..829] microsomes))))))
+        (CC:[830..833] and)
+        (S
+          (NP-SBJ (-NONE-:[833..833] *))
+          (VP (TO:[834..836] to)
+            (VP (VB:[837..846] determine)
+              (SBAR (WDT:[847..852] which)
+                (S
+                  (NP-SBJ-1
+                    (NML
+                      (NML (NN:[853..863] cytochrome) (NN:[864..869] P-450))
+                      (NML (-LRB-:[870..871] -LRB-) (NN:[871..874] CYP)
+                           (-RRB-:[874..875] -RRB-)))
+                    (NNS:[876..888] isoenzyme-LRB-s-RRB-))
+                  (VP (VBP:[889..892] are)
+                    (VP (JJ:[894..902] involved)
+                      (NP-1 (-NONE-:[902..902] *))
+                      (PP-CLR (IN:[903..905] in)
+                        (NP (NN:[906..915] cisapride)
+                            (NN:[916..933] biotransformation))))))))))))
+    (.:[933..934] .)))
+
+;sentence 7 Span:935..1028
+;Additionally, the effects of various  drugs on the metabolism of cisapride
+;were investigated.
+;[973..978]:substance:"drugs"
+;[1000..1009]:substance:"cisapride"
+(SENT
+  (S
+    (ADVP (RB:[935..947] Additionally))
+    (,:[947..948] ,)
+    (NP-SBJ-1
+      (NP (DT:[949..952] the) (NNS:[953..960] effects))
+      (PP (IN:[961..963] of)
+        (NP (JJ:[964..971] various) (NNS:[973..978] drugs)))
+      (PP (IN:[979..981] on)
+        (NP
+          (NP (DT:[982..985] the) (NN:[986..996] metabolism))
+          (PP (IN:[997..999] of)
+            (NP (NN:[1000..1009] cisapride))))))
+    (VP (VBD:[1010..1014] were)
+      (VP (VBN:[1015..1027] investigated)
+        (NP-1 (-NONE-:[1027..1027] *))))
+    (.:[1027..1028] .)))
+
+;sentence 8 Span:1029..1183
+;The major in vitro  metabolite of cisapride was formed by oxidative
+;N-dealkylation at the piperidine  nitrogen, leading to the production of
+;norcisapride.
+;[1049..1059]:substance:"metabolite"
+;[1063..1072]:substance:"cisapride"
+;[1170..1182]:substance:"norcisapride"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1029..1032] The) (JJ:[1033..1038] major)
+        (ADJP (FW:[1039..1041] in) (FW:[1042..1047] vitro))
+        (NN:[1049..1059] metabolite))
+      (PP (IN:[1060..1062] of)
+        (NP (NN:[1063..1072] cisapride))))
+    (VP (VBD:[1073..1076] was)
+      (VP (VBN:[1077..1083] formed)
+        (NP-1 (-NONE-:[1083..1083] *))
+        (PP-MNR (IN:[1084..1086] by)
+          (NP
+            (NP (JJ:[1087..1096] oxidative) (NN:[1097..1098] N)
+                (HYPH:[1098..1099] -) (NN:[1099..1111] dealkylation))
+            (PP-LOC (IN:[1112..1114] at)
+              (NP (DT:[1115..1118] the) (NN:[1119..1129] piperidine)
+                  (NN:[1131..1139] nitrogen)))))
+        (,:[1139..1140] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1140..1140] *))
+          (VP (VBG:[1141..1148] leading)
+            (PP-CLR (TO:[1149..1151] to)
+              (NP
+                (NP (DT:[1152..1155] the) (NN:[1156..1166] production))
+                (PP (IN:[1167..1169] of)
+                  (NP (NN:[1170..1182] norcisapride)))))))))
+    (.:[1182..1183] .)))
+
+;sentence 9 Span:1184..1340
+;By using competitive  inhibition data, correlation studies and heterologous
+;expression systems, it was  demonstrated that CYP3A4 was the major CYP
+;involved.
+;[1306..1312]:cyp450:"CYP3A4"
+;[1327..1330]:cyp450:"CYP"
+(SENT
+  (S
+    (PP-MNR (IN:[1184..1186] By)
+      (S-NOM
+        (NP-SBJ (-NONE-:[1186..1186] *))
+        (VP (VBG:[1187..1192] using)
+          (NP
+            (NP (JJ:[1193..1204] competitive) (NN:[1206..1216] inhibition)
+                (NNS:[1217..1221] data))
+            (,:[1221..1222] ,)
+            (NP (NN:[1223..1234] correlation) (NNS:[1235..1242] studies))
+            (CC:[1243..1246] and)
+            (NP (JJ:[1247..1259] heterologous) (NN:[1260..1270] expression)
+                (NNS:[1271..1278] systems))))))
+    (,:[1278..1279] ,)
+    (NP-SBJ-1
+      (NP (PRP:[1280..1282] it))
+      (SBAR-2 (-NONE-:[1282..1282] *EXP*)))
+    (VP (VBD:[1283..1286] was)
+      (VP (VBN:[1288..1300] demonstrated)
+        (NP-1 (-NONE-:[1300..1300] *))
+        (SBAR-2 (IN:[1301..1305] that)
+          (S
+            (NP-SBJ (NN:[1306..1312] CYP3A4))
+            (VP (VBD:[1313..1316] was)
+              (NP-PRD
+                (NP (DT:[1317..1320] the) (JJ:[1321..1326] major)
+                    (NN:[1327..1330] CYP))
+                (VP (VBN:[1331..1339] involved)
+                  (NP (-NONE-:[1339..1339] *)))))))))
+    (.:[1339..1340] .)))
+
+;sentence 10 Span:1341..1429
+;CYP2A6 also contributed to  the metabolism of cisapride, albeit to a much
+;lesser extent.
+;[1341..1347]:cyp450:"CYP2A6"
+;[1387..1396]:substance:"cisapride"
+(SENT
+  (S
+    (NP-SBJ (NN:[1341..1347] CYP2A6))
+    (ADVP (RB:[1348..1352] also))
+    (VP (VBD:[1353..1364] contributed)
+      (PP-CLR (TO:[1365..1367] to)
+        (NP
+          (NP (DT:[1369..1372] the) (NN:[1373..1383] metabolism))
+          (PP (IN:[1384..1386] of)
+            (NP (NN:[1387..1396] cisapride)))))
+      (,:[1396..1397] ,)
+      (ADVP (IN:[1398..1404] albeit))
+      (PP (TO:[1405..1407] to)
+        (NP (DT:[1408..1409] a)
+          (ADJP (RB:[1410..1414] much) (JJR:[1415..1421] lesser))
+          (NN:[1422..1428] extent))))
+    (.:[1428..1429] .)))
+
+;sentence 11 Span:1430..1501
+;The mean apparent  K(m) against cisapride was 8.6+/-3.5 microM (n = 3).
+;[1449..1453]:quantitative-name:"K(m)"
+;[1462..1471]:substance:"cisapride"
+;[1476..1485]:quantitative-value:"8.6+/-3.5"
+;[1486..1492]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1430..1433] The) (JJ:[1434..1438] mean)
+          (JJ:[1439..1447] apparent) (NN:[1449..1453] K-LRB-m-RRB-))
+      (PP (IN:[1454..1461] against)
+        (NP (NN:[1462..1471] cisapride))))
+    (VP (VBD:[1472..1475] was)
+      (NP-PRD
+        (QP (CD:[1476..1479] 8.6) (SYM:[1479..1482] +/-) (CD:[1482..1485] 3.5))
+        (NN:[1486..1492] microM)
+        (PRN (-LRB-:[1493..1494] -LRB-)
+          (S
+            (NP-SBJ (NN:[1494..1495] n))
+            (VP (SYM:[1496..1497] =)
+              (NP (CD:[1498..1499] 3))))
+          (-RRB-:[1499..1500] -RRB-))))
+    (.:[1500..1501] .)))
+
+;sentence 12 Span:1502..1697
+;The peak plasma levels of  cisapride under normal clinical practice are
+;approximately 0.17 microM;  therefore it is unlikely that cisapride would
+;inhibit the metabolism of  co-administered drugs.
+;[1529..1538]:substance:"cisapride"
+;[1574..1592]:quantitative-value:"approximately 0.17"
+;[1593..1599]:quantitative-units:"microM"
+;[1632..1641]:substance:"cisapride"
+;[1691..1696]:substance:"drugs"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1502..1505] The) (NN:[1506..1510] peak)
+            (NN:[1511..1517] plasma) (NNS:[1518..1524] levels))
+        (PP (IN:[1525..1527] of)
+          (NP (NN:[1529..1538] cisapride)))
+        (PP (IN:[1539..1544] under)
+          (NP (JJ:[1545..1551] normal) (JJ:[1552..1560] clinical)
+              (NN:[1561..1569] practice))))
+      (VP (VBP:[1570..1573] are)
+        (NP-PRD
+          (QP (RB:[1574..1587] approximately) (CD:[1588..1592] 0.17))
+          (NN:[1593..1599] microM))))
+    (::[1599..1600] ;)
+    (S
+      (ADVP (RB:[1602..1611] therefore))
+      (NP-SBJ
+        (NP (PRP:[1612..1614] it))
+        (SBAR-1 (-NONE-:[1614..1614] *EXP*)))
+      (VP (VBZ:[1615..1617] is)
+        (ADJP-PRD (JJ:[1618..1626] unlikely))
+        (SBAR-1 (IN:[1627..1631] that)
+          (S
+            (NP-SBJ (NN:[1632..1641] cisapride))
+            (VP (MD:[1642..1647] would)
+              (VP (VB:[1648..1655] inhibit)
+                (NP
+                  (NP (DT:[1656..1659] the) (NN:[1660..1670] metabolism))
+                  (PP (IN:[1671..1673] of)
+                    (NP
+                      (ADJP (AFX:[1675..1677] co) (HYPH:[1677..1678] -)
+                            (VBN:[1678..1690] administered))
+                      (NNS:[1691..1696] drugs))))))))))
+    (.:[1696..1697] .)))
+
+;sentence 13 Span:1698..1815
+;In this in vitro study the inhibitory effects of 44 drugs  were tested for
+;any effect on cisapride biotransformation.
+;[1750..1755]:substance:"drugs"
+;[1787..1796]:substance:"cisapride"
+(SENT
+  (S
+    (PP-LOC (IN:[1698..1700] In)
+      (NP (DT:[1701..1705] this)
+        (ADJP (FW:[1706..1708] in) (FW:[1709..1714] vitro))
+        (NN:[1715..1720] study)))
+    (NP-SBJ-1
+      (NP (DT:[1721..1724] the) (JJ:[1725..1735] inhibitory)
+          (NNS:[1736..1743] effects))
+      (PP (IN:[1744..1746] of)
+        (NP (CD:[1747..1749] 44) (NNS:[1750..1755] drugs))))
+    (VP (VBD:[1757..1761] were)
+      (VP (VBN:[1762..1768] tested)
+        (NP-1 (-NONE-:[1768..1768] *))
+        (PP (IN:[1769..1772] for)
+          (NP
+            (NP (DT:[1773..1776] any) (NN:[1777..1783] effect))
+            (PP (IN:[1784..1786] on)
+              (NP (NN:[1787..1796] cisapride)
+                  (NN:[1797..1814] biotransformation)))))))
+    (.:[1814..1815] .)))
+
+;sentence 14 Span:1816..2186
+;In conclusion, 34 of  the drugs are unlikely to have a clinically relevant
+;interaction; however, the  antidepressant nefazodone, the macrolide
+;antibiotic troleandomycin, the HIV-1  protease inhibitors ritonavir and
+;indinavir and the calcium channel blocker  mibefradil inhibited the
+;metabolism of cisapride and these interactions are  likely to be of clinical
+;relevance.
+;[1842..1847]:substance:"drugs"
+;[1918..1932]:substance:"antidepressant"
+;[1933..1943]:substance:"nefazodone"
+;[1949..1969]:substance:"macrolide antibiotic"
+;[1970..1984]:substance:"troleandomycin"
+;[1990..2005]:substance:"HIV-1  protease"
+;[2006..2016]:substance:"inhibitors"
+;[2017..2026]:substance:"ritonavir"
+;[2031..2040]:substance:"indinavir"
+;[2049..2056]:substance:"calcium"
+;[2065..2072]:substance:"blocker"
+;[2074..2084]:substance:"mibefradil"
+;[2113..2122]:substance:"cisapride"
+(SENT
+  (S
+    (S
+      (PP (IN:[1816..1818] In)
+        (NP (NN:[1819..1829] conclusion)))
+      (,:[1829..1830] ,)
+      (NP-SBJ-2
+        (NP (CD:[1831..1833] 34))
+        (PP (IN:[1834..1836] of)
+          (NP (DT:[1838..1841] the) (NNS:[1842..1847] drugs))))
+      (VP (VBP:[1848..1851] are)
+        (ADJP-PRD (JJ:[1852..1860] unlikely)
+          (S
+            (NP-SBJ-2 (-NONE-:[1860..1860] *))
+            (VP (TO:[1861..1863] to)
+              (VP (VB:[1864..1868] have)
+                (NP (DT:[1869..1870] a)
+                  (ADJP (RB:[1871..1881] clinically) (JJ:[1882..1890] relevant))
+                  (NN:[1891..1902] interaction))))))))
+    (::[1902..1903] ;)
+    (S
+      (S
+        (ADVP (RB:[1904..1911] however))
+        (,:[1911..1912] ,)
+        (NP-SBJ
+          (NP
+            (NP (DT:[1913..1916] the) (NN:[1918..1932] antidepressant))
+            (NP (NN:[1933..1943] nefazodone)))
+          (,:[1943..1944] ,)
+          (NP
+            (NP (DT:[1945..1948] the)
+               (NN:[1949..1958] macrolide) (NN:[1959..1969] antibiotic))
+            (NP (NN:[1970..1984] troleandomycin)))
+          (,:[1984..1985] ,)
+          (NP (DT:[1986..1989] the)
+            (NML
+              (NML
+                 (NN:[1990..1995] HIV-1) (NN:[1997..2005] protease)
+                (NNS:[2006..2016] inhibitors))
+              (NML (NN:[2017..2026] ritonavir) (CC:[2027..2030] and)
+                   (NN:[2031..2040] indinavir))))
+          (CC:[2041..2044] and)
+          (NP
+            (NP (VB:[2045..2048] the)
+              (NML (NN:[2049..2056] calcium) (NN:[2057..2064] channel))
+              (NN:[2065..2072] blocker))
+            (NP (NN:[2074..2084] mibefradil))))
+        (VP (VBD:[2085..2094] inhibited)
+          (NP
+            (NP (DT:[2095..2098] the) (NN:[2099..2109] metabolism))
+            (PP (IN:[2110..2112] of)
+              (NP (NN:[2113..2122] cisapride))))))
+      (CC:[2123..2126] and)
+      (S
+        (NP-SBJ-1 (DT:[2127..2132] these) (NNS:[2133..2145] interactions))
+        (VP (VBP:[2146..2149] are)
+          (ADJP-PRD (JJ:[2151..2157] likely)
+            (S
+              (NP-SBJ-1 (-NONE-:[2157..2157] *))
+              (VP (TO:[2158..2160] to)
+                (VP (VB:[2161..2163] be)
+                  (PP-PRD (IN:[2164..2166] of)
+                    (NP (JJ:[2167..2175] clinical) (NNS:[2176..2185] relevance))))))))))
+    (.:[2185..2186] .)))
+
+;sentence 15 Span:2187..2375
+;Furthermore, the antimycotics ketoconazole,  miconazole,
+;hydroxy-itraconazole, itraconazole and fluconazole, when  administered orally
+;or intravenously, would inhibit cisapride metabolism.
+;[2204..2216]:substance:"antimycotics"
+;[2217..2229]:substance:"ketoconazole"
+;[2232..2242]:substance:"miconazole"
+;[2244..2264]:substance:"hydroxy-itraconazole"
+;[2266..2278]:substance:"itraconazole"
+;[2283..2294]:substance:"fluconazole"
+;[2354..2363]:substance:"cisapride"
+(SENT
+  (S
+    (ADVP (RB:[2187..2198] Furthermore))
+    (,:[2198..2199] ,)
+    (NP-SBJ
+      (NP (DT:[2200..2203] the) (NNS:[2204..2216] antimycotics))
+      (NP (NN:[2217..2229] ketoconazole) (,:[2229..2230] ,)
+          (NN:[2232..2242] miconazole) (,:[2242..2243] ,)
+          (NN:[2244..2264] hydroxy-itraconazole) (,:[2264..2265] ,)
+          (NN:[2266..2278] itraconazole) (CC:[2279..2282] and)
+          (NN:[2283..2294] fluconazole)))
+    (,:[2294..2295] ,)
+    (SBAR-ADV
+      (WHADVP (WRB:[2296..2300] when))
+      (S
+        (NP-SBJ-1 (-NONE-:[2300..2300] *))
+        (VP (VBN:[2302..2314] administered)
+          (NP-1 (-NONE-:[2314..2314] *))
+          (ADVP-MNR (RB:[2315..2321] orally) (CC:[2322..2324] or)
+                    (RB:[2325..2338] intravenously)))))
+    (,:[2338..2339] ,)
+    (VP (MD:[2340..2345] would)
+      (VP (VB:[2346..2353] inhibit)
+        (NP (NN:[2354..2363] cisapride) (NN:[2364..2374] metabolism))))
+    (.:[2374..2375] .)))
+
+;section 16 Span:2379..2424
+;PMID: 10780971 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2379..2383] PMID) (::[2383..2384] :) (CD:[2385..2393] 10780971)
+        (NN:[2394..2395] -LSB-) (NNP:[2395..2401] PubMed) (::[2402..2403] -)
+        (NN:[2404..2411] indexed) (IN:[2412..2415] for)
+        (NNP:[2416..2424] MEDLINE-RSB-)))

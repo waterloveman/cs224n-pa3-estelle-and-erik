@@ -1,0 +1,542 @@
+;PMID: 3579983
+;source_file_942.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..175] = [t:50..175]
+;2)section:[e:179..200] = [t:179..200]
+;3)sentence:[e:204..385] = [t:204..385]
+;4)sentence:[e:386..521] = [t:386..521]
+;5)sentence:[e:522..645] = [t:522..645]
+;6)sentence:[e:646..799] = [t:646..799]
+;7)sentence:[e:800..915] = [t:800..915]
+;8)sentence:[e:916..1018] = [t:916..1018]
+;9)sentence:[e:1019..1240] = [t:1019..1240]
+;10)sentence:[e:1241..1348] = [t:1241..1348]
+;11)sentence:[e:1349..1568] = [t:1349..1568]
+;12)sentence:[e:1569..1808] = [t:1569..1808]
+;13)sentence:[e:1809..2093] = [t:1809..2093]
+;14)section:[e:2097..2141] = [t:2097..2141]
+
+;section 0 Span:0..44
+;Biochem Pharmacol. 1987 May 1;36(9):1447-55.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1987) (NNP:[24..27] May) (CD:[28..34] 1;36-LRB-9)
+        (-RRB-:[34..35] -RRB-) (CD:[35..40] :1447) (::[40..41] -)
+        (CD:[41..43] 55) (.:[43..44] .)))
+
+;sentence 1 Span:50..175
+;NADPH- and linoleic acid hydroperoxide-induced lipid peroxidation and 
+;destruction of cytochrome P-450 in hepatic microsomes.
+;[50..55]:substance:"NADPH"
+;[61..88]:substance:"linoleic acid hydroperoxide"
+;[97..102]:substance:"lipid"
+;[136..152]:cyp450:"cytochrome P-450"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NP
+          (ADJP (NN:[50..55] NADPH) (HYPH:[55..56] -)
+            (ADJP-1 (-NONE-:[56..56] *P*)))
+          (NML-2 (-NONE-:[56..56] *P*)))
+        (CC:[57..60] and)
+        (NP
+          (ADJP
+            (NML
+              (NML (JJ:[61..69] linoleic) (NN:[70..74] acid))
+              (NN:[75..88] hydroperoxide))
+            (HYPH:[88..89] -)
+            (ADJP-1 (VBN:[89..96] induced)))
+          (NML-2 (NN:[97..102] lipid) (NN:[103..115] peroxidation))))
+      (CC:[116..119] and)
+      (NP
+        (NP (NN:[121..132] destruction))
+        (PP (IN:[133..135] of)
+          (NP (NN:[136..146] cytochrome) (NN:[147..152] P-450)))))
+    (PP-LOC (IN:[153..155] in)
+      (NP (JJ:[156..163] hepatic) (NNS:[164..174] microsomes)))
+    (.:[174..175] .)))
+
+;section 2 Span:179..200
+;Iba MM, Mannering GJ.
+(SEC
+  (FRAG (NNP:[179..182] Iba) (NNP:[183..185] MM) (,:[185..186] ,)
+        (NNP:[187..196] Mannering) (NNP:[197..200] GJ.)))
+
+;sentence 3 Span:204..385
+;Temporal aspects of the effects of inhibitors on hepatic cytochrome P-450 
+;destruction and lipid peroxidation induced by NADPH and linoleic acid 
+;hydroperoxide (LAHP) were compared.
+;[239..249]:substance:"inhibitors"
+;[261..277]:cyp450:"cytochrome P-450"
+;[295..300]:substance:"lipid"
+;[325..330]:substance:"NADPH"
+;[335..363]:substance:"linoleic acid  hydroperoxide"
+;[365..369]:substance:"LAHP"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[204..212] Temporal) (NNS:[213..220] aspects))
+      (PP (IN:[221..223] of)
+        (NP
+          (NP (DT:[224..227] the) (NNS:[228..235] effects))
+          (PP (IN:[236..238] of)
+            (NP (NNS:[239..249] inhibitors)))
+          (PP (IN:[250..252] on)
+            (NP
+              (NP
+                (NP (JJ:[253..260] hepatic)
+                  (NML (NN:[261..271] cytochrome) (NN:[272..277] P-450))
+                  (NN:[279..290] destruction))
+                (CC:[291..294] and)
+                (NP (NN:[295..300] lipid) (NN:[301..313] peroxidation)))
+              (VP (VBN:[314..321] induced)
+                (NP (-NONE-:[321..321] *))
+                (PP (IN:[322..324] by)
+                  (NP-LGS
+                    (NP (NN:[325..330] NADPH))
+                    (CC:[331..334] and)
+                    (NP
+                      (NP
+                        (NML (JJ:[335..343] linoleic) (NN:[344..348] acid))
+                        (NN:[350..363] hydroperoxide))
+                      (NP (-LRB-:[364..365] -LRB-) (NN:[365..369] LAHP)
+                          (-RRB-:[369..370] -RRB-)))))))))))
+    (VP (VBD:[371..375] were)
+      (VP (VBN:[376..384] compared)
+        (NP-1 (-NONE-:[384..384] *))))
+    (.:[384..385] .)))
+
+;sentence 4 Span:386..521
+;In the absence of added Fe2+, NADPH-induced  lipid peroxidation in hepatic
+;microsomes exhibited a slow phase followed by a  fast phase.
+;[410..414]:substance:"Fe2+"
+;[416..421]:substance:"NADPH"
+;[431..436]:substance:"lipid"
+(SENT
+  (S
+    (PP-LOC (IN:[386..388] In)
+      (NP
+        (NP (DT:[389..392] the) (NN:[393..400] absence))
+        (PP (IN:[401..403] of)
+          (NP (VBN:[404..409] added)
+             (NN:[410..413] Fe2) (SYM:[413..414] +)))))
+    (,:[414..415] ,)
+    (NP-SBJ
+      (NP
+        (ADJP (NN:[416..421] NADPH) (HYPH:[421..422] -) (VBN:[422..429] induced))
+        (NN:[431..436] lipid) (NN:[437..449] peroxidation))
+      (PP-LOC (IN:[450..452] in)
+        (NP (JJ:[453..460] hepatic) (NNS:[461..471] microsomes))))
+    (VP (VBD:[472..481] exhibited)
+      (NP
+        (NP (DT:[482..483] a) (JJ:[484..488] slow) (NN:[489..494] phase))
+        (VP (VBN:[495..503] followed)
+          (NP (-NONE-:[503..503] *))
+          (PP (IN:[504..506] by)
+            (NP-LGS (DT:[507..508] a) (JJ:[510..514] fast) (NN:[515..520] phase))))))
+    (.:[520..521] .)))
+
+;sentence 5 Span:522..645
+;The addition of Fe2+ eliminated the slow phase, thus demonstrating  that iron
+;is a rate-limiting component in the reaction.
+;[538..542]:substance:"Fe2+"
+;[595..599]:substance:"iron"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[522..525] The) (NN:[526..534] addition))
+      (PP (IN:[535..537] of)
+        (NP (NN:[538..541] Fe2) (SYM:[541..542] +))))
+    (VP (VBD:[543..553] eliminated)
+      (NP (DT:[554..557] the) (JJ:[558..562] slow) (NN:[563..568] phase))
+      (,:[568..569] ,)
+      (S-ADV
+        (ADVP (RB:[570..574] thus))
+        (NP-SBJ (-NONE-:[574..574] *))
+        (VP (VBG:[575..588] demonstrating)
+          (SBAR (IN:[590..594] that)
+            (S
+              (NP-SBJ (NN:[595..599] iron))
+              (VP (VBZ:[600..602] is)
+                (NP-PRD
+                  (NP (DT:[603..604] a)
+                    (ADJP (NN:[605..609] rate) (HYPH:[609..610] -)
+                          (VBG:[610..618] limiting))
+                    (NN:[619..628] component))
+                  (PP (IN:[629..631] in)
+                    (NP (DT:[632..635] the) (NN:[636..644] reaction))))))))))
+    (.:[644..645] .)))
+
+;sentence 6 Span:646..799
+;EDTA, which complexes  iron, and p-chloromercurobenzoate (pCMB), which
+;inhibits NADPH-cytochrome P-450  reductase, inhibited both phases of the
+;reaction.
+;[646..650]:substance:"EDTA"
+;[669..673]:substance:"iron"
+;[679..702]:substance:"p-chloromercurobenzoate"
+;[704..708]:substance:"pCMB"
+;[726..759]:substance:"NADPH-cytochrome P-450  reductase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[646..650] EDTA))
+        (,:[650..651] ,)
+        (SBAR
+          (WHNP-2 (WDT:[652..657] which))
+          (S
+            (NP-SBJ-2 (-NONE-:[657..657] *T*))
+            (VP (VBZ:[658..667] complexes)
+              (NP (NN:[669..673] iron))))))
+      (,:[673..674] ,) (CC:[675..678] and)
+      (NP
+        (NP
+          (NP (NN:[679..702] p-chloromercurobenzoate))
+          (NP (-LRB-:[703..704] -LRB-) (NN:[704..708] pCMB)
+              (-RRB-:[708..709] -RRB-)))
+        (,:[709..710] ,)
+        (SBAR
+          (WHNP-1 (WDT:[711..716] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[716..716] *T*))
+            (VP (VBZ:[717..725] inhibits)
+              (NP
+                (NML (NN:[726..731] NADPH) (HYPH:[731..732] -)
+                  (NML (NN:[732..742] cytochrome) (NN:[743..748] P-450)))
+                (NN:[750..759] reductase)))))))
+    (,:[759..760] ,)
+    (VP (VBD:[761..770] inhibited)
+      (NP
+        (NP (DT:[771..775] both) (NNS:[776..782] phases))
+        (PP (IN:[783..785] of)
+          (NP (DT:[786..789] the) (NN:[790..798] reaction)))))
+    (.:[798..799] .)))
+
+;sentence 7 Span:800..915
+;Catalase as well as scavengers  of hydroxyl radical, inhibited NADPH-induced
+;lipid peroxidation almost  completely.
+;[800..808]:substance:"Catalase"
+;[835..851]:substance:"hydroxyl radical"
+;[863..868]:substance:"NADPH"
+;[877..882]:substance:"lipid"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[800..808] Catalase))
+      (CONJP (RB:[809..811] as) (RB:[812..816] well) (IN:[817..819] as))
+      (NP
+        (NP (NNS:[820..830] scavengers))
+        (PP (IN:[832..834] of)
+          (NP (NN:[835..843] hydroxyl) (NN:[844..851] radical)))))
+    (,:[851..852] ,)
+    (VP (VBD:[853..862] inhibited)
+      (NP
+        (ADJP (NN:[863..868] NADPH) (HYPH:[868..869] -) (VBN:[869..876] induced))
+        (NN:[877..882] lipid) (NN:[883..895] peroxidation))
+      (ADVP-EXT (RB:[896..902] almost) (RB:[904..914] completely)))
+    (.:[914..915] .)))
+
+;sentence 8 Span:916..1018
+;GSH also inhibited the NADPH-dependent reaction but only when added  at the
+;beginning of the reaction.
+;[916..919]:substance:"GSH"
+;[939..944]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[916..919] GSH))
+    (ADVP (RB:[920..924] also))
+    (VP
+      (VP (VBD:[925..934] inhibited)
+        (NP (DT:[935..938] the)
+          (ADJP (NN:[939..944] NADPH) (HYPH:[944..945] -)
+                (JJ:[945..954] dependent))
+          (NN:[955..963] reaction)))
+      (CC:[964..967] but)
+      (VP
+        (SBAR-TMP
+          (WHADVP-1 (RB:[968..972] only) (WRB:[973..977] when))
+          (S
+            (NP-SBJ-2 (-NONE-:[977..977] *))
+            (VP (VBN:[978..983] added)
+              (PP-TMP (IN:[985..987] at)
+                (NP
+                  (NP (DT:[988..991] the) (NN:[992..1001] beginning))
+                  (PP (IN:[1002..1004] of)
+                    (NP (DT:[1005..1008] the) (NN:[1009..1017] reaction)))))
+              (ADVP-TMP-1 (-NONE-:[1017..1017] *T*)))))))
+    (.:[1017..1018] .)))
+
+;sentence 9 Span:1019..1240
+;In contrast with NADPH-dependent lipid  peroxidation, the autocatalytic
+;reaction induced by LAHP was not biphasic,  NADPH-dependent or
+;iron-dependent, nor was it inhibited by hydroxyl radical  scavengers,
+;catalase or GSH.
+;[1036..1041]:substance:"NADPH"
+;[1052..1057]:substance:"lipid"
+;[1111..1115]:substance:"LAHP"
+;[1135..1140]:substance:"NADPH"
+;[1154..1158]:substance:"iron"
+;[1194..1210]:substance:"hydroxyl radical"
+;[1224..1232]:substance:"catalase"
+;[1236..1239]:substance:"GSH"
+(SENT
+  (S
+    (S
+      (PP (IN:[1019..1021] In)
+        (NP
+          (NP (NN:[1022..1030] contrast))
+          (PP (IN:[1031..1035] with)
+            (NP
+              (ADJP (NN:[1036..1041] NADPH) (HYPH:[1041..1042] -)
+                    (JJ:[1042..1051] dependent))
+              (NN:[1052..1057] lipid) (NN:[1059..1071] peroxidation)))))
+      (,:[1071..1072] ,)
+      (NP-SBJ-1
+        (NP (DT:[1073..1076] the) (JJ:[1077..1090] autocatalytic)
+            (NN:[1091..1099] reaction))
+        (VP (VBN:[1100..1107] induced)
+          (NP (-NONE-:[1107..1107] *))
+          (PP (IN:[1108..1110] by)
+            (NP-LGS (NN:[1111..1115] LAHP)))))
+      (VP (VBD:[1116..1119] was) (RB:[1120..1123] not)
+        (ADJP-PRD
+          (ADJP (JJ:[1124..1132] biphasic))
+          (,:[1132..1133] ,)
+          (ADJP (NN:[1135..1140] NADPH) (HYPH:[1140..1141] -)
+                (JJ:[1141..1150] dependent))
+          (CC:[1151..1153] or)
+          (ADJP (NN:[1154..1158] iron) (HYPH:[1158..1159] -)
+                (JJ:[1159..1168] dependent)))))
+    (,:[1168..1169] ,) (CC:[1170..1173] nor)
+    (SINV (VBD:[1174..1177] was)
+      (NP-SBJ (PRP:[1178..1180] it))
+      (VP (VBN:[1181..1190] inhibited)
+        (NP-1 (-NONE-:[1190..1190] *))
+        (PP (IN:[1191..1193] by)
+          (NP-LGS
+            (NP
+               (NN:[1194..1202] hydroxyl) (NN:[1203..1210] radical)
+              (NNS:[1212..1222] scavengers))
+            (,:[1222..1223] ,)
+            (NP (NN:[1224..1232] catalase))
+            (CC:[1233..1235] or)
+            (NP (NN:[1236..1239] GSH))))))
+    (.:[1239..1240] .)))
+
+;sentence 10 Span:1241..1348
+;A synergistic effect on lipid peroxidation was  observed when both NADPH and
+;LAHP were added to microsomes.
+;[1265..1270]:substance:"lipid"
+;[1308..1313]:substance:"NADPH"
+;[1318..1322]:substance:"LAHP"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[1241..1242] A) (JJ:[1243..1254] synergistic)
+          (NN:[1255..1261] effect))
+      (PP (IN:[1262..1264] on)
+        (NP (NN:[1265..1270] lipid) (NN:[1271..1283] peroxidation))))
+    (VP (VBD:[1284..1287] was)
+      (VP (VBN:[1289..1297] observed)
+        (NP-3 (-NONE-:[1297..1297] *))
+        (SBAR-TMP
+          (WHADVP-2 (WRB:[1298..1302] when))
+          (S
+            (NP-SBJ-1 (CC:[1303..1307] both) (NN:[1308..1313] NADPH)
+                      (CC:[1314..1317] and) (NN:[1318..1322] LAHP))
+            (VP (VBD:[1323..1327] were)
+              (VP (VBN:[1328..1333] added)
+                (NP-1 (-NONE-:[1333..1333] *))
+                (PP (TO:[1334..1336] to)
+                  (NP (NNS:[1337..1347] microsomes)))
+                (ADVP-TMP-2 (-NONE-:[1347..1347] *T*))))))))
+    (.:[1347..1348] .)))
+
+;sentence 11 Span:1349..1568
+;It is concluded that  both the fast and slow phases of NADPH-dependent
+;microsomal lipid peroxidation  are catalyzed enzymatically and are dependent
+;upon Fe2+, whereas LAHP-dependent  lipid peroxidation is autocatalytic.
+;[1404..1409]:substance:"NADPH"
+;[1431..1436]:substance:"lipid"
+;[1502..1506]:substance:"Fe2+"
+;[1516..1520]:substance:"LAHP"
+;[1532..1537]:substance:"lipid"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (PRP:[1349..1351] It))
+      (SBAR-4 (-NONE-:[1351..1351] *EXP*)))
+    (VP (VBZ:[1352..1354] is)
+      (VP (VBN:[1355..1364] concluded)
+        (NP-3 (-NONE-:[1364..1364] *))
+        (SBAR-4 (IN:[1365..1369] that)
+          (S
+            (NP-SBJ-2
+              (NP (CC:[1371..1375] both) (DT:[1376..1379] the)
+                (NML
+                  (NML (JJ:[1380..1384] fast)
+                    (NML-1 (-NONE-:[1384..1384] *P*)))
+                  (CC:[1385..1388] and)
+                  (NML (JJ:[1389..1393] slow)
+                    (NML-1 (NNS:[1394..1400] phases)))))
+              (PP (IN:[1401..1403] of)
+                (NP
+                  (ADJP (NN:[1404..1409] NADPH) (HYPH:[1409..1410] -)
+                        (JJ:[1410..1419] dependent))
+                  (JJ:[1420..1430] microsomal) (NN:[1431..1436] lipid)
+                   (NN:[1437..1449] peroxidation))))
+            (VP
+              (VP (VBP:[1451..1454] are)
+                (VP (VBN:[1455..1464] catalyzed)
+                  (NP-2 (-NONE-:[1464..1464] *))
+                  (ADVP-MNR (RB:[1465..1478] enzymatically))))
+              (CC:[1479..1482] and)
+              (VP (VBP:[1483..1486] are)
+                (ADJP-PRD (JJ:[1487..1496] dependent)
+                  (PP (IN:[1497..1501] upon)
+                    (NP (NN:[1502..1505] Fe2) (SYM:[1505..1506] +)))))
+              (,:[1506..1507] ,)
+              (SBAR-ADV (IN:[1508..1515] whereas)
+                (S
+                  (NP-SBJ
+                    (ADJP (NN:[1516..1520] LAHP) (HYPH:[1520..1521] -)
+                          (JJ:[1521..1530] dependent))
+                    (NN:[1532..1537] lipid) (NN:[1538..1550] peroxidation))
+                  (VP (VBZ:[1551..1553] is)
+                    (ADJP-PRD (JJ:[1554..1567] autocatalytic))))))))))
+    (.:[1567..1568] .)))
+
+;sentence 12 Span:1569..1808
+;Since the fast phase of enzymatic lipid  peroxidation occurred during the
+;fast phase of destruction of cytochrome P-450,  it is postulated that iron
+;made available from cytochrome P-450 is sufficient to  promote optimal lipid
+;peroxidation.
+;[1603..1608]:substance:"lipid"
+;[1672..1688]:cyp450:"cytochrome P-450"
+;[1713..1717]:substance:"iron"
+;[1738..1754]:cyp450:"cytochrome P-450"
+;[1789..1794]:substance:"lipid"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1569..1574] Since)
+      (S
+        (NP-SBJ
+          (NP (DT:[1575..1578] the) (JJ:[1579..1583] fast)
+              (NN:[1584..1589] phase))
+          (PP (IN:[1590..1592] of)
+            (NP (JJ:[1593..1602] enzymatic) (NN:[1603..1608] lipid)
+                (NN:[1610..1622] peroxidation))))
+        (VP (VBD:[1623..1631] occurred)
+          (PP-TMP (IN:[1632..1638] during)
+            (NP
+              (NP (DT:[1639..1642] the) (JJ:[1643..1647] fast)
+                  (NN:[1648..1653] phase))
+              (PP (IN:[1654..1656] of)
+                (NP
+                  (NP (NN:[1657..1668] destruction))
+                  (PP (IN:[1669..1671] of)
+                    (NP (NN:[1672..1682] cytochrome) (NN:[1683..1688] P-450))))))))))
+    (,:[1688..1689] ,)
+    (NP-SBJ-1
+      (NP (PRP:[1691..1693] it))
+      (SBAR-3 (-NONE-:[1693..1693] *EXP*)))
+    (VP (VBZ:[1694..1696] is)
+      (VP (VBN:[1697..1707] postulated)
+        (NP-1 (-NONE-:[1707..1707] *))
+        (SBAR-3 (IN:[1708..1712] that)
+          (S
+            (NP-SBJ
+              (NP-4 (NN:[1713..1717] iron))
+              (VP (VBN:[1718..1722] made)
+                (S
+                  (NP-SBJ-4 (-NONE-:[1722..1722] *))
+                  (ADJP-PRD (JJ:[1723..1732] available)
+                    (PP (IN:[1733..1737] from)
+                      (NP (NN:[1738..1748] cytochrome) (NN:[1749..1754] P-450)))))))
+            (VP (VBZ:[1755..1757] is)
+              (ADJP-PRD (JJ:[1758..1768] sufficient)
+                (S
+                  (NP-SBJ (-NONE-:[1768..1768] *))
+                  (VP (TO:[1769..1771] to)
+                    (VP (VB:[1773..1780] promote)
+                      (NP (JJ:[1781..1788] optimal) (NN:[1789..1794] lipid)
+                          (NN:[1795..1807] peroxidation)))))))))))
+    (.:[1807..1808] .)))
+
+;sentence 13 Span:1809..2093
+;Since catalase and hydroxyl radical  scavengers inhibited NADPH-dependent but
+;not LAHP-dependent lipid peroxidation,  it is concluded that the hydroxyl
+;radical derived from H2O2 is the initiating  active-oxygen species in the
+;enzymatic reaction but not in the autocatalytic  reaction.
+;[1815..1823]:substance:"catalase"
+;[1828..1844]:substance:"hydroxyl radical"
+;[1867..1872]:substance:"NADPH"
+;[1891..1895]:substance:"LAHP"
+;[1906..1911]:substance:"lipid"
+;[1952..1968]:substance:"hydroxyl radical"
+;[1982..1986]:substance:"H2O2"
+;[2013..2019]:substance:"oxygen"
+(SENT
+  (ADJP
+    (SBAR-ADV (IN:[1809..1814] Since)
+      (S
+        (NP-SBJ
+          (NP (NN:[1815..1823] catalase))
+          (CC:[1824..1827] and)
+          (NP
+             (NN:[1828..1836] hydroxyl) (NN:[1837..1844] radical)
+            (NNS:[1846..1856] scavengers)))
+        (VP (VBD:[1857..1866] inhibited)
+          (NP
+            (NP
+              (ADJP (NN:[1867..1872] NADPH) (HYPH:[1872..1873] -)
+                    (JJ:[1873..1882] dependent))
+              (NML-5 (-NONE-:[1882..1882] *P*)))
+            (CONJP (CC:[1883..1886] but) (RB:[1887..1890] not))
+            (NP
+              (ADJP (NN:[1891..1895] LAHP) (HYPH:[1895..1896] -)
+                    (JJ:[1896..1905] dependent))
+              (NML-5 (NN:[1906..1911] lipid) (NN:[1912..1924] peroxidation)))))))
+    (,:[1924..1925] ,)
+    (NP-SBJ-4
+      (NP (PRP:[1927..1929] it))
+      (SBAR-7 (-NONE-:[1929..1929] *EXP*)))
+    (VP (VBZ:[1930..1932] is)
+      (VP (VBN:[1933..1942] concluded)
+        (NP-4 (-NONE-:[1942..1942] *))
+        (SBAR-7 (IN:[1943..1947] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1948..1951] the)
+                 (NN:[1952..1960] hydroxyl) (NN:[1961..1968] radical))
+              (VP (VBN:[1969..1976] derived)
+                (NP (-NONE-:[1976..1976] *))
+                (PP (IN:[1977..1981] from)
+                  (NP (NN:[1982..1986] H2O2)))))
+            (VP
+              (VP (VBZ:[1987..1989] is)
+                (NP-PRD (DT:[1990..1993] the) (VBG:[1994..2004] initiating)
+                  (NML (JJ:[2006..2012] active) (HYPH:[2012..2013] -)
+                       (NN:[2013..2019] oxygen))
+                  (NN:[2020..2027] species))
+                (PP=3 (IN:[2028..2030] in)
+                  (NP (DT:[2031..2034] the) (JJ:[2035..2044] enzymatic)
+                      (NN:[2045..2053] reaction))))
+              (CC:[2054..2057] but)
+              (VP (RB:[2058..2061] not)
+                (PP=3 (IN:[2062..2064] in)
+                  (NP (DT:[2065..2068] the) (JJ:[2069..2082] autocatalytic)
+                      (NN:[2084..2092] reaction)))))))))
+    (.:[2092..2093] .)))
+
+;section 14 Span:2097..2141
+;PMID: 3579983 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2097..2101] PMID) (::[2101..2102] :) (CD:[2103..2110] 3579983)
+        (NN:[2111..2112] -LSB-) (NNP:[2112..2118] PubMed) (::[2119..2120] -)
+        (NN:[2121..2128] indexed) (IN:[2129..2132] for)
+        (NNP:[2133..2141] MEDLINE-RSB-)))

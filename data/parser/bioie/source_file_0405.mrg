@@ -1,0 +1,601 @@
+;PMID: 12215674
+;source_file_1013.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..202] = [t:42..202]
+;2)section:[e:206..306] = [t:206..306]
+;3)section:[e:310..417] = [t:310..417]
+;4)sentence:[e:421..606] = [t:421..606]
+;5)sentence:[e:607..729] = [t:607..729]
+;6)sentence:[e:731..845] = [t:731..845]
+;7)sentence:[e:846..960] = [t:846..960]
+;8)sentence:[e:961..1090] = [t:961..1090]
+;9)sentence:[e:1091..1300] = [t:1091..1300]
+;10)sentence:[e:1301..1432] = [t:1301..1432]
+;11)sentence:[e:1434..1658] = [t:1434..1658]
+;12)sentence:[e:1659..1850] = [t:1659..1850]
+;13)sentence:[e:1851..2040] = [t:1851..2040]
+;14)sentence:[e:2041..2341] = [t:2041..2341]
+;15)sentence:[e:2342..2574] = [t:2342..2574]
+;16)section:[e:2578..2623] = [t:2578..2623]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[2033..2034] -
+;ERROR_Token in tree file but not entity[2032..2034]  -
+
+;section 0 Span:0..36
+;Toxicol Sci. 2002 Sep;69(1):191-201.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..11] Sci) (.:[11..12] .) ('':[13..17] 2002)
+        (::[18..25] Sep;69-LRB-) (CD:[25..26] 1) (-RRB-:[26..27] -RRB-)
+        (CD:[27..31] :191) (::[31..32] -) (CD:[32..35] 201) (.:[35..36] .)))
+
+;sentence 1 Span:42..202
+;2,3,7,8-tetrachlorodibenzo-p-dioxin toxicity in the zebrafish embryo: local 
+;circulation failure in the dorsal midbrain is associated with increased 
+;apoptosis.
+;[42..77]:substance:"2,3,7,8-tetrachlorodibenzo-p-dioxin"
+(SENT
+  (UCP-HLN
+    (NP
+      (NP (NN:[42..77] 2,3,7,8-tetrachlorodibenzo-p-dioxin)
+          (NN:[78..86] toxicity))
+      (PP-LOC (IN:[87..89] in)
+        (NP (DT:[90..93] the) (NN:[94..103] zebrafish) (NN:[104..110] embryo))))
+    (::[110..111] :)
+    (S
+      (NP-SBJ-1
+        (NP (JJ:[112..117] local) (NN:[119..130] circulation)
+            (NN:[131..138] failure))
+        (PP-LOC (IN:[139..141] in)
+          (NP (DT:[142..145] the) (JJ:[146..152] dorsal)
+              (NN:[153..161] midbrain))))
+      (VP (VBZ:[162..164] is)
+        (VP (VBN:[165..175] associated)
+          (NP-1 (-NONE-:[175..175] *))
+          (PP-CLR (IN:[176..180] with)
+            (NP (JJ:[181..190] increased) (NN:[192..201] apoptosis))))))
+    (.:[201..202] .)))
+
+;section 2 Span:206..306
+;Dong W, Teraoka H, Yamazaki K, Tsukiyama S, Imani S, Imagawa T, Stegeman JJ, 
+;Peterson RE, Hiraga T.
+(SEC
+  (FRAG (NNP:[206..210] Dong) (NNP:[211..212] W) (,:[212..213] ,)
+        (NNP:[214..221] Teraoka) (NNP:[222..223] H) (,:[223..224] ,)
+        (NNP:[225..233] Yamazaki) (NNP:[234..235] K) (,:[235..236] ,)
+        (NNP:[237..246] Tsukiyama) (NNP:[247..249] S,) (NNP:[250..255] Imani)
+        (NNP:[256..258] S,) (NNP:[259..266] Imagawa) (NNP:[267..268] T)
+        (,:[268..269] ,) (NNP:[270..278] Stegeman) (NNP:[279..281] JJ)
+        (,:[281..282] ,) (NNP:[284..292] Peterson) (NNP:[293..295] RE)
+        (,:[295..296] ,) (NNP:[297..303] Hiraga) (NNP:[304..306] T.)))
+
+;section 3 Span:310..417
+;Department of Toxicology, School of Veterinary Medicine, Rakuno Gakuen 
+;University, Ebetsu 069-8501, Japan.
+(SEC
+  (FRAG (NNP:[310..320] Department) (IN:[321..323] of)
+        (NNP:[324..334] Toxicology) (,:[334..335] ,) (NNP:[336..342] School)
+        (IN:[343..345] of) (NNP:[346..356] Veterinary) (NNP:[357..365] Medicine)
+        (,:[365..366] ,) (NNP:[367..373] Rakuno) (NNP:[374..380] Gakuen)
+        (NNP:[382..392] University) (,:[392..393] ,) (NNP:[394..400] Ebetsu)
+        (CD:[401..404] 069) (::[404..405] -) (CD:[405..409] 8501)
+        (,:[409..410] ,) (NNP:[411..416] Japan) (.:[416..417] .)))
+
+;sentence 4 Span:421..606
+;Effects of 2,3,7,8-tetrachlorodibenzo-p-dioxin (TCDD) on local circulation
+;and  apoptosis in the midbrain were investigated in zebrafish (Danio rerio)
+;embryos  during early development.
+;[432..467]:substance:"2,3,7,8-tetrachlorodibenzo-p-dioxin"
+;[469..473]:substance:"TCDD"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[421..428] Effects))
+      (PP (IN:[429..431] of)
+        (NP
+          (NP (NN:[432..467] 2,3,7,8-tetrachlorodibenzo-p-dioxin))
+          (NP (-LRB-:[468..469] -LRB-) (NN:[469..473] TCDD)
+              (-RRB-:[473..474] -RRB-))))
+      (PP (IN:[475..477] on)
+        (NP
+          (NP (JJ:[478..483] local) (NN:[484..495] circulation))
+          (CC:[496..499] and)
+          (NP (NN:[501..510] apoptosis))))
+      (PP-LOC (IN:[511..513] in)
+        (NP (DT:[514..517] the) (NN:[518..526] midbrain))))
+    (VP (VBD:[527..531] were)
+      (VP (VBN:[532..544] investigated)
+        (NP-1 (-NONE-:[544..544] *))
+        (PP-LOC (IN:[545..547] in)
+          (NP
+            (NML
+              (NML (NN:[548..557] zebrafish))
+              (NML (-LRB-:[558..559] -LRB-) (NNP:[559..564] Danio)
+                   (NNP:[565..570] rerio) (-RRB-:[570..571] -RRB-)))
+            (NNS:[572..579] embryos)))
+        (PP-TMP (IN:[581..587] during)
+          (NP (JJ:[588..593] early) (NN:[594..605] development)))))
+    (.:[605..606] .)))
+
+;sentence 5 Span:607..729
+;Embryos were exposed to TCDD from 24 h post  fertilization (hpf) until
+;observation, in water maintained at 28.5 degrees C.
+;[631..635]:substance:"TCDD"
+;[641..643]:quantitative-value:"24"
+;[644..665]:quantitative-units:"h post  fertilization"
+;[667..670]:quantitative-units:"hpf"
+;[694..699]:substance:"water"
+;[714..718]:quantitative-value:"28.5"
+;[719..728]:quantitative-units:"degrees C"
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[607..614] Embryos))
+    (VP (VBD:[615..619] were)
+      (VP (VBN:[620..627] exposed)
+        (NP-1 (-NONE-:[627..627] *))
+        (PP-CLR (TO:[628..630] to)
+          (NP (NN:[631..635] TCDD)))
+        (PP-TMP (IN:[636..640] from)
+          (NP (CD:[641..643] 24)
+            (NML
+              (NML (NN:[644..645] h) (IN:[646..650] post)
+                   (NN:[652..665] fertilization))
+              (NML (-LRB-:[666..667] -LRB-) (NN:[667..670] hpf)
+                   (-RRB-:[670..671] -RRB-)))))
+        (PP-TMP (IN:[672..677] until)
+          (NP (NN:[678..689] observation)))
+        (,:[689..690] ,)
+        (PP-LOC (IN:[691..693] in)
+          (NP
+            (NP (NN:[694..699] water))
+            (VP (VBN:[700..710] maintained)
+              (NP (-NONE-:[710..710] *))
+              (PP (IN:[711..713] at)
+                (NP (CD:[714..718] 28.5)
+                   (NNS:[719..726] degrees) (NN:[727..728] C))))))))
+    (.:[728..729] .)))
+
+;sentence 6 Span:731..845
+;TCDD decreased blood flow in the mesencephalic vein, the only vessel
+;perfusing  the dorsal midbrain of the embryo.
+;[731..735]:substance:"TCDD"
+(SENT
+  (S
+    (NP-SBJ (NN:[731..735] TCDD))
+    (VP (VBD:[736..745] decreased)
+      (NP (NN:[746..751] blood) (NN:[752..756] flow))
+      (PP-LOC (IN:[757..759] in)
+        (NP
+          (NP (DT:[760..763] the) (JJ:[764..777] mesencephalic)
+              (NN:[778..782] vein))
+          (,:[782..783] ,)
+          (NP
+            (NP (DT:[784..787] the) (JJ:[788..792] only) (NN:[793..799] vessel))
+            (VP (VBG:[800..809] perfusing)
+              (NP
+                (NP (DT:[811..814] the) (JJ:[815..821] dorsal)
+                    (NN:[822..830] midbrain))
+                (PP (IN:[831..833] of)
+                  (NP (DT:[834..837] the) (NN:[838..844] embryo)))))))))
+    (.:[844..845] .)))
+
+;sentence 7 Span:846..960
+;At 50 hpf, blood flow was maximally reduced  in this vessel and gradually
+;returned to the control level at 60 hpf.
+;[849..851]:quantitative-value:"50"
+;[852..855]:quantitative-units:"hpf"
+;[953..955]:quantitative-value:"60"
+;[956..959]:quantitative-units:"hpf"
+(SENT
+  (S
+    (PP-TMP (IN:[846..848] At)
+      (NP (CD:[849..851] 50) (NN:[852..855] hpf)))
+    (,:[855..856] ,)
+    (NP-SBJ-1 (NN:[857..862] blood) (NN:[863..867] flow))
+    (VP
+      (VP (VBD:[868..871] was)
+        (ADVP (RB:[872..881] maximally))
+        (VP (VBN:[882..889] reduced)
+          (NP-1 (-NONE-:[889..889] *))
+          (PP-LOC (IN:[891..893] in)
+            (NP (DT:[894..898] this) (NN:[899..905] vessel)))))
+      (CC:[906..909] and)
+      (VP
+        (ADVP (RB:[910..919] gradually))
+        (VBD:[920..928] returned)
+        (PP (TO:[929..931] to)
+          (NP (DT:[932..935] the) (NN:[936..943] control) (NN:[944..949] level)))
+        (PP-TMP (IN:[950..952] at)
+          (NP (CD:[953..955] 60) (NN:[956..959] hpf)))))
+    (.:[959..960] .)))
+
+;sentence 8 Span:961..1090
+;In  contrast, blood flows in the trunk and in other vessels of the head of
+;the  embryo did not significantly change until 72 hpf.
+;[1083..1085]:quantitative-value:"72"
+;[1086..1089]:quantitative-units:"hpf"
+(SENT
+  (S
+    (PP (IN:[961..963] In)
+      (NP (NN:[965..973] contrast)))
+    (,:[973..974] ,)
+    (NP-SBJ
+      (NP (NN:[975..980] blood) (NNS:[981..986] flows))
+      (PP-LOC
+        (PP (IN:[987..989] in)
+          (NP (DT:[990..993] the) (NN:[994..999] trunk)))
+        (CC:[1000..1003] and)
+        (PP (IN:[1004..1006] in)
+          (NP
+            (NP (JJ:[1007..1012] other) (NNS:[1013..1020] vessels))
+            (PP (IN:[1021..1023] of)
+              (NP
+                (NP (DT:[1024..1027] the) (NN:[1028..1032] head))
+                (PP (IN:[1033..1035] of)
+                  (NP (DT:[1036..1039] the) (NN:[1041..1047] embryo)))))))))
+    (VP (VBD:[1048..1051] did) (RB:[1052..1055] not)
+      (ADVP (RB:[1056..1069] significantly))
+      (VP (VB:[1070..1076] change)
+        (PP-TMP (IN:[1077..1082] until)
+          (NP (CD:[1083..1085] 72) (NN:[1086..1089] hpf)))))
+    (.:[1089..1090] .)))
+
+;sentence 9 Span:1091..1300
+;Furthermore, TCDD exposure  caused apoptosis in the midbrain at 60 hpf, and
+;the TCDD dose response  relationship for this effect was similar to that for
+;reduced blood flow in the  mesencephalic vein at 50 hpf.
+;[1104..1108]:substance:"TCDD"
+;[1155..1157]:quantitative-value:"60"
+;[1158..1161]:quantitative-units:"hpf"
+;[1171..1175]:substance:"TCDD"
+;[1293..1295]:quantitative-value:"50"
+;[1296..1299]:quantitative-units:"hpf"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[1091..1102] Furthermore))
+      (,:[1102..1103] ,)
+      (NP-SBJ (NN:[1104..1108] TCDD) (NN:[1109..1117] exposure))
+      (VP (VBD:[1119..1125] caused)
+        (NP (NN:[1126..1135] apoptosis))
+        (PP-LOC (IN:[1136..1138] in)
+          (NP (DT:[1139..1142] the) (NN:[1143..1151] midbrain)))
+        (PP-TMP (IN:[1152..1154] at)
+          (NP (CD:[1155..1157] 60) (NN:[1158..1161] hpf)))))
+    (,:[1161..1162] ,) (CC:[1163..1166] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[1167..1170] the)
+          (NML (NN:[1171..1175] TCDD) (NN:[1176..1180] dose)
+               (NN:[1181..1189] response))
+          (NN:[1191..1203] relationship))
+        (PP (IN:[1204..1207] for)
+          (NP (DT:[1208..1212] this) (NN:[1213..1219] effect))))
+      (VP (VBD:[1220..1223] was)
+        (ADJP-PRD (JJ:[1224..1231] similar)
+          (PP (TO:[1232..1234] to)
+            (NP
+              (NP (DT:[1235..1239] that))
+              (PP (IN:[1240..1243] for)
+                (NP (JJ:[1244..1251] reduced) (NN:[1252..1257] blood)
+                    (NN:[1258..1262] flow)))
+              (PP-LOC (IN:[1263..1265] in)
+                (NP (DT:[1266..1269] the) (JJ:[1271..1284] mesencephalic)
+                    (NN:[1285..1289] vein)))
+              (PP-TMP (IN:[1290..1292] at)
+                (NP (CD:[1293..1295] 50) (NN:[1296..1299] hpf))))))))
+    (.:[1299..1300] .)))
+
+;sentence 10 Span:1301..1432
+;The effects of TCDD on apoptosis in the midbrain,  but not on blood flow,
+;were abolished by Z-VAD-FMK, a general caspase inhibitor.
+;[1316..1320]:substance:"TCDD"
+;[1393..1402]:substance:"Z-VAD-FMK"
+;[1414..1421]:substance:"caspase"
+;[1422..1431]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1301..1304] The) (NNS:[1305..1312] effects))
+      (PP (IN:[1313..1315] of)
+        (NP (NN:[1316..1320] TCDD)))
+      (PP
+        (PP (IN:[1321..1323] on)
+          (NP
+            (NP (NN:[1324..1333] apoptosis))
+            (PP-LOC (IN:[1334..1336] in)
+              (NP (DT:[1337..1340] the) (NN:[1341..1349] midbrain)))))
+        (,:[1349..1350] ,) (CC:[1352..1355] but) (RB:[1356..1359] not)
+        (PP (IN:[1360..1362] on)
+          (NP (NN:[1363..1368] blood) (NN:[1369..1373] flow)))))
+    (,:[1373..1374] ,)
+    (VP (VBD:[1375..1379] were)
+      (VP (VBN:[1380..1389] abolished)
+        (NP-1 (-NONE-:[1389..1389] *))
+        (PP (IN:[1390..1392] by)
+          (NP-LGS
+            (NP (NN:[1393..1402] Z-VAD-FMK))
+            (,:[1402..1403] ,)
+            (NP (DT:[1404..1405] a) (JJ:[1406..1413] general)
+                (NN:[1414..1421] caspase) (NN:[1422..1431] inhibitor))))))
+    (.:[1431..1432] .)))
+
+;sentence 11 Span:1434..1658
+;TCDD effects on both endpoints were mimicked by beta-naphthoflavone (BNF), an
+; aryl hydrocarbon receptor (AHR) agonist, and almost abolished by concomitant
+; exposure to TCDD and alpha-naphthoflavone (ANF), an AHR antagonist.
+;[1434..1438]:substance:"TCDD"
+;[1482..1501]:substance:"beta-naphthoflavone"
+;[1503..1506]:substance:"BNF"
+;[1513..1538]:substance:"aryl hydrocarbon receptor"
+;[1540..1543]:substance:"AHR"
+;[1545..1552]:substance:"agonist"
+;[1603..1607]:substance:"TCDD"
+;[1612..1632]:substance:"alpha-naphthoflavone"
+;[1634..1637]:substance:"ANF"
+;[1643..1646]:substance:"AHR"
+;[1647..1657]:substance:"antagonist"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1434..1438] TCDD) (NNS:[1439..1446] effects))
+      (PP (IN:[1447..1449] on)
+        (NP (DT:[1450..1454] both) (NNS:[1455..1464] endpoints))))
+    (VP (VBD:[1465..1469] were)
+      (VP
+        (VP (VBN:[1470..1478] mimicked)
+          (NP-1 (-NONE-:[1478..1478] *))
+          (PP (IN:[1479..1481] by)
+            (NP-LGS
+              (NP
+                (NP (NN:[1482..1501] beta-naphthoflavone))
+                (NP (-LRB-:[1502..1503] -LRB-) (NN:[1503..1506] BNF)
+                    (-RRB-:[1506..1507] -RRB-)))
+              (,:[1507..1508] ,)
+              (NP (DT:[1509..1511] an)
+                (NML
+                  (NML (NN:[1513..1517] aryl) (NN:[1518..1529] hydrocarbon)
+                       (NN:[1530..1538] receptor))
+                  (NML (-LRB-:[1539..1540] -LRB-) (NN:[1540..1543] AHR)
+                       (-RRB-:[1543..1544] -RRB-)))
+                (NN:[1545..1552] agonist)))))
+        (,:[1552..1553] ,) (CC:[1554..1557] and)
+        (VP
+          (ADVP (RB:[1558..1564] almost))
+          (VBN:[1565..1574] abolished)
+          (NP-1 (-NONE-:[1574..1574] *))
+          (PP (IN:[1575..1577] by)
+            (NP-LGS
+              (NP (JJ:[1578..1589] concomitant) (NN:[1591..1599] exposure))
+              (PP (TO:[1600..1602] to)
+                (NP
+                  (NP (NN:[1603..1607] TCDD))
+                  (CC:[1608..1611] and)
+                  (NP
+                    (NP
+                      (NP (NN:[1612..1632] alpha-naphthoflavone))
+                      (NP (-LRB-:[1633..1634] -LRB-) (NN:[1634..1637] ANF)
+                          (-RRB-:[1637..1638] -RRB-)))
+                    (,:[1638..1639] ,)
+                    (NP (DT:[1640..1642] an) (NN:[1643..1646] AHR)
+                        (NN:[1647..1657] antagonist))))))))))
+    (.:[1657..1658] .)))
+
+;sentence 12 Span:1659..1850
+;Concomitant  exposure to TCDD and either an inhibitor of cytochrome P450
+;(CYP) (SKF525A or  miconazole) or an antioxidant (N-acetylcysteine or
+;ascorbic acid) inhibited  these effects of TCDD.
+;[1684..1688]:substance:"TCDD"
+;[1703..1712]:substance:"inhibitor"
+;[1716..1731]:cyp450:"cytochrome P450"
+;[1733..1736]:cyp450:"CYP"
+;[1739..1746]:substance:"SKF525A"
+;[1751..1761]:substance:"miconazole"
+;[1769..1780]:substance:"antioxidant"
+;[1782..1798]:substance:"N-acetylcysteine"
+;[1802..1815]:substance:"ascorbic acid"
+;[1845..1849]:substance:"TCDD"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1659..1670] Concomitant) (NN:[1672..1680] exposure))
+      (PP (TO:[1681..1683] to)
+        (NP
+          (NP (NN:[1684..1688] TCDD))
+          (CC:[1689..1692] and)
+          (NP (RB:[1693..1699] either)
+            (NP
+              (NP (DT:[1700..1702] an) (NN:[1703..1712] inhibitor))
+              (PP (IN:[1713..1715] of)
+                (NP
+                  (NP (NN:[1716..1726] cytochrome) (NN:[1727..1731] P450))
+                  (NP (-LRB-:[1732..1733] -LRB-) (NN:[1733..1736] CYP)
+                      (-RRB-:[1736..1737] -RRB-))))
+              (PRN (-LRB-:[1738..1739] -LRB-)
+                (NP (NN:[1739..1746] SKF525A) (CC:[1747..1749] or)
+                    (NN:[1751..1761] miconazole))
+                (-RRB-:[1761..1762] -RRB-)))
+            (CC:[1763..1765] or)
+            (NP (DT:[1766..1768] an) (NN:[1769..1780] antioxidant)
+              (PRN (-LRB-:[1781..1782] -LRB-)
+                (NP
+                  (NP (NN:[1782..1798] N-acetylcysteine))
+                  (CC:[1799..1801] or)
+                  (NP (JJ:[1802..1810] ascorbic) (NN:[1811..1815] acid)))
+                (-RRB-:[1815..1816] -RRB-)))))))
+    (VP (VBD:[1817..1826] inhibited)
+      (NP
+        (NP (DT:[1828..1833] these) (NNS:[1834..1841] effects))
+        (PP (IN:[1842..1844] of)
+          (NP (NN:[1845..1849] TCDD)))))
+    (.:[1849..1850] .)))
+
+;sentence 13 Span:1851..2040
+;The incidence of apoptosis in the midbrain was inversely  related to blood
+;flow in this brain region following these various treatments  and graded TCDD
+;exposure concentrations (r = -0.91).
+;[1999..2003]:substance:"TCDD"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1851..1854] The) (NN:[1855..1864] incidence))
+      (PP (IN:[1865..1867] of)
+        (NP (NN:[1868..1877] apoptosis)))
+      (PP-LOC (IN:[1878..1880] in)
+        (NP (DT:[1881..1884] the) (NN:[1885..1893] midbrain))))
+    (VP (VBD:[1894..1897] was)
+      (ADVP (RB:[1898..1907] inversely))
+      (VP (VBN:[1909..1916] related)
+        (NP-1 (-NONE-:[1916..1916] *))
+        (PP-CLR (TO:[1917..1919] to)
+          (NP
+            (NP (NN:[1920..1925] blood) (NN:[1926..1930] flow))
+            (PP-LOC (IN:[1931..1933] in)
+              (NP (DT:[1934..1938] this) (NN:[1939..1944] brain)
+                  (NN:[1945..1951] region)))))
+        (PP (VBG:[1952..1961] following)
+          (NP
+            (NP (DT:[1962..1967] these) (JJ:[1968..1975] various)
+                (NNS:[1976..1986] treatments))
+            (CC:[1988..1991] and)
+            (NP (VBN:[1992..1998] graded)
+              (NML (NN:[1999..2003] TCDD) (NN:[2004..2012] exposure))
+              (NNS:[2013..2027] concentrations))))
+        (PRN (-LRB-:[2028..2029] -LRB-)
+          (S
+            (NP-SBJ (NN:[2029..2030] r))
+            (VP (SYM:[2031..2032] =)
+              (NP (SYM:[2032..2034] -) (CD:[2034..2038] 0.91))))
+          (-RRB-:[2038..2039] -RRB-))))
+    (.:[2039..2040] .)))
+
+;sentence 14 Span:2041..2341
+;The same range of TCDD  exposure concentrations that reduced blood flow and
+;increased apoptosis in the  midbrain greatly enhanced CYP1A mRNA expression
+;and immunoreactivity at 50 hpf  in endothelial cells of blood vessels
+;including the mesencephalic vein and the  heart, but not the brain
+;parenchyma.
+;[2059..2063]:substance:"TCDD"
+;[2171..2181]:substance:"CYP1A mRNA"
+;[2217..2219]:quantitative-value:"50"
+;[2220..2223]:quantitative-units:"hpf"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2041..2044] The) (JJ:[2045..2049] same) (NN:[2050..2055] range))
+      (PP (IN:[2056..2058] of)
+        (NP
+          (NP
+            (NML (NN:[2059..2063] TCDD) (NN:[2065..2073] exposure))
+            (NNS:[2074..2088] concentrations))
+          (SBAR
+            (WHNP-4 (WDT:[2089..2093] that))
+            (S
+              (NP-SBJ-4 (-NONE-:[2093..2093] *T*))
+              (VP
+                (VP (VBD:[2094..2101] reduced)
+                  (NP (NN:[2102..2107] blood) (NN:[2108..2112] flow)))
+                (CC:[2113..2116] and)
+                (VP (VBD:[2117..2126] increased)
+                  (NP (NN:[2127..2136] apoptosis)))
+                (PP-LOC (IN:[2137..2139] in)
+                  (NP (DT:[2140..2143] the) (NN:[2145..2153] midbrain)))))))))
+    (ADVP (RB:[2154..2161] greatly))
+    (VP
+      (VP (VBD:[2162..2170] enhanced)
+        (NP
+          (NP
+            (NML-1 (NN:[2171..2176] CYP1A) (NN:[2177..2181] mRNA))
+            (NN:[2182..2192] expression))
+          (CC:[2193..2196] and)
+          (NP
+            (NML-1 (-NONE-:[2196..2196] *P*))
+            (NN:[2197..2213] immunoreactivity)))
+        (PP-TMP (IN:[2214..2216] at)
+          (NP (CD:[2217..2219] 50) (NN:[2220..2223] hpf)))
+        (PP-LOC (IN:[2225..2227] in)
+          (NP
+            (NP (JJ:[2228..2239] endothelial) (NNS:[2240..2245] cells))
+            (PP (IN:[2246..2248] of)
+              (NP
+                (NP (NN:[2249..2254] blood) (NNS:[2255..2262] vessels))
+                (PP (VBG:[2263..2272] including)
+                  (NP=2
+                    (NP (DT:[2273..2276] the) (JJ:[2277..2290] mesencephalic)
+                        (NN:[2291..2295] vein))
+                    (CC:[2296..2299] and)
+                    (NP (DT:[2300..2303] the) (NN:[2305..2310] heart)))))))))
+      (,:[2310..2311] ,) (CC:[2312..2315] but)
+      (VP (RB:[2316..2319] not)
+        (NP=2 (DT:[2320..2323] the) (NN:[2324..2329] brain)
+              (NN:[2330..2340] parenchyma))))
+    (.:[2340..2341] .)))
+
+;sentence 15 Span:2342..2574
+;Taken together, these results suggest that  TCDD induces apoptosis in the
+;midbrain of the zebrafish embryo secondary to  local circulation failure,
+;which could be related to AHR activation, induction  of CYP1A, and oxidative
+;stress.
+;[2386..2390]:substance:"TCDD"
+;[2516..2519]:substance:"AHR"
+;[2546..2551]:cyp450:"CYP1A"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ-2 (-NONE-:[2342..2342] *))
+      (VP (VBN:[2342..2347] Taken)
+        (NP-2 (-NONE-:[2347..2347] *))
+        (ADVP (RB:[2348..2356] together))))
+    (,:[2356..2357] ,)
+    (NP-SBJ (DT:[2358..2363] these) (NNS:[2364..2371] results))
+    (VP (VBP:[2372..2379] suggest)
+      (SBAR (IN:[2380..2384] that)
+        (S
+          (NP-SBJ (NN:[2386..2390] TCDD))
+          (VP (VBZ:[2391..2398] induces)
+            (NP
+              (NP
+                (NP (NN:[2399..2408] apoptosis))
+                (PP-LOC (IN:[2409..2411] in)
+                  (NP
+                    (NP (DT:[2412..2415] the) (NN:[2416..2424] midbrain))
+                    (PP (IN:[2425..2427] of)
+                      (NP (DT:[2428..2431] the) (NN:[2432..2441] zebrafish)
+                          (NN:[2442..2448] embryo))))))
+              (PP (JJ:[2449..2458] secondary)
+                (PP (TO:[2459..2461] to)
+                  (NP
+                    (NP (JJ:[2463..2468] local) (NN:[2469..2480] circulation)
+                        (NN:[2481..2488] failure))
+                    (,:[2488..2489] ,)
+                    (SBAR
+                      (WHNP-1 (WDT:[2490..2495] which))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[2495..2495] *T*))
+                        (VP (MD:[2496..2501] could)
+                          (VP (VB:[2502..2504] be)
+                            (VP (VBN:[2505..2512] related)
+                              (NP-1 (-NONE-:[2512..2512] *))
+                              (PP-CLR (TO:[2513..2515] to)
+                                (NP
+                                  (NP (NN:[2516..2519] AHR)
+                                      (NN:[2520..2530] activation))
+                                  (,:[2530..2531] ,)
+                                  (NP
+                                    (NP (NN:[2532..2541] induction))
+                                    (PP (IN:[2543..2545] of)
+                                      (NP (NN:[2546..2551] CYP1A))))
+                                  (,:[2551..2552] ,) (CC:[2553..2556] and)
+                                  (NP (JJ:[2557..2566] oxidative)
+                                      (NN:[2567..2573] stress)))))))))))))))))
+    (.:[2573..2574] .)))
+
+;section 16 Span:2578..2623
+;PMID: 12215674 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2578..2582] PMID) (::[2582..2583] :) (CD:[2584..2592] 12215674)
+        (NN:[2593..2594] -LSB-) (NNP:[2594..2600] PubMed) (::[2601..2602] -)
+        (NN:[2603..2610] indexed) (IN:[2611..2614] for)
+        (NNP:[2615..2623] MEDLINE-RSB-)))

@@ -1,0 +1,407 @@
+;PMID: 9612934
+;source_file_983.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..189] = [t:50..189]
+;2)section:[e:193..235] = [t:193..235]
+;3)section:[e:239..319] = [t:239..319]
+;4)sentence:[e:323..625] = [t:323..625]
+;5)sentence:[e:627..799] = [t:627..799]
+;6)sentence:[e:800..921] = [t:800..921]
+;7)sentence:[e:922..1012] = [t:922..1012]
+;8)sentence:[e:1014..1117] = [t:1014..1117]
+;9)sentence:[e:1118..1286] = [t:1118..1286]
+;10)sentence:[e:1287..1421] = [t:1287..1421]
+;11)sentence:[e:1422..1526] = [t:1422..1526]
+;12)sentence:[e:1527..1670] = [t:1527..1670]
+;13)section:[e:1674..1718] = [t:1674..1718]
+
+;section 0 Span:0..44
+;Insect Biochem Mol Biol. 1998 Jan;28(1):1-9.
+(SEC
+  (FRAG (NNP:[0..6] Insect) (NNP:[7..14] Biochem) (NNP:[15..18] Mol)
+        (NNP:[19..23] Biol) (.:[23..24] .) (CD:[25..29] 1998)
+        (HYPH:[30..37] Jan;28-LRB-) (CD:[37..38] 1) (-RRB-:[38..39] -RRB-)
+        (CD:[39..41] :1) (HYPH:[41..42] -) (CD:[42..44] 9.)))
+
+;sentence 1 Span:50..189
+;Cytochrome P450 purification and immunological detection in an insecticide 
+;resistant strain of German cockroach (Blattella germanica, L.).
+;[50..65]:cyp450:"Cytochrome P450"
+;[113..124]:substance:"insecticide"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NML (NN:[50..60] Cytochrome) (NN:[61..65] P450))
+        (NN:[66..78] purification))
+      (CC:[79..82] and)
+      (NP (JJ:[83..96] immunological) (NN:[97..106] detection)))
+    (PP (IN:[107..109] in)
+      (NP
+        (NP (DT:[110..112] an)
+          (ADJP (NN:[113..124] insecticide) (JJ:[126..135] resistant))
+          (NN:[136..142] strain))
+        (PP (IN:[143..145] of)
+          (NP (JJ:[146..152] German) (NN:[153..162] cockroach)))
+        (PRN (-LRB-:[163..164] -LRB-)
+          (NP (NNP:[164..173] Blattella) (NNP:[174..183] germanica)
+              (,:[183..184] ,) (NNP:[185..187] L.))
+          (-RRB-:[187..188] -RRB-))))
+    (.:[188..189] .)))
+
+;section 2 Span:193..235
+;Scharf ME, Neal JJ, Marcus CB, Bennett GW.
+(SEC
+  (FRAG (NNP:[193..199] Scharf) (NNP:[200..202] ME) (,:[202..203] ,)
+        (NNP:[204..208] Neal) (NNP:[209..211] JJ) (,:[211..212] ,)
+        (NNP:[213..219] Marcus) (NNP:[220..222] CB) (NNP:[222..223] ,)
+        (NNP:[224..231] Bennett) (NNP:[232..235] GW.)))
+
+;section 3 Span:239..319
+;Department of Entomology, Purdue University, West Lafayette, IN 47907-1158,
+;USA.
+(SEC
+  (FRAG (NNP:[239..249] Department) (IN:[250..252] of)
+        (NNP:[253..263] Entomology) (,:[263..264] ,) (NNP:[265..271] Purdue)
+        (NNP:[272..282] University) (,:[282..283] ,) (NNP:[284..288] West)
+        (NNP:[289..298] Lafayette) (,:[298..299] ,) (NNP:[300..302] IN)
+        (CD:[303..308] 47907) (HYPH:[308..309] -) (CD:[309..313] 1158)
+        (,:[313..314] ,) (NNP:[315..318] USA) (.:[318..319] .)))
+
+;sentence 4 Span:323..625
+;A German cockroach strain, Munsyana (MA) had 80-fold resistance to the 
+;pyrethroid insecticide cypermethrin, 4.5-fold greater total cytochrome P450 
+;content and 2.5-fold greater cytochrome P450-mediated N-demethylation of 
+;4-chloro-N-methylaniline compared to the susceptible Johnson Wax (JWax)
+;strain.
+;[368..375]:quantitative-value:"80-fold"
+;[395..417]:substance:"pyrethroid insecticide"
+;[418..430]:substance:"cypermethrin"
+;[432..440]:quantitative-value:"4.5-fold"
+;[455..470]:cyp450:"cytochrome P450"
+;[484..492]:quantitative-value:"2.5-fold"
+;[501..516]:cyp450:"cytochrome P450"
+;[546..570]:substance:"4-chloro-N-methylaniline"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[323..324] A) (JJ:[325..331] German) (NN:[332..341] cockroach)
+          (NN:[342..348] strain))
+      (,:[348..349] ,)
+      (NP
+        (NP (NNP:[350..358] Munsyana))
+        (NP (-LRB-:[359..360] -LRB-) (NNP:[360..362] MA)
+            (-RRB-:[362..363] -RRB-))))
+    (VP (VBD:[364..367] had)
+      (NP
+        (NP
+          (NP
+            (QP (CD:[368..370] 80) (HYPH:[370..371] -) (JJ:[371..375] fold))
+            (NN:[376..386] resistance))
+          (PP (TO:[387..389] to)
+            (NP
+              (NP (DT:[390..393] the)
+                 (JJ:[395..405] pyrethroid) (NN:[406..417] insecticide))
+              (NP (NN:[418..430] cypermethrin)))))
+        (,:[430..431] ,)
+        (NP
+          (ADJP
+            (QP (CD:[432..435] 4.5) (HYPH:[435..436] -) (RB:[436..440] fold))
+            (JJR:[441..448] greater))
+          (NN:[449..454] total)
+          (NML (NN:[455..465] cytochrome) (NN:[466..470] P450))
+          (NN:[472..479] content))
+        (CC:[480..483] and)
+        (NP
+          (NP
+            (ADJP
+              (QP (CD:[484..487] 2.5) (HYPH:[487..488] -) (RB:[488..492] fold))
+              (JJR:[493..500] greater))
+            (ADJP
+              (NML (NN:[501..511] cytochrome) (NN:[512..516] P450))
+              (HYPH:[516..517] -) (VBN:[517..525] mediated))
+            (NN:[526..541] N-demethylation))
+          (PP (IN:[542..544] of)
+            (NP (NN:[546..570] 4-chloro-N-methylaniline)))))
+      (S-ADV
+        (NP-SBJ-1 (-NONE-:[570..570] *))
+        (VP (VBN:[571..579] compared)
+          (NP-1 (-NONE-:[579..579] *))
+          (PP-CLR (TO:[580..582] to)
+            (NP (DT:[583..586] the) (JJ:[587..598] susceptible)
+              (NP
+                (NML (NNP:[599..606] Johnson) (NNP:[607..610] Wax))
+                (NP (-LRB-:[611..612] -LRB-) (NNP:[612..616] JWax)
+                    (-RRB-:[616..617] -RRB-)))
+              (NN:[618..624] strain))))))
+    (.:[624..625] .)))
+
+;sentence 5 Span:627..799
+;Immobilized artificial membrane high performance liquid chromatography 
+;(IAM-HPLC) of microsomal proteins from the MA strain enriched cytochrome P450
+; greater than 70-fold.
+;[724..732]:substance:"proteins"
+;[761..776]:cyp450:"cytochrome P450"
+;[778..798]:quantitative-value:"greater than 70-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (VBN:[627..638] Immobilized)
+          (NML (JJ:[639..649] artificial) (NN:[650..658] membrane))
+          (NML (JJ:[659..663] high) (NN:[664..675] performance))
+          (NN:[676..682] liquid) (NN:[683..697] chromatography))
+        (NP (-LRB-:[699..700] -LRB-) (NN:[700..703] IAM) (HYPH:[703..704] -)
+            (NN:[704..708] HPLC) (-RRB-:[708..709] -RRB-)))
+      (PP (IN:[710..712] of)
+        (NP
+          (NP (JJ:[713..723] microsomal) (NNS:[724..732] proteins))
+          (PP (IN:[733..737] from)
+            (NP (DT:[738..741] the) (NNP:[742..744] MA) (NN:[745..751] strain))))))
+    (VP (VBD:[752..760] enriched)
+      (NP (NN:[761..771] cytochrome) (NN:[772..776] P450))
+      (ADVP-EXT
+        (QP (JJR:[778..785] greater) (IN:[786..790] than) (CD:[791..793] 70)
+            (HYPH:[793..794] -) (RB:[794..798] fold))))
+    (.:[798..799] .)))
+
+;sentence 6 Span:800..921
+;Following purification, a single protein band of M(r) =  49,000 (P450 MA),
+;was detected by silver-staining SDS PAGE gels.
+;[833..840]:substance:"protein"
+;[849..853]:quantitative-name:"M(r)"
+;[857..863]:quantitative-value:"49,000"
+;[865..872]:cyp450:"P450 MA"
+;[891..897]:substance:"silver"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[800..800] *))
+      (VP (VBG:[800..809] Following)
+        (NP (NN:[810..822] purification))))
+    (,:[822..823] ,)
+    (NP-SBJ-1
+      (NP (DT:[824..825] a) (JJ:[826..832] single) (NN:[833..840] protein)
+          (NN:[841..845] band))
+      (PP (IN:[846..848] of)
+        (NP
+          (NP (NN:[849..853] M-LRB-r-RRB-))
+          (VP (SYM:[854..855] =)
+            (NP (CD:[857..863] 49,000)))
+          (PRN (-LRB-:[864..865] -LRB-)
+            (NP (NN:[865..869] P450) (NNP:[870..872] MA))
+            (-RRB-:[872..873] -RRB-)))))
+    (,:[873..874] ,)
+    (VP (VBD:[875..878] was)
+      (VP (VBN:[879..887] detected)
+        (NP-1 (-NONE-:[887..887] *))
+        (PP-MNR (IN:[888..890] by)
+          (NP
+            (ADJP (NN:[891..897] silver) (HYPH:[897..898] -)
+                  (VBG:[898..906] staining))
+            (NN:[907..910] SDS) (NN:[911..915] PAGE) (NNS:[916..920] gels)))))
+    (.:[920..921] .)))
+
+;sentence 7 Span:922..1012
+;Antiserum to  the purified protein from the MA strain (anti-P450 MA) was
+;produced in mice.
+;[949..956]:substance:"protein"
+;[977..989]:substance:"anti-P450 MA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (NN:[922..931] Antiserum))
+        (PP (TO:[932..934] to)
+          (NP
+            (NP (DT:[936..939] the) (VBN:[940..948] purified)
+                (NN:[949..956] protein))
+            (PP (IN:[957..961] from)
+              (NP (DT:[962..965] the) (NNP:[966..968] MA) (NN:[969..975] strain))))))
+      (NP (-LRB-:[976..977] -LRB-)
+        
+        (NML (AFX:[977..981] anti) (HYPH:[981..982] -) (NN:[982..986] P450))
+        (NNP:[987..989] MA)
+        (-RRB-:[989..990] -RRB-)))
+    (VP (VBD:[991..994] was)
+      (VP (VBN:[995..1003] produced)
+        (NP-1 (-NONE-:[1003..1003] *))
+        (PP-LOC (IN:[1004..1006] in)
+          (NP (NNS:[1007..1011] mice)))))
+    (.:[1011..1012] .)))
+
+;sentence 8 Span:1014..1117
+;Anti-P450 MA inhibited cytochrome P450-mediated N-demethylation by 4-fold in 
+;both MA and JWax strains.
+;[1014..1023]:substance:"Anti-P450"
+;[1037..1052]:cyp450:"cytochrome P450"
+;[1081..1087]:quantitative-value:"4-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (AFX:[1014..1018] Anti) (HYPH:[1018..1019] -) (NN:[1019..1023] P450))
+      (NNP:[1024..1026] MA))
+    (VP (VBD:[1027..1036] inhibited)
+      (NP
+        (ADJP
+          (NML (NN:[1037..1047] cytochrome) (NN:[1048..1052] P450))
+          (HYPH:[1052..1053] -) (VBN:[1053..1061] mediated))
+        (NN:[1062..1077] N-demethylation))
+      (PP-EXT (IN:[1078..1080] by)
+        (NP
+          (QP (CD:[1081..1082] 4) (HYPH:[1082..1083] -) (JJ:[1083..1087] fold))))
+      (PP (IN:[1088..1090] in)
+        (NP (CC:[1092..1096] both)
+          (NP (NNP:[1097..1099] MA)
+            (NML-1 (-NONE-:[1099..1099] *P*)))
+          (CC:[1100..1103] and)
+          (NP (NNP:[1104..1108] JWax)
+            (NML-1 (NNS:[1109..1116] strains))))))
+    (.:[1116..1117] .)))
+
+;sentence 9 Span:1118..1286
+;In Western blots of microsomal proteins, anti-P450 MA  differentiated single
+;MA and JWax individuals by recognizing and M(r) 49,000  protein band in only
+;the MA strain.
+;[1149..1157]:substance:"proteins"
+;[1159..1171]:substance:"anti-P450 MA"
+;[1238..1242]:quantitative-name:"M(r)"
+;[1243..1249]:quantitative-value:"49,000"
+;[1251..1258]:substance:"protein"
+(SENT
+  (S
+    (PP (IN:[1118..1120] In)
+      (NP
+        (NP (JJ:[1121..1128] Western) (NNS:[1129..1134] blots))
+        (PP (IN:[1135..1137] of)
+          (NP (JJ:[1138..1148] microsomal) (NNS:[1149..1157] proteins)))))
+    (,:[1157..1158] ,)
+    (NP-SBJ
+      (NML (AFX:[1159..1163] anti) (HYPH:[1163..1164] -) (NN:[1164..1168] P450))
+      (NNP:[1169..1171] MA))
+    (VP (VBD:[1173..1187] differentiated)
+      (NP
+        (NP
+          (ADJP-2 (JJ:[1188..1194] single))
+          (NNP:[1195..1197] MA)
+          (NML-1 (-NONE-:[1197..1197] *P*)))
+        (CC:[1198..1201] and)
+        (NP
+          (ADJP-2 (-NONE-:[1201..1201] *P*))
+          (NNP:[1202..1206] JWax)
+          (NML-1 (NNS:[1207..1218] individuals))))
+      (PP (IN:[1219..1221] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1221..1221] *))
+          (VP (VBG:[1222..1233] recognizing)
+            (NP (CC:[1234..1237] and) (NN:[1238..1242] M-LRB-r-RRB-)
+                (CD:[1243..1249] 49,000) (NN:[1251..1258] protein)
+                (NN:[1259..1263] band))
+            (PP (IN:[1264..1266] in)
+              (ADVP (RB:[1267..1271] only))
+              (NP (DT:[1272..1275] the) (NNP:[1276..1278] MA)
+                  (NN:[1279..1285] strain)))))))
+    (.:[1285..1286] .)))
+
+;sentence 10 Span:1287..1421
+;In JWax cockroaches, the M(r) 49,000 band  was only detectable in Western
+;analysis following induction with  pentamethylbenzene (PMB).
+;[1312..1316]:quantitative-name:"M(r)"
+;[1317..1323]:quantitative-value:"49,000"
+;[1396..1414]:substance:"pentamethylbenzene"
+;[1416..1419]:substance:"PMB"
+(SENT
+  (S
+    (NP-LOC (IN:[1287..1289] In)
+      (NP (NNP:[1290..1294] JWax) (NNS:[1295..1306] cockroaches)))
+    (,:[1306..1307] ,)
+    (NP-SBJ (DT:[1308..1311] the) (NN:[1312..1316] M-LRB-r-RRB-)
+            (CD:[1317..1323] 49,000) (NN:[1324..1328] band))
+    (VP (VBD:[1330..1333] was)
+      (ADVP (RB:[1334..1338] only))
+      (ADJP-PRD (JJ:[1339..1349] detectable))
+      (PP (IN:[1350..1352] in)
+        (NP (JJ:[1353..1360] Western) (NN:[1361..1369] analysis)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[1369..1369] *))
+        (VP (VBG:[1370..1379] following)
+          (NP (NN:[1380..1389] induction)
+            (PP (IN:[1390..1394] with)
+              (NP
+                (NP (NN:[1396..1414] pentamethylbenzene))
+                (NP (-LRB-:[1415..1416] -LRB-) (NN:[1416..1419] PMB)
+                    (-RRB-:[1419..1420] -RRB-))))))))
+    (.:[1420..1421] .)))
+
+;sentence 11 Span:1422..1526
+;PMB induction also increases N-demethylation 2.6 and  8.0-fold in the MA and
+;JWax strains, respectively.
+;[1422..1425]:substance:"PMB"
+;[1467..1470]...[1480..1484]:quantitative-value:"2.6"..."fold"
+;[1476..1484]:quantitative-value:"8.0-fold"
+(SENT
+  (S
+    (NP-SBJ (NN:[1422..1425] PMB) (NN:[1426..1435] induction))
+    (ADVP (RB:[1436..1440] also))
+    (VP (VBZ:[1441..1450] increases)
+      (NP (NN:[1451..1466] N-demethylation))
+      (ADVP-EXT
+        (ADVP
+          (QP (CD:[1467..1470] 2.6)
+            (ADVP-2 (-NONE-:[1470..1470] *P*))))
+        (CC:[1471..1474] and)
+        (ADVP
+          (QP (CD:[1476..1479] 8.0) (HYPH:[1479..1480] -)
+            (ADVP-2 (RB:[1480..1484] fold)))))
+      (PP (IN:[1485..1487] in)
+        (NP (DT:[1488..1491] the)
+          (NML
+            (NML (NNP:[1492..1494] MA)
+              (NML-1 (-NONE-:[1494..1494] *P*)))
+            (CC:[1495..1498] and)
+            (NML (NNP:[1499..1503] JWax)
+              (NML-1 (NNS:[1504..1511] strains))))))
+      (,:[1511..1512] ,)
+      (ADVP (RB:[1513..1525] respectively)))
+    (.:[1525..1526] .)))
+
+;sentence 12 Span:1527..1670
+;These results are consistent  with the hypothesis that insecticide resistance
+;in the MA strain is due to  over-expression of a cytochrome P450.
+;[1582..1593]:substance:"insecticide"
+;[1654..1669]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1527..1532] These) (NNS:[1533..1540] results))
+    (VP (VBP:[1541..1544] are)
+      (ADJP-PRD (JJ:[1545..1555] consistent)
+        (PP (IN:[1557..1561] with)
+          (NP (DT:[1562..1565] the) (NN:[1566..1576] hypothesis)
+            (SBAR (IN:[1577..1581] that)
+              (S
+                (NP-SBJ
+                  (NP (NN:[1582..1593] insecticide) (NN:[1594..1604] resistance))
+                  (PP (IN:[1605..1607] in)
+                    (NP (DT:[1608..1611] the) (NNP:[1612..1614] MA)
+                        (NN:[1615..1621] strain))))
+                (VP (VBZ:[1622..1624] is)
+                  (PP-PRD (JJ:[1625..1628] due)
+                    (PP (TO:[1629..1631] to)
+                      (NP
+                        (NP (AFX:[1633..1637] over) (HYPH:[1637..1638] -)
+                            (NN:[1638..1648] expression))
+                        (PP (IN:[1649..1651] of)
+                          (NP (DT:[1652..1653] a)
+                             (NN:[1654..1664] cytochrome) (NN:[1665..1669] P450)))))))))))))
+    (.:[1669..1670] .)))
+
+;section 13 Span:1674..1718
+;PMID: 9612934 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1674..1678] PMID) (::[1678..1679] :) (CD:[1680..1687] 9612934)
+        (IN:[1688..1689] -LSB-) (NNP:[1689..1695] PubMed) (HYPH:[1696..1697] -)
+        (JJ:[1698..1705] indexed) (IN:[1706..1709] for)
+        (NNP:[1710..1718] MEDLINE-RSB-)))

@@ -1,0 +1,688 @@
+;PMID: 10220489
+;source_file_1870.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..150] = [t:46..150]
+;2)section:[e:154..197] = [t:154..197]
+;3)section:[e:201..305] = [t:201..305]
+;4)sentence:[e:309..562] = [t:309..562]
+;5)sentence:[e:563..673] = [t:563..673]
+;6)sentence:[e:674..754] = [t:674..754]
+;7)sentence:[e:755..846] = [t:755..846]
+;8)sentence:[e:847..960] = [t:847..960]
+;9)sentence:[e:961..1092] = [t:961..1092]
+;10)sentence:[e:1093..1198] = [t:1093..1198]
+;11)sentence:[e:1199..1371] = [t:1199..1371]
+;12)sentence:[e:1372..1494] = [t:1372..1494]
+;13)sentence:[e:1495..1576] = [t:1495..1576]
+;14)sentence:[e:1577..1748] = [t:1577..1748]
+;15)sentence:[e:1749..1856] = [t:1749..1856]
+;16)sentence:[e:1857..1997] = [t:1857..1997]
+;17)sentence:[e:1998..2042] = [t:1998..2042]
+;18)sentence:[e:2043..2215] = [t:2043..2215]
+;19)sentence:[e:2216..2351] = [t:2216..2351]
+;20)sentence:[e:2352..2437] = [t:2352..2437]
+;21)section:[e:2441..2486] = [t:2441..2486]
+
+;section 0 Span:0..40
+;Drug Metab Dispos. 1999 May;27(5):600-4.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (,:[17..18] .) (CD:[19..23] 1999) (NNP:[24..27] May) (::[27..28] ;)
+        (CD:[28..30] 27) (-LRB-:[30..31] -LRB-) (CD:[31..32] 5)
+        (-RRB-:[32..33] -RRB-) (::[33..34] :) (CD:[34..37] 600) (::[37..38] -)
+        (CD:[38..39] 4) (.:[39..40] .)))
+
+;sentence 1 Span:46..150
+;Selective mechanism-based inactivation of cytochromes P-450 2B1 and P-450 2B6
+;by  a series of xanthates.
+;[88..109]:cyp450:"cytochromes P-450 2B1"
+;[88..99]...[114..123]:cyp450:"cytochromes"..."P-450 2B6"
+;[140..149]:substance:"xanthates"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP
+        (NML (JJ:[46..55] Selective) (NN:[56..65] mechanism))
+        (HYPH:[65..66] -) (VBN:[66..71] based))
+      (NN:[72..84] inactivation))
+    (PP (IN:[85..87] of)
+      (NP
+        (NP
+          (NML-1 (NNS:[88..99] cytochromes))
+          (NN:[100..105] P-450) (NN:[106..109] 2B1))
+        (CC:[110..113] and)
+        (NP
+          (NML-1 (-NONE-:[113..113] *P*))
+          (NN:[114..119] P-450) (NN:[120..123] 2B6))))
+    (PP (IN:[124..126] by)
+      (NP
+        (NP (DT:[128..129] a) (NN:[130..136] series))
+        (PP (IN:[137..139] of)
+          (NP (NNS:[140..149] xanthates)))))
+    (.:[149..150] .)))
+
+;section 2 Span:154..197
+;Yanev S, Kent UM, Pandova B, Hollenberg PF.
+(SEC
+  (FRAG (NNP:[154..159] Yanev) (NNP:[160..161] S) (,:[161..162] ,)
+        (NNP:[163..167] Kent) (NNP:[168..170] UM) (,:[170..171] ,)
+        (NNP:[172..179] Pandova) (NNP:[180..181] B) (,:[181..182] ,)
+        (NNP:[183..193] Hollenberg) (NNP:[194..196] PF) (.:[196..197] .)))
+
+;section 3 Span:201..305
+;Department of Drug Toxicology, Institute of Physiology, Bulgarian Academy of 
+;Sciences, Sofia, Bulgaria.
+(SEC
+  (FRAG (NNP:[201..211] Department) (IN:[212..214] of) (NNP:[215..219] Drug)
+        (NNP:[220..230] Toxicology) (,:[230..231] ,) (NNP:[232..241] Institute)
+        (IN:[242..244] of) (NNP:[245..255] Physiology) (,:[255..256] ,)
+        (NNP:[257..266] Bulgarian) (NNP:[267..274] Academy) (IN:[275..277] of)
+        (NNP:[279..287] Sciences) (,:[287..288] ,) (NNP:[289..294] Sofia)
+        (,:[294..295] ,) (NNP:[296..304] Bulgaria) (.:[304..305] .)))
+
+;sentence 4 Span:309..562
+;Fifteen xanthates with carbon chains of different lengths or substitutions, 
+;including the antiviral compound D609 (O-tricyclo[5.2. 
+;1.0(2,6)]dec-9-yl-dithiocarbonate), were tested for their ability to
+;inactivate  cytochromes P-450 (P-450s) 2B1 and 2B6.
+;[317..326]:substance:"xanthates"
+;[400..418]:substance:"antiviral compound"
+;[419..423]:substance:"D609"
+;[425..475]:substance:"O-tricyclo[5.2.  1.0(2,6)]dec-9-yl-dithiocarbonate"
+;[523..553]:cyp450:"cytochromes P-450 (P-450s) 2B1"
+;[523..549]...[558..561]:cyp450:"cytochromes P-450 (P-450s)"..."2B6"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP (CD:[309..316] Fifteen) (NNS:[317..326] xanthates))
+        (PP (IN:[327..331] with)
+          (NP
+            (NP (NN:[332..338] carbon) (NNS:[339..345] chains))
+            (PP (IN:[346..348] of)
+              (NP
+                (NP
+                  (ADJP-2 (JJ:[349..358] different))
+                  (NNS:[359..366] lengths))
+                (CC:[367..369] or)
+                (NP
+                  (ADJP-2 (-NONE-:[369..369] *P*))
+                  (NNS:[370..383] substitutions)))))))
+      (,:[383..384] ,)
+      (VP (VBG:[386..395] including)
+        (NP
+          (NP (DT:[396..399] the)
+             (JJ:[400..409] antiviral) (NN:[410..418] compound))
+          (NP
+            (NP (NN:[419..423] D609))
+            (NP (-LRB-:[424..425] -LRB-)
+               (NN:[425..440] O-tricyclo-LSB-5.2.)
+               (NN:[442..475] 1.0-LRB-2,6-RRB--RSB-dec-9-yl-dithiocarbonate)
+              (-RRB-:[475..476] -RRB-))))))
+    (,:[476..477] ,)
+    (VP (VBD:[478..482] were)
+      (VP (VBN:[483..489] tested)
+        (NP-3 (-NONE-:[489..489] *))
+        (PP (IN:[490..493] for)
+          (NP (PRP$:[494..499] their) (NN:[500..507] ability)
+            (S
+              (NP-SBJ (-NONE-:[507..507] *))
+              (VP (TO:[508..510] to)
+                (VP (VB:[511..521] inactivate)
+                  (NP
+                    (NP
+                      (NML-1
+                        (NML (NNS:[523..534] cytochromes) (NN:[535..540] P-450))
+                        (NML (-LRB-:[541..542] -LRB-) (NNS:[542..548] P-450s)
+                             (-RRB-:[548..549] -RRB-)))
+                      (NN:[550..553] 2B1))
+                    (CC:[554..557] and)
+                    (NP
+                      (NML-1 (-NONE-:[557..557] *P*))
+                      (NN:[558..561] 2B6))))))))))
+    (.:[561..562] .)))
+
+;sentence 5 Span:563..673
+;All of the xanthates tested were found  to inactivate P-450 2B1 in a time-
+;and concentration-dependent manner.
+;[574..583]:substance:"xanthates"
+;[617..626]:cyp450:"P-450 2B1"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (DT:[563..566] All))
+      (PP (IN:[567..569] of)
+        (NP
+          (NP-3 (DT:[570..573] the) (NNS:[574..583] xanthates))
+          (VP (VBN:[584..590] tested)
+            (NP-3 (-NONE-:[590..590] *))))))
+    (VP (VBD:[591..595] were)
+      (VP (VBN:[596..601] found)
+        (S
+          (NP-SBJ-4 (-NONE-:[601..601] *))
+          (VP (TO:[603..605] to)
+            (VP (VB:[606..616] inactivate)
+              (NP (NN:[617..622] P-450) (NN:[623..626] 2B1))
+              (PP-MNR (IN:[627..629] in)
+                (NP (DT:[630..631] a)
+                  (NML
+                    (NML
+                      (ADJP (NN:[632..636] time) (HYPH:[636..637] -)
+                        (ADJP-1 (-NONE-:[637..637] *P*)))
+                      (NML-2 (-NONE-:[637..637] *P*)))
+                    (CC:[638..641] and)
+                    (NML
+                      (ADJP (NN:[642..655] concentration) (HYPH:[655..656] -)
+                        (ADJP-1 (JJ:[656..665] dependent)))
+                      (NML-2 (NN:[666..672] manner)))))))))))
+    (.:[672..673] .)))
+
+;sentence 6 Span:674..754
+;The rates  of inactivation at 30 degrees C ranged from 0.22 min-1 to 0.02
+;min-1.
+;[704..706]:quantitative-value:"30"
+;[707..716]:quantitative-units:"degrees C"
+;[729..733]:quantitative-value:"0.22"
+;[734..739]:quantitative-units:"min-1"
+;[743..747]:quantitative-value:"0.02"
+;[748..753]:quantitative-units:"min-1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[674..677] The) (NNS:[678..683] rates))
+      (PP (IN:[685..687] of)
+        (NP (NN:[688..700] inactivation)))
+      (PP-MNR (IN:[701..703] at)
+        (NP (CD:[704..706] 30)
+           (NNS:[707..714] degrees) (NN:[715..716] C))))
+    (VP (VBD:[717..723] ranged)
+      (PP
+        (PP (IN:[724..728] from)
+          (NP (CD:[729..733] 0.22) (NN:[734..739] min-1)))
+        (PP (TO:[740..742] to)
+          (NP (CD:[743..747] 0.02) (NN:[748..753] min-1)))))
+    (.:[753..754] .)))
+
+;sentence 7 Span:755..846
+;The  concentrations required for half-maximal inactivation were between 2.4
+;and 69  microM.
+;[827..830]:quantitative-value:"2.4"
+;[835..837]:quantitative-value:"69"
+;[839..845]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP-2 (DT:[755..758] The) (NNS:[760..774] concentrations))
+      (VP (VBN:[775..783] required)
+        (NP-2 (-NONE-:[783..783] *))
+        (PP (IN:[784..787] for)
+          (NP
+            (ADJP (RB:[788..792] half) (HYPH:[792..793] -)
+                  (JJ:[793..800] maximal))
+            (NN:[801..813] inactivation)))))
+    (VP (VBD:[814..818] were)
+      (PP-PRD (IN:[819..826] between)
+        (NP
+          (NP (CD:[827..830] 2.4)
+            (NML-1 (-NONE-:[830..830] *P*)))
+          (CC:[831..834] and)
+          (NP (CD:[835..837] 69)
+            (NML-1 (NN:[839..845] microM))))))
+    (.:[845..846] .)))
+
+;sentence 8 Span:847..960
+;A general trend in the inactivation kinetics could be observed with an 
+;increasing chain length of the xanthates.
+;[950..959]:substance:"xanthates"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[847..848] A) (JJ:[849..856] general) (NN:[857..862] trend))
+      (PP (IN:[863..865] in)
+        (NP (DT:[866..869] the) (NN:[870..882] inactivation)
+            (NNS:[883..891] kinetics))))
+    (VP (MD:[892..897] could)
+      (NP (VB:[898..900] be)
+        (VP (VBN:[901..909] observed)
+          (NP-1 (-NONE-:[909..909] *))
+          (PP (IN:[910..914] with)
+            (NP
+              (NP (DT:[915..917] an) (VBG:[919..929] increasing)
+                  (NN:[930..935] chain) (NN:[936..942] length))
+              (PP (IN:[943..945] of)
+                (NP (DT:[946..949] the) (NNS:[950..959] xanthates))))))))
+    (.:[959..960] .)))
+
+;sentence 9 Span:961..1092
+;Longer carbon chains resulted in  slower rates of inactivation with longer
+;half-times of inactivation and higher  partition ratios.
+(SENT
+  (S
+    (NP-SBJ (JJR:[961..967] Longer) (NN:[968..974] carbon)
+            (NNS:[975..981] chains))
+    (VP (VBD:[982..990] resulted)
+      (PP-CLR (IN:[991..993] in)
+        (NP
+          (NP (JJR:[995..1001] slower) (NNS:[1002..1007] rates))
+          (PP (IN:[1008..1010] of)
+            (NP (NN:[1011..1023] inactivation)))
+          (PP (IN:[1024..1028] with)
+            (NP
+              (NP
+                (NP (JJR:[1029..1035] longer) (JJ:[1036..1040] half)
+                    (HYPH:[1040..1041] -) (NNS:[1041..1046] times))
+                (PP (IN:[1047..1049] of)
+                  (NP (NN:[1050..1062] inactivation))))
+              (CC:[1063..1066] and)
+              (NP (JJR:[1067..1073] higher) (NN:[1075..1084] partition)
+                  (NNS:[1085..1091] ratios)))))))
+    (.:[1091..1092] .)))
+
+;sentence 10 Span:1093..1198
+;For P-450 2B1, the most effective inactivators were xanthates  with
+;substitutions of intermediate length.
+;[1097..1106]:cyp450:"P-450 2B1"
+;[1127..1139]:substance:"inactivators"
+;[1145..1154]:substance:"xanthates"
+(SENT
+  (S
+    (PP (IN:[1093..1096] For)
+      (NP (NN:[1097..1102] P-450) (NN:[1103..1106] 2B1)))
+    (,:[1106..1107] ,)
+    (NP-SBJ (DT:[1108..1111] the)
+      (ADJP (RBS:[1112..1116] most) (JJ:[1117..1126] effective))
+      (NNS:[1127..1139] inactivators))
+    (VP (VBD:[1140..1144] were)
+      (NP-PRD
+        (NP (NNS:[1145..1154] xanthates))
+        (PP (IN:[1156..1160] with)
+          (NP
+            (NP (NNS:[1161..1174] substitutions))
+            (PP (IN:[1175..1177] of)
+              (NP (JJ:[1178..1190] intermediate) (NN:[1191..1197] length)))))))
+    (.:[1197..1198] .)))
+
+;sentence 11 Span:1199..1371
+;The best inactivator for P-450 2B1  was the C8 xanthate, with an inactivation
+;potency (KI) of 2.4 microM, a rate of  inactivation of 0.07 min-1, and a
+;partition ratio of 4.
+;[1208..1219]:substance:"inactivator"
+;[1224..1233]:cyp450:"P-450 2B1"
+;[1243..1254]:substance:"C8 xanthate"
+;[1286..1288]:quantitative-name:"KI"
+;[1293..1296]:quantitative-value:"2.4"
+;[1297..1303]:quantitative-units:"microM"
+;[1332..1336]:quantitative-value:"0.07"
+;[1337..1342]:quantitative-units:"min-1"
+;[1369..1370]:quantitative-value:"4"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1199..1202] The) (JJS:[1203..1207] best)
+          (NN:[1208..1219] inactivator))
+      (PP (IN:[1220..1223] for)
+        (NP (NN:[1224..1229] P-450) (NN:[1230..1233] 2B1))))
+    (VP (VBD:[1235..1238] was)
+      (NP-PRD
+        (NP (DT:[1239..1242] the)
+           (NN:[1243..1245] C8) (NN:[1246..1254] xanthate))
+        (,:[1254..1255] ,)
+        (PP (IN:[1256..1260] with)
+          (NP
+            (NP
+              (NP
+                (NP (DT:[1261..1263] an) (NN:[1264..1276] inactivation)
+                    (NN:[1277..1284] potency))
+                (NP (-LRB-:[1285..1286] -LRB-) (NN:[1286..1288] KI)
+                    (-RRB-:[1288..1289] -RRB-)))
+              (PP (IN:[1290..1292] of)
+                (NP (CD:[1293..1296] 2.4) (NN:[1297..1303] microM))))
+            (,:[1303..1304] ,)
+            (NP
+              (NP (DT:[1305..1306] a) (NN:[1307..1311] rate))
+              (PP (IN:[1312..1314] of)
+                (NP (NN:[1316..1328] inactivation)))
+              (PP (IN:[1329..1331] of)
+                (NP (CD:[1332..1336] 0.07) (NN:[1337..1342] min-1))))
+            (,:[1342..1343] ,) (CC:[1344..1347] and)
+            (NP
+              (NP (DT:[1348..1349] a) (NN:[1350..1359] partition)
+                  (NN:[1360..1365] ratio))
+              (PP (IN:[1366..1368] of)
+                (NP (CD:[1369..1370] 4))))))))
+    (.:[1370..1371] .)))
+
+;sentence 12 Span:1372..1494
+;Four xanthates were  further examined for their effect on the
+;7-ethoxy-4-(trifluoromethyl)coumarin  activity of P-450 2B6.
+;[1377..1386]:substance:"xanthates"
+;[1434..1470]:substance:"7-ethoxy-4-(trifluoromethyl)coumarin"
+;[1484..1493]:cyp450:"P-450 2B6"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[1372..1376] Four) (NNS:[1377..1386] xanthates))
+    (VP (VBD:[1387..1391] were)
+      (ADVP (RB:[1393..1400] further))
+      (VP (VBN:[1401..1409] examined)
+        (NP-1 (-NONE-:[1409..1409] *))
+        (PP (IN:[1410..1413] for)
+          (NP
+            (NP (PRP$:[1414..1419] their) (NN:[1420..1426] effect))
+            (PP (IN:[1427..1429] on)
+              (NP
+                (NP (DT:[1430..1433] the)
+                    (NN:[1434..1470] 7-ethoxy-4--LRB-trifluoromethyl-RRB-coumarin)
+                    (NN:[1472..1480] activity))
+                (PP (IN:[1481..1483] of)
+                  (NP (NN:[1484..1489] P-450) (NN:[1490..1493] 2B6)))))))))
+    (.:[1493..1494] .)))
+
+;sentence 13 Span:1495..1576
+;The C8 xanthate was again the most effective inactivator,  with a KI of 1
+;microM.
+;[1499..1510]:substance:"C8 xanthate"
+;[1540..1551]:substance:"inactivator"
+;[1561..1563]:quantitative-name:"KI"
+;[1567..1568]:quantitative-value:"1"
+;[1569..1575]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (DT:[1495..1498] The)
+       (NN:[1499..1501] C8) (NN:[1502..1510] xanthate))
+    (VP (VBD:[1511..1514] was)
+      (ADVP (RB:[1515..1520] again))
+      (NP-PRD (DT:[1521..1524] the)
+        (ADJP (RBS:[1525..1529] most) (JJ:[1530..1539] effective))
+        (NN:[1540..1551] inactivator))
+      (,:[1551..1552] ,)
+      (PP (IN:[1554..1558] with)
+        (NP
+          (NP (DT:[1559..1560] a) (NN:[1561..1563] KI))
+          (PP (IN:[1564..1566] of)
+            (NP (CD:[1567..1568] 1) (NN:[1569..1575] microM))))))
+    (.:[1575..1576] .)))
+
+;sentence 14 Span:1577..1748
+;Although the KI values were generally lower than those  found with P-450 2B1,
+;the rates of inactivation for P-450 2B6 with the various  xanthates were 3-
+;to 5-fold slower.
+;[1590..1592]:quantitative-name:"KI"
+;[1644..1653]:cyp450:"P-450 2B1"
+;[1685..1694]:cyp450:"P-450 2B6"
+;[1713..1722]:substance:"xanthates"
+;[1728..1740]:quantitative-value:"3- to 5-fold"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1577..1585] Although)
+      (S
+        (NP-SBJ (DT:[1586..1589] the) (NN:[1590..1592] KI)
+                (NNS:[1593..1599] values))
+        (VP (VBD:[1600..1604] were)
+          (ADVP (RB:[1605..1614] generally))
+          (ADJP-PRD (JJR:[1615..1620] lower)
+            (PP (IN:[1621..1625] than)
+              (NP
+                (NP (DT:[1626..1631] those))
+                (VP (VBN:[1633..1638] found)
+                  (NP (-NONE-:[1638..1638] *))
+                  (PP (IN:[1639..1643] with)
+                    (NP (NN:[1644..1649] P-450) (NN:[1650..1653] 2B1))))))))))
+    (,:[1653..1654] ,)
+    (NP-SBJ
+      (NP (DT:[1655..1658] the) (NNS:[1659..1664] rates))
+      (PP (IN:[1665..1667] of)
+        (NP (NN:[1668..1680] inactivation)))
+      (PP (IN:[1681..1684] for)
+        (NP (NN:[1685..1690] P-450) (NN:[1691..1694] 2B6)))
+      (PP (IN:[1695..1699] with)
+        (NP (DT:[1700..1703] the) (JJ:[1704..1711] various)
+            (NNS:[1713..1722] xanthates))))
+    (VP (VBD:[1723..1727] were)
+      (ADJP-PRD
+        (ADVP-EXT
+          (QP (CD:[1728..1729] 3) (HYPH:[1729..1730] -) (TO:[1731..1733] to)
+              (CD:[1734..1735] 5))
+          (HYPH:[1735..1736] -) (RB:[1736..1740] fold))
+        (JJR:[1741..1747] slower)))
+    (.:[1747..1748] .)))
+
+;sentence 15 Span:1749..1856
+;In addition, the isozyme selectivity of  xanthates was tested with P-450s
+;2E1, 1A1, 3A2, 3A4, 2C9, and 2D6.
+;[1766..1773]:cyp450:"isozyme"
+;[1790..1799]:substance:"xanthates"
+;[1816..1826]:cyp450:"P-450s 2E1"
+;[1816..1822]...[1852..1855]:cyp450:"P-450s"..."2D6"
+;[1816..1822]...[1843..1846]:cyp450:"P-450s"..."2C9"
+;[1816..1822]...[1838..1841]:cyp450:"P-450s"..."3A4"
+;[1816..1822]...[1833..1836]:cyp450:"P-450s"..."3A2"
+;[1816..1822]...[1828..1831]:cyp450:"P-450s"..."1A1"
+(SENT
+  (S
+    (PP (IN:[1749..1751] In)
+      (NP (NN:[1752..1760] addition)))
+    (,:[1760..1761] ,)
+    (NP-SBJ-2
+      (NP (DT:[1762..1765] the) (NN:[1766..1773] isozyme)
+          (NN:[1774..1785] selectivity))
+      (PP (IN:[1786..1788] of)
+        (NP (NNS:[1790..1799] xanthates))))
+    (VP (VBD:[1800..1803] was)
+      (VP (VBN:[1804..1810] tested)
+        (NP-2 (-NONE-:[1810..1810] *))
+        (PP-MNR (IN:[1811..1815] with)
+          (NP
+            (NP
+              (NML-1 (NNS:[1816..1822] P-450s))
+              (NN:[1823..1826] 2E1))
+            (,:[1826..1827] ,)
+            (NP
+              (NML-1 (-NONE-:[1827..1827] *P*))
+              (NN:[1828..1831] 1A1))
+            (,:[1831..1832] ,)
+            (NP
+              (NML-1 (-NONE-:[1832..1832] *P*))
+              (NN:[1833..1836] 3A2))
+            (,:[1836..1837] ,)
+            (NP
+              (NML-1 (-NONE-:[1837..1837] *P*))
+              (NN:[1838..1841] 3A4))
+            (,:[1841..1842] ,)
+            (NP
+              (NML-1 (-NONE-:[1842..1842] *P*))
+              (NN:[1843..1846] 2C9))
+            (,:[1846..1847] ,) (CC:[1848..1851] and)
+            (NP
+              (NML-1 (-NONE-:[1851..1851] *P*))
+              (NN:[1852..1855] 2D6))))))
+    (.:[1855..1856] .)))
+
+;sentence 16 Span:1857..1997
+;P-450 2E1 was  inactivated by xanthates at concentrations 15- to 100-fold
+;higher than those  required to inactivate either P-450 2B1 or 2B6.
+;[1857..1866]:cyp450:"P-450 2E1"
+;[1887..1896]:substance:"xanthates"
+;[1915..1930]:quantitative-value:"15- to 100-fold"
+;[1980..1989]:cyp450:"P-450 2B1"
+;[1980..1985]...[1993..1996]:cyp450:"P-450"..."2B6"
+(SENT
+  (S
+    (NP-SBJ-4 (NN:[1857..1862] P-450) (NN:[1863..1866] 2E1))
+    (VP (VBD:[1867..1870] was)
+      (VP (VBN:[1872..1883] inactivated)
+        (NP-4 (-NONE-:[1883..1883] *))
+        (PP (IN:[1884..1886] by)
+          (NP-LGS (NNS:[1887..1896] xanthates)))
+        (PP (IN:[1897..1899] at)
+          (NP
+            (NP (NNS:[1900..1914] concentrations))
+            (ADJP
+              (ADJP
+                (ADVP-EXT
+                  (QP (CD:[1915..1917] 15) (HYPH:[1917..1918] -)
+                      (TO:[1919..1921] to) (CD:[1922..1925] 100))
+                  (HYPH:[1925..1926] -) (RB:[1926..1930] fold))
+                (JJR:[1931..1937] higher))
+              (PP (IN:[1938..1942] than)
+                (NP
+                  (NP (DT:[1943..1948] those))
+                  (VP (VBN:[1950..1958] required)
+                    (S-PRP
+                      (NP-SBJ (-NONE-:[1958..1958] *))
+                      (VP (TO:[1959..1961] to)
+                        (VP (VB:[1962..1972] inactivate)
+                          (NP (CC:[1973..1979] either)
+                            (NP
+                              (NML-1 (NN:[1980..1985] P-450))
+                              (NN:[1986..1989] 2B1))
+                            (CC:[1990..1992] or)
+                            (NP
+                              (NML-1 (-NONE-:[1992..1992] *P*))
+                              (NN:[1993..1996] 2B6))))))))))))))
+    (.:[1996..1997] .)))
+
+;sentence 17 Span:1998..2042
+;P-450 1A1 was not inactivated by  xanthates.
+;[1998..2007]:cyp450:"P-450 1A1"
+;[2032..2041]:substance:"xanthates"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1998..2003] P-450) (NN:[2004..2007] 1A1))
+    (VP (VBD:[2008..2011] was) (RB:[2012..2015] not)
+      (VP (VBN:[2016..2027] inactivated)
+        (NP-1 (-NONE-:[2027..2027] *))
+        (PP (IN:[2028..2030] by)
+          (NP-LGS (NNS:[2032..2041] xanthates)))))
+    (.:[2041..2042] .)))
+
+;sentence 18 Span:2043..2215
+;However, all of the xanthates tested were able to inhibit the  enzymatic
+;activity of P-450 1A1 to a different extent, depending on the length  of the
+;xanthate carbon chain.
+;[2063..2072]:substance:"xanthates"
+;[2128..2137]:cyp450:"P-450 1A1"
+;[2193..2201]:substance:"xanthate"
+(SENT
+  (S
+    (ADVP (RB:[2043..2050] However))
+    (,:[2050..2051] ,)
+    (NP-SBJ
+      (NP (DT:[2052..2055] all))
+      (PP (IN:[2056..2058] of)
+        (NP
+          (NP (DT:[2059..2062] the) (NNS:[2063..2072] xanthates))
+          (VP (VBN:[2073..2079] tested)
+            (NP (-NONE-:[2079..2079] *))))))
+    (VP (VBD:[2080..2084] were)
+      (ADJP-PRD (JJ:[2085..2089] able)
+        (S
+          (NP-SBJ (-NONE-:[2089..2089] *))
+          (VP (TO:[2090..2092] to)
+            (VP (VB:[2093..2100] inhibit)
+              (NP
+                (NP (DT:[2101..2104] the) (JJ:[2106..2115] enzymatic)
+                    (NN:[2116..2124] activity))
+                (PP (IN:[2125..2127] of)
+                  (NP (NN:[2128..2133] P-450) (NN:[2134..2137] 1A1))))
+              (PP (TO:[2138..2140] to)
+                (NP (DT:[2141..2142] a) (JJ:[2143..2152] different)
+                    (NN:[2153..2159] extent)))
+              (,:[2159..2160] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[2160..2160] *))
+                (VP (VBG:[2161..2170] depending)
+                  (PP-CLR (IN:[2171..2173] on)
+                    (NP
+                      (NP (DT:[2174..2177] the) (NN:[2178..2184] length))
+                      (PP (IN:[2186..2188] of)
+                        (NP (DT:[2189..2192] the) (NN:[2193..2201] xanthate)
+                            (NN:[2202..2208] carbon) (NN:[2209..2214] chain))))))))))))
+    (.:[2214..2215] .)))
+
+;sentence 19 Span:2216..2351
+;Virtually no inactivation of P-450s 2D6 or 2C9 was  seen, except that C8 and
+;D609 were inhibitory at high concentrations (0.2-0.6  mM).
+;[2245..2255]:cyp450:"P-450s 2D6"
+;[2245..2251]...[2259..2262]:cyp450:"P-450s"..."2C9"
+;[2286..2288]:substance:"C8"
+;[2293..2297]:substance:"D609"
+;[2338..2345]:quantitative-value:"0.2-0.6"
+;[2347..2349]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (RB:[2216..2225] Virtually) (DT:[2226..2228] no)
+          (NN:[2229..2241] inactivation))
+      (PP (IN:[2242..2244] of)
+        (NP
+          (NP
+            (NML-2 (NNS:[2245..2251] P-450s))
+            (NN:[2252..2255] 2D6))
+          (CC:[2256..2258] or)
+          (NP
+            (NML-2 (-NONE-:[2258..2258] *P*))
+            (NN:[2259..2262] 2C9)))))
+    (VP (VBD:[2263..2266] was)
+      (VP (VBN:[2268..2272] seen)
+        (NP-1 (-NONE-:[2272..2272] *))
+        (,:[2272..2273] ,)
+        (SBAR (IN:[2274..2280] except)
+          (SBAR (IN:[2281..2285] that)
+            (S
+              (NP-SBJ (NN:[2286..2288] C8) (CC:[2289..2292] and)
+                      (NN:[2293..2297] D609))
+              (VP (VBD:[2298..2302] were)
+                (ADJP-PRD (JJ:[2303..2313] inhibitory))
+                (PP (IN:[2314..2316] at)
+                  (NP
+                    (NP (JJ:[2317..2321] high) (NNS:[2322..2336] concentrations))
+                    (PRN (-LRB-:[2337..2338] -LRB-)
+                      (NP
+                        (QP (CD:[2338..2341] 0.2) (HYPH:[2341..2342] -)
+                            (CD:[2342..2345] 0.6))
+                        (NN:[2347..2349] mM))
+                      (-RRB-:[2349..2350] -RRB-))))))))))
+    (.:[2350..2351] .)))
+
+;sentence 20 Span:2352..2437
+;None of the xanthates studied had any effect on the activities of P-450s  3A2
+;or 3A4.
+;[2364..2373]:substance:"xanthates"
+;[2418..2429]:cyp450:"P-450s  3A2"
+;[2418..2424]...[2433..2436]:cyp450:"P-450s"..."3A4"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[2352..2356] None))
+      (PP (IN:[2357..2359] of)
+        (NP
+          (NP (DT:[2360..2363] the) (NNS:[2364..2373] xanthates))
+          (VP (VBN:[2374..2381] studied)
+            (NP (-NONE-:[2381..2381] *))))))
+    (VP (VBD:[2382..2385] had)
+      (NP
+        (NP (DT:[2386..2389] any) (NN:[2390..2396] effect))
+        (PP (IN:[2397..2399] on)
+          (NP
+            (NP (DT:[2400..2403] the) (NNS:[2404..2414] activities))
+            (PP (IN:[2415..2417] of)
+              (NP
+                (NP
+                  (NML-1 (NNS:[2418..2424] P-450s))
+                  (NN:[2426..2429] 3A2))
+                (CC:[2430..2432] or)
+                (NP
+                  (NML-1 (-NONE-:[2432..2432] *P*))
+                  (NN:[2433..2436] 3A4))))))))
+    (.:[2436..2437] .)))
+
+;section 21 Span:2441..2486
+;PMID: 10220489 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2441..2445] PMID) (::[2445..2446] :) (CD:[2447..2455] 10220489)
+        (NN:[2456..2457] -LSB-) (NNP:[2457..2463] PubMed) (::[2464..2465] -)
+        (NN:[2466..2473] indexed) (IN:[2474..2477] for)
+        (NNP:[2478..2485] MEDLINE) (-RRB-:[2485..2486] -RSB-)))

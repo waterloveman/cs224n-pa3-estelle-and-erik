@@ -1,0 +1,315 @@
+;PMID: 12149262
+;source_file_2854.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..60] = [t:0..60]
+;1)sentence:[e:65..231] = [t:65..231]
+;2)section:[e:235..312] = [t:235..312]
+;3)section:[e:316..409] = [t:316..409]
+;4)sentence:[e:413..533] = [t:413..533]
+;5)sentence:[e:534..637] = [t:534..637]
+;6)sentence:[e:638..740] = [t:638..740]
+;7)sentence:[e:741..819] = [t:741..819]
+;8)sentence:[e:820..929] = [t:820..929]
+;9)sentence:[e:930..1091] = [t:930..1091]
+;10)sentence:[e:1092..1306] = [t:1092..1306]
+;11)section:[e:1310..1355] = [t:1310..1355]
+
+;section 0 Span:0..60
+;J Biol Chem.  2002 Oct 4;277(40):37788-97. Epub 2002 Jul 30.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        ('':[14..18] 2002) (NNP:[19..22] Oct) (CD:[23..28] 4;277)
+        (-LRB-:[28..29] -LRB-) (CD:[29..31] 40) (-RRB-:[31..32] -RRB-)
+        (::[32..33] :) (CD:[33..37] 3778) (CD:[37..38] 8) (HYPH:[38..39] -)
+        (CD:[39..41] 97) (.:[41..42] .) (NNP:[43..47] Epub) (VBD:[48..52] 2002)
+        (NNP:[53..56] Jul) (CD:[57..59] 30) (.:[59..60] .)))
+
+;sentence 1 Span:65..231
+;The adaptor protein Nck-1 couples the netrin-1 receptor DCC (deleted in 
+;colorectal cancer) to the activation of the small GTPase Rac1 through an 
+;atypical mechanism.
+;[85..90]:gene-protein:"Nck-1"
+;[103..120]:gene-protein:"netrin-1 receptor"
+;[121..124]:gene-protein:"DCC"
+;[138..155]:malignancy-type:"colorectal cancer"
+;[188..194]:gene-protein:"GTPase"
+;[195..199]:gene-protein:"Rac1"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (DT:[65..68] The) (NN:[69..76] adaptor) (NN:[77..84] protein))
+      (NP (NN:[85..90] Nck-1)))
+    (VP (VBZ:[91..98] couples)
+      (NP
+        (NP
+          (NP (DT:[99..102] the)
+             (NN:[103..111] netrin-1) (NN:[112..120] receptor))
+          (NP (NN:[121..124] DCC)))
+        (PRN (-LRB-:[125..126] -LRB-)
+          (VP (VBN:[126..133] deleted)
+            (NP (-NONE-:[133..133] *))
+            (PP (IN:[134..136] in)
+              (NP (JJ:[138..148] colorectal) (NN:[149..155] cancer))))
+          (-RRB-:[155..156] -RRB-)))
+      (PP (TO:[157..159] to)
+        (NP
+          (NP (DT:[160..163] the) (NN:[164..174] activation))
+          (PP (IN:[175..177] of)
+            (NP (DT:[178..181] the) (JJ:[182..187] small) (NN:[188..194] GTPase)
+                (NN:[195..199] Rac1)))))
+      (PP-MNR (IN:[200..207] through)
+        (NP (DT:[208..210] an) (JJ:[212..220] atypical)
+            (NN:[221..230] mechanism))))
+    (.:[230..231] .)))
+
+;section 2 Span:235..312
+;Li X, Meriane M, Triki I, Shekarabi M, Kennedy TE, Larose L, Lamarche-Vane
+;N.
+(SEC
+  (FRAG (NNP:[235..237] Li) (NNP:[238..239] X) (,:[239..240] ,)
+        (NNP:[241..248] Meriane) (NNP:[249..251] M,) (NNP:[252..257] Triki)
+        (NNP:[258..259] I) (,:[259..260] ,) (NNP:[261..270] Shekarabi)
+        (NNP:[271..273] M,) (NNP:[274..281] Kennedy) (NNP:[282..284] TE)
+        (,:[284..285] ,) (NNP:[286..292] Larose) (NNP:[293..295] L,)
+        (NNP:[296..305] Lamarche-) (NNP:[305..309] Vane) (NNP:[310..311] N)
+        (.:[311..312] .)))
+
+;section 3 Span:316..409
+;Department of Anatomy and Cell Biology, McGill University, Montreal, Quebec
+;H3A  2B2, Canada.
+(SEC
+  (FRAG (NNP:[316..326] Department) (IN:[327..329] of) (NNP:[330..337] Anatomy)
+        (CC:[338..341] and) (NNP:[342..346] Cell) (NNP:[347..354] Biology)
+        (,:[354..355] ,) (NNP:[356..362] McGill) (NNP:[363..373] University)
+        (,:[373..374] ,) (NNP:[375..383] Montreal) (,:[383..384] ,)
+        (NNP:[385..391] Quebec) (NNP:[392..395] H3A) (NNP:[397..400] 2B2)
+        (,:[400..401] ,) (NNP:[402..408] Canada) (.:[408..409] .)))
+
+;sentence 4 Span:413..533
+;Netrins are a family of secreted proteins that guide the migration of cells
+;and  axonal growth cones during development.
+;[413..420]:gene-protein:"Netrins"
+(SENT
+  (S
+    (NP-SBJ (NNS:[413..420] Netrins))
+    (VP (VBP:[421..424] are)
+      (NP-PRD
+        (NP (DT:[425..426] a) (NN:[427..433] family))
+        (PP (IN:[434..436] of)
+          (NP
+            (NP (VBN:[437..445] secreted) (NNS:[446..454] proteins))
+            (SBAR
+              (WHNP-1 (WDT:[455..459] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[459..459] *T*))
+                (VP (VBP:[460..465] guide)
+                  (NP
+                    (NP (DT:[466..469] the) (NN:[470..479] migration))
+                    (PP (IN:[480..482] of)
+                      (NP
+                        (NP (NNS:[483..488] cells))
+                        (CC:[489..492] and)
+                        (NP (JJ:[494..500] axonal) (NN:[501..507] growth)
+                            (NNS:[508..513] cones))))
+                    (PP-TMP (IN:[514..520] during)
+                      (NP (NN:[521..532] development)))))))))))
+    (.:[532..533] .)))
+
+;sentence 5 Span:534..637
+;DCC (deleted in colorectal cancer) is a  receptor for netrin-1 implicated in
+;mediating these responses.
+;[534..537]:gene-protein:"DCC"
+;[550..567]:malignancy-type:"colorectal cancer"
+;[588..596]:gene-protein:"netrin-1"
+(SENT
+  (S
+    (NP-SBJ (NN:[534..537] DCC)
+      (PRN (-LRB-:[538..539] -LRB-)
+        (VP (VBN:[539..546] deleted)
+          (NP (-NONE-:[546..546] *))
+          (PP (IN:[547..549] in)
+            (NP (JJ:[550..560] colorectal) (NN:[561..567] cancer))))
+        (-RRB-:[567..568] -RRB-)))
+    (VP (VBZ:[569..571] is)
+      (NP-PRD
+        (NP
+          (NP (DT:[572..573] a) (NN:[575..583] receptor))
+          (PP (IN:[584..587] for)
+            (NP (NN:[588..596] netrin-1))))
+        (VP (VBN:[597..607] implicated)
+          (NP (-NONE-:[607..607] *))
+          (PP (IN:[608..610] in)
+            (S-NOM
+              (NP-SBJ (-NONE-:[610..610] *))
+              (VP (VBG:[611..620] mediating)
+                (NP (DT:[621..626] these) (NNS:[627..636] responses))))))))
+    (.:[636..637] .)))
+
+;sentence 6 Span:638..740
+;Here, we show  that DCC interacts constitutively with the SH3/SH2 adaptor Nck
+;in commissural  neurons.
+;[658..661]:gene-protein:"DCC"
+;[712..715]:gene-protein:"Nck"
+(SENT
+  (S
+    (ADVP (RB:[638..642] Here))
+    (,:[642..643] ,)
+    (NP-SBJ (PRP:[644..646] we))
+    (VP (VBP:[647..651] show)
+      (SBAR (IN:[653..657] that)
+        (S
+          (NP-SBJ (NN:[658..661] DCC))
+          (VP (VBZ:[662..671] interacts)
+            (ADVP (RB:[672..686] constitutively))
+            (PP (IN:[687..691] with)
+              (NP
+                (NP (DT:[692..695] the)
+                  (NML (NN:[696..699] SH3) (SYM:[699..700] /)
+                       (NN:[700..703] SH2))
+                  (NN:[704..711] adaptor))
+                (NP (NN:[712..715] Nck))))
+            (PP (IN:[716..718] in)
+              (NP (JJ:[719..730] commissural) (NNS:[732..739] neurons)))))))
+    (.:[739..740] .)))
+
+;sentence 7 Span:741..819
+;This interaction is direct and requires the SH3 but not SH2 domains of 
+;Nck-1.
+;[813..818]:gene-protein:"Nck-1"
+(SENT
+  (S
+    (NP-SBJ (DT:[741..745] This) (NN:[746..757] interaction))
+    (VP
+      (VP (VBZ:[758..760] is)
+        (ADJP-PRD (JJ:[761..767] direct)))
+      (CC:[768..771] and)
+      (VP (VBZ:[772..780] requires)
+        (NP
+          (NP (DT:[781..784] the)
+            (NML
+              (NML (NN:[785..788] SH3)
+                (NML-1 (-NONE-:[788..788] *P*)))
+              (CONJP (CC:[789..792] but) (RB:[793..796] not))
+              (NML-1 (NN:[797..800] SH2)
+                (NML (NNS:[801..808] domains)))))
+          (PP (IN:[809..811] of)
+            (NP (NN:[813..818] Nck-1))))))
+    (.:[818..819] .)))
+
+;sentence 8 Span:820..929
+;Moreover, both DCC and Nck-1 associate with the actin cytoskeleton, and  this
+;association is mediated by DCC.
+;[835..838]:gene-protein:"DCC"
+;[843..848]:gene-protein:"Nck-1"
+;[868..873]:gene-protein:"actin"
+;[925..928]:gene-protein:"DCC"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[820..828] Moreover))
+      (,:[828..829] ,)
+      (NP-SBJ (CC:[830..834] both)
+        (NP (NN:[835..838] DCC))
+        (CC:[839..842] and)
+        (NP (NN:[843..848] Nck-1)))
+      (VP (VBP:[849..858] associate)
+        (PP-CLR (IN:[859..863] with)
+          (NP (DT:[864..867] the) (NN:[868..873] actin)
+              (NN:[874..886] cytoskeleton)))))
+    (,:[886..887] ,) (CC:[888..891] and)
+    (S
+      (NP-SBJ-1 (DT:[893..897] this) (NN:[898..909] association))
+      (VP (VBZ:[910..912] is)
+        (VP (VBN:[913..921] mediated)
+          (NP-1 (-NONE-:[921..921] *))
+          (PP (IN:[922..924] by)
+            (NP-LGS (NN:[925..928] DCC))))))
+    (.:[928..929] .)))
+
+;sentence 9 Span:930..1091
+;A dominant negative Nck-1 inhibits the  ability of DCC to induce neurite
+;outgrowth in N1E-115 cells and to activate Rac1  in fibroblasts in response
+;to netrin-1.
+;[950..955]:gene-protein:"Nck-1"
+;[981..984]:gene-protein:"DCC"
+;[1046..1050]:gene-protein:"Rac1"
+;[1082..1090]:gene-protein:"netrin-1"
+(SENT
+  (S
+    (NP-SBJ (DT:[930..931] A) (JJ:[932..940] dominant) (JJ:[941..949] negative)
+            (NN:[950..955] Nck-1))
+    (VP (VBZ:[956..964] inhibits)
+      (NP
+        (NP (DT:[965..968] the) (NN:[970..977] ability)
+          (S-1 (-NONE-:[977..977] *ICH*)))
+        (PP (IN:[978..980] of)
+          (NP (NN:[981..984] DCC)))
+        (S-1
+          (NP-SBJ (-NONE-:[984..984] *))
+          (VP
+            (VP (TO:[985..987] to)
+              (VP (VB:[988..994] induce)
+                (NP (NN:[995..1002] neurite) (NN:[1003..1012] outgrowth))
+                (PP-LOC (IN:[1013..1015] in)
+                  (NP (NN:[1016..1023] N1E-115) (NNS:[1024..1029] cells)))))
+            (CC:[1030..1033] and)
+            (VP (TO:[1034..1036] to)
+              (VP (VB:[1037..1045] activate)
+                (NP (NN:[1046..1050] Rac1))
+                (PP-LOC (IN:[1052..1054] in)
+                  (NP (NNS:[1055..1066] fibroblasts)))
+                (PP (IN:[1067..1069] in)
+                  (NP
+                    (NP (NN:[1070..1078] response))
+                    (PP (TO:[1079..1081] to)
+                      (NP (NN:[1082..1090] netrin-1)))))))))))
+    (.:[1090..1091] .)))
+
+;sentence 10 Span:1092..1306
+;These studies provide evidence for an  important role of mammalian Nck-1 in a
+;novel signaling pathway from an  extracellular guidance cue to changes in the
+;actin-based cytoskeleton  responsible for axonal guidance.
+;[1159..1164]:gene-protein:"Nck-1"
+;[1248..1253]:gene-protein:"actin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1092..1097] These) (NNS:[1098..1105] studies))
+    (VP (VBP:[1106..1113] provide)
+      (NP
+        (NP (NN:[1114..1122] evidence))
+        (PP (IN:[1123..1126] for)
+          (NP
+            (NP (DT:[1127..1129] an) (JJ:[1131..1140] important)
+                (NN:[1141..1145] role))
+            (PP (IN:[1146..1148] of)
+              (NP (JJ:[1149..1158] mammalian) (NN:[1159..1164] Nck-1)))
+            (PP (IN:[1165..1167] in)
+              (NP (DT:[1168..1169] a) (JJ:[1170..1175] novel)
+                  (NN:[1176..1185] signaling) (NN:[1186..1193] pathway)))))
+        (PP (IN:[1194..1198] from)
+          (NP
+            (NP (DT:[1199..1201] an) (JJ:[1203..1216] extracellular)
+                (NN:[1217..1225] guidance) (NN:[1226..1229] cue))
+            (PP (TO:[1230..1232] to)
+              (NP
+                (NP (NNS:[1233..1240] changes))
+                (PP (IN:[1241..1243] in)
+                  (NP
+                    (NP (DT:[1244..1247] the)
+                      (ADJP (NN:[1248..1253] actin) (HYPH:[1253..1254] -)
+                            (VBN:[1254..1259] based))
+                      (NN:[1260..1272] cytoskeleton))
+                    (ADJP (JJ:[1274..1285] responsible)
+                      (PP (IN:[1286..1289] for)
+                        (NP (JJ:[1290..1296] axonal) (NN:[1297..1305] guidance))))))))))))
+    (.:[1305..1306] .)))
+
+;section 11 Span:1310..1355
+;PMID: 12149262 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1310..1314] PMID) (::[1314..1315] :) (CD:[1316..1324] 12149262)
+        (NN:[1325..1326] -LSB-) (NNP:[1326..1332] PubMed) (::[1333..1334] -)
+        (NN:[1335..1342] indexed) (IN:[1343..1346] for)
+        (NNP:[1347..1355] MEDLINE-RSB-)))

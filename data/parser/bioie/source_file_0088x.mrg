@@ -1,0 +1,331 @@
+;PMID: 12126878
+;source_file_2981.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..111] = [t:43..111]
+;2)section:[e:115..198] = [t:115..198]
+;3)section:[e:202..301] = [t:202..301]
+;4)sentence:[e:305..434] = [t:305..434]
+;5)sentence:[e:435..647] = [t:435..647]
+;6)sentence:[e:648..906] = [t:648..906]
+;7)sentence:[e:907..1100] = [t:907..1100]
+;8)sentence:[e:1101..1344] = [t:1101..1344]
+;9)sentence:[e:1345..1497] = [t:1345..1497]
+;10)section:[e:1501..1546] = [t:1501..1546]
+
+;section 0 Span:0..37
+;Brain Res.  2002 Aug 2;945(2):160-73.
+(SEC
+  (FRAG (NNP:[0..5] Brain) (NNP:[6..9] Res) (.:[9..10] .) ('':[12..16] 2002)
+        (NNP:[17..20] Aug) (CD:[21..27] 2;945-LRB-) (CD:[27..28] 2)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :160) (::[33..34] -)
+        (CD:[34..36] 73) (.:[36..37] .)))
+
+;sentence 1 Span:43..111
+;Survival motor neuron protein in the nucleolus of mammalian neurons.
+;[43..64]:gene-protein:"Survival motor neuron"
+(SENT
+  (NP-HLN
+    (NP
+       (NN:[43..51] Survival)
+      (NML (JJ:[52..57] motor) (NN:[58..64] neuron))
+      (NN:[65..72] protein))
+    (PP-LOC (IN:[73..75] in)
+      (NP
+        (NP (DT:[76..79] the) (NN:[80..89] nucleolus))
+        (PP (IN:[90..92] of)
+          (NP (JJ:[93..102] mammalian) (NNS:[103..110] neurons)))))
+    (.:[110..111] .)))
+
+;section 2 Span:115..198
+;Wehner KA, Ayala L, Kim Y, Young PJ, Hosler BA, Lorson CL, Baserga SJ,
+;Francis  JW.
+(SEC
+  (FRAG (NNP:[115..121] Wehner) (NNP:[122..124] KA) (,:[124..125] ,)
+        (NNP:[126..131] Ayala) (NNP:[132..134] L,) (NNP:[135..138] Kim)
+        (NNP:[139..140] Y) (,:[140..141] ,) (NNP:[142..147] Young)
+        (NNP:[148..150] PJ) (,:[150..151] ,) (NNP:[152..158] Hosler)
+        (NNP:[159..161] BA) (,:[161..162] ,) (NNP:[163..169] Lorson)
+        (NNP:[170..172] CL) (,:[172..173] ,) (NNP:[174..181] Baserga)
+        (NNP:[182..184] SJ) (,:[184..185] ,) (NNP:[186..193] Francis)
+        (NNP:[195..197] JW) (.:[197..198] .)))
+
+;section 3 Span:202..301
+;Department of Therapeutic Radiology, Yale University School of Medicine, New 
+;Haven, CT 06520, USA.
+(SEC
+  (FRAG (NNP:[202..212] Department) (IN:[213..215] of)
+        (NNP:[216..227] Therapeutic) (NNP:[228..237] Radiology) (,:[237..238] ,)
+        (NNP:[239..243] Yale) (NNP:[244..254] University)
+        (NNP:[255..261] School) (IN:[262..264] of) (NNP:[265..273] Medicine)
+        (,:[273..274] ,) (NNP:[275..278] New) (NNP:[280..285] Haven)
+        (,:[285..286] ,) (NNP:[287..289] CT) (CD:[290..295] 06520)
+        (,:[295..296] ,) (NNP:[297..300] USA) (.:[300..301] .)))
+
+;sentence 4 Span:305..434
+;Spinal muscular atrophy (SMA) is an inherited motor neuron disease caused by 
+;mutations in the survival motor neuron gene (SMN1).
+;[400..421]:gene-rna:"survival motor neuron"
+;[428..432]:gene-rna:"SMN1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[305..311] Spinal) (JJ:[312..320] muscular)
+          (NN:[321..328] atrophy))
+      (NP (-LRB-:[329..330] -LRB-) (NN:[330..333] SMA) (-RRB-:[333..334] -RRB-)))
+    (VP (VBZ:[335..337] is)
+      (NP-PRD
+        (NP (DT:[338..340] an) (VBN:[341..350] inherited)
+          (NML (JJ:[351..356] motor) (NN:[357..363] neuron))
+          (NN:[364..371] disease))
+        (VP (VBN:[372..378] caused)
+          (NP (-NONE-:[378..378] *))
+          (PP (IN:[379..381] by)
+            (NP-LGS
+              (NP (NNS:[383..392] mutations))
+              (PP-LOC (IN:[393..395] in)
+                (NP
+                  (NP (DT:[396..399] the)
+                     (NN:[400..408] survival)
+                    (NML (JJ:[409..414] motor) (NN:[415..421] neuron))
+                    (NN:[422..426] gene))
+                  (NP (-LRB-:[427..428] -LRB-) (NN:[428..432] SMN1)
+                      (-RRB-:[432..433] -RRB-)))))))))
+    (.:[433..434] .)))
+
+;sentence 5 Span:435..647
+;While it has been shown that  the SMN protein is involved in spliceosome
+;biogenesis and pre-mRNA splicing,  there is increasing evidence indicating
+;that SMN may also perform important  functions in the nucleolus.
+;[469..472]:gene-protein:"SMN"
+;[588..591]:gene-protein:"SMN"
+(SENT
+  (S
+    (SBAR-ADV (IN:[435..440] While)
+      (S
+        (NP-SBJ-2
+          (NP (PRP:[441..443] it))
+          (SBAR-3 (-NONE-:[443..443] *ICH*)))
+        (VP (VBZ:[444..447] has)
+          (VP (VBN:[448..452] been)
+            (VP (VBN:[453..458] shown)
+              (NP-2 (-NONE-:[458..458] *))
+              (SBAR-3 (IN:[459..463] that)
+                (S
+                  (NP-SBJ-1 (DT:[465..468] the) (NN:[469..472] SMN)
+                            (NN:[473..480] protein))
+                  (VP (VBZ:[481..483] is)
+                    (VP (VBN:[484..492] involved)
+                      (NP-1 (-NONE-:[492..492] *))
+                      (PP-CLR (IN:[493..495] in)
+                        (NP
+                          (NP (NN:[496..507] spliceosome)
+                              (NN:[508..518] biogenesis))
+                          (CC:[519..522] and)
+                          (NP
+                            (NML (AFX:[523..526] pre) (HYPH:[526..527] -)
+                                 (NN:[527..531] mRNA))
+                            (NN:[532..540] splicing)))))))))))))
+    (,:[540..541] ,)
+    (NP-SBJ (EX:[543..548] there))
+    (VP (VBZ:[549..551] is)
+      (NP-PRD
+        (NP (VBG:[552..562] increasing) (NN:[563..571] evidence))
+        (VP (VBG:[572..582] indicating)
+          (SBAR (IN:[583..587] that)
+            (S
+              (NP-SBJ (NN:[588..591] SMN))
+              (VP (MD:[592..595] may)
+                (ADVP (RB:[596..600] also))
+                (VP (VB:[601..608] perform)
+                  (NP (JJ:[609..618] important) (NNS:[620..629] functions))
+                  (PP (IN:[630..632] in)
+                    (NP (DT:[633..636] the) (NN:[637..646] nucleolus))))))))))
+    (.:[646..647] .)))
+
+;sentence 6 Span:648..906
+;We demonstrate here through the use of a previously  characterized polyclonal
+;anti-SMN antibody, abSMN, that the SMN protein shows a  striking
+;colocalization with the nucleolar protein, fibrillarin, in both  nucleoli and
+;Cajal bodies/gems of primary neurons.
+;[726..743]:gene-protein:"anti-SMN antibody"
+;[745..750]:gene-protein:"abSMN"
+;[761..764]:gene-protein:"SMN"
+;[834..845]:gene-protein:"fibrillarin"
+(SENT
+  (S
+    (NP-SBJ (PRP:[648..650] We))
+    (VP (VBP:[651..662] demonstrate)
+      (ADVP (RB:[663..667] here))
+      (PP (IN:[668..675] through)
+        (NP
+          (NP (DT:[676..679] the) (NN:[680..683] use))
+          (PP (IN:[684..686] of)
+            (NP
+              (NP (DT:[687..688] a)
+                (ADJP (RB:[689..699] previously) (VBN:[701..714] characterized))
+                (JJ:[715..725] polyclonal)
+                
+                (NML (AFX:[726..730] anti) (HYPH:[730..731] -)
+                     (NN:[731..734] SMN))
+                (NN:[735..743] antibody))
+              (,:[743..744] ,)
+              (NP (NN:[745..750] abSMN))))))
+      (,:[750..751] ,)
+      (SBAR (IN:[752..756] that)
+        (S
+          (NP-SBJ (DT:[757..760] the) (NN:[761..764] SMN)
+                  (NN:[765..772] protein))
+          (VP (VBZ:[773..778] shows)
+            (NP
+              (NP (DT:[779..780] a) (JJ:[782..790] striking)
+                  (NN:[791..805] colocalization))
+              (PP (IN:[806..810] with)
+                (NP
+                  (NP (DT:[811..814] the) (JJ:[815..824] nucleolar)
+                      (NN:[825..832] protein))
+                  (,:[832..833] ,)
+                  (NP (NN:[834..845] fibrillarin)))))
+            (,:[845..846] ,)
+            (PP-LOC (IN:[847..849] in)
+              (NP
+                (NP (CC:[850..854] both)
+                  (NP (NNS:[856..864] nucleoli))
+                  (CC:[865..868] and)
+                  (NP
+                    (NML (NNP:[869..874] Cajal) (NNS:[875..881] bodies))
+                    (SYM:[881..882] /) (NNS:[882..886] gems)))
+                (PP (IN:[887..889] of)
+                  (NP (JJ:[890..897] primary) (NNS:[898..905] neurons)))))))))
+    (.:[905..906] .)))
+
+;sentence 7 Span:907..1100
+;Immunoblot analysis with  antifibrillarin and two different anti-SMN
+;antibodies reveals that SMN and  fibrillarin also cofractionate in the
+;insoluble protein fraction of cultured  cell lysates.
+;[933..948]:gene-protein:"antifibrillarin"
+;[967..986]:gene-protein:"anti-SMN antibodies"
+;[1000..1003]:gene-protein:"SMN"
+;[1009..1020]:gene-protein:"fibrillarin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[907..917] Immunoblot) (NN:[918..926] analysis))
+      (PP (IN:[927..931] with)
+        (NP
+          (NP (NN:[933..948] antifibrillarin))
+          (CC:[949..952] and)
+          (NP (CD:[953..956] two) (JJ:[957..966] different)
+            
+            (NML (AFX:[967..971] anti) (HYPH:[971..972] -) (NN:[972..975] SMN))
+            (NNS:[976..986] antibodies)))))
+    (VP (VBZ:[987..994] reveals)
+      (SBAR (IN:[995..999] that)
+        (S
+          (NP-SBJ (NN:[1000..1003] SMN) (CC:[1004..1007] and)
+                  (NN:[1009..1020] fibrillarin))
+          (ADVP (RB:[1021..1025] also))
+          (VP (VBP:[1026..1039] cofractionate)
+            (PP-LOC (IN:[1040..1042] in)
+              (NP
+                (NP (DT:[1043..1046] the) (JJ:[1047..1056] insoluble)
+                    (NN:[1057..1064] protein) (NN:[1065..1073] fraction))
+                (PP (IN:[1074..1076] of)
+                  (NP (VBN:[1077..1085] cultured) (NN:[1087..1091] cell)
+                      (NNS:[1092..1099] lysates)))))))))
+    (.:[1099..1100] .)))
+
+;sentence 8 Span:1101..1344
+;Immunoprecipitation experiments using whole cell extracts of HeLa  cells and
+;cultured neurons revealed that abSMN coprecipitated small amounts of  the U3
+;small nucleolar RNA (snoRNA) previously shown to be associated with 
+;fibrillarin in vivo.
+;[1209..1214]:gene-protein:"abSMN"
+;[1252..1274]:gene-rna:"U3 small nucleolar RNA"
+;[1276..1282]:gene-rna:"snoRNA"
+;[1324..1335]:gene-protein:"fibrillarin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1101..1120] Immunoprecipitation) (NNS:[1121..1132] experiments))
+      (VP (VBG:[1133..1138] using)
+        (NP
+          (NP
+            (NML (JJ:[1139..1144] whole) (NN:[1145..1149] cell))
+            (NNS:[1150..1158] extracts))
+          (PP (IN:[1159..1161] of)
+            (NP
+              (NP (NN:[1162..1166] HeLa) (NNS:[1168..1173] cells))
+              (CC:[1174..1177] and)
+              (NP (VBN:[1178..1186] cultured) (NNS:[1187..1194] neurons)))))))
+    (VP (VBD:[1195..1203] revealed)
+      (SBAR (IN:[1204..1208] that)
+        (S
+          (NP-SBJ (NN:[1209..1214] abSMN))
+          (VP (VBD:[1215..1229] coprecipitated)
+            (NP
+              (NP (JJ:[1230..1235] small) (NNS:[1236..1243] amounts))
+              (PP (IN:[1244..1246] of)
+                (NP
+                  (NP (DT:[1248..1251] the) (NN:[1252..1254] U3)
+                    (NML
+                      (NML (JJ:[1255..1260] small) (JJ:[1261..1270] nucleolar)
+                           (NN:[1271..1274] RNA))
+                      (NML (-LRB-:[1275..1276] -LRB-) (NN:[1276..1282] snoRNA)
+                           (-RRB-:[1282..1283] -RRB-))))
+                  (VP
+                    (ADVP-TMP (RB:[1284..1294] previously))
+                    (VBN:[1295..1300] shown)
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1300..1300] *))
+                      (VP (TO:[1301..1303] to)
+                        (VP (VB:[1304..1306] be)
+                          (VP (VBN:[1307..1317] associated)
+                            (NP-1 (-NONE-:[1317..1317] *))
+                            (PP-CLR (IN:[1318..1322] with)
+                              (NP (NN:[1324..1335] fibrillarin)))
+                            (ADVP (FW:[1336..1338] in) (FW:[1339..1343] vivo))))))))))))))
+    (.:[1343..1344] .)))
+
+;sentence 9 Span:1345..1497
+;These studies raise the possibility that SMN may serve a  function in rRNA
+;maturation/ribosome synthesis similar to its role in  spliceosome
+;biogenesis.
+;[1386..1389]:gene-protein:"SMN"
+(SENT
+  (S
+    (NP-SBJ (DT:[1345..1350] These) (NNS:[1351..1358] studies))
+    (VP (VBP:[1359..1364] raise)
+      (NP (DT:[1365..1368] the) (NN:[1369..1380] possibility)
+        (SBAR (IN:[1381..1385] that)
+          (S
+            (NP-SBJ (NN:[1386..1389] SMN))
+            (VP (MD:[1390..1393] may)
+              (VP (VB:[1394..1399] serve)
+                (NP
+                  (NP
+                    (NP (DT:[1400..1401] a) (NN:[1403..1411] function))
+                    (PP (IN:[1412..1414] in)
+                      (NP
+                        (NP (NN:[1415..1419] rRNA) (NN:[1420..1430] maturation))
+                        (SYM:[1430..1431] /)
+                        (NP (NN:[1431..1439] ribosome)
+                            (NN:[1440..1449] synthesis)))))
+                  (ADJP (JJ:[1450..1457] similar)
+                    (PP (TO:[1458..1460] to)
+                      (NP
+                        (NP (PRP$:[1461..1464] its) (NN:[1465..1469] role))
+                        (PP (IN:[1470..1472] in)
+                          (NP (NN:[1474..1485] spliceosome)
+                              (NN:[1486..1496] biogenesis)))))))))))))
+    (.:[1496..1497] .)))
+
+;section 10 Span:1501..1546
+;PMID: 12126878 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1501..1505] PMID) (::[1505..1506] :) (CD:[1507..1515] 12126878)
+        (NN:[1516..1517] -LSB-) (NNP:[1517..1523] PubMed) (::[1524..1525] -)
+        (NN:[1526..1533] indexed) (IN:[1534..1537] for)
+        (NNP:[1538..1546] MEDLINE-RSB-)))

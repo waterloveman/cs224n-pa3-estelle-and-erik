@@ -1,0 +1,263 @@
+;PMID: 7568333
+;source_file_962.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..148] = [t:42..148]
+;2)section:[e:152..190] = [t:152..190]
+;3)section:[e:194..266] = [t:194..266]
+;4)sentence:[e:270..401] = [t:270..401]
+;5)sentence:[e:402..517] = [t:402..517]
+;6)sentence:[e:518..727] = [t:518..727]
+;7)sentence:[e:729..809] = [t:729..809]
+;8)sentence:[e:811..872] = [t:811..872]
+;9)sentence:[e:873..1064] = [t:873..1064]
+;10)section:[e:1068..1112] = [t:1068..1112]
+
+;section 0 Span:0..36
+;Pharmacology. 1995 Jun;50(6):348-56.
+(SEC
+  (FRAG (NN:[0..12] Pharmacology) (.:[12..13] .) (CD:[14..18] 1995)
+        (.:[19..26] Jun;50-LRB-) (CD:[26..28] 6-RRB-) (CD:[28..32] :348)
+        (::[32..33] -) (CD:[33..35] 56) (.:[35..36] .)))
+
+;sentence 1 Span:42..148
+;Cytochrome P450 inhibitors attenuate the hypotonic shock-induced increases in
+;K+  efflux in LLC-PK1 cells.
+;[42..57]:cyp450:"Cytochrome P450"
+;[58..68]:substance:"inhibitors"
+;[120..122]:substance:"K+"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML (NN:[42..52] Cytochrome) (NN:[53..57] P450))
+      (NNS:[58..68] inhibitors))
+    (VP (VBP:[69..78] attenuate)
+      (NP
+        (NP (DT:[79..82] the)
+          (ADJP
+            (NML (JJ:[83..92] hypotonic) (NN:[93..98] shock))
+            (HYPH:[98..99] -) (VBN:[99..106] induced))
+          (NNS:[107..116] increases))
+        (PP (IN:[117..119] in)
+          (NP
+            (NML (NN:[120..121] K) (SYM:[121..122] +))
+            (NN:[124..130] efflux))))
+      (PP-LOC (IN:[131..133] in)
+        (NP (NN:[134..141] LLC-PK1) (NNS:[142..147] cells))))
+    (.:[147..148] .)))
+
+;section 2 Span:152..190
+;DelliPizzi AM, McGiff JC, Escalante B.
+(SEC
+  (FRAG (VBG:[152..162] DelliPizzi) (VBP:[163..165] AM) (JJ:[165..166] ,)
+        (NNP:[167..173] McGiff) (NNP:[174..176] JC) (,:[176..177] ,)
+        (NNP:[178..187] Escalante) (NNP:[188..190] B.)))
+
+;section 3 Span:194..266
+;Department of Pharmacology, New York Medical College, Valhalla, NY, USA.
+(SEC
+  (FRAG (NNP:[194..204] Department) (IN:[205..207] of)
+        (NNP:[208..220] Pharmacology) (,:[220..221] ,) (NNP:[222..225] New)
+        (NNP:[226..230] York) (NNP:[231..238] Medical) (NNP:[239..246] College)
+        (,:[246..247] ,) (NNP:[248..256] Valhalla) (,:[256..257] ,)
+        (NNP:[258..260] NY) (,:[260..261] ,) (NNP:[262..265] USA)
+        (.:[265..266] .)))
+
+;sentence 4 Span:270..401
+;Cell volume regulation in LLC-PK1 cells was evaluated by measuring 86Rb
+;efflux  (rate constant), used as an indicator of K+ efflux.
+;[337..341]:substance:"86Rb"
+;[391..393]:substance:"K+"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[270..274] Cell) (NN:[275..281] volume) (NN:[282..292] regulation))
+      (PP-LOC (IN:[293..295] in)
+        (NP (NN:[296..303] LLC-PK1) (NNS:[304..309] cells))))
+    (VP (VBD:[310..313] was)
+      (VP (VBN:[314..323] evaluated)
+        (NP-1 (-NONE-:[323..323] *))
+        (PP-MNR (IN:[324..326] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[326..326] *))
+            (VP (VBG:[327..336] measuring)
+              (NP
+                (NP (NN:[337..341] 86Rb) (NN:[342..348] efflux)
+                  (PRN (-LRB-:[350..351] -LRB-)
+                    (NP (NN:[351..355] rate) (NN:[356..364] constant))
+                    (-RRB-:[364..365] -RRB-)))
+                (,:[365..366] ,)
+                (VP (VBN:[367..371] used)
+                  (NP (-NONE-:[371..371] *))
+                  (PP (IN:[372..374] as)
+                    (NP
+                      (NP (DT:[375..377] an) (NN:[378..387] indicator))
+                      (PP (IN:[388..390] of)
+                        (NP
+                          (NML (NN:[391..392] K) (SYM:[392..393] +))
+                          (NN:[394..400] efflux))))))))))))
+    (.:[400..401] .)))
+
+;sentence 5 Span:402..517
+;Hypotonic shock induced a  transient increase in the rate constant which
+;returned to baseline values after  15 min.
+;[510..512]:quantitative-value:"15"
+;[513..516]:quantitative-units:"min"
+(SENT
+  (S
+    (NP-SBJ (JJ:[402..411] Hypotonic) (NN:[412..417] shock))
+    (VP (VBD:[418..425] induced)
+      (NP
+        (NP (DT:[426..427] a) (JJ:[429..438] transient) (NN:[439..447] increase))
+        (PP (IN:[448..450] in)
+          (NP
+            (NP (DT:[451..454] the) (NN:[455..459] rate)
+                (NN:[460..468] constant))
+            (SBAR
+              (WHNP-1 (WDT:[469..474] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[474..474] *T*))
+                (VP (VBD:[475..483] returned)
+                  (PP-CLR (TO:[484..486] to)
+                    (NP (NN:[487..495] baseline) (NNS:[496..502] values)))
+                  (PP-TMP (IN:[503..508] after)
+                    (NP (CD:[510..512] 15) (NN:[513..516] min))))))))))
+    (.:[516..517] .)))
+
+;sentence 6 Span:518..727
+;ETYA, an arachidonic acid-competitive antagonist as well as the  cytochrome
+;P450 inhibitors SKF 525-A, clotrimazole and 7-ethoxyresorufin,  inhibited the
+;hypotonic shock-induced increment in the rate constant.
+;[518..522]:substance:"ETYA"
+;[527..543]:substance:"arachidonic acid"
+;[556..566]:substance:"antagonist"
+;[583..598]:cyp450:"cytochrome P450"
+;[599..609]:substance:"inhibitors"
+;[610..619]:substance:"SKF 525-A"
+;[621..633]:substance:"clotrimazole"
+;[638..655]:substance:"7-ethoxyresorufin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[518..522] ETYA))
+        (,:[522..523] ,)
+        (NP (DT:[524..526] an)
+          (ADJP
+            (NML (JJ:[527..538] arachidonic) (NN:[539..543] acid))
+            (HYPH:[543..544] -) (JJ:[544..555] competitive))
+          (NN:[556..566] antagonist)))
+      (CONJP (RB:[567..569] as) (RB:[570..574] well) (IN:[575..577] as))
+      (NP
+        (NP (DT:[578..581] the)
+          (NML (NN:[583..593] cytochrome) (NN:[594..598] P450))
+          (NNS:[599..609] inhibitors))
+        (NP
+          (NP (NN:[610..613] SKF) (NN:[614..619] 525-A))
+          (,:[619..620] ,)
+          (NP (NN:[621..633] clotrimazole))
+          (CC:[634..637] and)
+          (NP (NN:[638..655] 7-ethoxyresorufin)))))
+    (,:[655..656] ,)
+    (VP (VBD:[658..667] inhibited)
+      (NP (DT:[668..671] the)
+        (ADJP
+          (NML (JJ:[672..681] hypotonic) (NN:[682..687] shock))
+          (HYPH:[687..688] -) (VBN:[688..695] induced))
+        (NN:[696..705] increment))
+      (PP (IN:[706..708] in)
+        (NP (DT:[709..712] the) (NN:[713..717] rate) (NN:[718..726] constant))))
+    (.:[726..727] .)))
+
+;sentence 7 Span:729..809
+;Arachidonic acid did not change hypotonic shock-induced increments in K+
+;efflux.
+;[729..745]:substance:"Arachidonic acid"
+;[799..801]:substance:"K+"
+(SENT
+  (S
+    (NP-SBJ (JJ:[729..740] Arachidonic) (NN:[741..745] acid))
+    (VP (VBD:[746..749] did) (RB:[750..753] not)
+      (VP (VB:[754..760] change)
+        (NP
+          (NP
+            (ADJP
+              (NML (JJ:[761..770] hypotonic) (NN:[771..776] shock))
+              (HYPH:[776..777] -) (VBN:[777..784] induced))
+            (NNS:[785..795] increments))
+          (PP (IN:[796..798] in)
+            (NP
+              (NML (NN:[799..800] K) (SYM:[800..801] +))
+              (NN:[802..808] efflux))))))
+    (.:[808..809] .)))
+
+;sentence 8 Span:811..872
+;LLC-PK1 cells were unable to metabolize 14C-arachidonic acid.
+;[851..871]:substance:"14C-arachidonic acid"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[811..818] LLC-PK1) (NNS:[819..824] cells))
+    (VP (VBD:[825..829] were)
+      (ADJP-PRD (JJ:[830..836] unable)
+        (S
+          (NP-SBJ-1 (-NONE-:[836..836] *))
+          (VP (TO:[837..839] to)
+            (VP (VB:[840..850] metabolize)
+              (NP (JJ:[851..866] 14C-arachidonic) (NN:[867..871] acid)))))))
+    (.:[871..872] .)))
+
+;sentence 9 Span:873..1064
+;We concluded that  although arachidonic acid inhibitors block the hypotonic
+;shock-induced increment  in K+ efflux, this effect cannot be related to
+;inhibition of arachidonic acid  metabolism.
+;[901..917]:substance:"arachidonic acid"
+;[918..928]:substance:"inhibitors"
+;[977..979]:substance:"K+"
+;[1035..1051]:substance:"arachidonic acid"
+(SENT
+  (S
+    (NP-SBJ (PRP:[873..875] We))
+    (VP (VBD:[876..885] concluded)
+      (SBAR (IN:[886..890] that)
+        (S
+          (SBAR-ADV (IN:[892..900] although)
+            (S
+              (NP-SBJ
+                (NML (JJ:[901..912] arachidonic) (NN:[913..917] acid))
+                (NNS:[918..928] inhibitors))
+              (VP (VBP:[929..934] block)
+                (NP
+                  (NP (DT:[935..938] the)
+                    (ADJP
+                      (NML (JJ:[939..948] hypotonic) (NN:[949..954] shock))
+                      (HYPH:[954..955] -) (VBN:[955..962] induced))
+                    (NN:[963..972] increment))
+                  (PP (IN:[974..976] in)
+                    (NP
+                      (NML (NN:[977..978] K) (SYM:[978..979] +))
+                      (NN:[980..986] efflux)))))))
+          (,:[986..987] ,)
+          (NP-SBJ-1 (DT:[988..992] this) (NN:[993..999] effect))
+          (VP (MD:[1000..1006] cannot)
+            (VP (VB:[1007..1009] be)
+              (VP (VBN:[1010..1017] related)
+                (NP-1 (-NONE-:[1017..1017] *))
+                (PP-CLR (TO:[1018..1020] to)
+                  (NP
+                    (NP (NN:[1021..1031] inhibition))
+                    (PP (IN:[1032..1034] of)
+                      (NP
+                        (NML (JJ:[1035..1046] arachidonic)
+                             (NN:[1047..1051] acid))
+                        (NN:[1053..1063] metabolism)))))))))))
+    (.:[1063..1064] .)))
+
+;section 10 Span:1068..1112
+;PMID: 7568333 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1068..1072] PMID) (::[1072..1073] :) (CD:[1074..1081] 7568333)
+        (NN:[1082..1083] -LSB-) (NNP:[1083..1089] PubMed) (::[1090..1091] -)
+        (NN:[1092..1099] indexed) (IN:[1100..1103] for)
+        (NNP:[1104..1112] MEDLINE-RSB-)))

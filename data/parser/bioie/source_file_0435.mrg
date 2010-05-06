@@ -1,0 +1,291 @@
+;PMID: 2983957
+;source_file_1928.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:40..117] = [t:40..117]
+;2)section:[e:121..174] = [t:121..174]
+;3)sentence:[e:178..285] = [t:178..285]
+;4)sentence:[e:286..462] = [t:286..462]
+;5)sentence:[e:463..588] = [t:463..588]
+;6)sentence:[e:589..733] = [t:589..733]
+;7)sentence:[e:734..857] = [t:734..857]
+;8)sentence:[e:858..966] = [t:858..966]
+;9)sentence:[e:967..1199] = [t:967..1199]
+;10)section:[e:1203..1247] = [t:1203..1247]
+
+;section 0 Span:0..34
+;Dig Dis Sci. 1985 Apr;30(4):334-9.
+(SEC
+  (FRAG (NNP:[0..3] Dig) (NNP:[4..7] Dis) (NNP:[8..11] Sci) (.:[11..12] .)
+        (CD:[13..17] 1985) (.:[18..24] Apr;30) (-LRB-:[24..25] -LRB-)
+        (NN:[25..26] 4) (-RRB-:[26..27] -RRB-) (::[27..28] :) (CD:[28..31] 334)
+        (::[31..32] -) (CD:[32..34] 9.)))
+
+;sentence 1 Span:40..117
+;Inhibition of cytochrome P-450-dependent mixed function oxidation by
+;ethanol.
+;[54..70]:cyp450:"cytochrome P-450"
+;[109..116]:substance:"ethanol"
+(SENT
+  (NP-HLN
+    (NP (NN:[40..50] Inhibition))
+    (PP (IN:[51..53] of)
+      (NP
+        (ADJP
+          (NML (NN:[54..64] cytochrome) (NN:[65..70] P-450))
+          (HYPH:[70..71] -) (JJ:[71..80] dependent))
+        (NML (VBN:[81..86] mixed) (NN:[87..95] function))
+        (NN:[96..105] oxidation)))
+    (PP (IN:[106..108] by)
+      (NP (NN:[109..116] ethanol)))
+    (.:[116..117] .)))
+
+;section 2 Span:121..174
+;Hayashi N, Kamada T, Sato N, Kasahara A, Peterson JA.
+(SEC
+  (FRAG (NNP:[121..128] Hayashi) (NNP:[129..130] N) (,:[130..131] ,)
+        (NNP:[132..138] Kamada) (NNP:[139..140] T) (,:[140..141] ,)
+        (NNP:[142..146] Sato) (NNP:[147..148] N) (,:[148..149] ,)
+        (NNP:[150..158] Kasahara) (NNP:[159..160] A) (,:[160..161] ,)
+        (NNP:[162..170] Peterson) (NNP:[171..173] JA) (.:[173..174] .)))
+
+;sentence 3 Span:178..285
+;The mechanism of inhibition of cytochrome P-450-dependent mixed function 
+;oxidation by ethanol was studied.
+;[209..225]:cyp450:"cytochrome P-450"
+;[265..272]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[178..181] The) (NN:[182..191] mechanism))
+      (PP (IN:[192..194] of)
+        (NP
+          (NP (NN:[195..205] inhibition))
+          (PP (IN:[206..208] of)
+            (NP
+              (ADJP
+                (NML (NN:[209..219] cytochrome) (NN:[220..225] P-450))
+                (HYPH:[225..226] -) (JJ:[226..235] dependent))
+              (NML (VBN:[236..241] mixed) (NN:[242..250] function))
+              (NN:[252..261] oxidation)))
+          (PP (IN:[262..264] by)
+            (NP (NN:[265..272] ethanol))))))
+    (VP (VBD:[273..276] was)
+      (NP (VBN:[277..284] studied)
+        (NP-1 (-NONE-:[284..284] *))))
+    (.:[284..285] .)))
+
+;sentence 4 Span:286..462
+;Ethanol competitively inhibited the binding of  hexobarbital to liver
+;microsomes, and increased the low spin signal of  cytochrome P-450 in the
+;electron spin resonance spectra.
+;[286..293]:substance:"Ethanol"
+;[334..346]:substance:"hexobarbital"
+;[406..422]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ (NN:[286..293] Ethanol))
+    (VP
+      (VP
+        (ADVP (RB:[294..307] competitively))
+        (VBD:[308..317] inhibited)
+        (NP
+          (NP (DT:[318..321] the) (NN:[322..329] binding))
+          (PP (IN:[330..332] of)
+            (NP (NN:[334..346] hexobarbital)))
+          (PP (TO:[347..349] to)
+            (NP (NN:[350..355] liver) (NNS:[356..366] microsomes)))))
+      (,:[366..367] ,) (CC:[368..371] and)
+      (VP (VBD:[372..381] increased)
+        (NP
+          (NP (DT:[382..385] the)
+            (NML (JJ:[386..389] low) (NN:[390..394] spin))
+            (NN:[395..401] signal))
+          (PP (IN:[402..404] of)
+            (NP (NN:[406..416] cytochrome) (NN:[417..422] P-450))))
+        (PP-LOC (IN:[423..425] in)
+          (NP (DT:[426..429] the)
+            (NML (NN:[430..438] electron) (NN:[439..443] spin))
+            (NN:[444..453] resonance) (NNS:[454..461] spectra)))))
+    (.:[461..462] .)))
+
+;sentence 5 Span:463..588
+;Therefore, ethanol  decreased the substrates bound to ferric cytochrome P-450
+;in the first step of  mixed function oxidation.
+;[474..481]:substance:"ethanol"
+;[497..507]:substance:"substrates"
+;[517..540]:cyp450:"ferric cytochrome P-450"
+(SENT
+  (S
+    (ADVP (RB:[463..472] Therefore))
+    (,:[472..473] ,)
+    (NP-SBJ (NN:[474..481] ethanol))
+    (VP (VBD:[483..492] decreased)
+      (NP
+        (NP (DT:[493..496] the) (NNS:[497..507] substrates))
+        (VP (VBN:[508..513] bound)
+          (NP (-NONE-:[513..513] *))
+          (PP (TO:[514..516] to)
+            (NP (JJ:[517..523] ferric) (NN:[524..534] cytochrome)
+                (NN:[535..540] P-450)))))
+      (PP (IN:[541..543] in)
+        (NP
+          (NP (DT:[544..547] the) (JJ:[548..553] first) (NN:[554..558] step))
+          (PP (IN:[559..561] of)
+            (NP
+              (NML (VBN:[563..568] mixed) (NN:[569..577] function))
+              (NN:[578..587] oxidation))))))
+    (.:[587..588] .)))
+
+;sentence 6 Span:589..733
+;The second step of mixed function oxidation is the  reduction of ferric
+;cytochrome P-450-substrate complex by NADPH-cytochrome P-450  reductase.
+;[654..695]:substance:"ferric cytochrome P-450-substrate complex"
+;[699..732]:substance:"NADPH-cytochrome P-450  reductase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[589..592] The) (JJ:[593..599] second) (NN:[600..604] step))
+      (PP (IN:[605..607] of)
+        (NP
+          (NML (VBN:[608..613] mixed) (NN:[614..622] function))
+          (NN:[623..632] oxidation))))
+    (VP (VBZ:[633..635] is)
+      (NP-PRD
+        (NP (DT:[636..639] the) (NN:[641..650] reduction))
+        (PP (IN:[651..653] of)
+          (NP (JJ:[654..660] ferric)
+            (NML
+              (NML (NN:[661..671] cytochrome) (NN:[672..677] P-450))
+              (HYPH:[677..678] -) (NN:[678..687] substrate))
+            (NN:[688..695] complex)))
+        (PP (IN:[696..698] by)
+          (NP
+            (NML (NN:[699..704] NADPH) (HYPH:[704..705] -)
+                 (NN:[705..715] cytochrome) (NN:[716..721] P-450))
+            (NN:[723..732] reductase)))))
+    (.:[732..733] .)))
+
+;sentence 7 Span:734..857
+;The NADPH-dependent reduction of liver microsomal cytochrome P-450  was
+;biphasic and composed of two first-order reactions.
+;[738..743]:substance:"NADPH"
+;[784..800]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[734..737] The)
+        (ADJP (NN:[738..743] NADPH) (HYPH:[743..744] -)
+              (JJ:[744..753] dependent))
+        (NN:[754..763] reduction))
+      (PP (IN:[764..766] of)
+        (NP (NN:[767..772] liver) (JJ:[773..783] microsomal)
+           (NN:[784..794] cytochrome) (NN:[795..800] P-450))))
+    (VP (VBD:[802..805] was)
+      (UCP
+        (ADJP-PRD (JJ:[806..814] biphasic))
+        (CC:[815..818] and)
+        (VP (VBN:[819..827] composed)
+          (NP-1 (-NONE-:[827..827] *))
+          (PP-CLR (IN:[828..830] of)
+            (NP (CD:[831..834] two)
+              (NML (JJ:[835..840] first) (HYPH:[840..841] -)
+                   (NN:[841..846] order))
+              (NNS:[847..856] reactions))))))
+    (.:[856..857] .)))
+
+;sentence 8 Span:858..966
+;Ethanol decreased the  rate constants of the fast and slow phases of
+;microsomal cytochrome P-450  reduction.
+;[858..865]:substance:"Ethanol"
+;[938..954]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ (NN:[858..865] Ethanol))
+    (VP (VBD:[866..875] decreased)
+      (NP
+        (NP (DT:[876..879] the) (NN:[881..885] rate) (NNS:[886..895] constants))
+        (PP (IN:[896..898] of)
+          (NP
+            (NP (DT:[899..902] the)
+              (NML
+                (NML (JJ:[903..907] fast)
+                  (NML-1 (-NONE-:[907..907] *P*)))
+                (CC:[908..911] and)
+                (NML (JJ:[912..916] slow)
+                  (NML-1 (NNS:[917..923] phases)))))
+            (PP (IN:[924..926] of)
+              (NP (JJ:[927..937] microsomal)
+                (NML (NN:[938..948] cytochrome) (NN:[949..954] P-450))
+                (NN:[956..965] reduction)))))))
+    (.:[965..966] .)))
+
+;sentence 9 Span:967..1199
+;Thus, it is concluded that the inhibition of drug oxidation by  ethanol may
+;be due to the displacement of substrates from cytochrome P-450 and  to the
+;inhibition of reduction of cytochrome P-450 by NADPH-cytochrome P-450 
+;reductase.
+;[1012..1016]:substance:"drug"
+;[1031..1038]:substance:"ethanol"
+;[1073..1083]:substance:"substrates"
+;[1089..1105]:cyp450:"cytochrome P-450"
+;[1145..1161]:cyp450:"cytochrome P-450"
+;[1165..1198]:substance:"NADPH-cytochrome P-450  reductase"
+(SENT
+  (S
+    (ADVP (RB:[967..971] Thus))
+    (,:[971..972] ,)
+    (NP-SBJ-1
+      (NP (PRP:[973..975] it))
+      (SBAR-2 (-NONE-:[975..975] *ICH*)))
+    (VP (VBZ:[976..978] is)
+      (VP (VBN:[979..988] concluded)
+        (NP-1 (-NONE-:[988..988] *))
+        (SBAR-2 (IN:[989..993] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[994..997] the) (NN:[998..1008] inhibition))
+              (PP (IN:[1009..1011] of)
+                (NP (NN:[1012..1016] drug) (NN:[1017..1026] oxidation)))
+              (PP (IN:[1027..1029] by)
+                (NP (NN:[1031..1038] ethanol))))
+            (VP (MD:[1039..1042] may)
+              (VP (VB:[1043..1045] be)
+                (PP-PRD (JJ:[1046..1049] due)
+                  (PP
+                    (PP (TO:[1050..1052] to)
+                      (NP
+                        (NP (DT:[1053..1056] the) (NN:[1057..1069] displacement))
+                        (PP (IN:[1070..1072] of)
+                          (NP
+                            (NP (NNS:[1073..1083] substrates))
+                            (PP (IN:[1084..1088] from)
+                              (NP (NN:[1089..1099] cytochrome)
+                                  (NN:[1100..1105] P-450)))))))
+                    (CC:[1106..1109] and)
+                    (PP (TO:[1111..1113] to)
+                      (NP
+                        (NP (DT:[1114..1117] the) (NN:[1118..1128] inhibition))
+                        (PP (IN:[1129..1131] of)
+                          (NP
+                            (NP (NN:[1132..1141] reduction))
+                            (PP (IN:[1142..1144] of)
+                              (NP (NN:[1145..1155] cytochrome)
+                                  (NN:[1156..1161] P-450)))))
+                        (PP (IN:[1162..1164] by)
+                          (NP
+                            (NML (NN:[1165..1170] NADPH) (HYPH:[1170..1171] -)
+                                 (NN:[1171..1181] cytochrome)
+                                 (NN:[1182..1187] P-450))
+                            (NN:[1189..1198] reductase)))))))))))))
+    (.:[1198..1199] .)))
+
+;section 10 Span:1203..1247
+;PMID: 2983957 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1203..1207] PMID) (::[1207..1208] :) (CD:[1209..1216] 2983957)
+        (NN:[1217..1218] -LSB-) (NNP:[1218..1224] PubMed) (::[1225..1226] -)
+        (NN:[1227..1234] indexed) (IN:[1235..1238] for)
+        (NNP:[1239..1247] MEDLINE-RSB-)))

@@ -1,0 +1,530 @@
+;PMID: 9348433
+;source_file_927.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..170] = [t:48..170]
+;2)section:[e:174..194] = [t:174..194]
+;3)section:[e:198..324] = [t:198..324]
+;4)sentence:[e:328..544] = [t:328..544]
+;5)sentence:[e:545..702] = [t:545..702]
+;6)sentence:[e:703..884] = [t:703..884]
+;7)sentence:[e:885..996] = [t:885..996]
+;8)sentence:[e:997..1230] = [t:997..1230]
+;9)sentence:[e:1231..1342] = [t:1231..1342]
+;10)sentence:[e:1343..1432] = [t:1343..1432]
+;11)sentence:[e:1433..1569] = [t:1433..1569]
+;12)sentence:[e:1570..1725] = [t:1570..1725]
+;13)sentence:[e:1726..1867] = [t:1726..1867]
+;14)sentence:[e:1868..2096] = [t:1868..2096]
+;15)section:[e:2100..2144] = [t:2100..2144]
+
+;section 0 Span:0..42
+;Chem Res Toxicol. 1997 Oct;10(10):1109-17.
+(SEC
+  (FRAG (NNP:[0..4] Chem) (NNP:[5..8] Res) (NNP:[9..16] Toxicol) (.:[16..17] .)
+        (CD:[18..22] 1997) (CC:[23..30] Oct;10-LRB-) (CD:[30..32] 10)
+        (-RRB-:[32..33] -RRB-) (CD:[33..38] :1109) (::[38..39] -)
+        (CD:[39..41] 17) (.:[41..42] .)))
+
+;sentence 1 Span:48..170
+;Immunochemical visualization and identification of rat liver proteins
+;adducted  by 2,6-di-tert-butyl-4-methylphenol (BHT).
+;[109..117]:substance:"proteins"
+;[131..163]:substance:"2,6-di-tert-butyl-4-methylphenol"
+;[165..168]:substance:"BHT"
+(SENT
+  (NP-HLN
+    (NP (JJ:[48..62] Immunochemical) (NN:[63..76] visualization))
+    (CC:[77..80] and)
+    (NP
+      (NP (NN:[81..95] identification))
+      (PP (IN:[96..98] of)
+        (NP
+          (NP (NN:[99..102] rat) (NN:[103..108] liver) (NNS:[109..117] proteins))
+          (VP (VBN:[118..126] adducted)
+            (NP (-NONE-:[126..126] *))
+            (PP (IN:[128..130] by)
+              (NP-LGS
+                (NP (NN:[131..163] 2,6-di-tert-butyl-4-methylphenol))
+                (NP (-LRB-:[164..165] -LRB-) (NN:[165..168] BHT)
+                    (-RRB-:[168..169] -RRB-))))))))
+    (.:[169..170] .)))
+
+;section 2 Span:174..194
+;Reed M, Thompson DC.
+(SEC
+  (FRAG (NNP:[174..178] Reed) (NNP:[179..181] M,) (NNP:[182..190] Thompson)
+        (NNP:[191..194] DC.)))
+
+;section 3 Span:198..324
+;Department of Medical Pharmacology & Toxicology, Texas A&M University Health 
+;Science Center, College Station 77843-1114, USA.
+(SEC
+  (FRAG (NNP:[198..208] Department) (IN:[209..211] of) (NNP:[212..219] Medical)
+        (NNP:[220..232] Pharmacology) (CC:[233..234] &)
+        (NNP:[235..245] Toxicology) (,:[245..246] ,) (NNP:[247..252] Texas)
+        (NNP:[253..256] A&M) (NNP:[257..267] University) (NNP:[268..274] Health)
+        (NNP:[276..283] Science) (NNP:[284..290] Center) (,:[290..291] ,)
+        (NNP:[292..299] College) (NNP:[300..307] Station) (CD:[308..313] 77843)
+        (HYPH:[313..314] -) (CD:[314..318] 1114) (,:[318..319] ,)
+        (NNP:[320..323] USA) (.:[323..324] .)))
+
+;sentence 4 Span:328..544
+;Several alkylphenols (e.g., 2,6-di-tert-butyl-4-methylphenol, BHT) form
+;reactive  quinone methide intermediates (e.g., 
+;2,6-di-tert-butyl-4-methylene-2,5-cyclohexadienone, BHT-QM) upon oxidation by
+; cellular enzymes.
+;[336..348]:substance:"alkylphenols"
+;[356..388]:substance:"2,6-di-tert-butyl-4-methylphenol"
+;[390..393]:substance:"BHT"
+;[410..425]:substance:"quinone methide"
+;[426..439]:substance:"intermediates"
+;[448..498]:substance:"2,6-di-tert-butyl-4-methylene-2,5-cyclohexadienone"
+;[500..506]:substance:"BHT-QM"
+;[536..543]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ (JJ:[328..335] Several) (NNS:[336..348] alkylphenols)
+      (PRN (-LRB-:[349..350] -LRB-)
+        (NP
+          (ADVP (FW:[350..354] e.g.))
+          (,:[354..355] ,) (NN:[356..388] 2,6-di-tert-butyl-4-methylphenol)
+           (,:[388..389] ,) (NN:[390..393] BHT))
+        (-RRB-:[393..394] -RRB-)))
+    (VP (VBP:[395..399] form)
+      (NP
+        (NP (JJ:[400..408] reactive)
+          (NML (NN:[410..417] quinone) (NN:[418..425] methide))
+          (NNS:[426..439] intermediates))
+        (PRN (-LRB-:[440..441] -LRB-)
+          (NP
+            (ADVP (FW:[441..445] e.g.))
+            (,:[445..446] ,)
+             (NN:[448..498] 2,6-di-tert-butyl-4-methylene-2,5-cyclohexadienone)
+             (,:[498..499] ,) (NN:[500..506] BHT-QM))
+          (-RRB-:[506..507] -RRB-)))
+      (PP-TMP (IN:[508..512] upon)
+        (NP
+          (NP (NN:[513..522] oxidation))
+          (PP (IN:[523..525] by)
+            (NP (JJ:[527..535] cellular) (NNS:[536..543] enzymes))))))
+    (.:[543..544] .)))
+
+;sentence 5 Span:545..702
+;In order to pursue the role of protein alkylation in  alkylphenol toxicity,
+;we used an immunochemical approach to identify protein  targets alkylated by
+;BHT.
+;[576..583]:substance:"protein"
+;[599..610]:substance:"alkylphenol"
+;[668..675]:substance:"protein"
+;[677..684]:substance:"targets"
+;[698..701]:substance:"BHT"
+(SENT
+  (S
+    (SBAR-PRP (IN:[545..547] In) (NN:[548..553] order)
+      (S
+        (NP-SBJ-1 (-NONE-:[553..553] *))
+        (VP (TO:[554..556] to)
+          (VP (VB:[557..563] pursue)
+            (NP
+              (NP (DT:[564..567] the) (NN:[568..572] role))
+              (PP (IN:[573..575] of)
+                (NP (NN:[576..583] protein) (NN:[584..594] alkylation))))
+            (PP-LOC (IN:[595..597] in)
+              (NP (NN:[599..610] alkylphenol) (NN:[611..619] toxicity)))))))
+    (,:[619..620] ,)
+    (NP-SBJ-1 (PRP:[621..623] we))
+    (VP (VBD:[624..628] used)
+      (NP (DT:[629..631] an) (JJ:[632..646] immunochemical)
+          (NN:[647..655] approach))
+      (S-ADV
+        (NP-SBJ-1 (-NONE-:[655..655] *))
+        (VP (TO:[656..658] to)
+          (VP (VB:[659..667] identify)
+            (NP
+              (NP (NN:[668..675] protein) (NNS:[677..684] targets))
+              (VP (VBN:[685..694] alkylated)
+                (NP (-NONE-:[694..694] *))
+                (PP (IN:[695..697] by)
+                  (NP-LGS (NN:[698..701] BHT)))))))))
+    (.:[701..702] .)))
+
+;sentence 6 Span:703..884
+;Synthetic BHT-N-acetylcysteine (BHT-NAC) was coupled  to keyhole limpet
+;hemocyanin and used as an antigen from which polyclonal  antibodies were
+;raised in New Zealand white rabbits.
+;[713..733]:substance:"BHT-N-acetylcysteine"
+;[735..742]:substance:"BHT-NAC"
+;[775..785]:substance:"hemocyanin"
+;[801..808]:substance:"antigen"
+;[820..842]:substance:"polyclonal  antibodies"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[703..712] Synthetic) (NN:[713..733] BHT-N-acetylcysteine))
+      (NP (-LRB-:[734..735] -LRB-) (NN:[735..742] BHT-NAC)
+          (-RRB-:[742..743] -RRB-)))
+    (VP (VBD:[744..747] was)
+      (VP
+        (VP (VBN:[748..755] coupled)
+          (NP-1 (-NONE-:[755..755] *))
+          (PP-CLR (TO:[757..759] to)
+            (NP (NN:[760..767] keyhole) (NN:[768..774] limpet)
+                (NN:[775..785] hemocyanin))))
+        (CC:[786..789] and)
+        (VP (VBN:[790..794] used)
+          (NP-1 (-NONE-:[794..794] *))
+          (PP (IN:[795..797] as)
+            (NP
+              (NP (DT:[798..800] an) (NN:[801..808] antigen))
+              (SBAR
+                (WHPP-2 (IN:[809..813] from)
+                  (WHNP (WDT:[814..819] which)))
+                (S
+                  (NP-SBJ-3 (JJ:[820..830] polyclonal)
+                            (NNS:[832..842] antibodies))
+                  (VP (VBD:[843..847] were)
+                    (VP (VBN:[848..854] raised)
+                      (NP-3 (-NONE-:[854..854] *))
+                      (PP-LOC (IN:[855..857] in)
+                        (NP
+                          (NML (NNP:[858..861] New) (NNP:[862..869] Zealand))
+                          (JJ:[870..875] white) (NNS:[876..883] rabbits)))
+                      (PP-2 (-NONE-:[883..883] *T*)))))))))))
+    (.:[883..884] .)))
+
+;sentence 7 Span:885..996
+;Rabbit serum contained an  antibody which was highly specific for BHT-NAC, as
+;determined by competitive  ELISA.
+;[912..920]:substance:"antibody"
+;[951..958]:substance:"BHT-NAC"
+(SENT
+  (S
+    (NP-SBJ (NN:[885..891] Rabbit) (NN:[892..897] serum))
+    (VP (VBD:[898..907] contained)
+      (NP
+        (NP (DT:[908..910] an) (NN:[912..920] antibody))
+        (SBAR
+          (WHNP-1 (WDT:[921..926] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[926..926] *T*))
+            (VP (VBD:[927..930] was)
+              (ADJP-PRD (RB:[931..937] highly) (JJ:[938..946] specific)
+                (PP (IN:[947..950] for)
+                  (NP (NN:[951..958] BHT-NAC))))
+              (,:[958..959] ,)
+              (PP-MNR (IN:[960..962] as)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[962..962] *))
+                  (VP (VBN:[963..973] determined)
+                    (PP-MNR (IN:[974..976] by)
+                      (NP (JJ:[977..988] competitive) (NN:[990..995] ELISA)))))))))))
+    (.:[995..996] .)))
+
+;sentence 8 Span:997..1230
+;The BHT antibody was used as a probe to look for the presence of  BHT-protein
+;adducts in in vitro incubations with rat liver microsomes or tissue  slices
+;and also in vivo in liver tissue from male Sprague-Dawley rats exposed to 
+;BHT.
+;[1001..1013]:substance:"BHT antibody"
+;[1028..1033]:substance:"probe"
+;[1063..1082]:substance:"BHT-protein adducts"
+;[1226..1229]:substance:"BHT"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[997..1000] The)
+       (NN:[1001..1004] BHT) (NN:[1005..1013] antibody))
+    (VP (VBD:[1014..1017] was)
+      (VP (VBN:[1018..1022] used)
+        (NP-3 (-NONE-:[1022..1022] *))
+        (PP-CLR (IN:[1023..1025] as)
+          (NP (DT:[1026..1027] a) (NN:[1028..1033] probe)))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1033..1033] *))
+          (VP (TO:[1034..1036] to)
+            (VP (VB:[1037..1041] look)
+              (PP-CLR (IN:[1042..1045] for)
+                (NP
+                  (NP (DT:[1046..1049] the) (NN:[1050..1058] presence))
+                  (PP (IN:[1059..1061] of)
+                    (NP
+                      (NML (NN:[1063..1066] BHT) (HYPH:[1066..1067] -)
+                           (NN:[1067..1074] protein))
+                      (NNS:[1075..1082] adducts)))))
+              (PP-LOC
+                (PP (IN:[1083..1085] in)
+                  (NP
+                    (NP
+                      (ADJP (FW:[1086..1088] in) (FW:[1089..1094] vitro))
+                      (NNS:[1095..1106] incubations))
+                    (PP (IN:[1107..1111] with)
+                      (NP
+                        (NP
+                          (NML-1 (NN:[1112..1115] rat))
+                          (NML-2 (NN:[1116..1121] liver))
+                          (NNS:[1122..1132] microsomes))
+                        (CC:[1133..1135] or)
+                        (NP
+                          (NML-1 (-NONE-:[1135..1135] *P*))
+                          (NML-2 (-NONE-:[1135..1135] *P*))
+                          (NN:[1136..1142] tissue) (NNS:[1144..1150] slices))))))
+                (CONJP (CC:[1151..1154] and) (RB:[1155..1159] also))
+                (PP
+                  (ADVP (FW:[1160..1162] in) (FW:[1163..1167] vivo))
+                  (IN:[1168..1170] in)
+                  (NP
+                    (NP (NN:[1171..1176] liver) (NN:[1177..1183] tissue))
+                    (PP (IN:[1184..1188] from)
+                      (NP
+                        (NP (JJ:[1189..1193] male)
+                          (NML (NNP:[1194..1201] Sprague) (HYPH:[1201..1202] -)
+                               (NNP:[1202..1208] Dawley))
+                          (NNS:[1209..1213] rats))
+                        (VP (VBN:[1214..1221] exposed)
+                          (NP (-NONE-:[1221..1221] *))
+                          (PP (TO:[1222..1224] to)
+                            (NP (NN:[1226..1229] BHT))))))))))))))
+    (.:[1229..1230] .)))
+
+;sentence 9 Span:1231..1342
+;Western blotting of protein gels revealed BHT-dependent protein alkylation 
+;over a wide molecular weight range.
+;[1251..1258]:substance:"protein"
+;[1273..1276]:substance:"BHT"
+;[1287..1294]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1231..1238] Western) (NN:[1239..1247] blotting))
+      (PP (IN:[1248..1250] of)
+        (NP (NN:[1251..1258] protein) (NNS:[1259..1263] gels))))
+    (VP (VBD:[1264..1272] revealed)
+      (NP
+        (ADJP (NN:[1273..1276] BHT) (HYPH:[1276..1277] -)
+              (JJ:[1277..1286] dependent))
+        (NN:[1287..1294] protein) (NN:[1295..1305] alkylation))
+      (PP (IN:[1307..1311] over)
+        (NP (DT:[1312..1313] a) (JJ:[1314..1318] wide)
+            (JJ:[1319..1328] molecular) (NN:[1329..1335] weight)
+            (NN:[1336..1341] range))))
+    (.:[1341..1342] .)))
+
+;sentence 10 Span:1343..1432
+;Prominent recurrent bands were observed at  approximately 34.5, 52, 64.5, 74,
+;and 97 kDa.
+;[1401..1405]:quantitative-value:"34.5"
+;[1407..1409]:quantitative-value:"52"
+;[1411..1415]:quantitative-value:"64.5"
+;[1417..1419]:quantitative-value:"74"
+;[1425..1427]:quantitative-value:"97"
+;[1428..1431]:quantitative-units:"kDa"
+(SENT
+  (S
+    (NP-SBJ-3 (JJ:[1343..1352] Prominent) (JJ:[1353..1362] recurrent)
+              (NNS:[1363..1368] bands))
+    (VP (VBD:[1369..1373] were)
+      (VP (VBN:[1374..1382] observed)
+        (NP-3 (-NONE-:[1382..1382] *))
+        (PP-LOC (IN:[1383..1385] at)
+          (NP
+            (NP
+              (QP
+                (ADVP-2 (RB:[1387..1400] approximately))
+                (CD:[1401..1405] 34.5))
+              (NML-1 (-NONE-:[1405..1405] *P*)))
+            (,:[1405..1406] ,)
+            (NP
+              (QP
+                (ADVP-2 (-NONE-:[1406..1406] *P*))
+                (CD:[1407..1409] 52))
+              (NML-1 (-NONE-:[1409..1409] *P*)))
+            (,:[1409..1410] ,)
+            (NP
+              (QP
+                (ADVP-2 (-NONE-:[1410..1410] *P*))
+                (CD:[1411..1415] 64.5))
+              (NML-1 (-NONE-:[1415..1415] *P*)))
+            (,:[1415..1416] ,)
+            (NP
+              (QP
+                (ADVP-2 (-NONE-:[1416..1416] *P*))
+                (CD:[1417..1419] 74))
+              (NML-1 (-NONE-:[1419..1419] *P*)))
+            (,:[1419..1420] ,) (CC:[1421..1424] and)
+            (NP
+              (QP
+                (ADVP-2 (-NONE-:[1424..1424] *P*))
+                (CD:[1425..1427] 97))
+              (NML-1 (NN:[1428..1431] kDa)))))))
+    (.:[1431..1432] .)))
+
+;sentence 11 Span:1433..1569
+;Detection of adducts was inhibited  in microsomal incubations by cytochrome
+;P450 inhibitors, deuterated BHT, and the  omission of NADPH.
+;[1446..1453]:substance:"adducts"
+;[1498..1513]:cyp450:"cytochrome P450"
+;[1514..1524]:substance:"inhibitors"
+;[1537..1540]:substance:"BHT"
+;[1563..1568]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1433..1442] Detection))
+      (PP (IN:[1443..1445] of)
+        (NP (NNS:[1446..1453] adducts))))
+    (VP (VBD:[1454..1457] was)
+      (VP (VBN:[1458..1467] inhibited)
+        (NP-1 (-NONE-:[1467..1467] *))
+        (PP-LOC (IN:[1469..1471] in)
+          (NP (JJ:[1472..1482] microsomal) (NNS:[1483..1494] incubations)))
+        (PP (IN:[1495..1497] by)
+          (NP-LGS
+            (NP
+              (NML (NN:[1498..1508] cytochrome) (NN:[1509..1513] P450))
+              (NNS:[1514..1524] inhibitors))
+            (,:[1524..1525] ,)
+            (NP (VBN:[1526..1536] deuterated) (NN:[1537..1540] BHT))
+            (,:[1540..1541] ,) (CC:[1542..1545] and)
+            (NP
+              (NP (DT:[1546..1549] the) (NN:[1551..1559] omission))
+              (PP (IN:[1560..1562] of)
+                (NP (NN:[1563..1568] NADPH))))))))
+    (.:[1568..1569] .)))
+
+;sentence 12 Span:1570..1725
+;Similar protein alkylation patterns were observed in rat  liver microsomes
+;exposed to synthetically prepared BHT-QM as in the  enzyme-mediated
+;incubations.
+;[1578..1585]:substance:"protein"
+;[1679..1685]:substance:"BHT-QM"
+;[1697..1703]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1570..1577] Similar) (NN:[1578..1585] protein)
+              (NN:[1586..1596] alkylation) (NNS:[1597..1605] patterns))
+    (VP (VBD:[1606..1610] were)
+      (VP (VBN:[1611..1619] observed)
+        (NP-1 (-NONE-:[1619..1619] *))
+        (PP-LOC (IN:[1620..1622] in)
+          (NP
+            (NP (NN:[1623..1626] rat) (NN:[1628..1633] liver)
+                (NNS:[1634..1644] microsomes))
+            (VP (VBN:[1645..1652] exposed)
+              (NP (-NONE-:[1652..1652] *))
+              (PP-CLR (TO:[1653..1655] to)
+                (NP
+                  (ADJP (RB:[1656..1669] synthetically)
+                        (VBN:[1670..1678] prepared))
+                  (NN:[1679..1685] BHT-QM))))))
+        (PP (IN:[1686..1688] as)
+          (PP-LOC (IN:[1689..1691] in)
+            (NP (DT:[1692..1695] the)
+              (ADJP (NN:[1697..1703] enzyme) (HYPH:[1703..1704] -)
+                    (VBN:[1704..1712] mediated))
+              (NNS:[1713..1724] incubations))))))
+    (.:[1724..1725] .)))
+
+;sentence 13 Span:1726..1867
+;In rats gavaged with up to 1000 mg/kg BHT, the  amount of protein alkylation
+;observed was maximal at 24 h postdosing and was  dose-dependent.
+;[1747..1757]:quantitative-value:"up to 1000"
+;[1758..1763]:quantitative-units:"mg/kg"
+;[1764..1767]:substance:"BHT"
+;[1784..1791]:substance:"protein"
+;[1827..1829]:quantitative-value:"24"
+;[1830..1831]:quantitative-units:"h"
+(SENT
+  (S
+    (PP-LOC (IN:[1726..1728] In)
+      (NP
+        (NP (NNS:[1729..1733] rats))
+        (VP (VBN:[1734..1741] gavaged)
+          (NP (-NONE-:[1741..1741] *))
+          (PP-MNR (IN:[1742..1746] with)
+            (NP
+              (NP
+                (NP
+                  (QP (IN:[1747..1749] up) (TO:[1750..1752] to)
+                      (CD:[1753..1757] 1000))
+                  (NN:[1758..1760] mg))
+                (PP (SYM:[1760..1761] /)
+                  (NP (NN:[1761..1763] kg))))
+              (NP (NN:[1764..1767] BHT)))))))
+    (,:[1767..1768] ,)
+    (NP-SBJ
+      (NP (DT:[1769..1772] the) (NN:[1774..1780] amount))
+      (PP (IN:[1781..1783] of)
+        (NP (NN:[1784..1791] protein) (NN:[1792..1802] alkylation)))
+      (VP (VBN:[1803..1811] observed)
+        (NP (-NONE-:[1811..1811] *))))
+    (VP
+      (VP (VBD:[1812..1815] was)
+        (ADJP-PRD (JJ:[1816..1823] maximal))
+        (PP (IN:[1824..1826] at)
+          (NP-TMP
+            (NP (CD:[1827..1829] 24) (NN:[1830..1831] h))
+            (ADVP (IN:[1832..1842] postdosing)))))
+      (CC:[1843..1846] and)
+      (VP (VBD:[1847..1850] was)
+        (ADJP-PRD (NN:[1852..1856] dose) (HYPH:[1856..1857] -)
+                  (JJ:[1857..1866] dependent))))
+    (.:[1866..1867] .)))
+
+;sentence 14 Span:1868..2096
+;Two alkylated proteins were isolated and identified by  N-terminal
+;sequencing: a mitochondrial beta-oxidation enzyme, enoyl-CoA  hydratase, and
+;a plasma membrane/cytoskeletal linker protein from the  ezrin/moesin/radixin
+;family.
+;[1882..1890]:substance:"proteins"
+;[1978..1984]:substance:"enzyme"
+;[1986..2006]:substance:"enoyl-CoA  hydratase"
+;[2050..2057]:substance:"protein"
+;[2068..2073]...[2089..2095]:substance:"ezrin"..."family"
+;[2074..2080]...[2089..2095]:substance:"moesin"..."family"
+;[2081..2095]:substance:"radixin family"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (CD:[1868..1871] Two) (VBN:[1872..1881] alkylated)
+          (NNS:[1882..1890] proteins))
+      (NP-1 (-NONE-:[1890..1890] *ICH*)))
+    (VP (VBD:[1891..1895] were)
+      (VP (VBN:[1896..1904] isolated) (CC:[1905..1908] and)
+          (VBN:[1909..1919] identified)
+        (NP-2 (-NONE-:[1919..1919] *))
+        (PP (IN:[1920..1922] by)
+          (NP-LGS
+            (NML (NN:[1924..1925] N) (HYPH:[1925..1926] -)
+                 (JJ:[1926..1934] terminal))
+            (NN:[1935..1945] sequencing)))
+        (::[1945..1946] :)
+        (NP-1
+          (NP
+            (NP (DT:[1947..1948] a) (JJ:[1949..1962] mitochondrial)
+                (NN:[1963..1977] beta-oxidation) (NN:[1978..1984] enzyme))
+            (,:[1984..1985] ,)
+            (NP (NN:[1986..1995] enoyl-CoA) (NN:[1997..2006] hydratase)))
+          (,:[2006..2007] ,) (CC:[2008..2011] and)
+          (NP
+            (NP (DT:[2012..2013] a)
+              (NML
+                (NML (NN:[2014..2020] plasma) (NN:[2021..2029] membrane))
+                (SYM:[2029..2030] /) (JJ:[2030..2042] cytoskeletal))
+              (NN:[2043..2049] linker) (NN:[2050..2057] protein))
+            (PP (IN:[2058..2062] from)
+              (NP (DT:[2063..2066] the)
+                (NML (NN:[2068..2073] ezrin) (SYM:[2073..2074] /)
+                     (NN:[2074..2080] moesin) (SYM:[2080..2081] /)
+                     (NN:[2081..2088] radixin))
+                (NN:[2089..2095] family)))))))
+    (.:[2095..2096] .)))
+
+;section 15 Span:2100..2144
+;PMID: 9348433 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2100..2104] PMID) (::[2104..2105] :) (CD:[2106..2113] 9348433)
+        (NN:[2114..2115] -LSB-) (NNP:[2115..2121] PubMed) (::[2122..2123] -)
+        (NN:[2124..2131] indexed) (IN:[2132..2135] for)
+        (NNP:[2136..2144] MEDLINE-RSB-)))

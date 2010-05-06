@@ -1,0 +1,328 @@
+;PMID: 195583
+;source_file_967.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..118] = [t:41..118]
+;2)section:[e:122..170] = [t:122..170]
+;3)sentence:[e:174..274] = [t:174..274]
+;4)sentence:[e:275..351] = [t:275..351]
+;5)sentence:[e:352..552] = [t:352..552]
+;6)sentence:[e:553..698] = [t:553..698]
+;7)sentence:[e:699..840] = [t:699..840]
+;8)sentence:[e:841..1044] = [t:841..1044]
+;9)sentence:[e:1045..1163] = [t:1045..1163]
+;10)sentence:[e:1164..1345] = [t:1164..1345]
+;11)section:[e:1349..1392] = [t:1349..1392]
+
+;section 0 Span:0..35
+;Biochem J. 1977 Apr 15;164(1):83-9.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..10] J.) (CD:[11..15] 1977)
+        (NNP:[16..19] Apr) (CD:[20..22] 15) (CD:[22..27] ;164-LRB-)
+        (CD:[27..28] 1) (-RRB-:[28..29] -RRB-) (CD:[29..32] :83)
+        (HYPH:[32..33] -) (CD:[33..35] 9.)))
+
+;sentence 1 Span:41..118
+;Feedback regulation of vitamin D metabolism by
+;1,25-dihydroxycholecalciferol.
+;[64..73]:substance:"vitamin D"
+;[88..117]:substance:"1,25-dihydroxycholecalciferol"
+(SENT
+  (NP-HLN
+    (NP (NN:[41..49] Feedback) (NN:[50..60] regulation))
+    (PP (IN:[61..63] of)
+      (NP
+        (NML (NN:[64..71] vitamin) (NN:[72..73] D))
+        (NN:[74..84] metabolism)))
+    (PP (IN:[85..87] by)
+      (NP (NN:[88..117] 1,25-dihydroxycholecalciferol)))
+    (.:[117..118] .)))
+
+;section 2 Span:122..170
+;Colston KW, Evans IM, Spelsberg TC, MacIntyre I.
+(SEC
+  (FRAG (NNP:[122..129] Colston) (NNP:[130..132] KW) (,:[132..133] ,)
+        (NNP:[134..139] Evans) (NNP:[140..142] IM) (,:[142..143] ,)
+        (NNP:[144..153] Spelsberg) (NNP:[154..156] TC) (,:[156..157] ,)
+        (NNP:[158..167] MacIntyre) (NNP:[168..170] I.)))
+
+;sentence 3 Span:174..274
+;Many factors influence the production of 1,25(OH)2D3 
+;(1,25-dihydroxycholecalciferol) by the kidney.
+;[215..226]:substance:"1,25(OH)2D3"
+;[229..258]:substance:"1,25-dihydroxycholecalciferol"
+(SENT
+  (S
+    (NP-SBJ (JJ:[174..178] Many) (NNS:[179..186] factors))
+    (VP (VBP:[187..196] influence)
+      (NP
+        (NP (DT:[197..200] the) (NN:[201..211] production))
+        (PP (IN:[212..214] of)
+          (NP
+            (NP (NN:[215..226] 1,25-LRB-OH-RRB-2D3))
+            (NP (-LRB-:[228..229] -LRB-)
+                (NN:[229..258] 1,25-dihydroxycholecalciferol)
+                (-RRB-:[258..259] -RRB-))))
+        (PP (IN:[260..262] by)
+          (NP (DT:[263..266] the) (NN:[267..273] kidney)))))
+    (.:[273..274] .)))
+
+;sentence 4 Span:275..351
+;One important factor seems to be  feedback regulation by 1,25(OH)2D3 itself.
+;[332..343]:substance:"1,25(OH)2D3"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[275..278] One) (JJ:[279..288] important)
+              (NN:[289..295] factor))
+    (VP (VBZ:[296..301] seems)
+      (S
+        (NP-SBJ-1 (-NONE-:[301..301] *))
+        (VP (TO:[302..304] to)
+          (VP (VB:[305..307] be)
+            (NP-PRD
+              (NP (NN:[309..317] feedback) (NN:[318..328] regulation))
+              (PP (IN:[329..331] by)
+                (NP
+                  (NP (NN:[332..343] 1,25-LRB-OH-RRB-2D3))
+                  (NP (PRP:[344..350] itself)))))))))
+    (.:[350..351] .)))
+
+;sentence 5 Span:352..552
+;Administration of 1,25(OH)2D3 to  vitamin D-deficient chicks abolishes renal 
+;25(OH)D3(25-hydroxycholecalciferol)1-hydroxylase activity and induces the 
+;appearance of 25(OH)D3 24-hydroxylase activity.
+;[370..381]:substance:"1,25(OH)2D3"
+;[386..395]:substance:"vitamin D"
+;[430..478]:substance:"25(OH)D3(25-hydroxycholecalciferol)1-hydroxylase"
+;[519..542]:substance:"25(OH)D3 24-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[352..366] Administration))
+      (PP (IN:[367..369] of)
+        (NP (NN:[370..381] 1,25-LRB-OH-RRB-2D3)))
+      (PP (TO:[382..384] to)
+        (NP
+          (ADJP
+            (NML (NN:[386..393] vitamin) (NN:[394..395] D))
+            (HYPH:[395..396] -) (JJ:[396..405] deficient))
+          (NNS:[406..412] chicks))))
+    (VP
+      (VP (VBZ:[413..422] abolishes)
+        (NP (JJ:[423..428] renal)
+            (NN:[430..478] 25-LRB-OH-RRB-D3-LRB-25-hydroxycholecalciferol-RRB-1-hydroxylase)
+            (NN:[479..487] activity)))
+      (CC:[488..491] and)
+      (VP (VBZ:[492..499] induces)
+        (NP
+          (NP (DT:[500..503] the) (NN:[505..515] appearance))
+          (PP (IN:[516..518] of)
+            (NP
+               (NN:[519..527] 25-LRB-OH-RRB-D3) (NN:[528..542] 24-hydroxylase)
+              (NN:[543..551] activity))))))
+    (.:[551..552] .)))
+
+;sentence 6 Span:553..698
+;It is likely that these effects  are mediated via a nuclear effect, as they
+;are prevented by pretreatment with  actinomycin D and alpha-amanitin.
+;[665..678]:substance:"actinomycin D"
+;[683..697]:substance:"alpha-amanitin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (PRP:[553..555] It))
+      (SBAR-3 (-NONE-:[555..555] *EXP*)))
+    (VP (VBZ:[556..558] is)
+      (ADJP-PRD (JJ:[559..565] likely))
+      (SBAR-3 (IN:[566..570] that)
+        (S
+          (NP-SBJ-2 (DT:[571..576] these) (NNS:[577..584] effects))
+          (VP (VBP:[586..589] are)
+            (VP (VBN:[590..598] mediated)
+              (NP-2 (-NONE-:[598..598] *))
+              (PP (IN:[599..602] via)
+                (NP (DT:[603..604] a) (JJ:[605..612] nuclear)
+                    (NN:[613..619] effect)))))))
+      (,:[619..620] ,)
+      (SBAR-ADV (IN:[621..623] as)
+        (S
+          (NP-SBJ-1 (PRP:[624..628] they))
+          (VP (VBP:[629..632] are)
+            (VP (VBN:[633..642] prevented)
+              (NP-1 (-NONE-:[642..642] *))
+              (PP-MNR (IN:[643..645] by)
+                (NP
+                  (NP (NN:[646..658] pretreatment))
+                  (PP (IN:[659..663] with)
+                    (NP
+                      (NP (NN:[665..676] actinomycin) (NN:[677..678] D))
+                      (CC:[679..682] and)
+                      (NP (NN:[683..697] alpha-amanitin)))))))))))
+    (.:[697..698] .)))
+
+;sentence 7 Span:699..840
+;Further, 1,25(OH)2D3 has a marked effect on  gene transcription in the kidney
+;cell, as assessed by measurement of RNA  polymerase activities.
+;[708..719]:substance:"1,25(OH)2D3"
+;[813..828]:substance:"RNA  polymerase"
+(SENT
+  (S
+    (ADVP (RB:[699..706] Further))
+    (,:[706..707] ,)
+    (NP-SBJ (NN:[708..719] 1,25-LRB-OH-RRB-2D3))
+    (VP (VBZ:[720..723] has)
+      (NP
+        (NP (DT:[724..725] a) (JJ:[726..732] marked) (NN:[733..739] effect))
+        (PP (IN:[740..742] on)
+          (NP (NN:[744..748] gene) (NN:[749..762] transcription))))
+      (PP-LOC (IN:[763..765] in)
+        (NP (DT:[766..769] the) (NN:[770..776] kidney) (NN:[777..781] cell)))
+      (,:[781..782] ,)
+      (SBAR-ADV (IN:[783..785] as)
+        (S
+          (NP-SBJ-1 (-NONE-:[785..785] *))
+          (VP (VBN:[786..794] assessed)
+            (NP-1 (-NONE-:[794..794] *))
+            (PP-MNR (IN:[795..797] by)
+              (NP
+                (NP (NN:[798..809] measurement))
+                (PP (IN:[810..812] of)
+                  (NP
+                    (NML (NN:[813..816] RNA) (NN:[818..828] polymerase))
+                    (NNS:[829..839] activities)))))))))
+    (.:[839..840] .)))
+
+;sentence 8 Span:841..1044
+;RNA polymerase I and II activities are 80-90% inhibited  by 12.5nmol of
+;1,25(OH)2D3 within 30min of subcutaneous administration,  indicating an
+;immediate and massive decrease in total gene transcription.
+;[841..857]:substance:"RNA polymerase I"
+;[841..855]...[862..864]:substance:"RNA polymerase"..."II"
+;[880..886]:quantitative-value:"80-90%"
+;[901..905]:quantitative-value:"12.5"
+;[905..909]:quantitative-units:"nmol"
+;[913..924]:substance:"1,25(OH)2D3"
+;[932..934]:quantitative-value:"30"
+;[934..937]:quantitative-units:"min"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML
+          (NML-3 (NN:[841..844] RNA))
+          (NML-4 (NN:[845..855] polymerase))
+          (CD:[856..857] I))
+        (NML-2 (-NONE-:[857..857] *P*)))
+      (CC:[858..861] and)
+      (NP
+        (NML
+          (NML-3 (-NONE-:[861..861] *P*))
+          (NML-4 (-NONE-:[861..861] *P*))
+          (CD:[862..864] II))
+        (NML-2 (NNS:[865..875] activities))))
+    (VP (VBP:[876..879] are)
+      (NP-EXT
+        (QP (CD:[880..882] 80) (HYPH:[882..883] -) (CD:[883..885] 90))
+        (NN:[885..886] %))
+      (VP (VBN:[887..896] inhibited)
+        (NP-1 (-NONE-:[896..896] *))
+        (PP (IN:[898..900] by)
+          (NP-LGS
+            (NP (CD:[901..905] 12.5) (NN:[905..909] nmol))
+            (PP (IN:[910..912] of)
+              (NP (NN:[913..924] 1,25-LRB-OH-RRB-2D3)))))
+        (PP-TMP (IN:[925..931] within)
+          (NP
+            (NP (CD:[932..934] 30) (NN:[934..937] min))
+            (PP (IN:[938..940] of)
+              (NP (JJ:[941..953] subcutaneous) (NN:[954..968] administration)))))
+        (,:[968..969] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[969..969] *))
+          (VP (VBG:[971..981] indicating)
+            (NP (DT:[982..984] an)
+              (ADJP (JJ:[985..994] immediate) (CC:[995..998] and)
+                    (JJ:[999..1006] massive))
+              (NN:[1007..1015] decrease))
+            (PP (IN:[1016..1018] in)
+              (NP (JJ:[1019..1024] total) (NN:[1025..1029] gene)
+                  (NN:[1030..1043] transcription)))))))
+    (.:[1043..1044] .)))
+
+;sentence 9 Span:1045..1163
+;By 4h  RNA polymerase II activity has returned to control values, but RNA
+;polymerase I  activity is markedly enhanced.
+;[1048..1049]:quantitative-value:"4"
+;[1049..1050]:quantitative-units:"h"
+;[1052..1069]:substance:"RNA polymerase II"
+;[1115..1131]:substance:"RNA polymerase I"
+(SENT
+  (S
+    (S
+      (PP-TMP (IN:[1045..1047] By)
+        (NP (CD:[1048..1049] 4) (NN:[1049..1050] h)))
+      (NP-SBJ
+        (NML (NN:[1052..1055] RNA) (NN:[1056..1066] polymerase)
+             (CD:[1067..1069] II))
+        (NN:[1070..1078] activity))
+      (VP (VBZ:[1079..1082] has)
+        (VP (VBN:[1083..1091] returned)
+          (PP (TO:[1092..1094] to)
+            (NP (NN:[1095..1102] control) (NNS:[1103..1109] values))))))
+    (,:[1109..1110] ,) (CC:[1111..1114] but)
+    (S
+      (NP-SBJ-1
+        (NML (NN:[1115..1118] RNA) (NN:[1119..1129] polymerase)
+             (CD:[1130..1131] I))
+        (NN:[1133..1141] activity))
+      (VP (VBZ:[1142..1144] is)
+        (ADVP (RB:[1145..1153] markedly))
+        (VP (VBN:[1154..1162] enhanced)
+          (NP-1 (-NONE-:[1162..1162] *)))))
+    (.:[1162..1163] .)))
+
+;sentence 10 Span:1164..1345
+;These results are consistent with the view that  regulation of
+;cholecalciferol metabolism in the kidney is associated with an  effect of the
+;active metabolite on the kidney nucleus.
+;[1227..1242]:substance:"cholecalciferol"
+;[1312..1322]:substance:"metabolite"
+(SENT
+  (S
+    (NP-SBJ (DT:[1164..1169] These) (NNS:[1170..1177] results))
+    (VP (VBP:[1178..1181] are)
+      (ADJP-PRD (JJ:[1182..1192] consistent)
+        (PP (IN:[1193..1197] with)
+          (NP (DT:[1198..1201] the) (NN:[1202..1206] view)
+            (SBAR (IN:[1207..1211] that)
+              (S
+                (NP-SBJ-1
+                  (NP (NN:[1213..1223] regulation))
+                  (PP (IN:[1224..1226] of)
+                    (NP (NN:[1227..1242] cholecalciferol)
+                        (NN:[1243..1253] metabolism)))
+                  (PP-LOC (IN:[1254..1256] in)
+                    (NP (DT:[1257..1260] the) (NN:[1261..1267] kidney))))
+                (VP (VBZ:[1268..1270] is)
+                  (VP (VBN:[1271..1281] associated)
+                    (NP-1 (-NONE-:[1281..1281] *))
+                    (PP-CLR (IN:[1282..1286] with)
+                      (NP
+                        (NP (DT:[1287..1289] an) (NN:[1291..1297] effect))
+                        (PP (IN:[1298..1300] of)
+                          (NP (DT:[1301..1304] the) (JJ:[1305..1311] active)
+                              (NN:[1312..1322] metabolite)))
+                        (PP (IN:[1323..1325] on)
+                          (NP (DT:[1326..1329] the) (NN:[1330..1336] kidney)
+                              (NN:[1337..1344] nucleus)))))))))))))
+    (.:[1344..1345] .)))
+
+;section 11 Span:1349..1392
+;PMID: 195583 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1349..1353] PMID) (::[1353..1354] :) (CD:[1355..1361] 195583)
+        (IN:[1362..1363] -LSB-) (NNP:[1363..1369] PubMed) (HYPH:[1370..1371] -)
+        (JJ:[1372..1379] indexed) (IN:[1380..1383] for)
+        (NNP:[1384..1392] MEDLINE-RSB-)))

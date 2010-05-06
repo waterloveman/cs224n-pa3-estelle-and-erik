@@ -1,0 +1,283 @@
+;PMID: 10466827
+;source_file_2850.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..155] = [t:48..155]
+;2)section:[e:159..222] = [t:159..222]
+;3)section:[e:226..329] = [t:226..329]
+;4)sentence:[e:333..554] = [t:333..554]
+;5)sentence:[e:555..804] = [t:555..804]
+;6)sentence:[e:805..1043] = [t:805..1043]
+;7)sentence:[e:1044..1296] = [t:1044..1296]
+;8)section:[e:1300..1345] = [t:1300..1345]
+
+;section 0 Span:0..42
+;J Gen Virol.  1999 Aug;80 ( Pt 8):2275-83.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..5] Gen) (NNP:[6..11] Virol) (.:[11..12] .)
+        (CD:[14..18] 1999) (.:[19..25] Aug;80) (-LRB-:[26..27] -LRB-)
+        (NN:[28..30] Pt) (CD:[31..32] 8) (-RRB-:[32..33] -RRB-)
+        (CD:[33..38] :2275) (CD:[38..41] -83) (.:[41..42] .)))
+
+;sentence 1 Span:48..155
+;PrP (prion) gene expression in sheep may be modulated by alternative 
+;polyadenylation of its messenger RNA.
+;[48..51]:gene-rna:"PrP"
+;[53..58]:gene-rna:"prion"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP
+        (NML
+          (NML (NN:[48..51] PrP))
+          (NML (-LRB-:[52..53] -LRB-) (NN:[53..58] prion) (-RRB-:[58..59] -RRB-)))
+        (NN:[60..64] gene) (NN:[65..75] expression))
+      (PP-LOC (IN:[76..78] in)
+        (NP (NNS:[79..84] sheep))))
+    (VP (MD:[85..88] may)
+      (VP (VB:[89..91] be)
+        (VP (VBN:[92..101] modulated)
+          (NP-1 (-NONE-:[101..101] *))
+          (PP (IN:[102..104] by)
+            (NP-LGS
+              (NP (JJ:[105..116] alternative) (NN:[118..133] polyadenylation))
+              (PP (IN:[134..136] of)
+                (NP (PRP$:[137..140] its) (NN:[141..150] messenger)
+                    (NN:[151..154] RNA))))))))
+    (.:[154..155] .)))
+
+;section 2 Span:159..222
+;Goldmann W, O'Neill G, Cheung F, Charleson F, Ford P, Hunter N.
+(SEC
+  (FRAG (NNP:[159..167] Goldmann) (NNP:[168..169] W) (,:[169..170] ,)
+        (NNP:[171..178] O'Neill) (NNP:[179..180] G) (,:[180..181] ,)
+        (NNP:[182..188] Cheung) (NNP:[189..190] F) (,:[190..191] ,)
+        (NNP:[192..201] Charleson) (NNP:[202..203] F) (,:[203..204] ,)
+        (NNP:[205..209] Ford) (NNP:[210..212] P,) (NNP:[213..219] Hunter)
+        (NNP:[220..221] N) (.:[221..222] .)))
+
+;section 3 Span:226..329
+;Neuropathogenesis Unit, BBSRC Institute for Animal Health, Edinburgh, UK. 
+;Wilfred.Goldmann@bbsrc.ac.uk
+(SEC
+  (FRAG (NNP:[226..243] Neuropathogenesis) (NNP:[244..248] Unit)
+        (,:[248..249] ,) (NNP:[250..255] BBSRC) (NNP:[256..265] Institute)
+        (IN:[266..269] for) (NNP:[270..276] Animal) (NNP:[277..283] Health)
+        (,:[283..284] ,) (NNP:[285..294] Edinburgh) (,:[294..295] ,)
+        (NNP:[296..299] UK.) (NNP:[301..308] Wilfred)
+        (.:[308..329] .Goldmann@bbsrc.ac.uk)))
+
+;sentence 4 Span:333..554
+;Scrapie-associated fibrils and their major protein component, PrP or prion 
+;protein, accumulate in the brains and some other tissues of all species
+;affected  by transmissible spongiform encephalopathies or prion diseases.
+;[395..398]:gene-protein:"PrP"
+;[402..407]:gene-protein:"prion"
+;[539..544]:gene-protein:"prion"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (ADJP (NNP:[333..340] Scrapie) (HYPH:[340..341] -)
+              (VBN:[341..351] associated))
+        (NNS:[352..359] fibrils))
+      (CC:[360..363] and)
+      (NP
+        (NP (PRP$:[364..369] their) (JJ:[370..375] major)
+            (NN:[376..383] protein) (NN:[384..393] component))
+        (,:[393..394] ,)
+        (NP
+          (NP (NN:[395..398] PrP))
+          (CC:[399..401] or)
+          (NP (NN:[402..407] prion) (NN:[409..416] protein)))))
+    (,:[416..417] ,)
+    (VP (VBP:[418..428] accumulate)
+      (PP-LOC (IN:[429..431] in)
+        (NP
+          (NP
+            (NP (DT:[432..435] the) (NNS:[436..442] brains))
+            (CC:[443..446] and)
+            (NP (DT:[447..451] some) (JJ:[452..457] other)
+                (NNS:[458..465] tissues)))
+          (PP (IN:[466..468] of)
+            (NP
+              (NP (DT:[469..472] all) (NNS:[473..480] species))
+              (VP (VBN:[481..489] affected)
+                (NP (-NONE-:[489..489] *))
+                (PP (IN:[491..493] by)
+                  (NP-LGS
+                    (NP (JJ:[494..507] transmissible) (JJ:[508..518] spongiform)
+                        (NNS:[519..535] encephalopathies))
+                    (CC:[536..538] or)
+                    (NP (NN:[539..544] prion) (NNS:[545..553] diseases))))))))))
+    (.:[553..554] .)))
+
+;sentence 5 Span:555..804
+;To investigate  the role of PrP gene expression in the hosts of these
+;diseases, we have analysed  some characteristics of PrP gene RNA transcripts
+;in sheep and cattle tissues and  made comparisons with PrP RNA transcripts in
+;human and mouse tissues.
+;[583..586]:gene-rna:"PrP"
+;[677..680]:gene-rna:"PrP"
+;[757..760]:gene-rna:"PrP"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[555..555] *))
+      (VP (TO:[555..557] To)
+        (VP (VB:[558..569] investigate)
+          (NP
+            (NP (DT:[571..574] the) (NN:[575..579] role))
+            (PP (IN:[580..582] of)
+              (NP (NN:[583..586] PrP) (NN:[587..591] gene)
+                  (NN:[592..602] expression)))
+            (PP (IN:[603..605] in)
+              (NP
+                (NP (DT:[606..609] the) (NNS:[610..615] hosts))
+                (PP (IN:[616..618] of)
+                  (NP (DT:[619..624] these) (NNS:[625..633] diseases)))))))))
+    (,:[633..634] ,)
+    (NP-SBJ (PRP:[635..637] we))
+    (VP (VBP:[638..642] have)
+      (VP
+        (VP (VBN:[643..651] analysed)
+          (NP
+            (NP (DT:[653..657] some) (NNS:[658..673] characteristics))
+            (PP (IN:[674..676] of)
+              (NP
+                (NP (NN:[677..680] PrP) (NN:[681..685] gene) (NN:[686..689] RNA)
+                    (NNS:[690..701] transcripts))
+                (PP (IN:[702..704] in)
+                  (NP
+                    (NP (NN:[705..710] sheep)
+                      (NML-1 (-NONE-:[710..710] *P*)))
+                    (CC:[711..714] and)
+                    (NP (NN:[715..721] cattle)
+                      (NML-1 (NNS:[722..729] tissues)))))))))
+        (CC:[730..733] and)
+        (VP (VBN:[735..739] made)
+          (NP (NNS:[740..751] comparisons))
+          (PP (IN:[752..756] with)
+            (NP
+              (NP (NN:[757..760] PrP) (NN:[761..764] RNA)
+                  (NNS:[765..776] transcripts))
+              (PP (IN:[777..779] in)
+                (NP
+                  (NP (JJ:[780..785] human)
+                    (NML-2 (-NONE-:[785..785] *P*)))
+                  (CC:[786..789] and)
+                  (NP (NN:[790..795] mouse)
+                    (NML-2 (NNS:[796..803] tissues))))))))))
+    (.:[803..804] .)))
+
+;sentence 6 Span:805..1043
+;Two PrP  messenger RNAs of 4.6 kb and 2.1 kb, the result of alternative
+;polyadenylation,  were found first in sheep peripheral tissues and also
+;occurred at low levels in  sheep brain and bovine tissues, but not in human
+;and mouse tissues.
+;[809..812]:gene-rna:"PrP"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (CD:[805..808] Two) (NN:[809..812] PrP) (NN:[814..823] messenger)
+            (NNS:[824..828] RNAs))
+        (PP (IN:[829..831] of)
+          (NP
+            (NP (CD:[832..835] 4.6) (NN:[836..838] kb))
+            (CC:[839..842] and)
+            (NP (CD:[843..846] 2.1) (NN:[847..849] kb)))))
+      (,:[849..850] ,)
+      (NP
+        (NP (DT:[851..854] the) (NN:[855..861] result))
+        (PP (IN:[862..864] of)
+          (NP (JJ:[865..876] alternative) (NN:[877..892] polyadenylation)))))
+    (,:[892..893] ,)
+    (VP (VBD:[895..899] were)
+      (VP
+        (VP (VBN:[900..905] found)
+          (NP-1 (-NONE-:[905..905] *))
+          (ADVP (RB:[906..911] first))
+          (PP-LOC (IN:[912..914] in)
+            (NP (NN:[915..920] sheep) (JJ:[921..931] peripheral)
+                (NNS:[932..939] tissues))))
+        (CC:[940..943] and)
+        (VP
+          (VP
+            (ADVP (RB:[944..948] also))
+            (VBD:[949..957] occurred)
+            (PP (IN:[958..960] at)
+              (NP (JJ:[961..964] low) (NNS:[965..971] levels)))
+            (PP=2 (IN:[972..974] in)
+              (NP
+                (NP (NN:[976..981] sheep) (NN:[982..987] brain))
+                (CC:[988..991] and)
+                (NP (JJ:[992..998] bovine) (NNS:[999..1006] tissues)))))
+          (,:[1006..1007] ,) (CC:[1008..1011] but)
+          (VP (RB:[1012..1015] not)
+            (PP=2 (IN:[1016..1018] in)
+              (NP
+                (NP (JJ:[1019..1024] human)
+                  (NML-3 (-NONE-:[1024..1024] *P*)))
+                (CC:[1025..1028] and)
+                (NP (NN:[1029..1034] mouse)
+                  (NML-3 (NNS:[1035..1042] tissues)))))))))
+    (.:[1042..1043] .)))
+
+;sentence 7 Span:1044..1296
+;Our results  from transfection assays of murine neuroblastoma cells with
+;constructs  expressing different regions of ovine PrP messenger RNA revealed
+;the presence of  sequences in the 3' untranslated region of the gene that
+;modulate protein  synthesis.
+;[1092..1105]:malignancy-type:"neuroblastoma"
+;[1167..1170]:gene-rna:"PrP"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (PRP$:[1044..1047] Our) (NNS:[1048..1055] results))
+      (PP (IN:[1057..1061] from)
+        (NP
+          (NP (NN:[1062..1074] transfection) (NNS:[1075..1081] assays))
+          (PP (IN:[1082..1084] of)
+            (NP
+              (NP (JJ:[1085..1091] murine) (NN:[1092..1105] neuroblastoma)
+                  (NNS:[1106..1111] cells))
+              (PP (IN:[1112..1116] with)
+                (NP
+                  (NP (NNS:[1117..1127] constructs))
+                  (VP (VBG:[1129..1139] expressing)
+                    (NP
+                      (NP (JJ:[1140..1149] different) (NNS:[1150..1157] regions))
+                      (PP (IN:[1158..1160] of)
+                        (NP (JJ:[1161..1166] ovine) (NN:[1167..1170] PrP)
+                            (NN:[1171..1180] messenger) (NN:[1181..1184] RNA))))))))))))
+    (VP (VBD:[1185..1193] revealed)
+      (NP
+        (NP (DT:[1194..1197] the) (NN:[1198..1206] presence))
+        (PP (IN:[1207..1209] of)
+          (NP (NNS:[1211..1220] sequences))))
+      (PP-LOC (IN:[1221..1223] in)
+        (NP
+          (NP (DT:[1224..1227] the)
+            (NML (CD:[1228..1229] 3) (SYM:[1229..1230] '))
+            (JJ:[1231..1243] untranslated) (NN:[1244..1250] region))
+          (PP (IN:[1251..1253] of)
+            (NP
+              (NP (DT:[1254..1257] the) (NN:[1258..1262] gene))
+              (SBAR
+                (WHNP-1 (WDT:[1263..1267] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1267..1267] *T*))
+                  (VP (VBP:[1268..1276] modulate)
+                    (NP (NN:[1277..1284] protein) (NN:[1286..1295] synthesis))))))))))
+    (.:[1295..1296] .)))
+
+;section 8 Span:1300..1345
+;PMID: 10466827 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1300..1304] PMID) (::[1304..1305] :) (CD:[1306..1314] 10466827)
+        (NN:[1315..1316] -LSB-) (NNP:[1316..1322] PubMed) (::[1323..1324] -)
+        (NN:[1325..1332] indexed) (IN:[1333..1336] for)
+        (NNP:[1337..1345] MEDLINE-RSB-)))

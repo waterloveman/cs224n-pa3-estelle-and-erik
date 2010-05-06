@@ -1,0 +1,475 @@
+;PMID: 8847965
+;source_file_1731.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..226] = [t:43..226]
+;2)section:[e:230..286] = [t:230..286]
+;3)section:[e:290..361] = [t:290..361]
+;4)sentence:[e:365..515] = [t:365..515]
+;5)sentence:[e:516..623] = [t:516..623]
+;6)sentence:[e:624..716] = [t:624..716]
+;7)sentence:[e:717..824] = [t:717..824]
+;8)sentence:[e:825..927] = [t:825..927]
+;9)sentence:[e:928..1026] = [t:928..1026]
+;10)sentence:[e:1027..1175] = [t:1027..1175]
+;11)sentence:[e:1176..1412] = [t:1176..1412]
+;12)sentence:[e:1413..1540] = [t:1413..1540]
+;13)sentence:[e:1541..1726] = [t:1541..1726]
+;14)section:[e:1730..1774] = [t:1730..1774]
+
+;section 0 Span:0..37
+;Life Sci. 1995 Nov 17;57(26):2439-46.
+(SEC
+  (FRAG (NNP:[0..4] Life) (NNP:[5..8] Sci) (.:[8..9] .) (CD:[10..14] 1995)
+        (IN:[15..18] Nov) (CD:[19..24] 17;57) (-LRB-:[24..25] -LRB-)
+        (CD:[25..27] 26) (-RRB-:[27..28] -RRB-) (CD:[28..33] :2439)
+        (CD:[33..36] -46) (.:[36..37] .)))
+
+;sentence 1 Span:43..226
+;Studies on the metabolism of haloperidol (HP): the role of CYP3A in the 
+;production of the neurotoxic pyridinium metabolite HPP+ found in rat brain 
+;following ip administration of HP.
+;[72..83]:substance:"haloperidol"
+;[85..87]:substance:"HP"
+;[102..107]:cyp450:"CYP3A"
+;[145..166]:substance:"pyridinium metabolite"
+;[167..171]:substance:"HPP+"
+;[223..225]:substance:"HP"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NNS:[43..50] Studies))
+      (PP (IN:[51..53] on)
+        (NP
+          (NP (DT:[54..57] the) (NN:[58..68] metabolism))
+          (PP (IN:[69..71] of)
+            (NP
+              (NP (NN:[72..83] haloperidol))
+              (NP (-LRB-:[84..85] -LRB-) (NN:[85..87] HP) (-RRB-:[87..88] -RRB-)))))))
+    (::[88..89] :)
+    (NP
+      (NP (DT:[90..93] the) (NN:[94..98] role))
+      (PP (IN:[99..101] of)
+        (NP (NN:[102..107] CYP3A)))
+      (PP (IN:[108..110] in)
+        (NP
+          (NP (DT:[111..114] the) (NN:[116..126] production))
+          (PP (IN:[127..129] of)
+            (NP
+              (NP
+                (NP (DT:[130..133] the) (JJ:[134..144] neurotoxic)
+                   (NN:[145..155] pyridinium) (NN:[156..166] metabolite))
+                (NP (NN:[167..170] HPP) (SYM:[170..171] +)))
+              (VP (VBN:[172..177] found)
+                (NP (-NONE-:[177..177] *))
+                (PP-LOC (IN:[178..180] in)
+                  (NP (NN:[181..184] rat) (NN:[185..190] brain)))
+                (S-TMP
+                  (NP-SBJ (-NONE-:[190..190] *))
+                  (VP (VBG:[192..201] following)
+                    (NP
+                      (NP (JJ:[202..204] ip) (NN:[205..219] administration))
+                      (PP (IN:[220..222] of)
+                        (NP (NN:[223..225] HP))))))))))))
+    (.:[225..226] .)))
+
+;section 2 Span:230..286
+;Igarashi K, Kasuya F, Fukui M, Usuki E, Castagnoli N Jr.
+(SEC
+  (FRAG (NNP:[230..238] Igarashi) (NNP:[239..241] K,) (NNP:[242..248] Kasuya)
+        (NNP:[249..250] F) (,:[250..251] ,) (NNP:[252..257] Fukui)
+        (NNP:[258..260] M,) (NNP:[261..266] Usuki) (NNP:[267..268] E)
+        (,:[268..269] ,) (NNP:[270..280] Castagnoli) (NNP:[281..282] N)
+        (NNP:[283..285] Jr) (.:[285..286] .)))
+
+;section 3 Span:290..361
+;Faculty of Pharmaceutical Sciences, Kobegakuin University, Kobe, Japan.
+(SEC
+  (FRAG (IN:[290..297] Faculty) (IN:[298..300] of)
+        (NNP:[301..315] Pharmaceutical) (NNPS:[316..324] Sciences)
+        (,:[324..325] ,) (NNP:[326..336] Kobegakuin) (NNP:[337..347] University)
+        (,:[347..348] ,) (NNP:[349..353] Kobe) (,:[353..354] ,)
+        (NNP:[355..360] Japan) (.:[360..361] .)))
+
+;sentence 4 Span:365..515
+;The levels of haloperidol (HP) and its pyridinium metabolite HPP+ were
+;estimated  in plasma and brain tissues of rats treated i.p. with HP (10
+;mg/kg).
+;[379..390]:substance:"haloperidol"
+;[392..394]:substance:"HP"
+;[404..425]:substance:"pyridinium metabolite"
+;[426..430]:substance:"HPP+"
+;[501..503]:substance:"HP"
+;[505..507]:quantitative-value:"10"
+;[508..513]:quantitative-units:"mg/kg"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[365..368] The) (NNS:[369..375] levels))
+      (PP (IN:[376..378] of)
+        (NP
+          (NP
+            (NP (NN:[379..390] haloperidol))
+            (NP (-LRB-:[391..392] -LRB-) (NN:[392..394] HP)
+                (-RRB-:[394..395] -RRB-)))
+          (CC:[396..399] and)
+          (NP
+            (NP (PRP$:[400..403] its)
+               (NN:[404..414] pyridinium) (NN:[415..425] metabolite))
+            (NP (NN:[426..429] HPP) (SYM:[429..430] +))))))
+    (VP (VBD:[431..435] were)
+      (VP (VBN:[436..445] estimated)
+        (NP-1 (-NONE-:[445..445] *))
+        (PP-LOC (IN:[447..449] in)
+          (NP
+            (NP
+              (NP (NN:[450..456] plasma))
+              (CC:[457..460] and)
+              (NP (NN:[461..466] brain) (NNS:[467..474] tissues)))
+            (PP (IN:[475..477] of)
+              (NP
+                (NP (NNS:[478..482] rats))
+                (VP (VBN:[483..490] treated)
+                  (NP (-NONE-:[490..490] *))
+                  (ADVP (RB:[491..495] i.p.))
+                  (PP (IN:[496..500] with)
+                    (NP
+                      (NP (NN:[501..503] HP))
+                      (PP (-LRB-:[504..505] -LRB-)
+                        (NP
+                          (NP (CD:[505..507] 10) (NN:[508..510] mg))
+                          (PP (SYM:[510..511] /)
+                            (NP (NN:[511..513] kg))))
+                        (-RRB-:[513..514] -RRB-)))))))))))
+    (.:[514..515] .)))
+
+;sentence 5 Span:516..623
+;HP and HPP+  levels in plasma decreased linearly during the 0-3 hour period
+;following drug  administration.
+;[516..518]:substance:"HP"
+;[523..527]:substance:"HPP+"
+;[576..579]:quantitative-value:"0-3"
+;[580..584]:quantitative-units:"hour"
+;[602..606]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP
+          (NML (NN:[516..518] HP))
+          (NML-1 (-NONE-:[518..518] *P*)))
+        (CC:[519..522] and)
+        (NP
+          (NML (NN:[523..526] HPP) (SYM:[526..527] +))
+          (NML-1 (NNS:[529..535] levels))))
+      (PP-LOC (IN:[536..538] in)
+        (NP (NN:[539..545] plasma))))
+    (VP (VBD:[546..555] decreased)
+      (ADVP (RB:[556..564] linearly))
+      (PP-TMP (IN:[565..571] during)
+        (NP
+          (NP (DT:[572..575] the)
+            (NML
+              (QP (CD:[576..577] 0) (HYPH:[577..578] -) (CD:[578..579] 3))
+              (NN:[580..584] hour))
+            (NN:[585..591] period))
+          (VP (VBG:[592..601] following)
+            (NP (NN:[602..606] drug) (NN:[608..622] administration))))))
+    (.:[622..623] .)))
+
+;sentence 6 Span:624..716
+;On the other hand, HPP+ levels in brain tissues increased  gradually during
+;the same period.
+;[643..647]:substance:"HPP+"
+(SENT
+  (S
+    (PP (IN:[624..626] On)
+      (NP (DT:[627..630] the) (JJ:[631..636] other) (NN:[637..641] hand)))
+    (,:[641..642] ,)
+    (NP-SBJ
+      (NP
+        (NML (NN:[643..646] HPP) (SYM:[646..647] +))
+        (NNS:[648..654] levels))
+      (PP-LOC (IN:[655..657] in)
+        (NP (NN:[658..663] brain) (NNS:[664..671] tissues))))
+    (VP (VBD:[672..681] increased)
+      (ADVP-MNR (RB:[683..692] gradually))
+      (PP-TMP (IN:[693..699] during)
+        (NP (DT:[700..703] the) (JJ:[704..708] same) (NN:[709..715] period))))
+    (.:[715..716] .)))
+
+;sentence 7 Span:717..824
+;HPP+ levels in brain tissues increased further  when HP (10 mg/kg) was
+;injected for three consecutive days.
+;[717..721]:substance:"HPP+"
+;[770..772]:substance:"HP"
+;[774..776]:quantitative-value:"10"
+;[777..782]:quantitative-units:"mg/kg"
+;[801..806]:quantitative-value:"three"
+;[819..823]:quantitative-units:"days"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (NN:[717..720] HPP) (SYM:[720..721] +))
+        (NNS:[722..728] levels))
+      (PP-LOC (IN:[729..731] in)
+        (NP (NN:[732..737] brain) (NNS:[738..745] tissues))))
+    (VP (VBD:[746..755] increased)
+      (ADVP-EXT (RBR:[756..763] further))
+      (SBAR-ADV
+        (WHADVP-2 (WRB:[765..769] when))
+        (S
+          (NP-SBJ-1 (NN:[770..772] HP)
+            (PRN (-LRB-:[773..774] -LRB-)
+              (NP
+                (NP (CD:[774..776] 10) (NN:[777..779] mg))
+                (PP (SYM:[779..780] /)
+                  (NP (NN:[780..782] kg))))
+              (-RRB-:[782..783] -RRB-)))
+          (VP (VBD:[784..787] was)
+            (VP (VBN:[788..796] injected)
+              (NP-1 (-NONE-:[796..796] *))
+              (PP-TMP (IN:[797..800] for)
+                (NP (CD:[801..806] three) (JJ:[807..818] consecutive)
+                    (NNS:[819..823] days)))
+              (ADVP-TMP-2 (-NONE-:[823..823] *T*)))))))
+    (.:[823..824] .)))
+
+;sentence 8 Span:825..927
+;The formation of  HPP+ also was studied in rat brain mitochondrial and liver
+;microsomal  preparations.
+;[843..847]:substance:"HPP+"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[825..828] The) (NN:[829..838] formation))
+      (PP (IN:[839..841] of)
+        (NP (NN:[843..846] HPP) (SYM:[846..847] +))))
+    (ADVP (RB:[848..852] also))
+    (VP (VBD:[853..856] was)
+      (VP (VBN:[857..864] studied)
+        (NP-3 (-NONE-:[864..864] *))
+        (PP-LOC (IN:[865..867] in)
+          (NP
+            (NP
+              (NML-1 (NN:[868..871] rat))
+              (NN:[872..877] brain) (JJ:[878..891] mitochondrial)
+              (NML-2 (-NONE-:[891..891] *P*)))
+            (CC:[892..895] and)
+            (NP
+              (NML-1 (-NONE-:[895..895] *P*))
+              (NN:[896..901] liver) (JJ:[902..912] microsomal)
+              (NML-2 (NNS:[914..926] preparations)))))))
+    (.:[926..927] .)))
+
+;sentence 9 Span:928..1026
+;Enzyme activity responsible for the conversion of HP to HPP+ was  not found
+;in brain mitochondria.
+;[928..934]:substance:"Enzyme"
+;[978..980]:substance:"HP"
+;[984..988]:substance:"HPP+"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[928..934] Enzyme) (NN:[935..943] activity))
+      (ADJP (JJ:[944..955] responsible)
+        (PP (IN:[956..959] for)
+          (NP
+            (NP (DT:[960..963] the) (NN:[964..974] conversion))
+            (NP (IN:[975..977] of)
+              (NP (NN:[978..980] HP)))
+            (PP (TO:[981..983] to)
+              (NP (NN:[984..987] HPP) (SYM:[987..988] +)))))))
+    (VP (VBD:[989..992] was) (RB:[994..997] not)
+      (VP (VBN:[998..1003] found)
+        (NP-1 (-NONE-:[1003..1003] *))
+        (PP-LOC (IN:[1004..1006] in)
+          (NP (NN:[1007..1012] brain) (NNS:[1013..1025] mitochondria)))))
+    (.:[1025..1026] .)))
+
+;sentence 10 Span:1027..1175
+;Liver microsomal enzymes catalyzed the  oxidation of HP and its
+;tetrahydropyridine dehydration product HPTP to HPP+ with  about the same
+;efficiency.
+;[1044..1051]:substance:"enzymes"
+;[1080..1082]:substance:"HP"
+;[1091..1109]:substance:"tetrahydropyridine"
+;[1130..1134]:substance:"HPTP"
+;[1138..1142]:substance:"HPP+"
+(SENT
+  (S
+    (NP-SBJ (NN:[1027..1032] Liver) (JJ:[1033..1043] microsomal)
+            (NNS:[1044..1051] enzymes))
+    (VP (VBD:[1052..1061] catalyzed)
+      (NP
+        (NP (DT:[1062..1065] the) (NN:[1067..1076] oxidation))
+        (PP (IN:[1077..1079] of)
+          (NP
+            (NP (NN:[1080..1082] HP))
+            (CC:[1083..1086] and)
+            (NP (PRP$:[1087..1090] its)
+              (NP
+                (NP (NN:[1091..1109] tetrahydropyridine)
+                    (NN:[1110..1121] dehydration) (NN:[1122..1129] product))
+                (NP (NN:[1130..1134] HPTP))))))
+        (PP (TO:[1135..1137] to)
+          (NP (NN:[1138..1141] HPP) (SYM:[1141..1142] +))))
+      (PP-MNR (IN:[1143..1147] with)
+        (NP (RB:[1149..1154] about) (DT:[1155..1158] the) (JJ:[1159..1163] same)
+            (NN:[1164..1174] efficiency))))
+    (.:[1174..1175] .)))
+
+;sentence 11 Span:1176..1412
+;Studies employing several cytochrome P450 inhibitors  and anti-cytochrome
+;P450 antibodies were carried out in an effort to identify  the forms of
+;cytochrome P450 that are responsible for catalyzing the oxidation  of HP and
+;HPTP to HPP+.
+;[1202..1217]:cyp450:"cytochrome P450"
+;[1218..1228]:substance:"inhibitors"
+;[1234..1265]:substance:"anti-cytochrome P450 antibodies"
+;[1322..1337]:cyp450:"cytochrome P450"
+;[1392..1394]:substance:"HP"
+;[1399..1403]:substance:"HPTP"
+;[1407..1411]:substance:"HPP+"
+(SENT
+  (ADJP
+    (NP-SBJ-2
+      (NP (NNS:[1176..1183] Studies))
+      (VP (VBG:[1184..1193] employing)
+        (NP (JJ:[1194..1201] several)
+          (NP
+            (NML (NN:[1202..1212] cytochrome) (NN:[1213..1217] P450))
+            (NNS:[1218..1228] inhibitors))
+          (CC:[1230..1233] and)
+          (NP
+            (NML (AFX:[1234..1238] anti) (HYPH:[1238..1239] -)
+                 (NN:[1239..1249] cytochrome) (NN:[1250..1254] P450))
+            (NNS:[1255..1265] antibodies)))))
+    (VP (VBD:[1266..1270] were)
+      (VP (VBN:[1271..1278] carried)
+        (PRT (RP:[1279..1282] out))
+        (NP-2 (-NONE-:[1282..1282] *))
+        (PP (IN:[1283..1285] in)
+          (NP
+            (NP (DT:[1286..1288] an) (NN:[1289..1295] effort))
+            (SBAR
+              (WHNP-3 (-NONE-:[1295..1295] 0))
+              (S
+                (NP-SBJ-3 (-NONE-:[1295..1295] *))
+                (VP (TO:[1296..1298] to)
+                  (VP (VB:[1299..1307] identify)
+                    (NP
+                      (NP
+                        (NP (DT:[1309..1312] the) (NNS:[1313..1318] forms))
+                        (PP (IN:[1319..1321] of)
+                          (NP (NN:[1322..1332] cytochrome)
+                              (NN:[1333..1337] P450))))
+                      (SBAR
+                        (WHNP-1 (WDT:[1338..1342] that))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[1342..1342] *T*))
+                          (VP (VBP:[1343..1346] are)
+                            (ADJP-PRD (JJ:[1347..1358] responsible)
+                              (PP (IN:[1359..1362] for)
+                                (S-NOM
+                                  (NP-SBJ (-NONE-:[1362..1362] *))
+                                  (VP (VBG:[1363..1373] catalyzing)
+                                    (NP
+                                      (NP (DT:[1374..1377] the)
+                                          (NN:[1378..1387] oxidation))
+                                      (PP (IN:[1389..1391] of)
+                                        (NP (NN:[1392..1394] HP)
+                                            (CC:[1395..1398] and)
+                                            (NN:[1399..1403] HPTP)))
+                                      (PP (TO:[1404..1406] to)
+                                        (NP (NN:[1407..1410] HPP)
+                                            (SYM:[1410..1411] +))))))))))))))))))))
+    (.:[1411..1412] .)))
+
+;sentence 12 Span:1413..1540
+;The formation of HPP+ in liver microsomes was strongly  inhibited by
+;ketoconazole and nifedipine and by an anti-CYP3A antibody.
+;[1430..1434]:substance:"HPP+"
+;[1482..1494]:substance:"ketoconazole"
+;[1499..1509]:substance:"nifedipine"
+;[1520..1539]:substance:"anti-CYP3A antibody"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1413..1416] The) (NN:[1417..1426] formation))
+      (PP (IN:[1427..1429] of)
+        (NP (NN:[1430..1433] HPP) (SYM:[1433..1434] +)))
+      (PP-LOC (IN:[1435..1437] in)
+        (NP (NN:[1438..1443] liver) (NNS:[1444..1454] microsomes))))
+    (VP (VBD:[1455..1458] was)
+      (ADVP (RB:[1459..1467] strongly))
+      (VP (VBN:[1469..1478] inhibited)
+        (NP-1 (-NONE-:[1478..1478] *))
+        (PP
+          (PP (IN:[1479..1481] by)
+            (NP-LGS (NN:[1482..1494] ketoconazole) (CC:[1495..1498] and)
+                    (NN:[1499..1509] nifedipine)))
+          (CC:[1510..1513] and)
+          (PP (IN:[1514..1516] by)
+            (NP-LGS (DT:[1517..1519] an)
+              
+              (NML (AFX:[1520..1524] anti) (HYPH:[1524..1525] -)
+                   (NN:[1525..1530] CYP3A))
+              (NN:[1531..1539] antibody))))))
+    (.:[1539..1540] .)))
+
+;sentence 13 Span:1541..1726
+;These  results suggest that formation of HPP+ from HP and HPTP in rat liver
+;microsomes  is catalyzed mainly by CYP3A although the participation of other
+;P450 forms  cannot be ruled out.
+;[1582..1586]:substance:"HPP+"
+;[1592..1594]:substance:"HP"
+;[1599..1603]:substance:"HPTP"
+;[1652..1657]:cyp450:"CYP3A"
+;[1694..1698]:cyp450:"P450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1541..1546] These) (NNS:[1548..1555] results))
+    (VP (VBP:[1556..1563] suggest)
+      (SBAR (IN:[1564..1568] that)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1569..1578] formation))
+            (PP (IN:[1579..1581] of)
+              (NP (NN:[1582..1585] HPP) (SYM:[1585..1586] +)))
+            (PP (IN:[1587..1591] from)
+              (NP (NN:[1592..1594] HP) (CC:[1595..1598] and)
+                  (NN:[1599..1603] HPTP)))
+            (PP (IN:[1604..1606] in)
+              (NP (NN:[1607..1610] rat) (NN:[1611..1616] liver)
+                  (NNS:[1617..1627] microsomes))))
+          (VP (VBZ:[1629..1631] is)
+            (VP (VBN:[1632..1641] catalyzed)
+              (NP-1 (-NONE-:[1641..1641] *))
+              (ADVP (RB:[1642..1648] mainly))
+              (PP (IN:[1649..1651] by)
+                (NP-LGS (NN:[1652..1657] CYP3A)))
+              (SBAR-ADV (IN:[1658..1666] although)
+                (S
+                  (NP-SBJ-2
+                    (NP (DT:[1667..1670] the) (NN:[1671..1684] participation))
+                    (PP (IN:[1685..1687] of)
+                      (NP (JJ:[1688..1693] other) (NN:[1694..1698] P450)
+                          (NNS:[1699..1704] forms))))
+                  (VP (MD:[1706..1712] cannot)
+                    (VP (VB:[1713..1715] be)
+                      (VP (VBN:[1716..1721] ruled)
+                        (PRT (RP:[1722..1725] out))
+                        (NP-2 (-NONE-:[1725..1725] *))))))))))))
+    (.:[1725..1726] .)))
+
+;section 14 Span:1730..1774
+;PMID: 8847965 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1730..1734] PMID) (::[1734..1735] :) (CD:[1736..1743] 8847965)
+        (NN:[1744..1745] -LSB-) (NNP:[1745..1751] PubMed) (::[1752..1753] -)
+        (NN:[1754..1761] indexed) (IN:[1762..1765] for)
+        (NNP:[1766..1774] MEDLINE-RSB-)))

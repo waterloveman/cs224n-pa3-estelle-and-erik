@@ -1,0 +1,392 @@
+;PMID: 7297026
+;source_file_1798.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..123] = [t:49..123]
+;2)section:[e:127..152] = [t:127..152]
+;3)sentence:[e:156..267] = [t:156..267]
+;4)sentence:[e:268..492] = [t:268..492]
+;5)sentence:[e:493..566] = [t:493..566]
+;6)sentence:[e:567..871] = [t:567..871]
+;7)sentence:[e:873..969] = [t:873..969]
+;8)sentence:[e:970..1095] = [t:970..1095]
+;9)sentence:[e:1096..1273] = [t:1096..1273]
+;10)sentence:[e:1274..1379] = [t:1274..1379]
+;11)section:[e:1383..1427] = [t:1383..1427]
+
+;section 0 Span:0..43
+;Clin Pharmacol Ther. 1981 Nov;30(5):687-92.
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..14] Pharmacol) (NNP:[15..19] Ther)
+        (.:[19..20] .) (CD:[21..25] 1981) (CD:[26..32] Nov;30)
+        (-LRB-:[32..33] -LRB-) (CD:[33..34] 5) (-RRB-:[34..35] -RRB-)
+        (CD:[35..39] :687) (::[39..40] -) (CD:[40..42] 92) (.:[42..43] .)))
+
+;sentence 1 Span:49..123
+;Sensitivity of human placental monooxygenase activity to maternal smoking.
+;[80..93]:substance:"monooxygenase"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..60] Sensitivity))
+    (PP (IN:[61..63] of)
+      (NP (JJ:[64..69] human) (JJ:[70..79] placental)
+          (NN:[80..93] monooxygenase) (NN:[94..102] activity)))
+    (PP (TO:[103..105] to)
+      (NP (JJ:[106..114] maternal) (NN:[115..122] smoking)))
+    (.:[122..123] .)))
+
+;section 2 Span:127..152
+;Manchester DK, Jacoby EH.
+(SEC
+  (FRAG (NNP:[127..137] Manchester) (NNP:[138..140] DK) (,:[140..141] ,)
+        (NNP:[142..148] Jacoby) (NNP:[149..152] EH.)))
+
+;sentence 3 Span:156..267
+;The in vitro oxidation of 7-ethoxyresorufin was studied in placental
+;microsomes  from 47 full-term pregnancies.
+;[182..199]:substance:"7-ethoxyresorufin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[156..159] The)
+        (ADJP (FW:[160..162] in) (FW:[163..168] vitro))
+        (NN:[169..178] oxidation))
+      (PP (IN:[179..181] of)
+        (NP (NN:[182..199] 7-ethoxyresorufin))))
+    (VP (VBD:[200..203] was)
+      (VP (VBN:[204..211] studied)
+        (NP-1 (-NONE-:[211..211] *))
+        (PP-LOC (IN:[212..214] in)
+          (NP
+            (NP (JJ:[215..224] placental) (NNS:[225..235] microsomes))
+            (PP (IN:[237..241] from)
+              (NP (CD:[242..244] 47)
+                (NML (JJ:[245..249] full) (HYPH:[249..250] -)
+                     (NN:[250..254] term))
+                (NNS:[255..266] pregnancies)))))))
+    (.:[266..267] .)))
+
+;sentence 4 Span:268..492
+;Placental activities were compared in four groups  formed on the basis of
+;maternal smoking history as follows: nonsmokers (n = 12),  passive smokers (n
+;= 16), 1 to 20 cigarettes/day (n = 13), and 20+  cigarettes/day (n = 5).
+;[427..434]:quantitative-value:"1 to 20"
+;[435..449]:quantitative-units:"cigarettes/day"
+;[464..467]:quantitative-value:"20+"
+;[469..483]:quantitative-units:"cigarettes/day"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[268..277] Placental) (NNS:[278..288] activities))
+    (VP (VBD:[289..293] were)
+      (VP (VBN:[294..302] compared)
+        (NP-1 (-NONE-:[302..302] *))
+        (PP (IN:[303..305] in)
+          (NP
+            (NP (CD:[306..310] four) (NNS:[311..317] groups))
+            (VP (VBN:[319..325] formed)
+              (NP (-NONE-:[325..325] *))
+              (PP (IN:[326..328] on)
+                (NP
+                  (NP (DT:[329..332] the) (NN:[333..338] basis))
+                  (PP (IN:[339..341] of)
+                    (NP (JJ:[342..350] maternal) (NN:[351..358] smoking)
+                        (NN:[359..366] history)))))
+              (PP (IN:[367..369] as)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[369..369] *))
+                  (VP (VBZ:[370..377] follows) (::[377..378] :)
+                    (NP
+                      (NP (NNS:[379..389] nonsmokers)
+                        (PRN (-LRB-:[390..391] -LRB-)
+                          (S
+                            (NP-SBJ (NN:[391..392] n))
+                            (VP (SYM:[393..394] =)
+                              (NP (CD:[395..397] 12))))
+                          (-RRB-:[397..398] -RRB-)))
+                      (,:[398..399] ,)
+                      (NP (JJ:[401..408] passive) (NNS:[409..416] smokers)
+                        (PRN (-LRB-:[417..418] -LRB-)
+                          (S
+                            (NP-SBJ (NN:[418..419] n))
+                            (VP (SYM:[420..421] =)
+                              (NP (CD:[422..424] 16))))
+                          (-RRB-:[424..425] -RRB-)))
+                      (,:[425..426] ,)
+                      (NP
+                        (NP
+                          (QP (CD:[427..428] 1) (TO:[429..431] to)
+                              (CD:[432..434] 20))
+                          (NNS:[435..445] cigarettes))
+                        (PP (SYM:[445..446] /)
+                          (NP (NN:[446..449] day)))
+                        (PRN (-LRB-:[450..451] -LRB-)
+                          (S
+                            (NP-SBJ (NN:[451..452] n))
+                            (VP (SYM:[453..454] =)
+                              (NP (CD:[455..457] 13))))
+                          (-RRB-:[457..458] -RRB-)))
+                      (,:[458..459] ,) (CC:[460..463] and)
+                      (NP
+                        (NP
+                          (QP (CD:[464..466] 20) (SYM:[466..467] +))
+                          (NNS:[469..479] cigarettes))
+                        (PP (SYM:[479..480] /)
+                          (NP (NN:[480..483] day)))
+                        (PRN (-LRB-:[484..485] -LRB-)
+                          (S
+                            (NP-SBJ (NN:[485..486] n))
+                            (VP (SYM:[487..488] =)
+                              (NP (CD:[489..490] 5))))
+                          (-RRB-:[490..491] -RRB-))))))))))))
+    (.:[491..492] .)))
+
+;sentence 5 Span:493..566
+;Passive smoking was defined as living with someone who  smoke cigarettes.
+;[555..565]:substance:"cigarettes"
+(SENT
+  (S
+    (NP-SBJ-2 (JJ:[493..500] Passive) (NN:[501..508] smoking))
+    (VP (VBD:[509..512] was)
+      (VP (VBN:[513..520] defined)
+        (NP-2 (-NONE-:[520..520] *))
+        (PP-CLR (IN:[521..523] as)
+          (S-NOM
+            (NP-SBJ (-NONE-:[523..523] *))
+            (VP (VBG:[524..530] living)
+              (PP (IN:[531..535] with)
+                (NP
+                  (NP (PRP:[536..543] someone))
+                  (SBAR
+                    (WHNP-1 (WP:[544..547] who))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[547..547] *T*))
+                      (VP (VBP:[549..554] smoke)
+                        (NP (NNS:[555..565] cigarettes))))))))))))
+    (.:[565..566] .)))
+
+;sentence 6 Span:567..871
+;Umbilical cord plasma thiocyanate concentrations were measured  to confirm
+;histories and were higher when mothers smoked (80 +/- 10 micro M, 1  to 20
+;cigarettes/day, 116 +/- 8 micro M, 20+ cigarettes/day) than when mothers  did
+;not smoke (34 +/- 3 micro M, nonsmokers; 35 +/- 3 micro M, passive smokers).
+;[589..600]:substance:"thiocyanate"
+;[689..698]:quantitative-value:"80 +/- 10"
+;[699..706]:quantitative-units:"micro M"
+;[708..716]:quantitative-value:"1  to 20"
+;[717..731]:quantitative-units:"cigarettes/day"
+;[733..742]:quantitative-value:"116 +/- 8"
+;[743..750]:quantitative-units:"micro M"
+;[752..755]:quantitative-value:"20+"
+;[756..770]:quantitative-units:"cigarettes/day"
+;[806..814]:quantitative-value:"34 +/- 3"
+;[815..822]:quantitative-units:"micro M"
+;[836..844]:quantitative-value:"35 +/- 3"
+;[845..852]:quantitative-units:"micro M"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NML
+        (NML (JJ:[567..576] Umbilical) (NN:[577..581] cord))
+        (NN:[582..588] plasma))
+      (NN:[589..600] thiocyanate) (NNS:[601..615] concentrations))
+    (VP
+      (VP (VBD:[616..620] were)
+        (VP (VBN:[621..629] measured)
+          (NP-2 (-NONE-:[629..629] *))
+          (S-PRP
+            (NP-SBJ (-NONE-:[629..629] *))
+            (VP (TO:[631..633] to)
+              (VP (VB:[634..641] confirm)
+                (NP (NNS:[642..651] histories)))))))
+      (CC:[652..655] and)
+      (VP (VBD:[656..660] were)
+        (ADJP-PRD
+          (ADJP (JJR:[661..667] higher))
+          (PP-4 (-NONE-:[667..667] *ICH*)))
+        (SBAR-ADV
+          (WHADVP-3 (WRB:[668..672] when))
+          (S
+            (NP-SBJ (NNS:[673..680] mothers))
+            (VP (VBD:[681..687] smoked)
+              (ADVP-3 (-NONE-:[687..687] *T*))
+              (PRN (-LRB-:[688..689] -LRB-)
+                (FRAG
+                  (NP
+                    (QP (CD:[689..691] 80) (SYM:[692..695] +/-)
+                        (CD:[696..698] 10))
+                     (NN:[699..704] micro) (NN:[705..706] M))
+                  (,:[706..707] ,)
+                  (NP
+                    (NP
+                      (QP (CD:[708..709] 1) (TO:[711..713] to)
+                          (CD:[714..716] 20))
+                      (NNS:[717..727] cigarettes))
+                    (PP (SYM:[727..728] /)
+                      (NP (NN:[728..731] day)))))
+                (,:[731..732] ,)
+                (FRAG
+                  (NP
+                    (QP (CD:[733..736] 116) (SYM:[737..740] +/-)
+                        (CD:[741..742] 8))
+                     (NN:[743..748] micro) (NN:[749..750] M))
+                  (,:[750..751] ,)
+                  (NP
+                    (NP
+                      (QP (CD:[752..754] 20) (SYM:[754..755] +))
+                      (NNS:[756..766] cigarettes))
+                    (PP (SYM:[766..767] /)
+                      (NP (NN:[767..770] day)))))
+                (-RRB-:[770..771] -RRB-)))))
+        (PP-4 (IN:[772..776] than)
+          (SBAR
+            (WHADVP-1 (WRB:[777..781] when))
+            (S
+              (NP-SBJ (NNS:[782..789] mothers))
+              (VP (VBD:[791..794] did) (RB:[795..798] not)
+                (VP (VB:[799..804] smoke)
+                  (ADVP-1 (-NONE-:[804..804] *T*))
+                  (PRN (-LRB-:[805..806] -LRB-)
+                    (FRAG
+                      (NP
+                        (QP (CD:[806..808] 34) (SYM:[809..812] +/-)
+                            (CD:[813..814] 3))
+                         (NN:[815..820] micro) (NN:[821..822] M))
+                      (,:[822..823] ,)
+                      (NP (NNS:[824..834] nonsmokers)))
+                    (::[834..835] ;)
+                    (FRAG
+                      (NP
+                        (QP (CD:[836..838] 35) (SYM:[839..842] +/-)
+                            (CD:[843..844] 3))
+                         (NN:[845..850] micro) (NN:[851..852] M))
+                      (,:[852..853] ,)
+                      (NP (JJ:[854..861] passive) (NNS:[862..869] smokers)))
+                    (-RRB-:[869..870] -RRB-)))))))))
+    (.:[870..871] .)))
+
+;sentence 7 Span:873..969
+;7-Ethoxyresorufin O-deethylase activity was increased 10- to 30-fold in 
+;placentas from smokers.
+;[873..903]:cyp450:"7-Ethoxyresorufin O-deethylase"
+;[927..941]:quantitative-value:"10- to 30-fold"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[873..890] 7-Ethoxyresorufin) (NN:[891..903] O-deethylase))
+      (NN:[904..912] activity))
+    (VP (VBD:[913..916] was)
+      (VP (VBN:[917..926] increased)
+        (NP-1 (-NONE-:[926..926] *))
+        (ADVP-EXT
+          (QP (CD:[927..929] 10) (HYPH:[929..930] -) (TO:[931..933] to)
+              (CD:[934..936] 30))
+          (HYPH:[936..937] -) (RB:[937..941] fold))
+        (PP-LOC (IN:[942..944] in)
+          (NP
+            (NP (NNS:[946..955] placentas))
+            (PP (IN:[956..960] from)
+              (NP (NNS:[961..968] smokers)))))))
+    (.:[968..969] .)))
+
+;sentence 8 Span:970..1095
+;Activity toward 7-ethoxyresorufin in placentas from  smokers was markedly
+;inhibited in vitro by addition of 7,8-benzoflavone.
+;[986..1003]:substance:"7-ethoxyresorufin"
+;[1078..1094]:substance:"7,8-benzoflavone"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[970..978] Activity))
+      (PP (IN:[979..985] toward)
+        (NP (NN:[986..1003] 7-ethoxyresorufin)))
+      (PP-LOC (IN:[1004..1006] in)
+        (NP
+          (NP (NNS:[1007..1016] placentas))
+          (PP (IN:[1017..1021] from)
+            (NP (NNS:[1023..1030] smokers))))))
+    (VP (VBD:[1031..1034] was)
+      (ADVP (RB:[1035..1043] markedly))
+      (VP (VBN:[1044..1053] inhibited)
+        (NP-1 (-NONE-:[1053..1053] *))
+        (ADVP (FW:[1054..1056] in) (FW:[1057..1062] vitro))
+        (PP (IN:[1063..1065] by)
+          (NP-LGS
+            (NP (NN:[1066..1074] addition))
+            (PP (IN:[1075..1077] of)
+              (NP (NN:[1078..1094] 7,8-benzoflavone)))))))
+    (.:[1094..1095] .)))
+
+;sentence 9 Span:1096..1273
+;Among  nonsmokers, percent inhibition of O-deethylase activity by
+;7,8-benzoflavone was  greater (P less than 0.05) in placentas from women
+;passively exposed to  cigarette smoke.
+;[1137..1149]:substance:"O-deethylase"
+;[1162..1178]:substance:"7,8-benzoflavone"
+;[1257..1272]:substance:"cigarette smoke"
+(SENT
+  (S
+    (PP (IN:[1096..1101] Among)
+      (NP (NNS:[1103..1113] nonsmokers)))
+    (,:[1113..1114] ,)
+    (NP-SBJ
+      (NP (NN:[1115..1122] percent) (NN:[1123..1133] inhibition))
+      (PP (IN:[1134..1136] of)
+        (NP (NN:[1137..1149] O-deethylase) (NN:[1150..1158] activity)))
+      (PP (IN:[1159..1161] by)
+        (NP (NN:[1162..1178] 7,8-benzoflavone))))
+    (VP (VBD:[1179..1182] was)
+      (ADJP-PRD (JJR:[1184..1191] greater)
+        (PRN (-LRB-:[1192..1193] -LRB-)
+          (S
+            (NP-SBJ (NN:[1193..1194] P))
+            (ADJP-PRD
+              (ADJP (JJR:[1195..1199] less))
+              (PP (IN:[1200..1204] than)
+                (NP (CD:[1205..1209] 0.05)))))
+          (-RRB-:[1209..1210] -RRB-)))
+      (PP-LOC (IN:[1211..1213] in)
+        (NP
+          (NP (NNS:[1214..1223] placentas))
+          (PP (IN:[1224..1228] from)
+            (NP
+              (NP (NNS:[1229..1234] women))
+              (VP
+                (ADVP (RB:[1235..1244] passively))
+                (VBN:[1245..1252] exposed)
+                (NP (-NONE-:[1252..1252] *))
+                (PP (TO:[1253..1255] to)
+                  (NP (NN:[1257..1266] cigarette) (NN:[1267..1272] smoke)))))))))
+    (.:[1272..1273] .)))
+
+;sentence 10 Span:1274..1379
+;Human placental monooxygenase activity is sensitive to both  active and
+;passive cigarette smoke exposure.
+;[1290..1303]:substance:"monooxygenase"
+;[1354..1369]:substance:"cigarette smoke"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1274..1279] Human) (JJ:[1280..1289] placental)
+            (NN:[1290..1303] monooxygenase) (NN:[1304..1312] activity))
+    (VP (VBZ:[1313..1315] is)
+      (ADJP-PRD (JJ:[1316..1325] sensitive)
+        (PP (TO:[1326..1328] to)
+          (NP (CC:[1329..1333] both)
+            (NML
+              (NML (JJ:[1335..1341] active)
+                (NML-1 (-NONE-:[1341..1341] *P*)))
+              (CC:[1342..1345] and)
+              (NML (JJ:[1346..1353] passive)
+                (NML-1
+                  (NML (NN:[1354..1363] cigarette) (NN:[1364..1369] smoke))
+                  (NN:[1370..1378] exposure))))))))
+    (.:[1378..1379] .)))
+
+;section 11 Span:1383..1427
+;PMID: 7297026 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1383..1387] PMID) (::[1387..1388] :) (CD:[1389..1396] 7297026)
+        (NN:[1397..1398] -LSB-) (NNP:[1398..1404] PubMed) (::[1405..1406] -)
+        (NN:[1407..1414] indexed) (IN:[1415..1418] for)
+        (NNP:[1419..1427] MEDLINE-RSB-)))

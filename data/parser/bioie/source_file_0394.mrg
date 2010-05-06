@@ -1,0 +1,447 @@
+;PMID: 8225232
+;source_file_877.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..151] = [t:41..151]
+;2)section:[e:155..182] = [t:155..182]
+;3)section:[e:186..280] = [t:186..280]
+;4)sentence:[e:284..520] = [t:284..520]
+;5)sentence:[e:522..700] = [t:522..700]
+;6)sentence:[e:701..820] = [t:701..820]
+;7)sentence:[e:821..993] = [t:821..993]
+;8)sentence:[e:994..1064] = [t:994..1064]
+;9)sentence:[e:1065..1294] = [t:1065..1294]
+;10)sentence:[e:1295..1520] = [t:1295..1520]
+;11)sentence:[e:1521..1724] = [t:1521..1724]
+;12)sentence:[e:1725..1842] = [t:1725..1842]
+;13)section:[e:1842..1876] = [t:1842..1876]
+;14)section:[e:1880..1924] = [t:1880..1924]
+
+;section 0 Span:0..35
+;Hepatology. 1993 Nov;18(5):1247-53.
+(SEC
+  (FRAG (NNP:[0..10] Hepatology) (,:[10..11] .) (CD:[12..16] 1993)
+        (CC:[17..24] Nov;18-LRB-) (CD:[24..25] 5) (-RRB-:[25..26] -RRB-)
+        (CD:[26..31] :1247) (::[31..32] -) (CD:[32..34] 53) (.:[34..35] .)))
+
+;sentence 1 Span:41..151
+;Alcohol consumption enhances fatty acid omega-oxidation, with a greater
+;increase  in male than in female rats.
+;[41..48]:substance:"Alcohol"
+;[70..80]:substance:"fatty acid"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[41..48] Alcohol) (NN:[49..60] consumption))
+    (VP (VBZ:[61..69] enhances)
+      (NP
+        (NML (JJ:[70..75] fatty) (NN:[76..80] acid))
+        (NN:[81..96] omega-oxidation))
+      (,:[96..97] ,)
+      (PP (IN:[98..102] with)
+        (NP
+          (NP (DT:[103..104] a) (JJR:[105..112] greater)
+              (NN:[113..121] increase))
+          (PP (IN:[123..125] in)
+            (NP (JJ:[126..130] male)))
+          (PP (IN:[131..135] than)
+            (PP (IN:[136..138] in)
+              (NP (JJ:[139..145] female) (NNS:[146..150] rats)))))))
+    (.:[150..151] .)))
+
+;section 2 Span:155..182
+;Ma X, Baraona E, Lieber CS.
+(SEC
+  (FRAG (NNP:[155..157] Ma) (NNP:[158..159] X) (,:[159..160] ,)
+        (NNP:[161..168] Baraona) (NNP:[169..170] E) (,:[170..171] ,)
+        (NNP:[172..178] Lieber) (NNP:[179..181] CS) (.:[181..182] .)))
+
+;section 3 Span:186..280
+;Alcohol Research and Treatment Center, Veteran Affairs Medical Center, Bronx,
+; New York 10468.
+(SEC
+  (FRAG (NNP:[186..193] Alcohol) (NNP:[194..202] Research) (CC:[203..206] and)
+        (NNP:[207..216] Treatment) (NNP:[217..223] Center) (,:[223..224] ,)
+        (NNP:[225..232] Veteran) (NNP:[233..240] Affairs)
+        (NNP:[241..248] Medical) (NNP:[249..255] Center) (,:[255..256] ,)
+        (NNP:[257..262] Bronx) (,:[262..263] ,) (NNP:[265..268] New)
+        (NNP:[269..273] York) (.:[274..279] 10468) (.:[279..280] .)))
+
+;sentence 4 Span:284..520
+;Because ethanol inhibits mitochondrial fatty acid oxidation, with substantial
+; accumulation of fatty acids in the livers of female (but not male) rats, and
+; induces microsomal activities, we assessed possible changes in
+;omega-oxidation.
+;[292..299]:substance:"ethanol"
+;[323..333]:substance:"fatty acid"
+;[379..390]:substance:"fatty acids"
+(SENT
+  (S
+    (SBAR-PRP (IN:[284..291] Because)
+      (S
+        (NP-SBJ (NN:[292..299] ethanol))
+        (VP
+          (VP (VBZ:[300..308] inhibits)
+            (NP (JJ:[309..322] mitochondrial)
+              (NML (JJ:[323..328] fatty) (NN:[329..333] acid))
+              (NN:[334..343] oxidation))
+            (,:[343..344] ,)
+            (PP (IN:[345..349] with)
+              (NP
+                (NP (JJ:[350..361] substantial) (NN:[363..375] accumulation))
+                (PP (IN:[376..378] of)
+                  (NP (JJ:[379..384] fatty) (NNS:[385..390] acids)))
+                (PP-LOC (IN:[391..393] in)
+                  (NP
+                    (NP (DT:[394..397] the) (NNS:[398..404] livers))
+                    (PP (IN:[405..407] of)
+                      (NP (JJ:[408..414] female)
+                        (PRN (-LRB-:[415..416] -LRB-)
+                          (FRAG
+                            (CONJP (CC:[416..419] but) (RB:[420..423] not))
+                            (NP (JJ:[424..428] male)))
+                          (-RRB-:[428..429] -RRB-))
+                        (NNS:[430..434] rats))))))))
+          (,:[434..435] ,) (CC:[436..439] and)
+          (VP (VBZ:[441..448] induces)
+            (NP (JJ:[449..459] microsomal) (NNS:[460..470] activities))))))
+    (,:[470..471] ,)
+    (NP-SBJ (PRP:[472..474] we))
+    (VP (VBD:[475..483] assessed)
+      (NP
+        (NP (JJ:[484..492] possible) (NNS:[493..500] changes))
+        (PP (IN:[501..503] in)
+          (NP (NN:[504..519] omega-oxidation)))))
+    (.:[519..520] .)))
+
+;sentence 5 Span:522..700
+;To study this, we pair-fed 24 male and 24 female littermate rats of the same
+;age  liquid diets containing 36% of energy either as ethanol or as additional
+; carbohydrate for 4 wk.
+;[628..631]:quantitative-value:"36%"
+;[652..659]:substance:"ethanol"
+;[678..690]:substance:"carbohydrate"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[522..522] *))
+      (VP (TO:[522..524] To)
+        (VP (VB:[525..530] study)
+          (NP (DT:[531..535] this)))))
+    (,:[535..536] ,)
+    (NP-SBJ (PRP:[537..539] we))
+    (VP (NN:[540..544] pair) (HYPH:[544..545] -) (VBD:[545..548] fed)
+      (NP
+        (NP
+          (NP (CD:[549..551] 24) (JJ:[552..556] male)
+            (NML-1 (-NONE-:[556..556] *P*)))
+          (CC:[557..560] and)
+          (NP (CD:[561..563] 24) (JJ:[564..570] female)
+            (NML-1 (JJ:[571..581] littermate) (NNS:[582..586] rats))))
+        (PP (IN:[587..589] of)
+          (NP (DT:[590..593] the) (JJ:[594..598] same) (NN:[599..602] age))))
+      (NP
+        (NP (NN:[604..610] liquid) (NNS:[611..616] diets))
+        (VP (VBG:[617..627] containing)
+          (NP
+            (NP (CD:[628..630] 36) (NN:[630..631] %))
+            (PP (IN:[632..634] of)
+              (NP (NN:[635..641] energy)))
+            (PP (CC:[642..648] either)
+              (PP (IN:[649..651] as)
+                (NP (NN:[652..659] ethanol)))
+              (CC:[660..662] or)
+              (PP (IN:[663..665] as)
+                (NP (JJ:[666..676] additional) (NN:[678..690] carbohydrate)))))))
+      (PP-TMP (IN:[691..694] for)
+        (NP (CD:[695..696] 4) (NN:[697..699] wk))))
+    (.:[699..700] .)))
+
+;sentence 6 Span:701..820
+;In controls, the microsomal omega-hydroxylation of lauric  acid was 28%
+;greater in female than in male rats (p < 0.05).
+;[752..764]:substance:"lauric  acid"
+;[769..772]:quantitative-value:"28%"
+(SENT
+  (S
+    (PP (IN:[701..703] In)
+      (NP (NNS:[704..712] controls)))
+    (,:[712..713] ,)
+    (NP-SBJ
+      (NP (DT:[714..717] the) (JJ:[718..728] microsomal)
+          (NN:[729..748] omega-hydroxylation))
+      (PP (IN:[749..751] of)
+        (NP (JJ:[752..758] lauric) (NN:[760..764] acid))))
+    (VP (VBD:[765..768] was)
+      (ADJP-PRD
+        (ADJP
+          (NP-EXT (CD:[769..771] 28) (NN:[771..772] %))
+          (JJR:[773..780] greater))
+        (PP-1 (-NONE-:[780..780] *ICH*)))
+      (PP-LOC (IN:[781..783] in)
+        (NP (JJ:[784..790] female)))
+      (PP-1 (IN:[791..795] than)
+        (PP-LOC (IN:[796..798] in)
+          (NP (JJ:[799..803] male) (NNS:[804..808] rats))))
+      (PRN (-LRB-:[809..810] -LRB-)
+        (S
+          (NP-SBJ (NN:[810..811] p))
+          (VP (SYM:[812..813] <)
+            (NP (CD:[814..818] 0.05))))
+        (-RRB-:[818..819] -RRB-)))
+    (.:[819..820] .)))
+
+;sentence 7 Span:821..993
+;Ethanol feeding  significantly increased this activity in both genders (p <
+;0.01), but the rise  in male rats (89%) was significantly higher than that in
+;female rats (24%).
+;[821..828]:substance:"Ethanol"
+;[932..935]:quantitative-value:"89%"
+;[988..991]:quantitative-value:"24%"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[821..828] Ethanol) (NN:[829..836] feeding))
+      (ADVP (RB:[838..851] significantly))
+      (VP (VBD:[852..861] increased)
+        (NP (DT:[862..866] this) (NN:[867..875] activity))
+        (PP (IN:[876..878] in)
+          (NP (DT:[879..883] both) (NNS:[884..891] genders)))
+        (PRN (-LRB-:[892..893] -LRB-)
+          (S
+            (NP-SBJ (NN:[893..894] p))
+            (VP (SYM:[895..896] <)
+              (NP (CD:[897..901] 0.01))))
+          (-RRB-:[901..902] -RRB-))))
+    (,:[902..903] ,) (CC:[904..907] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[908..911] the) (NN:[912..916] rise))
+        (PP-LOC (IN:[918..920] in)
+          (NP (JJ:[921..925] male) (NNS:[926..930] rats)
+            (PRN (-LRB-:[931..932] -LRB-)
+              (NP (CD:[932..934] 89) (NN:[934..935] %))
+              (-RRB-:[935..936] -RRB-)))))
+      (VP (VBD:[937..940] was)
+        (ADJP-PRD
+          (ADJP (RB:[941..954] significantly) (JJR:[955..961] higher))
+          (PP (IN:[962..966] than)
+            (NP
+              (NP (DT:[967..971] that))
+              (PP-LOC (IN:[972..974] in)
+                (NP (JJ:[975..981] female) (NNS:[982..986] rats)
+                  (PRN (-LRB-:[987..988] -LRB-)
+                    (NP (CD:[988..990] 24) (NN:[990..991] %))
+                    (-RRB-:[991..992] -RRB-)))))))))
+    (.:[992..993] .)))
+
+;sentence 8 Span:994..1064
+;This  activity was unaffected by the presence of ethanol in the assay.
+;[1043..1050]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ (DT:[994..998] This) (NN:[1000..1008] activity))
+    (VP (VBD:[1009..1012] was)
+      (ADJP-PRD (JJ:[1013..1023] unaffected)
+        (PP (IN:[1024..1026] by)
+          (NP
+            (NP (DT:[1027..1030] the) (NN:[1031..1039] presence))
+            (PP (IN:[1040..1042] of)
+              (NP (NN:[1043..1050] ethanol)))
+            (PP (IN:[1051..1053] in)
+              (NP (DT:[1054..1057] the) (NN:[1058..1063] assay)))))))
+    (.:[1063..1064] .)))
+
+;sentence 9 Span:1065..1294
+;The effects of  ethanol were associated with increases in the content of
+;cytochrome P-450 4A1  (as assessed in Western blots by the reactivity against
+;a sheep antibody against  P-450 4A1), and more so in male than in female
+;rats.
+;[1081..1088]:substance:"ethanol"
+;[1138..1158]:cyp450:"cytochrome P-450 4A1"
+;[1224..1232]:substance:"antibody"
+;[1242..1251]:cyp450:"P-450 4A1"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1065..1068] The) (NNS:[1069..1076] effects))
+      (PP (IN:[1077..1079] of)
+        (NP (NN:[1081..1088] ethanol))))
+    (VP (VBD:[1089..1093] were)
+      (UCP
+        (VP (VBN:[1094..1104] associated)
+          (NP-2 (-NONE-:[1104..1104] *))
+          (PP-CLR (IN:[1105..1109] with)
+            (NP
+              (NP (NNS:[1110..1119] increases))
+              (PP (IN:[1120..1122] in)
+                (NP
+                  (NP (DT:[1123..1126] the) (NN:[1127..1134] content))
+                  (PP (IN:[1135..1137] of)
+                    (NP (NN:[1138..1148] cytochrome) (NN:[1149..1154] P-450)
+                        (NN:[1155..1158] 4A1)))))
+              (PRN (-LRB-:[1160..1161] -LRB-)
+                (SBAR (IN:[1161..1163] as)
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1163..1163] *))
+                    (VP (VBN:[1164..1172] assessed)
+                      (NP-1 (-NONE-:[1172..1172] *))
+                      (PP (IN:[1173..1175] in)
+                        (NP (JJ:[1176..1183] Western) (NNS:[1184..1189] blots)))
+                      (PP-MNR (IN:[1190..1192] by)
+                        (NP
+                          (NP (DT:[1193..1196] the) (NN:[1197..1207] reactivity))
+                          (PP (IN:[1208..1215] against)
+                            (NP
+                              (NP (DT:[1216..1217] a) (NN:[1218..1223] sheep)
+                                  (NN:[1224..1232] antibody))
+                              (PP (IN:[1233..1240] against)
+                                (NP (NN:[1242..1247] P-450)
+                                    (NN:[1248..1251] 4A1))))))))))
+                (-RRB-:[1251..1252] -RRB-)))))
+        (,:[1252..1253] ,)
+        (NAC (CC:[1254..1257] and)
+          (ADVP
+            (ADVP (RBR:[1258..1262] more) (RB:[1263..1265] so))
+            (PP-LOC (IN:[1266..1268] in)
+              (NP (JJ:[1269..1273] male)
+                (NML-3 (-NONE-:[1273..1273] *P*))))
+            (PP (IN:[1274..1278] than)
+              (NP (IN:[1279..1281] in)
+                (NP (JJ:[1282..1288] female)
+                  (NML-3 (NNS:[1289..1293] rats)))))))))
+    (.:[1293..1294] .)))
+
+;sentence 10 Span:1295..1520
+;Despite possible  competition by ethanol with the hydroxy fatty acid
+;oxidation to dicarboxylic  acids through alcohol dehydrogenase, suberic and
+;sebacic acids accumulated  significantly in the livers of alcohol-fed male
+;rats.
+;[1328..1335]:substance:"ethanol"
+;[1345..1363]:substance:"hydroxy fatty acid"
+;[1377..1396]:substance:"dicarboxylic  acids"
+;[1405..1426]:substance:"alcohol dehydrogenase"
+;[1428..1435]...[1448..1453]:substance:"suberic"..."acids"
+;[1440..1453]:substance:"sebacic acids"
+;[1498..1505]:substance:"alcohol"
+(SENT
+  (S
+    (PP (IN:[1295..1302] Despite)
+      (NP
+        (NP (JJ:[1303..1311] possible) (NN:[1313..1324] competition))
+        (PP (IN:[1325..1327] by)
+          (NP (NN:[1328..1335] ethanol)))
+        (PP (IN:[1336..1340] with)
+          (NP
+            (NP (DT:[1341..1344] the)
+               (NN:[1345..1352] hydroxy)
+              (NML (JJ:[1353..1358] fatty) (NN:[1359..1363] acid))
+              (NN:[1364..1373] oxidation))
+            (PP (TO:[1374..1376] to)
+              (NP (JJ:[1377..1389] dicarboxylic) (NNS:[1391..1396] acids)))
+            (PP (IN:[1397..1404] through)
+              (NP (NN:[1405..1412] alcohol) (NN:[1413..1426] dehydrogenase)))))))
+    (,:[1426..1427] ,)
+    (NP-SBJ
+      (NP (JJ:[1428..1435] suberic)
+        (NML-1 (-NONE-:[1435..1435] *P*)))
+      (CC:[1436..1439] and)
+      (NP (JJ:[1440..1447] sebacic)
+        (NML-1 (NNS:[1448..1453] acids))))
+    (VP (VBD:[1454..1465] accumulated)
+      (ADVP (RB:[1467..1480] significantly))
+      (PP-LOC (IN:[1481..1483] in)
+        (NP
+          (NP (DT:[1484..1487] the) (NNS:[1488..1494] livers))
+          (PP (IN:[1495..1497] of)
+            (NP
+              (ADJP (NN:[1498..1505] alcohol) (HYPH:[1505..1506] -)
+                    (VBN:[1506..1509] fed))
+              (JJ:[1510..1514] male) (NNS:[1515..1519] rats))))))
+    (.:[1519..1520] .)))
+
+;sentence 11 Span:1521..1724
+;These effects of ethanol  and gender on omega-oxidation paralleled those on
+;the hepatic cytosolic fatty  acid-binding protein and fatty acid
+;esterification previously reported in  similarly treated rats.
+;[1538..1545]:substance:"ethanol"
+;[1619..1646]:substance:"fatty  acid-binding protein"
+;[1651..1661]:substance:"fatty acid"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1521..1526] These) (NNS:[1527..1534] effects))
+      (PP (IN:[1535..1537] of)
+        (NP (NN:[1538..1545] ethanol) (CC:[1547..1550] and)
+            (NN:[1551..1557] gender)))
+      (PP (IN:[1558..1560] on)
+        (NP (NN:[1561..1576] omega-oxidation))))
+    (VP (VBD:[1577..1587] paralleled)
+      (NP
+        (NP
+          (NP (DT:[1588..1593] those))
+          (PP (IN:[1594..1596] on)
+            (NP
+              (NP (DT:[1597..1600] the) (JJ:[1601..1608] hepatic)
+                  (JJ:[1609..1618] cytosolic)
+                
+                (ADJP
+                  (NML (JJ:[1619..1624] fatty) (NN:[1626..1630] acid))
+                  (HYPH:[1630..1631] -) (VBG:[1631..1638] binding))
+                (NN:[1639..1646] protein))
+              (CC:[1647..1650] and)
+              (NP
+                (NML (JJ:[1651..1656] fatty) (NN:[1657..1661] acid))
+                (NN:[1662..1676] esterification)))))
+        (VP
+          (ADVP-TMP (RB:[1677..1687] previously))
+          (VBN:[1688..1696] reported)
+          (NP (-NONE-:[1696..1696] *))
+          (PP-LOC (IN:[1697..1699] in)
+            (NP
+              (ADJP (RB:[1701..1710] similarly) (VBN:[1711..1718] treated))
+              (NNS:[1719..1723] rats))))))
+    (.:[1723..1724] .)))
+
+;sentence 12 Span:1725..1842
+;Dicarboxylic acid products of omega-oxidation have been  incriminated as
+;mediators of similar effects by other drugs.
+;[1725..1742]:substance:"Dicarboxylic acid"
+;[1798..1807]:substance:"mediators"
+;[1836..1841]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+         (JJ:[1725..1737] Dicarboxylic) (NN:[1738..1742] acid)
+        (NNS:[1743..1751] products))
+      (PP (IN:[1752..1754] of)
+        (NP (NN:[1755..1770] omega-oxidation))))
+    (VP (VBP:[1771..1775] have)
+      (VP (VBN:[1776..1780] been)
+        (VP (VBN:[1782..1794] incriminated)
+          (NP-1 (-NONE-:[1794..1794] *))
+          (PP (IN:[1795..1797] as)
+            (NP
+              (NP (NNS:[1798..1807] mediators))
+              (PP (IN:[1808..1810] of)
+                (NP (JJ:[1811..1818] similar) (NNS:[1819..1826] effects)))))
+          (PP (IN:[1827..1829] by)
+            (NP-LGS (JJ:[1830..1835] other) (NNS:[1836..1841] drugs))))))
+    (.:[1841..1842] .)))
+
+;section 13 Span:1842..1876
+;(ABSTRACT TRUNCATED  AT 250 WORDS)
+(SEC
+  (FRAG (-LRB-:[1842..1843] -LRB-) (NN:[1843..1851] ABSTRACT)
+        (VBN:[1852..1861] TRUNCATED) (IN:[1863..1865] AT) (CD:[1866..1869] 250)
+        (NNS:[1870..1875] WORDS) (-RRB-:[1875..1876] -RRB-)))
+
+;section 14 Span:1880..1924
+;PMID: 8225232 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1880..1884] PMID) (::[1884..1885] :) (CD:[1886..1893] 8225232)
+        (NN:[1894..1895] -LSB-) (NNP:[1895..1901] PubMed) (::[1902..1903] -)
+        (NN:[1904..1911] indexed) (IN:[1912..1915] for)
+        (NNP:[1916..1924] MEDLINE-RSB-)))

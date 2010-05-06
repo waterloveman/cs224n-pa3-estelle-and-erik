@@ -1,0 +1,279 @@
+;PMID: 9103974
+;source_file_986.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..138] = [t:51..138]
+;2)section:[e:142..215] = [t:142..215]
+;3)section:[e:219..342] = [t:219..342]
+;4)sentence:[e:346..445] = [t:346..445]
+;5)sentence:[e:446..679] = [t:446..679]
+;6)sentence:[e:680..879] = [t:680..879]
+;7)sentence:[e:880..975] = [t:880..975]
+;8)sentence:[e:977..1297] = [t:977..1297]
+;9)section:[e:1301..1345] = [t:1301..1345]
+
+;section 0 Span:0..45
+;FEMS Microbiol Lett. 1997 Apr 1;149(1):25-30.
+(SEC
+  (FRAG (NNP:[0..4] FEMS) (NNP:[5..14] Microbiol) (NNP:[15..19] Lett)
+        (.:[19..20] .) (CD:[21..25] 1997) (NNP:[26..29] Apr)
+        (CD:[30..36] 1;149-LRB-) (CD:[36..37] 1) (-RRB-:[37..38] -RRB-)
+        (CD:[38..41] :25) (::[41..42] -) (CD:[42..44] 30) (.:[44..45] .)))
+
+;sentence 1 Span:51..138
+;Differential inhibition of Candida albicans CYP51 with azole antifungal 
+;stereoisomers.
+;[95..100]:cyp450:"CYP51"
+;[106..137]:substance:"azole antifungal  stereoisomers"
+(SENT
+  (NP-HLN
+    (NP (JJ:[51..63] Differential) (NN:[64..74] inhibition))
+    (PP (IN:[75..77] of)
+      (NP
+        (NML (NNP:[78..85] Candida) (NNP:[86..94] albicans))
+        (NN:[95..100] CYP51)))
+    (PP (IN:[101..105] with)
+      (NP (NN:[106..111] azole) (JJ:[112..122] antifungal)
+          (NNS:[124..137] stereoisomers)))
+    (.:[137..138] .)))
+
+;section 2 Span:142..215
+;Lamb DC, Kelly DE, Baldwin BC, Gozzo F, Boscott P, Richards WG, Kelly SL.
+(SEC
+  (FRAG (NNP:[142..146] Lamb) (NNP:[147..149] DC) (,:[149..150] ,)
+        (NNP:[151..156] Kelly) (NNP:[157..159] DE) (,:[159..160] ,)
+        (NNP:[161..168] Baldwin) (NNP:[169..171] BC) (NNP:[171..172] ,)
+        (NNP:[173..178] Gozzo) (NNP:[179..180] F) (,:[180..181] ,)
+        (DT:[182..189] Boscott) (NNP:[190..191] P) (,:[191..192] ,)
+        (NNP:[193..201] Richards) (NNP:[202..204] WG) (,:[204..205] ,)
+        (NNP:[206..211] Kelly) (NNP:[212..215] SL.)))
+
+;section 3 Span:219..342
+;Krebs Institute for Biomolecular Research, Department of Molecular Biology
+;and  Biotechnology, University of Sheffield, UK.
+(SEC
+  (FRAG (NNP:[219..224] Krebs) (NNP:[225..234] Institute) (IN:[235..238] for)
+        (NNP:[239..251] Biomolecular) (NNP:[252..260] Research) (,:[260..261] ,)
+        (NNP:[262..272] Department) (IN:[273..275] of)
+        (NNP:[276..285] Molecular) (NNP:[286..293] Biology) (CC:[294..297] and)
+        (NNP:[299..312] Biotechnology) (,:[312..313] ,)
+        (NNP:[314..324] University) (IN:[325..327] of)
+        (NNP:[328..337] Sheffield) (,:[337..338] ,) (NNP:[339..342] UK.)))
+
+;sentence 4 Span:346..445
+;Azole antifungal compounds are important in agriculture and in the treatment
+;of  mycotic infection.
+;[346..372]:substance:"Azole antifungal compounds"
+(SENT
+  (S
+    (NP-SBJ (NN:[346..351] Azole) (JJ:[352..362] antifungal)
+            (NNS:[363..372] compounds))
+    (VP (VBP:[373..376] are)
+      (ADJP-PRD (JJ:[377..386] important))
+      (PP
+        (PP (IN:[387..389] in)
+          (NP (NN:[390..401] agriculture)))
+        (CC:[402..405] and)
+        (PP (IN:[406..408] in)
+          (NP
+            (NP (DT:[409..412] the) (NN:[413..422] treatment))
+            (PP (IN:[423..425] of)
+              (NP (JJ:[427..434] mycotic) (NN:[435..444] infection)))))))
+    (.:[444..445] .)))
+
+;sentence 5 Span:446..679
+;The target enzyme, sterol 14 alpha-demethylase (CYP51), is  inhibited through
+;binding of triazole N-4 to the haem of this P450, as a sixth  ligand together
+;with the N-1 substituent groups interacting in some way with the 
+;apoprotein.
+;[457..463]:cyp450:"enzyme"
+;[465..492]:cyp450:"sterol 14 alpha-demethylase"
+;[494..499]:cyp450:"CYP51"
+;[535..547]:substance:"triazole N-4"
+;[568..572]:cyp450:"P450"
+;[611..614]:substance:"N-1"
+;[668..678]:substance:"apoprotein"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[446..449] The) (NN:[450..456] target) (NN:[457..463] enzyme))
+      (,:[463..464] ,)
+      (NP
+        (NP (NN:[465..471] sterol) (CD:[472..474] 14)
+            (NN:[475..492] alpha-demethylase))
+        (NP (-LRB-:[493..494] -LRB-) (NN:[494..499] CYP51)
+            (-RRB-:[499..500] -RRB-))))
+    (,:[500..501] ,)
+    (VP (VBZ:[502..504] is)
+      (VP (VBN:[506..515] inhibited)
+        (NP-1 (-NONE-:[515..515] *))
+        (PP-MNR (IN:[516..523] through)
+          (NP
+            (NP (VBG:[524..531] binding))
+            (PP (IN:[532..534] of)
+              (NP (NN:[535..543] triazole) (NN:[544..547] N-4)))
+            (PP (TO:[548..550] to)
+              (NP
+                (NP (DT:[551..554] the) (NN:[555..559] haem))
+                (PP (IN:[560..562] of)
+                  (NP (DT:[563..567] this) (NN:[568..572] P450)))))
+            (,:[572..573] ,)
+            (PP (IN:[574..576] as)
+              (NP
+                (NP (DT:[577..578] a) (JJ:[579..584] sixth)
+                    (NN:[586..592] ligand))
+                (PP (RB:[593..601] together) (IN:[602..606] with)
+                  (NP
+                    (NP (DT:[607..610] the) (NN:[611..614] N-1)
+                        (NN:[615..626] substituent) (NNS:[627..633] groups))
+                    (VP (VBG:[634..645] interacting)
+                      (PP-MNR (IN:[646..648] in)
+                        (NP (DT:[649..653] some) (NN:[654..657] way)))
+                      (PP-CLR (IN:[658..662] with)
+                        (NP (DT:[663..666] the) (NN:[668..678] apoprotein))))))))))))
+    (.:[678..679] .)))
+
+;sentence 6 Span:680..879
+;Here we use Saccharomyces cerevisiae expression systems for the  target
+;enzyme of Candida albicans to investigate binding of enantiomers of the 
+;azole antifungal compounds SCH39304 and tetraconazole.
+;[752..758]:substance:"enzyme"
+;[805..816]:substance:"enantiomers"
+;[825..830]:substance:"azole"
+;[842..851]:substance:"compounds"
+;[852..860]:substance:"SCH39304"
+;[865..878]:substance:"tetraconazole"
+(SENT
+  (S
+    (ADVP (RB:[680..684] Here))
+    (NP-SBJ-1 (PRP:[685..687] we))
+    (VP (VBP:[688..691] use)
+      (NP
+        (NML (NNP:[692..705] Saccharomyces) (NNP:[706..716] cerevisiae))
+        (NN:[717..727] expression) (NNS:[728..735] systems))
+      (PP (IN:[736..739] for)
+        (NP
+          (NP (DT:[740..743] the) (NN:[745..751] target) (NN:[752..758] enzyme))
+          (PP (IN:[759..761] of)
+            (NP (NNP:[762..769] Candida) (NNP:[770..778] albicans)))))
+      (S-PRP
+        (NP-SBJ-1 (-NONE-:[778..778] *))
+        (VP (TO:[779..781] to)
+          (VP (VB:[782..793] investigate)
+            (NP
+              (NP (VBG:[794..801] binding))
+              (PP (IN:[802..804] of)
+                (NP
+                  (NP (NNS:[805..816] enantiomers))
+                  (PP (IN:[817..819] of)
+                    (NP
+                      (NP (DT:[820..823] the) (NN:[825..830] azole)
+                          (JJ:[831..841] antifungal) (NNS:[842..851] compounds))
+                      (NP (NN:[852..860] SCH39304) (CC:[861..864] and)
+                          (NN:[865..878] tetraconazole)))))))))))
+    (.:[878..879] .)))
+
+;sentence 7 Span:880..975
+;A molecular model  produced previously provided qualitative explanations for
+;these differences.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[880..881] A) (JJ:[882..891] molecular) (NN:[892..897] model))
+      (VP (VBN:[899..907] produced)
+        (NP (-NONE-:[907..907] *))
+        (ADVP-TMP (RB:[908..918] previously))))
+    (VP (VBD:[919..927] provided)
+      (NP (JJ:[928..939] qualitative) (NNS:[940..952] explanations))
+      (PP (IN:[953..956] for)
+        (NP (DT:[957..962] these) (NNS:[963..974] differences))))
+    (.:[974..975] .)))
+
+;sentence 8 Span:977..1297
+;Interaction of the azole antifungal aromatic group with Phe-233 or -235 may 
+;cause the higher activity for (R)-tetraconazole while inactivity of the 
+;(SS)-enantiomer of SCH39304 was predicted to result from incompatibility of
+;the  hydrophilic sulfonyl moiety when located into the hydrophobic pocket of
+;the  active site.
+;[996..1001]:substance:"azole"
+;[1013..1021]:substance:"aromatic"
+;[1033..1040]:substance:"Phe-233"
+;[1033..1036]...[1044..1048]:substance:"Phe"..."-235"
+;[1084..1101]:substance:"(R)-tetraconazole"
+;[1127..1142]:substance:"(SS)-enantiomer"
+;[1146..1154]:substance:"SCH39304"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[977..988] Interaction))
+      (PP (IN:[989..991] of)
+        (NP (DT:[992..995] the) (NN:[996..1001] azole)
+            (JJ:[1002..1012] antifungal) (JJ:[1013..1021] aromatic)
+            (NN:[1022..1027] group)))
+      (PP (IN:[1028..1032] with)
+        (NP
+          (NP
+            (NML-3 (NN:[1033..1036] Phe))
+            (HYPH:[1036..1037] -) (CD:[1037..1040] 233))
+          (CC:[1041..1043] or)
+          (NP
+            (NML-3 (-NONE-:[1043..1043] *P*))
+            (HYPH:[1044..1045] -) (CD:[1045..1048] 235)))))
+    (VP (MD:[1049..1052] may)
+      (VP (VB:[1054..1059] cause)
+        (NP
+          (NP (DT:[1060..1063] the) (JJR:[1064..1070] higher)
+              (NN:[1071..1079] activity))
+          (PP (IN:[1080..1083] for)
+            (NP (NN:[1084..1101] -LRB-R-RRB--tetraconazole)))))
+      (SBAR-ADV (IN:[1102..1107] while)
+        (S
+          (NP-SBJ-2
+            (NP (NN:[1108..1118] inactivity))
+            (PP (IN:[1119..1121] of)
+              (NP
+                (NP (DT:[1122..1125] the)
+                    (NN:[1127..1142] -LRB-SS-RRB--enantiomer))
+                (PP (IN:[1143..1145] of)
+                  (NP (NN:[1146..1154] SCH39304))))))
+          (VP (VBD:[1155..1158] was)
+            (VP (VBN:[1159..1168] predicted)
+              (S
+                (NP-SBJ-2 (-NONE-:[1168..1168] *))
+                (VP (TO:[1169..1171] to)
+                  (VP (VB:[1172..1178] result)
+                    (PP-CLR (IN:[1179..1183] from)
+                      (NP
+                        (NP (NN:[1184..1199] incompatibility))
+                        (PP (IN:[1200..1202] of)
+                          (NP-4 (DT:[1203..1206] the)
+                                (JJ:[1208..1219] hydrophilic)
+                                (NN:[1220..1228] sulfonyl)
+                                (NN:[1229..1235] moiety)))))
+                    (SBAR-TMP
+                      (WHADVP-1 (WRB:[1236..1240] when))
+                      (S
+                        (NP-SBJ-4 (-NONE-:[1240..1240] *))
+                        (VP (VBN:[1241..1248] located)
+                          (NP-4 (-NONE-:[1248..1248] *))
+                          (ADVP-TMP-1 (-NONE-:[1248..1248] *T*))
+                          (PP (IN:[1249..1253] into)
+                            (NP
+                              (NP (DT:[1254..1257] the)
+                                  (JJ:[1258..1269] hydrophobic)
+                                  (NN:[1270..1276] pocket))
+                              (PP (IN:[1277..1279] of)
+                                (NP (DT:[1280..1283] the)
+                                    (JJ:[1285..1291] active)
+                                    (NN:[1292..1296] site))))))))))))))))
+    (.:[1296..1297] .)))
+
+;section 9 Span:1301..1345
+;PMID: 9103974 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1301..1305] PMID) (::[1305..1306] :) (CD:[1307..1314] 9103974)
+        (IN:[1315..1316] -LSB-) (NNP:[1316..1322] PubMed) (HYPH:[1323..1324] -)
+        (JJ:[1325..1332] indexed) (IN:[1333..1336] for)
+        (NNP:[1337..1345] MEDLINE-RSB-)))

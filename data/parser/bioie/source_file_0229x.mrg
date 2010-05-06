@@ -1,0 +1,240 @@
+;PMID: 8555071
+;source_file_1310.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..132] = [t:40..132]
+;2)section:[e:136..213] = [t:136..213]
+;3)section:[e:217..272] = [t:217..272]
+;4)sentence:[e:276..351] = [t:276..351]
+;5)sentence:[e:352..553] = [t:352..553]
+;6)sentence:[e:554..758] = [t:554..758]
+;7)sentence:[e:759..876] = [t:759..876]
+;8)sentence:[e:877..982] = [t:877..982]
+;9)section:[e:986..1030] = [t:986..1030]
+
+;section 0 Span:0..35
+;Br J Haematol  1995 Nov;91(3):661-3
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..13] Haematol) (CD:[15..19] 1995)
+        (IN:[20..27] Nov;91-LRB-) (CD:[27..28] 3) (-RRB-:[28..29] -RRB-)
+        (::[29..30] :) (CD:[30..35] 661-3)))
+
+;sentence 1 Span:40..132
+;c-kit point mutation of extracellular domain in patients with
+;myeloproliferative  disorders.
+;[40..45]:gene-rna:"c-kit"
+;[46..60]:variation-type:"point mutation"
+;[102..131]:malignancy-type:"myeloproliferative  disorders"
+(SENT
+  (NP-HLN
+    (NP (NN:[40..45] c-kit)
+       (NN:[46..51] point) (NN:[52..60] mutation))
+    (PP (IN:[61..63] of)
+      (NP (JJ:[64..77] extracellular) (NN:[78..84] domain)))
+    (PP-LOC (IN:[85..87] in)
+      (NP
+        (NP (NNS:[88..96] patients))
+        (PP (IN:[97..101] with)
+          (NP (JJ:[102..120] myeloproliferative) (NNS:[122..131] disorders)))))
+    (.:[131..132] .)))
+
+;section 2 Span:136..213
+;Nakata Y, Kimura A, Katoh O, Kawaishi K, Hyodo H, Abe K, Kuramoto A, Satow
+;Y.
+(SEC
+  (FRAG (NNP:[136..142] Nakata) (NNP:[143..144] Y) (,:[144..145] ,)
+        (NNP:[146..152] Kimura) (NNP:[153..154] A) (,:[154..155] ,)
+        (NNP:[156..161] Katoh) (NNP:[162..163] O) (,:[163..164] ,)
+        (NNP:[165..173] Kawaishi) (NNP:[174..176] K,) (NNP:[177..182] Hyodo)
+        (NNP:[183..185] H,) (NNP:[186..189] Abe) (NNP:[190..192] K,)
+        (NNP:[193..201] Kuramoto) (NNP:[202..203] A) (,:[203..204] ,)
+        (NNP:[205..210] Satow) (NNP:[211..212] Y) (.:[212..213] .)))
+
+;section 3 Span:217..272
+;Department of Environment, Hiroshima University, Japan.
+(SEC
+  (FRAG (NNP:[217..227] Department) (IN:[228..230] of)
+        (NNP:[231..242] Environment) (IN:[242..243] ,)
+        (NNP:[244..253] Hiroshima) (NNP:[254..264] University) (IN:[264..265] ,)
+        (NNP:[266..271] Japan) (.:[271..272] .)))
+
+;sentence 4 Span:276..351
+;c-kit is a tyrosine kinase receptor whose ligand is stem cell factor (SCF).
+;[276..281]:gene-protein:"c-kit"
+;[287..311]:gene-protein:"tyrosine kinase receptor"
+;[328..344]:gene-protein:"stem cell factor"
+;[346..349]:gene-protein:"SCF"
+(SENT
+  (S
+    (NP-SBJ (NN:[276..281] c-kit))
+    (VP (VBZ:[282..284] is)
+      (NP-PRD
+        (NP (DT:[285..286] a)
+           (NN:[287..295] tyrosine) (NN:[296..302] kinase)
+           (NN:[303..311] receptor))
+        (SBAR
+          (WHNP-1 (WP$:[312..317] whose) (NN:[318..324] ligand))
+          (S
+            (NP-SBJ-1 (-NONE-:[324..324] *T*))
+            (VP (VBZ:[325..327] is)
+              (NP-PRD
+                (NP
+                  (NML (NN:[328..332] stem) (NN:[333..337] cell))
+                  (NN:[338..344] factor))
+                (NP (-LRB-:[345..346] -LRB-) (NN:[346..349] SCF)
+                    (-RRB-:[349..350] -RRB-))))))))
+    (.:[350..351] .)))
+
+;sentence 5 Span:352..553
+;Gene  alteration of the c-kit extracellular domain was analysed by polymerase
+;chain  reaction-single strand conformation polymorphism (PCR-SSCP) in 25
+;patients with  myeloproliferative disorders (MPD).
+;[376..381]:gene-protein:"c-kit"
+;[419..429]:gene-protein:"polymerase"
+;[518..546]:malignancy-type:"myeloproliferative disorders"
+;[548..551]:malignancy-type:"MPD"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[352..356] Gene) (NN:[358..368] alteration))
+      (PP (IN:[369..371] of)
+        (NP (DT:[372..375] the) (NN:[376..381] c-kit)
+            (JJ:[382..395] extracellular) (NN:[396..402] domain))))
+    (VP (VBD:[403..406] was)
+      (VP (VBN:[407..415] analysed)
+        (NP-1 (-NONE-:[415..415] *))
+        (PP-MNR (IN:[416..418] by)
+          (NP
+            (NP
+              (NML (NN:[419..429] polymerase) (NN:[430..435] chain)
+                   (NN:[437..445] reaction))
+              (HYPH:[445..446] -)
+              (NML
+                (NML (JJ:[446..452] single) (NN:[453..459] strand))
+                (NN:[460..472] conformation) (NN:[473..485] polymorphism)))
+            (NP (-LRB-:[486..487] -LRB-) (NN:[487..495] PCR-SSCP)
+                (-RRB-:[495..496] -RRB-))))
+        (PP-LOC (IN:[497..499] in)
+          (NP
+            (NP (CD:[500..502] 25) (NNS:[503..511] patients))
+            (PP (IN:[512..516] with)
+              (NP
+                (NP (JJ:[518..536] myeloproliferative)
+                    (NNS:[537..546] disorders))
+                (NP (-LRB-:[547..548] -LRB-) (NN:[548..551] MPD)
+                    (-RRB-:[551..552] -RRB-))))))))
+    (.:[552..553] .)))
+
+;sentence 6 Span:554..758
+;In the N-terminal part of the domain,  mobility shifts indicating sequence
+;alteration were detected in three of the  patients, two primary myelofibrosis
+;(PMF) and one chronic myelogenous leukaemia  (CML).
+;[685..692]:malignancy-clinical-stage:"primary"
+;[693..706]:malignancy-type:"myelofibrosis"
+;[708..711]:malignancy-type:"PMF"
+;[721..750]:malignancy-type:"chronic myelogenous leukaemia"
+;[753..756]:malignancy-type:"CML"
+(SENT
+  (S
+    (PP (IN:[554..556] In)
+      (NP
+        (NP (DT:[557..560] the)
+          (NML (NN:[561..562] N) (HYPH:[562..563] -) (JJ:[563..571] terminal))
+          (NN:[572..576] part))
+        (PP (IN:[577..579] of)
+          (NP (DT:[580..583] the) (NN:[584..590] domain)))))
+    (,:[590..591] ,)
+    (NP-SBJ-1
+      (NP (NN:[593..601] mobility) (NNS:[602..608] shifts))
+      (VP (VBG:[609..619] indicating)
+        (NP (NN:[620..628] sequence) (NN:[629..639] alteration))))
+    (VP (VBD:[640..644] were)
+      (VP (VBN:[645..653] detected)
+        (NP-1 (-NONE-:[653..653] *))
+        (PP-LOC (IN:[654..656] in)
+          (NP
+            (NP
+              (NP (CD:[657..662] three))
+              (PP (IN:[663..665] of)
+                (NP (DT:[666..669] the) (NNS:[671..679] patients))))
+            (,:[679..680] ,)
+            (NP
+              (NP (CD:[681..684] two)
+                (NML
+                  (NML (JJ:[685..692] primary) (NN:[693..706] myelofibrosis))
+                  (NML (-LRB-:[707..708] -LRB-) (NN:[708..711] PMF)
+                       (-RRB-:[711..712] -RRB-))))
+              (CC:[713..716] and)
+              (NP (CD:[717..720] one)
+                (NML
+                  (NML (JJ:[721..728] chronic) (JJ:[729..740] myelogenous)
+                       (NN:[741..750] leukaemia))
+                  (NML (-LRB-:[752..753] -LRB-) (NN:[753..756] CML)
+                       (-RRB-:[756..757] -RRB-)))))))))
+    (.:[757..758] .)))
+
+;sentence 7 Span:759..876
+;The subsequent sequencing revealed the same point mutations at codon 52 
+;causing amino acid substitution (Asp-->Asn).
+;[803..818]:variation-type:"point mutations"
+;[822..830]:variation-location:"codon 52"
+;[840..863]:variation-type:"amino acid substitution"
+;[865..868]:variation-state-original:"Asp"
+;[871..874]:variation-state-altered:"Asn"
+(SENT
+  (S
+    (NP-SBJ (DT:[759..762] The) (JJ:[763..773] subsequent)
+            (NN:[774..784] sequencing))
+    (VP (VBD:[785..793] revealed)
+      (NP (DT:[794..797] the) (JJ:[798..802] same)
+         (NN:[803..808] point) (NNS:[809..818] mutations))
+      (PP-LOC (IN:[819..821] at)
+        (NP (NN:[822..827] codon) (CD:[828..830] 52)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[830..830] *))
+        (VP (VBG:[832..839] causing)
+          (NP
+            
+            (NML (JJ:[840..845] amino) (NN:[846..850] acid))
+            (NN:[851..863] substitution)
+            (PRN (-LRB-:[864..865] -LRB-)
+              (NP
+                (NP (NN:[865..868] Asp))
+                (PP (SYM:[868..871] -->)
+                  (NP (NN:[871..874] Asn))))
+              (-RRB-:[874..875] -RRB-))))))
+    (.:[875..876] .)))
+
+;sentence 8 Span:877..982
+;To our knowledge this is the first  report with a c-kit point mutation found
+;in human fresh tumour cells.
+;[927..932]:gene-rna:"c-kit"
+;[933..947]:variation-type:"point mutation"
+(SENT
+  (S
+    (PP (TO:[877..879] To)
+      (NP (PRP$:[880..883] our) (NN:[884..893] knowledge)))
+    (NP-SBJ (DT:[894..898] this))
+    (VP (VBZ:[899..901] is)
+      (NP-PRD
+        (NP (DT:[902..905] the) (JJ:[906..911] first) (NN:[913..919] report))
+        (PP (IN:[920..924] with)
+          (NP
+            (NP (DT:[925..926] a) (NN:[927..932] c-kit)
+               (NN:[933..938] point) (NN:[939..947] mutation))
+            (VP (VBN:[948..953] found)
+              (NP (-NONE-:[953..953] *))
+              (PP-LOC (IN:[954..956] in)
+                (NP (JJ:[957..962] human) (JJ:[963..968] fresh)
+                    (NN:[969..975] tumour) (NNS:[976..981] cells))))))))
+    (.:[981..982] .)))
+
+;section 9 Span:986..1030
+;PMID: 8555071 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[986..990] PMID) (::[990..991] :) (CD:[992..999] 8555071)
+        (NN:[1000..1001] -LSB-) (NNP:[1001..1007] PubMed) (::[1008..1009] -)
+        (NN:[1010..1017] indexed) (IN:[1018..1021] for)
+        (NNP:[1022..1030] MEDLINE-RSB-)))

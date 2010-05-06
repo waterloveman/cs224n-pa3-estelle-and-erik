@@ -1,0 +1,489 @@
+;PMID: 7858891
+;source_file_830.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..123] = [t:44..123]
+;2)section:[e:127..158] = [t:127..158]
+;3)section:[e:162..231] = [t:162..231]
+;4)sentence:[e:235..237] = [t:235..237]
+;5)sentence:[e:238..530] = [t:238..530]
+;6)sentence:[e:531..533] = [t:531..533]
+;7)sentence:[e:534..837] = [t:534..837]
+;8)sentence:[e:838..840] = [t:838..840]
+;9)sentence:[e:841..1073] = [t:841..1073]
+;10)sentence:[e:1075..1077] = [t:1075..1077]
+;11)sentence:[e:1078..1237] = [t:1078..1237]
+;12)sentence:[e:1239..1241] = [t:1239..1241]
+;13)sentence:[e:1242..1395] = [t:1242..1395]
+;14)sentence:[e:1397..1399] = [t:1397..1399]
+;15)sentence:[e:1400..1514] = [t:1400..1514]
+;16)sentence:[e:1515..1517] = [t:null]
+;17)sentence:[e:1518..1656] = [t:1518..1656]
+;18)sentence:[e:1657..1659] = [t:1657..1659]
+;19)sentence:[e:1660..1781] = [t:1660..1781]
+;20)section:[e:1785..1829] = [t:1785..1829]
+;Sentence Matching Errors
+;ERROR_Different number of sections entity has 21 tree 20
+;ERROR_Entity section missing treebank section[1515..1517]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[482..487] cyclo
+;ERROR_Token in entity file but not tree[1515..1517] 7.
+;ERROR_Token in tree file but not entity[481..487]  cyclo
+
+;section 0 Span:0..38
+;Br J Pharmacol. 1994 Nov;113(3):954-8.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..14] Pharmacol) (.:[14..15] .)
+        (CD:[16..20] 1994) (CC:[21..29] Nov;113-LRB-) (CD:[29..30] 3)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :954) (HYPH:[35..36] -)
+        (CD:[36..38] 8.)))
+
+;sentence 1 Span:44..123
+;Role of K+ channels in the vasodilator response to bradykinin in the rat
+;heart.
+;[52..54]:substance:"K+"
+;[71..82]:substance:"vasodilator"
+;[95..105]:substance:"bradykinin"
+(SENT
+  (NP-HLN
+    (NP (NN:[44..48] Role))
+    (PP (IN:[49..51] of)
+      (NP
+        (NML (NN:[52..53] K) (SYM:[53..54] +))
+        (NNS:[55..63] channels)))
+    (PP (IN:[64..66] in)
+      (NP
+        (NP (DT:[67..70] the) (JJ:[71..82] vasodilator) (NN:[83..91] response))
+        (PP (TO:[92..94] to)
+          (NP (NN:[95..105] bradykinin)))))
+    (PP-LOC (IN:[106..108] in)
+      (NP (DT:[109..112] the) (NN:[113..116] rat) (NN:[117..122] heart)))
+    (.:[122..123] .)))
+
+;section 2 Span:127..158
+;Fulton D, McGiff JC, Quilley J.
+(SEC
+  (FRAG (NNP:[127..133] Fulton) (NNP:[134..135] D) (,:[135..136] ,)
+        (NNP:[137..143] McGiff) (NNP:[144..146] JC) (,:[146..147] ,)
+        (NNP:[148..155] Quilley) (NNP:[156..158] J.)))
+
+;section 3 Span:162..231
+;Department of Pharmacology, New York Medical College, Valhalla 10595.
+(SEC
+  (FRAG (NNP:[162..172] Department) (IN:[173..175] of)
+        (NNP:[176..188] Pharmacology) (,:[188..189] ,) (NNP:[190..193] New)
+        (NNP:[194..198] York) (NNP:[199..206] Medical) (NNP:[207..214] College)
+        (,:[214..215] ,) (NNP:[216..224] Valhalla) (CD:[225..230] 10595)
+        (.:[230..231] .)))
+
+;sentence 4 Span:235..237
+;1.
+(SENT
+  (NP (LS:[235..237] 1.)))
+
+;sentence 5 Span:238..530
+;The role of K+ channels in the nitric oxide (NO)-independent coronary 
+;vasodilator effect of bradykinin was examined in the Langendorff heart 
+;preparation in which nitroarginine was used to inhibit NO synthesis and
+;elevate  perfusion pressure; cyclo-oxygenase was inhibited with
+;indomethacin.
+;[250..252]:substance:"K+"
+;[269..281]:substance:"nitric oxide"
+;[283..285]:substance:"NO"
+;[309..320]:substance:"vasodilator"
+;[331..341]:substance:"bradykinin"
+;[402..415]:substance:"nitroarginine"
+;[436..438]:substance:"NO"
+;[482..497]:substance:"cyclo-oxygenase"
+;[517..529]:substance:"indomethacin"
+(SENT
+  (S
+    (S
+      (NP-SBJ-4
+        (NP (DT:[238..241] The) (NN:[242..246] role))
+        (PP (IN:[247..249] of)
+          (NP
+            (NML (NN:[250..251] K) (SYM:[251..252] +))
+            (NNS:[253..261] channels)))
+        (PP (IN:[262..264] in)
+          (NP
+            (NP (DT:[265..268] the)
+              (ADJP
+                (NML
+                  (NML (JJ:[269..275] nitric) (NN:[276..281] oxide))
+                  (NML (-LRB-:[282..283] -LRB-) (NN:[283..285] NO)
+                       (-RRB-:[285..286] -RRB-)))
+                (HYPH:[286..287] -) (JJ:[287..298] independent))
+              (JJ:[299..307] coronary) (NN:[309..320] vasodilator)
+               (NN:[321..327] effect))
+            (PP (IN:[328..330] of)
+              (NP (NN:[331..341] bradykinin))))))
+      (VP (VBD:[342..345] was)
+        (VP (VBN:[346..354] examined)
+          (NP-4 (-NONE-:[354..354] *))
+          (PP (IN:[355..357] in)
+            (NP
+              (NP (DT:[358..361] the) (NNP:[362..373] Langendorff)
+                  (NN:[374..379] heart) (NN:[381..392] preparation))
+              (SBAR
+                (WHPP-2 (IN:[393..395] in)
+                  (WHNP (DT:[396..401] which)))
+                (S
+                  (NP-SBJ-3 (NN:[402..415] nitroarginine))
+                  (VP (VBD:[416..419] was)
+                    (VP (VBN:[420..424] used)
+                      (NP-3 (-NONE-:[424..424] *))
+                      (S-PRP
+                        (NP-SBJ (-NONE-:[424..424] *))
+                        (VP (TO:[425..427] to)
+                          (VP
+                            (VP (VB:[428..435] inhibit)
+                              (NP (NN:[436..438] NO) (NN:[439..448] synthesis)))
+                            (CC:[449..452] and)
+                            (VP (VB:[453..460] elevate)
+                              (NP (NN:[462..471] perfusion)
+                                  (NN:[472..480] pressure))))))
+                      (PP-2 (-NONE-:[480..480] *T*)))))))))))
+    (::[480..481] ;)
+    (S
+      (NP-SBJ-1 (AFX:[481..487] cyclo) (HYPH:[487..488] -)
+                (NN:[488..497] oxygenase))
+      (VP (VBD:[498..501] was)
+        (VP (VBN:[502..511] inhibited)
+          (NP-1 (-NONE-:[511..511] *))
+          (PP-MNR (IN:[512..516] with)
+            (NP (NN:[517..529] indomethacin))))))
+    (.:[529..530] .)))
+
+;sentence 6 Span:531..533
+;2.
+(SENT
+  (NP (LS:[531..533] 2.)))
+
+;sentence 7 Span:534..837
+;The K+  channel inhibitors, tetraethylammonium, procaine and charybdotoxin,
+;but not  glibenclamide, further increased perfusion pressure suggesting a
+;role for K+  channels, other than ATP-sensitive K+ channels, in the
+;regulation of coronary  vascular tone under the experimental conditions
+;adopted here.
+;[538..540]:substance:"K+"
+;[550..560]:substance:"inhibitors"
+;[562..580]:substance:"tetraethylammonium"
+;[582..590]:substance:"procaine"
+;[595..608]:substance:"charybdotoxin"
+;[619..632]:substance:"glibenclamide"
+;[693..695]:substance:"K+"
+;[718..721]:substance:"ATP"
+;[732..734]:substance:"K+"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[534..537] The)
+        (NML
+          (NML (NN:[538..539] K) (SYM:[539..540] +))
+          (NN:[542..549] channel))
+        (NNS:[550..560] inhibitors))
+      (,:[560..561] ,)
+      (NP (NN:[562..580] tetraethylammonium) (,:[580..581] ,)
+          (NN:[582..590] procaine) (CC:[591..594] and)
+          (NN:[595..608] charybdotoxin) (,:[608..609] ,)
+        (CONJP (CC:[610..613] but) (RB:[614..617] not))
+        (NN:[619..632] glibenclamide)))
+    (,:[632..633] ,)
+    (ADVP (RB:[634..641] further))
+    (VP (VBD:[642..651] increased)
+      (NP (NN:[652..661] perfusion) (NN:[662..670] pressure))
+      (S-ADV
+        (NP-SBJ (-NONE-:[670..670] *))
+        (VP (VBG:[671..681] suggesting)
+          (NP
+            (NP (DT:[682..683] a) (NN:[684..688] role))
+            (PP (IN:[689..692] for)
+              (NP
+                (NP
+                  (NML (NN:[693..694] K) (SYM:[694..695] +))
+                  (NNS:[697..705] channels))
+                (,:[705..706] ,)
+                (ADJP (JJ:[707..712] other)
+                  (PP (IN:[713..717] than)
+                    (NP
+                      (ADJP (NN:[718..721] ATP) (HYPH:[721..722] -)
+                            (JJ:[722..731] sensitive))
+                      (NML (NN:[732..733] K) (SYM:[733..734] +))
+                      (NNS:[735..743] channels))))))
+            (,:[743..744] ,)
+            (PP (IN:[745..747] in)
+              (NP
+                (NP (DT:[748..751] the) (NN:[752..762] regulation))
+                (PP (IN:[763..765] of)
+                  (NP (JJ:[766..774] coronary) (JJ:[776..784] vascular)
+                      (NN:[785..789] tone)))
+                (PP (IN:[790..795] under)
+                  (NP
+                    (NP (DT:[796..799] the) (JJ:[800..812] experimental)
+                        (NNS:[813..823] conditions))
+                    (VP (VBN:[824..831] adopted)
+                      (NP (-NONE-:[831..831] *))
+                      (ADVP (RB:[832..836] here)))))))))))
+    (.:[836..837] .)))
+
+;sentence 8 Span:838..840
+;3.
+(SENT
+  (NP (LS:[838..840] 3.)))
+
+;sentence 9 Span:841..1073
+;The  non-specific K+ channel inhibitors, tetraethylammonium and procaine,
+;reduced  vasodilator responses to bradykinin and cromakalim but not those to 
+;nitroprusside in the perfused heart treated with nitroarginine and
+;indomethacin.
+;[859..861]:substance:"K+"
+;[870..880]:substance:"inhibitors"
+;[882..900]:substance:"tetraethylammonium"
+;[905..913]:substance:"procaine"
+;[924..935]:substance:"vasodilator"
+;[949..959]:substance:"bradykinin"
+;[964..974]:substance:"cromakalim"
+;[993..1006]:substance:"nitroprusside"
+;[1042..1055]:substance:"nitroarginine"
+;[1060..1072]:substance:"indomethacin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[841..844] The)
+        (ADJP (AFX:[846..849] non) (HYPH:[849..850] -) (JJ:[850..858] specific))
+        (NML
+          (NML (NN:[859..860] K) (SYM:[860..861] +))
+          (NN:[862..869] channel))
+        (NNS:[870..880] inhibitors))
+      (,:[880..881] ,)
+      (NP (NN:[882..900] tetraethylammonium) (CC:[901..904] and)
+          (NN:[905..913] procaine)))
+    (,:[913..914] ,)
+    (VP
+      (VP (VBD:[915..922] reduced)
+        (NP=1
+          (NP (NN:[924..935] vasodilator) (NNS:[936..945] responses))
+          (PP (TO:[946..948] to)
+            (NP (NN:[949..959] bradykinin) (CC:[960..963] and)
+                (NN:[964..974] cromakalim)))))
+      (CC:[975..978] but)
+      (VP (RB:[979..982] not)
+        (NP=1
+          (NP (DT:[983..988] those))
+          (PP (TO:[989..991] to)
+            (NP (NN:[993..1006] nitroprusside)))))
+      (PP-LOC (IN:[1007..1009] in)
+        (NP
+          (NP (DT:[1010..1013] the) (VBN:[1014..1022] perfused)
+              (NN:[1023..1028] heart))
+          (VP (VBN:[1029..1036] treated)
+            (NP (-NONE-:[1036..1036] *))
+            (PP-MNR (IN:[1037..1041] with)
+              (NP (NN:[1042..1055] nitroarginine) (CC:[1056..1059] and)
+                  (NN:[1060..1072] indomethacin)))))))
+    (.:[1072..1073] .)))
+
+;sentence 10 Span:1075..1077
+;4.
+(SENT
+  (NP (LS:[1075..1077] 4.)))
+
+;sentence 11 Span:1078..1237
+;Glibenclamide, an inhibitor of ATP-sensitive K+ channels, reduced vasodilator
+; responses to cromakalim but did not affect those to bradykinin or
+;nitroprusside.
+;[1078..1091]:substance:"Glibenclamide"
+;[1096..1105]:substance:"inhibitor"
+;[1109..1112]:substance:"ATP"
+;[1123..1125]:substance:"K+"
+;[1144..1155]:substance:"vasodilator"
+;[1170..1180]:substance:"cromakalim"
+;[1209..1219]:substance:"bradykinin"
+;[1223..1236]:substance:"nitroprusside"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1078..1091] Glibenclamide))
+      (,:[1091..1092] ,)
+      (NP
+        (NP (DT:[1093..1095] an) (NN:[1096..1105] inhibitor))
+        (PP (IN:[1106..1108] of)
+          (NP
+            (ADJP (NN:[1109..1112] ATP) (HYPH:[1112..1113] -)
+                  (JJ:[1113..1122] sensitive))
+            (NML (NN:[1123..1124] K) (SYM:[1124..1125] +))
+            (NNS:[1126..1134] channels)))))
+    (,:[1134..1135] ,)
+    (VP
+      (VP (VBD:[1136..1143] reduced)
+        (NP
+          (NP (NN:[1144..1155] vasodilator) (NNS:[1157..1166] responses))
+          (PP (TO:[1167..1169] to)
+            (NP (NN:[1170..1180] cromakalim)))))
+      (CC:[1181..1184] but)
+      (VP (VBD:[1185..1188] did) (RB:[1189..1192] not)
+        (VP (VB:[1193..1199] affect)
+          (NP
+            (NP (DT:[1200..1205] those))
+            (PP (TO:[1206..1208] to)
+              (NP (NN:[1209..1219] bradykinin) (CC:[1220..1222] or)
+                  (NN:[1223..1236] nitroprusside)))))))
+    (.:[1236..1237] .)))
+
+;sentence 12 Span:1239..1241
+;5.
+(SENT
+  (NP (LS:[1239..1241] 5.)))
+
+;sentence 13 Span:1242..1395
+;Charybdotoxin, an antagonist of Ca(2+)-activated K+ channels, inhibited 
+;responses to bradykinin but did not affect those to cromakalim or
+;nitroprusside.
+;[1242..1255]:substance:"Charybdotoxin"
+;[1260..1270]:substance:"antagonist"
+;[1274..1280]:substance:"Ca(2+)"
+;[1291..1293]:substance:"K+"
+;[1328..1338]:substance:"bradykinin"
+;[1367..1377]:substance:"cromakalim"
+;[1381..1394]:substance:"nitroprusside"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1242..1255] Charybdotoxin))
+      (,:[1255..1256] ,)
+      (NP
+        (NP (DT:[1257..1259] an) (NN:[1260..1270] antagonist))
+        (PP (IN:[1271..1273] of)
+          (NP
+            (ADJP (NN:[1274..1280] Ca-LRB-2+-RRB-) (HYPH:[1280..1281] -)
+                  (VBN:[1281..1290] activated))
+            (NML (NN:[1291..1292] K) (SYM:[1292..1293] +))
+            (NNS:[1294..1302] channels)))))
+    (,:[1302..1303] ,)
+    (VP
+      (VP (VBD:[1304..1313] inhibited)
+        (NP
+          (NP (NNS:[1315..1324] responses))
+          (PP (TO:[1325..1327] to)
+            (NP (NN:[1328..1338] bradykinin)))))
+      (CC:[1339..1342] but)
+      (VP (VBD:[1343..1346] did) (RB:[1347..1350] not)
+        (VP (VB:[1351..1357] affect)
+          (NP
+            (NP (DT:[1358..1363] those))
+            (PP (TO:[1364..1366] to)
+              (NP (NN:[1367..1377] cromakalim) (CC:[1378..1380] or)
+                  (NN:[1381..1394] nitroprusside)))))))
+    (.:[1394..1395] .)))
+
+;sentence 14 Span:1397..1399
+;6.
+(SENT
+  (NP (LS:[1397..1399] 6.)))
+
+;sentence 15 Span:1400..1514
+;Nifedipine inhibited vasodilator responses to bradykinin and cromakalim 
+;without affecting those to nitroprusside.
+;[1400..1410]:substance:"Nifedipine"
+;[1421..1432]:substance:"vasodilator"
+;[1446..1456]:substance:"bradykinin"
+;[1461..1471]:substance:"cromakalim"
+;[1500..1513]:substance:"nitroprusside"
+(SENT
+  (S
+    (NP-SBJ (NN:[1400..1410] Nifedipine))
+    (VP (VBD:[1411..1420] inhibited)
+      (NP
+        (NP (NN:[1421..1432] vasodilator) (NNS:[1433..1442] responses))
+        (PP (TO:[1443..1445] to)
+          (NP (NN:[1446..1456] bradykinin) (CC:[1457..1460] and)
+              (NN:[1461..1471] cromakalim))))
+      (PP (IN:[1473..1480] without)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1480..1480] *))
+          (VP (VBG:[1481..1490] affecting)
+            (NP
+              (NP (DT:[1491..1496] those))
+              (PP (TO:[1497..1499] to)
+                (NP (NN:[1500..1513] nitroprusside))))))))
+    (.:[1513..1514] .)))
+
+(ORPH 7.)
+
+;sentence 16 Span:1518..1656
+;Inhibition of cytochrome P450 with  clotrimazole reduced responses to
+;bradykinin but did not modify those to  cromakalim or nitroprusside.
+;[1532..1547]:cyp450:"cytochrome P450"
+;[1554..1566]:substance:"clotrimazole"
+;[1588..1598]:substance:"bradykinin"
+;[1628..1638]:substance:"cromakalim"
+;[1642..1655]:substance:"nitroprusside"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1518..1528] Inhibition))
+      (PP (IN:[1529..1531] of)
+        (NP (NN:[1532..1542] cytochrome) (NN:[1543..1547] P450)))
+      (PP (IN:[1548..1552] with)
+        (NP (NN:[1554..1566] clotrimazole))))
+    (VP
+      (VP (VBD:[1567..1574] reduced)
+        (NP
+          (NP (NNS:[1575..1584] responses))
+          (PP (TO:[1585..1587] to)
+            (NP (NN:[1588..1598] bradykinin)))))
+      (CC:[1599..1602] but)
+      (VP (VBD:[1603..1606] did) (RB:[1607..1610] not)
+        (VP (VB:[1611..1617] modify)
+          (NP
+            (NP (DT:[1618..1623] those))
+            (PP (TO:[1624..1626] to)
+              (NP (NN:[1628..1638] cromakalim) (CC:[1639..1641] or)
+                  (NN:[1642..1655] nitroprusside)))))))
+    (.:[1655..1656] .)))
+;ERROR_Orphan Text from Tree File[1514..1518] 7.
+
+;sentence 17 Span:1657..1659
+;8.
+(SENT
+  (NP (LS:[1657..1659] 8.)))
+
+;sentence 18 Span:1660..1781
+;These results suggest that bradykinin utilizes a  Ca(2+)-activated K+ channel
+;to produce vasodilatation in the rat heart.
+;[1687..1697]:substance:"bradykinin"
+;[1710..1716]:substance:"Ca(2+)"
+;[1727..1729]:substance:"K+"
+(SENT
+  (S
+    (NP-SBJ (DT:[1660..1665] These) (NNS:[1666..1673] results))
+    (VP (VBP:[1674..1681] suggest)
+      (SBAR (IN:[1682..1686] that)
+        (S
+          (NP-SBJ (NN:[1687..1697] bradykinin))
+          (VP (VBZ:[1698..1706] utilizes)
+            (NP (DT:[1707..1708] a)
+              (ADJP (NN:[1710..1716] Ca-LRB-2+-RRB-) (HYPH:[1716..1717] -)
+                    (VBN:[1717..1726] activated))
+              (NML (NN:[1727..1728] K) (SYM:[1728..1729] +))
+              (NN:[1730..1737] channel))
+            (S-PRP
+              (NP-SBJ (-NONE-:[1737..1737] *))
+              (VP (TO:[1738..1740] to)
+                (VP (VB:[1741..1748] produce)
+                  (NP (NN:[1749..1763] vasodilatation))
+                  (PP-LOC (IN:[1764..1766] in)
+                    (NP (DT:[1767..1770] the) (NN:[1771..1774] rat)
+                        (NN:[1775..1780] heart))))))))))
+    (.:[1780..1781] .)))
+
+;section 19 Span:1785..1829
+;PMID: 7858891 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1785..1789] PMID) (::[1789..1790] :) (CD:[1791..1798] 7858891)
+        (-LRB-:[1799..1800] -LSB-) (NNP:[1800..1806] PubMed)
+        (HYPH:[1807..1808] -) (NN:[1809..1816] indexed) (IN:[1817..1820] for)
+        (NNP:[1821..1828] MEDLINE) (-RRB-:[1828..1829] -RSB-)))

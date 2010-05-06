@@ -1,0 +1,597 @@
+;PMID: 9808427
+;source_file_1386.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:48..171] = [t:48..171]
+;2)section:[e:175..218] = [t:175..218]
+;3)section:[e:222..323] = [t:222..323]
+;4)sentence:[e:327..335] = [t:327..335]
+;5)sentence:[e:336..449] = [t:336..449]
+;6)sentence:[e:450..535] = [t:450..535]
+;7)sentence:[e:536..635] = [t:536..635]
+;8)sentence:[e:636..785] = [t:636..785]
+;9)sentence:[e:787..795] = [t:787..795]
+;10)sentence:[e:796..866] = [t:796..866]
+;11)sentence:[e:868..945] = [t:868..945]
+;12)sentence:[e:947..1037] = [t:947..1037]
+;13)sentence:[e:1038..1046] = [t:1038..1046]
+;14)sentence:[e:1047..1136] = [t:1047..1136]
+;15)sentence:[e:1137..1241] = [t:1137..1241]
+;16)sentence:[e:1242..1337] = [t:1242..1337]
+;17)sentence:[e:1338..1460] = [t:1338..1460]
+;18)sentence:[e:1461..1519] = [t:1461..1519]
+;19)sentence:[e:1520..1639] = [t:1520..1639]
+;20)sentence:[e:1640..1767] = [t:1640..1767]
+;21)sentence:[e:1768..1780] = [t:1768..1780]
+;22)sentence:[e:1781..1897] = [t:1781..1897]
+;23)sentence:[e:1899..2087] = [t:1899..2087]
+;24)sentence:[e:2088..2212] = [t:2088..2212]
+;25)section:[e:2216..2260] = [t:2216..2260]
+
+;section 0 Span:0..43
+;J Cancer Res Clin Oncol  1998;124(9):517-22
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Cancer) (NNP:[9..12] Res) (NNP:[13..17] Clin)
+        (NNP:[18..23] Oncol) (.:[25..35] 1998;124-LRB-9) (-RRB-:[35..36] -RRB-)
+        (CD:[36..40] :517) (HYPH:[40..41] -) (CD:[41..43] 22)))
+
+;sentence 1 Span:48..171
+;Analysis of K-ras gene mutations in lung carcinomas: correlation with gender,
+; histological subtypes, and clinical outcome.
+;[60..65]:gene-rna:"K-ras"
+;[84..99]:malignancy:"lung carcinomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[48..56] Analysis))
+      (PP (IN:[57..59] of)
+        (NP (NN:[60..65] K-ras) (NN:[66..70] gene) (NNS:[71..80] mutations)))
+      (PP-LOC (IN:[81..83] in)
+        (NP (NN:[84..88] lung) (NNS:[89..99] carcinomas))))
+    (::[99..100] :)
+    (NP
+      (NP (NN:[101..112] correlation))
+      (PP (IN:[113..117] with)
+        (NP
+          (NP (NN:[118..124] gender))
+          (,:[124..125] ,)
+          (NP (JJ:[127..139] histological) (NNS:[140..148] subtypes))
+          (,:[148..149] ,) (CC:[150..153] and)
+          (NP (JJ:[154..162] clinical) (NN:[163..170] outcome)))))
+    (.:[170..171] .)))
+
+;section 2 Span:175..218
+;Wang YC, Lee HS, Chen SK, Yang SC, Chen CY.
+(SEC
+  (FRAG (NNP:[175..179] Wang) (NNP:[180..182] YC) (NNP:[182..183] ,)
+        (NNP:[184..187] Lee) (NNP:[188..190] HS) (,:[190..191] ,)
+        (NNP:[192..196] Chen) (NNP:[197..199] SK) (,:[199..200] ,)
+        (NNP:[201..205] Yang) (NNP:[206..208] SC) (,:[208..209] ,)
+        (NNP:[210..214] Chen) (NNP:[215..217] CY) (.:[217..218] .)))
+
+;section 3 Span:222..323
+;Institute of Toxicology, Chung Shan Medical and Dental College, Taichung, 
+;Taiwan, Republic of China.
+(SEC
+  (FRAG (NNP:[222..231] Institute) (IN:[232..234] of)
+        (NNP:[235..245] Toxicology) (,:[245..246] ,) (NNP:[247..252] Chung)
+        (NNP:[253..257] Shan) (NNP:[258..265] Medical) (CC:[266..269] and)
+        (NNP:[270..276] Dental) (NNP:[277..284] College) (,:[284..285] ,)
+        (NNP:[286..294] Taichung) (,:[294..295] ,) (NNP:[297..303] Taiwan)
+        (,:[303..304] ,) (NNP:[305..313] Republic) (IN:[314..316] of)
+        (NNP:[317..322] China) (.:[322..323] .)))
+
+;sentence 4 Span:327..335
+;PURPOSE:
+(SENT
+  (NP (NN:[327..334] PURPOSE) (::[334..335] :)))
+
+;sentence 5 Span:336..449
+;Lung cancer is respectively the leading and second-leading cause of  cancer
+;deaths among women and men in Taiwan.
+;[336..347]:malignancy:"Lung cancer"
+(SENT
+  (S
+    (NP-SBJ (NN:[336..340] Lung) (NN:[341..347] cancer))
+    (VP (VBZ:[348..350] is)
+      (ADVP (RB:[351..363] respectively))
+      (NP-PRD
+        (NP (DT:[364..367] the)
+          (NML
+            (NML (VBG:[368..375] leading)
+              (NML-1 (-NONE-:[375..375] *P*)))
+            (CC:[376..379] and)
+            (NML
+              (NML (JJ:[380..386] second) (HYPH:[386..387] -)
+                   (VBG:[387..394] leading))
+              (NML-1 (NN:[395..400] cause)))))
+        (PP (IN:[401..403] of)
+          (NP
+            (NP (NN:[405..411] cancer) (NNS:[412..418] deaths))
+            (PP (IN:[419..424] among)
+              (NP (NNS:[425..430] women) (CC:[431..434] and)
+                  (NNS:[435..438] men))))))
+      (PP-LOC (IN:[439..441] in)
+        (NP (NNP:[442..448] Taiwan))))
+    (.:[448..449] .)))
+
+;sentence 6 Span:450..535
+;The commonest pathological type of  lung carcinoma found in Taiwan is
+;adenocarcinoma.
+;[486..500]:malignancy:"lung carcinoma"
+;[520..534]:malignancy:"adenocarcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[450..453] The) (JJS:[454..463] commonest)
+            (JJ:[464..476] pathological) (NN:[477..481] type))
+        (PP (IN:[482..484] of)
+          (NP (NN:[486..490] lung) (NN:[491..500] carcinoma))))
+      (VP (VBN:[501..506] found)
+        (NP (-NONE-:[506..506] *))
+        (PP-LOC (IN:[507..509] in)
+          (NP (NNP:[510..516] Taiwan)))))
+    (VP (VBZ:[517..519] is)
+      (NP-PRD (NN:[520..534] adenocarcinoma)))
+    (.:[534..535] .)))
+
+;sentence 7 Span:536..635
+;and it has been documented  that K-ras oncogene mutation occurs in a subset
+;of lung adenocarcinoma.
+;[569..574]:gene-rna:"K-ras"
+;[615..634]:malignancy:"lung adenocarcinoma"
+(SENT
+  (S (CC:[536..539] and)
+    (NP-SBJ-1
+      (NP (PRP:[540..542] it))
+      (SBAR-2 (-NONE-:[542..542] *EXP*)))
+    (VP (VBZ:[543..546] has)
+      (VP (VBN:[547..551] been)
+        (VP (VBN:[552..562] documented)
+          (NP-1 (-NONE-:[562..562] *))
+          (SBAR-2 (IN:[564..568] that)
+            (S
+              (NP-SBJ (NN:[569..574] K-ras) (NN:[575..583] oncogene)
+                      (NN:[584..592] mutation))
+              (VP (VBZ:[593..599] occurs)
+                (PP (IN:[600..602] in)
+                  (NP
+                    (NP (DT:[603..604] a) (NN:[605..611] subset))
+                    (PP (IN:[612..614] of)
+                      (NP (NN:[615..619] lung) (NN:[620..634] adenocarcinoma)))))))))))
+    (.:[634..635] .)))
+
+;sentence 8 Span:636..785
+;We  therefore investigated the mutation spectrum and clinicopathological 
+;significance of K-ras oncogene mutations in lung cancer patients in Taiwan.
+;[726..731]:gene-rna:"K-ras"
+;[754..765]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[636..638] We))
+    (ADVP (RB:[640..649] therefore))
+    (VP (VBD:[650..662] investigated)
+      (NP
+        (NP
+          (NP (DT:[663..666] the) (NN:[667..675] mutation)
+              (NN:[676..684] spectrum))
+          (CC:[685..688] and)
+          (NP (JJ:[689..708] clinicopathological) (NN:[710..722] significance)))
+        (PP (IN:[723..725] of)
+          (NP (NN:[726..731] K-ras) (NN:[732..740] oncogene)
+              (NNS:[741..750] mutations)))
+        (PP-LOC (IN:[751..753] in)
+          (NP
+             (NN:[754..758] lung) (NN:[759..765] cancer)
+            (NNS:[766..774] patients))))
+      (PP-LOC (IN:[775..777] in)
+        (NP (NNP:[778..784] Taiwan))))
+    (.:[784..785] .)))
+
+;sentence 9 Span:787..795
+;METHODS:
+(SENT
+  (NP (NNS:[787..794] METHODS) (::[794..795] :)))
+
+;sentence 10 Span:796..866
+;The lung tumors were surgically resected from 84 lung cancer patients.
+;[800..811]:malignancy:"lung tumors"
+;[845..856]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[796..799] The)
+       (NN:[800..804] lung) (NNS:[805..811] tumors))
+    (VP (VBD:[812..816] were)
+      (ADVP-MNR (RB:[817..827] surgically))
+      (VP (VBN:[828..836] resected)
+        (NP-1 (-NONE-:[836..836] *))
+        (PP (IN:[837..841] from)
+          (NP (CD:[842..844] 84)
+            (NML (NN:[845..849] lung) (NN:[850..856] cancer))
+            (NNS:[857..865] patients)))))
+    (.:[865..866] .)))
+
+;sentence 11 Span:868..945
+;DNA was isolated and the mutation spectrum was examined by direct
+;sequencing.
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[868..871] DNA))
+      (VP (VBD:[872..875] was)
+        (VP (VBN:[876..884] isolated)
+          (NP-2 (-NONE-:[884..884] *)))))
+    (CC:[885..888] and)
+    (S
+      (NP-SBJ-1 (DT:[889..892] the) (NN:[893..901] mutation)
+                (NN:[902..910] spectrum))
+      (VP (VBD:[911..914] was)
+        (VP (VBN:[915..923] examined)
+          (NP-1 (-NONE-:[923..923] *))
+          (PP-MNR (IN:[924..926] by)
+            (NP (JJ:[927..933] direct) (NN:[934..944] sequencing))))))
+    (.:[944..945] .)))
+
+;sentence 12 Span:947..1037
+;These data were also correlated with the clinicopathological characteristics
+;of  patients.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[947..952] These) (NNS:[953..957] data))
+    (VP (VBD:[958..962] were)
+      (ADVP (RB:[963..967] also))
+      (VP (VBN:[968..978] correlated)
+        (NP-1 (-NONE-:[978..978] *))
+        (PP-CLR (IN:[979..983] with)
+          (NP
+            (NP (DT:[984..987] the) (JJ:[988..1007] clinicopathological)
+                (NNS:[1008..1023] characteristics))
+            (PP (IN:[1024..1026] of)
+              (NP (NNS:[1028..1036] patients)))))))
+    (.:[1036..1037] .)))
+
+;sentence 13 Span:1038..1046
+;RESULTS:
+(SENT
+  (NP (NNS:[1038..1045] RESULTS) (::[1045..1046] :)))
+
+;sentence 14 Span:1047..1136
+;K-ras gene mutations were detected in 5 cases among the 84  patients
+;investigated (6.0%).
+;[1047..1052]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1047..1052] K-ras) (NN:[1053..1057] gene)
+              (NNS:[1058..1067] mutations))
+    (VP (VBD:[1068..1072] were)
+      (VP (VBN:[1073..1081] detected)
+        (NP-1 (-NONE-:[1081..1081] *))
+        (PP (IN:[1082..1084] in)
+          (NP
+            (NP (CD:[1085..1086] 5) (NNS:[1087..1092] cases))
+            (PP (IN:[1093..1098] among)
+              (NP
+                (NP (DT:[1099..1102] the) (CD:[1103..1105] 84)
+                    (NNS:[1107..1115] patients))
+                (VP (VBN:[1116..1128] investigated)
+                  (NP (-NONE-:[1128..1128] *)))))))
+        (PRN (-LRB-:[1129..1130] -LRB-)
+          (NP (CD:[1130..1133] 6.0) (NN:[1133..1134] %))
+          (-RRB-:[1134..1135] -RRB-))))
+    (.:[1135..1136] .)))
+
+;sentence 15 Span:1137..1241
+;The majority of mutations occurred in exon 1 (80%,  4 of 5) and were located
+;mainly in codons 12 and 13.
+;[1153..1162]:variation-event:"mutations"
+;[1175..1181]:variation-location:"exon 1"
+;[1224..1233]:variation-location:"codons 12"
+;[1224..1230]...[1238..1240]:variation-location:"codons"..."13"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1137..1140] The) (NN:[1141..1149] majority))
+      (PP (IN:[1150..1152] of)
+        (NP (NNS:[1153..1162] mutations))))
+    (VP
+      (VP (VBD:[1163..1171] occurred)
+        (PP-LOC (IN:[1172..1174] in)
+          (NP (NN:[1175..1179] exon) (CD:[1180..1181] 1)))
+        (PRN (-LRB-:[1182..1183] -LRB-)
+          (FRAG
+            (NP (CD:[1183..1185] 80) (NN:[1185..1186] %))
+            (,:[1186..1187] ,)
+            (NP
+              (NP (CD:[1189..1190] 4))
+              (PP (IN:[1191..1193] of)
+                (NP (CD:[1194..1195] 5)))))
+          (-RRB-:[1195..1196] -RRB-)))
+      (CC:[1197..1200] and)
+      (VP (VBD:[1201..1205] were)
+        (VP (VBN:[1206..1213] located)
+          (NP-2 (-NONE-:[1213..1213] *))
+          (ADVP (RB:[1214..1220] mainly))
+          (PP-LOC (IN:[1221..1223] in)
+            (NP
+              (NP
+                (NML-1 (NNS:[1224..1230] codons))
+                (CD:[1231..1233] 12))
+              (CC:[1234..1237] and)
+              (NP
+                (NML-1 (-NONE-:[1237..1237] *P*))
+                (CD:[1238..1240] 13)))))))
+    (.:[1240..1241] .)))
+
+;sentence 16 Span:1242..1337
+;Two patients had G x C -->  T x A transversions and 2 patients had G x C -->
+;A x T transitions.
+;[1259..1260]:variation-state-original:"G"
+;[1263..1264]:variation-state-original:"C"
+;[1270..1271]:variation-state-altered:"T"
+;[1274..1275]:variation-state-altered:"A"
+;[1276..1289]:variation-type:"transversions"
+;[1309..1310]:variation-state-original:"G"
+;[1313..1314]:variation-state-original:"C"
+;[1319..1320]:variation-state-altered:"A"
+;[1323..1324]:variation-state-altered:"T"
+;[1325..1336]:variation-type:"transitions"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[1242..1245] Two) (NNS:[1246..1254] patients))
+      (VP (VBD:[1255..1258] had)
+        (NP
+          (NML
+            (NML (NN:[1259..1260] G) (SYM:[1261..1262] x) (NN:[1263..1264] C))
+            (PP (SYM:[1265..1268] -->)
+              (NML (NN:[1270..1271] T) (SYM:[1272..1273] x) (NN:[1274..1275] A))))
+          (NNS:[1276..1289] transversions))))
+    (CC:[1290..1293] and)
+    (S
+      (NP-SBJ (CD:[1294..1295] 2) (NNS:[1296..1304] patients))
+      (VP (VBD:[1305..1308] had)
+        (NP
+          (NML
+            (NML (NN:[1309..1310] G) (SYM:[1311..1312] x) (NN:[1313..1314] C))
+            (PP (SYM:[1315..1318] -->)
+              (NML (NN:[1319..1320] A) (SYM:[1321..1322] x) (NN:[1323..1324] T))))
+          (NNS:[1325..1336] transitions))))
+    (.:[1336..1337] .)))
+
+;sentence 17 Span:1338..1460
+;Notably, 1  patient had a G x C base-pair deletion from the contiguous G x C
+;base pairs  located between codons 68 and 69.
+;[1364..1365]:variation-state-original:"G"
+;[1368..1369]:variation-state-original:"C"
+;[1370..1388]:variation-type:"base-pair deletion"
+;[1435..1459]:variation-location:"between codons 68 and 69"
+(SENT
+  (S
+    (ADVP (RB:[1338..1345] Notably))
+    (,:[1345..1346] ,)
+    (NP-SBJ (CD:[1347..1348] 1) (NN:[1350..1357] patient))
+    (VP (VBD:[1358..1361] had)
+      (NP
+        (NP (DT:[1362..1363] a)
+          (NML
+            (NML (NN:[1364..1365] G) (SYM:[1366..1367] x) (NN:[1368..1369] C))
+            (NML (NN:[1370..1374] base) (HYPH:[1374..1375] -)
+                 (NN:[1375..1379] pair)))
+          (NN:[1380..1388] deletion))
+        (PP (IN:[1389..1393] from)
+          (NP
+            (NP (DT:[1394..1397] the) (JJ:[1398..1408] contiguous)
+              (NML (NN:[1409..1410] G) (SYM:[1411..1412] x) (NN:[1413..1414] C))
+              (NN:[1415..1419] base) (NNS:[1420..1425] pairs))
+            (VP (VBN:[1427..1434] located)
+              (NP (-NONE-:[1434..1434] *))
+              (PP-LOC (IN:[1435..1442] between)
+                (NP
+                  (NP
+                    (NML-1 (NNS:[1443..1449] codons))
+                    (CD:[1450..1452] 68))
+                  (CC:[1453..1456] and)
+                  (NP
+                    (NML-1 (-NONE-:[1456..1456] *P*))
+                    (CD:[1457..1459] 69)))))))))
+    (.:[1459..1460] .)))
+
+;sentence 18 Span:1461..1519
+;All mutations occurred in male patients who  were smokers.
+(SENT
+  (S
+    (NP-SBJ (DT:[1461..1464] All) (NNS:[1465..1474] mutations))
+    (VP (VBD:[1475..1483] occurred)
+      (PP-LOC (IN:[1484..1486] in)
+        (NP
+          (NP (JJ:[1487..1491] male) (NNS:[1492..1500] patients))
+          (SBAR
+            (WHNP-1 (WP:[1501..1504] who))
+            (S
+              (NP-SBJ-1 (-NONE-:[1504..1504] *T*))
+              (VP (VBD:[1506..1510] were)
+                (NP-PRD (NNS:[1511..1518] smokers))))))))
+    (.:[1518..1519] .)))
+
+;sentence 19 Span:1520..1639
+;The incidences of K-ras gene mutation among male and female  patients with
+;adenocarcinoma were 13% and 0% respectively.
+;[1538..1543]:gene-rna:"K-ras"
+;[1595..1609]:malignancy:"adenocarcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1520..1523] The) (NNS:[1524..1534] incidences))
+      (PP (IN:[1535..1537] of)
+        (NP (NN:[1538..1543] K-ras) (NN:[1544..1548] gene)
+            (NN:[1549..1557] mutation)))
+      (PP (IN:[1558..1563] among)
+        (NP
+          (NP
+            (NP (JJ:[1564..1568] male)
+              (NML-1 (-NONE-:[1568..1568] *P*)))
+            (CC:[1569..1572] and)
+            (NP (JJ:[1573..1579] female)
+              (NML-1 (NNS:[1581..1589] patients))))
+          (PP (IN:[1590..1594] with)
+            (NP (NN:[1595..1609] adenocarcinoma))))))
+    (VP (VBD:[1610..1614] were)
+      (NP-PRD
+        (NP (CD:[1615..1617] 13) (NN:[1617..1618] %))
+        (CC:[1619..1622] and)
+        (NP (CD:[1623..1624] 0) (NN:[1624..1625] %)))
+      (ADVP (RB:[1626..1638] respectively)))
+    (.:[1638..1639] .)))
+
+;sentence 20 Span:1640..1767
+;Patients with K-ras  gene mutation survived for shorter periods than those
+;without mutations (P =  0.08, by the log-rank test).
+;[1654..1659]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1640..1648] Patients))
+      (PP (IN:[1649..1653] with)
+        (NP (NN:[1654..1659] K-ras) (NN:[1661..1665] gene)
+            (NN:[1666..1674] mutation))))
+    (VP (VBD:[1675..1683] survived)
+      (PP-TMP (IN:[1684..1687] for)
+        (NP
+          (NP (JJR:[1688..1695] shorter) (NNS:[1696..1703] periods))
+          (PP (IN:[1704..1708] than)
+            (NP
+              (NP (DT:[1709..1714] those))
+              (PP (IN:[1715..1722] without)
+                (NP (NNS:[1723..1732] mutations)))))))
+      (PRN (-LRB-:[1733..1734] -LRB-)
+        (FRAG
+          (S
+            (NP-SBJ (NN:[1734..1735] P))
+            (VP (SYM:[1736..1737] =)
+              (NP (CD:[1739..1743] 0.08))))
+          (,:[1743..1744] ,)
+          (PP (IN:[1745..1747] by)
+            (NP (DT:[1748..1751] the)
+              (NML (NN:[1752..1755] log) (HYPH:[1755..1756] -)
+                   (NN:[1756..1760] rank))
+              (NN:[1761..1765] test))))))
+    (-RRB-:[1765..1766] -RRB-) (.:[1766..1767] .)))
+
+;sentence 21 Span:1768..1780
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1768..1779] CONCLUSIONS) (::[1779..1780] :)))
+
+;sentence 22 Span:1781..1897
+;The incidence of K-ras gene mutations  for male and female patients with
+;adenocarcinoma was 13% and 0% respectively.
+;[1798..1803]:gene-rna:"K-ras"
+;[1854..1868]:malignancy:"adenocarcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1781..1784] The) (NN:[1785..1794] incidence))
+      (PP (IN:[1795..1797] of)
+        (NP (NN:[1798..1803] K-ras) (NN:[1804..1808] gene)
+            (NNS:[1809..1818] mutations)))
+      (PP (IN:[1820..1823] for)
+        (NP
+          (NP
+            (NP (JJ:[1824..1828] male)
+              (NML-1 (-NONE-:[1828..1828] *P*)))
+            (CC:[1829..1832] and)
+            (NP (JJ:[1833..1839] female)
+              (NML-1 (NNS:[1840..1848] patients))))
+          (PP (IN:[1849..1853] with)
+            (NP (NN:[1854..1868] adenocarcinoma))))))
+    (VP (VBD:[1869..1872] was)
+      (NP-PRD
+        (NP (CD:[1873..1875] 13) (NN:[1875..1876] %))
+        (CC:[1877..1880] and)
+        (NP (CD:[1881..1882] 0) (NN:[1882..1883] %)))
+      (ADVP (RB:[1884..1896] respectively)))
+    (.:[1896..1897] .)))
+
+;sentence 23 Span:1899..2087
+;Thus, the role of K-ras in the development of lung adenocarcinoma among
+;Chinese  men who are predominantly smokers is not significantly different
+;from that in  other populations worldwide.
+;[1917..1922]:gene-rna:"K-ras"
+;[1945..1964]:malignancy:"lung adenocarcinoma"
+(SENT
+  (S
+    (ADVP (RB:[1899..1903] Thus))
+    (,:[1903..1904] ,)
+    (NP-SBJ
+      (NP (DT:[1905..1908] the) (NN:[1909..1913] role))
+      (PP (IN:[1914..1916] of)
+        (NP (NN:[1917..1922] K-ras)))
+      (PP (IN:[1923..1925] in)
+        (NP
+          (NP (DT:[1926..1929] the) (NN:[1930..1941] development))
+          (PP (IN:[1942..1944] of)
+            (NP (NN:[1945..1949] lung) (NN:[1950..1964] adenocarcinoma)))
+          (PP (IN:[1965..1970] among)
+            (NP
+              (NP (JJ:[1971..1978] Chinese) (NNS:[1980..1983] men))
+              (SBAR
+                (WHNP-1 (WP:[1984..1987] who))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1987..1987] *T*))
+                  (VP (VBP:[1988..1991] are)
+                    (ADVP (RB:[1992..2005] predominantly))
+                    (NP-PRD (NNS:[2006..2013] smokers))))))))))
+    (VP (VBZ:[2014..2016] is) (RB:[2017..2020] not)
+      (ADJP-PRD (RB:[2021..2034] significantly) (JJ:[2035..2044] different)
+        (PP (IN:[2045..2049] from)
+          (NP
+            (NP (DT:[2050..2054] that))
+            (PP (IN:[2055..2057] in)
+              (NP (JJ:[2059..2064] other) (NNS:[2065..2076] populations)
+                  (RB:[2077..2086] worldwide)))))))
+    (.:[2086..2087] .)))
+
+;sentence 24 Span:2088..2212
+;However, K-ras mutations may not be associated with  adenocarcinoma among
+;women in Taiwan, who are virtually all nonsmokers.
+;[2097..2102]:gene-rna:"K-ras"
+;[2141..2155]:malignancy:"adenocarcinoma"
+(SENT
+  (S
+    (ADVP (RB:[2088..2095] However))
+    (,:[2095..2096] ,)
+    (NP-SBJ-2 (NN:[2097..2102] K-ras) (NNS:[2103..2112] mutations))
+    (VP (MD:[2113..2116] may) (RB:[2117..2120] not)
+      (VP (VB:[2121..2123] be)
+        (VP (VBN:[2124..2134] associated)
+          (NP-2 (-NONE-:[2134..2134] *))
+          (PP-CLR (IN:[2135..2139] with)
+            (NP
+              (NP (NN:[2141..2155] adenocarcinoma))
+              (PP (IN:[2156..2161] among)
+                (NP
+                  (NP
+                    (NP (NNS:[2162..2167] women))
+                    (PP-LOC (IN:[2168..2170] in)
+                      (NP (NNP:[2171..2177] Taiwan))))
+                  (,:[2177..2178] ,)
+                  (SBAR
+                    (WHNP-1 (WP:[2179..2182] who))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[2182..2182] *T*))
+                      (VP (VBP:[2183..2186] are)
+                        (NP-PRD
+                          (QP (RB:[2187..2196] virtually) (DT:[2197..2200] all))
+                          (NNS:[2201..2211] nonsmokers))))))))))))
+    (.:[2211..2212] .)))
+
+;section 25 Span:2216..2260
+;PMID: 9808427 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2216..2220] PMID) (::[2220..2221] :) (CD:[2222..2229] 9808427)
+        (IN:[2230..2231] -LSB-) (NNP:[2231..2237] PubMed) (HYPH:[2238..2239] -)
+        (JJ:[2240..2247] indexed) (IN:[2248..2251] for)
+        (NNP:[2252..2260] MEDLINE-RSB-)))

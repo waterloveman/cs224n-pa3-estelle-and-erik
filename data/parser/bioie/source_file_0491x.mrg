@@ -1,0 +1,305 @@
+;PMID: 1921930
+;source_file_2866.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:37..76] = [t:37..76]
+;2)section:[e:80..112] = [t:80..112]
+;3)section:[e:116..194] = [t:116..194]
+;4)sentence:[e:198..302] = [t:198..302]
+;5)sentence:[e:303..418] = [t:303..418]
+;6)sentence:[e:419..581] = [t:419..581]
+;7)sentence:[e:583..617] = [t:583..617]
+;8)sentence:[e:618..685] = [t:618..685]
+;9)sentence:[e:686..811] = [t:686..811]
+;10)sentence:[e:812..935] = [t:812..935]
+;11)sentence:[e:936..1040] = [t:936..1040]
+;12)sentence:[e:1041..1152] = [t:1041..1152]
+;13)sentence:[e:1153..1331] = [t:1153..1331]
+;14)section:[e:1335..1379] = [t:1335..1379]
+
+;section 0 Span:0..31
+;Minn Med.  1991 Aug;74(8):23-6.
+(SEC
+  (FRAG (NNP:[0..4] Minn) (NNP:[5..8] Med) (.:[8..9] .) (CD:[11..15] 1991)
+        (CC:[16..23] Aug;74-LRB-) (CD:[23..24] 8) (NN:[24..25] -RRB-)
+        (::[25..26] :) (CD:[26..28] 23) (HYPH:[28..29] -) (CD:[29..31] 6.)))
+
+;sentence 1 Span:37..76
+;Incidentally discovered adrenal masses.
+(SENT
+  (NP-HLN
+    (ADJP (RB:[37..49] Incidentally) (VBN:[50..60] discovered))
+    (JJ:[61..68] adrenal) (NNS:[69..75] masses) (.:[75..76] .)))
+
+;section 2 Span:80..112
+;Caplan RH, Kisken WA, Huiras CM.
+(SEC
+  (FRAG (NNP:[80..86] Caplan) (NNP:[87..89] RH) (,:[89..90] ,)
+        (NNP:[91..97] Kisken) (NNP:[98..100] WA) (,:[100..101] ,)
+        (NNP:[102..108] Huiras) (NNP:[109..111] CM) (.:[111..112] .)))
+
+;section 3 Span:116..194
+;Department of Internal Medicine, Gundersen Clinic, Ltd., La Crosse,
+;Wisconsin.
+(SEC
+  (FRAG (NNP:[116..126] Department) (IN:[127..129] of) (NNP:[130..138] Internal)
+        (NNP:[139..147] Medicine) (,:[147..148] ,) (NNP:[149..158] Gundersen)
+        (NNP:[159..165] Clinic) (,:[165..166] ,) (NNP:[167..171] Ltd.)
+        (,:[171..172] ,) (NNP:[173..175] La) (NNP:[176..182] Crosse)
+        (,:[182..183] ,) (NNP:[184..193] Wisconsin) (.:[193..194] .)))
+
+;sentence 4 Span:198..302
+;This report describes a retrospective study of 23 patients with incidentally 
+;discovered adrenal masses.
+(SENT
+  (S
+    (NP-SBJ (DT:[198..202] This) (NN:[203..209] report))
+    (VP (VBZ:[210..219] describes)
+      (NP
+        (NP (DT:[220..221] a) (JJ:[222..235] retrospective)
+            (NN:[236..241] study))
+        (PP (IN:[242..244] of)
+          (NP
+            (NP (CD:[245..247] 23) (NNS:[248..256] patients))
+            (PP (IN:[257..261] with)
+              (NP
+                (ADJP (RB:[262..274] incidentally) (VBN:[276..286] discovered))
+                (JJ:[287..294] adrenal) (NNS:[295..301] masses)))))))
+    (.:[301..302] .)))
+
+;sentence 5 Span:303..418
+;Two patients with subclinical cortisol secretion  developed adrenal
+;insufficiency after removal of benign adenomas.
+;[402..408]:malignancy-clinical-stage:"benign"
+;[409..417]:malignancy-type:"adenomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[303..306] Two) (NNS:[307..315] patients))
+      (PP (IN:[316..320] with)
+        (NP (JJ:[321..332] subclinical) (NN:[333..341] cortisol)
+            (NN:[342..351] secretion))))
+    (VP (VBD:[353..362] developed)
+      (NP (JJ:[363..370] adrenal) (NN:[371..384] insufficiency))
+      (PP-TMP (IN:[385..390] after)
+        (NP
+          (NP (NN:[391..398] removal))
+          (PP (IN:[399..401] of)
+            (NP (JJ:[402..408] benign) (NNS:[409..417] adenomas))))))
+    (.:[417..418] .)))
+
+;sentence 6 Span:419..581
+;Another  patient, who probably harbors an asymptomatic pheochromocytoma,
+;developed a  hypertensive crisis when a mass was palpated during aortic
+;vascular surgery.
+;[474..490]:malignancy-type:"pheochromocytoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[419..426] Another) (NN:[428..435] patient))
+      (,:[435..436] ,)
+      (SBAR
+        (WHNP-1 (WP:[437..440] who))
+        (S
+          (NP-SBJ-1 (-NONE-:[440..440] *T*))
+          (ADVP-SBJ (RB:[441..449] probably))
+          (VP (VBZ:[450..457] harbors)
+            (NP (DT:[458..460] an) (JJ:[461..473] asymptomatic)
+                (NN:[474..490] pheochromocytoma))))))
+    (,:[490..491] ,)
+    (VP (VBD:[492..501] developed)
+      (NP (DT:[502..503] a) (JJ:[505..517] hypertensive) (NN:[518..524] crisis))
+      (SBAR
+        (WHADVP-2 (WRB:[525..529] when))
+        (S
+          (NP-SBJ-3 (DT:[530..531] a) (NN:[532..536] mass))
+          (VP (VBD:[537..540] was)
+            (VP (VBN:[541..549] palpated)
+              (NP-3 (-NONE-:[549..549] *))
+              (PP (IN:[550..556] during)
+                (NP (JJ:[557..563] aortic) (JJ:[564..572] vascular)
+                    (NN:[573..580] surgery)))
+              (ADVP-TMP-2 (-NONE-:[580..580] *T*)))))))
+    (.:[580..581] .)))
+
+;sentence 7 Span:583..617
+;Twelve patients underwent surgery.
+(SENT
+  (S
+    (NP-SBJ (CD:[583..589] Twelve) (NNS:[590..598] patients))
+    (VP (VBD:[599..608] underwent)
+      (NP (NN:[609..616] surgery)))
+    (.:[616..617] .)))
+
+;sentence 8 Span:618..685
+;Seven benign adenomas, an angiomyolipoma, and  a cyst were removed.
+;[624..630]:malignancy-clinical-stage:"benign"
+;[631..639]:malignancy-type:"adenomas"
+;[644..658]:malignancy-type:"angiomyolipoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[618..623] Seven) (JJ:[624..630] benign) (NNS:[631..639] adenomas))
+      (,:[639..640] ,)
+      (NP (DT:[641..643] an) (NN:[644..658] angiomyolipoma))
+      (,:[658..659] ,) (CC:[660..663] and)
+      (NP (DT:[665..666] a) (NN:[667..671] cyst)))
+    (VP (VBD:[672..676] were)
+      (VP (VBN:[677..684] removed)
+        (NP-1 (-NONE-:[684..684] *))))
+    (.:[684..685] .)))
+
+;sentence 9 Span:686..811
+;Three patients had malignant masses that include an  angiosarcoma, an adrenal
+;adenocarcinoma, and a congenital neuroblastoma.
+;[705..714]:malignancy-clinical-stage:"malignant"
+;[739..751]:malignancy-type:"angiosarcoma"
+;[756..778]:malignancy-type:"adrenal adenocarcinoma"
+;[786..796]:malignancy-developmental-state:"congenital"
+;[797..810]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (CD:[686..691] Three) (NNS:[692..700] patients))
+    (VP (VBD:[701..704] had)
+      (NP
+        (NP (JJ:[705..714] malignant) (NNS:[715..721] masses))
+        (SBAR
+          (WHNP-1 (WDT:[722..726] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[726..726] *T*))
+            (VP (VBP:[727..734] include)
+              (NP
+                (NP (DT:[735..737] an) (NN:[739..751] angiosarcoma))
+                (,:[751..752] ,)
+                (NP (DT:[753..755] an)
+                   (JJ:[756..763] adrenal) (NN:[764..778] adenocarcinoma))
+                (,:[778..779] ,) (CC:[780..783] and)
+                (NP (DT:[784..785] a) (JJ:[786..796] congenital)
+                    (NN:[797..810] neuroblastoma))))))))
+    (.:[810..811] .)))
+
+;sentence 10 Span:812..935
+;We  conclude that hormones, especially cortisol, may be secreted in
+;subclinical  amounts by incidentally discovered masses.
+(SENT
+  (S
+    (NP-SBJ (PRP:[812..814] We))
+    (VP (VBP:[816..824] conclude)
+      (SBAR (IN:[825..829] that)
+        (S
+          (NP-SBJ-1
+            (NP (NNS:[830..838] hormones))
+            (,:[838..839] ,)
+            (NP
+              (ADVP (RB:[840..850] especially))
+              (NN:[851..859] cortisol)))
+          (,:[859..860] ,)
+          (VP (MD:[861..864] may)
+            (VP (VB:[865..867] be)
+              (VP (VBN:[868..876] secreted)
+                (NP-1 (-NONE-:[876..876] *))
+                (PP (IN:[877..879] in)
+                  (NP (JJ:[880..891] subclinical) (NNS:[893..900] amounts)))
+                (PP (IN:[901..903] by)
+                  (NP-LGS
+                    (ADJP (RB:[904..916] incidentally)
+                          (VBN:[917..927] discovered))
+                    (NNS:[928..934] masses)))))))))
+    (.:[934..935] .)))
+
+;sentence 11 Span:936..1040
+;We recommend a concise laboratory  evaluation that includes an overnight
+;dexamethasone suppression test.
+(SENT
+  (S
+    (NP-SBJ (PRP:[936..938] We))
+    (VP (VBP:[939..948] recommend)
+      (NP
+        (NP (DT:[949..950] a) (JJ:[951..958] concise) (NN:[959..969] laboratory)
+            (NN:[971..981] evaluation))
+        (SBAR
+          (WHNP-1 (WDT:[982..986] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[986..986] *T*))
+            (VP (VBZ:[987..995] includes)
+              (NP (DT:[996..998] an) (JJ:[999..1008] overnight)
+                (NML (NN:[1009..1022] dexamethasone)
+                     (NN:[1023..1034] suppression))
+                (NN:[1035..1039] test)))))))
+    (.:[1039..1040] .)))
+
+;sentence 12 Span:1041..1152
+;Based on  our interpretation of the literature, we believe masses greater
+;than 3 cm in  size should be removed.
+(SENT
+  (S
+    (PP (VBN:[1041..1046] Based)
+      (PP (IN:[1047..1049] on)
+        (NP
+          (NP (PRP$:[1051..1054] our) (NN:[1055..1069] interpretation))
+          (PP (IN:[1070..1072] of)
+            (NP (DT:[1073..1076] the) (NN:[1077..1087] literature))))))
+    (,:[1087..1088] ,)
+    (NP-SBJ (PRP:[1089..1091] we))
+    (VP (VBP:[1092..1099] believe)
+      (S
+        (NP-SBJ-1
+          (NP (NNS:[1100..1106] masses))
+          (ADJP (JJR:[1107..1114] greater)
+            (PP (IN:[1115..1119] than)
+              (NP
+                (NP (CD:[1120..1121] 3) (NN:[1122..1124] cm))
+                (PP (IN:[1125..1127] in)
+                  (NP (NN:[1129..1133] size)))))))
+        (VP (MD:[1134..1140] should)
+          (VP (VB:[1141..1143] be)
+            (VP (VBN:[1144..1151] removed)
+              (NP-1 (-NONE-:[1151..1151] *)))))))
+    (.:[1151..1152] .)))
+
+;sentence 13 Span:1153..1331
+;Patients who do not undergo surgery should have computed  tomographic scans
+;repeated for one year and should be reassessed periodically  for the
+;development of hormone secretion.
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[1153..1161] Patients))
+      (SBAR
+        (WHNP-1 (WP:[1162..1165] who))
+        (S
+          (NP-SBJ-1 (-NONE-:[1165..1165] *T*))
+          (VP (VBP:[1166..1168] do) (RB:[1169..1172] not)
+            (VP (VB:[1173..1180] undergo)
+              (NP (NN:[1181..1188] surgery)))))))
+    (VP
+      (VP (MD:[1189..1195] should)
+        (VP (VB:[1196..1200] have)
+          (S
+            (NP-SBJ (VBN:[1201..1209] computed) (JJ:[1211..1222] tomographic)
+                    (NNS:[1223..1228] scans))
+            (VP (VBN:[1229..1237] repeated)
+              (PP-TMP (IN:[1238..1241] for)
+                (NP (CD:[1242..1245] one) (NN:[1246..1250] year)))))))
+      (CC:[1251..1254] and)
+      (VP (MD:[1255..1261] should)
+        (VP (VB:[1262..1264] be)
+          (VP (VBN:[1265..1275] reassessed)
+            (NP-2 (-NONE-:[1275..1275] *))
+            (ADVP-TMP (RB:[1276..1288] periodically))
+            (PP (IN:[1290..1293] for)
+              (NP
+                (NP (DT:[1294..1297] the) (NN:[1298..1309] development))
+                (PP (IN:[1310..1312] of)
+                  (NP (NN:[1313..1320] hormone) (NN:[1321..1330] secretion)))))))))
+    (.:[1330..1331] .)))
+
+;section 14 Span:1335..1379
+;PMID: 1921930 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1335..1339] PMID) (::[1339..1340] :) (CD:[1341..1348] 1921930)
+        (NN:[1349..1350] -LSB-) (NNP:[1350..1356] PubMed) (::[1357..1358] -)
+        (NN:[1359..1366] indexed) (IN:[1367..1370] for)
+        (NNP:[1371..1379] MEDLINE-RSB-)))

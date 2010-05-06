@@ -1,0 +1,307 @@
+;PMID: 6795603
+;source_file_2875.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..166] = [t:43..166]
+;2)section:[e:170..203] = [t:170..203]
+;3)sentence:[e:207..441] = [t:207..441]
+;4)sentence:[e:442..577] = [t:442..577]
+;5)sentence:[e:578..778] = [t:578..778]
+;6)sentence:[e:779..1145] = [t:779..1145]
+;7)sentence:[e:1146..1351] = [t:1146..1351]
+;8)section:[e:1355..1399] = [t:1355..1399]
+
+;section 0 Span:0..37
+;Oncodev Biol Med.  1981;2(1-2):77-87.
+(SEC
+  (FRAG (NNP:[0..7] Oncodev) (NNP:[8..12] Biol) (NNP:[13..16] Med)
+        (.:[16..17] .) (CD:[19..23] 1981) (CC:[23..25] ;2)
+        (-LRB-:[25..26] -LRB-) (NN:[26..29] 1-2) (-RRB-:[29..30] -RRB-)
+        (CD:[30..33] :77) (::[33..34] -) (CD:[34..36] 87) (.:[36..37] .)))
+
+;sentence 1 Span:43..166
+;Progressive growth of transplanted tumors is accompanied by increasing serum 
+;concentrations of murine gamma fetal antigen.
+;[146..165]:gene-protein:"gamma fetal antigen"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (JJ:[43..54] Progressive) (NN:[55..61] growth))
+      (PP (IN:[62..64] of)
+        (NP (VBN:[65..77] transplanted) (NNS:[78..84] tumors))))
+    (VP (VBZ:[85..87] is)
+      (VP (VBN:[88..99] accompanied)
+        (NP-1 (-NONE-:[99..99] *))
+        (PP (IN:[100..102] by)
+          (S-NOM-LGS
+            (NP-SBJ (-NONE-:[102..102] *))
+            (VP (VBG:[103..113] increasing)
+              (NP
+                (NP (NN:[114..119] serum) (NNS:[121..135] concentrations))
+                (PP (IN:[136..138] of)
+                  (NP (JJ:[139..145] murine)
+                     (SYM:[146..151] gamma) (JJ:[152..157] fetal)
+                     (NN:[158..165] antigen)))))))))
+    (.:[165..166] .)))
+
+;section 2 Span:170..203
+;Higgins PJ, Marucs S, Hawrylko E.
+(SEC
+  (FRAG (NNP:[170..177] Higgins) (NNP:[178..180] PJ) (,:[180..181] ,)
+        (NNP:[182..188] Marucs) (NNP:[189..190] S) (,:[190..191] ,)
+        (NNP:[192..200] Hawrylko) (NNP:[201..203] E.)))
+
+;sentence 3 Span:207..441
+;BALB/c mice bearing growing Meth A sarcomas developed gradually increasing
+;serum  concentrations of the tumor-associated murine gamma fetal antigen
+;(gamma-FA), a  trend which could be reversed by surgical excision of the
+;tumor tissue.
+;[235..250]:malignancy-type:"Meth A sarcomas"
+;[335..354]:gene-protein:"gamma fetal antigen"
+;[356..364]:gene-protein:"gamma-FA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[207..213] BALB/c) (NNS:[214..218] mice))
+      (VP (VBG:[219..226] bearing)
+        (NP (VBG:[227..234] growing)
+          
+          (NP (NN:[235..239] Meth) (NN:[240..241] A))
+          (NNS:[242..250] sarcomas))))
+    (VP (VBD:[251..260] developed)
+      (NP
+        (NP
+          (NP
+            (ADJP (RB:[261..270] gradually) (VBG:[271..281] increasing))
+            (NN:[282..287] serum) (NNS:[289..303] concentrations))
+          (PP (IN:[304..306] of)
+            (NP (DT:[307..310] the)
+              (ADJP (NN:[311..316] tumor) (HYPH:[316..317] -)
+                    (VBN:[317..327] associated))
+              (JJ:[328..334] murine)
+              (NML
+                (NML (SYM:[335..340] gamma) (JJ:[341..346] fetal)
+                     (NN:[347..354] antigen))
+                (NML (-LRB-:[355..356] -LRB-) (NN:[356..364] gamma-FA)
+                     (-RRB-:[364..365] -RRB-))))))
+        (,:[365..366] ,)
+        (NP
+          (NP (DT:[367..368] a) (NN:[370..375] trend))
+          (SBAR
+            (WHNP-1 (WDT:[376..381] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[381..381] *T*))
+              (VP (MD:[382..387] could)
+                (VP (VB:[388..390] be)
+                  (VP (VBN:[391..399] reversed)
+                    (NP-1 (-NONE-:[399..399] *))
+                    (PP (IN:[400..402] by)
+                      (NP-LGS
+                        (NP (JJ:[403..411] surgical) (NN:[412..420] excision))
+                        (PP (IN:[421..423] of)
+                          (NP (DT:[424..427] the) (NN:[428..433] tumor)
+                              (NN:[434..440] tissue)))))))))))))
+    (.:[440..441] .)))
+
+;sentence 4 Span:442..577
+;This  antigen was not detected in the sera of normal adult mice or in the
+;sera of  animals with non-neoplastic proliferative condition.
+;[448..455]:gene-protein:"antigen"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[442..446] This) (NN:[448..455] antigen))
+    (VP (VBD:[456..459] was) (RB:[460..463] not)
+      (VP (VBN:[464..472] detected)
+        (NP-1 (-NONE-:[472..472] *))
+        (PP-LOC
+          (PP (IN:[473..475] in)
+            (NP
+              (NP (DT:[476..479] the) (NNS:[480..484] sera))
+              (PP (IN:[485..487] of)
+                (NP (JJ:[488..494] normal) (JJ:[495..500] adult)
+                    (NNS:[501..505] mice)))))
+          (CC:[506..508] or)
+          (PP (IN:[509..511] in)
+            (NP
+              (NP (DT:[512..515] the) (NNS:[516..520] sera))
+              (PP (IN:[521..523] of)
+                (NP
+                  (NP (NNS:[525..532] animals))
+                  (PP (IN:[533..537] with)
+                    (NP
+                      (ADJP (AFX:[538..541] non) (HYPH:[541..542] -)
+                            (JJ:[542..552] neoplastic))
+                      (JJ:[553..566] proliferative) (NN:[567..576] condition))))))))))
+    (.:[576..577] .)))
+
+;sentence 5 Span:578..778
+;Although gamma-FA occurs in  splenic tissue, its concentration in
+;tumor-bearer serum was unaffected by  splenectomy suggesting that gamma-FA is
+;not released by the spleen in response  to tumor growth.
+;[587..595]:gene-protein:"gamma-FA"
+;[710..718]:gene-protein:"gamma-FA"
+(SENT
+  (S
+    (SBAR-ADV (IN:[578..586] Although)
+      (S
+        (NP-SBJ (NN:[587..595] gamma-FA))
+        (VP (VBZ:[596..602] occurs)
+          (PP-LOC (IN:[603..605] in)
+            (NP (JJ:[607..614] splenic) (NN:[615..621] tissue))))))
+    (,:[621..622] ,)
+    (NP-SBJ
+      (NP (PRP$:[623..626] its) (NN:[627..640] concentration))
+      (PP (IN:[641..643] in)
+        (NP
+          (NML (NN:[644..649] tumor) (HYPH:[649..650] -) (NN:[650..656] bearer))
+          (NN:[657..662] serum))))
+    (VP (VBD:[663..666] was)
+      (ADJP-PRD (JJ:[667..677] unaffected)
+        (PP (IN:[678..680] by)
+          (NP (NN:[682..693] splenectomy))))
+      (S-ADV
+        (NP-SBJ (-NONE-:[693..693] *))
+        (VP (VBG:[694..704] suggesting)
+          (SBAR (IN:[705..709] that)
+            (S
+              (NP-SBJ-1 (NN:[710..718] gamma-FA))
+              (VP (VBZ:[719..721] is) (RB:[722..725] not)
+                (VP (VBN:[726..734] released)
+                  (NP-1 (-NONE-:[734..734] *))
+                  (PP (IN:[735..737] by)
+                    (NP-LGS (DT:[738..741] the) (NN:[742..748] spleen)))
+                  (PP (IN:[749..751] in)
+                    (NP
+                      (NP (NN:[752..760] response))
+                      (PP (TO:[762..764] to)
+                        (NP (NN:[765..770] tumor) (NN:[771..777] growth))))))))))))
+    (.:[777..778] .)))
+
+;sentence 6 Span:779..1145
+;Agar gel precipitin and radioimmunoprecipitation assays, using  antisera
+;prepared to the major internal protein (P 30) and external glycoprotein  (gp
+;70) of Rauscher murine leukemia virus and to the secondary glycoprotein (gp 
+;34) of mouse mammary tumor virus, indicated that gamma-FA is not a major 
+;structural component of the more wide-spread murine retroviruses.
+;[788..798]:gene-protein:"precipitin"
+;[892..896]:gene-protein:"P 30"
+;[926..931]:gene-protein:"gp 70"
+;[952..960]:malignancy-type:"leukemia"
+;[1002..1008]:gene-protein:"gp  34"
+;[1019..1032]:malignancy-type:"mammary tumor"
+;[1055..1063]:gene-protein:"gamma-FA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[779..783] Agar) (NN:[784..787] gel) (NN:[788..798] precipitin))
+      (CC:[799..802] and)
+      (NP (NN:[803..827] radioimmunoprecipitation) (NNS:[828..834] assays)))
+    (,:[834..835] ,)
+    (S-ADV
+      (NP-SBJ (-NONE-:[835..835] *))
+      (VP (VBG:[836..841] using)
+        (NP
+          (NP (NNS:[843..851] antisera))
+          (VP (VBN:[852..860] prepared)
+            (NP (-NONE-:[860..860] *))
+            (PP
+              (PP (TO:[861..863] to)
+                (NP
+                  (NP
+                    (NP (DT:[864..867] the) (JJ:[868..873] major)
+                        (JJ:[874..882] internal) (NN:[883..890] protein)
+                      (PRN (-LRB-:[891..892] -LRB-)
+                        (NP (NN:[892..893] P) (CD:[894..896] 30))
+                        (-RRB-:[896..897] -RRB-)))
+                    (CC:[898..901] and)
+                    (NP (JJ:[902..910] external) (NN:[911..923] glycoprotein)
+                      (PRN (-LRB-:[925..926] -LRB-)
+                        (NP (NN:[926..928] gp) (CD:[929..931] 70))
+                        (-RRB-:[931..932] -RRB-))))
+                  (PP (IN:[933..935] of)
+                    (NP
+                      (NML (NNP:[936..944] Rauscher) (JJ:[945..951] murine)
+                           (NN:[952..960] leukemia))
+                      (NN:[961..966] virus)))))
+              (CC:[967..970] and)
+              (PP (TO:[971..973] to)
+                (NP
+                  (NP (DT:[974..977] the) (JJ:[978..987] secondary)
+                      (NN:[988..1000] glycoprotein)
+                    (PRN (-LRB-:[1001..1002] -LRB-)
+                      (NP (NN:[1002..1004] gp) (CD:[1006..1008] 34))
+                      (-RRB-:[1008..1009] -RRB-)))
+                  (PP (IN:[1010..1012] of)
+                    (NP (NN:[1013..1018] mouse)
+                       (JJ:[1019..1026] mammary) (NN:[1027..1032] tumor)
+                      (NN:[1033..1038] virus))))))))))
+    (,:[1038..1039] ,)
+    (VP (VBD:[1040..1049] indicated)
+      (SBAR (IN:[1050..1054] that)
+        (S
+          (NP-SBJ (NN:[1055..1063] gamma-FA))
+          (VP (VBZ:[1064..1066] is) (RB:[1067..1070] not)
+            (NP-PRD
+              (NP (DT:[1071..1072] a) (JJ:[1073..1078] major)
+                  (JJ:[1080..1090] structural) (NN:[1091..1100] component))
+              (PP (IN:[1101..1103] of)
+                (NP (DT:[1104..1107] the)
+                  (ADJP (RBR:[1108..1112] more) (JJ:[1113..1117] wide)
+                        (HYPH:[1117..1118] -) (VBN:[1118..1124] spread))
+                  (JJ:[1125..1131] murine) (NNS:[1132..1144] retroviruses))))))))
+    (.:[1144..1145] .)))
+
+;sentence 7 Span:1146..1351
+;The appearance  of gamma-FA in the sera of tumor-bearing mice may reflect the
+;ectopic activation  of a specific cellular gene, the expression of which
+;bears some relationship to  neoplastic transformation.
+;[1165..1173]:gene-protein:"gamma-FA"
+;[1325..1335]:malignancy-type:"neoplastic"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1146..1149] The) (NN:[1150..1160] appearance))
+      (PP (IN:[1162..1164] of)
+        (NP (NN:[1165..1173] gamma-FA)))
+      (PP (IN:[1174..1176] in)
+        (NP
+          (NP (DT:[1177..1180] the) (NNS:[1181..1185] sera))
+          (PP (IN:[1186..1188] of)
+            (NP
+              (ADJP (NN:[1189..1194] tumor) (HYPH:[1194..1195] -)
+                    (VBG:[1195..1202] bearing))
+              (NNS:[1203..1207] mice))))))
+    (VP (MD:[1208..1211] may)
+      (VP (VB:[1212..1219] reflect)
+        (NP
+          (NP (DT:[1220..1223] the) (JJ:[1224..1231] ectopic)
+              (NN:[1232..1242] activation))
+          (PP (IN:[1244..1246] of)
+            (NP
+              (NP (DT:[1247..1248] a) (JJ:[1249..1257] specific)
+                  (JJ:[1258..1266] cellular) (NN:[1267..1271] gene))
+              (,:[1271..1272] ,)
+              (SBAR
+                (WHNP-1
+                  (NP (DT:[1273..1276] the) (NN:[1277..1287] expression))
+                  (WHPP (IN:[1288..1290] of)
+                    (WHNP (WDT:[1291..1296] which))))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1296..1296] *T*))
+                  (VP (VBZ:[1297..1302] bears)
+                    (NP
+                      (NP (DT:[1303..1307] some) (NN:[1308..1320] relationship))
+                      (PP (TO:[1321..1323] to)
+                        (NP (JJ:[1325..1335] neoplastic)
+                            (NN:[1336..1350] transformation))))))))))))
+    (.:[1350..1351] .)))
+
+;section 8 Span:1355..1399
+;PMID: 6795603 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1355..1359] PMID) (::[1359..1360] :) (CD:[1361..1368] 6795603)
+        (NN:[1369..1370] -LSB-) (NNP:[1370..1376] PubMed) (::[1377..1378] -)
+        (NN:[1379..1386] indexed) (IN:[1387..1390] for)
+        (NNP:[1391..1399] MEDLINE-RSB-)))

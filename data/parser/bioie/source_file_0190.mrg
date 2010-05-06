@@ -1,0 +1,635 @@
+;PMID: 9328296
+;source_file_1783.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..162] = [t:52..162]
+;2)section:[e:166..188] = [t:166..188]
+;3)section:[e:192..255] = [t:192..255]
+;4)sentence:[e:259..446] = [t:259..446]
+;5)sentence:[e:447..689] = [t:447..689]
+;6)sentence:[e:690..842] = [t:690..842]
+;7)sentence:[e:843..945] = [t:843..945]
+;8)sentence:[e:946..1104] = [t:946..1104]
+;9)sentence:[e:1105..1232] = [t:1105..1232]
+;10)sentence:[e:1233..1396] = [t:1233..1396]
+;11)sentence:[e:1397..1619] = [t:1397..1619]
+;12)sentence:[e:1620..1971] = [t:1620..1971]
+;13)sentence:[e:1972..2059] = [t:1972..2059]
+;14)sentence:[e:2060..2218] = [t:2060..2218]
+;15)sentence:[e:2219..2440] = [t:2219..2440]
+;16)sentence:[e:2441..2607] = [t:2441..2607]
+;17)section:[e:2611..2655] = [t:2611..2655]
+
+;section 0 Span:0..46
+;Arch Biochem Biophys. 1997 Oct 1;346(1):161-9.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 1997) (NNP:[27..30] Oct) (CD:[31..36] 1;346)
+        (-LRB-:[36..37] -LRB-) (CD:[37..38] 1) (-RRB-:[38..39] -RRB-)
+        (CD:[39..43] :161) (::[43..44] -) (CD:[44..46] 9.)))
+
+;sentence 1 Span:52..162
+;Progesterone and testosterone hydroxylation by cytochromes P450 2C19, 2C9,
+;and  3A4 in human liver microsomes.
+;[52..64]:substance:"Progesterone"
+;[69..81]:substance:"testosterone"
+;[99..120]:cyp450:"cytochromes P450 2C19"
+;[99..115]...[132..135]:cyp450:"cytochromes P450"..."3A4"
+;[99..115]...[122..125]:cyp450:"cytochromes P450"..."2C9"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[52..64] Progesterone)
+        (NML-2 (-NONE-:[64..64] *P*)))
+      (CC:[65..68] and)
+      (NP (NN:[69..81] testosterone)
+        (NML-2 (NN:[82..95] hydroxylation))))
+    (PP (IN:[96..98] by)
+      (NP
+        (NP
+          (NML-1 (NNS:[99..110] cytochromes) (NN:[111..115] P450))
+          (NN:[116..120] 2C19))
+        (,:[120..121] ,)
+        (NP
+          (NML-1 (-NONE-:[121..121] *P*))
+          (NN:[122..125] 2C9))
+        (,:[125..126] ,) (CC:[127..130] and)
+        (NP
+          (NML-1 (-NONE-:[130..130] *P*))
+          (NN:[132..135] 3A4))))
+    (PP-LOC (IN:[136..138] in)
+      (NP (JJ:[139..144] human) (NN:[145..150] liver)
+          (NNS:[151..161] microsomes)))
+    (.:[161..162] .)))
+
+;section 2 Span:166..188
+;Yamazaki H, Shimada T.
+(SEC
+  (FRAG (NNP:[166..174] Yamazaki) (NNP:[175..177] H,) (NNP:[178..185] Shimada)
+        (NNP:[186..188] T.)))
+
+;section 3 Span:192..255
+;Osaka Prefectural Institute of Public Health, Nakamichi, Japan.
+(SEC
+  (FRAG (NNP:[192..197] Osaka) (NNP:[198..209] Prefectural)
+        (NNP:[210..219] Institute) (IN:[220..222] of) (NNP:[223..229] Public)
+        (NNP:[230..236] Health) (,:[236..237] ,) (NNP:[238..247] Nakamichi)
+        (,:[247..248] ,) (NNP:[249..254] Japan) (.:[254..255] .)))
+
+;sentence 4 Span:259..446
+;Roles of human cytochrome P450 (P450 or CYP) 2C9, 2C19, and 3A4 in the
+;oxidation  of progesterone and testosterone were studied in recombinant P450
+;enzymes and in  human liver microsomes.
+;[274..307]:cyp450:"cytochrome P450 (P450 or CYP) 2C9"
+;[274..303]...[319..322]:cyp450:"cytochrome P450 (P450 or CYP)"..."3A4"
+;[274..303]...[309..313]:cyp450:"cytochrome P450 (P450 or CYP)"..."2C19"
+;[344..356]:substance:"progesterone"
+;[361..373]:substance:"testosterone"
+;[402..414]:cyp450:"P450 enzymes"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[259..264] Roles))
+      (PP (IN:[265..267] of)
+        (NP
+          (NP
+            (NML-1
+              (NML (JJ:[268..273] human) (NN:[274..284] cytochrome)
+                   (NN:[285..289] P450))
+              (NML (-LRB-:[290..291] -LRB-) (NN:[291..295] P450)
+                   (CC:[296..298] or) (NN:[299..302] CYP)
+                   (-RRB-:[302..303] -RRB-)))
+            (NN:[304..307] 2C9))
+          (,:[307..308] ,)
+          (NP
+            (NML-1 (-NONE-:[308..308] *P*))
+            (NN:[309..313] 2C19))
+          (,:[313..314] ,) (CC:[315..318] and)
+          (NP
+            (NML-1 (-NONE-:[318..318] *P*))
+            (NN:[319..322] 3A4))))
+      (PP-LOC (IN:[323..325] in)
+        (NP
+          (NP (DT:[326..329] the) (NN:[330..339] oxidation))
+          (PP (IN:[341..343] of)
+            (NP (NN:[344..356] progesterone) (CC:[357..360] and)
+                (NN:[361..373] testosterone))))))
+    (VP (VBD:[374..378] were)
+      (VP (VBN:[379..386] studied)
+        (NP-2 (-NONE-:[386..386] *))
+        (PP-LOC
+          (PP (IN:[387..389] in)
+            (NP (JJ:[390..401] recombinant)
+               (NN:[402..406] P450) (NNS:[407..414] enzymes)))
+          (CC:[415..418] and)
+          (PP (IN:[419..421] in)
+            (NP (JJ:[423..428] human) (NN:[429..434] liver)
+                (NNS:[435..445] microsomes))))))
+    (.:[445..446] .)))
+
+;sentence 5 Span:447..689
+;In vitro inhibition experiments showed that progesterone  and its 17alpha-
+;and 21-hydroxylated metabolites and 11-deoxycortisol suppressed  the
+;CYP2C19-dependent R-warfarin 7-hydroxylation activities, with progesterone 
+;being the most active.
+;[491..503]:substance:"progesterone"
+;[513..521]...[542..553]:substance:"17alpha-"..."metabolites"
+;[526..553]:substance:"21-hydroxylated metabolites"
+;[558..574]:substance:"11-deoxycortisol"
+;[591..598]:cyp450:"CYP2C19"
+;[609..619]:substance:"R-warfarin"
+;[653..665]:substance:"progesterone"
+(SENT
+  (S
+    (NP-SBJ
+      (ADJP (FW:[447..449] In) (FW:[450..455] vitro))
+      (NN:[456..466] inhibition) (NNS:[467..478] experiments))
+    (VP (VBD:[479..485] showed)
+      (SBAR (IN:[486..490] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[491..503] progesterone))
+            (CC:[505..508] and)
+            (NP (PRP$:[509..512] its)
+              (NML
+                (NML
+                  (ADJP (NN:[513..520] 17alpha) (HYPH:[520..521] -)
+                    (ADJP-1 (-NONE-:[521..521] *P*)))
+                  (NML-2 (-NONE-:[521..521] *P*)))
+                (CC:[522..525] and)
+                (NML
+                  (ADJP (CD:[526..528] 21) (HYPH:[528..529] -)
+                    (ADJP-1 (VBN:[529..541] hydroxylated)))
+                  (NML-2 (NNS:[542..553] metabolites)))))
+            (CC:[554..557] and)
+            (NP (NN:[558..574] 11-deoxycortisol)))
+          (VP (VBD:[575..585] suppressed)
+            (NP (DT:[587..590] the)
+              (NML
+                (ADJP (NN:[591..598] CYP2C19) (HYPH:[598..599] -)
+                      (JJ:[599..608] dependent))
+                (NN:[609..619] R-warfarin) (NN:[620..635] 7-hydroxylation))
+              (NNS:[636..646] activities))
+            (,:[646..647] ,)
+            (PP (IN:[648..652] with)
+              (NP
+                (NP (NN:[653..665] progesterone))
+                (VP (VBG:[667..672] being)
+                  (NP-PRD (DT:[673..676] the) (RBS:[677..681] most)
+                          (JJ:[682..688] active)))))))))
+    (.:[688..689] .)))
+
+;sentence 6 Span:690..842
+;These steroid chemicals also inhibited CYP2C9-dependent  S-warfarin
+;7-hydroxylation activities though lesser extents seen with those in  CYP2C19
+;enzyme.
+;[696..713]:substance:"steroid chemicals"
+;[729..735]:cyp450:"CYP2C9"
+;[747..757]:substance:"S-warfarin"
+;[827..841]:cyp450:"CYP2C19 enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[690..695] These)
+       (JJ:[696..703] steroid) (NNS:[704..713] chemicals))
+    (ADVP (RB:[714..718] also))
+    (VP (VBD:[719..728] inhibited)
+      (NP
+        (NML
+          (ADJP (NN:[729..735] CYP2C9) (HYPH:[735..736] -)
+                (JJ:[736..745] dependent))
+          (NN:[747..757] S-warfarin) (NN:[758..773] 7-hydroxylation))
+        (NNS:[774..784] activities))
+      (SBAR-ADV (IN:[785..791] though)
+        (S
+          (NP-SBJ-1 (JJR:[792..798] lesser) (NNS:[799..806] extents))
+          (VP (VBN:[807..811] seen)
+            (NP-1 (-NONE-:[811..811] *))
+            (PP (IN:[812..816] with)
+              (NP
+                (NP (DT:[817..822] those))
+                (PP-LOC (IN:[823..825] in)
+                  (NP (NN:[827..834] CYP2C19) (NN:[835..841] enzyme)))))))))
+    (.:[841..842] .)))
+
+;sentence 7 Span:843..945
+;Progesterone was found to be a competitive inhibitor of CYP2C19  and CYP2C9
+;in human liver microsomes.
+;[843..855]:substance:"Progesterone"
+;[886..895]:substance:"inhibitor"
+;[899..906]:cyp450:"CYP2C19"
+;[912..918]:cyp450:"CYP2C9"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[843..855] Progesterone))
+    (VP (VBD:[856..859] was)
+      (VP (VBN:[860..865] found)
+        (NP-1 (-NONE-:[865..865] *))
+        (S
+          (NP-SBJ-1 (-NONE-:[865..865] *))
+          (VP (TO:[866..868] to)
+            (VP (VB:[869..871] be)
+              (NP-PRD
+                (NP (DT:[872..873] a) (JJ:[874..885] competitive)
+                    (NN:[886..895] inhibitor))
+                (PP (IN:[896..898] of)
+                  (NP (NN:[899..906] CYP2C19) (CC:[908..911] and)
+                      (NN:[912..918] CYP2C9))))
+              (PP-LOC (IN:[919..921] in)
+                (NP (JJ:[922..927] human) (NN:[928..933] liver)
+                    (NNS:[934..944] microsomes))))))))
+    (.:[944..945] .)))
+
+;sentence 8 Span:946..1104
+;Recombinant CYP2C19 catalyzed progesterone  to form 21-hydroxyprogesterone as
+;a major product and 16alpha- and  17alpha-hydroxyprogesterone as minor
+;products.
+;[958..965]:cyp450:"CYP2C19"
+;[976..988]:substance:"progesterone"
+;[998..1020]:substance:"21-hydroxyprogesterone"
+;[1044..1052]...[1066..1085]:substance:"16alpha-"..."hydroxyprogesterone"
+;[1058..1085]:substance:"17alpha-hydroxyprogesterone"
+(SENT
+  (S
+    (NP-SBJ (JJ:[946..957] Recombinant) (NN:[958..965] CYP2C19))
+    (VP (VBD:[966..975] catalyzed)
+      (NP (NN:[976..988] progesterone))
+      (S-ADV
+        (NP-SBJ (-NONE-:[988..988] *))
+        (VP (TO:[990..992] to)
+          (VP (VB:[993..997] form)
+            (NP
+              (NP
+                (NP (NN:[998..1020] 21-hydroxyprogesterone))
+                (PP (IN:[1021..1023] as)
+                  (NP (DT:[1024..1025] a) (JJ:[1026..1031] major)
+                      (NN:[1032..1039] product))))
+              (CC:[1040..1043] and)
+              (NP
+                (NP
+                  (NP (NN:[1044..1051] 16alpha) (HYPH:[1051..1052] -)
+                    (NML-1 (-NONE-:[1052..1052] *P*)))
+                  (CC:[1053..1056] and)
+                  (NP (NN:[1058..1065] 17alpha) (HYPH:[1065..1066] -)
+                    (NML-1 (NN:[1066..1085] hydroxyprogesterone))))
+                (PP (IN:[1086..1088] as)
+                  (NP (JJ:[1089..1094] minor) (NNS:[1095..1103] products)))))))))
+    (.:[1103..1104] .)))
+
+;sentence 9 Span:1105..1232
+;CYP2C9 also had progesterone  21-hydroxylation activities, although the
+;activities were lower than those  catalyzed by CYP2C19.
+;[1105..1111]:cyp450:"CYP2C9"
+;[1121..1133]:substance:"progesterone"
+;[1224..1231]:cyp450:"CYP2C19"
+(SENT
+  (S
+    (NP-SBJ (NN:[1105..1111] CYP2C9))
+    (ADVP (RB:[1112..1116] also))
+    (VP (VBD:[1117..1120] had)
+      (NP (NN:[1121..1133] progesterone) (NN:[1135..1151] 21-hydroxylation)
+          (NNS:[1152..1162] activities))
+      (,:[1162..1163] ,)
+      (SBAR-ADV (IN:[1164..1172] although)
+        (S
+          (NP-SBJ (DT:[1173..1176] the) (NNS:[1177..1187] activities))
+          (VP (VBD:[1188..1192] were)
+            (ADJP-PRD
+              (ADJP (JJR:[1193..1198] lower))
+              (PP (IN:[1199..1203] than)
+                (NP
+                  (NP (DT:[1204..1209] those))
+                  (VP (VBN:[1211..1220] catalyzed)
+                    (NP (-NONE-:[1220..1220] *))
+                    (PP (IN:[1221..1223] by)
+                      (NP-LGS (NN:[1224..1231] CYP2C19)))))))))))
+    (.:[1231..1232] .)))
+
+;sentence 10 Span:1233..1396
+;Vmax/Km ratios for the progesterone 21-hydroxylation  activity of CYP2C19
+;were determined to be 13- and 32-fold higher than those of  CYP2C9 and 3A4,
+;respectively.
+;[1233..1240]:quantitative-name:"Vmax/Km"
+;[1256..1268]:substance:"progesterone"
+;[1299..1306]:cyp450:"CYP2C19"
+;[1329..1332]...[1340..1344]:quantitative-value:"13-"..."fold"
+;[1337..1344]:quantitative-value:"32-fold"
+;[1367..1373]:cyp450:"CYP2C9"
+;[1367..1370]...[1378..1381]:cyp450:"CYP"..."3A4"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP
+        (NML
+          (NML (NN:[1233..1237] Vmax))
+          (PP (SYM:[1237..1238] /)
+            (NP (NN:[1238..1240] Km))))
+        (NNS:[1241..1247] ratios))
+      (PP (IN:[1248..1251] for)
+        (NP
+          (NP (DT:[1252..1255] the) (NN:[1256..1268] progesterone)
+              (NN:[1269..1285] 21-hydroxylation) (NN:[1287..1295] activity))
+          (PP (IN:[1296..1298] of)
+            (NP-SBJ (NN:[1299..1306] CYP2C19))))))
+    (VP (VBD:[1307..1311] were)
+      (VP (VBN:[1312..1322] determined)
+        (S
+          (NP-SBJ-4 (-NONE-:[1322..1322] *))
+          (VP (TO:[1323..1325] to)
+            (VP (VB:[1326..1328] be)
+              (ADJP-PRD
+                (ADJP
+                  (ADJP
+                    (ADVP-EXT (CD:[1329..1331] 13) (HYPH:[1331..1332] -)
+                      (ADVP-2 (-NONE-:[1332..1332] *P*)))
+                    (ADJP-3 (-NONE-:[1332..1332] *P*)))
+                  (CC:[1333..1336] and)
+                  (ADJP
+                    (ADVP-EXT (CD:[1337..1339] 32) (HYPH:[1339..1340] -)
+                      (ADVP-2 (RB:[1340..1344] fold)))
+                    (ADJP-3 (JJR:[1345..1351] higher))))
+                (PP (IN:[1352..1356] than)
+                  (NP
+                    (NP (DT:[1357..1362] those))
+                    (PP (IN:[1363..1365] of)
+                      (NP
+                        (NP
+                          (NML-1 (NN:[1367..1370] CYP))
+                          (NN:[1370..1373] 2C9))
+                        (CC:[1374..1377] and)
+                        (NP
+                          (NML-1 (-NONE-:[1377..1377] *P*))
+                          (NN:[1378..1381] 3A4))
+                        (,:[1381..1382] ,)
+                        (ADVP (RB:[1383..1395] respectively))))))))))))
+    (.:[1395..1396] .)))
+
+;sentence 11 Span:1397..1619
+;CYP3A4 oxidized progesterone to form 16alpha-,  6beta-, and
+;2beta-hydroxyprogesterone as major products and  21-hydroxyprogesterone as a
+;minor product, but did not produce detectable levels  of
+;17alpha-hydroxyprogesterone.
+;[1397..1403]:cyp450:"CYP3A4"
+;[1413..1425]:substance:"progesterone"
+;[1434..1442]...[1463..1482]:substance:"16alpha-"..."hydroxyprogesterone"
+;[1445..1451]...[1463..1482]:substance:"6beta-"..."hydroxyprogesterone"
+;[1457..1482]:substance:"2beta-hydroxyprogesterone"
+;[1506..1528]:substance:"21-hydroxyprogesterone"
+;[1591..1618]:substance:"17alpha-hydroxyprogesterone"
+(SENT
+  (S
+    (NP-SBJ (NN:[1397..1403] CYP3A4))
+    (VP
+      (VP (VBD:[1404..1412] oxidized)
+        (NP (NN:[1413..1425] progesterone))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1425..1425] *))
+          (VP (TO:[1426..1428] to)
+            (VP (VB:[1429..1433] form)
+              (NP
+                (NP
+                  (NP
+                    (NP (NN:[1434..1441] 16alpha) (HYPH:[1441..1442] -)
+                      (NML-1 (-NONE-:[1442..1442] *P*)))
+                    (,:[1442..1443] ,)
+                    (NP (NN:[1445..1450] 6beta) (HYPH:[1450..1451] -)
+                      (NML-1 (-NONE-:[1451..1451] *P*)))
+                    (,:[1451..1452] ,) (CC:[1453..1456] and)
+                    (NP (NN:[1457..1462] 2beta) (HYPH:[1462..1463] -)
+                      (NML-1 (NN:[1463..1482] hydroxyprogesterone))))
+                  (PP (IN:[1483..1485] as)
+                    (NP (JJ:[1486..1491] major) (NNS:[1492..1500] products))))
+                (CC:[1501..1504] and)
+                (NP
+                  (NP (NN:[1506..1528] 21-hydroxyprogesterone))
+                  (PP (IN:[1529..1531] as)
+                    (NP (DT:[1532..1533] a) (JJ:[1534..1539] minor)
+                        (NN:[1540..1547] product)))))))))
+      (,:[1547..1548] ,) (CC:[1549..1552] but)
+      (VP (VBD:[1553..1556] did) (RB:[1557..1560] not)
+        (VP (VB:[1561..1568] produce)
+          (NP
+            (NP (JJ:[1569..1579] detectable) (NNS:[1580..1586] levels))
+            (PP (IN:[1588..1590] of)
+              (NP (NN:[1591..1618] 17alpha-hydroxyprogesterone)))))))
+    (.:[1618..1619] .)))
+
+;sentence 12 Span:1620..1971
+;Immunoinhibition experiments suggested that  anti-CYP2C9 (which inhibits both
+;CYP2C9 and CYP2C19 catalytic activities)  suppressed the progesterone
+;21-hydroxylation activities catalyzed by liver  microsomes of humans and
+;monkeys and that anti-CYP2C11 inhibited the  progesterone 21-hydroxylation
+;activities catalyzed by liver microsomes of male  rats.
+;[1665..1676]:substance:"anti-CYP2C9"
+;[1698..1704]:cyp450:"CYP2C9"
+;[1709..1716]:cyp450:"CYP2C19"
+;[1755..1767]:substance:"progesterone"
+;[1858..1870]:substance:"anti-CYP2C11"
+;[1886..1898]:substance:"progesterone"
+(SENT
+  (S
+    (NP-SBJ (NN:[1620..1636] Immunoinhibition) (NNS:[1637..1648] experiments))
+    (VP (VBD:[1649..1658] suggested)
+      (SBAR
+        (SBAR (IN:[1659..1663] that)
+          (S
+            (NP-SBJ
+              (NP (AFX:[1665..1669] anti) (HYPH:[1669..1670] -)
+                  (NN:[1670..1676] CYP2C9))
+              (PRN (-LRB-:[1677..1678] -LRB-)
+                (SBAR
+                  (WHNP-2 (WDT:[1678..1683] which))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[1683..1683] *T*))
+                    (VP (VBZ:[1684..1692] inhibits)
+                      (NP (CC:[1693..1697] both)
+                        (NP (NN:[1698..1704] CYP2C9)
+                          (NML-1 (-NONE-:[1704..1704] *P*)))
+                        (CC:[1705..1708] and)
+                        (NP (NN:[1709..1716] CYP2C19)
+                          (NML-1 (JJ:[1717..1726] catalytic)
+                                 (NNS:[1727..1737] activities)))))))
+                (-RRB-:[1737..1738] -RRB-)))
+            (VP (VBD:[1740..1750] suppressed)
+              (NP
+                (NP (DT:[1751..1754] the) (NN:[1755..1767] progesterone)
+                    (NN:[1768..1784] 21-hydroxylation)
+                    (NNS:[1785..1795] activities))
+                (VP (VBN:[1796..1805] catalyzed)
+                  (NP (-NONE-:[1805..1805] *))
+                  (PP (IN:[1806..1808] by)
+                    (NP-LGS
+                      (NP (NN:[1809..1814] liver) (NNS:[1816..1826] microsomes))
+                      (PP (IN:[1827..1829] of)
+                        (NP (NNS:[1830..1836] humans) (CC:[1837..1840] and)
+                            (NNS:[1841..1848] monkeys))))))))))
+        (CC:[1849..1852] and)
+        (SBAR (IN:[1853..1857] that)
+          (S
+            (NP-SBJ (AFX:[1858..1862] anti) (HYPH:[1862..1863] -)
+                    (NN:[1863..1870] CYP2C11))
+            (VP (VBD:[1871..1880] inhibited)
+              (NP
+                (NP (DT:[1881..1884] the) (NN:[1886..1898] progesterone)
+                    (NN:[1899..1915] 21-hydroxylation)
+                    (NNS:[1916..1926] activities))
+                (VP (VBN:[1927..1936] catalyzed)
+                  (NP (-NONE-:[1936..1936] *))
+                  (PP (IN:[1937..1939] by)
+                    (NP-LGS
+                      (NP (NN:[1940..1945] liver) (NNS:[1946..1956] microsomes))
+                      (PP (IN:[1957..1959] of)
+                        (NP (JJ:[1960..1964] male) (NNS:[1966..1970] rats))))))))))))
+    (.:[1970..1971] .)))
+
+;sentence 13 Span:1972..2059
+;CYP2C19 was also found to oxidize testosterone at 17-position to form 
+;androstenedione.
+;[1972..1979]:cyp450:"CYP2C19"
+;[2006..2018]:substance:"testosterone"
+;[2043..2058]:substance:"androstenedione"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1972..1979] CYP2C19))
+    (VP (VBD:[1980..1983] was)
+      (ADVP (RB:[1984..1988] also))
+      (VP (VBN:[1989..1994] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1994..1994] *))
+          (VP (TO:[1995..1997] to)
+            (VP (VB:[1998..2005] oxidize)
+              (NP (NN:[2006..2018] testosterone))
+              (PP-LOC (IN:[2019..2021] at)
+                (NP (CD:[2022..2024] 17) (HYPH:[2024..2025] -)
+                    (NN:[2025..2033] position)))
+              (S-ADV
+                (NP-SBJ (-NONE-:[2033..2033] *))
+                (VP (TO:[2034..2036] to)
+                  (VP (VB:[2037..2041] form)
+                    (NP (NN:[2043..2058] androstenedione))))))))))
+    (.:[2058..2059] .)))
+
+;sentence 14 Span:2060..2218
+;Androstenedione formation catalyzed by liver microsomes of  humans and
+;monkeys and of male rats was suppressed by anti-CYP2C9 and  anti-CYP2C11,
+;respectively.
+;[2060..2075]:substance:"Androstenedione"
+;[2174..2185]:substance:"anti-CYP2C9"
+;[2191..2203]:substance:"anti-CYP2C11"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[2060..2075] Androstenedione) (NN:[2076..2085] formation))
+      (VP (VBN:[2086..2095] catalyzed)
+        (NP (-NONE-:[2095..2095] *))
+        (PP (IN:[2096..2098] by)
+          (NP-LGS
+            (NP (NN:[2099..2104] liver) (NNS:[2105..2115] microsomes))
+            (PP
+              (PP (IN:[2116..2118] of)
+                (NP (NNS:[2120..2126] humans) (CC:[2127..2130] and)
+                    (NNS:[2131..2138] monkeys)))
+              (CC:[2139..2142] and)
+              (PP (IN:[2143..2145] of)
+                (NP (JJ:[2146..2150] male) (NNS:[2151..2155] rats))))))))
+    (VP (VBD:[2156..2159] was)
+      (VP (VBN:[2160..2170] suppressed)
+        (NP-1 (-NONE-:[2170..2170] *))
+        (PP (IN:[2171..2173] by)
+          (NP-LGS
+            (NP (AFX:[2174..2178] anti) (HYPH:[2178..2179] -)
+                (NN:[2179..2185] CYP2C9))
+            (CC:[2186..2189] and)
+            (NP (AFX:[2191..2195] anti) (HYPH:[2195..2196] -)
+                (NN:[2196..2203] CYP2C11))))
+        (,:[2203..2204] ,)
+        (ADVP (RB:[2205..2217] respectively))))
+    (.:[2217..2218] .)))
+
+;sentence 15 Span:2219..2440
+;These results suggest that CYP2C19 plays important  roles in the oxidation of
+;progesterone and testosterone in human liver  microsomes, although the
+;physiological significance of these metabolic pathways  remains unclear.
+;[2246..2253]:cyp450:"CYP2C19"
+;[2297..2309]:substance:"progesterone"
+;[2314..2326]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ (DT:[2219..2224] These) (NNS:[2225..2232] results))
+    (VP (VBP:[2233..2240] suggest)
+      (SBAR (IN:[2241..2245] that)
+        (S
+          (NP-SBJ (NN:[2246..2253] CYP2C19))
+          (VP (VBZ:[2254..2259] plays)
+            (NP
+              (NP (JJ:[2260..2269] important) (NNS:[2271..2276] roles))
+              (PP (IN:[2277..2279] in)
+                (NP
+                  (NP (DT:[2280..2283] the) (NN:[2284..2293] oxidation))
+                  (PP (IN:[2294..2296] of)
+                    (NP (NN:[2297..2309] progesterone) (CC:[2310..2313] and)
+                        (NN:[2314..2326] testosterone))))))
+            (PP-LOC (IN:[2327..2329] in)
+              (NP (JJ:[2330..2335] human) (NN:[2336..2341] liver)
+                  (NNS:[2343..2353] microsomes))))))
+      (,:[2353..2354] ,)
+      (SBAR-ADV (IN:[2355..2363] although)
+        (S
+          (NP-SBJ
+            (NP (DT:[2364..2367] the) (JJ:[2368..2381] physiological)
+                (NN:[2382..2394] significance))
+            (PP (IN:[2395..2397] of)
+              (NP (DT:[2398..2403] these) (JJ:[2404..2413] metabolic)
+                  (NNS:[2414..2422] pathways))))
+          (VP (VBZ:[2424..2431] remains)
+            (ADJP-PRD (JJ:[2432..2439] unclear))))))
+    (.:[2439..2440] .)))
+
+;sentence 16 Span:2441..2607
+;CYP2C9 may have some, but lesser extent than those by CYP2C19,  of the
+;catalytic roles for the metabolism of progesterone and testosterone by  human
+;liver microsomes.
+;[2441..2447]:cyp450:"CYP2C9"
+;[2495..2502]:cyp450:"CYP2C19"
+;[2550..2562]:substance:"progesterone"
+;[2567..2579]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ (NN:[2441..2447] CYP2C9))
+    (VP (MD:[2448..2451] may)
+      (VP (VB:[2452..2456] have)
+        (NP
+          (NP
+            (UCP
+              (QP (DT:[2457..2461] some))
+              (,:[2461..2462] ,) (CC:[2463..2466] but)
+              (ADJP (JJR:[2467..2473] lesser) (NN:[2474..2480] extent)
+                (PP (IN:[2481..2485] than)
+                  (NP
+                    (NP (DT:[2486..2491] those))
+                    (PP (IN:[2492..2494] by)
+                      (NP (NN:[2495..2502] CYP2C19))))))))
+          (,:[2502..2503] ,)
+          (PP-1 (IN:[2505..2507] of)
+            (NP
+              (NP (DT:[2508..2511] the) (JJ:[2512..2521] catalytic)
+                  (NNS:[2522..2527] roles))
+              (PP (IN:[2528..2531] for)
+                (NP
+                  (NP (DT:[2532..2535] the) (NN:[2536..2546] metabolism))
+                  (PP (IN:[2547..2549] of)
+                    (NP (NN:[2550..2562] progesterone) (CC:[2563..2566] and)
+                        (NN:[2567..2579] testosterone)))
+                  (PP (IN:[2580..2582] by)
+                    (NP (JJ:[2584..2589] human) (NN:[2590..2595] liver)
+                        (NNS:[2596..2606] microsomes))))))))))
+    (.:[2606..2607] .)))
+
+;section 17 Span:2611..2655
+;PMID: 9328296 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2611..2615] PMID) (::[2615..2616] :) (CD:[2617..2624] 9328296)
+        (NN:[2625..2626] -LSB-) (NNP:[2626..2632] PubMed) (::[2633..2634] -)
+        (NN:[2635..2642] indexed) (IN:[2643..2646] for)
+        (NNP:[2647..2655] MEDLINE-RSB-)))

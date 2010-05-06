@@ -1,0 +1,579 @@
+;PMID: 8013282
+;source_file_878.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..187] = [t:51..187]
+;2)section:[e:191..266] = [t:191..266]
+;3)section:[e:270..309] = [t:270..309]
+;4)sentence:[e:313..496] = [t:313..496]
+;5)sentence:[e:497..649] = [t:497..649]
+;6)sentence:[e:650..782] = [t:650..782]
+;7)sentence:[e:784..973] = [t:784..973]
+;8)sentence:[e:974..1175] = [t:974..1175]
+;9)sentence:[e:1177..1369] = [t:1177..1369]
+;10)sentence:[e:1370..1539] = [t:1370..1539]
+;11)sentence:[e:1540..1674] = [t:1540..1674]
+;12)sentence:[e:1675..1822] = [t:1675..1822]
+;13)sentence:[e:1823..2025] = [t:1823..2025]
+;14)sentence:[e:2026..2208] = [t:2026..2208]
+;15)section:[e:2212..2256] = [t:2212..2256]
+
+;section 0 Span:0..45
+;Drug Metab Dispos. 1994 Mar-Apr;22(2):269-74.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1994) (NNP:[24..27] Mar) (::[27..28] -)
+        (CC:[28..35] Apr;22-LRB-) (CD:[35..36] 2) (-RRB-:[36..37] -RRB-)
+        (CD:[37..41] :269) (::[41..42] -) (CD:[42..44] 74) (.:[44..45] .)))
+
+;sentence 1 Span:51..187
+;The polymorphic cytochrome P-4502D6 is involved in the metabolism of both 
+;5-hydroxytryptamine antagonists, tropisetron and ondansetron.
+;[67..86]:cyp450:"cytochrome P-4502D6"
+;[126..145]:substance:"5-hydroxytryptamine"
+;[146..157]:substance:"antagonists"
+;[159..170]:substance:"tropisetron"
+;[175..186]:substance:"ondansetron"
+(SENT
+  (S-HLN
+    (NP-SBJ-1 (DT:[51..54] The) (JJ:[55..66] polymorphic)
+       (NN:[67..77] cytochrome) (NN:[78..86] P-4502D6))
+    (VP (VBZ:[87..89] is)
+      (VP (VBN:[90..98] involved)
+        (NP-1 (-NONE-:[98..98] *))
+        (PP-CLR (IN:[99..101] in)
+          (NP
+            (NP (DT:[102..105] the) (NN:[106..116] metabolism))
+            (PP (IN:[117..119] of)
+              (NP
+                (NP (DT:[120..124] both) (NN:[126..145] 5-hydroxytryptamine)
+                    (NNS:[146..157] antagonists))
+                (,:[157..158] ,)
+                (NP (NN:[159..170] tropisetron) (CC:[171..174] and)
+                    (NN:[175..186] ondansetron))))))))
+    (.:[186..187] .)))
+
+;section 2 Span:191..266
+;Fischer V, Vickers AE, Heitz F, Mahadevan S, Baldeck JP, Minery P, Tynes R.
+(SEC
+  (FRAG (NNP:[191..198] Fischer) (NNP:[199..200] V) (,:[200..201] ,)
+        (NNP:[202..209] Vickers) (NNP:[210..212] AE) (,:[212..213] ,)
+        (NNP:[214..219] Heitz) (NNP:[220..221] F) (,:[221..222] ,)
+        (NNP:[223..232] Mahadevan) (NNP:[233..235] S,) (NNP:[236..243] Baldeck)
+        (NNP:[244..246] JP) (,:[246..247] ,) (NNP:[248..254] Minery)
+        (NNP:[255..256] P) (,:[256..257] ,) (NNP:[258..263] Tynes)
+        (NNP:[264..266] R.)))
+
+;section 3 Span:270..309
+;Sandoz Pharma Ltd., Basel, Switzerland.
+(SEC
+  (FRAG (NNP:[270..276] Sandoz) (NNP:[277..283] Pharma) (NNP:[284..288] Ltd.)
+        (,:[288..289] ,) (NNP:[290..295] Basel) (,:[295..296] ,)
+        (NNP:[297..308] Switzerland) (.:[308..309] .)))
+
+;sentence 4 Span:313..496
+;Tropisetron and ondansetron, which are potent and selective
+;5-hydroxytryptamine  (5-HT3) receptor antagonists, were both metabolized by
+;human liver microsomes to  several metabolites.
+;[313..324]:substance:"Tropisetron"
+;[329..340]:substance:"ondansetron"
+;[373..410]:substance:"5-hydroxytryptamine  (5-HT3) receptor"
+;[411..422]:substance:"antagonists"
+;[484..495]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[313..324] Tropisetron) (CC:[325..328] and)
+          (NN:[329..340] ondansetron))
+      (,:[340..341] ,)
+      (SBAR
+        (WHNP-1 (WDT:[342..347] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[347..347] *T*))
+          (VP (VBP:[348..351] are)
+            (ADJP-PRD
+              (ADJP (JJ:[352..358] potent) (CC:[359..362] and)
+                    (JJ:[363..372] selective))
+              (NML
+                (NML
+                  (NML (NN:[373..392] 5-hydroxytryptamine))
+                  (NML (-LRB-:[394..395] -LRB-) (NN:[395..400] 5-HT3)
+                       (-RRB-:[400..401] -RRB-)))
+                (NN:[402..410] receptor))
+              (NNS:[411..422] antagonists))))))
+    (,:[422..423] ,)
+    (VP (VBD:[424..428] were) (DT:[429..433] both)
+      (VP (VBN:[434..445] metabolized)
+        (NP-2 (-NONE-:[445..445] *))
+        (PP (IN:[446..448] by)
+          (NP-LGS (JJ:[449..454] human) (NN:[455..460] liver)
+                  (NNS:[461..471] microsomes)))
+        (PP (TO:[472..474] to)
+          (NP (JJ:[476..483] several) (NNS:[484..495] metabolites)))))
+    (.:[495..496] .)))
+
+;sentence 5 Span:497..649
+;These metabolites include the major metabolites found in  humans, which are
+;the 5-, 6-, and 7-hydroxy tropisetron and the 7- and 8-hydroxy  ondansetron.
+;[503..514]:substance:"metabolites"
+;[533..544]:substance:"metabolites"
+;[577..579]...[591..610]:substance:"5-"..."hydroxy tropisetron"
+;[581..584]...[591..610]:substance:"6-,"..."hydroxy tropisetron"
+;[589..610]:substance:"7-hydroxy tropisetron"
+;[619..621]...[628..648]:substance:"7-"..."hydroxy  ondansetron"
+;[626..648]:substance:"8-hydroxy  ondansetron"
+(SENT
+  (S
+    (NP-SBJ (DT:[497..502] These) (NNS:[503..514] metabolites))
+    (VP (VBP:[515..522] include)
+      (NP
+        (NP
+          (NP (DT:[523..526] the) (JJ:[527..532] major)
+              (NNS:[533..544] metabolites))
+          (VP (VBN:[545..550] found)
+            (NP (-NONE-:[550..550] *))
+            (PP-LOC (IN:[551..553] in)
+              (NP (NNS:[555..561] humans)))))
+        (,:[561..562] ,)
+        (SBAR
+          (WHNP-1 (WDT:[563..568] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[568..568] *T*))
+            (VP (VBP:[569..572] are)
+              (NP-PRD
+                (NP (DT:[573..576] the)
+                  (NML
+                    (NML (CD:[577..578] 5) (HYPH:[578..579] -)
+                      (NML-2 (-NONE-:[579..579] *P*)))
+                    (,:[579..580] ,)
+                    (NML (CD:[581..582] 6) (HYPH:[582..583] -)
+                      (NML-2 (-NONE-:[583..583] *P*)))
+                    (,:[583..584] ,) (CC:[585..588] and)
+                    (NML (CD:[589..590] 7) (HYPH:[590..591] -)
+                      (NML-2 (NN:[591..598] hydroxy) (NN:[599..610] tropisetron)))))
+                (CC:[611..614] and)
+                (NP (DT:[615..618] the)
+                  (NML
+                    (NML (CD:[619..620] 7) (HYPH:[620..621] -)
+                      (NML-3 (-NONE-:[621..621] *P*)))
+                    (CC:[622..625] and)
+                    (NML (CD:[626..627] 8) (HYPH:[627..628] -)
+                      (NML-3 (NN:[628..635] hydroxy) (NN:[637..648] ondansetron)))))))))))
+    (.:[648..649] .)))
+
+;sentence 6 Span:650..782
+;The cytochrome P-450 (CYP) 2D6 inhibitor quinidine (1 microM)  reduced the
+;hydroxylation of tropisetron (67%) and ondansetron (18%).
+;[654..680]:cyp450:"cytochrome P-450 (CYP) 2D6"
+;[681..690]:substance:"inhibitor"
+;[691..700]:substance:"quinidine"
+;[702..703]:quantitative-value:"1"
+;[704..710]:quantitative-units:"microM"
+;[742..753]:substance:"tropisetron"
+;[755..758]:quantitative-value:"67%"
+;[764..775]:substance:"ondansetron"
+;[777..780]:quantitative-value:"18%"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[650..653] The)
+        (NML
+          (NML
+            (NML (NN:[654..664] cytochrome) (NN:[665..670] P-450))
+            (NML (-LRB-:[671..672] -LRB-) (NN:[672..675] CYP)
+                 (-RRB-:[675..676] -RRB-)))
+          (NN:[677..680] 2D6))
+        (NN:[681..690] inhibitor))
+      (NP (NN:[691..700] quinidine))
+      (PRN (-LRB-:[701..702] -LRB-)
+        (NP (CD:[702..703] 1) (NN:[704..710] microM))
+        (-RRB-:[710..711] -RRB-)))
+    (VP (VBD:[713..720] reduced)
+      (NP
+        (NP (DT:[721..724] the) (NN:[725..738] hydroxylation))
+        (PP (IN:[739..741] of)
+          (NP
+            (NP (NN:[742..753] tropisetron)
+              (PRN (-LRB-:[754..755] -LRB-)
+                (NP (CD:[755..757] 67) (NN:[757..758] %))
+                (-RRB-:[758..759] -RRB-)))
+            (CC:[760..763] and)
+            (NP (NN:[764..775] ondansetron)
+              (PRN (-LRB-:[776..777] -LRB-)
+                (NP (CD:[777..779] 18) (NN:[779..780] %))
+                (-RRB-:[780..781] -RRB-)))))))
+    (.:[781..782] .)))
+
+;sentence 7 Span:784..973
+;Confirmation of CYP2D6 involvement in the hydroxylation of tropisetron and 
+;ondansetron was obtained by the formation of these metabolites in recombinant
+; V79 cells expressing human CYP2D6.
+;[800..806]:cyp450:"CYP2D6"
+;[843..854]:substance:"tropisetron"
+;[860..871]:substance:"ondansetron"
+;[911..922]:substance:"metabolites"
+;[966..972]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[784..796] Confirmation))
+      (PP (IN:[797..799] of)
+        (NP
+          (NP (NN:[800..806] CYP2D6) (NN:[807..818] involvement))
+          (PP (IN:[819..821] in)
+            (NP
+              (NP (DT:[822..825] the) (NN:[826..839] hydroxylation))
+              (PP (IN:[840..842] of)
+                (NP (NN:[843..854] tropisetron) (CC:[855..858] and)
+                    (NN:[860..871] ondansetron))))))))
+    (VP (VBD:[872..875] was)
+      (VP (VBN:[876..884] obtained)
+        (NP-1 (-NONE-:[884..884] *))
+        (PP-MNR (IN:[885..887] by)
+          (NP
+            (NP (DT:[888..891] the) (NN:[892..901] formation))
+            (PP (IN:[902..904] of)
+              (NP (DT:[905..910] these) (NNS:[911..922] metabolites)))
+            (PP-LOC (IN:[923..925] in)
+              (NP
+                (NP (JJ:[926..937] recombinant) (NN:[939..942] V79)
+                    (NNS:[943..948] cells))
+                (VP (VBG:[949..959] expressing)
+                  (NP (JJ:[960..965] human) (NN:[966..972] CYP2D6)))))))))
+    (.:[972..973] .)))
+
+;sentence 8 Span:974..1175
+;The CYP3A substrate/inhibitor, cyclosporine A  (CsA) had little effect on
+;tropisetron hydroxylation (< 10%), whereas CsA and  triacetyloleandomycin
+;reduced ondansetron 7- and 8-hydroxylation up to 27%.
+;[978..983]:cyp450:"CYP3A"
+;[984..993]:substance:"substrate"
+;[994..1003]:substance:"inhibitor"
+;[1005..1019]:substance:"cyclosporine A"
+;[1022..1025]:substance:"CsA"
+;[1048..1059]:substance:"tropisetron"
+;[1075..1080]:quantitative-value:"< 10%"
+;[1091..1094]:substance:"CsA"
+;[1100..1121]:substance:"triacetyloleandomycin"
+;[1130..1141]:substance:"ondansetron"
+;[1171..1174]:quantitative-value:"27%"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[974..977] The)
+        (NML
+          (NML
+            (NML-1 (NN:[978..983] CYP3A))
+            (NN:[984..993] substrate))
+          (SYM:[993..994] /)
+          (NML
+            (NML-1 (-NONE-:[994..994] *P*))
+            (NN:[994..1003] inhibitor))))
+      (,:[1003..1004] ,)
+      (NP
+        (NP (NN:[1005..1017] cyclosporine) (NN:[1018..1019] A))
+        (NP (-LRB-:[1021..1022] -LRB-) (NN:[1022..1025] CsA)
+            (-RRB-:[1025..1026] -RRB-))))
+    (VP (VBD:[1027..1030] had)
+      (NP
+        (NP (JJ:[1031..1037] little) (NN:[1038..1044] effect))
+        (PP (IN:[1045..1047] on)
+          (NP (NN:[1048..1059] tropisetron) (NN:[1060..1073] hydroxylation)))
+        (PRN (-LRB-:[1074..1075] -LRB-)
+          (NP
+            (QP (SYM:[1075..1076] <) (CD:[1077..1079] 10))
+            (NN:[1079..1080] %))
+          (-RRB-:[1080..1081] -RRB-)))
+      (,:[1081..1082] ,)
+      (SBAR-ADV (IN:[1083..1090] whereas)
+        (S
+          (NP-SBJ (NN:[1091..1094] CsA) (CC:[1095..1098] and)
+                  (NN:[1100..1121] triacetyloleandomycin))
+          (VP (VBD:[1122..1129] reduced)
+            (NP
+              (NP
+                (NML-3 (NN:[1130..1141] ondansetron))
+                (CD:[1142..1143] 7) (HYPH:[1143..1144] -)
+                (NML-2 (-NONE-:[1144..1144] *P*)))
+              (CC:[1145..1148] and)
+              (NP
+                (NML-3 (-NONE-:[1148..1148] *P*))
+                (CD:[1149..1150] 8) (HYPH:[1150..1151] -)
+                (NP-2 (NN:[1151..1164] hydroxylation))))
+            (NP-EXT
+              (QP (RB:[1165..1167] up) (TO:[1168..1170] to) (CD:[1171..1173] 27))
+              (NN:[1173..1174] %))))))
+    (.:[1174..1175] .)))
+
+;sentence 9 Span:1177..1369
+;Substrates for CYP1A (phenacetin and acetanilide), CYP2C (mephenytoin), and 
+;CYP2E (chlorzoxazone) had negligible inhibitory effects on the hydroxylation
+;of  either tropisetron or ondansetron.
+;[1177..1187]:substance:"Substrates"
+;[1192..1197]:cyp450:"CYP1A"
+;[1199..1209]:substance:"phenacetin"
+;[1214..1225]:substance:"acetanilide"
+;[1228..1233]:cyp450:"CYP2C"
+;[1235..1246]:substance:"mephenytoin"
+;[1254..1259]:cyp450:"CYP2E"
+;[1261..1274]:substance:"chlorzoxazone"
+;[1342..1353]:substance:"tropisetron"
+;[1357..1368]:substance:"ondansetron"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1177..1187] Substrates))
+      (PP (IN:[1188..1191] for)
+        (NP
+          (NP (NN:[1192..1197] CYP1A)
+            (PRN (-LRB-:[1198..1199] -LRB-)
+              (NP (NN:[1199..1209] phenacetin) (CC:[1210..1213] and)
+                  (NN:[1214..1225] acetanilide))
+              (-RRB-:[1225..1226] -RRB-)))
+          (,:[1226..1227] ,)
+          (NP (NN:[1228..1233] CYP2C)
+            (PRN (-LRB-:[1234..1235] -LRB-)
+              (NP (NN:[1235..1246] mephenytoin))
+              (-RRB-:[1246..1247] -RRB-)))
+          (,:[1247..1248] ,) (CC:[1249..1252] and)
+          (NP (NN:[1254..1259] CYP2E)
+            (PRN (-LRB-:[1260..1261] -LRB-)
+              (NP (NN:[1261..1274] chlorzoxazone))
+              (-RRB-:[1274..1275] -RRB-))))))
+    (VP (VBD:[1276..1279] had)
+      (NP
+        (NP (JJ:[1280..1290] negligible) (JJ:[1291..1301] inhibitory)
+            (NNS:[1302..1309] effects))
+        (PP (IN:[1310..1312] on)
+          (NP
+            (NP (DT:[1313..1316] the) (NN:[1317..1330] hydroxylation))
+            (PP (IN:[1331..1333] of)
+              (NP (CC:[1335..1341] either) (NN:[1342..1353] tropisetron)
+                  (CC:[1354..1356] or) (NN:[1357..1368] ondansetron)))))))
+    (.:[1368..1369] .)))
+
+;sentence 10 Span:1370..1539
+;For the CYP2D6-dependent O-demethylation of  dextromethorphan, tropisetron
+;and ondansetron were competitive inhibitors with  Ki values of 14 and 29
+;microM, respectively.
+;[1378..1384]:cyp450:"CYP2D6"
+;[1415..1431]:substance:"dextromethorphan"
+;[1433..1444]:substance:"tropisetron"
+;[1449..1460]:substance:"ondansetron"
+;[1478..1488]:substance:"inhibitors"
+;[1495..1497]:quantitative-name:"Ki"
+;[1508..1510]:quantitative-value:"14"
+;[1515..1517]:quantitative-value:"29"
+;[1518..1524]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[1370..1373] For)
+      (NP
+        (NP (DT:[1374..1377] the)
+          (ADJP (NN:[1378..1384] CYP2D6) (HYPH:[1384..1385] -)
+                (JJ:[1385..1394] dependent))
+          (NN:[1395..1410] O-demethylation))
+        (PP (IN:[1411..1413] of)
+          (NP (NN:[1415..1431] dextromethorphan)))))
+    (,:[1431..1432] ,)
+    (NP-SBJ (NN:[1433..1444] tropisetron) (CC:[1445..1448] and)
+            (NN:[1449..1460] ondansetron))
+    (VP (VBD:[1461..1465] were)
+      (NP-PRD (JJ:[1466..1477] competitive) (NNS:[1478..1488] inhibitors))
+      (PP (IN:[1489..1493] with)
+        (NP
+          (NP (NN:[1495..1497] Ki) (NNS:[1498..1504] values))
+          (PP (IN:[1505..1507] of)
+            (NP
+              (NP (CD:[1508..1510] 14)
+                (NML-1 (-NONE-:[1510..1510] *P*)))
+              (CC:[1511..1514] and)
+              (NP (CD:[1515..1517] 29)
+                (NML-1 (NN:[1518..1524] microM)))))))
+      (,:[1524..1525] ,)
+      (ADVP (RB:[1526..1538] respectively)))
+    (.:[1538..1539] .)))
+
+;sentence 11 Span:1540..1674
+;The CYP3A specific metabolism of  CsA was also competitively inhibited by
+;tropisetron (Ki = 2.1 mM) and  ondansetron (Ki = 31 microM).
+;[1544..1549]:cyp450:"CYP3A"
+;[1574..1577]:substance:"CsA"
+;[1614..1625]:substance:"tropisetron"
+;[1627..1629]:quantitative-name:"Ki"
+;[1632..1635]:quantitative-value:"2.1"
+;[1636..1638]:quantitative-units:"mM"
+;[1645..1656]:substance:"ondansetron"
+;[1658..1660]:quantitative-name:"Ki"
+;[1663..1665]:quantitative-value:"31"
+;[1666..1672]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1540..1543] The)
+        (ADJP (NN:[1544..1549] CYP3A) (JJ:[1550..1558] specific))
+        (NN:[1559..1569] metabolism))
+      (PP (IN:[1570..1572] of)
+        (NP (NN:[1574..1577] CsA))))
+    (VP (VBD:[1578..1581] was)
+      (ADVP (RB:[1582..1586] also))
+      (ADVP (RB:[1587..1600] competitively))
+      (VP (VBN:[1601..1610] inhibited)
+        (NP-1 (-NONE-:[1610..1610] *))
+        (PP (IN:[1611..1613] by)
+          (NP-LGS
+            (NP (NN:[1614..1625] tropisetron)
+              (PRN (-LRB-:[1626..1627] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1627..1629] Ki))
+                  (VP (SYM:[1630..1631] =)
+                    (NP (CD:[1632..1635] 2.1) (NN:[1636..1638] mM))))
+                (-RRB-:[1638..1639] -RRB-)))
+            (CC:[1640..1643] and)
+            (NP (NN:[1645..1656] ondansetron)
+              (PRN (-LRB-:[1657..1658] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1658..1660] Ki))
+                  (VP (SYM:[1661..1662] =)
+                    (NP (CD:[1663..1665] 31) (NN:[1666..1672] microM))))
+                (-RRB-:[1672..1673] -RRB-)))))))
+    (.:[1673..1674] .)))
+
+;sentence 12 Span:1675..1822
+;Other metabolites, which are only minor in vivo  were also inhibited by CsA,
+;47-60% for tropisetron metabolism and 43% for  ondansetron metabolism.
+;[1681..1692]:substance:"metabolites"
+;[1747..1750]:substance:"CsA"
+;[1752..1758]:quantitative-value:"47-60%"
+;[1763..1774]:substance:"tropisetron"
+;[1790..1793]:quantitative-value:"43%"
+;[1799..1810]:substance:"ondansetron"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[1675..1680] Other) (NNS:[1681..1692] metabolites))
+      (,:[1692..1693] ,)
+      (SBAR
+        (WHNP-1 (WDT:[1694..1699] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[1699..1699] *T*))
+          (VP (VBP:[1700..1703] are)
+            (ADJP-PRD (RB:[1704..1708] only) (JJ:[1709..1714] minor))
+            (ADVP (FW:[1715..1717] in) (FW:[1718..1722] vivo))))))
+    (VP (VBD:[1724..1728] were)
+      (ADVP (RB:[1729..1733] also))
+      (VP
+        (VP (VBN:[1734..1743] inhibited)
+          (NP-2 (-NONE-:[1743..1743] *))
+          (PP (IN:[1744..1746] by)
+            (NP-LGS (NN:[1747..1750] CsA)))
+          (,:[1750..1751] ,)
+          (NP-EXT=3
+            (QP (CD:[1752..1754] 47) (HYPH:[1754..1755] -) (CD:[1755..1757] 60))
+            (NN:[1757..1758] %))
+          (PP=4 (IN:[1759..1762] for)
+            (NP (NN:[1763..1774] tropisetron) (NN:[1775..1785] metabolism))))
+        (CC:[1786..1789] and)
+        (VP
+          (NP-EXT=3 (CD:[1790..1792] 43) (NN:[1792..1793] %))
+          (PP=4 (IN:[1794..1797] for)
+            (NP (NN:[1799..1810] ondansetron) (NN:[1811..1821] metabolism))))))
+    (.:[1821..1822] .)))
+
+;sentence 13 Span:1823..2025
+;To summarize, this study has identified the involvement  of CYP2D6 in the
+;formation of the hydroxylated metabolites of tropisetron and  ondansetron and
+;in addition of CYP3A in ondansetron hydroxylation.
+;[1883..1889]:cyp450:"CYP2D6"
+;[1927..1938]:substance:"metabolites"
+;[1942..1953]:substance:"tropisetron"
+;[1959..1970]:substance:"ondansetron"
+;[1990..1995]:cyp450:"CYP3A"
+;[1999..2010]:substance:"ondansetron"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1823..1823] *))
+      (VP (TO:[1823..1825] To)
+        (VP (VB:[1826..1835] summarize))))
+    (,:[1835..1836] ,)
+    (NP-SBJ (DT:[1837..1841] this) (NN:[1842..1847] study))
+    (VP (VBZ:[1848..1851] has)
+      (VP (VBN:[1852..1862] identified)
+        (NP
+          (NP (DT:[1863..1866] the) (NN:[1867..1878] involvement))
+          (PP (IN:[1880..1882] of)
+            (NP (NN:[1883..1889] CYP2D6)))
+          (PP
+            (PP (IN:[1890..1892] in)
+              (NP
+                (NP (DT:[1893..1896] the) (NN:[1897..1906] formation))
+                (PP (IN:[1907..1909] of)
+                  (NP
+                    (NP (DT:[1910..1913] the) (JJ:[1914..1926] hydroxylated)
+                        (NNS:[1927..1938] metabolites))
+                    (PP (IN:[1939..1941] of)
+                      (NP (NN:[1942..1953] tropisetron) (CC:[1954..1957] and)
+                          (NN:[1959..1970] ondansetron)))))))
+            (CC:[1971..1974] and)
+            (PP (IN:[1975..1977] in)
+              (NP
+                (NP (NN:[1978..1986] addition))
+                (PP (IN:[1987..1989] of)
+                  (NP (NN:[1990..1995] CYP3A)))
+                (PP (IN:[1996..1998] in)
+                  (NP (NN:[1999..2010] ondansetron)
+                      (NN:[2011..2024] hydroxylation)))))))))
+    (.:[2024..2025] .)))
+
+;sentence 14 Span:2026..2208
+;Because these  are the major pathways in vivo, coadministration of drugs
+;competing for CYP2D6  and possibly CYP3A4 could influence the human kinetics
+;of tropisetron and  ondansetron.
+;[2093..2098]:substance:"drugs"
+;[2113..2119]:cyp450:"CYP2D6"
+;[2134..2140]:cyp450:"CYP3A4"
+;[2179..2190]:substance:"tropisetron"
+;[2196..2207]:substance:"ondansetron"
+(SENT
+  (S
+    (SBAR-PRP (IN:[2026..2033] Because)
+      (S
+        (NP-SBJ (DT:[2034..2039] these))
+        (VP (VBP:[2041..2044] are)
+          (NP-PRD (DT:[2045..2048] the) (JJ:[2049..2054] major)
+                  (NNS:[2055..2063] pathways))
+          (ADVP (FW:[2064..2066] in) (FW:[2067..2071] vivo)))))
+    (,:[2071..2072] ,)
+    (NP-SBJ
+      (NP
+        (NP (NN:[2073..2089] coadministration))
+        (IN:[2090..2092] of)
+        (NP (NNS:[2093..2098] drugs)))
+      (VP (VBG:[2099..2108] competing)
+        (PP-CLR (IN:[2109..2112] for)
+          (NP
+            (NP (NN:[2113..2119] CYP2D6))
+            (CC:[2121..2124] and)
+            (NP
+              (ADVP (RB:[2125..2133] possibly))
+              (NN:[2134..2140] CYP3A4))))))
+    (VP (MD:[2141..2146] could)
+      (VP (VB:[2147..2156] influence)
+        (NP
+          (NP (DT:[2157..2160] the) (JJ:[2161..2166] human)
+              (NNS:[2167..2175] kinetics))
+          (PP (IN:[2176..2178] of)
+            (NP (NN:[2179..2190] tropisetron) (CC:[2191..2194] and)
+                (NN:[2196..2207] ondansetron))))))
+    (.:[2207..2208] .)))
+
+;section 15 Span:2212..2256
+;PMID: 8013282 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2212..2216] PMID) (::[2216..2217] :) (CD:[2218..2225] 8013282)
+        (NN:[2226..2227] -LSB-) (NNP:[2227..2233] PubMed) (::[2234..2235] -)
+        (NN:[2236..2243] indexed) (IN:[2244..2247] for)
+        (NNP:[2248..2256] MEDLINE-RSB-)))

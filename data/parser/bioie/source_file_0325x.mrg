@@ -1,0 +1,308 @@
+;PMID: 2913265
+;source_file_2916.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..131] = [t:51..131]
+;2)sentence:[e:133..173] = [t:133..173]
+;3)section:[e:177..197] = [t:177..197]
+;4)section:[e:201..288] = [t:201..288]
+;5)sentence:[e:292..523] = [t:292..523]
+;6)sentence:[e:524..707] = [t:524..707]
+;7)sentence:[e:708..804] = [t:708..804]
+;8)sentence:[e:805..1040] = [t:805..1040]
+;9)sentence:[e:1041..1103] = [t:1041..1103]
+;10)sentence:[e:1104..1187] = [t:1104..1187]
+;11)sentence:[e:1188..1421] = [t:1188..1421]
+;12)section:[e:1425..1469] = [t:1425..1469]
+
+;section 0 Span:0..45
+;J Pharmacol Exp Ther.  1989 Jan;248(1):111-8.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[23..27] 1989)
+        (CD:[28..35] Jan;248) (-LRB-:[35..36] -LRB-) (CD:[36..37] 1)
+        (-RRB-:[37..38] -RRB-) (::[38..39] :) (CD:[39..43] 111-)
+        (CD:[43..45] 8.)))
+
+;sentence 1 Span:51..131
+;Spontaneous regeneration of free muscarinic receptor after alkylation by BM
+;123.
+;[84..103]:gene-protein:"muscarinic receptor"
+(SENT
+  (NP-HLN
+    (NP (JJ:[51..62] Spontaneous) (NN:[63..75] regeneration))
+    (PP (IN:[76..78] of)
+      (NP (JJ:[79..83] free)
+         (JJ:[84..94] muscarinic) (NN:[95..103] receptor)))
+    (PP-TMP (IN:[104..109] after)
+      (NP (NN:[110..120] alkylation)))
+    (PP (IN:[121..123] by)
+      (NP (NN:[124..126] BM) (CD:[127..130] 123)))
+    (.:[130..131] .)))
+
+;sentence 2 Span:133..173
+;I. Recovery in vivo and in cell culture.
+(SENT
+  (LST (LS:[133..135] I.))
+  (NP (NN:[136..144] Recovery)
+    (UCP
+      (ADJP (FW:[145..147] in) (FW:[148..152] vivo))
+      (CC:[153..156] and)
+      (PP (IN:[157..159] in)
+        (NP (NN:[160..164] cell) (NN:[165..172] culture))))
+    (.:[172..173] .)))
+;ERROR_Sentence has multiple children (TB Error):[133..173]::LST:NP:
+
+;section 3 Span:177..197
+;Waite JJ, Jenden DJ.
+(SEC
+  (FRAG (NNP:[177..182] Waite) (NNP:[183..185] JJ) (,:[185..186] ,)
+        (NNP:[187..193] Jenden) (NNP:[194..197] DJ.)))
+
+;section 4 Span:201..288
+;Department of Pharmacology, School of Medicine, University of California, Los
+; Angeles.
+(SEC
+  (FRAG (NNP:[201..211] Department) (IN:[212..214] of)
+        (NNP:[215..227] Pharmacology) (,:[227..228] ,) (NNP:[229..235] School)
+        (IN:[236..238] of) (NNP:[239..247] Medicine) (,:[247..248] ,)
+        (NNP:[249..259] University) (IN:[260..262] of)
+        (NNP:[263..273] California) (,:[273..274] ,) (NNP:[275..278] Los)
+        (NNP:[280..287] Angeles) (.:[287..288] .)))
+
+;sentence 5 Span:292..523
+;The recovery of rat muscarinic receptor number from the effects of a specific
+; alkylating ligand, N-[4-(2-chloroethylmethylamino)-2-butynyl]-2-pyrrolidone
+;(BM  123), in three tissues is presented as an exponential function of time.
+;[312..331]:gene-protein:"muscarinic receptor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[292..295] The) (NN:[296..304] recovery))
+      (PP (IN:[305..307] of)
+        (NP
+          (NP (NN:[308..311] rat)
+            (NML (JJ:[312..322] muscarinic) (NN:[323..331] receptor))
+            (NN:[332..338] number))
+          (PP (IN:[339..343] from)
+            (NP
+              (NP (DT:[344..347] the) (NNS:[348..355] effects))
+              (PP (IN:[356..358] of)
+                (NP
+                  (NP (DT:[359..360] a) (JJ:[361..369] specific)
+                      (VBG:[371..381] alkylating) (NN:[382..388] ligand))
+                  (,:[388..389] ,)
+                  (NP
+                      (NN:[390..446] N--LSB-4--LRB-2-chloroethylmethylamino-RRB--2-butynyl-RSB--2-pyrrolidone)
+                    (PRN (-LRB-:[447..448] -LRB-)
+                      (NP (NN:[448..450] BM) (CD:[452..455] 123))
+                      (-RRB-:[455..456] -RRB-))))))))))
+    (,:[456..457] ,)
+    (PP (IN:[458..460] in)
+      (NP (CD:[461..466] three) (NNS:[467..474] tissues)))
+    (VP (VBZ:[475..477] is)
+      (VP (VBN:[478..487] presented)
+        (NP-1 (-NONE-:[487..487] *))
+        (PP (IN:[488..490] as)
+          (NP
+            (NP (DT:[491..493] an) (JJ:[494..505] exponential)
+                (NN:[506..514] function))
+            (PP (IN:[515..517] of)
+              (NP (NN:[518..522] time)))))))
+    (.:[522..523] .)))
+
+;sentence 6 Span:524..707
+;No  significant difference was found in the recovery rate constants derived
+;from  analysis of recovery time courses in corpus striatum, cerebral cortex
+;and ileal  longitudinal muscle.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[524..526] No) (JJ:[528..539] significant)
+              (NN:[540..550] difference))
+    (VP (VBD:[551..554] was)
+      (VP (VBN:[555..560] found)
+        (NP-1 (-NONE-:[560..560] *))
+        (PP (IN:[561..563] in)
+          (NP
+            (NP (DT:[564..567] the)
+              (NML (NN:[568..576] recovery) (NN:[577..581] rate))
+              (NNS:[582..591] constants))
+            (VP (VBN:[592..599] derived)
+              (NP (-NONE-:[599..599] *))
+              (PP (IN:[600..604] from)
+                (NP
+                  (NP (NN:[606..614] analysis))
+                  (PP (IN:[615..617] of)
+                    (NP
+                      (NP
+                        (NML (NN:[618..626] recovery) (NN:[627..631] time))
+                        (NNS:[632..639] courses))
+                      (PP (IN:[640..642] in)
+                        (NP
+                          (NP (NN:[643..649] corpus) (NN:[650..658] striatum))
+                          (,:[658..659] ,)
+                          (NP (JJ:[660..668] cerebral) (NN:[669..675] cortex))
+                          (CC:[676..679] and)
+                          (NP (JJ:[680..685] ileal) (JJ:[687..699] longitudinal)
+                              (NN:[700..706] muscle)))))))))))))
+    (.:[706..707] .)))
+
+;sentence 7 Span:708..804
+;The single rate constant (0.021/hr) was also independent of  amount and
+;duration of BM 123 dose.
+(SENT
+  (S
+    (NP-SBJ (DT:[708..711] The) (JJ:[712..718] single) (NN:[719..723] rate)
+            (NN:[724..732] constant)
+      (PRN (-LRB-:[733..734] -LRB-)
+        (NP
+          (QP (CD:[734..739] 0.021) (SYM:[739..740] /))
+          (NN:[740..742] hr))
+        (-RRB-:[742..743] -RRB-)))
+    (VP (VBD:[744..747] was) (RB:[748..752] also)
+      (ADJP-PRD (JJ:[753..764] independent)
+        (PP (IN:[765..767] of)
+          (NP
+            (NP (NN:[769..775] amount) (CC:[776..779] and)
+                (NN:[780..788] duration))
+            (PP (IN:[789..791] of)
+              (NP (NN:[792..794] BM) (CD:[795..798] 123) (NN:[799..803] dose)))))))
+    (.:[803..804] .)))
+
+;sentence 8 Span:805..1040
+;Additional analysis of agonist-defined high  and low affinity subsites in
+;cortex revealed that recovery of these populations  also followed similar
+;time courses although the alkylation proceeds more slowly  for the high
+;affinity sites.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[805..815] Additional) (NN:[816..824] analysis))
+      (PP (IN:[825..827] of)
+        (NP
+          (NP
+            (NP
+              (ADJP-1 (NN:[828..835] agonist) (HYPH:[835..836] -)
+                      (VBN:[836..843] defined))
+              (NML (JJ:[844..848] high)
+                (NML-2 (-NONE-:[848..848] *P*)))
+              (NML-3 (-NONE-:[848..848] *P*)))
+            (CC:[850..853] and)
+            (NP
+              (ADJP-1 (-NONE-:[853..853] *P*))
+              (NML (JJ:[854..857] low)
+                (NML-2 (NN:[858..866] affinity)))
+              (NML-3 (NNS:[867..875] subsites))))
+          (PP (IN:[876..878] in)
+            (NP (NN:[879..885] cortex))))))
+    (VP (VBD:[886..894] revealed)
+      (SBAR (IN:[895..899] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[900..908] recovery))
+            (PP (IN:[909..911] of)
+              (NP (DT:[912..917] these) (NNS:[918..929] populations))))
+          (ADVP (RB:[931..935] also))
+          (VP (VBD:[936..944] followed)
+            (NP (JJ:[945..952] similar) (NN:[953..957] time)
+                (NNS:[958..965] courses))
+            (SBAR-ADV (IN:[966..974] although)
+              (S
+                (NP-SBJ (DT:[975..978] the) (NN:[979..989] alkylation))
+                (VP (VBZ:[990..998] proceeds)
+                  (ADVP-MNR (RBR:[999..1003] more) (RB:[1004..1010] slowly))
+                  (PP (IN:[1012..1015] for)
+                    (NP (DT:[1016..1019] the)
+                      (NML (JJ:[1020..1024] high) (NN:[1025..1033] affinity))
+                      (NNS:[1034..1039] sites))))))))))
+    (.:[1039..1040] .)))
+
+;sentence 9 Span:1041..1103
+;The rate constant for recovery of both subsites was  0.029/hr.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1041..1044] The) (NN:[1045..1049] rate)
+          (NN:[1050..1058] constant))
+      (PP (IN:[1059..1062] for)
+        (NP
+          (NP (NN:[1063..1071] recovery))
+          (PP (IN:[1072..1074] of)
+            (NP (DT:[1075..1079] both) (NNS:[1080..1088] subsites))))))
+    (VP (VBD:[1089..1092] was)
+      (NP-PRD
+        (NP (CD:[1094..1099] 0.029))
+        (PP (SYM:[1099..1100] /)
+          (NP (NN:[1100..1102] hr)))))
+    (.:[1102..1103] .)))
+
+;sentence 10 Span:1104..1187
+;Recovery from BM 123 alkylation occurred in NG108-15 neuroblastoma X  glioma
+;cells.
+;[1157..1170]:malignancy-type:"neuroblastoma"
+;[1174..1180]:malignancy-type:"glioma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1104..1112] Recovery))
+      (PP (IN:[1113..1117] from)
+        (NP (NN:[1118..1120] BM) (CD:[1121..1124] 123)
+            (NN:[1125..1135] alkylation))))
+    (VP (VBD:[1136..1144] occurred)
+      (PP-LOC (IN:[1145..1147] in)
+        (NP
+          (NML (NN:[1148..1156] NG108-15) (NN:[1157..1170] neuroblastoma)
+               (SYM:[1171..1172] X))
+          (NN:[1174..1180] glioma) (NNS:[1181..1186] cells))))
+    (.:[1186..1187] .)))
+
+;sentence 11 Span:1188..1421
+;The presence of cycloheximide in the recovery medium did not  significantly
+;inhibit this recovery process in the clonal cell line, suggesting  that de
+;novo receptor synthesis is unnecessary for regeneration of unalkylated 
+;receptors.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1188..1191] The) (NN:[1192..1200] presence))
+      (PP (IN:[1201..1203] of)
+        (NP (NN:[1204..1217] cycloheximide)))
+      (PP (IN:[1218..1220] in)
+        (NP (DT:[1221..1224] the) (NN:[1225..1233] recovery)
+            (NN:[1234..1240] medium))))
+    (VP (VBD:[1241..1244] did) (RB:[1245..1248] not)
+      (ADVP (RB:[1250..1263] significantly))
+      (VP (VB:[1264..1271] inhibit)
+        (NP (DT:[1272..1276] this) (NN:[1277..1285] recovery)
+            (NN:[1286..1293] process))
+        (PP (IN:[1294..1296] in)
+          (NP (DT:[1297..1300] the) (JJ:[1301..1307] clonal)
+              (NN:[1308..1312] cell) (NN:[1313..1317] line)))
+        (,:[1317..1318] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1318..1318] *))
+          (VP (VBG:[1319..1329] suggesting)
+            (SBAR (IN:[1331..1335] that)
+              (S
+                (NP-SBJ
+                  (ADJP (FW:[1336..1338] de) (FW:[1339..1343] novo))
+                  (NN:[1344..1352] receptor) (NN:[1353..1362] synthesis))
+                (VP (VBZ:[1363..1365] is)
+                  (ADJP-PRD (JJ:[1366..1377] unnecessary)
+                    (PP (IN:[1378..1381] for)
+                      (NP
+                        (NP (NN:[1382..1394] regeneration))
+                        (PP (IN:[1395..1397] of)
+                          (NP (JJ:[1398..1409] unalkylated)
+                              (NNS:[1411..1420] receptors)))))))))))))
+    (.:[1420..1421] .)))
+
+;section 12 Span:1425..1469
+;PMID: 2913265 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1425..1429] PMID) (::[1429..1430] :) (CD:[1431..1438] 2913265)
+        (NN:[1439..1440] -LSB-) (NNP:[1440..1446] PubMed) (::[1447..1448] -)
+        (NN:[1449..1456] indexed) (IN:[1457..1460] for)
+        (NNP:[1461..1469] MEDLINE-RSB-)))

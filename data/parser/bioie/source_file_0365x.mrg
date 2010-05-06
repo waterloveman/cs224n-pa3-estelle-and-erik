@@ -1,0 +1,302 @@
+;PMID: 9606006
+;source_file_2906.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..124] = [t:38..124]
+;2)section:[e:128..151] = [t:128..151]
+;3)section:[e:155..230] = [t:155..230]
+;4)sentence:[e:234..320] = [t:234..320]
+;5)sentence:[e:321..494] = [t:321..494]
+;6)sentence:[e:495..595] = [t:495..595]
+;7)sentence:[e:596..768] = [t:596..768]
+;8)sentence:[e:769..1061] = [t:769..1061]
+;9)sentence:[e:1062..1202] = [t:1062..1202]
+;10)sentence:[e:1203..1401] = [t:1203..1401]
+;11)section:[e:1405..1449] = [t:1405..1449]
+
+;section 0 Span:0..32
+;J Drug Target.  1998;5(3):163-9.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Drug) (NNP:[7..13] Target) (.:[13..14] .)
+        (CD:[16..21] 1998;) (CD:[21..22] 5) (NN:[22..23] -LRB-) (CD:[23..24] 3)
+        (-RRB-:[24..25] -RRB-) (CD:[25..29] :163) (::[29..30] -)
+        (CD:[30..32] 9.)))
+
+;sentence 1 Span:38..124
+;Nuclear localization signal peptides enhance cationic liposome-mediated gene 
+;therapy.
+;[38..65]:gene-protein:"Nuclear localization signal"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML (JJ:[38..45] Nuclear) (NN:[46..58] localization) (NN:[59..65] signal))
+      (NNS:[66..74] peptides))
+    (VP (VBP:[75..82] enhance)
+      (NP (JJ:[83..91] cationic)
+        (ADJP (NN:[92..100] liposome) (HYPH:[100..101] -)
+              (VBN:[101..109] mediated))
+        (NN:[110..114] gene) (NN:[116..123] therapy)))
+    (.:[123..124] .)))
+
+;section 2 Span:128..151
+;Aronsohn AI, Hughes JA.
+(SEC
+  (FRAG (NNP:[128..136] Aronsohn) (NNP:[137..139] AI) (,:[139..140] ,)
+        (NNP:[141..147] Hughes) (NNP:[148..150] JA) (.:[150..151] .)))
+
+;section 3 Span:155..230
+;Department of Pharmaceutics, University of Florida, Gainesville 32610, USA.
+(SEC
+  (FRAG (NNP:[155..165] Department) (IN:[166..168] of)
+        (NNP:[169..182] Pharmaceutics) (,:[182..183] ,)
+        (NNP:[184..194] University) (IN:[195..197] of) (NNP:[198..205] Florida)
+        (,:[205..206] ,) (NNP:[207..218] Gainesville) (CD:[219..224] 32610)
+        (,:[224..225] ,) (NNP:[226..229] USA) (.:[229..230] .)))
+
+;sentence 4 Span:234..320
+;The use of genes as therapeutic drugs will likely involve non-viral delivery 
+;systems.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[234..237] The) (NN:[238..241] use))
+      (PP (IN:[242..244] of)
+        (NP (NNS:[245..250] genes)))
+      (PP (IN:[251..253] as)
+        (NP (JJ:[254..265] therapeutic) (NNS:[266..271] drugs))))
+    (VP (MD:[272..276] will)
+      (ADVP (RB:[277..283] likely))
+      (VP (VB:[284..291] involve)
+        (NP
+          (ADJP (AFX:[292..295] non) (HYPH:[295..296] -) (JJ:[296..301] viral))
+          (NN:[302..310] delivery) (NNS:[312..319] systems))))
+    (.:[319..320] .)))
+
+;sentence 5 Span:321..494
+;While traditionally less effective for gene expression, the advantages  of a
+;non-viral delivery system include ease of production, lower toxicity, and  no
+;risk of infection.
+(SENT
+  (S
+    (PP (IN:[321..326] While)
+      (NP
+        (NP (RB:[327..340] traditionally) (RBR:[341..345] less)
+            (JJ:[346..355] effective))
+        (PP (IN:[356..359] for)
+          (NP (NN:[360..364] gene) (NN:[365..375] expression)))))
+    (,:[375..376] ,)
+    (NP-SBJ
+      (NP (DT:[377..380] the) (NNS:[381..391] advantages))
+      (PP (IN:[393..395] of)
+        (NP (DT:[396..397] a)
+          (ADJP (AFX:[398..401] non) (HYPH:[401..402] -) (JJ:[402..407] viral))
+          (NN:[408..416] delivery) (NN:[417..423] system))))
+    (VP (VBP:[424..431] include)
+      (NP
+        (NP
+          (NP (NN:[432..436] ease))
+          (PP (IN:[437..439] of)
+            (NP (NN:[440..450] production))))
+        (,:[450..451] ,)
+        (NP (JJR:[452..457] lower) (NN:[458..466] toxicity))
+        (,:[466..467] ,) (CC:[468..471] and)
+        (NP
+          (NP (DT:[473..475] no) (NN:[476..480] risk))
+          (PP (IN:[481..483] of)
+            (NP (NN:[484..493] infection))))))
+    (.:[493..494] .)))
+
+;sentence 6 Span:495..595
+;However, most non-viral systems do not incorporate a  mechanism for gene
+;transport into the nucleus.
+(SENT
+  (S
+    (ADVP (RB:[495..502] However))
+    (,:[502..503] ,)
+    (NP-SBJ (JJS:[504..508] most)
+      (ADJP (AFX:[509..512] non) (HYPH:[512..513] -) (JJ:[513..518] viral))
+      (NNS:[519..526] systems))
+    (VP (VBP:[527..529] do) (RB:[530..533] not)
+      (VP (VB:[534..545] incorporate)
+        (NP
+          (NP (DT:[546..547] a) (NN:[549..558] mechanism))
+          (PP (IN:[559..562] for)
+            (NP
+              (NP (NN:[563..567] gene) (NN:[568..577] transport))
+              (PP (IN:[578..582] into)
+                (NP (DT:[583..586] the) (NN:[587..594] nucleus))))))))
+    (.:[594..595] .)))
+
+;sentence 7 Span:596..768
+;Nuclear localization signal  peptides can combine the increased expression of
+;viral delivery systems with the  safety and ease of preparation of non-viral
+;delivery systems.
+;[596..623]:gene-protein:"Nuclear localization signal"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[596..603] Nuclear) (NN:[604..616] localization)
+           (NN:[617..623] signal))
+      (NNS:[625..633] peptides))
+    (VP (MD:[634..637] can)
+      (VP (VB:[638..645] combine)
+        (NP
+          (NP (DT:[646..649] the) (VBN:[650..659] increased)
+              (NN:[660..670] expression))
+          (PP (IN:[671..673] of)
+            (NP (JJ:[674..679] viral) (NN:[680..688] delivery)
+                (NNS:[689..696] systems)))
+          (PP (IN:[697..701] with)
+            (NP
+              (NP (DT:[702..705] the) (NN:[707..713] safety) (CC:[714..717] and)
+                  (NN:[718..722] ease))
+              (PP (IN:[723..725] of)
+                (NP
+                  (NP (NN:[726..737] preparation))
+                  (PP (IN:[738..740] of)
+                    (NP
+                      (ADJP (AFX:[741..744] non) (HYPH:[744..745] -)
+                            (JJ:[745..750] viral))
+                      (NN:[751..759] delivery) (NNS:[760..767] systems))))))))))
+    (.:[767..768] .)))
+
+;sentence 8 Span:769..1061
+;A novel non-viral  delivery vehicle consisting of a conglomerate of a
+;synthetic nuclear  localization signal peptide derived from the SV40 virus, a
+;luciferase encoding  PGL3 plasmid, and a cationic lipid DOTAP:DOPE (1:1 w/w)
+;liposome was transfected  into SKnSH mammalian neuroblastoma cells.
+;[849..877]:gene-protein:"nuclear  localization signal"
+;[917..927]:gene-protein:"luciferase"
+;[1041..1060]:malignancy-type:"neuroblastoma cells"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[769..770] A) (JJ:[771..776] novel)
+        (ADJP (AFX:[777..780] non) (HYPH:[780..781] -) (JJ:[781..786] viral))
+        (NN:[788..796] delivery) (NN:[797..804] vehicle))
+      (VP (VBG:[805..815] consisting)
+        (PP-CLR (IN:[816..818] of)
+          (NP
+            (NP (DT:[819..820] a) (NN:[821..833] conglomerate))
+            (PP (IN:[834..836] of)
+              (NP
+                (NP (DT:[837..838] a) (JJ:[839..848] synthetic)
+                  (NML (JJ:[849..856] nuclear) (NN:[858..870] localization)
+                       (NN:[871..877] signal))
+                  (NN:[878..885] peptide))
+                (VP (VBN:[886..893] derived)
+                  (NP (-NONE-:[893..893] *))
+                  (PP (IN:[894..898] from)
+                    (NP
+                      (NP
+                        (NP (DT:[899..902] the) (NN:[903..907] SV40)
+                            (NN:[908..913] virus))
+                        (,:[913..914] ,)
+                        (NP
+                          (NP (DT:[915..916] a) (NN:[917..927] luciferase))
+                          (VP (VBG:[928..936] encoding)
+                            (NP (NN:[938..942] PGL3) (NN:[943..950] plasmid)))))
+                      (,:[950..951] ,) (CC:[952..955] and)
+                      (NP (DT:[956..957] a) (JJ:[958..966] cationic)
+                          (NN:[967..972] lipid)
+                        (NML (NN:[973..978] DOTAP) (SYM:[978..979] :)
+                             (NN:[979..983] DOPE)
+                          (PRN (-LRB-:[984..985] -LRB-)
+                            (FRAG (CD:[985..986] 1) (SYM:[986..987] :)
+                                  (CD:[987..988] 1) (NN:[989..990] w)
+                                  (SYM:[990..991] /) (NN:[991..992] w))
+                            (-RRB-:[992..993] -RRB-)))
+                        (NN:[994..1002] liposome)))))))))))
+    (VP (VBD:[1003..1006] was)
+      (VP (VBN:[1007..1018] transfected)
+        (NP-1 (-NONE-:[1018..1018] *))
+        (PP (IN:[1020..1024] into)
+          (NP (NN:[1025..1030] SKnSH) (JJ:[1031..1040] mammalian)
+             (NN:[1041..1054] neuroblastoma) (NNS:[1055..1060] cells)))))
+    (.:[1060..1061] .)))
+
+;sentence 9 Span:1062..1202
+;A three-fold increase in luciferase  expression was seen with the delivery
+;system containing a NLS peptide over  cationic liposome controls.
+;[1087..1097]:gene-protein:"luciferase"
+;[1157..1160]:gene-protein:"NLS"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1062..1063] A)
+        (QP (CD:[1064..1069] three) (HYPH:[1069..1070] -) (JJ:[1070..1074] fold))
+        (NN:[1075..1083] increase))
+      (PP (IN:[1084..1086] in)
+        (NP (NN:[1087..1097] luciferase) (NN:[1099..1109] expression))))
+    (VP (VBD:[1110..1113] was)
+      (VP (VBN:[1114..1118] seen)
+        (NP-1 (-NONE-:[1118..1118] *))
+        (PP (IN:[1119..1123] with)
+          (NP
+            (NP (DT:[1124..1127] the) (NN:[1128..1136] delivery)
+                (NN:[1137..1143] system))
+            (VP (VBG:[1144..1154] containing)
+              (NP
+                (NP (DT:[1155..1156] a) (NN:[1157..1160] NLS)
+                    (NN:[1161..1168] peptide))
+                (PP (IN:[1169..1173] over)
+                  (NP (JJ:[1175..1183] cationic) (NN:[1184..1192] liposome)
+                      (NNS:[1193..1201] controls)))))))))
+    (.:[1201..1202] .)))
+
+;sentence 10 Span:1203..1401
+;Examination of the factors that limit the rate of  transgene expression can
+;potentially lead to the discovery of new ways to  improve the efficiency and
+;efficacy of nonviral methods of gene therapy.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1203..1214] Examination))
+      (PP (IN:[1215..1217] of)
+        (NP
+          (NP (DT:[1218..1221] the) (NNS:[1222..1229] factors))
+          (SBAR
+            (WHNP-1 (WDT:[1230..1234] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[1234..1234] *T*))
+              (VP (VBP:[1235..1240] limit)
+                (NP
+                  (NP (DT:[1241..1244] the) (NN:[1245..1249] rate))
+                  (PP (IN:[1250..1252] of)
+                    (NP (NN:[1254..1263] transgene) (NN:[1264..1274] expression))))))))))
+    (VP (MD:[1275..1278] can)
+      (ADVP (RB:[1279..1290] potentially))
+      (VP (VB:[1291..1295] lead)
+        (PP-CLR (TO:[1296..1298] to)
+          (NP
+            (NP (DT:[1299..1302] the) (NN:[1303..1312] discovery))
+            (PP (IN:[1313..1315] of)
+              (NP
+                (NP (JJ:[1316..1319] new) (NNS:[1320..1324] ways))
+                (SBAR
+                  (WHNP-2 (-NONE-:[1324..1324] 0))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[1324..1324] *T*))
+                    (VP (TO:[1325..1327] to)
+                      (VP (VB:[1329..1336] improve)
+                        (NP
+                          (NP (DT:[1337..1340] the) (NN:[1341..1351] efficiency)
+                              (CC:[1352..1355] and) (NN:[1356..1364] efficacy))
+                          (PP (IN:[1365..1367] of)
+                            (NP
+                              (NP (JJ:[1368..1376] nonviral)
+                                  (NNS:[1377..1384] methods))
+                              (PP (IN:[1385..1387] of)
+                                (NP (NN:[1388..1392] gene)
+                                    (NN:[1393..1400] therapy))))))))))))))))
+    (.:[1400..1401] .)))
+
+;section 11 Span:1405..1449
+;PMID: 9606006 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1405..1409] PMID) (::[1409..1410] :) (CD:[1411..1418] 9606006)
+        (NN:[1419..1420] -LSB-) (NNP:[1420..1426] PubMed) (::[1427..1428] -)
+        (NN:[1429..1436] indexed) (IN:[1437..1440] for)
+        (NNP:[1441..1449] MEDLINE-RSB-)))

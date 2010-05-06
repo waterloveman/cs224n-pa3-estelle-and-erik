@@ -1,0 +1,361 @@
+;PMID: 7927901
+;source_file_790.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..104] = [t:41..104]
+;2)section:[e:108..192] = [t:108..192]
+;3)section:[e:196..257] = [t:196..257]
+;4)sentence:[e:261..532] = [t:261..532]
+;5)sentence:[e:533..663] = [t:533..663]
+;6)sentence:[e:664..793] = [t:664..793]
+;7)sentence:[e:794..947] = [t:794..947]
+;8)sentence:[e:948..1176] = [t:948..1176]
+;9)sentence:[e:1177..1445] = [t:1177..1445]
+;10)section:[e:1449..1493] = [t:1449..1493]
+
+;section 0 Span:0..36
+;Int J Cancer  1994 Oct 1;59(1):39-42
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..12] Cancer) (CD:[14..18] 1994)
+        (NNP:[19..22] Oct) (CC:[23..28] 1;59-LRB-) (CD:[28..29] 1)
+        (-RRB-:[29..30] -RRB-) (CD:[30..33] :39) (::[33..34] -) (CD:[34..36] 42)))
+
+;sentence 1 Span:41..104
+;ras-family gene mutations in neoplasia of the ampulla of Vater.
+;[41..44]:gene-rna:"ras"
+;[70..103]:malignancy:"neoplasia of the ampulla of Vater"
+(SENT
+  (NP-HLN
+    (NP
+      (NML (NN:[41..44] ras) (HYPH:[44..45] -) (NN:[45..51] family))
+      (NN:[52..56] gene) (NNS:[57..66] mutations))
+    (PP (IN:[67..69] in)
+      (NP
+        (NP (NN:[70..79] neoplasia))
+        (PP (IN:[80..82] of)
+          (NP
+            (NP (DT:[83..86] the) (NN:[87..94] ampulla))
+            (PP (IN:[95..97] of)
+              (NP (NNP:[98..103] Vater)))))))
+    (.:[103..104] .)))
+
+;section 2 Span:108..192
+;Scarpa A, Zamboni G, Achille A, Capelli P, Bogina G, Iacono C, Serio G,
+;Accolla  RS.
+(SEC
+  (FRAG (NNP:[108..114] Scarpa) (NNP:[115..116] A) (,:[116..117] ,)
+        (NNP:[118..125] Zamboni) (NNP:[126..127] G) (,:[127..128] ,)
+        (NNP:[129..136] Achille) (NNP:[137..138] A) (,:[138..139] ,)
+        (NNP:[140..147] Capelli) (NNP:[148..149] P) (,:[149..150] ,)
+        (NNP:[151..157] Bogina) (NNP:[158..159] G) (,:[159..160] ,)
+        (NNP:[161..167] Iacono) (NNP:[168..169] C) (,:[169..170] ,)
+        (NNP:[171..176] Serio) (NNP:[177..178] G) (,:[178..179] ,)
+        (NNP:[180..187] Accolla) (NNP:[189..191] RS) (.:[191..192] .)))
+
+;section 3 Span:196..257
+;Istituti di Anatomia Patologica, Universita di Verona, Italy.
+(SEC
+  (FRAG (NNP:[196..204] Istituti) (NNP:[205..207] di) (NNP:[208..216] Anatomia)
+        (NNP:[217..227] Patologica) (,:[227..228] ,) (NNP:[229..239] Universita)
+        (NNP:[240..242] di) (NNP:[243..249] Verona) (,:[249..250] ,)
+        (NNP:[251..256] Italy) (.:[256..257] .)))
+
+;sentence 4 Span:261..532
+;Mutations in the first and second exons of Ha-, Ki- and N-ras oncogenes were 
+;investigated in 17 epithelial tumors of the ampulla of Vater by single-strand
+; conformation polymorphism analysis and direct sequencing of DNA fragments 
+;amplified by polymerase chain reaction.
+;[261..270]:variation-event:"Mutations"
+;[278..283]...[295..300]:variation-location:"first"..."exons"
+;[288..300]:variation-location:"second exons"
+;[304..307]...[319..322]:gene-rna:"Ha-"..."ras"
+;[309..312]...[319..322]:gene-rna:"Ki-"..."ras"
+;[317..322]:gene-rna:"N-ras"
+;[358..399]:malignancy:"epithelial tumors of the ampulla of Vater"
+;[506..516]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (NNS:[261..270] Mutations))
+      (PP-LOC (IN:[271..273] in)
+        (NP
+          (NP (DT:[274..277] the)
+            (NML
+              (NML (JJ:[278..283] first)
+                (NML-3 (-NONE-:[283..283] *P*)))
+              (CC:[284..287] and)
+              (NML (JJ:[288..294] second)
+                (NML-3 (NNS:[295..300] exons)))))
+          (PP (IN:[301..303] of)
+            (NP
+              (NP
+                (NML (NN:[304..306] Ha) (HYPH:[306..307] -)
+                  (NML-1 (-NONE-:[307..307] *P*)))
+                (NML-2 (-NONE-:[307..307] *P*)))
+              (,:[307..308] ,)
+              (NP
+                (NML (NN:[309..311] Ki) (HYPH:[311..312] -)
+                  (NML-1 (-NONE-:[312..312] *P*)))
+                (NML-2 (-NONE-:[312..312] *P*)))
+              (CC:[313..316] and)
+              (NP
+                (NML (NN:[317..318] N) (HYPH:[318..319] -)
+                  (NML-1 (NN:[319..322] ras)))
+                (NML-2 (NNS:[323..332] oncogenes))))))))
+    (VP (VBD:[333..337] were)
+      (VP (VBN:[339..351] investigated)
+        (NP-4 (-NONE-:[351..351] *))
+        (PP-LOC (IN:[352..354] in)
+          (NP
+            (NP (CD:[355..357] 17) (JJ:[358..368] epithelial)
+                (NNS:[369..375] tumors))
+            (PP (IN:[376..378] of)
+              (NP
+                (NP (DT:[379..382] the) (NN:[383..390] ampulla))
+                (PP (IN:[391..393] of)
+                  (NP (NNP:[394..399] Vater)))))))
+        (PP (IN:[400..402] by)
+          (NP
+            (NP
+              (NML (JJ:[403..409] single) (HYPH:[409..410] -)
+                   (NN:[410..416] strand))
+              (NN:[418..430] conformation) (NN:[431..443] polymorphism)
+               (NN:[444..452] analysis))
+            (CC:[453..456] and)
+            (NP
+              (NP (JJ:[457..463] direct) (NN:[464..474] sequencing))
+              (PP (IN:[475..477] of)
+                (NP
+                  (NP (NN:[478..481] DNA) (NNS:[482..491] fragments))
+                  (VP (VBN:[493..502] amplified)
+                    (NP (-NONE-:[502..502] *))
+                    (PP-MNR (IN:[503..505] by)
+                      (NP (NN:[506..516] polymerase) (NN:[517..522] chain)
+                          (NN:[523..531] reaction)))))))))))
+    (.:[531..532] .)))
+
+;sentence 5 Span:533..663
+;The panel included 12 intestinal-type  adenocarcinomas, 3 villous adenomas, 1
+;papillary carcinoma and 1 neuroendocrine  carcinoma.
+;[555..587]:malignancy:"intestinal-type  adenocarcinomas"
+;[591..607]:malignancy:"villous adenomas"
+;[611..630]:malignancy:"papillary carcinoma"
+;[637..662]:malignancy:"neuroendocrine  carcinoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[533..536] The) (NN:[537..542] panel))
+    (VP (VBD:[543..551] included)
+      (NP
+        (NP (CD:[552..554] 12)
+          
+          (NML (JJ:[555..565] intestinal) (HYPH:[565..566] -)
+               (NN:[566..570] type))
+          (NNS:[572..587] adenocarcinomas))
+        (,:[587..588] ,)
+        (NP (CD:[589..590] 3)
+           (JJ:[591..598] villous) (NNS:[599..607] adenomas))
+        (,:[607..608] ,)
+        (NP (CD:[609..610] 1)
+           (JJ:[611..620] papillary) (NN:[621..630] carcinoma))
+        (CC:[631..634] and)
+        (NP (CD:[635..636] 1)
+           (JJ:[637..651] neuroendocrine) (NN:[653..662] carcinoma))))
+    (.:[662..663] .)))
+
+;sentence 6 Span:664..793
+;Six cases (35%) contained ras mutations, affecting codon 12 of Ki-ras  in 2
+;adenomas and 3 carcinomas, and of N-ras in 1 adenoma.
+;[690..693]:gene-rna:"ras"
+;[694..703]:variation-event:"mutations"
+;[715..723]:variation-location:"codon 12"
+;[727..733]:gene-rna:"Ki-ras"
+;[740..748]:malignancy:"adenomas"
+;[755..765]:malignancy:"carcinomas"
+;[774..779]:gene-rna:"N-ras"
+;[785..792]:malignancy:"adenoma"
+(SENT
+  (S
+    (NP-SBJ (CD:[664..667] Six) (NNS:[668..673] cases)
+      (PRN (-LRB-:[674..675] -LRB-)
+        (NP (CD:[675..677] 35) (NN:[677..678] %))
+        (-RRB-:[678..679] -RRB-)))
+    (VP (VBD:[680..689] contained)
+      (NP
+        (NP (NN:[690..693] ras) (NNS:[694..703] mutations))
+        (,:[703..704] ,)
+        (VP (VBG:[705..714] affecting)
+          (NP
+            (NP (NN:[715..720] codon) (CD:[721..723] 12))
+            (PP
+              (PP (IN:[724..726] of)
+                (NP
+                  (NP (NN:[727..733] Ki-ras))
+                  (PP-LOC (IN:[735..737] in)
+                    (NP
+                      (NP (CD:[738..739] 2) (NNS:[740..748] adenomas))
+                      (CC:[749..752] and)
+                      (NP (CD:[753..754] 3) (NNS:[755..765] carcinomas))))))
+              (,:[765..766] ,) (CC:[767..770] and)
+              (PP (IN:[771..773] of)
+                (NP
+                  (NP (NN:[774..779] N-ras))
+                  (PP-LOC (IN:[780..782] in)
+                    (NP (CD:[783..784] 1) (NN:[785..792] adenoma))))))))))
+    (.:[792..793] .)))
+
+;sentence 7 Span:794..947
+;All mutations were  found in adenomas and among cancers with adenomatous
+;areas, whereas none of the  cases lacking adenomatous areas contained
+;mutations.
+;[798..807]:variation-event:"mutations"
+;[823..831]:malignancy:"adenomas"
+;[842..872]:malignancy:"cancers with adenomatous areas"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[794..797] All) (NNS:[798..807] mutations))
+    (VP (VBD:[808..812] were)
+      (VP (VBN:[814..819] found)
+        (NP-1 (-NONE-:[819..819] *))
+        (PP-LOC
+          (PP (IN:[820..822] in)
+            (NP (NNS:[823..831] adenomas)))
+          (CC:[832..835] and)
+          (PP (IN:[836..841] among)
+            (NP
+              (NP (NNS:[842..849] cancers))
+              (PP (IN:[850..854] with)
+                (NP (JJ:[855..866] adenomatous) (NNS:[867..872] areas))))))
+        (,:[872..873] ,)
+        (SBAR-ADV (IN:[874..881] whereas)
+          (S
+            (NP-SBJ
+              (NP (NN:[882..886] none))
+              (PP (IN:[887..889] of)
+                (NP
+                  (NP (DT:[890..893] the) (NNS:[895..900] cases))
+                  (VP (VBG:[901..908] lacking)
+                    (NP (JJ:[909..920] adenomatous) (NNS:[921..926] areas))))))
+            (VP (VBD:[927..936] contained)
+              (NP (NNS:[937..946] mutations)))))))
+    (.:[946..947] .)))
+
+;sentence 8 Span:948..1176
+;This suggested that  ampullary cancers represent heterogeneous diseases with
+;respect to the presence  or absence of adenomatous areas and, among those
+;with adenomatous areas, with  respect to the presence of activated ras
+;genes.
+;[969..986]:malignancy:"ampullary cancers"
+;[1166..1169]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[948..952] This))
+    (VP (VBD:[953..962] suggested)
+      (SBAR (IN:[963..967] that)
+        (S
+          (NP-SBJ (JJ:[969..978] ampullary) (NNS:[979..986] cancers))
+          (VP (VBP:[987..996] represent)
+            (NP (JJ:[997..1010] heterogeneous) (NNS:[1011..1019] diseases))
+            (PP
+              (PP (IN:[1020..1024] with)
+                (NP
+                  (NP (NN:[1025..1032] respect))
+                  (PP (TO:[1033..1035] to)
+                    (NP
+                      (NP (DT:[1036..1039] the) (NN:[1040..1048] presence)
+                          (CC:[1050..1052] or) (NN:[1053..1060] absence))
+                      (PP (IN:[1061..1063] of)
+                        (NP (JJ:[1064..1075] adenomatous)
+                            (NNS:[1076..1081] areas)))))))
+              (CC:[1082..1085] and) (,:[1085..1086] ,)
+              (PP
+                (PP (IN:[1087..1092] among)
+                  (NP
+                    (NP (DT:[1093..1098] those))
+                    (PP (IN:[1099..1103] with)
+                      (NP (JJ:[1104..1115] adenomatous) (NNS:[1116..1121] areas)))))
+                (,:[1121..1122] ,)
+                (PP (IN:[1123..1127] with)
+                  (NP
+                    (NP (NN:[1129..1136] respect))
+                    (PP (TO:[1137..1139] to)
+                      (NP
+                        (NP (DT:[1140..1143] the) (NN:[1144..1152] presence))
+                        (PP (IN:[1153..1155] of)
+                          (NP (JJ:[1156..1165] activated) (NN:[1166..1169] ras)
+                              (NNS:[1170..1175] genes)))))))))))))
+    (.:[1175..1176] .)))
+
+;sentence 9 Span:1177..1445
+;Ki-ras mutated cases included 3  of 4 tumors which mainly involved the
+;intraduodenal bile duct, thus suggesting  that a proportion of Ki-ras-mutated
+;ampullary cancers might correspond to those  originating from the epithelium
+;of the bile duct component of the ampulla.
+;[1177..1183]:gene-rna:"Ki-ras"
+;[1215..1271]:malignancy:"tumors which mainly involved the intraduodenal bile
+;duct"
+;[1311..1317]:gene-rna:"Ki-ras"
+;[1326..1343]:malignancy:"ampullary cancers"
+(SENT
+  (S
+    (NP-SBJ (NN:[1177..1183] Ki-ras) (VBN:[1184..1191] mutated)
+            (NNS:[1192..1197] cases))
+    (VP (VBD:[1198..1206] included)
+      (NP
+        (NP (CD:[1207..1208] 3))
+        (PP (IN:[1210..1212] of)
+          (NP
+            (NP (CD:[1213..1214] 4) (NNS:[1215..1221] tumors))
+            (SBAR
+              (WHNP-1 (WDT:[1222..1227] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[1227..1227] *T*))
+                (ADVP (RB:[1228..1234] mainly))
+                (VP (VBD:[1235..1243] involved)
+                  (NP (DT:[1244..1247] the) (JJ:[1248..1261] intraduodenal)
+                      (NN:[1262..1266] bile) (NN:[1267..1271] duct))
+                  (,:[1271..1272] ,)
+                  (S-ADV
+                    (NP-SBJ (-NONE-:[1272..1272] *))
+                    (ADVP (RB:[1273..1277] thus))
+                    (VP (VBG:[1278..1288] suggesting)
+                      (SBAR (IN:[1290..1294] that)
+                        (S
+                          (NP-SBJ
+                            (NP (DT:[1295..1296] a) (NN:[1297..1307] proportion))
+                            (PP (IN:[1308..1310] of)
+                              (NP
+                                (ADJP (NN:[1311..1317] Ki-ras)
+                                      (HYPH:[1317..1318] -)
+                                      (VBN:[1318..1325] mutated))
+                                 (JJ:[1326..1335] ampullary)
+                                 (NNS:[1336..1343] cancers))))
+                          (VP (MD:[1344..1349] might)
+                            (VP (VB:[1350..1360] correspond)
+                              (PP-CLR (TO:[1361..1363] to)
+                                (NP
+                                  (NP (DT:[1364..1369] those))
+                                  (VP (VBG:[1371..1382] originating)
+                                    (PP (IN:[1383..1387] from)
+                                      (NP
+                                        (NP (DT:[1388..1391] the)
+                                            (NN:[1392..1402] epithelium))
+                                        (PP (IN:[1403..1405] of)
+                                          (NP
+                                            (NP (DT:[1406..1409] the)
+                                              (NML (NN:[1410..1414] bile)
+                                                   (NN:[1415..1419] duct))
+                                              (NN:[1420..1429] component))
+                                            (PP (IN:[1430..1432] of)
+                                              (NP (DT:[1433..1436] the)
+                                                  (NN:[1437..1444] ampulla)))))))))))))))))))))))
+    (.:[1444..1445] .)))
+
+;section 10 Span:1449..1493
+;PMID: 7927901 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1449..1453] PMID) (::[1453..1454] :) (CD:[1455..1462] 7927901)
+        (NN:[1463..1464] -LSB-) (NNP:[1464..1470] PubMed) (::[1471..1472] -)
+        (NN:[1473..1480] indexed) (IN:[1481..1484] for)
+        (NNP:[1485..1493] MEDLINE-RSB-)))

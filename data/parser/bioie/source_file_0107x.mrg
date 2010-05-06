@@ -1,0 +1,336 @@
+;PMID: 10936679
+;source_file_1357.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..172] = [t:42..172]
+;2)section:[e:176..226] = [t:176..226]
+;3)section:[e:230..373] = [t:230..373]
+;4)sentence:[e:377..623] = [t:377..623]
+;5)sentence:[e:624..751] = [t:624..751]
+;6)sentence:[e:752..859] = [t:752..859]
+;7)sentence:[e:860..993] = [t:860..993]
+;8)sentence:[e:994..1205] = [t:994..1205]
+;9)sentence:[e:1206..1367] = [t:1206..1367]
+;10)section:[e:1371..1416] = [t:1371..1416]
+
+;section 0 Span:0..37
+;Cancer Lett  2000 Sep 1;157(2):185-91
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..11] Lett) (CD:[13..17] 2000)
+        (NNP:[18..21] Sep) (CD:[22..28] 1;157-LRB-) (CD:[28..29] 2)
+        (-RRB-:[29..30] -RRB-) (CD:[30..34] :185) (HYPH:[34..35] -)
+        (CD:[35..37] 91)))
+
+;sentence 1 Span:42..172
+;Beta-catenin and adenomatous polyposis coli (APC) mutations in adenomas from 
+;hereditary non-polyposis colorectal cancer patients.
+;[42..54]:gene-rna:"Beta-catenin"
+;[59..85]:gene-rna:"adenomatous polyposis coli"
+;[87..90]:gene-rna:"APC"
+;[105..113]:malignancy:"adenomas"
+;[120..162]:malignancy:"hereditary non-polyposis colorectal cancer"
+(SENT
+  (NP
+    (NP
+      (NP (NN:[42..54] Beta-catenin)
+        (NML-1 (-NONE-:[54..54] *P*)))
+      (CC:[55..58] and)
+      (NP
+        (NML
+          (NML (JJ:[59..70] adenomatous) (NN:[71..80] polyposis)
+               (NN:[81..85] coli))
+          (NML (-LRB-:[86..87] -LRB-) (NN:[87..90] APC) (-RRB-:[90..91] -RRB-)))
+        (NML-1 (NNS:[92..101] mutations))))
+    (PP (IN:[102..104] in)
+      (NP
+        (NP (NNS:[105..113] adenomas))
+        (PP (IN:[114..118] from)
+          (NP
+             (JJ:[120..130] hereditary)
+            (NML (AFX:[131..134] non) (HYPH:[134..135] -)
+                 (NN:[135..144] polyposis))
+            (JJ:[145..155] colorectal) (NN:[156..162] cancer)
+            (NNS:[163..171] patients)))))
+    (.:[171..172] .)))
+
+;section 2 Span:176..226
+;Akiyama Y, Nagasaki H, Yagi KO, Nomizu T, Yuasa Y.
+(SEC
+  (FRAG (NNP:[176..183] Akiyama) (NNP:[184..185] Y) (,:[185..186] ,)
+        (NNP:[187..195] Nagasaki) (NNP:[196..197] H) (,:[197..198] ,)
+        (NNP:[199..203] Yagi) (NNP:[204..206] KO) (VBD:[206..207] ,)
+        (NNP:[208..214] Nomizu) (NNP:[215..216] T) (,:[216..217] ,)
+        (NNP:[218..223] Yuasa) (NNP:[224..226] Y.)))
+
+;section 3 Span:230..373
+;Department of Hygiene and Oncology, Tokyo Medical and Dental University
+;School  of Medicine, 1-5-45 Yushima, Bunkyo-ku, 113-8519, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[230..240] Department) (IN:[241..243] of) (NNP:[244..251] Hygiene)
+        (CC:[252..255] and) (NNP:[256..264] Oncology) (,:[264..265] ,)
+        (NNP:[266..271] Tokyo) (NNP:[272..279] Medical) (CC:[280..283] and)
+        (NNP:[284..290] Dental) (NNP:[291..301] University)
+        (NNP:[302..308] School) (IN:[310..312] of) (NNP:[313..321] Medicine)
+        (,:[321..322] ,) (CD:[323..324] 1) (HYPH:[324..325] -) (CD:[325..326] 5)
+        (HYPH:[326..327] -) (CD:[327..329] 45) (NNP:[330..337] Yushima)
+        (,:[337..338] ,) (NNP:[339..345] Bunkyo) (HYPH:[345..346] -)
+        (JJ:[346..348] ku) (,:[348..349] ,) (CD:[350..353] 113)
+        (HYPH:[353..354] -) (CD:[354..358] 8519) (,:[358..359] ,)
+        (NNP:[360..365] Tokyo) (,:[365..366] ,) (NNP:[367..372] Japan)
+        (.:[372..373] .)))
+
+;sentence 4 Span:377..623
+;To clarify the roles of the adenomatous polyposis coli (APC) and beta-catenin
+; genes in hereditary nonpolyposis colorectal cancer (HNPCC) tumorigenesis, we
+; searched for their mutations in 14 HNPCC adenomas with microsatellite 
+;instability (MSI).
+;[405..431]:gene-rna:"adenomatous polyposis coli"
+;[433..436]:gene-rna:"APC"
+;[442..454]:gene-rna:"beta-catenin"
+;[465..506]:malignancy:"hereditary nonpolyposis colorectal cancer"
+;[508..513]:malignancy:"HNPCC"
+;[569..616]:malignancy:"HNPCC adenomas with microsatellite  instability"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[377..377] *))
+      (VP (TO:[377..379] To)
+        (VP (VB:[380..387] clarify)
+          (NP
+            (NP (DT:[388..391] the) (NNS:[392..397] roles))
+            (PP (IN:[398..400] of)
+              (PP (DT:[401..404] the)
+                (NML
+                  (NML
+                    (NML
+                      (NML (JJ:[405..416] adenomatous) (NN:[417..426] polyposis)
+                           (NN:[427..431] coli))
+                      (NML (-LRB-:[432..433] -LRB-) (NN:[433..436] APC)
+                           (-RRB-:[436..437] -RRB-)))
+                    (NML-1 (-NONE-:[437..437] *P*)))
+                  (CC:[438..441] and)
+                  (NML (NN:[442..454] beta-catenin)
+                    (NML-1 (NNS:[456..461] genes)))))))
+          (PP (IN:[462..464] in)
+            (NP
+              (NML
+                (NML (JJ:[465..475] hereditary) (JJ:[476..488] nonpolyposis)
+                     (JJ:[489..499] colorectal) (NN:[500..506] cancer))
+                (NML (-LRB-:[507..508] -LRB-) (NN:[508..513] HNPCC)
+                     (-RRB-:[513..514] -RRB-)))
+              (NN:[515..528] tumorigenesis))))))
+    (,:[528..529] ,)
+    (NP-SBJ (PRP:[530..532] we))
+    (VP (VBD:[534..542] searched)
+      (PP (IN:[543..546] for)
+        (NP (PRP$:[547..552] their) (NNS:[553..562] mutations)))
+      (PP (IN:[563..565] in)
+        (NP
+          (NP (CD:[566..568] 14) (NN:[569..574] HNPCC) (NNS:[575..583] adenomas))
+          (PP (IN:[584..588] with)
+            (NP
+              (NP (NN:[589..603] microsatellite) (NN:[605..616] instability))
+              (NP (-LRB-:[617..618] -LRB-) (NN:[618..621] MSI)
+                  (-RRB-:[621..622] -RRB-)))))))
+    (.:[622..623] .)))
+
+;sentence 5 Span:624..751
+;Seven (50%) adenomas exhibited somatic APC mutations, five of  which were
+;frameshift mutations and the other two nonsense ones.
+;[636..644]:malignancy:"adenomas"
+;[663..666]:gene-rna:"APC"
+;[698..718]:variation-type:"frameshift mutations"
+;[737..745]:variation-type:"nonsense"
+(SENT
+  (S
+    (NP-SBJ (CD:[624..629] Seven)
+      (PRN (-LRB-:[630..631] -LRB-)
+        (NP (CD:[631..633] 50) (NN:[633..634] %))
+        (-RRB-:[634..635] -RRB-))
+      (NNS:[636..644] adenomas))
+    (VP (VBD:[645..654] exhibited)
+      (NP
+        (NP (JJ:[655..662] somatic) (NN:[663..666] APC)
+            (NNS:[667..676] mutations))
+        (,:[676..677] ,)
+        (SBAR
+          (SBAR
+            (WHNP-1
+              (NP (CD:[678..682] five))
+              (WHPP (IN:[683..685] of)
+                (WHNP (WDT:[687..692] which))))
+            (S
+              (NP-SBJ-1 (-NONE-:[692..692] *T*))
+              (VP (VBD:[693..697] were)
+                (NP-PRD=3 (NN:[698..708] frameshift) (NNS:[709..718] mutations)))))
+          (CC:[719..722] and)
+          (SBAR
+            (WHNP
+              (NP-SBJ=2 (DT:[723..726] the) (JJ:[727..732] other)
+                        (CD:[733..736] two)))
+            (S
+              (NP-PRD=3 (JJ:[737..745] nonsense) (NNS:[746..750] ones)))))))
+    (.:[750..751] .)))
+
+;sentence 6 Span:752..859
+;However, the  APC mutational spectrum of these adenomas was similar to that
+;of sporadic  colorectal tumors.
+;[766..769]:gene-rna:"APC"
+;[799..807]:malignancy:"adenomas"
+;[831..858]:malignancy:"sporadic  colorectal tumors"
+(SENT
+  (S
+    (ADVP (RB:[752..759] However))
+    (,:[759..760] ,)
+    (NP-SBJ
+      (NP (DT:[761..764] the) (NN:[766..769] APC) (JJ:[770..780] mutational)
+          (NN:[781..789] spectrum))
+      (PP (IN:[790..792] of)
+        (NP (DT:[793..798] these) (NNS:[799..807] adenomas))))
+    (VP (VBD:[808..811] was)
+      (ADJP-PRD (JJ:[812..819] similar)
+        (PP (TO:[820..822] to)
+          (NP
+            (NP (DT:[823..827] that))
+            (PP (IN:[828..830] of)
+              (NP (JJ:[831..839] sporadic) (JJ:[841..851] colorectal)
+                  (NNS:[852..858] tumors)))))))
+    (.:[858..859] .)))
+
+;sentence 7 Span:860..993
+;Two adenomas (14.3%) with undetectable APC alterations showed  missense
+;mutations at codon 45 (TCT to TTT or to CCT) in beta-catenin.
+;[864..872]:malignancy:"adenomas"
+;[899..902]:gene-rna:"APC"
+;[923..941]:variation-type:"missense mutations"
+;[945..953]:variation-location:"codon 45"
+;[955..958]:variation-state-original:"TCT"
+;[962..965]:variation-state-altered:"TTT"
+;[972..975]:variation-state-altered:"CCT"
+;[980..992]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[860..863] Two) (NNS:[864..872] adenomas))
+      (PRN (-LRB-:[873..874] -LRB-)
+        (NP (CD:[874..878] 14.3) (NN:[878..879] %))
+        (-RRB-:[879..880] -RRB-))
+      (PP (IN:[881..885] with)
+        (NP (JJ:[886..898] undetectable) (NN:[899..902] APC)
+            (NNS:[903..914] alterations))))
+    (VP (VBD:[915..921] showed)
+      (NP (JJ:[923..931] missense) (NNS:[932..941] mutations))
+      (PP-LOC (IN:[942..944] at)
+        (NP
+           (NN:[945..950] codon) (CD:[951..953] 45)
+          (PRN (-LRB-:[954..955] -LRB-)
+            (NP
+              (NP (NN:[955..958] TCT))
+              (PP
+                (PP (TO:[959..961] to)
+                  (NP (NN:[962..965] TTT)))
+                (CC:[966..968] or)
+                (PP (TO:[969..971] to)
+                  (NP (NN:[972..975] CCT)))))
+            (-RRB-:[975..976] -RRB-))))
+      (PP (IN:[977..979] in)
+        (NP (NN:[980..992] beta-catenin))))
+    (.:[992..993] .)))
+
+;sentence 8 Span:994..1205
+;The MSI  frequency in adenomas with beta-catenin mutations was significantly
+;higher than  that with APCones (P<0.001), indicating that mutations of
+;beta-catenin rather  than APC are strongly associated with MSI.
+;[1016..1024]:malignancy:"adenomas"
+;[1030..1042]:gene-rna:"beta-catenin"
+;[1094..1097]:gene-rna:"APC"
+;[1142..1154]:gene-rna:"beta-catenin"
+;[1168..1171]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[994..997] The) (NN:[998..1001] MSI) (NN:[1003..1012] frequency))
+      (PP-LOC (IN:[1013..1015] in)
+        (NP
+          (NP (NNS:[1016..1024] adenomas))
+          (PP (IN:[1025..1029] with)
+            (NP (NN:[1030..1042] beta-catenin) (NNS:[1043..1052] mutations))))))
+    (VP (VBD:[1053..1056] was)
+      (ADJP-PRD
+        (ADJP (RB:[1057..1070] significantly) (JJR:[1071..1077] higher))
+        (PP (IN:[1078..1082] than)
+          (NP
+            (NP (DT:[1084..1088] that))
+            (PP (IN:[1089..1093] with)
+              (NP (NN:[1094..1097] APC) (NNS:[1097..1101] ones))))))
+      (PRN (-LRB-:[1102..1103] -LRB-)
+        (S
+          (NP-SBJ (NN:[1103..1104] P))
+          (VP (SYM:[1104..1105] <)
+            (NP (CD:[1105..1110] 0.001))))
+        (-RRB-:[1110..1111] -RRB-))
+      (,:[1111..1112] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1112..1112] *))
+        (VP (VBG:[1113..1123] indicating)
+          (SBAR (IN:[1124..1128] that)
+            (S
+              (NP-SBJ
+                (NP (NNS:[1129..1138] mutations))
+                (PP (IN:[1139..1141] of)
+                  (NP
+                    (NP (NN:[1142..1154] beta-catenin))
+                    (PP (IN:[1155..1161] rather)
+                      (PP (IN:[1163..1167] than)
+                        (NP (NN:[1168..1171] APC)))))))
+              (VP (VBP:[1172..1175] are)
+                (ADVP (RB:[1176..1184] strongly))
+                (VP (VBN:[1185..1195] associated)
+                  (PP-CLR (IN:[1196..1200] with)
+                    (NP (NN:[1201..1204] MSI))))))))))
+    (.:[1204..1205] .)))
+
+;sentence 9 Span:1206..1367
+;These data suggest that adenomas with  beta-catenin activating mutations and
+;some with APC inactivating mutations may  be precursors of HNPCC colorectal
+;cancers.
+;[1230..1238]:malignancy:"adenomas"
+;[1245..1257]:gene-rna:"beta-catenin"
+;[1293..1296]:gene-rna:"APC"
+;[1342..1366]:malignancy:"HNPCC colorectal cancers"
+(SENT
+  (S
+    (NP-SBJ (DT:[1206..1211] These) (NNS:[1212..1216] data))
+    (VP (VBP:[1217..1224] suggest)
+      (SBAR (IN:[1225..1229] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (NNS:[1230..1238] adenomas))
+              (PP (IN:[1239..1243] with)
+                (NP (NN:[1245..1257] beta-catenin) (VBG:[1258..1268] activating)
+                    (NNS:[1269..1278] mutations))))
+            (CC:[1279..1282] and)
+            (NP
+              (NP (DT:[1283..1287] some))
+              (PP (IN:[1288..1292] with)
+                (NP (NN:[1293..1296] APC) (VBG:[1297..1309] inactivating)
+                    (NNS:[1310..1319] mutations)))))
+          (VP (MD:[1320..1323] may)
+            (VP (VB:[1325..1327] be)
+              (NP-PRD
+                (NP (NNS:[1328..1338] precursors))
+                (PP (IN:[1339..1341] of)
+                  (NP (NN:[1342..1347] HNPCC) (JJ:[1348..1358] colorectal)
+                      (NNS:[1359..1366] cancers)))))))))
+    (.:[1366..1367] .)))
+
+;section 10 Span:1371..1416
+;PMID: 10936679 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1371..1375] PMID) (::[1375..1376] :) (CD:[1377..1385] 10936679)
+        (IN:[1386..1387] -LSB-) (NNP:[1387..1393] PubMed) (HYPH:[1394..1395] -)
+        (JJ:[1396..1403] indexed) (IN:[1404..1407] for)
+        (NNP:[1408..1416] MEDLINE-RSB-)))

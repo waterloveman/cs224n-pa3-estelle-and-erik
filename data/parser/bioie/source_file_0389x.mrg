@@ -1,0 +1,455 @@
+;PMID: 11461083
+;source_file_669.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..158] = [t:42..158]
+;2)section:[e:162..229] = [t:162..229]
+;3)section:[e:233..340] = [t:233..340]
+;4)sentence:[e:344..522] = [t:344..522]
+;5)sentence:[e:523..768] = [t:523..768]
+;6)sentence:[e:769..970] = [t:769..970]
+;7)sentence:[e:971..1250] = [t:971..1250]
+;8)sentence:[e:1251..1638] = [t:1251..1638]
+;9)section:[e:1639..1885] = [t:1639..1885]
+;10)section:[e:1889..1934] = [t:1889..1934]
+
+;section 0 Span:0..37
+;Br J Cancer  2001 Jul 20;85(2):235-41
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..11] Cancer) (CD:[13..17] 2001)
+        (CC:[18..21] Jul) (CD:[22..24] 20) (CD:[24..28] ;85-LRB-)
+        (CD:[28..29] 2) (-RRB-:[29..30] -RRB-) (CD:[30..34] :235)
+        (IN:[34..35] -) (CD:[35..37] 41)))
+
+;sentence 1 Span:42..158
+;Topographic analysis of K- ras mutations in histologically normal lung
+;tissues  and tumours of lung cancer patients.
+;[66..72]:gene-rna:"K- ras"
+;[126..148]:malignancy:"tumours of lung cancer"
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..53] Topographic) (NN:[54..62] analysis))
+    (PP (IN:[63..65] of)
+      (NP
+        (NP
+          (NML (NN:[66..67] K) (HYPH:[67..68] -) (NN:[69..72] ras))
+          (NNS:[73..82] mutations))
+        (PP-LOC (IN:[83..85] in)
+          (NP
+            (NP
+              (NP
+                (ADJP-1 (RB:[86..100] histologically) (JJ:[101..107] normal))
+                (NML-2 (NN:[108..112] lung))
+                (NNS:[113..120] tissues))
+              (CC:[122..125] and)
+              (NP
+                (ADJP-1 (-NONE-:[125..125] *P*))
+                (NML-2 (-NONE-:[125..125] *P*))
+                (NNS:[126..133] tumours)))
+            (PP (IN:[134..136] of)
+              (NP
+                (NML (NN:[137..141] lung) (NN:[142..148] cancer))
+                (NNS:[149..157] patients)))))))
+    (.:[157..158] .)))
+
+;section 2 Span:162..229
+;Keohavong P, Mady HH, Gao WM, Siegfried JM, Luketich JD, Melhem MF.
+(SEC
+  (FRAG (NNP:[162..171] Keohavong) (NNP:[172..173] P) (,:[173..174] ,)
+        (NNP:[175..179] Mady) (NNP:[180..182] HH) (,:[182..183] ,)
+        (NNP:[184..187] Gao) (NNP:[188..190] WM) (,:[190..191] ,)
+        (NNP:[192..201] Siegfried) (NNP:[202..204] JM) (,:[204..205] ,)
+        (NNP:[206..214] Luketich) (NNP:[215..217] JD) (,:[217..218] ,)
+        (NNP:[219..225] Melhem) (NNP:[226..229] MF.)))
+
+;section 3 Span:233..340
+;Departments of Environmental and Occupational Health, University of
+;Pittsburgh,  Pittsburgh, PA 15213, USA.
+(SEC
+  (FRAG (NN:[233..244] Departments) (IN:[245..247] of)
+        (NNP:[248..261] Environmental) (CC:[262..265] and)
+        (NNP:[266..278] Occupational) (NNP:[279..285] Health) (,:[285..286] ,)
+        (NNP:[287..297] University) (IN:[298..300] of)
+        (NNP:[301..311] Pittsburgh) (,:[311..312] ,) (NNP:[314..324] Pittsburgh)
+        (,:[324..325] ,) (NNP:[326..328] PA) (CD:[329..334] 15213)
+        (,:[334..335] ,) (NNP:[336..339] USA) (.:[339..340] .)))
+
+;sentence 4 Span:344..522
+;Mutations in the K- ras gene are very common in lung tumours and are
+;implicated  in the development of lung cancer, but the timing of their
+;occurrence remains  poorly understood.
+;[361..367]:gene-rna:"K- ras"
+;[392..404]:malignancy:"lung tumours"
+;[447..458]:malignancy:"lung cancer"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (NNS:[344..353] Mutations))
+        (PP (IN:[354..356] in)
+          (NP (DT:[357..360] the)
+            (NML (NN:[361..362] K) (HYPH:[362..363] -) (NN:[364..367] ras))
+            (NN:[368..372] gene))))
+      (VP
+        (VP (VBP:[373..376] are)
+          (ADJP-PRD (RB:[377..381] very) (JJ:[382..388] common))
+          (PP-LOC (IN:[389..391] in)
+            (NP (NN:[392..396] lung) (NNS:[397..404] tumours))))
+        (CC:[405..408] and)
+        (VP (VBP:[409..412] are)
+          (VP (VBN:[413..423] implicated)
+            (NP-1 (-NONE-:[423..423] *))
+            (PP (IN:[425..427] in)
+              (NP
+                (NP (DT:[428..431] the) (NN:[432..443] development))
+                (PP (IN:[444..446] of)
+                  (NP (NN:[447..451] lung) (NN:[452..458] cancer)))))))))
+    (,:[458..459] ,) (CC:[460..463] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[464..467] the) (NN:[468..474] timing))
+        (PP (IN:[475..477] of)
+          (NP (PRP$:[478..483] their) (NN:[484..494] occurrence))))
+      (VP (VBZ:[495..502] remains)
+        (ADJP-PRD (RB:[504..510] poorly) (VBN:[511..521] understood))))
+    (.:[521..522] .)))
+
+;sentence 5 Span:523..768
+;We investigated K- ras mutations in cell samples  microdissected by laser
+;capture microscopy at multiple sites from lung tissue  sections representing
+;tumour tissue and matched histologically normal tissue  obtained from 48 lung
+;cancer patients.
+;[539..545]:gene-rna:"K- ras"
+;[639..643]...[674..687]:malignancy:"lung"..."tumour tissue"
+;[747..758]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[523..525] We))
+    (VP (VBD:[526..538] investigated)
+      (NP
+        (NML (NN:[539..540] K) (HYPH:[540..541] -) (NN:[542..545] ras))
+        (NNS:[546..555] mutations))
+      (PP-LOC (IN:[556..558] in)
+        (NP
+          (NP (NN:[559..563] cell) (NNS:[564..571] samples))
+          (VP (VBN:[573..587] microdissected)
+            (NP (-NONE-:[587..587] *))
+            (PP-MNR (IN:[588..590] by)
+              (NP (NN:[591..596] laser) (NN:[597..604] capture)
+                  (NN:[605..615] microscopy)))
+            (PP-LOC (IN:[616..618] at)
+              (NP
+                (NP (JJ:[619..627] multiple) (NNS:[628..633] sites))
+                (PP (IN:[634..638] from)
+                  (NP
+                    (NP (JJ:[639..643] lung) (NN:[644..650] tissue)
+                        (NNS:[652..660] sections))
+                    (VP (VBG:[661..673] representing)
+                      (NP
+                        (NP (NN:[674..680] tumour) (NN:[681..687] tissue))
+                        (CC:[688..691] and)
+                        (NP
+                          (NP (VBN:[692..699] matched)
+                            (ADJP (RB:[700..714] histologically)
+                                  (JJ:[715..721] normal))
+                            (NN:[722..728] tissue))
+                          (VP (VBN:[730..738] obtained)
+                            (NP (-NONE-:[738..738] *))
+                            (PP (IN:[739..743] from)
+                              (NP (CD:[744..746] 48)
+                                (NML (NN:[747..751] lung) (NN:[752..758] cancer))
+                                (NNS:[759..767] patients)))))))))))))))
+    (.:[767..768] .)))
+
+;sentence 6 Span:769..970
+;K- ras mutations were detected in cell  samples from 10 of 38 (26.3%) lung
+;adenocarcinomas and in none of the  histologically normal or tumour cell
+;samples taken from 10 lung squamous cell  carcinomas.
+;[769..775]:gene-rna:"K- ras"
+;[839..859]:malignancy:"lung adenocarcinomas"
+;[939..969]:malignancy:"lung squamous cell  carcinomas"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NML (NN:[769..770] K) (HYPH:[770..771] -) (NN:[772..775] ras))
+      (NNS:[776..785] mutations))
+    (VP (VBD:[786..790] were)
+      (VP (VBN:[791..799] detected)
+        (NP-2 (-NONE-:[799..799] *))
+        (PP-LOC
+          (PP (IN:[800..802] in)
+            (NP
+              (NP (NN:[803..807] cell) (NNS:[809..816] samples))
+              (PP (IN:[817..821] from)
+                (NP
+                  (NP (CD:[822..824] 10))
+                  (PP (IN:[825..827] of)
+                    (NP (CD:[828..830] 38)
+                      (PRN (-LRB-:[831..832] -LRB-)
+                        (NP (CD:[832..836] 26.3) (NN:[836..837] %))
+                        (-RRB-:[837..838] -RRB-))
+                       (NN:[839..843] lung) (NNS:[844..859] adenocarcinomas)))))))
+          (CC:[860..863] and)
+          (PP (IN:[864..866] in)
+            (NP
+              (NP (NN:[867..871] none))
+              (PP (IN:[872..874] of)
+                (NP
+                  (NP (DT:[875..878] the)
+                    (NML
+                      (NML
+                        (ADJP (RB:[880..894] histologically)
+                              (JJ:[895..901] normal))
+                        (NML-1 (-NONE-:[901..901] *P*)))
+                      (CC:[902..904] or)
+                      (NML (NN:[905..911] tumour)
+                        (NML-1 (NN:[912..916] cell) (NNS:[917..924] samples)))))
+                  (VP (VBN:[925..930] taken)
+                    (NP (-NONE-:[930..930] *))
+                    (PP (IN:[931..935] from)
+                      (NP (CD:[936..938] 10)
+                         (NN:[939..943] lung)
+                        (NML (JJ:[944..952] squamous) (NN:[953..957] cell))
+                        (NNS:[959..969] carcinomas)))))))))))
+    (.:[969..970] .)))
+
+;sentence 7 Span:971..1250
+;Of the K- ras mutation-positive adenocarcinomas, in 4 cases a  mutation was
+;found in only the tumour tissue, in 1 case a mutation was found  only in the
+;histologically normal tissue, and in 5 cases mutations were found in  both
+;the tumour tissue and histologically normal tissue.
+;[978..984]:gene-rna:"K- ras"
+;[1003..1018]:malignancy:"adenocarcinomas"
+;[1065..1078]:malignancy:"tumour tissue"
+;[1203..1216]:malignancy:"tumour tissue"
+(SENT
+  (S
+    (S
+      (PP-TPC-4 (IN:[971..973] Of)
+        (NP (DT:[974..977] the)
+          (NML
+            (NML
+              (NML (NN:[978..979] K) (HYPH:[979..980] -) (NN:[981..984] ras))
+              (NN:[985..993] mutation))
+            (HYPH:[993..994] -) (JJ:[994..1002] positive))
+          (NNS:[1003..1018] adenocarcinomas)))
+      (,:[1018..1019] ,)
+      (PP (IN:[1020..1022] in)
+        (NP
+          (NP (CD:[1023..1024] 4) (NNS:[1025..1030] cases))
+          (PP-4 (-NONE-:[1030..1030] *T*))))
+      (NP-SBJ-3 (DT:[1031..1032] a) (NN:[1034..1042] mutation))
+      (VP (VBD:[1043..1046] was)
+        (VP (VBN:[1047..1052] found)
+          (NP-3 (-NONE-:[1052..1052] *))
+          (PP-LOC (IN:[1053..1055] in)
+            (NP
+              (ADVP (RB:[1056..1060] only))
+              (DT:[1061..1064] the)
+               (NN:[1065..1071] tumour) (NN:[1072..1078] tissue))))))
+    (,:[1078..1079] ,)
+    (S
+      (PP (IN:[1080..1082] in)
+        (NP (CD:[1083..1084] 1) (NN:[1085..1089] case)))
+      (NP-SBJ-2 (DT:[1090..1091] a) (NN:[1092..1100] mutation))
+      (VP (VBD:[1101..1104] was)
+        (VP (VBN:[1105..1110] found)
+          (NP-2 (-NONE-:[1110..1110] *))
+          (PP
+            (ADVP (RB:[1112..1116] only))
+            (IN:[1117..1119] in)
+            (NP (DT:[1120..1123] the)
+              (ADJP (RB:[1124..1138] histologically) (JJ:[1139..1145] normal))
+              (NN:[1146..1152] tissue))))))
+    (,:[1152..1153] ,) (CC:[1154..1157] and)
+    (S
+      (PP (IN:[1158..1160] in)
+        (NP (CD:[1161..1162] 5) (NNS:[1163..1168] cases)))
+      (NP-SBJ-1 (NNS:[1169..1178] mutations))
+      (VP (VBD:[1179..1183] were)
+        (VP (VBN:[1184..1189] found)
+          (NP-1 (-NONE-:[1189..1189] *))
+          (PP-LOC (IN:[1190..1192] in)
+            (NP (CC:[1194..1198] both)
+              (NP (DT:[1199..1202] the)
+                 (NN:[1203..1209] tumour) (NN:[1210..1216] tissue))
+              (CC:[1217..1220] and)
+              (NP
+                (ADJP (RB:[1221..1235] histologically) (JJ:[1236..1242] normal))
+                (NN:[1243..1249] tissue)))))))
+    (.:[1249..1250] .)))
+
+;sentence 8 Span:1251..1638
+;Among these 5 cases, 2  had identical mutations in both the tumour tissue and
+;histologically normal  tissue, 2 had 1 mutation in the tumour tissue and 2
+;mutations in the  histologically normal tissue, 1 of which was identical to
+;the mutation found in  the tumour, and 1 case had 2 codon 12 mutations in
+;tumour tissue and 2  mutations, in codons 9 and 11, in histologically normal
+;tissue.
+;[1311..1324]:malignancy:"tumour tissue"
+;[1384..1397]:malignancy:"tumour tissue"
+;[1404..1413]:variation-event:"mutations"
+;[1484..1492]:variation-event:"mutation"
+;[1507..1513]:malignancy:"tumour"
+;[1532..1540]:variation-location:"codon 12"
+;[1541..1550]:variation-event:"mutations"
+;[1554..1567]:malignancy:"tumour tissue"
+;[1575..1584]:variation-event:"mutations"
+;[1589..1597]:variation-location:"codons 9"
+;[1589..1595]...[1602..1604]:variation-location:"codons"..."11"
+(SENT
+  (S
+    (S
+      (PP-TPC-3 (IN:[1251..1256] Among)
+        (NP (DT:[1257..1262] these) (CD:[1263..1264] 5) (NNS:[1265..1270] cases)))
+      (,:[1270..1271] ,)
+      (NP-SBJ
+        (NP (CD:[1272..1273] 2))
+        (PP-3 (-NONE-:[1273..1273] *T*)))
+      (VP (VBD:[1275..1278] had)
+        (NP
+          (NP (JJ:[1279..1288] identical) (NNS:[1289..1298] mutations))
+          (PP (IN:[1299..1301] in)
+            (NP (CC:[1302..1306] both)
+              (NP (DT:[1307..1310] the)
+                 (NN:[1311..1317] tumour) (NN:[1318..1324] tissue))
+              (CC:[1325..1328] and)
+              (NP
+                (NML (RB:[1329..1343] histologically) (JJ:[1344..1350] normal))
+                (NN:[1352..1358] tissue)))))))
+    (,:[1358..1359] ,)
+    (S
+      (NP-SBJ (CD:[1360..1361] 2))
+      (VP (VBD:[1362..1365] had)
+        (NP
+          (NP
+            (NP (CD:[1366..1367] 1) (NN:[1368..1376] mutation))
+            (PP-LOC (IN:[1377..1379] in)
+              (NP (DT:[1380..1383] the)
+                 (NN:[1384..1390] tumour) (NN:[1391..1397] tissue))))
+          (CC:[1398..1401] and)
+          (NP
+            (NP
+              (NP (CD:[1402..1403] 2) (NNS:[1404..1413] mutations))
+              (PP-LOC (IN:[1414..1416] in)
+                (NP (DT:[1417..1420] the)
+                  (ADJP (RB:[1422..1436] histologically)
+                        (JJ:[1437..1443] normal))
+                  (NN:[1444..1450] tissue))))
+            (,:[1450..1451] ,)
+            (SBAR
+              (WHNP-2
+                (NP (CD:[1452..1453] 1))
+                (WHPP (IN:[1454..1456] of)
+                  (WHNP (WDT:[1457..1462] which))))
+              (S
+                (NP-SBJ-2 (-NONE-:[1462..1462] *T*))
+                (VP (VBD:[1463..1466] was)
+                  (VP (JJ:[1467..1476] identical)
+                    (PP-CLR (TO:[1477..1479] to)
+                      (NP
+                        (NP (DT:[1480..1483] the) (NN:[1484..1492] mutation))
+                        (VP (VBN:[1493..1498] found)
+                          (NP (-NONE-:[1498..1498] *))
+                          (PP-LOC (IN:[1499..1501] in)
+                            (NP (DT:[1503..1506] the) (NN:[1507..1513] tumour))))))))))))))
+    (,:[1513..1514] ,) (CC:[1515..1518] and)
+    (S
+      (NP-SBJ (CD:[1519..1520] 1) (NN:[1521..1525] case))
+      (VP (VBD:[1526..1529] had)
+        (NP
+          (NP
+            (NP (CD:[1530..1531] 2)
+              (NML (NN:[1532..1537] codon) (CD:[1538..1540] 12))
+              (NNS:[1541..1550] mutations))
+            (PP (IN:[1551..1553] in)
+              (NP (NN:[1554..1560] tumour) (NN:[1561..1567] tissue))))
+          (CC:[1568..1571] and)
+          (NP
+            (NP (CD:[1572..1573] 2) (NNS:[1575..1584] mutations))
+            (,:[1584..1585] ,)
+            (PP-LOC (IN:[1586..1588] in)
+              (NP
+                (NP
+                  (NML-1 (NNS:[1589..1595] codons))
+                  (CD:[1596..1597] 9))
+                (CC:[1598..1601] and)
+                (NP
+                  (NML-1 (-NONE-:[1601..1601] *P*))
+                  (CD:[1602..1604] 11))))
+            (,:[1604..1605] ,)
+            (PP-LOC (IN:[1606..1608] in)
+              (NP
+                (NML (RB:[1609..1623] histologically) (JJ:[1624..1630] normal))
+                (NN:[1631..1637] tissue)))))))
+    (.:[1637..1638] .)))
+
+;section 9 Span:1639..1885
+;These results  showed that K- ras mutations are frequent in histologically
+;normal cells taken  from outside lung adenocarcinomas and suggest that some
+;of these mutations may  represent early events which could pave the way of
+;lung carcinogenesis.
+;[1666..1672]:gene-rna:"K- ras"
+;[1747..1767]:malignancy:"lung adenocarcinomas"
+(SEC
+  (S
+    (NP-SBJ (DT:[1639..1644] These) (NNS:[1645..1652] results))
+    (VP
+      (VP (VBD:[1654..1660] showed)
+        (SBAR (IN:[1661..1665] that)
+          (S
+            (NP-SBJ
+              (NML (NN:[1666..1667] K) (HYPH:[1667..1668] -)
+                   (NN:[1669..1672] ras))
+              (NNS:[1673..1682] mutations))
+            (VP (VBP:[1683..1686] are)
+              (ADJP-PRD (JJ:[1687..1695] frequent))
+              (PP (IN:[1696..1698] in)
+                (NP
+                  (NP
+                    (ADJP (RB:[1699..1713] histologically)
+                          (JJ:[1714..1720] normal))
+                    (NNS:[1721..1726] cells))
+                  (VP (VBN:[1727..1732] taken)
+                    (NP (-NONE-:[1732..1732] *))
+                    (PP (IN:[1734..1738] from)
+                      (NP
+                        (ADVP (RB:[1739..1746] outside))
+                         (NN:[1747..1751] lung)
+                         (NNS:[1752..1767] adenocarcinomas))))))))))
+      (CC:[1768..1771] and)
+      (VP (VBP:[1772..1779] suggest)
+        (SBAR (IN:[1780..1784] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1785..1789] some))
+              (PP (IN:[1790..1792] of)
+                (NP (DT:[1793..1798] these) (NNS:[1799..1808] mutations))))
+            (VP (MD:[1809..1812] may)
+              (VP (VB:[1814..1823] represent)
+                (NP
+                  (NP (JJ:[1824..1829] early) (NNS:[1830..1836] events))
+                  (SBAR
+                    (WHNP-1 (WDT:[1837..1842] which))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1842..1842] *T*))
+                      (VP (MD:[1843..1848] could)
+                        (VP (VB:[1849..1853] pave)
+                          (NP
+                            (NP (DT:[1854..1857] the) (NN:[1858..1861] way))
+                            (PP (IN:[1862..1864] of)
+                              (NP (NN:[1865..1869] lung)
+                                  (NN:[1870..1884] carcinogenesis)))))))))))))))
+    (.:[1884..1885] .)))
+;ERROR_Entity in section[1666..1672]:gene-rna "K- ras"
+;ERROR_Entity in section[1747..1767]:malignancy "lung adenocarcinomas"
+
+;section 10 Span:1889..1934
+;PMID: 11461083 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1889..1893] PMID) (::[1893..1894] :) (CD:[1895..1903] 11461083)
+        (-LRB-:[1904..1905] -LSB-) (NNP:[1905..1911] PubMed)
+        (HYPH:[1912..1913] -) (JJ:[1914..1921] indexed) (IN:[1922..1925] for)
+        (NNP:[1926..1933] MEDLINE) (-RRB-:[1933..1934] -RSB-)))

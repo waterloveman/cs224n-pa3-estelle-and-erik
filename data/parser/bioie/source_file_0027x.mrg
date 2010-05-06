@@ -1,0 +1,340 @@
+;PMID: 11464860
+;source_file_2928.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..123] = [t:47..123]
+;2)section:[e:127..176] = [t:127..176]
+;3)section:[e:180..274] = [t:180..274]
+;4)sentence:[e:278..587] = [t:278..587]
+;5)sentence:[e:588..822] = [t:588..822]
+;6)sentence:[e:823..1007] = [t:823..1007]
+;7)sentence:[e:1008..1083] = [t:1008..1083]
+;8)sentence:[e:1084..1235] = [t:1084..1235]
+;9)sentence:[e:1236..1432] = [t:1236..1432]
+;10)section:[e:1436..1481] = [t:1436..1481]
+
+;section 0 Span:0..41
+;Med Pediatr Oncol.  2001 Jan;36(1):111-4.
+(SEC
+  (FRAG (NNP:[0..3] Med) (NNP:[4..11] Pediatr) (NNP:[12..17] Oncol)
+        (.:[17..18] .) (CD:[20..24] 2001) (NNP:[25..28] Jan) (::[28..29] ;)
+        (CD:[29..31] 36) (-LRB-:[31..32] -LRB-) (CD:[32..33] 1)
+        (-RRB-:[33..34] -RRB-) (::[34..35] :) (CD:[35..40] 111-4) (.:[40..41] .)))
+
+;sentence 1 Span:47..123
+;Expression of Fas (APO-1/CD95) and Fas ligand (FasL) in human neuroblastoma.
+;[61..64]:gene-protein:"Fas"
+;[66..71]:gene-generic:"APO-1"
+;[72..76]:gene-generic:"CD95"
+;[82..92]:gene-protein:"Fas ligand"
+;[94..98]:gene-protein:"FasL"
+;[109..122]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[47..57] Expression))
+    (PP (IN:[58..60] of)
+      (NP
+        (NP
+          (NML (NN:[61..64] Fas))
+          (PRN (-LRB-:[65..66] -LRB-)
+            (NP (NN:[66..71] APO-1) (SYM:[71..72] /) (NN:[72..76] CD95))
+            (-RRB-:[76..77] -RRB-)))
+        (CC:[78..81] and)
+        (NP
+          (NP (NN:[82..85] Fas) (NN:[86..92] ligand))
+          (NP (-LRB-:[93..94] -LRB-) (NN:[94..98] FasL) (-RRB-:[98..99] -RRB-)))))
+    (PP-LOC (IN:[100..102] in)
+      (NP (JJ:[103..108] human) (NN:[109..122] neuroblastoma)))
+    (.:[122..123] .)))
+
+;section 2 Span:127..176
+;Gross N, Balmas K, Beretta Brognara C, Tschopp J.
+(SEC
+  (FRAG (NNP:[127..132] Gross) (NNP:[133..134] N) (,:[134..135] ,)
+        (NNP:[136..142] Balmas) (NNP:[143..144] K) (,:[144..145] ,)
+        (NNP:[146..153] Beretta) (NNP:[154..162] Brognara) (NNP:[163..164] C)
+        (,:[164..165] ,) (NNP:[166..173] Tschopp) (NNP:[174..175] J)
+        (.:[175..176] .)))
+
+;section 3 Span:180..274
+;Onco-hematology Unit, University Hospital, Lausanne, Switzerland. 
+;Nicole.Gross@chuv.hospvd.ch
+(SEC
+  (FRAG (NNP:[180..195] Onco-hematology) (NNP:[196..200] Unit) (,:[200..201] ,)
+        (NNP:[202..212] University) (NNP:[213..221] Hospital) (,:[221..222] ,)
+        (NNP:[223..231] Lausanne) (,:[231..232] ,) (NNP:[233..244] Switzerland)
+        (.:[244..245] .) (NNP:[247..274] Nicole.Gross@chuv.hospvd.ch)))
+
+;sentence 4 Span:278..587
+;BACKGROUND AND PROCEDURE: To determine the possible role of Fas/FasL system
+;in  the particularly heterogeneous behaviour of neuroblastoma (NB), we have
+;measured  the functional expression of Fas and its ligand, FasL, in primary
+;neuroblastoma  samples and cell lines by immunohistochemistry and flow
+;cytometry.
+;[338..341]:gene-protein:"Fas"
+;[342..346]:gene-protein:"FasL"
+;[402..415]:malignancy-type:"neuroblastoma"
+;[417..419]:malignancy-type:"NB"
+;[469..472]:gene-protein:"Fas"
+;[489..493]:gene-protein:"FasL"
+;[498..505]:malignancy-clinical-stage:"primary"
+;[506..519]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP (NN:[278..288] BACKGROUND) (CC:[289..292] AND) (NN:[293..302] PROCEDURE)
+      (::[302..303] :))
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[303..303] *))
+      (VP (TO:[304..306] To)
+        (VP (VB:[307..316] determine)
+          (NP
+            (NP (DT:[317..320] the) (JJ:[321..329] possible)
+                (NN:[330..334] role))
+            (PP (IN:[335..337] of)
+              (NP
+                (NML (NN:[338..341] Fas) (SYM:[341..342] /) (NN:[342..346] FasL))
+                (NN:[347..353] system)))
+            (PP (IN:[354..356] in)
+              (NP
+                (NP (DT:[358..361] the)
+                  (ADJP (RB:[362..374] particularly)
+                        (JJ:[375..388] heterogeneous))
+                  (NN:[389..398] behaviour))
+                (PP (IN:[399..401] of)
+                  (NP (NN:[402..415] neuroblastoma)
+                    (PRN (-LRB-:[416..417] -LRB-)
+                      (NP (NN:[417..419] NB))
+                      (-RRB-:[419..420] -RRB-))))))))))
+    (,:[420..421] ,)
+    (NP-SBJ (PRP:[422..424] we))
+    (VP (VBP:[425..429] have)
+      (VP (VBN:[430..438] measured)
+        (NP
+          (NP (DT:[440..443] the) (JJ:[444..454] functional)
+              (NN:[455..465] expression))
+          (PP (IN:[466..468] of)
+            (NP
+              (NP (NN:[469..472] Fas))
+              (CC:[473..476] and)
+              (NP
+                (NP (PRP$:[477..480] its) (NN:[481..487] ligand))
+                (,:[487..488] ,)
+                (NP (NN:[489..493] FasL))))))
+        (,:[493..494] ,)
+        (PP (IN:[495..497] in)
+          (NP
+            (NP (JJ:[498..505] primary) (NN:[506..519] neuroblastoma)
+                (NNS:[521..528] samples))
+            (CC:[529..532] and)
+            (NP (NN:[533..537] cell) (NNS:[538..543] lines))))
+        (PP-MNR (IN:[544..546] by)
+          (NP
+            (NP (NN:[547..567] immunohistochemistry))
+            (CC:[568..571] and)
+            (NP (NN:[572..576] flow) (NN:[577..586] cytometry))))))
+    (.:[586..587] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[278..587]::NP:S:
+
+;sentence 5 Span:588..822
+;RESULTS: Our  results reveal that while Fas expression is associated with low
+;stage and more  mature tumors, heterogeneous FasL expression was mostly
+;detected in high stage  tumors, with our apparent correlation to MYCN
+;amplification.
+;[628..631]:gene-protein:"Fas"
+;[662..671]:malignancy-clinical-stage:"low stage"
+;[682..688]:malignancy-clinical-stage:"mature"
+;[711..715]:gene-protein:"FasL"
+;[750..760]:malignancy-clinical-stage:"high stage"
+;[803..807]:gene-rna:"MYCN"
+;[808..821]:variation-type:"amplification"
+(SENT
+  (NP (NNS:[588..595] RESULTS) (::[595..596] :))
+  (S
+    (NP-SBJ (PRP$:[597..600] Our) (NNS:[602..609] results))
+    (VP (VBP:[610..616] reveal)
+      (SBAR (IN:[617..621] that)
+        (S
+          (SBAR-ADV (IN:[622..627] while)
+            (S
+              (NP-SBJ-1 (NN:[628..631] Fas) (NN:[632..642] expression))
+              (VP (VBZ:[643..645] is)
+                (VP (VBN:[646..656] associated)
+                  (NP-1 (-NONE-:[656..656] *))
+                  (PP-CLR (IN:[657..661] with)
+                    (NP
+                      (NP
+                        (NML (JJ:[662..665] low) (NN:[666..671] stage))
+                        (NML-2 (-NONE-:[671..671] *P*)))
+                      (CC:[672..675] and)
+                      (NP
+                        (ADJP (RBR:[676..680] more) (JJ:[682..688] mature))
+                        (NML-2 (NNS:[689..695] tumors)))))))))
+          (,:[695..696] ,)
+          (NP-SBJ-3 (JJ:[697..710] heterogeneous) (NN:[711..715] FasL)
+                    (NN:[716..726] expression))
+          (VP (VBD:[727..730] was)
+            (ADVP (RB:[731..737] mostly))
+            (VP (VBN:[738..746] detected)
+              (NP-3 (-NONE-:[746..746] *))
+              (PP (IN:[747..749] in)
+                (NP
+                  (NML (JJ:[750..754] high) (NN:[755..760] stage))
+                  (NNS:[762..768] tumors)))
+              (,:[768..769] ,)
+              (PP (IN:[770..774] with)
+                (NP
+                  (NP (PRP$:[775..778] our) (JJ:[779..787] apparent)
+                      (NN:[788..799] correlation))
+                  (PP (TO:[800..802] to)
+                    (NP (NN:[803..807] MYCN) (NN:[808..821] amplification))))))))))
+    (.:[821..822] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[588..822]::NP:S:
+
+;sentence 6 Span:823..1007
+;Flow cytometric  analysis of cell lines demonstrated a high expression of Fas
+;in epithelial-type,  HLA class I positive cell lines, which was lost upon
+;activation with phorbol  esters.
+;[897..900]:gene-protein:"Fas"
+;[922..933]:gene-protein:"HLA class I"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[823..827] Flow) (JJ:[828..838] cytometric)
+          (NN:[840..848] analysis))
+      (PP (IN:[849..851] of)
+        (NP (NN:[852..856] cell) (NNS:[857..862] lines))))
+    (VP (VBD:[863..875] demonstrated)
+      (NP
+        (NP (DT:[876..877] a) (JJ:[878..882] high) (NN:[883..893] expression))
+        (PP (IN:[894..896] of)
+          (NP (NN:[897..900] Fas))))
+      (PP (IN:[901..903] in)
+        (NP
+          (NP
+            (NML (JJ:[904..914] epithelial) (HYPH:[914..915] -)
+                 (NN:[915..919] type))
+            (,:[919..920] ,)
+            (ADJP
+              (NML (NN:[922..925] HLA) (NN:[926..931] class) (CD:[932..933] I))
+              (JJ:[934..942] positive))
+            (NN:[943..947] cell) (NNS:[948..953] lines))
+          (,:[953..954] ,)
+          (SBAR
+            (WHNP-1 (WDT:[955..960] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[960..960] *T*))
+              (VP (VBD:[961..964] was)
+                (VP (VBN:[965..969] lost)
+                  (NP-1 (-NONE-:[969..969] *))
+                  (PP (IN:[970..974] upon)
+                    (NP
+                      (NP (NN:[975..985] activation))
+                      (PP (IN:[986..990] with)
+                        (NP (NN:[991..998] phorbol) (NNS:[1000..1006] esters))))))))))))
+    (.:[1006..1007] .)))
+
+;sentence 7 Span:1008..1083
+;In contrast, Fas ligand was detected in only a small subset of cell  lines.
+;[1021..1031]:gene-protein:"Fas ligand"
+(SENT
+  (S
+    (PP (IN:[1008..1010] In)
+      (NP (NN:[1011..1019] contrast)))
+    (,:[1019..1020] ,)
+    (NP-SBJ-1 (NN:[1021..1024] Fas) (NN:[1025..1031] ligand))
+    (VP (VBD:[1032..1035] was)
+      (VP (VBN:[1036..1044] detected)
+        (NP-1 (-NONE-:[1044..1044] *))
+        (PP (IN:[1045..1047] in)
+          (NP
+            (NP (RB:[1048..1052] only) (DT:[1053..1054] a)
+                (JJ:[1055..1060] small) (NN:[1061..1067] subset))
+            (PP (IN:[1068..1070] of)
+              (NP (NN:[1071..1075] cell) (NNS:[1077..1082] lines)))))))
+    (.:[1082..1083] .)))
+
+;sentence 8 Span:1084..1235
+;CONCLUSIONS: In some cell lines, cytotoxic assays revealed the ability of 
+;NB-associated Fas receptor to transduce an apoptotic signal upon triggering.
+;[1159..1161]:malignancy-type:"NB"
+;[1173..1185]:gene-protein:"Fas receptor"
+(SENT
+  (NP (NNS:[1084..1095] CONCLUSIONS) (::[1095..1096] :))
+  (S
+    (PP (IN:[1097..1099] In)
+      (NP (DT:[1100..1104] some) (NN:[1105..1109] cell) (NNS:[1110..1115] lines)))
+    (,:[1115..1116] ,)
+    (NP-SBJ (JJ:[1117..1126] cytotoxic) (NNS:[1127..1133] assays))
+    (VP (VBD:[1134..1142] revealed)
+      (NP
+        (NP (DT:[1143..1146] the) (NN:[1147..1154] ability)
+          (S-1 (-NONE-:[1154..1154] *ICH*)))
+        (PP (IN:[1155..1157] of)
+          (NP
+            (ADJP (NN:[1159..1161] NB) (HYPH:[1161..1162] -)
+                  (VBN:[1162..1172] associated))
+             (NN:[1173..1176] Fas) (NN:[1177..1185] receptor)))
+        (S-1
+          (NP-SBJ (-NONE-:[1185..1185] *))
+          (VP (TO:[1186..1188] to)
+            (VP (VB:[1189..1198] transduce)
+              (NP (DT:[1199..1201] an) (JJ:[1202..1211] apoptotic)
+                  (NN:[1212..1218] signal))
+              (PP (IN:[1219..1223] upon)
+                (NP (NN:[1224..1234] triggering))))))))
+    (.:[1234..1235] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1084..1235]::NP:S:
+
+;sentence 9 Span:1236..1432
+;The  pattern of functional Fas/FasL expression in tumours and cell lines
+;suggests  that this system may be involved in the evasion of highly malignant
+; neuroblastoma cells to host immune response.
+;[1263..1266]:gene-protein:"Fas"
+;[1267..1271]:gene-protein:"FasL"
+;[1370..1386]:malignancy-clinical-stage:"highly malignant"
+;[1388..1401]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1236..1239] The) (NN:[1241..1248] pattern))
+      (PP (IN:[1249..1251] of)
+        (NP (JJ:[1252..1262] functional)
+          (NML (NN:[1263..1266] Fas) (SYM:[1266..1267] /) (NN:[1267..1271] FasL))
+          (NN:[1272..1282] expression)))
+      (PP (IN:[1283..1285] in)
+        (NP
+          (NP (NNS:[1286..1293] tumours))
+          (CC:[1294..1297] and)
+          (NP (NN:[1298..1302] cell) (NNS:[1303..1308] lines)))))
+    (VP (VBZ:[1309..1317] suggests)
+      (SBAR (IN:[1319..1323] that)
+        (S
+          (NP-SBJ-1 (DT:[1324..1328] this) (NN:[1329..1335] system))
+          (VP (MD:[1336..1339] may)
+            (VP (VB:[1340..1342] be)
+              (VP (VBN:[1343..1351] involved)
+                (NP-1 (-NONE-:[1351..1351] *))
+                (PP-CLR (IN:[1352..1354] in)
+                  (NP
+                    (NP (DT:[1355..1358] the) (NN:[1359..1366] evasion))
+                    (PP (IN:[1367..1369] of)
+                      (NP
+                        (ADJP (RB:[1370..1376] highly)
+                              (JJ:[1377..1386] malignant))
+                        (NN:[1388..1401] neuroblastoma) (NNS:[1402..1407] cells)))))
+                (S-ADV
+                  (NP-SBJ (-NONE-:[1407..1407] *))
+                  (VP (TO:[1408..1410] to)
+                    (VP (VB:[1411..1415] host)
+                      (NP (JJ:[1416..1422] immune) (NN:[1423..1431] response)))))))))))
+    (.:[1431..1432] .)))
+
+;section 10 Span:1436..1481
+;PMID: 11464860 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1436..1440] PMID) (::[1440..1441] :) (CD:[1442..1450] 11464860)
+        (NN:[1451..1452] -LSB-) (NNP:[1452..1458] PubMed) (::[1459..1460] -)
+        (NN:[1461..1468] indexed) (IN:[1469..1472] for)
+        (NNP:[1473..1480] MEDLINE) (-RRB-:[1480..1481] -RSB-)))

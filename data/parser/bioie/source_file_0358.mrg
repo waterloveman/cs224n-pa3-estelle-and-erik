@@ -1,0 +1,760 @@
+;PMID: 9143352
+;source_file_902.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..124] = [t:52..124]
+;2)section:[e:128..160] = [t:128..159]
+;3)section:[e:164..288] = [t:164..288]
+;4)sentence:[e:292..470] = [t:292..470]
+;5)sentence:[e:471..649] = [t:471..649]
+;6)sentence:[e:650..768] = [t:650..768]
+;7)sentence:[e:770..1043] = [t:770..1043]
+;8)sentence:[e:1044..1624] = [t:1044..1624]
+;9)sentence:[e:1625..1790] = [t:1625..1790]
+;10)sentence:[e:1791..2088] = [t:1791..2088]
+;11)sentence:[e:2090..2240] = [t:2090..2240]
+;12)sentence:[e:2241..2454] = [t:2241..2454]
+;13)sentence:[e:2455..2632] = [t:2455..2632]
+;14)sentence:[e:2633..2722] = [t:2633..2722]
+;15)sentence:[e:2723..2921] = [t:2723..2921]
+;16)sentence:[e:2922..3050] = [t:2922..3050]
+;17)section:[e:3054..3098] = [t:3054..3097]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:128..160][t:128..159]
+;ERROR_Section end mismatch[e:3054..3098][t:3054..3097]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[38..39] )
+;ERROR_Token in entity file but not tree[39..40] :
+;ERROR_Token in entity file but not tree[159..160] .
+;ERROR_Token in entity file but not tree[3097..3098] ]
+;ERROR_Token in tree file but not entity[38..40] ):
+
+;section 0 Span:0..46
+;Arch Biochem Biophys. 1997 May 1;341(1):47-61.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 1997) (NNP:[27..30] May) (CD:[31..32] 1)
+        (::[32..33] ;) (CD:[33..36] 341) (-LRB-:[36..37] -LRB-) (CD:[37..38] 1)
+        (-RRB-:[38..40] -RRB-:) (CD:[40..42] 47) (::[42..43] -) (CD:[43..45] 61)
+        (.:[45..46] .)))
+
+;sentence 1 Span:52..124
+;Inhibition of coumarin 7-hydroxylase activity in human liver microsomes.
+;[66..88]:cyp450:"coumarin 7-hydroxylase"
+(SENT
+  (NP-HLN
+    (NP (NN:[52..62] Inhibition))
+    (PP (IN:[63..65] of)
+      (NP
+         (NN:[66..74] coumarin) (NN:[75..88] 7-hydroxylase)
+        (NN:[89..97] activity)))
+    (PP-LOC (IN:[98..100] in)
+      (NP (JJ:[101..106] human) (NN:[107..112] liver)
+          (NNS:[113..123] microsomes)))
+    (.:[123..124] .)))
+
+;section 2 Span:128..159
+;Draper AJ, Madan A, Parkinson A
+(SEC
+  (FRAG (NNP:[128..134] Draper) (NNP:[135..137] AJ) (,:[137..138] ,)
+        (NNP:[139..144] Madan) (NNP:[145..146] A) (,:[146..147] ,)
+        (NNP:[148..157] Parkinson) (NN:[158..159] A)))
+
+(ORPH .)
+
+;section 3 Span:164..288
+;Department of Pharmacology, Toxicology, and Therapeutics, University of
+;Kansas  Medical Center, Kansas City 66160-7417, USA.
+(SEC
+  (FRAG (NNP:[164..174] Department) (IN:[175..177] of)
+        (NNP:[178..190] Pharmacology) (,:[190..191] ,)
+        (NNP:[192..202] Toxicology) (,:[202..203] ,) (CC:[204..207] and)
+        (NNP:[208..220] Therapeutics) (,:[220..221] ,)
+        (NNP:[222..232] University) (IN:[233..235] of) (NNP:[236..242] Kansas)
+        (NNP:[244..251] Medical) (NNP:[252..258] Center) (,:[258..259] ,)
+        (NNP:[260..266] Kansas) (NNP:[267..271] City) (CD:[272..277] 66160)
+        (::[277..278] -) (CD:[278..282] 7417) (,:[282..283] ,)
+        (NNP:[284..287] USA) (.:[287..288] .)))
+;ERROR_Orphan Text from Tree File[159..164] .
+
+;sentence 4 Span:292..470
+;Nine organic solvents and 47 commonly used P450 substrates and inhibitors
+;were  examined for their effects on coumarin 7-hydroxylase (CYP2A6) activity
+;in human  liver microsomes.
+;[297..313]:substance:"organic solvents"
+;[335..339]:cyp450:"P450"
+;[340..350]:substance:"substrates"
+;[355..365]:substance:"inhibitors"
+;[402..424]:cyp450:"coumarin 7-hydroxylase"
+;[426..432]:cyp450:"CYP2A6"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (CD:[292..296] Nine)
+         (JJ:[297..304] organic) (NNS:[305..313] solvents))
+      (CC:[314..317] and)
+      (NP (CD:[318..320] 47)
+        (NML
+          (NP
+            (ADJP-1 (RB:[321..329] commonly) (VBN:[330..334] used))
+            (NML-2 (NN:[335..339] P450))
+            (NNS:[340..350] substrates))
+          (CC:[351..354] and)
+          (NP
+            (ADJP-1 (-NONE-:[354..354] *P*))
+            (NML-2 (-NONE-:[354..354] *P*))
+            (NNS:[355..365] inhibitors)))))
+    (VP (VBD:[366..370] were)
+      (VP (VBN:[372..380] examined)
+        (NP-3 (-NONE-:[380..380] *))
+        (PP (IN:[381..384] for)
+          (NP
+            (NP (PRP$:[385..390] their) (NNS:[391..398] effects))
+            (PP (IN:[399..401] on)
+              (NP
+                (NML
+                  (NML (NN:[402..410] coumarin) (NN:[411..424] 7-hydroxylase))
+                  (NML (-LRB-:[425..426] -LRB-) (NN:[426..432] CYP2A6)
+                       (-RRB-:[432..433] -RRB-)))
+                (NN:[434..442] activity)))
+            (PP-LOC (IN:[443..445] in)
+              (NP (JJ:[446..451] human) (NN:[453..458] liver)
+                  (NNS:[459..469] microsomes)))))))
+    (.:[469..470] .)))
+
+;sentence 5 Span:471..649
+;Of the nine organic solvents examined (final concentration 1%,  v/v), only
+;methanol did not inhibit the 7-hydroxylation of coumarin (0.5 to 50  microM)
+;by human liver microsomes.
+;[483..499]:substance:"organic solvents"
+;[530..532]:quantitative-value:"1%"
+;[535..538]:quantitative-units:"v/v"
+;[546..554]:substance:"methanol"
+;[594..602]:substance:"coumarin"
+;[604..613]:quantitative-value:"0.5 to 50"
+;[615..621]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[471..473] Of)
+      (NP
+        (NP (DT:[474..477] the) (CD:[478..482] nine)
+           (JJ:[483..490] organic) (NNS:[491..499] solvents))
+        (VP (VBN:[500..508] examined)
+          (NP (-NONE-:[508..508] *)))
+        (PRN (-LRB-:[509..510] -LRB-)
+          (FRAG
+            (S
+              (NP-SBJ (JJ:[510..515] final) (NN:[516..529] concentration))
+              (NP-PRD (CD:[530..531] 1) (NN:[531..532] %)))
+            (,:[532..533] ,)
+            (NP
+              (NP (NN:[535..536] v))
+              (PP (SYM:[536..537] /)
+                (NP (NN:[537..538] v)))))
+          (-RRB-:[538..539] -RRB-))))
+    (,:[539..540] ,)
+    (NP-SBJ
+      (NP (RB:[541..545] only) (NN:[546..554] methanol))
+      (PP-1 (-NONE-:[554..554] *T*)))
+    (VP (VBD:[555..558] did) (RB:[559..562] not)
+      (VP (VB:[563..570] inhibit)
+        (NP
+          (NP (DT:[571..574] the) (CD:[575..576] 7) (HYPH:[576..577] -)
+              (NN:[577..590] hydroxylation))
+          (PP (IN:[591..593] of)
+            (NP (NN:[594..602] coumarin)))
+          (PRN (-LRB-:[603..604] -LRB-)
+            (NP
+              (QP (CD:[604..607] 0.5) (TO:[608..610] to) (CD:[611..613] 50))
+              (NN:[615..621] microM))
+            (-RRB-:[621..622] -RRB-))
+          (PP (IN:[623..625] by)
+            (NP (JJ:[626..631] human) (NN:[632..637] liver)
+                (NNS:[638..648] microsomes))))))
+    (.:[648..649] .)))
+
+;sentence 6 Span:650..768
+;Dioxane and tetra-hydrofuran, which are  structurally related to coumarin,
+;were the most inhibitory solvents examined.
+;[650..657]:substance:"Dioxane"
+;[662..678]:substance:"tetra-hydrofuran"
+;[715..723]:substance:"coumarin"
+;[750..758]:substance:"solvents"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[650..657] Dioxane) (CC:[658..661] and)
+          (NN:[662..678] tetra-hydrofuran))
+      (,:[678..679] ,)
+      (SBAR
+        (WHNP-1 (WDT:[680..685] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[685..685] *T*))
+          (VP (VBP:[686..689] are)
+            (ADVP (RB:[691..703] structurally))
+            (VP (JJ:[704..711] related)
+              (NP-1 (-NONE-:[711..711] *))
+              (PP-CLR (TO:[712..714] to)
+                (NP (NN:[715..723] coumarin))))))))
+    (,:[723..724] ,)
+    (VP (VBD:[725..729] were)
+      (NP-PRD
+        (NP (DT:[730..733] the)
+          (ADJP (RBS:[734..738] most) (JJ:[739..749] inhibitory))
+          (NNS:[750..758] solvents))
+        (VP (VBN:[759..767] examined)
+          (NP (-NONE-:[767..767] *)))))
+    (.:[767..768] .)))
+
+;sentence 7 Span:770..1043
+;Although the rates of coumarin 7-hydroxylation varied enormously among nine 
+;samples of human liver microsomes and cDNA-expressed CYP2A6 (Vmax = 179 to
+;2470  pmol/ mg protein/min), the Km for coumarin 7-hydroxylation was fairly
+;constant  (ranging from 0.50 to 0.70 microM).
+;[792..800]:substance:"coumarin"
+;[885..889]:substance:"cDNA"
+;[900..906]:cyp450:"CYP2A6"
+;[908..912]:quantitative-name:"Vmax"
+;[915..926]:quantitative-value:"179 to 2470"
+;[928..948]:quantitative-units:"pmol/ mg protein/min"
+;[955..957]:quantitative-name:"Km"
+;[962..970]:substance:"coumarin"
+;[1022..1034]:quantitative-value:"0.50 to 0.70"
+;[1035..1041]:quantitative-units:"microM"
+(SENT
+  (S
+    (SBAR-ADV (IN:[770..778] Although)
+      (S
+        (NP-SBJ
+          (NP (DT:[779..782] the) (NNS:[783..788] rates))
+          (PP (IN:[789..791] of)
+            (NP
+              (NML (NN:[792..800] coumarin) (CD:[801..802] 7))
+              (HYPH:[802..803] -) (NN:[803..816] hydroxylation))))
+        (VP (VBD:[817..823] varied)
+          (ADVP (RB:[824..834] enormously))
+          (PP (IN:[835..840] among)
+            (NP
+              (NP (CD:[841..845] nine) (NNS:[847..854] samples))
+              (PP (IN:[855..857] of)
+                (NP
+                  (NP (JJ:[858..863] human) (NN:[864..869] liver)
+                      (NNS:[870..880] microsomes))
+                  (CC:[881..884] and)
+                  (NP
+                    (ADJP (NN:[885..889] cDNA) (HYPH:[889..890] -)
+                          (VBN:[890..899] expressed))
+                    (NN:[900..906] CYP2A6))))))
+          (PRN (-LRB-:[907..908] -LRB-)
+            (S
+              (NP-SBJ (NN:[908..912] Vmax))
+              (VP (SYM:[913..914] =)
+                (NP
+                  (NP
+                    (QP (CD:[915..918] 179) (TO:[919..921] to)
+                        (CD:[922..926] 2470))
+                    (NN:[928..932] pmol))
+                  (PP (SYM:[932..933] /)
+                    (NP (NN:[934..936] mg) (NN:[937..944] protein)))
+                  (PP (SYM:[944..945] /)
+                    (NP (NN:[945..948] min))))))
+            (-RRB-:[948..949] -RRB-)))))
+    (,:[949..950] ,)
+    (NP-SBJ
+      (NP (DT:[951..954] the) (NN:[955..957] Km))
+      (PP (IN:[958..961] for)
+        (NP
+          (NML (NN:[962..970] coumarin) (CD:[971..972] 7))
+          (HYPH:[972..973] -) (NN:[973..986] hydroxylation))))
+    (VP (VBD:[987..990] was)
+      (ADJP-PRD (RB:[991..997] fairly) (JJ:[998..1006] constant)
+        (PRN (-LRB-:[1008..1009] -LRB-)
+          (VP (VBG:[1009..1016] ranging)
+            (PP (IN:[1017..1021] from)
+              (NP (CD:[1022..1026] 0.50)))
+            (PP (TO:[1027..1029] to)
+              (NP (CD:[1030..1034] 0.70) (NN:[1035..1041] microM))))
+          (-RRB-:[1041..1042] -RRB-))))
+    (.:[1042..1043] .)))
+
+;sentence 8 Span:1044..1624
+;The following chemicals caused little or no  inhibition of CYP2A6 as defined
+;by a Ki > 200 microM: caffeine, chlorzoxazone,  cimetidine, dextromethorphan,
+;diazepam, diclofenac, erythromycin,  ethinylestradiol, ethynyltestosterone,
+;fluconazole, furafylline, furfural,  hexobarbital, itraconazole, mephenytoin,
+;methimazole, metronidazole, naringenin,  naringin, nifedipine, norfloxacin,
+;norgestrel, orphenadrine, quinidine,  papaverine, phenacetin, pyrimethamine,
+;ranitidine, spironolactone,  sulfaphenazole, sulfinpyrazone, testosterone,
+;tolbutamide, troleandomycin, and  warfarin.
+;[1058..1067]:substance:"chemicals"
+;[1103..1109]:cyp450:"CYP2A6"
+;[1126..1128]:quantitative-name:"Ki"
+;[1129..1134]:quantitative-value:"> 200"
+;[1135..1141]:quantitative-units:"microM"
+;[1143..1151]:substance:"caffeine"
+;[1153..1166]:substance:"chlorzoxazone"
+;[1169..1179]:substance:"cimetidine"
+;[1181..1197]:substance:"dextromethorphan"
+;[1199..1207]:substance:"diazepam"
+;[1209..1219]:substance:"diclofenac"
+;[1221..1233]:substance:"erythromycin"
+;[1236..1252]:substance:"ethinylestradiol"
+;[1254..1273]:substance:"ethynyltestosterone"
+;[1275..1286]:substance:"fluconazole"
+;[1288..1299]:substance:"furafylline"
+;[1301..1309]:substance:"furfural"
+;[1312..1324]:substance:"hexobarbital"
+;[1326..1338]:substance:"itraconazole"
+;[1340..1351]:substance:"mephenytoin"
+;[1353..1364]:substance:"methimazole"
+;[1366..1379]:substance:"metronidazole"
+;[1381..1391]:substance:"naringenin"
+;[1394..1402]:substance:"naringin"
+;[1404..1414]:substance:"nifedipine"
+;[1416..1427]:substance:"norfloxacin"
+;[1429..1439]:substance:"norgestrel"
+;[1441..1453]:substance:"orphenadrine"
+;[1455..1464]:substance:"quinidine"
+;[1467..1477]:substance:"papaverine"
+;[1479..1489]:substance:"phenacetin"
+;[1491..1504]:substance:"pyrimethamine"
+;[1506..1516]:substance:"ranitidine"
+;[1518..1532]:substance:"spironolactone"
+;[1535..1549]:substance:"sulfaphenazole"
+;[1551..1565]:substance:"sulfinpyrazone"
+;[1567..1579]:substance:"testosterone"
+;[1581..1592]:substance:"tolbutamide"
+;[1594..1608]:substance:"troleandomycin"
+;[1615..1623]:substance:"warfarin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1044..1047] The) (JJ:[1048..1057] following)
+          (NNS:[1058..1067] chemicals))
+      (NP-2 (-NONE-:[1067..1067] *ICH*)))
+    (VP (VBD:[1068..1074] caused)
+      (NP
+        (NP
+          (NP
+            (NP (JJ:[1075..1081] little)
+              (NML-3 (-NONE-:[1081..1081] *P*)))
+            (CC:[1082..1084] or)
+            (NP (DT:[1085..1087] no)
+              (NML-3 (NN:[1089..1099] inhibition))))
+          (PP (IN:[1100..1102] of)
+            (NP (NN:[1103..1109] CYP2A6))))
+        (SBAR (IN:[1110..1112] as)
+          (S
+            (NP-SBJ-1 (-NONE-:[1112..1112] *))
+            (VP (VBN:[1113..1120] defined)
+              (NP-1 (-NONE-:[1120..1120] *))
+              (PP (IN:[1121..1123] by)
+                (NP-LGS
+                  (NP (DT:[1124..1125] a) (NN:[1126..1128] Ki))
+                  (VP (SYM:[1129..1130] >)
+                    (NP (CD:[1131..1134] 200) (NN:[1135..1141] microM)))))))))
+      (::[1141..1142] :)
+      (NP-2 (NN:[1143..1151] caffeine) (,:[1151..1152] ,)
+            (NN:[1153..1166] chlorzoxazone) (,:[1166..1167] ,)
+            (NN:[1169..1179] cimetidine) (,:[1179..1180] ,)
+            (NN:[1181..1197] dextromethorphan) (,:[1197..1198] ,)
+            (NN:[1199..1207] diazepam) (,:[1207..1208] ,)
+            (NN:[1209..1219] diclofenac) (,:[1219..1220] ,)
+            (NN:[1221..1233] erythromycin) (,:[1233..1234] ,)
+            (NN:[1236..1252] ethinylestradiol) (,:[1252..1253] ,)
+            (NN:[1254..1273] ethynyltestosterone) (,:[1273..1274] ,)
+            (NN:[1275..1286] fluconazole) (,:[1286..1287] ,)
+            (NN:[1288..1299] furafylline) (,:[1299..1300] ,)
+            (NN:[1301..1309] furfural) (,:[1309..1310] ,)
+            (NN:[1312..1324] hexobarbital) (,:[1324..1325] ,)
+            (NN:[1326..1338] itraconazole) (,:[1338..1339] ,)
+            (NN:[1340..1351] mephenytoin) (,:[1351..1352] ,)
+            (NN:[1353..1364] methimazole) (,:[1364..1365] ,)
+            (NN:[1366..1379] metronidazole) (,:[1379..1380] ,)
+            (NN:[1381..1391] naringenin) (,:[1391..1392] ,)
+            (NN:[1394..1402] naringin) (,:[1402..1403] ,)
+            (NN:[1404..1414] nifedipine) (,:[1414..1415] ,)
+            (NN:[1416..1427] norfloxacin) (,:[1427..1428] ,)
+            (NN:[1429..1439] norgestrel) (,:[1439..1440] ,)
+            (NN:[1441..1453] orphenadrine) (,:[1453..1454] ,)
+            (NN:[1455..1464] quinidine) (,:[1464..1465] ,)
+            (NN:[1467..1477] papaverine) (,:[1477..1478] ,)
+            (NN:[1479..1489] phenacetin) (,:[1489..1490] ,)
+            (NN:[1491..1504] pyrimethamine) (,:[1504..1505] ,)
+            (NN:[1506..1516] ranitidine) (,:[1516..1517] ,)
+            (NN:[1518..1532] spironolactone) (,:[1532..1533] ,)
+            (NN:[1535..1549] sulfaphenazole) (,:[1549..1550] ,)
+            (NN:[1551..1565] sulfinpyrazone) (,:[1565..1566] ,)
+            (NN:[1567..1579] testosterone) (,:[1579..1580] ,)
+            (NN:[1581..1592] tolbutamide) (,:[1592..1593] ,)
+            (NN:[1594..1608] troleandomycin) (,:[1608..1609] ,)
+            (CC:[1610..1613] and) (NN:[1615..1623] warfarin)))
+    (.:[1623..1624] .)))
+
+;sentence 9 Span:1625..1790
+;In other words, these chemicals, at a final concentration of 100  microM,
+;failed to inhibit CYP2A6 when the concentration of coumarin was equal to  Km
+;(0.50 microM).
+;[1647..1656]:substance:"chemicals"
+;[1686..1689]:quantitative-value:"100"
+;[1691..1697]:quantitative-units:"microM"
+;[1717..1723]:cyp450:"CYP2A6"
+;[1750..1758]:substance:"coumarin"
+;[1773..1775]:quantitative-name:"Km"
+;[1777..1781]:quantitative-value:"0.50"
+;[1782..1788]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[1625..1627] In)
+      (NP (JJ:[1628..1633] other) (NNS:[1634..1639] words)))
+    (,:[1639..1640] ,)
+    (NP-SBJ-1
+      (NP (DT:[1641..1646] these) (NNS:[1647..1656] chemicals))
+      (,:[1656..1657] ,)
+      (PP (IN:[1658..1660] at)
+        (NP
+          (NP (DT:[1661..1662] a) (JJ:[1663..1668] final)
+              (NN:[1669..1682] concentration))
+          (PP (IN:[1683..1685] of)
+            (NP (CD:[1686..1689] 100) (NN:[1691..1697] microM))))))
+    (,:[1697..1698] ,)
+    (VP (VBD:[1699..1705] failed)
+      (S
+        (NP-SBJ-1 (-NONE-:[1705..1705] *))
+        (VP (TO:[1706..1708] to)
+          (VP (VB:[1709..1716] inhibit)
+            (NP (NN:[1717..1723] CYP2A6))
+            (SBAR-ADV
+              (WHADVP-2 (WRB:[1724..1728] when))
+              (S
+                (NP-SBJ
+                  (NP (DT:[1729..1732] the) (NN:[1733..1746] concentration))
+                  (PP (IN:[1747..1749] of)
+                    (NP (NN:[1750..1758] coumarin))))
+                (VP (VBD:[1759..1762] was)
+                  (ADJP-PRD (JJ:[1763..1768] equal)
+                    (PP (TO:[1769..1771] to)
+                      (NP (NN:[1773..1775] Km)
+                        (PRN (-LRB-:[1776..1777] -LRB-)
+                          (NP (CD:[1777..1781] 0.50) (NN:[1782..1788] microM))
+                          (-RRB-:[1788..1789] -RRB-)))))
+                  (ADVP-TMP-2 (-NONE-:[1789..1789] *T*)))))))))
+    (.:[1789..1790] .)))
+
+;sentence 10 Span:1791..2088
+;The following chemicals were classified as strong inhibitors  of CYP2A6
+;(defined by Ki < 200 microM): clotrimazole, diethyldithiocarbamate, 
+;ellipticine, ketoconazole, 8-methoxypsoralen, 4-methylpyrazole, metyrapone, 
+;miconazole, alpha-naphthoflavone, nicotine, p-nitrophenol, and
+;tranylcypromine.
+;[1805..1814]:substance:"chemicals"
+;[1841..1851]:substance:"inhibitors"
+;[1856..1862]:cyp450:"CYP2A6"
+;[1875..1877]:quantitative-name:"Ki"
+;[1878..1883]:quantitative-value:"< 200"
+;[1884..1890]:quantitative-units:"microM"
+;[1893..1905]:substance:"clotrimazole"
+;[1907..1929]:substance:"diethyldithiocarbamate"
+;[1932..1943]:substance:"ellipticine"
+;[1945..1957]:substance:"ketoconazole"
+;[1959..1976]:substance:"8-methoxypsoralen"
+;[1978..1994]:substance:"4-methylpyrazole"
+;[1996..2006]:substance:"metyrapone"
+;[2009..2019]:substance:"miconazole"
+;[2021..2041]:substance:"alpha-naphthoflavone"
+;[2043..2051]:substance:"nicotine"
+;[2053..2066]:substance:"p-nitrophenol"
+;[2072..2087]:substance:"tranylcypromine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1791..1794] The) (JJ:[1795..1804] following)
+          (NNS:[1805..1814] chemicals))
+      (NP-2 (-NONE-:[1814..1814] *ICH*)))
+    (VP (VBD:[1815..1819] were)
+      (VP (VBN:[1820..1830] classified)
+        (NP-1 (-NONE-:[1830..1830] *))
+        (PP-CLR (IN:[1831..1833] as)
+          (NP
+            (NP (JJ:[1834..1840] strong) (NNS:[1841..1851] inhibitors))
+            (PP (IN:[1853..1855] of)
+              (NP (NN:[1856..1862] CYP2A6)))
+            (PRN (-LRB-:[1863..1864] -LRB-)
+              (S
+                (NP-SBJ (-NONE-:[1864..1864] *))
+                (VP (VBN:[1864..1871] defined)
+                  (NP (-NONE-:[1871..1871] *))
+                  (PP (IN:[1872..1874] by)
+                    (NP-LGS
+                      (NP (NN:[1875..1877] Ki))
+                      (VP (SYM:[1878..1879] <)
+                        (NP (CD:[1880..1883] 200) (NN:[1884..1890] microM)))))))
+              (-RRB-:[1890..1891] -RRB-))))
+        (::[1891..1892] :)
+        (NP-2 (NN:[1893..1905] clotrimazole) (,:[1905..1906] ,)
+              (NN:[1907..1929] diethyldithiocarbamate) (,:[1929..1930] ,)
+              (NN:[1932..1943] ellipticine) (,:[1943..1944] ,)
+              (NN:[1945..1957] ketoconazole) (,:[1957..1958] ,)
+              (NN:[1959..1976] 8-methoxypsoralen) (,:[1976..1977] ,)
+              (NN:[1978..1994] 4-methylpyrazole) (,:[1994..1995] ,)
+              (NN:[1996..2006] metyrapone) (,:[2006..2007] ,)
+              (NN:[2009..2019] miconazole) (,:[2019..2020] ,)
+              (NN:[2021..2041] alpha-naphthoflavone) (,:[2041..2042] ,)
+              (NN:[2043..2051] nicotine) (,:[2051..2052] ,)
+              (NN:[2053..2066] p-nitrophenol) (,:[2066..2067] ,)
+              (CC:[2068..2071] and) (NN:[2072..2087] tranylcypromine))))
+    (.:[2087..2088] .)))
+
+;sentence 11 Span:2090..2240
+;The potency with which each chemical inhibited the 7-hydroxylation of
+;coumarin  was independent of which sample of human liver microsomes was
+;studied.
+;[2118..2126]:substance:"chemical"
+;[2160..2168]:substance:"coumarin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2090..2093] The) (NN:[2094..2101] potency))
+      (SBAR
+        (WHPP-2 (IN:[2102..2106] with)
+          (WHNP (WDT:[2107..2112] which)))
+        (S
+          (NP-SBJ (DT:[2113..2117] each) (NN:[2118..2126] chemical))
+          (VP (VBD:[2127..2136] inhibited)
+            (NP
+              (NP (DT:[2137..2140] the) (CD:[2141..2142] 7)
+                  (HYPH:[2142..2143] -) (NN:[2143..2156] hydroxylation))
+              (PP (IN:[2157..2159] of)
+                (NP (NN:[2160..2168] coumarin))))
+            (PP-2 (-NONE-:[2168..2168] *T*))))))
+    (VP (VBD:[2170..2173] was)
+      (ADJP-PRD (JJ:[2174..2185] independent)
+        (PP (IN:[2186..2188] of)
+          (SBAR-NOM
+            (WHNP-3
+              (WHNP (WDT:[2189..2194] which) (NN:[2195..2201] sample))
+              (PP (IN:[2202..2204] of)
+                (NP (JJ:[2205..2210] human) (NN:[2211..2216] liver)
+                    (NNS:[2217..2227] microsomes))))
+            (S
+              (NP-SBJ-3 (-NONE-:[2227..2227] *T*))
+              (VP (VBD:[2228..2231] was)
+                (VP (VBN:[2232..2239] studied)
+                  (NP-1 (-NONE-:[2239..2239] *)))))))))
+    (.:[2239..2240] .)))
+
+;sentence 12 Span:2241..2454
+;One of  the most potent inhibitors of coumarin 7-hydroxylase was
+;8-methoxypsoralen  (methoxsalen), which was determined to be a
+;mechanism-based inhibitor (suicide  substrate) of CYP2A6 (k(inactivation) 0.5
+;min-1).
+;[2265..2275]:substance:"inhibitors"
+;[2279..2301]:cyp450:"coumarin 7-hydroxylase"
+;[2306..2323]:substance:"8-methoxypsoralen"
+;[2326..2337]:substance:"methoxsalen"
+;[2385..2394]:substance:"inhibitor"
+;[2405..2414]:substance:"substrate"
+;[2419..2425]:cyp450:"CYP2A6"
+;[2427..2442]:quantitative-name:"k(inactivation)"
+;[2443..2446]:quantitative-value:"0.5"
+;[2447..2452]:quantitative-units:"min-1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[2241..2244] One))
+      (PP (IN:[2245..2247] of)
+        (NP
+          (NP (DT:[2249..2252] the)
+            (ADJP (RBS:[2253..2257] most) (JJ:[2258..2264] potent))
+            (NNS:[2265..2275] inhibitors))
+          (PP (IN:[2276..2278] of)
+            (NP (NN:[2279..2287] coumarin) (NN:[2288..2301] 7-hydroxylase))))))
+    (VP (VBD:[2302..2305] was)
+      (NP-PRD
+        (NP
+          (NP (NN:[2306..2323] 8-methoxypsoralen))
+          (NP (-LRB-:[2325..2326] -LRB-) (NN:[2326..2337] methoxsalen)
+              (-RRB-:[2337..2338] -RRB-)))
+        (,:[2338..2339] ,)
+        (SBAR
+          (WHNP-1 (WDT:[2340..2345] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[2345..2345] *T*))
+            (VP (VBD:[2346..2349] was)
+              (VP (VBN:[2350..2360] determined)
+                (S
+                  (NP-SBJ-1 (-NONE-:[2360..2360] *))
+                  (VP (TO:[2361..2363] to)
+                    (VP (VB:[2364..2366] be)
+                      (NP-PRD
+                        (NP (DT:[2367..2368] a)
+                          (ADJP (NN:[2369..2378] mechanism)
+                                (HYPH:[2378..2379] -) (VBN:[2379..2384] based))
+                          (NN:[2385..2394] inhibitor)
+                          (PRN (-LRB-:[2395..2396] -LRB-)
+                            (NP (NN:[2396..2403] suicide)
+                                (NN:[2405..2414] substrate))
+                            (-RRB-:[2414..2415] -RRB-)))
+                        (PP (IN:[2416..2418] of)
+                          (NP (NN:[2419..2425] CYP2A6)
+                            (PRN (-LRB-:[2426..2427] -LRB-)
+                              (S
+                                (NP-SBJ
+                                        (NN:[2427..2442] k-LRB-inactivation-RRB-))
+                                (NP-PRD (CD:[2443..2446] 0.5)
+                                        (NN:[2447..2452] min-1)))
+                              (-RRB-:[2452..2453] -RRB-))))))))))))))
+    (.:[2453..2454] .)))
+
+;sentence 13 Span:2455..2632
+;With the exception of  8-methoxypsoralen, preincubation of human liver
+;microsomes and NADPH with the  aforementioned inhibitors did not increase
+;their ability to inhibit CYP2A6.
+;[2478..2495]:substance:"8-methoxypsoralen"
+;[2541..2546]:substance:"NADPH"
+;[2572..2582]:substance:"inhibitors"
+;[2625..2631]:cyp450:"CYP2A6"
+(SENT
+  (S
+    (PP (IN:[2455..2459] With)
+      (NP
+        (NP (DT:[2460..2463] the) (NN:[2464..2473] exception))
+        (PP (IN:[2474..2476] of)
+          (NP (NN:[2478..2495] 8-methoxypsoralen)))))
+    (,:[2495..2496] ,)
+    (NP-SBJ
+      (NP (NN:[2497..2510] preincubation))
+      (PP (IN:[2511..2513] of)
+        (NP
+          (NP (JJ:[2514..2519] human) (NN:[2520..2525] liver)
+              (NNS:[2526..2536] microsomes))
+          (CC:[2537..2540] and)
+          (NP (NN:[2541..2546] NADPH))))
+      (PP (IN:[2547..2551] with)
+        (NP (DT:[2552..2555] the) (JJ:[2557..2571] aforementioned)
+            (NNS:[2572..2582] inhibitors))))
+    (VP (VBD:[2583..2586] did) (RB:[2587..2590] not)
+      (VP (VB:[2591..2599] increase)
+        (NP (PRP$:[2600..2605] their) (NN:[2606..2613] ability)
+          (S
+            (NP-SBJ (-NONE-:[2613..2613] *))
+            (VP (TO:[2614..2616] to)
+              (VP (VB:[2617..2624] inhibit)
+                (NP (NN:[2625..2631] CYP2A6))))))))
+    (.:[2631..2632] .)))
+
+;sentence 14 Span:2633..2722
+;The  most potent competitive inhibitor of CYP2A6 was tranylcypromine (Ki =
+;0.04  microM).
+;[2662..2671]:substance:"inhibitor"
+;[2675..2681]:cyp450:"CYP2A6"
+;[2686..2701]:substance:"tranylcypromine"
+;[2703..2705]:quantitative-name:"Ki"
+;[2708..2712]:quantitative-value:"0.04"
+;[2714..2720]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2633..2636] The)
+        (ADJP (RBS:[2638..2642] most) (JJ:[2643..2649] potent))
+        (JJ:[2650..2661] competitive) (NN:[2662..2671] inhibitor))
+      (PP (IN:[2672..2674] of)
+        (NP (NN:[2675..2681] CYP2A6))))
+    (VP (VBD:[2682..2685] was)
+      (NP-PRD (NN:[2686..2701] tranylcypromine)
+        (PRN (-LRB-:[2702..2703] -LRB-)
+          (S
+            (NP-SBJ (NN:[2703..2705] Ki))
+            (VP (SYM:[2706..2707] =)
+              (NP (CD:[2708..2712] 0.04) (NN:[2714..2720] microM))))
+          (-RRB-:[2720..2721] -RRB-))))
+    (.:[2721..2722] .)))
+
+;sentence 15 Span:2723..2921
+;Several of the chemicals that strongly inhibited CYP2A6, such as 
+;ketoconazole and tranylcypromine, are often used with the intention of 
+;selectively inhibiting human P450 enzymes other than CYP2A6.
+;[2738..2747]:substance:"chemicals"
+;[2772..2778]:cyp450:"CYP2A6"
+;[2789..2801]:substance:"ketoconazole"
+;[2806..2821]:substance:"tranylcypromine"
+;[2890..2902]:cyp450:"P450 enzymes"
+;[2914..2920]:cyp450:"CYP2A6"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (NP (JJ:[2723..2730] Several))
+        (PP (IN:[2731..2733] of)
+          (NP (DT:[2734..2737] the) (NNS:[2738..2747] chemicals))))
+      (SBAR
+        (WHNP-1 (WDT:[2748..2752] that))
+        (S
+          (NP-SBJ-1 (-NONE-:[2752..2752] *T*))
+          (ADVP (RB:[2753..2761] strongly))
+          (VP (VBD:[2762..2771] inhibited)
+            (NP (NN:[2772..2778] CYP2A6)))))
+      (,:[2778..2779] ,)
+      (PP (JJ:[2780..2784] such) (IN:[2785..2787] as)
+        (NP (NN:[2789..2801] ketoconazole) (CC:[2802..2805] and)
+            (NN:[2806..2821] tranylcypromine))))
+    (,:[2821..2822] ,)
+    (VP (VBP:[2823..2826] are)
+      (ADVP-TMP (RB:[2827..2832] often))
+      (VP (VBN:[2833..2837] used)
+        (NP-2 (-NONE-:[2837..2837] *))
+        (PP (IN:[2838..2842] with)
+          (NP
+            (NP (DT:[2843..2846] the) (NN:[2847..2856] intention))
+            (PP (IN:[2857..2859] of)
+              (S-NOM
+                (NP-SBJ (-NONE-:[2859..2859] *))
+                (ADVP (RB:[2861..2872] selectively))
+                (VP (VBG:[2873..2883] inhibiting)
+                  (NP
+                    (NP (JJ:[2884..2889] human)
+                       (NN:[2890..2894] P450) (NNS:[2895..2902] enzymes))
+                    (ADJP (JJ:[2903..2908] other)
+                      (PP (IN:[2909..2913] than)
+                        (NP (NN:[2914..2920] CYP2A6))))))))))))
+    (.:[2920..2921] .)))
+
+;sentence 16 Span:2922..3050
+;The results of this  study underscore the need for a systematic evaluation of
+;the specificity of  commonly used P450 inhibitors.
+;[3034..3038]:cyp450:"P450"
+;[3039..3049]:substance:"inhibitors"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2922..2925] The) (NNS:[2926..2933] results))
+      (PP (IN:[2934..2936] of)
+        (NP (DT:[2937..2941] this) (NN:[2943..2948] study))))
+    (VP (VBP:[2949..2959] underscore)
+      (NP
+        (NP (DT:[2960..2963] the) (NN:[2964..2968] need))
+        (PP (IN:[2969..2972] for)
+          (NP
+            (NP (DT:[2973..2974] a) (JJ:[2975..2985] systematic)
+                (NN:[2986..2996] evaluation))
+            (PP (IN:[2997..2999] of)
+              (NP
+                (NP (DT:[3000..3003] the) (NN:[3004..3015] specificity))
+                (PP (IN:[3016..3018] of)
+                  (NP
+                    (ADJP (RB:[3020..3028] commonly) (VBN:[3029..3033] used))
+                    (NN:[3034..3038] P450) (NNS:[3039..3049] inhibitors)))))))))
+    (.:[3049..3050] .)))
+
+;section 17 Span:3054..3097
+;PMID: 9143352 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[3054..3058] PMID) (::[3058..3059] :) (CD:[3060..3067] 9143352)
+        (-LRB-:[3068..3069] -LSB-) (NNP:[3069..3075] PubMed) (::[3076..3077] -)
+        (VBN:[3078..3085] indexed) (IN:[3086..3089] for)
+        (NNP:[3090..3097] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[3097..EOF] ]
+
+(ORPH -RSB-)

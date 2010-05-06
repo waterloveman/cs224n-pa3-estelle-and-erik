@@ -1,0 +1,366 @@
+;PMID: 9378385
+;source_file_527.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..25] = [t:0..25]
+;1)sentence:[e:30..92] = [t:30..92]
+;2)section:[e:96..214] = [t:96..214]
+;3)section:[e:218..284] = [t:218..284]
+;4)sentence:[e:288..473] = [t:288..473]
+;5)sentence:[e:474..518] = [t:474..518]
+;6)sentence:[e:520..665] = [t:520..665]
+;7)sentence:[e:666..739] = [t:666..739]
+;8)sentence:[e:740..1028] = [t:740..1028]
+;9)sentence:[e:1029..1117] = [t:1029..1117]
+;10)sentence:[e:1118..1231] = [t:1118..1231]
+;11)sentence:[e:1232..1343] = [t:1232..1343]
+;12)section:[e:1344..1476] = [t:1344..1476]
+;13)section:[e:1480..1524] = [t:1480..1524]
+
+;section 0 Span:0..25
+;Gut  1997 Sep;41(3):320-2
+(SEC
+  (FRAG (IN:[0..3] Gut) (CD:[5..9] 1997) (CD:[10..15] Sep;4) (CD:[15..16] 1)
+        (NN:[16..17] -LRB-) (NN:[17..18] 3) (NN:[18..19] -RRB-) (VBZ:[19..20] :)
+        (CD:[20..22] 32) (CD:[22..25] 0-2)))
+
+;sentence 1 Span:30..92
+;Peutz-Jeghers polyps, dysplasia, and K-ras codon 12 mutations.
+;[30..50]:malignancy:"Peutz-Jeghers polyps"
+;[52..61]:malignancy:"dysplasia"
+;[67..72]:gene-rna:"K-ras"
+;[73..81]:variation-location:"codon 12"
+;[82..91]:variation-event:"mutations"
+(SENT
+  (NP-HLN
+    (NP
+      (NML (NNP:[30..35] Peutz) (HYPH:[35..36] -) (NNP:[36..43] Jeghers))
+      (NNS:[44..50] polyps))
+    (,:[50..51] ,)
+    (NP (NN:[52..61] dysplasia))
+    (,:[61..62] ,) (CC:[63..66] and)
+    (NP (NN:[67..72] K-ras)
+      (NML (NN:[73..78] codon) (CD:[79..81] 12))
+      (NNS:[82..91] mutations))
+    (.:[91..92] .)))
+
+;section 2 Span:96..214
+;Entius MM, Westerman AM, Giardiello FM, van Velthuysen ML, Polak MM, Slebos
+;RJ,  Wilson JH, Hamilton SR, Offerhaus GJ.
+(SEC
+  (FRAG (NNP:[96..102] Entius) (NNP:[103..105] MM) (,:[105..106] ,)
+        (NNP:[107..116] Westerman) (VBP:[117..119] AM) (JJ:[119..120] ,)
+        (NNP:[121..131] Giardiello) (NNP:[132..134] FM) (NNP:[134..135] ,)
+        (NNP:[136..139] van) (NNP:[140..150] Velthuysen) (NNP:[151..153] ML)
+        (,:[153..154] ,) (NNP:[155..160] Polak) (NNP:[161..163] MM)
+        (,:[163..164] ,) (NNP:[165..171] Slebos) (NNP:[172..174] RJ)
+        (,:[174..175] ,) (NNP:[177..183] Wilson) (NNP:[184..187] JH,)
+        (NNP:[188..196] Hamilton) (NNP:[197..199] SR) (,:[199..200] ,)
+        (NNP:[201..210] Offerhaus) (NNP:[211..214] GJ.)))
+
+;section 3 Span:218..284
+;Department of Pathology, University of Amsterdam, The Netherlands.
+(SEC
+  (FRAG (NNP:[218..228] Department) (IN:[229..231] of)
+        (NNP:[232..241] Pathology) (,:[241..242] ,) (NNP:[243..253] University)
+        (IN:[254..256] of) (NNP:[257..266] Amsterdam) (,:[266..267] ,)
+        (DT:[268..271] The) (NNP:[272..283] Netherlands) (.:[283..284] .)))
+
+;sentence 4 Span:288..473
+;BACKGROUND: Peutz-Jeghers syndrome (PJS) is a rare, autosomal dominant, 
+;polyposis syndrome, associated with an increased risk of gastrointestinal and
+; extragastrointestinal malignancy.
+;[300..322]:malignancy:"Peutz-Jeghers syndrome"
+;[324..327]:malignancy:"PJS"
+;[340..379]:malignancy:"autosomal dominant,  polyposis syndrome"
+;[418..434]:malignancy-type:"gastrointestinal"
+;[418..434]:malignancy:"gastrointestinal"
+;[440..472]:malignancy:"extragastrointestinal malignancy"
+(SENT
+  (NP (NN:[288..298] BACKGROUND) (::[298..299] :))
+  (S
+    (NP-SBJ
+      (NP
+        (NML (NNP:[300..305] Peutz) (HYPH:[305..306] -) (NNP:[306..313] Jeghers))
+        (NN:[314..322] syndrome))
+      (NP (-LRB-:[323..324] -LRB-) (NN:[324..327] PJS) (-RRB-:[327..328] -RRB-)))
+    (VP (VBZ:[329..331] is)
+      (NP-PRD
+        (NP (DT:[332..333] a) (JJ:[334..338] rare) (,:[338..339] ,)
+          
+          (ADJP (JJ:[340..349] autosomal) (JJ:[350..358] dominant))
+          (,:[358..359] ,) (NN:[361..370] polyposis) (NN:[371..379] syndrome))
+        (,:[379..380] ,)
+        (VP (VBN:[381..391] associated)
+          (NP (-NONE-:[391..391] *))
+          (PP-CLR (IN:[392..396] with)
+            (NP
+              (NP (DT:[397..399] an) (JJ:[400..409] increased)
+                  (NN:[410..414] risk))
+              (PP (IN:[415..417] of)
+                (NP
+                  (NP (JJ:[418..434] gastrointestinal)
+                    (NML-1 (-NONE-:[434..434] *P*)))
+                  (CC:[435..438] and)
+                  (NP (JJ:[440..461] extragastrointestinal)
+                    (NML-1 (NN:[462..472] malignancy))))))))))
+    (.:[472..473] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[288..473]::NP:S:
+
+;sentence 5 Span:474..518
+;Occasionally dysplasia occurs in PJS polyps.
+;[487..496]:malignancy:"dysplasia"
+;[507..517]:malignancy:"PJS polyps"
+(SENT
+  (S
+    (ADVP (RB:[474..486] Occasionally))
+    (NP-SBJ (NN:[487..496] dysplasia))
+    (VP (VBZ:[497..503] occurs)
+      (PP-LOC (IN:[504..506] in)
+        (NP (NN:[507..510] PJS) (NNS:[511..517] polyps))))
+    (.:[517..518] .)))
+
+;sentence 6 Span:520..665
+;AIMS: In colorectal carcinomas, mutations in codon 12 of the K-ras oncogene
+;are  common and are found at similar frequency in precursor adenomas.
+;[529..550]:malignancy:"colorectal carcinomas"
+;[552..561]:variation-event:"mutations"
+;[565..573]:variation-location:"codon 12"
+;[581..586]:gene-rna:"K-ras"
+;[646..664]:malignancy:"precursor adenomas"
+(SENT
+  (NP (NNS:[520..524] AIMS) (::[524..525] :))
+  (S
+    (PP (IN:[526..528] In)
+      (NP (JJ:[529..539] colorectal) (NNS:[540..550] carcinomas)))
+    (,:[550..551] ,)
+    (NP-SBJ-1
+      (NP (NNS:[552..561] mutations))
+      (PP-LOC (IN:[562..564] in)
+        (NP
+          (NP (NN:[565..570] codon) (CD:[571..573] 12))
+          (PP (IN:[574..576] of)
+            (NP (DT:[577..580] the) (NN:[581..586] K-ras)
+                (NN:[587..595] oncogene))))))
+    (VP
+      (VP (VBP:[596..599] are)
+        (ADJP-PRD (JJ:[601..607] common)))
+      (CC:[608..611] and)
+      (VP (VBP:[612..615] are)
+        (VP (VBN:[616..621] found)
+          (NP-1 (-NONE-:[621..621] *))
+          (PP (IN:[622..624] at)
+            (NP (JJ:[625..632] similar) (NN:[633..642] frequency)))
+          (PP-LOC (IN:[643..645] in)
+            (NP (NN:[646..655] precursor) (NNS:[656..664] adenomas))))))
+    (.:[664..665] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[520..665]::NP:S:
+
+;sentence 7 Span:666..739
+;Therefore,  K-ras codon 12 point mutations in PJS polyps, were evaluated.
+;[678..683]:gene-rna:"K-ras"
+;[684..692]:variation-location:"codon 12"
+;[693..708]:variation-type:"point mutations"
+;[712..722]:malignancy:"PJS polyps"
+(SENT
+  (S
+    (ADVP (RB:[666..675] Therefore))
+    (,:[675..676] ,)
+    (NP-SBJ-1
+      (NP (NN:[678..683] K-ras)
+        (NML (NN:[684..689] codon) (CD:[690..692] 12))
+         (NN:[693..698] point) (NNS:[699..708] mutations))
+      (PP-LOC (IN:[709..711] in)
+        (NP (NN:[712..715] PJS) (NNS:[716..722] polyps))))
+    (,:[722..723] ,)
+    (VP (VBD:[724..728] were)
+      (VP (VBN:[729..738] evaluated)
+        (NP-1 (-NONE-:[738..738] *))))
+    (.:[738..739] .)))
+
+;sentence 8 Span:740..1028
+;MATERIALS AND  METHODS: Fifty two PJS polyps, including four with dysplasia,
+;collected from 19  patients with PJS, were analysed for mutations in the
+;K-ras codon 12 by a mutant  enriched polymerase chain reaction procedure,
+;followed by allele specific  oligodeoxynucleotide hybridisation.
+;[774..784]:malignancy:"PJS polyps"
+;[796..815]:malignancy:"four with dysplasia"
+;[850..853]:malignancy:"PJS"
+;[873..882]:variation-event:"mutations"
+;[890..895]:gene-rna:"K-ras"
+;[896..904]:variation-location:"codon 12"
+;[927..937]:gene-protein:"polymerase"
+(SENT
+  (NP (NNS:[740..749] MATERIALS) (CC:[750..753] AND) (NNS:[755..762] METHODS)
+      (::[762..763] :))
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (CD:[764..769] Fifty) (CD:[770..773] two)
+           (NN:[774..777] PJS) (NNS:[778..784] polyps))
+        (,:[784..785] ,)
+        (PP (VBG:[786..795] including)
+          (NP
+            (NP (CD:[796..800] four))
+            (PP (IN:[801..805] with)
+              (NP (NN:[806..815] dysplasia))))))
+      (,:[815..816] ,)
+      (VP (VBN:[817..826] collected)
+        (NP (-NONE-:[826..826] *))
+        (PP (IN:[827..831] from)
+          (NP
+            (NP (CD:[832..834] 19) (NNS:[836..844] patients))
+            (PP (IN:[845..849] with)
+              (NP (NN:[850..853] PJS)))))))
+    (,:[853..854] ,)
+    (VP (VBD:[855..859] were)
+      (VP (VBN:[860..868] analysed)
+        (NP-1 (-NONE-:[868..868] *))
+        (PP (IN:[869..872] for)
+          (NP
+            (NP (NNS:[873..882] mutations))
+            (PP-LOC (IN:[883..885] in)
+              (NP (DT:[886..889] the) (NN:[890..895] K-ras)
+                 (NN:[896..901] codon) (CD:[902..904] 12)))))
+        (PP-MNR (IN:[905..907] by)
+          (NP
+            (NP (DT:[908..909] a)
+              (ADJP (NN:[910..916] mutant) (VBN:[918..926] enriched))
+              (NML (NN:[927..937] polymerase) (NN:[938..943] chain)
+                   (NN:[944..952] reaction))
+              (NN:[953..962] procedure))
+            (,:[962..963] ,)
+            (VP (VBN:[964..972] followed)
+              (NP (-NONE-:[972..972] *))
+              (PP (IN:[973..975] by)
+                (NP-LGS
+                  (ADJP (NN:[976..982] allele) (JJ:[983..991] specific))
+                  (NN:[993..1013] oligodeoxynucleotide)
+                   (NN:[1014..1027] hybridisation))))))))
+    (.:[1027..1028] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[740..1028]::NP:S:
+
+;sentence 9 Span:1029..1117
+;RESULTS: A K-ras codon 12 mutation was  identified, in one colonic polyp with
+;dysplasia.
+;[1040..1045]:gene-rna:"K-ras"
+;[1046..1054]:variation-location:"codon 12"
+;[1055..1063]:variation-event:"mutation"
+;[1084..1116]:malignancy:"one colonic polyp with dysplasia"
+(SENT
+  (NP (NNS:[1029..1036] RESULTS) (::[1036..1037] :))
+  (S
+    (NP-SBJ-1 (DT:[1038..1039] A) (NN:[1040..1045] K-ras)
+      (NML (NN:[1046..1051] codon) (CD:[1052..1054] 12))
+      (NN:[1055..1063] mutation))
+    (VP (VBD:[1064..1067] was)
+      (VP (VBN:[1069..1079] identified)
+        (NP-1 (-NONE-:[1079..1079] *))
+        (,:[1079..1080] ,)
+        (PP-LOC (IN:[1081..1083] in)
+          (NP
+            (NP (CD:[1084..1087] one) (JJ:[1088..1095] colonic)
+                (NN:[1096..1101] polyp))
+            (PP (IN:[1102..1106] with)
+              (NP (NN:[1107..1116] dysplasia)))))))
+    (.:[1116..1117] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1029..1117]::NP:S:
+
+;sentence 10 Span:1118..1231
+;The mutation was found in the  non-neoplasmic epithelial cells and not in the
+;dysplastic component of the  polyp.
+;[1118..1130]:variation-event:"The mutation"
+;[1196..1230]:malignancy:"dysplastic component of the  polyp"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1118..1121] The) (NN:[1122..1130] mutation))
+    (VP (VBD:[1131..1134] was)
+      (VP
+        (VP (VBN:[1135..1140] found)
+          (NP-1 (-NONE-:[1140..1140] *))
+          (PP-LOC=2 (IN:[1141..1143] in)
+            (NP (DT:[1144..1147] the)
+              (ADJP (AFX:[1149..1152] non) (HYPH:[1152..1153] -)
+                    (JJ:[1153..1163] neoplasmic))
+              (JJ:[1164..1174] epithelial) (NNS:[1175..1180] cells))))
+        (CC:[1181..1184] and)
+        (VP (RB:[1185..1188] not)
+          (PP-LOC=2 (IN:[1189..1191] in)
+            (NP
+              (NP (DT:[1192..1195] the) (JJ:[1196..1206] dysplastic)
+                  (NN:[1207..1216] component))
+              (PP (IN:[1217..1219] of)
+                (NP (DT:[1220..1223] the) (NN:[1225..1230] polyp))))))))
+    (.:[1230..1231] .)))
+
+;sentence 11 Span:1232..1343
+;CONCLUSIONS: K-ras codon 12 point mutations are very rare in PJS polyps,  by
+;contrast with colorectal adenomas.
+;[1245..1250]:gene-rna:"K-ras"
+;[1251..1259]:variation-location:"codon 12"
+;[1260..1275]:variation-type:"point mutations"
+;[1293..1303]:malignancy:"PJS polyps"
+;[1323..1342]:malignancy:"colorectal adenomas"
+(SENT
+  (NP (NNS:[1232..1243] CONCLUSIONS) (::[1243..1244] :))
+  (S
+    (NP-SBJ (NN:[1245..1250] K-ras)
+      (NML (NN:[1251..1256] codon) (CD:[1257..1259] 12))
+       (NN:[1260..1265] point) (NNS:[1266..1275] mutations))
+    (VP (VBP:[1276..1279] are)
+      (ADJP-PRD (RB:[1280..1284] very) (JJ:[1285..1289] rare))
+      (PP-LOC (IN:[1290..1292] in)
+        (NP (NN:[1293..1296] PJS) (NNS:[1297..1303] polyps)))
+      (,:[1303..1304] ,)
+      (PP (IN:[1306..1308] by)
+        (NP
+          (NP (NN:[1309..1317] contrast))
+          (PP (IN:[1318..1322] with)
+            (NP (JJ:[1323..1333] colorectal) (NNS:[1334..1342] adenomas))))))
+    (.:[1342..1343] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1232..1343]::NP:S:
+
+;section 12 Span:1344..1476
+;The findings support previous evidence  that there seems to be no intrinsic
+;relation between K-ras codon 12 mutation and  dysplasia.
+;[1437..1442]:gene-rna:"K-ras"
+;[1443..1451]:variation-location:"codon 12"
+;[1452..1460]:variation-event:"mutation"
+;[1466..1475]:malignancy:"dysplasia"
+(SEC
+  (S
+    (NP-SBJ (DT:[1344..1347] The) (NNS:[1348..1356] findings))
+    (VP (VBP:[1357..1364] support)
+      (NP (JJ:[1365..1373] previous) (NN:[1374..1382] evidence)
+        (SBAR (IN:[1384..1388] that)
+          (S
+            (NP-SBJ (EX:[1389..1394] there))
+            (VP (VBZ:[1395..1400] seems)
+              (S
+                (NP-SBJ (-NONE-:[1400..1400] *))
+                (VP (TO:[1401..1403] to)
+                  (VP (VB:[1404..1406] be)
+                    (NP-PRD
+                      (NP (DT:[1407..1409] no) (JJ:[1410..1419] intrinsic)
+                          (NN:[1420..1428] relation))
+                      (PP (IN:[1429..1436] between)
+                        (NP
+                          (NP (NN:[1437..1442] K-ras)
+                            (NML (NN:[1443..1448] codon) (CD:[1449..1451] 12))
+                            (NN:[1452..1460] mutation))
+                          (CC:[1461..1464] and)
+                          (NML (NN:[1466..1475] dysplasia)))))))))))))
+    (.:[1475..1476] .)))
+;ERROR_Entity in section[1437..1442]:gene-rna "K-ras"
+;ERROR_Entity in section[1443..1451]:variation-location "codon 12"
+;ERROR_Entity in section[1452..1460]:variation-event "mutation"
+;ERROR_Entity in section[1466..1475]:malignancy "dysplasia"
+
+;section 13 Span:1480..1524
+;PMID: 9378385 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1480..1484] PMID) (::[1484..1485] :) (CD:[1486..1493] 9378385)
+        (NN:[1494..1495] -LSB-) (NNP:[1495..1501] PubMed) (::[1502..1503] -)
+        (NN:[1504..1511] indexed) (IN:[1512..1515] for)
+        (NNP:[1516..1524] MEDLINE-RSB-)))

@@ -1,0 +1,475 @@
+;PMID: 9107428
+;source_file_1308.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..54] = [t:0..54]
+;1)sentence:[e:59..108] = [t:59..108]
+;2)section:[e:112..207] = [t:112..207]
+;3)section:[e:211..307] = [t:211..307]
+;4)sentence:[e:311..552] = [t:311..552]
+;5)sentence:[e:554..673] = [t:554..673]
+;6)sentence:[e:674..916] = [t:674..916]
+;7)sentence:[e:917..1039] = [t:917..1039]
+;8)sentence:[e:1040..1230] = [t:1040..1230]
+;9)sentence:[e:1231..1386] = [t:1231..1386]
+;10)sentence:[e:1387..1555] = [t:1387..1555]
+;11)sentence:[e:1557..1629] = [t:1557..1629]
+;12)sentence:[e:1630..1738] = [t:1630..1738]
+;13)sentence:[e:1739..1887] = [t:1739..1887]
+;14)section:[e:1891..1935] = [t:1891..1935]
+
+;section 0 Span:0..54
+;Cancer Epidemiol Biomarkers Prev  1997 Apr;6(4):239-43
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..16] Epidemiol) (NNP:[17..27] Biomarkers)
+        (NNP:[28..32] Prev) (CD:[34..38] 1997) (CC:[39..43] Apr;)
+        (CD:[43..44] 6) (NN:[44..45] -LRB-) (NN:[45..46] 4) (NN:[46..47] -RRB-)
+        (::[47..48] :) (CD:[48..51] 239) (CD:[51..54] -43)))
+
+;sentence 1 Span:59..108
+;Ras oncogene mutations in childhood brain tumors.
+;[59..62]:gene-rna:"Ras"
+;[85..94]:malignancy-developmental-state:"childhood"
+;[95..107]:malignancy-type:"brain tumors"
+(SENT
+  (NP-HLN
+    (NP (NN:[59..62] Ras) (NN:[63..71] oncogene) (NNS:[72..81] mutations))
+    (PP-LOC (IN:[82..84] in)
+      (NP (NN:[85..94] childhood)
+         (NN:[95..100] brain) (NNS:[101..107] tumors)))
+    (.:[107..108] .)))
+
+;section 2 Span:112..207
+;Maltzman TH, Mueller BA, Schroeder J, Rutledge JC, Patterson K,
+;Preston-Martin  S, Faustman EM.
+(SEC
+  (FRAG (NNP:[112..120] Maltzman) (NNP:[121..123] TH) (,:[123..124] ,)
+        (NNP:[125..132] Mueller) (NNP:[133..135] BA) (,:[135..136] ,)
+        (NNP:[137..146] Schroeder) (NNP:[147..149] J,) (NNP:[150..158] Rutledge)
+        (NNP:[159..161] JC) (,:[161..162] ,) (NNP:[163..172] Patterson)
+        (NNP:[173..175] K,) (NNP:[176..183] Preston) (NNP:[183..190] -Martin)
+        (NNP:[192..193] S) (,:[193..194] ,) (NNP:[195..203] Faustman)
+        (NN:[204..206] EM) (.:[206..207] .)))
+
+;section 3 Span:211..307
+;Division of Gastroenterology, University of Colorado Health Sciences Center, 
+;Denver 80262, USA.
+(SEC
+  (FRAG (NNP:[211..219] Division) (IN:[220..222] of)
+        (NNP:[223..239] Gastroenterology) (,:[239..240] ,)
+        (NNP:[241..251] University) (IN:[252..254] of) (NNP:[255..263] Colorado)
+        (NNP:[264..270] Health) (NNP:[271..279] Sciences)
+        (NNP:[280..286] Center) (,:[286..287] ,) (NNP:[289..295] Denver)
+        (CD:[296..301] 80262) (,:[301..302] ,) (NNP:[303..306] USA)
+        (.:[306..307] .)))
+
+;sentence 4 Span:311..552
+;Although N-nitroso compounds (NNC) are ubiquitous in the human environment
+;and  are known neurocarcinogens in animal models, results of epidemiological
+;studies  have not yet convincingly associated NNCs with brain tumor
+;occurrence in humans.
+;[519..530]:malignancy-type:"brain tumor"
+(SENT
+  (S
+    (SBAR-ADV (IN:[311..319] Although)
+      (S
+        (NP-SBJ
+          (NP (NN:[320..329] N-nitroso) (NNS:[330..339] compounds))
+          (NP (-LRB-:[340..341] -LRB-) (NN:[341..344] NNC)
+              (-RRB-:[344..345] -RRB-)))
+        (VP
+          (VP (VBP:[346..349] are)
+            (ADJP-PRD (JJ:[350..360] ubiquitous))
+            (PP-LOC (IN:[361..363] in)
+              (NP (DT:[364..367] the) (JJ:[368..373] human)
+                  (NN:[374..385] environment))))
+          (CC:[386..389] and)
+          (VP (VBP:[391..394] are)
+            (NP-LOC (VBN:[395..400] known) (NNS:[401..417] neurocarcinogens))
+            (PP (IN:[418..420] in)
+              (NP (NN:[421..427] animal) (NNS:[428..434] models)))))))
+    (,:[434..435] ,)
+    (NP-SBJ
+      (NP (NNS:[436..443] results))
+      (PP (IN:[444..446] of)
+        (NP (JJ:[447..462] epidemiological) (NNS:[463..470] studies))))
+    (VP (VBP:[472..476] have) (RB:[477..480] not)
+      (ADVP-TMP (RB:[481..484] yet))
+      (ADVP (RB:[485..497] convincingly))
+      (VP (VBN:[498..508] associated)
+        (NP (NNS:[509..513] NNCs))
+        (PP-CLR (IN:[514..518] with)
+          (NP
+            (NP
+               (NN:[519..524] brain) (NN:[525..530] tumor)
+              (NN:[531..541] occurrence))
+            (PP (IN:[542..544] in)
+              (NP (NNS:[545..551] humans)))))))
+    (.:[551..552] .)))
+
+;sentence 5 Span:554..673
+;Animal studies have suggested that specific codons (12, 13, and 61) in the
+;ras  family are mutable by exposure to NNCs.
+;[598..604]...[618..620]:variation-location:"codons"..."61"
+;[598..604]...[610..612]:variation-location:"codons"..."13"
+;[598..604]...[606..608]:variation-location:"codons"..."12"
+;[629..632]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (NN:[554..560] Animal) (NNS:[561..568] studies))
+    (VP (VBP:[569..573] have)
+      (VP (VBN:[574..583] suggested)
+        (SBAR (IN:[584..588] that)
+          (S
+            (NP-SBJ
+              (NP (JJ:[589..597] specific) (NNS:[598..604] codons)
+                (PRN (-LRB-:[605..606] -LRB-)
+                  (NP
+                    (NP (CD:[606..608] 12))
+                    (,:[608..609] ,)
+                    (NP (CD:[610..612] 13))
+                    (,:[612..613] ,) (CC:[614..617] and)
+                    (NP (CD:[618..620] 61)))
+                  (-RRB-:[620..621] -RRB-)))
+              (PP (IN:[622..624] in)
+                (NP (DT:[625..628] the) (NN:[629..632] ras)
+                    (NN:[634..640] family))))
+            (VP (VBP:[641..644] are)
+              (ADJP-PRD (JJ:[645..652] mutable)
+                (PP (IN:[653..655] by)
+                  (NP
+                    (NP (NN:[656..664] exposure))
+                    (PP (TO:[665..667] to)
+                      (NP (NNS:[668..672] NNCs)))))))))))
+    (.:[672..673] .)))
+
+;sentence 6 Span:674..916
+;The purpose of this study was to measure  the presence of mutations in the
+;ras family of oncogenes in tissue from  childhood brain (CB) tumors as a
+;preliminary step toward investigating their  potential use as biomarkers of
+;chemical exposure.
+;[749..752]:gene-rna:"ras"
+;[789..798]:malignancy-developmental-state:"childhood"
+;[799..816]:malignancy-type:"brain (CB) tumors"
+;[806..808]:malignancy-type:"CB"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[674..677] The) (NN:[678..685] purpose))
+      (PP (IN:[686..688] of)
+        (NP (DT:[689..693] this) (NN:[694..699] study))))
+    (VP (VBD:[700..703] was)
+      (S-PRD
+        (NP-SBJ (-NONE-:[703..703] *))
+        (VP (TO:[704..706] to)
+          (VP (VB:[707..714] measure)
+            (NP
+              (NP (DT:[716..719] the) (NN:[720..728] presence))
+              (PP (IN:[729..731] of)
+                (NP
+                  (NP (NNS:[732..741] mutations))
+                  (PP (IN:[742..744] in)
+                    (NP
+                      (NP (DT:[745..748] the) (NN:[749..752] ras)
+                          (NN:[753..759] family))
+                      (PP (IN:[760..762] of)
+                        (NP (NNS:[763..772] oncogenes))))))))
+            (PP-LOC (IN:[773..775] in)
+              (NP
+                (NP (NN:[776..782] tissue))
+                (PP (IN:[783..787] from)
+                  (NP
+                    (NML
+                      (NML (NN:[789..798] childhood) (NN:[799..804] brain))
+                      (NML (-LRB-:[805..806] -LRB-) (NN:[806..808] CB)
+                           (-RRB-:[808..809] -RRB-)))
+                    (NNS:[810..816] tumors)))))
+            (PP (IN:[817..819] as)
+              (NP
+                (NP (DT:[820..821] a) (JJ:[822..833] preliminary)
+                    (NN:[834..838] step))
+                (PP (IN:[839..845] toward)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[845..845] *))
+                    (VP (VBG:[846..859] investigating)
+                      (NP
+                        (NP (PRP$:[860..865] their) (JJ:[867..876] potential)
+                            (NN:[877..880] use))
+                        (PP (IN:[881..883] as)
+                          (NP
+                            (NP (NNS:[884..894] biomarkers))
+                            (PP (IN:[895..897] of)
+                              (NP (JJ:[898..906] chemical)
+                                  (NN:[907..915] exposure)))))))))))))))
+    (.:[915..916] .)))
+
+;sentence 7 Span:917..1039
+;DNA was extracted from  paraffin-embedded formalin-fixed CB tumors from
+;tissues resected during  neurosurgical operations.
+;[974..983]:malignancy-type:"CB tumors"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[917..920] DNA))
+    (VP (VBD:[921..924] was)
+      (VP (VBN:[925..934] extracted)
+        (NP-1 (-NONE-:[934..934] *))
+        (PP-CLR (IN:[935..939] from)
+          (NP
+            (NP
+              (ADJP (NN:[941..949] paraffin) (HYPH:[949..950] -)
+                    (VBN:[950..958] embedded))
+              (ADJP (NN:[959..967] formalin) (HYPH:[967..968] -)
+                    (VBN:[968..973] fixed))
+               (NN:[974..976] CB) (NNS:[977..983] tumors))
+            (PP (IN:[984..988] from)
+              (NP
+                (NP (NNS:[989..996] tissues))
+                (VP (VBN:[997..1005] resected)
+                  (NP (-NONE-:[1005..1005] *))
+                  (PP-TMP (IN:[1006..1012] during)
+                    (NP (JJ:[1014..1027] neurosurgical)
+                        (NNS:[1028..1038] operations))))))))))
+    (.:[1038..1039] .)))
+
+;sentence 8 Span:1040..1230
+;Using the PCR, designed RFLP-screening methods, and  sequencing, we attempted
+;to screen brain tumors from 46 children for the  presence of H, K, and N-ras
+;mutations at codons 12, 13, and 61.
+;[1128..1140]:malignancy-type:"brain tumors"
+;[1149..1157]:malignancy-developmental-state:"children"
+;[1179..1180]...[1191..1194]:gene-rna:"H"..."ras"
+;[1182..1183]...[1191..1194]:gene-rna:"K"..."ras"
+;[1189..1194]:gene-rna:"N-ras"
+;[1195..1204]:variation-event:"mutations"
+;[1208..1217]:variation-location:"codons 12"
+;[1208..1214]...[1227..1229]:variation-location:"codons"..."61"
+;[1208..1214]...[1219..1221]:variation-location:"codons"..."13"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[1040..1040] *))
+      (VP (VBG:[1040..1045] Using)
+        (NP
+          (NP (DT:[1046..1049] the) (NN:[1050..1053] PCR))
+          (,:[1053..1054] ,)
+          (NP (VBN:[1055..1063] designed)
+            (ADJP (NN:[1064..1068] RFLP) (HYPH:[1068..1069] -)
+                  (VBG:[1069..1078] screening))
+            (NNS:[1079..1086] methods))
+          (,:[1086..1087] ,) (CC:[1088..1091] and)
+          (NP (NN:[1093..1103] sequencing)))))
+    (,:[1103..1104] ,)
+    (NP-SBJ (PRP:[1105..1107] we))
+    (VP (VBD:[1108..1117] attempted)
+      (S
+        (NP-SBJ (-NONE-:[1117..1117] *))
+        (VP (TO:[1118..1120] to)
+          (VP (VB:[1121..1127] screen)
+            (NP
+              (NP (NN:[1128..1133] brain) (NNS:[1134..1140] tumors))
+              (PP (IN:[1141..1145] from)
+                (NP (CD:[1146..1148] 46) (NNS:[1149..1157] children))))
+            (PP (IN:[1158..1161] for)
+              (NP
+                (NP (DT:[1162..1165] the) (NN:[1167..1175] presence))
+                (PP (IN:[1176..1178] of)
+                  (NP
+                    (NP
+                      (NP
+                        (NML (NN:[1179..1180] H)
+                          (NML-2 (-NONE-:[1180..1180] *P*)))
+                        (NML-1 (-NONE-:[1180..1180] *P*)))
+                      (,:[1180..1181] ,)
+                      (NP
+                        (NML (NN:[1182..1183] K)
+                          (NML-2 (-NONE-:[1183..1183] *P*)))
+                        (NML-1 (-NONE-:[1183..1183] *P*)))
+                      (,:[1183..1184] ,) (CC:[1185..1188] and)
+                      (NP
+                        (NML (NN:[1189..1190] N) (HYPH:[1190..1191] -)
+                          (NML-2 (NN:[1191..1194] ras)))
+                        (NML-1 (NNS:[1195..1204] mutations))))
+                    (PP-LOC (IN:[1205..1207] at)
+                      (NP
+                        (NP
+                          (NML-3 (NNS:[1208..1214] codons))
+                          (CD:[1215..1217] 12))
+                        (,:[1217..1218] ,)
+                        (NP
+                          (NML-3 (-NONE-:[1218..1218] *P*))
+                          (CD:[1219..1221] 13))
+                        (,:[1221..1222] ,) (CC:[1223..1226] and)
+                        (NP
+                          (NML-3 (-NONE-:[1226..1226] *P*))
+                          (CD:[1227..1229] 61))))))))))))
+    (.:[1229..1230] .)))
+
+;sentence 9 Span:1231..1386
+;Screening for  oncogene mutations using PCR, RFLP methods, and DNA sequencing
+;was successfully  completed for a high proportion of the available
+;specimens.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1231..1240] Screening))
+      (PP (IN:[1241..1244] for)
+        (NP
+          (NP (NN:[1246..1254] oncogene) (NNS:[1255..1264] mutations))
+          (VP (VBG:[1265..1270] using)
+            (NP
+              (NP (NN:[1271..1274] PCR))
+              (,:[1274..1275] ,)
+              (NP (NN:[1276..1280] RFLP)
+                (NML (NNS:[1281..1288] methods)))
+              (,:[1288..1289] ,) (CC:[1290..1293] and)
+              (NP (NN:[1294..1297] DNA) (NN:[1298..1308] sequencing)))))))
+    (VP (VBD:[1309..1312] was)
+      (ADVP (RB:[1313..1325] successfully))
+      (VP (VBN:[1327..1336] completed)
+        (NP-1 (-NONE-:[1336..1336] *))
+        (PP (IN:[1337..1340] for)
+          (NP
+            (NP (DT:[1341..1342] a) (JJ:[1343..1347] high)
+                (NN:[1348..1358] proportion))
+            (PP (IN:[1359..1361] of)
+              (NP (DT:[1362..1365] the) (JJ:[1366..1375] available)
+                  (NNS:[1376..1385] specimens)))))))
+    (.:[1385..1386] .)))
+
+;sentence 10 Span:1387..1555
+;Astrocytoma  specimens from three children for whom screening with PCR was
+;successfully  completed were found to contain CAA-->GAA point mutations in
+;K-ras at codon 61.
+;[1387..1398]:malignancy-type:"Astrocytoma"
+;[1421..1429]:malignancy-developmental-state:"children"
+;[1508..1511]:variation-state-original:"CAA"
+;[1514..1517]:variation-state-altered:"GAA"
+;[1518..1533]:variation-type:"point mutations"
+;[1537..1542]:gene-rna:"K-ras"
+;[1546..1554]:variation-location:"codon 61"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1387..1398] Astrocytoma) (NNS:[1400..1409] specimens))
+      (PP (IN:[1410..1414] from)
+        (NP
+          (NP (CD:[1415..1420] three) (NNS:[1421..1429] children))
+          (SBAR
+            (WHPP-1 (IN:[1430..1433] for)
+              (WHNP (WP:[1434..1438] whom)))
+            (S
+              (NP-SBJ
+                (NP (NN:[1439..1448] screening))
+                (PP (IN:[1449..1453] with)
+                  (NP (NN:[1454..1457] PCR))))
+              (VP (VBD:[1458..1461] was)
+                (ADVP (RB:[1462..1474] successfully))
+                (VP (VBN:[1476..1485] completed)
+                  (PP-1 (-NONE-:[1485..1485] *T*)))))))))
+    (VP (VBD:[1486..1490] were)
+      (VP (VBN:[1491..1496] found)
+        (S
+          (NP-SBJ-2 (-NONE-:[1496..1496] *))
+          (VP (TO:[1497..1499] to)
+            (VP (VB:[1500..1507] contain)
+              (NP
+                (NP
+                  (NML
+                    (NML (NN:[1508..1511] CAA))
+                    (PP (SYM:[1511..1514] -->)
+                      (NP (NN:[1514..1517] GAA))))
+                   (NN:[1518..1523] point) (NNS:[1524..1533] mutations))
+                (PP (IN:[1534..1536] in)
+                  (NP (NN:[1537..1542] K-ras))))
+              (PP-LOC (IN:[1543..1545] at)
+                (NP (NN:[1546..1551] codon) (CD:[1552..1554] 61))))))))
+    (.:[1554..1555] .)))
+
+;sentence 11 Span:1557..1629
+;None of the specimens contained mutations at any of the other locations.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1557..1561] None))
+      (PP (IN:[1562..1564] of)
+        (NP (DT:[1565..1568] the) (NNS:[1569..1578] specimens))))
+    (VP (VBD:[1579..1588] contained)
+      (NP (NNS:[1589..1598] mutations))
+      (PP-LOC (IN:[1599..1601] at)
+        (NP
+          (NP (DT:[1602..1605] any))
+          (PP (IN:[1606..1608] of)
+            (NP (DT:[1609..1612] the) (JJ:[1613..1618] other)
+                (NNS:[1619..1628] locations))))))
+    (.:[1628..1629] .)))
+
+;sentence 12 Span:1630..1738
+;These  results, although preliminary, provide a potential clue for future
+;mechanistic  studies of CB tumors.
+;[1728..1737]:malignancy-type:"CB tumors"
+(SENT
+  (S
+    (NP-SBJ (DT:[1630..1635] These) (NNS:[1637..1644] results))
+    (,:[1644..1645] ,)
+    (PP (IN:[1646..1654] although)
+      (NP (JJ:[1655..1666] preliminary)))
+    (,:[1666..1667] ,)
+    (VP (VBP:[1668..1675] provide)
+      (NP (DT:[1676..1677] a) (JJ:[1678..1687] potential) (NN:[1688..1692] clue))
+      (PP (IN:[1693..1696] for)
+        (NP
+          (NP (JJ:[1697..1703] future) (JJ:[1704..1715] mechanistic)
+              (NNS:[1717..1724] studies))
+          (PP (IN:[1725..1727] of)
+            (NP (NN:[1728..1730] CB) (NNS:[1731..1737] tumors))))))
+    (.:[1737..1738] .)))
+
+;sentence 13 Span:1739..1887
+;The possible roles of NNCs in inducing this mutation, or  of this mutation as
+;an early or late event in tumor progression, however, remain  unclear.
+;[1778..1791]:variation-event:"this mutation"
+;[1800..1813]:variation-event:"this mutation"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1739..1742] The) (JJ:[1743..1751] possible)
+          (NNS:[1752..1757] roles))
+      (PP
+        (PP (IN:[1758..1760] of)
+          (NP
+            (NP (NNS:[1761..1765] NNCs))
+            (PP (IN:[1766..1768] in)
+              (S-NOM
+                (NP-SBJ (-NONE-:[1768..1768] *))
+                (VP (VBG:[1769..1777] inducing)
+                  (NP (DT:[1778..1782] this) (NN:[1783..1791] mutation)))))))
+        (,:[1791..1792] ,) (CC:[1793..1795] or)
+        (PP (IN:[1797..1799] of)
+          (NP
+            (NP (DT:[1800..1804] this) (NN:[1805..1813] mutation))
+            (PP (IN:[1814..1816] as)
+              (NP
+                (NP (DT:[1817..1819] an)
+                  (NML
+                    (NML (JJ:[1820..1825] early)
+                      (NML-1 (-NONE-:[1825..1825] *P*)))
+                    (CC:[1826..1828] or)
+                    (NML (JJ:[1829..1833] late)
+                      (NML-1 (NN:[1834..1839] event)))))
+                (PP (IN:[1840..1842] in)
+                  (NP (NN:[1843..1848] tumor) (NN:[1849..1860] progression)))))))))
+    (,:[1860..1861] ,)
+    (ADVP (RB:[1862..1869] however))
+    (,:[1869..1870] ,)
+    (VP (VBP:[1871..1877] remain)
+      (ADJP-PRD (JJ:[1879..1886] unclear)))
+    (.:[1886..1887] .)))
+
+;section 14 Span:1891..1935
+;PMID: 9107428 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1891..1895] PMID) (::[1895..1896] :) (CD:[1897..1904] 9107428)
+        (NN:[1905..1906] -LSB-) (NNP:[1906..1912] PubMed) (::[1913..1914] -)
+        (NN:[1915..1922] indexed) (IN:[1923..1926] for)
+        (NNP:[1927..1935] MEDLINE-RSB-)))

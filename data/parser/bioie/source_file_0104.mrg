@@ -1,0 +1,342 @@
+;PMID: 4035074
+;source_file_1003.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..56] = [t:0..56]
+;1)sentence:[e:62..117] = [t:62..117]
+;2)section:[e:121..138] = [t:121..138]
+;3)sentence:[e:142..232] = [t:142..232]
+;4)sentence:[e:233..390] = [t:233..390]
+;5)sentence:[e:391..465] = [t:391..465]
+;6)sentence:[e:466..626] = [t:466..626]
+;7)sentence:[e:627..855] = [t:627..855]
+;8)sentence:[e:856..1009] = [t:856..1009]
+;9)sentence:[e:1010..1130] = [t:1010..1130]
+;10)sentence:[e:1131..1262] = [t:1131..1262]
+;11)section:[e:1266..1310] = [t:1266..1310]
+
+;section 0 Span:0..56
+;Res Commun Chem Pathol Pharmacol. 1985 Jul;49(1):109-24.
+(SEC
+  (FRAG (NNP:[0..3] Res) (NNP:[4..10] Commun) (NNP:[11..15] Chem)
+        (NNP:[16..22] Pathol) (NNP:[23..32] Pharmacol) (.:[32..33] .)
+        (CD:[34..38] 1985) (::[39..46] Jul;49-LRB-) (CD:[46..47] 1)
+        (-RRB-:[47..48] -RRB-) (CD:[48..52] :109) (::[52..53] -)
+        (CD:[53..55] 24) (.:[55..56] .)))
+
+;sentence 1 Span:62..117
+;Kinetics of microsomal metabolism of quinidine in rats.
+;[99..108]:substance:"quinidine"
+(SENT
+  (NP-HLN
+    (NP (NN:[62..70] Kinetics))
+    (PP (IN:[71..73] of)
+      (NP
+        (NP (JJ:[74..84] microsomal) (NN:[85..95] metabolism))
+        (PP (IN:[96..98] of)
+          (NP (NN:[99..108] quinidine)))
+        (PP-LOC (IN:[109..111] in)
+          (NP (NNS:[112..116] rats)))))
+    (.:[116..117] .)))
+
+;section 2 Span:121..138
+;Rakhit A, Mico B.
+(SEC
+  (FRAG (NNP:[121..127] Rakhit) (NNP:[128..129] A) (,:[129..130] ,)
+        (NNP:[131..135] Mico) (NNP:[136..138] B.)))
+
+;sentence 3 Span:142..232
+;Kinetics of in vitro metabolism of quinidine was investigated using rat liver
+; microsomes.
+;[177..186]:substance:"quinidine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[142..150] Kinetics))
+      (PP (IN:[151..153] of)
+        (NP
+          (NP
+            (ADJP (FW:[154..156] in) (FW:[157..162] vitro))
+            (NN:[163..173] metabolism))
+          (PP (IN:[174..176] of)
+            (NP (NN:[177..186] quinidine))))))
+    (VP (VBD:[187..190] was)
+      (VP (VBN:[191..203] investigated)
+        (NP-1 (-NONE-:[203..203] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[203..203] *))
+          (VP (VBG:[204..209] using)
+            (NP (NN:[210..213] rat) (NN:[214..219] liver)
+                (NNS:[221..231] microsomes))))))
+    (.:[231..232] .)))
+
+;sentence 4 Span:233..390
+;Quinidine elimination was capacity limited with apparent Michaelis  constant
+;(appKM) of 2.6 microM (about 1.2 mg/L) in liver microsomes from  uninduced
+;rats.
+;[233..242]:substance:"Quinidine"
+;[311..316]:quantitative-name:"appKM"
+;[321..324]:quantitative-value:"2.6"
+;[325..331]:quantitative-units:"microM"
+;[339..342]:quantitative-value:"1.2"
+;[343..347]:quantitative-units:"mg/L"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[233..242] Quinidine) (NN:[243..254] elimination))
+    (VP (VBD:[255..258] was)
+      (NP-ADV (NN:[259..267] capacity))
+      (VP (VBN:[268..275] limited)
+        (NP-1 (-NONE-:[275..275] *))
+        (PP (IN:[276..280] with)
+          (NP
+            (NP
+              (NP (JJ:[281..289] apparent) (NNP:[290..299] Michaelis)
+                  (NN:[301..309] constant))
+              (NP (-LRB-:[310..311] -LRB-) (NN:[311..316] appKM)
+                  (-RRB-:[316..317] -RRB-)))
+            (PP (IN:[318..320] of)
+              (NP (CD:[321..324] 2.6) (NN:[325..331] microM)
+                (PRN (-LRB-:[332..333] -LRB-)
+                  (NP
+                    (NP
+                      (QP (RB:[333..338] about) (CD:[339..342] 1.2))
+                      (NN:[343..345] mg))
+                    (PP (SYM:[345..346] /)
+                      (NP (NN:[346..347] L))))
+                  (-RRB-:[347..348] -RRB-))))))
+        (PP-LOC (IN:[349..351] in)
+          (NP
+            (NP (NN:[352..357] liver) (NNS:[358..368] microsomes))
+            (PP (IN:[369..373] from)
+              (NP (JJ:[375..384] uninduced) (NNS:[385..389] rats)))))))
+    (.:[389..390] .)))
+
+;sentence 5 Span:391..465
+;Phenobarbital (PB) pretreatment caused induction of quinidine  metabolism.
+;[391..404]:substance:"Phenobarbital"
+;[406..408]:substance:"PB"
+;[443..452]:substance:"quinidine"
+(SENT
+  (S
+    (NP-SBJ
+      (NML
+        (NML (NN:[391..404] Phenobarbital))
+        (NML (-LRB-:[405..406] -LRB-) (NN:[406..408] PB)
+             (-RRB-:[408..409] -RRB-)))
+      (NN:[410..422] pretreatment))
+    (VP (VBD:[423..429] caused)
+      (NP
+        (NP (NN:[430..439] induction))
+        (PP (IN:[440..442] of)
+          (NP (NN:[443..452] quinidine) (NN:[454..464] metabolism)))))
+    (.:[464..465] .)))
+
+;sentence 6 Span:466..626
+;Formation of all three metabolites important in man,  3-hydroxyquinidine,
+;quinidine N-oxide and quinidine 10,11-dihydrodiol were PB  inducible (Vmax
+;increased).
+;[489..500]:substance:"metabolites"
+;[520..538]:substance:"3-hydroxyquinidine"
+;[540..557]:substance:"quinidine N-oxide"
+;[562..589]:substance:"quinidine 10,11-dihydrodiol"
+;[595..597]:substance:"PB"
+;[610..614]:quantitative-name:"Vmax"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[466..475] Formation))
+      (PP (IN:[476..478] of)
+        (NP
+          (NP
+            (NP (DT:[479..482] all) (CD:[483..488] three)
+                (NNS:[489..500] metabolites))
+            (ADJP (JJ:[501..510] important)
+              (PP (IN:[511..513] in)
+                (NP (NN:[514..517] man)))))
+          (,:[517..518] ,)
+          (NP
+            (NP (NN:[520..538] 3-hydroxyquinidine))
+            (,:[538..539] ,)
+            (NP (NN:[540..549] quinidine) (NN:[550..557] N-oxide))
+            (CC:[558..561] and)
+            (NP (NN:[562..571] quinidine) (NN:[572..589] 10,11-dihydrodiol))))))
+    (VP (VBD:[590..594] were)
+      (ADJP-PRD (NN:[595..597] PB) (JJ:[599..608] inducible)
+        (PRN (-LRB-:[609..610] -LRB-)
+          (S
+            (NP-SBJ (NN:[610..614] Vmax))
+            (VP (VBD:[615..624] increased)))
+          (-RRB-:[624..625] -RRB-))))
+    (.:[625..626] .)))
+
+;sentence 7 Span:627..855
+;To study any direct interaction between PB and  quinidine, PB was also added
+;to the microsomal incubate and was found to  decrease the rate constant for
+;quinidine metabolism, suggesting inhibition of  quinidine metabolism by PB.
+;[667..669]:substance:"PB"
+;[675..684]:substance:"quinidine"
+;[686..688]:substance:"PB"
+;[780..789]:substance:"quinidine"
+;[828..837]:substance:"quinidine"
+;[852..854]:substance:"PB"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[627..627] *))
+      (VP (TO:[627..629] To)
+        (VP (VB:[630..635] study)
+          (NP
+            (NP (DT:[636..639] any) (JJ:[640..646] direct)
+                (NN:[647..658] interaction))
+            (PP (IN:[659..666] between)
+              (NP (NN:[667..669] PB) (CC:[670..673] and)
+                  (NN:[675..684] quinidine)))))))
+    (,:[684..685] ,)
+    (NP-SBJ-1 (NN:[686..688] PB))
+    (VP
+      (VP (VBD:[689..692] was)
+        (ADVP (RB:[693..697] also))
+        (VP (VBN:[698..703] added)
+          (NP-1 (-NONE-:[703..703] *))
+          (PP (TO:[704..706] to)
+            (NP (DT:[707..710] the) (JJ:[711..721] microsomal)
+                (NN:[722..730] incubate)))))
+      (CC:[731..734] and)
+      (VP (VBD:[735..738] was)
+        (VP (VBN:[739..744] found)
+          (S
+            (NP-SBJ-1 (-NONE-:[744..744] *))
+            (VP (TO:[745..747] to)
+              (VP (VB:[749..757] decrease)
+                (NP
+                  (NP (DT:[758..761] the) (NN:[762..766] rate)
+                      (NN:[767..775] constant))
+                  (PP (IN:[776..779] for)
+                    (NP (NN:[780..789] quinidine) (NN:[790..800] metabolism))))
+                (,:[800..801] ,)
+                (S-ADV
+                  (NP-SBJ (-NONE-:[801..801] *))
+                  (VP (VBG:[802..812] suggesting)
+                    (NP
+                      (NP (NN:[813..823] inhibition))
+                      (PP (IN:[824..826] of)
+                        (NP (NN:[828..837] quinidine) (NN:[838..848] metabolism)))
+                      (PP (IN:[849..851] by)
+                        (NP (NN:[852..854] PB))))))))))))
+    (.:[854..855] .)))
+
+;sentence 8 Span:856..1009
+;While, 3-hydroxyquinidine formation was inhibited  (Vmax decreased and KM
+;increased), the formation of quinidine N-oxide was  activated (Vmax
+;increased).
+;[863..881]:substance:"3-hydroxyquinidine"
+;[908..912]:quantitative-name:"Vmax"
+;[927..929]:quantitative-name:"KM"
+;[959..976]:substance:"quinidine N-oxide"
+;[993..997]:quantitative-name:"Vmax"
+(SENT
+  (S
+    (SBAR-ADV (IN:[856..861] While) (.:[861..862] ,)
+      (S
+        (NP-SBJ-1 (NN:[863..881] 3-hydroxyquinidine) (NN:[882..891] formation))
+        (VP (VBD:[892..895] was)
+          (VP (VBN:[896..905] inhibited)
+            (NP-1 (-NONE-:[905..905] *))
+            (PRN (-LRB-:[907..908] -LRB-)
+              (S
+                (S
+                  (NP-SBJ (NN:[908..912] Vmax))
+                  (VP (VBD:[913..922] decreased)))
+                (CC:[923..926] and)
+                (S
+                  (NP-SBJ (NN:[927..929] KM))
+                  (VP (VBD:[930..939] increased))))
+              (-RRB-:[939..940] -RRB-))))))
+    (,:[940..941] ,)
+    (NP-SBJ-2
+      (NP (DT:[942..945] the) (NN:[946..955] formation))
+      (PP (IN:[956..958] of)
+        (NP (NN:[959..968] quinidine) (NN:[969..976] N-oxide))))
+    (VP (VBD:[977..980] was)
+      (VP (VBN:[982..991] activated)
+        (NP-2 (-NONE-:[991..991] *))
+        (PRN (-LRB-:[992..993] -LRB-)
+          (S
+            (NP-SBJ (NN:[993..997] Vmax))
+            (VP (VBD:[998..1007] increased)))
+          (-RRB-:[1007..1008] -RRB-))))
+    (.:[1008..1009] .)))
+
+;sentence 9 Span:1010..1130
+;The formation of quinidine 10,11-dihydrodiol,  although a minor metabolite in
+;rat, was also inhibited in presence of PB.
+;[1027..1054]:substance:"quinidine 10,11-dihydrodiol"
+;[1074..1084]:substance:"metabolite"
+;[1127..1129]:substance:"PB"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1010..1013] The) (NN:[1014..1023] formation))
+      (PP (IN:[1024..1026] of)
+        (NP
+          (NP (NN:[1027..1036] quinidine) (NN:[1037..1054] 10,11-dihydrodiol))
+          (FRAG (,:[1054..1055] ,) (IN:[1057..1065] although)
+            (NP
+              (NP (DT:[1066..1067] a) (JJ:[1068..1073] minor)
+                  (NN:[1074..1084] metabolite))
+              (PP (IN:[1085..1087] in)
+                (NP (NN:[1088..1091] rat))))
+            (,:[1091..1092] ,)))))
+    (VP (VBD:[1093..1096] was)
+      (ADVP (RB:[1097..1101] also))
+      (VP (VBN:[1102..1111] inhibited)
+        (NP-1 (-NONE-:[1111..1111] *))
+        (PP (IN:[1112..1114] in)
+          (NP
+            (NP (NN:[1115..1123] presence))
+            (PP (IN:[1124..1126] of)
+              (NP (NN:[1127..1129] PB)))))))
+    (.:[1129..1130] .)))
+
+;sentence 10 Span:1131..1262
+;It is  apparent from this study that PB when administered in vivo would act
+;as both  inducer and inhibitor of quinidine metabolism.
+;[1168..1170]:substance:"PB"
+;[1216..1223]:substance:"inducer"
+;[1228..1237]:substance:"inhibitor"
+;[1241..1250]:substance:"quinidine"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1131..1133] It))
+    (VP (VBZ:[1134..1136] is)
+      (ADJP-PRD (JJ:[1138..1146] apparent)
+        (PP (IN:[1147..1151] from)
+          (NP (DT:[1152..1156] this) (NN:[1157..1162] study)))
+        (SBAR (IN:[1163..1167] that)
+          (S
+            (NP-SBJ (NN:[1168..1170] PB))
+            (SBAR-ADV (IN:[1171..1175] when)
+              (S
+                (NP-SBJ-2 (-NONE-:[1175..1175] *))
+                (VP (VBN:[1176..1188] administered)
+                  (NP-2 (-NONE-:[1188..1188] *))
+                  (ADVP (FW:[1189..1191] in) (FW:[1192..1196] vivo)))))
+            (VP (MD:[1197..1202] would)
+              (VP (VB:[1203..1206] act)
+                (PP (IN:[1207..1209] as)
+                  (NP
+                    (NP (CC:[1210..1214] both) (NN:[1216..1223] inducer)
+                        (CC:[1224..1227] and) (NN:[1228..1237] inhibitor))
+                    (PP (IN:[1238..1240] of)
+                      (NP (NN:[1241..1250] quinidine)
+                          (NN:[1251..1261] metabolism)))))))))))
+    (.:[1261..1262] .)))
+
+;section 11 Span:1266..1310
+;PMID: 4035074 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1266..1270] PMID) (::[1270..1271] :) (CD:[1272..1279] 4035074)
+        (NN:[1280..1281] -LSB-) (NNP:[1281..1287] PubMed) (::[1288..1289] -)
+        (NN:[1290..1297] indexed) (IN:[1298..1301] for)
+        (NNP:[1302..1310] MEDLINE-RSB-)))

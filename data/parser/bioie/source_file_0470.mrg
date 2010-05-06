@@ -1,0 +1,409 @@
+;PMID: 11160617
+;source_file_1940.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..151] = [t:50..151]
+;2)section:[e:155..201] = [t:155..201]
+;3)section:[e:205..323] = [t:205..323]
+;4)sentence:[e:327..423] = [t:327..423]
+;5)sentence:[e:424..519] = [t:424..519]
+;6)sentence:[e:520..762] = [t:520..762]
+;7)sentence:[e:763..950] = [t:763..950]
+;8)sentence:[e:951..1106] = [t:951..1106]
+;9)sentence:[e:1107..1238] = [t:1107..1238]
+;10)sentence:[e:1239..1498] = [t:1239..1498]
+;11)sentence:[e:1499..1606] = [t:1499..1606]
+;12)section:[e:1610..1655] = [t:1610..1655]
+
+;section 0 Span:0..44
+;J Pharmacol Exp Ther. 2001 Feb;296(2):351-8.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 2001)
+        (.:[27..34] Feb;296) (-LRB-:[34..35] -LRB-) (CD:[35..36] 2)
+        (-RRB-:[36..37] -RRB-) (::[37..38] :) (CD:[38..41] 351) (::[41..42] -)
+        (CD:[42..44] 8.)))
+
+;sentence 1 Span:50..151
+;Modulation of P450 CYP3A4-dependent metabolism by P-glycoprotein:
+;implications  for P450 phenotyping.
+;[64..75]:cyp450:"P450 CYP3A4"
+;[100..114]:substance:"P-glycoprotein"
+;[134..138]:cyp450:"P450"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[50..60] Modulation))
+      (PP (IN:[61..63] of)
+        (NP
+          (ADJP
+            (NML (NN:[64..68] P450) (NN:[69..75] CYP3A4))
+            (HYPH:[75..76] -) (JJ:[76..85] dependent))
+          (NN:[86..96] metabolism)))
+      (PP (IN:[97..99] by)
+        (NP (NN:[100..114] P-glycoprotein))))
+    (::[114..115] :)
+    (NP
+      (NP (NNS:[116..128] implications))
+      (PP (IN:[130..133] for)
+        (NP (NN:[134..138] P450) (NN:[139..150] phenotyping))))
+    (.:[150..151] .)))
+
+;section 2 Span:155..201
+;Baron JM, Goh LB, Yao D, Wolf CR, Friedberg T.
+(SEC
+  (FRAG (NNP:[155..160] Baron) (NNP:[161..163] JM) (,:[163..164] ,)
+        (NNP:[165..168] Goh) (NNP:[169..171] LB) (,:[171..172] ,)
+        (NNP:[173..176] Yao) (NNP:[177..178] D) (,:[178..179] ,)
+        (NNP:[180..184] Wolf) (NNP:[185..187] CR) (,:[187..188] ,)
+        (NNP:[189..198] Friedberg) (NNP:[199..201] T.)))
+
+;section 3 Span:205..323
+;Department of Dermatology, University Hospital, Rheinland-Westfalische 
+;Technische Hochschule (RWTH), Aachen, Germany.
+(SEC
+  (FRAG (NNP:[205..215] Department) (IN:[216..218] of)
+        (NNP:[219..230] Dermatology) (,:[230..231] ,)
+        (NNP:[232..242] University) (NNP:[243..251] Hospital) (,:[251..252] ,)
+        (NNP:[253..262] Rheinland) (HYPH:[262..263] -)
+        (NNP:[263..275] Westfalische) (NNP:[277..287] Technische)
+        (NNP:[288..298] Hochschule) (-LRB-:[299..300] -LRB-)
+        (NN:[300..304] RWTH) (-RRB-:[304..305] -RRB-) (,:[305..306] ,)
+        (NNP:[307..313] Aachen) (,:[313..314] ,) (NNP:[315..322] Germany)
+        (.:[322..323] .)))
+
+;sentence 4 Span:327..423
+;Some compounds used for phenotyping of cytochrome P450s are substrates of 
+;P-glycoprotein (pgp).
+;[332..341]:substance:"compounds"
+;[366..382]:cyp450:"cytochrome P450s"
+;[387..397]:substance:"substrates"
+;[402..416]:substance:"P-glycoprotein"
+;[418..421]:substance:"pgp"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[327..331] Some) (NNS:[332..341] compounds))
+      (VP (VBN:[342..346] used)
+        (NP (-NONE-:[346..346] *))
+        (PP (IN:[347..350] for)
+          (NP
+            (NP (NN:[351..362] phenotyping))
+            (PP (IN:[363..365] of)
+              (NP (NN:[366..376] cytochrome) (NNS:[377..382] P450s)))))))
+    (VP (VBP:[383..386] are)
+      (NP-PRD
+        (NP (NNS:[387..397] substrates))
+        (PP (IN:[398..400] of)
+          (NP
+            (NP (NN:[402..416] P-glycoprotein))
+            (NP (-LRB-:[417..418] -LRB-) (NN:[418..421] pgp)
+                (-RRB-:[421..422] -RRB-))))))
+    (.:[422..423] .)))
+
+;sentence 5 Span:424..519
+;It is likely that in these cases, the level of pgp  modulates the metabolism
+;of in vivo probes.
+;[471..474]:substance:"pgp"
+;[512..518]:substance:"probes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (PRP:[424..426] It))
+      (SBAR-1 (-NONE-:[426..426] *EXP*)))
+    (VP (VBZ:[427..429] is)
+      (ADJP-PRD (JJ:[430..436] likely)
+        (SBAR-1 (IN:[437..441] that)
+          (S
+            (PP-LOC (IN:[442..444] in)
+              (NP (DT:[445..450] these) (NNS:[451..456] cases)))
+            (,:[456..457] ,)
+            (NP-SBJ
+              (NP (DT:[458..461] the) (NN:[462..467] level))
+              (PP (IN:[468..470] of)
+                (NP (NN:[471..474] pgp))))
+            (VP (VBZ:[476..485] modulates)
+              (NP
+                (NP (DT:[486..489] the) (NN:[490..500] metabolism))
+                (PP (IN:[501..503] of)
+                  (NP
+                    (ADJP (FW:[504..506] in) (FW:[507..511] vivo))
+                    (NNS:[512..518] probes)))))))))
+    (.:[518..519] .)))
+
+;sentence 6 Span:520..762
+;To address this important issue, we  have analyzed the effects of pgp on
+;CYP3A4-mediated reactions in two newly  established cell lines (3A4/HR/MDR(-)
+;and 3A4/HR/MDR(+)), which express CYP3A4  in the absence and presence of pgp,
+;respectively.
+;[586..589]:substance:"pgp"
+;[593..599]:cyp450:"CYP3A4"
+;[705..711]:cyp450:"CYP3A4"
+;[744..747]:substance:"pgp"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[520..520] *))
+      (VP (TO:[520..522] To)
+        (VP (VB:[523..530] address)
+          (NP (DT:[531..535] this) (JJ:[536..545] important)
+              (NN:[546..551] issue)))))
+    (,:[551..552] ,)
+    (NP-SBJ (PRP:[553..555] we))
+    (VP (VBP:[557..561] have)
+      (VP (VBN:[562..570] analyzed)
+        (NP
+          (NP (DT:[571..574] the) (NNS:[575..582] effects))
+          (PP (IN:[583..585] of)
+            (NP (NN:[586..589] pgp)))
+          (PP (IN:[590..592] on)
+            (NP
+              (ADJP (NN:[593..599] CYP3A4) (HYPH:[599..600] -)
+                    (VBN:[600..608] mediated))
+              (NNS:[609..618] reactions))))
+        (PP-LOC (IN:[619..621] in)
+          (NP
+            (NP
+              (NP (CD:[622..625] two)
+                (ADJP (RB:[626..631] newly) (VBN:[633..644] established))
+                (NN:[645..649] cell) (NNS:[650..655] lines))
+              (NP (-LRB-:[656..657] -LRB-)
+                (NP (NN:[657..660] 3A4) (SYM:[660..661] /) (NN:[661..663] HR)
+                    (SYM:[663..664] /) (NN:[664..667] MDR)
+                    (-LRB-:[667..668] -LRB-) (SYM:[668..669] -)
+                    (-RRB-:[669..670] -RRB-))
+                (CC:[671..674] and)
+                (NP (NN:[675..678] 3A4) (SYM:[678..679] /) (NN:[679..681] HR)
+                    (SYM:[681..682] /) (NN:[682..685] MDR)
+                    (-LRB-:[685..686] -LRB-) (SYM:[686..687] +)
+                    (-RRB-:[687..688] -RRB-))
+                (-RRB-:[688..689] -RRB-))
+              (,:[689..690] ,))
+            (SBAR
+              (WHNP-2 (WDT:[691..696] which))
+              (S
+                (NP-SBJ-2 (-NONE-:[696..696] *T*))
+                (VP (VBP:[697..704] express)
+                  (NP (NN:[705..711] CYP3A4))
+                  (PP (IN:[713..715] in)
+                    (NP
+                      (NP (DT:[716..719] the) (NN:[720..727] absence)
+                          (CC:[728..731] and)
+                        (NML (NN:[732..740] presence)))
+                      (PP (IN:[741..743] of)
+                        (NP (NN:[744..747] pgp)))
+                      (,:[747..748] ,)
+                      (ADVP (RB:[749..761] respectively)))))))))))
+    (.:[761..762] .)))
+
+;sentence 7 Span:763..950
+;In cultured cells, the  presence of pgp increased the apparent K(m) for the
+;6beta-hydroxylase activity  of CYP3A4 toward testosterone and cortisol by a
+;factor of 1.7 and 4,  respectively.
+;[799..802]:substance:"pgp"
+;[826..830]:quantitative-name:"K(m)"
+;[839..856]:cyp450:"6beta-hydroxylase"
+;[870..876]:cyp450:"CYP3A4"
+;[884..896]:substance:"testosterone"
+;[901..909]:substance:"cortisol"
+;[925..928]:quantitative-value:"1.7"
+;[933..934]:quantitative-value:"4"
+(SENT
+  (S
+    (PP-LOC (IN:[763..765] In)
+      (NP (VBN:[766..774] cultured) (NNS:[775..780] cells)))
+    (,:[780..781] ,)
+    (NP-SBJ
+      (NP (DT:[782..785] the) (NN:[787..795] presence))
+      (PP (IN:[796..798] of)
+        (NP (NN:[799..802] pgp))))
+    (VP (VBD:[803..812] increased)
+      (NP (DT:[813..816] the) (JJ:[817..825] apparent)
+          (NN:[826..830] K-LRB-m-RRB-))
+      (PP (IN:[831..834] for)
+        (NP
+          (NP (DT:[835..838] the) (NN:[839..856] 6beta-hydroxylase)
+              (NN:[857..865] activity))
+          (PP (IN:[867..869] of)
+            (NP (NN:[870..876] CYP3A4)))
+          (PP (IN:[877..883] toward)
+            (NP (NN:[884..896] testosterone) (CC:[897..900] and)
+                (NN:[901..909] cortisol)))))
+      (PP-EXT (IN:[910..912] by)
+        (NP
+          (NP (DT:[913..914] a) (NN:[915..921] factor))
+          (PP (IN:[922..924] of)
+            (NP
+              (NP (CD:[925..928] 1.7) (CC:[929..932] and) (CD:[933..934] 4))
+              (,:[934..935] ,)
+              (ADVP (RB:[937..949] respectively)))))))
+    (.:[949..950] .)))
+
+;sentence 8 Span:951..1106
+;These steroids are poor and good substrates of pgp, respectively,  and
+;cortisol 6beta-hydroxylase has been frequently used as an in vivo probe for 
+;CYP3A4.
+;[957..965]:substance:"steroids"
+;[984..994]:substance:"substrates"
+;[998..1001]:substance:"pgp"
+;[1022..1048]:cyp450:"cortisol 6beta-hydroxylase"
+;[1088..1093]:substance:"probe"
+;[1099..1105]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[951..956] These) (NNS:[957..965] steroids))
+      (VP (VBP:[966..969] are)
+        (NP-PRD
+          (NP
+            (NP (JJ:[970..974] poor)
+              (NML-2 (-NONE-:[974..974] *P*)))
+            (CC:[975..978] and)
+            (NP (JJ:[979..983] good)
+              (NML-2 (NNS:[984..994] substrates))))
+          (PP (IN:[995..997] of)
+            (NP (NN:[998..1001] pgp)))
+          (,:[1001..1002] ,)
+          (ADVP (RB:[1003..1015] respectively)))))
+    (,:[1015..1016] ,) (CC:[1018..1021] and)
+    (S
+      (NP-SBJ-1 (NN:[1022..1030] cortisol) (NN:[1031..1048] 6beta-hydroxylase))
+      (VP (VBZ:[1049..1052] has)
+        (VP (VBN:[1053..1057] been)
+          (ADVP-TMP (RB:[1058..1068] frequently))
+          (VP (VBN:[1069..1073] used)
+            (NP-1 (-NONE-:[1073..1073] *))
+            (PP (IN:[1074..1076] as)
+              (NP
+                (NP (DT:[1077..1079] an)
+                  (ADJP (FW:[1080..1082] in) (FW:[1083..1087] vivo))
+                  (NN:[1088..1093] probe))
+                (PP (IN:[1094..1097] for)
+                  (NP (NN:[1099..1105] CYP3A4)))))))))
+    (.:[1105..1106] .)))
+
+;sentence 9 Span:1107..1238
+;Interestingly, we also found that pgp modulated the inhibition of 
+;CYP3A4-mediated metabolism by several compounds in intact cells.
+;[1141..1144]:substance:"pgp"
+;[1174..1180]:cyp450:"CYP3A4"
+;[1212..1221]:substance:"compounds"
+(SENT
+  (S
+    (ADVP (RB:[1107..1120] Interestingly))
+    (,:[1120..1121] ,)
+    (NP-SBJ (PRP:[1122..1124] we))
+    (VP
+      (ADVP (RB:[1125..1129] also))
+      (VBD:[1130..1135] found)
+      (SBAR (IN:[1136..1140] that)
+        (S
+          (NP-SBJ (NN:[1141..1144] pgp))
+          (VP (VBD:[1145..1154] modulated)
+            (NP
+              (NP (DT:[1155..1158] the) (NN:[1159..1169] inhibition))
+              (PP (IN:[1170..1172] of)
+                (NP
+                  (ADJP (NN:[1174..1180] CYP3A4) (HYPH:[1180..1181] -)
+                        (VBN:[1181..1189] mediated))
+                  (NN:[1190..1200] metabolism)))
+              (PP (IN:[1201..1203] by)
+                (NP (JJ:[1204..1211] several) (NNS:[1212..1221] compounds))))
+            (PP-LOC (IN:[1222..1224] in)
+              (NP (JJ:[1225..1231] intact) (NNS:[1232..1237] cells)))))))
+    (.:[1237..1238] .)))
+
+;sentence 10 Span:1239..1498
+;Although  quinidine inhibited testosterone 6beta-hydroxylase activity in
+;membranes or in  intact cells that expressed recombinant CYP3A4 in the
+;absence of pgp, low  concentrations of this compound increased CYP3A4
+;activity in intact cells that  expressed pgp.
+;[1249..1258]:substance:"quinidine"
+;[1269..1299]:cyp450:"testosterone 6beta-hydroxylase"
+;[1369..1375]:cyp450:"CYP3A4"
+;[1394..1397]:substance:"pgp"
+;[1427..1435]:substance:"compound"
+;[1446..1452]:cyp450:"CYP3A4"
+;[1494..1497]:substance:"pgp"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1239..1247] Although)
+      (S
+        (NP-SBJ (NN:[1249..1258] quinidine))
+        (VP (VBD:[1259..1268] inhibited)
+          (NP
+             (NN:[1269..1281] testosterone) (NN:[1282..1299] 6beta-hydroxylase)
+            (NN:[1300..1308] activity))
+          (PP-LOC
+            (PP (IN:[1309..1311] in)
+              (NP (NNS:[1312..1321] membranes)))
+            (CC:[1322..1324] or)
+            (PP (IN:[1325..1327] in)
+              (NP
+                (NP (JJ:[1329..1335] intact) (NNS:[1336..1341] cells))
+                (SBAR
+                  (WHNP-2 (WDT:[1342..1346] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[1346..1346] *T*))
+                    (VP (VBD:[1347..1356] expressed)
+                      (NP (JJ:[1357..1368] recombinant) (NN:[1369..1375] CYP3A4))
+                      (PP (IN:[1376..1378] in)
+                        (NP
+                          (NP (DT:[1379..1382] the) (NN:[1383..1390] absence))
+                          (PP (IN:[1391..1393] of)
+                            (NP (NN:[1394..1397] pgp))))))))))))))
+    (,:[1397..1398] ,)
+    (NP-SBJ
+      (NP (JJ:[1399..1402] low) (NNS:[1404..1418] concentrations))
+      (PP (IN:[1419..1421] of)
+        (NP (DT:[1422..1426] this) (NN:[1427..1435] compound))))
+    (VP (VBD:[1436..1445] increased)
+      (NP (NN:[1446..1452] CYP3A4) (NN:[1453..1461] activity))
+      (PP-LOC (IN:[1462..1464] in)
+        (NP
+          (NP (JJ:[1465..1471] intact) (NNS:[1472..1477] cells))
+          (SBAR
+            (WHNP-1 (WDT:[1478..1482] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[1482..1482] *T*))
+              (VP (VBD:[1484..1493] expressed)
+                (NP (NN:[1494..1497] pgp))))))))
+    (.:[1497..1498] .)))
+
+;sentence 11 Span:1499..1606
+;These results imply that pharmacokinetic drug-drug interactions  involving
+;CYP3A4 can be influenced by pgp.
+;[1540..1544]:substance:"drug"
+;[1545..1549]:substance:"drug"
+;[1574..1580]:cyp450:"CYP3A4"
+;[1602..1605]:substance:"pgp"
+(SENT
+  (S
+    (NP-SBJ (DT:[1499..1504] These) (NNS:[1505..1512] results))
+    (VP (VBP:[1513..1518] imply)
+      (SBAR (IN:[1519..1523] that)
+        (S
+          (NP-SBJ-1
+            (NP (JJ:[1524..1539] pharmacokinetic)
+              (NML (NN:[1540..1544] drug) (HYPH:[1544..1545] -)
+                   (NN:[1545..1549] drug))
+              (NNS:[1550..1562] interactions))
+            (VP (VBG:[1564..1573] involving)
+              (NP (NN:[1574..1580] CYP3A4))))
+          (VP (MD:[1581..1584] can)
+            (VP (VB:[1585..1587] be)
+              (VP (VBN:[1588..1598] influenced)
+                (NP-1 (-NONE-:[1598..1598] *))
+                (PP (IN:[1599..1601] by)
+                  (NP (NN:[1602..1605] pgp)))))))))
+    (.:[1605..1606] .)))
+
+;section 12 Span:1610..1655
+;PMID: 11160617 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1610..1614] PMID) (::[1614..1615] :) (CD:[1616..1624] 11160617)
+        (NN:[1625..1626] -LSB-) (NNP:[1626..1632] PubMed) (::[1633..1634] -)
+        (NN:[1635..1642] indexed) (IN:[1643..1646] for)
+        (NNP:[1647..1655] MEDLINE-RSB-)))

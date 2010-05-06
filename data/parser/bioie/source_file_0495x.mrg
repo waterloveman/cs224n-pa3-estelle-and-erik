@@ -1,0 +1,504 @@
+;PMID: 11241321
+;source_file_670.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..134] = [t:43..134]
+;2)section:[e:138..187] = [t:138..187]
+;3)section:[e:191..307] = [t:191..307]
+;4)sentence:[e:311..483] = [t:311..483]
+;5)sentence:[e:484..605] = [t:484..605]
+;6)sentence:[e:606..802] = [t:606..802]
+;7)sentence:[e:803..1022] = [t:803..1022]
+;8)sentence:[e:1023..1179] = [t:1023..1179]
+;9)sentence:[e:1180..1288] = [t:1180..1288]
+;10)sentence:[e:1289..1483] = [t:1289..1483]
+;11)sentence:[e:1484..1615] = [t:1484..1615]
+;12)sentence:[e:1616..1704] = [t:1616..1704]
+;13)sentence:[e:1705..1866] = [t:1705..1866]
+;14)sentence:[e:1868..1951] = [t:1868..1951]
+;15)sentence:[e:1952..2149] = [t:1952..2149]
+;16)section:[e:2150..2182] = [t:2150..2182]
+;17)section:[e:2186..2231] = [t:2186..2231]
+
+;section 0 Span:0..38
+;Int J Cancer  2001 Mar 20;95(2):108-13
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..12] Cancer) (CD:[14..18] 2001)
+        (CC:[19..22] Mar) ($:[23..29] 20;95-LRB-) (CD:[29..30] 2)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :108) (HYPH:[35..36] -)
+        (CD:[36..38] 13)))
+
+;sentence 1 Span:43..134
+;Altered expression and mutation of beta-catenin gene in gastric carcinomas
+;and  cell lines.
+;[78..90]:gene-rna:"beta-catenin"
+;[99..117]:malignancy:"gastric carcinomas"
+;[99..106]...[123..133]:malignancy:"gastric"..."cell lines"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (VBN:[43..50] Altered) (NN:[51..61] expression))
+      (CC:[62..65] and)
+      (NP (NN:[66..74] mutation)))
+    (PP (IN:[75..77] of)
+      (NP (NN:[78..90] beta-catenin) (NN:[91..95] gene)))
+    (PP-LOC (IN:[96..98] in)
+      (NP
+        (NP
+          (ADJP-1 (JJ:[99..106] gastric))
+          (NNS:[107..117] carcinomas))
+        (CC:[118..121] and)
+        (NP
+          (ADJP-1 (-NONE-:[121..121] *P*))
+          (NN:[123..127] cell) (NNS:[128..133] lines))))
+    (.:[133..134] .)))
+
+;section 2 Span:138..187
+;Woo DK, Kim HS, Lee HS, Kang YH, Yang HK, Kim WH.
+(SEC
+  (FRAG (NNP:[138..141] Woo) (NNP:[142..144] DK) (,:[144..145] ,)
+        (NNP:[146..149] Kim) (NNP:[150..152] HS) (,:[152..153] ,)
+        (NNP:[154..157] Lee) (NNP:[158..160] HS) (,:[160..161] ,)
+        (NNP:[162..166] Kang) (NNP:[167..169] YH) (,:[169..170] ,)
+        (NNP:[171..175] Yang) (NNP:[176..178] HK) (,:[178..179] ,)
+        (NNP:[180..183] Kim) (NNP:[184..187] WH.)))
+
+;section 3 Span:191..307
+;Department of Pathology and Cancer Research Institute, Seoul National
+;University  College of Medicine, Seoul, Korea.
+(SEC
+  (FRAG (NNP:[191..201] Department) (IN:[202..204] of)
+        (NNP:[205..214] Pathology) (CC:[215..218] and) (NNP:[219..225] Cancer)
+        (NNP:[226..234] Research) (NNP:[235..244] Institute) (,:[244..245] ,)
+        (NNP:[246..251] Seoul) (NNP:[252..260] National)
+        (NNP:[261..271] University) (NNP:[273..280] College) (IN:[281..283] of)
+        (NNP:[284..292] Medicine) (,:[292..293] ,) (NNP:[294..299] Seoul)
+        (,:[299..300] ,) (NNP:[301..306] Korea) (.:[306..307] .)))
+
+;sentence 4 Span:311..483
+;beta-catenin serves not only as a structural component of the 
+;E-cadherin-mediated cell-cell adhesion system, but also as a signaling
+;molecule  of the Wnt/wingless pathway.
+;[311..323]:gene-protein:"beta-catenin"
+;[374..384]:gene-protein:"E-cadherin"
+;[462..465]:gene-generic:"Wnt"
+;[466..474]:gene-generic:"wingless"
+(SENT
+  (S
+    (NP-SBJ (NN:[311..323] beta-catenin))
+    (VP (VBZ:[324..330] serves)
+      (PP
+        (CONJP (RB:[331..334] not) (RB:[335..339] only))
+        (PP (IN:[340..342] as)
+          (NP
+            (NP (DT:[343..344] a) (JJ:[345..355] structural)
+                (NN:[356..365] component))
+            (PP (IN:[366..368] of)
+              (NP (DT:[369..372] the)
+                (ADJP (NN:[374..384] E-cadherin) (HYPH:[384..385] -)
+                      (VBN:[385..393] mediated))
+                (NML
+                  (NML (NN:[394..398] cell))
+                  (PP (HYPH:[398..399] -)
+                    (NP (NN:[399..403] cell))))
+                (NN:[404..412] adhesion) (NN:[413..419] system)))))
+        (,:[419..420] ,)
+        (CONJP (CC:[421..424] but) (RB:[425..429] also))
+        (PP (IN:[430..432] as)
+          (NP
+            (NP (DT:[433..434] a) (VBG:[435..444] signaling)
+                (NN:[445..453] molecule))
+            (PP (IN:[455..457] of)
+              (NP (DT:[458..461] the)
+                (NML (NN:[462..465] Wnt) (SYM:[465..466] /)
+                     (JJ:[466..474] wingless))
+                (NN:[475..482] pathway)))))))
+    (.:[482..483] .)))
+
+;sentence 5 Span:484..605
+;Deregulated expression of beta-catenin and  mutations of the gene have been
+;identified in a number of human malignancies.
+;[510..522]:gene-protein:"beta-catenin"
+;[545..549]:gene-rna:"gene"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (VBN:[484..495] Deregulated) (NN:[496..506] expression))
+        (PP (IN:[507..509] of)
+          (NP (NN:[510..522] beta-catenin))))
+      (CC:[523..526] and)
+      (NP
+        (NP (NNS:[528..537] mutations))
+        (PP (IN:[538..540] of)
+          (NP (DT:[541..544] the) (NN:[545..549] gene)))))
+    (VP (VBP:[550..554] have)
+      (VP (VBN:[555..559] been)
+        (VP (VBN:[560..570] identified)
+          (NP-1 (-NONE-:[570..570] *))
+          (PP (IN:[571..573] in)
+            (NP
+              (NP (DT:[574..575] a) (NN:[576..582] number))
+              (PP (IN:[583..585] of)
+                (NP (JJ:[586..591] human) (NNS:[592..604] malignancies))))))))
+    (.:[604..605] .)))
+
+;sentence 6 Span:606..802
+;To  determine the role of beta-catenin defects in stomach cancer, we
+;investigated  beta-catenin exon 3 mutations and altered protein expression in
+;77 primary  gastric carcinomas and 11 cell lines.
+;[632..644]:gene-generic:"beta-catenin"
+;[656..670]:malignancy:"stomach cancer"
+;[689..701]:gene-rna:"beta-catenin"
+;[702..708]:variation-location:"exon 3"
+;[709..718]:variation-event:"mutations"
+;[731..738]:gene-protein:"protein"
+;[756..783]:malignancy:"primary  gastric carcinomas"
+;[765..772]...[791..801]:malignancy:"gastric"..."cell lines"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[606..606] *))
+      (VP (TO:[606..608] To)
+        (VP (VB:[610..619] determine)
+          (NP
+            (NP (DT:[620..623] the) (NN:[624..628] role))
+            (PP (IN:[629..631] of)
+              (NP (NN:[632..644] beta-catenin) (NNS:[645..652] defects))))
+          (PP (IN:[653..655] in)
+            (NP (NN:[656..663] stomach) (NN:[664..670] cancer))))))
+    (,:[670..671] ,)
+    (NP-SBJ (PRP:[672..674] we))
+    (VP (VBD:[675..687] investigated)
+      (NP
+        (NP (NN:[689..701] beta-catenin)
+          (NML (NN:[702..706] exon) (CD:[707..708] 3))
+          (NNS:[709..718] mutations))
+        (CC:[719..722] and)
+        (NP (VBN:[723..730] altered) (NN:[731..738] protein)
+            (NN:[739..749] expression)))
+      (PP (IN:[750..752] in)
+        (NP
+          (NP (CD:[753..755] 77)
+             (JJ:[756..763] primary) (JJ:[765..772] gastric)
+             (NNS:[773..783] carcinomas))
+          (CC:[784..787] and)
+          (NP (CD:[788..790] 11) (NN:[791..795] cell) (NNS:[796..801] lines)))))
+    (.:[801..802] .)))
+
+;sentence 7 Span:803..1022
+;In addition, the immunohistochemical  expression pattern of beta-catenin in
+;303 consecutive gastric cancers was  determined and their relationships with
+;clinicopathologic features and patient  outcome were investigated.
+;[863..875]:gene-protein:"beta-catenin"
+;[895..910]:malignancy:"gastric cancers"
+(SENT
+  (S
+    (S
+      (PP (IN:[803..805] In)
+        (NP (NN:[806..814] addition)))
+      (,:[814..815] ,)
+      (NP-SBJ-2
+        (NP (DT:[816..819] the) (JJ:[820..839] immunohistochemical)
+            (NN:[841..851] expression) (NN:[852..859] pattern))
+        (PP (IN:[860..862] of)
+          (NP (NN:[863..875] beta-catenin)))
+        (PP (IN:[876..878] in)
+          (NP (CD:[879..882] 303) (JJ:[883..894] consecutive)
+             (JJ:[895..902] gastric) (NNS:[903..910] cancers))))
+      (VP (VBD:[911..914] was)
+        (VP (VBN:[916..926] determined)
+          (NP-2 (-NONE-:[926..926] *)))))
+    (CC:[927..930] and)
+    (S
+      (NP-SBJ-1
+        (NP (PRP$:[931..936] their) (NNS:[937..950] relationships))
+        (PP (IN:[951..955] with)
+          (NP
+            (NP (JJ:[956..973] clinicopathologic) (NNS:[974..982] features))
+            (CC:[983..986] and)
+            (NP (NN:[987..994] patient) (NN:[996..1003] outcome)))))
+      (VP (VBD:[1004..1008] were)
+        (VP (VBN:[1009..1021] investigated)
+          (NP-1 (-NONE-:[1021..1021] *)))))
+    (.:[1021..1022] .)))
+
+;sentence 8 Span:1023..1179
+;This study revealed 5% (4 of 77) tumors and 27% (3 of  11) cell lines with
+;beta-catenin gene alteration, 6 missense mutations, and 1  interstitial
+;deletion.
+;[1056..1062]:malignancy:"tumors"
+;[1082..1092]:malignancy:"cell lines"
+;[1098..1110]:gene-rna:"beta-catenin"
+;[1111..1126]:variation-event:"gene alteration"
+;[1130..1148]:variation-type:"missense mutations"
+;[1157..1178]:variation-type:"interstitial deletion"
+(SENT
+  (S
+    (NP-SBJ (DT:[1023..1027] This) (NN:[1028..1033] study))
+    (VP (VBD:[1034..1042] revealed)
+      (NP
+        (NP
+          (NP (CD:[1043..1044] 5) (NN:[1044..1045] %)
+            (PRN (-LRB-:[1046..1047] -LRB-)
+              (NP
+                (NP (CD:[1047..1048] 4))
+                (PP (IN:[1049..1051] of)
+                  (NP (CD:[1052..1054] 77))))
+              (-RRB-:[1054..1055] -RRB-))
+            (NNS:[1056..1062] tumors))
+          (CC:[1063..1066] and)
+          (NP (CD:[1067..1069] 27) (NN:[1069..1070] %)
+            (PRN (-LRB-:[1071..1072] -LRB-)
+              (NP
+                (NP (CD:[1072..1073] 3))
+                (PP (IN:[1074..1076] of)
+                  (NP (CD:[1078..1080] 11))))
+              (-RRB-:[1080..1081] -RRB-))
+             (NN:[1082..1086] cell) (NNS:[1087..1092] lines)))
+        (PP (IN:[1093..1097] with)
+          (NP
+            (NP (NN:[1098..1110] beta-catenin)
+               (NN:[1111..1115] gene) (NN:[1116..1126] alteration))
+            (,:[1126..1127] ,)
+            (NP
+              (NP (CD:[1128..1129] 6)
+                 (JJ:[1130..1138] missense) (NNS:[1139..1148] mutations))
+              (,:[1148..1149] ,) (CC:[1150..1153] and)
+              (NP (CD:[1154..1155] 1)
+                 (JJ:[1157..1169] interstitial) (NN:[1170..1178] deletion)))))))
+    (.:[1178..1179] .)))
+
+;sentence 9 Span:1180..1288
+;These genetic changes were shown to correlate closely  with nuclear
+;localization of the protein (p = 0.001).
+;[1186..1201]:variation-event:"genetic changes"
+;[1268..1275]:gene-protein:"protein"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1180..1185] These)
+       (JJ:[1186..1193] genetic) (NNS:[1194..1201] changes))
+    (VP (VBD:[1202..1206] were)
+      (VP (VBN:[1207..1212] shown)
+        (S
+          (NP-SBJ-1 (-NONE-:[1212..1212] *))
+          (VP (TO:[1213..1215] to)
+            (VP (VB:[1216..1225] correlate)
+              (ADVP (RB:[1226..1233] closely))
+              (PP-CLR (IN:[1235..1239] with)
+                (NP
+                  (NP (JJ:[1240..1247] nuclear) (NN:[1248..1260] localization))
+                  (PP (IN:[1261..1263] of)
+                    (NP (DT:[1264..1267] the) (NN:[1268..1275] protein)
+                      (PRN (-LRB-:[1276..1277] -LRB-)
+                        (S
+                          (NP-SBJ (NN:[1277..1278] p))
+                          (VP (SYM:[1279..1280] =)
+                            (NP (CD:[1281..1286] 0.001))))
+                        (-RRB-:[1286..1287] -RRB-)))))))))))
+    (.:[1287..1288] .)))
+
+;sentence 10 Span:1289..1483
+;In an immunohistochemical  analysis, abnormal expressions of beta-catenin,
+;such as nuclear accumulation and  loss of membranous distribution, were
+;detected in 27% (81 of 303) of tumors  overall.
+;[1350..1362]:gene-protein:"beta-catenin"
+;[1467..1473]:malignancy:"tumors"
+(SENT
+  (S
+    (PP (IN:[1289..1291] In)
+      (NP (DT:[1292..1294] an) (JJ:[1295..1314] immunohistochemical)
+          (NN:[1316..1324] analysis)))
+    (,:[1324..1325] ,)
+    (NP-SBJ-1
+      (NP (JJ:[1326..1334] abnormal) (NNS:[1335..1346] expressions))
+      (PP (IN:[1347..1349] of)
+        (NP (NN:[1350..1362] beta-catenin)))
+      (,:[1362..1363] ,)
+      (PP (JJ:[1364..1368] such) (IN:[1369..1371] as)
+        (NP
+          (NP (JJ:[1372..1379] nuclear) (NN:[1380..1392] accumulation))
+          (CC:[1393..1396] and)
+          (NP
+            (NP (NN:[1398..1402] loss))
+            (PP (IN:[1403..1405] of)
+              (NP (JJ:[1406..1416] membranous) (NN:[1417..1429] distribution)))))))
+    (,:[1429..1430] ,)
+    (VP (VBD:[1431..1435] were)
+      (VP (VBN:[1436..1444] detected)
+        (NP-1 (-NONE-:[1444..1444] *))
+        (PP-LOC (IN:[1445..1447] in)
+          (NP
+            (NP (CD:[1448..1450] 27) (NN:[1450..1451] %)
+              (PRN (-LRB-:[1452..1453] -LRB-)
+                (NP
+                  (NP (CD:[1453..1455] 81))
+                  (PP (IN:[1456..1458] of)
+                    (NP (CD:[1459..1462] 303))))
+                (-RRB-:[1462..1463] -RRB-)))
+            (PP (IN:[1464..1466] of)
+              (NP (NNS:[1467..1473] tumors)))))
+        (ADVP (RB:[1475..1482] overall))))
+    (.:[1482..1483] .)))
+
+;sentence 11 Span:1484..1615
+;These altered beta-catenin expressions were more commonly observed in  37%
+;(58 of 158) diffuse type gastric carcinomas (p < 0.001).
+;[1498..1510]:gene-protein:"beta-catenin"
+;[1571..1602]:malignancy:"diffuse type gastric carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1484..1489] These) (VBN:[1490..1497] altered)
+              (NN:[1498..1510] beta-catenin) (NNS:[1511..1522] expressions))
+    (VP (VBD:[1523..1527] were)
+      (ADVP (RBR:[1528..1532] more) (RB:[1533..1541] commonly))
+      (VP (VBN:[1542..1550] observed)
+        (NP-1 (-NONE-:[1550..1550] *))
+        (PP-LOC (IN:[1551..1553] in)
+          (NP (CD:[1555..1557] 37) (NN:[1557..1558] %)
+            (PRN (-LRB-:[1559..1560] -LRB-)
+              (NP
+                (NP (CD:[1560..1562] 58))
+                (PP (IN:[1563..1565] of)
+                  (NP (CD:[1566..1569] 158))))
+              (-RRB-:[1569..1570] -RRB-))
+            
+            (NML (JJ:[1571..1578] diffuse) (NN:[1579..1583] type))
+            (JJ:[1584..1591] gastric) (NNS:[1592..1602] carcinomas)))
+        (PRN (-LRB-:[1603..1604] -LRB-)
+          (S
+            (NP-SBJ (NN:[1604..1605] p))
+            (VP (SYM:[1606..1607] <)
+              (NP (CD:[1608..1613] 0.001))))
+          (-RRB-:[1613..1614] -RRB-))))
+    (.:[1614..1615] .)))
+
+;sentence 12 Span:1616..1704
+;Loss of membranous  beta-catenin staining was associated with poor survival
+;(p = 0.045).
+;[1636..1648]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1616..1620] Loss))
+      (PP (IN:[1621..1623] of)
+        (NP (JJ:[1624..1634] membranous) (NN:[1636..1648] beta-catenin)
+            (NN:[1649..1657] staining))))
+    (VP (VBD:[1658..1661] was)
+      (VP (VBN:[1662..1672] associated)
+        (NP-1 (-NONE-:[1672..1672] *))
+        (PP-CLR (IN:[1673..1677] with)
+          (NP (JJ:[1678..1682] poor) (NN:[1683..1691] survival)))
+        (PRN (-LRB-:[1692..1693] -LRB-)
+          (S
+            (NP-SBJ (NN:[1693..1694] p))
+            (VP (SYM:[1695..1696] =)
+              (NP (CD:[1697..1702] 0.045))))
+          (-RRB-:[1702..1703] -RRB-))))
+    (.:[1703..1704] .)))
+
+;sentence 13 Span:1705..1866
+;In  conclusion, our results demonstrate that beta-catenin mutations are
+;common in  gastric cancer cell lines but occur infrequently in gastric
+;carcinoma tissues.
+;[1750..1762]:gene-rna:"beta-catenin"
+;[1788..1813]:malignancy:"gastric cancer cell lines"
+;[1840..1865]:malignancy:"gastric carcinoma tissues"
+(SENT
+  (S
+    (PP (IN:[1705..1707] In)
+      (NP (NN:[1709..1719] conclusion)))
+    (,:[1719..1720] ,)
+    (NP-SBJ (PRP$:[1721..1724] our) (NNS:[1725..1732] results))
+    (VP (VBP:[1733..1744] demonstrate)
+      (SBAR (IN:[1745..1749] that)
+        (S
+          (NP-SBJ (NN:[1750..1762] beta-catenin) (NNS:[1763..1772] mutations))
+          (VP
+            (VP (VBP:[1773..1776] are)
+              (ADJP-PRD (JJ:[1777..1783] common)
+                (PP (IN:[1784..1786] in)
+                  (NP
+                    (NML (JJ:[1788..1795] gastric) (NN:[1796..1802] cancer))
+                    (NN:[1803..1807] cell) (NNS:[1808..1813] lines)))))
+            (CC:[1814..1817] but)
+            (VP (VBP:[1818..1823] occur)
+              (ADVP (RB:[1824..1836] infrequently))
+              (PP-LOC (IN:[1837..1839] in)
+                (NP (JJ:[1840..1847] gastric) (NN:[1848..1857] carcinoma)
+                    (NNS:[1858..1865] tissues))))))))
+    (.:[1865..1866] .)))
+
+;sentence 14 Span:1868..1951
+;These mutations are one of the causes of the nuclear accumulation of 
+;beta-catenin.
+;[1874..1883]:variation-event:"mutations"
+;[1938..1950]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1868..1873] These) (NNS:[1874..1883] mutations))
+    (VP (VBP:[1884..1887] are)
+      (NP-PRD
+        (NP (CD:[1888..1891] one))
+        (PP (IN:[1892..1894] of)
+          (NP
+            (NP (DT:[1895..1898] the) (NNS:[1899..1905] causes))
+            (PP (IN:[1906..1908] of)
+              (NP
+                (NP (DT:[1909..1912] the) (JJ:[1913..1920] nuclear)
+                    (NN:[1921..1933] accumulation))
+                (PP (IN:[1934..1936] of)
+                  (NP (NN:[1938..1950] beta-catenin)))))))))
+    (.:[1950..1951] .)))
+
+;sentence 15 Span:1952..2149
+;Frequent abnormalities of beta-catenin expression in gastric  carcinoma
+;support the idea that both structural and signaling functions of the  protein
+;play a critical role in gastric carcinogenesis.
+;[1978..1990]:gene-protein:"beta-catenin"
+;[2005..2023]:malignancy:"gastric  carcinoma"
+;[2094..2101]:gene-protein:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1952..1960] Frequent) (NNS:[1961..1974] abnormalities))
+      (PP (IN:[1975..1977] of)
+        (NP (NN:[1978..1990] beta-catenin) (NN:[1991..2001] expression)))
+      (PP (IN:[2002..2004] in)
+        (NP (JJ:[2005..2012] gastric) (NN:[2014..2023] carcinoma))))
+    (VP (VBP:[2024..2031] support)
+      (NP (DT:[2032..2035] the) (NN:[2036..2040] idea)
+        (SBAR (IN:[2041..2045] that)
+          (S
+            (NP-SBJ
+              (NP (CC:[2046..2050] both)
+                (NP (JJ:[2051..2061] structural)
+                  (NML-1 (-NONE-:[2061..2061] *P*)))
+                (CC:[2062..2065] and)
+                (NP (VBG:[2066..2075] signaling)
+                  (NML-1 (NNS:[2076..2085] functions))))
+              (PP (IN:[2086..2088] of)
+                (NP (DT:[2089..2092] the) (NN:[2094..2101] protein))))
+            (VP (VBP:[2102..2106] play)
+              (NP (DT:[2107..2108] a) (JJ:[2109..2117] critical)
+                  (NN:[2118..2122] role))
+              (PP (IN:[2123..2125] in)
+                (NP (JJ:[2126..2133] gastric) (NN:[2134..2148] carcinogenesis))))))))
+    (.:[2148..2149] .)))
+
+;section 16 Span:2150..2182
+;Copyright 2001  Wiley-Liss, Inc.
+(SEC
+  (FRAG (NNP:[2150..2159] Copyright) (CD:[2160..2164] 2001)
+        (NNP:[2166..2171] Wiley) (HYPH:[2171..2172] -) (NNP:[2172..2176] Liss)
+        (,:[2176..2177] ,) (NNP:[2178..2182] Inc.)))
+
+;section 17 Span:2186..2231
+;PMID: 11241321 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2186..2190] PMID) (::[2190..2191] :) (CD:[2192..2200] 11241321)
+        (-LRB-:[2201..2202] -LSB-) (NNP:[2202..2208] PubMed)
+        (HYPH:[2209..2210] -) (JJ:[2211..2218] indexed) (IN:[2219..2222] for)
+        (NNP:[2223..2230] MEDLINE) (-RRB-:[2230..2231] -RSB-)))

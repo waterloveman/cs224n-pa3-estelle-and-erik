@@ -1,0 +1,462 @@
+;PMID: 10398344
+;source_file_980.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..257] = [t:38..257]
+;2)section:[e:261..326] = [t:261..326]
+;3)section:[e:330..425] = [t:330..425]
+;4)sentence:[e:429..753] = [t:429..753]
+;5)sentence:[e:754..894] = [t:754..894]
+;6)sentence:[e:896..1199] = [t:896..1199]
+;7)sentence:[e:1200..1419] = [t:1200..1419]
+;8)sentence:[e:1420..1638] = [t:1420..1638]
+;9)sentence:[e:1639..1789] = [t:1639..1789]
+;10)sentence:[e:1790..1945] = [t:1790..1945]
+;11)section:[e:1946..1984] = [t:1946..1984]
+;12)section:[e:1988..2033] = [t:1988..2033]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[961..963] 0.
+;ERROR_Token in entity file but not tree[964..966] 15
+;ERROR_Token in tree file but not entity[961..966] 0. 15
+
+;section 0 Span:0..32
+;Yeast. 1999 Jun 30;15(9):755-63.
+(SEC
+  (FRAG (NN:[0..5] Yeast) (IN:[5..6] .) (CD:[7..11] 1999) (NNP:[12..15] Jun)
+        (CD:[16..18] 30) (CD:[18..22] ;15-LRB-) (CD:[22..23] 9)
+        (-RRB-:[23..24] -RRB-) (CD:[24..28] :755) (IN:[28..29] -)
+        (CD:[29..31] 63) (.:[31..32] .)))
+
+;sentence 1 Span:38..257
+;Characteristics of the heterologously expressed human lanosterol 
+;14alpha-demethylase (other names: P45014DM, CYP51, P45051) and inhibition of
+;the  purified human and Candida albicans CYP51 with azole antifungal agents.
+;[92..123]:cyp450:"lanosterol  14alpha-demethylase"
+;[138..146]:cyp450:"P45014DM"
+;[148..153]:cyp450:"CYP51"
+;[155..161]:cyp450:"P45051"
+;[222..227]:cyp450:"CYP51"
+;[233..256]:substance:"azole antifungal agents"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NNS:[38..53] Characteristics))
+      (PP (IN:[54..56] of)
+        (NP (DT:[57..60] the)
+          (ADJP (RB:[61..75] heterologously) (VBN:[76..85] expressed))
+          (JJ:[86..91] human)
+           (NN:[92..102] lanosterol) (NN:[104..123] 14alpha-demethylase)
+          (PRN (-LRB-:[124..125] -LRB-)
+            (NP
+              (NP (JJ:[125..130] other) (NNS:[131..136] names))
+              (::[136..137] :)
+              (NP (NN:[138..146] P45014DM) (,:[146..147] ,)
+                  (NN:[148..153] CYP51) (,:[153..154] ,) (NN:[155..161] P45051)))
+            (-RRB-:[161..162] -RRB-)))))
+    (CC:[163..166] and)
+    (NP
+      (NP (NN:[167..177] inhibition))
+      (PP (IN:[178..180] of)
+        (NP (DT:[181..184] the)
+          (NML
+            (NML
+              (ADJP-1 (VBN:[186..194] purified))
+              (JJ:[195..200] human)
+              (NML-2 (-NONE-:[200..200] *P*)))
+            (CC:[201..204] and)
+            (NML
+              (ADJP-1 (-NONE-:[204..204] *P*))
+              (NML (NNP:[205..212] Candida) (NNP:[213..221] albicans))
+              (NML-2 (NN:[222..227] CYP51))))))
+      (PP (IN:[228..232] with)
+        (NP (NN:[233..238] azole) (JJ:[239..249] antifungal)
+            (NNS:[250..256] agents))))
+    (.:[256..257] .)))
+
+;section 2 Span:261..326
+;Lamb DC, Kelly DE, Waterman MR, Stromstedt M, Rozman D, Kelly SL.
+(SEC
+  (FRAG (NNP:[261..265] Lamb) (NNP:[266..268] DC) (,:[268..269] ,)
+        (NNP:[270..275] Kelly) (NNP:[276..278] DE) (,:[278..279] ,)
+        (NNP:[280..288] Waterman) (NNP:[289..291] MR) (,:[291..292] ,)
+        (NNP:[293..303] Stromstedt) (NNP:[304..306] M,) (NNP:[307..313] Rozman)
+        (NNP:[314..315] D) (,:[315..316] ,) (NNP:[317..322] Kelly)
+        (NNP:[323..326] SL.)))
+
+;section 3 Span:330..425
+;Institute of Biological Sciences, University of Wales Aberystwyth,
+;Aberystwyth,  SY23 3DA, U.K.
+(SEC
+  (FRAG (NNP:[330..339] Institute) (IN:[340..342] of)
+        (NNP:[343..353] Biological) (NNP:[354..362] Sciences) (,:[362..363] ,)
+        (NNP:[364..374] University) (IN:[375..377] of) (NNP:[378..383] Wales)
+        (NNP:[384..395] Aberystwyth) (,:[395..396] ,)
+        (NNP:[397..408] Aberystwyth) (,:[408..409] ,) (NNP:[411..415] SY23)
+        (NNP:[416..419] 3DA) (,:[419..420] ,) (NNP:[421..425] U.K.)))
+
+;sentence 4 Span:429..753
+;Human and Candida albicans CYP51 were purified to homogeneity after
+;GAL10-based  heterologous expression in yeast in order to resolve the basis
+;for the selective  inhibition of the fungal enzyme over the human orthologue
+;by the azole drugs  ketoconazole and itraconazole, used in the treatment of
+;systemic fungal  infection.
+;[456..461]:cyp450:"CYP51"
+;[617..623]:cyp450:"enzyme"
+;[639..649]:substance:"orthologue"
+;[657..662]:substance:"azole"
+;[663..668]:substance:"drugs"
+;[670..682]:substance:"ketoconazole"
+;[687..699]:substance:"itraconazole"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[429..434] Human)
+        (NML-1 (-NONE-:[434..434] *P*)))
+      (CC:[435..438] and)
+      (NP
+        (NML (NNP:[439..446] Candida) (NNP:[447..455] albicans))
+        (NML-1 (NN:[456..461] CYP51))))
+    (VP (VBD:[462..466] were)
+      (VP (VBN:[467..475] purified)
+        (NP-2 (-NONE-:[475..475] *))
+        (PP (TO:[476..478] to)
+          (NP (NN:[479..490] homogeneity)))
+        (PP-TMP (IN:[491..496] after)
+          (NP
+            (NP
+              (ADJP (NN:[497..502] GAL10) (HYPH:[502..503] -)
+                    (VBN:[503..508] based))
+              (JJ:[510..522] heterologous) (NN:[523..533] expression))
+            (PP (IN:[534..536] in)
+              (NP (NN:[537..542] yeast)))))
+        (SBAR-PRP (IN:[543..545] in) (NN:[546..551] order)
+          (S
+            (NP-SBJ (-NONE-:[551..551] *))
+            (VP (TO:[552..554] to)
+              (VP (VB:[555..562] resolve)
+                (NP
+                  (NP (DT:[563..566] the) (NN:[567..572] basis))
+                  (PP (IN:[573..576] for)
+                    (NP
+                      (NP (DT:[577..580] the) (JJ:[581..590] selective)
+                          (NN:[592..602] inhibition))
+                      (PP (IN:[603..605] of)
+                        (NP (DT:[606..609] the) (JJ:[610..616] fungal)
+                            (NN:[617..623] enzyme)))
+                      (PP (IN:[624..628] over)
+                        (NP (DT:[629..632] the) (JJ:[633..638] human)
+                            (NN:[639..649] orthologue)))
+                      (PP (IN:[650..652] by)
+                        (NP
+                          (NP
+                            (NP (DT:[653..656] the) (NN:[657..662] azole)
+                                (NNS:[663..668] drugs))
+                            (NP (NN:[670..682] ketoconazole) (CC:[683..686] and)
+                                (NN:[687..699] itraconazole)))
+                          (,:[699..700] ,)
+                          (VP (VBN:[701..705] used)
+                            (NP (-NONE-:[705..705] *))
+                            (PP (IN:[706..708] in)
+                              (NP
+                                (NP (DT:[709..712] the)
+                                    (NN:[713..722] treatment))
+                                (PP (IN:[723..725] of)
+                                  (NP (JJ:[726..734] systemic)
+                                      (JJ:[735..741] fungal)
+                                      (NN:[743..752] infection)))))))))))))))))
+    (.:[752..753] .)))
+
+;sentence 5 Span:754..894
+;The purified proteins have similar spectral characteristics, both  giving a
+;maximum at 448 nm in reduced carbon monoxide difference spectra.
+;[767..775]:substance:"proteins"
+;[841..844]:quantitative-value:"448"
+;[845..847]:quantitative-units:"nm"
+;[859..874]:substance:"carbon monoxide"
+(SENT
+  (S
+    (NP-SBJ (DT:[754..757] The) (VBN:[758..766] purified)
+            (NNS:[767..775] proteins))
+    (VP (VBP:[776..780] have)
+      (NP (JJ:[781..788] similar) (JJ:[789..797] spectral)
+          (NNS:[798..813] characteristics))
+      (,:[813..814] ,)
+      (S-ADV
+        (NP-SBJ (DT:[815..819] both))
+        (VP (VBG:[821..827] giving)
+          (NP (DT:[828..829] a) (NN:[830..837] maximum))
+          (PP (IN:[838..840] at)
+            (NP (CD:[841..844] 448) (NN:[845..847] nm)))
+          (PP (IN:[848..850] in)
+            (NP (VBN:[851..858] reduced)
+              (NML (NN:[859..865] carbon) (NN:[866..874] monoxide))
+              (NN:[875..885] difference) (NNS:[886..893] spectra))))))
+    (.:[893..894] .)))
+
+;sentence 6 Span:896..1199
+;Substrate affinity constants of 20.8 and 29.4 microM and Vmax of 0. 15 and
+;0.47  nmol/min/nmol were observed for C. albicans and human enzymes,
+;respectively, in  reconstituted enzymatic assays, using an intermediate of
+;the demethylation  reaction [32-3H]-3beta-hydroxylanost-7-en-32-ol as the
+;substrate.
+;[896..905]:substance:"Substrate"
+;[928..932]:quantitative-value:"20.8"
+;[937..941]:quantitative-value:"29.4"
+;[942..948]:quantitative-units:"microM"
+;[953..957]:quantitative-name:"Vmax"
+;[961..966]:quantitative-value:"0. 15"
+;[971..975]:quantitative-value:"0.47"
+;[977..990]:quantitative-units:"nmol/min/nmol"
+;[1031..1038]:substance:"enzymes"
+;[1099..1111]:substance:"intermediate"
+;[1143..1181]:substance:"[32-3H]-3beta-hydroxylanost-7-en-32-ol"
+;[1189..1198]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ-6
+      (NP
+        (NP (NN:[896..905] Substrate) (NN:[906..914] affinity)
+            (NNS:[915..924] constants))
+        (PP (IN:[925..927] of)
+          (NP
+            (NP (CD:[928..932] 20.8)
+              (NML-5 (-NONE-:[932..932] *P*)))
+            (CC:[933..936] and)
+            (NP (CD:[937..941] 29.4)
+              (NML-5 (NN:[942..948] microM))))))
+      (CC:[949..952] and)
+      (NP
+        (NP (NN:[953..957] Vmax))
+        (PP (IN:[958..960] of)
+          (NP
+            (NP
+              (NP (CD:[961..966] 0.-SP-15)
+                (NML-2 (-NONE-:[966..966] *P*)))
+              (CC:[967..970] and)
+              (NP (CD:[971..975] 0.47)
+                (NML-2 (NN:[977..981] nmol))))
+            (PP (SYM:[981..982] /)
+              (NP (NN:[982..985] min)))
+            (PP (SYM:[985..986] /)
+              (NP (NN:[986..990] nmol)))))))
+    (VP (VBD:[991..995] were)
+      (VP (VBN:[996..1004] observed)
+        (NP-6 (-NONE-:[1004..1004] *))
+        (PP (IN:[1005..1008] for)
+          (NP
+            (NP
+              (NML (NNP:[1009..1011] C.) (NNP:[1012..1020] albicans))
+              (NML-1 (-NONE-:[1020..1020] *P*)))
+            (CC:[1021..1024] and)
+            (NP (JJ:[1025..1030] human)
+              (NML-1 (NNS:[1031..1038] enzymes)))))
+        (,:[1038..1039] ,)
+        (ADVP (RB:[1040..1052] respectively))
+        (,:[1052..1053] ,)
+        (PP (IN:[1054..1056] in)
+          (NP (VBN:[1058..1071] reconstituted) (JJ:[1072..1081] enzymatic)
+              (NNS:[1082..1088] assays)))
+        (,:[1088..1089] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1089..1089] *))
+          (VP (VBG:[1090..1095] using)
+            (NP
+              (NP (DT:[1096..1098] an) (NN:[1099..1111] intermediate))
+              (PP (IN:[1112..1114] of)
+                (NP
+                  (NP (DT:[1115..1118] the) (NN:[1119..1132] demethylation)
+                      (NN:[1134..1142] reaction))
+                  (NP
+                      (NN:[1143..1181] -LSB-32-3H-RSB--3beta-hydroxylanost-7-en-32-ol)))))
+            (PP (IN:[1182..1184] as)
+              (NP (DT:[1185..1188] the) (NN:[1189..1198] substrate)))))))
+    (.:[1198..1199] .)))
+
+;sentence 7 Span:1200..1419
+;Both enzymes  gave similar type II spectra on titration with drugs, but a
+;reduced affinity was  observed for human CYP51 using the ability of carbon
+;monoxide to displace the  drug as a ligand and by calculation of IC50.
+;[1205..1212]:substance:"enzymes"
+;[1261..1266]:substance:"drugs"
+;[1315..1320]:cyp450:"CYP51"
+;[1342..1357]:substance:"carbon monoxide"
+;[1375..1379]:substance:"drug"
+;[1385..1391]:substance:"ligand"
+;[1414..1418]:quantitative-name:"IC50"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[1200..1204] Both) (NNS:[1205..1212] enzymes))
+      (VP (VBD:[1214..1218] gave)
+        (NP (JJ:[1219..1226] similar)
+          (NML (NN:[1227..1231] type) (CD:[1232..1234] II))
+          (NNS:[1235..1242] spectra))
+        (PP (IN:[1243..1245] on)
+          (NP (NN:[1246..1255] titration)))
+        (PP (IN:[1256..1260] with)
+          (NP (NNS:[1261..1266] drugs)))))
+    (,:[1266..1267] ,) (CC:[1268..1271] but)
+    (S
+      (NP-SBJ-2 (DT:[1272..1273] a) (VBN:[1274..1281] reduced)
+                (NN:[1282..1290] affinity))
+      (VP (VBD:[1291..1294] was)
+        (VP (VBN:[1296..1304] observed)
+          (NP-2 (-NONE-:[1304..1304] *))
+          (PP (IN:[1305..1308] for)
+            (NP (JJ:[1309..1314] human) (NN:[1315..1320] CYP51)))
+          (UCP-ADV
+            (S-ADV
+              (NP-SBJ (-NONE-:[1320..1320] *))
+              (VP (VBG:[1321..1326] using)
+                (NP
+                  (NP (DT:[1327..1330] the) (NN:[1331..1338] ability)
+                    (S-1 (-NONE-:[1338..1338] *ICH*)))
+                  (PP (IN:[1339..1341] of)
+                    (NP (NN:[1342..1348] carbon) (NN:[1349..1357] monoxide)))
+                  (S-1
+                    (NP-SBJ (-NONE-:[1357..1357] *))
+                    (VP (TO:[1358..1360] to)
+                      (VP (VB:[1361..1369] displace)
+                        (NP (DT:[1370..1373] the) (NN:[1375..1379] drug))
+                        (PP (IN:[1380..1382] as)
+                          (NP (DT:[1383..1384] a) (NN:[1385..1391] ligand)))))))))
+            (CC:[1392..1395] and)
+            (PP (IN:[1396..1398] by)
+              (NP
+                (NP (NN:[1399..1410] calculation))
+                (PP (IN:[1411..1413] of)
+                  (NP (NN:[1414..1418] IC50)))))))))
+    (.:[1418..1419] .)))
+
+;sentence 8 Span:1420..1638
+;However, although the results  indicate higher affinity of the drugs for
+;their target CYP51 in the major fungal  pathogen C. albicans, when compared
+;directly to CYP51 from humans, the  difference was less than 10-fold.
+;[1483..1488]:substance:"drugs"
+;[1506..1511]:cyp450:"CYP51"
+;[1581..1586]:cyp450:"CYP51"
+;[1620..1637]:quantitative-value:"less than 10-fold"
+(SENT
+  (S
+    (ADVP (RB:[1420..1427] However))
+    (,:[1427..1428] ,)
+    (SBAR-ADV (IN:[1429..1437] although)
+      (S
+        (NP-SBJ (DT:[1438..1441] the) (NNS:[1442..1449] results))
+        (VP (VBP:[1451..1459] indicate)
+          (NP
+            (NP (JJR:[1460..1466] higher) (NN:[1467..1475] affinity))
+            (PP (IN:[1476..1478] of)
+              (NP (DT:[1479..1482] the) (NNS:[1483..1488] drugs)))
+            (PP (IN:[1489..1492] for)
+              (NP (PRP$:[1493..1498] their) (NN:[1499..1505] target)
+                  (NN:[1506..1511] CYP51))))
+          (PP (IN:[1512..1514] in)
+            (NP
+              (NP (DT:[1515..1518] the) (JJ:[1519..1524] major)
+                  (JJ:[1525..1531] fungal) (NN:[1533..1541] pathogen))
+              (NP (NNP:[1542..1544] C.) (NNP:[1545..1553] albicans))))
+          (,:[1553..1554] ,)
+          (SBAR-ADV
+            (WHADVP-2 (WRB:[1555..1559] when))
+            (S
+              (NP-SBJ-1 (-NONE-:[1559..1559] *))
+              (VP (VBN:[1560..1568] compared)
+                (NP-1 (-NONE-:[1568..1568] *))
+                (ADVP (RB:[1569..1577] directly))
+                (PP-CLR (TO:[1578..1580] to)
+                  (NP
+                    (NP (NN:[1581..1586] CYP51))
+                    (PP (IN:[1587..1591] from)
+                      (NP (NNS:[1592..1598] humans)))))
+                (ADVP-2 (-NONE-:[1598..1598] *T*))))))))
+    (,:[1598..1599] ,)
+    (NP-SBJ (DT:[1600..1603] the) (NN:[1605..1615] difference))
+    (VP (VBD:[1616..1619] was)
+      (ADVP-PRD
+        (QP (JJR:[1620..1624] less) (IN:[1625..1629] than) (CD:[1630..1632] 10)
+            (HYPH:[1632..1633] -) (JJ:[1633..1637] fold))))
+    (.:[1637..1638] .)))
+
+;sentence 9 Span:1639..1789
+;This difference is an order of magnitude lower  than previously reported data
+;based on measurements using unpurified human CYP51  enzyme preparations.
+;[1762..1775]:cyp450:"CYP51  enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[1639..1643] This) (NN:[1644..1654] difference))
+    (VP (VBZ:[1655..1657] is)
+      (ADJP-PRD
+        (ADJP
+          (NML
+            (NML (DT:[1658..1660] an) (NN:[1661..1666] order))
+            (PP (IN:[1667..1669] of)
+              (NP (NN:[1670..1679] magnitude))))
+          (JJR:[1680..1685] lower))
+        (PP (IN:[1687..1691] than)
+          (NP
+            (NP
+              (ADJP (RB:[1692..1702] previously) (VBN:[1703..1711] reported))
+              (NNS:[1712..1716] data))
+            (VP (VBN:[1717..1722] based)
+              (NP-SBJ (-NONE-:[1722..1722] *))
+              (PP-CLR (IN:[1723..1725] on)
+                (NP
+                  (NP (NNS:[1726..1738] measurements))
+                  (VP (VBG:[1739..1744] using)
+                    (NP (JJ:[1745..1755] unpurified) (JJ:[1756..1761] human)
+                       (NN:[1762..1767] CYP51) (NN:[1769..1775] enzyme)
+                      (NNS:[1776..1788] preparations))))))))))
+    (.:[1788..1789] .)))
+
+;sentence 10 Span:1790..1945
+;Consequently, increased azole doses to combat resistant  candidaemia may well
+;inhibit endogenous human CYP51 and the potential  consequences are
+;discussed.
+;[1814..1819]:substance:"azole"
+;[1893..1898]:cyp450:"CYP51"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[1790..1802] Consequently))
+      (,:[1802..1803] ,)
+      (NP-SBJ
+        (NP (VBN:[1804..1813] increased) (NN:[1814..1819] azole)
+            (NNS:[1820..1825] doses))
+        (SBAR
+          (WHNP-2 (-NONE-:[1825..1825] 0))
+          (S
+            (NP-SBJ-2 (-NONE-:[1825..1825] *T*))
+            (VP (TO:[1826..1828] to)
+              (VP (VB:[1829..1835] combat)
+                (NP (JJ:[1836..1845] resistant) (NN:[1847..1858] candidaemia)))))))
+      (VP (MD:[1859..1862] may)
+        (ADVP (RB:[1863..1867] well))
+        (VP (VB:[1868..1875] inhibit)
+          (NP (JJ:[1876..1886] endogenous) (JJ:[1887..1892] human)
+              (NN:[1893..1898] CYP51)))))
+    (CC:[1899..1902] and)
+    (S
+      (NP-SBJ-1 (DT:[1903..1906] the) (JJ:[1907..1916] potential)
+                (NNS:[1918..1930] consequences))
+      (VP (VBP:[1931..1934] are)
+        (VP (VBN:[1935..1944] discussed)
+          (NP-1 (-NONE-:[1944..1944] *)))))
+    (.:[1944..1945] .)))
+
+;section 11 Span:1946..1984
+;Copyright 1999 John Wiley & Sons, Ltd.
+(SEC
+  (FRAG (NNP:[1946..1955] Copyright) (CD:[1956..1960] 1999)
+        (NNP:[1961..1965] John) (NNP:[1966..1971] Wiley) (CC:[1972..1973] &)
+        (NNP:[1974..1978] Sons) (,:[1978..1979] ,) (NNP:[1980..1984] Ltd.)))
+
+;section 12 Span:1988..2033
+;PMID: 10398344 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1988..1992] PMID) (::[1992..1993] :) (CD:[1994..2002] 10398344)
+        (IN:[2003..2004] -LSB-) (NNP:[2004..2010] PubMed) (HYPH:[2011..2012] -)
+        (JJ:[2013..2020] indexed) (IN:[2021..2024] for)
+        (NNP:[2025..2033] MEDLINE-RSB-)))

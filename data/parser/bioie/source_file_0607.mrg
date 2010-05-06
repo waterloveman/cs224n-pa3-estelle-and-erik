@@ -1,0 +1,515 @@
+;PMID: 7742153
+;source_file_938.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..177] = [t:48..177]
+;2)section:[e:181..263] = [t:181..263]
+;3)section:[e:267..331] = [t:267..331]
+;4)sentence:[e:335..506] = [t:335..506]
+;5)sentence:[e:507..820] = [t:507..820]
+;6)sentence:[e:821..1015] = [t:821..1015]
+;7)sentence:[e:1017..1147] = [t:1017..1147]
+;8)sentence:[e:1148..1472] = [t:1148..1472]
+;9)sentence:[e:1473..1555] = [t:1473..1555]
+;10)sentence:[e:1556..1703] = [t:1556..1703]
+;11)sentence:[e:1704..1973] = [t:1704..1973]
+;12)sentence:[e:1974..2102] = [t:1974..2102]
+;13)section:[e:2106..2150] = [t:2106..2150]
+
+;section 0 Span:0..42
+;Br J Clin Pharmacol. 1995 Feb;39(2):151-9.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..9] Clin)
+        (NNP:[10..19] Pharmacol) (.:[19..20] .) (CD:[21..25] 1995)
+        (.:[26..33] Feb;39-LRB-) (CD:[33..34] 2) (-RRB-:[34..35] -RRB-)
+        (CD:[35..39] :151) (::[39..40] -) (CD:[40..42] 9.)))
+
+;sentence 1 Span:48..177
+;Selective serotonin reuptake inhibitors and theophylline metabolism in human 
+;liver microsomes: potent inhibition by fluvoxamine.
+;[48..87]:substance:"Selective serotonin reuptake inhibitors"
+;[92..104]:substance:"theophylline"
+;[165..176]:substance:"fluvoxamine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NP (JJ:[48..57] Selective)
+          (NML (NN:[58..67] serotonin) (NN:[68..76] reuptake))
+          (NNS:[77..87] inhibitors))
+        (CC:[88..91] and)
+        (NP (NN:[92..104] theophylline) (NN:[105..115] metabolism)))
+      (PP-LOC (IN:[116..118] in)
+        (NP (JJ:[119..124] human) (NN:[126..131] liver)
+            (NNS:[132..142] microsomes))))
+    (::[142..143] :)
+    (NP
+      (NP (JJ:[144..150] potent) (NN:[151..161] inhibition))
+      (PP-MNR (IN:[162..164] by)
+        (NP (NN:[165..176] fluvoxamine))))
+    (.:[176..177] .)))
+
+;section 2 Span:181..263
+;Rasmussen BB, Maenpaa J, Pelkonen O, Loft S, Poulsen HE, Lykkesfeldt J,
+;Brosen  K.
+(SEC
+  (FRAG (NNP:[181..190] Rasmussen) (NNP:[191..193] BB) (,:[193..194] ,)
+        (NNP:[195..202] Maenpaa) (NNP:[203..205] J,) (NNP:[206..214] Pelkonen)
+        (NNP:[215..216] O) (,:[216..217] ,) (NNP:[218..222] Loft)
+        (NNP:[223..225] S,) (NNP:[226..233] Poulsen) (NNP:[234..236] HE)
+        (,:[236..237] ,) (NNP:[238..249] Lykkesfeldt) (NNP:[250..252] J,)
+        (NNP:[253..259] Brosen) (NNP:[261..263] K.)))
+
+;section 3 Span:267..331
+;Department of Clinical Pharmacology, Odense University, Denmark.
+(SEC
+  (FRAG (NNP:[267..277] Department) (IN:[278..280] of) (NNP:[281..289] Clinical)
+        (NNP:[290..302] Pharmacology) (,:[302..303] ,) (NNP:[304..310] Odense)
+        (NNP:[311..321] University) (,:[321..322] ,) (NNP:[323..330] Denmark)
+        (.:[330..331] .)))
+
+;sentence 4 Span:335..506
+;1. Fluvoxamine and seven other selective serotonin reuptake inhibitors (SRRI)
+; were tested for their ability to inhibit a number of human cytochrome P450 
+;isoforms (CYPs).
+;[338..349]:substance:"Fluvoxamine"
+;[366..405]:substance:"selective serotonin reuptake inhibitors"
+;[407..411]:substance:"SRRI"
+;[473..498]:cyp450:"cytochrome P450  isoforms"
+;[500..504]:cyp450:"CYPs"
+(SENT
+  (NP (LS:[335..337] 1.))
+  (S
+    (NP-SBJ-1
+      (NP (NN:[338..349] Fluvoxamine))
+      (CC:[350..353] and)
+      (NP
+        (NP (CD:[354..359] seven) (JJ:[360..365] other)
+           (JJ:[366..375] selective)
+          (NML (NN:[376..385] serotonin) (NN:[386..394] reuptake))
+          (NNS:[395..405] inhibitors))
+        (NP (-LRB-:[406..407] -LRB-) (NN:[407..411] SRRI)
+            (-RRB-:[411..412] -RRB-))))
+    (VP (VBD:[414..418] were)
+      (VP (VBN:[419..425] tested)
+        (NP-1 (-NONE-:[425..425] *))
+        (PP (IN:[426..429] for)
+          (NP (PRP$:[430..435] their) (NN:[436..443] ability)
+            (S
+              (NP-SBJ (-NONE-:[443..443] *))
+              (VP (TO:[444..446] to)
+                (VP (VB:[447..454] inhibit)
+                  (NP
+                    (NP (DT:[455..456] a) (NN:[457..463] number))
+                    (PP (IN:[464..466] of)
+                      (NP
+                        (NP (JJ:[467..472] human)
+                          
+                          (NML (NN:[473..483] cytochrome) (NN:[484..488] P450))
+                          (NNS:[490..498] isoforms))
+                        (NP (-LRB-:[499..500] -LRB-) (NNS:[500..504] CYPs)
+                            (-RRB-:[504..505] -RRB-))))))))))))
+    (.:[505..506] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[335..506]::NP:S:
+
+;sentence 5 Span:507..820
+;2. None of the drugs showed potent inhibition of CYP2A6  (coumarin
+;7-hydroxylase) or CYP2E1 (chlorzoxazone 6-hydroxylase), while  norfluoxetine
+;was the only potent inhibitor of CYP3A having IC50 values of 11  microM and
+;19 microM for testosterone 6 beta-hydroxylase and cortisol 6 
+;beta-hydroxylase, respectively.
+;[522..527]:substance:"drugs"
+;[556..562]:cyp450:"CYP2A6"
+;[565..587]:cyp450:"coumarin 7-hydroxylase"
+;[592..598]:cyp450:"CYP2E1"
+;[600..627]:cyp450:"chlorzoxazone 6-hydroxylase"
+;[637..650]:substance:"norfluoxetine"
+;[671..680]:substance:"inhibitor"
+;[684..689]:cyp450:"CYP3A"
+;[697..701]:quantitative-name:"IC50"
+;[712..714]:quantitative-value:"11"
+;[716..722]:quantitative-units:"microM"
+;[727..729]:quantitative-value:"19"
+;[730..736]:quantitative-units:"microM"
+;[741..772]:substance:"testosterone 6 beta-hydroxylase"
+;[777..805]:substance:"cortisol 6  beta-hydroxylase"
+(SENT
+  (NP (LS:[507..509] 2.))
+  (S
+    (NP-SBJ
+      (NP (NN:[510..514] None))
+      (PP (IN:[515..517] of)
+        (NP (DT:[518..521] the) (NNS:[522..527] drugs))))
+    (VP (VBD:[528..534] showed)
+      (NP
+        (NP (JJ:[535..541] potent) (NN:[542..552] inhibition))
+        (PP (IN:[553..555] of)
+          (NP
+            (NP
+              (NP (NN:[556..562] CYP2A6))
+              (NP (-LRB-:[564..565] -LRB-)
+                 (NN:[565..573] coumarin) (NN:[574..587] 7-hydroxylase)
+                (-RRB-:[587..588] -RRB-)))
+            (CC:[589..591] or)
+            (NP
+              (NP (NN:[592..598] CYP2E1))
+              (NP (-LRB-:[599..600] -LRB-)
+                 (NN:[600..613] chlorzoxazone) (NN:[614..627] 6-hydroxylase)
+                (-RRB-:[627..628] -RRB-))))))
+      (,:[628..629] ,)
+      (SBAR-ADV (IN:[630..635] while)
+        (S
+          (NP-SBJ (NN:[637..650] norfluoxetine))
+          (VP (VBD:[651..654] was)
+            (NP-PRD
+              (VP
+                (NP (DT:[655..658] the) (RB:[659..663] only)
+                    (JJ:[664..670] potent) (NN:[671..680] inhibitor))
+                (PP (IN:[681..683] of)
+                  (NP (NN:[684..689] CYP3A))))
+              (VP (VBG:[690..696] having)
+                (NP
+                  (NP (NN:[697..701] IC50) (NNS:[702..708] values))
+                  (PP (IN:[709..711] of)
+                    (NP
+                      (NP (CD:[712..714] 11) (NN:[716..722] microM))
+                      (CC:[723..726] and)
+                      (NP (CD:[727..729] 19) (NN:[730..736] microM))))
+                  (PP (IN:[737..740] for)
+                    (NP
+                      (NP (NN:[741..753] testosterone) (CD:[754..755] 6)
+                          (NN:[756..772] beta-hydroxylase))
+                      (CC:[773..776] and)
+                      (NP (NN:[777..785] cortisol) (CD:[786..787] 6)
+                          (NN:[789..805] beta-hydroxylase)))))
+                (,:[805..806] ,)
+                (ADVP (RB:[807..819] respectively))))))))
+    (.:[819..820] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[507..820]::NP:S:
+
+;sentence 6 Span:821..1015
+;3. Norfluoxetine, sertraline and fluvoxamine  inhibited CYP1A1
+;(7-ethoxyresorufin O-deethylase) in microsomes from human  placenta (IC50
+;values 29 microM, 35 microM and 80 microM, respectively).
+;[824..837]:substance:"Norfluoxetine"
+;[839..849]:substance:"sertraline"
+;[854..865]:substance:"fluvoxamine"
+;[877..883]:cyp450:"CYP1A1"
+;[885..915]:cyp450:"7-ethoxyresorufin O-deethylase"
+;[953..957]:quantitative-name:"IC50"
+;[965..967]:quantitative-value:"29"
+;[968..974]:quantitative-units:"microM"
+;[976..978]:quantitative-value:"35"
+;[979..985]:quantitative-units:"microM"
+;[990..992]:quantitative-value:"80"
+;[993..999]:quantitative-units:"microM"
+(SENT
+  (NP (LS:[821..823] 3.))
+  (S
+    (NP-SBJ (NN:[824..837] Norfluoxetine) (,:[837..838] ,)
+            (NN:[839..849] sertraline) (CC:[850..853] and)
+            (NN:[854..865] fluvoxamine))
+    (VP (VBD:[867..876] inhibited)
+      (NP
+        (NP (NN:[877..883] CYP1A1))
+        (NP (-LRB-:[884..885] -LRB-)
+           (NN:[885..902] 7-ethoxyresorufin) (NN:[903..915] O-deethylase)
+          (-RRB-:[915..916] -RRB-)))
+      (PP-LOC (IN:[917..919] in)
+        (NP
+          (NP (NNS:[920..930] microsomes))
+          (PP (IN:[931..935] from)
+            (NP (JJ:[936..941] human) (NN:[943..951] placenta)))
+          (PRN (-LRB-:[952..953] -LRB-)
+            (FRAG
+              (NP-SBJ (NN:[953..957] IC50) (NNS:[958..964] values))
+              (NP-PRD
+                (NP (CD:[965..967] 29) (NN:[968..974] microM))
+                (,:[974..975] ,)
+                (NP (CD:[976..978] 35) (NN:[979..985] microM))
+                (CC:[986..989] and)
+                (NP (CD:[990..992] 80) (NN:[993..999] microM)))
+              (,:[999..1000] ,)
+              (ADVP (RB:[1001..1013] respectively)))
+            (-RRB-:[1013..1014] -RRB-)))))
+    (.:[1014..1015] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[821..1015]::NP:S:
+
+;sentence 7 Span:1017..1147
+;Fluvoxamine was a potent inhibitor of CYP1A2-mediated 7-ethoxyresorufin 
+;O-deethylase activity (IC50 = 0.3 microM) in human liver.
+;[1017..1028]:substance:"Fluvoxamine"
+;[1042..1051]:substance:"inhibitor"
+;[1055..1061]:cyp450:"CYP1A2"
+;[1071..1102]:cyp450:"7-ethoxyresorufin  O-deethylase"
+;[1113..1117]:quantitative-name:"IC50"
+;[1120..1123]:quantitative-value:"0.3"
+;[1124..1130]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (NN:[1017..1028] Fluvoxamine))
+    (VP (VBD:[1029..1032] was)
+      (NP-PRD
+        (NP (DT:[1033..1034] a) (JJ:[1035..1041] potent)
+            (NN:[1042..1051] inhibitor))
+        (PP (IN:[1052..1054] of)
+          (NP
+            (ADJP (NN:[1055..1061] CYP1A2) (HYPH:[1061..1062] -)
+                  (VBN:[1062..1070] mediated))
+            (NML (NN:[1071..1088] 7-ethoxyresorufin)
+                 (NN:[1090..1102] O-deethylase))
+            (NN:[1103..1111] activity)))
+        (PRN (-LRB-:[1112..1113] -LRB-)
+          (S
+            (NP-SBJ (NN:[1113..1117] IC50))
+            (VP (SYM:[1118..1119] =)
+              (NP (CD:[1120..1123] 0.3) (NN:[1124..1130] microM))))
+          (-RRB-:[1130..1131] -RRB-)))
+      (PP-LOC (IN:[1132..1134] in)
+        (NP (JJ:[1135..1140] human) (NN:[1141..1146] liver))))
+    (.:[1146..1147] .)))
+
+;sentence 8 Span:1148..1472
+;4. In microsomes from  three human livers fluvoxamine potently inhibited all
+;pathways of theophylline  biotransformation, the apparent inhibitor constant,
+;Ki, was 0.07-0.13 microM,  0.05-0.10 microM and 0.16-0.29 microM for
+;inhibition of 1-methylxanthine,  3-methylxanthine and 1,3-dimethyluric acid
+;formation, respectively.
+;[1190..1201]:substance:"fluvoxamine"
+;[1237..1249]:substance:"theophylline"
+;[1283..1292]:substance:"inhibitor"
+;[1303..1305]:quantitative-name:"Ki"
+;[1311..1320]:quantitative-value:"0.07-0.13"
+;[1321..1327]:quantitative-units:"microM"
+;[1330..1339]:quantitative-value:"0.05-0.10"
+;[1340..1346]:quantitative-units:"microM"
+;[1351..1360]:quantitative-value:"0.16-0.29"
+;[1361..1367]:quantitative-units:"microM"
+;[1386..1402]...[1443..1447]:substance:"1-methylxanthine"..."acid"
+;[1405..1421]...[1443..1447]:substance:"3-methylxanthine"..."acid"
+;[1426..1447]:substance:"1,3-dimethyluric acid"
+(SENT
+  (NP (LS:[1148..1150] 4.))
+  (S
+    (S
+      (PP-LOC (IN:[1151..1153] In)
+        (NP
+          (NP (NNS:[1154..1164] microsomes))
+          (PP (IN:[1165..1169] from)
+            (NP (CD:[1171..1176] three) (JJ:[1177..1182] human)
+                (NNS:[1183..1189] livers)))))
+      (NP-SBJ (NN:[1190..1201] fluvoxamine))
+      (ADVP (RB:[1202..1210] potently))
+      (VP (VBD:[1211..1220] inhibited)
+        (NP
+          (NP (DT:[1221..1224] all) (NNS:[1225..1233] pathways))
+          (PP (IN:[1234..1236] of)
+            (NP (NN:[1237..1249] theophylline)
+                (NN:[1251..1268] biotransformation))))))
+    (,:[1268..1269] ,)
+    (NP-SBJ
+      (NP (DT:[1270..1273] the) (JJ:[1274..1282] apparent)
+          (NN:[1283..1292] inhibitor) (NN:[1293..1301] constant))
+      (,:[1301..1302] ,)
+      (NP (NN:[1303..1305] Ki)))
+    (,:[1305..1306] ,)
+    (VP (VBD:[1307..1310] was)
+      (NP-PRD
+        (NP
+          (QP (CD:[1311..1315] 0.07) (HYPH:[1315..1316] -)
+              (CD:[1316..1320] 0.13))
+          (NN:[1321..1327] microM))
+        (,:[1327..1328] ,)
+        (NP
+          (QP (CD:[1330..1334] 0.05) (HYPH:[1334..1335] -)
+              (CD:[1335..1339] 0.10))
+          (NN:[1340..1346] microM))
+        (CC:[1347..1350] and)
+        (NP
+          (QP (CD:[1351..1355] 0.16) (HYPH:[1355..1356] -)
+              (CD:[1356..1360] 0.29))
+          (NN:[1361..1367] microM)))
+      (PP (IN:[1368..1371] for)
+        (NP
+          (NP (NN:[1372..1382] inhibition))
+          (PP (IN:[1383..1385] of)
+            (NP
+              (NP (NN:[1386..1402] 1-methylxanthine)
+                (NML-1 (-NONE-:[1402..1402] *P*)))
+              (,:[1402..1403] ,)
+              (NP (NN:[1405..1421] 3-methylxanthine)
+                (NML-1 (-NONE-:[1421..1421] *P*)))
+              (CC:[1422..1425] and)
+              (NP
+                 (JJ:[1426..1442] 1,3-dimethyluric) (NN:[1443..1447] acid)
+                (NML-1 (NN:[1448..1457] formation)))
+              (,:[1457..1458] ,)
+              (ADVP (RB:[1459..1471] respectively)))))))
+    (.:[1471..1472] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1148..1472]::NP:S:
+
+;sentence 9 Span:1473..1555
+;Seven other  SSRIs showed either weak or no inhibition of theophylline
+;metabolism.
+;[1486..1491]:substance:"SSRIs"
+;[1531..1543]:substance:"theophylline"
+(SENT
+  (S
+    (NP-SBJ (CD:[1473..1478] Seven) (JJ:[1479..1484] other)
+            (NNS:[1486..1491] SSRIs))
+    (VP (VBD:[1492..1498] showed)
+      (NP
+        (NP (CC:[1499..1505] either)
+          (NP (JJ:[1506..1510] weak)
+            (NML-1 (-NONE-:[1510..1510] *P*)))
+          (CC:[1511..1513] or)
+          (NP (DT:[1514..1516] no)
+            (NML-1 (NN:[1517..1527] inhibition))))
+        (PP (IN:[1528..1530] of)
+          (NP (NN:[1531..1543] theophylline) (NN:[1544..1554] metabolism)))))
+    (.:[1554..1555] .)))
+
+;sentence 10 Span:1556..1703
+;5. Ethanol  inhibited the formation of 1,3-dimethyluric acid with K(i) value
+;of 300 microM,  a value which is consistent with inhibition of CYP2E1.
+;[1559..1566]:substance:"Ethanol"
+;[1595..1616]:substance:"1,3-dimethyluric acid"
+;[1622..1626]:quantitative-name:"K(i)"
+;[1636..1639]:quantitative-value:"300"
+;[1640..1646]:quantitative-units:"microM"
+;[1696..1702]:cyp450:"CYP2E1"
+(SENT
+  (NP (LS:[1556..1558] 5.))
+  (S
+    (NP-SBJ (NN:[1559..1566] Ethanol))
+    (VP (VBD:[1568..1577] inhibited)
+      (NP
+        (NP (DT:[1578..1581] the) (NN:[1582..1591] formation))
+        (PP (IN:[1592..1594] of)
+          (NP (JJ:[1595..1611] 1,3-dimethyluric) (NN:[1612..1616] acid))))
+      (PP (IN:[1617..1621] with)
+        (NP
+          (NP
+            (NP (NN:[1622..1626] K-LRB-i-RRB-) (NN:[1627..1632] value))
+            (PP (IN:[1633..1635] of)
+              (NP (CD:[1636..1639] 300) (NN:[1640..1646] microM))))
+          (,:[1646..1647] ,)
+          (NP
+            (NP (DT:[1649..1650] a) (NN:[1651..1656] value))
+            (SBAR
+              (WHNP-1 (WDT:[1657..1662] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[1662..1662] *T*))
+                (VP (VBZ:[1663..1665] is)
+                  (ADJP-PRD (JJ:[1666..1676] consistent)
+                    (PP (IN:[1677..1681] with)
+                      (NP
+                        (NP (NN:[1682..1692] inhibition))
+                        (PP (IN:[1693..1695] of)
+                          (NP (NN:[1696..1702] CYP2E1)))))))))))))
+    (.:[1702..1703] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1556..1703]::NP:S:
+
+;sentence 11 Span:1704..1973
+;Ethanol and fluvoxamine  both inhibited 8-hydroxylation by about 45% and, in
+;combination, the compounds  decreased the formation of 1,3-dimethyluric acid
+;by 90%, indicating that CYP1A2  and CYP2E1 are equally important isoforms for
+;the 8-hydroxylation of  theophylline.
+;[1704..1711]:substance:"Ethanol"
+;[1716..1727]:substance:"fluvoxamine"
+;[1769..1772]:quantitative-value:"45%"
+;[1798..1807]:substance:"compounds"
+;[1836..1857]:substance:"1,3-dimethyluric acid"
+;[1861..1864]:quantitative-value:"90%"
+;[1882..1888]:cyp450:"CYP1A2"
+;[1894..1900]:cyp450:"CYP2E1"
+;[1923..1931]:cyp450:"isoforms"
+;[1960..1972]:substance:"theophylline"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[1704..1711] Ethanol) (CC:[1712..1715] and)
+            (NN:[1716..1727] fluvoxamine))
+        (NP (CC:[1729..1733] both)))
+      (VP (VBD:[1734..1743] inhibited)
+        (NP (NN:[1744..1759] 8-hydroxylation))
+        (PP-EXT (IN:[1760..1762] by)
+          (NP
+            (QP (RB:[1763..1768] about) (CD:[1769..1771] 45))
+            (NN:[1771..1772] %)))))
+    (CC:[1773..1776] and) (,:[1776..1777] ,)
+    (S
+      (PP (IN:[1778..1780] in)
+        (NP (NN:[1781..1792] combination)))
+      (,:[1792..1793] ,)
+      (NP-SBJ (DT:[1794..1797] the) (NNS:[1798..1807] compounds))
+      (VP (VBD:[1809..1818] decreased)
+        (NP
+          (NP (DT:[1819..1822] the) (NN:[1823..1832] formation))
+          (PP (IN:[1833..1835] of)
+            (NP (NN:[1836..1852] 1,3-dimethyluric) (NN:[1853..1857] acid))))
+        (PP-EXT (IN:[1858..1860] by)
+          (NP (CD:[1861..1863] 90) (NN:[1863..1864] %)))
+        (,:[1864..1865] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1865..1865] *))
+          (VP (VBG:[1866..1876] indicating)
+            (SBAR (IN:[1877..1881] that)
+              (S
+                (NP-SBJ (NN:[1882..1888] CYP1A2) (CC:[1890..1893] and)
+                        (NN:[1894..1900] CYP2E1))
+                (VP (VBP:[1901..1904] are)
+                  (NP-PRD
+                    (ADJP (RB:[1905..1912] equally) (JJ:[1913..1922] important))
+                    (NNS:[1923..1931] isoforms))
+                  (PP (IN:[1932..1935] for)
+                    (NP
+                      (NP (DT:[1936..1939] the)
+                          (NN:[1940..1955] 8-hydroxylation))
+                      (PP (IN:[1956..1958] of)
+                        (NP (NN:[1960..1972] theophylline))))))))))))
+    (.:[1972..1973] .)))
+
+;sentence 12 Span:1974..2102
+;6. It is concluded that pharmacokinetic interaction between  fluvoxamine and
+;theophylline is due to potent inhibition of CYP1A2.
+;[2035..2046]:substance:"fluvoxamine"
+;[2051..2063]:substance:"theophylline"
+;[2095..2101]:cyp450:"CYP1A2"
+(SENT
+  (NP (LS:[1974..1976] 6.))
+  (S
+    (NP-SBJ-1
+      (NP (PRP:[1977..1979] It))
+      (SBAR-2 (-NONE-:[1979..1979] *EXP*)))
+    (VP (VBZ:[1980..1982] is)
+      (VP (VBN:[1983..1992] concluded)
+        (NP-1 (-NONE-:[1992..1992] *))
+        (SBAR-2 (IN:[1993..1997] that)
+          (S
+            (NP-SBJ
+              (NP (JJ:[1998..2013] pharmacokinetic)
+                  (NN:[2014..2025] interaction))
+              (PP (IN:[2026..2033] between)
+                (NP (NN:[2035..2046] fluvoxamine) (CC:[2047..2050] and)
+                    (NN:[2051..2063] theophylline))))
+            (VP (VBZ:[2064..2066] is)
+              (PP-PRD (IN:[2067..2070] due)
+                (PP (TO:[2071..2073] to)
+                  (NP
+                    (NP (JJ:[2074..2080] potent) (NN:[2081..2091] inhibition))
+                    (PP (IN:[2092..2094] of)
+                      (NP (NN:[2095..2101] CYP1A2)))))))))))
+    (.:[2101..2102] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1974..2102]::NP:S:
+
+;section 13 Span:2106..2150
+;PMID: 7742153 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2106..2110] PMID) (::[2110..2111] :) (CD:[2112..2119] 7742153)
+        (NN:[2120..2121] -LSB-) (NNP:[2121..2127] PubMed) (::[2128..2129] -)
+        (NN:[2130..2137] indexed) (IN:[2138..2141] for)
+        (NNP:[2142..2150] MEDLINE-RSB-)))

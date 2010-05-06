@@ -1,0 +1,506 @@
+;PMID: 1744571
+;source_file_844.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..115] = [t:43..115]
+;2)section:[e:119..142] = [t:119..142]
+;3)section:[e:146..206] = [t:146..206]
+;4)sentence:[e:210..415] = [t:210..415]
+;5)sentence:[e:416..490] = [t:416..490]
+;6)sentence:[e:491..793] = [t:491..793]
+;7)sentence:[e:794..932] = [t:794..932]
+;8)sentence:[e:933..1212] = [t:933..1212]
+;9)sentence:[e:1213..1381] = [t:1213..1381]
+;10)sentence:[e:1382..1456] = [t:1382..1456]
+;11)sentence:[e:1457..1811] = [t:1457..1811]
+;12)sentence:[e:1812..1965] = [t:1812..1965]
+;13)section:[e:1969..2013] = [t:1969..2013]
+
+;section 0 Span:0..37
+;J Endocrinol. 1991 Nov;131(2):245-50.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..12] Endocrinol) (.:[12..13] .)
+        (CD:[14..18] 1991) (CC:[19..27] Nov;131-LRB-) (CD:[27..28] 2)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :245) (::[33..34] -)
+        (CD:[34..36] 50) (.:[36..37] .)))
+
+;sentence 1 Span:43..115
+;Transferrin inhibits aromatase activity of rat granulosa cells in vitro.
+;[43..54]:substance:"Transferrin"
+;[64..73]:cyp450:"aromatase"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[43..54] Transferrin))
+    (VP (VBZ:[55..63] inhibits)
+      (NP
+        (NP (NN:[64..73] aromatase) (NN:[74..82] activity))
+        (PP (IN:[83..85] of)
+          (NP (NN:[86..89] rat) (NN:[90..99] granulosa) (NNS:[100..105] cells))))
+      (ADVP (FW:[106..108] in) (FW:[109..114] vitro)))
+    (.:[114..115] .)))
+
+;section 2 Span:119..142
+;Li YD, Zhang ZW, Li WX.
+(SEC
+  (FRAG (NNP:[119..121] Li) (NNP:[122..124] YD) (,:[124..125] ,)
+        (NNP:[126..131] Zhang) (NNP:[132..134] ZW) (,:[134..135] ,)
+        (NNP:[136..138] Li) (NNP:[139..141] WX) (.:[141..142] .)))
+
+;section 3 Span:146..206
+;Department of Physiology, Beijing Medical University, China.
+(SEC
+  (FRAG (NNP:[146..156] Department) (IN:[157..159] of)
+        (NNP:[160..170] Physiology) (,:[170..171] ,) (NNP:[172..179] Beijing)
+        (NNP:[180..187] Medical) (NNP:[188..198] University) (,:[198..199] ,)
+        (NNP:[200..205] China) (.:[205..206] .)))
+
+;sentence 4 Span:210..415
+;The effect of transferrin on basal and FSH-stimulated aromatase activity of 
+;granulosa cells from immature female rats treated with diethylstilboestrol
+;(DES)  was examined in vitro by a radiometric method.
+;[224..235]:substance:"transferrin"
+;[249..252]:substance:"FSH"
+;[264..273]:cyp450:"aromatase"
+;[342..361]:substance:"diethylstilboestrol"
+;[363..366]:substance:"DES"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[210..213] The) (NN:[214..220] effect))
+      (PP (IN:[221..223] of)
+        (NP (NN:[224..235] transferrin)))
+      (PP (IN:[236..238] on)
+        (NP
+          (NP
+            (NP (JJ:[239..244] basal)
+              (NML-2 (-NONE-:[244..244] *P*)))
+            (CC:[245..248] and)
+            (NP
+              (ADJP (NN:[249..252] FSH) (HYPH:[252..253] -)
+                    (VBN:[253..263] stimulated))
+              (NML-2 (NN:[264..273] aromatase) (NN:[274..282] activity))))
+          (PP (IN:[283..285] of)
+            (NP
+              (NP (NN:[287..296] granulosa) (NNS:[297..302] cells))
+              (PP (IN:[303..307] from)
+                (NP
+                  (NP (JJ:[308..316] immature) (JJ:[317..323] female)
+                      (NNS:[324..328] rats))
+                  (VP (VBN:[329..336] treated)
+                    (NP (-NONE-:[336..336] *))
+                    (PP-MNR (IN:[337..341] with)
+                      (NP
+                        (NP (NN:[342..361] diethylstilboestrol))
+                        (NP (-LRB-:[362..363] -LRB-) (NN:[363..366] DES)
+                            (-RRB-:[366..367] -RRB-))))))))))))
+    (VP (VBD:[369..372] was)
+      (VP (VBN:[373..381] examined)
+        (NP-3 (-NONE-:[381..381] *))
+        (ADVP (FW:[382..384] in) (FW:[385..390] vitro))
+        (PP-MNR (IN:[391..393] by)
+          (NP (DT:[394..395] a) (JJ:[396..407] radiometric)
+              (NN:[408..414] method)))))
+    (.:[414..415] .)))
+
+;sentence 5 Span:416..490
+;The basal activity of the enzyme  was very low after 3 days of incubation.
+;[442..448]:substance:"enzyme"
+;[469..470]:quantitative-value:"3"
+;[471..475]:quantitative-units:"days"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[416..419] The) (JJ:[420..425] basal) (NN:[426..434] activity))
+      (PP (IN:[435..437] of)
+        (NP (DT:[438..441] the) (NN:[442..448] enzyme))))
+    (VP (VBD:[450..453] was)
+      (ADJP-PRD (RB:[454..458] very) (JJ:[459..462] low))
+      (PP-TMP (IN:[463..468] after)
+        (NP
+          (NP (CD:[469..470] 3) (NNS:[471..475] days))
+          (PP (IN:[476..478] of)
+            (NP (NN:[479..489] incubation))))))
+    (.:[489..490] .)))
+
+;sentence 6 Span:491..793
+;Treatment with FSH (20 ng/ml) resulted  in a 9.6-fold increase in activity,
+;whereas coincubation with increasing doses  of transferrin (3-300
+;micrograms/ml) produced a dose-dependent inhibition of  FSH-stimulated
+;aromatase activity with a projected minimal effective dose of  less than 2
+;micrograms/ml.
+;[506..509]:substance:"FSH"
+;[511..513]:quantitative-value:"20"
+;[514..519]:quantitative-units:"ng/ml"
+;[536..544]:quantitative-value:"9.6-fold"
+;[614..625]:substance:"transferrin"
+;[627..632]:quantitative-value:"3-300"
+;[633..646]:quantitative-units:"micrograms/ml"
+;[689..692]:substance:"FSH"
+;[704..713]:cyp450:"aromatase"
+;[767..778]:quantitative-value:"less than 2"
+;[779..792]:quantitative-units:"micrograms/ml"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[491..500] Treatment))
+      (PP (JJ:[501..505] with)
+        (NP (NN:[506..509] FSH)))
+      (PRN (-LRB-:[510..511] -LRB-)
+        (NP
+          (NP (CD:[511..513] 20) (NN:[514..516] ng))
+          (PP (SYM:[516..517] /)
+            (NP (NN:[517..519] ml))))
+        (-RRB-:[519..520] -RRB-)))
+    (VP (VBD:[521..529] resulted)
+      (PP-CLR (IN:[531..533] in)
+        (NP
+          (NP (DT:[534..535] a)
+            (QP (CD:[536..539] 9.6) (HYPH:[539..540] -) (JJ:[540..544] fold))
+            (NN:[545..553] increase))
+          (PP (IN:[554..556] in)
+            (NP (NN:[557..565] activity)))))
+      (,:[565..566] ,)
+      (SBAR-ADV (IN:[567..574] whereas)
+        (S
+          (NP-SBJ
+            (NP (NN:[575..587] coincubation))
+            (PP (IN:[588..592] with)
+              (NP
+                (NP (VBG:[593..603] increasing) (NNS:[604..609] doses))
+                (PP (IN:[611..613] of)
+                  (NP (NN:[614..625] transferrin)))
+                (PRN (-LRB-:[626..627] -LRB-)
+                  (NP
+                    (NP
+                      (QP (CD:[627..628] 3) (HYPH:[628..629] -)
+                          (CD:[629..632] 300))
+                      (NNS:[633..643] micrograms))
+                    (PP (SYM:[643..644] /)
+                      (NP (NN:[644..646] ml))))
+                  (-RRB-:[646..647] -RRB-)))))
+          (VP (VBD:[648..656] produced)
+            (NP
+              (NP (DT:[657..658] a)
+                (ADJP (NN:[659..663] dose) (HYPH:[663..664] -)
+                      (JJ:[664..673] dependent))
+                (NN:[674..684] inhibition))
+              (PP (IN:[685..687] of)
+                (NP
+                  (ADJP (NN:[689..692] FSH) (HYPH:[692..693] -)
+                        (VBN:[693..703] stimulated))
+                  (NN:[704..713] aromatase) (NN:[714..722] activity))))
+            (PP (IN:[723..727] with)
+              (NP
+                (NP (DT:[728..729] a) (VBN:[730..739] projected)
+                    (JJ:[740..747] minimal) (JJ:[748..757] effective)
+                    (NN:[758..762] dose))
+                (PP (IN:[763..765] of)
+                  (NP
+                    (NP
+                      (QP (JJR:[767..771] less) (IN:[772..776] than)
+                          (CD:[777..778] 2))
+                      (NNS:[779..789] micrograms))
+                    (PP (SYM:[789..790] /)
+                      (NP (NN:[790..792] ml)))))))))))
+    (.:[792..793] .)))
+
+;sentence 7 Span:794..932
+;A time-course study showed that the inhibitory effect  of transferrin on
+;aromatase activity has become significant at 48 h of  incubation.
+;[852..863]:substance:"transferrin"
+;[867..876]:cyp450:"aromatase"
+;[912..914]:quantitative-value:"48"
+;[915..916]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ (DT:[794..795] A)
+      (ADJP (NN:[796..800] time) (HYPH:[800..801] -) (NN:[801..807] course))
+      (NN:[808..813] study))
+    (VP (VBD:[814..820] showed)
+      (SBAR (IN:[821..825] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[826..829] the) (JJ:[830..840] inhibitory)
+                (NN:[841..847] effect))
+            (PP (IN:[849..851] of)
+              (NP (NN:[852..863] transferrin)))
+            (PP (IN:[864..866] on)
+              (NP (NN:[867..876] aromatase) (NN:[877..885] activity))))
+          (VP (VBZ:[886..889] has)
+            (VP (VBN:[890..896] become)
+              (ADJP-PRD (JJ:[897..908] significant))
+              (PP-TMP (IN:[909..911] at)
+                (NP
+                  (NP (CD:[912..914] 48) (NN:[915..916] h))
+                  (PP (IN:[917..919] of)
+                    (NP (NN:[921..931] incubation))))))))))
+    (.:[931..932] .)))
+
+;sentence 8 Span:933..1212
+;The inhibitory action of transferrin on the enzyme complex was  further
+;confirmed by showing that the FSH dose-response curve was significantly 
+;suppressed by concomitant treatment with 100 micrograms transferrin/ml with a
+; maximum suppression of 54.1% at a dose of 30 ng FSH/ml.
+;[958..969]:substance:"transferrin"
+;[977..991]:substance:"enzyme complex"
+;[1035..1038]:substance:"FSH"
+;[1119..1122]:quantitative-value:"100"
+;[1123..1148]:quantitative-units:"micrograms transferrin/ml"
+;[1180..1185]:quantitative-value:"54.1%"
+;[1199..1201]:quantitative-value:"30"
+;[1202..1211]:quantitative-units:"ng FSH/ml"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[933..936] The) (JJ:[937..947] inhibitory) (NN:[948..954] action))
+      (PP (IN:[955..957] of)
+        (NP (NN:[958..969] transferrin)))
+      (PP (IN:[970..972] on)
+        (NP (DT:[973..976] the)
+           (NN:[977..983] enzyme) (NN:[984..991] complex))))
+    (VP (VBD:[992..995] was)
+      (ADVP (RB:[997..1004] further))
+      (VP (VBN:[1005..1014] confirmed)
+        (NP-1 (-NONE-:[1014..1014] *))
+        (PP-MNR (IN:[1015..1017] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1017..1017] *))
+            (VP (VBG:[1018..1025] showing)
+              (SBAR (IN:[1026..1030] that)
+                (S
+                  (NP-SBJ-2 (DT:[1031..1034] the) (NN:[1035..1038] FSH)
+                    (NML (NN:[1039..1043] dose) (HYPH:[1043..1044] -)
+                         (NN:[1044..1052] response))
+                    (NN:[1053..1058] curve))
+                  (VP (VBD:[1059..1062] was)
+                    (ADVP (RB:[1063..1076] significantly))
+                    (VP (VBN:[1078..1088] suppressed)
+                      (NP-2 (-NONE-:[1088..1088] *))
+                      (PP (IN:[1089..1091] by)
+                        (NP-LGS
+                          (NP (JJ:[1092..1103] concomitant)
+                              (NN:[1104..1113] treatment))
+                          (PP (IN:[1114..1118] with)
+                            (NP
+                              (NP (CD:[1119..1122] 100)
+                                  (NNS:[1123..1133] micrograms)
+                                  (NN:[1134..1145] transferrin))
+                              (PP (SYM:[1145..1146] /)
+                                (NP (NN:[1146..1148] ml)))))))
+                      (PP (IN:[1149..1153] with)
+                        (NP
+                          (NP (DT:[1154..1155] a) (NN:[1157..1164] maximum)
+                              (NN:[1165..1176] suppression))
+                          (PP (IN:[1177..1179] of)
+                            (NP (CD:[1180..1184] 54.1) (NN:[1184..1185] %)))
+                          (PP (IN:[1186..1188] at)
+                            (NP
+                              (NP (DT:[1189..1190] a) (NN:[1191..1195] dose))
+                              (PP (IN:[1196..1198] of)
+                                (NP
+                                  (NP
+                                    (NML (CD:[1199..1201] 30)
+                                         (NN:[1202..1204] ng))
+                                    (NN:[1205..1208] FSH))
+                                  (PP (SYM:[1208..1209] /)
+                                    (NP (NN:[1209..1211] ml))))))))))))))))))
+    (.:[1211..1212] .)))
+
+;sentence 9 Span:1213..1381
+;The possibility that  transferrin may act through a non-specific inhibitory
+;effect seems unlikely, as  no changes in cell number and DNA content per well
+;were observed.
+;[1235..1246]:substance:"transferrin"
+;[1346..1349]:substance:"DNA"
+(SENT
+  (S
+    (NP-SBJ (DT:[1213..1216] The) (NN:[1217..1228] possibility)
+      (SBAR (IN:[1229..1233] that)
+        (S
+          (NP-SBJ (NN:[1235..1246] transferrin))
+          (VP (MD:[1247..1250] may)
+            (VP (VB:[1251..1254] act)
+              (PP-MNR (IN:[1255..1262] through)
+                (NP (DT:[1263..1264] a)
+                  (ADJP (AFX:[1265..1268] non) (HYPH:[1268..1269] -)
+                        (JJ:[1269..1277] specific))
+                  (JJ:[1278..1288] inhibitory) (NN:[1289..1295] effect))))))))
+    (VP (VBZ:[1296..1301] seems)
+      (ADJP-PRD (JJ:[1302..1310] unlikely))
+      (,:[1310..1311] ,)
+      (SBAR-ADV (IN:[1312..1314] as)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[1316..1318] no) (NNS:[1319..1326] changes))
+            (PP (IN:[1327..1329] in)
+              (NP
+                (NP
+                  (NP (NN:[1330..1334] cell) (NN:[1335..1341] number))
+                  (CC:[1342..1345] and)
+                  (NP (NN:[1346..1349] DNA) (NN:[1350..1357] content)))
+                (PP (IN:[1358..1361] per)
+                  (NP (NN:[1362..1366] well))))))
+          (VP (VBD:[1367..1371] were)
+            (VP (VBN:[1372..1380] observed)
+              (NP-1 (-NONE-:[1380..1380] *)))))))
+    (.:[1380..1381] .)))
+
+;sentence 10 Span:1382..1456
+;In fact,  protein synthesis was enhanced after treatment with transferrin.
+;[1392..1399]:substance:"protein"
+;[1444..1455]:substance:"transferrin"
+(SENT
+  (S
+    (PP (IN:[1382..1384] In)
+      (NP (NN:[1385..1389] fact)))
+    (,:[1389..1390] ,)
+    (NP-SBJ-1 (NN:[1392..1399] protein) (NN:[1400..1409] synthesis))
+    (VP (VBD:[1410..1413] was)
+      (VP (VBN:[1414..1422] enhanced)
+        (NP-1 (-NONE-:[1422..1422] *))
+        (PP-TMP (IN:[1423..1428] after)
+          (NP
+            (NP (NN:[1429..1438] treatment))
+            (PP (IN:[1439..1443] with)
+              (NP (NN:[1444..1455] transferrin)))))))
+    (.:[1455..1456] .)))
+
+;sentence 11 Span:1457..1811
+;Aromatase  activity, stimulated by several promoters of cyclic AMP (cAMP),
+;such as  prostaglandin E2 (PGE2), forskolin and 8-bromo-cAMP, was
+;significantly  suppressed by 100 micrograms transferrin/ml (36.6, 47.4 and
+;23.4% inhibition  respectively), suggesting that the effect of transferrin on
+;FSH action may  involve a site(s) distal to cAMP generation.
+;[1457..1466]:cyp450:"Aromatase"
+;[1500..1509]:substance:"promoters"
+;[1513..1523]:substance:"cyclic AMP"
+;[1525..1529]:substance:"cAMP"
+;[1541..1557]:substance:"prostaglandin E2"
+;[1559..1563]:substance:"PGE2"
+;[1566..1575]:substance:"forskolin"
+;[1580..1592]:substance:"8-bromo-cAMP"
+;[1627..1630]:quantitative-value:"100"
+;[1631..1656]:quantitative-units:"micrograms transferrin/ml"
+;[1658..1662]...[1677..1678]:quantitative-value:"36.6"..."%"
+;[1664..1668]...[1677..1678]:quantitative-value:"47.4"..."%"
+;[1673..1678]:quantitative-value:"23.4%"
+;[1736..1747]:substance:"transferrin"
+;[1751..1754]:substance:"FSH"
+;[1795..1799]:substance:"cAMP"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1457..1466] Aromatase) (NN:[1468..1476] activity))
+      (,:[1476..1477] ,)
+      (VP (VBN:[1478..1488] stimulated)
+        (NP (-NONE-:[1488..1488] *))
+        (PP (IN:[1489..1491] by)
+          (NP-LGS
+            (NP (JJ:[1492..1499] several) (NNS:[1500..1509] promoters))
+            (PP (IN:[1510..1512] of)
+              (NP
+                (NP (JJ:[1513..1519] cyclic) (NN:[1520..1523] AMP))
+                (NP (-LRB-:[1524..1525] -LRB-) (NN:[1525..1529] cAMP)
+                    (-RRB-:[1529..1530] -RRB-))))
+            (,:[1530..1531] ,)
+            (PP (JJ:[1532..1536] such) (IN:[1537..1539] as)
+              (NP
+                (NP
+                  (NP (NN:[1541..1554] prostaglandin) (NN:[1555..1557] E2))
+                  (NP (-LRB-:[1558..1559] -LRB-) (NN:[1559..1563] PGE2)
+                      (-RRB-:[1563..1564] -RRB-)))
+                (,:[1564..1565] ,)
+                (NP (NN:[1566..1575] forskolin))
+                (CC:[1576..1579] and)
+                (NP (NN:[1580..1592] 8-bromo-cAMP))))))))
+    (,:[1592..1593] ,)
+    (VP (VBD:[1594..1597] was)
+      (ADVP (RB:[1598..1611] significantly))
+      (VP (VBN:[1613..1623] suppressed)
+        (NP-2 (-NONE-:[1623..1623] *))
+        (PP (IN:[1624..1626] by)
+          (NP-LGS
+            (NP
+              (NML (CD:[1627..1630] 100) (NNS:[1631..1641] micrograms))
+              (NN:[1642..1653] transferrin))
+            (PP (SYM:[1653..1654] /)
+              (NP (NN:[1654..1656] ml)))))
+        (PRN (-LRB-:[1657..1658] -LRB-)
+          (NP
+            (NP
+              (NP
+                (NML (CD:[1658..1662] 36.6)
+                  (NML-3 (-NONE-:[1662..1662] *P*)))
+                (NML-1 (-NONE-:[1662..1662] *P*)))
+              (,:[1662..1663] ,)
+              (NP
+                (NML (CD:[1664..1668] 47.4)
+                  (NML-3 (-NONE-:[1668..1668] *P*)))
+                (NML-1 (-NONE-:[1668..1668] *P*)))
+              (CC:[1669..1672] and)
+              (NP
+                (NML (CD:[1673..1677] 23.4)
+                  (NML-3 (NN:[1677..1678] %)))
+                (NML-1 (NN:[1679..1689] inhibition))))
+            (ADVP (RB:[1691..1703] respectively)))
+          (-RRB-:[1703..1704] -RRB-))
+        (,:[1704..1705] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1705..1705] *))
+          (VP (VBG:[1706..1716] suggesting)
+            (SBAR (IN:[1717..1721] that)
+              (S
+                (NP-SBJ
+                  (NP (DT:[1722..1725] the) (NN:[1726..1732] effect))
+                  (PP (IN:[1733..1735] of)
+                    (NP (NN:[1736..1747] transferrin)))
+                  (PP (IN:[1748..1750] on)
+                    (NP (NN:[1751..1754] FSH) (NN:[1755..1761] action))))
+                (VP (MD:[1762..1765] may)
+                  (VP (VB:[1767..1774] involve)
+                    (NP
+                      (NP (DT:[1775..1776] a) (NN:[1777..1784] site-LRB-s-RRB-))
+                      (ADJP (JJ:[1785..1791] distal)
+                        (PP (TO:[1792..1794] to)
+                          (NP (NN:[1795..1799] cAMP)
+                              (NN:[1800..1810] generation)))))))))))))
+    (.:[1810..1811] .)))
+
+;sentence 12 Span:1812..1965
+;These findings indicated that  transferrin, present in follicular fluid, may
+;play an important role in the  regulation of granulosa cell differentiation.
+;[1843..1854]:substance:"transferrin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1812..1817] These) (NNS:[1818..1826] findings))
+    (VP (VBD:[1827..1836] indicated)
+      (SBAR (IN:[1837..1841] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1843..1854] transferrin))
+            (,:[1854..1855] ,)
+            (ADJP (JJ:[1856..1863] present)
+              (PP-LOC (IN:[1864..1866] in)
+                (NP (JJ:[1867..1877] follicular) (NN:[1878..1883] fluid)))))
+          (,:[1883..1884] ,)
+          (VP (MD:[1885..1888] may)
+            (VP (VB:[1889..1893] play)
+              (NP (DT:[1894..1896] an) (JJ:[1897..1906] important)
+                  (NN:[1907..1911] role))
+              (PP (IN:[1912..1914] in)
+                (NP
+                  (NP (DT:[1915..1918] the) (NN:[1920..1930] regulation))
+                  (PP (IN:[1931..1933] of)
+                    (NP (NN:[1934..1943] granulosa) (NN:[1944..1948] cell)
+                        (NN:[1949..1964] differentiation))))))))))
+    (.:[1964..1965] .)))
+
+;section 13 Span:1969..2013
+;PMID: 1744571 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1969..1973] PMID) (::[1973..1974] :) (CD:[1975..1982] 1744571)
+        (NN:[1983..1984] -LSB-) (NNP:[1984..1990] PubMed) (::[1991..1992] -)
+        (NN:[1993..2000] indexed) (IN:[2001..2004] for)
+        (NNP:[2005..2013] MEDLINE-RSB-)))

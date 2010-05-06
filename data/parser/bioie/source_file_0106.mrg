@@ -1,0 +1,288 @@
+;PMID: 2849519
+;source_file_1888.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..103] = [t:47..103]
+;2)section:[e:107..140] = [t:107..140]
+;3)section:[e:144..207] = [t:144..207]
+;4)sentence:[e:211..529] = [t:211..529]
+;5)sentence:[e:530..812] = [t:530..812]
+;6)sentence:[e:813..907] = [t:813..907]
+;7)sentence:[e:908..1040] = [t:908..1040]
+;8)sentence:[e:1041..1212] = [t:1041..1212]
+;9)section:[e:1216..1234] = [t:1216..1234]
+;10)section:[e:1240..1246] = [t:1240..1246]
+;11)section:[e:1252..1268] = [t:1252..1268]
+;12)section:[e:1272..1316] = [t:1272..1316]
+
+;section 0 Span:0..41
+;Clin Physiol Biochem. 1988;6(3-4):179-87.
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..12] Physiol) (NNP:[13..20] Biochem)
+        (.:[20..21] .) (CD:[22..26] 1988) (::[26..27] ;) (CD:[27..28] 6)
+        (-LRB-:[28..29] -LRB-) (JJ:[29..31] 3-) (HYPH:[31..33] 4-RRB-)
+        (CD:[33..37] :179) (HYPH:[37..38] -) (CD:[38..40] 87) (.:[40..41] .)))
+
+;sentence 1 Span:47..103
+;Arachidonic acid metabolites and blood pressure control.
+;[47..75]:substance:"Arachidonic acid metabolites"
+(SENT
+  (NP-HLN
+    (NP
+      (NML (JJ:[47..58] Arachidonic) (NN:[59..63] acid))
+      (NNS:[64..75] metabolites))
+    (CC:[76..79] and)
+    (NP
+      (NML (NN:[80..85] blood) (NN:[86..94] pressure))
+      (NN:[95..102] control))
+    (.:[102..103] .)))
+
+;section 2 Span:107..140
+;McGiff JC, Laniado-Schwartzman M.
+(SEC
+  (FRAG (NNP:[107..113] McGiff) (NNP:[114..116] JC) (,:[116..117] ,)
+        (NNP:[118..137] Laniado-Schwartzman) (NNP:[138..140] M.)))
+
+;section 3 Span:144..207
+;Department of Pharmacology, New York Medical College, Valhalla.
+(SEC
+  (FRAG (NNP:[144..154] Department) (IN:[155..157] of)
+        (NNP:[158..170] Pharmacology) (,:[170..171] ,) (NNP:[172..175] New)
+        (NNP:[176..180] York) (NNP:[181..188] Medical) (NNP:[189..196] College)
+        (,:[196..197] ,) (NNP:[198..206] Valhalla) (.:[206..207] .)))
+
+;sentence 4 Span:211..529
+;The medullary portion of the thick ascending limb of the loop of Henle (TALH)
+; has one of the highest concentrations of Na+-K+-ATPase found in mammalian 
+;tissues, reflecting the importance of this nephron segment in the regulation
+;of  extracellular fluid volume, as active sodium transport is driven by 
+;Na+-K+-ATPase.
+;[331..344]:substance:"Na+-K+-ATPase"
+;[484..490]:substance:"sodium"
+;[515..528]:substance:"Na+-K+-ATPase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[211..214] The) (JJ:[215..224] medullary) (NN:[225..232] portion))
+      (PP (IN:[233..235] of)
+        (NP
+          (NP
+            (NP (DT:[236..239] the) (JJ:[240..245] thick)
+                (VBG:[246..255] ascending) (NN:[256..260] limb))
+            (PP (IN:[261..263] of)
+              (NP
+                (NP (DT:[264..267] the) (NN:[268..272] loop))
+                (PP (IN:[273..275] of)
+                  (NP (NNP:[276..281] Henle))))))
+          (NP (-LRB-:[282..283] -LRB-) (NN:[283..287] TALH)
+              (-RRB-:[287..288] -RRB-)))))
+    (VP (VBZ:[290..293] has)
+      (NP
+        (NP (CD:[294..297] one))
+        (PP (IN:[298..300] of)
+          (NP
+            (NP (DT:[301..304] the) (JJS:[305..312] highest)
+                (NNS:[313..327] concentrations))
+            (PP (IN:[328..330] of)
+              (NP (NN:[331..344] Na+-K+-ATPase)))
+            (VP (VBN:[345..350] found)
+              (NP (-NONE-:[350..350] *))
+              (PP-LOC (IN:[351..353] in)
+                (NP (JJ:[354..363] mammalian) (NNS:[365..372] tissues)))))))
+      (,:[372..373] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[373..373] *))
+        (VP (VBG:[374..384] reflecting)
+          (NP
+            (NP (DT:[385..388] the) (NN:[389..399] importance))
+            (PP (IN:[400..402] of)
+              (NP (DT:[403..407] this) (NN:[408..415] nephron)
+                  (NN:[416..423] segment)))
+            (PP (IN:[424..426] in)
+              (NP
+                (NP (DT:[427..430] the) (NN:[431..441] regulation))
+                (PP (IN:[442..444] of)
+                  (NP (JJ:[446..459] extracellular) (NN:[460..465] fluid)
+                      (NN:[466..472] volume))))))
+          (,:[472..473] ,)
+          (SBAR-ADV (IN:[474..476] as)
+            (S
+              (NP-SBJ-1 (JJ:[477..483] active) (NN:[484..490] sodium)
+                        (NN:[491..500] transport))
+              (VP (VBZ:[501..503] is)
+                (VP (VBN:[504..510] driven)
+                  (NP-1 (-NONE-:[510..510] *))
+                  (PP (IN:[511..513] by)
+                    (NP-LGS (NN:[515..528] Na+-K+-ATPase))))))))))
+    (.:[528..529] .)))
+
+;sentence 5 Span:530..812
+;We have isolated cells derived primarily from the TALH of the  outer medulla
+;of rabbit kidney and have identified a cytochrome P450-dependent 
+;monooxygenase system which metabolizes arachidonic acid to two biologically 
+;active oxygenated peaks, each containing two or more products.
+;[646..661]:cyp450:"cytochrome P450"
+;[673..686]:substance:"monooxygenase"
+;[712..728]:substance:"arachidonic acid"
+;[803..811]:substance:"products"
+(SENT
+  (S
+    (NP-SBJ (PRP:[530..532] We))
+    (VP
+      (VP (VBP:[533..537] have)
+        (VP (VBN:[538..546] isolated)
+          (NP
+            (NP (NNS:[547..552] cells))
+            (VP (VBN:[553..560] derived)
+              (NP (-NONE-:[560..560] *))
+              (ADVP (RB:[561..570] primarily))
+              (PP-CLR (IN:[571..575] from)
+                (NP
+                  (NP (DT:[576..579] the) (NN:[580..584] TALH))
+                  (PP (IN:[585..587] of)
+                    (NP
+                      (NP (DT:[588..591] the) (JJ:[593..598] outer)
+                          (NN:[599..606] medulla))
+                      (PP (IN:[607..609] of)
+                        (NP (NN:[610..616] rabbit) (NN:[617..623] kidney)))))))))))
+      (CC:[624..627] and)
+      (VP (VBP:[628..632] have)
+        (VP (VBN:[633..643] identified)
+          (NP
+            (NP (DT:[644..645] a)
+              (ADJP
+                (NML (NN:[646..656] cytochrome) (NN:[657..661] P450))
+                (HYPH:[661..662] -) (JJ:[662..671] dependent))
+              (NN:[673..686] monooxygenase) (NN:[687..693] system))
+            (SBAR
+              (WHNP-1 (WDT:[694..699] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[699..699] *T*))
+                (VP (VBZ:[700..711] metabolizes)
+                  (NP (JJ:[712..723] arachidonic) (NN:[724..728] acid))
+                  (PP (TO:[729..731] to)
+                    (NP
+                      (NP (CD:[732..735] two)
+                        (ADJP (RB:[736..748] biologically)
+                              (JJ:[750..756] active))
+                        (VBN:[757..767] oxygenated) (NNS:[768..773] peaks))
+                      (,:[773..774] ,)
+                      (NP (DT:[775..779] each)
+                        (VP (VBG:[780..790] containing)
+                          (NP
+                            (QP (CD:[791..794] two) (CC:[795..797] or)
+                                (JJR:[798..802] more))
+                            (NNS:[803..811] products)))))))))))))
+    (.:[811..812] .)))
+
+;sentence 6 Span:813..907
+;One of the peaks  potently inhibits cardiac Na+-K+-ATPase and the other
+;relaxes blood vessels.
+;[857..870]:substance:"Na+-K+-ATPase"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (CD:[813..816] One))
+        (PP (IN:[817..819] of)
+          (NP (DT:[820..823] the) (NNS:[824..829] peaks))))
+      (ADVP (RB:[831..839] potently))
+      (VP (VBZ:[840..848] inhibits)
+        (NP (JJ:[849..856] cardiac) (NN:[857..870] Na+-K+-ATPase))))
+    (CC:[871..874] and)
+    (S
+      (NP-SBJ (DT:[875..878] the) (NN:[879..884] other))
+      (VP (VBZ:[885..892] relaxes)
+        (NP (NN:[893..898] blood) (NNS:[899..906] vessels))))
+    (.:[906..907] .)))
+
+;sentence 7 Span:908..1040
+;We  report that formation of these oxygenated arachidonate metabolites is
+;stimulated  by arginine vasopressin and salmon calcitonin.
+;[954..978]:substance:"arachidonate metabolites"
+;[997..1017]:substance:"arginine vasopressin"
+;[1029..1039]:substance:"calcitonin"
+(SENT
+  (S
+    (NP-SBJ (PRP:[908..910] We))
+    (VP (VBP:[912..918] report)
+      (SBAR (IN:[919..923] that)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[924..933] formation))
+            (PP (IN:[934..936] of)
+              (NP (DT:[937..942] these) (VBN:[943..953] oxygenated)
+                 (NN:[954..966] arachidonate) (NNS:[967..978] metabolites))))
+          (VP (VBZ:[979..981] is)
+            (VP (VBN:[982..992] stimulated)
+              (NP-1 (-NONE-:[992..992] *))
+              (PP (IN:[994..996] by)
+                (NP-LGS
+                  (NP (NN:[997..1005] arginine) (NN:[1006..1017] vasopressin))
+                  (CC:[1018..1021] and)
+                  (NP (NN:[1022..1028] salmon) (NN:[1029..1039] calcitonin)))))))))
+    (.:[1039..1040] .)))
+
+;sentence 8 Span:1041..1212
+;In TALH cells obtained from  rabbits made hypertensive by aortic constriction
+;there was a selective increase  in P1 and P2 formation compared to other
+;renomedullary cells.
+(SENT
+  (S
+    (PP-LOC (IN:[1041..1043] In)
+      (NP
+        (NP (NN:[1044..1048] TALH) (NNS:[1049..1054] cells))
+        (VP (VBN:[1055..1063] obtained)
+          (NP (-NONE-:[1063..1063] *))
+          (PP (IN:[1064..1068] from)
+            (NP
+              (NP (NNS:[1070..1077] rabbits))
+              (VP (VBN:[1078..1082] made)
+                (NP (JJ:[1083..1095] hypertensive))
+                (PP-MNR (IN:[1096..1098] by)
+                  (NP (JJ:[1099..1105] aortic) (NN:[1106..1118] constriction)))))))))
+    (NP-SBJ (EX:[1119..1124] there))
+    (VP (VBD:[1125..1128] was)
+      (NP-PRD
+        (NP (DT:[1129..1130] a) (JJ:[1131..1140] selective)
+            (NN:[1141..1149] increase))
+        (PP (IN:[1151..1153] in)
+          (NP
+            (NP (NN:[1154..1156] P1)
+              (NML-1 (-NONE-:[1156..1156] *P*)))
+            (CC:[1157..1160] and)
+            (NP (NN:[1161..1163] P2)
+              (NML-1 (NN:[1164..1173] formation))))))
+      (S-ADV
+        (NP-SBJ-2 (-NONE-:[1173..1173] *))
+        (VP (VBN:[1174..1182] compared)
+          (NP-2 (-NONE-:[1182..1182] *))
+          (PP-CLR (TO:[1183..1185] to)
+            (NP (JJ:[1186..1191] other) (JJ:[1192..1205] renomedullary)
+                (NNS:[1206..1211] cells))))))
+    (.:[1211..1212] .)))
+
+;section 9 Span:1216..1234
+;Publication Types:
+(SEC
+  (NP (NNP:[1216..1227] Publication) (NNP:[1228..1233] Types) (::[1233..1234] :)))
+
+;section 10 Span:1240..1246
+;Review
+(SEC
+  (NP (NNP:[1240..1246] Review)))
+
+;section 11 Span:1252..1268
+;Review, Tutorial
+(SEC
+  (NP (NNP:[1252..1258] Review) (,:[1258..1259] ,) (NNP:[1260..1268] Tutorial)))
+
+;section 12 Span:1272..1316
+;PMID: 2849519 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1272..1276] PMID) (::[1276..1277] :) (CD:[1278..1285] 2849519)
+        (NN:[1286..1287] -LSB-) (NNP:[1287..1293] PubMed) (::[1294..1295] -)
+        (NN:[1296..1303] indexed) (IN:[1304..1307] for)
+        (NNP:[1308..1316] MEDLINE-RSB-)))

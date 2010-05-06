@@ -1,0 +1,561 @@
+;PMID: 7954478
+;source_file_788.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..204] = [t:41..204]
+;2)section:[e:208..319] = [t:208..319]
+;3)section:[e:323..399] = [t:323..399]
+;4)sentence:[e:403..581] = [t:403..581]
+;5)sentence:[e:582..695] = [t:582..695]
+;6)sentence:[e:696..830] = [t:696..830]
+;7)sentence:[e:831..1007] = [t:831..1007]
+;8)sentence:[e:1008..1120] = [t:1008..1120]
+;9)sentence:[e:1121..1306] = [t:1121..1306]
+;10)sentence:[e:1307..1396] = [t:1307..1396]
+;11)sentence:[e:1397..1497] = [t:1397..1497]
+;12)sentence:[e:1499..1697] = [t:1499..1697]
+;13)sentence:[e:1698..1818] = [t:1698..1818]
+;14)sentence:[e:1819..2025] = [t:1819..2025]
+;15)sentence:[e:2026..2214] = [t:2026..2214]
+;16)sentence:[e:2215..2425] = [t:2215..2425]
+;17)section:[e:2429..2473] = [t:2429..2473]
+
+;section 0 Span:0..36
+;Cancer Res  1994 Dec 1;54(23):6282-7
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1994)
+        (NNP:[17..20] Dec) (CC:[21..26] 1;54-LRB-) (CD:[26..28] 23)
+        (-RRB-:[28..29] -RRB-) (CD:[29..34] :6282) (::[34..35] -)
+        (CD:[35..36] 7)))
+
+;sentence 1 Span:41..204
+;A truncated beta-catenin disrupts the interaction between E-cadherin and 
+;alpha-catenin: a cause of loss of intercellular adhesiveness in human cancer 
+;cell lines.
+;[53..65]:gene-protein:"beta-catenin"
+;[99..109]:gene-protein:"E-cadherin"
+;[115..128]:gene-protein:"alpha-catenin"
+(SENT
+  (UCP-HLN
+    (S
+      (NP-SBJ (DT:[41..42] A) (JJ:[43..52] truncated) (NN:[53..65] beta-catenin))
+      (VP (VBZ:[66..74] disrupts)
+        (NP
+          (NP (DT:[75..78] the) (NN:[79..90] interaction))
+          (PP (IN:[91..98] between)
+            (NP (NN:[99..109] E-cadherin) (CC:[110..113] and)
+                (NN:[115..128] alpha-catenin))))))
+    (::[128..129] :)
+    (NP
+      (NP
+        (NP (DT:[130..131] a) (NN:[132..137] cause))
+        (PP (IN:[138..140] of)
+          (NP
+            (NP (NN:[141..145] loss))
+            (PP (IN:[146..148] of)
+              (NP (JJ:[149..162] intercellular) (NN:[163..175] adhesiveness))))))
+      (PP-LOC (IN:[176..178] in)
+        (NP (JJ:[179..184] human) (NN:[185..191] cancer) (NN:[193..197] cell)
+            (NNS:[198..203] lines))))
+    (.:[203..204] .)))
+
+;section 2 Span:208..319
+;Oyama T, Kanai Y, Ochiai A, Akimoto S, Oda T, Yanagihara K, Nagafuchi A,
+;Tsukita  S, Shibamoto S, Ito F, et al.
+(SEC
+  (FRAG (NNP:[208..213] Oyama) (NNP:[214..215] T) (,:[215..216] ,)
+        (NNP:[217..222] Kanai) (NNP:[223..224] Y) (,:[224..225] ,)
+        (NNP:[226..232] Ochiai) (NNP:[233..234] A) (,:[234..235] ,)
+        (NNP:[236..243] Akimoto) (NNP:[244..246] S,) (NNP:[247..250] Oda)
+        (NNP:[251..252] T) (,:[252..253] ,) (NNP:[254..264] Yanagihara)
+        (NNP:[265..266] K) (,:[266..267] ,) (NNP:[268..277] Nagafuchi)
+        (NNP:[278..279] A) (,:[279..280] ,) (NNP:[281..288] Tsukita)
+        (NNP:[290..292] S,) (NNP:[293..302] Shibamoto) (NNP:[303..305] S,)
+        (NNP:[306..309] Ito) (NNP:[310..311] F) (,:[311..312] ,)
+        (DT:[313..315] et) (NN:[316..318] al) (.:[318..319] .)))
+
+;section 3 Span:323..399
+;Pathology Division, National Cancer Center Research Institute, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[323..332] Pathology) (NNP:[333..341] Division) (,:[341..342] ,)
+        (NNP:[343..351] National) (NNP:[352..358] Cancer)
+        (NNP:[359..365] Center) (NNP:[366..374] Research)
+        (NNP:[375..384] Institute) (,:[384..385] ,) (NNP:[386..391] Tokyo)
+        (,:[391..392] ,) (NNP:[393..398] Japan) (.:[398..399] .)))
+
+;sentence 4 Span:403..581
+;Cadherin cell adhesion molecules play an essential role in creating tight 
+;intercellular association and are considered to work as an invasion
+;suppressor  system of cancer cells.
+;[403..411]:gene-protein:"Cadherin"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[403..411] Cadherin)
+      (NML (NN:[412..416] cell) (NN:[417..425] adhesion))
+      (NNS:[426..435] molecules))
+    (VP
+      (VP (VBP:[436..440] play)
+        (NP (DT:[441..443] an) (JJ:[444..453] essential) (NN:[454..458] role))
+        (PP (IN:[459..461] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[461..461] *))
+            (VP (VBG:[462..470] creating)
+              (NP (JJ:[471..476] tight) (JJ:[478..491] intercellular)
+                  (NN:[492..503] association))))))
+      (CC:[504..507] and)
+      (VP (VBP:[508..511] are)
+        (VP (VBN:[512..522] considered)
+          (S
+            (NP-SBJ-1 (-NONE-:[522..522] *))
+            (VP (TO:[523..525] to)
+              (VP (VB:[526..530] work)
+                (PP (IN:[531..533] as)
+                  (NP
+                    (NP (DT:[534..536] an)
+                      (NML (NN:[537..545] invasion) (NN:[546..556] suppressor))
+                      (NN:[558..564] system))
+                    (PP (IN:[565..567] of)
+                      (NP (NN:[568..574] cancer) (NNS:[575..580] cells)))))))))))
+    (.:[580..581] .)))
+
+;sentence 5 Span:582..695
+;They form a molecular complex with catenins, a group of  cytoplasmic proteins
+;including alpha- and beta-catenins.
+;[617..625]:gene-protein:"catenins"
+;[670..676]...[686..694]:gene-protein:"alpha-"..."catenins"
+;[681..694]:gene-protein:"beta-catenins"
+(SENT
+  (S
+    (NP-SBJ (PRP:[582..586] They))
+    (VP (VBP:[587..591] form)
+      (NP (DT:[592..593] a) (JJ:[594..603] molecular) (NN:[604..611] complex))
+      (PP (IN:[612..616] with)
+        (NP
+          (NP (NNS:[617..625] catenins))
+          (,:[625..626] ,)
+          (NP
+            (NP (DT:[627..628] a) (NN:[629..634] group))
+            (PP (IN:[635..637] of)
+              (NP
+                (NP (JJ:[639..650] cytoplasmic) (NNS:[651..659] proteins))
+                (PP (VBG:[660..669] including)
+                  (NP
+                    (NP (SYM:[670..675] alpha) (HYPH:[675..676] -)
+                      (NML-1 (-NONE-:[676..676] *P*)))
+                    (CC:[677..680] and)
+                    (NP (SYM:[681..685] beta) (HYPH:[685..686] -)
+                      (NML-1 (NNS:[686..694] catenins)))))))))))
+    (.:[694..695] .)))
+
+;sentence 6 Span:696..830
+;While alpha-catenin has  been demonstrated to be crucial for cadherin
+;function, the role of beta-catenin  is not yet fully understood.
+;[702..715]:gene-protein:"alpha-catenin"
+;[757..765]:gene-protein:"cadherin"
+;[788..800]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (SBAR-ADV (IN:[696..701] While)
+      (S
+        (NP-SBJ-1 (NN:[702..715] alpha-catenin))
+        (VP (VBZ:[716..719] has)
+          (VP (VBN:[721..725] been)
+            (VP (VBN:[726..738] demonstrated)
+              (S
+                (NP-SBJ-1 (-NONE-:[738..738] *))
+                (VP (TO:[739..741] to)
+                  (VP (VB:[742..744] be)
+                    (ADJP-PRD (JJ:[745..752] crucial))
+                    (PP (IN:[753..756] for)
+                      (NP (NN:[757..765] cadherin) (NN:[766..774] function)))))))))))
+    (,:[774..775] ,)
+    (NP-SBJ-2
+      (NP (DT:[776..779] the) (NN:[780..784] role))
+      (PP (IN:[785..787] of)
+        (NP (NN:[788..800] beta-catenin))))
+    (VP (VBZ:[802..804] is)
+      (ADVP-TMP (RB:[805..808] not) (RB:[809..812] yet))
+      (ADVP (RB:[813..818] fully))
+      (VP (VBN:[819..829] understood)
+        (NP-2 (-NONE-:[829..829] *))))
+    (.:[829..830] .)))
+
+;sentence 7 Span:831..1007
+;In this study, we analyzed the cadherin-catenin  system in two human cell
+;lines, HSC-39 and its putative subline HSC-40A, derived  from a signet ring
+;cell carcinoma of stomach.
+;[862..870]:gene-protein:"cadherin"
+;[871..878]:gene-protein:"catenin"
+;[912..918]:malignancy:"HSC-39"
+;[944..951]:malignancy:"HSC-40A"
+;[969..1006]:malignancy:"signet ring cell carcinoma of stomach"
+(SENT
+  (S
+    (PP (IN:[831..833] In)
+      (NP (DT:[834..838] this) (NN:[839..844] study)))
+    (,:[844..845] ,)
+    (NP-SBJ (PRP:[846..848] we))
+    (VP (VBD:[849..857] analyzed)
+      (NP (DT:[858..861] the)
+        (NML (NN:[862..870] cadherin) (HYPH:[870..871] -)
+             (NN:[871..878] catenin))
+        (NN:[880..886] system))
+      (PP-LOC (IN:[887..889] in)
+        (NP
+          (NP
+            (NP (CD:[890..893] two) (JJ:[894..899] human) (NN:[900..904] cell)
+                (NNS:[905..910] lines))
+            (,:[910..911] ,)
+            (NP
+              (NP (NN:[912..918] HSC-39))
+              (CC:[919..922] and)
+              (NP (PRP$:[923..926] its) (JJ:[927..935] putative)
+                  (NN:[936..943] subline) (NN:[944..951] HSC-40A))))
+          (,:[951..952] ,)
+          (VP (VBN:[953..960] derived)
+            (NP (-NONE-:[960..960] *))
+            (PP (IN:[962..966] from)
+              (NP
+                (NP (DT:[967..968] a)
+                  (NML
+                    (NML (NN:[969..975] signet) (NN:[976..980] ring))
+                    (NN:[981..985] cell))
+                  (NN:[986..995] carcinoma))
+                (PP (IN:[996..998] of)
+                  (NP (NN:[999..1006] stomach)))))))))
+    (.:[1006..1007] .)))
+
+;sentence 8 Span:1008..1120
+;These cells grow as loose  aggregates or single cells, suggesting that their
+;cadherin system is not  functional.
+;[1008..1019]:malignancy:"These cells"
+;[1085..1093]:gene-protein:"cadherin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1008..1013] These) (NNS:[1014..1019] cells))
+    (VP (VBP:[1020..1024] grow)
+      (PP (IN:[1025..1027] as)
+        (NP
+          (NP (JJ:[1028..1033] loose) (NNS:[1035..1045] aggregates))
+          (IN:[1046..1048] or)
+          (NP (JJ:[1049..1055] single) (NNS:[1056..1061] cells))))
+      (,:[1061..1062] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1062..1062] *))
+        (VP (VBG:[1063..1073] suggesting)
+          (SBAR (IN:[1074..1078] that)
+            (S
+              (NP-SBJ (PRP$:[1079..1084] their) (NN:[1085..1093] cadherin)
+                      (NN:[1094..1100] system))
+              (VP (VBZ:[1101..1103] is) (RB:[1104..1107] not)
+                (ADJP-PRD (JJ:[1109..1119] functional))))))))
+    (.:[1119..1120] .)))
+
+;sentence 9 Span:1121..1306
+;In these cell lines, an identical 321-base pair in-frame mRNA  deletion of
+;beta-catenin was identified; this led to a 107-amino-acid deletion  in the
+;NH2-terminal region of the protein.
+;[1124..1140]:malignancy:"these cell lines"
+;[1155..1192]:variation-type:"321-base pair in-frame mRNA  deletion"
+;[1196..1208]:gene-rna:"beta-catenin"
+;[1239..1262]:variation-type:"107-amino-acid deletion"
+;[1271..1290]:variation-location:"NH2-terminal region"
+;[1298..1305]:gene-protein:"protein"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[1121..1123] In)
+        (NP (DT:[1124..1129] these) (NN:[1130..1134] cell)
+            (NNS:[1135..1140] lines)))
+      (,:[1140..1141] ,)
+      (NP-SBJ-1
+        (NP (DT:[1142..1144] an) (JJ:[1145..1154] identical)
+          
+          (NML (CD:[1155..1158] 321) (HYPH:[1158..1159] -)
+               (NN:[1159..1163] base) (NN:[1164..1168] pair))
+          (JJ:[1169..1177] in-frame) (NN:[1178..1182] mRNA)
+           (NN:[1184..1192] deletion))
+        (PP (IN:[1193..1195] of)
+          (NP (NN:[1196..1208] beta-catenin))))
+      (VP (VBD:[1209..1212] was)
+        (VP (VBN:[1213..1223] identified)
+          (NP-1 (-NONE-:[1223..1223] *)))))
+    (::[1223..1224] ;)
+    (S
+      (NP-SBJ (DT:[1225..1229] this))
+      (VP (VBD:[1230..1233] led)
+        (PP-CLR (TO:[1234..1236] to)
+          (NP
+            (NP (DT:[1237..1238] a)
+              
+              (NML (CD:[1239..1242] 107) (HYPH:[1242..1243] -)
+                   (JJ:[1243..1248] amino) (HYPH:[1248..1249] -)
+                   (NN:[1249..1253] acid))
+              (NN:[1254..1262] deletion))
+            (PP-LOC (IN:[1264..1266] in)
+              (NP
+                (NP (DT:[1267..1270] the)
+                  
+                  (NML (NN:[1271..1274] NH2) (HYPH:[1274..1275] -)
+                       (JJ:[1275..1283] terminal))
+                  (NN:[1284..1290] region))
+                (PP (IN:[1291..1293] of)
+                  (NP (DT:[1294..1297] the) (NN:[1298..1305] protein)))))))))
+    (.:[1305..1306] .)))
+
+;sentence 10 Span:1307..1396
+;Southern blot analysis disclosed a  homozygous deletion in part of the
+;beta-catenin gene.
+;[1343..1362]:variation-type:"homozygous deletion"
+;[1378..1390]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[1307..1315] Southern) (NN:[1316..1320] blot))
+      (NN:[1321..1329] analysis))
+    (VP (VBD:[1330..1339] disclosed)
+      (NP
+        (NP (DT:[1340..1341] a)
+           (JJ:[1343..1353] homozygous) (NN:[1354..1362] deletion))
+        (PP-LOC (IN:[1363..1365] in)
+          (NP
+            (NP (NN:[1366..1370] part))
+            (PP (IN:[1371..1373] of)
+              (NP (DT:[1374..1377] the) (NN:[1378..1390] beta-catenin)
+                  (NN:[1391..1395] gene)))))))
+    (.:[1395..1396] .)))
+
+;sentence 11 Span:1397..1497
+;On the other hand, these  cells expressed E-cadherin, alpha-catenin, and
+;plakoglobin of normal size.
+;[1416..1428]:malignancy:"these  cells"
+;[1439..1449]:gene-protein:"E-cadherin"
+;[1451..1464]:gene-protein:"alpha-catenin"
+;[1470..1481]:gene-protein:"plakoglobin"
+(SENT
+  (S
+    (PP (IN:[1397..1399] On)
+      (NP (DT:[1400..1403] the) (JJ:[1404..1409] other) (NN:[1410..1414] hand)))
+    (,:[1414..1415] ,)
+    (NP-SBJ (DT:[1416..1421] these) (NNS:[1423..1428] cells))
+    (VP (VBD:[1429..1438] expressed)
+      (NP
+        (NP (NN:[1439..1449] E-cadherin) (,:[1449..1450] ,)
+            (NN:[1451..1464] alpha-catenin) (,:[1464..1465] ,)
+            (CC:[1466..1469] and) (NN:[1470..1481] plakoglobin))
+        (PP (IN:[1482..1484] of)
+          (NP (JJ:[1485..1491] normal) (NN:[1492..1496] size)))))
+    (.:[1496..1497] .)))
+
+;sentence 12 Span:1499..1697
+;Immunoprecipitation analyses showed that E-cadherin was coprecipitated with
+;the  mutated beta-catenin but not with alpha-catenin, and antibodies against 
+;beta-catenin did not copurify alpha-catenin.
+;[1540..1550]:gene-protein:"E-cadherin"
+;[1588..1600]:gene-protein:"beta-catenin"
+;[1614..1627]:gene-protein:"alpha-catenin"
+;[1633..1643]:gene-protein:"antibodies"
+;[1653..1665]:gene-protein:"beta-catenin"
+;[1683..1696]:gene-protein:"alpha-catenin"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1499..1518] Immunoprecipitation) (NNS:[1519..1527] analyses))
+      (VP (VBD:[1528..1534] showed)
+        (SBAR (IN:[1535..1539] that)
+          (S
+            (NP-SBJ-1 (NN:[1540..1550] E-cadherin))
+            (VP (VBD:[1551..1554] was)
+              (VP
+                (VP (VBN:[1555..1569] coprecipitated)
+                  (NP-1 (-NONE-:[1569..1569] *))
+                  (PP-MNR=2 (IN:[1570..1574] with)
+                    (NP (DT:[1575..1578] the) (JJ:[1580..1587] mutated)
+                        (NN:[1588..1600] beta-catenin))))
+                (CC:[1601..1604] but)
+                (VP (RB:[1605..1608] not)
+                  (PP-MNR=2 (IN:[1609..1613] with)
+                    (NP (NN:[1614..1627] alpha-catenin))))))))))
+    (,:[1627..1628] ,) (CC:[1629..1632] and)
+    (S
+      (NP-SBJ
+        (NP (NNS:[1633..1643] antibodies))
+        (PP (IN:[1644..1651] against)
+          (NP (NN:[1653..1665] beta-catenin))))
+      (VP (VBD:[1666..1669] did) (RB:[1670..1673] not)
+        (VP (VB:[1674..1682] copurify)
+          (NP (NN:[1683..1696] alpha-catenin)))))
+    (.:[1696..1697] .)))
+
+;sentence 13 Span:1698..1818
+;However, the recombinant fusion  protein containing wild-type beta-catenin
+;precipitated alpha-catenin from these  cells.
+;[1760..1772]:gene-protein:"beta-catenin"
+;[1786..1799]:gene-protein:"alpha-catenin"
+;[1805..1817]:malignancy:"these  cells"
+(SENT
+  (S
+    (ADVP (RB:[1698..1705] However))
+    (,:[1705..1706] ,)
+    (NP-SBJ
+      (NP (DT:[1707..1710] the) (JJ:[1711..1722] recombinant)
+          (NN:[1723..1729] fusion) (NN:[1731..1738] protein))
+      (VP (VBG:[1739..1749] containing)
+        (NP (JJ:[1750..1759] wild-type) (NN:[1760..1772] beta-catenin))))
+    (VP (VBD:[1773..1785] precipitated)
+      (NP (NN:[1786..1799] alpha-catenin))
+      (PP (IN:[1800..1804] from)
+        (NP (DT:[1805..1810] these) (NNS:[1812..1817] cells))))
+    (.:[1817..1818] .)))
+
+;sentence 14 Span:1819..2025
+;These results suggest that the dysfunction of E-cadherin in these cell  lines
+;is due primarily to its failure to interact with alpha-catenin, and that 
+;this defect results from the mutation in beta-catenin.
+;[1865..1875]:gene-protein:"E-cadherin"
+;[1885..1896]:malignancy:"cell  lines"
+;[1946..1959]:gene-protein:"alpha-catenin"
+;[2000..2008]:variation-event:"mutation"
+;[2012..2024]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1819..1824] These) (NNS:[1825..1832] results))
+    (VP (VBP:[1833..1840] suggest)
+      (SBAR
+        (SBAR (IN:[1841..1845] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1846..1849] the) (NN:[1850..1861] dysfunction))
+              (PP (IN:[1862..1864] of)
+                (NP (NN:[1865..1875] E-cadherin)))
+              (PP-LOC (IN:[1876..1878] in)
+                (NP (DT:[1879..1884] these)
+                   (NN:[1885..1889] cell) (NNS:[1891..1896] lines))))
+            (VP (VBZ:[1897..1899] is)
+              (PP-PRD (JJ:[1900..1903] due)
+                (PP
+                  (ADVP (RB:[1904..1913] primarily))
+                  (TO:[1914..1916] to)
+                  (NP (PRP$:[1917..1920] its) (NN:[1921..1928] failure)
+                    (S
+                      (NP-SBJ (-NONE-:[1928..1928] *))
+                      (VP (TO:[1929..1931] to)
+                        (VP (VB:[1932..1940] interact)
+                          (PP-CLR (IN:[1941..1945] with)
+                            (NP (NN:[1946..1959] alpha-catenin))))))))))))
+        (,:[1959..1960] ,) (CC:[1961..1964] and)
+        (SBAR (IN:[1965..1969] that)
+          (S
+            (NP-SBJ (DT:[1971..1975] this) (NN:[1976..1982] defect))
+            (VP (VBZ:[1983..1990] results)
+              (PP (IN:[1991..1995] from)
+                (NP
+                  (NP (DT:[1996..1999] the) (NN:[2000..2008] mutation))
+                  (PP (IN:[2009..2011] in)
+                    (NP (NN:[2012..2024] beta-catenin))))))))))
+    (.:[2024..2025] .)))
+
+;sentence 15 Span:2026..2214
+;Thus, it is most likely  that the association between E-cadherin and
+;alpha-catenin is mediated by  beta-catenin, and that this process is blocked
+;by NH2-terminal deletion in  beta-catenin.
+;[2080..2090]:gene-protein:"E-cadherin"
+;[2095..2108]:gene-protein:"alpha-catenin"
+;[2125..2137]:gene-protein:"beta-catenin"
+;[2175..2187]:variation-location:"NH2-terminal"
+;[2188..2196]:variation-type:"deletion"
+;[2201..2213]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (ADVP (RB:[2026..2030] Thus))
+    (,:[2030..2031] ,)
+    (NP-SBJ
+      (NP (PRP:[2032..2034] it))
+      (SBAR-1 (-NONE-:[2034..2034] *EXP*)))
+    (VP (VBZ:[2035..2037] is)
+      (ADJP-PRD (RBS:[2038..2042] most) (JJ:[2043..2049] likely))
+      (SBAR-1
+        (SBAR (IN:[2051..2055] that)
+          (S
+            (NP-SBJ-3
+              (NP (DT:[2056..2059] the) (NN:[2060..2071] association))
+              (PP (IN:[2072..2079] between)
+                (NP (NN:[2080..2090] E-cadherin) (CC:[2091..2094] and)
+                    (NN:[2095..2108] alpha-catenin))))
+            (VP (VBZ:[2109..2111] is)
+              (VP (VBN:[2112..2120] mediated)
+                (NP-3 (-NONE-:[2120..2120] *))
+                (PP (IN:[2121..2123] by)
+                  (NP-LGS (NN:[2125..2137] beta-catenin)))))))
+        (,:[2137..2138] ,) (CC:[2139..2142] and)
+        (SBAR (IN:[2143..2147] that)
+          (S
+            (NP-SBJ-2 (DT:[2148..2152] this) (NN:[2153..2160] process))
+            (VP (VBZ:[2161..2163] is)
+              (VP (VBN:[2164..2171] blocked)
+                (NP-2 (-NONE-:[2171..2171] *))
+                (PP (IN:[2172..2174] by)
+                  (NP-LGS
+                     (NN:[2175..2178] NH2) (HYPH:[2178..2179] -)
+                     (JJ:[2179..2187] terminal)
+                    (NN:[2188..2196] deletion)))
+                (PP (VB:[2197..2199] in)
+                  (NP (NN:[2201..2213] beta-catenin)))))))))
+    (.:[2213..2214] .)))
+
+;sentence 16 Span:2215..2425
+;These findings indicate that genetic abnormality of beta-catenin  is one of
+;the mechanisms responsible for loosening of cell-cell contact, and may  be
+;involved in enhancement of tumor invasion in human cancers.
+;[2267..2279]:gene-generic:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[2215..2220] These) (NNS:[2221..2229] findings))
+    (VP (VBP:[2230..2238] indicate)
+      (SBAR (IN:[2239..2243] that)
+        (S
+          (NP-SBJ-1
+            (NP (JJ:[2244..2251] genetic) (NN:[2252..2263] abnormality))
+            (PP (IN:[2264..2266] of)
+              (NP (NN:[2267..2279] beta-catenin))))
+          (VP
+            (VP (VBZ:[2281..2283] is)
+              (NP-PRD
+                (NP (CD:[2284..2287] one))
+                (PP (IN:[2288..2290] of)
+                  (NP
+                    (NP (DT:[2291..2294] the) (NN:[2295..2305] mechanisms))
+                    (ADJP (JJ:[2306..2317] responsible)
+                      (PP (IN:[2318..2321] for)
+                        (NP
+                          (NP (NN:[2322..2331] loosening))
+                          (PP (IN:[2332..2334] of)
+                            (NP
+                              (NML
+                                (NML (NN:[2335..2339] cell))
+                                (PP (HYPH:[2339..2340] -)
+                                  (NP (NN:[2340..2344] cell))))
+                              (NN:[2345..2352] contact))))))))))
+            (,:[2352..2353] ,) (CC:[2354..2357] and)
+            (VP (MD:[2358..2361] may)
+              (VP (VB:[2363..2365] be)
+                (VP (VBN:[2366..2374] involved)
+                  (NP-1 (-NONE-:[2374..2374] *))
+                  (PP-CLR (IN:[2375..2377] in)
+                    (NP
+                      (NP (NN:[2378..2389] enhancement))
+                      (PP (IN:[2390..2392] of)
+                        (NP (NN:[2393..2398] tumor) (NN:[2399..2407] invasion)))))
+                  (PP (IN:[2408..2410] in)
+                    (NP (JJ:[2411..2416] human) (NNS:[2417..2424] cancers))))))))))
+    (.:[2424..2425] .)))
+
+;section 17 Span:2429..2473
+;PMID: 7954478 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2429..2433] PMID) (::[2433..2434] :) (CD:[2435..2442] 7954478)
+        (NN:[2443..2444] -LSB-) (NNP:[2444..2450] PubMed) (::[2451..2452] -)
+        (NN:[2453..2460] indexed) (IN:[2461..2464] for)
+        (NNP:[2465..2473] MEDLINE-RSB-)))

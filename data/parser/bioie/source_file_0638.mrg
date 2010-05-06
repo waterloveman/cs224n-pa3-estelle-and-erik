@@ -1,0 +1,449 @@
+;PMID: 3015692
+;source_file_908.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:39..104] = [t:39..104]
+;2)section:[e:108..134] = [t:108..134]
+;3)sentence:[e:138..252] = [t:138..252]
+;4)sentence:[e:253..308] = [t:253..308]
+;5)sentence:[e:309..401] = [t:309..401]
+;6)sentence:[e:402..563] = [t:402..563]
+;7)sentence:[e:564..677] = [t:564..677]
+;8)sentence:[e:678..801] = [t:678..801]
+;9)sentence:[e:802..977] = [t:802..977]
+;10)sentence:[e:978..1115] = [t:978..1115]
+;11)sentence:[e:1116..1172] = [t:1116..1172]
+;12)sentence:[e:1173..1304] = [t:1173..1304]
+;13)sentence:[e:1305..1432] = [t:1305..1432]
+;14)sentence:[e:1433..1643] = [t:1433..1643]
+;15)section:[e:1647..1665] = [t:1647..1665]
+;16)section:[e:1671..1677] = [t:1671..1677]
+;17)section:[e:1681..1725] = [t:1681..1725]
+;Token/POS Errors
+;ERROR_POS mismatch [133..134] t:token e:. .
+;ERROR_POS mismatch [1724..1725] t:token e:-RRB- ]
+
+;section 0 Span:0..33
+;Fed Proc. 1986 Aug;45(9):2376-81.
+(SEC
+  (FRAG (NNP:[0..3] Fed) (NNP:[4..8] Proc) (.:[8..9] .) (CD:[10..14] 1986)
+        (NNP:[15..18] Aug) (NN:[18..19] ;) (CD:[19..21] 45) (NN:[21..22] -LRB-)
+        (CD:[22..23] 9) (NN:[23..24] -RRB-) (::[24..25] :) (CD:[25..29] 2376)
+        (::[29..30] -) (CD:[30..32] 81) (.:[32..33] .)))
+
+;sentence 1 Span:39..104
+;Inhibition of aldosterone synthesis by atrial natriuretic factor.
+;[53..64]:substance:"aldosterone"
+;[78..103]:substance:"atrial natriuretic factor"
+(SENT
+  (NP-HLN
+    (NP (NN:[39..49] Inhibition))
+    (PP (IN:[50..52] of)
+      (NP (NN:[53..64] aldosterone) (NN:[65..74] synthesis)))
+    (PP (IN:[75..77] by)
+      (NP (JJ:[78..84] atrial) (JJ:[85..96] natriuretic) (NN:[97..103] factor)))
+    (.:[103..104] .)))
+
+;section 2 Span:108..134
+;Elliott ME, Goodfriend TL.
+(SEC
+  (FRAG (NNP:[108..115] Elliott) (NNP:[116..118] ME) (,:[118..119] ,)
+        (NNP:[120..130] Goodfriend) (NNP:[131..133] TL) (token:[133..134] .)))
+
+;sentence 3 Span:138..252
+;Atrial natriuretic factor (ANF) inhibits basal and stimulated aldosterone 
+;synthesis in adrenal glomerulosa cells.
+;[138..163]:substance:"Atrial natriuretic factor"
+;[165..168]:substance:"ANF"
+;[200..211]:substance:"aldosterone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[138..144] Atrial) (JJ:[145..156] natriuretic)
+          (NN:[157..163] factor))
+      (NP (-LRB-:[164..165] -LRB-) (NN:[165..168] ANF) (-RRB-:[168..169] -RRB-)))
+    (VP (VBZ:[170..178] inhibits)
+      (NP
+        (NP (JJ:[179..184] basal)
+          (NML-1 (-NONE-:[184..184] *P*)))
+        (CC:[185..188] and)
+        (NP (JJ:[189..199] stimulated)
+          (NML-1 (NN:[200..211] aldosterone) (NN:[213..222] synthesis))))
+      (PP-LOC (IN:[223..225] in)
+        (NP (JJ:[226..233] adrenal) (NN:[234..245] glomerulosa)
+            (NNS:[246..251] cells))))
+    (.:[251..252] .)))
+
+;sentence 4 Span:253..308
+;ANF probably acts through specific  membrane receptors.
+;[253..256]:substance:"ANF"
+;[298..307]:substance:"receptors"
+(SENT
+  (S
+    (NP-SBJ (NN:[253..256] ANF))
+    (ADVP (RB:[257..265] probably))
+    (VP (VBZ:[266..270] acts)
+      (PP (IN:[271..278] through)
+        (NP (JJ:[279..287] specific) (NN:[289..297] membrane)
+            (NNS:[298..307] receptors))))
+    (.:[307..308] .)))
+
+;sentence 5 Span:309..401
+;Alterations in cyclic GMP and cyclic AMP levels do not  account for ANF's
+;inhibitory effect.
+;[324..334]:substance:"cyclic GMP"
+;[339..349]:substance:"cyclic AMP"
+;[377..380]:substance:"ANF"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[309..320] Alterations))
+      (PP (IN:[321..323] in)
+        (NP
+          (NP
+             (JJ:[324..330] cyclic) (NN:[331..334] GMP)
+            (NML-1 (-NONE-:[334..334] *P*)))
+          (CC:[335..338] and)
+          (NP
+             (JJ:[339..345] cyclic) (NN:[346..349] AMP)
+            (NML-1 (NNS:[350..356] levels))))))
+    (VP (VBP:[357..359] do) (RB:[360..363] not)
+      (VP (VB:[365..372] account)
+        (PP-CLR (IN:[373..376] for)
+          (NP
+            (NP (NN:[377..380] ANF) (POS:[380..382] 's))
+            (JJ:[383..393] inhibitory) (NN:[394..400] effect)))))
+    (.:[400..401] .)))
+
+;sentence 6 Span:402..563
+;ANF does not block angiotensin II (AngII)  receptors nor does it interfere
+;with phosphoinositide metabolism or calcium  movements stimulated by adrenal
+;agonists.
+;[402..405]:substance:"ANF"
+;[421..454]:substance:"angiotensin II (AngII)  receptors"
+;[482..498]:substance:"phosphoinositide"
+;[513..520]:substance:"calcium"
+;[554..562]:substance:"agonists"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[402..405] ANF))
+      (VP (VBZ:[406..410] does) (RB:[411..414] not)
+        (VP (VB:[415..420] block)
+          (NP
+            (NML
+              (NML (NN:[421..432] angiotensin) (CD:[433..435] II))
+              (NML (-LRB-:[436..437] -LRB-) (NN:[437..442] AngII)
+                   (-RRB-:[442..443] -RRB-)))
+            (NNS:[445..454] receptors)))))
+    (CC:[455..458] nor)
+    (SINV (VBZ:[459..463] does)
+      (NP-SBJ (PRP:[464..466] it))
+      (VP (VB:[467..476] interfere)
+        (PP-CLR (IN:[477..481] with)
+          (NP
+            (NP (NN:[482..498] phosphoinositide) (NN:[499..509] metabolism))
+            (CC:[510..512] or)
+            (NP
+              (NP (NN:[513..520] calcium) (NNS:[522..531] movements))
+              (VP (VBN:[532..542] stimulated)
+                (NP (-NONE-:[542..542] *))
+                (PP (IN:[543..545] by)
+                  (NP-LGS (JJ:[546..553] adrenal) (NNS:[554..562] agonists)))))))))
+    (.:[562..563] .)))
+
+;sentence 7 Span:564..677
+;ANF does not inhibit protein synthesis  nor does it work by inhibiting
+;NA+,K+-ATPase or depleting cell potassium.
+;[564..567]:substance:"ANF"
+;[585..592]:substance:"protein"
+;[635..638]:substance:"NA+"
+;[639..648]:substance:"K+-ATPase"
+;[667..676]:substance:"potassium"
+(SENT
+  (UCP
+    (S
+      (NP-SBJ (NN:[564..567] ANF))
+      (VP (VBZ:[568..572] does) (RB:[573..576] not)
+        (VP (VB:[577..584] inhibit)
+          (NP (NN:[585..592] protein) (NN:[593..602] synthesis)))))
+    (CC:[604..607] nor)
+    (SINV (VBZ:[608..612] does)
+      (NP-SBJ (PRP:[613..615] it))
+      (VP (VB:[616..620] work)
+        (PP (IN:[621..623] by)
+          (S-NOM
+            (S
+              (NP-SBJ (-NONE-:[623..623] *))
+              (VP (VBG:[624..634] inhibiting)
+                (NP
+                  (NML (NN:[635..637] NA) (SYM:[637..638] +))
+                  (,:[638..639] ,)
+                  
+                  (NML (NN:[639..640] K) (SYM:[640..641] +))
+                  (HYPH:[641..642] -) (NN:[642..648] ATPase))))
+            (CC:[649..651] or)
+            (S
+              (NP-SBJ (-NONE-:[651..651] *))
+              (VP (VBG:[652..661] depleting)
+                (NP (NN:[662..666] cell) (NN:[667..676] potassium))))))))
+    (.:[676..677] .)))
+
+;sentence 8 Span:678..801
+;ANF  decreases conversion of endogenous cholesterol to pregnenolone, the step
+; stimulated by adrenocorticotropin and AngII.
+;[678..681]:substance:"ANF"
+;[718..729]:substance:"cholesterol"
+;[733..745]:substance:"pregnenolone"
+;[771..790]:substance:"adrenocorticotropin"
+;[795..800]:substance:"AngII"
+(SENT
+  (S
+    (NP-SBJ (NN:[678..681] ANF))
+    (VP (VBZ:[683..692] decreases)
+      (NP
+        (NP
+          (NP (NN:[693..703] conversion))
+          (PP (IN:[704..706] of)
+            (NP (JJ:[707..717] endogenous) (NN:[718..729] cholesterol)))
+          (PP (TO:[730..732] to)
+            (NP (NN:[733..745] pregnenolone))))
+        (,:[745..746] ,)
+        (NP
+          (NP (DT:[747..750] the) (NN:[751..755] step))
+          (VP (VBN:[757..767] stimulated)
+            (NP (-NONE-:[767..767] *))
+            (PP (IN:[768..770] by)
+              (NP-LGS (NN:[771..790] adrenocorticotropin) (CC:[791..794] and)
+                      (NN:[795..800] AngII)))))))
+    (.:[800..801] .)))
+
+;sentence 9 Span:802..977
+;ANF does not affect the conversion  of 20-alpha-hydroxycholesterol, which
+;easily penetrates mitochondrial membranes  to the site of the cholesterol
+;side-chain cleavage enzyme.
+;[802..805]:substance:"ANF"
+;[841..868]:substance:"20-alpha-hydroxycholesterol"
+;[938..976]:cyp450:"cholesterol side-chain cleavage enzyme"
+(SENT
+  (S
+    (NP-SBJ (NN:[802..805] ANF))
+    (VP (VBZ:[806..810] does) (RB:[811..814] not)
+      (VP (VB:[815..821] affect)
+        (NP
+          (NP (DT:[822..825] the) (NN:[826..836] conversion))
+          (PP (IN:[838..840] of)
+            (NP
+              (NP (NN:[841..868] 20-alpha-hydroxycholesterol))
+              (,:[868..869] ,)
+              (SBAR
+                (WHNP-1 (WDT:[870..875] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[875..875] *T*))
+                  (ADVP (RB:[876..882] easily))
+                  (VP (VBZ:[883..893] penetrates)
+                    (NP (JJ:[894..907] mitochondrial) (NNS:[908..917] membranes))
+                    (PP (TO:[919..921] to)
+                      (NP
+                        (NP (DT:[922..925] the) (NN:[926..930] site))
+                        (PP (IN:[931..933] of)
+                          (NP (DT:[934..937] the)
+                             (NN:[938..949] cholesterol)
+                            (NML
+                              (NML (NN:[950..954] side) (HYPH:[954..955] -)
+                                   (NN:[955..960] chain))
+                              (NN:[961..969] cleavage))
+                            (NN:[970..976] enzyme)))))))))))))
+    (.:[976..977] .)))
+
+;sentence 10 Span:978..1115
+;These results suggest  that ANF inhibits the ability of endogenous
+;cholesterol to reach or interact  with the side-chain cleavage enzyme.
+;[1006..1009]:substance:"ANF"
+;[1045..1056]:substance:"cholesterol"
+;[1088..1114]:substance:"side-chain cleavage enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[978..983] These) (NNS:[984..991] results))
+    (VP (VBP:[992..999] suggest)
+      (SBAR (IN:[1001..1005] that)
+        (S
+          (NP-SBJ (NN:[1006..1009] ANF))
+          (VP (VBZ:[1010..1018] inhibits)
+            (NP
+              (NP (DT:[1019..1022] the) (NN:[1023..1030] ability)
+                (S-2 (-NONE-:[1030..1030] *ICH*)))
+              (PP (IN:[1031..1033] of)
+                (NP (JJ:[1034..1044] endogenous) (NN:[1045..1056] cholesterol)))
+              (S-2
+                (NP-SBJ (-NONE-:[1056..1056] *))
+                (VP (TO:[1057..1059] to)
+                  (VP
+                    (VP (VB:[1060..1065] reach)
+                      (NP-1 (-NONE-:[1065..1065] *RNR*)))
+                    (CC:[1066..1068] or)
+                    (VP (VB:[1069..1077] interact)
+                      (PP (IN:[1079..1083] with)
+                        (NP-1 (-NONE-:[1083..1083] *RNR*))))
+                    (NP-1 (DT:[1084..1087] the)
+                      
+                      (NML
+                        (NML (NN:[1088..1092] side) (HYPH:[1092..1093] -)
+                             (NN:[1093..1098] chain))
+                        (NN:[1099..1107] cleavage))
+                      (NN:[1108..1114] enzyme))))))))))
+    (.:[1114..1115] .)))
+
+;sentence 11 Span:1116..1172
+;ANF does not act like a calcium  channel-blocking agent.
+;[1116..1119]:substance:"ANF"
+;[1140..1147]:substance:"calcium"
+;[1166..1171]:substance:"agent"
+(SENT
+  (S
+    (NP-SBJ (NN:[1116..1119] ANF))
+    (VP (VBZ:[1120..1124] does) (RB:[1125..1128] not)
+      (VP (VB:[1129..1132] act)
+        (PP (IN:[1133..1137] like)
+          (NP (DT:[1138..1139] a)
+            (ADJP
+              (NML (NN:[1140..1147] calcium) (NN:[1149..1156] channel))
+              (HYPH:[1156..1157] -) (VBG:[1157..1165] blocking))
+            (NN:[1166..1171] agent)))))
+    (.:[1171..1172] .)))
+
+;sentence 12 Span:1173..1304
+;However, ANF is less effective at high-calcium  concentrations, which
+;suggests that it may inhibit a step that calcium  stimulates.
+;[1182..1185]:substance:"ANF"
+;[1212..1219]:substance:"calcium"
+;[1284..1291]:substance:"calcium"
+(SENT
+  (S
+    (ADVP (RB:[1173..1180] However))
+    (,:[1180..1181] ,)
+    (NP-SBJ (NN:[1182..1185] ANF))
+    (VP (VBZ:[1186..1188] is)
+      (NP-PRD
+        (NP (RBR:[1189..1193] less) (JJ:[1194..1203] effective))
+        (PP (IN:[1204..1206] at)
+          (NP
+            (ADJP (JJ:[1207..1211] high) (HYPH:[1211..1212] -)
+                  (NN:[1212..1219] calcium))
+            (NNS:[1221..1235] concentrations))))
+      (,:[1235..1236] ,)
+      (SBAR-ADV
+        (WHNP-2 (WDT:[1237..1242] which))
+        (S
+          (NP-SBJ-2 (-NONE-:[1242..1242] *T*))
+          (VP (VBZ:[1243..1251] suggests)
+            (SBAR (IN:[1252..1256] that)
+              (S
+                (NP-SBJ (PRP:[1257..1259] it))
+                (VP (MD:[1260..1263] may)
+                  (VP (VB:[1264..1271] inhibit)
+                    (NP
+                      (NP (DT:[1272..1273] a) (NN:[1274..1278] step))
+                      (SBAR
+                        (WHNP-1 (IN:[1279..1283] that))
+                        (S
+                          (NP-SBJ (NN:[1284..1291] calcium))
+                          (VP (VBZ:[1293..1303] stimulates)
+                            (NP-1 (-NONE-:[1303..1303] *T*))))))))))))))
+    (.:[1303..1304] .)))
+
+;sentence 13 Span:1305..1432
+;Understanding ANF action will probably require identification of the 
+;specific biochemical changes (mediators) that it induces.
+;[1319..1322]:substance:"ANF"
+;[1405..1414]:substance:"mediators"
+(SENT
+  (S
+    (S-NOM-SBJ
+      (NP-SBJ (-NONE-:[1305..1305] *))
+      (VP (VBG:[1305..1318] Understanding)
+        (NP (NN:[1319..1322] ANF) (NN:[1323..1329] action))))
+    (VP (MD:[1330..1334] will)
+      (ADVP (RB:[1335..1343] probably))
+      (VP (VB:[1344..1351] require)
+        (NP
+          (NP (NN:[1352..1366] identification))
+          (PP (IN:[1367..1369] of)
+            (NP
+              (NP (DT:[1370..1373] the) (JJ:[1375..1383] specific)
+                  (JJ:[1384..1395] biochemical) (NNS:[1396..1403] changes)
+                (PRN (-LRB-:[1404..1405] -LRB-)
+                  (NP (NNS:[1405..1414] mediators))
+                  (-RRB-:[1414..1415] -RRB-)))
+              (SBAR
+                (WHNP-1 (WDT:[1416..1420] that))
+                (S
+                  (NP-SBJ (PRP:[1421..1423] it))
+                  (VP (VBZ:[1424..1431] induces)
+                    (NP-1 (-NONE-:[1431..1431] *T*))))))))))
+    (.:[1431..1432] .)))
+
+;sentence 14 Span:1433..1643
+;Parallel efforts to  understand how other agents stimulate steroidogenesis
+;(particularly in the areas  of protein synthesis, protein phosphorylation,
+;and cholesterol movements) will  further this understanding.
+;[1475..1481]:substance:"agents"
+;[1539..1546]:substance:"protein"
+;[1558..1565]:substance:"protein"
+;[1587..1598]:substance:"cholesterol"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1433..1441] Parallel) (NNS:[1442..1449] efforts)
+      (S
+        (NP-SBJ (-NONE-:[1449..1449] *))
+        (VP (TO:[1450..1452] to)
+          (VP (VB:[1454..1464] understand)
+            (SBAR
+              (WHADVP-1 (WRB:[1465..1468] how))
+              (S
+                (NP-SBJ (JJ:[1469..1474] other) (NNS:[1475..1481] agents))
+                (VP (VBP:[1482..1491] stimulate)
+                  (NP (NN:[1492..1507] steroidogenesis))
+                  (ADVP-1 (-NONE-:[1507..1507] *T*))
+                  (PRN (-LRB-:[1508..1509] -LRB-)
+                    (PP
+                      (ADVP (RB:[1509..1521] particularly))
+                      (IN:[1522..1524] in)
+                      (NP
+                        (NP (DT:[1525..1528] the) (NNS:[1529..1534] areas))
+                        (PP (IN:[1536..1538] of)
+                          (NP
+                            (NP (NN:[1539..1546] protein)
+                                (NN:[1547..1556] synthesis))
+                            (,:[1556..1557] ,)
+                            (NP (NN:[1558..1565] protein)
+                                (NN:[1566..1581] phosphorylation))
+                            (,:[1581..1582] ,) (CC:[1583..1586] and)
+                            (NP (NN:[1587..1598] cholesterol)
+                                (NNS:[1599..1608] movements))))))
+                    (-RRB-:[1608..1609] -RRB-)))))))))
+    (VP (MD:[1610..1614] will)
+      (VP (VB:[1616..1623] further)
+        (NP (DT:[1624..1628] this) (NN:[1629..1642] understanding))))
+    (.:[1642..1643] .)))
+
+;section 15 Span:1647..1665
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1647..1658] Publication) (NNP:[1659..1664] Types)
+        (::[1664..1665] :)))
+
+;section 16 Span:1671..1677
+;Review
+(SEC
+  (FRAG (NNP:[1671..1677] Review)))
+
+;section 17 Span:1681..1725
+;PMID: 3015692 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1681..1685] PMID) (::[1685..1686] :) (CD:[1687..1694] 3015692)
+        (NN:[1695..1696] -LSB-) (NNP:[1696..1702] PubMed) (::[1703..1704] -)
+        (NN:[1705..1712] indexed) (IN:[1713..1716] for)
+        (NNP:[1717..1724] MEDLINE) (token:[1724..1725] -RSB-)))

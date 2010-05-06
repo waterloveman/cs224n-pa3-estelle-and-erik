@@ -1,0 +1,353 @@
+;PMID: 9681834
+;source_file_2932.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..154] = [t:44..154]
+;2)section:[e:158..178] = [t:158..178]
+;3)section:[e:182..306] = [t:182..306]
+;4)sentence:[e:310..432] = [t:310..432]
+;5)sentence:[e:433..609] = [t:433..609]
+;6)sentence:[e:610..776] = [t:610..776]
+;7)sentence:[e:778..967] = [t:778..967]
+;8)sentence:[e:968..1093] = [t:968..1093]
+;9)sentence:[e:1095..1163] = [t:1095..1163]
+;10)sentence:[e:1165..1280] = [t:1165..1280]
+;11)sentence:[e:1281..1437] = [t:1281..1437]
+;12)section:[e:1441..1485] = [t:1441..1485]
+
+;section 0 Span:0..38
+;Oncogene.  1998 Jun 25;16(25):3337-43.
+(SEC
+  (FRAG (NN:[0..8] Oncogene) (.:[8..9] .) (CD:[11..15] 1998) (NNP:[16..19] Jun)
+        (CD:[20..22] 25) (CD:[22..26] ;16-LRB-) (CD:[26..28] 25)
+        (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..33] 333)
+        (CD:[33..37] 7-43) (.:[37..38] .)))
+
+;sentence 1 Span:44..154
+;p27Kip1: a key mediator of retinoic acid induced growth arrest in the
+;SMS-KCNR  human neuroblastoma cell line.
+;[44..51]:gene-protein:"p27Kip1"
+;[130..143]:malignancy-type:"neuroblastoma"
+(SENT
+  (FRAG
+    (NP (NN:[44..51] p27Kip1))
+    (::[51..52] :)
+    (S
+      (NP-SBJ
+        (NP (DT:[53..54] a) (JJ:[55..58] key) (NN:[59..67] mediator))
+        (PP (IN:[68..70] of)
+          (NP (JJ:[71..79] retinoic) (NN:[80..84] acid))))
+      (VP (VBD:[85..92] induced)
+        (NP (NN:[93..99] growth) (NN:[100..106] arrest))
+        (PP (IN:[107..109] in)
+          (NP (DT:[110..113] the) (NN:[114..122] SMS-KCNR) (JJ:[124..129] human)
+              (NN:[130..143] neuroblastoma) (NN:[144..148] cell)
+              (NN:[149..153] line)))))
+    (.:[153..154] .)))
+
+;section 2 Span:158..178
+;Matsuo T, Thiele CJ.
+(SEC
+  (FRAG (NNP:[158..164] Matsuo) (NNP:[165..166] T) (,:[166..167] ,)
+        (NNP:[168..174] Thiele) (NNP:[175..178] CJ.)))
+
+;section 3 Span:182..306
+;Cell & Molecular Biology Section, Pediatric Oncology Branch, National Cancer 
+;Institute, Bethesda, Maryland 20892-1928, USA.
+(SEC
+  (FRAG (NNP:[182..186] Cell) (CC:[187..188] &) (NNP:[189..198] Molecular)
+        (NNP:[199..206] Biology) (NNP:[207..214] Section) (,:[214..215] ,)
+        (NNP:[216..225] Pediatric) (NNP:[226..234] Oncology)
+        (NNP:[235..241] Branch) (,:[241..242] ,) (NNP:[243..251] National)
+        (NNP:[252..258] Cancer) (NNP:[260..269] Institute) (,:[269..270] ,)
+        (NNP:[271..279] Bethesda) (,:[279..280] ,) (NNP:[281..289] Maryland)
+        (CD:[290..295] 20892) (CD:[295..300] -1928) (,:[300..301] ,)
+        (NNP:[302..305] USA) (.:[305..306] .)))
+
+;sentence 4 Span:310..432
+;Retinoic acid (RA) treatment of SMS-KCNR neuroblastoma (NB) cells leads to G1
+; growth arrest and neuronal differentiation.
+;[351..364]:malignancy-type:"neuroblastoma"
+;[366..368]:malignancy-type:"NB"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (NML (JJ:[310..318] Retinoic) (NN:[319..323] acid))
+          (NML (-LRB-:[324..325] -LRB-) (NN:[325..327] RA)
+               (-RRB-:[327..328] -RRB-)))
+        (NN:[329..338] treatment))
+      (PP (IN:[339..341] of)
+        (NP
+          (NML
+            (NML (NN:[342..350] SMS-KCNR) (NN:[351..364] neuroblastoma))
+            (NML (-LRB-:[365..366] -LRB-) (NN:[366..368] NB)
+                 (-RRB-:[368..369] -RRB-)))
+          (NNS:[370..375] cells))))
+    (VP (VBZ:[376..381] leads)
+      (PP-CLR (TO:[382..384] to)
+        (NP
+          (NP (NN:[385..387] G1) (NN:[389..395] growth) (NN:[396..402] arrest))
+          (CC:[403..406] and)
+          (NP (JJ:[407..415] neuronal) (NN:[416..431] differentiation)))))
+    (.:[431..432] .)))
+
+;sentence 5 Span:433..609
+;To investigate the molecular  mechanisms by which RA alters cell growth, we
+;analysed the expression and  activity of components of the cell cycle
+;machinery after culture in RA.
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[433..433] *))
+      (VP (TO:[433..435] To)
+        (VP (VB:[436..447] investigate)
+          (NP
+            (NP (DT:[448..451] the) (JJ:[452..461] molecular)
+                (NNS:[463..473] mechanisms))
+            (SBAR
+              (WHPP-1 (IN:[474..476] by)
+                (WHNP (WDT:[477..482] which)))
+              (S
+                (NP-SBJ (NN:[483..485] RA))
+                (VP (VBZ:[486..492] alters)
+                  (NP (NN:[493..497] cell) (NN:[498..504] growth))
+                  (PP-1 (-NONE-:[504..504] *T*)))))))))
+    (,:[504..505] ,)
+    (NP-SBJ (PRP:[506..508] we))
+    (VP (VBD:[509..517] analysed)
+      (NP
+        (NP (DT:[518..521] the) (NN:[522..532] expression) (CC:[533..536] and)
+            (NN:[538..546] activity))
+        (PP (IN:[547..549] of)
+          (NP
+            (NP (NNS:[550..560] components))
+            (PP (IN:[561..563] of)
+              (NP (DT:[564..567] the)
+                (NML (NN:[568..572] cell) (NN:[573..578] cycle))
+                (NN:[579..588] machinery))))))
+      (PP-TMP (IN:[589..594] after)
+        (NP
+          (NP (NN:[595..602] culture))
+          (PP (IN:[603..605] in)
+            (NP (NN:[606..608] RA))))))
+    (.:[608..609] .)))
+
+;sentence 6 Span:610..776
+;Within 2  days of RA treatment and prior to the arrest of NB cells in the G1
+;phase of the  cell cycle, there is a complete downregulation of G1 cyclin/Cdk
+;activities.
+;[668..670]:malignancy-type:"NB"
+;[751..760]:gene-protein:"G1 cyclin"
+;[761..764]:gene-protein:"Cdk"
+(SENT
+  (S
+    (UCP-TMP
+      (PP (IN:[610..616] Within)
+        (NP
+          (NP (CD:[617..618] 2) (NNS:[620..624] days))
+          (PP (IN:[625..627] of)
+            (NP (NN:[628..630] RA) (NN:[631..640] treatment)))))
+      (CC:[641..644] and)
+      (ADJP (JJ:[645..650] prior)
+        (PP (TO:[651..653] to)
+          (NP
+            (NP (DT:[654..657] the) (NN:[658..664] arrest))
+            (PP (IN:[665..667] of)
+              (NP (NN:[668..670] NB) (NNS:[671..676] cells)))
+            (PP (IN:[677..679] in)
+              (NP
+                (NP (DT:[680..683] the) (NN:[684..686] G1) (NN:[687..692] phase))
+                (PP (IN:[693..695] of)
+                  (NP (DT:[696..699] the) (NN:[701..705] cell)
+                      (NN:[706..711] cycle)))))))))
+    (,:[711..712] ,)
+    (NP-SBJ (EX:[713..718] there))
+    (VP (VBZ:[719..721] is)
+      (NP
+        (NP (DT:[722..723] a) (JJ:[724..732] complete)
+            (NN:[733..747] downregulation))
+        (PP (IN:[748..750] of)
+          (NP
+            (NML
+              (NML (NN:[751..753] G1) (NN:[754..760] cyclin))
+              (SYM:[760..761] /)
+              (NML (NN:[761..764] Cdk)))
+            (NNS:[765..775] activities)))))
+    (.:[775..776] .)))
+
+;sentence 7 Span:778..967
+;Protein levels for the G1 cyclin/Cdks were essentially unchanged during this 
+;time although there was a decrease in the steady-state levels of p67N-Myc and
+; hyperphosphorylated Rb proteins.
+;[801..810]:gene-protein:"G1 cyclin"
+;[811..815]:gene-protein:"Cdks"
+;[921..929]:gene-protein:"p67N-Myc"
+;[955..957]:gene-protein:"Rb"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[778..785] Protein) (NNS:[786..792] levels))
+      (PP (IN:[793..796] for)
+        (NP (DT:[797..800] the)
+          (NML (NN:[801..803] G1) (NN:[804..810] cyclin))
+          (SYM:[810..811] /) (NN:[811..815] Cdks))))
+    (VP (VBD:[816..820] were)
+      (ADJP-PRD (RB:[821..832] essentially) (JJ:[833..842] unchanged))
+      (PP-TMP (IN:[843..849] during)
+        (NP (DT:[850..854] this) (NN:[856..860] time)))
+      (SBAR-ADV (IN:[861..869] although)
+        (S
+          (NP-SBJ (EX:[870..875] there))
+          (VP (VBD:[876..879] was)
+            (NP-PRD
+              (NP (DT:[880..881] a) (NN:[882..890] decrease))
+              (PP (IN:[891..893] in)
+                (NP
+                  (NP (DT:[894..897] the)
+                    (NML (JJ:[898..904] steady) (HYPH:[904..905] -)
+                         (NN:[905..910] state))
+                    (NNS:[911..917] levels))
+                  (PP (IN:[918..920] of)
+                    (NP
+                      (NP (NN:[921..929] p67N-Myc))
+                      (CC:[930..933] and)
+                      (NP (VBN:[935..954] hyperphosphorylated)
+                          (NN:[955..957] Rb) (NNS:[958..966] proteins)))))))))))
+    (.:[966..967] .)))
+
+;sentence 8 Span:968..1093
+;The Cdk inhibitors, p21Cip1 and p27Kip1 were  constitutively expressed in
+;KCNR while p15INK4B and p16INK4A were not detected.
+;[972..975]:gene-protein:"Cdk"
+;[988..995]:gene-protein:"p21Cip1"
+;[1000..1007]:gene-protein:"p27Kip1"
+;[1053..1061]:gene-protein:"p15INK4B"
+;[1066..1074]:gene-protein:"p16INK4A"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[968..971] The) (NN:[972..975] Cdk) (NNS:[976..986] inhibitors))
+      (,:[986..987] ,)
+      (NP (NN:[988..995] p21Cip1) (CC:[996..999] and) (NN:[1000..1007] p27Kip1)))
+    (VP (VBD:[1008..1012] were)
+      (ADVP (RB:[1014..1028] constitutively))
+      (VP (VBN:[1029..1038] expressed)
+        (NP-1 (-NONE-:[1038..1038] *))
+        (PP-LOC (IN:[1039..1041] in)
+          (NP (NN:[1042..1046] KCNR)))
+        (SBAR (IN:[1047..1052] while)
+          (S
+            (NP-SBJ-2 (NN:[1053..1061] p15INK4B) (CC:[1062..1065] and)
+                      (NN:[1066..1074] p16INK4A))
+            (VP (VBD:[1075..1079] were) (RB:[1080..1083] not)
+              (VP (VBN:[1084..1092] detected)
+                (NP-2 (-NONE-:[1092..1092] *))))))))
+    (.:[1092..1093] .)))
+
+;sentence 9 Span:1095..1163
+;RA induced an increase in the expression of p27Kip1 but not p21Cip1.
+;[1139..1146]:gene-protein:"p27Kip1"
+;[1155..1162]:gene-protein:"p21Cip1"
+(SENT
+  (S
+    (NP-SBJ (NN:[1095..1097] RA))
+    (VP
+      (VP (VBD:[1098..1105] induced)
+        (NP
+          (NP (DT:[1106..1108] an) (NN:[1109..1117] increase))
+          (PP (IN:[1118..1120] in)
+            (NP
+              (NP (DT:[1121..1124] the) (NN:[1125..1135] expression))
+              (PP (IN:[1136..1138] of)
+                (NP=1 (NN:[1139..1146] p27Kip1)))))))
+      (CONJP (CC:[1147..1150] but) (RB:[1151..1154] not))
+      (VP
+        (NP=1 (NN:[1155..1162] p21Cip1))))
+    (.:[1162..1163] .)))
+
+;sentence 10 Span:1165..1280
+;Furthermore, coincident with the decrease in kinase activity there was an 
+;increase in G1 cyclin/Cdk bound p27Kip1.
+;[1210..1216]:gene-protein:"kinase"
+;[1252..1261]:gene-protein:"G1 cyclin"
+;[1262..1265]:gene-protein:"Cdk"
+;[1272..1279]:gene-protein:"p27Kip1"
+(SENT
+  (S
+    (ADVP (RB:[1165..1176] Furthermore))
+    (,:[1176..1177] ,)
+    (S-ADV
+      (NP-SBJ (-NONE-:[1177..1177] *))
+      (ADJP-PRD (JJ:[1178..1188] coincident)
+        (PP (IN:[1189..1193] with)
+          (NP
+            (NP (DT:[1194..1197] the) (NN:[1198..1206] decrease))
+            (PP (IN:[1207..1209] in)
+              (NP (NN:[1210..1216] kinase) (NN:[1217..1225] activity)))))))
+    (NP-SBJ (EX:[1226..1231] there))
+    (VP (VBD:[1232..1235] was)
+      (NP-PRD
+        (NP (DT:[1236..1238] an) (NN:[1240..1248] increase))
+        (PP (IN:[1249..1251] in)
+          (NP
+            (ADJP
+              (NML
+                (NML (NN:[1252..1254] G1) (NN:[1255..1261] cyclin))
+                (SYM:[1261..1262] /) (NN:[1262..1265] Cdk))
+              (VBN:[1266..1271] bound))
+            (NN:[1272..1279] p27Kip1)))))
+    (.:[1279..1280] .)))
+
+;sentence 11 Span:1281..1437
+;These results indicate that changes in  the level of p27Kip1 and its binding
+;to G1 cyclin/Cdks may play a key role in RA  induced growth arrest of NB
+;cells.
+;[1334..1341]:gene-protein:"p27Kip1"
+;[1361..1370]:gene-protein:"G1 cyclin"
+;[1371..1375]:gene-protein:"Cdks"
+;[1428..1430]:malignancy-type:"NB"
+(SENT
+  (S
+    (NP-SBJ (DT:[1281..1286] These) (NNS:[1287..1294] results))
+    (VP (VBP:[1295..1303] indicate)
+      (SBAR (IN:[1304..1308] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (NNS:[1309..1316] changes))
+              (PP (IN:[1317..1319] in)
+                (NP
+                  (NP (DT:[1321..1324] the) (NN:[1325..1330] level))
+                  (PP (IN:[1331..1333] of)
+                    (NP (NN:[1334..1341] p27Kip1))))))
+            (CC:[1342..1345] and)
+            (NP
+              (NP (PRP$:[1346..1349] its) (NN:[1350..1357] binding))
+              (PP (TO:[1358..1360] to)
+                (NP
+                  (NML (NN:[1361..1363] G1) (NN:[1364..1370] cyclin))
+                  (SYM:[1370..1371] /) (NN:[1371..1375] Cdks)))))
+          (VP (MD:[1376..1379] may)
+            (VP (VB:[1380..1384] play)
+              (NP (DT:[1385..1386] a) (JJ:[1387..1390] key)
+                  (NN:[1391..1395] role))
+              (PP (IN:[1396..1398] in)
+                (NP
+                  (NP
+                    (ADJP (NN:[1399..1401] RA) (VBN:[1403..1410] induced))
+                    (NN:[1411..1417] growth) (NN:[1418..1424] arrest))
+                  (PP (IN:[1425..1427] of)
+                    (NP (NN:[1428..1430] NB) (NNS:[1431..1436] cells))))))))))
+    (.:[1436..1437] .)))
+
+;section 12 Span:1441..1485
+;PMID: 9681834 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1441..1445] PMID) (::[1445..1446] :) (CD:[1447..1454] 9681834)
+        (NN:[1455..1456] -LSB-) (NNP:[1456..1462] PubMed) (::[1463..1464] -)
+        (NN:[1465..1472] indexed) (IN:[1473..1476] for)
+        (NNP:[1477..1485] MEDLINE-RSB-)))

@@ -1,0 +1,378 @@
+;PMID: 9741952
+;source_file_901.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..142] = [t:41..142]
+;2)section:[e:146..191] = [t:146..190]
+;3)section:[e:195..302] = [t:195..302]
+;4)sentence:[e:306..596] = [t:306..596]
+;5)sentence:[e:597..706] = [t:597..706]
+;6)sentence:[e:707..807] = [t:707..807]
+;7)sentence:[e:808..917] = [t:808..917]
+;8)sentence:[e:918..1021] = [t:918..1021]
+;9)sentence:[e:1022..1176] = [t:1022..1176]
+;10)sentence:[e:1177..1324] = [t:1177..1324]
+;11)sentence:[e:1326..1401] = [t:1326..1401]
+;12)sentence:[e:1402..1519] = [t:1402..1519]
+;13)section:[e:1523..1567] = [t:1523..1566]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:146..191][t:146..190]
+;ERROR_Section end mismatch[e:1523..1567][t:1523..1566]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[190..191] .
+;ERROR_Token in entity file but not tree[1566..1567] ]
+
+;section 0 Span:0..35
+;Xenobiotica. 1998 Aug;28(8):735-43.
+(SEC
+  (FRAG (NNP:[0..11] Xenobiotica) (.:[11..12] .) (CD:[13..17] 1998)
+        (NNP:[18..21] Aug) (::[21..22] ;) (CD:[22..24] 28)
+        (-LRB-:[24..25] -LRB-) (CD:[25..26] 8) (-RRB-:[26..27] -RRB-)
+        (::[27..28] :) (CD:[28..31] 735) (::[31..32] -) (CD:[32..34] 43)
+        (.:[34..35] .)))
+
+;sentence 1 Span:41..142
+;Inhibition of murine hepatic cytochrome P450 activities by natural and
+;synthetic  phenolic compounds.
+;[70..85]:cyp450:"cytochrome P450"
+;[123..141]:substance:"phenolic compounds"
+(SENT
+  (NP-HLN
+    (NP (NN:[41..51] Inhibition))
+    (PP (IN:[52..54] of)
+      (NP (JJ:[55..61] murine) (JJ:[62..69] hepatic)
+        (NML (NN:[70..80] cytochrome) (NN:[81..85] P450))
+        (NNS:[86..96] activities)))
+    (PP (IN:[97..99] by)
+      (NP
+        (NP (JJ:[100..107] natural)
+          (NML-1 (-NONE-:[107..107] *P*)))
+        (CC:[108..111] and)
+        (NP (JJ:[112..121] synthetic)
+          (NML-1 (JJ:[123..131] phenolic) (NNS:[132..141] compounds)))))
+    (.:[141..142] .)))
+
+;section 2 Span:146..190
+;Baer-Dubowska W, Szaefer H, Krajka-Kuzniak V
+(SEC
+  (FRAG (NNP:[146..150] Baer) (HYPH:[150..151] -) (NNP:[151..159] Dubowska)
+        (NNP:[160..161] W) (,:[161..162] ,) (NNP:[163..170] Szaefer)
+        (NNP:[171..172] H) (,:[172..173] ,) (NNP:[174..180] Krajka)
+        (::[180..181] -) (NNP:[181..188] Kuzniak) (NNP:[189..190] V)))
+
+(ORPH .)
+
+;section 3 Span:195..302
+;K. Marcinkowski University of Medical Sciences, Department of Pharmaceutical 
+;Biochemistry, Poznan, Poland.
+(SEC
+  (FRAG (NNP:[195..196] K) (.:[196..197] .) (NNP:[198..210] Marcinkowski)
+        (NNP:[211..221] University) (IN:[222..224] of) (NNP:[225..232] Medical)
+        (NNP:[233..241] Sciences) (,:[241..242] ,) (NNP:[243..253] Department)
+        (IN:[254..256] of) (NNP:[257..271] Pharmaceutical)
+        (NNP:[273..285] Biochemistry) (,:[285..286] ,) (NNP:[287..293] Poznan)
+        (,:[293..294] ,) (NNP:[295..301] Poland) (.:[301..302] .)))
+;ERROR_Orphan Text from Tree File[190..195] .
+
+;sentence 4 Span:306..596
+;1. The effect of the phenolic compounds protocatechuic acid, chlorogenic
+;acid,  tannic acid, gallates and silybin on ethoxyresorufin O-dealkylase
+;(CYP1A1),  methoxyresorufin O-dealkylase (CYP1A2) and pentoxy-O-dealkylase
+;(CYP2B) was  examined in mouse liver microsomes from induced animals.
+;[327..345]:substance:"phenolic compounds"
+;[346..365]:substance:"protocatechuic acid"
+;[367..383]:substance:"chlorogenic acid"
+;[386..397]:substance:"tannic acid"
+;[399..407]:substance:"gallates"
+;[412..419]:substance:"silybin"
+;[423..451]:cyp450:"ethoxyresorufin O-dealkylase"
+;[453..459]:cyp450:"CYP1A1"
+;[463..492]:cyp450:"methoxyresorufin O-dealkylase"
+;[494..500]:cyp450:"CYP1A2"
+;[506..526]:cyp450:"pentoxy-O-dealkylase"
+;[528..533]:cyp450:"CYP2B"
+(SENT
+  (NP (LS:[306..308] 1.))
+  (S
+    (NP-SBJ-1
+      (NP (DT:[309..312] The) (NN:[313..319] effect))
+      (PP (IN:[320..322] of)
+        (NP
+          (NP (DT:[323..326] the)
+             (JJ:[327..335] phenolic) (NNS:[336..345] compounds))
+          (NP
+            (NP (JJ:[346..360] protocatechuic) (NN:[361..365] acid))
+            (,:[365..366] ,)
+            (NP (JJ:[367..378] chlorogenic) (NN:[379..383] acid))
+            (,:[383..384] ,)
+            (NP (JJ:[386..392] tannic) (NN:[393..397] acid))
+            (,:[397..398] ,)
+            (NP (NNS:[399..407] gallates))
+            (CC:[408..411] and)
+            (NP (NN:[412..419] silybin)))))
+      (PP (IN:[420..422] on)
+        (NP
+          (NP
+            (NP (NN:[423..438] ethoxyresorufin) (NN:[439..451] O-dealkylase))
+            (NP (-LRB-:[452..453] -LRB-) (NN:[453..459] CYP1A1)
+                (-RRB-:[459..460] -RRB-)))
+          (,:[460..461] ,)
+          (NP
+            (NP (NN:[463..479] methoxyresorufin) (NN:[480..492] O-dealkylase))
+            (NP (-LRB-:[493..494] -LRB-) (NN:[494..500] CYP1A2)
+                (-RRB-:[500..501] -RRB-)))
+          (CC:[502..505] and)
+          (NP
+            (NP (NN:[506..526] pentoxy-O-dealkylase))
+            (NP (-LRB-:[527..528] -LRB-) (NN:[528..533] CYP2B)
+                (-RRB-:[533..534] -RRB-))))))
+    (VP (VBD:[535..538] was)
+      (VP (VBN:[540..548] examined)
+        (NP-1 (-NONE-:[548..548] *))
+        (PP-LOC (IN:[549..551] in)
+          (NP
+            (NP (NN:[552..557] mouse) (NN:[558..563] liver)
+                (NNS:[564..574] microsomes))
+            (PP (IN:[575..579] from)
+              (NP (JJ:[580..587] induced) (NNS:[588..595] animals)))))))
+    (.:[595..596] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[306..596]::NP:S:
+
+;sentence 5 Span:597..706
+;2. All compounds tested  could inhibit cytochrome P450-mediated enzyme
+;activities, but to different  extents.
+;[604..613]:substance:"compounds"
+;[636..651]:cyp450:"cytochrome P450"
+;[661..667]:substance:"enzyme"
+(SENT
+  (NP (LS:[597..599] 2.))
+  (S
+    (NP-SBJ
+      (NP (DT:[600..603] All) (NNS:[604..613] compounds))
+      (VP (VBN:[614..620] tested)
+        (NP (-NONE-:[620..620] *))))
+    (VP (MD:[622..627] could)
+      (VP (VB:[628..635] inhibit)
+        (NP
+          (ADJP
+            (NML (NN:[636..646] cytochrome) (NN:[647..651] P450))
+            (HYPH:[651..652] -) (VBN:[652..660] mediated))
+          (NN:[661..667] enzyme) (NNS:[668..678] activities))
+        (,:[678..679] ,)
+        (FRAG (CC:[680..683] but)
+          (PP (TO:[684..686] to)
+            (NP (JJ:[687..696] different) (NNS:[698..705] extents))))))
+    (.:[705..706] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[597..706]::NP:S:
+
+;sentence 6 Span:707..807
+;Tannic acid was the most potent inhibitor, especially toward EROD  activity
+;with an IC50=2.6 microM.
+;[707..718]:substance:"Tannic acid"
+;[739..748]:substance:"inhibitor"
+;[768..772]:cyp450:"EROD"
+;[791..795]:quantitative-name:"IC50"
+;[796..799]:quantitative-value:"2.6"
+;[800..806]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (JJ:[707..713] Tannic) (NN:[714..718] acid))
+    (VP (VBD:[719..722] was)
+      (NP-PRD (DT:[723..726] the)
+        (ADJP (RBS:[727..731] most) (JJ:[732..738] potent))
+        (NN:[739..748] inhibitor))
+      (,:[748..749] ,)
+      (PP
+        (ADVP (RB:[750..760] especially))
+        (IN:[761..767] toward)
+        (NP (NN:[768..772] EROD) (NN:[774..782] activity)))
+      (PP (IN:[783..787] with)
+        (NP
+          (NP (DT:[788..790] an) (NN:[791..795] IC50))
+          (VP (SYM:[795..796] =)
+            (NP (CD:[796..799] 2.6) (NN:[800..806] microM))))))
+    (.:[806..807] .)))
+
+;sentence 7 Span:808..917
+;Synthetic dodecyl gallate was also relatively  selective toward this enzyme
+;activity with an IC50=120 microM.
+;[818..833]:substance:"dodecyl gallate"
+;[877..883]:substance:"enzyme"
+;[901..905]:quantitative-name:"IC50"
+;[906..909]:quantitative-value:"120"
+;[910..916]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (JJ:[808..817] Synthetic)
+       (NN:[818..825] dodecyl) (NN:[826..833] gallate))
+    (VP (VBD:[834..837] was)
+      (ADVP (RB:[838..842] also))
+      (ADJP-PRD (RB:[843..853] relatively) (JJ:[855..864] selective)
+        (PP (IN:[865..871] toward)
+          (NP (DT:[872..876] this) (NN:[877..883] enzyme)
+              (NN:[884..892] activity))))
+      (PP (IN:[893..897] with)
+        (NP
+          (NP (DT:[898..900] an) (NN:[901..905] IC50))
+          (VP (SYM:[905..906] =)
+            (NP (CD:[906..909] 120) (NN:[910..916] microM))))))
+    (.:[916..917] .)))
+
+;sentence 8 Span:918..1021
+;3. Protocatechuic  acid, chlorogenic and silybin were more selective towards
+;PROD and MROD  activities.
+;[921..941]:substance:"Protocatechuic  acid"
+;[943..954]:substance:"chlorogenic"
+;[959..966]:substance:"silybin"
+;[995..999]:cyp450:"PROD"
+;[1004..1008]:cyp450:"MROD"
+(SENT
+  (NP (LS:[918..920] 3.))
+  (S
+    (NP-SBJ
+      (NP (JJ:[921..935] Protocatechuic)
+        (NML-1 (NN:[937..941] acid)))
+      (,:[941..942] ,)
+      (NP (JJ:[943..954] chlorogenic)
+        (NML-1 (-NONE-:[954..954] *P*)))
+      (CC:[955..958] and)
+      (NP (NN:[959..966] silybin)))
+    (VP (VBD:[967..971] were)
+      (ADJP-PRD (RBR:[972..976] more) (JJ:[977..986] selective)
+        (PP (IN:[987..994] towards)
+          (NP
+            (NP (NN:[995..999] PROD)
+              (NML-2 (-NONE-:[999..999] *P*)))
+            (CC:[1000..1003] and)
+            (NP (NN:[1004..1008] MROD)
+              (NML-2 (NNS:[1010..1020] activities)))))))
+    (.:[1020..1021] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[918..1021]::NP:S:
+
+;sentence 9 Span:1022..1176
+;Their relative inhibitory potency for PROD activity was as follows: 
+;chlorogenic acid > protocatechuic acid > silybin > dodecyl gallate > propyl 
+;gallate.
+;[1060..1064]:cyp450:"PROD"
+;[1091..1107]:substance:"chlorogenic acid"
+;[1110..1129]:substance:"protocatechuic acid"
+;[1132..1139]:substance:"silybin"
+;[1142..1157]:substance:"dodecyl gallate"
+;[1160..1175]:substance:"propyl  gallate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (PRP$:[1022..1027] Their) (JJ:[1028..1036] relative)
+          (JJ:[1037..1047] inhibitory) (NN:[1048..1055] potency))
+      (PP (IN:[1056..1059] for)
+        (NP (NN:[1060..1064] PROD) (NN:[1065..1073] activity))))
+    (VP (VBD:[1074..1077] was)
+      (SBAR-PRD (IN:[1078..1080] as)
+        (S
+          (NP-SBJ (-NONE-:[1080..1080] *))
+          (VP (VBZ:[1081..1088] follows) (::[1088..1089] :)
+            (NP
+              (NP (JJ:[1091..1102] chlorogenic) (NN:[1103..1107] acid))
+              (PP (SYM:[1108..1109] >)
+                (NP
+                  (NP (JJ:[1110..1124] protocatechuic) (NN:[1125..1129] acid))
+                  (PP (SYM:[1130..1131] >)
+                    (NP
+                      (NP (NN:[1132..1139] silybin))
+                      (PP (SYM:[1140..1141] >)
+                        (NP
+                          (NP (NN:[1142..1149] dodecyl)
+                              (NN:[1150..1157] gallate))
+                          (PP (SYM:[1158..1159] >)
+                            (NP (NN:[1160..1166] propyl)
+                                (NN:[1168..1175] gallate))))))))))))))
+    (.:[1175..1176] .)))
+
+;sentence 10 Span:1177..1324
+;Protocatechuic acid was a more effective inhibitor of MROD activity  than
+;chlorogenic acid, and propyl gallate more effective than dodecyl gallate.
+;[1177..1196]:substance:"Protocatechuic acid"
+;[1218..1227]:substance:"inhibitor"
+;[1231..1235]:cyp450:"MROD"
+;[1251..1267]:substance:"chlorogenic acid"
+;[1273..1287]:substance:"propyl gallate"
+;[1308..1323]:substance:"dodecyl gallate"
+(SENT
+  (S
+    (S
+      (NP-SBJ=2 (JJ:[1177..1191] Protocatechuic) (NN:[1192..1196] acid))
+      (VP (VBD:[1197..1200] was)
+        (NP-PRD=1
+          (NP (DT:[1201..1202] a)
+            (ADJP (RBR:[1203..1207] more) (JJ:[1208..1217] effective))
+            (NN:[1218..1227] inhibitor))
+          (PP (IN:[1228..1230] of)
+            (NP (NN:[1231..1235] MROD) (NN:[1236..1244] activity)))
+          (PP (IN:[1246..1250] than)
+            (NP (JJ:[1251..1262] chlorogenic) (NN:[1263..1267] acid))))))
+    (,:[1267..1268] ,) (CC:[1269..1272] and)
+    (S
+      (NP-SBJ=2 (NN:[1273..1279] propyl) (NN:[1280..1287] gallate))
+      (ADJP-PRD=1
+        (ADJP (RBR:[1288..1292] more) (JJ:[1293..1302] effective))
+        (PP (IN:[1303..1307] than)
+          (NP (NN:[1308..1315] dodecyl) (NN:[1316..1323] gallate)))))
+    (.:[1323..1324] .)))
+
+;sentence 11 Span:1326..1401
+;Thus, no clear structure-activity or selectivity relationship was observed.
+(SENT
+  (S
+    (ADVP (RB:[1326..1330] Thus))
+    (,:[1330..1331] ,)
+    (NP-SBJ-1 (DT:[1332..1334] no) (JJ:[1335..1340] clear)
+      (NML
+        (NML-2 (NN:[1341..1350] structure))
+        (PP (HYPH:[1350..1351] -)
+          (NP (NN:[1351..1359] activity) (CC:[1360..1362] or)
+              (NN:[1363..1374] selectivity))))
+      (NN:[1375..1387] relationship))
+    (VP (VBD:[1388..1391] was)
+      (VP (VBN:[1392..1400] observed)
+        (NP-1 (-NONE-:[1400..1400] *))))
+    (.:[1400..1401] .)))
+
+;sentence 12 Span:1402..1519
+;4.  Analysis of the kinetics of inhibition revealed that the inhibition in
+;most  cases was non-competitive in nature.
+(SENT
+  (NP (LS:[1402..1404] 4.))
+  (S
+    (NP-SBJ
+      (NP (NN:[1406..1414] Analysis))
+      (PP (IN:[1415..1417] of)
+        (NP
+          (NP (DT:[1418..1421] the) (NNS:[1422..1430] kinetics))
+          (PP (IN:[1431..1433] of)
+            (NP (NN:[1434..1444] inhibition))))))
+    (VP (VBD:[1445..1453] revealed)
+      (SBAR (IN:[1454..1458] that)
+        (S
+          (NP-SBJ (DT:[1459..1462] the) (NN:[1463..1473] inhibition))
+          (PP (IN:[1474..1476] in)
+            (NP (JJS:[1477..1481] most) (NNS:[1483..1488] cases)))
+          (VP (VBD:[1489..1492] was)
+            (ADJP-PRD (AFX:[1493..1496] non) (HYPH:[1496..1497] -)
+                      (JJ:[1497..1508] competitive)
+              (PP (IN:[1509..1511] in)
+                (NP (NN:[1512..1518] nature))))))))
+    (.:[1518..1519] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1402..1519]::NP:S:
+
+;section 13 Span:1523..1566
+;PMID: 9741952 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1523..1527] PMID) (::[1527..1528] :) (CD:[1529..1536] 9741952)
+        (-LRB-:[1537..1538] -LSB-) (NNP:[1538..1544] PubMed) (::[1545..1546] -)
+        (VBN:[1547..1554] indexed) (IN:[1555..1558] for)
+        (NNP:[1559..1566] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1566..EOF] ]
+
+(ORPH -RSB-)

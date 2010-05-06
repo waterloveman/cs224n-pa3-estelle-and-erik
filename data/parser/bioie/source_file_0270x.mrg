@@ -1,0 +1,292 @@
+;PMID: 1501288
+;source_file_2903.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:39..141] = [t:39..141]
+;2)section:[e:145..230] = [t:145..230]
+;3)section:[e:234..306] = [t:234..306]
+;4)sentence:[e:310..532] = [t:310..532]
+;5)sentence:[e:533..708] = [t:533..708]
+;6)sentence:[e:709..799] = [t:709..799]
+;7)sentence:[e:800..960] = [t:800..960]
+;8)sentence:[e:961..1135] = [t:961..1135]
+;9)sentence:[e:1136..1394] = [t:1136..1394]
+;10)section:[e:1398..1442] = [t:1398..1442]
+
+;section 0 Span:0..33
+;J Virol.  1992 Sep;66(9):5534-41.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..7] Virol) (.:[7..8] .) (CD:[10..14] 1992)
+        (::[15..22] Sep;66-LRB-) (CD:[22..23] 9) (-RRB-:[23..24] -RRB-)
+        (::[24..25] :) (CD:[25..32] 5534-41) (.:[32..33] .)))
+
+;sentence 1 Span:39..141
+;Antibody-dependent transcriptional regulation of measles virus in
+;persistently  infected neural cells.
+;[39..47]:gene-protein:"Antibody"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (NN:[39..47] Antibody) (HYPH:[47..48] -) (JJ:[48..57] dependent))
+      (JJ:[58..73] transcriptional) (NN:[74..84] regulation))
+    (PP (IN:[85..87] of)
+      (NP (NN:[88..95] measles) (NN:[96..101] virus)))
+    (PP-LOC (IN:[102..104] in)
+      (NP
+        (ADJP (RB:[105..117] persistently) (VBN:[119..127] infected))
+        (JJ:[128..134] neural) (NNS:[135..140] cells)))
+    (.:[140..141] .)))
+
+;section 2 Span:145..230
+;Schneider-Schaulies S, Liebert UG, Segev Y, Rager-Zisman B, Wolfson M, ter 
+;Meulen V.
+(SEC
+  (FRAG (NNP:[145..164] Schneider-Schaulies) (NNP:[165..166] S) (,:[166..167] ,)
+        (NNP:[168..175] Liebert) (NNP:[176..178] UG) (,:[178..179] ,)
+        (NNP:[180..185] Segev) (NNP:[186..187] Y) (,:[187..188] ,)
+        (NNP:[189..201] Rager-Zisman) (NNP:[202..203] B) (,:[203..204] ,)
+        (NNP:[205..212] Wolfson) (NNP:[213..215] M,) (IN:[216..219] ter)
+        (NNP:[221..227] Meulen) (NNP:[228..229] V) (.:[229..230] .)))
+
+;section 3 Span:234..306
+;Institut fur Virologie und Immunbiologie, Universitat Wurzburg, Germany.
+(SEC
+  (FRAG (NNP:[234..242] Institut) (NN:[243..246] fur) (NNP:[247..256] Virologie)
+        (VBD:[257..260] und) (NNP:[261..274] Immunbiologie) (,:[274..275] ,)
+        (NNP:[276..287] Universitat) (NNP:[288..296] Wurzburg) (,:[296..297] ,)
+        (NNP:[298..305] Germany) (.:[305..306] .)))
+
+;sentence 4 Span:310..532
+;Application of neutralizing anti-hemagglutinin antibodies to mouse
+;neuroblastoma  cells (NS20Y/MS) persistently infected with measles virus (MV)
+;leads to a  significant reduction of viral structural proteins within 6
+;days.
+;[338..367]:gene-protein:"anti-hemagglutinin antibodies"
+;[377..390]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[310..321] Application))
+      (PP (IN:[322..324] of)
+        (NP (VBG:[325..337] neutralizing)
+          
+          (ADJP (AFX:[338..342] anti) (HYPH:[342..343] -)
+                (NN:[343..356] hemagglutinin))
+          (NNS:[357..367] antibodies)))
+      (PP (TO:[368..370] to)
+        (NP
+          (NP (NN:[371..376] mouse) (NN:[377..390] neuroblastoma)
+              (NNS:[392..397] cells)
+            (PRN (-LRB-:[398..399] -LRB-)
+              (NP (NN:[399..404] NS20Y) (SYM:[404..405] /) (NN:[405..407] MS))
+              (-RRB-:[407..408] -RRB-)))
+          (VP
+            (ADVP (RB:[409..421] persistently))
+            (VBN:[422..430] infected)
+            (NP (-NONE-:[430..430] *))
+            (PP-MNR (IN:[431..435] with)
+              (NP
+                (NP (NN:[436..443] measles) (NN:[444..449] virus))
+                (NP (-LRB-:[450..451] -LRB-) (NN:[451..453] MV)
+                    (-RRB-:[453..454] -RRB-))))))))
+    (VP (VBZ:[455..460] leads)
+      (PP-CLR (TO:[461..463] to)
+        (NP
+          (NP (DT:[464..465] a) (JJ:[467..478] significant)
+              (NN:[479..488] reduction))
+          (PP (IN:[489..491] of)
+            (NP (JJ:[492..497] viral) (JJ:[498..508] structural)
+                (NNS:[509..517] proteins)))))
+      (PP-TMP (IN:[518..524] within)
+        (NP (CD:[525..526] 6) (NNS:[527..531] days))))
+    (.:[531..532] .)))
+
+;sentence 5 Span:533..708
+;While the  transcriptional gradient for MV-specific mRNAs remained unaffected
+;upon antibody  treatment, the total amount of MV-specific transcripts dropped
+;by 80% after 24  h.
+;[573..584]:gene-rna:"MV-specific"
+;[616..624]:gene-protein:"antibody"
+;[657..668]:gene-rna:"MV-specific"
+(SENT
+  (S
+    (SBAR-ADV (IN:[533..538] While)
+      (S
+        (NP-SBJ
+          (NP (DT:[539..542] the) (JJ:[544..559] transcriptional)
+              (NN:[560..568] gradient))
+          (PP (IN:[569..572] for)
+            (NP
+              (ADJP (NN:[573..575] MV) (HYPH:[575..576] -)
+                    (JJ:[576..584] specific))
+              (NNS:[585..590] mRNAs))))
+        (VP (VBD:[591..599] remained)
+          (ADJP-PRD (JJ:[600..610] unaffected))
+          (PP-TMP (IN:[611..615] upon)
+            (NP (NN:[616..624] antibody) (NN:[626..635] treatment))))))
+    (,:[635..636] ,)
+    (NP-SBJ
+      (NP (DT:[637..640] the) (JJ:[641..646] total) (NN:[647..653] amount))
+      (PP (IN:[654..656] of)
+        (NP
+          (ADJP (NN:[657..659] MV) (HYPH:[659..660] -) (JJ:[660..668] specific))
+          (NNS:[669..680] transcripts))))
+    (VP (VBD:[681..688] dropped)
+      (PP-EXT (IN:[689..691] by)
+        (NP (CD:[692..694] 80) (NN:[694..695] %)))
+      (PP-TMP (IN:[696..701] after)
+        (NP (CD:[702..704] 24) (NN:[706..707] h))))
+    (.:[707..708] .)))
+
+;sentence 6 Span:709..799
+;The expression of genomic RNA was affected similarly, with slightly slower 
+;time kinetics.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[709..712] The) (NN:[713..723] expression))
+      (PP (IN:[724..726] of)
+        (NP (JJ:[727..734] genomic) (NN:[735..738] RNA))))
+    (VP (VBD:[739..742] was)
+      (VP (VBN:[743..751] affected)
+        (NP-1 (-NONE-:[751..751] *))
+        (ADVP (RB:[752..761] similarly))
+        (,:[761..762] ,)
+        (PP (IN:[763..767] with)
+          (NP
+            (ADJP (RB:[768..776] slightly) (JJR:[777..783] slower))
+            (NN:[785..789] time) (NNS:[790..798] kinetics)))))
+    (.:[798..799] .)))
+
+;sentence 7 Span:800..960
+;Both transcription and expression of the viral structural  proteins could be
+;completely reactivated when viral antibodies were removed from  the tissue
+;culture.
+;[911..921]:gene-protein:"antibodies"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CC:[800..804] Both)
+        (NP (NN:[805..818] transcription))
+        (CC:[819..822] and)
+        (NP (NN:[823..833] expression)))
+      (PP (IN:[834..836] of)
+        (NP (DT:[837..840] the) (JJ:[841..846] viral) (JJ:[847..857] structural)
+            (NNS:[859..867] proteins))))
+    (VP (MD:[868..873] could)
+      (VP (VB:[874..876] be)
+        (VP
+          (ADVP (RB:[877..887] completely))
+          (VBN:[888..899] reactivated)
+          (NP-1 (-NONE-:[899..899] *))
+          (SBAR-ADV
+            (WHADVP-2 (WRB:[900..904] when))
+            (S
+              (NP-SBJ-3 (JJ:[905..910] viral) (NNS:[911..921] antibodies))
+              (VP (VBD:[922..926] were)
+                (VP (VBN:[927..934] removed)
+                  (NP-3 (-NONE-:[934..934] *))
+                  (PP (IN:[935..939] from)
+                    (NP (DT:[941..944] the)
+                      (NML (NN:[945..951] tissue) (NN:[952..959] culture))))
+                  (ADVP-TMP-2 (-NONE-:[959..959] *T*)))))))))
+    (.:[959..960] .)))
+
+;sentence 8 Span:961..1135
+;The same findings could be obtained in rat glioma cells  persistently
+;infected with subacute sclerosing panencephalitis virus (C6/SSPE)  but not in
+;cells of nonneural origin.
+;[1004..1010]:malignancy-type:"glioma"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[961..964] The) (JJ:[965..969] same) (NNS:[970..978] findings))
+    (VP (MD:[979..984] could)
+      (VP (VB:[985..987] be)
+        (VP
+          (VP (VBN:[988..996] obtained)
+            (NP-1 (-NONE-:[996..996] *))
+            (PP-LOC=2 (IN:[997..999] in)
+              (NP
+                (NP (NN:[1000..1003] rat) (NN:[1004..1010] glioma)
+                    (NNS:[1011..1016] cells))
+                (VP
+                  (ADVP (RB:[1018..1030] persistently))
+                  (VBN:[1031..1039] infected)
+                  (NP (-NONE-:[1039..1039] *))
+                  (PP (IN:[1040..1044] with)
+                    (NP (JJ:[1045..1053] subacute) (VBG:[1054..1064] sclerosing)
+                        (NN:[1065..1080] panencephalitis)
+                        (NN:[1081..1086] virus)
+                      (PRN (-LRB-:[1087..1088] -LRB-)
+                        (NP (NN:[1088..1090] C6) (SYM:[1090..1091] /)
+                            (NN:[1091..1095] SSPE))
+                        (-RRB-:[1095..1096] -RRB-))))))))
+          (CC:[1098..1101] but)
+          (VP (RB:[1102..1105] not)
+            (PP-LOC=2 (IN:[1106..1108] in)
+              (NP
+                (NP (NNS:[1109..1114] cells))
+                (PP (IN:[1115..1117] of)
+                  (NP (JJ:[1118..1127] nonneural) (NN:[1128..1134] origin)))))))))
+    (.:[1134..1135] .)))
+
+;sentence 9 Span:1136..1394
+;The data indicate that antibody-induced  antigenic modulation affects the
+;early stages of viral transcription within a  few hours after the addition of
+;antibodies and leads to an almost complete  repression of viral gene
+;expression in cells of neural origin.
+;[1159..1167]:gene-protein:"antibody"
+;[1288..1298]:gene-protein:"antibodies"
+(SENT
+  (S
+    (NP-SBJ (DT:[1136..1139] The) (NNS:[1140..1144] data))
+    (VP (VBP:[1145..1153] indicate)
+      (SBAR (IN:[1154..1158] that)
+        (S
+          (NP-SBJ
+            (ADJP (NN:[1159..1167] antibody) (HYPH:[1167..1168] -)
+                  (VBN:[1168..1175] induced))
+            (JJ:[1177..1186] antigenic) (NN:[1187..1197] modulation))
+          (VP
+            (VP (VBZ:[1198..1205] affects)
+              (NP
+                (NP (DT:[1206..1209] the) (JJ:[1210..1215] early)
+                    (NNS:[1216..1222] stages))
+                (PP (IN:[1223..1225] of)
+                  (NP (JJ:[1226..1231] viral) (NN:[1232..1245] transcription))))
+              (PP-TMP (IN:[1246..1252] within)
+                (NP
+                  (NP (DT:[1253..1254] a) (JJ:[1256..1259] few)
+                      (NNS:[1260..1265] hours))
+                  (PP (IN:[1266..1271] after)
+                    (NP
+                      (NP (DT:[1272..1275] the) (NN:[1276..1284] addition))
+                      (PP (IN:[1285..1287] of)
+                        (NP (NNS:[1288..1298] antibodies))))))))
+            (CC:[1299..1302] and)
+            (VP (VBZ:[1303..1308] leads)
+              (PP-CLR (TO:[1309..1311] to)
+                (NP
+                  (NP (DT:[1312..1314] an)
+                    (ADJP (RB:[1315..1321] almost) (JJ:[1322..1330] complete))
+                    (NN:[1332..1342] repression))
+                  (PP (IN:[1343..1345] of)
+                    (NP
+                      (NML (JJ:[1346..1351] viral) (NN:[1352..1356] gene))
+                      (NN:[1357..1367] expression)))))
+              (PP-LOC (IN:[1368..1370] in)
+                (NP
+                  (NP (NNS:[1371..1376] cells))
+                  (PP (IN:[1377..1379] of)
+                    (NP (JJ:[1380..1386] neural) (NN:[1387..1393] origin))))))))))
+    (.:[1393..1394] .)))
+
+;section 10 Span:1398..1442
+;PMID: 1501288 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1398..1402] PMID) (::[1402..1403] :) (CD:[1404..1411] 1501288)
+        (NN:[1412..1413] -LSB-) (NNP:[1413..1419] PubMed) (::[1420..1421] -)
+        (NN:[1422..1429] indexed) (IN:[1430..1433] for)
+        (NNP:[1434..1442] MEDLINE-RSB-)))

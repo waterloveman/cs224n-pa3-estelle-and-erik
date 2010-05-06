@@ -1,0 +1,401 @@
+;PMID: 11301351
+;source_file_715.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:37..174] = [t:37..174]
+;2)section:[e:178..273] = [t:178..273]
+;3)section:[e:277..406] = [t:277..406]
+;4)sentence:[e:410..575] = [t:410..575]
+;5)sentence:[e:576..666] = [t:576..666]
+;6)sentence:[e:667..1059] = [t:667..1059]
+;7)sentence:[e:1060..1253] = [t:1060..1253]
+;8)sentence:[e:1254..1581] = [t:1254..1581]
+;9)sentence:[e:1582..1740] = [t:1582..1740]
+;10)section:[e:1744..1789] = [t:1744..1789]
+
+;section 0 Span:0..32
+;Mod Pathol  2001 Apr;14(4):343-9
+(SEC
+  (FRAG (NNP:[0..3] Mod) (NNP:[4..10] Pathol) (CD:[12..16] 2001)
+        (.:[17..24] Apr;14-LRB-) (CD:[24..26] 4-RRB-) (CD:[26..30] :343)
+        (::[30..31] -) (CD:[31..32] 9)))
+
+;sentence 1 Span:37..174
+;H-ras oncogene mutation in dedifferentiated chondrosarcoma: polymerase chain 
+;reaction-restriction fragment length polymorphism analysis.
+;[37..42]:gene-rna:"H-ras"
+;[64..95]:malignancy:"dedifferentiated chondrosarcoma"
+;[97..107]:gene-protein:"polymerase"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[37..42] H-ras) (NN:[43..51] oncogene) (NN:[52..60] mutation))
+      (PP (IN:[61..63] in)
+        (NP (JJ:[64..80] dedifferentiated) (NN:[81..95] chondrosarcoma))))
+    (::[95..96] :)
+    (NP
+      (NML (NN:[97..107] polymerase) (NN:[108..113] chain)
+           (NN:[115..123] reaction))
+      (HYPH:[123..124] -)
+      (NML (NN:[124..135] restriction) (NN:[136..144] fragment)
+           (NN:[145..151] length) (NN:[152..164] polymorphism))
+      (NN:[165..173] analysis))
+    (.:[173..174] .)))
+
+;section 2 Span:178..273
+;Sakamoto A, Oda Y, Adachi T, Oshiro Y, Tamiya S, Tanaka K, Matsuda S, Iwamoto
+;Y,  Tsuneyoshi M.
+(SEC
+  (FRAG (NNP:[178..186] Sakamoto) (NNP:[187..188] A) (,:[188..189] ,)
+        (NNP:[190..193] Oda) (NNP:[194..195] Y) (,:[195..196] ,)
+        (NNP:[197..203] Adachi) (NNP:[204..205] T) (,:[205..206] ,)
+        (NNP:[207..213] Oshiro) (NNP:[214..215] Y) (,:[215..216] ,)
+        (NNP:[217..223] Tamiya) (NNP:[224..226] S,) (NNP:[227..233] Tanaka)
+        (NNP:[234..235] K) (,:[235..236] ,) (NNP:[237..244] Matsuda)
+        (NNP:[245..247] S,) (NNP:[248..255] Iwamoto) (NNP:[256..257] Y)
+        (,:[257..258] ,) (NNP:[260..270] Tsuneyoshi) (NNP:[271..273] M.)))
+
+;section 3 Span:277..406
+;Department of Anatomic Pathology, Pathological Sciences, Graduate School of 
+;Medical Sciences, Kyushu University, Fukuoka, Japan.
+(SEC
+  (FRAG (NNP:[277..287] Department) (IN:[288..290] of) (NNP:[291..299] Anatomic)
+        (NNP:[300..309] Pathology) (,:[309..310] ,)
+        (NNP:[311..323] Pathological) (NNP:[324..332] Sciences) (,:[332..333] ,)
+        (NNP:[334..342] Graduate) (NNP:[343..349] School) (IN:[350..352] of)
+        (NNP:[354..361] Medical) (NNPS:[362..370] Sciences) (,:[370..371] ,)
+        (NNP:[372..378] Kyushu) (NNP:[379..389] University) (,:[389..390] ,)
+        (NNP:[391..398] Fukuoka) (,:[398..399] ,) (NNP:[400..405] Japan)
+        (.:[405..406] .)))
+
+;sentence 4 Span:410..575
+;Dedifferentiated chondrosarcomas, which are known for their poor prognosis,
+;are  characterized by conventional chondrosarcoma with high-grade anaplastic 
+;components.
+;[410..442]:malignancy:"Dedifferentiated chondrosarcomas"
+;[508..535]:malignancy:"conventional chondrosarcoma"
+;[541..574]:malignancy:"high-grade anaplastic  components"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[410..426] Dedifferentiated) (NNS:[427..442] chondrosarcomas))
+      (,:[442..443] ,)
+      (SBAR
+        (WHNP-1 (WDT:[444..449] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[449..449] *T*))
+          (VP (VBP:[450..453] are)
+            (VP (VBN:[454..459] known)
+              (NP-1 (-NONE-:[459..459] *))
+              (PP (IN:[460..463] for)
+                (NP (PRP$:[464..469] their) (JJ:[470..474] poor)
+                    (NN:[475..484] prognosis))))))))
+    (,:[484..485] ,)
+    (VP (VBP:[486..489] are)
+      (VP (VBN:[491..504] characterized)
+        (NP-2 (-NONE-:[504..504] *))
+        (PP (IN:[505..507] by)
+          (NP-LGS
+            (NP (JJ:[508..520] conventional) (NN:[521..535] chondrosarcoma))
+            (PP (IN:[536..540] with)
+              (NP
+                (NML (JJ:[541..545] high) (HYPH:[545..546] -)
+                     (NN:[546..551] grade))
+                (JJ:[552..562] anaplastic) (NNS:[564..574] components)))))))
+    (.:[574..575] .)))
+
+;sentence 5 Span:576..666
+;Activating mutations in ras genes are a common genetic abnormality  in human
+;malignancies.
+;[600..603]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[576..586] Activating) (NNS:[587..596] mutations))
+      (PP (IN:[597..599] in)
+        (NP (NN:[600..603] ras) (NNS:[604..609] genes))))
+    (VP (VBP:[610..613] are)
+      (NP-PRD
+        (NP (DT:[614..615] a) (JJ:[616..622] common) (JJ:[623..630] genetic)
+            (NN:[631..642] abnormality))
+        (PP (IN:[644..646] in)
+          (NP (JJ:[647..652] human) (NNS:[653..665] malignancies)))))
+    (.:[665..666] .)))
+
+;sentence 6 Span:667..1059
+;The presence of point mutations at codons 12 and 13 of  the H-ras gene was
+;studied in 20 formalin-fixed paraffin-embedded  chondrosarcomas, comprising
+;11 cases of conventional chondrosarcoma (six Grade 1  cases and five Grade 2
+;cases) and nine cases of dedifferentiated chondrosarcoma,  using polymerase
+;chain reaction-restriction fragment length polymorphism and  direct
+;sequencing analysis.
+;[683..698]:variation-type:"point mutations"
+;[702..711]:variation-location:"codons 12"
+;[702..708]...[716..718]:variation-location:"codons"..."13"
+;[727..732]:gene-rna:"H-ras"
+;[790..805]:malignancy:"chondrosarcomas"
+;[830..857]:malignancy:"conventional chondrosarcoma"
+;[863..870]:malignancy:"Grade 1"
+;[887..894]:malignancy:"Grade 2"
+;[920..951]:malignancy:"dedifferentiated chondrosarcoma"
+;[960..970]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[667..670] The) (NN:[671..679] presence))
+      (PP (IN:[680..682] of)
+        (NP (NN:[683..688] point) (NNS:[689..698] mutations)))
+      (PP-LOC (IN:[699..701] at)
+        (NP
+          (NP
+            (NP
+              (NML-2 (NNS:[702..708] codons))
+              (CD:[709..711] 12))
+            (CC:[712..715] and)
+            (NP
+              (NML-2 (-NONE-:[715..715] *P*))
+              (CD:[716..718] 13)))
+          (PP (IN:[719..721] of)
+            (NP (DT:[723..726] the) (NN:[727..732] H-ras) (NN:[733..737] gene))))))
+    (VP (VBD:[738..741] was)
+      (VP (VBN:[742..749] studied)
+        (NP-1 (-NONE-:[749..749] *))
+        (PP (IN:[750..752] in)
+          (NP
+            (NP (CD:[753..755] 20)
+              (ADJP (NN:[756..764] formalin) (HYPH:[764..765] -)
+                    (VBN:[765..770] fixed))
+              (ADJP (NN:[771..779] paraffin) (HYPH:[779..780] -)
+                    (VBN:[780..788] embedded))
+              (NNS:[790..805] chondrosarcomas))
+            (,:[805..806] ,)
+            (VP (VBG:[807..817] comprising)
+              (NP
+                (NP
+                  (NP (CD:[818..820] 11) (NNS:[821..826] cases))
+                  (PP (IN:[827..829] of)
+                    (NML
+                       (JJ:[830..842] conventional)
+                       (NN:[843..857] chondrosarcoma)
+                      (PRN (-LRB-:[858..859] -LRB-)
+                        (NP (CD:[859..862] six)
+                          (NML (NN:[863..868] Grade) (CD:[869..870] 1))
+                          (NNS:[872..877] cases))
+                        (CC:[878..881] and)
+                        (NP (CD:[882..886] five)
+                          (NML (NN:[887..892] Grade) (CD:[893..894] 2))
+                          (NNS:[895..900] cases))
+                        (-RRB-:[900..901] -RRB-)))))
+                (CC:[902..905] and)
+                (NP
+                  (NP (CD:[906..910] nine) (NNS:[911..916] cases))
+                  (PP (IN:[917..919] of)
+                    (NP (JJ:[920..936] dedifferentiated)
+                        (NN:[937..951] chondrosarcoma))))))))
+        (,:[951..952] ,)
+        (S-MNR
+          (NP-SBJ (-NONE-:[952..952] *))
+          (VP (VBG:[954..959] using)
+            (NP
+              (NML
+                (NML
+                  (NML (NN:[960..970] polymerase) (NN:[971..976] chain)
+                       (NN:[977..985] reaction))
+                  (HYPH:[985..986] -)
+                  (NML (NN:[986..997] restriction) (NN:[998..1006] fragment)
+                       (NN:[1007..1013] length) (NN:[1014..1026] polymorphism)))
+                (CC:[1027..1030] and)
+                (NML (JJ:[1032..1038] direct) (NN:[1039..1049] sequencing)))
+              (NN:[1050..1058] analysis))))))
+    (.:[1058..1059] .)))
+
+;sentence 7 Span:1060..1253
+;H-ras mutations were only seen in two out of the  nine cases of
+;dedifferentiated chondrosarcoma (2/9, 22%) and they were not seen  in any of
+;the cases of conventional chondrosarcoma (0/11, 0%).
+;[1060..1065]:gene-rna:"H-ras"
+;[1066..1075]:variation-event:"mutations"
+;[1124..1155]:malignancy:"dedifferentiated chondrosarcoma"
+;[1214..1241]:malignancy:"conventional chondrosarcoma"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[1060..1065] H-ras) (NNS:[1066..1075] mutations))
+      (VP (VBD:[1076..1080] were)
+        (ADVP (RB:[1081..1085] only))
+        (VP (VBN:[1086..1090] seen)
+          (NP-2 (-NONE-:[1090..1090] *))
+          (PP (IN:[1091..1093] in)
+            (NP
+              (NP (CD:[1094..1097] two))
+              (PP (IN:[1098..1101] out)
+                (PP (IN:[1102..1104] of)
+                  (NP
+                    (NP (DT:[1105..1108] the) (CD:[1110..1114] nine)
+                        (NNS:[1115..1120] cases))
+                    (PP (IN:[1121..1123] of)
+                      (NP (JJ:[1124..1140] dedifferentiated)
+                          (NN:[1141..1155] chondrosarcoma)))
+                    (PRN (-LRB-:[1156..1157] -LRB-)
+                      (FRAG
+                        (NP
+                          (NP (CD:[1157..1158] 2))
+                          (PP (SYM:[1158..1159] /)
+                            (NP (CD:[1159..1160] 9))))
+                        (,:[1160..1161] ,)
+                        (NP (CD:[1162..1164] 22) (NN:[1164..1165] %)))
+                      (-RRB-:[1165..1166] -RRB-))))))))))
+    (CC:[1167..1170] and)
+    (S
+      (NP-SBJ-1 (PRP:[1171..1175] they))
+      (VP (VBD:[1176..1180] were) (RB:[1181..1184] not)
+        (VP (VBN:[1185..1189] seen)
+          (NP-1 (-NONE-:[1189..1189] *))
+          (PP (IN:[1191..1193] in)
+            (NP
+              (NP (DT:[1194..1197] any))
+              (PP (IN:[1198..1200] of)
+                (NP
+                  (NP (DT:[1201..1204] the) (NNS:[1205..1210] cases))
+                  (PP (IN:[1211..1213] of)
+                    (NP (JJ:[1214..1226] conventional)
+                        (NN:[1227..1241] chondrosarcoma)))))
+              (PRN (-LRB-:[1242..1243] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (CD:[1243..1244] 0))
+                    (PP (SYM:[1244..1245] /)
+                      (NP (CD:[1245..1247] 11))))
+                  (,:[1247..1248] ,)
+                  (NP (CD:[1249..1250] 0) (NN:[1250..1251] %)))
+                (-RRB-:[1251..1252] -RRB-)))))))
+    (.:[1252..1253] .)))
+
+;sentence 8 Span:1254..1581
+;Dedifferentiated  chondrosarcomas had a worse prognosis than conventional
+;chondrosarcomas (P <  .01); among the patients with dedifferentiated
+;chondrosarcomas, those with H-ras  mutation (n = 2) tended to have a worse
+;prognosis than those without (n = 7),  although the difference was not
+;statistically significant (P = 0.068).
+;[1254..1287]:malignancy:"Dedifferentiated  chondrosarcomas"
+;[1315..1343]:malignancy:"conventional chondrosarcomas"
+;[1380..1412]:malignancy:"dedifferentiated chondrosarcomas"
+;[1425..1430]:gene-rna:"H-ras"
+;[1432..1440]:variation-event:"mutation"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[1254..1270] Dedifferentiated)
+              (NNS:[1272..1287] chondrosarcomas))
+      (VP (VBD:[1288..1291] had)
+        (NP
+          (NP (DT:[1292..1293] a) (JJR:[1294..1299] worse)
+              (NN:[1300..1309] prognosis))
+          (PP (IN:[1310..1314] than)
+            (NP
+               (JJ:[1315..1327] conventional) (NNS:[1328..1343] chondrosarcomas)
+              (PRN (-LRB-:[1344..1345] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1345..1346] P))
+                  (VP (SYM:[1347..1348] <)
+                    (NP (CD:[1350..1353] .01))))
+                (-RRB-:[1353..1354] -RRB-)))))))
+    (::[1354..1355] ;)
+    (S
+      (PP (IN:[1356..1361] among)
+        (NP
+          (NP (DT:[1362..1365] the) (NNS:[1366..1374] patients))
+          (PP (IN:[1375..1379] with)
+            (NP (JJ:[1380..1396] dedifferentiated)
+                (NNS:[1397..1412] chondrosarcomas)))))
+      (,:[1412..1413] ,)
+      (NP-SBJ
+        (NP (DT:[1414..1419] those))
+        (PP (IN:[1420..1424] with)
+          (NP (NN:[1425..1430] H-ras) (NN:[1432..1440] mutation)
+            (PRN (-LRB-:[1441..1442] -LRB-)
+              (S
+                (NP-SBJ (NN:[1442..1443] n))
+                (VP (SYM:[1444..1445] =)
+                  (NP (CD:[1446..1447] 2))))
+              (-RRB-:[1447..1448] -RRB-)))))
+      (VP (VBD:[1449..1455] tended)
+        (S
+          (NP-SBJ (-NONE-:[1455..1455] *))
+          (VP (TO:[1456..1458] to)
+            (VP (VB:[1459..1463] have)
+              (NP
+                (NP (DT:[1464..1465] a) (JJR:[1466..1471] worse)
+                    (NN:[1472..1481] prognosis))
+                (PP (IN:[1482..1486] than)
+                  (NP
+                    (NP (DT:[1487..1492] those))
+                    (PP (IN:[1493..1500] without)
+                      (NP (-NONE-:[1500..1500] *?*)))
+                    (PRN (-LRB-:[1501..1502] -LRB-)
+                      (S
+                        (NP-SBJ (NN:[1502..1503] n))
+                        (VP (SYM:[1504..1505] =)
+                          (NP (CD:[1506..1507] 7))))
+                      (-RRB-:[1507..1508] -RRB-))))))))
+        (,:[1508..1509] ,)
+        (SBAR-ADV (IN:[1511..1519] although)
+          (S
+            (NP-SBJ (DT:[1520..1523] the) (NN:[1524..1534] difference))
+            (VP (VBD:[1535..1538] was) (RB:[1539..1542] not)
+              (ADJP-PRD (RB:[1543..1556] statistically)
+                        (JJ:[1557..1568] significant)
+                (PRN (-LRB-:[1569..1570] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[1570..1571] P))
+                    (VP (SYM:[1572..1573] =)
+                      (NP (CD:[1574..1579] 0.068))))
+                  (-RRB-:[1579..1580] -RRB-))))))))
+    (.:[1580..1581] .)))
+
+;sentence 9 Span:1582..1740
+;Our  results would seem to suggest that H-ras mutation may occur during the
+;course of  dedifferentiation and may also have some effect on malignant
+;potential.
+;[1622..1627]:gene-rna:"H-ras"
+;[1628..1636]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ-1 (PRP$:[1582..1585] Our) (NNS:[1587..1594] results))
+    (VP (MD:[1595..1600] would)
+      (VP (VB:[1601..1605] seem)
+        (S
+          (NP-SBJ-1 (-NONE-:[1605..1605] *))
+          (VP (TO:[1606..1608] to)
+            (VP (VB:[1609..1616] suggest)
+              (SBAR (IN:[1617..1621] that)
+                (S
+                  (NP-SBJ (NN:[1622..1627] H-ras) (NN:[1628..1636] mutation))
+                  (VP
+                    (VP (MD:[1637..1640] may)
+                      (VP (VB:[1641..1646] occur)
+                        (PP (IN:[1647..1653] during)
+                          (NP
+                            (NP (DT:[1654..1657] the) (NN:[1658..1664] course))
+                            (PP (IN:[1665..1667] of)
+                              (NP (NN:[1669..1686] dedifferentiation)))))))
+                    (CC:[1687..1690] and)
+                    (VP (MD:[1691..1694] may)
+                      (ADVP (RB:[1695..1699] also))
+                      (VP (VB:[1700..1704] have)
+                        (NP
+                          (NP (DT:[1705..1709] some) (NN:[1710..1716] effect))
+                          (PP (IN:[1717..1719] on)
+                            (NP (JJ:[1720..1729] malignant)
+                                (NN:[1730..1739] potential))))))))))))))
+    (.:[1739..1740] .)))
+
+;section 10 Span:1744..1789
+;PMID: 11301351 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1744..1748] PMID) (::[1748..1749] :) (CD:[1750..1758] 11301351)
+        (NN:[1759..1760] -LSB-) (NNP:[1760..1766] PubMed) (::[1767..1768] -)
+        (NN:[1769..1776] indexed) (IN:[1777..1780] for)
+        (NNP:[1781..1789] MEDLINE-RSB-)))

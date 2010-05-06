@@ -1,0 +1,336 @@
+;PMID: 7762971
+;source_file_2994.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..144] = [t:50..144]
+;2)sentence:[e:145..154] = [t:145..154]
+;3)section:[e:158..191] = [t:158..191]
+;4)section:[e:195..311] = [t:195..311]
+;5)sentence:[e:315..530] = [t:315..530]
+;6)sentence:[e:531..690] = [t:531..690]
+;7)sentence:[e:691..883] = [t:691..883]
+;8)sentence:[e:884..1087] = [t:884..1087]
+;9)sentence:[e:1088..1350] = [t:1088..1350]
+;10)sentence:[e:1351..1464] = [t:1351..1464]
+;11)section:[e:1468..1486] = [t:1468..1486]
+;12)section:[e:1492..1498] = [t:1492..1498]
+;13)section:[e:1504..1520] = [t:1504..1520]
+;14)section:[e:1524..1568] = [t:1524..1568]
+
+;section 0 Span:0..44
+;Ann Clin Lab Sci.  1995 Jan-Feb;25(1):66-78.
+(SEC
+  (FRAG (NNP:[0..3] Ann) (NNP:[4..8] Clin) (NNP:[9..12] Lab) (NNP:[13..16] Sci)
+        (.:[16..17] .) (CD:[19..23] 1995) (NNP:[24..28] Jan-)
+        (CC:[28..35] Feb;25-LRB-) (CD:[35..36] 1) (-RRB-:[36..37] -RRB-)
+        (::[37..38] :) (CD:[38..43] 66-78) (.:[43..44] .)))
+
+;sentence 1 Span:50..144
+;Immunohistology, cytogenetics, and molecular studies of small round cell
+;tumors  of childhood.
+;[106..129]:malignancy-type:"small round cell tumors"
+;[134..143]:malignancy-developmental-state:"childhood"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[50..65] Immunohistology))
+      (,:[65..66] ,)
+      (NP (NNS:[67..79] cytogenetics))
+      (,:[79..80] ,) (CC:[81..84] and)
+      (NP (JJ:[85..94] molecular) (NNS:[95..102] studies)))
+    (PP (IN:[103..105] of)
+      (NP
+        (NP (JJ:[106..111] small) (JJ:[112..117] round) (NN:[118..122] cell)
+            (NNS:[123..129] tumors))
+        (PP (IN:[131..133] of)
+          (NP (NN:[134..143] childhood)))))
+    (.:[143..144] .)))
+
+;sentence 2 Span:145..154
+;A review.
+(SENT
+  (NP-HLN (DT:[145..146] A) (NN:[147..153] review) (.:[153..154] .)))
+
+;section 3 Span:158..191
+;Winters JL, Geil JD, O'Connor WN.
+(SEC
+  (FRAG (NNP:[158..165] Winters) (NNP:[166..168] JL) (,:[168..169] ,)
+        (NNP:[170..174] Geil) (NNP:[175..177] JD) (,:[177..178] ,)
+        (NNP:[179..187] O'Connor) (NNP:[188..190] WN) (.:[190..191] .)))
+
+;section 4 Span:195..311
+;Department of Pathology and Laboratory Medicine, College of Medicine,
+;University  of Kentucky, Lexington 40536, USA.
+(SEC
+  (FRAG (NNP:[195..205] Department) (IN:[206..208] of)
+        (NNP:[209..218] Pathology) (CC:[219..222] and)
+        (NNP:[223..233] Laboratory) (NNP:[234..242] Medicine) (,:[242..243] ,)
+        (NNP:[244..251] College) (IN:[252..254] of) (NNP:[255..263] Medicine)
+        (,:[263..264] ,) (NNP:[265..275] University) (IN:[277..279] of)
+        (NNP:[280..288] Kentucky) (,:[288..289] ,) (NNP:[290..299] Lexington)
+        (CD:[300..305] 40536) (,:[305..306] ,) (NNP:[307..310] USA)
+        (.:[310..311] .)))
+
+;sentence 5 Span:315..530
+;Malignancies of childhood include a well-defined spectrum of hematolymphoid, 
+;organ specific (adrenal, kidney, liver), soft tissue, bone, and nervous
+;system  (central and peripheral) neoplasms with variable biology.
+;[331..340]:malignancy-developmental-state:"childhood"
+;[376..390]...[498..507]:malignancy-type:"hematolymphoid"..."neoplasms"
+;[409..416]...[498..507]:malignancy-type:"adrenal"..."neoplasms"
+;[418..424]...[498..507]:malignancy-type:"kidney"..."neoplasms"
+;[426..431]...[498..507]:malignancy-type:"liver"..."neoplasms"
+;[434..445]...[498..507]:malignancy-type:"soft tissue"..."neoplasms"
+;[447..451]...[498..507]:malignancy-type:"bone"..."neoplasms"
+;[457..471]...[486..496]...[498..507]:malignancy-type:"nervous
+;system"..."peripheral"..."neoplasms"
+;[457..471]...[474..481]...[498..507]:malignancy-type:"nervous
+;system"..."central"..."neoplasms"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[315..327] Malignancies))
+      (PP (IN:[328..330] of)
+        (NP (NN:[331..340] childhood))))
+    (VP (VBP:[341..348] include)
+      (NP
+        (NP (DT:[349..350] a)
+          (ADJP (RB:[351..355] well) (HYPH:[355..356] -)
+                (VBN:[356..363] defined))
+          (NN:[364..372] spectrum))
+        (PP (IN:[373..375] of)
+          (NP
+            (NP
+              (NP (JJ:[376..390] hematolymphoid)
+                (NML-1 (-NONE-:[390..390] *P*)))
+              (,:[390..391] ,)
+              (NP (NN:[393..398] organ) (JJ:[399..407] specific)
+                (NML-1 (-NONE-:[407..407] *P*))
+                (PRN (-LRB-:[408..409] -LRB-)
+                  (NP (JJ:[409..416] adrenal) (,:[416..417] ,)
+                      (NN:[418..424] kidney) (,:[424..425] ,)
+                      (NN:[426..431] liver))
+                  (-RRB-:[431..432] -RRB-)))
+              (,:[432..433] ,)
+              (NP
+                (NML (JJ:[434..438] soft) (NN:[439..445] tissue))
+                (NML-1 (-NONE-:[445..445] *P*)))
+              (,:[445..446] ,)
+              (NP (NN:[447..451] bone)
+                (NML-1 (-NONE-:[451..451] *P*)))
+              (,:[451..452] ,) (CC:[453..456] and)
+              (NP (JJ:[457..464] nervous) (NN:[465..471] system)
+                (PRN (-LRB-:[473..474] -LRB-)
+                  (ADJP (JJ:[474..481] central) (CC:[482..485] and)
+                        (JJ:[486..496] peripheral))
+                  (-RRB-:[496..497] -RRB-))
+                (NML-1 (NNS:[498..507] neoplasms))))
+            (PP (IN:[508..512] with)
+              (NP (JJ:[513..521] variable) (NN:[522..529] biology)))))))
+    (.:[529..530] .)))
+
+;sentence 6 Span:531..690
+;Small round cell  neoplasms, a subset of childhood malignancies, are
+;histologically similar but  differ markedly in their histogenesis, therapy,
+;and prognosis.
+;[531..558]:malignancy-type:"Small round cell  neoplasms"
+;[572..581]:malignancy-developmental-state:"childhood"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[531..536] Small) (JJ:[537..542] round) (NN:[543..547] cell)
+          (NNS:[549..558] neoplasms))
+      (,:[558..559] ,)
+      (NP
+        (NP (DT:[560..561] a) (NN:[562..568] subset))
+        (PP (IN:[569..571] of)
+          (NP (NN:[572..581] childhood) (NNS:[582..594] malignancies)))))
+    (,:[594..595] ,)
+    (VP
+      (VP (VBP:[596..599] are)
+        (ADJP-PRD (RB:[600..614] histologically) (JJ:[615..622] similar)))
+      (CC:[623..626] but)
+      (VP (VBP:[628..634] differ)
+        (ADVP (RB:[635..643] markedly))
+        (PP (IN:[644..646] in)
+          (NP
+            (NP (PRP$:[647..652] their) (NN:[653..665] histogenesis))
+            (,:[665..666] ,)
+            (NP (NN:[667..674] therapy))
+            (,:[674..675] ,) (CC:[676..679] and)
+            (NP (NN:[680..689] prognosis))))))
+    (.:[689..690] .)))
+
+;sentence 7 Span:691..883
+;Traditionally,  clinical information and light microscopy, with the aid of
+;histochemistry and  ultrastructural evaluation, establish a diagnosis or at
+;least narrow the  differential diagnosis.
+(SENT
+  (S
+    (ADVP (RB:[691..704] Traditionally))
+    (,:[704..705] ,)
+    (NP-SBJ
+      (NP (JJ:[707..715] clinical) (NN:[716..727] information))
+      (CC:[728..731] and)
+      (NP (NN:[732..737] light) (NN:[738..748] microscopy)))
+    (,:[748..749] ,)
+    (PP (IN:[750..754] with)
+      (NP
+        (NP (DT:[755..758] the) (NN:[759..762] aid))
+        (PP (IN:[763..765] of)
+          (NP
+            (NP (NN:[766..780] histochemistry))
+            (CC:[781..784] and)
+            (NP (JJ:[786..801] ultrastructural) (NN:[802..812] evaluation))))))
+    (,:[812..813] ,)
+    (VP
+      (VP (VBP:[814..823] establish)
+        (NP (DT:[824..825] a) (NN:[826..835] diagnosis)))
+      (CC:[836..838] or)
+      (VP
+        (ADVP (IN:[839..841] at) (JJS:[842..847] least))
+        (VBP:[848..854] narrow)
+        (NP (DT:[855..858] the) (JJ:[860..872] differential)
+            (NN:[873..882] diagnosis))))
+    (.:[882..883] .)))
+
+;sentence 8 Span:884..1087
+;Additionally, immunohistology, cytogenetics, and  molecular studies have
+;become important in diagnosis and in defining  phenotype/genotype, patient
+;treatment modalities, and prognosis in specific  cases.
+(SENT
+  (S
+    (ADVP (RB:[884..896] Additionally))
+    (,:[896..897] ,)
+    (NP-SBJ
+      (NP (NN:[898..913] immunohistology))
+      (,:[913..914] ,)
+      (NP (NNS:[915..927] cytogenetics))
+      (,:[927..928] ,) (CC:[929..932] and)
+      (NP (JJ:[934..943] molecular) (NNS:[944..951] studies)))
+    (VP (VBP:[952..956] have)
+      (VP (VBN:[957..963] become)
+        (ADJP-PRD (JJ:[964..973] important))
+        (PP
+          (PP (IN:[974..976] in)
+            (NP (NN:[977..986] diagnosis)))
+          (CC:[987..990] and)
+          (PP (IN:[991..993] in)
+            (S-NOM
+              (NP-SBJ (-NONE-:[993..993] *))
+              (VP (VBG:[994..1002] defining)
+                (NP
+                  (NP (NN:[1004..1013] phenotype) (SYM:[1013..1014] /)
+                      (NN:[1014..1022] genotype))
+                  (,:[1022..1023] ,)
+                  (NP (NN:[1024..1031] patient) (NN:[1032..1041] treatment)
+                      (NNS:[1042..1052] modalities))
+                  (,:[1052..1053] ,) (CC:[1054..1057] and)
+                  (NP
+                    (NP (NN:[1058..1067] prognosis))
+                    (PP (IN:[1068..1070] in)
+                      (NP (JJ:[1071..1079] specific) (NNS:[1081..1086] cases)))))))))))
+    (.:[1086..1087] .)))
+
+;sentence 9 Span:1088..1350
+;The 11;22 chromosomal translocation typifies Ewing's sarcoma, primitive 
+;neuroectodermal tumor, and Askin's tumor, as does the resultant chimeric 
+;transcript, while expression and amplification of N-myc oncogene are
+;predictive  of the prognosis in neuroblastoma.
+;[1092..1094]:variation-state-original:"11"
+;[1095..1097]:variation-state-altered:"22"
+;[1110..1123]:variation-type:"translocation"
+;[1133..1148]:malignancy-type:"Ewing's sarcoma"
+;[1150..1182]:malignancy-type:"primitive  neuroectodermal tumor"
+;[1188..1201]:malignancy-type:"Askin's tumor"
+;[1268..1281]:variation-type:"amplification"
+;[1285..1290]:gene-rna:"N-myc"
+;[1336..1349]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[1088..1091] The)
+      (NML (CD:[1092..1094] 11) (::[1094..1095] ;) (CD:[1095..1097] 22))
+      (JJ:[1098..1109] chromosomal) (NN:[1110..1123] translocation))
+    (VP (VBZ:[1124..1132] typifies)
+      (NP
+        (NP
+          (NP (NNP:[1133..1138] Ewing) (POS:[1138..1140] 's))
+          (NN:[1141..1148] sarcoma))
+        (,:[1148..1149] ,)
+        (NP (JJ:[1150..1159] primitive) (JJ:[1161..1176] neuroectodermal)
+            (NN:[1177..1182] tumor))
+        (,:[1182..1183] ,) (CC:[1184..1187] and)
+        (NP
+          (NP (NNP:[1188..1193] Askin) (POS:[1193..1195] 's))
+          (NN:[1196..1201] tumor)))
+      (,:[1201..1202] ,)
+      (SBAR-ADV (IN:[1203..1205] as)
+        (SINV (VBZ:[1206..1210] does)
+          (NP-SBJ (DT:[1211..1214] the) (JJ:[1215..1224] resultant)
+                  (JJ:[1225..1233] chimeric) (NN:[1235..1245] transcript))
+          (VP (-NONE-:[1245..1245] *?*))))
+      (,:[1245..1246] ,)
+      (SBAR-ADV (IN:[1247..1252] while)
+        (S
+          (NP-SBJ
+            (NP (NN:[1253..1263] expression) (CC:[1264..1267] and)
+                (NN:[1268..1281] amplification))
+            (PP (IN:[1282..1284] of)
+              (NP (NN:[1285..1290] N-myc) (NN:[1291..1299] oncogene))))
+          (VP (VBP:[1300..1303] are)
+            (ADJP-PRD (JJ:[1304..1314] predictive)
+              (PP (IN:[1316..1318] of)
+                (NP (DT:[1319..1322] the) (NN:[1323..1332] prognosis))))
+            (PP (IN:[1333..1335] in)
+              (NP (NN:[1336..1349] neuroblastoma)))))))
+    (.:[1349..1350] .)))
+
+;sentence 10 Span:1351..1464
+;Furthermore, studies of genes and gene  products are elucidating mechanisms
+;of oncogenesis and tumor progression.
+(SENT
+  (S
+    (ADVP (RB:[1351..1362] Furthermore))
+    (,:[1362..1363] ,)
+    (NP-SBJ
+      (NP (NNS:[1364..1371] studies))
+      (PP (IN:[1372..1374] of)
+        (NP
+          (NP (NNS:[1375..1380] genes))
+          (CC:[1381..1384] and)
+          (NP (NN:[1385..1389] gene) (NNS:[1391..1399] products)))))
+    (VP (VBP:[1400..1403] are)
+      (VP (VBG:[1404..1415] elucidating)
+        (NP (NNS:[1416..1426] mechanisms))
+        (PP (IN:[1427..1429] of)
+          (NP
+            (NP (NN:[1430..1441] oncogenesis))
+            (CC:[1442..1445] and)
+            (NP (NN:[1446..1451] tumor) (NN:[1452..1463] progression))))))
+    (.:[1463..1464] .)))
+
+;section 11 Span:1468..1486
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1468..1479] Publication) (NNP:[1480..1485] Types)
+        (::[1485..1486] :)))
+
+;section 12 Span:1492..1498
+;Review
+(SEC
+  (FRAG (NNP:[1492..1498] Review)))
+
+;section 13 Span:1504..1520
+;Review, Tutorial
+(SEC
+  (FRAG (NNP:[1504..1510] Review) (,:[1510..1511] ,) (NNP:[1512..1520] Tutorial)))
+
+;section 14 Span:1524..1568
+;PMID: 7762971 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1524..1528] PMID) (::[1528..1529] :) (CD:[1530..1537] 7762971)
+        (NN:[1538..1539] -LSB-) (NNP:[1539..1545] PubMed) (::[1546..1547] -)
+        (NN:[1548..1555] indexed) (IN:[1556..1559] for)
+        (NNP:[1560..1568] MEDLINE-RSB-)))

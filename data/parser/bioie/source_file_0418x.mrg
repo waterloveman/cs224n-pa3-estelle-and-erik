@@ -1,0 +1,300 @@
+;PMID: 11526487
+;source_file_668.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)section:[e:41..141] = [t:41..141]
+;2)section:[e:141..142] = [t:141..142]
+;3)section:[e:146..213] = [t:146..213]
+;4)section:[e:217..251] = [t:217..251]
+;5)sentence:[e:255..329] = [t:255..329]
+;6)sentence:[e:330..578] = [t:330..578]
+;7)sentence:[e:579..770] = [t:579..770]
+;8)sentence:[e:771..887] = [t:771..887]
+;9)sentence:[e:889..1168] = [t:889..1168]
+;10)sentence:[e:1169..1390] = [t:1169..1390]
+;11)section:[e:1394..1439] = [t:1394..1439]
+
+;section 0 Span:0..36
+;Oncogene  2001 Aug 16;20(36):5025-32
+(SEC
+  (FRAG (NNP:[0..8] Oncogene) (CD:[10..14] 2001) (NNP:[15..18] Aug)
+        (CD:[19..25] 16;20-LRB-) (CD:[25..27] 36) (-RRB-:[27..28] -RRB-)
+        (CD:[28..33] :5025) (IN:[33..34] -) (CD:[34..36] 32)))
+
+;section 1 Span:41..141
+;Extensive characterization of genetic alterations in a series of human 
+;colorectal cancer cell lines
+;[113..141]:malignancy:"colorectal cancer cell lines"
+(SEC
+  (NP-HLN
+    (NP (JJ:[41..50] Extensive) (NN:[51..67] characterization))
+    (PP (IN:[68..70] of)
+      (NP (JJ:[71..78] genetic) (NNS:[79..90] alterations)))
+    (PP (IN:[91..93] in)
+      (NP
+        (NP (DT:[94..95] a) (NN:[96..102] series))
+        (PP (IN:[103..105] of)
+          (NP (JJ:[106..111] human)
+            
+            (NML (JJ:[113..123] colorectal) (NN:[124..130] cancer))
+            (NN:[131..135] cell) (NNS:[136..141] lines)))))))
+;ERROR_Entity in section[113..141]:malignancy "colorectal cancer cell lines"
+
+;section 2 Span:141..142
+;.
+(SEC (.:[141..142] .))
+
+;section 3 Span:146..213
+;Gayet J, Zhou XP, Duval A, Rolland S, Hoang JM, Cottu P, Hamelin R.
+(SEC
+  (FRAG (NNP:[146..151] Gayet) (NNP:[152..154] J,) (NNP:[155..159] Zhou)
+        (NNP:[160..162] XP) (,:[162..163] ,) (NNP:[164..169] Duval)
+        (NNP:[170..171] A) (,:[171..172] ,) (NNP:[173..180] Rolland)
+        (NNP:[181..183] S,) (NNP:[184..189] Hoang) (NNP:[190..192] JM)
+        (,:[192..193] ,) (NNP:[194..199] Cottu) (NNP:[200..201] P)
+        (,:[201..202] ,) (NNP:[203..210] Hamelin) (NNP:[211..213] R.)))
+
+;section 4 Span:217..251
+;INSERM U434 - CEPH, Paris, France.
+(SEC
+  (FRAG (NNP:[217..223] INSERM) (CD:[224..228] U434) (HYPH:[229..230] -)
+        (NNP:[231..235] CEPH) (,:[235..236] ,) (NNP:[237..242] Paris)
+        (,:[242..243] ,) (NNP:[244..250] France) (.:[250..251] .)))
+
+;sentence 5 Span:255..329
+;A number of genetic alterations have been described in colorectal cancers.
+;[267..286]:variation-event:"genetic alterations"
+;[310..328]:malignancy:"colorectal cancers"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[255..256] A) (NN:[257..263] number))
+      (PP (IN:[264..266] of)
+        (NP (JJ:[267..274] genetic) (NNS:[275..286] alterations))))
+    (VP (VBP:[287..291] have)
+      (VP (VBN:[292..296] been)
+        (VP (VBN:[297..306] described)
+          (NP-1 (-NONE-:[306..306] *))
+          (PP (IN:[307..309] in)
+            (NP (JJ:[310..320] colorectal) (NNS:[321..328] cancers))))))
+    (.:[328..329] .)))
+
+;sentence 6 Span:330..578
+;They  include allelic losses on specific chromosomal arms, mutations of
+;oncogenes,  tumor suppressor genes and mismatch repair genes, microsatellite
+;instability in  coding repeat sequences of target genes and methylation
+;defects in gene  promoters.
+;[344..358]:variation-type:"allelic losses"
+;[402..411]:gene-rna:"oncogenes"
+;[414..430]:gene-rna:"tumor suppressor"
+;[441..456]:gene-rna:"mismatch repair"
+(SENT
+  (S
+    (NP-SBJ (PRP:[330..334] They))
+    (VP (VBP:[336..343] include)
+      (NP
+        (NP
+          (NP (JJ:[344..351] allelic) (NNS:[352..358] losses))
+          (PP-LOC (IN:[359..361] on)
+            (NP (JJ:[362..370] specific) (JJ:[371..382] chromosomal)
+                (NNS:[383..387] arms))))
+        (,:[387..388] ,)
+        (NP
+          (NP (NNS:[389..398] mutations))
+          (PP (IN:[399..401] of)
+            (NP
+              (NP (NNS:[402..411] oncogenes))
+              (,:[411..412] ,)
+              (NP
+                (NML (NN:[414..419] tumor) (NN:[420..430] suppressor))
+                (NNS:[431..436] genes))
+              (CC:[437..440] and)
+              (NP
+                (NML (NN:[441..449] mismatch) (NN:[450..456] repair))
+                (NNS:[457..462] genes)))))
+        (,:[462..463] ,)
+        (NP
+          (NP (NN:[464..478] microsatellite) (NN:[479..490] instability))
+          (PP (IN:[491..493] in)
+            (S-NOM
+              (NP-SBJ (-NONE-:[493..493] *))
+              (VP (VBG:[495..501] coding)
+                (NP
+                  (NP (NN:[502..508] repeat) (NNS:[509..518] sequences))
+                  (PP (IN:[519..521] of)
+                    (NP (NN:[522..528] target) (NNS:[529..534] genes))))))))
+        (CC:[535..538] and)
+        (NP
+          (NP (NN:[539..550] methylation) (NNS:[551..558] defects))
+          (PP (IN:[559..561] in)
+            (NP (NN:[562..566] gene) (NNS:[568..577] promoters))))))
+    (.:[577..578] .)))
+
+;sentence 7 Span:579..770
+;Since these alterations have been reported by different groups on  different
+;tumors and cell lines, the complete repertoire of genetic alterations  for
+;any given tumor sample remains unknown.
+(SENT
+  (S
+    (SBAR-ADV (IN:[579..584] Since)
+      (S
+        (NP-SBJ-1 (DT:[585..590] these) (NNS:[591..602] alterations))
+        (VP (VBP:[603..607] have)
+          (VP (VBN:[608..612] been)
+            (VP (VBN:[613..621] reported)
+              (NP-1 (-NONE-:[621..621] *))
+              (PP (IN:[622..624] by)
+                (NP-LGS (JJ:[625..634] different) (NNS:[635..641] groups)))
+              (PP (IN:[642..644] on)
+                (NP (JJ:[646..655] different) (NNS:[656..662] tumors)
+                    (CC:[663..666] and) (NN:[667..671] cell)
+                    (NNS:[672..677] lines))))))))
+    (,:[677..678] ,)
+    (NP-SBJ
+      (NP (DT:[679..682] the) (JJ:[683..691] complete)
+          (NN:[692..702] repertoire))
+      (PP (IN:[703..705] of)
+        (NP (JJ:[706..713] genetic) (NNS:[714..725] alterations)))
+      (PP (IN:[727..730] for)
+        (NP (DT:[731..734] any) (VBN:[735..740] given) (NN:[741..746] tumor)
+            (NN:[747..753] sample))))
+    (VP (VBZ:[754..761] remains)
+      (ADJP-PRD (JJ:[762..769] unknown)))
+    (.:[769..770] .)))
+
+;sentence 8 Span:771..887
+;In the present study, we analysed a  series of 22 colorectal cancer cell
+;lines for 31 different genetic alterations.
+;[821..849]:malignancy:"colorectal cancer cell lines"
+(SENT
+  (S
+    (PP (IN:[771..773] In)
+      (NP (DT:[774..777] the) (JJ:[778..785] present) (NN:[786..791] study)))
+    (,:[791..792] ,)
+    (NP-SBJ (PRP:[793..795] we))
+    (VP (VBD:[796..804] analysed)
+      (NP
+        (NP (DT:[805..806] a) (NN:[808..814] series))
+        (PP (IN:[815..817] of)
+          (NP (CD:[818..820] 22)
+            
+            (NML (JJ:[821..831] colorectal) (NN:[832..838] cancer))
+            (NN:[839..843] cell) (NNS:[844..849] lines))))
+      (PP (IN:[850..853] for)
+        (NP (CD:[854..856] 31) (JJ:[857..866] different) (JJ:[867..874] genetic)
+            (NNS:[875..886] alterations))))
+    (.:[886..887] .)))
+
+;sentence 9 Span:889..1168
+;We found significant correlations between mutational profiles in these 
+;colorectal cell lines associated with differences in mismatch repair status. 
+;This panel of colon cancer cell lines is representative of the genetic 
+;heterogeneity occurring in sporadic colorectal carcinoma.
+;[961..982]:malignancy:"colorectal cell lines"
+;[1053..1076]:malignancy:"colon cancer cell lines"
+;[1138..1167]:malignancy:"sporadic colorectal carcinoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[889..891] We))
+    (VP (VBD:[892..897] found)
+      (NP
+        (NP (JJ:[898..909] significant) (NNS:[910..922] correlations))
+        (PP (IN:[923..930] between)
+          (NP (JJ:[931..941] mutational) (NNS:[942..950] profiles)))
+        (VP-1 (-NONE-:[950..950] *ICH*)))
+      (PP (IN:[951..953] in)
+        (NP (DT:[954..959] these)
+           (JJ:[961..971] colorectal) (NN:[972..976] cell)
+           (NNS:[977..982] lines)))
+      (VP-1 (VBN:[983..993] associated)
+        (NP (-NONE-:[993..993] *))
+        (PP-CLR (IN:[994..998] with)
+          (NP
+            (NP (NNS:[999..1010] differences))
+            (PP (IN:[1011..1013] in)
+              (NP
+                (NML (NN:[1014..1022] mismatch) (NN:[1023..1029] repair))
+                (NN:[1030..1036] status)))))))
+    (.:[1036..1037] .))
+  (S
+    (NP-SBJ
+      (NP (DT:[1039..1043] This) (NN:[1044..1049] panel))
+      (PP (IN:[1050..1052] of)
+        (NP
+          (NML (NN:[1053..1058] colon) (NN:[1059..1065] cancer))
+          (NN:[1066..1070] cell) (NNS:[1071..1076] lines))))
+    (VP (VBZ:[1077..1079] is)
+      (ADJP-PRD (JJ:[1080..1094] representative)
+        (PP (IN:[1095..1097] of)
+          (NP
+            (NP (DT:[1098..1101] the) (JJ:[1102..1109] genetic)
+                (NN:[1111..1124] heterogeneity))
+            (VP (VBG:[1125..1134] occurring)
+              (PP (IN:[1135..1137] in)
+                (NP (JJ:[1138..1146] sporadic) (JJ:[1147..1157] colorectal)
+                    (NN:[1158..1167] carcinoma))))))))
+    (.:[1167..1168] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[889..1168]::S:S:
+
+;sentence 10 Span:1169..1390
+;Our results may prove  to be very useful for understanding the different
+;biological pathways involved  in the development of colon cancer, and for
+;groups studying cellular biology and  pharmacology on the same cell lines.
+;[1294..1306]:malignancy:"colon cancer"
+;[1379..1389]:malignancy:"cell lines"
+(SENT
+  (S
+    (NP-SBJ-2 (PRP$:[1169..1172] Our) (NNS:[1173..1180] results))
+    (VP (MD:[1181..1184] may)
+      (VP (VB:[1185..1190] prove)
+        (S
+          (NP-SBJ-2 (-NONE-:[1190..1190] *))
+          (VP (TO:[1192..1194] to)
+            (VP (VB:[1195..1197] be)
+              (NP-PRD
+                (NP (RB:[1198..1202] very) (JJ:[1203..1209] useful))
+                (PP
+                  (PP (IN:[1210..1213] for)
+                    (S-NOM
+                      (NP-SBJ (-NONE-:[1213..1213] *))
+                      (VP (VBG:[1214..1227] understanding)
+                        (NP
+                          (NP (DT:[1228..1231] the) (JJ:[1232..1241] different)
+                              (JJ:[1242..1252] biological)
+                              (NNS:[1253..1261] pathways))
+                          (VP (VBN:[1262..1270] involved)
+                            (NP (-NONE-:[1270..1270] *))
+                            (PP-CLR (IN:[1272..1274] in)
+                              (NP
+                                (NP (DT:[1275..1278] the)
+                                    (NN:[1279..1290] development))
+                                (PP (IN:[1291..1293] of)
+                                  (NP (NN:[1294..1299] colon)
+                                      (NN:[1300..1306] cancer))))))))))
+                  (,:[1306..1307] ,) (CC:[1308..1311] and)
+                  (PP (IN:[1312..1315] for)
+                    (NP
+                      (NP (NNS:[1316..1322] groups))
+                      (VP (VBG:[1323..1331] studying)
+                        (NP
+                          (NP
+                            (ADJP-1 (JJ:[1332..1340] cellular))
+                            (NN:[1341..1348] biology))
+                          (CC:[1349..1352] and)
+                          (NP
+                            (ADJP-1 (-NONE-:[1352..1352] *P*))
+                            (NN:[1354..1366] pharmacology)))
+                        (PP (IN:[1367..1369] on)
+                          (NP (DT:[1370..1373] the) (JJ:[1374..1378] same)
+                             (NN:[1379..1383] cell) (NNS:[1384..1389] lines)))))))))))))
+    (.:[1389..1390] .)))
+
+;section 11 Span:1394..1439
+;PMID: 11526487 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1394..1398] PMID) (::[1398..1399] :) (CD:[1400..1408] 11526487)
+        (-LRB-:[1409..1410] -LSB-) (NNP:[1410..1416] PubMed)
+        (HYPH:[1417..1418] -) (JJ:[1419..1426] indexed) (IN:[1427..1430] for)
+        (NNP:[1431..1438] MEDLINE) (-RRB-:[1438..1439] -RSB-)))

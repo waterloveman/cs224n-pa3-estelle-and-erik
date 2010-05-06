@@ -1,0 +1,523 @@
+;PMID: 11048673
+;source_file_916.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..65] = [t:0..65]
+;1)sentence:[e:71..197] = [t:71..197]
+;2)section:[e:201..216] = [t:201..216]
+;3)section:[e:220..283] = [t:220..283]
+;4)sentence:[e:287..442] = [t:287..442]
+;5)sentence:[e:443..636] = [t:443..636]
+;6)sentence:[e:637..826] = [t:637..826]
+;7)sentence:[e:827..1007] = [t:827..1007]
+;8)sentence:[e:1008..1109] = [t:1008..1109]
+;9)sentence:[e:1110..1132] = [t:1110..1132]
+;10)sentence:[e:1133..1190] = [t:1133..1190]
+;11)sentence:[e:1191..1334] = [t:1191..1334]
+;12)sentence:[e:1335..1478] = [t:1335..1478]
+;13)sentence:[e:1479..1692] = [t:1479..1692]
+;14)sentence:[e:1693..1863] = [t:1693..1863]
+;15)sentence:[e:1864..1979] = [t:1864..1979]
+;16)sentence:[e:1980..2237] = [t:1980..2237]
+;17)section:[e:2241..2286] = [t:2241..2286]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1125..1131] microM
+;ERROR_Token in entity file but not tree[1131..1132] .
+;ERROR_Token in tree file but not entity[1125..1132] microM.
+
+;section 0 Span:0..65
+;Comp Biochem Physiol C Toxicol Pharmacol. 2000 Jul;126(3):235-44.
+(SEC
+  (FRAG (NNP:[0..4] Comp) (NNP:[5..12] Biochem) (NNP:[13..20] Physiol)
+        (NNP:[21..22] C) (NNP:[23..30] Toxicol) (NNP:[31..40] Pharmacol)
+        (.:[40..41] .) (CD:[42..46] 2000) (CC:[47..55] Jul;126-LRB-)
+        (CD:[55..56] 3) (-RRB-:[56..57] -RRB-) (CD:[57..61] :235)
+        (HYPH:[61..62] -) (CD:[62..64] 44) (.:[64..65] .)))
+
+;sentence 1 Span:71..197
+;Further immunochemical and biocatalytic characterization of CYP1A1 from feral
+; leaping mullet liver (Liza saliens) microsomes.
+;[131..137]:cyp450:"CYP1A1"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (ADJP-2 (JJR:[71..78] Further))
+        (JJ:[79..93] immunochemical)
+        (NML-1 (-NONE-:[93..93] *P*)))
+      (CC:[94..97] and)
+      (NP
+        (ADJP-2 (-NONE-:[97..97] *P*))
+        (JJ:[98..110] biocatalytic)
+        (NML-1 (NN:[111..127] characterization))))
+    (PP (IN:[128..130] of)
+      (NP
+        (NP (NN:[131..137] CYP1A1))
+        (PP (IN:[138..142] from)
+          (NP
+            (NML
+              (NML (JJ:[143..148] feral)
+                (NML (VBG:[150..157] leaping) (NN:[158..164] mullet))
+                (NN:[165..170] liver))
+              (NML (-LRB-:[171..172] -LRB-) (NNP:[172..176] Liza)
+                   (NNP:[177..184] saliens) (-RRB-:[184..185] -RRB-)))
+            (NNS:[186..196] microsomes)))))
+    (.:[196..197] .)))
+
+;section 2 Span:201..216
+;Sen A, Arinc E.
+(SEC
+  (FRAG (NNP:[201..204] Sen) (NNP:[205..206] A) (,:[206..207] ,)
+        (NNP:[208..213] Arinc) (NNP:[214..216] E.)))
+
+;section 3 Span:220..283
+;Department of Chemistry, Pamukkale University, Denizli, Turkey.
+(SEC
+  (FRAG (NNP:[220..230] Department) (IN:[231..233] of)
+        (NNP:[234..243] Chemistry) (,:[243..244] ,) (NNP:[245..254] Pamukkale)
+        (NNP:[255..265] University) (,:[265..266] ,) (NNP:[267..274] Denizli)
+        (,:[274..275] ,) (NNP:[276..282] Turkey) (.:[282..283] .)))
+
+;sentence 4 Span:287..442
+;CYP1A is known to play important roles in the metabolism, detoxification and 
+;bioactivation of carcinogens and other xenobiotics in animals including
+;fish.
+;[287..292]:cyp450:"CYP1A"
+;[382..393]:substance:"carcinogens"
+;[404..415]:substance:"xenobiotics"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[287..292] CYP1A))
+    (VP (VBZ:[293..295] is)
+      (VP (VBN:[296..301] known)
+        (S
+          (NP-SBJ-1 (-NONE-:[301..301] *))
+          (VP (TO:[302..304] to)
+            (VP (VB:[305..309] play)
+              (NP (JJ:[310..319] important) (NNS:[320..325] roles))
+              (PP (IN:[326..328] in)
+                (NP
+                  (NP (DT:[329..332] the) (NN:[333..343] metabolism)
+                      (,:[343..344] ,) (NN:[345..359] detoxification)
+                      (CC:[360..363] and) (NN:[365..378] bioactivation))
+                  (PP (IN:[379..381] of)
+                    (NP
+                      (NP (NNS:[382..393] carcinogens))
+                      (CC:[394..397] and)
+                      (NP (JJ:[398..403] other) (NNS:[404..415] xenobiotics))))))
+              (PP-LOC (IN:[416..418] in)
+                (NP
+                  (NP (NNS:[419..426] animals))
+                  (PP (VBG:[427..436] including)
+                    (NP (NNS:[437..441] fish))))))))))
+    (.:[441..442] .)))
+
+;sentence 5 Span:443..636
+;In  our laboratory, CYP1A1 was obtained in a highly purified form with a
+;specific  content of 15-17 nmol P450 per mg protein from liver microsomes of
+;feral fish,  leaping mullet (Liza saliens).
+;[463..469]:cyp450:"CYP1A1"
+;[537..542]:quantitative-value:"15-17"
+;[543..567]:quantitative-units:"nmol P450 per mg protein"
+(SENT
+  (S
+    (PP-LOC (IN:[443..445] In)
+      (NP (PRP$:[447..450] our) (NN:[451..461] laboratory)))
+    (,:[461..462] ,)
+    (NP-SBJ-1 (NN:[463..469] CYP1A1))
+    (VP (VBD:[470..473] was)
+      (VP (VBN:[474..482] obtained)
+        (NP-1 (-NONE-:[482..482] *))
+        (PP (IN:[483..485] in)
+          (NP (DT:[486..487] a)
+            (ADJP (RB:[488..494] highly) (VBN:[495..503] purified))
+            (NN:[504..508] form)))
+        (PP (IN:[509..513] with)
+          (NP
+            (NP (DT:[514..515] a) (JJ:[516..524] specific)
+                (NN:[526..533] content))
+            (PP (IN:[534..536] of)
+              (NP
+                (NP
+                  (NML
+                    (QP (CD:[537..539] 15) (HYPH:[539..540] -)
+                        (CD:[540..542] 17))
+                    (NN:[543..547] nmol))
+                  (NP (NN:[548..552] P450)))
+                (PP (IN:[553..556] per)
+                  (NP (NN:[557..559] mg) (NN:[560..567] protein)))))))
+        (PP (IN:[568..572] from)
+          (NP
+            (NP (NN:[573..578] liver) (NNS:[579..589] microsomes))
+            (PP (IN:[590..592] of)
+              (NP
+                (NP (JJ:[593..598] feral) (NNS:[599..603] fish))
+                (,:[603..604] ,)
+                (NP
+                  (NP (VBG:[606..613] leaping) (NN:[614..620] mullet))
+                  (NP (-LRB-:[621..622] -LRB-) (NNP:[622..626] Liza)
+                      (NNP:[627..634] saliens) (-RRB-:[634..635] -RRB-)))))))))
+    (.:[635..636] .)))
+
+;sentence 6 Span:637..826
+;Purified mullet CYP1A1 showed a very high  substrate specificities for
+;7-ethoxyresorufin and 7-methoxyresorufin in a  reconstituted system
+;containing purified fish P450 reductase and lipid.
+;[653..659]:cyp450:"CYP1A1"
+;[680..689]:substance:"substrate"
+;[708..725]:substance:"7-ethoxyresorufin"
+;[730..748]:substance:"7-methoxyresorufin"
+;[801..815]:substance:"P450 reductase"
+(SENT
+  (S
+    (NP-SBJ (VBN:[637..645] Purified) (NN:[646..652] mullet)
+            (NN:[653..659] CYP1A1))
+    (VP (VBD:[660..666] showed)
+      (NP
+        (NP (DT:[667..668] a)
+          (ADJP (RB:[669..673] very) (JJ:[674..678] high))
+          (NN:[680..689] substrate) (NNS:[690..703] specificities))
+        (PP (IN:[704..707] for)
+          (NP (NN:[708..725] 7-ethoxyresorufin) (CC:[726..729] and)
+              (NN:[730..748] 7-methoxyresorufin))))
+      (PP-LOC (IN:[749..751] in)
+        (NP
+          (NP (DT:[752..753] a) (VBN:[755..768] reconstituted)
+              (NN:[769..775] system))
+          (VP (VBG:[776..786] containing)
+            (NP (VBN:[787..795] purified) (NN:[796..800] fish)
+               (NN:[801..805] P450) (NN:[806..815] reductase))
+            (CC:[816..819] and)
+            (NP (NN:[820..825] lipid))))))
+    (.:[825..826] .)))
+
+;sentence 7 Span:827..1007
+;In  addition, effects of each individual components of the reconstituted
+;system,  i.e., CYP1A1 and P450 reductase on 7-methoxyresorufin O-demethylase
+;(MROD)  activity were studied.
+;[915..921]:cyp450:"CYP1A1"
+;[926..940]:substance:"P450 reductase"
+;[944..976]:substance:"7-methoxyresorufin O-demethylase"
+;[978..982]:substance:"MROD"
+(SENT
+  (S
+    (PP (IN:[827..829] In)
+      (NP (NN:[831..839] addition)))
+    (,:[839..840] ,)
+    (NP-SBJ-1
+      (NP (NNS:[841..848] effects))
+      (PP (IN:[849..851] of)
+        (NP
+          (NP
+            (NP (DT:[852..856] each) (JJ:[857..867] individual)
+                (NNS:[868..878] components))
+            (PP (IN:[879..881] of)
+              (NP (DT:[882..885] the) (VBN:[886..899] reconstituted)
+                  (NN:[900..906] system))))
+          (,:[906..907] ,)
+          (NP
+            (ADVP (FW:[909..913] i.e.))
+            (,:[913..914] ,)
+            (NP (NN:[915..921] CYP1A1))
+            (CC:[922..925] and)
+            (NP (NN:[926..930] P450) (NN:[931..940] reductase)))))
+      (PP (IN:[941..943] on)
+        (NP
+          (NML
+            (NML (NN:[944..962] 7-methoxyresorufin)
+                 (NN:[963..976] O-demethylase))
+            (NML (-LRB-:[977..978] -LRB-) (NN:[978..982] MROD)
+                 (-RRB-:[982..983] -RRB-)))
+          (NN:[985..993] activity))))
+    (VP (VBD:[994..998] were)
+      (VP (VBN:[999..1006] studied)
+        (NP-1 (-NONE-:[1006..1006] *))))
+    (.:[1006..1007] .)))
+
+;sentence 8 Span:1008..1109
+;7-ethoxyresorufin O-deethylase (EROD) activity was  strongly inhibited by
+;alpha-naphthoflavone (ANF).
+;[1008..1038]:substance:"7-ethoxyresorufin O-deethylase"
+;[1040..1044]:substance:"EROD"
+;[1082..1102]:substance:"alpha-naphthoflavone"
+;[1104..1107]:substance:"ANF"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML
+        (NML (NN:[1008..1025] 7-ethoxyresorufin) (NN:[1026..1038] O-deethylase))
+        (NML (-LRB-:[1039..1040] -LRB-) (NN:[1040..1044] EROD)
+             (-RRB-:[1044..1045] -RRB-)))
+      (NN:[1046..1054] activity))
+    (VP (VBD:[1055..1058] was)
+      (ADVP-MNR (RB:[1060..1068] strongly))
+      (VP (VBN:[1069..1078] inhibited)
+        (NP-1 (-NONE-:[1078..1078] *))
+        (PP (IN:[1079..1081] by)
+          (NP-LGS
+            (NP (NN:[1082..1102] alpha-naphthoflavone))
+            (NP (-LRB-:[1103..1104] -LRB-) (NN:[1104..1107] ANF)
+                (-RRB-:[1107..1108] -RRB-))))))
+    (.:[1108..1109] .)))
+
+;sentence 9 Span:1110..1132
+;At 0.5 and 2.5 microM.
+;[1113..1116]:quantitative-value:"0.5"
+;[1121..1124]:quantitative-value:"2.5"
+;[1125..1131]:quantitative-units:"microM"
+(SENT
+  (FRAG
+    (PP (IN:[1110..1112] At)
+      (NP
+        (NP (CD:[1113..1116] 0.5)
+          (NML-1 (-NONE-:[1116..1116] *P*)))
+        (CC:[1117..1120] and)
+        (NP (CD:[1121..1124] 2.5)
+          (NML-1 (NN:[1125..1132] microM.)))))))
+
+;sentence 10 Span:1133..1190
+;ANF  inhibited EROD activity by 90 and 98%, respectively.
+;[1133..1136]:substance:"ANF"
+;[1148..1152]:substance:"EROD"
+;[1165..1167]...[1174..1175]:quantitative-value:"90"..."%"
+;[1172..1175]:quantitative-value:"98%"
+(SENT
+  (S
+    (NP-SBJ (NN:[1133..1136] ANF))
+    (VP (VBD:[1138..1147] inhibited)
+      (NP (NN:[1148..1152] EROD) (NN:[1153..1161] activity))
+      (PP-EXT (IN:[1162..1164] by)
+        (NP
+          (NP (CD:[1165..1167] 90)
+            (NML-1 (-NONE-:[1167..1167] *P*)))
+          (CC:[1168..1171] and)
+          (NP (CD:[1172..1174] 98)
+            (NML-1 (NN:[1174..1175] %)))))
+      (,:[1175..1176] ,)
+      (ADVP (RB:[1177..1189] respectively)))
+    (.:[1189..1190] .)))
+
+;sentence 11 Span:1191..1334
+;Mullet CYP1A1 did not  catalyze monooxygenations of other substrates such as
+;aniline, ethylmorphine,  N-nitrosodimethylamine and p-nitrophenol.
+;[1198..1204]:cyp450:"CYP1A1"
+;[1249..1259]:substance:"substrates"
+;[1268..1275]:substance:"aniline"
+;[1277..1290]:substance:"ethylmorphine"
+;[1293..1315]:substance:"N-nitrosodimethylamine"
+;[1320..1333]:substance:"p-nitrophenol"
+(SENT
+  (S
+    (NP-SBJ (NN:[1191..1197] Mullet) (NN:[1198..1204] CYP1A1))
+    (VP (VBD:[1205..1208] did) (RB:[1209..1212] not)
+      (VP (VB:[1214..1222] catalyze)
+        (NP
+          (NP (NNS:[1223..1239] monooxygenations))
+          (PP (IN:[1240..1242] of)
+            (NP
+              (NP (JJ:[1243..1248] other) (NNS:[1249..1259] substrates))
+              (PP (JJ:[1260..1264] such) (IN:[1265..1267] as)
+                (NP (NN:[1268..1275] aniline) (,:[1275..1276] ,)
+                    (NN:[1277..1290] ethylmorphine) (,:[1290..1291] ,)
+                    (NN:[1293..1315] N-nitrosodimethylamine)
+                    (CC:[1316..1319] and) (NN:[1320..1333] p-nitrophenol))))))))
+    (.:[1333..1334] .)))
+
+;sentence 12 Span:1335..1478
+;Antibodies produced against CYP1A1  orthologues in fish such as trout and
+;scup showed strong cross-reactivity with  the purified mullet CYP1A1.
+;[1335..1345]:substance:"Antibodies"
+;[1363..1369]:cyp450:"CYP1A1"
+;[1371..1382]:substance:"orthologues"
+;[1471..1477]:cyp450:"CYP1A1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1335..1345] Antibodies))
+      (VP (VBN:[1346..1354] produced)
+        (NP (-NONE-:[1354..1354] *))
+        (PP (IN:[1355..1362] against)
+          (NP (NN:[1363..1369] CYP1A1) (NNS:[1371..1382] orthologues)))
+        (PP-LOC (IN:[1383..1385] in)
+          (NP
+            (NP (NNS:[1386..1390] fish))
+            (PP (JJ:[1391..1395] such) (IN:[1396..1398] as)
+              (NP (NN:[1399..1404] trout) (CC:[1405..1408] and)
+                  (NN:[1409..1413] scup)))))))
+    (VP (VBD:[1414..1420] showed)
+      (NP
+        (NP (JJ:[1421..1427] strong) (AFX:[1428..1433] cross)
+            (HYPH:[1433..1434] -) (NN:[1434..1444] reactivity))
+        (PP (IN:[1445..1449] with)
+          (NP (DT:[1451..1454] the) (VBN:[1455..1463] purified)
+              (NN:[1464..1470] mullet) (NN:[1471..1477] CYP1A1)))))
+    (.:[1477..1478] .)))
+
+;sentence 13 Span:1479..1692
+;In addition, anti-L. saliens liver CYP1A1 produced  in our laboratory
+;inhibited both the EROD and MROD activities catalyzed by L.  saliens liver
+;microsomes but stronger inhibition was observed with EROD  activity.
+;[1492..1520]:cyp450:"anti-L. saliens liver CYP1A1"
+;[1568..1572]:substance:"EROD"
+;[1577..1581]:substance:"MROD"
+;[1677..1681]:substance:"EROD"
+(SENT
+  (S
+    (S
+      (PP (IN:[1479..1481] In)
+        (NP (NN:[1482..1490] addition)))
+      (,:[1490..1491] ,)
+      (NP-SBJ
+        (NP
+          (NML (AFX:[1492..1496] anti) (HYPH:[1496..1497] -)
+            (NML (NNP:[1497..1499] L.) (NNP:[1500..1507] saliens)))
+          (NN:[1508..1513] liver) (NN:[1514..1520] CYP1A1))
+        (VP (VBN:[1521..1529] produced)
+          (NP (-NONE-:[1529..1529] *))
+          (PP-LOC (IN:[1531..1533] in)
+            (NP (PRP$:[1534..1537] our) (NN:[1538..1548] laboratory)))))
+      (VP (VBD:[1549..1558] inhibited)
+        (NP
+          (NP (CC:[1559..1563] both)
+            (NP (DT:[1564..1567] the) (NN:[1568..1572] EROD)
+              (NML-2 (-NONE-:[1572..1572] *P*)))
+            (CC:[1573..1576] and)
+            (NP (NN:[1577..1581] MROD)
+              (NML-2 (NNS:[1582..1592] activities))))
+          (VP (VBN:[1593..1602] catalyzed)
+            (NP (-NONE-:[1602..1602] *))
+            (PP (IN:[1603..1605] by)
+              (NP-LGS
+                (NML (NNP:[1606..1608] L.) (NNP:[1610..1617] saliens))
+                (NN:[1618..1623] liver) (NNS:[1624..1634] microsomes)))))))
+    (CC:[1635..1638] but)
+    (S
+      (NP-SBJ-1 (JJR:[1639..1647] stronger) (NN:[1648..1658] inhibition))
+      (VP (VBD:[1659..1662] was)
+        (VP (VBN:[1663..1671] observed)
+          (NP-1 (-NONE-:[1671..1671] *))
+          (PP (IN:[1672..1676] with)
+            (NP (NN:[1677..1681] EROD) (NN:[1683..1691] activity))))))
+    (.:[1691..1692] .)))
+
+;sentence 14 Span:1693..1863
+;On the other hand, anti-mullet CYP1A1 antibodies showed very weak 
+;cross-reactivity with two proteins (presumably CYP1A1 and CYP1A2) in
+;3MC-treated  rat liver microsomes.
+;[1712..1741]:substance:"anti-mullet CYP1A1 antibodies"
+;[1786..1794]:cyp450:"proteins"
+;[1807..1813]:cyp450:"CYP1A1"
+;[1818..1824]:cyp450:"CYP1A2"
+;[1829..1832]:substance:"3MC"
+(SENT
+  (S
+    (PP (IN:[1693..1695] On)
+      (NP (DT:[1696..1699] the) (JJ:[1700..1705] other) (NN:[1706..1710] hand)))
+    (,:[1710..1711] ,)
+    (NP-SBJ
+      (NML (AFX:[1712..1716] anti) (HYPH:[1716..1717] -)
+           (NN:[1717..1723] mullet))
+      (NN:[1724..1730] CYP1A1) (NNS:[1731..1741] antibodies))
+    (VP (VBD:[1742..1748] showed)
+      (NP
+        (NP
+          (ADJP (RB:[1749..1753] very) (JJ:[1754..1758] weak))
+          (AFX:[1760..1765] cross) (HYPH:[1765..1766] -)
+           (NN:[1766..1776] reactivity))
+        (PP (IN:[1777..1781] with)
+          (NP
+            (NP (CD:[1782..1785] two) (NNS:[1786..1794] proteins))
+            (PRN (-LRB-:[1795..1796] -LRB-)
+              (FRAG
+                (ADVP (RB:[1796..1806] presumably))
+                (NP (NN:[1807..1813] CYP1A1) (CC:[1814..1817] and)
+                    (NN:[1818..1824] CYP1A2)))
+              (-RRB-:[1824..1825] -RRB-)))))
+      (PP-LOC (IN:[1826..1828] in)
+        (NP
+          (ADJP (NN:[1829..1832] 3MC) (HYPH:[1832..1833] -)
+                (VBN:[1833..1840] treated))
+          (NN:[1842..1845] rat) (NN:[1846..1851] liver)
+           (NNS:[1852..1862] microsomes))))
+    (.:[1862..1863] .)))
+
+;sentence 15 Span:1864..1979
+;Moreover, 3MC-treated rat liver microsomal EROD activity  was weakly
+;inhibited by the anti-L. saliens liver CYP1A1.
+;[1874..1877]:substance:"3MC"
+;[1907..1911]:substance:"EROD"
+;[1950..1978]:cyp450:"anti-L. saliens liver CYP1A1"
+(SENT
+  (S
+    (ADVP (RB:[1864..1872] Moreover))
+    (,:[1872..1873] ,)
+    (NP-SBJ-1
+      (NML
+        (ADJP (NN:[1874..1877] 3MC) (HYPH:[1877..1878] -)
+              (VBN:[1878..1885] treated))
+        (NN:[1886..1889] rat) (NN:[1890..1895] liver)
+         (JJ:[1896..1906] microsomal) (NN:[1907..1911] EROD))
+      (NN:[1912..1920] activity))
+    (VP (VBD:[1922..1925] was)
+      (ADVP (RB:[1926..1932] weakly))
+      (VP (VBN:[1933..1942] inhibited)
+        (NP-1 (-NONE-:[1942..1942] *))
+        (PP (IN:[1943..1945] by)
+          (NP-LGS (DT:[1946..1949] the)
+            
+            (NML (AFX:[1950..1954] anti) (HYPH:[1954..1955] -)
+              (NML (NNP:[1955..1957] L.) (NNP:[1958..1965] saliens)))
+            (NN:[1966..1971] liver) (NN:[1972..1978] CYP1A1)))))
+    (.:[1978..1979] .)))
+
+;sentence 16 Span:1980..2237
+;These results strongly  suggested that the purified mullet CYP1A1 is
+;structurally, functionally and  immunochemically similar to the CYP1A1
+;homologues purified from other teleost  species but functionally and
+;immunochemically distinct from mammalian CYP1A1.
+;[2039..2045]:cyp450:"CYP1A1"
+;[2113..2119]:cyp450:"CYP1A1"
+;[2120..2130]:substance:"homologues"
+;[2230..2236]:cyp450:"CYP1A1"
+(SENT
+  (S
+    (NP-SBJ (DT:[1980..1985] These) (NNS:[1986..1993] results))
+    (ADVP (RB:[1994..2002] strongly))
+    (VP (VBD:[2004..2013] suggested)
+      (SBAR (IN:[2014..2018] that)
+        (S
+          (NP-SBJ (DT:[2019..2022] the) (VBN:[2023..2031] purified)
+                  (NN:[2032..2038] mullet) (NN:[2039..2045] CYP1A1))
+          (VP (VBZ:[2046..2048] is)
+            (ADJP-PRD
+              (ADJP
+                (ADVP (RB:[2049..2061] structurally) (,:[2061..2062] ,)
+                      (RB:[2063..2075] functionally) (CC:[2076..2079] and)
+                      (RB:[2081..2097] immunochemically))
+                (JJ:[2098..2105] similar)
+                (PP (TO:[2106..2108] to)
+                  (NP
+                    (NP (DT:[2109..2112] the) (NN:[2113..2119] CYP1A1)
+                        (NNS:[2120..2130] homologues))
+                    (VP (VBN:[2131..2139] purified)
+                      (NP (-NONE-:[2139..2139] *))
+                      (PP (IN:[2140..2144] from)
+                        (NP (JJ:[2145..2150] other) (NN:[2151..2158] teleost)
+                            (NNS:[2160..2167] species)))))))
+              (CC:[2168..2171] but)
+              (ADJP
+                (ADVP (RB:[2172..2184] functionally) (CC:[2185..2188] and)
+                      (RB:[2189..2205] immunochemically))
+                (JJ:[2206..2214] distinct)
+                (PP (IN:[2215..2219] from)
+                  (NP (JJ:[2220..2229] mammalian) (NN:[2230..2236] CYP1A1)))))))))
+    (.:[2236..2237] .)))
+
+;section 17 Span:2241..2286
+;PMID: 11048673 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2241..2245] PMID) (::[2245..2246] :) (CD:[2247..2255] 11048673)
+        (NN:[2256..2257] -LSB-) (NNP:[2257..2263] PubMed) (::[2264..2265] -)
+        (NN:[2266..2273] indexed) (IN:[2274..2277] for)
+        (NNP:[2278..2286] MEDLINE-RSB-)))

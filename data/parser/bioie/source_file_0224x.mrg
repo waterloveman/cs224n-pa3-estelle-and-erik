@@ -1,0 +1,288 @@
+;PMID: 11850193
+;source_file_2847.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..173] = [t:41..173]
+;2)section:[e:177..228] = [t:177..228]
+;3)section:[e:232..338] = [t:232..338]
+;4)sentence:[e:342..517] = [t:342..517]
+;5)sentence:[e:518..616] = [t:518..616]
+;6)sentence:[e:617..795] = [t:617..795]
+;7)sentence:[e:796..1014] = [t:796..1014]
+;8)sentence:[e:1015..1163] = [t:1015..1163]
+;9)sentence:[e:1164..1284] = [t:1164..1284]
+;10)section:[e:1288..1333] = [t:1288..1333]
+
+;section 0 Span:0..35
+;Mech Dev.  2002 Mar;112(1-2):191-3.
+(SEC
+  (FRAG (NNP:[0..4] Mech) (NNP:[5..8] Dev) (.:[8..9] .) ('':[11..15] 2002)
+        (CC:[16..24] Mar;112-LRB-) (CD:[24..27] 1-2) (-RRB-:[27..28] -RRB-)
+        (CD:[28..35] :191-3.)))
+
+;sentence 1 Span:41..173
+;Etr-r3/mNapor, encoding an ELAV-type RNA binding protein, is expressed in 
+;differentiating cells in the developing rodent forebrain.
+;[41..47]:gene-rna:"Etr-r3"
+;[48..54]:gene-rna:"mNapor"
+;[68..97]:gene-protein:"ELAV-type RNA binding protein"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (NN:[41..47] Etr-r3) (SYM:[47..48] /) (NN:[48..54] mNapor))
+      (,:[54..55] ,)
+      (VP (VBG:[56..64] encoding)
+        (NP (DT:[65..67] an)
+          
+          (NML (NN:[68..72] ELAV) (HYPH:[72..73] -) (NN:[73..77] type))
+          (NN:[78..81] RNA) (NN:[82..89] binding) (NN:[90..97] protein))))
+    (,:[97..98] ,)
+    (VP (VBZ:[99..101] is)
+      (VP (VBN:[102..111] expressed)
+        (NP-1 (-NONE-:[111..111] *))
+        (PP-LOC (IN:[112..114] in)
+          (NP (VBG:[116..131] differentiating) (NNS:[132..137] cells)))
+        (PP-LOC (IN:[138..140] in)
+          (NP (DT:[141..144] the) (VBG:[145..155] developing)
+              (NN:[156..162] rodent) (NN:[163..172] forebrain)))))
+    (.:[172..173] .)))
+
+;section 2 Span:177..228
+;Levers TE, Tait S, Birling MC, Brophy PJ, Price DJ.
+(SEC
+  (FRAG (NNP:[177..183] Levers) (NNP:[184..186] TE) (,:[186..187] ,)
+        (NNP:[188..192] Tait) (NNP:[193..194] S) (,:[194..195] ,)
+        (NNP:[196..203] Birling) (NNP:[204..206] MC) (,:[206..207] ,)
+        (NNP:[208..214] Brophy) (NNP:[215..217] PJ) (,:[217..218] ,)
+        (NNP:[219..224] Price) (NNP:[225..228] DJ.)))
+
+;section 3 Span:232..338
+;Biomedical Sciences, University of Edinburgh, Hugh Robson Building, George 
+;Square, Edinburgh EH8 9XD, UK.
+(SEC
+  (FRAG (NNP:[232..242] Biomedical) (NNP:[243..251] Sciences) (,:[251..252] ,)
+        (NNP:[253..263] University) (IN:[264..266] of)
+        (NNP:[267..276] Edinburgh) (,:[276..277] ,) (NNP:[278..282] Hugh)
+        (NNP:[283..289] Robson) (NNP:[290..298] Building) (,:[298..299] ,)
+        (NNP:[300..306] George) (NNP:[308..314] Square) (,:[314..315] ,)
+        (NNP:[316..325] Edinburgh) (NNP:[326..329] EH8) (NNP:[330..333] 9XD)
+        (,:[333..334] ,) (NNP:[335..338] UK.)))
+
+;sentence 4 Span:342..517
+;The gene encoding human neuroblastoma apoptosis-related RNA binding protein 
+;(NAPOR) has rat and mouse homologues, Etr-r3 and mNapor, cloned recently by 
+;ourselves and others.
+;[366..417]:gene-protein:"neuroblastoma apoptosis-related RNA binding
+;protein"
+;[366..379]:malignancy-type:"neuroblastoma"
+;[420..425]:gene-protein:"NAPOR"
+;[457..463]:gene-rna:"Etr-r3"
+;[468..474]:gene-rna:"mNapor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[342..345] The) (NN:[346..350] gene))
+      (VP (VBG:[351..359] encoding)
+        (NP (JJ:[360..365] human)
+          (NML
+            (NML (NN:[366..379] neuroblastoma)
+              (ADJP (NN:[380..389] apoptosis) (HYPH:[389..390] -)
+                    (VBN:[390..397] related))
+              (NN:[398..401] RNA) (NN:[402..409] binding)
+               (NN:[410..417] protein))
+            (NML (-LRB-:[419..420] -LRB-) (NN:[420..425] NAPOR)
+                 (-RRB-:[425..426] -RRB-))))))
+    (VP (VBZ:[427..430] has)
+      (NP
+        (NP
+          (NP
+            (NP (NN:[431..434] rat)
+              (NML-1 (-NONE-:[434..434] *P*)))
+            (CC:[435..438] and)
+            (NP (NN:[439..444] mouse)
+              (NML-1 (NNS:[445..455] homologues))))
+          (,:[455..456] ,)
+          (NP (NN:[457..463] Etr-r3) (CC:[464..467] and) (NN:[468..474] mNapor)))
+        (,:[474..475] ,)
+        (VP (VBN:[476..482] cloned)
+          (NP (-NONE-:[482..482] *))
+          (ADVP-TMP (RB:[483..491] recently))
+          (PP (IN:[492..494] by)
+            (NP-LGS
+              (NP (PRP:[496..505] ourselves))
+              (CC:[506..509] and)
+              (NP (NNS:[510..516] others)))))))
+    (.:[516..517] .)))
+
+;sentence 5 Span:518..616
+;Etr-r3/mNapor is transcribed in embryonic brain but its  detailed expression
+;patterns are unknown.
+;[518..524]:gene-rna:"Etr-r3"
+;[525..531]:gene-rna:"mNapor"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[518..524] Etr-r3) (SYM:[524..525] /) (NN:[525..531] mNapor))
+      (VP (VBZ:[532..534] is)
+        (VP (VBN:[535..546] transcribed)
+          (NP-1 (-NONE-:[546..546] *))
+          (PP-LOC (IN:[547..549] in)
+            (NP (JJ:[550..559] embryonic) (NN:[560..565] brain))))))
+    (CC:[566..569] but)
+    (S
+      (NP-SBJ (PRP$:[570..573] its) (VBN:[575..583] detailed)
+              (NN:[584..594] expression) (NNS:[595..603] patterns))
+      (VP (VBP:[604..607] are)
+        (ADJP-PRD (JJ:[608..615] unknown))))
+    (.:[615..616] .)))
+
+;sentence 6 Span:617..795
+;It has been hypothesised that its  expression coincides with the occurrence
+;of programmed cell death, but existing  expression data are insufficient to
+;evaluate this possibility.
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (PRP:[617..619] It))
+        (SBAR-2 (-NONE-:[619..619] *EXP*)))
+      (VP (VBZ:[620..623] has)
+        (VP (VBN:[624..628] been)
+          (VP (VBN:[629..641] hypothesised)
+            (NP-1 (-NONE-:[641..641] *))
+            (SBAR-2 (IN:[642..646] that)
+              (S
+                (NP-SBJ (PRP$:[647..650] its) (NN:[652..662] expression))
+                (VP (VBZ:[663..672] coincides)
+                  (PP (IN:[673..677] with)
+                    (NP
+                      (NP (DT:[678..681] the) (NN:[682..692] occurrence))
+                      (PP (IN:[693..695] of)
+                        (NP (VBN:[696..706] programmed) (NN:[707..711] cell)
+                            (NN:[712..717] death))))))))))))
+    (,:[717..718] ,) (CC:[719..722] but)
+    (S
+      (NP-SBJ (VBG:[723..731] existing) (NN:[733..743] expression)
+              (NNS:[744..748] data))
+      (VP (VBP:[749..752] are)
+        (ADJP-PRD (JJ:[753..765] insufficient)
+          (S
+            (NP-SBJ (-NONE-:[765..765] *))
+            (VP (TO:[766..768] to)
+              (VP (VB:[769..777] evaluate)
+                (NP (DT:[778..782] this) (NN:[783..794] possibility))))))))
+    (.:[794..795] .)))
+
+;sentence 7 Span:796..1014
+;We used northern  blots and in situ hybridisation to show that Etr-r3/mNapor
+;is expressed by most  postmitotic differentiating cells throughout the
+;forebrain during embryogenesis  and the first weeks of postnatal life.
+;[859..865]:gene-rna:"Etr-r3"
+;[866..872]:gene-rna:"mNapor"
+(SENT
+  (S
+    (NP-SBJ (PRP:[796..798] We))
+    (VP (VBD:[799..803] used)
+      (NP
+        (NP (JJ:[804..812] northern) (NNS:[814..819] blots))
+        (CC:[820..823] and)
+        (NP
+          (ADVP (FW:[824..826] in) (FW:[827..831] situ))
+          (NN:[832..845] hybridisation)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[845..845] *))
+        (VP (TO:[846..848] to)
+          (VP (VB:[849..853] show)
+            (SBAR (IN:[854..858] that)
+              (S
+                (NP-SBJ-1 (NN:[859..865] Etr-r3) (SYM:[865..866] /)
+                          (NN:[866..872] mNapor))
+                (VP (VBZ:[873..875] is)
+                  (VP (VBN:[876..885] expressed)
+                    (NP-1 (-NONE-:[885..885] *))
+                    (PP (IN:[886..888] by)
+                      (NP-LGS (JJS:[889..893] most) (JJ:[895..906] postmitotic)
+                              (VBG:[907..922] differentiating)
+                              (NNS:[923..928] cells)))
+                    (PP-LOC (IN:[929..939] throughout)
+                      (NP (DT:[940..943] the) (NN:[944..953] forebrain)))
+                    (PP-TMP (IN:[954..960] during)
+                      (NP
+                        (NP (NN:[961..974] embryogenesis))
+                        (CC:[976..979] and)
+                        (NP
+                          (NP (DT:[980..983] the) (JJ:[984..989] first)
+                              (NNS:[990..995] weeks))
+                          (PP (IN:[996..998] of)
+                            (NP (JJ:[999..1008] postnatal)
+                                (NN:[1009..1013] life))))))))))))))
+    (.:[1013..1014] .)))
+
+;sentence 8 Span:1015..1163
+;Expression is particularly high in the  developing cerebral cortex, in nuclei
+;of the ventral telencephalon, in dorsal  thalamus and in hypothalamus.
+(SENT
+  (S
+    (NP-SBJ (NN:[1015..1025] Expression))
+    (VP (VBZ:[1026..1028] is)
+      (ADJP-PRD (RB:[1029..1041] particularly) (JJ:[1042..1046] high))
+      (PP-LOC
+        (PP (IN:[1047..1049] in)
+          (NP (DT:[1050..1053] the) (VBG:[1055..1065] developing)
+              (JJ:[1066..1074] cerebral) (NN:[1075..1081] cortex)))
+        (,:[1081..1082] ,)
+        (PP (IN:[1083..1085] in)
+          (NP
+            (NP (NNS:[1086..1092] nuclei))
+            (PP (IN:[1093..1095] of)
+              (NP (DT:[1096..1099] the) (JJ:[1100..1107] ventral)
+                  (NN:[1108..1121] telencephalon)))))
+        (,:[1121..1122] ,)
+        (PP (IN:[1123..1125] in)
+          (NP (JJ:[1126..1132] dorsal) (NN:[1134..1142] thalamus)))
+        (CC:[1143..1146] and)
+        (PP (IN:[1147..1149] in)
+          (NP (NN:[1150..1162] hypothalamus)))))
+    (.:[1162..1163] .)))
+
+;sentence 9 Span:1164..1284
+;In contrast, Etr-r3/mNapor is expressed by very  few cells in proliferative
+;regions, where cell death rates are highest.
+;[1177..1183]:gene-rna:"Etr-r3"
+;[1184..1190]:gene-rna:"mNapor"
+(SENT
+  (S
+    (PP (IN:[1164..1166] In)
+      (NP (NN:[1167..1175] contrast)))
+    (,:[1175..1176] ,)
+    (NP-SBJ-2 (NN:[1177..1183] Etr-r3) (SYM:[1183..1184] /)
+              (NN:[1184..1190] mNapor))
+    (VP (VBZ:[1191..1193] is)
+      (VP (VBN:[1194..1203] expressed)
+        (NP-2 (-NONE-:[1203..1203] *))
+        (PP (IN:[1204..1206] by)
+          (NP-LGS (RB:[1207..1211] very) (JJ:[1213..1216] few)
+                  (NNS:[1217..1222] cells)))
+        (PP-LOC (IN:[1223..1225] in)
+          (NP
+            (NP (JJ:[1226..1239] proliferative) (NNS:[1240..1247] regions))
+            (,:[1247..1248] ,)
+            (SBAR
+              (WHADVP-1 (WRB:[1249..1254] where))
+              (S
+                (NP-SBJ (NN:[1255..1259] cell) (NN:[1260..1265] death)
+                        (NNS:[1266..1271] rates))
+                (VP (VBP:[1272..1275] are)
+                  (ADJP-PRD (JJS:[1276..1283] highest))
+                  (ADVP-1 (-NONE-:[1283..1283] *T*)))))))))
+    (.:[1283..1284] .)))
+
+;section 10 Span:1288..1333
+;PMID: 11850193 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1288..1292] PMID) (::[1292..1293] :) (CD:[1294..1302] 11850193)
+        (NN:[1303..1304] -LSB-) (NNP:[1304..1310] PubMed) (::[1311..1312] -)
+        (NN:[1313..1320] indexed) (IN:[1321..1324] for)
+        (NNP:[1325..1333] MEDLINE-RSB-)))

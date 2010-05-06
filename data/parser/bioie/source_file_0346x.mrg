@@ -1,0 +1,345 @@
+;PMID: 1988096
+;source_file_2929.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..135] = [t:43..135]
+;2)section:[e:139..207] = [t:139..207]
+;3)section:[e:211..303] = [t:211..303]
+;4)sentence:[e:307..521] = [t:307..521]
+;5)sentence:[e:522..732] = [t:522..732]
+;6)sentence:[e:733..871] = [t:733..871]
+;7)sentence:[e:872..1183] = [t:872..1183]
+;8)sentence:[e:1184..1434] = [t:1184..1434]
+;9)section:[e:1438..1482] = [t:1438..1482]
+
+;section 0 Span:0..37
+;Cancer Res.  1991 Jan 1;51(1):336-40.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (.:[10..11] .) (CD:[13..17] 1991)
+        (NNP:[18..21] Jan) (CD:[22..23] 1) (::[23..24] ;) (CD:[24..26] 51)
+        (-LRB-:[26..27] -LRB-) (CD:[27..28] 1) (-RRB-:[28..29] -RRB-)
+        (::[29..30] :) (CD:[30..36] 336-40) (.:[36..37] .)))
+
+;sentence 1 Span:43..135
+;Biochemical and genetic characterization of the HBA71 Ewing's sarcoma cell 
+;surface antigen.
+;[91..96]:gene-protein:"HBA71"
+;[97..112]:malignancy-type:"Ewing's sarcoma"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (JJ:[43..54] Biochemical) (CC:[55..58] and) (JJ:[59..66] genetic))
+      (NN:[67..83] characterization))
+    (PP (IN:[84..86] of)
+      (NP (DT:[87..90] the) (NN:[91..96] HBA71)
+        (NML
+          (NP (NNP:[97..102] Ewing) (POS:[102..104] 's))
+          (NN:[105..112] sarcoma))
+        (NML (NN:[113..117] cell) (NN:[119..126] surface))
+        (NN:[127..134] antigen)))
+    (.:[134..135] .)))
+
+;section 2 Span:139..207
+;Fellinger EJ, Garin-Chesa P, Su SL, DeAngelis P, Lane JM, Rettig WJ.
+(SEC
+  (FRAG (NNP:[139..148] Fellinger) (NNP:[149..151] EJ) (,:[151..152] ,)
+        (NNP:[153..164] Garin-Chesa) (NNP:[165..167] P,) (NNP:[168..170] Su)
+        (NNP:[171..173] SL) (,:[173..174] ,) (NNP:[175..184] DeAngelis)
+        (NNP:[185..187] P,) (NNP:[188..192] Lane) (NNP:[193..195] JM)
+        (,:[195..196] ,) (NNP:[197..203] Rettig) (NNP:[204..207] WJ.)))
+
+;section 3 Span:211..303
+;Department of Immunology, Memorial Sloan-Kettering Cancer Center, New York,
+;New  York 10021.
+(SEC
+  (FRAG (NNP:[211..221] Department) (IN:[222..224] of)
+        (NNP:[225..235] Immunology) (,:[235..236] ,) (NNP:[237..245] Memorial)
+        (NNP:[246..251] Sloan) (HYPH:[251..252] -) (NNP:[252..261] Kettering)
+        (NNP:[262..268] Cancer) (NNP:[269..275] Center) (,:[275..276] ,)
+        (NNP:[277..280] New) (NNP:[281..285] York) (,:[285..286] ,)
+        (NNP:[287..290] New) (NNP:[292..296] York) (.:[297..302] 10021)
+        (.:[302..303] .)))
+
+;sentence 4 Span:307..521
+;Monoclonal antibody HBA71 detects a cell surface antigen of human Ewing's 
+;sarcomas and peripheral neuroepitheliomas that distinguishes these tumors
+;from  other small round cell tumors of childhood and adolescence.
+;[307..332]:gene-protein:"Monoclonal antibody HBA71"
+;[373..390]:malignancy-type:"Ewing's  sarcomas"
+;[395..423]:malignancy-type:"peripheral neuroepitheliomas"
+;[468..491]:malignancy-type:"small round cell tumors"
+;[495..504]:malignancy-developmental-state:"childhood"
+;[509..520]:malignancy-developmental-state:"adolescence"
+(SENT
+  (S
+    (NP-SBJ (JJ:[307..317] Monoclonal) (NN:[318..326] antibody)
+            (NN:[327..332] HBA71))
+    (VP (VBZ:[333..340] detects)
+      (NP
+        (NP
+          (NP (DT:[341..342] a)
+            (NML (NN:[343..347] cell) (NN:[348..355] surface))
+            (NN:[356..363] antigen))
+          (PP (IN:[364..366] of)
+            (NP
+              (NP (JJ:[367..372] human)
+                
+                (NP (NNP:[373..378] Ewing) (POS:[378..380] 's))
+                (NNS:[382..390] sarcomas))
+              (CC:[391..394] and)
+              (NP (JJ:[395..405] peripheral) (NNS:[406..423] neuroepitheliomas)))))
+        (SBAR
+          (WHNP-1 (WDT:[424..428] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[428..428] *T*))
+            (VP (VBZ:[429..442] distinguishes)
+              (NP
+                (NP (DT:[443..448] these) (NNS:[449..455] tumors))
+                (PP (IN:[456..460] from)
+                  (NP
+                    (NP (JJ:[462..467] other)
+                       (JJ:[468..473] small) (JJ:[474..479] round)
+                       (NN:[480..484] cell) (NNS:[485..491] tumors))
+                    (PP (IN:[492..494] of)
+                      (NP (NN:[495..504] childhood) (CC:[505..508] and)
+                          (NN:[509..520] adolescence)))))))))))
+    (.:[520..521] .)))
+
+;sentence 5 Span:522..732
+;In the present  study, we show that monoclonal antibody HBA71 reacts with
+;polypeptides of Mr  32,000 and 30,000 and that the HBA71-coding gene
+;segregates with human  chromosomes X and Y in rodent-human hybrids.
+;[558..583]:gene-protein:"monoclonal antibody HBA71"
+;[647..652]:gene-protein:"HBA71"
+(SENT
+  (S
+    (PP (IN:[522..524] In)
+      (NP (DT:[525..528] the) (JJ:[529..536] present) (NN:[538..543] study)))
+    (,:[543..544] ,)
+    (NP-SBJ (PRP:[545..547] we))
+    (VP (VBP:[548..552] show)
+      (SBAR
+        (SBAR (IN:[553..557] that)
+          (S
+            (NP-SBJ (JJ:[558..568] monoclonal) (NN:[569..577] antibody)
+                    (NN:[578..583] HBA71))
+            (VP (VBZ:[584..590] reacts)
+              (PP-CLR (IN:[591..595] with)
+                (NP
+                  (NP (NNS:[596..608] polypeptides))
+                  (PP (IN:[609..611] of)
+                    (NP
+                      (NP
+                        (NML-1 (NN:[612..614] Mr))
+                        (CD:[616..622] 32,000))
+                      (CC:[623..626] and)
+                      (NP
+                        (NML-1 (-NONE-:[626..626] *P*))
+                        (CD:[627..633] 30,000)))))))))
+        (CC:[634..637] and)
+        (SBAR (IN:[638..642] that)
+          (S
+            (NP-SBJ (DT:[643..646] the)
+              (ADJP (NN:[647..652] HBA71) (HYPH:[652..653] -)
+                    (VBG:[653..659] coding))
+              (NN:[660..664] gene))
+            (VP (VBZ:[665..675] segregates)
+              (PP (IN:[676..680] with)
+                (NP
+                  (NP
+                    (NML-2 (JJ:[681..686] human) (NNS:[688..699] chromosomes))
+                    (NN:[700..701] X))
+                  (CC:[702..705] and)
+                  (NP
+                    (NML-2 (-NONE-:[705..705] *P*))
+                    (NN:[706..707] Y))))
+              (PP (IN:[708..710] in)
+                (NP
+                  (ADJP (NN:[711..717] rodent) (HYPH:[717..718] -)
+                        (JJ:[718..723] human))
+                  (NNS:[724..731] hybrids))))))))
+    (.:[731..732] .)))
+
+;sentence 6 Span:733..871
+;Therefore, we compared HBA71 to the  T-cell leukemia antigen 12E7, which is
+;encoded by the pseudoautosomal region of  chromosomes X and Y.
+;[756..761]:gene-protein:"HBA71"
+;[777..785]:malignancy-type:"leukemia"
+;[794..798]:gene-protein:"12E7"
+(SENT
+  (S
+    (ADVP (RB:[733..742] Therefore))
+    (,:[742..743] ,)
+    (NP-SBJ (PRP:[744..746] we))
+    (VP (VBD:[747..755] compared)
+      (NP (NN:[756..761] HBA71))
+      (PP (TO:[762..764] to)
+        (NP
+          (NP
+            (NP (DT:[765..768] the) (NN:[770..776] T-cell)
+                (NN:[777..785] leukemia))
+            (NP (NN:[786..793] antigen) (NN:[794..798] 12E7)))
+          (,:[798..799] ,)
+          (SBAR
+            (WHNP-1 (WDT:[800..805] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[805..805] *T*))
+              (VP (VBZ:[806..808] is)
+                (VP (VBN:[809..816] encoded)
+                  (NP-1 (-NONE-:[816..816] *))
+                  (PP (IN:[817..819] by)
+                    (NP-LGS
+                      (NP (DT:[820..823] the) (JJ:[824..839] pseudoautosomal)
+                          (NN:[840..846] region))
+                      (PP (IN:[847..849] of)
+                        (NP
+                          (NP
+                            (NML-2 (NNS:[851..862] chromosomes))
+                            (NN:[863..864] X))
+                          (CC:[865..868] and)
+                          (NP
+                            (NML-2 (-NONE-:[868..868] *P*))
+                            (NN:[869..870] Y)))))))))))))
+    (.:[870..871] .)))
+
+;sentence 7 Span:872..1183
+;We show that monoclonal antibodies HBA71 and 12E7 (a)  detect polypeptides of
+;identical size, (b) react with mouse cells transfected  with complementary
+;DNA corresponding to the 12E7-coding gene, MIC2, and (c) give  similar
+;patterns of reactivity with human tumor cell lines and small round cell 
+;tumor tissues.
+;[885..912]:gene-protein:"monoclonal antibodies HBA71"
+;[885..906]...[917..921]:gene-protein:"monoclonal antibodies"..."12E7"
+;[1050..1054]:gene-protein:"12E7"
+;[1068..1072]:gene-rna:"MIC2"
+;[1151..1174]:malignancy-type:"small round cell  tumor"
+(SENT
+  (S
+    (NP-SBJ (PRP:[872..874] We))
+    (VP (VBP:[875..879] show)
+      (SBAR (IN:[880..884] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NML-1 (JJ:[885..895] monoclonal) (NNS:[896..906] antibodies))
+              (NN:[907..912] HBA71))
+            (CC:[913..916] and)
+            (NP
+              (NML-1 (-NONE-:[916..916] *P*))
+              (NN:[917..921] 12E7)))
+          (VP
+            (VP
+              (LST (LS:[922..925] -LRB-a-RRB-))
+              (VBP:[927..933] detect)
+              (NP
+                (NP (NNS:[934..946] polypeptides))
+                (PP (IN:[947..949] of)
+                  (NP (JJ:[950..959] identical) (NN:[960..964] size)))))
+            (,:[964..965] ,)
+            (VP
+              (LST (LS:[966..969] -LRB-b-RRB-))
+              (VBP:[970..975] react)
+              (PP (IN:[976..980] with)
+                (NP
+                  (NP (NN:[981..986] mouse) (NNS:[987..992] cells))
+                  (VP (VBN:[993..1004] transfected)
+                    (NP (-NONE-:[1004..1004] *))
+                    (PP (IN:[1006..1010] with)
+                      (NP
+                        (NP (JJ:[1011..1024] complementary)
+                            (NN:[1025..1028] DNA))
+                        (VP (VBG:[1029..1042] corresponding)
+                          (PP (TO:[1043..1045] to)
+                            (NP
+                              (NP (DT:[1046..1049] the)
+                                (ADJP (NN:[1050..1054] 12E7)
+                                      (HYPH:[1054..1055] -)
+                                      (VBG:[1055..1061] coding))
+                                (NN:[1062..1066] gene))
+                              (,:[1066..1067] ,)
+                              (NP (NN:[1068..1072] MIC2)))))))))))
+            (,:[1072..1073] ,) (CC:[1074..1077] and)
+            (VP
+              (LST (LS:[1078..1081] -LRB-c-RRB-))
+              (VBP:[1082..1086] give)
+              (NP
+                (NP (JJ:[1088..1095] similar) (NNS:[1096..1104] patterns))
+                (PP (IN:[1105..1107] of)
+                  (NP
+                    (NP (NN:[1108..1118] reactivity))
+                    (PP (IN:[1119..1123] with)
+                      (NP
+                        (NP (JJ:[1124..1129] human) (NN:[1130..1135] tumor)
+                            (NN:[1136..1140] cell) (NNS:[1141..1146] lines))
+                        (CC:[1147..1150] and)
+                        (NP
+                          (NML (JJ:[1151..1156] small) (JJ:[1157..1162] round)
+                               (NN:[1163..1167] cell) (NN:[1169..1174] tumor))
+                          (NNS:[1175..1182] tissues))))))))))))
+    (.:[1182..1183] .)))
+
+;sentence 8 Span:1184..1434
+;Thus, HBA71 and 12E7 are identical or closely related antigens  and the
+;available MIC2 probes will facilitate analysis of the molecular  mechanisms
+;that determine differential HBA71 expression in small round cell  tumors of
+;childhood and adolescence.
+;[1190..1195]:gene-protein:"HBA71"
+;[1200..1204]:gene-protein:"12E7"
+;[1266..1270]:gene-generic:"MIC2"
+;[1360..1365]:gene-protein:"HBA71"
+;[1380..1404]:malignancy-type:"small round cell  tumors"
+;[1408..1417]:malignancy-developmental-state:"childhood"
+;[1422..1433]:malignancy-developmental-state:"adolescence"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[1184..1188] Thus))
+      (,:[1188..1189] ,)
+      (NP-SBJ (NN:[1190..1195] HBA71) (CC:[1196..1199] and)
+              (NN:[1200..1204] 12E7))
+      (VP (VBP:[1205..1208] are)
+        (NP-PRD
+          (NP (JJ:[1209..1218] identical)
+            (NML-2 (-NONE-:[1218..1218] *P*)))
+          (CC:[1219..1221] or)
+          (NP
+            (ADJP (RB:[1222..1229] closely) (JJ:[1230..1237] related))
+            (NML-2 (NNS:[1238..1246] antigens))))))
+    (CC:[1248..1251] and)
+    (S
+      (NP-SBJ (DT:[1252..1255] the) (JJ:[1256..1265] available)
+              (NN:[1266..1270] MIC2) (NNS:[1271..1277] probes))
+      (VP (MD:[1278..1282] will)
+        (VP (VB:[1283..1293] facilitate)
+          (NP
+            (NP (NN:[1294..1302] analysis))
+            (PP (IN:[1303..1305] of)
+              (NP
+                (NP (DT:[1306..1309] the) (JJ:[1310..1319] molecular)
+                    (NNS:[1321..1331] mechanisms))
+                (SBAR
+                  (WHNP-1 (WDT:[1332..1336] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1336..1336] *T*))
+                    (VP (VBP:[1337..1346] determine)
+                      (NP (JJ:[1347..1359] differential) (NN:[1360..1365] HBA71)
+                          (NN:[1366..1376] expression))
+                      (PP-LOC (IN:[1377..1379] in)
+                        (NP
+                          (NP (JJ:[1380..1385] small) (JJ:[1386..1391] round)
+                              (NN:[1392..1396] cell) (NNS:[1398..1404] tumors))
+                          (PP (IN:[1405..1407] of)
+                            (NP (NN:[1408..1417] childhood)
+                                (CC:[1418..1421] and)
+                                (NN:[1422..1433] adolescence))))))))))))))
+    (.:[1433..1434] .)))
+
+;section 9 Span:1438..1482
+;PMID: 1988096 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1438..1442] PMID) (::[1442..1443] :) (CD:[1444..1451] 1988096)
+        (NN:[1452..1453] -LSB-) (NNP:[1453..1459] PubMed) (::[1460..1461] -)
+        (NN:[1462..1469] indexed) (IN:[1470..1473] for)
+        (NNP:[1474..1481] MEDLINE) (-RRB-:[1481..1482] -RSB-)))

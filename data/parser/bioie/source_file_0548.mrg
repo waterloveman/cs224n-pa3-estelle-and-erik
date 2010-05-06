@@ -1,0 +1,358 @@
+;PMID: 3878657
+;source_file_1926.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..54] = [t:0..54]
+;1)sentence:[e:60..195] = [t:60..195]
+;2)section:[e:199..234] = [t:199..234]
+;3)sentence:[e:238..407] = [t:238..407]
+;4)sentence:[e:408..643] = [t:408..643]
+;5)sentence:[e:644..794] = [t:644..794]
+;6)sentence:[e:796..1073] = [t:796..1073]
+;7)sentence:[e:1074..1135] = [t:1074..1135]
+;8)sentence:[e:1136..1303] = [t:1136..1303]
+;9)sentence:[e:1304..1486] = [t:1304..1486]
+;10)section:[e:1490..1534] = [t:1490..1534]
+
+;section 0 Span:0..54
+;Acta Pharmacol Toxicol (Copenh). 1985 Oct;57(4):250-4.
+(SEC
+  (FRAG (NNP:[0..4] Acta) (NNP:[5..14] Pharmacol) (NNP:[15..22] Toxicol)
+        (-LRB-:[23..24] -LRB-) (NN:[24..30] Copenh) (-RRB-:[30..31] -RRB-)
+        (.:[31..32] .) (CD:[33..37] 1985) (.:[38..44] Oct;57)
+        (-LRB-:[44..45] -LRB-) (CD:[45..46] 4) (-RRB-:[46..47] -RRB-)
+        (CD:[47..54] :250-4.)))
+
+;sentence 1 Span:60..195
+;Inhibition by methylglyoxal bis(guanylhydrazone) of drug oxidation reactions 
+;catalyzed by mouse liver microsomes in vivo and in vitro.
+;[74..108]:substance:"methylglyoxal bis(guanylhydrazone)"
+;[112..116]:substance:"drug"
+(SENT
+  (NP-HLN
+    (NP (NN:[60..70] Inhibition))
+    (PP (IN:[71..73] by)
+      (NP (NN:[74..87] methylglyoxal)
+          (NN:[88..108] bis-LRB-guanylhydrazone-RRB-)))
+    (PP (IN:[109..111] of)
+      (NP
+        (NP (NN:[112..116] drug) (NN:[117..126] oxidation)
+            (NNS:[127..136] reactions))
+        (VP (VBN:[138..147] catalyzed)
+          (NP (-NONE-:[147..147] *))
+          (PP (IN:[148..150] by)
+            (NP-LGS (NN:[151..156] mouse) (NN:[157..162] liver)
+                    (NNS:[163..173] microsomes)))
+          (ADVP
+            (ADVP (FW:[174..176] in) (FW:[177..181] vivo))
+            (CC:[182..185] and)
+            (ADVP (FW:[186..188] in) (FW:[189..194] vitro))))))
+    (.:[194..195] .)))
+
+;section 2 Span:199..234
+;Kaipainen PM, Karvonen EH, Poso HJ.
+(SEC
+  (FRAG (NNP:[199..208] Kaipainen) (NNP:[209..211] PM) (,:[211..212] ,)
+        (NNP:[213..221] Karvonen) (NNP:[222..224] EH) (,:[224..225] ,)
+        (NNP:[226..230] Poso) (NNP:[231..234] HJ.)))
+
+;sentence 3 Span:238..407
+;The activity of coumarin 7-hydroxylase (coumarin 7-hydroxylation) was
+;inhibited  in B6 mouse liver after a single injection of methylglyoxal
+;bis(guanylhydrazone  (MGBG).
+;[254..276]:cyp450:"coumarin 7-hydroxylase"
+;[278..286]:substance:"coumarin"
+;[365..398]:substance:"methylglyoxal bis(guanylhydrazone"
+;[401..405]:substance:"MGBG"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[238..241] The) (NN:[242..250] activity))
+      (PP (IN:[251..253] of)
+        (NP
+          (NP (NN:[254..262] coumarin) (NN:[263..276] 7-hydroxylase))
+          (NP (-LRB-:[277..278] -LRB-) (NN:[278..286] coumarin)
+              (NN:[287..302] 7-hydroxylation) (-RRB-:[302..303] -RRB-)))))
+    (VP (VBD:[304..307] was)
+      (VP (VBN:[308..317] inhibited)
+        (NP-1 (-NONE-:[317..317] *))
+        (PP-LOC (IN:[319..321] in)
+          (NP (NN:[322..324] B6) (NN:[325..330] mouse) (NN:[331..336] liver)))
+        (PP-TMP (IN:[337..342] after)
+          (NP
+            (NP (DT:[343..344] a) (JJ:[345..351] single)
+                (NN:[352..361] injection))
+            (PP (IN:[362..364] of)
+              (NP
+                (NP (NN:[365..378] methylglyoxal)
+                    (NN:[379..398] bis-LRB-guanylhydrazone))
+                (NP (-LRB-:[400..401] -LRB-) (NN:[401..405] MGBG)
+                    (-RRB-:[405..406] -RRB-))))))))
+    (.:[406..407] .)))
+
+;sentence 4 Span:408..643
+;The decrease in the activity in vivo was greatest (70%) one day after  the
+;drug injection and the hydroxylase activity in microsomal fraction prepared 
+;from livers of MGBG-treated B6 mice was still 25% decreased 5 days after the 
+;drug.
+;[459..462]:quantitative-value:"70%"
+;[464..467]:quantitative-value:"one"
+;[468..471]:quantitative-units:"day"
+;[483..487]:substance:"drug"
+;[506..517]:substance:"hydroxylase"
+;[575..579]:substance:"MGBG"
+;[606..609]:quantitative-value:"25%"
+;[620..621]:quantitative-value:"5"
+;[622..626]:quantitative-units:"days"
+;[638..642]:substance:"drug"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[408..411] The) (NN:[412..420] decrease))
+        (PP (IN:[421..423] in)
+          (NP (DT:[424..427] the) (NN:[428..436] activity)))
+        (ADJP (FW:[437..439] in) (FW:[440..444] vivo)))
+      (VP (VBD:[445..448] was)
+        (ADJP-PRD (JJS:[449..457] greatest)
+          (PRN (-LRB-:[458..459] -LRB-)
+            (NP (CD:[459..461] 70) (NN:[461..462] %))
+            (-RRB-:[462..463] -RRB-)))
+        (PP-TMP
+          (NP-ADV (CD:[464..467] one) (NN:[468..471] day))
+          (IN:[472..477] after)
+          (NP (DT:[479..482] the) (NN:[483..487] drug) (NN:[488..497] injection)))))
+    (CC:[498..501] and)
+    (S
+      (NP-SBJ-1
+        (NP (DT:[502..505] the) (NN:[506..517] hydroxylase)
+            (NN:[518..526] activity))
+        (PP (IN:[527..529] in)
+          (NP
+            (NP (JJ:[530..540] microsomal) (NN:[541..549] fraction))
+            (VP (VBN:[550..558] prepared)
+              (NP (-NONE-:[558..558] *))
+              (PP (IN:[560..564] from)
+                (NP
+                  (NP (NNS:[565..571] livers))
+                  (PP (IN:[572..574] of)
+                    (NP
+                      (ADJP (NN:[575..579] MGBG) (HYPH:[579..580] -)
+                            (VBN:[580..587] treated))
+                      (NN:[588..590] B6) (NNS:[591..595] mice)))))))))
+      (VP (VBD:[596..599] was)
+        (ADVP (RB:[600..605] still))
+        (NP-EXT (CD:[606..608] 25) (NN:[608..609] %))
+        (VP (VBN:[610..619] decreased)
+          (NP-1 (-NONE-:[619..619] *))
+          (PP-TMP
+            (NP-ADV (CD:[620..621] 5) (NNS:[622..626] days))
+            (IN:[627..632] after)
+            (NP (DT:[633..636] the) (NN:[638..642] drug))))))
+    (.:[642..643] .)))
+
+;sentence 5 Span:644..794
+;The amount of cytochrome P-450 also was decreased in MGBG-treated livers 
+;with the same time-dependency as the inhibition of coumarin 7-hydroxylation.
+;[658..674]:cyp450:"cytochrome P-450"
+;[697..701]:substance:"MGBG"
+;[769..777]:substance:"coumarin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[644..647] The) (NN:[648..654] amount))
+      (PP (IN:[655..657] of)
+        (NP (NN:[658..668] cytochrome) (NN:[669..674] P-450))))
+    (ADVP (RB:[675..679] also))
+    (VP (VBD:[680..683] was)
+      (VP (VBN:[684..693] decreased)
+        (NP-1 (-NONE-:[693..693] *))
+        (PP-LOC (IN:[694..696] in)
+          (NP
+            (NP
+              (ADJP (NN:[697..701] MGBG) (HYPH:[701..702] -)
+                    (VBN:[702..709] treated))
+              (NNS:[710..716] livers))
+            (PP (IN:[718..722] with)
+              (NP
+                (NP (DT:[723..726] the) (JJ:[727..731] same)
+                    (NN:[732..736] time) (HYPH:[736..737] -)
+                    (NN:[737..747] dependency))
+                (PP (IN:[748..750] as)
+                  (NP
+                    (NP (DT:[751..754] the) (NN:[755..765] inhibition))
+                    (PP (IN:[766..768] of)
+                      (NP (NN:[769..777] coumarin)
+                          (NN:[778..793] 7-hydroxylation)))))))))))
+    (.:[793..794] .)))
+
+;sentence 6 Span:796..1073
+;MGBG and its close derivative 
+;1,1'-[methylethanediylidene)dinitrilo)bis(3-aminoguanidine) (MBAG) inhibited
+;the  activity in vitro of coumarin 7-hydroxylase, benzo(a)pyrene hydroxylase
+;and  7-ethoxy 0-de-ethylase when microsomes were prepared from livers of
+;untreated B6  mice.
+;[796..800]:substance:"MGBG"
+;[815..825]:substance:"derivative"
+;[827..886]:substance:"1,1'-[methylethanediylidene)dinitrilo)bis(3-aminoguanid
+;ine)"
+;[888..892]:substance:"MBAG"
+;[930..952]:cyp450:"coumarin 7-hydroxylase"
+;[954..980]:cyp450:"benzo(a)pyrene hydroxylase"
+;[986..1008]:substance:"7-ethoxy 0-de-ethylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[796..800] MGBG))
+      (CC:[801..804] and)
+      (NP
+        (NP (PRP$:[805..808] its) (JJ:[809..814] close)
+            (NN:[815..825] derivative))
+        (NP
+          (NP
+              (NN:[827..886] 1,1'--LSB-methylethanediylidene-RRB-dinitrilo-RRB-bis-LRB-3-aminoguanidine-RRB-))
+          (NP (-LRB-:[887..888] -LRB-) (NN:[888..892] MBAG)
+              (-RRB-:[892..893] -RRB-)))))
+    (VP (VBD:[894..903] inhibited)
+      (NP
+        (NP (DT:[904..907] the) (NN:[909..917] activity))
+        (ADJP (FW:[918..920] in) (FW:[921..926] vitro))
+        (PP (IN:[927..929] of)
+          (NP
+            (NP (NN:[930..938] coumarin) (NN:[939..952] 7-hydroxylase))
+            (,:[952..953] ,)
+            (NP (NN:[954..968] benzo-LRB-a-RRB-pyrene)
+                (NN:[969..980] hydroxylase))
+            (CC:[981..984] and)
+            (NP (NN:[986..994] 7-ethoxy) (NN:[995..1008] 0-de-ethylase)))))
+      (SBAR-ADV
+        (WHADVP-1 (WRB:[1009..1013] when))
+        (S
+          (NP-SBJ-2 (NNS:[1014..1024] microsomes))
+          (VP (VBD:[1025..1029] were)
+            (VP (VBN:[1030..1038] prepared)
+              (NP-2 (-NONE-:[1038..1038] *))
+              (PP (IN:[1039..1043] from)
+                (NP
+                  (NP (NNS:[1044..1050] livers))
+                  (PP (IN:[1051..1053] of)
+                    (NP (JJ:[1054..1063] untreated) (NN:[1064..1066] B6)
+                        (NNS:[1068..1072] mice)))))
+              (ADVP-TMP-1 (-NONE-:[1072..1072] *T*)))))))
+    (.:[1072..1073] .)))
+
+;sentence 7 Span:1074..1135
+;In every case MBAG was a better inhibitor than MGBG in vitro.
+;[1088..1092]:substance:"MBAG"
+;[1106..1115]:substance:"inhibitor"
+;[1121..1125]:substance:"MGBG"
+(SENT
+  (S
+    (PP (IN:[1074..1076] In)
+      (NP (DT:[1077..1082] every) (NN:[1083..1087] case)))
+    (NP-SBJ (NN:[1088..1092] MBAG))
+    (VP (VBD:[1093..1096] was)
+      (NP-PRD
+        (NP (DT:[1097..1098] a) (JJR:[1099..1105] better)
+            (NN:[1106..1115] inhibitor))
+        (PP (IN:[1116..1120] than)
+          (NP (NN:[1121..1125] MGBG))))
+      (ADVP (FW:[1126..1128] in) (FW:[1129..1134] vitro)))
+    (.:[1134..1135] .)))
+
+;sentence 8 Span:1136..1303
+;The in vitro  inhibition of MGBG of several drug metabolizing enzymes was not
+;reversed when  microsomes were preincubated with 1 mM putrescine, spermidine
+;or spermine.
+;[1164..1168]:substance:"MGBG"
+;[1180..1205]:substance:"drug metabolizing enzymes"
+;[1263..1264]:quantitative-value:"1"
+;[1265..1267]:quantitative-units:"mM"
+;[1268..1278]:substance:"putrescine"
+;[1280..1290]:substance:"spermidine"
+;[1294..1302]:substance:"spermine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1136..1139] The)
+        (ADJP (FW:[1140..1142] in) (FW:[1143..1148] vitro))
+        (NN:[1150..1160] inhibition))
+      (PP (IN:[1161..1163] of)
+        (NP (NN:[1164..1168] MGBG)))
+      (PP (IN:[1169..1171] of)
+        (NP (JJ:[1172..1179] several)
+          
+          (ADJP (NN:[1180..1184] drug) (VBG:[1185..1197] metabolizing))
+          (NNS:[1198..1205] enzymes))))
+    (VP (VBD:[1206..1209] was) (RB:[1210..1213] not)
+      (VP (VBN:[1214..1222] reversed)
+        (NP-1 (-NONE-:[1222..1222] *))
+        (SBAR-ADV
+          (WHADVP-2 (WRB:[1223..1227] when))
+          (S
+            (NP-SBJ-3 (NNS:[1229..1239] microsomes))
+            (VP (VBD:[1240..1244] were)
+              (VP (VBN:[1245..1257] preincubated)
+                (NP-3 (-NONE-:[1257..1257] *))
+                (PP-MNR (IN:[1258..1262] with)
+                  (NP
+                    (NML (CD:[1263..1264] 1) (NN:[1265..1267] mM))
+                    (NN:[1268..1278] putrescine) (,:[1278..1279] ,)
+                     (NN:[1280..1290] spermidine) (CC:[1291..1293] or)
+                     (NN:[1294..1302] spermine)))
+                (ADVP-TMP-2 (-NONE-:[1302..1302] *T*))))))))
+    (.:[1302..1303] .)))
+
+;sentence 9 Span:1304..1486
+;These  results suggest that the anti-cancer drug, MGBG, has a severe
+;effect(s) on the  drug metabolizing system at concentrations reached during
+;the treatment of  patients with MGBG.
+;[1336..1352]:substance:"anti-cancer drug"
+;[1354..1358]:substance:"MGBG"
+;[1391..1395]:substance:"drug"
+;[1481..1485]:substance:"MGBG"
+(SENT
+  (S
+    (NP-SBJ (DT:[1304..1309] These) (NNS:[1311..1318] results))
+    (VP (VBP:[1319..1326] suggest)
+      (SBAR (IN:[1327..1331] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1332..1335] the)
+              
+              (NML (AFX:[1336..1340] anti) (HYPH:[1340..1341] -)
+                   (NN:[1341..1347] cancer))
+              (NN:[1348..1352] drug))
+            (,:[1352..1353] ,)
+            (NP (NN:[1354..1358] MGBG)))
+          (,:[1358..1359] ,)
+          (VP (VBZ:[1360..1363] has)
+            (NP
+              (NP (DT:[1364..1365] a) (JJ:[1366..1372] severe)
+                  (NN:[1373..1382] effect-LRB-s-RRB-))
+              (PP (IN:[1383..1385] on)
+                (NP (DT:[1386..1389] the)
+                  (ADJP (NN:[1391..1395] drug) (VBG:[1396..1408] metabolizing))
+                  (NN:[1409..1415] system))))
+            (PP (IN:[1416..1418] at)
+              (NP
+                (NP (NNS:[1419..1433] concentrations))
+                (VP (VBN:[1434..1441] reached)
+                  (NP (-NONE-:[1441..1441] *))
+                  (PP-TMP (IN:[1442..1448] during)
+                    (NP
+                      (NP (DT:[1449..1452] the) (NN:[1453..1462] treatment))
+                      (PP (IN:[1463..1465] of)
+                        (NP (NNS:[1467..1475] patients)))
+                      (PP (IN:[1476..1480] with)
+                        (NP (NN:[1481..1485] MGBG))))))))))))
+    (.:[1485..1486] .)))
+
+;section 10 Span:1490..1534
+;PMID: 3878657 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1490..1494] PMID) (::[1494..1495] :) (CD:[1496..1503] 3878657)
+        (NN:[1504..1505] -LSB-) (NNP:[1505..1511] PubMed) (::[1512..1513] -)
+        (NN:[1514..1521] indexed) (IN:[1522..1525] for)
+        (NNP:[1526..1534] MEDLINE-RSB-)))

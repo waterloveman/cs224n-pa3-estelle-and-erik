@@ -1,0 +1,426 @@
+;PMID: 10353750
+;source_file_1301.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..217] = [t:43..217]
+;2)section:[e:221..294] = [t:221..294]
+;3)section:[e:298..407] = [t:298..407]
+;4)sentence:[e:411..583] = [t:411..583]
+;5)sentence:[e:584..650] = [t:584..650]
+;6)sentence:[e:651..771] = [t:651..771]
+;7)sentence:[e:772..817] = [t:772..817]
+;8)sentence:[e:818..903] = [t:818..903]
+;9)sentence:[e:904..1003] = [t:904..1003]
+;10)sentence:[e:1004..1081] = [t:1004..1081]
+;11)sentence:[e:1082..1178] = [t:1082..1178]
+;12)sentence:[e:1179..1351] = [t:1179..1351]
+;13)sentence:[e:1352..1562] = [t:1352..1562]
+;14)sentence:[e:1563..1631] = [t:1563..1631]
+;15)sentence:[e:1632..1760] = [t:1632..1760]
+;16)section:[e:1764..1809] = [t:1764..1809]
+
+;section 0 Span:0..38
+;Clin Cancer Res  1999 May;5(5):1147-53
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..11] Cancer) (NNP:[12..15] Res)
+        (CD:[17..21] 1999) (NNP:[22..25] May) (::[25..26] ;) (CD:[26..27] 5)
+        (-LRB-:[27..28] -LRB-) (CD:[28..29] 5) (-RRB-:[29..30] -RRB-)
+        (::[30..31] :) (CD:[31..35] 1147) (::[35..36] -) (CD:[36..38] 53)))
+
+;sentence 1 Span:43..217
+;Detection of mutations of p53 tumor suppressor gene in pancreatic juice and
+;its  application to diagnosis of patients with pancreatic cancer: comparison
+;with  K-ras mutation.
+;[69..72]:gene-rna:"p53"
+;[166..183]:malignancy-type:"pancreatic cancer"
+;[202..207]:gene-rna:"K-ras"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NP (NN:[43..52] Detection))
+        (PP (IN:[53..55] of)
+          (NP
+            (NP (NNS:[56..65] mutations))
+            (PP (IN:[66..68] of)
+              (NP (NN:[69..72] p53)
+                (NML (NN:[73..78] tumor) (NN:[79..89] suppressor))
+                (NN:[90..94] gene)))))
+        (PP-LOC (IN:[95..97] in)
+          (NP (JJ:[98..108] pancreatic) (NN:[109..114] juice))))
+      (CC:[115..118] and)
+      (NP
+        (NP (PRP$:[119..122] its) (NN:[124..135] application))
+        (PP (TO:[136..138] to)
+          (NP
+            (NP (NN:[139..148] diagnosis))
+            (PP (IN:[149..151] of)
+              (NP
+                (NP (NNS:[152..160] patients))
+                (PP (IN:[161..165] with)
+                  (NP (JJ:[166..176] pancreatic) (NN:[177..183] cancer)))))))))
+    (::[183..184] :)
+    (NP
+      (NP (NN:[185..195] comparison))
+      (PP (IN:[196..200] with)
+        (NP (NN:[202..207] K-ras) (NN:[208..216] mutation))))
+    (.:[216..217] .)))
+
+;section 2 Span:221..294
+;Yamaguchi Y, Watanabe H, Yrdiran S, Ohtsubo K, Motoo Y, Okai T, Sawabu N.
+(SEC
+  (FRAG (NNP:[221..230] Yamaguchi) (NNP:[231..232] Y) (,:[232..233] ,)
+        (NNP:[234..242] Watanabe) (NNP:[243..245] H,) (NNP:[246..253] Yrdiran)
+        (NNP:[254..255] S) (,:[255..256] ,) (NNP:[257..264] Ohtsubo)
+        (NNP:[265..267] K,) (NNP:[268..273] Motoo) (NNP:[274..275] Y)
+        (,:[275..276] ,) (NNP:[277..281] Okai) (NNP:[282..283] T)
+        (,:[283..284] ,) (NNP:[285..291] Sawabu) (NNP:[292..293] N)
+        (.:[293..294] .)))
+
+;section 3 Span:298..407
+;Department of Internal Medicine and Medical Oncology, Cancer Research
+;Institute,  Kanazawa University, Japan.
+(SEC
+  (FRAG (NNP:[298..308] Department) (IN:[309..311] of) (NNP:[312..320] Internal)
+        (NNP:[321..329] Medicine) (CC:[330..333] and) (NNP:[334..341] Medical)
+        (NNP:[342..350] Oncology) (,:[350..351] ,) (NNP:[352..358] Cancer)
+        (NNP:[359..367] Research) (NNP:[368..377] Institute) (,:[377..378] ,)
+        (NNP:[380..388] Kanazawa) (NNP:[389..399] University) (,:[399..400] ,)
+        (NNP:[401..406] Japan) (.:[406..407] .)))
+
+;sentence 4 Span:411..583
+;Because of the difficulty in obtaining biopsy specimens from pancreatic
+;cancer  patients, K-ras mutation analysis in pancreatic juice has been used
+;for specific  diagnosis.
+;[472..489]:malignancy-type:"pancreatic cancer"
+;[501..506]:gene-rna:"K-ras"
+(SENT
+  (S
+    (PP (IN:[411..418] Because) (IN:[419..421] of)
+      (NP
+        (NP (DT:[422..425] the) (NN:[426..436] difficulty))
+        (PP (IN:[437..439] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[439..439] *))
+            (VP (VBG:[440..449] obtaining)
+              (NP (NN:[450..456] biopsy) (NNS:[457..466] specimens))
+              (PP (IN:[467..471] from)
+                (NP
+                  (NML (JJ:[472..482] pancreatic) (NN:[483..489] cancer))
+                  (NNS:[491..499] patients))))))))
+    (,:[499..500] ,)
+    (NP-SBJ-1
+      (NP
+        (NML (NN:[501..506] K-ras) (NN:[507..515] mutation))
+        (NN:[516..524] analysis))
+      (PP-LOC (IN:[525..527] in)
+        (NP (JJ:[528..538] pancreatic) (NN:[539..544] juice))))
+    (VP (VBZ:[545..548] has)
+      (VP (VBN:[549..553] been)
+        (VP (VBN:[554..558] used)
+          (NP-1 (-NONE-:[558..558] *))
+          (PP (IN:[559..562] for)
+            (NP (JJ:[563..571] specific) (NN:[573..582] diagnosis))))))
+    (.:[582..583] .)))
+
+;sentence 5 Span:584..650
+;But recently, false positives have been obtained with this method.
+(SENT
+  (S (IN:[584..587] But)
+    (ADVP-TMP (RB:[588..596] recently))
+    (,:[596..597] ,)
+    (NP-SBJ-1 (JJ:[598..603] false) (NNS:[604..613] positives))
+    (VP (VBP:[614..618] have)
+      (VP (VBN:[619..623] been)
+        (VP (VBN:[624..632] obtained)
+          (NP-1 (-NONE-:[632..632] *))
+          (PP-MNR (IN:[633..637] with)
+            (NP (DT:[638..642] this) (NN:[643..649] method))))))
+    (.:[649..650] .)))
+
+;sentence 6 Span:651..771
+;To  improve the genetic diagnosis of pancreatic cancer, detection of p53 gene
+; mutation in pancreatic juice was studied.
+;[688..705]:malignancy-type:"pancreatic cancer"
+;[720..723]:gene-rna:"p53"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[651..651] *))
+      (VP (TO:[651..653] To)
+        (VP (VB:[655..662] improve)
+          (NP
+            (NP (DT:[663..666] the) (JJ:[667..674] genetic)
+                (NN:[675..684] diagnosis))
+            (PP (IN:[685..687] of)
+              (NP (JJ:[688..698] pancreatic) (NN:[699..705] cancer)))))))
+    (,:[705..706] ,)
+    (NP-SBJ-1
+      (NP (NN:[707..716] detection))
+      (PP (IN:[717..719] of)
+        (NP (NN:[720..723] p53) (NN:[724..728] gene) (NN:[730..738] mutation)))
+      (PP-LOC (IN:[739..741] in)
+        (NP (JJ:[742..752] pancreatic) (NN:[753..758] juice))))
+    (VP (VBD:[759..762] was)
+      (VP (VBN:[763..770] studied)
+        (NP-1 (-NONE-:[770..770] *))))
+    (.:[770..771] .)))
+
+;sentence 7 Span:772..817
+;Pancreatic juice was sampled  endoscopically.
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[772..782] Pancreatic) (NN:[783..788] juice))
+    (VP (VBD:[789..792] was)
+      (VP (VBN:[793..800] sampled)
+        (NP-1 (-NONE-:[800..800] *))
+        (ADVP-MNR (RB:[802..816] endoscopically))))
+    (.:[816..817] .)))
+
+;sentence 8 Span:818..903
+;Single-strand conformation polymorphism analysis was used for  p53 mutation
+;analysis.
+;[881..884]:gene-rna:"p53"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML
+        (NML (JJ:[818..824] Single) (HYPH:[824..825] -) (NN:[825..831] strand))
+        (NN:[832..844] conformation) (NN:[845..857] polymorphism))
+      (NN:[858..866] analysis))
+    (VP (VBD:[867..870] was)
+      (VP (VBN:[871..875] used)
+        (NP-1 (-NONE-:[875..875] *))
+        (PP (IN:[876..879] for)
+          (NP
+            (NML (NN:[881..884] p53) (NN:[885..893] mutation))
+            (NN:[894..902] analysis)))))
+    (.:[902..903] .)))
+
+;sentence 9 Span:904..1003
+;Furthermore, K-ras mutations at codon 12 were also  studied in the same
+;pancreatic cancer patients.
+;[917..922]:gene-rna:"K-ras"
+;[923..932]:variation-event:"mutations"
+;[936..944]:variation-location:"codon 12"
+;[976..993]:malignancy-type:"pancreatic cancer"
+(SENT
+  (S
+    (ADVP (RB:[904..915] Furthermore))
+    (,:[915..916] ,)
+    (NP-SBJ-1
+      (NP (NN:[917..922] K-ras) (NNS:[923..932] mutations))
+      (PP-LOC (IN:[933..935] at)
+        (NP (NN:[936..941] codon) (CD:[942..944] 12))))
+    (VP (VBD:[945..949] were)
+      (ADVP (RB:[950..954] also))
+      (VP (VBN:[956..963] studied)
+        (NP-1 (-NONE-:[963..963] *))
+        (PP (IN:[964..966] in)
+          (NP (DT:[967..970] the) (JJ:[971..975] same)
+            (NML (JJ:[976..986] pancreatic) (NN:[987..993] cancer))
+            (NNS:[994..1002] patients)))))
+    (.:[1002..1003] .)))
+
+;sentence 10 Span:1004..1081
+;Of 26 cases of pancreatic  cancer, p53 mutations were detected in 11
+;(42.3%).
+;[1019..1037]:malignancy-type:"pancreatic  cancer"
+;[1039..1042]:gene-rna:"p53"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[1004..1006] Of)
+      (NP
+        (NP (CD:[1007..1009] 26) (NNS:[1010..1015] cases))
+        (PP (IN:[1016..1018] of)
+          (NP (JJ:[1019..1029] pancreatic) (NN:[1031..1037] cancer)))))
+    (,:[1037..1038] ,)
+    (NP-SBJ-2 (NN:[1039..1042] p53) (NNS:[1043..1052] mutations))
+    (VP (VBD:[1053..1057] were)
+      (VP (VBN:[1058..1066] detected)
+        (NP-2 (-NONE-:[1066..1066] *))
+        (PP (IN:[1067..1069] in)
+          (NP
+            (NP (CD:[1070..1072] 11)
+              (PRN (-LRB-:[1073..1074] -LRB-)
+                (NP (CD:[1074..1078] 42.3) (NN:[1078..1079] %))
+                (-RRB-:[1079..1080] -RRB-)))
+            (PP-1 (-NONE-:[1080..1080] *T*))))))
+    (.:[1080..1081] .)))
+
+;sentence 11 Span:1082..1178
+;No mutations were seen in the  cases with mucin-producing adenoma nor with
+;chronic pancreatitis.
+;[1124..1129]:gene-protein:"mucin"
+;[1140..1147]:malignancy-type:"adenoma"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1082..1084] No) (NNS:[1085..1094] mutations))
+    (VP (VBD:[1095..1099] were)
+      (VP (VBN:[1100..1104] seen)
+        (NP-1 (-NONE-:[1104..1104] *))
+        (PP (IN:[1105..1107] in)
+          (NP
+            (NP (DT:[1108..1111] the) (NNS:[1113..1118] cases))
+            (PP
+              (PP (IN:[1119..1123] with)
+                (NP
+                  (ADJP (NN:[1124..1129] mucin) (HYPH:[1129..1130] -)
+                        (VBG:[1130..1139] producing))
+                  (NN:[1140..1147] adenoma)))
+              (CC:[1148..1151] nor)
+              (PP (IN:[1152..1156] with)
+                (NP (JJ:[1157..1164] chronic) (NN:[1165..1177] pancreatitis))))))))
+    (.:[1177..1178] .)))
+
+;sentence 12 Span:1179..1351
+;K-ras  mutations were detected in 84.0% of cases by RFLP analysis, which has
+;high  sensitivity, and in 65.3% by hybridization protection assay, which has
+;high  specificity.
+;[1179..1184]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1179..1184] K-ras) (NNS:[1186..1195] mutations))
+    (VP (VBD:[1196..1200] were)
+      (VP
+        (VP (VBN:[1201..1209] detected)
+          (NP-1 (-NONE-:[1209..1209] *))
+          (PP=4 (IN:[1210..1212] in)
+            (NP
+              (NP (CD:[1213..1217] 84.0) (NN:[1217..1218] %))
+              (PP (IN:[1219..1221] of)
+                (NP (NNS:[1222..1227] cases)))))
+          (PP-MNR=5 (IN:[1228..1230] by)
+            (NP
+              (NP (NN:[1231..1235] RFLP) (NN:[1236..1244] analysis))
+              (,:[1244..1245] ,)
+              (SBAR
+                (WHNP-3 (WDT:[1246..1251] which))
+                (S
+                  (NP-SBJ-3 (-NONE-:[1251..1251] *T*))
+                  (VP (VBZ:[1252..1255] has)
+                    (NP (JJ:[1256..1260] high) (NN:[1262..1273] sensitivity))))))))
+        (,:[1273..1274] ,) (CC:[1275..1278] and)
+        (VP
+          (PP=4 (IN:[1279..1281] in)
+            (NP (CD:[1282..1286] 65.3) (NN:[1286..1287] %)))
+          (PP-MNR=5 (IN:[1288..1290] by)
+            (NP
+              (NP
+                (NML (NN:[1291..1304] hybridization)
+                     (NN:[1305..1315] protection))
+                (NN:[1316..1321] assay))
+              (,:[1321..1322] ,)
+              (SBAR
+                (WHNP-2 (WDT:[1323..1328] which))
+                (S
+                  (NP-SBJ-2 (-NONE-:[1328..1328] *T*))
+                  (VP (VBZ:[1329..1332] has)
+                    (NP (JJ:[1333..1337] high) (NN:[1339..1350] specificity))))))))))
+    (.:[1350..1351] .)))
+
+;sentence 13 Span:1352..1562
+;Using a combination assay with both genes, genetic abnormalities  were
+;detected in 92.0% by RFLP and 73.1% by hybridization protection assay 
+;including two cases in which p53 alone was positive by both methods.
+;[1523..1526]:gene-rna:"p53"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[1352..1352] *))
+      (VP (VBG:[1352..1357] Using)
+        (NP (DT:[1358..1359] a) (NN:[1360..1371] combination)
+            (NN:[1372..1377] assay))
+        (PP (IN:[1378..1382] with)
+          (NP (DT:[1383..1387] both) (NNS:[1388..1393] genes)))))
+    (,:[1393..1394] ,)
+    (NP-SBJ-1 (JJ:[1395..1402] genetic) (NNS:[1403..1416] abnormalities))
+    (VP (VBD:[1418..1422] were)
+      (VP
+        (VP (VBN:[1423..1431] detected)
+          (NP-1 (-NONE-:[1431..1431] *))
+          (PP (IN:[1432..1434] in)
+            (NP=2 (CD:[1435..1439] 92.0) (NN:[1439..1440] %)))
+          (PP-MNR=3 (IN:[1441..1443] by)
+            (NP (NN:[1444..1448] RFLP))))
+        (CC:[1449..1452] and)
+        (VP
+          (NP=2 (CD:[1453..1457] 73.1) (NN:[1457..1458] %))
+          (PP-MNR=3 (IN:[1459..1461] by)
+            (NP
+              (NML (NN:[1462..1475] hybridization) (NN:[1476..1486] protection))
+              (NN:[1487..1492] assay))))
+        (PP (VBG:[1494..1503] including)
+          (NP
+            (NP (CD:[1504..1507] two) (NNS:[1508..1513] cases))
+            (SBAR
+              (WHPP-4 (IN:[1514..1516] in)
+                (WHNP (WDT:[1517..1522] which)))
+              (S
+                (NP-SBJ
+                  (NP (NN:[1523..1526] p53))
+                  (ADJP (RB:[1527..1532] alone)))
+                (VP (VBD:[1533..1536] was)
+                  (ADJP-PRD (JJ:[1537..1545] positive))
+                  (PP-MNR (IN:[1546..1548] by)
+                    (NP (DT:[1549..1553] both) (NNS:[1554..1561] methods)))
+                  (PP-4 (-NONE-:[1561..1561] *T*)))))))))
+    (.:[1561..1562] .)))
+
+;sentence 14 Span:1563..1631
+;The  specificity of p53 mutation for pancreatic cancer is very high.
+;[1583..1586]:gene-rna:"p53"
+;[1600..1617]:malignancy-type:"pancreatic cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1563..1566] The) (NN:[1568..1579] specificity))
+      (PP (IN:[1580..1582] of)
+        (NP (NN:[1583..1586] p53) (NN:[1587..1595] mutation)))
+      (PP (IN:[1596..1599] for)
+        (NP (JJ:[1600..1610] pancreatic) (NN:[1611..1617] cancer))))
+    (VP (VBZ:[1618..1620] is)
+      (ADJP-PRD (RB:[1621..1625] very) (JJ:[1626..1630] high)))
+    (.:[1630..1631] .)))
+
+;sentence 15 Span:1632..1760
+;Therefore,  simultaneous analysis of p53 and K-ras mutation is suggested to
+;enhance the  genetic diagnosis of pancreatic cancer.
+;[1669..1672]:gene-rna:"p53"
+;[1677..1682]:gene-rna:"K-ras"
+;[1742..1759]:malignancy-type:"pancreatic cancer"
+(SENT
+  (S
+    (ADVP (RB:[1632..1641] Therefore))
+    (,:[1641..1642] ,)
+    (NP-SBJ-2
+      (NP (JJ:[1644..1656] simultaneous) (NN:[1657..1665] analysis))
+      (PP (IN:[1666..1668] of)
+        (NP
+          (NP (NN:[1669..1672] p53)
+            (NML-1 (-NONE-:[1672..1672] *P*)))
+          (CC:[1673..1676] and)
+          (NP (NN:[1677..1682] K-ras)
+            (NML-1 (NN:[1683..1691] mutation))))))
+    (VP (VBZ:[1692..1694] is)
+      (VP (VBN:[1695..1704] suggested)
+        (S
+          (NP-SBJ-2 (-NONE-:[1704..1704] *))
+          (VP (TO:[1705..1707] to)
+            (VP (VB:[1708..1715] enhance)
+              (NP
+                (NP (DT:[1716..1719] the) (JJ:[1721..1728] genetic)
+                    (NN:[1729..1738] diagnosis))
+                (PP (IN:[1739..1741] of)
+                  (NP (JJ:[1742..1752] pancreatic) (NN:[1753..1759] cancer)))))))))
+    (.:[1759..1760] .)))
+
+;section 16 Span:1764..1809
+;PMID: 10353750 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1764..1768] PMID) (::[1768..1769] :) (CD:[1770..1778] 10353750)
+        (NN:[1779..1780] -LSB-) (NNP:[1780..1786] PubMed) (::[1787..1788] -)
+        (NN:[1789..1796] indexed) (IN:[1797..1800] for)
+        (NNP:[1801..1809] MEDLINE-RSB-)))

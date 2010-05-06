@@ -1,0 +1,527 @@
+;PMID: 2766464
+;source_file_1020.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..262] = [t:45..262]
+;2)section:[e:266..351] = [t:266..351]
+;3)section:[e:355..475] = [t:355..475]
+;4)sentence:[e:479..707] = [t:479..707]
+;5)sentence:[e:708..1156] = [t:708..1156]
+;6)sentence:[e:1157..1332] = [t:1157..1332]
+;7)sentence:[e:1333..1481] = [t:1333..1481]
+;8)sentence:[e:1482..1633] = [t:1482..1633]
+;9)sentence:[e:1634..1792] = [t:1634..1792]
+;10)sentence:[e:1793..2008] = [t:1793..2008]
+;11)sentence:[e:2009..2108] = [t:2009..2108]
+;12)section:[e:2112..2156] = [t:2112..2155]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:2112..2156][t:2112..2155]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[2155..2156] ]
+
+;section 0 Span:0..39
+;Carcinogenesis. 1989 Sep;10(9):1719-24.
+(SEC
+  (FRAG (NNP:[0..14] Carcinogenesis) (,:[14..15] .) (CD:[16..20] 1989)
+        (::[21..28] Sep;10-LRB-) (CD:[28..29] 9) (-RRB-:[29..30] -RRB-)
+        (CD:[30..35] :1719) (::[35..36] -) (CD:[36..38] 24) (.:[38..39] .)))
+
+;sentence 1 Span:45..262
+;Lack of promoting effect of clonazepam on the development of 
+;N-nitrosodiethylamine-initiated hepatocellular tumors in mice is correlated
+;with  its inability to inhibit cell-to-cell communication in mouse
+;hepatocytes.
+;[73..83]:substance:"clonazepam"
+;[107..128]:substance:"N-nitrosodiethylamine"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (NN:[45..49] Lack))
+      (PP (IN:[50..52] of)
+        (NP
+          (NP (VBG:[53..62] promoting) (NN:[63..69] effect))
+          (PP (IN:[70..72] of)
+            (NP (NN:[73..83] clonazepam)))
+          (PP (IN:[84..86] on)
+            (NP
+              (NP (DT:[87..90] the) (NN:[91..102] development))
+              (PP (IN:[103..105] of)
+                (NP
+                  (ADJP (NN:[107..128] N-nitrosodiethylamine)
+                        (HYPH:[128..129] -) (VBN:[129..138] initiated))
+                  (JJ:[139..153] hepatocellular) (NNS:[154..160] tumors)))
+              (PP-LOC (IN:[161..163] in)
+                (NP (NNS:[164..168] mice))))))))
+    (VP (VBZ:[169..171] is)
+      (VP (JJ:[172..182] correlated)
+        (NP-1 (-NONE-:[182..182] *))
+        (PP-CLR (IN:[183..187] with)
+          (NP (PRP$:[189..192] its) (NN:[193..202] inability)
+            (S
+              (NP-SBJ (-NONE-:[202..202] *))
+              (VP (TO:[203..205] to)
+                (VP (VB:[206..213] inhibit)
+                  (NP
+                    (NML
+                      (NML (NN:[214..218] cell))
+                      (HYPH:[218..219] -)
+                      (PP (TO:[219..221] to) (HYPH:[221..222] -)
+                        (NP (NN:[222..226] cell))))
+                    (NN:[227..240] communication))
+                  (PP-LOC (IN:[241..243] in)
+                    (NP (NN:[244..249] mouse) (NNS:[250..261] hepatocytes))))))))))
+    (.:[261..262] .)))
+
+;section 2 Span:266..351
+;Diwan BA, Lubet RA, Nims RW, Klaunig JE, Weghorst CM, Henneman JR, Ward JM,
+;Rice  JM.
+(SEC
+  (FRAG (NNP:[266..271] Diwan) (NNP:[272..274] BA) (,:[274..275] ,)
+        (NNP:[276..281] Lubet) (NNP:[282..284] RA) (,:[284..285] ,)
+        (NNP:[286..290] Nims) (NNP:[291..293] RW) (,:[293..294] ,)
+        (NNP:[295..302] Klaunig) (NNP:[303..305] JE) (,:[305..306] ,)
+        (NNP:[307..315] Weghorst) (NNP:[316..318] CM) (,:[318..319] ,)
+        (NNP:[320..328] Henneman) (NNP:[329..331] JR) (,:[331..332] ,)
+        (NNP:[333..337] Ward) (NNP:[338..340] JM) (,:[340..341] ,)
+        (NNP:[342..346] Rice) (NNPS:[348..350] JM) (.:[350..351] .)))
+
+;section 3 Span:355..475
+;Biological Carcinogenesis and Development Program Resources, Inc., National 
+;Cancer Institute, Frederick, MD 21701-1013.
+(SEC
+  (FRAG (NNP:[355..365] Biological) (NNP:[366..380] Carcinogenesis)
+        (CC:[381..384] and) (NNP:[385..396] Development)
+        (NNP:[397..404] Program) (NNPS:[405..414] Resources) (,:[414..415] ,)
+        (NNP:[416..420] Inc.) (,:[420..421] ,) (NNP:[422..430] National)
+        (NNP:[432..438] Cancer) (NNP:[439..448] Institute) (,:[448..449] ,)
+        (NNP:[450..459] Frederick) (,:[459..460] ,) (NNP:[461..463] MD)
+        (CD:[464..469] 21701) (::[469..470] -) (CD:[470..474] 1013)
+        (.:[474..475] .)))
+
+;sentence 4 Span:479..707
+;The tumor-promoting ability of clonazepam (CZP), a widely used benzodiazepine
+; anticonvulsant, was investigated in an in vivo mouse liver tumor promotion
+;assay  and an in vitro mouse hepatocyte intercellular communication assay.
+;[510..520]:substance:"clonazepam"
+;[522..525]:substance:"CZP"
+;[542..572]:substance:"benzodiazepine  anticonvulsant"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[479..482] The)
+        (ADJP (NN:[483..488] tumor) (HYPH:[488..489] -)
+              (VBG:[489..498] promoting))
+        (NN:[499..506] ability))
+      (PP (IN:[507..509] of)
+        (NP
+          (NP
+            (NP (NN:[510..520] clonazepam))
+            (NP (-LRB-:[521..522] -LRB-) (NN:[522..525] CZP)
+                (-RRB-:[525..526] -RRB-)))
+          (,:[526..527] ,)
+          (NP (DT:[528..529] a)
+            (ADJP (RB:[530..536] widely) (VBN:[537..541] used))
+             (NN:[542..556] benzodiazepine) (NN:[558..572] anticonvulsant)))))
+    (,:[572..573] ,)
+    (VP (VBD:[574..577] was)
+      (VP (VBN:[578..590] investigated)
+        (NP-1 (-NONE-:[590..590] *))
+        (PP (IN:[591..593] in)
+          (NP
+            (NP (DT:[594..596] an)
+              (ADJP (FW:[597..599] in) (FW:[600..604] vivo))
+              (NML (NN:[605..610] mouse) (NN:[611..616] liver))
+              (NML (NN:[617..622] tumor) (NN:[623..632] promotion))
+              (NN:[633..638] assay))
+            (CC:[640..643] and)
+            (NP (DT:[644..646] an)
+              (ADJP (FW:[647..649] in) (FW:[650..655] vitro))
+              (NML (NN:[656..661] mouse) (NN:[662..672] hepatocyte))
+              (NML (JJ:[673..686] intercellular) (NN:[687..700] communication))
+              (NN:[701..706] assay))))))
+    (.:[706..707] .)))
+
+;sentence 5 Span:708..1156
+;The  development of preneoplastic hepatocellular foci of cellular alteration
+;and  hepatocellular neoplasms was studied in male B6C3F1 mice initiated, at 5
+;weeks  of age, with a single i.p. injection of N-nitrosodiethylamine (NDEA;
+;90 mg/kg  body weight) in tricaprylin, followed by administration of either
+;phenobarbital  (PB; 0.05%) or CZP (0.068% or 0.136%) in diet beginning 2
+;weeks after carcinogen  injection and continuing to 60 weeks of age.
+;[861..862]:quantitative-value:"5"
+;[863..868]:quantitative-units:"weeks"
+;[910..931]:substance:"N-nitrosodiethylamine"
+;[933..937]:substance:"NDEA"
+;[939..941]:quantitative-value:"90"
+;[942..960]:quantitative-units:"mg/kg  body weight"
+;[965..976]:substance:"tricaprylin"
+;[1015..1028]:substance:"phenobarbital"
+;[1031..1033]:substance:"PB"
+;[1035..1040]:quantitative-value:"0.05%"
+;[1045..1048]:substance:"CZP"
+;[1050..1056]:quantitative-value:"0.068%"
+;[1060..1066]:quantitative-value:"0.136%"
+;[1086..1087]:quantitative-value:"2"
+;[1088..1093]:quantitative-units:"weeks"
+;[1100..1110]:substance:"carcinogen"
+;[1140..1142]:quantitative-value:"60"
+;[1143..1148]:quantitative-units:"weeks"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[708..711] The) (NN:[713..724] development))
+      (PP (IN:[725..727] of)
+        (NP
+          (NP
+            (NP (JJ:[728..741] preneoplastic) (JJ:[742..756] hepatocellular)
+                (NNS:[757..761] foci))
+            (PP (IN:[762..764] of)
+              (NP (JJ:[765..773] cellular) (NN:[774..784] alteration))))
+          (CC:[785..788] and)
+          (NP (JJ:[790..804] hepatocellular) (NNS:[805..814] neoplasms)))))
+    (VP (VBD:[815..818] was)
+      (VP (VBN:[819..826] studied)
+        (NP-1 (-NONE-:[826..826] *))
+        (PP-LOC (IN:[827..829] in)
+          (NP
+            (NP (JJ:[830..834] male) (NN:[835..841] B6C3F1)
+                (NNS:[842..846] mice))
+            (VP (VBN:[847..856] initiated)
+              (NP (-NONE-:[856..856] *))
+              (,:[856..857] ,)
+              (PP-TMP (IN:[858..860] at)
+                (NP
+                  (NP (CD:[861..862] 5) (NNS:[863..868] weeks))
+                  (PP (IN:[870..872] of)
+                    (NP (NN:[873..876] age)))))
+              (,:[876..877] ,)
+              (PP-MNR (IN:[878..882] with)
+                (NP
+                  (NP
+                    (NP (DT:[883..884] a) (JJ:[885..891] single)
+                        (NN:[892..896] i.p.) (NN:[897..906] injection))
+                    (PP (IN:[907..909] of)
+                      (NP
+                        (NP
+                          (NP (NN:[910..931] N-nitrosodiethylamine))
+                          (NP (-LRB-:[932..933] -LRB-) (NN:[933..937] NDEA))
+                          (PRN (::[937..938] ;)
+                            (NP
+                              (NP (CD:[939..941] 90) (NN:[942..944] mg))
+                              (PP (SYM:[944..945] /)
+                                (NP (NN:[945..947] kg) (NN:[949..953] body)
+                                    (NN:[954..960] weight))))
+                            (-RRB-:[960..961] -RRB-)))
+                        (PP (IN:[962..964] in)
+                          (NP (NN:[965..976] tricaprylin))))))
+                  (,:[976..977] ,)
+                  (VP (VBN:[978..986] followed)
+                    (NP (-NONE-:[986..986] *))
+                    (PP (IN:[987..989] by)
+                      (NP-LGS
+                        (NP
+                          (NP (NN:[990..1004] administration))
+                          (PP (IN:[1005..1007] of)
+                            (NP (CC:[1008..1014] either)
+                              (NP
+                                (NP (NN:[1015..1028] phenobarbital))
+                                (NP (-LRB-:[1030..1031] -LRB-)
+                                    (NN:[1031..1033] PB))
+                                (::[1033..1034] ;)
+                                (PRN
+                                  (NP (CD:[1035..1039] 0.05) (NN:[1039..1040] %))
+                                  (-RRB-:[1040..1041] -RRB-)))
+                              (CC:[1042..1044] or)
+                              (NP (NN:[1045..1048] CZP)
+                                (PRN (-LRB-:[1049..1050] -LRB-)
+                                  (NP
+                                    (NP (CD:[1050..1055] 0.068)
+                                        (NN:[1055..1056] %))
+                                    (CC:[1057..1059] or)
+                                    (NP (CD:[1060..1065] 0.136)
+                                        (NN:[1065..1066] %)))
+                                  (-RRB-:[1066..1067] -RRB-)))))
+                          (PP (IN:[1068..1070] in)
+                            (NP (NN:[1071..1075] diet))))
+                        (VP
+                          (VP (VBG:[1076..1085] beginning)
+                            (NP-TMP
+                              (NP (CD:[1086..1087] 2) (NNS:[1088..1093] weeks))
+                              (PP (IN:[1094..1099] after)
+                                (NP (NN:[1100..1110] carcinogen)
+                                    (NN:[1112..1121] injection)))))
+                          (CC:[1122..1125] and)
+                          (VP (VBG:[1126..1136] continuing)
+                            (PP-TMP (TO:[1137..1139] to)
+                              (NP
+                                (NP (CD:[1140..1142] 60)
+                                    (NNS:[1143..1148] weeks))
+                                (PP (IN:[1149..1151] of)
+                                  (NP (NN:[1152..1155] age)))))))))))))))))
+    (.:[1155..1156] .)))
+
+;sentence 6 Span:1157..1332
+;Several mice from each group were  killed after 9, 21, 33 or 53 weeks on test
+;diet, and portions of liver and other  organs were fixed in formalin and
+;examined histologically.
+;[1205..1206]:quantitative-value:"9"
+;[1208..1210]:quantitative-value:"21"
+;[1212..1214]:quantitative-value:"33"
+;[1218..1220]:quantitative-value:"53"
+;[1221..1226]:quantitative-units:"weeks"
+;[1295..1303]:substance:"formalin"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (JJ:[1157..1164] Several) (NNS:[1165..1169] mice))
+        (PP (IN:[1170..1174] from)
+          (NP (DT:[1175..1179] each) (NN:[1180..1185] group))))
+      (VP (VBD:[1186..1190] were)
+        (VP (VBN:[1192..1198] killed)
+          (NP-2 (-NONE-:[1198..1198] *))
+          (PP-TMP (IN:[1199..1204] after)
+            (NP
+              (NP
+                (NP (CD:[1205..1206] 9)
+                  (NML-1 (-NONE-:[1206..1206] *P*)))
+                (,:[1206..1207] ,)
+                (NP (CD:[1208..1210] 21)
+                  (NML-1 (-NONE-:[1210..1210] *P*)))
+                (,:[1210..1211] ,)
+                (NP (CD:[1212..1214] 33)
+                  (NML-1 (-NONE-:[1214..1214] *P*)))
+                (CC:[1215..1217] or)
+                (NP (CD:[1218..1220] 53)
+                  (NML-1 (NNS:[1221..1226] weeks))))
+              (PP (IN:[1227..1229] on)
+                (NP (NN:[1230..1234] test) (NN:[1235..1239] diet))))))))
+    (,:[1239..1240] ,) (CC:[1241..1244] and)
+    (S
+      (NP-SBJ-3
+        (NP (NNS:[1245..1253] portions))
+        (PP (IN:[1254..1256] of)
+          (NP
+            (NP (NN:[1257..1262] liver))
+            (CC:[1263..1266] and)
+            (NP (JJ:[1267..1272] other) (NNS:[1274..1280] organs)))))
+      (VP (VBD:[1281..1285] were)
+        (VP
+          (VP (VBN:[1286..1291] fixed)
+            (NP-3 (-NONE-:[1291..1291] *))
+            (PP (IN:[1292..1294] in)
+              (NP (NN:[1295..1303] formalin))))
+          (CC:[1304..1307] and)
+          (VP (VBN:[1308..1316] examined)
+            (NP-3 (-NONE-:[1316..1316] *))
+            (ADVP (RB:[1317..1331] histologically))))))
+    (.:[1331..1332] .)))
+
+;sentence 7 Span:1333..1481
+;Unlike PB, CZP did  not promote the development of preneoplastic
+;hepatocellular foci or neoplasms  (adenomas and carcinomas) in NDEA-initiated
+;mice.
+;[1340..1342]:substance:"PB"
+;[1344..1347]:substance:"CZP"
+;[1461..1465]:substance:"NDEA"
+(SENT
+  (S
+    (PP (IN:[1333..1339] Unlike)
+      (NP (NN:[1340..1342] PB)))
+    (,:[1342..1343] ,)
+    (NP-SBJ (NN:[1344..1347] CZP))
+    (VP (VBD:[1348..1351] did) (RB:[1353..1356] not)
+      (VP (VB:[1357..1364] promote)
+        (NP
+          (NP (DT:[1365..1368] the) (NN:[1369..1380] development))
+          (PP (IN:[1381..1383] of)
+            (NP
+              (NP (JJ:[1384..1397] preneoplastic)
+                  (JJ:[1398..1412] hepatocellular) (NNS:[1413..1417] foci))
+              (CC:[1418..1420] or)
+              (NP (NNS:[1421..1430] neoplasms)
+                (PRN (-LRB-:[1432..1433] -LRB-)
+                  (NP (NNS:[1433..1441] adenomas) (CC:[1442..1445] and)
+                      (NNS:[1446..1456] carcinomas))
+                  (-RRB-:[1456..1457] -RRB-))))))
+        (PP-LOC (IN:[1458..1460] in)
+          (NP
+            (ADJP (NN:[1461..1465] NDEA) (HYPH:[1465..1466] -)
+                  (VBN:[1466..1475] initiated))
+            (NNS:[1476..1480] mice)))))
+    (.:[1480..1481] .)))
+
+;sentence 8 Span:1482..1633
+;Following limited (2 weeks)  dietary exposure at 0.15%, CZP was a potent
+;inducer of hepatic P450IIB1-mediated  alkoxyresorufin O-dealkylase
+;activities.
+;[1501..1502]:quantitative-value:"2"
+;[1503..1508]:quantitative-units:"weeks"
+;[1531..1536]:quantitative-value:"0.15%"
+;[1538..1541]:substance:"CZP"
+;[1555..1562]:substance:"inducer"
+;[1574..1582]:cyp450:"P450IIB1"
+;[1593..1621]:substance:"alkoxyresorufin O-dealkylase"
+(SENT
+  (S
+    (PP (VBG:[1482..1491] Following)
+      (NP
+        (NP (VBN:[1492..1499] limited)
+          (PRN (-LRB-:[1500..1501] -LRB-)
+            (NP (CD:[1501..1502] 2) (NNS:[1503..1508] weeks))
+            (-RRB-:[1508..1509] -RRB-))
+          (JJ:[1511..1518] dietary) (NN:[1519..1527] exposure))
+        (PP (IN:[1528..1530] at)
+          (NP (CD:[1531..1535] 0.15) (NN:[1535..1536] %)))))
+    (,:[1536..1537] ,)
+    (NP-SBJ (NN:[1538..1541] CZP))
+    (VP (VBD:[1542..1545] was)
+      (NP-PRD
+        (NP (DT:[1546..1547] a) (JJ:[1548..1554] potent)
+            (NN:[1555..1562] inducer))
+        (PP (IN:[1563..1565] of)
+          (NP (JJ:[1566..1573] hepatic)
+            (ADJP (NN:[1574..1582] P450IIB1) (HYPH:[1582..1583] -)
+                  (VBN:[1583..1591] mediated))
+            (NML (NN:[1593..1608] alkoxyresorufin)
+                 (NN:[1609..1621] O-dealkylase))
+            (NNS:[1622..1632] activities)))))
+    (.:[1632..1633] .)))
+
+;sentence 9 Span:1634..1792
+;In contrast, the degree of induction in  hepatic tissue from mice fed 0.136%
+;CZP for 53 weeks was markedly lower than  that in mice fed 0.05% PB for 53
+;weeks.
+;[1704..1710]:quantitative-value:"0.136%"
+;[1711..1714]:substance:"CZP"
+;[1719..1721]:quantitative-value:"53"
+;[1722..1727]:quantitative-units:"weeks"
+;[1770..1775]:quantitative-value:"0.05%"
+;[1776..1778]:substance:"PB"
+;[1783..1785]:quantitative-value:"53"
+;[1786..1791]:quantitative-units:"weeks"
+(SENT
+  (S
+    (PP (IN:[1634..1636] In)
+      (NP (NN:[1637..1645] contrast)))
+    (,:[1645..1646] ,)
+    (NP-SBJ
+      (NP (DT:[1647..1650] the) (NN:[1651..1657] degree))
+      (PP (IN:[1658..1660] of)
+        (NP (NN:[1661..1670] induction)))
+      (PP-LOC (IN:[1671..1673] in)
+        (NP
+          (NP (JJ:[1675..1682] hepatic) (NN:[1683..1689] tissue))
+          (PP (IN:[1690..1694] from)
+            (NP
+              (NP (NNS:[1695..1699] mice))
+              (VP (VBN:[1700..1703] fed)
+                (NP (-NONE-:[1703..1703] *))
+                (NP
+                  (NML (CD:[1704..1709] 0.136) (NN:[1709..1710] %))
+                  (NN:[1711..1714] CZP))
+                (PP-TMP (IN:[1715..1718] for)
+                  (NP (CD:[1719..1721] 53) (NNS:[1722..1727] weeks)))))))))
+    (VP (VBD:[1728..1731] was)
+      (ADJP-PRD
+        (ADJP (RB:[1732..1740] markedly) (JJR:[1741..1746] lower))
+        (PP (IN:[1747..1751] than)
+          (NP
+            (NP (DT:[1753..1757] that))
+            (PP-LOC (IN:[1758..1760] in)
+              (NP
+                (NP (NNS:[1761..1765] mice))
+                (VP (VBD:[1766..1769] fed)
+                  (NP (-NONE-:[1769..1769] *))
+                  (NP
+                    (NML (CD:[1770..1774] 0.05) (NN:[1774..1775] %))
+                    (NN:[1776..1778] PB))
+                  (PP-TMP (IN:[1779..1782] for)
+                    (NP (CD:[1783..1785] 53) (NNS:[1786..1791] weeks))))))))))
+    (.:[1791..1792] .)))
+
+;sentence 10 Span:1793..2008
+;In the in vitro assay, diazepam, a  strong tumor promoter in mouse liver,
+;significantly inhibited mouse hepatocyte  gap junctional intercellular
+;communication, while CZP had no significant effect  on this parameter.
+;[1816..1824]:substance:"diazepam"
+;[1842..1850]:substance:"promoter"
+;[1959..1962]:substance:"CZP"
+(SENT
+  (S
+    (PP (IN:[1793..1795] In)
+      (NP (DT:[1796..1799] the)
+        (ADJP (FW:[1800..1802] in) (FW:[1803..1808] vitro))
+        (NN:[1809..1814] assay)))
+    (,:[1814..1815] ,)
+    (NP-SBJ
+      (NP (NN:[1816..1824] diazepam))
+      (,:[1824..1825] ,)
+      (NP
+        (NP (DT:[1826..1827] a) (JJ:[1829..1835] strong) (NN:[1836..1841] tumor)
+            (NN:[1842..1850] promoter))
+        (PP-LOC (IN:[1851..1853] in)
+          (NP (NN:[1854..1859] mouse) (NN:[1860..1865] liver)))))
+    (,:[1865..1866] ,)
+    (ADVP (RB:[1867..1880] significantly))
+    (VP (VBD:[1881..1890] inhibited)
+      (NP
+        (NML (NN:[1891..1896] mouse) (NN:[1897..1907] hepatocyte))
+        (ADJP (NN:[1909..1912] gap) (JJ:[1913..1923] junctional))
+        (JJ:[1924..1937] intercellular) (NN:[1938..1951] communication))
+      (,:[1951..1952] ,)
+      (SBAR-ADV (IN:[1953..1958] while)
+        (S
+          (NP-SBJ (NN:[1959..1962] CZP))
+          (VP (VBD:[1963..1966] had)
+            (NP
+              (NP (DT:[1967..1969] no) (JJ:[1970..1981] significant)
+                  (NN:[1982..1988] effect))
+              (PP (IN:[1990..1992] on)
+                (NP (DT:[1993..1997] this) (NN:[1998..2007] parameter))))))))
+    (.:[2007..2008] .)))
+
+;sentence 11 Span:2009..2108
+;Thus, CZP, a drug structurally related to diazepam, is  inactive as a liver
+;tumor promoter in mice.
+;[2015..2018]:substance:"CZP"
+;[2022..2026]:substance:"drug"
+;[2051..2059]:substance:"diazepam"
+;[2091..2099]:substance:"promoter"
+(SENT
+  (S
+    (ADVP (RB:[2009..2013] Thus))
+    (,:[2013..2014] ,)
+    (NP-SBJ
+      (NP (NN:[2015..2018] CZP))
+      (,:[2018..2019] ,)
+      (NP
+        (NP (DT:[2020..2021] a) (NN:[2022..2026] drug))
+        (VP
+          (ADVP (RB:[2027..2039] structurally))
+          (JJ:[2040..2047] related)
+          (NP (-NONE-:[2047..2047] *))
+          (PP-CLR (TO:[2048..2050] to)
+            (NP (NN:[2051..2059] diazepam))))))
+    (,:[2059..2060] ,)
+    (VP (VBZ:[2061..2063] is)
+      (ADJP-PRD (JJ:[2065..2073] inactive))
+      (PP (IN:[2074..2076] as)
+        (NP (DT:[2077..2078] a) (JJ:[2079..2084] liver) (NN:[2085..2090] tumor)
+            (NN:[2091..2099] promoter)))
+      (PP-LOC (IN:[2100..2102] in)
+        (NP (NNS:[2103..2107] mice))))
+    (.:[2107..2108] .)))
+
+;section 12 Span:2112..2155
+;PMID: 2766464 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2112..2116] PMID) (::[2116..2117] :) (CD:[2118..2125] 2766464)
+        (-LRB-:[2126..2127] -LSB-) (NNP:[2127..2133] PubMed) (::[2134..2135] -)
+        (VBN:[2136..2143] indexed) (IN:[2144..2147] for)
+        (NNP:[2148..2155] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2155..EOF] ]
+
+(ORPH -RSB-)

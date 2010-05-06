@@ -1,0 +1,316 @@
+;PMID: 1874450
+;source_file_2860.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..146] = [t:38..146]
+;2)section:[e:150..174] = [t:150..174]
+;3)section:[e:178..240] = [t:178..240]
+;4)sentence:[e:244..434] = [t:244..434]
+;5)sentence:[e:435..634] = [t:435..634]
+;6)sentence:[e:635..762] = [t:635..762]
+;7)sentence:[e:763..939] = [t:763..939]
+;8)sentence:[e:940..1078] = [t:940..1078]
+;9)sentence:[e:1079..1322] = [t:1079..1322]
+;10)section:[e:1326..1370] = [t:1326..1370]
+
+;section 0 Span:0..32
+;Gene.  1991 Jun 30;102(2):283-8.
+(SEC
+  (FRAG (NN:[0..4] Gene) (IN:[4..5] .) (CD:[7..11] 1991) (NNP:[12..15] Jun)
+        (CD:[16..18] 30) (CD:[18..23] ;102-LRB-) (CD:[23..24] 2)
+        (-RRB-:[24..25] -RRB-) (::[25..26] :) (CD:[26..29] 283) (::[29..30] -)
+        (CD:[30..32] 8.)))
+
+;sentence 1 Span:38..146
+;Isolation and analysis of a human cDNA highly homologous to the yeast gene 
+;encoding L17A ribosomal protein.
+;[123..127]:gene-protein:"L17A"
+(SENT
+  (NP-HLN
+    (NP (NN:[38..47] Isolation) (CC:[48..51] and) (NN:[52..60] analysis))
+    (PP (IN:[61..63] of)
+      (NP
+        (NP (DT:[64..65] a) (JJ:[66..71] human) (NN:[72..76] cDNA))
+        (ADJP (RB:[77..83] highly) (JJ:[84..94] homologous)
+          (PP (TO:[95..97] to)
+            (NP
+              (NP (DT:[98..101] the) (NN:[102..107] yeast) (NN:[108..112] gene))
+              (VP (VBG:[114..122] encoding)
+                (NP (NN:[123..127] L17A) (JJ:[128..137] ribosomal)
+                    (NN:[138..145] protein))))))))
+    (.:[145..146] .)))
+
+;section 2 Span:150..174
+;Berchtold MW, Berger MC.
+(SEC
+  (FRAG (NNP:[150..159] Berchtold) (NNP:[160..162] MW) (,:[162..163] ,)
+        (NNP:[164..170] Berger) (NNP:[171..173] MC) (.:[173..174] .)))
+
+;section 3 Span:178..240
+;Institut fur Pharmakologie und Biochemie, Zurich, Switzerland.
+(SEC
+  (FRAG (NNP:[178..186] Institut) (NN:[187..190] fur)
+        (NNP:[191..204] Pharmakologie) (VBD:[205..208] und)
+        (NNP:[209..218] Biochemie) (,:[218..219] ,) (NNP:[220..226] Zurich)
+        (,:[226..227] ,) (NNP:[228..239] Switzerland) (.:[239..240] .)))
+
+;sentence 4 Span:244..434
+;A cDNA from human brain poly(A)+RNA with significant similarity to the gene 
+;encoding yeast L17A large subunit ribosomal (r) protein (L17A) was isolated 
+;using the polymerase chain reaction.
+;[336..376]:gene-protein:"L17A large subunit ribosomal (r) protein"
+;[378..382]:gene-protein:"L17A"
+;[408..418]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[244..245] A) (NN:[246..250] cDNA))
+      (PP (IN:[251..255] from)
+        (NP (JJ:[256..261] human) (NN:[262..267] brain)
+            (NN:[268..275] poly-LRB-A-RRB-) (SYM:[275..276] +)
+            (NN:[276..279] RNA)))
+      (PP (IN:[280..284] with)
+        (NP
+          (NP (JJ:[285..296] significant) (NN:[297..307] similarity))
+          (PP (TO:[308..310] to)
+            (NP
+              (NP (DT:[311..314] the) (NN:[315..319] gene))
+              (VP (VBG:[321..329] encoding)
+                (NP (NN:[330..335] yeast)
+                   (NN:[336..340] L17A)
+                  (NML (JJ:[341..346] large) (NN:[347..354] subunit)
+                       (JJ:[355..364] ribosomal)
+                    (PRN (-LRB-:[365..366] -LRB-)
+                      (NP (JJ:[366..367] r))
+                      (-RRB-:[367..368] -RRB-))
+                    (NN:[369..376] protein))
+                  (PRN (-LRB-:[377..378] -LRB-)
+                    (NP (NN:[378..382] L17A))
+                    (-RRB-:[382..383] -RRB-)))))))))
+    (VP (VBD:[384..387] was)
+      (VP (VBN:[388..396] isolated)
+        (NP-1 (-NONE-:[396..396] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[396..396] *))
+          (VP (VBG:[398..403] using)
+            (NP (DT:[404..407] the) (NN:[408..418] polymerase)
+                (NN:[419..424] chain) (NN:[425..433] reaction))))))
+    (.:[433..434] .)))
+
+;sentence 5 Span:435..634
+;The deduced amino acid (aa) sequence of 140  aa (calculated pI of 10.79)
+;exhibits a 78% similarity to that of the yeast L17A  r protein (88% when
+;conservative aa replacements are considered as well).
+;[555..570]:gene-protein:"L17A  r protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[435..438] The) (VBN:[439..446] deduced)
+        (NML (JJ:[447..452] amino) (NN:[453..457] acid))
+        (NML (-LRB-:[458..459] -LRB-) (NN:[459..461] aa)
+             (-RRB-:[461..462] -RRB-))
+        (NN:[463..471] sequence))
+      (PP (IN:[472..474] of)
+        (NP (CD:[475..478] 140) (NN:[480..482] aa)
+          (PRN (-LRB-:[483..484] -LRB-)
+            (NP (VBN:[484..494] calculated) (NN:[495..497] pI))
+            (PP (IN:[498..500] of)
+              (NP (CD:[501..506] 10.79)))
+            (-RRB-:[506..507] -RRB-)))))
+    (VP (VBZ:[508..516] exhibits)
+      (NP
+        (NP (DT:[517..518] a)
+          (NML (CD:[519..521] 78) (NN:[521..522] %))
+          (NN:[523..533] similarity))
+        (PP (TO:[534..536] to)
+          (NP
+            (NP (DT:[537..541] that))
+            (PP (IN:[542..544] of)
+              (NP (DT:[545..548] the) (NN:[549..554] yeast)
+                 (NN:[555..559] L17A) (JJ:[561..562] r) (NN:[563..570] protein))))))
+      (PRN (-LRB-:[571..572] -LRB-)
+        (FRAG
+          (NP (CD:[572..574] 88) (NN:[574..575] %))
+          (SBAR
+            (WHADVP-2 (WRB:[576..580] when))
+            (S
+              (NP-SBJ-1 (JJ:[581..593] conservative) (NN:[594..596] aa)
+                        (NNS:[597..609] replacements))
+              (VP (VBP:[610..613] are)
+                (VP (VBN:[614..624] considered)
+                  (NP-1 (-NONE-:[624..624] *))
+                  (ADVP (RB:[625..627] as) (RB:[628..632] well))
+                  (ADVP-2 (-NONE-:[632..632] *T*)))))))
+        (-RRB-:[632..633] -RRB-)))
+    (.:[633..634] .)))
+
+;sentence 6 Span:635..762
+;This  indicates that L17A is one of the best conserved r-proteins and
+;therefore may  play a critical role in ribosome function.
+;[656..660]:gene-protein:"L17A"
+;[690..700]:gene-protein:"r-proteins"
+(SENT
+  (S
+    (NP-SBJ (DT:[635..639] This))
+    (VP (VBZ:[641..650] indicates)
+      (SBAR (IN:[651..655] that)
+        (S
+          (NP-SBJ (NN:[656..660] L17A))
+          (VP
+            (VP (VBZ:[661..663] is)
+              (NP-PRD
+                (NP (CD:[664..667] one))
+                (PP (IN:[668..670] of)
+                  (NP (DT:[671..674] the)
+                    (ADJP (RBS:[675..679] best) (VBN:[680..689] conserved))
+                     (JJ:[690..691] r) (HYPH:[691..692] -)
+                     (NNS:[692..700] proteins)))))
+            (CC:[701..704] and)
+            (VP
+              (ADVP (RB:[705..714] therefore))
+              (MD:[715..718] may)
+              (VP (VB:[720..724] play)
+                (NP (DT:[725..726] a) (JJ:[727..735] critical)
+                    (NN:[736..740] role))
+                (PP (IN:[741..743] in)
+                  (NP (NN:[744..752] ribosome) (NN:[753..761] function)))))))))
+    (.:[761..762] .)))
+
+;sentence 7 Span:763..939
+;In contrast to its eubacterial and  chloroplast counterparts, human L17A
+;contains an N-terminal extension of 19 aa  which may be involved in nuclear
+;targeting of the r-protein.
+;[831..835]:gene-protein:"L17A"
+;[929..938]:gene-protein:"r-protein"
+(SENT
+  (S
+    (PP (IN:[763..765] In)
+      (NP
+        (NP (NN:[766..774] contrast))
+        (PP (TO:[775..777] to)
+          (NP (PRP$:[778..781] its)
+            (NML
+              (NML (JJ:[782..793] eubacterial)
+                (NML-2 (-NONE-:[793..793] *P*)))
+              (CC:[794..797] and)
+              (NML (NN:[799..810] chloroplast)
+                (NML-2 (NNS:[811..823] counterparts))))))))
+    (,:[823..824] ,)
+    (NP-SBJ (JJ:[825..830] human) (NN:[831..835] L17A))
+    (VP (VBZ:[836..844] contains)
+      (NP
+        (NP
+          (NP (DT:[845..847] an)
+            (NML (NN:[848..849] N) (HYPH:[849..850] -) (JJ:[850..858] terminal))
+            (NN:[859..868] extension))
+          (PP (IN:[869..871] of)
+            (NP (CD:[872..874] 19) (NN:[875..877] aa))))
+        (SBAR
+          (WHNP-1 (WDT:[879..884] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[884..884] *T*))
+            (VP (MD:[885..888] may)
+              (VP (VB:[889..891] be)
+                (VP (VBN:[892..900] involved)
+                  (NP-1 (-NONE-:[900..900] *))
+                  (PP-CLR (IN:[901..903] in)
+                    (NP
+                      (NP (JJ:[904..911] nuclear) (NN:[912..921] targeting))
+                      (PP (IN:[922..924] of)
+                        (NP (DT:[925..928] the)
+                           (JJ:[929..930] r) (HYPH:[930..931] -)
+                           (NN:[931..938] protein))))))))))))
+    (.:[938..939] .)))
+
+;sentence 8 Span:940..1078
+;Approximately five  to seven genes in mammalian genomes give strong
+;hybridization signals when  probed with the human L17A homologue cDNA.
+;[1058..1062]:gene-rna:"L17A"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (QP (RB:[940..953] Approximately) (CD:[954..958] five)
+            (TO:[960..962] to) (CD:[963..968] seven))
+        (NNS:[969..974] genes))
+      (PP (IN:[975..977] in)
+        (NP (JJ:[978..987] mammalian) (NNS:[988..995] genomes))))
+    (VP (VBP:[996..1000] give)
+      (NP (JJ:[1001..1007] strong) (NN:[1008..1021] hybridization)
+          (NNS:[1022..1029] signals))
+      (SBAR-ADV
+        (WHADVP-2 (WRB:[1030..1034] when))
+        (S
+          (NP-SBJ-1 (-NONE-:[1034..1034] *))
+          (VP (VBN:[1036..1042] probed)
+            (NP-1 (-NONE-:[1042..1042] *))
+            (PP (IN:[1043..1047] with)
+              (NP (DT:[1048..1051] the) (JJ:[1052..1057] human)
+                  (NN:[1058..1062] L17A) (NN:[1063..1072] homologue)
+                  (NN:[1073..1077] cDNA)))
+            (ADVP-TMP-2 (-NONE-:[1077..1077] *T*))))))
+    (.:[1077..1078] .)))
+
+;sentence 9 Span:1079..1322
+;Whereas the L17A homologue was found  to be expressed at similar levels in
+;several human tissues as a transcript of  600 nucleotides, a several-fold
+;higher transcript level was detected in the  rapidly growing neuroblastoma
+;cell line, SK-N-BE.
+;[1091..1095]:gene-rna:"L17A"
+;[1289..1302]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1079..1086] Whereas)
+      (S
+        (NP-SBJ-1 (DT:[1087..1090] the) (NN:[1091..1095] L17A)
+                  (NN:[1096..1105] homologue))
+        (VP (VBD:[1106..1109] was)
+          (VP (VBN:[1110..1115] found)
+            (S
+              (NP-SBJ-1 (-NONE-:[1115..1115] *))
+              (VP (TO:[1117..1119] to)
+                (VP (VB:[1120..1122] be)
+                  (VP (VBN:[1123..1132] expressed)
+                    (NP-1 (-NONE-:[1132..1132] *))
+                    (PP (IN:[1133..1135] at)
+                      (NP
+                        (NP (JJ:[1136..1143] similar) (NNS:[1144..1150] levels))
+                        (PP-3 (-NONE-:[1150..1150] *ICH*))))
+                    (PP-LOC (IN:[1151..1153] in)
+                      (NP (JJ:[1154..1161] several) (JJ:[1162..1167] human)
+                          (NNS:[1168..1175] tissues)))
+                    (PP-3 (IN:[1176..1178] as)
+                      (NP
+                        (NP (DT:[1179..1180] a) (NN:[1181..1191] transcript))
+                        (PP (IN:[1192..1194] of)
+                          (NP (CD:[1196..1199] 600)
+                              (NNS:[1200..1211] nucleotides)))))))))))))
+    (,:[1211..1212] ,)
+    (NP-SBJ-2 (DT:[1213..1214] a)
+      (ADJP
+        (QP (JJ:[1215..1222] several) (HYPH:[1222..1223] -)
+            (RB:[1223..1227] fold))
+        (JJR:[1228..1234] higher))
+      (NN:[1235..1245] transcript) (NN:[1246..1251] level))
+    (VP (VBD:[1252..1255] was)
+      (VP (VBN:[1256..1264] detected)
+        (NP-2 (-NONE-:[1264..1264] *))
+        (PP (IN:[1265..1267] in)
+          (NP
+            (NP (DT:[1268..1271] the)
+              (ADJP (RB:[1273..1280] rapidly) (VBG:[1281..1288] growing))
+              (NN:[1289..1302] neuroblastoma) (NN:[1303..1307] cell)
+               (NN:[1308..1312] line))
+            (,:[1312..1313] ,)
+            (NP (NN:[1314..1321] SK-N-BE))))))
+    (.:[1321..1322] .)))
+
+;section 10 Span:1326..1370
+;PMID: 1874450 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1326..1330] PMID) (::[1330..1331] :) (CD:[1332..1339] 1874450)
+        (NN:[1340..1341] -LSB-) (NNP:[1341..1347] PubMed) (::[1348..1349] -)
+        (NN:[1350..1357] indexed) (IN:[1358..1361] for)
+        (NNP:[1362..1370] MEDLINE-RSB-)))

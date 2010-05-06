@@ -1,0 +1,345 @@
+;PMID: 8631189
+;source_file_2665.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..105] = [t:41..105]
+;2)section:[e:109..180] = [t:109..180]
+;3)section:[e:184..269] = [t:184..269]
+;4)sentence:[e:273..444] = [t:273..444]
+;5)sentence:[e:445..645] = [t:445..645]
+;6)sentence:[e:646..935] = [t:646..935]
+;7)sentence:[e:936..1017] = [t:936..1017]
+;8)sentence:[e:1018..1113] = [t:1018..1113]
+;9)sentence:[e:1114..1273] = [t:1114..1273]
+;10)section:[e:1277..1295] = [t:1277..1295]
+;11)section:[e:1301..1315] = [t:1301..1315]
+;12)section:[e:1321..1348] = [t:1321..1348]
+;13)section:[e:1352..1396] = [t:1352..1396]
+
+;section 0 Span:0..35
+;Contraception. 1996 Jan;53(1):41-7.
+(SEC
+  (FRAG (NN:[0..13] Contraception) (RB:[13..14] .) (CD:[15..19] 1996)
+        (IN:[20..26] Jan;53) (-LRB-:[26..27] -LRB-) (CD:[27..28] 1)
+        (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..32] 41) (HYPH:[32..33] -)
+        (CD:[33..35] 7.)))
+
+;sentence 1 Span:41..105
+;Can grapefruit juice influence ethinylestradiol bioavailability?
+;[45..61]:substance:"grapefruit juice"
+;[72..88]:substance:"ethinylestradiol"
+(SENT
+  (SQ-HLN (MD:[41..44] Can)
+    (NP-SBJ (NN:[45..55] grapefruit) (NN:[56..61] juice))
+    (VP (VB:[62..71] influence)
+      (NP (NN:[72..88] ethinylestradiol) (NN:[89..104] bioavailability)))
+    (.:[104..105] ?)))
+
+;section 2 Span:109..180
+;Weber A, Jager R, Borner A, Klinger G, Vollanth R, Matthey K, Balogh A.
+(SEC
+  (FRAG (NNP:[109..114] Weber) (NNP:[115..116] A) (,:[116..117] ,)
+        (NNP:[118..123] Jager) (NNP:[124..125] R) (,:[125..126] ,)
+        (NNP:[127..133] Borner) (NNP:[134..135] A) (,:[135..136] ,)
+        (NNP:[137..144] Klinger) (NNP:[145..146] G) (,:[146..147] ,)
+        (NNP:[148..156] Vollanth) (NNP:[157..158] R) (,:[158..159] ,)
+        (NNP:[160..167] Matthey) (NNP:[168..170] K,) (NNP:[171..177] Balogh)
+        (NNP:[178..179] A) (.:[179..180] .)))
+
+;section 3 Span:184..269
+;Department of Clinical Pharmacology, Friedrich Schiller University of Jena, 
+;Germany.
+(SEC
+  (FRAG (NNP:[184..194] Department) (IN:[195..197] of) (NNP:[198..206] Clinical)
+        (NNP:[207..219] Pharmacology) (,:[219..220] ,)
+        (NNP:[221..230] Friedrich) (NNP:[231..239] Schiller)
+        (NNP:[240..250] University) (IN:[251..253] of) (NNP:[254..258] Jena)
+        (,:[258..259] ,) (NNP:[261..268] Germany) (.:[268..269] .)))
+
+;sentence 4 Span:273..444
+;The effects of grapefruit juice on the bioavailability of 17 
+;alpha-ethinylestradiol (EE2) after a single oral administration of 50
+;micrograms  EE2 have been investigated.
+;[288..304]:substance:"grapefruit juice"
+;[331..357]:substance:"17  alpha-ethinylestradiol"
+;[359..362]:substance:"EE2"
+;[402..404]:quantitative-value:"50"
+;[405..415]:quantitative-units:"micrograms"
+;[417..420]:substance:"EE2"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[273..276] The) (NNS:[277..284] effects))
+        (PP (IN:[285..287] of)
+          (NP (NN:[288..298] grapefruit) (NN:[299..304] juice)))
+        (PP (IN:[305..307] on)
+          (NP
+            (NP (DT:[308..311] the) (NN:[312..327] bioavailability))
+            (PP (IN:[328..330] of)
+              (NP
+                (NP (CD:[331..333] 17) (NN:[335..357] alpha-ethinylestradiol))
+                (NP (-LRB-:[358..359] -LRB-) (NN:[359..362] EE2)
+                    (-RRB-:[362..363] -RRB-)))))))
+      (PP (IN:[364..369] after)
+        (NP
+          (NP (DT:[370..371] a) (JJ:[372..378] single) (JJ:[379..383] oral)
+              (NN:[384..398] administration))
+          (PP (IN:[399..401] of)
+            (NP
+              (NML (CD:[402..404] 50) (NNS:[405..415] micrograms))
+              (NN:[417..420] EE2))))))
+    (VP (VBP:[421..425] have)
+      (VP (VBN:[426..430] been)
+        (VP (VBN:[431..443] investigated)
+          (NP-1 (-NONE-:[443..443] *)))))
+    (.:[443..444] .)))
+
+;sentence 5 Span:445..645
+;The pharmacokinetics of EE2 were studied in an open,  randomized, cross-over
+;study in which 13 healthy volunteers were administered  the drug with herbal
+;tea or grapefruit juice (naringin, 887 mg/ml).
+;[469..472]:substance:"EE2"
+;[582..586]:substance:"drug"
+;[592..602]:substance:"herbal tea"
+;[606..622]:substance:"grapefruit juice"
+;[624..632]:substance:"naringin"
+;[634..637]:quantitative-value:"887"
+;[638..643]:quantitative-units:"mg/ml"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[445..448] The) (NNS:[449..465] pharmacokinetics))
+      (PP (IN:[466..468] of)
+        (NP (NN:[469..472] EE2))))
+    (VP (VBD:[473..477] were)
+      (VP (VBN:[478..485] studied)
+        (NP-2 (-NONE-:[485..485] *))
+        (PP-LOC (IN:[486..488] in)
+          (NP
+            (NP (DT:[489..491] an) (JJ:[492..496] open) (,:[496..497] ,)
+                (VBN:[499..509] randomized) (,:[509..510] ,)
+              (ADJP (VB:[511..516] cross) (HYPH:[516..517] -)
+                    (RP:[517..521] over))
+              (NN:[522..527] study))
+            (SBAR
+              (WHPP-3 (IN:[528..530] in)
+                (WHNP (WDT:[531..536] which)))
+              (S
+                (NP-SBJ-1 (CD:[537..539] 13) (JJ:[540..547] healthy)
+                          (NNS:[548..558] volunteers))
+                (VP (VBD:[559..563] were)
+                  (VP (VBN:[564..576] administered)
+                    (NP-1 (-NONE-:[576..576] *))
+                    (NP (DT:[578..581] the) (NN:[582..586] drug))
+                    (PP (IN:[587..591] with)
+                      (NP
+                        (NP (JJ:[592..598] herbal) (NN:[599..602] tea))
+                        (CC:[603..605] or)
+                        (NP
+                          (NP (NN:[606..616] grapefruit) (NN:[617..622] juice))
+                          (PRN (-LRB-:[623..624] -LRB-)
+                            (FRAG
+                              (NP (NN:[624..632] naringin))
+                              (,:[632..633] ,)
+                              (NP
+                                (NP (CD:[634..637] 887) (NN:[638..640] mg))
+                                (PP (SYM:[640..641] /)
+                                  (NP (NN:[641..643] ml)))))
+                            (-RRB-:[643..644] -RRB-)))))
+                    (PP-3 (-NONE-:[644..644] *T*))))))))))
+    (.:[644..645] .)))
+
+;sentence 6 Span:646..935
+;In contrast  to herbal tea, grapefruit juice increased the peak plasma
+;concentration (Cmax)  significantly to 137% (mean; range 64% to 214%, p =
+;0.0088) and increased the  area under plasma concentration-time curve from 0
+;to 8 hours (AUC0-8) to 128%  (mean; range 81% to 180%, p = 0.0186).
+;[662..672]:substance:"herbal tea"
+;[674..690]:substance:"grapefruit juice"
+;[732..736]:quantitative-name:"Cmax"
+;[756..760]:quantitative-value:"137%"
+;[861..872]:quantitative-value:"from 0 to 8"
+;[873..878]:quantitative-units:"hours"
+;[891..895]:quantitative-value:"128%"
+;[910..921]:quantitative-value:"81% to 180%"
+(SENT
+  (S
+    (PP (IN:[646..648] In)
+      (NP
+        (NP (NN:[649..657] contrast))
+        (PP (TO:[659..661] to)
+          (NP (JJ:[662..668] herbal) (NN:[669..672] tea)))))
+    (,:[672..673] ,)
+    (NP-SBJ (NN:[674..684] grapefruit) (NN:[685..690] juice))
+    (VP
+      (VP (VBD:[691..700] increased)
+        (NP
+          (NP (DT:[701..704] the) (JJ:[705..709] peak) (NN:[710..716] plasma)
+              (NN:[717..730] concentration))
+          (PRN (-LRB-:[731..732] -LRB-)
+            (NP (NN:[732..736] Cmax))
+            (-RRB-:[736..737] -RRB-)))
+        (ADVP (RB:[739..752] significantly))
+        (PP (TO:[753..755] to)
+          (NP (CD:[756..759] 137) (NN:[759..760] %)))
+        (PRN (-LRB-:[761..762] -LRB-)
+          (NP (NN:[762..766] mean))
+          (::[766..767] ;)
+          (FRAG
+            (FRAG
+              (NP-SBJ (NN:[768..773] range))
+              (NP-PRD
+                (NP (CD:[774..776] 64) (NN:[776..777] %))
+                (PP (TO:[778..780] to)
+                  (NP (CD:[781..784] 214) (NN:[784..785] %)))))
+            (,:[785..786] ,)
+            (S
+              (NP-SBJ (NN:[787..788] p))
+              (VP (SYM:[789..790] =)
+                (NP (CD:[791..797] 0.0088)))))
+          (-RRB-:[797..798] -RRB-)))
+      (CC:[799..802] and)
+      (VP (VBD:[803..812] increased)
+        (NP
+          (NP (DT:[813..816] the) (NN:[818..822] area))
+          (PP (IN:[823..828] under)
+            (NP
+              (NML
+                (NML (NN:[829..835] plasma) (NN:[836..849] concentration))
+                (HYPH:[849..850] -)
+                (NML (NN:[850..854] time)))
+              (NN:[855..860] curve)))
+          (PP (IN:[861..865] from)
+            (NP (CD:[866..867] 0)
+              (NML-1 (-NONE-:[867..867] *RNR*))))
+          (PP (TO:[868..870] to)
+            (NP (CD:[871..872] 8)
+              (NML-1 (-NONE-:[872..872] *RNR*))))
+          (NML-1 (NNS:[873..878] hours))
+          (PRN (-LRB-:[879..880] -LRB-)
+            (NP (NN:[880..883] AUC) (CD:[883..884] 0) (HYPH:[884..885] -)
+                (CD:[885..886] 8))
+            (-RRB-:[886..887] -RRB-)))
+        (PP (TO:[888..890] to)
+          (NP (CD:[891..894] 128) (NN:[894..895] %)))
+        (PRN (-LRB-:[897..898] -LRB-)
+          (NP (NN:[898..902] mean))
+          (::[902..903] ;)
+          (FRAG
+            (FRAG
+              (NP-SBJ (NN:[904..909] range))
+              (NP-PRD
+                (NP (CD:[910..912] 81) (NN:[912..913] %))
+                (PP (TO:[914..916] to)
+                  (NP (CD:[917..920] 180) (NN:[920..921] %)))))
+            (,:[921..922] ,)
+            (S
+              (NP-SBJ (NN:[923..924] p))
+              (VP (SYM:[925..926] =)
+                (NP (CD:[927..933] 0.0186)))))
+          (-RRB-:[933..934] -RRB-))))
+    (.:[934..935] .)))
+
+;sentence 7 Span:936..1017
+;This study shows that grapefruit juice  increases the bioavailable amount of
+;EE2.
+;[958..974]:substance:"grapefruit juice"
+;[1013..1016]:substance:"EE2"
+(SENT
+  (S
+    (NP-SBJ (DT:[936..940] This) (NN:[941..946] study))
+    (VP (VBZ:[947..952] shows)
+      (SBAR (IN:[953..957] that)
+        (S
+          (NP-SBJ (NN:[958..968] grapefruit) (NN:[969..974] juice))
+          (VP (VBZ:[976..985] increases)
+            (NP
+              (NP (DT:[986..989] the) (JJ:[990..1002] bioavailable)
+                  (NN:[1003..1009] amount))
+              (PP (IN:[1010..1012] of)
+                (NP (NN:[1013..1016] EE2))))))))
+    (.:[1016..1017] .)))
+
+;sentence 8 Span:1018..1113
+;A possible explanation may be that  grapefruit juice inhibits the metabolic
+;degradation of EE2.
+;[1054..1070]:substance:"grapefruit juice"
+;[1109..1112]:substance:"EE2"
+(SENT
+  (S
+    (NP-SBJ (DT:[1018..1019] A) (JJ:[1020..1028] possible)
+            (NN:[1029..1040] explanation))
+    (VP (MD:[1041..1044] may)
+      (VP (VB:[1045..1047] be)
+        (SBAR-PRD (IN:[1048..1052] that)
+          (S
+            (NP-SBJ (NN:[1054..1064] grapefruit) (NN:[1065..1070] juice))
+            (VP (VBZ:[1071..1079] inhibits)
+              (NP
+                (NP (DT:[1080..1083] the) (JJ:[1084..1093] metabolic)
+                    (NN:[1094..1105] degradation))
+                (PP (IN:[1106..1108] of)
+                  (NP (NN:[1109..1112] EE2)))))))))
+    (.:[1112..1113] .)))
+
+;sentence 9 Span:1114..1273
+;Whether the  increased bioavailability of EE2 following grapefruit juice
+;administration is of  clinical importance should be investigated in long-term
+;studies.
+;[1156..1159]:substance:"EE2"
+;[1170..1186]:substance:"grapefruit juice"
+(SENT
+  (S
+    (SBAR-NOM-SBJ-1 (IN:[1114..1121] Whether)
+      (S
+        (NP-SBJ
+          (NP (DT:[1122..1125] the) (VBN:[1127..1136] increased)
+              (NN:[1137..1152] bioavailability))
+          (PP (IN:[1153..1155] of)
+            (NP
+              (NP (NN:[1156..1159] EE2))
+              (PP (VBG:[1160..1169] following)
+                (NP
+                  (NML (NN:[1170..1180] grapefruit) (NN:[1181..1186] juice))
+                  (NN:[1187..1201] administration))))))
+        (VP (VBZ:[1202..1204] is)
+          (PP-PRD (IN:[1205..1207] of)
+            (NP (JJ:[1209..1217] clinical) (NN:[1218..1228] importance))))))
+    (VP (MD:[1229..1235] should)
+      (VP (VB:[1236..1238] be)
+        (VP (VBN:[1239..1251] investigated)
+          (NP-1 (-NONE-:[1251..1251] *))
+          (PP (IN:[1252..1254] in)
+            (NP
+              (NML (JJ:[1255..1259] long) (HYPH:[1259..1260] -)
+                   (NN:[1260..1264] term))
+              (NNS:[1265..1272] studies))))))
+    (.:[1272..1273] .)))
+
+;section 10 Span:1277..1295
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1277..1288] Publication) (NNP:[1289..1294] Types)
+        (::[1294..1295] :)))
+
+;section 11 Span:1301..1315
+;Clinical Trial
+(SEC
+  (FRAG (NNP:[1301..1309] Clinical) (NNP:[1310..1315] Trial)))
+
+;section 12 Span:1321..1348
+;Randomized Controlled Trial
+(SEC
+  (FRAG (NNP:[1321..1331] Randomized) (NNP:[1332..1342] Controlled)
+        (NNP:[1343..1348] Trial)))
+
+;section 13 Span:1352..1396
+;PMID: 8631189 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1352..1356] PMID) (::[1356..1357] :) (CD:[1358..1365] 8631189)
+        (NN:[1366..1367] -LSB-) (NNP:[1367..1373] PubMed) (::[1374..1375] -)
+        (NN:[1376..1383] indexed) (IN:[1384..1387] for)
+        (NNP:[1388..1396] MEDLINE-RSB-)))

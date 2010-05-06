@@ -1,0 +1,200 @@
+;PMID: 1403838
+;source_file_692.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:44..195] = [t:44..195]
+;2)section:[e:199..240] = [t:199..240]
+;3)section:[e:244..340] = [t:244..340]
+;4)sentence:[e:344..433] = [t:344..433]
+;5)sentence:[e:434..561] = [t:434..561]
+;6)sentence:[e:562..676] = [t:562..676]
+;7)sentence:[e:677..780] = [t:677..780]
+;8)sentence:[e:781..923] = [t:781..923]
+;9)section:[e:927..971] = [t:927..971]
+
+;section 0 Span:0..39
+;J Oral Pathol Med  1992 May;21(5):225-9
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Oral) (NNP:[7..13] Pathol) (NNP:[14..17] Med)
+        (CD:[19..23] 1992) (NNP:[24..27] May) (CD:[27..31] ;21-LRB-)
+        (CD:[31..32] 5) (-RRB-:[32..33] -RRB-) (CD:[33..37] :225) (::[37..38] -)
+        (CD:[38..39] 9)))
+
+;sentence 1 Span:44..195
+;Point mutations in the Ha-ras oncogene are detectable in formalin-fixed
+;tissues  of oral squamous cell carcinomas, but are infrequent in British
+;cases.
+;[44..59]:variation-type:"Point mutations"
+;[67..73]:gene-rna:"Ha-ras"
+;[128..157]:malignancy:"oral squamous cell carcinomas"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NN:[44..49] Point) (NNS:[50..59] mutations))
+      (PP (IN:[60..62] in)
+        (NP (DT:[63..66] the) (NN:[67..73] Ha-ras) (NN:[74..82] oncogene))))
+    (VP
+      (VP (VBP:[83..86] are)
+        (ADJP-PRD (JJ:[87..97] detectable))
+        (PP-LOC (IN:[98..100] in)
+          (NP
+            (NP
+              (ADJP (NN:[101..109] formalin) (HYPH:[109..110] -)
+                    (VBN:[110..115] fixed))
+              (NNS:[116..123] tissues))
+            (PP (IN:[125..127] of)
+              (NP (JJ:[128..132] oral)
+                (NML (JJ:[133..141] squamous) (NN:[142..146] cell))
+                (NNS:[147..157] carcinomas))))))
+      (,:[157..158] ,) (CC:[159..162] but)
+      (VP (VBP:[163..166] are)
+        (ADJP-PRD (JJ:[167..177] infrequent))
+        (PP (IN:[178..180] in)
+          (NP (JJ:[181..188] British) (NNS:[189..194] cases)))))
+    (.:[194..195] .)))
+
+;section 2 Span:199..240
+;Warnakulasuriya KA, Chang SE, Johnson NW.
+(SEC
+  (FRAG (NNP:[199..214] Warnakulasuriya) (NNP:[215..217] KA) (,:[217..218] ,)
+        (NNP:[219..224] Chang) (NNP:[225..227] SE) (,:[227..228] ,)
+        (NNP:[229..236] Johnson) (NNP:[237..240] NW.)))
+
+;section 3 Span:244..340
+;Department of Dental Sciences, Hunterian Institute, Royal College of
+;Surgeons,  London, England.
+(SEC
+  (FRAG (NNP:[244..254] Department) (IN:[255..257] of) (NNP:[258..264] Dental)
+        (NNPS:[265..273] Sciences) (,:[273..274] ,) (NNP:[275..284] Hunterian)
+        (NNP:[285..294] Institute) (,:[294..295] ,) (NNP:[296..301] Royal)
+        (NNP:[302..309] College) (IN:[310..312] of) (NNP:[313..321] Surgeons)
+        (,:[321..322] ,) (NNP:[324..330] London) (,:[330..331] ,)
+        (NNP:[332..339] England) (.:[339..340] .)))
+
+;sentence 4 Span:344..433
+;Oncogene expression in human neoplasia has been examined extensively in the
+;past  decade.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[344..352] Oncogene) (NN:[353..363] expression))
+      (PP (IN:[364..366] in)
+        (NP (JJ:[367..372] human) (NN:[373..382] neoplasia))))
+    (VP (VBZ:[383..386] has)
+      (VP (VBN:[387..391] been)
+        (VP (VBN:[392..400] examined)
+          (NP-1 (-NONE-:[400..400] *))
+          (ADVP (RB:[401..412] extensively))
+          (PP (IN:[413..415] in)
+            (NP (DT:[416..419] the) (JJ:[420..424] past) (NN:[426..432] decade))))))
+    (.:[432..433] .)))
+
+;sentence 5 Span:434..561
+;More recently the advent of the polymerase chain reaction (PCR) has 
+;facilitated studies of oncogenes and other DNA structures.
+;[466..476]:gene-protein:"polymerase"
+(SENT
+  (S
+    (ADVP-TMP (RBR:[434..438] More) (RB:[439..447] recently))
+    (NP-SBJ
+      (NP (DT:[448..451] the) (NN:[452..458] advent))
+      (PP (IN:[459..461] of)
+        (NP
+          (NP (DT:[462..465] the) (NN:[466..476] polymerase)
+              (NN:[477..482] chain) (NN:[483..491] reaction))
+          (NP (-LRB-:[492..493] -LRB-) (NN:[493..496] PCR)
+              (-RRB-:[496..497] -RRB-)))))
+    (VP (VBZ:[498..501] has)
+      (VP (VBN:[503..514] facilitated)
+        (NP
+          (NP (NNS:[515..522] studies))
+          (PP (IN:[523..525] of)
+            (NP
+              (NP (NNS:[526..535] oncogenes))
+              (CC:[536..539] and)
+              (NP (JJ:[540..545] other) (NN:[546..549] DNA)
+                  (NNS:[550..560] structures)))))))
+    (.:[560..561] .)))
+
+;sentence 6 Span:562..676
+;Those few studies  which have so far searched for oncogene changes in oral
+;cancer have utilized  frozen specimens.
+;[632..643]:malignancy:"oral cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[562..567] Those) (JJ:[568..571] few) (NNS:[572..579] studies))
+      (SBAR
+        (WHNP-1 (WDT:[581..586] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[586..586] *T*))
+          (VP (VBP:[587..591] have)
+            (ADVP (RB:[592..594] so) (RB:[595..598] far))
+            (VP (VBN:[599..607] searched)
+              (PP-CLR (IN:[608..611] for)
+                (NP
+                  (NP (NN:[612..620] oncogene) (NNS:[621..628] changes))
+                  (PP (IN:[629..631] in)
+                    (NP (JJ:[632..636] oral) (NN:[637..643] cancer))))))))))
+    (VP (VBP:[644..648] have)
+      (VP (VBN:[649..657] utilized)
+        (NP (VBN:[659..665] frozen) (NNS:[666..675] specimens))))
+    (.:[675..676] .)))
+
+;sentence 7 Span:677..780
+;We report here an adaptation of the PCR technique applicable  to DNA
+;extracted from archival specimens.
+(SENT
+  (S
+    (NP-SBJ (PRP:[677..679] We))
+    (VP (VBP:[680..686] report)
+      (ADVP (RB:[687..691] here))
+      (NP
+        (NP
+          (NP (DT:[692..694] an) (NN:[695..705] adaptation))
+          (PP (IN:[706..708] of)
+            (NP (DT:[709..712] the) (NN:[713..716] PCR)
+                (NN:[717..726] technique))))
+        (ADJP (JJ:[727..737] applicable)
+          (PP (TO:[739..741] to)
+            (NP
+              (NP (NN:[742..745] DNA))
+              (VP (VBN:[746..755] extracted)
+                (NP (-NONE-:[755..755] *))
+                (PP-CLR (IN:[756..760] from)
+                  (NP (JJ:[761..769] archival) (NNS:[770..779] specimens)))))))))
+    (.:[779..780] .)))
+
+;sentence 8 Span:781..923
+;Our data complement recent findings  that Ha-ras mutations are infrequent in
+;oral squamous cell carcinomas among  white caucasoid populations.
+;[823..829]:gene-rna:"Ha-ras"
+;[858..887]:malignancy:"oral squamous cell carcinomas"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[781..784] Our) (NNS:[785..789] data))
+    (VP (VBP:[790..800] complement)
+      (NP (JJ:[801..807] recent) (NNS:[808..816] findings)
+        (SBAR (IN:[818..822] that)
+          (S
+            (NP-SBJ (NN:[823..829] Ha-ras) (NNS:[830..839] mutations))
+            (VP (VBP:[840..843] are)
+              (ADJP-PRD (JJ:[844..854] infrequent))
+              (PP (IN:[855..857] in)
+                (NP (JJ:[858..862] oral)
+                  (NML (JJ:[863..871] squamous) (NN:[872..876] cell))
+                  (NNS:[877..887] carcinomas)))
+              (PP (IN:[888..893] among)
+                (NP (JJ:[895..900] white) (JJ:[901..910] caucasoid)
+                    (NNS:[911..922] populations))))))))
+    (.:[922..923] .)))
+
+;section 9 Span:927..971
+;PMID: 1403838 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[927..931] PMID) (::[931..932] :) (CD:[933..940] 1403838)
+        (NN:[941..942] -LSB-) (NNP:[942..948] PubMed) (::[949..950] -)
+        (NN:[951..958] indexed) (IN:[959..962] for)
+        (NNP:[963..971] MEDLINE-RSB-)))

@@ -1,0 +1,405 @@
+;PMID: 9731223
+;source_file_925.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..54] = [t:0..54]
+;1)sentence:[e:60..103] = [t:60..103]
+;2)section:[e:107..134] = [t:107..134]
+;3)section:[e:138..214] = [t:138..214]
+;4)sentence:[e:218..318] = [t:218..318]
+;5)sentence:[e:319..491] = [t:319..491]
+;6)sentence:[e:492..661] = [t:492..661]
+;7)sentence:[e:662..822] = [t:662..822]
+;8)sentence:[e:823..1003] = [t:823..1003]
+;9)sentence:[e:1005..1096] = [t:1005..1096]
+;10)sentence:[e:1097..1239] = [t:1097..1239]
+;11)sentence:[e:1241..1403] = [t:1241..1403]
+;12)sentence:[e:1404..1513] = [t:1404..1513]
+;13)section:[e:1517..1561] = [t:1517..1561]
+
+;section 0 Span:0..54
+;Biochem Biophys Res Commun. 1998 Aug 28;249(3):838-43.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (.:[26..27] .) (CD:[28..32] 1998)
+        (NNP:[33..36] Aug) (CD:[37..39] 28) (CD:[39..44] ;249-LRB-)
+        (CD:[44..45] 3) (-RRB-:[45..46] -RRB-) (CD:[46..50] :838) (::[50..51] -)
+        (CD:[51..53] 43) (.:[53..54] .)))
+
+;sentence 1 Span:60..103
+;Dopamine formation from tyramine by CYP2D6.
+;[60..68]:substance:"Dopamine"
+;[84..92]:substance:"tyramine"
+;[96..102]:cyp450:"CYP2D6"
+(SENT
+  (NP-HLN
+    (NP (NN:[60..68] Dopamine) (NN:[69..78] formation))
+    (PP (IN:[79..83] from)
+      (NP (NN:[84..92] tyramine)))
+    (PP (IN:[93..95] by)
+      (NP (NN:[96..102] CYP2D6)))
+    (.:[102..103] .)))
+
+;section 2 Span:107..134
+;Hiroi T, Imaoka S, Funae Y.
+(SEC
+  (FRAG (NNP:[107..112] Hiroi) (NNP:[113..114] T) (,:[114..115] ,)
+        (NNP:[116..122] Imaoka) (NNP:[123..125] S,) (NNP:[126..131] Funae)
+        (NNP:[132..134] Y.)))
+
+;section 3 Span:138..214
+;Department of Chemical Biology, Osaka City University Medical School, Japan.
+(SEC
+  (FRAG (NNP:[138..148] Department) (IN:[149..151] of) (NNP:[152..160] Chemical)
+        (NNP:[161..168] Biology) (,:[168..169] ,) (NNP:[170..175] Osaka)
+        (NNP:[176..180] City) (NNP:[181..191] University)
+        (NNP:[192..199] Medical) (NNP:[200..206] School) (,:[206..207] ,)
+        (NNP:[208..213] Japan) (.:[213..214] .)))
+
+;sentence 4 Span:218..318
+;Dopamine is formed form L-tyrosine by tyrosine hydroxylase and aromatic
+;L-amino  acid decarboxylase.
+;[218..226]:substance:"Dopamine"
+;[242..252]:substance:"L-tyrosine"
+;[256..276]:substance:"tyrosine hydroxylase"
+;[281..317]:substance:"aromatic L-amino  acid decarboxylase"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[218..226] Dopamine))
+    (VP (VBZ:[227..229] is)
+      (VP (VBN:[230..236] formed)
+        (NP-1 (-NONE-:[236..236] *))
+        (PP (NN:[237..241] form)
+          (NP (NN:[242..252] L-tyrosine)))
+        (PP (IN:[253..255] by)
+          (NP-LGS
+            (NP (NN:[256..264] tyrosine) (NN:[265..276] hydroxylase))
+            (CC:[277..280] and)
+            (NP (JJ:[281..289] aromatic)
+              (NML (JJ:[290..297] L-amino) (NN:[299..303] acid))
+              (NN:[304..317] decarboxylase))))))
+    (.:[317..318] .)))
+
+;sentence 5 Span:319..491
+;In addition to this pathway, however, the formation of  catecholamines,
+;including dopamine, from trace amines such as tyramine by  hepatic microsomes
+;has been demonstrated.
+;[375..389]:substance:"catecholamines"
+;[401..409]:substance:"dopamine"
+;[422..428]:substance:"amines"
+;[437..445]:substance:"tyramine"
+(SENT
+  (S
+    (PP (IN:[319..321] In)
+      (ADJP
+        (NP (NN:[322..330] addition))
+        (PP (TO:[331..333] to)
+          (NP (DT:[334..338] this) (NN:[339..346] pathway)))))
+    (,:[346..347] ,)
+    (ADVP (RB:[348..355] however))
+    (,:[355..356] ,)
+    (NP-SBJ-2
+      (NP (DT:[357..360] the) (NN:[361..370] formation))
+      (PP (IN:[371..373] of)
+        (NP
+          (NP (NNS:[375..389] catecholamines))
+          (,:[389..390] ,)
+          (PP (VBG:[391..400] including)
+            (NP (NN:[401..409] dopamine)))))
+      (,:[409..410] ,)
+      (PP (IN:[411..415] from)
+        (NP
+          (NP (NN:[416..421] trace) (NNS:[422..428] amines))
+          (PP (JJ:[429..433] such) (IN:[434..436] as)
+            (NP (NN:[437..445] tyramine)))))
+      (PP (IN:[446..448] by)
+        (NP (JJ:[450..457] hepatic) (NNS:[458..468] microsomes))))
+    (VP (VBZ:[469..472] has)
+      (VP (VBN:[473..477] been)
+        (VP (VBN:[478..490] demonstrated)
+          (NP-2 (-NONE-:[490..490] *)))))
+    (.:[490..491] .)))
+
+;sentence 6 Span:492..661
+;In this study, we investigated the  formation of dopamine from trace amines,
+;using human hepatic microsomes and  human cytochrome P450 (CYP) isoforms
+;expressed in yeast.
+;[541..549]:substance:"dopamine"
+;[561..567]:substance:"amines"
+;[611..641]:cyp450:"cytochrome P450 (CYP) isoforms"
+(SENT
+  (S
+    (PP (IN:[492..494] In)
+      (NP (DT:[495..499] this) (NN:[500..505] study)))
+    (,:[505..506] ,)
+    (NP-SBJ (PRP:[507..509] we))
+    (VP (VBD:[510..522] investigated)
+      (NP
+        (NP (DT:[523..526] the) (NN:[528..537] formation))
+        (PP (IN:[538..540] of)
+          (NP (NN:[541..549] dopamine)))
+        (PP (IN:[550..554] from)
+          (NP (NN:[555..560] trace) (NNS:[561..567] amines))))
+      (,:[567..568] ,)
+      (S-MNR
+        (NP-SBJ (-NONE-:[568..568] *))
+        (VP (VBG:[569..574] using)
+          (NP
+            (NP
+              (NP (JJ:[575..580] human) (JJ:[581..588] hepatic)
+                  (NNS:[589..599] microsomes))
+              (CC:[600..603] and)
+              (NP (JJ:[605..610] human)
+                
+                (NML
+                  (NML (NN:[611..621] cytochrome) (NN:[622..626] P450))
+                  (NML (-LRB-:[627..628] -LRB-) (NN:[628..631] CYP)
+                       (-RRB-:[631..632] -RRB-)))
+                (NNS:[633..641] isoforms)))
+            (VP (VBN:[642..651] expressed)
+              (NP (-NONE-:[651..651] *))
+              (PP-LOC (IN:[652..654] in)
+                (NP (NN:[655..660] yeast))))))))
+    (.:[660..661] .)))
+
+;sentence 7 Span:662..822
+;Among the 11 isoforms  of human CYP expressed in yeast, CYP2D6 was the only
+;isoform exhibiting strong  ability to convert p-tyramine and m-tyramine to
+;dopamine.
+;[675..683]:cyp450:"isoforms"
+;[694..697]:cyp450:"CYP"
+;[718..724]:cyp450:"CYP2D6"
+;[738..745]:cyp450:"isoform"
+;[784..794]:substance:"p-tyramine"
+;[799..809]:substance:"m-tyramine"
+;[813..821]:substance:"dopamine"
+(SENT
+  (S
+    (PP (IN:[662..667] Among)
+      (NP
+        (NP
+          (NP (DT:[668..671] the) (CD:[672..674] 11) (NNS:[675..683] isoforms))
+          (PP (IN:[685..687] of)
+            (NP (JJ:[688..693] human) (NN:[694..697] CYP))))
+        (VP (VBN:[698..707] expressed)
+          (NP (-NONE-:[707..707] *))
+          (PP-LOC (IN:[708..710] in)
+            (NP (NN:[711..716] yeast))))))
+    (,:[716..717] ,)
+    (NP-SBJ (NN:[718..724] CYP2D6))
+    (VP (VBD:[725..728] was)
+      (NP-PRD
+        (NP (DT:[729..732] the) (RB:[733..737] only) (NN:[738..745] isoform))
+        (VP (VBG:[746..756] exhibiting)
+          (NP (JJ:[757..763] strong) (NN:[765..772] ability)
+            (S
+              (NP-SBJ (-NONE-:[772..772] *))
+              (VP (TO:[773..775] to)
+                (VP (VB:[776..783] convert)
+                  (NP (NN:[784..794] p-tyramine) (CC:[795..798] and)
+                      (NN:[799..809] m-tyramine))
+                  (PP (TO:[810..812] to)
+                    (NP (NN:[813..821] dopamine))))))))))
+    (.:[821..822] .)))
+
+;sentence 8 Span:823..1003
+;In studies with human  hepatic microsomes, the hydroxylation of tyramine to
+;dopamine was inhibited by  bufuralol, a typical substrate for CYP2D isoforms,
+;and anti-CYP2D1 antiserum.
+;[887..895]:substance:"tyramine"
+;[899..907]:substance:"dopamine"
+;[926..935]:substance:"bufuralol"
+;[947..956]:substance:"substrate"
+;[961..975]:cyp450:"CYP2D isoforms"
+;[981..1002]:substance:"anti-CYP2D1 antiserum"
+(SENT
+  (S
+    (PP (IN:[823..825] In)
+      (NP
+        (NP (NNS:[826..833] studies))
+        (PP (IN:[834..838] with)
+          (NP (JJ:[839..844] human) (JJ:[846..853] hepatic)
+              (NNS:[854..864] microsomes)))))
+    (,:[864..865] ,)
+    (NP-SBJ-2
+      (NP (DT:[866..869] the) (NN:[870..883] hydroxylation))
+      (PP (IN:[884..886] of)
+        (NP (NN:[887..895] tyramine)))
+      (PP (TO:[896..898] to)
+        (NP (NN:[899..907] dopamine))))
+    (VP (VBD:[908..911] was)
+      (VP (VBN:[912..921] inhibited)
+        (NP-2 (-NONE-:[921..921] *))
+        (PP (IN:[922..924] by)
+          (NP-LGS
+            (NP
+              (NP (NN:[926..935] bufuralol))
+              (,:[935..936] ,)
+              (NP
+                (NP (DT:[937..938] a) (JJ:[939..946] typical)
+                    (NN:[947..956] substrate))
+                (PP (IN:[957..960] for)
+                  (NP (NN:[961..966] CYP2D) (NNS:[967..975] isoforms)))))
+            (,:[975..976] ,) (CC:[977..980] and)
+            (NP
+              (NML (AFX:[981..985] anti) (HYPH:[985..986] -)
+                   (NN:[986..992] CYP2D1))
+              (NN:[993..1002] antiserum))))))
+    (.:[1002..1003] .)))
+
+;sentence 9 Span:1005..1096
+;This is the first report showing that CYP2D is capable of converting tyramine
+;to  dopamine.
+;[1043..1048]:cyp450:"CYP2D"
+;[1074..1082]:substance:"tyramine"
+;[1087..1095]:substance:"dopamine"
+(SENT
+  (S
+    (NP-SBJ (DT:[1005..1009] This))
+    (VP (VBZ:[1010..1012] is)
+      (NP-PRD
+        (NP (DT:[1013..1016] the) (JJ:[1017..1022] first)
+            (NN:[1023..1029] report))
+        (VP (VBG:[1030..1037] showing)
+          (SBAR (IN:[1038..1042] that)
+            (S
+              (NP-SBJ-1 (NN:[1043..1048] CYP2D))
+              (VP (VBZ:[1049..1051] is)
+                (ADJP-PRD (JJ:[1052..1059] capable)
+                  (PP (IN:[1060..1062] of)
+                    (S-NOM
+                      (NP-SBJ-1 (-NONE-:[1062..1062] *))
+                      (VP (VBG:[1063..1073] converting)
+                        (NP (NN:[1074..1082] tyramine))
+                        (PP (TO:[1083..1085] to)
+                          (NP (NN:[1087..1095] dopamine)))))))))))))
+    (.:[1095..1096] .)))
+
+;sentence 10 Span:1097..1239
+;The Km values of CYP2D6, expressed in yeast, for p-tyramine and  m-tyramine
+;were 190.1 +/- 19.5 microM and 58.2 +/- 13.8 microM, respectively.
+;[1101..1103]:quantitative-name:"Km"
+;[1114..1120]:cyp450:"CYP2D6"
+;[1146..1156]:substance:"p-tyramine"
+;[1162..1172]:substance:"m-tyramine"
+;[1178..1192]:quantitative-value:"190.1 +/- 19.5"
+;[1193..1199]:quantitative-units:"microM"
+;[1204..1217]:quantitative-value:"58.2 +/- 13.8"
+;[1218..1224]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1097..1100] The) (NN:[1101..1103] Km) (NNS:[1104..1110] values))
+      (PP (IN:[1111..1113] of)
+        (NP
+          (NP (NN:[1114..1120] CYP2D6))
+          (,:[1120..1121] ,)
+          (VP (VBN:[1122..1131] expressed)
+            (NP (-NONE-:[1131..1131] *))
+            (PP-LOC (IN:[1132..1134] in)
+              (NP (NN:[1135..1140] yeast))))))
+      (,:[1140..1141] ,)
+      (PP (IN:[1142..1145] for)
+        (NP (NN:[1146..1156] p-tyramine) (CC:[1157..1160] and)
+            (NN:[1162..1172] m-tyramine))))
+    (VP (VBD:[1173..1177] were)
+      (NP-PRD
+        (NP
+          (QP (CD:[1178..1183] 190.1) (SYM:[1184..1187] +/-)
+              (CD:[1188..1192] 19.5))
+          (NN:[1193..1199] microM))
+        (CC:[1200..1203] and)
+        (NP
+          (QP (CD:[1204..1208] 58.2) (SYM:[1209..1212] +/-)
+              (CD:[1213..1217] 13.8))
+          (NN:[1218..1224] microM))
+        (,:[1224..1225] ,)
+        (ADVP (RB:[1226..1238] respectively))))
+    (.:[1238..1239] .)))
+
+;sentence 11 Span:1241..1403
+;Tyramine is an endogenous compound which exists in the brain as a trace amine
+; but is also an exogenous compound which is found in foods such as cheese and
+; wine.
+;[1241..1249]:substance:"Tyramine"
+;[1267..1275]:substance:"compound"
+;[1313..1318]:substance:"amine"
+;[1345..1353]:substance:"compound"
+;[1372..1377]:substance:"foods"
+;[1386..1392]:substance:"cheese"
+;[1398..1402]:substance:"wine"
+(SENT
+  (S
+    (NP-SBJ (NN:[1241..1249] Tyramine))
+    (VP
+      (VP (VBZ:[1250..1252] is)
+        (NP-PRD
+          (NP (DT:[1253..1255] an) (JJ:[1256..1266] endogenous)
+              (NN:[1267..1275] compound))
+          (SBAR
+            (WHNP-2 (WDT:[1276..1281] which))
+            (S
+              (NP-SBJ-2 (-NONE-:[1281..1281] *T*))
+              (VP (VBZ:[1282..1288] exists)
+                (PP-LOC (IN:[1289..1291] in)
+                  (NP (DT:[1292..1295] the) (NN:[1296..1301] brain)))
+                (PP (IN:[1302..1304] as)
+                  (NP (DT:[1305..1306] a) (NN:[1307..1312] trace)
+                      (NN:[1313..1318] amine))))))))
+      (CC:[1320..1323] but)
+      (VP (VBZ:[1324..1326] is)
+        (ADVP (RB:[1327..1331] also))
+        (NP-PRD
+          (NP (DT:[1332..1334] an) (JJ:[1335..1344] exogenous)
+              (NN:[1345..1353] compound))
+          (SBAR
+            (WHNP-1 (WDT:[1354..1359] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[1359..1359] *T*))
+              (VP (VBZ:[1360..1362] is)
+                (VP (VBN:[1363..1368] found)
+                  (NP-1 (-NONE-:[1368..1368] *))
+                  (PP-LOC (IN:[1369..1371] in)
+                    (NP
+                      (NP (NNS:[1372..1377] foods))
+                      (PP (JJ:[1378..1382] such) (IN:[1383..1385] as)
+                        (NP (NN:[1386..1392] cheese) (CC:[1393..1396] and)
+                            (NN:[1398..1402] wine))))))))))))
+    (.:[1402..1403] .)))
+
+;sentence 12 Span:1404..1513
+;Our results suggest that dopamine is formed from endogenous and/or  exogenous
+;tyramine by this CYP2D isoform.
+;[1429..1437]:substance:"dopamine"
+;[1482..1490]:substance:"tyramine"
+;[1499..1512]:cyp450:"CYP2D isoform"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1404..1407] Our) (NNS:[1408..1415] results))
+    (VP (VBP:[1416..1423] suggest)
+      (SBAR (IN:[1424..1428] that)
+        (S
+          (NP-SBJ-2 (NN:[1429..1437] dopamine))
+          (VP (VBZ:[1438..1440] is)
+            (VP (VBN:[1441..1447] formed)
+              (NP-2 (-NONE-:[1447..1447] *))
+              (PP (IN:[1448..1452] from)
+                (NP
+                  (NP (JJ:[1453..1463] endogenous)
+                    (NML-1 (-NONE-:[1463..1463] *P*)))
+                  (CC:[1464..1470] and/or)
+                  (NP (JJ:[1472..1481] exogenous)
+                    (NML-1 (NN:[1482..1490] tyramine)))))
+              (PP (IN:[1491..1493] by)
+                (NP-LGS (DT:[1494..1498] this)
+                   (NN:[1499..1504] CYP2D) (NN:[1505..1512] isoform))))))))
+    (.:[1512..1513] .)))
+
+;section 13 Span:1517..1561
+;PMID: 9731223 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1517..1521] PMID) (::[1521..1522] :) (CD:[1523..1530] 9731223)
+        (NN:[1531..1532] -LSB-) (NNP:[1532..1538] PubMed) (::[1539..1540] -)
+        (NN:[1541..1548] indexed) (IN:[1549..1552] for)
+        (NNP:[1553..1561] MEDLINE-RSB-)))

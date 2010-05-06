@@ -1,0 +1,395 @@
+;PMID: 3347052
+;source_file_887.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..38]
+;1)sentence:[e:45..164] = [t:45..164]
+;2)section:[e:168..214] = [t:168..213]
+;3)section:[e:218..313] = [t:218..313]
+;4)sentence:[e:317..464] = [t:317..464]
+;5)sentence:[e:466..588] = [t:466..588]
+;6)sentence:[e:589..750] = [t:589..750]
+;7)sentence:[e:751..886] = [t:751..886]
+;8)sentence:[e:887..1040] = [t:887..1040]
+;9)sentence:[e:1041..1171] = [t:1041..1171]
+;10)sentence:[e:1172..1384] = [t:1172..1384]
+;11)sentence:[e:1385..1663] = [t:1385..1663]
+;12)section:[e:1667..1711] = [t:1667..1710]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:0..39][t:0..38]
+;ERROR_Section end mismatch[e:168..214][t:168..213]
+;ERROR_Section end mismatch[e:1667..1711][t:1667..1710]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[38..39] .
+;ERROR_Token in entity file but not tree[213..214] .
+;ERROR_Token in entity file but not tree[1710..1711] ]
+
+;section 0 Span:0..38
+;J Steroid Biochem. 1988 Jan;29(1):63-8
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Steroid) (NNP:[10..17] Biochem)
+        (.:[17..18] .) (CD:[19..23] 1988) (NNP:[24..27] Jan) (::[27..28] ;)
+        (CD:[28..30] 29) (-LRB-:[30..31] -LRB-) (CD:[31..32] 1)
+        (-RRB-:[32..33] -RRB-) (::[33..34] :) (CD:[34..36] 63) (::[36..37] -)
+        (CD:[37..38] 8)))
+
+(ORPH .)
+
+;sentence 1 Span:45..164
+;RU486 inhibits induction of aromatase by dexamethasone via glucocorticoid 
+;receptor in cultured human skin fibroblasts.
+;[45..50]:substance:"RU486"
+;[73..82]:cyp450:"aromatase"
+;[86..99]:substance:"dexamethasone"
+;[104..128]:substance:"glucocorticoid  receptor"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[45..50] RU486))
+    (VP (VBZ:[51..59] inhibits)
+      (NP
+        (NP (NN:[60..69] induction))
+        (PP (IN:[70..72] of)
+          (NP (NN:[73..82] aromatase)))
+        (PP (IN:[83..85] by)
+          (NP (NN:[86..99] dexamethasone)))
+        (PP (IN:[100..103] via)
+          (NP (JJ:[104..118] glucocorticoid) (NN:[120..128] receptor))))
+      (PP-LOC (IN:[129..131] in)
+        (NP (JJ:[132..140] cultured) (JJ:[141..146] human) (NN:[147..151] skin)
+            (NNS:[152..163] fibroblasts))))
+    (.:[163..164] .)))
+;ERROR_Orphan Text from Tree File[38..45] .
+
+;section 2 Span:168..213
+;Nawata H, Ono K, Ohashi M, Kato K, Ibayashi H
+(SEC
+  (FRAG (NNP:[168..174] Nawata) (NNP:[175..176] H) (,:[176..177] ,)
+        (NNP:[178..181] Ono) (NNP:[182..183] K) (,:[183..184] ,)
+        (NNP:[185..191] Ohashi) (NNP:[192..193] M) (,:[193..194] ,)
+        (NNP:[195..199] Kato) (NNP:[200..201] K) (,:[201..202] ,)
+        (NNP:[203..211] Ibayashi) (NNP:[212..213] H)))
+
+(ORPH .)
+
+;section 3 Span:218..313
+;Third Department of Internal Medicine, Faculty of Medicine, Kyushu
+;University,  Fukuoka, Japan.
+(SEC
+  (FRAG (NNP:[218..223] Third) (NNP:[224..234] Department) (IN:[235..237] of)
+        (NNP:[238..246] Internal) (NNP:[247..255] Medicine) (,:[255..256] ,)
+        (NNP:[257..264] Faculty) (IN:[265..267] of) (NNP:[268..276] Medicine)
+        (,:[276..277] ,) (NNP:[278..284] Kyushu) (NNP:[285..295] University)
+        (,:[295..296] ,) (NNP:[298..305] Fukuoka) (,:[305..306] ,)
+        (NNP:[307..312] Japan) (.:[312..313] .)))
+;ERROR_Orphan Text from Tree File[213..218] .
+
+;sentence 4 Span:317..464
+;Effects of RU486 on the induction of aromatase by dexamethasone via 
+;glucocorticoid receptor were determined using cultured human skin
+;fibroblasts.
+;[328..333]:substance:"RU486"
+;[354..363]:cyp450:"aromatase"
+;[367..380]:substance:"dexamethasone"
+;[386..409]:substance:"glucocorticoid receptor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[317..324] Effects))
+      (PP (IN:[325..327] of)
+        (NP (NN:[328..333] RU486)))
+      (PP (IN:[334..336] on)
+        (NP
+          (NP (DT:[337..340] the) (NN:[341..350] induction))
+          (PP (IN:[351..353] of)
+            (NP (NN:[354..363] aromatase)))
+          (PP (IN:[364..366] by)
+            (NP (NN:[367..380] dexamethasone)))
+          (PP (IN:[381..384] via)
+            (NP (JJ:[386..400] glucocorticoid) (NN:[401..409] receptor))))))
+    (VP (VBD:[410..414] were)
+      (VP (VBN:[415..425] determined)
+        (NP-1 (-NONE-:[425..425] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[425..425] *))
+          (VP (VBG:[426..431] using)
+            (NP (JJ:[432..440] cultured) (JJ:[441..446] human)
+                (NN:[447..451] skin) (NNS:[452..463] fibroblasts))))))
+    (.:[463..464] .)))
+
+;sentence 5 Span:466..588
+;Competition of [3H]dexamethasone binding to the cytosol receptor was 7 times 
+;stronger with RU486 than with dexamethasone.
+;[481..498]:substance:"[3H]dexamethasone"
+;[522..530]:substance:"receptor"
+;[535..542]:quantitative-value:"7 times"
+;[558..563]:substance:"RU486"
+;[574..587]:substance:"dexamethasone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[466..477] Competition))
+      (PP (IN:[478..480] of)
+        (NP
+          (NP (NN:[481..498] -LSB-3H-RSB-dexamethasone) (NN:[499..506] binding))
+          (PP (TO:[507..509] to)
+            (NP (DT:[510..513] the) (NN:[514..521] cytosol)
+                (NN:[522..530] receptor))))))
+    (VP (VBD:[531..534] was)
+      (ADJP-PRD
+        (ADJP
+          (NP
+            (QP (CD:[535..536] 7) (NNS:[537..542] times)))
+          (JJR:[544..552] stronger))
+        (PP-1 (-NONE-:[552..552] *ICH*)))
+      (PP (IN:[553..557] with)
+        (NP (NN:[558..563] RU486)))
+      (PP-1 (IN:[564..568] than)
+        (PP (IN:[569..573] with)
+          (NP (NN:[574..587] dexamethasone)))))
+    (.:[587..588] .)))
+
+;sentence 6 Span:589..750
+;The order of the strength of  competition was RU486 greater than
+;dexamethasone greater than betamethasone  greater than prednisolone greater
+;than hydrocortisone.
+;[635..640]:substance:"RU486"
+;[654..667]:substance:"dexamethasone"
+;[681..694]:substance:"betamethasone"
+;[709..721]:substance:"prednisolone"
+;[735..749]:substance:"hydrocortisone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[589..592] The) (NN:[593..598] order))
+      (PP (IN:[599..601] of)
+        (NP
+          (NP (DT:[602..605] the) (NN:[606..614] strength))
+          (PP (IN:[615..617] of)
+            (NP (NN:[619..630] competition))))))
+    (VP (VBD:[631..634] was)
+      (NP-PRD
+        (NP (NN:[635..640] RU486))
+        (ADJP
+          (ADJP (JJR:[641..648] greater))
+          (PP (IN:[649..653] than)
+            (NP
+              (NP (NN:[654..667] dexamethasone))
+              (ADJP
+                (ADJP (JJR:[668..675] greater))
+                (PP (IN:[676..680] than)
+                  (NP
+                    (NP (NN:[681..694] betamethasone))
+                    (ADJP
+                      (ADJP (JJR:[696..703] greater))
+                      (PP (IN:[704..708] than)
+                        (NP
+                          (NP (NN:[709..721] prednisolone))
+                          (ADJP
+                            (ADJP (JJR:[722..729] greater))
+                            (PP (IN:[730..734] than)
+                              (NP (NN:[735..749] hydrocortisone)))))))))))))))
+    (.:[749..750] .)))
+
+;sentence 7 Span:751..886
+;RU486 abolished a  specific 8.6 S [3H]dexamethasone binding peak in the
+;cytosol, determined using a  sucrose density gradient analysis.
+;[751..756]:substance:"RU486"
+;[779..782]:quantitative-value:"8.6"
+;[783..784]:quantitative-units:"S"
+;[785..802]:substance:"[3H]dexamethasone"
+;[852..859]:substance:"sucrose"
+(SENT
+  (S
+    (NP-SBJ (NN:[751..756] RU486))
+    (VP (VBD:[757..766] abolished)
+      (NP
+        (NP
+          (NP (DT:[767..768] a) (JJ:[770..778] specific)
+            (NML (CD:[779..782] 8.6) (NN:[783..784] S)
+                 (NN:[785..802] -LSB-3H-RSB-dexamethasone))
+            (NN:[803..810] binding) (NN:[811..815] peak))
+          (PP (IN:[816..818] in)
+            (NP (DT:[819..822] the) (NN:[823..830] cytosol))))
+        (,:[830..831] ,)
+        (VP (VBN:[832..842] determined)
+          (NP (-NONE-:[842..842] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[842..842] *))
+            (VP (VBG:[843..848] using)
+              (NP (DT:[849..850] a) (NN:[852..859] sucrose)
+                  (NN:[860..867] density) (NN:[868..876] gradient)
+                  (NN:[877..885] analysis)))))))
+    (.:[885..886] .)))
+
+;sentence 8 Span:887..1040
+;Dexamethasone markedly induced aromatase and  this event was strongly
+;suppressed by RU486, in a dose-dependent manner, in the  cultured skin
+;fibroblasts.
+;[887..900]:substance:"Dexamethasone"
+;[918..927]:cyp450:"aromatase"
+;[971..976]:substance:"RU486"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[887..900] Dexamethasone))
+      (ADVP (RB:[901..909] markedly))
+      (VP (VBD:[910..917] induced)
+        (NP (NN:[918..927] aromatase))))
+    (CC:[928..931] and)
+    (S
+      (NP-SBJ-1 (DT:[933..937] this) (NN:[938..943] event))
+      (VP (VBD:[944..947] was)
+        (ADVP (RB:[948..956] strongly))
+        (VP (VBN:[957..967] suppressed)
+          (NP-1 (-NONE-:[967..967] *))
+          (PP (IN:[968..970] by)
+            (NP-LGS (NN:[971..976] RU486)))
+          (,:[976..977] ,)
+          (PP-MNR (IN:[978..980] in)
+            (NP (DT:[981..982] a)
+              (ADJP (NN:[983..987] dose) (HYPH:[987..988] -)
+                    (JJ:[988..997] dependent))
+              (NN:[998..1004] manner)))
+          (,:[1004..1005] ,)
+          (PP-LOC (IN:[1006..1008] in)
+            (NP (DT:[1009..1012] the) (JJ:[1014..1022] cultured)
+                (NN:[1023..1027] skin) (NNS:[1028..1039] fibroblasts))))))
+    (.:[1039..1040] .)))
+
+;sentence 9 Span:1041..1171
+;A linear correlation between the strength of  competition and the induction
+;of aromatase of various glucocorticoids was  observed.
+;[1120..1129]:cyp450:"aromatase"
+;[1141..1156]:substance:"glucocorticoids"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1041..1042] A) (JJ:[1043..1049] linear)
+          (NN:[1050..1061] correlation))
+      (PP (IN:[1062..1069] between)
+        (NP
+          (NP
+            (NP (DT:[1070..1073] the) (NN:[1074..1082] strength))
+            (PP (IN:[1083..1085] of)
+              (NP (NN:[1087..1098] competition))))
+          (CC:[1099..1102] and)
+          (NP
+            (NP (DT:[1103..1106] the) (NN:[1107..1116] induction))
+            (PP (IN:[1117..1119] of)
+              (NP (NN:[1120..1129] aromatase)))
+            (PP (IN:[1130..1132] of)
+              (NP (JJ:[1133..1140] various) (NNS:[1141..1156] glucocorticoids)))))))
+    (VP (VBD:[1157..1160] was)
+      (VP (VBN:[1162..1170] observed)
+        (NP-1 (-NONE-:[1170..1170] *))))
+    (.:[1170..1171] .)))
+
+;sentence 10 Span:1172..1384
+;RU486 non-competitively inhibited aromatase induction by dexamethasone 
+;determined from a double reciprocal plot of aromatase activity, with respect
+;to  [3H]androstenedione concentration in the presence of RU486.
+;[1172..1177]:substance:"RU486"
+;[1206..1215]:cyp450:"aromatase"
+;[1229..1242]:substance:"dexamethasone"
+;[1288..1297]:cyp450:"aromatase"
+;[1325..1344]:substance:"[3H]androstenedione"
+;[1378..1383]:substance:"RU486"
+(SENT
+  (S
+    (NP-SBJ (NN:[1172..1177] RU486))
+    (ADVP (AFX:[1178..1181] non) (HYPH:[1181..1182] -)
+          (RB:[1182..1195] competitively))
+    (VP (VBD:[1196..1205] inhibited)
+      (VP
+        (NP
+          (NP (NN:[1206..1215] aromatase) (NN:[1216..1225] induction))
+          (PP (IN:[1226..1228] by)
+            (NP (NN:[1229..1242] dexamethasone)))))
+      (S-ADV
+        (NP-SBJ (-NONE-:[1242..1242] *))
+        (VP (VBN:[1244..1254] determined)
+          (NP (-NONE-:[1254..1254] *))
+          (PP (IN:[1255..1259] from)
+            (NP
+              (NP (DT:[1260..1261] a) (JJ:[1262..1268] double)
+                  (JJ:[1269..1279] reciprocal) (NN:[1280..1284] plot))
+              (PP (IN:[1285..1287] of)
+                (NP (NN:[1288..1297] aromatase) (NN:[1298..1306] activity)))))))
+      (,:[1306..1307] ,)
+      (PP (IN:[1308..1312] with)
+        (NP
+          (NP (NN:[1313..1320] respect))
+          (PP (TO:[1321..1323] to)
+            (NP
+              (NP (NN:[1325..1344] -LSB-3H-RSB-androstenedione)
+                  (NN:[1345..1358] concentration))
+              (PP (IN:[1359..1361] in)
+                (NP
+                  (NP (DT:[1362..1365] the) (NN:[1366..1374] presence))
+                  (PP (IN:[1375..1377] of)
+                    (NP (NN:[1378..1383] RU486))))))))))
+    (.:[1383..1384] .)))
+
+;sentence 11 Span:1385..1663
+;These results show  that RU486 is a peripheral noncompetitive
+;antiglucocorticoid on aromatase  induction by glucocorticoid in human skin
+;fibroblasts and that aromatase  induction is a good marker for the biological
+;function of glucocorticoid  receptor in human skin fibroblasts.
+;[1410..1415]:substance:"RU486"
+;[1447..1465]:substance:"antiglucocorticoid"
+;[1469..1478]:cyp450:"aromatase"
+;[1493..1507]:substance:"glucocorticoid"
+;[1543..1552]:cyp450:"aromatase"
+;[1612..1636]:substance:"glucocorticoid  receptor"
+(SENT
+  (S
+    (NP-SBJ (DT:[1385..1390] These) (NNS:[1391..1398] results))
+    (VP (VBP:[1399..1403] show)
+      (SBAR
+        (SBAR (IN:[1405..1409] that)
+          (S
+            (NP-SBJ (NN:[1410..1415] RU486))
+            (VP (VBZ:[1416..1418] is)
+              (NP-PRD
+                (NP (DT:[1419..1420] a) (JJ:[1421..1431] peripheral)
+                    (JJ:[1432..1446] noncompetitive)
+                    (NN:[1447..1465] antiglucocorticoid))
+                (PP (IN:[1466..1468] on)
+                  (NP
+                    (NP (NN:[1469..1478] aromatase) (NN:[1480..1489] induction))
+                    (PP (IN:[1490..1492] by)
+                      (NP (NN:[1493..1507] glucocorticoid)))
+                    (PP-LOC (IN:[1508..1510] in)
+                      (NP (JJ:[1511..1516] human) (NN:[1517..1521] skin)
+                          (NNS:[1522..1533] fibroblasts)))))))))
+        (CC:[1534..1537] and)
+        (SBAR (IN:[1538..1542] that)
+          (S
+            (NP-SBJ (NN:[1543..1552] aromatase) (NN:[1554..1563] induction))
+            (VP (VBZ:[1564..1566] is)
+              (NP-PRD
+                (NP (DT:[1567..1568] a) (JJ:[1569..1573] good)
+                    (NN:[1574..1580] marker))
+                (PP (IN:[1581..1584] for)
+                  (NP
+                    (NP (DT:[1585..1588] the) (JJ:[1589..1599] biological)
+                        (NN:[1600..1608] function))
+                    (PP (IN:[1609..1611] of)
+                      (NP (JJ:[1612..1626] glucocorticoid)
+                          (NN:[1628..1636] receptor))))))
+              (PP-LOC (IN:[1637..1639] in)
+                (NP (JJ:[1640..1645] human) (NN:[1646..1650] skin)
+                    (NNS:[1651..1662] fibroblasts))))))))
+    (.:[1662..1663] .)))
+
+;section 12 Span:1667..1710
+;PMID: 3347052 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1667..1671] PMID) (::[1671..1672] :) (CD:[1673..1680] 3347052)
+        (NN:[1681..1682] -LSB-) (NNP:[1682..1688] PubMed) (::[1689..1690] -)
+        (NN:[1691..1698] indexed) (IN:[1699..1702] for)
+        (NNP:[1703..1710] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1710..EOF] ]
+
+(ORPH -RSB-)

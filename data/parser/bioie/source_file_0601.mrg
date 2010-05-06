@@ -1,0 +1,122 @@
+;PMID: 3424709
+;source_file_1886.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:36..113] = [t:36..113]
+;2)section:[e:117..137] = [t:117..137]
+;3)section:[e:141..175] = [t:141..175]
+;4)sentence:[e:179..519] = [t:179..519]
+;5)section:[e:523..567] = [t:523..567]
+
+;section 0 Span:0..30
+;Vopr Onkol. 1987;33(12):67-71.
+(SEC
+  (FRAG (NNP:[0..4] Vopr) (NNP:[5..10] Onkol) (.:[10..11] .) (CD:[12..16] 1987)
+        (CD:[16..19] ;33) (-LRB-:[19..20] -LRB-) (CD:[20..22] 12)
+        (-RRB-:[22..23] -RRB-) (::[23..24] :) (CD:[24..26] 67) (::[26..27] -)
+        (CD:[27..29] 71) (.:[29..30] .)))
+
+;sentence 1 Span:36..113
+;[Metabolic characteristics of xenobiotics in the liver of tumor-bearing
+;rats]
+;[66..77]:substance:"xenobiotics"
+(SENT
+  (NP-HLN (-LRB-:[36..37] -LSB-)
+    (NP (JJ:[37..46] Metabolic) (NNS:[47..62] characteristics))
+    (PP (IN:[63..65] of)
+      (NP (NNS:[66..77] xenobiotics)))
+    (PP (IN:[78..80] in)
+      (NP
+        (NP (DT:[81..84] the) (NN:[85..90] liver))
+        (PP (IN:[91..93] of)
+          (NP
+            (ADJP (NN:[94..99] tumor) (HYPH:[99..100] -)
+                  (VBG:[100..107] bearing))
+            (NNS:[108..112] rats)))))
+    (-RRB-:[112..113] -RSB-)))
+
+;section 2 Span:117..137
+;[Article in Russian]
+(SEC
+  (FRAG (-LRB-:[117..118] -LSB-) (NN:[118..125] Article) (IN:[126..128] in)
+        (NNP:[129..136] Russian) (-RRB-:[136..137] -RSB-)))
+
+;section 3 Span:141..175
+;Komov VP, Firsova VI, Vennikas OR.
+(SEC
+  (FRAG (NNP:[141..146] Komov) (NN:[147..149] VP) (,:[149..150] ,)
+        (NNP:[151..158] Firsova) (NNP:[159..161] VI) (,:[161..162] ,)
+        (NNP:[163..171] Vennikas) (NNP:[172..175] OR.)))
+
+;sentence 4 Span:179..519
+;A study of the condition and function of a multienzymatic monoxygenase system
+;in  liver microsomes of rats bearing experimental Pliss' lymphosarcoma and
+;Zajdela's  ascites hepatoma showed synthesis and function of the key enzymes
+;of the  hydroxylating microsomes of the liver being inhibited and,
+;consequently, drug  metabolism slowed down.
+;[237..249]:substance:"monoxygenase"
+;[401..408]:substance:"enzymes"
+;[490..494]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[179..180] A) (NN:[181..186] study))
+      (PP (IN:[187..189] of)
+        (NP
+          (NP (DT:[190..193] the) (NN:[194..203] condition) (CC:[204..207] and)
+              (NN:[208..216] function))
+          (PP (IN:[217..219] of)
+            (NP
+              (NP (DT:[220..221] a) (JJ:[222..236] multienzymatic)
+                  (NN:[237..249] monoxygenase) (NN:[250..256] system))
+              (PP (IN:[257..259] in)
+                (NP
+                  (NP (NN:[261..266] liver) (NNS:[267..277] microsomes))
+                  (PP (IN:[278..280] of)
+                    (NP
+                      (NP (NNS:[281..285] rats))
+                      (VP (VBG:[286..293] bearing)
+                        (NP
+                          (NP (JJ:[294..306] experimental)
+                            (NP (NNP:[307..312] Pliss) (POS:[312..313] '))
+                            (NN:[314..327] lymphosarcoma))
+                          (CC:[328..331] and)
+                          (NP
+                            (NP (NNP:[332..339] Zajdela) (POS:[339..341] 's))
+                            (NNS:[343..350] ascites) (NN:[351..359] hepatoma)))))))))))))
+    (VP (VBD:[360..366] showed)
+      (S
+        (S
+          (NP-SBJ
+            (NP (NN:[367..376] synthesis) (CC:[377..380] and)
+                (NN:[381..389] function))
+            (PP (IN:[390..392] of)
+              (NP
+                (NP (DT:[393..396] the) (JJ:[397..400] key)
+                    (NNS:[401..408] enzymes))
+                (PP (IN:[409..411] of)
+                  (NP
+                    (NP (DT:[412..415] the) (VBG:[417..430] hydroxylating)
+                        (NNS:[431..441] microsomes))
+                    (PP (IN:[442..444] of)
+                      (NP (DT:[445..448] the) (NN:[449..454] liver))))))))
+          (VP (VBG:[455..460] being)
+            (VP (VBN:[461..470] inhibited))))
+        (CC:[471..474] and) (,:[474..475] ,)
+        (S
+          (ADVP (RB:[476..488] consequently))
+          (,:[488..489] ,)
+          (NP-SBJ (NN:[490..494] drug) (NN:[496..506] metabolism))
+          (VP (VBD:[507..513] slowed)
+            (PRT (RB:[514..518] down))))))
+    (.:[518..519] .)))
+
+;section 5 Span:523..567
+;PMID: 3424709 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[523..527] PMID) (::[527..528] :) (CD:[529..536] 3424709)
+        (NN:[537..538] -LSB-) (NNP:[538..544] PubMed) (::[545..546] -)
+        (NN:[547..554] indexed) (IN:[555..558] for)
+        (NNP:[559..567] MEDLINE-RSB-)))

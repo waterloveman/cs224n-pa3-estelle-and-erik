@@ -1,0 +1,400 @@
+;PMID: 2657575
+;source_file_1241.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..90] = [t:35..90]
+;2)section:[e:94..130] = [t:94..130]
+;3)section:[e:134..236] = [t:134..236]
+;4)sentence:[e:240..412] = [t:240..412]
+;5)sentence:[e:413..578] = [t:413..578]
+;6)sentence:[e:579..629] = [t:579..629]
+;7)sentence:[e:630..823] = [t:630..823]
+;8)sentence:[e:824..929] = [t:824..929]
+;9)sentence:[e:930..1164] = [t:930..1164]
+;10)sentence:[e:1165..1381] = [t:1165..1381]
+;11)sentence:[e:1382..1657] = [t:1382..1657]
+;12)section:[e:1661..1705] = [t:1661..1705]
+
+;section 0 Span:0..30
+;Oncogene  1989 May;4(5):609-14
+(SEC
+  (FRAG (IN:[0..8] Oncogene) (CD:[10..14] 1989) (NNP:[15..18] May)
+        (CD:[18..21] ;4-LRB-) (CD:[21..22] 5) (-RRB-:[22..23] -RRB-)
+        (CD:[23..27] :609) (::[27..28] -) (CD:[28..30] 14)))
+
+;sentence 1 Span:35..90
+;Mechanisms of ras mutation in myelodysplastic syndrome.
+;[49..52]:gene-rna:"ras"
+;[65..89]:malignancy:"myelodysplastic syndrome"
+(SENT
+  (NP-HLN
+    (NP (NNS:[35..45] Mechanisms))
+    (PP (IN:[46..48] of)
+      (NP (NN:[49..52] ras) (NN:[53..61] mutation)))
+    (PP (IN:[62..64] in)
+      (NP (JJ:[65..80] myelodysplastic) (NN:[81..89] syndrome)))
+    (.:[89..90] .)))
+
+;section 2 Span:94..130
+;Yunis JJ, Boot AJ, Mayer MG, Bos JL.
+(SEC
+  (FRAG (NNP:[94..99] Yunis) (NNP:[100..102] JJ) (,:[102..103] ,)
+        (NNP:[104..108] Boot) (NNP:[109..111] AJ) (,:[111..112] ,)
+        (NNP:[113..118] Mayer) (NNP:[119..121] MG) (,:[121..122] ,)
+        (NNP:[123..126] Bos) (NNP:[127..130] JL.)))
+
+;section 3 Span:134..236
+;Department of Laboratory Medicine and Pathology, University of Minnesota
+;Medical  School, Minneapolis.
+(SEC
+  (FRAG (NNP:[134..144] Department) (IN:[145..147] of)
+        (NNP:[148..158] Laboratory) (NNP:[159..167] Medicine)
+        (CC:[168..171] and) (NNP:[172..181] Pathology) (,:[181..182] ,)
+        (NNP:[183..193] University) (IN:[194..196] of)
+        (NNP:[197..206] Minnesota) (NNP:[207..214] Medical)
+        (NNP:[216..222] School) (,:[222..223] ,) (NNP:[224..235] Minneapolis)
+        (.:[235..236] .)))
+
+;sentence 4 Span:240..412
+;Using synthetic oligonucleotide hybridization, we have found a ras mutation
+;in  11 of 27 patients (41%) with primary or non-therapy related
+;myelodysplastic  syndrome (MDS).
+;[303..306]:gene-rna:"ras"
+;[380..405]:malignancy:"myelodysplastic  syndrome"
+;[407..410]:malignancy:"MDS"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[240..240] *))
+      (VP (VBG:[240..245] Using)
+        (NP (JJ:[246..255] synthetic) (NN:[256..271] oligonucleotide)
+            (NN:[272..285] hybridization))))
+    (,:[285..286] ,)
+    (NP-SBJ (PRP:[287..289] we))
+    (VP (VBP:[290..294] have)
+      (VP (VBN:[295..300] found)
+        (NP (DT:[301..302] a) (NN:[303..306] ras) (NN:[307..315] mutation))
+        (PP-LOC (IN:[316..318] in)
+          (NP
+            (NP (CD:[320..322] 11))
+            (PP (IN:[323..325] of)
+              (NP
+                (NP (CD:[326..328] 27) (NNS:[329..337] patients)
+                  (PRN (-LRB-:[338..339] -LRB-)
+                    (NP (CD:[339..341] 41) (NN:[341..342] %))
+                    (-RRB-:[342..343] -RRB-)))
+                (PP (IN:[344..348] with)
+                  (NP
+                    (NP (JJ:[349..356] primary)
+                      (NML-1 (-NONE-:[356..356] *P*)))
+                    (CC:[357..359] or)
+                    (NP
+                      (ADJP (AFX:[360..363] non) (HYPH:[363..364] -)
+                        (ADJP (NN:[364..371] therapy) (VBN:[372..379] related)))
+                      (NML-1
+                        (NML (JJ:[380..395] myelodysplastic)
+                             (NN:[397..405] syndrome))
+                        (NML (-LRB-:[406..407] -LRB-) (NN:[407..410] MDS)
+                             (-RRB-:[410..411] -RRB-))))))))))))
+    (.:[411..412] .)))
+
+;sentence 5 Span:413..578
+;This high incidence of mutation, mainly of the N-ras oncogene,  was generally
+;found in patients with disease progression to acute leukemia (8 of  11
+;patients = 73%).
+;[460..465]:gene-rna:"N-ras"
+;[537..551]:malignancy:"acute leukemia"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[413..417] This) (JJ:[418..422] high) (NN:[423..432] incidence))
+      (PP (IN:[433..435] of)
+        (NP (NN:[436..444] mutation))))
+    (,:[444..445] ,)
+    (PP
+      (ADVP (RB:[446..452] mainly))
+      (IN:[453..455] of)
+      (NP (DT:[456..459] the) (NN:[460..465] N-ras) (NN:[466..474] oncogene)))
+    (,:[474..475] ,)
+    (VP (VBD:[477..480] was)
+      (ADVP (RB:[481..490] generally))
+      (VP (VBN:[491..496] found)
+        (NP-1 (-NONE-:[496..496] *))
+        (PP-LOC (IN:[497..499] in)
+          (NP
+            (NP (NNS:[500..508] patients))
+            (PP (IN:[509..513] with)
+              (NP
+                (NP (NN:[514..521] disease) (NN:[522..533] progression))
+                (PP (TO:[534..536] to)
+                  (NP (JJ:[537..542] acute) (NN:[543..551] leukemia)))))))
+        (PRN (-LRB-:[552..553] -LRB-)
+          (S
+            (NP-SBJ
+              (NP (CD:[553..554] 8))
+              (PP (IN:[555..557] of)
+                (NP (CD:[559..561] 11) (NNS:[562..570] patients))))
+            (VP (SYM:[571..572] =)
+              (NP (CD:[573..575] 73) (NN:[575..576] %))))
+          (-RRB-:[576..577] -RRB-))))
+    (.:[577..578] .)))
+
+;sentence 6 Span:579..629
+;Two general mechanisms of ras mutation were found.
+;[605..608]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[579..582] Two) (JJ:[583..590] general)
+          (NNS:[591..601] mechanisms))
+      (PP (IN:[602..604] of)
+        (NP (NN:[605..608] ras) (NN:[609..617] mutation))))
+    (VP (VBD:[618..622] were)
+      (VP (VBN:[623..628] found)
+        (NP-1 (-NONE-:[628..628] *))))
+    (.:[628..629] .)))
+
+;sentence 7 Span:630..823
+;In five  patients the ras mutation was present in only a fraction of the
+;cells; sometimes  appearing in late stages of the disease, suggesting that it
+;can occur in a  differentiated cell clone.
+;[652..655]:gene-rna:"ras"
+;[734..760]:malignancy:"late stages of the disease"
+(SENT
+  (S
+    (PP (IN:[630..632] In)
+      (NP (CD:[633..637] five) (NNS:[639..647] patients)))
+    (NP-SBJ (DT:[648..651] the) (NN:[652..655] ras) (NN:[656..664] mutation))
+    (VP (VBD:[665..668] was)
+      (ADJP-PRD (JJ:[669..676] present)
+        (PP (IN:[677..679] in)
+          (NP
+            (NP
+              (ADVP (RB:[680..684] only))
+              (DT:[685..686] a) (NN:[687..695] fraction))
+            (PP (IN:[696..698] of)
+              (NP (DT:[699..702] the) (NNS:[703..708] cells))))))
+      (::[708..709] ;)
+      (S-ADV
+        (NP-SBJ (-NONE-:[709..709] *))
+        (ADVP-TMP (RB:[710..719] sometimes))
+        (VP (VBG:[721..730] appearing)
+          (PP (IN:[731..733] in)
+            (NP
+              (NP (JJ:[734..738] late) (NNS:[739..745] stages))
+              (PP (IN:[746..748] of)
+                (NP (DT:[749..752] the) (NN:[753..760] disease)))))))
+      (,:[760..761] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[761..761] *))
+        (VP (VBG:[762..772] suggesting)
+          (SBAR (IN:[773..777] that)
+            (S
+              (NP-SBJ (PRP:[778..780] it))
+              (VP (MD:[781..784] can)
+                (VP (VB:[785..790] occur)
+                  (PP-LOC (IN:[791..793] in)
+                    (NP (DT:[794..795] a) (VBN:[797..811] differentiated)
+                        (NN:[812..816] cell) (NN:[817..822] clone))))))))))
+    (.:[822..823] .)))
+
+;sentence 8 Span:824..929
+;In six other patients, the ras mutation was present  in the great majority of
+;bone marrow or blood cells.
+;[851..854]:gene-rna:"ras"
+(SENT
+  (S
+    (PP (IN:[824..826] In)
+      (NP (CD:[827..830] six) (JJ:[831..836] other) (NNS:[837..845] patients)))
+    (,:[845..846] ,)
+    (NP-SBJ (DT:[847..850] the) (NN:[851..854] ras) (NN:[855..863] mutation))
+    (VP (VBD:[864..867] was)
+      (ADJP-PRD (JJ:[868..875] present)
+        (PP (IN:[877..879] in)
+          (NP
+            (NP (DT:[880..883] the) (JJ:[884..889] great)
+                (NN:[890..898] majority))
+            (PP (IN:[899..901] of)
+              (NP
+                (NP
+                  (NML (NN:[902..906] bone) (NN:[907..913] marrow))
+                  (NML-1 (-NONE-:[913..913] *P*)))
+                (CC:[914..916] or)
+                (NP (NN:[917..922] blood)
+                  (NML-1 (NNS:[923..928] cells)))))))))
+    (.:[928..929] .)))
+
+;sentence 9 Span:930..1164
+;The mutation was detected  in mature normal lymphocytes and persisted
+;following a complete clinical  remission in two of these patients, implying
+;that the ras mutation can occur in  an early stage of cell differentiation or
+;stem cell.
+;[1085..1088]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[930..933] The) (NN:[934..942] mutation))
+    (VP
+      (VP (VBD:[943..946] was)
+        (VP (VBN:[947..955] detected)
+          (NP-1 (-NONE-:[955..955] *))
+          (PP-LOC (IN:[957..959] in)
+            (NP (JJ:[960..966] mature) (JJ:[967..973] normal)
+                (NNS:[974..985] lymphocytes)))))
+      (CC:[986..989] and)
+      (VP (VBD:[990..999] persisted)
+        (PP (VBG:[1000..1009] following)
+          (NP (DT:[1010..1011] a) (JJ:[1012..1020] complete)
+              (JJ:[1021..1029] clinical) (NN:[1031..1040] remission)))
+        (PP-LOC (IN:[1041..1043] in)
+          (NP
+            (NP (CD:[1044..1047] two))
+            (PP (IN:[1048..1050] of)
+              (NP (DT:[1051..1056] these) (NNS:[1057..1065] patients)))))
+        (,:[1065..1066] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1066..1066] *))
+          (VP (VBG:[1067..1075] implying)
+            (SBAR (IN:[1076..1080] that)
+              (S
+                (NP-SBJ (DT:[1081..1084] the) (NN:[1085..1088] ras)
+                        (NN:[1089..1097] mutation))
+                (VP (MD:[1098..1101] can)
+                  (VP (VB:[1102..1107] occur)
+                    (PP (IN:[1108..1110] in)
+                      (NP
+                        (NP (DT:[1112..1114] an) (JJ:[1115..1120] early)
+                            (NN:[1121..1126] stage))
+                        (PP (IN:[1127..1129] of)
+                          (NP
+                            (NP (NN:[1130..1134] cell)
+                                (NN:[1135..1150] differentiation))
+                            (CC:[1151..1153] or)
+                            (NP (NN:[1154..1158] stem) (NN:[1159..1163] cell))))))))))))))
+    (.:[1163..1164] .)))
+
+;sentence 10 Span:1165..1381
+;Patients with a ras  mutation had a median survival of nine months (all
+;patients dead) compared to 16  patients without a ras mutation that had a
+;median follow-up of 16 months (10  patients alive; P less than 0.005).
+;[1181..1184]:gene-rna:"ras"
+;[1287..1290]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1165..1173] Patients))
+      (PP (IN:[1174..1178] with)
+        (NP (DT:[1179..1180] a) (NN:[1181..1184] ras) (NN:[1186..1194] mutation))))
+    (VP (VBD:[1195..1198] had)
+      (NP
+        (NP (DT:[1199..1200] a) (JJ:[1201..1207] median)
+            (NN:[1208..1216] survival))
+        (PP (IN:[1217..1219] of)
+          (NP (CD:[1220..1224] nine) (NNS:[1225..1231] months))))
+      (PRN (-LRB-:[1232..1233] -LRB-)
+        (S
+          (NP-SBJ (DT:[1233..1236] all) (NNS:[1237..1245] patients))
+          (ADJP-PRD (JJ:[1246..1250] dead)))
+        (-RRB-:[1250..1251] -RRB-))
+      (S-ADV
+        (NP-SBJ-2 (-NONE-:[1251..1251] *))
+        (VP (VBN:[1252..1260] compared)
+          (NP-2 (-NONE-:[1260..1260] *))
+          (PP-CLR (TO:[1261..1263] to)
+            (NP
+              (NP
+                (NP (CD:[1264..1266] 16) (NNS:[1268..1276] patients))
+                (PP (IN:[1277..1284] without)
+                  (NP (DT:[1285..1286] a) (NN:[1287..1290] ras)
+                      (NN:[1291..1299] mutation))))
+              (SBAR
+                (WHNP-1 (WDT:[1300..1304] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1304..1304] *T*))
+                  (VP (VBD:[1305..1308] had)
+                    (NP
+                      (NP (DT:[1309..1310] a) (JJ:[1311..1317] median)
+                          (VB:[1318..1324] follow) (HYPH:[1324..1325] -)
+                          (RP:[1325..1327] up))
+                      (PP (IN:[1328..1330] of)
+                        (NP (CD:[1331..1333] 16) (NNS:[1334..1340] months))))
+                    (PRN (-LRB-:[1341..1342] -LRB-)
+                      (FRAG
+                        (S
+                          (NP-SBJ (CD:[1342..1344] 10)
+                                  (NNS:[1346..1354] patients))
+                          (ADJP-PRD (JJ:[1355..1360] alive)))
+                        (::[1360..1361] ;)
+                        (S
+                          (NP-SBJ (NN:[1362..1363] P))
+                          (ADJP-PRD
+                            (ADJP (JJR:[1364..1368] less))
+                            (PP (IN:[1369..1373] than)
+                              (NP (CD:[1374..1379] 0.005))))))
+                      (-RRB-:[1379..1380] -RRB-))))))))))
+    (.:[1380..1381] .)))
+
+;sentence 11 Span:1382..1657
+;Since 9 of the 11 patients (82%) with a ras  mutation were found to have an
+;abnormal monocytic component at diagnosis or  during disease evolution, it is
+;possible that in myeloid disorders a ras  mutation is preferentially
+;associated with myelomonocytic cell differentiation.
+;[1422..1425]:gene-rna:"ras"
+;[1553..1570]:malignancy:"myeloid disorders"
+;[1573..1576]:gene-rna:"ras"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1382..1387] Since)
+      (S
+        (NP-SBJ-1
+          (NP (CD:[1388..1389] 9))
+          (PP (IN:[1390..1392] of)
+            (NP
+              (NP (DT:[1393..1396] the) (CD:[1397..1399] 11)
+                  (NNS:[1400..1408] patients)
+                (PRN (-LRB-:[1409..1410] -LRB-)
+                  (NP (CD:[1410..1412] 82) (NN:[1412..1413] %))
+                  (-RRB-:[1413..1414] -RRB-)))
+              (PP (IN:[1415..1419] with)
+                (NP (DT:[1420..1421] a) (NN:[1422..1425] ras)
+                    (NN:[1427..1435] mutation))))))
+        (VP (VBD:[1436..1440] were)
+          (VP (VBN:[1441..1446] found)
+            (S
+              (NP-SBJ-1 (-NONE-:[1446..1446] *))
+              (VP (TO:[1447..1449] to)
+                (VP (VB:[1450..1454] have)
+                  (NP (DT:[1455..1457] an) (JJ:[1458..1466] abnormal)
+                      (JJ:[1467..1476] monocytic) (NN:[1477..1486] component))
+                  (PP-TMP
+                    (PP (IN:[1487..1489] at)
+                      (NP (NN:[1490..1499] diagnosis)))
+                    (CC:[1500..1502] or)
+                    (PP (IN:[1504..1510] during)
+                      (NP (NN:[1511..1518] disease) (NN:[1519..1528] evolution)))))))))))
+    (,:[1528..1529] ,)
+    (NP-SBJ (PRP:[1530..1532] it))
+    (VP (VBZ:[1533..1535] is)
+      (ADJP-PRD (JJ:[1536..1544] possible)
+        (SBAR (IN:[1545..1549] that)
+          (S
+            (PP (IN:[1550..1552] in)
+              (NP (JJ:[1553..1560] myeloid) (NNS:[1561..1570] disorders)))
+            (NP-SBJ (DT:[1571..1572] a) (NN:[1573..1576] ras)
+                    (NN:[1578..1586] mutation))
+            (VP (VBZ:[1587..1589] is)
+              (ADVP (RB:[1590..1604] preferentially))
+              (VP (VBN:[1605..1615] associated)
+                (PP-CLR (IN:[1616..1620] with)
+                  (NP (JJ:[1621..1635] myelomonocytic) (NN:[1636..1640] cell)
+                      (NN:[1641..1656] differentiation)))))))))
+    (.:[1656..1657] .)))
+
+;section 12 Span:1661..1705
+;PMID: 2657575 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1661..1665] PMID) (::[1665..1666] :) (CD:[1667..1674] 2657575)
+        (NN:[1675..1676] -LSB-) (NNP:[1676..1682] PubMed) (::[1683..1684] -)
+        (NN:[1685..1692] indexed) (IN:[1693..1696] for)
+        (NNP:[1697..1705] MEDLINE-RSB-)))

@@ -1,0 +1,356 @@
+;PMID: 11764864
+;source_file_973.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..129] = [t:49..129]
+;2)section:[e:133..145] = [t:133..145]
+;3)section:[e:149..236] = [t:149..236]
+;4)sentence:[e:240..367] = [t:240..367]
+;5)sentence:[e:368..497] = [t:368..497]
+;6)sentence:[e:498..765] = [t:498..765]
+;7)sentence:[e:766..921] = [t:766..921]
+;8)sentence:[e:922..1096] = [t:922..1096]
+;9)sentence:[e:1097..1206] = [t:1097..1206]
+;10)sentence:[e:1207..1345] = [t:1207..1345]
+;11)sentence:[e:1346..1582] = [t:1346..1582]
+;12)section:[e:1586..1631] = [t:1586..1631]
+
+;section 0 Span:0..43
+;Am Fam Physician. 2001 Dec 1;64(11):1863-6.
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..6] Fam) (NNP:[7..16] Physician) (.:[16..17] .)
+        (CD:[18..22] 2001) (CC:[23..26] Dec) (CD:[27..32] 1;64-LRB-)
+        (CD:[32..34] 11) (-RRB-:[34..35] -RRB-) (CD:[35..40] :1863)
+        (HYPH:[40..41] -) (CD:[41..43] 6.)))
+
+;sentence 1 Span:49..129
+;Quinupristin-dalfopristin: a new antibiotic for severe gram-positive
+;infections.
+;[49..61]:substance:"Quinupristin"
+;[62..74]:substance:"dalfopristin"
+;[82..92]:substance:"antibiotic"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..61] Quinupristin) (HYPH:[61..62] -) (NN:[62..74] dalfopristin))
+    (::[74..75] :)
+    (NP
+      (NP (DT:[76..77] a) (JJ:[78..81] new) (NN:[82..92] antibiotic))
+      (PP (IN:[93..96] for)
+        (NP (JJ:[97..103] severe)
+          (ADJP (NN:[104..108] gram) (HYPH:[108..109] -)
+                (JJ:[109..117] positive))
+          (NNS:[118..128] infections))))
+    (.:[128..129] .)))
+
+;section 2 Span:133..145
+;Manzella JP.
+(SEC
+  (FRAG (NNP:[133..141] Manzella) (NNP:[142..144] JP) (.:[144..145] .)))
+
+;section 3 Span:149..236
+;Department of Medicine, York Hospital, Pennsylvania 17405, USA. 
+;jmanzella@wellspan.org
+(SEC
+  (FRAG (NNP:[149..159] Department) (IN:[160..162] of) (NNP:[163..171] Medicine)
+        (,:[171..172] ,) (NNP:[173..177] York) (NNP:[178..186] Hospital)
+        (,:[186..187] ,) (NNP:[188..200] Pennsylvania) (NNP:[201..206] 17405)
+        (,:[206..207] ,) (NNP:[208..211] USA) (.:[211..212] .)
+        ('':[214..232] jmanzella@wellspan) (.:[232..236] .org)))
+
+;sentence 4 Span:240..367
+;The steady increase in resistant organisms is related to the widespread use
+;of  antibiotics in community and hospital settings.
+;[320..331]:substance:"antibiotics"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[240..243] The) (JJ:[244..250] steady) (NN:[251..259] increase))
+      (PP (IN:[260..262] in)
+        (NP (JJ:[263..272] resistant) (NNS:[273..282] organisms))))
+    (VP (VBZ:[283..285] is)
+      (VP (VBN:[286..293] related)
+        (NP-2 (-NONE-:[293..293] *))
+        (PP-CLR (TO:[294..296] to)
+          (NP
+            (NP (DT:[297..300] the) (JJ:[301..311] widespread)
+                (NN:[312..315] use))
+            (PP (IN:[316..318] of)
+              (NP (NNS:[320..331] antibiotics)))
+            (PP-LOC (IN:[332..334] in)
+              (NP
+                (NP (NN:[335..344] community)
+                  (NML-1 (-NONE-:[344..344] *P*)))
+                (CC:[345..348] and)
+                (NP (NN:[349..357] hospital)
+                  (NML-1 (NNS:[358..366] settings)))))))))
+    (.:[366..367] .)))
+
+;sentence 5 Span:368..497
+;New therapeutic options are  needed, including treatments for infections
+;caused by antibiotic-resistant  gram-positive organisms.
+;[451..461]:substance:"antibiotic"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[368..371] New) (JJ:[372..383] therapeutic)
+              (NNS:[384..391] options))
+    (VP (VBP:[392..395] are)
+      (VP (VBN:[397..403] needed)
+        (NP-1 (-NONE-:[403..403] *))
+        (,:[403..404] ,)
+        (PP (VBG:[405..414] including)
+          (NP
+            (NP (NNS:[415..425] treatments))
+            (PP (IN:[426..429] for)
+              (NP
+                (NP (NNS:[430..440] infections))
+                (VP (VBN:[441..447] caused)
+                  (NP (-NONE-:[447..447] *))
+                  (PP (IN:[448..450] by)
+                    (NP-LGS
+                      (ADJP (NN:[451..461] antibiotic) (HYPH:[461..462] -)
+                            (JJ:[462..471] resistant))
+                      (NML (NN:[473..477] gram) (HYPH:[477..478] -)
+                           (JJ:[478..486] positive))
+                      (NNS:[487..496] organisms))))))))))
+    (.:[496..497] .)))
+
+;sentence 6 Span:498..765
+;Quinupristin-dalfopristin, the first formulation of a  distinct class of
+;antibiotics known as the streptogramins, has activity against  a range of
+;gram-positive bacteria that are usually resistant to other agents,  including
+;vancomycin-resistant Enterococcus faecium.
+;[498..510]:substance:"Quinupristin"
+;[511..523]:substance:"dalfopristin"
+;[571..582]:substance:"antibiotics"
+;[596..610]:substance:"streptogramins"
+;[704..710]:substance:"agents"
+;[723..733]:substance:"vancomycin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[498..510] Quinupristin) (HYPH:[510..511] -)
+          (NN:[511..523] dalfopristin))
+      (,:[523..524] ,)
+      (NP
+        (NP (DT:[525..528] the) (JJ:[529..534] first)
+            (NN:[535..546] formulation))
+        (PP (IN:[547..549] of)
+          (NP
+            (NP
+              (NP (DT:[550..551] a) (JJ:[553..561] distinct)
+                  (NN:[562..567] class))
+              (PP (IN:[568..570] of)
+                (NP (NNS:[571..582] antibiotics))))
+            (VP (VBN:[583..588] known)
+              (NP (-NONE-:[588..588] *))
+              (PP (IN:[589..591] as)
+                (NP (DT:[592..595] the) (NNS:[596..610] streptogramins))))))))
+    (,:[610..611] ,)
+    (VP (VBZ:[612..615] has)
+      (NP
+        (NP (NN:[616..624] activity))
+        (PP (IN:[625..632] against)
+          (NP
+            (NP (DT:[634..635] a) (NN:[636..641] range))
+            (PP (IN:[642..644] of)
+              (NP
+                (NP
+                  (ADJP (NN:[645..649] gram) (HYPH:[649..650] -)
+                        (JJ:[650..658] positive))
+                  (NNS:[659..667] bacteria))
+                (SBAR
+                  (WHNP-1 (WDT:[668..672] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[672..672] *T*))
+                    (VP (VBP:[673..676] are)
+                      (ADVP-TMP (RB:[677..684] usually))
+                      (ADJP-PRD (JJ:[685..694] resistant)
+                        (PP (TO:[695..697] to)
+                          (NP
+                            (NP (JJ:[698..703] other) (NNS:[704..710] agents))
+                            (,:[710..711] ,)
+                            (PP (VBG:[713..722] including)
+                              (NP
+                                (ADJP (NN:[723..733] vancomycin)
+                                      (HYPH:[733..734] -)
+                                      (JJ:[734..743] resistant))
+                                (NNP:[744..756] Enterococcus)
+                                 (NNP:[757..764] faecium)))))))))))))))
+    (.:[764..765] .)))
+
+;sentence 7 Span:766..921
+;The pharmacodynamic  (postantibiotic effect) and pharmacokinetic
+;characteristics of  quinupristin-dalfopristin allow dosing at eight- to
+;12-hour intervals.
+;[851..863]:substance:"quinupristin"
+;[864..876]:substance:"dalfopristin"
+;[893..905]:quantitative-value:"eight- to 12"
+;[906..910]:quantitative-units:"hour"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[766..769] The)
+        (NML
+          (NML (JJ:[770..785] pharmacodynamic)
+            (PRN (-LRB-:[787..788] -LRB-)
+              (NP (JJ:[788..802] postantibiotic) (NN:[803..809] effect))
+              (-RRB-:[809..810] -RRB-))
+            (NML-1 (-NONE-:[810..810] *P*)))
+          (CC:[811..814] and)
+          (NML (JJ:[815..830] pharmacokinetic)
+            (NML-1 (NNS:[831..846] characteristics)))))
+      (PP (IN:[847..849] of)
+        (NP (NN:[851..863] quinupristin) (HYPH:[863..864] -)
+            (NN:[864..876] dalfopristin))))
+    (VP (VBP:[877..882] allow)
+      (NP
+        (NP (VBG:[883..889] dosing))
+        (PP (IN:[890..892] at)
+          (NP
+            (NML
+              (QP (CD:[893..898] eight) (HYPH:[898..899] -) (TO:[900..902] to)
+                  (CD:[903..905] 12))
+              (HYPH:[905..906] -) (NN:[906..910] hour))
+            (NNS:[911..920] intervals)))))
+    (.:[920..921] .)))
+
+;sentence 8 Span:922..1096
+;The  safety profile of the formulation is generally favorable, with no
+;demonstrable  ototoxicity, nephrotoxicity, bone marrow suppression, or
+;cardiovascular adverse  effects.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[922..925] The) (NN:[927..933] safety) (NN:[934..941] profile))
+      (PP (IN:[942..944] of)
+        (NP (DT:[945..948] the) (NN:[949..960] formulation))))
+    (VP (VBZ:[961..963] is)
+      (ADVP (RB:[964..973] generally))
+      (ADJP-PRD (JJ:[974..983] favorable))
+      (,:[983..984] ,)
+      (PP (IN:[985..989] with)
+        (NP (DT:[990..992] no) (JJ:[993..1005] demonstrable)
+          (NML
+            (NML (NN:[1007..1018] ototoxicity))
+            (,:[1018..1019] ,)
+            (NML (NN:[1020..1034] nephrotoxicity))
+            (,:[1034..1035] ,)
+            (NML
+              (NML (NN:[1036..1040] bone) (NN:[1041..1047] marrow))
+              (NN:[1048..1059] suppression))
+            (,:[1059..1060] ,) (CC:[1061..1063] or)
+            (NML (JJ:[1064..1078] cardiovascular) (JJ:[1079..1086] adverse)
+                 (NNS:[1088..1095] effects))))))
+    (.:[1095..1096] .)))
+
+;sentence 9 Span:1097..1206
+;Reversible arthralgias, myalgias, and peripheral venous irritation are  the
+;formulation's major side effects.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1097..1107] Reversible) (NNS:[1108..1119] arthralgias))
+      (,:[1119..1120] ,)
+      (NP (NNS:[1121..1129] myalgias))
+      (,:[1129..1130] ,) (CC:[1131..1134] and)
+      (NP (JJ:[1135..1145] peripheral) (JJ:[1146..1152] venous)
+          (NN:[1153..1163] irritation)))
+    (VP (VBP:[1164..1167] are)
+      (NP-PRD
+        (NP (DT:[1169..1172] the) (NN:[1173..1184] formulation)
+            (POS:[1184..1186] 's))
+        (JJ:[1187..1192] major) (NN:[1193..1197] side)
+         (NNS:[1198..1205] effects)))
+    (.:[1205..1206] .)))
+
+;sentence 10 Span:1207..1345
+;A potential for drug interactions exists  because quinupristin-dalfopristin
+;significantly inhibits the cytochrome P450-3A4  enzyme system.
+;[1223..1227]:substance:"drug"
+;[1257..1269]:substance:"quinupristin"
+;[1270..1282]:substance:"dalfopristin"
+;[1310..1337]:cyp450:"cytochrome P450-3A4  enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1207..1208] A) (NN:[1209..1218] potential))
+      (PP (IN:[1219..1222] for)
+        (NP (NN:[1223..1227] drug) (NNS:[1228..1240] interactions))))
+    (VP (VBZ:[1241..1247] exists)
+      (SBAR-PRP (IN:[1249..1256] because)
+        (S
+          (NP-SBJ (NN:[1257..1269] quinupristin) (HYPH:[1269..1270] -)
+                  (NN:[1270..1282] dalfopristin))
+          (ADVP (RB:[1283..1296] significantly))
+          (VP (VBZ:[1297..1305] inhibits)
+            (NP (DT:[1306..1309] the)
+              
+              (NML (NN:[1310..1320] cytochrome) (NN:[1321..1329] P450-3A4))
+              (NN:[1331..1337] enzyme)
+              (NN:[1338..1344] system))))))
+    (.:[1344..1345] .)))
+
+;sentence 11 Span:1346..1582
+;Quinupristin-dalfopristin has been shown to be effective in the  management
+;of documented severe infections caused by vancomycin-resistant E.  faecium,
+;nosocomial pneumonia, and infections related to the use of  intravascular
+;catheters.
+;[1346..1358]:substance:"Quinupristin"
+;[1359..1371]:substance:"dalfopristin"
+;[1464..1474]:substance:"vancomycin"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1346..1358] Quinupristin) (HYPH:[1358..1359] -)
+              (NN:[1359..1371] dalfopristin))
+    (VP (VBZ:[1372..1375] has)
+      (VP (VBN:[1376..1380] been)
+        (VP (VBN:[1381..1386] shown)
+          (S
+            (NP-SBJ-1 (-NONE-:[1386..1386] *))
+            (VP (TO:[1387..1389] to)
+              (VP (VB:[1390..1392] be)
+                (ADJP-PRD (JJ:[1393..1402] effective)
+                  (PP (IN:[1403..1405] in)
+                    (NP
+                      (NP (DT:[1406..1409] the) (NN:[1411..1421] management))
+                      (PP (IN:[1422..1424] of)
+                        (NP
+                          (NP
+                            (NP (VBN:[1425..1435] documented)
+                                (JJ:[1436..1442] severe)
+                                (NNS:[1443..1453] infections))
+                            (VP (VBN:[1454..1460] caused)
+                              (NP (-NONE-:[1460..1460] *))
+                              (PP (IN:[1461..1463] by)
+                                (NP-LGS
+                                  (ADJP (NN:[1464..1474] vancomycin)
+                                        (HYPH:[1474..1475] -)
+                                        (JJ:[1475..1484] resistant))
+                                  (NNP:[1485..1487] E.)
+                                   (NNP:[1489..1496] faecium)))))
+                          (,:[1496..1497] ,)
+                          (NP (JJ:[1498..1508] nosocomial)
+                              (NN:[1509..1518] pneumonia))
+                          (,:[1518..1519] ,) (CC:[1520..1523] and)
+                          (NP
+                            (NP (NNS:[1524..1534] infections))
+                            (VP (VBN:[1535..1542] related)
+                              (NP (-NONE-:[1542..1542] *))
+                              (PP-CLR (TO:[1543..1545] to)
+                                (NP
+                                  (NP (DT:[1546..1549] the)
+                                      (NN:[1550..1553] use))
+                                  (PP (IN:[1554..1556] of)
+                                    (NP (JJ:[1558..1571] intravascular)
+                                        (NNS:[1572..1581] catheters))))))))))))))))))
+    (.:[1581..1582] .)))
+
+;section 12 Span:1586..1631
+;PMID: 11764864 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1586..1590] PMID) (::[1590..1591] :) (CD:[1592..1600] 11764864)
+        (IN:[1601..1602] -LSB-) (NNP:[1602..1608] PubMed) (HYPH:[1609..1610] -)
+        (JJ:[1611..1618] indexed) (IN:[1619..1622] for)
+        (NNP:[1623..1631] MEDLINE-RSB-)))

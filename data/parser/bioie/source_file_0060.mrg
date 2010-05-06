@@ -1,0 +1,620 @@
+;PMID: 1645482
+;source_file_897.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..48] = [t:0..48]
+;1)sentence:[e:54..202] = [t:54..202]
+;2)section:[e:206..241] = [t:206..240]
+;3)section:[e:245..304] = [t:245..304]
+;4)sentence:[e:308..463] = [t:308..463]
+;5)sentence:[e:465..770] = [t:465..770]
+;6)sentence:[e:771..965] = [t:771..965]
+;7)sentence:[e:966..1132] = [t:966..1132]
+;8)sentence:[e:1133..1411] = [t:1133..1411]
+;9)sentence:[e:1412..1527] = [t:1412..1527]
+;10)sentence:[e:1528..1662] = [t:1528..1662]
+;11)sentence:[e:1663..1769] = [t:1663..1769]
+;12)sentence:[e:1770..1820] = [t:1770..1820]
+;13)sentence:[e:1821..2061] = [t:1821..2061]
+;14)sentence:[e:2062..2186] = [t:2062..2186]
+;15)sentence:[e:2187..2396] = [t:2187..2396]
+;16)sentence:[e:2397..2621] = [t:2397..2621]
+;17)section:[e:2625..2669] = [t:2625..2668]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:206..241][t:206..240]
+;ERROR_Section end mismatch[e:2625..2669][t:2625..2668]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[240..241] .
+;ERROR_Token in entity file but not tree[2668..2669] ]
+
+;section 0 Span:0..48
+;Toxicol Appl Pharmacol. 1991 Jun 1;109(1):85-97.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..12] Appl) (NNP:[13..22] Pharmacol)
+        (.:[22..23] .) (CD:[24..28] 1991) (NNP:[29..32] Jun) (CD:[33..34] 1)
+        (::[34..35] ;) (CD:[35..38] 109) (-LRB-:[38..39] -LRB-) (CD:[39..40] 1)
+        (-RRB-:[40..41] -RRB-) (::[41..42] :) (CD:[42..44] 85) (::[44..45] -)
+        (CD:[45..47] 97) (.:[47..48] .)))
+
+;sentence 1 Span:54..202
+;2,3,7,8-Tetrachlorodibenzo-p-dioxin inhibits steroidogenesis in the rat
+;testis  by inhibiting the mobilization of cholesterol to cytochrome P450scc.
+;[54..89]:substance:"2,3,7,8-Tetrachlorodibenzo-p-dioxin"
+;[168..179]:substance:"cholesterol"
+;[183..201]:cyp450:"cytochrome P450scc"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[54..89] 2,3,7,8-Tetrachlorodibenzo-p-dioxin))
+    (VP (VBZ:[90..98] inhibits)
+      (NP (NN:[99..114] steroidogenesis))
+      (PP-LOC (IN:[115..117] in)
+        (NP (DT:[118..121] the) (NN:[122..125] rat) (NN:[126..132] testis)))
+      (PP-MNR (IN:[134..136] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[136..136] *))
+          (VP (VBG:[137..147] inhibiting)
+            (NP
+              (NP (DT:[148..151] the) (NN:[152..164] mobilization))
+              (PP (IN:[165..167] of)
+                (NP (NN:[168..179] cholesterol)))
+              (PP (TO:[180..182] to)
+                (NP (NN:[183..193] cytochrome) (NN:[194..201] P450scc))))))))
+    (.:[201..202] .)))
+
+;section 2 Span:206..240
+;Moore RW, Jefcoate CR, Peterson RE
+(SEC
+  (FRAG (NNP:[206..211] Moore) (NNP:[212..214] RW) (,:[214..215] ,)
+        (NNP:[216..224] Jefcoate) (NNP:[225..227] CR) (,:[227..228] ,)
+        (NNP:[229..237] Peterson) (NNP:[238..240] RE)))
+
+(ORPH .)
+
+;section 3 Span:245..304
+;School of Pharmacy, University of Wisconsin, Madison 53706.
+(SEC
+  (FRAG (NNP:[245..251] School) (IN:[252..254] of) (NNP:[255..263] Pharmacy)
+        (,:[263..264] ,) (NNP:[265..275] University) (IN:[276..278] of)
+        (NNP:[279..288] Wisconsin) (,:[288..289] ,) (NNP:[290..297] Madison)
+        (CD:[298..303] 53706) (.:[303..304] .)))
+;ERROR_Orphan Text from Tree File[240..245] .
+
+;sentence 4 Span:308..463
+;Testosterone synthesis in 2,3,7,8-tetrachlorodibenzo-p-dioxin (TCDD)-treated 
+;rats is decreased because pregnenolone production by the testis is
+;inhibited.
+;[308..320]:substance:"Testosterone"
+;[334..369]:substance:"2,3,7,8-tetrachlorodibenzo-p-dioxin"
+;[371..375]:substance:"TCDD"
+;[412..424]:substance:"pregnenolone"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[308..320] Testosterone) (NN:[321..330] synthesis))
+      (PP-LOC (IN:[331..333] in)
+        (NP
+          (ADJP
+            (NML
+              (NML (NN:[334..369] 2,3,7,8-tetrachlorodibenzo-p-dioxin))
+              (NML (-LRB-:[370..371] -LRB-) (NN:[371..375] TCDD)
+                   (-RRB-:[375..376] -RRB-)))
+            (HYPH:[376..377] -) (VBN:[377..384] treated))
+          (NNS:[386..390] rats))))
+    (VP (VBZ:[391..393] is)
+      (VP (VBN:[394..403] decreased)
+        (NP-2 (-NONE-:[403..403] *))
+        (SBAR-PRP (IN:[404..411] because)
+          (S
+            (NP-SBJ-1
+              (NP (NN:[412..424] pregnenolone) (NN:[425..435] production))
+              (PP (IN:[436..438] by)
+                (NP (DT:[439..442] the) (NN:[443..449] testis))))
+            (VP (VBZ:[450..452] is)
+              (VP (VBN:[453..462] inhibited)
+                (NP-1 (-NONE-:[462..462] *))))))))
+    (.:[462..463] .)))
+
+;sentence 5 Span:465..770
+;This inhibition can only be caused by a reduction in the activity of the 
+;mitochondrial enzyme which converts cholesterol into pregnenolone (cytochrome
+; P450scc), and/or by an impairment in the multistep process by which
+;luteinizing  hormone (LH) stimulates the mobilization of cholesterol to this
+;enzyme.
+;[553..559]:substance:"enzyme"
+;[575..586]:substance:"cholesterol"
+;[592..604]:substance:"pregnenolone"
+;[606..625]:cyp450:"cytochrome  P450scc"
+;[686..706]:substance:"luteinizing  hormone"
+;[708..710]:substance:"LH"
+;[743..754]:substance:"cholesterol"
+;[763..769]:cyp450:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[465..469] This) (NN:[470..480] inhibition))
+    (VP (MD:[481..484] can)
+      (ADVP (RB:[485..489] only))
+      (VP (VB:[490..492] be)
+        (VP (VBN:[493..499] caused)
+          (NP-3 (-NONE-:[499..499] *))
+          (PP
+            (PP (IN:[500..502] by)
+              (NP-LGS
+                (NP (DT:[503..504] a) (NN:[505..514] reduction))
+                (PP (IN:[515..517] in)
+                  (NP
+                    (NP (DT:[518..521] the) (NN:[522..530] activity))
+                    (PP (IN:[531..533] of)
+                      (NP
+                        (NP
+                          (NP (DT:[534..537] the) (JJ:[539..552] mitochondrial)
+                              (NN:[553..559] enzyme))
+                          (SBAR
+                            (WHNP-2 (WDT:[560..565] which))
+                            (S
+                              (NP-SBJ-2 (-NONE-:[565..565] *T*))
+                              (VP (VBZ:[566..574] converts)
+                                (NP (NN:[575..586] cholesterol))
+                                (PP (IN:[587..591] into)
+                                  (NP (NN:[592..604] pregnenolone)))))))
+                        (NP (-LRB-:[605..606] -LRB-)
+                           (NN:[606..616] cytochrome) (NN:[618..625] P450scc)
+                          (-RRB-:[625..626] -RRB-))))))))
+            (,:[626..627] ,) (CC:[628..634] and/or)
+            (PP (IN:[635..637] by)
+              (NP-LGS
+                (NP (DT:[638..640] an) (NN:[641..651] impairment))
+                (PP (IN:[652..654] in)
+                  (NP
+                    (NP (DT:[655..658] the) (JJ:[659..668] multistep)
+                        (NN:[669..676] process))
+                    (SBAR
+                      (WHPP-1 (IN:[677..679] by)
+                        (WHNP (WDT:[680..685] which)))
+                      (S
+                        (NP-SBJ
+                          (NP (VBG:[686..697] luteinizing)
+                              (NN:[699..706] hormone))
+                          (NP (-LRB-:[707..708] -LRB-) (NN:[708..710] LH)
+                              (-RRB-:[710..711] -RRB-)))
+                        (VP (VBZ:[712..722] stimulates)
+                          (NP
+                            (NP (DT:[723..726] the) (NN:[727..739] mobilization))
+                            (NP (IN:[740..742] of)
+                              (NP (NN:[743..754] cholesterol)))
+                            (PP (TO:[755..757] to)
+                              (NP (DT:[758..762] this) (NN:[763..769] enzyme))))
+                          (PP-1 (-NONE-:[769..769] *T*)))))))))))))
+    (.:[769..770] .)))
+
+;sentence 6 Span:771..965
+;Seven  days after rats were treated with 100 micrograms TCDD/kg, testicular
+;cytochrome  P450scc activity (assayed with 20 alpha-hydroxycholesterol as
+;substrate) was  decreased to 45% of control.
+;[771..776]:quantitative-value:"Seven"
+;[778..782]:quantitative-units:"days"
+;[812..815]:quantitative-value:"100"
+;[816..834]:quantitative-units:"micrograms TCDD/kg"
+;[847..866]:cyp450:"cytochrome  P450scc"
+;[890..917]:substance:"20 alpha-hydroxycholesterol"
+;[921..930]:substance:"substrate"
+;[950..953]:quantitative-value:"45%"
+(SENT
+  (S
+    (SBAR-TMP
+      (NP-ADV (CD:[771..776] Seven) (NNS:[778..782] days))
+      (IN:[783..788] after)
+      (S
+        (NP-SBJ-2 (NNS:[789..793] rats))
+        (VP (VBD:[794..798] were)
+          (VP (VBN:[799..806] treated)
+            (NP-2 (-NONE-:[806..806] *))
+            (PP (IN:[807..811] with)
+              (NP
+                (NP
+                  (NML (CD:[812..815] 100) (NNS:[816..826] micrograms))
+                  (NN:[827..831] TCDD))
+                (PP (SYM:[831..832] /)
+                  (NP (NN:[832..834] kg)))))))))
+    (,:[834..835] ,)
+    (NP-SBJ-1 (JJ:[836..846] testicular)
+      (NML (NN:[847..857] cytochrome) (NN:[859..866] P450scc))
+      (NN:[867..875] activity)
+      (PRN (-LRB-:[876..877] -LRB-)
+        (VP (VBN:[877..884] assayed)
+          (NP (-NONE-:[884..884] *))
+          (PP (IN:[885..889] with)
+            (NP
+              (NP (CD:[890..892] 20) (NN:[893..917] alpha-hydroxycholesterol))
+              (PP (NN:[918..920] as)
+                (NP (NN:[921..930] substrate))))))
+        (-RRB-:[930..931] -RRB-)))
+    (VP (VBD:[932..935] was)
+      (VP (VBN:[937..946] decreased)
+        (NP-1 (-NONE-:[946..946] *))
+        (PP (TO:[947..949] to)
+          (NP
+            (NP (CD:[950..952] 45) (NN:[952..953] %))
+            (PP (IN:[954..956] of)
+              (NP (NN:[957..964] control)))))))
+    (.:[964..965] .)))
+
+;sentence 7 Span:966..1132
+;If this decrease were responsible for the  inhibition of testicular
+;steroidogenesis in vivo, substrate pools for cytochrome  P450scc in the
+;testis would be increased.
+;[1059..1068]:substance:"substrate"
+;[1079..1098]:cyp450:"cytochrome  P450scc"
+(SENT
+  (S
+    (SBAR-ADV (IN:[966..968] If)
+      (S
+        (NP-SBJ (DT:[969..973] this) (NN:[974..982] decrease))
+        (VP (VBD:[983..987] were)
+          (ADJP-PRD
+            (ADJP (JJ:[988..999] responsible))
+            (PP (IN:[1000..1003] for)
+              (NP
+                (NP (DT:[1004..1007] the) (NN:[1009..1019] inhibition))
+                (PP (IN:[1020..1022] of)
+                  (NP (JJ:[1023..1033] testicular)
+                      (NN:[1034..1049] steroidogenesis)))
+                (ADVP (FW:[1050..1052] in) (FW:[1053..1057] vivo))))))))
+    (,:[1057..1058] ,)
+    (NP-SBJ-1
+      (NP (NN:[1059..1068] substrate) (NNS:[1069..1074] pools))
+      (PP (IN:[1075..1078] for)
+        (NP (NN:[1079..1089] cytochrome) (NN:[1091..1098] P450scc)))
+      (PP-LOC (IN:[1099..1101] in)
+        (NP (DT:[1102..1105] the) (NN:[1106..1112] testis))))
+    (VP (MD:[1113..1118] would)
+      (VP (VB:[1119..1121] be)
+        (VP (VBN:[1122..1131] increased)
+          (NP-1 (-NONE-:[1131..1131] *)))))
+    (.:[1131..1132] .)))
+
+;sentence 8 Span:1133..1411
+;Yet TCDD decreased the amount of  cholesterol that was readily available to
+;cytochrome P450scc in isolated testis  mitochondria (the reactive cholesterol
+;pool), even when steroidogenesis was  maximally stimulated in vivo with the
+;LH analogue human chorionic gonadotropin  (hCG).
+;[1137..1141]:substance:"TCDD"
+;[1167..1178]:substance:"cholesterol"
+;[1209..1227]:cyp450:"cytochrome P450scc"
+;[1275..1286]:substance:"cholesterol"
+;[1363..1374]:substance:"LH analogue"
+;[1375..1403]:substance:"human chorionic gonadotropin"
+;[1406..1409]:substance:"hCG"
+(SENT
+  (S (CC:[1133..1136] Yet)
+    (NP-SBJ (NN:[1137..1141] TCDD))
+    (VP (VBD:[1142..1151] decreased)
+      (NP
+        (NP (DT:[1152..1155] the) (NN:[1156..1162] amount))
+        (PP (IN:[1163..1165] of)
+          (NP
+            (NP (NN:[1167..1178] cholesterol))
+            (SBAR
+              (WHNP-2 (WDT:[1179..1183] that))
+              (S
+                (NP-SBJ-2 (-NONE-:[1183..1183] *T*))
+                (VP (VBD:[1184..1187] was)
+                  (ADJP-PRD (RB:[1188..1195] readily)
+                            (JJ:[1196..1205] available)
+                    (PP (TO:[1206..1208] to)
+                      (NP (NN:[1209..1219] cytochrome) (NN:[1220..1227] P450scc))))
+                  (PP-LOC (IN:[1228..1230] in)
+                    (NP (JJ:[1231..1239] isolated) (NN:[1240..1246] testis)
+                        (NNS:[1248..1260] mitochondria)
+                      (PRN (-LRB-:[1261..1262] -LRB-)
+                        (NP (DT:[1262..1265] the) (JJ:[1266..1274] reactive)
+                            (NN:[1275..1286] cholesterol) (NN:[1287..1291] pool))
+                        (-RRB-:[1291..1292] -RRB-))))))))))
+      (,:[1292..1293] ,)
+      (SBAR-ADV
+        (ADVP (RB:[1294..1298] even))
+        (WHADVP-1 (WRB:[1299..1303] when))
+        (S
+          (NP-SBJ-3 (NN:[1304..1319] steroidogenesis))
+          (VP (VBD:[1320..1323] was)
+            (ADVP (RB:[1325..1334] maximally))
+            (VP (VBN:[1335..1345] stimulated)
+              (NP-3 (-NONE-:[1345..1345] *))
+              (ADVP (FW:[1346..1348] in) (FW:[1349..1353] vivo))
+              (PP (IN:[1354..1358] with)
+                (NP
+                  (NP (DT:[1359..1362] the)
+                     (NN:[1363..1365] LH) (NN:[1366..1374] analogue))
+                  (NP
+                    (NP (JJ:[1375..1380] human) (JJ:[1381..1390] chorionic)
+                        (NN:[1391..1403] gonadotropin))
+                    (NP (-LRB-:[1405..1406] -LRB-) (NN:[1406..1409] hCG)
+                        (-RRB-:[1409..1410] -RRB-)))))
+              (ADVP-TMP-1 (-NONE-:[1410..1410] *T*)))))))
+    (.:[1410..1411] .)))
+
+;sentence 9 Span:1412..1527
+;These decreases in substrate pools were not due to a reduction in 
+;mitochondrial capacity for reactive cholesterol.
+;[1431..1440]:substance:"substrate"
+;[1515..1526]:substance:"cholesterol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1412..1417] These) (NNS:[1418..1427] decreases))
+      (PP (IN:[1428..1430] in)
+        (NP (NN:[1431..1440] substrate) (NNS:[1441..1446] pools))))
+    (VP (VBD:[1447..1451] were) (RB:[1452..1455] not)
+      (PP-PRD (JJ:[1456..1459] due)
+        (PP (TO:[1460..1462] to)
+          (NP
+            (NP (DT:[1463..1464] a) (NN:[1465..1474] reduction))
+            (PP (IN:[1475..1477] in)
+              (NP
+                (NP (JJ:[1479..1492] mitochondrial) (NN:[1493..1501] capacity))
+                (PP (IN:[1502..1505] for)
+                  (NP (JJ:[1506..1514] reactive) (NN:[1515..1526] cholesterol)))))))))
+    (.:[1526..1527] .)))
+
+;sentence 10 Span:1528..1662
+;We conclude that the 55%  decrease in cytochrome P450scc activity is not
+;severe enough to inhibit  testicular steroidogenesis in vivo.
+;[1549..1552]:quantitative-value:"55%"
+;[1566..1584]:cyp450:"cytochrome P450scc"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1528..1530] We))
+    (VP (VBP:[1531..1539] conclude)
+      (SBAR (IN:[1540..1544] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1545..1548] the)
+              (NML (CD:[1549..1551] 55) (NN:[1551..1552] %))
+              (NN:[1554..1562] decrease))
+            (PP (IN:[1563..1565] in)
+              (NP
+                (NML (NN:[1566..1576] cytochrome) (NN:[1577..1584] P450scc))
+                (NN:[1585..1593] activity))))
+          (VP (VBZ:[1594..1596] is) (RB:[1597..1600] not)
+            (ADJP-PRD (JJ:[1601..1607] severe) (JJ:[1608..1614] enough)
+              (S
+                (NP-SBJ (-NONE-:[1614..1614] *))
+                (VP (TO:[1615..1617] to)
+                  (VP (VB:[1618..1625] inhibit)
+                    (NP (JJ:[1627..1637] testicular)
+                        (NN:[1638..1653] steroidogenesis))
+                    (ADVP (FW:[1654..1656] in) (FW:[1657..1661] vivo))))))))))
+    (.:[1661..1662] .)))
+
+;sentence 11 Span:1663..1769
+;Instead, TCDD must act by inhibiting the  LH-stimulated mobilization of
+;cholesterol to cytochrome P450scc.
+;[1672..1676]:substance:"TCDD"
+;[1705..1707]:substance:"LH"
+;[1735..1746]:substance:"cholesterol"
+;[1750..1768]:cyp450:"cytochrome P450scc"
+(SENT
+  (S
+    (ADVP (RB:[1663..1670] Instead))
+    (,:[1670..1671] ,)
+    (NP-SBJ (NN:[1672..1676] TCDD))
+    (VP (MD:[1677..1681] must)
+      (VP (VB:[1682..1685] act)
+        (PP-MNR (IN:[1686..1688] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1688..1688] *))
+            (VP (VBG:[1689..1699] inhibiting)
+              (NP
+                (NP (DT:[1700..1703] the)
+                  (ADJP (NN:[1705..1707] LH) (HYPH:[1707..1708] -)
+                        (VBN:[1708..1718] stimulated))
+                  (NN:[1719..1731] mobilization))
+                (PP (IN:[1732..1734] of)
+                  (NP (NN:[1735..1746] cholesterol)))
+                (PP (TO:[1747..1749] to)
+                  (NP (NN:[1750..1760] cytochrome) (NN:[1761..1768] P450scc)))))))))
+    (.:[1768..1769] .)))
+
+;sentence 12 Span:1770..1820
+;This conclusion  is supported by two observations.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1770..1774] This) (NN:[1775..1785] conclusion))
+    (VP (VBZ:[1787..1789] is)
+      (VP (VBN:[1790..1799] supported)
+        (NP-1 (-NONE-:[1799..1799] *))
+        (PP (IN:[1800..1802] by)
+          (NP-LGS (CD:[1803..1806] two) (NNS:[1807..1819] observations)))))
+    (.:[1819..1820] .)))
+
+;sentence 13 Span:1821..2061
+;First, when pregnenolone formation was blocked  by treating rats with the
+;cytochrome P450scc inhibitor aminoglutethimide, TCDD  greatly reduced the
+;rate at which hCG caused reactive cholesterol to accumulate  in testis
+;mitochondria in vivo.
+;[1833..1845]:substance:"pregnenolone"
+;[1895..1913]:cyp450:"cytochrome P450scc"
+;[1914..1923]:substance:"inhibitor"
+;[1924..1941]:substance:"aminoglutethimide"
+;[1943..1947]:substance:"TCDD"
+;[1983..1986]:substance:"hCG"
+;[2003..2014]:substance:"cholesterol"
+(SENT
+  (S
+    (ADVP (JJ:[1821..1826] First))
+    (,:[1826..1827] ,)
+    (SBAR-ADV
+      (WHADJP-3 (WRB:[1828..1832] when))
+      (S
+        (NP-SBJ-2 (NN:[1833..1845] pregnenolone) (NN:[1846..1855] formation))
+        (VP (VBD:[1856..1859] was)
+          (VP (VBN:[1860..1867] blocked)
+            (NP-2 (-NONE-:[1867..1867] *))
+            (PP (IN:[1869..1871] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[1871..1871] *))
+                (VP (VBG:[1872..1880] treating)
+                  (NP (NNS:[1881..1885] rats))
+                  (PP (IN:[1886..1890] with)
+                    (NP
+                      (NP (DT:[1891..1894] the)
+                        (NML (NN:[1895..1905] cytochrome)
+                             (NN:[1906..1913] P450scc))
+                        (NN:[1914..1923] inhibitor))
+                      (NP (NN:[1924..1941] aminoglutethimide)))))))
+            (ADJP-TMP-3 (-NONE-:[1941..1941] *T*))))))
+    (,:[1941..1942] ,)
+    (NP-SBJ (NN:[1943..1947] TCDD))
+    (ADVP (RB:[1949..1956] greatly))
+    (VP (VBD:[1957..1964] reduced)
+      (NP
+        (NP (DT:[1965..1968] the) (NN:[1969..1973] rate))
+        (SBAR
+          (WHPP-1 (IN:[1974..1976] at)
+            (WHNP (WDT:[1977..1982] which)))
+          (S
+            (NP-SBJ (NN:[1983..1986] hCG))
+            (VP (VBD:[1987..1993] caused)
+              (S
+                (NP-SBJ (JJ:[1994..2002] reactive) (NN:[2003..2014] cholesterol))
+                (VP (TO:[2015..2017] to)
+                  (VP (VB:[2018..2028] accumulate)
+                    (PP-LOC (IN:[2030..2032] in)
+                      (NP (NN:[2033..2039] testis)
+                          (NNS:[2040..2052] mitochondria)))
+                    (ADVP (FW:[2053..2055] in) (FW:[2056..2060] vivo))
+                    (PP-1 (-NONE-:[2060..2060] *T*))))))))))
+    (.:[2060..2061] .)))
+
+;sentence 14 Span:2062..2186
+;Second, TCDD inhibited both testosterone  synthesis and the mobilization of
+;cholesterol to cytochrome P450scc within 1  day.
+;[2070..2074]:substance:"TCDD"
+;[2090..2102]:substance:"testosterone"
+;[2138..2149]:substance:"cholesterol"
+;[2153..2171]:cyp450:"cytochrome P450scc"
+;[2179..2180]:quantitative-value:"1"
+;[2182..2185]:quantitative-units:"day"
+(SENT
+  (S
+    (ADVP (JJ:[2062..2068] Second))
+    (,:[2068..2069] ,)
+    (NP-SBJ (NN:[2070..2074] TCDD))
+    (VP (VBD:[2075..2084] inhibited)
+      (NP (CC:[2085..2089] both)
+        (NP (NN:[2090..2102] testosterone) (NN:[2104..2113] synthesis))
+        (CC:[2114..2117] and)
+        (NP
+          (NP (DT:[2118..2121] the) (NN:[2122..2134] mobilization))
+          (PP (IN:[2135..2137] of)
+            (NP (NN:[2138..2149] cholesterol)))
+          (PP (TO:[2150..2152] to)
+            (NP (NN:[2153..2163] cytochrome) (NN:[2164..2171] P450scc)))))
+      (PP-TMP (IN:[2172..2178] within)
+        (NP (CD:[2179..2180] 1) (NN:[2182..2185] day))))
+    (.:[2185..2186] .)))
+
+;sentence 15 Span:2187..2396
+;The steroidogenic inhibition does not appear to be due to an LH receptor 
+;defect, because TCDD inhibited dibutyryl cAMP- and hCG-stimulated steroid 
+;secretion by isolated perfused testes to comparable extents.
+;[2248..2259]:substance:"LH receptor"
+;[2277..2281]:substance:"TCDD"
+;[2292..2306]:substance:"dibutyryl cAMP"
+;[2312..2315]:substance:"hCG"
+;[2327..2334]:substance:"steroid"
+(SENT
+  (S
+    (NP-3 (DT:[2187..2190] The) (JJ:[2191..2204] steroidogenic)
+          (NN:[2205..2215] inhibition))
+    (VP (VBZ:[2216..2220] does) (RB:[2221..2224] not)
+      (VP (VB:[2225..2231] appear)
+        (S
+          (NP-SBJ-3 (-NONE-:[2231..2231] *))
+          (VP (TO:[2232..2234] to)
+            (VP (VB:[2235..2237] be)
+              (PP-PRD (JJ:[2238..2241] due)
+                (PP (TO:[2242..2244] to)
+                  (NP (DT:[2245..2247] an)
+                    (NML (NN:[2248..2250] LH) (NN:[2251..2259] receptor))
+                    (NN:[2261..2267] defect)))))))
+        (,:[2267..2268] ,)
+        (SBAR-PRP (IN:[2269..2276] because)
+          (S
+            (NP-SBJ (NN:[2277..2281] TCDD))
+            (VP (VBD:[2282..2291] inhibited)
+              (NP
+                (NP
+                  (ADJP
+                    (NML (NN:[2292..2301] dibutyryl) (NN:[2302..2306] cAMP))
+                    (HYPH:[2306..2307] -)
+                    (ADJP-1 (-NONE-:[2307..2307] *P*)))
+                  (NML-2 (-NONE-:[2307..2307] *P*)))
+                (CC:[2308..2311] and)
+                (NP
+                  (ADJP (NN:[2312..2315] hCG) (HYPH:[2315..2316] -)
+                    (ADJP-1 (VBN:[2316..2326] stimulated)))
+                  (NML-2 (JJ:[2327..2334] steroid) (NN:[2336..2345] secretion))))
+              (PP (IN:[2346..2348] by)
+                (NP (JJ:[2349..2357] isolated) (JJ:[2358..2366] perfused)
+                    (NNS:[2367..2373] testes)))
+              (PP (TO:[2374..2376] to)
+                (NP (JJ:[2377..2387] comparable) (NNS:[2388..2395] extents))))))))
+    (.:[2395..2396] .)))
+
+;sentence 16 Span:2397..2621
+;We conclude that  TCDD inhibits testicular steroidogenesis predominantly if
+;not exclusively by  inhibiting the mobilization of cholesterol to cytochrome
+;P450scc, and that this  inhibition occurs subsequent to cAMP formation.
+;[2415..2419]:substance:"TCDD"
+;[2524..2535]:substance:"cholesterol"
+;[2539..2557]:cyp450:"cytochrome P450scc"
+;[2606..2610]:substance:"cAMP"
+(SENT
+  (S
+    (NP-SBJ (PRP:[2397..2399] We))
+    (VP (VBP:[2400..2408] conclude)
+      (SBAR
+        (SBAR (IN:[2409..2413] that)
+          (S
+            (NP-SBJ (NN:[2415..2419] TCDD))
+            (VP (VBZ:[2420..2428] inhibits)
+              (NP (JJ:[2429..2439] testicular) (NN:[2440..2455] steroidogenesis))
+              (PP
+                (ADVP
+                  (ADVP (RB:[2456..2469] predominantly))
+                  (CONJP (IN:[2470..2472] if) (RB:[2473..2476] not))
+                  (ADVP (RB:[2477..2488] exclusively)))
+                (IN:[2489..2491] by)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[2491..2491] *))
+                  (VP (VBG:[2493..2503] inhibiting)
+                    (NP
+                      (NP (DT:[2504..2507] the) (NN:[2508..2520] mobilization))
+                      (PP (IN:[2521..2523] of)
+                        (NP (NN:[2524..2535] cholesterol)))
+                      (PP (TO:[2536..2538] to)
+                        (NP (NN:[2539..2549] cytochrome)
+                            (NN:[2550..2557] P450scc))))))))))
+        (,:[2557..2558] ,) (CC:[2559..2562] and)
+        (SBAR (IN:[2563..2567] that)
+          (S
+            (NP-SBJ (DT:[2568..2572] this) (NN:[2574..2584] inhibition))
+            (VP (VBZ:[2585..2591] occurs)
+              (S-ADV
+                (NP-SBJ (-NONE-:[2591..2591] *))
+                (ADJP-PRD (JJ:[2592..2602] subsequent)
+                  (PP (TO:[2603..2605] to)
+                    (NP (NN:[2606..2610] cAMP) (NN:[2611..2620] formation))))))))))
+    (.:[2620..2621] .)))
+
+;section 17 Span:2625..2668
+;PMID: 1645482 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2625..2629] PMID) (::[2629..2630] :) (CD:[2631..2638] 1645482)
+        (-LRB-:[2639..2640] -LSB-) (NNP:[2640..2646] PubMed) (::[2647..2648] -)
+        (VBN:[2649..2656] indexed) (IN:[2657..2660] for)
+        (NNP:[2661..2668] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2668..EOF] ]
+
+(ORPH -RSB-)

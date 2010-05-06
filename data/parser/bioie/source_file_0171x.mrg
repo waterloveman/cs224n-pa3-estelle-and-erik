@@ -1,0 +1,383 @@
+;PMID: 1544704
+;source_file_813.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..140] = [t:42..140]
+;2)section:[e:144..217] = [t:144..217]
+;3)section:[e:221..308] = [t:221..308]
+;4)sentence:[e:312..404] = [t:312..404]
+;5)sentence:[e:405..540] = [t:405..540]
+;6)sentence:[e:541..726] = [t:541..726]
+;7)sentence:[e:727..989] = [t:727..989]
+;8)sentence:[e:990..1048] = [t:990..1048]
+;9)sentence:[e:1049..1141] = [t:1049..1141]
+;10)sentence:[e:1142..1261] = [t:1142..1261]
+;11)sentence:[e:1262..1422] = [t:1262..1422]
+;12)sentence:[e:1423..1580] = [t:1423..1580]
+;13)section:[e:1584..1628] = [t:1584..1628]
+
+;section 0 Span:0..37
+;Int J Cancer  1992 Mar 12;50(5):713-8
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..12] Cancer) (CD:[14..18] 1992)
+        (NNP:[19..22] Mar) (CC:[23..29] 12;50-LRB-) (CD:[29..30] 5)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :713) (::[35..36] -) (CD:[36..37] 8)))
+
+;sentence 1 Span:42..140
+;N-ras gene mutations in acute myeloid leukemia: accurate detection by 
+;solid-phase minisequencing.
+;[42..47]:gene-rna:"N-ras"
+;[66..88]:malignancy:"acute myeloid leukemia"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[42..47] N-ras) (NN:[48..52] gene) (NNS:[53..62] mutations))
+      (PP (IN:[63..65] in)
+        (NP (JJ:[66..71] acute) (JJ:[72..79] myeloid) (NN:[80..88] leukemia))))
+    (::[88..89] :)
+    (NP
+      (NP (JJ:[90..98] accurate) (NN:[99..108] detection))
+      (PP (IN:[109..111] by)
+        (NP (JJ:[113..124] solid-phase) (NN:[125..139] minisequencing))))
+    (.:[139..140] .)))
+
+;section 2 Span:144..217
+;Syvanen AC, Soderlund H, Laaksonen E, Bengtstrom M, Turunen M, Palotie A.
+(SEC
+  (FRAG (NNP:[144..151] Syvanen) (NNP:[152..154] AC) (,:[154..155] ,)
+        (NNP:[156..165] Soderlund) (NNP:[166..167] H) (,:[167..168] ,)
+        (NNP:[169..178] Laaksonen) (NNP:[179..180] E) (,:[180..181] ,)
+        (NNP:[182..192] Bengtstrom) (NNP:[193..195] M,) (NNP:[196..203] Turunen)
+        (NNP:[204..206] M,) (NNP:[207..214] Palotie) (NN:[215..217] A.)))
+
+;section 3 Span:221..308
+;National Public Health Institute, Laboratory of Molecular Genetics, Helsinki,
+; Finland.
+(SEC
+  (FRAG (NNP:[221..229] National) (NNP:[230..236] Public)
+        (NNP:[237..243] Health) (NNP:[244..253] Institute) (,:[253..254] ,)
+        (NNP:[255..265] Laboratory) (IN:[266..268] of)
+        (NNP:[269..278] Molecular) (NNP:[279..287] Genetics) (,:[287..288] ,)
+        (NNP:[289..297] Helsinki) (,:[297..298] ,) (NNP:[300..307] Finland)
+        (.:[307..308] .)))
+
+;sentence 4 Span:312..404
+;Mutations in the N-ras gene are found in one-third of patients with acute 
+;myeloid leukemia.
+;[329..334]:gene-rna:"N-ras"
+;[380..403]:malignancy:"acute  myeloid leukemia"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[312..321] Mutations))
+      (PP-LOC (IN:[322..324] in)
+        (NP (DT:[325..328] the) (NN:[329..334] N-ras) (NN:[335..339] gene))))
+    (VP (VBP:[340..343] are)
+      (VP (VBN:[344..349] found)
+        (NP-1 (-NONE-:[349..349] *))
+        (PP-LOC (IN:[350..352] in)
+          (NP
+            (NP (NN:[353..362] one-third))
+            (PP (IN:[363..365] of)
+              (NP
+                (NP (NNS:[366..374] patients))
+                (PP (IN:[375..379] with)
+                  (NP (JJ:[380..385] acute) (JJ:[387..394] myeloid)
+                      (NN:[395..403] leukemia)))))))))
+    (.:[403..404] .)))
+
+;sentence 5 Span:405..540
+;The N-ras mutations could serve as markers for residual cells,  if a highly
+;sensitive method for detecting the mutations was available.
+;[409..414]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[405..408] The) (NN:[409..414] N-ras) (NNS:[415..424] mutations))
+    (VP (MD:[425..430] could)
+      (VP (VB:[431..436] serve)
+        (PP (IN:[437..439] as)
+          (NP (NNS:[440..447] markers)))
+        (PP (IN:[448..451] for)
+          (NP (JJ:[452..460] residual) (NNS:[461..466] cells)))
+        (,:[466..467] ,)
+        (SBAR-ADV (IN:[469..471] if)
+          (S
+            (NP-SBJ
+              (NP (DT:[472..473] a)
+                (ADJP (RB:[474..480] highly) (JJ:[481..490] sensitive))
+                (NN:[491..497] method))
+              (PP (IN:[498..501] for)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[501..501] *))
+                  (VP (VBG:[502..511] detecting)
+                    (NP (DT:[512..515] the) (NNS:[516..525] mutations))))))
+            (VP (VBD:[526..529] was)
+              (ADJP-PRD (JJ:[530..539] available)))))))
+    (.:[539..540] .)))
+
+;sentence 6 Span:541..726
+;We  applied a new method, solid-phase minisequencing, to analyze bone-marrow
+;cells  from 16 patients with acute myeloid leukemia for mutations in codon
+;12, 13 and  61 of the N-ras gene.
+;[647..669]:malignancy:"acute myeloid leukemia"
+;[674..683]:variation-event:"mutations"
+;[687..695]:variation-location:"codon 12"
+;[687..692]...[705..707]:variation-location:"codon"..."61"
+;[687..692]...[697..699]:variation-location:"codon"..."13"
+;[715..720]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[541..543] We))
+    (VP (VBD:[545..552] applied)
+      (NP
+        (NP (DT:[553..554] a) (JJ:[555..558] new) (NN:[559..565] method))
+        (,:[565..566] ,)
+        (NP (JJ:[567..578] solid-phase) (NN:[579..593] minisequencing)))
+      (,:[593..594] ,)
+      (S-PRP
+        (NP-SBJ (-NONE-:[594..594] *))
+        (VP (TO:[595..597] to)
+          (VP (VB:[598..605] analyze)
+            (NP
+              (NP
+                (NML (NN:[606..610] bone) (HYPH:[610..611] -)
+                     (NN:[611..617] marrow))
+                (NNS:[618..623] cells))
+              (PP (IN:[625..629] from)
+                (NP
+                  (NP (CD:[630..632] 16) (NNS:[633..641] patients))
+                  (PP (IN:[642..646] with)
+                    (NP (JJ:[647..652] acute) (JJ:[653..660] myeloid)
+                        (NN:[661..669] leukemia))))))
+            (PP (IN:[670..673] for)
+              (NP
+                (NP (NNS:[674..683] mutations))
+                (PP-LOC (IN:[684..686] in)
+                  (NP
+                    (NP
+                      (NP
+                        (NML-1 (NN:[687..692] codon))
+                        (CD:[693..695] 12))
+                      (,:[695..696] ,)
+                      (NP
+                        (NML-1 (-NONE-:[696..696] *P*))
+                        (CD:[697..699] 13))
+                      (CC:[700..703] and)
+                      (NP
+                        (NML-1 (-NONE-:[703..703] *P*))
+                        (CD:[705..707] 61)))
+                    (PP (IN:[708..710] of)
+                      (NP (DT:[711..714] the) (NN:[715..720] N-ras)
+                          (NN:[721..725] gene)))))))))))
+    (.:[725..726] .)))
+
+;sentence 7 Span:727..989
+;In the solid-phase minisequencing technique the mutations  are identified by
+;a primer extension reaction, in which a single labelled  nucleoside
+;triphosphate is incorporated into an immobilized DNA fragment  previously
+;amplified by the polymerase chain reaction.
+;[963..973]:gene-protein:"polymerase"
+(SENT
+  (S
+    (PP (IN:[727..729] In)
+      (NP (DT:[730..733] the)
+        (NML (JJ:[734..745] solid-phase) (NN:[746..760] minisequencing))
+        (NN:[761..770] technique)))
+    (NP-SBJ-1 (DT:[771..774] the) (NNS:[775..784] mutations))
+    (VP (VBP:[786..789] are)
+      (VP (VBN:[790..800] identified)
+        (NP-1 (-NONE-:[800..800] *))
+        (PP-MNR (IN:[801..803] by)
+          (NP
+            (NP (DT:[804..805] a) (NN:[806..812] primer)
+                (NN:[813..822] extension) (NN:[823..831] reaction))
+            (,:[831..832] ,)
+            (SBAR
+              (WHPP-2 (IN:[833..835] in)
+                (WHNP (WDT:[836..841] which)))
+              (S
+                (NP-SBJ-3 (DT:[842..843] a) (JJ:[844..850] single)
+                          (JJ:[851..859] labelled) (NN:[861..871] nucleoside)
+                          (NN:[872..884] triphosphate))
+                (VP (VBZ:[885..887] is)
+                  (VP (VBN:[888..900] incorporated)
+                    (NP-3 (-NONE-:[900..900] *))
+                    (PP (IN:[901..905] into)
+                      (NP
+                        (NP (DT:[906..908] an) (JJ:[909..920] immobilized)
+                            (NN:[921..924] DNA) (NN:[925..933] fragment))
+                        (VP
+                          (ADVP (RB:[935..945] previously))
+                          (VBN:[946..955] amplified)
+                          (NP (-NONE-:[955..955] *))
+                          (PP (IN:[956..958] by)
+                            (NP-LGS (DT:[959..962] the)
+                                    (NN:[963..973] polymerase)
+                                    (NN:[974..979] chain)
+                                    (NN:[980..988] reaction))))))
+                    (PP-2 (-NONE-:[988..988] *T*))))))))))
+    (.:[988..989] .)))
+
+;sentence 8 Span:990..1048
+;We identified N-ras  mutations in 5 of the patients (30%).
+;[1004..1009]:gene-rna:"N-ras"
+;[1011..1020]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ (PRP:[990..992] We))
+    (VP (VBD:[993..1003] identified)
+      (NP (NN:[1004..1009] N-ras) (NNS:[1011..1020] mutations))
+      (PP-LOC (IN:[1021..1023] in)
+        (NP
+          (NP (CD:[1024..1025] 5))
+          (PP (IN:[1026..1028] of)
+            (NP (DT:[1029..1032] the) (NNS:[1033..1041] patients)))
+          (PRN (-LRB-:[1042..1043] -LRB-)
+            (NP (CD:[1043..1045] 30) (NN:[1045..1046] %))
+            (-RRB-:[1046..1047] -RRB-)))))
+    (.:[1047..1048] .)))
+
+;sentence 9 Span:1049..1141
+;In one patient, we observed 2 mutations  that were shown to be located in
+;different alleles.
+;[1079..1088]:variation-event:"mutations"
+(SENT
+  (S
+    (PP (IN:[1049..1051] In)
+      (NP (CD:[1052..1055] one) (NN:[1056..1063] patient)))
+    (,:[1063..1064] ,)
+    (NP-SBJ (PRP:[1065..1067] we))
+    (VP (VBD:[1068..1076] observed)
+      (NP
+        (NP (CD:[1077..1078] 2) (NNS:[1079..1088] mutations))
+        (SBAR
+          (WHNP-1 (WDT:[1090..1094] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[1094..1094] *T*))
+            (VP (VBD:[1095..1099] were)
+              (VP (VBN:[1100..1105] shown)
+                (S
+                  (NP-SBJ-1 (-NONE-:[1105..1105] *))
+                  (VP (TO:[1106..1108] to)
+                    (VP (VB:[1109..1111] be)
+                      (VP (VBN:[1112..1119] located)
+                        (NP-1 (-NONE-:[1119..1119] *))
+                        (PP-LOC (IN:[1120..1122] in)
+                          (NP (JJ:[1123..1132] different)
+                              (NNS:[1133..1140] alleles)))))))))))))
+    (.:[1140..1141] .)))
+
+;sentence 10 Span:1142..1261
+;With the solid-phase  minisequencing method, we were able to determine the
+;proportion of mutated cells  in the samples.
+(SENT
+  (S
+    (PP (IN:[1142..1146] With)
+      (NP (DT:[1147..1150] the)
+        (NML (JJ:[1151..1162] solid-phase) (NN:[1164..1178] minisequencing))
+        (NN:[1179..1185] method)))
+    (,:[1185..1186] ,)
+    (NP-SBJ-1 (PRP:[1187..1189] we))
+    (VP (VBD:[1190..1194] were)
+      (ADJP-PRD (JJ:[1195..1199] able)
+        (S
+          (NP-SBJ-1 (-NONE-:[1199..1199] *))
+          (VP (TO:[1200..1202] to)
+            (VP (VB:[1203..1212] determine)
+              (NP
+                (NP (DT:[1213..1216] the) (NN:[1217..1227] proportion))
+                (PP (IN:[1228..1230] of)
+                  (NP (JJ:[1231..1238] mutated) (NNS:[1239..1244] cells)))
+                (PP-LOC (IN:[1246..1248] in)
+                  (NP (DT:[1249..1252] the) (NNS:[1253..1260] samples)))))))))
+    (.:[1260..1261] .)))
+
+;sentence 11 Span:1262..1422
+;We found that in 4 of the samples only a fraction (7-64%) of the  blasts
+;carried an N-ras mutation, and in one sample practically all blast cells 
+;were mutated.
+;[1346..1351]:gene-rna:"N-ras"
+;[1352..1360]:variation-event:"mutation"
+(SENT
+  (S
+    (S
+      (NP-SBJ (PRP:[1262..1264] We))
+      (VP (VBD:[1265..1270] found)
+        (SBAR (IN:[1271..1275] that)
+          (S
+            (PP-LOC (IN:[1276..1278] in)
+              (NP
+                (NP (CD:[1279..1280] 4))
+                (PP (IN:[1281..1283] of)
+                  (NP (DT:[1284..1287] the) (NNS:[1288..1295] samples)))))
+            (NP-SBJ
+              (NP
+                (ADVP (RB:[1296..1300] only))
+                (DT:[1301..1302] a) (NN:[1303..1311] fraction)
+                (PRN (-LRB-:[1312..1313] -LRB-)
+                  (NP
+                    (QP (CD:[1313..1314] 7) (HYPH:[1314..1315] -)
+                        (CD:[1315..1317] 64))
+                    (NN:[1317..1318] %))
+                  (-RRB-:[1318..1319] -RRB-)))
+              (PP (IN:[1320..1322] of)
+                (NP (DT:[1323..1326] the) (NNS:[1328..1334] blasts))))
+            (VP (VBD:[1335..1342] carried)
+              (NP (DT:[1343..1345] an) (NN:[1346..1351] N-ras)
+                  (NN:[1352..1360] mutation)))))))
+    (,:[1360..1361] ,) (CC:[1362..1365] and)
+    (S
+      (PP (IN:[1366..1368] in)
+        (NP (CD:[1369..1372] one) (NN:[1373..1379] sample)))
+      (NP-SBJ (RB:[1380..1391] practically) (DT:[1392..1395] all)
+              (NN:[1396..1401] blast) (NNS:[1402..1407] cells))
+      (VP (VBD:[1409..1413] were)
+        (ADJP-PRD (JJ:[1414..1421] mutated))))
+    (.:[1421..1422] .)))
+
+;sentence 12 Span:1423..1580
+;The method was highly sensitive, allowing us to identify N-ras  mutations
+;even when the sample consisted of 99.7% normal cells and only 0.3%  mutated
+;blasts.
+;[1480..1485]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[1423..1426] The) (NN:[1427..1433] method))
+    (VP (VBZ:[1434..1437] was)
+      (ADJP-PRD (RB:[1438..1444] highly) (JJ:[1445..1454] sensitive))
+      (,:[1454..1455] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1455..1455] *))
+        (VP (VBG:[1456..1464] allowing)
+          (S
+            (NP-SBJ (PRP:[1465..1467] us))
+            (VP (TO:[1468..1470] to)
+              (VP (VB:[1471..1479] identify)
+                (NP (NN:[1480..1485] N-ras) (NNS:[1487..1496] mutations))
+                (SBAR-ADV
+                  (WHADVP-1
+                    (ADVP (RB:[1497..1501] even))
+                    (WRB:[1502..1506] when))
+                  (S
+                    (NP-SBJ (DT:[1507..1510] the) (NN:[1511..1517] sample))
+                    (VP (VBD:[1518..1527] consisted)
+                      (PP-CLR (IN:[1528..1530] of)
+                        (NP
+                          (NP (CD:[1531..1535] 99.7) (NN:[1535..1536] %)
+                              (JJ:[1537..1543] normal) (NNS:[1544..1549] cells))
+                          (CC:[1550..1553] and)
+                          (NP (RB:[1554..1558] only) (CD:[1559..1562] 0.3)
+                              (NN:[1562..1563] %) (JJ:[1565..1572] mutated)
+                              (NNS:[1573..1579] blasts))))
+                      (ADVP-TMP-1 (-NONE-:[1579..1579] *T*)))))))))))
+    (.:[1579..1580] .)))
+
+;section 13 Span:1584..1628
+;PMID: 1544704 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1584..1588] PMID) (::[1588..1589] :) (CD:[1590..1597] 1544704)
+        (NN:[1598..1599] -LSB-) (NNP:[1599..1605] PubMed) (::[1606..1607] -)
+        (NN:[1608..1615] indexed) (IN:[1616..1619] for)
+        (NNP:[1620..1628] MEDLINE-RSB-)))

@@ -1,0 +1,362 @@
+;PMID: 3485044
+;source_file_1018.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..152] = [t:45..152]
+;2)section:[e:156..179] = [t:156..178]
+;3)sentence:[e:183..443] = [t:183..443]
+;4)sentence:[e:444..583] = [t:444..583]
+;5)sentence:[e:584..798] = [t:584..798]
+;6)sentence:[e:799..892] = [t:799..892]
+;7)sentence:[e:893..1059] = [t:893..1059]
+;8)sentence:[e:1060..1139] = [t:1060..1139]
+;9)sentence:[e:1140..1301] = [t:1140..1301]
+;10)sentence:[e:1302..1421] = [t:1302..1421]
+;11)section:[e:1425..1469] = [t:1425..1468]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:156..179][t:156..178]
+;ERROR_Section end mismatch[e:1425..1469][t:1425..1468]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[178..179] .
+;ERROR_Token in entity file but not tree[1468..1469] ]
+
+;section 0 Span:0..39
+;Endocrinology. 1986 Apr;118(4):1266-70.
+(SEC
+  (FRAG (NNP:[0..13] Endocrinology) (IN:[13..14] .) (CD:[15..19] 1986)
+        (DT:[20..28] Apr;118-LRB-) (CD:[28..30] 4-RRB-) (CD:[30..35] :1266)
+        (::[35..36] -) (CD:[36..38] 70) (.:[38..39] .)))
+
+;sentence 1 Span:45..152
+;The steroid C-17,20-lyase complex in isolated Graafian follicles: effects of 
+;human chorionic gonadotropin.
+;[49..78]:cyp450:"steroid C-17,20-lyase complex"
+;[123..151]:substance:"human chorionic gonadotropin"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (DT:[45..48] The)
+         (NN:[49..56] steroid) (NN:[57..70] C-17,20-lyase) (NN:[71..78] complex))
+      (PP-LOC (IN:[79..81] in)
+        (NP (JJ:[82..90] isolated) (JJ:[91..99] Graafian)
+            (NNS:[100..109] follicles))))
+    (::[109..110] :)
+    (NP
+      (NP (NNS:[111..118] effects))
+      (PP (IN:[119..121] of)
+        (NP (JJ:[123..128] human) (JJ:[129..138] chorionic)
+            (NN:[139..151] gonadotropin))))
+    (.:[151..152] .)))
+
+;section 2 Span:156..178
+;Eckstein B, Tsafriri A
+(SEC
+  (FRAG (NNP:[156..164] Eckstein) (NNP:[165..166] B) (,:[166..167] ,)
+        (NNP:[168..176] Tsafriri) (NN:[177..178] A)))
+
+(ORPH .)
+
+;sentence 3 Span:183..443
+;Androstenedione synthesis was studied in isolated rat preovulatory follicles
+;and  compared with that of rat testicular tissue using [14C]progesterone
+;together  with 17 alpha-hydroxy-[3H]progesterone as substrates in the
+;presence of NADH or  NADPH as cofactors.
+;[183..198]:substance:"Androstenedione"
+;[315..332]:substance:"[14C]progesterone"
+;[348..381]:substance:"17 alpha-hydroxy-[3H]progesterone"
+;[385..395]:substance:"substrates"
+;[415..419]:substance:"NADH"
+;[424..429]:substance:"NADPH"
+;[433..442]:substance:"cofactors"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[183..198] Androstenedione) (NN:[199..208] synthesis))
+    (VP (VBD:[209..212] was)
+      (VP
+        (VP (VBN:[213..220] studied)
+          (NP-1 (-NONE-:[220..220] *))
+          (PP-LOC (IN:[221..223] in)
+            (NP (JJ:[224..232] isolated) (NN:[233..236] rat)
+                (JJ:[237..249] preovulatory) (NNS:[250..259] follicles))))
+        (CC:[260..263] and)
+        (VP (VBN:[265..273] compared)
+          (NP-1 (-NONE-:[273..273] *))
+          (PP-CLR (IN:[274..278] with)
+            (NP
+              (NP (DT:[279..283] that))
+              (PP (IN:[284..286] of)
+                (NP (NN:[287..290] rat) (JJ:[291..301] testicular)
+                    (NN:[302..308] tissue)))))
+          (S-MNR
+            (NP-SBJ (-NONE-:[308..308] *))
+            (VP (VBG:[309..314] using)
+              (NP
+                (NP (NN:[315..332] -LSB-14C-RSB-progesterone))
+                (PP
+                  (ADVP (RB:[333..341] together))
+                  (IN:[343..347] with)
+                  (NP (CD:[348..350] 17)
+                      (NN:[351..381] alpha-hydroxy--LSB-3H-RSB-progesterone))))
+              (PP (IN:[382..384] as)
+                (NP (NNS:[385..395] substrates)))
+              (PP (IN:[396..398] in)
+                (NP
+                  (NP (DT:[399..402] the) (NN:[403..411] presence))
+                  (PP (IN:[412..414] of)
+                    (NP
+                      (NP (NN:[415..419] NADH) (CC:[420..422] or)
+                          (NN:[424..429] NADPH))
+                      (PP (IN:[430..432] as)
+                        (NP (NNS:[433..442] cofactors))))))))))))
+    (.:[442..443] .)))
+;ERROR_Orphan Text from Tree File[178..183] .
+
+;sentence 4 Span:444..583
+;The amount of androstenedione formed was measured by  addition of carrier,
+;reisolation, and crystallization to constant specific  activity.
+;[458..473]:substance:"androstenedione"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[444..447] The) (NN:[448..454] amount))
+        (PP (IN:[455..457] of)
+          (NP (NN:[458..473] androstenedione))))
+      (VP (VBD:[474..480] formed)
+        (NP (-NONE-:[480..480] *))))
+    (VP (IN:[481..484] was)
+      (VP (VBN:[485..493] measured)
+        (NP-1 (-NONE-:[493..493] *))
+        (PP-MNR (IN:[494..496] by)
+          (NP
+            (NP
+              (NP (NN:[498..506] addition))
+              (PP (IN:[507..509] of)
+                (NP (NN:[510..517] carrier))))
+            (,:[517..518] ,)
+            (NP (NN:[519..530] reisolation))
+            (,:[530..531] ,) (CC:[532..535] and)
+            (NP
+              (NP (NN:[536..551] crystallization))
+              (PP (TO:[552..554] to)
+                (NP (JJ:[555..563] constant) (JJ:[564..572] specific)
+                    (NN:[574..582] activity))))))))
+    (.:[582..583] .)))
+
+;sentence 5 Span:584..798
+;The labeling patterns of androstenedione and 17  alpha-hydroxyprogesterone
+;(17-OHP) confirmed that both tissues preferentially  catalyzed the synthesis
+;of androstenedione from progesterone rather than from  17-OHP.
+;[609..624]:substance:"androstenedione"
+;[629..658]:substance:"17  alpha-hydroxyprogesterone"
+;[660..666]:substance:"17-OHP"
+;[739..754]:substance:"androstenedione"
+;[760..772]:substance:"progesterone"
+;[791..797]:substance:"17-OHP"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[584..587] The) (VBG:[588..596] labeling)
+          (NNS:[597..605] patterns))
+      (PP (IN:[606..608] of)
+        (NP
+          (NP (NN:[609..624] androstenedione))
+          (CC:[625..628] and)
+          (NP
+            (NP (CD:[629..631] 17) (NN:[633..658] alpha-hydroxyprogesterone))
+            (NP (-LRB-:[659..660] -LRB-) (NN:[660..666] 17-OHP)
+                (-RRB-:[666..667] -RRB-))))))
+    (VP (VBD:[668..677] confirmed)
+      (SBAR (IN:[678..682] that)
+        (S
+          (NP-SBJ (DT:[683..687] both) (NNS:[688..695] tissues))
+          (ADVP (RB:[696..710] preferentially))
+          (VP (VBD:[712..721] catalyzed)
+            (NP
+              (NP (DT:[722..725] the) (NN:[726..735] synthesis))
+              (PP (IN:[736..738] of)
+                (NP (NN:[739..754] androstenedione)))
+              (PP
+                (PP (IN:[755..759] from)
+                  (NP (NN:[760..772] progesterone)))
+                (CONJP (RB:[773..779] rather) (IN:[780..784] than))
+                (PP (IN:[785..789] from)
+                  (NP (NN:[791..797] 17-OHP)))))))))
+    (.:[797..798] .)))
+
+;sentence 6 Span:799..892
+;It appears, therefore, that free 17-OHP was not an obligatory  intermediate
+;in this reaction.
+;[832..838]:substance:"17-OHP"
+(SENT
+  (S
+    (NP-SBJ (PRP:[799..801] It))
+    (VP (VBZ:[802..809] appears) (,:[809..810] ,)
+      (ADVP (RB:[811..820] therefore))
+      (,:[820..821] ,)
+      (SBAR (IN:[822..826] that)
+        (S
+          (NP-SBJ (JJ:[827..831] free) (NN:[832..838] 17-OHP))
+          (VP (VBD:[839..842] was) (RB:[843..846] not)
+            (NP-PRD (DT:[847..849] an) (JJ:[850..860] obligatory)
+                    (NN:[862..874] intermediate))
+            (PP (IN:[875..877] in)
+              (NP (DT:[878..882] this) (NN:[883..891] reaction)))))))
+    (.:[891..892] .)))
+
+;sentence 7 Span:893..1059
+;When hCG (5 IU) was administered sc and the  follicles were isolated 3 h
+;later, androstenedione synthesis was inhibited  whether NADH or NADPH was
+;added as cofactors.
+;[898..901]:substance:"hCG"
+;[903..904]:quantitative-value:"5"
+;[905..907]:quantitative-units:"IU"
+;[962..963]:quantitative-value:"3"
+;[964..965]:quantitative-units:"h"
+;[973..988]:substance:"androstenedione"
+;[1022..1026]:substance:"NADH"
+;[1030..1035]:substance:"NADPH"
+;[1049..1058]:substance:"cofactors"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-2 (WRB:[893..897] When))
+      (S
+        (S
+          (NP-SBJ-1 (NN:[898..901] hCG)
+            (PRN (-LRB-:[902..903] -LRB-)
+              (NP (CD:[903..904] 5) (NN:[905..907] IU))
+              (-RRB-:[907..908] -RRB-)))
+          (VP (VBD:[909..912] was)
+            (VP (VBN:[913..925] administered)
+              (NP-1 (-NONE-:[925..925] *))
+              (NP-ADV (NN:[926..928] sc))
+              (ADVP-2 (-NONE-:[928..928] *T*)))))
+        (CC:[929..932] and)
+        (S
+          (NP-SBJ-3 (DT:[933..936] the) (NNS:[938..947] follicles))
+          (VP (VBD:[948..952] were)
+            (VP (VBN:[953..961] isolated)
+              (NP-3 (-NONE-:[961..961] *))
+              (NP
+                (NP (CD:[962..963] 3) (NN:[964..965] h))
+                (ADVP-TMP (RB:[966..971] later))))))))
+    (,:[971..972] ,)
+    (NP-SBJ-5 (NN:[973..988] androstenedione) (NN:[989..998] synthesis))
+    (VP (VBD:[999..1002] was)
+      (VP (VBN:[1003..1012] inhibited)
+        (NP-5 (-NONE-:[1012..1012] *))
+        (SBAR-ADV (VBN:[1014..1021] whether)
+          (S
+            (NP-SBJ-4 (NN:[1022..1026] NADH) (CC:[1027..1029] or)
+                      (NN:[1030..1035] NADPH))
+            (VP (VBD:[1036..1039] was)
+              (VP (VBN:[1040..1045] added)
+                (NP-4 (-NONE-:[1045..1045] *))
+                (PP (IN:[1046..1048] as)
+                  (NP (NNS:[1049..1058] cofactors)))))))))
+    (.:[1058..1059] .)))
+
+;sentence 8 Span:1060..1139
+;By contrast, 17-hydroxylase  activity was inhibited only with NADH as
+;cofactor.
+;[1073..1087]:cyp450:"17-hydroxylase"
+;[1122..1126]:substance:"NADH"
+;[1130..1138]:substance:"cofactor"
+(SENT
+  (S
+    (PP (IN:[1060..1062] By)
+      (NP (NN:[1063..1071] contrast)))
+    (,:[1071..1072] ,)
+    (NP-SBJ-1 (NN:[1073..1087] 17-hydroxylase) (NN:[1089..1097] activity))
+    (VP (VBD:[1098..1101] was)
+      (VP (VBN:[1102..1111] inhibited)
+        (NP-1 (-NONE-:[1111..1111] *))
+        (PP (RB:[1112..1116] only) (IN:[1117..1121] with)
+          (NP
+            (NP (NN:[1122..1126] NADH))
+            (PP (IN:[1127..1129] as)
+              (NP (NN:[1130..1138] cofactor)))))))
+    (.:[1138..1139] .)))
+
+;sentence 9 Span:1140..1301
+;Hence, the gonadotropin, with  NADH as cofactor, specifically reduced
+;progesterone incorporation into  androstenedione without affecting
+;incorporation of 17-OHP.
+;[1151..1163]:substance:"gonadotropin"
+;[1171..1175]:substance:"NADH"
+;[1179..1187]:substance:"cofactor"
+;[1210..1222]:substance:"progesterone"
+;[1243..1258]:substance:"androstenedione"
+;[1294..1300]:substance:"17-OHP"
+(SENT
+  (S
+    (ADVP (RB:[1140..1145] Hence))
+    (,:[1145..1146] ,)
+    (NP-SBJ
+      (NP (DT:[1147..1150] the) (NN:[1151..1163] gonadotropin))
+      (,:[1163..1164] ,)
+      (PP (IN:[1165..1169] with)
+        (NP
+          (NP (NN:[1171..1175] NADH))
+          (PP (IN:[1176..1178] as)
+            (NP (NN:[1179..1187] cofactor))))))
+    (,:[1187..1188] ,)
+    (ADVP (RB:[1189..1201] specifically))
+    (VP (VBD:[1202..1209] reduced)
+      (NP
+        (NP (NN:[1210..1222] progesterone) (NN:[1223..1236] incorporation))
+        (PP (IN:[1237..1241] into)
+          (NP (NN:[1243..1258] androstenedione))))
+      (PP (IN:[1259..1266] without)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1266..1266] *))
+          (VP (VBG:[1267..1276] affecting)
+            (NP
+              (NP (NN:[1277..1290] incorporation))
+              (PP (IN:[1291..1293] of)
+                (NP (NN:[1294..1300] 17-OHP))))))))
+    (.:[1300..1301] .)))
+
+;sentence 10 Span:1302..1421
+;Thus, hCG appears to  affect androstenedione production from progesterone at
+;two different sites of  the lyase complex.
+;[1308..1311]:substance:"hCG"
+;[1331..1346]:substance:"androstenedione"
+;[1363..1375]:substance:"progesterone"
+;[1407..1420]:cyp450:"lyase complex"
+(SENT
+  (S
+    (ADVP (RB:[1302..1306] Thus))
+    (,:[1306..1307] ,)
+    (NP-SBJ-1 (NN:[1308..1311] hCG))
+    (VP (VBZ:[1312..1319] appears)
+      (S
+        (NP-SBJ-1 (-NONE-:[1319..1319] *))
+        (VP (TO:[1320..1322] to)
+          (VP (VB:[1324..1330] affect)
+            (NP
+              (NP (NN:[1331..1346] androstenedione) (NN:[1347..1357] production))
+              (PP (IN:[1358..1362] from)
+                (NP (NN:[1363..1375] progesterone))))
+            (PP-LOC (IN:[1376..1378] at)
+              (NP
+                (NP (CD:[1379..1382] two) (JJ:[1383..1392] different)
+                    (NNS:[1393..1398] sites))
+                (PP (IN:[1399..1401] of)
+                  (NP (DT:[1403..1406] the)
+                     (NN:[1407..1412] lyase) (NN:[1413..1420] complex)))))))))
+    (.:[1420..1421] .)))
+
+;section 11 Span:1425..1468
+;PMID: 3485044 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1425..1429] PMID) (::[1429..1430] :) (CD:[1431..1438] 3485044)
+        (-LRB-:[1439..1440] -LSB-) (NNP:[1440..1446] PubMed) (::[1447..1448] -)
+        (VBN:[1449..1456] indexed) (IN:[1457..1460] for)
+        (NNP:[1461..1468] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1468..EOF] ]
+
+(ORPH -RSB-)

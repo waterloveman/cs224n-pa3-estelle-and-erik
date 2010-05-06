@@ -1,0 +1,274 @@
+;PMID: 1314950
+;source_file_2848.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..179] = [t:46..179]
+;2)section:[e:183..224] = [t:183..224]
+;3)section:[e:228..330] = [t:228..330]
+;4)sentence:[e:334..571] = [t:334..571]
+;5)sentence:[e:572..716] = [t:572..716]
+;6)sentence:[e:717..880] = [t:717..880]
+;7)sentence:[e:881..1038] = [t:881..1038]
+;8)sentence:[e:1039..1179] = [t:1039..1179]
+;9)sentence:[e:1180..1288] = [t:1180..1288]
+;10)section:[e:1292..1336] = [t:1292..1336]
+
+;section 0 Span:0..40
+;Mol Cell Biol.  1992 May;12(5):2193-202.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..8] Cell) (NNP:[9..13] Biol) (.:[13..14] .)
+        (CD:[16..20] 1992) (NNP:[21..24] May) (CD:[24..28] ;12-LRB-)
+        (CD:[28..29] 5) (-RRB-:[29..30] -RRB-) (::[30..31] :) (CD:[31..35] 2193)
+        (CD:[35..39] -202) (.:[39..40] .)))
+
+;sentence 1 Span:46..179
+;Basic fibroblast growth factor enhances nerve growth factor receptor gene 
+;promoter activity in human neuroblastoma cell line CHP100.
+;[46..76]:gene-protein:"Basic fibroblast growth factor"
+;[86..114]:gene-rna:"nerve growth factor receptor"
+;[148..161]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (JJ:[46..51] Basic) (NN:[52..62] fibroblast) (NN:[63..69] growth)
+            (NN:[70..76] factor))
+    (VP (VBZ:[77..85] enhances)
+      (NP
+        (NML (NN:[86..91] nerve) (NN:[92..98] growth) (NN:[99..105] factor)
+             (NN:[106..114] receptor))
+        (NML (NN:[115..119] gene) (NN:[121..129] promoter))
+        (NN:[130..138] activity))
+      (PP (IN:[139..141] in)
+        (NP (JJ:[142..147] human) (NN:[148..161] neuroblastoma)
+          (NML (NN:[162..166] cell) (NN:[167..171] line))
+          (NN:[172..178] CHP100))))
+    (.:[178..179] .)))
+
+;section 2 Span:183..224
+;Taiji M, Taiji K, Deyerle KL, Bothwell M.
+(SEC
+  (FRAG (NNP:[183..188] Taiji) (NNP:[189..191] M,) (NNP:[192..197] Taiji)
+        (NNP:[198..200] K,) (NNP:[201..208] Deyerle) (NNP:[209..211] KL)
+        (,:[211..212] ,) (NNP:[213..221] Bothwell) (NNP:[222..224] M.)))
+
+;section 3 Span:228..330
+;Department of Physiology and Biophysics, School of Medicine, University of 
+;Washington, Seattle 98195.
+(SEC
+  (FRAG (NNP:[228..238] Department) (IN:[239..241] of)
+        (NNP:[242..252] Physiology) (CC:[253..256] and)
+        (NNP:[257..267] Biophysics) (,:[267..268] ,) (NNP:[269..275] School)
+        (IN:[276..278] of) (NNP:[279..287] Medicine) (,:[287..288] ,)
+        (NNP:[289..299] University) (IN:[300..302] of)
+        (NNP:[304..314] Washington) (,:[314..315] ,) (NNP:[316..323] Seattle)
+        (CD:[324..329] 98195) (.:[329..330] .)))
+
+;sentence 4 Span:334..571
+;The human neuroblastoma cell line CHP100 provides a useful model system in
+;which  to study the molecular mechanisms of transcriptional regulation of the
+; low-affinity nerve growth factor receptor (NGFR) gene during neuronal 
+;development.
+;[344..357]:malignancy-type:"neuroblastoma"
+;[501..529]:gene-rna:"nerve growth factor receptor"
+;[531..535]:gene-rna:"NGFR"
+(SENT
+  (S
+    (NP-SBJ (DT:[334..337] The) (JJ:[338..343] human)
+            (NN:[344..357] neuroblastoma)
+      (NML (NN:[358..362] cell) (NN:[363..367] line))
+      (NN:[368..374] CHP100))
+    (VP (VBZ:[375..383] provides)
+      (NP
+        (NP (DT:[384..385] a) (JJ:[386..392] useful) (NN:[393..398] model)
+            (NN:[399..405] system))
+        (SBAR
+          (WHPP-1 (IN:[406..408] in)
+            (WHNP (WDT:[409..414] which)))
+          (S
+            (NP-SBJ (-NONE-:[414..414] *))
+            (VP (TO:[416..418] to)
+              (VP (VB:[419..424] study)
+                (NP
+                  (NP (DT:[425..428] the) (JJ:[429..438] molecular)
+                      (NNS:[439..449] mechanisms))
+                  (PP (IN:[450..452] of)
+                    (NP
+                      (NP (JJ:[453..468] transcriptional)
+                          (NN:[469..479] regulation))
+                      (PP (IN:[480..482] of)
+                        (NP (DT:[483..486] the)
+                          (NML (JJ:[488..491] low) (HYPH:[491..492] -)
+                               (NN:[492..500] affinity))
+                          (NML
+                            (NML (NN:[501..506] nerve) (NN:[507..513] growth)
+                                 (NN:[514..520] factor) (NN:[521..529] receptor))
+                            (NML (-LRB-:[530..531] -LRB-) (NN:[531..535] NGFR)
+                                 (-RRB-:[535..536] -RRB-)))
+                          (NN:[537..541] gene)))
+                      (PP-TMP (IN:[542..548] during)
+                        (NP (JJ:[549..557] neuronal) (NN:[559..570] development))))))
+                (PP-1 (-NONE-:[570..570] *T*))))))))
+    (.:[570..571] .)))
+
+;sentence 5 Span:572..716
+;Basic fibroblast growth factor (bFGF) induced morphological changes  in
+;CHP100 cells, including flattening of cell bodies and neurite outgrowth.
+;[572..602]:gene-protein:"Basic fibroblast growth factor"
+;[604..608]:gene-protein:"bFGF"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[572..577] Basic) (NN:[578..588] fibroblast)
+          (NN:[589..595] growth) (NN:[596..602] factor))
+      (NP (-LRB-:[603..604] -LRB-) (NN:[604..608] bFGF) (-RRB-:[608..609] -RRB-)))
+    (VP (VBD:[610..617] induced)
+      (NP (JJ:[618..631] morphological) (NNS:[632..639] changes))
+      (PP-LOC (IN:[641..643] in)
+        (NP (NN:[644..650] CHP100) (NNS:[651..656] cells)))
+      (,:[656..657] ,)
+      (PP (VBG:[658..667] including)
+        (NP
+          (NP
+            (NP (NN:[668..678] flattening))
+            (PP (IN:[679..681] of)
+              (NP (NN:[682..686] cell) (NNS:[687..693] bodies))))
+          (CC:[694..697] and)
+          (NP (NN:[698..705] neurite) (NN:[706..715] outgrowth)))))
+    (.:[715..716] .)))
+
+;sentence 6 Span:717..880
+;bFGF  also increased p75NGFR immunoreactivity, as assessed by
+;immunocytochemistry, and  increased p75NGFR mRNA levels, as assessed by
+;Northern (RNA) blot analysis.
+;[717..721]:gene-protein:"bFGF"
+;[738..745]:gene-protein:"p75NGFR"
+;[815..822]:gene-rna:"p75NGFR"
+(SENT
+  (S
+    (NP-SBJ (NN:[717..721] bFGF))
+    (VP
+      (VP
+        (ADVP (RB:[723..727] also))
+        (VBD:[728..737] increased)
+        (NP (NN:[738..745] p75NGFR) (NN:[746..762] immunoreactivity))
+        (,:[762..763] ,)
+        (SBAR-ADV (IN:[764..766] as)
+          (S
+            (NP-SBJ (-NONE-:[766..766] *))
+            (VP (VBN:[767..775] assessed)
+              (NP (-NONE-:[775..775] *))
+              (PP-MNR (IN:[776..778] by)
+                (NP (NN:[779..798] immunocytochemistry)))))))
+      (,:[798..799] ,) (CC:[800..803] and)
+      (VP (VBD:[805..814] increased)
+        (NP (NN:[815..822] p75NGFR) (NN:[823..827] mRNA) (NNS:[828..834] levels))
+        (,:[834..835] ,)
+        (SBAR-ADV (IN:[836..838] as)
+          (S
+            (NP-SBJ-1 (-NONE-:[838..838] *))
+            (VP (VBN:[839..847] assessed)
+              (NP-1 (-NONE-:[847..847] *))
+              (PP (IN:[848..850] by)
+                (NP-LGS (JJ:[851..859] Northern)
+                  (NML (-LRB-:[860..861] -LRB-) (NN:[861..864] RNA)
+                       (-RRB-:[864..865] -RRB-))
+                  (NN:[866..870] blot) (NN:[871..879] analysis))))))))
+    (.:[879..880] .)))
+
+;sentence 7 Span:881..1038
+;A  chimeric gene consisting of 6.7 kb of the 5'-flanking region of the human
+;NGFR  gene linked to the chloramphenicol acetyltransferase gene was
+;constructed.
+;[958..962]:gene-rna:"NGFR"
+;[983..1016]:gene-rna:"chloramphenicol acetyltransferase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[881..882] A) (JJ:[884..892] chimeric) (NN:[893..897] gene))
+      (VP (VBG:[898..908] consisting)
+        (PP-CLR (IN:[909..911] of)
+          (NP
+            (NP (CD:[912..915] 6.7) (NN:[916..918] kb))
+            (PP (IN:[919..921] of)
+              (NP
+                (NP
+                  (NP (DT:[922..925] the)
+                    (ADJP
+                      (NML (CD:[926..927] 5) (SYM:[927..928] '))
+                      (HYPH:[928..929] -) (NN:[929..937] flanking))
+                    (NN:[938..944] region))
+                  (PP (IN:[945..947] of)
+                    (NP (DT:[948..951] the) (JJ:[952..957] human)
+                        (NN:[958..962] NGFR) (NN:[964..968] gene))))
+                (VP (VBN:[969..975] linked)
+                  (PP (TO:[976..978] to)
+                    (NP (DT:[979..982] the)
+                       (NN:[983..998] chloramphenicol)
+                       (NN:[999..1016] acetyltransferase)
+                      (NN:[1017..1021] gene))))))))))
+    (VP (VBD:[1022..1025] was)
+      (VP (VBN:[1026..1037] constructed)
+        (NP-1 (-NONE-:[1037..1037] *))))
+    (.:[1037..1038] .)))
+
+;sentence 8 Span:1039..1179
+;In  stable transformants of CHP100 cells, 10 ng of bFGF per ml induced an
+;eightfold  increase in chloramphenicol acetyltransferase activity.
+;[1090..1094]:gene-protein:"bFGF"
+;[1136..1169]:gene-protein:"chloramphenicol acetyltransferase"
+(SENT
+  (S
+    (PP-LOC (IN:[1039..1041] In)
+      (NP
+        (NP (JJ:[1043..1049] stable) (NNS:[1050..1063] transformants))
+        (PP (IN:[1064..1066] of)
+          (NP (NN:[1067..1073] CHP100) (NNS:[1074..1079] cells)))))
+    (,:[1079..1080] ,)
+    (NP-SBJ
+      (NP (CD:[1081..1083] 10) (NN:[1084..1086] ng))
+      (PP (IN:[1087..1089] of)
+        (NP (NN:[1090..1094] bFGF)))
+      (PP (IN:[1095..1098] per)
+        (NP (NN:[1099..1101] ml))))
+    (VP (VBD:[1102..1109] induced)
+      (NP
+        (NP (DT:[1110..1112] an) (JJ:[1113..1122] eightfold)
+            (NN:[1124..1132] increase))
+        (PP (IN:[1133..1135] in)
+          (NP
+             (NN:[1136..1151] chloramphenicol)
+             (NN:[1152..1169] acetyltransferase)
+            (NN:[1170..1178] activity)))))
+    (.:[1178..1179] .)))
+
+;sentence 9 Span:1180..1288
+;These results indicate  that upstream elements of the NGFR gene mediate
+;transcriptional regulation by  bFGF.
+;[1234..1238]:gene-rna:"NGFR"
+;[1283..1287]:gene-protein:"bFGF"
+(SENT
+  (S
+    (NP-SBJ (DT:[1180..1185] These) (NNS:[1186..1193] results))
+    (VP (VBP:[1194..1202] indicate)
+      (SBAR (IN:[1204..1208] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1209..1217] upstream) (NNS:[1218..1226] elements))
+            (PP (IN:[1227..1229] of)
+              (NP (DT:[1230..1233] the) (NN:[1234..1238] NGFR)
+                  (NN:[1239..1243] gene))))
+          (VP (VBP:[1244..1251] mediate)
+            (NP
+              (NP (JJ:[1252..1267] transcriptional) (NN:[1268..1278] regulation))
+              (PP (IN:[1279..1281] by)
+                (NP (NN:[1283..1287] bFGF))))))))
+    (.:[1287..1288] .)))
+
+;section 10 Span:1292..1336
+;PMID: 1314950 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1292..1296] PMID) (::[1296..1297] :) (CD:[1298..1305] 1314950)
+        (NN:[1306..1307] -LSB-) (NNP:[1307..1313] PubMed) (::[1314..1315] -)
+        (NN:[1316..1323] indexed) (IN:[1324..1327] for)
+        (NNP:[1328..1336] MEDLINE-RSB-)))

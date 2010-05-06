@@ -1,0 +1,343 @@
+;PMID: 6585591
+;source_file_834.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..135] = [t:49..135]
+;2)section:[e:139..165] = [t:139..164]
+;3)sentence:[e:169..331] = [t:169..331]
+;4)sentence:[e:332..585] = [t:332..585]
+;5)sentence:[e:586..741] = [t:586..741]
+;6)sentence:[e:742..848] = [t:742..848]
+;7)sentence:[e:849..932] = [t:849..932]
+;8)sentence:[e:933..1149] = [t:933..1149]
+;9)sentence:[e:1150..1243] = [t:1150..1243]
+;10)sentence:[e:1244..1343] = [t:1244..1343]
+;11)section:[e:1347..1391] = [t:1347..1390]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:139..165][t:139..164]
+;ERROR_Section end mismatch[e:1347..1391][t:1347..1390]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[164..165] .
+;ERROR_Token in entity file but not tree[1390..1391] ]
+
+;section 0 Span:0..43
+;J Natl Cancer Inst. 1984 May;72(5):1167-71.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Natl) (NNP:[7..13] Cancer)
+        (NNP:[14..18] Inst) (.:[18..19] .) (CD:[20..24] 1984)
+        (CC:[25..32] May;72-LRB-) (CD:[32..33] 5) (-RRB-:[33..34] -RRB-)
+        (CD:[34..39] :1167) (::[39..40] -) (CD:[40..42] 71) (.:[42..43] .)))
+
+;sentence 1 Span:49..135
+;Effects of riboflavin on the dimethylnitrosamine demethylase system in the
+;rat  liver.
+;[60..70]:substance:"riboflavin"
+;[78..109]:cyp450:"dimethylnitrosamine demethylase"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NNS:[49..56] Effects))
+      (PP (IN:[57..59] of)
+        (NP (NN:[60..70] riboflavin))))
+    (PP (IN:[71..73] on)
+      (NP (DT:[74..77] the)
+        (NML (NN:[78..97] dimethylnitrosamine) (NN:[98..109] demethylase))
+        (NN:[110..116] system)))
+    (PP-LOC (IN:[117..119] in)
+      (NP (DT:[120..123] the) (NN:[124..127] rat) (NN:[129..134] liver)))
+    (.:[134..135] .)))
+
+;section 2 Span:139..164
+;Ruchirawat M, Saengchan S
+(SEC
+  (FRAG (NNP:[139..149] Ruchirawat) (NNP:[150..151] M) (,:[151..152] ,)
+        (NNP:[153..162] Saengchan) (NNP:[163..164] S)))
+
+(ORPH .)
+
+;sentence 3 Span:169..331
+;The effects of riboflavin on the dimethylnitrosamine [(DMN) CAS: 62-75-9; 
+;N-nitrosodimethylamine] demethylase system in inbred F344 rat liver were 
+;investigated.
+;[184..194]:substance:"riboflavin"
+;[202..279]:cyp450:"dimethylnitrosamine [(DMN) CAS: 62-75-9; 
+;N-nitrosodimethylamine] demethylase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[169..172] The) (NNS:[173..180] effects))
+      (PP (IN:[181..183] of)
+        (NP (NN:[184..194] riboflavin)))
+      (PP (IN:[195..197] on)
+        (NP (DT:[198..201] the)
+           (NN:[202..221] dimethylnitrosamine)
+          (PRN (-LRB-:[222..223] -LSB-)
+            (FRAG (-LRB-:[223..224] -LRB-) (NN:[224..227] DMN)
+                  (-RRB-:[227..228] -RRB-) (NN:[229..232] CAS) (::[232..233] :)
+                  (CD:[234..236] 62) (HYPH:[236..237] -) (CD:[237..239] 75)
+                  (HYPH:[239..240] -) (CD:[240..241] 9) (::[241..242] ;)
+                  (NN:[244..266] N-nitrosodimethylamine))
+            (-RRB-:[266..267] -RSB-))
+          (NN:[268..279] demethylase)
+          (NN:[280..286] system)))
+      (PP (IN:[287..289] in)
+        (NP (JJ:[290..296] inbred) (NN:[297..301] F344) (NN:[302..305] rat)
+            (NNS:[306..311] liver))))
+    (VP (VBD:[312..316] were)
+      (NP (VBN:[318..330] investigated)
+        (NP-1 (-NONE-:[330..330] *))))
+    (.:[330..331] .)))
+;ERROR_Orphan Text from Tree File[164..169] .
+
+;sentence 4 Span:332..585
+;Dietary riboflavin deficiency markedly stimulated the activity of  DMN
+;demethylase I operating at a low substrate concentration (4 mM), but it 
+;caused no change in the activity of DMN demethylase II operating at a high 
+;substrate concentration (200 mM).
+;[340..350]:substance:"riboflavin"
+;[399..416]:cyp450:"DMN demethylase I"
+;[436..445]:substance:"substrate"
+;[461..462]:quantitative-value:"4"
+;[463..465]:quantitative-units:"mM"
+;[512..530]:cyp450:"DMN demethylase II"
+;[552..561]:substance:"substrate"
+;[577..580]:quantitative-value:"200"
+;[581..583]:quantitative-units:"mM"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[332..339] Dietary) (NN:[340..350] riboflavin)
+              (NN:[351..361] deficiency))
+      (VP
+        (ADVP (RB:[362..370] markedly))
+        (VBD:[371..381] stimulated)
+        (NP
+          (NP (DT:[382..385] the) (NN:[386..394] activity))
+          (PP (IN:[395..397] of)
+            (NP
+              (NP (NN:[399..402] DMN) (NN:[403..414] demethylase)
+                  (CD:[415..416] I))
+              (VP (VBG:[417..426] operating)
+                (PP (IN:[427..429] at)
+                  (NP (DT:[430..431] a) (JJ:[432..435] low)
+                      (NN:[436..445] substrate) (NN:[446..459] concentration)
+                    (PRN (-LRB-:[460..461] -LRB-)
+                      (NP (CD:[461..462] 4) (NN:[463..465] mM))
+                      (-RRB-:[465..466] -RRB-))))))))))
+    (,:[466..467] ,) (CC:[468..471] but)
+    (S
+      (NP-SBJ (PRP:[472..474] it))
+      (VP (VBD:[476..482] caused)
+        (NP
+          (NP (DT:[483..485] no) (NN:[486..492] change))
+          (PP (IN:[493..495] in)
+            (NP
+              (NP (DT:[496..499] the) (NN:[500..508] activity))
+              (PP (IN:[509..511] of)
+                (NP
+                  (NP (NN:[512..515] DMN) (NN:[516..527] demethylase)
+                      (CD:[528..530] II))
+                  (VP (VBG:[531..540] operating)
+                    (PP (IN:[541..543] at)
+                      (NP (DT:[544..545] a) (JJ:[546..550] high)
+                          (NN:[552..561] substrate)
+                          (NN:[562..575] concentration)
+                        (PRN (-LRB-:[576..577] -LRB-)
+                          (NP (CD:[577..580] 200) (NN:[581..583] mM))
+                          (-RRB-:[583..584] -RRB-))))))))))))
+    (.:[584..585] .)))
+
+;sentence 5 Span:586..741
+;This effect could be reversed by short-term  supplementation of the vitamin
+;by a series of three ip injections (0.5  mg/dose/day) to the deficient
+;animals.
+;[654..661]:substance:"vitamin"
+;[698..701]:quantitative-value:"0.5"
+;[703..714]:quantitative-units:"mg/dose/day"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[586..590] This) (NN:[591..597] effect))
+    (VP (MD:[598..603] could)
+      (VP (VB:[604..606] be)
+        (VP (VBN:[607..615] reversed)
+          (NP-1 (-NONE-:[615..615] *))
+          (PP (IN:[616..618] by)
+            (NP-LGS
+              (NP (JJ:[619..629] short-term) (NN:[631..646] supplementation))
+              (PP (IN:[647..649] of)
+                (NP (DT:[650..653] the) (NN:[654..661] vitamin)))
+              (PP (IN:[662..664] by)
+                (NP
+                  (NP (DT:[665..666] a) (NN:[667..673] series))
+                  (PP (IN:[674..676] of)
+                    (NP
+                      (NP
+                        (NP (CD:[677..682] three) (NN:[683..685] ip)
+                            (NNS:[686..696] injections))
+                        (NP (-LRB-:[697..698] -LRB-)
+                          (NP (CD:[698..701] 0.5) (NN:[703..705] mg))
+                          (PP (SYM:[705..706] /)
+                            (NP (NN:[706..710] dose)))
+                          (PP (SYM:[710..711] /)
+                            (NP (NN:[711..714] day)))
+                          (-RRB-:[714..715] -RRB-)))
+                      (PP (TO:[716..718] to)
+                        (NP (DT:[719..722] the) (JJ:[723..732] deficient)
+                            (NNS:[733..740] animals))))))))))))
+    (.:[740..741] .)))
+
+;sentence 6 Span:742..848
+;This dosage regimen of riboflavin did not  change the activity of DMN
+;demethylase I in the normal animals.
+;[765..775]:substance:"riboflavin"
+;[808..825]:cyp450:"DMN demethylase I"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[742..746] This) (NN:[747..753] dosage) (NN:[754..761] regimen))
+      (PP (IN:[762..764] of)
+        (NP (NN:[765..775] riboflavin))))
+    (VP (VBD:[776..779] did) (RB:[780..783] not)
+      (VP (VB:[785..791] change)
+        (NP
+          (NP (DT:[792..795] the) (NN:[796..804] activity))
+          (PP (IN:[805..807] of)
+            (NP (NN:[808..811] DMN) (NN:[812..823] demethylase)
+                (CD:[824..825] I))))
+        (PP (IN:[826..828] in)
+          (NP (DT:[829..832] the) (JJ:[833..839] normal)
+              (NNS:[840..847] animals)))))
+    (.:[847..848] .)))
+
+;sentence 7 Span:849..932
+;The study in  vitro demonstrated that flavins were inhibitory to DMN
+;demethylase I.
+;[887..894]:substance:"flavins"
+;[914..931]:cyp450:"DMN demethylase I"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[849..852] The) (NN:[853..858] study))
+      (ADJP (FW:[859..861] in) (FW:[863..868] vitro)))
+    (VP (VBD:[869..881] demonstrated)
+      (SBAR (IN:[882..886] that)
+        (S
+          (NP-SBJ (NNS:[887..894] flavins))
+          (VP (VBD:[895..899] were)
+            (ADJP-PRD (JJ:[900..910] inhibitory)
+              (PP (TO:[911..913] to)
+                (NP (NN:[914..917] DMN) (NN:[918..929] demethylase)
+                    (CD:[930..931] I))))))))
+    (.:[931..932] .)))
+
+;sentence 8 Span:933..1149
+;The enzyme  activity in the microsomes of both control and deficient animals
+;was inhibited  by preincubation with flavins, suggesting that the interaction
+;between flavins  and the enzyme rendered the enzyme inactive.
+;[937..943]:substance:"enzyme"
+;[1047..1054]:substance:"flavins"
+;[1096..1103]:substance:"flavins"
+;[1113..1119]:substance:"enzyme"
+;[1133..1139]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[933..936] The) (NN:[937..943] enzyme) (NN:[945..953] activity))
+      (PP-LOC (IN:[954..956] in)
+        (NP (DT:[957..960] the) (NNS:[961..971] microsomes)))
+      (PP (IN:[972..974] of)
+        (NP (CC:[975..979] both)
+          (NP (JJ:[980..987] control)
+            (NML-1 (-NONE-:[987..987] *P*)))
+          (CC:[988..991] and)
+          (NP (JJ:[992..1001] deficient)
+            (NML-1 (NNS:[1002..1009] animals))))))
+    (VP (VBD:[1010..1013] was)
+      (VP (VBN:[1014..1023] inhibited)
+        (NP-2 (-NONE-:[1023..1023] *))
+        (PP (IN:[1025..1027] by)
+          (NP-LGS
+            (NP (NN:[1028..1041] preincubation))
+            (PP (IN:[1042..1046] with)
+              (NP (NNS:[1047..1054] flavins)))))
+        (,:[1054..1055] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1055..1055] *))
+          (VP (VBG:[1056..1066] suggesting)
+            (SBAR (IN:[1067..1071] that)
+              (S
+                (NP-SBJ
+                  (NP (DT:[1072..1075] the) (NN:[1076..1087] interaction))
+                  (PP (IN:[1088..1095] between)
+                    (NP
+                      (NP (NNS:[1096..1103] flavins))
+                      (CC:[1105..1108] and)
+                      (NP (DT:[1109..1112] the) (NN:[1113..1119] enzyme)))))
+                (VP (VBD:[1120..1128] rendered)
+                  (S
+                    (NP-SBJ (DT:[1129..1132] the) (NN:[1133..1139] enzyme))
+                    (ADJP-PRD (JJ:[1140..1148] inactive))))))))))
+    (.:[1148..1149] .)))
+
+;sentence 9 Span:1150..1243
+;Flavin adenine dinucleotide (FAD)  appeared to have a more pronounced effect
+;than riboflavin.
+;[1150..1177]:substance:"Flavin adenine dinucleotide"
+;[1179..1182]:substance:"FAD"
+;[1232..1242]:substance:"riboflavin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1150..1156] Flavin) (NN:[1157..1164] adenine)
+          (NN:[1165..1177] dinucleotide))
+      (NP (-LRB-:[1178..1179] -LRB-) (NN:[1179..1182] FAD)
+          (-RRB-:[1182..1183] -RRB-)))
+    (VP (VBD:[1185..1193] appeared)
+      (S
+        (NP-SBJ-1 (-NONE-:[1193..1193] *))
+        (VP (TO:[1194..1196] to)
+          (VP (VB:[1197..1201] have)
+            (NP
+              (NP (DT:[1202..1203] a)
+                (ADJP (RBR:[1204..1208] more) (JJ:[1209..1219] pronounced))
+                (NN:[1220..1226] effect))
+              (PP (IN:[1227..1231] than)
+                (NP (NN:[1232..1242] riboflavin))))))))
+    (.:[1242..1243] .)))
+
+;sentence 10 Span:1244..1343
+;In agreement with the  earlier observation, DMN demethylase II was unaffected
+;by FAD or riboflavin.
+;[1288..1306]:cyp450:"DMN demethylase II"
+;[1325..1328]:substance:"FAD"
+;[1332..1342]:substance:"riboflavin"
+(SENT
+  (S
+    (PP (DT:[1244..1246] In)
+      (NP
+        (NP (NN:[1247..1256] agreement))
+        (PP (IN:[1257..1261] with)
+          (NP (DT:[1262..1265] the) (JJR:[1267..1274] earlier)
+              (NN:[1275..1286] observation)))))
+    (,:[1286..1287] ,)
+    (NP-SBJ (NN:[1288..1291] DMN) (NN:[1292..1303] demethylase)
+            (CD:[1304..1306] II))
+    (VP (VBD:[1307..1310] was)
+      (ADJP-PRD (JJ:[1311..1321] unaffected)
+        (PP (IN:[1322..1324] by)
+          (NP (NN:[1325..1328] FAD) (CC:[1329..1331] or)
+              (NN:[1332..1342] riboflavin)))))
+    (.:[1342..1343] .)))
+
+;section 11 Span:1347..1390
+;PMID: 6585591 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1347..1351] PMID) (::[1351..1352] :) (CD:[1353..1360] 6585591)
+        (-LRB-:[1361..1362] -LSB-) (NNP:[1362..1368] PubMed) (::[1369..1370] -)
+        (VBN:[1371..1378] indexed) (IN:[1379..1382] for)
+        (NNP:[1383..1390] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1390..EOF] ]
+
+(ORPH -RSB-)

@@ -1,0 +1,344 @@
+;PMID: 8039127
+;source_file_2944.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)section:[e:38..49] = [t:38..49]
+;2)section:[e:55..87] = [t:55..87]
+;3)sentence:[e:91..170] = [t:91..170]
+;4)section:[e:174..276] = [t:174..276]
+;5)section:[e:280..337] = [t:280..337]
+;6)sentence:[e:341..352] = [t:341..352]
+;7)sentence:[e:353..579] = [t:353..579]
+;8)sentence:[e:581..589] = [t:581..589]
+;9)sentence:[e:590..824] = [t:590..824]
+;10)sentence:[e:825..833] = [t:825..833]
+;11)sentence:[e:834..905] = [t:834..905]
+;12)sentence:[e:906..970] = [t:906..970]
+;13)sentence:[e:971..1071] = [t:971..1071]
+;14)sentence:[e:1072..1083] = [t:1072..1083]
+;15)sentence:[e:1084..1190] = [t:1084..1190]
+;16)sentence:[e:1191..1389] = [t:1191..1389]
+;17)section:[e:1393..1411] = [t:1393..1411]
+;18)section:[e:1417..1431] = [t:1417..1431]
+;19)section:[e:1437..1454] = [t:1437..1454]
+;20)section:[e:1458..1502] = [t:1458..1502]
+
+;section 0 Span:0..32
+;Cancer.  1994 Aug 1;74(3):972-7.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (.:[6..7] .) (CD:[9..13] 1994) (NNP:[14..17] Aug)
+        (CD:[18..22] 1;74) (-LRB-:[22..23] -LRB-) (CD:[23..24] 3)
+        (-RRB-:[24..25] -RRB-) (::[25..26] :) (CD:[26..29] 972)
+        (CD:[29..32] -7.)))
+
+;section 1 Span:38..49
+;Comment in:
+(SEC
+  (FRAG (NNP:[38..45] Comment) (IN:[46..48] in) (NNP:[48..49] :)))
+
+;section 2 Span:55..87
+;Cancer. 1995 Oct 1;76(7):1295-7.
+(SEC
+  (FRAG (NN:[55..61] Cancer) (,:[61..62] .) (CD:[63..67] 1995)
+        (NNP:[68..71] Oct) (CD:[72..76] 1;76) (-LRB-:[76..77] -LRB-)
+        (CD:[77..78] 7) (-RRB-:[78..79] -RRB-) (::[79..80] :) (CD:[80..84] 1295)
+        (CD:[84..87] -7.)))
+
+;sentence 3 Span:91..170
+;Autologous bone marrow transplantation in children with advanced
+;neuroblastoma.
+;[133..141]:malignancy-developmental-state:"children"
+;[147..155]:malignancy-clinical-stage:"advanced"
+;[156..169]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (JJ:[91..101] Autologous)
+      (NML (NN:[102..106] bone) (NN:[107..113] marrow))
+      (NN:[114..129] transplantation))
+    (PP-LOC (IN:[130..132] in)
+      (NP
+        (NP (NNS:[133..141] children))
+        (PP (IN:[142..146] with)
+          (NP (VBN:[147..155] advanced) (NN:[156..169] neuroblastoma)))))
+    (.:[169..170] .)))
+
+;section 4 Span:174..276
+;Mugishima H, Iwata M, Okabe I, Sanuki E, Onuma N, Fujimoto T, Ohira M, Kaneko
+;M,  Tsuchida Y, Okuni M.
+(SEC
+  (FRAG (NNP:[174..183] Mugishima) (NNP:[184..186] H,) (NNP:[187..192] Iwata)
+        (NNP:[193..195] M,) (NNP:[196..201] Okabe) (NNP:[202..203] I)
+        (,:[203..204] ,) (NNP:[205..211] Sanuki) (NNP:[212..213] E)
+        (,:[213..214] ,) (NNP:[215..220] Onuma) (NNP:[221..222] N)
+        (,:[222..223] ,) (NNP:[224..232] Fujimoto) (NNP:[233..234] T)
+        (,:[234..235] ,) (NNP:[236..241] Ohira) (NNP:[242..244] M,)
+        (NNP:[245..251] Kaneko) (NNP:[252..254] M,) (NNP:[256..264] Tsuchida)
+        (NNP:[265..266] Y) (,:[266..267] ,) (NNP:[268..273] Okuni)
+        (NNP:[274..276] M.)))
+
+;section 5 Span:280..337
+;Department of Pediatrics, Nihon University, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[280..290] Department) (IN:[291..293] of)
+        (NNP:[294..304] Pediatrics) (,:[304..305] ,) (NNP:[306..311] Nihon)
+        (NNP:[312..322] University) (,:[322..323] ,) (NNP:[324..329] Tokyo)
+        (,:[329..330] ,) (NNP:[331..336] Japan) (.:[336..337] .)))
+
+;sentence 6 Span:341..352
+;BACKGROUND.
+(SENT
+  (NP (NN:[341..351] BACKGROUND) (.:[351..352] .)))
+
+;sentence 7 Span:353..579
+;Encouraging results have been reported with high dose chemotherapy  and total
+;body radiation followed by bone marrow autotransplantation in children  with
+;advanced neuroblastoma; however, relapse remains a significant problem.
+;[493..501]:malignancy-developmental-state:"children"
+;[508..516]:malignancy-clinical-stage:"advanced"
+;[517..530]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (VBG:[353..364] Encouraging) (NNS:[365..372] results))
+      (VP (VBP:[373..377] have)
+        (VP (VBN:[378..382] been)
+          (VP (VBN:[383..391] reported)
+            (NP-1 (-NONE-:[391..391] *))
+            (PP (IN:[392..396] with)
+              (NP
+                (NP
+                  (NP
+                    (NML (JJ:[397..401] high) (NN:[402..406] dose))
+                    (NN:[407..419] chemotherapy))
+                  (CC:[421..424] and)
+                  (NP (JJ:[425..430] total) (NN:[431..435] body)
+                      (NN:[436..445] radiation)))
+                (VP (VBN:[446..454] followed)
+                  (NP (-NONE-:[454..454] *))
+                  (PP (IN:[455..457] by)
+                    (NP-LGS
+                      (NML (NN:[458..462] bone) (NN:[463..469] marrow))
+                      (NN:[470..489] autotransplantation))))))
+            (PP-LOC (IN:[490..492] in)
+              (NP
+                (NP (NNS:[493..501] children))
+                (PP (IN:[503..507] with)
+                  (NP (VBN:[508..516] advanced) (NN:[517..530] neuroblastoma)))))))))
+    (::[530..531] ;)
+    (S
+      (ADVP (RB:[532..539] however))
+      (,:[539..540] ,)
+      (NP-SBJ (NN:[541..548] relapse))
+      (VP (VBZ:[549..556] remains)
+        (NP-PRD (DT:[557..558] a) (JJ:[559..570] significant)
+                (NN:[571..578] problem))))
+    (.:[578..579] .)))
+
+;sentence 8 Span:581..589
+;METHODS.
+(SENT
+  (NP (NNS:[581..588] METHODS) (.:[588..589] .)))
+
+;sentence 9 Span:590..824
+;The authors treated 22 children with advanced neuroblastoma with high  dose
+;chemotherapy, surgery, intraoperative radiation, and a bone marrow 
+;autotransplant (treated in vitro to remove tumor cells) followed by 
+;13-cis-retinoic acid.
+;[613..621]:malignancy-developmental-state:"children"
+;[627..635]:malignancy-clinical-stage:"advanced"
+;[636..649]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[590..593] The) (NNS:[594..601] authors))
+    (VP (VBD:[602..609] treated)
+      (NP
+        (NP (CD:[610..612] 22) (NNS:[613..621] children))
+        (PP (IN:[622..626] with)
+          (NP (VBN:[627..635] advanced) (NN:[636..649] neuroblastoma))))
+      (PP (IN:[650..654] with)
+        (NP
+          (NP
+            (NML (JJ:[655..659] high) (NN:[661..665] dose))
+            (NN:[666..678] chemotherapy))
+          (,:[678..679] ,)
+          (NP (NN:[680..687] surgery))
+          (,:[687..688] ,)
+          (NP (JJ:[689..703] intraoperative) (NN:[704..713] radiation))
+          (,:[713..714] ,) (CC:[715..718] and)
+          (NP
+            (NP (DT:[719..720] a)
+              (NML (NN:[721..725] bone) (NN:[726..732] marrow))
+              (NN:[734..748] autotransplant)
+              (PRN (-LRB-:[749..750] -LRB-)
+                (VP (VBN:[750..757] treated)
+                  (NP (-NONE-:[757..757] *))
+                  (ADVP (FW:[758..760] in) (FW:[761..766] vitro))
+                  (S-PRP
+                    (NP-SBJ (-NONE-:[766..766] *))
+                    (VP (TO:[767..769] to)
+                      (VP (VB:[770..776] remove)
+                        (NP (NN:[777..782] tumor) (NNS:[783..788] cells))))))
+                (-RRB-:[788..789] -RRB-)))
+            (VP (VBN:[790..798] followed)
+              (NP (-NONE-:[798..798] *))
+              (PP (IN:[799..801] by)
+                (NP-LGS (JJ:[803..818] 13-cis-retinoic) (NN:[819..823] acid))))))))
+    (.:[823..824] .)))
+
+;sentence 10 Span:825..833
+;RESULTS.
+(SENT
+  (NP (NNS:[825..832] RESULTS) (.:[832..833] .)))
+
+;sentence 11 Span:834..905
+;The 3-year relapse rate was 25% (95% confidence  interval [CI], 6-44%).
+(SENT
+  (S
+    (NP-SBJ (DT:[834..837] The)
+      (NML
+        (NML (CD:[838..839] 3) (HYPH:[839..840] -) (NN:[840..844] year))
+        (NN:[845..852] relapse))
+      (NN:[853..857] rate))
+    (VP (VBD:[858..861] was)
+      (NP-PRD (CD:[862..864] 25) (NN:[864..865] %)
+        (PRN (-LRB-:[866..867] -LRB-)
+          (FRAG
+            (NP (CD:[867..869] 95) (NN:[869..870] %)
+              (NML
+                (NML (NN:[871..881] confidence) (NN:[883..891] interval))
+                (NML (-LRB-:[892..893] -LSB-) (NN:[893..895] CI)
+                     (-RRB-:[895..896] -RSB-))))
+            (,:[896..897] ,)
+            (NP
+              (QP (CD:[898..899] 6) (HYPH:[899..900] -) (CD:[900..902] 44))
+              (NN:[902..903] %)))
+          (-RRB-:[903..904] -RRB-))))
+    (.:[904..905] .)))
+
+;sentence 12 Span:906..970
+;The 3-year disease free survival rate was 72% (95% CI,  52-92%).
+(SENT
+  (S
+    (NP-SBJ (DT:[906..909] The)
+      (NML
+        (NML (CD:[910..911] 3) (HYPH:[911..912] -) (NN:[912..916] year))
+        (NN:[917..924] disease) (JJ:[925..929] free))
+      (NN:[930..938] survival) (NN:[939..943] rate))
+    (VP (VBD:[944..947] was)
+      (NP-PRD (CD:[948..950] 72) (NN:[950..951] %)
+        (PRN (-LRB-:[952..953] -LRB-)
+          (FRAG
+            (NP (CD:[953..955] 95) (NN:[955..956] %) (NN:[957..959] CI))
+            (,:[959..960] ,)
+            (NP
+              (QP (CD:[962..964] 52) (HYPH:[964..965] -) (CD:[965..967] 92))
+              (NN:[967..968] %)))
+          (-RRB-:[968..969] -RRB-))))
+    (.:[969..970] .)))
+
+;sentence 13 Span:971..1071
+;Toxicities included hemolytic uremic syndrome, herpes infection, and  hepatic
+;venoocclusive disease.
+(SENT
+  (S
+    (NP-SBJ (NNS:[971..981] Toxicities))
+    (VP (VBD:[982..990] included)
+      (NP
+        (NP (JJ:[991..1000] hemolytic) (JJ:[1001..1007] uremic)
+            (NN:[1008..1016] syndrome))
+        (,:[1016..1017] ,)
+        (NP (NN:[1018..1024] herpes) (NN:[1025..1034] infection))
+        (,:[1034..1035] ,) (CC:[1036..1039] and)
+        (NP (JJ:[1041..1048] hepatic) (JJ:[1049..1062] venoocclusive)
+            (NN:[1063..1070] disease))))
+    (.:[1070..1071] .)))
+
+;sentence 14 Span:1072..1083
+;CONCLUSION.
+(SENT
+  (NP (NN:[1072..1082] CONCLUSION) (.:[1082..1083] .)))
+
+;sentence 15 Span:1084..1190
+;These data suggest that this  treatment strategy offers an increased rate of
+;3-year disease free survival.
+(SENT
+  (S
+    (NP-SBJ (DT:[1084..1089] These) (NNS:[1090..1094] data))
+    (VP (VBP:[1095..1102] suggest)
+      (SBAR (IN:[1103..1107] that)
+        (S
+          (NP-SBJ (DT:[1108..1112] this) (NN:[1114..1123] treatment)
+                  (NN:[1124..1132] strategy))
+          (VP (VBZ:[1133..1139] offers)
+            (NP
+              (NP (DT:[1140..1142] an) (VBN:[1143..1152] increased)
+                  (NN:[1153..1157] rate))
+              (PP (IN:[1158..1160] of)
+                (NP
+                  (NML
+                    (NML (CD:[1161..1162] 3) (HYPH:[1162..1163] -)
+                         (NN:[1163..1167] year))
+                    (NN:[1168..1175] disease) (JJ:[1176..1180] free))
+                  (NN:[1181..1189] survival))))))))
+    (.:[1189..1190] .)))
+
+;sentence 16 Span:1191..1389
+;The  nonrandomized nature of this study and its use of multiple modalities
+;precludes  the analysis of the specific contribution of each treatment
+;component and  comparison with conventional therapy.
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1191..1194] The) (JJ:[1196..1209] nonrandomized)
+            (NN:[1210..1216] nature))
+        (PP (IN:[1217..1219] of)
+          (NP (DT:[1220..1224] this) (NN:[1225..1230] study))))
+      (CC:[1231..1234] and)
+      (NP
+        (NP (PRP$:[1235..1238] its) (NN:[1239..1242] use))
+        (PP (IN:[1243..1245] of)
+          (NP (JJ:[1246..1254] multiple) (NNS:[1255..1265] modalities)))))
+    (VP (VBZ:[1266..1275] precludes)
+      (NP
+        (NP
+          (NP (DT:[1277..1280] the) (NN:[1281..1289] analysis))
+          (PP (IN:[1290..1292] of)
+            (NP
+              (NP (DT:[1293..1296] the) (JJ:[1297..1305] specific)
+                  (NN:[1306..1318] contribution))
+              (PP (IN:[1319..1321] of)
+                (NP (DT:[1322..1326] each) (NN:[1327..1336] treatment)
+                    (NN:[1337..1346] component))))))
+        (CC:[1347..1350] and)
+        (NP
+          (NP (NN:[1352..1362] comparison))
+          (PP (IN:[1363..1367] with)
+            (NP (JJ:[1368..1380] conventional) (NN:[1381..1388] therapy))))))
+    (.:[1388..1389] .)))
+
+;section 17 Span:1393..1411
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1393..1404] Publication) (NNP:[1405..1410] Types)
+        (::[1410..1411] :)))
+
+;section 18 Span:1417..1431
+;Clinical Trial
+(SEC
+  (FRAG (NNP:[1417..1425] Clinical) (NNP:[1426..1431] Trial)))
+
+;section 19 Span:1437..1454
+;Multicenter Study
+(SEC
+  (FRAG (NNP:[1437..1448] Multicenter) (NNP:[1449..1454] Study)))
+
+;section 20 Span:1458..1502
+;PMID: 8039127 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1458..1462] PMID) (::[1462..1463] :) (CD:[1464..1471] 8039127)
+        (NN:[1472..1473] -LSB-) (NNP:[1473..1479] PubMed) (::[1480..1481] -)
+        (NN:[1482..1489] indexed) (IN:[1490..1493] for)
+        (NNP:[1494..1502] MEDLINE-RSB-)))

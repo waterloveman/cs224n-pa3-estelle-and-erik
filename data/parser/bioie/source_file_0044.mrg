@@ -1,0 +1,432 @@
+;PMID: 10211532
+;source_file_900.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:39..109] = [t:39..109]
+;2)section:[e:113..124] = [t:113..124]
+;3)section:[e:128..185] = [t:128..185]
+;4)sentence:[e:189..411] = [t:189..411]
+;5)sentence:[e:412..641] = [t:412..641]
+;6)sentence:[e:642..873] = [t:642..873]
+;7)sentence:[e:874..1027] = [t:874..1027]
+;8)sentence:[e:1028..1348] = [t:1028..1348]
+;9)sentence:[e:1349..1615] = [t:1349..1615]
+;10)sentence:[e:1616..1901] = [t:1616..1901]
+;11)section:[e:1905..1923] = [t:1905..1923]
+;12)section:[e:1929..1935] = [t:1929..1935]
+;13)section:[e:1941..1957] = [t:1941..1957]
+;14)section:[e:1961..2006] = [t:1961..2005]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1961..2006][t:1961..2005]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[24..25] )
+;ERROR_Token in entity file but not tree[25..26] :
+;ERROR_Token in entity file but not tree[2005..2006] ]
+;ERROR_POS mismatch [16..19] t:token e:NNP Feb
+;ERROR_Token in tree file but not entity[24..26] ):
+
+;section 0 Span:0..33
+;Clin Ther. 1999 Feb;21(2):281-95.
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..9] Ther) (.:[9..10] .) (CD:[11..15] 1999)
+        (token:[16..19] Feb) (::[19..20] ;) (CD:[20..22] 21)
+        (-LRB-:[22..23] -LRB-) (CD:[23..24] 2) (-RRB-:[24..26] -RRB-:)
+        (CD:[26..29] 281) (::[29..30] -) (CD:[30..32] 95) (.:[32..33] .)))
+
+;sentence 1 Span:39..109
+;Second-generation antihistamines: the risk of ventricular arrhythmias.
+;[57..71]:substance:"antihistamines"
+(SENT
+  (NP-HLN
+    (NP
+      (NML (JJ:[39..45] Second) (HYPH:[45..46] -) (NN:[46..56] generation))
+      (NNS:[57..71] antihistamines))
+    (::[71..72] :)
+    (NP
+      (NP (DT:[73..76] the) (NN:[77..81] risk))
+      (PP (IN:[82..84] of)
+        (NP (JJ:[85..96] ventricular) (NNS:[97..108] arrhythmias))))
+    (.:[108..109] .)))
+
+;section 2 Span:113..124
+;DuBuske LM.
+(SEC
+  (FRAG (NNP:[113..120] DuBuske) (NNP:[121..123] LM) (.:[123..124] .)))
+
+;section 3 Span:128..185
+;Brigham and Women's Hospital, Boston, Massachusetts, USA.
+(SEC
+  (FRAG (NNP:[128..135] Brigham) (CC:[136..139] and) (NNP:[140..145] Women)
+        (POS:[145..147] 's) (NNP:[148..156] Hospital) (,:[156..157] ,)
+        (NNP:[158..164] Boston) (,:[164..165] ,) (NNP:[166..179] Massachusetts)
+        (,:[179..180] ,) (NNP:[181..184] USA) (.:[184..185] .)))
+
+;sentence 4 Span:189..411
+;Some second-generation antihistamines, notably terfenadine and astemizole,
+;have  been associated with prolongation of the QT interval and the
+;development of  torsades de pointes, a potentially fatal ventricular
+;arrhythmia.
+;[212..226]:substance:"antihistamines"
+;[236..247]:substance:"terfenadine"
+;[252..262]:substance:"astemizole"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[189..193] Some)
+        (NML (JJ:[194..200] second) (HYPH:[200..201] -)
+             (NN:[201..211] generation))
+        (NNS:[212..226] antihistamines))
+      (,:[226..227] ,)
+      (NP
+        (ADVP (RB:[228..235] notably))
+        (NN:[236..247] terfenadine) (CC:[248..251] and)
+         (NN:[252..262] astemizole)))
+    (,:[262..263] ,)
+    (VP (VBP:[264..268] have)
+      (VP (VBN:[270..274] been)
+        (VP (VBN:[275..285] associated)
+          (NP-1 (-NONE-:[285..285] *))
+          (PP-CLR (IN:[286..290] with)
+            (NP
+              (NP
+                (NP (NN:[291..303] prolongation))
+                (PP (IN:[304..306] of)
+                  (NP (DT:[307..310] the) (NN:[311..313] QT)
+                      (NN:[314..322] interval))))
+              (CC:[323..326] and)
+              (NP
+                (NP (DT:[327..330] the) (NN:[331..342] development))
+                (PP (IN:[343..345] of)
+                  (NP
+                    (NP (FW:[347..355] torsades) (FW:[356..358] de)
+                        (FW:[359..366] pointes))
+                    (,:[366..367] ,)
+                    (NP (DT:[368..369] a)
+                      (ADJP (RB:[370..381] potentially) (JJ:[382..387] fatal))
+                      (JJ:[388..399] ventricular) (NN:[400..410] arrhythmia))))))))))
+    (.:[410..411] .)))
+
+;sentence 5 Span:412..641
+;This rare  adverse event has been associated with greatly elevated blood
+;levels of these  agents, resulting from drug overdose, hepatic insufficiency
+;(dysfunction), or  interactions with other drugs that inhibit their
+;metabolism.
+;[502..508]:substance:"agents"
+;[525..529]:substance:"drug"
+;[605..610]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[412..416] This) (JJ:[417..421] rare) (JJ:[423..430] adverse)
+              (NN:[431..436] event))
+    (VP (VBZ:[437..440] has)
+      (VP (VBN:[441..445] been)
+        (VP (VBN:[446..456] associated)
+          (NP-2 (-NONE-:[456..456] *))
+          (PP-CLR (IN:[457..461] with)
+            (NP
+              (NP
+                (NP
+                  (ADJP (RB:[462..469] greatly) (JJ:[470..478] elevated))
+                  (NN:[479..484] blood) (NNS:[485..491] levels))
+                (PP (IN:[492..494] of)
+                  (NP (DT:[495..500] these) (NNS:[502..508] agents))))
+              (,:[508..509] ,)
+              (VP (VBG:[510..519] resulting)
+                (PP (IN:[520..524] from)
+                  (NP
+                    (NP (NN:[525..529] drug) (NN:[530..538] overdose))
+                    (,:[538..539] ,)
+                    (NP (JJ:[540..547] hepatic) (NN:[548..561] insufficiency)
+                      (PRN (-LRB-:[562..563] -LRB-)
+                        (NP (NN:[563..574] dysfunction))
+                        (-RRB-:[574..575] -RRB-)))
+                    (,:[575..576] ,) (CC:[577..579] or)
+                    (NP
+                      (NP (NNS:[581..593] interactions))
+                      (PP (IN:[594..598] with)
+                        (NP
+                          (NP (JJ:[599..604] other) (NNS:[605..610] drugs))
+                          (SBAR
+                            (WHNP-1 (WDT:[611..615] that))
+                            (S
+                              (NP-SBJ-1 (-NONE-:[615..615] *T*))
+                              (VP (VBP:[616..623] inhibit)
+                                (NP (PRP$:[624..629] their)
+                                    (NN:[630..640] metabolism))))))))))))))))
+    (.:[640..641] .)))
+
+;sentence 6 Span:642..873
+;This paper reviews  the data concerning the effects of selected
+;second-generation antihistamines on  cardiac conduction, particularly the QT
+;interval, to evaluate whether  ventricular arrhythmias are a class effect of
+;these agents.
+;[724..738]:substance:"antihistamines"
+;[866..872]:substance:"agents"
+(SENT
+  (S
+    (NP-SBJ (DT:[642..646] This) (NN:[647..652] paper))
+    (VP (VBZ:[653..660] reviews)
+      (NP
+        (NP (DT:[662..665] the) (NN:[666..670] data))
+        (VP (VBG:[671..681] concerning)
+          (NP
+            (NP (DT:[682..685] the) (NNS:[686..693] effects))
+            (PP (IN:[694..696] of)
+              (NP (JJ:[697..705] selected)
+                (NML (JJ:[706..712] second) (HYPH:[712..713] -)
+                     (NN:[713..723] generation))
+                (NNS:[724..738] antihistamines)))
+            (PP (IN:[739..741] on)
+              (NP
+                (NP (JJ:[743..750] cardiac) (NN:[751..761] conduction))
+                (,:[761..762] ,)
+                (NP
+                  (ADVP (RB:[763..775] particularly))
+                  (DT:[776..779] the) (NN:[780..782] QT)
+                   (NN:[783..791] interval)))))))
+      (,:[791..792] ,)
+      (S-PRP
+        (NP-SBJ (-NONE-:[792..792] *))
+        (VP (TO:[793..795] to)
+          (VP (VB:[796..804] evaluate)
+            (SBAR (IN:[805..812] whether)
+              (S
+                (NP-SBJ (JJ:[814..825] ventricular) (NNS:[826..837] arrhythmias))
+                (VP (VBP:[838..841] are)
+                  (NP-PRD
+                    (NP (DT:[842..843] a) (NN:[844..849] class)
+                        (NN:[850..856] effect))
+                    (PP (IN:[857..859] of)
+                      (NP (DT:[860..865] these) (NNS:[866..872] agents)))))))))))
+    (.:[872..873] .)))
+
+;sentence 7 Span:874..1027
+;Electrocardiographic  studies indicate that terfenadine and astemizole, but
+;not loratadine or  cetirizine, prolong the QT interval in laboratory
+;animals.
+;[918..929]:substance:"terfenadine"
+;[934..944]:substance:"astemizole"
+;[954..964]:substance:"loratadine"
+;[969..979]:substance:"cetirizine"
+(SENT
+  (S
+    (NP-SBJ (JJ:[874..894] Electrocardiographic) (NNS:[896..903] studies))
+    (VP (VBP:[904..912] indicate)
+      (SBAR (IN:[913..917] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[918..929] terfenadine) (CC:[930..933] and)
+                (NN:[934..944] astemizole))
+            (,:[944..945] ,) (CC:[946..949] but) (RB:[950..953] not)
+            (NP (NN:[954..964] loratadine) (CC:[965..967] or)
+                (NN:[969..979] cetirizine)))
+          (,:[979..980] ,)
+          (VP (VBP:[981..988] prolong)
+            (NP (DT:[989..992] the) (NN:[993..995] QT) (NN:[996..1004] interval))
+            (PP-LOC (IN:[1005..1007] in)
+              (NP (NN:[1008..1018] laboratory) (NNS:[1019..1026] animals)))))))
+    (.:[1026..1027] .)))
+
+;sentence 8 Span:1028..1348
+;In vitro studies  demonstrate that terfenadine and astemizole block the
+;cardiac K+ channels,  leading to delayed ventricular repolarization and
+;QT-interval prolongation; in  contrast, neither loratadine nor its
+;metabolite, desloratadine, significantly  inhibits cardiac K+ channels at
+;clinically achievable blood levels.
+;[1063..1074]:substance:"terfenadine"
+;[1079..1089]:substance:"astemizole"
+;[1108..1110]:substance:"K+"
+;[1220..1230]:substance:"loratadine"
+;[1239..1249]:substance:"metabolite"
+;[1251..1264]:substance:"desloratadine"
+;[1298..1300]:substance:"K+"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (ADJP (FW:[1028..1030] In) (FW:[1031..1036] vitro))
+        (NNS:[1037..1044] studies))
+      (VP (VBP:[1046..1057] demonstrate)
+        (SBAR (IN:[1058..1062] that)
+          (S
+            (NP-SBJ (NN:[1063..1074] terfenadine) (CC:[1075..1078] and)
+                    (NN:[1079..1089] astemizole))
+            (VP (VBP:[1090..1095] block)
+              (NP (DT:[1096..1099] the) (JJ:[1100..1107] cardiac)
+                (NML (NN:[1108..1109] K) (SYM:[1109..1110] +))
+                (NNS:[1111..1119] channels))
+              (,:[1119..1120] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[1120..1120] *))
+                (VP (VBG:[1122..1129] leading)
+                  (PP-CLR (TO:[1130..1132] to)
+                    (NP
+                      (NP (JJ:[1133..1140] delayed)
+                          (JJ:[1141..1152] ventricular)
+                          (NN:[1153..1167] repolarization))
+                      (CC:[1168..1171] and)
+                      (NP
+                        (NML (NN:[1172..1174] QT) (HYPH:[1174..1175] -)
+                             (NN:[1175..1183] interval))
+                        (NN:[1184..1196] prolongation)))))))))))
+    (::[1196..1197] ;)
+    (S
+      (PP (IN:[1198..1200] in)
+        (NP (NN:[1202..1210] contrast)))
+      (,:[1210..1211] ,)
+      (NP-SBJ (CC:[1212..1219] neither)
+        (NP (NN:[1220..1230] loratadine))
+        (CC:[1231..1234] nor)
+        (NP
+          (NP (PRP$:[1235..1238] its) (NN:[1239..1249] metabolite))
+          (,:[1249..1250] ,)
+          (NP (NN:[1251..1264] desloratadine))))
+      (,:[1264..1265] ,)
+      (ADVP (RB:[1266..1279] significantly))
+      (VP (VBZ:[1281..1289] inhibits)
+        (NP (JJ:[1290..1297] cardiac)
+          (NML (NN:[1298..1299] K) (SYM:[1299..1300] +))
+          (NNS:[1301..1309] channels))
+        (PP (IN:[1310..1312] at)
+          (NP
+            (ADJP (RB:[1313..1323] clinically) (JJ:[1324..1334] achievable))
+            (NN:[1335..1340] blood) (NNS:[1341..1347] levels)))))
+    (.:[1347..1348] .)))
+
+;sentence 9 Span:1349..1615
+;Studies in  human volunteers confirm the absence of electrocardiographic
+;effects of  azelastine, cetirizine, fexofenadine, and loratadine administered
+;at several  times the recommended dose or concomitantly with agents that
+;inhibit their  metabolism and elimination.
+;[1434..1444]:substance:"azelastine"
+;[1446..1456]:substance:"cetirizine"
+;[1458..1470]:substance:"fexofenadine"
+;[1476..1486]:substance:"loratadine"
+;[1561..1567]:substance:"agents"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1349..1356] Studies))
+      (PP (IN:[1357..1359] in)
+        (NP (JJ:[1361..1366] human) (NNS:[1367..1377] volunteers))))
+    (VP (VBP:[1378..1385] confirm)
+      (NP
+        (NP (DT:[1386..1389] the) (NN:[1390..1397] absence))
+        (PP (IN:[1398..1400] of)
+          (NP
+            (NP (JJ:[1401..1421] electrocardiographic)
+                (NNS:[1422..1429] effects))
+            (PP (IN:[1430..1432] of)
+              (NP
+                (NP (NN:[1434..1444] azelastine) (,:[1444..1445] ,)
+                    (NN:[1446..1456] cetirizine) (,:[1456..1457] ,)
+                    (NN:[1458..1470] fexofenadine) (,:[1470..1471] ,)
+                    (CC:[1472..1475] and) (NN:[1476..1486] loratadine))
+                (VP (VBN:[1487..1499] administered)
+                  (NP (-NONE-:[1499..1499] *))
+                  (PP
+                    (PP (IN:[1500..1502] at)
+                      (NP
+                        (QP (JJ:[1503..1510] several) (NNS:[1512..1517] times))
+                        (DT:[1518..1521] the) (JJ:[1522..1533] recommended)
+                         (NN:[1534..1538] dose)))
+                    (CC:[1539..1541] or)
+                    (PP
+                      (ADVP (RB:[1542..1555] concomitantly))
+                      (IN:[1556..1560] with)
+                      (NP
+                        (NP (NNS:[1561..1567] agents))
+                        (SBAR
+                          (WHNP-1 (WDT:[1568..1572] that))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[1572..1572] *T*))
+                            (VP (VBP:[1573..1580] inhibit)
+                              (NP (PRP$:[1581..1586] their)
+                                  (NN:[1588..1598] metabolism)
+                                  (CC:[1599..1602] and)
+                                  (NN:[1603..1614] elimination)))))))))))))))
+    (.:[1614..1615] .)))
+
+;sentence 10 Span:1616..1901
+;In conclusion, the data indicate that the potential  to cause ventricular
+;arrhythmias is not a class effect of second-generation  antihistamines and
+;that loratadine, cetirizine, azelastine, and fexofenadine are  not associated
+;with torsades de pointes or other ventricular arrhythmias.
+;[1746..1760]:substance:"antihistamines"
+;[1770..1780]:substance:"loratadine"
+;[1782..1792]:substance:"cetirizine"
+;[1794..1804]:substance:"azelastine"
+;[1810..1822]:substance:"fexofenadine"
+(SENT
+  (S
+    (PP (IN:[1616..1618] In)
+      (NP (NN:[1619..1629] conclusion)))
+    (,:[1629..1630] ,)
+    (NP-SBJ (DT:[1631..1634] the) (NNS:[1635..1639] data))
+    (VP (VBP:[1640..1648] indicate)
+      (SBAR
+        (SBAR (IN:[1649..1653] that)
+          (S
+            (NP-SBJ (DT:[1654..1657] the) (NN:[1658..1667] potential)
+              (S
+                (NP-SBJ (-NONE-:[1667..1667] *))
+                (VP (TO:[1669..1671] to)
+                  (VP (VB:[1672..1677] cause)
+                    (NP (JJ:[1678..1689] ventricular)
+                        (NNS:[1690..1701] arrhythmias))))))
+            (VP (VBZ:[1702..1704] is) (RB:[1705..1708] not)
+              (NP-PRD
+                (NP (DT:[1709..1710] a) (NN:[1711..1716] class)
+                    (NN:[1717..1723] effect))
+                (PP (IN:[1724..1726] of)
+                  (NP
+                    (NML (JJ:[1727..1733] second) (HYPH:[1733..1734] -)
+                         (NN:[1734..1744] generation))
+                    (NNS:[1746..1760] antihistamines)))))))
+        (CC:[1761..1764] and)
+        (SBAR (IN:[1765..1769] that)
+          (S
+            (NP-SBJ-1 (NN:[1770..1780] loratadine) (,:[1780..1781] ,)
+                      (NN:[1782..1792] cetirizine) (,:[1792..1793] ,)
+                      (NN:[1794..1804] azelastine) (,:[1804..1805] ,)
+                      (CC:[1806..1809] and) (NN:[1810..1822] fexofenadine))
+            (VP (VBP:[1823..1826] are) (RB:[1828..1831] not)
+              (VP (VBN:[1832..1842] associated)
+                (NP-1 (-NONE-:[1842..1842] *))
+                (PP-CLR (IN:[1843..1847] with)
+                  (NP
+                    (NP (FW:[1848..1856] torsades) (FW:[1857..1859] de)
+                        (FW:[1860..1867] pointes))
+                    (CC:[1868..1870] or)
+                    (NP (JJ:[1871..1876] other) (JJ:[1877..1888] ventricular)
+                        (NNS:[1889..1900] arrhythmias))))))))))
+    (.:[1900..1901] .)))
+
+;section 11 Span:1905..1923
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1905..1916] Publication) (NNP:[1917..1922] Types)
+        (::[1922..1923] :)))
+
+;section 12 Span:1929..1935
+;Review
+(SEC
+  (FRAG (NNP:[1929..1935] Review)))
+
+;section 13 Span:1941..1957
+;Review, Tutorial
+(SEC
+  (FRAG (NNP:[1941..1947] Review) (,:[1947..1948] ,) (NNP:[1949..1957] Tutorial)))
+
+;section 14 Span:1961..2005
+;PMID: 10211532 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1961..1965] PMID) (::[1965..1966] :) (CD:[1967..1975] 10211532)
+        (-LRB-:[1976..1977] -LSB-) (NNP:[1977..1983] PubMed) (::[1984..1985] -)
+        (VBN:[1986..1993] indexed) (IN:[1994..1997] for)
+        (NNP:[1998..2005] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2005..EOF] ]
+
+(ORPH -RSB-)

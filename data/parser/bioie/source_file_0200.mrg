@@ -1,0 +1,431 @@
+;PMID: 6906261
+;source_file_858.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..161] = [t:38..161]
+;2)section:[e:165..210] = [t:165..210]
+;3)sentence:[e:214..479] = [t:214..479]
+;4)sentence:[e:480..580] = [t:480..580]
+;5)sentence:[e:581..695] = [t:581..695]
+;6)sentence:[e:697..821] = [t:697..821]
+;7)sentence:[e:822..1055] = [t:822..1055]
+;8)sentence:[e:1056..1394] = [t:1056..1394]
+;9)sentence:[e:1396..1569] = [t:1396..1569]
+;10)sentence:[e:1570..1701] = [t:1570..1701]
+;11)sentence:[e:1702..1874] = [t:1702..1874]
+;12)section:[e:1878..1922] = [t:1878..1922]
+
+;section 0 Span:0..32
+;Ciba Found Symp. 1980;76:119-39.
+(SEC
+  (FRAG (NNP:[0..4] Ciba) (NNP:[5..10] Found) (NNP:[11..15] Symp) (.:[15..16] .)
+        (CD:[17..21] 1980) (CC:[21..24] ;76) (CD:[24..28] :119) (::[28..29] -)
+        (CD:[29..31] 39) (.:[31..32] .)))
+
+;sentence 1 Span:38..161
+;Substrate-dependent irreversible inactivation of cytochrome P-450: conversion
+;of  its haem moiety into modified porphyrins.
+;[38..47]:substance:"Substrate"
+;[87..103]:cyp450:"cytochrome P-450"
+;[150..160]:substance:"porphyrins"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (ADJP (NN:[38..47] Substrate) (HYPH:[47..48] -) (JJ:[48..57] dependent))
+        (JJ:[58..70] irreversible) (NN:[71..83] inactivation))
+      (PP (IN:[84..86] of)
+        (NP (NN:[87..97] cytochrome) (NN:[98..103] P-450))))
+    (::[103..104] :)
+    (NP
+      (NP (NN:[105..115] conversion))
+      (PP (IN:[116..118] of)
+        (NP (PRP$:[120..123] its) (NN:[124..128] haem) (NN:[129..135] moiety)))
+      (PP (IN:[136..140] into)
+        (NP (JJ:[141..149] modified) (NNS:[150..160] porphyrins))))
+    (.:[160..161] .)))
+
+;section 2 Span:165..210
+;De Matteis F, Gibbs AH, Cantoni L, Francis J.
+(SEC
+  (FRAG (NNP:[165..167] De) (NNP:[168..175] Matteis) (NNP:[176..177] F)
+        (,:[177..178] ,) (NNP:[179..184] Gibbs) (NNP:[185..187] AH)
+        (,:[187..188] ,) (NNP:[189..196] Cantoni) (NNP:[197..199] L,)
+        (NNP:[200..207] Francis) (NNP:[208..210] J.)))
+
+;sentence 3 Span:214..479
+;2-Allyl-2-isopropylacetamide and other drugs containing either an allyl, a
+;vinyl  or an ethynyl unsaturated side chain are metabolized by liver
+;cytochrome P-450  to reactive derivatives that irreversibly inhibit the
+;haemoprotein by a suicidal  type of inactivation.
+;[214..242]:substance:"2-Allyl-2-isopropylacetamide"
+;[253..258]:substance:"drugs"
+;[358..374]:cyp450:"cytochrome P-450"
+;[388..399]:substance:"derivatives"
+;[430..442]:substance:"haemoprotein"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP (NN:[214..242] 2-Allyl-2-isopropylacetamide))
+        (CC:[243..246] and)
+        (NP (JJ:[247..252] other) (NNS:[253..258] drugs)))
+      (VP (VBG:[259..269] containing)
+        (NP (CC:[270..276] either)
+          (NP (DT:[277..279] an) (NN:[280..285] allyl))
+          (,:[285..286] ,)
+          (NP (DT:[287..288] a) (NN:[289..294] vinyl))
+          (CC:[296..298] or)
+          (NP (DT:[299..301] an) (NN:[302..309] ethynyl)
+              (JJ:[310..321] unsaturated) (NN:[322..326] side)
+              (NN:[327..332] chain)))))
+    (VP (VBD:[333..336] are)
+      (VP (VBN:[337..348] metabolized)
+        (NP-3 (-NONE-:[348..348] *))
+        (PP (IN:[349..351] by)
+          (NP-LGS (NN:[352..357] liver)
+             (NN:[358..368] cytochrome) (NN:[369..374] P-450)))
+        (PP (TO:[376..378] to)
+          (NP
+            (NP (JJ:[379..387] reactive) (NNS:[388..399] derivatives))
+            (SBAR
+              (WHNP-1 (WDT:[400..404] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[404..404] *T*))
+                (ADVP (RB:[405..417] irreversibly))
+                (VP (VBP:[418..425] inhibit)
+                  (NP (DT:[426..429] the) (NN:[430..442] haemoprotein))
+                  (PP-MNR (IN:[443..445] by)
+                    (NP
+                      (NP (DT:[446..447] a) (JJ:[448..456] suicidal)
+                          (NN:[458..462] type))
+                      (PP (IN:[463..465] of)
+                        (NP (NN:[466..478] inactivation))))))))))))
+    (.:[478..479] .)))
+
+;sentence 4 Span:480..580
+;The main target is the haem moiety of cytochrome P-450  which is converted
+;into abnormal porphyrins.
+;[518..534]:cyp450:"cytochrome P-450"
+;[569..579]:substance:"porphyrins"
+(SENT
+  (S
+    (NP-SBJ (DT:[480..483] The) (JJ:[484..488] main) (NN:[489..495] target))
+    (VP (VBZ:[496..498] is)
+      (NP-PRD
+        (NP
+          (NP (DT:[499..502] the) (NN:[503..507] haem) (NN:[508..514] moiety))
+          (PP (IN:[515..517] of)
+            (NP (NN:[518..528] cytochrome) (NN:[529..534] P-450))))
+        (SBAR
+          (WHNP-1 (WDT:[536..541] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[541..541] *T*))
+            (VP (VBZ:[542..544] is)
+              (VP (VBN:[545..554] converted)
+                (NP-1 (-NONE-:[554..554] *))
+                (PP-CLR (IN:[555..559] into)
+                  (NP (JJ:[560..568] abnormal) (NNS:[569..579] porphyrins)))))))))
+    (.:[579..580] .)))
+
+;sentence 5 Span:581..695
+;These have been isolated from the  liver of treated rats, extensively
+;purified and compared with model porphyrins.
+;[684..694]:substance:"porphyrins"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[581..586] These))
+    (VP (VBP:[587..591] have)
+      (VP (VBN:[592..596] been)
+        (VP
+          (VP (VBN:[597..605] isolated)
+            (NP-1 (-NONE-:[605..605] *))
+            (PP (IN:[606..610] from)
+              (NP
+                (NP (DT:[611..614] the) (NN:[616..621] liver))
+                (PP (IN:[622..624] of)
+                  (NP (JJ:[625..632] treated) (NNS:[633..637] rats))))))
+          (,:[637..638] ,)
+          (VP
+            (ADVP (RB:[639..650] extensively))
+            (VBN:[651..659] purified)
+            (NP-1 (-NONE-:[659..659] *)))
+          (CC:[660..663] and)
+          (VP (VBN:[664..672] compared)
+            (NP-1 (-NONE-:[672..672] *))
+            (PP-CLR (IN:[673..677] with)
+              (NP (NN:[678..683] model) (NNS:[684..694] porphyrins)))))))
+    (.:[694..695] .)))
+
+;sentence 6 Span:697..821
+;The abnormal porphyrins incorporate metal ions in vitro much more readily
+;than  does their parent porphyrin, protoporphyrin.
+;[710..720]:substance:"porphyrins"
+;[733..743]:substance:"metal ions"
+;[795..804]:substance:"porphyrin"
+;[806..820]:substance:"protoporphyrin"
+(SENT
+  (S
+    (NP-SBJ (DT:[697..700] The) (JJ:[701..709] abnormal)
+            (NNS:[710..720] porphyrins))
+    (VP (VBP:[721..732] incorporate)
+      (NP (NN:[733..738] metal) (NNS:[739..743] ions))
+      (ADVP (FW:[744..746] in) (FW:[747..752] vitro))
+      (ADVP
+        (ADVP
+          (ADVP (RB:[753..757] much) (RBR:[758..762] more))
+          (RB:[763..770] readily))
+        (SBAR (IN:[771..775] than)
+          (SINV (VBZ:[777..781] does)
+            (NP-SBJ
+              (NP (PRP$:[782..787] their) (NN:[788..794] parent)
+                  (NN:[795..804] porphyrin))
+              (,:[804..805] ,)
+              (NP (NN:[806..820] protoporphyrin)))
+            (VP (-NONE-:[820..820] *?*))))))
+    (.:[820..821] .)))
+
+;sentence 7 Span:822..1055
+;They are also much more basic than  protoporphyrin, and on titration with a
+;strong acid they readily give rise to a  porphyrin monocation which then
+;requires relatively large amounts of acid for  conversion to the porphyrin
+;dication.
+;[858..872]:substance:"protoporphyrin"
+;[905..909]:substance:"acid"
+;[939..959]:substance:"porphyrin monocation"
+;[1008..1012]:substance:"acid"
+;[1036..1054]:substance:"porphyrin dication"
+(SENT
+  (S
+    (S
+      (NP-SBJ (PRP:[822..826] They))
+      (VP (VBP:[827..830] are)
+        (ADVP (RB:[831..835] also))
+        (ADJP-PRD
+          (ADJP
+            (ADVP (RB:[836..840] much) (RBR:[841..845] more))
+            (JJ:[846..851] basic))
+          (PP (IN:[852..856] than)
+            (NP (NN:[858..872] protoporphyrin))))))
+    (,:[872..873] ,) (CC:[874..877] and)
+    (S
+      (PP (IN:[878..880] on)
+        (NP
+          (NP (NN:[881..890] titration))
+          (PP (IN:[891..895] with)
+            (NP (DT:[896..897] a) (JJ:[898..904] strong) (NN:[905..909] acid)))))
+      (NP-SBJ (PRP:[910..914] they))
+      (ADVP (RB:[915..922] readily))
+      (VP (VBP:[923..927] give)
+        (NP (NN:[928..932] rise))
+        (PP (TO:[933..935] to)
+          (NP
+            (NP (DT:[936..937] a)
+               (NN:[939..948] porphyrin) (NN:[949..959] monocation))
+            (SBAR
+              (WHNP-1 (WDT:[960..965] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[965..965] *T*))
+                (ADVP (RB:[966..970] then))
+                (VP (VBZ:[971..979] requires)
+                  (NP
+                    (NP
+                      (ADJP (RB:[980..990] relatively) (JJ:[991..996] large))
+                      (NNS:[997..1004] amounts))
+                    (PP (IN:[1005..1007] of)
+                      (NP (NN:[1008..1012] acid))))
+                  (PP (IN:[1013..1016] for)
+                    (NP
+                      (NP (NN:[1018..1028] conversion))
+                      (PP (TO:[1029..1031] to)
+                        (NP (DT:[1032..1035] the)
+                           (NN:[1036..1045] porphyrin)
+                           (NN:[1046..1054] dication))))))))))))
+    (.:[1054..1055] .)))
+
+;sentence 8 Span:1056..1394
+;In all these respects and also in the  intensity of their bathochromic shifts
+;these abnormal porphyrins closely  resemble N-alkylated porphyrins and they
+;markedly differ from porphyrins that  are substituted at one of their
+;meso-carbon positions or which bear  electron-withdrawing substituents at the
+;beta-positions of the pyrrole rings.
+;[1149..1159]:substance:"porphyrins"
+;[1178..1200]:substance:"N-alkylated porphyrins"
+;[1231..1241]:substance:"porphyrins"
+(SENT
+  (S
+    (S
+      (PP
+        (PP (IN:[1056..1058] In)
+          (NP (PDT:[1059..1062] all) (DT:[1063..1068] these)
+              (NNS:[1069..1077] respects)))
+        (CONJP (CC:[1078..1081] and) (RB:[1082..1086] also))
+        (PP (IN:[1087..1089] in)
+          (NP
+            (NP (DT:[1090..1093] the) (NN:[1095..1104] intensity))
+            (PP (IN:[1105..1107] of)
+              (NP (PRP$:[1108..1113] their) (JJ:[1114..1126] bathochromic)
+                  (NNS:[1127..1133] shifts))))))
+      (NP-SBJ (DT:[1134..1139] these) (JJ:[1140..1148] abnormal)
+              (NNS:[1149..1159] porphyrins))
+      (ADVP (RB:[1160..1167] closely))
+      (VP (VBP:[1169..1177] resemble)
+        (NP
+          (ADJP (NN:[1178..1179] N) (HYPH:[1179..1180] -)
+                (VBN:[1180..1189] alkylated))
+          (NNS:[1190..1200] porphyrins))))
+    (CC:[1201..1204] and)
+    (S
+      (NP-SBJ (PRP:[1205..1209] they))
+      (ADVP (RB:[1210..1218] markedly))
+      (VP (VBP:[1219..1225] differ)
+        (PP-CLR (IN:[1226..1230] from)
+          (NP
+            (NP (NNS:[1231..1241] porphyrins))
+            (SBAR
+              (SBAR
+                (WHNP-2 (WDT:[1242..1246] that))
+                (S
+                  (NP-SBJ-2 (-NONE-:[1246..1246] *T*))
+                  (VP (VBP:[1248..1251] are)
+                    (VP (VBN:[1252..1263] substituted)
+                      (NP-2 (-NONE-:[1263..1263] *))
+                      (PP-LOC (IN:[1264..1266] at)
+                        (NP
+                          (NP (CD:[1267..1270] one))
+                          (PP (IN:[1271..1273] of)
+                            (NP (PRP$:[1274..1279] their)
+                              (NML (AFX:[1280..1284] meso) (HYPH:[1284..1285] -)
+                                   (NN:[1285..1291] carbon))
+                              (NNS:[1292..1301] positions)))))))))
+              (CC:[1302..1304] or)
+              (SBAR
+                (WHNP-1 (WDT:[1305..1310] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1310..1310] *T*))
+                  (VP (VBP:[1311..1315] bear)
+                    (NP
+                      (ADJP (NN:[1317..1325] electron) (HYPH:[1325..1326] -)
+                            (VBG:[1326..1337] withdrawing))
+                      (NNS:[1338..1350] substituents))
+                    (PP-LOC (IN:[1351..1353] at)
+                      (NP
+                        (NP (DT:[1354..1357] the) (SYM:[1358..1362] beta)
+                            (HYPH:[1362..1363] -) (NNS:[1363..1372] positions))
+                        (PP (IN:[1373..1375] of)
+                          (NP (DT:[1376..1379] the) (NN:[1380..1387] pyrrole)
+                              (NNS:[1388..1393] rings)))))))))))))
+    (.:[1393..1394] .)))
+
+;sentence 9 Span:1396..1569
+;This suggests strongly that reactive derivatives of the unsaturated drugs act
+;as  electrophilic reagents and alkylate one of the pyrrole nitrogen atoms of 
+;cytochrome P-450.
+;[1464..1469]:substance:"drugs"
+;[1478..1500]:substance:"electrophilic reagents"
+;[1552..1568]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1396..1400] This))
+    (VP (VBZ:[1401..1409] suggests)
+      (ADVP (RB:[1410..1418] strongly))
+      (SBAR (IN:[1419..1423] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1424..1432] reactive) (NNS:[1433..1444] derivatives))
+            (PP (IN:[1445..1447] of)
+              (NP (DT:[1448..1451] the) (JJ:[1452..1463] unsaturated)
+                  (NNS:[1464..1469] drugs))))
+          (VP
+            (VP (VBP:[1470..1473] act)
+              (PP-CLR (IN:[1474..1476] as)
+                (NP (JJ:[1478..1491] electrophilic) (NNS:[1492..1500] reagents))))
+            (CC:[1501..1504] and)
+            (VP (VBP:[1505..1513] alkylate)
+              (NP
+                (NP (CD:[1514..1517] one))
+                (PP (IN:[1518..1520] of)
+                  (NP
+                    (NP (DT:[1521..1524] the) (NN:[1525..1532] pyrrole)
+                        (NN:[1533..1541] nitrogen) (NNS:[1542..1547] atoms))
+                    (PP (IN:[1548..1550] of)
+                      (NP (NN:[1552..1562] cytochrome) (NN:[1563..1568] P-450)))))))))))
+    (.:[1568..1569] .)))
+
+;sentence 10 Span:1570..1701
+;A model centred on the apoprotein of cytochrome P-450 is  considered for the
+;degradation of liver haem caused by unsaturated drugs.
+;[1593..1603]:substance:"apoprotein"
+;[1607..1623]:cyp450:"cytochrome P-450"
+;[1695..1700]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1570..1571] A) (NN:[1572..1577] model))
+      (VP (VBN:[1578..1585] centred)
+        (NP (-NONE-:[1585..1585] *))
+        (PP (IN:[1586..1588] on)
+          (NP
+            (NP (DT:[1589..1592] the) (NN:[1593..1603] apoprotein))
+            (PP (IN:[1604..1606] of)
+              (NP (NN:[1607..1617] cytochrome) (NN:[1618..1623] P-450)))))))
+    (VP (VBZ:[1624..1626] is)
+      (VP (VBN:[1628..1638] considered)
+        (NP-1 (-NONE-:[1638..1638] *))
+        (PP (IN:[1639..1642] for)
+          (NP
+            (NP
+              (NP (DT:[1643..1646] the) (NN:[1647..1658] degradation))
+              (PP (IN:[1659..1661] of)
+                (NP (NN:[1662..1667] liver) (NN:[1668..1672] haem))))
+            (VP (VBN:[1673..1679] caused)
+              (NP (-NONE-:[1679..1679] *))
+              (PP (IN:[1680..1682] by)
+                (NP-LGS (JJ:[1683..1694] unsaturated) (NNS:[1695..1700] drugs))))))))
+    (.:[1700..1701] .)))
+
+;sentence 11 Span:1702..1874
+;The  apocytochrome may accept exchangeable pools of liver haem for
+;degradation,  leading to a state of haem depletion and to activation of
+;delta-aminolaevulinate  synthase.
+;[1707..1720]:substance:"apocytochrome"
+;[1841..1873]:substance:"delta-aminolaevulinate  synthase"
+(SENT
+  (S
+    (NP-SBJ (DT:[1702..1705] The) (NN:[1707..1720] apocytochrome))
+    (VP (MD:[1721..1724] may)
+      (VP (VB:[1725..1731] accept)
+        (NP
+          (NP (JJ:[1732..1744] exchangeable) (NNS:[1745..1750] pools))
+          (PP (IN:[1751..1753] of)
+            (NP (NN:[1754..1759] liver) (NN:[1760..1764] haem))))
+        (PP (IN:[1765..1768] for)
+          (NP (NN:[1769..1780] degradation)))
+        (,:[1780..1781] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1781..1781] *))
+          (VP (VBG:[1783..1790] leading)
+            (PP-CLR
+              (PP (TO:[1791..1793] to)
+                (NP
+                  (NP (DT:[1794..1795] a) (NN:[1796..1801] state))
+                  (PP (IN:[1802..1804] of)
+                    (NP (NN:[1805..1809] haem) (NN:[1810..1819] depletion)))))
+              (CC:[1820..1823] and)
+              (PP (TO:[1824..1826] to)
+                (NP
+                  (NP (NN:[1827..1837] activation))
+                  (PP (IN:[1838..1840] of)
+                    (NP (NN:[1841..1863] delta-aminolaevulinate)
+                        (NN:[1865..1873] synthase))))))))))
+    (.:[1873..1874] .)))
+
+;section 12 Span:1878..1922
+;PMID: 6906261 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1878..1882] PMID) (::[1882..1883] :) (CD:[1884..1891] 6906261)
+        (NN:[1892..1893] -LSB-) (NNP:[1893..1899] PubMed) (::[1900..1901] -)
+        (NN:[1902..1909] indexed) (IN:[1910..1913] for)
+        (NNP:[1914..1922] MEDLINE-RSB-)))

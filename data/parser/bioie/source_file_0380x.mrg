@@ -1,0 +1,337 @@
+;PMID: 3353078
+;source_file_2901.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..27] = [t:0..27]
+;1)sentence:[e:33..91] = [t:33..91]
+;2)section:[e:95..119] = [t:95..119]
+;3)section:[e:123..201] = [t:123..201]
+;4)sentence:[e:205..582] = [t:205..582]
+;5)sentence:[e:583..773] = [t:583..773]
+;6)sentence:[e:774..848] = [t:774..848]
+;7)sentence:[e:849..1011] = [t:849..1011]
+;8)sentence:[e:1012..1140] = [t:1012..1140]
+;9)sentence:[e:1142..1392] = [t:1142..1392]
+;10)section:[e:1396..1440] = [t:1396..1440]
+
+;section 0 Span:0..27
+;Oncology.  1988;45(2):93-7.
+(SEC
+  (FRAG (NNP:[0..8] Oncology) (.:[8..9] .) (CD:[11..15] 1988)
+        (CC:[15..19] ;45-LRB-) (CD:[19..20] 2) (-RRB-:[20..21] -RRB-)
+        (CD:[21..24] :93) (::[24..25] -) (CD:[25..27] 7.)))
+
+;sentence 1 Span:33..91
+;Decline of childhood cancer mortality in Italy, 1955-1980.
+;[44..53]:malignancy-developmental-state:"childhood"
+(SENT
+  (NP-HLN
+    (NP (NN:[33..40] Decline))
+    (PP (IN:[41..43] of)
+      (NP (NN:[44..53] childhood) (NN:[54..60] cancer) (NN:[61..70] mortality)))
+    (PP-LOC (IN:[71..73] in)
+      (NP (NNP:[74..79] Italy))
+      (,:[79..80] ,))
+    (NP-TMP (CD:[81..85] 1955) (HYPH:[85..86] -) (CD:[86..90] 1980))
+    (.:[90..91] .)))
+
+;section 2 Span:95..119
+;La Vecchia C, Decarli A.
+(SEC
+  (FRAG (NNP:[95..97] La) (NNP:[98..105] Vecchia) (NNP:[106..107] C)
+        (,:[107..108] ,) (NNP:[109..116] Decarli) (NNP:[117..118] A)
+        (.:[118..119] .)))
+
+;section 3 Span:123..201
+;Istituto di Ricerche Farmacologiche Mario Negri, Universita di Milano,
+;Italia.
+(SEC
+  (FRAG (NNP:[123..131] Istituto) (NNP:[132..134] di) (NNP:[135..143] Ricerche)
+        (NNP:[144..158] Farmacologiche) (NNP:[159..164] Mario)
+        (NNP:[165..170] Negri) (,:[170..171] ,) (NNP:[172..182] Universita)
+        (NNP:[183..185] di) (NNP:[186..192] Milano) (,:[192..193] ,)
+        (NNP:[194..200] Italia) (.:[200..201] .)))
+
+;sentence 4 Span:205..582
+;The decline in childhood cancer mortality in Italy from 1955 to 1980 has been
+; evaluated through (1) comparison of age-specific and age-standardized (0-14 
+;years) rates for the periods 1955-1960 and 1979-1980 and (2) computation of 
+;expected numbers of deaths by application of the age-specific rates for the 
+;period 1955-1960 to the population structure of subsequent periods.
+;[220..229]:malignancy-developmental-state:"childhood"
+;[355..366]:malignancy-developmental-state:"0-14  years"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[205..208] The) (NN:[209..216] decline))
+      (PP (IN:[217..219] in)
+        (NP (NN:[220..229] childhood) (NN:[230..236] cancer)
+            (NN:[237..246] mortality)))
+      (PP-LOC (IN:[247..249] in)
+        (NP (NNP:[250..255] Italy)))
+      (PP (IN:[256..260] from)
+        (NP (CD:[261..265] 1955)))
+      (PP (TO:[266..268] to)
+        (NP (CD:[269..273] 1980))))
+    (VP (VBZ:[274..277] has)
+      (VP (VBN:[278..282] been)
+        (VP (VBN:[284..293] evaluated)
+          (NP-1 (-NONE-:[293..293] *))
+          (PP (IN:[294..301] through)
+            (NP
+              (NP
+                (LST (LS:[302..305] -LRB-1-RRB-))
+                (NP (NN:[306..316] comparison))
+                (PP (IN:[317..319] of)
+                  (NP
+                    (NP
+                      (ADJP (NN:[320..323] age) (HYPH:[323..324] -)
+                            (JJ:[324..332] specific))
+                      (NML-2 (-NONE-:[332..332] *P*)))
+                    (CC:[333..336] and)
+                    (NP
+                      (ADJP (NN:[337..340] age) (HYPH:[340..341] -)
+                            (VBN:[341..353] standardized))
+                      (PRN (-LRB-:[354..355] -LRB-)
+                        (NP
+                          (QP (CD:[355..356] 0) (HYPH:[356..357] -)
+                              (CD:[357..359] 14))
+                          (NNS:[361..366] years))
+                        (-RRB-:[366..367] -RRB-))
+                      (NML-2 (NNS:[368..373] rates)))))
+                (PP (IN:[374..377] for)
+                  (NP
+                    (NP (DT:[378..381] the) (NNS:[382..389] periods))
+                    (NP
+                      (NP (CD:[390..394] 1955) (HYPH:[394..395] -)
+                          (CD:[395..399] 1960))
+                      (CC:[400..403] and)
+                      (NP (CD:[404..408] 1979) (HYPH:[408..409] -)
+                          (CD:[409..413] 1980))))))
+              (CC:[414..417] and)
+              (NP
+                (LST (LS:[418..421] -LRB-2-RRB-))
+                (NP (NN:[422..433] computation))
+                (PP (IN:[434..436] of)
+                  (NP
+                    (NP (VBN:[438..446] expected) (NNS:[447..454] numbers))
+                    (PP (IN:[455..457] of)
+                      (NP (NNS:[458..464] deaths)))))
+                (PP (IN:[465..467] by)
+                  (NP
+                    (NP (NN:[468..479] application))
+                    (PP (IN:[480..482] of)
+                      (NP
+                        (NP (DT:[483..486] the)
+                          (ADJP (NN:[487..490] age) (HYPH:[490..491] -)
+                                (JJ:[491..499] specific))
+                          (NNS:[500..505] rates))
+                        (PP (IN:[506..509] for)
+                          (NP
+                            (NP (DT:[510..513] the) (NN:[515..521] period))
+                            (NP (CD:[522..526] 1955) (HYPH:[526..527] -)
+                                (CD:[527..531] 1960))))))
+                    (PP (TO:[532..534] to)
+                      (NP
+                        (NP (DT:[535..538] the) (NN:[539..549] population)
+                            (NN:[550..559] structure))
+                        (PP (IN:[560..562] of)
+                          (NP (JJ:[563..573] subsequent)
+                              (NNS:[574..581] periods)))))))))))))
+    (.:[581..582] .)))
+
+;sentence 5 Span:583..773
+;Certified  mortality fell by 35% for leukaemias, 90% for Hodgkin's disease,
+;30% for  non-Hodgkin's lymphomas, 40% for bone sarcomas, 30% for kidney
+;(Wilms') tumours,  65% for retinoblastoma.
+;[620..630]:malignancy-type:"leukaemias"
+;[640..657]:malignancy-type:"Hodgkin's disease"
+;[668..691]:malignancy-type:"non-Hodgkin's lymphomas"
+;[701..714]:malignancy-type:"bone sarcomas"
+;[724..747]:malignancy-type:"kidney (Wilms') tumours"
+;[758..772]:malignancy-type:"retinoblastoma"
+(SENT
+  (S
+    (NP-SBJ (VBN:[583..592] Certified) (NN:[594..603] mortality))
+    (VP
+      (VP (VBD:[604..608] fell)
+        (PP-EXT (IN:[609..611] by)
+          (NP=1 (CD:[612..614] 35) (NN:[614..615] %)))
+        (PP=2 (IN:[616..619] for)
+          (NP (NNS:[620..630] leukaemias))))
+      (,:[630..631] ,)
+      (VP
+        (NP=1 (CD:[632..634] 90) (NN:[634..635] %))
+        (PP=2 (IN:[636..639] for)
+          (NP
+            (NP (NNP:[640..647] Hodgkin) (POS:[647..649] 's))
+            (NN:[650..657] disease))))
+      (,:[657..658] ,)
+      (VP
+        (NP=1 (CD:[659..661] 30) (NN:[661..662] %))
+        (PP=2 (IN:[663..666] for)
+          (NP
+            (NML (AFX:[668..671] non) (HYPH:[671..672] -))
+            (NML (NNP:[672..679] Hodgkin) (POS:[679..681] 's))
+            (NNS:[682..691] lymphomas))))
+      (,:[691..692] ,)
+      (VP
+        (NP=1 (CD:[693..695] 40) (NN:[695..696] %))
+        (PP=2 (IN:[697..700] for)
+          (NP (NN:[701..705] bone) (NNS:[706..714] sarcomas))))
+      (,:[714..715] ,)
+      (VP
+        (NP=1 (CD:[716..718] 30) (NN:[718..719] %))
+        (PP=2 (IN:[720..723] for)
+          (NP (NN:[724..730] kidney)
+            (PRN (-LRB-:[731..732] -LRB-)
+              (NP
+                (NML (NNP:[732..737] Wilms) (POS:[737..738] ')))
+              (-RRB-:[738..739] -RRB-))
+            (NNS:[740..747] tumours))))
+      (,:[747..748] ,)
+      (VP
+        (NP=1 (CD:[750..752] 65) (NN:[752..753] %))
+        (PP=2 (IN:[754..757] for)
+          (NP (NN:[758..772] retinoblastoma)))))
+    (.:[772..773] .)))
+
+;sentence 6 Span:774..848
+;No clear trend was reported for other neoplasms,  including neuroblastoma.
+;[834..847]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[774..776] No) (JJ:[777..782] clear) (NN:[783..788] trend))
+    (VP (VBD:[789..792] was)
+      (VP (VBN:[793..801] reported)
+        (NP-1 (-NONE-:[801..801] *))
+        (PP (IN:[802..805] for)
+          (NP (JJ:[806..811] other) (NNS:[812..821] neoplasms)))
+        (,:[821..822] ,)
+        (PP (VBG:[824..833] including)
+          (NP (NN:[834..847] neuroblastoma)))))
+    (.:[847..848] .)))
+
+;sentence 7 Span:849..1011
+;About 300 cancer deaths per year were avoided in the  period 1979-1980
+;compared with the expected number based on the 1955-1960 rates  (170 for
+;leukaemias alone).
+;[993..1003]:malignancy-type:"leukaemias"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (QP (RB:[849..854] About) (CD:[855..858] 300))
+        (NN:[859..865] cancer) (NNS:[866..872] deaths))
+      (PP (IN:[873..876] per)
+        (NP (NN:[877..881] year))))
+    (VP (VBD:[882..886] were)
+      (VP (VBN:[887..894] avoided)
+        (NP-1 (-NONE-:[894..894] *))
+        (PP-TMP (IN:[895..897] in)
+          (NP
+            (NP (DT:[898..901] the) (NN:[903..909] period))
+            (NP (CD:[910..914] 1979) (HYPH:[914..915] -) (CD:[915..919] 1980))))
+        (PP (VBN:[920..928] compared)
+          (PP (IN:[929..933] with)
+            (NP
+              (NP (DT:[934..937] the) (VBN:[938..946] expected)
+                  (NN:[947..953] number))
+              (VP (VBN:[954..959] based)
+                (NP (-NONE-:[959..959] *))
+                (PP-CLR (IN:[960..962] on)
+                  (NP (DT:[963..966] the)
+                    (NML (CD:[967..971] 1955) (HYPH:[971..972] -)
+                         (CD:[972..976] 1960))
+                    (NNS:[977..982] rates)))))))
+        (PRN (-LRB-:[984..985] -LRB-)
+          (NP
+            (NP (CD:[985..988] 170))
+            (PP (IN:[989..992] for)
+              (NP (NNS:[993..1003] leukaemias)
+                (ADVP (RB:[1004..1009] alone)))))
+          (-RRB-:[1009..1010] -RRB-))))
+    (.:[1010..1011] .)))
+
+;sentence 8 Span:1012..1140
+;Although clearly encouraging, these trends are  substantially less favourable
+;than those from several other developed countries.
+(SENT
+  (S
+    (SBAR-ADV (IN:[1012..1020] Although)
+      (S
+        (NP-SBJ (-NONE-:[1020..1020] *))
+        (VP
+          (ADVP (RB:[1021..1028] clearly))
+          (VBG:[1029..1040] encouraging))))
+    (,:[1040..1041] ,)
+    (NP-SBJ (DT:[1042..1047] these) (NNS:[1048..1054] trends))
+    (VP (VBP:[1055..1058] are)
+      (ADVP (RB:[1060..1073] substantially))
+      (ADJP-PRD (RBR:[1074..1078] less) (JJ:[1079..1089] favourable)
+        (PP (IN:[1090..1094] than)
+          (NP
+            (NP (DT:[1095..1100] those))
+            (PP (IN:[1101..1105] from)
+              (NP (JJ:[1106..1113] several) (JJ:[1114..1119] other)
+                  (VBN:[1120..1129] developed) (NNS:[1130..1139] countries)))))))
+    (.:[1139..1140] .)))
+
+;sentence 9 Span:1142..1392
+;It is therefore likely that several dozen other deaths from childhood cancer 
+;could be avoided each year through earlier (or more accurate) application of 
+;effective therapies, particularly for neoplasms requiring radiotherapy or 
+;surgical treatment.
+;[1202..1211]:malignancy-developmental-state:"childhood"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1142..1144] It))
+    (VP (VBZ:[1145..1147] is)
+      (ADVP (RB:[1148..1157] therefore))
+      (ADJP-PRD (JJ:[1158..1164] likely)
+        (SBAR (IN:[1165..1169] that)
+          (S
+            (NP-SBJ-1
+              (NP (JJ:[1170..1177] several) (NN:[1178..1183] dozen)
+                  (JJ:[1184..1189] other) (NNS:[1190..1196] deaths))
+              (PP (IN:[1197..1201] from)
+                (NP (NN:[1202..1211] childhood) (NN:[1212..1218] cancer))))
+            (VP (MD:[1220..1225] could)
+              (VP (VB:[1226..1228] be)
+                (VP (VBN:[1229..1236] avoided)
+                  (NP-1 (-NONE-:[1236..1236] *))
+                  (NP-TMP (DT:[1237..1241] each) (NN:[1242..1246] year))
+                  (PP (IN:[1247..1254] through)
+                    (NP
+                      (NP (JJR:[1255..1262] earlier)
+                        (PRN (-LRB-:[1263..1264] -LRB-)
+                          (ADJP (CC:[1264..1266] or)
+                            (ADJP (RBR:[1267..1271] more)
+                                  (JJ:[1272..1280] accurate)))
+                          (-RRB-:[1280..1281] -RRB-))
+                        (NN:[1282..1293] application))
+                      (PP (IN:[1294..1296] of)
+                        (NP (JJ:[1298..1307] effective)
+                            (NNS:[1308..1317] therapies)))))
+                  (,:[1317..1318] ,)
+                  (PP
+                    (ADVP (RB:[1319..1331] particularly))
+                    (IN:[1332..1335] for)
+                    (NP
+                      (NP (NNS:[1336..1345] neoplasms))
+                      (VP (VBG:[1346..1355] requiring)
+                        (NP
+                          (NP (NN:[1356..1368] radiotherapy))
+                          (CC:[1369..1371] or)
+                          (NP (JJ:[1373..1381] surgical)
+                              (NN:[1382..1391] treatment)))))))))))))
+    (.:[1391..1392] .)))
+
+;section 10 Span:1396..1440
+;PMID: 3353078 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1396..1400] PMID) (::[1400..1401] :) (CD:[1402..1409] 3353078)
+        (NN:[1410..1411] -LSB-) (NNP:[1411..1417] PubMed) (::[1418..1419] -)
+        (NN:[1420..1427] indexed) (IN:[1428..1431] for)
+        (NNP:[1432..1440] MEDLINE-RSB-)))

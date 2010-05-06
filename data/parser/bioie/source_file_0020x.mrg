@@ -1,0 +1,393 @@
+;PMID: 1323601
+;source_file_470.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)sentence:[e:0..138] = [t:0..138]
+;1)section:[e:142..198] = [t:142..198]
+;2)section:[e:202..293] = [t:202..293]
+;3)sentence:[e:297..445] = [t:297..445]
+;4)sentence:[e:446..643] = [t:446..643]
+;5)sentence:[e:644..794] = [t:644..794]
+;6)sentence:[e:795..919] = [t:795..919]
+;7)sentence:[e:920..1133] = [t:920..1133]
+;8)sentence:[e:1134..1384] = [t:1134..1384]
+;9)sentence:[e:1385..1545] = [t:1385..1545]
+;10)section:[e:1549..1593] = [t:1549..1593]
+
+;sentence 0 Span:0..138
+;J Hepatol  1992 Mar;14(2-3):342-6     Infrequent point mutations in codons 12
+;and 61 of ras oncogenes in human  hepatocellular carcinomas.
+;[49..64]:variation-type:"point mutations"
+;[68..77]:variation-location:"codons 12"
+;[82..84]:variation-location:"61"
+;[88..91]:gene-rna:"ras"
+;[112..137]:malignancy:"hepatocellular carcinomas"
+(SENT
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Hepatol) (CD:[11..15] 1992)
+        (.:[16..21] Mar;1) (CD:[21..22] 4) (NN:[22..23] -LRB-) (NN:[23..26] 2-3)
+        (NN:[26..27] -RRB-) (VBZ:[27..28] :) (CD:[28..30] 34) (CD:[30..33] 2-6))
+  (NP-HLN
+    (NP (JJ:[38..48] Infrequent)
+       (NN:[49..54] point) (NNS:[55..64] mutations))
+    (PP (IN:[65..67] in)
+      (NP
+        (NP
+          (NP
+            (NML-1 (NNS:[68..74] codons))
+            (CD:[75..77] 12))
+          (CC:[78..81] and)
+          (NP
+            (NML-1 (-NONE-:[81..81] *P*))
+            (CD:[82..84] 61)))
+        (PP (IN:[85..87] of)
+          (NP (NN:[88..91] ras) (NNS:[92..101] oncogenes)))))
+    (PP (IN:[102..104] in)
+      (NP (JJ:[105..110] human)
+         (JJ:[112..126] hepatocellular) (NNS:[127..137] carcinomas)))
+    (.:[137..138] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[0..138]::FRAG:NP:
+
+;section 1 Span:142..198
+;Challen C, Guo K, Collier JD, Cavanagh D, Bassendine MF.
+(SEC
+  (FRAG (NNP:[142..149] Challen) (NNP:[150..152] C,) (NNP:[153..156] Guo)
+        (NNP:[157..159] K,) (NNP:[160..167] Collier) (NNP:[168..170] JD)
+        (,:[170..171] ,) (NNP:[172..180] Cavanagh) (NNP:[181..182] D)
+        (,:[182..183] ,) (NNP:[184..194] Bassendine) (NNP:[195..198] MF.)))
+
+;section 2 Span:202..293
+;University of Newcastle upon Tyne, Department of Medicine, Medical School, 
+;United Kingdom.
+(SEC
+  (FRAG (NNP:[202..212] University) (IN:[213..215] of)
+        (NNP:[216..225] Newcastle) (IN:[226..230] upon) (NNP:[231..235] Tyne)
+        (,:[235..236] ,) (NNP:[237..247] Department) (IN:[248..250] of)
+        (NNP:[251..259] Medicine) (,:[259..260] ,) (NNP:[261..268] Medical)
+        (NNP:[269..275] School) (,:[275..276] ,) (NNP:[278..284] United)
+        (NNP:[285..292] Kingdom) (.:[292..293] .)))
+
+;sentence 3 Span:297..445
+;DNA from human hepatocellular carcinomas (HCC) were analysed for the presence
+;of  mutations in codons 12 and 61 of the K-ras, H-ras and N-ras genes.
+;[312..337]:malignancy:"hepatocellular carcinomas"
+;[339..342]:malignancy:"HCC"
+;[379..388]:variation-event:"mutations"
+;[392..401]:variation-location:"codons 12"
+;[406..408]:variation-location:"61"
+;[416..421]:gene-rna:"K-ras"
+;[423..428]:gene-rna:"H-ras"
+;[433..438]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (NN:[297..300] DNA))
+      (PP (IN:[301..305] from)
+        (NP
+          (NP (JJ:[306..311] human)
+             (JJ:[312..326] hepatocellular) (NNS:[327..337] carcinomas))
+          (NP (-LRB-:[338..339] -LRB-) (NN:[339..342] HCC)
+              (-RRB-:[342..343] -RRB-)))))
+    (VP (VBD:[344..348] were)
+      (VP (VBN:[349..357] analysed)
+        (NP-3 (-NONE-:[357..357] *))
+        (PP (IN:[358..361] for)
+          (NP
+            (NP (DT:[362..365] the) (NN:[366..374] presence))
+            (PP (IN:[375..377] of)
+              (NP (NNS:[379..388] mutations)))
+            (PP-LOC (IN:[389..391] in)
+              (NP
+                (NP
+                  (NP
+                    (NML-2 (NNS:[392..398] codons))
+                    (CD:[399..401] 12))
+                  (CC:[402..405] and)
+                  (NP
+                    (NML-2 (-NONE-:[405..405] *P*))
+                    (CD:[406..408] 61)))
+                (PP (IN:[409..411] of)
+                  (NP (DT:[412..415] the)
+                    (NML
+                      (NML (NN:[416..421] K-ras)
+                        (NML-1 (-NONE-:[421..421] *P*)))
+                      (,:[421..422] ,)
+                      (NML (NN:[423..428] H-ras)
+                        (NML-1 (-NONE-:[428..428] *P*)))
+                      (CC:[429..432] and)
+                      (NML (NN:[433..438] N-ras)
+                        (NML-1 (NNS:[439..444] genes))))))))))))
+    (.:[444..445] .)))
+
+;sentence 4 Span:446..643
+;The relevant  ras sequences were amplified in vitro using the polymerase
+;chain reaction and  point mutations detected by selective hybridisation using
+;mutation-specific  synthetic oligonucleotides.
+;[460..463]:gene-rna:"ras"
+;[508..518]:gene-protein:"polymerase"
+;[539..554]:variation-type:"point mutations"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (DT:[446..449] The) (JJ:[450..458] relevant) (NN:[460..463] ras)
+                (NNS:[464..473] sequences))
+      (VP (VBD:[474..478] were)
+        (VP (VBN:[479..488] amplified)
+          (NP-2 (-NONE-:[488..488] *))
+          (ADVP (FW:[489..491] in) (FW:[492..497] vitro))
+          (S-MNR
+            (NP-SBJ (-NONE-:[497..497] *))
+            (VP (VBG:[498..503] using)
+              (NP (DT:[504..507] the) (NN:[508..518] polymerase)
+                  (NN:[519..524] chain) (NN:[525..533] reaction)))))))
+    (CC:[534..537] and)
+    (S
+      (NP-SBJ-1 (NN:[539..544] point) (NNS:[545..554] mutations))
+      (VP (VBN:[555..563] detected)
+        (NP-1 (-NONE-:[563..563] *))
+        (PP (IN:[564..566] by)
+          (NP-LGS (JJ:[567..576] selective) (NN:[577..590] hybridisation)))
+        (S-MNR
+          (NP-SBJ (-NONE-:[590..590] *))
+          (VP (VBG:[591..596] using)
+            (NP
+              (ADJP (NN:[597..605] mutation) (HYPH:[605..606] -)
+                    (JJ:[606..614] specific))
+              (JJ:[616..625] synthetic) (NNS:[626..642] oligonucleotides))))))
+    (.:[642..643] .)))
+
+;sentence 5 Span:644..794
+;In one of the 19 HCCs a mutation in codon 61 of the  K-ras gene was detected,
+;whilst in 3/19 HCCs a mutation was found in codon 61 of  the N-ras gene.
+;[647..665]:malignancy:"one of the 19 HCCs"
+;[668..676]:variation-event:"mutation"
+;[680..688]:variation-location:"codon 61"
+;[697..702]:gene-rna:"K-ras"
+;[732..741]:malignancy:"3/19 HCCs"
+;[744..752]:variation-event:"mutation"
+;[766..774]:variation-location:"codon 61"
+;[783..788]:gene-rna:"N-ras"
+(SENT
+  (S
+    (PP-LOC (IN:[644..646] In)
+      (NP
+        (NP (CD:[647..650] one))
+        (PP (IN:[651..653] of)
+          (NP (DT:[654..657] the) (CD:[658..660] 19) (NNS:[661..665] HCCs)))))
+    (NP-SBJ-2
+      (NP (DT:[666..667] a) (NN:[668..676] mutation))
+      (PP-LOC (IN:[677..679] in)
+        (NP
+          (NP (NN:[680..685] codon) (CD:[686..688] 61))
+          (PP (IN:[689..691] of)
+            (NP (DT:[692..695] the) (NN:[697..702] K-ras) (NN:[703..707] gene))))))
+    (VP (VBD:[708..711] was)
+      (VP (VBN:[712..720] detected)
+        (NP-2 (-NONE-:[720..720] *))
+        (DT:[720..721] ,)
+        (SBAR-ADV (IN:[722..728] whilst)
+          (S
+            (PP-LOC (IN:[729..731] in)
+              (NP
+                (NP (CD:[732..733] 3))
+                (PP (SYM:[733..734] /)
+                  (NP (CD:[734..736] 19) (NNS:[737..741] HCCs)))))
+            (NP-SBJ-1 (DT:[742..743] a) (NN:[744..752] mutation))
+            (VP (VBD:[753..756] was)
+              (VP (VBN:[757..762] found)
+                (NP-1 (-NONE-:[762..762] *))
+                (PP-LOC (IN:[763..765] in)
+                  (NP
+                    (NP (NN:[766..771] codon) (CD:[772..774] 61))
+                    (PP (IN:[775..777] of)
+                      (NP (DT:[779..782] the) (NN:[783..788] N-ras)
+                          (NN:[789..793] gene)))))))))))
+    (.:[793..794] .)))
+
+;sentence 6 Span:795..919
+;The mutations were all heterozygous A-T transversions and were  found in HCCs
+;arising in patients with underlying cirrhosis.
+;[799..808]:variation-event:"mutations"
+;[818..830]:variation-type:"heterozygous"
+;[831..832]:variation-state-generic:"A"
+;[833..834]:variation-state-generic:"T"
+;[835..848]:variation-type:"transversions"
+;[868..872]:malignancy:"HCCs"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[795..798] The) (NNS:[799..808] mutations))
+    (VP
+      (VP (VBD:[809..813] were)
+        (ADVP (DT:[814..817] all))
+        (NP-PRD (JJ:[818..830] heterozygous)
+          (NML
+            (NML (NN:[831..832] A))
+            (PP (HYPH:[832..833] -)
+              (NP (NN:[833..834] T))))
+          (NNS:[835..848] transversions)))
+      (CC:[849..852] and)
+      (VP (VBD:[853..857] were)
+        (VP (VBN:[859..864] found)
+          (NP-1 (-NONE-:[864..864] *))
+          (PP-LOC (IN:[865..867] in)
+            (NP
+              (NP (NNS:[868..872] HCCs))
+              (VP (VBG:[873..880] arising)
+                (PP (IN:[881..883] in)
+                  (NP
+                    (NP (NNS:[884..892] patients))
+                    (PP (IN:[893..897] with)
+                      (NP (VBG:[898..908] underlying) (NN:[909..918] cirrhosis)))))))))))
+    (.:[918..919] .)))
+
+;sentence 7 Span:920..1133
+;In two of these  patients where the corresponding normal tissue was available
+;only the wild-type  ras gene was detected, indicating that oncogenic
+;activation of the ras gene was  a consequence of somatic mutation.
+;[1018..1021]:gene-rna:"ras"
+;[1085..1088]:gene-rna:"ras"
+;[1116..1132]:variation-type:"somatic mutation"
+(SENT
+  (S
+    (PP-LOC (IN:[920..922] In)
+      (NP
+        (NP (CD:[923..926] two))
+        (PP (IN:[927..929] of)
+          (NP (DT:[930..935] these) (NNS:[937..945] patients)))))
+    (SBAR-ADV
+      (WHADVP-2 (WRB:[946..951] where))
+      (S
+        (NP-SBJ (DT:[952..955] the) (VBG:[956..969] corresponding)
+                (JJ:[970..976] normal) (NN:[977..983] tissue))
+        (VP (VBD:[984..987] was)
+          (ADJP-PRD (JJ:[988..997] available))
+          (ADVP-2 (-NONE-:[997..997] *T*)))))
+    (NP-SBJ-1
+      (ADVP (RB:[998..1002] only))
+      (DT:[1003..1006] the)
+      (NML (JJ:[1007..1011] wild) (HYPH:[1011..1012] -) (NN:[1012..1016] type))
+      (NN:[1018..1021] ras) (NN:[1022..1026] gene))
+    (VP (VBD:[1027..1030] was)
+      (VP (VBN:[1031..1039] detected)
+        (NP-1 (-NONE-:[1039..1039] *))
+        (,:[1039..1040] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1040..1040] *))
+          (VP (VBG:[1041..1051] indicating)
+            (SBAR (IN:[1052..1056] that)
+              (S
+                (NP-SBJ
+                  (NP (JJ:[1057..1066] oncogenic) (NN:[1067..1077] activation))
+                  (PP (IN:[1078..1080] of)
+                    (NP (DT:[1081..1084] the) (NN:[1085..1088] ras)
+                        (NN:[1089..1093] gene))))
+                (VP (VBD:[1094..1097] was)
+                  (NP-PRD
+                    (NP (DT:[1099..1100] a) (NN:[1101..1112] consequence))
+                    (PP (IN:[1113..1115] of)
+                      (NP (JJ:[1116..1123] somatic) (NN:[1124..1132] mutation)))))))))))
+    (.:[1132..1133] .)))
+
+;sentence 8 Span:1134..1384
+;In another patient the same mutation in codon  61 of the N-ras gene was found
+;in cirrhotic liver tissue and in all four  patients the same mutation was
+;also detected in formalin-fixed,  paraffin-embedded liver biopsy HCC tissue
+;obtained at diagnosis.
+;[1153..1170]:variation-event:"the same mutation"
+;[1174..1183]:variation-location:"codon  61"
+;[1191..1196]:gene-rna:"N-ras"
+;[1264..1281]:variation-event:"the same mutation"
+;[1351..1354]:malignancy:"HCC"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[1134..1136] In)
+        (NP (DT:[1137..1144] another) (NN:[1145..1152] patient)))
+      (NP-SBJ-2
+        (NP (DT:[1153..1156] the) (JJ:[1157..1161] same)
+            (NN:[1162..1170] mutation))
+        (PP-LOC (IN:[1171..1173] in)
+          (NP
+            (NP (NN:[1174..1179] codon) (CD:[1181..1183] 61))
+            (PP (IN:[1184..1186] of)
+              (NP (DT:[1187..1190] the) (NN:[1191..1196] N-ras)
+                  (NN:[1197..1201] gene))))))
+      (VP (VBD:[1202..1205] was)
+        (VP (VBN:[1206..1211] found)
+          (NP-2 (-NONE-:[1211..1211] *))
+          (PP-LOC (IN:[1212..1214] in)
+            (NP (JJ:[1215..1224] cirrhotic) (NN:[1225..1230] liver)
+                (NN:[1231..1237] tissue))))))
+    (CC:[1238..1241] and)
+    (S
+      (PP-LOC (IN:[1242..1244] in)
+        (NP (DT:[1245..1248] all) (CD:[1249..1253] four)
+            (NNS:[1255..1263] patients)))
+      (NP-SBJ-1 (DT:[1264..1267] the) (JJ:[1268..1272] same)
+                (NN:[1273..1281] mutation))
+      (VP (VBD:[1282..1285] was)
+        (ADVP (RB:[1286..1290] also))
+        (VP (VBN:[1291..1299] detected)
+          (NP-1 (-NONE-:[1299..1299] *))
+          (PP-LOC (IN:[1300..1302] in)
+            (NP
+              (NP
+                (ADJP (NN:[1303..1311] formalin) (HYPH:[1311..1312] -)
+                      (VBN:[1312..1317] fixed))
+                (,:[1317..1318] ,)
+                (ADJP (NN:[1320..1328] paraffin) (HYPH:[1328..1329] -)
+                      (VBN:[1329..1337] embedded))
+                (NN:[1338..1343] liver) (NN:[1344..1350] biopsy)
+                 (NN:[1351..1354] HCC) (NN:[1355..1361] tissue))
+              (VP (VBN:[1362..1370] obtained)
+                (NP (-NONE-:[1370..1370] *))
+                (PP-TMP (IN:[1371..1373] at)
+                  (NP (NN:[1374..1383] diagnosis)))))))))
+    (.:[1383..1384] .)))
+
+;sentence 9 Span:1385..1545
+;These results  indicate that mutational activation of the ras genes at codon
+;61 is an  infrequent but possibly early event in the development of HCC in
+;Britain.
+;[1414..1435]:variation-event:"mutational activation"
+;[1443..1446]:gene-rna:"ras"
+;[1456..1464]:variation-location:"codon 61"
+;[1530..1533]:malignancy:"HCC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1385..1390] These) (NNS:[1391..1398] results))
+    (VP (VBP:[1400..1408] indicate)
+      (SBAR (IN:[1409..1413] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1414..1424] mutational) (NN:[1425..1435] activation))
+            (PP (IN:[1436..1438] of)
+              (NP (DT:[1439..1442] the) (NN:[1443..1446] ras)
+                  (NNS:[1447..1452] genes)))
+            (PP-LOC (IN:[1453..1455] at)
+              (NP (NN:[1456..1461] codon) (CD:[1462..1464] 61))))
+          (VP (VBZ:[1465..1467] is)
+            (NP-PRD (DT:[1468..1470] an)
+              (NML
+                (NML (JJ:[1472..1482] infrequent)
+                  (NML-1 (-NONE-:[1482..1482] *P*)))
+                (CC:[1483..1486] but)
+                (NML
+                  (ADJP (RB:[1487..1495] possibly) (JJ:[1496..1501] early))
+                  (NML-1 (NN:[1502..1507] event)))))
+            (PP (IN:[1508..1510] in)
+              (NP
+                (NP (DT:[1511..1514] the) (NN:[1515..1526] development))
+                (PP (IN:[1527..1529] of)
+                  (NP (NN:[1530..1533] HCC)))))
+            (PP-LOC (IN:[1534..1536] in)
+              (NP (NNP:[1537..1544] Britain)))))))
+    (.:[1544..1545] .)))
+
+;section 10 Span:1549..1593
+;PMID: 1323601 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1549..1553] PMID) (::[1553..1554] :) (CD:[1555..1562] 1323601)
+        (NN:[1563..1564] -LSB-) (NNP:[1564..1570] PubMed) (::[1571..1572] -)
+        (NN:[1573..1580] indexed) (IN:[1581..1584] for)
+        (NNP:[1585..1593] MEDLINE-RSB-)))

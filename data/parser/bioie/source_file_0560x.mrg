@@ -1,0 +1,352 @@
+;PMID: 9136990
+;source_file_3006.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..126] = [t:44..126]
+;2)section:[e:130..189] = [t:130..189]
+;3)section:[e:193..261] = [t:193..261]
+;4)sentence:[e:265..443] = [t:265..443]
+;5)sentence:[e:444..640] = [t:444..640]
+;6)sentence:[e:641..775] = [t:641..775]
+;7)sentence:[e:776..945] = [t:776..945]
+;8)sentence:[e:946..1088] = [t:946..1088]
+;9)sentence:[e:1089..1151] = [t:1089..1151]
+;10)sentence:[e:1152..1401] = [t:1152..1401]
+;11)sentence:[e:1402..1535] = [t:1402..1535]
+;12)section:[e:1539..1583] = [t:1539..1583]
+
+;section 0 Span:0..38
+;Oncogene.  1997 Mar 27;14(12):1463-70.
+(SEC
+  (FRAG (NNP:[0..8] Oncogene) (IN:[8..9] .) (CD:[11..15] 1997)
+        (NNP:[16..19] Mar) (CC:[20..26] 27;14-LRB-) (CD:[26..28] 12)
+        (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..34] 1463) (::[34..35] -)
+        (CD:[35..37] 70) (.:[37..38] .)))
+
+;sentence 1 Span:44..126
+;Induction of apoptosis by p75 neurotrophin receptor in human neuroblastoma 
+;cells.
+;[70..95]:gene-protein:"p75 neurotrophin receptor"
+;[105..118]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[44..53] Induction))
+    (PP (IN:[54..56] of)
+      (NP (NN:[57..66] apoptosis)))
+    (PP (IN:[67..69] by)
+      (NP (NN:[70..73] p75) (NN:[74..86] neurotrophin) (NN:[87..95] receptor)))
+    (PP-LOC (IN:[96..98] in)
+      (NP (JJ:[99..104] human) (NN:[105..118] neuroblastoma)
+          (NNS:[120..125] cells)))
+    (.:[125..126] .)))
+
+;section 2 Span:130..189
+;Bunone G, Mariotti A, Compagni A, Morandi E, Della Valle G.
+(SEC
+  (FRAG (NNP:[130..136] Bunone) (NNP:[137..138] G) (,:[138..139] ,)
+        (NNP:[140..148] Mariotti) (NNP:[149..150] A) (,:[150..151] ,)
+        (NNP:[152..160] Compagni) (NNP:[161..162] A) (,:[162..163] ,)
+        (NNP:[164..171] Morandi) (NNP:[172..173] E) (,:[173..174] ,)
+        (NNP:[175..180] Della) (NNP:[181..186] Valle) (NNP:[187..189] G.)))
+
+;section 3 Span:193..261
+;Department of Genetics and Microbiology, University of Pavia, Italy.
+(SEC
+  (FRAG (NN:[193..203] Department) (IN:[204..206] of) (NNP:[207..215] Genetics)
+        (CC:[216..219] and) (NNP:[220..232] Microbiology) (,:[232..233] ,)
+        (NNP:[234..244] University) (IN:[245..247] of) (NNP:[248..253] Pavia)
+        (,:[253..254] ,) (NNP:[255..260] Italy) (.:[260..261] .)))
+
+;sentence 4 Span:265..443
+;The low-affinity nerve growth factor receptor p75NTR belongs to a membrane 
+;receptor superfamily whose members, in certain cell types, are able to
+;transduce  an apoptotic signal.
+;[282..317]:gene-protein:"nerve growth factor receptor p75NTR"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[265..268] The)
+        (NML (JJ:[269..272] low) (HYPH:[272..273] -) (NN:[273..281] affinity))
+        (NML (NN:[282..287] nerve) (NN:[288..294] growth) (NN:[295..301] factor))
+        (NN:[302..310] receptor))
+      (NP (NN:[311..317] p75NTR)))
+    (VP (VBZ:[318..325] belongs)
+      (PP-CLR (TO:[326..328] to)
+        (NP
+          (NP (DT:[329..330] a)
+            (NML (NN:[331..339] membrane) (NN:[341..349] receptor))
+            (NN:[350..361] superfamily))
+          (SBAR
+            (WHNP-1 (WP$:[362..367] whose) (NNS:[368..375] members))
+            (S
+              (NP-SBJ-1 (-NONE-:[375..375] *T*))
+              (,:[375..376] ,)
+              (VP
+                (PP (IN:[377..379] in)
+                  (NP (JJ:[380..387] certain) (NN:[388..392] cell)
+                      (NNS:[393..398] types)))
+                (,:[398..399] ,) (VBP:[400..403] are)
+                (ADJP-PRD (JJ:[404..408] able)
+                  (S
+                    (NP-SBJ (-NONE-:[408..408] *))
+                    (VP (TO:[409..411] to)
+                      (VP (VB:[412..421] transduce)
+                        (NP (DT:[423..425] an) (JJ:[426..435] apoptotic)
+                            (NN:[436..442] signal))))))))))))
+    (.:[442..443] .)))
+
+;sentence 5 Span:444..640
+;To investigate the effect of p75NTR expression in  neuroblastoma cells, we
+;transfected the p75NTR cDNA into SK-N-BE cells, a  neuroblastoma cell line
+;that lacks expression of both p75NTR and TrkA.
+;[473..479]:gene-protein:"p75NTR"
+;[495..508]:malignancy-type:"neuroblastoma"
+;[535..541]:gene-rna:"p75NTR"
+;[570..583]:malignancy-type:"neuroblastoma"
+;[624..630]:gene-protein:"p75NTR"
+;[635..639]:gene-protein:"TrkA"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[444..444] *))
+      (VP (TO:[444..446] To)
+        (VP (VB:[447..458] investigate)
+          (NP
+            (NP (DT:[459..462] the) (NN:[463..469] effect))
+            (PP (IN:[470..472] of)
+              (NP (NN:[473..479] p75NTR) (NN:[480..490] expression))))
+          (PP-LOC (IN:[491..493] in)
+            (NP (NN:[495..508] neuroblastoma) (NNS:[509..514] cells))))))
+    (,:[514..515] ,)
+    (NP-SBJ (PRP:[516..518] we))
+    (VP (VBD:[519..530] transfected)
+      (NP (DT:[531..534] the) (NN:[535..541] p75NTR) (NN:[542..546] cDNA))
+      (PP-DIR (IN:[547..551] into)
+        (NP
+          (NP (NN:[552..559] SK-N-BE) (NNS:[560..565] cells))
+          (,:[565..566] ,)
+          (NP
+            (NP (DT:[567..568] a) (NN:[570..583] neuroblastoma)
+                (NN:[584..588] cell) (NN:[589..593] line))
+            (SBAR
+              (WHNP-1 (WDT:[594..598] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[598..598] *T*))
+                (VP (VBZ:[599..604] lacks)
+                  (NP
+                    (NP (NN:[605..615] expression))
+                    (PP (IN:[616..618] of)
+                      (NP (CC:[619..623] both) (NN:[624..630] p75NTR)
+                          (CC:[631..634] and) (NN:[635..639] TrkA)))))))))))
+    (.:[639..640] .)))
+
+;sentence 6 Span:641..775
+;Cell  clones expressing elevated levels of p75NTR showed a high degree of
+;cell death  by apoptosis, even in serum-supplemented medium.
+;[684..690]:gene-protein:"p75NTR"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[641..645] Cell) (NNS:[647..653] clones))
+      (VP (VBG:[654..664] expressing)
+        (NP
+          (NP (VBN:[665..673] elevated) (NNS:[674..680] levels))
+          (PP (IN:[681..683] of)
+            (NP (NN:[684..690] p75NTR))))))
+    (VP (VBD:[691..697] showed)
+      (NP
+        (NP (DT:[698..699] a) (JJ:[700..704] high) (NN:[705..711] degree))
+        (PP (IN:[712..714] of)
+          (NP
+            (NP (NN:[715..719] cell) (NN:[720..725] death))
+            (PP (IN:[727..729] by)
+              (NP (NN:[730..739] apoptosis))))))
+      (,:[739..740] ,)
+      (PP-LOC (RB:[741..745] even) (IN:[746..748] in)
+        (NP
+          (ADJP (NN:[749..754] serum) (HYPH:[754..755] -)
+                (VBN:[755..767] supplemented))
+          (NN:[768..774] medium))))
+    (.:[774..775] .)))
+
+;sentence 7 Span:776..945
+;Moreover, the level of  apoptosis correlated directly with the expression
+;level of the receptor,  indicating that p75NTR could activate the cell death
+;program by itself.
+;[890..896]:gene-protein:"p75NTR"
+(SENT
+  (S
+    (ADVP (RB:[776..784] Moreover))
+    (,:[784..785] ,)
+    (NP-SBJ
+      (NP (DT:[786..789] the) (NN:[790..795] level))
+      (PP (IN:[796..798] of)
+        (NP (NN:[800..809] apoptosis))))
+    (VP (VBD:[810..820] correlated)
+      (ADVP (RB:[821..829] directly))
+      (PP-CLR (IN:[830..834] with)
+        (NP
+          (NP (DT:[835..838] the) (NN:[839..849] expression)
+              (NN:[850..855] level))
+          (PP (IN:[856..858] of)
+            (NP (DT:[859..862] the) (NN:[863..871] receptor)))))
+      (,:[871..872] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[872..872] *))
+        (VP (VBG:[874..884] indicating)
+          (SBAR (IN:[885..889] that)
+            (S
+              (NP-SBJ (NN:[890..896] p75NTR))
+              (VP (MD:[897..902] could)
+                (VP (VB:[903..911] activate)
+                  (NP (DT:[912..915] the)
+                    (NML (NN:[916..920] cell) (NN:[921..926] death))
+                    (NN:[927..934] program))
+                  (PP (IN:[935..937] by)
+                    (NP (PRP:[938..944] itself))))))))))
+    (.:[944..945] .)))
+
+;sentence 8 Span:946..1088
+;Clones  expressing p75NTR showed a dramatic increase of cell death when
+;switched into  serum-free medium; these cultures rapidly extinguished.
+;[965..971]:gene-protein:"p75NTR"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NNS:[946..952] Clones))
+        (VP (VBG:[954..964] expressing)
+          (NP (NN:[965..971] p75NTR))))
+      (VP (VBD:[972..978] showed)
+        (NP
+          (NP (DT:[979..980] a) (JJ:[981..989] dramatic)
+              (NN:[990..998] increase))
+          (PP (IN:[999..1001] of)
+            (NP (NN:[1002..1006] cell) (NN:[1007..1012] death))))
+        (SBAR-ADV
+          (WHADVP-1 (WRB:[1013..1017] when))
+          (S
+            (NP-SBJ (-NONE-:[1017..1017] *))
+            (VP (VBN:[1018..1026] switched)
+              (PP (IN:[1027..1031] into)
+                (NP
+                  (ADJP (NN:[1033..1038] serum) (HYPH:[1038..1039] -)
+                        (JJ:[1039..1043] free))
+                  (NN:[1044..1050] medium)))
+              (ADVP-TMP-1 (-NONE-:[1050..1050] *T*)))))))
+    (::[1050..1051] ;)
+    (S
+      (NP-SBJ (DT:[1052..1057] these) (NNS:[1058..1066] cultures))
+      (ADVP (RB:[1067..1074] rapidly))
+      (VP (VBD:[1075..1087] extinguished)))
+    (.:[1087..1088] .)))
+
+;sentence 9 Span:1089..1151
+;This apoptotic effect  was greatly inhibited by NGF treatment.
+;[1137..1140]:gene-protein:"NGF"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1089..1093] This) (JJ:[1094..1103] apoptotic)
+              (NN:[1104..1110] effect))
+    (VP (VBD:[1112..1115] was)
+      (ADVP (RB:[1116..1123] greatly))
+      (VP (VBN:[1124..1133] inhibited)
+        (NP-1 (-NONE-:[1133..1133] *))
+        (PP (IN:[1134..1136] by)
+          (NP-LGS (NN:[1137..1140] NGF) (NN:[1141..1150] treatment)))))
+    (.:[1150..1151] .)))
+
+;sentence 10 Span:1152..1401
+;Our results support the hypothesis that  p75NTR, when it is not bound by NGF,
+;may play a role in neuronal selection  during embryonic development and
+;suggest that neuroblastomas may arise from  immature neuroblasts that escape
+;programmed cell death.
+;[1193..1199]:gene-protein:"p75NTR"
+;[1225..1228]:gene-protein:"NGF"
+;[1315..1329]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1152..1155] Our) (NNS:[1156..1163] results))
+    (VP
+      (VP (VBP:[1164..1171] support)
+        (NP (DT:[1172..1175] the) (NN:[1176..1186] hypothesis)
+          (SBAR (IN:[1187..1191] that)
+            (S
+              (NP-SBJ (NN:[1193..1199] p75NTR))
+              (,:[1199..1200] ,)
+              (SBAR-ADV
+                (WHADVP-2 (WRB:[1201..1205] when))
+                (S
+                  (NP-SBJ-3 (PRP:[1206..1208] it))
+                  (VP (VBZ:[1209..1211] is) (RB:[1212..1215] not)
+                    (VP (VBN:[1216..1221] bound)
+                      (NP-3 (-NONE-:[1221..1221] *))
+                      (PP (IN:[1222..1224] by)
+                        (NP-LGS (NN:[1225..1228] NGF)))
+                      (ADVP-TMP-2 (-NONE-:[1228..1228] *T*))))))
+              (,:[1228..1229] ,)
+              (VP (MD:[1230..1233] may)
+                (VP (VB:[1234..1238] play)
+                  (NP (DT:[1239..1240] a) (NN:[1241..1245] role))
+                  (PP (IN:[1246..1248] in)
+                    (NP (JJ:[1249..1257] neuronal) (NN:[1258..1267] selection)))
+                  (PP-TMP (IN:[1269..1275] during)
+                    (NP (JJ:[1276..1285] embryonic)
+                        (NN:[1286..1297] development)))))))))
+      (CC:[1298..1301] and)
+      (VP (VBP:[1302..1309] suggest)
+        (SBAR (IN:[1310..1314] that)
+          (S
+            (NP-SBJ (NNS:[1315..1329] neuroblastomas))
+            (VP (MD:[1330..1333] may)
+              (VP (VB:[1334..1339] arise)
+                (PP (IN:[1340..1344] from)
+                  (NP
+                    (NP (JJ:[1346..1354] immature)
+                        (NNS:[1355..1366] neuroblasts))
+                    (SBAR
+                      (WHNP-1 (WDT:[1367..1371] that))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[1371..1371] *T*))
+                        (VP (VBP:[1372..1378] escape)
+                          (NP (VBN:[1379..1389] programmed)
+                              (NN:[1390..1394] cell) (NN:[1395..1400] death)))))))))))))
+    (.:[1400..1401] .)))
+
+;sentence 11 Span:1402..1535
+;Therefore, the loss of  p75NTR expression in developing neural crest cells
+;might be a primary event in  the genesis of neuroblastoma.
+;[1426..1432]:gene-protein:"p75NTR"
+;[1521..1534]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (ADVP (RB:[1402..1411] Therefore))
+    (,:[1411..1412] ,)
+    (NP-SBJ
+      (NP (DT:[1413..1416] the) (NN:[1417..1421] loss))
+      (PP (IN:[1422..1424] of)
+        (NP (NN:[1426..1432] p75NTR) (NN:[1433..1443] expression)))
+      (PP-LOC (IN:[1444..1446] in)
+        (NP (VBG:[1447..1457] developing)
+          (NML (JJ:[1458..1464] neural) (NN:[1465..1470] crest))
+          (NNS:[1471..1476] cells))))
+    (VP (MD:[1477..1482] might)
+      (VP (VB:[1483..1485] be)
+        (NP-PRD (DT:[1486..1487] a) (JJ:[1488..1495] primary)
+                (NN:[1496..1501] event))
+        (PP (IN:[1502..1504] in)
+          (NP
+            (NP (DT:[1506..1509] the) (NN:[1510..1517] genesis))
+            (PP (IN:[1518..1520] of)
+              (NP (NN:[1521..1534] neuroblastoma)))))))
+    (.:[1534..1535] .)))
+
+;section 12 Span:1539..1583
+;PMID: 9136990 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1539..1543] PMID) (::[1543..1544] :) (CD:[1545..1552] 9136990)
+        (NN:[1553..1554] -LSB-) (NNP:[1554..1560] PubMed) (::[1561..1562] -)
+        (NN:[1563..1570] indexed) (IN:[1571..1574] for)
+        (NNP:[1575..1583] MEDLINE-RSB-)))

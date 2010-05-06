@@ -1,0 +1,360 @@
+;PMID: 8852654
+;source_file_2853.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..143] = [t:43..143]
+;2)section:[e:147..215] = [t:147..215]
+;3)section:[e:219..273] = [t:219..273]
+;4)sentence:[e:277..394] = [t:277..394]
+;5)sentence:[e:395..494] = [t:395..494]
+;6)sentence:[e:495..619] = [t:495..619]
+;7)sentence:[e:620..797] = [t:620..797]
+;8)sentence:[e:798..977] = [t:798..977]
+;9)sentence:[e:978..1038] = [t:978..1038]
+;10)sentence:[e:1039..1172] = [t:1039..1172]
+;11)sentence:[e:1173..1306] = [t:1173..1306]
+;12)section:[e:1310..1354] = [t:1310..1354]
+
+;section 0 Span:0..37
+;Hum Mol Genet.  1996 Mar;5(3):309-17.
+(SEC
+  (FRAG (NNP:[0..3] Hum) (NNP:[4..7] Mol) (NNP:[8..13] Genet) (.:[13..14] .)
+        (CD:[16..20] 1996) (IN:[21..25] Mar;) (CD:[25..26] 5)
+        (NN:[26..27] -LRB-) (NN:[27..28] 3) (-RRB-:[28..29] -RRB-)
+        (::[29..30] :) (CD:[30..33] 309) (CD:[33..36] -17) (.:[36..37] .)))
+
+;sentence 1 Span:43..143
+;A human modifier of methylation for class I HLA genes (MEMO-1) maps to 
+;chromosomal bands 1p35-36.1.
+;[79..90]:gene-rna:"class I HLA"
+;[98..104]:gene-rna:"MEMO-1"
+;[133..142]:variation-location:"1p35-36.1"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (DT:[43..44] A) (JJ:[45..50] human) (NN:[51..59] modifier))
+      (PP (IN:[60..62] of)
+        (NP
+          (NP (NN:[63..74] methylation))
+          (PP (IN:[75..78] for)
+            (NP
+              
+              (NML (NN:[79..84] class) (CD:[85..86] I))
+              (NN:[87..90] HLA)
+              (NNS:[91..96] genes)
+              (PRN (-LRB-:[97..98] -LRB-)
+                (NP (NN:[98..104] MEMO-1))
+                (-RRB-:[104..105] -RRB-)))))))
+    (VP (VBZ:[106..110] maps)
+      (PP (TO:[111..113] to)
+        (NP
+          (NP (JJ:[115..126] chromosomal) (NNS:[127..132] bands))
+          (NP (NN:[133..135] 1p) (CD:[135..137] 35) (HYPH:[137..138] -)
+              (CD:[138..142] 36.1)))))
+    (.:[142..143] .)))
+
+;section 2 Span:147..215
+;Cheng NC, Chan AJ, Beitsma MM, Speleman F, Westerveld A, Versteeg R.
+(SEC
+  (FRAG (NNP:[147..152] Cheng) (NNP:[153..155] NC) (,:[155..156] ,)
+        (NNP:[157..161] Chan) (NNP:[162..164] AJ) (,:[164..165] ,)
+        (NNP:[166..173] Beitsma) (NNP:[174..176] MM) (,:[176..177] ,)
+        (NNP:[178..186] Speleman) (NNP:[187..188] F) (,:[188..189] ,)
+        (NNP:[190..200] Westerveld) (NNP:[201..202] A) (,:[202..203] ,)
+        (NNP:[204..212] Versteeg) (NNP:[213..215] R.)))
+
+;section 3 Span:219..273
+;Department of Human Genetics, University of Amsterdam.
+(SEC
+  (FRAG (NNP:[219..229] Department) (IN:[230..232] of) (NNP:[233..238] Human)
+        (NNP:[239..247] Genetics) (,:[247..248] ,) (NNP:[249..259] University)
+        (IN:[260..262] of) (NNP:[263..272] Amsterdam) (.:[272..273] .)))
+
+;sentence 4 Span:277..394
+;Class I HLA genes are expressed in almost all tissues, but expression is low
+;or  undetectable in many neuroblastomas.
+;[277..288]:gene-rna:"Class I HLA"
+;[379..393]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NML
+          (NML (NN:[277..282] Class) (CD:[283..284] I))
+          (NN:[285..288] HLA))
+        (NNS:[289..294] genes))
+      (VP (VBP:[295..298] are)
+        (VP (VBN:[299..308] expressed)
+          (NP-1 (-NONE-:[308..308] *))
+          (PP (IN:[309..311] in)
+            (NP (RB:[312..318] almost) (DT:[319..322] all)
+                (NNS:[323..330] tissues))))))
+    (,:[330..331] ,) (CC:[332..335] but)
+    (S
+      (NP-SBJ (NN:[336..346] expression))
+      (VP (VBZ:[347..349] is)
+        (ADJP-PRD (JJ:[350..353] low) (CC:[354..356] or)
+                  (JJ:[358..370] undetectable))
+        (PP-LOC (IN:[371..373] in)
+          (NP (JJ:[374..378] many) (NNS:[379..393] neuroblastomas)))))
+    (.:[393..394] .)))
+
+;sentence 5 Span:395..494
+;We analysed class I HLA methylation in  normal tissues and in 28
+;neuroectodermal tumour cell lines.
+;[407..418]:gene-rna:"class I HLA"
+;[460..482]:malignancy-type:"neuroectodermal tumour"
+(SENT
+  (S
+    (NP-SBJ (PRP:[395..397] We))
+    (VP (VBD:[398..406] analysed)
+      (NP
+        
+        (NML (NN:[407..412] class) (CD:[413..414] I))
+        (NN:[415..418] HLA)
+        (NN:[419..430] methylation))
+      (PP-LOC
+        (PP (IN:[431..433] in)
+          (NP (JJ:[435..441] normal) (NNS:[442..449] tissues)))
+        (CC:[450..453] and)
+        (PP (IN:[454..456] in)
+          (NP (CD:[457..459] 28)
+             (JJ:[460..475] neuroectodermal) (NN:[476..482] tumour)
+            (NN:[483..487] cell) (NNS:[488..493] lines)))))
+    (.:[493..494] .)))
+
+;sentence 6 Span:495..619
+;HLA-C is  hypermethylated in normal adult tissues and 13 cell lines, while 15
+;cell lines  show the hypomethylated phenotype.
+;[495..500]:gene-rna:"HLA-C"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[495..500] HLA-C))
+    (VP (VBZ:[501..503] is)
+      (VP (VBN:[505..520] hypermethylated)
+        (NP-1 (-NONE-:[520..520] *))
+        (PP (IN:[521..523] in)
+          (NP
+            (NP (JJ:[524..530] normal) (JJ:[531..536] adult)
+                (NNS:[537..544] tissues))
+            (CC:[545..548] and)
+            (NP (CD:[549..551] 13) (NN:[552..556] cell) (NNS:[557..562] lines))))
+        (,:[562..563] ,)
+        (SBAR-ADV (IN:[564..569] while)
+          (S
+            (NP-SBJ (CD:[570..572] 15) (NN:[573..577] cell)
+                    (NNS:[578..583] lines))
+            (VP (VBP:[585..589] show)
+              (NP (DT:[590..593] the) (VBN:[594..608] hypomethylated)
+                  (NN:[609..618] phenotype)))))))
+    (.:[618..619] .)))
+
+;sentence 7 Span:620..797
+;Hypomethylation of HLA-C strongly correlates  with hemizygous deletion of a 9
+;cM interval on 1p35-36.1, suggesting that this  region encodes a modifier of
+;methylation for HLA-C.
+;[639..644]:gene-rna:"HLA-C"
+;[671..690]:variation-type:"hemizygous deletion"
+;[713..722]:variation-location:"1p35-36.1"
+;[791..796]:gene-rna:"HLA-C"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[620..635] Hypomethylation))
+      (PP (IN:[636..638] of)
+        (NP (NN:[639..644] HLA-C))))
+    (ADVP (RB:[645..653] strongly))
+    (VP (VBZ:[654..664] correlates)
+      (PP-CLR (IN:[666..670] with)
+        (NP
+          (NP (JJ:[671..681] hemizygous) (NN:[682..690] deletion))
+          (PP (IN:[691..693] of)
+            (NP (DT:[694..695] a)
+              (NML (CD:[696..697] 9) (NN:[698..700] cM))
+              (NN:[701..709] interval)))
+          (PP (IN:[710..712] on)
+            (NP (NN:[713..715] 1p) (CD:[715..717] 35) (HYPH:[717..718] -)
+                (CD:[718..722] 36.1)))))
+      (,:[722..723] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[723..723] *))
+        (VP (VBG:[724..734] suggesting)
+          (SBAR (IN:[735..739] that)
+            (S
+              (NP-SBJ (DT:[740..744] this) (NN:[746..752] region))
+              (VP (VBZ:[753..760] encodes)
+                (NP
+                  (NP (DT:[761..762] a) (NN:[763..771] modifier))
+                  (PP (IN:[772..774] of)
+                    (NP
+                      (NP (NN:[775..786] methylation))
+                      (PP (IN:[787..790] for)
+                        (NP (NN:[791..796] HLA-C))))))))))))
+    (.:[796..797] .)))
+
+;sentence 8 Span:798..977
+;To test whether  hypomethylation of class I HLA genes results from loss of a
+;modifier gene, we  fused a hypomethylating neuroblastoma cell line with a
+;hypermethylating cell  line.
+;[834..845]:gene-rna:"class I HLA"
+;[918..931]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[798..798] *))
+      (VP (TO:[798..800] To)
+        (VP (VB:[801..805] test)
+          (SBAR (IN:[806..813] whether)
+            (S
+              (NP-SBJ
+                (NP (NN:[815..830] hypomethylation))
+                (PP (IN:[831..833] of)
+                  (NP
+                    
+                    (NML (NN:[834..839] class) (CD:[840..841] I))
+                    (NN:[842..845] HLA)
+                    (NNS:[846..851] genes))))
+              (VP (VBZ:[852..859] results)
+                (PP (IN:[860..864] from)
+                  (NP
+                    (NP (NN:[865..869] loss))
+                    (PP (IN:[870..872] of)
+                      (NP (DT:[873..874] a) (NN:[875..883] modifier)
+                          (NN:[884..888] gene)))))))))))
+    (,:[888..889] ,)
+    (NP-SBJ (PRP:[890..892] we))
+    (VP (VBD:[894..899] fused)
+      (NP (DT:[900..901] a) (VBG:[902..917] hypomethylating)
+          (NN:[918..931] neuroblastoma) (NN:[932..936] cell)
+          (NN:[937..941] line))
+      (PP (IN:[942..946] with)
+        (NP (DT:[947..948] a) (VBG:[949..965] hypermethylating)
+            (NN:[966..970] cell) (NN:[972..976] line))))
+    (.:[976..977] .)))
+
+;sentence 9 Span:978..1038
+;Methylation of class I HLA genes was induced in the hybrids.
+;[993..1004]:gene-rna:"class I HLA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[978..989] Methylation))
+      (PP (IN:[990..992] of)
+        (NP
+          
+          (NML (NN:[993..998] class) (CD:[999..1000] I))
+          (NN:[1001..1004] HLA)
+          (NNS:[1005..1010] genes))))
+    (VP (VBD:[1011..1014] was)
+      (VP (VBN:[1015..1022] induced)
+        (NP-1 (-NONE-:[1022..1022] *))
+        (PP (IN:[1023..1025] in)
+          (NP (DT:[1026..1029] the) (NNS:[1030..1037] hybrids)))))
+    (.:[1037..1038] .)))
+
+;sentence 10 Span:1039..1172
+;Furthermore,  methylation of HLA-C, -E and -A genes, which are encoded in a
+;1.4 Mb region on  6p21, is correlated in most cell lines.
+;[1068..1073]:gene-rna:"HLA-C"
+;[1068..1071]...[1082..1084]:gene-rna:"HLA"..."-A"
+;[1068..1071]...[1075..1077]:gene-rna:"HLA"..."-E"
+;[1133..1137]:variation-location:"6p21"
+(SENT
+  (S
+    (ADVP (RB:[1039..1050] Furthermore))
+    (,:[1050..1051] ,)
+    (NP-SBJ-4
+      (NP (NN:[1053..1064] methylation))
+      (PP (IN:[1065..1067] of)
+        (NP
+          (NP
+            (NP
+              (NML
+                (NML-1 (NN:[1068..1071] HLA))
+                (HYPH:[1071..1072] -) (NN:[1072..1073] C))
+              (NML-2 (-NONE-:[1073..1073] *P*)))
+            (,:[1073..1074] ,)
+            (NP
+              (NML
+                (NML-1 (-NONE-:[1074..1074] *P*))
+                (HYPH:[1075..1076] -) (NN:[1076..1077] E))
+              (NML-2 (-NONE-:[1077..1077] *P*)))
+            (CC:[1078..1081] and)
+            (NP
+              (NML
+                (NML-1 (-NONE-:[1081..1081] *P*))
+                (HYPH:[1082..1083] -) (NN:[1083..1084] A))
+              (NML-2 (NNS:[1085..1090] genes))))
+          (,:[1090..1091] ,)
+          (SBAR
+            (WHNP-3 (WDT:[1092..1097] which))
+            (S
+              (NP-SBJ-3 (-NONE-:[1097..1097] *T*))
+              (VP (VBP:[1098..1101] are)
+                (VP (VBN:[1102..1109] encoded)
+                  (NP-3 (-NONE-:[1109..1109] *))
+                  (PP-LOC (IN:[1110..1112] in)
+                    (NP
+                      (NP (DT:[1113..1114] a) (CD:[1115..1118] 1.4)
+                          (NN:[1119..1121] Mb) (NN:[1122..1128] region))
+                      (PP-LOC (IN:[1129..1131] on)
+                        (NP (NN:[1133..1137] 6p21))))))))))))
+    (,:[1137..1138] ,)
+    (VP (VBZ:[1139..1141] is)
+      (VP (VBN:[1142..1152] correlated)
+        (NP-4 (-NONE-:[1152..1152] *))
+        (PP (IN:[1153..1155] in)
+          (NP (JJS:[1156..1160] most) (NN:[1161..1165] cell)
+              (NNS:[1166..1171] lines)))))
+    (.:[1171..1172] .)))
+
+;sentence 11 Span:1173..1306
+;Our results suggest that 1p35-36.1  encodes a modifier of methylation for
+;class I HLA genes, that is deleted in many  neuroblastomas.
+;[1198..1207]:variation-location:"1p35-36.1"
+;[1247..1258]:gene-rna:"class I HLA"
+;[1274..1281]:variation-type:"deleted"
+;[1291..1305]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1173..1176] Our) (NNS:[1177..1184] results))
+    (VP (VBP:[1185..1192] suggest)
+      (SBAR (IN:[1193..1197] that)
+        (S
+          (NP-SBJ (NN:[1198..1200] 1p) (CD:[1200..1202] 35)
+                  (HYPH:[1202..1203] -) (CD:[1203..1207] 36.1))
+          (VP (VBZ:[1209..1216] encodes)
+            (NP
+              (NP
+                (NP (DT:[1217..1218] a) (NN:[1219..1227] modifier))
+                (PP (IN:[1228..1230] of)
+                  (NP
+                    (NP (NN:[1231..1242] methylation))
+                    (PP (IN:[1243..1246] for)
+                      (NP
+                        
+                        (NML (NN:[1247..1252] class) (CD:[1253..1254] I))
+                        (NN:[1255..1258] HLA)
+                        (NNS:[1259..1264] genes))))))
+              (,:[1264..1265] ,)
+              (SBAR
+                (WHNP-1 (WDT:[1266..1270] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1270..1270] *T*))
+                  (VP (VBZ:[1271..1273] is)
+                    (VP (VBN:[1274..1281] deleted)
+                      (NP-1 (-NONE-:[1281..1281] *))
+                      (PP-LOC (IN:[1282..1284] in)
+                        (NP (JJ:[1285..1289] many)
+                            (NNS:[1291..1305] neuroblastomas))))))))))))
+    (.:[1305..1306] .)))
+
+;section 12 Span:1310..1354
+;PMID: 8852654 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1310..1314] PMID) (::[1314..1315] :) (CD:[1316..1323] 8852654)
+        (NN:[1324..1325] -LSB-) (NNP:[1325..1331] PubMed) (::[1332..1333] -)
+        (NN:[1334..1341] indexed) (IN:[1342..1345] for)
+        (NNP:[1346..1354] MEDLINE-RSB-)))

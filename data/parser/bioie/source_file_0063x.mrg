@@ -1,0 +1,460 @@
+;PMID: 10192393
+;source_file_1216.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..113] = [t:36..113]
+;2)section:[e:117..152] = [t:117..152]
+;3)section:[e:156..288] = [t:156..288]
+;4)sentence:[e:292..355] = [t:292..355]
+;5)sentence:[e:356..528] = [t:356..528]
+;6)sentence:[e:530..696] = [t:530..696]
+;7)sentence:[e:697..964] = [t:697..964]
+;8)sentence:[e:965..1118] = [t:965..1118]
+;9)sentence:[e:1119..1368] = [t:1119..1368]
+;10)sentence:[e:1369..1450] = [t:1369..1450]
+;11)sentence:[e:1451..1592] = [t:1451..1592]
+;12)sentence:[e:1593..1775] = [t:1593..1775]
+;13)sentence:[e:1776..1995] = [t:1776..1995]
+;14)section:[e:1999..2044] = [t:1999..2044]
+
+;section 0 Span:0..31
+;Nat Genet  1999 Apr;21(4):410-3
+(SEC
+  (FRAG (NNP:[0..3] Nat) (NNP:[4..9] Genet) (CD:[11..15] 1999)
+        (.:[16..23] Apr;21-LRB-) (CD:[23..25] 4-RRB-) (CD:[25..29] :410)
+        (::[29..30] -) (CD:[30..31] 3)))
+
+;sentence 1 Span:36..113
+;A common human skin tumour is caused by activating mutations in
+;beta-catenin.
+;[51..62]:malignancy:"skin tumour"
+;[100..112]:gene-rna:"beta-catenin"
+(SENT
+  (S-HLN
+    (NP-SBJ-1 (DT:[36..37] A) (JJ:[38..44] common) (JJ:[45..50] human)
+       (NN:[51..55] skin) (NN:[56..62] tumour))
+    (VP (VBZ:[63..65] is)
+      (VP (VBN:[66..72] caused)
+        (NP-1 (-NONE-:[72..72] *))
+        (PP (IN:[73..75] by)
+          (NP-LGS
+            (NP (VBG:[76..86] activating) (NNS:[87..96] mutations))
+            (PP (IN:[97..99] in)
+              (NP (NN:[100..112] beta-catenin)))))))
+    (.:[112..113] .)))
+
+;section 2 Span:117..152
+;Chan EF, Gat U, McNiff JM, Fuchs E.
+(SEC
+  (FRAG (NNP:[117..121] Chan) (NNP:[122..124] EF) (,:[124..125] ,)
+        (NNP:[126..129] Gat) (NNP:[130..131] U) (,:[131..132] ,)
+        (NNP:[133..139] McNiff) (NNP:[140..142] JM) (,:[142..143] ,)
+        (NNP:[144..149] Fuchs) (NNP:[150..152] E.)))
+
+;section 3 Span:156..288
+;Howard Hughes Medical Institute, Department of Molecular Genetics and Cell 
+;Biology, The University of Chicago, Illinois 60637, USA.
+(SEC
+  (FRAG (NNP:[156..162] Howard) (NNP:[163..169] Hughes) (NNP:[170..177] Medical)
+        (NNP:[178..187] Institute) (,:[187..188] ,) (NNP:[189..199] Department)
+        (IN:[200..202] of) (NNP:[203..212] Molecular) (NNP:[213..221] Genetics)
+        (CC:[222..225] and) (NNP:[226..230] Cell) (NNP:[232..239] Biology)
+        (,:[239..240] ,) (DT:[241..244] The) (NNP:[245..255] University)
+        (IN:[256..258] of) (NNP:[259..266] Chicago) (,:[266..267] ,)
+        (NNP:[268..276] Illinois) (VBD:[277..282] 60637) (NNP:[282..283] ,)
+        (NNP:[284..287] USA) (.:[287..288] .)))
+
+;sentence 4 Span:292..355
+;WNT signalling orchestrates a number of developmental programs.
+;[292..295]:gene-generic:"WNT"
+(SENT
+  (S
+    (NP-SBJ (NN:[292..295] WNT) (NN:[296..306] signalling))
+    (VP (VBZ:[307..319] orchestrates)
+      (NP
+        (NP (DT:[320..321] a) (NN:[322..328] number))
+        (PP (IN:[329..331] of)
+          (NP (JJ:[332..345] developmental) (NNS:[346..354] programs)))))
+    (.:[354..355] .)))
+
+;sentence 5 Span:356..528
+;In response to  this stimulus, cytoplasmic beta-catenin (encoded by CTNNB1)
+;is stabilized,  enabling downstream transcriptional activation by members of
+;the LEF/TCF family.
+;[399..411]:gene-protein:"beta-catenin"
+;[424..430]:gene-rna:"CTNNB1"
+;[513..516]:gene-generic:"LEF"
+;[517..520]:gene-generic:"TCF"
+(SENT
+  (S
+    (PP (IN:[356..358] In)
+      (NP
+        (NP (NN:[359..367] response))
+        (PP (TO:[368..370] to)
+          (NP (DT:[372..376] this) (NN:[377..385] stimulus)))))
+    (,:[385..386] ,)
+    (NP-SBJ-1 (JJ:[387..398] cytoplasmic) (NN:[399..411] beta-catenin)
+      (PRN (-LRB-:[412..413] -LRB-)
+        (VP (VBN:[413..420] encoded)
+          (NP (-NONE-:[420..420] *))
+          (PP (IN:[421..423] by)
+            (NP-LGS (NN:[424..430] CTNNB1))))
+        (-RRB-:[430..431] -RRB-)))
+    (VP (VBZ:[432..434] is)
+      (VP (VBN:[435..445] stabilized)
+        (NP-1 (-NONE-:[445..445] *))
+        (,:[445..446] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[446..446] *))
+          (VP (VBG:[448..456] enabling)
+            (NP
+              (NP (JJ:[457..467] downstream) (JJ:[468..483] transcriptional)
+                  (NN:[484..494] activation))
+              (PP (IN:[495..497] by)
+                (NP
+                  (NP (NNS:[498..505] members))
+                  (PP (IN:[506..508] of)
+                    (NP (DT:[509..512] the)
+                      (NML (NN:[513..516] LEF) (SYM:[516..517] /)
+                           (NN:[517..520] TCF))
+                      (NN:[521..527] family))))))))))
+    (.:[527..528] .)))
+
+;sentence 6 Span:530..696
+;One of the target genes for beta-catenin/TCF encodes c-MYC, explaining why 
+;constitutive activation of the WNT pathway can lead to cancer, particularly
+;in  the colon.
+;[558..570]:gene-protein:"beta-catenin"
+;[571..574]:gene-protein:"TCF"
+;[583..588]:gene-protein:"c-MYC"
+;[637..640]:gene-generic:"WNT"
+;[661..667]...[682..695]:malignancy:"cancer"..."in  the colon"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[530..533] One))
+      (PP (IN:[534..536] of)
+        (NP
+          (NP (DT:[537..540] the) (NN:[541..547] target) (NNS:[548..553] genes))
+          (PP (IN:[554..557] for)
+            (NP (NN:[558..570] beta-catenin) (SYM:[570..571] /)
+                (NN:[571..574] TCF))))))
+    (VP (VBZ:[575..582] encodes)
+      (NP (NN:[583..588] c-MYC))
+      (,:[588..589] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[589..589] *))
+        (VP (VBG:[590..600] explaining)
+          (SBAR-PRP (WRB:[601..604] why)
+            (S
+              (NP-SBJ
+                (NP (JJ:[606..618] constitutive) (NN:[619..629] activation))
+                (PP (IN:[630..632] of)
+                  (NP (DT:[633..636] the) (NN:[637..640] WNT)
+                      (NN:[641..648] pathway))))
+              (VP (MD:[649..652] can)
+                (VP (VB:[653..657] lead)
+                  (PP-CLR (TO:[658..660] to)
+                    (NP
+                      (NP (NN:[661..667] cancer))
+                      (,:[667..668] ,)
+                      (PP-LOC
+                        (ADVP (RB:[669..681] particularly))
+                        (IN:[682..684] in)
+                        (NP (DT:[686..689] the) (NN:[690..695] colon))))))))))))
+    (.:[695..696] .)))
+
+;sentence 7 Span:697..964
+;Most colon cancers arise from mutations in the gene encoding  adenomatous
+;polyposis coli (APC), a protein required for ubiquitin-mediated  degradation
+;of beta-catenin, but a small percentage of colon and some other  cancers
+;harbour beta-catenin-stabilizing mutations.
+;[702..715]:malignancy:"colon cancers"
+;[759..785]:gene-protein:"adenomatous polyposis coli"
+;[787..790]:gene-protein:"APC"
+;[816..825]:gene-protein:"ubiquitin"
+;[851..863]:gene-protein:"beta-catenin"
+;[891..896]...[913..920]:malignancy:"colon"..."cancers"
+;[929..941]:gene-generic:"beta-catenin"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJS:[697..701] Most)
+         (NN:[702..707] colon) (NNS:[708..715] cancers))
+      (VP (VBP:[716..721] arise)
+        (PP-CLR (IN:[722..726] from)
+          (NP
+            (NP (NNS:[727..736] mutations))
+            (PP-LOC (IN:[737..739] in)
+              (NP
+                (NP (DT:[740..743] the) (NN:[744..748] gene))
+                (VP (VBG:[749..757] encoding)
+                  (NP
+                    (NP
+                      (NP (JJ:[759..770] adenomatous) (NN:[771..780] polyposis)
+                          (NN:[781..785] coli))
+                      (NP (-LRB-:[786..787] -LRB-) (NN:[787..790] APC)
+                          (-RRB-:[790..791] -RRB-)))
+                    (,:[791..792] ,)
+                    (NP
+                      (NP (DT:[793..794] a) (NN:[795..802] protein))
+                      (VP (VBN:[803..811] required)
+                        (NP (-NONE-:[811..811] *))
+                        (PP (IN:[812..815] for)
+                          (NP
+                            (NP
+                              (ADJP (NN:[816..825] ubiquitin)
+                                    (HYPH:[825..826] -)
+                                    (VBN:[826..834] mediated))
+                              (NN:[836..847] degradation))
+                            (PP (IN:[848..850] of)
+                              (NP (NN:[851..863] beta-catenin)))))))))))))))
+    (,:[863..864] ,) (CC:[865..868] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[869..870] a) (JJ:[871..876] small) (NN:[877..887] percentage))
+        (PP (IN:[888..890] of)
+          (NP
+            (NP (NN:[891..896] colon)
+              (NML-1 (-NONE-:[896..896] *P*)))
+            (CC:[897..900] and)
+            (NP (DT:[901..905] some) (JJ:[906..911] other)
+              (NML-1 (NNS:[913..920] cancers))))))
+      (VP (VBP:[921..928] harbour)
+        (NP
+          (ADJP (NN:[929..941] beta-catenin) (HYPH:[941..942] -)
+                (VBG:[942..953] stabilizing))
+          (NNS:[954..963] mutations))))
+    (.:[963..964] .)))
+
+;sentence 8 Span:965..1118
+;Recently, we discovered that  transgenic mice expressing an activated
+;beta-catenin are predisposed to  developing skin tumours resembling
+;pilomatricomas.
+;[1035..1047]:gene-protein:"beta-catenin"
+;[1079..1091]:malignancy:"skin tumours"
+;[1103..1117]:malignancy:"pilomatricomas"
+(SENT
+  (S
+    (ADVP (RB:[965..973] Recently))
+    (,:[973..974] ,)
+    (NP-SBJ (PRP:[975..977] we))
+    (VP (VBD:[978..988] discovered)
+      (SBAR (IN:[989..993] that)
+        (S
+          (NP-SBJ-1
+            (NP (JJ:[995..1005] transgenic) (NNS:[1006..1010] mice))
+            (VP (VBG:[1011..1021] expressing)
+              (NP (DT:[1022..1024] an) (VBN:[1025..1034] activated)
+                  (NN:[1035..1047] beta-catenin))))
+          (VP (VBP:[1048..1051] are)
+            (VP (VBN:[1052..1063] predisposed)
+              (S
+                (NP-SBJ-1 (-NONE-:[1063..1063] *))
+                (VP (TO:[1064..1066] to)
+                  (VP (VBG:[1068..1078] developing)
+                    (NP
+                      (NP (NN:[1079..1083] skin) (NNS:[1084..1091] tumours))
+                      (VP (VBG:[1092..1102] resembling)
+                        (NP (NNS:[1103..1117] pilomatricomas))))))))))))
+    (.:[1117..1118] .)))
+
+;sentence 9 Span:1119..1368
+;Given that the skin of these  adult mice also exhibits signs of de novo
+;hair-follicle morphogenesis, we  wondered whether human pilomatricomas might
+;originate from hair matrix cells and  whether they might possess
+;beta-catenin-stabilizing mutations.
+;[1247..1261]:malignancy:"pilomatricomas"
+;[1333..1345]:gene-generic:"beta-catenin"
+(SENT
+  (S
+    (PP (VBN:[1119..1124] Given)
+      (SBAR (IN:[1125..1129] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1130..1133] the) (NN:[1134..1138] skin))
+            (PP (IN:[1139..1141] of)
+              (NP (DT:[1142..1147] these) (JJ:[1149..1154] adult)
+                  (NNS:[1155..1159] mice))))
+          (ADVP (RB:[1160..1164] also))
+          (VP (VBZ:[1165..1173] exhibits)
+            (NP
+              (NP (NNS:[1174..1179] signs))
+              (PP (IN:[1180..1182] of)
+                (NP
+                  (ADJP (FW:[1183..1185] de) (FW:[1186..1190] novo))
+                  (NML (NN:[1191..1195] hair) (HYPH:[1195..1196] -)
+                       (NN:[1196..1204] follicle))
+                  (NN:[1205..1218] morphogenesis))))))))
+    (,:[1218..1219] ,)
+    (NP-SBJ (PRP:[1220..1222] we))
+    (VP (VBD:[1224..1232] wondered)
+      (SBAR
+        (SBAR (IN:[1233..1240] whether)
+          (S
+            (NP-SBJ (JJ:[1241..1246] human) (NNS:[1247..1261] pilomatricomas))
+            (VP (MD:[1262..1267] might)
+              (VP (VB:[1268..1277] originate)
+                (PP (IN:[1278..1282] from)
+                  (NP (NN:[1283..1287] hair) (NN:[1288..1294] matrix)
+                      (NNS:[1295..1300] cells)))))))
+        (CC:[1301..1304] and)
+        (SBAR (IN:[1306..1313] whether)
+          (S
+            (NP-SBJ (PRP:[1314..1318] they))
+            (VP (MD:[1319..1324] might)
+              (VP (VB:[1325..1332] possess)
+                (NP
+                  (ADJP (NN:[1333..1345] beta-catenin) (HYPH:[1345..1346] -)
+                        (VBG:[1346..1357] stabilizing))
+                  (NNS:[1358..1367] mutations))))))))
+    (.:[1367..1368] .)))
+
+;sentence 10 Span:1369..1450
+;Here, we explore  the cell origin and aetiology of this common human skin
+;tumour.
+;[1438..1449]:malignancy:"skin tumour"
+(SENT
+  (S
+    (ADVP (RB:[1369..1373] Here))
+    (,:[1373..1374] ,)
+    (NP-SBJ (PRP:[1375..1377] we))
+    (VP (VBP:[1378..1385] explore)
+      (NP
+        (NP
+          (NP (DT:[1387..1390] the) (NN:[1391..1395] cell)
+              (NN:[1396..1402] origin))
+          (CC:[1403..1406] and)
+          (NP (NN:[1407..1416] aetiology)))
+        (PP (IN:[1417..1419] of)
+          (NP (DT:[1420..1424] this) (JJ:[1425..1431] common)
+              (JJ:[1432..1437] human)
+             (NN:[1438..1442] skin) (NN:[1443..1449] tumour)))))
+    (.:[1449..1450] .)))
+
+;sentence 11 Span:1451..1592
+;We found nuclear  LEF-1 in the dividing tumour cells, providing biochemical
+;evidence that  pilomatricomas are derived from hair matrix cells.
+;[1469..1474]:gene-protein:"LEF-1"
+;[1491..1503]:malignancy:"tumour cells"
+;[1542..1556]:malignancy:"pilomatricomas"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1451..1453] We))
+    (VP (VBD:[1454..1459] found)
+      (NP (JJ:[1460..1467] nuclear) (NN:[1469..1474] LEF-1))
+      (PP-LOC (IN:[1475..1477] in)
+        (NP (DT:[1478..1481] the) (VBG:[1482..1490] dividing)
+           (NN:[1491..1497] tumour) (NNS:[1498..1503] cells)))
+      (,:[1503..1504] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1504..1504] *))
+        (VP (VBG:[1505..1514] providing)
+          (NP
+            (NP (JJ:[1515..1526] biochemical) (NN:[1527..1535] evidence))
+            (SBAR (IN:[1536..1540] that)
+              (S
+                (NP-SBJ-1 (NNS:[1542..1556] pilomatricomas))
+                (VP (VBP:[1557..1560] are)
+                  (VP (VBN:[1561..1568] derived)
+                    (NP-1 (-NONE-:[1568..1568] *))
+                    (PP (IN:[1569..1573] from)
+                      (NP (NN:[1574..1578] hair) (NN:[1579..1585] matrix)
+                          (NNS:[1586..1591] cells)))))))))))
+    (.:[1591..1592] .)))
+
+;sentence 12 Span:1593..1775
+;At least 75% of these tumours  possess mutations affecting the amino-terminal
+;segment, normally involved in  phosphorylation-dependent, ubiquitin-mediated
+;degradation of the protein.
+;[1615..1622]:malignancy:"tumours"
+;[1729..1738]:gene-protein:"ubiquitin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (QP (IN:[1593..1595] At) (JJS:[1596..1601] least) (CD:[1602..1604] 75))
+        (NN:[1604..1605] %))
+      (PP (IN:[1606..1608] of)
+        (NP (DT:[1609..1614] these) (NNS:[1615..1622] tumours))))
+    (VP (VBP:[1624..1631] possess)
+      (NP
+        (NP (NNS:[1632..1641] mutations))
+        (VP (VBG:[1642..1651] affecting)
+          (NP
+            (NP (DT:[1652..1655] the)
+              (ADJP (JJ:[1656..1661] amino) (HYPH:[1661..1662] -)
+                    (JJ:[1662..1670] terminal))
+              (NN:[1671..1678] segment))
+            (,:[1678..1679] ,)
+            (VP
+              (ADVP (RB:[1680..1688] normally))
+              (VBN:[1689..1697] involved)
+              (NP (-NONE-:[1697..1697] *))
+              (PP-CLR (IN:[1698..1700] in)
+                (NP
+                  (NP
+                    (ADJP (NN:[1702..1717] phosphorylation)
+                          (HYPH:[1717..1718] -) (JJ:[1718..1727] dependent))
+                    (,:[1727..1728] ,)
+                    (ADJP (NN:[1729..1738] ubiquitin) (HYPH:[1738..1739] -)
+                          (VBN:[1739..1747] mediated))
+                    (NN:[1748..1759] degradation))
+                  (PP (IN:[1760..1762] of)
+                    (NP (DT:[1763..1766] the) (NN:[1767..1774] protein))))))))))
+    (.:[1774..1775] .)))
+
+;sentence 13 Span:1776..1995
+;This  percentage of CTNNB1 mutations is greater than in all other human
+;tumours  examined thus far, and directly implicates beta-catenin/LEF
+;misregulation as the  major cause of hair matrix cell tumorigenesis in
+;humans.
+;[1796..1802]:gene-rna:"CTNNB1"
+;[1900..1912]:gene-generic:"beta-catenin"
+;[1913..1916]:gene-generic:"LEF"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1776..1780] This) (NN:[1782..1792] percentage))
+      (PP (IN:[1793..1795] of)
+        (NP (NN:[1796..1802] CTNNB1) (NNS:[1803..1812] mutations))))
+    (VP
+      (VP (VBZ:[1813..1815] is)
+        (ADJP-PRD
+          (ADJP (JJR:[1816..1823] greater))
+          (PP (IN:[1824..1828] than)
+            (PP (IN:[1829..1831] in)
+              (NP
+                (NP (DT:[1832..1835] all) (JJ:[1836..1841] other)
+                    (JJ:[1842..1847] human) (NNS:[1848..1855] tumours))
+                (VP (VBN:[1857..1865] examined)
+                  (NP (-NONE-:[1865..1865] *))
+                  (ADVP-TMP (RB:[1866..1870] thus) (RB:[1871..1874] far))))))))
+      (,:[1874..1875] ,) (CC:[1876..1879] and)
+      (VP
+        (ADVP (RB:[1880..1888] directly))
+        (VBZ:[1889..1899] implicates)
+        (NP
+          (NML (NN:[1900..1912] beta-catenin) (SYM:[1912..1913] /)
+               (NN:[1913..1916] LEF))
+          (NN:[1917..1930] misregulation))
+        (PP (IN:[1931..1933] as)
+          (NP
+            (NP (DT:[1934..1937] the) (JJ:[1939..1944] major)
+                (NN:[1945..1950] cause))
+            (PP (IN:[1951..1953] of)
+              (NP (NN:[1954..1958] hair) (NN:[1959..1965] matrix)
+                  (NN:[1966..1970] cell) (NN:[1971..1984] tumorigenesis)))))
+        (PP-LOC (IN:[1985..1987] in)
+          (NP (NNS:[1988..1994] humans)))))
+    (.:[1994..1995] .)))
+
+;section 14 Span:1999..2044
+;PMID: 10192393 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1999..2003] PMID) (::[2003..2004] :) (CD:[2005..2013] 10192393)
+        (NN:[2014..2015] -LSB-) (NNP:[2015..2021] PubMed) (::[2022..2023] -)
+        (NN:[2024..2031] indexed) (IN:[2032..2035] for)
+        (NNP:[2036..2044] MEDLINE-RSB-)))

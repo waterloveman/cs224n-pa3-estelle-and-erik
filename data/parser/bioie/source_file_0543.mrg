@@ -1,0 +1,305 @@
+;PMID: 7120190
+;source_file_641.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..89] = [t:45..89]
+;2)section:[e:93..127] = [t:93..127]
+;3)sentence:[e:131..223] = [t:131..223]
+;4)sentence:[e:224..351] = [t:224..351]
+;5)sentence:[e:352..429] = [t:352..429]
+;6)sentence:[e:430..590] = [t:430..590]
+;7)sentence:[e:591..680] = [t:591..680]
+;8)sentence:[e:681..838] = [t:681..838]
+;9)sentence:[e:839..941] = [t:839..941]
+;10)sentence:[e:942..1095] = [t:942..1095]
+;11)section:[e:1099..1143] = [t:1099..1143]
+;Token/POS Errors
+;ERROR_POS mismatch [29..30] t:token e:CD 1
+
+;section 0 Span:0..39
+;J Reprod Fertil. 1982 Sep;66(1):259-63.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Reprod) (NNP:[9..15] Fertil) (.:[15..16] .)
+        (CD:[17..21] 1982) (NNP:[22..28] Sep;66) (-LRB-:[28..29] -LRB-)
+        (token:[29..30] 1) (-RRB-:[30..31] -RRB-) (::[31..32] :)
+        (CD:[32..34] 25) (CD:[34..38] 9-63) (.:[38..39] .)))
+
+;sentence 1 Span:45..89
+;Aromatase activity in the rabbit blastocyst.
+;[45..54]:cyp450:"Aromatase"
+(SENT
+  (NP-HLN
+    (NP (NN:[45..54] Aromatase) (NN:[55..63] activity))
+    (PP-LOC (IN:[64..66] in)
+      (NP (DT:[67..70] the) (NN:[71..77] rabbit) (NN:[78..88] blastocyst)))
+    (.:[88..89] .)))
+
+;section 2 Span:93..127
+;Hoversland RC, Dey SK, Johnson DC.
+(SEC
+  (FRAG (NNP:[93..103] Hoversland) (NNP:[104..106] RC) (,:[106..107] ,)
+        (NNP:[108..111] Dey) (NNP:[112..114] SK) (,:[114..115] ,)
+        (NNP:[116..123] Johnson) (NNP:[124..127] DC.)))
+
+;sentence 3 Span:131..223
+;Rabbit blastocysts were homogenized by sonication, and centrifuged at 105 000
+;g  for 60 min.
+;[201..208]:quantitative-value:"105 000"
+;[209..210]:quantitative-units:"g"
+;[216..218]:quantitative-value:"60"
+;[219..222]:quantitative-units:"min"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[131..137] Rabbit) (NNS:[138..149] blastocysts))
+    (VP (VBD:[150..154] were)
+      (VP
+        (VP (VBN:[155..166] homogenized)
+          (NP-1 (-NONE-:[166..166] *))
+          (PP-MNR (IN:[167..169] by)
+            (NP (NN:[170..180] sonication))))
+        (,:[180..181] ,) (CC:[182..185] and)
+        (VP (VBN:[186..197] centrifuged)
+          (NP-1 (-NONE-:[197..197] *))
+          (PP-MNR (IN:[198..200] at)
+            (NP
+               (CD:[201..204] 105) (CD:[205..208] 000)
+              (NN:[209..210] g)))
+          (PP-TMP (IN:[212..215] for)
+            (NP (CD:[216..218] 60) (NN:[219..222] min))))))
+    (.:[222..223] .)))
+
+;sentence 4 Span:224..351
+;The pellet was resuspended and incubated in phosphate buffer  containing [1
+;beta-3H]testosterone and a NADPH generating system.
+;[268..277]:substance:"phosphate"
+;[297..320]:substance:"[1 beta-3H]testosterone"
+;[327..332]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[224..227] The) (NN:[228..234] pellet))
+    (VP (VBD:[235..238] was)
+      (VP
+        (VP (VBN:[239..250] resuspended) (CC:[251..254] and)
+            (VBN:[255..264] incubated))
+        (NP-1 (-NONE-:[264..264] *))
+        (PP-LOC (IN:[265..267] in)
+          (NP
+            (NP (NN:[268..277] phosphate) (NN:[278..284] buffer))
+            (VP (VBG:[286..296] containing)
+              (NP
+                (NP (NN:[297..320] -LSB-1-SP-beta-3H-RSB-testosterone))
+                (CC:[321..324] and)
+                (NP (DT:[325..326] a) (NN:[327..332] NADPH)
+                    (VBG:[333..343] generating) (NN:[344..350] system))))))))
+    (.:[350..351] .)))
+
+;sentence 5 Span:352..429
+;The amount of  3H2O produced was determined by liquid scintillation
+;counting.
+;[367..371]:substance:"3H2O"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[352..355] The) (NN:[356..362] amount))
+      (PP (IN:[363..365] of)
+        (NP
+          (NP (NN:[367..371] 3H2O))
+          (VP (VBN:[372..380] produced)
+            (NP (-NONE-:[380..380] *))))))
+    (VP (VBD:[381..384] was)
+      (VP (VBN:[385..395] determined)
+        (NP-1 (-NONE-:[395..395] *))
+        (PP-MNR (IN:[396..398] by)
+          (NP (JJ:[399..405] liquid) (NN:[406..419] scintillation)
+              (NN:[420..428] counting)))))
+    (.:[428..429] .)))
+
+;sentence 6 Span:430..590
+;Enzyme activity  was calculated, after subtracting blank values obtained with
+;boiled embryos, and  expressed as pig testosterone aromatized per embryo per
+;hour.
+;[430..436]:substance:"Enzyme"
+;[546..558]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[430..436] Enzyme) (NN:[437..445] activity))
+    (VP (VBD:[447..450] was)
+      (VP
+        (VP (VBN:[451..461] calculated)
+          (NP-1 (-NONE-:[461..461] *))
+          (,:[461..462] ,)
+          (PP-TMP (IN:[463..468] after)
+            (S-NOM
+              (NP-SBJ (-NONE-:[468..468] *))
+              (VP (VBG:[469..480] subtracting)
+                (NP
+                  (NP (JJ:[481..486] blank) (NNS:[487..493] values))
+                  (VP (VBN:[494..502] obtained)
+                    (NP (-NONE-:[502..502] *))
+                    (PP (IN:[503..507] with)
+                      (NP (JJ:[508..514] boiled) (NNS:[515..522] embryos)))))))))
+        (,:[522..523] ,) (CC:[524..527] and)
+        (VP (VBN:[529..538] expressed)
+          (NP-1 (-NONE-:[538..538] *))
+          (PP (IN:[539..541] as)
+            (NP
+              (NP (NN:[542..545] pig) (NN:[546..558] testosterone))
+              (VP (VBN:[559..569] aromatized)
+                (NP (-NONE-:[569..569] *))
+                (PP (IN:[570..573] per)
+                  (NP (NN:[574..580] embryo)))
+                (PP (IN:[581..584] per)
+                  (NP (NN:[585..589] hour)))))))))
+    (.:[589..590] .)))
+
+;sentence 7 Span:591..680
+;Aromatase activity  was undetectable to low on Day 5 and increased on Day 6
+;of pregnancy.
+;[591..600]:cyp450:"Aromatase"
+;[638..641]:quantitative-units:"Day"
+;[642..643]:quantitative-value:"5"
+;[661..664]:quantitative-units:"Day"
+;[665..666]:quantitative-value:"6"
+(SENT
+  (S
+    (NP-SBJ (NN:[591..600] Aromatase) (NN:[601..609] activity))
+    (VP
+      (VP (VBD:[611..614] was)
+        (ADJP-PRD (JJ:[615..627] undetectable) (TO:[628..630] to)
+                  (JJ:[631..634] low))
+        (PP-TMP (IN:[635..637] on)
+          (NP
+            (NP (NN:[638..641] Day) (CD:[642..643] 5))
+            (PP-1 (-NONE-:[643..643] *RNR*)))))
+      (CC:[644..647] and)
+      (VP (VBD:[648..657] increased)
+        (PP-TMP (IN:[658..660] on)
+          (NP
+            (NP (NN:[661..664] Day) (CD:[665..666] 6))
+            (PP-1 (-NONE-:[666..666] *RNR*)))))
+      (PP-1 (IN:[667..669] of)
+        (NP (NN:[670..679] pregnancy))))
+    (.:[679..680] .)))
+
+;sentence 8 Span:681..838
+;There was  a 10-fold increase in activity in Day-6 embryos cultured for 24 h,
+;with a  further 6-fold increase in activity in Day-6 embryos cultured for 48
+;h.
+;[694..701]:quantitative-value:"10-fold"
+;[726..729]:quantitative-units:"Day"
+;[730..731]:quantitative-value:"6"
+;[753..755]:quantitative-value:"24"
+;[756..757]:quantitative-units:"h"
+;[775..781]:quantitative-value:"6-fold"
+;[806..809]:quantitative-units:"Day"
+;[810..811]:quantitative-value:"6"
+;[833..835]:quantitative-value:"48"
+;[836..837]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ (EX:[681..686] There))
+    (VP (VBD:[687..690] was)
+      (NP-PRD
+        (NP (DT:[692..693] a)
+          (QP (CD:[694..696] 10) (HYPH:[696..697] -) (JJ:[697..701] fold))
+          (NN:[702..710] increase))
+        (PP (IN:[711..713] in)
+          (NP (NN:[714..722] activity)))
+        (PP (IN:[723..725] in)
+          (NP
+            (NP
+              (NML (NN:[726..729] Day) (HYPH:[729..730] -) (CD:[730..731] 6))
+              (NNS:[732..739] embryos))
+            (VP (VBN:[740..748] cultured)
+              (NP (-NONE-:[748..748] *))
+              (PP-TMP (IN:[749..752] for)
+                (NP (CD:[753..755] 24) (NN:[756..757] h)))))))
+      (,:[757..758] ,)
+      (PP (IN:[759..763] with)
+        (NP
+          (NP (DT:[764..765] a) (JJ:[767..774] further)
+            (QP (CD:[775..776] 6) (HYPH:[776..777] -) (JJ:[777..781] fold))
+            (NN:[782..790] increase))
+          (PP (IN:[791..793] in)
+            (NP (NN:[794..802] activity)))
+          (PP (IN:[803..805] in)
+            (NP
+              (NP
+                (NML (NN:[806..809] Day) (HYPH:[809..810] -) (CD:[810..811] 6))
+                (NNS:[812..819] embryos))
+              (VP (VBN:[820..828] cultured)
+                (NP (-NONE-:[828..828] *))
+                (PP-TMP (IN:[829..832] for)
+                  (NP (CD:[833..835] 48) (NN:[836..837] h)))))))))
+    (.:[837..838] .)))
+
+;sentence 9 Span:839..941
+;The  enzyme had an apparent Km of 0.77 microM and was completely inhibited by
+;an  aromatase inhibitor.
+;[844..850]:substance:"enzyme"
+;[867..869]:quantitative-name:"Km"
+;[873..877]:quantitative-value:"0.77"
+;[878..884]:quantitative-units:"microM"
+;[921..930]:cyp450:"aromatase"
+;[931..940]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[839..842] The) (NN:[844..850] enzyme))
+    (VP
+      (VP (VBD:[851..854] had)
+        (NP
+          (NP (DT:[855..857] an) (JJ:[858..866] apparent) (NN:[867..869] Km))
+          (PP (IN:[870..872] of)
+            (NP (CD:[873..877] 0.77) (NN:[878..884] microM)))))
+      (CC:[885..888] and)
+      (VP (VBD:[889..892] was)
+        (VP
+          (ADVP (RB:[893..903] completely))
+          (VBN:[904..913] inhibited)
+          (NP-1 (-NONE-:[913..913] *))
+          (PP (IN:[914..916] by)
+            (NP-LGS (DT:[917..919] an) (NN:[921..930] aromatase)
+                    (NN:[931..940] inhibitor))))))
+    (.:[940..941] .)))
+
+;sentence 10 Span:942..1095
+;The results clearly indicate that the rabbit blastocyst has  an increasing
+;capacity for aromatization of testosterone at about the time of 
+;implantation.
+;[1047..1059]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ (DT:[942..945] The) (NNS:[946..953] results))
+    (ADVP (RB:[954..961] clearly))
+    (VP (VBP:[962..970] indicate)
+      (SBAR (IN:[971..975] that)
+        (S
+          (NP-SBJ (DT:[976..979] the) (NN:[980..986] rabbit)
+                  (NN:[987..997] blastocyst))
+          (VP (VBZ:[998..1001] has)
+            (NP
+              (NP (DT:[1003..1005] an) (VBG:[1006..1016] increasing)
+                  (NN:[1017..1025] capacity))
+              (PP (IN:[1026..1029] for)
+                (NP
+                  (NP (NN:[1030..1043] aromatization))
+                  (PP (IN:[1044..1046] of)
+                    (NP (NN:[1047..1059] testosterone)))))
+              (PP-TMP (IN:[1060..1062] at)
+                (NP
+                  (NP
+                    (ADVP (RB:[1063..1068] about))
+                    (DT:[1069..1072] the) (NN:[1073..1077] time))
+                  (PP (IN:[1078..1080] of)
+                    (NP (NN:[1082..1094] implantation))))))))))
+    (.:[1094..1095] .)))
+
+;section 11 Span:1099..1143
+;PMID: 7120190 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1099..1103] PMID) (::[1103..1104] :) (CD:[1105..1112] 7120190)
+        (NN:[1113..1114] -LSB-) (NNP:[1114..1120] PubMed) (::[1121..1122] -)
+        (NN:[1123..1130] indexed) (IN:[1131..1134] for)
+        (NNP:[1135..1143] MEDLINE-RSB-)))

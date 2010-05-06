@@ -1,0 +1,375 @@
+;PMID: 12444089
+;source_file_2656.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)section:[e:41..58] = [t:41..58]
+;2)sentence:[e:63..150] = [t:63..150]
+;3)section:[e:154..186] = [t:154..186]
+;4)section:[e:190..285] = [t:190..285]
+;5)sentence:[e:289..428] = [t:289..428]
+;6)sentence:[e:429..578] = [t:429..578]
+;7)sentence:[e:579..794] = [t:579..794]
+;8)sentence:[e:795..924] = [t:795..924]
+;9)sentence:[e:925..1082] = [t:925..1082]
+;10)sentence:[e:1083..1216] = [t:1083..1216]
+;11)sentence:[e:1218..1319] = [t:1218..1319]
+;12)sentence:[e:1320..1548] = [t:1320..1548]
+;13)section:[e:1552..1597] = [t:1552..1597]
+
+;section 0 Span:0..40
+;J Biol Chem. 2003 Jan 31;278(5):2837-44.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        (CD:[13..17] 2003) (NNP:[18..21] Jan) (CD:[22..24] 31)
+        (CD:[24..28] ;278) (-LRB-:[28..29] -LRB-) (CD:[29..30] 5)
+        (-RRB-:[30..31] -RRB-) (::[31..32] :) (CD:[32..35] 283)
+        (CD:[35..39] 7-44) (.:[39..40] .)))
+
+;section 1 Span:41..58
+;Epub 2002 Nov 19.
+(SEC
+  (FRAG (NNP:[41..45] Epub) (CD:[46..50] 2002) (NNP:[51..54] Nov)
+        (CD:[55..57] 19) (.:[57..58] .)))
+
+;sentence 2 Span:63..150
+;Protein phosphatase 2A and phosphoprotein SET regulate androgen production by
+; P450c17.
+;[63..85]:substance:"Protein phosphatase 2A"
+;[90..108]:substance:"phosphoprotein SET"
+;[118..126]:substance:"androgen"
+;[142..149]:cyp450:"P450c17"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NN:[63..70] Protein) (NN:[71..82] phosphatase) (NN:[83..85] 2A))
+      (CC:[86..89] and)
+      (NP (NN:[90..104] phosphoprotein) (NN:[105..108] SET)))
+    (VP (VBP:[109..117] regulate)
+      (NP (NN:[118..126] androgen) (NN:[127..137] production))
+      (PP (IN:[138..140] by)
+        (NP (NN:[142..149] P450c17))))
+    (.:[149..150] .)))
+
+;section 3 Span:154..186
+;Pandey AV, Mellon SH, Miller WL.
+(SEC
+  (FRAG (NNP:[154..160] Pandey) (NNP:[161..163] AV) (,:[163..164] ,)
+        (NNP:[165..171] Mellon) (NNP:[172..174] SH) (,:[174..175] ,)
+        (NNP:[176..182] Miller) (NNP:[183..186] WL.)))
+
+;section 4 Span:190..285
+;Department of Pediatrics, University of California, San Francisco, California
+; 94143-0978, USA.
+(SEC
+  (FRAG (NNP:[190..200] Department) (IN:[201..203] of)
+        (NNP:[204..214] Pediatrics) (,:[214..215] ,) (NNP:[216..226] University)
+        (IN:[227..229] of) (NNP:[230..240] California) (,:[240..241] ,)
+        (NNP:[242..245] San) (NNP:[246..255] Francisco) (,:[255..256] ,)
+        (NNP:[257..267] California) (CD:[269..274] 94143) (NNP:[274..279] -0978)
+        (,:[279..280] ,) (NNP:[281..284] USA) (.:[284..285] .)))
+
+;sentence 5 Span:289..428
+;Cytochrome P450c17 catalyzes 17 alpha-hydroxylation needed for cortisol 
+;synthesis and 17,20 lyase activity needed to produce sex steroids.
+;[289..307]:cyp450:"Cytochrome P450c17"
+;[352..360]:substance:"cortisol"
+;[376..387]:substance:"17,20 lyase"
+;[419..427]:substance:"steroids"
+(SENT
+  (S
+    (NP-SBJ (NN:[289..299] Cytochrome) (NN:[300..307] P450c17))
+    (VP (VBZ:[308..317] catalyzes)
+      (NP
+        (NP
+          (NP (CD:[318..320] 17) (NN:[321..340] alpha-hydroxylation))
+          (VP (VBN:[341..347] needed)
+            (NP (-NONE-:[347..347] *))
+            (PP (IN:[348..351] for)
+              (NP (NN:[352..360] cortisol) (NN:[362..371] synthesis)))))
+        (CC:[372..375] and)
+        (NP
+          (NP
+            (NML (CD:[376..378] 17) (,:[378..379] ,) (CD:[379..381] 20)
+                 (NN:[382..387] lyase))
+            (NN:[388..396] activity))
+          (VP (VBN:[397..403] needed)
+            (NP (-NONE-:[403..403] *))
+            (S-PRP
+              (NP-SBJ (-NONE-:[403..403] *))
+              (VP (TO:[404..406] to)
+                (VP (VB:[407..414] produce)
+                  (NP (NN:[415..418] sex) (NNS:[419..427] steroids)))))))))
+    (.:[427..428] .)))
+
+;sentence 6 Span:429..578
+;Serine  phosphorylation of P450c17 specifically increases 17,20 lyase
+;activity, but the  physiological factors regulating this effect remain
+;unknown.
+;[429..435]:substance:"Serine"
+;[456..463]:cyp450:"P450c17"
+;[487..498]:substance:"17,20 lyase"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[429..435] Serine) (NN:[437..452] phosphorylation))
+        (PP (IN:[453..455] of)
+          (NP (NN:[456..463] P450c17))))
+      (ADVP-MNR (RB:[464..476] specifically))
+      (VP (VBZ:[477..486] increases)
+        (NP
+          (NML (CD:[487..489] 17) (,:[489..490] ,) (CD:[490..492] 20)
+               (NN:[493..498] lyase))
+          (NN:[499..507] activity))))
+    (,:[507..508] ,) (CC:[509..512] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[513..516] the) (JJ:[518..531] physiological)
+            (NNS:[532..539] factors))
+        (VP (VBG:[540..550] regulating)
+          (NP (DT:[551..555] this) (NN:[556..562] effect))))
+      (VP (VBP:[563..569] remain)
+        (ADJP-PRD (JJ:[570..577] unknown))))
+    (.:[577..578] .)))
+
+;sentence 7 Span:579..794
+;Treating human  adrenal NCI-H295A cells with the phosphatase inhibitors
+;okadaic acid,  fostriecin, and cantharidin increased 17,20 lyase activity,
+;suggesting  involvement of protein phosphatase 2A (PP2A) or 4 (PP4).
+;[628..639]:substance:"phosphatase"
+;[640..650]:substance:"inhibitors"
+;[651..663]:substance:"okadaic acid"
+;[666..676]:substance:"fostriecin"
+;[682..693]:substance:"cantharidin"
+;[704..715]:substance:"17,20 lyase"
+;[753..775]:substance:"protein phosphatase 2A"
+;[753..772]...[786..787]:substance:"protein phosphatase"..."4"
+;[777..781]:substance:"PP2A"
+;[789..792]:substance:"PP4"
+(SENT
+  (S
+    (S-NOM-SBJ
+      (NP-SBJ (-NONE-:[579..579] *))
+      (VP (VBG:[579..587] Treating)
+        (NP (JJ:[588..593] human) (JJ:[595..602] adrenal)
+            (NN:[603..612] NCI-H295A) (NNS:[613..618] cells))
+        (PP-MNR (IN:[619..623] with)
+          (NP
+            (NP (DT:[624..627] the) (NN:[628..639] phosphatase)
+                (NNS:[640..650] inhibitors))
+            (NP
+              (NP (JJ:[651..658] okadaic) (NN:[659..663] acid))
+              (,:[663..664] ,)
+              (NP (NN:[666..676] fostriecin))
+              (,:[676..677] ,) (CC:[678..681] and)
+              (NP (NN:[682..693] cantharidin)))))))
+    (VP (VBD:[694..703] increased)
+      (NP
+        (NML (CD:[704..706] 17) (,:[706..707] ,) (CD:[707..709] 20)
+             (NN:[710..715] lyase))
+        (NN:[716..724] activity))
+      (,:[724..725] ,)
+      (S-MNR
+        (NP-SBJ (-NONE-:[725..725] *))
+        (VP (VBG:[726..736] suggesting)
+          (NP
+            (NP (NN:[738..749] involvement))
+            (PP (IN:[750..752] of)
+              (NP
+                (NP
+                  (NP
+                    (NML-1 (NN:[753..760] protein) (NN:[761..772] phosphatase))
+                    (NN:[773..775] 2A))
+                  (NP (-LRB-:[776..777] -LRB-) (NN:[777..781] PP2A)
+                      (-RRB-:[781..782] -RRB-)))
+                (CC:[783..785] or)
+                (NP
+                  (NP
+                    (NML-1 (-NONE-:[785..785] *P*))
+                    (CD:[786..787] 4))
+                  (NP (-LRB-:[788..789] -LRB-) (NN:[789..792] PP4)
+                      (-RRB-:[792..793] -RRB-)))))))))
+    (.:[793..794] .)))
+
+;sentence 8 Span:795..924
+;PP2A but not PP4  inhibited 17,20 lyase activity in microsomes from cultured
+;cells, but neither  affected 17 alpha-hydroxylation.
+;[795..799]:substance:"PP2A"
+;[808..811]:substance:"PP4"
+;[823..834]:substance:"17,20 lyase"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[795..799] PP2A))
+        (CONJP (CC:[800..803] but) (RB:[804..807] not))
+        (NP (NN:[808..811] PP4)))
+      (VP (VBD:[813..822] inhibited)
+        (NP
+          (NML (CD:[823..825] 17) (,:[825..826] ,) (CD:[826..828] 20)
+               (NN:[829..834] lyase))
+          (NN:[835..843] activity))
+        (PP-LOC (IN:[844..846] in)
+          (NP
+            (NP (NNS:[847..857] microsomes))
+            (PP (IN:[858..862] from)
+              (NP (VBN:[863..871] cultured) (NNS:[872..877] cells)))))))
+    (,:[877..878] ,) (CC:[879..882] but)
+    (S
+      (NP-SBJ (DT:[883..890] neither))
+      (VP (VBD:[892..900] affected)
+        (NP (CD:[901..903] 17) (NN:[904..923] alpha-hydroxylation))))
+    (.:[923..924] .)))
+
+;sentence 9 Span:925..1082
+;Inhibition of 17,20 lyase activity by PP2A was  concentration-dependent,
+;could be inhibited by okadaic acid, and was restored by  endogenous protein
+;kinases.
+;[939..950]:substance:"17,20 lyase"
+;[963..967]:substance:"PP2A"
+;[1020..1032]:substance:"okadaic acid"
+;[1066..1081]:substance:"protein kinases"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[925..935] Inhibition))
+      (PP (IN:[936..938] of)
+        (NP
+          (NML (CD:[939..941] 17) (,:[941..942] ,) (CD:[942..944] 20)
+               (NN:[945..950] lyase))
+          (NN:[951..959] activity)))
+      (PP (IN:[960..962] by)
+        (NP (NN:[963..967] PP2A))))
+    (VP
+      (VP (VBD:[968..971] was)
+        (ADJP-PRD (NN:[973..986] concentration) (HYPH:[986..987] -)
+                  (JJ:[987..996] dependent)))
+      (,:[996..997] ,)
+      (VP (MD:[998..1003] could)
+        (VP (VB:[1004..1006] be)
+          (VP (VBN:[1007..1016] inhibited)
+            (NP-1 (-NONE-:[1016..1016] *))
+            (PP (IN:[1017..1019] by)
+              (NP-LGS (JJ:[1020..1027] okadaic) (NN:[1028..1032] acid))))))
+      (,:[1032..1033] ,) (CC:[1034..1037] and)
+      (VP (VBD:[1038..1041] was)
+        (VP (VBN:[1042..1050] restored)
+          (NP-1 (-NONE-:[1050..1050] *))
+          (PP (IN:[1051..1053] by)
+            (NP-LGS (JJ:[1055..1065] endogenous)
+               (NN:[1066..1073] protein) (NNS:[1074..1081] kinases))))))
+    (.:[1081..1082] .)))
+
+;sentence 10 Span:1083..1216
+;PP2A but not PP4 coimmunoprecipitated with P450c17,  and suppression of PP2A
+;by small interfering RNA increased 17,20 lyase activity.
+;[1083..1087]:substance:"PP2A"
+;[1096..1099]:substance:"PP4"
+;[1126..1133]:cyp450:"P450c17"
+;[1155..1159]:substance:"PP2A"
+;[1181..1184]:substance:"RNA"
+;[1195..1206]:substance:"17,20 lyase"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1083..1087] PP2A)
+        (CONJP (CC:[1088..1091] but) (RB:[1092..1095] not))
+        (NN:[1096..1099] PP4))
+      (VP (VBD:[1100..1120] coimmunoprecipitated)
+        (NP (-NONE-:[1120..1120] *))
+        (PP-CLR (IN:[1121..1125] with)
+          (NP (NN:[1126..1133] P450c17)))))
+    (,:[1133..1134] ,) (CC:[1136..1139] and)
+    (S
+      (NP-SBJ
+        (NP (NN:[1140..1151] suppression))
+        (PP (IN:[1152..1154] of)
+          (NP (NN:[1155..1159] PP2A)))
+        (PP (IN:[1160..1162] by)
+          (NP (JJ:[1163..1168] small) (VBG:[1169..1180] interfering)
+              (NN:[1181..1184] RNA))))
+      (VP (VBD:[1185..1194] increased)
+        (NP
+          (NML (CD:[1195..1197] 17) (,:[1197..1198] ,) (CD:[1198..1200] 20)
+               (NN:[1201..1206] lyase))
+          (NN:[1207..1215] activity))))
+    (.:[1215..1216] .)))
+
+;sentence 11 Span:1218..1319
+;Phosphoprotein SET found in adrenals inhibited PP2A, but not PP4, and
+;fostered  17,20 lyase activity.
+;[1218..1236]:substance:"Phosphoprotein SET"
+;[1265..1269]:substance:"PP2A"
+;[1279..1282]:substance:"PP4"
+;[1298..1309]:substance:"17,20 lyase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1218..1232] Phosphoprotein) (NN:[1233..1236] SET))
+      (VP (VBN:[1237..1242] found)
+        (NP (-NONE-:[1242..1242] *))
+        (PP-LOC (IN:[1243..1245] in)
+          (NP (NNS:[1246..1254] adrenals)))))
+    (VP
+      (VP (VBD:[1255..1264] inhibited)
+        (NP (NN:[1265..1269] PP2A) (,:[1269..1270] ,)
+          (CONJP (CC:[1271..1274] but) (RB:[1275..1278] not))
+          (NN:[1279..1282] PP4)))
+      (,:[1282..1283] ,) (CC:[1284..1287] and)
+      (VP (VBD:[1288..1296] fostered)
+        (NP
+          (NML (CD:[1298..1300] 17) (,:[1300..1301] ,) (CD:[1301..1303] 20)
+               (NN:[1304..1309] lyase))
+          (NN:[1310..1318] activity))))
+    (.:[1318..1319] .)))
+
+;sentence 12 Span:1320..1548
+;The identification of PP2A and SET as post-translational  regulators of
+;androgen biosynthesis suggests potential additional mechanisms  contributing
+;to adrenarche and hyperandrogenic disorders such as polycystic  ovary
+;syndrome.
+;[1342..1346]:substance:"PP2A"
+;[1351..1354]:substance:"SET"
+;[1378..1388]:substance:"regulators"
+;[1392..1400]:substance:"androgen"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1320..1323] The) (NN:[1324..1338] identification))
+      (PP (IN:[1339..1341] of)
+        (NP (NN:[1342..1346] PP2A) (CC:[1347..1350] and) (NN:[1351..1354] SET)))
+      (PP (IN:[1355..1357] as)
+        (NP
+          (NP
+            (ADJP (AFX:[1358..1362] post) (HYPH:[1362..1363] -)
+                  (JJ:[1363..1376] translational))
+            (NNS:[1378..1388] regulators))
+          (PP (IN:[1389..1391] of)
+            (NP (NN:[1392..1400] androgen) (NN:[1401..1413] biosynthesis))))))
+    (VP (VBZ:[1414..1422] suggests)
+      (NP
+        (NP (JJ:[1423..1432] potential) (JJ:[1433..1443] additional)
+            (NNS:[1444..1454] mechanisms))
+        (VP (VBG:[1456..1468] contributing)
+          (PP-CLR (TO:[1469..1471] to)
+            (NP
+              (NP (NN:[1472..1482] adrenarche))
+              (CC:[1483..1486] and)
+              (NP
+                (NP (JJ:[1487..1502] hyperandrogenic)
+                    (NNS:[1503..1512] disorders))
+                (PP (JJ:[1513..1517] such)
+                  (PP (IN:[1518..1520] as)
+                    (NP (JJ:[1521..1531] polycystic) (NN:[1533..1538] ovary)
+                        (NN:[1539..1547] syndrome))))))))))
+    (.:[1547..1548] .)))
+
+;section 13 Span:1552..1597
+;PMID: 12444089 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1552..1556] PMID) (::[1556..1557] :) (CD:[1558..1566] 12444089)
+        (NN:[1567..1568] -LSB-) (NNP:[1568..1574] PubMed) (::[1575..1576] -)
+        (NN:[1577..1584] indexed) (IN:[1585..1588] for)
+        (NNP:[1589..1597] MEDLINE-RSB-)))

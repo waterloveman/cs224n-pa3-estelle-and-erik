@@ -1,0 +1,187 @@
+;PMID: 9130517
+;source_file_1222.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..53] = [t:0..53]
+;1)sentence:[e:58..119] = [t:58..119]
+;2)section:[e:123..176] = [t:123..176]
+;3)section:[e:180..253] = [t:180..253]
+;4)sentence:[e:257..447] = [t:257..447]
+;5)sentence:[e:448..692] = [t:448..692]
+;6)sentence:[e:693..742] = [t:693..742]
+;7)section:[e:746..790] = [t:746..790]
+
+;section 0 Span:0..53
+;Int Arch Allergy Immunol  1997 May-Jul;113(1-3):184-6
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..8] Arch) (NNP:[9..16] Allergy)
+        (NNP:[17..24] Immunol) (CD:[26..30] 1997) (MD:[31..34] May)
+        (RB:[34..35] -) (CD:[35..43] Jul;113-LRB-) (CD:[43..44] 1)
+        (HYPH:[44..45] -) (CD:[45..46] 3) (-RRB-:[46..47] -RRB-)
+        (CD:[47..51] :184) (HYPH:[51..52] -) (CD:[52..53] 6)))
+
+;sentence 1 Span:58..119
+;c-kit mutation in a population of patients with mastocytosis.
+;[58..63]:gene-rna:"c-kit"
+;[106..118]:malignancy:"mastocytosis"
+(SENT
+  (NP-HLN
+    (NP (NN:[58..63] c-kit) (NN:[64..72] mutation))
+    (PP (IN:[73..75] in)
+      (NP
+        (NP (DT:[76..77] a) (NN:[78..88] population))
+        (PP (IN:[89..91] of)
+          (NP
+            (NP (NNS:[92..100] patients))
+            (PP (IN:[101..105] with)
+              (NP (NN:[106..118] mastocytosis)))))))
+    (.:[118..119] .)))
+
+;section 2 Span:123..176
+;Nagata H, Okada T, Worobec AS, Semere T, Metcalfe DD.
+(SEC
+  (FRAG (NNP:[123..129] Nagata) (NNP:[130..131] H) (VBD:[131..132] ,)
+        (NNP:[133..138] Okada) (NNP:[139..140] T) (,:[140..141] ,)
+        (NNP:[142..149] Worobec) (NNP:[150..152] AS) (VBD:[152..153] ,)
+        (NNP:[154..160] Semere) (NNP:[161..162] T) (,:[162..163] ,)
+        (NNP:[164..172] Metcalfe) (NNP:[173..176] DD.)))
+
+;section 3 Span:180..253
+;Department of Otolaryngology, Chiba University School of Medicine, Japan.
+(SEC
+  (FRAG (NNP:[180..190] Department) (IN:[191..193] of)
+        (NNP:[194..208] Otolaryngology) (,:[208..209] ,) (NNP:[210..215] Chiba)
+        (NNP:[216..226] University) (NNP:[227..233] School) (IN:[234..236] of)
+        (NNP:[237..245] Medicine) (,:[245..246] ,) (NNP:[247..252] Japan)
+        (.:[252..253] .)))
+
+;sentence 4 Span:257..447
+;The c-kit Asp816Val activating mutation is found in all patients with 
+;mastocytosis with an associated hematologic disorder, and at least in a
+;subset  of patients with indolent mastocytosis.
+;[261..266]:gene-rna:"c-kit"
+;[267..270]:variation-state-original:"Asp"
+;[270..273]:variation-location:"816"
+;[273..276]:variation-state-altered:"Val"
+;[288..296]:variation-event:"mutation"
+;[328..340]:malignancy:"mastocytosis"
+;[425..446]:malignancy:"indolent mastocytosis"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[257..260] The)
+      (NML (NN:[261..266] c-kit) (NN:[267..270] Asp) (CD:[270..273] 816)
+           (NN:[273..276] Val))
+      (VBG:[277..287] activating) (NN:[288..296] mutation))
+    (VP (VBZ:[297..299] is)
+      (VP (VBN:[300..305] found)
+        (NP-1 (-NONE-:[305..305] *))
+        (PP-LOC
+          (PP (IN:[306..308] in)
+            (NP
+              (NP (DT:[309..312] all) (NNS:[313..321] patients))
+              (PP (IN:[322..326] with)
+                (NP (NN:[328..340] mastocytosis)))
+              (PP (IN:[341..345] with)
+                (NP (DT:[346..348] an) (VBN:[349..359] associated)
+                    (JJ:[360..371] hematologic) (NN:[372..380] disorder)))))
+          (,:[380..381] ,) (CC:[382..385] and)
+          (PP
+            (ADVP (IN:[386..388] at) (JJS:[389..394] least))
+            (IN:[395..397] in)
+            (NP
+              (NP (DT:[398..399] a) (NN:[400..406] subset))
+              (PP (IN:[408..410] of)
+                (NP
+                  (NP (NNS:[411..419] patients))
+                  (PP (IN:[420..424] with)
+                    (NP (JJ:[425..433] indolent) (NN:[434..446] mastocytosis))))))))))
+    (.:[446..447] .)))
+
+;sentence 5 Span:448..692
+;The case of an 11-month-old child is  presented who was categorized as having
+;indolent mastocytosis, and where the  Asp816Val mutation was identified in
+;lesional skin, but not in bone marrow or in  peripheral blood mononuclear
+;cell populations.
+;[526..547]:malignancy:"indolent mastocytosis"
+;[564..567]:variation-state-original:"Asp"
+;[567..570]:variation-location:"816"
+;[570..573]:variation-state-altered:"Val"
+;[574..582]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ-6
+      (NP (DT:[448..451] The) (NN:[452..456] case))
+      (PP (IN:[457..459] of)
+        (NP
+          (NP (DT:[460..462] an)
+            (ADJP
+              (NML (CD:[463..465] 11) (HYPH:[465..466] -) (NN:[466..471] month))
+              (HYPH:[471..472] -) (JJ:[472..475] old))
+            (NN:[476..481] child))
+          (SBAR-1 (-NONE-:[481..481] *ICH*)))))
+    (VP (VBZ:[482..484] is)
+      (VP (VBN:[486..495] presented)
+        (NP-6 (-NONE-:[495..495] *))
+        (SBAR-1
+          (SBAR
+            (WHNP-2 (WP:[496..499] who))
+            (S
+              (NP-SBJ-2 (-NONE-:[499..499] *T*))
+              (VP (VBD:[500..503] was)
+                (VP (VBN:[504..515] categorized)
+                  (NP-2 (-NONE-:[515..515] *))
+                  (PP (IN:[516..518] as)
+                    (S-NOM
+                      (NP-SBJ (-NONE-:[518..518] *))
+                      (VP (VBG:[519..525] having)
+                        (NP (JJ:[526..534] indolent)
+                            (NN:[535..547] mastocytosis)))))))))
+          (,:[547..548] ,) (CC:[549..552] and)
+          (SBAR
+            (WHADVP-5 (WRB:[553..558] where))
+            (S
+              (NP-SBJ (DT:[559..562] the) (NN:[564..567] Asp)
+                      (CD:[567..570] 816) (NN:[570..573] Val)
+                      (NN:[574..582] mutation))
+              (VP (VBD:[583..586] was)
+                (VP
+                  (VP (VBN:[587..597] identified)
+                    (PP-LOC=3 (IN:[598..600] in)
+                      (NP (JJ:[601..609] lesional) (NN:[610..614] skin)))
+                    (ADVP-5 (-NONE-:[614..614] *T*)))
+                  (,:[614..615] ,) (CC:[616..619] but)
+                  (VP (RB:[620..623] not)
+                    (PP-LOC=3
+                      (PP (IN:[624..626] in)
+                        (NP (NN:[627..631] bone) (NN:[632..638] marrow)
+                          (NML-4 (-NONE-:[638..638] *RNR*))))
+                      (CC:[639..641] or)
+                      (PP (IN:[642..644] in)
+                        (NP
+                          (NML (JJ:[646..656] peripheral) (NN:[657..662] blood))
+                          (NML-4 (-NONE-:[662..662] *RNR*))))
+                      (NML-4 (JJ:[663..674] mononuclear) (NN:[675..679] cell)
+                             (NNS:[680..691] populations)))))))))))
+    (.:[691..692] .)))
+
+;sentence 6 Span:693..742
+;The significance of these  findings is discussed.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[693..696] The) (NN:[697..709] significance))
+      (PP (IN:[710..712] of)
+        (NP (DT:[713..718] these) (NNS:[720..728] findings))))
+    (VP (VBZ:[729..731] is)
+      (VP (VBN:[732..741] discussed)
+        (NP-1 (-NONE-:[741..741] *))))
+    (.:[741..742] .)))
+
+;section 7 Span:746..790
+;PMID: 9130517 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[746..750] PMID) (::[750..751] :) (CD:[752..759] 9130517)
+        (IN:[760..761] -LSB-) (NNP:[761..767] PubMed) (HYPH:[768..769] -)
+        (JJ:[770..777] indexed) (IN:[778..781] for)
+        (NNP:[782..790] MEDLINE-RSB-)))

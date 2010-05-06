@@ -1,0 +1,485 @@
+;PMID: 8483882
+;source_file_1228.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:37..85] = [t:37..85]
+;2)section:[e:89..120] = [t:89..120]
+;3)section:[e:124..179] = [t:124..179]
+;4)sentence:[e:183..292] = [t:183..292]
+;5)sentence:[e:293..384] = [t:293..384]
+;6)sentence:[e:385..696] = [t:385..696]
+;7)sentence:[e:697..893] = [t:697..893]
+;8)sentence:[e:894..1045] = [t:894..1045]
+;9)sentence:[e:1046..1174] = [t:1046..1174]
+;10)sentence:[e:1175..1239] = [t:1175..1239]
+;11)sentence:[e:1240..1347] = [t:1240..1347]
+;12)sentence:[e:1348..1464] = [t:1348..1464]
+;13)sentence:[e:1465..1589] = [t:1465..1589]
+;14)sentence:[e:1591..1803] = [t:1591..1803]
+;15)section:[e:1807..1851] = [t:1807..1851]
+
+;section 0 Span:0..32
+;Mod Pathol  1993 Mar;6(2):129-32
+(SEC
+  (FRAG (NNP:[0..3] Mod) (NNP:[4..10] Pathol) (CD:[12..16] 1993)
+        (CC:[17..23] Mar;6-LRB-) (CD:[23..24] 2) (-RRB-:[24..25] -RRB-)
+        (CD:[25..29] :129) (::[29..30] -) (CD:[30..32] 32)))
+
+;sentence 1 Span:37..85
+;H-ras-1 point mutations in soft tissue sarcomas.
+;[37..44]:gene-rna:"H-ras-1"
+;[45..60]:variation-type:"point mutations"
+;[64..84]:malignancy:"soft tissue sarcomas"
+(SENT
+  (NP-HLN
+    (NP (NN:[37..44] H-ras-1)
+       (NN:[45..50] point) (NNS:[51..60] mutations))
+    (PP (IN:[61..63] in)
+      (NP
+        (NML (JJ:[64..68] soft) (NN:[69..75] tissue))
+        (NNS:[76..84] sarcomas)))
+    (.:[84..85] .)))
+
+;section 2 Span:89..120
+;Wilke W, Maillet M, Robinson R.
+(SEC
+  (FRAG (NNP:[89..94] Wilke) (NNP:[95..96] W) (,:[96..97] ,)
+        (NNP:[98..105] Maillet) (NNP:[106..108] M,) (NNP:[109..117] Robinson)
+        (NNP:[118..120] R.)))
+
+;section 3 Span:124..179
+;Department of Pathology, University of Iowa, Iowa City.
+(SEC
+  (FRAG (NNP:[124..134] Department) (IN:[135..137] of)
+        (NNP:[138..147] Pathology) (,:[147..148] ,) (NNP:[149..159] University)
+        (IN:[160..162] of) (NNP:[163..167] Iowa) (,:[167..168] ,)
+        (NNP:[169..173] Iowa) (NNP:[174..178] City) (.:[178..179] .)))
+
+;sentence 4 Span:183..292
+;The H-ras-1 protooncogene is activated by single base substitutions occurring
+;in  either codon 12, 13, or 61.
+;[187..194]:gene-rna:"H-ras-1"
+;[225..250]:variation-type:"single base substitutions"
+;[272..280]:variation-location:"codon 12"
+;[272..277]...[289..291]:variation-location:"codon"..."61"
+;[272..277]...[282..284]:variation-location:"codon"..."13"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[183..186] The) (NN:[187..194] H-ras-1)
+              (NN:[195..208] protooncogene))
+    (VP (VBZ:[209..211] is)
+      (VP (VBN:[212..221] activated)
+        (NP-1 (-NONE-:[221..221] *))
+        (PP (IN:[222..224] by)
+          (NP-LGS
+            (NP
+              (NML (JJ:[225..231] single) (NN:[232..236] base))
+              (NNS:[237..250] substitutions))
+            (VP (VBG:[251..260] occurring)
+              (PP-LOC (IN:[261..263] in)
+                (NP (CC:[265..271] either)
+                  (NP
+                    (NML-2 (NN:[272..277] codon))
+                    (CD:[278..280] 12))
+                  (,:[280..281] ,)
+                  (NP
+                    (NML-2 (-NONE-:[281..281] *P*))
+                    (CD:[282..284] 13))
+                  (,:[284..285] ,) (CC:[286..288] or)
+                  (NP
+                    (NML-2 (-NONE-:[288..288] *P*))
+                    (CD:[289..291] 61)))))))))
+    (.:[291..292] .)))
+
+;sentence 5 Span:293..384
+;These mutations have been described with varying  frequencies in several
+;human tumor types.
+;[299..308]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[293..298] These) (NNS:[299..308] mutations))
+    (VP (VBP:[309..313] have)
+      (VP (VBN:[314..318] been)
+        (VP (VBN:[319..328] described)
+          (NP-1 (-NONE-:[328..328] *))
+          (PP (IN:[329..333] with)
+            (NP
+              (NP (VBG:[334..341] varying) (NNS:[343..354] frequencies))
+              (PP (IN:[355..357] in)
+                (NP (JJ:[358..365] several) (JJ:[366..371] human)
+                    (NN:[372..377] tumor) (NNS:[378..383] types))))))))
+    (.:[383..384] .)))
+
+;sentence 6 Span:385..696
+;Since ras oncogenes were first  discovered as the transforming sequences of
+;Harvey and Kirsten murine sarcoma  viruses (which also contain activating
+;point mutations compared to the  homologous cellular sequences), we wished to
+;investigate the possibility that  ras mutations might also occur in human
+;sarcomas.
+;[391..394]:gene-rna:"ras"
+;[535..550]:variation-type:"point mutations"
+;[647..650]:gene-rna:"ras"
+;[687..695]:malignancy:"sarcomas"
+(SENT
+  (S
+    (SBAR-PRP (IN:[385..390] Since)
+      (S
+        (NP-SBJ-1 (NN:[391..394] ras) (NNS:[395..404] oncogenes))
+        (VP (VBD:[405..409] were)
+          (VP
+            (ADVP (RB:[410..415] first))
+            (VBN:[417..427] discovered)
+            (NP-1 (-NONE-:[427..427] *))
+            (PP (IN:[428..430] as)
+              (NP
+                (NP
+                  (NP (DT:[431..434] the) (VBG:[435..447] transforming)
+                      (NNS:[448..457] sequences))
+                  (PP (IN:[458..460] of)
+                    (NP
+                      (NP
+                        (NML (NNP:[461..467] Harvey) (CC:[468..471] and)
+                             (NNP:[472..479] Kirsten))
+                        (JJ:[480..486] murine) (NN:[487..494] sarcoma)
+                         (NNS:[496..503] viruses))
+                      (-LRB-:[504..505] -LRB-))))
+                (SBAR
+                  (WHNP-2 (WDT:[505..510] which))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[510..510] *T*))
+                    (VP
+                      (ADVP (RB:[511..515] also))
+                      (VBP:[516..523] contain)
+                      (NP
+                        (NP (VBG:[524..534] activating)
+                           (NN:[535..540] point) (NNS:[541..550] mutations))
+                        (VP (VBN:[551..559] compared)
+                          (NP (-NONE-:[559..559] *))
+                          (PP-CLR (TO:[560..562] to)
+                            (NP (DT:[563..566] the) (JJ:[568..578] homologous)
+                                (JJ:[579..587] cellular)
+                                (NNS:[588..597] sequences)))
+                          (-RRB-:[597..598] -RRB-))))))))))))
+    (,:[598..599] ,)
+    (NP-SBJ (PRP:[600..602] we))
+    (VP (VBD:[603..609] wished)
+      (S
+        (NP-SBJ (-NONE-:[609..609] *))
+        (VP (TO:[610..612] to)
+          (VP (VB:[613..624] investigate)
+            (NP
+              (NP (DT:[625..628] the) (NN:[629..640] possibility))
+              (SBAR (IN:[641..645] that)
+                (S
+                  (NP-SBJ (NN:[647..650] ras) (NNS:[651..660] mutations))
+                  (VP (MD:[661..666] might)
+                    (ADVP (RB:[667..671] also))
+                    (VP (VB:[672..677] occur)
+                      (PP-LOC (IN:[678..680] in)
+                        (NP (JJ:[681..686] human) (NNS:[687..695] sarcomas))))))))))))
+    (.:[695..696] .)))
+
+;sentence 7 Span:697..893
+;We extracted DNA from six  malignant fibrous histiocytomas (MFH), three
+;embryonal rhabdomyosarcomas (ER),  one alveolar rhabdomyosarcoma, one
+;pleomorphic rhabdomyosarcoma, and one  leiomyosarcoma.
+;[724..755]:malignancy:"malignant fibrous histiocytomas"
+;[757..760]:malignancy:"MFH"
+;[769..796]:malignancy:"embryonal rhabdomyosarcomas"
+;[798..800]:malignancy:"ER"
+;[808..833]:malignancy:"alveolar rhabdomyosarcoma"
+;[839..867]:malignancy:"pleomorphic rhabdomyosarcoma"
+;[878..892]:malignancy:"leiomyosarcoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[697..699] We))
+    (VP (VBD:[700..709] extracted)
+      (NP (NN:[710..713] DNA))
+      (PP (IN:[714..718] from)
+        (NP
+          (NP (CD:[719..722] six)
+            (NML
+              (NML (JJ:[724..733] malignant) (JJ:[734..741] fibrous)
+                   (NNS:[742..755] histiocytomas))
+              (NML (-LRB-:[756..757] -LRB-) (NN:[757..760] MFH)
+                   (-RRB-:[760..761] -RRB-))))
+          (,:[761..762] ,)
+          (NP (CD:[763..768] three)
+            (NML
+              (NML (JJ:[769..778] embryonal) (NNS:[779..796] rhabdomyosarcomas))
+              (NML (-LRB-:[797..798] -LRB-) (NN:[798..800] ER)
+                   (-RRB-:[800..801] -RRB-))))
+          (,:[801..802] ,)
+          (NP (CD:[804..807] one)
+             (JJ:[808..816] alveolar) (NN:[817..833] rhabdomyosarcoma))
+          (,:[833..834] ,)
+          (NP (CD:[835..838] one)
+             (JJ:[839..850] pleomorphic) (NN:[851..867] rhabdomyosarcoma))
+          (,:[867..868] ,) (CC:[869..872] and)
+          (NP (CD:[873..876] one) (NN:[878..892] leiomyosarcoma)))))
+    (.:[892..893] .)))
+
+;sentence 8 Span:894..1045
+;The DNA from regions flanking codons 12/13 and codon 61 was  amplified by the
+;polymerase chain reaction and sequenced with an automated DNA  sequencer.
+;[907..936]:variation-location:"regions flanking codons 12/13"
+;[941..949]:variation-location:"codon 61"
+;[972..982]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[894..897] The) (NN:[898..901] DNA))
+      (PP (IN:[902..906] from)
+        (NP
+          (NP (NNS:[907..914] regions))
+          (VP (VBG:[915..923] flanking)
+            (NP
+              (NP
+                (NP
+                  (NML-2 (NNS:[924..930] codons))
+                  (CD:[931..933] 12))
+                (SYM:[933..934] /)
+                (NP
+                  (NML-2 (-NONE-:[934..934] *P*))
+                  (NP (CD:[934..936] 13))))
+              (CC:[937..940] and)
+              (NP (NN:[941..946] codon) (CD:[947..949] 61)))))))
+    (VP (VBD:[950..953] was)
+      (VP
+        (VP (VBN:[955..964] amplified)
+          (NP-1 (-NONE-:[964..964] *))
+          (PP-MNR (IN:[965..967] by)
+            (NP (DT:[968..971] the) (NN:[972..982] polymerase)
+                (NN:[983..988] chain) (NN:[989..997] reaction))))
+        (CC:[998..1001] and)
+        (VP (VBN:[1002..1011] sequenced)
+          (NP-1 (-NONE-:[1011..1011] *))
+          (PP-MNR (IN:[1012..1016] with)
+            (NP (DT:[1017..1019] an) (VBN:[1020..1029] automated)
+                (NN:[1030..1033] DNA) (NN:[1035..1044] sequencer))))))
+    (.:[1044..1045] .)))
+
+;sentence 9 Span:1046..1174
+;As controls, we amplified and sequenced normal DNA (placenta) and DNA  with
+;known point mutations (T24 bladder carcinoma cells).
+;[1128..1143]:variation-type:"point mutations"
+;[1145..1172]:malignancy:"T24 bladder carcinoma cells"
+(SENT
+  (S
+    (PP (IN:[1046..1048] As)
+      (NP (NNS:[1049..1057] controls)))
+    (,:[1057..1058] ,)
+    (NP-SBJ (PRP:[1059..1061] we))
+    (VP (VBD:[1062..1071] amplified) (CC:[1072..1075] and)
+        (VBD:[1076..1085] sequenced)
+      (NP
+        (NP (JJ:[1086..1092] normal) (NN:[1093..1096] DNA)
+          (PRN (-LRB-:[1097..1098] -LRB-)
+            (NP (NN:[1098..1106] placenta))
+            (-RRB-:[1106..1107] -RRB-)))
+        (CC:[1108..1111] and)
+        (NP
+          (NP (NN:[1112..1115] DNA))
+          (PP (IN:[1117..1121] with)
+            (NP (VBN:[1122..1127] known)
+               (NN:[1128..1133] point) (NNS:[1134..1143] mutations)
+              (PRN (-LRB-:[1144..1145] -LRB-)
+                (NP (NN:[1145..1148] T24) (NN:[1149..1156] bladder)
+                    (NN:[1157..1166] carcinoma) (NNS:[1167..1172] cells))
+                (-RRB-:[1172..1173] -RRB-)))))))
+    (.:[1173..1174] .)))
+
+;sentence 10 Span:1175..1239
+;We found three cases  with mutations, all occurring in codon 12.
+;[1202..1211]:variation-event:"mutations"
+;[1230..1238]:variation-location:"codon 12"
+(SENT
+  (S
+    (S
+      (NP-SBJ (PRP:[1175..1177] We))
+      (VP (VBD:[1178..1183] found)
+        (NP
+          (NP (CD:[1184..1189] three) (NNS:[1190..1195] cases))
+          (PP (IN:[1197..1201] with)
+            (NP (NNS:[1202..1211] mutations))))))
+    (,:[1211..1212] ,)
+    (S
+      (NP-SBJ (DT:[1213..1216] all))
+      (VP (VBG:[1217..1226] occurring)
+        (PP-LOC (IN:[1227..1229] in)
+          (NP (NN:[1230..1235] codon) (CD:[1236..1238] 12)))))
+    (.:[1238..1239] .)))
+
+;sentence 11 Span:1240..1347
+;One ER showed a G-to-T mutation in  the second position of codon 12 (coding
+;for valine instead of glycine).
+;[1244..1246]:malignancy:"ER"
+;[1256..1257]:variation-state-original:"G"
+;[1261..1262]:variation-state-altered:"T"
+;[1263..1271]:variation-event:"mutation"
+;[1280..1307]:variation-location:"second position of codon 12"
+;[1320..1326]:variation-state-altered:"valine"
+;[1338..1345]:variation-state-original:"glycine"
+(SENT
+  (S
+    (NP-SBJ (CD:[1240..1243] One) (NN:[1244..1246] ER))
+    (VP (VBD:[1247..1253] showed)
+      (NP (DT:[1254..1255] a)
+        (NML
+          (NML (NN:[1256..1257] G) (HYPH:[1257..1258] -))
+          (PP (TO:[1258..1260] to) (HYPH:[1260..1261] -)
+            (NP (NN:[1261..1262] T))))
+        (NN:[1263..1271] mutation))
+      (PP-LOC (IN:[1272..1274] in)
+        (NP
+          (NP (DT:[1276..1279] the) (JJ:[1280..1286] second)
+              (NN:[1287..1295] position))
+          (PP (IN:[1296..1298] of)
+            (NP (NN:[1299..1304] codon) (CD:[1305..1307] 12)))
+          (PRN (-LRB-:[1308..1309] -LRB-)
+            (VP (VBG:[1309..1315] coding)
+              (PP (IN:[1316..1319] for)
+                (NP (NN:[1320..1326] valine)))
+              (ADVP (RB:[1327..1334] instead)
+                (PP (IN:[1335..1337] of)
+                  (NP (NN:[1338..1345] glycine)))))
+            (-RRB-:[1345..1346] -RRB-)))))
+    (.:[1346..1347] .)))
+
+;sentence 12 Span:1348..1464
+;Two MFHs  showed G-to-A mutations in the second position of codon 12 (coding
+;for aspartic  acid instead of glycine).
+;[1352..1356]:malignancy:"MFHs"
+;[1365..1366]:variation-state-original:"G"
+;[1370..1371]:variation-state-altered:"A"
+;[1372..1381]:variation-event:"mutations"
+;[1389..1416]:variation-location:"second position of codon 12"
+;[1429..1437]:variation-state-altered:"aspartic"
+;[1455..1462]:variation-state-original:"glycine"
+(SENT
+  (S
+    (NP-SBJ (CD:[1348..1351] Two) (NNS:[1352..1356] MFHs))
+    (VP (VBD:[1358..1364] showed)
+      (NP
+        (NP
+          (NML
+            (NML (NN:[1365..1366] G) (HYPH:[1366..1367] -))
+            (PP (TO:[1367..1369] to) (HYPH:[1369..1370] -)
+              (NP (NN:[1370..1371] A))))
+          (NNS:[1372..1381] mutations))
+        (PP-LOC (IN:[1382..1384] in)
+          (NP
+            (NP (DT:[1385..1388] the) (JJ:[1389..1395] second)
+                (NN:[1396..1404] position))
+            (PP (IN:[1405..1407] of)
+              (NP (NN:[1408..1413] codon) (CD:[1414..1416] 12)))
+            (PRN (-LRB-:[1417..1418] -LRB-)
+              (VP (VBG:[1418..1424] coding)
+                (PP (IN:[1425..1428] for)
+                  (NP (JJ:[1429..1437] aspartic) (NN:[1439..1443] acid)))
+                (ADVP (RB:[1444..1451] instead)
+                  (PP (IN:[1452..1454] of)
+                    (NP (NN:[1455..1462] glycine)))))
+              (-RRB-:[1462..1463] -RRB-))))))
+    (.:[1463..1464] .)))
+
+;sentence 13 Span:1465..1589
+;Although a limited number of cases were sampled, we  conclude that study of
+;H-ras-1 mutations may be relevant to MFH and ER.
+;[1541..1548]:gene-rna:"H-ras-1"
+;[1578..1581]:malignancy:"MFH"
+;[1586..1588]:malignancy:"ER"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1465..1473] Although)
+      (S
+        (NP-SBJ-1
+          (NP (DT:[1474..1475] a) (VBN:[1476..1483] limited)
+              (NN:[1484..1490] number))
+          (PP (IN:[1491..1493] of)
+            (NP (NNS:[1494..1499] cases))))
+        (VP (VBD:[1500..1504] were)
+          (VP (VBN:[1505..1512] sampled)
+            (NP-1 (-NONE-:[1512..1512] *))))))
+    (,:[1512..1513] ,)
+    (NP-SBJ (PRP:[1514..1516] we))
+    (VP (VBP:[1518..1526] conclude)
+      (SBAR (IN:[1527..1531] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1532..1537] study))
+            (PP (IN:[1538..1540] of)
+              (NP (NN:[1541..1548] H-ras-1) (NNS:[1549..1558] mutations))))
+          (VP (MD:[1559..1562] may)
+            (VP (VB:[1563..1565] be)
+              (ADJP-PRD (JJ:[1566..1574] relevant)
+                (PP (TO:[1575..1577] to)
+                  (NP (NN:[1578..1581] MFH) (CC:[1582..1585] and)
+                      (NN:[1586..1588] ER)))))))))
+    (.:[1588..1589] .)))
+
+;sentence 14 Span:1591..1803
+;Additional studies of N and K-ras mutations as well as more cases
+;investigating  H-ras will be required before we can ascertain the
+;significance of ras mutations  in the oncogenesis of human soft tissue
+;sarcomas.
+;[1613..1614]...[1621..1624]:gene-rna:"N"..."ras"
+;[1619..1624]:gene-rna:"K-ras"
+;[1672..1677]:gene-rna:"H-ras"
+;[1739..1742]:gene-rna:"ras"
+;[1782..1802]:malignancy:"soft tissue sarcomas"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP (JJ:[1591..1601] Additional) (NNS:[1602..1609] studies))
+        (PP (IN:[1610..1612] of)
+          (NP
+            (NP (NN:[1613..1614] N)
+              (NML-1 (-NONE-:[1614..1614] *P*))
+              (NML-2 (-NONE-:[1614..1614] *P*)))
+            (CC:[1615..1618] and)
+            (NP
+               (NN:[1619..1620] K) (HYPH:[1620..1621] -)
+              (NML-1 (NN:[1621..1624] ras))
+              (NML-2 (NNS:[1625..1634] mutations))))))
+      (CONJP (RB:[1635..1637] as) (RB:[1638..1642] well) (IN:[1643..1645] as))
+      (NP
+        (NP (JJR:[1646..1650] more) (NNS:[1651..1656] cases))
+        (VP (VBG:[1657..1670] investigating)
+          (NP (NN:[1672..1677] H-ras)))))
+    (VP (MD:[1678..1682] will)
+      (VP (VB:[1683..1685] be)
+        (VP (VBN:[1686..1694] required)
+          (NP-3 (-NONE-:[1694..1694] *))
+          (SBAR-TMP (IN:[1695..1701] before)
+            (S
+              (NP-SBJ (PRP:[1702..1704] we))
+              (VP (MD:[1705..1708] can)
+                (VP (VB:[1709..1718] ascertain)
+                  (NP
+                    (NP (DT:[1719..1722] the) (NN:[1723..1735] significance))
+                    (PP (IN:[1736..1738] of)
+                      (NP
+                        (NP (NN:[1739..1742] ras) (NNS:[1743..1752] mutations))
+                        (PP (IN:[1754..1756] in)
+                          (NP
+                            (NP (DT:[1757..1760] the)
+                                (NN:[1761..1772] oncogenesis))
+                            (PP (IN:[1773..1775] of)
+                              (NP (JJ:[1776..1781] human)
+                                
+                                (NML (JJ:[1782..1786] soft)
+                                     (NN:[1787..1793] tissue))
+                                (NNS:[1794..1802] sarcomas)))))))))))))))
+    (.:[1802..1803] .)))
+
+;section 15 Span:1807..1851
+;PMID: 8483882 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1807..1811] PMID) (::[1811..1812] :) (CD:[1813..1820] 8483882)
+        (NN:[1821..1822] -LSB-) (NNP:[1822..1828] PubMed) (::[1829..1830] -)
+        (NN:[1831..1838] indexed) (IN:[1839..1842] for)
+        (NNP:[1843..1851] MEDLINE-RSB-)))

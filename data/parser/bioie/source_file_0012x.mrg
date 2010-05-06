@@ -1,0 +1,407 @@
+;PMID: 10627475
+;source_file_675.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..182] = [t:36..182]
+;2)section:[e:186..240] = [t:186..240]
+;3)section:[e:244..333] = [t:244..333]
+;4)sentence:[e:337..550] = [t:337..550]
+;5)sentence:[e:551..795] = [t:551..795]
+;6)sentence:[e:796..954] = [t:796..954]
+;7)sentence:[e:955..1080] = [t:955..1080]
+;8)sentence:[e:1081..1258] = [t:1081..1258]
+;9)sentence:[e:1259..1378] = [t:1259..1378]
+;10)sentence:[e:1379..1547] = [t:1379..1547]
+;11)sentence:[e:1548..1694] = [t:1548..1694]
+;12)section:[e:1695..1719] = [t:1695..1719]
+;13)section:[e:1723..1768] = [t:1723..1768]
+
+;section 0 Span:0..31
+;Blood  2000 Jan 15;95(2):646-50
+(SEC
+  (FRAG (IN:[0..5] Blood) (CD:[7..11] 2000) (NNP:[12..15] Jan)
+        (::[16..22] 15;95-LRB-) (CD:[22..23] 2) (-RRB-:[23..24] -RRB-)
+        (CD:[24..28] :646) (::[28..29] -) (CD:[29..31] 50)))
+
+;sentence 1 Span:36..182
+;N-RAS gene mutation in patients with aplastic anemia and aplastic anemia/ 
+;paroxysmal nocturnal hemoglobinuria during evolution to clonal disease.
+;[36..41]:gene-rna:"N-RAS"
+(SENT
+  (NP-HLN
+    (NP (NN:[36..41] N-RAS) (NN:[42..46] gene) (NN:[47..55] mutation))
+    (PP-LOC (IN:[56..58] in)
+      (NP
+        (NP (NNS:[59..67] patients))
+        (PP (IN:[68..72] with)
+          (NP
+            (NP (JJ:[73..81] aplastic) (NN:[82..88] anemia))
+            (CC:[89..92] and)
+            (NP
+              (NP (JJ:[93..101] aplastic) (NN:[102..108] anemia))
+              (SYM:[108..109] /)
+              (NP (JJ:[111..121] paroxysmal) (JJ:[122..131] nocturnal)
+                  (NN:[132..146] hemoglobinuria)))))))
+    (PP-TMP (IN:[147..153] during)
+      (NP
+        (NP (NN:[154..163] evolution))
+        (PP (TO:[164..166] to)
+          (NP (JJ:[167..173] clonal) (NN:[174..181] disease)))))
+    (.:[181..182] .)))
+
+;section 2 Span:186..240
+;Mortazavi Y, Tooze JA, Gordon-Smith EC, Rutherford TR.
+(SEC
+  (FRAG (NNP:[186..195] Mortazavi) (NNP:[196..197] Y) (,:[197..198] ,)
+        (NNP:[199..204] Tooze) (NNP:[205..207] JA) (NNP:[207..208] ,)
+        (NNP:[209..215] Gordon) (::[215..216] -) (NNP:[216..221] Smith)
+        (NNP:[222..224] EC) (,:[224..225] ,) (NNP:[226..236] Rutherford)
+        (NNP:[237..240] TR.)))
+
+;section 3 Span:244..333
+;Department of Haematology, St. George's Hospital Medical School, London,
+;United  Kingdom.
+(SEC
+  (FRAG (NNP:[244..254] Department) (IN:[255..257] of)
+        (NNP:[258..269] Haematology) (,:[269..270] ,) (NNP:[271..274] St.)
+        (NNP:[275..281] George) (POS:[281..283] 's) (NNP:[284..292] Hospital)
+        (NNP:[293..300] Medical) (NNP:[301..307] School) (,:[307..308] ,)
+        (NNP:[309..315] London) (,:[315..316] ,) (NNP:[317..323] United)
+        (NNP:[325..332] Kingdom) (.:[332..333] .)))
+
+;sentence 4 Span:337..550
+;Long-term survivors of aplastic anemia (AA) have a high incidence of clonal 
+;disorders, in particular paroxysmal nocturnal hemoglobinuria (PNH), 
+;myelodysplastic syndromes (MDS), and acute nonlymphocytic leukemia.
+;[483..508]:malignancy:"myelodysplastic syndromes"
+;[510..513]:malignancy:"MDS"
+;[520..549]:malignancy:"acute nonlymphocytic leukemia"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (JJ:[337..341] Long) (HYPH:[341..342] -) (NN:[342..346] term))
+        (NNS:[347..356] survivors))
+      (PP (IN:[357..359] of)
+        (NP
+          (NP (JJ:[360..368] aplastic) (NN:[369..375] anemia))
+          (NP (-LRB-:[376..377] -LRB-) (NN:[377..379] AA)
+              (-RRB-:[379..380] -RRB-)))))
+    (VP (VBP:[381..385] have)
+      (NP
+        (NP (DT:[386..387] a) (JJ:[388..392] high) (NN:[393..402] incidence))
+        (PP (IN:[403..405] of)
+          (NP
+            (NP (JJ:[406..412] clonal) (NNS:[414..423] disorders))
+            (,:[423..424] ,)
+            (NP
+              (PP (IN:[425..427] in)
+                (NP (JJ:[428..438] particular)))
+              (NP
+                (NP (JJ:[439..449] paroxysmal) (JJ:[450..459] nocturnal)
+                    (NN:[460..474] hemoglobinuria))
+                (NP (-LRB-:[475..476] -LRB-) (NN:[476..479] PNH)
+                    (-RRB-:[479..480] -RRB-)))
+              (,:[480..481] ,)
+              (NP
+                (NP (JJ:[483..498] myelodysplastic) (NNS:[499..508] syndromes))
+                (NP (-LRB-:[509..510] -LRB-) (NN:[510..513] MDS)
+                    (-RRB-:[513..514] -RRB-)))
+              (,:[514..515] ,) (CC:[516..519] and)
+              (NP (JJ:[520..525] acute) (JJ:[526..540] nonlymphocytic)
+                  (NN:[541..549] leukemia)))))))
+    (.:[549..550] .)))
+
+;sentence 5 Span:551..795
+;To  investigate the potential involvement of N-RAS gene mutations in the 
+;predisposition to leukemic evolution, a subset of patients at potentially 
+;increased risk for clonal disease was selected based on evidence of existing 
+;clonal evolution.
+;[596..601]:gene-rna:"N-RAS"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[551..551] *))
+      (VP (TO:[551..553] To)
+        (VP (VB:[555..566] investigate)
+          (NP
+            (NP (DT:[567..570] the) (JJ:[571..580] potential)
+                (NN:[581..592] involvement))
+            (PP (IN:[593..595] of)
+              (NP (NN:[596..601] N-RAS) (NN:[602..606] gene)
+                  (NNS:[607..616] mutations)))
+            (PP (IN:[617..619] in)
+              (NP
+                (NP (DT:[620..623] the) (NN:[625..639] predisposition))
+                (PP (TO:[640..642] to)
+                  (NP (JJ:[643..651] leukemic) (NN:[652..661] evolution)))))))))
+    (,:[661..662] ,)
+    (NP-SBJ-1
+      (NP (DT:[663..664] a) (NN:[665..671] subset))
+      (PP (IN:[672..674] of)
+        (NP (NNS:[675..683] patients)))
+      (PP (IN:[684..686] at)
+        (NP
+          (NP
+            (ADJP (RB:[687..698] potentially) (VBN:[700..709] increased))
+            (NN:[710..714] risk))
+          (PP (IN:[715..718] for)
+            (NP (JJ:[719..725] clonal) (NN:[726..733] disease))))))
+    (VP (VBD:[734..737] was)
+      (VP (VBN:[738..746] selected)
+        (NP-1 (-NONE-:[746..746] *))
+        (PP (VBN:[747..752] based)
+          (PP (IN:[753..755] on)
+            (NP
+              (NP (NN:[756..764] evidence))
+              (PP (IN:[765..767] of)
+                (NP (VBG:[768..776] existing) (JJ:[778..784] clonal)
+                    (NN:[785..794] evolution))))))))
+    (.:[794..795] .)))
+
+;sentence 6 Span:796..954
+;Nine patients showed a monoclonal pattern of X-chromosome  inactivation, 18
+;demonstrated a PNH clone, and in 3 MDS developed during the  course of this
+;study.
+;[907..910]:malignancy:"MDS"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[796..800] Nine) (NNS:[801..809] patients))
+      (VP (VBD:[810..816] showed)
+        (NP
+          (NP (DT:[817..818] a) (JJ:[819..829] monoclonal)
+              (NN:[830..837] pattern))
+          (PP (IN:[838..840] of)
+            (NP (NN:[841..853] X-chromosome) (NN:[855..867] inactivation))))))
+    (,:[867..868] ,)
+    (S
+      (NP-SBJ (CD:[869..871] 18))
+      (VP (VBD:[872..884] demonstrated)
+        (NP (DT:[885..886] a) (NN:[887..890] PNH) (NN:[891..896] clone))))
+    (,:[896..897] ,) (CC:[898..901] and)
+    (S
+      (PP-LOC (IN:[902..904] in)
+        (NP (CD:[905..906] 3)))
+      (NP-SBJ (NN:[907..910] MDS))
+      (VP (VBD:[911..920] developed)
+        (PP-TMP (IN:[921..927] during)
+          (NP
+            (NP (DT:[928..931] the) (NN:[933..939] course))
+            (PP (IN:[940..942] of)
+              (NP (DT:[943..947] this) (NN:[948..953] study)))))))
+    (.:[953..954] .)))
+
+;sentence 7 Span:955..1080
+;No mutations were detected during the aplastic phase of  disease; 2 of 3
+;patients with MDS after AA also showed no mutations.
+;[1042..1045]:malignancy:"MDS"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[955..957] No) (NNS:[958..967] mutations))
+      (VP (VBD:[968..972] were)
+        (VP (VBN:[973..981] detected)
+          (NP-1 (-NONE-:[981..981] *))
+          (PP-TMP (IN:[982..988] during)
+            (NP
+              (NP (DT:[989..992] the) (JJ:[993..1001] aplastic)
+                  (NN:[1002..1007] phase))
+              (PP (IN:[1008..1010] of)
+                (NP (NN:[1012..1019] disease))))))))
+    (::[1019..1020] ;)
+    (S
+      (NP-SBJ
+        (NP (CD:[1021..1022] 2))
+        (PP (IN:[1023..1025] of)
+          (NP
+            (NP (CD:[1026..1027] 3) (NNS:[1028..1036] patients))
+            (PP (IN:[1037..1041] with)
+              (NP
+                (NP (NN:[1042..1045] MDS))
+                (PP (IN:[1046..1051] after)
+                  (NP (NN:[1052..1054] AA))))))))
+      (ADVP (RB:[1055..1059] also))
+      (VP (VBD:[1060..1066] showed)
+        (NP (DT:[1067..1069] no) (NNS:[1070..1079] mutations))))
+    (.:[1079..1080] .)))
+
+;sentence 8 Span:1081..1258
+;However, in  1 patient in whom the disease transformed from AA/PNH to MDS, a
+;mutation of GGT  --> GAT at N-RAS codon 13 became detectable, whereas the PNH
+;mutation  disappeared.
+;[1151..1154]:malignancy:"MDS"
+;[1158..1166]:variation-event:"mutation"
+;[1170..1173]:variation-state-original:"GGT"
+;[1179..1182]:variation-state-altered:"GAT"
+;[1186..1191]:gene-rna:"N-RAS"
+;[1192..1200]:variation-location:"codon 13"
+(SENT
+  (S
+    (ADVP (RB:[1081..1088] However))
+    (,:[1088..1089] ,)
+    (PP-LOC (IN:[1090..1092] in)
+      (NP
+        (NP (CD:[1094..1095] 1) (NN:[1096..1103] patient))
+        (SBAR
+          (WHPP-1 (IN:[1104..1106] in)
+            (WHNP (WP:[1107..1111] whom)))
+          (S
+            (NP-SBJ (DT:[1112..1115] the) (NN:[1116..1123] disease))
+            (VP (VBD:[1124..1135] transformed)
+              (PP (IN:[1136..1140] from)
+                (NP
+                  (NP (NN:[1141..1143] AA))
+                  (SYM:[1143..1144] /)
+                  (NP (NN:[1144..1147] PNH))))
+              (PP (TO:[1148..1150] to)
+                (NP (NN:[1151..1154] MDS)))
+              (PP-1 (-NONE-:[1154..1154] *T*)))))))
+    (,:[1154..1155] ,)
+    (NP-SBJ
+      (NP (DT:[1156..1157] a) (NN:[1158..1166] mutation))
+      (PP (IN:[1167..1169] of)
+        (NP
+          (NP (NN:[1170..1173] GGT))
+          (PP (SYM:[1175..1178] -->)
+            (NP (NN:[1179..1182] GAT)))))
+      (PP-LOC (IN:[1183..1185] at)
+        (NP (NN:[1186..1191] N-RAS)
+           (NN:[1192..1197] codon) (CD:[1198..1200] 13))))
+    (VP (VBD:[1201..1207] became)
+      (ADJP-PRD (JJ:[1208..1218] detectable))
+      (,:[1218..1219] ,)
+      (SBAR-ADV (IN:[1220..1227] whereas)
+        (S
+          (NP-SBJ (DT:[1228..1231] the) (NN:[1232..1235] PNH)
+                  (NN:[1236..1244] mutation))
+          (VP (VBD:[1246..1257] disappeared)))))
+    (.:[1257..1258] .)))
+
+;sentence 9 Span:1259..1378
+;The authors conclude that N-RAS mutations are not an early event  preceding
+;transformation of AA or AA/PNH to leukemia.
+;[1285..1290]:gene-rna:"N-RAS"
+;[1369..1377]:malignancy:"leukemia"
+(SENT
+  (S
+    (NP-SBJ (DT:[1259..1262] The) (NNS:[1263..1270] authors))
+    (VP (VBP:[1271..1279] conclude)
+      (SBAR (IN:[1280..1284] that)
+        (S
+          (NP-SBJ (NN:[1285..1290] N-RAS) (NNS:[1291..1300] mutations))
+          (VP (VBP:[1301..1304] are) (RB:[1305..1308] not)
+            (NP-PRD
+              (NP (DT:[1309..1311] an) (JJ:[1312..1317] early)
+                  (NN:[1318..1323] event))
+              (VP (VBG:[1325..1334] preceding)
+                (NP
+                  (NP (NN:[1335..1349] transformation))
+                  (PP (IN:[1350..1352] of)
+                    (NP
+                      (NP (NN:[1353..1355] AA))
+                      (CC:[1356..1358] or)
+                      (NP
+                        (NP (NN:[1359..1361] AA))
+                        (SYM:[1361..1362] /)
+                        (NP (NN:[1362..1365] PNH)))))
+                  (PP (TO:[1366..1368] to)
+                    (NP (NN:[1369..1377] leukemia))))))))))
+    (.:[1377..1378] .)))
+
+;sentence 10 Span:1379..1547
+;In a subset of patients,  RAS mutations may occur at the time of evolution to
+;MDS, but preexisting RAS  mutations do not explain the propensity of AA to
+;leukemogenesis.
+;[1405..1408]:gene-rna:"RAS"
+;[1457..1460]:malignancy:"MDS"
+;[1478..1481]:gene-rna:"RAS"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[1379..1381] In)
+        (NP
+          (NP (DT:[1382..1383] a) (NN:[1384..1390] subset))
+          (PP (IN:[1391..1393] of)
+            (NP (NNS:[1394..1402] patients)))))
+      (,:[1402..1403] ,)
+      (NP-SBJ (NN:[1405..1408] RAS) (NNS:[1409..1418] mutations))
+      (VP (MD:[1419..1422] may)
+        (VP (VB:[1423..1428] occur)
+          (PP-TMP (IN:[1429..1431] at)
+            (NP
+              (NP (DT:[1432..1435] the) (NN:[1436..1440] time))
+              (PP (IN:[1441..1443] of)
+                (NP
+                  (NP (NN:[1444..1453] evolution))
+                  (PP (TO:[1454..1456] to)
+                    (NP (NN:[1457..1460] MDS))))))))))
+    (,:[1460..1461] ,) (CC:[1462..1465] but)
+    (S
+      (NP-SBJ (JJ:[1466..1477] preexisting) (NN:[1478..1481] RAS)
+              (NNS:[1483..1492] mutations))
+      (VP (VBP:[1493..1495] do) (RB:[1496..1499] not)
+        (VP (VB:[1500..1507] explain)
+          (NP
+            (NP (DT:[1508..1511] the) (NN:[1512..1522] propensity))
+            (PP (IN:[1523..1525] of)
+              (NP (NN:[1526..1528] AA)))
+            (PP (TO:[1529..1531] to)
+              (NP (NN:[1532..1546] leukemogenesis)))))))
+    (.:[1546..1547] .)))
+
+;sentence 11 Span:1548..1694
+;Although PNH is  also associated with leukemia, this may arise in the non-PNH
+;cells, indicating  that PIG-A gene mutation is not per se oncogenic.
+;[1586..1594]:malignancy:"leukemia"
+;[1650..1655]:gene-rna:"PIG-A"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1548..1556] Although)
+      (S
+        (NP-SBJ-1 (NN:[1557..1560] PNH))
+        (VP (VBZ:[1561..1563] is)
+          (ADVP (RB:[1565..1569] also))
+          (VP (VBN:[1570..1580] associated)
+            (NP-1 (-NONE-:[1580..1580] *))
+            (PP-CLR (IN:[1581..1585] with)
+              (NP (NN:[1586..1594] leukemia)))))))
+    (,:[1594..1595] ,)
+    (NP-SBJ (DT:[1596..1600] this))
+    (VP (MD:[1601..1604] may)
+      (VP (VB:[1605..1610] arise)
+        (PP-LOC (IN:[1611..1613] in)
+          (NP (DT:[1614..1617] the)
+            (NML (AFX:[1618..1621] non) (HYPH:[1621..1622] -)
+                 (NN:[1622..1625] PNH))
+            (NNS:[1626..1631] cells)))
+        (,:[1631..1632] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1632..1632] *))
+          (VP (VBG:[1633..1643] indicating)
+            (SBAR (IN:[1645..1649] that)
+              (S
+                (NP-SBJ (NN:[1650..1655] PIG-A) (NN:[1656..1660] gene)
+                        (NN:[1661..1669] mutation))
+                (VP (VBZ:[1670..1672] is) (RB:[1673..1676] not)
+                  (ADVP (FW:[1677..1680] per) (FW:[1681..1683] se))
+                  (ADJP-PRD (JJ:[1684..1693] oncogenic)))))))))
+    (.:[1693..1694] .)))
+
+;section 12 Span:1695..1719
+;(Blood. 2000;95:646-650)
+(SEC
+  (FRAG (-LRB-:[1695..1696] -LRB-) (NNP:[1696..1702] Blood.)
+        (CD:[1703..1707] 2000) (::[1707..1708] ;) (CD:[1708..1710] 95)
+        (::[1710..1711] :) (CD:[1711..1714] 646) (HYPH:[1714..1715] -)
+        (CD:[1715..1718] 650) (-RRB-:[1718..1719] -RRB-)))
+
+;section 13 Span:1723..1768
+;PMID: 10627475 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1723..1727] PMID) (::[1727..1728] :) (CD:[1729..1737] 10627475)
+        (NN:[1738..1739] -LSB-) (NNP:[1739..1745] PubMed) (::[1746..1747] -)
+        (NN:[1748..1755] indexed) (IN:[1756..1759] for)
+        (NNP:[1760..1768] MEDLINE-RSB-)))

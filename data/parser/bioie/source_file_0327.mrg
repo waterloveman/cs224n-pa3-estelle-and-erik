@@ -1,0 +1,307 @@
+;PMID: 12412639
+;source_file_1863.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..154] = [t:44..154]
+;2)section:[e:158..200] = [t:158..200]
+;3)section:[e:204..266] = [t:204..266]
+;4)sentence:[e:270..678] = [t:270..678]
+;5)sentence:[e:679..762] = [t:679..762]
+;6)sentence:[e:763..853] = [t:763..853]
+;7)sentence:[e:854..1012] = [t:854..1012]
+;8)sentence:[e:1013..1151] = [t:1013..1151]
+;9)sentence:[e:1152..1347] = [t:1152..1347]
+;10)section:[e:1351..1396] = [t:1351..1396]
+
+;section 0 Span:0..38
+;Hum Exp Toxicol. 2002 Aug;21(8):453-6.
+(SEC
+  (FRAG (NNP:[0..3] Hum) (NNP:[4..7] Exp) (NNP:[8..15] Toxicol) (.:[15..16] .)
+        (CD:[17..21] 2002) (CC:[22..29] Aug;21-LRB-) (CD:[29..30] 8)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :453) (HYPH:[35..36] -)
+        (CD:[36..38] 6.)))
+
+;sentence 1 Span:44..154
+;A study of the in vitro clinical interaction between lidocaine and 
+;premedications using rat liver microsomes.
+;[97..106]:substance:"lidocaine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (DT:[44..45] A) (NN:[46..51] study))
+      (PP (IN:[52..54] of)
+        (NP
+          (NP (DT:[55..58] the)
+            (ADJP (FW:[59..61] in) (FW:[62..67] vitro))
+            (JJ:[68..76] clinical) (NN:[77..88] interaction))
+          (PP (IN:[89..96] between)
+            (NP (NN:[97..106] lidocaine) (CC:[107..110] and)
+                (NNS:[112..126] premedications))))))
+    (VP (VBG:[127..132] using)
+      (NP (NN:[133..136] rat) (NN:[137..142] liver) (NNS:[143..153] microsomes)))
+    (.:[153..154] .)))
+
+;section 2 Span:158..200
+;Nagashima A, Tanak E, Inomata S, Misawa S.
+(SEC
+  (FRAG (NNP:[158..167] Nagashima) (NNP:[168..169] A) (,:[169..170] ,)
+        (NNP:[171..176] Tanak) (NNP:[177..178] E) (,:[178..179] ,)
+        (NNP:[180..187] Inomata) (NNP:[188..189] S) (,:[189..190] ,)
+        (NNP:[191..197] Misawa) (NNP:[198..200] S.)))
+
+;section 3 Span:204..266
+;Institute of Community Medicine, University of Tsukuba, Japan.
+(SEC
+  (FRAG (NNP:[204..213] Institute) (IN:[214..216] of) (NNP:[217..226] Community)
+        (NNP:[227..235] Medicine) (,:[235..236] ,) (NNP:[237..247] University)
+        (IN:[248..250] of) (NNP:[251..258] Tsukuba) (,:[258..259] ,)
+        (NNP:[260..265] Japan) (.:[265..266] .)))
+
+;sentence 4 Span:270..678
+;In this study, we have investigated the relationship between lidocaine 
+;metabolism and premedication, i.e., psychotropic and anti-anxiety agents 
+;(diazepam, midazolam), hypnotics (pentobarbital, thiamylal), depolarizing 
+;muscular relaxants (vecuronium, pancuronium and suxamethonium), an active 
+;anti-hypertensive (clonidine) and an H2 receptor antagonist (cimetidine)
+;using  rat hepatic microsomes in vitro.
+;[331..340]:substance:"lidocaine"
+;[378..390]...[408..414]:substance:"psychotropic"..."agents"
+;[395..414]:substance:"anti-anxiety agents"
+;[417..425]:substance:"diazepam"
+;[427..436]:substance:"midazolam"
+;[439..448]:substance:"hypnotics"
+;[450..463]:substance:"pentobarbital"
+;[465..474]:substance:"thiamylal"
+;[491..509]:substance:"muscular relaxants"
+;[511..521]:substance:"vecuronium"
+;[523..534]:substance:"pancuronium"
+;[539..552]:substance:"suxamethonium"
+;[566..583]:substance:"anti-hypertensive"
+;[585..594]:substance:"clonidine"
+;[603..614]:substance:"H2 receptor"
+;[615..625]:substance:"antagonist"
+;[627..637]:substance:"cimetidine"
+(SENT
+  (S
+    (PP (IN:[270..272] In)
+      (NP (DT:[273..277] this) (NN:[278..283] study)))
+    (,:[283..284] ,)
+    (NP-SBJ (PRP:[285..287] we))
+    (VP (VBP:[288..292] have)
+      (VP (VBN:[293..305] investigated)
+        (NP
+          (NP (DT:[306..309] the) (NN:[310..322] relationship))
+          (PP (IN:[323..330] between)
+            (NP
+              (NP (NN:[331..340] lidocaine) (NN:[342..352] metabolism))
+              (CC:[353..356] and)
+              (NP
+                (NP (NN:[357..370] premedication))
+                (,:[370..371] ,)
+                (NP
+                  (ADVP (FW:[372..376] i.e.))
+                  (,:[376..377] ,)
+                  (NP
+                    (NP
+                      (NP (JJ:[378..390] psychotropic)
+                        (NML-1 (-NONE-:[390..390] *P*)))
+                      (CC:[391..394] and)
+                      (NP
+                        (NML (AFX:[395..399] anti) (HYPH:[399..400] -)
+                             (NN:[400..407] anxiety))
+                        (NML-1 (NNS:[408..414] agents))))
+                    (NP (-LRB-:[416..417] -LRB-) (NN:[417..425] diazepam)
+                        (,:[425..426] ,) (NN:[427..436] midazolam)
+                        (-RRB-:[436..437] -RRB-)))
+                  (,:[437..438] ,)
+                  (NP
+                    (NP (NNS:[439..448] hypnotics))
+                    (NP (-LRB-:[449..450] -LRB-) (NN:[450..463] pentobarbital)
+                        (,:[463..464] ,) (NN:[465..474] thiamylal)
+                        (-RRB-:[474..475] -RRB-)))
+                  (,:[475..476] ,)
+                  (NP
+                    (NP (VBG:[477..489] depolarizing)
+                       (JJ:[491..499] muscular) (NNS:[500..509] relaxants))
+                    (NP (-LRB-:[510..511] -LRB-) (NN:[511..521] vecuronium)
+                        (,:[521..522] ,) (NN:[523..534] pancuronium)
+                        (CC:[535..538] and) (NN:[539..552] suxamethonium)
+                        (-RRB-:[552..553] -RRB-)))
+                  (,:[553..554] ,)
+                  (NP
+                    (NP (DT:[555..557] an) (JJ:[558..564] active)
+                       (AFX:[566..570] anti) (HYPH:[570..571] -)
+                       (JJ:[571..583] hypertensive))
+                    (NP (-LRB-:[584..585] -LRB-) (NN:[585..594] clonidine)
+                        (-RRB-:[594..595] -RRB-)))
+                  (CC:[596..599] and)
+                  (NP
+                    (NP (DT:[600..602] an)
+                      (NML (NN:[603..605] H2) (NN:[606..614] receptor))
+                      (NN:[615..625] antagonist))
+                    (NP (-LRB-:[626..627] -LRB-) (NN:[627..637] cimetidine)
+                        (-RRB-:[637..638] -RRB-))))))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[638..638] *))
+          (VP (VBG:[639..644] using)
+            (NP (NN:[646..649] rat) (JJ:[650..657] hepatic)
+                (NNS:[658..668] microsomes))
+            (ADVP (FW:[669..671] in) (FW:[672..677] vitro))))))
+    (.:[677..678] .)))
+
+;sentence 5 Span:679..762
+;Lidocaine metabolism was noncompetitively  inhibited by midazolam (Ki=29.0
+;microM).
+;[679..688]:substance:"Lidocaine"
+;[735..744]:substance:"midazolam"
+;[746..748]:quantitative-name:"Ki"
+;[749..753]:quantitative-value:"29.0"
+;[754..760]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[679..688] Lidocaine) (NN:[689..699] metabolism))
+    (VP (VBD:[700..703] was)
+      (ADVP-MNR (RB:[704..720] noncompetitively))
+      (VP (VBN:[722..731] inhibited)
+        (NP-1 (-NONE-:[731..731] *))
+        (PP (IN:[732..734] by)
+          (NP-LGS (NN:[735..744] midazolam)))
+        (PRN (-LRB-:[745..746] -LRB-)
+          (S
+            (NP-SBJ (NN:[746..748] Ki))
+            (VP (SYM:[748..749] =)
+              (NP (CD:[749..753] 29.0) (NN:[754..760] microM))))
+          (-RRB-:[760..761] -RRB-))))
+    (.:[761..762] .)))
+
+;sentence 6 Span:763..853
+;Thilamylal was a moderate competitive  inhibitor of lidocaine metabolism
+;(Ki=77.8 microM).
+;[763..773]:substance:"Thilamylal"
+;[802..811]:substance:"inhibitor"
+;[815..824]:substance:"lidocaine"
+;[837..839]:quantitative-name:"Ki"
+;[840..844]:quantitative-value:"77.8"
+;[845..851]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (NN:[763..773] Thilamylal))
+    (VP (VBD:[774..777] was)
+      (NP-PRD
+        (NP (DT:[778..779] a) (JJ:[780..788] moderate)
+            (JJ:[789..800] competitive) (NN:[802..811] inhibitor))
+        (PP (IN:[812..814] of)
+          (NP (NN:[815..824] lidocaine) (NN:[825..835] metabolism))))
+      (PRN (-LRB-:[836..837] -LRB-)
+        (S
+          (NP-SBJ (NN:[837..839] Ki))
+          (VP (SYM:[839..840] =)
+            (NP (CD:[840..844] 77.8) (NN:[845..851] microM))))
+        (-RRB-:[851..852] -RRB-)))
+    (.:[852..853] .)))
+
+;sentence 7 Span:854..1012
+;Pentobarbital, diazepam and  cimetidine weakly inhibited lidocaine metabolism
+;formation in a  concentration-dependent manner at high substrate
+;concentrations.
+;[854..867]:substance:"Pentobarbital"
+;[869..877]:substance:"diazepam"
+;[883..893]:substance:"cimetidine"
+;[911..920]:substance:"lidocaine"
+;[987..996]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ (NN:[854..867] Pentobarbital) (,:[867..868] ,)
+            (NN:[869..877] diazepam) (CC:[878..881] and)
+            (NN:[883..893] cimetidine))
+    (ADVP (RB:[894..900] weakly))
+    (VP (VBD:[901..910] inhibited)
+      (NP
+        (NML (NN:[911..920] lidocaine) (NN:[921..931] metabolism))
+        (NN:[932..941] formation))
+      (PP (IN:[942..944] in)
+        (NP (DT:[945..946] a)
+          (ADJP (NN:[948..961] concentration) (HYPH:[961..962] -)
+                (JJ:[962..971] dependent))
+          (NN:[972..978] manner)))
+      (PP (IN:[979..981] at)
+        (NP (JJ:[982..986] high) (NN:[987..996] substrate)
+            (NNS:[997..1011] concentrations))))
+    (.:[1011..1012] .)))
+
+;sentence 8 Span:1013..1151
+;On the other  hand, vecuronium, pancuronium, suxamethonium and clonidine did
+;not inhibit  lidocaine metabolism over the therapeutic range.
+;[1033..1043]:substance:"vecuronium"
+;[1045..1056]:substance:"pancuronium"
+;[1058..1071]:substance:"suxamethonium"
+;[1076..1085]:substance:"clonidine"
+;[1103..1112]:substance:"lidocaine"
+(SENT
+  (S
+    (PP (IN:[1013..1015] On)
+      (NP (DT:[1016..1019] the) (JJ:[1020..1025] other) (NN:[1027..1031] hand)))
+    (,:[1031..1032] ,)
+    (NP-SBJ (NN:[1033..1043] vecuronium) (,:[1043..1044] ,)
+            (NN:[1045..1056] pancuronium) (,:[1056..1057] ,)
+            (NN:[1058..1071] suxamethonium) (CC:[1072..1075] and)
+            (NN:[1076..1085] clonidine))
+    (VP (VBD:[1086..1089] did) (RB:[1090..1093] not)
+      (VP (VB:[1094..1101] inhibit)
+        (NP (NN:[1103..1112] lidocaine) (NN:[1113..1123] metabolism))
+        (PP (IN:[1124..1128] over)
+          (NP (DT:[1129..1132] the) (JJ:[1133..1144] therapeutic)
+              (NN:[1145..1150] range)))))
+    (.:[1150..1151] .)))
+
+;sentence 9 Span:1152..1347
+;These results show that the  interaction between lidocaine and midazolam and
+;thiamylal, catalyzed by a  similar cytochrome P450, is of potential
+;importance in toxicological and  clinical studies.
+;[1201..1210]:substance:"lidocaine"
+;[1215..1224]:substance:"midazolam"
+;[1229..1238]:substance:"thiamylal"
+;[1264..1279]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1152..1157] These) (NNS:[1158..1165] results))
+    (VP (VBP:[1166..1170] show)
+      (SBAR (IN:[1171..1175] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (DT:[1176..1179] the) (NN:[1181..1192] interaction))
+              (PP (IN:[1193..1200] between)
+                (NP
+                  (NP (NN:[1201..1210] lidocaine))
+                  (CC:[1211..1214] and)
+                  (NP (NN:[1215..1224] midazolam) (CC:[1225..1228] and)
+                      (NN:[1229..1238] thiamylal)))))
+            (,:[1238..1239] ,)
+            (VP (VBN:[1240..1249] catalyzed)
+              (NP (-NONE-:[1249..1249] *))
+              (PP (IN:[1250..1252] by)
+                (NP-LGS (DT:[1253..1254] a) (JJ:[1256..1263] similar)
+                   (NN:[1264..1274] cytochrome) (NN:[1275..1279] P450)))))
+          (,:[1279..1280] ,)
+          (VP (VBZ:[1281..1283] is)
+            (PP-PRD (IN:[1284..1286] of)
+              (NP (JJ:[1287..1296] potential) (NN:[1297..1307] importance)))
+            (PP (IN:[1308..1310] in)
+              (NP
+                (NP (JJ:[1311..1324] toxicological)
+                  (NML-1 (-NONE-:[1324..1324] *P*)))
+                (CC:[1325..1328] and)
+                (NP (JJ:[1330..1338] clinical)
+                  (NML-1 (NNS:[1339..1346] studies)))))))))
+    (.:[1346..1347] .)))
+
+;section 10 Span:1351..1396
+;PMID: 12412639 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1351..1355] PMID) (::[1355..1356] :) (CD:[1357..1365] 12412639)
+        (NN:[1366..1367] -LSB-) (NNP:[1367..1373] PubMed) (::[1374..1375] -)
+        (NN:[1376..1383] indexed) (IN:[1384..1387] for)
+        (NNP:[1388..1396] MEDLINE-RSB-)))

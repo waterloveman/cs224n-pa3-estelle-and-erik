@@ -1,0 +1,351 @@
+;PMID: 11807663
+;source_file_2943.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..99] = [t:48..99]
+;2)sentence:[e:100..136] = [t:100..136]
+;3)section:[e:140..175] = [t:140..175]
+;4)section:[e:179..279] = [t:179..279]
+;5)sentence:[e:283..432] = [t:283..432]
+;6)sentence:[e:433..540] = [t:433..540]
+;7)sentence:[e:541..657] = [t:541..657]
+;8)sentence:[e:658..776] = [t:658..776]
+;9)sentence:[e:777..869] = [t:777..869]
+;10)sentence:[e:870..1057] = [t:870..1057]
+;11)sentence:[e:1058..1229] = [t:1058..1229]
+;12)sentence:[e:1230..1341] = [t:1230..1341]
+;13)sentence:[e:1342..1452] = [t:1342..1452]
+;14)section:[e:1456..1501] = [t:1456..1501]
+
+;section 0 Span:0..42
+;Eur J Pediatr Surg.  2001 Dec;11(6):363-7.
+(SEC
+  (FRAG (NNP:[0..3] Eur) (NNP:[4..5] J) (NNP:[6..13] Pediatr)
+        (NNP:[14..18] Surg) (.:[18..19] .) (CD:[21..25] 2001)
+        (IN:[26..32] Dec;11) (-LRB-:[32..33] -LRB-) (CD:[33..34] 6)
+        (-RRB-:[34..35] -RRB-) (::[35..36] :) (CD:[36..39] 363)
+        (HYPH:[39..40] -) (CD:[40..42] 7.)))
+
+;sentence 1 Span:48..99
+;Neuroblastoma: inhibition of progression (Part II).
+;[48..61]:malignancy-type:"Neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[48..61] Neuroblastoma))
+    (::[61..62] :)
+    (NP
+      (NP (NN:[63..73] inhibition))
+      (PP (IN:[74..76] of)
+        (NP (NN:[77..88] progression))))
+    (PRN (-LRB-:[89..90] -LRB-)
+      (NP (NN:[90..94] Part) (CD:[95..97] II))
+      (-RRB-:[97..98] -RRB-))
+    (.:[98..99] .)))
+
+;sentence 2 Span:100..136
+;Basic science in pediatric  surgery.
+(SENT
+  (NP
+    (NP (JJ:[100..105] Basic) (NN:[106..113] science))
+    (PP (IN:[114..116] in)
+      (NP (JJ:[117..126] pediatric) (NN:[128..135] surgery)))
+    (.:[135..136] .)))
+
+;section 3 Span:140..175
+;Girgert R, Wittrock J, Schweizer P.
+(SEC
+  (FRAG (NNP:[140..147] Girgert) (NNP:[148..149] R) (,:[149..150] ,)
+        (NNP:[151..159] Wittrock) (NNP:[160..162] J,) (NNP:[163..172] Schweizer)
+        (NNP:[173..175] P.)))
+
+;section 4 Span:179..279
+;Department of Pediatric Surgery, University of Tubingen, Germany. 
+;rainer.girgert@medizin.uni-ulm.de
+(SEC
+  (FRAG (NNP:[179..189] Department) (IN:[190..192] of)
+        (NNP:[193..202] Pediatric) (NNP:[203..210] Surgery) (,:[210..211] ,)
+        (NNP:[212..222] University) (IN:[223..225] of) (NNP:[226..234] Tubingen)
+        (,:[234..235] ,) (NNP:[236..243] Germany) (.:[243..244] .)
+        (``:[246..252] rainer) (NN:[252..268] .girgert@medizin)
+        (NN:[268..276] .uni-ulm) (NN:[276..279] .de)))
+
+;sentence 5 Span:283..432
+;In neuroblastoma, amplification of the protooncogene N-myc is the most
+;important  molecular characteristic predicting a bad outcome for the
+;patients.
+;[286..299]:malignancy-type:"neuroblastoma"
+;[301..314]:variation-type:"amplification"
+;[336..341]:gene-rna:"N-myc"
+(SENT
+  (S
+    (PP (IN:[283..285] In)
+      (NP (NN:[286..299] neuroblastoma)))
+    (,:[299..300] ,)
+    (NP-SBJ
+      (NP (NN:[301..314] amplification))
+      (PP (IN:[315..317] of)
+        (NP
+          (NP (DT:[318..321] the) (NN:[322..335] protooncogene))
+          (NP (NN:[336..341] N-myc)))))
+    (VP (VBZ:[342..344] is)
+      (NP-PRD
+        (NP (DT:[345..348] the)
+          (ADJP (RBS:[349..353] most) (JJ:[354..363] important))
+          (JJ:[365..374] molecular) (NN:[375..389] characteristic))
+        (VP (VBG:[390..400] predicting)
+          (NP
+            (NP (DT:[401..402] a) (JJ:[403..406] bad) (NN:[407..414] outcome))
+            (PP (IN:[415..418] for)
+              (NP (DT:[419..422] the) (NNS:[423..431] patients)))))))
+    (.:[431..432] .)))
+
+;sentence 6 Span:433..540
+;Despite the  importance of the N-myc gene, little is known about the
+;mechanisms regulating  its expression.
+;[464..469]:gene-rna:"N-myc"
+(SENT
+  (S
+    (PP (IN:[433..440] Despite)
+      (NP
+        (NP (DT:[441..444] the) (NN:[446..456] importance))
+        (PP (IN:[457..459] of)
+          (NP (DT:[460..463] the) (NN:[464..469] N-myc) (NN:[470..474] gene)))))
+    (,:[474..475] ,)
+    (NP-SBJ-1 (JJ:[476..482] little))
+    (VP (VBZ:[483..485] is)
+      (VP (VBN:[486..491] known)
+        (NP-1 (-NONE-:[491..491] *))
+        (PP (IN:[492..497] about)
+          (NP
+            (NP (DT:[498..501] the) (NNS:[502..512] mechanisms))
+            (VP (VBG:[513..523] regulating)
+              (NP (PRP$:[525..528] its) (NN:[529..539] expression)))))))
+    (.:[539..540] .)))
+
+;sentence 7 Span:541..657
+;We found evidence that insulin-like growth factor II stimulates  the growth
+;of neuroblastoma in a paracrine fashion.
+;[564..593]:gene-protein:"insulin-like growth factor II"
+;[620..633]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[541..543] We))
+    (VP (VBD:[544..549] found)
+      (NP
+        (NP (NN:[550..558] evidence))
+        (SBAR (IN:[559..563] that)
+          (S
+            (NP-SBJ
+              (ADJP (NN:[564..571] insulin) (HYPH:[571..572] -)
+                    (JJ:[572..576] like))
+              (NML (NN:[577..583] growth) (NN:[584..590] factor))
+              (CD:[591..593] II))
+            (VP (VBZ:[594..604] stimulates)
+              (NP
+                (NP (DT:[606..609] the) (NN:[610..616] growth))
+                (PP (IN:[617..619] of)
+                  (NP (NN:[620..633] neuroblastoma))))
+              (PP (IN:[634..636] in)
+                (NP (DT:[637..638] a) (JJ:[639..648] paracrine)
+                    (NN:[649..656] fashion))))))))
+    (.:[656..657] .)))
+
+;sentence 8 Span:658..776
+;Two neuroblastoma cell lines  predominantly expressed IGF-II whereas two
+;other cell lines expressed the  IGF-receptor.
+;[662..675]:malignancy-type:"neuroblastoma"
+;[712..718]:gene-protein:"IGF-II"
+;[763..775]:gene-protein:"IGF-receptor"
+(SENT
+  (S
+    (NP-SBJ (CD:[658..661] Two) (NN:[662..675] neuroblastoma)
+            (NN:[676..680] cell) (NNS:[681..686] lines))
+    (ADVP (RB:[688..701] predominantly))
+    (VP (VBD:[702..711] expressed)
+      (NP (NN:[712..718] IGF-II))
+      (SBAR-ADV (IN:[719..726] whereas)
+        (S
+          (NP-SBJ (CD:[727..730] two) (JJ:[731..736] other) (NN:[737..741] cell)
+                  (NNS:[742..747] lines))
+          (VP (VBD:[748..757] expressed)
+            (NP (DT:[758..761] the)
+               (NN:[763..766] IGF) (HYPH:[766..767] -) (NN:[767..775] receptor))))))
+    (.:[775..776] .)))
+
+;sentence 9 Span:777..869
+;In a receptor-positive cell line, N-myc expression was enhanced by 
+;stimulation with IGF-II.
+;[811..816]:gene-rna:"N-myc"
+;[862..868]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (PP (IN:[777..779] In)
+      (NP (DT:[780..781] a)
+        (ADJP (NN:[782..790] receptor) (HYPH:[790..791] -)
+              (JJ:[791..799] positive))
+        (NN:[800..804] cell) (NN:[805..809] line)))
+    (,:[809..810] ,)
+    (NP-SBJ-1 (NN:[811..816] N-myc) (NN:[817..827] expression))
+    (VP (VBD:[828..831] was)
+      (VP (VBN:[832..840] enhanced)
+        (NP-1 (-NONE-:[840..840] *))
+        (PP-MNR (IN:[841..843] by)
+          (NP
+            (NP (NN:[845..856] stimulation))
+            (PP (IN:[857..861] with)
+              (NP (NN:[862..868] IGF-II)))))))
+    (.:[868..869] .)))
+
+;sentence 10 Span:870..1057
+;As the growth-stimulating signals of the IGF receptor  are transmitted via
+;Ras proteins, inactivation of Ras is one promising tool to  prevent the
+;induction of N-myc expression by IGF-II.
+;[911..923]:gene-protein:"IGF receptor"
+;[945..948]:gene-protein:"Ras"
+;[975..978]:gene-protein:"Ras"
+;[1030..1035]:gene-rna:"N-myc"
+;[1050..1056]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (SBAR-ADV (IN:[870..872] As)
+      (S
+        (NP-SBJ-2
+          (NP (DT:[873..876] the)
+            (ADJP (NN:[877..883] growth) (HYPH:[883..884] -)
+                  (VBG:[884..895] stimulating))
+            (NNS:[896..903] signals))
+          (PP (IN:[904..906] of)
+            (NP (DT:[907..910] the)
+               (NN:[911..914] IGF) (NN:[915..923] receptor))))
+        (VP (VBP:[925..928] are)
+          (VP (VBN:[929..940] transmitted)
+            (NP-2 (-NONE-:[940..940] *))
+            (PP-MNR (IN:[941..944] via)
+              (NP (NN:[945..948] Ras) (NNS:[949..957] proteins)))))))
+    (,:[957..958] ,)
+    (NP-SBJ
+      (NP (NN:[959..971] inactivation))
+      (PP (IN:[972..974] of)
+        (NP (NN:[975..978] Ras))))
+    (VP (VBZ:[979..981] is)
+      (NP-PRD
+        (NP (CD:[982..985] one) (JJ:[986..995] promising) (NN:[996..1000] tool))
+        (SBAR
+          (WHNP-1 (-NONE-:[1000..1000] 0))
+          (S
+            (NP-SBJ-1 (-NONE-:[1000..1000] *))
+            (VP (TO:[1001..1003] to)
+              (VP (VB:[1005..1012] prevent)
+                (NP
+                  (NP (DT:[1013..1016] the) (NN:[1017..1026] induction))
+                  (PP (IN:[1027..1029] of)
+                    (NP (NN:[1030..1035] N-myc) (NN:[1036..1046] expression)))
+                  (PP (IN:[1047..1049] by)
+                    (NP (NN:[1050..1056] IGF-II))))))))))
+    (.:[1056..1057] .)))
+
+;sentence 11 Span:1058..1229
+;Treatment of neuroblastoma  cells with an inhibitor of the
+;farnesyl-protein-transferase (FPTase) inactivated  H-ras protein completely
+;and N-ras protein by more than 50 %.
+;[1071..1091]:malignancy-type:"neuroblastoma  cells"
+;[1117..1145]:gene-protein:"farnesyl-protein-transferase"
+;[1147..1153]:gene-protein:"FPTase"
+;[1168..1173]:gene-protein:"H-ras"
+;[1197..1202]:gene-protein:"N-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1058..1067] Treatment))
+      (PP (IN:[1068..1070] of)
+        (NP (NN:[1071..1084] neuroblastoma) (NNS:[1086..1091] cells)))
+      (PP (IN:[1092..1096] with)
+        (NP
+          (NP (DT:[1097..1099] an) (NN:[1100..1109] inhibitor))
+          (PP (IN:[1110..1112] of)
+            (NP (DT:[1113..1116] the)
+              (NML
+                (NML (NN:[1117..1125] farnesyl) (HYPH:[1125..1126] -)
+                     (NN:[1126..1133] protein) (HYPH:[1133..1134] -)
+                     (NN:[1134..1145] transferase))
+                (NML (-LRB-:[1146..1147] -LRB-) (NN:[1147..1153] FPTase)
+                     (-RRB-:[1153..1154] -RRB-))))))))
+    (VP
+      (VP (VBD:[1155..1166] inactivated)
+        (NP=1 (NN:[1168..1173] H-ras) (NN:[1174..1181] protein))
+        (ADVP=2 (RB:[1182..1192] completely)))
+      (CC:[1193..1196] and)
+      (VP
+        (NP=1 (NN:[1197..1202] N-ras) (NN:[1203..1210] protein))
+        (PP=2 (IN:[1211..1213] by)
+          (NP
+            (QP (JJR:[1214..1218] more) (IN:[1219..1223] than)
+                (CD:[1224..1226] 50))
+            (NN:[1227..1228] %)))))
+    (.:[1228..1229] .)))
+
+;sentence 12 Span:1230..1341
+;Cell growth of  neuroblastoma cells in serum containing medium was clearly
+;diminished by  inhibition of FPTase.
+;[1246..1265]:malignancy-type:"neuroblastoma cells"
+;[1334..1340]:gene-protein:"FPTase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1230..1234] Cell) (NN:[1235..1241] growth))
+      (PP (IN:[1242..1244] of)
+        (NP (NN:[1246..1259] neuroblastoma) (NNS:[1260..1265] cells)))
+      (PP (IN:[1266..1268] in)
+        (NP
+          (ADJP (NN:[1269..1274] serum) (VBG:[1275..1285] containing))
+          (NN:[1286..1292] medium))))
+    (VP (VBD:[1293..1296] was)
+      (ADVP (RB:[1297..1304] clearly))
+      (VP (VBN:[1305..1315] diminished)
+        (NP-1 (-NONE-:[1315..1315] *))
+        (PP (IN:[1316..1318] by)
+          (NP-LGS
+            (NP (NN:[1320..1330] inhibition))
+            (PP (IN:[1331..1333] of)
+              (NP (NN:[1334..1340] FPTase)))))))
+    (.:[1340..1341] .)))
+
+;sentence 13 Span:1342..1452
+;The growth-promoting effect of IGF-II was reduced to  exactly half the amount
+;observed in non-inhibited cells.
+;[1373..1379]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1342..1345] The)
+        (ADJP (NN:[1346..1352] growth) (HYPH:[1352..1353] -)
+              (VBG:[1353..1362] promoting))
+        (NN:[1363..1369] effect))
+      (PP (IN:[1370..1372] of)
+        (NP (NN:[1373..1379] IGF-II))))
+    (VP (VBD:[1380..1383] was)
+      (VP (VBN:[1384..1391] reduced)
+        (NP-1 (-NONE-:[1391..1391] *))
+        (PP (TO:[1392..1394] to)
+          (NP
+            (NP
+              (QP (RB:[1396..1403] exactly) (RB:[1404..1408] half))
+              (DT:[1409..1412] the) (NN:[1413..1419] amount))
+            (VP (VBN:[1420..1428] observed)
+              (NP (-NONE-:[1428..1428] *))
+              (PP (IN:[1429..1431] in)
+                (NP
+                  (ADJP (AFX:[1432..1435] non) (HYPH:[1435..1436] -)
+                        (VBN:[1436..1445] inhibited))
+                  (NNS:[1446..1451] cells))))))))
+    (.:[1451..1452] .)))
+
+;section 14 Span:1456..1501
+;PMID: 11807663 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1456..1460] PMID) (::[1460..1461] :) (CD:[1462..1470] 11807663)
+        (NN:[1471..1472] -LSB-) (NNP:[1472..1478] PubMed) (::[1479..1480] -)
+        (NN:[1481..1488] indexed) (IN:[1489..1492] for)
+        (NNP:[1493..1501] MEDLINE-RSB-)))

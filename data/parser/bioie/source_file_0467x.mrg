@@ -1,0 +1,431 @@
+;PMID: 8541548
+;source_file_777.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..154] = [t:38..154]
+;2)section:[e:158..268] = [t:158..268]
+;3)section:[e:272..355] = [t:272..355]
+;4)sentence:[e:359..449] = [t:359..449]
+;5)sentence:[e:450..642] = [t:450..642]
+;6)sentence:[e:643..715] = [t:643..715]
+;7)sentence:[e:716..948] = [t:716..948]
+;8)sentence:[e:949..1241] = [t:949..1241]
+;9)sentence:[e:1242..1328] = [t:1242..1328]
+;10)sentence:[e:1329..1500] = [t:1329..1500]
+;11)sentence:[e:1501..1627] = [t:1501..1627]
+;12)sentence:[e:1628..1803] = [t:1628..1803]
+;13)sentence:[e:1804..1925] = [t:1804..1925]
+;14)section:[e:1929..1973] = [t:1929..1973]
+
+;section 0 Span:0..33
+;Blood  1995 Dec 15;86(12):4579-86
+(SEC
+  (FRAG (NNP:[0..5] Blood) (CD:[7..11] 1995) (.:[12..15] Dec) (CD:[16..18] 15)
+        (CC:[18..22] ;86-LRB-) (CD:[22..24] 12) (-RRB-:[24..25] -RRB-)
+        (CD:[25..30] :4579) (::[30..31] -) (CD:[31..33] 86)))
+
+;sentence 1 Span:38..154
+;Monosomy 7 and activating RAS mutations accompany malignant transformation in
+; patients with congenital neutropenia.
+;[38..46]:variation-type:"Monosomy"
+;[47..48]:variation-location:"7"
+;[64..67]:gene-rna:"RAS"
+;[131..153]:malignancy:"congenital neutropenia"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NN:[38..46] Monosomy) (CD:[47..48] 7))
+      (CC:[49..52] and)
+      (NP (VBG:[53..63] activating) (NN:[64..67] RAS) (NNS:[68..77] mutations)))
+    (VP (VBP:[78..87] accompany)
+      (NP (JJ:[88..97] malignant) (NN:[98..112] transformation))
+      (PP-LOC (IN:[113..115] in)
+        (NP
+          (NP (NNS:[117..125] patients))
+          (PP (IN:[126..130] with)
+            (NP (JJ:[131..141] congenital) (NN:[142..153] neutropenia))))))
+    (.:[153..154] .)))
+
+;section 2 Span:158..268
+;Kalra R, Dale D, Freedman M, Bonilla MA, Weinblatt M, Ganser A, Bowman P,
+;Abish  S, Priest J, Oseas RS, et al.
+(SEC
+  (FRAG (NNP:[158..163] Kalra) (NNP:[164..166] R,) (NNP:[167..171] Dale)
+        (NNP:[172..173] D) (,:[173..174] ,) (NNP:[175..183] Freedman)
+        (NNP:[184..186] M,) (NNP:[187..194] Bonilla) (NNP:[195..197] MA)
+        (,:[197..198] ,) (NNP:[199..208] Weinblatt) (NNP:[209..211] M,)
+        (NNP:[212..218] Ganser) (NNP:[219..220] A) (,:[220..221] ,)
+        (NNP:[222..228] Bowman) (NNP:[229..230] P) (,:[230..231] ,)
+        (NNP:[232..237] Abish) (NNP:[239..241] S,) (NNP:[242..248] Priest)
+        (NNP:[249..251] J,) (NNP:[252..257] Oseas) (NNP:[258..260] RS)
+        (,:[260..261] ,) (DT:[262..264] et) (NN:[265..267] al) (.:[267..268] .)))
+
+;section 3 Span:272..355
+;Department of Pediatrics, University of California, San Francisco 94143-0519,
+; USA.
+(SEC
+  (FRAG (NNP:[272..282] Department) (IN:[283..285] of)
+        (NNP:[286..296] Pediatrics) (,:[296..297] ,) (NNP:[298..308] University)
+        (IN:[309..311] of) (NNP:[312..322] California) (,:[322..323] ,)
+        (NNP:[324..327] San) (NNP:[328..337] Francisco) (IN:[338..343] 94143)
+        (JJ:[343..348] -0519) (,:[348..349] ,) (NNP:[351..354] USA)
+        (.:[354..355] .)))
+
+;sentence 4 Span:359..449
+;Individuals with severe forms of congenital neutropenia suffer from recurrent
+; infections.
+;[392..414]:malignancy:"congenital neutropenia"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[359..370] Individuals))
+      (PP (IN:[371..375] with)
+        (NP
+          (NP (JJ:[376..382] severe) (NNS:[383..388] forms))
+          (PP (IN:[389..391] of)
+            (NP (JJ:[392..402] congenital) (NN:[403..414] neutropenia))))))
+    (VP (VBP:[415..421] suffer)
+      (PP-CLR (IN:[422..426] from)
+        (NP (JJ:[427..436] recurrent) (NNS:[438..448] infections))))
+    (.:[448..449] .)))
+
+;sentence 5 Span:450..642
+;The therapeutic use of recombinant human granulocyte  colony-stimulating
+;factor (rhG-CSF) to increase the neutrophil count is  associated with fewer
+;infections and an improved quality of life.
+;[473..529]:gene-protein:"recombinant human granulocyte  colony-stimulating
+;factor"
+;[531..538]:gene-protein:"rhG-CSF"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[450..453] The) (JJ:[454..465] therapeutic) (NN:[466..469] use)
+        (S-1 (-NONE-:[469..469] *ICH*)))
+      (PP (IN:[470..472] of)
+        (NP
+          (NP (JJ:[473..484] recombinant) (JJ:[485..490] human)
+            (ADJP
+              (NML (NN:[491..502] granulocyte) (NN:[504..510] colony))
+              (HYPH:[510..511] -) (VBG:[511..522] stimulating))
+            (NN:[523..529] factor))
+          (NP (-LRB-:[530..531] -LRB-) (NN:[531..538] rhG-CSF)
+              (-RRB-:[538..539] -RRB-))))
+      (S-1
+        (NP-SBJ (-NONE-:[539..539] *))
+        (VP (TO:[540..542] to)
+          (VP (VB:[543..551] increase)
+            (NP (DT:[552..555] the) (NN:[556..566] neutrophil)
+                (NN:[567..572] count))))))
+    (VP (VBZ:[573..575] is)
+      (VP (JJ:[577..587] associated)
+        (NP-2 (-NONE-:[587..587] *))
+        (PP-CLR (IN:[588..592] with)
+          (NP
+            (NP (JJR:[593..598] fewer) (NNS:[599..609] infections))
+            (CC:[610..613] and)
+            (NP
+              (NP (DT:[614..616] an) (JJ:[617..625] improved)
+                  (NN:[626..633] quality))
+              (PP (IN:[634..636] of)
+                (NP (NN:[637..641] life))))))))
+    (.:[641..642] .)))
+
+;sentence 6 Span:643..715
+;However, the  long-term effects of this new therapy are largely unknown.
+(SENT
+  (S
+    (ADVP (RB:[643..650] However))
+    (,:[650..651] ,)
+    (NP-SBJ
+      (NP (DT:[652..655] the) (JJ:[657..666] long-term) (NNS:[667..674] effects))
+      (PP (IN:[675..677] of)
+        (NP (DT:[678..682] this) (JJ:[683..686] new) (NN:[687..694] therapy))))
+    (VP (VBP:[695..698] are)
+      (ADVP (RB:[699..706] largely))
+      (ADJP-PRD (JJ:[707..714] unknown)))
+    (.:[714..715] .)))
+
+;sentence 7 Span:716..948
+;In particular, it is  unclear if myeloid leukemia, a known complication of
+;some forms of congenital  neutropenia, will occur with increased frequency
+;among patients who receive  long-term treatment with hematopoietic growth
+;factors.
+;[749..765]:malignancy:"myeloid leukemia"
+;[805..828]:malignancy:"congenital  neutropenia"
+;[919..947]:gene-protein:"hematopoietic growth factors"
+(SENT
+  (S
+    (PP (IN:[716..718] In)
+      (NP (JJ:[719..729] particular)))
+    (,:[729..730] ,)
+    (NP-SBJ
+      (NP (PRP:[731..733] it))
+      (SBAR-1 (-NONE-:[733..733] *EXP*)))
+    (VP (VBZ:[734..736] is)
+      (ADJP-PRD (JJ:[738..745] unclear))
+      (SBAR-1 (IN:[746..748] if)
+        (S
+          (NP-SBJ
+            (NP (JJ:[749..756] myeloid) (NN:[757..765] leukemia))
+            (,:[765..766] ,)
+            (NP
+              (NP (DT:[767..768] a) (JJ:[769..774] known)
+                  (NN:[775..787] complication))
+              (PP (IN:[788..790] of)
+                (NP
+                  (NP (DT:[791..795] some) (NNS:[796..801] forms))
+                  (PP (IN:[802..804] of)
+                    (NP (JJ:[805..815] congenital) (NN:[817..828] neutropenia)))))))
+          (,:[828..829] ,)
+          (VP (MD:[830..834] will)
+            (VP (VB:[835..840] occur)
+              (PP (IN:[841..845] with)
+                (NP (JJ:[846..855] increased) (NN:[856..865] frequency)))
+              (PP (IN:[866..871] among)
+                (NP
+                  (NP (NNS:[872..880] patients))
+                  (SBAR
+                    (WHNP-2 (WP:[881..884] who))
+                    (S
+                      (NP-SBJ-2 (-NONE-:[884..884] *T*))
+                      (VP (VBP:[885..892] receive)
+                        (NP
+                          (NP (JJ:[894..903] long-term)
+                              (NN:[904..913] treatment))
+                          (PP (IN:[914..918] with)
+                            (NP (JJ:[919..932] hematopoietic)
+                                (NN:[933..939] growth) (NNS:[940..947] factors))))))))))))))
+    (.:[947..948] .)))
+
+;sentence 8 Span:949..1241
+;We report 13 patients  with congenital disorders of myelopoiesis who
+;developed leukemic transformation  with either myelodysplastic syndrome (MDS)
+;or acute myelogenous leukemia (AML)  and 1 who acquired a clonal cytogenetic
+;abnormality without evidence of MDS or  AML while receiving rhG-CSF.
+;[977..1013]:malignancy:"congenital disorders of myelopoiesis"
+;[1065..1089]:malignancy:"myelodysplastic syndrome"
+;[1091..1095]:malignancy:"MDS)"
+;[1099..1125]:malignancy:"acute myelogenous leukemia"
+;[1127..1130]:malignancy:"AML"
+;[1205..1208]:malignancy:"MDS"
+;[1213..1216]:malignancy:"AML"
+;[1233..1240]:gene-protein:"rhG-CSF"
+(SENT
+  (S
+    (NP-SBJ (PRP:[949..951] We))
+    (VP (VBP:[952..958] report)
+      (NP
+        (NP
+          (NP (CD:[959..961] 13)
+            (NML-2 (NNS:[962..970] patients)))
+          (PP (IN:[972..976] with)
+            (NP
+              (NP
+                (NP (JJ:[977..987] congenital) (NNS:[988..997] disorders))
+                (PP (IN:[998..1000] of)
+                  (NP (NN:[1001..1013] myelopoiesis))))
+              (SBAR
+                (WHNP-1 (WP:[1014..1017] who))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1017..1017] *T*))
+                  (VP (VBD:[1018..1027] developed)
+                    (NP
+                      (NP (JJ:[1028..1036] leukemic)
+                          (NN:[1037..1051] transformation))
+                      (PP (IN:[1053..1057] with)
+                        (NP (CC:[1058..1064] either)
+                          (NP
+                            (NP (JJ:[1065..1080] myelodysplastic)
+                                (NN:[1081..1089] syndrome))
+                            (NP (-LRB-:[1090..1091] -LRB-)
+                               (NN:[1091..1094] MDS) (-RRB-:[1094..1095] -RRB-)))
+                          (CC:[1096..1098] or)
+                          (NP
+                            (NP (JJ:[1099..1104] acute)
+                                (JJ:[1105..1116] myelogenous)
+                                (NN:[1117..1125] leukemia))
+                            (NP (-LRB-:[1126..1127] -LRB-) (NN:[1127..1130] AML)
+                                (-RRB-:[1130..1131] -RRB-))))))))))))
+        (CC:[1133..1136] and)
+        (NP
+          (NP (CD:[1137..1138] 1)
+            (NML-2 (-NONE-:[1138..1138] *P*)))
+          (SBAR
+            (WHNP-3 (WP:[1139..1142] who))
+            (S
+              (NP-SBJ-3 (-NONE-:[1142..1142] *T*))
+              (VP (VBD:[1143..1151] acquired)
+                (NP
+                  (NP (DT:[1152..1153] a) (JJ:[1154..1160] clonal)
+                      (JJ:[1161..1172] cytogenetic)
+                      (NN:[1173..1184] abnormality))
+                  (PP (IN:[1185..1192] without)
+                    (NP
+                      (NP (NN:[1193..1201] evidence))
+                      (PP (IN:[1202..1204] of)
+                        (NP (NN:[1205..1208] MDS) (CC:[1209..1211] or)
+                            (NN:[1213..1216] AML))))))
+                (SBAR-ADV (IN:[1217..1222] while)
+                  (S
+                    (NP-SBJ-3 (-NONE-:[1222..1222] *))
+                    (VP (VBG:[1223..1232] receiving)
+                      (NP (NN:[1233..1240] rhG-CSF)))))))))))
+    (.:[1240..1241] .)))
+
+;sentence 9 Span:1242..1328
+;The bone marrows of 10 patients showed monosomy 7  and 5 had activating RAS
+;mutations.
+;[1281..1289]:variation-type:"monosomy"
+;[1290..1291]:variation-location:"7"
+;[1314..1317]:gene-rna:"RAS"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1242..1245] The) (NN:[1246..1250] bone)
+            (NNS:[1251..1258] marrows))
+        (PP (IN:[1259..1261] of)
+          (NP (CD:[1262..1264] 10) (NNS:[1265..1273] patients))))
+      (VP (VBD:[1274..1280] showed)
+        (NP (NN:[1281..1289] monosomy) (CD:[1290..1291] 7))))
+    (CC:[1293..1296] and)
+    (S
+      (NP-SBJ (CD:[1297..1298] 5))
+      (VP (VBD:[1299..1302] had)
+        (NP (VBG:[1303..1313] activating) (NN:[1314..1317] RAS)
+            (NNS:[1318..1327] mutations))))
+    (.:[1327..1328] .)))
+
+;sentence 10 Span:1329..1500
+;These abnormalities were not detected in  pretreatment bone marrows and
+;cessation of rhG-CSF was not associated with  either clinical improvement or
+;cytogenetic remission.
+;[1414..1421]:gene-protein:"rhG-CSF"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[1329..1334] These) (NNS:[1335..1348] abnormalities))
+      (VP (VBD:[1349..1353] were) (RB:[1354..1357] not)
+        (VP (VBN:[1358..1366] detected)
+          (NP-1 (-NONE-:[1366..1366] *))
+          (PP-LOC (IN:[1367..1369] in)
+            (NP (NN:[1371..1383] pretreatment) (NN:[1384..1388] bone)
+                (NNS:[1389..1396] marrows))))))
+    (CC:[1397..1400] and)
+    (S
+      (NP-SBJ-2
+        (NP (NN:[1401..1410] cessation))
+        (PP (IN:[1411..1413] of)
+          (NP (NN:[1414..1421] rhG-CSF))))
+      (VP (VBD:[1422..1425] was) (RB:[1426..1429] not)
+        (VP (JJ:[1430..1440] associated)
+          (NP-2 (-NONE-:[1440..1440] *))
+          (PP-CLR (IN:[1441..1445] with)
+            (NP (CC:[1447..1453] either)
+              (NP (JJ:[1454..1462] clinical) (NN:[1463..1474] improvement))
+              (CC:[1475..1477] or)
+              (NP (JJ:[1478..1489] cytogenetic) (NN:[1490..1499] remission)))))))
+    (.:[1499..1500] .)))
+
+;sentence 11 Span:1501..1627
+;We conclude that patients  with severe forms of congenital neutropenia are at
+;relatively high risk of  developing MDS and AML.
+;[1549..1571]:malignancy:"congenital neutropenia"
+;[1615..1618]:malignancy:"MDS"
+;[1623..1626]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1501..1503] We))
+    (VP (VBP:[1504..1512] conclude)
+      (SBAR (IN:[1513..1517] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1518..1526] patients))
+            (PP (IN:[1528..1532] with)
+              (NP
+                (NP (JJ:[1533..1539] severe) (NNS:[1540..1545] forms))
+                (PP (IN:[1546..1548] of)
+                  (NP (JJ:[1549..1559] congenital) (NN:[1560..1571] neutropenia))))))
+          (VP (VBP:[1572..1575] are)
+            (PP-PRD (IN:[1576..1578] at)
+              (NP
+                (NP
+                  (ADJP (RB:[1579..1589] relatively) (JJ:[1590..1594] high))
+                  (NN:[1595..1599] risk))
+                (PP (IN:[1600..1602] of)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[1602..1602] *))
+                    (VP (VBG:[1604..1614] developing)
+                      (NP (NN:[1615..1618] MDS) (CC:[1619..1622] and)
+                          (NN:[1623..1626] AML)))))))))))
+    (.:[1626..1627] .)))
+
+;sentence 12 Span:1628..1803
+;The occurrence of monosomy 7 and RAS mutations in these  cases suggests that
+;the myeloid progenitors of some patients are genetically  predisposed to
+;malignant transformation.
+;[1646..1654]:variation-type:"monosomy"
+;[1655..1656]:variation-location:"7"
+;[1661..1664]:gene-rna:"RAS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1628..1631] The) (NN:[1632..1642] occurrence))
+      (PP (IN:[1643..1645] of)
+        (NP
+          (NP
+            (NP (NN:[1646..1654] monosomy) (CD:[1655..1656] 7))
+            (CC:[1657..1660] and)
+            (NP (NN:[1661..1664] RAS) (NNS:[1665..1674] mutations)))
+          (PP (IN:[1675..1677] in)
+            (NP (DT:[1678..1683] these) (NNS:[1685..1690] cases))))))
+    (VP (VBZ:[1691..1699] suggests)
+      (SBAR (IN:[1700..1704] that)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[1705..1708] the) (JJ:[1709..1716] myeloid)
+                (NNS:[1717..1728] progenitors))
+            (PP (IN:[1729..1731] of)
+              (NP (DT:[1732..1736] some) (NNS:[1737..1745] patients))))
+          (VP (VBP:[1746..1749] are)
+            (ADVP (RB:[1750..1761] genetically))
+            (VP (JJ:[1763..1774] predisposed)
+              (NP-1 (-NONE-:[1774..1774] *))
+              (PP-CLR (TO:[1775..1777] to)
+                (NP (JJ:[1778..1787] malignant) (NN:[1788..1802] transformation))))))))
+    (.:[1802..1803] .)))
+
+;sentence 13 Span:1804..1925
+;The relationship between therapeutic  rhG-CSF and leukemogenesis in patients
+;with severe chronic neutropenia is  unclear.
+;[1842..1849]:gene-protein:"rhG-CSF"
+;[1886..1912]:malignancy:"severe chronic neutropenia"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1804..1807] The) (NN:[1808..1820] relationship))
+      (PP (IN:[1821..1828] between)
+        (NP
+          (NP
+            (NP (JJ:[1829..1840] therapeutic) (NN:[1842..1849] rhG-CSF))
+            (CC:[1850..1853] and)
+            (NP (NN:[1854..1868] leukemogenesis)))
+          (PP-LOC (IN:[1869..1871] in)
+            (NP
+              (NP (NNS:[1872..1880] patients))
+              (PP (IN:[1881..1885] with)
+                (NP (JJ:[1886..1892] severe) (JJ:[1893..1900] chronic)
+                    (NN:[1901..1912] neutropenia))))))))
+    (VP (VBZ:[1913..1915] is)
+      (ADJP-PRD (JJ:[1917..1924] unclear)))
+    (.:[1924..1925] .)))
+
+;section 14 Span:1929..1973
+;PMID: 8541548 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1929..1933] PMID) (::[1933..1934] :) (CD:[1935..1942] 8541548)
+        (NN:[1943..1944] -LSB-) (NNP:[1944..1950] PubMed) (::[1951..1952] -)
+        (NN:[1953..1960] indexed) (IN:[1961..1964] for)
+        (NNP:[1965..1973] MEDLINE-RSB-)))

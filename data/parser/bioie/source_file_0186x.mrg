@@ -1,0 +1,383 @@
+;PMID: 11179836
+;source_file_578.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..100] = [t:43..100]
+;2)section:[e:104..179] = [t:104..179]
+;3)section:[e:183..327] = [t:183..327]
+;4)sentence:[e:331..605] = [t:331..605]
+;5)sentence:[e:606..760] = [t:606..760]
+;6)sentence:[e:761..888] = [t:761..888]
+;7)sentence:[e:889..1117] = [t:889..1117]
+;8)sentence:[e:1118..1250] = [t:1118..1250]
+;9)sentence:[e:1251..1402] = [t:1251..1402]
+;10)sentence:[e:1403..1524] = [t:1403..1524]
+;11)sentence:[e:1525..1640] = [t:1525..1640]
+;12)section:[e:1644..1689] = [t:1644..1689]
+
+;section 0 Span:0..38
+;Cancer Lett  2001 Mar 26;164(2):207-12
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..11] Lett) (CD:[13..17] 2001)
+        (IN:[18..21] Mar) (CD:[22..27] 26;16) (CD:[27..28] 4)
+        (-LRB-:[28..29] -LRB-) (CD:[29..30] 2) (-RRB-:[30..31] -RRB-)
+        (VBP:[31..32] :) (CD:[32..34] 20) (CD:[34..38] 7-12)))
+
+;sentence 1 Span:43..100
+;K-ras exon 2 point mutations in human endometrial cancer.
+;[43..48]:gene-rna:"K-ras"
+;[49..55]:variation-location:"exon 2"
+;[56..71]:variation-type:"point mutations"
+;[81..99]:malignancy:"endometrial cancer"
+(SENT
+  (NP-HLN
+    (NP (NN:[43..48] K-ras)
+      (NML (NN:[49..53] exon) (CD:[54..55] 2))
+       (NN:[56..61] point) (NNS:[62..71] mutations))
+    (PP (IN:[72..74] in)
+      (NP (JJ:[75..80] human)
+         (JJ:[81..92] endometrial) (NN:[93..99] cancer)))
+    (.:[99..100] .)))
+
+;section 2 Span:104..179
+;Semczuk A, Schneider-Stock R, Berbec H, Marzec B, Jakowicki JA, Roessner A.
+(SEC
+  (FRAG (NNP:[104..111] Semczuk) (NNP:[112..113] A) (,:[113..114] ,)
+        (NNP:[115..123] Schneide) (NNP:[123..130] r-Stock) (NNP:[131..132] R)
+        (,:[132..133] ,) (NNP:[134..140] Berbec) (NNP:[141..143] H,)
+        (NNP:[144..150] Marzec) (NNP:[151..152] B) (,:[152..153] ,)
+        (NNP:[154..163] Jakowicki) (NNP:[164..166] JA) (,:[166..167] ,)
+        (NNP:[168..176] Roessner) (NN:[177..179] A.)))
+
+;section 3 Span:183..327
+;Second Department of Gynecological Surgery, Lublin School of Medicine,
+;Jaczewski  street 8, 20-954, Lublin, Poland. tomek@asklepios.am.lublin.pl
+(SEC
+  (FRAG (NNP:[183..189] Second) (NNP:[190..200] Department) (IN:[201..203] of)
+        (NNP:[204..217] Gynecological) (NNP:[218..225] Surgery) (,:[225..226] ,)
+        (NNP:[227..233] Lublin) (NNP:[234..240] School) (IN:[241..243] of)
+        (NNP:[244..252] Medicine) (,:[252..253] ,) (DT:[254..263] Jaczewski)
+        (NN:[265..271] street) (CD:[272..273] 8) (,:[273..274] ,)
+        (CD:[275..276] 2) (CD:[276..281] 0-954) (,:[281..282] ,)
+        (NNP:[283..289] Lublin) (,:[289..290] ,) (NNP:[291..297] Poland)
+        (.:[297..298] .) (NNP:[299..314] tomek@asklepios)
+        (.:[314..327] .am.lublin.pl)))
+
+;sentence 4 Span:331..605
+;In the present study, we screened for the K-ras exon 2 point mutations in a 
+;group of 87 gynecological neoplasms (82 endometrial carcinomas, four
+;carcinomas  of the uterine cervix and one uterine carcinosarcoma) using the
+;non-isotopic  PCR-SSCP-direct sequencing techniques.
+;[373..378]:gene-rna:"K-ras"
+;[379..385]:variation-location:"exon 2"
+;[386..401]:variation-type:"point mutations"
+;[420..443]:malignancy:"gynecological neoplasms"
+;[448..470]:malignancy:"endometrial carcinomas"
+;[477..510]:malignancy:"carcinomas  of the uterine cervix"
+;[519..541]:malignancy:"uterine carcinosarcoma"
+(SENT
+  (S
+    (PP (IN:[331..333] In)
+      (NP (DT:[334..337] the) (JJ:[338..345] present) (NN:[346..351] study)))
+    (,:[351..352] ,)
+    (NP-SBJ (PRP:[353..355] we))
+    (VP (VBD:[356..364] screened)
+      (PP-CLR (IN:[365..368] for)
+        (NP (DT:[369..372] the) (NN:[373..378] K-ras)
+          (NML (NN:[379..383] exon) (CD:[384..385] 2))
+           (NN:[386..391] point) (NNS:[392..401] mutations)))
+      (PP (IN:[402..404] in)
+        (NP
+          (NP (DT:[405..406] a) (NN:[408..413] group))
+          (PP (IN:[414..416] of)
+            (NP (CD:[417..419] 87)
+               (JJ:[420..433] gynecological) (NNS:[434..443] neoplasms)
+              (PRN (-LRB-:[444..445] -LRB-)
+                (NP
+                  (NP (CD:[445..447] 82)
+                     (JJ:[448..459] endometrial) (NNS:[460..470] carcinomas))
+                  (,:[470..471] ,)
+                  (NP
+                    (NP (CD:[472..476] four) (NNS:[477..487] carcinomas))
+                    (PP (IN:[489..491] of)
+                      (NP (DT:[492..495] the) (JJ:[496..503] uterine)
+                          (NN:[504..510] cervix))))
+                  (CC:[511..514] and)
+                  (NP (CD:[515..518] one)
+                     (JJ:[519..526] uterine) (NN:[527..541] carcinosarcoma)))
+                (-RRB-:[541..542] -RRB-))))))
+      (S-MNR
+        (NP-SBJ (-NONE-:[542..542] *))
+        (VP (VBG:[543..548] using)
+          (NP (DT:[549..552] the)
+            (NML (AFX:[553..556] non) (HYPH:[556..557] -)
+                 (JJ:[557..565] isotopic))
+            (NML
+              (NML (NN:[567..575] PCR-SSCP))
+              (HYPH:[575..576] -)
+              (NML (JJ:[576..582] direct) (NN:[583..593] sequencing)))
+            (NNS:[594..604] techniques)))))
+    (.:[604..605] .)))
+
+;sentence 5 Span:606..760
+;Direct sequencing analysis revealed  CAA-->CAC (Gln-->His) K-ras codon 61
+;point mutations in two (2.4%) of the 82  endometrial carcinomas mentioned
+;above.
+;[643..646]:variation-state-original:"CAA"
+;[649..652]:variation-state-altered:"CAC"
+;[654..657]:variation-state-original:"Gln"
+;[660..663]:variation-state-altered:"His"
+;[665..670]:gene-rna:"K-ras"
+;[671..679]:variation-location:"codon 61"
+;[680..695]:variation-type:"point mutations"
+;[721..743]:malignancy:"endometrial carcinomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[606..612] Direct) (NN:[613..623] sequencing))
+      (NN:[624..632] analysis))
+    (VP (VBD:[633..641] revealed)
+      (NP
+        (NML
+          (NML (NN:[643..646] CAA))
+          (PP (SYM:[646..649] -->)
+            (NP (NN:[649..652] CAC))))
+        (PRN (-LRB-:[653..654] -LRB-)
+          (NP
+            (NP (NN:[654..657] Gln))
+            (PP (SYM:[657..660] -->)
+              (NP (NN:[660..663] His))))
+          (-RRB-:[663..664] -RRB-))
+        (NN:[665..670] K-ras)
+        (NML (NN:[671..676] codon) (CD:[677..679] 61))
+         (NN:[680..685] point) (NNS:[686..695] mutations))
+      (PP-LOC (IN:[696..698] in)
+        (NP
+          (NP (CD:[699..702] two)
+            (PRN (-LRB-:[703..704] -LRB-)
+              (NP (CD:[704..707] 2.4) (NN:[707..708] %))
+              (-RRB-:[708..709] -RRB-)))
+          (PP (IN:[710..712] of)
+            (NP
+              (NP (DT:[713..716] the) (CD:[717..719] 82)
+                 (JJ:[721..732] endometrial) (NNS:[733..743] carcinomas))
+              (VP (VBN:[744..753] mentioned)
+                (NP (-NONE-:[753..753] *))
+                (PP (IN:[754..759] above))))))))
+    (.:[759..760] .)))
+
+;sentence 6 Span:761..888
+;These two cases were endometrial  endometrioid carcinomas at an early
+;clinical stage of disease (stage IB and IC  due to FIGO).
+;[782..887]:malignancy:"endometrial  endometrioid carcinomas at an early
+;clinical stage of disease (stage IB and IC  due to FIGO)"
+(SENT
+  (S
+    (NP-SBJ (DT:[761..766] These) (CD:[767..770] two) (NNS:[771..776] cases))
+    (VP (VBD:[777..781] were)
+      (NP-PRD
+        (NP (JJ:[782..793] endometrial) (JJ:[795..807] endometrioid)
+            (NNS:[808..818] carcinomas))
+        (PP (IN:[819..821] at)
+          (NP
+            (NP (DT:[822..824] an) (JJ:[825..830] early)
+                (JJ:[831..839] clinical) (NN:[840..845] stage))
+            (PP (IN:[846..848] of)
+              (NP (NN:[849..856] disease)
+                (PRN (-LRB-:[857..858] -LRB-)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[858..863] stage))
+                      (NN:[864..866] IB))
+                    (CC:[867..870] and)
+                    (NP
+                      (NML-1 (-NONE-:[870..870] *P*))
+                      (NN:[871..873] IC)))
+                  (PP (JJ:[875..878] due)
+                    (PP (TO:[879..881] to)
+                      (NP (NN:[882..886] FIGO))))
+                  (-RRB-:[886..887] -RRB-))))))))
+    (.:[887..888] .)))
+
+;sentence 7 Span:889..1117
+;Those endometrial carcinomas that showed K-ras exon 2 point  mutations
+;revealed a strong positivity for heterogeneous nuclear retinoblastoma 
+;protein staining; none of these, however, have had the K-ras codon 12 point 
+;mutation.
+;[895..917]:malignancy:"endometrial carcinomas"
+;[930..935]:gene-rna:"K-ras"
+;[936..942]:variation-location:"exon 2"
+;[943..959]:variation-type:"point  mutations"
+;[1086..1091]:gene-rna:"K-ras"
+;[1092..1100]:variation-location:"codon 12"
+;[1101..1116]:variation-type:"point  mutation"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[889..894] Those)
+           (JJ:[895..906] endometrial) (NNS:[907..917] carcinomas))
+        (SBAR
+          (WHNP-1 (WDT:[918..922] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[922..922] *T*))
+            (VP (VBD:[923..929] showed)
+              (NP (NN:[930..935] K-ras)
+                (NML (NN:[936..940] exon) (CD:[941..942] 2))
+                 (NN:[943..948] point) (NNS:[950..959] mutations))))))
+      (VP (VBD:[960..968] revealed)
+        (NP
+          (NP (DT:[969..970] a) (JJ:[971..977] strong)
+              (NN:[978..988] positivity))
+          (PP (IN:[989..992] for)
+            (NP (JJ:[993..1006] heterogeneous)
+              (NML (JJ:[1007..1014] nuclear) (NN:[1015..1029] retinoblastoma))
+              (NN:[1031..1038] protein) (NN:[1039..1047] staining))))))
+    (::[1047..1048] ;)
+    (S
+      (NP-SBJ
+        (NP (NN:[1049..1053] none))
+        (PP (IN:[1054..1056] of)
+          (NP (DT:[1057..1062] these))))
+      (,:[1062..1063] ,)
+      (ADVP (RB:[1064..1071] however))
+      (,:[1071..1072] ,)
+      (VP (VBP:[1073..1077] have)
+        (VP (VBN:[1078..1081] had)
+          (NP (DT:[1082..1085] the) (NN:[1086..1091] K-ras)
+            (NML (NN:[1092..1097] codon) (CD:[1098..1100] 12))
+             (NN:[1101..1106] point) (NN:[1108..1116] mutation)))))
+    (.:[1116..1117] .)))
+
+;sentence 8 Span:1118..1250
+;In addition, there were no K-ras gene point mutations in three  endometrial
+;carcinomas lacking the Rb protein immunohistochemically.
+;[1145..1150]:gene-rna:"K-ras"
+;[1156..1171]:variation-type:"point mutations"
+;[1182..1249]:malignancy:"endometrial carcinomas lacking the Rb protein
+;immunohistochemically"
+(SENT
+  (S
+    (PP (IN:[1118..1120] In)
+      (NP (NN:[1121..1129] addition)))
+    (,:[1129..1130] ,)
+    (NP-SBJ (EX:[1131..1136] there))
+    (VP (VBD:[1137..1141] were)
+      (NP-PRD
+        (NP (DT:[1142..1144] no)
+          (NML (NN:[1145..1150] K-ras) (NN:[1151..1155] gene))
+           (NN:[1156..1161] point) (NNS:[1162..1171] mutations))
+        (PP (IN:[1172..1174] in)
+          (NP
+            (NP (CD:[1175..1180] three) (JJ:[1182..1193] endometrial)
+                (NNS:[1194..1204] carcinomas))
+            (VP (VBG:[1205..1212] lacking)
+              (NP (DT:[1213..1216] the) (NN:[1217..1219] Rb)
+                  (NN:[1220..1227] protein))
+              (ADVP (RB:[1228..1249] immunohistochemically)))))))
+    (.:[1249..1250] .)))
+
+;sentence 9 Span:1251..1402
+;None of the  cervical carcinomas tested had K-ras gene point mutations,
+;whereas one  carcinosarcoma harbored K-ras codon 61 point mutation
+;(CAA-->CAC).
+;[1264..1283]:malignancy:"cervical carcinomas"
+;[1295..1300]:gene-rna:"K-ras"
+;[1306..1321]:variation-type:"point mutations"
+;[1336..1350]:malignancy:"carcinosarcoma"
+;[1360..1365]:gene-rna:"K-ras"
+;[1366..1374]:variation-location:"codon 61"
+;[1375..1389]:variation-type:"point mutation"
+;[1391..1394]:variation-state-original:"CAA"
+;[1397..1400]:variation-state-altered:"CAC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1251..1255] None))
+      (PP (IN:[1256..1258] of)
+        (NP
+          (NP (DT:[1259..1262] the)
+             (JJ:[1264..1272] cervical) (NNS:[1273..1283] carcinomas))
+          (VP (VBN:[1284..1290] tested)
+            (NP (-NONE-:[1290..1290] *))))))
+    (VP (VBD:[1291..1294] had)
+      (NP
+        (NML (NN:[1295..1300] K-ras) (NN:[1301..1305] gene))
+         (NN:[1306..1311] point) (NNS:[1312..1321] mutations))
+      (,:[1321..1322] ,)
+      (SBAR-ADV (IN:[1323..1330] whereas)
+        (S
+          (NP-SBJ (CD:[1331..1334] one) (NN:[1336..1350] carcinosarcoma))
+          (VP (VBD:[1351..1359] harbored)
+            (NP (NN:[1360..1365] K-ras)
+              (NML (NN:[1366..1371] codon) (CD:[1372..1374] 61))
+               (NN:[1375..1380] point) (NN:[1381..1389] mutation)
+              (PRN (-LRB-:[1390..1391] -LRB-)
+                (NP
+                  (NP (NN:[1391..1394] CAA))
+                  (PP (SYM:[1394..1397] -->)
+                    (NP (NN:[1397..1400] CAC))))
+                (-RRB-:[1400..1401] -RRB-)))))))
+    (.:[1401..1402] .)))
+
+;sentence 10 Span:1403..1524
+;In  conclusion, our data support the view that K-ras exon 2 point mutations
+;are rare  events in human endometrial cancer.
+;[1450..1455]:gene-rna:"K-ras"
+;[1456..1462]:variation-location:"exon 2"
+;[1463..1478]:variation-type:"point mutations"
+;[1505..1523]:malignancy:"endometrial cancer"
+(SENT
+  (S
+    (PP (IN:[1403..1405] In)
+      (NP (NN:[1407..1417] conclusion)))
+    (,:[1417..1418] ,)
+    (NP-SBJ (PRP$:[1419..1422] our) (NNS:[1423..1427] data))
+    (VP (VBP:[1428..1435] support)
+      (NP (DT:[1436..1439] the) (NN:[1440..1444] view)
+        (SBAR (IN:[1445..1449] that)
+          (S
+            (NP-SBJ (NN:[1450..1455] K-ras)
+              (NML (NN:[1456..1460] exon) (CD:[1461..1462] 2))
+               (NN:[1463..1468] point) (NNS:[1469..1478] mutations))
+            (VP (VBP:[1479..1482] are)
+              (NP-PRD (JJ:[1483..1487] rare) (NNS:[1489..1495] events))
+              (PP (IN:[1496..1498] in)
+                (NP (JJ:[1499..1504] human)
+                   (JJ:[1505..1516] endometrial) (NN:[1517..1523] cancer))))))))
+    (.:[1523..1524] .)))
+
+;sentence 11 Span:1525..1640
+;Rb and K-ras gene abnormalities may occur  independently of each other during
+;endometrial carcinogenesis in humans.
+;[1525..1527]:gene-rna:"Rb"
+;[1532..1537]:gene-rna:"K-ras"
+;[1603..1629]:malignancy:"endometrial carcinogenesis"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1525..1527] Rb))
+      (CC:[1528..1531] and)
+      (NP
+        (NML (NN:[1532..1537] K-ras) (NN:[1538..1542] gene))
+        (NNS:[1543..1556] abnormalities)))
+    (VP (MD:[1557..1560] may)
+      (VP (VB:[1561..1566] occur)
+        (ADVP (RB:[1568..1581] independently)
+          (PP (IN:[1582..1584] of)
+            (NP (DT:[1585..1589] each) (JJ:[1590..1595] other))))
+        (PP-TMP (IN:[1596..1602] during)
+          (NP (JJ:[1603..1614] endometrial) (NN:[1615..1629] carcinogenesis)))
+        (PP-LOC (IN:[1630..1632] in)
+          (NP (NNS:[1633..1639] humans)))))
+    (.:[1639..1640] .)))
+
+;section 12 Span:1644..1689
+;PMID: 11179836 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1644..1648] PMID) (::[1648..1649] :) (CD:[1650..1658] 11179836)
+        (NN:[1659..1660] -LSB-) (NNP:[1660..1666] PubMed) (::[1667..1668] -)
+        (NN:[1669..1676] indexed) (IN:[1677..1680] for)
+        (NNP:[1681..1689] MEDLINE-RSB-)))

@@ -1,0 +1,540 @@
+;PMID: 7927179
+;source_file_501.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)section:[e:49..148] = [t:49..148]
+;2)section:[e:152..173] = [t:152..173]
+;3)section:[e:177..188] = [t:177..188]
+;4)section:[e:192..287] = [t:192..287]
+;5)sentence:[e:291..636] = [t:291..636]
+;6)sentence:[e:637..1212] = [t:637..1212]
+;7)sentence:[e:1213..1382] = [t:1213..1382]
+;8)sentence:[e:1383..1455] = [t:1383..1455]
+;9)sentence:[e:1456..1540] = [t:1456..1540]
+;10)sentence:[e:1541..1667] = [t:1541..1667]
+;11)sentence:[e:1668..1762] = [t:1668..1762]
+;12)sentence:[e:1763..1968] = [t:1763..1968]
+;13)section:[e:1969..2172] = [t:1969..2172]
+;14)section:[e:2176..2220] = [t:2176..2220]
+
+;section 0 Span:0..44
+;Hokkaido Igaku Zasshi  1994 May;69(3):543-54
+(SEC
+  (FRAG (NNP:[0..8] Hokkaido) (NNP:[9..14] Igaku) (NNP:[15..21] Zasshi)
+        (CD:[23..27] 1994) (IN:[28..33] May;6) (CD:[33..34] 9)
+        (NN:[34..35] -LRB-) (NN:[35..36] 3) (NN:[36..37] -RRB-) (VBZ:[37..38] :)
+        (CD:[38..40] 54) (CD:[40..44] 3-54)))
+
+;section 1 Span:49..148
+;[Molecular study on minute alterations of the p53 and the N-ras genes in 
+;hematologic malignancies]
+;[95..98]:gene-rna:"p53"
+;[107..112]:gene-rna:"N-ras"
+;[123..147]:malignancy:"hematologic malignancies"
+(SEC
+  (NP-HLN (-LRB-:[49..50] -LSB-)
+    (NP (JJ:[50..59] Molecular) (NN:[60..65] study))
+    (PP (IN:[66..68] on)
+      (NP
+        (NP (JJ:[69..75] minute) (NNS:[76..87] alterations))
+        (PP (IN:[88..90] of)
+          (NP
+            (NP (DT:[91..94] the) (NN:[95..98] p53)
+              (NML-1 (-NONE-:[98..98] *P*)))
+            (CC:[99..102] and)
+            (NP (DT:[103..106] the) (NN:[107..112] N-ras)
+              (NML-1 (NNS:[113..118] genes)))))
+        (PP (IN:[119..121] in)
+          (NP (JJ:[123..134] hematologic) (NNS:[135..147] malignancies)))))
+    (-RRB-:[147..148] -RSB-)))
+;ERROR_Entity in section[95..98]:gene-rna "p53"
+;ERROR_Entity in section[107..112]:gene-rna "N-ras"
+;ERROR_Entity in section[123..147]:malignancy "hematologic malignancies"
+
+;section 2 Span:152..173
+;[Article in Japanese]
+(SEC
+  (FRAG (NNS:[152..160] -LSB-Article) (IN:[161..163] in)
+        (JJ:[164..172] Japanese) (NNS:[172..173] -RSB-)))
+
+;section 3 Span:177..188
+;Kurosawa M.
+(SEC
+  (FRAG (NNP:[177..185] Kurosawa) (NNP:[186..188] M.)))
+
+;section 4 Span:192..287
+;Third Department of Internal Medicine, Hokkaido University School of
+;Medicine,  Sapporo, Japan.
+(SEC
+  (FRAG (NNP:[192..197] Third) (NNP:[198..208] Department) (IN:[209..211] of)
+        (NNP:[212..220] Internal) (NNP:[221..229] Medicine) (,:[229..230] ,)
+        (NNP:[231..239] Hokkaido) (NNP:[240..250] University)
+        (NNP:[251..257] School) (IN:[258..260] of) (NNP:[261..269] Medicine)
+        (,:[269..270] ,) (NNP:[272..279] Sapporo) (,:[279..280] ,)
+        (NNP:[281..286] Japan) (.:[286..287] .)))
+
+;sentence 5 Span:291..636
+;Minute alterations of the p53 tumor suppressor gene and N-ras oncogene were 
+;investigated in 106 samples for the p53 gene and 23 samples for the N-ras
+;gene  obtained from patients with various types of hematologic malignancies
+;using  polymerase chain reaction-single strand conformation polymorphism
+;(PCR-SSCP) and  direct nucleotide sequencing.
+;[317..320]:gene-rna:"p53"
+;[321..337]:gene-rna:"tumor suppressor"
+;[347..352]:gene-rna:"N-ras"
+;[388..395]:malignancy:"samples"
+;[404..407]:gene-rna:"p53"
+;[420..427]:malignancy:"samples"
+;[436..441]:gene-rna:"N-ras"
+;[493..517]:malignancy:"hematologic malignancies"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[291..297] Minute) (NNS:[298..309] alterations))
+      (PP (IN:[310..312] of)
+        (NP
+          (NP (DT:[313..316] the) (NN:[317..320] p53)
+            (NML (NN:[321..326] tumor) (NN:[327..337] suppressor))
+            (NN:[338..342] gene))
+          (CC:[343..346] and)
+          (NP (NN:[347..352] N-ras) (NN:[353..361] oncogene)))))
+    (VP (VBD:[362..366] were)
+      (VP (VBN:[368..380] investigated)
+        (NP-1 (-NONE-:[380..380] *))
+        (PP (IN:[381..383] in)
+          (NP
+            (NP
+              (NP
+                (NP (CD:[384..387] 106) (NNS:[388..395] samples))
+                (PP (IN:[396..399] for)
+                  (NP (DT:[400..403] the) (NN:[404..407] p53)
+                      (NN:[408..412] gene))))
+              (CC:[413..416] and)
+              (NP
+                (NP (CD:[417..419] 23) (NNS:[420..427] samples))
+                (PP (IN:[428..431] for)
+                  (NP (DT:[432..435] the) (NN:[436..441] N-ras)
+                      (NN:[442..446] gene)))))
+            (VP (VBN:[448..456] obtained)
+              (NP (-NONE-:[456..456] *))
+              (PP (IN:[457..461] from)
+                (NP
+                  (NP (NNS:[462..470] patients))
+                  (PP (IN:[471..475] with)
+                    (NP
+                      (NP (JJ:[476..483] various) (NNS:[484..489] types))
+                      (PP (IN:[490..492] of)
+                        (NP (JJ:[493..504] hematologic)
+                            (NNS:[505..517] malignancies))))))))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[517..517] *))
+          (VP (VBG:[518..523] using)
+            (NP
+              (NP
+                (NP
+                  (NML (NN:[525..535] polymerase) (NN:[536..541] chain)
+                       (NN:[542..550] reaction))
+                  (HYPH:[550..551] -)
+                  (NML
+                    (NML (JJ:[551..557] single) (NN:[558..564] strand))
+                    (NN:[565..577] conformation) (NN:[578..590] polymorphism)))
+                (NP (-LRB-:[591..592] -LRB-) (NN:[592..600] PCR-SSCP)
+                    (-RRB-:[600..601] -RRB-)))
+              (CC:[602..605] and)
+              (NP (JJ:[607..613] direct) (NN:[614..624] nucleotide)
+                  (NN:[625..635] sequencing)))))))
+    (.:[635..636] .)))
+
+;sentence 6 Span:637..1212
+;Mobility shifts suggesting sequence alteration  were observed in 9 cases
+;(8.5%) in exons 5 through 8 containing evolutionarily  highly conserved
+;regions of the p53 gene by PCR-SSCP; missense point mutations  in 3 cases (1
+;acute myelogenous leukemia (AML), 1 chronic myelogenous leukemia  (CML) in
+;the accelerated phase, and 1 CML in the blast crisis), silent point  mutation
+;in 1 case (malignant lymphoma), and frame shift mutations due to  insertions
+;and deletions causing stop codons in 3 cases (1 AML, 1 CML in the  chronic
+;phase and 1 acute lymphoblastic leukemia (ALL)).
+;[664..683]:variation-event:"sequence alteration"
+;[720..737]:variation-location:"exons 5 through 8"
+;[797..800]:gene-rna:"p53"
+;[819..843]:variation-type:"missense point mutations"
+;[859..885]:malignancy:"acute myelogenous leukemia"
+;[887..890]:malignancy:"AML"
+;[895..955]:malignancy:"chronic myelogenous leukemia  (CML) in the accelerated
+;phase"
+;[963..986]:malignancy:"CML in the blast crisis"
+;[989..1011]:variation-type:"silent point  mutation"
+;[1023..1041]:malignancy:"malignant lymphoma"
+;[1048..1069]:variation-type:"frame shift mutations"
+;[1078..1088]:variation-type:"insertions"
+;[1093..1102]:variation-type:"deletions"
+;[1111..1122]:variation-state-altered:"stop codons"
+;[1137..1140]:malignancy:"AML"
+;[1144..1169]:malignancy:"CML in the  chronic phase"
+;[1176..1204]:malignancy:"acute lymphoblastic leukemia"
+;[1206..1209]:malignancy:"ALL"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2=3
+        (NP (NN:[637..645] Mobility) (NNS:[646..652] shifts))
+        (PP (VBG:[653..663] suggesting)
+          (NP (NN:[664..672] sequence) (NN:[673..683] alteration))))
+      (VP (VBD:[685..689] were)
+        (VP (VBN:[690..698] observed)
+          (NP-2 (-NONE-:[698..698] *))
+          (PP=4 (IN:[699..701] in)
+            (NP
+              (NP
+                (NP (CD:[702..703] 9) (NNS:[704..709] cases)
+                  (PRN (-LRB-:[710..711] -LRB-)
+                    (NP (CD:[711..714] 8.5) (NN:[714..715] %))
+                    (-RRB-:[715..716] -RRB-)))
+                (PP-LOC (IN:[717..719] in)
+                  (NP
+                    (NP
+                      (NML-1 (NNS:[720..725] exons))
+                      (CD:[726..727] 5))
+                    (PP (IN:[728..735] through)
+                      (NP
+                        (NML-1 (-NONE-:[735..735] *P*))
+                        (CD:[736..737] 8))))))
+              (VP (VBG:[738..748] containing)
+                (NP
+                  (NP
+                    (ADJP (RB:[749..763] evolutionarily) (RB:[765..771] highly)
+                          (JJ:[772..781] conserved))
+                    (NNS:[782..789] regions))
+                  (PP (IN:[790..792] of)
+                    (NP (DT:[793..796] the) (NN:[797..800] p53)
+                        (NN:[801..805] gene)))))))
+          (PP-MNR (IN:[806..808] by)
+            (NP (NN:[809..817] PCR-SSCP))))))
+    (::[817..818] ;)
+    (S
+      (NP-SBJ=3 (JJ:[819..827] missense) (NN:[828..833] point)
+                (NNS:[834..843] mutations))
+      (PP=4 (IN:[845..847] in)
+        (NP (CD:[848..849] 3) (NNS:[850..855] cases)
+          (PRN (-LRB-:[856..857] -LRB-)
+            (NP
+              (NP (CD:[857..858] 1)
+                (NML
+                  (NML (JJ:[859..864] acute) (JJ:[865..876] myelogenous)
+                       (NN:[877..885] leukemia))
+                  (NML (-LRB-:[886..887] -LRB-) (NN:[887..890] AML)
+                       (-RRB-:[890..891] -RRB-))))
+              (,:[891..892] ,)
+              (NP
+                (NP (CD:[893..894] 1)
+                  (NML
+                    (NML (JJ:[895..902] chronic) (JJ:[903..914] myelogenous)
+                         (NN:[915..923] leukemia))
+                    (NML (-LRB-:[925..926] -LRB-) (NN:[926..929] CML)
+                         (-RRB-:[929..930] -RRB-))))
+                (PP (IN:[931..933] in)
+                  (NP (DT:[934..937] the) (JJ:[938..949] accelerated)
+                      (NN:[950..955] phase))))
+              (,:[955..956] ,) (CC:[957..960] and)
+              (NP
+                (NP (CD:[961..962] 1) (NN:[963..966] CML))
+                (PP (IN:[967..969] in)
+                  (NP (DT:[970..973] the) (NN:[974..979] blast)
+                      (NN:[980..986] crisis)))))
+            (-RRB-:[986..987] -RRB-)))))
+    (,:[987..988] ,)
+    (S
+      (NP-SBJ=3 (JJ:[989..995] silent) (NN:[996..1001] point)
+                (NN:[1003..1011] mutation))
+      (PP=4 (IN:[1012..1014] in)
+        (NP (CD:[1015..1016] 1) (NN:[1017..1021] case)
+          (PRN (-LRB-:[1022..1023] -LRB-)
+            (NP (JJ:[1023..1032] malignant) (NN:[1033..1041] lymphoma))
+            (-RRB-:[1041..1042] -RRB-)))))
+    (,:[1042..1043] ,) (CC:[1044..1047] and)
+    (S
+      (NP-SBJ=3
+        (NP
+          (NP (NN:[1048..1053] frame) (NN:[1054..1059] shift)
+              (NNS:[1060..1069] mutations))
+          (PP (JJ:[1070..1073] due)
+            (PP (TO:[1074..1076] to)
+              (NP (NNS:[1078..1088] insertions) (CC:[1089..1092] and)
+                  (NNS:[1093..1102] deletions)))))
+        (VP (VBG:[1103..1110] causing)
+          (NP (NN:[1111..1115] stop) (NNS:[1116..1122] codons))))
+      (PP=4 (IN:[1123..1125] in)
+        (NP (CD:[1126..1127] 3) (NNS:[1128..1133] cases)
+          (PRN (-LRB-:[1134..1135] -LRB-)
+            (NP
+              (NP (CD:[1135..1136] 1) (NN:[1137..1140] AML))
+              (,:[1140..1141] ,)
+              (NP
+                (NP (CD:[1142..1143] 1) (NN:[1144..1147] CML))
+                (PP (IN:[1148..1150] in)
+                  (NP (DT:[1151..1154] the) (JJ:[1156..1163] chronic)
+                      (NN:[1164..1169] phase))))
+              (CC:[1170..1173] and)
+              (NP (CD:[1174..1175] 1)
+                (NML
+                  (NML (JJ:[1176..1181] acute) (JJ:[1182..1195] lymphoblastic)
+                       (NN:[1196..1204] leukemia))
+                  (NML (-LRB-:[1205..1206] -LRB-) (NN:[1206..1209] ALL)
+                       (-RRB-:[1209..1210] -RRB-)))))
+            (-RRB-:[1210..1211] -RRB-)))))
+    (.:[1211..1212] .)))
+
+;sentence 7 Span:1213..1382
+;p53 gene alterations  did not always cluster within evolutionarily highly
+;conserved regions, and there  were various base change forms in cases with
+;p53 point mutations.
+;[1213..1216]:gene-rna:"p53"
+;[1330..1341]:variation-type:"base change"
+;[1362..1365]:gene-rna:"p53"
+;[1366..1381]:variation-type:"point mutations"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1213..1216] p53) (NN:[1217..1221] gene)
+              (NNS:[1222..1233] alterations))
+      (VP (VBD:[1235..1238] did) (RB:[1239..1242] not)
+        (ADVP-TMP (RB:[1243..1249] always))
+        (VP (VB:[1250..1257] cluster)
+          (PP (IN:[1258..1264] within)
+            (NP
+              (ADJP (RB:[1265..1279] evolutionarily) (RB:[1280..1286] highly)
+                    (JJ:[1287..1296] conserved))
+              (NNS:[1297..1304] regions))))))
+    (,:[1304..1305] ,) (CC:[1306..1309] and)
+    (S
+      (NP-SBJ (EX:[1310..1315] there))
+      (VP (VBD:[1317..1321] were)
+        (NP-PRD (JJ:[1322..1329] various)
+          (NML (NN:[1330..1334] base) (NN:[1335..1341] change))
+          (NNS:[1342..1347] forms))
+        (PP (IN:[1348..1350] in)
+          (NP
+            (NP (NNS:[1351..1356] cases))
+            (PP (IN:[1357..1361] with)
+              (NP (NN:[1362..1365] p53)
+                 (NN:[1366..1371] point) (NNS:[1372..1381] mutations)))))))
+    (.:[1381..1382] .)))
+
+;sentence 8 Span:1383..1455
+;p53 mutations  were detected in 2 cases out of 4 cases with 17 monosomy.
+;[1383..1386]:gene-rna:"p53"
+;[1446..1454]:variation-type:"monosomy"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1383..1386] p53) (NNS:[1387..1396] mutations))
+    (VP (VBD:[1398..1402] were)
+      (VP (VBN:[1403..1411] detected)
+        (NP-1 (-NONE-:[1411..1411] *))
+        (PP (IN:[1412..1414] in)
+          (NP
+            (NP (CD:[1415..1416] 2) (NNS:[1417..1422] cases))
+            (PP (IN:[1423..1426] out)
+              (PP (IN:[1427..1429] of)
+                (NP
+                  (NP (CD:[1430..1431] 4) (NNS:[1432..1437] cases))
+                  (PP (IN:[1438..1442] with)
+                    (NP (CD:[1443..1445] 17) (NN:[1446..1454] monosomy))))))))))
+    (.:[1454..1455] .)))
+
+;sentence 9 Span:1456..1540
+;There was no case with  p53 gene alteration in myelodysplastic syndrome (MDS)
+;cases.
+;[1480..1483]:gene-rna:"p53"
+;[1503..1527]:malignancy:"myelodysplastic syndrome"
+;[1529..1532]:malignancy:"MDS"
+(SENT
+  (S
+    (NP-SBJ (EX:[1456..1461] There))
+    (VP (VBD:[1462..1465] was)
+      (NP-PRD
+        (NP (DT:[1466..1468] no) (NN:[1469..1473] case))
+        (PP (IN:[1474..1478] with)
+          (NP (NN:[1480..1483] p53) (NN:[1484..1488] gene)
+              (NN:[1489..1499] alteration))))
+      (PP (IN:[1500..1502] in)
+        (NP
+          (NML
+            (NML (JJ:[1503..1518] myelodysplastic) (NN:[1519..1527] syndrome))
+            (NML (-LRB-:[1528..1529] -LRB-) (NN:[1529..1532] MDS)
+                 (-RRB-:[1532..1533] -RRB-)))
+          (NNS:[1534..1539] cases))))
+    (.:[1539..1540] .)))
+
+;sentence 10 Span:1541..1667
+;Mobility shifts  suggesting sequence alteration were observed in 5 cases
+;(22%) in exon 1 and 2 of  the N-ras gene by PCR-SSCP.
+;[1569..1588]:variation-event:"sequence alteration"
+;[1623..1629]:variation-location:"exon 1"
+;[1623..1627]...[1634..1635]:variation-location:"exon"..."2"
+;[1644..1649]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1541..1549] Mobility) (NNS:[1550..1556] shifts))
+      (VP (VBG:[1558..1568] suggesting)
+        (NP (NN:[1569..1577] sequence) (NN:[1578..1588] alteration))))
+    (VP (VBD:[1589..1593] were)
+      (VP (VBN:[1594..1602] observed)
+        (NP-2 (-NONE-:[1602..1602] *))
+        (PP (IN:[1603..1605] in)
+          (NP (CD:[1606..1607] 5) (NNS:[1608..1613] cases)
+            (PRN (-LRB-:[1614..1615] -LRB-)
+              (NP (CD:[1615..1617] 22) (NN:[1617..1618] %))
+              (-RRB-:[1618..1619] -RRB-))))
+        (PP-LOC (IN:[1620..1622] in)
+          (NP
+            (NP
+              (NP
+                (NML-1 (NN:[1623..1627] exon))
+                (CD:[1628..1629] 1))
+              (CC:[1630..1633] and)
+              (NP
+                (NML-1 (-NONE-:[1633..1633] *P*))
+                (CD:[1634..1635] 2)))
+            (PP (IN:[1636..1638] of)
+              (NP (DT:[1640..1643] the) (NN:[1644..1649] N-ras)
+                  (NN:[1650..1654] gene)))))
+        (PP-MNR (IN:[1655..1657] by)
+          (NP (NN:[1658..1666] PCR-SSCP)))))
+    (.:[1666..1667] .)))
+
+;sentence 11 Span:1668..1762
+;3 cases (1 MDS, 1 MDS overt AML and 1 ALL) were  detected to contain missense
+;point mutations.
+;[1679..1682]:malignancy:"MDS"
+;[1686..1699]:malignancy:"MDS overt AML"
+;[1706..1709]:malignancy:"ALL"
+;[1737..1761]:variation-type:"missense point mutations"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[1668..1669] 3) (NNS:[1670..1675] cases)
+      (PRN (-LRB-:[1676..1677] -LRB-)
+        (NP
+          (NP (CD:[1677..1678] 1) (NN:[1679..1682] MDS))
+          (,:[1682..1683] ,)
+          (NP (CD:[1684..1685] 1)
+             (NN:[1686..1689] MDS) (JJ:[1690..1695] overt) (NN:[1696..1699] AML))
+          (CC:[1700..1703] and)
+          (NP (CD:[1704..1705] 1) (NN:[1706..1709] ALL)))
+        (-RRB-:[1709..1710] -RRB-)))
+    (VP (VBD:[1711..1715] were)
+      (VP (VBN:[1717..1725] detected)
+        (NP-1 (-NONE-:[1725..1725] *))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1725..1725] *))
+          (VP (TO:[1726..1728] to)
+            (VP (VB:[1729..1736] contain)
+              (NP (JJ:[1737..1745] missense) (NN:[1746..1751] point)
+                  (NNS:[1752..1761] mutations)))))))
+    (.:[1761..1762] .)))
+
+;sentence 12 Span:1763..1968
+;However, simultaneous mutations in  both the genes were detected in only 2
+;cases out of 23, thereby indicating  infrequent occurrence of concomitant
+;mutation of both the genes in hematologic  malignancies.
+;[1799..1813]:gene-rna:"both the genes"
+;[1924..1938]:gene-rna:"both the genes"
+;[1942..1967]:malignancy:"hematologic  malignancies"
+(SENT
+  (S
+    (ADVP (RB:[1763..1770] However))
+    (,:[1770..1771] ,)
+    (NP-SBJ-1
+      (NP (JJ:[1772..1784] simultaneous) (NNS:[1785..1794] mutations))
+      (PP (IN:[1795..1797] in)
+        (NP (PDT:[1799..1803] both) (DT:[1804..1807] the)
+            (NNS:[1808..1813] genes))))
+    (VP (VBD:[1814..1818] were)
+      (VP (VBN:[1819..1827] detected)
+        (NP-1 (-NONE-:[1827..1827] *))
+        (PP (IN:[1828..1830] in)
+          (NP
+            (NP
+              (ADVP (RB:[1831..1835] only))
+              (CD:[1836..1837] 2) (NNS:[1838..1843] cases))
+            (PP (IN:[1844..1847] out)
+              (PP (IN:[1848..1850] of)
+                (NP (CD:[1851..1853] 23))))))
+        (,:[1853..1854] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1854..1854] *))
+          (ADVP (RB:[1855..1862] thereby))
+          (VP (VBG:[1863..1873] indicating)
+            (NP
+              (NP (JJ:[1875..1885] infrequent) (NN:[1886..1896] occurrence))
+              (PP (IN:[1897..1899] of)
+                (NP
+                  (NP (JJ:[1900..1911] concomitant) (NN:[1912..1920] mutation))
+                  (PP (IN:[1921..1923] of)
+                    (NP
+                      (NP (PDT:[1924..1928] both) (DT:[1929..1932] the)
+                          (NNS:[1933..1938] genes))
+                      (PP (IN:[1939..1941] in)
+                        (NP (JJ:[1942..1953] hematologic)
+                            (NNS:[1955..1967] malignancies))))))))))))
+    (.:[1967..1968] .)))
+
+;section 13 Span:1969..2172
+;Alterations of the p53 and the N-ras genes are involved in the 
+;tumorigenesis, progression and prognosis of at least some cases of
+;hematologic  malignancies, in spite that they are relatively infrequent.
+;[1988..1991]:gene-rna:"p53"
+;[2000..2005]:gene-rna:"N-ras"
+;[2100..2125]:malignancy:"hematologic  malignancies"
+(SEC
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[1969..1980] Alterations))
+      (PP (IN:[1981..1983] of)
+        (NP
+          (NP (DT:[1984..1987] the) (NN:[1988..1991] p53)
+            (NML-1 (-NONE-:[1991..1991] *P*)))
+          (CC:[1992..1995] and)
+          (NP (DT:[1996..1999] the) (NN:[2000..2005] N-ras)
+            (NML-1 (NNS:[2006..2011] genes))))))
+    (VP (VBP:[2012..2015] are)
+      (VP (VBN:[2016..2024] involved)
+        (NP-2 (-NONE-:[2024..2024] *))
+        (PP-CLR (IN:[2025..2027] in)
+          (NP
+            (NP (DT:[2028..2031] the) (NN:[2033..2046] tumorigenesis)
+                (,:[2046..2047] ,) (NN:[2048..2059] progression)
+                (CC:[2060..2063] and) (NN:[2064..2073] prognosis))
+            (PP (IN:[2074..2076] of)
+              (NP
+                (NP
+                  (QP (IN:[2077..2079] at) (JJS:[2080..2085] least)
+                      (DT:[2086..2090] some))
+                  (NNS:[2091..2096] cases))
+                (PP (IN:[2097..2099] of)
+                  (NP (JJ:[2100..2111] hematologic)
+                      (NNS:[2113..2125] malignancies)))))))
+        (,:[2125..2126] ,)
+        (FRAG-ADV
+          (PP (IN:[2127..2129] in)
+            (NP (NN:[2130..2135] spite)))
+          (SBAR (IN:[2136..2140] that)
+            (S
+              (NP-SBJ (PRP:[2141..2145] they))
+              (VP (VBP:[2146..2149] are)
+                (ADJP-PRD (RB:[2150..2160] relatively)
+                          (JJ:[2161..2171] infrequent))))))))
+    (.:[2171..2172] .)))
+;ERROR_Entity in section[1988..1991]:gene-rna "p53"
+;ERROR_Entity in section[2000..2005]:gene-rna "N-ras"
+;ERROR_Entity in section[2100..2125]:malignancy "hematologic  malignancies"
+
+;section 14 Span:2176..2220
+;PMID: 7927179 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2176..2180] PMID) (::[2180..2181] :) (CD:[2182..2189] 7927179)
+        (NN:[2190..2191] -LSB-) (NNP:[2191..2197] PubMed) (::[2198..2199] -)
+        (NN:[2200..2207] indexed) (IN:[2208..2211] for)
+        (NNP:[2212..2220] MEDLINE-RSB-)))

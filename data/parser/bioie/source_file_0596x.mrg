@@ -1,0 +1,264 @@
+;PMID: 10070310
+;source_file_757.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..125] = [t:41..125]
+;2)section:[e:129..186] = [t:129..186]
+;3)section:[e:190..245] = [t:190..245]
+;4)sentence:[e:249..489] = [t:249..489]
+;5)sentence:[e:490..636] = [t:490..636]
+;6)sentence:[e:637..855] = [t:637..855]
+;7)sentence:[e:856..944] = [t:856..944]
+;8)section:[e:948..993] = [t:948..993]
+
+;section 0 Span:0..36
+;Eur J Cancer  1998 Dec;34(13):2053-7
+(SEC
+  (FRAG (NNP:[0..3] Eur) (DT:[4..5] J) (NNP:[6..12] Cancer) (CD:[14..18] 1998)
+        (.:[19..26] Dec;34-LRB-) (CD:[26..28] 13) (-RRB-:[28..29] -RRB-)
+        (CD:[29..34] :2053) (::[34..35] -) (CD:[35..36] 7)))
+
+;sentence 1 Span:41..125
+;K-ras mutations in colorectal adenocarcinomas and neighbouring transitional 
+;mucosa.
+;[41..46]:gene-rna:"K-ras"
+;[60..86]:malignancy:"colorectal adenocarcinomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[41..46] K-ras) (NNS:[47..56] mutations))
+      (PP-LOC (IN:[57..59] in)
+        (NP (JJ:[60..70] colorectal) (NNS:[71..86] adenocarcinomas))))
+    (CC:[87..90] and)
+    (NP (VBG:[91..103] neighbouring) (JJ:[104..116] transitional)
+        (NN:[118..124] mucosa))
+    (.:[124..125] .)))
+
+;section 2 Span:129..186
+;Zhang H, Nordenskjold B, Dufmats M, Soderkvist P, Sun XF.
+(SEC
+  (FRAG (NNP:[129..134] Zhang) (NNP:[135..136] H) (,:[136..137] ,)
+        (NNP:[138..150] Nordenskjold) (NNP:[151..152] B) (,:[152..153] ,)
+        (NNP:[154..161] Dufmats) (NNP:[162..164] M,) (NNP:[165..175] Soderkvist)
+        (NNP:[176..177] P) (,:[177..178] ,) (NNP:[179..182] Sun)
+        (NNP:[183..185] XF) (.:[185..186] .)))
+
+;section 3 Span:190..245
+;Division of Cell Biology, Linkoping University, Sweden.
+(SEC
+  (FRAG (NNP:[190..198] Division) (IN:[199..201] of) (NNP:[202..206] Cell)
+        (NNP:[207..214] Biology) (,:[214..215] ,) (NNP:[216..225] Linkoping)
+        (NNP:[226..236] University) (IN:[236..237] ,) (NNP:[238..244] Sweden)
+        (.:[244..245] .)))
+
+;sentence 4 Span:249..489
+;The K-ras gene in codons 12 and 13 was investigated using allele-specific 
+;polymerase chain reaction in matched normal mucosa (n = 106), transitional 
+;mucosa (n = 69) and tumours (n = 149) from 149 patients with colorectal 
+;adenocarcinomas.
+;[253..258]:gene-rna:"K-ras"
+;[267..276]:variation-location:"codons 12"
+;[267..273]...[281..283]:variation-location:"codons"..."13"
+;[324..334]:gene-protein:"polymerase"
+;[386..406]:malignancy:"transitional  mucosa"
+;[420..427]:malignancy:"tumours"
+;[461..488]:malignancy:"colorectal  adenocarcinomas"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[249..252] The) (NN:[253..258] K-ras) (NN:[259..263] gene))
+      (PP-LOC (IN:[264..266] in)
+        (NP
+          (NP
+            (NML-1 (NNS:[267..273] codons))
+            (CD:[274..276] 12))
+          (CC:[277..280] and)
+          (NP
+            (NML-1 (-NONE-:[280..280] *P*))
+            (CD:[281..283] 13)))))
+    (VP (VBD:[284..287] was)
+      (VP (VBN:[288..300] investigated)
+        (NP-2 (-NONE-:[300..300] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[300..300] *))
+          (VP (VBG:[301..306] using)
+            (NP
+              (ADJP (NN:[307..313] allele) (HYPH:[313..314] -)
+                    (JJ:[314..322] specific))
+              (NN:[324..334] polymerase) (NN:[335..340] chain)
+               (NN:[341..349] reaction))
+            (PP-LOC (IN:[350..352] in)
+              (NP
+                (NP
+                  (NP (JJ:[353..360] matched) (JJ:[361..367] normal)
+                      (NN:[368..374] mucosa)
+                    (PRN (-LRB-:[375..376] -LRB-)
+                      (S
+                        (NP-SBJ (NN:[376..377] n))
+                        (VP (SYM:[378..379] =)
+                          (NP (CD:[380..383] 106))))
+                      (-RRB-:[383..384] -RRB-)))
+                  (,:[384..385] ,)
+                  (NP
+                     (JJ:[386..398] transitional) (NN:[400..406] mucosa)
+                    (PRN (-LRB-:[407..408] -LRB-)
+                      (S
+                        (NP-SBJ (NN:[408..409] n))
+                        (VP (SYM:[410..411] =)
+                          (NP (CD:[412..414] 69))))
+                      (-RRB-:[414..415] -RRB-)))
+                  (CC:[416..419] and)
+                  (NP (NNS:[420..427] tumours)
+                    (PRN (-LRB-:[428..429] -LRB-)
+                      (S
+                        (NP-SBJ (NN:[429..430] n))
+                        (VP (SYM:[431..432] =)
+                          (NP (CD:[433..436] 149))))
+                      (-RRB-:[436..437] -RRB-))))
+                (PP (IN:[438..442] from)
+                  (NP
+                    (NP (CD:[443..446] 149) (NNS:[447..455] patients))
+                    (PP (IN:[456..460] with)
+                      (NP (JJ:[461..471] colorectal)
+                          (NNS:[473..488] adenocarcinomas)))))))))))
+    (.:[488..489] .)))
+
+;sentence 5 Span:490..636
+;K-ras mutations in codon 12 were detected in 41/149 (28%) of  tumours and
+;4/69 (6%) of transitional mucosa samples, but not in the normal  mucosa.
+;[490..495]:gene-rna:"K-ras"
+;[496..505]:variation-event:"mutations"
+;[509..517]:variation-location:"codon 12"
+;[552..559]:malignancy:"tumours"
+;[577..596]:malignancy:"transitional mucosa"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[490..495] K-ras) (NNS:[496..505] mutations))
+      (PP-LOC (IN:[506..508] in)
+        (NP (NN:[509..514] codon) (CD:[515..517] 12))))
+    (VP (VBD:[518..522] were)
+      (VP
+        (VP (VBN:[523..531] detected)
+          (NP-1 (-NONE-:[531..531] *))
+          (PP-LOC=2 (IN:[532..534] in)
+            (NP
+              (NP
+                (NP (CD:[535..537] 41))
+                (PP (SYM:[537..538] /)
+                  (NP
+                    (NP (CD:[538..541] 149))
+                    (PRN (-LRB-:[542..543] -LRB-)
+                      (NP (CD:[543..545] 28) (NN:[545..546] %))
+                      (-RRB-:[546..547] -RRB-))
+                    (PP (IN:[548..550] of)
+                      (NP (NNS:[552..559] tumours))))))
+              (CC:[560..563] and)
+              (NP
+                (NP (CD:[564..565] 4))
+                (PP (SYM:[565..566] /)
+                  (NP
+                    (NP (CD:[566..568] 69))
+                    (PRN (-LRB-:[569..570] -LRB-)
+                      (NP (CD:[570..571] 6) (NN:[571..572] %))
+                      (-RRB-:[572..573] -RRB-))
+                    (PP (IN:[574..576] of)
+                      (NP
+                         (JJ:[577..589] transitional) (NN:[590..596] mucosa)
+                        (NNS:[597..604] samples)))))))))
+        (,:[604..605] ,) (CC:[606..609] but)
+        (VP (RB:[610..613] not)
+          (PP-LOC=2 (IN:[614..616] in)
+            (NP (DT:[617..620] the) (JJ:[621..627] normal)
+                (NN:[629..635] mucosa))))))
+    (.:[635..636] .)))
+
+;sentence 6 Span:637..855
+;Further, mutation rates were increased in younger patients (P = 0.001)  and
+;in mucinous carcinomas (50%) compared with well differentiated (17%), 
+;moderately differentiated (26%) or poorly differentiated (24%) tumours.
+;[646..654]:variation-event:"mutation"
+;[716..735]:malignancy:"mucinous carcinomas"
+;[756..775]:malignancy:"well differentiated"
+;[784..809]:malignancy:"moderately differentiated"
+;[819..854]:malignancy:"poorly differentiated (24%) tumours"
+(SENT
+  (S
+    (ADVP (RB:[637..644] Further))
+    (,:[644..645] ,)
+    (NP-SBJ-1 (NN:[646..654] mutation) (NNS:[655..660] rates))
+    (VP (VBD:[661..665] were)
+      (VP (VBN:[666..675] increased)
+        (NP-1 (-NONE-:[675..675] *))
+        (PP-LOC
+          (PP (IN:[676..678] in)
+            (NP (JJR:[679..686] younger) (NNS:[687..695] patients)
+              (PRN (-LRB-:[696..697] -LRB-)
+                (S
+                  (NP-SBJ (NN:[697..698] P))
+                  (VP (SYM:[699..700] =)
+                    (NP (CD:[701..706] 0.001))))
+                (-RRB-:[706..707] -RRB-))))
+          (CC:[709..712] and)
+          (PP (IN:[713..715] in)
+            (NP
+               (JJ:[716..724] mucinous) (NNS:[725..735] carcinomas)
+              (PRN (-LRB-:[736..737] -LRB-)
+                (NP (CD:[737..739] 50) (NN:[739..740] %))
+                (-RRB-:[740..741] -RRB-)))))
+        (S-ADV
+          (NP-SBJ-3 (-NONE-:[741..741] *))
+          (VP (VBN:[742..750] compared)
+            (NP-3 (-NONE-:[750..750] *))
+            (PP-CLR (IN:[751..755] with)
+              (NP
+                (NP
+                  (ADJP
+                     (RB:[756..760] well) (VBN:[761..775] differentiated)
+                    (PRN (-LRB-:[776..777] -LRB-)
+                      (NP (CD:[777..779] 17) (NN:[779..780] %))
+                      (-RRB-:[780..781] -RRB-)))
+                  (NML-2 (-NONE-:[781..781] *P*)))
+                (,:[781..782] ,)
+                (NP
+                  (ADJP
+                     (RB:[784..794] moderately) (VBN:[795..809] differentiated)
+                    (PRN (-LRB-:[810..811] -LRB-)
+                      (NP (CD:[811..813] 26) (NN:[813..814] %))
+                      (-RRB-:[814..815] -RRB-)))
+                  (NML-2 (-NONE-:[815..815] *P*)))
+                (CC:[816..818] or)
+                (NP
+                  (ADJP (RB:[819..825] poorly) (VBN:[826..840] differentiated)
+                    (PRN (-LRB-:[841..842] -LRB-)
+                      (NP (CD:[842..844] 24) (NN:[844..845] %))
+                      (-RRB-:[845..846] -RRB-)))
+                  (NML-2 (NNS:[847..854] tumours)))))))))
+    (.:[854..855] .)))
+
+;sentence 7 Span:856..944
+;Our  findings indicate that mucinous carcinoma may represent a distinct
+;genetic  entity.
+;[884..902]:malignancy:"mucinous carcinoma"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[856..859] Our) (NNS:[861..869] findings))
+    (VP (VBP:[870..878] indicate)
+      (SBAR (IN:[879..883] that)
+        (S
+          (NP-SBJ (JJ:[884..892] mucinous) (NN:[893..902] carcinoma))
+          (VP (MD:[903..906] may)
+            (VP (VB:[907..916] represent)
+              (NP (DT:[917..918] a) (JJ:[919..927] distinct)
+                  (JJ:[928..935] genetic) (NN:[937..943] entity)))))))
+    (.:[943..944] .)))
+
+;section 8 Span:948..993
+;PMID: 10070310 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[948..952] PMID) (::[952..953] :) (CD:[954..962] 10070310)
+        (NN:[963..964] -LSB-) (NNP:[964..970] PubMed) (::[971..972] -)
+        (NN:[973..980] indexed) (IN:[981..984] for)
+        (NNP:[985..993] MEDLINE-RSB-)))

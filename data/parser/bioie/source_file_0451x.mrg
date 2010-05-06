@@ -1,0 +1,326 @@
+;PMID: 9142199
+;source_file_2869.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..117] = [t:46..117]
+;2)section:[e:121..171] = [t:121..171]
+;3)section:[e:175..252] = [t:175..252]
+;4)sentence:[e:256..485] = [t:256..485]
+;5)sentence:[e:486..577] = [t:486..577]
+;6)sentence:[e:578..677] = [t:578..677]
+;7)sentence:[e:678..877] = [t:678..877]
+;8)sentence:[e:878..1043] = [t:878..1043]
+;9)sentence:[e:1044..1164] = [t:1044..1164]
+;10)sentence:[e:1165..1248] = [t:1165..1248]
+;11)sentence:[e:1249..1338] = [t:1249..1338]
+;12)section:[e:1342..1386] = [t:1342..1386]
+
+;section 0 Span:0..40
+;Med Pediatr Oncol.  1997 Jul;29(1):11-5.
+(SEC
+  (FRAG (NNP:[0..3] Med) (NNP:[4..11] Pediatr) (NNP:[12..17] Oncol)
+        (.:[17..18] .) (CD:[20..24] 1997) (::[25..32] Jul;29-LRB-)
+        (CD:[32..33] 1) (-RRB-:[33..34] -RRB-) (::[34..35] :) (CD:[35..39] 11-5)
+        (.:[39..40] .)))
+
+;sentence 1 Span:46..117
+;Chemotherapy-induced expression of alpha B-crystallin in neuroblastoma.
+;[81..99]:gene-protein:"alpha B-crystallin"
+;[103..116]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (NN:[46..58] Chemotherapy) (HYPH:[58..59] -) (VBN:[59..66] induced))
+      (NN:[67..77] expression))
+    (PP (IN:[78..80] of)
+      (NP (SYM:[81..86] alpha) (NN:[87..99] B-crystallin)))
+    (PP (IN:[100..102] in)
+      (NP (NN:[103..116] neuroblastoma)))
+    (.:[116..117] .)))
+
+;section 2 Span:121..171
+;Ishiguro Y, Kato K, Akatsuka H, Iwata H, Nagaya M.
+(SEC
+  (FRAG (NNP:[121..129] Ishiguro) (NNP:[130..131] Y) (,:[131..132] ,)
+        (NNP:[133..137] Kato) (NNP:[138..140] K,) (NNP:[141..149] Akatsuka)
+        (NNP:[150..152] H,) (NNP:[153..158] Iwata) (NNP:[159..161] H,)
+        (NNP:[162..168] Nagaya) (NNP:[169..171] M.)))
+
+;section 3 Span:175..252
+;Department of Pediatric Surgery, Nagoya University School of Medicine,
+;Japan.
+(SEC
+  (FRAG (NNP:[175..185] Department) (IN:[186..188] of)
+        (NNP:[189..198] Pediatric) (NNP:[199..206] Surgery) (,:[206..207] ,)
+        (NNP:[208..214] Nagoya) (NNP:[215..225] University)
+        (NNP:[226..232] School) (IN:[233..235] of) (NNP:[236..244] Medicine)
+        (,:[244..245] ,) (NNP:[246..251] Japan) (.:[251..252] .)))
+
+;sentence 4 Span:256..485
+;Since alpha B-crystallin is known to be expressed in glial tissues of human 
+;brain and neuroectodermal tumors, the alpha B-crystallin content of 
+;neuroblastomas, may be related to the degree of glial or neuronal 
+;differentiation.
+;[262..280]:gene-protein:"alpha B-crystallin"
+;[343..365]:malignancy-type:"neuroectodermal tumors"
+;[371..389]:gene-protein:"alpha B-crystallin"
+;[402..416]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (SBAR-ADV (IN:[256..261] Since)
+      (S
+        (NP-SBJ-1 (SYM:[262..267] alpha) (NN:[268..280] B-crystallin))
+        (VP (VBZ:[281..283] is)
+          (VP (VBN:[284..289] known)
+            (S
+              (NP-SBJ-1 (-NONE-:[289..289] *))
+              (VP (TO:[290..292] to)
+                (VP (VB:[293..295] be)
+                  (VP (VBN:[296..305] expressed)
+                    (NP-1 (-NONE-:[305..305] *))
+                    (PP-LOC (IN:[306..308] in)
+                      (NP
+                        (NP (JJ:[309..314] glial) (NNS:[315..322] tissues))
+                        (PP (IN:[323..325] of)
+                          (NP
+                            (NP
+                              (ADJP-3 (JJ:[326..331] human))
+                              (NN:[333..338] brain)
+                              (NML-2 (-NONE-:[338..338] *P*)))
+                            (CC:[339..342] and)
+                            (NP
+                              (ADJP-3 (-NONE-:[342..342] *P*))
+                               (JJ:[343..358] neuroectodermal)
+                              (NML-2 (NNS:[359..365] tumors)))))))))))))))
+    (,:[365..366] ,)
+    (NP-SBJ-4
+      (NP (DT:[367..370] the)
+        (NML (SYM:[371..376] alpha) (NN:[377..389] B-crystallin))
+        (NN:[390..397] content))
+      (PP (IN:[398..400] of)
+        (NP (NNS:[402..416] neuroblastomas))))
+    (,:[416..417] ,)
+    (VP (MD:[418..421] may)
+      (VP (VB:[422..424] be)
+        (VP (VBN:[425..432] related)
+          (NP-4 (-NONE-:[432..432] *))
+          (PP-CLR (TO:[433..435] to)
+            (NP
+              (NP (DT:[436..439] the) (NN:[440..446] degree))
+              (PP (IN:[447..449] of)
+                (NP
+                  (NP (JJ:[450..455] glial)
+                    (NML-5 (-NONE-:[455..455] *P*)))
+                  (CC:[456..458] or)
+                  (NP (JJ:[459..467] neuronal)
+                    (NML-5 (NN:[469..484] differentiation))))))))))
+    (.:[484..485] .)))
+
+;sentence 5 Span:486..577
+;The alpha B-crystallin content of 73 neuroblastomas, was  determined by
+;enzyme immunoassay.
+;[490..508]:gene-protein:"alpha B-crystallin"
+;[523..537]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[486..489] The)
+        (NML (SYM:[490..495] alpha) (NN:[496..508] B-crystallin))
+        (NN:[509..516] content))
+      (PP (IN:[517..519] of)
+        (NP (CD:[520..522] 73) (NNS:[523..537] neuroblastomas))))
+    (,:[537..538] ,)
+    (VP (VBD:[539..542] was)
+      (VP (VBN:[544..554] determined)
+        (NP-1 (-NONE-:[554..554] *))
+        (PP-MNR (IN:[555..557] by)
+          (NP (NN:[558..564] enzyme) (NN:[565..576] immunoassay)))))
+    (.:[576..577] .)))
+
+;sentence 6 Span:578..677
+;The concentration of alpha B-crystallin was  examined in light of
+;neuroblastoma prognostic factors.
+;[599..617]:gene-protein:"alpha B-crystallin"
+;[644..657]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[578..581] The) (NN:[582..595] concentration))
+      (PP (IN:[596..598] of)
+        (NP (SYM:[599..604] alpha) (NN:[605..617] B-crystallin))))
+    (VP (VBD:[618..621] was)
+      (VP (VBN:[623..631] examined)
+        (NP-1 (-NONE-:[631..631] *))
+        (PP (IN:[632..634] in)
+          (NP
+            (NP (NN:[635..640] light))
+            (PP (IN:[641..643] of)
+              (NP (NN:[644..657] neuroblastoma) (JJ:[658..668] prognostic)
+                  (NNS:[669..676] factors)))))))
+    (.:[676..677] .)))
+
+;sentence 7 Span:678..877
+;Neuroblastomas from  patients who received chemotherapy (n = 23) contained
+;higher concentrations of  alpha B-crystallin than those from patients who did
+;not receive chemotherapy (n  = 50) (P > 0.05).
+;[678..692]:malignancy-type:"Neuroblastomas"
+;[779..797]:gene-protein:"alpha B-crystallin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[678..692] Neuroblastomas))
+      (PP (IN:[693..697] from)
+        (NP
+          (NP (NNS:[699..707] patients))
+          (SBAR
+            (WHNP-1 (WP:[708..711] who))
+            (S
+              (NP-SBJ-1 (-NONE-:[711..711] *T*))
+              (VP (VBD:[712..720] received)
+                (NP (NN:[721..733] chemotherapy))
+                (PRN (-LRB-:[734..735] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[735..736] n))
+                    (VP (SYM:[737..738] =)
+                      (NP (CD:[739..741] 23))))
+                  (-RRB-:[741..742] -RRB-))))))))
+    (VP (VBD:[743..752] contained)
+      (NP
+        (NP (JJR:[753..759] higher) (NNS:[760..774] concentrations))
+        (PP (IN:[775..777] of)
+          (NP (SYM:[779..784] alpha) (NN:[785..797] B-crystallin)))
+        (PP (IN:[798..802] than)
+          (NP
+            (NP (DT:[803..808] those))
+            (PP (IN:[809..813] from)
+              (NP
+                (NP (NNS:[814..822] patients))
+                (SBAR
+                  (WHNP-2 (WP:[823..826] who))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[826..826] *T*))
+                    (VP (VBD:[827..830] did) (RB:[831..834] not)
+                      (VP (VB:[835..842] receive)
+                        (NP (NN:[843..855] chemotherapy))))))))))
+        (PRN (-LRB-:[856..857] -LRB-)
+          (S
+            (NP-SBJ (NN:[857..858] n))
+            (VP (SYM:[860..861] =)
+              (NP (CD:[862..864] 50))))
+          (-RRB-:[864..865] -RRB-))
+        (PRN (-LRB-:[866..867] -LRB-)
+          (S
+            (NP-SBJ (NN:[867..868] P))
+            (VP (SYM:[869..870] >)
+              (NP (CD:[871..875] 0.05))))
+          (-RRB-:[875..876] -RRB-))))
+    (.:[876..877] .)))
+
+;sentence 8 Span:878..1043
+;There was a statistically significant difference in alpha  B-crystallin
+;concentrations in advanced stage patients who received preoperative 
+;chemotherapy (P < 0.01).
+;[930..949]:gene-protein:"alpha  B-crystallin"
+;[968..982]:malignancy-clinical-stage:"advanced stage"
+(SENT
+  (S
+    (NP-SBJ (EX:[878..883] There))
+    (VP (VBD:[884..887] was)
+      (NP-PRD
+        (NP (DT:[888..889] a)
+          (ADJP (RB:[890..903] statistically) (JJ:[904..915] significant))
+          (NN:[916..926] difference))
+        (PP (IN:[927..929] in)
+          (NP
+            (NML (SYM:[930..935] alpha) (NN:[937..949] B-crystallin))
+            (NNS:[950..964] concentrations))))
+      (PP-LOC (IN:[965..967] in)
+        (NP
+          (NP
+             (VBN:[968..976] advanced) (NN:[977..982] stage)
+            (NNS:[983..991] patients))
+          (SBAR
+            (WHNP-1 (WP:[992..995] who))
+            (S
+              (NP-SBJ-1 (-NONE-:[995..995] *T*))
+              (VP (VBD:[996..1004] received)
+                (NP (JJ:[1005..1017] preoperative)
+                    (NN:[1019..1031] chemotherapy))
+                (PRN (-LRB-:[1032..1033] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[1033..1034] P))
+                    (VP (SYM:[1035..1036] <)
+                      (NP (CD:[1037..1041] 0.01))))
+                  (-RRB-:[1041..1042] -RRB-))))))))
+    (.:[1042..1043] .)))
+
+;sentence 9 Span:1044..1164
+;Immunohistochemistry demonstrated alpha B-crystallin  expression in the
+;nerve-like fibers and a few ganglion-like cells.
+;[1078..1096]:gene-protein:"alpha B-crystallin"
+(SENT
+  (S
+    (NP-SBJ (NN:[1044..1064] Immunohistochemistry))
+    (VP (VBD:[1065..1077] demonstrated)
+      (NP
+        (NML (SYM:[1078..1083] alpha) (NN:[1084..1096] B-crystallin))
+        (NN:[1098..1108] expression))
+      (PP (IN:[1109..1111] in)
+        (NP
+          (NP (DT:[1112..1115] the)
+            (ADJP (NN:[1116..1121] nerve) (HYPH:[1121..1122] -)
+                  (JJ:[1122..1126] like))
+            (NNS:[1127..1133] fibers))
+          (CC:[1134..1137] and)
+          (NP (DT:[1138..1139] a) (JJ:[1140..1143] few)
+            (ADJP (NN:[1144..1152] ganglion) (HYPH:[1152..1153] -)
+                  (JJ:[1153..1157] like))
+            (NNS:[1158..1163] cells)))))
+    (.:[1163..1164] .)))
+
+;sentence 10 Span:1165..1248
+;Staining was  not apparent in the less differentiated cells in the tumor cell
+;nest.
+(SENT
+  (S
+    (NP-SBJ (NN:[1165..1173] Staining))
+    (VP (VBD:[1174..1177] was) (RB:[1179..1182] not)
+      (ADJP-PRD (JJ:[1183..1191] apparent))
+      (PP-LOC (IN:[1192..1194] in)
+        (NP (DT:[1195..1198] the)
+          (ADJP (RBR:[1199..1203] less) (VBN:[1204..1218] differentiated))
+          (NNS:[1219..1224] cells)))
+      (PP-LOC (IN:[1225..1227] in)
+        (NP (DT:[1228..1231] the) (NN:[1232..1237] tumor) (NN:[1238..1242] cell)
+            (NN:[1243..1247] nest))))
+    (.:[1247..1248] .)))
+
+;sentence 11 Span:1249..1338
+;alpha  B-crystallin may play a role in the response to cellular stress in 
+;neuroblastoma.
+;[1249..1268]:gene-protein:"alpha  B-crystallin"
+;[1324..1337]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (SYM:[1249..1254] alpha) (NN:[1256..1268] B-crystallin))
+    (VP (MD:[1269..1272] may)
+      (VP (VB:[1273..1277] play)
+        (NP (DT:[1278..1279] a) (NN:[1280..1284] role))
+        (PP (IN:[1285..1287] in)
+          (NP
+            (NP (DT:[1288..1291] the) (NN:[1292..1300] response))
+            (PP (TO:[1301..1303] to)
+              (NP (JJ:[1304..1312] cellular) (NN:[1313..1319] stress)))))
+        (PP (IN:[1320..1322] in)
+          (NP (NN:[1324..1337] neuroblastoma)))))
+    (.:[1337..1338] .)))
+
+;section 12 Span:1342..1386
+;PMID: 9142199 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1342..1346] PMID) (::[1346..1347] :) (CD:[1348..1355] 9142199)
+        (NN:[1356..1357] -LSB-) (NNP:[1357..1363] PubMed) (::[1364..1365] -)
+        (NN:[1366..1373] indexed) (IN:[1374..1377] for)
+        (NNP:[1378..1386] MEDLINE-RSB-)))

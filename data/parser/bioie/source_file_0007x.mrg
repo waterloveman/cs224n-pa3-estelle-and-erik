@@ -1,0 +1,388 @@
+;PMID: 8907200
+;source_file_1409.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..195] = [t:41..195]
+;2)section:[e:199..255] = [t:199..255]
+;3)section:[e:259..298] = [t:259..298]
+;4)sentence:[e:302..482] = [t:302..482]
+;5)sentence:[e:483..594] = [t:483..594]
+;6)sentence:[e:595..755] = [t:595..755]
+;7)sentence:[e:756..860] = [t:756..860]
+;8)sentence:[e:861..1026] = [t:861..1026]
+;9)sentence:[e:1027..1160] = [t:1027..1160]
+;10)sentence:[e:1162..1376] = [t:1162..1376]
+;11)sentence:[e:1377..1511] = [t:1377..1511]
+;12)section:[e:1515..1559] = [t:1515..1559]
+
+;section 0 Span:0..36
+;Cancer Detect Prev  1996;20(1):20-30
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..13] Detect) (NNP:[14..18] Prev)
+        (CD:[20..28] 1996;20-LRB-) (CD:[28..29] 1) (-RRB-:[29..30] -RRB-)
+        (CD:[30..33] :20) (::[33..34] -) (CD:[34..36] 30)))
+
+;sentence 1 Span:41..195
+;A possible role for human papillomaviruses and c-myc, c-Ha-ras, and p53 gene 
+;alterations in malignant cutaneous lesions from renal transplant recipients.
+;[88..93]:gene-rna:"c-myc"
+;[95..103]:gene-rna:"c-Ha-ras"
+;[109..112]:gene-rna:"p53"
+;[134..161]:malignancy:"malignant cutaneous lesions"
+(SENT
+  (NP-HLN
+    (NP (DT:[41..42] A) (JJ:[43..51] possible) (NN:[52..56] role))
+    (PP (IN:[57..60] for)
+      (NP
+        (NP (JJ:[61..66] human) (NNS:[67..83] papillomaviruses))
+        (CC:[84..87] and)
+        (NP
+          (NP (NN:[88..93] c-myc)
+            (NML-1 (-NONE-:[93..93] *P*)))
+          (,:[93..94] ,)
+          (NP (NN:[95..103] c-Ha-ras)
+            (NML-1 (-NONE-:[103..103] *P*)))
+          (,:[103..104] ,) (CC:[105..108] and)
+          (NP (NN:[109..112] p53)
+            (NML-1 (NN:[113..117] gene) (NNS:[119..130] alterations))))))
+    (PP-LOC (IN:[131..133] in)
+      (NP
+        (NP (JJ:[134..143] malignant) (JJ:[144..153] cutaneous)
+            (NNS:[154..161] lesions))
+        (PP (IN:[162..166] from)
+          (NP (JJ:[167..172] renal) (NN:[173..183] transplant)
+              (NNS:[184..194] recipients)))))
+    (.:[194..195] .)))
+
+;section 2 Span:199..255
+;Pelisson I, Soler C, Chardonnet Y, Euvrard S, Schmitt D.
+(SEC
+  (FRAG (IN:[199..207] Pelisson) (PRP:[208..209] I) (,:[209..210] ,)
+        (NNP:[211..216] Soler) (NNP:[217..218] C) (,:[218..219] ,)
+        (NNP:[220..230] Chardonnet) (NNP:[231..232] Y) (,:[232..233] ,)
+        (NNP:[234..241] Euvrard) (NNP:[242..244] S,) (NNP:[245..252] Schmitt)
+        (NNP:[253..255] D.)))
+
+;section 3 Span:259..298
+;Edouard Herriot Hospital, Lyon, France.
+(SEC
+  (FRAG (NNP:[259..266] Edouard) (NNP:[267..274] Herriot)
+        (NNP:[275..283] Hospital) (,:[283..284] ,) (NNP:[285..289] Lyon)
+        (,:[289..290] ,) (NNP:[291..297] France) (.:[297..298] .)))
+
+;sentence 4 Span:302..482
+;Several years after transplantation, renal transplant recipients develop 
+;numerous cutaneous squamous cell carcinomas (SCC), in which human 
+;papillomaviruses (HPV) may be detected.
+;[385..419]:malignancy:"cutaneous squamous cell carcinomas"
+;[421..424]:malignancy:"SCC"
+(SENT
+  (S
+    (NP-TMP
+      (NP (JJ:[302..309] Several) (NNS:[310..315] years))
+      (PP (IN:[316..321] after)
+        (NP (NN:[322..337] transplantation))))
+    (,:[337..338] ,)
+    (NP-SBJ (JJ:[339..344] renal) (NN:[345..355] transplant)
+            (NNS:[356..366] recipients))
+    (VP (VBP:[367..374] develop)
+      (NP
+        (NP (JJ:[376..384] numerous) (JJ:[385..394] cutaneous)
+          (NML
+            (NML (JJ:[395..403] squamous) (NN:[404..408] cell)
+                 (NNS:[409..419] carcinomas))
+            (NML (-LRB-:[420..421] -LRB-) (NN:[421..424] SCC)
+                 (-RRB-:[424..425] -RRB-))))
+        (,:[425..426] ,)
+        (SBAR
+          (WHPP-2 (IN:[427..429] in)
+            (WHNP (WDT:[430..435] which)))
+          (S
+            (NP-SBJ-1
+              (NP (JJ:[436..441] human) (NNS:[443..459] papillomaviruses))
+              (NP (-LRB-:[460..461] -LRB-) (NN:[461..464] HPV)
+                  (-RRB-:[464..465] -RRB-)))
+            (VP (MD:[466..469] may)
+              (VP (VB:[470..472] be)
+                (VP (VBN:[473..481] detected)
+                  (NP-1 (-NONE-:[481..481] *))
+                  (PP-LOC-2 (-NONE-:[481..481] *T*)))))))))
+    (.:[481..482] .)))
+
+;sentence 5 Span:483..594
+;Alterations in c-myc, c-Ha-ras, and p53  genes were studied in 34 SCC, in
+;correlation with the presence of HPV.
+;[498..503]:gene-rna:"c-myc"
+;[505..513]:gene-rna:"c-Ha-ras"
+;[519..522]:gene-rna:"p53"
+;[549..552]:malignancy:"SCC"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[483..494] Alterations))
+      (PP-LOC (IN:[495..497] in)
+        (NP
+          (NP (NN:[498..503] c-myc)
+            (NML-1 (-NONE-:[503..503] *P*)))
+          (,:[503..504] ,)
+          (NP (NN:[505..513] c-Ha-ras)
+            (NML-1 (-NONE-:[513..513] *P*)))
+          (,:[513..514] ,) (CC:[515..518] and)
+          (NP (NN:[519..522] p53)
+            (NML-1 (NNS:[524..529] genes))))))
+    (VP (VBD:[530..534] were)
+      (VP (VBN:[535..542] studied)
+        (NP-2 (-NONE-:[542..542] *))
+        (PP (IN:[543..545] in)
+          (NP (CD:[546..548] 34) (NN:[549..552] SCC)))
+        (,:[552..553] ,)
+        (PP (IN:[554..556] in)
+          (NP
+            (NP (NN:[557..568] correlation))
+            (PP (IN:[569..573] with)
+              (NP
+                (NP (DT:[574..577] the) (NN:[578..586] presence))
+                (PP (IN:[587..589] of)
+                  (NP (NN:[590..593] HPV)))))))))
+    (.:[593..594] .)))
+
+;sentence 6 Span:595..755
+;In situ  hybridization (ISH) and polymerase chain reaction (PCR) showed that
+;many SCC  contained several HPV types infecting different foci of epithelial
+;cells.
+;[628..638]:gene-protein:"polymerase"
+;[677..680]:malignancy:"SCC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (FW:[595..597] In) (FW:[598..602] situ)
+            (NN:[604..617] hybridization))
+        (NP (-LRB-:[618..619] -LRB-) (NN:[619..622] ISH)
+            (-RRB-:[622..623] -RRB-)))
+      (CC:[624..627] and)
+      (NP
+        (NP (NN:[628..638] polymerase) (NN:[639..644] chain)
+            (NN:[645..653] reaction))
+        (NP (-LRB-:[654..655] -LRB-) (NN:[655..658] PCR)
+            (-RRB-:[658..659] -RRB-))))
+    (VP (VBD:[660..666] showed)
+      (SBAR (IN:[667..671] that)
+        (S
+          (NP-SBJ (JJ:[672..676] many) (NN:[677..680] SCC))
+          (VP (VBD:[682..691] contained)
+            (NP
+              (NP (JJ:[692..699] several) (NN:[700..703] HPV)
+                  (NNS:[704..709] types))
+              (VP (VBG:[710..719] infecting)
+                (NP
+                  (NP (JJ:[720..729] different) (NNS:[730..734] foci))
+                  (PP (IN:[735..737] of)
+                    (NP (JJ:[738..748] epithelial) (NNS:[749..754] cells))))))))))
+    (.:[754..755] .)))
+
+;sentence 7 Span:756..860
+;Using  Southern blot and ISH, c-myc and/or c-Ha-ras gene amplification was
+;detected in  7/13 SCC tested.
+;[786..791]:gene-rna:"c-myc"
+;[799..807]:gene-rna:"c-Ha-ras"
+;[849..852]:malignancy:"SCC"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[756..756] *))
+      (VP (VBG:[756..761] Using)
+        (NP
+          (NP (JJ:[763..771] Southern) (NN:[772..776] blot))
+          (CC:[777..780] and)
+          (NP (NN:[781..784] ISH)))))
+    (,:[784..785] ,)
+    (NP-SBJ-2
+      (NP (NN:[786..791] c-myc)
+        (NML-1 (-NONE-:[791..791] *P*)))
+      (CC:[792..798] and/or)
+      (NP (NN:[799..807] c-Ha-ras)
+        (NML-1 (NN:[808..812] gene) (NN:[813..826] amplification))))
+    (VP (VBD:[827..830] was)
+      (VP (VBN:[831..839] detected)
+        (NP-2 (-NONE-:[839..839] *))
+        (PP-LOC (IN:[840..842] in)
+          (NP
+            (NP (CD:[844..845] 7))
+            (PP (SYM:[845..846] /)
+              (NP
+                (NP (CD:[846..848] 13) (NN:[849..852] SCC))
+                (VP (VBN:[853..859] tested)
+                  (NP (-NONE-:[859..859] *)))))))))
+    (.:[859..860] .)))
+
+;sentence 8 Span:861..1026
+;With PCR and oligoprobe hybridization, a GGC -> GAC mutation  was found at
+;codon 12 of c-Ha-ras gene in 1/21 SCC tested, while no mutation was  detected
+;at codon 61.
+;[902..905]:variation-state-original:"GGC"
+;[909..912]:variation-state-altered:"GAC"
+;[913..921]:variation-event:"mutation"
+;[936..944]:variation-location:"codon 12"
+;[948..956]:gene-rna:"c-Ha-ras"
+;[970..973]:malignancy:"SCC"
+;[1017..1025]:variation-location:"codon 61"
+(SENT
+  (S
+    (PP-MNR (IN:[861..865] With)
+      (NP
+        (NP (NN:[866..869] PCR))
+        (CC:[870..873] and)
+        (NP (NN:[874..884] oligoprobe) (NN:[885..898] hybridization))))
+    (,:[898..899] ,)
+    (NP-SBJ-2 (DT:[900..901] a)
+      (NML
+        (NML (NN:[902..905] GGC))
+        (PP (SYM:[906..908] ->)
+          (NP (NN:[909..912] GAC))))
+      (NN:[913..921] mutation))
+    (VP (VBD:[923..926] was)
+      (VP (VBN:[927..932] found)
+        (NP-2 (-NONE-:[932..932] *))
+        (PP-LOC (IN:[933..935] at)
+          (NP
+            (NP (NN:[936..941] codon) (CD:[942..944] 12))
+            (PP (IN:[945..947] of)
+              (NP (NN:[948..956] c-Ha-ras) (NN:[957..961] gene)))))
+        (PP-LOC (IN:[962..964] in)
+          (NP
+            (NP (CD:[965..966] 1))
+            (PP (SYM:[966..967] /)
+              (NP
+                (NP (CD:[967..969] 21) (NN:[970..973] SCC))
+                (VP (VBN:[974..980] tested)
+                  (NP (-NONE-:[980..980] *)))))))
+        (,:[980..981] ,)
+        (SBAR-ADV (IN:[982..987] while)
+          (S
+            (NP-SBJ-1 (DT:[988..990] no) (NN:[991..999] mutation))
+            (VP (VBD:[1000..1003] was)
+              (VP (VBN:[1005..1013] detected)
+                (NP-1 (-NONE-:[1013..1013] *))
+                (PP-LOC (IN:[1014..1016] at)
+                  (NP (NN:[1017..1022] codon) (CD:[1023..1025] 61)))))))))
+    (.:[1025..1026] .)))
+
+;sentence 9 Span:1027..1160
+;Using immunohistochemistry, p53 protein expression was  detected either along
+;the basal cell layer or spotted in foci of basal cells.
+;[1055..1058]:gene-protein:"p53"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[1027..1027] *))
+      (VP (VBG:[1027..1032] Using)
+        (NP (NN:[1033..1053] immunohistochemistry))))
+    (,:[1053..1054] ,)
+    (NP-SBJ-1 (NN:[1055..1058] p53) (NN:[1059..1066] protein)
+              (NN:[1067..1077] expression))
+    (VP (VBD:[1078..1081] was)
+      (VP (VBN:[1083..1091] detected)
+        (NP-1 (-NONE-:[1091..1091] *))
+        (UCP (CC:[1092..1098] either)
+          (PP (IN:[1099..1104] along)
+            (NP (DT:[1105..1108] the) (JJ:[1109..1114] basal)
+                (NN:[1115..1119] cell) (NN:[1120..1125] layer)))
+          (CC:[1126..1128] or)
+          (VP (VBN:[1129..1136] spotted)
+            (NP-1 (-NONE-:[1136..1136] *))
+            (PP-LOC (IN:[1137..1139] in)
+              (NP
+                (NP (NNS:[1140..1144] foci))
+                (PP (IN:[1145..1147] of)
+                  (NP (JJ:[1148..1153] basal) (NNS:[1154..1159] cells)))))))))
+    (.:[1159..1160] .)))
+
+;sentence 10 Span:1162..1376
+;Our results show an abnormal distribution of HPV types in SCC from renal 
+;transplant recipients, and alterations of c-myc, c-Ha-ras, and p53 genes
+;without  any direct link with the presence of any studied HPV type.
+;[1220..1223]:malignancy:"SCC"
+;[1278..1283]:gene-rna:"c-myc"
+;[1285..1293]:gene-rna:"c-Ha-ras"
+;[1299..1302]:gene-rna:"p53"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1162..1165] Our) (NNS:[1166..1173] results))
+    (VP (VBP:[1174..1178] show)
+      (NP
+        (NP
+          (NP (DT:[1179..1181] an) (JJ:[1182..1190] abnormal)
+              (NN:[1191..1203] distribution))
+          (PP (IN:[1204..1206] of)
+            (NP (NN:[1207..1210] HPV) (NNS:[1211..1216] types)))
+          (PP-LOC (IN:[1217..1219] in)
+            (NP
+              (NP (NN:[1220..1223] SCC))
+              (PP (IN:[1224..1228] from)
+                (NP (JJ:[1229..1234] renal) (NN:[1236..1246] transplant)
+                    (NNS:[1247..1257] recipients))))))
+        (,:[1257..1258] ,) (CC:[1259..1262] and)
+        (NP
+          (NP
+            (NP (NNS:[1263..1274] alterations))
+            (PP (IN:[1275..1277] of)
+              (NP
+                (NP (NN:[1278..1283] c-myc)
+                  (NML-1 (-NONE-:[1283..1283] *P*)))
+                (,:[1283..1284] ,)
+                (NP (NN:[1285..1293] c-Ha-ras)
+                  (NML-1 (-NONE-:[1293..1293] *P*)))
+                (,:[1293..1294] ,) (CC:[1295..1298] and)
+                (NP (NN:[1299..1302] p53)
+                  (NML-1 (NNS:[1303..1308] genes))))))
+          (PP (IN:[1309..1316] without)
+            (NP
+              (NP (DT:[1318..1321] any) (JJ:[1322..1328] direct)
+                  (NN:[1329..1333] link))
+              (PP (IN:[1334..1338] with)
+                (NP
+                  (NP (DT:[1339..1342] the) (NN:[1343..1351] presence))
+                  (PP (IN:[1352..1354] of)
+                    (NP (DT:[1355..1358] any) (VBN:[1359..1366] studied)
+                        (NN:[1367..1370] HPV) (NN:[1371..1375] type))))))))))
+    (.:[1375..1376] .)))
+
+;sentence 11 Span:1377..1511
+;Thus, viral infection  and oncogene activation may represent factors involved
+;in the etiology of skin  SCC from transplant recipients.
+;[1474..1483]:malignancy:"skin  SCC"
+(SENT
+  (S
+    (ADVP (RB:[1377..1381] Thus))
+    (,:[1381..1382] ,)
+    (NP-SBJ
+      (NP (JJ:[1383..1388] viral) (NN:[1389..1398] infection))
+      (CC:[1400..1403] and)
+      (NP (NN:[1404..1412] oncogene) (NN:[1413..1423] activation)))
+    (VP (MD:[1424..1427] may)
+      (VP (VB:[1428..1437] represent)
+        (NP
+          (NP (NNS:[1438..1445] factors))
+          (VP (VBN:[1446..1454] involved)
+            (NP (-NONE-:[1454..1454] *))
+            (PP-CLR (IN:[1455..1457] in)
+              (NP
+                (NP (DT:[1458..1461] the) (NN:[1462..1470] etiology))
+                (PP (IN:[1471..1473] of)
+                  (NP
+                    (NP (NN:[1474..1478] skin) (NN:[1480..1483] SCC))
+                    (PP (IN:[1484..1488] from)
+                      (NP (NN:[1489..1499] transplant)
+                          (NNS:[1500..1510] recipients)))))))))))
+    (.:[1510..1511] .)))
+
+;section 12 Span:1515..1559
+;PMID: 8907200 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1515..1519] PMID) (::[1519..1520] :) (CD:[1521..1528] 8907200)
+        (IN:[1529..1530] -LSB-) (NNP:[1530..1536] PubMed) (HYPH:[1537..1538] -)
+        (JJ:[1539..1546] indexed) (IN:[1547..1550] for)
+        (NNP:[1551..1559] MEDLINE-RSB-)))

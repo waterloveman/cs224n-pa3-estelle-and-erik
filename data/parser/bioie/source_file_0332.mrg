@@ -1,0 +1,535 @@
+;PMID: 2506333
+;source_file_947.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..108] = [t:52..108]
+;2)sentence:[e:109..193] = [t:109..193]
+;3)section:[e:197..263] = [t:197..263]
+;4)section:[e:267..364] = [t:267..364]
+;5)sentence:[e:368..576] = [t:368..576]
+;6)sentence:[e:577..686] = [t:577..686]
+;7)sentence:[e:687..868] = [t:687..868]
+;8)sentence:[e:869..1067] = [t:869..1067]
+;9)sentence:[e:1069..1182] = [t:1069..1182]
+;10)sentence:[e:1183..1380] = [t:1183..1380]
+;11)sentence:[e:1381..1703] = [t:1381..1703]
+;12)sentence:[e:1704..1882] = [t:1704..1882]
+;13)sentence:[e:1883..2152] = [t:1883..2152]
+;14)section:[e:2156..2200] = [t:2156..2200]
+
+;section 0 Span:0..46
+;J Pharmacol Exp Ther. 1989 Sep;250(3):1034-42.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1989)
+        (CC:[27..35] Sep;250-LRB-) (CD:[35..36] 3) (-RRB-:[36..37] -RRB-)
+        (CD:[37..42] :1034) (TO:[42..43] -) (CD:[43..45] 42) (.:[45..46] .)))
+
+;sentence 1 Span:52..108
+;Suicide inactivation of cytochrome P-450 by methoxsalen.
+;[76..92]:cyp450:"cytochrome P-450"
+;[96..107]:substance:"methoxsalen"
+(SENT
+  (NP-HLN
+    (NP (NN:[52..59] Suicide) (NN:[60..72] inactivation))
+    (PP (IN:[73..75] of)
+      (NP (NN:[76..86] cytochrome) (NN:[87..92] P-450)))
+    (PP (IN:[93..95] by)
+      (NP (NN:[96..107] methoxsalen)))
+    (.:[107..108] .)))
+
+;sentence 2 Span:109..193
+;Evidence for the  covalent binding of a reactive intermediate to the protein
+;moiety.
+;[158..170]:substance:"intermediate"
+;[178..185]:substance:"protein"
+(SENT
+  (NP-HLN
+    (NP (NN:[109..117] Evidence))
+    (PP (IN:[118..121] for)
+      (NP
+        (NP (DT:[122..125] the) (JJ:[127..135] covalent) (NN:[136..143] binding))
+        (PP (IN:[144..146] of)
+          (NP
+            (NP (DT:[147..148] a) (JJ:[149..157] reactive)
+                (NN:[158..170] intermediate))
+            (PP (TO:[171..173] to)
+              (NP (DT:[174..177] the) (NN:[178..185] protein)
+                  (NN:[186..192] moiety)))))))
+    (.:[192..193] .)))
+
+;section 3 Span:197..263
+;Labbe G, Descatoire V, Beaune P, Letteron P, Larrey D, Pessayre D.
+(SEC
+  (FRAG (NNP:[197..202] Labbe) (NNP:[203..204] G) (,:[204..205] ,)
+        (NNP:[206..216] Descatoire) (NNP:[217..218] V) (,:[218..219] ,)
+        (NNP:[220..226] Beaune) (NNP:[227..228] P) (,:[228..229] ,)
+        (NNP:[230..238] Letteron) (NNP:[239..240] P) (,:[240..241] ,)
+        (NNP:[242..248] Larrey) (NNP:[249..250] D) (,:[250..251] ,)
+        (NNP:[252..260] Pessayre) (NNP:[261..263] D.)))
+
+;section 4 Span:267..364
+;Unite de Recherches de Physiopathologie Hepatique (INSERM U24), Hopital
+;Beaujon,  Clichy, France.
+(SEC
+  (FRAG (NNP:[267..272] Unite) (NNP:[273..275] de) (NNP:[276..286] Recherches)
+        (IN:[287..289] de) (NNP:[290..306] Physiopathologie)
+        (NNP:[307..316] Hepatique) (-LRB-:[317..318] -LRB-)
+        (NNP:[318..324] INSERM) (NNP:[325..328] U24) (-RRB-:[328..329] -RRB-)
+        (,:[329..330] ,) (NNP:[331..338] Hopital) (NNP:[339..346] Beaujon)
+        (,:[346..347] ,) (NNP:[349..355] Clichy) (,:[355..356] ,)
+        (NNP:[357..363] France) (.:[363..364] .)))
+
+;sentence 5 Span:368..576
+;Incubation of rat liver microsomes with [3H]methoxsalen and NADPH resulted in
+; the covalent binding of a methoxsalen intermediate to proteins comigrating
+;with  cytochromes P-450 UT-A, PB-B/D, ISF-G and PCN-E.
+;[408..423]:substance:"[3H]methoxsalen"
+;[428..433]:substance:"NADPH"
+;[473..484]:substance:"methoxsalen"
+;[485..497]:substance:"intermediate"
+;[501..509]:substance:"proteins"
+;[528..550]:cyp450:"cytochromes P-450 UT-A"
+;[528..545]...[570..575]:cyp450:"cytochromes P-450"..."PCN-E"
+;[528..545]...[560..565]:cyp450:"cytochromes P-450"..."ISF-G"
+;[528..545]...[552..554]...[557..558]:cyp450:"cytochromes P-450"..."PB"..."D"
+;[528..545]...[552..556]:cyp450:"cytochromes P-450"..."PB-B"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[368..378] Incubation))
+      (PP (IN:[379..381] of)
+        (NP (NN:[382..385] rat) (NN:[386..391] liver)
+            (NNS:[392..402] microsomes)))
+      (PP (IN:[403..407] with)
+        (NP (NN:[408..423] -LSB-3H-RSB-methoxsalen) (CC:[424..427] and)
+            (NN:[428..433] NADPH))))
+    (VP (VBD:[434..442] resulted)
+      (PP-CLR (IN:[443..445] in)
+        (NP
+          (NP (DT:[447..450] the) (JJ:[451..459] covalent)
+              (NN:[460..467] binding))
+          (PP (IN:[468..470] of)
+            (NP
+              (NP (DT:[471..472] a) (NN:[473..484] methoxsalen))
+              (ADJP (NN:[485..497] intermediate)
+                (PP (TO:[498..500] to)
+                  (NP
+                    (NP (NNS:[501..509] proteins))
+                    (VP (VBG:[510..521] comigrating)
+                      (PP-CLR (IN:[522..526] with)
+                        (NP
+                          (NP
+                            (NML-2 (NNS:[528..539] cytochromes)
+                                   (NN:[540..545] P-450))
+                            (NML (NN:[546..550] UT-A)))
+                          (,:[550..551] ,)
+                          (NP
+                            (NP
+                              (NML-2 (-NONE-:[551..551] *P*))
+                              (NML-1 (NN:[552..554] PB) (HYPH:[554..555] -))
+                              (NN:[555..556] B))
+                            (SYM:[556..557] /)
+                            (NP
+                              (NML-2 (-NONE-:[557..557] *P*))
+                              (NML-1 (-NONE-:[557..557] *P*))
+                              (NN:[557..558] D)))
+                          (,:[558..559] ,)
+                          (NP
+                            (NML-2 (-NONE-:[559..559] *P*))
+                            (NN:[560..565] ISF-G))
+                          (CC:[566..569] and)
+                          (NP
+                            (NML-2 (-NONE-:[569..569] *P*))
+                            (NN:[570..575] PCN-E)))))))))))))
+    (.:[575..576] .)))
+
+;sentence 6 Span:577..686
+;Binding was increased by  pretreatments with phenobarbital,
+;beta-naphthoflavone (beta NF) and  dexamethasone.
+;[622..635]:substance:"phenobarbital"
+;[637..656]:substance:"beta-naphthoflavone"
+;[658..665]:substance:"beta NF"
+;[672..685]:substance:"dexamethasone"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[577..584] Binding))
+    (VP (VBD:[585..588] was)
+      (VP (VBN:[589..598] increased)
+        (NP-1 (-NONE-:[598..598] *))
+        (PP (IN:[599..601] by)
+          (NP-LGS
+            (NP (NNS:[603..616] pretreatments))
+            (PP (IN:[617..621] with)
+              (NP
+                (NP (NN:[622..635] phenobarbital))
+                (,:[635..636] ,)
+                (NP
+                  (NP (NN:[637..656] beta-naphthoflavone))
+                  (NP (-LRB-:[657..658] -LRB-)
+                     (SYM:[658..662] beta) (NN:[663..665] NF)
+                    (-RRB-:[665..666] -RRB-)))
+                (CC:[667..670] and)
+                (NP (NN:[672..685] dexamethasone))))))))
+    (.:[685..686] .)))
+
+;sentence 7 Span:687..868
+;Such pretreatments also increased the loss of CO-binding capacity  either
+;after administration of methoxsalen, or after incubation of hepatic 
+;microsomes with methoxsalen and NADPH.
+;[733..735]:substance:"CO"
+;[785..796]:substance:"methoxsalen"
+;[846..857]:substance:"methoxsalen"
+;[862..867]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ (JJ:[687..691] Such) (NNS:[692..705] pretreatments))
+    (VP
+      (ADVP (RB:[706..710] also))
+      (VBD:[711..720] increased)
+      (NP
+        (NP (DT:[721..724] the) (NN:[725..729] loss))
+        (PP (IN:[730..732] of)
+          (NP
+            (NML (NN:[733..735] CO) (HYPH:[735..736] -) (NN:[736..743] binding))
+            (NN:[744..752] capacity))))
+      (PP-TMP (CC:[754..760] either)
+        (PP (IN:[761..766] after)
+          (NP
+            (NP (NN:[767..781] administration))
+            (PP (IN:[782..784] of)
+              (NP (NN:[785..796] methoxsalen)))))
+        (,:[796..797] ,) (CC:[798..800] or)
+        (PP (IN:[801..806] after)
+          (NP
+            (NP (NN:[807..817] incubation))
+            (PP (IN:[818..820] of)
+              (NP
+                (NP (JJ:[821..828] hepatic) (NNS:[830..840] microsomes))
+                (PP (IN:[841..845] with)
+                  (NP (NN:[846..857] methoxsalen) (CC:[858..861] and)
+                      (NN:[862..867] NADPH)))))))))
+    (.:[867..868] .)))
+
+;sentence 8 Span:869..1067
+;Immunoprecipitation of the methoxsalen  metabolite-protein adducts in
+;phenobarbital-induced microsomes was moderate with  anti-UT-A antibodies, but
+;marked with anti-PB-B/D and anti-PCN-E antibodies.
+;[896..919]:substance:"methoxsalen  metabolite"
+;[920..935]:substance:"protein adducts"
+;[939..952]:substance:"phenobarbital"
+;[991..1011]:substance:"anti-UT-A antibodies"
+;[1029..1038]...[1056..1066]:substance:"anti-PB-B"..."antibodies"
+;[1029..1036]...[1039..1040]...[1056..1066]:substance:"anti-PB"..."D"..."antib
+;odies"
+;[1045..1066]:substance:"anti-PCN-E antibodies"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (NN:[869..888] Immunoprecipitation))
+      (PP (IN:[889..891] of)
+        (NP (DT:[892..895] the)
+          (NML
+            (NML (NN:[896..907] methoxsalen) (NN:[909..919] metabolite))
+            (HYPH:[919..920] -) (NN:[920..927] protein))
+          (NNS:[928..935] adducts)))
+      (PP-LOC (IN:[936..938] in)
+        (NP
+          (ADJP (NN:[939..952] phenobarbital) (HYPH:[952..953] -)
+                (VBN:[953..960] induced))
+          (NNS:[961..971] microsomes))))
+    (VP (VBD:[972..975] was)
+      (UCP
+        (ADJP-PRD (JJ:[976..984] moderate)
+          (PP (IN:[985..989] with)
+            (NP
+              (NML (AFX:[991..995] anti) (HYPH:[995..996] -)
+                   (NN:[996..1000] UT-A))
+              (NNS:[1001..1011] antibodies))))
+        (,:[1011..1012] ,) (CC:[1013..1016] but)
+        (VP (VBN:[1017..1023] marked)
+          (NP-3 (-NONE-:[1023..1023] *))
+          (PP (IN:[1024..1028] with)
+            (NP
+              (NP
+                (NP
+                  (NML-1 (AFX:[1029..1033] anti) (HYPH:[1033..1034] -)
+                         (NN:[1034..1036] PB) (HYPH:[1036..1037] -))
+                  (NN:[1037..1038] B)
+                  (NML-2 (-NONE-:[1038..1038] *P*)))
+                (SYM:[1038..1039] /)
+                (NP
+                  (NML-1 (-NONE-:[1039..1039] *P*))
+                  (NN:[1039..1040] D)
+                  (NML-2 (-NONE-:[1040..1040] *P*))))
+              (CC:[1041..1044] and)
+              (NP
+                (NML (AFX:[1045..1049] anti) (HYPH:[1049..1050] -)
+                     (NN:[1050..1055] PCN-E))
+                (NML-2 (NNS:[1056..1066] antibodies))))))))
+    (.:[1066..1067] .)))
+
+;sentence 9 Span:1069..1182
+;Immunoprecipitation was observed also with anti-ISF-G (anti-beta NF-B) 
+;antibodies in beta NF-induced microsomes.
+;[1112..1151]:substance:"anti-ISF-G (anti-beta NF-B)  antibodies"
+;[1155..1162]:substance:"beta NF"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1069..1088] Immunoprecipitation))
+    (VP (VBD:[1089..1092] was)
+      (VP (VBN:[1093..1101] observed)
+        (NP-1 (-NONE-:[1101..1101] *))
+        (ADVP (RB:[1102..1106] also))
+        (PP (IN:[1107..1111] with)
+          (NP
+            (NP
+              (NML (AFX:[1112..1116] anti) (HYPH:[1116..1117] -)
+                   (NN:[1117..1122] ISF-G)
+                (PRN (-LRB-:[1123..1124] -LRB-)
+                  (NML (AFX:[1124..1128] anti) (HYPH:[1128..1129] -)
+                       (SYM:[1129..1133] beta) (NN:[1134..1138] NF-B))
+                  (-RRB-:[1138..1139] -RRB-)))
+              (NNS:[1141..1151] antibodies))
+            (PP-LOC (IN:[1152..1154] in)
+              (NP
+                (ADJP
+                  (NML (SYM:[1155..1159] beta) (NN:[1160..1162] NF))
+                  (HYPH:[1162..1163] -) (VBN:[1163..1170] induced))
+                (NNS:[1171..1181] microsomes)))))))
+    (.:[1181..1182] .)))
+
+;sentence 10 Span:1183..1380
+;Methoxsalen (0.25 mM) inhibited  markedly the benzphetamine demethylase
+;activity of phenobarbital-induced  microsomes and the erythromycin
+;demethylase activity of dexamethasone-induced  microsomes.
+;[1183..1194]:substance:"Methoxsalen"
+;[1196..1200]:quantitative-value:"0.25"
+;[1201..1203]:quantitative-units:"mM"
+;[1229..1254]:substance:"benzphetamine demethylase"
+;[1267..1280]:substance:"phenobarbital"
+;[1309..1333]:substance:"erythromycin demethylase"
+;[1346..1359]:substance:"dexamethasone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1183..1194] Methoxsalen))
+      (PRN (-LRB-:[1195..1196] -LRB-)
+        (NP (CD:[1196..1200] 0.25) (NN:[1201..1203] mM))
+        (-RRB-:[1203..1204] -RRB-)))
+    (VP (VBD:[1205..1214] inhibited)
+      (ADVP (RB:[1216..1224] markedly))
+      (NP
+        (NP
+          (NP (DT:[1225..1228] the)
+             (NN:[1229..1242] benzphetamine) (NN:[1243..1254] demethylase)
+            (NN:[1255..1263] activity))
+          (PP (IN:[1264..1266] of)
+            (NP
+              (ADJP (NN:[1267..1280] phenobarbital) (HYPH:[1280..1281] -)
+                    (VBN:[1281..1288] induced))
+              (NNS:[1290..1300] microsomes))))
+        (CC:[1301..1304] and)
+        (NP
+          (NP (DT:[1305..1308] the)
+             (NN:[1309..1321] erythromycin) (NN:[1322..1333] demethylase)
+            (NN:[1334..1342] activity))
+          (PP (IN:[1343..1345] of)
+            (NP
+              (ADJP (NN:[1346..1359] dexamethasone) (HYPH:[1359..1360] -)
+                    (VBN:[1360..1367] induced))
+              (NNS:[1369..1379] microsomes))))))
+    (.:[1379..1380] .)))
+
+;sentence 11 Span:1381..1703
+;Whereas methoxsalen itself did not produce any binding spectrum, in  contrast
+;either in vivo administration of methoxsalen or incubation in vitro  with
+;methoxsalen and NADPH resulted in a low-to-high spin conversion of 
+;cytochrome P-450 as suggested by the appearance of a spectrum analogous to a 
+;type I binding spectrum.
+;[1389..1400]:substance:"methoxsalen"
+;[1492..1503]:substance:"methoxsalen"
+;[1533..1544]:substance:"methoxsalen"
+;[1549..1554]:substance:"NADPH"
+;[1601..1617]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1381..1388] Whereas)
+      (S
+        (NP-SBJ (NN:[1389..1400] methoxsalen) (PRP:[1401..1407] itself))
+        (VP (VBD:[1408..1411] did) (RB:[1412..1415] not)
+          (VP (VB:[1416..1423] produce)
+            (NP (DT:[1424..1427] any) (NN:[1428..1435] binding)
+                (NN:[1436..1444] spectrum))))))
+    (,:[1444..1445] ,)
+    (PP (IN:[1446..1448] in)
+      (NP (NN:[1450..1458] contrast)))
+    (NP-SBJ (CC:[1459..1465] either)
+      (NP
+        (NP
+          (ADJP (FW:[1466..1468] in) (FW:[1469..1473] vivo))
+          (NN:[1474..1488] administration))
+        (PP (IN:[1489..1491] of)
+          (NP (NN:[1492..1503] methoxsalen))))
+      (CC:[1504..1506] or)
+      (NP
+        (NP (NN:[1507..1517] incubation))
+        (ADJP (FW:[1518..1520] in) (FW:[1521..1526] vitro))
+        (PP (IN:[1528..1532] with)
+          (NP (NN:[1533..1544] methoxsalen) (CC:[1545..1548] and)
+              (NN:[1549..1554] NADPH)))))
+    (VP (VBD:[1555..1563] resulted)
+      (PP-CLR (IN:[1564..1566] in)
+        (NP
+          (NP (DT:[1567..1568] a)
+            (ADJP (JJ:[1569..1572] low) (HYPH:[1572..1573] -)
+              (PP (TO:[1573..1575] to) (HYPH:[1575..1576] -)
+                (ADJP (JJ:[1576..1580] high))))
+            (NN:[1581..1585] spin) (NN:[1586..1596] conversion))
+          (PP (IN:[1597..1599] of)
+            (NP (NN:[1601..1611] cytochrome) (NN:[1612..1617] P-450)))))
+      (SBAR (IN:[1618..1620] as)
+        (S
+          (NP-SBJ-1 (-NONE-:[1620..1620] *))
+          (VP (VBN:[1621..1630] suggested)
+            (NP-1 (-NONE-:[1630..1630] *))
+            (PP (IN:[1631..1633] by)
+              (NP-LGS
+                (NP (DT:[1634..1637] the) (NN:[1638..1648] appearance))
+                (PP (IN:[1649..1651] of)
+                  (NP
+                    (NP (DT:[1652..1653] a) (NN:[1654..1662] spectrum))
+                    (ADJP (JJ:[1663..1672] analogous)
+                      (PP (TO:[1673..1675] to)
+                        (NP (DT:[1676..1677] a)
+                          (NML (NN:[1679..1683] type) (CD:[1684..1685] I))
+                          (NN:[1686..1693] binding) (NN:[1694..1702] spectrum))))))))))))
+    (.:[1702..1703] .)))
+
+;sentence 12 Span:1704..1882
+;This low-to-high spin conversion was apparently due to  a methoxsalen
+;intermediate (probably, covalently bound to the protein and  preventing
+;partial sixth ligation of the iron).
+;[1762..1773]:substance:"methoxsalen"
+;[1774..1786]:substance:"intermediate"
+;[1822..1829]:substance:"protein"
+;[1876..1880]:substance:"iron"
+(SENT
+  (S
+    (NP-SBJ (DT:[1704..1708] This)
+      (ADJP (JJ:[1709..1712] low) (HYPH:[1712..1713] -)
+        (PP (TO:[1713..1715] to) (HYPH:[1715..1716] -)
+          (ADJP (JJ:[1716..1720] high))))
+      (NN:[1721..1725] spin) (NN:[1726..1736] conversion))
+    (VP (VBD:[1737..1740] was)
+      (ADVP (RB:[1741..1751] apparently))
+      (PP-PRD (JJ:[1752..1755] due)
+        (PP (TO:[1756..1758] to)
+          (NP
+            (NP (DT:[1760..1761] a) (NN:[1762..1773] methoxsalen)
+                (NN:[1774..1786] intermediate))
+            (PRN (-LRB-:[1787..1788] -LRB-)
+              (VP
+                (ADVP (RB:[1788..1796] probably))
+                (,:[1796..1797] ,)
+                (VP
+                  (ADVP (RB:[1798..1808] covalently))
+                  (VBN:[1809..1814] bound)
+                  (NP (-NONE-:[1814..1814] *))
+                  (PP-CLR (TO:[1815..1817] to)
+                    (NP (DT:[1818..1821] the) (NN:[1822..1829] protein))))
+                (CC:[1830..1833] and)
+                (VP (VBG:[1835..1845] preventing)
+                  (NP
+                    (NP (JJ:[1846..1853] partial) (JJ:[1854..1859] sixth)
+                        (NN:[1860..1868] ligation))
+                    (PP (IN:[1869..1871] of)
+                      (NP (DT:[1872..1875] the) (NN:[1876..1880] iron))))))
+              (-RRB-:[1880..1881] -RRB-))))))
+    (.:[1881..1882] .)))
+
+;sentence 13 Span:1883..2152
+;We conclude that suicide  inactivation of cytochrome P-450 by methoxsalen is
+;related to the covalent  binding of a methoxsalen intermediate to the protein
+;moiety of several  cytochrome P-450 isoenzymes (including UT-A, PB-B/D, PCN-E
+;as well as ISF-G  and/or beta NF-B).
+;[1925..1941]:cyp450:"cytochrome P-450"
+;[1945..1956]:substance:"methoxsalen"
+;[1998..2009]:substance:"methoxsalen"
+;[2010..2022]:substance:"intermediate"
+;[2030..2037]:substance:"protein"
+;[2057..2084]:cyp450:"cytochrome P-450 isoenzymes"
+;[2096..2100]:cyp450:"UT-A"
+;[2102..2106]:cyp450:"PB-B"
+;[2102..2104]...[2107..2108]:cyp450:"PB"..."D"
+;[2110..2115]:cyp450:"PCN-E"
+;[2127..2132]:cyp450:"ISF-G"
+;[2141..2150]:cyp450:"beta NF-B"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1883..1885] We))
+    (VP (VBP:[1886..1894] conclude)
+      (SBAR (IN:[1895..1899] that)
+        (S
+          (NP-SBJ-2
+            (NP (NN:[1900..1907] suicide) (NN:[1909..1921] inactivation))
+            (PP (IN:[1922..1924] of)
+              (NP (NN:[1925..1935] cytochrome) (NN:[1936..1941] P-450)))
+            (PP (IN:[1942..1944] by)
+              (NP (NN:[1945..1956] methoxsalen))))
+          (VP (VBZ:[1957..1959] is)
+            (VP (VBN:[1960..1967] related)
+              (NP-2 (-NONE-:[1967..1967] *))
+              (PP-CLR (TO:[1968..1970] to)
+                (NP
+                  (NP (DT:[1971..1974] the) (JJ:[1975..1983] covalent)
+                      (NN:[1985..1992] binding))
+                  (PP (IN:[1993..1995] of)
+                    (NP (DT:[1996..1997] a) (NN:[1998..2009] methoxsalen)
+                        (NN:[2010..2022] intermediate)))
+                  (PP (TO:[2023..2025] to)
+                    (NP
+                      (NP (DT:[2026..2029] the) (NN:[2030..2037] protein)
+                          (NN:[2038..2044] moiety))
+                      (PP (IN:[2045..2047] of)
+                        (NP
+                          (NP (JJ:[2048..2055] several)
+                            
+                            (NML (NN:[2057..2067] cytochrome)
+                                 (NN:[2068..2073] P-450))
+                            (NNS:[2074..2084] isoenzymes))
+                          (PRN (-LRB-:[2085..2086] -LRB-)
+                            (PP (VBG:[2086..2095] including)
+                              (NP
+                                (NP (NN:[2096..2100] UT-A))
+                                (,:[2100..2101] ,)
+                                (NP
+                                  (NP
+                                    (NML-1 (NN:[2102..2104] PB)
+                                           (HYPH:[2104..2105] -))
+                                    (NN:[2105..2106] B))
+                                  (SYM:[2106..2107] /)
+                                  (NP
+                                    (NML-1 (-NONE-:[2107..2107] *P*))
+                                    (NN:[2107..2108] D)))
+                                (,:[2108..2109] ,)
+                                (NP (NN:[2110..2115] PCN-E))
+                                (CONJP (RB:[2116..2118] as)
+                                       (RB:[2119..2123] well)
+                                       (IN:[2124..2126] as))
+                                (NP (NN:[2127..2132] ISF-G))
+                                (CC:[2134..2140] and/or)
+                                (NP (SYM:[2141..2145] beta)
+                                    (NN:[2146..2150] NF-B))))
+                            (-RRB-:[2150..2151] -RRB-)))))))))))))
+    (.:[2151..2152] .)))
+
+;section 14 Span:2156..2200
+;PMID: 2506333 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2156..2160] PMID) (::[2160..2161] :) (CD:[2162..2169] 2506333)
+        (IN:[2170..2171] -LSB-) (NNP:[2171..2177] PubMed) (HYPH:[2178..2179] -)
+        (JJ:[2180..2187] indexed) (IN:[2188..2191] for)
+        (NNP:[2192..2200] MEDLINE-RSB-)))

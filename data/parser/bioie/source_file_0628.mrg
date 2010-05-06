@@ -1,0 +1,612 @@
+;PMID: 8760035
+;source_file_1732.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..160] = [t:49..160]
+;2)section:[e:164..189] = [t:164..189]
+;3)section:[e:193..267] = [t:193..267]
+;4)sentence:[e:271..476] = [t:271..476]
+;5)sentence:[e:477..638] = [t:477..638]
+;6)sentence:[e:639..804] = [t:639..804]
+;7)sentence:[e:805..1088] = [t:805..1088]
+;8)sentence:[e:1089..1276] = [t:1089..1276]
+;9)sentence:[e:1277..1503] = [t:1277..1503]
+;10)sentence:[e:1504..1603] = [t:1504..1603]
+;11)sentence:[e:1605..1955] = [t:1605..1955]
+;12)sentence:[e:1956..2216] = [t:1956..2216]
+;13)sentence:[e:2217..2440] = [t:2217..2440]
+;14)section:[e:2444..2488] = [t:2444..2488]
+
+;section 0 Span:0..43
+;Am J Physiol. 1996 Jul;271(1 Pt 1):C103-11.
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..12] Physiol) (.:[12..13] .)
+        (CD:[14..18] 1996) (.:[19..26] Jul;271) (-LRB-:[26..27] -LRB-)
+        (CD:[27..28] 1) (NN:[29..31] Pt) (CD:[32..33] 1) (-RRB-:[33..34] -RRB-)
+        (CD:[34..39] :C103) (::[39..40] -) (CD:[40..42] 11) (.:[42..43] .)))
+
+;sentence 1 Span:49..160
+;Cytochrome P-450 metabolites mediate extracellular Ca(2+)-induced inhibition
+;of  apical K+ channels in the TAL.
+;[49..65]:cyp450:"Cytochrome P-450"
+;[66..77]:substance:"metabolites"
+;[100..106]:substance:"Ca(2+)"
+;[137..139]:substance:"K+"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML (NN:[49..59] Cytochrome) (NN:[60..65] P-450))
+      (NNS:[66..77] metabolites))
+    (VP (VBP:[78..85] mediate)
+      (NP
+        (NP (JJ:[86..99] extracellular)
+          (ADJP (NN:[100..106] Ca-LRB-2+-RRB-) (HYPH:[106..107] -)
+                (VBN:[107..114] induced))
+          (NN:[115..125] inhibition))
+        (PP (IN:[126..128] of)
+          (NP (JJ:[130..136] apical) (NN:[137..139] K+)
+              (NNS:[140..148] channels))))
+      (PP-LOC (IN:[149..151] in)
+        (NP (DT:[152..155] the) (NN:[156..159] TAL))))
+    (.:[159..160] .)))
+
+;section 2 Span:164..189
+;Wang WH, Lu M, Hebert SC.
+(SEC
+  (FRAG (NNP:[164..168] Wang) (NNP:[169..171] WH) (,:[171..172] ,)
+        (NNP:[173..175] Lu) (NNP:[176..178] M,) (NNP:[179..185] Hebert)
+        (NNP:[186..188] SC) (.:[188..189] .)))
+
+;section 3 Span:193..267
+;Department of Pharmacology, New York Medical College, Valhalla 10595, USA.
+(SEC
+  (FRAG (NNP:[193..203] Department) (IN:[204..206] of)
+        (NNP:[207..219] Pharmacology) (,:[219..220] ,) (NNP:[221..224] New)
+        (NNP:[225..229] York) (NNP:[230..237] Medical) (NNP:[238..245] College)
+        (,:[245..246] ,) (NNP:[247..255] Valhalla) (CD:[256..261] 10595)
+        (,:[261..262] ,) (NNP:[263..266] USA) (.:[266..267] .)))
+
+;sentence 4 Span:271..476
+;We used the patch-clamp technique to study the effect of extracellular Ca2+ 
+;(Ca2+o) on the activity of the apical 70-pS K+ channel in the isolated 
+;split-open thick ascending limb (TAL) of the rat kidney.
+;[342..346]:substance:"Ca2+"
+;[349..354]:substance:"Ca2+o"
+;[392..394]:substance:"K+"
+(SENT
+  (S
+    (NP-SBJ (PRP:[271..273] We))
+    (VP (VBD:[274..278] used)
+      (NP (DT:[279..282] the)
+        (NML (NN:[283..288] patch) (HYPH:[288..289] -) (NN:[289..294] clamp))
+        (NN:[295..304] technique))
+      (S-PRP
+        (NP-SBJ (-NONE-:[304..304] *))
+        (VP (TO:[305..307] to)
+          (NP (VB:[308..313] study)
+            (NP
+              (NP (DT:[314..317] the) (NN:[318..324] effect))
+              (PP (IN:[325..327] of)
+                (NP
+                  (NP (JJ:[328..341] extracellular) (NN:[342..346] Ca2+))
+                  (NP (-LRB-:[348..349] -LRB-) (NN:[349..354] Ca2+o)
+                      (-RRB-:[354..355] -RRB-))))
+              (PP (IN:[356..358] on)
+                (NP
+                  (NP (DT:[359..362] the) (NN:[363..371] activity))
+                  (PP (IN:[372..374] of)
+                    (NP (DT:[375..378] the) (JJ:[379..385] apical)
+                      (NML (CD:[386..388] 70) (HYPH:[388..389] -)
+                           (NN:[389..391] pS))
+                      (NN:[392..394] K+) (NN:[395..402] channel))))))
+            (PP-LOC (IN:[403..405] in)
+              (NP
+                (NP
+                  (NP (DT:[406..409] the) (VBN:[410..418] isolated)
+                    (ADJP (VBN:[420..425] split) (HYPH:[425..426] -)
+                          (JJ:[426..430] open))
+                    (JJ:[431..436] thick) (VBG:[437..446] ascending)
+                     (NN:[447..451] limb))
+                  (NP (-LRB-:[452..453] -LRB-) (NN:[453..456] TAL)
+                      (-RRB-:[456..457] -RRB-)))
+                (PP (IN:[458..460] of)
+                  (NP (DT:[461..464] the) (NN:[465..468] rat)
+                      (NN:[469..475] kidney)))))))))
+    (.:[475..476] .)))
+
+;sentence 5 Span:477..638
+;Raising Ca2+o from 1.1  to 5 mM reversibly reduced the activity of the 70-pS
+;K+ channel in cell-attached  patches to 16 +/- 2% of the control value within
+;300 s.
+;[485..490]:substance:"Ca2+o"
+;[496..499]:quantitative-value:"1.1"
+;[504..505]:quantitative-value:"5"
+;[506..508]:quantitative-units:"mM"
+;[554..556]:substance:"K+"
+;[594..603]:quantitative-value:"16 +/- 2%"
+;[632..635]:quantitative-value:"300"
+;[636..637]:quantitative-units:"s"
+(SENT
+  (S
+    (S-NOM-SBJ
+      (NP-SBJ (-NONE-:[477..477] *))
+      (VP (VBG:[477..484] Raising)
+        (NP
+          (NP (NN:[485..490] Ca2+o))
+          (PP (IN:[491..495] from)
+            (NP (CD:[496..499] 1.1)
+              (NML-1 (-NONE-:[499..499] *RNR*))))
+          (PP (TO:[501..503] to)
+            (NP (CD:[504..505] 5)
+              (NML-1 (-NONE-:[505..505] *RNR*))))
+          (NML-1 (NN:[506..508] mM)))))
+    (ADVP (RB:[509..519] reversibly))
+    (VP (VBD:[520..527] reduced)
+      (NP
+        (NP (DT:[528..531] the) (NN:[532..540] activity))
+        (PP (IN:[541..543] of)
+          (NP (DT:[544..547] the)
+            (NML (CD:[548..550] 70) (HYPH:[550..551] -) (NN:[551..553] pS))
+            (NN:[554..556] K+) (NN:[557..564] channel))))
+      (PP-LOC (IN:[565..567] in)
+        (NP
+          (ADJP (NN:[568..572] cell) (HYPH:[572..573] -)
+                (VBN:[573..581] attached))
+          (NNS:[583..590] patches)))
+      (PP (TO:[591..593] to)
+        (NP
+          (NP
+            (QP (CD:[594..596] 16) (SYM:[597..600] +/-) (CD:[601..602] 2))
+            (NN:[602..603] %))
+          (PP (IN:[604..606] of)
+            (NP
+              (NP (DT:[607..610] the) (NN:[611..618] control)
+                  (NN:[619..624] value))
+              (PP (IN:[625..631] within)
+                (NP (CD:[632..635] 300) (NN:[636..637] s))))))))
+    (.:[637..638] .)))
+
+;sentence 6 Span:639..804
+;In addition, 50 microM  neomycin mimicked the effect of an increase in Ca2+o
+;on channel activity in  cell-attached patches and completely inhibited
+;channel activity.
+;[652..654]:quantitative-value:"50"
+;[655..661]:quantitative-units:"microM"
+;[663..671]:substance:"neomycin"
+;[710..715]:substance:"Ca2+o"
+(SENT
+  (S
+    (PP (IN:[639..641] In)
+      (NP (NN:[642..650] addition)))
+    (,:[650..651] ,)
+    (NP-SBJ
+      (NML (CD:[652..654] 50) (NN:[655..661] microM))
+      (NN:[663..671] neomycin))
+    (VP
+      (VP (VBD:[672..680] mimicked)
+        (NP
+          (NP (DT:[681..684] the) (NN:[685..691] effect))
+          (PP (IN:[692..694] of)
+            (NP
+              (NP (DT:[695..697] an) (NN:[698..706] increase))
+              (PP (IN:[707..709] in)
+                (NP (NN:[710..715] Ca2+o)))))
+          (PP (IN:[716..718] on)
+            (NP
+              (NP (NN:[719..726] channel) (NN:[727..735] activity))
+              (PP-LOC (IN:[736..738] in)
+                (NP
+                  (ADJP (NN:[740..744] cell) (HYPH:[744..745] -)
+                        (VBN:[745..753] attached))
+                  (NNS:[754..761] patches)))))))
+      (CC:[762..765] and)
+      (VP
+        (ADVP (RB:[766..776] completely))
+        (VBD:[777..786] inhibited)
+        (NP (NN:[787..794] channel) (NN:[795..803] activity))))
+    (.:[803..804] .)))
+
+;sentence 7 Span:805..1088
+;The effect of  neomycin on the channel activity in cell-attached patches is
+;an indirect effect,  since addition of 50 microM neomycin on the 70-pS K+
+;channel in inside-out  patches reduced only the apparent amplitude of the
+;channel current without  changing channel open probability.
+;[820..828]:substance:"neomycin"
+;[920..922]:quantitative-value:"50"
+;[923..929]:quantitative-units:"microM"
+;[930..938]:substance:"neomycin"
+;[952..954]:substance:"K+"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[805..808] The) (NN:[809..815] effect))
+      (PP (IN:[816..818] of)
+        (NP (NN:[820..828] neomycin)))
+      (PP (IN:[829..831] on)
+        (NP (DT:[832..835] the) (NN:[836..843] channel) (NN:[844..852] activity)))
+      (PP-LOC (IN:[853..855] in)
+        (NP
+          (ADJP (NN:[856..860] cell) (HYPH:[860..861] -)
+                (VBN:[861..869] attached))
+          (NNS:[870..877] patches))))
+    (VP (VBZ:[878..880] is)
+      (NP-PRD (DT:[881..883] an) (JJ:[884..892] indirect) (NN:[893..899] effect))
+      (,:[899..900] ,)
+      (SBAR-ADV (IN:[902..907] since)
+        (S
+          (NP-SBJ
+            (NP (NN:[908..916] addition))
+            (PP (IN:[917..919] of)
+              (NP
+                (NML (CD:[920..922] 50) (NN:[923..929] microM))
+                (NN:[930..938] neomycin)))
+            (PP (IN:[939..941] on)
+              (NP (DT:[942..945] the)
+                (NML (CD:[946..948] 70) (HYPH:[948..949] -) (NN:[949..951] pS))
+                (NN:[952..954] K+) (NN:[955..962] channel)))
+            (PP-LOC (IN:[963..965] in)
+              (ADJP (NN:[966..972] inside) (HYPH:[972..973] -)
+                    (RP:[973..976] out))
+              (NNS:[978..985] patches)))
+          (VP (VBD:[986..993] reduced)
+            (NP
+              (NP
+                (ADVP (RB:[994..998] only))
+                (DT:[999..1002] the) (JJ:[1003..1011] apparent)
+                 (NN:[1012..1021] amplitude))
+              (PP (IN:[1022..1024] of)
+                (NP (DT:[1025..1028] the) (NN:[1029..1036] channel)
+                    (NN:[1037..1044] current))))
+            (PP (IN:[1045..1052] without)
+              (S-NOM
+                (NP-SBJ (-NONE-:[1052..1052] *))
+                (VP (VBG:[1054..1062] changing)
+                  (NP
+                    (NML (NN:[1063..1070] channel) (JJ:[1071..1075] open))
+                    (NN:[1076..1087] probability)))))))))
+    (.:[1087..1088] .)))
+
+;sentence 8 Span:1089..1276
+;We examined further the role of protein  kinase C (PKC) and the cytochrome
+;P-450-dependent metabolites of arachidonic  acid in mediating the Ca2+o
+;-induced inhibition of channel activity.
+;[1121..1138]:substance:"protein  kinase C"
+;[1140..1143]:substance:"PKC"
+;[1153..1169]:cyp450:"cytochrome P-450"
+;[1180..1191]:substance:"metabolites"
+;[1195..1212]:substance:"arachidonic  acid"
+;[1230..1235]:substance:"Ca2+o"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1089..1091] We))
+    (VP (VBD:[1092..1100] examined)
+      (ADVP-EXT (RBR:[1101..1108] further))
+      (NP
+        (NP (DT:[1109..1112] the) (NN:[1113..1117] role))
+        (PP (IN:[1118..1120] of)
+          (NP
+            (NP
+              (NP (NN:[1121..1128] protein) (NN:[1130..1136] kinase)
+                  (NN:[1137..1138] C))
+              (NP (-LRB-:[1139..1140] -LRB-) (NN:[1140..1143] PKC)
+                  (-RRB-:[1143..1144] -RRB-)))
+            (CC:[1145..1148] and)
+            (NP
+              (NP (DT:[1149..1152] the)
+                (ADJP
+                  (NML (NN:[1153..1163] cytochrome) (NN:[1164..1169] P-450))
+                  (HYPH:[1169..1170] -) (JJ:[1170..1179] dependent))
+                (NNS:[1180..1191] metabolites))
+              (PP (IN:[1192..1194] of)
+                (NP (JJ:[1195..1206] arachidonic) (NN:[1208..1212] acid))))))
+        (PP (IN:[1213..1215] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1215..1215] *))
+            (VP (VBG:[1216..1225] mediating)
+              (NP
+                (NP (DT:[1226..1229] the)
+                  (ADJP (NN:[1230..1235] Ca2+o) (HYPH:[1236..1237] -)
+                        (VBN:[1237..1244] induced))
+                  (NN:[1245..1255] inhibition))
+                (PP (IN:[1256..1258] of)
+                  (NP (NN:[1259..1266] channel) (NN:[1267..1275] activity)))))))))
+    (.:[1275..1276] .)))
+
+;sentence 9 Span:1277..1503
+;Addition of  phorbol 12-myristate 13-acetate (2 microM) reversibly blocked
+;channel activity  in cell-attached patches to 4 +/- 1% of the control value,
+;whereas 75 nM  calphostin C increased the channel activity by 115 +/- 10%.
+;[1290..1321]:substance:"phorbol 12-myristate 13-acetate"
+;[1323..1324]:quantitative-value:"2"
+;[1325..1331]:quantitative-units:"microM"
+;[1398..1406]:quantitative-value:"4 +/- 1%"
+;[1437..1439]:quantitative-value:"75"
+;[1440..1442]:quantitative-units:"nM"
+;[1444..1456]:substance:"calphostin C"
+;[1491..1502]:quantitative-value:"115 +/- 10%"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1277..1285] Addition))
+      (PP (IN:[1286..1288] of)
+        (NP
+           (NN:[1290..1297] phorbol) (NN:[1298..1310] 12-myristate)
+           (NN:[1311..1321] 13-acetate)
+          (PRN (-LRB-:[1322..1323] -LRB-)
+            (NP (CD:[1323..1324] 2) (NN:[1325..1331] microM))
+            (-RRB-:[1331..1332] -RRB-)))))
+    (ADVP (RB:[1333..1343] reversibly))
+    (VP (VBD:[1344..1351] blocked)
+      (NP (NN:[1352..1359] channel) (NN:[1360..1368] activity))
+      (PP (IN:[1370..1372] in)
+        (NP
+          (NML (NN:[1373..1377] cell) (HYPH:[1377..1378] -)
+               (VBN:[1378..1386] attached))
+          (NNS:[1387..1394] patches)))
+      (PP (TO:[1395..1397] to)
+        (NP
+          (NP
+            (QP (CD:[1398..1399] 4) (SYM:[1400..1403] +/-) (CD:[1404..1405] 1))
+            (NN:[1405..1406] %))
+          (PP (IN:[1407..1409] of)
+            (NP (DT:[1410..1413] the) (NN:[1414..1421] control)
+                (NN:[1422..1427] value)))))
+      (,:[1427..1428] ,)
+      (SBAR-ADV (IN:[1429..1436] whereas)
+        (S
+          (NP-SBJ
+            (NML (CD:[1437..1439] 75) (NN:[1440..1442] nM))
+             (NN:[1444..1454] calphostin) (NN:[1455..1456] C))
+          (VP (VBD:[1457..1466] increased)
+            (NP (DT:[1467..1470] the) (NN:[1471..1478] channel)
+                (NN:[1479..1487] activity))
+            (PP (IN:[1488..1490] by)
+              (NP-EXT
+                (QP (CD:[1491..1494] 115) (SYM:[1495..1498] +/-)
+                    (CD:[1499..1501] 10))
+                (NN:[1501..1502] %)))))))
+    (.:[1502..1503] .)))
+
+;sentence 10 Span:1504..1603
+;Moreover, addition  of 1 nM exogenous PKC reversibly and completely inhibited
+;the 70-pS K+ channel.
+;[1527..1528]:quantitative-value:"1"
+;[1529..1531]:quantitative-units:"nM"
+;[1542..1545]:substance:"PKC"
+;[1592..1594]:substance:"K+"
+(SENT
+  (S
+    (ADVP (RB:[1504..1512] Moreover))
+    (,:[1512..1513] ,)
+    (NP-SBJ
+      (NP (NN:[1514..1522] addition))
+      (PP (IN:[1524..1526] of)
+        (NP
+          (NML (CD:[1527..1528] 1) (NN:[1529..1531] nM))
+          (JJ:[1532..1541] exogenous) (NN:[1542..1545] PKC))))
+    (ADVP (RB:[1546..1556] reversibly) (CC:[1557..1560] and)
+          (RB:[1561..1571] completely))
+    (VP (VBD:[1572..1581] inhibited)
+      (NP (DT:[1582..1585] the)
+        (NML (CD:[1586..1588] 70) (HYPH:[1588..1589] -) (NN:[1589..1591] pS))
+        (NN:[1592..1594] K+) (NN:[1595..1602] channel)))
+    (.:[1602..1603] .)))
+
+;sentence 11 Span:1605..1955
+;However, inhibition of PKC with calphostin C (75 nM) only slightly prolonged
+;the  time course of the effect of Ca2+o on channel activity (370 +/- 40 s)
+;and failed  to abolish the inhibitory effect of 5 mM Ca2+o on channel
+;activity in  cell-attached patches, indicating that PKC was not mainly
+;responsible for the  effect of Ca2+o on channel activity.
+;[1628..1631]:substance:"PKC"
+;[1637..1649]:substance:"calphostin C"
+;[1651..1653]:quantitative-value:"75"
+;[1654..1656]:quantitative-units:"nM"
+;[1716..1721]:substance:"Ca2+o"
+;[1743..1753]:quantitative-value:"370 +/- 40"
+;[1754..1755]:quantitative-units:"s"
+;[1805..1806]:quantitative-value:"5"
+;[1807..1809]:quantitative-units:"mM"
+;[1810..1815]:substance:"Ca2+o"
+;[1879..1882]:substance:"PKC"
+;[1929..1934]:substance:"Ca2+o"
+(SENT
+  (S
+    (ADVP (RB:[1605..1612] However))
+    (,:[1612..1613] ,)
+    (NP-SBJ-1
+      (NP (NN:[1614..1624] inhibition))
+      (PP (IN:[1625..1627] of)
+        (NP (NN:[1628..1631] PKC)))
+      (PP (IN:[1632..1636] with)
+        (NP
+           (NN:[1637..1647] calphostin) (NN:[1648..1649] C)
+          (PRN (-LRB-:[1650..1651] -LRB-)
+            (NP (CD:[1651..1653] 75) (NN:[1654..1656] nM))
+            (-RRB-:[1656..1657] -RRB-)))))
+    (VP
+      (VP
+        (ADVP (RB:[1658..1662] only) (RB:[1663..1671] slightly))
+        (VBD:[1672..1681] prolonged)
+        (NP
+          (NP (DT:[1682..1685] the) (NN:[1687..1691] time)
+              (NN:[1692..1698] course))
+          (PP (IN:[1699..1701] of)
+            (NP
+              (NP (DT:[1702..1705] the) (NN:[1706..1712] effect))
+              (PP (IN:[1713..1715] of)
+                (NP (NN:[1716..1721] Ca2+o)))
+              (PP (IN:[1722..1724] on)
+                (NP (NN:[1725..1732] channel) (NN:[1733..1741] activity)))))
+          (PRN (-LRB-:[1742..1743] -LRB-)
+            (NP
+              (QP (CD:[1743..1746] 370) (SYM:[1747..1750] +/-)
+                  (CD:[1751..1753] 40))
+              (NN:[1754..1755] s))
+            (-RRB-:[1755..1756] -RRB-))))
+      (CC:[1757..1760] and)
+      (VP (VBD:[1761..1767] failed)
+        (S
+          (NP-SBJ-1 (-NONE-:[1767..1767] *))
+          (VP (TO:[1769..1771] to)
+            (VP (VB:[1772..1779] abolish)
+              (NP
+                (NP (DT:[1780..1783] the) (JJ:[1784..1794] inhibitory)
+                    (NN:[1795..1801] effect))
+                (PP (IN:[1802..1804] of)
+                  (NP
+                    (NML (CD:[1805..1806] 5) (NN:[1807..1809] mM))
+                    (NN:[1810..1815] Ca2+o)))
+                (PP (IN:[1816..1818] on)
+                  (NP (NN:[1819..1826] channel) (NN:[1827..1835] activity))))
+              (PP-LOC (IN:[1836..1838] in)
+                (NP
+                  (ADJP (NN:[1840..1844] cell) (HYPH:[1844..1845] -)
+                        (VBN:[1845..1853] attached))
+                  (NNS:[1854..1861] patches)))))))
+      (,:[1861..1862] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1862..1862] *))
+        (VP (VBG:[1863..1873] indicating)
+          (SBAR (IN:[1874..1878] that)
+            (S
+              (NP-SBJ (NN:[1879..1882] PKC))
+              (VP (VBD:[1883..1886] was) (RB:[1887..1890] not)
+                (ADJP-PRD (RB:[1891..1897] mainly) (JJ:[1898..1909] responsible)
+                  (PP (IN:[1910..1913] for)
+                    (NP
+                      (NP (DT:[1914..1917] the) (NN:[1919..1925] effect))
+                      (PP (IN:[1926..1928] of)
+                        (NP (NN:[1929..1934] Ca2+o)))
+                      (PP (IN:[1935..1937] on)
+                        (NP (NN:[1938..1945] channel) (NN:[1946..1954] activity))))))))))))
+    (.:[1954..1955] .)))
+
+;sentence 12 Span:1956..2216
+;In contrast, the effect of 5 mM Ca2+o on  the apical 70-pS K+ channel was
+;completely abolished when TAL tubules were first  incubated in the
+;17-octadecynoic acid (5 microM)-containing solution, an agent  that
+;specifically blocks cytochrome P-450 monooxygenase.
+;[1983..1984]:quantitative-value:"5"
+;[1985..1987]:quantitative-units:"mM"
+;[1988..1993]:substance:"Ca2+o"
+;[2015..2017]:substance:"K+"
+;[2097..2117]:substance:"17-octadecynoic acid"
+;[2119..2120]:quantitative-value:"5"
+;[2121..2127]:quantitative-units:"microM"
+;[2153..2158]:substance:"agent"
+;[2185..2215]:cyp450:"cytochrome P-450 monooxygenase"
+(SENT
+  (S
+    (PP (IN:[1956..1958] In)
+      (NP (NN:[1959..1967] contrast)))
+    (,:[1967..1968] ,)
+    (NP-SBJ-3
+      (NP (DT:[1969..1972] the) (NN:[1973..1979] effect))
+      (PP (IN:[1980..1982] of)
+        (NP
+          (NML (CD:[1983..1984] 5) (NN:[1985..1987] mM))
+          (NN:[1988..1993] Ca2+o)))
+      (PP (IN:[1994..1996] on)
+        (NP (DT:[1998..2001] the) (JJ:[2002..2008] apical)
+          (NML (CD:[2009..2011] 70) (HYPH:[2011..2012] -) (NN:[2012..2014] pS))
+          (NN:[2015..2017] K+) (NN:[2018..2025] channel))))
+    (VP (VBD:[2026..2029] was)
+      (ADVP (RB:[2030..2040] completely))
+      (VP (VBN:[2041..2050] abolished)
+        (NP-3 (-NONE-:[2050..2050] *))
+        (SBAR-ADV
+          (WHADVP-2 (WRB:[2051..2055] when))
+          (S
+            (NP-SBJ (NN:[2056..2059] TAL) (NNS:[2060..2067] tubules))
+            (VP (VBD:[2068..2072] were)
+              (ADVP-TMP (RB:[2073..2078] first))
+              (VP (VBN:[2080..2089] incubated)
+                (PP-LOC (IN:[2090..2092] in)
+                  (NP
+                    (NP (DT:[2093..2096] the)
+                      (ADJP
+                        (NML
+                           (JJ:[2097..2112] 17-octadecynoic)
+                           (NN:[2113..2117] acid)
+                          (PRN (-LRB-:[2118..2119] -LRB-)
+                            (NP (CD:[2119..2120] 5) (NN:[2121..2127] microM))
+                            (-RRB-:[2127..2128] -RRB-)))
+                        (HYPH:[2128..2129] -) (VBG:[2129..2139] containing))
+                      (NN:[2140..2148] solution))
+                    (,:[2148..2149] ,)
+                    (NP
+                      (NP (DT:[2150..2152] an) (NN:[2153..2158] agent))
+                      (SBAR
+                        (WHNP-1 (WDT:[2160..2164] that))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[2164..2164] *T*))
+                          (ADVP (RB:[2165..2177] specifically))
+                          (VP (VBZ:[2178..2184] blocks)
+                            (NP
+                              (NML (NN:[2185..2195] cytochrome)
+                                   (NN:[2196..2201] P-450))
+                              (NN:[2202..2215] monooxygenase))))))))
+                (ADVP-TMP-2 (-NONE-:[2215..2215] *T*))))))))
+    (.:[2215..2216] .)))
+
+;sentence 13 Span:2217..2440
+;In conclusion, these  data indicate that Ca2+o is an important regulator of
+;the apical 70-pS K+  channel and that a cytochrome P-450-dependent metabolite
+;of arachidonic acid is  involved in mediating this inhibitory effect.
+;[2258..2263]:substance:"Ca2+o"
+;[2310..2312]:substance:"K+"
+;[2333..2349]:cyp450:"cytochrome P-450"
+;[2360..2370]:substance:"metabolite"
+;[2374..2390]:substance:"arachidonic acid"
+(SENT
+  (S
+    (PP (IN:[2217..2219] In)
+      (NP (NN:[2220..2230] conclusion)))
+    (,:[2230..2231] ,)
+    (NP-SBJ (DT:[2232..2237] these) (NNS:[2239..2243] data))
+    (VP (VBP:[2244..2252] indicate)
+      (SBAR
+        (SBAR (IN:[2253..2257] that)
+          (S
+            (NP-SBJ (NN:[2258..2263] Ca2+o))
+            (VP (VBZ:[2264..2266] is)
+              (NP-PRD
+                (NP (DT:[2267..2269] an) (JJ:[2270..2279] important)
+                    (NN:[2280..2289] regulator))
+                (PP (IN:[2290..2292] of)
+                  (NP (DT:[2293..2296] the) (JJ:[2297..2303] apical)
+                    (NML (CD:[2304..2306] 70) (HYPH:[2306..2307] -)
+                         (NN:[2307..2309] pS))
+                    (NN:[2310..2312] K+) (NN:[2314..2321] channel)))))))
+        (CC:[2322..2325] and)
+        (SBAR (IN:[2326..2330] that)
+          (S
+            (NP-SBJ-1
+              (NP (DT:[2331..2332] a)
+                (ADJP
+                  (NML (NN:[2333..2343] cytochrome) (NN:[2344..2349] P-450))
+                  (HYPH:[2349..2350] -) (JJ:[2350..2359] dependent))
+                (NN:[2360..2370] metabolite))
+              (PP (IN:[2371..2373] of)
+                (NP (JJ:[2374..2385] arachidonic) (NN:[2386..2390] acid))))
+            (VP (VBZ:[2391..2393] is)
+              (VP (VBN:[2395..2403] involved)
+                (NP-1 (-NONE-:[2403..2403] *))
+                (PP-CLR (IN:[2404..2406] in)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[2406..2406] *))
+                    (VP (VBG:[2407..2416] mediating)
+                      (NP (DT:[2417..2421] this) (JJ:[2422..2432] inhibitory)
+                          (NN:[2433..2439] effect)))))))))))
+    (.:[2439..2440] .)))
+
+;section 14 Span:2444..2488
+;PMID: 8760035 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2444..2448] PMID) (::[2448..2449] :) (CD:[2450..2457] 8760035)
+        (NN:[2458..2459] -LSB-) (NNP:[2459..2465] PubMed) (::[2466..2467] -)
+        (NN:[2468..2475] indexed) (IN:[2476..2479] for)
+        (NNP:[2480..2488] MEDLINE-RSB-)))

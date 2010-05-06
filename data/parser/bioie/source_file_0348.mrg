@@ -1,0 +1,480 @@
+;PMID: 7870052
+;source_file_879.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..111] = [t:42..111]
+;2)section:[e:115..226] = [t:115..226]
+;3)section:[e:230..270] = [t:230..270]
+;4)sentence:[e:274..489] = [t:274..489]
+;5)sentence:[e:490..699] = [t:490..699]
+;6)sentence:[e:700..846] = [t:700..846]
+;7)sentence:[e:847..1034] = [t:847..1034]
+;8)sentence:[e:1035..1231] = [t:1035..1231]
+;9)sentence:[e:1232..1453] = [t:1232..1453]
+;10)sentence:[e:1455..1574] = [t:1455..1574]
+;11)sentence:[e:1575..1828] = [t:1575..1828]
+;12)sentence:[e:1829..2067] = [t:1829..2067]
+;13)section:[e:2071..2115] = [t:2071..2115]
+
+;section 0 Span:0..36
+;Mol Pharmacol. 1995 Feb;47(2):410-8.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..13] Pharmacol) (.:[13..14] .)
+        (CD:[15..19] 1995) (.:[20..27] Feb;47-LRB-) (CD:[27..28] 2)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :410) (::[33..34] -)
+        (CD:[34..36] 8.)))
+
+;sentence 1 Span:42..111
+;Oxidative metabolism of lansoprazole by human liver cytochromes P450.
+;[66..78]:substance:"lansoprazole"
+;[94..110]:cyp450:"cytochromes P450"
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..51] Oxidative) (NN:[52..62] metabolism))
+    (PP (IN:[63..65] of)
+      (NP (NN:[66..78] lansoprazole)))
+    (PP (IN:[79..81] by)
+      (NP (JJ:[82..87] human) (NN:[88..93] liver)
+         (NNS:[94..105] cytochromes) (NN:[106..110] P450)))
+    (.:[110..111] .)))
+
+;section 2 Span:115..226
+;Pichard L, Curi-Pedrosa R, Bonfils C, Jacqz-Aigrain E, Domergue J, Joyeux H, 
+;Cosme J, Guengerich FP, Maurel P.
+(SEC
+  (FRAG (NNP:[115..122] Pichard) (NNP:[123..125] L,) (NNP:[126..130] Curi)
+        (::[130..131] -) (NNP:[131..138] Pedrosa) (NNP:[139..141] R,)
+        (NNP:[142..149] Bonfils) (NNP:[150..151] C) (,:[151..152] ,)
+        (NNP:[153..158] Jacqz) (::[158..159] -) (NNP:[159..166] Aigrain)
+        (NNP:[167..168] E) (,:[168..169] ,) (NNP:[170..178] Domergue)
+        (NNP:[179..181] J,) (NNP:[182..188] Joyeux) (NNP:[189..190] H)
+        (,:[190..191] ,) (NNP:[193..198] Cosme) (NNP:[199..201] J,)
+        (NNP:[202..212] Guengerich) (NNP:[213..215] FP) (,:[215..216] ,)
+        (NNP:[217..223] Maurel) (NNP:[224..226] P.)))
+
+;section 3 Span:230..270
+;INSERM U-128, CNRS, Montpellier, France.
+(SEC
+  (FRAG (NNP:[230..236] INSERM) (NNP:[237..239] U-) (CD:[239..242] 128)
+        (,:[242..243] ,) (NNP:[244..248] CNRS) (,:[248..249] ,)
+        (NNP:[250..261] Montpellier) (,:[261..262] ,) (NNP:[263..269] France)
+        (.:[269..270] .)))
+
+;sentence 4 Span:274..489
+;The aim of this work was to identify the form(s) of human cytochrome P450
+;(P450)  involved in the hepatic biotransformation of lansoprazole to its two
+;main  metabolites, i.e., the sulfone and the hydroxy derivative.
+;[332..347]:cyp450:"cytochrome P450"
+;[349..353]:cyp450:"P450"
+;[401..413]:substance:"lansoprazole"
+;[431..442]:substance:"metabolites"
+;[454..461]...[478..488]:substance:"sulfone"..."derivative"
+;[470..488]:substance:"hydroxy derivative"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[274..277] The) (NN:[278..281] aim))
+      (PP (IN:[282..284] of)
+        (NP (DT:[285..289] this) (NN:[290..294] work))))
+    (VP (VBD:[295..298] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[298..298] *))
+        (VP (TO:[299..301] to)
+          (VP (VB:[302..310] identify)
+            (NP
+              (NP
+                (NP (DT:[311..314] the) (NN:[315..322] form-LRB-s-RRB-))
+                (PP (IN:[323..325] of)
+                  (NP (JJ:[326..331] human)
+                    (NML
+                      (NML (NN:[332..342] cytochrome) (NN:[343..347] P450))
+                      (NML (-LRB-:[348..349] -LRB-) (NN:[349..353] P450)
+                           (-RRB-:[353..354] -RRB-))))))
+              (VP (VBN:[356..364] involved)
+                (NP (-NONE-:[364..364] *))
+                (PP-CLR (IN:[365..367] in)
+                  (NP
+                    (NP (DT:[368..371] the) (JJ:[372..379] hepatic)
+                        (NN:[380..397] biotransformation))
+                    (PP (IN:[398..400] of)
+                      (NP (NN:[401..413] lansoprazole)))
+                    (PP (TO:[414..416] to)
+                      (NP
+                        (NP (PRP$:[417..420] its) (CD:[421..424] two)
+                            (JJ:[425..429] main) (NNS:[431..442] metabolites))
+                        (,:[442..443] ,)
+                        (NP
+                          (ADVP (FW:[444..448] i.e.))
+                          (,:[448..449] ,)
+                          (NP (DT:[450..453] the) (NN:[454..461] sulfone)
+                            (NML-1 (-NONE-:[461..461] *P*)))
+                          (CC:[462..465] and)
+                          (NP (DT:[466..469] the)
+                             (NN:[470..477] hydroxy)
+                            (NML-1 (NN:[478..488] derivative))))))))))))))
+    (.:[488..489] .)))
+
+;sentence 5 Span:490..699
+;In liver microsomes,  the production of the sulfone of lansoprazole
+;correlated with the level of P450  3A4, cyclosporin oxidase, and the
+;production of the hydroxy derivative, as well  as of omeprazole sulfone.
+;[534..541]:substance:"sulfone"
+;[545..557]:substance:"lansoprazole"
+;[587..596]:cyp450:"P450  3A4"
+;[598..617]:substance:"cyclosporin oxidase"
+;[645..663]:substance:"hydroxy derivative"
+;[680..698]:substance:"omeprazole sulfone"
+(SENT
+  (S
+    (PP-LOC (IN:[490..492] In)
+      (NP (NN:[493..498] liver) (NNS:[499..509] microsomes)))
+    (,:[509..510] ,)
+    (NP-SBJ
+      (NP (DT:[512..515] the) (NN:[516..526] production))
+      (PP (IN:[527..529] of)
+        (NP
+          (NP (DT:[530..533] the) (NN:[534..541] sulfone))
+          (PP (IN:[542..544] of)
+            (NP (NN:[545..557] lansoprazole))))))
+    (VP (VBD:[558..568] correlated)
+      (PP-CLR (IN:[569..573] with)
+        (NP
+          (NP (DT:[574..577] the) (NN:[578..583] level))
+          (PP (IN:[584..586] of)
+            (NP
+              (NP (NN:[587..591] P450) (NN:[593..596] 3A4))
+              (,:[596..597] ,)
+              (NP (NN:[598..609] cyclosporin) (NN:[610..617] oxidase))
+              (,:[617..618] ,) (CC:[619..622] and)
+              (NP
+                (NP (DT:[623..626] the) (NN:[627..637] production))
+                (PP
+                  (PP (IN:[638..640] of)
+                    (NP (DT:[641..644] the)
+                       (NN:[645..652] hydroxy) (NN:[653..663] derivative)))
+                  (,:[663..664] ,)
+                  (CONJP (RB:[665..667] as) (RB:[668..672] well)
+                         (IN:[674..676] as))
+                  (PP (IN:[677..679] of)
+                    (NP (NN:[680..690] omeprazole) (NN:[691..698] sulfone))))))))))
+    (.:[698..699] .)))
+
+;sentence 6 Span:700..846
+;The production of hydroxylansoprazole moderately  correlated with the level
+;of P450 3A4, cyclosporin oxidase, and (S)-mephenytoin  4'-hydroxylase.
+;[718..737]:substance:"hydroxylansoprazole"
+;[779..787]:cyp450:"P450 3A4"
+;[789..808]:substance:"cyclosporin oxidase"
+;[814..845]:cyp450:"(S)-mephenytoin  4'-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[700..703] The) (NN:[704..714] production))
+      (PP (IN:[715..717] of)
+        (NP (NN:[718..737] hydroxylansoprazole))))
+    (ADVP (RB:[738..748] moderately))
+    (VP (VBD:[750..760] correlated)
+      (PP-CLR (IN:[761..765] with)
+        (NP
+          (NP (DT:[766..769] the) (NN:[770..775] level))
+          (PP (IN:[776..778] of)
+            (NP
+              (NP (NN:[779..783] P450) (NN:[784..787] 3A4))
+              (,:[787..788] ,)
+              (NP (NN:[789..800] cyclosporin) (NN:[801..808] oxidase))
+              (,:[808..809] ,) (CC:[810..813] and)
+              (NP (NN:[814..829] -LRB-S-RRB--mephenytoin)
+                  (NN:[831..845] 4'-hydroxylase)))))))
+    (.:[845..846] .)))
+
+;sentence 7 Span:847..1034
+;The production of the sulfone and of the hydroxy derivative of  lansoprazole
+;was significantly inhibited by anti-P450 3A4 antibodies, by  cyclosporin and
+;ketoconazole, and by tolbutamide.
+;[869..876]...[896..906]:substance:"sulfone"..."derivative"
+;[888..906]:substance:"hydroxy derivative"
+;[911..923]:substance:"lansoprazole"
+;[955..979]:substance:"anti-P450 3A4 antibodies"
+;[985..996]:substance:"cyclosporin"
+;[1001..1013]:substance:"ketoconazole"
+;[1022..1033]:substance:"tolbutamide"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[847..850] The) (NN:[851..861] production))
+      (PP
+        (PP (IN:[862..864] of)
+          (NP
+            (NP (DT:[865..868] the) (NN:[869..876] sulfone)
+              (NML-1 (-NONE-:[876..876] *P*)))
+            (PP-2 (-NONE-:[876..876] *P*))))
+        (CC:[877..880] and)
+        (PP (IN:[881..883] of)
+          (NP
+            (NP (DT:[884..887] the)
+               (NN:[888..895] hydroxy)
+              (NML-1 (NN:[896..906] derivative)))
+            (PP-2 (IN:[907..909] of)
+              (NP (NN:[911..923] lansoprazole)))))))
+    (VP (VBD:[924..927] was)
+      (ADVP (RB:[928..941] significantly))
+      (VP (VBN:[942..951] inhibited)
+        (NP-3 (-NONE-:[951..951] *))
+        (PP
+          (PP (IN:[952..954] by)
+            (NP-LGS
+              (NML (AFX:[955..959] anti) (HYPH:[959..960] -)
+                   (NN:[960..964] P450) (NN:[965..968] 3A4))
+              (NNS:[969..979] antibodies)))
+          (,:[979..980] ,)
+          (PP (IN:[981..983] by)
+            (NP-LGS (NN:[985..996] cyclosporin) (CC:[997..1000] and)
+                    (NN:[1001..1013] ketoconazole)))
+          (,:[1013..1014] ,) (CC:[1015..1018] and)
+          (PP (IN:[1019..1021] by)
+            (NP-LGS (NN:[1022..1033] tolbutamide))))))
+    (.:[1033..1034] .)))
+
+;sentence 8 Span:1035..1231
+;Anti-P450 2C8 and 2C3  antibodies moderately inhibited the biotransformation
+;of lansoprazole, whereas  they completely inhibited (S)-mephenytoin
+;4'-hydroxylase activity under the same  conditions.
+;[1035..1048]...[1058..1068]:substance:"Anti-P450 2C8"..."antibodies"
+;[1035..1044]...[1053..1068]:substance:"Anti-P450"..."2C3  antibodies"
+;[1115..1127]:substance:"lansoprazole"
+;[1164..1194]:cyp450:"(S)-mephenytoin 4'-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (ADJP-2 (AFX:[1035..1039] Anti))
+          (HYPH:[1039..1040] -)
+          (NML-1 (NN:[1040..1044] P450))
+          (NN:[1045..1048] 2C8))
+        (NML-3 (-NONE-:[1048..1048] *P*)))
+      (CC:[1049..1052] and)
+      (NP
+        (NML
+          (ADJP-2 (-NONE-:[1052..1052] *P*))
+          (NML-1 (-NONE-:[1052..1052] *P*))
+          (NN:[1053..1056] 2C3))
+        (NML-3 (NNS:[1058..1068] antibodies))))
+    (ADVP (RB:[1069..1079] moderately))
+    (VP (VBD:[1080..1089] inhibited)
+      (NP
+        (NP (DT:[1090..1093] the) (NN:[1094..1111] biotransformation))
+        (PP (IN:[1112..1114] of)
+          (NP (NN:[1115..1127] lansoprazole))))
+      (,:[1127..1128] ,)
+      (SBAR-ADV (IN:[1129..1136] whereas)
+        (S
+          (NP-SBJ (PRP:[1138..1142] they))
+          (ADVP (RB:[1143..1153] completely))
+          (VP (VBD:[1154..1163] inhibited)
+            (NP
+              (NML (NN:[1164..1179] -LRB-S-RRB--mephenytoin)
+                   (NN:[1180..1194] 4'-hydroxylase))
+              (NN:[1195..1203] activity))
+            (PP (IN:[1204..1209] under)
+              (NP (DT:[1210..1213] the) (JJ:[1214..1218] same)
+                  (NNS:[1220..1230] conditions)))))))
+    (.:[1230..1231] .)))
+
+;sentence 9 Span:1232..1453
+;In primary cultures of human hepatocytes, the biotransformation of 
+;lansoprazole and the oxidation of cyclosporin were strongly increased by 
+;rifampicin and phenobarbital, whereas (S)-mephenytoin 4'-hydroxylation was
+;not.
+;[1300..1312]:substance:"lansoprazole"
+;[1334..1345]:substance:"cyclosporin"
+;[1374..1384]:substance:"rifampicin"
+;[1389..1402]:substance:"phenobarbital"
+;[1412..1427]:substance:"(S)-mephenytoin"
+(SENT
+  (S
+    (PP-LOC (IN:[1232..1234] In)
+      (NP
+        (NP (JJ:[1235..1242] primary) (NNS:[1243..1251] cultures))
+        (PP (IN:[1252..1254] of)
+          (NP (JJ:[1255..1260] human) (NNS:[1261..1272] hepatocytes)))))
+    (,:[1272..1273] ,)
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[1274..1277] the) (NN:[1278..1295] biotransformation))
+        (PP (IN:[1296..1298] of)
+          (NP (NN:[1300..1312] lansoprazole))))
+      (CC:[1313..1316] and)
+      (NP
+        (NP (DT:[1317..1320] the) (NN:[1321..1330] oxidation))
+        (PP (IN:[1331..1333] of)
+          (NP (NN:[1334..1345] cyclosporin)))))
+    (VP (VBD:[1346..1350] were)
+      (ADVP (RB:[1351..1359] strongly))
+      (VP (VBN:[1360..1369] increased)
+        (NP-1 (-NONE-:[1369..1369] *))
+        (PP (IN:[1370..1372] by)
+          (NP-LGS (NN:[1374..1384] rifampicin) (CC:[1385..1388] and)
+                  (NN:[1389..1402] phenobarbital)))
+        (,:[1402..1403] ,)
+        (SBAR-ADV (IN:[1404..1411] whereas)
+          (S
+            (NP-SBJ (NN:[1412..1427] -LRB-S-RRB--mephenytoin)
+                    (NN:[1428..1444] 4'-hydroxylation))
+            (VP (VBD:[1445..1448] was) (RB:[1449..1452] not)
+              (VP (-NONE-:[1452..1452] *?*)))))))
+    (.:[1452..1453] .)))
+
+;sentence 10 Span:1455..1574
+;beta-Naphthoflavone did not induce the formation of the sulfones but
+;stimulated  the production of hydroxylansoprazole.
+;[1455..1474]:substance:"beta-Naphthoflavone"
+;[1511..1519]:substance:"sulfones"
+;[1554..1573]:substance:"hydroxylansoprazole"
+(SENT
+  (S
+    (NP-SBJ (NN:[1455..1474] beta-Naphthoflavone))
+    (VP
+      (VP (VBD:[1475..1478] did) (RB:[1479..1482] not)
+        (VP (VB:[1483..1489] induce)
+          (NP
+            (NP (DT:[1490..1493] the) (NN:[1494..1503] formation))
+            (PP (IN:[1504..1506] of)
+              (NP (DT:[1507..1510] the) (NNS:[1511..1519] sulfones))))))
+      (CC:[1520..1523] but)
+      (VP (VBD:[1524..1534] stimulated)
+        (NP
+          (NP (DT:[1536..1539] the) (NN:[1540..1550] production))
+          (PP (IN:[1551..1553] of)
+            (NP (NN:[1554..1573] hydroxylansoprazole))))))
+    (.:[1573..1574] .)))
+
+;sentence 11 Span:1575..1828
+;Among several forms of cDNA-expressed  human P450s, 3A4 generated significant
+;amounts of the sulfones of lansoprazole  and omeprazole and 2C18 was active
+;for the production of hydroxylansoprazole but  inactive in the
+;4'-hydroxylation of (S)-mephenytoin.
+;[1598..1602]:substance:"cDNA"
+;[1620..1625]...[1713..1717]:cyp450:"P450s"..."2C18"
+;[1620..1625]...[1627..1630]:cyp450:"P450s"..."3A4"
+;[1668..1676]:substance:"sulfones"
+;[1680..1692]:substance:"lansoprazole"
+;[1698..1708]:substance:"omeprazole"
+;[1751..1770]:substance:"hydroxylansoprazole"
+;[1812..1827]:substance:"(S)-mephenytoin"
+(SENT
+  (S
+    (PP-TPC-3 (IN:[1575..1580] Among)
+      (NP
+        (NP (JJ:[1581..1588] several) (NNS:[1589..1594] forms))
+        (PP (IN:[1595..1597] of)
+          (NP
+            (ADJP (NN:[1598..1602] cDNA) (HYPH:[1602..1603] -)
+                  (VBN:[1603..1612] expressed))
+            (JJ:[1614..1619] human) (NNS:[1620..1625] P450s)))))
+    (,:[1625..1626] ,)
+    (S
+      (NP-SBJ
+        (NP (NN:[1627..1630] 3A4))
+        (PP-3 (-NONE-:[1630..1630] *T*)))
+      (VP (VBD:[1631..1640] generated)
+        (NP
+          (NP (JJ:[1641..1652] significant) (NNS:[1653..1660] amounts))
+          (PP (IN:[1661..1663] of)
+            (NP
+              (NP (DT:[1664..1667] the) (NNS:[1668..1676] sulfones))
+              (PP (IN:[1677..1679] of)
+                (NP (NN:[1680..1692] lansoprazole) (CC:[1694..1697] and)
+                    (NN:[1698..1708] omeprazole))))))))
+    (CC:[1709..1712] and)
+    (S
+      (NP-SBJ
+        (NP (NN:[1713..1717] 2C18))
+        (PP-3 (-NONE-:[1717..1717] *T*)))
+      (VP
+        (VP (VBD:[1718..1721] was)
+          (ADJP-PRD=1 (JJ:[1722..1728] active))
+          (PP=2 (IN:[1729..1732] for)
+            (NP
+              (NP (DT:[1733..1736] the) (NN:[1737..1747] production))
+              (PP (IN:[1748..1750] of)
+                (NP (NN:[1751..1770] hydroxylansoprazole))))))
+        (CC:[1771..1774] but)
+        (VP
+          (ADJP-PRD=1 (JJ:[1776..1784] inactive))
+          (PP=2 (IN:[1785..1787] in)
+            (NP
+              (NP (DT:[1788..1791] the) (NN:[1792..1808] 4'-hydroxylation))
+              (PP (IN:[1809..1811] of)
+                (NP (NN:[1812..1827] -LRB-S-RRB--mephenytoin))))))))
+    (.:[1827..1828] .)))
+
+;sentence 12 Span:1829..2067
+;We conclude that P450 3A4  is the major enzyme involved in the production of
+;the sulfone of lansoprazole  and that this P450, as well as P450 2C18 and/or
+;another 2C-related form, could  contribute to the production of
+;hydroxylansoprazole.
+;[1846..1854]:cyp450:"P450 3A4"
+;[1869..1875]:cyp450:"enzyme"
+;[1910..1917]:substance:"sulfone"
+;[1921..1933]:substance:"lansoprazole"
+;[1949..1953]:cyp450:"P450"
+;[1966..1975]:cyp450:"P450 2C18"
+;[1966..1970]...[1991..2006]:cyp450:"P450"..."2C-related form"
+;[2047..2066]:substance:"hydroxylansoprazole"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1829..1831] We))
+    (VP (VBP:[1832..1840] conclude)
+      (SBAR
+        (SBAR (IN:[1841..1845] that)
+          (S
+            (NP-SBJ (NN:[1846..1850] P450) (NN:[1851..1854] 3A4))
+            (VP (VBZ:[1856..1858] is)
+              (NP-PRD
+                (NP (DT:[1859..1862] the) (JJ:[1863..1868] major)
+                    (NN:[1869..1875] enzyme))
+                (VP (VBN:[1876..1884] involved)
+                  (NP (-NONE-:[1884..1884] *))
+                  (PP-CLR (IN:[1885..1887] in)
+                    (NP
+                      (NP (DT:[1888..1891] the) (NN:[1892..1902] production))
+                      (PP (IN:[1903..1905] of)
+                        (NP
+                          (NP (DT:[1906..1909] the) (NN:[1910..1917] sulfone))
+                          (PP (IN:[1918..1920] of)
+                            (NP (NN:[1921..1933] lansoprazole))))))))))))
+        (CC:[1935..1938] and)
+        (SBAR (IN:[1939..1943] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1944..1948] this) (NN:[1949..1953] P450))
+              (,:[1953..1954] ,)
+              (CONJP (RB:[1955..1957] as) (RB:[1958..1962] well)
+                     (IN:[1963..1965] as))
+              (NP
+                (NML (NN:[1966..1970] P450) (NN:[1971..1975] 2C18))
+                (CC:[1976..1982] and/or)
+                (NP (DT:[1983..1990] another)
+                  (ADJP (NN:[1991..1993] 2C) (HYPH:[1993..1994] -)
+                        (JJ:[1994..2001] related))
+                  (NN:[2002..2006] form))))
+            (,:[2006..2007] ,)
+            (VP (MD:[2008..2013] could)
+              (VP (VB:[2015..2025] contribute)
+                (PP-CLR (TO:[2026..2028] to)
+                  (NP
+                    (NP (DT:[2029..2032] the) (NN:[2033..2043] production))
+                    (PP (IN:[2044..2046] of)
+                      (NP (NN:[2047..2066] hydroxylansoprazole)))))))))))
+    (.:[2066..2067] .)))
+
+;section 13 Span:2071..2115
+;PMID: 7870052 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2071..2075] PMID) (::[2075..2076] :) (CD:[2077..2084] 7870052)
+        (NN:[2085..2086] -LSB-) (NNP:[2086..2092] PubMed) (::[2093..2094] -)
+        (NN:[2095..2102] indexed) (IN:[2103..2106] for)
+        (NNP:[2107..2115] MEDLINE-RSB-)))

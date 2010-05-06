@@ -1,0 +1,520 @@
+;PMID: 8152300
+;source_file_687.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:39..122] = [t:39..122]
+;2)section:[e:126..184] = [t:126..184]
+;3)section:[e:188..288] = [t:188..288]
+;4)sentence:[e:292..742] = [t:292..742]
+;5)sentence:[e:743..964] = [t:743..964]
+;6)sentence:[e:965..1142] = [t:965..1142]
+;7)sentence:[e:1143..1325] = [t:1143..1325]
+;8)sentence:[e:1326..1419] = [t:1326..1419]
+;9)sentence:[e:1420..1495] = [t:1420..1495]
+;10)sentence:[e:1496..1726] = [t:1496..1726]
+;11)section:[e:1730..1774] = [t:1730..1774]
+
+;section 0 Span:0..34
+;Leukemia  1994 Apr;8 Suppl 1:S27-9
+(SEC
+  (FRAG (NNP:[0..8] Leukemia) (CD:[10..14] 1994) (.:[15..20] Apr;8)
+        (NNP:[21..26] Suppl) (NNP:[27..32] 1:S27) (::[32..33] -) (CD:[33..34] 9)))
+
+;sentence 1 Span:39..122
+;Molecular mechanisms of tumor progression in chronic myeloproliferative 
+;disorders.
+;[84..121]:malignancy:"chronic myeloproliferative  disorders"
+(SENT
+  (NP-HLN
+    (NP (JJ:[39..48] Molecular) (NNS:[49..59] mechanisms))
+    (PP (IN:[60..62] of)
+      (NP (NN:[63..68] tumor) (NN:[69..80] progression)))
+    (PP (IN:[81..83] in)
+      (NP (JJ:[84..91] chronic) (JJ:[92..110] myeloproliferative)
+          (NNS:[112..121] disorders)))
+    (.:[121..122] .)))
+
+;section 2 Span:126..184
+;Gaidano G, Guerrasio A, Serra A, Rege-Cambrin G, Saglio G.
+(SEC
+  (FRAG (NNP:[126..133] Gaidano) (NNP:[134..135] G) (,:[135..136] ,)
+        (NNP:[137..146] Guerrasio) (NNP:[147..148] A) (,:[148..149] ,)
+        (NNP:[150..155] Serra) (NNP:[156..157] A) (,:[157..158] ,)
+        (NNP:[159..163] Rege) (::[163..164] -) (NNP:[164..171] Cambrin)
+        (NNP:[172..173] G) (,:[173..174] ,) (NNP:[175..181] Saglio)
+        (NNP:[182..184] G.)))
+
+;section 3 Span:188..288
+;Department of Pathology, College of Physicians & Surgeons, Columbia
+;University,  New York, NY 10032.
+(SEC
+  (FRAG (NNP:[188..198] Department) (IN:[199..201] of)
+        (NNP:[202..211] Pathology) (,:[211..212] ,) (NNP:[213..220] College)
+        (IN:[221..223] of) (NNP:[224..234] Physicians) (CC:[235..236] &)
+        (NNP:[237..245] Surgeons) (,:[245..246] ,) (NNP:[247..255] Columbia)
+        (NNP:[256..266] University) (,:[266..267] ,) (NNP:[269..272] New)
+        (NNP:[273..277] York) (,:[277..278] ,) (NNP:[279..281] NY)
+        (CD:[282..287] 10032) (.:[287..288] .)))
+
+;sentence 4 Span:292..742
+;We have investigated the involvement of tumor suppressor genes (p53 and RB1)
+;and  dominantly acting oncogenes (Ras family genes) in BCR/ABL positive and
+;negative  chronic myeloproliferative disorders (CMPD) at different stages of
+;the disease,  including 26 cases of BCR/ABL+ chronic myeloid leukemia (CML)
+;blast crisis, 9  myelosclerosis with myeloid metaplasia, 4 polycythemia vera,
+;10 essential  thrombocythemia, 1 juvenile CML, and 8 BCR/ABL- CML.
+;[356..359]:gene-rna:"p53"
+;[364..367]:gene-rna:"RB1"
+;[403..406]:gene-rna:"Ras"
+;[424..440]:malignancy:"BCR/ABL positive"
+;[424..431]:variation-event:"BCR/ABL"
+;[424..427]:gene-rna:"BCR"
+;[428..431]:gene-rna:"ABL"
+;[445..453]:malignancy:"negative"
+;[455..491]:malignancy:"chronic myeloproliferative disorders"
+;[493..497]:malignancy:"CMPD"
+;[558..610]:malignancy:"BCR/ABL+ chronic myeloid leukemia (CML) blast crisis"
+;[558..565]:variation-event:"BCR/ABL"
+;[558..561]:gene-rna:"BCR"
+;[562..565]:gene-rna:"ABL"
+;[635..653]:malignancy:"myeloid metaplasia"
+;[657..674]:malignancy:"polycythemia vera"
+;[679..705]:malignancy:"essential  thrombocythemia"
+;[709..721]:malignancy:"juvenile CML"
+;[729..741]:malignancy:"BCR/ABL- CML"
+;[729..736]:variation-event:"BCR/ABL"
+;[729..732]:gene-rna:"BCR"
+;[733..736]:gene-rna:"ABL"
+(SENT
+  (S
+    (NP-SBJ (PRP:[292..294] We))
+    (VP (VBP:[295..299] have)
+      (VP (VBN:[300..312] investigated)
+        (NP
+          (NP (DT:[313..316] the) (NN:[317..328] involvement))
+          (PP (IN:[329..331] of)
+            (NP
+              (NP (NN:[332..337] tumor) (NN:[338..348] suppressor)
+                  (NNS:[349..354] genes)
+                (PRN (-LRB-:[355..356] -LRB-)
+                  (NP (NN:[356..359] p53) (CC:[360..363] and)
+                      (NN:[364..367] RB1))
+                  (-RRB-:[367..368] -RRB-)))
+              (CC:[369..372] and)
+              (NP
+                (ADJP (RB:[374..384] dominantly) (VBG:[385..391] acting))
+                (NNS:[392..401] oncogenes)
+                (PRN (-LRB-:[402..403] -LRB-)
+                  (NP (NN:[403..406] Ras) (NN:[407..413] family)
+                      (NNS:[414..419] genes))
+                  (-RRB-:[419..420] -RRB-)))))
+          (PP (IN:[421..423] in)
+            (NP
+              (NP
+                (ADJP
+                  (NML-2 (NN:[424..427] BCR) (SYM:[427..428] /)
+                         (NN:[428..431] ABL))
+                  (JJ:[432..440] positive))
+                (NML-1 (-NONE-:[440..440] *P*)))
+              (CC:[441..444] and)
+              (NP
+                (ADJP
+                  (NML-2 (-NONE-:[444..444] *P*))
+                  (JJ:[445..453] negative))
+                (NML-1
+                  (NML (JJ:[455..462] chronic)
+                       (JJ:[463..481] myeloproliferative)
+                       (NNS:[482..491] disorders))
+                  (NML (-LRB-:[492..493] -LRB-) (NN:[493..497] CMPD)
+                       (-RRB-:[497..498] -RRB-)))))))
+        (PP (IN:[499..501] at)
+          (NP
+            (NP (JJ:[502..511] different) (NNS:[512..518] stages))
+            (PP (IN:[519..521] of)
+              (NP (DT:[522..525] the) (NN:[526..533] disease)))
+            (,:[533..534] ,)
+            (PP (VBG:[536..545] including)
+              (NP
+                (NP
+                  (NP (CD:[546..548] 26) (NNS:[549..554] cases))
+                  (PP (IN:[555..557] of)
+                    (NP
+                      (ADJP
+                        (NML (NN:[558..561] BCR) (SYM:[561..562] /)
+                             (NN:[562..565] ABL))
+                        (SYM:[565..566] +))
+                      (NML
+                        (NML (JJ:[567..574] chronic) (JJ:[575..582] myeloid)
+                             (NN:[583..591] leukemia))
+                        (NML (-LRB-:[592..593] -LRB-) (NN:[593..596] CML)
+                             (-RRB-:[596..597] -RRB-)))
+                      (NN:[598..603] blast) (NN:[604..610] crisis))))
+                (,:[610..611] ,)
+                (NP
+                  (NP (CD:[612..613] 9) (NN:[615..629] myelosclerosis))
+                  (PP (IN:[630..634] with)
+                    (NP (JJ:[635..642] myeloid) (NN:[643..653] metaplasia))))
+                (,:[653..654] ,)
+                (NP (CD:[655..656] 4)
+                   (NN:[657..669] polycythemia) (NN:[670..674] vera))
+                (,:[674..675] ,)
+                (NP (CD:[676..678] 10)
+                   (JJ:[679..688] essential) (NN:[690..705] thrombocythemia))
+                (,:[705..706] ,)
+                (NP (CD:[707..708] 1)
+                   (JJ:[709..717] juvenile) (NN:[718..721] CML))
+                (,:[721..722] ,) (CC:[723..726] and)
+                (NP (CD:[727..728] 8)
+                  
+                  (ADJP
+                    (NML (NN:[729..732] BCR) (SYM:[732..733] /)
+                         (NN:[733..736] ABL))
+                    (SYM:[736..737] -))
+                  (NN:[738..741] CML))))))))
+    (.:[741..742] .)))
+
+;sentence 5 Span:743..964
+;The presence of mutations  in p53 exons 5 through 9, as well as in RB1 exons
+;10-27 and in N-, K-, H-Ras  exons 1 and 2 was tested by the PCR-Single Strand
+;Conformation Polymorphism  technique and by PCR-Direct Sequencing.
+;[759..768]:variation-event:"mutations"
+;[773..776]:gene-rna:"p53"
+;[777..794]:variation-location:"exons 5 through 9"
+;[810..813]:gene-rna:"RB1"
+;[814..825]:variation-location:"exons 10-27"
+;[833..835]...[843..846]:gene-rna:"N-"..."Ras"
+;[837..839]...[843..846]:gene-rna:"K-"..."Ras"
+;[841..846]:gene-rna:"H-Ras"
+;[848..855]:variation-location:"exons 1"
+;[848..853]...[860..861]:variation-location:"exons"..."2"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[743..746] The) (NN:[747..755] presence))
+      (PP (IN:[756..758] of)
+        (NP
+          (NP (NNS:[759..768] mutations))
+          (PP-LOC
+            (PP (IN:[770..772] in)
+              (NP
+                (NP
+                  (NML-4 (NN:[773..776] p53))
+                  (NML-3 (NNS:[777..782] exons))
+                  (CD:[783..784] 5))
+                (PP (IN:[785..792] through)
+                  (NP
+                    (NML-4 (-NONE-:[792..792] *P*))
+                    (NML-3 (-NONE-:[792..792] *P*))
+                    (CD:[793..794] 9)))))
+            (,:[794..795] ,)
+            (CONJP (RB:[796..798] as) (RB:[799..803] well) (IN:[804..806] as))
+            (PP
+              (PP (IN:[807..809] in)
+                (NP
+                  (NP
+                    (NML-6 (NN:[810..813] RB1))
+                    (NML-5 (NNS:[814..819] exons))
+                    (CD:[820..822] 10))
+                  (PP (HYPH:[822..823] -)
+                    (NP
+                      (NML-6 (-NONE-:[823..823] *P*))
+                      (NML-5 (-NONE-:[823..823] *P*))
+                      (CD:[823..825] 27)))))
+              (CC:[826..829] and)
+              (PP (IN:[830..832] in)
+                (NP
+                  (NML
+                    (NML (NN:[833..834] N) (HYPH:[834..835] -)
+                      (NML-1 (-NONE-:[835..835] *P*)))
+                    (,:[835..836] ,)
+                    (NML (NN:[837..838] K) (HYPH:[838..839] -)
+                      (NML-1 (-NONE-:[839..839] *P*)))
+                    (,:[839..840] ,)
+                    (NML (NN:[841..842] H) (HYPH:[842..843] -)
+                      (NML-1 (NN:[843..846] Ras))))
+                  (NML
+                    (NML
+                      (NML-7 (NNS:[848..853] exons))
+                      (CD:[854..855] 1))
+                    (CC:[856..859] and)
+                    (NML
+                      (NML-7 (-NONE-:[859..859] *P*))
+                      (CD:[860..861] 2))))))))))
+    (VP (VBD:[862..865] was)
+      (VP (VBN:[866..872] tested)
+        (NP-2 (-NONE-:[872..872] *))
+        (PP-MNR
+          (PP (IN:[873..875] by)
+            (NP (DT:[876..879] the)
+              (NML (NN:[880..883] PCR) (HYPH:[883..884] -)
+                (NML (JJ:[884..890] Single) (NN:[891..897] Strand))
+                (NN:[898..910] Conformation) (NN:[911..923] Polymorphism))
+              (NN:[925..934] technique)))
+          (CC:[935..938] and)
+          (PP (IN:[939..941] by)
+            (NP (NN:[942..945] PCR) (HYPH:[945..946] -) (JJ:[946..952] Direct)
+                (NN:[953..963] Sequencing))))))
+    (.:[963..964] .)))
+
+;sentence 6 Span:965..1142
+;In addition, Southern blot analysis was  used to investigate the occurrence
+;of gross rearrangements in the p53 gene as  well as loss of heterozygosity at
+;17p13, the site of p53.
+;[1050..1064]:variation-type:"rearrangements"
+;[1072..1075]:gene-rna:"p53"
+;[1093..1115]:variation-type:"loss of heterozygosity"
+;[1119..1124]:variation-location:"17p13"
+;[1138..1141]:gene-rna:"p53"
+(SENT
+  (S
+    (PP (IN:[965..967] In)
+      (NP (NN:[968..976] addition)))
+    (,:[976..977] ,)
+    (NP-SBJ-1
+      (NML (JJ:[978..986] Southern) (NN:[987..991] blot))
+      (NN:[992..1000] analysis))
+    (VP (VBD:[1001..1004] was)
+      (VP (VBN:[1006..1010] used)
+        (NP-1 (-NONE-:[1010..1010] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1010..1010] *))
+          (VP (TO:[1011..1013] to)
+            (VP (VB:[1014..1025] investigate)
+              (NP
+                (NP
+                  (NP (DT:[1026..1029] the) (NN:[1030..1040] occurrence))
+                  (PP (IN:[1041..1043] of)
+                    (NP
+                      (NP (JJ:[1044..1049] gross)
+                          (NNS:[1050..1064] rearrangements))
+                      (PP-LOC (IN:[1065..1067] in)
+                        (NP (DT:[1068..1071] the) (NN:[1072..1075] p53)
+                            (NN:[1076..1080] gene))))))
+                (CONJP (RB:[1081..1083] as) (RB:[1085..1089] well)
+                       (IN:[1090..1092] as))
+                (NP
+                  
+                  (NP (NN:[1093..1097] loss))
+                  (PP (IN:[1098..1100] of)
+                    (NP (NN:[1101..1115] heterozygosity)))
+                  (PP-LOC (IN:[1116..1118] at)
+                    (NP
+                      (NP (NN:[1119..1124] 17p13))
+                      (,:[1124..1125] ,)
+                      (NP
+                        (NP (DT:[1126..1129] the) (NN:[1130..1134] site))
+                        (PP (IN:[1135..1137] of)
+                          (NP (NN:[1138..1141] p53)))))))))))))
+    (.:[1141..1142] .)))
+
+;sentence 7 Span:1143..1325
+;Acute phase  BCR/ABL-CMPD cases displayed a high frequency of p53 (2/7) and
+;Ras (3/7)  lesions, whereas BCR/ABL- CMPD in chronic phase displayed only
+;germline p53 and  Ras sequences.
+;[1156..1168]:malignancy:"BCR/ABL-CMPD"
+;[1156..1163]:variation-event:"BCR/ABL"
+;[1156..1159]:gene-rna:"BCR"
+;[1160..1163]:gene-rna:"ABL"
+;[1205..1208]:gene-rna:"p53"
+;[1219..1222]:gene-rna:"Ras"
+;[1247..1277]:malignancy:"BCR/ABL- CMPD in chronic phase"
+;[1247..1254]:variation-event:"BCR/ABL"
+;[1247..1250]:gene-rna:"BCR"
+;[1251..1254]:gene-rna:"ABL"
+;[1302..1305]:gene-rna:"p53"
+;[1311..1314]:gene-rna:"Ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[1143..1148] Acute) (NN:[1149..1154] phase))
+      (NML
+        (ADJP
+          (NML (NN:[1156..1159] BCR) (SYM:[1159..1160] /) (NN:[1160..1163] ABL))
+          (SYM:[1163..1164] -))
+        (NN:[1164..1168] CMPD))
+      (NNS:[1169..1174] cases))
+    (VP (VBD:[1175..1184] displayed)
+      (NP
+        (NP (DT:[1185..1186] a) (JJ:[1187..1191] high)
+            (NN:[1192..1201] frequency))
+        (PP (IN:[1202..1204] of)
+          (NP
+            (NP (NN:[1205..1208] p53)
+              (PRN (-LRB-:[1209..1210] -LRB-)
+                (NP
+                  (NP (CD:[1210..1211] 2))
+                  (PP (SYM:[1211..1212] /)
+                    (NP (CD:[1212..1213] 7))))
+                (-RRB-:[1213..1214] -RRB-))
+              (NML-3 (-NONE-:[1214..1214] *P*)))
+            (CC:[1215..1218] and)
+            (NP (NN:[1219..1222] Ras)
+              (PRN (-LRB-:[1223..1224] -LRB-)
+                (NP
+                  (NP (CD:[1224..1225] 3))
+                  (PP (SYM:[1225..1226] /)
+                    (NP (CD:[1226..1227] 7))))
+                (-RRB-:[1227..1228] -RRB-))
+              (NML-3 (NNS:[1230..1237] lesions))))))
+      (,:[1237..1238] ,)
+      (SBAR-ADV (IN:[1239..1246] whereas)
+        (S
+          (NP-SBJ
+            (NP
+              (ADJP
+                (NML (NN:[1247..1250] BCR) (SYM:[1250..1251] /)
+                     (NN:[1251..1254] ABL))
+                (SYM:[1254..1255] -))
+              (NN:[1256..1260] CMPD))
+            (PP (IN:[1261..1263] in)
+              (NP (JJ:[1264..1271] chronic) (NN:[1272..1277] phase))))
+          (VP (VBD:[1278..1287] displayed)
+            (NP (JJ:[1288..1292] only)
+              (NML
+                (NML
+                  (NML-2 (NN:[1293..1301] germline))
+                  (NN:[1302..1305] p53)
+                  (NML-1 (-NONE-:[1305..1305] *P*)))
+                (CC:[1306..1309] and)
+                (NML
+                  (NML-2 (-NONE-:[1309..1309] *P*))
+                  (NN:[1311..1314] Ras)
+                  (NML-1 (NNS:[1315..1324] sequences)))))))))
+    (.:[1324..1325] .)))
+
+;sentence 8 Span:1326..1419
+;Conversely, p53 inactivation was restricted to only 1/26 cases of  BCR/ABL+
+;CML blast crisis.
+;[1338..1341]:gene-rna:"p53"
+;[1393..1418]:malignancy:"BCR/ABL+ CML blast crisis"
+;[1393..1400]:variation-event:"BCR/ABL"
+;[1393..1396]:gene-rna:"BCR"
+;[1397..1400]:gene-rna:"ABL"
+(SENT
+  (S
+    (ADVP (RB:[1326..1336] Conversely))
+    (,:[1336..1337] ,)
+    (NP-SBJ-1 (NN:[1338..1341] p53) (NN:[1342..1354] inactivation))
+    (VP (VBD:[1355..1358] was)
+      (VP (VBN:[1359..1369] restricted)
+        (NP-1 (-NONE-:[1369..1369] *))
+        (PP (TO:[1370..1372] to)
+          (NP
+            (NP (RB:[1373..1377] only) (CD:[1378..1379] 1))
+            (PP (SYM:[1379..1380] /)
+              (NP
+                (NP (CD:[1380..1382] 26) (NNS:[1383..1388] cases))
+                (PP (IN:[1389..1391] of)
+                  (NP
+                    (NML
+                      (ADJP
+                        (NML (NN:[1393..1396] BCR) (SYM:[1396..1397] /)
+                             (NN:[1397..1400] ABL))
+                        (SYM:[1400..1401] +))
+                      (NN:[1402..1405] CML))
+                    (NN:[1406..1411] blast) (NN:[1412..1418] crisis)))))))))
+    (.:[1418..1419] .)))
+
+;sentence 9 Span:1420..1495
+;No alterations in the RB1 gene were detected in any  of the cases analyzed.
+;[1442..1445]:gene-rna:"RB1"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1420..1422] No) (NNS:[1423..1434] alterations))
+      (PP (IN:[1435..1437] in)
+        (NP (DT:[1438..1441] the) (NN:[1442..1445] RB1) (NN:[1446..1450] gene))))
+    (VP (VBD:[1451..1455] were)
+      (VP (VBN:[1456..1464] detected)
+        (NP-1 (-NONE-:[1464..1464] *))
+        (PP (IN:[1465..1467] in)
+          (NP
+            (NP (DT:[1468..1471] any))
+            (PP (IN:[1473..1475] of)
+              (NP
+                (NP (DT:[1476..1479] the) (NNS:[1480..1485] cases))
+                (VP (VBN:[1486..1494] analyzed)
+                  (NP (-NONE-:[1494..1494] *)))))))))
+    (.:[1494..1495] .)))
+
+;sentence 10 Span:1496..1726
+;These data indicate that p53 inactivation and/or Ras  activation might play a
+;role in acute transformation of BCR/ABL- CMPD and that  the molecular
+;mechanisms of tumor progression may be different in BCR/ABL+  versus
+;BCR/ABL-CMPD.
+;[1521..1524]:gene-rna:"p53"
+;[1545..1548]:gene-rna:"Ras"
+;[1606..1619]:malignancy:"BCR/ABL- CMPD"
+;[1606..1613]:variation-event:"BCR/ABL"
+;[1606..1609]:gene-rna:"BCR"
+;[1610..1613]:gene-rna:"ABL"
+;[1696..1704]:malignancy:"BCR/ABL+"
+;[1696..1703]:variation-event:"BCR/ABL"
+;[1696..1699]:gene-rna:"BCR"
+;[1700..1703]:gene-rna:"ABL"
+;[1713..1725]:malignancy:"BCR/ABL-CMPD"
+;[1713..1720]:variation-event:"BCR/ABL"
+;[1713..1716]:gene-rna:"BCR"
+;[1717..1720]:gene-rna:"ABL"
+;[1721..1725]:malignancy:"CMPD"
+(SENT
+  (S
+    (NP-SBJ (DT:[1496..1501] These) (NNS:[1502..1506] data))
+    (VP (VBP:[1507..1515] indicate)
+      (SBAR
+        (SBAR (IN:[1516..1520] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1521..1524] p53) (NN:[1525..1537] inactivation))
+              (CC:[1538..1544] and/or)
+              (NP (NN:[1545..1548] Ras) (NN:[1550..1560] activation)))
+            (VP (MD:[1561..1566] might)
+              (VP (VB:[1567..1571] play)
+                (NP (DT:[1572..1573] a) (NN:[1574..1578] role))
+                (PP (IN:[1579..1581] in)
+                  (NP
+                    (NP (JJ:[1582..1587] acute) (NN:[1588..1602] transformation))
+                    (PP (IN:[1603..1605] of)
+                      (NP
+                        (ADJP
+                          (NML (NN:[1606..1609] BCR) (SYM:[1609..1610] /)
+                               (NN:[1610..1613] ABL))
+                          (SYM:[1613..1614] -))
+                        (NN:[1615..1619] CMPD)))))))))
+        (CC:[1620..1623] and)
+        (SBAR (IN:[1624..1628] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1630..1633] the) (JJ:[1634..1643] molecular)
+                  (NNS:[1644..1654] mechanisms))
+              (PP (IN:[1655..1657] of)
+                (NP (NN:[1658..1663] tumor) (NN:[1664..1675] progression))))
+            (VP (MD:[1676..1679] may)
+              (VP (VB:[1680..1682] be)
+                (ADJP-PRD (JJ:[1683..1692] different)
+                  (PP (IN:[1693..1695] in)
+                    (NP
+                      (NP
+                        (ADJP
+                          (NML (NN:[1696..1699] BCR) (SYM:[1699..1700] /)
+                               (NN:[1700..1703] ABL))
+                          (SYM:[1703..1704] +))
+                        (NML-1 (-NONE-:[1704..1704] *P*)))
+                      (IN:[1706..1712] versus)
+                      (NP
+                        (ADJP
+                          (NML (NN:[1713..1716] BCR) (SYM:[1716..1717] /)
+                               (NN:[1717..1720] ABL))
+                          (SYM:[1720..1721] -))
+                        (NML-1 (NN:[1721..1725] CMPD))))))))))))
+    (.:[1725..1726] .)))
+
+;section 11 Span:1730..1774
+;PMID: 8152300 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1730..1734] PMID) (::[1734..1735] :) (CD:[1736..1743] 8152300)
+        (NN:[1744..1745] -LSB-) (NNP:[1745..1751] PubMed) (::[1752..1753] -)
+        (NN:[1754..1761] indexed) (IN:[1762..1765] for)
+        (NNP:[1766..1774] MEDLINE-RSB-)))

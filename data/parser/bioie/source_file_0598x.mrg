@@ -1,0 +1,531 @@
+;PMID: 9655301
+;source_file_1218.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..242] = [t:35..242]
+;2)section:[e:246..307] = [t:246..307]
+;3)section:[e:311..393] = [t:311..393]
+;4)sentence:[e:397..408] = [t:397..408]
+;5)sentence:[e:409..517] = [t:409..517]
+;6)sentence:[e:518..677] = [t:518..677]
+;7)sentence:[e:678..777] = [t:678..777]
+;8)sentence:[e:778..948] = [t:778..948]
+;9)sentence:[e:950..958] = [t:950..958]
+;10)sentence:[e:959..1129] = [t:959..1129]
+;11)sentence:[e:1130..1209] = [t:1130..1209]
+;12)sentence:[e:1210..1218] = [t:1210..1218]
+;13)sentence:[e:1219..1364] = [t:1219..1364]
+;14)sentence:[e:1365..1462] = [t:1365..1462]
+;15)sentence:[e:1463..1625] = [t:1463..1625]
+;16)sentence:[e:1626..1638] = [t:1626..1638]
+;17)sentence:[e:1639..1780] = [t:1639..1780]
+;18)sentence:[e:1781..2034] = [t:1781..2034]
+;19)sentence:[e:2035..2234] = [t:2035..2234]
+;20)section:[e:2238..2282] = [t:2238..2282]
+
+;section 0 Span:0..30
+;Cancer  1998 Jul 1;83(1):122-9
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (CD:[8..12] 1998) (NNP:[13..16] Jul)
+        (CC:[17..22] 1;83-LRB-) (CD:[22..23] 1) (-RRB-:[23..24] -RRB-)
+        (CD:[24..28] :122) (::[28..29] -) (CD:[29..30] 9)))
+
+;sentence 1 Span:35..242
+;A c-rasHa mutation in the metastasis of a human papillomavirus (HPV)-18
+;positive  penile squamous cell carcinoma suggests a cooperative effect
+;between HPV-18 and  c-rasHa activation in malignant progression.
+;[37..44]:gene-rna:"c-rasHa"
+;[117..147]:malignancy:"penile squamous cell carcinoma"
+;[198..205]:gene-rna:"c-rasHa"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (DT:[35..36] A) (NN:[37..44] c-rasHa) (NN:[45..53] mutation))
+      (PP (IN:[54..56] in)
+        (NP
+          (NP (DT:[57..60] the) (NN:[61..71] metastasis))
+          (PP (IN:[72..74] of)
+            (NP (DT:[75..76] a)
+              (ADJP
+                (NML
+                  (NML
+                    (NML (JJ:[77..82] human) (NN:[83..97] papillomavirus))
+                    (NML (-LRB-:[98..99] -LRB-) (NN:[99..102] HPV)
+                         (-RRB-:[102..103] -RRB-)))
+                  (HYPH:[103..104] -) (CD:[104..106] 18))
+                (JJ:[107..115] positive))
+               (JJ:[117..123] penile)
+              (NML (JJ:[124..132] squamous) (NN:[133..137] cell))
+              (NN:[138..147] carcinoma))))))
+    (VP (VBZ:[148..156] suggests)
+      (NP
+        (NP (DT:[157..158] a) (JJ:[159..170] cooperative) (NN:[171..177] effect))
+        (PP (IN:[178..185] between)
+          (NP
+            (NP (NN:[186..192] HPV-18)
+              (NML-1 (-NONE-:[192..192] *P*)))
+            (CC:[193..196] and)
+            (NP (NN:[198..205] c-rasHa)
+              (NML-1 (NN:[206..216] activation)))))
+        (PP (IN:[217..219] in)
+          (NP (JJ:[220..229] malignant) (NN:[230..241] progression)))))
+    (.:[241..242] .)))
+
+;section 2 Span:246..307
+;Leis PF, Stevens KR, Baer SC, Kadmon D, Goldberg LH, Wang XJ.
+(SEC
+  (FRAG (NNP:[246..250] Leis) (NNP:[251..253] PF) (,:[253..254] ,)
+        (NNP:[255..262] Stevens) (NNP:[263..265] KR) (,:[265..266] ,)
+        (NNP:[267..271] Baer) (NNP:[272..274] SC) (,:[274..275] ,)
+        (NNP:[276..282] Kadmon) (NNP:[283..284] D) (,:[284..285] ,)
+        (NNP:[286..294] Goldberg) (NNP:[295..297] LH) (,:[297..298] ,)
+        (NNP:[299..303] Wang) (NNP:[304..306] XJ) (.:[306..307] .)))
+
+;section 3 Span:311..393
+;Department of Dermatology, Baylor College of Medicine, Houston, Texas 77030, 
+;USA.
+(SEC
+  (FRAG (NNP:[311..321] Department) (IN:[322..324] of)
+        (NNP:[325..336] Dermatology) (,:[336..337] ,) (NNP:[338..344] Baylor)
+        (NNP:[345..352] College) (IN:[353..355] of) (NNP:[356..364] Medicine)
+        (,:[364..365] ,) (NNP:[366..373] Houston) (,:[373..374] ,)
+        (NNP:[375..380] Texas) (NNP:[381..386] 77030) (,:[386..387] ,)
+        (NNP:[389..392] USA) (.:[392..393] .)))
+
+;sentence 4 Span:397..408
+;BACKGROUND:
+(SENT
+  (NP (NN:[397..407] BACKGROUND) (::[407..408] :)))
+
+;sentence 5 Span:409..517
+;Human papillomaviruses (HPV) have been implicated in the etiology of 
+;anogenital squamous epithelial tumors.
+;[479..516]:malignancy:"anogenital squamous epithelial tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[409..414] Human) (NNS:[415..431] papillomaviruses))
+      (NP (-LRB-:[432..433] -LRB-) (NN:[433..436] HPV) (-RRB-:[436..437] -RRB-)))
+    (VP (VBP:[438..442] have)
+      (VP (VBN:[443..447] been)
+        (VP (VBN:[448..458] implicated)
+          (NP-1 (-NONE-:[458..458] *))
+          (PP (IN:[459..461] in)
+            (NP
+              (NP (DT:[462..465] the) (NN:[466..474] etiology))
+              (PP (IN:[475..477] of)
+                (NP (JJ:[479..489] anogenital) (JJ:[490..498] squamous)
+                    (JJ:[499..509] epithelial) (NNS:[510..516] tumors))))))))
+    (.:[516..517] .)))
+
+;sentence 6 Span:518..677
+;Of the 65 HPV strains, subtypes HPV-16  and HPV-18 frequently are associated
+;with malignant conditions and are capable  of transforming keratinocytes in
+;vitro.
+(SENT
+  (S
+    (PP-TPC-1 (IN:[518..520] Of)
+      (NP (DT:[521..524] the) (CD:[525..527] 65) (NN:[528..531] HPV)
+          (NNS:[532..539] strains)))
+    (,:[539..540] ,)
+    (NP-SBJ-2
+      (NP
+        (NP
+          (NML-3 (NNS:[541..549] subtypes))
+          (NN:[550..556] HPV-16))
+        (CC:[558..561] and)
+        (NP
+          (NML-3 (-NONE-:[561..561] *P*))
+          (NN:[562..568] HPV-18)))
+      (PP-1 (-NONE-:[568..568] *T*)))
+    (ADVP-TMP (RB:[569..579] frequently))
+    (VP
+      (VP (VBP:[580..583] are)
+        (VP (VBN:[584..594] associated)
+          (NP-2 (-NONE-:[594..594] *))
+          (PP-CLR (IN:[595..599] with)
+            (NP (JJ:[600..609] malignant) (NNS:[610..620] conditions)))))
+      (CC:[621..624] and)
+      (VP (VBP:[625..628] are)
+        (ADJP-PRD (JJ:[629..636] capable)
+          (PP (IN:[638..640] of)
+            (NP (VBG:[641..653] transforming) (NNS:[654..667] keratinocytes))))
+        (ADVP (FW:[668..670] in) (FW:[671..676] vitro))))
+    (.:[676..677] .)))
+
+;sentence 7 Span:678..777
+;However, additional cellular changes are  necessary to confer tumorigenicity
+;to HPV-infected cells.
+(SENT
+  (S
+    (ADVP (RB:[678..685] However))
+    (,:[685..686] ,)
+    (NP-SBJ-1 (JJ:[687..697] additional) (JJ:[698..706] cellular)
+              (NNS:[707..714] changes))
+    (VP (VBP:[715..718] are)
+      (ADJP-PRD (JJ:[720..729] necessary)
+        (S
+          (NP-SBJ-1 (-NONE-:[729..729] *))
+          (VP (TO:[730..732] to)
+            (VP (VB:[733..739] confer)
+              (NP (NN:[740..754] tumorigenicity))
+              (PP (TO:[755..757] to)
+                (NP
+                  (ADJP (NN:[758..761] HPV) (HYPH:[761..762] -)
+                        (VBN:[762..770] infected))
+                  (NNS:[771..776] cells))))))))
+    (.:[776..777] .)))
+
+;sentence 8 Span:778..948
+;Secondary events  implicated in the progression to malignancy include loss of
+;tumor suppressor  genes such as p53 and/or activation of cellular oncogenes
+;such as c-rasHa.
+;[888..891]:gene-rna:"p53"
+;[940..947]:gene-rna:"c-rasHa"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[778..787] Secondary) (NNS:[788..794] events))
+      (VP (VBN:[796..806] implicated)
+        (NP (-NONE-:[806..806] *))
+        (PP (IN:[807..809] in)
+          (NP
+            (NP (DT:[810..813] the) (NN:[814..825] progression))
+            (PP (TO:[826..828] to)
+              (NP (NN:[829..839] malignancy)))))))
+    (VP (VBP:[840..847] include)
+      (NP
+        (NP
+          (NP (NN:[848..852] loss))
+          (PP (IN:[853..855] of)
+            (NP
+              (NP
+                (NML (NN:[856..861] tumor) (NN:[862..872] suppressor))
+                (NNS:[874..879] genes))
+              (PP (JJ:[880..884] such) (IN:[885..887] as)
+                (NP (NN:[888..891] p53))))))
+        (CC:[892..898] and/or)
+        (NP
+          (NP (NN:[899..909] activation))
+          (PP (IN:[910..912] of)
+            (NP
+              (NP (JJ:[913..921] cellular) (NNS:[922..931] oncogenes))
+              (PP (JJ:[932..936] such) (IN:[937..939] as)
+                (NP (NN:[940..947] c-rasHa))))))))
+    (.:[947..948] .)))
+
+;sentence 9 Span:950..958
+;METHODS:
+(SENT
+  (NP (NNS:[950..957] METHODS) (::[957..958] :)))
+
+;sentence 10 Span:959..1129
+;Polymerase chain reaction (PCR) was used to identify HPV-16 or HPV-18 
+;genetic sequence in primary penile squamous cell carcinoma and two inguinal 
+;lymph node metastases.
+;[959..969]:gene-protein:"Polymerase"
+;[1050..1088]:malignancy:"primary penile squamous cell carcinoma"
+;[1097..1128]:malignancy:"inguinal  lymph node metastases"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[959..969] Polymerase) (NN:[970..975] chain)
+          (NN:[976..984] reaction))
+      (NP (-LRB-:[985..986] -LRB-) (NN:[986..989] PCR) (-RRB-:[989..990] -RRB-)))
+    (VP (VBD:[991..994] was)
+      (VP (VBN:[995..999] used)
+        (NP-1 (-NONE-:[999..999] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[999..999] *))
+          (VP (TO:[1000..1002] to)
+            (VP (VB:[1003..1011] identify)
+              (NP
+                (NP (NN:[1012..1018] HPV-16)
+                  (NML-2 (-NONE-:[1018..1018] *P*)))
+                (CC:[1019..1021] or)
+                (NP (NN:[1022..1028] HPV-18)
+                  (NML-2 (JJ:[1030..1037] genetic) (NN:[1038..1046] sequence))))
+              (PP-LOC (IN:[1047..1049] in)
+                (NP
+                  (NP (JJ:[1050..1057] primary) (JJ:[1058..1064] penile)
+                    (NML (JJ:[1065..1073] squamous) (NN:[1074..1078] cell))
+                    (NN:[1079..1088] carcinoma))
+                  (CC:[1089..1092] and)
+                  (NP (CD:[1093..1096] two)
+                     (JJ:[1097..1105] inguinal)
+                    (NML (NN:[1107..1112] lymph) (NN:[1113..1117] node))
+                    (NNS:[1118..1128] metastases)))))))))
+    (.:[1128..1129] .)))
+
+;sentence 11 Span:1130..1209
+;p53 and c-rasHa loci were analyzed by sequencing of  PCR-amplified genomic
+;DNA.
+;[1130..1133]:gene-rna:"p53"
+;[1138..1145]:gene-rna:"c-rasHa"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1130..1133] p53)
+        (NML-1 (-NONE-:[1133..1133] *P*)))
+      (CC:[1134..1137] and)
+      (NP (NN:[1138..1145] c-rasHa)
+        (NML-1 (NNS:[1146..1150] loci))))
+    (VP (VBD:[1151..1155] were)
+      (VP (VBN:[1156..1164] analyzed)
+        (NP-2 (-NONE-:[1164..1164] *))
+        (PP-MNR (IN:[1165..1167] by)
+          (NP
+            (NP (NN:[1168..1178] sequencing))
+            (PP (IN:[1179..1181] of)
+              (NP
+                (ADJP (NN:[1183..1186] PCR) (HYPH:[1186..1187] -)
+                      (VBN:[1187..1196] amplified))
+                (JJ:[1197..1204] genomic) (NN:[1205..1208] DNA)))))))
+    (.:[1208..1209] .)))
+
+;sentence 12 Span:1210..1218
+;RESULTS:
+(SENT
+  (NP (NNS:[1210..1217] RESULTS) (::[1217..1218] :)))
+
+;sentence 13 Span:1219..1364
+;HPV-18 but not HPV-16 infection was found in  the primary carcinoma and in
+;inguinal metastases occurring 5 and 7 years after  the initial lesion.
+;[1269..1286]:malignancy:"primary carcinoma"
+;[1294..1313]:malignancy:"inguinal metastases"
+;[1349..1363]:malignancy:"initial lesion"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1219..1225] HPV-18)
+        (NML-3 (-NONE-:[1225..1225] *P*)))
+      (CONJP (CC:[1226..1229] but) (RB:[1230..1233] not))
+      (NP (NN:[1234..1240] HPV-16)
+        (NML-3 (NN:[1241..1250] infection))))
+    (VP (VBD:[1251..1254] was)
+      (VP (VBN:[1255..1260] found)
+        (NP-1 (-NONE-:[1260..1260] *))
+        (PP-LOC
+          (PP (IN:[1261..1263] in)
+            (NP (DT:[1265..1268] the)
+               (JJ:[1269..1276] primary) (NN:[1277..1286] carcinoma)))
+          (CC:[1287..1290] and)
+          (PP (IN:[1291..1293] in)
+            (NP
+              (NP (JJ:[1294..1302] inguinal) (NNS:[1303..1313] metastases))
+              (VP (VBG:[1314..1323] occurring)
+                (NP-TMP
+                  (NP
+                    (NP (CD:[1324..1325] 5)
+                      (NML-2 (-NONE-:[1325..1325] *P*)))
+                    (CC:[1326..1329] and)
+                    (NP (CD:[1330..1331] 7)
+                      (NML-2 (NNS:[1332..1337] years))))
+                  (PP (IN:[1338..1343] after)
+                    (NP (DT:[1345..1348] the)
+                       (JJ:[1349..1356] initial) (NN:[1357..1363] lesion))))))))))
+    (.:[1363..1364] .)))
+
+;sentence 14 Span:1365..1462
+;Sequence analysis did not identify any p53 mutations in the  primary
+;carcinoma or its metastases.
+;[1404..1407]:gene-rna:"p53"
+;[1426..1443]:malignancy:"primary carcinoma"
+;[1451..1461]:malignancy:"metastases"
+(SENT
+  (S
+    (NP-SBJ (NN:[1365..1373] Sequence) (NN:[1374..1382] analysis))
+    (VP (VBD:[1383..1386] did) (RB:[1387..1390] not)
+      (VP (VB:[1391..1399] identify)
+        (NP
+          (NP (DT:[1400..1403] any) (NN:[1404..1407] p53)
+              (NNS:[1408..1417] mutations))
+          (PP-LOC (IN:[1418..1420] in)
+            (NP
+              (NP (DT:[1421..1424] the)
+                 (JJ:[1426..1433] primary) (NN:[1434..1443] carcinoma))
+              (CC:[1444..1446] or)
+              (NP (PRP$:[1447..1450] its) (NNS:[1451..1461] metastases)))))))
+    (.:[1461..1462] .)))
+
+;sentence 15 Span:1463..1625
+;However, although the primary lesion and  the 5-year metastasis encoded
+;wild-type c-rasHa, the 7-year metastasis had a  missense mutation within
+;c-rasHa codon 61.
+;[1485..1499]:malignancy:"primary lesion"
+;[1516..1526]:malignancy:"metastasis"
+;[1545..1552]:gene-rna:"c-rasHa"
+;[1565..1575]:malignancy:"metastasis"
+;[1583..1600]:variation-type:"missense mutation"
+;[1608..1615]:gene-rna:"c-rasHa"
+;[1616..1624]:variation-location:"codon 61"
+(SENT
+  (S
+    (ADVP (RB:[1463..1470] However))
+    (,:[1470..1471] ,)
+    (SBAR-ADV (IN:[1472..1480] although)
+      (S
+        (NP-SBJ
+          (NP (DT:[1481..1484] the)
+             (JJ:[1485..1492] primary) (NN:[1493..1499] lesion))
+          (CC:[1500..1503] and)
+          (NP (DT:[1505..1508] the)
+            (NML (CD:[1509..1510] 5) (HYPH:[1510..1511] -)
+                 (NN:[1511..1515] year))
+            (NN:[1516..1526] metastasis)))
+        (VP (VBD:[1527..1534] encoded)
+          (NP
+            (NML (JJ:[1535..1539] wild) (HYPH:[1539..1540] -)
+                 (NN:[1540..1544] type))
+            (NN:[1545..1552] c-rasHa)))))
+    (,:[1552..1553] ,)
+    (NP-SBJ (DT:[1554..1557] the)
+      (NML (CD:[1558..1559] 7) (HYPH:[1559..1560] -) (NN:[1560..1564] year))
+      (NN:[1565..1575] metastasis))
+    (VP (VBD:[1576..1579] had)
+      (NP (DT:[1580..1581] a)
+         (JJ:[1583..1591] missense) (NN:[1592..1600] mutation))
+      (PP (IN:[1601..1607] within)
+        (NP (NN:[1608..1615] c-rasHa)
+           (NN:[1616..1621] codon) (CD:[1622..1624] 61))))
+    (.:[1624..1625] .)))
+
+;sentence 16 Span:1626..1638
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1626..1637] CONCLUSIONS) (::[1637..1638] :)))
+
+;sentence 17 Span:1639..1780
+;To the authors'  knowledge, this is the first report of an activating c-rasHa
+;mutation associated  with squamous cell carcinoma of the penis.
+;[1709..1716]:gene-rna:"c-rasHa"
+;[1743..1779]:malignancy:"squamous cell carcinoma of the penis"
+(SENT
+  (S
+    (PP (TO:[1639..1641] To)
+      (NP
+        (NP (DT:[1642..1645] the) (NNS:[1646..1653] authors)
+            (POS:[1653..1654] '))
+        (NN:[1656..1665] knowledge)))
+    (,:[1665..1666] ,)
+    (NP-SBJ (DT:[1667..1671] this))
+    (VP (VBZ:[1672..1674] is)
+      (NP-PRD
+        (NP (DT:[1675..1678] the) (JJ:[1679..1684] first)
+            (NN:[1685..1691] report))
+        (PP (IN:[1692..1694] of)
+          (NP
+            (NP (DT:[1695..1697] an) (VBG:[1698..1708] activating)
+                (NN:[1709..1716] c-rasHa) (NN:[1717..1725] mutation))
+            (VP (VBN:[1726..1736] associated)
+              (NP (-NONE-:[1736..1736] *))
+              (PP-CLR (IN:[1738..1742] with)
+                (NP
+                  (NP
+                    (NML (JJ:[1743..1751] squamous) (NN:[1752..1756] cell))
+                    (NN:[1757..1766] carcinoma))
+                  (PP (IN:[1767..1769] of)
+                    (NP (DT:[1770..1773] the) (NN:[1774..1779] penis))))))))))
+    (.:[1779..1780] .)))
+
+;sentence 18 Span:1781..2034
+;The presence of activated c-rasHa in  the second metastasis but not in the
+;first metastasis or the primary lesion  suggests that activation of c-rasHa
+;may be a late event in the malignant  progression of HPV-18-associated penile
+;squamous cell carcinoma.
+;[1807..1814]:gene-rna:"c-rasHa"
+;[1823..1840]:malignancy:"second metastasis"
+;[1856..1872]:malignancy:"first metastasis"
+;[1880..1894]:malignancy:"primary lesion"
+;[1924..1931]:gene-rna:"c-rasHa"
+;[2003..2033]:malignancy:"penile squamous cell carcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1781..1784] The) (NN:[1785..1793] presence))
+      (PP (IN:[1794..1796] of)
+        (NP (VBN:[1797..1806] activated) (NN:[1807..1814] c-rasHa)))
+      (PP-LOC
+        (PP (IN:[1815..1817] in)
+          (NP (DT:[1819..1822] the)
+             (JJ:[1823..1829] second) (NN:[1830..1840] metastasis)))
+        (CONJP (CC:[1841..1844] but) (RB:[1845..1848] not))
+        (PP (IN:[1849..1851] in)
+          (NP
+            (NP (DT:[1852..1855] the)
+               (JJ:[1856..1861] first) (NN:[1862..1872] metastasis))
+            (CC:[1873..1875] or)
+            (NP (DT:[1876..1879] the)
+               (JJ:[1880..1887] primary) (NN:[1888..1894] lesion))))))
+    (VP (VBZ:[1896..1904] suggests)
+      (SBAR (IN:[1905..1909] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1910..1920] activation))
+            (PP (IN:[1921..1923] of)
+              (NP (NN:[1924..1931] c-rasHa))))
+          (VP (MD:[1932..1935] may)
+            (VP (VB:[1936..1938] be)
+              (NP-PRD
+                (NP (DT:[1939..1940] a) (JJ:[1941..1945] late)
+                    (NN:[1946..1951] event))
+                (PP (IN:[1952..1954] in)
+                  (NP
+                    (NP (DT:[1955..1958] the) (JJ:[1959..1968] malignant)
+                        (NN:[1970..1981] progression))
+                    (PP (IN:[1982..1984] of)
+                      (NP
+                        (ADJP (NN:[1985..1991] HPV-18) (HYPH:[1991..1992] -)
+                              (VBN:[1992..2002] associated))
+                         (JJ:[2003..2009] penile)
+                        (NML (JJ:[2010..2018] squamous) (NN:[2019..2023] cell))
+                        (NN:[2024..2033] carcinoma)))))))))))
+    (.:[2033..2034] .)))
+
+;sentence 19 Span:2035..2234
+;Analysis of  additional samples from primary lesions and their resultant
+;metastases is  necessary to elucidate the incidence and significance of
+;c-rasHa activation in  penile squamous cell carcinoma.
+;[2072..2087]:malignancy:"primary lesions"
+;[2108..2118]:malignancy:"metastases"
+;[2180..2187]:gene-rna:"c-rasHa"
+;[2203..2233]:malignancy:"penile squamous cell carcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[2035..2043] Analysis))
+      (PP (IN:[2044..2046] of)
+        (NP
+          (NP (JJ:[2048..2058] additional) (NNS:[2059..2066] samples))
+          (PP (IN:[2067..2071] from)
+            (NP
+              (NP (JJ:[2072..2079] primary) (NNS:[2080..2087] lesions))
+              (CC:[2088..2091] and)
+              (NP (PRP$:[2092..2097] their) (JJ:[2098..2107] resultant)
+                  (NNS:[2108..2118] metastases)))))))
+    (VP (VBZ:[2119..2121] is)
+      (ADJP-PRD (JJ:[2123..2132] necessary)
+        (S
+          (NP-SBJ (-NONE-:[2132..2132] *))
+          (VP (TO:[2133..2135] to)
+            (VP (VB:[2136..2145] elucidate)
+              (NP
+                (NP (DT:[2146..2149] the) (NN:[2150..2159] incidence)
+                    (CC:[2160..2163] and) (NN:[2164..2176] significance))
+                (PP (IN:[2177..2179] of)
+                  (NP (NN:[2180..2187] c-rasHa) (NN:[2188..2198] activation)))
+                (PP (IN:[2199..2201] in)
+                  (NP (JJ:[2203..2209] penile)
+                    (NML (JJ:[2210..2218] squamous) (NN:[2219..2223] cell))
+                    (NN:[2224..2233] carcinoma)))))))))
+    (.:[2233..2234] .)))
+
+;section 20 Span:2238..2282
+;PMID: 9655301 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2238..2242] PMID) (::[2242..2243] :) (CD:[2244..2251] 9655301)
+        (NN:[2252..2253] -LSB-) (NNP:[2253..2259] PubMed) (::[2260..2261] -)
+        (NN:[2262..2269] indexed) (IN:[2270..2273] for)
+        (NNP:[2274..2282] MEDLINE-RSB-)))

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# You may find this shell script helpful.
+
+DATA=miniTest
+#DATA=genia
+
+java -server -mx500m -cp classes \
+  cs224n.assignments.PCFGParserTester \
+  -parser "cs224n.assignments.PCFGParserTester\$PCFGParser" \
+  -path /home/erik/data \
+  -data $DATA \
+  $@

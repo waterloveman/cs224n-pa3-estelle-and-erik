@@ -1,0 +1,413 @@
+;PMID: 10487827
+;source_file_553.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..162] = [t:40..162]
+;2)section:[e:166..228] = [t:166..228]
+;3)section:[e:232..335] = [t:232..335]
+;4)sentence:[e:339..512] = [t:339..512]
+;5)sentence:[e:513..806] = [t:513..806]
+;6)sentence:[e:808..921] = [t:808..921]
+;7)sentence:[e:922..1075] = [t:922..1075]
+;8)sentence:[e:1076..1272] = [t:1076..1272]
+;9)sentence:[e:1273..1415] = [t:1273..1415]
+;10)sentence:[e:1416..1613] = [t:1416..1613]
+;11)sentence:[e:1614..1842] = [t:1614..1842]
+;12)section:[e:1846..1891] = [t:1846..1891]
+
+;section 0 Span:0..35
+;Am J Pathol  1999 Sep;155(3):703-10
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..11] Pathol) (CD:[13..17] 1999)
+        (CC:[18..26] Sep;155-LRB-) (CD:[26..27] 3) (-RRB-:[27..28] -RRB-)
+        (CD:[28..32] :703) (::[32..33] -) (CD:[33..35] 10)))
+
+;sentence 1 Span:40..162
+;Nuclear accumulation of mutated beta-catenin in hepatocellular carcinoma is 
+;associated with increased cell proliferation.
+;[72..84]:gene-generic:"beta-catenin"
+;[88..112]:malignancy:"hepatocellular carcinoma"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (JJ:[40..47] Nuclear) (NN:[48..60] accumulation))
+      (PP (IN:[61..63] of)
+        (NP (VBN:[64..71] mutated) (NN:[72..84] beta-catenin)))
+      (PP (IN:[85..87] in)
+        (NP (JJ:[88..102] hepatocellular) (NN:[103..112] carcinoma))))
+    (VP (VBZ:[113..115] is)
+      (VP (VBN:[117..127] associated)
+        (NP-1 (-NONE-:[127..127] *))
+        (PP-CLR (IN:[128..132] with)
+          (NP (VBN:[133..142] increased) (NN:[143..147] cell)
+              (NN:[148..161] proliferation)))))
+    (.:[161..162] .)))
+
+;section 2 Span:166..228
+;Nhieu JT, Renard CA, Wei Y, Cherqui D, Zafrani ES, Buendia MA.
+(SEC
+  (FRAG (NNP:[166..171] Nhieu) (NNP:[172..174] JT) (,:[174..175] ,)
+        (NNP:[176..182] Renard) (NNP:[183..185] CA) (,:[185..186] ,)
+        (NNP:[187..190] Wei) (NNP:[191..192] Y) (,:[192..193] ,)
+        (NNP:[194..201] Cherqui) (NNP:[202..203] D) (,:[203..204] ,)
+        (NNP:[205..212] Zafrani) (NNP:[213..215] ES) (,:[215..216] ,)
+        (NNP:[217..224] Buendia) (NNP:[225..228] MA.)))
+
+;section 3 Span:232..335
+;Departement de Pathologie, Service de Chirurgie, Hopital Henri Mondor -
+;AP-HP,  Creteil, Paris, France.
+(SEC
+  (FRAG (NNP:[232..243] Departement) (IN:[244..246] de)
+        (NNP:[247..257] Pathologie) (,:[257..258] ,) (NNP:[259..266] Service)
+        (IN:[267..269] de) (NNP:[270..279] Chirurgie) (,:[279..280] ,)
+        (NNP:[281..288] Hopital) (NNP:[289..294] Henri) (NNP:[295..301] Mondor)
+        (::[302..303] -) (NNP:[304..306] AP) (::[306..307] -)
+        (NNP:[307..309] HP) (,:[309..310] ,) (NNP:[312..319] Creteil)
+        (,:[319..320] ,) (NNP:[321..326] Paris) (,:[326..327] ,)
+        (NNP:[328..334] France) (.:[334..335] .)))
+
+;sentence 4 Span:339..512
+;Inappropriate activation of the Wnt pathway resulting from beta-catenin gene 
+;alterations has recently been implicated in the development of hepatocellular
+; carcinoma (HCC).
+;[371..374]:gene-generic:"Wnt"
+;[398..410]:gene-rna:"beta-catenin"
+;[480..505]:malignancy:"hepatocellular  carcinoma"
+;[507..510]:malignancy:"HCC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (JJ:[339..352] Inappropriate) (NN:[353..363] activation))
+        (PP (IN:[364..366] of)
+          (NP (DT:[367..370] the) (NN:[371..374] Wnt) (NN:[375..382] pathway))))
+      (VP (VBG:[383..392] resulting)
+        (PP (IN:[393..397] from)
+          (NP
+            (NML (NN:[398..410] beta-catenin) (NN:[411..415] gene))
+            (NNS:[417..428] alterations)))))
+    (VP (VBZ:[429..432] has)
+      (ADVP-TMP (RB:[433..441] recently))
+      (VP (VBN:[442..446] been)
+        (VP (VBN:[447..457] implicated)
+          (NP-1 (-NONE-:[457..457] *))
+          (PP (IN:[458..460] in)
+            (NP
+              (NP (DT:[461..464] the) (NN:[465..476] development))
+              (PP (IN:[477..479] of)
+                (NP
+                  (NP (JJ:[480..494] hepatocellular) (NN:[496..505] carcinoma))
+                  (NP (-LRB-:[506..507] -LRB-) (NN:[507..510] HCC)
+                      (-RRB-:[510..511] -RRB-)))))))))
+    (.:[511..512] .)))
+
+;sentence 5 Span:513..806
+;To explore the in vivo effects of mutated beta-catenin, HCC  specimens from
+;32 patients carrying one or several tumors were screened for  somatic
+;mutations in exon 3 of the beta-catenin gene, and the expression and 
+;subcellular localization of beta-catenin was studied by
+;immunohistochemistry.
+;[555..567]:gene-rna:"beta-catenin"
+;[569..572]:malignancy:"HCC"
+;[659..668]:variation-event:"mutations"
+;[672..678]:variation-location:"exon 3"
+;[686..698]:gene-rna:"beta-catenin"
+;[757..769]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (S
+      (S-PRP
+        (NP-SBJ (-NONE-:[513..513] *))
+        (VP (TO:[513..515] To)
+          (VP (VB:[516..523] explore)
+            (NP
+              (NP (DT:[524..527] the)
+                (ADJP (FW:[528..530] in) (FW:[531..535] vivo))
+                (NNS:[536..543] effects))
+              (PP (IN:[544..546] of)
+                (NP (VBN:[547..554] mutated) (NN:[555..567] beta-catenin)))))))
+      (,:[567..568] ,)
+      (NP-SBJ-3
+        (NP (NN:[569..572] HCC) (NNS:[574..583] specimens))
+        (PP (IN:[584..588] from)
+          (NP
+            (NP (CD:[589..591] 32) (NNS:[592..600] patients))
+            (VP (VBG:[601..609] carrying)
+              (NP
+                (NP (CD:[610..613] one)
+                  (NML-2 (-NONE-:[613..613] *P*)))
+                (CC:[614..616] or)
+                (NP (JJ:[617..624] several)
+                  (NML-2 (NNS:[625..631] tumors))))))))
+      (VP (VBD:[632..636] were)
+        (VP (VBN:[637..645] screened)
+          (NP-3 (-NONE-:[645..645] *))
+          (PP (IN:[646..649] for)
+            (NP (JJ:[651..658] somatic) (NNS:[659..668] mutations)))
+          (PP-LOC (IN:[669..671] in)
+            (NP
+              (NP (NN:[672..676] exon) (CD:[677..678] 3))
+              (PP (IN:[679..681] of)
+                (NP (DT:[682..685] the) (NN:[686..698] beta-catenin)
+                    (NN:[699..703] gene))))))))
+    (,:[703..704] ,) (CC:[705..708] and)
+    (S
+      (NP-SBJ-1
+        (NP
+          (NP (DT:[709..712] the) (NN:[713..723] expression))
+          (CC:[724..727] and)
+          (NP (JJ:[729..740] subcellular) (NN:[741..753] localization)))
+        (PP (IN:[754..756] of)
+          (NP (NN:[757..769] beta-catenin))))
+      (VP (VBD:[770..773] was)
+        (VP (VBN:[774..781] studied)
+          (NP-1 (-NONE-:[781..781] *))
+          (PP-MNR (IN:[782..784] by)
+            (NP (NN:[785..805] immunohistochemistry))))))
+    (.:[805..806] .)))
+
+;sentence 6 Span:808..921
+;Missense mutations or interstitial deletions in beta-catenin exon 3 were 
+;detected in 12 of 35 (34%) HCC samples.
+;[808..816]:variation-type:"Missense"
+;[817..826]:variation-event:"mutations"
+;[830..852]:variation-type:"interstitial deletions"
+;[856..868]:gene-rna:"beta-catenin"
+;[869..875]:variation-location:"exon 3"
+;[909..912]:malignancy:"HCC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (JJ:[808..816] Missense) (NNS:[817..826] mutations))
+        (CC:[827..829] or)
+        (NP (JJ:[830..842] interstitial) (NNS:[843..852] deletions)))
+      (PP-LOC (IN:[853..855] in)
+        (NP (NN:[856..868] beta-catenin)
+           (NN:[869..873] exon) (CD:[874..875] 3))))
+    (VP (VBD:[876..880] were)
+      (VP (VBN:[882..890] detected)
+        (NP-1 (-NONE-:[890..890] *))
+        (PP (IN:[891..893] in)
+          (NP
+            (NP (CD:[894..896] 12))
+            (PP (IN:[897..899] of)
+              (NP (CD:[900..902] 35)
+                (PRN (-LRB-:[903..904] -LRB-)
+                  (NP (CD:[904..906] 34) (NN:[906..907] %))
+                  (-RRB-:[907..908] -RRB-))
+                (NN:[909..912] HCC) (NNS:[913..920] samples)))))))
+    (.:[920..921] .)))
+
+;sentence 7 Span:922..1075
+;After immunostaining, most tumors  exhibited increased membranous and/or
+;cytoplasmic expression of beta-catenin  compared with adjacent nontumoral
+;liver.
+;[949..955]:malignancy:"tumors"
+;[1021..1033]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (PP-TMP (IN:[922..927] After)
+      (NP (NN:[928..942] immunostaining)))
+    (,:[942..943] ,)
+    (NP-SBJ (JJS:[944..948] most) (NNS:[949..955] tumors))
+    (VP (VBD:[957..966] exhibited)
+      (NP
+        (NP
+          (NP
+            (ADJP-2 (VBN:[967..976] increased))
+            (JJ:[977..987] membranous)
+            (NML-1 (-NONE-:[987..987] *P*)))
+          (CC:[988..994] and/or)
+          (NP
+            (ADJP-2 (-NONE-:[994..994] *P*))
+            (JJ:[995..1006] cytoplasmic)
+            (NML-1 (NN:[1007..1017] expression))))
+        (PP (IN:[1018..1020] of)
+          (NP (NN:[1021..1033] beta-catenin))))
+      (S-ADV
+        (NP-SBJ (-NONE-:[1033..1033] *))
+        (VP (VBN:[1035..1043] compared)
+          (PP (IN:[1044..1048] with)
+            (NP (JJ:[1049..1057] adjacent) (JJ:[1058..1068] nontumoral)
+                (NN:[1069..1074] liver))))))
+    (.:[1074..1075] .)))
+
+;sentence 8 Span:1076..1272
+;Strong nuclear accumulation of  beta-catenin was observed either focally or
+;uniformly in 15 of 35 (43%) tumor  specimens, but not in cirrhotic nodules or
+;dysplastic liver cells in adjacent  liver.
+;[1108..1120]:gene-protein:"beta-catenin"
+;[1180..1185]:malignancy:"tumor"
+;[1230..1252]:malignancy:"dysplastic liver cells"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (JJ:[1076..1082] Strong) (JJ:[1083..1090] nuclear)
+          (NN:[1091..1103] accumulation))
+      (PP (IN:[1104..1106] of)
+        (NP (NN:[1108..1120] beta-catenin))))
+    (VP (VBD:[1121..1124] was)
+      (VP
+        (VP (VBN:[1125..1133] observed)
+          (NP-3 (-NONE-:[1133..1133] *))
+          (ADVP=2 (CC:[1134..1140] either) (RB:[1141..1148] focally)
+                  (CC:[1149..1151] or) (RB:[1152..1161] uniformly))
+          (PP=1 (IN:[1162..1164] in)
+            (NP
+              (NP (CD:[1165..1167] 15))
+              (PP (IN:[1168..1170] of)
+                (NP (CD:[1171..1173] 35)
+                  (PRN (-LRB-:[1174..1175] -LRB-)
+                    (NP (CD:[1175..1177] 43) (NN:[1177..1178] %))
+                    (-RRB-:[1178..1179] -RRB-))
+                  (NN:[1180..1185] tumor) (NNS:[1187..1196] specimens))))))
+        (,:[1196..1197] ,) (CC:[1198..1201] but)
+        (VP (RB:[1202..1205] not)
+          (ADVP=2 (-NONE-:[1205..1205] *NOT*))
+          (PP=1 (IN:[1206..1208] in)
+            (NP
+              (NP
+                (NP (JJ:[1209..1218] cirrhotic) (NNS:[1219..1226] nodules))
+                (CC:[1227..1229] or)
+                (NP (JJ:[1230..1240] dysplastic) (NN:[1241..1246] liver)
+                    (NNS:[1247..1252] cells)))
+              (PP (IN:[1253..1255] in)
+                (NP (JJ:[1256..1264] adjacent) (NN:[1266..1271] liver))))))))
+    (.:[1271..1272] .)))
+
+;sentence 9 Span:1273..1415
+;Aberrant nuclear expression of beta-catenin was significantly associated 
+;with the presence of mutations in the beta-catenin gene (P < 0.005).
+;[1304..1316]:gene-protein:"beta-catenin"
+;[1368..1377]:variation-event:"mutations"
+;[1385..1397]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[1273..1281] Aberrant) (JJ:[1282..1289] nuclear)
+          (NN:[1290..1300] expression))
+      (PP (IN:[1301..1303] of)
+        (NP (NN:[1304..1316] beta-catenin))))
+    (VP (VBD:[1317..1320] was)
+      (ADVP (RB:[1321..1334] significantly))
+      (VP (VBN:[1335..1345] associated)
+        (NP-1 (-NONE-:[1345..1345] *))
+        (PP-CLR (IN:[1347..1351] with)
+          (NP
+            (NP (DT:[1352..1355] the) (NN:[1356..1364] presence))
+            (PP (IN:[1365..1367] of)
+              (NP (NNS:[1368..1377] mutations)))
+            (PP (IN:[1378..1380] in)
+              (NP (DT:[1381..1384] the) (NN:[1385..1397] beta-catenin)
+                  (NN:[1398..1402] gene)
+                (PRN (-LRB-:[1403..1404] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[1404..1405] P))
+                    (VP (SYM:[1406..1407] <)
+                      (NP (CD:[1408..1413] 0.005))))
+                  (-RRB-:[1413..1414] -RRB-))))))))
+    (.:[1414..1415] .)))
+
+;sentence 10 Span:1416..1613
+;Moreover,  nuclear beta-catenin staining correlated significantly with
+;increased Ki-67  proliferative index in tumor (P < 0.001) and seemed to be
+;associated with poor  outcome in patients with HCC.
+;[1435..1447]:gene-protein:"beta-catenin"
+;[1609..1612]:malignancy:"HCC"
+(SENT
+  (S
+    (ADVP (RB:[1416..1424] Moreover))
+    (,:[1424..1425] ,)
+    (NP-SBJ-1 (JJ:[1427..1434] nuclear) (NN:[1435..1447] beta-catenin)
+              (NN:[1448..1456] staining))
+    (VP
+      (VP (VBD:[1457..1467] correlated)
+        (ADVP (RB:[1468..1481] significantly))
+        (PP-CLR (IN:[1482..1486] with)
+          (NP (DT:[1487..1496] increased) (NN:[1497..1502] Ki-67)
+              (JJ:[1504..1517] proliferative) (NN:[1518..1523] index)))
+        (PP (IN:[1524..1526] in)
+          (NP (NN:[1527..1532] tumor)))
+        (PRN (-LRB-:[1533..1534] -LRB-)
+          (S
+            (NP-SBJ (NN:[1534..1535] P))
+            (VP (SYM:[1536..1537] <)
+              (NP (CD:[1538..1543] 0.001))))
+          (-RRB-:[1543..1544] -RRB-)))
+      (CC:[1545..1548] and)
+      (VP (VBD:[1549..1555] seemed)
+        (S
+          (NP-SBJ-1 (-NONE-:[1555..1555] *))
+          (VP (TO:[1556..1558] to)
+            (VP (VB:[1559..1561] be)
+              (VP (VBN:[1562..1572] associated)
+                (NP-1 (-NONE-:[1572..1572] *))
+                (PP-CLR (IN:[1573..1577] with)
+                  (NP (JJ:[1578..1582] poor) (NN:[1584..1591] outcome)))
+                (PP-LOC (IN:[1592..1594] in)
+                  (NP
+                    (NP (NNS:[1595..1603] patients))
+                    (PP (IN:[1604..1608] with)
+                      (NP (NN:[1609..1612] HCC)))))))))))
+    (.:[1612..1613] .)))
+
+;sentence 11 Span:1614..1842
+;In conclusion, our data indicate that activation  of the Wnt/beta-catenin
+;pathway in HCC results mainly from somatic mutations in  the beta-catenin
+;gene and may promote tumor progression by stimulating tumor  cell
+;proliferation.
+;[1671..1674]:gene-generic:"Wnt"
+;[1675..1687]:gene-generic:"beta-catenin"
+;[1699..1702]:malignancy:"HCC"
+;[1731..1740]:variation-event:"mutations"
+;[1749..1761]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (PP (IN:[1614..1616] In)
+      (NP (NN:[1617..1627] conclusion)))
+    (,:[1627..1628] ,)
+    (NP-SBJ (PRP$:[1629..1632] our) (NNS:[1633..1637] data))
+    (VP (VBP:[1638..1646] indicate)
+      (SBAR (IN:[1647..1651] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1652..1662] activation))
+            (PP (IN:[1664..1666] of)
+              (NP (DT:[1667..1670] the)
+                (NML (NN:[1671..1674] Wnt) (SYM:[1674..1675] /)
+                     (NN:[1675..1687] beta-catenin))
+                (NN:[1688..1695] pathway)))
+            (PP (IN:[1696..1698] in)
+              (NP (NN:[1699..1702] HCC))))
+          (VP
+            (VP (VBZ:[1703..1710] results)
+              (ADVP (RB:[1711..1717] mainly))
+              (PP (IN:[1718..1722] from)
+                (NP
+                  (NP (JJ:[1723..1730] somatic) (NNS:[1731..1740] mutations))
+                  (PP-LOC (IN:[1741..1743] in)
+                    (NP (DT:[1745..1748] the) (NN:[1749..1761] beta-catenin)
+                        (NN:[1762..1766] gene))))))
+            (CC:[1767..1770] and)
+            (VP (MD:[1771..1774] may)
+              (VP (VB:[1775..1782] promote)
+                (NP (NN:[1783..1788] tumor) (NN:[1789..1800] progression))
+                (PP-MNR (IN:[1801..1803] by)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[1803..1803] *))
+                    (VP (VBG:[1804..1815] stimulating)
+                      (NP
+                        (NML (NN:[1816..1821] tumor) (NN:[1823..1827] cell))
+                        (NN:[1828..1841] proliferation)))))))))))
+    (.:[1841..1842] .)))
+
+;section 12 Span:1846..1891
+;PMID: 10487827 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1846..1850] PMID) (::[1850..1851] :) (CD:[1852..1860] 10487827)
+        (NN:[1861..1862] -LSB-) (NNP:[1862..1868] PubMed) (::[1869..1870] -)
+        (NN:[1871..1878] indexed) (IN:[1879..1882] for)
+        (NNP:[1883..1891] MEDLINE-RSB-)))

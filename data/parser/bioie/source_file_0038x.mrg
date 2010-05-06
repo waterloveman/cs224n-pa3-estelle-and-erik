@@ -1,0 +1,429 @@
+;PMID: 2197591
+;source_file_804.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..181] = [t:36..181]
+;2)section:[e:185..237] = [t:185..237]
+;3)section:[e:241..316] = [t:241..316]
+;4)sentence:[e:320..598] = [t:320..598]
+;5)sentence:[e:599..667] = [t:599..667]
+;6)sentence:[e:668..987] = [t:668..987]
+;7)sentence:[e:988..1185] = [t:988..1185]
+;8)sentence:[e:1186..1292] = [t:1186..1292]
+;9)sentence:[e:1293..1579] = [t:1293..1579]
+;10)section:[e:1583..1627] = [t:1583..1627]
+
+;section 0 Span:0..31
+;Oncogene  1990 Jul;5(7):1037-43
+(SEC
+  (FRAG (IN:[0..8] Oncogene) (CD:[10..14] 1990) (JJ:[15..19] Jul;)
+        (CD:[19..20] 5) (NN:[20..21] -LRB-) (NN:[21..22] 7) (NN:[22..23] -RRB-)
+        (NN:[23..24] :) (CD:[24..27] 103) (CD:[27..31] 7-43)))
+
+;sentence 1 Span:36..181
+;Detection of ras gene mutations in human lung cancers by single-strand 
+;conformation polymorphism analysis of polymerase chain reaction products.
+;[49..52]:gene-rna:"ras"
+;[77..89]:malignancy:"lung cancers"
+;[146..156]:gene-protein:"polymerase"
+(SENT
+  (NP-HLN
+    (NP (NN:[36..45] Detection))
+    (PP (IN:[46..48] of)
+      (NP
+        (NP (NN:[49..52] ras) (NN:[53..57] gene) (NNS:[58..67] mutations))
+        (PP-LOC (IN:[68..70] in)
+          (NP (JJ:[71..76] human)
+             (NN:[77..81] lung) (NNS:[82..89] cancers)))))
+    (PP (IN:[90..92] by)
+      (NP
+        (NP
+          (NML (JJ:[93..106] single-strand) (NN:[108..120] conformation)
+               (NN:[121..133] polymorphism))
+          (NN:[134..142] analysis))
+        (PP (IN:[143..145] of)
+          (NP
+            (NML (NN:[146..156] polymerase) (NN:[157..162] chain)
+                 (NN:[163..171] reaction))
+            (NNS:[172..180] products)))))
+    (.:[180..181] .)))
+
+;section 2 Span:185..237
+;Suzuki Y, Orita M, Shiraishi M, Hayashi K, Sekiya T.
+(SEC
+  (FRAG (NNP:[185..191] Suzuki) (NNP:[192..193] Y) (,:[193..194] ,)
+        (NNP:[195..200] Orita) (NNP:[201..203] M,) (NNP:[204..213] Shiraishi)
+        (NNP:[214..216] M,) (NNP:[217..224] Hayashi) (NNP:[225..227] K,)
+        (NNP:[228..234] Sekiya) (NNP:[235..237] T.)))
+
+;section 3 Span:241..316
+;Oncogene Division, National Cancer Center Research Institute, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[241..249] Oncogene) (NNP:[250..258] Division) (,:[258..259] ,)
+        (NNP:[260..268] National) (NNP:[269..275] Cancer)
+        (NNP:[276..282] Center) (NNP:[283..291] Research)
+        (NNP:[292..301] Institute) (,:[301..302] ,) (NNP:[303..308] Tokyo)
+        (,:[308..309] ,) (NNP:[310..315] Japan) (.:[315..316] .)))
+
+;sentence 4 Span:320..598
+;A simple, sensitive method of DNA analysis of nucleotide substitutions,
+;namely,  single-strand conformation polymorphism analysis of polymerase chain
+;reaction  products (PCR-SSCP analysis), was used for detection of mutated ras
+;genes in  surgical specimens of human lung cancer.
+;[366..390]:variation-type:"nucleotide substitutions"
+;[453..463]:gene-protein:"polymerase"
+;[544..547]:gene-rna:"ras"
+;[586..597]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[320..321] A) (JJ:[322..328] simple) (,:[328..329] ,)
+            (JJ:[330..339] sensitive) (NN:[340..346] method))
+        (PP (IN:[347..349] of)
+          (NP
+            (NP (NN:[350..353] DNA) (NN:[354..362] analysis))
+            (PP (IN:[363..365] of)
+              (NP (NN:[366..376] nucleotide) (NNS:[377..390] substitutions))))))
+      (,:[390..391] ,)
+      (NP
+        (ADVP (RB:[392..398] namely))
+        (,:[398..399] ,)
+        (NP
+          (NP
+            (NML (JJ:[401..414] single-strand) (NN:[415..427] conformation)
+                 (NN:[428..440] polymorphism))
+            (NN:[441..449] analysis))
+          (PP (IN:[450..452] of)
+            (NP
+              (NML (NN:[453..463] polymerase) (NN:[464..469] chain)
+                   (NN:[470..478] reaction))
+              (NNS:[480..488] products))))
+        (NP (-LRB-:[489..490] -LRB-)
+          (NML (NN:[490..493] PCR) (HYPH:[493..494] -) (NN:[494..498] SSCP))
+          (NN:[499..507] analysis) (-RRB-:[507..508] -RRB-))))
+    (,:[508..509] ,)
+    (VP (VBD:[510..513] was)
+      (VP (VBN:[514..518] used)
+        (NP-1 (-NONE-:[518..518] *))
+        (PP (IN:[519..522] for)
+          (NP
+            (NP (NN:[523..532] detection))
+            (PP (IN:[533..535] of)
+              (NP (JJ:[536..543] mutated) (NN:[544..547] ras)
+                  (NNS:[548..553] genes)))
+            (PP-LOC (IN:[554..556] in)
+              (NP
+                (NP (JJ:[558..566] surgical) (NNS:[567..576] specimens))
+                (PP (IN:[577..579] of)
+                  (NP (JJ:[580..585] human)
+                     (NN:[586..590] lung) (NN:[591..597] cancer)))))))))
+    (.:[597..598] .)))
+
+;sentence 5 Span:599..667
+;Of a total of 129 tumors analysed, 22  contained a mutated ras gene.
+;[617..623]:malignancy:"tumors"
+;[658..661]:gene-rna:"ras"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[599..601] Of)
+      (NP
+        (NP (DT:[602..603] a) (NN:[604..609] total))
+        (PP (IN:[610..612] of)
+          (NP
+            (NP (CD:[613..616] 129) (NNS:[617..623] tumors))
+            (VP (VBN:[624..632] analysed)
+              (NP (-NONE-:[632..632] *)))))))
+    (,:[632..633] ,)
+    (NP-SBJ
+      (NP (CD:[634..636] 22))
+      (PP-1 (-NONE-:[636..636] *T*)))
+    (VP (VBD:[638..647] contained)
+      (NP (DT:[648..649] a) (JJ:[650..657] mutated) (NN:[658..661] ras)
+          (NN:[662..666] gene)))
+    (.:[666..667] .)))
+
+;sentence 6 Span:668..987
+;Of the 66 adenocarcinomas analysed, 14 contained  an activated c-Ki-ras2 gene
+;(the mutations in codon 12 in 6, in codon 13 in 4,  in codon 18 in one, and
+;in codon 61 in 3), one contained a c-Ha-ras1 gene with a  mutation in codon
+;61 and 3 contained N-ras genes with mutations (in codon 12 in  one and in
+;codon 61 in 2).
+;[678..693]:malignancy:"adenocarcinomas"
+;[731..740]:gene-rna:"c-Ki-ras2"
+;[751..760]:variation-event:"mutations"
+;[764..772]:variation-location:"codon 12"
+;[782..790]:variation-location:"codon 13"
+;[801..809]:variation-location:"codon 18"
+;[825..833]:variation-location:"codon 61"
+;[857..866]:gene-rna:"c-Ha-ras1"
+;[880..888]:variation-event:"mutation"
+;[892..900]:variation-location:"codon 61"
+;[917..922]:gene-rna:"N-ras"
+;[934..943]:variation-event:"mutations"
+;[948..956]:variation-location:"codon 12"
+;[972..980]:variation-location:"codon 61"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[668..670] Of)
+      (NP
+        (NP (DT:[671..674] the) (CD:[675..677] 66)
+            (NNS:[678..693] adenocarcinomas))
+        (VP (VBN:[694..702] analysed)
+          (NP (-NONE-:[702..702] *)))))
+    (,:[702..703] ,)
+    (S
+      (NP-SBJ
+        (NP (CD:[704..706] 14))
+        (PP-1 (-NONE-:[706..706] *T*)))
+      (VP (VBD:[707..716] contained)
+        (NP (DT:[718..720] an) (JJ:[721..730] activated)
+            (NN:[731..740] c-Ki-ras2) (NN:[741..745] gene)
+          (PRN (-LRB-:[746..747] -LRB-)
+            (FRAG
+              (FRAG
+                (NP
+                  (NP (DT:[747..750] the) (NNS:[751..760] mutations))
+                  (PP-LOC (IN:[761..763] in)
+                    (NP (NN:[764..769] codon) (CD:[770..772] 12))))
+                (PP-LOC (IN:[773..775] in)
+                  (NP (CD:[776..777] 6))))
+              (,:[777..778] ,)
+              (FRAG
+                (PP-LOC (IN:[779..781] in)
+                  (NP (NN:[782..787] codon) (CD:[788..790] 13)))
+                (PP-LOC (IN:[791..793] in)
+                  (NP (CD:[794..795] 4))))
+              (,:[795..796] ,)
+              (FRAG
+                (PP-LOC (IN:[798..800] in)
+                  (NP (NN:[801..806] codon) (CD:[807..809] 18)))
+                (PP-LOC (IN:[810..812] in)
+                  (NP (CD:[813..816] one))))
+              (,:[816..817] ,) (CC:[818..821] and)
+              (FRAG
+                (PP-LOC (IN:[822..824] in)
+                  (NP (NN:[825..830] codon) (CD:[831..833] 61)))
+                (PP-LOC (IN:[834..836] in)
+                  (NP (CD:[837..838] 3)))))
+            (-RRB-:[838..839] -RRB-)))))
+    (,:[839..840] ,)
+    (S
+      (NP-SBJ
+        (NP (CD:[841..844] one))
+        (PP-1 (-NONE-:[844..844] *T*)))
+      (VP (VBD:[845..854] contained)
+        (NP
+          (NP (DT:[855..856] a) (NN:[857..866] c-Ha-ras1) (NN:[867..871] gene))
+          (PP (IN:[872..876] with)
+            (NP
+              (NP (DT:[877..878] a) (NN:[880..888] mutation))
+              (PP-LOC (IN:[889..891] in)
+                (NP (NN:[892..897] codon) (CD:[898..900] 61))))))))
+    (CC:[901..904] and)
+    (S
+      (NP-SBJ
+        (NP (CD:[905..906] 3))
+        (PP-1 (-NONE-:[906..906] *T*)))
+      (VP (VBD:[907..916] contained)
+        (NP
+          (NP (NN:[917..922] N-ras) (NNS:[923..928] genes))
+          (PP (IN:[929..933] with)
+            (NP (NNS:[934..943] mutations)
+              (PRN (-LRB-:[944..945] -LRB-)
+                (FRAG
+                  (FRAG
+                    (PP-LOC (IN:[945..947] in)
+                      (NP (NN:[948..953] codon) (CD:[954..956] 12)))
+                    (PP-LOC (IN:[957..959] in)
+                      (NP (CD:[961..964] one))))
+                  (CC:[965..968] and)
+                  (FRAG
+                    (PP-LOC (IN:[969..971] in)
+                      (NP (NN:[972..977] codon) (CD:[978..980] 61)))
+                    (PP-LOC (IN:[981..983] in)
+                      (NP (CD:[984..985] 2)))))
+                (-RRB-:[985..986] -RRB-)))))))
+    (.:[986..987] .)))
+
+;sentence 7 Span:988..1185
+;Mutated rats genes were also found in 2 of 36  squamous cell carcinomas
+;(c-Ha-ras1 genes with mutations in codon 61) and 2 of  14 large cell
+;carcinomas (c-Ki-ras2 genes with mutations in codon 12).
+;[996..1000]:gene-rna:"rats"
+;[1035..1059]:malignancy:"squamous cell carcinomas"
+;[1061..1070]:gene-rna:"c-Ha-ras1"
+;[1082..1091]:variation-event:"mutations"
+;[1095..1103]:variation-location:"codon 61"
+;[1118..1139]:malignancy:"large cell carcinomas"
+;[1141..1150]:gene-rna:"c-Ki-ras2"
+;[1162..1171]:variation-event:"mutations"
+;[1175..1184]:variation-location:"codon 12)"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[988..995] Mutated) (NNS:[996..1000] rats)
+              (NNS:[1001..1006] genes))
+    (VP (VBD:[1007..1011] were)
+      (ADVP (RB:[1012..1016] also))
+      (VP (VBN:[1017..1022] found)
+        (NP-1 (-NONE-:[1022..1022] *))
+        (PP-LOC (IN:[1023..1025] in)
+          (NP
+            (NP
+              (NP (CD:[1026..1027] 2))
+              (PP (IN:[1028..1030] of)
+                (NP (CD:[1031..1033] 36)
+                  
+                  (NML (JJ:[1035..1043] squamous) (NN:[1044..1048] cell))
+                  (NNS:[1049..1059] carcinomas)))
+              (PRN (-LRB-:[1060..1061] -LRB-)
+                (NP
+                  (NP (NN:[1061..1070] c-Ha-ras1) (NNS:[1071..1076] genes))
+                  (PP (IN:[1077..1081] with)
+                    (NP
+                      (NP (NNS:[1082..1091] mutations))
+                      (PP-LOC (IN:[1092..1094] in)
+                        (NP (NN:[1095..1100] codon) (CD:[1101..1103] 61))))))
+                (-RRB-:[1103..1104] -RRB-)))
+            (CC:[1105..1108] and)
+            (NP
+              (NP (CD:[1109..1110] 2))
+              (PP (IN:[1111..1113] of)
+                (NP (CD:[1115..1117] 14)
+                  
+                  (NML (JJ:[1118..1123] large) (NN:[1124..1128] cell))
+                  (NNS:[1129..1139] carcinomas)))
+              (PRN (-LRB-:[1140..1141] -LRB-)
+                (NP
+                  (NP (NN:[1141..1150] c-Ki-ras2) (NNS:[1151..1156] genes))
+                  (PP (IN:[1157..1161] with)
+                    (NP
+                      (NP (NNS:[1162..1171] mutations))
+                      (PP-LOC (IN:[1172..1174] in)
+                        (NP (NN:[1175..1180] codon) (CD:[1181..1183] 12))))))
+                (-RRB-:[1183..1184] -RRB-)))))))
+    (.:[1184..1185] .)))
+
+;sentence 8 Span:1186..1292
+;No  mutation of the ras gene was detected in 8 small cell carcinomas and 5 
+;adenosquamous cell carcinomas.
+;[1206..1209]:gene-rna:"ras"
+;[1233..1254]:malignancy:"small cell carcinomas"
+;[1262..1291]:malignancy:"adenosquamous cell carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1186..1188] No) (NN:[1190..1198] mutation))
+      (PP (IN:[1199..1201] of)
+        (NP (DT:[1202..1205] the) (NN:[1206..1209] ras) (NN:[1210..1214] gene))))
+    (VP (VBD:[1215..1218] was)
+      (VP (VBN:[1219..1227] detected)
+        (NP-1 (-NONE-:[1227..1227] *))
+        (PP-LOC (IN:[1228..1230] in)
+          (NP
+            (NP (CD:[1231..1232] 8)
+              
+              (NML (JJ:[1233..1238] small) (NN:[1239..1243] cell))
+              (NNS:[1244..1254] carcinomas))
+            (CC:[1255..1258] and)
+            (NP (CD:[1259..1260] 5)
+              
+              (NML (JJ:[1262..1275] adenosquamous) (NN:[1276..1280] cell))
+              (NNS:[1281..1291] carcinomas))))))
+    (.:[1291..1292] .)))
+
+;sentence 9 Span:1293..1579
+;These results indicate that activation of the ras  gene was not frequent
+;(17%) in human lung cancers, that among these lung cancers  mutation of the
+;ras gene was most frequent in adenocarcinomas (27%) and 73% of  the point
+;mutations were in the c-Ki-ras2 gene in codon 12, 13, 18 or 61.
+;[1339..1342]:gene-rna:"ras"
+;[1381..1393]:malignancy:"lung cancers"
+;[1406..1424]:malignancy:"these lung cancers"
+;[1442..1445]:gene-rna:"ras"
+;[1472..1487]:malignancy:"adenocarcinomas"
+;[1510..1525]:variation-type:"point mutations"
+;[1538..1547]:gene-rna:"c-Ki-ras2"
+;[1556..1564]:variation-location:"codon 12"
+;[1556..1561]...[1576..1578]:variation-location:"codon"..."61"
+;[1556..1561]...[1570..1572]:variation-location:"codon"..."18"
+;[1556..1561]...[1566..1568]:variation-location:"codon"..."13"
+(SENT
+  (S
+    (NP-SBJ (DT:[1293..1298] These) (NNS:[1299..1306] results))
+    (VP (VBP:[1307..1315] indicate)
+      (SBAR
+        (SBAR (IN:[1316..1320] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1321..1331] activation))
+              (PP (IN:[1332..1334] of)
+                (NP (DT:[1335..1338] the) (NN:[1339..1342] ras)
+                    (NN:[1344..1348] gene))))
+            (VP (VBD:[1349..1352] was)
+              (ADJP-PRD (RB:[1353..1356] not) (JJ:[1357..1365] frequent)
+                (PRN (-LRB-:[1366..1367] -LRB-)
+                  (NP (CD:[1367..1369] 17) (NN:[1369..1370] %))
+                  (-RRB-:[1370..1371] -RRB-)))
+              (PP-LOC (IN:[1372..1374] in)
+                (NP (JJ:[1375..1380] human)
+                   (NN:[1381..1385] lung) (NNS:[1386..1393] cancers))))))
+        (,:[1393..1394] ,)
+        (SBAR (IN:[1395..1399] that)
+          (S
+            (S
+              (PP (IN:[1400..1405] among)
+                (NP (DT:[1406..1411] these) (NN:[1412..1416] lung)
+                    (NNS:[1417..1424] cancers)))
+              (NP-SBJ
+                (NP (NN:[1426..1434] mutation))
+                (PP (IN:[1435..1437] of)
+                  (NP (DT:[1438..1441] the) (NN:[1442..1445] ras)
+                      (NN:[1446..1450] gene))))
+              (VP (VBD:[1451..1454] was)
+                (ADJP-PRD (RBS:[1455..1459] most) (JJ:[1460..1468] frequent))
+                (PP-LOC (IN:[1469..1471] in)
+                  (NP (NNS:[1472..1487] adenocarcinomas)
+                    (PRN (-LRB-:[1488..1489] -LRB-)
+                      (NP (CD:[1489..1491] 27) (NN:[1491..1492] %))
+                      (-RRB-:[1492..1493] -RRB-))))))
+            (CC:[1494..1497] and)
+            (S
+              (NP-SBJ
+                (NP (CD:[1498..1500] 73) (NN:[1500..1501] %))
+                (PP (IN:[1502..1504] of)
+                  (NP (DT:[1506..1509] the)
+                     (NN:[1510..1515] point) (NNS:[1516..1525] mutations))))
+              (VP (VBD:[1526..1530] were)
+                (PP-LOC-PRD (IN:[1531..1533] in)
+                  (NP
+                    (NP (DT:[1534..1537] the) (NN:[1538..1547] c-Ki-ras2)
+                        (NN:[1548..1552] gene))
+                    (PP-LOC (IN:[1553..1555] in)
+                      (NP
+                        (NP
+                          (NML-1 (NN:[1556..1561] codon))
+                          (CD:[1562..1564] 12))
+                        (,:[1564..1565] ,)
+                        (NP
+                          (NML-1 (-NONE-:[1565..1565] *P*))
+                          (CD:[1566..1568] 13))
+                        (,:[1568..1569] ,)
+                        (NP
+                          (NML-1 (-NONE-:[1569..1569] *P*))
+                          (CD:[1570..1572] 18))
+                        (CC:[1573..1575] or)
+                        (NP
+                          (NML-1 (-NONE-:[1575..1575] *P*))
+                          (CD:[1576..1578] 61))))))))))))
+    (.:[1578..1579] .)))
+
+;section 10 Span:1583..1627
+;PMID: 2197591 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1583..1587] PMID) (::[1587..1588] :) (CD:[1589..1596] 2197591)
+        (NN:[1597..1598] -LSB-) (NNP:[1598..1604] PubMed) (::[1605..1606] -)
+        (NN:[1607..1614] indexed) (IN:[1615..1618] for)
+        (NNP:[1619..1627] MEDLINE-RSB-)))

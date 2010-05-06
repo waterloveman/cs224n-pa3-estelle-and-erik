@@ -1,0 +1,433 @@
+;PMID: 2696850
+;source_file_648.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..117] = [t:45..117]
+;2)section:[e:121..227] = [t:121..227]
+;3)section:[e:231..319] = [t:231..319]
+;4)sentence:[e:323..473] = [t:323..473]
+;5)sentence:[e:474..701] = [t:474..701]
+;6)sentence:[e:702..883] = [t:702..883]
+;7)sentence:[e:884..1045] = [t:884..1045]
+;8)sentence:[e:1046..1301] = [t:1046..1301]
+;9)sentence:[e:1302..1570] = [t:1302..1570]
+;10)section:[e:1574..1643] = [t:1574..1643]
+;11)section:[e:1647..1691] = [t:1647..1691]
+
+;section 0 Span:0..39
+;J Steroid Biochem. 1989;34(1-6):427-30.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Steroid) (NNP:[10..17] Biochem)
+        (.:[17..18] .) (CD:[19..23] 1989) (VBD:[23..25] ;3) (CD:[25..26] 4)
+        (NN:[26..27] -LRB-) (NN:[27..30] 1-6) (NN:[30..31] -RRB-) (::[31..32] :)
+        (CD:[32..34] 42) (CD:[34..38] 7-30) (.:[38..39] .)))
+
+;sentence 1 Span:45..117
+;Aromatase inhibition by R 76713: experimental and clinical pharmacology.
+;[45..54]:cyp450:"Aromatase"
+;[69..76]:substance:"R 76713"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[45..54] Aromatase) (NN:[55..65] inhibition))
+      (PP (IN:[66..68] by)
+        (NP (NN:[69..70] R) (CD:[71..76] 76713))))
+    (::[76..77] :)
+    (NP
+      (NP (JJ:[78..90] experimental)
+        (NML-1 (-NONE-:[90..90] *P*)))
+      (CC:[91..94] and)
+      (NP (JJ:[95..103] clinical)
+        (NML-1 (NN:[104..116] pharmacology))))
+    (.:[116..117] .)))
+
+;section 2 Span:121..227
+;Wouters W, De Coster R, Tuman RW, Bowden CR, Bruynseels J, Vanderpas H, Van
+;Rooy  P, Amery WK, Janssen PA.
+(SEC
+  (FRAG (NNP:[121..128] Wouters) (NNP:[129..130] W) (,:[130..131] ,)
+        (NNP:[132..134] De) (NNP:[135..141] Coster) (NNP:[142..143] R)
+        (,:[143..144] ,) (NNP:[145..150] Tuman) (NNP:[151..153] RW)
+        (,:[153..154] ,) (NNP:[155..161] Bowden) (NNP:[162..164] CR)
+        (,:[164..165] ,) (NNP:[166..176] Bruynseels) (NNP:[177..179] J,)
+        (NNP:[180..189] Vanderpas) (NNP:[190..192] H,) (NNP:[193..196] Van)
+        (NNP:[197..201] Rooy) (NNP:[203..205] P,) (NNP:[206..211] Amery)
+        (NNP:[212..214] WK) (,:[214..215] ,) (NNP:[216..223] Janssen)
+        (NNP:[224..227] PA.)))
+
+;section 3 Span:231..319
+;Department of Endocrinology and Oncology, Janssen Research Foundation,
+;Beerse,  Belgium.
+(SEC
+  (FRAG (NNP:[231..241] Department) (IN:[242..244] of)
+        (NNP:[245..258] Endocrinology) (CC:[259..262] and)
+        (NNP:[263..271] Oncology) (,:[271..272] ,) (NNP:[273..280] Janssen)
+        (NNP:[281..289] Research) (NNP:[290..300] Foundation) (,:[300..301] ,)
+        (NNP:[302..308] Beerse) (,:[308..309] ,) (NNP:[311..318] Belgium)
+        (.:[318..319] .)))
+
+;sentence 4 Span:323..473
+;R 76713 is a new non-steroidal compound which inhibits aromatase in vitro and
+;in  vivo with a potency of at least 1000-fold that of aminoglutethimide.
+;[323..330]:substance:"R 76713"
+;[340..362]:substance:"non-steroidal compound"
+;[378..387]:cyp450:"aromatase"
+;[428..446]:quantitative-value:"at least 1000-fold"
+;[455..472]:substance:"aminoglutethimide"
+(SENT
+  (S
+    (NP-SBJ (NN:[323..324] R) (CD:[325..330] 76713))
+    (VP (VBZ:[331..333] is)
+      (NP-PRD
+        (NP (DT:[334..335] a) (JJ:[336..339] new)
+          
+          (ADJP (AFX:[340..343] non) (HYPH:[343..344] -)
+                (JJ:[344..353] steroidal))
+          (NN:[354..362] compound))
+        (SBAR
+          (WHNP-1 (WDT:[363..368] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[368..368] *T*))
+            (VP (VBZ:[369..377] inhibits)
+              (NP (NN:[378..387] aromatase))
+              (ADVP
+                (ADVP (FW:[388..390] in) (FW:[391..396] vitro))
+                (CC:[397..400] and)
+                (ADVP (FW:[401..403] in) (FW:[405..409] vivo)))
+              (PP (IN:[410..414] with)
+                (NP
+                  (NP (DT:[415..416] a) (NN:[417..424] potency))
+                  (PP (IN:[425..427] of)
+                    (NP
+                      (NP
+                        (QP (IN:[428..430] at) (JJS:[431..436] least)
+                            (CD:[437..441] 1000) (HYPH:[441..442] -)
+                            (JJ:[442..446] fold))
+                        (DT:[447..451] that))
+                      (PP (IN:[452..454] of)
+                        (NP (NN:[455..472] aminoglutethimide))))))))))))
+    (.:[472..473] .)))
+
+;sentence 5 Span:474..701
+;In male  cynomolgus monkeys peripheral conversion of labeled androstenedione
+;to estrone  is decreased by 85%, 4-5 h after a single intravenous dose of
+;0.003 mg/kg of R  76713, without altering steroid metabolic clearance rates.
+;[535..550]:substance:"androstenedione"
+;[554..561]:substance:"estrone"
+;[579..582]:quantitative-value:"85%"
+;[584..587]:quantitative-value:"4-5"
+;[588..589]:quantitative-units:"h"
+;[625..630]:quantitative-value:"0.003"
+;[631..636]:quantitative-units:"mg/kg"
+;[640..648]:substance:"R  76713"
+;[667..674]:substance:"steroid"
+(SENT
+  (S
+    (PP-LOC (IN:[474..476] In)
+      (NP (JJ:[477..481] male) (NN:[483..493] cynomolgus)
+          (NNS:[494..501] monkeys)))
+    (NP-SBJ-1
+      (NP (JJ:[502..512] peripheral) (NN:[513..523] conversion))
+      (PP (IN:[524..526] of)
+        (NP (JJ:[527..534] labeled) (NN:[535..550] androstenedione)))
+      (PP (TO:[551..553] to)
+        (NP (NN:[554..561] estrone))))
+    (VP (VBZ:[563..565] is)
+      (VP (VBN:[566..575] decreased)
+        (NP-1 (-NONE-:[575..575] *))
+        (PP-EXT (IN:[576..578] by)
+          (NP (CD:[579..581] 85) (NN:[581..582] %)))
+        (,:[582..583] ,)
+        (PP-TMP
+          (NP-ADV
+            (QP (CD:[584..585] 4) (HYPH:[585..586] -) (CD:[586..587] 5))
+            (NN:[588..589] h))
+          (IN:[590..595] after)
+          (NP
+            (NP (DT:[596..597] a) (JJ:[598..604] single)
+                (JJ:[605..616] intravenous) (NN:[617..621] dose))
+            (PP (IN:[622..624] of)
+              (NP
+                (NP (CD:[625..630] 0.003) (NN:[631..633] mg))
+                (PP (SYM:[633..634] /)
+                  (NP (NN:[634..636] kg)))))
+            (PP (IN:[637..639] of)
+              (NP (NN:[640..641] R) (CD:[643..648] 76713)))))
+        (,:[648..649] ,)
+        (PP (IN:[650..657] without)
+          (S-NOM
+            (NP-SBJ (-NONE-:[657..657] *))
+            (VP (VBG:[658..666] altering)
+              (NP (JJ:[667..674] steroid) (JJ:[675..684] metabolic)
+                  (NN:[685..694] clearance) (NNS:[695..700] rates)))))))
+    (.:[700..701] .)))
+
+;sentence 6 Span:702..883
+;In rats fed a  sodium-depleted diet for 3 weeks, plasma levels of aldosterone
+;and plasma renin  activity remain unchanged 2 h after a single oral dose of
+;up to 20 mg/kg of R  76713.
+;[717..723]:substance:"sodium"
+;[742..743]:quantitative-value:"3"
+;[744..749]:quantitative-units:"weeks"
+;[768..779]:substance:"aldosterone"
+;[791..796]:substance:"renin"
+;[824..825]:quantitative-value:"2"
+;[826..827]:quantitative-units:"h"
+;[856..864]:quantitative-value:"up to 20"
+;[865..870]:quantitative-units:"mg/kg"
+;[874..882]:substance:"R  76713"
+(SENT
+  (S
+    (PP-LOC (IN:[702..704] In)
+      (NP
+        (NP (NNS:[705..709] rats))
+        (VP (VBN:[710..713] fed)
+          (NP (-NONE-:[713..713] *))
+          (NP (DT:[714..715] a)
+            (ADJP (NN:[717..723] sodium) (HYPH:[723..724] -)
+                  (VBN:[724..732] depleted))
+            (NN:[733..737] diet))
+          (PP-TMP (IN:[738..741] for)
+            (NP (CD:[742..743] 3) (NNS:[744..749] weeks))))))
+    (,:[749..750] ,)
+    (NP-SBJ
+      (NP
+        (NP (NN:[751..757] plasma) (NNS:[758..764] levels))
+        (PP (IN:[765..767] of)
+          (NP (NN:[768..779] aldosterone))))
+      (CC:[780..783] and)
+      (NP (NN:[784..790] plasma) (NN:[791..796] renin) (NN:[798..806] activity)))
+    (VP (VBP:[807..813] remain)
+      (ADJP-PRD (JJ:[814..823] unchanged))
+      (PP-TMP
+        (NP (CD:[824..825] 2) (NN:[826..827] h))
+        (IN:[828..833] after)
+        (NP
+          (NP (DT:[834..835] a) (JJ:[836..842] single) (JJ:[843..847] oral)
+              (NN:[848..852] dose))
+          (PP (IN:[853..855] of)
+            (NP
+              (NP
+                (QP (IN:[856..858] up) (TO:[859..861] to) (CD:[862..864] 20))
+                (NN:[865..867] mg))
+              (PP (SYM:[867..868] /)
+                (NP (NN:[868..870] kg)))
+              (PP (IN:[871..873] of)
+                (NP (NN:[874..875] R) (CD:[877..882] 76713))))))))
+    (.:[882..883] .)))
+
+;sentence 7 Span:884..1045
+;This confirms previous data on the selectivity of R 76713 for aromatase 
+;inhibition as compared to inhibition of other enzymes involved in steroid 
+;biosynthesis.
+;[934..941]:substance:"R 76713"
+;[946..955]:cyp450:"aromatase"
+;[1003..1010]:substance:"enzymes"
+;[1023..1030]:substance:"steroid"
+(SENT
+  (S
+    (NP-SBJ (DT:[884..888] This))
+    (VP (VBZ:[889..897] confirms)
+      (NP
+        (NP (JJ:[898..906] previous) (NNS:[907..911] data))
+        (PP (IN:[912..914] on)
+          (NP
+            (NP (DT:[915..918] the) (NN:[919..930] selectivity))
+            (PP (IN:[931..933] of)
+              (NP
+                (NP (NN:[934..935] R) (CD:[936..941] 76713))
+                (PP (IN:[942..945] for)
+                  (NP
+                    (NP (NN:[946..955] aromatase) (NN:[957..967] inhibition))
+                    (PP (IN:[968..970] as)
+                      (S-NOM
+                        (NP-SBJ-1 (-NONE-:[970..970] *))
+                        (VP (VBN:[971..979] compared)
+                          (NP-1 (-NONE-:[979..979] *))
+                          (PP-CLR (TO:[980..982] to)
+                            (NP
+                              (NP (NN:[983..993] inhibition))
+                              (PP (IN:[994..996] of)
+                                (NP
+                                  (NP (JJ:[997..1002] other)
+                                      (NNS:[1003..1010] enzymes))
+                                  (VP (VBN:[1011..1019] involved)
+                                    (NP-SBJ (-NONE-:[1019..1019] *))
+                                    (PP-CLR (IN:[1020..1022] in)
+                                      (NP (JJ:[1023..1030] steroid)
+                                          (NN:[1032..1044] biosynthesis)))))))))))))))))))
+    (.:[1044..1045] .)))
+
+;sentence 8 Span:1046..1301
+;In male volunteers, a single oral dose of 5 or 10 mg of R 76713  lowers
+;median plasma estradiol levels from 70 pM to the detection limit of the 
+;assay (30 pM) 4 and 8 h after intake, whereas no important changes are
+;detected  after placebo administration.
+;[1088..1089]:quantitative-value:"5"
+;[1093..1095]:quantitative-value:"10"
+;[1096..1098]:quantitative-units:"mg"
+;[1102..1109]:substance:"R 76713"
+;[1132..1141]:substance:"estradiol"
+;[1154..1156]:quantitative-value:"70"
+;[1157..1159]:quantitative-units:"pM"
+;[1198..1200]:quantitative-value:"30"
+;[1201..1203]:quantitative-units:"pM"
+;[1205..1206]:quantitative-value:"4"
+;[1211..1212]:quantitative-value:"8"
+;[1213..1214]:quantitative-units:"h"
+;[1278..1285]:substance:"placebo"
+(SENT
+  (S
+    (PP-LOC (IN:[1046..1048] In)
+      (NP (JJ:[1049..1053] male) (NNS:[1054..1064] volunteers)))
+    (,:[1064..1065] ,)
+    (NP-SBJ
+      (NP (DT:[1066..1067] a) (JJ:[1068..1074] single) (JJ:[1075..1079] oral)
+          (NN:[1080..1084] dose))
+      (PP (IN:[1085..1087] of)
+        (NP
+          (NP
+            (NP (CD:[1088..1089] 5)
+              (NML-2 (-NONE-:[1089..1089] *P*)))
+            (CC:[1090..1092] or)
+            (NP (CD:[1093..1095] 10)
+              (NML-2 (NN:[1096..1098] mg))))
+          (PP (IN:[1099..1101] of)
+            (NP (NN:[1102..1103] R) (CD:[1104..1109] 76713))))))
+    (VP (VBZ:[1111..1117] lowers)
+      (NP (JJ:[1118..1124] median) (NN:[1125..1131] plasma)
+          (NN:[1132..1141] estradiol) (NNS:[1142..1148] levels))
+      (PP (IN:[1149..1153] from)
+        (NP (CD:[1154..1156] 70) (NN:[1157..1159] pM)))
+      (PP (TO:[1160..1162] to)
+        (NP
+          (NP (DT:[1163..1166] the) (NN:[1167..1176] detection)
+              (NN:[1177..1182] limit))
+          (PP (IN:[1183..1185] of)
+            (NP (DT:[1186..1189] the) (NN:[1191..1196] assay)))
+          (PRN (-LRB-:[1197..1198] -LRB-)
+            (NP (CD:[1198..1200] 30) (NN:[1201..1203] pM))
+            (-RRB-:[1203..1204] -RRB-))))
+      (PP-TMP
+        (NP
+          (NP (CD:[1205..1206] 4)
+            (NML-1 (-NONE-:[1206..1206] *P*)))
+          (CC:[1207..1210] and)
+          (NP (CD:[1211..1212] 8)
+            (NML-1 (NN:[1213..1214] h))))
+        (IN:[1215..1220] after)
+        (NP (NN:[1221..1227] intake)))
+      (,:[1227..1228] ,)
+      (SBAR-ADV (IN:[1229..1236] whereas)
+        (S
+          (NP-SBJ-3 (DT:[1237..1239] no) (JJ:[1240..1249] important)
+                    (NNS:[1250..1257] changes))
+          (VP (VBP:[1258..1261] are)
+            (VP (VBN:[1262..1270] detected)
+              (NP-3 (-NONE-:[1270..1270] *))
+              (PP-TMP (IN:[1272..1277] after)
+                (NP (NN:[1278..1285] placebo) (NN:[1286..1300] administration))))))))
+    (.:[1300..1301] .)))
+
+;sentence 9 Span:1302..1570
+;In 15 premenopausal female volunteers receiving a  single oral dose of 20 mg
+;of R 76713, mean plasma estradiol levels decrease from  415 pM (before) to
+;179, 149 and 185 pM respectively 4, 8 and 24 h after intake  whereas they
+;remain above 380 pM after placebo (n = 7).
+;[1373..1375]:quantitative-value:"20"
+;[1376..1378]:quantitative-units:"mg"
+;[1382..1389]:substance:"R 76713"
+;[1403..1412]:substance:"estradiol"
+;[1435..1438]:quantitative-value:"415"
+;[1439..1441]:quantitative-units:"pM"
+;[1454..1457]:quantitative-value:"179"
+;[1459..1462]:quantitative-value:"149"
+;[1467..1470]:quantitative-value:"185"
+;[1471..1473]:quantitative-units:"pM"
+;[1487..1488]:quantitative-value:"4"
+;[1490..1491]:quantitative-value:"8"
+;[1496..1498]:quantitative-value:"24"
+;[1499..1500]:quantitative-units:"h"
+;[1535..1544]:quantitative-value:"above 380"
+;[1545..1547]:quantitative-units:"pM"
+;[1554..1561]:substance:"placebo"
+(SENT
+  (S
+    (PP-LOC (IN:[1302..1304] In)
+      (NP
+        (NP (CD:[1305..1307] 15) (JJ:[1308..1321] premenopausal)
+            (JJ:[1322..1328] female) (NNS:[1329..1339] volunteers))
+        (VP (VBG:[1340..1349] receiving)
+          (NP
+            (NP (DT:[1350..1351] a) (JJ:[1353..1359] single)
+                (JJ:[1360..1364] oral) (NN:[1365..1369] dose))
+            (PP (IN:[1370..1372] of)
+              (NP
+                (NP (CD:[1373..1375] 20) (NN:[1376..1378] mg))
+                (PP (IN:[1379..1381] of)
+                  (NP (NN:[1382..1383] R) (CD:[1384..1389] 76713)))))))))
+    (,:[1389..1390] ,)
+    (NP-SBJ (JJ:[1391..1395] mean) (NN:[1396..1402] plasma)
+            (NN:[1403..1412] estradiol) (NNS:[1413..1419] levels))
+    (VP (VBP:[1420..1428] decrease)
+      (PP (IN:[1429..1433] from)
+        (NP (CD:[1435..1438] 415) (NN:[1439..1441] pM)
+          (PRN (-LRB-:[1442..1443] -LRB-)
+            (PP-TMP (IN:[1443..1449] before))
+            (-RRB-:[1449..1450] -RRB-))))
+      (PP (TO:[1451..1453] to)
+        (NP
+          (NP (CD:[1454..1457] 179)
+            (NML-2 (-NONE-:[1457..1457] *P*)))
+          (,:[1457..1458] ,)
+          (NP (CD:[1459..1462] 149)
+            (NML-2 (-NONE-:[1462..1462] *P*)))
+          (CC:[1463..1466] and)
+          (NP (CD:[1467..1470] 185)
+            (NML-2 (NN:[1471..1473] pM)))))
+      (ADVP (RB:[1474..1486] respectively))
+      (PP-TMP
+        (NP
+          (NP (CD:[1487..1488] 4)
+            (NML-1 (-NONE-:[1488..1488] *P*)))
+          (,:[1488..1489] ,)
+          (NP (CD:[1490..1491] 8)
+            (NML-1 (-NONE-:[1491..1491] *P*)))
+          (CC:[1492..1495] and)
+          (NP (CD:[1496..1498] 24)
+            (NML-1 (NN:[1499..1500] h))))
+        (IN:[1501..1506] after)
+        (NP (NN:[1507..1513] intake)))
+      (SBAR-ADV (IN:[1515..1522] whereas)
+        (S
+          (NP-SBJ (PRP:[1523..1527] they))
+          (VP (VBP:[1528..1534] remain)
+            (PP-PRD (IN:[1535..1540] above)
+              (NP (CD:[1541..1544] 380) (NN:[1545..1547] pM)))
+            (PP (IN:[1548..1553] after)
+              (NP (NN:[1554..1561] placebo)))
+            (PRN (-LRB-:[1562..1563] -LRB-)
+              (S
+                (NP-SBJ (NN:[1563..1564] n))
+                (VP (SYM:[1565..1566] =)
+                  (NP (CD:[1567..1568] 7))))
+              (-RRB-:[1568..1569] -RRB-))))))
+    (.:[1569..1570] .)))
+
+;section 10 Span:1574..1643
+;Publication Types:      Clinical Trial      Controlled Clinical Trial
+(SEC
+  (FRAG (NNP:[1574..1585] Publication) (NNP:[1586..1591] Types)
+        (::[1591..1592] :) (NNP:[1598..1606] Clinical) (NNP:[1607..1612] Trial)
+        (NNP:[1618..1628] Controlled) (NNP:[1629..1637] Clinical)
+        (NNP:[1638..1643] Trial)))
+
+;section 11 Span:1647..1691
+;PMID: 2696850 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1647..1651] PMID) (::[1651..1652] :) (CD:[1653..1660] 2696850)
+        (NN:[1661..1662] -LSB-) (NNP:[1662..1668] PubMed) (::[1669..1670] -)
+        (NN:[1671..1678] indexed) (IN:[1679..1682] for)
+        (NNP:[1683..1691] MEDLINE-RSB-)))

@@ -1,0 +1,276 @@
+;PMID: 8669886
+;source_file_2839.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..128] = [t:52..128]
+;2)section:[e:132..217] = [t:132..217]
+;3)section:[e:221..276] = [t:221..276]
+;4)sentence:[e:280..519] = [t:280..519]
+;5)sentence:[e:520..638] = [t:520..638]
+;6)sentence:[e:639..900] = [t:639..900]
+;7)sentence:[e:901..1048] = [t:901..1048]
+;8)sentence:[e:1049..1268] = [t:1049..1268]
+;9)section:[e:1272..1316] = [t:1272..1316]
+
+;section 0 Span:0..46
+;Anticancer Res.  1995 Nov-Dec;15(6B):2899-905.
+(SEC
+  (FRAG (NNP:[0..10] Anticancer) (NNP:[11..14] Res) (.:[14..15] .)
+        (CD:[17..21] 1995) (NNP:[22..29] Nov-Dec) (::[29..30] ;)
+        (CD:[30..32] 15) (-LRB-:[32..33] -LRB-) (NN:[33..35] 6B)
+        (-RRB-:[35..36] -RRB-) (::[36..37] :) (CD:[37..45] 2899-905)
+        (.:[45..46] .)))
+
+;sentence 1 Span:52..128
+;N-myc protein expression in human breast carcinoma: prognostic implications.
+;[52..57]:gene-protein:"N-myc"
+;[86..102]:malignancy-type:"breast carcinoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[52..57] N-myc) (NN:[58..65] protein) (NN:[66..76] expression))
+      (PP (IN:[77..79] in)
+        (NP (JJ:[80..85] human)
+           (NN:[86..92] breast) (NN:[93..102] carcinoma))))
+    (::[102..103] :)
+    (NP (JJ:[104..114] prognostic) (NNS:[115..127] implications))
+    (.:[127..128] .)))
+
+;section 2 Span:132..217
+;Mizukami Y, Nonomura A, Takizawa T, Noguchi M, Michigishi T, Nakamura S, 
+;Ishizaki T.
+(SEC
+  (FRAG (NNP:[132..140] Mizukami) (NNP:[141..142] Y) (,:[142..143] ,)
+        (NNP:[144..152] Nonomura) (NNP:[153..154] A) (,:[154..155] ,)
+        (NNP:[156..164] Takizawa) (NNP:[165..166] T) (,:[166..167] ,)
+        (NNP:[168..175] Noguchi) (NNP:[176..177] M) (,:[177..178] ,)
+        (NNP:[179..189] Michigishi) (NNP:[190..191] T) (,:[191..192] ,)
+        (NNP:[193..201] Nakamura) (NNP:[202..203] S) (,:[203..204] ,)
+        (NNP:[206..214] Ishizaki) (NNP:[215..216] T) (VBD:[216..217] .)))
+
+;section 3 Span:221..276
+;Pathology Section, Kanazawa University Hospital, Japan.
+(SEC
+  (FRAG (NNP:[221..230] Pathology) (NNP:[231..238] Section) (,:[238..239] ,)
+        (NNP:[240..248] Kanazawa) (NNP:[249..259] University)
+        (NNP:[260..268] Hospital) (,:[268..269] ,) (NNP:[270..275] Japan)
+        (.:[275..276] .)))
+
+;sentence 4 Span:280..519
+;The overexpression of N-myc gene and its protein products has been thought to
+;be  limited to cases of neuroblastoma, retinoblastoma and small cell lung
+;carcinoma,  but there is increasing evidence of its wider distribution in
+;human tumors.
+;[302..307]:gene-rna:"N-myc"
+;[317..337]:gene-protein:"its protein products"
+;[382..395]:malignancy-type:"neuroblastoma"
+;[397..411]:malignancy-type:"retinoblastoma"
+;[416..441]:malignancy-type:"small cell lung carcinoma"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (DT:[280..283] The) (NN:[284..298] overexpression))
+        (PP (IN:[299..301] of)
+          (NP
+            (NP (NN:[302..307] N-myc) (NN:[308..312] gene))
+            (CC:[313..316] and)
+            (NP (PRP$:[317..320] its) (NN:[321..328] protein)
+                (NNS:[329..337] products)))))
+      (VP (VBZ:[338..341] has)
+        (VP (VBN:[342..346] been)
+          (VP (VBN:[347..354] thought)
+            (S
+              (NP-SBJ-1 (-NONE-:[354..354] *))
+              (VP (TO:[355..357] to)
+                (VP (VB:[358..360] be)
+                  (VP (VBN:[362..369] limited)
+                    (NP-1 (-NONE-:[369..369] *))
+                    (PP-CLR (TO:[370..372] to)
+                      (NP
+                        (NP (NNS:[373..378] cases))
+                        (PP (IN:[379..381] of)
+                          (NP
+                            (NP (NN:[382..395] neuroblastoma))
+                            (,:[395..396] ,)
+                            (NP (NN:[397..411] retinoblastoma))
+                            (CC:[412..415] and)
+                            (NP
+                              (NML (JJ:[416..421] small) (NN:[422..426] cell))
+                              (NN:[427..431] lung) (NN:[432..441] carcinoma))))))))))))))
+    (,:[441..442] ,) (CC:[444..447] but)
+    (S
+      (NP-SBJ (EX:[448..453] there))
+      (VP (VBZ:[454..456] is)
+        (NP-PRD
+          (NP (VBG:[457..467] increasing) (NN:[468..476] evidence))
+          (PP (IN:[477..479] of)
+            (NP (PRP$:[480..483] its) (JJR:[484..489] wider)
+                (NN:[490..502] distribution))))
+        (PP (IN:[503..505] in)
+          (NP (JJ:[506..511] human) (NNS:[512..518] tumors)))))
+    (.:[518..519] .)))
+
+;sentence 5 Span:520..638
+;This  study showed that the protein of N-myc gene is associated in normal,
+;benign and  malignant human breast tissues.
+;[544..555]:gene-protein:"the protein"
+;[559..564]:gene-rna:"N-myc"
+(SENT
+  (S
+    (NP-SBJ (DT:[520..524] This) (NN:[526..531] study))
+    (VP (VBD:[532..538] showed)
+      (SBAR (IN:[539..543] that)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[544..547] the) (NN:[548..555] protein))
+            (PP (IN:[556..558] of)
+              (NP (NN:[559..564] N-myc) (NN:[565..569] gene))))
+          (VP (VBZ:[570..572] is)
+            (VP (VBN:[573..583] associated)
+              (NP-1 (-NONE-:[583..583] *))
+              (PP-LOC (IN:[584..586] in)
+                (NP
+                  (NP (JJ:[587..593] normal)
+                    (NML-2 (-NONE-:[593..593] *P*)))
+                  (,:[593..594] ,)
+                  (NP (JJ:[595..601] benign)
+                    (NML-2 (-NONE-:[601..601] *P*)))
+                  (CC:[602..605] and)
+                  (NP (JJ:[607..616] malignant)
+                    (NML-2 (JJ:[617..622] human) (NN:[623..629] breast)
+                           (NNS:[630..637] tissues))))))))))
+    (.:[637..638] .)))
+
+;sentence 6 Span:639..900
+;We found that N-myc oncoprotein is overexpressed  in most breast carcinomas
+;and that N-myc overexpression is significantly  correlated with clinical
+;stage, and histological grading of the tumors, and,  more importantly with
+;the clinical outcome of the patients.
+;[653..658]:gene-protein:"N-myc"
+;[697..714]:malignancy-type:"breast carcinomas"
+;[724..729]:gene-protein:"N-myc"
+(SENT
+  (S
+    (NP-SBJ (PRP:[639..641] We))
+    (VP (VBD:[642..647] found)
+      (SBAR
+        (SBAR (IN:[648..652] that)
+          (S
+            (NP-SBJ-1 (NN:[653..658] N-myc) (NN:[659..670] oncoprotein))
+            (VP (VBZ:[671..673] is)
+              (VP (VBN:[674..687] overexpressed)
+                (NP-1 (-NONE-:[687..687] *))
+                (PP-LOC (IN:[689..691] in)
+                  (NP (JJS:[692..696] most)
+                     (NN:[697..703] breast) (NNS:[704..714] carcinomas)))))))
+        (CC:[715..718] and)
+        (SBAR (IN:[719..723] that)
+          (S
+            (NP-SBJ-2 (NN:[724..729] N-myc) (NN:[730..744] overexpression))
+            (VP (VBZ:[745..747] is)
+              (ADVP (RB:[748..761] significantly))
+              (VP (VBN:[763..773] correlated)
+                (NP-2 (-NONE-:[773..773] *))
+                (PP-CLR
+                  (PP (IN:[774..778] with)
+                    (NP
+                      (NP
+                        (NP (JJ:[779..787] clinical) (NN:[788..793] stage))
+                        (,:[793..794] ,) (CC:[795..798] and)
+                        (NP (JJ:[799..811] histological) (NN:[812..819] grading)))
+                      (PP (IN:[820..822] of)
+                        (NP (DT:[823..826] the) (NNS:[827..833] tumors)))))
+                  (,:[833..834] ,) (CC:[835..838] and) (,:[838..839] ,)
+                  (PP
+                    (ADVP (RBR:[841..845] more) (RB:[846..857] importantly))
+                    (IN:[858..862] with)
+                    (NP
+                      (NP (DT:[863..866] the) (JJ:[867..875] clinical)
+                          (NN:[876..883] outcome))
+                      (PP (IN:[884..886] of)
+                        (NP (DT:[887..890] the) (NNS:[891..899] patients))))))))))))
+    (.:[899..900] .)))
+
+;sentence 7 Span:901..1048
+;Analysis of DNA,  mRNA and protein levels suggested that the high N-myc
+;expression in breast  cancer occurs without concomitant gene amplification.
+;[967..972]:gene-generic:"N-myc"
+;[987..1001]:malignancy-type:"breast  cancer"
+;[1034..1047]:variation-type:"amplification"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[901..909] Analysis))
+      (PP (IN:[910..912] of)
+        (NP
+          (NP (NN:[913..916] DNA))
+          (,:[916..917] ,)
+          (NP (NN:[919..923] mRNA))
+          (CC:[924..927] and)
+          (NP (NN:[928..935] protein) (NNS:[936..942] levels)))))
+    (VP (VBD:[943..952] suggested)
+      (SBAR (IN:[953..957] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[958..961] the) (JJ:[962..966] high) (NN:[967..972] N-myc)
+                (NN:[973..983] expression))
+            (PP (IN:[984..986] in)
+              (NP (NN:[987..993] breast) (NN:[995..1001] cancer))))
+          (VP (VBZ:[1002..1008] occurs)
+            (PP (IN:[1009..1016] without)
+              (NP (JJ:[1017..1028] concomitant) (NN:[1029..1033] gene)
+                  (NN:[1034..1047] amplification)))))))
+    (.:[1047..1048] .)))
+
+;sentence 8 Span:1049..1268
+;The finding of a direct  inverse correlation between N-myc overexpression and
+;the prognosis of patients  with breast carcinoma suggests that N-myc
+;expression may be useful as a  prognostic factor in human breast cancer.
+;[1102..1107]:gene-generic:"N-myc"
+;[1159..1175]:malignancy-type:"breast carcinoma"
+;[1190..1195]:gene-generic:"N-myc"
+;[1254..1267]:malignancy-type:"breast cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1049..1052] The) (NN:[1053..1060] finding))
+      (PP (IN:[1061..1063] of)
+        (NP
+          (NP (DT:[1064..1065] a) (JJ:[1066..1072] direct)
+              (JJ:[1074..1081] inverse) (NN:[1082..1093] correlation))
+          (PP (IN:[1094..1101] between)
+            (NP
+              (NP (NN:[1102..1107] N-myc) (NN:[1108..1122] overexpression))
+              (CC:[1123..1126] and)
+              (NP
+                (NP (DT:[1127..1130] the) (NN:[1131..1140] prognosis))
+                (PP (IN:[1141..1143] of)
+                  (NP
+                    (NP (NNS:[1144..1152] patients))
+                    (PP (IN:[1154..1158] with)
+                      (NP (NN:[1159..1165] breast) (NN:[1166..1175] carcinoma)))))))))))
+    (VP (VBZ:[1176..1184] suggests)
+      (SBAR (IN:[1185..1189] that)
+        (S
+          (NP-SBJ (NN:[1190..1195] N-myc) (NN:[1196..1206] expression))
+          (VP (MD:[1207..1210] may)
+            (VP (VB:[1211..1213] be)
+              (ADJP-PRD (JJ:[1214..1220] useful))
+              (PP (IN:[1221..1223] as)
+                (NP (DT:[1224..1225] a) (JJ:[1227..1237] prognostic)
+                    (NN:[1238..1244] factor)))
+              (PP (IN:[1245..1247] in)
+                (NP (JJ:[1248..1253] human)
+                   (NN:[1254..1260] breast) (NN:[1261..1267] cancer))))))))
+    (.:[1267..1268] .)))
+
+;section 9 Span:1272..1316
+;PMID: 8669886 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1272..1276] PMID) (::[1276..1277] :) (CD:[1278..1285] 8669886)
+        (NN:[1286..1287] -LSB-) (NNP:[1287..1293] PubMed) (::[1294..1295] -)
+        (NN:[1296..1303] indexed) (IN:[1304..1307] for)
+        (NNP:[1308..1315] MEDLINE) (-RRB-:[1315..1316] -RSB-)))

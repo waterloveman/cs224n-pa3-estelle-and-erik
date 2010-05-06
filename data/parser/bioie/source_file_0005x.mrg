@@ -1,0 +1,350 @@
+;PMID: 2685611
+;source_file_3005.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..111] = [t:44..111]
+;2)section:[e:115..164] = [t:115..164]
+;3)section:[e:168..217] = [t:168..217]
+;4)sentence:[e:221..437] = [t:221..437]
+;5)sentence:[e:438..599] = [t:438..599]
+;6)sentence:[e:600..759] = [t:600..759]
+;7)sentence:[e:760..849] = [t:760..849]
+;8)sentence:[e:850..1074] = [t:850..1074]
+;9)sentence:[e:1075..1226] = [t:1075..1226]
+;10)sentence:[e:1227..1314] = [t:1227..1314]
+;11)sentence:[e:1316..1534] = [t:1316..1534]
+;12)section:[e:1538..1582] = [t:1538..1582]
+
+;section 0 Span:0..38
+;Nature.  1989 Nov 30;342(6249):548-50.
+(SEC
+  (FRAG (NNP:[0..6] Nature) (.:[6..7] .) (CD:[9..13] 1989) (NNP:[14..17] Nov)
+        (CD:[18..20] 30) (::[20..21] ;) (CD:[21..24] 342) (-LRB-:[24..25] -LRB-)
+        (NN:[25..29] 6249) (-RRB-:[29..30] -RRB-) (::[30..31] :)
+        (CD:[31..34] 548) (::[34..35] -) (CD:[35..37] 50) (.:[37..38] .)))
+
+;sentence 1 Span:44..111
+;Induction of glia-derived nexin after lesion of a peripheral nerve.
+;[57..75]:gene-protein:"glia-derived nexin"
+(SENT
+  (NP-HLN
+    (NP (NN:[44..53] Induction))
+    (PP (IN:[54..56] of)
+      (NP
+        (ADJP (NN:[57..61] glia) (HYPH:[61..62] -) (VBN:[62..69] derived))
+        (NN:[70..75] nexin)))
+    (PP (IN:[76..81] after)
+      (NP
+        (NP (NN:[82..88] lesion))
+        (PP (IN:[89..91] of)
+          (NP (DT:[92..93] a) (JJ:[94..104] peripheral) (NN:[105..110] nerve)))))
+    (.:[110..111] .)))
+
+;section 2 Span:115..164
+;Meier R, Spreyer P, Ortmann R, Harel A, Monard D.
+(SEC
+  (FRAG (NNP:[115..120] Meier) (NNP:[121..122] R) (,:[122..123] ,)
+        (NNP:[124..131] Spreyer) (NNP:[132..133] P) (,:[133..134] ,)
+        (NNP:[135..142] Ortmann) (NNP:[143..144] R) (,:[144..145] ,)
+        (NNP:[146..151] Harel) (NNP:[152..153] A) (,:[153..154] ,)
+        (NNP:[155..161] Monard) (NNP:[162..163] D) (.:[163..164] .)))
+
+;section 3 Span:168..217
+;Friedrich Miescher-Institute, Basel, Switzerland.
+(SEC
+  (FRAG (JJ:[168..177] Friedrich) (NNP:[178..186] Miescher) (HYPH:[186..187] -)
+        (NNP:[187..196] Institute) (,:[196..197] ,) (NNP:[198..203] Basel)
+        (,:[203..204] ,) (NNP:[205..216] Switzerland) (.:[216..217] .)))
+
+;sentence 4 Span:221..437
+;Glia-derived nexin (GDN), also known as protease nexin I, is a serine
+;protease  inhibitor of deduced relative molecular mass 41,700, identified in
+;conditioned  media of glioma cells by its neurite-promoting activity.
+;[221..239]:gene-protein:"Glia-derived nexin"
+;[241..244]:gene-protein:"GDN"
+;[261..277]:gene-protein:"protease nexin I"
+;[284..299]:gene-protein:"serine protease"
+;[390..396]:malignancy-type:"glioma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP
+          (ADJP (NN:[221..225] Glia) (HYPH:[225..226] -)
+                (VBN:[226..233] derived))
+          (NN:[234..239] nexin))
+        (NP (-LRB-:[240..241] -LRB-) (NN:[241..244] GDN)
+            (-RRB-:[244..245] -RRB-)))
+      (,:[245..246] ,)
+      (VP
+        (ADVP (RB:[247..251] also))
+        (VBN:[252..257] known)
+        (NP (-NONE-:[257..257] *))
+        (PP (IN:[258..260] as)
+          (NP (NN:[261..269] protease) (NN:[270..275] nexin) (CD:[276..277] I)))))
+    (,:[277..278] ,)
+    (VP (VBZ:[279..281] is)
+      (NP-PRD
+        (NP
+          (NP (DT:[282..283] a)
+             (NN:[284..290] serine) (NN:[291..299] protease)
+            (NN:[301..310] inhibitor))
+          (PP (IN:[311..313] of)
+            (NP
+              (NML (VBN:[314..321] deduced) (JJ:[322..330] relative)
+                   (JJ:[331..340] molecular) (NN:[341..345] mass))
+              (CD:[346..352] 41,700))))
+        (,:[352..353] ,)
+        (VP (VBN:[354..364] identified)
+          (NP (-NONE-:[364..364] *))
+          (PP-LOC (IN:[365..367] in)
+            (NP
+              (NP (VBN:[368..379] conditioned) (NNS:[381..386] media))
+              (PP (IN:[387..389] of)
+                (NP (NN:[390..396] glioma) (NNS:[397..402] cells)))))
+          (PP-MNR (IN:[403..405] by)
+            (NP (PRP$:[406..409] its)
+              (ADJP (NN:[410..417] neurite) (HYPH:[417..418] -)
+                    (VBG:[418..427] promoting))
+              (NN:[428..436] activity))))))
+    (.:[436..437] .)))
+
+;sentence 5 Span:438..599
+;GDN can promote neurite  outgrowth in vitro from neuroblastoma cells,
+;sympathetic neurons and hippocampal  neurons (L. Farmer et al., manuscript in
+;preparation).
+;[438..441]:gene-protein:"GDN"
+;[487..500]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (NN:[438..441] GDN))
+    (VP (MD:[442..445] can)
+      (VP (VB:[446..453] promote)
+        (NP (NN:[454..461] neurite) (NN:[463..472] outgrowth))
+        (ADVP (FW:[473..475] in) (FW:[476..481] vitro))
+        (PP (IN:[482..486] from)
+          (NP
+            (NP (NN:[487..500] neuroblastoma) (NNS:[501..506] cells))
+            (,:[506..507] ,)
+            (NP (JJ:[508..519] sympathetic) (NNS:[520..527] neurons))
+            (CC:[528..531] and)
+            (NP (JJ:[532..543] hippocampal) (NNS:[545..552] neurons))))
+        (PRN (-LRB-:[553..554] -LRB-)
+          (FRAG
+            (FRAG (NNP:[554..556] L.) (NNP:[557..563] Farmer) (FW:[564..566] et)
+                  (FW:[567..570] al.))
+            (,:[570..571] ,)
+            (S
+              (NP-SBJ (NN:[572..582] manuscript))
+              (PP-PRD (IN:[583..585] in)
+                (NP (NN:[586..597] preparation)))))
+          (-RRB-:[597..598] -RRB-))))
+    (.:[598..599] .)))
+
+;sentence 6 Span:600..759
+;In vivo, GDN is  constitutively expressed in all parts of the olfactory
+;system, where axonal  regeneration and neurogenesis occur continuously
+;throughout life.
+;[609..612]:gene-protein:"GDN"
+(SENT
+  (S
+    (ADVP (FW:[600..602] In) (FW:[603..607] vivo))
+    (,:[607..608] ,)
+    (NP-SBJ-2 (NN:[609..612] GDN))
+    (VP (VBZ:[613..615] is)
+      (ADVP (RB:[617..631] constitutively))
+      (VP (VBN:[632..641] expressed)
+        (NP-2 (-NONE-:[641..641] *))
+        (PP-LOC (IN:[642..644] in)
+          (NP
+            (NP (DT:[645..648] all) (NNS:[649..654] parts))
+            (PP (IN:[655..657] of)
+              (NP
+                (NP (DT:[658..661] the) (JJ:[662..671] olfactory)
+                    (NN:[672..678] system))
+                (,:[678..679] ,)
+                (SBAR
+                  (WHADVP-1 (WRB:[680..685] where))
+                  (S
+                    (NP-SBJ
+                      (NP (JJ:[686..692] axonal) (NN:[694..706] regeneration))
+                      (CC:[707..710] and)
+                      (NP (NN:[711..723] neurogenesis)))
+                    (VP (VBP:[724..729] occur)
+                      (ADVP (RB:[730..742] continuously))
+                      (PP (IN:[743..753] throughout)
+                        (NP (NN:[754..758] life)))
+                      (ADVP-1 (-NONE-:[758..758] *T*)))))))))))
+    (.:[758..759] .)))
+
+;sentence 7 Span:760..849
+;This  observation indicates that GDN could be important for axonal
+;regeneration in  vivo.
+;[793..796]:gene-protein:"GDN"
+(SENT
+  (S
+    (NP-SBJ (DT:[760..764] This) (NN:[766..777] observation))
+    (VP (VBZ:[778..787] indicates)
+      (SBAR (IN:[788..792] that)
+        (S
+          (NP-SBJ (NN:[793..796] GDN))
+          (VP (MD:[797..802] could)
+            (VP (VB:[803..805] be)
+              (ADJP-PRD (JJ:[806..815] important)
+                (PP (IN:[816..819] for)
+                  (NP
+                    (NP (JJ:[820..826] axonal) (NN:[827..839] regeneration))
+                    (ADJP (FW:[840..842] in) (FW:[844..848] vivo))))))))))
+    (.:[848..849] .)))
+
+;sentence 8 Span:850..1074
+;To investigate this possibility, we have taken advantage of the fact that 
+;damage to nerves in the peripheral nervous system leads to their
+;regeneration,  whereas in the central nervous system no such regeneration can
+;occur.
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[850..850] *))
+      (VP (TO:[850..852] To)
+        (VP (VB:[853..864] investigate)
+          (NP (DT:[865..869] this) (NN:[870..881] possibility)))))
+    (,:[881..882] ,)
+    (NP-SBJ (PRP:[883..885] we))
+    (VP (VBP:[886..890] have)
+      (VP (VBN:[891..896] taken)
+        (NP
+          (NP (NN:[897..906] advantage))
+          (PP (IN:[907..909] of)
+            (NP (DT:[910..913] the) (NN:[914..918] fact)
+              (SBAR (IN:[919..923] that)
+                (S
+                  (NP-SBJ
+                    (NP (NN:[925..931] damage))
+                    (PP (TO:[932..934] to)
+                      (NP
+                        (NP (NNS:[935..941] nerves))
+                        (PP-LOC (IN:[942..944] in)
+                          (NP (DT:[945..948] the) (JJ:[949..959] peripheral)
+                              (JJ:[960..967] nervous) (NN:[968..974] system))))))
+                  (VP (VBZ:[975..980] leads)
+                    (PP-CLR (TO:[981..983] to)
+                      (NP (PRP$:[984..989] their) (NN:[990..1002] regeneration)))
+                    (,:[1002..1003] ,)
+                    (SBAR-ADV (IN:[1005..1012] whereas)
+                      (S
+                        (PP-LOC (IN:[1013..1015] in)
+                          (NP (DT:[1016..1019] the) (JJ:[1020..1027] central)
+                              (JJ:[1028..1035] nervous) (NN:[1036..1042] system)))
+                        (NP-SBJ (DT:[1043..1045] no) (JJ:[1046..1050] such)
+                                (NN:[1051..1063] regeneration))
+                        (VP (MD:[1064..1067] can)
+                          (VP (VB:[1068..1073] occur)))))))))))))
+    (.:[1073..1074] .)))
+
+;sentence 9 Span:1075..1226
+;Here we  report that after lesion of the rat sciatic nerve there is a large
+;transient  increase in the amount of GDN messenger RNA and of released GDN.
+;[1188..1191]:gene-rna:"GDN"
+;[1222..1225]:gene-protein:"GDN"
+(SENT
+  (S
+    (ADVP (RB:[1075..1079] Here))
+    (NP-SBJ (PRP:[1080..1082] we))
+    (VP (VBP:[1084..1090] report)
+      (SBAR (IN:[1091..1095] that)
+        (S
+          (PP-TMP (IN:[1096..1101] after)
+            (NP
+              (NP (NN:[1102..1108] lesion))
+              (PP (IN:[1109..1111] of)
+                (NP (DT:[1112..1115] the) (NN:[1116..1119] rat)
+                    (JJ:[1120..1127] sciatic) (NN:[1128..1133] nerve)))))
+          (NP-SBJ (EX:[1134..1139] there))
+          (VP (VBZ:[1140..1142] is)
+            (NP-PRD
+              (NP (DT:[1143..1144] a) (JJ:[1145..1150] large)
+                  (JJ:[1151..1160] transient) (NN:[1162..1170] increase))
+              (PP (IN:[1171..1173] in)
+                (NP
+                  (NP (DT:[1174..1177] the) (NN:[1178..1184] amount))
+                  (PP
+                    (PP (IN:[1185..1187] of)
+                      (NP (NN:[1188..1191] GDN) (NN:[1192..1201] messenger)
+                          (NN:[1202..1205] RNA)))
+                    (CC:[1206..1209] and)
+                    (PP (IN:[1210..1212] of)
+                      (NP (VBN:[1213..1221] released) (NN:[1222..1225] GDN)))))))))))
+    (.:[1225..1226] .)))
+
+;sentence 10 Span:1227..1314
+;The cells  showing GDN immunoreactivity are mainly localized distal to the
+;lesion site.
+;[1246..1249]:gene-protein:"GDN"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1227..1230] The) (NNS:[1231..1236] cells))
+      (VP (VBG:[1238..1245] showing)
+        (NP (NN:[1246..1249] GDN) (NN:[1250..1266] immunoreactivity))))
+    (VP (VBP:[1267..1270] are)
+      (ADVP (RB:[1271..1277] mainly))
+      (VP (VBN:[1278..1287] localized)
+        (NP-1 (-NONE-:[1287..1287] *))
+        (ADJP-LOC (JJ:[1288..1294] distal)
+          (PP (TO:[1295..1297] to)
+            (NP (DT:[1298..1301] the) (NN:[1302..1308] lesion)
+                (NN:[1309..1313] site))))))
+    (.:[1313..1314] .)))
+
+;sentence 11 Span:1316..1534
+;These results further support the suggestion that GDN is important for axonal
+; regeneration in vivo, and indicate that protease inhibitors could have a
+;role in  Wallerian degeneration and peripheral nerve regeneration.
+;[1366..1369]:gene-protein:"GDN"
+;[1435..1443]:gene-protein:"protease"
+(SENT
+  (S
+    (NP-SBJ (DT:[1316..1321] These) (NNS:[1322..1329] results))
+    (VP
+      (VP
+        (ADVP (RBR:[1330..1337] further))
+        (VBP:[1338..1345] support)
+        (NP (DT:[1346..1349] the) (NN:[1350..1360] suggestion)
+          (SBAR (IN:[1361..1365] that)
+            (S
+              (NP-SBJ (NN:[1366..1369] GDN))
+              (VP (VBZ:[1370..1372] is)
+                (ADJP-PRD (JJ:[1373..1382] important)
+                  (PP (IN:[1383..1386] for)
+                    (NP
+                      (NP (JJ:[1387..1393] axonal)
+                          (NN:[1395..1407] regeneration))
+                      (ADJP (FW:[1408..1410] in) (FW:[1411..1415] vivo))))))))))
+      (,:[1415..1416] ,) (CC:[1417..1420] and)
+      (VP (VBP:[1421..1429] indicate)
+        (SBAR (IN:[1430..1434] that)
+          (S
+            (NP-SBJ (NN:[1435..1443] protease) (NNS:[1444..1454] inhibitors))
+            (VP (MD:[1455..1460] could)
+              (VP (VB:[1461..1465] have)
+                (NP
+                  (NP (DT:[1466..1467] a) (NN:[1468..1472] role))
+                  (PP (IN:[1473..1475] in)
+                    (NP
+                      (NP (JJ:[1477..1486] Wallerian)
+                          (NN:[1487..1499] degeneration))
+                      (CC:[1500..1503] and)
+                      (NP (JJ:[1504..1514] peripheral) (NN:[1515..1520] nerve)
+                          (NN:[1521..1533] regeneration)))))))))))
+    (.:[1533..1534] .)))
+
+;section 12 Span:1538..1582
+;PMID: 2685611 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1538..1542] PMID) (::[1542..1543] :) (CD:[1544..1551] 2685611)
+        (NN:[1552..1553] -LSB-) (NNP:[1553..1559] PubMed) (::[1560..1561] -)
+        (NN:[1562..1569] indexed) (IN:[1570..1573] for)
+        (NNP:[1574..1581] MEDLINE) (-RRB-:[1581..1582] -RSB-)))

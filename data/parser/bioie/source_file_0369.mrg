@@ -1,0 +1,494 @@
+;PMID: 12141399
+;source_file_1866.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..113] = [t:45..113]
+;2)section:[e:117..145] = [t:117..145]
+;3)section:[e:149..263] = [t:149..263]
+;4)sentence:[e:267..454] = [t:267..454]
+;5)sentence:[e:455..627] = [t:455..627]
+;6)sentence:[e:628..730] = [t:628..730]
+;7)sentence:[e:731..809] = [t:731..809]
+;8)sentence:[e:810..944] = [t:810..944]
+;9)sentence:[e:945..1107] = [t:945..1107]
+;10)sentence:[e:1108..1271] = [t:1108..1271]
+;11)sentence:[e:1272..1455] = [t:1272..1455]
+;12)sentence:[e:1456..1563] = [t:1456..1563]
+;13)sentence:[e:1564..1669] = [t:1564..1669]
+;14)section:[e:1673..1718] = [t:1673..1718]
+
+;section 0 Span:0..39
+;Hum Exp Toxicol. 2002 May;21(5):273-80.
+(SEC
+  (FRAG (NNP:[0..3] Hum) (NNP:[4..7] Exp) (NNP:[8..15] Toxicol) (.:[15..16] .)
+        ('':[17..21] 2002) (NNP:[22..25] May) (CD:[25..28] ;21)
+        (-LRB-:[28..29] -LRB-) (CD:[29..30] 5) (-RRB-:[30..31] -RRB-)
+        (CD:[31..35] :273) (::[35..36] -) (CD:[36..38] 80) (.:[38..39] .)))
+
+;sentence 1 Span:45..113
+;Methylphenidate inhibits cytochrome P450 in the Swiss Webster mouse.
+;[45..60]:substance:"Methylphenidate"
+;[70..85]:cyp450:"cytochrome P450"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[45..60] Methylphenidate))
+    (VP (VBZ:[61..69] inhibits)
+      (NP (NN:[70..80] cytochrome) (NN:[81..85] P450))
+      (PP-LOC (IN:[86..88] in)
+        (NP (DT:[89..92] the) (JJ:[93..98] Swiss) (NNP:[99..106] Webster)
+            (NN:[107..112] mouse))))
+    (.:[112..113] .)))
+
+;section 2 Span:117..145
+;Le Nedelec MJ, Rosengren RJ.
+(SEC
+  (FRAG (NNP:[117..119] Le) (NNP:[120..127] Nedelec) (NNP:[128..130] MJ)
+        (,:[130..131] ,) (NNP:[132..141] Rosengren) (NNP:[142..145] RJ.)))
+
+;section 3 Span:149..263
+;Department of Pharmacology and Toxicology, School of Medical Sciences, 
+;University of Otago, Dunedin, New Zealand.
+(SEC
+  (FRAG (NNP:[149..159] Department) (IN:[160..162] of)
+        (NNP:[163..175] Pharmacology) (CC:[176..179] and)
+        (NNP:[180..190] Toxicology) (,:[190..191] ,) (NNP:[192..198] School)
+        (IN:[199..201] of) (NNP:[202..209] Medical) (NNP:[210..218] Sciences)
+        (,:[218..219] ,) (NNP:[221..231] University) (IN:[232..234] of)
+        (NNP:[235..240] Otago) (,:[240..241] ,) (NNP:[242..249] Dunedin)
+        (,:[249..250] ,) (NNP:[251..254] New) (NNP:[255..262] Zealand)
+        (.:[262..263] .)))
+
+;sentence 4 Span:267..454
+;Drug interactions have previously been reported following the
+;co-administration  of methylphenidate (MPH) and drugs metabolized by the
+;cytochrome P450 (CYP450)  system such as imipramine.
+;[267..271]:substance:"Drug"
+;[351..366]:substance:"methylphenidate"
+;[368..371]:substance:"MPH"
+;[377..382]:substance:"drugs"
+;[402..417]:cyp450:"cytochrome P450"
+;[419..425]:cyp450:"CYP450"
+;[443..453]:substance:"imipramine"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[267..271] Drug) (NNS:[272..284] interactions))
+    (VP (VBP:[285..289] have)
+      (ADVP-TMP (RB:[290..300] previously))
+      (VP (VBN:[301..305] been)
+        (VP (VBN:[306..314] reported)
+          (NP-1 (-NONE-:[314..314] *))
+          (S-ADV
+            (NP-SBJ (-NONE-:[314..314] *))
+            (VP (VBG:[315..324] following)
+              (NP
+                (NP (DT:[325..328] the) (AFX:[329..331] co) (HYPH:[331..332] -)
+                    (NN:[332..346] administration))
+                (PP (IN:[348..350] of)
+                  (NP
+                    (NP
+                      (NP (NN:[351..366] methylphenidate))
+                      (NP (-LRB-:[367..368] -LRB-) (NN:[368..371] MPH)
+                          (-RRB-:[371..372] -RRB-)))
+                    (CC:[373..376] and)
+                    (NP
+                      (NP
+                        (NP (NNS:[377..382] drugs))
+                        (VP (VBN:[383..394] metabolized)
+                          (NP (-NONE-:[394..394] *))
+                          (PP (IN:[395..397] by)
+                            (NP-LGS (DT:[398..401] the)
+                              (NML
+                                (NML (NN:[402..412] cytochrome)
+                                     (NN:[413..417] P450))
+                                (NML (-LRB-:[418..419] -LRB-)
+                                     (NN:[419..425] CYP450)
+                                     (-RRB-:[425..426] -RRB-)))
+                              (NN:[428..434] system)))))
+                      (PP (JJ:[435..439] such) (IN:[440..442] as)
+                        (NP (NN:[443..453] imipramine))))))))))))
+    (.:[453..454] .)))
+
+;sentence 5 Span:455..627
+;Therefore, this study used the Swiss Webster mouse to  determine the effect
+;of MPH on CYP450 isozymes likely to be important in the  interaction between
+;MPH and imipramine.
+;[534..537]:substance:"MPH"
+;[541..556]:cyp450:"CYP450 isozymes"
+;[608..611]:substance:"MPH"
+;[616..626]:substance:"imipramine"
+(SENT
+  (S
+    (ADVP (RB:[455..464] Therefore))
+    (,:[464..465] ,)
+    (NP-SBJ (DT:[466..470] this) (NN:[471..476] study))
+    (VP (VBD:[477..481] used)
+      (NP (DT:[482..485] the) (JJ:[486..491] Swiss) (NNP:[492..499] Webster)
+          (NN:[500..505] mouse))
+      (S-PRP
+        (NP-SBJ (-NONE-:[505..505] *))
+        (VP (TO:[506..508] to)
+          (VP (VB:[510..519] determine)
+            (NP
+              (NP (DT:[520..523] the) (NN:[524..530] effect))
+              (PP (IN:[531..533] of)
+                (NP (NN:[534..537] MPH)))
+              (PP (IN:[538..540] on)
+                (NP
+                  (NP-1 (NN:[541..547] CYP450) (NNS:[548..556] isozymes))
+                  (ADJP (JJ:[557..563] likely)
+                    (S
+                      (NP-SBJ-1 (-NONE-:[563..563] *))
+                      (VP (TO:[564..566] to)
+                        (VP (VB:[567..569] be)
+                          (ADJP-PRD (JJ:[570..579] important)
+                            (PP (IN:[580..582] in)
+                              (NP
+                                (NP (DT:[583..586] the)
+                                    (NN:[588..599] interaction))
+                                (PP (IN:[600..607] between)
+                                  (NP
+                                    (NP (NN:[608..611] MPH))
+                                    (CC:[612..615] and)
+                                    (NP (NN:[616..626] imipramine))))))))))))))))))
+    (.:[626..627] .)))
+
+;sentence 6 Span:628..730
+;Single high doses of MPH (25, 50 and 100  mg/kg, i.p.) were administered to
+;simulate the abuse of MPH.
+;[649..652]:substance:"MPH"
+;[654..656]:quantitative-value:"25"
+;[658..660]:quantitative-value:"50"
+;[665..668]:quantitative-value:"100"
+;[670..675]:quantitative-units:"mg/kg"
+;[726..729]:substance:"MPH"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (NP (JJ:[628..634] Single) (JJ:[635..639] high) (NNS:[640..645] doses))
+        (PP (IN:[646..648] of)
+          (NP (NN:[649..652] MPH))))
+      (PRN (-LRB-:[653..654] -LRB-)
+        (FRAG
+          (NP
+            (NP
+              (NP (CD:[654..656] 25)
+                (NML-1 (-NONE-:[656..656] *P*))
+                (PP-3 (-NONE-:[656..656] *RNR*)))
+              (,:[656..657] ,)
+              (NP (CD:[658..660] 50)
+                (NML-1 (-NONE-:[660..660] *P*))
+                (PP-3 (-NONE-:[660..660] *RNR*)))
+              (CC:[661..664] and)
+              (NP (CD:[665..668] 100)
+                (NML-1 (NN:[670..672] mg))
+                (PP-3 (-NONE-:[672..672] *RNR*))))
+            (PP-3 (SYM:[672..673] /)
+              (NP (NN:[673..675] kg))))
+          (,:[675..676] ,)
+          (ADVP (RB:[677..681] i.p.)))
+        (-RRB-:[681..682] -RRB-)))
+    (VP (VBD:[683..687] were)
+      (VP (VBN:[688..700] administered)
+        (NP-2 (-NONE-:[700..700] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[700..700] *))
+          (VP (TO:[701..703] to)
+            (VP (VB:[704..712] simulate)
+              (NP
+                (NP (DT:[713..716] the) (NN:[717..722] abuse))
+                (PP (IN:[723..725] of)
+                  (NP (NN:[726..729] MPH)))))))))
+    (.:[729..730] .)))
+
+;sentence 7 Span:731..809
+;Under these  conditions, MPH decreased total hepatic CYP450 to 50% of
+;control.
+;[756..759]:substance:"MPH"
+;[784..790]:cyp450:"CYP450"
+;[794..797]:quantitative-value:"50%"
+(SENT
+  (S
+    (PP (IN:[731..736] Under)
+      (NP (DT:[737..742] these) (NNS:[744..754] conditions)))
+    (,:[754..755] ,)
+    (NP-SBJ (NN:[756..759] MPH))
+    (VP (VBD:[760..769] decreased)
+      (NP (JJ:[770..775] total) (JJ:[776..783] hepatic) (NN:[784..790] CYP450))
+      (PP-EXT (TO:[791..793] to)
+        (NP
+          (NP (CD:[794..796] 50) (NN:[796..797] %))
+          (PP (IN:[798..800] of)
+            (NP (NN:[801..808] control))))))
+    (.:[808..809] .)))
+
+;sentence 8 Span:810..944
+;Additionally,  MPH inhibited the catalytic activity of CYP1A and CYP2E1 by
+;50%, and decreased  the polypeptide levels of CYP3A by 30%.
+;[825..828]:substance:"MPH"
+;[865..870]:cyp450:"CYP1A"
+;[875..881]:cyp450:"CYP2E1"
+;[885..888]:quantitative-value:"50%"
+;[931..936]:cyp450:"CYP3A"
+;[940..943]:quantitative-value:"30%"
+(SENT
+  (S
+    (ADVP (RB:[810..822] Additionally))
+    (,:[822..823] ,)
+    (NP-SBJ (NN:[825..828] MPH))
+    (VP
+      (VP (VBD:[829..838] inhibited)
+        (NP
+          (NP (DT:[839..842] the) (JJ:[843..852] catalytic)
+              (NN:[853..861] activity))
+          (PP (IN:[862..864] of)
+            (NP (NN:[865..870] CYP1A) (CC:[871..874] and) (NN:[875..881] CYP2E1))))
+        (PP-EXT (IN:[882..884] by)
+          (NP (CD:[885..887] 50) (NN:[887..888] %))))
+      (,:[888..889] ,) (CC:[890..893] and)
+      (VP (VBD:[894..903] decreased)
+        (NP
+          (NP (DT:[905..908] the) (NN:[909..920] polypeptide)
+              (NNS:[921..927] levels))
+          (PP (IN:[928..930] of)
+            (NP (NN:[931..936] CYP3A))))
+        (PP-EXT (IN:[937..939] by)
+          (NP (CD:[940..942] 30) (NN:[942..943] %)))))
+    (.:[943..944] .)))
+
+;sentence 9 Span:945..1107
+;In a second study designed to simulate  more closely therapeutic use, MPH was
+;administered orally for two weeks at  10-fold lower doses (2.5, 5 and 10
+;mg/kg/day).
+;[1015..1018]:substance:"MPH"
+;[1047..1050]:quantitative-value:"two"
+;[1051..1056]:quantitative-units:"weeks"
+;[1061..1074]:quantitative-value:"10-fold lower"
+;[1082..1085]:quantitative-value:"2.5"
+;[1087..1088]:quantitative-value:"5"
+;[1093..1095]:quantitative-value:"10"
+;[1096..1105]:quantitative-units:"mg/kg/day"
+(SENT
+  (S
+    (PP (IN:[945..947] In)
+      (NP
+        (NP (DT:[948..949] a) (JJ:[950..956] second) (NN:[957..962] study))
+        (VP (VBN:[963..971] designed)
+          (S
+            (NP-SBJ (-NONE-:[971..971] *))
+            (VP (TO:[972..974] to)
+              (VP (VB:[975..983] simulate)
+                (NP
+                  (ADJP
+                    (ADVP (RBR:[985..989] more) (RB:[990..997] closely))
+                    (JJ:[998..1009] therapeutic))
+                  (NN:[1010..1013] use))))))))
+    (,:[1013..1014] ,)
+    (NP-SBJ-3 (NN:[1015..1018] MPH))
+    (VP (VBD:[1019..1022] was)
+      (VP (VBN:[1023..1035] administered)
+        (NP-3 (-NONE-:[1035..1035] *))
+        (ADVP (RB:[1036..1042] orally))
+        (PP-TMP (IN:[1043..1046] for)
+          (NP (CD:[1047..1050] two) (NNS:[1051..1056] weeks)))
+        (PP (IN:[1057..1059] at)
+          (NP
+            (NP
+              (ADJP
+                (ADJP-EXT (CD:[1061..1063] 10) (HYPH:[1063..1064] -)
+                          (RB:[1064..1068] fold))
+                (JJR:[1069..1074] lower))
+              (NNS:[1075..1080] doses))
+            (PP (-LRB-:[1081..1082] -LRB-)
+              (NP
+                (NP
+                  (NP (CD:[1082..1085] 2.5)
+                    (NML-1 (-NONE-:[1085..1085] *P*)))
+                  (,:[1085..1086] ,)
+                  (NP (CD:[1087..1088] 5)
+                    (NML-1 (-NONE-:[1088..1088] *P*)))
+                  (CC:[1089..1092] and)
+                  (NP (CD:[1093..1095] 10)
+                    (NML-1 (NN:[1096..1098] mg))))
+                (PP (SYM:[1098..1099] /)
+                  (NP (NN:[1099..1101] kg)))
+                (PP (SYM:[1101..1102] /)
+                  (NP (NN:[1102..1105] day))))
+              (-RRB-:[1105..1106] -RRB-))))))
+    (.:[1106..1107] .)))
+
+;sentence 10 Span:1108..1271
+;MPH decreased total hepatic  CYP450 at both 5 and 10 mg/ kg/day (0.96 +/-
+;0.01 and 0.96 +/- 0.06 nmol/mg  versus 1.34 +/- 0.01 nmol/mg for saline
+;control, P<0.05).
+;[1108..1111]:substance:"MPH"
+;[1137..1143]:cyp450:"CYP450"
+;[1152..1153]:quantitative-value:"5"
+;[1158..1160]:quantitative-value:"10"
+;[1161..1171]:quantitative-units:"mg/ kg/day"
+;[1173..1186]:quantitative-value:"0.96 +/- 0.01"
+;[1191..1204]:quantitative-value:"0.96 +/- 0.06"
+;[1205..1212]:quantitative-units:"nmol/mg"
+;[1221..1234]:quantitative-value:"1.34 +/- 0.01"
+;[1235..1242]:quantitative-units:"nmol/mg"
+;[1247..1253]:substance:"saline"
+;[1254..1261]:substance:"control"
+(SENT
+  (S
+    (NP-SBJ (NN:[1108..1111] MPH))
+    (VP (VBD:[1112..1121] decreased)
+      (NP (JJ:[1122..1127] total) (JJ:[1128..1135] hepatic)
+          (NN:[1137..1143] CYP450))
+      (PP (IN:[1144..1146] at)
+        (NP
+          (NP (CC:[1147..1151] both)
+            (NML (CD:[1152..1153] 5)
+              (NML-2 (-NONE-:[1153..1153] *P*)))
+            (CC:[1154..1157] and)
+            (NML (CD:[1158..1160] 10)
+              (NML-2 (NN:[1161..1163] mg))))
+          (PP (SYM:[1163..1164] /)
+            (NP (NN:[1165..1167] kg)))
+          (PP (SYM:[1167..1168] /)
+            (NP (NN:[1168..1171] day)))))
+      (PP (-LRB-:[1172..1173] -LRB-)
+        (FRAG
+          (NP
+            (NP
+              (NP
+                (NP
+                  (QP (CD:[1173..1177] 0.96) (SYM:[1178..1181] +/-)
+                      (CD:[1182..1186] 0.01))
+                  (NML-1 (-NONE-:[1186..1186] *P*)))
+                (CC:[1187..1190] and)
+                (NP
+                  (QP (CD:[1191..1195] 0.96) (SYM:[1196..1199] +/-)
+                      (CD:[1200..1204] 0.06))
+                  (NML-1 (NN:[1205..1209] nmol))))
+              (PP (SYM:[1209..1210] /)
+                (NP (NN:[1210..1212] mg))))
+            (PP (IN:[1214..1220] versus)
+              (NP
+                (NP
+                  (NP
+                    (QP (CD:[1221..1225] 1.34) (SYM:[1226..1229] +/-)
+                        (CD:[1230..1234] 0.01))
+                    (NN:[1235..1239] nmol))
+                  (PP (SYM:[1239..1240] /)
+                    (NP (NN:[1240..1242] mg))))
+                (PP (IN:[1243..1246] for)
+                  (NP (NN:[1247..1253] saline) (NN:[1254..1261] control))))))
+          (,:[1261..1262] ,)
+          (S
+            (NP-SBJ (NN:[1263..1264] P))
+            (VP (SYM:[1264..1265] <)
+              (NP (CD:[1265..1269] 0.05)))))
+        (-RRB-:[1269..1270] -RRB-)))
+    (.:[1270..1271] .)))
+
+;sentence 11 Span:1272..1455
+;The catalytic activity  and protein levels of CYP1A were diminished by up to
+;50% of control, while  catalytic activity and polypeptide levels for CYP2E1
+;and CYP3A remained  unchanged.
+;[1300..1307]:substance:"protein"
+;[1318..1323]:cyp450:"CYP1A"
+;[1349..1352]:quantitative-value:"50%"
+;[1418..1424]:cyp450:"CYP2E1"
+;[1429..1434]:cyp450:"CYP3A"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1272..1275] The)
+        (NML
+          (NML (JJ:[1276..1285] catalytic) (NN:[1286..1294] activity))
+          (CC:[1296..1299] and)
+          (NML (NN:[1300..1307] protein) (NNS:[1308..1314] levels))))
+      (PP (IN:[1315..1317] of)
+        (NP (NN:[1318..1323] CYP1A))))
+    (VP (VBD:[1324..1328] were)
+      (VP (VBN:[1329..1339] diminished)
+        (NP-1 (-NONE-:[1339..1339] *))
+        (PP (IN:[1340..1342] by)
+          (NP-EXT
+            (NP
+              (QP (IN:[1343..1345] up) (TO:[1346..1348] to) (CD:[1349..1351] 50))
+              (NN:[1351..1352] %))
+            (PP (IN:[1353..1355] of)
+              (NP (NN:[1356..1363] control)))))
+        (,:[1363..1364] ,)
+        (SBAR-ADV (IN:[1365..1370] while)
+          (S
+            (NP-SBJ
+              (NP
+                (NP (JJ:[1372..1381] catalytic) (NN:[1382..1390] activity))
+                (CC:[1391..1394] and)
+                (NP (NN:[1395..1406] polypeptide) (NNS:[1407..1413] levels)))
+              (PP (IN:[1414..1417] for)
+                (NP (NN:[1418..1424] CYP2E1) (CC:[1425..1428] and)
+                    (NN:[1429..1434] CYP3A))))
+            (VP (VBD:[1435..1443] remained)
+              (ADJP-PRD (JJ:[1445..1454] unchanged)))))))
+    (.:[1454..1455] .)))
+
+;sentence 12 Span:1456..1563
+;These results indicate that MPH inhibits the CYP450 system following  both
+;abuse and therapeutic scenarios.
+;[1484..1487]:substance:"MPH"
+;[1501..1507]:cyp450:"CYP450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1456..1461] These) (NNS:[1462..1469] results))
+    (VP (VBP:[1470..1478] indicate)
+      (SBAR (IN:[1479..1483] that)
+        (S
+          (NP-SBJ (NN:[1484..1487] MPH))
+          (VP (VBZ:[1488..1496] inhibits)
+            (NP (DT:[1497..1500] the) (NN:[1501..1507] CYP450)
+                (NN:[1508..1514] system))
+            (S-MNR
+              (NP-SBJ (-NONE-:[1514..1514] *))
+              (VP (VBG:[1515..1524] following)
+                (NP (CC:[1526..1530] both)
+                  (NML
+                    (NML (NN:[1531..1536] abuse)
+                      (NML-1 (-NONE-:[1536..1536] *P*)))
+                    (CC:[1537..1540] and)
+                    (NML (JJ:[1541..1552] therapeutic)
+                      (NML-1 (NNS:[1553..1562] scenarios)))))))))))
+    (.:[1562..1563] .)))
+
+;sentence 13 Span:1564..1669
+;However, this effect was dependent on both  the isoform of CYP450 and the
+;duration of MPH administration.
+;[1612..1619]:cyp450:"isoform"
+;[1623..1629]:cyp450:"CYP450"
+;[1650..1653]:substance:"MPH"
+(SENT
+  (S
+    (ADVP (RB:[1564..1571] However))
+    (,:[1571..1572] ,)
+    (NP-SBJ (DT:[1573..1577] this) (NN:[1578..1584] effect))
+    (VP (VBD:[1585..1588] was)
+      (ADJP-PRD (JJ:[1589..1598] dependent)
+        (PP (IN:[1599..1601] on)
+          (NP (CC:[1602..1606] both)
+            (NP
+              (NP (DT:[1608..1611] the) (NN:[1612..1619] isoform))
+              (PP (IN:[1620..1622] of)
+                (NP (NN:[1623..1629] CYP450))))
+            (CC:[1630..1633] and)
+            (NP
+              (NP (DT:[1634..1637] the) (NN:[1638..1646] duration))
+              (PP (IN:[1647..1649] of)
+                (NP (NN:[1650..1653] MPH) (NN:[1654..1668] administration))))))))
+    (.:[1668..1669] .)))
+
+;section 14 Span:1673..1718
+;PMID: 12141399 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1673..1677] PMID) (::[1677..1678] :) (CD:[1679..1687] 12141399)
+        (NN:[1688..1689] -LSB-) (NNP:[1689..1695] PubMed) (::[1696..1697] -)
+        (NN:[1698..1705] indexed) (IN:[1706..1709] for)
+        (NNP:[1710..1718] MEDLINE-RSB-)))

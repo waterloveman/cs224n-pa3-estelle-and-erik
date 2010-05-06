@@ -1,0 +1,378 @@
+;PMID: 1763524
+;source_file_1008.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..126] = [t:42..126]
+;2)section:[e:130..175] = [t:130..175]
+;3)section:[e:179..268] = [t:179..268]
+;4)sentence:[e:272..409] = [t:272..409]
+;5)sentence:[e:410..530] = [t:410..530]
+;6)sentence:[e:531..702] = [t:531..702]
+;7)sentence:[e:703..906] = [t:703..906]
+;8)sentence:[e:907..1075] = [t:907..1075]
+;9)sentence:[e:1076..1162] = [t:1076..1162]
+;10)sentence:[e:1163..1362] = [t:1163..1362]
+;11)section:[e:1366..1410] = [t:1366..1409]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1366..1410][t:1366..1409]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1409..1410] ]
+;ERROR_POS mismatch [1137..1140] t:token e:CD 6.7
+
+;section 0 Span:0..36
+;Xenobiotica. 1991 Nov;21(11):1501-9.
+(SEC
+  (FRAG (RB:[0..11] Xenobiotica) (IN:[11..12] .) (CD:[13..17] 1991)
+        (CC:[18..25] Nov;21-LRB-) (CD:[25..27] 11) (-RRB-:[27..28] -RRB-)
+        (CD:[28..33] :1501) (::[33..34] -) (CD:[34..36] 9.)))
+
+;sentence 1 Span:42..126
+;Thebaine O-demethylation to oripavine: genetic differences between two rat 
+;strains.
+;[42..50]:substance:"Thebaine"
+;[70..79]:substance:"oripavine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[42..50] Thebaine) (NN:[51..66] O-demethylation))
+      (PP (TO:[67..69] to)
+        (NP (NN:[70..79] oripavine))))
+    (::[79..80] :)
+    (NP
+      (NP (JJ:[81..88] genetic) (NNS:[89..100] differences))
+      (PP (IN:[101..108] between)
+        (NP (CD:[109..112] two) (NN:[113..116] rat) (NNS:[118..125] strains))))
+    (.:[125..126] .)))
+
+;section 2 Span:130..175
+;Mikus G, Somogyi AA, Bochner F, Eichelbaum M.
+(SEC
+  (FRAG (NNP:[130..135] Mikus) (NNP:[136..137] G) (,:[137..138] ,)
+        (NNP:[139..146] Somogyi) (NNP:[147..149] AA) (,:[149..150] ,)
+        (NNP:[151..158] Bochner) (NNP:[159..160] F) (,:[160..161] ,)
+        (NNP:[162..172] Eichelbaum) (NNP:[173..175] M.)))
+
+;section 3 Span:179..268
+;Department of Clinical and Experimental Pharmacology, University of Adelaide,
+; Australia.
+(SEC
+  (FRAG (NNP:[179..189] Department) (IN:[190..192] of) (NNP:[193..201] Clinical)
+        (CC:[202..205] and) (NNP:[206..218] Experimental)
+        (NNP:[219..231] Pharmacology) (,:[231..232] ,)
+        (NNP:[233..243] University) (IN:[244..246] of) (NNP:[247..255] Adelaide)
+        (,:[255..256] ,) (NNP:[258..267] Australia) (.:[267..268] .)))
+
+;sentence 4 Span:272..409
+;1. Codeine O-demethylation to morphine is mediated by cytochrome P450 IID1 
+;(rat), or P450 IID6 (man), and exhibits genetic polymorphism.
+;[275..282]:substance:"Codeine"
+;[302..310]:substance:"morphine"
+;[326..346]:cyp450:"cytochrome P450 IID1"
+;[326..336]...[358..367]:cyp450:"cytochrome"..."P450 IID6"
+(SENT
+  (LST (LS:[272..274] 1.))
+  (S
+    (NP-SBJ-2
+      (NP (NN:[275..282] Codeine) (NN:[283..298] O-demethylation))
+      (PP (TO:[299..301] to)
+        (NP (NN:[302..310] morphine))))
+    (VP
+      (VP (VBZ:[311..313] is)
+        (VP (VBN:[314..322] mediated)
+          (NP-2 (-NONE-:[322..322] *))
+          (PP (IN:[323..325] by)
+            (NP-LGS
+              (NP
+                
+                (NML
+                  (NML-1 (NN:[326..336] cytochrome))
+                  (NN:[337..341] P450))
+                (NN:[342..346] IID1)
+                (PRN (-LRB-:[348..349] -LRB-)
+                  (NP (NN:[349..352] rat))
+                  (-RRB-:[352..353] -RRB-)))
+              (,:[353..354] ,) (CC:[355..357] or)
+              (NP
+                (NML
+                  (NML-1 (-NONE-:[357..357] *P*))
+                  (NN:[358..362] P450))
+                (NN:[363..367] IID6)
+                (PRN (-LRB-:[368..369] -LRB-)
+                  (NP (NN:[369..372] man))
+                  (-RRB-:[372..373] -RRB-)))))))
+      (,:[373..374] ,) (CC:[375..378] and)
+      (VP (VBZ:[379..387] exhibits)
+        (NP (JJ:[388..395] genetic) (NN:[396..408] polymorphism))))
+    (.:[408..409] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[272..409]::LST:S:
+
+;sentence 5 Span:410..530
+;Thebaine is a  precursor in the formation of endogenous morphine and codeine
+;in man, being  O-demethylated to oripavine.
+;[410..418]:substance:"Thebaine"
+;[425..434]:substance:"precursor"
+;[466..474]:substance:"morphine"
+;[479..486]:substance:"codeine"
+;[520..529]:substance:"oripavine"
+(SENT
+  (S
+    (NP-SBJ (NN:[410..418] Thebaine))
+    (VP (VBZ:[419..421] is)
+      (NP-PRD
+        (NP (DT:[422..423] a) (NN:[425..434] precursor))
+        (PP (IN:[435..437] in)
+          (NP
+            (NP (DT:[438..441] the) (NN:[442..451] formation))
+            (PP (IN:[452..454] of)
+              (NP
+                (NP
+                  (ADJP-2 (JJ:[455..465] endogenous))
+                  (NN:[466..474] morphine))
+                (CC:[475..478] and)
+                (NP
+                  (ADJP-2 (-NONE-:[478..478] *P*))
+                  (NN:[479..486] codeine))))
+            (PP (IN:[487..489] in)
+              (NP (NN:[490..493] man))))))
+      (,:[493..494] ,)
+      (S-ADV
+        (NP-SBJ-1 (-NONE-:[494..494] *))
+        (VP (VBG:[495..500] being)
+          (VP (VBN:[502..516] O-demethylated)
+            (NP-1 (-NONE-:[516..516] *))
+            (PP (TO:[517..519] to)
+              (NP (NN:[520..529] oripavine)))))))
+    (.:[529..530] .)))
+
+;sentence 6 Span:531..702
+;2. The objective of the present study was to  ascertain whether the
+;O-demethylation of thebaine to oripavine was mediated by  cytochrome P450
+;IID1 in rat liver microsomes.
+;[618..626]:substance:"thebaine"
+;[630..639]:substance:"oripavine"
+;[657..677]:cyp450:"cytochrome P450 IID1"
+(SENT
+  (LST (LS:[531..533] 2.))
+  (S
+    (NP-SBJ
+      (NP (DT:[534..537] The) (NN:[538..547] objective))
+      (PP (IN:[548..550] of)
+        (NP (DT:[551..554] the) (JJ:[555..562] present) (NN:[563..568] study))))
+    (VP (VBD:[569..572] was)
+      (S-NOM-PRP-PRD
+        (NP-SBJ (-NONE-:[572..572] *))
+        (VP (TO:[573..575] to)
+          (VP (VB:[577..586] ascertain)
+            (SBAR (IN:[587..594] whether)
+              (S
+                (NP-SBJ-1
+                  (NP (DT:[595..598] the) (NN:[599..614] O-demethylation))
+                  (PP (IN:[615..617] of)
+                    (NP (NN:[618..626] thebaine)))
+                  (PP (TO:[627..629] to)
+                    (NP (NN:[630..639] oripavine))))
+                (VP (VBD:[640..643] was)
+                  (VP (VBN:[644..652] mediated)
+                    (NP-1 (-NONE-:[652..652] *))
+                    (PP (IN:[653..655] by)
+                      (NP-LGS
+                        (NML (NN:[657..667] cytochrome) (NN:[668..672] P450))
+                        (NN:[673..677] IID1)))
+                    (PP-LOC (IN:[678..680] in)
+                      (NP (NN:[681..684] rat) (NN:[685..690] liver)
+                          (NNS:[691..701] microsomes)))))))))))
+    (.:[701..702] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[531..702]::LST:S:
+
+;sentence 7 Span:703..906
+;3. Thebaine O-demethylation showed  strain differences in female
+;Sprague-Dawley (SD) and female Dark-Agouti (DA)  rats, which serve as a model
+;for the human debrisoquine/sparteine metabolism  phenotypes.
+;[706..714]:substance:"Thebaine"
+;[860..872]:substance:"debrisoquine"
+;[873..882]:substance:"sparteine"
+(SENT
+  (LST (LS:[703..705] 3.))
+  (S
+    (NP-SBJ (NN:[706..714] Thebaine) (NN:[715..730] O-demethylation))
+    (VP (VBD:[731..737] showed)
+      (NP (NN:[739..745] strain) (NNS:[746..757] differences))
+      (PP-LOC (IN:[758..760] in)
+        (NP
+          (NP
+            (NP (JJ:[761..767] female)
+              (NML
+                (NML (NNP:[768..775] Sprague) (HYPH:[775..776] -)
+                     (NNP:[776..782] Dawley))
+                (NML (-LRB-:[783..784] -LRB-) (NNP:[784..786] SD)
+                     (-RRB-:[786..787] -RRB-)))
+              (NML-2 (-NONE-:[787..787] *P*)))
+            (CC:[788..791] and)
+            (NP (JJ:[792..798] female)
+              (NML
+                (NML (NNP:[799..803] Dark) (HYPH:[803..804] -)
+                     (NNP:[804..810] Agouti))
+                (NML (-LRB-:[811..812] -LRB-) (NNP:[812..814] DA)
+                     (-RRB-:[814..815] -RRB-)))
+              (NML-2 (NNS:[817..821] rats))))
+          (,:[821..822] ,)
+          (SBAR
+            (WHNP-1 (WDT:[823..828] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[828..828] *T*))
+              (VP (VBP:[829..834] serve)
+                (PP-CLR (IN:[835..837] as)
+                  (NP
+                    (NP (DT:[838..839] a) (NN:[840..845] model))
+                    (PP (IN:[846..849] for)
+                      (NP (DT:[850..853] the) (JJ:[854..859] human)
+                        (NML (NN:[860..872] debrisoquine) (SYM:[872..873] /)
+                             (NN:[873..882] sparteine))
+                        (NN:[883..893] metabolism) (NNS:[895..905] phenotypes)))))))))))
+    (.:[905..906] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[703..906]::LST:S:
+
+;sentence 8 Span:907..1075
+;4. The total intrinsic clearance of thebaine to oripavine was high  (19.7
+;ml/h per mg protein) in SD rats, indicating that oripavine is a major 
+;metabolite of thebaine.
+;[943..951]:substance:"thebaine"
+;[955..964]:substance:"oripavine"
+;[976..980]:quantitative-value:"19.7"
+;[981..1000]:quantitative-units:"ml/h per mg protein"
+;[1030..1039]:substance:"oripavine"
+;[1052..1062]:substance:"metabolite"
+;[1066..1074]:substance:"thebaine"
+(SENT
+  (LST (LS:[907..909] 4.))
+  (S
+    (NP-SBJ
+      (NP (DT:[910..913] The) (JJ:[914..919] total) (JJ:[920..929] intrinsic)
+          (NN:[930..939] clearance))
+      (PP (IN:[940..942] of)
+        (NP (NN:[943..951] thebaine)))
+      (PP (TO:[952..954] to)
+        (NP (NN:[955..964] oripavine))))
+    (VP (VBD:[965..968] was)
+      (ADJP-PRD (JJ:[969..973] high)
+        (PRN (-LRB-:[975..976] -LRB-)
+          (NP
+            (NP (CD:[976..980] 19.7) (NN:[981..983] ml))
+            (PP (SYM:[983..984] /)
+              (NP (NN:[984..985] h)))
+            (PP (IN:[986..989] per)
+              (NP (NN:[990..992] mg) (NN:[993..1000] protein))))
+          (-RRB-:[1000..1001] -RRB-)))
+      (PP-LOC (IN:[1002..1004] in)
+        (NP (NNP:[1005..1007] SD) (NNS:[1008..1012] rats)))
+      (,:[1012..1013] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1013..1013] *))
+        (VP (VBG:[1014..1024] indicating)
+          (SBAR (IN:[1025..1029] that)
+            (S
+              (NP-SBJ (NN:[1030..1039] oripavine))
+              (VP (VBZ:[1040..1042] is)
+                (NP-PRD
+                  (NP (DT:[1043..1044] a) (JJ:[1045..1050] major)
+                      (NN:[1052..1062] metabolite))
+                  (PP (IN:[1063..1065] of)
+                    (NP (NN:[1066..1074] thebaine))))))))))
+    (.:[1074..1075] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[907..1075]::LST:S:
+
+;sentence 9 Span:1076..1162
+;A 3-fold lower intrinsic clearance was observed in DA  rats (6.7 ml/h per mg
+;protein).
+;[1078..1084]:quantitative-value:"3-fold"
+;[1137..1140]:quantitative-value:"6.7"
+;[1141..1160]:quantitative-units:"ml/h per mg protein"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1076..1077] A)
+      (ADJP
+        (QP (CD:[1078..1079] 3) (HYPH:[1079..1080] -) (RB:[1080..1084] fold))
+        (JJR:[1085..1090] lower))
+      (JJ:[1091..1100] intrinsic) (NN:[1101..1110] clearance))
+    (VP (VBD:[1111..1114] was)
+      (VP (VBN:[1115..1123] observed)
+        (NP-1 (-NONE-:[1123..1123] *))
+        (PP-LOC (IN:[1124..1126] in)
+          (NP (NNP:[1127..1129] DA) (NNS:[1131..1135] rats)))
+        (PRN (-LRB-:[1136..1137] -LRB-)
+          (NP
+            (NP (token:[1137..1140] 6.7) (NN:[1141..1143] ml))
+            (PP (SYM:[1143..1144] /)
+              (NP (NN:[1144..1145] h)))
+            (PP (IN:[1146..1149] per)
+              (NP (NN:[1150..1152] mg) (NN:[1153..1160] protein))))
+          (-RRB-:[1160..1161] -RRB-))))
+    (.:[1161..1162] .)))
+
+;sentence 10 Span:1163..1362
+;5. Thebaine O-demethylation was inhibited by  quinine and known substrates of
+;cytochrome P450 IID1/P450 IID6, supporting the  major involvement of
+;cytochrome P450 IID1 in oripavine formation in rats.
+;[1166..1174]:substance:"Thebaine"
+;[1209..1216]:substance:"quinine"
+;[1227..1237]:substance:"substrates"
+;[1241..1261]:cyp450:"cytochrome P450 IID1"
+;[1241..1251]...[1262..1271]:cyp450:"cytochrome"..."P450 IID6"
+;[1310..1330]:cyp450:"cytochrome P450 IID1"
+;[1334..1343]:substance:"oripavine"
+(SENT
+  (LST (LS:[1163..1165] 5.))
+  (S
+    (NP-SBJ-1 (NN:[1166..1174] Thebaine) (NN:[1175..1190] O-demethylation))
+    (VP (VBD:[1191..1194] was)
+      (VP (VBN:[1195..1204] inhibited)
+        (NP-1 (-NONE-:[1204..1204] *))
+        (PP (IN:[1205..1207] by)
+          (NP-LGS
+            (NP (NN:[1209..1216] quinine))
+            (CC:[1217..1220] and)
+            (NP
+              (NP (VBN:[1221..1226] known) (NNS:[1227..1237] substrates))
+              (PP (IN:[1238..1240] of)
+                (NP
+                  (NP
+                    (NML
+                      (NML-2 (NN:[1241..1251] cytochrome))
+                      (NN:[1252..1256] P450))
+                    (NN:[1257..1261] IID1))
+                  (SYM:[1261..1262] /)
+                  (NP
+                    (NML
+                      (NML-2 (-NONE-:[1262..1262] *P*))
+                      (NN:[1262..1266] P450))
+                    (NN:[1267..1271] IID6)))))))
+        (,:[1271..1272] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1272..1272] *))
+          (VP (VBG:[1273..1283] supporting)
+            (NP
+              (NP (DT:[1284..1287] the) (JJ:[1289..1294] major)
+                  (NN:[1295..1306] involvement))
+              (PP (IN:[1307..1309] of)
+                (NP (NN:[1310..1320] cytochrome) (NN:[1321..1325] P450)
+                    (NN:[1326..1330] IID1)))
+              (PP (IN:[1331..1333] in)
+                (NP
+                  (NP (NN:[1334..1343] oripavine) (NN:[1344..1353] formation))
+                  (PP-LOC (IN:[1354..1356] in)
+                    (NP (NNS:[1357..1361] rats))))))))))
+    (.:[1361..1362] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1163..1362]::LST:S:
+
+;section 11 Span:1366..1409
+;PMID: 1763524 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1366..1370] PMID) (::[1370..1371] :) (CD:[1372..1379] 1763524)
+        (-LRB-:[1380..1381] -LSB-) (NNP:[1381..1387] PubMed) (::[1388..1389] -)
+        (VBN:[1390..1397] indexed) (IN:[1398..1401] for)
+        (NNP:[1402..1409] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1409..EOF] ]
+
+(ORPH -RSB-)

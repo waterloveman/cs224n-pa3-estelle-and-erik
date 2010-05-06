@@ -1,0 +1,562 @@
+;PMID: 10391564
+;source_file_545.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..152] = [t:35..152]
+;2)section:[e:156..175] = [t:156..175]
+;3)section:[e:179..239] = [t:179..239]
+;4)sentence:[e:243..254] = [t:243..254]
+;5)sentence:[e:255..392] = [t:255..392]
+;6)sentence:[e:393..597] = [t:393..597]
+;7)sentence:[e:598..606] = [t:598..606]
+;8)sentence:[e:607..791] = [t:607..791]
+;9)sentence:[e:793..913] = [t:793..913]
+;10)sentence:[e:914..922] = [t:914..922]
+;11)sentence:[e:923..1074] = [t:923..1074]
+;12)sentence:[e:1075..1118] = [t:1075..1118]
+;13)sentence:[e:1119..1385] = [t:1119..1385]
+;14)sentence:[e:1386..1398] = [t:1386..1398]
+;15)sentence:[e:1399..1526] = [t:1399..1526]
+;16)sentence:[e:1527..1777] = [t:1527..1777]
+;17)sentence:[e:1778..2063] = [t:1778..2063]
+;18)section:[e:2067..2112] = [t:2067..2112]
+
+;section 0 Span:0..30
+;Cancer  1999 Jul 1;86(1):58-63
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (CD:[8..12] 1999) (.:[13..16] Jul) (CD:[17..20] 1;8)
+        (CD:[20..21] 6) (NN:[21..22] -LRB-) (NN:[22..23] 1) (NN:[23..24] -RRB-)
+        (::[24..25] :) (CD:[25..26] 5) (CD:[26..30] 8-63)))
+
+;sentence 1 Span:35..152
+;H-ras and K-ras mutations in soft tissue sarcoma: comparative studies of 
+;sarcomas from Korean and American patients.
+;[35..40]:gene-rna:"H-ras"
+;[45..50]:gene-rna:"K-ras"
+;[64..83]:malignancy:"soft tissue sarcoma"
+;[109..117]:malignancy:"sarcomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NP (NN:[35..40] H-ras)
+          (NML-2 (-NONE-:[40..40] *P*)))
+        (CC:[41..44] and)
+        (NP (NN:[45..50] K-ras)
+          (NML-2 (NNS:[51..60] mutations))))
+      (PP (IN:[61..63] in)
+        (NP
+          (NML (JJ:[64..68] soft) (NN:[69..75] tissue))
+          (NN:[76..83] sarcoma))))
+    (::[83..84] :)
+    (NP
+      (NP (JJ:[85..96] comparative) (NNS:[97..104] studies))
+      (PP (IN:[105..107] of)
+        (NP
+          (NP (NNS:[109..117] sarcomas))
+          (PP (IN:[118..122] from)
+            (NP
+              (NP (JJ:[123..129] Korean)
+                (NML-1 (-NONE-:[129..129] *P*)))
+              (CC:[130..133] and)
+              (NP (JJ:[134..142] American)
+                (NML-1 (NNS:[143..151] patients))))))))
+    (.:[151..152] .)))
+
+;section 2 Span:156..175
+;Yoo J, Robinson RA.
+(SEC
+  (FRAG (NNP:[156..159] Yoo) (NNP:[160..162] J,) (NNP:[163..171] Robinson)
+        (.:[172..175] RA.)))
+
+;section 3 Span:179..239
+;Department of Pathology, University of Iowa, Iowa City, USA.
+(SEC
+  (FRAG (NNP:[179..189] Department) (IN:[190..192] of)
+        (NNP:[193..202] Pathology) (,:[202..203] ,) (NNP:[204..214] University)
+        (IN:[215..217] of) (NNP:[218..222] Iowa) (,:[222..223] ,)
+        (NNP:[224..228] Iowa) (NNP:[229..233] City) (,:[233..234] ,)
+        (NNP:[235..238] USA) (.:[238..239] .)))
+
+;sentence 4 Span:243..254
+;BACKGROUND:
+(SENT
+  (NP (NN:[243..253] BACKGROUND) (::[253..254] :)))
+
+;sentence 5 Span:255..392
+;The authors' recent investigation of Korean patients with sarcoma  has
+;suggested that ras gene activation may play a role in oncogenesis.
+;[313..320]:malignancy:"sarcoma"
+;[341..344]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[255..258] The) (NNS:[259..266] authors) (POS:[266..267] '))
+        (JJ:[268..274] recent) (NN:[275..288] investigation))
+      (PP (IN:[289..291] of)
+        (NP
+          (NP (JJ:[292..298] Korean) (NNS:[299..307] patients))
+          (PP (IN:[308..312] with)
+            (NP (NN:[313..320] sarcoma))))))
+    (VP (VBZ:[322..325] has)
+      (VP (VBN:[326..335] suggested)
+        (SBAR (IN:[336..340] that)
+          (S
+            (NP-SBJ (NN:[341..344] ras) (NN:[345..349] gene)
+                    (NN:[350..360] activation))
+            (VP (MD:[361..364] may)
+              (VP (VB:[365..369] play)
+                (NP (DT:[370..371] a) (NN:[372..376] role))
+                (PP (IN:[377..379] in)
+                  (NP (NN:[380..391] oncogenesis)))))))))
+    (.:[391..392] .)))
+
+;sentence 6 Span:393..597
+;The  authors attempted to extend the mutation analysis to sarcomas in
+;American  patients to determine whether there were racial or geographic
+;factors relevant  to the initiation or progression of sarcoma.
+;[451..459]:malignancy:"sarcomas"
+;[589..596]:malignancy:"sarcoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[393..396] The) (NNS:[398..405] authors))
+    (VP (VBD:[406..415] attempted)
+      (S
+        (NP-SBJ (-NONE-:[415..415] *))
+        (VP (TO:[416..418] to)
+          (VP (VB:[419..425] extend)
+            (NP (DT:[426..429] the) (NN:[430..438] mutation)
+                (NN:[439..447] analysis))
+            (PP (TO:[448..450] to)
+              (NP
+                (NP (NNS:[451..459] sarcomas))
+                (PP (IN:[460..462] in)
+                  (NP (JJ:[463..471] American) (NNS:[473..481] patients)))))
+            (S-PRP
+              (NP-SBJ (-NONE-:[481..481] *))
+              (VP (TO:[482..484] to)
+                (VP (VB:[485..494] determine)
+                  (SBAR (IN:[495..502] whether)
+                    (S
+                      (NP-SBJ (EX:[503..508] there))
+                      (VP (VBD:[509..513] were)
+                        (NP-PRD
+                          (NP
+                            (NP (JJ:[514..520] racial)
+                              (NML-1 (-NONE-:[520..520] *P*)))
+                            (CC:[521..523] or)
+                            (NP (JJ:[524..534] geographic)
+                              (NML-1 (NNS:[535..542] factors))))
+                          (ADJP (JJ:[543..551] relevant)
+                            (PP (TO:[553..555] to)
+                              (NP
+                                (NP (DT:[556..559] the)
+                                    (NN:[560..570] initiation)
+                                    (CC:[571..573] or)
+                                    (NN:[574..585] progression))
+                                (PP (IN:[586..588] of)
+                                  (NP (NN:[589..596] sarcoma)))))))))))))))))
+    (.:[596..597] .)))
+
+;sentence 7 Span:598..606
+;METHODS:
+(SENT
+  (NP (NNS:[598..605] METHODS) (::[605..606] :)))
+
+;sentence 8 Span:607..791
+;H-ras and K-ras genes were  examined in sarcomas obtained from patients in
+;the midwestern U. S. using the  polymerase chain reaction technique and
+;direct automated sequencing analysis.
+;[607..612]:gene-rna:"H-ras"
+;[617..622]:gene-rna:"K-ras"
+;[647..655]:malignancy:"sarcomas"
+;[714..724]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[607..612] H-ras)
+        (NML-1 (-NONE-:[612..612] *P*)))
+      (CC:[613..616] and)
+      (NP (NN:[617..622] K-ras)
+        (NML-1 (NNS:[623..628] genes))))
+    (VP (VBD:[629..633] were)
+      (VP (VBN:[635..643] examined)
+        (NP-2 (-NONE-:[643..643] *))
+        (PP (IN:[644..646] in)
+          (NP
+            (NP (NNS:[647..655] sarcomas))
+            (VP (VBN:[656..664] obtained)
+              (NP (-NONE-:[664..664] *))
+              (PP (IN:[665..669] from)
+                (NP
+                  (NP (NNS:[670..678] patients))
+                  (PP (IN:[679..681] in)
+                    (NP (DT:[682..685] the) (JJ:[686..696] midwestern)
+                        (NNP:[697..699] U.) (NNP:[700..702] S.))))))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[702..702] *))
+          (VP (VBG:[703..708] using)
+            (NP
+              (NP (DT:[709..712] the)
+                (NML (NN:[714..724] polymerase) (NN:[725..730] chain)
+                     (NN:[731..739] reaction))
+                (NN:[740..749] technique))
+              (CC:[750..753] and)
+              (NP (JJ:[754..760] direct) (JJ:[761..770] automated)
+                  (NN:[771..781] sequencing) (NN:[782..790] analysis)))))))
+    (.:[790..791] .)))
+
+;sentence 9 Span:793..913
+;Tumors studied included 29 malignant fibrous histiocytomas, 7 liposarcomas, 5
+; rhabdomyosarcomas, and 9 leiomyosarcomas.
+;[793..799]:malignancy:"Tumors"
+;[820..851]:malignancy:"malignant fibrous histiocytomas"
+;[855..867]:malignancy:"liposarcomas"
+;[872..889]:malignancy:"rhabdomyosarcomas"
+;[897..912]:malignancy:"leiomyosarcomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[793..799] Tumors))
+      (VP (VBN:[800..807] studied)
+        (NP (-NONE-:[807..807] *))))
+    (VP (VBD:[808..816] included)
+      (NP
+        (NP (CD:[817..819] 29)
+           (JJ:[820..829] malignant) (JJ:[830..837] fibrous)
+           (NNS:[838..851] histiocytomas))
+        (,:[851..852] ,)
+        (NP (CD:[853..854] 7) (NNS:[855..867] liposarcomas))
+        (,:[867..868] ,)
+        (NP (CD:[869..870] 5) (NNS:[872..889] rhabdomyosarcomas))
+        (,:[889..890] ,) (CC:[891..894] and)
+        (NP (CD:[895..896] 9) (NNS:[897..912] leiomyosarcomas))))
+    (.:[912..913] .)))
+
+;sentence 10 Span:914..922
+;RESULTS:
+(SENT
+  (NP (NNS:[914..921] RESULTS) (::[921..922] :)))
+
+;sentence 11 Span:923..1074
+;Of the 50 sarcomas evaluated,  only 1 (2%) definable mutation was found; a
+;GGC to AGC transition at codon 12 of  H-ras was found in a rhabdomyosarcoma.
+;[933..941]:malignancy:"sarcomas"
+;[976..984]:variation-event:"mutation"
+;[998..1001]:variation-state-original:"GGC"
+;[1005..1008]:variation-state-altered:"AGC"
+;[1009..1019]:variation-type:"transition"
+;[1023..1031]:variation-location:"codon 12"
+;[1036..1041]:gene-rna:"H-ras"
+;[1057..1073]:malignancy:"rhabdomyosarcoma"
+(SENT
+  (S
+    (S
+      (PP-3 (IN:[923..925] Of)
+        (NP
+          (NP (DT:[926..929] the) (CD:[930..932] 50) (NNS:[933..941] sarcomas))
+          (VP (VBN:[942..951] evaluated)
+            (NP (-NONE-:[951..951] *)))))
+      (,:[951..952] ,)
+      (NP-SBJ-2
+        (NP
+          (ADVP (RB:[954..958] only))
+          (CD:[959..960] 1)
+          (PRN (-LRB-:[961..962] -LRB-)
+            (NP (CD:[962..963] 2) (NN:[963..964] %))
+            (-RRB-:[964..965] -RRB-))
+          (JJ:[966..975] definable) (NN:[976..984] mutation))
+        (PP-3 (-NONE-:[984..984] *T*)))
+      (VP (VBD:[985..988] was)
+        (VP (VBN:[989..994] found)
+          (NP-2 (-NONE-:[994..994] *)))))
+    (::[994..995] ;)
+    (S
+      (NP-SBJ-1
+        (NP (DT:[996..997] a)
+          (NML
+            (NML (NN:[998..1001] GGC))
+            (PP (TO:[1002..1004] to)
+              (NP (NN:[1005..1008] AGC))))
+          (NN:[1009..1019] transition))
+        (PP-LOC (IN:[1020..1022] at)
+          (NP
+            (NP (NN:[1023..1028] codon) (CD:[1029..1031] 12))
+            (PP (IN:[1032..1034] of)
+              (NP (NN:[1036..1041] H-ras))))))
+      (VP (VBD:[1042..1045] was)
+        (VP (VBN:[1046..1051] found)
+          (NP-1 (-NONE-:[1051..1051] *))
+          (PP-LOC (IN:[1052..1054] in)
+            (NP (DT:[1055..1056] a) (NN:[1057..1073] rhabdomyosarcoma))))))
+    (.:[1073..1074] .)))
+
+;sentence 12 Span:1075..1118
+;None of the patients had a K-ras  mutation.
+;[1102..1107]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1075..1079] None))
+      (PP (IN:[1080..1082] of)
+        (NP (DT:[1083..1086] the) (NNS:[1087..1095] patients))))
+    (VP (VBD:[1096..1099] had)
+      (NP (DT:[1100..1101] a) (NN:[1102..1107] K-ras) (NN:[1109..1117] mutation)))
+    (.:[1117..1118] .)))
+
+;sentence 13 Span:1119..1385
+;The rates of incidence of ras point mutations in these samples were  much
+;lower (H-ras: 2%; 95% confidence interval [95% CI], 0-11.5% and K-ras: 0%) 
+;than described for both genes in Korean studies (H-ras: 16%; 95% CI,
+;5.2-26.8%  and K-ras: 44%; 95% CI, 29.5-58.5%).
+;[1145..1148]:gene-rna:"ras"
+;[1149..1164]:variation-type:"point mutations"
+;[1200..1205]:gene-rna:"H-ras"
+;[1257..1262]:gene-rna:"K-ras"
+;[1288..1298]:gene-rna:"both genes"
+;[1318..1323]:gene-rna:"H-ras"
+;[1353..1358]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1119..1122] The) (NNS:[1123..1128] rates))
+      (PP (IN:[1129..1131] of)
+        (NP
+          (NP (NN:[1132..1141] incidence))
+          (PP (IN:[1142..1144] of)
+            (NP
+              (NP (NN:[1145..1148] ras)
+                 (NN:[1149..1154] point) (NNS:[1155..1164] mutations))
+              (PP (IN:[1165..1167] in)
+                (NP (DT:[1168..1173] these) (NNS:[1174..1181] samples))))))))
+    (VP (VBD:[1182..1186] were)
+      (ADJP-PRD
+        (ADJP (RB:[1188..1192] much) (JJR:[1193..1198] lower)
+          (PRN (-LRB-:[1199..1200] -LRB-)
+            (FRAG
+              (FRAG
+                (NP
+                  (NP (NN:[1200..1205] H-ras))
+                  (::[1205..1206] :)
+                  (NP (CD:[1207..1208] 2) (NN:[1208..1209] %)))
+                (::[1209..1210] ;)
+                (NP
+                  (NP (CD:[1211..1213] 95) (NN:[1213..1214] %)
+                      (NN:[1215..1225] confidence) (NN:[1226..1234] interval))
+                  (NP (-LRB-:[1235..1236] -LSB-) (CD:[1236..1238] 95)
+                      (NN:[1238..1239] %) (NN:[1240..1242] CI)
+                      (-RRB-:[1242..1243] -RSB-)))
+                (,:[1243..1244] ,)
+                (NP
+                  (QP (CD:[1245..1246] 0) (HYPH:[1246..1247] -)
+                      (CD:[1247..1251] 11.5))
+                  (NN:[1251..1252] %)))
+              (CC:[1253..1256] and)
+              (NP
+                (NP (NN:[1257..1262] K-ras))
+                (::[1262..1263] :)
+                (NP (CD:[1264..1265] 0) (NN:[1265..1266] %))))
+            (-RRB-:[1266..1267] -RRB-)))
+        (SBAR (IN:[1269..1273] than)
+          (S
+            (NP-SBJ-1 (-NONE-:[1273..1273] *))
+            (VP (VBN:[1274..1283] described)
+              (NP-1 (-NONE-:[1283..1283] *))
+              (PP (IN:[1284..1287] for)
+                (NP (DT:[1288..1292] both) (NNS:[1293..1298] genes)))
+              (PP (IN:[1299..1301] in)
+                (NP (JJ:[1302..1308] Korean) (NNS:[1309..1316] studies)))
+              (PRN (-LRB-:[1317..1318] -LRB-)
+                (FRAG
+                  (FRAG
+                    (NP
+                      (NP (NN:[1318..1323] H-ras))
+                      (::[1323..1324] :)
+                      (NP (CD:[1325..1327] 16) (NN:[1327..1328] %)))
+                    (::[1328..1329] ;)
+                    (NP (CD:[1330..1332] 95) (NN:[1332..1333] %)
+                        (NN:[1334..1336] CI))
+                    (,:[1336..1337] ,)
+                    (NP
+                      (QP (CD:[1338..1341] 5.2) (HYPH:[1341..1342] -)
+                          (CD:[1342..1346] 26.8))
+                      (NN:[1346..1347] %)))
+                  (CC:[1349..1352] and)
+                  (FRAG
+                    (NP
+                      (NP (NN:[1353..1358] K-ras))
+                      (::[1358..1359] :)
+                      (NP (CD:[1360..1362] 44) (NN:[1362..1363] %)))
+                    (::[1363..1364] ;)
+                    (NP (CD:[1365..1367] 95) (NN:[1367..1368] %)
+                        (NN:[1369..1371] CI))
+                    (,:[1371..1372] ,)
+                    (NP
+                      (QP (CD:[1373..1377] 29.5) (HYPH:[1377..1378] -)
+                          (CD:[1378..1382] 58.5))
+                      (NN:[1382..1383] %))))
+                (-RRB-:[1383..1384] -RRB-)))))))
+    (.:[1384..1385] .)))
+
+;sentence 14 Span:1386..1398
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1386..1397] CONCLUSIONS) (::[1397..1398] :)))
+
+;sentence 15 Span:1399..1526
+;Although the reason for this  discrepancy is not clear, there were no major
+;differences found in histology or  clinical stages.
+(SENT
+  (S
+    (SBAR-ADV (IN:[1399..1407] Although)
+      (S
+        (NP-SBJ
+          (NP (DT:[1408..1411] the) (NN:[1412..1418] reason))
+          (PP (IN:[1419..1422] for)
+            (NP (DT:[1423..1427] this) (NN:[1429..1440] discrepancy))))
+        (VP (VBZ:[1441..1443] is) (RB:[1444..1447] not)
+          (ADJP-PRD (JJ:[1448..1453] clear)))))
+    (,:[1453..1454] ,)
+    (NP-SBJ (EX:[1455..1460] there))
+    (VP (VBD:[1461..1465] were)
+      (NP
+        (NP (DT:[1466..1468] no) (JJ:[1469..1474] major)
+            (NNS:[1475..1486] differences))
+        (VP (VBN:[1487..1492] found)
+          (NP (-NONE-:[1492..1492] *))
+          (PP (IN:[1493..1495] in)
+            (NP
+              (NP (NN:[1496..1505] histology))
+              (CC:[1506..1508] or)
+              (NP (JJ:[1510..1518] clinical) (NNS:[1519..1525] stages)))))))
+    (.:[1525..1526] .)))
+
+;sentence 16 Span:1527..1777
+;Based on this study of 50 sarcoma samples from American  patients and the
+;authors' previous study of 45 Korean tumor samples, the authors  conclude
+;that differing genetic and/or environmental mechanisms can affect  sarcoma
+;development or progression.
+;[1553..1568]:malignancy:"sarcoma samples"
+;[1638..1651]:malignancy:"tumor samples"
+;[1742..1749]:malignancy:"sarcoma"
+(SENT
+  (S
+    (PP (VBN:[1527..1532] Based)
+      (PP (IN:[1533..1535] on)
+        (NP
+          (NP
+            (NP (DT:[1536..1540] this) (NN:[1541..1546] study))
+            (PP (IN:[1547..1549] of)
+              (NP
+                (NP (CD:[1550..1552] 50)
+                   (NN:[1553..1560] sarcoma) (NNS:[1561..1568] samples))
+                (PP (IN:[1569..1573] from)
+                  (NP (JJ:[1574..1582] American) (NNS:[1584..1592] patients))))))
+          (CC:[1593..1596] and)
+          (NP
+            (NP
+              (NP (DT:[1597..1600] the) (NNS:[1601..1608] authors)
+                  (POS:[1608..1609] '))
+              (JJ:[1610..1618] previous) (NN:[1619..1624] study))
+            (PP (IN:[1625..1627] of)
+              (NP (CD:[1628..1630] 45) (JJ:[1631..1637] Korean)
+                 (NN:[1638..1643] tumor) (NNS:[1644..1651] samples)))))))
+    (,:[1651..1652] ,)
+    (NP-SBJ (DT:[1653..1656] the) (NNS:[1657..1664] authors))
+    (VP (VBP:[1666..1674] conclude)
+      (SBAR (IN:[1675..1679] that)
+        (S
+          (NP-SBJ (VBG:[1680..1689] differing)
+            (ADJP (JJ:[1690..1697] genetic) (CC:[1698..1704] and/or)
+                  (JJ:[1705..1718] environmental))
+            (NNS:[1719..1729] mechanisms))
+          (VP (MD:[1730..1733] can)
+            (VP (VB:[1734..1740] affect)
+              (NP
+                (NP
+                  (NML-1 (NN:[1742..1749] sarcoma))
+                  (NN:[1750..1761] development))
+                (CC:[1762..1764] or)
+                (NP
+                  (NML-1 (-NONE-:[1764..1764] *P*))
+                  (NN:[1765..1776] progression))))))))
+    (.:[1776..1777] .)))
+
+;sentence 17 Span:1778..2063
+;Mutation of the H-ras and K-ras genes  appears to be uncommon in sarcomas
+;occurring in American patients, suggesting  that the activation by point
+;mutations of the H-ras and K-ras genes does not  play a significant role in
+;the pathogenesis or progression of sarcoma in these  patients.
+;[1794..1799]:gene-rna:"H-ras"
+;[1804..1809]:gene-rna:"K-ras"
+;[1843..1851]:malignancy:"sarcomas"
+;[1919..1934]:variation-type:"point mutations"
+;[1942..1947]:gene-rna:"H-ras"
+;[1952..1957]:gene-rna:"K-ras"
+;[2036..2043]:malignancy:"sarcoma"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (NN:[1778..1786] Mutation))
+      (PP (IN:[1787..1789] of)
+        (NP (DT:[1790..1793] the)
+          (NML
+            (NML (NN:[1794..1799] H-ras)
+              (NML-2 (-NONE-:[1799..1799] *P*)))
+            (CC:[1800..1803] and)
+            (NML (NN:[1804..1809] K-ras)
+              (NML-2 (NNS:[1810..1815] genes)))))))
+    (VP (VBZ:[1817..1824] appears)
+      (S
+        (NP-SBJ-3 (-NONE-:[1824..1824] *))
+        (VP (TO:[1825..1827] to)
+          (VP (VB:[1828..1830] be)
+            (ADJP-PRD (JJ:[1831..1839] uncommon))
+            (PP-LOC (IN:[1840..1842] in)
+              (NP
+                (NP (NNS:[1843..1851] sarcomas))
+                (VP (VBG:[1852..1861] occurring)
+                  (PP (IN:[1862..1864] in)
+                    (NP (JJ:[1865..1873] American) (NNS:[1874..1882] patients)))))))))
+      (,:[1882..1883] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1883..1883] *))
+        (VP (VBG:[1884..1894] suggesting)
+          (SBAR (IN:[1896..1900] that)
+            (S
+              (NP-SBJ
+                (NP (DT:[1901..1904] the) (NN:[1905..1915] activation))
+                (PP (IN:[1916..1918] by)
+                  (NP (NN:[1919..1924] point) (NNS:[1925..1934] mutations)))
+                (PP (IN:[1935..1937] of)
+                  (PP (DT:[1938..1941] the)
+                    (NML
+                      (NML (NN:[1942..1947] H-ras)
+                        (NML-1 (-NONE-:[1947..1947] *P*)))
+                      (CC:[1948..1951] and)
+                      (NML (NN:[1952..1957] K-ras)
+                        (NML-1 (NNS:[1958..1963] genes)))))))
+              (VP (VBZ:[1964..1968] does) (RB:[1969..1972] not)
+                (VP (VB:[1974..1978] play)
+                  (NP (DT:[1979..1980] a) (JJ:[1981..1992] significant)
+                      (NN:[1993..1997] role))
+                  (PP (IN:[1998..2000] in)
+                    (NP
+                      (NP (DT:[2001..2004] the) (NN:[2005..2017] pathogenesis)
+                          (CC:[2018..2020] or) (NN:[2021..2032] progression))
+                      (PP (IN:[2033..2035] of)
+                        (NP (NN:[2036..2043] sarcoma)))))
+                  (PP-LOC (IN:[2044..2046] in)
+                    (NP (DT:[2047..2052] these) (NNS:[2054..2062] patients))))))))))
+    (.:[2062..2063] .)))
+
+;section 18 Span:2067..2112
+;PMID: 10391564 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2067..2071] PMID) (::[2071..2072] :) (CD:[2073..2081] 10391564)
+        (NN:[2082..2083] -LSB-) (NNP:[2083..2089] PubMed) (::[2090..2091] -)
+        (NN:[2092..2099] indexed) (IN:[2100..2103] for)
+        (NNP:[2104..2112] MEDLINE-RSB-)))

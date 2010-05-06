@@ -1,0 +1,642 @@
+;PMID: 11505392
+;source_file_600.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..155] = [t:36..155]
+;2)section:[e:159..258] = [t:159..258]
+;3)section:[e:262..436] = [t:262..436]
+;4)sentence:[e:440..610] = [t:440..610]
+;5)sentence:[e:611..803] = [t:611..803]
+;6)sentence:[e:804..1076] = [t:804..1076]
+;7)sentence:[e:1077..1152] = [t:1077..1152]
+;8)sentence:[e:1153..1293] = [t:1153..1293]
+;9)sentence:[e:1294..1397] = [t:1294..1397]
+;10)sentence:[e:1398..1476] = [t:1398..1476]
+;11)sentence:[e:1477..1666] = [t:1477..1666]
+;12)sentence:[e:1667..1860] = [t:1667..1860]
+;13)sentence:[e:1861..2223] = [t:1861..2223]
+;14)sentence:[e:2224..2343] = [t:2224..2343]
+;15)sentence:[e:2344..2513] = [t:2344..2513]
+;16)sentence:[e:2514..2743] = [t:2514..2743]
+;17)section:[e:2744..2783] = [t:2744..2783]
+;18)section:[e:2787..2832] = [t:2787..2832]
+
+;section 0 Span:0..31
+;Cancer  2001 Aug 1;92(3):488-99
+(SEC
+  (FRAG (NN:[0..6] Cancer) (CD:[8..12] 2001) (CC:[13..16] Aug)
+        (CD:[17..22] 1;92-LRB-) (CD:[22..23] 3) (-RRB-:[23..24] -RRB-)
+        (CD:[24..28] :488) (NN:[28..29] -) (CD:[29..31] 99)))
+
+;sentence 1 Span:36..155
+;The association of K-ras gene mutation and vascular endothelial growth factor
+; gene expression in pancreatic carcinoma.
+;[55..60]:gene-rna:"K-ras"
+;[79..113]:gene-rna:"vascular endothelial growth factor"
+;[134..154]:malignancy:"pancreatic carcinoma"
+(SENT
+  (NP-HLN
+    (NP (DT:[36..39] The) (NN:[40..51] association))
+    (PP (IN:[52..54] of)
+      (NP
+        (NP (NN:[55..60] K-ras) (NN:[61..65] gene) (NN:[66..74] mutation))
+        (CC:[75..78] and)
+        (NP
+          (NML (JJ:[79..87] vascular) (JJ:[88..99] endothelial)
+            (NML (NN:[100..106] growth) (NN:[107..113] factor)))
+          (NN:[115..119] gene) (NN:[120..130] expression))))
+    (PP (IN:[131..133] in)
+      (NP (JJ:[134..144] pancreatic) (NN:[145..154] carcinoma)))
+    (.:[154..155] .)))
+
+;section 2 Span:159..258
+;Ikeda N, Nakajima Y, Sho M, Adachi M, Huang CL, Iki K, Kanehiro H, Hisanaga
+;M,  Nakano H, Miyake M.
+(SEC
+  (FRAG (NNP:[159..164] Ikeda) (NNP:[165..166] N) (,:[166..167] ,)
+        (NNP:[168..176] Nakajima) (NNP:[177..178] Y) (,:[178..179] ,)
+        (NNP:[180..183] Sho) (NNP:[184..186] M,) (NNP:[187..193] Adachi)
+        (NNP:[194..196] M,) (NNP:[197..202] Huang) (NNP:[203..205] CL)
+        (,:[205..206] ,) (NNP:[207..210] Iki) (NNP:[211..212] K)
+        (,:[212..213] ,) (NNP:[214..222] Kanehiro) (NNP:[223..224] H)
+        (,:[224..225] ,) (NNP:[226..234] Hisanaga) (NNP:[235..237] M,)
+        (NNP:[239..245] Nakano) (NNP:[246..247] H) (,:[247..248] ,)
+        (NNP:[249..255] Miyake) (NNP:[256..258] M.)))
+
+;section 3 Span:262..436
+;Department of Thoracic Surgery and Department V of Oncology, Kitano Hospital,
+; Tazuke Kofukai Medical Research Institute, 13-3, Kamiyama-cho, Kita-ku,
+;Osaka  530-8480, Japan.
+(SEC
+  (FRAG (NNP:[262..272] Department) (IN:[273..275] of) (NNP:[276..284] Thoracic)
+        (NNP:[285..292] Surgery) (CC:[293..296] and) (NNP:[297..307] Department)
+        (NN:[308..309] V) (IN:[310..312] of) (NNP:[313..321] Oncology)
+        (,:[321..322] ,) (NNP:[323..329] Kitano) (NNP:[330..338] Hospital)
+        (,:[338..339] ,) (NNP:[341..347] Tazuke) (NNP:[348..355] Kofukai)
+        (NNP:[356..363] Medical) (NNP:[364..372] Research)
+        (NNP:[373..382] Institute) (,:[382..383] ,) (CD:[384..386] 13)
+        (HYPH:[386..387] -) (CD:[387..388] 3) (,:[388..389] ,)
+        (NNP:[390..398] Kamiyama) (HYPH:[398..399] -) (JJ:[399..402] cho)
+        (,:[402..403] ,) (NNP:[404..408] Kita) (HYPH:[408..409] -)
+        (JJ:[409..411] ku) (,:[411..412] ,) (NNP:[413..418] Osaka)
+        (CD:[420..423] 530) (HYPH:[423..424] -) (CD:[424..428] 8480)
+        (,:[428..429] ,) (NNP:[430..435] Japan) (.:[435..436] .)))
+
+;sentence 4 Span:440..610
+;BACKGROUND: Previously, the authors reported the role of the vascular 
+;endothelial growth factor (VEGF) as an angiogenic factor in 40 patients with 
+;pancreatic carcinoma.
+;[501..536]:gene-protein:"vascular  endothelial growth factor"
+;[538..542]:gene-protein:"VEGF"
+;[589..609]:malignancy:"pancreatic carcinoma"
+(SENT
+  (NP (NN:[440..450] BACKGROUND) (::[450..451] :))
+  (S
+    (ADVP-TMP (RB:[452..462] Previously))
+    (,:[462..463] ,)
+    (NP-SBJ (DT:[464..467] the) (NNS:[468..475] authors))
+    (VP (VBD:[476..484] reported)
+      (NP
+        (NP (DT:[485..488] the) (NN:[489..493] role))
+        (PP (IN:[494..496] of)
+          (NP
+            (NP (DT:[497..500] the)
+               (JJ:[501..509] vascular) (JJ:[511..522] endothelial)
+               (NN:[523..529] growth) (NN:[530..536] factor))
+            (NP (-LRB-:[537..538] -LRB-) (NN:[538..542] VEGF)
+                (-RRB-:[542..543] -RRB-)))))
+      (PP (IN:[544..546] as)
+        (NP (DT:[547..549] an) (JJ:[550..560] angiogenic) (NN:[561..567] factor)))
+      (PP-LOC (IN:[568..570] in)
+        (NP
+          (NP (CD:[571..573] 40) (NNS:[574..582] patients))
+          (PP (IN:[583..587] with)
+            (NP (JJ:[589..599] pancreatic) (NN:[600..609] carcinoma))))))
+    (.:[609..610] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[440..610]::NP:S:
+
+;sentence 5 Span:611..803
+;In this study, they investigated the mechanism underlying  the regulation of
+;VEGF gene expression and evaluated VEGF expression and K-ras  gene status in
+;48 patients with pancreatic carcinoma.
+;[688..692]:gene-rna:"VEGF"
+;[723..727]:gene-rna:"VEGF"
+;[743..748]:gene-rna:"K-ras"
+;[782..802]:malignancy:"pancreatic carcinoma"
+(SENT
+  (S
+    (PP (IN:[611..613] In)
+      (NP (DT:[614..618] this) (NN:[619..624] study)))
+    (,:[624..625] ,)
+    (NP-SBJ (PRP:[626..630] they))
+    (VP
+      (VP (VBD:[631..643] investigated)
+        (NP
+          (NP (DT:[644..647] the) (NN:[648..657] mechanism))
+          (VP (VBG:[658..668] underlying)
+            (NP
+              (NP (DT:[670..673] the) (NN:[674..684] regulation))
+              (PP (IN:[685..687] of)
+                (NP (NN:[688..692] VEGF) (NN:[693..697] gene)
+                    (NN:[698..708] expression)))))))
+      (CC:[709..712] and)
+      (VP (VBD:[713..722] evaluated)
+        (NP
+          (NP (NN:[723..727] VEGF) (NN:[728..738] expression))
+          (CC:[739..742] and)
+          (NP
+            (NML (NN:[743..748] K-ras) (NN:[750..754] gene))
+            (NN:[755..761] status)))
+        (PP-LOC (IN:[762..764] in)
+          (NP
+            (NP (CD:[765..767] 48) (NNS:[768..776] patients))
+            (PP (IN:[777..781] with)
+              (NP (JJ:[782..792] pancreatic) (NN:[793..802] carcinoma)))))))
+    (.:[802..803] .)))
+
+;sentence 6 Span:804..1076
+;METHODS: The authors used  quantitative reverse transcriptase-polymerase
+;chain reaction analysis and direct  sequencing techniques for a retrospective
+;study of VEGF gene expression and  K-ras gene status in tumor tissue samples
+;from 48 patients with pancreatic  carcinoma.
+;[844..865]:gene-protein:"reverse transcriptase"
+;[866..876]:gene-protein:"polymerase"
+;[964..968]:gene-rna:"VEGF"
+;[990..995]:gene-rna:"K-ras"
+;[1011..1031]:malignancy:"tumor tissue samples"
+;[1054..1075]:malignancy:"pancreatic  carcinoma"
+(SENT
+  (NP (NNS:[804..811] METHODS) (::[811..812] :))
+  (S
+    (NP-SBJ (DT:[813..816] The) (NNS:[817..824] authors))
+    (VP (VBD:[825..829] used)
+      (NP
+        (NP (JJ:[831..843] quantitative)
+          (NML
+            (NML (JJ:[844..851] reverse) (NN:[852..865] transcriptase))
+            (HYPH:[865..866] -)
+            (NML (NN:[866..876] polymerase) (NN:[877..882] chain)
+                 (NN:[883..891] reaction)))
+          (NN:[892..900] analysis))
+        (CC:[901..904] and)
+        (NP
+          (NML (JJ:[905..911] direct) (VBG:[913..923] sequencing))
+          (NNS:[924..934] techniques)))
+      (PP (IN:[935..938] for)
+        (NP
+          (NP (DT:[939..940] a) (JJ:[941..954] retrospective)
+              (NN:[955..960] study))
+          (PP (IN:[961..963] of)
+            (NP
+              (NP (NN:[964..968] VEGF) (NN:[969..973] gene)
+                  (NN:[974..984] expression))
+              (CC:[985..988] and)
+              (NP
+                (NML (NN:[990..995] K-ras) (NN:[996..1000] gene))
+                (NN:[1001..1007] status))))
+          (PP-LOC (IN:[1008..1010] in)
+            (NP
+              (NP (NN:[1011..1016] tumor) (NN:[1017..1023] tissue)
+                  (NNS:[1024..1031] samples))
+              (PP (IN:[1032..1036] from)
+                (NP
+                  (NP (CD:[1037..1039] 48) (NNS:[1040..1048] patients))
+                  (PP (IN:[1049..1053] with)
+                    (NP (JJ:[1054..1064] pancreatic) (NN:[1066..1075] carcinoma))))))))))
+    (.:[1075..1076] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[804..1076]::NP:S:
+
+;sentence 7 Span:1077..1152
+;Immunohistochemistry also was used to investigate VEGF protein  expression.
+;[1127..1131]:gene-protein:"VEGF"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1077..1097] Immunohistochemistry))
+    (ADVP (RB:[1098..1102] also))
+    (VP (VBD:[1103..1106] was)
+      (VP (VBN:[1107..1111] used)
+        (S-ADV
+          (NP-SBJ-1 (-NONE-:[1111..1111] *))
+          (VP (TO:[1112..1114] to)
+            (VP (VB:[1115..1126] investigate)
+              (NP (NN:[1127..1131] VEGF) (NN:[1132..1139] protein)
+                  (NN:[1141..1151] expression)))))))
+    (.:[1151..1152] .)))
+
+;sentence 8 Span:1153..1293
+;RESULTS: Thirty-one tumors (64.6%) were evaluated with high VEGF  expression,
+;and 17 tumors (35.4%) were evaluated with low VEGF expression.
+;[1173..1179]:malignancy:"tumors"
+;[1213..1217]:gene-generic:"VEGF"
+;[1238..1244]:malignancy:"tumors"
+;[1277..1281]:gene-generic:"VEGF"
+(SENT
+  (NP (NNS:[1153..1160] RESULTS) (::[1160..1161] :))
+  (S
+    (S
+      (NP-SBJ-2 (CD:[1162..1172] Thirty-one) (NNS:[1173..1179] tumors)
+        (PRN (-LRB-:[1180..1181] -LRB-)
+          (NP (CD:[1181..1185] 64.6) (NN:[1185..1186] %))
+          (-RRB-:[1186..1187] -RRB-)))
+      (VP (VBD:[1188..1192] were)
+        (VP (VBN:[1193..1202] evaluated)
+          (NP-2 (-NONE-:[1202..1202] *))
+          (PP (IN:[1203..1207] with)
+            (NP (JJ:[1208..1212] high) (NN:[1213..1217] VEGF)
+                (NN:[1219..1229] expression))))))
+    (,:[1229..1230] ,) (CC:[1231..1234] and)
+    (S
+      (NP-SBJ-1 (CD:[1235..1237] 17) (NNS:[1238..1244] tumors)
+        (PRN (-LRB-:[1245..1246] -LRB-)
+          (NP (CD:[1246..1250] 35.4) (NN:[1250..1251] %))
+          (-RRB-:[1251..1252] -RRB-)))
+      (VP (VBD:[1253..1257] were)
+        (VP (VBN:[1258..1267] evaluated)
+          (NP-1 (-NONE-:[1267..1267] *))
+          (PP (IN:[1268..1272] with)
+            (NP (JJ:[1273..1276] low) (NN:[1277..1281] VEGF)
+                (NN:[1282..1292] expression))))))
+    (.:[1292..1293] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1153..1293]::NP:S:
+
+;sentence 9 Span:1294..1397
+;Of  the 48 primary pancreatic tumors studied, 33 tumors (68.8%) contained
+;mutations  of the K-ras gene.
+;[1305..1330]:malignancy:"primary pancreatic tumors"
+;[1343..1349]:malignancy:"tumors"
+;[1386..1391]:gene-rna:"K-ras"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[1294..1296] Of)
+      (NP
+        (NP (DT:[1298..1301] the) (CD:[1302..1304] 48)
+           (JJ:[1305..1312] primary) (JJ:[1313..1323] pancreatic)
+           (NNS:[1324..1330] tumors))
+        (VP (VBN:[1331..1338] studied)
+          (NP (-NONE-:[1338..1338] *)))))
+    (,:[1338..1339] ,)
+    (NP-SBJ
+      (NP (CD:[1340..1342] 33) (NNS:[1343..1349] tumors))
+      (PRN (-LRB-:[1350..1351] -LRB-)
+        (NP (CD:[1351..1355] 68.8) (NN:[1355..1356] %))
+        (-RRB-:[1356..1357] -RRB-))
+      (PP-1 (-NONE-:[1357..1357] *T*)))
+    (VP (VBD:[1358..1367] contained)
+      (NP
+        (NP (NNS:[1368..1377] mutations))
+        (PP (IN:[1379..1381] of)
+          (NP (DT:[1382..1385] the) (NN:[1386..1391] K-ras)
+              (NN:[1392..1396] gene)))))
+    (.:[1396..1397] .)))
+
+;sentence 10 Span:1398..1476
+;There was a significant correlation between VEGF expression  and K-ras
+;status.
+;[1442..1446]:gene-generic:"VEGF"
+;[1463..1468]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (EX:[1398..1403] There))
+    (VP (VBD:[1404..1407] was)
+      (NP-PRD
+        (NP (DT:[1408..1409] a) (JJ:[1410..1421] significant)
+            (NN:[1422..1433] correlation))
+        (PP (IN:[1434..1441] between)
+          (NP
+            (NP (NN:[1442..1446] VEGF) (NN:[1447..1457] expression))
+            (CC:[1459..1462] and)
+            (NP (NN:[1463..1468] K-ras) (NN:[1469..1475] status))))))
+    (.:[1475..1476] .)))
+
+;sentence 11 Span:1477..1666
+;Twenty-five of 33 tumors (75.8%) with mutant K-ras genes  showed high VEGF
+;expression, whereas only 6 of 15 tumors with the wild type  K-ras (40.0%)
+;showed high VEGF expression (P = 0.038).
+;[1495..1501]:malignancy:"tumors"
+;[1522..1527]:gene-rna:"K-ras"
+;[1547..1551]:gene-generic:"VEGF"
+;[1585..1591]:malignancy:"tumors"
+;[1612..1617]:gene-rna:"K-ras"
+;[1638..1642]:gene-generic:"VEGF"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1477..1488] Twenty-five))
+      (PP (IN:[1489..1491] of)
+        (NP
+          (NP (CD:[1492..1494] 33) (NNS:[1495..1501] tumors))
+          (PRN (-LRB-:[1502..1503] -LRB-)
+            (NP (CD:[1503..1507] 75.8) (NN:[1507..1508] %))
+            (-RRB-:[1508..1509] -RRB-))
+          (PP (IN:[1510..1514] with)
+            (NP (JJ:[1515..1521] mutant) (NN:[1522..1527] K-ras)
+                (NNS:[1528..1533] genes))))))
+    (VP (VBD:[1535..1541] showed)
+      (NP (JJ:[1542..1546] high) (NN:[1547..1551] VEGF)
+          (NN:[1552..1562] expression))
+      (,:[1562..1563] ,)
+      (SBAR-ADV (IN:[1564..1571] whereas)
+        (S
+          (NP-SBJ
+            (NP
+              (ADVP (RB:[1572..1576] only))
+              (CD:[1577..1578] 6))
+            (PP (IN:[1579..1581] of)
+              (NP
+                (NP (CD:[1582..1584] 15) (NNS:[1585..1591] tumors))
+                (PP (IN:[1592..1596] with)
+                  (NP (DT:[1597..1600] the)
+                    (NML (JJ:[1601..1605] wild) (NN:[1606..1610] type))
+                    (NN:[1612..1617] K-ras)))
+                (PRN (-LRB-:[1618..1619] -LRB-)
+                  (NP (CD:[1619..1623] 40.0) (NN:[1623..1624] %))
+                  (-RRB-:[1624..1625] -RRB-)))))
+          (VP (VBD:[1626..1632] showed)
+            (NP (JJ:[1633..1637] high) (NN:[1638..1642] VEGF)
+                (NN:[1643..1653] expression))
+            (PRN (-LRB-:[1654..1655] -LRB-)
+              (S
+                (NP-SBJ (NN:[1655..1656] P))
+                (VP (SYM:[1657..1658] =)
+                  (NP (CD:[1659..1664] 0.038))))
+              (-RRB-:[1664..1665] -RRB-))))))
+    (.:[1665..1666] .)))
+
+;sentence 12 Span:1667..1860
+;The mean (+/- standard  error) VEGF conservation rate for the 33 tumors with
+;mutant K-ras was 1.839 +/-  1.241, and that for the 15 tumors with wild type
+;K-ras was 1.057 +/- 0.983 (P =  0.037).
+;[1698..1702]:gene-generic:"VEGF"
+;[1732..1738]:malignancy:"tumors"
+;[1751..1756]:gene-rna:"K-ras"
+;[1799..1805]:malignancy:"tumors"
+;[1821..1826]:gene-rna:"K-ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1667..1670] The) (JJ:[1671..1675] mean)
+          (PRN (-LRB-:[1676..1677] -LRB-)
+            (NP (SYM:[1677..1680] +/-) (JJ:[1681..1689] standard)
+                (NN:[1691..1696] error))
+            (-RRB-:[1696..1697] -RRB-))
+          (NN:[1698..1702] VEGF) (NN:[1703..1715] conservation)
+           (NN:[1716..1720] rate))
+        (PP (IN:[1721..1724] for)
+          (NP
+            (NP (DT:[1725..1728] the) (CD:[1729..1731] 33)
+                (NNS:[1732..1738] tumors))
+            (PP (IN:[1739..1743] with)
+              (NP (JJ:[1744..1750] mutant) (NN:[1751..1756] K-ras))))))
+      (VP (VBD:[1757..1760] was)
+        (NP-PRD
+          (QP (CD:[1761..1766] 1.839) (SYM:[1767..1770] +/-)
+              (CD:[1772..1777] 1.241)))))
+    (,:[1777..1778] ,) (CC:[1779..1782] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[1783..1787] that))
+        (PP (IN:[1788..1791] for)
+          (NP
+            (NP (DT:[1792..1795] the) (CD:[1796..1798] 15)
+                (NNS:[1799..1805] tumors))
+            (PP (IN:[1806..1810] with)
+              (NP
+                (NML (JJ:[1811..1815] wild) (NN:[1816..1820] type))
+                (NN:[1821..1826] K-ras))))))
+      (VP (VBD:[1827..1830] was)
+        (NP-PRD
+          (QP (CD:[1831..1836] 1.057) (SYM:[1837..1840] +/-)
+              (CD:[1841..1846] 0.983)))
+        (PRN (-LRB-:[1847..1848] -LRB-)
+          (S
+            (NP-SBJ (NN:[1848..1849] P))
+            (VP (SYM:[1850..1851] =)
+              (NP (CD:[1853..1858] 0.037)))))))
+    (-RRB-:[1858..1859] -RRB-) (.:[1859..1860] .)))
+
+;sentence 13 Span:1861..2223
+;Furthermore, the median survival for patients with mutant K-ras was  shorter
+;than for those with wild type K-ras (10.6 months vs. 27.6 months, 
+;respectively; P = 0.026), whereas the median survival for patients with high 
+;VEGF expression was shorter compared with that for patients with low VEGF 
+;expression (9.5 months vs. 26.4 months, respectively; P = 0.002).
+;[1919..1924]:gene-rna:"K-ras"
+;[1968..1973]:gene-rna:"K-ras"
+;[2083..2087]:gene-generic:"VEGF"
+;[2152..2156]:gene-generic:"VEGF"
+(SENT
+  (S
+    (ADVP (RB:[1861..1872] Furthermore))
+    (,:[1872..1873] ,)
+    (NP-SBJ
+      (NP (DT:[1874..1877] the) (JJ:[1878..1884] median)
+          (NN:[1885..1893] survival))
+      (PP (IN:[1894..1897] for)
+        (NP
+          (NP (NNS:[1898..1906] patients))
+          (PP (IN:[1907..1911] with)
+            (NP (JJ:[1912..1918] mutant) (NN:[1919..1924] K-ras))))))
+    (VP (VBD:[1925..1928] was)
+      (ADJP-PRD
+        (ADJP (JJR:[1930..1937] shorter))
+        (PP (IN:[1938..1942] than)
+          (PP (IN:[1943..1946] for)
+            (NP
+              (NP (DT:[1947..1952] those))
+              (PP (IN:[1953..1957] with)
+                (NP
+                  (NML (JJ:[1958..1962] wild) (NN:[1963..1967] type))
+                  (NN:[1968..1973] K-ras)))))))
+      (PRN (-LRB-:[1974..1975] -LRB-)
+        (FRAG
+          (NP
+            (NP (CD:[1975..1979] 10.6) (NNS:[1980..1986] months))
+            (PP (IN:[1987..1990] vs.)
+              (NP (CD:[1991..1995] 27.6) (NNS:[1996..2002] months)))
+            (,:[2002..2003] ,)
+            (ADVP (RB:[2005..2017] respectively)))
+          (::[2017..2018] ;)
+          (S
+            (NP-SBJ (NN:[2019..2020] P))
+            (VP (SYM:[2021..2022] =)
+              (NP (CD:[2023..2028] 0.026)))))
+        (-RRB-:[2028..2029] -RRB-))
+      (,:[2029..2030] ,)
+      (SBAR-ADV (IN:[2031..2038] whereas)
+        (S
+          (NP-SBJ
+            (NP (DT:[2039..2042] the) (JJ:[2043..2049] median)
+                (NN:[2050..2058] survival))
+            (PP (IN:[2059..2062] for)
+              (NP
+                (NP (NNS:[2063..2071] patients))
+                (PP (IN:[2072..2076] with)
+                  (NP (JJ:[2077..2081] high) (NN:[2083..2087] VEGF)
+                      (NN:[2088..2098] expression))))))
+          (VP (VBD:[2099..2102] was)
+            (ADJP-PRD (JJR:[2103..2110] shorter))
+            (S-ADV
+              (NP-SBJ-1 (-NONE-:[2110..2110] *))
+              (VP (VBN:[2111..2119] compared)
+                (NP-1 (-NONE-:[2119..2119] *))
+                (PP-CLR (IN:[2120..2124] with)
+                  (NP
+                    (NP (DT:[2125..2129] that))
+                    (PP (IN:[2130..2133] for)
+                      (NP
+                        (NP (NNS:[2134..2142] patients))
+                        (PP (IN:[2143..2147] with)
+                          (NP (JJ:[2148..2151] low) (NN:[2152..2156] VEGF)
+                              (NN:[2158..2168] expression)))))))
+                (PRN (-LRB-:[2169..2170] -LRB-)
+                  (FRAG
+                    (NP
+                      (NP (CD:[2170..2173] 9.5) (NNS:[2174..2180] months))
+                      (PP (IN:[2181..2184] vs.)
+                        (NP (CD:[2185..2189] 26.4) (NNS:[2190..2196] months)))
+                      (,:[2196..2197] ,)
+                      (ADVP (RB:[2198..2210] respectively)))
+                    (::[2210..2211] ;)
+                    (S
+                      (NP-SBJ (NN:[2212..2213] P))
+                      (VP (SYM:[2214..2215] =)
+                        (NP (CD:[2216..2221] 0.002)))))
+                  (-RRB-:[2221..2222] -RRB-))))))))
+    (.:[2222..2223] .)))
+
+;sentence 14 Span:2224..2343
+;Cox regression  model analysis indicated that only the VEGF status was a
+;significant factor for  prognosis (P = 0.024).
+;[2279..2283]:gene-generic:"VEGF"
+(SENT
+  (S
+    (NP-SBJ (NNP:[2224..2227] Cox)
+      (NML (NN:[2228..2238] regression) (NN:[2240..2245] model))
+      (NN:[2246..2254] analysis))
+    (VP (VBD:[2255..2264] indicated)
+      (SBAR (IN:[2265..2269] that)
+        (S
+          (NP-SBJ
+            (ADVP (RB:[2270..2274] only))
+            (DT:[2275..2278] the) (NN:[2279..2283] VEGF)
+             (NN:[2284..2290] status))
+          (VP (VBD:[2291..2294] was)
+            (NP-PRD
+              (NP (DT:[2295..2296] a) (JJ:[2297..2308] significant)
+                  (NN:[2309..2315] factor))
+              (PP (IN:[2316..2319] for)
+                (NP (NN:[2321..2330] prognosis)))
+              (PRN (-LRB-:[2331..2332] -LRB-)
+                (S
+                  (NP-SBJ (NN:[2332..2333] P))
+                  (VP (SYM:[2334..2335] =)
+                    (NP (CD:[2336..2341] 0.024))))
+                (-RRB-:[2341..2342] -RRB-)))))))
+    (.:[2342..2343] .)))
+
+;sentence 15 Span:2344..2513
+;Other variables, i.e., K-ras status, histopathologic  tumor grade, tumor
+;status, lymph node status, metastatic status, gender, and age  at surgery,
+;were not significant.
+;[2367..2372]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[2344..2349] Other) (NNS:[2350..2359] variables))
+      (,:[2359..2360] ,)
+      (NP
+        (ADVP (FW:[2361..2365] i.e.))
+        (,:[2365..2366] ,)
+        (NP (NN:[2367..2372] K-ras) (NN:[2373..2379] status))
+        (,:[2379..2380] ,)
+        (NP (JJ:[2381..2396] histopathologic) (NN:[2398..2403] tumor)
+            (NN:[2404..2409] grade))
+        (,:[2409..2410] ,)
+        (NP (NN:[2411..2416] tumor) (NN:[2417..2423] status))
+        (,:[2423..2424] ,)
+        (NP
+          (NML (NN:[2425..2430] lymph) (NN:[2431..2435] node))
+          (NN:[2436..2442] status))
+        (,:[2442..2443] ,)
+        (NP (JJ:[2444..2454] metastatic) (NN:[2455..2461] status))
+        (,:[2461..2462] ,)
+        (NP (NN:[2463..2469] gender))
+        (,:[2469..2470] ,) (CC:[2471..2474] and)
+        (NP
+          (NP (NN:[2475..2478] age))
+          (PP (IN:[2480..2482] at)
+            (NP (NN:[2483..2490] surgery))))))
+    (,:[2490..2491] ,)
+    (VP (VBD:[2492..2496] were) (RB:[2497..2500] not)
+      (ADJP-PRD (JJ:[2501..2512] significant)))
+    (.:[2512..2513] .)))
+
+;sentence 16 Span:2514..2743
+;CONCLUSIONS: The results of this study suggest  that K-ras oncogene mutation
+;may be associated with VEGF expression and that  patients with pancreatic
+;carcinoma who have high VEGF expression are associated  with a poor
+;prognosis.
+;[2567..2572]:gene-rna:"K-ras"
+;[2614..2618]:gene-generic:"VEGF"
+;[2654..2674]:malignancy:"pancreatic carcinoma"
+;[2689..2693]:gene-generic:"VEGF"
+(SENT
+  (NP (NNS:[2514..2525] CONCLUSIONS) (::[2525..2526] :))
+  (S
+    (NP-SBJ
+      (NP (DT:[2527..2530] The) (NNS:[2531..2538] results))
+      (PP (IN:[2539..2541] of)
+        (NP (DT:[2542..2546] this) (NN:[2547..2552] study))))
+    (VP (VBP:[2553..2560] suggest)
+      (SBAR
+        (SBAR (IN:[2562..2566] that)
+          (S
+            (NP-SBJ-3 (NN:[2567..2572] K-ras) (NN:[2573..2581] oncogene)
+                      (NN:[2582..2590] mutation))
+            (VP (MD:[2591..2594] may)
+              (VP (VB:[2595..2597] be)
+                (VP (VBN:[2598..2608] associated)
+                  (NP-3 (-NONE-:[2608..2608] *))
+                  (PP-CLR (IN:[2609..2613] with)
+                    (NP (NN:[2614..2618] VEGF) (NN:[2619..2629] expression))))))))
+        (CC:[2630..2633] and)
+        (SBAR (IN:[2634..2638] that)
+          (S
+            (NP-SBJ-2
+              (NP
+                (NP (NNS:[2640..2648] patients))
+                (PP (IN:[2649..2653] with)
+                  (NP (JJ:[2654..2664] pancreatic) (NN:[2665..2674] carcinoma))))
+              (SBAR
+                (WHNP-1 (WP:[2675..2678] who))
+                (S
+                  (NP-SBJ-1 (-NONE-:[2678..2678] *T*))
+                  (VP (VBP:[2679..2683] have)
+                    (NP (JJ:[2684..2688] high) (NN:[2689..2693] VEGF)
+                        (NN:[2694..2704] expression))))))
+            (VP (VBP:[2705..2708] are)
+              (VP (VBN:[2709..2719] associated)
+                (NP-2 (-NONE-:[2719..2719] *))
+                (PP-CLR (IN:[2721..2725] with)
+                  (NP (DT:[2726..2727] a) (JJ:[2728..2732] poor)
+                      (NN:[2733..2742] prognosis)))))))))
+    (.:[2742..2743] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[2514..2743]::NP:S:
+
+;section 17 Span:2744..2783
+;Copyright 2001 American Cancer Society.
+(SEC
+  (FRAG (NN:[2744..2753] Copyright) (CD:[2754..2758] 2001)
+        (NNP:[2759..2767] American) (NNP:[2768..2774] Cancer)
+        (NNP:[2775..2782] Society) (.:[2782..2783] .)))
+
+;section 18 Span:2787..2832
+;PMID: 11505392 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2787..2791] PMID) (::[2791..2792] :) (CD:[2793..2801] 11505392)
+        (IN:[2802..2803] -LSB-) (NNP:[2803..2809] PubMed) (HYPH:[2810..2811] -)
+        (JJ:[2812..2819] indexed) (IN:[2820..2823] for)
+        (NNP:[2824..2832] MEDLINE-RSB-)))

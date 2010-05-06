@@ -1,0 +1,526 @@
+;PMID: 11356600
+;source_file_623.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..57] = [t:0..57]
+;1)section:[e:63..165] = [t:63..165]
+;2)section:[e:169..234] = [t:169..234]
+;3)section:[e:238..362] = [t:238..362]
+;4)sentence:[e:366..482] = [t:366..482]
+;5)sentence:[e:483..730] = [t:483..730]
+;6)sentence:[e:731..847] = [t:731..847]
+;7)sentence:[e:848..1022] = [t:848..1022]
+;8)sentence:[e:1023..1178] = [t:1023..1178]
+;9)sentence:[e:1179..1583] = [t:1179..1583]
+;10)sentence:[e:1584..1853] = [t:1584..1853]
+;11)sentence:[e:1854..2165] = [t:1854..2165]
+;12)section:[e:2169..2187] = [t:2169..2187]
+;13)section:[e:2193..2207] = [t:2193..2207]
+;14)section:[e:2211..2256] = [t:2211..2255]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:2211..2256][t:2211..2255]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1513..1514] -
+;ERROR_Token in entity file but not tree[2255..2256] ]
+;ERROR_Token in tree file but not entity[1512..1514]  -
+
+;section 0 Span:0..57
+;Am J Physiol Heart Circ Physiol. 2001 Jun;280(6):H2470-7.
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..12] Physiol)
+        (NNP:[13..18] Heart) (NNP:[19..23] Circ) (NNP:[24..31] Physiol)
+        (.:[31..32] .) (CD:[33..37] 2001) (CC:[38..46] Jun;280-LRB-)
+        (CD:[46..48] 6-RRB-) (CD:[48..54] :H2470) (HYPH:[54..55] -)
+        (CD:[55..57] 7.)))
+
+;section 1 Span:63..165
+;Characterization of endothelium-derived hyperpolarizing factor in the human 
+;forearm microcirculation.
+;[83..125]:substance:"endothelium-derived hyperpolarizing factor"
+(SEC
+  (NP-HLN
+    (NP (NN:[63..79] Characterization))
+    (PP (IN:[80..82] of)
+      (NP
+        (ADJP (NN:[83..94] endothelium) (HYPH:[94..95] -)
+              (VBN:[95..102] derived))
+        (VBG:[103..118] hyperpolarizing) (NN:[119..125] factor)))
+    (PP-LOC (IN:[126..128] in)
+      (NP (DT:[129..132] the) (JJ:[133..138] human) (NN:[140..147] forearm)
+          (NN:[148..164] microcirculation)))
+    (.:[164..165] .)))
+;ERROR_Entity in section[83..125]:substance "endothelium-derived
+;hyperpolarizing factor"
+
+;section 2 Span:169..234
+;Halcox JP, Narayanan S, Cramer-Joyce L, Mincemoyer R, Quyyumi AA.
+(SEC
+  (FRAG (NNP:[169..175] Halcox) (NNP:[176..178] JP) (,:[178..179] ,)
+        (NNP:[180..189] Narayanan) (NNP:[190..192] S,) (NNP:[193..199] Cramer)
+        (HYPH:[199..200] -) (NNP:[200..205] Joyce) (NNP:[206..208] L,)
+        (NNP:[209..219] Mincemoyer) (NNP:[220..222] R,) (NNP:[223..230] Quyyumi)
+        (NNP:[231..233] AA) (.:[233..234] .)))
+
+;section 3 Span:238..362
+;Cardiology Branch, National Heart, Lung, and Blood Institute, National 
+;Institutes of Health, Bethesda, Maryland 20892, USA.
+(SEC
+  (FRAG (NNP:[238..248] Cardiology) (NNP:[249..255] Branch) (,:[255..256] ,)
+        (NNP:[257..265] National) (NNP:[266..271] Heart) (,:[271..272] ,)
+        (NNP:[273..277] Lung) (,:[277..278] ,) (CC:[279..282] and)
+        (NNP:[283..288] Blood) (NNP:[289..298] Institute) (,:[298..299] ,)
+        (NNP:[300..308] National) (NNPS:[310..320] Institutes)
+        (IN:[321..323] of) (NNP:[324..330] Health) (,:[330..331] ,)
+        (NNP:[332..340] Bethesda) (,:[340..341] ,) (NNP:[342..350] Maryland)
+        (NNP:[351..356] 20892) (NNP:[356..357] ,) (NNP:[358..361] USA)
+        (.:[361..362] .)))
+
+;sentence 4 Span:366..482
+;The identity of endothelium-dependent hyperpolarizing factor (EDHF) in the
+;human  circulation remains controversial.
+;[382..426]:substance:"endothelium-dependent hyperpolarizing factor"
+;[428..432]:substance:"EDHF"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[366..369] The) (NN:[370..378] identity))
+      (PP (IN:[379..381] of)
+        (NP
+          (NP
+            (ADJP (NN:[382..393] endothelium) (HYPH:[393..394] -)
+                  (JJ:[394..403] dependent))
+            (VBG:[404..419] hyperpolarizing) (NN:[420..426] factor))
+          (NP (-LRB-:[427..428] -LRB-) (NN:[428..432] EDHF)
+              (-RRB-:[432..433] -RRB-))))
+      (PP-LOC (IN:[434..436] in)
+        (NP (DT:[437..440] the) (JJ:[441..446] human)
+            (NN:[448..459] circulation))))
+    (VP (VBZ:[460..467] remains)
+      (ADJP-PRD (JJ:[468..481] controversial)))
+    (.:[481..482] .)))
+
+;sentence 5 Span:483..730
+;We investigated whether EDHF contributes to  endothelium-dependent vasomotion
+;in the forearm microvasculature by studying the  effect of K+ and miconazole,
+;an inhibitor of cytochrome P-450, on the response  to bradykinin in healthy
+;human subjects.
+;[507..511]:substance:"EDHF"
+;[620..622]:substance:"K+"
+;[627..637]:substance:"miconazole"
+;[642..651]:substance:"inhibitor"
+;[655..671]:cyp450:"cytochrome P-450"
+;[693..703]:substance:"bradykinin"
+(SENT
+  (S
+    (NP-SBJ (PRP:[483..485] We))
+    (VP (VBD:[486..498] investigated)
+      (SBAR (CC:[499..506] whether)
+        (S
+          (NP-SBJ (NN:[507..511] EDHF))
+          (VP (VBZ:[512..523] contributes)
+            (PP-CLR (TO:[524..526] to)
+              (NP
+                (ADJP (NN:[528..539] endothelium) (HYPH:[539..540] -)
+                      (JJ:[540..549] dependent))
+                (NN:[550..560] vasomotion)))
+            (PP-LOC (IN:[561..563] in)
+              (NP (DT:[564..567] the) (NN:[568..575] forearm)
+                  (NN:[576..592] microvasculature)))
+            (PP-MNR (IN:[593..595] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[595..595] *))
+                (VP (VBG:[596..604] studying)
+                  (NP
+                    (NP (DT:[605..608] the) (NN:[610..616] effect))
+                    (PP (IN:[617..619] of)
+                      (NP
+                        (NP (NN:[620..622] K+))
+                        (CC:[623..626] and)
+                        (NP
+                          (NP (NN:[627..637] miconazole))
+                          (,:[637..638] ,)
+                          (NP
+                            (NP (DT:[639..641] an) (NN:[642..651] inhibitor))
+                            (PP (IN:[652..654] of)
+                              (NP (NN:[655..665] cytochrome)
+                                  (NN:[666..671] P-450)))))))
+                    (,:[671..672] ,)
+                    (PP (IN:[673..675] on)
+                      (NP
+                        (NP (DT:[676..679] the) (NN:[680..688] response))
+                        (PP (TO:[690..692] to)
+                          (NP (NN:[693..703] bradykinin))))))
+                  (PP-LOC (IN:[704..706] in)
+                    (NP (JJ:[707..714] healthy) (JJ:[715..720] human)
+                        (NNS:[721..729] subjects))))))))))
+    (.:[729..730] .)))
+
+;sentence 6 Span:731..847
+;Study drugs were infused  intra-arterially, and forearm blood flow was
+;measured using strain-gauge  plethysmography.
+;[737..742]:substance:"drugs"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[731..736] Study) (NNS:[737..742] drugs))
+      (VP (VBD:[743..747] were)
+        (VP (JJ:[748..755] infused)
+          (NP-2 (-NONE-:[755..755] *))
+          (ADVP (AFX:[757..762] intra) (HYPH:[762..763] -)
+                (RB:[763..773] arterially)))))
+    (,:[773..774] ,) (CC:[775..778] and)
+    (S
+      (NP-SBJ-1 (NN:[779..786] forearm) (NN:[787..792] blood)
+                (NN:[793..797] flow))
+      (VP (VBD:[798..801] was)
+        (VP (VBN:[802..810] measured)
+          (NP-1 (-NONE-:[810..810] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[810..810] *))
+            (VP (VBG:[811..816] using)
+              (NP
+                (NML (NN:[817..823] strain) (HYPH:[823..824] -)
+                     (NN:[824..829] gauge))
+                (NN:[831..846] plethysmography)))))))
+    (.:[846..847] .)))
+
+;sentence 7 Span:848..1022
+;Infusion of KCl (0.33 mmol/min) into the brachial artery caused  baseline
+;vasodilation and inhibited the vasodilator response to bradykinin, but  not
+;to sodium nitroprusside.
+;[860..863]:substance:"KCl"
+;[865..869]:quantitative-value:"0.33"
+;[870..878]:quantitative-units:"mmol/min"
+;[977..987]:substance:"bradykinin"
+;[1001..1021]:substance:"sodium nitroprusside"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[848..856] Infusion))
+      (PP (IN:[857..859] of)
+        (NP (NN:[860..863] KCl)
+          (PRN (-LRB-:[864..865] -LRB-)
+            (NP
+              (NP (CD:[865..869] 0.33) (NN:[870..874] mmol))
+              (PP (SYM:[874..875] /)
+                (NP (NN:[875..878] min))))
+            (-RRB-:[878..879] -RRB-))))
+      (PP-DIR (IN:[880..884] into)
+        (NP (DT:[885..888] the) (JJ:[889..897] brachial) (NN:[898..904] artery))))
+    (VP
+      (VP (VBD:[905..911] caused)
+        (NP (NN:[913..921] baseline) (NN:[922..934] vasodilation)))
+      (CC:[935..938] and)
+      (VP
+        (VP (VBD:[939..948] inhibited)
+          (NP
+            (NP (DT:[949..952] the) (NN:[953..964] vasodilator)
+                (NN:[965..973] response))
+            (PP=2 (TO:[974..976] to)
+              (NP (NN:[977..987] bradykinin)))))
+        (,:[987..988] ,) (CC:[989..992] but)
+        (VP (RB:[994..997] not)
+          (PP=2 (TO:[998..1000] to)
+            (NP (NN:[1001..1007] sodium) (NN:[1008..1021] nitroprusside))))))
+    (.:[1021..1022] .)))
+
+;sentence 8 Span:1023..1178
+;Thus the incremental vasodilation induced by  bradykinin was reduced from
+;14.3 +/- 2 to 7.1 +/- 2 ml x min(-1) x 100 g(-1) (P  < 0.001) after KCl
+;infusion.
+;[1069..1079]:substance:"bradykinin"
+;[1097..1107]:quantitative-value:"14.3 +/- 2"
+;[1111..1120]:quantitative-value:"7.1 +/- 2"
+;[1121..1145]:quantitative-units:"ml x min(-1) x 100 g(-1)"
+;[1165..1168]:substance:"KCl"
+(SENT
+  (S
+    (ADVP (RB:[1023..1027] Thus))
+    (NP-SBJ-2
+      (NP (DT:[1028..1031] the) (JJ:[1032..1043] incremental)
+          (NN:[1044..1056] vasodilation))
+      (VP (VBN:[1057..1064] induced)
+        (NP (-NONE-:[1064..1064] *))
+        (PP-MNR (IN:[1065..1067] by)
+          (NP (NN:[1069..1079] bradykinin)))))
+    (VP (VBD:[1080..1083] was)
+      (VP (VBN:[1084..1091] reduced)
+        (NP-2 (-NONE-:[1091..1091] *))
+        (PP (IN:[1092..1096] from)
+          (NP
+            (QP (CD:[1097..1101] 14.3) (SYM:[1102..1105] +/-)
+                (CD:[1106..1107] 2))
+            (NML-1 (-NONE-:[1107..1107] *RNR*))))
+        (PP (TO:[1108..1110] to)
+          (NP
+            (QP (CD:[1111..1114] 7.1) (SYM:[1115..1118] +/-) (CD:[1119..1120] 2))
+            (NML-1 (-NONE-:[1120..1120] *RNR*))))
+        (NML-1
+          (NML (NN:[1121..1123] ml))
+          (PP (SYM:[1124..1125] x)
+            (NP (NN:[1126..1133] min-LRB--1-RRB-)))
+          (PP (SYM:[1134..1135] x)
+            (NP (CD:[1136..1139] 100) (NN:[1140..1145] g-LRB--1-RRB-))))
+        (PRN (-LRB-:[1146..1147] -LRB-)
+          (S
+            (NP-SBJ (NN:[1147..1148] P))
+            (VP (SYM:[1150..1151] <)
+              (NP (CD:[1152..1157] 0.001))))
+          (-RRB-:[1157..1158] -RRB-))
+        (PP-TMP (IN:[1159..1164] after)
+          (NP (NN:[1165..1168] KCl) (NN:[1169..1177] infusion)))))
+    (.:[1177..1178] .)))
+
+;sentence 9 Span:1179..1583
+;A similar inhibition of the bradykinin (P = 0.014),  but not the sodium
+;nitroprusside (not significant), response was observed with  KCl after the
+;study was repeated during preconstriction with phenylephrine to  restore
+;resting blood flow to basal values after KCl. Miconazole (0.125 mg/min)  did
+;not inhibit endothelium-dependent or -independent responses to ACh and 
+;sodium nitroprusside, respectively.
+;[1207..1217]:substance:"bradykinin"
+;[1244..1264]:substance:"sodium nitroprusside"
+;[1312..1315]:substance:"KCl"
+;[1373..1386]:substance:"phenylephrine"
+;[1440..1443]:substance:"KCl"
+;[1445..1455]:substance:"Miconazole"
+;[1457..1462]:quantitative-value:"0.125"
+;[1463..1469]:quantitative-units:"mg/min"
+;[1539..1542]:substance:"ACh"
+;[1548..1568]:substance:"sodium nitroprusside"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (DT:[1179..1180] A) (JJ:[1181..1188] similar)
+          (NN:[1189..1199] inhibition))
+      (PP (IN:[1200..1202] of)
+        (NP
+          (NP (DT:[1203..1206] the) (NN:[1207..1217] bradykinin)
+            (PRN (-LRB-:[1218..1219] -LRB-)
+              (S
+                (NP-SBJ (NN:[1219..1220] P))
+                (VP (SYM:[1221..1222] =)
+                  (NP (CD:[1223..1228] 0.014))))
+              (-RRB-:[1228..1229] -RRB-))
+            (NML-3 (-NONE-:[1229..1229] *P*)))
+          (,:[1229..1230] ,)
+          (CONJP (CC:[1232..1235] but) (RB:[1236..1239] not))
+          (NP (DT:[1240..1243] the)
+            (NML
+               (NN:[1244..1250] sodium) (NN:[1251..1264] nitroprusside)
+              (PRN (-LRB-:[1265..1266] -LRB-)
+                (ADJP (RB:[1266..1269] not) (JJ:[1270..1281] significant))
+                (NN:[1281..1282] -RRB-)))
+            (,:[1282..1283] ,)
+            (NML-3 (NN:[1284..1292] response))))))
+    (VP (VBD:[1293..1296] was)
+      (VP (VBN:[1297..1305] observed)
+        (NP-4 (-NONE-:[1305..1305] *))
+        (PP (IN:[1306..1310] with)
+          (NP (NN:[1312..1315] KCl)))
+        (PP-TMP (IN:[1316..1321] after)
+          (S-NOM
+            (NP-SBJ-5 (DT:[1322..1325] the) (NN:[1326..1331] study))
+            (VP (VBD:[1332..1335] was)
+              (VP (VBN:[1336..1344] repeated)
+                (NP-5 (-NONE-:[1344..1344] *))
+                (PP-TMP (IN:[1345..1351] during)
+                  (NP (NN:[1352..1367] preconstriction)))
+                (PP (IN:[1368..1372] with)
+                  (NP (NN:[1373..1386] phenylephrine)))
+                (S-PRP
+                  (NP-SBJ (-NONE-:[1386..1386] *))
+                  (VP (TO:[1387..1389] to)
+                    (VP (VB:[1391..1398] restore)
+                      (NP (VBG:[1399..1406] resting) (NN:[1407..1412] blood)
+                          (NN:[1413..1417] flow))
+                      (PP-CLR (TO:[1418..1420] to)
+                        (NP (JJ:[1421..1426] basal) (NNS:[1427..1433] values)))
+                      (PP-TMP (IN:[1434..1439] after)
+                        (NP (NN:[1440..1443] KCl))))))))))))
+    (.:[1443..1444] .))
+  (S
+    (NP-SBJ (NN:[1445..1455] Miconazole)
+      (PRN (-LRB-:[1456..1457] -LRB-)
+        (NP
+          (NP (CD:[1457..1462] 0.125) (NN:[1463..1465] mg))
+          (PP (SYM:[1465..1466] /)
+            (NP (NN:[1466..1469] min))))
+        (-RRB-:[1469..1470] -RRB-)))
+    (VP (VBD:[1472..1475] did) (RB:[1476..1479] not)
+      (VP (VB:[1480..1487] inhibit)
+        (NP
+          (NP
+            (NP
+              (ADJP
+                (NML-1 (NN:[1488..1499] endothelium))
+                (HYPH:[1499..1500] -) (JJ:[1500..1509] dependent))
+              (NML-2 (-NONE-:[1509..1509] *P*)))
+            (CC:[1510..1512] or)
+            (NP
+              (ADJP
+                (NML-1 (-NONE-:[1512..1512] *P*))
+                (HYPH:[1512..1514] -) (JJ:[1514..1525] independent))
+              (NML-2 (NNS:[1526..1535] responses))))
+          (PP (TO:[1536..1538] to)
+            (NP
+              (NP (NN:[1539..1542] ACh))
+              (CC:[1543..1546] and)
+              (NP (NN:[1548..1554] sodium) (NN:[1555..1568] nitroprusside))
+              (,:[1568..1569] ,)
+              (ADVP (RB:[1570..1582] respectively)))))))
+    (.:[1582..1583] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1179..1583]::S:S:
+
+;sentence 10 Span:1584..1853
+;However, after inhibition of cyclooxygenase  and nitric oxide synthase with
+;aspirin and NG-monomethyl-L-arginine, the forearm  blood flow response to
+;bradykinin (P = 0.003), but not to sodium nitroprusside  (not significant),
+;was significantly suppressed by miconazole.
+;[1613..1627]:substance:"cyclooxygenase"
+;[1633..1654]:substance:"nitric oxide synthase"
+;[1660..1667]:substance:"aspirin"
+;[1672..1696]:substance:"NG-monomethyl-L-arginine"
+;[1734..1744]:substance:"bradykinin"
+;[1769..1789]:substance:"sodium nitroprusside"
+;[1842..1852]:substance:"miconazole"
+(SENT
+  (S
+    (ADVP (RB:[1584..1591] However))
+    (,:[1591..1592] ,)
+    (PP-TMP (IN:[1593..1598] after)
+      (NP
+        (NP (NN:[1599..1609] inhibition))
+        (PP (IN:[1610..1612] of)
+          (NP
+            (NP (NN:[1613..1627] cyclooxygenase))
+            (CC:[1629..1632] and)
+            (NP
+              (NML (NN:[1633..1639] nitric) (NN:[1640..1645] oxide))
+              (NN:[1646..1654] synthase))))
+        (PP (IN:[1655..1659] with)
+          (NP (NN:[1660..1667] aspirin) (CC:[1668..1671] and)
+              (NN:[1672..1696] NG-monomethyl-L-arginine)))))
+    (,:[1696..1697] ,)
+    (NP-SBJ-1
+      (NP (DT:[1698..1701] the) (NN:[1702..1709] forearm)
+        (NML (NN:[1711..1716] blood) (NN:[1717..1721] flow))
+        (NN:[1722..1730] response))
+      (PP
+        (PP (TO:[1731..1733] to)
+          (NP (NN:[1734..1744] bradykinin)
+            (PRN (-LRB-:[1745..1746] -LRB-)
+              (S
+                (NP-SBJ (NN:[1746..1747] P))
+                (VP (SYM:[1748..1749] =)
+                  (NP (CD:[1750..1755] 0.003))))
+              (-RRB-:[1755..1756] -RRB-))))
+        (,:[1756..1757] ,)
+        (CONJP (CC:[1758..1761] but) (RB:[1762..1765] not))
+        (PP (TO:[1766..1768] to)
+          (NP
+             (NN:[1769..1775] sodium) (NN:[1776..1789] nitroprusside)
+            (PRN (-LRB-:[1791..1792] -LRB-)
+              (ADJP (RB:[1792..1795] not) (JJ:[1796..1807] significant))
+              (NN:[1807..1808] -RRB-))))))
+    (,:[1808..1809] ,)
+    (VP (VBD:[1810..1813] was)
+      (VP
+        (ADVP (RB:[1814..1827] significantly))
+        (VBN:[1828..1838] suppressed)
+        (NP-1 (-NONE-:[1838..1838] *))
+        (PP-MNR (IN:[1839..1841] by)
+          (NP (NN:[1842..1852] miconazole)))))
+    (.:[1852..1853] .)))
+
+;sentence 11 Span:1854..2165
+;Thus nitric  oxide- and prostaglandin-independent, bradykinin-mediated
+;forearm vasodilation  is suppressed by high intravascular K+ concentrations,
+;indicating a contribution  of EDHF. In the human forearm microvasculature,
+;EDHF appears to be a cytochrome  P-450 derivative, possibly an
+;epoxyeicosatrienoic acid.
+;[1859..1872]:substance:"nitric  oxide"
+;[1878..1891]:substance:"prostaglandin"
+;[1905..1915]:substance:"bradykinin"
+;[1983..1985]:substance:"K+"
+;[2032..2036]:substance:"EDHF"
+;[2077..2081]:substance:"EDHF"
+;[2098..2126]:substance:"cytochrome  P-450 derivative"
+;[2140..2164]:substance:"epoxyeicosatrienoic acid"
+(SENT
+  (S
+    (ADVP (RB:[1854..1858] Thus))
+    (NP-SBJ-3
+      (ADJP
+        (ADJP
+          (NML (NN:[1859..1865] nitric) (NN:[1867..1872] oxide))
+          (HYPH:[1872..1873] -)
+          (ADJP-1 (-NONE-:[1873..1873] *P*)))
+        (CC:[1874..1877] and)
+        (ADJP (NN:[1878..1891] prostaglandin) (HYPH:[1891..1892] -)
+          (ADJP-1 (JJ:[1892..1903] independent))))
+      (,:[1903..1904] ,)
+      (ADJP (NN:[1905..1915] bradykinin) (HYPH:[1915..1916] -)
+            (VBN:[1916..1924] mediated))
+      (NN:[1925..1932] forearm) (NN:[1933..1945] vasodilation))
+    (VP (VBZ:[1947..1949] is)
+      (VP (VBN:[1950..1960] suppressed)
+        (NP-3 (-NONE-:[1960..1960] *))
+        (PP (IN:[1961..1963] by)
+          (NP-LGS (JJ:[1964..1968] high) (JJ:[1969..1982] intravascular)
+                  (NN:[1983..1985] K+) (NNS:[1986..2000] concentrations)))
+        (,:[2000..2001] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[2001..2001] *))
+          (VP (VBG:[2002..2012] indicating)
+            (NP
+              (NP (DT:[2013..2014] a) (NN:[2015..2027] contribution))
+              (PP (IN:[2029..2031] of)
+                (NP (NN:[2032..2036] EDHF))))))))
+    (.:[2036..2037] .))
+  (S
+    (PP-LOC (IN:[2038..2040] In)
+      (NP (DT:[2041..2044] the) (JJ:[2045..2050] human)
+          (NN:[2051..2058] forearm) (NN:[2059..2075] microvasculature)))
+    (,:[2075..2076] ,)
+    (NP-SBJ (NN:[2077..2081] EDHF))
+    (VP (VBZ:[2082..2089] appears)
+      (S
+        (NP-SBJ (-NONE-:[2089..2089] *))
+        (VP (TO:[2090..2092] to)
+          (VP (VB:[2093..2095] be)
+            (NP-PRD
+              (NP (DT:[2096..2097] a)
+                
+                (NML (NN:[2098..2108] cytochrome) (NN:[2110..2115] P-450))
+                (NN:[2116..2126] derivative))
+              (,:[2126..2127] ,)
+              (NP
+                (ADVP (RB:[2128..2136] possibly))
+                (DT:[2137..2139] an)
+                 (JJ:[2140..2159] epoxyeicosatrienoic) (NN:[2160..2164] acid)))))))
+    (.:[2164..2165] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1854..2165]::S:S:
+
+;section 12 Span:2169..2187
+;Publication Types:
+(SEC
+  (FRAG (NNP:[2169..2180] Publication) (NNP:[2181..2186] Types)
+        (::[2186..2187] :)))
+
+;section 13 Span:2193..2207
+;Clinical Trial
+(SEC
+  (FRAG (NNP:[2193..2201] Clinical) (NNP:[2202..2207] Trial)))
+
+;section 14 Span:2211..2255
+;PMID: 11356600 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2211..2215] PMID) (::[2215..2216] :) (CD:[2217..2225] 11356600)
+        (-LRB-:[2226..2227] -LSB-) (NNP:[2227..2233] PubMed)
+        (HYPH:[2234..2235] -) (VBN:[2236..2243] indexed) (IN:[2244..2247] for)
+        (NNP:[2248..2255] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2255..EOF] ]
+
+(ORPH -RSB-)

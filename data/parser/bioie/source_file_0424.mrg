@@ -1,0 +1,333 @@
+;PMID: 11936570
+;source_file_654.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..158] = [t:45..158]
+;2)section:[e:162..188] = [t:162..188]
+;3)section:[e:192..332] = [t:192..332]
+;4)sentence:[e:336..522] = [t:336..522]
+;5)sentence:[e:523..737] = [t:523..737]
+;6)sentence:[e:738..855] = [t:738..855]
+;7)sentence:[e:856..1019] = [t:856..1019]
+;8)sentence:[e:1020..1135] = [t:1020..1135]
+;9)sentence:[e:1136..1337] = [t:1136..1337]
+;10)section:[e:1341..1359] = [t:1341..1359]
+;11)section:[e:1365..1379] = [t:1365..1379]
+;12)section:[e:1385..1408] = [t:1385..1408]
+;13)section:[e:1414..1441] = [t:1414..1441]
+;14)section:[e:1445..1490] = [t:1445..1490]
+
+;section 0 Span:0..39
+;J Clin Pharmacol. 2002 Apr;42(4):444-9.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Clin) (NNP:[7..16] Pharmacol) (.:[16..17] .)
+        (CD:[18..22] 2002) (CC:[23..30] Apr;42-LRB-) (CD:[30..31] 4)
+        (-RRB-:[31..32] -RRB-) (::[32..33] :) (CD:[33..36] 444) (::[36..37] -)
+        (CD:[37..39] 9.)))
+
+;sentence 1 Span:45..158
+;A study of the interaction potential of azithromycin and clarithromycin with 
+;atorvastatin in healthy volunteers.
+;[85..97]:substance:"azithromycin"
+;[102..116]:substance:"clarithromycin"
+;[123..135]:substance:"atorvastatin"
+(SENT
+  (NP-HLN
+    (NP (DT:[45..46] A) (NN:[47..52] study))
+    (PP (IN:[53..55] of)
+      (NP
+        (NP (DT:[56..59] the) (NN:[60..71] interaction) (NN:[72..81] potential))
+        (PP (IN:[82..84] of)
+          (NP (NN:[85..97] azithromycin) (CC:[98..101] and)
+              (NN:[102..116] clarithromycin)))
+        (PP (IN:[117..121] with)
+          (NP (NN:[123..135] atorvastatin)))))
+    (PP-LOC (IN:[136..138] in)
+      (NP (JJ:[139..146] healthy) (NNS:[147..157] volunteers)))
+    (.:[157..158] .)))
+
+;section 2 Span:162..188
+;Amsden GW, Kuye O, Wei GC.
+(SEC
+  (FRAG (NNP:[162..168] Amsden) (NNP:[169..171] GW) (,:[171..172] ,)
+        (NNP:[173..177] Kuye) (NNP:[178..179] O) (,:[179..180] ,)
+        (NNP:[181..184] Wei) (NNP:[185..187] GC) (.:[187..188] .)))
+
+;section 3 Span:192..332
+;Clinical Pharmacology Research Center, Research Institute and Department of 
+;Medicine, Bassett Healthcare, Cooperstown, New York 13326, USA.
+(SEC
+  (FRAG (NNP:[192..200] Clinical) (NNP:[201..213] Pharmacology)
+        (NNP:[214..222] Research) (NNP:[223..229] Center) (,:[229..230] ,)
+        (NNP:[231..239] Research) (NNP:[240..249] Institute) (CC:[250..253] and)
+        (NNP:[254..264] Department) (IN:[265..267] of) (NNP:[269..277] Medicine)
+        (,:[277..278] ,) (NNP:[279..286] Bassett) (NNP:[287..297] Healthcare)
+        (,:[297..298] ,) (NNP:[299..310] Cooperstown) (,:[310..311] ,)
+        (NNP:[312..315] New) (NNP:[316..320] York) (CD:[321..326] 13326)
+        (,:[326..327] ,) (NNP:[328..331] USA) (.:[331..332] .)))
+
+;sentence 4 Span:336..522
+;Atorvastatin is a common option among the HMG-CoA reductase inhibitors for
+;the  treatment of lipid disorders because of its excellent lipid-lowering
+;efficacy  and overall safety profile.
+;[336..348]:substance:"Atorvastatin"
+;[378..395]:substance:"HMG-CoA reductase"
+;[396..406]:substance:"inhibitors"
+;[429..434]:substance:"lipid"
+;[470..475]:substance:"lipid"
+(SENT
+  (S
+    (NP-SBJ (NN:[336..348] Atorvastatin))
+    (VP (VBZ:[349..351] is)
+      (NP-PRD
+        (NP (DT:[352..353] a) (JJ:[354..360] common) (NN:[361..367] option))
+        (PP (IN:[368..373] among)
+          (NP (DT:[374..377] the)
+            (NML
+              (NML (NN:[378..381] HMG) (HYPH:[381..382] -) (NN:[382..385] CoA))
+              (NN:[386..395] reductase))
+            (NNS:[396..406] inhibitors)))
+        (PP (IN:[407..410] for)
+          (NP
+            (NP (DT:[411..414] the) (NN:[416..425] treatment))
+            (PP (IN:[426..428] of)
+              (NP (NN:[429..434] lipid) (NNS:[435..444] disorders))))))
+      (PP (IN:[445..452] because)
+        (PP (IN:[453..455] of)
+          (NP (PRP$:[456..459] its)
+            (NML
+              (NML (JJ:[460..469] excellent)
+                (ADJP (NN:[470..475] lipid) (HYPH:[475..476] -)
+                      (VBG:[476..484] lowering))
+                (NN:[485..493] efficacy))
+              (CC:[495..498] and)
+              (NML (JJ:[499..506] overall) (NN:[507..513] safety)
+                   (NN:[514..521] profile)))))))
+    (.:[521..522] .)))
+
+;sentence 5 Span:523..737
+;Although these agents can rarely cause  rhabdomyolysis by themselves,
+;macrolides, among other agents, have been  demonstrated to increase the
+;likelihood of this via inhibition of CYP metabolism  of the lipid agent.
+;[538..544]:substance:"agents"
+;[593..603]:substance:"macrolides"
+;[617..623]:substance:"agents"
+;[702..705]:cyp450:"CYP"
+;[725..730]:substance:"lipid"
+;[731..736]:substance:"agent"
+(SENT
+  (S
+    (SBAR-ADV (IN:[523..531] Although)
+      (S
+        (NP-SBJ (DT:[532..537] these) (NNS:[538..544] agents))
+        (VP (MD:[545..548] can)
+          (ADVP (RB:[549..555] rarely))
+          (VP (VB:[556..561] cause)
+            (NP (NN:[563..577] rhabdomyolysis))
+            (PP (IN:[578..580] by)
+              (NP (PRP:[581..591] themselves)))))))
+    (,:[591..592] ,)
+    (NP-SBJ-1
+      (NP (NNS:[593..603] macrolides))
+      (,:[603..604] ,)
+      (PP (IN:[605..610] among)
+        (NP (JJ:[611..616] other) (NNS:[617..623] agents))))
+    (,:[623..624] ,)
+    (VP (VBP:[625..629] have)
+      (VP (VBN:[630..634] been)
+        (VP (VBN:[636..648] demonstrated)
+          (S
+            (NP-SBJ-1 (-NONE-:[648..648] *))
+            (VP (TO:[649..651] to)
+              (VP (VB:[652..660] increase)
+                (NP
+                  (NP (DT:[661..664] the) (NN:[665..675] likelihood))
+                  (PP (IN:[676..678] of)
+                    (NP (DT:[679..683] this))))
+                (PP-MNR (IN:[684..687] via)
+                  (NP
+                    (NP (NN:[688..698] inhibition))
+                    (PP (IN:[699..701] of)
+                      (NP
+                        (NP (NN:[702..705] CYP) (NN:[706..716] metabolism))
+                        (PP (IN:[718..720] of)
+                          (NP (DT:[721..724] the) (NN:[725..730] lipid)
+                              (NN:[731..736] agent)))))))))))))
+    (.:[736..737] .)))
+
+;sentence 6 Span:738..855
+;This study investigated the potential for azithromycin and  clarithromycin to
+;inhibit the metabolism of atorvastatin.
+;[780..792]:substance:"azithromycin"
+;[798..812]:substance:"clarithromycin"
+;[842..854]:substance:"atorvastatin"
+(SENT
+  (S
+    (NP-SBJ (DT:[738..742] This) (NN:[743..748] study))
+    (VP (VBD:[749..761] investigated)
+      (NP
+        (NP (DT:[762..765] the) (NN:[766..775] potential)
+          (S-1 (-NONE-:[775..775] *ICH*)))
+        (PP (IN:[776..779] for)
+          (NP (NN:[780..792] azithromycin) (CC:[793..796] and)
+              (NN:[798..812] clarithromycin)))
+        (S-1
+          (NP-SBJ (-NONE-:[812..812] *))
+          (VP (TO:[813..815] to)
+            (VP (VB:[816..823] inhibit)
+              (NP
+                (NP (DT:[824..827] the) (NN:[828..838] metabolism))
+                (PP (IN:[839..841] of)
+                  (NP (NN:[842..854] atorvastatin)))))))))
+    (.:[854..855] .)))
+
+;sentence 7 Span:856..1019
+;Although there was no  interaction between azithromycin and atorvastatin,
+;clarithromycin did have a  significant effect on atorvastatin pharmacokinetic
+;parameters.
+;[899..911]:substance:"azithromycin"
+;[916..928]:substance:"atorvastatin"
+;[930..944]:substance:"clarithromycin"
+;[979..991]:substance:"atorvastatin"
+(SENT
+  (S
+    (SBAR-ADV (IN:[856..864] Although)
+      (S
+        (NP-SBJ (EX:[865..870] there))
+        (VP (VBD:[871..874] was)
+          (NP-PRD
+            (NP (DT:[875..877] no) (NN:[879..890] interaction))
+            (PP (IN:[891..898] between)
+              (NP (NN:[899..911] azithromycin) (CC:[912..915] and)
+                  (NN:[916..928] atorvastatin)))))))
+    (,:[928..929] ,)
+    (NP-SBJ (NN:[930..944] clarithromycin))
+    (VP (VBD:[945..948] did)
+      (VP (VB:[949..953] have)
+        (NP
+          (NP (DT:[954..955] a) (JJ:[957..968] significant)
+              (NN:[969..975] effect))
+          (PP (IN:[976..978] on)
+            (NP (NN:[979..991] atorvastatin) (JJ:[992..1007] pharmacokinetic)
+                (NNS:[1008..1018] parameters))))))
+    (.:[1018..1019] .)))
+
+;sentence 8 Span:1020..1135
+;When  coadministered, clarithromycin raised subject exposure (AUC24) by 82%
+;and peak  plasma concentrations by 56%.
+;[1042..1056]:substance:"clarithromycin"
+;[1082..1087]:quantitative-name:"AUC24"
+;[1092..1095]:quantitative-value:"82%"
+;[1131..1134]:quantitative-value:"56%"
+(SENT
+  (S
+    (SBAR-TMP
+      (WHADVP-6 (WRB:[1020..1024] When))
+      (S
+        (NP-SBJ-5 (-NONE-:[1024..1024] *))
+        (VP (VBN:[1026..1040] coadministered)
+          (NP-5 (-NONE-:[1040..1040] *))
+          (ADVP-TMP-6 (-NONE-:[1040..1040] *T*)))))
+    (,:[1040..1041] ,)
+    (NP-SBJ (NN:[1042..1056] clarithromycin))
+    (VP
+      (VP (VBD:[1057..1063] raised)
+        (NP=2 (NN:[1064..1071] subject) (NN:[1072..1080] exposure)
+          (PRN (-LRB-:[1081..1082] -LRB-) (NN:[1082..1087] AUC24)
+               (-RRB-:[1087..1088] -RRB-)))
+        (PP-EXT=3 (IN:[1089..1091] by)
+          (NP (CD:[1092..1094] 82) (NN:[1094..1095] %))))
+      (CC:[1096..1099] and)
+      (VP
+        (NP=2 (JJ:[1100..1104] peak) (NN:[1106..1112] plasma)
+              (NNS:[1113..1127] concentrations))
+        (PP-EXT=3 (IN:[1128..1130] by)
+          (NP (CD:[1131..1133] 56) (NN:[1133..1134] %)))))
+    (.:[1134..1135] .)))
+
+;sentence 9 Span:1136..1337
+;These data suggest that while azithromycin appears  to be safe to
+;coadminister with atorvastatin, clarithromycin should be avoided  in patients
+;taking this and similarly metabolized HMG-CoA inhibitors.
+;[1166..1178]:substance:"azithromycin"
+;[1220..1232]:substance:"atorvastatin"
+;[1234..1248]:substance:"clarithromycin"
+;[1318..1325]:substance:"HMG-CoA"
+;[1326..1336]:substance:"inhibitors"
+(SENT
+  (S
+    (NP-SBJ (DT:[1136..1141] These) (NNS:[1142..1146] data))
+    (VP (VBP:[1147..1154] suggest)
+      (SBAR (IN:[1155..1159] that)
+        (S
+          (SBAR-ADV (IN:[1160..1165] while)
+            (S
+              (NP-SBJ-2 (NN:[1166..1178] azithromycin))
+              (VP (VBZ:[1179..1186] appears)
+                (S
+                  (NP-SBJ-2 (-NONE-:[1186..1186] *))
+                  (VP (TO:[1188..1190] to)
+                    (VP (VB:[1191..1193] be)
+                      (ADJP-PRD (JJ:[1194..1198] safe)
+                        (S
+                          (NP-SBJ-2 (-NONE-:[1198..1198] *))
+                          (VP (TO:[1199..1201] to)
+                            (VP (VB:[1202..1214] coadminister)
+                              (PP-CLR (IN:[1215..1219] with)
+                                (NP (NN:[1220..1232] atorvastatin)))))))))))))
+          (,:[1232..1233] ,)
+          (NP-SBJ-1 (NN:[1234..1248] clarithromycin))
+          (VP (MD:[1249..1255] should)
+            (VP (VB:[1256..1258] be)
+              (VP (VBN:[1259..1266] avoided)
+                (NP-1 (-NONE-:[1266..1266] *))
+                (PP-LOC (IN:[1268..1270] in)
+                  (NP
+                    (NP (NNS:[1271..1279] patients))
+                    (VP (VBG:[1280..1286] taking)
+                      (NP
+                        (NP (DT:[1287..1291] this)
+                          (NML-3 (-NONE-:[1291..1291] *P*)))
+                        (CC:[1292..1295] and)
+                        (NP
+                          (ADJP (RB:[1296..1305] similarly)
+                                (VBN:[1306..1317] metabolized))
+                          (NML-3
+                            (NML (NN:[1318..1321] HMG) (HYPH:[1321..1322] -)
+                                 (NN:[1322..1325] CoA))
+                            (NNS:[1326..1336] inhibitors)))))))))))))
+    (.:[1336..1337] .)))
+
+;section 10 Span:1341..1359
+;Publication Types:
+(SEC
+  (NP (NNP:[1341..1352] Publication) (NNP:[1353..1358] Types) (::[1358..1359] :)))
+
+;section 11 Span:1365..1379
+;Clinical Trial
+(SEC
+  (NP (NNP:[1365..1373] Clinical) (NNP:[1374..1379] Trial)))
+
+;section 12 Span:1385..1408
+;Clinical Trial, Phase I
+(SEC
+  (NP
+    (NP (NNP:[1385..1393] Clinical) (NNP:[1394..1399] Trial))
+    (,:[1399..1400] ,)
+    (NP (NN:[1401..1406] Phase) (PRP:[1407..1408] I))))
+
+;section 13 Span:1414..1441
+;Randomized Controlled Trial
+(SEC
+  (NP (NNP:[1414..1424] Randomized) (NNP:[1425..1435] Controlled)
+      (NNP:[1436..1441] Trial)))
+
+;section 14 Span:1445..1490
+;PMID: 11936570 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1445..1449] PMID) (::[1449..1450] :) (CD:[1451..1459] 11936570)
+        (NN:[1460..1461] -LSB-) (NNP:[1461..1467] PubMed) (::[1468..1469] -)
+        (NN:[1470..1477] indexed) (IN:[1478..1481] for)
+        (NNP:[1482..1490] MEDLINE-RSB-)))

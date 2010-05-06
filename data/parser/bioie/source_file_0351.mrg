@@ -1,0 +1,567 @@
+;PMID: 1638401
+;source_file_861.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..187] = [t:44..187]
+;2)section:[e:191..250] = [t:191..249]
+;3)section:[e:254..336] = [t:254..336]
+;4)sentence:[e:340..445] = [t:340..445]
+;5)sentence:[e:446..577] = [t:446..577]
+;6)sentence:[e:578..681] = [t:578..681]
+;7)sentence:[e:682..997] = [t:682..997]
+;8)sentence:[e:998..1160] = [t:998..1160]
+;9)sentence:[e:1161..1477] = [t:1161..1477]
+;10)sentence:[e:1478..1593] = [t:1478..1593]
+;11)sentence:[e:1594..1861] = [t:1594..1861]
+;12)sentence:[e:1862..2085] = [t:1862..2085]
+;13)sentence:[e:2086..2292] = [t:2086..2292]
+;14)section:[e:2296..2340] = [t:2296..2339]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:191..250][t:191..249]
+;ERROR_Section end mismatch[e:2296..2340][t:2296..2339]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[249..250] .
+;ERROR_Token in entity file but not tree[2339..2340] ]
+
+;section 0 Span:0..38
+;Brain Res. 1992 Mar 6;574(1-2):280-90.
+(SEC
+  (FRAG (NNP:[0..5] Brain) (NNP:[6..9] Res) (.:[9..10] .) (CD:[11..15] 1992)
+        (NNP:[16..19] Mar) (CD:[20..21] 6) (::[21..22] ;) (CD:[22..25] 574)
+        (-LRB-:[25..26] -LRB-) (CD:[26..27] 1) (HYPH:[27..28] -) (CD:[28..29] 2)
+        (-RRB-:[29..30] -RRB-) (::[30..31] :) (CD:[31..34] 280) (::[34..35] -)
+        (CD:[35..37] 90) (.:[37..38] .)))
+
+;sentence 1 Span:44..187
+;Neuroanatomical specificity in the autoregulation of aromatase-immunoreactive
+; neurons by androgens and estrogens: an immunocytochemical study.
+;[97..106]:cyp450:"aromatase"
+;[134..143]:substance:"androgens"
+;[148..157]:substance:"estrogens"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[44..59] Neuroanatomical) (NN:[60..71] specificity))
+      (PP (IN:[72..74] in)
+        (NP
+          (NP (DT:[75..78] the) (NN:[79..93] autoregulation))
+          (PP (IN:[94..96] of)
+            (NP
+              (ADJP (NN:[97..106] aromatase) (HYPH:[106..107] -)
+                    (JJ:[107..121] immunoreactive))
+              (NNS:[123..130] neurons)))))
+      (PP (IN:[131..133] by)
+        (NP (NNS:[134..143] androgens) (CC:[144..147] and)
+            (NNS:[148..157] estrogens))))
+    (::[157..158] :)
+    (NP (DT:[159..161] an) (JJ:[162..180] immunocytochemical)
+        (NN:[181..186] study))
+    (.:[186..187] .)))
+
+;section 2 Span:191..249
+;Balthazart J, Foidart A, Surlemont C, Harada N, Naftolin F
+(SEC
+  (FRAG (NNP:[191..201] Balthazart) (NNP:[202..203] J) (,:[203..204] ,)
+        (NNP:[205..212] Foidart) (NNP:[213..214] A) (,:[214..215] ,)
+        (NNP:[216..225] Surlemont) (NNP:[226..227] C) (,:[227..228] ,)
+        (NNP:[229..235] Harada) (NNP:[236..237] N) (,:[237..238] ,)
+        (NNP:[239..247] Naftolin) (NNP:[248..249] F)))
+
+(ORPH .)
+
+;section 3 Span:254..336
+;Laboratory of General and Comparative Biochemistry, University of Liege, 
+;Belgium.
+(SEC
+  (FRAG (NN:[254..264] Laboratory) (IN:[265..267] of) (NNP:[268..275] General)
+        (CC:[276..279] and) (NNP:[280..291] Comparative)
+        (NNP:[292..304] Biochemistry) (,:[304..305] ,)
+        (NNP:[306..316] University) (IN:[317..319] of) (NNP:[320..325] Liege)
+        (,:[325..326] ,) (NNP:[328..335] Belgium) (.:[335..336] .)))
+;ERROR_Orphan Text from Tree File[249..254] .
+
+;sentence 4 Span:340..445
+;Testosterone (T) increases brain aromatase activity (AA) in quail and other 
+;avian and mammalian species.
+;[340..352]:substance:"Testosterone"
+;[354..355]:substance:"T"
+;[373..391]:cyp450:"aromatase activity"
+;[393..395]:cyp450:"AA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[340..352] Testosterone))
+      (NP (-LRB-:[353..354] -LRB-) (NN:[354..355] T) (-RRB-:[355..356] -RRB-)))
+    (VP (VBZ:[357..366] increases)
+      (NP
+        (NP (NN:[367..372] brain)
+           (NN:[373..382] aromatase) (NN:[383..391] activity))
+        (NP (-LRB-:[392..393] -LRB-) (NN:[393..395] AA) (-RRB-:[395..396] -RRB-)))
+      (PP-LOC (IN:[397..399] in)
+        (NP
+          (NP (NN:[400..405] quail))
+          (CC:[406..409] and)
+          (NP
+            (NP (JJ:[410..415] other) (JJ:[417..422] avian)
+              (NML-1 (-NONE-:[422..422] *P*)))
+            (CC:[423..426] and)
+            (NP (JJ:[427..436] mammalian)
+              (NML-1 (NNS:[437..444] species)))))))
+    (.:[444..445] .)))
+
+;sentence 5 Span:446..577
+;It was shown both in quail and in rat that this  enzymatic induction results
+;from a synergistic action of androgens and  estrogens.
+;[552..561]:substance:"androgens"
+;[567..576]:substance:"estrogens"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[446..448] It))
+      (SBAR-1 (-NONE-:[448..448] *EXP*)))
+    (VP (VBD:[449..452] was)
+      (VP (VBN:[453..458] shown)
+        (NP-2 (-NONE-:[458..458] *))
+        (PP-LOC (CC:[459..463] both)
+          (PP (IN:[464..466] in)
+            (NP (NN:[467..472] quail)))
+          (CC:[473..476] and)
+          (PP (IN:[477..479] in)
+            (NP (NN:[480..483] rat))))
+        (SBAR-1 (IN:[484..488] that)
+          (S
+            (NP-SBJ (DT:[489..493] this) (JJ:[495..504] enzymatic)
+                    (NN:[505..514] induction))
+            (VP (VBZ:[515..522] results)
+              (PP-CLR (IN:[523..527] from)
+                (NP
+                  (NP (DT:[528..529] a) (JJ:[530..541] synergistic)
+                      (NN:[542..548] action))
+                  (PP (IN:[549..551] of)
+                    (NP (NNS:[552..561] androgens) (CC:[562..565] and)
+                        (NNS:[567..576] estrogens))))))))))
+    (.:[576..577] .)))
+
+;sentence 6 Span:578..681
+;These studies provide little information on possible anatomical or  cellular
+;specificity of the effect.
+(SENT
+  (S
+    (NP-SBJ (DT:[578..583] These) (NNS:[584..591] studies))
+    (VP (VBP:[592..599] provide)
+      (NP
+        (NP (JJ:[600..606] little) (NN:[607..618] information))
+        (PP (IN:[619..621] on)
+          (NP
+            (NP
+              (NP
+                (ADJP-2 (JJ:[622..630] possible))
+                (JJ:[631..641] anatomical)
+                (NML-1 (-NONE-:[641..641] *P*)))
+              (CC:[642..644] or)
+              (NP
+                (ADJP-2 (-NONE-:[644..644] *P*))
+                (JJ:[646..654] cellular)
+                (NML-1 (NN:[655..666] specificity))))
+            (PP (IN:[667..669] of)
+              (NP (DT:[670..673] the) (NN:[674..680] effect)))))))
+    (.:[680..681] .)))
+
+;sentence 7 Span:682..997
+;Using a polyclonal antiserum against human  placental aromatase, we have
+;previously identified aromatase-immunoreactive  (ARO-ir) neurons in the quail
+;brain and demonstrated that T increases the number  of ARO-ir cells in the
+;quail preoptic area (POA) supporting previous evidence  that T increases AA
+;in the brain.
+;[736..745]:cyp450:"aromatase"
+;[777..786]:cyp450:"aromatase"
+;[861..862]:substance:"T"
+;[969..970]:substance:"T"
+;[981..983]:cyp450:"AA"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[682..682] *))
+      (VP (VBG:[682..687] Using)
+        (NP
+          (NP (DT:[688..689] a) (JJ:[690..700] polyclonal)
+              (NN:[701..710] antiserum))
+          (PP (IN:[711..718] against)
+            (NP (JJ:[719..724] human) (JJ:[726..735] placental)
+                (NN:[736..745] aromatase))))))
+    (,:[745..746] ,)
+    (NP-SBJ (PRP:[747..749] we))
+    (VP (VBP:[750..754] have)
+      (VP
+        (ADVP-TMP (RB:[755..765] previously))
+        (VP
+          (VP (VBN:[766..776] identified)
+            (NP
+              (ADJP
+                (ADJP (NN:[777..786] aromatase) (HYPH:[786..787] -)
+                      (JJ:[787..801] immunoreactive))
+                (ADJP (-LRB-:[803..804] -LRB-) (NN:[804..810] ARO-ir)
+                      (-RRB-:[810..811] -RRB-)))
+              (VBZ:[812..819] neurons))
+            (PP-LOC (IN:[820..822] in)
+              (NP (DT:[823..826] the) (NN:[827..832] quail)
+                  (NN:[833..838] brain))))
+          (CC:[839..842] and)
+          (VP (VBN:[843..855] demonstrated)
+            (SBAR (IN:[856..860] that)
+              (S
+                (NP-SBJ (NN:[861..862] T))
+                (VP (VBZ:[863..872] increases)
+                  (NP
+                    (NP (DT:[873..876] the) (NN:[877..883] number))
+                    (PP (IN:[885..887] of)
+                      (NP (NN:[888..894] ARO-ir) (NNS:[895..900] cells))))
+                  (PP-LOC (IN:[901..903] in)
+                    (NP (DT:[904..907] the) (NN:[908..913] quail)
+                      (NML
+                        (NML (JJ:[914..922] preoptic) (NN:[923..927] area))
+                        (NML (-LRB-:[928..929] -LRB-) (NN:[929..932] POA)
+                             (-RRB-:[932..933] -RRB-)))))
+                  (VP (VBG:[934..944] supporting)
+                    (NP
+                      (NP (JJ:[945..953] previous) (NN:[954..962] evidence))
+                      (SBAR (IN:[964..968] that)
+                        (S
+                          (NP-SBJ (NN:[969..970] T))
+                          (VP (VBZ:[971..980] increases)
+                            (NP (NN:[981..983] AA))
+                            (PP-LOC (IN:[984..986] in)
+                              (NP (DT:[987..990] the) (NN:[991..996] brain)))))))))))))))
+    (.:[996..997] .)))
+
+;sentence 8 Span:998..1160
+;However, which T metabolites are involved, the  actual mechanism of
+;regulation and the possibility of anatomical specificity for  these effects
+;are not yet clear.
+;[1013..1026]:substance:"T metabolites"
+(SENT
+  (S
+    (ADVP (RB:[998..1005] However))
+    (,:[1005..1006] ,)
+    (SBAR-ADV
+      (WHNP-2 (WDT:[1007..1012] which)
+         (NN:[1013..1014] T) (NNS:[1015..1026] metabolites))
+      (S
+        (NP-SBJ-2 (-NONE-:[1026..1026] *T*))
+        (VP (VBP:[1027..1030] are)
+          (VP (VBN:[1031..1039] involved))
+          (NP-2 (-NONE-:[1039..1039] *)))))
+    (,:[1039..1040] ,)
+    (NP-SBJ
+      (NP
+        (NP (DT:[1041..1044] the) (JJ:[1046..1052] actual)
+            (NN:[1053..1062] mechanism))
+        (PP (IN:[1063..1065] of)
+          (NP (NN:[1066..1076] regulation))))
+      (CC:[1077..1080] and)
+      (NP
+        (NP (DT:[1081..1084] the) (NN:[1085..1096] possibility))
+        (PP (IN:[1097..1099] of)
+          (NP (JJ:[1100..1110] anatomical) (NN:[1111..1122] specificity)))
+        (PP (IN:[1123..1126] for)
+          (NP (DT:[1128..1133] these) (NNS:[1134..1141] effects)))))
+    (VP (VBP:[1142..1145] are)
+      (ADVP-TMP (RB:[1146..1149] not) (RB:[1150..1153] yet))
+      (ADJP-PRD (JJ:[1154..1159] clear)))
+    (.:[1159..1160] .)))
+
+;sentence 9 Span:1161..1477
+;In the present study, we disassociated the  effects of androgens and
+;estrogens in aromatase induction by comparing ARO-ir  neurons of quail
+;treated with T alone or T in the presence of a potent aromatase  inhibitor
+;(R76713), which has been shown to depress AA levels and to suppress 
+;T-activated copulatory behavior.
+;[1216..1225]:substance:"androgens"
+;[1230..1239]:substance:"estrogens"
+;[1243..1252]:cyp450:"aromatase"
+;[1314..1315]:substance:"T"
+;[1325..1326]:substance:"T"
+;[1355..1364]:cyp450:"aromatase"
+;[1366..1375]:substance:"inhibitor"
+;[1377..1383]:substance:"R76713"
+;[1418..1420]:cyp450:"AA"
+;[1445..1446]:substance:"T"
+(SENT
+  (S
+    (PP-LOC (IN:[1161..1163] In)
+      (NP (DT:[1164..1167] the) (JJ:[1168..1175] present)
+          (NN:[1176..1181] study)))
+    (,:[1181..1182] ,)
+    (NP-SBJ (PRP:[1183..1185] we))
+    (VP (VBD:[1186..1199] disassociated)
+      (NP
+        (NP (DT:[1200..1203] the) (NNS:[1205..1212] effects))
+        (PP (IN:[1213..1215] of)
+          (NP (NNS:[1216..1225] androgens) (CC:[1226..1229] and)
+              (NNS:[1230..1239] estrogens)))
+        (PP (IN:[1240..1242] in)
+          (NP (JJ:[1243..1252] aromatase) (NN:[1253..1262] induction))))
+      (PP-MNR (IN:[1263..1265] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1265..1265] *))
+          (VP (VBG:[1266..1275] comparing)
+            (NP
+              (NP
+                (NP (NN:[1276..1282] ARO-ir) (NNS:[1284..1291] neurons))
+                (PP (IN:[1292..1294] of)
+                  (NP (NN:[1295..1300] quail))))
+              (VP (VBN:[1301..1308] treated)
+                (PP-CLR (IN:[1309..1313] with)
+                  (NP
+                    (NP (NN:[1314..1315] T) (RB:[1316..1321] alone))
+                    (CC:[1322..1324] or)
+                    (NP
+                      (NP (NN:[1325..1326] T))
+                      (PP (IN:[1327..1329] in)
+                        (NP
+                          (NP (DT:[1330..1333] the) (NN:[1334..1342] presence))
+                          (PP (IN:[1343..1345] of)
+                            (NP
+                              (NP
+                                (NP (DT:[1346..1347] a) (JJ:[1348..1354] potent)
+                                    (NN:[1355..1364] aromatase)
+                                    (NN:[1366..1375] inhibitor))
+                                (NP (-LRB-:[1376..1377] -LRB-)
+                                    (NN:[1377..1383] R76713)
+                                    (-RRB-:[1383..1384] -RRB-)))
+                              (,:[1384..1385] ,)
+                              (SBAR
+                                (WHNP-1 (WDT:[1386..1391] which))
+                                (S
+                                  (NP-SBJ-1 (-NONE-:[1391..1391] *T*))
+                                  (VP (VBZ:[1392..1395] has)
+                                    (VP (VBN:[1396..1400] been)
+                                      (VP (VBN:[1401..1406] shown)
+                                        (NP-1 (-NONE-:[1406..1406] *))
+                                        (VP
+                                          (VP (TO:[1407..1409] to)
+                                            (VP (VB:[1410..1417] depress)
+                                              (NP (NN:[1418..1420] AA)
+                                                  (NNS:[1421..1427] levels))))
+                                          (CC:[1428..1431] and)
+                                          (VP (TO:[1432..1434] to)
+                                            (VP (VB:[1435..1443] suppress)
+                                              (NP
+                                                (ADJP (NN:[1445..1446] T)
+                                                      (HYPH:[1446..1447] -)
+                                                      (VBN:[1447..1456] activated))
+                                                (JJ:[1457..1467] copulatory)
+                                                 (NN:[1468..1476] behavior)))))))))))))))))))))))
+    (.:[1476..1477] .)))
+
+;sentence 10 Span:1478..1593
+;T increased the number of ARO-ir cells in POA,  bed nucleus striae terminalis
+;(BNST) and tuberal hypothalamus (Tu).
+;[1478..1479]:substance:"T"
+(SENT
+  (S
+    (NP-SBJ (NN:[1478..1479] T))
+    (VP (VBD:[1480..1489] increased)
+      (NP
+        (NP
+          (NP (DT:[1490..1493] the) (NN:[1494..1500] number))
+          (PP (IN:[1501..1503] of)
+            (NP (NN:[1504..1510] ARO-ir) (NNS:[1511..1516] cells))))
+        (PP-LOC (IN:[1517..1519] in)
+          (NP
+            (NP (NN:[1520..1523] POA))
+            (,:[1523..1524] ,)
+            (NP
+              (NP
+                (NML (NN:[1526..1529] bed) (NN:[1530..1537] nucleus))
+                (NN:[1538..1544] striae) (NN:[1545..1555] terminalis))
+              (NP (-LRB-:[1556..1557] -LRB-) (NN:[1557..1561] BNST)
+                  (-RRB-:[1561..1562] -RRB-)))
+            (CC:[1563..1566] and)
+            (NP
+              (NP (JJ:[1567..1574] tuberal) (NN:[1575..1587] hypothalamus))
+              (NP (-LRB-:[1588..1589] -LRB-) (NN:[1589..1591] Tu)
+                  (-RRB-:[1591..1592] -RRB-)))))))
+    (.:[1592..1593] .)))
+
+;sentence 11 Span:1594..1861
+;The T effect  was inhibited by concurrent treatment with aromatase inhibitor
+;in Tu, but not in  POA and BNST. This differential effect of the aromatase
+;inhibitor fits in very  well with our previous studies of the co-localization
+;of aromatase and estrogen  receptors.
+;[1598..1599]:substance:"T"
+;[1651..1660]:cyp450:"aromatase"
+;[1661..1670]:substance:"inhibitor"
+;[1736..1745]:cyp450:"aromatase"
+;[1746..1755]:substance:"inhibitor"
+;[1827..1836]...[1851..1860]:substance:"aromatase"..."receptors"
+;[1841..1860]:substance:"estrogen  receptors"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1594..1597] The) (NN:[1598..1599] T) (NN:[1600..1606] effect))
+    (VP (VBD:[1608..1611] was)
+      (VP
+        (VP (VBN:[1612..1621] inhibited)
+          (NP-2 (-NONE-:[1621..1621] *))
+          (PP (IN:[1622..1624] by)
+            (NP-LGS
+              (NP (JJ:[1625..1635] concurrent) (NN:[1636..1645] treatment))
+              (PP (IN:[1646..1650] with)
+                (NP (NN:[1651..1660] aromatase) (NN:[1661..1670] inhibitor)))
+              (PP-LOC=3 (IN:[1671..1673] in)
+                (NP (NN:[1674..1676] Tu))))))
+        (,:[1676..1677] ,)
+        (CONJP (CC:[1678..1681] but) (RB:[1682..1685] not))
+        (VP
+          (PP-LOC=3 (IN:[1686..1688] in)
+            (NP (NN:[1690..1693] POA) (CC:[1694..1697] and)
+                (NN:[1698..1702] BNST))))))
+    (.:[1702..1703] .))
+  (S
+    (NP-SBJ
+      (NP (DT:[1704..1708] This) (JJ:[1709..1721] differential)
+          (NN:[1722..1728] effect))
+      (PP (IN:[1729..1731] of)
+        (NP (DT:[1732..1735] the) (NN:[1736..1745] aromatase)
+            (NN:[1746..1755] inhibitor))))
+    (VP (VBZ:[1756..1760] fits)
+      (PRT (IN:[1761..1763] in))
+      (ADVP (RB:[1764..1768] very) (RB:[1770..1774] well))
+      (PP-CLR (IN:[1775..1779] with)
+        (NP
+          (NP (PRP$:[1780..1783] our) (JJ:[1784..1792] previous)
+              (NNS:[1793..1800] studies))
+          (PP (IN:[1801..1803] of)
+            (NP
+              (NP (DT:[1804..1807] the) (AFX:[1808..1810] co)
+                  (HYPH:[1810..1811] -) (NN:[1811..1823] localization))
+              (PP (IN:[1824..1826] of)
+                (NP
+                  (NP (NN:[1827..1836] aromatase)
+                    (NML-1 (-NONE-:[1836..1836] *P*)))
+                  (CC:[1837..1840] and)
+                  (NP (NN:[1841..1849] estrogen)
+                    (NML-1 (NNS:[1851..1860] receptors))))))))))
+    (.:[1860..1861] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1594..1861]::S:S:
+
+;sentence 12 Span:1862..2085
+;The T effect was blocked by R76713 in areas where ARO-ir and estrogen 
+;receptor-ir are generally co-localized (Tu) and was not affected in areas
+;with  mainly ARO-ir positive, estrogen receptor-ir negative cells (POA,
+;BNST).
+;[1866..1867]:substance:"T"
+;[1890..1896]:substance:"R76713"
+;[1923..1941]:substance:"estrogen  receptor"
+;[2037..2054]:substance:"estrogen receptor"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1862..1865] The) (NN:[1866..1867] T) (NN:[1868..1874] effect))
+    (VP
+      (VP (VBD:[1875..1878] was)
+        (VP (VBN:[1879..1886] blocked)
+          (NP-2 (-NONE-:[1886..1886] *))
+          (PP (IN:[1887..1889] by)
+            (NP-LGS (NN:[1890..1896] R76713)))
+          (PP-LOC (IN:[1897..1899] in)
+            (NP
+              (NP (NNS:[1900..1905] areas))
+              (SBAR
+                (WHADVP-3 (WRB:[1906..1911] where))
+                (S
+                  (NP-SBJ
+                    (NP (NN:[1912..1918] ARO-ir))
+                    (CC:[1919..1922] and)
+                    (NP
+                      (NML (NN:[1923..1931] estrogen) (NN:[1933..1941] receptor))
+                      (HYPH:[1941..1942] -) (NN:[1942..1944] ir)))
+                  (VP (VBP:[1945..1948] are)
+                    (ADVP (RB:[1949..1958] generally))
+                    (ADJP-PRD (AFX:[1959..1961] co) (HYPH:[1961..1962] -)
+                              (NN:[1962..1971] localized))
+                    (ADVP-3 (-NONE-:[1971..1971] *T*)))))
+              (NP (-LRB-:[1972..1973] -LRB-) (NN:[1973..1975] Tu)
+                  (-RRB-:[1975..1976] -RRB-))))))
+      (CC:[1977..1980] and)
+      (VP (VBD:[1981..1984] was) (RB:[1985..1988] not)
+        (VP (VBN:[1989..1997] affected)
+          (NP-2 (-NONE-:[1997..1997] *))
+          (PP-LOC (IN:[1998..2000] in)
+            (NP
+              (NP (NNS:[2001..2006] areas))
+              (PP (IN:[2007..2011] with)
+                (NP
+                  (ADJP
+                    (ADJP (RB:[2013..2019] mainly) (NN:[2020..2026] ARO-ir)
+                          (JJ:[2027..2035] positive))
+                    (,:[2035..2036] ,)
+                    (ADJP
+                      (NML
+                        (NML (NN:[2037..2045] estrogen)
+                             (NN:[2046..2054] receptor))
+                        (HYPH:[2054..2055] -) (NN:[2055..2057] ir))
+                      (JJ:[2058..2066] negative)))
+                  (NNS:[2067..2072] cells)))
+              (PRN (-LRB-:[2073..2074] -LRB-)
+                (NP (NN:[2074..2077] POA) (,:[2077..2078] ,)
+                    (NN:[2079..2083] BNST))
+                (-RRB-:[2083..2084] -RRB-)))))))
+    (.:[2084..2085] .)))
+
+;sentence 13 Span:2086..2292
+;This  suggests anatomical differences in the expression or clearance of
+;aromatase  which may be differentially sensitive to androgens and estrogens
+;and dependent  upon the presence of sex steroid receptors.
+;[2158..2167]:cyp450:"aromatase"
+;[2210..2219]:substance:"androgens"
+;[2224..2233]:substance:"estrogens"
+;[2274..2291]:substance:"steroid receptors"
+(SENT
+  (S
+    (NP-SBJ (DT:[2086..2090] This))
+    (VP (VBZ:[2092..2100] suggests)
+      (NP (JJ:[2101..2111] anatomical) (NNS:[2112..2123] differences))
+      (PP (IN:[2124..2126] in)
+        (NP
+          (NP
+            (NP (DT:[2127..2130] the) (NN:[2131..2141] expression)
+                (CC:[2142..2144] or) (NN:[2145..2154] clearance))
+            (PP (IN:[2155..2157] of)
+              (NP (NN:[2158..2167] aromatase))))
+          (SBAR
+            (WHNP-1 (WDT:[2169..2174] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[2174..2174] *T*))
+              (VP (MD:[2175..2178] may)
+                (VP (VB:[2179..2181] be)
+                  (ADJP-PRD
+                    (ADJP
+                      (ADVP (RB:[2182..2196] differentially))
+                      (JJ:[2197..2206] sensitive)
+                      (PP (TO:[2207..2209] to)
+                        (NP (NNS:[2210..2219] androgens) (CC:[2220..2223] and)
+                            (NNS:[2224..2233] estrogens))))
+                    (CC:[2234..2237] and)
+                    (ADJP (JJ:[2238..2247] dependent)
+                      (PP (IN:[2249..2253] upon)
+                        (NP
+                          (NP (DT:[2254..2257] the) (NN:[2258..2266] presence))
+                          (PP (IN:[2267..2269] of)
+                            (NP
+                              (NML (NN:[2270..2273] sex)
+                                   (NN:[2274..2281] steroid))
+                              (NN:[2282..2291] receptors))))))))))))))
+    (.:[2291..2292] .)))
+
+;section 14 Span:2296..2339
+;PMID: 1638401 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2296..2300] PMID) (::[2300..2301] :) (CD:[2302..2309] 1638401)
+        (-LRB-:[2310..2311] -LSB-) (NNP:[2311..2317] PubMed) (::[2318..2319] -)
+        (NN:[2320..2327] indexed) (IN:[2328..2331] for)
+        (NNP:[2332..2339] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2339..EOF] ]
+
+(ORPH -RSB-)

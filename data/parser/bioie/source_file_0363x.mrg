@@ -1,0 +1,520 @@
+;PMID: 12204060
+;source_file_694.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:50..149] = [t:50..149]
+;2)section:[e:153..207] = [t:153..207]
+;3)section:[e:211..311] = [t:211..311]
+;4)sentence:[e:315..325] = [t:315..325]
+;5)sentence:[e:326..463] = [t:326..463]
+;6)sentence:[e:464..471] = [t:464..471]
+;7)sentence:[e:473..620] = [t:473..620]
+;8)sentence:[e:621..728] = [t:621..728]
+;9)sentence:[e:729..737] = [t:729..737]
+;10)sentence:[e:738..770] = [t:738..770]
+;11)sentence:[e:771..780] = [t:771..780]
+;12)sentence:[e:781..914] = [t:781..914]
+;13)sentence:[e:915..923] = [t:915..923]
+;14)sentence:[e:924..1057] = [t:924..1057]
+;15)sentence:[e:1058..1183] = [t:1058..1183]
+;16)sentence:[e:1185..1247] = [t:1185..1247]
+;17)sentence:[e:1248..1331] = [t:1248..1331]
+;18)sentence:[e:1332..1446] = [t:1332..1446]
+;19)sentence:[e:1447..1459] = [t:1447..1459]
+;20)sentence:[e:1460..1632] = [t:1460..1632]
+;21)sentence:[e:1633..1830] = [t:1633..1830]
+;22)sentence:[e:1831..1956] = [t:1831..1956]
+;23)section:[e:1960..2005] = [t:1960..2005]
+
+;section 0 Span:0..45
+;Arch Pathol Lab Med  2002 Sep;126(9):1096-100
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..11] Pathol) (NNP:[12..15] Lab)
+        (NNP:[16..19] Med) (CC:[21..25] 2002) ('':[26..35] Sep;126-LRB-9)
+        (-RRB-:[35..36] -RRB-) (CD:[36..41] :1096) (::[41..42] -)
+        (CD:[42..45] 100)))
+
+;sentence 1 Span:50..149
+;ras Gene mutations and expression of Ras signal transduction mediators in 
+;gastric adenocarcinomas.
+;[50..53]:gene-rna:"ras"
+;[87..90]:gene-rna:"Ras"
+;[125..148]:malignancy:"gastric adenocarcinomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[50..53] ras) (NN:[54..58] Gene) (NNS:[59..68] mutations))
+      (CC:[69..72] and)
+      (NP
+        (NP (NN:[73..83] expression))
+        (PP (IN:[84..86] of)
+          (NP (NN:[87..90] Ras) (NN:[91..97] signal) (NN:[98..110] transduction)
+              (NNS:[111..120] mediators)))))
+    (PP-LOC (IN:[121..123] in)
+      (NP (JJ:[125..132] gastric) (NNS:[133..148] adenocarcinomas)))
+    (.:[148..149] .)))
+
+;section 2 Span:153..207
+;Yoo J, Park SY, Robinson RA, Kang SJ, Ahn WS, Kang CS.
+(SEC
+  (FRAG (DT:[153..156] Yoo) (NNP:[157..159] J,) (NNP:[160..164] Park)
+        (NNP:[165..167] SY) (,:[167..168] ,) (NNP:[169..177] Robinson)
+        (NNP:[178..180] RA) (,:[180..181] ,) (NNP:[182..186] Kang)
+        (NNP:[187..189] SJ) (,:[189..190] ,) (NNP:[191..194] Ahn)
+        (NNP:[195..197] WS) (,:[197..198] ,) (NNP:[199..203] Kang)
+        (NNP:[204..206] CS) (.:[206..207] .)))
+
+;section 3 Span:211..311
+;Department of Pathology, St Vincent's Hospital, Catholic University, Suwon, 
+;Kyungkido, South Korea.
+(SEC
+  (FRAG (NNP:[211..221] Department) (IN:[222..224] of)
+        (NNP:[225..234] Pathology) (,:[234..235] ,) (NNP:[236..238] St)
+        (NNP:[239..246] Vincent) (POS:[246..248] 's) (NNP:[249..257] Hospital)
+        (,:[257..258] ,) (NNP:[259..267] Catholic) (NNP:[268..278] University)
+        (,:[278..279] ,) (NNP:[280..285] Suwon) (,:[285..286] ,)
+        (NNP:[288..297] Kyungkido) (,:[297..298] ,) (NNP:[299..304] South)
+        (NNP:[305..310] Korea) (.:[310..311] .)))
+
+;sentence 4 Span:315..325
+;OBJECTIVE:
+(SENT
+  (NP (NN:[315..324] OBJECTIVE) (::[324..325] :)))
+
+;sentence 5 Span:326..463
+;To investigate ras gene alteration in human gastric adenocarcinomas  and its
+;potential relationship to ras signal transduction mediators.
+;[341..344]:gene-rna:"ras"
+;[370..393]:malignancy:"gastric adenocarcinomas"
+;[429..432]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (-NONE-:[326..326] *))
+    (VP (TO:[326..328] To)
+      (VP (VB:[329..340] investigate)
+        (NP
+          (NP
+            (NP (NN:[341..344] ras) (NN:[345..349] gene)
+                (NN:[350..360] alteration))
+            (PP (IN:[361..363] in)
+              (NP (JJ:[364..369] human)
+                 (JJ:[370..377] gastric) (NNS:[378..393] adenocarcinomas))))
+          (CC:[395..398] and)
+          (NP
+            (NP (PRP$:[399..402] its) (JJ:[403..412] potential)
+                (NN:[413..425] relationship))
+            (PP (TO:[426..428] to)
+              (NP (NN:[429..432] ras) (NN:[433..439] signal)
+                  (NN:[440..452] transduction) (NNS:[453..462] mediators)))))))
+    (.:[462..463] .)))
+
+;sentence 6 Span:464..471
+;DESIGN:
+(SENT
+  (NP (NN:[464..470] DESIGN) (::[470..471] :)))
+
+;sentence 7 Span:473..620
+;Genomic DNA from 104 gastric tumors were analyzed by sequencing of polymerase
+; chain reaction-amplified products for the presence of ras mutations.
+;[494..508]:malignancy:"gastric tumors"
+;[540..550]:gene-protein:"polymerase"
+;[606..609]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[473..480] Genomic) (NN:[481..484] DNA))
+      (PP (IN:[485..489] from)
+        (NP (CD:[490..493] 104)
+           (JJ:[494..501] gastric) (NNS:[502..508] tumors))))
+    (VP (VBD:[509..513] were)
+      (VP (VBN:[514..522] analyzed)
+        (NP-1 (-NONE-:[522..522] *))
+        (PP (IN:[523..525] by)
+          (NP
+            (NP (NN:[526..536] sequencing))
+            (PP (IN:[537..539] of)
+              (NP
+                (ADJP
+                  (NML (NN:[540..550] polymerase) (NN:[552..557] chain)
+                       (NN:[558..566] reaction))
+                  (HYPH:[566..567] -) (VBN:[567..576] amplified))
+                (NNS:[577..585] products)))
+            (PP (IN:[586..589] for)
+              (NP
+                (NP (DT:[590..593] the) (NN:[594..602] presence))
+                (PP (IN:[603..605] of)
+                  (NP (NN:[606..609] ras) (NNS:[610..619] mutations)))))))))
+    (.:[619..620] .)))
+
+;sentence 8 Span:621..728
+;All the  samples were further investigated with the use of
+;immunohistochemical analysis  for ERK1 and ERK2.
+;[714..718]:gene-rna:"ERK1"
+;[723..727]:gene-rna:"ERK2"
+(SENT
+  (S
+    (NP-SBJ-1 (PDT:[621..624] All) (DT:[625..628] the) (NNS:[630..637] samples))
+    (VP (VBD:[638..642] were)
+      (ADVP (RBR:[643..650] further))
+      (VP (VBN:[651..663] investigated)
+        (NP-1 (-NONE-:[663..663] *))
+        (PP (IN:[664..668] with)
+          (NP
+            (NP (DT:[669..672] the) (NN:[673..676] use))
+            (PP (IN:[677..679] of)
+              (NP
+                (NP (JJ:[680..699] immunohistochemical) (NN:[700..708] analysis))
+                (PP (IN:[710..713] for)
+                  (NP (NN:[714..718] ERK1) (CC:[719..722] and)
+                      (NN:[723..727] ERK2)))))))))
+    (.:[727..728] .)))
+
+;sentence 9 Span:729..737
+;SETTING:
+(SENT
+  (NP (NN:[729..736] SETTING) (::[736..737] :)))
+
+;sentence 10 Span:738..770
+;Tertiary care teaching hospital.
+(SENT
+  (NP
+    (NML (JJ:[738..746] Tertiary) (NN:[747..751] care))
+    (NN:[752..760] teaching) (NN:[761..769] hospital) (.:[769..770] .)))
+
+;sentence 11 Span:771..780
+;PATIENTS:
+(SENT
+  (NP (NNS:[771..779] PATIENTS) (::[779..780] :)))
+
+;sentence 12 Span:781..914
+;Seventy  patients from a Korean population and 34 from a Midwestern US
+;population  composed of white Americans and African Americans.
+(SENT
+  (NP
+    (NP
+      (NP (CD:[781..788] Seventy) (NNS:[790..798] patients))
+      (PP (IN:[799..803] from)
+        (NP (DT:[804..805] a) (JJ:[806..812] Korean) (NN:[813..823] population))))
+    (CC:[824..827] and)
+    (NP
+      (NP (CD:[828..830] 34))
+      (PP (IN:[831..835] from)
+        (NP
+          (NP (DT:[836..837] a) (JJ:[838..848] Midwestern) (NNP:[849..851] US)
+              (NN:[852..862] population))
+          (VP (VBN:[864..872] composed)
+            (NP (-NONE-:[872..872] *))
+            (PP (IN:[873..875] of)
+              (NP
+                (NP (JJ:[876..881] white) (NNPS:[882..891] Americans))
+                (CC:[892..895] and)
+                (NP (JJ:[896..903] African) (NNPS:[904..913] Americans))))))))
+    (.:[913..914] .)))
+
+;sentence 13 Span:915..923
+;RESULTS:
+(SENT
+  (NP (NNS:[915..922] RESULTS) (::[922..923] :)))
+
+;sentence 14 Span:924..1057
+;Fifteen tumors (14%)  were positive for either H-ras or K-ras mutation: 9
+;(13%) of 70 Korean patients  and 6 (18%) of 34 US patients.
+;[932..938]:malignancy:"tumors"
+;[971..976]:gene-rna:"H-ras"
+;[980..985]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[924..931] Fifteen) (NNS:[932..938] tumors)
+        (PRN (-LRB-:[939..940] -LRB-)
+          (NP (CD:[940..942] 14) (NN:[942..943] %))
+          (-RRB-:[943..944] -RRB-)))
+      (NP-2 (-NONE-:[944..944] *ICH*)))
+    (VP (VBD:[946..950] were)
+      (ADJP-PRD (JJ:[951..959] positive)
+        (PP (IN:[960..963] for)
+          (NP (CC:[964..970] either)
+            (NP (NN:[971..976] H-ras)
+              (NML-1 (-NONE-:[976..976] *P*)))
+            (CC:[977..979] or)
+            (NP (NN:[980..985] K-ras)
+              (NML-1 (NN:[986..994] mutation))))))
+      (::[994..995] :)
+      (NP-2
+        (NP
+          (NP (CD:[996..997] 9)
+            (PRN (-LRB-:[998..999] -LRB-)
+              (NP (CD:[999..1001] 13) (NN:[1001..1002] %))
+              (-RRB-:[1002..1003] -RRB-)))
+          (PP (IN:[1004..1006] of)
+            (NP (CD:[1007..1009] 70) (JJ:[1010..1016] Korean)
+                (NNS:[1017..1025] patients))))
+        (CC:[1027..1030] and)
+        (NP
+          (NP (CD:[1031..1032] 6)
+            (PRN (-LRB-:[1033..1034] -LRB-)
+              (NP (CD:[1034..1036] 18) (NN:[1036..1037] %))
+              (-RRB-:[1037..1038] -RRB-)))
+          (PP (IN:[1039..1041] of)
+            (NP (CD:[1042..1044] 34) (NNP:[1045..1047] US)
+                (NNS:[1048..1056] patients))))))
+    (.:[1056..1057] .)))
+
+;sentence 15 Span:1058..1183
+;Seven (78%) of the 9 mutated tumors from Korean  patients and all 6 (100%)
+;from the US patients were intestinal-type lesions.
+;[1087..1093]:malignancy:"tumors"
+;[1159..1182]:malignancy:"intestinal-type lesions"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (CD:[1058..1063] Seven)
+          (PRN (-LRB-:[1064..1065] -LRB-)
+            (NP (CD:[1065..1067] 78) (NN:[1067..1068] %))
+            (-RRB-:[1068..1069] -RRB-)))
+        (PP (IN:[1070..1072] of)
+          (NP
+            (NP (DT:[1073..1076] the) (CD:[1077..1078] 9)
+                (VBN:[1079..1086] mutated) (NNS:[1087..1093] tumors))
+            (PP (IN:[1094..1098] from)
+              (NP (JJ:[1099..1105] Korean) (NNS:[1107..1115] patients))))))
+      (CC:[1116..1119] and)
+      (NP
+        (NP (DT:[1120..1123] all) (CD:[1124..1125] 6)
+          (PRN (-LRB-:[1126..1127] -LRB-)
+            (NP (CD:[1127..1130] 100) (NN:[1130..1131] %))
+            (-RRB-:[1131..1132] -RRB-)))
+        (PP (IN:[1133..1137] from)
+          (NP (DT:[1138..1141] the) (NNP:[1142..1144] US)
+              (NNS:[1145..1153] patients)))))
+    (VP (VBD:[1154..1158] were)
+      (NP-PRD
+        (NML (JJ:[1159..1169] intestinal) (HYPH:[1169..1170] -)
+             (NN:[1170..1174] type))
+        (NNS:[1175..1182] lesions)))
+    (.:[1182..1183] .)))
+
+;sentence 16 Span:1185..1247
+;Either ERK1 and/or ERK2 was overexpressed in 68 samples (65%).
+;[1192..1196]:gene-rna:"ERK1"
+;[1204..1208]:gene-rna:"ERK2"
+(SENT
+  (S
+    (NP-SBJ-1 (CC:[1185..1191] Either) (NN:[1192..1196] ERK1)
+              (CC:[1197..1203] and/or) (NN:[1204..1208] ERK2))
+    (VP (VBD:[1209..1212] was)
+      (VP (VBN:[1213..1226] overexpressed)
+        (NP-1 (-NONE-:[1226..1226] *))
+        (PP-LOC (IN:[1227..1229] in)
+          (NP (CD:[1230..1232] 68) (NNS:[1233..1240] samples)
+            (PRN (-LRB-:[1241..1242] -LRB-)
+              (NP (CD:[1242..1244] 65) (NN:[1244..1245] %))
+              (-RRB-:[1245..1246] -RRB-))))))
+    (.:[1246..1247] .)))
+
+;sentence 17 Span:1248..1331
+;No association  was established between ras mutations and overexpression of
+;ERK1/2.
+;[1288..1291]:gene-rna:"ras"
+;[1324..1328]:gene-rna:"ERK1"
+;[1324..1327]...[1329..1330]:gene-rna:"ERK"..."2"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1248..1250] No) (NN:[1251..1262] association))
+    (VP (VBD:[1264..1267] was)
+      (VP (VBN:[1268..1279] established)
+        (NP-1 (-NONE-:[1279..1279] *))
+        (PP (IN:[1280..1287] between)
+          (NP
+            (NP (NN:[1288..1291] ras) (NNS:[1292..1301] mutations))
+            (CC:[1302..1305] and)
+            (NP
+              (NP (NN:[1306..1320] overexpression))
+              (PP (IN:[1321..1323] of)
+                (NP
+                  (NML
+                    (NML-2 (NN:[1324..1327] ERK))
+                    (CD:[1327..1328] 1))
+                  (SYM:[1328..1329] /)
+                  (NML
+                    (NML-2 (-NONE-:[1329..1329] *P*))
+                    (CD:[1329..1330] 2)))))))))
+    (.:[1330..1331] .)))
+
+;sentence 18 Span:1332..1446
+;However, the  correlation between ERK1/2 and progression (early vs late) was
+;statistically  significant (P =.007).
+;[1366..1370]:gene-rna:"ERK1"
+;[1366..1369]...[1371..1372]:gene-rna:"ERK"..."2"
+(SENT
+  (S
+    (ADVP (RB:[1332..1339] However))
+    (,:[1339..1340] ,)
+    (NP-SBJ
+      (NP (DT:[1341..1344] the) (NN:[1346..1357] correlation))
+      (PP (IN:[1358..1365] between)
+        (NP
+          (NP
+            (NML
+              (NML-1 (NN:[1366..1369] ERK))
+              (CD:[1369..1370] 1))
+            (SYM:[1370..1371] /)
+            (NP
+              (NML-1 (-NONE-:[1371..1371] *P*))
+              (CD:[1371..1372] 2)))
+          (CC:[1373..1376] and)
+          (NP (NN:[1377..1388] progression)
+            (PRN (-LRB-:[1389..1390] -LRB-)
+              (NP
+                (NP (JJ:[1390..1395] early))
+                (PP (IN:[1396..1398] vs)
+                  (NP (JJ:[1399..1403] late))))
+              (-RRB-:[1403..1404] -RRB-))))))
+    (VP (VBD:[1405..1408] was)
+      (ADJP-PRD (RB:[1409..1422] statistically) (JJ:[1424..1435] significant)
+        (PRN (-LRB-:[1436..1437] -LRB-)
+          (S
+            (NP-SBJ (NN:[1437..1438] P))
+            (VP (SYM:[1439..1440] =)
+              (NP (CD:[1440..1444] .007))))
+          (-RRB-:[1444..1445] -RRB-))))
+    (.:[1445..1446] .)))
+
+;sentence 19 Span:1447..1459
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1447..1458] CONCLUSIONS) (::[1458..1459] :)))
+
+;sentence 20 Span:1460..1632
+;These data suggest that ras mutations are  uncommon in gastric
+;adenocarcinomas and that differing racial and/or geographic  mechanisms may
+;not underlie ras gene alteration.
+;[1484..1487]:gene-rna:"ras"
+;[1515..1538]:malignancy:"gastric adenocarcinomas"
+;[1612..1615]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[1460..1465] These) (NNS:[1466..1470] data))
+    (VP (VBP:[1471..1478] suggest)
+      (SBAR
+        (SBAR (IN:[1479..1483] that)
+          (S
+            (NP-SBJ (NN:[1484..1487] ras) (NNS:[1488..1497] mutations))
+            (VP (VBP:[1498..1501] are)
+              (ADJP-PRD (JJ:[1503..1511] uncommon))
+              (PP-LOC (IN:[1512..1514] in)
+                (NP (JJ:[1515..1522] gastric) (NNS:[1523..1538] adenocarcinomas))))))
+        (CC:[1539..1542] and)
+        (SBAR (IN:[1543..1547] that)
+          (S
+            (NP-SBJ (VBG:[1548..1557] differing)
+              (NML
+                (NML (JJ:[1558..1564] racial)
+                  (NML-1 (-NONE-:[1564..1564] *P*)))
+                (CC:[1565..1571] and/or)
+                (NML (JJ:[1572..1582] geographic)
+                  (NML-1 (NNS:[1584..1594] mechanisms)))))
+            (VP (MD:[1595..1598] may) (RB:[1599..1602] not)
+              (VP (VB:[1603..1611] underlie)
+                (NP (NN:[1612..1615] ras) (NN:[1616..1620] gene)
+                    (NN:[1621..1631] alteration))))))))
+    (.:[1631..1632] .)))
+
+;sentence 21 Span:1633..1830
+;Most ras mutations were,  however, observed in the group of intestinal-type
+;samples, supporting the  different genetic mechanisms of carcinogenesis
+;between the intestinal- and  diffuse-type tumors.
+;[1638..1641]:gene-rna:"ras"
+;[1693..1716]:malignancy:"intestinal-type samples"
+;[1793..1804]...[1818..1829]:malignancy:"intestinal-"..."type tumors"
+;[1810..1829]:malignancy:"diffuse-type tumors"
+(SENT
+  (S
+    (NP-SBJ-3 (JJS:[1633..1637] Most) (NN:[1638..1641] ras)
+              (NNS:[1642..1651] mutations))
+    (VP (VBD:[1652..1656] were) (,:[1656..1657] ,)
+      (ADVP (RB:[1659..1666] however))
+      (,:[1666..1667] ,)
+      (VP (VBN:[1668..1676] observed)
+        (NP-3 (-NONE-:[1676..1676] *))
+        (PP-LOC (IN:[1677..1679] in)
+          (NP
+            (NP (DT:[1680..1683] the) (NN:[1684..1689] group))
+            (PP (IN:[1690..1692] of)
+              (NP
+                (NML (JJ:[1693..1703] intestinal) (HYPH:[1703..1704] -)
+                     (NN:[1704..1708] type))
+                (NNS:[1709..1716] samples)))))
+        (,:[1716..1717] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1717..1717] *))
+          (VP (VBG:[1718..1728] supporting)
+            (NP
+              (NP (DT:[1729..1732] the) (JJ:[1734..1743] different)
+                  (JJ:[1744..1751] genetic) (NNS:[1752..1762] mechanisms))
+              (PP (IN:[1763..1765] of)
+                (NP (NN:[1766..1780] carcinogenesis)))
+              (PP (IN:[1781..1788] between)
+                (NP (DT:[1789..1792] the)
+                  (NML
+                    (NML
+                      (NML (JJ:[1793..1803] intestinal) (HYPH:[1803..1804] -)
+                        (NML-1 (-NONE-:[1804..1804] *P*)))
+                      (NML-2 (-NONE-:[1804..1804] *P*)))
+                    (CC:[1805..1808] and)
+                    (NML
+                      (NML (JJ:[1810..1817] diffuse) (HYPH:[1817..1818] -)
+                        (NML-1 (NN:[1818..1822] type)))
+                      (NML-2 (NNS:[1823..1829] tumors)))))))))))
+    (.:[1829..1830] .)))
+
+;sentence 22 Span:1831..1956
+;It is noteworthy that enhanced ERK1/2 activity could be one  of the
+;characteristics of tumor invasiveness in gastric cancers.
+;[1862..1866]:gene-rna:"ERK1"
+;[1862..1865]...[1867..1868]:gene-rna:"ERK"..."2"
+;[1940..1955]:malignancy:"gastric cancers"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1831..1833] It))
+    (VP (VBZ:[1834..1836] is)
+      (ADJP-PRD (JJ:[1837..1847] noteworthy)
+        (SBAR (IN:[1848..1852] that)
+          (S
+            (NP-SBJ (VBN:[1853..1861] enhanced)
+              (NML
+                (NML
+                  (NML-1 (NN:[1862..1865] ERK))
+                  (CD:[1865..1866] 1))
+                (SYM:[1866..1867] /)
+                (NML
+                  (NML-1 (-NONE-:[1867..1867] *P*))
+                  (CD:[1867..1868] 2)))
+              (NN:[1869..1877] activity))
+            (VP (MD:[1878..1883] could)
+              (VP (VB:[1884..1886] be)
+                (NP-PRD
+                  (NP (CD:[1887..1890] one))
+                  (PP (IN:[1892..1894] of)
+                    (NP
+                      (NP (DT:[1895..1898] the)
+                          (NNS:[1899..1914] characteristics))
+                      (PP (IN:[1915..1917] of)
+                        (NP
+                          (NP (NN:[1918..1923] tumor)
+                              (NN:[1924..1936] invasiveness))
+                          (PP (IN:[1937..1939] in)
+                            (NP (JJ:[1940..1947] gastric)
+                                (NNS:[1948..1955] cancers))))))))))))))
+    (.:[1955..1956] .)))
+
+;section 23 Span:1960..2005
+;PMID: 12204060 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1960..1964] PMID) (::[1964..1965] :) (CD:[1966..1974] 12204060)
+        (NN:[1975..1976] -LSB-) (NNP:[1976..1982] PubMed) (::[1983..1984] -)
+        (NN:[1985..1992] indexed) (IN:[1993..1996] for)
+        (NNP:[1997..2005] MEDLINE-RSB-)))

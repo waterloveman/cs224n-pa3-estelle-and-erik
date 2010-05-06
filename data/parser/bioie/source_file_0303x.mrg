@@ -1,0 +1,318 @@
+;PMID: 10792276
+;source_file_736.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..186] = [t:42..186]
+;2)section:[e:190..244] = [t:190..244]
+;3)section:[e:248..430] = [t:248..430]
+;4)sentence:[e:434..524] = [t:434..524]
+;5)sentence:[e:525..676] = [t:525..676]
+;6)sentence:[e:677..936] = [t:677..936]
+;7)sentence:[e:937..1089] = [t:937..1089]
+;8)sentence:[e:1090..1278] = [t:1090..1278]
+;9)sentence:[e:1279..1466] = [t:1279..1466]
+;10)section:[e:1470..1515] = [t:1470..1515]
+
+;section 0 Span:0..37
+;Br J Haematol  2000 Mar;108(4):729-36
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..13] Haematol) (CD:[15..19] 2000)
+        (.:[20..28] Mar;108-LRB-) (CD:[28..30] 4-RRB-) (CD:[30..34] :729)
+        (::[34..35] -) (CD:[35..37] 36)))
+
+;sentence 1 Span:42..186
+;Mastocytosis cells bearing a c-kit activating point mutation are
+;characterized  by hypersensitivity to stem cell factor and increased
+;apoptosis.
+;[42..60]:malignancy:"Mastocytosis cells"
+;[71..76]:gene-rna:"c-kit"
+;[88..102]:variation-type:"point mutation"
+;[145..161]:gene-protein:"stem cell factor"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (NN:[42..54] Mastocytosis) (NNS:[55..60] cells))
+      (VP (VBG:[61..68] bearing)
+        (NP (DT:[69..70] a) (NN:[71..76] c-kit) (VBG:[77..87] activating)
+           (NN:[88..93] point) (NN:[94..102] mutation))))
+    (VP (VBP:[103..106] are)
+      (VP (VBN:[107..120] characterized)
+        (NP-1 (-NONE-:[120..120] *))
+        (PP (IN:[122..124] by)
+          (NP-LGS
+            (NP
+              (NP (NN:[125..141] hypersensitivity))
+              (PP (TO:[142..144] to)
+                (NP
+                  (NML (NN:[145..149] stem) (NN:[150..154] cell))
+                  (NN:[155..161] factor))))
+            (CC:[162..165] and)
+            (NP (VBN:[166..175] increased) (NN:[176..185] apoptosis))))))
+    (.:[185..186] .)))
+
+;section 2 Span:190..244
+;Dror Y, Leaker M, Caruana G, Bernstein A, Freedman MH.
+(SEC
+  (FRAG (NNP:[190..194] Dror) (NNP:[195..196] Y) (,:[196..197] ,)
+        (NNP:[198..204] Leaker) (NNP:[205..207] M,) (NNP:[208..215] Caruana)
+        (NNP:[216..217] G) (,:[217..218] ,) (NNP:[219..228] Bernstein)
+        (NNP:[229..230] A) (,:[230..231] ,) (NNP:[232..240] Freedman)
+        (NNP:[241..244] MH.)))
+
+;section 3 Span:248..430
+;Division of Hematology/Oncology, Department of Pediatrics, Research
+;Institute,  The Hospital for Sick Children and the University of Toronto,
+;Toronto, Canada.  yigal.dror@hotmail.com
+(SEC
+  (FRAG (NNP:[248..256] Division) (IN:[257..259] of) (NNP:[260..270] Hematology)
+        (NNP:[270..271] /) (NNP:[271..279] Oncology) (,:[279..280] ,)
+        (NNP:[281..291] Department) (IN:[292..294] of)
+        (NNP:[295..305] Pediatrics) (,:[305..306] ,) (NNP:[307..315] Research)
+        (NNP:[316..325] Institute) (,:[325..326] ,) (DT:[328..331] The)
+        (NN:[332..340] Hospital) (IN:[341..344] for) (NNP:[345..349] Sick)
+        (NNP:[350..358] Children) (CC:[359..362] and) (DT:[363..366] the)
+        (NNP:[367..377] University) (IN:[378..380] of) (NNP:[381..388] Toronto)
+        (,:[388..389] ,) (NNP:[390..397] Toronto) (,:[397..398] ,)
+        (NNP:[399..405] Canada) (.:[405..406] .) ('':[408..413] yigal)
+        (VBD:[413..426] .dror@hotmail) (.:[426..430] .com)))
+
+;sentence 4 Span:434..524
+;Mastocytosis is characterized by abnormal infiltration of mast cells into 
+;various organs.
+;[434..446]:malignancy:"Mastocytosis"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[434..446] Mastocytosis))
+    (VP (VBZ:[447..449] is)
+      (VP (VBN:[450..463] characterized)
+        (NP-1 (-NONE-:[463..463] *))
+        (PP (IN:[464..466] by)
+          (NP-LGS
+            (NP (JJ:[467..475] abnormal) (NN:[476..488] infiltration))
+            (PP (IN:[489..491] of)
+              (NP (NN:[492..496] mast) (NNS:[497..502] cells)))
+            (PP (IN:[503..507] into)
+              (NP (JJ:[509..516] various) (NNS:[517..523] organs)))))))
+    (.:[523..524] .)))
+
+;sentence 5 Span:525..676
+;An activating mutation in c-kit, involving an A --> T  substitution at
+;nucleotide 2648 has recently been described in some patients  with
+;mastocytosis.
+;[539..547]:variation-event:"mutation"
+;[551..556]:gene-rna:"c-kit"
+;[571..572]:variation-state-original:"A"
+;[577..578]:variation-state-altered:"T"
+;[580..592]:variation-type:"substitution"
+;[596..611]:variation-location:"nucleotide 2648"
+;[663..675]:malignancy:"mastocytosis"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[525..527] An) (VBG:[528..538] activating)
+            (NN:[539..547] mutation))
+        (PP (IN:[548..550] in)
+          (NP (NN:[551..556] c-kit))))
+      (,:[556..557] ,)
+      (VP (VBG:[558..567] involving)
+        (NP
+          (NP (DT:[568..570] an)
+            (NML
+              (NML (NN:[571..572] A))
+              (PP (SYM:[573..576] -->)
+                (NP (NN:[577..578] T))))
+            (NN:[580..592] substitution))
+          (PP-LOC (IN:[593..595] at)
+            (NP (NN:[596..606] nucleotide) (CD:[607..611] 2648))))))
+    (VP (VBZ:[612..615] has)
+      (ADVP-TMP (RB:[616..624] recently))
+      (VP (VBN:[625..629] been)
+        (VP (VBN:[630..639] described)
+          (NP-1 (-NONE-:[639..639] *))
+          (PP (IN:[640..642] in)
+            (NP
+              (NP (DT:[643..647] some) (NNS:[648..656] patients))
+              (PP (IN:[658..662] with)
+                (NP (NN:[663..675] mastocytosis))))))))
+    (.:[675..676] .)))
+
+;sentence 6 Span:677..936
+;We describe a 12-year-old girl with this mutation in her bone  marrow cells
+;at diagnosis with a myelodysplastic syndrome (MDS) without evidence  of
+;mastocytosis, and then in peripheral blood mononuclear cells 1 year later 
+;after the emergence of mastocytosis.
+;[713..726]:variation-event:"this mutation"
+;[773..797]:malignancy:"myelodysplastic syndrome"
+;[799..802]:malignancy:"MDS"
+;[825..837]:malignancy:"mastocytosis"
+;[923..935]:malignancy:"mastocytosis"
+(SENT
+  (S
+    (NP-SBJ (PRP:[677..679] We))
+    (VP (VBP:[680..688] describe)
+      (NP (DT:[689..690] a)
+        (ADJP
+          (NML (CD:[691..693] 12) (HYPH:[693..694] -) (NN:[694..698] year))
+          (HYPH:[698..699] -) (JJ:[699..702] old))
+        (NN:[703..707] girl))
+      (PP (IN:[708..712] with)
+        (NP
+          (NP (DT:[713..717] this) (NN:[718..726] mutation))
+          (PP
+            (PP (IN:[727..729] in)
+              (NP
+                (NP (PRP$:[730..733] her)
+                  (NML (NN:[734..738] bone) (NN:[740..746] marrow))
+                  (NNS:[747..752] cells))
+                (PP-TMP (IN:[753..755] at)
+                  (NP
+                    (NP (NN:[756..765] diagnosis))
+                    (PP (IN:[766..770] with)
+                      (NP
+                        (NP
+                          (NP (DT:[771..772] a)
+                             (JJ:[773..788] myelodysplastic)
+                             (NN:[789..797] syndrome))
+                          (NP (-LRB-:[798..799] -LRB-) (NN:[799..802] MDS)
+                              (-RRB-:[802..803] -RRB-)))
+                        (PP (IN:[804..811] without)
+                          (NP
+                            (NP (NN:[812..820] evidence))
+                            (PP (IN:[822..824] of)
+                              (NP (NN:[825..837] mastocytosis)))))))))))
+            (,:[837..838] ,)
+            (CONJP (CC:[839..842] and) (RB:[843..847] then))
+            (PP (IN:[848..850] in)
+              (NP
+                (NP
+                  (NML (JJ:[851..861] peripheral) (NN:[862..867] blood))
+                  (JJ:[868..879] mononuclear) (NNS:[880..885] cells))
+                (ADVP-TMP
+                  (NML (CD:[886..887] 1) (NN:[888..892] year))
+                  (RB:[893..898] later))
+                (PP-TMP (IN:[900..905] after)
+                  (NP
+                    (NP (DT:[906..909] the) (NN:[910..919] emergence))
+                    (PP (IN:[920..922] of)
+                      (NP (NN:[923..935] mastocytosis)))))))))))
+    (.:[935..936] .)))
+
+;sentence 7 Span:937..1089
+;The role of the c-Kit receptor and its  ligand stem cell factor (SCF) in the
+;pathogenesis of the disease was analysed in  marrow cell clonogenic assays.
+;[953..967]:gene-protein:"c-Kit receptor"
+;[984..1000]:gene-protein:"stem cell factor"
+;[1002..1005]:gene-protein:"SCF"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[937..940] The) (NN:[941..945] role))
+      (PP (IN:[946..948] of)
+        (NP
+          (NP (DT:[949..952] the)
+             (NN:[953..958] c-Kit) (NN:[959..967] receptor))
+          (CC:[968..971] and)
+          (NP (PRP$:[972..975] its) (NN:[977..983] ligand)
+            (NML
+              (NML (NN:[984..988] stem) (NN:[989..993] cell)
+                   (NN:[994..1000] factor))
+              (NML (-LRB-:[1001..1002] -LRB-) (NN:[1002..1005] SCF)
+                   (-RRB-:[1005..1006] -RRB-))))))
+      (PP (IN:[1007..1009] in)
+        (NP
+          (NP (DT:[1010..1013] the) (NN:[1014..1026] pathogenesis))
+          (PP (IN:[1027..1029] of)
+            (NP (DT:[1030..1033] the) (NN:[1034..1041] disease))))))
+    (VP (VBD:[1042..1045] was)
+      (VP (VBN:[1046..1054] analysed)
+        (NP-1 (-NONE-:[1054..1054] *))
+        (PP (IN:[1055..1057] in)
+          (NP
+            (NML (NN:[1059..1065] marrow) (NN:[1066..1070] cell))
+            (JJ:[1071..1081] clonogenic) (NNS:[1082..1088] assays)))))
+    (.:[1088..1089] .)))
+
+;sentence 8 Span:1090..1278
+;We show that the genetic abnormalities in the  patient resulted in
+;factor-independent growth and hypersensitivity of primitive  progenitors to
+;SCF, with increased production of mast cells.
+;[1233..1236]:gene-protein:"SCF"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1090..1092] We))
+    (VP (VBP:[1093..1097] show)
+      (SBAR (IN:[1098..1102] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1103..1106] the) (JJ:[1107..1114] genetic)
+                (NNS:[1115..1128] abnormalities))
+            (PP (IN:[1129..1131] in)
+              (NP (DT:[1132..1135] the) (NN:[1137..1144] patient))))
+          (VP (VBD:[1145..1153] resulted)
+            (PP-CLR (IN:[1154..1156] in)
+              (NP
+                (NP
+                  (ADJP (NN:[1157..1163] factor) (HYPH:[1163..1164] -)
+                        (JJ:[1164..1175] independent))
+                  (NN:[1176..1182] growth))
+                (CC:[1183..1186] and)
+                (NP
+                  (NP (NN:[1187..1203] hypersensitivity))
+                  (PP (IN:[1204..1206] of)
+                    (NP (JJ:[1207..1216] primitive)
+                        (NNS:[1218..1229] progenitors)))
+                  (PP (TO:[1230..1232] to)
+                    (NP (NN:[1233..1236] SCF))))))
+            (,:[1236..1237] ,)
+            (PP (IN:[1238..1242] with)
+              (NP
+                (NP (VBN:[1243..1252] increased) (NN:[1253..1263] production))
+                (PP (IN:[1264..1266] of)
+                  (NP (NN:[1267..1271] mast) (NNS:[1272..1277] cells)))))))))
+    (.:[1277..1278] .)))
+
+;sentence 9 Span:1279..1466
+;Increased apoptosis  and cluster formation, consistent with the
+;myelodysplastic nature of the  disorder, accompanied accumulation of abnormal
+;cells with increasing  concentrations of SCF.
+;[1462..1465]:gene-protein:"SCF"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (VBN:[1279..1288] Increased) (NN:[1289..1298] apoptosis))
+        (CC:[1300..1303] and)
+        (NP (NN:[1304..1311] cluster) (NN:[1312..1321] formation)))
+      (,:[1321..1322] ,)
+      (ADJP (JJ:[1323..1333] consistent)
+        (PP (IN:[1334..1338] with)
+          (NP
+            (NP (DT:[1339..1342] the) (JJ:[1343..1358] myelodysplastic)
+                (NN:[1359..1365] nature))
+            (PP (IN:[1366..1368] of)
+              (NP (DT:[1369..1372] the) (NN:[1374..1382] disorder)))))))
+    (,:[1382..1383] ,)
+    (VP (VBD:[1384..1395] accompanied)
+      (NP
+        (NP (NN:[1396..1408] accumulation))
+        (PP (IN:[1409..1411] of)
+          (NP
+            (NP (JJ:[1412..1420] abnormal) (NNS:[1421..1426] cells))
+            (PP (IN:[1427..1431] with)
+              (NP
+                (NP (VBG:[1432..1442] increasing)
+                    (NNS:[1444..1458] concentrations))
+                (PP (IN:[1459..1461] of)
+                  (NP (NN:[1462..1465] SCF)))))))))
+    (.:[1465..1466] .)))
+
+;section 10 Span:1470..1515
+;PMID: 10792276 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1470..1474] PMID) (::[1474..1475] :) (CD:[1476..1484] 10792276)
+        (NN:[1485..1486] -LSB-) (NNP:[1486..1492] PubMed) (::[1493..1494] -)
+        (NN:[1495..1502] indexed) (IN:[1503..1506] for)
+        (NNP:[1507..1515] MEDLINE-RSB-)))

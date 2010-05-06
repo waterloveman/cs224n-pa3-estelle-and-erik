@@ -1,0 +1,604 @@
+;PMID: 7678502
+;source_file_906.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..48] = [t:0..48]
+;1)sentence:[e:54..198] = [t:54..198]
+;2)section:[e:202..270] = [t:202..270]
+;3)section:[e:274..358] = [t:274..358]
+;4)sentence:[e:362..611] = [t:362..611]
+;5)sentence:[e:612..761] = [t:612..761]
+;6)sentence:[e:762..872] = [t:762..872]
+;7)sentence:[e:873..1062] = [t:873..1062]
+;8)sentence:[e:1063..1256] = [t:1063..1256]
+;9)sentence:[e:1257..1372] = [t:1257..1372]
+;10)sentence:[e:1373..1621] = [t:1373..1621]
+;11)sentence:[e:1623..1829] = [t:1623..1829]
+;12)sentence:[e:1830..1954] = [t:1830..1954]
+;13)sentence:[e:1955..2243] = [t:1955..2243]
+;14)sentence:[e:2244..2362] = [t:2244..2362]
+;15)section:[e:2366..2410] = [t:2366..2410]
+;Token/POS Errors
+;ERROR_POS mismatch [39..40] t:token e:CD 1
+
+;section 0 Span:0..48
+;Biochim Biophys Acta. 1993 Jan 15;1161(1):38-46.
+(SEC
+  (FRAG (NNP:[0..7] Biochim) (NNP:[8..15] Biophys) (NNP:[16..20] Acta)
+        (.:[20..21] .) (CD:[22..26] 1993) (NNP:[27..30] Jan) (CD:[31..33] 15)
+        (NN:[33..34] ;) (CD:[34..38] 1161) (NN:[38..39] -LRB-)
+        (token:[39..40] 1) (NN:[40..41] -RRB-) (::[41..42] :) (CD:[42..44] 38)
+        (::[44..45] -) (CD:[45..47] 46) (.:[47..48] .)))
+
+;sentence 1 Span:54..198
+;An inhibitory monoclonal anti-protein antibody and an anti-peptide antibody 
+;share an epitope on rat cytochrome P-450 enzymes CYP1A1 and CYP1A2.
+;[68..100]:substance:"monoclonal anti-protein antibody"
+;[108..129]:substance:"anti-peptide antibody"
+;[155..179]:cyp450:"cytochrome P-450 enzymes"
+;[180..186]:cyp450:"CYP1A1"
+;[191..197]:cyp450:"CYP1A2"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (DT:[54..56] An) (JJ:[57..67] inhibitory)
+         (JJ:[68..78] monoclonal)
+        (NML (AFX:[79..83] anti) (HYPH:[83..84] -) (NN:[84..91] protein))
+        (NN:[92..100] antibody))
+      (CC:[101..104] and)
+      (NP (DT:[105..107] an)
+        
+        (NML (AFX:[108..112] anti) (HYPH:[112..113] -) (NN:[113..120] peptide))
+        (NN:[121..129] antibody)))
+    (VP (VBP:[131..136] share)
+      (NP (DT:[137..139] an) (NN:[140..147] epitope))
+      (PP (IN:[148..150] on)
+        (NP
+          (NP
+            (NML-1 (NN:[151..154] rat)
+              
+              (NML (NN:[155..165] cytochrome) (NN:[166..171] P-450))
+              (NNS:[172..179] enzymes))
+            (NN:[180..186] CYP1A1))
+          (CC:[187..190] and)
+          (NP
+            (NML-1 (-NONE-:[190..190] *P*))
+            (NN:[191..197] CYP1A2)))))
+    (.:[197..198] .)))
+
+;section 2 Span:202..270
+;Edwards RJ, Murray BP, Murray S, Singleton AM, Davies DS, Boobis AR.
+(SEC
+  (FRAG (NNP:[202..209] Edwards) (NNP:[210..212] RJ) (,:[212..213] ,)
+        (NNP:[214..220] Murray) (NNP:[221..223] BP) (,:[223..224] ,)
+        (NNP:[225..231] Murray) (NNP:[232..233] S) (,:[233..234] ,)
+        (IN:[235..244] Singleton) (NNP:[245..247] AM) (,:[247..248] ,)
+        (NNP:[249..255] Davies) (NNP:[256..258] DS) (,:[258..259] ,)
+        (NNP:[260..266] Boobis) (NNP:[267..269] AR) (.:[269..270] .)))
+
+;section 3 Span:274..358
+;Department of Clinical Pharmacology, Royal Postgraduate Medical School,
+;London,  UK.
+(SEC
+  (FRAG (NNP:[274..284] Department) (IN:[285..287] of) (NNP:[288..296] Clinical)
+        (NNP:[297..309] Pharmacology) (,:[309..310] ,) (NNP:[311..316] Royal)
+        (NNP:[317..329] Postgraduate) (NNP:[330..337] Medical)
+        (NNP:[338..344] School) (,:[344..345] ,) (NNP:[346..352] London)
+        (,:[352..353] ,) (NNP:[355..357] UK) (.:[357..358] .)))
+
+;sentence 4 Span:362..611
+;A monoclonal antibody, 12/2/3/2, which was raised against purified rat CYP1A1
+; recognises specifically rat and mouse CYP1A1 and CYP1A2, but not any
+;cytochrome  P-450 present in hepatic microsomal fractions from rabbit, guinea
+;pig, hamster  or human.
+;[364..383]:substance:"monoclonal antibody"
+;[385..393]:substance:"12/2/3/2"
+;[433..439]:cyp450:"CYP1A1"
+;[479..485]:cyp450:"CYP1A1"
+;[490..496]:cyp450:"CYP1A2"
+;[510..527]:cyp450:"cytochrome  P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[362..363] A)
+           (JJ:[364..374] monoclonal) (NN:[375..383] antibody))
+        (,:[383..384] ,)
+        (NP (NN:[385..393] 12/2/3/2)))
+      (,:[393..394] ,)
+      (SBAR
+        (WHNP-3 (WDT:[395..400] which))
+        (S
+          (NP-SBJ-3 (-NONE-:[400..400] *T*))
+          (VP (VBD:[401..404] was)
+            (VP (VBN:[405..411] raised)
+              (NP-3 (-NONE-:[411..411] *))
+              (PP (IN:[412..419] against)
+                (NP (JJ:[420..428] purified) (NN:[429..432] rat)
+                    (NN:[433..439] CYP1A1))))))))
+    (VP
+      (VP (VBZ:[441..451] recognises)
+        (ADVP (RB:[452..464] specifically))
+        (NP=1
+          (NP (NN:[465..468] rat)
+            (NML-2 (-NONE-:[468..468] *P*)))
+          (CC:[469..472] and)
+          (NP (NN:[473..478] mouse)
+            (NML-2 (NN:[479..485] CYP1A1) (CC:[486..489] and)
+                   (NN:[490..496] CYP1A2)))))
+      (,:[496..497] ,) (CC:[498..501] but)
+      (VP (RB:[502..505] not)
+        (NP=1
+          (NP (DT:[506..509] any)
+             (NN:[510..520] cytochrome) (NN:[522..527] P-450))
+          (ADJP (JJ:[528..535] present)
+            (PP (IN:[536..538] in)
+              (NP
+                (NP (JJ:[539..546] hepatic) (JJ:[547..557] microsomal)
+                    (NNS:[558..567] fractions))
+                (PP (IN:[568..572] from)
+                  (NP
+                    (NP (NN:[573..579] rabbit))
+                    (,:[579..580] ,)
+                    (NP (NN:[581..587] guinea) (NN:[588..591] pig))
+                    (,:[591..592] ,)
+                    (NP (NN:[593..600] hamster))
+                    (CC:[602..604] or)
+                    (NP (NN:[605..610] human))))))))))
+    (.:[610..611] .)))
+
+;sentence 5 Span:612..761
+;By comparing the primary sequences of cytochromes P-450 to which  12/2/3/2
+;does and does not bind, 10 possible locations for its epitope were  found.
+;[650..667]:cyp450:"cytochromes P-450"
+;[678..686]:substance:"12/2/3/2"
+(SENT
+  (S
+    (PP (IN:[612..614] By)
+      (S-NOM
+        (NP-SBJ (-NONE-:[614..614] *))
+        (VP (VBG:[615..624] comparing)
+          (NP
+            (NP
+              (NP (DT:[625..628] the) (JJ:[629..636] primary)
+                  (NNS:[637..646] sequences))
+              (PP (IN:[647..649] of)
+                (NP (NNS:[650..661] cytochromes) (NN:[662..667] P-450))))
+            (SBAR
+              (WHPP-2 (TO:[668..670] to)
+                (WHNP (WDT:[671..676] which)))
+              (S
+                (NP-SBJ (NN:[678..686] 12/2/3/2))
+                (VP
+                  (VP (VBZ:[687..691] does)
+                    (VP (-NONE-:[691..691] *?*)))
+                  (CC:[692..695] and)
+                  (VP (VBZ:[696..700] does) (RB:[701..704] not)
+                    (VP (VB:[705..709] bind)
+                      (PP-2 (-NONE-:[709..709] *T*)))))))))))
+    (,:[709..710] ,)
+    (NP-SBJ-1
+      (NP (CD:[711..713] 10) (JJ:[714..722] possible) (NNS:[723..732] locations))
+      (PP (IN:[733..736] for)
+        (NP (PRP$:[737..740] its) (NN:[741..748] epitope))))
+    (VP (VBD:[749..753] were)
+      (VP (VBN:[755..760] found)
+        (NP-1 (-NONE-:[760..760] *))))
+    (.:[760..761] .)))
+
+;sentence 6 Span:762..872
+;Of these, one was extremely hydrophilic and, hence, predicted to be the  most
+;antigenic in the native protein.
+;[864..871]:substance:"protein"
+(SENT
+  (S
+    (PP-2 (IN:[762..764] Of)
+      (NP (DT:[765..770] these)))
+    (,:[770..771] ,)
+    (NP-SBJ-1
+      (NP (CD:[772..775] one))
+      (PP-2 (-NONE-:[775..775] *T*)))
+    (VP (VBD:[776..779] was)
+      (UCP
+        (NP-PRD (RB:[780..789] extremely) (JJ:[790..801] hydrophilic))
+        (CC:[802..805] and) (,:[805..806] ,)
+        (VP
+          (ADVP (RB:[807..812] hence))
+          (,:[812..813] ,) (VBD:[814..823] predicted)
+          (S
+            (NP-SBJ-1 (-NONE-:[823..823] *))
+            (VP (TO:[824..826] to)
+              (VP (VB:[827..829] be)
+                (NP-PRD (DT:[830..833] the) (RBS:[835..839] most)
+                        (JJ:[840..849] antigenic))
+                (PP-LOC (IN:[850..852] in)
+                  (NP (DT:[853..856] the) (JJ:[857..863] native)
+                      (NN:[864..871] protein)))))))))
+    (.:[871..872] .)))
+
+;sentence 7 Span:873..1062
+;An antibody was produced against the  synthetic peptide corresponding to this
+;region (Gly-Arg-Asp-Arg-Gln-Pro-Arg-Leu:  residues 356-363 and 350-357 of rat
+;CYP1A1 and CYP1A2, respectively).
+;[876..884]:substance:"antibody"
+;[921..928]:substance:"peptide"
+;[1029..1035]:cyp450:"CYP1A1"
+;[1040..1046]:cyp450:"CYP1A2"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[873..875] An) (NN:[876..884] antibody))
+    (VP (VBD:[885..888] was)
+      (VP (VBN:[889..897] produced)
+        (NP-3 (-NONE-:[897..897] *))
+        (PP (IN:[898..905] against)
+          (NP
+            (NP (DT:[906..909] the) (JJ:[911..920] synthetic)
+                (NN:[921..928] peptide))
+            (VP (VBG:[929..942] corresponding)
+              (PP-CLR (TO:[943..945] to)
+                (NP (DT:[946..950] this) (NN:[951..957] region))))))
+        (PRN (-LRB-:[958..959] -LRB-)
+          (FRAG
+            (NP (NN:[959..962] Gly) (HYPH:[962..963] -) (NN:[963..966] Arg)
+                (HYPH:[966..967] -) (NN:[967..970] Asp) (HYPH:[970..971] -)
+                (NN:[971..974] Arg) (HYPH:[974..975] -) (NN:[975..978] Gln)
+                (HYPH:[978..979] -) (NN:[979..982] Pro) (HYPH:[982..983] -)
+                (NN:[983..986] Arg) (HYPH:[986..987] -) (NN:[987..990] Leu))
+            (::[990..991] :)
+            (NP
+              (NP
+                (NP
+                  (NML-2 (NNS:[993..1001] residues))
+                  (CD:[1002..1005] 356) (HYPH:[1005..1006] -)
+                   (CD:[1006..1009] 363))
+                (CC:[1010..1013] and)
+                (NP
+                  (NML-2 (-NONE-:[1013..1013] *P*))
+                  (CD:[1014..1017] 350) (HYPH:[1017..1018] -)
+                   (CD:[1018..1021] 357)))
+              (PP (IN:[1022..1024] of)
+                (NP
+                  (NP
+                    (NML-1 (NN:[1025..1028] rat))
+                    (NN:[1029..1035] CYP1A1))
+                  (CC:[1036..1039] and)
+                  (NP
+                    (NML-1 (-NONE-:[1039..1039] *P*))
+                    (NN:[1040..1046] CYP1A2))))
+              (,:[1046..1047] ,)
+              (ADVP (RB:[1048..1060] respectively))))
+          (-RRB-:[1060..1061] -RRB-))))
+    (.:[1061..1062] .)))
+
+;sentence 8 Span:1063..1256
+;The  antibody bound to rat, mouse and hamster CYP1A1 and to rat and mouse
+;CYP1A2, but  did not bind to any protein present in hepatic microsomal
+;fractions from the  rabbit, guinea pig or human.
+;[1068..1076]:substance:"antibody"
+;[1109..1115]:cyp450:"CYP1A1"
+;[1137..1143]:cyp450:"CYP1A2"
+;[1170..1177]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ (DT:[1063..1066] The) (NN:[1068..1076] antibody))
+    (VP
+      (VP (VBD:[1077..1082] bound)
+        (PP-CLR
+          (PP (TO:[1083..1085] to)
+            (NP
+              (NP (NN:[1086..1089] rat)
+                (NML-2 (-NONE-:[1089..1089] *P*)))
+              (,:[1089..1090] ,)
+              (NP (NN:[1091..1096] mouse)
+                (NML-2 (-NONE-:[1096..1096] *P*)))
+              (CC:[1097..1100] and)
+              (NP (NN:[1101..1108] hamster)
+                (NML-2 (NN:[1109..1115] CYP1A1)))))
+          (CC:[1116..1119] and)
+          (PP (TO:[1120..1122] to)
+            (NP
+              (NP (NN:[1123..1126] rat)
+                (NML-1 (-NONE-:[1126..1126] *P*)))
+              (CC:[1127..1130] and)
+              (NP (NN:[1131..1136] mouse)
+                (NML-1 (NN:[1137..1143] CYP1A2)))))))
+      (,:[1143..1144] ,) (CC:[1145..1148] but)
+      (VP (VBD:[1150..1153] did) (RB:[1154..1157] not)
+        (VP (VB:[1158..1162] bind)
+          (PP-CLR (TO:[1163..1165] to)
+            (NP
+              (NP (DT:[1166..1169] any) (NN:[1170..1177] protein))
+              (ADJP (JJ:[1178..1185] present)
+                (PP-LOC (IN:[1186..1188] in)
+                  (NP
+                    (NP (JJ:[1189..1196] hepatic) (JJ:[1197..1207] microsomal)
+                        (NNS:[1208..1217] fractions))
+                    (PP (IN:[1218..1222] from)
+                      (NP (DT:[1223..1226] the)
+                        (NML
+                          (NML (NN:[1228..1234] rabbit))
+                          (,:[1234..1235] ,)
+                          (NML (NN:[1236..1242] guinea) (NN:[1243..1246] pig))
+                          (IN:[1247..1249] or)
+                          (NML (NN:[1250..1255] human)))))))))))))
+    (.:[1255..1256] .)))
+
+;sentence 9 Span:1257..1372
+;The binding of the anti-peptide antibody to CYP1A1  or CYP1A2 was partially
+;antagonised by the monoclonal antibody.
+;[1276..1297]:substance:"anti-peptide antibody"
+;[1301..1307]:cyp450:"CYP1A1"
+;[1312..1318]:cyp450:"CYP1A2"
+;[1352..1371]:substance:"monoclonal antibody"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1257..1260] The) (NN:[1261..1268] binding))
+      (PP (IN:[1269..1271] of)
+        (NP (DT:[1272..1275] the)
+          
+          (NML (AFX:[1276..1280] anti) (HYPH:[1280..1281] -)
+               (NN:[1281..1288] peptide))
+          (NN:[1289..1297] antibody)))
+      (PP (TO:[1298..1300] to)
+        (NP (NN:[1301..1307] CYP1A1) (CC:[1309..1311] or)
+            (NN:[1312..1318] CYP1A2))))
+    (VP (VBD:[1319..1322] was)
+      (ADVP (RB:[1323..1332] partially))
+      (VP (VBN:[1333..1344] antagonised)
+        (NP-1 (-NONE-:[1344..1344] *))
+        (PP (IN:[1345..1347] by)
+          (NP-LGS (DT:[1348..1351] the)
+             (JJ:[1352..1362] monoclonal) (NN:[1363..1371] antibody)))))
+    (.:[1371..1372] .)))
+
+;sentence 10 Span:1373..1621
+;However, whereas  the monoclonal antibody inhibited both CYP1A1- (aryl
+;hydrocarbon hydroxylase)  and CYP1A2-(high-affinity phenacetin O-deethylase)
+;dependent monooxygenase  activity, the anti-peptide antibody was without
+;effect on these activities.
+;[1395..1414]:substance:"monoclonal antibody"
+;[1430..1436]:cyp450:"CYP1A1"
+;[1439..1467]:cyp450:"aryl hydrocarbon hydroxylase"
+;[1474..1480]:cyp450:"CYP1A2"
+;[1496..1519]:cyp450:"phenacetin O-deethylase"
+;[1531..1544]:substance:"monooxygenase"
+;[1560..1581]:substance:"anti-peptide antibody"
+(SENT
+  (S
+    (ADVP (RB:[1373..1380] However))
+    (,:[1380..1381] ,)
+    (SBAR-ADV (IN:[1382..1389] whereas)
+      (S
+        (NP-SBJ (DT:[1391..1394] the)
+           (JJ:[1395..1405] monoclonal) (NN:[1406..1414] antibody))
+        (VP (VBD:[1415..1424] inhibited)
+          (NP (CC:[1425..1429] both)
+            (NP
+              (ADJP (NN:[1430..1436] CYP1A1) (HYPH:[1436..1437] -)
+                (PRN (-LRB-:[1438..1439] -LRB-)
+                  (NP (NN:[1439..1443] aryl) (NN:[1444..1455] hydrocarbon)
+                      (NN:[1456..1467] hydroxylase))
+                  (-RRB-:[1467..1468] -RRB-))
+                (ADJP-1 (-NONE-:[1468..1468] *P*)))
+              (NML-2 (-NONE-:[1468..1468] *P*)))
+            (CC:[1470..1473] and)
+            (NP
+              (ADJP
+                (NML (NN:[1474..1480] CYP1A2))
+                (HYPH:[1480..1481] -)
+                (PRN (-LRB-:[1481..1482] -LRB-)
+                  (NP
+                    (ADJP (JJ:[1482..1486] high) (HYPH:[1486..1487] -)
+                          (NN:[1487..1495] affinity))
+                     (NN:[1496..1506] phenacetin) (NN:[1507..1519] O-deethylase))
+                  (-RRB-:[1519..1520] -RRB-))
+                (ADJP-1 (JJ:[1521..1530] dependent)))
+              (NML-2 (NN:[1531..1544] monooxygenase) (NN:[1546..1554] activity)))))))
+    (,:[1554..1555] ,)
+    (NP-SBJ (DT:[1556..1559] the)
+      
+      (NML (AFX:[1560..1564] anti) (HYPH:[1564..1565] -)
+           (NN:[1565..1572] peptide))
+      (NN:[1573..1581] antibody))
+    (VP (VBD:[1582..1585] was)
+      (PP-PRD (IN:[1586..1593] without)
+        (NP (NN:[1594..1600] effect)))
+      (PP (IN:[1601..1603] on)
+        (NP (DT:[1604..1609] these) (NNS:[1610..1620] activities))))
+    (.:[1620..1621] .)))
+
+;sentence 11 Span:1623..1829
+;Antigen denaturation by 8 M urea or 0.05% (w/v) SDS had no effect on binding
+;of  the anti-peptide antibody to cytochrome P-450, whilst binding of the
+;monoclonal  antibody was reduced by more than 1000-fold.
+;[1623..1630]:substance:"Antigen"
+;[1647..1648]:quantitative-value:"8"
+;[1649..1650]:quantitative-units:"M"
+;[1651..1655]:substance:"urea"
+;[1659..1664]:quantitative-value:"0.05%"
+;[1666..1669]:quantitative-units:"w/v"
+;[1671..1674]:substance:"SDS"
+;[1708..1729]:substance:"anti-peptide antibody"
+;[1733..1749]:cyp450:"cytochrome P-450"
+;[1773..1793]:substance:"monoclonal  antibody"
+;[1809..1828]:quantitative-value:"more than 1000-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1623..1630] Antigen) (NN:[1631..1643] denaturation))
+      (PP (IN:[1644..1646] by)
+        (NP
+          (NP
+            (NML (CD:[1647..1648] 8) (NN:[1649..1650] M))
+            (NN:[1651..1655] urea))
+          (CC:[1656..1658] or)
+          (NP
+            (NML
+               (CD:[1659..1663] 0.05) (NN:[1663..1664] %)
+              (PRN (-LRB-:[1665..1666] -LRB-)
+                (NP (NN:[1666..1667] w) (SYM:[1667..1668] /) (NN:[1668..1669] v))
+                (-RRB-:[1669..1670] -RRB-)))
+            (NN:[1671..1674] SDS)))))
+    (VP (VBD:[1675..1678] had)
+      (NP
+        (NP (DT:[1679..1681] no) (NN:[1682..1688] effect))
+        (PP (IN:[1689..1691] on)
+          (NP
+            (NP (NN:[1692..1699] binding))
+            (PP (IN:[1700..1702] of)
+              (NP (DT:[1704..1707] the)
+                
+                (NML (AFX:[1708..1712] anti) (HYPH:[1712..1713] -)
+                     (NN:[1713..1720] peptide))
+                (NN:[1721..1729] antibody)))
+            (PP (TO:[1730..1732] to)
+              (NP (NN:[1733..1743] cytochrome) (NN:[1744..1749] P-450))))))
+      (,:[1749..1750] ,)
+      (SBAR-ADV (IN:[1751..1757] whilst)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1758..1765] binding))
+            (PP (IN:[1766..1768] of)
+              (NP (DT:[1769..1772] the)
+                 (JJ:[1773..1783] monoclonal) (NN:[1785..1793] antibody))))
+          (VP (VBD:[1794..1797] was)
+            (VP (VBN:[1798..1805] reduced)
+              (NP-1 (-NONE-:[1805..1805] *))
+              (PP-EXT (IN:[1806..1808] by)
+                (NP
+                  (QP (JJR:[1809..1813] more) (IN:[1814..1818] than)
+                      (CD:[1819..1823] 1000) (HYPH:[1823..1824] -)
+                      (JJ:[1824..1828] fold)))))))))
+    (.:[1828..1829] .)))
+
+;sentence 12 Span:1830..1954
+;The anti-peptide antibody partially  antagonised the binding of 12/2/3/2 to
+;urea-denatured but not native cytochrome  P-450.
+;[1834..1855]:substance:"anti-peptide antibody"
+;[1894..1902]:substance:"12/2/3/2"
+;[1906..1910]:substance:"urea"
+;[1936..1953]:cyp450:"cytochrome  P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1830..1833] The)
+      
+      (NML (AFX:[1834..1838] anti) (HYPH:[1838..1839] -)
+           (NN:[1839..1846] peptide))
+      (NN:[1847..1855] antibody))
+    (ADVP (RB:[1856..1865] partially))
+    (VP (VBD:[1867..1878] antagonised)
+      (NP
+        (NP (DT:[1879..1882] the) (NN:[1883..1890] binding))
+        (PP (IN:[1891..1893] of)
+          (NP (NN:[1894..1902] 12/2/3/2)))
+        (PP (TO:[1903..1905] to)
+          (NP
+            (NP
+              (ADJP (NN:[1906..1910] urea) (HYPH:[1910..1911] -)
+                    (VBN:[1911..1920] denatured))
+              (NML-1 (-NONE-:[1920..1920] *P*)))
+            (CONJP (CC:[1921..1924] but) (RB:[1925..1928] not))
+            (NP (JJ:[1929..1935] native)
+              (NML-1 (NN:[1936..1946] cytochrome) (NN:[1948..1953] P-450)))))))
+    (.:[1953..1954] .)))
+
+;sentence 13 Span:1955..2243
+;These data suggest that whilst the complete binding site for the  monoclonal
+;antibody is discontinuous, sufficient of the epitope is linear, so  that when
+;the antigen is denatured the monoclonal antibody is still able to bind  and
+;this binding is antagonised by the anti-peptide antibody.
+;[2021..2040]:substance:"monoclonal antibody"
+;[2114..2121]:substance:"antigen"
+;[2139..2158]:substance:"monoclonal antibody"
+;[2221..2242]:substance:"anti-peptide antibody"
+(SENT
+  (S
+    (NP-SBJ (DT:[1955..1960] These) (NNS:[1961..1965] data))
+    (VP (VBP:[1966..1973] suggest)
+      (SBAR (IN:[1974..1978] that)
+        (S
+          (SBAR-ADV (IN:[1979..1985] whilst)
+            (S
+              (NP-SBJ
+                (NP (DT:[1986..1989] the) (JJ:[1990..1998] complete)
+                    (NN:[1999..2006] binding) (NN:[2007..2011] site))
+                (PP (IN:[2012..2015] for)
+                  (NP (DT:[2016..2019] the)
+                     (JJ:[2021..2031] monoclonal) (NN:[2032..2040] antibody))))
+              (VP (VBZ:[2041..2043] is)
+                (ADJP-PRD (JJ:[2044..2057] discontinuous)))))
+          (,:[2057..2058] ,)
+          (NP-SBJ
+            (ADJP (JJ:[2059..2069] sufficient))
+            (PP (IN:[2070..2072] of)
+              (NP (DT:[2073..2076] the) (NN:[2077..2084] epitope))))
+          (VP (VBZ:[2085..2087] is)
+            (ADJP-PRD (JJ:[2088..2094] linear))
+            (,:[2094..2095] ,)
+            (SBAR-ADV (IN:[2096..2098] so) (IN:[2100..2104] that)
+              (S
+                (S
+                  (SBAR-ADV
+                    (WHADJP-3 (WRB:[2105..2109] when))
+                    (S
+                      (NP-SBJ-2 (DT:[2110..2113] the) (NN:[2114..2121] antigen))
+                      (VP (VBZ:[2122..2124] is)
+                        (VP (VBN:[2125..2134] denatured)
+                          (NP-2 (-NONE-:[2134..2134] *))
+                          (ADJP-TMP-3 (-NONE-:[2134..2134] *T*))))))
+                  (NP-SBJ (DT:[2135..2138] the)
+                     (JJ:[2139..2149] monoclonal) (NN:[2150..2158] antibody))
+                  (VP (VBZ:[2159..2161] is)
+                    (ADVP (RB:[2162..2167] still))
+                    (ADJP-PRD (JJ:[2168..2172] able)
+                      (S
+                        (NP-SBJ (-NONE-:[2172..2172] *))
+                        (VP (TO:[2173..2175] to)
+                          (VP (VB:[2176..2180] bind)))))))
+                (CC:[2182..2185] and)
+                (S
+                  (NP-SBJ-1 (DT:[2186..2190] this) (NN:[2191..2198] binding))
+                  (VP (VBZ:[2199..2201] is)
+                    (VP (VBN:[2202..2213] antagonised)
+                      (NP-1 (-NONE-:[2213..2213] *))
+                      (PP-LGS (IN:[2214..2216] by)
+                        (NP (DT:[2217..2220] the)
+                          
+                          (NML (AFX:[2221..2225] anti) (HYPH:[2225..2226] -)
+                               (NN:[2226..2233] peptide))
+                          (NN:[2234..2242] antibody))))))))))))
+    (.:[2242..2243] .)))
+
+;sentence 14 Span:2244..2362
+;However,  inhibition of catalytic activity by the monoclonal antibody must
+;require binding  to discontinuous residues.
+;[2294..2313]:substance:"monoclonal antibody"
+(SENT
+  (S
+    (ADVP (RB:[2244..2251] However))
+    (,:[2251..2252] ,)
+    (NP-SBJ
+      (NP (NN:[2254..2264] inhibition))
+      (PP (IN:[2265..2267] of)
+        (NP (JJ:[2268..2277] catalytic) (NN:[2278..2286] activity)))
+      (PP (IN:[2287..2289] by)
+        (NP (DT:[2290..2293] the)
+           (JJ:[2294..2304] monoclonal) (NN:[2305..2313] antibody))))
+    (VP (MD:[2314..2318] must)
+      (VP (VB:[2319..2326] require)
+        (S
+          (NP-SBJ (-NONE-:[2326..2326] *))
+          (VP (VBG:[2327..2334] binding)
+            (PP (TO:[2336..2338] to)
+              (NP (JJ:[2339..2352] discontinuous) (NNS:[2353..2361] residues)))))))
+    (.:[2361..2362] .)))
+
+;section 15 Span:2366..2410
+;PMID: 7678502 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2366..2370] PMID) (::[2370..2371] :) (CD:[2372..2379] 7678502)
+        (NN:[2380..2381] -LSB-) (NNP:[2381..2387] PubMed) (::[2388..2389] -)
+        (NN:[2390..2397] indexed) (IN:[2398..2401] for)
+        (NNP:[2402..2409] MEDLINE) (.:[2409..2410] -RSB-)))

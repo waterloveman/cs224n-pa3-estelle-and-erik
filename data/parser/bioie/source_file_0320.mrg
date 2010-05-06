@@ -1,0 +1,616 @@
+;PMID: 8937721
+;source_file_828.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..154] = [t:46..154]
+;2)section:[e:158..216] = [t:158..216]
+;3)section:[e:220..284] = [t:220..284]
+;4)sentence:[e:288..290] = [t:288..290]
+;5)sentence:[e:291..457] = [t:291..457]
+;6)sentence:[e:458..659] = [t:458..659]
+;7)sentence:[e:660..662] = [t:660..662]
+;8)sentence:[e:663..832] = [t:663..832]
+;9)sentence:[e:833..905] = [t:833..905]
+;10)sentence:[e:906..1052] = [t:906..1052]
+;11)sentence:[e:1053..1187] = [t:1053..1187]
+;12)sentence:[e:1188..1190] = [t:null]
+;13)sentence:[e:1191..1406] = [t:1191..1406]
+;14)sentence:[e:1407..1409] = [t:1407..1409]
+;15)sentence:[e:1410..1544] = [t:1410..1544]
+;16)sentence:[e:1545..1547] = [t:null]
+;17)sentence:[e:1548..1724] = [t:1548..1724]
+;18)sentence:[e:1726..1844] = [t:1726..1844]
+;19)sentence:[e:1845..1847] = [t:1845..1847]
+;20)sentence:[e:1848..1997] = [t:1848..1997]
+;21)sentence:[e:1998..2000] = [t:null]
+;22)sentence:[e:2001..2120] = [t:2001..2120]
+;23)sentence:[e:2121..2259] = [t:2121..2259]
+;24)sentence:[e:2261..2347] = [t:2261..2347]
+;25)section:[e:2351..2395] = [t:2351..2395]
+;Sentence Matching Errors
+;ERROR_Different number of sections entity has 26 tree 23
+;ERROR_Entity section missing treebank section[1188..1190]
+;ERROR_Entity section missing treebank section[1545..1547]
+;ERROR_Entity section missing treebank section[1998..2000]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1188..1190] 3.
+;ERROR_Token in entity file but not tree[1545..1547] 5.
+;ERROR_Token in entity file but not tree[1998..2000] 7.
+
+;section 0 Span:0..40
+;Br J Pharmacol. 1996 Nov;119(6):1177-86.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..14] Pharmacol) (.:[14..15] .)
+        (CD:[16..20] 1996) (.:[21..29] Nov;119-LRB-) (CD:[29..31] 6-RRB-)
+        (CD:[31..36] :1177) (HYPH:[36..37] -) (CD:[37..39] 86) (.:[39..40] .)))
+
+;sentence 1 Span:46..154
+;Mechanisms of L-NG nitroarginine/indomethacin-resistant relaxation in bovine
+;and  porcine coronary arteries.
+;[60..78]:substance:"L-NG nitroarginine"
+;[79..91]:substance:"indomethacin"
+(SENT
+  (NP-HLN
+    (NP (NNS:[46..56] Mechanisms))
+    (PP (IN:[57..59] of)
+      (NP
+        (ADJP
+          (NML
+            (NML (NN:[60..64] L-NG) (NN:[65..78] nitroarginine))
+            (SYM:[78..79] /)
+            (NML (NN:[79..91] indomethacin)))
+          (HYPH:[91..92] -) (JJ:[92..101] resistant))
+        (NN:[102..112] relaxation)))
+    (PP-LOC (IN:[113..115] in)
+      (NP
+        (NP (JJ:[116..122] bovine)
+          (NML-1 (-NONE-:[122..122] *P*)))
+        (CC:[123..126] and)
+        (NP (JJ:[128..135] porcine)
+          (NML-1 (JJ:[136..144] coronary) (NNS:[145..153] arteries)))))
+    (.:[153..154] .)))
+
+;section 2 Span:158..216
+;Graier WF, Holzmann S, Hoebel BG, Kukovetz WR, Kostner GM.
+(SEC
+  (FRAG (NNP:[158..164] Graier) (NNP:[165..167] WF) (,:[167..168] ,)
+        (NNP:[169..177] Holzmann) (NNP:[178..180] S,) (NNP:[181..187] Hoebel)
+        (NNP:[188..190] BG) (,:[190..191] ,) (NNP:[192..200] Kukovetz)
+        (NNP:[201..203] WR) (,:[203..204] ,) (DT:[205..212] Kostner)
+        (NNP:[213..215] GM) (.:[215..216] .)))
+
+;section 3 Span:220..284
+;Department of Medical Biochemistry, University of Graz, Austria.
+(SEC
+  (FRAG (NNP:[220..230] Department) (IN:[231..233] of) (NNP:[234..241] Medical)
+        (NNP:[242..254] Biochemistry) (,:[254..255] ,)
+        (NNP:[256..266] University) (IN:[267..269] of) (NNP:[270..274] Graz)
+        (,:[274..275] ,) (NNP:[276..283] Austria) (.:[283..284] .)))
+
+;sentence 4 Span:288..290
+;1.
+(SENT
+  (NP (LS:[288..290] 1.)))
+
+;sentence 5 Span:291..457
+;Coronary arteries from bovines (BCA) and pigs (PCA) were used for measuring 
+;endothelium-dependent relaxation in the presence of L-NG nitroarginine and 
+;indomethacin.
+;[420..438]:substance:"L-NG nitroarginine"
+;[444..456]:substance:"indomethacin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[291..299] Coronary) (NNS:[300..308] arteries))
+      (PP (IN:[309..313] from)
+        (NP
+          (NP (NNS:[314..321] bovines)
+            (PRN (-LRB-:[322..323] -LRB-)
+              (NP (NN:[323..326] BCA))
+              (-RRB-:[326..327] -RRB-)))
+          (CC:[328..331] and)
+          (NP (NNS:[332..336] pigs)
+            (PRN (-LRB-:[337..338] -LRB-)
+              (NP (NN:[338..341] PCA))
+              (-RRB-:[341..342] -RRB-))))))
+    (VP (VBD:[343..347] were)
+      (VP (VBN:[348..352] used)
+        (NP-1 (-NONE-:[352..352] *))
+        (PP-PRP (IN:[353..356] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[356..356] *))
+            (VP (VBG:[357..366] measuring)
+              (NP
+                (NP
+                  (ADJP (NN:[368..379] endothelium) (HYPH:[379..380] -)
+                        (JJ:[380..389] dependent))
+                  (NN:[390..400] relaxation))
+                (PP (IN:[401..403] in)
+                  (NP
+                    (NP (DT:[404..407] the) (NN:[408..416] presence))
+                    (PP (IN:[417..419] of)
+                      (NP
+                        (NP (NN:[420..424] L-NG) (NN:[425..438] nitroarginine))
+                        (CC:[439..442] and)
+                        (NP (NN:[444..456] indomethacin))))))))))))
+    (.:[456..457] .)))
+
+;sentence 6 Span:458..659
+;As some compounds tested have been found to have an inhibitory  effect on
+;autacoid-activated endothelial Ca2+ signalling, endothelium-dependent 
+;relaxation was initiated with the Ca2+ ionophore A23187.
+;[466..475]:substance:"compounds"
+;[532..540]:substance:"autacoid"
+;[563..567]:substance:"Ca2+"
+;[637..641]:substance:"Ca2+"
+;[642..651]:substance:"ionophore"
+;[652..658]:substance:"A23187"
+(SENT
+  (S
+    (SBAR-ADV (IN:[458..460] As)
+      (S
+        (NP-SBJ-1
+          (NP (DT:[461..465] some) (NNS:[466..475] compounds))
+          (VP (VBN:[476..482] tested)
+            (NP (-NONE-:[482..482] *))))
+        (VP (VBP:[483..487] have)
+          (VP (VBN:[488..492] been)
+            (VP (VBN:[493..498] found)
+              (S
+                (NP-SBJ-1 (-NONE-:[498..498] *))
+                (VP (TO:[499..501] to)
+                  (VP (VB:[502..506] have)
+                    (NP
+                      (NP (DT:[507..509] an) (JJ:[510..520] inhibitory)
+                          (NN:[522..528] effect))
+                      (PP (IN:[529..531] on)
+                        (NP
+                          (ADJP (NN:[532..540] autacoid) (HYPH:[540..541] -)
+                                (VBN:[541..550] activated))
+                          (NML (JJ:[551..562] endothelial)
+                             (NN:[563..566] Ca2) (SYM:[566..567] +))
+                          (NN:[568..578] signalling))))))))))))
+    (,:[578..579] ,)
+    (NP-SBJ-2
+      (ADJP (NN:[580..591] endothelium) (HYPH:[591..592] -)
+            (JJ:[592..601] dependent))
+      (NN:[603..613] relaxation))
+    (VP (VBD:[614..617] was)
+      (VP (VBN:[618..627] initiated)
+        (NP-2 (-NONE-:[627..627] *))
+        (PP (IN:[628..632] with)
+          (NP
+            (NP (DT:[633..636] the)
+              (NML (NN:[637..640] Ca2) (SYM:[640..641] +))
+              (NN:[642..651] ionophore))
+            (NP (NN:[652..658] A23187))))))
+    (.:[658..659] .)))
+
+;sentence 7 Span:660..662
+;2.
+(SENT
+  (NP (LS:[660..662] 2.)))
+
+;sentence 8 Span:663..832
+;The common compounds  for modulating arachidonic acid release/pathway,
+;mepacrine and econazole only  inhibited L-NG nitroarginine-resistant
+;relaxation in BCA not in PCA.
+;[674..683]:substance:"compounds"
+;[700..716]:substance:"arachidonic acid"
+;[734..743]:substance:"mepacrine"
+;[748..757]:substance:"econazole"
+;[774..792]:substance:"L-NG nitroarginine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[663..666] The) (JJ:[667..673] common)
+            (NNS:[674..683] compounds))
+        (PP (IN:[685..688] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[688..688] *))
+            (VP (VBG:[689..699] modulating)
+              (NP (JJ:[700..711] arachidonic)
+                (NML (NN:[712..716] acid) (NN:[717..724] release))
+                (SYM:[724..725] /) (NN:[725..732] pathway))))))
+      (,:[732..733] ,)
+      (NP (NN:[734..743] mepacrine) (CC:[744..747] and)
+          (NN:[748..757] econazole)))
+    (ADVP (RB:[758..762] only))
+    (VP
+      (VP (VBD:[764..773] inhibited)
+        (NP
+          (ADJP
+            (NML (NN:[774..778] L-NG) (NN:[779..792] nitroarginine))
+            (HYPH:[792..793] -) (JJ:[793..802] resistant))
+          (NN:[803..813] relaxation))
+        (PP-LOC=1 (IN:[814..816] in)
+          (NP (NN:[817..820] BCA))))
+      (VP (RB:[821..824] not)
+        (PP-LOC=1 (IN:[825..827] in)
+          (NP (NN:[828..831] PCA)))))
+    (.:[831..832] .)))
+
+;sentence 9 Span:833..905
+;In  contrast, proadifen (SKF 525A) diminished relaxation in BCA and PCA.
+;[847..856]:substance:"proadifen"
+;[858..866]:substance:"SKF 525A"
+(SENT
+  (S
+    (PP (IN:[833..835] In)
+      (NP (NN:[837..845] contrast)))
+    (,:[845..846] ,)
+    (NP-SBJ
+      (NP (NN:[847..856] proadifen))
+      (NP (-LRB-:[857..858] -LRB-)
+         (NN:[858..861] SKF) (NN:[862..866] 525A)
+        (-RRB-:[866..867] -RRB-)))
+    (VP (VBD:[868..878] diminished)
+      (NP (NN:[879..889] relaxation))
+      (PP-LOC (IN:[890..892] in)
+        (NP (NN:[893..896] BCA) (CC:[897..900] and) (NN:[901..904] PCA))))
+    (.:[904..905] .)))
+
+;sentence 10 Span:906..1052
+;Mepacrine  and proadifen inhibited Hoe-234-initiated relaxation in BCA and
+;PCA, while  econazole only inhibited Hoe 234-induced relaxation in PCA.
+;[906..915]:substance:"Mepacrine"
+;[921..930]:substance:"proadifen"
+;[941..948]:substance:"Hoe-234"
+;[993..1002]:substance:"econazole"
+;[1018..1025]:substance:"Hoe 234"
+(SENT
+  (S
+    (NP-SBJ (NN:[906..915] Mepacrine) (CC:[917..920] and)
+            (NN:[921..930] proadifen))
+    (VP (VBD:[931..940] inhibited)
+      (NP
+        (ADJP (NN:[941..948] Hoe-234) (HYPH:[948..949] -)
+              (VBN:[949..958] initiated))
+        (NN:[959..969] relaxation))
+      (PP-LOC (IN:[970..972] in)
+        (NP (NN:[973..976] BCA) (CC:[977..980] and) (NN:[981..984] PCA)))
+      (,:[984..985] ,)
+      (SBAR-ADV (IN:[986..991] while)
+        (S
+          (NP-SBJ (NN:[993..1002] econazole))
+          (ADVP (RB:[1003..1007] only))
+          (VP (VBD:[1008..1017] inhibited)
+            (NP
+              (ADJP
+                (NML (NN:[1018..1021] Hoe) (CD:[1022..1025] 234))
+                (HYPH:[1025..1026] -) (VBN:[1026..1033] induced))
+              (NN:[1034..1044] relaxation))
+            (PP-LOC (IN:[1045..1047] in)
+              (NP (NN:[1048..1051] PCA)))))))
+    (.:[1051..1052] .)))
+
+;sentence 11 Span:1053..1187
+;Due to the multiple  effects of these compounds, caution is necessary in the
+;interpretation of  results obtained with these compounds.
+;[1091..1100]:substance:"compounds"
+;[1177..1186]:substance:"compounds"
+(SENT
+  (S
+    (PP (JJ:[1053..1056] Due)
+      (PP (TO:[1057..1059] to)
+        (NP
+          (NP (DT:[1060..1063] the) (JJ:[1064..1072] multiple)
+              (NNS:[1074..1081] effects))
+          (PP (IN:[1082..1084] of)
+            (NP (DT:[1085..1090] these) (NNS:[1091..1100] compounds))))))
+    (,:[1100..1101] ,)
+    (NP-SBJ (NN:[1102..1109] caution))
+    (VP (VBZ:[1110..1112] is)
+      (ADJP-PRD (JJ:[1113..1122] necessary))
+      (PP (IN:[1123..1125] in)
+        (NP
+          (NP (DT:[1126..1129] the) (NN:[1130..1144] interpretation))
+          (PP (IN:[1145..1147] of)
+            (NP
+              (NP (NNS:[1149..1156] results))
+              (VP (VBN:[1157..1165] obtained)
+                (NP (-NONE-:[1165..1165] *))
+                (PP-MNR (IN:[1166..1170] with)
+                  (NP (DT:[1171..1176] these) (NNS:[1177..1186] compounds)))))))))
+    (.:[1186..1187] .)))
+
+(ORPH 3.)
+
+;sentence 12 Span:1191..1406
+;The inhibitor of Ca(2+)-activated K+  channels, apamin, strongly attenuated
+;A23187-induced L-NG  nitroarginine-resistant relaxation in BCA while apamin
+;did not affect L-NG  nitroarginine-resistant relaxation in PCA.
+;[1195..1204]:substance:"inhibitor"
+;[1208..1214]:substance:"Ca(2+)"
+;[1225..1227]:substance:"K+"
+;[1239..1245]:substance:"apamin"
+;[1267..1273]:substance:"A23187"
+;[1282..1301]:substance:"L-NG  nitroarginine"
+;[1336..1342]:substance:"apamin"
+;[1358..1377]:substance:"L-NG  nitroarginine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1191..1194] The) (NN:[1195..1204] inhibitor))
+        (PP (IN:[1205..1207] of)
+          (NP
+            (ADJP (NN:[1208..1214] Ca-LRB-2+-RRB-) (HYPH:[1214..1215] -)
+                  (VBN:[1215..1224] activated))
+            (NML (NN:[1225..1226] K) (SYM:[1226..1227] +))
+            (NNS:[1229..1237] channels))))
+      (,:[1237..1238] ,)
+      (NP (NN:[1239..1245] apamin)))
+    (,:[1245..1246] ,)
+    (ADVP (RB:[1247..1255] strongly))
+    (VP (VBD:[1256..1266] attenuated)
+      (NP
+        (ADJP (NN:[1267..1273] A23187) (HYPH:[1273..1274] -)
+              (VBN:[1274..1281] induced))
+        (ADJP
+          (NML (NN:[1282..1286] L-NG) (NN:[1288..1301] nitroarginine))
+          (HYPH:[1301..1302] -) (JJ:[1302..1311] resistant))
+        (NN:[1312..1322] relaxation))
+      (PP-LOC (IN:[1323..1325] in)
+        (NP (NN:[1326..1329] BCA)))
+      (SBAR-ADV (IN:[1330..1335] while)
+        (S
+          (NP-SBJ (NN:[1336..1342] apamin))
+          (VP (VBD:[1343..1346] did) (RB:[1347..1350] not)
+            (VP (VB:[1351..1357] affect)
+              (NP
+                (ADJP
+                  (NML (NN:[1358..1362] L-NG) (NN:[1364..1377] nitroarginine))
+                  (HYPH:[1377..1378] -) (JJ:[1378..1387] resistant))
+                (NN:[1388..1398] relaxation))
+              (PP-LOC (IN:[1399..1401] in)
+                (NP (NN:[1402..1405] PCA))))))))
+    (.:[1405..1406] .)))
+;ERROR_Orphan Text from Tree File[1187..1191] 3.
+
+;sentence 13 Span:1407..1409
+;4.
+(SENT
+  (NP (LS:[1407..1409] 4.)))
+
+;sentence 14 Span:1410..1544
+;Pertussis toxin blunted L-NG  nitroarginine-resistant relaxation in BCA,
+;while relaxation of PCA was not  affected by pertussis toxin.
+;[1410..1425]:substance:"Pertussis toxin"
+;[1434..1453]:substance:"L-NG  nitroarginine"
+;[1528..1543]:substance:"pertussis toxin"
+(SENT
+  (S
+    (NP-SBJ (NN:[1410..1419] Pertussis) (NN:[1420..1425] toxin))
+    (VP (VBD:[1426..1433] blunted)
+      (NP
+        (ADJP
+          (NML (NN:[1434..1438] L-NG) (NN:[1440..1453] nitroarginine))
+          (HYPH:[1453..1454] -) (JJ:[1454..1463] resistant))
+        (NN:[1464..1474] relaxation))
+      (PP-LOC (IN:[1475..1477] in)
+        (NP (NN:[1478..1481] BCA)))
+      (,:[1481..1482] ,)
+      (SBAR-ADV (IN:[1483..1488] while)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1489..1499] relaxation))
+            (PP (IN:[1500..1502] of)
+              (NP (NN:[1503..1506] PCA))))
+          (VP (VBD:[1507..1510] was) (RB:[1511..1514] not)
+            (VP (VBN:[1516..1524] affected)
+              (NP-1 (-NONE-:[1524..1524] *))
+              (PP (IN:[1525..1527] by)
+                (NP-LGS (NN:[1528..1537] pertussis) (NN:[1538..1543] toxin))))))))
+    (.:[1543..1544] .)))
+
+(ORPH 5.)
+
+;sentence 15 Span:1548..1724
+;Thiopentone sodium inhibited endothelial  cytochrome P450 epoxygenase (EPO)
+;in PCA but not in BCA, while L-NG  nitroarginine-resistant relaxation of BCA
+;and PCA were unchanged.
+;[1548..1566]:substance:"Thiopentone sodium"
+;[1590..1617]:cyp450:"cytochrome P450 epoxygenase"
+;[1619..1622]:cyp450:"EPO"
+;[1653..1672]:substance:"L-NG  nitroarginine"
+(SENT
+  (S
+    (NP-SBJ (NN:[1548..1559] Thiopentone) (NN:[1560..1566] sodium))
+    (VP
+      (VP (VBD:[1567..1576] inhibited)
+        (NP (JJ:[1577..1588] endothelial)
+          (NML (NN:[1590..1600] cytochrome) (NN:[1601..1605] P450))
+          (NML
+            (NML (NN:[1606..1617] epoxygenase))
+            (NML (-LRB-:[1618..1619] -LRB-) (NN:[1619..1622] EPO)
+                 (-RRB-:[1622..1623] -RRB-))))
+        (PP-LOC=1 (IN:[1624..1626] in)
+          (NP (NN:[1627..1630] PCA))))
+      (CC:[1631..1634] but)
+      (VP (RB:[1635..1638] not)
+        (PP-LOC=1 (IN:[1639..1641] in)
+          (NP (NN:[1642..1645] BCA))))
+      (,:[1645..1646] ,)
+      (SBAR-ADV (IN:[1647..1652] while)
+        (S
+          (NP-SBJ
+            (NP
+              (ADJP
+                (NML (NN:[1653..1657] L-NG) (NN:[1659..1672] nitroarginine))
+                (HYPH:[1672..1673] -) (JJ:[1673..1682] resistant))
+              (NN:[1683..1693] relaxation))
+            (PP (IN:[1694..1696] of)
+              (NP (NN:[1697..1700] BCA) (CC:[1701..1704] and)
+                  (NN:[1705..1708] PCA))))
+          (VP (VBD:[1709..1713] were)
+            (ADJP-PRD (JJ:[1714..1723] unchanged))))))
+    (.:[1723..1724] .)))
+;ERROR_Orphan Text from Tree File[1544..1548] 5.
+
+;sentence 16 Span:1726..1844
+;Protoporphyrine IX inhibited EPO in BCA and PCA and abolished L-NG 
+;nitroarginine-resistant relaxation of BCA not PCA.
+;[1726..1744]:substance:"Protoporphyrine IX"
+;[1755..1758]:cyp450:"EPO"
+;[1788..1807]:substance:"L-NG  nitroarginine"
+(SENT
+  (S
+    (NP-SBJ (NN:[1726..1741] Protoporphyrine) (CD:[1742..1744] IX))
+    (VP
+      (VP (VBD:[1745..1754] inhibited)
+        (NP (NN:[1755..1758] EPO))
+        (PP-LOC (IN:[1759..1761] in)
+          (NP (NN:[1762..1765] BCA) (CC:[1766..1769] and) (NN:[1770..1773] PCA))))
+      (CC:[1774..1777] and)
+      (VP
+        (VP (VBD:[1778..1787] abolished)
+          (NP
+            (NP
+              (ADJP
+                (NML (NN:[1788..1792] L-NG) (NN:[1794..1807] nitroarginine))
+                (HYPH:[1807..1808] -) (JJ:[1808..1817] resistant))
+              (NN:[1818..1828] relaxation))
+            (PP (IN:[1829..1831] of)
+              (NP=1 (NN:[1832..1835] BCA)))))
+        (VP (RB:[1836..1839] not)
+          (NP=1 (NN:[1840..1843] PCA)))))
+    (.:[1843..1844] .)))
+
+;sentence 17 Span:1845..1847
+;6.
+(SENT
+  (NP (LS:[1845..1847] 6.)))
+
+;sentence 18 Span:1848..1997
+;An EPO-derived compound,  11,12-epoxy-eicosatrienoic acid (11,12-EET) yielded
+;significant relaxation in  BCA and PCA in three out of six experiments.
+;[1851..1871]:substance:"EPO-derived compound"
+;[1874..1905]:substance:"11,12-epoxy-eicosatrienoic acid"
+;[1907..1916]:substance:"11,12-EET"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1848..1850] An)
+        
+        (ADJP (NN:[1851..1854] EPO) (HYPH:[1854..1855] -)
+              (VBN:[1855..1862] derived))
+        (NN:[1863..1871] compound))
+      (,:[1871..1872] ,)
+      (NP
+        (NP (JJ:[1874..1900] 11,12-epoxy-eicosatrienoic) (NN:[1901..1905] acid))
+        (NP (-LRB-:[1906..1907] -LRB-) (NN:[1907..1916] 11,12-EET)
+            (-RRB-:[1916..1917] -RRB-))))
+    (VP (VBD:[1918..1925] yielded)
+      (NP (JJ:[1926..1937] significant) (NN:[1938..1948] relaxation))
+      (PP-LOC (IN:[1949..1951] in)
+        (NP (NN:[1953..1956] BCA) (CC:[1957..1960] and) (NN:[1961..1964] PCA)))
+      (PP (IN:[1965..1967] in)
+        (NP
+          (NP (CD:[1968..1973] three))
+          (PP (IN:[1974..1977] out)
+            (PP (IN:[1978..1980] of)
+              (NP (CD:[1981..1984] six) (NNS:[1985..1996] experiments)))))))
+    (.:[1996..1997] .)))
+
+(ORPH 7.)
+
+;sentence 19 Span:2001..2120
+;These findings suggest that L-NG  nitroarginine-resistant relaxation in BCA
+;and PCA constitutes two distinct  pathways.
+;[2029..2048]:substance:"L-NG  nitroarginine"
+(SENT
+  (S
+    (NP-SBJ (DT:[2001..2006] These) (NNS:[2007..2015] findings))
+    (VP (VBP:[2016..2023] suggest)
+      (SBAR (IN:[2024..2028] that)
+        (S
+          (NP-SBJ
+            (NP
+              (ADJP
+                (NML (NN:[2029..2033] L-NG) (NN:[2035..2048] nitroarginine))
+                (HYPH:[2048..2049] -) (JJ:[2049..2058] resistant))
+              (NN:[2059..2069] relaxation))
+            (PP-LOC (IN:[2070..2072] in)
+              (NP (NN:[2073..2076] BCA) (CC:[2077..2080] and)
+                  (NN:[2081..2084] PCA))))
+          (VP (VBZ:[2085..2096] constitutes)
+            (NP (CD:[2097..2100] two) (JJ:[2101..2109] distinct)
+                (NNS:[2111..2119] pathways))))))
+    (.:[2119..2120] .)))
+;ERROR_Orphan Text from Tree File[1997..2001] 7.
+
+;sentence 20 Span:2121..2259
+;In BCA, activation of Ca(2+)-activated K+ channels via a 
+;pertussis-toxin-sensitive G protein and EPO-derived compounds might be
+;involved.
+;[2143..2149]:substance:"Ca(2+)"
+;[2160..2162]:substance:"K+"
+;[2179..2214]:substance:"pertussis-toxin-sensitive G protein"
+;[2219..2240]:substance:"EPO-derived compounds"
+(SENT
+  (S
+    (PP-LOC (IN:[2121..2123] In)
+      (NP (NN:[2124..2127] BCA)))
+    (,:[2127..2128] ,)
+    (NP-SBJ-1
+      (NP (NN:[2129..2139] activation))
+      (PP (IN:[2140..2142] of)
+        (NP
+          (ADJP (NN:[2143..2149] Ca-LRB-2+-RRB-) (HYPH:[2149..2150] -)
+                (VBN:[2150..2159] activated))
+          (NML (NN:[2160..2161] K) (SYM:[2161..2162] +))
+          (NNS:[2163..2171] channels)))
+      (PP (IN:[2172..2175] via)
+        (NP
+          (NP (DT:[2176..2177] a)
+            
+            (ADJP
+              (NML (NN:[2179..2188] pertussis) (HYPH:[2188..2189] -)
+                   (NN:[2189..2194] toxin))
+              (HYPH:[2194..2195] -) (JJ:[2195..2204] sensitive))
+            (NN:[2205..2206] G) (NN:[2207..2214] protein))
+          (CC:[2215..2218] and)
+          (NP
+            (ADJP (NN:[2219..2222] EPO) (HYPH:[2222..2223] -)
+                  (VBN:[2223..2230] derived))
+            (NNS:[2231..2240] compounds)))))
+    (VP (MD:[2241..2246] might)
+      (VP (VB:[2247..2249] be)
+        (VP (VBN:[2250..2258] involved)
+          (NP-1 (-NONE-:[2258..2258] *)))))
+    (.:[2258..2259] .)))
+
+;sentence 21 Span:2261..2347
+;In PCA, no selective inhibition of L-NG nitroarginine-resistant relaxation
+;was  found.
+;[2296..2314]:substance:"L-NG nitroarginine"
+(SENT
+  (S
+    (PP-LOC (IN:[2261..2263] In)
+      (NP (NN:[2264..2267] PCA)))
+    (,:[2267..2268] ,)
+    (NP-SBJ-1
+      (NP (DT:[2269..2271] no) (JJ:[2272..2281] selective)
+          (NN:[2282..2292] inhibition))
+      (PP (IN:[2293..2295] of)
+        (NP
+          (ADJP
+            (NML (NN:[2296..2300] L-NG) (NN:[2301..2314] nitroarginine))
+            (HYPH:[2314..2315] -) (JJ:[2315..2324] resistant))
+          (NN:[2325..2335] relaxation))))
+    (VP (VBD:[2336..2339] was)
+      (VP (VBN:[2341..2346] found)
+        (NP-1 (-NONE-:[2346..2346] *))))
+    (.:[2346..2347] .)))
+
+;section 22 Span:2351..2395
+;PMID: 8937721 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2351..2355] PMID) (::[2355..2356] :) (CD:[2357..2364] 8937721)
+        (-LRB-:[2365..2366] -LSB-) (NNP:[2366..2372] PubMed)
+        (HYPH:[2373..2374] -) (NN:[2375..2382] indexed) (IN:[2383..2386] for)
+        (NNP:[2387..2394] MEDLINE) (-RRB-:[2394..2395] -RSB-)))

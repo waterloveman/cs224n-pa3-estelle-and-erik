@@ -1,0 +1,330 @@
+;PMID: 11571630
+;source_file_2858.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..151] = [t:43..151]
+;2)section:[e:155..258] = [t:155..258]
+;3)section:[e:262..335] = [t:262..335]
+;4)sentence:[e:339..412] = [t:339..412]
+;5)sentence:[e:413..600] = [t:413..600]
+;6)sentence:[e:601..745] = [t:601..745]
+;7)sentence:[e:746..865] = [t:746..865]
+;8)sentence:[e:866..971] = [t:866..971]
+;9)sentence:[e:973..1092] = [t:973..1092]
+;10)sentence:[e:1093..1179] = [t:1093..1179]
+;11)sentence:[e:1180..1316] = [t:1180..1316]
+;12)section:[e:1320..1365] = [t:1320..1365]
+
+;section 0 Span:0..37
+;Neoplasia.  2001 Jul-Aug;3(4):304-13.
+(SEC
+  (FRAG (NNP:[0..9] Neoplasia) (.:[9..10] .) (CD:[12..16] 2001)
+        (CC:[17..21] Jul-) (IN:[21..25] Aug;) (CC:[25..27] 3-LRB-)
+        (CD:[27..28] 4) (-RRB-:[28..29] -RRB-) (::[29..30] :)
+        (CD:[30..36] 304-13) (.:[36..37] .)))
+
+;sentence 1 Span:43..151
+;Bcl-2 and M-Myc coexpression increases IGF-IR and features of malignant
+;growth  in neuroblastoma cell lines.
+;[43..48]:gene-generic:"Bcl-2"
+;[53..58]:gene-generic:"M-Myc"
+;[82..88]:gene-protein:"IGF-IR"
+;[105..114]:malignancy-clinical-stage:"malignant"
+;[126..139]:malignancy-type:"neuroblastoma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML (NN:[43..48] Bcl-2) (CC:[49..52] and) (NN:[53..58] M-Myc))
+      (NN:[59..71] coexpression))
+    (VP (VBZ:[72..81] increases)
+      (NP
+        (NP (NN:[82..88] IGF-IR))
+        (CC:[89..92] and)
+        (NP
+          (NP (NNS:[93..101] features))
+          (PP (IN:[102..104] of)
+            (NP (JJ:[105..114] malignant) (NN:[115..121] growth)))))
+      (PP-LOC (IN:[123..125] in)
+        (NP (NN:[126..139] neuroblastoma) (NN:[140..144] cell)
+            (NNS:[145..150] lines))))
+    (.:[150..151] .)))
+
+;section 2 Span:155..258
+;Jasty R, van Golen C, Lin HJ, Solomon G, Heidelberger K, Polverini P, Opipari
+;A,  Feldman E, Castle VP.
+(SEC
+  (FRAG (NNP:[155..160] Jasty) (NNP:[161..162] R) (,:[162..163] ,)
+        (NNP:[164..167] van) (NNP:[168..173] Golen) (NNP:[174..175] C)
+        (,:[175..176] ,) (NNP:[177..180] Lin) (NNP:[181..183] HJ)
+        (,:[183..184] ,) (NNP:[185..192] Solomon) (NNP:[193..194] G)
+        (,:[194..195] ,) (NNP:[196..208] Heidelberger) (NNP:[209..211] K,)
+        (NNP:[212..221] Polverini) (NNP:[222..224] P,) (NNP:[225..232] Opipari)
+        (NNP:[233..234] A) (,:[234..235] ,) (NNP:[237..244] Feldman)
+        (NNP:[245..246] E) (,:[246..247] ,) (NNP:[248..254] Castle)
+        (NN:[255..257] VP) (.:[257..258] .)))
+
+;section 3 Span:262..335
+;Department of Pediatrics, Medical College of Ohio, Toledo, OH 43614, USA.
+(SEC
+  (FRAG (NNP:[262..272] Department) (IN:[273..275] of)
+        (NNP:[276..286] Pediatrics) (,:[286..287] ,) (NNP:[288..295] Medical)
+        (NNP:[296..303] College) (IN:[304..306] of) (NNP:[307..311] Ohio)
+        (,:[311..312] ,) (NNP:[313..319] Toledo) (,:[319..320] ,)
+        (NNP:[321..323] OH) (CD:[324..329] 43614) (,:[329..330] ,)
+        (NNP:[331..334] USA) (.:[334..335] .)))
+
+;sentence 4 Span:339..412
+;The bcl-2 and c-myc oncogenes cooperate to transform multiple cell types.
+;[343..348]:gene-rna:"bcl-2"
+;[353..358]:gene-rna:"c-myc"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[339..342] The)
+      (NML
+        (NML (NN:[343..348] bcl-2)
+          (NML-1 (-NONE-:[348..348] *P*)))
+        (CC:[349..352] and)
+        (NML (NN:[353..358] c-myc)
+          (NML-1 (NNS:[359..368] oncogenes)))))
+    (VP (VBP:[369..378] cooperate)
+      (S-PRP
+        (NP-SBJ-2 (-NONE-:[378..378] *))
+        (VP (TO:[379..381] to)
+          (VP (VB:[382..391] transform)
+            (NP (JJ:[392..400] multiple) (NN:[401..405] cell)
+                (NNS:[406..411] types))))))
+    (.:[411..412] .)))
+
+;sentence 5 Span:413..600
+;In the  pediatric malignancy NB(2), Bcl-2 is highly expressed. In tumors with
+;a poor  prognosis, N-Myc, a protein homologous to c-Myc, is overexpressed as
+;a result of  gene amplification.
+;[421..430]:malignancy-developmental-state:"pediatric"
+;[442..447]:malignancy-type:"NB(2)"
+;[449..454]:gene-protein:"Bcl-2"
+;[510..515]:gene-protein:"N-Myc"
+;[541..546]:gene-protein:"c-Myc"
+;[586..599]:variation-type:"amplification"
+(SENT
+  (S
+    (PP (IN:[413..415] In)
+      (NP
+        (NP (DT:[416..419] the) (JJ:[421..430] pediatric)
+            (NN:[431..441] malignancy))
+        (NP (NN:[442..447] NB-LRB-2-RRB-))))
+    (,:[447..448] ,)
+    (NP-SBJ-1 (NN:[449..454] Bcl-2))
+    (VP (VBZ:[455..457] is)
+      (ADVP (RB:[458..464] highly))
+      (VP (VBN:[465..474] expressed)
+        (NP-1 (-NONE-:[474..474] *))))
+    (.:[474..475] .))
+  (S
+    (PP-LOC (IN:[476..478] In)
+      (NP
+        (NP (NNS:[479..485] tumors))
+        (PP (IN:[486..490] with)
+          (NP (DT:[491..492] a) (JJ:[493..497] poor) (NN:[499..508] prognosis)))))
+    (,:[508..509] ,)
+    (NP-SBJ-2
+      (NP (NN:[510..515] N-Myc))
+      (,:[515..516] ,)
+      (NP
+        (NP (DT:[517..518] a) (NN:[519..526] protein))
+        (ADJP (JJ:[527..537] homologous)
+          (PP (TO:[538..540] to)
+            (NP (NN:[541..546] c-Myc))))))
+    (,:[546..547] ,)
+    (VP (VBZ:[548..550] is)
+      (VP (VBN:[551..564] overexpressed)
+        (NP-2 (-NONE-:[564..564] *))
+        (PP (IN:[565..567] as)
+          (NP
+            (NP (DT:[568..569] a) (NN:[570..576] result))
+            (PP (IN:[577..579] of)
+              (NP (NN:[581..585] gene) (NN:[586..599] amplification)))))))
+    (.:[599..600] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[413..600]::S:S:
+
+;sentence 6 Span:601..745
+;The present study was designed to determine whether Bcl-2  cooperates with
+;N-Myc to bestow a tumorigenic phenotype to neuroblastoma (NB)  cells.
+;[653..658]:gene-protein:"Bcl-2"
+;[676..681]:gene-protein:"N-Myc"
+;[719..732]:malignancy-type:"neuroblastoma"
+;[734..736]:malignancy-type:"NB"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[601..604] The) (JJ:[605..612] present) (NN:[613..618] study))
+    (VP (VBD:[619..622] was)
+      (VP (VBN:[623..631] designed)
+        (NP-1 (-NONE-:[631..631] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[631..631] *))
+          (VP (TO:[632..634] to)
+            (VP (VB:[635..644] determine)
+              (SBAR (IN:[645..652] whether)
+                (S
+                  (NP-SBJ (NN:[653..658] Bcl-2))
+                  (VP (VBZ:[660..670] cooperates)
+                    (PP-CLR (IN:[671..675] with)
+                      (NP (NN:[676..681] N-Myc)))
+                    (S-PRP
+                      (NP-SBJ (-NONE-:[681..681] *))
+                      (VP (TO:[682..684] to)
+                        (VP (VB:[685..691] bestow)
+                          (NP (DT:[692..693] a) (JJ:[694..705] tumorigenic)
+                              (NN:[706..715] phenotype))
+                          (PP-CLR (TO:[716..718] to)
+                            (NP
+                              (NML
+                                (NML (NN:[719..732] neuroblastoma))
+                                (NML (-LRB-:[733..734] -LRB-) (NN:[734..736] NB)
+                                     (-RRB-:[736..737] -RRB-)))
+                              (NNS:[739..744] cells))))))))))))))
+    (.:[744..745] .)))
+
+;sentence 7 Span:746..865
+;NB cell lines that at baseline express neither Bcl-2 nor N-Myc were  stably
+;transfected to express these gene products.
+;[746..748]:malignancy-type:"NB"
+;[793..798]:gene-protein:"Bcl-2"
+;[803..808]:gene-protein:"N-Myc"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[746..748] NB) (NN:[749..753] cell) (NNS:[754..759] lines))
+      (SBAR
+        (WHNP-1 (WDT:[760..764] that))
+        (S
+          (NP-SBJ-1 (-NONE-:[764..764] *T*))
+          (PP (IN:[765..767] at)
+            (NP (NN:[768..776] baseline)))
+          (VP (VBP:[777..784] express)
+            (NP (CC:[785..792] neither) (NN:[793..798] Bcl-2)
+                (CC:[799..802] nor) (NN:[803..808] N-Myc))))))
+    (VP (VBD:[809..813] were)
+      (ADVP (RB:[815..821] stably))
+      (VP (VBN:[822..833] transfected)
+        (NP-2 (-NONE-:[833..833] *))
+        (S-PRP
+          (NP-SBJ-2 (-NONE-:[833..833] *))
+          (VP (TO:[834..836] to)
+            (VP (VB:[837..844] express)
+              (NP (DT:[845..850] these) (NN:[851..855] gene)
+                  (NNS:[856..864] products)))))))
+    (.:[864..865] .)))
+
+;sentence 8 Span:866..971
+;In this model, we found Bcl-2  rescues N-Myc-expressing cells from apoptosis
+;induced by serum withdrawal.
+;[890..895]:gene-protein:"Bcl-2"
+;[905..910]:gene-protein:"N-Myc"
+(SENT
+  (S
+    (PP (IN:[866..868] In)
+      (NP (DT:[869..873] this) (NN:[874..879] model)))
+    (,:[879..880] ,)
+    (NP-SBJ (PRP:[881..883] we))
+    (VP (VBD:[884..889] found)
+      (SBAR (-NONE-:[889..889] 0)
+        (S
+          (NP-SBJ (NN:[890..895] Bcl-2))
+          (VP (VBZ:[897..904] rescues)
+            (NP
+              (ADJP (NN:[905..910] N-Myc) (HYPH:[910..911] -)
+                    (VBG:[911..921] expressing))
+              (NNS:[922..927] cells))
+            (PP (IN:[928..932] from)
+              (NP
+                (NP (NN:[933..942] apoptosis))
+                (VP (VBN:[943..950] induced)
+                  (NP (-NONE-:[950..950] *))
+                  (PP (IN:[951..953] by)
+                    (NP-LGS (NN:[954..959] serum) (NN:[960..970] withdrawal))))))))))
+    (.:[970..971] .)))
+
+;sentence 9 Span:973..1092
+;Coexpression of Bcl-2 and N-Myc supports growth in low serum conditions and 
+;anchorage-independent growth in soft agar.
+;[989..994]:gene-protein:"Bcl-2"
+;[999..1004]:gene-protein:"N-Myc"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[973..985] Coexpression))
+      (PP (IN:[986..988] of)
+        (NP (NN:[989..994] Bcl-2) (CC:[995..998] and) (NN:[999..1004] N-Myc))))
+    (VP (VBZ:[1005..1013] supports)
+      (NP
+        (NP (NN:[1014..1020] growth))
+        (PP (IN:[1021..1023] in)
+          (NP (JJ:[1024..1027] low) (NN:[1028..1033] serum)
+              (NNS:[1034..1044] conditions))))
+      (CC:[1045..1048] and)
+      (NP
+        (NP
+          (ADJP (NN:[1050..1059] anchorage) (HYPH:[1059..1060] -)
+                (JJ:[1060..1071] independent))
+          (NN:[1072..1078] growth))
+        (PP (IN:[1079..1081] in)
+          (NP (JJ:[1082..1086] soft) (NN:[1087..1091] agar)))))
+    (.:[1091..1092] .)))
+
+;sentence 10 Span:1093..1179
+;Similarly, in vivo tumorigenic and  angiogenic activity was dependent on
+;coexpression.
+(SENT
+  (S
+    (ADVP (RB:[1093..1102] Similarly))
+    (,:[1102..1103] ,)
+    (NP-SBJ
+      (ADJP (FW:[1104..1106] in) (FW:[1107..1111] vivo))
+      (ADJP (JJ:[1112..1123] tumorigenic) (CC:[1124..1127] and)
+            (JJ:[1129..1139] angiogenic))
+      (NN:[1140..1148] activity))
+    (VP (VBD:[1149..1152] was)
+      (ADJP-PRD (JJ:[1153..1162] dependent)
+        (PP (IN:[1163..1165] on)
+          (NP (NN:[1166..1178] coexpression)))))
+    (.:[1178..1179] .)))
+
+;sentence 11 Span:1180..1316
+;Our data further suggests  that the mechanism underlying these changes
+;involves the receptor for insulin  growth factor type I (IGF-IR).
+;[1264..1306]:gene-protein:"receptor for insulin  growth factor type I"
+;[1308..1314]:gene-protein:"IGF-IR"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1180..1183] Our) (NNS:[1184..1188] data))
+    (ADVP (RBR:[1189..1196] further))
+    (VP (VBZ:[1197..1205] suggests)
+      (SBAR (IN:[1207..1211] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1212..1215] the) (NN:[1216..1225] mechanism))
+            (VP (VBG:[1226..1236] underlying)
+              (NP (DT:[1237..1242] these) (NNS:[1243..1250] changes))))
+          (VP (VBZ:[1251..1259] involves)
+            (NP (DT:[1260..1263] the)
+              (NML
+                (NML
+                  (NML (NN:[1264..1272] receptor))
+                  (PP (IN:[1273..1276] for)
+                    (NP
+                      (NML (NN:[1277..1284] insulin) (NN:[1286..1292] growth)
+                           (NN:[1293..1299] factor))
+                      (NN:[1300..1304] type) (CD:[1305..1306] I))))
+                (NML (-LRB-:[1307..1308] -LRB-) (NN:[1308..1314] IGF-IR)
+                     (-RRB-:[1314..1315] -RRB-))))))))
+    (.:[1315..1316] .)))
+
+;section 12 Span:1320..1365
+;PMID: 11571630 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1320..1324] PMID) (::[1324..1325] :) (CD:[1326..1334] 11571630)
+        (NN:[1335..1336] -LSB-) (NNP:[1336..1342] PubMed) (::[1343..1344] -)
+        (NN:[1345..1352] indexed) (IN:[1353..1356] for)
+        (NNP:[1357..1365] MEDLINE-RSB-)))

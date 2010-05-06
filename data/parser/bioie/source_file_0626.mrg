@@ -1,0 +1,969 @@
+;PMID: 9190321
+;source_file_853.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)sentence:[e:35..61] = [t:35..61]
+;2)section:[e:65..84] = [t:65..84]
+;3)section:[e:88..120] = [t:88..120]
+;4)section:[e:124..237] = [t:124..237]
+;5)sentence:[e:241..311] = [t:241..311]
+;6)sentence:[e:312..380] = [t:312..380]
+;7)sentence:[e:381..585] = [t:381..585]
+;8)sentence:[e:586..752] = [t:586..752]
+;9)sentence:[e:753..868] = [t:753..868]
+;10)sentence:[e:869..1072] = [t:869..1072]
+;11)sentence:[e:1073..1352] = [t:1073..1352]
+;12)sentence:[e:1353..1471] = [t:1353..1471]
+;13)sentence:[e:1472..1636] = [t:1472..1636]
+;14)sentence:[e:1637..1765] = [t:1637..1765]
+;15)sentence:[e:1766..1892] = [t:1766..1892]
+;16)sentence:[e:1893..2068] = [t:1893..2068]
+;17)sentence:[e:2069..2226] = [t:2069..2226]
+;18)sentence:[e:2227..2445] = [t:2227..2445]
+;19)sentence:[e:2446..2586] = [t:2446..2586]
+;20)sentence:[e:2587..2700] = [t:2587..2700]
+;21)sentence:[e:2701..2874] = [t:2701..2874]
+;22)sentence:[e:2875..3069] = [t:2875..3069]
+;23)sentence:[e:3070..3238] = [t:3070..3238]
+;24)sentence:[e:3239..3347] = [t:3239..3347]
+;25)sentence:[e:3348..3545] = [t:3348..3545]
+;26)sentence:[e:3546..3810] = [t:3546..3810]
+;27)section:[e:3814..3866] = [t:3814..3866]
+;28)section:[e:3870..3914] = [t:3870..3914]
+
+;section 0 Span:0..29
+;Drugs. 1997;53 Suppl 2:18-24.
+(SEC
+  (FRAG (NNP:[0..5] Drugs) (.:[5..6] .) ('':[7..14] 1997;53)
+        (NNP:[15..20] Suppl) (CD:[21..25] 2:18) (::[25..26] -) (CD:[26..28] 24)
+        (.:[28..29] .)))
+
+;sentence 1 Span:35..61
+;[Pharmacology of tramadol]
+;[52..60]:substance:"tramadol"
+(SENT
+  (FRAG (-LRB-:[35..36] -LSB-) (NN:[36..48] Pharmacology) (IN:[49..51] of)
+        (NN:[52..60] tramadol) (-RRB-:[60..61] -RSB-)))
+
+;section 2 Span:65..84
+;[Article in French]
+(SEC
+  (FRAG (NN:[65..73] -LSB-Article) (IN:[74..76] in) (JJ:[77..83] French)
+        (NNS:[83..84] -RSB-)))
+
+;section 3 Span:88..120
+;Dayer P, Desmeules J, Collart L.
+(SEC
+  (FRAG (NNP:[88..93] Dayer) (NNP:[94..95] P) (,:[95..96] ,)
+        (NNP:[97..106] Desmeules) (NNP:[107..109] J,) (NNP:[110..117] Collart)
+        (NNP:[118..120] L.)))
+
+;section 4 Span:124..237
+;Service de Pharmacologie Clinique et Consultation de la Douleur, Hopital 
+;Cantonal Universitaire, Geneve, Suisse.
+(SEC
+  (FRAG (NNP:[124..131] Service) (IN:[132..134] de)
+        (NNP:[135..148] Pharmacologie) (NNP:[149..157] Clinique)
+        (NNP:[158..160] et) (NNP:[161..173] Consultation) (NNP:[174..176] de)
+        (NNP:[177..179] la) (NNP:[180..187] Douleur) (,:[187..188] ,)
+        (NNP:[189..196] Hopital) (NNP:[198..206] Cantonal)
+        (NNP:[207..220] Universitaire) (,:[220..221] ,) (NNP:[222..228] Geneve)
+        (NNP:[228..229] ,) (NNP:[230..236] Suisse) (.:[236..237] .)))
+
+;sentence 5 Span:241..311
+;(+/-)-Tramadol is a synthetic 4-phenyl-piperidine analogue of codeine.
+;[241..255]:substance:"(+/-)-Tramadol"
+;[271..299]:substance:"4-phenyl-piperidine analogue"
+;[303..310]:substance:"codeine"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[241..255] -LRB-+/--RRB--Tramadol))
+    (VP (VBZ:[256..258] is)
+      (NP-PRD
+        (NP (DT:[259..260] a) (JJ:[261..270] synthetic)
+           (NN:[271..290] 4-phenyl-piperidine) (NN:[291..299] analogue))
+        (PP (IN:[300..302] of)
+          (NP (NN:[303..310] codeine)))))
+    (.:[310..311] .)))
+
+;sentence 6 Span:312..380
+;It is a  central analgesic with a low affinity for opioid receptors.
+;[329..338]:substance:"analgesic"
+;[363..379]:substance:"opioid receptors"
+(SENT
+  (S
+    (NP-SBJ (PRP:[312..314] It))
+    (VP (VBZ:[315..317] is)
+      (NP-PRD
+        (NP (DT:[318..319] a) (JJ:[321..328] central) (NN:[329..338] analgesic))
+        (PP (IN:[339..343] with)
+          (NP
+            (NP (DT:[344..345] a) (JJ:[346..349] low) (NN:[350..358] affinity))
+            (PP (IN:[359..362] for)
+              (NP (JJ:[363..369] opioid) (NNS:[370..379] receptors)))))))
+    (.:[379..380] .)))
+
+;sentence 7 Span:381..585
+;Its selectivity for  mu receptors has recently been demonstrated, and the M1
+;metabolite of tramadol,  produced by liver O-demethylation, shows a higher
+;affinity for opioid receptors  than the parent drug.
+;[402..414]:substance:"mu receptors"
+;[455..468]:substance:"M1 metabolite"
+;[472..480]:substance:"tramadol"
+;[546..562]:substance:"opioid receptors"
+;[580..584]:substance:"drug"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (PRP$:[381..384] Its) (NN:[385..396] selectivity))
+        (PP (IN:[397..400] for)
+          (NP (SYM:[402..404] mu) (NNS:[405..414] receptors))))
+      (VP (VBZ:[415..418] has)
+        (ADVP-TMP (RB:[419..427] recently))
+        (VP (VBN:[428..432] been)
+          (VP (VBN:[433..445] demonstrated)
+            (NP-1 (-NONE-:[445..445] *))))))
+    (,:[445..446] ,) (CC:[447..450] and)
+    (S
+      (NP-SBJ
+        (NP
+          (NP (DT:[451..454] the)
+             (NN:[455..457] M1) (NN:[458..468] metabolite))
+          (PP (IN:[469..471] of)
+            (NP (NN:[472..480] tramadol))))
+        (,:[480..481] ,)
+        (VP (VBN:[483..491] produced)
+          (NP (-NONE-:[491..491] *))
+          (PP (IN:[492..494] by)
+            (NP-LGS (NN:[495..500] liver) (NN:[501..502] O) (HYPH:[502..503] -)
+                    (NN:[503..516] demethylation)))))
+      (,:[516..517] ,)
+      (VP (VBZ:[518..523] shows)
+        (NP
+          (NP (DT:[524..525] a) (JJR:[526..532] higher) (NN:[533..541] affinity))
+          (PP (IN:[542..545] for)
+            (NP (JJ:[546..552] opioid) (NNS:[553..562] receptors)))
+          (PP (IN:[564..568] than)
+            (NP (DT:[569..572] the) (NN:[573..579] parent) (NN:[580..584] drug))))))
+    (.:[584..585] .)))
+
+;sentence 8 Span:586..752
+;The rate of production of this M1 derivative (O-demethyl  tramadol), is
+;influenced by a polymorphic isoenzyme of the debrisoquine-type,  cytochrome
+;P450 2D6 (CYP2D6).
+;[617..630]:substance:"M1 derivative"
+;[632..652]:substance:"O-demethyl  tramadol"
+;[686..695]:cyp450:"isoenzyme"
+;[703..715]:substance:"debrisoquine"
+;[723..742]:cyp450:"cytochrome P450 2D6"
+;[744..750]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[586..589] The) (NN:[590..594] rate))
+      (PP (IN:[595..597] of)
+        (NP
+          (NP (NN:[598..608] production))
+          (PP (IN:[609..611] of)
+            (NP
+              (NP (DT:[612..616] this)
+                 (NN:[617..619] M1) (NN:[620..630] derivative))
+              (NP (-LRB-:[631..632] -LRB-)
+                 (NN:[632..642] O-demethyl) (NN:[644..652] tramadol)
+                (-RRB-:[652..653] -RRB-))))))
+      (,:[653..654] ,))
+    (VP (VBZ:[655..657] is)
+      (VP (VBN:[658..668] influenced)
+        (NP-1 (-NONE-:[668..668] *))
+        (PP (IN:[669..671] by)
+          (NP-LGS
+            (NP
+              (NP (DT:[672..673] a) (JJ:[674..685] polymorphic)
+                  (NN:[686..695] isoenzyme))
+              (PP (IN:[696..698] of)
+                (NP (DT:[699..702] the) (NN:[703..715] debrisoquine)
+                    (HYPH:[715..716] -) (NN:[716..720] type))))
+            (,:[720..721] ,)
+            (NP
+              (NP (NN:[723..733] cytochrome) (NN:[734..738] P450)
+                  (NN:[739..742] 2D6))
+              (NP (-LRB-:[743..744] -LRB-) (NN:[744..750] CYP2D6)
+                  (-RRB-:[750..751] -RRB-)))))))
+    (.:[751..752] .)))
+
+;sentence 9 Span:753..868
+;Nevertheless, this affinity for mu receptors of  the CNS remains low, being
+;6000 times lower than that of morphine.
+;[785..797]:substance:"mu receptors"
+;[829..839]:quantitative-value:"6000 times"
+;[859..867]:substance:"morphine"
+(SENT
+  (S
+    (ADVP (RB:[753..765] Nevertheless))
+    (,:[765..766] ,)
+    (NP-SBJ
+      (NP (DT:[767..771] this) (NN:[772..780] affinity))
+      (PP (IN:[781..784] for)
+        (NP (SYM:[785..787] mu) (NNS:[788..797] receptors)))
+      (PP (IN:[798..800] of)
+        (NP (DT:[802..805] the) (NN:[806..809] CNS))))
+    (VP (VBZ:[810..817] remains)
+      (S
+        (NP-SBJ (-NONE-:[817..817] *))
+        (ADJP-PRD (JJ:[818..821] low)))
+      (,:[821..822] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[822..822] *))
+        (VP (VBG:[823..828] being)
+          (ADJP-PRD
+            (ADJP
+              (NP-ADV (CD:[829..833] 6000) (NNS:[834..839] times))
+              (JJR:[840..845] lower))
+            (PP (IN:[846..850] than)
+              (NP
+                (NP (DT:[851..855] that))
+                (PP (IN:[856..858] of)
+                  (NP (NN:[859..867] morphine)))))))))
+    (.:[867..868] .)))
+
+;sentence 10 Span:869..1072
+;Moreover, and  in contrast to other opioids, the analgesic action of tramadol
+;is only partially  inhibited by the opioid antagonist naloxone, which
+;suggests the existence of  another mechanism of action.
+;[905..912]:substance:"opioids"
+;[918..927]:substance:"analgesic"
+;[938..946]:substance:"tramadol"
+;[983..989]:substance:"opioid"
+;[990..1000]:substance:"antagonist"
+;[1001..1009]:substance:"naloxone"
+(SENT
+  (S
+    (UCP
+      (ADVP (RB:[869..877] Moreover))
+      (,:[877..878] ,) (CC:[879..882] and)
+      (PP (IN:[884..886] in)
+        (NP
+          (NP (NN:[887..895] contrast))
+          (PP (TO:[896..898] to)
+            (NP (JJ:[899..904] other) (NNS:[905..912] opioids))))))
+    (,:[912..913] ,)
+    (NP-SBJ-2
+      (NP (DT:[914..917] the) (JJ:[918..927] analgesic) (NN:[928..934] action))
+      (PP (IN:[935..937] of)
+        (NP (NN:[938..946] tramadol))))
+    (VP (VBZ:[947..949] is)
+      (ADVP (RB:[950..954] only) (RB:[955..964] partially))
+      (VP (VBN:[966..975] inhibited)
+        (NP-2 (-NONE-:[975..975] *))
+        (PP (IN:[976..978] by)
+          (NP-LOC
+            (NP (DT:[979..982] the) (JJ:[983..989] opioid)
+                (NN:[990..1000] antagonist))
+            (NP (NN:[1001..1009] naloxone))))
+        (,:[1009..1010] ,)
+        (SBAR-ADV
+          (WHNP-1 (WDT:[1011..1016] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1016..1016] *T*))
+            (VP (VBZ:[1017..1025] suggests)
+              (NP
+                (NP (DT:[1026..1029] the) (NN:[1030..1039] existence))
+                (PP (IN:[1040..1042] of)
+                  (NP
+                    (NP (DT:[1044..1051] another) (NN:[1052..1061] mechanism))
+                    (PP (IN:[1062..1064] of)
+                      (NP (NN:[1065..1071] action)))))))))))
+    (.:[1071..1072] .)))
+
+;sentence 11 Span:1073..1352
+;This was demonstrated by the discovery of a  monoaminergic activity that
+;inhibits noradrenaline (norepinephrine) and  serotonin (5-hydroxytryptamine;
+;5-HT) reuptake, making a significant  contribution to the analgesic action by
+;blocking nociceptive impulses at the  spinal level.
+;[1155..1168]:substance:"noradrenaline"
+;[1170..1184]:substance:"norepinephrine"
+;[1191..1200]:substance:"serotonin"
+;[1202..1221]:substance:"5-hydroxytryptamine"
+;[1223..1227]:substance:"5-HT"
+;[1281..1290]:substance:"analgesic"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[1073..1077] This))
+    (VP (VBD:[1078..1081] was)
+      (VP (VBN:[1082..1094] demonstrated)
+        (NP-3 (-NONE-:[1094..1094] *))
+        (PP-MNR (IN:[1095..1097] by)
+          (NP
+            (NP (DT:[1098..1101] the) (NN:[1102..1111] discovery))
+            (PP (IN:[1112..1114] of)
+              (NP
+                (NP (DT:[1115..1116] a) (JJ:[1118..1131] monoaminergic)
+                    (NN:[1132..1140] activity))
+                (SBAR
+                  (WHNP-2 (WDT:[1141..1145] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[1145..1145] *T*))
+                    (VP (VBZ:[1146..1154] inhibits)
+                      (NP
+                        (NP
+                          (NML
+                            (NML (NN:[1155..1168] noradrenaline))
+                            (NML (-LRB-:[1169..1170] -LRB-)
+                                 (NN:[1170..1184] norepinephrine)
+                                 (-RRB-:[1184..1185] -RRB-)))
+                          (NML-1 (-NONE-:[1185..1185] *P*)))
+                        (CC:[1186..1189] and)
+                        (NP (NN:[1191..1200] serotonin)
+                          (PRN (-LRB-:[1201..1202] -LRB-)
+                            (NP
+                              (NP (NN:[1202..1221] 5-hydroxytryptamine))
+                              (::[1221..1222] ;)
+                              (NP (NN:[1223..1227] 5-HT)))
+                            (-RRB-:[1227..1228] -RRB-))
+                          (NML-1 (NN:[1229..1237] reuptake))))
+                      (,:[1237..1238] ,)
+                      (S-ADV
+                        (NP-SBJ (-NONE-:[1238..1238] *))
+                        (VP (VBG:[1239..1245] making)
+                          (NP
+                            (NP (DT:[1246..1247] a)
+                                (JJ:[1248..1259] significant)
+                                (NN:[1261..1273] contribution))
+                            (PP (TO:[1274..1276] to)
+                              (NP (DT:[1277..1280] the)
+                                  (JJ:[1281..1290] analgesic)
+                                  (NN:[1291..1297] action))))
+                          (PP-MNR (IN:[1298..1300] by)
+                            (S-NOM
+                              (NP-SBJ (-NONE-:[1300..1300] *))
+                              (VP (VBG:[1301..1309] blocking)
+                                (NP (JJ:[1310..1321] nociceptive)
+                                    (NNS:[1322..1330] impulses))
+                                (PP-LOC (IN:[1331..1333] at)
+                                  (NP (DT:[1334..1337] the)
+                                      (JJ:[1339..1345] spinal)
+                                      (NN:[1346..1351] level)))))))))))))))))
+    (.:[1351..1352] .)))
+
+;sentence 12 Span:1353..1471
+;(+/-)-Tramadol is a racemic mixture of 2 enantiomers, each one  displaying
+;differing affinities for various receptors.
+;[1353..1367]:substance:"(+/-)-Tramadol"
+;[1394..1405]:substance:"enantiomers"
+;[1461..1470]:substance:"receptors"
+(SENT
+  (S
+    (NP-SBJ (NN:[1353..1367] -LRB-+/--RRB--Tramadol))
+    (VP (VBZ:[1368..1370] is)
+      (NP-PRD
+        (NP (DT:[1371..1372] a) (JJ:[1373..1380] racemic)
+            (NN:[1381..1388] mixture))
+        (PP (IN:[1389..1391] of)
+          (NP
+            (NP (CD:[1392..1393] 2) (NNS:[1394..1405] enantiomers))
+            (,:[1405..1406] ,)
+            (NP
+              (NP (DT:[1407..1411] each) (CD:[1412..1415] one))
+              (VP (VBG:[1417..1427] displaying)
+                (NP
+                  (NP (VBG:[1428..1437] differing) (NNS:[1438..1448] affinities))
+                  (PP (IN:[1449..1452] for)
+                    (NP (JJ:[1453..1460] various) (NNS:[1461..1470] receptors))))))))))
+    (.:[1470..1471] .)))
+
+;sentence 13 Span:1472..1636
+;(+/-)-Tramadol is a  selective agonist of mu receptors and preferentially
+;inhibits serotonin  reuptake, whereas (-)-tramadol mainly inhibits
+;noradrenaline reuptake.
+;[1472..1486]:substance:"(+/-)-Tramadol"
+;[1503..1510]:substance:"agonist"
+;[1514..1526]:substance:"mu receptors"
+;[1555..1564]:substance:"serotonin"
+;[1584..1596]:substance:"(-)-tramadol"
+;[1613..1626]:substance:"noradrenaline"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1472..1486] -LRB-+/--RRB--Tramadol))
+      (VP
+        (VP (VBZ:[1487..1489] is)
+          (NP-PRD
+            (NP (DT:[1490..1491] a) (JJ:[1493..1502] selective)
+                (NN:[1503..1510] agonist))
+            (PP (IN:[1511..1513] of)
+              (NP (SYM:[1514..1516] mu) (NNS:[1517..1526] receptors)))))
+        (CC:[1527..1530] and)
+        (VP
+          (ADVP (RB:[1531..1545] preferentially))
+          (VBZ:[1546..1554] inhibits)
+          (NP (NN:[1555..1564] serotonin) (NN:[1566..1574] reuptake))
+          (,:[1574..1575] ,)
+          (SBAR-ADV (IN:[1576..1583] whereas)
+            (S
+              (NP-SBJ (NN:[1584..1596] -LRB---RRB--tramadol))
+              (ADVP (RB:[1597..1603] mainly))
+              (VP (VBZ:[1604..1612] inhibits)
+                (NP (NN:[1613..1626] noradrenaline) (NN:[1627..1635] reuptake))))))))
+    (.:[1635..1636] .)))
+
+;sentence 14 Span:1637..1765
+;The  action of these 2 enantiomers is both complementary and synergistic and
+;results  in the analgesic effect of (+/-)-tramadol.
+;[1660..1671]:substance:"enantiomers"
+;[1730..1739]:substance:"analgesic"
+;[1750..1764]:substance:"(+/-)-tramadol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1637..1640] The) (NN:[1642..1648] action))
+      (PP (IN:[1649..1651] of)
+        (NP (DT:[1652..1657] these) (CD:[1658..1659] 2)
+            (NNS:[1660..1671] enantiomers))))
+    (VP
+      (VP (VBZ:[1672..1674] is)
+        (ADJP-PRD (CC:[1675..1679] both) (JJ:[1680..1693] complementary)
+                  (CC:[1694..1697] and) (JJ:[1698..1709] synergistic)))
+      (CC:[1710..1713] and)
+      (VP (VBZ:[1714..1721] results)
+        (PP-CLR (IN:[1723..1725] in)
+          (NP
+            (NP (DT:[1726..1729] the) (JJ:[1730..1739] analgesic)
+                (NN:[1740..1746] effect))
+            (PP (IN:[1747..1749] of)
+              (NP (NN:[1750..1764] -LRB-+/--RRB--tramadol)))))))
+    (.:[1764..1765] .)))
+
+;sentence 15 Span:1766..1892
+;After oral administration, tramadol  demonstrates 68% bioavailability, with
+;peak serum concentrations reached within  2 hours.
+;[1793..1801]:substance:"tramadol"
+;[1816..1819]:quantitative-value:"68%"
+;[1884..1885]:quantitative-value:"2"
+;[1886..1891]:quantitative-units:"hours"
+(SENT
+  (S
+    (PP (IN:[1766..1771] After)
+      (NP (JJ:[1772..1776] oral) (NN:[1777..1791] administration)))
+    (,:[1791..1792] ,)
+    (NP-SBJ (NN:[1793..1801] tramadol))
+    (VP (VBZ:[1803..1815] demonstrates)
+      (NP
+        (NML (CD:[1816..1818] 68) (NN:[1818..1819] %))
+        (NN:[1820..1835] bioavailability))
+      (,:[1835..1836] ,)
+      (PP (IN:[1837..1841] with)
+        (NP
+          (NP (NN:[1842..1846] peak) (NN:[1847..1852] serum)
+              (NNS:[1853..1867] concentrations))
+          (VP (VBN:[1868..1875] reached)
+            (NP (-NONE-:[1875..1875] *))
+            (PP-TMP (IN:[1876..1882] within)
+              (NP (CD:[1884..1885] 2) (NNS:[1886..1891] hours)))))))
+    (.:[1891..1892] .)))
+
+;sentence 16 Span:1893..2068
+;The elimination kinetics can be described as 2-compartmental, with a 
+;half-life of 5.1 hours for tramadol and 9 hours for the M1 derivative after a
+; single oral dose of 100mg.
+;[1976..1979]:quantitative-value:"5.1"
+;[1980..1985]:quantitative-units:"hours"
+;[1990..1998]:substance:"tramadol"
+;[2003..2004]:quantitative-value:"9"
+;[2005..2010]:quantitative-units:"hours"
+;[2019..2032]:substance:"M1 derivative"
+;[2062..2065]:quantitative-value:"100"
+;[2065..2067]:quantitative-units:"mg"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1893..1896] The) (NN:[1897..1908] elimination)
+              (NNS:[1909..1917] kinetics))
+    (VP (MD:[1918..1921] can)
+      (VP (VB:[1922..1924] be)
+        (VP (VBN:[1925..1934] described)
+          (NP-1 (-NONE-:[1934..1934] *))
+          (PP (IN:[1935..1937] as)
+            (ADJP (CD:[1938..1939] 2) (HYPH:[1939..1940] -)
+                  (JJ:[1940..1953] compartmental)))
+          (,:[1953..1954] ,)
+          (PP (IN:[1955..1959] with)
+            (NP
+              (NP (DT:[1960..1961] a) (NN:[1963..1972] half-life))
+              (PP (IN:[1973..1975] of)
+                (NP
+                  (NP
+                    (NP (CD:[1976..1979] 5.1) (NNS:[1980..1985] hours))
+                    (PP (IN:[1986..1989] for)
+                      (NP (NN:[1990..1998] tramadol))))
+                  (CC:[1999..2002] and)
+                  (NP
+                    (NP (CD:[2003..2004] 9) (NNS:[2005..2010] hours))
+                    (PP (IN:[2011..2014] for)
+                      (NP (DT:[2015..2018] the)
+                         (NN:[2019..2021] M1) (NN:[2022..2032] derivative))))))
+              (PP-TMP (IN:[2033..2038] after)
+                (NP
+                  (NP (DT:[2039..2040] a) (JJ:[2042..2048] single)
+                      (JJ:[2049..2053] oral) (NN:[2054..2058] dose))
+                  (PP (IN:[2059..2061] of)
+                    (NP (CD:[2062..2065] 100) (NN:[2065..2067] mg))))))))))
+    (.:[2067..2068] .)))
+
+;sentence 17 Span:2069..2226
+;This explains the approximately 2-fold accumulation  of the parent drug and
+;its M1 derivative that is observed during multiple dose  treatment with
+;tramadol.
+;[2087..2107]:quantitative-value:"approximately 2-fold"
+;[2136..2140]:substance:"drug"
+;[2149..2162]:substance:"M1 derivative"
+;[2217..2225]:substance:"tramadol"
+(SENT
+  (S
+    (NP-SBJ (DT:[2069..2073] This))
+    (VP (VBZ:[2074..2082] explains)
+      (NP
+        (NP
+          (NP (DT:[2083..2086] the)
+            (ADJP
+              (QP (RB:[2087..2100] approximately) (CD:[2101..2102] 2))
+              (HYPH:[2102..2103] -) (JJ:[2103..2107] fold))
+            (NN:[2108..2120] accumulation))
+          (PP (IN:[2122..2124] of)
+            (NP
+              (NP (DT:[2125..2128] the) (NN:[2129..2135] parent)
+                  (NN:[2136..2140] drug))
+              (CC:[2141..2144] and)
+              (NP (PRP$:[2145..2148] its)
+                 (NN:[2149..2151] M1) (NN:[2152..2162] derivative)))))
+        (SBAR
+          (WHNP-1 (WDT:[2163..2167] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[2167..2167] *T*))
+            (VP (VBZ:[2168..2170] is)
+              (VP (VBN:[2171..2179] observed)
+                (NP-1 (-NONE-:[2179..2179] *))
+                (PP-TMP (IN:[2180..2186] during)
+                  (NP
+                    (NP (JJ:[2187..2195] multiple) (NN:[2196..2200] dose)
+                        (NN:[2202..2211] treatment))
+                    (PP (IN:[2212..2216] with)
+                      (NP (NN:[2217..2225] tramadol)))))))))))
+    (.:[2225..2226] .)))
+
+;sentence 18 Span:2227..2445
+;The recommended daily dose of tramadol is between 50  and 100mg every 4 to 6
+;hours, with a maximum dose of 400 mg/day; the duration of  the analgesic
+;effect after a single oral dose of tramadol 100mg is about 6  hours.
+;[2257..2265]:substance:"tramadol"
+;[2269..2288]:quantitative-value:"between 50  and 100"
+;[2288..2290]:quantitative-units:"mg"
+;[2297..2303]:quantitative-value:"4 to 6"
+;[2304..2309]:quantitative-units:"hours"
+;[2334..2337]:quantitative-value:"400"
+;[2338..2344]:quantitative-units:"mg/day"
+;[2367..2376]:substance:"analgesic"
+;[2412..2420]:substance:"tramadol"
+;[2421..2424]:quantitative-value:"100"
+;[2424..2426]:quantitative-units:"mg"
+;[2430..2437]:quantitative-value:"about 6"
+;[2439..2444]:quantitative-units:"hours"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[2227..2230] The) (JJ:[2231..2242] recommended)
+            (JJ:[2243..2248] daily) (NN:[2249..2253] dose))
+        (PP (IN:[2254..2256] of)
+          (NP (NN:[2257..2265] tramadol))))
+      (VP (VBZ:[2266..2268] is)
+        (NP-PRD
+          (NP
+            (QP (IN:[2269..2276] between) (CD:[2277..2279] 50)
+                (CC:[2281..2284] and) (CD:[2285..2288] 100))
+            (NN:[2288..2290] mg))
+          (NP-TMP
+            (NP (DT:[2291..2296] every) (CD:[2297..2298] 4))
+            (PP (TO:[2299..2301] to)
+              (NP (CD:[2302..2303] 6) (NNS:[2304..2309] hours)))))
+        (,:[2309..2310] ,)
+        (PP (IN:[2311..2315] with)
+          (NP
+            (NP (DT:[2316..2317] a) (JJ:[2318..2325] maximum)
+                (NN:[2326..2330] dose))
+            (PP (IN:[2331..2333] of)
+              (NP
+                (NP (CD:[2334..2337] 400) (NN:[2338..2340] mg))
+                (PP (SYM:[2340..2341] /)
+                  (NP (NN:[2341..2344] day)))))))))
+    (::[2344..2345] ;)
+    (S
+      (NP-SBJ
+        (NP (DT:[2346..2349] the) (NN:[2350..2358] duration))
+        (PP (IN:[2359..2361] of)
+          (NP (DT:[2363..2366] the) (JJ:[2367..2376] analgesic)
+              (NN:[2377..2383] effect)))
+        (PP-TMP (IN:[2384..2389] after)
+          (NP
+            (NP (DT:[2390..2391] a) (JJ:[2392..2398] single)
+                (JJ:[2399..2403] oral) (NN:[2404..2408] dose))
+            (PP (IN:[2409..2411] of)
+              (NP (NN:[2412..2420] tramadol) (CD:[2421..2424] 100)
+                  (NN:[2424..2426] mg))))))
+      (VP (VBZ:[2427..2429] is)
+        (NP-PRD
+          (QP (RB:[2430..2435] about) (CD:[2436..2437] 6))
+          (NNS:[2439..2444] hours))))
+    (.:[2444..2445] .)))
+
+;sentence 19 Span:2446..2586
+;Adverse effects, and nausea in particular, are dose-dependent and  therefore
+;considerably more likely to appear if the loading dose is high.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[2446..2453] Adverse) (NNS:[2454..2461] effects))
+      (,:[2461..2462] ,) (CC:[2463..2466] and)
+      (NP
+        (NP (NN:[2467..2473] nausea))
+        (PP (IN:[2474..2476] in)
+          (NP (JJ:[2477..2487] particular)))))
+    (,:[2487..2488] ,)
+    (VP (VBP:[2489..2492] are)
+      (ADJP-PRD
+        (ADJP (NN:[2493..2497] dose) (HYPH:[2497..2498] -)
+              (JJ:[2498..2507] dependent))
+        (CC:[2508..2511] and)
+        (ADJP
+          (ADVP (RB:[2513..2522] therefore))
+          (ADVP (RB:[2523..2535] considerably))
+          (RBR:[2536..2540] more) (JJ:[2541..2547] likely)
+          (S
+            (NP-SBJ-1 (-NONE-:[2547..2547] *))
+            (VP (TO:[2548..2550] to)
+              (VP (VB:[2551..2557] appear)
+                (SBAR (IN:[2558..2560] if)
+                  (S
+                    (NP-SBJ (DT:[2561..2564] the) (NN:[2565..2572] loading)
+                            (NN:[2573..2577] dose))
+                    (VP (VBZ:[2578..2580] is)
+                      (ADJP-PRD (JJ:[2581..2585] high)))))))))))
+    (.:[2585..2586] .)))
+
+;sentence 20 Span:2587..2700
+;The  reduction of this dose during the first days of treatment is an
+;important factor  in improving tolerability.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2587..2590] The) (NN:[2592..2601] reduction))
+      (PP (IN:[2602..2604] of)
+        (NP (DT:[2605..2609] this) (NN:[2610..2614] dose)))
+      (PP-TMP (IN:[2615..2621] during)
+        (NP
+          (NP (DT:[2622..2625] the) (JJ:[2626..2631] first)
+              (NNS:[2632..2636] days))
+          (PP (IN:[2637..2639] of)
+            (NP (NN:[2640..2649] treatment))))))
+    (VP (VBZ:[2650..2652] is)
+      (NP-PRD
+        (NP (DT:[2653..2655] an) (JJ:[2656..2665] important)
+            (NN:[2666..2672] factor))
+        (PP (IN:[2674..2676] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[2676..2676] *))
+            (VP (VBG:[2677..2686] improving)
+              (NP (NN:[2687..2699] tolerability)))))))
+    (.:[2699..2700] .)))
+
+;sentence 21 Span:2701..2874
+;Other adverse effects are generally similar to those  of opioids, although
+;they are usually less severe, and can include respiratory  depression,
+;dysphoria and constipation.
+;[2758..2765]:substance:"opioids"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[2701..2706] Other) (JJ:[2707..2714] adverse)
+              (NNS:[2715..2722] effects))
+      (VP (VBP:[2723..2726] are)
+        (ADVP (RB:[2727..2736] generally))
+        (ADJP-PRD (JJ:[2737..2744] similar)
+          (PP (TO:[2745..2747] to)
+            (NP
+              (NP (DT:[2748..2753] those))
+              (PP (IN:[2755..2757] of)
+                (NP (NNS:[2758..2765] opioids))))))
+        (,:[2765..2766] ,)
+        (SBAR-ADV (IN:[2767..2775] although)
+          (S
+            (NP-SBJ (PRP:[2776..2780] they))
+            (VP
+              (VP (VBP:[2781..2784] are)
+                (ADVP-TMP (RB:[2785..2792] usually))
+                (ADJP-PRD (RBR:[2793..2797] less) (JJ:[2798..2804] severe)))
+              (,:[2804..2805] ,) (CC:[2806..2809] and)
+              (VP (MD:[2810..2813] can)
+                (VP (VB:[2814..2821] include)
+                  (NP
+                    (NP (JJ:[2822..2833] respiratory)
+                        (NN:[2835..2845] depression))
+                    (,:[2845..2846] ,)
+                    (NP (NN:[2847..2856] dysphoria))
+                    (CC:[2857..2860] and)
+                    (NP (NN:[2861..2873] constipation))))))))))
+    (.:[2873..2874] .)))
+
+;sentence 22 Span:2875..3069
+;Tramadol can be administered  concomitantly with other analgesics,
+;particularly those with peripheral action,  while drugs that depress CNS
+;function may enhance the sedative effect of  tramadol.
+;[2875..2883]:substance:"Tramadol"
+;[2930..2940]:substance:"analgesics"
+;[2992..2997]:substance:"drugs"
+;[3060..3068]:substance:"tramadol"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[2875..2883] Tramadol))
+    (VP (MD:[2884..2887] can)
+      (VP (VB:[2888..2890] be)
+        (VP (VBN:[2891..2903] administered)
+          (NP-2 (-NONE-:[2903..2903] *))
+          (ADVP (RB:[2905..2918] concomitantly))
+          (PP (IN:[2919..2923] with)
+            (NP
+              (NP (JJ:[2924..2929] other) (NNS:[2930..2940] analgesics))
+              (,:[2940..2941] ,)
+              (NP
+                (NP
+                  (ADVP (RB:[2942..2954] particularly))
+                  (DT:[2955..2960] those))
+                (PP (IN:[2961..2965] with)
+                  (NP (JJ:[2966..2976] peripheral) (NN:[2977..2983] action))))))
+          (,:[2983..2984] ,)
+          (SBAR-ADV (IN:[2986..2991] while)
+            (S
+              (NP-SBJ
+                (NP (NNS:[2992..2997] drugs))
+                (SBAR
+                  (WHNP-1 (WDT:[2998..3002] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[3002..3002] *T*))
+                    (VP (VBP:[3003..3010] depress)
+                      (NP (NN:[3011..3014] CNS) (NN:[3015..3023] function))))))
+              (VP (MD:[3024..3027] may)
+                (VP (VB:[3028..3035] enhance)
+                  (NP
+                    (NP (DT:[3036..3039] the) (JJ:[3040..3048] sedative)
+                        (NN:[3049..3055] effect))
+                    (PP (IN:[3056..3058] of)
+                      (NP (NN:[3060..3068] tramadol)))))))))))
+    (.:[3068..3069] .)))
+
+;sentence 23 Span:3070..3238
+;Tramadol should not be administered to patients receiving monoamine  oxidase
+;inhibitors, and administration with tricyclic antidepressant drugs  should
+;also be avoided.
+;[3070..3078]:substance:"Tramadol"
+;[3128..3146]:substance:"monoamine  oxidase"
+;[3147..3157]:substance:"inhibitors"
+;[3183..3213]:substance:"tricyclic antidepressant drugs"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[3070..3078] Tramadol))
+      (VP (MD:[3079..3085] should) (RB:[3086..3089] not)
+        (VP (VB:[3090..3092] be)
+          (VP (VBN:[3093..3105] administered)
+            (NP-2 (-NONE-:[3105..3105] *))
+            (PP-CLR (TO:[3106..3108] to)
+              (NP
+                (NP (NNS:[3109..3117] patients))
+                (VP (VBG:[3118..3127] receiving)
+                  (NP
+                     (NN:[3128..3137] monoamine) (NN:[3139..3146] oxidase)
+                    (NNS:[3147..3157] inhibitors)))))))))
+    (,:[3157..3158] ,) (CC:[3159..3162] and)
+    (S
+      (NP-SBJ-1
+        (NP (NN:[3163..3177] administration))
+        (PP (IN:[3178..3182] with)
+          (NP (JJ:[3183..3192] tricyclic) (JJ:[3193..3207] antidepressant)
+              (NNS:[3208..3213] drugs))))
+      (VP (MD:[3215..3221] should)
+        (ADVP (RB:[3222..3226] also))
+        (VP (VB:[3227..3229] be)
+          (VP (VBN:[3230..3237] avoided)
+            (NP-1 (-NONE-:[3237..3237] *))))))
+    (.:[3237..3238] .)))
+
+;sentence 24 Span:3239..3347
+;Tramadol has pharmacodynamic and pharmacokinetic  properties that are highly
+;unlikely to lead to dependence.
+;[3239..3247]:substance:"Tramadol"
+(SENT
+  (S
+    (NP-SBJ (NN:[3239..3247] Tramadol))
+    (VP (VBZ:[3248..3251] has)
+      (NP
+        (NP
+          (NP (JJ:[3252..3267] pharmacodynamic)
+            (NML-2 (-NONE-:[3267..3267] *P*)))
+          (CC:[3268..3271] and)
+          (NP (JJ:[3272..3287] pharmacokinetic)
+            (NML-2 (NNS:[3289..3299] properties))))
+        (SBAR
+          (WHNP-1 (WDT:[3300..3304] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[3304..3304] *T*))
+            (VP (VBP:[3305..3308] are)
+              (ADJP-PRD (RB:[3309..3315] highly) (JJ:[3316..3324] unlikely)
+                (S
+                  (NP-SBJ-1 (-NONE-:[3324..3324] *))
+                  (VP (TO:[3325..3327] to)
+                    (VP (VB:[3328..3332] lead)
+                      (PP-CLR (TO:[3333..3335] to)
+                        (NP (NN:[3336..3346] dependence))))))))))))
+    (.:[3346..3347] .)))
+
+;sentence 25 Span:3348..3545
+;This was confirmed by  various controlled studies and postmarketing
+;surveillance studies, which  reported an extremely small number of patients
+;developing tolerance or instances  of tramadol abuse.
+;[3530..3538]:substance:"tramadol"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[3348..3352] This))
+    (VP (VBD:[3353..3356] was)
+      (VP (VBN:[3357..3366] confirmed)
+        (NP-3 (-NONE-:[3366..3366] *))
+        (PP (IN:[3367..3369] by)
+          (NP-LGS
+            (NP
+              (NP
+                (ADJP-2 (JJ:[3371..3378] various))
+                (JJ:[3379..3389] controlled) (NNS:[3390..3397] studies))
+              (CC:[3398..3401] and)
+              (NP
+                (ADJP-2 (-NONE-:[3401..3401] *P*))
+                (JJ:[3402..3415] postmarketing) (NN:[3416..3428] surveillance)
+                 (NNS:[3429..3436] studies)))
+            (,:[3436..3437] ,)
+            (SBAR
+              (WHNP-1 (WDT:[3438..3443] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[3443..3443] *T*))
+                (VP (VBD:[3445..3453] reported)
+                  (NP
+                    (NP (DT:[3454..3456] an)
+                      (ADJP (RB:[3457..3466] extremely) (JJ:[3467..3472] small))
+                      (NN:[3473..3479] number))
+                    (PP (IN:[3480..3482] of)
+                      (NP
+                        (S-NOM
+                          (NP-SBJ (NNS:[3483..3491] patients))
+                          (VP (VBG:[3492..3502] developing)
+                            (NP (NN:[3503..3512] tolerance))))
+                        (IN:[3513..3515] or)
+                        (NP
+                          (NP (NNS:[3516..3525] instances))
+                          (PP (IN:[3527..3529] of)
+                            (NP (NN:[3530..3538] tramadol)
+                                (NN:[3539..3544] abuse))))))))))))))
+    (.:[3544..3545] .)))
+
+;sentence 26 Span:3546..3810
+;Tramadol is a central acting analgesic which has been shown  to be effective
+;and well tolerated, and likely to be of value for treating  several pain
+;conditions (step II of the World Health Organization ladder) where  treatment
+;with strong opioids is not required.
+;[3546..3554]:substance:"Tramadol"
+;[3575..3584]:substance:"analgesic"
+;[3786..3793]:substance:"opioids"
+(SENT
+  (S
+    (NP-SBJ (NN:[3546..3554] Tramadol))
+    (VP (VBZ:[3555..3557] is)
+      (NP-PRD
+        (NP (DT:[3558..3559] a)
+          (ADJP (JJ:[3560..3567] central) (VBG:[3568..3574] acting))
+          (NN:[3575..3584] analgesic))
+        (SBAR
+          (WHNP-2 (WDT:[3585..3590] which))
+          (S
+            (NP-SBJ-2 (-NONE-:[3590..3590] *T*))
+            (VP (VBZ:[3591..3594] has)
+              (VP (VBN:[3595..3599] been)
+                (VP (VBN:[3600..3605] shown)
+                  (S
+                    (NP-SBJ-2 (-NONE-:[3605..3605] *))
+                    (VP (TO:[3607..3609] to)
+                      (VP (VB:[3610..3612] be)
+                        (ADJP
+                          (ADJP-PRD
+                            (ADJP (JJ:[3613..3622] effective))
+                            (CC:[3623..3626] and)
+                            (ADJP (RB:[3627..3631] well)
+                                  (JJ:[3632..3641] tolerated)))
+                          (,:[3641..3642] ,) (CC:[3643..3646] and)
+                          (ADJP
+                            (ADJP (JJ:[3647..3653] likely))
+                            (S
+                              (NP-SBJ (-NONE-:[3653..3653] *))
+                              (VP (TO:[3654..3656] to)
+                                (VP (VB:[3657..3659] be)
+                                  (PP-PRD (IN:[3660..3662] of)
+                                    (NP
+                                      (NP (NN:[3663..3668] value))
+                                      (PP (IN:[3669..3672] for)
+                                        (S-NOM
+                                          (NP-SBJ (-NONE-:[3672..3672] *))
+                                          (VP (VBG:[3673..3681] treating)
+                                            (NP
+                                              (NP (JJ:[3683..3690] several)
+                                                  (NN:[3691..3695] pain)
+                                                  (NNS:[3696..3706] conditions)
+                                                (PRN (-LRB-:[3707..3708] -LRB-)
+                                                  (NP
+                                                    (NP (NN:[3708..3712] step)
+                                                        (CD:[3713..3715] II))
+                                                    (PP (IN:[3716..3718] of)
+                                                      (NP (DT:[3719..3722] the)
+                                                        (NML
+                                                             (NNP:[3723..3728] World)
+                                                             (NNP:[3729..3735] Health)
+                                                             (NNP:[3736..3748] Organization))
+                                                        (NN:[3749..3755] ladder))))
+                                                  (-RRB-:[3755..3756] -RRB-)))
+                                              (SBAR (WRB:[3757..3762] where)
+                                                (S
+                                                  (NP-SBJ-1
+                                                    (NP
+                                                        (NN:[3764..3773] treatment))
+                                                    (PP (IN:[3774..3778] with)
+                                                      (NP
+                                                          (JJ:[3779..3785] strong)
+                                                          (NNS:[3786..3793] opioids))))
+                                                  (VP (VBZ:[3794..3796] is)
+                                                      (RB:[3797..3800] not)
+                                                    (VP
+                                                        (VBN:[3801..3809] required)
+                                                      (NP-1
+                                                            (-NONE-:[3809..3809] *)))))))))))))))))))))))))))
+    (.:[3809..3810] .)))
+
+;section 27 Span:3814..3866
+;Publication Types:      Review      Review, Tutorial
+(SEC
+  (FRAG (NNP:[3814..3825] Publication) (NNP:[3826..3831] Types)
+        (NNP:[3831..3832] :) (NNP:[3838..3844] Review) (NNP:[3850..3856] Review)
+        (,:[3856..3857] ,) (NNP:[3858..3866] Tutorial)))
+
+;section 28 Span:3870..3914
+;PMID: 9190321 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[3870..3874] PMID) (::[3874..3875] :) (CD:[3876..3883] 9190321)
+        (NN:[3884..3885] -LSB-) (NNP:[3885..3891] PubMed) (::[3892..3893] -)
+        (NN:[3894..3901] indexed) (IN:[3902..3905] for)
+        (NNP:[3906..3914] MEDLINE-RSB-)))

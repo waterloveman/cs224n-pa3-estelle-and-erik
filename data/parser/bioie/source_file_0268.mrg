@@ -1,0 +1,518 @@
+;PMID: 8625450
+;source_file_661.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)section:[e:44..99] = [t:44..99]
+;2)section:[e:103..192] = [t:103..192]
+;3)section:[e:196..242] = [t:196..242]
+;4)section:[e:246..318] = [t:246..318]
+;5)sentence:[e:322..583] = [t:322..583]
+;6)sentence:[e:584..796] = [t:584..796]
+;7)sentence:[e:797..1012] = [t:797..1012]
+;8)sentence:[e:1013..1140] = [t:1013..1140]
+;9)sentence:[e:1141..1385] = [t:1141..1385]
+;10)sentence:[e:1386..1541] = [t:1386..1541]
+;11)sentence:[e:1542..1679] = [t:1542..1679]
+;12)sentence:[e:1680..1877] = [t:1680..1877]
+;13)sentence:[e:1878..2017] = [t:1878..2017]
+;14)section:[e:2021..2065] = [t:2021..2065]
+
+;section 0 Span:0..38
+;Carcinogenesis. 1996 Feb;17(2):277-82.
+(SEC
+  (FRAG (VBG:[0..14] Carcinogenesis) (RB:[14..15] .) (CD:[16..20] 1996)
+        (IN:[21..26] Feb;1) (CD:[26..27] 7) (NN:[27..28] -LRB-) (NN:[28..29] 2)
+        (-RRB-:[29..30] -RRB-) (::[30..31] :) (CD:[31..33] 27)
+        (CD:[33..37] 7-82) (.:[37..38] .)))
+
+;section 1 Span:44..99
+;Comment in:      Carcinogenesis. 1997 Jul;18(7):1435-6.
+(SEC
+  (FRAG (NNP:[44..51] Comment) (VBZ:[52..54] in) (DT:[54..55] :)
+        (NNP:[61..75] Carcinogenesis) (IN:[75..76] .) (CD:[77..81] 1997)
+        (CC:[82..87] Jul;1) (CD:[87..88] 8) (NN:[88..89] -LRB-) (NN:[89..90] 7)
+        (NN:[90..91] -RRB-) (.:[91..92] :) (CD:[92..95] 143)
+        (-RRB-:[95..98] 5-6) (.:[98..99] .)))
+
+;section 2 Span:103..192
+;CYP2E1-mediated mechanism of anti-genotoxicity of the broccoli constituent 
+;sulforaphane.
+;[103..109]:cyp450:"CYP2E1"
+;[157..165]:substance:"broccoli"
+;[179..191]:substance:"sulforaphane"
+(SEC
+  (NP-HLN
+    (NP
+      (ADJP (NN:[103..109] CYP2E1) (HYPH:[109..110] -) (VBN:[110..118] mediated))
+      (NN:[119..128] mechanism))
+    (PP (IN:[129..131] of)
+      (NP
+        (NP (AFX:[132..136] anti) (HYPH:[136..137] -)
+            (NN:[137..149] genotoxicity))
+        (PP (IN:[150..152] of)
+          (NP
+            (NP (DT:[153..156] the) (NN:[157..165] broccoli)
+                (NN:[166..177] constituent))
+            (NP (NN:[179..191] sulforaphane))))))
+    (.:[191..192] .)))
+;ERROR_Entity in section[103..109]:cyp450 "CYP2E1"
+;ERROR_Entity in section[157..165]:substance "broccoli"
+;ERROR_Entity in section[179..191]:substance "sulforaphane"
+
+;section 3 Span:196..242
+;Barcelo S, Gardiner JM, Gescher A, Chipman JK.
+(SEC
+  (FRAG (NNP:[196..203] Barcelo) (NNP:[204..205] S) (,:[205..206] ,)
+        (NNP:[207..215] Gardiner) (NNP:[216..218] JM) (,:[218..219] ,)
+        (NNP:[220..227] Gescher) (NNP:[228..229] A) (,:[229..230] ,)
+        (NNP:[231..238] Chipman) (NNP:[239..242] JK.)))
+
+;section 4 Span:246..318
+;Department of Pharmaceutical Sciences, Aston University, Birmingham, UK.
+(SEC
+  (FRAG (NNP:[246..256] Department) (IN:[257..259] of)
+        (NNP:[260..274] Pharmaceutical) (NNPS:[275..283] Sciences)
+        (,:[283..284] ,) (NNP:[285..290] Aston) (NNP:[291..301] University)
+        (,:[301..302] ,) (NNP:[303..313] Birmingham) (,:[313..314] ,)
+        (NNP:[315..318] UK.)))
+
+;sentence 5 Span:322..583
+;The broccoli constituent sulforaphane
+;(1-isothiocyanate-4-methylsulfinylbutane)  has previously been shown to
+;protect rats against  9,10-dimethyl-1,2-benz[a]anthracene tumorigenesis,
+;thought to be due, at least  in part, to induction of phase II
+;detoxification.
+;[326..334]:substance:"broccoli"
+;[347..359]:substance:"sulforaphane"
+;[361..400]:substance:"1-isothiocyanate-4-methylsulfinylbutane"
+;[454..489]:substance:"9,10-dimethyl-1,2-benz[a]anthracene"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[322..325] The) (NN:[326..334] broccoli)
+          (NN:[335..346] constituent))
+      (NP
+        (NP (NN:[347..359] sulforaphane))
+        (NP (-LRB-:[360..361] -LRB-)
+            (NN:[361..400] 1-isothiocyanate-4-methylsulfinylbutane)
+            (-RRB-:[400..401] -RRB-))))
+    (VP (VBZ:[403..406] has)
+      (ADVP-TMP (RB:[407..417] previously))
+      (VP (VBN:[418..422] been)
+        (VP (VBN:[423..428] shown)
+          (S
+            (NP-SBJ-2 (-NONE-:[428..428] *))
+            (VP (TO:[429..431] to)
+              (VP (VB:[432..439] protect)
+                (NP
+                  (NP (NNS:[440..444] rats))
+                  (PP (IN:[445..452] against)
+                    (NP
+                        (NN:[454..489] 9,10-dimethyl-1,2-benz-LSB-a-RSB-anthracene)
+                        (NN:[490..503] tumorigenesis)))))))))
+      (,:[503..504] ,)
+      (S-ADV
+        (NP-SBJ-1 (-NONE-:[504..504] *))
+        (VP (VBN:[505..512] thought)
+          (S
+            (NP-SBJ-1 (-NONE-:[512..512] *))
+            (VP (TO:[513..515] to)
+              (VP (VB:[516..518] be)
+                (PP-PRD (JJ:[519..522] due) (,:[522..523] ,)
+                  (PP
+                    (ADVP (IN:[524..526] at) (JJS:[527..532] least))
+                    (IN:[534..536] in)
+                    (NP (NN:[537..541] part)))
+                  (,:[541..542] ,)
+                  (PP (TO:[543..545] to)
+                    (NP
+                      (NP (NN:[546..555] induction))
+                      (PP (IN:[556..558] of)
+                        (NP
+                          (NML (NN:[559..564] phase) (CD:[565..567] II))
+                          (NN:[568..582] detoxification))))))))))))
+    (.:[582..583] .)))
+
+;sentence 6 Span:584..796
+;We investigated the ability of  sulforaphane to also inhibit the phase I
+;enzyme cytochrome P450 isoenzyme 2E1  (CYP2E1), which is responsible for
+;activation of several carcinogens, including  dialkylnitrosamines.
+;[616..628]:substance:"sulforaphane"
+;[657..663]:substance:"enzyme"
+;[664..693]:cyp450:"cytochrome P450 isoenzyme 2E1"
+;[696..702]:cyp450:"CYP2E1"
+;[752..763]:substance:"carcinogens"
+;[776..795]:substance:"dialkylnitrosamines"
+(SENT
+  (S
+    (NP-SBJ (PRP:[584..586] We))
+    (VP (VBD:[587..599] investigated)
+      (NP
+        (NP (DT:[600..603] the) (NN:[604..611] ability)
+          (S-2 (-NONE-:[611..611] *ICH*)))
+        (PP (IN:[612..614] of)
+          (NP (NN:[616..628] sulforaphane)))
+        (S-2
+          (NP-SBJ (-NONE-:[628..628] *))
+          (VP (TO:[629..631] to)
+            (ADVP (RB:[632..636] also))
+            (VP (VB:[637..644] inhibit)
+              (NP
+                (NP
+                  (NP (DT:[645..648] the)
+                    (NML (NN:[649..654] phase) (CD:[655..656] I))
+                    (NN:[657..663] enzyme))
+                  (NP
+                    (NP
+                      (NML (NN:[664..674] cytochrome) (NN:[675..679] P450))
+                      (NN:[680..689] isoenzyme) (NN:[690..693] 2E1))
+                    (NP (-LRB-:[695..696] -LRB-) (NN:[696..702] CYP2E1)
+                        (-RRB-:[702..703] -RRB-))))
+                (,:[703..704] ,)
+                (SBAR
+                  (WHNP-1 (WDT:[705..710] which))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[710..710] *T*))
+                    (VP (VBZ:[711..713] is)
+                      (ADJP-PRD (JJ:[714..725] responsible)
+                        (PP (IN:[726..729] for)
+                          (NP
+                            (NP (NN:[730..740] activation))
+                            (PP (IN:[741..743] of)
+                              (NP
+                                (NP (JJ:[744..751] several)
+                                    (NNS:[752..763] carcinogens))
+                                (,:[763..764] ,)
+                                (PP (VBG:[765..774] including)
+                                  (NP (NNS:[776..795] dialkylnitrosamines)))))))))))))))))
+    (.:[795..796] .)))
+
+;sentence 7 Span:797..1012
+;Using the p-nitrophenol hydroxylation assay in microsomes  from livers of
+;acetone-treated Sprague-Dawley rats, sulforaphane was shown to be  a potent
+;competitive inhibitor of CYP2E1 with a Ki of 37.0 +/- 4.5 microM.
+;[807..820]:substance:"p-nitrophenol"
+;[871..878]:substance:"acetone"
+;[908..920]:substance:"sulforaphane"
+;[959..968]:substance:"inhibitor"
+;[972..978]:cyp450:"CYP2E1"
+;[986..988]:quantitative-name:"Ki"
+;[992..1004]:quantitative-value:"37.0 +/- 4.5"
+;[1005..1011]:quantitative-units:"microM"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[797..797] *))
+      (VP (VBG:[797..802] Using)
+        (NP (DT:[803..806] the)
+          (NML (NN:[807..820] p-nitrophenol) (NN:[821..834] hydroxylation))
+          (NN:[835..840] assay))
+        (PP-LOC (IN:[841..843] in)
+          (NP
+            (NP (NNS:[844..854] microsomes))
+            (PP (IN:[856..860] from)
+              (NP
+                (NP (NNS:[861..867] livers))
+                (PP (IN:[868..870] of)
+                  (NP
+                    (ADJP (NN:[871..878] acetone) (HYPH:[878..879] -)
+                          (VBN:[879..886] treated))
+                    (NML (NNP:[887..894] Sprague) (HYPH:[894..895] -)
+                         (NNP:[895..901] Dawley))
+                    (NNS:[902..906] rats)))))))))
+    (,:[906..907] ,)
+    (NP-SBJ-1 (NN:[908..920] sulforaphane))
+    (VP (VBD:[921..924] was)
+      (VP (VBN:[925..930] shown)
+        (S
+          (NP-SBJ-1 (-NONE-:[930..930] *))
+          (VP (TO:[931..933] to)
+            (VP (VB:[934..936] be)
+              (NP-PRD
+                (NP (DT:[938..939] a) (JJ:[940..946] potent)
+                    (JJ:[947..958] competitive) (NN:[959..968] inhibitor))
+                (PP (IN:[969..971] of)
+                  (NP (NN:[972..978] CYP2E1))))
+              (PP (IN:[979..983] with)
+                (NP
+                  (NP (DT:[984..985] a) (NN:[986..988] Ki))
+                  (PP (IN:[989..991] of)
+                    (NP
+                      (QP (CD:[992..996] 37.0) (SYM:[997..1000] +/-)
+                          (CD:[1001..1004] 4.5))
+                      (NN:[1005..1011] microM))))))))))
+    (.:[1011..1012] .)))
+
+;sentence 8 Span:1013..1140
+;In  view of this result, we studied the capacity of sulforaphane to inhibit
+;the  genotoxicity of N-nitrosodimethylamine (NDMA).
+;[1065..1077]:substance:"sulforaphane"
+;[1110..1132]:substance:"N-nitrosodimethylamine"
+;[1134..1138]:substance:"NDMA"
+(SENT
+  (S
+    (PP (IN:[1013..1015] In)
+      (NP
+        (NP (NN:[1017..1021] view))
+        (PP (IN:[1022..1024] of)
+          (NP (DT:[1025..1029] this) (NN:[1030..1036] result)))))
+    (,:[1036..1037] ,)
+    (NP-SBJ (PRP:[1038..1040] we))
+    (VP (VBD:[1041..1048] studied)
+      (NP
+        (NP (DT:[1049..1052] the) (NN:[1053..1061] capacity)
+          (S-1 (-NONE-:[1061..1061] *ICH*)))
+        (PP (IN:[1062..1064] of)
+          (NP (NN:[1065..1077] sulforaphane)))
+        (S-1
+          (NP-SBJ (-NONE-:[1077..1077] *))
+          (VP (TO:[1078..1080] to)
+            (VP (VB:[1081..1088] inhibit)
+              (NP
+                (NP (DT:[1089..1092] the) (NN:[1094..1106] genotoxicity))
+                (PP (IN:[1107..1109] of)
+                  (NP
+                    (NP (NN:[1110..1132] N-nitrosodimethylamine))
+                    (NP (-LRB-:[1133..1134] -LRB-) (NN:[1134..1138] NDMA)
+                        (-RRB-:[1138..1139] -RRB-))))))))))
+    (.:[1139..1140] .)))
+
+;sentence 9 Span:1141..1385
+;Sulforaphane at concentrations of  > 0.8 microM inhibited the mutagenicity of
+;NDMA (4.4 mg/plate) in Salmonella  typhimurium strain TA100 after
+;pre-incubation for 45 min with cytosol extract  from livers of Balb/c mice
+;pre-treated with acetone.
+;[1141..1153]:substance:"Sulforaphane"
+;[1176..1181]:quantitative-value:"> 0.8"
+;[1182..1188]:quantitative-units:"microM"
+;[1219..1223]:substance:"NDMA"
+;[1225..1228]:quantitative-value:"4.4"
+;[1229..1237]:quantitative-units:"mg/plate"
+;[1304..1306]:quantitative-value:"45"
+;[1307..1310]:quantitative-units:"min"
+;[1377..1384]:substance:"acetone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1141..1153] Sulforaphane))
+      (PP (IN:[1154..1156] at)
+        (NP
+          (NP (NNS:[1157..1171] concentrations))
+          (PP (IN:[1172..1174] of)
+            (NP
+              (QP (SYM:[1176..1177] >) (CD:[1178..1181] 0.8))
+              (NN:[1182..1188] microM))))))
+    (VP (VBD:[1189..1198] inhibited)
+      (NP
+        (NP (DT:[1199..1202] the) (NN:[1203..1215] mutagenicity))
+        (PP (IN:[1216..1218] of)
+          (NP (NN:[1219..1223] NDMA)
+            (PRN (-LRB-:[1224..1225] -LRB-)
+              (NP
+                (NP (CD:[1225..1228] 4.4) (NN:[1229..1231] mg))
+                (PP (SYM:[1231..1232] /)
+                  (NP (NN:[1232..1237] plate))))
+              (-RRB-:[1237..1238] -RRB-)))))
+      (PP-LOC (IN:[1239..1241] in)
+        (NP
+          (NML (NN:[1242..1252] Salmonella) (NN:[1254..1265] typhimurium))
+          (NN:[1266..1272] strain) (NN:[1273..1278] TA100)))
+      (PP-TMP (IN:[1279..1284] after)
+        (NP
+          (NP (AFX:[1285..1288] pre) (HYPH:[1288..1289] -)
+              (NN:[1289..1299] incubation))
+          (PP-TMP (IN:[1300..1303] for)
+            (NP (CD:[1304..1306] 45) (NN:[1307..1310] min)))
+          (PP (IN:[1311..1315] with)
+            (NP
+              (NP (NN:[1316..1323] cytosol) (NN:[1324..1331] extract))
+              (PP (IN:[1333..1337] from)
+                (NP
+                  (NP (NNS:[1338..1344] livers))
+                  (PP (IN:[1345..1347] of)
+                    (NP
+                      (NP
+                        (NML (NN:[1348..1352] Balb) (SYM:[1352..1353] /)
+                             (NN:[1353..1354] c))
+                        (NNS:[1355..1359] mice))
+                      (VP (AFX:[1360..1363] pre) (HYPH:[1363..1364] -)
+                          (VBN:[1364..1371] treated)
+                        (NP (-NONE-:[1371..1371] *))
+                        (PP-MNR (IN:[1372..1376] with)
+                          (NP (NN:[1377..1384] acetone)))))))))))))
+    (.:[1384..1385] .)))
+
+;sentence 10 Span:1386..1541
+;Unscheduled DNA synthesis  induced by NDMA (33.5 microM) in mouse hepatocytes
+;was inhibited in a  dose-dependent manner by sulforaphane at 0.064-20
+;microM.
+;[1398..1401]:substance:"DNA"
+;[1424..1428]:substance:"NDMA"
+;[1430..1434]:quantitative-value:"33.5"
+;[1435..1441]:quantitative-units:"microM"
+;[1509..1521]:substance:"sulforaphane"
+;[1525..1533]:quantitative-value:"0.064-20"
+;[1534..1540]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[1386..1397] Unscheduled) (NN:[1398..1401] DNA)
+          (NN:[1402..1411] synthesis))
+      (VP (VBN:[1413..1420] induced)
+        (NP (-NONE-:[1420..1420] *))
+        (PP (IN:[1421..1423] by)
+          (NP-LGS (NN:[1424..1428] NDMA)
+            (PRN (-LRB-:[1429..1430] -LRB-)
+              (NP (CD:[1430..1434] 33.5) (NN:[1435..1441] microM))
+              (-RRB-:[1441..1442] -RRB-))))
+        (PP-LOC (IN:[1443..1445] in)
+          (NP (NN:[1446..1451] mouse) (NNS:[1452..1463] hepatocytes)))))
+    (VP (VBD:[1464..1467] was)
+      (VP (VBN:[1468..1477] inhibited)
+        (NP-1 (-NONE-:[1477..1477] *))
+        (PP (IN:[1478..1480] in)
+          (NP (DT:[1481..1482] a)
+            (ADJP (NN:[1484..1488] dose) (HYPH:[1488..1489] -)
+                  (JJ:[1489..1498] dependent))
+            (NN:[1499..1505] manner)))
+        (PP (IN:[1506..1508] by)
+          (NP-LGS
+            (NP (NN:[1509..1521] sulforaphane))
+            (PP (IN:[1522..1524] at)
+              (NP
+                (QP (CD:[1525..1530] 0.064) (HYPH:[1530..1531] -)
+                    (CD:[1531..1533] 20))
+                (NN:[1534..1540] microM)))))))
+    (.:[1540..1541] .)))
+
+;sentence 11 Span:1542..1679
+;Sulforaphane was  unable to inhibit mutagenicity of sodium azide (5
+;micrograms/plate), a direct  acting mutagen, in the Salmonella assay.
+;[1542..1554]:substance:"Sulforaphane"
+;[1594..1606]:substance:"sodium azide"
+;[1608..1609]:quantitative-value:"5"
+;[1610..1626]:quantitative-units:"micrograms/plate"
+;[1646..1653]:substance:"mutagen"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1542..1554] Sulforaphane))
+    (VP (VBD:[1555..1558] was)
+      (ADJP-PRD (JJ:[1560..1566] unable)
+        (S
+          (NP-SBJ-1 (-NONE-:[1566..1566] *))
+          (VP (TO:[1567..1569] to)
+            (VP (VB:[1570..1577] inhibit)
+              (NP
+                (NP (NN:[1578..1590] mutagenicity))
+                (PP (IN:[1591..1593] of)
+                  (NP
+                    (NP
+                       (NN:[1594..1600] sodium) (NN:[1601..1606] azide)
+                      (PRN (-LRB-:[1607..1608] -LRB-)
+                        (NP
+                          (NP (CD:[1608..1609] 5) (NNS:[1610..1620] micrograms))
+                          (PP (SYM:[1620..1621] /)
+                            (NP (NN:[1621..1626] plate))))
+                        (-RRB-:[1626..1627] -RRB-)))
+                    (,:[1627..1628] ,)
+                    (NP (DT:[1629..1630] a) (JJ:[1631..1637] direct)
+                        (VBG:[1639..1645] acting) (NN:[1646..1653] mutagen)))))
+              (,:[1653..1654] ,)
+              (PP (IN:[1655..1657] in)
+                (NP (DT:[1658..1661] the) (NN:[1662..1672] Salmonella)
+                    (NN:[1673..1678] assay))))))))
+    (.:[1678..1679] .)))
+
+;sentence 12 Span:1680..1877
+;It was not itself genotoxic in  hepatocytes, as measured by unscheduled DNA
+;synthesis, or mutagenic in the  strain of Salmonella employed and cytotoxic
+;only at high concentrations (> or =  0.5 mM).
+;[1752..1755]:substance:"DNA"
+;[1861..1872]:quantitative-value:"> or =  0.5"
+;[1873..1875]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1680..1682] It))
+    (VP
+      (VP (VBD:[1683..1686] was)
+        (ADVP=4 (RB:[1687..1690] not))
+        (NP-ADV (PRP:[1691..1697] itself))
+        (ADJP-PRD=1 (JJ:[1698..1707] genotoxic))
+        (PP-LOC=2 (IN:[1708..1710] in)
+          (NP (NNS:[1712..1723] hepatocytes)))
+        (,:[1723..1724] ,)
+        (SBAR-ADV=3 (IN:[1725..1727] as)
+          (S
+            (NP-SBJ (-NONE-:[1727..1727] *))
+            (VP (VBN:[1728..1736] measured)
+              (PP-MNR (IN:[1737..1739] by)
+                (NP (JJ:[1740..1751] unscheduled) (NN:[1752..1755] DNA)
+                    (NN:[1756..1765] synthesis)))))))
+      (,:[1765..1766] ,) (CC:[1767..1769] or)
+      (VP
+        (ADJP-PRD=1 (JJ:[1770..1779] mutagenic))
+        (PP-LOC=2 (IN:[1780..1782] in)
+          (NP
+            (NP
+              (NP (DT:[1783..1786] the) (NN:[1788..1794] strain))
+              (PP (IN:[1795..1797] of)
+                (NP (NN:[1798..1808] Salmonella))))
+            (VP (VBN:[1809..1817] employed)
+              (NP (-NONE-:[1817..1817] *)))))
+        (SBAR-ADV=3 (-NONE-:[1817..1817] *NOT*)))
+      (CC:[1818..1821] and)
+      (VP
+        (ADVP=4 (-NONE-:[1821..1821] *NOT*))
+        (ADJP-PRD=1 (JJ:[1822..1831] cytotoxic))
+        (PP (RB:[1832..1836] only) (IN:[1837..1839] at)
+          (NP (JJ:[1840..1844] high) (NNS:[1845..1859] concentrations)
+            (PRN (-LRB-:[1860..1861] -LRB-)
+              (NP
+                (QP (SYM:[1861..1862] >) (CC:[1863..1865] or)
+                    (SYM:[1866..1867] =) (CD:[1869..1872] 0.5))
+                (NN:[1873..1875] mM))
+              (-RRB-:[1875..1876] -RRB-))))
+        (PP-LOC=2 (-NONE-:[1876..1876] *NOT*))
+        (SBAR-ADV=3 (-NONE-:[1876..1876] *NOT*))))
+    (.:[1876..1877] .)))
+
+;sentence 13 Span:1878..2017
+;These findings suggest that inhibition of CYP2E1 by sulforaphane may  offer
+;chemoprotection against carcinogenic substrates of this enzyme.
+;[1920..1926]:cyp450:"CYP2E1"
+;[1930..1942]:substance:"sulforaphane"
+;[1991..2001]:substance:"substrates"
+;[2010..2016]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[1878..1883] These) (NNS:[1884..1892] findings))
+    (VP (VBP:[1893..1900] suggest)
+      (SBAR (IN:[1901..1905] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1906..1916] inhibition))
+            (PP (IN:[1917..1919] of)
+              (NP (NN:[1920..1926] CYP2E1)))
+            (PP (IN:[1927..1929] by)
+              (NP (NN:[1930..1942] sulforaphane))))
+          (VP (MD:[1943..1946] may)
+            (VP (VB:[1948..1953] offer)
+              (NP
+                (NP (NN:[1954..1969] chemoprotection))
+                (PP (IN:[1970..1977] against)
+                  (NP
+                    (NP (JJ:[1978..1990] carcinogenic)
+                        (NNS:[1991..2001] substrates))
+                    (PP (IN:[2002..2004] of)
+                      (NP (DT:[2005..2009] this) (NN:[2010..2016] enzyme)))))))))))
+    (.:[2016..2017] .)))
+
+;section 14 Span:2021..2065
+;PMID: 8625450 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2021..2025] PMID) (::[2025..2026] :) (CD:[2027..2034] 8625450)
+        (NN:[2035..2036] -LSB-) (NNP:[2036..2042] PubMed) (::[2043..2044] -)
+        (NN:[2045..2052] indexed) (IN:[2053..2056] for)
+        (NNP:[2057..2065] MEDLINE-RSB-)))

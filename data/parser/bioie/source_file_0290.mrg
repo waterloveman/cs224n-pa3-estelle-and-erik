@@ -1,0 +1,278 @@
+;PMID: 172394
+;source_file_1010.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..121] = [t:48..121]
+;2)section:[e:125..169] = [t:125..168]
+;3)sentence:[e:173..348] = [t:173..348]
+;4)sentence:[e:349..410] = [t:349..410]
+;5)sentence:[e:411..637] = [t:411..637]
+;6)sentence:[e:638..768] = [t:638..768]
+;7)sentence:[e:769..860] = [t:769..860]
+;8)sentence:[e:862..978] = [t:862..978]
+;9)sentence:[e:979..1179] = [t:979..1179]
+;10)section:[e:1183..1226] = [t:1183..1225]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:125..169][t:125..168]
+;ERROR_Section end mismatch[e:1183..1226][t:1183..1225]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[168..169] .
+;ERROR_Token in entity file but not tree[1225..1226] ]
+
+;section 0 Span:0..42
+;Mol Cell Endocrinol. 1975 Nov;3(5):375-83.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..8] Cell) (NNP:[9..19] Endocrinol)
+        (.:[19..20] .) (CD:[21..25] 1975) (CC:[26..32] Nov;3-LRB-)
+        (CD:[32..33] 5) (-RRB-:[33..34] -RRB-) (CD:[34..38] :375) (::[38..39] -)
+        (CD:[39..41] 83) (.:[41..42] .)))
+
+;sentence 1 Span:48..121
+;Studies on isolated rat adrenal cells metabolism of hydroxylated sterols.
+;[113..120]:substance:"sterols"
+(SENT
+  (NP-HLN
+    (NP (NNS:[48..55] Studies))
+    (PP (IN:[56..58] on)
+      (NP
+        (NP
+          (NML (VBN:[59..67] isolated) (NN:[68..71] rat) (JJ:[72..79] adrenal)
+               (NNS:[80..85] cells))
+          (NN:[86..96] metabolism))
+        (PP (IN:[97..99] of)
+          (NP (VBN:[100..112] hydroxylated) (NNS:[113..120] sterols)))))
+    (.:[120..121] .)))
+
+;section 2 Span:125..168
+;Falke HE, Degenhart HJ, Abeln GJ, Visser HK
+(SEC
+  (FRAG (NNP:[125..130] Falke) (NNP:[131..133] HE) (,:[133..134] ,)
+        (NNP:[135..144] Degenhart) (NNP:[145..147] HJ) (,:[147..148] ,)
+        (NNP:[149..154] Abeln) (NNP:[155..157] GJ) (,:[157..158] ,)
+        (NNP:[159..165] Visser) (NNP:[166..168] HK)))
+
+(ORPH .)
+
+;sentence 3 Span:173..348
+;Corticosterone production by isolated rat adrenal cells in the absence of
+;ACTH  is stimulated by 20alpha-hydroxycholesterol, 22R-hydroxycholesterol and
+; 25-hydroxycholesterol.
+;[173..187]:substance:"Corticosterone"
+;[247..251]:substance:"ACTH"
+;[270..296]:substance:"20alpha-hydroxycholesterol"
+;[298..320]:substance:"22R-hydroxycholesterol"
+;[326..347]:substance:"25-hydroxycholesterol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[173..187] Corticosterone) (NN:[188..198] production))
+      (PP (IN:[199..201] by)
+        (NP (VBN:[202..210] isolated) (NN:[211..214] rat)
+            (JJ:[215..222] adrenal) (NNS:[223..228] cells)))
+      (PP (IN:[229..231] in)
+        (NP
+          (NP (DT:[232..235] the) (NN:[236..243] absence))
+          (PP (IN:[244..246] of)
+            (NP (NN:[247..251] ACTH))))))
+    (VP (VBZ:[253..255] is)
+      (VP (VBN:[256..266] stimulated)
+        (NP-1 (-NONE-:[266..266] *))
+        (PP (IN:[267..269] by)
+          (NP-LGS (NN:[270..296] 20alpha-hydroxycholesterol) (,:[296..297] ,)
+                  (NN:[298..320] 22R-hydroxycholesterol) (CC:[321..324] and)
+                  (NN:[326..347] 25-hydroxycholesterol)))))
+    (.:[347..348] .)))
+;ERROR_Orphan Text from Tree File[168..173] .
+
+;sentence 4 Span:349..410
+;This effect is also seen at sub-maximal ACTH  concentrations.
+;[389..393]:substance:"ACTH"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[349..353] This) (NN:[354..360] effect))
+    (VP (VBZ:[361..363] is)
+      (ADVP (RB:[364..368] also))
+      (VP (VBN:[369..373] seen)
+        (NP-1 (-NONE-:[373..373] *))
+        (PP (IN:[374..376] at)
+          (NP
+            (ADJP (AFX:[377..380] sub) (HYPH:[380..381] -)
+                  (JJ:[381..388] maximal))
+            (NN:[389..393] ACTH) (NNS:[395..409] concentrations)))))
+    (.:[409..410] .)))
+
+;sentence 5 Span:411..637
+;Aminoglutethimide (AGI) inhibits the stimulation caused by the  three
+;hydroxylated cholesterols. In the presence of ACTH, AGI also inhibits 
+;steroid production both under control conditions and in the presence of the 
+;sterols.
+;[411..428]:substance:"Aminoglutethimide"
+;[430..433]:substance:"AGI"
+;[494..506]:substance:"cholesterols"
+;[527..531]:substance:"ACTH"
+;[533..536]:substance:"AGI"
+;[552..559]:substance:"steroid"
+;[629..636]:substance:"sterols"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[411..428] Aminoglutethimide))
+      (NP (-LRB-:[429..430] -LRB-) (NN:[430..433] AGI) (-RRB-:[433..434] -RRB-)))
+    (VP (VBZ:[435..443] inhibits)
+      (NP
+        (NP (DT:[444..447] the) (NN:[448..459] stimulation))
+        (VP (VBN:[460..466] caused)
+          (NP (-NONE-:[466..466] *))
+          (PP (IN:[467..469] by)
+            (NP-LGS (DT:[470..473] the) (CD:[475..480] three)
+                    (VBN:[481..493] hydroxylated) (NNS:[494..506] cholesterols))))))
+    ('':[506..507] .))
+  (S
+    (PP (IN:[508..510] In)
+      (NP
+        (NP (DT:[511..514] the) (NN:[515..523] presence))
+        (PP (IN:[524..526] of)
+          (NP (NN:[527..531] ACTH)))))
+    (,:[531..532] ,)
+    (NP-SBJ (NN:[533..536] AGI))
+    (ADVP (RB:[537..541] also))
+    (VP (VBZ:[542..550] inhibits)
+      (NP (NN:[552..559] steroid) (NN:[560..570] production))
+      (PP (CC:[571..575] both)
+        (PP (IN:[576..581] under)
+          (NP (NN:[582..589] control) (NNS:[590..600] conditions)))
+        (CC:[601..604] and)
+        (PP (IN:[605..607] in)
+          (NP
+            (NP (DT:[608..611] the) (NN:[612..620] presence))
+            (PP (IN:[621..623] of)
+              (NP (DT:[624..627] the) (NNS:[629..636] sterols)))))))
+    (.:[636..637] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[411..637]::S:S:
+
+;sentence 6 Span:638..768
+;The stimulation by 25-hydroxycholesterol is dose-dependent, both in the 
+;presence and absence of a sub-maximal ACTH concentration.
+;[657..678]:substance:"25-hydroxycholesterol"
+;[749..753]:substance:"ACTH"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[638..641] The) (NN:[642..653] stimulation))
+      (PP (IN:[654..656] by)
+        (NP (NN:[657..678] 25-hydroxycholesterol))))
+    (VP (VBZ:[679..681] is)
+      (ADJP-PRD (NN:[682..686] dose) (HYPH:[686..687] -)
+                (JJ:[687..696] dependent))
+      (,:[696..697] ,)
+      (PP (CC:[698..702] both) (IN:[703..705] in)
+        (NP
+          (NP (DT:[706..709] the) (NN:[711..719] presence) (CC:[720..723] and)
+              (NN:[724..731] absence))
+          (PP (IN:[732..734] of)
+            (NP (DT:[735..736] a)
+              (ADJP (AFX:[737..740] sub) (HYPH:[740..741] -)
+                    (JJ:[741..748] maximal))
+              (NN:[749..753] ACTH) (NN:[754..767] concentration))))))
+    (.:[767..768] .)))
+
+;sentence 7 Span:769..860
+;At maximal ACTH  concentrations 25-hydroxycholesterol does not give
+;additional stimulation.
+;[780..784]:substance:"ACTH"
+;[801..822]:substance:"25-hydroxycholesterol"
+(SENT
+  (S
+    (PP (IN:[769..771] At)
+      (NP (JJ:[772..779] maximal) (NN:[780..784] ACTH)
+          (NNS:[786..800] concentrations)))
+    (NP-SBJ (NN:[801..822] 25-hydroxycholesterol))
+    (VP (VBZ:[823..827] does) (RB:[828..831] not)
+      (VP (VB:[832..836] give)
+        (NP (JJ:[837..847] additional) (NN:[848..859] stimulation))))
+    (.:[859..860] .)))
+
+;sentence 8 Span:862..978
+;Cycloheximide has no effect on corticosterone production from 
+;25-hydroxycholesterol whether ACTH is present or not.
+;[862..875]:substance:"Cycloheximide"
+;[893..907]:substance:"corticosterone"
+;[925..946]:substance:"25-hydroxycholesterol"
+;[955..959]:substance:"ACTH"
+(SENT
+  (S
+    (NP-SBJ (NN:[862..875] Cycloheximide))
+    (VP (VBZ:[876..879] has)
+      (NP
+        (NP (DT:[880..882] no) (NN:[883..889] effect))
+        (PP (IN:[890..892] on)
+          (NP
+            (NP (NN:[893..907] corticosterone) (NN:[908..918] production))
+            (PP (IN:[919..923] from)
+              (NP (NN:[925..946] 25-hydroxycholesterol))))))
+      (SBAR-ADV (IN:[947..954] whether)
+        (S
+          (NP-SBJ (NN:[955..959] ACTH))
+          (VP (VBZ:[960..962] is)
+            (ADJP-PRD (JJ:[963..970] present))))
+        (CC:[971..973] or) (RB:[974..977] not)))
+    (.:[977..978] .)))
+
+;sentence 9 Span:979..1179
+;Our results indicate that  25-hydroxycholesterol is a good substrate for the
+;study of the cholesterol  side-chain cleaving system and the mechanism of
+;action of ACTH at the levels of  the intact cell.
+;[1006..1027]:substance:"25-hydroxycholesterol"
+;[1038..1047]:substance:"substrate"
+;[1069..1080]:substance:"cholesterol"
+;[1140..1144]:substance:"ACTH"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[979..982] Our) (NNS:[983..990] results))
+    (VP (VBP:[991..999] indicate)
+      (SBAR (IN:[1000..1004] that)
+        (S
+          (NP-SBJ (NN:[1006..1027] 25-hydroxycholesterol))
+          (VP (VBZ:[1028..1030] is)
+            (NP-PRD
+              (NP (DT:[1031..1032] a) (JJ:[1033..1037] good)
+                  (NN:[1038..1047] substrate))
+              (PP (IN:[1048..1051] for)
+                (NP
+                  (NP (DT:[1052..1055] the) (NN:[1056..1061] study))
+                  (PP (IN:[1062..1064] of)
+                    (NP
+                      (NP (DT:[1065..1068] the) (NN:[1069..1080] cholesterol)
+                        (ADJP
+                          (NML (NN:[1082..1086] side) (HYPH:[1086..1087] -)
+                               (NN:[1087..1092] chain))
+                          (NN:[1093..1101] cleaving))
+                        (NN:[1102..1108] system))
+                      (CC:[1109..1112] and)
+                      (NP
+                        (NP (DT:[1113..1116] the) (NN:[1117..1126] mechanism))
+                        (PP (IN:[1127..1129] of)
+                          (NP
+                            (NP (NN:[1130..1136] action))
+                            (PP (IN:[1137..1139] of)
+                              (NP (NN:[1140..1144] ACTH))))))))
+                  (PP (IN:[1145..1147] at)
+                    (NP
+                      (NP (DT:[1148..1151] the) (NNS:[1152..1158] levels))
+                      (PP (IN:[1159..1161] of)
+                        (NP (DT:[1163..1166] the) (JJ:[1167..1173] intact)
+                            (NN:[1174..1178] cell))))))))))))
+    (.:[1178..1179] .)))
+
+;section 10 Span:1183..1225
+;PMID: 172394 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1183..1187] PMID) (::[1187..1188] :) (CD:[1189..1195] 172394)
+        (-LRB-:[1196..1197] -LSB-) (NNP:[1197..1203] PubMed) (::[1204..1205] -)
+        (VBN:[1206..1213] indexed) (IN:[1214..1217] for)
+        (NNP:[1218..1225] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1225..EOF] ]
+
+(ORPH -RSB-)

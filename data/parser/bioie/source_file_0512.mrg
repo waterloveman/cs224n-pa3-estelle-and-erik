@@ -1,0 +1,329 @@
+;PMID: 2166103
+;source_file_952.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..149] = [t:49..149]
+;2)section:[e:153..215] = [t:153..215]
+;3)section:[e:219..297] = [t:219..297]
+;4)sentence:[e:301..561] = [t:301..561]
+;5)sentence:[e:562..908] = [t:562..908]
+;6)sentence:[e:909..1082] = [t:909..1082]
+;7)sentence:[e:1083..1160] = [t:1083..1160]
+;8)sentence:[e:1161..1282] = [t:1161..1282]
+;9)sentence:[e:1283..1552] = [t:1283..1552]
+;10)section:[e:1556..1600] = [t:1556..1600]
+
+;section 0 Span:0..43
+;J Endocrinol Invest. 1990 May;13(5):407-13.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..12] Endocrinol) (NNP:[13..19] Invest)
+        (NNP:[19..20] .) (CD:[21..25] 1990) (NNP:[26..29] May)
+        (CD:[29..33] ;13-LRB-) (CD:[33..34] 5) (-RRB-:[34..35] -RRB-)
+        (CD:[35..39] :407) (HYPH:[39..40] -) (CD:[40..42] 13) (.:[42..43] .)))
+
+;sentence 1 Span:49..149
+;Ketoconazole reduces elevated serum levels of 1,25-dihydroxyvitamin D in 
+;hypercalcemic sarcoidosis.
+;[49..61]:substance:"Ketoconazole"
+;[95..118]:substance:"1,25-dihydroxyvitamin D"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[49..61] Ketoconazole))
+    (VP (VBZ:[62..69] reduces)
+      (NP
+        (NP (VBN:[70..78] elevated) (NN:[79..84] serum) (NNS:[85..91] levels))
+        (PP (IN:[92..94] of)
+          (NP (NN:[95..116] 1,25-dihydroxyvitamin) (NN:[117..118] D))))
+      (PP (IN:[119..121] in)
+        (NP (JJ:[123..136] hypercalcemic) (NN:[137..148] sarcoidosis))))
+    (.:[148..149] .)))
+
+;section 2 Span:153..215
+;Glass AR, Cerletty JM, Elliott W, Lemann J Jr, Gray RW, Eil C.
+(SEC
+  (FRAG (NNP:[153..158] Glass) (NNP:[159..161] AR) (,:[161..162] ,)
+        (NNP:[163..171] Cerletty) (NNP:[172..174] JM) (,:[174..175] ,)
+        (NNP:[176..183] Elliott) (NNP:[184..185] W) (,:[185..186] ,)
+        (NNP:[187..193] Lemann) (NNP:[194..195] J) (NNP:[196..198] Jr)
+        (,:[198..199] ,) (NNP:[200..204] Gray) (NNP:[205..207] RW)
+        (,:[207..208] ,) (NNP:[209..212] Eil) (NNP:[213..215] C.)))
+
+;section 3 Span:219..297
+;Department of Medicine, Walter Reed Army Medical Center, Washington, DC
+;20307.
+(SEC
+  (FRAG (NNP:[219..229] Department) (IN:[230..232] of) (NNP:[233..241] Medicine)
+        (,:[241..242] ,) (DT:[243..249] Walter) (NNP:[250..254] Reed)
+        (NNP:[255..259] Army) (NNP:[260..267] Medical) (NNP:[268..274] Center)
+        (,:[274..275] ,) (NNP:[276..286] Washington) (,:[286..287] ,)
+        (NNP:[288..290] DC) (CD:[291..296] 20307) (.:[296..297] .)))
+
+;sentence 4 Span:301..561
+;The antifungal drug ketoconazole, a cytochrome P450 inhibitor, has been shown
+;to  inhibit renal 1,25-dihydroxyvitamin D production in vitro and to lower
+;serum  1,25-dihydroxyvitamin D levels in normal subjects and in patients with
+;primary  hyperparathyroidism.
+;[305..320]:substance:"antifungal drug"
+;[321..333]:substance:"ketoconazole"
+;[337..352]:cyp450:"cytochrome P450"
+;[353..362]:substance:"inhibitor"
+;[397..420]:substance:"1,25-dihydroxyvitamin D"
+;[461..484]:substance:"1,25-dihydroxyvitamin D"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[301..304] The)
+           (JJ:[305..315] antifungal) (NN:[316..320] drug))
+        (NP (NN:[321..333] ketoconazole)))
+      (,:[333..334] ,)
+      (NP (DT:[335..336] a)
+        (NML (NN:[337..347] cytochrome) (NN:[348..352] P450))
+        (NN:[353..362] inhibitor)))
+    (,:[362..363] ,)
+    (VP (VBZ:[364..367] has)
+      (VP (VBN:[368..372] been)
+        (VP (VBN:[373..378] shown)
+          (S
+            (NP-SBJ-1 (-NONE-:[378..378] *))
+            (VP
+              (VP (TO:[379..381] to)
+                (VP (VB:[383..390] inhibit)
+                  (NP (JJ:[391..396] renal)
+                    (NML (NN:[397..418] 1,25-dihydroxyvitamin) (NN:[419..420] D))
+                    (NN:[421..431] production))
+                  (ADVP (FW:[432..434] in) (FW:[435..440] vitro))))
+              (CC:[441..444] and)
+              (VP (TO:[445..447] to)
+                (VP (VB:[448..453] lower)
+                  (NP (NN:[454..459] serum)
+                    (NML (NN:[461..482] 1,25-dihydroxyvitamin) (NN:[483..484] D))
+                    (NNS:[485..491] levels))
+                  (PP-LOC
+                    (PP (IN:[492..494] in)
+                      (NP (JJ:[495..501] normal) (NNS:[502..510] subjects)))
+                    (CC:[511..514] and)
+                    (PP (IN:[515..517] in)
+                      (NP
+                        (NP (NNS:[518..526] patients))
+                        (PP (IN:[527..531] with)
+                          (NP (JJ:[532..539] primary)
+                              (NN:[541..560] hyperparathyroidism)))))))))))))
+    (.:[560..561] .)))
+
+;sentence 5 Span:562..908
+;To assess the usefulness of this drug in the hypercalcemia  of sarcoidosis, a
+;condition thought to result from overproduction of  1,25-dihydroxyvitamin D
+;by sarcoid-involved tissues, two men with sarcoidosis,  hypercalcemia, and
+;elevated serum levels of 1,25-dihydroxy-vitamin D were given  ketoconazole,
+;600-800 mg per day, for four to six days.
+;[595..599]:substance:"drug"
+;[692..715]:substance:"1,25-dihydroxyvitamin D"
+;[816..840]:substance:"1,25-dihydroxy-vitamin D"
+;[853..865]:substance:"ketoconazole"
+;[867..874]:quantitative-value:"600-800"
+;[875..885]:quantitative-units:"mg per day"
+;[891..902]:quantitative-value:"four to six"
+;[903..907]:quantitative-units:"days"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[562..562] *))
+      (VP (TO:[562..564] To)
+        (VP (VB:[565..571] assess)
+          (NP
+            (NP (DT:[572..575] the) (NN:[576..586] usefulness))
+            (PP (IN:[587..589] of)
+              (NP (DT:[590..594] this) (NN:[595..599] drug))))
+          (PP (IN:[600..602] in)
+            (NP
+              (NP
+                (NP (DT:[603..606] the) (NN:[607..620] hypercalcemia))
+                (PP (IN:[622..624] of)
+                  (NP (NN:[625..636] sarcoidosis))))
+              (,:[636..637] ,)
+              (NP
+                (NP (DT:[638..639] a) (NN:[640..649] condition))
+                (VP (VBN:[650..657] thought)
+                  (S
+                    (NP-SBJ (-NONE-:[657..657] *))
+                    (VP (TO:[658..660] to)
+                      (VP (VB:[661..667] result)
+                        (PP (IN:[668..672] from)
+                          (NP
+                            (NP (NN:[673..687] overproduction))
+                            (PP (IN:[688..690] of)
+                              (NP (NN:[692..713] 1,25-dihydroxyvitamin)
+                                  (NN:[714..715] D)))
+                            (PP (IN:[716..718] by)
+                              (NP
+                                (ADJP (NN:[719..726] sarcoid)
+                                      (HYPH:[726..727] -)
+                                      (VBN:[727..735] involved))
+                                (NNS:[736..743] tissues)))))))))))))))
+    (,:[743..744] ,)
+    (NP-SBJ-1
+      (NP (CD:[745..748] two) (NNS:[749..752] men))
+      (PP (IN:[753..757] with)
+        (NP
+          (NP (NN:[758..769] sarcoidosis))
+          (,:[769..770] ,)
+          (NP (NN:[772..785] hypercalcemia))
+          (,:[785..786] ,) (CC:[787..790] and)
+          (NP
+            (NP (VBN:[791..799] elevated) (NN:[800..805] serum)
+                (NNS:[806..812] levels))
+            (PP (IN:[813..815] of)
+              (NP (NN:[816..838] 1,25-dihydroxy-vitamin) (NN:[839..840] D)))))))
+    (VP (VBD:[841..845] were)
+      (VP (VBN:[846..851] given)
+        (NP-1 (-NONE-:[851..851] *))
+        (NP
+          (NP (NN:[853..865] ketoconazole))
+          (,:[865..866] ,)
+          (NP
+            (NP
+              (QP (CD:[867..870] 600) (HYPH:[870..871] -) (CD:[871..874] 800))
+              (NN:[875..877] mg))
+            (PP (IN:[878..881] per)
+              (NP (NN:[882..885] day)))))
+        (,:[885..886] ,)
+        (PP-TMP (IN:[887..890] for)
+          (NP
+            (QP (CD:[891..895] four) (TO:[896..898] to) (CD:[899..902] six))
+            (NNS:[903..907] days)))))
+    (.:[907..908] .)))
+
+;sentence 6 Span:909..1082
+;Serum  1,25-dihydroxyvitamin D levels were markedly reduced (by approximately
+;40%) in  both patients during ketoconazole administration, but serum calcium
+;was not  affected.
+;[916..939]:substance:"1,25-dihydroxyvitamin D"
+;[987..990]:quantitative-value:"40%"
+;[1017..1029]:substance:"ketoconazole"
+;[1056..1063]:substance:"calcium"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[909..914] Serum)
+        (NML (NN:[916..937] 1,25-dihydroxyvitamin) (NN:[938..939] D))
+        (NNS:[940..946] levels))
+      (VP (VBD:[947..951] were)
+        (ADVP (RB:[952..960] markedly))
+        (VP (VBN:[961..968] reduced)
+          (PRN (-LRB-:[969..970] -LRB-)
+            (PP-EXT (IN:[970..972] by)
+              (NP
+                (QP (RB:[973..986] approximately) (CD:[987..989] 40))
+                (NN:[989..990] %)))
+            (-RRB-:[990..991] -RRB-))
+          (PP-LOC (IN:[992..994] in)
+            (NP (DT:[996..1000] both) (NNS:[1001..1009] patients)))
+          (PP-TMP (IN:[1010..1016] during)
+            (NP (NN:[1017..1029] ketoconazole) (NN:[1030..1044] administration))))))
+    (,:[1044..1045] ,) (CC:[1046..1049] but)
+    (S
+      (NP-SBJ-1 (NN:[1050..1055] serum) (NN:[1056..1063] calcium))
+      (VP (VBD:[1064..1067] was) (RB:[1068..1071] not)
+        (VP (VBN:[1073..1081] affected)
+          (NP-1 (-NONE-:[1081..1081] *)))))
+    (.:[1081..1082] .)))
+
+;sentence 7 Span:1083..1160
+;In both patients, renal function deteriorated during ketoconazole 
+;treatment.
+;[1136..1148]:substance:"ketoconazole"
+(SENT
+  (S
+    (PP-LOC (IN:[1083..1085] In)
+      (NP (DT:[1086..1090] both) (NNS:[1091..1099] patients)))
+    (,:[1099..1100] ,)
+    (NP-SBJ (JJ:[1101..1106] renal) (NN:[1107..1115] function))
+    (VP (VBD:[1116..1128] deteriorated)
+      (PP-TMP (IN:[1129..1135] during)
+        (NP (NN:[1136..1148] ketoconazole) (NN:[1150..1159] treatment))))
+    (.:[1159..1160] .)))
+
+;sentence 8 Span:1161..1282
+;We conclude that ketoconazole administration can lower the elevated  serum
+;1,25-dihydroxyvitamin D levels in sarcoidosis.
+;[1178..1190]:substance:"ketoconazole"
+;[1236..1259]:substance:"1,25-dihydroxyvitamin D"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1161..1163] We))
+    (VP (VBP:[1164..1172] conclude)
+      (SBAR (IN:[1173..1177] that)
+        (S
+          (NP-SBJ (NN:[1178..1190] ketoconazole)
+                  (NN:[1191..1205] administration))
+          (VP (MD:[1206..1209] can)
+            (VP (VB:[1210..1215] lower)
+              (NP (DT:[1216..1219] the) (VBN:[1220..1228] elevated)
+                  (NN:[1230..1235] serum)
+                (NML (NN:[1236..1257] 1,25-dihydroxyvitamin) (NN:[1258..1259] D))
+                (NNS:[1260..1266] levels))
+              (PP (IN:[1267..1269] in)
+                (NP (NN:[1270..1281] sarcoidosis))))))))
+    (.:[1281..1282] .)))
+
+;sentence 9 Span:1283..1552
+;However, deterioration of  renal function during ketoconazole administration
+;as well as failure of  hypercalcemia to be affected during short-term
+;ketoconazole treatment suggest  that this drug might not be appropriate for
+;acute treatment of hypercalcemic  sarcoidosis.
+;[1332..1344]:substance:"ketoconazole"
+;[1430..1442]:substance:"ketoconazole"
+;[1472..1476]:substance:"drug"
+(SENT
+  (S
+    (ADVP (RB:[1283..1290] However))
+    (,:[1290..1291] ,)
+    (NP-SBJ
+      (NP
+        (NP (NN:[1292..1305] deterioration))
+        (PP (IN:[1306..1308] of)
+          (NP (JJ:[1310..1315] renal) (NN:[1316..1324] function)))
+        (PP (IN:[1325..1331] during)
+          (NP (NN:[1332..1344] ketoconazole) (NN:[1345..1359] administration))))
+      (CONJP (RB:[1360..1362] as) (RB:[1363..1367] well) (IN:[1368..1370] as))
+      (NP
+        (NP (NN:[1371..1378] failure)
+          (S-2 (-NONE-:[1378..1378] *ICH*)))
+        (PP (IN:[1379..1381] of)
+          (NP (NN:[1383..1396] hypercalcemia)))
+        (S-2
+          (NP-SBJ-1 (-NONE-:[1396..1396] *))
+          (VP (TO:[1397..1399] to)
+            (VP (VB:[1400..1402] be)
+              (VP (VBN:[1403..1411] affected)
+                (NP-1 (-NONE-:[1411..1411] *))
+                (PP (IN:[1412..1418] during)
+                  (NP
+                    (NML (JJ:[1419..1424] short) (HYPH:[1424..1425] -)
+                         (NN:[1425..1429] term))
+                    (NN:[1430..1442] ketoconazole) (NN:[1443..1452] treatment)))))))))
+    (VP (VBP:[1453..1460] suggest)
+      (SBAR (IN:[1462..1466] that)
+        (S
+          (NP-SBJ (DT:[1467..1471] this) (NN:[1472..1476] drug))
+          (VP (MD:[1477..1482] might) (RB:[1483..1486] not)
+            (VP (VB:[1487..1489] be)
+              (ADJP-PRD (JJ:[1490..1501] appropriate)
+                (PP (IN:[1502..1505] for)
+                  (NP
+                    (NP (JJ:[1506..1511] acute) (NN:[1512..1521] treatment))
+                    (PP (IN:[1522..1524] of)
+                      (NP (JJ:[1525..1538] hypercalcemic)
+                          (NN:[1540..1551] sarcoidosis)))))))))))
+    (.:[1551..1552] .)))
+
+;section 10 Span:1556..1600
+;PMID: 2166103 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1556..1560] PMID) (::[1560..1561] :) (CD:[1562..1569] 2166103)
+        (IN:[1570..1571] -LSB-) (NNP:[1571..1577] PubMed) (HYPH:[1578..1579] -)
+        (JJ:[1580..1587] indexed) (IN:[1588..1591] for)
+        (NNP:[1592..1600] MEDLINE-RSB-)))

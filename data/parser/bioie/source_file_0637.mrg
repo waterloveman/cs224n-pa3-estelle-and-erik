@@ -1,0 +1,320 @@
+;PMID: 3598900
+;source_file_644.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..209] = [t:51..209]
+;2)section:[e:213..262] = [t:213..262]
+;3)sentence:[e:266..476] = [t:266..476]
+;4)sentence:[e:477..635] = [t:477..635]
+;5)sentence:[e:636..784] = [t:636..784]
+;6)sentence:[e:785..913] = [t:785..913]
+;7)sentence:[e:914..1083] = [t:914..1083]
+;8)sentence:[e:1084..1304] = [t:1084..1304]
+;9)sentence:[e:1305..1445] = [t:1305..1445]
+;10)section:[e:1449..1493] = [t:1449..1493]
+;Token/POS Errors
+;ERROR_POS mismatch [35..36] t:token e:CD 3
+
+;section 0 Span:0..45
+;J Pharmacol Exp Ther. 1987 Jun;241(3):1112-9.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1987)
+        (CC:[27..34] Jun;241) (NN:[34..35] -LRB-) (token:[35..36] 3)
+        (NN:[36..37] -RRB-) (VBG:[37..38] :) (CD:[38..41] 111) (CD:[41..44] 2-9)
+        (.:[44..45] .)))
+
+;sentence 1 Span:51..209
+;Hepatic metabolism of tolbutamide: characterization of the form of cytochrome
+; P-450 involved in methyl hydroxylation and relationship to in vivo
+;disposition.
+;[73..84]:substance:"tolbutamide"
+;[118..135]:cyp450:"cytochrome  P-450"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[51..58] Hepatic) (NN:[59..69] metabolism))
+      (PP (IN:[70..72] of)
+        (NP (NN:[73..84] tolbutamide))))
+    (::[84..85] :)
+    (NP
+      (NP (NN:[86..102] characterization))
+      (PP (IN:[103..105] of)
+        (NP
+          (NP (DT:[106..109] the) (NN:[110..114] form))
+          (PP (IN:[115..117] of)
+            (NP (NN:[118..128] cytochrome) (NN:[130..135] P-450)))
+          (VP (VBN:[136..144] involved)
+            (NP (-NONE-:[144..144] *))
+            (PP-CLR (IN:[145..147] in)
+              (NP
+                (NP (NN:[148..154] methyl) (NN:[155..168] hydroxylation))
+                (CC:[169..172] and)
+                (NP
+                  (NP (NN:[173..185] relationship))
+                  (PP (TO:[186..188] to)
+                    (NP
+                      (ADJP (FW:[189..191] in) (FW:[192..196] vivo))
+                      (NN:[197..208] disposition))))))))))
+    (.:[208..209] .)))
+
+;section 2 Span:213..262
+;Knodell RG, Hall SD, Wilkinson GR, Guengerich FP.
+(SEC
+  (FRAG (NNP:[213..220] Knodell) (NNP:[221..223] RG) (,:[223..224] ,)
+        (NNP:[225..229] Hall) (NNP:[230..232] SD) (,:[232..233] ,)
+        (NNP:[234..243] Wilkinson) (NNP:[244..246] GR) (,:[246..247] ,)
+        (NNP:[248..258] Guengerich) (NNP:[259..261] FP) (.:[261..262] .)))
+
+;sentence 3 Span:266..476
+;In vitro investigations suggest the same human liver cytochrome P-450 that 
+;catalyzes S-mephenytoin 4-hydroxylation, P-450MP, is responsible for methyl 
+;hydroxylation of the oral hypoglycemic agent tolbutamide.
+;[319..335]:cyp450:"cytochrome P-450"
+;[352..365]:substance:"S-mephenytoin"
+;[383..390]:cyp450:"P-450MP"
+;[445..463]:substance:"hypoglycemic agent"
+;[464..475]:substance:"tolbutamide"
+(SENT
+  (S
+    (NP-SBJ
+      (ADJP (FW:[266..268] In) (FW:[269..274] vitro))
+      (NNS:[275..289] investigations))
+    (VP (VBP:[290..297] suggest)
+      (SBAR (-NONE-:[297..297] 0)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (DT:[298..301] the) (JJ:[302..306] same) (JJ:[307..312] human)
+                  (NN:[313..318] liver)
+                 (NN:[319..329] cytochrome) (NN:[330..335] P-450))
+              (SBAR
+                (WHNP-1 (WDT:[336..340] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[340..340] *T*))
+                  (VP (VBZ:[342..351] catalyzes)
+                    (NP (NN:[352..365] S-mephenytoin)
+                        (NN:[366..381] 4-hydroxylation))))))
+            (,:[381..382] ,)
+            (NP (NN:[383..390] P-450MP)))
+          (,:[390..391] ,)
+          (VP (VBZ:[392..394] is)
+            (ADJP-PRD (JJ:[395..406] responsible)
+              (PP (IN:[407..410] for)
+                (NP
+                  (NP (NN:[411..417] methyl) (NN:[419..432] hydroxylation))
+                  (PP (IN:[433..435] of)
+                    (NP
+                      (NP (DT:[436..439] the) (JJ:[440..444] oral)
+                         (JJ:[445..457] hypoglycemic) (NN:[458..463] agent))
+                      (NP (NN:[464..475] tolbutamide)))))))))))
+    (.:[475..476] .)))
+
+;sentence 4 Span:477..635
+;Tolbutamide  hydroxylase activity copurified with P-450MP;
+;electrophoretically homogenous  P-450MP catalyzed both tolbutamide and
+;S-mephenytoin hydroxylation.
+;[477..501]:cyp450:"Tolbutamide  hydroxylase"
+;[527..534]:cyp450:"P-450MP"
+;[568..575]:cyp450:"P-450MP"
+;[591..602]:substance:"tolbutamide"
+;[607..620]:substance:"S-mephenytoin"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+         (NN:[477..488] Tolbutamide) (NN:[490..501] hydroxylase)
+        (NN:[502..510] activity))
+      (VP (VBD:[511..521] copurified)
+        (PP (IN:[522..526] with)
+          (NP (NN:[527..534] P-450MP)))))
+    (::[534..535] ;)
+    (S
+      (NP-SBJ
+        (ADJP (RB:[536..555] electrophoretically) (JJ:[556..566] homogenous))
+        (NN:[568..575] P-450MP))
+      (VP (VBD:[576..585] catalyzed)
+        (NP (CC:[586..590] both)
+          (NP (NN:[591..602] tolbutamide)
+            (NML-1 (-NONE-:[602..602] *P*)))
+          (CC:[603..606] and)
+          (NP (NN:[607..620] S-mephenytoin)
+            (NML-1 (NN:[621..634] hydroxylation))))))
+    (.:[634..635] .)))
+
+;sentence 5 Span:636..784
+;Each  substrate competitively inhibited hydroxylation of the other, and
+;anti-P-450MP  inhibited tolbutamide hydroxylation in human liver microsomes.
+;[642..651]:substance:"substrate"
+;[708..720]:substance:"anti-P-450MP"
+;[732..743]:substance:"tolbutamide"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[636..640] Each) (NN:[642..651] substrate))
+      (ADVP (RB:[652..665] competitively))
+      (VP (VBD:[666..675] inhibited)
+        (NP
+          (NP (NN:[676..689] hydroxylation))
+          (PP (IN:[690..692] of)
+            (NP (DT:[693..696] the) (NN:[697..702] other))))))
+    (,:[702..703] ,) (CC:[704..707] and)
+    (S
+      (NP-SBJ (AFX:[708..712] anti) (HYPH:[712..713] -) (NN:[713..720] P-450MP))
+      (VP (VBD:[722..731] inhibited)
+        (NP (NN:[732..743] tolbutamide) (NN:[744..757] hydroxylation))
+        (PP-LOC (IN:[758..760] in)
+          (NP (JJ:[761..766] human) (NN:[767..772] liver)
+              (NNS:[773..783] microsomes)))))
+    (.:[783..784] .)))
+
+;sentence 6 Span:785..913
+;Significant  correlation between tolbutamide and S-mephenytoin hydroxylase
+;activities was  seen in a set of human liver samples.
+;[818..829]:substance:"tolbutamide"
+;[834..859]:cyp450:"S-mephenytoin hydroxylase"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[785..796] Significant) (NN:[798..809] correlation))
+      (PP (IN:[810..817] between)
+        (NP
+          (NP
+            (NML (NN:[818..829] tolbutamide)
+              (NML-1 (-NONE-:[829..829] *P*)))
+            (NML-3 (-NONE-:[829..829] *P*)))
+          (CC:[830..833] and)
+          (NP
+            (NML (NN:[834..847] S-mephenytoin)
+              (NML-1 (NN:[848..859] hydroxylase)))
+            (NML-3 (NNS:[860..870] activities))))))
+    (VP (VBD:[871..874] was)
+      (VP (VBN:[876..880] seen)
+        (NP-2 (-NONE-:[880..880] *))
+        (PP-LOC (IN:[881..883] in)
+          (NP
+            (NP (DT:[884..885] a) (NN:[886..889] set))
+            (PP (IN:[890..892] of)
+              (NP (JJ:[893..898] human) (NN:[899..904] liver)
+                  (NNS:[905..912] samples)))))))
+    (.:[912..913] .)))
+
+;sentence 7 Span:914..1083
+;These findings suggested that subjects  with a genetically determined
+;impairment in ability to hydroxylate mephenytoin  might also have deficient
+;tolbutamide metabolism.
+;[1021..1032]:substance:"mephenytoin"
+;[1060..1071]:substance:"tolbutamide"
+(SENT
+  (S
+    (NP-SBJ (DT:[914..919] These) (NNS:[920..928] findings))
+    (VP (VBD:[929..938] suggested)
+      (SBAR (IN:[939..943] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[944..952] subjects))
+            (PP (IN:[954..958] with)
+              (NP
+                (NP (DT:[959..960] a)
+                  (ADJP (RB:[961..972] genetically) (VBN:[973..983] determined))
+                  (NN:[984..994] impairment))
+                (PP (IN:[995..997] in)
+                  (NP (NN:[998..1005] ability)
+                    (S
+                      (NP-SBJ (-NONE-:[1005..1005] *))
+                      (VP (TO:[1006..1008] to)
+                        (VP (VB:[1009..1020] hydroxylate)
+                          (NP (NN:[1021..1032] mephenytoin))))))))))
+          (VP (MD:[1034..1039] might)
+            (ADVP (RB:[1040..1044] also))
+            (VP (VB:[1045..1049] have)
+              (NP (JJ:[1050..1059] deficient) (NN:[1060..1071] tolbutamide)
+                  (NN:[1072..1082] metabolism)))))))
+    (.:[1082..1083] .)))
+
+;sentence 8 Span:1084..1304
+;However, plasma tolbutamide  concentration-time profiles and urinary
+;excretion of metabolites formed via the  hydroxylation pathway were similar
+;in four phenotypically poor and six extensive  metabolizers of mephenytoin.
+;[1100..1111]:substance:"tolbutamide"
+;[1166..1177]:substance:"metabolites"
+;[1276..1288]:substance:"metabolizers"
+;[1292..1303]:substance:"mephenytoin"
+(SENT
+  (S
+    (ADVP (RB:[1084..1091] However))
+    (,:[1091..1092] ,)
+    (NP-SBJ
+      (NP (NN:[1093..1099] plasma) (NN:[1100..1111] tolbutamide)
+        (NML (NN:[1113..1126] concentration) (HYPH:[1126..1127] -)
+             (NN:[1127..1131] time))
+        (NNS:[1132..1140] profiles))
+      (CC:[1141..1144] and)
+      (NP
+        (NP (JJ:[1145..1152] urinary) (NN:[1153..1162] excretion))
+        (PP (IN:[1163..1165] of)
+          (NP
+            (NP (NNS:[1166..1177] metabolites))
+            (VP (VBN:[1178..1184] formed)
+              (NP (-NONE-:[1184..1184] *))
+              (PP (IN:[1185..1188] via)
+                (NP (DT:[1189..1192] the) (NN:[1194..1207] hydroxylation)
+                    (NN:[1208..1215] pathway))))))))
+    (VP (VBD:[1216..1220] were)
+      (ADJP-PRD (JJ:[1221..1228] similar))
+      (PP-LOC (IN:[1229..1231] in)
+        (NP
+          (NP
+            (NP (CD:[1232..1236] four)
+              (ADJP (RB:[1237..1251] phenotypically) (JJ:[1252..1256] poor))
+              (NML-1 (-NONE-:[1256..1256] *P*)))
+            (CC:[1257..1260] and)
+            (NP (CD:[1261..1264] six) (JJ:[1265..1274] extensive)
+              (NML-1 (NNS:[1276..1288] metabolizers))))
+          (PP (IN:[1289..1291] of)
+            (NP (NN:[1292..1303] mephenytoin))))))
+    (.:[1303..1304] .)))
+
+;sentence 9 Span:1305..1445
+;We suggest that alteration of a substrate binding  site of P-450MP may reduce
+;its ability to hydroxylate S-mephenytoin but not  tolbutamide.
+;[1337..1346]:substance:"substrate"
+;[1364..1371]:cyp450:"P-450MP"
+;[1410..1423]:substance:"S-mephenytoin"
+;[1433..1444]:substance:"tolbutamide"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1305..1307] We))
+    (VP (VBP:[1308..1315] suggest)
+      (SBAR (IN:[1316..1320] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1321..1331] alteration))
+            (PP (IN:[1332..1334] of)
+              (NP
+                (NP (DT:[1335..1336] a) (NN:[1337..1346] substrate)
+                    (NN:[1347..1354] binding) (NN:[1356..1360] site))
+                (PP (IN:[1361..1363] of)
+                  (NP (NN:[1364..1371] P-450MP))))))
+          (VP (MD:[1372..1375] may)
+            (VP (VB:[1376..1382] reduce)
+              (NP
+                (NP (PRP$:[1383..1386] its) (NN:[1387..1394] ability))
+                (VP
+                  (VP (TO:[1395..1397] to)
+                    (VP (VB:[1398..1409] hydroxylate)
+                      (NP=1 (NN:[1410..1423] S-mephenytoin))))
+                  (CC:[1424..1427] but)
+                  (VP (RB:[1428..1431] not)
+                    (NP=1 (NN:[1433..1444] tolbutamide))))))))))
+    (.:[1444..1445] .)))
+
+;section 10 Span:1449..1493
+;PMID: 3598900 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1449..1453] PMID) (::[1453..1454] :) (CD:[1455..1462] 3598900)
+        (NN:[1463..1464] -LSB-) (NNP:[1464..1470] PubMed) (::[1471..1472] -)
+        (NN:[1473..1480] indexed) (IN:[1481..1484] for)
+        (NNP:[1485..1493] MEDLINE-RSB-)))

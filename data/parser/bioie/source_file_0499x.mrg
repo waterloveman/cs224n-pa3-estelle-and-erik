@@ -1,0 +1,427 @@
+;PMID: 2283998
+;source_file_486.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)section:[e:42..119] = [t:42..119]
+;2)section:[e:123..151] = [t:123..151]
+;3)section:[e:155..239] = [t:155..239]
+;4)sentence:[e:243..415] = [t:243..415]
+;5)sentence:[e:416..625] = [t:416..625]
+;6)sentence:[e:626..874] = [t:626..874]
+;7)sentence:[e:875..941] = [t:875..941]
+;8)sentence:[e:942..1133] = [t:942..1133]
+;9)sentence:[e:1134..1219] = [t:1134..1219]
+;10)sentence:[e:1220..1502] = [t:1220..1502]
+;11)sentence:[e:1504..1670] = [t:1504..1670]
+;12)section:[e:1674..1718] = [t:1674..1718]
+
+;section 0 Span:0..37
+;Mol Endocrinol  1990 Oct;4(10):1474-9
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..14] Endocrinol) (CD:[16..20] 1990)
+        (.:[21..25] Oct;) (CD:[25..26] 4) (NN:[26..27] -LRB-) (NN:[27..29] 10)
+        (NN:[29..30] -RRB-) (::[30..31] :) (CD:[31..34] 147) (CD:[34..37] 4-9)))
+
+;section 1 Span:42..119
+;Point mutations of ras oncogenes are an early event in thyroid
+;tumorigenesis.
+;[42..57]:variation-type:"Point mutations"
+;[61..64]:gene-rna:"ras"
+(SEC
+  (S-HLN
+    (NP-SBJ
+      (NP (NN:[42..47] Point) (NNS:[48..57] mutations))
+      (PP (IN:[58..60] of)
+        (NP (NN:[61..64] ras) (NNS:[65..74] oncogenes))))
+    (VP (VBP:[75..78] are)
+      (NP-PRD
+        (NP (DT:[79..81] an) (JJ:[82..87] early) (NN:[88..93] event))
+        (PP (IN:[94..96] in)
+          (NP (JJ:[97..104] thyroid) (NN:[105..118] tumorigenesis)))))
+    (.:[118..119] .)))
+;ERROR_Entity in section[42..57]:variation-type "Point mutations"
+;ERROR_Entity in section[61..64]:gene-rna "ras"
+
+;section 2 Span:123..151
+;Namba H, Rubin SA, Fagin JA.
+(SEC
+  (FRAG (NNP:[123..128] Namba) (NNP:[129..131] H,) (NNP:[132..137] Rubin)
+        (NNP:[138..140] SA) (,:[140..141] ,) (NNP:[142..147] Fagin)
+        (NNP:[148..151] JA.)))
+
+;section 3 Span:155..239
+;Department of Medicine, Cedars-Sinai Medical Center, UCLA School of Medicine 
+;90048.
+(SEC
+  (FRAG (NNP:[155..165] Department) (IN:[166..168] of) (NNP:[169..177] Medicine)
+        (,:[177..178] ,) (NNP:[179..184] Cedar) (NNP:[184..191] s-Sinai)
+        (NNP:[192..199] Medical) (NNP:[200..206] Center) (,:[206..207] ,)
+        (NNP:[208..212] UCLA) (NNP:[213..219] School) (IN:[220..222] of)
+        (NNP:[223..231] Medicine) (CD:[233..238] 90048) (.:[238..239] .)))
+
+;sentence 4 Span:243..415
+;Identifying the nature of the genetic mutations in thyroid neoplasms and
+;their  prevalence in the various tumor phenotypes is critical to
+;understanding their  pathogenesis.
+;[294..311]:malignancy:"thyroid neoplasms"
+(SENT
+  (S
+    (S-NOM-SBJ
+      (NP-SBJ (-NONE-:[243..243] *))
+      (VP (VBG:[243..254] Identifying)
+        (NP
+          (NP
+            (NP (DT:[255..258] the) (NN:[259..265] nature))
+            (PP (IN:[266..268] of)
+              (NP
+                (NP (DT:[269..272] the) (JJ:[273..280] genetic)
+                    (NNS:[281..290] mutations))
+                (PP-LOC (IN:[291..293] in)
+                  (NP (JJ:[294..301] thyroid) (NNS:[302..311] neoplasms))))))
+          (CC:[312..315] and)
+          (NP
+            (NP (PRP$:[316..321] their) (NN:[323..333] prevalence))
+            (PP (IN:[334..336] in)
+              (NP (DT:[337..340] the) (JJ:[341..348] various)
+                  (NN:[349..354] tumor) (NNS:[355..365] phenotypes)))))))
+    (VP (VBZ:[366..368] is)
+      (ADJP-PRD (JJ:[369..377] critical)
+        (PP (TO:[378..380] to)
+          (S-NOM
+            (NP-SBJ (-NONE-:[380..380] *))
+            (VP (VBG:[381..394] understanding)
+              (NP (PRP$:[395..400] their) (NN:[402..414] pathogenesis)))))))
+    (.:[414..415] .)))
+
+;sentence 5 Span:416..625
+;Mutational activation of ras oncogenes in human tumors occurs  predominantly
+;through point mutations in two functional regions of the  molecules, codons
+;12, 13 (GTP-binding domain) or codon 61 (GTPase domain).
+;[441..444]:gene-rna:"ras"
+;[464..470]:malignancy:"tumors"
+;[501..516]:variation-type:"point mutations"
+;[562..571]:variation-location:"codons 12"
+;[562..568]...[573..575]:variation-location:"codons"..."13"
+;[577..595]:variation-location:"GTP-binding domain"
+;[600..608]:variation-location:"codon 61"
+;[610..623]:variation-location:"GTPase domain"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[416..426] Mutational) (NN:[427..437] activation))
+      (PP (IN:[438..440] of)
+        (NP (NN:[441..444] ras) (NNS:[445..454] oncogenes)))
+      (PP-LOC (IN:[455..457] in)
+        (NP (JJ:[458..463] human) (NNS:[464..470] tumors))))
+    (VP (VBZ:[471..477] occurs)
+      (ADVP (RB:[479..492] predominantly))
+      (PP (IN:[493..500] through)
+        (NP (NN:[501..506] point) (NNS:[507..516] mutations)))
+      (PP-LOC (IN:[517..519] in)
+        (NP
+          (NP
+            (NP (CD:[520..523] two) (JJ:[524..534] functional)
+                (NNS:[535..542] regions))
+            (PP (IN:[543..545] of)
+              (NP (DT:[546..549] the) (NNS:[551..560] molecules))))
+          (,:[560..561] ,)
+          (NP
+            (NP
+              (NP
+                (NML-1 (NNS:[562..568] codons))
+                (CD:[569..571] 12))
+              (,:[571..572] ,)
+              (NP
+                (NML-1 (-NONE-:[572..572] *P*))
+                (CD:[573..575] 13))
+              (PRN (-LRB-:[576..577] -LRB-)
+                (NP
+                  (ADJP (NN:[577..580] GTP) (HYPH:[580..581] -)
+                        (VBG:[581..588] binding))
+                  (NN:[589..595] domain))
+                (-RRB-:[595..596] -RRB-)))
+            (CC:[597..599] or)
+            (NP
+               (NN:[600..605] codon) (CD:[606..608] 61)
+              (PRN (-LRB-:[609..610] -LRB-)
+                (NP (NN:[610..616] GTPase) (NN:[617..623] domain))
+                (-RRB-:[623..624] -RRB-)))))))
+    (.:[624..625] .)))
+
+;sentence 6 Span:626..874
+;We  examined the prevalence of point mutations in codons 12, 13, and 61 of
+;the  oncogenes K-ras, N-ras, and H-ras in benign and malignant human thyroid
+;tumors  by hybridization of PCR-amplified tumor DNA with synthetic
+;oligodeoxynucleotide  probes.
+;[657..672]:variation-type:"point mutations"
+;[676..685]:variation-location:"codons 12"
+;[676..682]...[695..697]:variation-location:"codons"..."61"
+;[676..682]...[687..689]:variation-location:"codons"..."13"
+;[716..721]:gene-rna:"K-ras"
+;[723..728]:gene-rna:"N-ras"
+;[734..739]:gene-rna:"H-ras"
+;[743..749]...[764..784]:malignancy-type:"benign"..."human thyroid tumors"
+;[754..784]:malignancy:"malignant human thyroid tumors"
+(SENT
+  (S
+    (NP-SBJ (PRP:[626..628] We))
+    (VP (VBD:[630..638] examined)
+      (NP
+        (NP (DT:[639..642] the) (NN:[643..653] prevalence))
+        (PP (IN:[654..656] of)
+          (NP
+            (NP (NN:[657..662] point) (NNS:[663..672] mutations))
+            (PP-LOC (IN:[673..675] in)
+              (NP
+                (NP
+                  (NP
+                    (NML-2 (NNS:[676..682] codons))
+                    (CD:[683..685] 12))
+                  (,:[685..686] ,)
+                  (NP
+                    (NML-2 (-NONE-:[686..686] *P*))
+                    (CD:[687..689] 13))
+                  (,:[689..690] ,) (CC:[691..694] and)
+                  (NP
+                    (NML-2 (-NONE-:[694..694] *P*))
+                    (CD:[695..697] 61)))
+                (PP (IN:[698..700] of)
+                  (NP
+                    (NP (DT:[701..704] the) (NNS:[706..715] oncogenes))
+                    (NP (NN:[716..721] K-ras) (,:[721..722] ,)
+                        (NN:[723..728] N-ras) (,:[728..729] ,)
+                        (CC:[730..733] and) (NN:[734..739] H-ras)))))))))
+      (PP (IN:[740..742] in)
+        (NP
+          (NP (JJ:[743..749] benign)
+            (NML-1 (-NONE-:[749..749] *P*)))
+          (CC:[750..753] and)
+          (NP (JJ:[754..763] malignant)
+            (NML-1 (JJ:[764..769] human) (JJ:[770..777] thyroid)
+                   (NNS:[778..784] tumors)))))
+      (PP-MNR (IN:[786..788] by)
+        (NP
+          (NP (NN:[789..802] hybridization))
+          (PP (IN:[803..805] of)
+            (NP
+              (ADJP (NN:[806..809] PCR) (HYPH:[809..810] -)
+                    (VBN:[810..819] amplified))
+              (NN:[820..825] tumor) (NN:[826..829] DNA)))
+          (PP (IN:[830..834] with)
+            (NP (JJ:[835..844] synthetic) (NN:[845..865] oligodeoxynucleotide)
+                (NNS:[867..873] probes))))))
+    (.:[873..874] .)))
+
+;sentence 7 Span:875..941
+;None of the eight normal thyroid tissues harbored point mutations.
+;[925..940]:variation-type:"point mutations"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[875..879] None))
+      (PP (IN:[880..882] of)
+        (NP (DT:[883..886] the) (CD:[887..892] eight) (JJ:[893..899] normal)
+            (JJ:[900..907] thyroid) (NNS:[908..915] tissues))))
+    (VP (VBD:[916..924] harbored)
+      (NP (NN:[925..930] point) (NNS:[931..940] mutations)))
+    (.:[940..941] .)))
+
+;sentence 8 Span:942..1133
+;Four  of nineteen nodules from multinodular goiters (21%), 6/24
+;microfollicular  adenomas (25%), 3/14 papillary carcinomas (21%), and 0/3
+;follicular carcinomas  contained ras point mutations.
+;[960..993]:malignancy:"nodules from multinodular goiters"
+;[1006..1031]:malignancy:"microfollicular  adenomas"
+;[1044..1064]:malignancy:"papillary carcinomas"
+;[1080..1101]:malignancy:"follicular carcinomas"
+;[1113..1116]:gene-rna:"ras"
+;[1117..1132]:variation-type:"point mutations"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (CD:[942..946] Four))
+        (PP (IN:[948..950] of)
+          (NP
+            (NP (CD:[951..959] nineteen) (NNS:[960..967] nodules))
+            (PP (IN:[968..972] from)
+              (NP (JJ:[973..985] multinodular) (NNS:[986..993] goiters)
+                (PRN (-LRB-:[994..995] -LRB-)
+                  (NP (CD:[995..997] 21) (NN:[997..998] %))
+                  (-RRB-:[998..999] -RRB-)))))))
+      (,:[999..1000] ,)
+      (NP
+        (NP (CD:[1001..1002] 6))
+        (PP (SYM:[1002..1003] /)
+          (NP (CD:[1003..1005] 24)
+             (JJ:[1006..1021] microfollicular) (NNS:[1023..1031] adenomas)
+            (PRN (-LRB-:[1032..1033] -LRB-)
+              (NP (CD:[1033..1035] 25) (NN:[1035..1036] %))
+              (-RRB-:[1036..1037] -RRB-)))))
+      (,:[1037..1038] ,)
+      (NP
+        (NP (CD:[1039..1040] 3))
+        (PP (SYM:[1040..1041] /)
+          (NP (CD:[1041..1043] 14)
+             (JJ:[1044..1053] papillary) (NNS:[1054..1064] carcinomas)
+            (PRN (-LRB-:[1065..1066] -LRB-)
+              (NP (CD:[1066..1068] 21) (NN:[1068..1069] %))
+              (-RRB-:[1069..1070] -RRB-)))))
+      (,:[1070..1071] ,) (CC:[1072..1075] and)
+      (NP
+        (NP (CD:[1076..1077] 0))
+        (PP (SYM:[1077..1078] /)
+          (NP (CD:[1078..1079] 3)
+             (JJ:[1080..1090] follicular) (NNS:[1091..1101] carcinomas)))))
+    (VP (VBD:[1103..1112] contained)
+      (NP (NN:[1113..1116] ras)
+         (NN:[1117..1122] point) (NNS:[1123..1132] mutations)))
+    (.:[1132..1133] .)))
+
+;sentence 9 Span:1134..1219
+;The predominant mutation was a valine for glycine  substitution in codon 12
+;of H-ras.
+;[1150..1158]:variation-event:"mutation"
+;[1165..1171]:variation-state-altered:"valine"
+;[1176..1183]:variation-state-original:"glycine"
+;[1185..1197]:variation-type:"substitution"
+;[1201..1209]:variation-location:"codon 12"
+;[1213..1218]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[1134..1137] The) (JJ:[1138..1149] predominant)
+            (NN:[1150..1158] mutation))
+    (VP (VBD:[1159..1162] was)
+      (NP-PRD (DT:[1163..1164] a)
+        (NML
+          (NML (NN:[1165..1171] valine))
+          (PP (IN:[1172..1175] for)
+            (NP (NN:[1176..1183] glycine))))
+        (NN:[1185..1197] substitution))
+      (PP-LOC (IN:[1198..1200] in)
+        (NP
+          (NP (NN:[1201..1206] codon) (CD:[1207..1209] 12))
+          (PP (IN:[1210..1212] of)
+            (NP (NN:[1213..1218] H-ras))))))
+    (.:[1218..1219] .)))
+
+;sentence 10 Span:1220..1502
+;None of the multinodular goiter tumors known  to be polyclonal (and thus due
+;to hyperplasia) had point mutations, whereas one  of the two monoclonal
+;adenomas arising in nodular glands contained in H-ras  codon 12 valine
+;substitution, which was confirmed by sequencing the tumor DNA.
+;[1232..1282]:malignancy:"multinodular goiter tumors known  to be polyclonal"
+;[1300..1311]:malignancy:"hyperplasia"
+;[1317..1332]:variation-type:"point mutations"
+;[1358..1403]:malignancy:"monoclonal adenomas arising in nodular glands"
+;[1417..1422]:gene-rna:"H-ras"
+;[1424..1432]:variation-location:"codon 12"
+;[1433..1439]:variation-state-altered:"valine"
+;[1440..1452]:variation-type:"substitution"
+;[1488..1497]:malignancy:"the tumor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1220..1224] None))
+      (PP (IN:[1225..1227] of)
+        (NP
+          (NP (DT:[1228..1231] the) (JJ:[1232..1244] multinodular)
+              (NN:[1245..1251] goiter) (NNS:[1252..1258] tumors))
+          (VP (VBN:[1259..1264] known)
+            (S
+              (NP-SBJ (-NONE-:[1264..1264] *))
+              (VP (TO:[1266..1268] to)
+                (VP (VB:[1269..1271] be)
+                  (ADJP-PRD (JJ:[1272..1282] polyclonal)
+                    (PRN (-LRB-:[1283..1284] -LRB-)
+                      (FRAG (CC:[1284..1287] and)
+                        (ADVP (RB:[1288..1292] thus))
+                        (PP (JJ:[1293..1296] due)
+                          (PP (TO:[1297..1299] to)
+                            (NP (NN:[1300..1311] hyperplasia)))))
+                      (-RRB-:[1311..1312] -RRB-))))))))))
+    (VP (VBD:[1313..1316] had)
+      (NP (NN:[1317..1322] point) (NNS:[1323..1332] mutations))
+      (,:[1332..1333] ,)
+      (SBAR-ADV (IN:[1334..1341] whereas)
+        (S
+          (NP-SBJ
+            (NP (CD:[1342..1345] one))
+            (PP (IN:[1347..1349] of)
+              (NP
+                (NP (DT:[1350..1353] the) (CD:[1354..1357] two)
+                    (JJ:[1358..1368] monoclonal) (NNS:[1369..1377] adenomas))
+                (VP (VBG:[1378..1385] arising)
+                  (PP-LOC (IN:[1386..1388] in)
+                    (NP (JJ:[1389..1396] nodular) (NNS:[1397..1403] glands)))))))
+          (VP (VBD:[1404..1413] contained)
+            (NP
+              (NP (IN:[1414..1416] in) (NN:[1417..1422] H-ras)
+                (NML (NN:[1424..1429] codon) (CD:[1430..1432] 12))
+                (NN:[1433..1439] valine) (NN:[1440..1452] substitution))
+              (,:[1452..1453] ,)
+              (SBAR
+                (WHNP-1 (WDT:[1454..1459] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1459..1459] *T*))
+                  (VP (VBD:[1460..1463] was)
+                    (VP (VBN:[1464..1473] confirmed)
+                      (NP-1 (-NONE-:[1473..1473] *))
+                      (PP-MNR (IN:[1474..1476] by)
+                        (S-NOM
+                          (NP-SBJ (-NONE-:[1476..1476] *))
+                          (VP (VBG:[1477..1487] sequencing)
+                            (NP
+                               (DT:[1488..1491] the) (NN:[1492..1497] tumor)
+                              (NN:[1498..1501] DNA))))))))))))))
+    (.:[1501..1502] .)))
+
+;sentence 11 Span:1504..1670
+;These data show that ras activation is about equally prevalent in benign and 
+;malignant thyroid neoplasms, and thus may be an early event in the
+;tumorigenic  process.
+;[1525..1528]:gene-rna:"ras"
+;[1570..1576]:malignancy:"benign"
+;[1582..1609]:malignancy:"malignant thyroid neoplasms"
+(SENT
+  (S
+    (NP-SBJ (DT:[1504..1509] These) (NNS:[1510..1514] data))
+    (VP (VBP:[1515..1519] show)
+      (SBAR (IN:[1520..1524] that)
+        (S
+          (NP-SBJ (NN:[1525..1528] ras) (NN:[1529..1539] activation))
+          (VP
+            (VP (VBZ:[1540..1542] is)
+              (ADJP-PRD
+                (ADVP (RB:[1543..1548] about) (RB:[1549..1556] equally))
+                (JJ:[1557..1566] prevalent))
+              (PP (IN:[1567..1569] in)
+                (NP
+                  (NP (JJ:[1570..1576] benign)
+                    (NML-1 (-NONE-:[1576..1576] *P*)))
+                  (CC:[1577..1580] and)
+                  (NP (JJ:[1582..1591] malignant)
+                    (NML-1 (JJ:[1592..1599] thyroid)
+                           (NNS:[1600..1609] neoplasms))))))
+            (,:[1609..1610] ,) (CC:[1611..1614] and)
+            (VP
+              (ADVP (RB:[1615..1619] thus))
+              (MD:[1620..1623] may)
+              (VP (VB:[1624..1626] be)
+                (NP-PRD
+                  (NP (DT:[1627..1629] an) (JJ:[1630..1635] early)
+                      (NN:[1636..1641] event))
+                  (PP (IN:[1642..1644] in)
+                    (NP (DT:[1645..1648] the) (JJ:[1649..1660] tumorigenic)
+                        (NN:[1662..1669] process))))))))))
+    (.:[1669..1670] .)))
+
+;section 12 Span:1674..1718
+;PMID: 2283998 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1674..1678] PMID) (::[1678..1679] :) (CD:[1680..1687] 2283998)
+        (NN:[1688..1689] -LSB-) (NNP:[1689..1695] PubMed) (::[1696..1697] -)
+        (NN:[1698..1705] indexed) (IN:[1706..1709] for)
+        (NNP:[1710..1718] MEDLINE-RSB-)))

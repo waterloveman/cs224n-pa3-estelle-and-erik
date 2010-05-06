@@ -1,0 +1,581 @@
+;PMID: 8647319
+;source_file_1899.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..133] = [t:51..133]
+;2)section:[e:137..173] = [t:137..173]
+;3)section:[e:177..245] = [t:177..245]
+;4)sentence:[e:249..456] = [t:249..456]
+;5)sentence:[e:457..733] = [t:457..733]
+;6)sentence:[e:734..915] = [t:734..915]
+;7)sentence:[e:916..1252] = [t:916..1252]
+;8)sentence:[e:1254..1617] = [t:1254..1617]
+;9)sentence:[e:1618..1777] = [t:1618..1777]
+;10)sentence:[e:1778..1916] = [t:1778..1916]
+;11)sentence:[e:1917..2259] = [t:1917..2259]
+;12)section:[e:2263..2307] = [t:2263..2307]
+
+;section 0 Span:0..45
+;Mol Cell Endocrinol. 1996 Feb 5;116(2):191-8.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..8] Cell) (NNP:[9..19] Endocrinol)
+        (.:[19..20] .) (CD:[21..25] 1996) (NNP:[26..29] Feb)
+        (CD:[30..36] 5;116-LRB-) (CD:[36..37] 2) (-RRB-:[37..38] -RRB-)
+        (CD:[38..43] :191-) (CD:[43..45] 8.)))
+
+;sentence 1 Span:51..133
+;Differential effects of oxytocin on steroid production by bovine granulosa 
+;cells.
+;[75..83]:substance:"oxytocin"
+;[87..94]:substance:"steroid"
+(SENT
+  (NP-HLN
+    (NP (JJ:[51..63] Differential) (NNS:[64..71] effects))
+    (PP (IN:[72..74] of)
+      (NP (NN:[75..83] oxytocin)))
+    (PP (IN:[84..86] on)
+      (NP
+        (NP (NN:[87..94] steroid) (NN:[95..105] production))
+        (PP (IN:[106..108] by)
+          (NP (JJ:[109..115] bovine) (NN:[116..125] granulosa)
+              (NNS:[127..132] cells)))))
+    (.:[132..133] .)))
+
+;section 2 Span:137..173
+;Berndtson AK, Weaver CJ, Fortune JE.
+(SEC
+  (FRAG (NNP:[137..146] Berndtson) (NNP:[147..149] AK) (,:[149..150] ,)
+        (NNP:[151..157] Weaver) (NNP:[158..160] CJ) (,:[160..161] ,)
+        (NNP:[162..169] Fortune) (NNP:[170..173] JE.)))
+
+;section 3 Span:177..245
+;Department of Physiology, Cornell University, Ithaca, NY 14853, USA.
+(SEC
+  (FRAG (NNP:[177..187] Department) (IN:[188..190] of)
+        (NNP:[191..201] Physiology) (,:[201..202] ,) (NNP:[203..210] Cornell)
+        (NNP:[211..221] University) (,:[221..222] ,) (NNP:[223..229] Ithaca)
+        (,:[229..230] ,) (NNP:[231..233] NY) (CD:[234..239] 14853)
+        (,:[239..240] ,) (NNP:[241..244] USA) (.:[244..245] .)))
+
+;sentence 4 Span:249..456
+;Oxytocin (OT) and its mRNA are expressed at very low levels in granulosa
+;cells  from bovine preovulatory follicles isolated before the LH/FSH surge
+;and increase  dramatically between the surge and ovulation.
+;[249..257]:substance:"Oxytocin"
+;[259..261]:substance:"OT"
+;[271..275]:substance:"mRNA"
+;[384..386]:substance:"LH"
+;[387..390]:substance:"FSH"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (NN:[249..257] Oxytocin))
+        (NP (-LRB-:[258..259] -LRB-) (NN:[259..261] OT) (-RRB-:[261..262] -RRB-)))
+      (CC:[263..266] and)
+      (NP (PRP$:[267..270] its) (NN:[271..275] mRNA)))
+    (VP
+      (VP (VBP:[276..279] are)
+        (VP (VBN:[280..289] expressed)
+          (NP-1 (-NONE-:[289..289] *))
+          (PP (IN:[290..292] at)
+            (NP
+              (ADJP (RB:[293..297] very) (JJ:[298..301] low))
+              (NNS:[302..308] levels)))
+          (PP-LOC (IN:[309..311] in)
+            (NP
+              (NP (NN:[312..321] granulosa) (NNS:[322..327] cells))
+              (PP (IN:[329..333] from)
+                (NP
+                  (NP (JJ:[334..340] bovine) (JJ:[341..353] preovulatory)
+                      (NNS:[354..363] follicles))
+                  (VP (VBN:[364..372] isolated)
+                    (NP (-NONE-:[372..372] *))
+                    (PP-TMP (IN:[373..379] before)
+                      (NP (DT:[380..383] the)
+                        (NML (NN:[384..386] LH) (SYM:[386..387] /)
+                             (NN:[387..390] FSH))
+                        (NN:[391..396] surge))))))))))
+      (CC:[397..400] and)
+      (VP (VBP:[401..409] increase)
+        (ADVP (RB:[411..423] dramatically))
+        (PP-TMP (IN:[424..431] between)
+          (NP
+            (NP (DT:[432..435] the) (NN:[436..441] surge))
+            (CC:[442..445] and)
+            (NP (NN:[446..455] ovulation))))))
+    (.:[455..456] .)))
+
+;sentence 5 Span:457..733
+;We have shown previously that OT  stimulates progesterone secretion by
+;granulosa cells obtained before, but not  after the gonadotropin surge,
+;suggesting that OT may be involved in the  follicular/luteal phase shift in
+;steroidogenesis from estradiol/androgen to  progesterone.
+;[487..489]:substance:"OT"
+;[502..514]:substance:"progesterone"
+;[580..592]:substance:"gonadotropin"
+;[616..618]:substance:"OT"
+;[697..706]:substance:"estradiol"
+;[707..715]:substance:"androgen"
+;[720..732]:substance:"progesterone"
+(SENT
+  (S
+    (NP-SBJ (PRP:[457..459] We))
+    (VP (VBP:[460..464] have)
+      (VP (VBN:[465..470] shown)
+        (ADVP-TMP (RB:[471..481] previously))
+        (SBAR (IN:[482..486] that)
+          (S
+            (NP-SBJ (NN:[487..489] OT))
+            (VP (VBZ:[491..501] stimulates)
+              (NP
+                (NP (NN:[502..514] progesterone) (NN:[515..524] secretion))
+                (PP (IN:[525..527] by)
+                  (NP
+                    (NP (NN:[528..537] granulosa) (NNS:[538..543] cells))
+                    (VP (VBN:[544..552] obtained)
+                      (NP (-NONE-:[552..552] *))
+                      (PP-TMP
+                        (PP (IN:[553..559] before)
+                          (NP-2 (-NONE-:[559..559] *RNR*)))
+                        (,:[559..560] ,)
+                        (CONJP (CC:[561..564] but) (RB:[565..568] not))
+                        (PP (IN:[570..575] after)
+                          (NP-2 (-NONE-:[575..575] *RNR*)))
+                        (NP-2 (DT:[576..579] the) (NN:[580..592] gonadotropin)
+                              (NN:[593..598] surge)))))))
+              (,:[598..599] ,)
+              (VP (VBG:[600..610] suggesting)
+                (SBAR (IN:[611..615] that)
+                  (S
+                    (NP-SBJ-1 (NN:[616..618] OT))
+                    (VP (MD:[619..622] may)
+                      (VP (VB:[623..625] be)
+                        (VP (VBN:[626..634] involved)
+                          (NP-1 (-NONE-:[634..634] *))
+                          (PP-CLR (IN:[635..637] in)
+                            (NP
+                              (NP (DT:[638..641] the)
+                                (ADJP (JJ:[643..653] follicular)
+                                      (SYM:[653..654] /) (JJ:[654..660] luteal))
+                                (NN:[661..666] phase) (NN:[667..672] shift))
+                              (PP (IN:[673..675] in)
+                                (NP (NN:[676..691] steroidogenesis)))
+                              (PP (IN:[692..696] from)
+                                (NP (NN:[697..706] estradiol) (SYM:[706..707] /)
+                                    (NN:[707..715] androgen)))
+                              (PP (TO:[716..718] to)
+                                (NP (NN:[720..732] progesterone))))))))))))))))
+    (.:[732..733] .)))
+
+;sentence 6 Span:734..915
+;One objective of this study was to determine if OT affects  estradiol as well
+;as progesterone production by utilizing culture conditions  that maintain
+;estradiol secretion in vitro.
+;[782..784]:substance:"OT"
+;[794..803]:substance:"estradiol"
+;[815..827]:substance:"progesterone"
+;[886..895]:substance:"estradiol"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (CD:[734..737] One) (NN:[738..747] objective))
+      (PP (IN:[748..750] of)
+        (NP (DT:[751..755] this) (NN:[756..761] study))))
+    (VP (VBD:[762..765] was)
+      (S-PRP-PRD
+        (NP-SBJ-3 (-NONE-:[765..765] *))
+        (VP (TO:[766..768] to)
+          (VP (VB:[769..778] determine)
+            (SBAR-ADV (IN:[779..781] if)
+              (S
+                (NP-SBJ (NN:[782..784] OT))
+                (VP (VBZ:[785..792] affects)
+                  (NP
+                    (NP (NN:[794..803] estradiol))
+                    (CONJP (RB:[804..806] as) (RB:[807..811] well)
+                           (IN:[812..814] as))
+                    (NP (NN:[815..827] progesterone) (NN:[828..838] production))))))
+            (PP-MNR (IN:[839..841] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[841..841] *))
+                (VP (VBG:[842..851] utilizing)
+                  (NP
+                    (NP (NN:[852..859] culture) (NNS:[860..870] conditions))
+                    (SBAR
+                      (WHNP-1 (WDT:[872..876] that))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[876..876] *T*))
+                        (VP (VBP:[877..885] maintain)
+                          (NP (NN:[886..895] estradiol)
+                              (NN:[896..905] secretion))
+                          (ADVP-LOC (FW:[906..908] in) (FW:[909..914] vitro)))))))))))))
+    (.:[914..915] .)))
+
+;sentence 7 Span:916..1252
+;A second objective was to determine  if OT regulates steroidogenesis by
+;effects on the levels of mRNA for the  steroidogenic enzymes involved in
+;progesterone synthesis, cytochrome P450  side-chain cleavage (P450scc) and 3
+;beta-hydroxysteroid dehydrogenase (3  beta-HSD), or in estradiol production,
+;cytochrome P450 aromatase (P450arom).
+;[956..958]:substance:"OT"
+;[1013..1017]:substance:"mRNA"
+;[1041..1048]:substance:"enzymes"
+;[1061..1073]:substance:"progesterone"
+;[1085..1121]:cyp450:"cytochrome P450  side-chain cleavage"
+;[1123..1130]:cyp450:"P450scc"
+;[1136..1171]:substance:"3 beta-hydroxysteroid dehydrogenase"
+;[1173..1184]:substance:"3  beta-HSD"
+;[1193..1202]:substance:"estradiol"
+;[1215..1240]:cyp450:"cytochrome P450 aromatase"
+;[1242..1250]:cyp450:"P450arom"
+(SENT
+  (S
+    (NP-SBJ (DT:[916..917] A) (JJ:[918..924] second) (NN:[925..934] objective))
+    (VP (VBD:[935..938] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[938..938] *))
+        (VP (TO:[939..941] to)
+          (VP (VB:[942..951] determine)
+            (SBAR-ADV (IN:[953..955] if)
+              (S
+                (NP-SBJ (NN:[956..958] OT))
+                (VP (VBZ:[959..968] regulates)
+                  (NP (NN:[969..984] steroidogenesis))
+                  (PP-MNR (IN:[985..987] by)
+                    (NP
+                      (NP (NNS:[988..995] effects))
+                      (PP (IN:[996..998] on)
+                        (NP
+                          (NP (DT:[999..1002] the) (NNS:[1003..1009] levels))
+                          (PP (IN:[1010..1012] of)
+                            (NP (NN:[1013..1017] mRNA)))))))
+                  (PP (IN:[1018..1021] for)
+                    (NP
+                      (NP (DT:[1022..1025] the) (JJ:[1027..1040] steroidogenic)
+                          (NNS:[1041..1048] enzymes))
+                      (VP (VBN:[1049..1057] involved)
+                        (NP (-NONE-:[1057..1057] *))
+                        (PP-CLR
+                          (PP (IN:[1058..1060] in)
+                            (NP
+                              (NP (NN:[1061..1073] progesterone)
+                                  (NN:[1074..1083] synthesis))
+                              (,:[1083..1084] ,)
+                              (NP
+                                (NP
+                                  (NP
+                                    (NML (NN:[1085..1095] cytochrome)
+                                         (NN:[1096..1100] P450))
+                                    (NML (NN:[1102..1106] side)
+                                         (HYPH:[1106..1107] -)
+                                         (NN:[1107..1112] chain))
+                                    (NN:[1113..1121] cleavage))
+                                  (NP (-LRB-:[1122..1123] -LRB-)
+                                      (NN:[1123..1130] P450scc)
+                                      (-RRB-:[1130..1131] -RRB-)))
+                                (CC:[1132..1135] and)
+                                (NP
+                                  (NP (CD:[1136..1137] 3)
+                                      (NN:[1138..1157] beta-hydroxysteroid)
+                                      (NN:[1158..1171] dehydrogenase))
+                                  (NP (-LRB-:[1172..1173] -LRB-)
+                                     (CD:[1173..1174] 3)
+                                     (NN:[1176..1184] beta-HSD)
+                                    (-RRB-:[1184..1185] -RRB-))))))
+                          (,:[1185..1186] ,) (CC:[1187..1189] or)
+                          (PP (IN:[1190..1192] in)
+                            (NP
+                              (NP (NN:[1193..1202] estradiol)
+                                  (NN:[1203..1213] production))
+                              (,:[1213..1214] ,)
+                              (NP
+                                (NP
+                                  (NML (NN:[1215..1225] cytochrome)
+                                       (NN:[1226..1230] P450))
+                                  (NN:[1231..1240] aromatase))
+                                (NP (-LRB-:[1241..1242] -LRB-)
+                                    (NN:[1242..1250] P450arom)
+                                    (-RRB-:[1250..1251] -RRB-))))))))))))))))
+    (.:[1251..1252] .)))
+
+;sentence 8 Span:1254..1617
+;Granulosa cells were isolated from bovine preovulatory follicles and cultured
+; for 3 days with or without OT in medium supplemented with either insulin (1 
+;microgram/ml) + 1% fetal calf serum (FCS), which maintains basal estradiol 
+;secretion, or low doses of FSH (1 and 2 ng/ml) + 1% FCS, a culture condition 
+;that maximizes effects of FSH on estradiol secretion.
+;[1337..1338]:quantitative-value:"3"
+;[1339..1343]:quantitative-units:"days"
+;[1360..1362]:substance:"OT"
+;[1398..1405]:substance:"insulin"
+;[1407..1408]:quantitative-value:"1"
+;[1410..1422]:quantitative-units:"microgram/ml"
+;[1426..1428]:quantitative-value:"1%"
+;[1475..1484]:substance:"estradiol"
+;[1513..1516]:substance:"FSH"
+;[1518..1519]:quantitative-value:"1"
+;[1524..1525]:quantitative-value:"2"
+;[1526..1531]:quantitative-units:"ng/ml"
+;[1535..1537]:quantitative-value:"1%"
+;[1590..1593]:substance:"FSH"
+;[1597..1606]:substance:"estradiol"
+(SENT
+  (S
+    (NP-SBJ-4 (NN:[1254..1263] Granulosa) (NNS:[1264..1269] cells))
+    (VP (VBD:[1270..1274] were)
+      (VP
+        (VP (VBN:[1275..1283] isolated)
+          (NP-4 (-NONE-:[1283..1283] *))
+          (PP (IN:[1284..1288] from)
+            (NP (JJ:[1289..1295] bovine) (JJ:[1296..1308] preovulatory)
+                (NNS:[1309..1318] follicles))))
+        (CC:[1319..1322] and)
+        (VP (VBN:[1323..1331] cultured)
+          (NP-4 (-NONE-:[1331..1331] *))
+          (PP-TMP (IN:[1333..1336] for)
+            (NP (CD:[1337..1338] 3) (NNS:[1339..1343] days)))
+          (PP-MNR (IN:[1344..1348] with) (CC:[1349..1351] or)
+                  (IN:[1352..1359] without)
+            (NP (NN:[1360..1362] OT)))
+          (PP-LOC (IN:[1363..1365] in)
+            (NP
+              (NP (NN:[1366..1372] medium))
+              (VP (VBN:[1373..1385] supplemented)
+                (NP (-NONE-:[1385..1385] *))
+                (PP-MNR (IN:[1386..1390] with)
+                  (NP (CC:[1391..1397] either)
+                    (NP
+                      (NP
+                        (NP
+                          (NP (NN:[1398..1405] insulin))
+                          (PRN (-LRB-:[1406..1407] -LRB-)
+                            (NP
+                              (NP (CD:[1407..1408] 1)
+                                  (NN:[1410..1419] microgram))
+                              (PP (SYM:[1419..1420] /)
+                                (NP (NN:[1420..1422] ml))))
+                            (-RRB-:[1422..1423] -RRB-)))
+                        (PP (SYM:[1424..1425] +)
+                          (NP
+                            (NML (CD:[1426..1427] 1) (NN:[1427..1428] %))
+                            (NML
+                              (NML (JJ:[1429..1434] fetal)
+                                   (NN:[1435..1439] calf)
+                                   (NN:[1440..1445] serum))
+                              (NML (-LRB-:[1446..1447] -LRB-)
+                                   (NN:[1447..1450] FCS)
+                                   (-RRB-:[1450..1451] -RRB-))))))
+                      (,:[1451..1452] ,)
+                      (SBAR
+                        (WHNP-3 (WDT:[1453..1458] which))
+                        (S
+                          (NP-SBJ-3 (-NONE-:[1458..1458] *T*))
+                          (VP (VBZ:[1459..1468] maintains)
+                            (NP (JJ:[1469..1474] basal)
+                                (NN:[1475..1484] estradiol)
+                                (NN:[1486..1495] secretion))))))
+                    (,:[1495..1496] ,) (CC:[1497..1499] or)
+                    (NP
+                      (NP
+                        (NP
+                          (NP (JJ:[1500..1503] low) (NNS:[1504..1509] doses))
+                          (PP (IN:[1510..1512] of)
+                            (NP (NN:[1513..1516] FSH)))
+                          (PRN (-LRB-:[1517..1518] -LRB-)
+                            (NP
+                              (NP
+                                (NP (CD:[1518..1519] 1)
+                                  (NML-2 (-NONE-:[1519..1519] *P*)))
+                                (CC:[1520..1523] and)
+                                (NP (CD:[1524..1525] 2)
+                                  (NML-2 (NN:[1526..1528] ng))))
+                              (PP (SYM:[1528..1529] /)
+                                (NP (NN:[1529..1531] ml))))
+                            (-RRB-:[1531..1532] -RRB-)))
+                        (PP (SYM:[1533..1534] +)
+                          (NP
+                            (NML (CD:[1535..1536] 1) (NN:[1536..1537] %))
+                            (NN:[1538..1541] FCS))))
+                      (,:[1541..1542] ,)
+                      (NP
+                        (NP (DT:[1543..1544] a) (NN:[1545..1552] culture)
+                            (NN:[1553..1562] condition))
+                        (SBAR
+                          (WHNP-1 (WDT:[1564..1568] that))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[1568..1568] *T*))
+                            (VP (VBZ:[1569..1578] maximizes)
+                              (NP
+                                (NP (NNS:[1579..1586] effects))
+                                (PP (IN:[1587..1589] of)
+                                  (NP (NN:[1590..1593] FSH)))
+                                (PP (IN:[1594..1596] on)
+                                  (NP (NN:[1597..1606] estradiol)
+                                      (NN:[1607..1616] secretion)))))))))))))))))
+    (.:[1616..1617] .)))
+
+;sentence 9 Span:1618..1777
+;After the first day of  culture, OT stimulated progesterone (P < 0.01) and
+;inhibited estradiol  production (P < 0.01) in both control and FSH-treated
+;cultures.
+;[1651..1653]:substance:"OT"
+;[1665..1677]:substance:"progesterone"
+;[1703..1712]:substance:"estradiol"
+;[1756..1759]:substance:"FSH"
+(SENT
+  (S
+    (PP-TMP (IN:[1618..1623] After)
+      (NP
+        (NP (DT:[1624..1627] the) (JJ:[1628..1633] first) (NN:[1634..1637] day))
+        (PP (IN:[1638..1640] of)
+          (NP (NN:[1642..1649] culture)))))
+    (,:[1649..1650] ,)
+    (NP-SBJ (NN:[1651..1653] OT))
+    (VP
+      (VP (VBD:[1654..1664] stimulated)
+        (NP (NN:[1665..1677] progesterone))
+        (PRN (-LRB-:[1678..1679] -LRB-)
+          (S
+            (NP-SBJ (NN:[1679..1680] P))
+            (VP (SYM:[1681..1682] <)
+              (NP (CD:[1683..1687] 0.01))))
+          (-RRB-:[1687..1688] -RRB-)))
+      (CC:[1689..1692] and)
+      (VP (VBD:[1693..1702] inhibited)
+        (NP (NN:[1703..1712] estradiol) (NN:[1714..1724] production)
+          (PRN (-LRB-:[1725..1726] -LRB-)
+            (S
+              (NP-SBJ (NN:[1726..1727] P))
+              (VP (SYM:[1728..1729] <)
+                (NP (CD:[1730..1734] 0.01))))
+            (-RRB-:[1734..1735] -RRB-))))
+      (PP-LOC (IN:[1736..1738] in)
+        (NP (CC:[1739..1743] both)
+          (NP (NN:[1744..1751] control)
+            (NML-1 (-NONE-:[1751..1751] *P*)))
+          (CC:[1752..1755] and)
+          (NP
+            (ADJP (NN:[1756..1759] FSH) (HYPH:[1759..1760] -)
+                  (VBN:[1760..1767] treated))
+            (NML-1 (NNS:[1768..1776] cultures))))))
+    (.:[1776..1777] .)))
+
+;sentence 10 Span:1778..1916
+;In contrast, OT  had only a small stimulatory effect on the levels of mRNA
+;for P450scc and 3  beta-HSD and no effect on mRNA for P450arom.
+;[1791..1793]:substance:"OT"
+;[1848..1852]:substance:"mRNA"
+;[1857..1864]:cyp450:"P450scc"
+;[1869..1880]:substance:"3  beta-HSD"
+;[1898..1902]:substance:"mRNA"
+;[1907..1915]:cyp450:"P450arom"
+(SENT
+  (S
+    (PP (IN:[1778..1780] In)
+      (NP (NN:[1781..1789] contrast)))
+    (,:[1789..1790] ,)
+    (NP-SBJ (NN:[1791..1793] OT))
+    (VP (VBD:[1795..1798] had)
+      (NP
+        (NP
+          (NP (RB:[1799..1803] only) (DT:[1804..1805] a) (JJ:[1806..1811] small)
+              (JJ:[1812..1823] stimulatory) (NN:[1824..1830] effect))
+          (PP (IN:[1831..1833] on)
+            (NP
+              (NP (DT:[1834..1837] the) (NNS:[1838..1844] levels))
+              (PP (IN:[1845..1847] of)
+                (NP (NN:[1848..1852] mRNA)))))
+          (PP (IN:[1853..1856] for)
+            (NP
+              (NP (NN:[1857..1864] P450scc))
+              (CC:[1865..1868] and)
+              (NP (CD:[1869..1870] 3) (NN:[1872..1880] beta-HSD)))))
+        (CC:[1881..1884] and)
+        (NP
+          (NP (DT:[1885..1887] no) (NN:[1888..1894] effect))
+          (PP (IN:[1895..1897] on)
+            (NP (NN:[1898..1902] mRNA)))
+          (PP (IN:[1903..1906] for)
+            (NP (NN:[1907..1915] P450arom))))))
+    (.:[1915..1916] .)))
+
+;sentence 11 Span:1917..2259
+;These findings suggest that: (1) OT  plays an autocrine role in regulating
+;the follicular luteal phase shift in  steroidogenesis by both increasing
+;progesterone and inhibiting estradiol  production and (2) the differential
+;effects of OT on steroid production are not  mediated primarily by effects on
+;levels of mRNA for steroidogenic enzymes.
+;[1950..1952]:substance:"OT"
+;[2065..2077]:substance:"progesterone"
+;[2093..2102]:substance:"estradiol"
+;[2151..2153]:substance:"OT"
+;[2157..2164]:substance:"steroid"
+;[2228..2232]:substance:"mRNA"
+;[2251..2258]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ (DT:[1917..1922] These) (NNS:[1923..1931] findings))
+    (VP (VBP:[1932..1939] suggest)
+      (SBAR (IN:[1940..1944] that) (::[1944..1945] :)
+        (S
+          (S
+            (LST (LS:[1946..1949] -LRB-1-RRB-))
+            (NP-SBJ-2 (NN:[1950..1952] OT))
+            (VP (VBZ:[1954..1959] plays)
+              (NP (DT:[1960..1962] an) (JJ:[1963..1972] autocrine)
+                  (NN:[1973..1977] role))
+              (PP (IN:[1978..1980] in)
+                (S-NOM
+                  (NP-SBJ-2 (-NONE-:[1980..1980] *))
+                  (VP (VBG:[1981..1991] regulating)
+                    (NP (DT:[1992..1995] the) (JJ:[1996..2006] follicular)
+                        (JJ:[2007..2013] luteal) (NN:[2014..2019] phase)
+                        (NN:[2020..2025] shift))
+                    (PP (IN:[2026..2028] in)
+                      (NP (NN:[2030..2045] steroidogenesis))))))
+              (PP-MNR (IN:[2046..2048] by)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[2048..2048] *))
+                  (VP (CC:[2049..2053] both)
+                    (VP (VBG:[2054..2064] increasing)
+                      (NP (NN:[2065..2077] progesterone)))
+                    (CC:[2078..2081] and)
+                    (VP (VBG:[2082..2092] inhibiting)
+                      (NP (NN:[2093..2102] estradiol)
+                          (NN:[2104..2114] production))))))))
+          (CC:[2115..2118] and)
+          (S
+            (LST (LS:[2119..2122] -LRB-2-RRB-))
+            (NP-SBJ-1
+              (NP (DT:[2123..2126] the) (JJ:[2127..2139] differential)
+                  (NNS:[2140..2147] effects))
+              (PP (IN:[2148..2150] of)
+                (NP (NN:[2151..2153] OT)))
+              (PP (IN:[2154..2156] on)
+                (NP (NN:[2157..2164] steroid) (NN:[2165..2175] production))))
+            (VP (VBP:[2176..2179] are) (RB:[2180..2183] not)
+              (VP (VBN:[2185..2193] mediated)
+                (NP-1 (-NONE-:[2193..2193] *))
+                (ADVP (RB:[2194..2203] primarily))
+                (PP (IN:[2204..2206] by)
+                  (NP-LGS
+                    (NP (NNS:[2207..2214] effects))
+                    (PP (IN:[2215..2217] on)
+                      (NP
+                        (NP (NNS:[2218..2224] levels))
+                        (PP (IN:[2225..2227] of)
+                          (NP (NN:[2228..2232] mRNA)))))))
+                (PP (IN:[2233..2236] for)
+                  (NP (JJ:[2237..2250] steroidogenic) (NNS:[2251..2258] enzymes)))))))))
+    (.:[2258..2259] .)))
+
+;section 12 Span:2263..2307
+;PMID: 8647319 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2263..2267] PMID) (::[2267..2268] :) (CD:[2269..2276] 8647319)
+        (-LRB-:[2277..2278] -LSB-) (NNP:[2278..2284] PubMed)
+        (HYPH:[2285..2286] -) (NN:[2287..2294] indexed) (IN:[2295..2298] for)
+        (NNP:[2299..2306] MEDLINE) (-RRB-:[2306..2307] -RSB-)))

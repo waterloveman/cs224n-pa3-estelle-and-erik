@@ -1,0 +1,436 @@
+;PMID: 10958767
+;source_file_733.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..191] = [t:42..191]
+;2)section:[e:195..271] = [t:195..271]
+;3)section:[e:275..402] = [t:275..402]
+;4)sentence:[e:406..521] = [t:406..521]
+;5)sentence:[e:522..623] = [t:522..623]
+;6)sentence:[e:624..929] = [t:624..929]
+;7)sentence:[e:930..1049] = [t:930..1049]
+;8)sentence:[e:1050..1119] = [t:1050..1119]
+;9)sentence:[e:1121..1237] = [t:1121..1237]
+;10)sentence:[e:1238..1373] = [t:1238..1373]
+;11)sentence:[e:1374..1455] = [t:1374..1455]
+;12)sentence:[e:1456..1520] = [t:1456..1520]
+;13)sentence:[e:1521..1674] = [t:1521..1674]
+;14)sentence:[e:1675..1779] = [t:1675..1779]
+;15)section:[e:1783..1828] = [t:1783..1828]
+
+;section 0 Span:0..37
+;Eur J Med Res  2000 Aug 18;5(8):341-6
+(SEC
+  (FRAG (NNP:[0..3] Eur) (NNP:[4..5] J) (NNP:[6..9] Med) (NNP:[10..13] Res)
+        (CD:[15..19] 2000) (.:[20..23] Aug) (::[24..29] 18;5-LRB-)
+        (CD:[29..30] 8) (-RRB-:[30..31] -RRB-) (CD:[31..35] :341) (::[35..36] -)
+        (CD:[36..37] 6)))
+
+;sentence 1 Span:42..191
+;Detection of K-ras and p53 mutations in bronchoscopically obtained malignant
+;and  non-malignant tissue from patients with non-small cell lung cancer.
+;[55..60]:gene-rna:"K-ras"
+;[65..68]:gene-rna:"p53"
+;[109..118]:malignancy:"malignant"
+;[164..190]:malignancy:"non-small cell lung cancer"
+(SENT
+  (NP-HLN
+    (NP (NN:[42..51] Detection))
+    (PP (IN:[52..54] of)
+      (NP
+        (NP (NN:[55..60] K-ras)
+          (NML-3 (-NONE-:[60..60] *P*)))
+        (CC:[61..64] and)
+        (NP (NN:[65..68] p53)
+          (NML-3 (NNS:[69..78] mutations)))))
+    (PP-LOC (IN:[79..81] in)
+      (NP
+        (NP
+          (ADJP-2 (RB:[82..99] bronchoscopically) (VBN:[100..108] obtained))
+          (JJ:[109..118] malignant)
+          (NML-1 (-NONE-:[118..118] *P*)))
+        (CC:[119..122] and)
+        (NP
+          (ADJP-2 (-NONE-:[122..122] *P*))
+          (ADJP (AFX:[124..127] non) (HYPH:[127..128] -)
+                (JJ:[128..137] malignant))
+          (NML-1 (NN:[138..144] tissue)))))
+    (PP (IN:[145..149] from)
+      (NP
+        (NP (NNS:[150..158] patients))
+        (PP (IN:[159..163] with)
+          (NP
+            (NML (AFX:[164..167] non) (HYPH:[167..168] -)
+              (NML (JJ:[168..173] small) (NN:[174..178] cell)))
+            (NN:[179..183] lung) (NN:[184..190] cancer)))))
+    (.:[190..191] .)))
+
+;section 2 Span:195..271
+;Lang SM, Stratakis DF, Freudling A, Ebelt K, Oduncu F, Hautmann H, Huber RM.
+(SEC
+  (FRAG (NNP:[195..199] Lang) (NNP:[200..202] SM) (,:[202..203] ,)
+        (NNP:[204..213] Stratakis) (NNP:[214..216] DF) (,:[216..217] ,)
+        (NNP:[218..227] Freudling) (NNP:[228..229] A) (,:[229..230] ,)
+        (NNP:[231..236] Ebelt) (NNP:[237..238] K) (,:[238..239] ,)
+        (NNP:[240..246] Oduncu) (NNP:[247..248] F) (,:[248..249] ,)
+        (NNP:[250..258] Hautmann) (NNP:[259..260] H) (,:[260..261] ,)
+        (NNP:[262..267] Huber) (NNP:[268..270] RM) (.:[270..271] .)))
+
+;section 3 Span:275..402
+;Medizinische Klinik Innenstadt, Universitat Munchen, Ziemssenstr.1, D-80336 
+;Munchen, Germany. slang@medinn.med.uni-muenchen.de
+(SEC
+  (FRAG (NNP:[275..287] Medizinische) (NNP:[288..294] Klinik)
+        (NNP:[295..305] Innenstadt) (,:[305..306] ,)
+        (NNP:[307..318] Universitat) (NNP:[319..326] Munchen) (,:[326..327] ,)
+        (NNP:[328..341] Ziemssenstr.1) (,:[341..342] ,) (NNP:[343..345] D-)
+        (CD:[345..350] 80336) (NNP:[352..359] Munchen) (,:[359..360] ,)
+        (NNP:[361..368] Germany) (.:[368..369] .) ('':[370..382] slang@medinn)
+        (VBD:[382..386] .med) (SYM:[386..390] .uni) (::[390..391] -)
+        (VBN:[391..399] muenchen) (.:[399..402] .de)))
+
+;sentence 4 Span:406..521
+;Molecular screening may increase the likelihood to identify early malignant 
+;lesions in non-small cell lung cancer.
+;[472..520]:malignancy:"malignant  lesions in non-small cell lung cancer"
+(SENT
+  (S
+    (NP-SBJ (JJ:[406..415] Molecular) (NN:[416..425] screening))
+    (VP (MD:[426..429] may)
+      (VP (VB:[430..438] increase)
+        (NP
+          (NP (DT:[439..442] the) (NN:[443..453] likelihood))
+          (SBAR
+            (WHNP-1 (-NONE-:[453..453] 0))
+            (S
+              (NP-SBJ-1 (-NONE-:[453..453] *T*))
+              (VP (TO:[454..456] to)
+                (VP (VB:[457..465] identify)
+                  (NP (JJ:[466..471] early) (JJ:[472..481] malignant)
+                      (NNS:[483..490] lesions))
+                  (PP (IN:[491..493] in)
+                    (NP
+                      (NML (AFX:[494..497] non) (HYPH:[497..498] -)
+                        (NML (JJ:[498..503] small) (NN:[504..508] cell)))
+                      (NN:[509..513] lung) (NN:[514..520] cancer))))))))))
+    (.:[520..521] .)))
+
+;sentence 5 Span:522..623
+;However the presence of gene mutations in  non-malignant bronchial tissue has
+;remained controversial.
+(SENT
+  (S
+    (ADVP (RB:[522..529] However))
+    (NP-SBJ
+      (NP (DT:[530..533] the) (NN:[534..542] presence))
+      (PP (IN:[543..545] of)
+        (NP (NN:[546..550] gene) (NNS:[551..560] mutations)))
+      (PP (IN:[561..563] in)
+        (NP
+          (ADJP (AFX:[565..568] non) (HYPH:[568..569] -)
+                (JJ:[569..578] malignant))
+          (JJ:[579..588] bronchial) (NN:[589..595] tissue))))
+    (VP (VBZ:[596..599] has)
+      (VP (VBN:[600..608] remained)
+        (ADJP-PRD (JJ:[609..622] controversial))))
+    (.:[622..623] .)))
+
+;sentence 6 Span:624..929
+;The present study was  carried out to investigate systematically the presence
+;of mutations of the K-ras  and p53 gene in bronchial biopsies taken during
+;routine bronchoscopy of normal  as well as tumour tissues from a series of 40
+;patients with histologically  verified non-small cell lung cancer (NSCLC).
+;[722..727]:gene-rna:"K-ras"
+;[733..736]:gene-rna:"p53"
+;[820..834]:malignancy:"tumour tissues"
+;[894..920]:malignancy:"non-small cell lung cancer"
+;[922..927]:malignancy:"NSCLC"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[624..627] The) (JJ:[628..635] present) (NN:[636..641] study))
+    (VP (VBD:[642..645] was)
+      (VP (VBN:[647..654] carried)
+        (NP-3 (-NONE-:[654..654] *))
+        (PRT (RP:[655..658] out))
+        (S-PRP
+          (NP-SBJ (-NONE-:[658..658] *))
+          (VP (TO:[659..661] to)
+            (VP (VB:[662..673] investigate)
+              (ADVP-MNR (RB:[674..688] systematically))
+              (NP
+                (NP (DT:[689..692] the) (NN:[693..701] presence))
+                (PP (IN:[702..704] of)
+                  (NP
+                    (NP (NNS:[705..714] mutations))
+                    (PP (IN:[715..717] of)
+                      (NP (DT:[718..721] the)
+                        (NML
+                          (NML (NN:[722..727] K-ras)
+                            (NML-2 (-NONE-:[727..727] *P*)))
+                          (CC:[729..732] and)
+                          (NML (NN:[733..736] p53)
+                            (NML-2 (NN:[737..741] gene)))))))))
+              (PP-LOC (IN:[742..744] in)
+                (NP
+                  (NP (JJ:[745..754] bronchial) (NNS:[755..763] biopsies))
+                  (VP (VBN:[764..769] taken)
+                    (NP (-NONE-:[769..769] *))
+                    (PP (IN:[770..776] during)
+                      (NP
+                        (NP (JJ:[777..784] routine) (NN:[785..797] bronchoscopy))
+                        (PP (IN:[798..800] of)
+                          (NP
+                            (NP
+                              (NP (JJ:[801..807] normal)
+                                (NML-1 (-NONE-:[807..807] *P*)))
+                              (CONJP (RB:[809..811] as) (RB:[812..816] well)
+                                     (IN:[817..819] as))
+                              (NP (NN:[820..826] tumour)
+                                (NML-1 (NNS:[827..834] tissues))))
+                            (PP (IN:[835..839] from)
+                              (NP
+                                (NP (DT:[840..841] a) (NN:[842..848] series))
+                                (PP (IN:[849..851] of)
+                                  (NP
+                                    (NP (CD:[852..854] 40)
+                                        (NNS:[855..863] patients))
+                                    (PP (IN:[864..868] with)
+                                      (NP
+                                        (ADJP (RB:[869..883] histologically)
+                                              (VBN:[885..893] verified))
+                                        (NML
+                                          (NML
+                                            (NML (AFX:[894..897] non)
+                                                 (HYPH:[897..898] -)
+                                              (NML (JJ:[898..903] small)
+                                                   (NN:[904..908] cell)))
+                                            (NN:[909..913] lung)
+                                             (NN:[914..920] cancer))
+                                          (NML (-LRB-:[921..922] -LRB-)
+                                               (NN:[922..927] NSCLC)
+                                               (-RRB-:[927..928] -RRB-)))))))))))))))))))))
+    (.:[928..929] .)))
+
+;sentence 7 Span:930..1049
+;K-ras mutations were analysed with  specific detection oligonucleotides, p53
+;mutations were examined by SSCP  analysis.
+;[930..935]:gene-rna:"K-ras"
+;[1003..1006]:gene-rna:"p53"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[930..935] K-ras) (NNS:[936..945] mutations))
+      (VP (VBD:[946..950] were)
+        (VP (VBN:[951..959] analysed)
+          (NP-2 (-NONE-:[959..959] *))
+          (PP-MNR (IN:[960..964] with)
+            (NP (JJ:[966..974] specific) (NN:[975..984] detection)
+                (NNS:[985..1001] oligonucleotides))))))
+    (,:[1001..1002] ,)
+    (S
+      (NP-SBJ-1 (NN:[1003..1006] p53) (NNS:[1007..1016] mutations))
+      (VP (VBD:[1017..1021] were)
+        (VP (VBN:[1022..1030] examined)
+          (NP-1 (-NONE-:[1030..1030] *))
+          (PP-MNR (IN:[1031..1033] by)
+            (NP (NN:[1034..1038] SSCP) (NN:[1040..1048] analysis))))))
+    (.:[1048..1049] .)))
+
+;sentence 8 Span:1050..1119
+;In all biopsies the wildtype of both K-ras and p53 could be detected.
+;[1087..1092]:gene-rna:"K-ras"
+;[1097..1100]:gene-rna:"p53"
+(SENT
+  (S
+    (PP (IN:[1050..1052] In)
+      (NP (DT:[1053..1056] all) (NNS:[1057..1065] biopsies)))
+    (NP-SBJ-1
+      (NP (DT:[1066..1069] the) (NN:[1070..1078] wildtype))
+      (PP (IN:[1079..1081] of)
+        (NP (CC:[1082..1086] both) (NN:[1087..1092] K-ras) (CC:[1093..1096] and)
+            (NN:[1097..1100] p53))))
+    (VP (MD:[1101..1106] could)
+      (VP (VB:[1107..1109] be)
+        (VP (VBN:[1110..1118] detected)
+          (NP-1 (-NONE-:[1118..1118] *)))))
+    (.:[1118..1119] .)))
+
+;sentence 9 Span:1121..1237
+;The overall frequency of mutations was 14 (35%) with 2 K-ras mutations (5%)
+;and  12 mutations of the p53 gene (30%).
+;[1176..1181]:gene-rna:"K-ras"
+;[1222..1225]:gene-rna:"p53"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1121..1124] The) (JJ:[1125..1132] overall)
+          (NN:[1133..1142] frequency))
+      (PP (IN:[1143..1145] of)
+        (NP (NNS:[1146..1155] mutations))))
+    (VP (VBD:[1156..1159] was)
+      (NP-PRD (CD:[1160..1162] 14)
+        (PRN (-LRB-:[1163..1164] -LRB-)
+          (NP (CD:[1164..1166] 35) (NN:[1166..1167] %))
+          (-RRB-:[1167..1168] -RRB-)))
+      (PP (IN:[1169..1173] with)
+        (NP
+          (NP (CD:[1174..1175] 2) (NN:[1176..1181] K-ras)
+              (NNS:[1182..1191] mutations)
+            (PRN (-LRB-:[1192..1193] -LRB-)
+              (NP (CD:[1193..1194] 5) (NN:[1194..1195] %))
+              (-RRB-:[1195..1196] -RRB-)))
+          (CC:[1197..1200] and)
+          (NP
+            (NP (CD:[1202..1204] 12) (NNS:[1205..1214] mutations))
+            (PP (IN:[1215..1217] of)
+              (NP (DT:[1218..1221] the) (NN:[1222..1225] p53)
+                  (NN:[1226..1230] gene)
+                (PRN (-LRB-:[1231..1232] -LRB-)
+                  (NP (CD:[1232..1234] 30) (NN:[1234..1235] %))
+                  (-RRB-:[1235..1236] -RRB-))))))))
+    (.:[1236..1237] .)))
+
+;sentence 10 Span:1238..1373
+;In 3 cases (1 ras mutation, 2 p53 mutations)  the same mutation could be
+;shown in the tumour biopsy and in the distant normal  control.
+;[1252..1255]:gene-rna:"ras"
+;[1268..1271]:gene-rna:"p53"
+(SENT
+  (S
+    (PP (IN:[1238..1240] In)
+      (NP (CD:[1241..1242] 3) (NNS:[1243..1248] cases)
+        (PRN (-LRB-:[1249..1250] -LRB-)
+          (NP
+            (NP (CD:[1250..1251] 1) (NN:[1252..1255] ras)
+                (NN:[1256..1264] mutation))
+            (,:[1264..1265] ,)
+            (NP (CD:[1266..1267] 2) (NN:[1268..1271] p53)
+                (NNS:[1272..1281] mutations)))
+          (-RRB-:[1281..1282] -RRB-))))
+    (NP-SBJ-1 (DT:[1284..1287] the) (JJ:[1288..1292] same)
+              (NN:[1293..1301] mutation))
+    (VP (MD:[1302..1307] could)
+      (VP (VB:[1308..1310] be)
+        (VP (VBN:[1311..1316] shown)
+          (NP-1 (-NONE-:[1316..1316] *))
+          (PP-LOC
+            (PP (IN:[1317..1319] in)
+              (NP (DT:[1320..1323] the) (NN:[1324..1330] tumour)
+                  (NN:[1331..1337] biopsy)))
+            (CC:[1338..1341] and)
+            (PP (IN:[1342..1344] in)
+              (NP (DT:[1345..1348] the) (JJ:[1349..1356] distant)
+                  (JJ:[1357..1363] normal) (NN:[1365..1372] control)))))))
+    (.:[1372..1373] .)))
+
+;sentence 11 Span:1374..1455
+;In another case only the normal appearing tissue had a mutation of the  p53
+;gene.
+;[1446..1449]:gene-rna:"p53"
+(SENT
+  (S
+    (PP (IN:[1374..1376] In)
+      (NP (DT:[1377..1384] another) (NN:[1385..1389] case)))
+    (NP-SBJ (RB:[1390..1394] only) (DT:[1395..1398] the)
+      (ADJP (RB:[1399..1405] normal) (VBG:[1406..1415] appearing))
+      (NN:[1416..1422] tissue))
+    (VP (VBD:[1423..1426] had)
+      (NP
+        (NP (DT:[1427..1428] a) (NN:[1429..1437] mutation))
+        (PP (IN:[1438..1440] of)
+          (NP (DT:[1441..1444] the) (NN:[1446..1449] p53) (NN:[1450..1454] gene)))))
+    (.:[1454..1455] .)))
+
+;sentence 12 Span:1456..1520
+;All other mutations could be detected in the tumour tissue only.
+;[1501..1514]:malignancy:"tumour tissue"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1456..1459] All) (JJ:[1460..1465] other)
+              (NNS:[1466..1475] mutations))
+    (VP (MD:[1476..1481] could)
+      (VP (VB:[1482..1484] be)
+        (VP (VBN:[1485..1493] detected)
+          (NP-1 (-NONE-:[1493..1493] *))
+          (PP (IN:[1494..1496] in)
+            (NP (DT:[1497..1500] the)
+               (NN:[1501..1507] tumour) (NN:[1508..1514] tissue)
+              (RB:[1515..1519] only))))))
+    (.:[1519..1520] .)))
+
+;sentence 13 Span:1521..1674
+;Our  data confirm that K-ras mutations and p53 can be detected not only in
+;malignant  but also in non-malignant bioptic samples from patients with
+;NSCLC.
+;[1544..1549]:gene-rna:"K-ras"
+;[1564..1567]:gene-rna:"p53"
+;[1596..1605]:malignancy:"malignant"
+;[1668..1673]:malignancy:"NSCLC"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1521..1524] Our) (NNS:[1526..1530] data))
+    (VP (VBP:[1531..1538] confirm)
+      (SBAR (IN:[1539..1543] that)
+        (S
+          (NP-SBJ-3
+            (NP (NN:[1544..1549] K-ras) (NNS:[1550..1559] mutations))
+            (CC:[1560..1563] and)
+            (NP (NN:[1564..1567] p53)))
+          (VP (MD:[1568..1571] can)
+            (VP (VB:[1572..1574] be)
+              (VP (VBN:[1575..1583] detected)
+                (NP-3 (-NONE-:[1583..1583] *))
+                (PP-LOC
+                  (CONJP (RB:[1584..1587] not) (RB:[1588..1592] only))
+                  (PP (IN:[1593..1595] in)
+                    (NP
+                      (NP (JJ:[1596..1605] malignant)
+                        (NML-1 (-NONE-:[1605..1605] *RNR*)))
+                      (PP-2 (-NONE-:[1605..1605] *RNR*))))
+                  (CONJP (CC:[1607..1610] but) (RB:[1611..1615] also))
+                  (PP (IN:[1616..1618] in)
+                    (NP
+                      (NP
+                        (ADJP (AFX:[1619..1622] non) (HYPH:[1622..1623] -)
+                              (JJ:[1623..1632] malignant))
+                        (NML-1 (-NONE-:[1632..1632] *RNR*)))
+                      (PP-2 (-NONE-:[1632..1632] *RNR*))))
+                  (NML-1 (JJ:[1633..1640] bioptic) (NNS:[1641..1648] samples))
+                  (PP-2 (IN:[1649..1653] from)
+                    (NP
+                      (NP (NNS:[1654..1662] patients))
+                      (PP (IN:[1663..1667] with)
+                        (NP (NN:[1668..1673] NSCLC))))))))))))
+    (.:[1673..1674] .)))
+
+;sentence 14 Span:1675..1779
+;The use of  molecular screening for the early detection of lung cancer may be
+;a promising  new approach.
+;[1734..1745]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1675..1678] The) (NN:[1679..1682] use))
+      (PP (IN:[1683..1685] of)
+        (NP (JJ:[1687..1696] molecular) (NN:[1697..1706] screening)))
+      (PP (IN:[1707..1710] for)
+        (NP
+          (NP (DT:[1711..1714] the) (JJ:[1715..1720] early)
+              (NN:[1721..1730] detection))
+          (PP (IN:[1731..1733] of)
+            (NP (NN:[1734..1738] lung) (NN:[1739..1745] cancer))))))
+    (VP (MD:[1746..1749] may)
+      (VP (VB:[1750..1752] be)
+        (NP-PRD (DT:[1753..1754] a) (JJ:[1755..1764] promising)
+                (JJ:[1766..1769] new) (NN:[1770..1778] approach))))
+    (.:[1778..1779] .)))
+
+;section 15 Span:1783..1828
+;PMID: 10958767 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1783..1787] PMID) (::[1787..1788] :) (CD:[1789..1797] 10958767)
+        (NN:[1798..1799] -LSB-) (NNP:[1799..1805] PubMed) (::[1806..1807] -)
+        (NN:[1808..1815] indexed) (IN:[1816..1819] for)
+        (NNP:[1820..1828] MEDLINE-RSB-)))

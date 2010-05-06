@@ -1,0 +1,314 @@
+;PMID: 9893662
+;source_file_2870.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..205] = [t:45..205]
+;2)section:[e:209..252] = [t:209..252]
+;3)section:[e:256..356] = [t:256..356]
+;4)sentence:[e:360..631] = [t:360..631]
+;5)sentence:[e:632..901] = [t:632..901]
+;6)sentence:[e:902..1003] = [t:902..1003]
+;7)sentence:[e:1004..1141] = [t:1004..1141]
+;8)sentence:[e:1143..1268] = [t:1143..1268]
+;9)sentence:[e:1269..1340] = [t:1269..1340]
+;10)section:[e:1344..1388] = [t:1344..1388]
+
+;section 0 Span:0..39
+;Eur J Cancer.  1998 Oct;34(11):1736-40.
+(SEC
+  (FRAG (NNP:[0..3] Eur) (NNP:[4..5] J) (NNP:[6..12] Cancer) (.:[12..13] .)
+        (CD:[15..19] 1998) (CC:[20..27] Oct;34-LRB-) (CD:[27..29] 11)
+        (-RRB-:[29..30] -RRB-) (CD:[30..38] :1736-40) (.:[38..39] .)))
+
+;sentence 1 Span:45..205
+;Modulation of the proteolytic balance plasminogen activator/plasminogen 
+;activator inhibitor by enhanced N-myc oncogene expression or application of 
+;genistein.
+;[83..104]:gene-protein:"plasminogen activator"
+;[105..137]:gene-protein:"plasminogen  activator inhibitor"
+;[150..155]:gene-rna:"N-myc"
+(SENT
+  (NP-HLN
+    (NP (NN:[45..55] Modulation))
+    (PP (IN:[56..58] of)
+      (NP
+        (NP (DT:[59..62] the) (JJ:[63..74] proteolytic) (NN:[75..82] balance))
+        (NP
+          (NP (NN:[83..94] plasminogen) (NN:[95..104] activator))
+          (SYM:[104..105] /)
+          (NP (NN:[105..116] plasminogen) (NN:[118..127] activator)
+              (NN:[128..137] inhibitor)))))
+    (PP (IN:[138..140] by)
+      (NP
+        (NP (VBN:[141..149] enhanced) (NN:[150..155] N-myc)
+            (NN:[156..164] oncogene) (NN:[165..175] expression))
+        (CC:[176..178] or)
+        (NP
+          (NP (NN:[179..190] application))
+          (PP (IN:[191..193] of)
+            (NP (NN:[195..204] genistein))))))
+    (.:[204..205] .)))
+
+;section 2 Span:209..252
+;Garcia de Veas R, Schweigerer L, Medina MA.
+(SEC
+  (FRAG (NNP:[209..215] Garcia) (IN:[216..218] de) (NNP:[219..223] Veas)
+        (NNP:[224..225] R) (,:[225..226] ,) (NNP:[227..238] Schweigerer)
+        (NNP:[239..241] L,) (NNP:[242..248] Medina) (NNP:[249..252] MA.)))
+
+;section 3 Span:256..356
+;Laboratorio de Bioquimica y Biologia Molecular, Facultad de Ciencias, 
+;Universidad de Malaga, Spain.
+(SEC
+  (FRAG (NNP:[256..267] Laboratorio) (IN:[268..270] de)
+        (NNP:[271..281] Bioquimica) (NNP:[282..283] y) (NNP:[284..292] Biologia)
+        (NNP:[293..302] Molecular) (,:[302..303] ,) (NNP:[304..312] Facultad)
+        (IN:[313..315] de) (NNP:[316..324] Ciencias) (,:[324..325] ,)
+        (NNP:[327..338] Universidad) (IN:[339..341] de) (NNP:[342..348] Malaga)
+        (,:[348..349] ,) (NNP:[350..355] Spain) (.:[355..356] .)))
+
+;sentence 4 Span:360..631
+;The aim of this study was to determine whether enhanced expression of N-myc
+;in a  neuroblastoma cell line affects the balance of plasminogen
+;activator/plasminogen  activator inhibitor (PA/PAI), a shift towards
+;proteolysis having been observed  in other malignant tissues.
+;[430..435]:gene-rna:"N-myc"
+;[442..455]:malignancy-type:"neuroblastoma"
+;[489..510]:gene-protein:"plasminogen activator"
+;[511..543]:gene-protein:"plasminogen  activator inhibitor"
+;[545..547]:gene-protein:"PA"
+;[548..551]:gene-protein:"PAI"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[360..363] The) (NN:[364..367] aim))
+      (PP (IN:[368..370] of)
+        (NP (DT:[371..375] this) (NN:[376..381] study))))
+    (VP (VBD:[382..385] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[385..385] *))
+        (VP (TO:[386..388] to)
+          (VP (VB:[389..398] determine)
+            (SBAR (IN:[399..406] whether)
+              (S
+                (NP-SBJ
+                  (NP (VBN:[407..415] enhanced) (NN:[416..426] expression))
+                  (PP (IN:[427..429] of)
+                    (NP (NN:[430..435] N-myc)))
+                  (PP (IN:[436..438] in)
+                    (NP (DT:[439..440] a) (NN:[442..455] neuroblastoma)
+                        (NN:[456..460] cell) (NN:[461..465] line))))
+                (VP (VBZ:[466..473] affects)
+                  (NP
+                    (NP (DT:[474..477] the) (NN:[478..485] balance))
+                    (PP (IN:[486..488] of)
+                      (NP
+                        (NP
+                          (NP (NN:[489..500] plasminogen)
+                              (NN:[501..510] activator))
+                          (SYM:[510..511] /)
+                          (NP (NN:[511..522] plasminogen)
+                              (NN:[524..533] activator)
+                              (NN:[534..543] inhibitor)))
+                        (NP (-LRB-:[544..545] -LRB-) (NN:[545..547] PA)
+                            (SYM:[547..548] /) (NN:[548..551] PAI)
+                            (-RRB-:[551..552] -RRB-)))))
+                  (,:[552..553] ,)
+                  (S-ADV
+                    (NP-SBJ-1
+                      (NP (DT:[554..555] a) (NN:[556..561] shift))
+                      (PP (IN:[562..569] towards)
+                        (NP (NN:[570..581] proteolysis))))
+                    (VP (VBG:[582..588] having)
+                      (VP (VBN:[589..593] been)
+                        (VP (VBN:[594..602] observed)
+                          (NP-1 (-NONE-:[602..602] *))
+                          (PP (IN:[604..606] in)
+                            (NP (JJ:[607..612] other) (JJ:[613..622] malignant)
+                                (NNS:[623..630] tissues))))))))))))))
+    (.:[630..631] .)))
+
+;sentence 5 Span:632..901
+;Two transfected neuroblastoma cell lines with (WAC2  cells) or without
+;(SH-EP007 cells) enhanced expression of the N-myc oncogene  were examined by
+;zymography and RNA extraction to determine UPA and PAI enzyme  activity and
+;uPA RNA and PAI RNA expression, respectively.
+;[648..661]:malignancy-type:"neuroblastoma"
+;[747..752]:gene-rna:"N-myc"
+;[823..826]:gene-protein:"UPA"
+;[831..834]:gene-protein:"PAI"
+;[856..859]:gene-rna:"uPA"
+;[868..871]:gene-rna:"PAI"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (CD:[632..635] Two) (VBN:[636..647] transfected)
+          (NN:[648..661] neuroblastoma) (NN:[662..666] cell)
+          (NNS:[667..672] lines))
+      (PP
+        (PP (IN:[673..677] with)
+          (NP
+            (PRN (-LRB-:[678..679] -LRB-) (NN:[679..683] WAC2)
+                 (NNS:[685..690] cells) (-RRB-:[690..691] -RRB-))
+            (NML-1 (-NONE-:[691..691] *RNR*))))
+        (CC:[692..694] or)
+        (PP (IN:[695..702] without)
+          (NP
+            (PRN (-LRB-:[703..704] -LRB-) (NN:[704..712] SH-EP007)
+                 (NNS:[713..718] cells) (-RRB-:[718..719] -RRB-))
+            (NML-1 (-NONE-:[719..719] *RNR*))))
+        (NML-1
+          (NP (VBN:[720..728] enhanced) (NN:[729..739] expression))
+          (PP (IN:[740..742] of)
+            (NP (DT:[743..746] the) (NN:[747..752] N-myc)
+                (NN:[753..761] oncogene))))))
+    (VP (VBD:[763..767] were)
+      (VP (VBN:[768..776] examined)
+        (NP-2 (-NONE-:[776..776] *))
+        (PP-MNR (IN:[777..779] by)
+          (NP (NN:[780..790] zymography) (CC:[791..794] and) (NN:[795..798] RNA)
+              (NN:[799..809] extraction)))
+        (S-PRP
+          (NP-SBJ (-NONE-:[809..809] *))
+          (VP (TO:[810..812] to)
+            (VP (VB:[813..822] determine)
+              (NP
+                (NP
+                  (NP (NN:[823..826] UPA)
+                    (NML-3 (-NONE-:[826..826] *P*)))
+                  (CC:[827..830] and)
+                  (NP (NN:[831..834] PAI)
+                    (NML-3 (NN:[835..841] enzyme) (NN:[843..851] activity))))
+                (CC:[852..855] and)
+                (NP
+                  (NP (NN:[856..859] uPA) (NN:[860..863] RNA)
+                    (NML-4 (-NONE-:[863..863] *P*)))
+                  (CC:[864..867] and)
+                  (NP (NN:[868..871] PAI) (NN:[872..875] RNA)
+                    (NML-4 (NN:[876..886] expression)))))
+              (,:[886..887] ,)
+              (ADVP (RB:[888..900] respectively)))))))
+    (.:[900..901] .)))
+
+;sentence 6 Span:902..1003
+;The effect of  genistein, an inhibitor of tyrosine protein kinase, on uPA/PAI
+;was also  investigated.
+;[944..967]:gene-protein:"tyrosine protein kinase"
+;[972..975]:gene-protein:"uPA"
+;[976..979]:gene-protein:"PAI"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[902..905] The) (NN:[906..912] effect))
+      (PP (IN:[913..915] of)
+        (NP
+          (NP (NN:[917..926] genistein))
+          (,:[926..927] ,)
+          (NP
+            (NP (DT:[928..930] an) (NN:[931..940] inhibitor))
+            (PP (IN:[941..943] of)
+              (NP (NN:[944..952] tyrosine) (NN:[953..960] protein)
+                  (NN:[961..967] kinase))))))
+      (,:[967..968] ,)
+      (PP (IN:[969..971] on)
+        (NP (NN:[972..975] uPA) (SYM:[975..976] /) (NN:[976..979] PAI))))
+    (VP (VBD:[980..983] was)
+      (ADVP (RB:[984..988] also))
+      (VP (VBN:[990..1002] investigated)
+        (NP-1 (-NONE-:[1002..1002] *))))
+    (.:[1002..1003] .)))
+
+;sentence 7 Span:1004..1141
+;Both the uPA/PAI-1 ratio at mRNA level and the PA/PAI ratio at  protein
+;activity level were higher in the more malignant, WAC2 cell line.
+;[1013..1016]:gene-rna:"uPA"
+;[1017..1022]:gene-rna:"PAI-1"
+;[1051..1053]:gene-protein:"PA"
+;[1054..1057]:gene-protein:"PAI"
+(SENT
+  (S
+    (NP-SBJ (CC:[1004..1008] Both)
+      (NP
+        (NP (DT:[1009..1012] the)
+          (NML (NN:[1013..1016] uPA) (SYM:[1016..1017] /)
+               (NN:[1017..1022] PAI-1))
+          (NN:[1023..1028] ratio))
+        (PP (IN:[1029..1031] at)
+          (NP (NN:[1032..1036] mRNA) (NN:[1037..1042] level))))
+      (CC:[1043..1046] and)
+      (NP
+        (NP (DT:[1047..1050] the)
+          (NML (NN:[1051..1053] PA) (SYM:[1053..1054] /) (NN:[1054..1057] PAI))
+          (NN:[1058..1063] ratio))
+        (PP (IN:[1064..1066] at)
+          (NP (NN:[1068..1075] protein) (NN:[1076..1084] activity)
+              (NN:[1085..1090] level)))))
+    (VP (VBD:[1091..1095] were)
+      (ADJP-PRD (JJR:[1096..1102] higher))
+      (PP (IN:[1103..1105] in)
+        (NP (DT:[1106..1109] the)
+          (ADJP (RBR:[1110..1114] more) (JJ:[1115..1124] malignant))
+          (,:[1124..1125] ,) (NN:[1126..1130] WAC2) (NN:[1131..1135] cell)
+           (NN:[1136..1140] line))))
+    (.:[1140..1141] .)))
+
+;sentence 8 Span:1143..1268
+;Genistein attenuated uPA activity and stimulated PAI activity in both cell 
+;lines, leading to a decrease in the PA/PAI ratio.
+;[1164..1167]:gene-protein:"uPA"
+;[1192..1195]:gene-protein:"PAI"
+;[1255..1257]:gene-protein:"PA"
+;[1258..1261]:gene-protein:"PAI"
+(SENT
+  (S
+    (NP-SBJ (NN:[1143..1152] Genistein))
+    (VP
+      (VP (VBD:[1153..1163] attenuated)
+        (NP (NN:[1164..1167] uPA) (NN:[1168..1176] activity))
+        (PP-1 (-NONE-:[1176..1176] *RNR*))
+        (S-ADV-2 (-NONE-:[1176..1176] *RNR*)))
+      (CC:[1177..1180] and)
+      (VP (VBD:[1181..1191] stimulated)
+        (NP (NN:[1192..1195] PAI) (NN:[1196..1204] activity))
+        (PP-1 (-NONE-:[1204..1204] *RNR*))
+        (S-ADV-2 (-NONE-:[1204..1204] *RNR*)))
+      (PP-1 (IN:[1205..1207] in)
+        (NP (DT:[1208..1212] both) (NN:[1213..1217] cell)
+            (NNS:[1219..1224] lines)))
+      (,:[1224..1225] ,)
+      (S-ADV-2
+        (NP-SBJ (-NONE-:[1225..1225] *))
+        (VP (VBG:[1226..1233] leading)
+          (PP (TO:[1234..1236] to)
+            (NP
+              (NP (DT:[1237..1238] a) (NN:[1239..1247] decrease))
+              (PP (IN:[1248..1250] in)
+                (NP (DT:[1251..1254] the)
+                  (NML (NN:[1255..1257] PA) (SYM:[1257..1258] /)
+                       (NN:[1258..1261] PAI))
+                  (NN:[1262..1267] ratio))))))))
+    (.:[1267..1268] .)))
+
+;sentence 9 Span:1269..1340
+;This effect was more  pronounced in the more malignant, WAC2 cell line.
+(SENT
+  (S
+    (NP-SBJ (DT:[1269..1273] This) (NN:[1274..1280] effect))
+    (VP (VBD:[1281..1284] was)
+      (ADJP-PRD (RBR:[1285..1289] more) (JJ:[1291..1301] pronounced))
+      (PP (IN:[1302..1304] in)
+        (NP (DT:[1305..1308] the)
+          (ADJP (RBR:[1309..1313] more) (JJ:[1314..1323] malignant))
+          (,:[1323..1324] ,) (NN:[1325..1329] WAC2) (NN:[1330..1334] cell)
+           (NN:[1335..1339] line))))
+    (.:[1339..1340] .)))
+
+;section 10 Span:1344..1388
+;PMID: 9893662 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1344..1348] PMID) (::[1348..1349] :) (CD:[1350..1357] 9893662)
+        (NN:[1358..1359] -LSB-) (NNP:[1359..1365] PubMed) (::[1366..1367] -)
+        (NN:[1368..1375] indexed) (IN:[1376..1379] for)
+        (NNP:[1380..1388] MEDLINE-RSB-)))

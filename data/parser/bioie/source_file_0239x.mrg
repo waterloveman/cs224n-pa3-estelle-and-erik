@@ -1,0 +1,436 @@
+;PMID: 10665646
+;source_file_1360.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)section:[e:45..94] = [t:45..94]
+;2)section:[e:98..165] = [t:98..165]
+;3)sentence:[e:169..272] = [t:169..272]
+;4)section:[e:276..347] = [t:276..347]
+;5)section:[e:351..420] = [t:351..420]
+;6)sentence:[e:424..566] = [t:424..566]
+;7)sentence:[e:567..730] = [t:567..730]
+;8)sentence:[e:732..906] = [t:732..906]
+;9)sentence:[e:907..1073] = [t:907..1073]
+;10)sentence:[e:1074..1244] = [t:1074..1244]
+;11)sentence:[e:1245..1387] = [t:1245..1387]
+;12)sentence:[e:1388..1562] = [t:1388..1562]
+;13)sentence:[e:1563..1934] = [t:1563..1934]
+;14)section:[e:1938..1983] = [t:1938..1983]
+
+;section 0 Span:0..40
+;Jpn J Cancer Res  1999 Dec;90(12):1301-9
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 1999) (-LRB-:[23..30] Dec;90-LRB-) (CD:[30..32] 12)
+        (-RRB-:[32..33] -RRB-) (CD:[33..38] :1301) (::[38..39] -)
+        (CD:[39..40] 9)))
+
+;section 1 Span:45..94
+;Erratum in:   Jpn J Cancer Res 2000 Feb;91(2):270
+(SEC
+  (FRAG (NNP:[45..52] Erratum) (IN:[53..55] in) (NNP:[55..56] :)
+        (NNP:[59..62] Jpn) (NNP:[63..64] J) (NNP:[65..71] Cancer)
+        (NNP:[72..75] Res) (CD:[76..80] 2000) (-LRB-:[81..88] Feb;91-LRB-)
+        (CD:[88..89] 2) (-RRB-:[89..90] -RRB-) (.:[90..94] :270)))
+
+;section 2 Span:98..165
+;Comment in:   Jpn J Cancer Res. 1999 Dec;90(12):inside front cover.
+(SEC
+  (FRAG (NNP:[98..105] Comment) (IN:[106..108] in) (NNP:[108..109] :)
+        (NNP:[112..115] Jpn) (NNP:[116..117] J) (NNP:[118..124] Cancer)
+        (NNP:[125..128] Res) (.:[128..129] .) (CD:[130..134] 1999)
+        (CC:[135..142] Dec;90-LRB-) (CD:[142..144] 12) (NNS:[144..145] -RRB-)
+        (RB:[145..152] :inside) (JJ:[153..158] front) (NN:[159..164] cover)
+        (.:[164..165] .)))
+
+;sentence 3 Span:169..272
+;Beta-catenin accumulation and mutation of exon 3 of the beta-catenin gene in 
+;hepatocellular carcinoma.
+;[169..181]:gene-protein:"Beta-catenin"
+;[199..207]:variation-event:"mutation"
+;[211..217]:variation-location:"exon 3"
+;[225..237]:gene-rna:"beta-catenin"
+;[247..271]:malignancy:"hepatocellular carcinoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[169..181] Beta-catenin) (NN:[182..194] accumulation))
+      (CC:[195..198] and)
+      (NP
+        (NP (NN:[199..207] mutation))
+        (PP (IN:[208..210] of)
+          (NP
+            (NP (NN:[211..215] exon) (CD:[216..217] 3))
+            (PP (IN:[218..220] of)
+              (NP (DT:[221..224] the) (NN:[225..237] beta-catenin)
+                  (NN:[238..242] gene)))))))
+    (PP (IN:[243..245] in)
+      (NP (JJ:[247..261] hepatocellular) (NN:[262..271] carcinoma)))
+    (.:[271..272] .)))
+
+;section 4 Span:276..347
+;Kondo Y, Kanai Y, Sakamoto M, Genda T, Mizokami M, Ueda R, Hirohashi S.
+(SEC
+  (FRAG (NNP:[276..281] Kondo) (NNP:[282..283] Y) (,:[283..284] ,)
+        (NNP:[285..290] Kanai) (NNP:[291..292] Y) (,:[292..293] ,)
+        (NNP:[294..302] Sakamoto) (VBD:[303..305] M,) (NNP:[306..311] Genda)
+        (NNP:[312..313] T) (,:[313..314] ,) (NNP:[315..323] Mizokami)
+        (NNP:[324..326] M,) (NNP:[327..331] Ueda) (NNP:[332..334] R,)
+        (NNP:[335..344] Hirohashi) (NNP:[345..347] S.)))
+
+;section 5 Span:351..420
+;Pathology Division, National Cancer Center Research Institute, Tokyo.
+(SEC
+  (FRAG (NNP:[351..360] Pathology) (NNP:[361..369] Division) (,:[369..370] ,)
+        (NNP:[371..379] National) (NNP:[380..386] Cancer)
+        (NNP:[387..393] Center) (NNP:[394..402] Research)
+        (NNP:[403..412] Institute) (,:[412..413] ,) (NNP:[414..419] Tokyo)
+        (.:[419..420] .)))
+
+;sentence 6 Span:424..566
+;A study was conducted to clarify the contribution of beta-catenin
+;accumulation  and mutation of the beta-catenin gene to hepatocarcinogenesis.
+;[477..489]:gene-protein:"beta-catenin"
+;[524..536]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[424..425] A) (NN:[426..431] study))
+      (SBAR-2 (-NONE-:[431..431] *ICH*)))
+    (VP (VBD:[432..435] was)
+      (VP (VBN:[436..445] conducted)
+        (NP-1 (-NONE-:[445..445] *))
+        (SBAR-2
+          (WHNP (-NONE-:[445..445] 0))
+          (S
+            (NP-SBJ (-NONE-:[445..445] *))
+            (VP (TO:[446..448] to)
+              (VP (VB:[449..456] clarify)
+                (NP
+                  (NP (DT:[457..460] the) (NN:[461..473] contribution))
+                  (PP (IN:[474..476] of)
+                    (NP
+                      (NP (NN:[477..489] beta-catenin)
+                          (NN:[490..502] accumulation))
+                      (CC:[504..507] and)
+                      (NP
+                        (NP (NN:[508..516] mutation))
+                        (PP (IN:[517..519] of)
+                          (NP (DT:[520..523] the) (NN:[524..536] beta-catenin)
+                              (NN:[537..541] gene))))))
+                  (PP (TO:[542..544] to)
+                    (NP (NN:[545..565] hepatocarcinogenesis))))))))))
+    (.:[565..566] .)))
+
+;sentence 7 Span:567..730
+;Beta-catenin  accumulation was examined immunohistochemically in 38 paired
+;samples of  hepatocellular carcinoma (HCC) and corresponding non-cancerous
+;liver tissue.
+;[567..579]:gene-protein:"Beta-catenin"
+;[654..678]:malignancy:"hepatocellular carcinoma"
+;[680..683]:malignancy:"HCC"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[567..579] Beta-catenin) (NN:[581..593] accumulation))
+    (VP (VBD:[594..597] was)
+      (VP (VBN:[598..606] examined)
+        (NP-1 (-NONE-:[606..606] *))
+        (ADVP-MNR (RB:[607..628] immunohistochemically))
+        (PP (IN:[629..631] in)
+          (NP
+            (NP
+              (NP (CD:[632..634] 38) (VBN:[635..641] paired)
+                  (NNS:[642..649] samples))
+              (PP (IN:[650..652] of)
+                (NP
+                  (NP (JJ:[654..668] hepatocellular) (NN:[669..678] carcinoma))
+                  (NP (-LRB-:[679..680] -LRB-) (NN:[680..683] HCC)
+                      (-RRB-:[683..684] -RRB-)))))
+            (CC:[685..688] and)
+            (NP (VBG:[689..702] corresponding)
+              (ADJP (AFX:[703..706] non) (HYPH:[706..707] -)
+                    (JJ:[707..716] cancerous))
+              (NN:[717..722] liver) (NN:[723..729] tissue))))))
+    (.:[729..730] .)))
+
+;sentence 8 Span:732..906
+;Gene mutation was analyzed by polymerase chain reaction-single strand 
+;conformation polymorphism (PCR-SSCP) and direct sequencing using intronic 
+;primers encompassing exon 3.
+;[762..772]:gene-protein:"polymerase"
+;[899..905]:variation-location:"exon 3"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[732..736] Gene) (NN:[737..745] mutation))
+    (VP (VBD:[746..749] was)
+      (VP (VBN:[750..758] analyzed)
+        (NP-1 (-NONE-:[758..758] *))
+        (PP-MNR (IN:[759..761] by)
+          (NP
+            (NP
+              (NP
+                (NML (NN:[762..772] polymerase) (NN:[773..778] chain)
+                     (NN:[779..787] reaction))
+                (HYPH:[787..788] -)
+                (NML
+                  (NML (JJ:[788..794] single) (NN:[795..801] strand))
+                  (NN:[803..815] conformation) (NN:[816..828] polymorphism)))
+              (NP (-LRB-:[829..830] -LRB-)
+                (NML (NN:[830..833] PCR))
+                (HYPH:[833..834] -)
+                (NML (NN:[834..838] SSCP))
+                (-RRB-:[838..839] -RRB-)))
+            (CC:[840..843] and)
+            (NP (JJ:[844..850] direct) (NN:[851..861] sequencing))))
+        (S-ADV
+          (NP-SBJ (-NONE-:[861..861] *))
+          (VP (VBG:[862..867] using)
+            (NP
+              (NP (JJ:[868..876] intronic) (NNS:[878..885] primers))
+              (VP (VBG:[886..898] encompassing)
+                (NP (NN:[899..903] exon) (CD:[904..905] 3))))))))
+    (.:[905..906] .)))
+
+;sentence 9 Span:907..1073
+;Neither accumulation nor mutation was detected in  non-cancerous liver
+;tissues that showed no remarkable histological features,  chronic hepatitis
+;or liver cirrhosis.
+;[1036..1053]:malignancy:"chronic hepatitis"
+(SENT
+  (S
+    (NP-SBJ-2 (CC:[907..914] Neither) (NN:[915..927] accumulation)
+              (CC:[928..931] nor) (NN:[932..940] mutation))
+    (VP (VBD:[941..944] was)
+      (VP (VBN:[945..953] detected)
+        (NP-2 (-NONE-:[953..953] *))
+        (PP-LOC (IN:[954..956] in)
+          (NP
+            (NP
+              (ADJP (AFX:[958..961] non) (HYPH:[961..962] -)
+                    (JJ:[962..971] cancerous))
+              (NN:[972..977] liver) (NNS:[978..985] tissues))
+            (SBAR
+              (WHNP-1 (WDT:[986..990] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[990..990] *T*))
+                (VP (VBD:[991..997] showed)
+                  (NP (DT:[998..1000] no)
+                    (NML
+                      (NML (JJ:[1001..1011] remarkable)
+                           (JJ:[1012..1024] histological)
+                           (NNS:[1025..1033] features))
+                      (,:[1033..1034] ,)
+                      (NML (JJ:[1036..1043] chronic) (NN:[1044..1053] hepatitis))
+                      (CC:[1054..1056] or)
+                      (NML (NN:[1057..1062] liver) (NN:[1063..1072] cirrhosis)))))))))))
+    (.:[1072..1073] .)))
+
+;sentence 10 Span:1074..1244
+;Accumulation of beta-catenin was seen in  the nucleus, cytoplasm or cell
+;membrane in 15 of 38 (39%) HCC samples, and gene  mutation was seen in 9 of
+;38 (24%) HCC samples.
+;[1090..1102]:gene-protein:"beta-catenin"
+;[1174..1177]:malignancy:"HCC"
+;[1232..1235]:malignancy:"HCC"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (NN:[1074..1086] Accumulation))
+        (PP (IN:[1087..1089] of)
+          (NP (NN:[1090..1102] beta-catenin))))
+      (VP (VBD:[1103..1106] was)
+        (VP (VBN:[1107..1111] seen)
+          (NP-2 (-NONE-:[1111..1111] *))
+          (PP-LOC (IN:[1112..1114] in)
+            (NP
+              (NP (DT:[1116..1119] the) (NN:[1120..1127] nucleus))
+              (,:[1127..1128] ,)
+              (NP (NN:[1129..1138] cytoplasm))
+              (CC:[1139..1141] or)
+              (NP (NN:[1142..1146] cell) (NN:[1147..1155] membrane))))
+          (PP (IN:[1156..1158] in)
+            (NP
+              (NP (CD:[1159..1161] 15))
+              (PP (IN:[1162..1164] of)
+                (NP (CD:[1165..1167] 38)
+                  (PRN (-LRB-:[1168..1169] -LRB-)
+                    (NP (CD:[1169..1171] 39) (NN:[1171..1172] %))
+                    (-RRB-:[1172..1173] -RRB-))
+                  (NN:[1174..1177] HCC) (NNS:[1178..1185] samples))))))))
+    (,:[1185..1186] ,) (CC:[1187..1190] and)
+    (S
+      (NP-SBJ-1 (NN:[1191..1195] gene) (NN:[1197..1205] mutation))
+      (VP (VBD:[1206..1209] was)
+        (VP (VBN:[1210..1214] seen)
+          (NP-1 (-NONE-:[1214..1214] *))
+          (PP (IN:[1215..1217] in)
+            (NP
+              (NP (CD:[1218..1219] 9))
+              (PP (IN:[1220..1222] of)
+                (NP (CD:[1223..1225] 38)
+                  (PRN (-LRB-:[1226..1227] -LRB-)
+                    (NP (CD:[1227..1229] 24) (NN:[1229..1230] %))
+                    (-RRB-:[1230..1231] -RRB-))
+                  (NN:[1232..1235] HCC) (NNS:[1236..1243] samples))))))))
+    (.:[1243..1244] .)))
+
+;sentence 11 Span:1245..1387
+;Although there was a significant  correlation between accumulation and
+;mutation (P<0.01), six HCCs without  mutation also showed accumulation.
+;[1339..1343]:malignancy:"HCCs"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1245..1253] Although)
+      (S
+        (NP-SBJ (EX:[1254..1259] there))
+        (VP (VBD:[1260..1263] was)
+          (NP-PRD
+            (NP (DT:[1264..1265] a) (JJ:[1266..1277] significant)
+                (NN:[1279..1290] correlation))
+            (PP (IN:[1291..1298] between)
+              (NP (NN:[1299..1311] accumulation) (CC:[1312..1315] and)
+                  (NN:[1316..1324] mutation))))
+          (PRN (-LRB-:[1325..1326] -LRB-)
+            (S
+              (NP-SBJ (NN:[1326..1327] P))
+              (PP (SYM:[1327..1328] <)
+                (NP (CD:[1328..1332] 0.01))))
+            (-RRB-:[1332..1333] -RRB-)))))
+    (,:[1333..1334] ,)
+    (NP-SBJ
+      (NP (CD:[1335..1338] six) (NNS:[1339..1343] HCCs))
+      (PP (IN:[1344..1351] without)
+        (NP (NN:[1353..1361] mutation))))
+    (ADVP (RB:[1362..1366] also))
+    (VP (VBD:[1367..1373] showed)
+      (NP (NN:[1374..1386] accumulation)))
+    (.:[1386..1387] .)))
+
+;sentence 12 Span:1388..1562
+;Samples of early HCC showed neither  accumulation nor mutation, and
+;accumulation and mutation were each correlated  significantly with portal
+;vein tumor involvement (P<0.05).
+;[1399..1408]:malignancy:"early HCC"
+;[1523..1540]:malignancy:"portal vein tumor"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NNS:[1388..1395] Samples))
+        (PP (IN:[1396..1398] of)
+          (NP (JJ:[1399..1404] early) (NN:[1405..1408] HCC))))
+      (VP (VBD:[1409..1415] showed)
+        (NP (CC:[1416..1423] neither) (NN:[1425..1437] accumulation)
+            (CC:[1438..1441] nor) (NN:[1442..1450] mutation))))
+    (,:[1450..1451] ,) (CC:[1452..1455] and)
+    (S
+      (NP-SBJ-1 (NN:[1456..1468] accumulation) (CC:[1469..1472] and)
+                (NN:[1473..1481] mutation))
+      (VP (VBD:[1482..1486] were)
+        (ADVP (DT:[1487..1491] each))
+        (VP (VBN:[1492..1502] correlated)
+          (NP-1 (-NONE-:[1502..1502] *))
+          (ADVP (RB:[1504..1517] significantly))
+          (PP-CLR (IN:[1518..1522] with)
+            (NP
+              
+              (NML (JJ:[1523..1529] portal) (NN:[1530..1534] vein))
+              (NN:[1535..1540] tumor)
+              (NN:[1541..1552] involvement)))
+          (PRN (-LRB-:[1553..1554] -LRB-)
+            (S
+              (NP-SBJ (NN:[1554..1555] P))
+              (VP (SYM:[1555..1556] <)
+                (NP (CD:[1556..1560] 0.05))))
+            (-RRB-:[1560..1561] -RRB-)))))
+    (.:[1561..1562] .)))
+
+;sentence 13 Span:1563..1934
+;The present results  indicate that (1) mutation of exon 3 of the beta-catenin
+;gene can lead to  beta-catenin accumulation, although other mechanisms of
+;accumulation may also  operate in HCC, and (2) beta-catenin accumulation and
+;mutation of the  beta-catenin gene are not early events in
+;hepatocarcinogenesis, and may be  associated with the malignant progression
+;of HCC.
+;[1602..1610]:variation-event:"mutation"
+;[1614..1620]:variation-location:"exon 3"
+;[1628..1640]:gene-rna:"beta-catenin"
+;[1659..1671]:gene-protein:"beta-catenin"
+;[1749..1752]:malignancy:"HCC"
+;[1762..1774]:gene-protein:"beta-catenin"
+;[1809..1821]:gene-rna:"beta-catenin"
+;[1930..1933]:malignancy:"HCC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1563..1566] The) (JJ:[1567..1574] present)
+            (NNS:[1575..1582] results))
+    (VP (VBP:[1584..1592] indicate)
+      (SBAR (IN:[1593..1597] that)
+        (S
+          (S
+            (LST (LS:[1598..1601] -LRB-1-RRB-))
+            (NP-SBJ
+              (NP (NN:[1602..1610] mutation))
+              (PP (IN:[1611..1613] of)
+                (NP
+                  (NP (NN:[1614..1618] exon) (CD:[1619..1620] 3))
+                  (PP (IN:[1621..1623] of)
+                    (NP (DT:[1624..1627] the) (NN:[1628..1640] beta-catenin)
+                        (NN:[1641..1645] gene))))))
+            (VP (MD:[1646..1649] can)
+              (VP (VB:[1650..1654] lead)
+                (PP-CLR (TO:[1655..1657] to)
+                  (NP (NN:[1659..1671] beta-catenin)
+                      (NN:[1672..1684] accumulation)))
+                (,:[1684..1685] ,)
+                (SBAR-ADV (IN:[1686..1694] although)
+                  (S
+                    (NP-SBJ
+                      (NP (JJ:[1695..1700] other) (NNS:[1701..1711] mechanisms))
+                      (PP (IN:[1712..1714] of)
+                        (NP (NN:[1715..1727] accumulation))))
+                    (VP (MD:[1728..1731] may)
+                      (ADVP (RB:[1732..1736] also))
+                      (VP (VB:[1738..1745] operate)
+                        (PP (IN:[1746..1748] in)
+                          (NP (NN:[1749..1752] HCC))))))))))
+          (,:[1752..1753] ,) (CC:[1754..1757] and)
+          (S
+            (LST (LS:[1758..1761] -LRB-2-RRB-))
+            (NP-SBJ-1
+              (NP (NN:[1762..1774] beta-catenin) (NN:[1775..1787] accumulation))
+              (CC:[1788..1791] and)
+              (NP
+                (NP (NN:[1792..1800] mutation))
+                (PP (IN:[1801..1803] of)
+                  (NP (DT:[1804..1807] the) (NN:[1809..1821] beta-catenin)
+                      (NN:[1822..1826] gene)))))
+            (VP
+              (VP (VBP:[1827..1830] are) (RB:[1831..1834] not)
+                (NP-PRD
+                  (NP (JJ:[1835..1840] early) (NNS:[1841..1847] events))
+                  (PP (IN:[1848..1850] in)
+                    (NP (NN:[1851..1871] hepatocarcinogenesis)))))
+              (,:[1871..1872] ,) (CC:[1873..1876] and)
+              (VP (MD:[1877..1880] may)
+                (VP (VB:[1881..1883] be)
+                  (VP (VBN:[1885..1895] associated)
+                    (NP-1 (-NONE-:[1895..1895] *))
+                    (PP-CLR (IN:[1896..1900] with)
+                      (NP
+                        (NP (DT:[1901..1904] the) (JJ:[1905..1914] malignant)
+                            (NN:[1915..1926] progression))
+                        (PP (IN:[1927..1929] of)
+                          (NP (NN:[1930..1933] HCC)))))))))))))
+    (.:[1933..1934] .)))
+
+;section 14 Span:1938..1983
+;PMID: 10665646 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1938..1942] PMID) (::[1942..1943] :) (CD:[1944..1952] 10665646)
+        (IN:[1953..1954] -LSB-) (NNP:[1954..1960] PubMed) (HYPH:[1961..1962] -)
+        (JJ:[1963..1970] indexed) (IN:[1971..1974] for)
+        (NNP:[1975..1983] MEDLINE-RSB-)))

@@ -1,0 +1,538 @@
+;PMID: 10490922
+;source_file_866.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..208] = [t:51..208]
+;2)section:[e:212..231] = [t:212..231]
+;3)section:[e:235..354] = [t:235..354]
+;4)sentence:[e:358..518] = [t:358..518]
+;5)sentence:[e:520..838] = [t:520..838]
+;6)sentence:[e:839..1047] = [t:839..1047]
+;7)sentence:[e:1048..1194] = [t:1048..1194]
+;8)sentence:[e:1195..1405] = [t:1195..1405]
+;9)sentence:[e:1406..1530] = [t:1406..1530]
+;10)sentence:[e:1531..1690] = [t:1531..1690]
+;11)sentence:[e:1691..1810] = [t:1691..1810]
+;12)sentence:[e:1811..1948] = [t:1811..1948]
+;13)sentence:[e:1949..2147] = [t:1949..2147]
+;14)sentence:[e:2148..2323] = [t:2148..2323]
+;15)section:[e:2327..2372] = [t:2327..2372]
+
+;section 0 Span:0..45
+;J Pharmacol Exp Ther. 1999 Oct;291(1):335-44.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1999)
+        (CC:[27..35] Oct;291-LRB-) (CD:[35..36] 1) (-RRB-:[36..37] -RRB-)
+        (CD:[37..41] :335) (HYPH:[41..42] -) (CD:[42..44] 44) (.:[44..45] .)))
+
+;sentence 1 Span:51..208
+;Hypoxia and alkalinization inhibit endothelium-derived nitric oxide but not 
+;endothelium-derived hyperpolarizing factor responses in porcine coronary
+;artery.
+;[86..118]:substance:"endothelium-derived nitric oxide"
+;[128..170]:substance:"endothelium-derived hyperpolarizing factor"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[51..58] Hypoxia) (CC:[59..62] and) (NN:[63..77] alkalinization))
+    (VP
+      (VP (VBP:[78..85] inhibit)
+        (NP=1
+          (ADJP (NN:[86..97] endothelium) (HYPH:[97..98] -)
+                (VBN:[98..105] derived))
+          (JJ:[106..112] nitric) (NN:[113..118] oxide)))
+      (VP (CC:[119..122] but) (RB:[123..126] not)
+        (NP=1
+          
+          (ADJP (NN:[128..139] endothelium) (HYPH:[139..140] -)
+                (VBN:[140..147] derived))
+          (VBG:[148..163] hyperpolarizing) (NN:[164..170] factor)
+          (NNS:[171..180] responses))
+        (PP-LOC (IN:[181..183] in)
+          (NP (JJ:[184..191] porcine) (JJ:[192..200] coronary)
+              (NN:[201..207] artery)))))
+    (.:[207..208] .)))
+
+;section 2 Span:212..231
+;Shimizu S, Paul RJ.
+(SEC
+  (FRAG (NNP:[212..219] Shimizu) (NNP:[220..222] S,) (NNP:[223..227] Paul)
+        (NNP:[228..231] RJ.)))
+
+;section 3 Span:235..354
+;Department of Molecular and Cellular Physiology, University of Cincinnati, 
+;College of Medicine, Cincinnati, Ohio, USA.
+(SEC
+  (FRAG (NNP:[235..245] Department) (IN:[246..248] of)
+        (NNP:[249..258] Molecular) (CC:[259..262] and) (NNP:[263..271] Cellular)
+        (NNP:[272..282] Physiology) (,:[282..283] ,) (NNP:[284..294] University)
+        (IN:[295..297] of) (NNP:[298..308] Cincinnati) (,:[308..309] ,)
+        (NNP:[311..318] College) (IN:[319..321] of) (NNP:[322..330] Medicine)
+        (,:[330..331] ,) (NNP:[332..342] Cincinnati) (,:[342..343] ,)
+        (NNP:[344..348] Ohio) (,:[348..349] ,) (NNP:[350..353] USA)
+        (.:[353..354] .)))
+
+;sentence 4 Span:358..518
+;We investigated the mechanisms by which hypoxia and alkalinization inhibit
+;the  endothelium-dependent relaxation to Substance P (SP) in porcine coronary
+;artery.
+;[474..485]:substance:"Substance P"
+;[487..489]:substance:"SP"
+(SENT
+  (S
+    (NP-SBJ (PRP:[358..360] We))
+    (VP (VBD:[361..373] investigated)
+      (NP
+        (NP (DT:[374..377] the) (NNS:[378..388] mechanisms))
+        (SBAR
+          (WHPP-1 (IN:[389..391] by)
+            (WHNP (WDT:[392..397] which)))
+          (S
+            (NP-SBJ (NN:[398..405] hypoxia) (CC:[406..409] and)
+                    (NN:[410..424] alkalinization))
+            (VP (VBP:[425..432] inhibit)
+              (NP
+                (NP (DT:[433..436] the)
+                  (ADJP (NN:[438..449] endothelium) (HYPH:[449..450] -)
+                        (JJ:[450..459] dependent))
+                  (NN:[460..470] relaxation))
+                (PP (TO:[471..473] to)
+                  (NP
+                    (NP (NN:[474..483] Substance) (NN:[484..485] P))
+                    (NP (-LRB-:[486..487] -LRB-) (NN:[487..489] SP)
+                        (-RRB-:[489..490] -RRB-)))))
+              (PP-LOC (IN:[491..493] in)
+                (NP (JJ:[494..501] porcine) (JJ:[502..510] coronary)
+                    (NN:[511..517] artery)))
+              (PP-MNR-1 (-NONE-:[517..517] *T*)))))))
+    (.:[517..518] .)))
+
+;sentence 5 Span:520..838
+;In a KCl contracture, the major component of the SP response is 
+;endothelium-derived nitric oxide (EDNO), whereas with receptor-mediated 
+;9,11-dideoxy-llalpha, 9alpha-epoxymethanoprostaglandin F(2alpha) (U46619) 
+;stimulation, the SP response is dependent on both EDNO and
+;endothelium-derived  hyperpolarization factor.
+;[525..528]:substance:"KCl"
+;[569..571]:substance:"SP"
+;[585..617]:substance:"endothelium-derived nitric oxide"
+;[619..623]:substance:"EDNO"
+;[639..647]:substance:"receptor"
+;[658..678]:substance:"9,11-dideoxy-llalpha"
+;[680..714]:substance:"9alpha-epoxymethanoprostaglandin F"
+;[715..721]:substance:"2alpha"
+;[724..730]:substance:"U46619"
+;[750..752]:substance:"SP"
+;[783..787]:substance:"EDNO"
+;[792..837]:substance:"endothelium-derived  hyperpolarization factor"
+(SENT
+  (S
+    (PP (IN:[520..522] In)
+      (NP (DT:[523..524] a) (NN:[525..528] KCl) (NN:[529..540] contracture)))
+    (,:[540..541] ,)
+    (NP-SBJ
+      (NP (DT:[542..545] the) (JJ:[546..551] major) (NN:[552..561] component))
+      (PP (IN:[562..564] of)
+        (NP (DT:[565..568] the) (NN:[569..571] SP) (NN:[572..580] response))))
+    (VP (VBZ:[581..583] is)
+      (NP-PRD
+        (NP
+          (ADJP (NN:[585..596] endothelium) (HYPH:[596..597] -)
+                (VBN:[597..604] derived))
+          (JJ:[605..611] nitric) (NN:[612..617] oxide))
+        (NP (-LRB-:[618..619] -LRB-) (NN:[619..623] EDNO)
+            (-RRB-:[623..624] -RRB-)))
+      (,:[624..625] ,)
+      (SBAR-ADV (IN:[626..633] whereas)
+        (S
+          (PP (IN:[634..638] with)
+            (NP
+              (ADJP (NN:[639..647] receptor) (HYPH:[647..648] -)
+                    (VBN:[648..656] mediated))
+              (NML
+                (NML (NN:[658..678] 9,11-dideoxy-llalpha) (,:[678..679] ,)
+                   (NN:[680..712] 9alpha-epoxymethanoprostaglandin)
+                   (NN:[713..714] F)
+                  (-LRB-:[714..715] -LRB-) (NN:[715..721] 2alpha)
+                   (-RRB-:[721..722] -RRB-))
+                (NML (-LRB-:[723..724] -LRB-) (NN:[724..730] U46619)
+                     (-RRB-:[730..731] -RRB-)))
+              (NN:[733..744] stimulation)))
+          (,:[744..745] ,)
+          (NP-SBJ (DT:[746..749] the) (NN:[750..752] SP)
+                  (NN:[753..761] response))
+          (VP (VBZ:[762..764] is)
+            (ADJP-PRD (JJ:[765..774] dependent)
+              (PP (IN:[775..777] on)
+                (NP (CC:[778..782] both)
+                  (NP (NN:[783..787] EDNO))
+                  (CC:[788..791] and)
+                  (NP
+                    (ADJP (NN:[792..803] endothelium) (HYPH:[803..804] -)
+                          (VBN:[804..811] derived))
+                    (NN:[813..830] hyperpolarization) (NN:[831..837] factor)))))))))
+    (.:[837..838] .)))
+
+;sentence 6 Span:839..1047
+;Intracellular alkalinization by NH(4)Cl reduced the  peak of SP responses
+;when arteries were contracted with KCl, whereas with U46619  stimulation, the
+;peak was little effected but the duration was shortened.
+;[871..878]:substance:"NH(4)Cl"
+;[900..902]:substance:"SP"
+;[948..951]:substance:"KCl"
+;[966..972]:substance:"U46619"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[839..852] Intracellular) (NN:[853..867] alkalinization))
+      (PP (IN:[868..870] by)
+        (NP (NN:[871..878] NH-LRB-4-RRB-Cl))))
+    (VP (VBD:[879..886] reduced)
+      (NP
+        (NP (DT:[887..890] the) (NN:[892..896] peak))
+        (PP (IN:[897..899] of)
+          (NP (NN:[900..902] SP) (NNS:[903..912] responses))))
+      (SBAR-ADV
+        (WHADVP-3 (WRB:[913..917] when))
+        (S
+          (NP-SBJ-4 (NNS:[918..926] arteries))
+          (VP (VBD:[927..931] were)
+            (VP (VBN:[932..942] contracted)
+              (NP-4 (-NONE-:[942..942] *))
+              (PP-MNR (IN:[943..947] with)
+                (NP (NN:[948..951] KCl)))
+              (ADVP-TMP-3 (-NONE-:[951..951] *T*))))))
+      (,:[951..952] ,)
+      (SBAR-ADV (IN:[953..960] whereas)
+        (S
+          (S
+            (PP (IN:[961..965] with)
+              (NP (NN:[966..972] U46619) (NN:[974..985] stimulation)))
+            (,:[985..986] ,)
+            (NP-SBJ-2 (DT:[987..990] the) (NN:[991..995] peak))
+            (VP (VBD:[996..999] was)
+              (ADVP (JJ:[1000..1006] little))
+              (VP (VBN:[1007..1015] effected)
+                (NP-2 (-NONE-:[1015..1015] *)))))
+          (CC:[1016..1019] but)
+          (S
+            (NP-SBJ-1 (DT:[1020..1023] the) (NN:[1024..1032] duration))
+            (VP (VBD:[1033..1036] was)
+              (VP (VBN:[1037..1046] shortened)
+                (NP-1 (-NONE-:[1046..1046] *))))))))
+    (.:[1046..1047] .)))
+
+;sentence 7 Span:1048..1194
+;In  endothelial cell-denuded arteries, alkalinization with NH(4)Cl shifted
+;the  sodium nitroprusside concentration-relaxation relations rightward.
+;[1107..1114]:substance:"NH(4)Cl"
+;[1128..1148]:substance:"sodium nitroprusside"
+(SENT
+  (S
+    (PP-LOC (IN:[1048..1050] In)
+      (NP
+        (ADJP
+          (NML (JJ:[1052..1063] endothelial) (NN:[1064..1068] cell))
+          (HYPH:[1068..1069] -) (VBN:[1069..1076] denuded))
+        (NNS:[1077..1085] arteries)))
+    (,:[1085..1086] ,)
+    (NP-SBJ
+      (NP (NN:[1087..1101] alkalinization))
+      (PP (IN:[1102..1106] with)
+        (NP (NN:[1107..1114] NH-LRB-4-RRB-Cl))))
+    (VP (VBD:[1115..1122] shifted)
+      (NP (DT:[1123..1126] the)
+        (NML
+          (NML
+            (NML (NN:[1128..1134] sodium) (NN:[1135..1148] nitroprusside))
+            (NN:[1149..1162] concentration))
+          (PP (HYPH:[1162..1163] -)
+            (NP (NN:[1163..1173] relaxation))))
+        (NNS:[1174..1183] relations))
+      (ADVP (RB:[1184..1193] rightward)))
+    (.:[1193..1194] .)))
+
+;sentence 8 Span:1195..1405
+;The effects  of NH(4)Cl in SP- and sodium nitroprusside-induced relaxations
+;were attenuated  by decreasing extracellular pH (pH(o)) from 7.4 to 7.2,
+;which normalized  intracellular pH (pH(i)) to control levels.
+;[1211..1218]:substance:"NH(4)Cl"
+;[1222..1224]:substance:"SP"
+;[1230..1250]:substance:"sodium nitroprusside"
+;[1316..1318]:quantitative-name:"pH"
+;[1320..1325]:quantitative-name:"pH(o)"
+;[1332..1342]:quantitative-value:"7.4 to 7.2"
+;[1376..1378]:quantitative-name:"pH"
+;[1380..1385]:quantitative-name:"pH(i)"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1195..1198] The) (NNS:[1199..1206] effects))
+      (PP (IN:[1208..1210] of)
+        (NP (NN:[1211..1218] NH-LRB-4-RRB-Cl)))
+      (PP (IN:[1219..1221] in)
+        (NP
+          (NP
+            (ADJP (NN:[1222..1224] SP) (HYPH:[1224..1225] -)
+              (ADJP-1 (-NONE-:[1225..1225] *P*)))
+            (NML-4 (-NONE-:[1225..1225] *P*)))
+          (CC:[1226..1229] and)
+          (NP
+            (ADJP
+              (NML (NN:[1230..1236] sodium) (NN:[1237..1250] nitroprusside))
+              (HYPH:[1250..1251] -)
+              (ADJP-1 (VBN:[1251..1258] induced)))
+            (NML-4 (NNS:[1259..1270] relaxations))))))
+    (VP (VBD:[1271..1275] were)
+      (VP (VBN:[1276..1286] attenuated)
+        (NP-2 (-NONE-:[1286..1286] *))
+        (PP-MNR (IN:[1288..1290] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1290..1290] *))
+            (VP (VBG:[1291..1301] decreasing)
+              (NP
+                (NP (JJ:[1302..1315] extracellular) (NN:[1316..1318] pH))
+                (NP (-LRB-:[1319..1320] -LRB-) (NN:[1320..1325] pH-LRB-o-RRB-)
+                    (-RRB-:[1325..1326] -RRB-)))
+              (PP (IN:[1327..1331] from)
+                (NP (CD:[1332..1335] 7.4)))
+              (PP (TO:[1336..1338] to)
+                (NP (CD:[1339..1342] 7.2)))
+              (,:[1342..1343] ,)
+              (SBAR-ADV
+                (WHNP-3 (WDT:[1344..1349] which))
+                (S
+                  (NP-SBJ-3 (-NONE-:[1349..1349] *T*))
+                  (VP (VBD:[1350..1360] normalized)
+                    (NP
+                      (NP (JJ:[1362..1375] intracellular) (NN:[1376..1378] pH))
+                      (NP (-LRB-:[1379..1380] -LRB-)
+                          (NN:[1380..1385] pH-LRB-i-RRB-)
+                          (-RRB-:[1385..1386] -RRB-)))
+                    (PP (TO:[1387..1389] to)
+                      (NP (NN:[1390..1397] control) (NNS:[1398..1404] levels)))))))))))
+    (.:[1404..1405] .)))
+
+;sentence 9 Span:1406..1530
+;In contrast, in U46619 contractures,  the SP response in the presence of a NO
+;synthase inhibitor was unaffected by  NH(4)Cl.
+;[1422..1428]:substance:"U46619"
+;[1448..1450]:substance:"SP"
+;[1481..1492]:substance:"NO synthase"
+;[1493..1502]:substance:"inhibitor"
+;[1522..1529]:substance:"NH(4)Cl"
+(SENT
+  (S
+    (PP (IN:[1406..1408] In)
+      (NP (NN:[1409..1417] contrast)))
+    (,:[1417..1418] ,)
+    (PP (IN:[1419..1421] in)
+      (NP (NN:[1422..1428] U46619) (NNS:[1429..1441] contractures)))
+    (,:[1441..1442] ,)
+    (NP-SBJ
+      (NP (DT:[1444..1447] the) (NN:[1448..1450] SP) (NN:[1451..1459] response))
+      (PP (IN:[1460..1462] in)
+        (NP
+          (NP (DT:[1463..1466] the) (NN:[1467..1475] presence))
+          (PP (IN:[1476..1478] of)
+            (NP (DT:[1479..1480] a)
+              (NML (NN:[1481..1483] NO) (NN:[1484..1492] synthase))
+              (NN:[1493..1502] inhibitor))))))
+    (VP (VBD:[1503..1506] was)
+      (ADJP-PRD (JJ:[1507..1517] unaffected)
+        (PP (IN:[1518..1520] by)
+          (NP (NN:[1522..1529] NH-LRB-4-RRB-Cl)))))
+    (.:[1529..1530] .)))
+
+;sentence 10 Span:1531..1690
+;Moreover, hypoxia blunted but did not abolish the responses to SP for  U46619
+;contractures; addition of KCl, however, abolished the SP response under 
+;hypoxia.
+;[1594..1596]:substance:"SP"
+;[1602..1608]:substance:"U46619"
+;[1635..1638]:substance:"KCl"
+;[1663..1665]:substance:"SP"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[1531..1539] Moreover))
+      (,:[1539..1540] ,)
+      (NP-SBJ (NN:[1541..1548] hypoxia))
+      (VP
+        (VP (VBD:[1549..1556] blunted)
+          (NP-1 (-NONE-:[1556..1556] *RNR*)))
+        (CC:[1557..1560] but)
+        (VP (VBD:[1561..1564] did) (RB:[1565..1568] not)
+          (VP (VB:[1569..1576] abolish)
+            (NP-1 (-NONE-:[1576..1576] *RNR*))))
+        (NP-1
+          (NP (DT:[1577..1580] the) (NNS:[1581..1590] responses))
+          (PP (TO:[1591..1593] to)
+            (NP (NN:[1594..1596] SP))))
+        (PP (IN:[1597..1600] for)
+          (NP (NN:[1602..1608] U46619) (NNS:[1609..1621] contractures)))))
+    (::[1621..1622] ;)
+    (S
+      (NP-SBJ
+        (NP (NN:[1623..1631] addition))
+        (PP (IN:[1632..1634] of)
+          (NP (NN:[1635..1638] KCl))))
+      (,:[1638..1639] ,)
+      (ADVP (RB:[1640..1647] however))
+      (,:[1647..1648] ,)
+      (VP (VBD:[1649..1658] abolished)
+        (NP (DT:[1659..1662] the) (NN:[1663..1665] SP)
+            (NN:[1666..1674] response))
+        (PP (IN:[1675..1680] under)
+          (NP (NN:[1682..1689] hypoxia)))))
+    (.:[1689..1690] .)))
+
+;sentence 11 Span:1691..1810
+;Endothelial [Ca(2+)](i) was measured with fura-2 differentially loaded  only
+;into endothelial cells on intact arteries.
+;[1704..1710]:substance:"Ca(2+)"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1691..1702] Endothelial) (-LRB-:[1703..1704] -LSB-)
+              (NN:[1704..1710] Ca-LRB-2+-RRB-) (-RRB-:[1710..1711] -RSB-)
+              (-LRB-:[1711..1712] -LRB-) (NN:[1712..1713] i)
+              (-RRB-:[1713..1714] -RRB-))
+    (VP (VBD:[1715..1718] was)
+      (VP (VBN:[1719..1727] measured)
+        (NP-1 (-NONE-:[1727..1727] *))
+        (PP (IN:[1728..1732] with)
+          (NP
+            (NP (NN:[1733..1739] fura-2))
+            (VP
+              (ADVP (RB:[1740..1754] differentially))
+              (VBN:[1755..1761] loaded)
+              (NP (-NONE-:[1761..1761] *))
+              (PP
+                (ADVP (RB:[1763..1767] only))
+                (IN:[1768..1772] into)
+                (NP
+                  (NP (JJ:[1773..1784] endothelial) (NNS:[1785..1790] cells))
+                  (PP-LOC (IN:[1791..1793] on)
+                    (NP (JJ:[1794..1800] intact) (NNS:[1801..1809] arteries))))))))))
+    (.:[1809..1810] .)))
+
+;sentence 12 Span:1811..1948
+;Despite the attenuation of the  SP response in KCl contractures by NH(4)Cl or
+;hypoxia, endothelial [Ca(2+)](i)  responses were unchanged.
+;[1843..1845]:substance:"SP"
+;[1858..1861]:substance:"KCl"
+;[1878..1885]:substance:"NH(4)Cl"
+;[1911..1917]:substance:"Ca(2+)"
+(SENT
+  (S
+    (PP (IN:[1811..1818] Despite)
+      (NP
+        (NP (DT:[1819..1822] the) (NN:[1823..1834] attenuation))
+        (PP (IN:[1835..1837] of)
+          (NP (DT:[1838..1841] the) (NN:[1843..1845] SP)
+              (NN:[1846..1854] response)))
+        (PP (IN:[1855..1857] in)
+          (NP (NN:[1858..1861] KCl) (NNS:[1862..1874] contractures)))
+        (PP (IN:[1875..1877] by)
+          (NP (NN:[1878..1885] NH-LRB-4-RRB-Cl) (CC:[1886..1888] or)
+              (NN:[1889..1896] hypoxia)))))
+    (,:[1896..1897] ,)
+    (NP-SBJ
+      (NML (JJ:[1898..1909] endothelial) (-LRB-:[1910..1911] -LSB-)
+           (NN:[1911..1917] Ca-LRB-2+-RRB-) (-RRB-:[1917..1918] -RSB-)
+           (-LRB-:[1918..1919] -LRB-) (NN:[1919..1920] i)
+           (-RRB-:[1920..1921] -RRB-))
+      (NNS:[1923..1932] responses))
+    (VP (VBD:[1933..1937] were)
+      (ADJP-PRD (JJ:[1938..1947] unchanged)))
+    (.:[1947..1948] .)))
+
+;sentence 13 Span:1949..2147
+;Our results suggest that hypoxia and alkalinization  inhibit EDNO but not
+;endothelium-derived hyperpolarization factor relaxations  through a
+;mechanism(s) not involving endothelial cell [Ca(2+)](i).
+;[2010..2014]:substance:"EDNO"
+;[2023..2067]:substance:"endothelium-derived hyperpolarization factor"
+;[2136..2142]:substance:"Ca(2+)"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1949..1952] Our) (NNS:[1953..1960] results))
+    (VP (VBP:[1961..1968] suggest)
+      (SBAR (IN:[1969..1973] that)
+        (S
+          (NP-SBJ (NN:[1974..1981] hypoxia) (CC:[1982..1985] and)
+                  (NN:[1986..2000] alkalinization))
+          (VP
+            (VP (VBP:[2002..2009] inhibit)
+              (NP=1 (NN:[2010..2014] EDNO)))
+            (CC:[2015..2018] but)
+            (VP (RB:[2019..2022] not)
+              (NP=1
+                
+                (ADJP (NN:[2023..2034] endothelium) (HYPH:[2034..2035] -)
+                      (VBN:[2035..2042] derived))
+                (NN:[2043..2060] hyperpolarization) (NN:[2061..2067] factor)
+                (NNS:[2068..2079] relaxations))
+              (PP-MNR (IN:[2081..2088] through)
+                (NP
+                  (NP (DT:[2089..2090] a) (NN:[2091..2103] mechanism-LRB-s-RRB-))
+                  (VP (RB:[2104..2107] not) (VBG:[2108..2117] involving)
+                    (NP (JJ:[2118..2129] endothelial) (NN:[2130..2134] cell)
+                        (-LRB-:[2135..2136] -LSB-)
+                        (NN:[2136..2142] Ca-LRB-2+-RRB-)
+                        (-RRB-:[2142..2143] -RSB-) (-LRB-:[2143..2144] -LRB-)
+                        (NN:[2144..2145] i) (-RRB-:[2145..2146] -RRB-))))))))))
+    (.:[2146..2147] .)))
+
+;sentence 14 Span:2148..2323
+;Inhibition of  EDNO relaxation by alkalinization with NH(4)Cl is likely to
+;occur at the level  of activation of guanylate cyclase and/or at a step
+;downstream in smooth muscle.
+;[2163..2167]:substance:"EDNO"
+;[2202..2209]:substance:"NH(4)Cl"
+;[2260..2277]:substance:"guanylate cyclase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[2148..2158] Inhibition))
+      (PP (IN:[2159..2161] of)
+        (NP (NN:[2163..2167] EDNO) (NN:[2168..2178] relaxation)))
+      (PP (IN:[2179..2181] by)
+        (NP
+          (NP (NN:[2182..2196] alkalinization))
+          (PP (IN:[2197..2201] with)
+            (NP (NN:[2202..2209] NH-LRB-4-RRB-Cl))))))
+    (VP (VBZ:[2210..2212] is)
+      (ADJP-PRD (JJ:[2213..2219] likely)
+        (S
+          (NP-SBJ-1 (-NONE-:[2219..2219] *))
+          (VP (TO:[2220..2222] to)
+            (VP (VB:[2223..2228] occur)
+              (PP
+                (PP (IN:[2229..2231] at)
+                  (NP
+                    (NP (DT:[2232..2235] the) (NN:[2236..2241] level))
+                    (PP (IN:[2243..2245] of)
+                      (NP
+                        (NP (NN:[2246..2256] activation))
+                        (PP (IN:[2257..2259] of)
+                          (NP (NN:[2260..2269] guanylate)
+                              (NN:[2270..2277] cyclase)))))))
+                (CC:[2278..2284] and/or)
+                (PP (IN:[2285..2287] at)
+                  (NP
+                    (NP (DT:[2288..2289] a) (NN:[2290..2294] step)
+                        (RB:[2295..2305] downstream))
+                    (PP-LOC (IN:[2306..2308] in)
+                      (NP (JJ:[2309..2315] smooth) (NN:[2316..2322] muscle)))))))))))
+    (.:[2322..2323] .)))
+
+;section 15 Span:2327..2372
+;PMID: 10490922 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2327..2331] PMID) (::[2331..2332] :) (CD:[2333..2341] 10490922)
+        (IN:[2342..2343] -LSB-) (NNP:[2343..2349] PubMed) (HYPH:[2350..2351] -)
+        (JJ:[2352..2359] indexed) (IN:[2360..2363] for)
+        (NNP:[2364..2372] MEDLINE-RSB-)))

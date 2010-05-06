@@ -1,0 +1,445 @@
+;PMID: 2638529
+;source_file_1890.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..112] = [t:48..112]
+;2)section:[e:116..144] = [t:116..144]
+;3)section:[e:148..240] = [t:148..240]
+;4)sentence:[e:244..375] = [t:244..375]
+;5)sentence:[e:376..538] = [t:376..538]
+;6)sentence:[e:539..700] = [t:539..700]
+;7)sentence:[e:701..880] = [t:701..880]
+;8)sentence:[e:881..1101] = [t:881..1101]
+;9)sentence:[e:1103..1281] = [t:1103..1281]
+;10)sentence:[e:1282..1427] = [t:1282..1427]
+;11)sentence:[e:1428..1664] = [t:1428..1664]
+;12)section:[e:1668..1712] = [t:1668..1712]
+
+;section 0 Span:0..42
+;Trans Assoc Am Physicians. 1989;102:44-54.
+(SEC
+  (FRAG
+    (FRAG (NNP:[0..5] Trans) (NNP:[6..11] Assoc) (NNP:[12..14] Am)
+          (NNP:[15..25] Physicians) (.:[25..26] .) (CD:[27..31] 1989)
+          (CD:[31..35] ;102) (CD:[35..38] :44) (CD:[38..41] -54) (.:[41..42] .))))
+
+;sentence 1 Span:48..112
+;The oxidative metabolism of estradiol: inhibition by cimetidine.
+;[76..85]:substance:"estradiol"
+;[101..111]:substance:"cimetidine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (DT:[48..51] The) (JJ:[52..61] oxidative) (NN:[62..72] metabolism))
+      (PP (IN:[73..75] of)
+        (NP (NN:[76..85] estradiol))))
+    (::[85..86] :)
+    (NP
+      (NP (NN:[87..97] inhibition))
+      (PP (IN:[98..100] by)
+        (NP (NN:[101..111] cimetidine))))
+    (.:[111..112] .)))
+
+;section 2 Span:116..144
+;Galbraith RA, Michnovicz JJ.
+(SEC
+  (FRAG (NNP:[116..125] Galbraith) (NNP:[126..128] RA) (,:[128..129] ,)
+        (NNP:[130..140] Michnovicz) (NNP:[141..144] JJ.)))
+
+;section 3 Span:148..240
+;Department of Metabolism-Pharmacology, Rockefeller University Hospital, New 
+;York, NY 10021.
+(SEC
+  (FRAG (NNP:[148..158] Department) (IN:[159..161] of)
+        (NNP:[162..172] Metabolism) (HYPH:[172..173] -)
+        (NNP:[173..185] Pharmacology) (,:[185..186] ,)
+        (NNP:[187..198] Rockefeller) (NNP:[199..209] University)
+        (NNP:[210..218] Hospital) (,:[218..219] ,) (NNP:[220..223] New)
+        (NNP:[225..229] York) (,:[229..230] ,) (NNP:[231..233] NY)
+        (CD:[234..239] 10021) (.:[239..240] .)))
+
+;sentence 4 Span:244..375
+;Cimetidine, a histamine H2 antagonist, is known to interfere with the
+;metabolism  of exogenous drugs by binding to cytochrome P450.
+;[244..254]:substance:"Cimetidine"
+;[258..270]:substance:"histamine H2"
+;[271..281]:substance:"antagonist"
+;[339..344]:substance:"drugs"
+;[359..374]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[244..254] Cimetidine))
+      (,:[254..255] ,)
+      (NP (DT:[256..257] a)
+         (NN:[258..267] histamine) (NN:[268..270] H2)
+        (NN:[271..281] antagonist)))
+    (,:[281..282] ,)
+    (VP (VBZ:[283..285] is)
+      (VP (VBN:[286..291] known)
+        (S
+          (NP-SBJ-1 (-NONE-:[291..291] *))
+          (VP (TO:[292..294] to)
+            (VP (VB:[295..304] interfere)
+              (PP (IN:[305..309] with)
+                (NP
+                  (NP (DT:[310..313] the) (NN:[314..324] metabolism))
+                  (PP (IN:[326..328] of)
+                    (NP (JJ:[329..338] exogenous) (NNS:[339..344] drugs)))))
+              (PP-MNR (IN:[345..347] by)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[347..347] *))
+                  (VP (VBG:[348..355] binding)
+                    (PP (TO:[356..358] to)
+                      (NP (NN:[359..369] cytochrome) (NN:[370..374] P450)))))))))))
+    (.:[374..375] .)))
+
+;sentence 5 Span:376..538
+;We examined the possibility  that cimetidine might also inhibit the
+;cytochrome P450-dependent  biotransformation of endogenous compounds such as
+;steroid hormones.
+;[410..420]:substance:"cimetidine"
+;[444..459]:cyp450:"cytochrome P450"
+;[503..512]:substance:"compounds"
+;[521..537]:substance:"steroid hormones"
+(SENT
+  (S
+    (NP-SBJ (PRP:[376..378] We))
+    (VP (VBD:[379..387] examined)
+      (NP (DT:[388..391] the) (NN:[392..403] possibility)
+        (SBAR (IN:[405..409] that)
+          (S
+            (NP-SBJ (NN:[410..420] cimetidine))
+            (VP (MD:[421..426] might)
+              (ADVP (RB:[427..431] also))
+              (VP (VB:[432..439] inhibit)
+                (NP
+                  (NP (DT:[440..443] the)
+                    (ADJP
+                      (NML (NN:[444..454] cytochrome) (NN:[455..459] P450))
+                      (HYPH:[459..460] -) (JJ:[460..469] dependent))
+                    (NN:[471..488] biotransformation))
+                  (PP (IN:[489..491] of)
+                    (NP
+                      (NP (JJ:[492..502] endogenous) (NNS:[503..512] compounds))
+                      (PP (JJ:[513..517] such) (IN:[518..520] as)
+                        (NP (JJ:[521..528] steroid) (NNS:[529..537] hormones))))))))))))
+    (.:[537..538] .)))
+
+;sentence 6 Span:539..700
+;Utilizing a  radiometric assay and normal male volunteers, the acute effect
+;of intravenous  cimetidine (300 mg loading dose followed by 50 mg/hr) was
+;determined.
+;[631..641]:substance:"cimetidine"
+;[643..646]:quantitative-value:"300"
+;[647..649]:quantitative-units:"mg"
+;[675..677]:quantitative-value:"50"
+;[678..683]:quantitative-units:"mg/hr"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[539..539] *))
+      (VP (VBG:[539..548] Utilizing)
+        (NP
+          (NP (DT:[549..550] a) (JJ:[552..563] radiometric)
+              (NN:[564..569] assay))
+          (CC:[570..573] and)
+          (NP (JJ:[574..580] normal) (JJ:[581..585] male)
+              (NNS:[586..596] volunteers)))))
+    (,:[596..597] ,)
+    (NP-SBJ-1
+      (NP (DT:[598..601] the) (JJ:[602..607] acute) (NN:[608..614] effect))
+      (PP (IN:[615..617] of)
+        (NP
+          (NP (JJ:[618..629] intravenous) (NN:[631..641] cimetidine))
+          (PRN (-LRB-:[642..643] -LRB-)
+            (NP
+              (NP
+                (NML (CD:[643..646] 300) (NN:[647..649] mg))
+                (VBG:[650..657] loading) (NN:[658..662] dose))
+              (VP (VBN:[663..671] followed)
+                (NP (-NONE-:[671..671] *))
+                (PP (IN:[672..674] by)
+                  (NP-LGS
+                    (NP (CD:[675..677] 50) (NN:[678..680] mg))
+                    (PP (SYM:[680..681] /)
+                      (NP (NN:[681..683] hr)))))))
+            (-RRB-:[683..684] -RRB-)))))
+    (VP (VBD:[685..688] was)
+      (VP (VBN:[689..699] determined)
+        (NP-1 (-NONE-:[699..699] *))))
+    (.:[699..700] .)))
+
+;sentence 7 Span:701..880
+;The extent  of 2-hydroxylation of estradiol was reduced by 25% from 29.6 +/-
+;4.4% (mean +/-  SEM) before, to 22.9 +/- 4.0% during cimetidine infusion (n =
+;8; p less than  0.0005).
+;[735..744]:substance:"estradiol"
+;[760..763]:quantitative-value:"25%"
+;[769..782]:quantitative-value:"29.6 +/- 4.4%"
+;[810..823]:quantitative-value:"22.9 +/- 4.0%"
+;[831..841]:substance:"cimetidine"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[701..704] The) (NN:[705..711] extent))
+      (PP (IN:[713..715] of)
+        (NP
+          (NP (NN:[716..731] 2-hydroxylation))
+          (PP (IN:[732..734] of)
+            (NP (NN:[735..744] estradiol))))))
+    (VP (VBD:[745..748] was)
+      (VP (VBN:[749..756] reduced)
+        (NP-2 (-NONE-:[756..756] *))
+        (PP-EXT (IN:[757..759] by)
+          (NP (CD:[760..762] 25) (NN:[762..763] %)))
+        (PP (IN:[764..768] from)
+          (NP
+            (NP
+              (QP (CD:[769..773] 29.6) (SYM:[774..777] +/-) (CD:[778..781] 4.4))
+              (NN:[781..782] %))
+            (PRN (-LRB-:[783..784] -LRB-)
+              (S
+                (NP-SBJ (NN:[784..788] mean))
+                (VP (SYM:[789..792] +/-)
+                  (NP (NN:[794..797] SEM))))
+              (-RRB-:[797..798] -RRB-))
+            (PP-TMP (IN:[799..805] before)
+              (NP-1 (-NONE-:[805..805] *RNR*)))))
+        (,:[805..806] ,)
+        (PP (TO:[807..809] to)
+          (NP
+            (NP
+              (QP (CD:[810..814] 22.9) (SYM:[815..818] +/-) (CD:[819..822] 4.0))
+              (NN:[822..823] %))
+            (PP-TMP (IN:[824..830] during)
+              (NP-1 (-NONE-:[830..830] *RNR*)))))
+        (NP-1 (NN:[831..841] cimetidine) (NN:[842..850] infusion))
+        (PRN (-LRB-:[851..852] -LRB-)
+          (S
+            (S
+              (NP-SBJ (NN:[852..853] n))
+              (VP (SYM:[854..855] =)
+                (NP (CD:[856..857] 8))))
+            (::[857..858] ;)
+            (S
+              (NP-SBJ (NN:[859..860] p))
+              (ADJP-PRD (JJR:[861..865] less)
+                (PP (IN:[866..870] than)
+                  (NP (CD:[872..878] 0.0005))))))
+          (-RRB-:[878..879] -RRB-))))
+    (.:[879..880] .)))
+
+;sentence 8 Span:881..1101
+;Following oral cimetidine (800 mg b.i.d.) for 2 wk, estradiol 
+;2-hydroxylation was decreased by 40% from 31.7 +/- 2.3% to 19.7 +/- 2.4% (n =
+;9;  p less than 0.0001) but 16 alpha-hydroxylation of estradiol was
+;unaffected.
+;[896..906]:substance:"cimetidine"
+;[908..911]:quantitative-value:"800"
+;[912..914]:quantitative-units:"mg"
+;[927..928]:quantitative-value:"2"
+;[929..931]:quantitative-units:"wk"
+;[933..942]:substance:"estradiol"
+;[977..980]:quantitative-value:"40%"
+;[986..999]:quantitative-value:"31.7 +/- 2.3%"
+;[1003..1016]:quantitative-value:"19.7 +/- 2.4%"
+;[1076..1085]:substance:"estradiol"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[881..881] *))
+      (VP (VBG:[881..890] Following)
+        (NP
+          (NP (JJ:[891..895] oral) (NN:[896..906] cimetidine))
+          (PRN (-LRB-:[907..908] -LRB-)
+            (FRAG
+              (NP (CD:[908..911] 800) (NN:[912..914] mg))
+              (ADJP (RB:[915..921] b.i.d.)))
+            (-RRB-:[921..922] -RRB-)))
+        (PP-TMP (IN:[923..926] for)
+          (NP (CD:[927..928] 2) (NN:[929..931] wk)))))
+    (,:[931..932] ,)
+    (S
+      (NP-SBJ-2 (NN:[933..942] estradiol) (NN:[944..959] 2-hydroxylation))
+      (VP (VBD:[960..963] was)
+        (VP (VBN:[964..973] decreased)
+          (NP-2 (-NONE-:[973..973] *))
+          (PP-EXT (IN:[974..976] by)
+            (NP (CD:[977..979] 40) (NN:[979..980] %)))
+          (PP (IN:[981..985] from)
+            (NP
+              (QP (CD:[986..990] 31.7) (SYM:[991..994] +/-) (CD:[995..998] 2.3))
+              (NN:[998..999] %)))
+          (PP (TO:[1000..1002] to)
+            (NP
+              (QP (CD:[1003..1007] 19.7) (SYM:[1008..1011] +/-)
+                  (CD:[1012..1015] 2.4))
+              (NN:[1015..1016] %)))
+          (PRN (-LRB-:[1017..1018] -LRB-)
+            (S
+              (S
+                (NP-SBJ (NN:[1018..1019] n))
+                (VP (SYM:[1020..1021] =)
+                  (NP (CD:[1022..1023] 9))))
+              (::[1023..1024] ;)
+              (S
+                (NP-SBJ (NN:[1026..1027] p))
+                (ADJP-PRD (JJR:[1028..1032] less)
+                  (PP (IN:[1033..1037] than)
+                    (NP (CD:[1038..1044] 0.0001))))))
+            (-RRB-:[1044..1045] -RRB-)))))
+    (CC:[1046..1049] but)
+    (S
+      (NP-SBJ-1
+        (NP (CD:[1050..1052] 16) (NN:[1053..1072] alpha-hydroxylation))
+        (PP (IN:[1073..1075] of)
+          (NP (NN:[1076..1085] estradiol))))
+      (VP (VBD:[1086..1089] was)
+        (VP (JJ:[1090..1100] unaffected)
+          (NP-1 (-NONE-:[1100..1100] *)))))
+    (.:[1100..1101] .)))
+
+;sentence 9 Span:1103..1281
+;Concomitantly, the urinary excretion of 2-hydroxyestrone was decreased by 25%
+;(p  less than 0.002) and the serum estradiol concentration was increased by
+;20% (p  less than 0.04).
+;[1143..1159]:substance:"2-hydroxyestrone"
+;[1177..1180]:quantitative-value:"25%"
+;[1216..1225]:substance:"estradiol"
+;[1257..1260]:quantitative-value:"20%"
+(SENT
+  (S
+    (ADVP-TMP (RB:[1103..1116] Concomitantly))
+    (,:[1116..1117] ,)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[1118..1121] the) (JJ:[1122..1129] urinary)
+            (NN:[1130..1139] excretion))
+        (PP (IN:[1140..1142] of)
+          (NP (NN:[1143..1159] 2-hydroxyestrone))))
+      (VP (VBD:[1160..1163] was)
+        (VP (VBN:[1164..1173] decreased)
+          (NP-2 (-NONE-:[1173..1173] *))
+          (PP-EXT (IN:[1174..1176] by)
+            (NP (CD:[1177..1179] 25) (NN:[1179..1180] %))))
+        (PRN (-LRB-:[1181..1182] -LRB-)
+          (S
+            (NP-SBJ (NN:[1182..1183] p))
+            (ADJP-PRD (JJR:[1185..1189] less)
+              (PP (IN:[1190..1194] than)
+                (NP (CD:[1195..1200] 0.002)))))
+          (-RRB-:[1200..1201] -RRB-))))
+    (CC:[1202..1205] and)
+    (S
+      (NP-SBJ-1 (DT:[1206..1209] the) (NN:[1210..1215] serum)
+                (NN:[1216..1225] estradiol) (NN:[1226..1239] concentration))
+      (VP (VBD:[1240..1243] was)
+        (VP (VBN:[1244..1253] increased)
+          (NP-1 (-NONE-:[1253..1253] *))
+          (PP-EXT (IN:[1254..1256] by)
+            (NP (CD:[1257..1259] 20) (NN:[1259..1260] %)))
+          (PRN (-LRB-:[1261..1262] -LRB-)
+            (S
+              (NP-SBJ (NN:[1262..1263] p))
+              (ADJP-PRD (JJR:[1265..1269] less)
+                (PP (IN:[1270..1274] than)
+                  (NP (CD:[1275..1279] 0.04)))))
+            (-RRB-:[1279..1280] -RRB-)))))
+    (.:[1280..1281] .)))
+
+;sentence 10 Span:1282..1427
+;In contrast, ranitidine, a second generation H2 receptor  antagonist, had no
+;effect on estradiol hydroxylation following 150 mg b.i.d. for  2 wk.
+;[1295..1305]:substance:"ranitidine"
+;[1327..1338]:substance:"H2 receptor"
+;[1340..1350]:substance:"antagonist"
+;[1369..1378]:substance:"estradiol"
+;[1403..1406]:quantitative-value:"150"
+;[1407..1409]:quantitative-units:"mg"
+;[1422..1423]:quantitative-value:"2"
+;[1424..1426]:quantitative-units:"wk"
+(SENT
+  (S
+    (PP (IN:[1282..1284] In)
+      (NP (NN:[1285..1293] contrast)))
+    (,:[1293..1294] ,)
+    (NP-SBJ
+      (NP (NN:[1295..1305] ranitidine))
+      (,:[1305..1306] ,)
+      (NP (DT:[1307..1308] a)
+        (NML (JJ:[1309..1315] second) (NN:[1316..1326] generation))
+         (NN:[1327..1329] H2) (NN:[1330..1338] receptor)
+        (NN:[1340..1350] antagonist)))
+    (,:[1350..1351] ,)
+    (VP (VBD:[1352..1355] had)
+      (NP (DT:[1356..1358] no) (NN:[1359..1365] effect))
+      (PP (IN:[1366..1368] on)
+        (NP (NN:[1369..1378] estradiol) (NN:[1379..1392] hydroxylation)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[1392..1392] *))
+        (VP (VBG:[1393..1402] following)
+          (NP
+            (NP (CD:[1403..1406] 150) (NN:[1407..1409] mg))
+            (ADJP (RB:[1410..1416] b.i.d.)))
+          (PP (IN:[1417..1420] for)
+            (NP (CD:[1422..1423] 2) (NN:[1424..1426] wk))))))
+    (.:[1426..1427] .)))
+
+;sentence 11 Span:1428..1664
+;The inhibition of estradiol 2-hydroxylation and the increase in serum 
+;estradiol concentrations caused by cimetidine administration may help to
+;account  for the symptoms of hyperestrogenization reported in long-term
+;cimetidine  therapy.
+;[1446..1455]:substance:"estradiol"
+;[1499..1508]:substance:"estradiol"
+;[1534..1544]:substance:"cimetidine"
+;[1644..1654]:substance:"cimetidine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP
+          (NP (DT:[1428..1431] The) (NN:[1432..1442] inhibition))
+          (PP (IN:[1443..1445] of)
+            (NP (NN:[1446..1455] estradiol) (NN:[1456..1471] 2-hydroxylation))))
+        (CC:[1472..1475] and)
+        (NP
+          (NP (DT:[1476..1479] the) (NN:[1480..1488] increase))
+          (PP (IN:[1489..1491] in)
+            (NP (NN:[1492..1497] serum) (NN:[1499..1508] estradiol)
+                (NNS:[1509..1523] concentrations)))))
+      (VP (VBN:[1524..1530] caused)
+        (NP (-NONE-:[1530..1530] *))
+        (PP (IN:[1531..1533] by)
+          (NP (NN:[1534..1544] cimetidine) (NN:[1545..1559] administration)))))
+    (VP (MD:[1560..1563] may)
+      (VP (VB:[1564..1568] help)
+        (S
+          (NP-SBJ (-NONE-:[1568..1568] *))
+          (VP (TO:[1569..1571] to)
+            (VP (VB:[1572..1579] account)
+              (PP-CLR (IN:[1581..1584] for)
+                (NP
+                  (NP
+                    (NP (DT:[1585..1588] the) (NNS:[1589..1597] symptoms))
+                    (PP (IN:[1598..1600] of)
+                      (NP (NN:[1601..1621] hyperestrogenization))))
+                  (VP (VBN:[1622..1630] reported)
+                    (NP (-NONE-:[1630..1630] *))
+                    (PP (IN:[1631..1633] in)
+                      (NP
+                        (NML (JJ:[1634..1638] long) (HYPH:[1638..1639] -)
+                             (NN:[1639..1643] term))
+                        (NN:[1644..1654] cimetidine) (NN:[1656..1663] therapy)))))))))))
+    (.:[1663..1664] .)))
+
+;section 12 Span:1668..1712
+;PMID: 2638529 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1668..1672] PMID) (::[1672..1673] :) (CD:[1674..1681] 2638529)
+        (NN:[1682..1683] -LSB-) (NNP:[1683..1689] PubMed) (::[1690..1691] -)
+        (NN:[1692..1699] indexed) (IN:[1700..1703] for)
+        (NNP:[1704..1712] MEDLINE-RSB-)))

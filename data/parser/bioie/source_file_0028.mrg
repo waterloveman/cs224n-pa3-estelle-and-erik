@@ -1,0 +1,569 @@
+;PMID: 2604739
+;source_file_1891.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..114] = [t:52..114]
+;2)sentence:[e:115..198] = [t:115..198]
+;3)section:[e:202..221] = [t:202..221]
+;4)section:[e:225..305] = [t:225..305]
+;5)sentence:[e:309..404] = [t:309..404]
+;6)sentence:[e:405..552] = [t:405..552]
+;7)sentence:[e:553..705] = [t:553..705]
+;8)sentence:[e:707..891] = [t:707..891]
+;9)sentence:[e:892..1115] = [t:892..1115]
+;10)sentence:[e:1116..1313] = [t:1116..1313]
+;11)sentence:[e:1314..1447] = [t:1314..1447]
+;12)sentence:[e:1448..1613] = [t:1448..1613]
+;13)sentence:[e:1614..1806] = [t:1614..1806]
+;14)sentence:[e:1807..1930] = [t:1807..1930]
+;15)sentence:[e:1931..2099] = [t:1931..2099]
+;16)sentence:[e:2100..2262] = [t:2100..2262]
+;17)section:[e:2266..2310] = [t:2266..2310]
+
+;section 0 Span:0..46
+;Biochem Pharmacol. 1989 Dec 15;38(24):4359-65.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (,:[17..18] .)
+        (CD:[19..23] 1989) (NNP:[24..27] Dec) (CC:[28..34] 15;38-LRB-)
+        (CD:[34..36] 24) (-RRB-:[36..37] -RRB-) (CD:[37..41] :435)
+        (CD:[41..42] 9) (NN:[42..43] -) (CD:[43..45] 65) (.:[45..46] .)))
+
+;sentence 1 Span:52..114
+;In vitro inhibition of hepatic drug oxidation by thioridazine.
+;[83..87]:substance:"drug"
+;[101..113]:substance:"thioridazine"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (FW:[52..54] In) (FW:[55..60] vitro))
+      (NN:[61..71] inhibition))
+    (PP (IN:[72..74] of)
+      (NP (JJ:[75..82] hepatic) (NN:[83..87] drug) (NN:[88..97] oxidation)))
+    (PP (IN:[98..100] by)
+      (NP (NN:[101..113] thioridazine)))
+    (.:[113..114] .)))
+
+;sentence 2 Span:115..198
+;Kinetic analysis  of the inhibition of cytochrome P-450 isoform-specific
+;reactions.
+;[154..178]:cyp450:"cytochrome P-450 isoform"
+(SENT
+  (NP-HLN
+    (NP (JJ:[115..122] Kinetic) (NN:[123..131] analysis))
+    (PP (IN:[133..135] of)
+      (NP
+        (NP (DT:[136..139] the) (NN:[140..150] inhibition))
+        (PP (IN:[151..153] of)
+          (NP
+            (ADJP
+              (NML
+                (NML (NN:[154..164] cytochrome) (NN:[165..170] P-450))
+                (NN:[171..178] isoform))
+              (HYPH:[178..179] -) (JJ:[179..187] specific))
+            (NNS:[188..197] reactions)))))
+    (.:[197..198] .)))
+
+;section 3 Span:202..221
+;Murray M, Reidy GF.
+(SEC
+  (FRAG (NNP:[202..208] Murray) (NNP:[209..211] M,) (NNP:[212..217] Reidy)
+        (NNP:[218..221] GF.)))
+
+;section 4 Span:225..305
+;Department of Medicine, University of Sydney, Westmead Hospital, NSW,
+;Australia.
+(SEC
+  (FRAG (NNP:[225..235] Department) (IN:[236..238] of) (NNP:[239..247] Medicine)
+        (,:[247..248] ,) (NNP:[249..259] University) (IN:[260..262] of)
+        (NNP:[263..269] Sydney) (,:[269..270] ,) (NNP:[271..279] Westmead)
+        (NNP:[280..288] Hospital) (,:[288..289] ,) (NNP:[290..293] NSW)
+        (,:[293..294] ,) (NNP:[295..304] Australia) (.:[304..305] .)))
+
+;sentence 5 Span:309..404
+;The phenothiazine tranquilizer thioridazine has been associated with drug 
+;interactions in man.
+;[313..339]:substance:"phenothiazine tranquilizer"
+;[340..352]:substance:"thioridazine"
+;[378..382]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[309..312] The)
+         (NN:[313..326] phenothiazine) (NN:[327..339] tranquilizer))
+      (NP (NN:[340..352] thioridazine)))
+    (VP (VBZ:[353..356] has)
+      (VP (VBN:[357..361] been)
+        (VP (VBN:[362..372] associated)
+          (NP-1 (-NONE-:[372..372] *))
+          (PP-CLR (IN:[373..377] with)
+            (NP (NN:[378..382] drug) (NNS:[384..396] interactions)))
+          (PP-LOC (IN:[397..399] in)
+            (NP (NN:[400..403] man))))))
+    (.:[403..404] .)))
+
+;sentence 6 Span:405..552
+;This study investigated the capacity of the drug to inhibit  hepatic drug
+;oxidations mediated by cytochromes P-450 (P-450) in microsomes in  vitro.
+;[449..453]:substance:"drug"
+;[474..478]:substance:"drug"
+;[502..519]:cyp450:"cytochromes P-450"
+;[521..526]:cyp450:"P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[405..409] This) (NN:[410..415] study))
+    (VP (VBD:[416..428] investigated)
+      (NP
+        (NP (DT:[429..432] the) (NN:[433..441] capacity)
+          (S-1 (-NONE-:[441..441] *ICH*)))
+        (PP (IN:[442..444] of)
+          (NP (DT:[445..448] the) (NN:[449..453] drug)))
+        (S-1
+          (NP-SBJ (-NONE-:[453..453] *))
+          (VP (TO:[454..456] to)
+            (VP (VB:[457..464] inhibit)
+              (NP
+                (NP (JJ:[466..473] hepatic) (NN:[474..478] drug)
+                    (NNS:[479..489] oxidations))
+                (VP (VBN:[490..498] mediated)
+                  (NP (-NONE-:[498..498] *))
+                  (PP-MNR (IN:[499..501] by)
+                    (NP
+                      (NP
+                        (NP (NNS:[502..513] cytochromes) (NN:[514..519] P-450))
+                        (NP (-LRB-:[520..521] -LRB-) (NN:[521..526] P-450)
+                            (-RRB-:[526..527] -RRB-)))
+                      (PP-LOC (IN:[528..530] in)
+                        (NP (NNS:[531..541] microsomes)))))
+                  (ADVP (FW:[542..544] in) (FW:[546..551] vitro)))))))))
+    (.:[551..552] .)))
+
+;sentence 7 Span:553..705
+;Thioridazine was a potent linear mixed-type inhibitor of P-450b-dependent 
+;7-pentoxyresorufin O-depentylase activity in phenobarbital-induced rat
+;liver.
+;[553..565]:substance:"Thioridazine"
+;[597..606]:substance:"inhibitor"
+;[610..616]:cyp450:"P-450b"
+;[628..660]:substance:"7-pentoxyresorufin O-depentylase"
+;[673..686]:substance:"phenobarbital"
+(SENT
+  (S
+    (NP-SBJ (NN:[553..565] Thioridazine))
+    (VP (VBD:[566..569] was)
+      (NP-PRD
+        (NP (DT:[570..571] a) (JJ:[572..578] potent) (JJ:[579..585] linear)
+          (NML (VBN:[586..591] mixed) (HYPH:[591..592] -) (NN:[592..596] type))
+          (NN:[597..606] inhibitor))
+        (PP (IN:[607..609] of)
+          (NP
+            (ADJP (NN:[610..616] P-450b) (HYPH:[616..617] -)
+                  (JJ:[617..626] dependent))
+             (NN:[628..646] 7-pentoxyresorufin) (NN:[647..660] O-depentylase)
+            (NN:[661..669] activity))))
+      (PP-LOC (IN:[670..672] in)
+        (NP
+          (ADJP (NN:[673..686] phenobarbital) (HYPH:[686..687] -)
+                (VBN:[687..694] induced))
+          (NN:[695..698] rat) (NN:[699..704] liver))))
+    (.:[704..705] .)))
+
+;sentence 8 Span:707..891
+;The kinetic analysis revealed the enzyme-substrate dissociation constant (Ks)
+;to  be 1.6 microM whereas the dissociation constant of the enzyme-inhibitor
+;complex  (Ki) was 0.11 microM.
+;[741..747]:substance:"enzyme"
+;[748..757]:substance:"substrate"
+;[781..783]:quantitative-name:"Ks"
+;[792..795]:quantitative-value:"1.6"
+;[796..802]:quantitative-units:"microM"
+;[844..868]:substance:"enzyme-inhibitor complex"
+;[871..873]:quantitative-name:"Ki"
+;[879..883]:quantitative-value:"0.11"
+;[884..890]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (DT:[707..710] The) (JJ:[711..718] kinetic) (NN:[719..727] analysis))
+    (VP (VBD:[728..736] revealed)
+      (S
+        (NP-SBJ (DT:[737..740] the)
+          (NML (NN:[741..747] enzyme) (HYPH:[747..748] -)
+               (NN:[748..757] substrate))
+          (NN:[758..770] dissociation) (NN:[771..779] constant)
+          (PRN (-LRB-:[780..781] -LRB-)
+            (NP (NN:[781..783] Ks))
+            (-RRB-:[783..784] -RRB-)))
+        (VP (TO:[785..787] to)
+          (VP (VB:[789..791] be)
+            (NP-PRD (CD:[792..795] 1.6) (NN:[796..802] microM)))))
+      (SBAR-ADV (IN:[803..810] whereas)
+        (S
+          (NP-SBJ
+            (NP (DT:[811..814] the) (NN:[815..827] dissociation)
+                (NN:[828..836] constant))
+            (PP (IN:[837..839] of)
+              (NP (DT:[840..843] the)
+                
+                (NML (NN:[844..850] enzyme) (HYPH:[850..851] -)
+                     (NN:[851..860] inhibitor))
+                (NN:[861..868] complex)))
+            (PRN (-LRB-:[870..871] -LRB-)
+              (NP (NN:[871..873] Ki))
+              (-RRB-:[873..874] -RRB-)))
+          (VP (VBD:[875..878] was)
+            (NP-PRD (CD:[879..883] 0.11) (NN:[884..890] microM))))))
+    (.:[890..891] .)))
+
+;sentence 9 Span:892..1115
+;In contrast, 7-ethoxyresorufin O-deethylase activity  (mediated by P-450c) in
+;beta-naphthoflavone-induced rat hepatic microsomes was  inhibited to a lesser
+;extent (Ki = 2.4 microM) in relation to the Ks value (0.5  microM).
+;[905..935]:substance:"7-ethoxyresorufin O-deethylase"
+;[959..965]:cyp450:"P-450c"
+;[970..989]:substance:"beta-naphthoflavone"
+;[1056..1058]:quantitative-name:"Ki"
+;[1061..1064]:quantitative-value:"2.4"
+;[1065..1071]:quantitative-units:"microM"
+;[1092..1094]:quantitative-name:"Ks"
+;[1102..1105]:quantitative-value:"0.5"
+;[1107..1113]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[892..894] In)
+      (NP (NN:[895..903] contrast)))
+    (,:[903..904] ,)
+    (NP-SBJ
+      (NP
+         (NN:[905..922] 7-ethoxyresorufin) (NN:[923..935] O-deethylase)
+        (NN:[936..944] activity))
+      (PRN (-LRB-:[946..947] -LRB-)
+        (VP (VBN:[947..955] mediated)
+          (NP (-NONE-:[955..955] *))
+          (PP (IN:[956..958] by)
+            (NP-LGS (NN:[959..965] P-450c))))
+        (-RRB-:[965..966] -RRB-))
+      (PP-LOC (IN:[967..969] in)
+        (NP
+          (ADJP (NN:[970..989] beta-naphthoflavone) (HYPH:[989..990] -)
+                (VBN:[990..997] induced))
+          (NN:[998..1001] rat) (JJ:[1002..1009] hepatic)
+           (NNS:[1010..1020] microsomes))))
+    (VP (VBD:[1021..1024] was)
+      (VP (VBN:[1026..1035] inhibited)
+        (PP-EXT (TO:[1036..1038] to)
+          (NP (DT:[1039..1040] a) (JJR:[1041..1047] lesser)
+              (NN:[1048..1054] extent)
+            (PRN (-LRB-:[1055..1056] -LRB-)
+              (S
+                (NP-SBJ (NN:[1056..1058] Ki))
+                (VP (SYM:[1059..1060] =)
+                  (NP (CD:[1061..1064] 2.4) (NN:[1065..1071] microM))))
+              (-RRB-:[1071..1072] -RRB-))))
+        (PP (IN:[1073..1075] in)
+          (NP
+            (NP (NN:[1076..1084] relation))
+            (PP (TO:[1085..1087] to)
+              (NP (DT:[1088..1091] the) (NN:[1092..1094] Ks)
+                  (NN:[1095..1100] value)
+                (PRN (-LRB-:[1101..1102] -LRB-)
+                  (NP (CD:[1102..1105] 0.5) (NN:[1107..1113] microM))
+                  (-RRB-:[1113..1114] -RRB-))))))))
+    (.:[1114..1115] .)))
+
+;sentence 10 Span:1116..1313
+;Spectral studies indicated that the efficiency of thioridazine binding  in
+;phenobarbital-induced microsomes was about 25-fold greater than in microsomes
+; from beta-naphthoflavone-induced rat liver.
+;[1166..1178]:substance:"thioridazine"
+;[1191..1204]:substance:"phenobarbital"
+;[1234..1254]:quantitative-value:"25-fold greater than"
+;[1275..1294]:substance:"beta-naphthoflavone"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1116..1124] Spectral) (NNS:[1125..1132] studies))
+    (VP (VBD:[1133..1142] indicated)
+      (SBAR (IN:[1143..1147] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1148..1151] the) (NN:[1152..1162] efficiency))
+            (PP (IN:[1163..1165] of)
+              (NP (NN:[1166..1178] thioridazine) (NN:[1179..1186] binding)))
+            (PP-LOC (IN:[1188..1190] in)
+              (NP
+                (ADJP (NN:[1191..1204] phenobarbital) (HYPH:[1204..1205] -)
+                      (VBN:[1205..1212] induced))
+                (NNS:[1213..1223] microsomes))))
+          (VP (VBD:[1224..1227] was)
+            (ADJP-PRD
+              (ADJP
+                (ADVP
+                  (QP (RB:[1228..1233] about) (CD:[1234..1236] 25)
+                      (HYPH:[1236..1237] -) (RB:[1237..1241] fold)))
+                (JJR:[1242..1249] greater))
+              (PP (IN:[1250..1254] than)
+                (PP-LOC (IN:[1255..1257] in)
+                  (NP
+                    (NP (NNS:[1258..1268] microsomes))
+                    (PP (IN:[1270..1274] from)
+                      (NP
+                        (ADJP (NN:[1275..1294] beta-naphthoflavone)
+                              (HYPH:[1294..1295] -) (VBN:[1295..1302] induced))
+                        (NN:[1303..1306] rat) (NN:[1307..1312] liver)))))))))))
+    (.:[1312..1313] .)))
+
+;sentence 11 Span:1314..1447
+;This finding is consistent with the  relative capacity of thioridazine to
+;inhibit oxidase activities catalyzed by  P-450b and P-450c.
+;[1372..1384]:substance:"thioridazine"
+;[1396..1403]:substance:"oxidase"
+;[1429..1435]:cyp450:"P-450b"
+;[1440..1446]:cyp450:"P-450c"
+(SENT
+  (S
+    (NP-SBJ (DT:[1314..1318] This) (NN:[1319..1326] finding))
+    (VP (VBZ:[1327..1329] is)
+      (ADJP-PRD (JJ:[1330..1340] consistent)
+        (PP (IN:[1341..1345] with)
+          (NP
+            (NP (DT:[1346..1349] the) (JJ:[1351..1359] relative)
+                (NN:[1360..1368] capacity)
+              (S-1 (-NONE-:[1368..1368] *ICH*)))
+            (PP (IN:[1369..1371] of)
+              (NP (NN:[1372..1384] thioridazine)))
+            (S-1
+              (NP-SBJ (-NONE-:[1384..1384] *))
+              (VP (TO:[1385..1387] to)
+                (VP (VB:[1388..1395] inhibit)
+                  (NP
+                    (NP (NN:[1396..1403] oxidase) (NNS:[1404..1414] activities))
+                    (VP (VBN:[1415..1424] catalyzed)
+                      (NP (-NONE-:[1424..1424] *))
+                      (PP (IN:[1425..1427] by)
+                        (NP-LGS (NN:[1429..1435] P-450b) (CC:[1436..1439] and)
+                                (NN:[1440..1446] P-450c))))))))))))
+    (.:[1446..1447] .)))
+
+;sentence 12 Span:1448..1613
+;Mixed-function oxidase activities catalysed by other P-450s  were also
+;inhibited by thioridazine, although to a lesser extent than those  catalysed
+;by forms b and c.
+;[1463..1470]:substance:"oxidase"
+;[1501..1507]:cyp450:"P-450s"
+;[1532..1544]:substance:"thioridazine"
+;[1599..1606]:cyp450:"forms b"
+;[1599..1604]...[1611..1612]:cyp450:"forms"..."c"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (VBN:[1448..1453] Mixed) (HYPH:[1453..1454] -)
+             (NN:[1454..1462] function))
+        (NN:[1463..1470] oxidase) (NNS:[1471..1481] activities))
+      (VP (VBN:[1482..1491] catalysed)
+        (NP (-NONE-:[1491..1491] *))
+        (PP (IN:[1492..1494] by)
+          (NP-LGS (JJ:[1495..1500] other) (NNS:[1501..1507] P-450s)))))
+    (VP (VBD:[1509..1513] were)
+      (ADVP (RB:[1514..1518] also))
+      (VP (VBN:[1519..1528] inhibited)
+        (PP (IN:[1529..1531] by)
+          (NP-LGS (NN:[1532..1544] thioridazine)))
+        (,:[1544..1545] ,)
+        (PP (IN:[1546..1554] although)
+          (PP (TO:[1555..1557] to)
+            (NP
+              (NP (DT:[1558..1559] a) (JJR:[1560..1566] lesser)
+                  (NN:[1567..1573] extent))
+              (PP (IN:[1574..1578] than)
+                (NP
+                  (NP (DT:[1579..1584] those))
+                  (VP (VBN:[1586..1595] catalysed)
+                    (NP (-NONE-:[1595..1595] *))
+                    (PP (IN:[1596..1598] by)
+                      (NP-LGS
+                        (NP
+                          (NML-1 (NNS:[1599..1604] forms))
+                          (NN:[1605..1606] b))
+                        (CC:[1607..1610] and)
+                        (NP
+                          (NML-1 (-NONE-:[1610..1610] *P*))
+                          (NN:[1611..1612] c))))))))))))
+    (.:[1612..1613] .)))
+
+;sentence 13 Span:1614..1806
+;Thus, the 6 beta- and 16 beta-hydroxylations of  androst-4-ene-3,17-dione in
+;hepatic microsomes from untreated rats were  inhibited to a similar extent
+;(I50S = 52 and 43 microM, respectively).
+;[1663..1687]:substance:"androst-4-ene-3,17-dione"
+;[1767..1771]:quantitative-name:"I50S"
+;[1774..1776]:quantitative-value:"52"
+;[1781..1783]:quantitative-value:"43"
+;[1784..1790]:quantitative-units:"microM"
+(SENT
+  (S
+    (ADVP (RB:[1614..1618] Thus))
+    (,:[1618..1619] ,)
+    (NP-SBJ-3
+      (NP (DT:[1620..1623] the)
+        (NML
+          (NML
+            (NML (CD:[1624..1625] 6) (SYM:[1626..1630] beta))
+            (HYPH:[1630..1631] -)
+            (NML-2 (-NONE-:[1631..1631] *P*)))
+          (CC:[1632..1635] and)
+          (NML
+            (NML (CD:[1636..1638] 16) (SYM:[1639..1643] beta))
+            (HYPH:[1643..1644] -)
+            (NML-2 (NNS:[1644..1658] hydroxylations)))))
+      (PP (IN:[1659..1661] of)
+        (NP (NN:[1663..1687] androst-4-ene-3,17-dione)))
+      (PP-LOC (IN:[1688..1690] in)
+        (NP
+          (NP (JJ:[1691..1698] hepatic) (NNS:[1699..1709] microsomes))
+          (PP (IN:[1710..1714] from)
+            (NP (JJ:[1715..1724] untreated) (NNS:[1725..1729] rats))))))
+    (VP (VBD:[1730..1734] were)
+      (VP (VBN:[1736..1745] inhibited)
+        (NP-3 (-NONE-:[1745..1745] *))
+        (PP (TO:[1746..1748] to)
+          (NP (DT:[1749..1750] a) (JJ:[1751..1758] similar)
+              (NN:[1759..1765] extent)))
+        (PRN (-LRB-:[1766..1767] -LRB-)
+          (S
+            (NP-SBJ (NN:[1767..1771] I50S))
+            (VP (SYM:[1772..1773] =)
+              (NP
+                (NP (CD:[1774..1776] 52)
+                  (NML-1 (-NONE-:[1776..1776] *P*)))
+                (CC:[1777..1780] and)
+                (NP (CD:[1781..1783] 43)
+                  (NML-1 (NN:[1784..1790] microM))))
+              (,:[1790..1791] ,)
+              (ADVP (RB:[1792..1804] respectively))))
+          (-RRB-:[1804..1805] -RRB-))))
+    (.:[1805..1806] .)))
+
+;sentence 14 Span:1807..1930
+;The 7  alpha- and 16 alpha-hydroxylase pathways were approximately only half
+;as  susceptible to inhibition by thioridazine.
+;[1811..1820]...[1834..1845]:substance:"7  alpha-"..."hydroxylase"
+;[1825..1845]:substance:"16 alpha-hydroxylase"
+;[1917..1929]:substance:"thioridazine"
+(SENT
+  (S
+    (NP-SBJ (DT:[1807..1810] The)
+      (NML
+        (NML
+          (NML
+            (NML (CD:[1811..1812] 7) (SYM:[1814..1819] alpha))
+            (HYPH:[1819..1820] -)
+            (NML-1 (-NONE-:[1820..1820] *P*)))
+          (NML-2 (-NONE-:[1820..1820] *P*)))
+        (CC:[1821..1824] and)
+        (NML
+          (NML
+            (NML (CD:[1825..1827] 16) (SYM:[1828..1833] alpha))
+            (HYPH:[1833..1834] -)
+            (NML-1 (NN:[1834..1845] hydroxylase)))
+          (NML-2 (NNS:[1846..1854] pathways)))))
+    (VP (VBD:[1855..1859] were)
+      (ADJP-PRD
+        (QP (RB:[1860..1873] approximately) (RB:[1874..1878] only)
+            (RB:[1879..1883] half) (RB:[1884..1886] as))
+        (JJ:[1888..1899] susceptible)
+        (PP (TO:[1900..1902] to)
+          (NP
+            (NP (NN:[1903..1913] inhibition))
+            (PP (IN:[1914..1916] by)
+              (NP (NN:[1917..1929] thioridazine)))))))
+    (.:[1929..1930] .)))
+
+;sentence 15 Span:1931..2099
+;These findings demonstrate the  capacity of thioridazine to inhibit a range
+;of P-450-dependent drug oxidations,  with those catalysed by forms b and c
+;most susceptible.
+;[1975..1987]:substance:"thioridazine"
+;[2010..2015]:cyp450:"P-450"
+;[2026..2030]:substance:"drug"
+;[2068..2075]:cyp450:"forms b"
+;[2068..2073]...[2080..2081]:cyp450:"forms"..."c"
+(SENT
+  (S
+    (NP-SBJ (DT:[1931..1936] These) (NNS:[1937..1945] findings))
+    (VP (VBP:[1946..1957] demonstrate)
+      (NP
+        (NP (DT:[1958..1961] the) (NN:[1963..1971] capacity))
+        (PP (IN:[1972..1974] of)
+          (NP (NN:[1975..1987] thioridazine)))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1987..1987] *))
+          (VP (TO:[1988..1990] to)
+            (VP (VB:[1991..1998] inhibit)
+              (NP
+                (NP (DT:[1999..2000] a) (NN:[2001..2006] range))
+                (PP (IN:[2007..2009] of)
+                  (NP
+                    (ADJP (NN:[2010..2015] P-450) (HYPH:[2015..2016] -)
+                          (JJ:[2016..2025] dependent))
+                    (NN:[2026..2030] drug) (NNS:[2031..2041] oxidations))))
+              (,:[2041..2042] ,)
+              (PP (IN:[2044..2048] with)
+                (S-NOM
+                  (NP-SBJ
+                    (NP (DT:[2049..2054] those))
+                    (VP (VBN:[2055..2064] catalysed)
+                      (NP (-NONE-:[2064..2064] *))
+                      (PP (IN:[2065..2067] by)
+                        (NP-LGS
+                          (NP
+                            (NML-1 (NNS:[2068..2073] forms))
+                            (NN:[2074..2075] b))
+                          (CC:[2076..2079] and)
+                          (NP
+                            (NML-1 (-NONE-:[2079..2079] *P*))
+                            (NN:[2080..2081] c))))))
+                  (ADJP-PRD (RBS:[2082..2086] most)
+                            (JJ:[2087..2098] susceptible)))))))))
+    (.:[2098..2099] .)))
+
+;sentence 16 Span:2100..2262
+;The present study  strongly suggests that drug interactions elicited by
+;thioridazine are most  likely a consequence of inhibitory interactions with
+;P-450 enzymes.
+;[2142..2146]:substance:"drug"
+;[2172..2184]:substance:"thioridazine"
+;[2248..2261]:cyp450:"P-450 enzymes"
+(SENT
+  (S
+    (NP-SBJ (DT:[2100..2103] The) (JJ:[2104..2111] present)
+            (NN:[2112..2117] study))
+    (ADVP (RB:[2119..2127] strongly))
+    (VP (VBZ:[2128..2136] suggests)
+      (SBAR (IN:[2137..2141] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[2142..2146] drug) (NNS:[2147..2159] interactions))
+            (VP (VBN:[2160..2168] elicited)
+              (NP (-NONE-:[2168..2168] *))
+              (PP (IN:[2169..2171] by)
+                (NP-LGS (NN:[2172..2184] thioridazine)))))
+          (VP (VBP:[2185..2188] are)
+            (ADVP (RBS:[2189..2193] most) (RB:[2195..2201] likely))
+            (NP-PRD
+              (NP (DT:[2202..2203] a) (NN:[2204..2215] consequence))
+              (PP (IN:[2216..2218] of)
+                (NP
+                  (NP (JJ:[2219..2229] inhibitory)
+                      (NNS:[2230..2242] interactions))
+                  (PP (IN:[2243..2247] with)
+                    (NP (NN:[2248..2253] P-450) (NNS:[2254..2261] enzymes))))))))))
+    (.:[2261..2262] .)))
+
+;section 17 Span:2266..2310
+;PMID: 2604739 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2266..2270] PMID) (::[2270..2271] :) (CD:[2272..2279] 2604739)
+        (NN:[2280..2281] -LSB-) (NNP:[2281..2287] PubMed) (::[2288..2289] -)
+        (NN:[2290..2297] indexed) (IN:[2298..2301] for)
+        (NNP:[2302..2310] MEDLINE-RSB-)))

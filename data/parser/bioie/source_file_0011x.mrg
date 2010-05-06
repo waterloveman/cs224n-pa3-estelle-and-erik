@@ -1,0 +1,434 @@
+;PMID: 7576742
+;source_file_1179.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)sentence:[e:34..151] = [t:34..151]
+;2)section:[e:155..227] = [t:155..227]
+;3)section:[e:231..308] = [t:231..308]
+;4)sentence:[e:312..477] = [t:312..477]
+;5)sentence:[e:478..661] = [t:478..661]
+;6)sentence:[e:662..784] = [t:662..784]
+;7)sentence:[e:785..917] = [t:785..917]
+;8)sentence:[e:918..1116] = [t:918..1116]
+;9)sentence:[e:1117..1270] = [t:1117..1270]
+;10)sentence:[e:1271..1376] = [t:1271..1376]
+;11)sentence:[e:1377..1446] = [t:1377..1446]
+;12)sentence:[e:1447..1744] = [t:1447..1744]
+;13)section:[e:1748..1792] = [t:1748..1792]
+
+;section 0 Span:0..29
+;Acta Oncol  1995;34(6):759-65
+(SEC
+  (FRAG (IN:[0..4] Acta) (NNP:[5..10] Oncol) (CD:[12..16] 1995)
+        (.:[16..20] ;34-LRB-) (CD:[20..22] 6-RRB-) (CD:[22..26] :759)
+        (HYPH:[26..27] -) (CD:[27..29] 65)))
+
+;sentence 1 Span:34..151
+;Glutathione transferase P1-1 expression in human melanoma metastases: 
+;correlation to N-RAS mutations and expression.
+;[34..62]:gene-protein:"Glutathione transferase P1-1"
+;[83..102]:malignancy:"melanoma metastases"
+;[120..125]:gene-rna:"N-RAS"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NML
+          (NML (NN:[34..45] Glutathione) (NN:[46..57] transferase))
+          (NN:[58..62] P1-1))
+        (NN:[63..73] expression))
+      (PP-LOC (IN:[74..76] in)
+        (NP (JJ:[77..82] human)
+           (NN:[83..91] melanoma) (NNS:[92..102] metastases))))
+    (::[102..103] :)
+    (NP
+      (NP (NN:[105..116] correlation))
+      (PP (TO:[117..119] to)
+        (NP
+          (NP
+            (NML-1 (NN:[120..125] N-RAS))
+            (NNS:[126..135] mutations))
+          (CC:[136..139] and)
+          (NP
+            (NML-1 (-NONE-:[139..139] *P*))
+            (NN:[140..150] expression)))))
+    (.:[150..151] .)))
+
+;section 2 Span:155..227
+;Platz A, Jungnelius U, Grafstrom E, Lagerlof B, Mannervik B, Ringborg U.
+(SEC
+  (FRAG (NNP:[155..160] Platz) (NNP:[161..162] A) (,:[162..163] ,)
+        (NNP:[164..174] Jungnelius) (NNP:[175..176] U) (,:[176..177] ,)
+        (NNP:[178..187] Grafstrom) (NNP:[188..189] E) (,:[189..190] ,)
+        (NNP:[191..199] Lagerlof) (NNP:[200..201] B) (,:[201..202] ,)
+        (NNP:[203..212] Mannervik) (NNP:[213..214] B) (,:[214..215] ,)
+        (NNP:[216..224] Ringborg) (NNP:[225..227] U.)))
+
+;section 3 Span:231..308
+;Department of Oncology, Radiumhemmet, Karolinska Hospital, Stockholm,
+;Sweden.
+(SEC
+  (FRAG (NNP:[231..241] Department) (IN:[242..244] of) (NNP:[245..253] Oncology)
+        (,:[253..254] ,) (NNP:[255..267] Radiumhemmet) (,:[267..268] ,)
+        (NNP:[269..279] Karolinska) (NNP:[280..288] Hospital) (,:[288..289] ,)
+        (NNP:[290..299] Stockholm) (,:[299..300] ,) (NNP:[301..307] Sweden)
+        (.:[307..308] .)))
+
+;sentence 4 Span:312..477
+;Expression of the detoxication enzyme glutathione transferase P1-1 (GST P1-1)
+;at  elevated levels has been noted in many types of human tumors, including 
+;melanomas.
+;[350..378]:gene-protein:"glutathione transferase P1-1"
+;[380..388]:gene-protein:"GST P1-1"
+;[467..476]:malignancy:"melanomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[312..322] Expression))
+      (PP (IN:[323..325] of)
+        (NP
+          (NP (DT:[326..329] the) (NN:[330..342] detoxication)
+              (NN:[343..349] enzyme))
+          (NP
+            (NP
+              (NML (NN:[350..361] glutathione) (NN:[362..373] transferase))
+              (NN:[374..378] P1-1))
+            (NP (-LRB-:[379..380] -LRB-)
+               (NN:[380..383] GST) (NN:[384..388] P1-1)
+              (-RRB-:[388..389] -RRB-)))))
+      (PP (IN:[390..392] at)
+        (NP (VBN:[394..402] elevated) (NNS:[403..409] levels))))
+    (VP (VBZ:[410..413] has)
+      (VP (VBN:[414..418] been)
+        (VP (VBN:[419..424] noted)
+          (NP-1 (-NONE-:[424..424] *))
+          (PP-LOC (IN:[425..427] in)
+            (NP
+              (NP (JJ:[428..432] many) (NNS:[433..438] types))
+              (PP (IN:[439..441] of)
+                (NP
+                  (NP (JJ:[442..447] human) (NNS:[448..454] tumors))
+                  (,:[454..455] ,)
+                  (PP (VBG:[456..465] including)
+                    (NP (NNS:[467..476] melanomas))))))))))
+    (.:[476..477] .)))
+
+;sentence 5 Span:478..661
+;The products of the human H-RAS, K-RAS and N-RAS genes play a key  role in
+;intracellular signal transduction leading to transcriptional activation  of
+;AP-1 (Fos/Jun) responsive genes.
+;[504..509]:gene-rna:"H-RAS"
+;[511..516]:gene-rna:"K-RAS"
+;[521..526]:gene-rna:"N-RAS"
+;[629..633]:gene-rna:"AP-1"
+;[635..638]:gene-rna:"Fos"
+;[639..642]:gene-rna:"Jun"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[478..481] The) (NNS:[482..490] products))
+      (PP (IN:[491..493] of)
+        (NP (DT:[494..497] the)
+          (NML
+            (NML
+              (ADJP-1 (JJ:[498..503] human))
+              (NN:[504..509] H-RAS)
+              (NML-2 (-NONE-:[509..509] *P*)))
+            (,:[509..510] ,)
+            (NML
+              (ADJP-1 (-NONE-:[510..510] *P*))
+              (NN:[511..516] K-RAS)
+              (NML-2 (-NONE-:[516..516] *P*)))
+            (CC:[517..520] and)
+            (NML
+              (ADJP-1 (-NONE-:[520..520] *P*))
+              (NN:[521..526] N-RAS)
+              (NML-2 (NNS:[527..532] genes)))))))
+    (VP (VBP:[533..537] play)
+      (NP (DT:[538..539] a) (JJ:[540..543] key) (NN:[545..549] role))
+      (PP (IN:[550..552] in)
+        (S-NOM
+          (NP-SBJ (JJ:[553..566] intracellular) (NN:[567..573] signal)
+                  (NN:[574..586] transduction))
+          (VP (VBG:[587..594] leading)
+            (PP-CLR (TO:[595..597] to)
+              (NP
+                (NP (JJ:[598..613] transcriptional) (NN:[614..624] activation))
+                (PP (IN:[626..628] of)
+                  (NP
+                    (ADJP (NN:[629..633] AP-1)
+                      (PRN (-LRB-:[634..635] -LRB-)
+                        (NP (NN:[635..638] Fos) (SYM:[638..639] /)
+                            (NN:[639..642] Jun))
+                        (-RRB-:[642..643] -RRB-))
+                      (JJ:[644..654] responsive))
+                    (NNS:[655..660] genes)))))))))
+    (.:[660..661] .)))
+
+;sentence 6 Span:662..784
+;The oncogenic mutated forms of the ras  proteins are constitutively active
+;and interfere with normal signal  transduction.
+;[697..700]:gene-protein:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[662..665] The) (JJ:[666..675] oncogenic) (VBN:[676..683] mutated)
+          (NNS:[684..689] forms))
+      (PP (IN:[690..692] of)
+        (NP (DT:[693..696] the) (NN:[697..700] ras) (NNS:[702..710] proteins))))
+    (VP
+      (VP (VBP:[711..714] are)
+        (ADJP-PRD (RB:[715..729] constitutively) (JJ:[730..736] active)))
+      (CC:[737..740] and)
+      (VP (VBP:[741..750] interfere)
+        (PP-CLR (IN:[751..755] with)
+          (NP (JJ:[756..762] normal) (NN:[763..769] signal)
+              (NN:[771..783] transduction)))))
+    (.:[783..784] .)))
+
+;sentence 7 Span:785..917
+;Mutated RAS genes as well as increased expression of wild-type ras  proteins
+;are common features in human tumors including melanoma.
+;[793..796]:gene-rna:"RAS"
+;[848..851]:gene-protein:"ras"
+;[908..916]:malignancy:"melanoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (VBN:[785..792] Mutated) (NN:[793..796] RAS) (NNS:[797..802] genes))
+      (CONJP (RB:[803..805] as) (RB:[806..810] well) (IN:[811..813] as))
+      (NP
+        (NP (VBN:[814..823] increased) (NN:[824..834] expression))
+        (PP (IN:[835..837] of)
+          (NP
+            (NML (JJ:[838..842] wild) (HYPH:[842..843] -) (NN:[843..847] type))
+            (NN:[848..851] ras) (NNS:[853..861] proteins)))))
+    (VP (VBP:[862..865] are)
+      (NP-PRD (JJ:[866..872] common) (NNS:[873..881] features))
+      (PP-LOC (IN:[882..884] in)
+        (NP
+          (NP (JJ:[885..890] human) (NNS:[891..897] tumors))
+          (PP (VBG:[898..907] including)
+            (NP (NN:[908..916] melanoma))))))
+    (.:[916..917] .)))
+
+;sentence 8 Span:918..1116
+;We have  characterized 30 melanoma metastases from 23 melanoma patients with
+;reference to  N-RAS expression and mutation as well as to GST P1 expression 
+;(immunohistochemistry and genetic analysis).
+;[944..963]:malignancy:"melanoma metastases"
+;[972..980]:malignancy:"melanoma"
+;[1009..1014]:gene-generic:"N-RAS"
+;[1053..1059]:gene-protein:"GST P1"
+(SENT
+  (S
+    (NP-SBJ (PRP:[918..920] We))
+    (VP (VBP:[921..925] have)
+      (VP (VBN:[927..940] characterized)
+        (NP
+          (NP (CD:[941..943] 30)
+             (NN:[944..952] melanoma) (NNS:[953..963] metastases))
+          (PP (IN:[964..968] from)
+            (NP (CD:[969..971] 23) (NN:[972..980] melanoma)
+                (NNS:[981..989] patients)))
+          (PP (IN:[990..994] with)
+            (NP
+              (NP (NN:[995..1004] reference))
+              (PP
+                (PP (TO:[1005..1007] to)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[1009..1014] N-RAS))
+                      (NN:[1015..1025] expression))
+                    (CC:[1026..1029] and)
+                    (NP
+                      (NML-1 (-NONE-:[1029..1029] *P*))
+                      (NN:[1030..1038] mutation))))
+                (CONJP (RB:[1039..1041] as) (RB:[1042..1046] well)
+                       (IN:[1047..1049] as))
+                (PP (TO:[1050..1052] to)
+                  (NP
+                    (NML (NN:[1053..1056] GST) (NN:[1057..1059] P1))
+                    (NN:[1060..1070] expression))))))
+          (PRN (-LRB-:[1072..1073] -LRB-)
+            (NP
+              (NP (NN:[1073..1093] immunohistochemistry))
+              (CC:[1094..1097] and)
+              (NP (JJ:[1098..1105] genetic) (NN:[1106..1114] analysis)))
+            (-RRB-:[1114..1115] -RRB-)))))
+    (.:[1115..1116] .)))
+
+;sentence 9 Span:1117..1270
+;Twenty-three of 30 samples (70%)  had high N-Ras p21 and/or N-RAS codon 61
+;mutations and 18 of these 23 samples  also had high GST P1-1
+;immunoreactivity.
+;[1160..1169]:gene-protein:"N-Ras p21"
+;[1177..1182]:gene-rna:"N-RAS"
+;[1183..1191]:variation-location:"codon 61"
+;[1192..1201]:variation-event:"mutations"
+;[1244..1252]:gene-protein:"GST P1-1"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (CD:[1117..1129] Twenty-three))
+        (PP (IN:[1130..1132] of)
+          (NP (CD:[1133..1135] 30) (NNS:[1136..1143] samples)))
+        (PRN (-LRB-:[1144..1145] -LRB-)
+          (NP (CD:[1145..1147] 70) (NN:[1147..1148] %))
+          (-RRB-:[1148..1149] -RRB-)))
+      (VP (VBD:[1151..1154] had)
+        (NP
+          (NP
+            (ADJP-2 (JJ:[1155..1159] high))
+            (NML (NN:[1160..1165] N-Ras) (NN:[1166..1169] p21))
+            (NML-1 (-NONE-:[1169..1169] *P*)))
+          (CC:[1170..1176] and/or)
+          (NP
+            (ADJP-2 (-NONE-:[1176..1176] *P*))
+            (NML (NN:[1177..1182] N-RAS)
+               (NN:[1183..1188] codon) (CD:[1189..1191] 61))
+            (NML-1 (NNS:[1192..1201] mutations))))))
+    (CC:[1202..1205] and)
+    (S
+      (NP-SBJ
+        (NP (CD:[1206..1208] 18))
+        (PP (IN:[1209..1211] of)
+          (NP (DT:[1212..1217] these) (CD:[1218..1220] 23)
+              (NNS:[1221..1228] samples))))
+      (ADVP (RB:[1230..1234] also))
+      (VP (VBD:[1235..1238] had)
+        (NP (JJ:[1239..1243] high)
+          (NML (NN:[1244..1247] GST) (NN:[1248..1252] P1-1))
+          (NN:[1253..1269] immunoreactivity))))
+    (.:[1269..1270] .)))
+
+;sentence 10 Span:1271..1376
+;Seven of 30 (23%) samples had low N-Ras  p21 immunoreactivity and no
+;detectable N-RAS codon 61 mutations.
+;[1305..1315]:gene-protein:"N-Ras  p21"
+;[1351..1356]:gene-rna:"N-RAS"
+;[1357..1365]:variation-location:"codon 61"
+;[1366..1375]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1271..1276] Seven))
+      (PP (IN:[1277..1279] of)
+        (NP (CD:[1280..1282] 30)
+          (PRN (-LRB-:[1283..1284] -LRB-)
+            (NP (CD:[1284..1286] 23) (NN:[1286..1287] %))
+            (-RRB-:[1287..1288] -RRB-))
+          (NNS:[1289..1296] samples))))
+    (VP (VBD:[1297..1300] had)
+      (NP
+        (NP (JJ:[1301..1304] low)
+          (NML (NN:[1305..1310] N-Ras) (NN:[1312..1315] p21))
+          (NN:[1316..1332] immunoreactivity))
+        (CC:[1333..1336] and)
+        (NP (DT:[1337..1339] no) (JJ:[1340..1350] detectable)
+          (NML (NN:[1351..1356] N-RAS)
+             (NN:[1357..1362] codon) (CD:[1363..1365] 61))
+          (NNS:[1366..1375] mutations))))
+    (.:[1375..1376] .)))
+
+;sentence 11 Span:1377..1446
+;Six of these 7  samples (86%) also had low GST P1-1 immunoreactivity.
+;[1420..1428]:gene-protein:"GST P1-1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1377..1380] Six))
+      (PP (IN:[1381..1383] of)
+        (NP (DT:[1384..1389] these) (CD:[1390..1391] 7)
+            (NNS:[1393..1400] samples)))
+      (PRN (-LRB-:[1401..1402] -LRB-)
+        (NP (CD:[1402..1404] 86) (NN:[1404..1405] %))
+        (-RRB-:[1405..1406] -RRB-)))
+    (VP
+      (ADVP (RB:[1407..1411] also))
+      (VBD:[1412..1415] had)
+      (NP (JJ:[1416..1419] low)
+        (NML (NN:[1420..1423] GST) (NN:[1424..1428] P1-1))
+        (NN:[1429..1445] immunoreactivity)))
+    (.:[1445..1446] .)))
+
+;sentence 12 Span:1447..1744
+;The results indicate a  statistically significant correlation (Spearman
+;correlation coefficient, r =  0.56, p = 0.001, 2-tailed test) and provide,
+;for the first time, indirect  evidence for a possible coregulation of N-RAS
+;and GST P1 in human malignant  melanoma which should be further evaluated.
+;[1664..1669]:gene-rna:"N-RAS"
+;[1674..1680]:gene-protein:"GST P1"
+;[1690..1709]:malignancy:"malignant  melanoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[1447..1450] The) (NNS:[1451..1458] results))
+    (VP
+      (VP (VBP:[1459..1467] indicate)
+        (NP (DT:[1468..1469] a)
+          (ADJP (RB:[1471..1484] statistically) (JJ:[1485..1496] significant))
+          (NN:[1497..1508] correlation))
+        (PRN (-LRB-:[1509..1510] -LRB-)
+          (FRAG
+            (FRAG
+              (NP (NNP:[1510..1518] Spearman) (NN:[1519..1530] correlation)
+                  (NN:[1531..1542] coefficient))
+              (,:[1542..1543] ,)
+              (S
+                (NP-SBJ (NN:[1544..1545] r))
+                (VP (SYM:[1546..1547] =)
+                  (NP (CD:[1549..1553] 0.56)))))
+            (,:[1553..1554] ,)
+            (FRAG
+              (S
+                (NP-SBJ (NN:[1555..1556] p))
+                (VP (SYM:[1557..1558] =)
+                  (NP (CD:[1559..1564] 0.001))))
+              (,:[1564..1565] ,)
+              (NP
+                (NML (CD:[1566..1567] 2) (HYPH:[1567..1568] -)
+                     (JJ:[1568..1574] tailed))
+                (NN:[1575..1579] test))))
+          (-RRB-:[1579..1580] -RRB-)))
+      (CC:[1581..1584] and)
+      (VP (VBP:[1585..1592] provide) (,:[1592..1593] ,)
+        (PP (IN:[1594..1597] for)
+          (NP (DT:[1598..1601] the) (JJ:[1602..1607] first)
+              (NN:[1608..1612] time)))
+        (,:[1612..1613] ,)
+        (NP
+          (NP (JJ:[1614..1622] indirect) (NN:[1624..1632] evidence))
+          (PP (IN:[1633..1636] for)
+            (NP
+              (NP (DT:[1637..1638] a) (JJ:[1639..1647] possible)
+                  (NN:[1648..1660] coregulation))
+              (PP (IN:[1661..1663] of)
+                (NP
+                  (NP (NN:[1664..1669] N-RAS))
+                  (CC:[1670..1673] and)
+                  (NP (NN:[1674..1677] GST) (NN:[1678..1680] P1))))
+              (PP (IN:[1681..1683] in)
+                (NP
+                  (NP (JJ:[1684..1689] human)
+                     (JJ:[1690..1699] malignant) (NN:[1701..1709] melanoma))
+                  (SBAR
+                    (WHNP-1 (WDT:[1710..1715] which))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1715..1715] *T*))
+                      (VP (MD:[1716..1722] should)
+                        (VP (VB:[1723..1725] be)
+                          (ADVP (RBR:[1726..1733] further))
+                          (VP (VBN:[1734..1743] evaluated)
+                            (NP-1 (-NONE-:[1743..1743] *))))))))))))))
+    (.:[1743..1744] .)))
+
+;section 13 Span:1748..1792
+;PMID: 7576742 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1748..1752] PMID) (::[1752..1753] :) (CD:[1754..1761] 7576742)
+        (IN:[1762..1763] -LSB-) (NNP:[1763..1769] PubMed) (HYPH:[1770..1771] -)
+        (JJ:[1772..1779] indexed) (IN:[1780..1783] for)
+        (NNP:[1784..1792] MEDLINE-RSB-)))

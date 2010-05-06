@@ -1,0 +1,307 @@
+;PMID: 3295562
+;source_file_797.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..121] = [t:42..121]
+;2)section:[e:125..218] = [t:125..218]
+;3)sentence:[e:222..342] = [t:222..342]
+;4)sentence:[e:343..612] = [t:343..612]
+;5)sentence:[e:614..829] = [t:614..829]
+;6)sentence:[e:830..950] = [t:830..950]
+;7)sentence:[e:951..1074] = [t:951..1074]
+;8)sentence:[e:1075..1272] = [t:1075..1272]
+;9)section:[e:1276..1320] = [t:1276..1320]
+
+;section 0 Span:0..37
+;Nature  1987 Jun 4-10;327(6121):430-2
+(SEC
+  (FRAG (NNP:[0..6] Nature) (CD:[8..12] 1987) (NNP:[13..16] Jun) (LS:[17..18] 4)
+        (::[18..19] -) (NN:[19..30] 10;327-LRB-6121) (-RRB-:[30..31] -RRB-)
+        (CD:[31..35] :430) (::[35..36] -) (CD:[36..37] 2)))
+
+;sentence 1 Span:42..121
+;A point mutation at codon 13 of the N-ras oncogene in myelodysplastic
+;syndrome.
+;[44..58]:variation-type:"point mutation"
+;[62..70]:variation-location:"codon 13"
+;[78..83]:gene-rna:"N-ras"
+;[96..120]:malignancy:"myelodysplastic syndrome"
+(SENT
+  (NP-HLN
+    (NP (DT:[42..43] A)
+      (NML (NN:[44..49] point) (NN:[50..58] mutation)))
+    (PP-LOC (IN:[59..61] at)
+      (NP
+        (NP (NN:[62..67] codon) (CD:[68..70] 13))
+        (PP (IN:[71..73] of)
+          (NP (DT:[74..77] the) (NN:[78..83] N-ras) (NN:[84..92] oncogene)))))
+    (PP (IN:[93..95] in)
+      (NP (JJ:[96..111] myelodysplastic) (NN:[112..120] syndrome)))
+    (.:[120..121] .)))
+
+;section 2 Span:125..218
+;Hirai H, Kobayashi Y, Mano H, Hagiwara K, Maru Y, Omine M, Mizoguchi H,
+;Nishida  J, Takaku F.
+(SEC
+  (FRAG (NNP:[125..130] Hirai) (NNP:[131..132] H) (,:[132..133] ,)
+        (NNP:[134..143] Kobayashi) (NNP:[144..145] Y) (,:[145..146] ,)
+        (NNP:[147..151] Mano) (NNP:[152..153] H) (,:[153..154] ,)
+        (NNP:[155..163] Hagiwara) (NNP:[164..165] K) (,:[165..166] ,)
+        (NNP:[167..171] Maru) (NNP:[172..173] Y) (,:[173..174] ,)
+        (NNP:[175..180] Omine) (NNP:[181..183] M,) (NNP:[184..193] Mizoguchi)
+        (NNP:[194..195] H) (,:[195..196] ,) (NNP:[197..204] Nishida)
+        (NNP:[206..208] J,) (NNP:[209..215] Takaku) (NNP:[216..218] F.)))
+
+;sentence 3 Span:222..342
+;Patients with a myelodysplastic syndrome (MDS) which has a risk of leukaemic 
+;change exhibit a variable clinical course.
+;[238..262]:malignancy:"myelodysplastic syndrome"
+;[264..267]:malignancy:"MDS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[222..230] Patients))
+      (PP (IN:[231..235] with)
+        (NP
+          (NP
+            (NP (DT:[236..237] a)
+               (JJ:[238..253] myelodysplastic) (NN:[254..262] syndrome))
+            (NP (-LRB-:[263..264] -LRB-) (NN:[264..267] MDS)
+                (-RRB-:[267..268] -RRB-)))
+          (SBAR
+            (WHNP-1 (WDT:[269..274] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[274..274] *T*))
+              (VP (VBZ:[275..278] has)
+                (NP
+                  (NP (DT:[279..280] a) (NN:[281..285] risk))
+                  (PP (IN:[286..288] of)
+                    (NP (JJ:[289..298] leukaemic) (NN:[300..306] change))))))))))
+    (VP (VBP:[307..314] exhibit)
+      (NP (DT:[315..316] a) (JJ:[317..325] variable) (JJ:[326..334] clinical)
+          (NN:[335..341] course)))
+    (.:[341..342] .)))
+
+;sentence 4 Span:343..612
+;It has been suggested that the  development of leukaemia in patients with MDS
+;may be related to chromosomal  abnormalities or genetic alterations: somatic
+;mutation of the N-ras gene is now  considered to be a critical step in the
+;genetic basis of human leukaemogenesis.
+;[390..399]:malignancy:"leukaemia"
+;[417..420]:malignancy:"MDS"
+;[490..497]:variation-type:"somatic"
+;[514..519]:gene-rna:"N-ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (PRP:[343..345] It))
+        (SBAR-3 (-NONE-:[345..345] *EXP*)))
+      (VP (VBZ:[346..349] has)
+        (VP (VBN:[350..354] been)
+          (VP (VBN:[355..364] suggested)
+            (NP-2 (-NONE-:[364..364] *))
+            (SBAR-3 (IN:[365..369] that)
+              (S
+                (NP-SBJ-4
+                  (NP (DT:[370..373] the) (NN:[375..386] development))
+                  (PP (IN:[387..389] of)
+                    (NP (NN:[390..399] leukaemia)))
+                  (PP-LOC (IN:[400..402] in)
+                    (NP
+                      (NP (NNS:[403..411] patients))
+                      (PP (IN:[412..416] with)
+                        (NP (NN:[417..420] MDS))))))
+                (VP (MD:[421..424] may)
+                  (VP (VB:[425..427] be)
+                    (VP (JJ:[428..435] related)
+                      (NP-4 (-NONE-:[435..435] *))
+                      (PP-CLR (TO:[436..438] to)
+                        (NP
+                          (NP (JJ:[439..450] chromosomal)
+                              (NNS:[452..465] abnormalities))
+                          (CC:[466..468] or)
+                          (NP (JJ:[469..476] genetic)
+                              (NNS:[477..488] alterations)))))))))
+            (::[488..489] :)
+            (S-ADV
+              (NP-SBJ-1
+                (NP (JJ:[490..497] somatic) (NN:[498..506] mutation))
+                (PP (IN:[507..509] of)
+                  (NP (DT:[510..513] the) (NN:[514..519] N-ras)
+                      (NN:[520..524] gene))))
+              (VP (VBZ:[525..527] is)
+                (ADVP-TMP (RB:[528..531] now))
+                (VP (VBN:[533..543] considered)
+                  (S
+                    (NP-SBJ-1 (-NONE-:[543..543] *))
+                    (VP (TO:[544..546] to)
+                      (VP (VB:[547..549] be)
+                        (NP-PRD
+                          (NP (DT:[550..551] a) (JJ:[552..560] critical)
+                              (NN:[561..565] step))
+                          (PP (IN:[566..568] in)
+                            (NP
+                              (NP (DT:[569..572] the) (JJ:[573..580] genetic)
+                                  (NN:[581..586] basis))
+                              (PP (IN:[587..589] of)
+                                (NP (JJ:[590..595] human)
+                                    (NN:[596..611] leukaemogenesis))))))))))))))))
+    (.:[611..612] .)))
+
+;sentence 5 Span:614..829
+;Here we report that DNAs of bone-marrow cells from three out of eight
+;patients  with MDS contained an activated N-ras oncogene, as detected by an
+;in vivo  selection assay in nude mice with transfected NIH 3T3 cells.
+;[699..702]:malignancy:"MDS"
+;[726..731]:gene-rna:"N-ras"
+(SENT
+  (S
+    (ADVP-LOC (RB:[614..618] Here))
+    (NP-SBJ (PRP:[619..621] we))
+    (VP (VBP:[622..628] report)
+      (SBAR (IN:[629..633] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[634..638] DNAs))
+            (PP (IN:[639..641] of)
+              (NP
+                (NP
+                  (NML (NN:[642..646] bone) (HYPH:[646..647] -)
+                       (NN:[647..653] marrow))
+                  (NNS:[654..659] cells))
+                (PP (IN:[660..664] from)
+                  (NP
+                    (NP (CD:[665..670] three))
+                    (PP (IN:[671..674] out)
+                      (PP (IN:[675..677] of)
+                        (NP
+                          (NP (CD:[678..683] eight) (NNS:[684..692] patients))
+                          (PP (IN:[694..698] with)
+                            (NP (NN:[699..702] MDS)))))))))))
+          (VP (VBD:[703..712] contained)
+            (NP (DT:[713..715] an) (JJ:[716..725] activated)
+                (NN:[726..731] N-ras) (NN:[732..740] oncogene))
+            (,:[740..741] ,)
+            (SBAR-ADV (IN:[742..744] as)
+              (S
+                (NP-SBJ-1 (-NONE-:[744..744] *))
+                (VP (VBN:[745..753] detected)
+                  (NP-1 (-NONE-:[753..753] *))
+                  (PP (IN:[754..756] by)
+                    (NP-LGS
+                      (NP (DT:[757..759] an)
+                        (ADJP (FW:[760..762] in) (FW:[763..767] vivo))
+                        (NN:[769..778] selection) (NN:[779..784] assay))
+                      (PP-LOC (IN:[785..787] in)
+                        (NP
+                          (NP (JJ:[788..792] nude) (NNS:[793..797] mice))
+                          (PP (IN:[798..802] with)
+                            (NP (JJ:[803..814] transfected)
+                              (NML (NN:[815..818] NIH) (NN:[819..822] 3T3))
+                              (NNS:[823..828] cells))))))))))))))
+    (.:[828..829] .)))
+
+;sentence 6 Span:830..950
+;Molecular analysis  revealed the same single nucleotide substitution at codon
+;13 in all three  transforming N-ras genes.
+;[868..898]:variation-type:"single nucleotide substitution"
+;[902..910]:variation-location:"codon 13"
+;[938..943]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (JJ:[830..839] Molecular) (NN:[840..848] analysis))
+    (VP (VBD:[850..858] revealed)
+      (NP
+        (NP (DT:[859..862] the) (JJ:[863..867] same)
+          
+          (NML (JJ:[868..874] single) (NN:[875..885] nucleotide))
+          (NN:[886..898] substitution))
+        (PP-LOC (IN:[899..901] at)
+          (NP (NN:[902..907] codon) (CD:[908..910] 13))))
+      (PP (IN:[911..913] in)
+        (NP (DT:[914..917] all) (CD:[918..923] three)
+            (VBG:[925..937] transforming) (NN:[938..943] N-ras)
+            (NNS:[944..949] genes))))
+    (.:[949..950] .)))
+
+;sentence 7 Span:951..1074
+;Each of the three patients showed a progression of the  disease and a
+;resulting leukaemic change within the following year.
+;[1007..1014]:malignancy:"disease"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[951..955] Each))
+      (PP (IN:[956..958] of)
+        (NP (DT:[959..962] the) (CD:[963..968] three) (NNS:[969..977] patients))))
+    (VP (VBD:[978..984] showed)
+      (NP
+        (NP
+          (NP (DT:[985..986] a) (NN:[987..998] progression))
+          (PP (IN:[999..1001] of)
+            (NP (DT:[1002..1005] the) (NN:[1007..1014] disease))))
+        (CC:[1015..1018] and)
+        (NP (DT:[1019..1020] a) (VBG:[1021..1030] resulting)
+            (JJ:[1031..1040] leukaemic) (NN:[1041..1047] change)))
+      (PP-TMP (IN:[1048..1054] within)
+        (NP (DT:[1055..1058] the) (JJ:[1059..1068] following)
+            (NN:[1069..1073] year))))
+    (.:[1073..1074] .)))
+
+;sentence 8 Span:1075..1272
+;Our  observation of the mutation at codon 13 in leukaemic cell DNAs from all
+;three  cases suggests that activation of the N-ras gene is important in the
+;development  of leukaemia in some MDS cases.
+;[1099..1107]:variation-event:"mutation"
+;[1111..1119]:variation-location:"codon 13"
+;[1123..1137]:malignancy:"leukaemic cell"
+;[1197..1202]:gene-rna:"N-ras"
+;[1244..1253]:malignancy:"leukaemia"
+;[1262..1265]:malignancy:"MDS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (PRP$:[1075..1078] Our) (NN:[1080..1091] observation))
+      (PP (IN:[1092..1094] of)
+        (NP
+          (NP (DT:[1095..1098] the) (NN:[1099..1107] mutation))
+          (PP-LOC (IN:[1108..1110] at)
+            (NP (NN:[1111..1116] codon) (CD:[1117..1119] 13)))))
+      (PP-LOC (IN:[1120..1122] in)
+        (NP
+          (NP
+            (NML (JJ:[1123..1132] leukaemic) (NN:[1133..1137] cell))
+            (NNS:[1138..1142] DNAs))
+          (PP (IN:[1143..1147] from)
+            (NP (DT:[1148..1151] all) (CD:[1152..1157] three)
+                (NNS:[1159..1164] cases))))))
+    (VP (VBZ:[1165..1173] suggests)
+      (SBAR (IN:[1174..1178] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1179..1189] activation))
+            (PP (IN:[1190..1192] of)
+              (NP (DT:[1193..1196] the) (NN:[1197..1202] N-ras)
+                  (NN:[1203..1207] gene))))
+          (VP (VBZ:[1208..1210] is)
+            (ADJP-PRD (JJ:[1211..1220] important))
+            (PP (IN:[1221..1223] in)
+              (NP
+                (NP (DT:[1224..1227] the) (NN:[1228..1239] development))
+                (PP (IN:[1241..1243] of)
+                  (NP (NN:[1244..1253] leukaemia)))))
+            (PP (IN:[1254..1256] in)
+              (NP (DT:[1257..1261] some) (NN:[1262..1265] MDS)
+                  (NNS:[1266..1271] cases)))))))
+    (.:[1271..1272] .)))
+
+;section 9 Span:1276..1320
+;PMID: 3295562 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1276..1280] PMID) (::[1280..1281] :) (CD:[1282..1289] 3295562)
+        (NN:[1290..1291] -LSB-) (NNP:[1291..1297] PubMed) (::[1298..1299] -)
+        (NN:[1300..1307] indexed) (IN:[1308..1311] for)
+        (NNP:[1312..1320] MEDLINE-RSB-)))

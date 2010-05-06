@@ -1,0 +1,569 @@
+;PMID: 8924622
+;source_file_873.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..230] = [t:47..230]
+;2)section:[e:234..282] = [t:234..282]
+;3)section:[e:286..346] = [t:286..346]
+;4)sentence:[e:350..555] = [t:350..555]
+;5)sentence:[e:556..729] = [t:556..729]
+;6)sentence:[e:730..998] = [t:730..998]
+;7)sentence:[e:999..1164] = [t:999..1164]
+;8)sentence:[e:1165..1285] = [t:1165..1285]
+;9)sentence:[e:1286..1452] = [t:1286..1452]
+;10)sentence:[e:1453..1652] = [t:1453..1652]
+;11)sentence:[e:1653..1752] = [t:1653..1752]
+;12)sentence:[e:1753..1921] = [t:1753..1921]
+;13)sentence:[e:1922..2135] = [t:1922..2135]
+;14)section:[e:2139..2183] = [t:2139..2183]
+
+;section 0 Span:0..41
+;Chem Res Toxicol. 1996 Jan-Feb;9(1):93-8.
+(SEC
+  (FRAG (NNP:[0..4] Chem) (NNP:[5..8] Res) (NNP:[9..16] Toxicol) (RB:[16..17] .)
+        (CD:[18..22] 1996) (IN:[23..27] Jan-) (CD:[27..33] Feb;9-LRB-)
+        (CD:[33..34] 1) (-RRB-:[34..35] -RRB-) (CD:[35..38] :93) (::[38..39] -)
+        (CD:[39..41] 8.)))
+
+;sentence 1 Span:47..230
+;Cytochrome P4502D and -2C enzymes catalyze the oxidative N-demethylation of
+;the  parkinsonism-inducing substance
+;1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine in  rat liver microsomes.
+;[47..64]...[73..80]:cyp450:"Cytochrome P4502D"..."enzymes"
+;[47..62]...[70..80]:cyp450:"Cytochrome P450"..."2C enzymes"
+;[128..159]:substance:"parkinsonism-inducing substance"
+;[160..204]:substance:"1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP
+        (NML
+          (NML-1 (NN:[47..57] Cytochrome) (NN:[58..62] P450))
+          (NN:[62..64] 2D))
+        (NML-2 (-NONE-:[64..64] *P*)))
+      (CC:[65..68] and)
+      (NP
+        (NML
+          (NML-1 (-NONE-:[68..68] *P*))
+          (HYPH:[69..70] -) (NN:[70..72] 2C))
+        (NML-2 (NNS:[73..80] enzymes))))
+    (VP (VBP:[81..89] catalyze)
+      (NP
+        (NP (DT:[90..93] the) (JJ:[94..103] oxidative)
+            (NN:[104..119] N-demethylation))
+        (PP (IN:[120..122] of)
+          (NP
+            (NP (DT:[123..126] the)
+              
+              (ADJP (NN:[128..140] parkinsonism) (HYPH:[140..141] -)
+                    (VBG:[141..149] inducing))
+              (NN:[150..159] substance))
+            (NP (NN:[160..204] 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine)))))
+      (PP-LOC (IN:[205..207] in)
+        (NP (NN:[209..212] rat) (NN:[213..218] liver)
+            (NNS:[219..229] microsomes))))
+    (.:[229..230] .)))
+
+;section 2 Span:234..282
+;Narimatsu S, Tachibana M, Masubuchi Y, Suzuki T.
+(SEC
+  (FRAG (NNP:[234..243] Narimatsu) (NNP:[244..246] S,)
+        (NNP:[247..256] Tachibana) (NNP:[257..259] M,)
+        (NNP:[260..269] Masubuchi) (NNP:[270..271] Y) (,:[271..272] ,)
+        (NNP:[273..279] Suzuki) (NNP:[280..282] T.)))
+
+;section 3 Span:286..346
+;Faculty of Pharmaceutical Sciences, Chiba University, Japan.
+(SEC
+  (FRAG (IN:[286..293] Faculty) (IN:[294..296] of)
+        (NNP:[297..311] Pharmaceutical) (NNPS:[312..320] Sciences)
+        (,:[320..321] ,) (NNP:[322..327] Chiba) (NNP:[328..338] University)
+        (IN:[338..339] ,) (NNP:[340..345] Japan) (.:[345..346] .)))
+
+;sentence 4 Span:350..555
+;We have examined the oxidative N-demethylation of 
+;1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP), a parkinsonism-inducing 
+;neurotoxin, in liver microsomes from adult Wistar and Dark Agouti (DA) rats.
+;[401..445]:substance:"1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine"
+;[447..451]:substance:"MPTP"
+;[456..489]:substance:"parkinsonism-inducing  neurotoxin"
+(SENT
+  (S
+    (NP-SBJ (PRP:[350..352] We))
+    (VP (VBP:[353..357] have)
+      (VP (VBN:[358..366] examined)
+        (NP
+          (NP (DT:[367..370] the) (JJ:[371..380] oxidative)
+              (NN:[381..396] N-demethylation))
+          (PP (IN:[397..399] of)
+            (NP
+              (NP
+                (NP (NN:[401..445] 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine))
+                (NP (-LRB-:[446..447] -LRB-) (NN:[447..451] MPTP)
+                    (-RRB-:[451..452] -RRB-)))
+              (,:[452..453] ,)
+              (NP (DT:[454..455] a)
+                
+                (ADJP (NN:[456..468] parkinsonism) (HYPH:[468..469] -)
+                      (VBG:[469..477] inducing))
+                (NN:[479..489] neurotoxin)))))
+        (,:[489..490] ,)
+        (PP-LOC (IN:[491..493] in)
+          (NP
+            (NP (NN:[494..499] liver) (NNS:[500..510] microsomes))
+            (PP (IN:[511..515] from)
+              (NP
+                (NP
+                  (ADJP-2 (JJ:[516..521] adult))
+                  (NNP:[522..528] Wistar)
+                  (NML-1 (-NONE-:[528..528] *P*)))
+                (CC:[529..532] and)
+                (NP
+                  (ADJP-2 (-NONE-:[532..532] *P*))
+                  (NML
+                    (NML (JJ:[533..537] Dark) (NNP:[538..544] Agouti))
+                    (NML (-LRB-:[545..546] -LRB-) (NN:[546..548] DA)
+                         (-RRB-:[548..549] -RRB-)))
+                  (NML-1 (NNS:[550..554] rats)))))))))
+    (.:[554..555] .)))
+
+;sentence 5 Span:556..729
+;The  oxidation of MPTP to 4-phenyl-1,2,3,6-tetrahydropyridine (PTP) in these 
+;preparations required NADPH as a cofactor and was significantly inhibited by
+;SKF  525-A (2 mM).
+;[574..578]:substance:"MPTP"
+;[582..617]:substance:"4-phenyl-1,2,3,6-tetrahydropyridine"
+;[619..622]:substance:"PTP"
+;[656..661]:substance:"NADPH"
+;[667..675]:substance:"cofactor"
+;[711..721]:substance:"SKF  525-A"
+;[723..724]:quantitative-value:"2"
+;[725..727]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[556..559] The) (NN:[561..570] oxidation))
+      (PP (IN:[571..573] of)
+        (NP (NN:[574..578] MPTP)))
+      (PP (TO:[579..581] to)
+        (NP
+          (NP (NN:[582..617] 4-phenyl-1,2,3,6-tetrahydropyridine))
+          (NP (-LRB-:[618..619] -LRB-) (NN:[619..622] PTP)
+              (-RRB-:[622..623] -RRB-))))
+      (PP-LOC (IN:[624..626] in)
+        (NP (DT:[627..632] these) (NNS:[634..646] preparations))))
+    (VP
+      (VP (VBD:[647..655] required)
+        (NP (NN:[656..661] NADPH))
+        (PP (IN:[662..664] as)
+          (NP (DT:[665..666] a) (NN:[667..675] cofactor))))
+      (CC:[676..679] and)
+      (VP (VBD:[680..683] was)
+        (ADVP (RB:[684..697] significantly))
+        (VP (VBN:[698..707] inhibited)
+          (NP-1 (-NONE-:[707..707] *))
+          (PP (IN:[708..710] by)
+            (NP-LGS
+               (NN:[711..714] SKF) (NN:[716..721] 525-A)
+              (PRN (-LRB-:[722..723] -LRB-)
+                (NP (CD:[723..724] 2) (NN:[725..727] mM))
+                (-RRB-:[727..728] -RRB-)))))))
+    (.:[728..729] .)))
+
+;sentence 6 Span:730..998
+;MPTP N-demethylation exhibited biphasic kinetics, consistent with  two
+;enzymes, a low Km system (Km1, 10.0 +/- 2.2 microM; Vmax1, 0.048 +/- 0.009 
+;nmol/(min.mg of protein)) and a high Km system (Km2, 1180 +/- 91 microM;
+;Vmax2,  4.80 +/- 0.75 nmol/(min.mg of protein)).
+;[730..734]:substance:"MPTP"
+;[801..808]:substance:"enzymes"
+;[816..818]:quantitative-name:"Km"
+;[827..830]:quantitative-name:"Km1"
+;[832..844]:quantitative-value:"10.0 +/- 2.2"
+;[845..851]:quantitative-units:"microM"
+;[853..858]:quantitative-name:"Vmax1"
+;[860..875]:quantitative-value:"0.048 +/- 0.009"
+;[877..901]:quantitative-units:"nmol/(min.mg of protein)"
+;[914..916]:quantitative-name:"Km"
+;[925..928]:quantitative-name:"Km2"
+;[930..941]:quantitative-value:"1180 +/- 91"
+;[942..948]:quantitative-units:"microM"
+;[950..955]:quantitative-name:"Vmax2"
+;[958..971]:quantitative-value:"4.80 +/- 0.75"
+;[972..996]:quantitative-units:"nmol/(min.mg of protein)"
+(SENT
+  (S
+    (NP-SBJ (NN:[730..734] MPTP) (NN:[735..750] N-demethylation))
+    (VP (VBD:[751..760] exhibited)
+      (NP (JJ:[761..769] biphasic) (NN:[770..778] kinetics))
+      (,:[778..779] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[779..779] *))
+        (ADJP-PRD (JJ:[780..790] consistent)
+          (PP (IN:[791..795] with)
+            (NP
+              (NP (CD:[797..800] two) (NNS:[801..808] enzymes))
+              (,:[808..809] ,)
+              (NP
+                (NP (DT:[810..811] a)
+                  (NML (JJ:[812..815] low) (NN:[816..818] Km))
+                  (NN:[819..825] system)
+                  (PRN (-LRB-:[826..827] -LRB-)
+                    (FRAG
+                      (S
+                        (NP-SBJ (NN:[827..830] Km1))
+                        (,:[830..831] ,)
+                        (NP-PRD
+                          (QP (CD:[832..836] 10.0) (SYM:[837..840] +/-)
+                              (CD:[841..844] 2.2))
+                          (NN:[845..851] microM)))
+                      (::[851..852] ;)
+                      (S
+                        (NP-SBJ (NN:[853..858] Vmax1))
+                        (,:[858..859] ,)
+                        (NP-PRD
+                          (NP
+                            (QP (CD:[860..865] 0.048) (SYM:[866..869] +/-)
+                                (CD:[870..875] 0.009))
+                            (NN:[877..881] nmol))
+                          (PP (SYM:[881..882] /)
+                            (NP (-LRB-:[882..883] -LRB-)
+                              (NP (NN:[883..889] min.mg))
+                              (PP (IN:[890..892] of)
+                                (NP (NN:[893..900] protein)))
+                              (-RRB-:[900..901] -RRB-))))))
+                    (-RRB-:[901..902] -RRB-)))
+                (CC:[903..906] and)
+                (NP (DT:[907..908] a)
+                  (NML (JJ:[909..913] high) (NN:[914..916] Km))
+                  (NN:[917..923] system)
+                  (PRN (-LRB-:[924..925] -LRB-)
+                    (FRAG
+                      (S
+                        (NP-SBJ (NN:[925..928] Km2))
+                        (,:[928..929] ,)
+                        (NP-PRD
+                          (QP (CC:[930..934] 1180) (SYM:[935..938] +/-)
+                              (CD:[939..941] 91))
+                          (NN:[942..948] microM)))
+                      (::[948..949] ;)
+                      (S
+                        (NP-SBJ (NN:[950..955] Vmax2))
+                        (,:[955..956] ,)
+                        (NP-PRD
+                          (NP
+                            (QP (CD:[958..962] 4.80) (SYM:[963..966] +/-)
+                                (CD:[967..971] 0.75))
+                            (NN:[972..976] nmol))
+                          (PP (SYM:[976..977] /)
+                            (NP (-LRB-:[977..978] -LRB-)
+                              (NP (NN:[978..984] min.mg))
+                              (PP (IN:[985..987] of)
+                                (NP (NN:[988..995] protein)))
+                              (-RRB-:[995..996] -RRB-))))))
+                    (-RRB-:[996..997] -RRB-)))))))))
+    (.:[997..998] .)))
+
+;sentence 7 Span:999..1164
+;We thus employed two substrate  concentrations, 5 microM and 5 mM, for the
+;low and high Km system, respectively,  to assay enzyme activity in subsequent
+;experiments.
+;[1020..1029]:substance:"substrate"
+;[1047..1048]:quantitative-value:"5"
+;[1049..1055]:quantitative-units:"microM"
+;[1060..1061]:quantitative-value:"5"
+;[1062..1064]:quantitative-units:"mM"
+;[1087..1089]:quantitative-name:"Km"
+;[1122..1128]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ (PRP:[999..1001] We))
+    (ADVP (RB:[1002..1006] thus))
+    (VP (VBD:[1007..1015] employed)
+      (NP
+        (NP (CD:[1016..1019] two) (NN:[1020..1029] substrate)
+            (NNS:[1031..1045] concentrations))
+        (,:[1045..1046] ,)
+        (NP
+          (NP (CD:[1047..1048] 5) (NN:[1049..1055] microM))
+          (CC:[1056..1059] and)
+          (NP (CD:[1060..1061] 5) (NN:[1062..1064] mM))))
+      (,:[1064..1065] ,)
+      (PP (IN:[1066..1069] for)
+        (NP (DT:[1070..1073] the)
+          (NML
+            (NML
+              (NML (JJ:[1074..1077] low)
+                (NML-2 (-NONE-:[1077..1077] *P*)))
+              (NML-1 (-NONE-:[1077..1077] *P*)))
+            (CC:[1078..1081] and)
+            (NML
+              (NML (JJ:[1082..1086] high)
+                (NML-2 (NN:[1087..1089] Km)))
+              (NML-1 (NN:[1090..1096] system))))))
+      (,:[1096..1097] ,)
+      (ADVP (RB:[1098..1110] respectively))
+      (,:[1110..1111] ,)
+      (S-PRP
+        (NP-SBJ (-NONE-:[1111..1111] *))
+        (VP (TO:[1113..1115] to)
+          (VP (VB:[1116..1121] assay)
+            (NP (NN:[1122..1128] enzyme) (NN:[1129..1137] activity))
+            (PP (IN:[1138..1140] in)
+              (NP (JJ:[1141..1151] subsequent) (NNS:[1152..1163] experiments)))))))
+    (.:[1163..1164] .)))
+
+;sentence 8 Span:1165..1285
+;The oxidation activity was  significantly decreased by pretreatment of rats
+;with phenobarbital and  beta-naphthoflavone.
+;[1246..1259]:substance:"phenobarbital"
+;[1265..1284]:substance:"beta-naphthoflavone"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1165..1168] The) (NN:[1169..1178] oxidation)
+              (NN:[1179..1187] activity))
+    (VP (VBD:[1188..1191] was)
+      (ADVP (RB:[1193..1206] significantly))
+      (VP (VBN:[1207..1216] decreased)
+        (NP-1 (-NONE-:[1216..1216] *))
+        (PP-MNR (IN:[1217..1219] by)
+          (NP
+            (NP (NN:[1220..1232] pretreatment))
+            (PP (IN:[1233..1235] of)
+              (NP (NNS:[1236..1240] rats)))
+            (PP (IN:[1241..1245] with)
+              (NP (NN:[1246..1259] phenobarbital) (CC:[1260..1263] and)
+                  (NN:[1265..1284] beta-naphthoflavone)))))))
+    (.:[1284..1285] .)))
+
+;sentence 9 Span:1286..1452
+;Furthermore, marked strain (Wistar > DA) and sex (male >  female) differences
+;were observed at low (5 microM) and high (5 mM) substrate  concentrations,
+;respectively.
+;[1386..1387]:quantitative-value:"5"
+;[1388..1394]:quantitative-units:"microM"
+;[1406..1407]:quantitative-value:"5"
+;[1408..1410]:quantitative-units:"mM"
+;[1412..1421]:substance:"substrate"
+(SENT
+  (S
+    (ADVP (RB:[1286..1297] Furthermore))
+    (,:[1297..1298] ,)
+    (NP-SBJ-2 (JJ:[1299..1305] marked)
+      (NML
+        (NML
+          (NML (NN:[1306..1312] strain)
+            (PRN (-LRB-:[1313..1314] -LRB-)
+              (S
+                (NP-SBJ (NNP:[1314..1320] Wistar))
+                (VP (SYM:[1321..1322] >)
+                  (NP (NN:[1323..1325] DA))))
+              (-RRB-:[1325..1326] -RRB-)))
+          (NML-1 (-NONE-:[1326..1326] *P*)))
+        (CC:[1327..1330] and)
+        (NML
+          (NML (NN:[1331..1334] sex)
+            (PRN (-LRB-:[1335..1336] -LRB-)
+              (S
+                (NP-SBJ (JJ:[1336..1340] male))
+                (VP (SYM:[1341..1342] >)
+                  (NP (JJ:[1344..1350] female))))
+              (-RRB-:[1350..1351] -RRB-)))
+          (NML-1 (NNS:[1352..1363] differences)))))
+    (VP (VBD:[1364..1368] were)
+      (VP (VBN:[1369..1377] observed)
+        (NP-2 (-NONE-:[1377..1377] *))
+        (PP (IN:[1378..1380] at)
+          (NP
+            (NP
+              (ADJP (JJ:[1381..1384] low)
+                (PRN (-LRB-:[1385..1386] -LRB-)
+                  (NP (CD:[1386..1387] 5) (NN:[1388..1394] microM))
+                  (-RRB-:[1394..1395] -RRB-)))
+              (NML-3 (-NONE-:[1395..1395] *P*)))
+            (CC:[1396..1399] and)
+            (NP
+              (ADJP (JJ:[1400..1404] high)
+                (PRN (-LRB-:[1405..1406] -LRB-)
+                  (NP (CD:[1406..1407] 5) (NN:[1408..1410] mM))
+                  (-RRB-:[1410..1411] -RRB-)))
+              (NML-3 (NN:[1412..1421] substrate)
+                     (NNS:[1423..1437] concentrations)))))
+        (,:[1437..1438] ,)
+        (ADVP (RB:[1439..1451] respectively))))
+    (.:[1451..1452] .)))
+
+;sentence 10 Span:1453..1652
+;Reconstitution experiments with cytochrome  P450BTL, which belongs to the
+;P4502D subfamily, and P450m1 (P4502C11)  demonstrated that MPTP N-demethylase
+;occurs at concentrations of 5 microM and 5  mM.
+;[1485..1504]:cyp450:"cytochrome  P450BTL"
+;[1527..1533]:cyp450:"P4502D"
+;[1549..1555]:cyp450:"P450m1"
+;[1557..1565]:cyp450:"P4502C11"
+;[1586..1604]:substance:"MPTP N-demethylase"
+;[1633..1634]:quantitative-value:"5"
+;[1635..1641]:quantitative-units:"microM"
+;[1646..1647]:quantitative-value:"5"
+;[1649..1651]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1453..1467] Reconstitution) (NNS:[1468..1479] experiments))
+      (PP (IN:[1480..1484] with)
+        (NP
+          (NP
+            (NP (NN:[1485..1495] cytochrome) (NN:[1497..1504] P450BTL))
+            (,:[1504..1505] ,)
+            (SBAR
+              (WHNP-1 (WDT:[1506..1511] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[1511..1511] *T*))
+                (VP (VBZ:[1512..1519] belongs)
+                  (PP-CLR (TO:[1520..1522] to)
+                    (NP (DT:[1523..1526] the) (NN:[1527..1533] P4502D)
+                        (NN:[1534..1543] subfamily)))))))
+          (,:[1543..1544] ,) (CC:[1545..1548] and)
+          (NP
+            (NP (NN:[1549..1555] P450m1))
+            (NP (-LRB-:[1556..1557] -LRB-) (NN:[1557..1565] P4502C11)
+                (-RRB-:[1565..1566] -RRB-))))))
+    (VP (VBD:[1568..1580] demonstrated)
+      (SBAR (IN:[1581..1585] that)
+        (S
+          (NP-SBJ (NN:[1586..1590] MPTP) (NN:[1591..1604] N-demethylase))
+          (VP (VBZ:[1605..1611] occurs)
+            (PP (IN:[1612..1614] at)
+              (NP
+                (NP (NNS:[1615..1629] concentrations))
+                (PP (IN:[1630..1632] of)
+                  (NP
+                    (NP (CD:[1633..1634] 5) (NN:[1635..1641] microM))
+                    (CC:[1642..1645] and)
+                    (NP (CD:[1646..1647] 5) (NN:[1649..1651] mM))))))))))
+    (.:[1651..1652] .)))
+
+;sentence 11 Span:1653..1752
+;At 5 mM the male-specific P450m1 showed a remarkably high activity, over 
+;400-fold that of P450BTL.
+;[1656..1657]:quantitative-value:"5"
+;[1658..1660]:quantitative-units:"mM"
+;[1679..1685]:cyp450:"P450m1"
+;[1727..1735]:quantitative-value:"400-fold"
+;[1744..1751]:cyp450:"P450BTL"
+(SENT
+  (S
+    (PP (IN:[1653..1655] At)
+      (NP (CD:[1656..1657] 5) (NN:[1658..1660] mM)))
+    (NP-SBJ (DT:[1661..1664] the)
+      (ADJP (NN:[1665..1669] male) (HYPH:[1669..1670] -)
+            (JJ:[1670..1678] specific))
+      (NN:[1679..1685] P450m1))
+    (VP (VBD:[1686..1692] showed)
+      (NP
+        (NP (DT:[1693..1694] a)
+          (ADJP (RB:[1695..1705] remarkably) (JJ:[1706..1710] high))
+          (NN:[1711..1719] activity))
+        (,:[1719..1720] ,)
+        (NP
+          (NP
+            (QP (IN:[1721..1725] over)
+               (CD:[1727..1730] 400) (HYPH:[1730..1731] -)
+               (JJ:[1731..1735] fold))
+            (DT:[1736..1740] that))
+          (PP (IN:[1741..1743] of)
+            (NP (NN:[1744..1751] P450BTL))))))
+    (.:[1751..1752] .)))
+
+;sentence 12 Span:1753..1921
+;Polyclonal antibodies against P450BTL and P450m1  effectively suppressed the
+;activity at the low (5 microM) and the high (5 mM)  substrate concentrations,
+;respectively.
+;[1753..1774]:substance:"Polyclonal antibodies"
+;[1783..1790]:cyp450:"P450BTL"
+;[1795..1801]:cyp450:"P450m1"
+;[1851..1852]:quantitative-value:"5"
+;[1853..1859]:quantitative-units:"microM"
+;[1875..1876]:quantitative-value:"5"
+;[1877..1879]:quantitative-units:"mM"
+;[1882..1891]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1753..1763] Polyclonal) (NNS:[1764..1774] antibodies))
+      (PP (IN:[1775..1782] against)
+        (NP (NN:[1783..1790] P450BTL) (CC:[1791..1794] and)
+            (NN:[1795..1801] P450m1))))
+    (ADVP (RB:[1803..1814] effectively))
+    (VP (VBD:[1815..1825] suppressed)
+      (NP (DT:[1826..1829] the) (NN:[1830..1838] activity))
+      (PP (IN:[1839..1841] at)
+        (NP
+          (NP (DT:[1842..1845] the) (JJ:[1846..1849] low)
+            (PRN (-LRB-:[1850..1851] -LRB-)
+              (NP (CD:[1851..1852] 5) (NN:[1853..1859] microM))
+              (-RRB-:[1859..1860] -RRB-))
+            (NML-1 (-NONE-:[1860..1860] *P*)))
+          (CC:[1861..1864] and)
+          (NP (DT:[1865..1868] the) (JJ:[1869..1873] high)
+            (PRN (-LRB-:[1874..1875] -LRB-)
+              (NP (CD:[1875..1876] 5) (NN:[1877..1879] mM))
+              (-RRB-:[1879..1880] -RRB-))
+            (NML-1 (NN:[1882..1891] substrate) (NNS:[1892..1906] concentrations)))))
+      (,:[1906..1907] ,)
+      (ADVP (RB:[1908..1920] respectively)))
+    (.:[1920..1921] .)))
+
+;sentence 13 Span:1922..2135
+;These results suggest that, in the  microsomal preparations used, MPTP
+;N-demethylation is mainly mediated by P4502D  enzyme(s) at lower substrate
+;concentrations and by P4502C11 at higher substrate  concentrations.
+;[1988..1992]:substance:"MPTP"
+;[2031..2048]:cyp450:"P4502D  enzyme(s)"
+;[2058..2067]:substance:"substrate"
+;[2090..2098]:cyp450:"P4502C11"
+;[2109..2118]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ (DT:[1922..1927] These) (NNS:[1928..1935] results))
+    (VP (VBP:[1936..1943] suggest)
+      (SBAR (IN:[1944..1948] that) (,:[1948..1949] ,)
+        (S
+          (PP-LOC (IN:[1950..1952] in)
+            (NP
+              (NP (DT:[1953..1956] the) (JJ:[1958..1968] microsomal)
+                  (NNS:[1969..1981] preparations))
+              (VP (VBN:[1982..1986] used)
+                (NP (-NONE-:[1986..1986] *)))))
+          (,:[1986..1987] ,)
+          (NP-SBJ-3 (NN:[1988..1992] MPTP) (NN:[1993..2008] N-demethylation))
+          (VP (VBZ:[2009..2011] is)
+            (VP
+              (VP
+                (ADVP (RB:[2012..2018] mainly))
+                (VBN:[2019..2027] mediated)
+                (NP-3 (-NONE-:[2027..2027] *))
+                (PP=1 (IN:[2028..2030] by)
+                  (NP (NN:[2031..2037] P4502D)
+                      (NN:[2039..2048] enzyme-LRB-s-RRB-)))
+                (PP=2 (IN:[2049..2051] at)
+                  (NP (JJR:[2052..2057] lower) (NN:[2058..2067] substrate)
+                      (NNS:[2068..2082] concentrations))))
+              (CC:[2083..2086] and)
+              (VP
+                (PP=1 (IN:[2087..2089] by)
+                  (NP (NN:[2090..2098] P4502C11)))
+                (PP=2 (IN:[2099..2101] at)
+                  (NP (JJR:[2102..2108] higher) (NN:[2109..2118] substrate)
+                      (NNS:[2120..2134] concentrations)))))))))
+    (.:[2134..2135] .)))
+
+;section 14 Span:2139..2183
+;PMID: 8924622 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2139..2143] PMID) (::[2143..2144] :) (CD:[2145..2152] 8924622)
+        (NN:[2153..2154] -LSB-) (NNP:[2154..2160] PubMed) (::[2161..2162] -)
+        (NN:[2163..2170] indexed) (IN:[2171..2174] for)
+        (NNP:[2175..2183] MEDLINE-RSB-)))

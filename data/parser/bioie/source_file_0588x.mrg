@@ -1,0 +1,371 @@
+;PMID: 10754205
+;source_file_1358.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..145] = [t:42..145]
+;2)section:[e:149..190] = [t:149..190]
+;3)section:[e:194..297] = [t:194..297]
+;4)sentence:[e:301..388] = [t:301..388]
+;5)sentence:[e:389..443] = [t:389..443]
+;6)sentence:[e:444..611] = [t:444..611]
+;7)sentence:[e:613..741] = [t:613..741]
+;8)sentence:[e:742..869] = [t:742..869]
+;9)sentence:[e:870..1048] = [t:870..1048]
+;10)sentence:[e:1049..1152] = [t:1049..1152]
+;11)sentence:[e:1153..1223] = [t:1153..1223]
+;12)sentence:[e:1224..1368] = [t:1224..1368]
+;13)sentence:[e:1369..1432] = [t:1369..1432]
+;14)sentence:[e:1433..1573] = [t:1433..1573]
+;15)section:[e:1577..1622] = [t:1577..1622]
+
+;section 0 Span:0..37
+;Cancer Lett  2000 Apr 28;152(1):45-51
+(SEC
+  (S (NN:[0..6] Cancer) (NNP:[7..11] Lett) (CD:[13..17] 2000) (NNP:[18..21] Apr)
+     (CD:[22..29] 28;152-LRB-) (CD:[29..30] 1) (-RRB-:[30..31] -RRB-)
+     (CD:[31..34] :45) (::[34..35] -) (CD:[35..37] 51)))
+
+;sentence 1 Span:42..145
+;Somatic mutations of beta-catenin play a crucial role in the tumorigenesis of
+; sporadic hepatoblastoma.
+;[63..75]:gene-rna:"beta-catenin"
+;[121..144]:malignancy:"sporadic hepatoblastoma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (JJ:[42..49] Somatic) (NNS:[50..59] mutations))
+      (PP (IN:[60..62] of)
+        (NP (NN:[63..75] beta-catenin))))
+    (VP (VBP:[76..80] play)
+      (NP (DT:[81..82] a) (JJ:[83..90] crucial) (NN:[91..95] role))
+      (PP (IN:[96..98] in)
+        (NP
+          (NP (DT:[99..102] the) (NN:[103..116] tumorigenesis))
+          (PP (IN:[117..119] of)
+            (NP (JJ:[121..129] sporadic) (NN:[130..144] hepatoblastoma))))))
+    (.:[144..145] .)))
+
+;section 2 Span:149..190
+;Jeng YM, Wu MZ, Mao TL, Chang MH, Hsu HC.
+(SEC
+  (FRAG (NNP:[149..153] Jeng) (NNP:[154..156] YM) (,:[156..157] ,)
+        (NNP:[158..160] Wu) (NNP:[161..163] MZ) (,:[163..164] ,)
+        (NNP:[165..168] Mao) (NNP:[169..171] TL) (,:[171..172] ,)
+        (NNP:[173..178] Chang) (NNP:[179..181] MH) (,:[181..182] ,)
+        (NNP:[183..186] Hsu) (NNP:[187..190] HC.)))
+
+;section 3 Span:194..297
+;Department of Pathology, National Taiwan University Hospital, 7 Chung-Shan
+;South  Road, Taipei, Taiwan.
+(SEC
+  (FRAG (NNP:[194..204] Department) (IN:[205..207] of)
+        (NNP:[208..217] Pathology) (,:[217..218] ,) (NNP:[219..227] National)
+        (NNP:[228..234] Taiwan) (NNP:[235..245] University)
+        (NNP:[246..254] Hospital) (,:[254..255] ,) (NNP:[256..257] 7)
+        (NNP:[258..263] Chung) (HYPH:[263..264] -) (NNP:[264..268] Shan)
+        (NNP:[269..274] South) (NNP:[276..280] Road) (,:[280..281] ,)
+        (NNP:[282..288] Taipei) (,:[288..289] ,) (NNP:[290..296] Taiwan)
+        (.:[296..297] .)))
+
+;sentence 4 Span:301..388
+;Hepatoblastoma (HB) is the most common malignant hepatic tumor during early 
+;childhood.
+;[301..315]:malignancy:"Hepatoblastoma"
+;[317..319]:malignancy:"HB"
+;[340..363]:malignancy:"malignant hepatic tumor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[301..315] Hepatoblastoma))
+      (NP (-LRB-:[316..317] -LRB-) (NN:[317..319] HB) (-RRB-:[319..320] -RRB-)))
+    (VP (VBZ:[321..323] is)
+      (NP-PRD
+        (NP (DT:[324..327] the)
+          (ADJP (RBS:[328..332] most) (JJ:[333..339] common))
+           (JJ:[340..349] malignant) (JJ:[350..357] hepatic)
+           (NN:[358..363] tumor))
+        (PP-TMP (IN:[364..370] during)
+          (NP (JJ:[371..376] early) (NN:[378..387] childhood)))))
+    (.:[387..388] .)))
+
+;sentence 5 Span:389..443
+;Its molecular pathogenesis is still poorly understood.
+(SENT
+  (S
+    (NP-SBJ-1 (PRP$:[389..392] Its) (JJ:[393..402] molecular)
+              (NN:[403..415] pathogenesis))
+    (VP (VBZ:[416..418] is)
+      (ADVP (RB:[419..424] still))
+      (ADVP (RB:[425..431] poorly))
+      (VP (VBN:[432..442] understood)
+        (NP-1 (-NONE-:[442..442] *))))
+    (.:[442..443] .)))
+
+;sentence 6 Span:444..611
+;Mutations of  adenomatous polyposis coli (APC) gene have been identified in
+;sporadic cases and  in individuals associated with familial adenomatous
+;polyposis syndrome.
+;[458..484]:gene-rna:"adenomatous polyposis coli"
+;[486..489]:gene-rna:"APC"
+;[571..610]:malignancy:"familial adenomatous polyposis syndrome"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[444..453] Mutations))
+      (PP (IN:[454..456] of)
+        (NP
+          (NML
+            (NML (JJ:[458..469] adenomatous) (NN:[470..479] polyposis)
+                 (NN:[480..484] coli))
+            (NML (-LRB-:[485..486] -LRB-) (NN:[486..489] APC)
+                 (-RRB-:[489..490] -RRB-)))
+          (NN:[491..495] gene))))
+    (VP (VBP:[496..500] have)
+      (VP (VBN:[501..505] been)
+        (VP (VBN:[506..516] identified)
+          (NP-1 (-NONE-:[516..516] *))
+          (PP
+            (PP (IN:[517..519] in)
+              (NP (JJ:[520..528] sporadic) (NNS:[529..534] cases)))
+            (CC:[535..538] and)
+            (PP-LOC (IN:[540..542] in)
+              (NP
+                (NP (NNS:[543..554] individuals))
+                (VP (VBN:[555..565] associated)
+                  (NP (-NONE-:[565..565] *))
+                  (PP-CLR (IN:[566..570] with)
+                    (NP (JJ:[571..579] familial) (JJ:[580..591] adenomatous)
+                        (NN:[592..601] polyposis) (NN:[602..610] syndrome))))))))))
+    (.:[610..611] .)))
+
+;sentence 7 Span:613..741
+;beta-catenin is a key element in the cadherin-mediated cell adhesion system
+;and  Wnt/wingless pathway, and is controlled by APC.
+;[613..625]:gene-generic:"beta-catenin"
+;[650..658]:gene-protein:"cadherin"
+;[694..697]:gene-rna:"Wnt"
+;[698..706]:gene-rna:"wingless"
+;[737..740]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[613..625] beta-catenin))
+    (VP
+      (VP (VBZ:[626..628] is)
+        (NP-PRD
+          (NP (DT:[629..630] a) (JJ:[631..634] key) (NN:[635..642] element))
+          (PP (IN:[643..645] in)
+            (NP
+              (NP (DT:[646..649] the)
+                (ADJP (NN:[650..658] cadherin) (HYPH:[658..659] -)
+                      (VBN:[659..667] mediated))
+                (NN:[668..672] cell) (NN:[673..681] adhesion)
+                 (NN:[682..688] system))
+              (CC:[689..692] and)
+              (NP
+                (NML (NN:[694..697] Wnt) (SYM:[697..698] /)
+                     (JJ:[698..706] wingless))
+                (NN:[707..714] pathway))))))
+      (,:[714..715] ,) (CC:[716..719] and)
+      (VP (VBZ:[720..722] is)
+        (VP (VBN:[723..733] controlled)
+          (NP-1 (-NONE-:[733..733] *))
+          (PP (IN:[734..736] by)
+            (NP-LGS (NN:[737..740] APC))))))
+    (.:[740..741] .)))
+
+;sentence 8 Span:742..869
+;APC affects the degradation of  beta-catenin by its NH(2)-terminal
+;phosphorylation on the serine/threonine  residues of exon 3.
+;[742..745]:gene-rna:"APC"
+;[774..786]:gene-protein:"beta-catenin"
+;[862..868]:variation-location:"exon 3"
+(SENT
+  (S
+    (NP-SBJ (NN:[742..745] APC))
+    (VP (VBZ:[746..753] affects)
+      (NP
+        (NP (DT:[754..757] the) (NN:[758..769] degradation))
+        (PP (IN:[770..772] of)
+          (NP (NN:[774..786] beta-catenin))))
+      (PP-MNR (IN:[787..789] by)
+        (NP
+          (NP (PRP$:[790..793] its)
+            (NML (NN:[794..799] NH-LRB-2-RRB-) (HYPH:[799..800] -)
+                 (JJ:[800..808] terminal))
+            (NN:[809..824] phosphorylation))
+          (PP (IN:[825..827] on)
+            (NP
+              (NP (DT:[828..831] the)
+                (NML (NN:[832..838] serine) (SYM:[838..839] /)
+                     (NN:[839..848] threonine))
+                (NNS:[850..858] residues))
+              (PP (IN:[859..861] of)
+                (NP (NN:[862..866] exon) (CD:[867..868] 3))))))))
+    (.:[868..869] .)))
+
+;sentence 9 Span:870..1048
+;Mutations of these phosphorylation sites are primary targets  for activating
+;mutations in several types of human cancer and lead to nuclear  accumulation
+;of beta-catenin protein.
+;[1027..1039]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[870..879] Mutations))
+      (PP (IN:[880..882] of)
+        (NP (DT:[883..888] these) (NN:[889..904] phosphorylation)
+            (NNS:[905..910] sites))))
+    (VP
+      (VP (VBP:[911..914] are)
+        (NP-PRD
+          (NP (JJ:[915..922] primary) (NNS:[923..930] targets))
+          (PP (IN:[932..935] for)
+            (NP (VBG:[936..946] activating) (NNS:[947..956] mutations)))
+          (PP (IN:[957..959] in)
+            (NP
+              (NP (JJ:[960..967] several) (NNS:[968..973] types))
+              (PP (IN:[974..976] of)
+                (NP (JJ:[977..982] human) (NN:[983..989] cancer)))))))
+      (CC:[990..993] and)
+      (VP (VBP:[994..998] lead)
+        (PP (TO:[999..1001] to)
+          (NP
+            (NP (JJ:[1002..1009] nuclear) (NN:[1011..1023] accumulation))
+            (PP (IN:[1024..1026] of)
+              (NP (NN:[1027..1039] beta-catenin) (NN:[1040..1047] protein)))))))
+    (.:[1047..1048] .)))
+
+;sentence 10 Span:1049..1152
+;In this study, we examined nine patients  with HB using immunohistochemistry
+;and direct DNA sequencing.
+;[1096..1098]:malignancy:"HB"
+(SENT
+  (S
+    (PP (IN:[1049..1051] In)
+      (NP (DT:[1052..1056] this) (NN:[1057..1062] study)))
+    (,:[1062..1063] ,)
+    (NP-SBJ (PRP:[1064..1066] we))
+    (VP (VBD:[1067..1075] examined)
+      (NP
+        (NP (CD:[1076..1080] nine) (NNS:[1081..1089] patients))
+        (PP (IN:[1091..1095] with)
+          (NP (NN:[1096..1098] HB))))
+      (S-MNR
+        (NP-SBJ (-NONE-:[1098..1098] *))
+        (VP (VBG:[1099..1104] using)
+          (NP
+            (NP (NN:[1105..1125] immunohistochemistry))
+            (CC:[1126..1129] and)
+            (NP (JJ:[1130..1136] direct) (NN:[1137..1140] DNA)
+                (NN:[1141..1151] sequencing))))))
+    (.:[1151..1152] .)))
+
+;sentence 11 Span:1153..1223
+;All nine cases  showed predominant nuclear expression of beta-catenin.
+;[1210..1222]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1153..1156] All) (CD:[1157..1161] nine)
+            (NNS:[1162..1167] cases))
+    (VP (VBD:[1169..1175] showed)
+      (NP
+        (NP (JJ:[1176..1187] predominant) (JJ:[1188..1195] nuclear)
+            (NN:[1196..1206] expression))
+        (PP (IN:[1207..1209] of)
+          (NP (NN:[1210..1222] beta-catenin)))))
+    (.:[1222..1223] .)))
+
+;sentence 12 Span:1224..1368
+;Eight cases (89%) showed  mutations involving exon 3 of the beta-catenin
+;gene, including five with  deletions and three with missense mutations.
+;[1250..1259]:variation-event:"mutations"
+;[1270..1276]:variation-location:"exon 3"
+;[1284..1296]:gene-rna:"beta-catenin"
+;[1324..1333]:variation-type:"deletions"
+;[1349..1367]:variation-type:"missense mutations"
+(SENT
+  (S
+    (NP-SBJ (CD:[1224..1229] Eight) (NNS:[1230..1235] cases)
+      (PRN (-LRB-:[1236..1237] -LRB-)
+        (NP (CD:[1237..1239] 89) (NN:[1239..1240] %))
+        (-RRB-:[1240..1241] -RRB-)))
+    (VP (VBD:[1242..1248] showed)
+      (NP
+        (NP (NNS:[1250..1259] mutations))
+        (VP (VBG:[1260..1269] involving)
+          (NP
+            (NP (NN:[1270..1274] exon) (CD:[1275..1276] 3))
+            (PP (IN:[1277..1279] of)
+              (NP (DT:[1280..1283] the) (NN:[1284..1296] beta-catenin)
+                  (NN:[1297..1301] gene))))))
+      (,:[1301..1302] ,)
+      (PP (VBG:[1303..1312] including)
+        (NP
+          (NP
+            (NP (CD:[1313..1317] five))
+            (PP (IN:[1318..1322] with)
+              (NP (NNS:[1324..1333] deletions))))
+          (CC:[1334..1337] and)
+          (NP
+            (NP (CD:[1338..1343] three))
+            (PP (IN:[1344..1348] with)
+              (NP (JJ:[1349..1357] missense) (NNS:[1358..1367] mutations)))))))
+    (.:[1367..1368] .)))
+
+;sentence 13 Span:1369..1432
+;All five deletions were in-frame  deletions without frameshift.
+;[1378..1387]:variation-type:"deletions"
+;[1393..1431]:variation-type:"in-frame  deletions without frameshift"
+(SENT
+  (S
+    (NP-SBJ (DT:[1369..1372] All) (CD:[1373..1377] five)
+            (NNS:[1378..1387] deletions))
+    (VP (VBD:[1388..1392] were)
+      (NP-PRD
+        (NP
+          (NML (IN:[1393..1395] in) (HYPH:[1395..1396] -)
+               (NN:[1396..1401] frame))
+          (NNS:[1403..1412] deletions))
+        (PP (IN:[1413..1420] without)
+          (NP (NN:[1421..1431] frameshift)))))
+    (.:[1431..1432] .)))
+
+;sentence 14 Span:1433..1573
+;The very high frequency of mutations in the  beta-catenin gene suggests that
+;beta-catenin mutations are crucial in the  tumorigenesis of HB.
+;[1478..1490]:gene-rna:"beta-catenin"
+;[1510..1522]:gene-rna:"beta-catenin"
+;[1570..1572]:malignancy:"HB"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1433..1436] The)
+        (ADJP (RB:[1437..1441] very) (JJ:[1442..1446] high))
+        (NN:[1447..1456] frequency))
+      (PP (IN:[1457..1459] of)
+        (NP (NNS:[1460..1469] mutations)))
+      (PP (IN:[1470..1472] in)
+        (NP (DT:[1473..1476] the) (NN:[1478..1490] beta-catenin)
+            (NN:[1491..1495] gene))))
+    (VP (VBZ:[1496..1504] suggests)
+      (SBAR (IN:[1505..1509] that)
+        (S
+          (NP-SBJ (NN:[1510..1522] beta-catenin) (NNS:[1523..1532] mutations))
+          (VP (VBP:[1533..1536] are)
+            (ADJP-PRD (JJ:[1537..1544] crucial)
+              (PP (IN:[1545..1547] in)
+                (NP
+                  (NP (DT:[1548..1551] the) (NN:[1553..1566] tumorigenesis))
+                  (PP (IN:[1567..1569] of)
+                    (NP (NN:[1570..1572] HB))))))))))
+    (.:[1572..1573] .)))
+
+;section 15 Span:1577..1622
+;PMID: 10754205 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1577..1581] PMID) (::[1581..1582] :) (CD:[1583..1591] 10754205)
+        (IN:[1592..1593] -LSB-) (NNP:[1593..1599] PubMed) (HYPH:[1600..1601] -)
+        (JJ:[1602..1609] indexed) (IN:[1610..1613] for)
+        (NNP:[1614..1622] MEDLINE-RSB-)))

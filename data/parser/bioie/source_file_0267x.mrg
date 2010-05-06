@@ -1,0 +1,352 @@
+;PMID: 9615223
+;source_file_2918.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..135] = [t:41..135]
+;2)section:[e:139..197] = [t:139..197]
+;3)section:[e:201..305] = [t:201..305]
+;4)sentence:[e:309..508] = [t:309..508]
+;5)sentence:[e:509..666] = [t:509..666]
+;6)sentence:[e:667..911] = [t:667..911]
+;7)sentence:[e:912..1142] = [t:912..1142]
+;8)sentence:[e:1143..1273] = [t:1143..1273]
+;9)sentence:[e:1274..1421] = [t:1274..1421]
+;10)section:[e:1425..1469] = [t:1425..1469]
+
+;section 0 Span:0..35
+;Genomics.  1998 May 1;49(3):385-93.
+(SEC
+  (FRAG (NNP:[0..8] Genomics) (.:[8..9] .) (CD:[11..15] 1998) (NNP:[16..19] May)
+        (CD:[20..25] 1;49-LRB-) (CD:[25..26] 3) (-RRB-:[26..27] -RRB-)
+        (::[27..28] :) (CD:[28..31] 385) (::[31..32] -) (CD:[32..34] 93)
+        (.:[34..35] .)))
+
+;sentence 1 Span:41..135
+;Duplication of the DR3 gene on human chromosome 1p36 and its deletion in
+;human  neuroblastoma.
+;[41..52]:variation-type:"Duplication"
+;[60..63]:gene-rna:"DR3"
+;[89..93]:variation-location:"1p36"
+;[102..110]:variation-type:"deletion"
+;[121..134]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[41..52] Duplication))
+      (PP (IN:[53..55] of)
+        (NP (DT:[56..59] the) (NN:[60..63] DR3) (NN:[64..68] gene)))
+      (PP-LOC (IN:[69..71] on)
+        (NP (JJ:[72..77] human) (NN:[78..88] chromosome) (NN:[89..93] 1p36))))
+    (CC:[94..97] and)
+    (NP
+      (NP (PRP$:[98..101] its) (NN:[102..110] deletion))
+      (PP (IN:[111..113] in)
+        (NP (JJ:[114..119] human) (NN:[121..134] neuroblastoma))))
+    (.:[134..135] .)))
+
+;section 2 Span:139..197
+;Grenet J, Valentine V, Kitson J, Li H, Farrow SN, Kidd VJ.
+(SEC
+  (FRAG (NNP:[139..145] Grenet) (NNP:[146..148] J,) (NNP:[149..158] Valentine)
+        (NNP:[159..160] V) (,:[160..161] ,) (NNP:[162..168] Kitson)
+        (NNP:[169..171] J,) (NNP:[172..174] Li) (NNP:[175..177] H,)
+        (NNP:[178..184] Farrow) (NNP:[185..187] SN) (,:[187..188] ,)
+        (NNP:[189..193] Kidd) (NNP:[194..197] VJ.)))
+
+;section 3 Span:201..305
+;Department of Tumor Cell Biology, St. Jude Children's Research Hospital, 
+;Memphis, Tennessee 38101, USA.
+(SEC
+  (FRAG (NNP:[201..211] Department) (IN:[212..214] of) (NNP:[215..220] Tumor)
+        (NNP:[221..225] Cell) (NNP:[226..233] Biology) (,:[233..234] ,)
+        (NNP:[235..238] St.) (NNP:[239..243] Jude) (NNP:[244..252] Children)
+        (POS:[252..254] 's) (NNP:[255..263] Research) (NNP:[264..272] Hospital)
+        (,:[272..273] ,) (NNP:[275..282] Memphis) (,:[282..283] ,)
+        (NNP:[284..293] Tennessee) (CD:[294..299] 38101) (,:[299..300] ,)
+        (NNP:[301..304] USA) (.:[304..305] .)))
+
+;sentence 4 Span:309..508
+;The human DR3 gene, whose product is also known as Wsl-1/APO-3/TRAMP/LARD, 
+;encodes a tumor necrosis factor-related receptor that is expressed primarily
+;on  the surface of thymocytes and lymphocytes.
+;[319..322]:gene-rna:"DR3"
+;[360..365]:gene-protein:"Wsl-1"
+;[366..371]:gene-protein:"APO-3"
+;[372..377]:gene-protein:"TRAMP"
+;[378..382]:gene-protein:"LARD"
+;[395..433]:gene-protein:"tumor necrosis factor-related receptor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[309..312] The) (JJ:[313..318] human) (NN:[319..322] DR3)
+          (NN:[323..327] gene))
+      (,:[327..328] ,)
+      (SBAR
+        (WHNP-1 (WP$:[329..334] whose) (NN:[335..342] product))
+        (S
+          (NP-SBJ-1 (-NONE-:[342..342] *T*))
+          (VP (VBZ:[343..345] is)
+            (ADVP (RB:[346..350] also))
+            (VP (VBN:[351..356] known)
+              (NP-1 (-NONE-:[356..356] *))
+              (PP (IN:[357..359] as)
+                (NP (NN:[360..365] Wsl-1) (SYM:[365..366] /)
+                    (NN:[366..371] APO-3) (SYM:[371..372] /)
+                    (NN:[372..377] TRAMP) (SYM:[377..378] /)
+                    (NN:[378..382] LARD))))))))
+    (,:[382..383] ,)
+    (VP (VBZ:[385..392] encodes)
+      (NP
+        (NP (DT:[393..394] a)
+          
+          (ADJP
+            (NML (NN:[395..400] tumor) (NN:[401..409] necrosis)
+                 (NN:[410..416] factor))
+            (HYPH:[416..417] -) (VBN:[417..424] related))
+          (NN:[425..433] receptor))
+        (SBAR
+          (WHNP-2 (WDT:[434..438] that))
+          (S
+            (NP-SBJ-2 (-NONE-:[438..438] *T*))
+            (VP (VBZ:[439..441] is)
+              (VP (VBN:[442..451] expressed)
+                (NP-2 (-NONE-:[451..451] *))
+                (ADVP (RB:[452..461] primarily))
+                (PP (IN:[462..464] on)
+                  (NP
+                    (NP (DT:[466..469] the) (NN:[470..477] surface))
+                    (PP (IN:[478..480] of)
+                      (NP (NNS:[481..491] thymocytes) (CC:[492..495] and)
+                          (NNS:[496..507] lymphocytes)))))))))))
+    (.:[507..508] .)))
+
+;sentence 5 Span:509..666
+;DR3 is capable of inducing both  NF-kappa B activation and apoptosis when
+;overexpressed in mammalian cells,  although its ligand has not yet been
+;identified.
+;[509..512]:gene-rna:"DR3"
+;[542..552]:gene-protein:"NF-kappa B"
+(SENT
+  (S
+    (NP-SBJ (NN:[509..512] DR3))
+    (VP (VBZ:[513..515] is)
+      (ADJP-PRD (JJ:[516..523] capable)
+        (PP (IN:[524..526] of)
+          (S-NOM
+            (NP-SBJ (-NONE-:[526..526] *))
+            (VP (VBG:[527..535] inducing)
+              (NP (CC:[536..540] both)
+                (NP
+                  (NML (NN:[542..550] NF-kappa) (NN:[551..552] B))
+                  (NN:[553..563] activation))
+                (CC:[564..567] and)
+                (NP (NN:[568..577] apoptosis)))
+              (SBAR-ADV
+                (WHADVP-1 (WRB:[578..582] when))
+                (S
+                  (NP-SBJ-2 (-NONE-:[582..582] *))
+                  (VP (VBN:[583..596] overexpressed)
+                    (NP-2 (-NONE-:[596..596] *))
+                    (PP-LOC (IN:[597..599] in)
+                      (NP (JJ:[600..609] mammalian) (NNS:[610..615] cells)))
+                    (ADVP-TMP-1 (-NONE-:[615..615] *T*)))))))))
+      (,:[615..616] ,)
+      (SBAR-ADV (IN:[618..626] although)
+        (S
+          (NP-SBJ-3 (PRP$:[627..630] its) (NN:[631..637] ligand))
+          (VP (VBZ:[638..641] has)
+            (ADVP (RB:[642..645] not) (RB:[646..649] yet))
+            (VP (VBN:[650..654] been)
+              (VP (VBN:[655..665] identified)
+                (NP-3 (-NONE-:[665..665] *))))))))
+    (.:[665..666] .)))
+
+;sentence 6 Span:667..911
+;We report here that the DR3  gene locus is tandemly duplicated on human
+;chromosome band 1p36.2-p36.3 and that  these genes are hemizygously deleted
+;and/or translocated to another chromosome  in neuroblastoma (NB) cell lines
+;with amplified MYCN.
+;[691..694]:gene-rna:"DR3"
+;[755..767]:variation-location:"1p36.2-p36.3"
+;[794..814]:variation-type:"hemizygously deleted"
+;[822..834]:variation-type:"translocated"
+;[861..874]:malignancy-type:"neuroblastoma"
+;[876..878]:malignancy-type:"NB"
+;[896..905]:variation-type:"amplified"
+;[906..910]:gene-rna:"MYCN"
+(SENT
+  (S
+    (NP-SBJ (PRP:[667..669] We))
+    (VP (VBP:[670..676] report)
+      (ADVP (RB:[677..681] here))
+      (SBAR
+        (SBAR (IN:[682..686] that)
+          (S
+            (NP-SBJ-1 (DT:[687..690] the) (NN:[691..694] DR3)
+                      (NN:[696..700] gene) (NN:[701..706] locus))
+            (VP (VBZ:[707..709] is)
+              (ADVP (RB:[710..718] tandemly))
+              (VP (VBN:[719..729] duplicated)
+                (NP-1 (-NONE-:[729..729] *))
+                (PP (IN:[730..732] on)
+                  (NP
+                    (NP (JJ:[733..738] human) (NN:[739..749] chromosome)
+                        (NN:[750..754] band)
+                      (NML-2 (CD:[755..756] 1))
+                      (NN:[756..761] p36.2))
+                    (PP (HYPH:[761..762] -)
+                      (NP
+                        (NML-2 (-NONE-:[762..762] *P*))
+                        (NN:[762..767] p36.3)))))))))
+        (CC:[768..771] and)
+        (SBAR (IN:[772..776] that)
+          (S
+            (NP-SBJ-3 (DT:[778..783] these) (NNS:[784..789] genes))
+            (VP (VBP:[790..793] are)
+              (VP
+                (VP
+                  
+                  (ADVP (RB:[794..806] hemizygously))
+                  (VBN:[807..814] deleted)
+                  (NP-3 (-NONE-:[814..814] *)))
+                (CC:[815..821] and/or)
+                (VP (VBN:[822..834] translocated)
+                  (NP-3 (-NONE-:[834..834] *))
+                  (PP (TO:[835..837] to)
+                    (NP (DT:[838..845] another) (NN:[846..856] chromosome))))
+                (PP-LOC (IN:[858..860] in)
+                  (NP
+                    (NP
+                      (NML
+                        (NML (NN:[861..874] neuroblastoma))
+                        (NML (-LRB-:[875..876] -LRB-) (NN:[876..878] NB)
+                             (-RRB-:[878..879] -RRB-)))
+                      (NN:[880..884] cell) (NNS:[885..890] lines))
+                    (PP (IN:[891..895] with)
+                      (NP (VBN:[896..905] amplified) (NN:[906..910] MYCN)))))))))))
+    (.:[910..911] .)))
+
+;sentence 7 Span:912..1142
+;Duplication of at least a  portion of the DR3 gene, including the
+;extracellular and transmembrane regions  but not the cytoplasmic domain, was
+;demonstrated by both fluorescence in situ  hybridization and genomic Southern
+;blotting.
+;[912..923]:variation-type:"Duplication"
+;[954..957]:gene-rna:"DR3"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[912..923] Duplication))
+      (PP (IN:[924..926] of)
+        (NP
+          (NP
+            (NP
+              (ADJP (IN:[927..929] at) (JJS:[930..935] least))
+              (DT:[936..937] a) (NN:[939..946] portion))
+            (PP (IN:[947..949] of)
+              (NP (DT:[950..953] the) (NN:[954..957] DR3) (NN:[958..962] gene))))
+          (,:[962..963] ,)
+          (VP (VBG:[964..973] including)
+            (NP
+              (NP (DT:[974..977] the)
+                (NML
+                  (NML (JJ:[978..991] extracellular)
+                    (NML-1 (-NONE-:[991..991] *P*)))
+                  (CC:[992..995] and)
+                  (NML (JJ:[996..1009] transmembrane)
+                    (NML-1 (NNS:[1010..1017] regions)))))
+              (CONJP (CC:[1019..1022] but) (RB:[1023..1026] not))
+              (NP (DT:[1027..1030] the) (JJ:[1031..1042] cytoplasmic)
+                  (NN:[1043..1049] domain)))))))
+    (,:[1049..1050] ,)
+    (VP (VBD:[1051..1054] was)
+      (VP (VBN:[1055..1067] demonstrated)
+        (NP-2 (-NONE-:[1067..1067] *))
+        (PP-MNR (IN:[1068..1070] by)
+          (NP (CC:[1071..1075] both)
+            (NP (NN:[1076..1088] fluorescence)
+              (ADJP (FW:[1089..1091] in) (FW:[1092..1096] situ))
+              (NN:[1098..1111] hybridization))
+            (CC:[1112..1115] and)
+            (NP (JJ:[1116..1123] genomic) (JJ:[1124..1132] Southern)
+                (NN:[1133..1141] blotting))))))
+    (.:[1141..1142] .)))
+
+;sentence 8 Span:1143..1273
+;In most NB cell lines, both the DR3  and the DR3L sequences are
+;simultaneously deleted and/or translocated to another  chromosome.
+;[1151..1153]:malignancy-type:"NB"
+;[1175..1178]:gene-rna:"DR3"
+;[1188..1192]:gene-rna:"DR3L"
+;[1222..1229]:variation-type:"deleted"
+;[1237..1249]:variation-type:"translocated"
+(SENT
+  (S
+    (PP-LOC (IN:[1143..1145] In)
+      (NP (JJS:[1146..1150] most) (NN:[1151..1153] NB) (NN:[1154..1158] cell)
+          (NNS:[1159..1164] lines)))
+    (,:[1164..1165] ,)
+    (NP-SBJ-2 (CC:[1166..1170] both)
+      (NP (DT:[1171..1174] the) (NN:[1175..1178] DR3)
+        (NML-1 (-NONE-:[1178..1178] *P*)))
+      (CC:[1180..1183] and)
+      (NP (DT:[1184..1187] the) (NN:[1188..1192] DR3L)
+        (NML-1 (NNS:[1193..1202] sequences))))
+    (VP (VBP:[1203..1206] are)
+      (ADVP (RB:[1207..1221] simultaneously))
+      (VP
+        (VP (VBN:[1222..1229] deleted)
+          (NP-2 (-NONE-:[1229..1229] *)))
+        (CC:[1230..1236] and/or)
+        (VP (VBN:[1237..1249] translocated)
+          (NP-2 (-NONE-:[1249..1249] *))
+          (PP (TO:[1250..1252] to)
+            (NP (DT:[1253..1260] another) (NN:[1262..1272] chromosome))))))
+    (.:[1272..1273] .)))
+
+;sentence 9 Span:1274..1421
+;Finally, DR3/ Wsl-1 protein expression is quite variable among these  NB cell
+;lines, with very low or undetectable levels in 7 of 17 NB cell lines.
+;[1283..1286]:gene-protein:"DR3"
+;[1288..1293]:gene-protein:"Wsl-1"
+;[1344..1346]:malignancy-type:"NB"
+;[1407..1409]:malignancy-type:"NB"
+(SENT
+  (S
+    (ADVP (RB:[1274..1281] Finally))
+    (,:[1281..1282] ,)
+    (NP-SBJ
+      (NML (NN:[1283..1286] DR3) (SYM:[1286..1287] /) (NN:[1288..1293] Wsl-1))
+      (NN:[1294..1301] protein) (NN:[1302..1312] expression))
+    (VP (VBZ:[1313..1315] is)
+      (ADJP-PRD (RB:[1316..1321] quite) (JJ:[1322..1330] variable))
+      (PP (IN:[1331..1336] among)
+        (NP (DT:[1337..1342] these) (NN:[1344..1346] NB) (NN:[1347..1351] cell)
+            (NNS:[1352..1357] lines)))
+      (,:[1357..1358] ,)
+      (PP (IN:[1359..1363] with)
+        (NP
+          (NP
+            (NP
+              (ADJP (RB:[1364..1368] very) (JJ:[1369..1372] low))
+              (NML-1 (-NONE-:[1372..1372] *P*)))
+            (CC:[1373..1375] or)
+            (NP (JJ:[1376..1388] undetectable)
+              (NML-1 (NNS:[1389..1395] levels))))
+          (PP-LOC (IN:[1396..1398] in)
+            (NP
+              (NP (CD:[1399..1400] 7))
+              (PP (IN:[1401..1403] of)
+                (NP (CD:[1404..1406] 17) (NN:[1407..1409] NB)
+                    (NN:[1410..1414] cell) (NNS:[1415..1420] lines))))))))
+    (.:[1420..1421] .)))
+
+;section 10 Span:1425..1469
+;PMID: 9615223 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1425..1429] PMID) (::[1429..1430] :) (CD:[1431..1438] 9615223)
+        (NN:[1439..1440] -LSB-) (NNP:[1440..1446] PubMed) (::[1447..1448] -)
+        (NN:[1449..1456] indexed) (IN:[1457..1460] for)
+        (NNP:[1461..1469] MEDLINE-RSB-)))

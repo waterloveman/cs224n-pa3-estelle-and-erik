@@ -1,0 +1,329 @@
+;PMID: 11782392
+;source_file_2934.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..148] = [t:42..148]
+;2)section:[e:152..238] = [t:152..238]
+;3)section:[e:242..354] = [t:242..354]
+;4)sentence:[e:358..453] = [t:358..453]
+;5)sentence:[e:454..581] = [t:454..581]
+;6)sentence:[e:582..783] = [t:582..783]
+;7)sentence:[e:784..985] = [t:784..985]
+;8)sentence:[e:986..1117] = [t:986..1117]
+;9)sentence:[e:1118..1217] = [t:1118..1217]
+;10)sentence:[e:1218..1339] = [t:1218..1339]
+;11)sentence:[e:1340..1441] = [t:1340..1441]
+;12)section:[e:1445..1490] = [t:1445..1490]
+
+;section 0 Span:0..36
+;Cancer Res.  2002 Jan 1;62(1):301-6.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (.:[10..11] .) ('':[13..17] 2002)
+        (NNP:[18..21] Jan) (IN:[22..24] 1;) (CD:[24..27] 62-LRB-)
+        (CD:[27..28] 1) (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..33] 301)
+        (CD:[33..36] -6.)))
+
+;sentence 1 Span:42..148
+;Id2 is critical for cellular proliferation and is the oncogenic effector of 
+;N-myc in human neuroblastoma.
+;[42..45]:gene-protein:"Id2"
+;[119..124]:gene-rna:"N-myc"
+;[134..147]:malignancy-type:"neuroblastoma"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[42..45] Id2))
+    (VP
+      (VP (VBZ:[46..48] is)
+        (ADJP-PRD (JJ:[49..57] critical)
+          (PP (IN:[58..61] for)
+            (NP (JJ:[62..70] cellular) (NN:[71..84] proliferation)))))
+      (CC:[85..88] and)
+      (VP (VBZ:[89..91] is)
+        (NP-PRD
+          (NP (DT:[92..95] the) (JJ:[96..105] oncogenic)
+              (NN:[106..114] effector))
+          (PP (IN:[115..117] of)
+            (NP (NN:[119..124] N-myc))))
+        (PP-LOC (IN:[125..127] in)
+          (NP (JJ:[128..133] human) (NN:[134..147] neuroblastoma)))))
+    (.:[147..148] .)))
+
+;section 2 Span:152..238
+;Lasorella A, Boldrini R, Dominici C, Donfrancesco A, Yokota Y, Inserra A, 
+;Iavarone A.
+(SEC
+  (FRAG (NNP:[152..161] Lasorella) (NNP:[162..163] A) (,:[163..164] ,)
+        (NNP:[165..173] Boldrini) (NNP:[174..175] R) (,:[175..176] ,)
+        (NNP:[177..185] Dominici) (NNP:[186..187] C) (,:[187..188] ,)
+        (NNP:[189..201] Donfrancesco) (NNP:[202..203] A) (,:[203..204] ,)
+        (NNP:[205..211] Yokota) (NNP:[212..213] Y) (,:[213..214] ,)
+        (NNP:[215..222] Inserra) (NNP:[223..224] A) (,:[224..225] ,)
+        (NNP:[227..235] Iavarone) (NNP:[236..237] A) (.:[237..238] .)))
+
+;section 3 Span:242..354
+;Department of Neurology, Albert Einstein College of Medicine, Bronx, New York
+; 10461, USA. iavarone@aecom.yu.edu
+(SEC
+  (FRAG (NNP:[242..252] Department) (IN:[253..255] of)
+        (NNP:[256..265] Neurology) (,:[265..266] ,) (NNP:[267..273] Albert)
+        (NNP:[274..282] Einstein) (NNP:[283..290] College) (IN:[291..293] of)
+        (NNP:[294..302] Medicine) (,:[302..303] ,) (NNP:[304..309] Bronx)
+        (,:[309..310] ,) (NNP:[311..314] New) (NNP:[315..319] York)
+        (CD:[321..326] 10461) (,:[326..327] ,) (NNP:[328..331] USA)
+        (.:[331..332] .) ('':[333..354] iavarone@aecom.yu.edu)))
+
+;sentence 4 Span:358..453
+;Perturbation of the function of the retinoblastoma (Rb) protein is found in
+;most  human tumors.
+;[394..408]:gene-protein:"retinoblastoma"
+;[410..412]:gene-protein:"Rb"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[358..370] Perturbation))
+      (PP (IN:[371..373] of)
+        (NP
+          (NP (DT:[374..377] the) (NN:[378..386] function))
+          (PP (IN:[387..389] of)
+            (NP (DT:[390..393] the)
+              (NML
+                (NML (NN:[394..408] retinoblastoma))
+                (NML (-LRB-:[409..410] -LRB-) (NN:[410..412] Rb)
+                     (-RRB-:[412..413] -RRB-)))
+              (NN:[414..421] protein))))))
+    (VP (VBZ:[422..424] is)
+      (VP (VBN:[425..430] found)
+        (NP-1 (-NONE-:[430..430] *))
+        (PP (IN:[431..433] in)
+          (NP (JJS:[434..438] most) (JJ:[440..445] human)
+              (NNS:[446..452] tumors)))))
+    (.:[452..453] .)))
+
+;sentence 5 Span:454..581
+;Id2 is a natural target of the Rb protein that is recruited by Myc 
+;oncoproteins to bypass the tumor suppressor function of Rb.
+;[454..457]:gene-protein:"Id2"
+;[485..487]:gene-protein:"Rb"
+;[517..520]:gene-protein:"Myc"
+;[578..580]:gene-protein:"Rb"
+(SENT
+  (S
+    (NP-SBJ (NN:[454..457] Id2))
+    (VP (VBZ:[458..460] is)
+      (NP-PRD
+        (NP
+          (NP (DT:[461..462] a) (JJ:[463..470] natural) (NN:[471..477] target))
+          (PP (IN:[478..480] of)
+            (NP (DT:[481..484] the) (NN:[485..487] Rb) (NN:[488..495] protein))))
+        (SBAR
+          (WHNP-1 (WDT:[496..500] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[500..500] *T*))
+            (VP (VBZ:[501..503] is)
+              (VP (VBN:[504..513] recruited)
+                (NP-1 (-NONE-:[513..513] *))
+                (PP (IN:[514..516] by)
+                  (NP (NN:[517..520] Myc) (NNS:[522..534] oncoproteins)))
+                (S-PRP
+                  (NP-SBJ (-NONE-:[534..534] *))
+                  (VP (TO:[535..537] to)
+                    (VP (VB:[538..544] bypass)
+                      (NP
+                        (NP (DT:[545..548] the)
+                          (NML (NN:[549..554] tumor) (NN:[555..565] suppressor))
+                          (NN:[566..574] function))
+                        (PP (IN:[575..577] of)
+                          (NP (NN:[578..580] Rb)))))))))))))
+    (.:[580..581] .)))
+
+;sentence 6 Span:582..783
+;Here we report that  an "N-Myc-Id2 pathway" persists during late development
+;of the nervous system  and parallels the rising levels of active Rb in
+;neuronal precursors withdrawing  from the cell cycle.
+;[607..612]:gene-rna:"N-Myc"
+;[613..616]:gene-protein:"Id2"
+;[724..726]:gene-protein:"Rb"
+(SENT
+  (S
+    (ADVP (RB:[582..586] Here))
+    (NP-SBJ (PRP:[587..589] we))
+    (VP (VBP:[590..596] report)
+      (SBAR (IN:[597..601] that)
+        (S
+          (NP-SBJ (DT:[603..605] an) (``:[606..607] ")
+            (NML (NN:[607..612] N-Myc) (HYPH:[612..613] -) (NN:[613..616] Id2))
+            (NN:[617..624] pathway))
+          ('':[624..625] ")
+          (VP
+            (VP (VBZ:[626..634] persists)
+              (PP-TMP (IN:[635..641] during)
+                (NP
+                  (NP (JJ:[642..646] late) (NN:[647..658] development))
+                  (PP (IN:[659..661] of)
+                    (NP (DT:[662..665] the) (JJ:[666..673] nervous)
+                        (NN:[674..680] system))))))
+            (CC:[682..685] and)
+            (VP (VBZ:[686..695] parallels)
+              (NP
+                (NP (DT:[696..699] the) (VBG:[700..706] rising)
+                    (NNS:[707..713] levels))
+                (PP (IN:[714..716] of)
+                  (NP (JJ:[717..723] active) (NN:[724..726] Rb))))
+              (PP (IN:[727..729] in)
+                (NP
+                  (NP (JJ:[730..738] neuronal) (NNS:[739..749] precursors))
+                  (VP (VBG:[750..761] withdrawing)
+                    (PP (IN:[763..767] from)
+                      (NP (DT:[768..771] the) (NN:[772..776] cell)
+                          (NN:[777..782] cycle)))))))))))
+    (.:[782..783] .)))
+
+;sentence 7 Span:784..985
+;An immunohistochemical analysis of primary neuroblastoma  from 47 patients
+;shows that expression of Id2 is strongly predictive of poor  outcome,
+;irrespective of other clinical and biological variables.
+;[819..826]:malignancy-clinical-stage:"primary"
+;[827..840]:malignancy-type:"neuroblastoma"
+;[884..887]:gene-protein:"Id2"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[784..786] An) (JJ:[787..806] immunohistochemical)
+          (NN:[807..815] analysis))
+      (PP (IN:[816..818] of)
+        (NP
+          (NP (JJ:[819..826] primary) (NN:[827..840] neuroblastoma))
+          (PP (IN:[842..846] from)
+            (NP (CD:[847..849] 47) (NNS:[850..858] patients))))))
+    (VP (VBZ:[859..864] shows)
+      (SBAR (IN:[865..869] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[870..880] expression))
+            (PP (IN:[881..883] of)
+              (NP (NN:[884..887] Id2))))
+          (VP (VBZ:[888..890] is)
+            (ADVP (RB:[891..899] strongly))
+            (ADJP-PRD (JJ:[900..910] predictive)
+              (PP (IN:[911..913] of)
+                (NP
+                  (NP (JJ:[914..918] poor) (NN:[920..927] outcome))
+                  (,:[927..928] ,)
+                  (ADJP (JJ:[929..941] irrespective)
+                    (PP (IN:[942..944] of)
+                      (NP (JJ:[945..950] other)
+                        (ADJP (JJ:[951..959] clinical) (CC:[960..963] and)
+                              (JJ:[964..974] biological))
+                        (NNS:[975..984] variables)))))))))))
+    (.:[984..985] .)))
+
+;sentence 8 Span:986..1117
+;Overexpression  of Id2 mediates cellular transformation and is required to
+;maintain the  malignant behavior of neuroblastoma cells.
+;[1005..1008]:gene-protein:"Id2"
+;[1097..1110]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[986..1000] Overexpression))
+      (PP (IN:[1002..1004] of)
+        (NP (NN:[1005..1008] Id2))))
+    (VP
+      (VP (VBZ:[1009..1017] mediates)
+        (NP (JJ:[1018..1026] cellular) (NN:[1027..1041] transformation)))
+      (CC:[1042..1045] and)
+      (VP (VBZ:[1046..1048] is)
+        (VP (VBN:[1049..1057] required)
+          (NP-1 (-NONE-:[1057..1057] *))
+          (S
+            (NP-SBJ (-NONE-:[1057..1057] *))
+            (VP (TO:[1058..1060] to)
+              (VP (VB:[1061..1069] maintain)
+                (NP
+                  (NP (DT:[1070..1073] the) (JJ:[1075..1084] malignant)
+                      (NN:[1085..1093] behavior))
+                  (PP (IN:[1094..1096] of)
+                    (NP (NN:[1097..1110] neuroblastoma) (NNS:[1111..1116] cells))))))))))
+    (.:[1116..1117] .)))
+
+;sentence 9 Span:1118..1217
+;Correspondingly, embryonic  fibroblasts from Id2-null mice display impaired
+;ability to proliferate.
+;[1163..1167]:gene-protein:"Id2-"
+(SENT
+  (S
+    (ADVP (RB:[1118..1133] Correspondingly))
+    (,:[1133..1134] ,)
+    (NP-SBJ
+      (NP (JJ:[1135..1144] embryonic) (NNS:[1146..1157] fibroblasts))
+      (PP (IN:[1158..1162] from)
+        (NP
+          (ADJP
+             (NN:[1163..1166] Id2) (HYPH:[1166..1167] -)
+            (JJ:[1167..1171] null))
+          (NNS:[1172..1176] mice))))
+    (VP (VBP:[1177..1184] display)
+      (NP (VBN:[1185..1193] impaired) (NN:[1194..1201] ability)
+        (S
+          (NP-SBJ (-NONE-:[1201..1201] *))
+          (VP (TO:[1202..1204] to)
+            (VP (VB:[1205..1216] proliferate))))))
+    (.:[1216..1217] .)))
+
+;sentence 10 Span:1218..1339
+;We  suggest that Id2 overexpression may be a better prognostic indicator than
+;N-myc  gene amplification in neuroblastoma.
+;[1235..1238]:gene-protein:"Id2"
+;[1296..1301]:gene-rna:"N-myc"
+;[1308..1321]:variation-type:"amplification"
+;[1325..1338]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1218..1220] We))
+    (VP (VBP:[1222..1229] suggest)
+      (SBAR (IN:[1230..1234] that)
+        (S
+          (NP-SBJ (NN:[1235..1238] Id2) (NN:[1239..1253] overexpression))
+          (VP (MD:[1254..1257] may)
+            (VP (VB:[1258..1260] be)
+              (NP-PRD
+                (NP (DT:[1261..1262] a) (JJR:[1263..1269] better)
+                    (JJ:[1270..1280] prognostic) (NN:[1281..1290] indicator))
+                (PP (IN:[1291..1295] than)
+                  (NP (NN:[1296..1301] N-myc) (NN:[1303..1307] gene)
+                      (NN:[1308..1321] amplification))))
+              (PP (IN:[1322..1324] in)
+                (NP (NN:[1325..1338] neuroblastoma))))))))
+    (.:[1338..1339] .)))
+
+;sentence 11 Span:1340..1441
+;Thus, disrupting Id2 function may lead to  new and useful therapeutic
+;strategies for cancer patients.
+;[1357..1360]:gene-protein:"Id2"
+(SENT
+  (S
+    (ADVP (RB:[1340..1344] Thus))
+    (,:[1344..1345] ,)
+    (NP-SBJ (VBG:[1346..1356] disrupting) (NN:[1357..1360] Id2)
+            (NN:[1361..1369] function))
+    (VP (MD:[1370..1373] may)
+      (VP (VB:[1374..1378] lead)
+        (PP-CLR (TO:[1379..1381] to)
+          (NP
+            (NP
+              (ADJP (JJ:[1383..1386] new) (CC:[1387..1390] and)
+                    (JJ:[1391..1397] useful))
+              (JJ:[1398..1409] therapeutic) (NNS:[1410..1420] strategies))
+            (PP (IN:[1421..1424] for)
+              (NP (NN:[1425..1431] cancer) (NNS:[1432..1440] patients)))))))
+    (.:[1440..1441] .)))
+
+;section 12 Span:1445..1490
+;PMID: 11782392 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1445..1449] PMID) (::[1449..1450] :) (CD:[1451..1459] 11782392)
+        (NN:[1460..1461] -LSB-) (NNP:[1461..1467] PubMed) (::[1468..1469] -)
+        (NN:[1470..1477] indexed) (IN:[1478..1481] for)
+        (NNP:[1482..1490] MEDLINE-RSB-)))

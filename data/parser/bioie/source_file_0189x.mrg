@@ -1,0 +1,342 @@
+;PMID: 11464866
+;source_file_2996.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..137] = [t:47..137]
+;2)section:[e:141..196] = [t:141..196]
+;3)section:[e:200..291] = [t:200..291]
+;4)sentence:[e:295..541] = [t:295..541]
+;5)sentence:[e:542..653] = [t:542..653]
+;6)sentence:[e:654..798] = [t:654..798]
+;7)sentence:[e:799..965] = [t:799..965]
+;8)sentence:[e:966..1129] = [t:966..1129]
+;9)sentence:[e:1131..1413] = [t:1131..1413]
+;10)sentence:[e:1414..1523] = [t:1414..1523]
+;11)section:[e:1527..1572] = [t:1527..1572]
+
+;section 0 Span:0..41
+;Med Pediatr Oncol.  2001 Jan;36(1):135-8.
+(SEC
+  (FRAG (NNP:[0..3] Med) (NNP:[4..11] Pediatr) (NNP:[12..17] Oncol)
+        (.:[17..18] .) (CD:[20..24] 2001) (NNP:[25..28] Jan) (::[28..29] ;)
+        (CD:[29..31] 36) (-LRB-:[31..32] -LRB-) (CD:[32..33] 1)
+        (-RRB-:[33..34] -RRB-) (::[34..35] :) (CD:[35..40] 135-8) (.:[40..41] .)))
+
+;sentence 1 Span:47..137
+;Differential gene regulation by 9-cis and all-trans retinoic acid in 
+;neuroblastoma cells.
+;[117..130]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (JJ:[47..59] Differential) (NN:[60..64] gene) (NN:[65..75] regulation))
+    (PP (IN:[76..78] by)
+      (NP
+        (NP (NN:[79..84] 9-cis))
+        (CC:[85..88] and)
+        (NP
+          (ADJP (RB:[89..92] all) (HYPH:[92..93] -) (JJ:[93..98] trans))
+          (JJ:[99..107] retinoic) (NN:[108..112] acid))))
+    (PP-LOC (IN:[113..115] in)
+      (NP (NN:[117..130] neuroblastoma) (NNS:[131..136] cells)))
+    (.:[136..137] .)))
+
+;section 2 Span:141..196
+;Lovat PE, Dobson M, Malcolm AJ, Pearson AD, Redfern CP.
+(SEC
+  (FRAG (NNP:[141..146] Lovat) (NNP:[147..149] PE) (,:[149..150] ,)
+        (NNP:[151..157] Dobson) (NNP:[158..159] M) (,:[159..160] ,)
+        (NNP:[161..168] Malcolm) (NNP:[169..171] AJ) (,:[171..172] ,)
+        (NNP:[173..180] Pearson) (NNP:[181..183] AD) (,:[183..184] ,)
+        (NNP:[185..192] Redfern) (NN:[193..195] CP) (.:[195..196] .)))
+
+;section 3 Span:200..291
+;Department of Medicine, Medical School, University of Newcastle Upon Tyne, 
+;United Kingdom.
+(SEC
+  (FRAG (NNP:[200..210] Department) (IN:[211..213] of) (NNP:[214..222] Medicine)
+        (,:[222..223] ,) (NNP:[224..231] Medical) (NNP:[232..238] School)
+        (,:[238..239] ,) (NNP:[240..250] University) (IN:[251..253] of)
+        (NNP:[254..263] Newcastle) (NNP:[264..268] Upon) (NNP:[269..273] Tyne)
+        (,:[273..274] ,) (NNP:[276..282] United) (NNP:[283..290] Kingdom)
+        (.:[290..291] .)))
+
+;sentence 4 Span:295..541
+;BACKGROUND: 9-cis retinoic acid (RA) is more effective than all-trans RA at 
+;inducing neuroblastoma differentiation in vitro, and has distinct biological 
+;properties with respect to its ability to promote apoptosis in N-type 
+;neuroblastoma cells.
+;[381..394]:malignancy-type:"neuroblastoma"
+;[521..534]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP (NN:[295..305] BACKGROUND) (::[305..306] :))
+  (S
+    (NP-SBJ
+      (NP (NN:[307..312] 9-cis) (JJ:[313..321] retinoic) (NN:[322..326] acid))
+      (NP (-LRB-:[327..328] -LRB-) (NN:[328..330] RA) (-RRB-:[330..331] -RRB-)))
+    (VP
+      (VP (VBZ:[332..334] is)
+        (ADJP-PRD
+          (ADJP (RBR:[335..339] more) (JJ:[340..349] effective))
+          (PP (IN:[350..354] than)
+            (NP
+              (ADJP (RB:[355..358] all) (HYPH:[358..359] -)
+                    (JJ:[359..364] trans))
+              (NN:[365..367] RA))))
+        (PP (IN:[368..370] at)
+          (S-NOM
+            (NP-SBJ (-NONE-:[370..370] *))
+            (VP (VBG:[372..380] inducing)
+              (NP (NN:[381..394] neuroblastoma) (NN:[395..410] differentiation))
+              (ADVP (FW:[411..413] in) (FW:[414..419] vitro))))))
+      (,:[419..420] ,) (CC:[421..424] and)
+      (VP (VBZ:[425..428] has)
+        (NP
+          (NP (JJ:[429..437] distinct) (JJ:[438..448] biological)
+              (NNS:[450..460] properties))
+          (PP (IN:[461..465] with)
+            (NP
+              (NP (NN:[466..473] respect))
+              (PP (TO:[474..476] to)
+                (NP (PRP$:[477..480] its) (NN:[481..488] ability)
+                  (S
+                    (NP-SBJ (-NONE-:[488..488] *))
+                    (VP (TO:[489..491] to)
+                      (VP (VB:[492..499] promote)
+                        (NP (NN:[500..509] apoptosis))
+                        (PP-LOC (IN:[510..512] in)
+                          (NP (NN:[513..519] N-type)
+                              (NN:[521..534] neuroblastoma)
+                              (NNS:[535..540] cells)))))))))))))
+    (.:[540..541] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[295..541]::NP:S:
+
+;sentence 5 Span:542..653
+;The cellular effects of 9-cis RA may, in part, result from  activation of
+;retinoid X receptor (RXR) homodimers.
+;[616..635]:gene-protein:"retinoid X receptor"
+;[637..640]:gene-protein:"RXR"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[542..545] The) (JJ:[546..554] cellular) (NNS:[555..562] effects))
+      (PP (IN:[563..565] of)
+        (NP (NN:[566..571] 9-cis) (NN:[572..574] RA))))
+    (VP (MD:[575..578] may) (,:[578..579] ,)
+      (PP (IN:[580..582] in)
+        (NP (NN:[583..587] part)))
+      (,:[587..588] ,)
+      (VP (VBP:[589..595] result)
+        (PP (IN:[596..600] from)
+          (NP
+            (NP (NN:[602..612] activation))
+            (PP (IN:[613..615] of)
+              (NP
+                (NML (JJ:[616..624] retinoid) (NN:[625..626] X)
+                     (NN:[627..635] receptor))
+                (NML
+                  (NML (-LRB-:[636..637] -LRB-) (NN:[637..640] RXR)
+                       (-RRB-:[640..641] -RRB-)))
+                (NNS:[642..652] homodimers)))))))
+    (.:[652..653] .)))
+
+;sentence 6 Span:654..798
+;If this hypothesis is  correct, 9-cis RA may control the expression of a
+;different subset of  retinoid-regulated genes compared to all-trans RA.
+(SENT
+  (S
+    (SBAR-ADV (IN:[654..656] If)
+      (S
+        (NP-SBJ (DT:[657..661] this) (NN:[662..672] hypothesis))
+        (VP (VBZ:[673..675] is)
+          (ADJP-PRD (JJ:[677..684] correct)))))
+    (,:[684..685] ,)
+    (NP-SBJ (NN:[686..691] 9-cis) (NN:[692..694] RA))
+    (VP (MD:[695..698] may)
+      (VP (VB:[699..706] control)
+        (NP
+          (NP (DT:[707..710] the) (NN:[711..721] expression))
+          (PP (IN:[722..724] of)
+            (NP
+              (NP
+                (NP (DT:[725..726] a) (JJ:[727..736] different)
+                    (NN:[737..743] subset))
+                (PP (IN:[744..746] of)
+                  (NP
+                    (ADJP (NN:[748..756] retinoid) (HYPH:[756..757] -)
+                          (VBN:[757..766] regulated))
+                    (NNS:[767..772] genes))))
+              (VP (VBN:[773..781] compared)
+                (NP (-NONE-:[781..781] *))
+                (PP (TO:[782..784] to)
+                  (NP
+                    (ADJP (RB:[785..788] all) (HYPH:[788..789] -)
+                          (JJ:[789..794] trans))
+                    (NN:[795..797] RA)))))))))
+    (.:[797..798] .)))
+
+;sentence 7 Span:799..965
+;PROCEDURE: We have therefore  used differential mRNA display to identify
+;genes differentially expressed in  neuroblastoma cells in response to
+;all-trans and 9-cis RA.
+;[907..920]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP (NN:[799..808] PROCEDURE) (::[808..809] :))
+  (S
+    (NP-SBJ (PRP:[810..812] We))
+    (VP (VBP:[813..817] have)
+      (ADVP (RB:[818..827] therefore))
+      (VP (VBN:[829..833] used)
+        (NP (JJ:[834..846] differential) (NN:[847..851] mRNA)
+            (NN:[852..859] display))
+        (S-PRP
+          (NP-SBJ (-NONE-:[859..859] *))
+          (VP (TO:[860..862] to)
+            (VP (VB:[863..871] identify)
+              (NP
+                (NP (NNS:[872..877] genes))
+                (VP
+                  (ADVP (RB:[878..892] differentially))
+                  (VBN:[893..902] expressed)
+                  (NP (-NONE-:[902..902] *))
+                  (PP-LOC (IN:[903..905] in)
+                    (NP (NN:[907..920] neuroblastoma) (NNS:[921..926] cells)))
+                  (PP (IN:[927..929] in)
+                    (NP
+                      (NP (NN:[930..938] response))
+                      (PP (TO:[939..941] to)
+                        (NP
+                          (NP
+                            (ADJP (RB:[942..945] all) (HYPH:[945..946] -)
+                                  (JJ:[946..951] trans)))
+                          (CC:[952..955] and)
+                          (NP (NN:[956..961] 9-cis) (NN:[962..964] RA)))))))))))))
+    (.:[964..965] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[799..965]::NP:S:
+
+;sentence 8 Span:966..1129
+;RESULTS: The majority  of cDNAs differentially expressed in response to
+;all-trans or 9-cis RA matched  to nonredundant Genbank sequences or EST
+;database sequences.
+(SENT
+  (NP (NNS:[966..973] RESULTS) (::[973..974] :))
+  (S
+    (NP-SBJ
+      (NP (DT:[975..978] The) (NN:[979..987] majority))
+      (PP (IN:[989..991] of)
+        (NP
+          (NP (NNS:[992..997] cDNAs))
+          (VP
+            (ADVP (RB:[998..1012] differentially))
+            (VBN:[1013..1022] expressed)
+            (NP (-NONE-:[1022..1022] *))
+            (PP (IN:[1023..1025] in)
+              (NP
+                (NP (NN:[1026..1034] response))
+                (PP (TO:[1035..1037] to)
+                  (NP
+                    (NP
+                      (ADJP (RB:[1038..1041] all) (HYPH:[1041..1042] -)
+                            (JJ:[1042..1047] trans)))
+                    (CC:[1048..1050] or)
+                    (NP (NN:[1051..1056] 9-cis) (NN:[1057..1059] RA))))))))))
+    (VP (VBD:[1060..1067] matched)
+      (PP (TO:[1069..1071] to)
+        (NP
+          (NP (JJ:[1072..1084] nonredundant) (NN:[1085..1092] Genbank)
+              (NNS:[1093..1102] sequences))
+          (CC:[1103..1105] or)
+          (NP (NN:[1106..1109] EST) (NN:[1110..1118] database)
+              (NNS:[1119..1128] sequences)))))
+    (.:[1128..1129] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[966..1129]::NP:S:
+
+;sentence 9 Span:1131..1413
+;Differential-display profiles were similar in SH SY 5Y and SH S EP cells,
+;clonal  derivatives of the mixed neuroblastoma cell line SK N SH, although
+;there were  apparent differences between these cell lines with respect to the
+; retinoid-regulation of specific RT-PCR cDNA fragments.
+;[1238..1251]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[1131..1143] Differential) (HYPH:[1143..1144] -)
+           (NN:[1144..1151] display))
+      (NNS:[1152..1160] profiles))
+    (VP (VBD:[1161..1165] were)
+      (ADJP-PRD (JJ:[1166..1173] similar))
+      (PP (IN:[1174..1176] in)
+        (NP
+          (NP
+            (NP (NN:[1177..1179] SH) (NN:[1180..1182] SY) (NN:[1183..1185] 5Y)
+              (NML-1 (-NONE-:[1185..1185] *P*)))
+            (CC:[1186..1189] and)
+            (NP (NN:[1190..1192] SH) (NN:[1193..1194] S) (NN:[1195..1197] EP)
+              (NML-1 (NNS:[1198..1203] cells))))
+          (,:[1203..1204] ,)
+          (NP
+            (NP (JJ:[1205..1211] clonal) (NNS:[1213..1224] derivatives))
+            (PP (IN:[1225..1227] of)
+              (NP
+                (NP (DT:[1228..1231] the) (VBN:[1232..1237] mixed)
+                    (NN:[1238..1251] neuroblastoma) (NN:[1252..1256] cell)
+                    (NN:[1257..1261] line))
+                (NP (NN:[1262..1264] SK) (NN:[1265..1266] N)
+                    (NN:[1267..1269] SH)))))))
+      (,:[1269..1270] ,)
+      (SBAR-ADV (IN:[1271..1279] although)
+        (S
+          (NP-SBJ (EX:[1280..1285] there))
+          (VP (VBD:[1286..1290] were)
+            (NP-PRD
+              (NP (JJ:[1292..1300] apparent) (NNS:[1301..1312] differences))
+              (PP (IN:[1313..1320] between)
+                (NP (DT:[1321..1326] these) (NN:[1327..1331] cell)
+                    (NNS:[1332..1337] lines))))
+            (PP (IN:[1338..1342] with)
+              (NP
+                (NP (NN:[1343..1350] respect))
+                (PP (TO:[1351..1353] to)
+                  (NP
+                    (NP (DT:[1354..1357] the) (NN:[1359..1367] retinoid)
+                        (HYPH:[1367..1368] -) (NN:[1368..1378] regulation))
+                    (PP (IN:[1379..1381] of)
+                      (NP (JJ:[1382..1390] specific)
+                        (NML (NN:[1391..1393] RT) (HYPH:[1393..1394] -)
+                             (NN:[1394..1397] PCR))
+                        (NN:[1398..1402] cDNA) (NNS:[1403..1412] fragments)))))))))))
+    (.:[1412..1413] .)))
+
+;sentence 10 Span:1414..1523
+;CONCLUSIONS: These data  support the view that 9-cis and all-trans RA act via
+;different receptor  mechanisms.
+(SENT
+  (NP (NNS:[1414..1425] CONCLUSIONS) (::[1425..1426] :))
+  (S
+    (NP-SBJ (DT:[1427..1432] These) (NNS:[1433..1437] data))
+    (VP (VBP:[1439..1446] support)
+      (NP (DT:[1447..1450] the) (NN:[1451..1455] view)
+        (SBAR (IN:[1456..1460] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1461..1466] 9-cis))
+              (CC:[1467..1470] and)
+              (NP
+                (ADJP (RB:[1471..1474] all) (HYPH:[1474..1475] -)
+                      (JJ:[1475..1480] trans))
+                (NN:[1481..1483] RA)))
+            (VP (VBP:[1484..1487] act)
+              (PP (IN:[1488..1491] via)
+                (NP (JJ:[1492..1501] different) (NN:[1502..1510] receptor)
+                    (NNS:[1512..1522] mechanisms))))))))
+    (.:[1522..1523] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1414..1523]::NP:S:
+
+;section 11 Span:1527..1572
+;PMID: 11464866 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1527..1531] PMID) (::[1531..1532] :) (CD:[1533..1541] 11464866)
+        (NN:[1542..1543] -LSB-) (NNP:[1543..1549] PubMed) (::[1550..1551] -)
+        (NN:[1552..1559] indexed) (IN:[1560..1563] for)
+        (NNP:[1564..1571] MEDLINE) (-RRB-:[1571..1572] -RSB-)))

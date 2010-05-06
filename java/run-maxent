@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# You may find this shell script helpful.
+
+java -server -mx500m -cp classes \
+  cs224n.assignments.MaximumEntropyClassifierTester \
+  ~/estellehome/courses/cs224n/PA3/data/ner/genia >output.csv
+./filter_errors.py <output.csv >filtered.csv
+~/estellehome/Dropbox/CS224NP3/bin/evalNER <output.csv

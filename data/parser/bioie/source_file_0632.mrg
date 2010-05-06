@@ -1,0 +1,286 @@
+;PMID: 1606053
+;source_file_955.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..51] = [t:0..51]
+;1)sentence:[e:57..172] = [t:57..172]
+;2)section:[e:176..220] = [t:176..220]
+;3)section:[e:224..323] = [t:224..323]
+;4)sentence:[e:327..543] = [t:327..543]
+;5)sentence:[e:544..744] = [t:544..744]
+;6)sentence:[e:745..885] = [t:745..885]
+;7)sentence:[e:886..1073] = [t:886..1073]
+;8)sentence:[e:1074..1232] = [t:1074..1232]
+;9)sentence:[e:1233..1364] = [t:1233..1364]
+;10)section:[e:1368..1412] = [t:1368..1412]
+
+;section 0 Span:0..51
+;J Steroid Biochem Mol Biol. 1992 May;42(3-4):421-4.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Steroid) (NNP:[10..17] Biochem)
+        (NNP:[18..21] Mol) (NNP:[22..26] Biol) (IN:[26..27] .)
+        (CD:[28..32] 1992) (NNP:[33..36] May) (CD:[36..41] ;42-LRB-3)
+        (HYPH:[41..42] -) (JJ:[42..44] 4-RRB-) (CD:[44..48] :421)
+        (HYPH:[48..49] -) (CD:[49..51] 4.)))
+
+;sentence 1 Span:57..172
+;Destruction of testicular cytochrome P-450 by 7 alpha-thiospironolactone is 
+;catalyzed by the 17 alpha-hydroxylase.
+;[83..99]:cyp450:"cytochrome P-450"
+;[103..129]:substance:"7 alpha-thiospironolactone"
+;[151..171]:cyp450:"17 alpha-hydroxylase"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (NN:[57..68] Destruction))
+      (PP (IN:[69..71] of)
+        (NP (JJ:[72..82] testicular)
+           (NN:[83..93] cytochrome) (NN:[94..99] P-450)))
+      (PP (IN:[100..102] by)
+        (NP (CD:[103..104] 7) (NN:[105..129] alpha-thiospironolactone))))
+    (VP (VBZ:[130..132] is)
+      (VP (VBN:[134..143] catalyzed)
+        (NP-1 (-NONE-:[143..143] *))
+        (PP (IN:[144..146] by)
+          (NP-LGS (DT:[147..150] the)
+             (CD:[151..153] 17) (NN:[154..171] alpha-hydroxylase)))))
+    (.:[171..172] .)))
+
+;section 2 Span:176..220
+;Kossor DC, Kominami S, Takemori S, Colby HD.
+(SEC
+  (FRAG (NNP:[176..182] Kossor) (NNP:[183..185] DC) (,:[185..186] ,)
+        (NNP:[187..195] Kominami) (NNP:[196..198] S,) (NNP:[199..207] Takemori)
+        (NNP:[208..210] S,) (NNP:[211..216] Colby) (NNP:[217..220] HD.)))
+
+;section 3 Span:224..323
+;Department of Pharmacology and Toxicology, Philadelphia College of Pharmacy
+;and  Science, PA 19104.
+(SEC
+  (FRAG (NNP:[224..234] Department) (IN:[235..237] of)
+        (NNP:[238..250] Pharmacology) (CC:[251..254] and)
+        (NNP:[255..265] Toxicology) (,:[265..266] ,)
+        (NNP:[267..279] Philadelphia) (NNP:[280..287] College)
+        (IN:[288..290] of) (NNP:[291..299] Pharmacy) (CC:[300..303] and)
+        (NNP:[305..312] Science) (,:[312..313] ,) (NNP:[314..316] PA)
+        (CD:[317..322] 19104) (.:[322..323] .)))
+
+;sentence 4 Span:327..543
+;Studies were done to determine the role of the 17 alpha-hydroxylase in the 
+;conversion of 7 alpha-thiospironolactone (7 alpha-thio-SL) to a reactive 
+;metabolite causing the degradation of testicular cytochrome P-450.
+;[374..394]:cyp450:"17 alpha-hydroxylase"
+;[417..443]:substance:"7 alpha-thiospironolactone"
+;[445..460]:substance:"7 alpha-thio-SL"
+;[477..487]:substance:"metabolite"
+;[526..542]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[327..334] Studies))
+    (VP (VBD:[335..339] were)
+      (VP (VBN:[340..344] done)
+        (NP-1 (-NONE-:[344..344] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[344..344] *))
+          (VP (TO:[345..347] to)
+            (VP (VB:[348..357] determine)
+              (NP
+                (NP (DT:[358..361] the) (NN:[362..366] role))
+                (PP (IN:[367..369] of)
+                  (NP (DT:[370..373] the)
+                     (CD:[374..376] 17) (NN:[377..394] alpha-hydroxylase))))
+              (PP (IN:[395..397] in)
+                (NP
+                  (NP (DT:[398..401] the) (NN:[403..413] conversion))
+                  (PP (IN:[414..416] of)
+                    (NP
+                      (NP (CD:[417..418] 7)
+                          (NN:[419..443] alpha-thiospironolactone))
+                      (NP (-LRB-:[444..445] -LRB-)
+                         (CD:[445..446] 7) (NN:[447..460] alpha-thio-SL)
+                        (-RRB-:[460..461] -RRB-))))
+                  (PP (TO:[462..464] to)
+                    (NP
+                      (NP (DT:[465..466] a) (JJ:[467..475] reactive)
+                          (NN:[477..487] metabolite))
+                      (VP (VBG:[488..495] causing)
+                        (NP
+                          (NP (DT:[496..499] the) (NN:[500..511] degradation))
+                          (PP (IN:[512..514] of)
+                            (NP (JJ:[515..525] testicular)
+                               (NN:[526..536] cytochrome) (NN:[537..542] P-450))))))))))))))
+    (.:[542..543] .)))
+
+;sentence 5 Span:544..744
+;Incubation of  guinea pig testicular microsomes with 7 alpha-thio-SL plus
+;NADPH resulted in an  approx. 70% decline in cytochrome P-450 content and
+;even greater loss of 17  alpha-hydroxylase activity.
+;[597..612]:substance:"7 alpha-thio-SL"
+;[618..623]:substance:"NADPH"
+;[648..651]:quantitative-value:"70%"
+;[663..679]:cyp450:"cytochrome P-450"
+;[713..734]:substance:"17  alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[544..554] Incubation))
+      (PP (IN:[555..557] of)
+        (NP (NN:[559..565] guinea) (NN:[566..569] pig)
+            (JJ:[570..580] testicular) (NNS:[581..591] microsomes)))
+      (PP (IN:[592..596] with)
+        (NP
+          (NP (CD:[597..598] 7) (NN:[599..612] alpha-thio-SL))
+          (CC:[613..617] plus)
+          (NP (NN:[618..623] NADPH)))))
+    (VP (VBD:[624..632] resulted)
+      (PP-CLR (IN:[633..635] in)
+        (NP
+          (NP
+            (NP (DT:[636..638] an)
+              (QP (RB:[640..647] approx.) (CD:[648..650] 70))
+              (NN:[650..651] %) (NN:[652..659] decline))
+            (PP (IN:[660..662] in)
+              (NP
+                (NML (NN:[663..673] cytochrome) (NN:[674..679] P-450))
+                (NN:[680..687] content))))
+          (CC:[688..691] and)
+          (NP
+            (NP
+              (ADJP (RB:[692..696] even) (JJR:[697..704] greater))
+              (NN:[705..709] loss))
+            (PP (IN:[710..712] of)
+              (NP
+                (NML (CD:[713..715] 17) (NN:[717..734] alpha-hydroxylase))
+                (NN:[735..743] activity)))))))
+    (.:[743..744] .)))
+
+;sentence 6 Span:745..885
+;Addition of the 17 alpha-hydroxylase inhibitor,  SU-10'603, to the incubation
+;medium prevented the degradation of P-450 by 7  alpha-thio-SL.
+;[761..781]:cyp450:"17 alpha-hydroxylase"
+;[782..791]:substance:"inhibitor"
+;[794..803]:substance:"SU-10'603"
+;[859..864]:cyp450:"P-450"
+;[868..884]:substance:"7  alpha-thio-SL"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[745..753] Addition))
+      (PP (IN:[754..756] of)
+        (NP
+          (NP (DT:[757..760] the)
+            (NML (CD:[761..763] 17) (NN:[764..781] alpha-hydroxylase))
+            (NN:[782..791] inhibitor))
+          (,:[791..792] ,)
+          (NP (NN:[794..803] SU-10'603))))
+      (,:[803..804] ,)
+      (PP (TO:[805..807] to)
+        (NP (DT:[808..811] the) (NN:[812..822] incubation)
+            (NN:[823..829] medium))))
+    (VP (VBD:[830..839] prevented)
+      (NP
+        (NP (DT:[840..843] the) (NN:[844..855] degradation))
+        (PP (IN:[856..858] of)
+          (NP (NN:[859..864] P-450)))
+        (PP (IN:[865..867] by)
+          (NP (CD:[868..869] 7) (NN:[871..884] alpha-thio-SL)))))
+    (.:[884..885] .)))
+
+;sentence 7 Span:886..1073
+;Similarly, preincubation of testicular microsomes with  anti-P-45017
+;alpha,lyase IgG to inhibit 17 alpha-hydroxylation, diminished the  subsequent
+;loss of P-450 caused by 7 alpha-thio-SL.
+;[942..970]:substance:"anti-P-45017 alpha,lyase IgG"
+;[1041..1046]:cyp450:"P-450"
+;[1057..1072]:substance:"7 alpha-thio-SL"
+(SENT
+  (S
+    (ADVP (RB:[886..895] Similarly))
+    (,:[895..896] ,)
+    (NP-SBJ
+      (NP (NN:[897..910] preincubation))
+      (PP (IN:[911..913] of)
+        (NP (JJ:[914..924] testicular) (NNS:[925..935] microsomes)))
+      (PP (IN:[936..940] with)
+        (NP
+          (NML (AFX:[942..946] anti) (HYPH:[946..947] -) (NN:[947..954] P-45017))
+          (NN:[955..966] alpha,lyase) (NN:[967..970] IgG)))
+      (S-PRP
+        (NP-SBJ (-NONE-:[970..970] *))
+        (VP (TO:[971..973] to)
+          (VP (VB:[974..981] inhibit)
+            (NP (CD:[982..984] 17) (NN:[985..1004] alpha-hydroxylation))))))
+    (,:[1004..1005] ,)
+    (VP (VBD:[1006..1016] diminished)
+      (NP
+        (NP
+          (NP (DT:[1017..1020] the) (JJ:[1022..1032] subsequent)
+              (NN:[1033..1037] loss))
+          (PP (IN:[1038..1040] of)
+            (NP (NN:[1041..1046] P-450))))
+        (VP (VBN:[1047..1053] caused)
+          (PP (IN:[1054..1056] by)
+            (NP-LGS (CD:[1057..1058] 7) (NN:[1059..1072] alpha-thio-SL))))))
+    (.:[1072..1073] .)))
+
+;sentence 8 Span:1074..1232
+;The results indicate that  the 17 alpha-hydroxylase catalyzes the conversion
+;of 7 alpha-thio-SL to the  reactive metabolite responsible for P-450
+;destruction.
+;[1105..1125]:cyp450:"17 alpha-hydroxylase"
+;[1154..1169]:substance:"7 alpha-thio-SL"
+;[1187..1197]:substance:"metabolite"
+;[1214..1219]:cyp450:"P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1074..1077] The) (NNS:[1078..1085] results))
+    (VP (VBP:[1086..1094] indicate)
+      (SBAR (IN:[1095..1099] that)
+        (S
+          (NP-SBJ (DT:[1101..1104] the)
+             (CD:[1105..1107] 17) (NN:[1108..1125] alpha-hydroxylase))
+          (VP (VBZ:[1126..1135] catalyzes)
+            (NP
+              (NP (DT:[1136..1139] the) (NN:[1140..1150] conversion))
+              (PP (IN:[1151..1153] of)
+                (NP (CD:[1154..1155] 7) (NN:[1156..1169] alpha-thio-SL)))
+              (PP (TO:[1170..1172] to)
+                (NP
+                  (NP (DT:[1173..1176] the) (JJ:[1178..1186] reactive)
+                      (NN:[1187..1197] metabolite))
+                  (ADJP (JJ:[1198..1209] responsible)
+                    (PP (IN:[1210..1213] for)
+                      (NP (NN:[1214..1219] P-450) (NN:[1220..1231] destruction)))))))))))
+    (.:[1231..1232] .)))
+
+;sentence 9 Span:1233..1364
+;The accompanying loss of  17 alpha-hydroxylase activity supports the
+;hypothesis that suicide inhibition is  the mechanism involved.
+;[1259..1279]:cyp450:"17 alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1233..1236] The) (VBG:[1237..1249] accompanying)
+          (NN:[1250..1254] loss))
+      (PP (IN:[1255..1257] of)
+        (NP
+          (NML (CD:[1259..1261] 17) (NN:[1262..1279] alpha-hydroxylase))
+          (NN:[1280..1288] activity))))
+    (VP (VBZ:[1289..1297] supports)
+      (NP (DT:[1298..1301] the) (NN:[1302..1312] hypothesis)
+        (SBAR (IN:[1313..1317] that)
+          (S
+            (NP-SBJ (NN:[1318..1325] suicide) (NN:[1326..1336] inhibition))
+            (VP (VBZ:[1337..1339] is)
+              (NP-PRD (DT:[1341..1344] the) (NN:[1345..1354] mechanism)
+                      (VBN:[1355..1363] involved)))))))
+    (.:[1363..1364] .)))
+
+;section 10 Span:1368..1412
+;PMID: 1606053 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1368..1372] PMID) (::[1372..1373] :) (CD:[1374..1381] 1606053)
+        (IN:[1382..1383] -LSB-) (NNP:[1383..1389] PubMed) (HYPH:[1390..1391] -)
+        (JJ:[1392..1399] indexed) (IN:[1400..1403] for)
+        (NNP:[1404..1412] MEDLINE-RSB-)))

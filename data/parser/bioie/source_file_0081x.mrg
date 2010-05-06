@@ -1,0 +1,474 @@
+;PMID: 9305595
+;source_file_1221.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..145] = [t:36..145]
+;2)section:[e:149..255] = [t:149..255]
+;3)section:[e:259..345] = [t:259..345]
+;4)sentence:[e:349..506] = [t:349..506]
+;5)sentence:[e:508..816] = [t:508..816]
+;6)sentence:[e:817..1020] = [t:817..1020]
+;7)sentence:[e:1021..1214] = [t:1021..1214]
+;8)sentence:[e:1215..1307] = [t:1215..1307]
+;9)sentence:[e:1308..1547] = [t:1308..1547]
+;10)sentence:[e:1548..1690] = [t:1548..1690]
+;11)sentence:[e:1691..1740] = [t:1691..1740]
+;12)sentence:[e:1742..1954] = [t:1742..1954]
+;13)section:[e:1958..2002] = [t:1958..2002]
+
+;section 0 Span:0..31
+;Leukemia  1997 Sep;11(9):1442-6
+(SEC
+  (FRAG (IN:[0..8] Leukemia) (CD:[10..14] 1997) (CC:[15..22] Sep;11-LRB-)
+        (CD:[22..23] 9) (-RRB-:[23..24] -RRB-) (CD:[24..29] :1442)
+        (::[29..30] -) (CD:[30..31] 6)))
+
+;sentence 1 Span:36..145
+;Tandem duplications of the FLT3 receptor gene are associated with leukemic 
+;transformation of myelodysplasia.
+;[36..55]:variation-type:"Tandem duplications"
+;[63..76]:gene-rna:"FLT3 receptor"
+;[130..144]:malignancy:"myelodysplasia"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (JJ:[36..42] Tandem) (NNS:[43..55] duplications))
+      (PP (IN:[56..58] of)
+        (NP (DT:[59..62] the)
+          (NML (NN:[63..67] FLT3) (NN:[68..76] receptor))
+          (NN:[77..81] gene))))
+    (VP (VBP:[82..85] are)
+      (VP (VBN:[86..96] associated)
+        (NP-1 (-NONE-:[96..96] *))
+        (PP-CLR (IN:[97..101] with)
+          (NP
+            (NP (JJ:[102..110] leukemic) (NN:[112..126] transformation))
+            (PP (IN:[127..129] of)
+              (NP (NN:[130..144] myelodysplasia)))))))
+    (.:[144..145] .)))
+
+;section 2 Span:149..255
+;Horiike S, Yokota S, Nakao M, Iwai T, Sasai Y, Kaneko H, Taniwaki M, Kashima
+;K,  Fujii H, Abe T, Misawa S.
+(SEC
+  (FRAG (NNP:[149..156] Horiike) (NNP:[157..159] S,) (NNP:[160..166] Yokota)
+        (NNP:[167..169] S,) (NNP:[170..175] Nakao) (NNP:[176..178] M,)
+        (NNP:[179..183] Iwai) (NNP:[184..185] T) (,:[185..186] ,)
+        (NNP:[187..192] Sasai) (NNP:[193..194] Y) (,:[194..195] ,)
+        (NNP:[196..202] Kaneko) (NNP:[203..204] H) (,:[204..205] ,)
+        (NNP:[206..214] Taniwaki) (NNP:[215..217] M,) (NNP:[218..225] Kashima)
+        (NNP:[226..227] K) (,:[227..228] ,) (NNP:[230..235] Fujii)
+        (NNP:[236..237] H) (,:[237..238] ,) (NNP:[239..242] Abe)
+        (NNP:[243..244] T) (,:[244..245] ,) (NNP:[246..252] Misawa)
+        (NNP:[253..255] S.)))
+
+;section 3 Span:259..345
+;Department of Internal Medicine III, Kyoto Prefectural University of
+;Medicine,  Japan.
+(SEC
+  (FRAG (NNP:[259..269] Department) (IN:[270..272] of) (NNP:[273..281] Internal)
+        (NNP:[282..290] Medicine) (NNP:[291..294] III) (,:[294..295] ,)
+        (NNP:[296..301] Kyoto) (NNP:[302..313] Prefectural)
+        (NNP:[314..324] University) (IN:[325..327] of) (NNP:[328..336] Medicine)
+        (,:[336..337] ,) (NNP:[339..344] Japan) (.:[344..345] .)))
+
+;sentence 4 Span:349..506
+;We recently reported an internal tandem duplication of the human flt3
+;receptor  gene (FLT3) as a somatic mutation in 17% of acute myelogenous
+;leukemia (AML).
+;[382..400]:variation-type:"tandem duplication"
+;[414..427]:gene-rna:"flt3 receptor"
+;[435..439]:gene-rna:"FLT3"
+;[454..462]:variation-event:"mutation"
+;[473..499]:malignancy:"acute myelogenous leukemia"
+;[501..504]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ (PRP:[349..351] We))
+    (ADVP-TMP (RB:[352..360] recently))
+    (VP (VBD:[361..369] reported)
+      (NP
+        (NP (DT:[370..372] an) (JJ:[373..381] internal)
+           (JJ:[382..388] tandem) (NN:[389..400] duplication))
+        (PP (IN:[401..403] of)
+          (NP
+            (NP (DT:[404..407] the) (JJ:[408..413] human)
+              (NML (NN:[414..418] flt3) (NN:[419..427] receptor))
+              (NN:[429..433] gene))
+            (NP (-LRB-:[434..435] -LRB-) (NN:[435..439] FLT3)
+                (-RRB-:[439..440] -RRB-)))))
+      (PP (IN:[441..443] as)
+        (NP (DT:[444..445] a) (JJ:[446..453] somatic) (NN:[454..462] mutation)))
+      (PP (IN:[463..465] in)
+        (NP
+          (NP (CD:[466..468] 17) (NN:[468..469] %))
+          (PP (IN:[470..472] of)
+            (NP
+              (NP (JJ:[473..478] acute) (JJ:[479..490] myelogenous)
+                  (NN:[491..499] leukemia))
+              (NP (-LRB-:[500..501] -LRB-) (NN:[501..504] AML)
+                  (-RRB-:[504..505] -RRB-)))))))
+    (.:[505..506] .)))
+
+;sentence 5 Span:508..816
+;The present study revealed the duplication at the juxtamembrane and the first
+; tyrosine kinase domains of FLT3 in seven of 92 (8%) patients with 
+;myelodysplastic syndrome (MDS) and AML with trilineage myelodysplasia 
+;(AML/TMDS), the diseases which may represent neoplastic changes of
+;pluripotent  stem cells.
+;[539..550]:variation-type:"duplication"
+;[614..618]:gene-rna:"FLT3"
+;[654..678]:malignancy:"myelodysplastic syndrome"
+;[680..683]:malignancy:"MDS"
+;[689..692]:malignancy:"AML"
+;[698..723]:malignancy:"trilineage myelodysplasia"
+;[726..729]:malignancy:"AML"
+;[730..734]:malignancy:"TMDS"
+(SENT
+  (S
+    (NP-SBJ (DT:[508..511] The) (JJ:[512..519] present) (NN:[520..525] study))
+    (VP (VBD:[526..534] revealed)
+      (NP (DT:[535..538] the) (NN:[539..550] duplication))
+      (PP-LOC (IN:[551..553] at)
+        (NP
+          (NP
+            (NP (DT:[554..557] the) (NN:[558..571] juxtamembrane)
+              (NML-1 (-NONE-:[571..571] *P*)))
+            (CC:[572..575] and)
+            (NP (DT:[576..579] the) (JJ:[580..585] first)
+              (NML (NN:[587..595] tyrosine) (NN:[596..602] kinase))
+              (NML-1 (NNS:[603..610] domains))))
+          (PP (IN:[611..613] of)
+            (NP
+              (NP (NN:[614..618] FLT3))
+              (PP-LOC (IN:[619..621] in)
+                (NP
+                  (NP (CD:[622..627] seven))
+                  (PP (IN:[628..630] of)
+                    (NP
+                      (NP (CD:[631..633] 92)
+                        (PRN (-LRB-:[634..635] -LRB-)
+                          (NP (CD:[635..636] 8) (NN:[636..637] %))
+                          (-RRB-:[637..638] -RRB-))
+                        (NNS:[639..647] patients))
+                      (PP (IN:[648..652] with)
+                        (NP
+                          (NP
+                            (NP
+                              (NP (JJ:[654..669] myelodysplastic)
+                                  (NN:[670..678] syndrome))
+                              (NP (-LRB-:[679..680] -LRB-) (NN:[680..683] MDS)
+                                  (-RRB-:[683..684] -RRB-)))
+                            (CC:[685..688] and)
+                            (NP
+                              (NP
+                                (NP (NN:[689..692] AML))
+                                (PP (IN:[693..697] with)
+                                  (NP (NN:[698..708] trilineage)
+                                      (NN:[709..723] myelodysplasia))))
+                              (NP (-LRB-:[725..726] -LRB-) (NN:[726..729] AML)
+                                (PP (SYM:[729..730] /)
+                                  (NP (NN:[730..734] TMDS)))
+                                (-RRB-:[734..735] -RRB-))))
+                          (,:[735..736] ,)
+                          (NP
+                            (NP (DT:[737..740] the) (NNS:[741..749] diseases))
+                            (SBAR
+                              (WHNP-2 (WDT:[750..755] which))
+                              (S
+                                (NP-SBJ-2 (-NONE-:[755..755] *T*))
+                                (VP (MD:[756..759] may)
+                                  (VP (VB:[760..769] represent)
+                                    (NP
+                                      (NP (JJ:[770..780] neoplastic)
+                                          (NNS:[781..788] changes))
+                                      (PP (IN:[789..791] of)
+                                        (NP (JJ:[792..803] pluripotent)
+                                            (NN:[805..809] stem)
+                                            (NNS:[810..815] cells))))))))))))))))))))
+    (.:[815..816] .)))
+
+;sentence 6 Span:817..1020
+;A tandem duplication of exon 11 of FLT3 was harbored by two of 58  (3%)
+;patients with MDS and five of 34 (15%) with overt leukemia, including 
+;MDS-derived leukemia, AML/TMDS and therapy-related leukemia.
+;[819..837]:variation-type:"tandem duplication"
+;[841..848]:variation-location:"exon 11"
+;[852..856]:gene-rna:"FLT3"
+;[903..906]:malignancy:"MDS"
+;[933..947]:malignancy:"overt leukemia"
+;[960..980]:malignancy:"MDS-derived leukemia"
+;[960..963]:malignancy:"MDS"
+;[982..985]:malignancy:"AML"
+;[986..990]:malignancy:"TMDS"
+;[995..1019]:malignancy:"therapy-related leukemia"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[817..818] A)
+         (JJ:[819..825] tandem) (NN:[826..837] duplication))
+      (PP (IN:[838..840] of)
+        (NP
+          (NP (NN:[841..845] exon) (CD:[846..848] 11))
+          (PP (IN:[849..851] of)
+            (NP (NN:[852..856] FLT3))))))
+    (VP (VBD:[857..860] was)
+      (VP (VBN:[861..869] harbored)
+        (NP-1 (-NONE-:[869..869] *))
+        (PP (IN:[870..872] by)
+          (NP-LGS
+            (NP
+              (NP (CD:[873..876] two))
+              (PP (IN:[877..879] of)
+                (NP
+                  (NP (CD:[880..882] 58)
+                    (PRN (-LRB-:[884..885] -LRB-)
+                      (NP (CD:[885..886] 3) (NN:[886..887] %))
+                      (-RRB-:[887..888] -RRB-))
+                    (NNS:[889..897] patients))
+                  (PP (IN:[898..902] with)
+                    (NP (NN:[903..906] MDS))))))
+            (CC:[907..910] and)
+            (NP
+              (NP (CD:[911..915] five))
+              (PP (IN:[916..918] of)
+                (NP
+                  (NP (CD:[919..921] 34)
+                    (PRN (-LRB-:[922..923] -LRB-)
+                      (NP (CD:[923..925] 15) (NN:[925..926] %))
+                      (-RRB-:[926..927] -RRB-)))
+                  (PP (IN:[928..932] with)
+                    (NP
+                      (NP (JJ:[933..938] overt) (NN:[939..947] leukemia))
+                      (,:[947..948] ,)
+                      (PP (VBG:[949..958] including)
+                        (NP
+                          (NP
+                            (ADJP (NN:[960..963] MDS) (HYPH:[963..964] -)
+                                  (VBN:[964..971] derived))
+                            (NN:[972..980] leukemia))
+                          (,:[980..981] ,)
+                          (NP (NN:[982..985] AML) (SYM:[985..986] /)
+                              (NN:[986..990] TMDS))
+                          (CC:[991..994] and)
+                          (NP
+                            (ADJP (NN:[995..1002] therapy) (HYPH:[1002..1003] -)
+                                  (VBN:[1003..1010] related))
+                            (NN:[1011..1019] leukemia)))))))))))))
+    (.:[1019..1020] .)))
+
+;sentence 7 Span:1021..1214
+;Although the  duplicated regions varied within exon 11 in each case, they
+;occurred in-frame,  and altered mRNA expressions were demonstrated by
+;reverse-transcription  polymerase chain reaction.
+;[1068..1075]:variation-location:"exon 11"
+;[1188..1198]:gene-protein:"polymerase"
+(SENT
+  (S
+    (S
+      (SBAR-ADV (IN:[1021..1029] Although)
+        (S
+          (NP-SBJ (DT:[1030..1033] the) (VBN:[1035..1045] duplicated)
+                  (NNS:[1046..1053] regions))
+          (VP (VBD:[1054..1060] varied)
+            (PP (IN:[1061..1067] within)
+              (NP (NN:[1068..1072] exon) (CD:[1073..1075] 11)))
+            (PP (IN:[1076..1078] in)
+              (NP (DT:[1079..1083] each) (NN:[1084..1088] case))))))
+      (,:[1088..1089] ,)
+      (NP-SBJ (PRP:[1090..1094] they))
+      (VP (VBD:[1095..1103] occurred)
+        (ADVP-LOC (IN:[1104..1106] in) (HYPH:[1106..1107] -)
+                  (NN:[1107..1112] frame))))
+    (,:[1112..1113] ,) (CC:[1115..1118] and)
+    (S
+      (NP-SBJ-1 (VBN:[1119..1126] altered) (NN:[1127..1131] mRNA)
+                (NNS:[1132..1143] expressions))
+      (VP (VBD:[1144..1148] were)
+        (VP (VBN:[1149..1161] demonstrated)
+          (NP-1 (-NONE-:[1161..1161] *))
+          (PP-MNR (IN:[1162..1164] by)
+            (NP
+              (NML (JJ:[1165..1172] reverse) (HYPH:[1172..1173] -)
+                   (NN:[1173..1186] transcription))
+              (NN:[1188..1198] polymerase) (NN:[1199..1204] chain)
+               (NN:[1205..1213] reaction))))))
+    (.:[1213..1214] .)))
+
+;sentence 8 Span:1215..1307
+;Two cases of MDS with a FLT3 duplication transformed  to overt leukemia
+;within a few months.
+;[1228..1231]:malignancy:"MDS"
+;[1239..1243]:gene-rna:"FLT3"
+;[1272..1286]:malignancy:"overt leukemia"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1215..1218] Two) (NNS:[1219..1224] cases))
+      (PP (IN:[1225..1227] of)
+        (NP
+          (NP (NN:[1228..1231] MDS))
+          (PP (IN:[1232..1236] with)
+            (NP (DT:[1237..1238] a) (NN:[1239..1243] FLT3)
+                (NN:[1244..1255] duplication))))))
+    (VP (VBD:[1256..1267] transformed)
+      (PP (TO:[1269..1271] to)
+        (NP (JJ:[1272..1277] overt) (NN:[1278..1286] leukemia)))
+      (PP-TMP (IN:[1287..1293] within)
+        (NP (DT:[1294..1295] a) (JJ:[1296..1299] few) (NNS:[1300..1306] months))))
+    (.:[1306..1307] .)))
+
+;sentence 9 Span:1308..1547
+;Longitudinal analyses in two other  patients with leukemia revealed that the
+;duplication was a late genetic event  during the disease course; one of whom
+;showed two independent duplications of  FLT3 at the terminal
+;therapy-resistant phase.
+;[1358..1366]:malignancy:"leukemia"
+;[1385..1396]:variation-type:"duplication"
+;[1485..1497]:variation-type:"duplications"
+;[1502..1506]:gene-rna:"FLT3"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1308..1320] Longitudinal) (NNS:[1321..1329] analyses))
+      (PP (IN:[1330..1332] in)
+        (NP
+          (NP (CD:[1333..1336] two) (JJ:[1337..1342] other)
+              (NNS:[1344..1352] patients))
+          (PP (IN:[1353..1357] with)
+            (NP (NN:[1358..1366] leukemia))))))
+    (VP (VBD:[1367..1375] revealed)
+      (SBAR (IN:[1376..1380] that)
+        (S
+          (NP-SBJ (DT:[1381..1384] the) (NN:[1385..1396] duplication))
+          (VP (VBD:[1397..1400] was)
+            (NP-PRD
+              (NP
+                (NP (DT:[1401..1402] a) (JJ:[1403..1407] late)
+                    (JJ:[1408..1415] genetic) (NN:[1416..1421] event))
+                (PP-TMP (IN:[1423..1429] during)
+                  (NP (DT:[1430..1433] the) (NN:[1434..1441] disease)
+                      (NN:[1442..1448] course))))
+              (::[1448..1449] ;)
+              (SBAR
+                (WHNP-1
+                  (NP (CD:[1450..1453] one))
+                  (WHPP (IN:[1454..1456] of)
+                    (WHNP (WP:[1457..1461] whom))))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1461..1461] *T*))
+                  (VP (VBD:[1462..1468] showed)
+                    (NP
+                      (NP (CD:[1469..1472] two) (JJ:[1473..1484] independent)
+                          (NNS:[1485..1497] duplications))
+                      (PP (IN:[1498..1500] of)
+                        (NP (NN:[1502..1506] FLT3))))
+                    (PP (IN:[1507..1509] at)
+                      (NP (DT:[1510..1513] the) (JJ:[1514..1522] terminal)
+                        (ADJP (NN:[1523..1530] therapy) (HYPH:[1530..1531] -)
+                              (JJ:[1531..1540] resistant))
+                        (NN:[1541..1546] phase)))))))))))
+    (.:[1546..1547] .)))
+
+;sentence 10 Span:1548..1690
+;Of seven patients with the FLT3  duplication, six had abnormal karyotypes,
+;and four harbored a point mutation of  the N-RAS and/or TP53 genes.
+;[1575..1579]:gene-rna:"FLT3"
+;[1581..1592]:variation-type:"duplication"
+;[1643..1657]:variation-type:"point mutation"
+;[1666..1671]:gene-rna:"N-RAS"
+;[1679..1683]:gene-rna:"TP53"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[1548..1550] Of)
+      (NP
+        (NP (CD:[1551..1556] seven) (NNS:[1557..1565] patients))
+        (PP (IN:[1566..1570] with)
+          (NP (DT:[1571..1574] the) (NN:[1575..1579] FLT3)
+              (NN:[1581..1592] duplication)))))
+    (,:[1592..1593] ,)
+    (S
+      (NP-SBJ
+        (NP (CD:[1594..1597] six))
+        (PP-1 (-NONE-:[1597..1597] *T*)))
+      (VP (VBD:[1598..1601] had)
+        (NP (JJ:[1602..1610] abnormal) (NNS:[1611..1621] karyotypes))))
+    (,:[1621..1622] ,) (CC:[1623..1626] and)
+    (S
+      (NP-SBJ
+        (NP (CD:[1627..1631] four))
+        (PP-1 (-NONE-:[1631..1631] *T*)))
+      (VP (VBD:[1632..1640] harbored)
+        (NP
+          (NP (DT:[1641..1642] a)
+             (NN:[1643..1648] point) (NN:[1649..1657] mutation))
+          (PP (IN:[1658..1660] of)
+            (NP (DT:[1662..1665] the)
+              (NML
+                (NML (NN:[1666..1671] N-RAS)
+                  (NML-2 (-NONE-:[1671..1671] *P*)))
+                (CC:[1672..1678] and/or)
+                (NML (NN:[1679..1683] TP53)
+                  (NML-2 (NNS:[1684..1689] genes)))))))))
+    (.:[1689..1690] .)))
+
+;sentence 11 Span:1691..1740
+;Patients with FLT3 mutations have poor prognoses.
+;[1705..1709]:gene-rna:"FLT3"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1691..1699] Patients))
+      (PP (IN:[1700..1704] with)
+        (NP (NN:[1705..1709] FLT3) (NNS:[1710..1719] mutations))))
+    (VP (VBP:[1720..1724] have)
+      (NP (JJ:[1725..1729] poor) (NNS:[1730..1739] prognoses)))
+    (.:[1739..1740] .)))
+
+;sentence 12 Span:1742..1954
+;This study uncovered the fact that the accumulation of genetic events,
+;including  FLT3 duplication, correlates with leukemic transformation from
+;antecedent  myelodysplasia and with subsequent disease progression.
+;[1824..1828]:gene-rna:"FLT3"
+;[1829..1840]:variation-type:"duplication"
+;[1899..1913]:malignancy:"myelodysplasia"
+(SENT
+  (S
+    (NP-SBJ (DT:[1742..1746] This) (NN:[1747..1752] study))
+    (VP (VBD:[1753..1762] uncovered)
+      (NP (DT:[1763..1766] the) (NN:[1767..1771] fact)
+        (SBAR (IN:[1772..1776] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1777..1780] the) (NN:[1781..1793] accumulation))
+              (PP (IN:[1794..1796] of)
+                (NP
+                  (NP (JJ:[1797..1804] genetic) (NNS:[1805..1811] events))
+                  (,:[1811..1812] ,)
+                  (PP (VBG:[1813..1822] including)
+                    (NP (NN:[1824..1828] FLT3) (NN:[1829..1840] duplication))))))
+            (,:[1840..1841] ,)
+            (VP (VBZ:[1842..1852] correlates)
+              (PP-CLR
+                (PP (IN:[1853..1857] with)
+                  (NP
+                    (NP (JJ:[1858..1866] leukemic)
+                        (NN:[1867..1881] transformation))
+                    (PP (IN:[1882..1886] from)
+                      (NP (JJ:[1887..1897] antecedent)
+                          (NN:[1899..1913] myelodysplasia)))))
+                (CC:[1914..1917] and)
+                (PP (IN:[1918..1922] with)
+                  (NP (JJ:[1923..1933] subsequent) (NN:[1934..1941] disease)
+                      (NN:[1942..1953] progression)))))))))
+    (.:[1953..1954] .)))
+
+;section 13 Span:1958..2002
+;PMID: 9305595 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1958..1962] PMID) (::[1962..1963] :) (CD:[1964..1971] 9305595)
+        (NN:[1972..1973] -LSB-) (NNP:[1973..1979] PubMed) (::[1980..1981] -)
+        (NN:[1982..1989] indexed) (IN:[1990..1993] for)
+        (NNP:[1994..2002] MEDLINE-RSB-)))

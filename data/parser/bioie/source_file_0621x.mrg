@@ -1,0 +1,305 @@
+;PMID: 7495303
+;source_file_2837.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..116] = [t:43..116]
+;2)section:[e:120..166] = [t:120..166]
+;3)section:[e:170..258] = [t:170..258]
+;4)sentence:[e:262..396] = [t:262..396]
+;5)sentence:[e:397..590] = [t:397..590]
+;6)sentence:[e:591..749] = [t:591..749]
+;7)sentence:[e:750..816] = [t:750..816]
+;8)sentence:[e:817..954] = [t:817..954]
+;9)sentence:[e:955..1099] = [t:955..1099]
+;10)sentence:[e:1100..1267] = [t:1100..1267]
+;11)section:[e:1271..1315] = [t:1271..1315]
+
+;section 0 Span:0..37
+;Am J Pathol.  1995 Dec;147(6):1790-8.
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..11] Pathol) (.:[11..12] .)
+        (CD:[14..18] 1995) (NNP:[19..22] Dec) (::[22..23] ;) (CD:[23..26] 147)
+        (-LRB-:[26..27] -LRB-) (CD:[27..28] 6) (-RRB-:[28..29] -RRB-)
+        (::[29..30] :) (CD:[30..36] 1790-8) (.:[36..37] .)))
+
+;sentence 1 Span:43..116
+;Insulin-like growth factor II in the pathogenesis of human neuroblastoma.
+;[43..72]:gene-protein:"Insulin-like growth factor II"
+;[102..115]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NML
+        (ADJP (NN:[43..50] Insulin) (HYPH:[50..51] -) (JJ:[51..55] like))
+        (NN:[56..62] growth) (NN:[63..69] factor))
+      (CD:[70..72] II))
+    (PP (IN:[73..75] in)
+      (NP
+        (NP (DT:[76..79] the) (NN:[80..92] pathogenesis))
+        (PP (IN:[93..95] of)
+          (NP (JJ:[96..101] human) (NN:[102..115] neuroblastoma)))))
+    (.:[115..116] .)))
+
+;section 2 Span:120..166
+;Sullivan KA, Castle VP, Hanash SM, Feldman EL.
+(SEC
+  (FRAG (NNP:[120..128] Sullivan) (NNP:[129..131] KA) (,:[131..132] ,)
+        (NNP:[133..139] Castle) (NN:[140..142] VP) (,:[142..143] ,)
+        (NNP:[144..150] Hanash) (NNP:[151..153] SM) (,:[153..154] ,)
+        (NNP:[155..162] Feldman) (NNP:[163..165] EL) (.:[165..166] .)))
+
+;section 3 Span:170..258
+;Department of Internal Medicine, University of Michigan Medical Center, Ann 
+;Arbor, USA.
+(SEC
+  (FRAG (NNP:[170..180] Department) (IN:[181..183] of) (NNP:[184..192] Internal)
+        (NNP:[193..201] Medicine) (,:[201..202] ,) (NNP:[203..213] University)
+        (IN:[214..216] of) (NNP:[217..225] Michigan) (NNP:[226..233] Medical)
+        (NNP:[234..240] Center) (,:[240..241] ,) (NNP:[242..245] Ann)
+        (NNP:[247..252] Arbor) (,:[252..253] ,) (NNP:[254..257] USA)
+        (.:[257..258] .)))
+
+;sentence 4 Span:262..396
+;Insulin-like growth factor II (IGF-II) acts as an autocrine growth factor for
+; many in vitro tumor cell lines including neuroblastoma.
+;[262..291]:gene-protein:"Insulin-like growth factor II"
+;[293..299]:gene-protein:"IGF-II"
+;[312..335]:gene-protein:"autocrine growth factor"
+;[382..395]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (ADJP (NN:[262..269] Insulin) (HYPH:[269..270] -) (JJ:[270..274] like))
+          (NN:[275..281] growth) (NN:[282..288] factor))
+        (CD:[289..291] II))
+      (NP (-LRB-:[292..293] -LRB-) (NN:[293..299] IGF-II)
+          (-RRB-:[299..300] -RRB-)))
+    (VP (VBZ:[301..305] acts)
+      (PP-CLR (IN:[306..308] as)
+        (NP (DT:[309..311] an)
+           (JJ:[312..321] autocrine) (NN:[322..328] growth)
+           (NN:[329..335] factor)))
+      (PP (IN:[336..339] for)
+        (NP
+          (NP (JJ:[341..345] many)
+            (ADJP (FW:[346..348] in) (FW:[349..354] vitro))
+            (NN:[355..360] tumor) (NN:[361..365] cell) (NNS:[366..371] lines))
+          (PP (VBG:[372..381] including)
+            (NP (NN:[382..395] neuroblastoma))))))
+    (.:[395..396] .)))
+
+;sentence 5 Span:397..590
+;To examine the role of  IGF-II in tumor biology we have analyzed a total of
+;56 primary neuroblastoma  tumor samples for the presence of IGF-II using a
+;combination of mRNA and protein  analysis.
+;[421..427]:gene-protein:"IGF-II"
+;[476..483]:malignancy-clinical-stage:"primary"
+;[484..504]:malignancy-type:"neuroblastoma  tumor"
+;[533..539]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[397..397] *))
+      (VP (TO:[397..399] To)
+        (VP (VB:[400..407] examine)
+          (NP
+            (NP (DT:[408..411] the) (NN:[412..416] role))
+            (PP (IN:[417..419] of)
+              (NP (NN:[421..427] IGF-II)))
+            (PP (IN:[428..430] in)
+              (NP (NN:[431..436] tumor) (NN:[437..444] biology)))))))
+    (NP-SBJ (PRP:[445..447] we))
+    (VP (VBP:[448..452] have)
+      (VP (VBN:[453..461] analyzed)
+        (NP
+          (NP (DT:[462..463] a) (NN:[464..469] total))
+          (PP (IN:[470..472] of)
+            (NP (CD:[473..475] 56)
+              (NML (JJ:[476..483] primary) (NN:[484..497] neuroblastoma))
+              (NN:[499..504] tumor) (NNS:[505..512] samples))))
+        (PP (IN:[513..516] for)
+          (NP
+            (NP (DT:[517..520] the) (NN:[521..529] presence))
+            (PP (IN:[530..532] of)
+              (NP (NN:[533..539] IGF-II)))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[539..539] *))
+          (VP (VBG:[540..545] using)
+            (NP
+              (NP (DT:[546..547] a) (NN:[548..559] combination))
+              (PP (IN:[560..562] of)
+                (NP
+                  (NP (NN:[563..567] mRNA)
+                    (NML-1 (-NONE-:[567..567] *P*)))
+                  (CC:[568..571] and)
+                  (NP (NN:[572..579] protein)
+                    (NML-1 (NN:[581..589] analysis))))))))))
+    (.:[589..590] .)))
+
+;sentence 6 Span:591..749
+;A group of 21 samples was examined for the presence of IGF-II mRNA by  slot
+;blot and a separate group of 37 samples was examined for IGF-II 
+;immunoreactivity.
+;[646..652]:gene-rna:"IGF-II"
+;[724..730]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (DT:[591..592] A) (NN:[593..598] group))
+        (PP (IN:[599..601] of)
+          (NP (CD:[602..604] 21) (NNS:[605..612] samples))))
+      (VP (VBD:[613..616] was)
+        (VP (VBN:[617..625] examined)
+          (NP-1 (-NONE-:[625..625] *))
+          (PP (IN:[626..629] for)
+            (NP
+              (NP (DT:[630..633] the) (NN:[634..642] presence))
+              (PP (IN:[643..645] of)
+                (NP (NN:[646..652] IGF-II) (NN:[653..657] mRNA)))))
+          (PP-MNR (IN:[658..660] by)
+            (NP (NN:[662..666] slot) (NN:[667..671] blot))))))
+    (CC:[672..675] and)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[676..677] a) (JJ:[678..686] separate) (NN:[687..692] group))
+        (PP (IN:[693..695] of)
+          (NP (CD:[696..698] 37) (NNS:[699..706] samples))))
+      (VP (VBD:[707..710] was)
+        (VP (VBN:[711..719] examined)
+          (NP-2 (-NONE-:[719..719] *))
+          (PP (IN:[720..723] for)
+            (NP (NN:[724..730] IGF-II) (NN:[732..748] immunoreactivity))))))
+    (.:[748..749] .)))
+
+;sentence 7 Span:750..816
+;IGF-II was detected in 48% of the total tumor specimens  analyzed.
+;[750..756]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[750..756] IGF-II))
+    (VP (VBD:[757..760] was)
+      (VP (VBN:[761..769] detected)
+        (NP-1 (-NONE-:[769..769] *))
+        (PP (IN:[770..772] in)
+          (NP
+            (NP (CD:[773..775] 48) (NN:[775..776] %))
+            (PP (IN:[777..779] of)
+              (NP
+                (NP (DT:[780..783] the) (JJ:[784..789] total)
+                    (NN:[790..795] tumor) (NNS:[796..805] specimens))
+                (VP (VBN:[807..815] analyzed)
+                  (NP (-NONE-:[815..815] *)))))))))
+    (.:[815..816] .)))
+
+;sentence 8 Span:817..954
+;IGF-II immunoreactivity was observed in cells resembling developing 
+;neuroblasts and was confined to the cytoplasm and proximal neurites.
+;[817..823]:gene-protein:"IGF-II"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[817..823] IGF-II) (NN:[824..840] immunoreactivity))
+    (VP
+      (VP (VBD:[841..844] was)
+        (VP (VBN:[845..853] observed)
+          (NP-1 (-NONE-:[853..853] *))
+          (PP-LOC (IN:[854..856] in)
+            (NP
+              (NP (NNS:[857..862] cells))
+              (VP (VBG:[863..873] resembling)
+                (NP (VBG:[874..884] developing) (NNS:[886..897] neuroblasts)))))))
+      (CC:[898..901] and)
+      (VP (VBD:[902..905] was)
+        (VP (VBN:[906..914] confined)
+          (NP-1 (-NONE-:[914..914] *))
+          (PP-CLR (TO:[915..917] to)
+            (NP
+              (NP (DT:[918..921] the) (NN:[922..931] cytoplasm))
+              (CC:[932..935] and)
+              (NP (JJ:[936..944] proximal) (NNS:[945..953] neurites)))))))
+    (.:[953..954] .)))
+
+;sentence 9 Span:955..1099
+;The  appearance of IGF-II mRNA and protein did not correlate with tumor
+;prognostic  features including stage, histology, or N-myc amplification.
+;[974..980]:gene-protein:"IGF-II"
+;[974..980]:gene-rna:"IGF-II"
+;[1079..1084]:gene-rna:"N-myc"
+;[1085..1098]:variation-type:"amplification"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[955..958] The) (NN:[960..970] appearance))
+      (PP (IN:[971..973] of)
+        (NP
+          (NP
+            (NML-1 (NN:[974..980] IGF-II))
+            (NN:[981..985] mRNA))
+          (CC:[986..989] and)
+          (NP
+            (NML-1 (-NONE-:[989..989] *P*))
+            (NN:[990..997] protein)))))
+    (VP (VBD:[998..1001] did) (RB:[1002..1005] not)
+      (VP (VB:[1006..1015] correlate)
+        (PP-CLR (IN:[1016..1020] with)
+          (NP
+            (NP (NN:[1021..1026] tumor) (JJ:[1027..1037] prognostic)
+                (NNS:[1039..1047] features))
+            (PP (VBG:[1048..1057] including)
+              (NP
+                (NP (NN:[1058..1063] stage))
+                (,:[1063..1064] ,)
+                (NP (NN:[1065..1074] histology))
+                (,:[1074..1075] ,) (CC:[1076..1078] or)
+                (NP (NN:[1079..1084] N-myc) (NN:[1085..1098] amplification))))))))
+    (.:[1098..1099] .)))
+
+;sentence 10 Span:1100..1267
+;These data suggest  that the expression of IGF-II is not confined to a
+;specific stage of the disease  but may have a broader role in the
+;pathogenesis of neuroblastoma.
+;[1143..1149]:gene-protein:"IGF-II"
+;[1253..1266]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[1100..1105] These) (NNS:[1106..1110] data))
+    (VP (VBP:[1111..1118] suggest)
+      (SBAR (IN:[1120..1124] that)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[1125..1128] the) (NN:[1129..1139] expression))
+            (PP (IN:[1140..1142] of)
+              (NP (NN:[1143..1149] IGF-II))))
+          (VP
+            (VP (VBZ:[1150..1152] is) (RB:[1153..1156] not)
+              (VP (VBN:[1157..1165] confined)
+                (NP-1 (-NONE-:[1165..1165] *))
+                (PP-CLR (TO:[1166..1168] to)
+                  (NP
+                    (NP (DT:[1169..1170] a) (JJ:[1171..1179] specific)
+                        (NN:[1180..1185] stage))
+                    (PP (IN:[1186..1188] of)
+                      (NP (DT:[1189..1192] the) (NN:[1193..1200] disease)))))))
+            (CC:[1202..1205] but)
+            (VP (MD:[1206..1209] may)
+              (VP (VB:[1210..1214] have)
+                (NP (DT:[1215..1216] a) (JJR:[1217..1224] broader)
+                    (NN:[1225..1229] role))
+                (PP (IN:[1230..1232] in)
+                  (NP
+                    (NP (DT:[1233..1236] the) (NN:[1237..1249] pathogenesis))
+                    (PP (IN:[1250..1252] of)
+                      (NP (NN:[1253..1266] neuroblastoma)))))))))))
+    (.:[1266..1267] .)))
+
+;section 11 Span:1271..1315
+;PMID: 7495303 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1271..1275] PMID) (::[1275..1276] :) (CD:[1277..1284] 7495303)
+        (NN:[1285..1286] -LSB-) (NNP:[1286..1292] PubMed) (::[1293..1294] -)
+        (NN:[1295..1302] indexed) (IN:[1303..1306] for)
+        (NNP:[1307..1314] MEDLINE) (-RRB-:[1314..1315] -RSB-)))

@@ -1,0 +1,561 @@
+;PMID: 1976059
+;source_file_1894.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..175] = [t:52..175]
+;2)sentence:[e:176..259] = [t:176..259]
+;3)section:[e:263..296] = [t:263..296]
+;4)section:[e:300..470] = [t:300..470]
+;5)sentence:[e:474..630] = [t:474..630]
+;6)sentence:[e:631..870] = [t:631..870]
+;7)sentence:[e:871..1000] = [t:871..1000]
+;8)sentence:[e:1001..1190] = [t:1001..1190]
+;9)sentence:[e:1191..1346] = [t:1191..1346]
+;10)sentence:[e:1347..1509] = [t:1347..1509]
+;11)sentence:[e:1510..1746] = [t:1510..1746]
+;12)sentence:[e:1747..1960] = [t:1747..1960]
+;13)sentence:[e:1961..2144] = [t:1961..2144]
+;14)section:[e:2148..2192] = [t:2148..2192]
+
+;section 0 Span:0..46
+;Drug Metab Dispos. 1990 Jul-Aug;18(4):398-402.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1990) (CC:[24..28] Jul-)
+        (CD:[28..34] Aug;18) (-LRB-:[34..35] -LRB-) (CD:[35..36] 4)
+        (-RRB-:[36..37] -RRB-) (,:[37..38] :) (CD:[38..40] 39)
+        (CD:[40..45] 8-402) (.:[45..46] .)))
+
+;sentence 1 Span:52..175
+;Tissue, species, and substrate concentration differences in the 
+;position-selective hydroxylation of N-nitrosodibutylamine.
+;[73..82]:substance:"substrate"
+;[153..174]:substance:"N-nitrosodibutylamine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[52..58] Tissue)
+        (NML-1 (-NONE-:[58..58] *P*)))
+      (,:[58..59] ,)
+      (NP (NNS:[60..67] species)
+        (NML-1 (-NONE-:[67..67] *P*)))
+      (,:[67..68] ,) (CC:[69..72] and)
+      (NP
+        (NML (NN:[73..82] substrate) (NN:[83..96] concentration))
+        (NML-1 (NNS:[97..108] differences))))
+    (PP-LOC (IN:[109..111] in)
+      (NP
+        (NP (DT:[112..115] the)
+          (ADJP (NN:[117..125] position) (HYPH:[125..126] -)
+                (JJ:[126..135] selective))
+          (NN:[136..149] hydroxylation))
+        (PP (IN:[150..152] of)
+          (NP (NN:[153..174] N-nitrosodibutylamine)))))
+    (.:[174..175] .)))
+
+;sentence 2 Span:176..259
+;Relationship to the  distribution of cytochrome P-450 isozymes 2 (IIB) and 5
+;(IVB).
+;[213..240]:cyp450:"cytochrome P-450 isozymes 2"
+;[213..238]...[251..252]:cyp450:"cytochrome P-450 isozymes"..."5"
+;[242..245]:cyp450:"IIB"
+;[254..257]:cyp450:"IVB"
+(SENT
+  (NP-HLN
+    (NP (NN:[176..188] Relationship))
+    (PP (TO:[189..191] to)
+      (NP
+        (NP (DT:[192..195] the) (NN:[197..209] distribution))
+        (PP (IN:[210..212] of)
+          (NP
+            (NP
+              (NP
+                (NML-1 (NN:[213..223] cytochrome) (NN:[224..229] P-450)
+                       (NNS:[230..238] isozymes))
+                (CD:[239..240] 2))
+              (NP (NN:[241..242] -LRB-) (NN:[242..245] IIB)
+                  (-RRB-:[245..246] -RRB-)))
+            (CC:[247..250] and)
+            (NP
+              (NP
+                (NML-1 (-NONE-:[250..250] *P*))
+                (CD:[251..252] 5))
+              (NP (-LRB-:[253..254] -LRB-) (NN:[254..257] IVB)
+                  (-RRB-:[257..258] -RRB-)))))))
+    (.:[258..259] .)))
+
+;section 3 Span:263..296
+;Schulze J, Richter E, Philpot RM.
+(SEC
+  (FRAG (NNP:[263..270] Schulze) (NNP:[271..273] J,) (NNP:[274..281] Richter)
+        (NNP:[282..283] E) (,:[283..284] ,) (NNP:[285..292] Philpot)
+        (NNP:[293..295] RM) (.:[295..296] .)))
+
+;section 4 Span:300..470
+;Laboratory of Cellular and Molecular Pharmacology, National Institute of 
+;Environmental Health Sciences, National Institutes of Health, Research
+;Triangle  Park, NC 27709.
+(SEC
+  (FRAG (NN:[300..310] Laboratory) (IN:[311..313] of) (NNP:[314..322] Cellular)
+        (CC:[323..326] and) (NNP:[327..336] Molecular)
+        (NNP:[337..349] Pharmacology) (,:[349..350] ,) (NNP:[351..359] National)
+        (NNP:[360..369] Institute) (IN:[370..372] of)
+        (NNP:[374..387] Environmental) (NNP:[388..394] Health)
+        (NNP:[395..403] Sciences) (,:[403..404] ,) (NNP:[405..413] National)
+        (NNPS:[414..424] Institutes) (IN:[425..427] of) (NNP:[428..434] Health)
+        (,:[434..435] ,) (NNP:[436..444] Research) (NNP:[445..453] Triangle)
+        (NNP:[455..459] Park) (,:[459..460] ,) (NNP:[461..463] NC)
+        (.:[464..469] 27709) (.:[469..470] .)))
+
+;sentence 5 Span:474..630
+;The relative rates of 3- and 4-hydroxylation of N-nitrosodibutylamine in 
+;microsomal preparations depend upon species, tissue, and substrate 
+;concentration.
+;[522..543]:substance:"N-nitrosodibutylamine"
+;[605..614]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[474..477] The) (JJ:[478..486] relative) (NNS:[487..492] rates))
+      (PP (IN:[493..495] of)
+        (NP
+          (NP
+            (NP (CD:[496..497] 3) (HYPH:[497..498] -)
+              (NML-1 (-NONE-:[498..498] *P*)))
+            (CC:[499..502] and)
+            (NP (CD:[503..504] 4) (HYPH:[504..505] -)
+              (NML-1 (NN:[505..518] hydroxylation))))
+          (PP (IN:[519..521] of)
+            (NP (NN:[522..543] N-nitrosodibutylamine)))
+          (PP-LOC (IN:[544..546] in)
+            (NP (JJ:[548..558] microsomal) (NNS:[559..571] preparations))))))
+    (VP (VBP:[572..578] depend)
+      (PP-CLR (IN:[579..583] upon)
+        (NP
+          (NP (NNS:[584..591] species))
+          (,:[591..592] ,)
+          (NP (NN:[593..599] tissue))
+          (,:[599..600] ,) (CC:[601..604] and)
+          (NP (NN:[605..614] substrate) (NN:[616..629] concentration)))))
+    (.:[629..630] .)))
+
+;sentence 6 Span:631..870
+;With rabbits, at a substrate concentration of 200 microM, the two  reactions
+;differ by less than 30% in preparations from liver, lung, or  intestine,
+;whereas the ratio of 4- to 3-hydroxylation is 2.0 with bladder and  only 0.4
+;with kidney.
+;[650..659]:substance:"substrate"
+;[677..680]:quantitative-value:"200"
+;[681..687]:quantitative-units:"microM"
+;[728..731]:quantitative-value:"30%"
+;[827..830]:quantitative-value:"2.0"
+;[854..857]:quantitative-value:"0.4"
+(SENT
+  (S
+    (PP (IN:[631..635] With)
+      (NP (NNS:[636..643] rabbits)))
+    (,:[643..644] ,)
+    (PP (IN:[645..647] at)
+      (NP
+        (NP (DT:[648..649] a) (NN:[650..659] substrate)
+            (NN:[660..673] concentration))
+        (PP (IN:[674..676] of)
+          (NP (CD:[677..680] 200) (NN:[681..687] microM)))))
+    (,:[687..688] ,)
+    (NP-SBJ (DT:[689..692] the) (CD:[693..696] two) (NNS:[698..707] reactions))
+    (VP (VBP:[708..714] differ)
+      (PP-EXT (IN:[715..717] by)
+        (NP
+          (QP (JJR:[718..722] less) (IN:[723..727] than) (CD:[728..730] 30))
+          (NN:[730..731] %)))
+      (PP-LOC (IN:[732..734] in)
+        (NP
+          (NP (NNS:[735..747] preparations))
+          (PP (IN:[748..752] from)
+            (NP (NN:[753..758] liver) (,:[758..759] ,) (NN:[760..764] lung)
+                (,:[764..765] ,) (CC:[766..768] or) (NN:[770..779] intestine)))))
+      (,:[779..780] ,)
+      (SBAR-ADV (IN:[781..788] whereas)
+        (S
+          (NP-SBJ
+            (NP (DT:[789..792] the) (NN:[793..798] ratio))
+            (PP (IN:[799..801] of)
+              (NP
+                (NP (CD:[802..803] 4) (HYPH:[803..804] -)
+                  (NML-4 (-NONE-:[804..804] *P*)))
+                (TO:[805..807] to)
+                (NP (CD:[808..809] 3) (HYPH:[809..810] -)
+                  (NML-4 (NN:[810..823] hydroxylation))))))
+          (VP
+            (VP (VBZ:[824..826] is)
+              (NP-PRD=2 (CD:[827..830] 2.0))
+              (PP=3 (IN:[831..835] with)
+                (NP (NN:[836..843] bladder))))
+            (CC:[844..847] and)
+            (VP
+              (NP-PRD=2 (RB:[849..853] only) (CD:[854..857] 0.4))
+              (PP=3 (IN:[858..862] with)
+                (NP (NN:[863..869] kidney))))))))
+    (.:[869..870] .)))
+
+;sentence 7 Span:871..1000
+;As the substrate concentration is lowered, this ratio  increases to a maximum
+;of about 2.0 in hepatic and pulmonary preparations.
+;[878..887]:substance:"substrate"
+;[958..961]:quantitative-value:"2.0"
+(SENT
+  (S
+    (PP (IN:[871..873] As)
+      (S-NOM
+        (NP-SBJ-2 (DT:[874..877] the) (NN:[878..887] substrate)
+                  (NN:[888..901] concentration))
+        (VP (VBZ:[902..904] is)
+          (VP (VBN:[905..912] lowered)
+            (NP-2 (-NONE-:[912..912] *))))))
+    (,:[912..913] ,)
+    (NP-SBJ (DT:[914..918] this) (NN:[919..924] ratio))
+    (VP (VBZ:[926..935] increases)
+      (PP-CLR (TO:[936..938] to)
+        (NP
+          (NP (DT:[939..940] a) (NN:[941..948] maximum))
+          (PP (IN:[949..951] of)
+            (NP
+              (QP (RB:[952..957] about) (CD:[958..961] 2.0))))))
+      (PP-LOC (IN:[962..964] in)
+        (NP
+          (NP (JJ:[965..972] hepatic)
+            (NML-1 (-NONE-:[972..972] *P*)))
+          (CC:[973..976] and)
+          (NP (JJ:[977..986] pulmonary)
+            (NML-1 (NNS:[987..999] preparations))))))
+    (.:[999..1000] .)))
+
+;sentence 8 Span:1001..1190
+;The  sum of the rates of 3- and 4-hydroxylation of N-nitrosodibutylamine in 
+;microsomal preparations from untreated rabbits is highest in those from lung 
+;(about 2-fold greater than liver).
+;[1052..1073]:substance:"N-nitrosodibutylamine"
+;[1163..1169]:quantitative-value:"2-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1001..1004] The) (NN:[1006..1009] sum))
+      (PP (IN:[1010..1012] of)
+        (NP
+          (NP (DT:[1013..1016] the) (NNS:[1017..1022] rates))
+          (PP (IN:[1023..1025] of)
+            (NP
+              (NP
+                (NP (CD:[1026..1027] 3) (HYPH:[1027..1028] -)
+                  (NML-1 (-NONE-:[1028..1028] *P*)))
+                (CC:[1029..1032] and)
+                (NP (CD:[1033..1034] 4) (HYPH:[1034..1035] -)
+                  (NML-1 (NN:[1035..1048] hydroxylation))))
+              (PP (IN:[1049..1051] of)
+                (NP (NN:[1052..1073] N-nitrosodibutylamine)))
+              (PP-LOC (IN:[1074..1076] in)
+                (NP
+                  (NP (JJ:[1078..1088] microsomal)
+                      (NNS:[1089..1101] preparations))
+                  (PP (IN:[1102..1106] from)
+                    (NP (JJ:[1107..1116] untreated) (NNS:[1117..1124] rabbits))))))))))
+    (VP (VBZ:[1125..1127] is)
+      (ADJP-PRD (JJS:[1128..1135] highest))
+      (PP-LOC (IN:[1136..1138] in)
+        (NP
+          (NP (DT:[1139..1144] those))
+          (PP (IN:[1145..1149] from)
+            (NP
+              (NP (NN:[1150..1154] lung))
+              (PRN (-LRB-:[1156..1157] -LRB-)
+                (ADJP
+                  (ADJP
+                    (ADVP
+                      (QP (RB:[1157..1162] about) (CD:[1163..1164] 2))
+                      (HYPH:[1164..1165] -) (RB:[1165..1169] fold))
+                    (JJR:[1170..1177] greater))
+                  (PP (IN:[1178..1182] than)
+                    (NP (NN:[1183..1188] liver))))
+                (-RRB-:[1188..1189] -RRB-)))))))
+    (.:[1189..1190] .)))
+
+;sentence 9 Span:1191..1346
+;Following treatment of rabbits with  phenobarbital, however, the highest rate
+;is with hepatic microsomes (about  2-fold greater than pulmonary
+;microsomes).
+;[1228..1241]:substance:"phenobarbital"
+;[1304..1318]:quantitative-value:"2-fold greater"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1191..1191] *))
+      (VP (VBG:[1191..1200] Following)
+        (NP
+          (NP (NN:[1201..1210] treatment))
+          (PP (IN:[1211..1213] of)
+            (NP (NNS:[1214..1221] rabbits)))
+          (PP (IN:[1222..1226] with)
+            (NP (NN:[1228..1241] phenobarbital))))))
+    (,:[1241..1242] ,)
+    (ADVP (RB:[1243..1250] however))
+    (,:[1250..1251] ,)
+    (NP-SBJ (DT:[1252..1255] the) (JJS:[1256..1263] highest)
+            (NN:[1264..1268] rate))
+    (VP (VBZ:[1269..1271] is)
+      (PP-PRD (IN:[1272..1276] with)
+        (NP (JJ:[1277..1284] hepatic) (NNS:[1285..1295] microsomes)))
+      (PRN (-LRB-:[1296..1297] -LRB-)
+        (ADJP
+          (ADJP
+            (ADVP-EXT
+              (QP (RB:[1297..1302] about) (CD:[1304..1305] 2))
+              (HYPH:[1305..1306] -) (RB:[1306..1310] fold))
+            (JJR:[1311..1318] greater))
+          (PP (IN:[1319..1323] than)
+            (NP (JJ:[1324..1333] pulmonary) (NNS:[1334..1344] microsomes))))
+        (-RRB-:[1344..1345] -RRB-)))
+    (.:[1345..1346] .)))
+
+;sentence 10 Span:1347..1509
+;Antibodies to cytochrome P-450  isozymes 2 (IIB) and 5 (IVB) together inhibit
+;greater than 90% of the microsomal  3- and 4-hydroxylation of
+;N-nitrosodibutylamine.
+;[1347..1357]:substance:"Antibodies"
+;[1361..1389]:cyp450:"cytochrome P-450  isozymes 2"
+;[1361..1387]...[1400..1401]:cyp450:"cytochrome P-450  isozymes"..."5"
+;[1391..1394]:cyp450:"IIB"
+;[1403..1406]:cyp450:"IVB"
+;[1425..1441]:quantitative-value:"greater than 90%"
+;[1487..1508]:substance:"N-nitrosodibutylamine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1347..1357] Antibodies))
+      (PP (TO:[1358..1360] to)
+        (NP
+          (NP
+            (NP
+              (NML-3
+                (NML (NN:[1361..1371] cytochrome) (NN:[1372..1377] P-450))
+                (NNS:[1379..1387] isozymes))
+              (CD:[1388..1389] 2))
+            (NP (NN:[1390..1391] -LRB-) (NN:[1391..1394] IIB)
+                (-RRB-:[1394..1395] -RRB-)))
+          (CC:[1396..1399] and)
+          (NP
+            (NP
+              (NML-3 (-NONE-:[1399..1399] *P*))
+              (CD:[1400..1401] 5))
+            (NP (-LRB-:[1402..1403] -LRB-) (NN:[1403..1406] IVB)
+                (-RRB-:[1406..1407] -RRB-))))))
+    (ADVP (RB:[1408..1416] together))
+    (VP (VBP:[1417..1424] inhibit)
+      (NP
+        (NP
+          (QP (JJR:[1425..1432] greater) (IN:[1433..1437] than)
+              (CD:[1438..1440] 90))
+          (NN:[1440..1441] %))
+        (PP (IN:[1442..1444] of)
+          (NP
+            (NP (DT:[1445..1448] the)
+              (NML
+                (NML
+                  (ADJP-2 (JJ:[1449..1459] microsomal))
+                  (CD:[1461..1462] 3) (HYPH:[1462..1463] -)
+                  (NML-1 (-NONE-:[1463..1463] *P*)))
+                (CC:[1464..1467] and)
+                (NML
+                  (ADJP-2 (-NONE-:[1467..1467] *P*))
+                  (CD:[1468..1469] 4) (HYPH:[1469..1470] -)
+                  (NML-1 (NN:[1470..1483] hydroxylation)))))
+            (PP (IN:[1484..1486] of)
+              (NP (NN:[1487..1508] N-nitrosodibutylamine)))))))
+    (.:[1508..1509] .)))
+
+;sentence 11 Span:1510..1746
+;The ratio of 4- to  3-hydroxylation with antibodies to isozyme 2 present is
+;the same (2.0) as that  obtained with purified isozyme 5, and the ratio with
+;antibodies to isozyme 5  present is the same (0.2) as that with purified
+;isozyme 2.
+;[1551..1561]:substance:"antibodies"
+;[1565..1574]:cyp450:"isozyme 2"
+;[1596..1599]:quantitative-value:"2.0"
+;[1633..1642]:cyp450:"isozyme 5"
+;[1663..1673]:substance:"antibodies"
+;[1677..1686]:cyp450:"isozyme 5"
+;[1709..1712]:quantitative-value:"0.2"
+;[1736..1745]:cyp450:"isozyme 2"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1510..1513] The) (NN:[1514..1519] ratio))
+        (PP (IN:[1520..1522] of)
+          (NP
+            (NP (CD:[1523..1524] 4) (HYPH:[1524..1525] -))
+            (PP (TO:[1526..1528] to)
+              (NP (CD:[1530..1531] 3) (HYPH:[1531..1532] -)
+                  (NN:[1532..1545] hydroxylation)))))
+        (PP (IN:[1546..1550] with)
+          (NP
+            (NP (NNS:[1551..1561] antibodies))
+            (PP (TO:[1562..1564] to)
+              (NP
+                (NP (NN:[1565..1572] isozyme) (CD:[1573..1574] 2))
+                (ADJP (JJ:[1575..1582] present)))))))
+      (VP (VBZ:[1583..1585] is)
+        (NP-PRD
+          (NP
+            (NP (DT:[1586..1589] the) (JJ:[1590..1594] same))
+            (PRN (-LRB-:[1595..1596] -LRB-)
+              (NP (CD:[1596..1599] 2.0))
+              (-RRB-:[1599..1600] -RRB-)))
+          (PP (IN:[1601..1603] as)
+            (NP
+              (NP-1 (DT:[1604..1608] that))
+              (VP (VBN:[1610..1618] obtained)
+                (NP-1 (-NONE-:[1618..1618] *))
+                (PP (IN:[1619..1623] with)
+                  (NP (VBN:[1624..1632] purified)
+                     (NN:[1633..1640] isozyme) (CD:[1641..1642] 5)))))))))
+    (,:[1642..1643] ,) (CC:[1644..1647] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[1648..1651] the) (NN:[1652..1657] ratio))
+        (PP (IN:[1658..1662] with)
+          (NP
+            (NP (NNS:[1663..1673] antibodies))
+            (PP (TO:[1674..1676] to)
+              (NP
+                (NP (NN:[1677..1684] isozyme) (CD:[1685..1686] 5))
+                (ADJP (JJ:[1688..1695] present)))))))
+      (VP (VBZ:[1696..1698] is)
+        (NP-PRD
+          (NP
+            (NP (DT:[1699..1702] the) (JJ:[1703..1707] same))
+            (PRN (-LRB-:[1708..1709] -LRB-)
+              (NP (CD:[1709..1712] 0.2))
+              (-RRB-:[1712..1713] -RRB-)))
+          (PP (IN:[1714..1716] as)
+            (NP
+              (NP (DT:[1717..1721] that))
+              (PP (IN:[1722..1726] with)
+                (NP (VBN:[1727..1735] purified)
+                   (NN:[1736..1743] isozyme) (CD:[1744..1745] 2))))))))
+    (.:[1745..1746] .)))
+
+;sentence 12 Span:1747..1960
+;The Km with isozyme 5  is less than 10 microM, whereas the Km with isozyme 2
+;is 55 microM, a difference  that explains why position selectivity in
+;microsomal incubations is dependent  upon substrate concentration.
+;[1751..1753]:quantitative-name:"Km"
+;[1759..1768]:cyp450:"isozyme 5"
+;[1773..1785]:quantitative-value:"less than 10"
+;[1786..1792]:quantitative-units:"microM"
+;[1806..1808]:quantitative-name:"Km"
+;[1814..1823]:cyp450:"isozyme 2"
+;[1827..1829]:quantitative-value:"55"
+;[1830..1836]:quantitative-units:"microM"
+;[1936..1945]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1747..1750] The) (NN:[1751..1753] Km))
+      (PP (IN:[1754..1758] with)
+        (NP (NN:[1759..1766] isozyme) (CD:[1767..1768] 5))))
+    (VP (VBZ:[1770..1772] is)
+      (NP-PRD
+        (QP (JJR:[1773..1777] less) (IN:[1778..1782] than) (CD:[1783..1785] 10))
+        (NN:[1786..1792] microM))
+      (,:[1792..1793] ,)
+      (SBAR-ADV (IN:[1794..1801] whereas)
+        (S
+          (NP-SBJ
+            (NP (DT:[1802..1805] the) (NN:[1806..1808] Km))
+            (PP (IN:[1809..1813] with)
+              (NP (NN:[1814..1821] isozyme) (CD:[1822..1823] 2))))
+          (VP (VBZ:[1824..1826] is)
+            (NP-PRD (CD:[1827..1829] 55) (NN:[1830..1836] microM)))))
+      (,:[1836..1837] ,)
+      (NP-ADV
+        (NP (DT:[1838..1839] a) (NN:[1840..1850] difference))
+        (SBAR
+          (WHNP-1 (WDT:[1852..1856] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[1856..1856] *T*))
+            (VP (VBZ:[1857..1865] explains)
+              (SBAR
+                (WHADVP-2 (RB:[1866..1869] why))
+                (S
+                  (NP-SBJ
+                    (NP (NN:[1870..1878] position) (NN:[1879..1890] selectivity))
+                    (PP-LOC (IN:[1891..1893] in)
+                      (NP (JJ:[1894..1904] microsomal)
+                          (NNS:[1905..1916] incubations))))
+                  (VP (VBZ:[1917..1919] is)
+                    (ADJP-PRD (JJ:[1920..1929] dependent)
+                      (PP (IN:[1931..1935] upon)
+                        (NP (NN:[1936..1945] substrate)
+                            (NN:[1946..1959] concentration)))
+                      (ADVP-2 (-NONE-:[1959..1959] *T*)))))))))))
+    (.:[1959..1960] .)))
+
+;sentence 13 Span:1961..2144
+;Also, differences in the relative and absolute  rates of hydroxylation among
+;various tissues reflect differences in the contents  of isozymes 2 and
+;5.(ABSTRACT TRUNCATED AT 250 WORDS)
+;[2094..2104]:cyp450:"isozymes 2"
+;[2094..2102]...[2109..2110]:cyp450:"isozymes"..."5"
+(SENT
+  (S
+    (ADVP (RB:[1961..1965] Also))
+    (,:[1965..1966] ,)
+    (NP-SBJ
+      (NP (NNS:[1967..1978] differences))
+      (PP (IN:[1979..1981] in)
+        (NP
+          (NP (DT:[1982..1985] the)
+            (NML
+              (NML (JJ:[1986..1994] relative)
+                (NML-2 (-NONE-:[1994..1994] *P*)))
+              (CC:[1995..1998] and)
+              (NML (JJ:[1999..2007] absolute)
+                (NML-2 (NNS:[2009..2014] rates)))))
+          (PP (IN:[2015..2017] of)
+            (NP (NN:[2018..2031] hydroxylation)))))
+      (PP (IN:[2032..2037] among)
+        (NP (JJ:[2038..2045] various) (NNS:[2046..2053] tissues))))
+    (VP (VBP:[2054..2061] reflect)
+      (NP
+        (NP (NNS:[2062..2073] differences))
+        (PP (IN:[2074..2076] in)
+          (NP
+            (NP (DT:[2077..2080] the) (NNS:[2081..2089] contents))
+            (PP (IN:[2091..2093] of)
+              (NP
+                (NP
+                  (NML-1 (NNS:[2094..2102] isozymes))
+                  (CD:[2103..2104] 2))
+                (CC:[2105..2108] and)
+                (NP
+                  (NML-1 (-NONE-:[2108..2108] *P*))
+                  (CD:[2109..2110] 5))))))))
+    (.:[2110..2111] .))
+  (FRAG (-LRB-:[2111..2112] -LRB-)
+    (S
+      (NP-SBJ (NN:[2112..2120] ABSTRACT))
+      (VP (VBN:[2121..2130] TRUNCATED)
+        (PP-LOC (IN:[2131..2133] AT)
+          (NP (CD:[2134..2137] 250) (NNS:[2138..2143] WORDS)))))
+    (-RRB-:[2143..2144] -RRB-)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1961..2144]::S:FRAG:
+
+;section 14 Span:2148..2192
+;PMID: 1976059 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2148..2152] PMID) (::[2152..2153] :) (CD:[2154..2161] 1976059)
+        (-LRB-:[2162..2163] -LSB-) (NNP:[2163..2169] PubMed)
+        (HYPH:[2170..2171] -) (NN:[2172..2179] indexed) (IN:[2180..2183] for)
+        (NNP:[2184..2191] MEDLINE) (-RRB-:[2191..2192] -RSB-)))

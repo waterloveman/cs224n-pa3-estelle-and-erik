@@ -1,0 +1,273 @@
+;PMID: 1614406
+;source_file_2886.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..134] = [t:45..134]
+;2)section:[e:138..170] = [t:138..170]
+;3)section:[e:174..252] = [t:174..252]
+;4)sentence:[e:256..562] = [t:256..562]
+;5)sentence:[e:563..775] = [t:563..775]
+;6)sentence:[e:776..1104] = [t:776..1104]
+;7)sentence:[e:1106..1372] = [t:1106..1372]
+;8)section:[e:1376..1420] = [t:1376..1420]
+
+;section 0 Span:0..39
+;Mol Pharmacol.  1992 Jun;41(6):1016-22.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..13] Pharmacol) (.:[13..14] .)
+        (CD:[16..20] 1992) (.:[21..27] Jun;41) (-LRB-:[27..28] -LRB-)
+        (CD:[28..29] 6) (-RRB-:[29..30] -RRB-) (::[30..31] :)
+        (CD:[31..38] 1016-22) (.:[38..39] .)))
+
+;sentence 1 Span:45..134
+;Increased glucocorticoid receptor gene promoter activity after antidepressant
+; treatment.
+;[55..78]:gene-rna:"glucocorticoid receptor"
+(SENT
+  (NP
+    (NP (VBN:[45..54] Increased)
+      (NML
+        (NML (NN:[55..69] glucocorticoid) (NN:[70..78] receptor))
+        (NN:[79..83] gene) (NN:[84..92] promoter))
+      (NN:[93..101] activity))
+    (PP-TMP (IN:[102..107] after)
+      (NP (NN:[108..122] antidepressant) (NN:[124..133] treatment)))
+    (.:[133..134] .)))
+
+;section 2 Span:138..170
+;Pepin MC, Govindan MV, Barden N.
+(SEC
+  (FRAG (NNP:[138..143] Pepin) (NNP:[144..146] MC) (,:[146..147] ,)
+        (NNP:[148..156] Govindan) (NNP:[157..159] MV) (,:[159..160] ,)
+        (NNP:[161..167] Barden) (NNP:[168..169] N) (.:[169..170] .)))
+
+;section 3 Span:174..252
+;Molecular Psychogenetics Laboratory, Research Center, Ste Foy, Quebec,
+;Canada.
+(SEC
+  (FRAG (NNP:[174..183] Molecular) (NNP:[184..198] Psychogenetics)
+        (NNP:[199..209] Laboratory) (,:[209..210] ,) (NNP:[211..219] Research)
+        (NNP:[220..226] Center) (,:[226..227] ,) (NNP:[228..231] Ste)
+        (NNP:[232..235] Foy) (,:[235..236] ,) (NNP:[237..243] Quebec)
+        (,:[243..244] ,) (NNP:[245..251] Canada) (.:[251..252] .)))
+
+;sentence 4 Span:256..562
+;We have tested the hypothesis that antidepressants affect the expression of
+;the  glucocorticoid receptor gene, by looking at glucocorticoid receptor gene
+; promoter activity, glucocorticoid receptor mRNA levels, and 
+;glucocorticoid-binding activity after treatment of different cell lines with 
+;desipramine.
+;[337..360]:gene-rna:"glucocorticoid receptor"
+;[381..404]:gene-rna:"glucocorticoid receptor"
+;[430..453]:gene-rna:"glucocorticoid receptor"
+(SENT
+  (S
+    (NP-SBJ (PRP:[256..258] We))
+    (VP (VBP:[259..263] have)
+      (VP (VBN:[264..270] tested)
+        (NP (DT:[271..274] the) (NN:[275..285] hypothesis)
+          (SBAR (IN:[286..290] that)
+            (S
+              (NP-SBJ (NNS:[291..306] antidepressants))
+              (VP (VBP:[307..313] affect)
+                (NP
+                  (NP (DT:[314..317] the) (NN:[318..328] expression))
+                  (PP (IN:[329..331] of)
+                    (NP (DT:[332..335] the)
+                      (NML (NN:[337..351] glucocorticoid)
+                           (NN:[352..360] receptor))
+                      (NN:[361..365] gene))))
+                (,:[365..366] ,)
+                (PP (IN:[367..369] by)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[369..369] *))
+                    (VP (VBG:[370..377] looking)
+                      (PP-CLR (IN:[378..380] at)
+                        (NP
+                          (NP
+                            (NML
+                              (NML (NN:[381..395] glucocorticoid)
+                                   (NN:[396..404] receptor))
+                              (NN:[405..409] gene) (NN:[411..419] promoter))
+                            (NN:[420..428] activity))
+                          (,:[428..429] ,)
+                          (NP
+                            (NML (NN:[430..444] glucocorticoid)
+                                 (NN:[445..453] receptor))
+                            (NN:[454..458] mRNA) (NNS:[459..465] levels))
+                          (,:[465..466] ,) (CC:[467..470] and)
+                          (NP
+                            (ADJP (NN:[472..486] glucocorticoid)
+                                  (HYPH:[486..487] -) (VBG:[487..494] binding))
+                            (NN:[495..503] activity))))
+                      (PP-TMP (IN:[504..509] after)
+                        (NP
+                          (NP (NN:[510..519] treatment))
+                          (PP (IN:[520..522] of)
+                            (NP (JJ:[523..532] different) (NN:[533..537] cell)
+                                (NNS:[538..543] lines)))
+                          (PP (IN:[544..548] with)
+                            (NP (NN:[550..561] desipramine))))))))))))))
+    (.:[561..562] .)))
+
+;sentence 5 Span:563..775
+;Treatment of LTK- cells or Neuro 2A cells with desipramine produced  a
+;50-200% increase in chloramphenicol acetyltransferase activity transcribed 
+;from a 2.7-kilobase glucocorticoid receptor gene promoter region.
+;[654..687]:gene-protein:"chloramphenicol acetyltransferase"
+;[730..753]:gene-rna:"glucocorticoid receptor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[563..572] Treatment))
+      (PP (IN:[573..575] of)
+        (NP
+          (NP (NN:[576..579] LTK) (HYPH:[579..580] -) (NNS:[581..586] cells))
+          (CC:[587..589] or)
+          (NP
+            (NML (NN:[590..595] Neuro) (NN:[596..598] 2A))
+            (NNS:[599..604] cells))))
+      (PP (IN:[605..609] with)
+        (NP (NN:[610..621] desipramine))))
+    (VP (VBD:[622..630] produced)
+      (NP
+        (NP (DT:[632..633] a)
+          (NML
+            (QP (CD:[634..636] 50) (HYPH:[636..637] -) (CD:[637..640] 200))
+            (NN:[640..641] %))
+          (NN:[642..650] increase))
+        (PP (IN:[651..653] in)
+          (NP
+            (NP
+              (NML (NN:[654..669] chloramphenicol)
+                   (NN:[670..687] acetyltransferase))
+              (NN:[688..696] activity))
+            (VP (VBN:[697..708] transcribed)
+              (NP (-NONE-:[708..708] *))
+              (PP (IN:[710..714] from)
+                (NP (DT:[715..716] a)
+                  (NML (CD:[717..720] 2.7) (HYPH:[720..721] -)
+                       (NN:[721..729] kilobase))
+                  (NML
+                    (NML (NN:[730..744] glucocorticoid) (NN:[745..753] receptor))
+                    (NN:[754..758] gene) (NN:[759..767] promoter))
+                  (NN:[768..774] region))))))))
+    (.:[774..775] .)))
+
+;sentence 6 Span:776..1104
+;In cell lines  derived from both neuronal and non-neuronal sources,
+;glucocorticoid receptor  mRNA concentration doubled after desipramine
+;treatment, and this was associated  with a 2-fold higher functional
+;glucocorticoid binding capacity and increased  glucocorticoid sensitivity, as
+;measured with the reporter plasmid pMMTVCAT.
+;[844..867]:gene-rna:"glucocorticoid receptor"
+;[1095..1103]:gene-rna:"pMMTVCAT"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[776..778] In)
+        (NP
+          (NP (NN:[779..783] cell) (NNS:[784..789] lines))
+          (VP (VBN:[791..798] derived)
+            (NP (-NONE-:[798..798] *))
+            (PP (IN:[799..803] from)
+              (NP (CC:[804..808] both)
+                (NP (JJ:[809..817] neuronal)
+                  (NML-1 (-NONE-:[817..817] *P*)))
+                (CC:[818..821] and)
+                (NP
+                  (ADJP (AFX:[822..825] non) (HYPH:[825..826] -)
+                        (JJ:[826..834] neuronal))
+                  (NML-1 (NNS:[835..842] sources))))))))
+      (,:[842..843] ,)
+      (NP-SBJ
+        (NML (NN:[844..858] glucocorticoid) (NN:[859..867] receptor))
+        (NN:[869..873] mRNA) (NN:[874..887] concentration))
+      (VP (VBD:[888..895] doubled)
+        (PP-TMP (IN:[896..901] after)
+          (NP (NN:[902..913] desipramine) (NN:[914..923] treatment)))))
+    (,:[923..924] ,) (CC:[925..928] and)
+    (S
+      (NP-SBJ-2 (DT:[929..933] this))
+      (VP (VBD:[934..937] was)
+        (VP (VBN:[938..948] associated)
+          (NP-2 (-NONE-:[948..948] *))
+          (PP-CLR (IN:[950..954] with)
+            (NP
+              (NP (DT:[955..956] a)
+                (ADJP
+                  (QP (CD:[957..958] 2) (HYPH:[958..959] -) (RB:[959..963] fold))
+                  (JJR:[964..970] higher))
+                (JJ:[971..981] functional)
+                (NML (NN:[982..996] glucocorticoid) (NN:[997..1004] binding))
+                (NN:[1005..1013] capacity))
+              (CC:[1014..1017] and)
+              (NP (VBN:[1018..1027] increased) (NN:[1029..1043] glucocorticoid)
+                  (NN:[1044..1055] sensitivity))))
+          (,:[1055..1056] ,)
+          (SBAR-ADV (IN:[1057..1059] as)
+            (S
+              (NP-SBJ-3 (-NONE-:[1059..1059] *))
+              (VP (VBN:[1060..1068] measured)
+                (NP-3 (-NONE-:[1068..1068] *))
+                (PP-MNR (IN:[1069..1073] with)
+                  (NP
+                    (NP (DT:[1074..1077] the) (NN:[1078..1086] reporter)
+                        (NN:[1087..1094] plasmid))
+                    (NP (NN:[1095..1103] pMMTVCAT))))))))))
+    (.:[1103..1104] .)))
+
+;sentence 7 Span:1106..1372
+;Antidepressant-induced increases in glucocorticoid receptor gene promoter 
+;activity, glucocorticoid receptor mRNA levels, and functional glucocorticoid 
+;binding activity suggest a novel mechanism of action for these drugs on the 
+;hypothalamic-pituitary-adrenal axis.
+;[1142..1165]:gene-rna:"glucocorticoid receptor"
+;[1191..1214]:gene-rna:"glucocorticoid receptor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (ADJP (NN:[1106..1120] Antidepressant) (HYPH:[1120..1121] -)
+              (VBN:[1121..1128] induced))
+        (NNS:[1129..1138] increases))
+      (PP (IN:[1139..1141] in)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[1142..1156] glucocorticoid) (NN:[1157..1165] receptor))
+              (NN:[1166..1170] gene) (NN:[1171..1179] promoter))
+            (NN:[1181..1189] activity))
+          (,:[1189..1190] ,)
+          (NP
+            (NML (NN:[1191..1205] glucocorticoid) (NN:[1206..1214] receptor))
+            (NN:[1215..1219] mRNA) (NNS:[1220..1226] levels))
+          (,:[1226..1227] ,) (CC:[1228..1231] and)
+          (NP (JJ:[1232..1242] functional)
+            (NML (NN:[1243..1257] glucocorticoid) (NN:[1259..1266] binding))
+            (NN:[1267..1275] activity)))))
+    (VP (VBP:[1276..1283] suggest)
+      (NP
+        (NP (DT:[1284..1285] a) (JJ:[1286..1291] novel)
+            (NN:[1292..1301] mechanism))
+        (PP (IN:[1302..1304] of)
+          (NP
+            (NP (NN:[1305..1311] action))
+            (PP (IN:[1312..1315] for)
+              (NP (DT:[1316..1321] these) (NNS:[1322..1327] drugs)))
+            (PP (IN:[1328..1330] on)
+              (NP (DT:[1331..1334] the) (JJ:[1336..1348] hypothalamic)
+                  (HYPH:[1348..1349] -) (JJ:[1349..1358] pituitary)
+                  (HYPH:[1358..1359] -) (JJ:[1359..1366] adrenal)
+                  (NN:[1367..1371] axis)))))))
+    (.:[1371..1372] .)))
+
+;section 8 Span:1376..1420
+;PMID: 1614406 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1376..1380] PMID) (::[1380..1381] :) (CD:[1382..1389] 1614406)
+        (NN:[1390..1391] -LSB-) (NNP:[1391..1397] PubMed) (::[1398..1399] -)
+        (NN:[1400..1407] indexed) (IN:[1408..1411] for)
+        (NNP:[1412..1420] MEDLINE-RSB-)))

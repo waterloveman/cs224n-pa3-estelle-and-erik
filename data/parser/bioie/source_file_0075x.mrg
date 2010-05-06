@@ -1,0 +1,344 @@
+;PMID: 8101511
+;source_file_2966.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..119] = [t:46..119]
+;2)section:[e:123..145] = [t:123..145]
+;3)section:[e:149..244] = [t:149..244]
+;4)sentence:[e:248..448] = [t:248..448]
+;5)sentence:[e:449..762] = [t:449..762]
+;6)sentence:[e:763..850] = [t:763..850]
+;7)sentence:[e:851..1118] = [t:851..1118]
+;8)sentence:[e:1119..1276] = [t:1119..1276]
+;9)sentence:[e:1277..1482] = [t:1277..1482]
+;10)section:[e:1486..1530] = [t:1486..1530]
+
+;section 0 Span:0..40
+;Int J Cancer.  1993 Jul 30;54(6):987-91.
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..12] Cancer) (.:[12..13] .)
+        (CD:[15..19] 1993) (NNP:[20..23] Jul) (CD:[24..26] 30) (CD:[26..29] ;54)
+        (-LRB-:[29..30] -LRB-) (CD:[30..31] 6) (-RRB-:[31..32] -RRB-)
+        (CD:[32..36] :987) (::[36..37] -) (CD:[37..39] 91) (.:[39..40] .)))
+
+;sentence 1 Span:46..119
+;Activation of the human MDR1 gene promoter in differentiated neuroblasts.
+;[70..74]:gene-rna:"MDR1"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..56] Activation))
+    (PP (IN:[57..59] of)
+      (NP (DT:[60..63] the) (JJ:[64..69] human)
+        (NML (NN:[70..74] MDR1) (NN:[75..79] gene))
+        (NN:[80..88] promoter)))
+    (PP-LOC (IN:[89..91] in)
+      (NP (VBN:[92..106] differentiated) (NNS:[107..118] neuroblasts)))
+    (.:[118..119] .)))
+
+;section 2 Span:123..145
+;Ferrandis E, Benard J.
+(SEC
+  (FRAG (NNP:[123..132] Ferrandis) (NNP:[133..134] E) (,:[134..135] ,)
+        (NNP:[136..142] Benard) (NNP:[143..145] J.)))
+
+;section 3 Span:149..244
+;Laboratory of Clinical and Molecular Pharmacology, Institut Gustave Roussy, 
+;Villejuif, France.
+(SEC
+  (FRAG (NNP:[149..159] Laboratory) (IN:[160..162] of) (NNP:[163..171] Clinical)
+        (CC:[172..175] and) (NNP:[176..185] Molecular)
+        (NNP:[186..198] Pharmacology) (,:[198..199] ,) (NNP:[200..208] Institut)
+        (NNP:[209..216] Gustave) (NNP:[217..223] Roussy) (,:[223..224] ,)
+        (NNP:[226..235] Villejuif) (,:[235..236] ,) (NNP:[237..243] France)
+        (.:[243..244] .)))
+
+;sentence 4 Span:248..448
+;When treated in vitro with retinoic acid, many neuroblastoma cell lines
+;undergo  neuronal differentiation and show a significant increase in human
+;multi-drug  resistance gene (MDRI) transcript levels.
+;[295..308]:malignancy-type:"neuroblastoma"
+;[395..422]:gene-rna:"multi-drug  resistance gene"
+;[424..428]:gene-rna:"MDRI"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-1 (WRB:[248..252] When))
+      (S
+        (NP-SBJ-2 (-NONE-:[252..252] *))
+        (VP (VBN:[253..260] treated)
+          (NP-2 (-NONE-:[260..260] *))
+          (ADVP (FW:[261..263] in) (FW:[264..269] vitro))
+          (PP-MNR (IN:[270..274] with)
+            (NP (JJ:[275..283] retinoic) (NN:[284..288] acid)))
+          (ADVP-TMP-1 (-NONE-:[288..288] *T*)))))
+    (,:[288..289] ,)
+    (NP-SBJ (JJ:[290..294] many) (NN:[295..308] neuroblastoma)
+            (NN:[309..313] cell) (NNS:[314..319] lines))
+    (VP
+      (VP (VBP:[320..327] undergo)
+        (NP (JJ:[329..337] neuronal) (NN:[338..353] differentiation)))
+      (CC:[354..357] and)
+      (VP (VBP:[358..362] show)
+        (NP
+          (NP (DT:[363..364] a) (JJ:[365..376] significant)
+              (NN:[377..385] increase))
+          (PP (IN:[386..388] in)
+            (NP (JJ:[389..394] human)
+              (NML
+                (NML
+                  (NML
+                    (NML (AFX:[395..400] multi) (HYPH:[400..401] -)
+                         (NN:[401..405] drug))
+                    (NN:[407..417] resistance))
+                  (NN:[418..422] gene))
+                (NML (-LRB-:[423..424] -LRB-) (NN:[424..428] MDRI)
+                     (-RRB-:[428..429] -RRB-)))
+              (NN:[430..440] transcript) (NNS:[441..447] levels))))))
+    (.:[447..448] .)))
+
+;sentence 5 Span:449..762
+;To determine whether over-expression  of the gene may result from activation
+;of its promoter by differentiating  agents, the activity of the human MDRI
+;proximal promoter (MDRI pp) transfected  to 2 neuroblastoma lines treated
+;with retinoic acid and forskolin was first  measured using transient
+;expression assays.
+;[596..600]:gene-rna:"MDRI"
+;[620..624]:gene-rna:"MDRI"
+;[647..660]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[449..449] *))
+      (VP (TO:[449..451] To)
+        (VP (VB:[452..461] determine)
+          (SBAR (IN:[462..469] whether)
+            (S
+              (NP-SBJ
+                (NP (AFX:[470..474] over) (HYPH:[474..475] -)
+                    (NN:[475..485] expression))
+                (PP (IN:[487..489] of)
+                  (NP (DT:[490..493] the) (NN:[494..498] gene))))
+              (VP (MD:[499..502] may)
+                (VP (VB:[503..509] result)
+                  (PP-CLR (IN:[510..514] from)
+                    (NP
+                      (NP (NN:[515..525] activation))
+                      (PP (IN:[526..528] of)
+                        (NP (PRP$:[529..532] its) (NN:[533..541] promoter)))
+                      (PP (IN:[542..544] by)
+                        (NP (VBG:[545..560] differentiating)
+                            (NNS:[562..568] agents))))))))))))
+    (,:[568..569] ,)
+    (NP-SBJ-1
+      (NP (DT:[570..573] the) (NN:[574..582] activity))
+      (PP (IN:[583..585] of)
+        (NP
+          (NP (DT:[586..589] the) (JJ:[590..595] human)
+            (NML
+              (NML (NN:[596..600] MDRI) (JJ:[601..609] proximal)
+                   (NN:[610..618] promoter))
+              (NML (-LRB-:[619..620] -LRB-) (NN:[620..624] MDRI)
+                   (NN:[625..627] pp) (-RRB-:[627..628] -RRB-))))
+          (VP (VBN:[629..640] transfected)
+            (NP (-NONE-:[640..640] *))
+            (PP (TO:[642..644] to)
+              (NP
+                (NP (CD:[645..646] 2) (NN:[647..660] neuroblastoma)
+                    (NNS:[661..666] lines))
+                (VP (VBN:[667..674] treated)
+                  (NP (-NONE-:[674..674] *))
+                  (PP (IN:[675..679] with)
+                    (NP
+                      (NP (JJ:[680..688] retinoic) (NN:[689..693] acid))
+                      (CC:[694..697] and)
+                      (NP (NN:[698..707] forskolin)))))))))))
+    (VP (VBD:[708..711] was)
+      (VP
+        (ADVP (RB:[712..717] first))
+        (VBN:[719..727] measured)
+        (NP-1 (-NONE-:[727..727] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[727..727] *))
+          (VP (VBG:[728..733] using)
+            (NP (NN:[734..743] transient) (NN:[744..754] expression)
+                (NNS:[755..761] assays))))))
+    (.:[761..762] .)))
+
+;sentence 6 Span:763..850
+;The MDRI gene transcript levels of  these 2 lines were then measured by
+;Northern blots.
+;[767..771]:gene-rna:"MDRI"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[763..766] The)
+        (NML (NN:[767..771] MDRI) (NN:[772..776] gene))
+        (NN:[777..787] transcript) (NNS:[788..794] levels))
+      (PP (IN:[795..797] of)
+        (NP (DT:[799..804] these) (CD:[805..806] 2) (NNS:[807..812] lines))))
+    (VP (VBD:[813..817] were)
+      (ADVP (RB:[818..822] then))
+      (VP (VBN:[823..831] measured)
+        (NP-1 (-NONE-:[831..831] *))
+        (PP-MNR (IN:[832..834] by)
+          (NP (JJ:[835..843] Northern) (NNS:[844..849] blots)))))
+    (.:[849..850] .)))
+
+;sentence 7 Span:851..1118
+;The results indicate that  retinoic acid and forskolin were able to activate
+;the human MDRI pp in a  dose-dependent manner after transfection of the MDRI
+;pp-CAT constructs in the 2  cell models tested, i.e., SK-N-SH and IGR-N-91, a
+;new human neuroblastoma cell  line.
+;[938..945]:gene-rna:"MDRI pp"
+;[1000..1007]:gene-rna:"MDRI pp"
+;[1008..1011]:gene-rna:"CAT"
+;[1093..1106]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[851..854] The) (NNS:[855..862] results))
+    (VP (VBP:[863..871] indicate)
+      (SBAR (IN:[872..876] that)
+        (S
+          (NP-SBJ-1
+            (NP (JJ:[878..886] retinoic) (NN:[887..891] acid))
+            (CC:[892..895] and)
+            (NP (NN:[896..905] forskolin)))
+          (VP (VBD:[906..910] were)
+            (ADJP-PRD (JJ:[911..915] able)
+              (S
+                (NP-SBJ-1 (-NONE-:[915..915] *))
+                (VP (TO:[916..918] to)
+                  (VP (VB:[919..927] activate)
+                    (NP (DT:[928..931] the) (JJ:[932..937] human)
+                       (NN:[938..942] MDRI) (NN:[943..945] pp))
+                    (PP (IN:[946..948] in)
+                      (NP (DT:[949..950] a)
+                        (ADJP (NN:[952..956] dose) (HYPH:[956..957] -)
+                              (JJ:[957..966] dependent))
+                        (NN:[967..973] manner)))
+                    (PP-TMP (IN:[974..979] after)
+                      (NP
+                        (NP (NN:[980..992] transfection))
+                        (PP (IN:[993..995] of)
+                          (NP
+                            (NP (DT:[996..999] the)
+                              (NML
+                                (NML (NN:[1000..1004] MDRI) (NN:[1005..1007] pp))
+                                (HYPH:[1007..1008] -)
+                                (NML (NN:[1008..1011] CAT)))
+                              (NNS:[1012..1022] constructs))
+                            (PP (IN:[1023..1025] in)
+                              (NP
+                                (NP
+                                  (NP (DT:[1026..1029] the) (CD:[1030..1031] 2)
+                                      (NN:[1033..1037] cell)
+                                      (NNS:[1038..1044] models))
+                                  (VP (VBN:[1045..1051] tested)
+                                    (NP (-NONE-:[1051..1051] *))))
+                                (,:[1051..1052] ,)
+                                (NP
+                                  (ADVP (FW:[1053..1057] i.e.))
+                                  (,:[1057..1058] ,)
+                                  (NP (NN:[1059..1066] SK-N-SH))
+                                  (CC:[1067..1070] and)
+                                  (NP
+                                    (NP (NN:[1071..1079] IGR-N-91))
+                                    (,:[1079..1080] ,)
+                                    (NP (DT:[1081..1082] a)
+                                        (JJ:[1083..1086] new)
+                                        (JJ:[1087..1092] human)
+                                        (NN:[1093..1106] neuroblastoma)
+                                        (NN:[1107..1111] cell)
+                                        (NN:[1113..1117] line))))))))))))))))))
+    (.:[1117..1118] .)))
+
+;sentence 8 Span:1119..1276
+;A significant increase in MDRI gene transcript levels was observed upon 
+;treatment with differentiation inducers in SK-N-SH but not in IGR-N-91 
+;neuroblasts.
+;[1145..1149]:gene-rna:"MDRI"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1119..1120] A) (JJ:[1121..1132] significant)
+          (NN:[1133..1141] increase))
+      (PP (IN:[1142..1144] in)
+        (NP
+          (NML (NN:[1145..1149] MDRI) (NN:[1150..1154] gene))
+          (NN:[1155..1165] transcript) (NNS:[1166..1172] levels))))
+    (VP (VBD:[1173..1176] was)
+      (VP
+        (VP (VBN:[1177..1185] observed)
+          (NP-1 (-NONE-:[1185..1185] *))
+          (PP (IN:[1186..1190] upon)
+            (NP
+              (NP (NN:[1192..1201] treatment))
+              (PP (IN:[1202..1206] with)
+                (NP (NN:[1207..1222] differentiation)
+                    (NNS:[1223..1231] inducers)))))
+          (PP=2 (IN:[1232..1234] in)
+            (NP (NN:[1235..1242] SK-N-SH)
+              (NML-3 (-NONE-:[1242..1242] *P*)))))
+        (CC:[1243..1246] but)
+        (VP (RB:[1247..1250] not)
+          (PP=2 (IN:[1251..1253] in)
+            (NP (NN:[1254..1262] IGR-N-91)
+              (NML-3 (NNS:[1264..1275] neuroblasts)))))))
+    (.:[1275..1276] .)))
+
+;sentence 9 Span:1277..1482
+;These results suggest that the induction of the MDRI gene promoter  is
+;necessary but not sufficient to lead to an increase in MDRI gene transcript 
+;levels, according to the neuroblast cell line considered.
+;[1325..1329]:gene-rna:"MDRI"
+;[1403..1407]:gene-rna:"MDRI"
+(SENT
+  (S
+    (NP-SBJ (DT:[1277..1282] These) (NNS:[1283..1290] results))
+    (VP (VBP:[1291..1298] suggest)
+      (SBAR (IN:[1299..1303] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1304..1307] the) (NN:[1308..1317] induction))
+            (PP (IN:[1318..1320] of)
+              (NP (DT:[1321..1324] the)
+                (NML (NN:[1325..1329] MDRI) (NN:[1330..1334] gene))
+                (NN:[1335..1343] promoter))))
+          (VP (VBZ:[1345..1347] is)
+            (ADJP-PRD
+              (ADJP (JJ:[1348..1357] necessary)
+                (S-1 (-NONE-:[1357..1357] *RNR*)))
+              (CONJP (CC:[1358..1361] but) (RB:[1362..1365] not))
+              (ADJP (JJ:[1366..1376] sufficient)
+                (S-1 (-NONE-:[1376..1376] *RNR*)))
+              (S-1
+                (NP-SBJ (-NONE-:[1376..1376] *))
+                (VP (TO:[1377..1379] to)
+                  (VP (VB:[1380..1384] lead)
+                    (PP (TO:[1385..1387] to)
+                      (NP
+                        (NP (DT:[1388..1390] an) (NN:[1391..1399] increase))
+                        (PP (IN:[1400..1402] in)
+                          (NP
+                            (NML (NN:[1403..1407] MDRI) (NN:[1408..1412] gene))
+                            (NN:[1413..1423] transcript)
+                             (NNS:[1425..1431] levels)))))))))
+            (,:[1431..1432] ,)
+            (PP (VBG:[1433..1442] according)
+              (PP (TO:[1443..1445] to)
+                (NP
+                  (NP (DT:[1446..1449] the) (NN:[1450..1460] neuroblast)
+                      (NN:[1461..1465] cell) (NN:[1466..1470] line))
+                  (VP (VBN:[1471..1481] considered)
+                    (NP (-NONE-:[1481..1481] *))))))))))
+    (.:[1481..1482] .)))
+
+;section 10 Span:1486..1530
+;PMID: 8101511 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1486..1490] PMID) (::[1490..1491] :) (CD:[1492..1499] 8101511)
+        (NN:[1500..1501] -LSB-) (NNP:[1501..1507] PubMed) (::[1508..1509] -)
+        (NN:[1510..1517] indexed) (IN:[1518..1521] for)
+        (NNP:[1522..1530] MEDLINE-RSB-)))

@@ -1,0 +1,393 @@
+;PMID: 2788364
+;source_file_1005.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..147] = [t:41..147]
+;2)section:[e:151..213] = [t:151..213]
+;3)section:[e:217..315] = [t:217..315]
+;4)sentence:[e:319..454] = [t:319..454]
+;5)sentence:[e:455..617] = [t:455..617]
+;6)sentence:[e:618..795] = [t:618..795]
+;7)sentence:[e:796..984] = [t:796..984]
+;8)sentence:[e:985..1112] = [t:985..1112]
+;9)sentence:[e:1113..1316] = [t:1113..1316]
+;10)sentence:[e:1317..1364] = [t:1317..1364]
+;11)sentence:[e:1365..1507] = [t:1365..1507]
+;12)sentence:[e:1508..1649] = [t:1508..1649]
+;13)section:[e:1653..1697] = [t:1653..1697]
+
+;section 0 Span:0..35
+;Am J Med Sci. 1989 Aug;298(2):83-8.
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..8] Med) (NNP:[9..12] Sci)
+        (.:[12..13] .) (CD:[14..18] 1989) (CC:[19..27] Aug;298-LRB-)
+        (CD:[27..28] 2) (-RRB-:[28..29] -RRB-) (CD:[29..32] :83) (::[32..33] -)
+        (CD:[33..35] 8.)))
+
+;sentence 1 Span:41..147
+;19-Hydroxylase inhibition of adrenal mitochondrial P450 11 
+;beta/18/19-hydroxylase by a suicide inhibitor.
+;[41..55]:substance:"19-Hydroxylase"
+;[92..105]...[111..123]:substance:"P450 11  beta"..."-hydroxylase"
+;[92..96]...[106..108]...[111..123]:substance:"P450"..."18"..."-hydroxylase"
+;[92..96]...[109..123]:substance:"P450"..."19-hydroxylase"
+;[137..146]:substance:"inhibitor"
+(SENT
+  (NP-HLN
+    (NP (NN:[41..55] 19-Hydroxylase) (NN:[56..66] inhibition))
+    (PP (IN:[67..69] of)
+      (NP (JJ:[70..77] adrenal) (JJ:[78..91] mitochondrial) (NN:[92..96] P450)
+        (NML
+          (NML (CD:[97..99] 11) (SYM:[101..105] beta))
+          (SYM:[105..106] /)
+          (NML (CD:[106..108] 18))
+          (SYM:[108..109] /)
+          (NML (CD:[109..111] 19)))
+        (HYPH:[111..112] -) (NN:[112..123] hydroxylase)))
+    (PP (IN:[124..126] by)
+      (NP (DT:[127..128] a) (NN:[129..136] suicide) (NN:[137..146] inhibitor)))
+    (.:[146..147] .)))
+
+;section 2 Span:151..213
+;Griffing GT, Holbrook M, Melby JC, Alberta J, Orme-Johnson NR.
+(SEC
+  (FRAG (NNP:[151..159] Griffing) (NNP:[160..162] GT) (,:[162..163] ,)
+        (NNP:[164..172] Holbrook) (NNP:[173..175] M,) (NNP:[176..181] Melby)
+        (NNP:[182..184] JC) (,:[184..185] ,) (NNP:[186..193] Alberta)
+        (NNP:[194..196] J,) (NNP:[197..201] Orme) (::[201..202] -)
+        (NNP:[202..209] Johnson) (NNP:[210..212] NR) (.:[212..213] .)))
+
+;section 3 Span:217..315
+;Evans Memorial Department of Clinical Research, University Hospital, Boston, 
+;Massachusetts 02118.
+(SEC
+  (FRAG (NNP:[217..222] Evans) (NNP:[223..231] Memorial)
+        (NNP:[232..242] Department) (IN:[243..245] of) (NNP:[246..254] Clinical)
+        (NNP:[255..263] Research) (NNP:[263..264] ,) (NNP:[265..275] University)
+        (NNP:[276..284] Hospital) (,:[284..285] ,) (NNP:[286..292] Boston)
+        (,:[292..293] ,) (NNP:[295..308] Massachusetts) (VBD:[309..314] 02118)
+        (.:[314..315] .)))
+
+;sentence 4 Span:319..454
+;19-Nor-deoxycorticosterone (19-nor-DOC) is a mineralocorticoid that is
+;increased  in some forms of experimental and human hypertension.
+;[319..345]:substance:"19-Nor-deoxycorticosterone"
+;[347..357]:substance:"19-nor-DOC"
+;[364..381]:substance:"mineralocorticoid"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[319..345] 19-Nor-deoxycorticosterone))
+      (NP (-LRB-:[346..347] -LRB-) (NN:[347..357] 19-nor-DOC)
+          (-RRB-:[357..358] -RRB-)))
+    (VP (VBZ:[359..361] is)
+      (NP-PRD
+        (NP (DT:[362..363] a) (NN:[364..381] mineralocorticoid))
+        (SBAR
+          (WHNP-2 (WDT:[382..386] that))
+          (S
+            (NP-SBJ-2 (-NONE-:[386..386] *T*))
+            (VP (VBZ:[387..389] is)
+              (VP (VBN:[390..399] increased)
+                (NP-2 (-NONE-:[399..399] *))
+                (PP (IN:[401..403] in)
+                  (NP
+                    (NP (DT:[404..408] some) (NNS:[409..414] forms))
+                    (PP (IN:[415..417] of)
+                      (NP
+                        (NP (JJ:[418..430] experimental)
+                          (NML-1 (-NONE-:[430..430] *P*)))
+                        (CC:[431..434] and)
+                        (NP (JJ:[435..440] human)
+                          (NML-1 (NN:[441..453] hypertension)))))))))))))
+    (.:[453..454] .)))
+
+;sentence 5 Span:455..617
+;The pivotal step in  19-nor-DOC biosynthesis is adrenal P450 19-hydroxylase,
+;but this enzyme has not  been clearly distinguished from P450 11
+;beta/18-hydroxylase.
+;[476..486]:substance:"19-nor-DOC"
+;[511..530]:substance:"P450 19-hydroxylase"
+;[541..547]:substance:"enzyme"
+;[589..601]...[604..616]:substance:"P450 11 beta"..."-hydroxylase"
+;[589..593]...[602..616]:substance:"P450"..."18-hydroxylase"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[455..458] The) (JJ:[459..466] pivotal) (NN:[467..471] step))
+        (PP (IN:[472..474] in)
+          (NP (NN:[476..486] 19-nor-DOC) (NN:[487..499] biosynthesis))))
+      (VP (VBZ:[500..502] is)
+        (NP-PRD (JJ:[503..510] adrenal)
+           (NN:[511..515] P450) (NN:[516..530] 19-hydroxylase))))
+    (,:[530..531] ,) (CC:[532..535] but)
+    (S
+      (NP-SBJ-1 (DT:[536..540] this) (NN:[541..547] enzyme))
+      (VP (VBZ:[548..551] has) (RB:[552..555] not)
+        (VP (VBN:[557..561] been)
+          (ADVP (RB:[562..569] clearly))
+          (VP (VBN:[570..583] distinguished)
+            (NP-1 (-NONE-:[583..583] *))
+            (PP (IN:[584..588] from)
+              (NP (NN:[589..593] P450)
+                (NML
+                  (NML (CD:[594..596] 11) (SYM:[597..601] beta))
+                  (SYM:[601..602] /)
+                  (NML (CD:[602..604] 18)))
+                (HYPH:[604..605] -) (NN:[605..616] hydroxylase)))))))
+    (.:[616..617] .)))
+
+;sentence 6 Span:618..795
+;This study  attempted to specifically inhibit adrenal 19-hydroxylation of 
+;deoxycorticosterone (DOC) using a suicide aromatase inhibitor, 19-acetylenic 
+;androstenedione (19-AA).
+;[693..712]:substance:"deoxycorticosterone"
+;[714..717]:substance:"DOC"
+;[735..744]:substance:"aromatase"
+;[745..754]:substance:"inhibitor"
+;[756..786]:substance:"19-acetylenic  androstenedione"
+;[788..793]:substance:"19-AA"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[618..622] This) (NN:[623..628] study))
+    (VP (VBD:[630..639] attempted)
+      (S
+        (NP-SBJ-1 (-NONE-:[639..639] *))
+        (VP (TO:[640..642] to)
+          (ADVP (RB:[643..655] specifically))
+          (VP (VB:[656..663] inhibit)
+            (NP
+              (NP (JJ:[664..671] adrenal) (NN:[672..688] 19-hydroxylation))
+              (PP (NN:[689..691] of)
+                (NP
+                  (NP (NN:[693..712] deoxycorticosterone))
+                  (NP (-LRB-:[713..714] -LRB-) (NN:[714..717] DOC)
+                      (-RRB-:[717..718] -RRB-)))))
+            (S-MNR
+              (NP-SBJ (-NONE-:[718..718] *))
+              (VP (VBG:[719..724] using)
+                (NP
+                  (NP (DT:[725..726] a) (NN:[727..734] suicide)
+                      (NN:[735..744] aromatase) (NN:[745..754] inhibitor))
+                  (,:[754..755] ,)
+                  (NP
+                    (NP (JJ:[756..769] 19-acetylenic)
+                        (NN:[771..786] androstenedione))
+                    (NP (-LRB-:[787..788] -LRB-) (NN:[788..793] 19-AA)
+                        (-RRB-:[793..794] -RRB-))))))))))
+    (.:[794..795] .)))
+
+;sentence 7 Span:796..984
+;Purified bovine P450 11 beta/18/19-hydroxylase was  incubated with excess
+;substrate DOC, adrenodoxin, and adrenodoxin reductase in  the presence of
+;increasing doses of the inhibitor, 19AA.
+;[812..824]...[830..842]:substance:"P450 11 beta"..."-hydroxylase"
+;[812..816]...[828..842]:substance:"P450"..."19-hydroxylase"
+;[812..816]...[825..827]...[830..842]:substance:"P450"..."18"..."-hydroxylase"
+;[870..879]:substance:"substrate"
+;[880..883]:substance:"DOC"
+;[885..896]:substance:"adrenodoxin"
+;[902..923]:substance:"adrenodoxin reductase"
+;[968..977]:substance:"inhibitor"
+;[979..983]:substance:"19AA"
+(SENT
+  (S
+    (NP-SBJ-1 (VBN:[796..804] Purified) (JJ:[805..811] bovine)
+              (NN:[812..816] P450)
+      (NML
+        (NML (CD:[817..819] 11) (SYM:[820..824] beta))
+        (SYM:[824..825] /)
+        (NML (CD:[825..827] 18))
+        (SYM:[827..828] /)
+        (NML (CD:[828..830] 19)))
+      (HYPH:[830..831] -) (NN:[831..842] hydroxylase))
+    (VP (VBD:[843..846] was)
+      (VP (VBN:[848..857] incubated)
+        (NP-1 (-NONE-:[857..857] *))
+        (PP-MNR (IN:[858..862] with)
+          (NP
+            (NP (NN:[863..869] excess) (NN:[870..879] substrate)
+                (NN:[880..883] DOC))
+            (,:[883..884] ,)
+            (NP (NN:[885..896] adrenodoxin))
+            (,:[896..897] ,) (CC:[898..901] and)
+            (NP (NN:[902..913] adrenodoxin) (NN:[914..923] reductase))))
+        (PP (IN:[924..926] in)
+          (NP
+            (NP (DT:[928..931] the) (NN:[932..940] presence))
+            (PP (IN:[941..943] of)
+              (NP
+                (NP (VBG:[944..954] increasing) (NN:[955..960] doses))
+                (PP (IN:[961..963] of)
+                  (NP
+                    (NP (DT:[964..967] the) (NN:[968..977] inhibitor))
+                    (,:[977..978] ,)
+                    (NP (NN:[979..983] 19AA))))))))))
+    (.:[983..984] .)))
+
+;sentence 8 Span:985..1112
+;11 beta-, 18-, and  19-hydroxylation were measured by quantification of
+;corticosterone, 18-OH-DOC,  and 19-OH-DOC respectively.
+;[1057..1071]:substance:"corticosterone"
+;[1073..1082]:substance:"18-OH-DOC"
+;[1089..1098]:substance:"19-OH-DOC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML (CD:[985..987] 11) (SYM:[988..992] beta))
+        (HYPH:[992..993] -)
+        (NML-2 (-NONE-:[993..993] *P*)))
+      (,:[993..994] ,)
+      (NP (CD:[995..997] 18) (HYPH:[997..998] -)
+        (NML-2 (-NONE-:[998..998] *P*)))
+      (,:[998..999] ,) (CC:[1000..1003] and)
+      (NP (CD:[1005..1007] 19) (HYPH:[1007..1008] -)
+        (NML-2 (NN:[1008..1021] hydroxylation))))
+    (VP (VBD:[1022..1026] were)
+      (VP (VBN:[1027..1035] measured)
+        (NP-1 (-NONE-:[1035..1035] *))
+        (PP-MNR (IN:[1036..1038] by)
+          (NP
+            (NP (NN:[1039..1053] quantification))
+            (PP (IN:[1054..1056] of)
+              (NP (NN:[1057..1071] corticosterone) (,:[1071..1072] ,)
+                  (NN:[1073..1082] 18-OH-DOC) (,:[1082..1083] ,)
+                  (CC:[1085..1088] and) (NN:[1089..1098] 19-OH-DOC)))))
+        (ADVP (RB:[1099..1111] respectively))))
+    (.:[1111..1112] .)))
+
+;sentence 9 Span:1113..1316
+;Measurements of these products demonstrated that 11  beta- and
+;18-hydroxylation was not inhibited whereas 19-hydroxylation was  inhibited as
+;manifested by decreased 19-OH-DOC formation (p less than .05).
+;[1278..1287]:substance:"19-OH-DOC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1113..1125] Measurements))
+      (PP (IN:[1126..1128] of)
+        (NP (DT:[1129..1134] these) (NNS:[1135..1143] products))))
+    (VP (VBD:[1144..1156] demonstrated)
+      (SBAR (IN:[1157..1161] that)
+        (S
+          (NP-SBJ-3
+            (NP
+              (NML (CD:[1162..1164] 11) (SYM:[1166..1170] beta))
+              (HYPH:[1170..1171] -)
+              (NML-2 (-NONE-:[1171..1171] *P*)))
+            (CC:[1172..1175] and)
+            (NP (CD:[1176..1178] 18) (HYPH:[1178..1179] -)
+              (NML-2 (NN:[1179..1192] hydroxylation))))
+          (VP (VBD:[1193..1196] was) (RB:[1197..1200] not)
+            (VP (VBN:[1201..1210] inhibited)
+              (NP-3 (-NONE-:[1210..1210] *))
+              (SBAR-ADV (IN:[1211..1218] whereas)
+                (S
+                  (NP-SBJ-1 (NN:[1219..1235] 19-hydroxylation))
+                  (VP (VBD:[1236..1239] was)
+                    (VP (VBN:[1241..1250] inhibited)
+                      (NP-1 (-NONE-:[1250..1250] *))
+                      (SBAR-ADV (IN:[1251..1253] as)
+                        (S
+                          (NP-SBJ (-NONE-:[1253..1253] *))
+                          (VP (VBN:[1254..1264] manifested)
+                            (PP (IN:[1265..1267] by)
+                              (NP-LGS (VBN:[1268..1277] decreased)
+                                      (NN:[1278..1287] 19-OH-DOC)
+                                      (NN:[1288..1297] formation))))))))))
+              (PRN (-LRB-:[1298..1299] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1299..1300] p))
+                  (ADJP-PRD
+                    (ADJP (JJR:[1301..1305] less))
+                    (PP (IN:[1306..1310] than)
+                      (NP (CD:[1311..1314] .05)))))
+                (-RRB-:[1314..1315] -RRB-)))))))
+    (.:[1315..1316] .)))
+
+;sentence 10 Span:1317..1364
+;The  IC50 of 19-AA was approximately 10(-12) M.
+;[1322..1326]:quantitative-name:"IC50"
+;[1330..1335]:substance:"19-AA"
+;[1354..1361]:quantitative-value:"10(-12)"
+;[1362..1363]:quantitative-units:"M"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1317..1320] The) (NN:[1322..1326] IC50))
+      (PP (IN:[1327..1329] of)
+        (NP (NN:[1330..1335] 19-AA))))
+    (VP (VBD:[1336..1339] was)
+      (NP-PRD
+        (QP (RB:[1340..1353] approximately) (CD:[1354..1361] 10-LRB--12-RRB-))
+        (NN:[1362..1363] M)))
+    (.:[1363..1364] .)))
+
+;sentence 11 Span:1365..1507
+;The specific inhibition of  19-hydroxylation suggests that the 19-hydroxylase
+;may be an enzyme distinct from  the P450 11 beta/18-hydroxylase.
+;[1428..1442]:substance:"19-hydroxylase"
+;[1453..1459]:substance:"enzyme"
+;[1479..1491]...[1494..1506]:substance:"P450 11 beta"..."-hydroxylase"
+;[1479..1483]...[1492..1506]:substance:"P450"..."18-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1365..1368] The) (JJ:[1369..1377] specific)
+          (NN:[1378..1388] inhibition))
+      (PP (IN:[1389..1391] of)
+        (NP (NN:[1393..1409] 19-hydroxylation))))
+    (VP (VBZ:[1410..1418] suggests)
+      (SBAR (IN:[1419..1423] that)
+        (S
+          (NP-SBJ (DT:[1424..1427] the) (NN:[1428..1442] 19-hydroxylase))
+          (VP (MD:[1443..1446] may)
+            (VP (VB:[1447..1449] be)
+              (NP-PRD
+                (NP (DT:[1450..1452] an) (NN:[1453..1459] enzyme))
+                (ADJP (JJ:[1460..1468] distinct)
+                  (PP (IN:[1469..1473] from)
+                    (NP (DT:[1475..1478] the) (NN:[1479..1483] P450)
+                      (NML
+                        (NML (CD:[1484..1486] 11) (SYM:[1487..1491] beta))
+                        (SYM:[1491..1492] /)
+                        (NML (CD:[1492..1494] 18)))
+                      (HYPH:[1494..1495] -) (NN:[1495..1506] hydroxylase))))))))))
+    (.:[1506..1507] .)))
+
+;sentence 12 Span:1508..1649
+;This further suggests that 19-nor-DOC  biosynthesis may be under independent
+;regulation and may be amendable to  specific in vivo inhibition.
+;[1535..1545]:substance:"19-nor-DOC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1508..1512] This) (RBR:[1513..1520] further))
+    (VP (VBZ:[1521..1529] suggests)
+      (SBAR (IN:[1530..1534] that)
+        (S
+          (NP-SBJ (NN:[1535..1545] 19-nor-DOC) (NN:[1547..1559] biosynthesis))
+          (VP (MD:[1560..1563] may)
+            (VP (VB:[1564..1566] be)
+              (PP-PRD (IN:[1567..1572] under)
+                (NP (JJ:[1573..1584] independent) (NN:[1585..1595] regulation))))
+            (CC:[1596..1599] and)
+            (VP (MD:[1600..1603] may)
+              (VP (VB:[1604..1606] be)
+                (ADJP-PRD (JJ:[1607..1616] amendable)
+                  (PP (TO:[1617..1619] to)
+                    (NP (JJ:[1621..1629] specific)
+                      (ADJP (FW:[1630..1632] in) (FW:[1633..1637] vivo))
+                      (NN:[1638..1648] inhibition))))))))))
+    (.:[1648..1649] .)))
+
+;section 13 Span:1653..1697
+;PMID: 2788364 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1653..1657] PMID) (::[1657..1658] :) (CD:[1659..1666] 2788364)
+        (NN:[1667..1668] -LSB-) (NNP:[1668..1674] PubMed) (::[1675..1676] -)
+        (NN:[1677..1684] indexed) (IN:[1685..1688] for)
+        (NNP:[1689..1697] MEDLINE-RSB-)))

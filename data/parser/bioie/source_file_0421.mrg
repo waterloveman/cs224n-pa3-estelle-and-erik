@@ -1,0 +1,366 @@
+;PMID: 12234619
+;source_file_1864.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..134] = [t:49..134]
+;2)section:[e:138..183] = [t:138..183]
+;3)section:[e:187..340] = [t:187..340]
+;4)sentence:[e:344..516] = [t:344..516]
+;5)sentence:[e:517..851] = [t:517..851]
+;6)sentence:[e:852..1157] = [t:852..1157]
+;7)sentence:[e:1158..1342] = [t:1158..1342]
+;8)sentence:[e:1343..1485] = [t:1343..1485]
+;9)section:[e:1489..1534] = [t:1489..1534]
+
+;section 0 Span:0..43
+;Biochem Pharmacol. 2002 Oct 1;64(7):1151-6.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        ('':[19..23] 2002) (NNP:[24..27] Oct) (CD:[28..32] 1;64)
+        (-LRB-:[32..33] -LRB-) (CD:[33..34] 7) (-RRB-:[34..35] -RRB-)
+        (::[35..36] :) (CD:[36..40] 1151) (CD:[40..43] -6.)))
+
+;sentence 1 Span:49..134
+;Inhibition of cytochrome P450 2E1 by propofol in human and porcine liver 
+;microsomes.
+;[63..82]:cyp450:"cytochrome P450 2E1"
+;[86..94]:substance:"propofol"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..59] Inhibition))
+    (PP (IN:[60..62] of)
+      (NP
+        (NML (NN:[63..73] cytochrome) (NN:[74..78] P450))
+        (NN:[79..82] 2E1)))
+    (PP (IN:[83..85] by)
+      (NP (NN:[86..94] propofol)))
+    (PP-LOC (IN:[95..97] in)
+      (NP
+        (NP (JJ:[98..103] human)
+          (NML-1 (-NONE-:[103..103] *P*)))
+        (CC:[104..107] and)
+        (NP (JJ:[108..115] porcine)
+          (NML-1 (NN:[116..121] liver) (NNS:[123..133] microsomes)))))
+    (.:[133..134] .)))
+
+;section 2 Span:138..183
+;Lejus C, Fautrel A, Malledant Y, Guillouzo A.
+(SEC
+  (FRAG (NNP:[138..143] Lejus) (NNP:[144..145] C) (,:[145..146] ,)
+        (NNP:[147..154] Fautrel) (NNP:[155..156] A) (,:[156..157] ,)
+        (NNP:[158..167] Malledant) (NNP:[168..169] Y) (,:[169..170] ,)
+        (NNP:[171..180] Guillouzo) (NNP:[181..182] A) (.:[182..183] .)))
+
+;section 3 Span:187..340
+;INSERM U456, Faculte de Pharmacie, Universite de Rennes 1, Room 2, avenue du 
+;Prof. Leon Bernard, 35043 Rennes cedex, France. corinne.lejus@chu-nantes.fr
+(SEC
+  (FRAG (NNP:[187..193] INSERM) (NNP:[194..198] U456) (,:[198..199] ,)
+        (NNP:[200..207] Faculte) (IN:[208..210] de) (NNP:[211..220] Pharmacie)
+        (,:[220..221] ,) (NNP:[222..232] Universite) (IN:[233..235] de)
+        (NNP:[236..242] Rennes) (CD:[243..244] 1) (,:[244..245] ,)
+        (NNP:[246..250] Room) (CD:[251..252] 2) (,:[252..253] ,)
+        (JJ:[254..260] avenue) (IN:[261..263] du) (NN:[265..269] Prof)
+        (.:[269..270] .) (NNP:[271..275] Leon) (NNP:[276..283] Bernard)
+        (,:[283..284] ,) (CD:[285..290] 35043) (NNP:[291..297] Rennes)
+        (NNP:[298..303] cedex) (,:[303..304] ,) (NNP:[305..311] France)
+        (.:[311..312] .) (VBD:[313..320] corinne)
+        (NNS:[320..337] .lejus@chu-nantes) (.:[337..340] .fr)))
+
+;sentence 4 Span:344..516
+;While almost anesthetics are metabolized by the cytochrome P450 (CYP) 3A4,
+;some  major volatile ones such as halothane and sevoflurane are metabolized
+;by CYP2E1  in humans.
+;[357..368]:substance:"anesthetics"
+;[392..417]:cyp450:"cytochrome P450 (CYP) 3A4"
+;[453..462]:substance:"halothane"
+;[467..478]:substance:"sevoflurane"
+;[498..504]:cyp450:"CYP2E1"
+(SENT
+  (S
+    (SBAR-ADV (IN:[344..349] While)
+      (S
+        (NP-SBJ-2 (JJ:[350..356] almost) (NNS:[357..368] anesthetics))
+        (VP (VBP:[369..372] are)
+          (VP (VBN:[373..384] metabolized)
+            (NP-2 (-NONE-:[384..384] *))
+            (PP (IN:[385..387] by)
+              (NP-LGS
+                (NML
+                  (NML (DT:[388..391] the) (NN:[392..402] cytochrome)
+                       (NN:[403..407] P450))
+                  (NML (-LRB-:[408..409] -LRB-) (NN:[409..412] CYP)
+                       (-RRB-:[412..413] -RRB-)))
+                (NP (NN:[414..417] 3A4))))))))
+    (,:[417..418] ,)
+    (NP-SBJ-1
+      (NP (DT:[419..423] some) (JJ:[425..430] major) (JJ:[431..439] volatile)
+          (NNS:[440..444] ones))
+      (PP (JJ:[445..449] such) (IN:[450..452] as)
+        (NP (NN:[453..462] halothane) (CC:[463..466] and)
+            (NN:[467..478] sevoflurane))))
+    (VP (VBP:[479..482] are)
+      (VP (VBN:[483..494] metabolized)
+        (NP-1 (-NONE-:[494..494] *))
+        (PP (IN:[495..497] by)
+          (NP-LGS (NN:[498..504] CYP2E1)))
+        (PP-LOC (IN:[506..508] in)
+          (NP (NNS:[509..515] humans)))))
+    (.:[515..516] .)))
+
+;sentence 5 Span:517..851
+;To determine whether 2,6-diisopropylphenol (propofol), a widely used 
+;intravenous anesthetic agent, known to inhibit CYP3A4 and CYP1A2, also
+;inhibits  CYP2E1, 6-OH hydroxylation of chlorzoxazone, a prototypical CYP2E1
+;substrate,  was estimated using two pools of human microsomes and one pool of
+;porcine  microsomes from seven livers.
+;[538..559]:substance:"2,6-diisopropylphenol"
+;[561..569]:substance:"propofol"
+;[599..615]:substance:"anesthetic agent"
+;[634..640]:cyp450:"CYP3A4"
+;[645..651]:cyp450:"CYP1A2"
+;[668..674]:cyp450:"CYP2E1"
+;[698..711]:substance:"chlorzoxazone"
+;[728..734]:cyp450:"CYP2E1"
+;[735..744]:substance:"substrate"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[517..517] *))
+      (VP (TO:[517..519] To)
+        (VP (VB:[520..529] determine)
+          (SBAR (IN:[530..537] whether)
+            (S
+              (NP-SBJ
+                (NP
+                  (NP
+                    (NP (NN:[538..559] 2,6-diisopropylphenol))
+                    (NP (-LRB-:[560..561] -LRB-) (NN:[561..569] propofol)
+                        (-RRB-:[569..570] -RRB-)))
+                  (,:[570..571] ,)
+                  (NP (DT:[572..573] a)
+                    (ADJP (RB:[574..580] widely) (VBN:[581..585] used))
+                    (JJ:[587..598] intravenous)
+                     (JJ:[599..609] anesthetic) (NN:[610..615] agent)))
+                (,:[615..616] ,)
+                (VP (VBN:[617..622] known)
+                  (S
+                    (NP-SBJ (-NONE-:[622..622] *))
+                    (VP (TO:[623..625] to)
+                      (VP (VB:[626..633] inhibit)
+                        (NP (NN:[634..640] CYP3A4) (CC:[641..644] and)
+                            (NN:[645..651] CYP1A2)))))))
+              (,:[651..652] ,)
+              (ADVP (RB:[653..657] also))
+              (VP (VBZ:[658..666] inhibits)
+                (NP (NN:[668..674] CYP2E1))))))))
+    (,:[674..675] ,)
+    (NP-SBJ-1
+      (NP (NN:[676..680] 6-OH) (NN:[681..694] hydroxylation))
+      (PP (IN:[695..697] of)
+        (NP
+          (NP (NN:[698..711] chlorzoxazone))
+          (,:[711..712] ,)
+          (NP (DT:[713..714] a) (JJ:[715..727] prototypical)
+              (NN:[728..734] CYP2E1) (NN:[735..744] substrate))))
+      (,:[744..745] ,))
+    (VP (VBD:[747..750] was)
+      (VP (VBN:[751..760] estimated)
+        (NP-1 (-NONE-:[760..760] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[760..760] *))
+          (VP (VBG:[761..766] using)
+            (NP
+              (NP
+                (NP
+                  (NP (CD:[767..770] two) (NNS:[771..776] pools))
+                  (PP (IN:[777..779] of)
+                    (NP (JJ:[780..785] human) (NNS:[786..796] microsomes))))
+                (CC:[797..800] and)
+                (NP
+                  (NP (CD:[801..804] one) (NN:[805..809] pool))
+                  (PP (IN:[810..812] of)
+                    (NP (JJ:[813..820] porcine) (NNS:[822..832] microsomes)))))
+              (PP (IN:[833..837] from)
+                (NP (CD:[838..843] seven) (NNS:[844..850] livers))))))))
+    (.:[850..851] .)))
+
+;sentence 6 Span:852..1157
+;Basal human enzyme activities were characterized  by a V(max) of 1426+/-230
+;and 288+/-29 pmol min(-1)mg(-1) protein and a K(m) of  122+/-47 and 149+/-42
+;microM, while the corresponding porcine activities were  associated with a
+;V(max) of 352+/-42 pmol min(-1)mg(-1) protein and a K(m) of  167+/-38
+;microM.
+;[864..870]:substance:"enzyme"
+;[907..913]:quantitative-name:"V(max)"
+;[917..927]:quantitative-value:"1426+/-230"
+;[932..940]:quantitative-value:"288+/-29"
+;[941..967]:quantitative-units:"pmol min(-1)mg(-1) protein"
+;[974..978]:quantitative-name:"K(m)"
+;[983..991]:quantitative-value:"122+/-47"
+;[996..1004]:quantitative-value:"149+/-42"
+;[1005..1011]:quantitative-units:"microM"
+;[1080..1086]:quantitative-name:"V(max)"
+;[1090..1098]:quantitative-value:"352+/-42"
+;[1099..1125]:quantitative-units:"pmol min(-1)mg(-1) protein"
+;[1132..1136]:quantitative-name:"K(m)"
+;[1141..1149]:quantitative-value:"167+/-38"
+;[1150..1156]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-4 (JJ:[852..857] Basal) (JJ:[858..863] human) (NN:[864..870] enzyme)
+              (NNS:[871..881] activities))
+    (VP (VBD:[882..886] were)
+      (VP (VBN:[887..900] characterized)
+        (NP-4 (-NONE-:[900..900] *))
+        (PP-MNR (IN:[902..904] by)
+          (NP
+            (NP
+              (NP (DT:[905..906] a) (NN:[907..913] V-LRB-max-RRB-))
+              (PP (IN:[914..916] of)
+                (NP
+                  (NP
+                    (NML
+                      (QP (CD:[917..921] 1426) (SYM:[921..924] +/-)
+                          (CD:[924..927] 230))
+                      (NML-3 (-NONE-:[927..927] *P*)))
+                    (NML-5 (-NONE-:[927..927] *P*)))
+                  (CC:[928..931] and)
+                  (NP
+                    (NML
+                      (QP (CD:[932..935] 288) (SYM:[935..938] +/-)
+                          (CD:[938..940] 29))
+                      (NML-3 (NN:[941..945] pmol)))
+                    (NML-5 (NN:[946..953] min-LRB--1-RRB-)
+                           (NN:[953..959] mg-LRB--1-RRB-)
+                           (NN:[960..967] protein))))))
+            (CC:[968..971] and)
+            (NP
+              (NP (DT:[972..973] a) (NN:[974..978] K-LRB-m-RRB-))
+              (PP (IN:[979..981] of)
+                (NP
+                  (NP
+                    (QP (CD:[983..986] 122) (SYM:[986..989] +/-)
+                        (CD:[989..991] 47))
+                    (NML-2 (-NONE-:[991..991] *P*)))
+                  (CC:[992..995] and)
+                  (NP
+                    (QP (CD:[996..999] 149) (SYM:[999..1002] +/-)
+                        (CD:[1002..1004] 42))
+                    (NML-2 (NN:[1005..1011] microM))))))))
+        (,:[1011..1012] ,)
+        (SBAR-ADV (IN:[1013..1018] while)
+          (S
+            (NP-SBJ-1 (DT:[1019..1022] the) (VBG:[1023..1036] corresponding)
+                      (JJ:[1037..1044] porcine) (NNS:[1045..1055] activities))
+            (VP (VBD:[1056..1060] were)
+              (VP (VBN:[1062..1072] associated)
+                (NP-1 (-NONE-:[1072..1072] *))
+                (PP-CLR (IN:[1073..1077] with)
+                  (NP
+                    (NP
+                      (NP (DT:[1078..1079] a) (NN:[1080..1086] V-LRB-max-RRB-))
+                      (PP (IN:[1087..1089] of)
+                        (NP
+                          (NML
+                            (QP (CD:[1090..1093] 352) (SYM:[1093..1096] +/-)
+                                (CD:[1096..1098] 42))
+                            (NN:[1099..1103] pmol))
+                          (NN:[1104..1111] min-LRB--1-RRB-)
+                           (NN:[1111..1117] mg-LRB--1-RRB-)
+                           (NN:[1118..1125] protein))))
+                    (CC:[1126..1129] and)
+                    (NP
+                      (NP (DT:[1130..1131] a) (NN:[1132..1136] K-LRB-m-RRB-))
+                      (PP (IN:[1137..1139] of)
+                        (NP
+                          (QP (CD:[1141..1144] 167) (SYM:[1144..1147] +/-)
+                              (CD:[1147..1149] 38))
+                          (NN:[1150..1156] microM))))))))))))
+    (.:[1156..1157] .)))
+
+;sentence 7 Span:1158..1342
+;A competitive inhibition of CYP2E1 by propofol was observed  with low
+;inhibition constants in the therapeutic range in both porcine (19  microM)
+;and human (48 microM) liver microsomes.
+;[1186..1192]:cyp450:"CYP2E1"
+;[1196..1204]:substance:"propofol"
+;[1291..1293]:quantitative-value:"19"
+;[1295..1301]:quantitative-units:"microM"
+;[1314..1316]:quantitative-value:"48"
+;[1317..1323]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1158..1159] A) (JJ:[1160..1171] competitive)
+          (NN:[1172..1182] inhibition))
+      (PP (IN:[1183..1185] of)
+        (NP (NN:[1186..1192] CYP2E1)))
+      (PP (IN:[1193..1195] by)
+        (NP (NN:[1196..1204] propofol))))
+    (VP (VBD:[1205..1208] was)
+      (VP (VBN:[1209..1217] observed)
+        (NP-2 (-NONE-:[1217..1217] *))
+        (PP (IN:[1219..1223] with)
+          (NP
+            (NP (JJ:[1224..1227] low) (NN:[1228..1238] inhibition)
+                (NNS:[1239..1248] constants))
+            (PP (IN:[1249..1251] in)
+              (NP (DT:[1252..1255] the) (JJ:[1256..1267] therapeutic)
+                  (NN:[1268..1273] range)))))
+        (PP-LOC (IN:[1274..1276] in)
+          (NP (CC:[1277..1281] both)
+            (NP (JJ:[1282..1289] porcine)
+              (PRN (-LRB-:[1290..1291] -LRB-)
+                (NP (CD:[1291..1293] 19) (NN:[1295..1301] microM))
+                (-RRB-:[1301..1302] -RRB-))
+              (NML-1 (-NONE-:[1302..1302] *P*)))
+            (CC:[1303..1306] and)
+            (NP (JJ:[1307..1312] human)
+              (PRN (-LRB-:[1313..1314] -LRB-)
+                (NP (CD:[1314..1316] 48) (NN:[1317..1323] microM))
+                (-RRB-:[1323..1324] -RRB-))
+              (NML-1 (NN:[1325..1330] liver) (NNS:[1331..1341] microsomes)))))))
+    (.:[1341..1342] .)))
+
+;sentence 8 Span:1343..1485
+;These in vitro results suggest  that propofol could have a protective effect
+;on toxic metabolite activation of  compounds catalyzed by CYP2E1.
+;[1380..1388]:substance:"propofol"
+;[1429..1439]:substance:"metabolite"
+;[1478..1484]:cyp450:"CYP2E1"
+(SENT
+  (S
+    (NP-SBJ (DT:[1343..1348] These)
+      (ADJP (FW:[1349..1351] in) (FW:[1352..1357] vitro))
+      (NNS:[1358..1365] results))
+    (VP (VBP:[1366..1373] suggest)
+      (SBAR (IN:[1375..1379] that)
+        (S
+          (NP-SBJ (NN:[1380..1388] propofol))
+          (VP (MD:[1389..1394] could)
+            (VP (VB:[1395..1399] have)
+              (NP (DT:[1400..1401] a) (JJ:[1402..1412] protective)
+                  (NN:[1413..1419] effect))
+              (PP (IN:[1420..1422] on)
+                (NP
+                  (NP (JJ:[1423..1428] toxic) (NN:[1429..1439] metabolite)
+                      (NN:[1440..1450] activation))
+                  (PP (IN:[1451..1453] of)
+                    (NP
+                      (NP (NNS:[1455..1464] compounds))
+                      (VP (VBN:[1465..1474] catalyzed)
+                        (NP (-NONE-:[1474..1474] *))
+                        (PP (IN:[1475..1477] by)
+                          (NP-LGS (NN:[1478..1484] CYP2E1)))))))))))))
+    (.:[1484..1485] .)))
+
+;section 9 Span:1489..1534
+;PMID: 12234619 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1489..1493] PMID) (::[1493..1494] :) (CD:[1495..1503] 12234619)
+        (NN:[1504..1505] -LSB-) (NNP:[1505..1511] PubMed) (::[1512..1513] -)
+        (NN:[1514..1521] indexed) (IN:[1522..1525] for)
+        (NNP:[1526..1534] MEDLINE-RSB-)))

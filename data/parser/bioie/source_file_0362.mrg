@@ -1,0 +1,581 @@
+;PMID: 10820437
+;source_file_1910.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..156] = [t:46..156]
+;2)section:[e:160..215] = [t:160..215]
+;3)section:[e:219..295] = [t:219..295]
+;4)sentence:[e:299..377] = [t:299..377]
+;5)sentence:[e:379..596] = [t:379..596]
+;6)sentence:[e:597..765] = [t:597..765]
+;7)sentence:[e:767..1069] = [t:767..1069]
+;8)sentence:[e:1070..1221] = [t:1070..1221]
+;9)sentence:[e:1222..1453] = [t:1222..1453]
+;10)sentence:[e:1454..1653] = [t:1454..1653]
+;11)sentence:[e:1654..1756] = [t:1654..1756]
+;12)sentence:[e:1757..1901] = [t:1757..1901]
+;13)sentence:[e:1902..2137] = [t:1902..2137]
+;14)sentence:[e:2138..2395] = [t:2138..2395]
+;15)sentence:[e:2396..2644] = [t:2396..2644]
+;16)section:[e:2645..2676] = [t:2645..2676]
+;17)section:[e:2680..2725] = [t:2680..2725]
+
+;section 0 Span:0..40
+;J Neurosci Res. 2000 Jun 1;60(5):656-65.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..10] Neurosci) (NNP:[11..14] Res) (.:[14..15] .)
+        (CD:[16..20] 2000) (JJ:[21..24] Jun) (CD:[25..29] 1;60)
+        (-LRB-:[29..30] -LRB-) (CD:[30..31] 5) (-RRB-:[31..32] -RRB-)
+        (CD:[32..39] :656-65) (.:[39..40] .)))
+
+;sentence 1 Span:46..156
+;Human neuroblastoma SH-SY5Y cell line: neurosteroid-producing cell line
+;relying  on cytoskeletal organization.
+;[85..97]:substance:"neurosteroid"
+(SENT
+  (NP-HLN
+    (NP (JJ:[46..51] Human) (NN:[52..65] neuroblastoma) (NN:[66..73] SH-SY5Y)
+        (NN:[74..78] cell) (NN:[79..83] line))
+    (::[83..84] :)
+    (NP
+      (NP
+        (ADJP (NN:[85..97] neurosteroid) (HYPH:[97..98] -)
+              (VBG:[98..107] producing))
+        (NN:[108..112] cell) (NN:[113..117] line))
+      (VP (VBG:[118..125] relying)
+        (PP-CLR (IN:[127..129] on)
+          (NP (JJ:[130..142] cytoskeletal) (NN:[143..155] organization)))))
+    (.:[155..156] .)))
+
+;section 2 Span:160..215
+;Guarneri P, Cascio C, Piccoli T, Piccoli F, Guarneri R.
+(SEC
+  (FRAG (NNP:[160..168] Guarneri) (NNP:[169..171] P,) (NNP:[172..178] Cascio)
+        (NNP:[179..180] C) (,:[180..181] ,) (NNP:[182..189] Piccoli)
+        (NNP:[190..191] T) (,:[191..192] ,) (NNP:[193..200] Piccoli)
+        (NNP:[201..202] F) (,:[202..203] ,) (NNP:[204..212] Guarneri)
+        (NNP:[213..215] R.)))
+
+;section 3 Span:219..295
+;Istituto di Biologia dello Sviluppo, Palermo, Italy. pguarneri@ibs.pa.cnr.it
+(SEC
+  (FRAG (NNP:[219..227] Istituto) (NNP:[228..230] di) (NNP:[231..239] Biologia)
+        (NNP:[240..245] dello) (NNP:[246..254] Sviluppo) (,:[254..255] ,)
+        (NNP:[256..263] Palermo) (,:[263..264] ,) (NNP:[265..270] Italy)
+        (.:[270..271] .) ('':[272..285] pguarneri@ibs) (VBD:[285..288] .pa)
+        (``:[288..292] .cnr) (NN:[292..295] .it)))
+
+;sentence 4 Span:299..377
+;Pregnenolone, the precursor of all steroids, is synthesized by CNS
+;structures.
+;[299..311]:substance:"Pregnenolone"
+;[317..326]:substance:"precursor"
+;[334..342]:substance:"steroids"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[299..311] Pregnenolone))
+      (,:[311..312] ,)
+      (NP
+        (NP (DT:[313..316] the) (NN:[317..326] precursor))
+        (PP (IN:[327..329] of)
+          (NP (DT:[330..333] all) (NNS:[334..342] steroids)))))
+    (,:[342..343] ,)
+    (VP (VBZ:[344..346] is)
+      (VP (VBN:[347..358] synthesized)
+        (NP-1 (-NONE-:[358..358] *))
+        (PP (IN:[359..361] by)
+          (NP-LGS (NN:[362..365] CNS) (NNS:[366..376] structures)))))
+    (.:[376..377] .)))
+
+;sentence 5 Span:379..596
+;The synthesis requires an obligatory step involving cholesterol transport to 
+;mitochondrial cytochrome P450-cholesterol side chain cleavage (cytP450scc), 
+;although the underlying mechanism(s) are still mostly unknown.
+;[431..442]:substance:"cholesterol"
+;[471..518]:cyp450:"cytochrome P450-cholesterol side chain cleavage"
+;[520..530]:cyp450:"cytP450scc"
+(SENT
+  (S
+    (NP-SBJ (DT:[379..382] The) (NN:[383..392] synthesis))
+    (VP (VBZ:[393..401] requires)
+      (NP
+        (NP (DT:[402..404] an) (JJ:[405..415] obligatory) (NN:[416..420] step))
+        (VP (VBG:[421..430] involving)
+          (NP
+            (NP (NN:[431..442] cholesterol) (NN:[443..452] transport))
+            (PP (TO:[453..455] to)
+              (NP
+                (NP (JJ:[457..470] mitochondrial)
+                  
+                  (NML
+                    (NML (NN:[471..481] cytochrome) (NN:[482..486] P450))
+                    (HYPH:[486..487] -)
+                    (NML (NN:[487..498] cholesterol) (NN:[499..503] side)
+                         (NN:[504..509] chain)))
+                  (NN:[510..518] cleavage))
+                (NP (-LRB-:[519..520] -LRB-) (NN:[520..530] cytP450scc)
+                    (-RRB-:[530..531] -RRB-)))))))
+      (,:[531..532] ,)
+      (SBAR-ADV (IN:[534..542] although)
+        (S
+          (NP-SBJ (DT:[543..546] the) (VBG:[547..557] underlying)
+                  (NNS:[558..570] mechanism-LRB-s-RRB-))
+          (VP (VBP:[571..574] are)
+            (ADVP (RB:[575..580] still))
+            (ADJP-PRD (RB:[581..587] mostly) (JJ:[588..595] unknown))))))
+    (.:[595..596] .)))
+
+;sentence 6 Span:597..765
+;We used the human  neuroblastoma SH-SY5Y cell line to investigate cytP450scc
+;expression and  activity and to establish a role of cytoskeleton in
+;pregnenolone synthesis.
+;[663..673]:cyp450:"cytP450scc"
+;[742..754]:substance:"pregnenolone"
+(SENT
+  (S
+    (NP-SBJ (PRP:[597..599] We))
+    (VP (VBD:[600..604] used)
+      (NP (DT:[605..608] the) (JJ:[609..614] human)
+          (NN:[616..629] neuroblastoma) (NN:[630..637] SH-SY5Y)
+          (NN:[638..642] cell) (NN:[643..647] line))
+      (S-PRP
+        (NP-SBJ (-NONE-:[647..647] *))
+        (VP
+          (VP (TO:[648..650] to)
+            (VP (VB:[651..662] investigate)
+              (NP
+                (NP
+                  (NML-1 (NN:[663..673] cytP450scc))
+                  (NN:[674..684] expression))
+                (CC:[685..688] and)
+                (NP
+                  (NML-1 (-NONE-:[688..688] *P*))
+                  (NN:[690..698] activity)))))
+          (CC:[699..702] and)
+          (VP (TO:[703..705] to)
+            (VP (VB:[706..715] establish)
+              (NP
+                (NP (DT:[716..717] a) (NN:[718..722] role))
+                (PP (IN:[723..725] of)
+                  (NP (NN:[726..738] cytoskeleton))))
+              (PP-LOC (IN:[739..741] in)
+                (NP (NN:[742..754] pregnenolone) (NN:[755..764] synthesis))))))))
+    (.:[764..765] .)))
+
+;sentence 7 Span:767..1069
+;Immunocytochemical and biochemical approaches revealed that undifferentiated
+;as  well as differentiated cells either by retinoic acid (RA) or phorbol
+;ester  12-O-tetradecanoylphorbol-13-acetate (TPA), possess cytP450scc and
+;rapidly  synthesize pregnenolone in the presence of a NADPH-generating
+;system.
+;[887..900]:substance:"retinoic acid"
+;[902..904]:substance:"RA"
+;[909..922]:substance:"phorbol ester"
+;[924..960]:substance:"12-O-tetradecanoylphorbol-13-acetate"
+;[962..965]:substance:"TPA"
+;[976..986]:cyp450:"cytP450scc"
+;[1011..1023]:substance:"pregnenolone"
+;[1045..1050]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[767..785] Immunocytochemical)
+        (NML-2 (-NONE-:[785..785] *P*)))
+      (CC:[786..789] and)
+      (NP (JJ:[790..801] biochemical)
+        (NML-2 (NNS:[802..812] approaches))))
+    (VP (VBD:[813..821] revealed)
+      (SBAR (IN:[822..826] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[827..843] undifferentiated)
+              (NML-1 (-NONE-:[843..843] *P*)))
+            (CONJP (RB:[844..846] as) (RB:[848..852] well) (IN:[853..855] as))
+            (NP
+              (NP (VBN:[856..870] differentiated)
+                (NML-1 (NNS:[871..876] cells)))
+              (PP (CC:[877..883] either) (IN:[884..886] by)
+                (NP
+                  (NP
+                    (NP (JJ:[887..895] retinoic) (NN:[896..900] acid))
+                    (NP (-LRB-:[901..902] -LRB-) (NN:[902..904] RA)
+                        (-RRB-:[904..905] -RRB-)))
+                  (CC:[906..908] or)
+                  (NP
+                    (NP
+                       (NN:[909..916] phorbol) (NN:[917..922] ester)
+                      (NN:[924..960] 12-O-tetradecanoylphorbol-13-acetate))
+                    (NP (-LRB-:[961..962] -LRB-) (NN:[962..965] TPA)
+                        (-RRB-:[965..966] -RRB-)))))))
+          (,:[966..967] ,)
+          (VP
+            (VP (VBP:[968..975] possess)
+              (NP (NN:[976..986] cytP450scc)))
+            (CC:[987..990] and)
+            (VP
+              (ADVP (RB:[991..998] rapidly))
+              (VBP:[1000..1010] synthesize)
+              (NP (NN:[1011..1023] pregnenolone))
+              (PP (IN:[1024..1026] in)
+                (NP
+                  (NP (DT:[1027..1030] the) (NN:[1031..1039] presence))
+                  (PP (IN:[1040..1042] of)
+                    (NP (DT:[1043..1044] a)
+                      (ADJP (NN:[1045..1050] NADPH) (HYPH:[1050..1051] -)
+                            (VBG:[1051..1061] generating))
+                      (NN:[1062..1068] system))))))))))
+    (.:[1068..1069] .)))
+
+;sentence 8 Span:1070..1221
+;The newly  neurosteroid formation by SH-SY5Y cells was increased by
+;22R-hydroxycholesterol  and blocked by the cytP450scc inhibitor,
+;aminoglutethimide.
+;[1081..1093]:substance:"neurosteroid"
+;[1138..1160]:substance:"22R-hydroxycholesterol"
+;[1181..1191]:cyp450:"cytP450scc"
+;[1192..1201]:substance:"inhibitor"
+;[1203..1220]:substance:"aminoglutethimide"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1070..1073] The)
+        (ADJP (RB:[1074..1079] newly) (JJ:[1081..1093] neurosteroid))
+        (NN:[1094..1103] formation))
+      (PP (IN:[1104..1106] by)
+        (NP (NN:[1107..1114] SH-SY5Y) (NNS:[1115..1120] cells))))
+    (VP (VBD:[1121..1124] was)
+      (VP
+        (VP (VBN:[1125..1134] increased)
+          (NP-1 (-NONE-:[1134..1134] *))
+          (PP (IN:[1135..1137] by)
+            (NP-LGS (NN:[1138..1160] 22R-hydroxycholesterol))))
+        (CC:[1162..1165] and)
+        (VP (VBN:[1166..1173] blocked)
+          (PP (IN:[1174..1176] by)
+            (NP-LGS
+              (NP (DT:[1177..1180] the) (NN:[1181..1191] cytP450scc)
+                  (NN:[1192..1201] inhibitor))
+              (,:[1201..1202] ,)
+              (NP (NN:[1203..1220] aminoglutethimide)))))))
+    (.:[1220..1221] .)))
+
+;sentence 9 Span:1222..1453
+;When trilostane was  used to inhibit 3beta-hydroxysteroid dehydrogenase
+;catalyzing pregnenolone  conversion into progesterone, a higher pregnenolone
+;accumulation occurred in  TPA-differentiated cells than in RA-differentiated
+;ones.
+;[1227..1237]:substance:"trilostane"
+;[1259..1293]:substance:"3beta-hydroxysteroid dehydrogenase"
+;[1305..1317]:substance:"pregnenolone"
+;[1335..1347]:substance:"progesterone"
+;[1358..1370]:substance:"pregnenolone"
+;[1397..1400]:substance:"TPA"
+;[1430..1432]:substance:"RA"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-2 (WRB:[1222..1226] When))
+      (S
+        (NP-SBJ (NN:[1227..1237] trilostane))
+        (VP (VBD:[1238..1241] was)
+          (VP (VBN:[1243..1247] used)
+            (S-PRP
+              (NP-SBJ (-NONE-:[1247..1247] *))
+              (VP (TO:[1248..1250] to)
+                (VP (VB:[1251..1258] inhibit)
+                  (S
+                    (NP-SBJ (NN:[1259..1279] 3beta-hydroxysteroid)
+                            (NN:[1280..1293] dehydrogenase))
+                    (VP (VBG:[1294..1304] catalyzing)
+                      (NP (NN:[1305..1317] pregnenolone)
+                          (NN:[1319..1329] conversion))
+                      (PP (IN:[1330..1334] into)
+                        (NP (NN:[1335..1347] progesterone))))))))
+            (ADVP-TMP-2 (-NONE-:[1347..1347] *T*))))))
+    (,:[1347..1348] ,)
+    (NP-SBJ
+      (NP (DT:[1349..1350] a) (JJR:[1351..1357] higher)
+          (NN:[1358..1370] pregnenolone) (NN:[1371..1383] accumulation))
+      (PP-1 (-NONE-:[1383..1383] *ICH*)))
+    (VP (VBD:[1384..1392] occurred)
+      (PP-LOC (IN:[1393..1395] in)
+        (NP
+          (ADJP (NN:[1397..1400] TPA) (HYPH:[1400..1401] -)
+                (VBN:[1401..1415] differentiated))
+          (NNS:[1416..1421] cells)))
+      (PP-1 (IN:[1422..1426] than)
+        (PP-LOC (IN:[1427..1429] in)
+          (NP
+            (ADJP (NN:[1430..1432] RA) (HYPH:[1432..1433] -)
+                  (VBN:[1433..1447] differentiated))
+            (NNS:[1448..1452] ones)))))
+    (.:[1452..1453] .)))
+
+;sentence 10 Span:1454..1653
+;Although SU 10603, a  blocker of 17alpha-hydroxylase/c17,20-lyase enzyme
+;involved in DHEA formation  from pregnenolone, gave rise to an elevated
+;neurosteroid content only in  RA-differentiated cells.
+;[1463..1471]:substance:"SU 10603"
+;[1476..1483]:substance:"blocker"
+;[1487..1506]:substance:"17alpha-hydroxylase"
+;[1507..1526]:substance:"c17,20-lyase enzyme"
+;[1539..1543]:substance:"DHEA"
+;[1560..1572]:substance:"pregnenolone"
+;[1599..1611]:substance:"neurosteroid"
+;[1629..1631]:substance:"RA"
+(SENT
+  (S
+    (ADVP (IN:[1454..1462] Although))
+    (NP-SBJ
+      (NP (NN:[1463..1465] SU) (CD:[1466..1471] 10603))
+      (,:[1471..1472] ,)
+      (NP
+        (NP
+          (NP (DT:[1473..1474] a) (NN:[1476..1483] blocker))
+          (PP (IN:[1484..1486] of)
+            (NP
+              (NML (NN:[1487..1506] 17alpha-hydroxylase) (SYM:[1506..1507] /)
+                   (NN:[1507..1519] c17,20-lyase))
+              (NN:[1520..1526] enzyme))))
+        (VP (VBN:[1527..1535] involved)
+          (NP (-NONE-:[1535..1535] *))
+          (PP-CLR (IN:[1536..1538] in)
+            (NP
+              (NP (NN:[1539..1543] DHEA) (NN:[1544..1553] formation))
+              (PP (IN:[1555..1559] from)
+                (NP (NN:[1560..1572] pregnenolone))))))))
+    (,:[1572..1573] ,)
+    (VP (VBD:[1574..1578] gave)
+      (NP-CLR (NN:[1579..1583] rise))
+      (PP-CLR (TO:[1584..1586] to)
+        (NP (DT:[1587..1589] an) (VBN:[1590..1598] elevated)
+            (JJ:[1599..1611] neurosteroid) (NN:[1612..1619] content)))
+      (PP-LOC (RB:[1620..1624] only) (IN:[1625..1627] in)
+        (NP
+          (ADJP (NN:[1629..1631] RA) (HYPH:[1631..1632] -)
+                (VBN:[1632..1646] differentiated))
+          (NNS:[1647..1652] cells))))
+    (.:[1652..1653] .)))
+
+;sentence 11 Span:1654..1756
+;No difference in pregnenolone levels was found in  undifferentiated cells
+;treated with each inhibitor.
+;[1671..1683]:substance:"pregnenolone"
+;[1746..1755]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1654..1656] No) (NN:[1657..1667] difference))
+      (PP (IN:[1668..1670] in)
+        (NP (NN:[1671..1683] pregnenolone) (NNS:[1684..1690] levels))))
+    (VP (VBD:[1691..1694] was)
+      (VP (VBN:[1695..1700] found)
+        (NP-1 (-NONE-:[1700..1700] *))
+        (PP-LOC (IN:[1701..1703] in)
+          (NP
+            (NP (JJ:[1705..1721] undifferentiated) (NNS:[1722..1727] cells))
+            (VP (VBN:[1728..1735] treated)
+              (NP (-NONE-:[1735..1735] *))
+              (PP (IN:[1736..1740] with)
+                (NP (DT:[1741..1745] each) (NN:[1746..1755] inhibitor))))))))
+    (.:[1755..1756] .)))
+
+;sentence 12 Span:1757..1901
+;Thus, differentiation seems  to promote pregnenolone-metabolizing enzyme
+;activities that may vary upon  phenotypic changes induced by RA or TPA.
+;[1797..1829]:substance:"pregnenolone-metabolizing enzyme"
+;[1891..1893]:substance:"RA"
+;[1897..1900]:substance:"TPA"
+(SENT
+  (S
+    (ADVP (RB:[1757..1761] Thus))
+    (,:[1761..1762] ,)
+    (NP-SBJ-2 (NN:[1763..1778] differentiation))
+    (VP (VBZ:[1779..1784] seems)
+      (S
+        (NP-SBJ-2 (-NONE-:[1784..1784] *))
+        (VP (TO:[1786..1788] to)
+          (VP (VB:[1789..1796] promote)
+            (NP
+              (NP
+                
+                (ADJP (NN:[1797..1809] pregnenolone) (HYPH:[1809..1810] -)
+                      (VBG:[1810..1822] metabolizing))
+                (NN:[1823..1829] enzyme)
+                (NNS:[1830..1840] activities))
+              (SBAR
+                (WHNP-1 (WDT:[1841..1845] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1845..1845] *T*))
+                  (VP (MD:[1846..1849] may)
+                    (VP (VB:[1850..1854] vary)
+                      (PP (IN:[1855..1859] upon)
+                        (NP
+                          (NP (JJ:[1861..1871] phenotypic)
+                              (NNS:[1872..1879] changes))
+                          (VP (VBN:[1880..1887] induced)
+                            (NP (-NONE-:[1887..1887] *))
+                            (PP (IN:[1888..1890] by)
+                              (NP-LGS (NN:[1891..1893] RA) (CC:[1894..1896] or)
+                                      (NN:[1897..1900] TPA)))))))))))))))
+    (.:[1900..1901] .)))
+
+;sentence 13 Span:1902..2137
+;Treatments of differentiated cells with  the microtubule-depolymerizing drug
+;colchicine and the actin  microfilament-altering agent cytochalasin D
+;decreased pregnenolone synthesis  without affecting cell viability or
+;cytP450scc amount.
+;[1974..1978]:substance:"drug"
+;[1979..1989]:substance:"colchicine"
+;[1998..2033]:substance:"actin  microfilament-altering agent"
+;[2034..2048]:substance:"cytochalasin D"
+;[2059..2071]:substance:"pregnenolone"
+;[2119..2129]:cyp450:"cytP450scc"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1902..1912] Treatments))
+      (PP (IN:[1913..1915] of)
+        (NP (VBN:[1916..1930] differentiated) (NNS:[1931..1936] cells)))
+      (PP (IN:[1937..1941] with)
+        (NP
+          (NP
+            (NP (DT:[1943..1946] the)
+              (ADJP (NN:[1947..1958] microtubule) (HYPH:[1958..1959] -)
+                    (VBG:[1959..1973] depolymerizing))
+              (NN:[1974..1978] drug))
+            (NP (NN:[1979..1989] colchicine)))
+          (CC:[1990..1993] and)
+          (NP
+            (NP (DT:[1994..1997] the)
+              
+              (ADJP
+                (NML (NN:[1998..2003] actin) (NN:[2005..2018] microfilament))
+                (HYPH:[2018..2019] -) (VBG:[2019..2027] altering))
+              (NN:[2028..2033] agent))
+            (NP (NN:[2034..2046] cytochalasin) (NN:[2047..2048] D))))))
+    (VP (VBD:[2049..2058] decreased)
+      (NP (NN:[2059..2071] pregnenolone) (NN:[2072..2081] synthesis))
+      (PP-MNR (IN:[2083..2090] without)
+        (S-NOM
+          (NP-SBJ (-NONE-:[2090..2090] *))
+          (VP (VBG:[2091..2100] affecting)
+            (NP
+              (NP (NN:[2101..2105] cell) (NN:[2106..2115] viability))
+              (CC:[2116..2118] or)
+              (NP (NN:[2119..2129] cytP450scc) (NN:[2130..2136] amount)))))))
+    (.:[2136..2137] .)))
+
+;sentence 14 Span:2138..2395
+;Addition of the  cell-permeant cholesterol analogue 22R-hydroxycholesterol
+;known to elude  cholesterol transport systems induced pregnenolone synthesis,
+;however,  indicating that perturbations in cytoskeleton likely affect
+;endogenous  cholesterol transport.
+;[2169..2189]:substance:"cholesterol analogue"
+;[2190..2212]:substance:"22R-hydroxycholesterol"
+;[2229..2240]:substance:"cholesterol"
+;[2267..2279]:substance:"pregnenolone"
+;[2373..2384]:substance:"cholesterol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[2138..2146] Addition))
+      (PP (IN:[2147..2149] of)
+        (NP
+          (NP
+            (NP (DT:[2150..2153] the)
+              (ADJP (NN:[2155..2159] cell) (HYPH:[2159..2160] -)
+                    (JJ:[2160..2168] permeant))
+               (NN:[2169..2180] cholesterol) (NN:[2181..2189] analogue))
+            (NP (NN:[2190..2212] 22R-hydroxycholesterol)))
+          (VP (VBN:[2213..2218] known)
+            (S
+              (NP-SBJ (-NONE-:[2218..2218] *))
+              (VP (TO:[2219..2221] to)
+                (VP (VB:[2222..2227] elude)
+                  (NP (NN:[2229..2240] cholesterol) (NN:[2241..2250] transport)
+                      (NNS:[2251..2258] systems)))))))))
+    (VP (VBD:[2259..2266] induced)
+      (NP (NN:[2267..2279] pregnenolone) (NN:[2280..2289] synthesis))
+      (,:[2289..2290] ,)
+      (ADVP (RB:[2291..2298] however))
+      (,:[2298..2299] ,)
+      (S-MNR
+        (NP-SBJ (-NONE-:[2299..2299] *))
+        (VP (VBG:[2301..2311] indicating)
+          (S (IN:[2312..2316] that)
+            (S
+              (NP-SBJ
+                (NP (NNS:[2317..2330] perturbations))
+                (PP-LOC (IN:[2331..2333] in)
+                  (NP (NN:[2334..2346] cytoskeleton))))
+              (ADVP (RB:[2347..2353] likely))
+              (VP (VBP:[2354..2360] affect)
+                (NP (JJ:[2361..2371] endogenous) (NN:[2373..2384] cholesterol)
+                    (NN:[2385..2394] transport))))))))
+    (.:[2394..2395] .)))
+
+;sentence 15 Span:2396..2644
+;The relevance of this finding may rest on the observed  involvement of
+;cytoskeletal organization in such events as neuronal plasticity,  cognitive
+;function and also neurodegenerative disorders in which neurosteroids  have
+;been shown to have a part.
+;[2598..2611]:substance:"neurosteroids"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2396..2399] The) (NN:[2400..2409] relevance))
+      (PP (IN:[2410..2412] of)
+        (NP (DT:[2413..2417] this) (NN:[2418..2425] finding))))
+    (VP (MD:[2426..2429] may)
+      (VP (VB:[2430..2434] rest)
+        (PP (IN:[2435..2437] on)
+          (NP
+            (NP (DT:[2438..2441] the) (VBN:[2442..2450] observed)
+                (NN:[2452..2463] involvement))
+            (PP (IN:[2464..2466] of)
+              (NP (JJ:[2467..2479] cytoskeletal) (NN:[2480..2492] organization)))
+            (PP-LOC (IN:[2493..2495] in)
+              (NP
+                (NP (JJ:[2496..2500] such) (NNS:[2501..2507] events))
+                (PP (IN:[2508..2510] as)
+                  (NP
+                    (NP (JJ:[2511..2519] neuronal) (NN:[2520..2530] plasticity))
+                    (,:[2530..2531] ,)
+                    (NP (JJ:[2533..2542] cognitive) (NN:[2543..2551] function))
+                    (CC:[2552..2555] and) (RB:[2556..2560] also)
+                    (NP (JJ:[2561..2578] neurodegenerative)
+                        (NNS:[2579..2588] disorders))))
+                (SBAR
+                  (WHPP-2 (IN:[2589..2591] in)
+                    (WHNP (WDT:[2592..2597] which)))
+                  (S
+                    (NP-SBJ-1 (NNS:[2598..2611] neurosteroids))
+                    (VP (VBP:[2613..2617] have)
+                      (VP (VBN:[2618..2622] been)
+                        (VP (VBN:[2623..2628] shown)
+                          (S
+                            (NP-SBJ-1 (-NONE-:[2628..2628] *))
+                            (VP (TO:[2629..2631] to)
+                              (VP (VB:[2632..2636] have)
+                                (NP (DT:[2637..2638] a) (NN:[2639..2643] part))
+                                (PP-2 (-NONE-:[2643..2643] *T*))))))))))))))))
+    (.:[2643..2644] .)))
+
+;section 16 Span:2645..2676
+;Copyright 2000 Wiley-Liss, Inc.
+(SEC
+  (FRAG (NN:[2645..2654] Copyright) (CD:[2655..2659] 2000)
+        (NNP:[2660..2665] Wiley) (HYPH:[2665..2666] -) (NNP:[2666..2670] Liss)
+        (,:[2670..2671] ,) (NNP:[2672..2676] Inc.)))
+
+;section 17 Span:2680..2725
+;PMID: 10820437 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2680..2684] PMID) (::[2684..2685] :) (CD:[2686..2694] 10820437)
+        (NN:[2695..2696] -LSB-) (NNP:[2696..2702] PubMed) (::[2703..2704] -)
+        (NN:[2705..2712] indexed) (IN:[2713..2716] for)
+        (NNP:[2717..2725] MEDLINE-RSB-)))

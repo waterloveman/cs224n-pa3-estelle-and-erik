@@ -1,0 +1,309 @@
+;PMID: 7066879
+;source_file_2878.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..146] = [t:52..146]
+;2)section:[e:150..229] = [t:150..229]
+;3)sentence:[e:233..340] = [t:233..340]
+;4)sentence:[e:341..508] = [t:341..508]
+;5)sentence:[e:509..655] = [t:509..655]
+;6)sentence:[e:656..745] = [t:656..745]
+;7)sentence:[e:746..1130] = [t:746..1130]
+;8)sentence:[e:1131..1358] = [t:1131..1358]
+;9)section:[e:1362..1406] = [t:1362..1406]
+
+;section 0 Span:0..46
+;Cancer Genet Cytogenet.  1982 Mar;5(3):203-13.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..12] Genet) (NNP:[13..22] Cytogenet)
+        (.:[22..23] .) (CD:[25..29] 1982) (NNP:[30..33] Mar) (::[33..34] ;)
+        (CD:[34..35] 5) (NN:[35..36] -LRB-) (NN:[36..37] 3)
+        (-RRB-:[37..38] -RRB-) (::[38..39] :) (CD:[39..45] 203-13)
+        (.:[45..46] .)))
+
+;sentence 1 Span:52..146
+;Bilateral retinoblastoma with ectopic intracranial retinoblastoma: trilateral
+; retinoblastoma.
+;[52..76]:malignancy-type:"Bilateral retinoblastoma"
+;[82..117]:malignancy-type:"ectopic intracranial retinoblastoma"
+;[119..145]:malignancy-type:"trilateral  retinoblastoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[52..61] Bilateral) (NN:[62..76] retinoblastoma))
+      (PP (IN:[77..81] with)
+        (NP (JJ:[82..89] ectopic) (JJ:[90..102] intracranial)
+            (NN:[103..117] retinoblastoma))))
+    (::[117..118] :)
+    (NP (JJ:[119..129] trilateral) (NN:[131..145] retinoblastoma))
+    (.:[145..146] .)))
+
+;section 2 Span:150..229
+;Bader JL, Meadows AT, Zimmerman LE, Rorke LB, Voute PA, Champion LA, Miller
+;RW.
+(SEC
+  (FRAG (NNP:[150..155] Bader) (NNP:[156..158] JL) (,:[158..159] ,)
+        (NNP:[160..167] Meadows) (NNP:[168..170] AT) (,:[170..171] ,)
+        (NNP:[172..181] Zimmerman) (NNP:[182..184] LE) (,:[184..185] ,)
+        (NNP:[186..191] Rorke) (NNP:[192..194] LB) (,:[194..195] ,)
+        (NNP:[196..201] Voute) (NNP:[202..204] PA) (,:[204..205] ,)
+        (NNP:[206..214] Champion) (NNP:[215..217] LA) (,:[217..218] ,)
+        (NNP:[219..225] Miller) (NNP:[226..228] RW) (.:[228..229] .)))
+
+;sentence 3 Span:233..340
+;In 11 patients, bilateral retinoblastoma presented at a mean age of 6 months
+;and  pineoblastoma at 4 years.
+;[249..273]:malignancy-type:"bilateral retinoblastoma"
+;[294..309]:malignancy-developmental-state:"age of 6 months"
+;[315..328]:malignancy-type:"pineoblastoma"
+;[332..339]:malignancy-developmental-state:"4 years"
+(SENT
+  (S
+    (S
+      (PP (IN:[233..235] In)
+        (NP (CD:[236..238] 11) (NNS:[239..247] patients)))
+      (,:[247..248] ,)
+      (NP-SBJ=1 (JJ:[249..258] bilateral) (NN:[259..273] retinoblastoma))
+      (VP (VBD:[274..283] presented)
+        (PP=2 (IN:[284..286] at)
+          (NP
+            (NP (DT:[287..288] a) (JJ:[289..293] mean) (NN:[294..297] age))
+            (PP (IN:[298..300] of)
+              (NP (CD:[301..302] 6) (NNS:[303..309] months)))))))
+    (CC:[310..313] and)
+    (S
+      (NP-SBJ=1 (NN:[315..328] pineoblastoma))
+      (PP=2 (IN:[329..331] at)
+        (NP (CD:[332..333] 4) (NNS:[334..339] years))))
+    (.:[339..340] .)))
+
+;sentence 4 Span:341..508
+;We suggest that the hereditary multicentric  retinoblastoma arose in
+;vestigeal photoreceptors in the pineal as well as in the  hypothetical
+;retinoblasts of the retina.
+;[386..400]:malignancy-type:"retinoblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[341..343] We))
+    (VP (VBP:[344..351] suggest)
+      (SBAR (IN:[352..356] that)
+        (S
+          (NP-SBJ (DT:[357..360] the) (JJ:[361..371] hereditary)
+                  (JJ:[372..384] multicentric) (NN:[386..400] retinoblastoma))
+          (VP (VBD:[401..406] arose)
+            (PP-LOC (IN:[407..409] in)
+              (NP (JJ:[410..419] vestigeal) (NNS:[420..434] photoreceptors)))
+            (PP
+              (PP (IN:[435..437] in)
+                (NP
+                  (NP (DT:[438..441] the) (JJ:[442..448] pineal)
+                    (NML-1 (-NONE-:[448..448] *RNR*)))
+                  (PP-2 (-NONE-:[448..448] *RNR*))))
+              (CONJP (RB:[449..451] as) (RB:[452..456] well) (IN:[457..459] as))
+              (PP (IN:[460..462] in)
+                (NP
+                  (NP (DT:[463..466] the) (JJ:[468..480] hypothetical)
+                    (NML-1 (-NONE-:[480..480] *RNR*)))
+                  (PP-2 (-NONE-:[480..480] *RNR*))))
+              (NML-1 (NNS:[481..493] retinoblasts))
+              (PP-2 (IN:[494..496] of)
+                (NP (DT:[497..500] the) (NN:[501..507] retina))))))))
+    (.:[507..508] .)))
+
+;sentence 5 Span:509..655
+;In certain lower animals, the pineal  functions as a photoreceptor organ,
+;resembles the retina histologically, and is  described as a "third eye."
+(SENT
+  (S
+    (PP (IN:[509..511] In)
+      (NP (JJ:[512..519] certain)
+        (ADJP (JJR:[520..525] lower))
+        (NNS:[526..533] animals)))
+    (,:[533..534] ,)
+    (NP-SBJ-1 (DT:[535..538] the) (NN:[539..545] pineal))
+    (VP
+      (VP (VBZ:[547..556] functions)
+        (PP-CLR (IN:[557..559] as)
+          (NP (DT:[560..561] a) (NN:[562..575] photoreceptor)
+              (NN:[576..581] organ))))
+      (,:[581..582] ,)
+      (VP (VBZ:[583..592] resembles)
+        (NP (DT:[593..596] the) (NN:[597..603] retina))
+        (ADVP (RB:[604..618] histologically)))
+      (,:[618..619] ,) (CC:[620..623] and)
+      (VP (VBZ:[624..626] is)
+        (VP (VBN:[628..637] described)
+          (NP-1 (-NONE-:[637..637] *))
+          (PP-CLR (IN:[638..640] as)
+            (NP (DT:[641..642] a) (``:[643..644] ") (JJ:[644..649] third)
+                (NN:[650..653] eye))))))
+    (.:[653..654] .) ('':[654..655] ")))
+
+;sentence 6 Span:656..745
+;Hence, the patients we describe may be considered as  having "trilateral
+;retinoblastoma."
+;[718..743]:malignancy-type:"trilateral retinoblastoma"
+(SENT
+  (S
+    (ADVP (RB:[656..661] Hence))
+    (,:[661..662] ,)
+    (NP-SBJ-1 (DT:[663..666] the) (NNS:[667..675] patients)
+      (SBAR
+        (WHNP-2 (-NONE-:[675..675] 0))
+        (S
+          (NP-SBJ (PRP:[676..678] we))
+          (VP (VBP:[679..687] describe)
+            (NP-2 (-NONE-:[687..687] *T*))))))
+    (VP (MD:[688..691] may)
+      (VP (VB:[692..694] be)
+        (VP (VBN:[695..705] considered)
+          (NP-1 (-NONE-:[705..705] *))
+          (SBAR-CLR (IN:[706..708] as)
+            (S
+              (NP-SBJ (-NONE-:[708..708] *))
+              (VP (VBG:[710..716] having)
+                (NP (``:[717..718] ")
+                   (JJ:[718..728] trilateral) (NN:[729..743] retinoblastoma))))))))
+    (.:[743..744] .) ('':[744..745] ")))
+
+;sentence 7 Span:746..1130
+;Two possible variants of this entity were  also noted: (1) three children
+;without retinoblastoma with rosettes and  photoreceptor differentiation
+;characteristic of retinoblastoma, and (2) three  additional cases involving
+;children who presented with retinoblastoma-like  tumors in the suprasellar or
+;parasellar region 2 to 6 months before the  discovery of intraocular
+;retinoblastoma.
+;[811..819]:malignancy-developmental-state:"children"
+;[828..842]:malignancy-type:"retinoblastoma"
+;[910..924]:malignancy-type:"retinoblastoma"
+;[968..976]:malignancy-developmental-state:"children"
+;[996..1023]:malignancy-type:"retinoblastoma-like  tumors"
+;[1103..1129]:malignancy-type:"intraocular retinoblastoma"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP
+          (NP (CD:[746..749] Two) (JJ:[750..758] possible)
+              (NNS:[759..767] variants))
+          (PP (IN:[768..770] of)
+            (NP (DT:[771..775] this) (NN:[776..782] entity))))
+        (NP-5 (-NONE-:[782..782] *ICH*)))
+      (VP (VBD:[783..787] were)
+        (ADVP (RB:[789..793] also))
+        (VP (VBN:[794..799] noted)
+          (NP-1 (-NONE-:[799..799] *)))))
+    (::[799..800] :)
+    (NP-5
+      (NP
+        (LST (LS:[801..804] -LRB-1-RRB-))
+        (NP (CD:[805..810] three) (NNS:[811..819] children))
+        (PP (IN:[820..827] without)
+          (NP (NN:[828..842] retinoblastoma)))
+        (PP (IN:[843..847] with)
+          (NP
+            (NP
+              (NP (NNS:[848..856] rosettes))
+              (CC:[857..860] and)
+              (NP (NN:[862..875] photoreceptor) (NN:[876..891] differentiation)))
+            (ADJP (JJ:[892..906] characteristic)
+              (PP (IN:[907..909] of)
+                (NP (NN:[910..924] retinoblastoma)))))))
+      (,:[924..925] ,) (CC:[926..929] and)
+      (NP
+        (LST (LS:[930..933] -LRB-2-RRB-))
+        (NP (CD:[934..939] three) (JJ:[941..951] additional)
+            (NNS:[952..957] cases))
+        (VP (VBG:[958..967] involving)
+          (NP
+            (NP (NNS:[968..976] children))
+            (SBAR
+              (WHNP-4 (WP:[977..980] who))
+              (S
+                (NP-SBJ-4 (-NONE-:[980..980] *T*))
+                (VP (VBD:[981..990] presented)
+                  (PP (IN:[991..995] with)
+                    (NP
+                      (ADJP (NN:[996..1010] retinoblastoma)
+                            (HYPH:[1010..1011] -) (JJ:[1011..1015] like))
+                      (NNS:[1017..1023] tumors)))
+                  (PP-LOC (IN:[1024..1026] in)
+                    (NP (DT:[1027..1030] the)
+                      (NML
+                        (NML (JJ:[1031..1042] suprasellar)
+                          (NML-3 (-NONE-:[1042..1042] *P*)))
+                        (CC:[1043..1045] or)
+                        (NML (JJ:[1046..1056] parasellar)
+                          (NML-3 (NN:[1057..1063] region))))))
+                  (PP
+                    (NP-TMP
+                      (QP (CD:[1064..1065] 2) (TO:[1066..1068] to)
+                          (CD:[1069..1070] 6))
+                      (NNS:[1071..1077] months))
+                    (IN:[1078..1084] before)
+                    (NP
+                      (NP (DT:[1085..1088] the) (NN:[1090..1099] discovery))
+                      (PP (IN:[1100..1102] of)
+                        (NP (JJ:[1103..1114] intraocular)
+                            (NN:[1115..1129] retinoblastoma))))))))))))
+    (.:[1129..1130] .)))
+
+;sentence 8 Span:1131..1358
+;These observations suggest that the  retinoblastoma gene confers a previously
+;unappreciated susceptibility to a  narrow spectrum of neuroblastic tumors,
+;which usually present in the retina but  which can also occur ectopically.
+;[1168..1182]:gene-rna:"retinoblastoma"
+;[1263..1282]:malignancy-type:"neuroblastic tumors"
+(SENT
+  (S
+    (NP-SBJ (DT:[1131..1136] These) (NNS:[1137..1149] observations))
+    (VP (VBP:[1150..1157] suggest)
+      (SBAR (IN:[1158..1162] that)
+        (S
+          (NP-SBJ (DT:[1163..1166] the) (NN:[1168..1182] retinoblastoma)
+                  (NN:[1183..1187] gene))
+          (VP (VBZ:[1188..1195] confers)
+            (NP
+              (NP (DT:[1196..1197] a)
+                (ADJP (RB:[1198..1208] previously)
+                      (JJ:[1209..1222] unappreciated))
+                (NN:[1223..1237] susceptibility))
+              (PP (TO:[1238..1240] to)
+                (NP
+                  (NP (DT:[1241..1242] a) (JJ:[1244..1250] narrow)
+                      (NN:[1251..1259] spectrum))
+                  (PP (IN:[1260..1262] of)
+                    (NP
+                      (NP (JJ:[1263..1275] neuroblastic)
+                          (NNS:[1276..1282] tumors))
+                      (,:[1282..1283] ,)
+                      (SBAR
+                        (SBAR
+                          (WHNP-1 (WDT:[1284..1289] which))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[1289..1289] *T*))
+                            (ADVP (RB:[1290..1297] usually))
+                            (VP (VBP:[1298..1305] present)
+                              (PP-LOC (IN:[1306..1308] in)
+                                (NP (DT:[1309..1312] the)
+                                    (NN:[1313..1319] retina))))))
+                        (CC:[1320..1323] but)
+                        (SBAR
+                          (WHNP-2 (WDT:[1325..1330] which))
+                          (S
+                            (NP-SBJ-2 (-NONE-:[1330..1330] *T*))
+                            (VP (MD:[1331..1334] can)
+                              (ADVP (RB:[1335..1339] also))
+                              (VP (VB:[1340..1345] occur)
+                                (ADVP (RB:[1346..1357] ectopically))))))))))))))))
+    (.:[1357..1358] .)))
+
+;section 9 Span:1362..1406
+;PMID: 7066879 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1362..1366] PMID) (::[1366..1367] :) (CD:[1368..1375] 7066879)
+        (NN:[1376..1377] -LSB-) (NNP:[1377..1383] PubMed) (::[1384..1385] -)
+        (NN:[1386..1393] indexed) (IN:[1394..1397] for)
+        (NNP:[1398..1405] MEDLINE) (-RRB-:[1405..1406] -RSB-)))

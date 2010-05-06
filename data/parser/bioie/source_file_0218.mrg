@@ -1,0 +1,289 @@
+;PMID: 3365254
+;source_file_1019.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..53] = [t:0..53]
+;1)sentence:[e:59..186] = [t:59..186]
+;2)section:[e:190..239] = [t:190..239]
+;3)section:[e:243..310] = [t:243..310]
+;4)sentence:[e:314..650] = [t:314..650]
+;5)sentence:[e:651..854] = [t:651..854]
+;6)sentence:[e:855..1012] = [t:855..1012]
+;7)sentence:[e:1013..1251] = [t:1013..1251]
+;8)section:[e:1255..1299] = [t:1255..1298]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1255..1299][t:1255..1298]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1298..1299] ]
+
+;section 0 Span:0..53
+;Biochem Biophys Res Commun. 1988 Apr 29;152(2):843-8.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (.:[26..27] .) (CD:[28..32] 1988)
+        (NNP:[33..36] Apr) (CD:[37..44] 29;152-LRB-) (CD:[44..45] 2)
+        (-RRB-:[45..46] -RRB-) (CD:[46..50] :843) (::[50..51] -)
+        (CD:[51..53] 8.)))
+
+;sentence 1 Span:59..186
+;A male-specific renal cytochrome P-450 isozyme(s) responsible for mutagenic 
+;activation of 3-methoxy-4-aminoazobenzene in mice.
+;[81..108]:cyp450:"cytochrome P-450 isozyme(s)"
+;[150..177]:substance:"3-methoxy-4-aminoazobenzene"
+(SENT
+  (NP-HLN
+    (NP (DT:[59..60] A)
+      (ADJP (NN:[61..65] male) (HYPH:[65..66] -) (JJ:[66..74] specific))
+      (JJ:[75..80] renal)
+      
+      (NML (NN:[81..91] cytochrome) (NN:[92..97] P-450))
+      (NN:[98..108] isozyme-LRB-s-RRB-))
+    (ADJP (JJ:[109..120] responsible)
+      (PP (IN:[121..124] for)
+        (NP
+          (NP (JJ:[125..134] mutagenic) (NN:[136..146] activation))
+          (PP (IN:[147..149] of)
+            (NP (NN:[150..177] 3-methoxy-4-aminoazobenzene)))
+          (PP-LOC (IN:[178..180] in)
+            (NP (NNS:[181..185] mice))))))
+    (.:[185..186] .)))
+
+;section 2 Span:190..239
+;Degawa M, Namiki M, Miura S, Ueno H, Hashimoto Y.
+(SEC
+  (FRAG (NNP:[190..196] Degawa) (NNP:[197..199] M,) (NNP:[200..206] Namiki)
+        (NNP:[207..209] M,) (NNP:[210..215] Miura) (NNP:[216..218] S,)
+        (NNP:[219..223] Ueno) (NNP:[224..225] H) (,:[225..226] ,)
+        (NNP:[227..236] Hashimoto) (NNP:[237..239] Y.)))
+
+;section 3 Span:243..310
+;Department of Hygienic Chemistry, Tohoku University, Sendai, Japan.
+(SEC
+  (FRAG (NNP:[243..253] Department) (IN:[254..256] of) (NNP:[257..265] Hygienic)
+        (NNP:[266..275] Chemistry) (,:[275..276] ,) (NNP:[277..283] Tohoku)
+        (NNP:[284..294] University) (,:[294..295] ,) (NNP:[296..302] Sendai)
+        (,:[302..303] ,) (NNP:[304..309] Japan) (.:[309..310] .)))
+
+;sentence 4 Span:314..650
+;Renal microsomes from male mice (BALB/c, DBA/2 and BALB/c x DBA/2 F1) showed 
+;about 10-fold greater activity for mediating mutagenic activation of 
+;3-methoxy-4-aminoazobenzene (3-MeO-AAB) toward Salmonella typhimurium TA98
+;than  did the corresponding hepatic microsomes, as compared on the basis of
+;nmol of  microsomal cytochrome P-450.
+;[398..405]:quantitative-value:"10-fold"
+;[462..489]:substance:"3-methoxy-4-aminoazobenzene"
+;[491..500]:substance:"3-MeO-AAB"
+;[613..617]:quantitative-units:"nmol"
+;[633..649]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[314..319] Renal) (NNS:[320..330] microsomes))
+      (PP (IN:[331..335] from)
+        (NP (JJ:[336..340] male) (NNS:[341..345] mice)))
+      (PRN (-LRB-:[346..347] -LRB-)
+        (NP
+          (NP (NN:[347..353] BALB/c))
+          (,:[353..354] ,)
+          (NP (NN:[355..360] DBA/2))
+          (CC:[361..364] and)
+          (NP (NN:[365..371] BALB/c) (SYM:[372..373] x) (NN:[374..379] DBA/2)
+              (NN:[380..382] F1)))
+        (-RRB-:[382..383] -RRB-)))
+    (VP (VBD:[384..390] showed)
+      (NP
+        (NP
+          (ADJP
+            (QP (IN:[392..397] about)
+               (CD:[398..400] 10) (HYPH:[400..401] -) (RB:[401..405] fold))
+            (JJR:[406..413] greater))
+          (NN:[414..422] activity))
+        (PP (IN:[423..426] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[426..426] *))
+            (VP (VBG:[427..436] mediating)
+              (NP
+                (NP (JJ:[437..446] mutagenic) (NN:[447..457] activation))
+                (PP (IN:[458..460] of)
+                  (NP
+                    (NP (NN:[462..489] 3-methoxy-4-aminoazobenzene))
+                    (NP (-LRB-:[490..491] -LRB-) (NN:[491..500] 3-MeO-AAB)
+                        (-RRB-:[500..501] -RRB-)))))
+              (PP (IN:[502..508] toward)
+                (NP (NNP:[509..519] Salmonella) (NNP:[520..531] typhimurium)
+                    (NN:[532..536] TA98))))))
+        (SBAR (IN:[537..541] than)
+          (SINV (VBD:[543..546] did)
+            (NP-SBJ (DT:[547..550] the) (JJ:[551..564] corresponding)
+                    (JJ:[565..572] hepatic) (NNS:[573..583] microsomes))
+            (VP (-NONE-:[583..583] *?*)))))
+      (,:[583..584] ,)
+      (SBAR-ADV (IN:[585..587] as)
+        (S
+          (NP-SBJ-1 (-NONE-:[587..587] *))
+          (VP (VBN:[588..596] compared)
+            (NP-1 (-NONE-:[596..596] *))
+            (PP (IN:[597..599] on)
+              (NP
+                (NP (DT:[600..603] the) (NN:[604..609] basis))
+                (PP (IN:[610..612] of)
+                  (NP
+                    (NP (NN:[613..617] nmol))
+                    (PP (IN:[618..620] of)
+                      (NP (JJ:[622..632] microsomal)
+                         (NN:[633..643] cytochrome) (NN:[644..649] P-450)))))))))))
+    (.:[649..650] .)))
+
+;sentence 5 Span:651..854
+;On the other hand, female renal microsomes and  other extrahepatic microsomes
+;(lung, small intestine and colon) in both sexes of  mice showed little or no
+;activity for converting 3-MeO-AAB to mutagen(s).
+;[830..839]:substance:"3-MeO-AAB"
+;[843..853]:substance:"mutagen(s)"
+(SENT
+  (S
+    (PP (IN:[651..653] On)
+      (NP (DT:[654..657] the) (JJ:[658..663] other) (NN:[664..668] hand)))
+    (,:[668..669] ,)
+    (NP-SBJ
+      (NP
+        (NP (JJ:[670..676] female) (JJ:[677..682] renal)
+            (NNS:[683..693] microsomes))
+        (CC:[694..697] and)
+        (NP (JJ:[699..704] other) (JJ:[705..717] extrahepatic)
+            (NNS:[718..728] microsomes)
+          (PRN (-LRB-:[729..730] -LRB-)
+            (NP
+              (NP (NN:[730..734] lung))
+              (,:[734..735] ,)
+              (NP (JJ:[736..741] small) (NN:[742..751] intestine))
+              (CC:[752..755] and)
+              (NP (NN:[756..761] colon)))
+            (-RRB-:[761..762] -RRB-))))
+      (PP-LOC (IN:[763..765] in)
+        (NP
+          (NP (DT:[766..770] both) (NNS:[771..776] sexes))
+          (PP (IN:[777..779] of)
+            (NP (NNS:[781..785] mice))))))
+    (VP (VBD:[786..792] showed)
+      (NP
+        (NP
+          (NP (JJ:[793..799] little)
+            (NML-1 (-NONE-:[799..799] *P*)))
+          (CC:[800..802] or)
+          (NP (DT:[803..805] no)
+            (NML-1 (NN:[806..814] activity))))
+        (PP (IN:[815..818] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[818..818] *))
+            (VP (VBG:[819..829] converting)
+              (NP (NN:[830..839] 3-MeO-AAB))
+              (PP (TO:[840..842] to)
+                (NP (NNS:[843..853] mutagen-LRB-s-RRB-))))))))
+    (.:[853..854] .)))
+
+;sentence 6 Span:855..1012
+;The  mutagenic activation of 3-MeO-AAB with the male renal enzyme(s) was
+;definitely  inhibited by cytochrome P-450 inhibitors, 7,8-benzoflavone and
+;SKF 525A.
+;[884..893]:substance:"3-MeO-AAB"
+;[914..923]:cyp450:"enzyme(s)"
+;[953..969]:cyp450:"cytochrome P-450"
+;[970..980]:substance:"inhibitors"
+;[982..998]:substance:"7,8-benzoflavone"
+;[1003..1011]:substance:"SKF 525A"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[855..858] The) (JJ:[860..869] mutagenic)
+          (NN:[870..880] activation))
+      (PP (IN:[881..883] of)
+        (NP (NN:[884..893] 3-MeO-AAB)))
+      (PP (IN:[894..898] with)
+        (NP (DT:[899..902] the) (JJ:[903..907] male) (JJ:[908..913] renal)
+            (NN:[914..923] enzyme-LRB-s-RRB-))))
+    (VP (VBD:[924..927] was)
+      (ADVP (RB:[928..938] definitely))
+      (VP (VBN:[940..949] inhibited)
+        (NP-1 (-NONE-:[949..949] *))
+        (PP (IN:[950..952] by)
+          (NP-LGS
+            (NP
+              (NML (NN:[953..963] cytochrome) (NN:[964..969] P-450))
+              (NNS:[970..980] inhibitors))
+            (IN:[980..981] ,)
+            (NP
+              (NP (NN:[982..998] 7,8-benzoflavone))
+              (CC:[999..1002] and)
+              (NP (NN:[1003..1006] SKF) (NN:[1007..1011] 525A)))))))
+    (.:[1011..1012] .)))
+
+;sentence 7 Span:1013..1251
+;All  these findings suggest that in mice, there is a male-specific renal
+;3-MeO-AAB  activation enzyme(s), a cytochrome P-450 isozyme(s), which is
+;different, at  least in proportion and/or in nature, from hepatic cytochrome
+;P-450 isozymes.
+;[1086..1095]:substance:"3-MeO-AAB"
+;[1108..1117]:cyp450:"enzyme(s)"
+;[1121..1148]:cyp450:"cytochrome P-450 isozyme(s)"
+;[1225..1250]:cyp450:"cytochrome P-450 isozymes"
+(SENT
+  (S
+    (NP-SBJ (PDT:[1013..1016] All) (DT:[1018..1023] these)
+            (NNS:[1024..1032] findings))
+    (VP (VBP:[1033..1040] suggest)
+      (SBAR (IN:[1041..1045] that)
+        (S
+          (PP-LOC (IN:[1046..1048] in)
+            (NP (NNS:[1049..1053] mice)))
+          (,:[1053..1054] ,)
+          (NP-SBJ (EX:[1055..1060] there))
+          (VP (VBZ:[1061..1063] is)
+            (NP-PRD
+              (NP
+                (NP (DT:[1064..1065] a)
+                  (ADJP (NN:[1066..1070] male) (HYPH:[1070..1071] -)
+                        (JJ:[1071..1079] specific))
+                  (JJ:[1080..1085] renal)
+                  (NML (NN:[1086..1095] 3-MeO-AAB) (NN:[1097..1107] activation))
+                  (NN:[1108..1117] enzyme-LRB-s-RRB-))
+                (,:[1117..1118] ,)
+                (NP (DT:[1119..1120] a)
+                  
+                  (NML (NN:[1121..1131] cytochrome) (NN:[1132..1137] P-450))
+                  (NN:[1138..1148] isozyme-LRB-s-RRB-))
+                (,:[1148..1149] ,))
+              (SBAR
+                (WHNP-1 (WDT:[1150..1155] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1155..1155] *T*))
+                  (VP (VBZ:[1156..1158] is)
+                    (ADJP-PRD (JJ:[1159..1168] different) (,:[1168..1169] ,)
+                      (PP
+                        (PP
+                          (ADVP (IN:[1170..1172] at) (JJS:[1174..1179] least))
+                          (IN:[1180..1182] in)
+                          (NP (NN:[1183..1193] proportion)))
+                        (CC:[1194..1200] and/or)
+                        (PP (IN:[1201..1203] in)
+                          (NP (NN:[1204..1210] nature))))
+                      (,:[1210..1211] ,)
+                      (PP (IN:[1212..1216] from)
+                        (NP (JJ:[1217..1224] hepatic)
+                          
+                          (NML (NN:[1225..1235] cytochrome)
+                               (NN:[1236..1241] P-450))
+                          (NNS:[1242..1250] isozymes))))))))))))
+    (.:[1250..1251] .)))
+
+;section 8 Span:1255..1298
+;PMID: 3365254 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1255..1259] PMID) (::[1259..1260] :) (CD:[1261..1268] 3365254)
+        (-LRB-:[1269..1270] -LSB-) (NNP:[1270..1276] PubMed) (::[1277..1278] -)
+        (VBN:[1279..1286] indexed) (IN:[1287..1290] for)
+        (NNP:[1291..1298] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1298..EOF] ]
+
+(ORPH -RSB-)

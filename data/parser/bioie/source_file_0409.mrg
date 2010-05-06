@@ -1,0 +1,563 @@
+;PMID: 8068004
+;source_file_992.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..206] = [t:48..206]
+;2)section:[e:210..255] = [t:210..255]
+;3)section:[e:259..333] = [t:259..333]
+;4)sentence:[e:337..576] = [t:337..576]
+;5)sentence:[e:577..770] = [t:577..770]
+;6)sentence:[e:771..903] = [t:771..903]
+;7)sentence:[e:904..1152] = [t:904..1152]
+;8)sentence:[e:1153..1290] = [t:1153..1290]
+;9)sentence:[e:1291..1516] = [t:1291..1516]
+;10)sentence:[e:1517..1614] = [t:1517..1614]
+;11)sentence:[e:1615..1682] = [t:1615..1682]
+;12)sentence:[e:1683..1964] = [t:1683..1964]
+;13)sentence:[e:1965..2045] = [t:1965..2045]
+;14)sentence:[e:2046..2207] = [t:2046..2207]
+;15)section:[e:2211..2255] = [t:2211..2255]
+
+;section 0 Span:0..42
+;Biochem J. 1994 Aug 15;302 ( Pt 1):187-90.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..10] J.) (CD:[11..15] 1994)
+        (NNP:[16..19] Aug) (FW:[20..26] 15;302) (-LRB-:[27..28] -LRB-)
+        (NN:[29..31] Pt) (CD:[32..33] 1) (-RRB-:[33..34] -RRB-)
+        (CD:[34..38] :187) (::[38..39] -) (CD:[39..41] 90) (.:[41..42] .)))
+
+;sentence 1 Span:48..206
+;Pharmacology of a Ca(2+)-influx pathway activated by emptying the
+;intracellular  Ca2+ stores in HL-60 cells: evidence that a cytochrome P-450
+;is not involved.
+;[66..72]:substance:"Ca(2+)"
+;[129..133]:substance:"Ca2+"
+;[173..189]:cyp450:"cytochrome P-450"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[48..60] Pharmacology))
+      (PP (IN:[61..63] of)
+        (NP
+          (NP (DT:[64..65] a)
+            (NML (NN:[66..72] Ca-LRB-2+-RRB-) (HYPH:[72..73] -)
+                 (NN:[73..79] influx))
+            (NN:[80..87] pathway))
+          (VP (VBN:[88..97] activated)
+            (NP (-NONE-:[97..97] *))
+            (PP-MNR (IN:[98..100] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[100..100] *))
+                (VP (VBG:[101..109] emptying)
+                  (NP (DT:[110..113] the) (JJ:[114..127] intracellular)
+                    (NML (NN:[129..132] Ca2) (SYM:[132..133] +))
+                    (NNS:[134..140] stores))
+                  (PP-LOC (IN:[141..143] in)
+                    (NP (NN:[144..149] HL-60) (NNS:[150..155] cells))))))))))
+    (::[155..156] :)
+    (NP (NN:[157..165] evidence)
+      (SBAR (IN:[166..170] that)
+        (S
+          (NP-SBJ-1 (DT:[171..172] a)
+             (NN:[173..183] cytochrome) (NN:[184..189] P-450))
+          (VP (VBZ:[190..192] is) (RB:[193..196] not)
+            (VP (VBN:[197..205] involved)
+              (NP-1 (-NONE-:[205..205] *)))))))
+    (.:[205..206] .)))
+
+;section 2 Span:210..255
+;Koch BD, Faurot GF, Kopanitsa MV, Swinney DC.
+(SEC
+  (FRAG (NNP:[210..214] Koch) (NNP:[215..217] BD) (,:[217..218] ,)
+        (NNP:[219..225] Faurot) (NNP:[226..228] GF) (,:[228..229] ,)
+        (NNP:[230..239] Kopanitsa) (NNP:[240..242] MV) (,:[242..243] ,)
+        (NNP:[244..251] Swinney) (NNP:[252..255] DC.)))
+
+;section 3 Span:259..333
+;Institute of Pharmacology, Syntex Discovery Research, Palo Alto, CA 94304.
+(SEC
+  (FRAG (NNP:[259..268] Institute) (IN:[269..271] of)
+        (NNP:[272..284] Pharmacology) (,:[284..285] ,) (NNP:[286..292] Syntex)
+        (NNP:[293..302] Discovery) (NNP:[303..311] Research) (,:[311..312] ,)
+        (NNP:[313..317] Palo) (NNP:[318..322] Alto) (,:[322..323] ,)
+        (NNP:[324..326] CA) (CD:[327..332] 94304) (.:[332..333] .)))
+
+;sentence 4 Span:337..576
+;In HL-60 cells, inhibition of the endoplasmic-reticular Ca2+ pump by 
+;thapsigargin leads to the emptying of this intracellular Ca2+ store and a 
+;subsequent activation of plasma-membrane Ca2+ influx through a 
+;non-voltage-dependent pathway.
+;[393..402]:substance:"Ca2+ pump"
+;[407..419]:substance:"thapsigargin"
+;[464..468]:substance:"Ca2+"
+;[523..527]:substance:"Ca2+"
+(SENT
+  (S
+    (PP-LOC (IN:[337..339] In)
+      (NP (NN:[340..345] HL-60) (NNS:[346..351] cells)))
+    (,:[351..352] ,)
+    (NP-SBJ
+      (NP (NN:[353..363] inhibition))
+      (PP (IN:[364..366] of)
+        (NP (DT:[367..370] the)
+          (ADJP (JJ:[371..382] endoplasmic) (HYPH:[382..383] -)
+                (JJ:[383..392] reticular))
+          
+          (NML (NN:[393..396] Ca2) (SYM:[396..397] +))
+          (NN:[398..402] pump)))
+      (PP (IN:[403..405] by)
+        (NP (NN:[407..419] thapsigargin))))
+    (VP (VBZ:[420..425] leads)
+      (PP-CLR (TO:[426..428] to)
+        (NP
+          (NP
+            (NP (DT:[429..432] the) (NN:[433..441] emptying))
+            (PP (IN:[442..444] of)
+              (NP (DT:[445..449] this) (JJ:[450..463] intracellular)
+                (NML (NN:[464..467] Ca2) (SYM:[467..468] +))
+                (NN:[469..474] store))))
+          (CC:[475..478] and)
+          (NP
+            (NP (DT:[479..480] a) (JJ:[482..492] subsequent)
+                (NN:[493..503] activation))
+            (PP (IN:[504..506] of)
+              (NP
+                (NML (NN:[507..513] plasma) (HYPH:[513..514] -)
+                     (NN:[514..522] membrane))
+                (NML (NN:[523..526] Ca2) (SYM:[526..527] +))
+                (NN:[528..534] influx)))
+            (PP (IN:[535..542] through)
+              (NP (DT:[543..544] a)
+                (ADJP (AFX:[546..549] non) (HYPH:[549..550] -)
+                      (NN:[550..557] voltage) (HYPH:[557..558] -)
+                      (JJ:[558..567] dependent))
+                (NN:[568..575] pathway)))))))
+    (.:[575..576] .)))
+
+;sentence 5 Span:577..770
+;The elevated intracellular free Ca2+  concentration ([Ca2+]i) produced and
+;maintained by this Ca2+ inflow was used to  examine the potency of various
+;compounds to inhibit this influx mechanism.
+;[609..613]:substance:"Ca2+"
+;[630..637]:quantitative-name:"[Ca2+]i"
+;[671..675]:substance:"Ca2+"
+;[727..736]:substance:"compounds"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[577..580] The) (VBN:[581..589] elevated)
+          (JJ:[590..603] intracellular)
+        (NML (JJ:[604..608] free)
+          (NML (NN:[609..612] Ca2) (SYM:[612..613] +)))
+        (NN:[615..628] concentration)
+        (PRN (-LRB-:[629..630] -LRB-)
+          (NP
+            (NML (-LRB-:[630..631] -LSB-) (NN:[631..634] Ca2) (SYM:[634..635] +)
+                 (-RRB-:[635..636] -RSB-))
+            (NN:[636..637] i))
+          (-RRB-:[637..638] -RRB-)))
+      (VP (VBN:[639..647] produced) (CC:[648..651] and)
+          (VBN:[652..662] maintained)
+        (NP (-NONE-:[662..662] *))
+        (PP (IN:[663..665] by)
+          (NP-LGS (DT:[666..670] this)
+            (NML (NN:[671..674] Ca2) (SYM:[674..675] +))
+            (NN:[676..682] inflow)))))
+    (VP (VBD:[683..686] was)
+      (VP (VBN:[687..691] used)
+        (NP-2 (-NONE-:[691..691] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[691..691] *))
+          (VP (TO:[692..694] to)
+            (VP (VB:[696..703] examine)
+              (NP
+                (NP
+                  (NP (DT:[704..707] the) (NN:[708..715] potency))
+                  (PP (IN:[716..718] of)
+                    (NP (JJ:[719..726] various) (NNS:[727..736] compounds))))
+                (SBAR
+                  (WHNP-1 (-NONE-:[736..736] 0))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[736..736] *T*))
+                    (VP (TO:[737..739] to)
+                      (VP (VB:[740..747] inhibit)
+                        (NP (DT:[748..752] this) (NN:[753..759] influx)
+                            (NN:[760..769] mechanism))))))))))))
+    (.:[769..770] .)))
+
+;sentence 6 Span:771..903
+;As  expected, specific blockers of known Ca2+ channels, such as nifedipine, 
+;omega-conotoxin GVIA and ryanodine were without effect.
+;[794..802]:substance:"blockers"
+;[812..825]:substance:"Ca2+ channels"
+;[835..845]:substance:"nifedipine"
+;[848..868]:substance:"omega-conotoxin GVIA"
+;[873..882]:substance:"ryanodine"
+(SENT
+  (S
+    (SBAR-ADV (IN:[771..773] As)
+      (S
+        (NP-SBJ-1 (-NONE-:[773..773] *))
+        (VP (VBN:[775..783] expected)
+          (NP-1 (-NONE-:[783..783] *)))))
+    (,:[783..784] ,)
+    (NP-SBJ
+      (NP (JJ:[785..793] specific) (NNS:[794..802] blockers))
+      (PP (IN:[803..805] of)
+        (NP (JJ:[806..811] known)
+          
+          (NML (NN:[812..815] Ca2) (SYM:[815..816] +))
+          (NNS:[817..825] channels)))
+      (,:[825..826] ,)
+      (PP (JJ:[827..831] such) (IN:[832..834] as)
+        (NP
+          (NP (NN:[835..845] nifedipine))
+          (,:[845..846] ,)
+          (NP (NN:[848..863] omega-conotoxin) (NN:[864..868] GVIA))
+          (CC:[869..872] and)
+          (NP (NN:[873..882] ryanodine)))))
+    (VP (VBD:[883..887] were)
+      (PP-PRD (IN:[888..895] without)
+        (NP (NN:[896..902] effect))))
+    (.:[902..903] .)))
+
+;sentence 7 Span:904..1152
+;The less selective  inhibitors La3+, SKF-96365 and L-651,582, which are
+;thought to inhibit both  voltage-dependent and voltage-independent Ca2+
+;channels, decreased [Ca2+]i back  to resting levels, with pIC50 values of
+;5.2, 5.9 and 6.2 respectively.
+;[924..934]:substance:"inhibitors"
+;[935..939]:substance:"La3+"
+;[941..950]:substance:"SKF-96365"
+;[955..964]:substance:"L-651,582"
+;[1043..1056]:substance:"Ca2+ channels"
+;[1068..1075]:quantitative-name:"[Ca2+]i"
+;[1106..1111]:quantitative-name:"pIC50"
+;[1122..1125]:quantitative-value:"5.2"
+;[1127..1130]:quantitative-value:"5.9"
+;[1135..1138]:quantitative-value:"6.2"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[904..907] The)
+          (ADJP (RBR:[908..912] less) (JJ:[913..922] selective))
+          (NNS:[924..934] inhibitors))
+        (NP
+          (NP (NN:[935..938] La3) (SYM:[938..939] +))
+          (,:[939..940] ,)
+          (NP (NN:[941..950] SKF-96365))
+          (CC:[951..954] and)
+          (NP (NN:[955..964] L-651,582))))
+      (,:[964..965] ,)
+      (SBAR
+        (WHNP-2 (WDT:[966..971] which))
+        (S
+          (NP-SBJ-2 (-NONE-:[971..971] *T*))
+          (VP (VBP:[972..975] are)
+            (VP (VBN:[976..983] thought)
+              (S
+                (NP-SBJ-2 (-NONE-:[983..983] *))
+                (VP (TO:[984..986] to)
+                  (VP (VB:[987..994] inhibit)
+                    (NP (CC:[995..999] both)
+                      (NP
+                        (ADJP (NN:[1001..1008] voltage) (HYPH:[1008..1009] -)
+                              (JJ:[1009..1018] dependent))
+                        (NML-1 (-NONE-:[1018..1018] *P*)))
+                      (CC:[1019..1022] and)
+                      (NP
+                        (ADJP (NN:[1023..1030] voltage) (HYPH:[1030..1031] -)
+                              (JJ:[1031..1042] independent))
+                        (NML-1
+                          (NML (NN:[1043..1046] Ca2) (SYM:[1046..1047] +))
+                          (NNS:[1048..1056] channels))))))))))))
+    (,:[1056..1057] ,)
+    (VP (VBD:[1058..1067] decreased)
+      (NP
+        (NML (-LRB-:[1068..1069] -LSB-) (NN:[1069..1072] Ca2)
+             (SYM:[1072..1073] +) (-RRB-:[1073..1074] -RSB-))
+        (NN:[1074..1075] i))
+      (PP
+        (ADVP (RB:[1076..1080] back))
+        (TO:[1082..1084] to)
+        (NP (NN:[1085..1092] resting) (NNS:[1093..1099] levels)))
+      (,:[1099..1100] ,)
+      (PP (IN:[1101..1105] with)
+        (NP
+          (NP (NN:[1106..1111] pIC50) (NNS:[1112..1118] values))
+          (PP (IN:[1119..1121] of)
+            (NP
+              (NP (CD:[1122..1125] 5.2) (,:[1125..1126] ,) (CD:[1127..1130] 5.9)
+                  (CC:[1131..1134] and) (CD:[1135..1138] 6.2))
+              (ADVP (RB:[1139..1151] respectively)))))))
+    (.:[1151..1152] .)))
+
+;sentence 8 Span:1153..1290
+;It has  been proposed that a cytochrome P-450 is involved in activating
+;Ca(2+)-influx  pathways in thymocytes, neutrophils and platelets.
+;[1182..1198]:cyp450:"cytochrome P-450"
+;[1225..1231]:substance:"Ca(2+)"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (PRP:[1153..1155] It))
+      (SBAR-2 (-NONE-:[1155..1155] *ICH*)))
+    (VP (VBZ:[1156..1159] has)
+      (VP (VBN:[1161..1165] been)
+        (VP (VBN:[1166..1174] proposed)
+          (NP-3 (-NONE-:[1174..1174] *))
+          (SBAR-2 (IN:[1175..1179] that)
+            (S
+              (NP-SBJ-1 (DT:[1180..1181] a)
+                 (NN:[1182..1192] cytochrome) (NN:[1193..1198] P-450))
+              (VP (VBZ:[1199..1201] is)
+                (VP (VBN:[1202..1210] involved)
+                  (NP-1 (-NONE-:[1210..1210] *))
+                  (PP-CLR (IN:[1211..1213] in)
+                    (S-NOM
+                      (NP-SBJ (-NONE-:[1213..1213] *))
+                      (VP (VBG:[1214..1224] activating)
+                        (NP
+                          (NML (NN:[1225..1231] Ca-LRB-2+-RRB-)
+                               (HYPH:[1231..1232] -) (NN:[1232..1238] influx))
+                          (NNS:[1240..1248] pathways))
+                        (PP-LOC (IN:[1249..1251] in)
+                          (NP (NNS:[1252..1262] thymocytes) (,:[1262..1263] ,)
+                              (NNS:[1264..1275] neutrophils)
+                              (CC:[1276..1279] and) (NNS:[1280..1289] platelets)))))))))))))
+    (.:[1289..1290] .)))
+
+;sentence 9 Span:1291..1516
+;Consistent with this idea,  the imidazole cytochrome P-450 inhibitors
+;miconazole, econazole, clotrimazole  and ketoconazole inhibited the
+;thapsigargin-elevated [Ca2+]i with pIC50 values  of 7.1, 7.1, 7.1 and 5.8
+;respectively.
+;[1323..1332]:substance:"imidazole"
+;[1333..1349]:cyp450:"cytochrome P-450"
+;[1350..1360]:substance:"inhibitors"
+;[1361..1371]:substance:"miconazole"
+;[1373..1382]:substance:"econazole"
+;[1384..1396]:substance:"clotrimazole"
+;[1402..1414]:substance:"ketoconazole"
+;[1429..1441]:substance:"thapsigargin"
+;[1451..1458]:quantitative-name:"[Ca2+]i"
+;[1464..1469]:quantitative-name:"pIC50"
+;[1481..1484]:quantitative-value:"7.1"
+;[1486..1489]:quantitative-value:"7.1"
+;[1491..1494]:quantitative-value:"7.1"
+;[1499..1502]:quantitative-value:"5.8"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1291..1291] *))
+      (ADJP-PRD (JJ:[1291..1301] Consistent)
+        (PP (IN:[1302..1306] with)
+          (NP (DT:[1307..1311] this) (NN:[1312..1316] idea)))))
+    (,:[1316..1317] ,)
+    (NP-SBJ
+      (NP (DT:[1319..1322] the) (NN:[1323..1332] imidazole)
+        (NML (NN:[1333..1343] cytochrome) (NN:[1344..1349] P-450))
+        (NNS:[1350..1360] inhibitors))
+      (NP (NN:[1361..1371] miconazole) (,:[1371..1372] ,)
+          (NN:[1373..1382] econazole) (,:[1382..1383] ,)
+          (NN:[1384..1396] clotrimazole) (CC:[1398..1401] and)
+          (NN:[1402..1414] ketoconazole)))
+    (VP (VBD:[1415..1424] inhibited)
+      (NP (DT:[1425..1428] the)
+        (ADJP (NN:[1429..1441] thapsigargin) (HYPH:[1441..1442] -)
+              (VBN:[1442..1450] elevated))
+        
+        (NML (-LRB-:[1451..1452] -LSB-) (NN:[1452..1455] Ca2)
+             (SYM:[1455..1456] +) (-RRB-:[1456..1457] -RSB-))
+        (NN:[1457..1458] i))
+      (PP (IN:[1459..1463] with)
+        (NP
+          (NP (NN:[1464..1469] pIC50) (NNS:[1470..1476] values))
+          (PP (IN:[1478..1480] of)
+            (NP
+              (NP (CD:[1481..1484] 7.1) (,:[1484..1485] ,) (CD:[1486..1489] 7.1)
+                  (,:[1489..1490] ,) (CD:[1491..1494] 7.1) (CC:[1495..1498] and)
+                  (CD:[1499..1502] 5.8))
+              (ADVP (RB:[1503..1515] respectively)))))))
+    (.:[1515..1516] .)))
+
+;sentence 10 Span:1517..1614
+;The high affinity of imidazoles for  cytochromes P-450 is due to co-ordinate
+;binding to the haem.
+;[1538..1548]:substance:"imidazoles"
+;[1554..1571]:cyp450:"cytochromes P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1517..1520] The) (JJ:[1521..1525] high)
+          (NN:[1526..1534] affinity))
+      (PP (IN:[1535..1537] of)
+        (NP (NNS:[1538..1548] imidazoles)))
+      (PP (IN:[1549..1552] for)
+        (NP (NNS:[1554..1565] cytochromes) (NN:[1566..1571] P-450))))
+    (VP (VBZ:[1572..1574] is)
+      (PP-PRD (JJ:[1575..1578] due)
+        (PP (TO:[1579..1581] to)
+          (NP
+            (NP
+              (NML (AFX:[1582..1584] co) (HYPH:[1584..1585] -)
+                   (NN:[1585..1593] ordinate))
+              (NN:[1594..1601] binding))
+            (PP (TO:[1602..1604] to)
+              (NP (DT:[1605..1608] the) (NN:[1609..1613] haem)))))))
+    (.:[1613..1614] .)))
+
+;sentence 11 Span:1615..1682
+;This interaction is  greatly decreased in 2-substituted imidazoles.
+;[1671..1681]:substance:"imidazoles"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1615..1619] This) (NN:[1620..1631] interaction))
+    (VP (VBZ:[1632..1634] is)
+      (ADVP (RB:[1636..1643] greatly))
+      (VP (VBN:[1644..1653] decreased)
+        (NP-1 (-NONE-:[1653..1653] *))
+        (PP (IN:[1654..1656] in)
+          (NP
+            (ADJP (CD:[1657..1658] 2) (HYPH:[1658..1659] -)
+                  (VBN:[1659..1670] substituted))
+            (NNS:[1671..1681] imidazoles)))))
+    (.:[1681..1682] .)))
+
+;sentence 12 Span:1683..1964
+;We examined whether the  inhibition of Ca2+ influx was due to an interaction
+;of the inhibitor imidazole  nitrogen with the haem iron of the putative
+;cytochrome P-450 by comparing the  activity of two compounds, identical
+;except that one was methylated at the  imidazole 2-position.
+;[1722..1726]:substance:"Ca2+"
+;[1767..1776]:substance:"inhibitor"
+;[1777..1786]:substance:"imidazole"
+;[1832..1848]:cyp450:"cytochrome P-450"
+;[1883..1892]:substance:"compounds"
+;[1943..1952]:substance:"imidazole"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1683..1685] We))
+    (VP (VBD:[1686..1694] examined)
+      (SBAR-NOM (IN:[1695..1702] whether)
+        (S
+          (NP-SBJ
+            (NP (DT:[1703..1706] the) (NN:[1708..1718] inhibition))
+            (PP (IN:[1719..1721] of)
+              (NP
+                (NML (NN:[1722..1725] Ca2) (SYM:[1725..1726] +))
+                (NN:[1727..1733] influx))))
+          (VP (VBD:[1734..1737] was)
+            (PP-PRD (JJ:[1738..1741] due)
+              (PP (TO:[1742..1744] to)
+                (NP
+                  (NP (DT:[1745..1747] an) (NN:[1748..1759] interaction))
+                  (PP (IN:[1760..1762] of)
+                    (NP (DT:[1763..1766] the) (NN:[1767..1776] inhibitor)
+                        (NN:[1777..1786] imidazole) (NN:[1788..1796] nitrogen)))
+                  (PP (IN:[1797..1801] with)
+                    (NP
+                      (NP (DT:[1802..1805] the) (NN:[1806..1810] haem)
+                          (NN:[1811..1815] iron))
+                      (PP (IN:[1816..1818] of)
+                        (NP (DT:[1819..1822] the) (JJ:[1823..1831] putative)
+                           (NN:[1832..1842] cytochrome) (NN:[1843..1848] P-450)))))))))))
+      (PP-MNR (IN:[1849..1851] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1851..1851] *))
+          (VP (VBG:[1852..1861] comparing)
+            (NP
+              (NP (DT:[1862..1865] the) (NN:[1867..1875] activity))
+              (PP (IN:[1876..1878] of)
+                (NP
+                  (NP (CD:[1879..1882] two) (NNS:[1883..1892] compounds))
+                  (,:[1892..1893] ,)
+                  (RRC
+                    (ADJP (JJ:[1894..1903] identical))
+                    (PP (IN:[1904..1910] except)
+                      (SBAR-NOM (IN:[1911..1915] that)
+                        (S
+                          (NP-SBJ-1 (CD:[1916..1919] one))
+                          (VP (VBD:[1920..1923] was)
+                            (VP (VBN:[1924..1934] methylated)
+                              (NP-1 (-NONE-:[1934..1934] *))
+                              (PP (IN:[1935..1937] at)
+                                (NP (DT:[1938..1941] the)
+                                  (NML (NN:[1943..1952] imidazole)
+                                       (CD:[1953..1954] 2))
+                                  (HYPH:[1954..1955] -)
+                                   (NN:[1955..1963] position))))))))))))))))
+    (.:[1963..1964] .)))
+
+;sentence 13 Span:1965..2045
+;They were found to block thapsigargin-activated Ca2+  influx with equal
+;potency.
+;[1990..2002]:substance:"thapsigargin"
+;[2013..2017]:substance:"Ca2+"
+(SENT
+  (S
+    (NP-SBJ-1 (PRP:[1965..1969] They))
+    (VP (VBD:[1970..1974] were)
+      (VP (VBN:[1975..1980] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1980..1980] *))
+          (VP (TO:[1981..1983] to)
+            (VP (VB:[1984..1989] block)
+              (NP
+                (ADJP (NN:[1990..2002] thapsigargin) (HYPH:[2002..2003] -)
+                      (VBN:[2003..2012] activated))
+                (NML (NN:[2013..2016] Ca2) (SYM:[2016..2017] +))
+                (NN:[2019..2025] influx))
+              (PP (IN:[2026..2030] with)
+                (NP (JJ:[2031..2036] equal) (NN:[2037..2044] potency))))))))
+    (.:[2044..2045] .)))
+
+;sentence 14 Span:2046..2207
+;These results strongly suggest that a cytochrome  P-450 is not involved in
+;the activation of the Ca2+ influx produced by emptying  the intracellular
+;Ca2+ stores.
+;[2084..2101]:cyp450:"cytochrome  P-450"
+;[2143..2147]:substance:"Ca2+"
+;[2195..2199]:substance:"Ca2+"
+(SENT
+  (S
+    (NP-SBJ (DT:[2046..2051] These) (NNS:[2052..2059] results))
+    (ADVP (RB:[2060..2068] strongly))
+    (VP (VBP:[2069..2076] suggest)
+      (SBAR (IN:[2077..2081] that)
+        (S
+          (NP-SBJ-1 (DT:[2082..2083] a)
+             (NN:[2084..2094] cytochrome) (NN:[2096..2101] P-450))
+          (VP (VBZ:[2102..2104] is) (RB:[2105..2108] not)
+            (VP (VBN:[2109..2117] involved)
+              (NP-1 (-NONE-:[2117..2117] *))
+              (PP-CLR (IN:[2118..2120] in)
+                (NP
+                  (NP (DT:[2121..2124] the) (NN:[2125..2135] activation))
+                  (PP (IN:[2136..2138] of)
+                    (NP
+                      (NP (DT:[2139..2142] the)
+                        (NML (NN:[2143..2146] Ca2) (SYM:[2146..2147] +))
+                        (NN:[2148..2154] influx))
+                      (VP (VBN:[2155..2163] produced)
+                        (NP (-NONE-:[2163..2163] *))
+                        (PP-MNR (IN:[2164..2166] by)
+                          (S-NOM
+                            (NP-SBJ (-NONE-:[2166..2166] *))
+                            (VP (VBG:[2167..2175] emptying)
+                              (NP (DT:[2177..2180] the)
+                                  (JJ:[2181..2194] intracellular)
+                                (NML (NN:[2195..2198] Ca2) (SYM:[2198..2199] +))
+                                (NNS:[2200..2206] stores)))))))))))))))
+    (.:[2206..2207] .)))
+
+;section 15 Span:2211..2255
+;PMID: 8068004 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2211..2215] PMID) (::[2215..2216] :) (CD:[2217..2224] 8068004)
+        (NN:[2225..2226] -LSB-) (NNP:[2226..2232] PubMed) (::[2233..2234] -)
+        (NN:[2235..2242] indexed) (IN:[2243..2246] for)
+        (NNP:[2247..2255] MEDLINE-RSB-)))

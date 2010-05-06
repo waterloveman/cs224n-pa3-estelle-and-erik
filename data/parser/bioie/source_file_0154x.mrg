@@ -1,0 +1,360 @@
+;PMID: 10485468
+;source_file_1213.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..129] = [t:42..129]
+;2)section:[e:133..230] = [t:133..230]
+;3)section:[e:234..340] = [t:234..340]
+;4)sentence:[e:344..542] = [t:344..542]
+;5)sentence:[e:543..745] = [t:543..745]
+;6)sentence:[e:746..877] = [t:746..877]
+;7)sentence:[e:878..1068] = [t:878..1068]
+;8)sentence:[e:1069..1351] = [t:1069..1351]
+;9)sentence:[e:1352..1556] = [t:1352..1556]
+;10)section:[e:1560..1605] = [t:1560..1605]
+
+;section 0 Span:0..37
+;Cancer Res  1999 Sep 1;59(17):4257-60
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1999)
+        (NNP:[17..20] Sep) (CD:[21..26] 1;59-LRB-) (CD:[26..28] 17)
+        (-RRB-:[28..29] -RRB-) (CD:[29..34] :4257) (NN:[34..35] -)
+        (CD:[35..37] 60)))
+
+;sentence 1 Span:42..129
+;Frequent somatic mutations of the beta-catenin gene in intestinal-type
+;gastric  cancer.
+;[76..88]:gene-rna:"beta-catenin"
+;[97..128]:malignancy:"intestinal-type gastric  cancer"
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..50] Frequent) (JJ:[51..58] somatic) (NNS:[59..68] mutations))
+    (PP (IN:[69..71] of)
+      (NP (DT:[72..75] the) (NN:[76..88] beta-catenin) (NN:[89..93] gene)))
+    (PP (IN:[94..96] in)
+      (NP
+        (NML (JJ:[97..107] intestinal) (HYPH:[107..108] -) (NN:[108..112] type))
+        (JJ:[113..120] gastric) (NN:[122..128] cancer)))
+    (.:[128..129] .)))
+
+;section 2 Span:133..230
+;Park WS, Oh RR, Park JY, Lee SH, Shin MS, Kim YS, Kim SY, Lee HK, Kim PJ, Oh
+;ST,  Yoo NJ, Lee JY.
+(SEC
+  (FRAG (NNP:[133..137] Park) (NNP:[138..140] WS) (,:[140..141] ,)
+        (NNP:[142..144] Oh) (NNP:[145..147] RR) (,:[147..148] ,)
+        (NNP:[149..153] Park) (NNP:[154..156] JY) (NNP:[156..157] ,)
+        (NNP:[158..161] Lee) (NNP:[162..164] SH) (,:[164..165] ,)
+        (NNP:[166..170] Shin) (NNP:[171..173] MS) (,:[173..174] ,)
+        (NNP:[175..178] Kim) (NNP:[179..181] YS) (,:[181..182] ,)
+        (NNP:[183..186] Kim) (NNP:[187..189] SY) (,:[189..190] ,)
+        (NNP:[191..194] Lee) (NNP:[195..197] HK) (,:[197..198] ,)
+        (NNP:[199..202] Kim) (NNP:[203..205] PJ) (,:[205..206] ,)
+        (NNP:[207..209] Oh) (NNP:[210..212] ST) (,:[212..213] ,)
+        (NNP:[215..218] Yoo) (NNP:[219..221] NJ) (,:[221..222] ,)
+        (NNP:[223..226] Lee) (NNP:[227..229] JY) (.:[229..230] .)))
+
+;section 3 Span:234..340
+;Department of Pathology and Cancer Research Institute, Catholic University 
+;Medical College, Seoul, Korea.
+(SEC
+  (FRAG (NNP:[234..244] Department) (IN:[245..247] of)
+        (NNP:[248..257] Pathology) (CC:[258..261] and) (NNP:[262..268] Cancer)
+        (NNP:[269..277] Research) (NNP:[278..287] Institute) (IN:[287..288] ,)
+        (NNP:[289..297] Catholic) (NNP:[298..308] University)
+        (NNP:[310..317] Medical) (NNP:[318..325] College) (,:[325..326] ,)
+        (NNP:[327..332] Seoul) (,:[332..333] ,) (NNP:[334..339] Korea)
+        (.:[339..340] .)))
+
+;sentence 4 Span:344..542
+;The increased level of cytoplasmic beta-catenin through the mutations to
+;either  beta-catenin or adenomatous polyposis coli (APC) has been proposed as
+;an  important oncogenic step in various tumors.
+;[379..391]:gene-generic:"beta-catenin"
+;[425..437]:gene-rna:"beta-catenin"
+;[441..467]:gene-rna:"adenomatous polyposis coli"
+;[469..472]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[344..347] The) (VBN:[348..357] increased) (NN:[358..363] level))
+      (PP (IN:[364..366] of)
+        (NP (JJ:[367..378] cytoplasmic) (NN:[379..391] beta-catenin)))
+      (PP (IN:[392..399] through)
+        (NP
+          (NP (DT:[400..403] the) (NNS:[404..413] mutations))
+          (PP (TO:[414..416] to)
+            (NP (CC:[417..423] either)
+              (NP (NN:[425..437] beta-catenin))
+              (CC:[438..440] or)
+              (NP
+                (NP (JJ:[441..452] adenomatous) (NN:[453..462] polyposis)
+                    (NN:[463..467] coli))
+                (NP (-LRB-:[468..469] -LRB-) (NN:[469..472] APC)
+                    (-RRB-:[472..473] -RRB-))))))))
+    (VP (VBZ:[474..477] has)
+      (VP (VBN:[478..482] been)
+        (VP (VBN:[483..491] proposed)
+          (NP-1 (-NONE-:[491..491] *))
+          (PP (IN:[492..494] as)
+            (NP
+              (NP (DT:[495..497] an) (JJ:[499..508] important)
+                  (JJ:[509..518] oncogenic) (NN:[519..523] step))
+              (PP (IN:[524..526] in)
+                (NP (JJ:[527..534] various) (NNS:[535..541] tumors))))))))
+    (.:[541..542] .)))
+
+;sentence 5 Span:543..745
+;Gastric cancer showed frequent  genetic alterations of the APC gene, and the
+;risk for gastric cancer in familial  adenomatosus polyposis patients is 10
+;times higher than that in the general  population.
+;[543..557]:malignancy:"Gastric cancer"
+;[602..605]:gene-rna:"APC"
+;[629..643]:malignancy:"gastric cancer"
+;[647..679]:malignancy:"familial  adenomatosus polyposis"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[543..550] Gastric) (NN:[551..557] cancer))
+      (VP (VBD:[558..564] showed)
+        (NP
+          (NP (JJ:[565..573] frequent) (JJ:[575..582] genetic)
+              (NNS:[583..594] alterations))
+          (PP (IN:[595..597] of)
+            (NP (DT:[598..601] the) (NN:[602..605] APC) (NN:[606..610] gene))))))
+    (,:[610..611] ,) (CC:[612..615] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[616..619] the) (NN:[620..624] risk))
+        (PP (IN:[625..628] for)
+          (NP (JJ:[629..636] gastric) (NN:[637..643] cancer)))
+        (PP (IN:[644..646] in)
+          (NP
+             (JJ:[647..655] familial) (JJ:[657..669] adenomatosus)
+             (NN:[670..679] polyposis)
+            (NNS:[680..688] patients))))
+      (VP (VBZ:[689..691] is)
+        (ADJP-PRD
+          (ADJP
+            (NP (CD:[692..694] 10) (NNS:[695..700] times))
+            (JJR:[701..707] higher))
+          (PP (IN:[708..712] than)
+            (NP
+              (NP (DT:[713..717] that))
+              (PP (IN:[718..720] in)
+                (NP (DT:[721..724] the) (JJ:[725..732] general)
+                    (NN:[734..744] population))))))))
+    (.:[744..745] .)))
+
+;sentence 6 Span:746..877
+;These findings raise the possibility that mutations of beta-catenin  may also
+;be associated with the development of gastric cancer.
+;[801..813]:gene-rna:"beta-catenin"
+;[862..876]:malignancy:"gastric cancer"
+(SENT
+  (S
+    (NP-SBJ (DT:[746..751] These) (NNS:[752..760] findings))
+    (VP (VBP:[761..766] raise)
+      (NP
+        (NP (DT:[767..770] the) (NN:[771..782] possibility))
+        (SBAR (IN:[783..787] that)
+          (S
+            (NP-SBJ-1
+              (NP (NNS:[788..797] mutations))
+              (PP (IN:[798..800] of)
+                (NP (NN:[801..813] beta-catenin))))
+            (VP (MD:[815..818] may)
+              (ADVP (RB:[819..823] also))
+              (VP (VB:[824..826] be)
+                (VP (VBN:[827..837] associated)
+                  (NP-1 (-NONE-:[837..837] *))
+                  (PP-CLR (IN:[838..842] with)
+                    (NP
+                      (NP (DT:[843..846] the) (NN:[847..858] development))
+                      (PP (IN:[859..861] of)
+                        (NP (JJ:[862..869] gastric) (NN:[870..876] cancer))))))))))))
+    (.:[876..877] .)))
+
+;sentence 7 Span:878..1068
+;We detected seven  somatic mutations in a portion of exon 3 encoding for the
+;glycogen synthase  kinase 3beta phosphorylation consensus region of the
+;beta-catenin gene in 43  gastric cancers.
+;[905..914]:variation-event:"mutations"
+;[931..937]:variation-location:"exon 3"
+;[955..986]:gene-protein:"glycogen synthase  kinase 3beta"
+;[1027..1039]:gene-rna:"beta-catenin"
+;[1052..1067]:malignancy:"gastric cancers"
+(SENT
+  (S
+    (NP-SBJ (PRP:[878..880] We))
+    (VP (VBD:[881..889] detected)
+      (NP
+        (NP (CD:[890..895] seven) (JJ:[897..904] somatic)
+            (NNS:[905..914] mutations))
+        (PP (IN:[915..917] in)
+          (NP
+            (NP (DT:[918..919] a) (NN:[920..927] portion))
+            (PP (IN:[928..930] of)
+              (NP
+                (NP (NN:[931..935] exon) (CD:[936..937] 3))
+                (VP (VBG:[938..946] encoding)
+                  (PP-CLR (IN:[947..950] for)
+                    (NP
+                      (NP (DT:[951..954] the)
+                        (NML (NN:[955..963] glycogen) (NN:[964..972] synthase)
+                             (NN:[974..980] kinase) (NN:[981..986] 3beta))
+                        (NN:[987..1002] phosphorylation)
+                         (NN:[1003..1012] consensus) (NN:[1013..1019] region))
+                      (PP (IN:[1020..1022] of)
+                        (NP (DT:[1023..1026] the) (NN:[1027..1039] beta-catenin)
+                            (NN:[1040..1044] gene)))))))))))
+      (PP (IN:[1045..1047] in)
+        (NP (CD:[1048..1050] 43)
+           (JJ:[1052..1059] gastric) (NNS:[1060..1067] cancers))))
+    (.:[1067..1068] .)))
+
+;sentence 8 Span:1069..1351
+;All of these mutations were missense mutations, of which five  are in the
+;highly conserved aspartic acid 32 and two are in serine 29; all of  these
+;seven mutations were detected exclusively in intestinal-type gastric  cancers
+;(7 of 26; 26.9%), but not in the diffuse-type (0 of 17).
+;[1082..1091]:variation-event:"mutations"
+;[1097..1115]:variation-type:"missense mutations"
+;[1160..1173]:variation-state-original:"aspartic acid"
+;[1174..1176]:variation-location:"32"
+;[1192..1198]:variation-state-original:"serine"
+;[1199..1201]:variation-location:"29"
+;[1223..1232]:variation-event:"mutations"
+;[1262..1294]:malignancy:"intestinal-type gastric  cancers"
+;[1278..1294]...[1328..1340]:malignancy:"gastric  cancers"..."diffuse-type"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1069..1072] All))
+        (PP (IN:[1073..1075] of)
+          (NP (DT:[1076..1081] these) (NNS:[1082..1091] mutations))))
+      (VP (VBD:[1092..1096] were)
+        (NP-PRD
+          (NP (JJ:[1097..1105] missense) (NNS:[1106..1115] mutations))
+          (,:[1115..1116] ,)
+          (SBAR
+            (WHPP-1 (IN:[1117..1119] of)
+              (WHNP (WDT:[1120..1125] which)))
+            (S
+              (S
+                (NP-SBJ
+                  (NP (CD:[1126..1130] five))
+                  (PP-1 (-NONE-:[1130..1130] *T*)))
+                (VP (VBP:[1132..1135] are)
+                  (PP-PRD (IN:[1136..1138] in)
+                    (NP (DT:[1139..1142] the)
+                      (ADJP (RB:[1143..1149] highly)
+                            (VBN:[1150..1159] conserved))
+                      (NML (JJ:[1160..1168] aspartic) (NN:[1169..1173] acid))
+                      (CD:[1174..1176] 32)))))
+              (CC:[1177..1180] and)
+              (S
+                (NP-SBJ
+                  (NP (CD:[1181..1184] two))
+                  (PP-1 (-NONE-:[1184..1184] *T*)))
+                (VP (VBP:[1185..1188] are)
+                  (PP-PRD (IN:[1189..1191] in)
+                    (NP (NN:[1192..1198] serine) (CD:[1199..1201] 29))))))))))
+    (::[1201..1202] ;)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[1203..1206] all))
+        (PP (IN:[1207..1209] of)
+          (NP (DT:[1211..1216] these) (CD:[1217..1222] seven)
+              (NNS:[1223..1232] mutations))))
+      (VP (VBD:[1233..1237] were)
+        (VP
+          (VP (VBN:[1238..1246] detected)
+            (NP-2 (-NONE-:[1246..1246] *))
+            (ADVP=3 (RB:[1247..1258] exclusively))
+            (PP-LOC=4 (IN:[1259..1261] in)
+              (NP
+                
+                (NML (JJ:[1262..1272] intestinal) (HYPH:[1272..1273] -)
+                     (NN:[1273..1277] type))
+                (JJ:[1278..1285] gastric) (NNS:[1287..1294] cancers)
+                (PRN (-LRB-:[1295..1296] -LRB-)
+                  (FRAG
+                    (NP
+                      (NP (CD:[1296..1297] 7))
+                      (PP (IN:[1298..1300] of)
+                        (NP (CD:[1301..1303] 26))))
+                    (::[1303..1304] ;)
+                    (NP (CD:[1305..1309] 26.9) (NN:[1309..1310] %)))
+                  (-RRB-:[1310..1311] -RRB-)))))
+          (,:[1311..1312] ,) (CC:[1313..1316] but)
+          (VP (RB:[1317..1320] not)
+            (ADVP=3 (-NONE-:[1320..1320] *NOT*))
+            (PP-LOC=4 (IN:[1321..1323] in)
+              (NP (DT:[1324..1327] the) (JJ:[1328..1335] diffuse)
+                  (HYPH:[1335..1336] -) (NN:[1336..1340] type)
+                (PRN (-LRB-:[1341..1342] -LRB-)
+                  (NP
+                    (NP (CD:[1342..1343] 0))
+                    (PP (IN:[1344..1346] of)
+                      (NP (CD:[1347..1349] 17))))
+                  (-RRB-:[1349..1350] -RRB-))))))))
+    (.:[1350..1351] .)))
+
+;sentence 9 Span:1352..1556
+;We concluded  that disruption of the APC/beta-catenin/T cell factor-lymphoid
+;enhancer binding  factor pathway might play an important role especially in
+;the development of  intestinal-type gastric cancer.
+;[1389..1392]:gene-generic:"APC"
+;[1393..1405]:gene-generic:"beta-catenin"
+;[1406..1419]:gene-protein:"T cell factor"
+;[1420..1453]:gene-protein:"lymphoid enhancer binding  factor"
+;[1525..1555]:malignancy:"intestinal-type gastric cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1352..1354] We))
+    (VP (VBD:[1355..1364] concluded)
+      (SBAR (IN:[1366..1370] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1371..1381] disruption))
+            (PP (IN:[1382..1384] of)
+              (NP (DT:[1385..1388] the)
+                (NML
+                  (NML (NN:[1389..1392] APC))
+                  (SYM:[1392..1393] /)
+                  (NML (NN:[1393..1405] beta-catenin))
+                  (SYM:[1405..1406] /)
+                  (NML (NN:[1406..1407] T) (NN:[1408..1412] cell)
+                       (NN:[1413..1419] factor))
+                  (HYPH:[1419..1420] -)
+                  (NML
+                    (NML (JJ:[1420..1428] lymphoid) (NN:[1429..1437] enhancer))
+                    (VBG:[1438..1445] binding) (NN:[1447..1453] factor)))
+                (NN:[1454..1461] pathway))))
+          (VP (MD:[1462..1467] might)
+            (VP (VB:[1468..1472] play)
+              (NP (DT:[1473..1475] an) (JJ:[1476..1485] important)
+                  (NN:[1486..1490] role))
+              (PP
+                (ADVP (RB:[1491..1501] especially))
+                (IN:[1502..1504] in)
+                (NP
+                  (NP (DT:[1505..1508] the) (NN:[1509..1520] development))
+                  (PP (IN:[1521..1523] of)
+                    (NP
+                      (NML (JJ:[1525..1535] intestinal) (HYPH:[1535..1536] -)
+                           (NN:[1536..1540] type))
+                      (JJ:[1541..1548] gastric) (NN:[1549..1555] cancer))))))))))
+    (.:[1555..1556] .)))
+
+;section 10 Span:1560..1605
+;PMID: 10485468 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1560..1564] PMID) (::[1564..1565] :) (CD:[1566..1574] 10485468)
+        (IN:[1575..1576] -LSB-) (NNP:[1576..1582] PubMed) (HYPH:[1583..1584] -)
+        (JJ:[1585..1592] indexed) (IN:[1593..1596] for)
+        (NNP:[1597..1605] MEDLINE-RSB-)))

@@ -1,0 +1,323 @@
+;PMID: 9048488
+;source_file_1224.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:39..145] = [t:39..145]
+;2)section:[e:149..199] = [t:149..199]
+;3)section:[e:203..278] = [t:203..278]
+;4)sentence:[e:282..676] = [t:282..676]
+;5)sentence:[e:677..881] = [t:677..881]
+;6)sentence:[e:882..996] = [t:882..996]
+;7)sentence:[e:998..1093] = [t:998..1093]
+;8)sentence:[e:1094..1322] = [t:1094..1322]
+;9)section:[e:1326..1370] = [t:1326..1370]
+
+;section 0 Span:0..34
+;Yonsei Med J  1996 Dec;37(6):371-9
+(SEC
+  (FRAG (NNP:[0..6] Yonsei) (NNP:[7..10] Med) (NNP:[11..12] J)
+        (CD:[14..18] 1996) (.:[19..26] Dec;37-LRB-) (CD:[26..28] 6-RRB-)
+        (CD:[28..32] :371) (::[32..33] -) (CD:[33..34] 9)))
+
+;sentence 1 Span:39..145
+;A PCR-RFLP method for the detection of activated H-ras oncogene with a point 
+;mutation at codon 12 and 61.
+;[88..93]:gene-rna:"H-ras"
+;[110..125]:variation-type:"point  mutation"
+;[129..137]:variation-location:"codon 12"
+;[129..134]...[142..144]:variation-location:"codon"..."61"
+(SENT
+  (NP-HLN
+    (NP (DT:[39..40] A)
+      (NML (NN:[41..44] PCR) (HYPH:[44..45] -) (NN:[45..49] RFLP))
+      (NN:[50..56] method))
+    (PP (IN:[57..60] for)
+      (NP
+        (NP (DT:[61..64] the) (NN:[65..74] detection))
+        (PP (IN:[75..77] of)
+          (NP
+            (NP (VBN:[78..87] activated) (NN:[88..93] H-ras)
+                (NN:[94..102] oncogene))
+            (PP (IN:[103..107] with)
+              (NP
+                (NP (DT:[108..109] a)
+                   (NN:[110..115] point) (NN:[117..125] mutation))
+                (PP-LOC (IN:[126..128] at)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[129..134] codon))
+                      (CD:[135..137] 12))
+                    (CC:[138..141] and)
+                    (NP
+                      (NML-1 (-NONE-:[141..141] *P*))
+                      (CD:[142..144] 61))))))))))
+    (.:[144..145] .)))
+
+;section 2 Span:149..199
+;Hong SJ, Lee T, Park YS, Lee KO, Chung BH, Lee SH.
+(SEC
+  (FRAG (NNP:[149..153] Hong) (NNP:[154..156] SJ) (,:[156..157] ,)
+        (NNP:[158..161] Lee) (NNP:[162..163] T) (,:[163..164] ,)
+        (NNP:[165..169] Park) (NNP:[170..172] YS) (NNP:[172..173] ,)
+        (NNP:[174..177] Lee) (NNP:[178..180] KO) (,:[180..181] ,)
+        (NNP:[182..187] Chung) (NNP:[188..190] BH) (,:[190..191] ,)
+        (NNP:[192..195] Lee) (NNP:[196..199] SH.)))
+
+;section 3 Span:203..278
+;Department of Urology, Yonsei University College of Medicine, Seoul, Korea.
+(SEC
+  (FRAG (NNP:[203..213] Department) (IN:[214..216] of) (NNP:[217..224] Urology)
+        (,:[224..225] ,) (NNP:[226..232] Yonsei) (NNP:[233..243] University)
+        (NNP:[244..251] College) (IN:[252..254] of) (NNP:[255..263] Medicine)
+        (,:[263..264] ,) (NNP:[265..270] Seoul) (,:[270..271] ,)
+        (NNP:[272..277] Korea) (.:[277..278] .)))
+
+;sentence 4 Span:282..676
+;To investigate the incidence of the H-ras gene activation in bladder tumor
+;and  the feasibility of using urinary washout samples for screening, a series
+;of 33  human bladder tumors and their preoperatively collected urinary
+;washout samples  were screened using a mutant specific PCR-RFLP (polymerase
+;chain-restriction  fragment length polymorphism) to detect a point mutation
+;of the H-ras gene.
+;[318..323]:gene-rna:"H-ras"
+;[343..356]:malignancy:"bladder tumor"
+;[448..462]:malignancy:"bladder tumors"
+;[571..581]:gene-protein:"polymerase"
+;[643..657]:variation-type:"point mutation"
+;[665..670]:gene-rna:"H-ras"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[282..282] *))
+      (VP (TO:[282..284] To)
+        (VP (VB:[285..296] investigate)
+          (NP
+            (NP
+              (NP (DT:[297..300] the) (NN:[301..310] incidence))
+              (PP (IN:[311..313] of)
+                (NP (DT:[314..317] the) (NN:[318..323] H-ras)
+                    (NN:[324..328] gene) (NN:[329..339] activation)))
+              (PP (IN:[340..342] in)
+                (NP (NN:[343..350] bladder) (NN:[351..356] tumor))))
+            (CC:[357..360] and)
+            (NP
+              (NP (DT:[362..365] the) (NN:[366..377] feasibility))
+              (PP (IN:[378..380] of)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[380..380] *))
+                  (VP (VBG:[381..386] using)
+                    (NP (JJ:[387..394] urinary) (NN:[395..402] washout)
+                        (NNS:[403..410] samples))
+                    (PP (IN:[411..414] for)
+                      (NP (NN:[415..424] screening)))))))))))
+    (,:[424..425] ,)
+    (NP-SBJ-1
+      (NP (DT:[426..427] a) (NN:[428..434] series))
+      (PP (IN:[435..437] of)
+        (NP
+          (NP (CD:[438..440] 33) (JJ:[442..447] human)
+             (NN:[448..455] bladder) (NNS:[456..462] tumors))
+          (CC:[463..466] and)
+          (NP (PRP$:[467..472] their)
+            (ADJP (RB:[473..487] preoperatively) (VBN:[488..497] collected))
+            (JJ:[498..505] urinary) (NN:[506..513] washout)
+             (NNS:[514..521] samples)))))
+    (VP (VBD:[523..527] were)
+      (VP (VBN:[528..536] screened)
+        (NP-1 (-NONE-:[536..536] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[536..536] *))
+          (VP (VBG:[537..542] using)
+            (NP (DT:[543..544] a)
+              (ADJP (NN:[545..551] mutant) (JJ:[552..560] specific))
+              (NML
+                (NML (NN:[561..564] PCR) (HYPH:[564..565] -)
+                     (NN:[565..569] RFLP))
+                (NML (-LRB-:[570..571] -LRB-)
+                  (NML (NN:[571..581] polymerase) (NN:[582..587] chain))
+                  (HYPH:[587..588] -)
+                  (NML (NN:[588..599] restriction) (NN:[601..609] fragment)
+                       (NN:[610..616] length) (NN:[617..629] polymorphism))
+                  (-RRB-:[629..630] -RRB-))))
+            (S-PRP
+              (NP-SBJ (-NONE-:[630..630] *))
+              (VP (TO:[631..633] to)
+                (VP (VB:[634..640] detect)
+                  (NP
+                    (NP (DT:[641..642] a)
+                       (NN:[643..648] point) (NN:[649..657] mutation))
+                    (PP (IN:[658..660] of)
+                      (NP (DT:[661..664] the) (NN:[665..670] H-ras)
+                          (NN:[671..675] gene)))))))))))
+    (.:[675..676] .)))
+
+;sentence 5 Span:677..881
+;Five  tumors were found to harbor H-ras mutations where two tumors had a
+;glycine to  valine (G-->T) change in codon 12 and three tumors had a
+;glutamine to lysine  (C-->A) change in codon 61, respectively.
+;[683..689]:malignancy:"tumors"
+;[711..716]:gene-rna:"H-ras"
+;[737..743]:malignancy:"tumors"
+;[750..757]:variation-state-original:"glycine"
+;[762..768]:variation-state-altered:"valine"
+;[770..771]:variation-state-original:"G"
+;[774..775]:variation-state-altered:"T"
+;[787..795]:variation-location:"codon 12"
+;[806..812]:malignancy:"tumors"
+;[819..828]:variation-state-original:"glutamine"
+;[832..838]:variation-state-altered:"lysine"
+;[841..842]:variation-state-original:"C"
+;[845..846]:variation-state-altered:"A"
+;[858..866]:variation-location:"codon 61"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[677..681] Five) (NNS:[683..689] tumors))
+    (VP (VBD:[690..694] were)
+      (VP (VBN:[695..700] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[700..700] *))
+          (VP (TO:[701..703] to)
+            (VP (VB:[704..710] harbor)
+              (NP (NN:[711..716] H-ras) (NNS:[717..726] mutations))
+              (SBAR-ADV (IN:[727..732] where)
+                (S
+                  (S
+                    (NP-SBJ (CD:[733..736] two) (NNS:[737..743] tumors))
+                    (VP (VBD:[744..747] had)
+                      (NP (DT:[748..749] a)
+                        (NML
+                          (NML (NN:[750..757] glycine))
+                          (PP (TO:[758..760] to)
+                            (NP (NN:[762..768] valine))))
+                        (PRN (-LRB-:[769..770] -LRB-)
+                          (NP
+                            (NP (NN:[770..771] G))
+                            (PP (SYM:[771..774] -->)
+                              (NP (NN:[774..775] T))))
+                          (-RRB-:[775..776] -RRB-))
+                        (NN:[777..783] change))
+                      (PP-LOC (IN:[784..786] in)
+                        (NP (NN:[787..792] codon) (CD:[793..795] 12)))))
+                  (CC:[796..799] and)
+                  (S
+                    (NP-SBJ (CD:[800..805] three) (NNS:[806..812] tumors))
+                    (VP (VBD:[813..816] had)
+                      (NP (DT:[817..818] a)
+                        (NML
+                          (NML (NN:[819..828] glutamine))
+                          (PP (TO:[829..831] to)
+                            (NP (NN:[832..838] lysine))))
+                        (PRN (-LRB-:[840..841] -LRB-)
+                          (NP
+                            (NP (NN:[841..842] C))
+                            (PP (SYM:[842..845] -->)
+                              (NP (NN:[845..846] A))))
+                          (-RRB-:[846..847] -RRB-))
+                        (NN:[848..854] change))
+                      (PP-LOC (IN:[855..857] in)
+                        (NP (NN:[858..863] codon) (CD:[864..866] 61)))
+                      (,:[866..867] ,)
+                      (ADVP (RB:[868..880] respectively)))))))))))
+    (.:[880..881] .)))
+
+;sentence 6 Span:882..996
+;Moreover, we could also detect the  same point mutations of the H-ras gene in
+;corresponding urine washout samples.
+;[923..938]:variation-type:"point mutations"
+;[946..951]:gene-rna:"H-ras"
+(SENT
+  (S
+    (ADVP (RB:[882..890] Moreover))
+    (,:[890..891] ,)
+    (NP-SBJ (PRP:[892..894] we))
+    (VP (MD:[895..900] could)
+      (ADVP (RB:[901..905] also))
+      (VP (VB:[906..912] detect)
+        (NP
+          (NP (DT:[913..916] the) (JJ:[918..922] same)
+             (NN:[923..928] point) (NNS:[929..938] mutations))
+          (PP (IN:[939..941] of)
+            (NP (DT:[942..945] the) (NN:[946..951] H-ras) (NN:[952..956] gene))))
+        (PP-LOC (IN:[957..959] in)
+          (NP (JJ:[960..973] corresponding) (NN:[974..979] urine)
+              (NN:[980..987] washout) (NNS:[988..995] samples)))))
+    (.:[995..996] .)))
+
+;sentence 7 Span:998..1093
+;The incidence of H-ras mutation in Korean bladder cancer was estimated at 
+;approximately 15.2%.
+;[1015..1020]:gene-rna:"H-ras"
+;[1040..1054]:malignancy:"bladder cancer"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[998..1001] The) (NN:[1002..1011] incidence))
+      (PP (IN:[1012..1014] of)
+        (NP
+          (NP (NN:[1015..1020] H-ras) (NN:[1021..1029] mutation))
+          (PP (IN:[1030..1032] in)
+            (NP (JJ:[1033..1039] Korean)
+               (NN:[1040..1047] bladder) (NN:[1048..1054] cancer))))))
+    (VP (VBD:[1055..1058] was)
+      (VP (VBN:[1059..1068] estimated)
+        (NP-1 (-NONE-:[1068..1068] *))
+        (PP (IN:[1069..1071] at)
+          (NP
+            (QP (RB:[1073..1086] approximately) (CD:[1087..1091] 15.2))
+            (NN:[1091..1092] %)))))
+    (.:[1092..1093] .)))
+
+;sentence 8 Span:1094..1322
+;In conclusion, a mutant specific PCR-RFLP method for the  detection of H-ras
+;gene mutation is useful for screening or postoperative  follow-up of bladder
+;tumor due to its simplicity and high specificity even in  urinary samples.
+;[1165..1170]:gene-rna:"H-ras"
+;[1240..1253]:malignancy:"bladder tumor"
+(SENT
+  (S
+    (PP (IN:[1094..1096] In)
+      (NP (NN:[1097..1107] conclusion)))
+    (,:[1107..1108] ,)
+    (NP-SBJ
+      (NP (DT:[1109..1110] a)
+        (ADJP (NN:[1111..1117] mutant) (JJ:[1118..1126] specific))
+        (NML (NN:[1127..1130] PCR) (HYPH:[1130..1131] -) (NN:[1131..1135] RFLP))
+        (NN:[1136..1142] method))
+      (PP (IN:[1143..1146] for)
+        (NP
+          (NP (DT:[1147..1150] the) (NN:[1152..1161] detection))
+          (PP (IN:[1162..1164] of)
+            (NP (NN:[1165..1170] H-ras) (NN:[1171..1175] gene)
+                (NN:[1176..1184] mutation))))))
+    (VP (VBZ:[1185..1187] is)
+      (NP-PRD
+        (NP (JJ:[1188..1194] useful))
+        (PP (IN:[1195..1198] for)
+          (NP
+            (NP (NN:[1199..1208] screening))
+            (CC:[1209..1211] or)
+            (NP
+              (NP (JJ:[1212..1225] postoperative) (VB:[1227..1233] follow)
+                  (HYPH:[1233..1234] -) (RP:[1234..1236] up))
+              (PP (IN:[1237..1239] of)
+                (NP (NN:[1240..1247] bladder) (NN:[1248..1253] tumor))))))
+        (PP (JJ:[1254..1257] due)
+          (PP (TO:[1258..1260] to)
+            (NP
+              (NP (PRP$:[1261..1264] its) (NN:[1265..1275] simplicity))
+              (CC:[1276..1279] and)
+              (NP (JJ:[1280..1284] high)
+                (NML (NN:[1285..1296] specificity))))))
+        (PP-LOC (RB:[1297..1301] even) (IN:[1302..1304] in)
+          (NP (JJ:[1306..1313] urinary) (NNS:[1314..1321] samples)))))
+    (.:[1321..1322] .)))
+
+;section 9 Span:1326..1370
+;PMID: 9048488 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1326..1330] PMID) (::[1330..1331] :) (CD:[1332..1339] 9048488)
+        (NN:[1340..1341] -LSB-) (NNP:[1341..1347] PubMed) (::[1348..1349] -)
+        (NN:[1350..1357] indexed) (IN:[1358..1361] for)
+        (NNP:[1362..1370] MEDLINE-RSB-)))

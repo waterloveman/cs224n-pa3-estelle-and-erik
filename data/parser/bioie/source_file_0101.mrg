@@ -1,0 +1,645 @@
+;PMID: 3311717
+;source_file_1927.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..158] = [t:44..158]
+;2)section:[e:162..234] = [t:162..234]
+;3)section:[e:238..325] = [t:238..325]
+;4)sentence:[e:329..673] = [t:329..673]
+;5)sentence:[e:674..963] = [t:674..963]
+;6)sentence:[e:964..1217] = [t:964..1217]
+;7)sentence:[e:1218..1663] = [t:1218..1663]
+;8)sentence:[e:1664..1967] = [t:1664..1967]
+;9)sentence:[e:1968..2230] = [t:1968..2230]
+;10)sentence:[e:2231..2414] = [t:2231..2414]
+;11)sentence:[e:2415..2606] = [t:2415..2606]
+;12)section:[e:2610..2654] = [t:2610..2654]
+
+;section 0 Span:0..38
+;Endocrinology. 1987 Nov;121(5):1721-6.
+(SEC
+  (FRAG (NNP:[0..13] Endocrinology) (.:[13..14] .) (CD:[15..19] 1987)
+        (NN:[20..27] Nov;121) (-LRB-:[27..28] -LRB-) (CD:[28..29] 5)
+        (-RRB-:[29..30] -RRB-) (CD:[30..35] :1721) (CD:[35..38] -6.)))
+
+;sentence 1 Span:44..158
+;The role of insulin in the stimulation of renal 1,25-dihydroxyvitamin D 
+;synthesis by parathyroid hormone in rats.
+;[56..63]:substance:"insulin"
+;[92..115]:substance:"1,25-dihydroxyvitamin D"
+;[130..149]:substance:"parathyroid hormone"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (DT:[44..47] The) (NN:[48..52] role))
+      (PP (IN:[53..55] of)
+        (NP (NN:[56..63] insulin))))
+    (PP (IN:[64..66] in)
+      (NP
+        (NP (DT:[67..70] the) (NN:[71..82] stimulation))
+        (PP (IN:[83..85] of)
+          (NP (JJ:[86..91] renal)
+            (NML (NN:[92..113] 1,25-dihydroxyvitamin) (NN:[114..115] D))
+            (NN:[117..126] synthesis)))
+        (PP (IN:[127..129] by)
+          (NP (JJ:[130..141] parathyroid) (NN:[142..149] hormone)))))
+    (PP-LOC (IN:[150..152] in)
+      (NP (NNS:[153..157] rats)))
+    (.:[157..158] .)))
+
+;section 2 Span:162..234
+;Ikeda K, Matsumoto T, Morita K, Yamato H, Takahashi H, Ezawa I, Ogata E.
+(SEC
+  (FRAG (NNP:[162..167] Ikeda) (NNP:[168..170] K,) (NNP:[171..180] Matsumoto)
+        (NNP:[181..182] T) (,:[182..183] ,) (NNP:[184..190] Morita)
+        (NNP:[191..193] K,) (NNP:[194..200] Yamato) (NNP:[201..203] H,)
+        (NNP:[204..213] Takahashi) (NNP:[214..216] H,) (NNP:[217..222] Ezawa)
+        (NNP:[223..224] I) (,:[224..225] ,) (NNP:[226..231] Ogata)
+        (NNP:[232..234] E.)))
+
+;section 3 Span:238..325
+;Fourth Department of Internal Medicine, University of Tokyo School of
+;Medicine,  Japan.
+(SEC
+  (FRAG (NNP:[238..244] Fourth) (NNP:[245..255] Department) (IN:[256..258] of)
+        (NNP:[259..267] Internal) (NNP:[268..276] Medicine) (,:[276..277] ,)
+        (NNP:[278..288] University) (IN:[289..291] of) (NNP:[292..297] Tokyo)
+        (NNP:[298..304] School) (IN:[305..307] of) (NNP:[308..316] Medicine)
+        (,:[316..317] ,) (NNP:[319..324] Japan) (.:[324..325] .)))
+
+;sentence 4 Span:329..673
+;To evaluate the role of insulin in 1,25-dihydroxyvitamin D [1,25(OH)2D] 
+;production in response to PTH, 25-hydroxyvitamin D-1 alpha-hydroxylase
+;activity  in kidney homogenates as well as serum 1,25(OH)2D concentration was
+;measured  both after dietary calcium (Ca) deprivation and after PTH infusion
+;in control  and streptozotocin-diabetic rats.
+;[353..360]:substance:"insulin"
+;[364..387]:substance:"1,25-dihydroxyvitamin D"
+;[389..399]:substance:"1,25(OH)2D"
+;[428..431]:substance:"PTH"
+;[433..472]:cyp450:"25-hydroxyvitamin D-1 alpha-hydroxylase"
+;[493..504]:substance:"homogenates"
+;[522..532]:substance:"1,25(OH)2D"
+;[580..587]:substance:"calcium"
+;[589..591]:substance:"Ca"
+;[615..618]:substance:"PTH"
+;[644..658]:substance:"streptozotocin"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[329..329] *))
+      (VP (TO:[329..331] To)
+        (VP (VB:[332..340] evaluate)
+          (NP
+            (NP (DT:[341..344] the) (NN:[345..349] role))
+            (PP (IN:[350..352] of)
+              (NP (NN:[353..360] insulin)))
+            (PP (IN:[361..363] in)
+              (NP
+                (NP
+                  (NML
+                    (NML (NN:[364..385] 1,25-dihydroxyvitamin) (NN:[386..387] D))
+                    (NML (-LRB-:[388..389] -LSB-)
+                         (NN:[389..399] 1,25-LRB-OH-RRB-2D)
+                         (-RRB-:[399..400] -RSB-)))
+                  (NN:[402..412] production))
+                (PP (IN:[413..415] in)
+                  (NP
+                    (NP (NN:[416..424] response))
+                    (PP (TO:[425..427] to)
+                      (NP (NN:[428..431] PTH)))))))))))
+    (,:[431..432] ,)
+    (NP-SBJ-2
+      (NP
+        (NP
+          
+          (NML (NN:[433..450] 25-hydroxyvitamin) (NN:[451..454] D-1))
+          (NN:[455..472] alpha-hydroxylase)
+          (NN:[473..481] activity))
+        (PP-LOC (IN:[483..485] in)
+          (NP (NN:[486..492] kidney) (NNS:[493..504] homogenates))))
+      (CONJP (RB:[505..507] as) (RB:[508..512] well) (IN:[513..515] as))
+      (NP
+        (NML (NN:[516..521] serum) (NN:[522..532] 1,25-LRB-OH-RRB-2D))
+        (NN:[533..546] concentration)))
+    (VP (VBD:[547..550] was)
+      (VP (VBN:[551..559] measured)
+        (NP-2 (-NONE-:[559..559] *))
+        (PP-TMP (CC:[561..565] both)
+          (PP (IN:[566..571] after)
+            (NP (JJ:[572..579] dietary)
+              (NML
+                (NML (NN:[580..587] calcium))
+                (NML (-LRB-:[588..589] -LRB-) (NN:[589..591] Ca)
+                     (-RRB-:[591..592] -RRB-)))
+              (NN:[593..604] deprivation)))
+          (CC:[605..608] and)
+          (PP (IN:[609..614] after)
+            (NP (NN:[615..618] PTH) (NN:[619..627] infusion))))
+        (PP-LOC (IN:[628..630] in)
+          (NP
+            (NP (NN:[631..638] control)
+              (NML-1 (-NONE-:[638..638] *P*)))
+            (CC:[640..643] and)
+            (NP
+              (ADJP (NN:[644..658] streptozotocin) (HYPH:[658..659] -)
+                    (JJ:[659..667] diabetic))
+              (NML-1 (NNS:[668..672] rats)))))))
+    (.:[672..673] .)))
+
+;sentence 5 Span:674..963
+;Although serum Ca and phosphate (Pi) levels  did not change significantly
+;after dietary Ca deprivation for 1 week, urinary  cAMP excretion increased
+;significantly, indicating that dietary Ca deprivation  caused secondary
+;hyperparathyroidism without a significant change in serum Ca  level.
+;[689..691]:substance:"Ca"
+;[696..705]:substance:"phosphate"
+;[707..709]:quantitative-name:"Pi"
+;[762..764]:substance:"Ca"
+;[781..782]:quantitative-value:"1"
+;[783..787]:quantitative-units:"week"
+;[798..802]:substance:"cAMP"
+;[862..864]:substance:"Ca"
+;[953..955]:substance:"Ca"
+(SENT
+  (S
+    (SBAR-ADV (IN:[674..682] Although)
+      (S
+        (NP-SBJ
+          (NP
+            (NML-2 (NN:[683..688] serum))
+            (NN:[689..691] Ca)
+            (NML-1 (-NONE-:[691..691] *P*)))
+          (CC:[692..695] and)
+          (NP
+            (NML-2 (-NONE-:[695..695] *P*))
+            (NML
+              (NML (NN:[696..705] phosphate))
+              (NML (-LRB-:[706..707] -LRB-) (NN:[707..709] Pi)
+                   (-RRB-:[709..710] -RRB-)))
+            (NML-1 (NNS:[711..717] levels))))
+        (VP (VBD:[719..722] did) (RB:[723..726] not)
+          (VP (VB:[727..733] change)
+            (ADVP (RB:[734..747] significantly))
+            (PP-TMP (IN:[748..753] after)
+              (NP
+                (NP (JJ:[754..761] dietary) (NN:[762..764] Ca)
+                    (NN:[765..776] deprivation))
+                (PP (IN:[777..780] for)
+                  (NP (CD:[781..782] 1) (NN:[783..787] week)))))))))
+    (,:[787..788] ,)
+    (NP-SBJ (JJ:[789..796] urinary) (NN:[798..802] cAMP)
+            (NN:[803..812] excretion))
+    (VP (VBD:[813..822] increased)
+      (ADVP (RB:[823..836] significantly))
+      (,:[836..837] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[837..837] *))
+        (VP (VBG:[838..848] indicating)
+          (SBAR (IN:[849..853] that)
+            (S
+              (NP-SBJ (JJ:[854..861] dietary) (NN:[862..864] Ca)
+                      (NN:[865..876] deprivation))
+              (VP (VBD:[878..884] caused)
+                (NP (JJ:[885..894] secondary)
+                    (NN:[895..914] hyperparathyroidism))
+                (PP (IN:[915..922] without)
+                  (NP
+                    (NP (DT:[923..924] a) (JJ:[925..936] significant)
+                        (NN:[937..943] change))
+                    (PP (IN:[944..946] in)
+                      (NP (NN:[947..952] serum) (NN:[953..955] Ca)
+                          (NN:[957..962] level)))))))))))
+    (.:[962..963] .)))
+
+;sentence 6 Span:964..1217
+;In control rats, renal 1 alpha-hydroxylase activity increased markedly  from
+;0.11 +/- 0.05 to 1.70 +/- 0.46 ng/300 mg tissue/20 min in parallel with the 
+;change in serum 1,25(OH)2D level from 121 +/- 8 to 360 +/- 54 pg/ml in
+;response  to Ca deprivation.
+;[987..1006]:cyp450:"1 alpha-hydroxylase"
+;[1041..1071]:quantitative-value:"0.11 +/- 0.05 to 1.70 +/- 0.46"
+;[1072..1095]:quantitative-units:"ng/300 mg tissue/20 min"
+;[1134..1144]:substance:"1,25(OH)2D"
+;[1156..1179]:quantitative-value:"121 +/- 8 to 360 +/- 54"
+;[1180..1185]:quantitative-units:"pg/ml"
+;[1202..1204]:substance:"Ca"
+(SENT
+  (S
+    (PP-LOC (IN:[964..966] In)
+      (NP (NN:[967..974] control) (NNS:[975..979] rats)))
+    (,:[979..980] ,)
+    (NP-SBJ (JJ:[981..986] renal)
+      (NML (CD:[987..988] 1) (NN:[989..1006] alpha-hydroxylase))
+      (NN:[1007..1015] activity))
+    (VP (VBD:[1016..1025] increased)
+      (ADVP (RB:[1026..1034] markedly))
+      (PP (IN:[1036..1040] from)
+        (NP
+          (QP (CD:[1041..1045] 0.11) (SYM:[1046..1049] +/-)
+              (CD:[1050..1054] 0.05))
+          (NML-2 (-NONE-:[1054..1054] *RNR*))))
+      (PP (TO:[1055..1057] to)
+        (NP
+          (QP (CD:[1058..1062] 1.70) (SYM:[1063..1066] +/-)
+              (CD:[1067..1071] 0.46))
+          (NML-2 (-NONE-:[1071..1071] *RNR*))))
+      (NML-2
+        (NML (NN:[1072..1074] ng))
+        (PP (SYM:[1074..1075] /)
+          (NP
+            (NML (CD:[1075..1078] 300) (NN:[1079..1081] mg))
+            (NN:[1082..1088] tissue)))
+        (PP (SYM:[1088..1089] /)
+          (NP (CD:[1089..1091] 20) (NN:[1092..1095] min))))
+      (PP (IN:[1096..1098] in)
+        (NP
+          (NP (NN:[1099..1107] parallel))
+          (PP (IN:[1108..1112] with)
+            (NP
+              (NP (DT:[1113..1116] the) (NN:[1118..1124] change))
+              (PP (IN:[1125..1127] in)
+                (NP (NN:[1128..1133] serum) (NN:[1134..1144] 1,25-LRB-OH-RRB-2D)
+                    (NN:[1145..1150] level)))
+              (PP (IN:[1151..1155] from)
+                (NP
+                  (QP (CD:[1156..1159] 121) (SYM:[1160..1163] +/-)
+                      (CD:[1164..1165] 8))
+                  (NML-1 (-NONE-:[1165..1165] *RNR*))))
+              (PP (TO:[1166..1168] to)
+                (NP
+                  (QP (CD:[1169..1172] 360) (SYM:[1173..1176] +/-)
+                      (CD:[1177..1179] 54))
+                  (NML-1 (-NONE-:[1179..1179] *RNR*))))
+              (NML-1
+                (NML (NN:[1180..1182] pg))
+                (PP (SYM:[1182..1183] /)
+                  (NP (NN:[1183..1185] ml))))))))
+      (PP (IN:[1186..1188] in)
+        (NP
+          (NP (NN:[1189..1197] response))
+          (PP (TO:[1199..1201] to)
+            (NP (NN:[1202..1204] Ca) (NN:[1205..1216] deprivation))))))
+    (.:[1216..1217] .)))
+
+;sentence 7 Span:1218..1663
+;In contrast, serum 1,25(OH)2D level (82 +/- 3 pg/ml) and 1  alpha-hydroxylase
+;activity (0.07 +/- 0.02 ng/300 mg tissue.20 min) were lower in  the diabetic
+;rats on a normal Ca diet than those in control rats, and the  increase in
+;both 1,25(OH)2D level and 1 alpha-hydroxylase activity in response  to Ca
+;deprivation was suppressed in diabetic rats (136 +/- 24 pg/ml and 0.38 +/- 
+;0.12 ng/300 mg tissue.20 min, respectively, after Ca deprivation).
+;[1237..1247]:substance:"1,25(OH)2D"
+;[1255..1263]:quantitative-value:"82 +/- 3"
+;[1264..1269]:quantitative-units:"pg/ml"
+;[1275..1295]:cyp450:"1  alpha-hydroxylase"
+;[1306..1319]:quantitative-value:"0.07 +/- 0.02"
+;[1320..1343]:quantitative-units:"ng/300 mg tissue.20 min"
+;[1390..1392]:substance:"Ca"
+;[1452..1462]:substance:"1,25(OH)2D"
+;[1473..1492]:cyp450:"1 alpha-hydroxylase"
+;[1518..1520]:substance:"Ca"
+;[1566..1576]:quantitative-value:"136 +/- 24"
+;[1577..1582]:quantitative-units:"pg/ml"
+;[1587..1601]:quantitative-value:"0.38 +/-  0.12"
+;[1602..1625]:quantitative-units:"ng/300 mg tissue.20 min"
+;[1647..1649]:substance:"Ca"
+(SENT
+  (S
+    (PP (IN:[1218..1220] In)
+      (NP (NN:[1221..1229] contrast)))
+    (,:[1229..1230] ,)
+    (S
+      (NP-SBJ
+        (NP
+          (NP
+            (NML (NN:[1231..1236] serum) (NN:[1237..1247] 1,25-LRB-OH-RRB-2D))
+            (NN:[1248..1253] level))
+          (PRN (-LRB-:[1254..1255] -LRB-)
+            (NP
+              (NP
+                (QP (CD:[1255..1257] 82) (SYM:[1258..1261] +/-)
+                    (CD:[1262..1263] 3))
+                (NN:[1264..1266] pg))
+              (PP (SYM:[1266..1267] /)
+                (NP (NN:[1267..1269] ml))))
+            (-RRB-:[1269..1270] -RRB-)))
+        (CC:[1271..1274] and)
+        (NP
+          (NP
+            (NML (CD:[1275..1276] 1) (NN:[1278..1295] alpha-hydroxylase))
+            (NN:[1296..1304] activity))
+          (PRN (-LRB-:[1305..1306] -LRB-)
+            (NP
+              (NP
+                (QP (CD:[1306..1310] 0.07) (SYM:[1311..1314] +/-)
+                    (CD:[1315..1319] 0.02))
+                (NN:[1320..1322] ng))
+              (PP (SYM:[1322..1323] /)
+                (NP
+                  (NML (CD:[1323..1326] 300) (NN:[1327..1329] mg))
+                  (NN:[1330..1336] tissue)))
+              (PP (.:[1336..1337] .)
+                (NP (CD:[1337..1339] 20) (NN:[1340..1343] min))))
+            (-RRB-:[1343..1344] -RRB-))))
+      (VP (VBD:[1345..1349] were)
+        (ADJP-PRD
+          (ADJP (JJR:[1350..1355] lower))
+          (PP-LOC (IN:[1356..1358] in)
+            (NP
+              (NP (DT:[1360..1363] the) (JJ:[1364..1372] diabetic)
+                  (NNS:[1373..1377] rats))
+              (PP (IN:[1378..1380] on)
+                (NP (DT:[1381..1382] a) (JJ:[1383..1389] normal)
+                    (NN:[1390..1392] Ca) (NN:[1393..1397] diet)))))
+          (PP (IN:[1398..1402] than)
+            (NP
+              (NP (DT:[1403..1408] those))
+              (PP (IN:[1409..1411] in)
+                (NP (NN:[1412..1419] control) (NNS:[1420..1424] rats))))))))
+    (,:[1424..1425] ,) (CC:[1426..1429] and)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[1430..1433] the) (NN:[1435..1443] increase))
+        (PP (IN:[1444..1446] in)
+          (NP (CC:[1447..1451] both)
+            (NP (NN:[1452..1462] 1,25-LRB-OH-RRB-2D) (NN:[1463..1468] level))
+            (CC:[1469..1472] and)
+            (NP
+               (CD:[1473..1474] 1) (NN:[1475..1492] alpha-hydroxylase)
+              (NN:[1493..1501] activity))))
+        (PP (IN:[1502..1504] in)
+          (NP
+            (NP (NN:[1505..1513] response))
+            (PP (TO:[1515..1517] to)
+              (NP (NN:[1518..1520] Ca) (NN:[1521..1532] deprivation))))))
+      (VP (VBD:[1533..1536] was)
+        (VP (VBN:[1537..1547] suppressed)
+          (NP-2 (-NONE-:[1547..1547] *))
+          (PP-LOC (IN:[1548..1550] in)
+            (NP (JJ:[1551..1559] diabetic) (NNS:[1560..1564] rats))))
+        (PRN (-LRB-:[1565..1566] -LRB-)
+          (FRAG
+            (NP
+              (NP
+                (NP
+                  (QP (CD:[1566..1569] 136) (SYM:[1570..1573] +/-)
+                      (CD:[1574..1576] 24))
+                  (NN:[1577..1579] pg))
+                (PP (SYM:[1579..1580] /)
+                  (NP (NN:[1580..1582] ml))))
+              (CC:[1583..1586] and)
+              (NP
+                (NP
+                  (QP (CD:[1587..1591] 0.38) (SYM:[1592..1595] +/-)
+                      (CD:[1597..1601] 0.12))
+                  (NN:[1602..1604] ng))
+                (PP (SYM:[1604..1605] /)
+                  (NP
+                    (NML (CD:[1605..1608] 300) (NN:[1609..1611] mg))
+                    (NN:[1612..1618] tissue)))
+                (PP-1 (.:[1618..1619] .)
+                  (NP-TMP
+                    (NP (CD:[1619..1621] 20) (NN:[1622..1625] min))
+                    (,:[1625..1626] ,)))))
+            (ADVP (RB:[1627..1639] respectively))
+            (,:[1639..1640] ,)
+            (PP-TMP (IN:[1641..1646] after)
+              (NP (NN:[1647..1649] Ca) (NN:[1650..1661] deprivation))))
+          (-RRB-:[1661..1662] -RRB-))))
+    (.:[1662..1663] .)))
+
+;sentence 8 Span:1664..1967
+;Insulin  treatment of the diabetic rats restored the baseline levels of serum
+;1,25(OH)2D  (125 +/- 14 pg/ml) and renal 1 alpha-hydroxylase activity (0.21
+;+/- 0.02 ng/300  mg tissue.20 min) as well as those after Ca deprivation (340
+;+/- 52 pg/ml and  2.05 +/- 0.30 ng/300 mg tissue.20 min, respectively).
+;[1664..1671]:substance:"Insulin"
+;[1742..1752]:substance:"1,25(OH)2D"
+;[1755..1765]:quantitative-value:"125 +/- 14"
+;[1766..1771]:quantitative-units:"pg/ml"
+;[1783..1802]:cyp450:"1 alpha-hydroxylase"
+;[1813..1826]:quantitative-value:"0.21 +/- 0.02"
+;[1827..1851]:quantitative-units:"ng/300  mg tissue.20 min"
+;[1876..1878]:substance:"Ca"
+;[1892..1902]:quantitative-value:"340 +/- 52"
+;[1903..1908]:quantitative-units:"pg/ml"
+;[1914..1927]:quantitative-value:"2.05 +/- 0.30"
+;[1928..1951]:quantitative-units:"ng/300 mg tissue.20 min"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1664..1671] Insulin) (NN:[1673..1682] treatment))
+      (PP (IN:[1683..1685] of)
+        (NP (DT:[1686..1689] the) (JJ:[1690..1698] diabetic)
+            (NNS:[1699..1703] rats))))
+    (VP (VBD:[1704..1712] restored)
+      (NP
+        (NP
+          (NP (DT:[1713..1716] the) (NN:[1717..1725] baseline)
+              (NNS:[1726..1732] levels))
+          (PP (IN:[1733..1735] of)
+            (NP (NN:[1736..1741] serum) (NN:[1742..1752] 1,25-LRB-OH-RRB-2D)))
+          (PRN (-LRB-:[1754..1755] -LRB-)
+            (NP
+              (NP
+                (QP (CD:[1755..1758] 125) (SYM:[1759..1762] +/-)
+                    (CD:[1763..1765] 14))
+                (NN:[1766..1768] pg))
+              (PP (SYM:[1768..1769] /)
+                (NP (NN:[1769..1771] ml))))
+            (-RRB-:[1771..1772] -RRB-)))
+        (CC:[1773..1776] and)
+        (NP
+          (NP
+            (NP (JJ:[1777..1782] renal)
+              (NML (CD:[1783..1784] 1) (NN:[1785..1802] alpha-hydroxylase))
+              (NN:[1803..1811] activity))
+            (PRN (-LRB-:[1812..1813] -LRB-)
+              (NP
+                (NP
+                  (QP (CD:[1813..1817] 0.21) (SYM:[1818..1821] +/-)
+                      (CD:[1822..1826] 0.02))
+                  (NN:[1827..1829] ng))
+                (PP (SYM:[1829..1830] /)
+                  (NP
+                    (NML (CD:[1830..1833] 300) (NN:[1835..1837] mg))
+                    (NN:[1838..1844] tissue)))
+                (PP (.:[1844..1845] .)
+                  (NP (CD:[1845..1847] 20) (NN:[1848..1851] min))))
+              (-RRB-:[1851..1852] -RRB-)))
+          (CONJP (RB:[1853..1855] as) (RB:[1856..1860] well)
+                 (IN:[1861..1863] as))
+          (NP
+            (NP (DT:[1864..1869] those))
+            (PP (IN:[1870..1875] after)
+              (NP (NN:[1876..1878] Ca) (NN:[1879..1890] deprivation)))
+            (PRN (-LRB-:[1891..1892] -LRB-)
+              (FRAG
+                (NP
+                  (NP
+                    (NP
+                      (QP (CD:[1892..1895] 340) (SYM:[1896..1899] +/-)
+                          (CD:[1900..1902] 52))
+                      (NN:[1903..1905] pg))
+                    (PP (SYM:[1905..1906] /)
+                      (NP (NN:[1906..1908] ml))))
+                  (CC:[1909..1912] and)
+                  (NP
+                    (NP
+                      (QP (CD:[1914..1918] 2.05) (SYM:[1919..1922] +/-)
+                          (CD:[1923..1927] 0.30))
+                      (NN:[1928..1930] ng))
+                    (PP (SYM:[1930..1931] /)
+                      (NP
+                        (NML (CD:[1931..1934] 300) (NN:[1935..1937] mg))
+                        (NN:[1938..1944] tissue)))
+                    (PP (.:[1944..1945] .)
+                      (NP (CD:[1945..1947] 20) (NN:[1948..1951] min)))))
+                (,:[1951..1952] ,)
+                (ADVP (RB:[1953..1965] respectively)))
+              (-RRB-:[1965..1966] -RRB-))))))
+    (.:[1966..1967] .)))
+
+;sentence 9 Span:1968..2230
+;Furthermore, when control  and diabetic rats were thyroparathyroidectomized
+;and infused with a maximal  stimulatory dose of PTH, the increase in serum
+;1,25(OH)2D and renal 1  alpha-hydroxylase activity in response to PTH was
+;markedly inhibited in diabetic  rats.
+;[2092..2095]:substance:"PTH"
+;[2119..2129]:substance:"1,25(OH)2D"
+;[2140..2160]:cyp450:"1  alpha-hydroxylase"
+;[2185..2188]:substance:"PTH"
+(SENT
+  (S
+    (ADVP (RB:[1968..1979] Furthermore))
+    (,:[1979..1980] ,)
+    (SBAR-ADV
+      (WHADVP (WRB:[1981..1985] when))
+      (S
+        (NP-SBJ-3
+          (NP (NN:[1986..1993] control)
+            (NML-1 (-NONE-:[1993..1993] *P*)))
+          (CC:[1995..1998] and)
+          (NP (JJ:[1999..2007] diabetic)
+            (NML-1 (NNS:[2008..2012] rats))))
+        (VP (VBD:[2013..2017] were)
+          (VP
+            (VP (VBN:[2018..2043] thyroparathyroidectomized)
+              (NP-3 (-NONE-:[2043..2043] *)))
+            (CC:[2044..2047] and)
+            (VP (VBN:[2048..2055] infused)
+              (NP-3 (-NONE-:[2055..2055] *))
+              (PP (IN:[2056..2060] with)
+                (NP
+                  (NP (DT:[2061..2062] a) (JJ:[2063..2070] maximal)
+                      (JJ:[2072..2083] stimulatory) (NN:[2084..2088] dose))
+                  (PP (IN:[2089..2091] of)
+                    (NP (NN:[2092..2095] PTH))))))))))
+    (,:[2095..2096] ,)
+    (NP-SBJ-2
+      (NP (DT:[2097..2100] the) (NN:[2101..2109] increase))
+      (PP (IN:[2110..2112] in)
+        (NP
+          (NP (NN:[2113..2118] serum) (NN:[2119..2129] 1,25-LRB-OH-RRB-2D))
+          (CC:[2130..2133] and)
+          (NP (JJ:[2134..2139] renal)
+            (NML (CD:[2140..2141] 1) (NN:[2143..2160] alpha-hydroxylase))
+            (NN:[2161..2169] activity))))
+      (PP (IN:[2170..2172] in)
+        (NP
+          (NP (NN:[2173..2181] response))
+          (PP (TO:[2182..2184] to)
+            (NP (NN:[2185..2188] PTH))))))
+    (VP (VBD:[2189..2192] was)
+      (ADVP (RB:[2193..2201] markedly))
+      (VP (VBN:[2202..2211] inhibited)
+        (NP-2 (-NONE-:[2211..2211] *))
+        (PP-LOC (IN:[2212..2214] in)
+          (NP (JJ:[2215..2223] diabetic) (NNS:[2225..2229] rats)))))
+    (.:[2229..2230] .)))
+
+;sentence 10 Span:2231..2414
+;In addition, the baseline levels of serum 1,25(OH)2D and renal 1 
+;alpha-hydroxylase activity in thyroparathyroidectomized diabetic rats were
+;not  different from those in control rats.
+;[2273..2283]:substance:"1,25(OH)2D"
+;[2294..2314]:cyp450:"1  alpha-hydroxylase"
+(SENT
+  (S
+    (PP (IN:[2231..2233] In)
+      (NP (NN:[2234..2242] addition)))
+    (,:[2242..2243] ,)
+    (NP-SBJ
+      (NP (DT:[2244..2247] the) (NN:[2248..2256] baseline)
+          (NNS:[2257..2263] levels))
+      (PP (IN:[2264..2266] of)
+        (NP
+          (NP (NN:[2267..2272] serum) (NN:[2273..2283] 1,25-LRB-OH-RRB-2D))
+          (CC:[2284..2287] and)
+          (NP (JJ:[2288..2293] renal)
+            (NML (CD:[2294..2295] 1) (NN:[2297..2314] alpha-hydroxylase))
+            (NN:[2315..2323] activity))))
+      (PP-LOC (IN:[2324..2326] in)
+        (NP (VBN:[2327..2352] thyroparathyroidectomized)
+            (JJ:[2353..2361] diabetic) (NNS:[2362..2366] rats))))
+    (VP (VBD:[2367..2371] were) (RB:[2372..2375] not)
+      (ADJP-PRD (JJ:[2377..2386] different)
+        (PP (IN:[2387..2391] from)
+          (NP
+            (NP (DT:[2392..2397] those))
+            (PP (IN:[2398..2400] in)
+              (NP (NN:[2401..2408] control) (NNS:[2409..2413] rats)))))))
+    (.:[2413..2414] .)))
+
+;sentence 11 Span:2415..2606
+;These results are consistent with the  conclusion that insulin plays an
+;important role in the regulation of renal 1  alpha-hydroxylase activity and
+;serum 1,25(OH)2D levels in response to PTH.
+;[2470..2477]:substance:"insulin"
+;[2529..2549]:cyp450:"1  alpha-hydroxylase"
+;[2569..2579]:substance:"1,25(OH)2D"
+;[2602..2605]:substance:"PTH"
+(SENT
+  (S
+    (NP-SBJ (DT:[2415..2420] These) (NNS:[2421..2428] results))
+    (VP (VBP:[2429..2432] are)
+      (ADJP-PRD (JJ:[2433..2443] consistent)
+        (PP (IN:[2444..2448] with)
+          (NP (DT:[2449..2452] the) (NN:[2454..2464] conclusion)
+            (SBAR (IN:[2465..2469] that)
+              (S
+                (NP-SBJ (NN:[2470..2477] insulin))
+                (VP (VBZ:[2478..2483] plays)
+                  (NP (DT:[2484..2486] an) (JJ:[2487..2496] important)
+                      (NN:[2497..2501] role))
+                  (PP (IN:[2502..2504] in)
+                    (NP
+                      (NP (DT:[2505..2508] the) (NN:[2509..2519] regulation))
+                      (PP (IN:[2520..2522] of)
+                        (NP
+                          (NP (JJ:[2523..2528] renal)
+                            (NML (CD:[2529..2530] 1)
+                                 (NN:[2532..2549] alpha-hydroxylase))
+                            (NN:[2550..2558] activity))
+                          (CC:[2559..2562] and)
+                          (NP
+                            (NP (NN:[2563..2568] serum)
+                                (NN:[2569..2579] 1,25-LRB-OH-RRB-2D))
+                            (NNS:[2580..2586] levels))))
+                      (PP (IN:[2587..2589] in)
+                        (NP
+                          (NP (NN:[2590..2598] response))
+                          (PP (TO:[2599..2601] to)
+                            (NP (NN:[2602..2605] PTH))))))))))))))
+    (.:[2605..2606] .)))
+
+;section 12 Span:2610..2654
+;PMID: 3311717 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2610..2614] PMID) (::[2614..2615] :) (CD:[2616..2623] 3311717)
+        (-LRB-:[2624..2625] -LSB-) (NNP:[2625..2631] PubMed) (::[2632..2633] -)
+        (NN:[2634..2641] indexed) (IN:[2642..2645] for)
+        (NNP:[2646..2653] MEDLINE) (-RRB-:[2653..2654] -RSB-)))

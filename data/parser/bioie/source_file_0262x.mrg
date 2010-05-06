@@ -1,0 +1,328 @@
+;PMID: 2421891
+;source_file_2913.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..181] = [t:41..181]
+;2)section:[e:185..234] = [t:185..234]
+;3)sentence:[e:238..353] = [t:238..353]
+;4)sentence:[e:354..448] = [t:354..448]
+;5)sentence:[e:449..575] = [t:449..575]
+;6)sentence:[e:576..700] = [t:576..700]
+;7)sentence:[e:701..887] = [t:701..887]
+;8)sentence:[e:888..984] = [t:888..984]
+;9)sentence:[e:986..1209] = [t:986..1209]
+;10)sentence:[e:1210..1319] = [t:1210..1319]
+;11)sentence:[e:1320..1415] = [t:1320..1415]
+;12)section:[e:1419..1463] = [t:1419..1463]
+
+;section 0 Span:0..35
+;Cancer Res.  1986 Jun;46(6):3196-9.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (.:[10..11] .) (CD:[13..17] 1986)
+        (.:[18..24] Jun;46) (-LRB-:[24..25] -LRB-) (CD:[25..26] 6)
+        (-RRB-:[26..27] -RRB-) (.:[27..32] :3196) (::[32..33] -)
+        (CD:[33..35] 9.)))
+
+;sentence 1 Span:41..181
+;Detection of N-myc oncogene expression in human neuroblastoma by in situ 
+;hybridization and blot analysis: relationship to clinical outcome.
+;[54..59]:gene-rna:"N-myc"
+;[89..102]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[41..50] Detection))
+      (PP (IN:[51..53] of)
+        (NP (NN:[54..59] N-myc) (NN:[60..68] oncogene) (NN:[69..79] expression)))
+      (PP (IN:[80..82] in)
+        (NP (JJ:[83..88] human) (NN:[89..102] neuroblastoma)))
+      (PP (IN:[103..105] by)
+        (NP
+          (NP (FW:[106..108] in) (FW:[109..113] situ)
+              (NN:[115..128] hybridization))
+          (CC:[129..132] and)
+          (NP (NN:[133..137] blot) (NN:[138..146] analysis)))))
+    (::[146..147] :)
+    (NP
+      (NP (NN:[148..160] relationship))
+      (PP (TO:[161..163] to)
+        (NP (JJ:[164..172] clinical) (NN:[173..180] outcome))))
+    (.:[180..181] .)))
+
+;section 2 Span:185..234
+;Grady-Leopardi EF, Schwab M, Ablin AR, Rosenau W.
+(SEC
+  (FRAG (NNP:[185..199] Grady-Leopardi) (NNP:[200..202] EF) (,:[202..203] ,)
+        (NNP:[204..210] Schwab) (NNP:[211..213] M,) (NNP:[214..219] Ablin)
+        (NNP:[220..222] AR) (,:[222..223] ,) (NNP:[224..231] Rosenau)
+        (NNP:[232..233] W) (.:[233..234] .)))
+
+;sentence 3 Span:238..353
+;We studied N-myc oncogene expression in 13 human neuroectodermal tumors and
+;one  teratoma by in situ hybridization.
+;[249..254]:gene-rna:"N-myc"
+;[287..309]:malignancy-type:"neuroectodermal tumors"
+;[319..327]:malignancy-type:"teratoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[238..240] We))
+    (VP (VBD:[241..248] studied)
+      (NP
+        (NP (NN:[249..254] N-myc) (NN:[255..263] oncogene)
+            (NN:[264..274] expression))
+        (PP (IN:[275..277] in)
+          (NP
+            (NP (CD:[278..280] 13) (JJ:[281..286] human)
+               (JJ:[287..302] neuroectodermal) (NNS:[303..309] tumors))
+            (CC:[310..313] and)
+            (NP (CD:[314..317] one) (NN:[319..327] teratoma)))))
+      (PP-MNR (IN:[328..330] by)
+        (NP (FW:[331..333] in) (FW:[334..338] situ)
+            (NN:[339..352] hybridization))))
+    (.:[352..353] .)))
+
+;sentence 4 Span:354..448
+;In four of six neuroblastomas, there was  increased N-myc expression (15 to
+;49% of the cells).
+;[369..383]:malignancy-type:"neuroblastomas"
+;[406..411]:gene-rna:"N-myc"
+(SENT
+  (S
+    (PP (IN:[354..356] In)
+      (NP
+        (NP (CD:[357..361] four))
+        (PP (IN:[362..364] of)
+          (NP (CD:[365..368] six) (NNS:[369..383] neuroblastomas)))))
+    (,:[383..384] ,)
+    (NP-SBJ (EX:[385..390] there))
+    (VP (VBD:[391..394] was)
+      (NP-PRD (VBN:[396..405] increased) (NN:[406..411] N-myc)
+              (NN:[412..422] expression)
+        (PRN (-LRB-:[423..424] -LRB-)
+          (NP
+            (NP
+              (QP (CD:[424..426] 15) (TO:[427..429] to) (CD:[430..432] 49))
+              (NN:[432..433] %))
+            (PP (IN:[434..436] of)
+              (NP (DT:[437..440] the) (NNS:[441..446] cells))))
+          (-RRB-:[446..447] -RRB-))))
+    (.:[447..448] .)))
+
+;sentence 5 Span:449..575
+;Many of the primitive  neuroblastic cells had an increase of N-myc RNA not
+;observed in the larger, more  differentiated cells.
+;[461..470]:malignancy-clinical-stage:"primitive"
+;[472..490]:malignancy-type:"neuroblastic cells"
+;[510..515]:gene-rna:"N-myc"
+;[554..568]:malignancy-clinical-stage:"differentiated"
+;[569..574]:malignancy-type:"cells"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[449..453] Many))
+      (PP (IN:[454..456] of)
+        (NP (DT:[457..460] the) (JJ:[461..470] primitive)
+           (JJ:[472..484] neuroblastic) (NNS:[485..490] cells))))
+    (VP (VBD:[491..494] had)
+      (NP
+        (NP
+          (NP (DT:[495..497] an) (NN:[498..506] increase))
+          (PP (IN:[507..509] of)
+            (NP (NN:[510..515] N-myc) (NN:[516..519] RNA))))
+        (VP (RB:[520..523] not) (VBN:[524..532] observed)
+          (NP (-NONE-:[532..532] *))
+          (PP (IN:[533..535] in)
+            (NP (DT:[536..539] the)
+              (ADJP (JJR:[540..546] larger) (,:[546..547] ,)
+                (ADJP (RBR:[548..552] more) (VBN:[554..568] differentiated)))
+              (NNS:[569..574] cells))))))
+    (.:[574..575] .)))
+
+;sentence 6 Span:576..700
+;Two neuroblastomas matured to ganglioneuromas; no biopsies  performed during
+;this progression expressed increased N-myc RNA.
+;[580..594]:malignancy-type:"neuroblastomas"
+;[606..621]:malignancy-type:"ganglioneuromas"
+;[690..695]:gene-rna:"N-myc"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[576..579] Two) (NNS:[580..594] neuroblastomas))
+      (VP (VBD:[595..602] matured)
+        (PP (TO:[603..605] to)
+          (NP (NNS:[606..621] ganglioneuromas)))))
+    (::[621..622] ;)
+    (S
+      (NP-SBJ
+        (NP (DT:[623..625] no) (NNS:[626..634] biopsies))
+        (VP (VBN:[636..645] performed)
+          (NP (-NONE-:[645..645] *))
+          (PP-TMP (IN:[646..652] during)
+            (NP (DT:[653..657] this) (NN:[658..669] progression)))))
+      (VP (VBD:[670..679] expressed)
+        (NP (VBN:[680..689] increased) (NN:[690..695] N-myc) (NN:[696..699] RNA))))
+    (.:[699..700] .)))
+
+;sentence 7 Span:701..887
+;Three  ganglioneuroblastomas, two tumors presenting as ganglioneuromas, a
+;cerebral  neuroectodermal tumor, a neurofibrosarcoma, and the teratoma did
+;not have  increased N-myc expression.
+;[708..729]:malignancy-type:"ganglioneuroblastomas"
+;[735..741]:malignancy-type:"tumors"
+;[756..771]:malignancy-type:"ganglioneuromas"
+;[775..806]:malignancy-type:"cerebral  neuroectodermal tumor"
+;[810..827]:malignancy-type:"neurofibrosarcoma"
+;[837..845]:malignancy-type:"teratoma"
+;[870..875]:gene-rna:"N-myc"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[701..706] Three) (NNS:[708..729] ganglioneuroblastomas))
+      (,:[729..730] ,)
+      (NP
+        (NP (CD:[731..734] two) (NNS:[735..741] tumors))
+        (VP (VBG:[742..752] presenting)
+          (PP (IN:[753..755] as)
+            (NP (NNS:[756..771] ganglioneuromas)))))
+      (,:[771..772] ,)
+      (NP (DT:[773..774] a)
+         (JJ:[775..783] cerebral) (JJ:[785..800] neuroectodermal)
+         (NN:[801..806] tumor))
+      (,:[806..807] ,)
+      (NP (DT:[808..809] a) (NN:[810..827] neurofibrosarcoma))
+      (,:[827..828] ,) (CC:[829..832] and)
+      (NP (DT:[833..836] the) (NN:[837..845] teratoma)))
+    (VP (VBD:[846..849] did) (RB:[850..853] not)
+      (VP (VB:[854..858] have)
+        (NP (VBN:[860..869] increased) (NN:[870..875] N-myc)
+            (NN:[876..886] expression))))
+    (.:[886..887] .)))
+
+;sentence 8 Span:888..984
+;The data obtained by in situ hybridization  correlated well with data
+;obtained by blot analysis.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[888..891] The) (NNS:[892..896] data))
+      (VP (VBN:[897..905] obtained)
+        (NP (-NONE-:[905..905] *))
+        (PP-MNR (IN:[906..908] by)
+          (NP (FW:[909..911] in) (FW:[912..916] situ)
+              (NN:[917..930] hybridization)))))
+    (VP (VBD:[932..942] correlated)
+      (ADVP (RB:[943..947] well))
+      (PP-CLR (IN:[948..952] with)
+        (NP
+          (NP (NNS:[953..957] data))
+          (VP (VBN:[958..966] obtained)
+            (NP (-NONE-:[966..966] *))
+            (PP-MNR (IN:[967..969] by)
+              (NP (NN:[970..974] blot) (NN:[975..983] analysis)))))))
+    (.:[983..984] .)))
+
+;sentence 9 Span:986..1209
+;Neuroblastomas/ganglioneuroblastomas with a favorable course did not have 
+;appreciable elevation of N-myc expression over 10 to 77 mo of follow-up; thus
+; N-myc may not be involved in the maintenance of the neoplastic state.
+;[986..1000]:malignancy-type:"Neuroblastomas"
+;[1001..1022]:malignancy-type:"ganglioneuroblastomas"
+;[1086..1091]:gene-rna:"N-myc"
+;[1140..1145]:gene-rna:"N-myc"
+;[1192..1208]:malignancy-clinical-stage:"neoplastic state"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NNS:[986..1000] Neuroblastomas) (SYM:[1000..1001] /)
+            (NNS:[1001..1022] ganglioneuroblastomas))
+        (PP (IN:[1023..1027] with)
+          (NP (DT:[1028..1029] a) (JJ:[1030..1039] favorable)
+              (NN:[1040..1046] course))))
+      (VP (VBD:[1047..1050] did) (RB:[1051..1054] not)
+        (VP (VB:[1055..1059] have)
+          (NP
+            (NP (JJ:[1061..1072] appreciable) (NN:[1073..1082] elevation))
+            (PP (IN:[1083..1085] of)
+              (NP (NN:[1086..1091] N-myc) (NN:[1092..1102] expression))))
+          (PP-TMP (IN:[1103..1107] over)
+            (NP
+              (NP
+                (QP (CD:[1108..1110] 10) (TO:[1111..1113] to)
+                    (CD:[1114..1116] 77))
+                (NN:[1117..1119] mo))
+              (PP (IN:[1120..1122] of)
+                (NP (VB:[1123..1129] follow) (HYPH:[1129..1130] -)
+                    (RP:[1130..1132] up))))))))
+    (::[1132..1133] ;)
+    (S
+      (ADVP (RB:[1134..1138] thus))
+      (NP-SBJ-1 (NN:[1140..1145] N-myc))
+      (VP (MD:[1146..1149] may) (RB:[1150..1153] not)
+        (VP (VB:[1154..1156] be)
+          (VP (VBN:[1157..1165] involved)
+            (NP-1 (-NONE-:[1165..1165] *))
+            (PP-CLR (IN:[1166..1168] in)
+              (NP
+                (NP (DT:[1169..1172] the) (NN:[1173..1184] maintenance))
+                (PP (IN:[1185..1187] of)
+                  (NP (DT:[1188..1191] the)
+                     (JJ:[1192..1202] neoplastic) (NN:[1203..1208] state)))))))))
+    (.:[1208..1209] .)))
+
+;sentence 10 Span:1210..1319
+;However,  such tumors with a fatal outcome 2 to 14 mo after diagnosis usually
+;had elevated  N-myc expression.
+;[1225..1231]:malignancy-type:"tumors"
+;[1302..1307]:gene-rna:"N-myc"
+(SENT
+  (S
+    (ADVP (RB:[1210..1217] However))
+    (,:[1217..1218] ,)
+    (NP-SBJ
+      (NP (JJ:[1220..1224] such) (NNS:[1225..1231] tumors))
+      (PP (IN:[1232..1236] with)
+        (NP
+          (NP (DT:[1237..1238] a) (JJ:[1239..1244] fatal)
+              (NN:[1245..1252] outcome))
+          (PP-TMP
+            (NP
+              (QP (CD:[1253..1254] 2) (TO:[1255..1257] to) (CD:[1258..1260] 14))
+              (NN:[1261..1263] mo))
+            (IN:[1264..1269] after)
+            (NP (NN:[1270..1279] diagnosis))))))
+    (ADVP-TMP (RB:[1280..1287] usually))
+    (VP (VBD:[1288..1291] had)
+      (NP (VBN:[1292..1300] elevated) (NN:[1302..1307] N-myc)
+          (NN:[1308..1318] expression)))
+    (.:[1318..1319] .)))
+
+;sentence 11 Span:1320..1415
+;These findings suggest a relationship between elevated levels  of N-myc RNA
+;and poor prognosis.
+;[1386..1391]:gene-rna:"N-myc"
+(SENT
+  (S
+    (NP-SBJ (DT:[1320..1325] These) (NNS:[1326..1334] findings))
+    (VP (VBP:[1335..1342] suggest)
+      (NP
+        (NP (DT:[1343..1344] a) (NN:[1345..1357] relationship))
+        (PP (IN:[1358..1365] between)
+          (NP
+            (NP
+              (NP (VBN:[1366..1374] elevated) (NNS:[1375..1381] levels))
+              (PP (IN:[1383..1385] of)
+                (NP (NN:[1386..1391] N-myc) (NN:[1392..1395] RNA))))
+            (CC:[1396..1399] and)
+            (NP (JJ:[1400..1404] poor) (NN:[1405..1414] prognosis))))))
+    (.:[1414..1415] .)))
+
+;section 12 Span:1419..1463
+;PMID: 2421891 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1419..1423] PMID) (::[1423..1424] :) (CD:[1425..1432] 2421891)
+        (NN:[1433..1434] -LSB-) (NNP:[1434..1440] PubMed) (::[1441..1442] -)
+        (NN:[1443..1450] indexed) (IN:[1451..1454] for)
+        (NNP:[1455..1463] MEDLINE-RSB-)))

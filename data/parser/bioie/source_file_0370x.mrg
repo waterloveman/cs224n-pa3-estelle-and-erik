@@ -1,0 +1,180 @@
+;PMID: 2674680
+;source_file_801.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..112] = [t:40..112]
+;2)section:[e:116..208] = [t:116..208]
+;3)section:[e:212..289] = [t:212..289]
+;4)sentence:[e:293..378] = [t:293..378]
+;5)sentence:[e:379..497] = [t:379..497]
+;6)sentence:[e:498..599] = [t:498..599]
+;7)sentence:[e:600..663] = [t:600..663]
+;8)sentence:[e:664..742] = [t:664..742]
+;9)section:[e:746..790] = [t:746..790]
+
+;section 0 Span:0..35
+;Mol Cell Biol  1989 Jul;9(7):3114-6
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..8] Cell) (NNP:[9..13] Biol) (CD:[15..19] 1989)
+        (.:[20..26] Jul;9-LRB-) (CD:[26..28] 7-RRB-) (CD:[28..33] :3114)
+        (::[33..34] -) (CD:[34..35] 6)))
+
+;sentence 1 Span:40..112
+;N-ras mutations in human cutaneous melanoma from sun-exposed body sites.
+;[40..45]:gene-rna:"N-ras"
+;[65..111]:malignancy:"cutaneous melanoma from sun-exposed body sites"
+(SENT
+  (NP-HLN
+    (NP (NN:[40..45] N-ras) (NNS:[46..55] mutations))
+    (PP-LOC (IN:[56..58] in)
+      (NP
+        (NP (JJ:[59..64] human) (JJ:[65..74] cutaneous) (NN:[75..83] melanoma))
+        (PP (IN:[84..88] from)
+          (NP
+            (ADJP (NN:[89..92] sun) (HYPH:[92..93] -) (VBN:[93..100] exposed))
+            (NN:[101..105] body) (NNS:[106..111] sites)))))
+    (.:[111..112] .)))
+
+;section 2 Span:116..208
+;van 't Veer LJ, Burgering BM, Versteeg R, Boot AJ, Ruiter DJ, Osanto S,
+;Schrier  PI, Bos JL.
+(SEC
+  (FRAG (NNP:[116..119] van) (NNP:[120..122] 't) (NNP:[123..127] Veer)
+        (NNP:[128..130] LJ) (,:[130..131] ,) (NNP:[132..141] Burgering)
+        (NNP:[142..144] BM) (,:[144..145] ,) (NNP:[146..154] Versteeg)
+        (NNP:[155..157] R,) (NNP:[158..162] Boot) (NNP:[163..165] AJ)
+        (,:[165..166] ,) (NNP:[167..173] Ruiter) (NNP:[174..176] DJ)
+        (,:[176..177] ,) (NNP:[178..184] Osanto) (NNP:[185..187] S,)
+        (NNP:[188..195] Schrier) (NNP:[197..199] PI) (,:[199..200] ,)
+        (NNP:[201..204] Bos) (NNP:[205..208] JL.)))
+
+;section 3 Span:212..289
+;Department of Clinical Oncology, Leiden University Hospital, The
+;Netherlands.
+(SEC
+  (FRAG (NNP:[212..222] Department) (IN:[223..225] of) (NNP:[226..234] Clinical)
+        (NNP:[235..243] Oncology) (,:[243..244] ,) (NNP:[245..251] Leiden)
+        (NNP:[252..262] University) (NNP:[263..271] Hospital) (,:[271..272] ,)
+        (DT:[273..276] The) (NNP:[277..288] Netherlands) (.:[288..289] .)))
+
+;sentence 4 Span:293..378
+;In 7 of 37 patients with cutaneous melanoma, mutations in the N-ras gene were
+; found.
+;[318..336]:malignancy:"cutaneous melanoma"
+;[355..360]:gene-rna:"N-ras"
+(SENT
+  (S
+    (PP-LOC (IN:[293..295] In)
+      (NP
+        (NP (CD:[296..297] 7))
+        (PP (IN:[298..300] of)
+          (NP
+            (NP (CD:[301..303] 37) (NNS:[304..312] patients))
+            (PP (IN:[313..317] with)
+              (NP (JJ:[318..327] cutaneous) (NN:[328..336] melanoma)))))))
+    (,:[336..337] ,)
+    (NP-SBJ-1
+      (NP (NNS:[338..347] mutations))
+      (PP (IN:[348..350] in)
+        (NP (DT:[351..354] the) (NN:[355..360] N-ras) (NN:[361..365] gene))))
+    (VP (VBD:[366..370] were)
+      (VP (VBN:[372..377] found)
+        (NP-1 (-NONE-:[377..377] *))))
+    (.:[377..378] .)))
+
+;sentence 5 Span:379..497
+;The primary tumors of these seven patients were exclusively localized on 
+;body sites continuously exposed to sunlight.
+;[383..397]:malignancy:"primary tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[379..382] The)
+         (JJ:[383..390] primary) (NNS:[391..397] tumors))
+      (PP (IN:[398..400] of)
+        (NP (DT:[401..406] these) (CD:[407..412] seven)
+            (NNS:[413..421] patients))))
+    (VP (VBD:[422..426] were)
+      (ADVP (RB:[427..438] exclusively))
+      (VP (JJ:[439..448] localized)
+        (NP-1 (-NONE-:[448..448] *))
+        (PP-LOC (IN:[449..451] on)
+          (NP
+            (NP (NN:[453..457] body) (NNS:[458..463] sites))
+            (VP
+              (ADVP (JJ:[464..476] continuously))
+              (VBN:[477..484] exposed)
+              (NP (-NONE-:[484..484] *))
+              (PP-CLR (TO:[485..487] to)
+                (NP (NN:[488..496] sunlight))))))))
+    (.:[496..497] .)))
+
+;sentence 6 Span:498..599
+;Moreover, the ras mutations were  all at or near dipyrimidine sites known to
+;be targets of UV damage.
+;[512..515]:gene-rna:"ras"
+(SENT
+  (S
+    (ADVP (RB:[498..506] Moreover))
+    (,:[506..507] ,)
+    (NP-SBJ (DT:[508..511] the) (NN:[512..515] ras) (NNS:[516..525] mutations))
+    (VP (VBD:[526..530] were) (DT:[532..535] all)
+      (PP-LOC-PRD (IN:[536..538] at) (CC:[539..541] or) (IN:[542..546] near)
+        (NP
+          (NP (NN:[547..559] dipyrimidine) (NNS:[560..565] sites))
+          (VP (VBN:[566..571] known)
+            (S
+              (NP-SBJ (-NONE-:[571..571] *))
+              (VP (TO:[572..574] to)
+                (VP (VB:[575..577] be)
+                  (NP-PRD
+                    (NP (NNS:[578..585] targets))
+                    (PP (IN:[586..588] of)
+                      (NP (NN:[589..591] UV) (NN:[592..598] damage)))))))))))
+    (.:[598..599] .)))
+
+;sentence 7 Span:600..663
+;Two primary  tumors were biclonal with respect to ras mutation.
+;[604..619]:malignancy:"primary  tumors"
+;[650..653]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (CD:[600..603] Two)
+       (JJ:[604..611] primary) (NNS:[613..619] tumors))
+    (VP (VBD:[620..624] were)
+      (ADJP-PRD (JJ:[625..633] biclonal))
+      (PP (IN:[634..638] with)
+        (NP
+          (NP (NN:[639..646] respect))
+          (PP (TO:[647..649] to)
+            (NP (NN:[650..653] ras) (NN:[654..662] mutation))))))
+    (.:[662..663] .)))
+
+;sentence 8 Span:664..742
+;An active role for UV  irradiation in induction of the mutations is
+;suggested.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[664..666] An) (JJ:[667..673] active) (NN:[674..678] role))
+      (PP (IN:[679..682] for)
+        (NP (NN:[683..685] UV) (NN:[687..698] irradiation)))
+      (PP (IN:[699..701] in)
+        (NP
+          (NP (NN:[702..711] induction))
+          (PP (IN:[712..714] of)
+            (NP (DT:[715..718] the) (NNS:[719..728] mutations))))))
+    (VP (VBZ:[729..731] is)
+      (VP (VBN:[732..741] suggested)
+        (NP-1 (-NONE-:[741..741] *))))
+    (.:[741..742] .)))
+
+;section 9 Span:746..790
+;PMID: 2674680 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[746..750] PMID) (::[750..751] :) (CD:[752..759] 2674680)
+        (NN:[760..761] -LSB-) (NNP:[761..767] PubMed) (::[768..769] -)
+        (NN:[770..777] indexed) (IN:[778..781] for)
+        (NNP:[782..790] MEDLINE-RSB-)))

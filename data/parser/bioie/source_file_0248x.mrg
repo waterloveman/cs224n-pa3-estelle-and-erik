@@ -1,0 +1,245 @@
+;PMID: 8547609
+;source_file_776.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..125] = [t:41..125]
+;2)section:[e:129..221] = [t:129..221]
+;3)section:[e:225..313] = [t:225..313]
+;4)sentence:[e:317..462] = [t:317..462]
+;5)sentence:[e:463..691] = [t:463..691]
+;6)sentence:[e:692..799] = [t:692..799]
+;7)sentence:[e:800..992] = [t:800..992]
+;8)sentence:[e:993..1129] = [t:993..1129]
+;9)section:[e:1133..1177] = [t:1133..1177]
+
+;section 0 Span:0..36
+;Int J Hematol  1995 Jun;61(4):205-13
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..13] Hematol) (CD:[15..19] 1995)
+        (.:[20..27] Jun;61-LRB-) (CD:[27..29] 4-RRB-) (CD:[29..33] :205)
+        (::[33..34] -) (CD:[34..36] 13)))
+
+;sentence 1 Span:41..125
+;Double mutations of the N-ras gene in a patient with acute myelomonocytic 
+;leukemia.
+;[65..70]:gene-rna:"N-ras"
+;[94..124]:malignancy:"acute myelomonocytic  leukemia"
+(SENT
+  (NP-HLN
+    (NP (JJ:[41..47] Double) (NNS:[48..57] mutations))
+    (PP (IN:[58..60] of)
+      (NP (DT:[61..64] the) (NN:[65..70] N-ras) (NN:[71..75] gene)))
+    (PP (IN:[76..78] in)
+      (NP
+        (NP (DT:[79..80] a) (NN:[81..88] patient))
+        (PP (IN:[89..93] with)
+          (NP (JJ:[94..99] acute) (JJ:[100..114] myelomonocytic)
+              (NN:[116..124] leukemia)))))
+    (.:[124..125] .)))
+
+;section 2 Span:129..221
+;Horiike S, Misawa S, Kaneko H, Nakai H, Ueda Y, Nakao M, Hirakawa K, Taniwaki
+;M,  Kashima K.
+(SEC
+  (FRAG (NNP:[129..136] Horiike) (NNP:[137..139] S,) (NNP:[140..146] Misawa)
+        (NNP:[147..149] S,) (NNP:[150..156] Kaneko) (NNP:[157..158] H)
+        (,:[158..159] ,) (NNP:[160..165] Nakai) (NNP:[166..167] H)
+        (,:[167..168] ,) (NNP:[169..173] Ueda) (NNP:[174..175] Y)
+        (,:[175..176] ,) (NNP:[177..182] Nakao) (NNP:[183..185] M,)
+        (NNP:[186..194] Hirakawa) (NNP:[195..196] K) (,:[196..197] ,)
+        (NNP:[198..206] Taniwaki) (NNP:[207..209] M,) (NNP:[211..218] Kashima)
+        (NNP:[219..221] K.)))
+
+;section 3 Span:225..313
+;Third Department of Internal Medicine, Kyoto Prefectural University of
+;Medicine,  Japan.
+(SEC
+  (FRAG (NNP:[225..230] Third) (NNP:[231..241] Department) (IN:[242..244] of)
+        (NNP:[245..253] Internal) (NNP:[254..262] Medicine) (,:[262..263] ,)
+        (NNP:[264..269] Kyoto) (NNP:[270..281] Prefectural)
+        (NNP:[282..292] University) (IN:[293..295] of) (NNP:[296..304] Medicine)
+        (,:[304..305] ,) (NNP:[307..312] Japan) (.:[312..313] .)))
+
+;sentence 4 Span:317..462
+;We report a patient with acute myelomonocytic leukemia (AMMoL) who showed two
+; independent point mutations of the N-ras gene at codons 12 and 13.
+;[342..371]:malignancy:"acute myelomonocytic leukemia"
+;[373..378]:malignancy:"AMMoL"
+;[408..423]:variation-type:"point mutations"
+;[431..436]:gene-rna:"N-ras"
+;[445..454]:variation-location:"codons 12"
+;[445..451]...[459..461]:variation-location:"codons"..."13"
+(SENT
+  (S
+    (NP-SBJ (PRP:[317..319] We))
+    (VP (VBP:[320..326] report)
+      (NP
+        (NP
+          (NP (DT:[327..328] a) (NN:[329..336] patient))
+          (PP (IN:[337..341] with)
+            (NP
+              (NML
+                (NML (JJ:[342..347] acute) (JJ:[348..362] myelomonocytic)
+                     (NN:[363..371] leukemia))
+                (NML (-LRB-:[372..373] -LRB-) (NN:[373..378] AMMoL)
+                     (-RRB-:[378..379] -RRB-))))))
+        (SBAR
+          (WHNP-1 (WP:[380..383] who))
+          (S
+            (NP-SBJ-1 (-NONE-:[383..383] *T*))
+            (VP (VBD:[384..390] showed)
+              (NP
+                (NP (CD:[391..394] two) (JJ:[396..407] independent)
+                   (NN:[408..413] point) (NNS:[414..423] mutations))
+                (PP (IN:[424..426] of)
+                  (NP (DT:[427..430] the) (NN:[431..436] N-ras)
+                      (NN:[437..441] gene))))
+              (PP-LOC (IN:[442..444] at)
+                (NP
+                  (NP
+                    (NML-2 (NNS:[445..451] codons))
+                    (CD:[452..454] 12))
+                  (CC:[455..458] and)
+                  (NP
+                    (NML-2 (-NONE-:[458..458] *P*))
+                    (CD:[459..461] 13)))))))))
+    (.:[461..462] .)))
+
+;sentence 5 Span:463..691
+;Longitudinal  analysis revealed that one mutation at codon 13 was detectable
+;throughout his  disease course and the other at codon 12 emerged as a second
+;mutation 14 months  after the diagnosis was made, at the refractory stage.
+;[504..512]:variation-event:"mutation"
+;[516..524]:variation-location:"codon 13"
+;[556..563]:malignancy:"disease"
+;[588..596]:variation-location:"codon 12"
+;[617..625]:variation-event:"mutation"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[463..475] Longitudinal) (NN:[477..485] analysis))
+      (VP (VBD:[486..494] revealed)
+        (SBAR (IN:[495..499] that)
+          (S
+            (NP-SBJ
+              (NP (CD:[500..503] one) (NN:[504..512] mutation))
+              (PP-LOC (IN:[513..515] at)
+                (NP (NN:[516..521] codon) (CD:[522..524] 13))))
+            (VP (VBD:[525..528] was)
+              (ADJP-PRD (JJ:[529..539] detectable))
+              (PP-TMP (IN:[540..550] throughout)
+                (NP (PRP$:[551..554] his) (NN:[556..563] disease)
+                    (NN:[564..570] course))))))))
+    (CC:[571..574] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[575..578] the) (NN:[579..584] other))
+        (PP-LOC (IN:[585..587] at)
+          (NP (NN:[588..593] codon) (CD:[594..596] 12))))
+      (VP (VBD:[597..604] emerged)
+        (PP (IN:[605..607] as)
+          (NP (DT:[608..609] a) (JJ:[610..616] second) (NN:[617..625] mutation)))
+        (SBAR-TMP
+          (NP-TMP (CD:[626..628] 14) (NNS:[629..635] months))
+          (IN:[637..642] after)
+          (S
+            (NP-SBJ-1 (DT:[643..646] the) (NN:[647..656] diagnosis))
+            (VP (VBD:[657..660] was)
+              (VP (VBN:[661..665] made)
+                (NP-1 (-NONE-:[665..665] *))
+                (,:[665..666] ,)
+                (PP-TMP (IN:[667..669] at)
+                  (NP (DT:[670..673] the) (JJ:[674..684] refractory)
+                      (NN:[685..690] stage)))))))))
+    (.:[690..691] .)))
+
+;sentence 6 Span:692..799
+;Cloning to vector and  subsequent sequencing confirmed that these mutations
+;occurred in different  alleles.
+;[752..767]:variation-event:"these mutations"
+(SENT
+  (S
+    (NP-SBJ
+      (S-NOM
+        (NP-SBJ (-NONE-:[692..692] *))
+        (VP (VBG:[692..699] Cloning)
+          (PP (TO:[700..702] to)
+            (NP (NN:[703..709] vector)))))
+      (CC:[710..713] and)
+      (NP (JJ:[715..725] subsequent) (NN:[726..736] sequencing)))
+    (VP (VBD:[737..746] confirmed)
+      (SBAR (IN:[747..751] that)
+        (S
+          (NP-SBJ (DT:[752..757] these) (NNS:[758..767] mutations))
+          (VP (VBD:[768..776] occurred)
+            (PP-LOC (IN:[777..779] in)
+              (NP (JJ:[780..789] different) (NNS:[791..798] alleles)))))))
+    (.:[798..799] .)))
+
+;sentence 7 Span:800..992
+;Chromosome findings showed a simple abnormal karyotype at presentation  and
+;further karyotypic aberrations during his disease course, concomitantly with 
+;the second mutation of the N-ras gene.
+;[965..973]:variation-event:"mutation"
+;[981..986]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (NN:[800..810] Chromosome) (NNS:[811..819] findings))
+    (VP
+      (VP (VBD:[820..826] showed)
+        (NP=1 (DT:[827..828] a) (JJ:[829..835] simple) (JJ:[836..844] abnormal)
+              (NN:[845..854] karyotype))
+        (PP-TMP=2 (IN:[855..857] at)
+          (NP (NN:[858..870] presentation))))
+      (CC:[872..875] and)
+      (VP
+        (NP=1 (JJ:[876..883] further) (JJ:[884..894] karyotypic)
+              (NNS:[895..906] aberrations))
+        (PP-TMP=2 (IN:[907..913] during)
+          (NP (PRP$:[914..917] his) (NN:[918..925] disease)
+              (NN:[926..932] course)))
+        (,:[932..933] ,)
+        (PP
+          (ADVP (RB:[934..947] concomitantly))
+          (IN:[948..952] with)
+          (NP
+            (NP (DT:[954..957] the) (JJ:[958..964] second)
+                (NN:[965..973] mutation))
+            (PP (IN:[974..976] of)
+              (NP (DT:[977..980] the) (NN:[981..986] N-ras) (NN:[987..991] gene)))))))
+    (.:[991..992] .)))
+
+;sentence 8 Span:993..1129
+;These findings revealed a close  relationship among the disease progression,
+;karyotypic evolution and a  newly-appearing N-ras mutation.
+;[1049..1056]:malignancy:"disease"
+;[1114..1119]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[993..998] These) (NNS:[999..1007] findings))
+    (VP (VBD:[1008..1016] revealed)
+      (NP
+        (NP (DT:[1017..1018] a) (JJ:[1019..1024] close)
+            (NN:[1026..1038] relationship))
+        (PP (IN:[1039..1044] among)
+          (NP
+            (NP (DT:[1045..1048] the) (NN:[1049..1056] disease)
+                (NN:[1057..1068] progression))
+            (,:[1068..1069] ,)
+            (NP (JJ:[1070..1080] karyotypic) (NN:[1081..1090] evolution))
+            (CC:[1091..1094] and)
+            (NP (DT:[1095..1096] a)
+              (ADJP (RB:[1098..1103] newly) (HYPH:[1103..1104] -)
+                    (VBG:[1104..1113] appearing))
+              (NN:[1114..1119] N-ras) (NN:[1120..1128] mutation))))))
+    (.:[1128..1129] .)))
+
+;section 9 Span:1133..1177
+;PMID: 8547609 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1133..1137] PMID) (::[1137..1138] :) (CD:[1139..1146] 8547609)
+        (NN:[1147..1148] -LSB-) (NNP:[1148..1154] PubMed) (::[1155..1156] -)
+        (NN:[1157..1164] indexed) (IN:[1165..1168] for)
+        (NNP:[1169..1177] MEDLINE-RSB-)))

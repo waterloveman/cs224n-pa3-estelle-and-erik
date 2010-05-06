@@ -1,0 +1,422 @@
+;PMID: 8426854
+;source_file_780.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..134] = [t:35..134]
+;2)section:[e:138..172] = [t:138..172]
+;3)section:[e:176..252] = [t:176..252]
+;4)sentence:[e:256..470] = [t:256..470]
+;5)sentence:[e:471..684] = [t:471..684]
+;6)sentence:[e:685..867] = [t:685..867]
+;7)sentence:[e:868..989] = [t:868..989]
+;8)sentence:[e:990..1136] = [t:990..1136]
+;9)sentence:[e:1137..1260] = [t:1137..1260]
+;10)sentence:[e:1262..1369] = [t:1262..1369]
+;11)sentence:[e:1370..1495] = [t:1370..1495]
+;12)sentence:[e:1497..1642] = [t:1497..1642]
+;13)section:[e:1646..1690] = [t:1646..1690]
+
+;section 0 Span:0..30
+;Mod Pathol  1993 Jan;6(1):15-9
+(SEC
+  (FRAG (NNP:[0..3] Mod) (NNP:[4..10] Pathol) (CD:[12..16] 1993)
+        (CC:[17..23] Jan;6-LRB-) (CD:[23..24] 1) (-RRB-:[24..25] -RRB-)
+        (CD:[25..28] :15) (::[28..29] -) (CD:[29..30] 9)))
+
+;sentence 1 Span:35..134
+;H-ras-1 gene mutations in basal cell carcinoma: automated direct sequencing
+;of  clinical specimens.
+;[35..42]:gene-rna:"H-ras-1"
+;[61..81]:malignancy:"basal cell carcinoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[35..42] H-ras-1) (NN:[43..47] gene) (NNS:[48..57] mutations))
+      (PP-LOC (IN:[58..60] in)
+        (NP (JJ:[61..66] basal) (NN:[67..71] cell) (NN:[72..81] carcinoma))))
+    (::[81..82] :)
+    (NP
+      (NP (JJ:[83..92] automated) (JJ:[93..99] direct)
+          (NN:[100..110] sequencing))
+      (PP (IN:[111..113] of)
+        (NP (JJ:[115..123] clinical) (NNS:[124..133] specimens))))
+    (.:[133..134] .)))
+
+;section 2 Span:138..172
+;Wilke WW, Robinson RA, Kennard CD.
+(SEC
+  (FRAG (NNP:[138..143] Wilke) (NNP:[144..146] WW) (,:[146..147] ,)
+        (NNP:[148..156] Robinson) (NNP:[157..159] RA) (,:[159..160] ,)
+        (NNP:[161..168] Kennard) (NNP:[169..171] CD) (.:[171..172] .)))
+
+;section 3 Span:176..252
+;Department of Pathology, College of Medicine, University of Iowa, Iowa City.
+(SEC
+  (FRAG (NNP:[176..186] Department) (IN:[187..189] of)
+        (NNP:[190..199] Pathology) (,:[199..200] ,) (NNP:[201..208] College)
+        (IN:[209..211] of) (NNP:[212..220] Medicine) (,:[220..221] ,)
+        (NNP:[222..232] University) (IN:[233..235] of) (NNP:[236..240] Iowa)
+        (,:[240..241] ,) (NNP:[242..246] Iowa) (NNP:[247..251] City)
+        (.:[251..252] .)))
+
+;sentence 4 Span:256..470
+;Ras oncogenes are activated by point mutations occurring in codons 12, 13 or
+;61  and almost any base pair mutation occurring within the first two
+;positions of  any of these codons results in activation of the gene.
+;[256..259]:gene-rna:"Ras"
+;[287..302]:variation-type:"point mutations"
+;[316..325]:variation-location:"codons 12"
+;[316..322]...[333..335]:variation-location:"codons"..."61"
+;[316..322]...[327..329]:variation-location:"codons"..."13"
+;[352..370]:variation-type:"base pair mutation"
+;[392..435]:variation-location:"first two positions of  any of these codons"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[256..259] Ras) (NNS:[260..269] oncogenes))
+      (VP (VBP:[270..273] are)
+        (VP (VBN:[274..283] activated)
+          (NP-1 (-NONE-:[283..283] *))
+          (PP (IN:[284..286] by)
+            (NP-LGS
+              (NP (NN:[287..292] point) (NNS:[293..302] mutations))
+              (VP (VBG:[303..312] occurring)
+                (PP-LOC (IN:[313..315] in)
+                  (NP
+                    (NP
+                      (NML-2 (NNS:[316..322] codons))
+                      (CD:[323..325] 12))
+                    (,:[325..326] ,)
+                    (NP
+                      (NML-2 (-NONE-:[326..326] *P*))
+                      (CD:[327..329] 13))
+                    (CC:[330..332] or)
+                    (NP
+                      (NML-2 (-NONE-:[332..332] *P*))
+                      (CD:[333..335] 61))))))))))
+    (CC:[337..340] and)
+    (S
+      (NP-SBJ
+        (NP
+          (ADVP (RB:[341..347] almost))
+          (DT:[348..351] any)
+          
+          (NML (NN:[352..356] base) (NN:[357..361] pair))
+          (NN:[362..370] mutation))
+        (VP (VBG:[371..380] occurring)
+          (PP-LOC (IN:[381..387] within)
+            (NP
+              (NP (DT:[388..391] the) (JJ:[392..397] first) (CD:[398..401] two)
+                  (NNS:[402..411] positions))
+              (PP (IN:[412..414] of)
+                (NP
+                  (NP (DT:[416..419] any))
+                  (PP (IN:[420..422] of)
+                    (NP (DT:[423..428] these) (NNS:[429..435] codons)))))))))
+      (VP (VBZ:[436..443] results)
+        (PP-CLR (IN:[444..446] in)
+          (NP
+            (NP (NN:[447..457] activation))
+            (PP (IN:[458..460] of)
+              (NP (DT:[461..464] the) (NN:[465..469] gene)))))))
+    (.:[469..470] .)))
+
+;sentence 5 Span:471..684
+;Although ras point  mutations have been reported to occur in several skin
+;neoplasms including  squamous carcinoma, keratoacanthoma and melanoma, their
+;frequency of occurrence  in basal cell carcinoma is not known.
+;[480..483]:gene-rna:"ras"
+;[484..500]:variation-type:"point  mutations"
+;[540..554]:malignancy:"skin neoplasms"
+;[566..584]:malignancy:"squamous carcinoma"
+;[586..601]:malignancy:"keratoacanthoma"
+;[606..614]:malignancy:"melanoma"
+;[650..670]:malignancy:"basal cell carcinoma"
+(SENT
+  (S
+    (SBAR-ADV (IN:[471..479] Although)
+      (S
+        (NP-SBJ-1 (NN:[480..483] ras)
+           (NN:[484..489] point) (NNS:[491..500] mutations))
+        (VP (VBP:[501..505] have)
+          (VP (VBN:[506..510] been)
+            (VP (VBN:[511..519] reported)
+              (S
+                (NP-SBJ-1 (-NONE-:[519..519] *))
+                (VP (TO:[520..522] to)
+                  (VP (VB:[523..528] occur)
+                    (PP-LOC (IN:[529..531] in)
+                      (NP
+                        (NP (JJ:[532..539] several)
+                           (NN:[540..544] skin) (NNS:[545..554] neoplasms))
+                        (PP (VBG:[555..564] including)
+                          (NP
+                            (NP (JJ:[566..574] squamous)
+                                (NN:[575..584] carcinoma))
+                            (,:[584..585] ,)
+                            (NP (NN:[586..601] keratoacanthoma))
+                            (CC:[602..605] and)
+                            (NP (NN:[606..614] melanoma))))))))))))))
+    (,:[614..615] ,)
+    (NP-SBJ
+      (NP (PRP$:[616..621] their) (NN:[622..631] frequency))
+      (PP (IN:[632..634] of)
+        (NP (NN:[635..645] occurrence)))
+      (PP (IN:[647..649] in)
+        (NP (JJ:[650..655] basal) (NN:[656..660] cell) (NN:[661..670] carcinoma))))
+    (VP (VBZ:[671..673] is) (RB:[674..677] not)
+      (ADJP-PRD (JJ:[678..683] known)))
+    (.:[683..684] .)))
+
+;sentence 6 Span:685..867
+;We examined basal cell carcinomas from 13  patients for activating mutations
+;in the H-ras-1 gene by automated direct  sequencing of polymerase chain
+;reaction assay amplified targets.
+;[697..718]:malignancy:"basal cell carcinomas"
+;[769..776]:gene-rna:"H-ras-1"
+;[817..827]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ (PRP:[685..687] We))
+    (VP (VBD:[688..696] examined)
+      (NP
+        (NP (JJ:[697..702] basal) (NN:[703..707] cell)
+            (NNS:[708..718] carcinomas))
+        (PP (IN:[719..723] from)
+          (NP (CD:[724..726] 13) (NNS:[728..736] patients))))
+      (PP (IN:[737..740] for)
+        (NP
+          (NP (VBG:[741..751] activating) (NNS:[752..761] mutations))
+          (PP-LOC (IN:[762..764] in)
+            (NP (DT:[765..768] the) (NN:[769..776] H-ras-1) (NN:[777..781] gene)))))
+      (PP-MNR (IN:[782..784] by)
+        (NP
+          (NP (JJ:[785..794] automated) (JJ:[795..801] direct)
+              (NN:[803..813] sequencing))
+          (PP (IN:[814..816] of)
+            (NP
+              (ADJP
+                (NML
+                  (NML (NN:[817..827] polymerase) (NN:[828..833] chain)
+                       (NN:[834..842] reaction))
+                  (NN:[843..848] assay))
+                (VBN:[849..858] amplified))
+              (NNS:[859..866] targets))))))
+    (.:[866..867] .)))
+
+;sentence 7 Span:868..989
+;We amplified  sequences in exon 1 that flanked codons 12 and 13 and amplified
+;sequences in  exon 2 that flanked codon 61.
+;[895..901]:variation-location:"exon 1"
+;[907..924]:variation-location:"flanked codons 12"
+;[907..921]...[929..931]:variation-location:"flanked codons"..."13"
+;[960..966]:variation-location:"exon 2"
+;[972..988]:variation-location:"flanked codon 61"
+(SENT
+  (S
+    (NP-SBJ (PRP:[868..870] We))
+    (VP
+      (VP (VBD:[871..880] amplified)
+        (NP
+          (NP
+            (NP (NNS:[882..891] sequences))
+            (PP-LOC (IN:[892..894] in)
+              (NP (NN:[895..899] exon) (CD:[900..901] 1))))
+          (SBAR
+            (WHNP-1 (WDT:[902..906] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[906..906] *T*))
+              (VP (VBD:[907..914] flanked)
+                (NP
+                  (NP
+                    (NML-3 (NNS:[915..921] codons))
+                    (CD:[922..924] 12))
+                  (CC:[925..928] and)
+                  (NP
+                    (NML-3 (-NONE-:[928..928] *P*))
+                    (CD:[929..931] 13))))))))
+      (CC:[932..935] and)
+      (VP (VBD:[936..945] amplified)
+        (NP
+          (NP
+            (NP (NNS:[946..955] sequences))
+            (PP-LOC (IN:[956..958] in)
+              (NP (NN:[960..964] exon) (CD:[965..966] 2))))
+          (SBAR
+            (WHNP-2 (WDT:[967..971] that))
+            (S
+              (NP-SBJ-2 (-NONE-:[971..971] *T*))
+              (VP (VBD:[972..979] flanked)
+                (NP (NN:[980..985] codon) (CD:[986..988] 61))))))))
+    (.:[988..989] .)))
+
+;sentence 8 Span:990..1136
+;The PCR products were centrifuged and directly  sequenced using antisense
+;primers in an automated sequencer using fluorescent  dideoxyterminators.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[990..993] The) (NN:[994..997] PCR) (NNS:[998..1006] products))
+    (VP (VBD:[1007..1011] were)
+      (VP
+        (VP (VBN:[1012..1023] centrifuged)
+          (NP-1 (-NONE-:[1023..1023] *)))
+        (CC:[1024..1027] and)
+        (VP
+          (ADVP (RB:[1028..1036] directly))
+          (VBN:[1038..1047] sequenced)
+          (NP-1 (-NONE-:[1047..1047] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[1047..1047] *))
+            (VP (VBG:[1048..1053] using)
+              (NP
+                (NP (JJ:[1054..1063] antisense) (NNS:[1064..1071] primers))
+                (PP (IN:[1072..1074] in)
+                  (NP
+                    (NP (DT:[1075..1077] an) (JJ:[1078..1087] automated)
+                        (NN:[1088..1097] sequencer))
+                    (VP (VBG:[1098..1103] using)
+                      (NP (JJ:[1104..1115] fluorescent)
+                          (NNS:[1117..1135] dideoxyterminators)))))))))))
+    (.:[1135..1136] .)))
+
+;sentence 9 Span:1137..1260
+;One tumor was found to show an activating G to A  transversion in codon 13
+;which code for aspartic acid instead of glycine.
+;[1141..1146]:malignancy:"tumor"
+;[1179..1180]:variation-state-original:"G"
+;[1184..1185]:variation-state-altered:"A"
+;[1187..1199]:variation-type:"transversion"
+;[1203..1211]:variation-location:"codon 13"
+;[1227..1240]:variation-state-altered:"aspartic acid"
+;[1252..1259]:variation-state-original:"glycine"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[1137..1140] One) (NN:[1141..1146] tumor))
+    (VP (VBD:[1147..1150] was)
+      (VP (VBN:[1151..1156] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1156..1156] *))
+          (VP (TO:[1157..1159] to)
+            (VP (VB:[1160..1164] show)
+              (NP (DT:[1165..1167] an) (VBG:[1168..1178] activating)
+                (NML
+                  (NML (NN:[1179..1180] G))
+                  (PP (TO:[1181..1183] to)
+                    (NP (NN:[1184..1185] A))))
+                (NN:[1187..1199] transversion))
+              (PP-LOC (IN:[1200..1202] in)
+                (NP
+                  (NP (NN:[1203..1208] codon) (CD:[1209..1211] 13))
+                  (SBAR
+                    (WHNP-2 (WDT:[1212..1217] which))
+                    (S
+                      (NP-SBJ-2 (-NONE-:[1217..1217] *T*))
+                      (VP (VBP:[1218..1222] code)
+                        (PP-CLR (IN:[1223..1226] for)
+                          (NP
+                            (NP (JJ:[1227..1235] aspartic)
+                                (NN:[1236..1240] acid))
+                            (PP (IN:[1241..1248] instead) (IN:[1249..1251] of)
+                              (NP (NN:[1252..1259] glycine)))))))))))))))
+    (.:[1259..1260] .)))
+
+;sentence 10 Span:1262..1369
+;Although H-ras mutations may be found in some skin tumors, they are not
+;frequent  in basal cell carcinomas.
+;[1271..1276]:gene-rna:"H-ras"
+;[1308..1319]:malignancy:"skin tumors"
+;[1347..1368]:malignancy:"basal cell carcinomas"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1262..1270] Although)
+      (S
+        (NP-SBJ-1 (NN:[1271..1276] H-ras) (NNS:[1277..1286] mutations))
+        (VP (MD:[1287..1290] may)
+          (VP (VB:[1291..1293] be)
+            (VP (VBN:[1294..1299] found)
+              (NP-1 (-NONE-:[1299..1299] *))
+              (PP-LOC (IN:[1300..1302] in)
+                (NP (DT:[1303..1307] some)
+                   (NN:[1308..1312] skin) (NNS:[1313..1319] tumors))))))))
+    (,:[1319..1320] ,)
+    (NP-SBJ (PRP:[1321..1325] they))
+    (VP (VBP:[1326..1329] are) (RB:[1330..1333] not)
+      (ADJP-PRD (JJ:[1334..1342] frequent))
+      (PP-LOC (IN:[1344..1346] in)
+        (NP (JJ:[1347..1352] basal) (NN:[1353..1357] cell)
+            (NNS:[1358..1368] carcinomas))))
+    (.:[1368..1369] .)))
+
+;sentence 11 Span:1370..1495
+;From this study we believe that direct sequencing of  clinical material is of
+;value and has advantages over other techniques.
+(SENT
+  (S
+    (PP (IN:[1370..1374] From)
+      (NP (DT:[1375..1379] this) (NN:[1380..1385] study)))
+    (NP-SBJ (PRP:[1386..1388] we))
+    (VP (VBP:[1389..1396] believe)
+      (SBAR (IN:[1397..1401] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1402..1408] direct) (NN:[1409..1419] sequencing))
+            (PP (IN:[1420..1422] of)
+              (NP (JJ:[1424..1432] clinical) (NN:[1433..1441] material))))
+          (VP
+            (VP (VBZ:[1442..1444] is)
+              (PP-PRD (IN:[1445..1447] of)
+                (NP (NN:[1448..1453] value))))
+            (CC:[1454..1457] and)
+            (VP (VBZ:[1458..1461] has)
+              (NP
+                (NP (NNS:[1462..1472] advantages))
+                (PP (IN:[1473..1477] over)
+                  (NP (JJ:[1478..1483] other) (NNS:[1484..1494] techniques)))))))))
+    (.:[1494..1495] .)))
+
+;sentence 12 Span:1497..1642
+;Additional studies need to be undertaken to understand the true clinical 
+;significance of ras mutations in basal cell carcinomas when they occur.
+;[1587..1590]:gene-rna:"ras"
+;[1604..1625]:malignancy:"basal cell carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1497..1507] Additional) (NNS:[1508..1515] studies))
+    (VP (VBP:[1516..1520] need)
+      (S
+        (NP-SBJ-1 (-NONE-:[1520..1520] *))
+        (VP (TO:[1521..1523] to)
+          (VP (VB:[1524..1526] be)
+            (VP (VBN:[1527..1537] undertaken)
+              (NP-1 (-NONE-:[1537..1537] *))
+              (S-PRP
+                (NP-SBJ (-NONE-:[1537..1537] *))
+                (VP (TO:[1538..1540] to)
+                  (VP (VB:[1541..1551] understand)
+                    (NP
+                      (NP (DT:[1552..1555] the) (JJ:[1556..1560] true)
+                          (JJ:[1561..1569] clinical)
+                          (NN:[1571..1583] significance))
+                      (PP (IN:[1584..1586] of)
+                        (NP
+                          (NP (NN:[1587..1590] ras) (NNS:[1591..1600] mutations))
+                          (PP-LOC (IN:[1601..1603] in)
+                            (NP (JJ:[1604..1609] basal) (NN:[1610..1614] cell)
+                                (NNS:[1615..1625] carcinomas))))))
+                    (SBAR
+                      (WHADVP-2 (WRB:[1626..1630] when))
+                      (S
+                        (NP-SBJ (PRP:[1631..1635] they))
+                        (VP (VBP:[1636..1641] occur)
+                          (ADVP-TMP-2 (-NONE-:[1641..1641] *T*)))))))))))))
+    (.:[1641..1642] .)))
+
+;section 13 Span:1646..1690
+;PMID: 8426854 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1646..1650] PMID) (::[1650..1651] :) (CD:[1652..1659] 8426854)
+        (NN:[1660..1661] -LSB-) (NNP:[1661..1667] PubMed) (::[1668..1669] -)
+        (NN:[1670..1677] indexed) (IN:[1678..1681] for)
+        (NNP:[1682..1690] MEDLINE-RSB-)))

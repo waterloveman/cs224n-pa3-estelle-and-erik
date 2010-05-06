@@ -1,0 +1,281 @@
+;PMID: 10671680
+;source_file_741.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:39..186] = [t:39..186]
+;2)section:[e:190..248] = [t:190..248]
+;3)section:[e:252..349] = [t:252..349]
+;4)sentence:[e:353..542] = [t:353..542]
+;5)sentence:[e:543..652] = [t:543..652]
+;6)sentence:[e:654..858] = [t:654..858]
+;7)sentence:[e:859..953] = [t:859..953]
+;8)sentence:[e:955..1108] = [t:955..1108]
+;9)section:[e:1112..1157] = [t:1112..1157]
+
+;section 0 Span:0..34
+;Oncol Rep  2000 Mar-Apr;7(2):323-6
+(SEC
+  (FRAG (DT:[0..5] Oncol) (NNP:[6..9] Rep) (CD:[11..15] 2000) (.:[16..19] Mar)
+        (::[19..20] -) (CC:[20..26] Apr;7-LRB-) (CD:[26..27] 2)
+        (-RRB-:[27..28] -RRB-) (CD:[28..32] :323) (::[32..33] -) (CD:[33..34] 6)))
+
+;sentence 1 Span:39..186
+;Mutational analysis of the CTNNB1 (beta-catenin) gene in human endometrial 
+;cancer: frequent mutations at codon 34 that cause nuclear accumulation.
+;[66..72]:gene-rna:"CTNNB1"
+;[74..86]:gene-rna:"beta-catenin"
+;[102..121]:malignancy:"endometrial  cancer"
+;[132..141]:variation-event:"mutations"
+;[145..153]:variation-location:"codon 34"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[39..49] Mutational) (NN:[50..58] analysis))
+      (PP (IN:[59..61] of)
+        (NP
+          (NP (DT:[62..65] the) (NN:[66..72] CTNNB1)
+            (PRN (-LRB-:[73..74] -LRB-)
+              (NP (NN:[74..86] beta-catenin))
+              (-RRB-:[86..87] -RRB-))
+            (NN:[88..92] gene))
+          (PP (IN:[93..95] in)
+            (NP (JJ:[96..101] human)
+               (JJ:[102..113] endometrial) (NN:[115..121] cancer))))))
+    (::[121..122] :)
+    (NP
+      (NP
+        (NP (JJ:[123..131] frequent) (NNS:[132..141] mutations))
+        (PP-LOC (IN:[142..144] at)
+          (NP (NN:[145..150] codon) (CD:[151..153] 34))))
+      (SBAR
+        (WHNP-1 (WDT:[154..158] that))
+        (S
+          (NP-SBJ-1 (-NONE-:[158..158] *T*))
+          (VP (VBP:[159..164] cause)
+            (NP (JJ:[165..172] nuclear) (NN:[173..185] accumulation))))))
+    (.:[185..186] .)))
+
+;section 2 Span:190..248
+;Ikeda T, Yoshinaga K, Semba S, Kondo E, Ohmori H, Horii A.
+(SEC
+  (FRAG (NNP:[190..195] Ikeda) (NNP:[196..197] T) (,:[197..198] ,)
+        (NNP:[199..208] Yoshinaga) (NNP:[209..210] K) (,:[210..211] ,)
+        (NNP:[212..217] Semba) (NNP:[218..220] S,) (NNP:[221..226] Kondo)
+        (NNP:[227..228] E) (,:[228..229] ,) (NNP:[230..236] Ohmori)
+        (NNP:[237..238] H) (,:[238..239] ,) (NNP:[240..245] Horii)
+        (NN:[246..248] A.)))
+
+;section 3 Span:252..349
+;Department of Molecular Pathology, Tohoku University School of Medicine,
+;Sendai  980-8575, Japan.
+(SEC
+  (FRAG (NNP:[252..262] Department) (IN:[263..265] of)
+        (NNP:[266..275] Molecular) (NNP:[276..285] Pathology) (,:[285..286] ,)
+        (NNP:[287..293] Tohoku) (NNP:[294..304] University)
+        (NNP:[305..311] School) (IN:[312..314] of) (NNP:[315..323] Medicine)
+        (,:[323..324] ,) (NNP:[325..331] Sendai) (CD:[333..336] 980)
+        (::[336..337] -) (CD:[337..341] 8575) (,:[341..342] ,)
+        (NNP:[343..348] Japan) (.:[348..349] .)))
+
+;sentence 4 Span:353..542
+;Recently, CTNNB1 (beta-catenin) has been found to function as an oncoprotein 
+;that works in the Wnt signaling pathway, and mutation of this gene has been 
+;reported in various human cancers.
+;[363..369]:gene-protein:"CTNNB1"
+;[371..383]:gene-protein:"beta-catenin"
+;[449..452]:gene-generic:"Wnt"
+;[493..497]:gene-rna:"gene"
+(SENT
+  (S
+    (S
+      (ADVP-TMP (RB:[353..361] Recently))
+      (,:[361..362] ,)
+      (NP-SBJ-3 (NN:[363..369] CTNNB1)
+        (PRN (-LRB-:[370..371] -LRB-)
+          (NP (NN:[371..383] beta-catenin))
+          (-RRB-:[383..384] -RRB-)))
+      (VP (VBZ:[385..388] has)
+        (VP (VBN:[389..393] been)
+          (VP (VBN:[394..399] found)
+            (S
+              (NP-SBJ-3 (-NONE-:[399..399] *))
+              (VP (TO:[400..402] to)
+                (VP (VB:[403..411] function)
+                  (PP-CLR (IN:[412..414] as)
+                    (NP
+                      (NP (DT:[415..417] an) (NN:[418..429] oncoprotein))
+                      (SBAR
+                        (WHNP-2 (WDT:[431..435] that))
+                        (S
+                          (NP-SBJ-2 (-NONE-:[435..435] *T*))
+                          (VP (VBZ:[436..441] works)
+                            (PP (IN:[442..444] in)
+                              (NP (DT:[445..448] the) (NN:[449..452] Wnt)
+                                  (NN:[453..462] signaling)
+                                  (NN:[463..470] pathway)))))))))))))))
+    (,:[470..471] ,) (CC:[472..475] and)
+    (S
+      (NP-SBJ-1
+        (NP (NN:[476..484] mutation))
+        (PP (IN:[485..487] of)
+          (NP (DT:[488..492] this) (NN:[493..497] gene))))
+      (VP (VBZ:[498..501] has)
+        (VP (VBN:[502..506] been)
+          (VP (VBN:[508..516] reported)
+            (NP-1 (-NONE-:[516..516] *))
+            (PP (IN:[517..519] in)
+              (NP (JJ:[520..527] various) (JJ:[528..533] human)
+                  (NNS:[534..541] cancers)))))))
+    (.:[541..542] .)))
+
+;sentence 5 Span:543..652
+;In this study, we analyzed 44 endometrial  cancers and found somatic missense
+;mutations in five (11%) tumors.
+;[573..593]:malignancy:"endometrial  cancers"
+;[612..630]:variation-type:"missense mutations"
+;[645..651]:malignancy:"tumors"
+(SENT
+  (S
+    (PP (IN:[543..545] In)
+      (NP (DT:[546..550] this) (NN:[551..556] study)))
+    (,:[556..557] ,)
+    (NP-SBJ (PRP:[558..560] we))
+    (VP
+      (VP (VBD:[561..569] analyzed)
+        (NP (CD:[570..572] 44)
+           (JJ:[573..584] endometrial) (NNS:[586..593] cancers)))
+      (CC:[594..597] and)
+      (VP (VBD:[598..603] found)
+        (NP (JJ:[604..611] somatic)
+           (JJ:[612..620] missense) (NNS:[621..630] mutations))
+        (PP-LOC (IN:[631..633] in)
+          (NP (CD:[634..638] five)
+            (PRN (-LRB-:[639..640] -LRB-)
+              (NP (CD:[640..642] 11) (NN:[642..643] %))
+              (-RRB-:[643..644] -RRB-))
+            (NNS:[645..651] tumors)))))
+    (.:[651..652] .)))
+
+;sentence 6 Span:654..858
+;Interestingly, four (80%) of the five tumors with mutations would cause amino
+; acid alterations at residues next to Ser 33, one of the targets for 
+;phosphorylation of glycogen synthase kinase (GSK)-3beta.
+;[692..698]:malignancy:"tumors"
+;[704..713]:variation-event:"mutations"
+;[726..749]:variation-type:"amino  acid alterations"
+;[753..776]:variation-location:"residues next to Ser 33"
+;[821..857]:gene-protein:"glycogen synthase kinase (GSK)-3beta"
+(SENT
+  (S
+    (ADVP (RB:[654..667] Interestingly))
+    (,:[667..668] ,)
+    (NP-SBJ
+      (NP (CD:[669..673] four)
+        (PRN (-LRB-:[674..675] -LRB-)
+          (NP (CD:[675..677] 80) (NN:[677..678] %))
+          (-RRB-:[678..679] -RRB-)))
+      (PP (IN:[680..682] of)
+        (NP
+          (NP (DT:[683..686] the) (CD:[687..691] five) (NNS:[692..698] tumors))
+          (PP (IN:[699..703] with)
+            (NP (NNS:[704..713] mutations))))))
+    (VP (MD:[714..719] would)
+      (VP (VB:[720..725] cause)
+        (NP
+          (NML (JJ:[726..731] amino) (NN:[733..737] acid))
+          (NNS:[738..749] alterations))
+        (PP-LOC (IN:[750..752] at)
+          (NP
+            (NP (NNS:[753..761] residues))
+            (ADVP-LOC (RB:[762..766] next)
+              (PP (TO:[767..769] to)
+                (NP
+                  (NP (NN:[770..773] Ser) (CD:[774..776] 33))
+                  (,:[776..777] ,)
+                  (NP
+                    (NP (CD:[778..781] one))
+                    (PP (IN:[782..784] of)
+                      (NP
+                        (NP (DT:[785..788] the) (NNS:[789..796] targets))
+                        (PP (IN:[797..800] for)
+                          (NP
+                            (NP (NN:[802..817] phosphorylation))
+                            (PP (IN:[818..820] of)
+                              (NP
+                                (NML
+                                  (NML (NN:[821..829] glycogen)
+                                       (NN:[830..838] synthase)
+                                       (NN:[839..845] kinase))
+                                  (NML (-LRB-:[846..847] -LRB-)
+                                       (NN:[847..850] GSK)
+                                       (-RRB-:[850..851] -RRB-)))
+                                (HYPH:[851..852] -) (NN:[852..857] 3beta)))))))))))))))
+    (.:[857..858] .)))
+
+;sentence 7 Span:859..953
+;The tumors with  mutations showed accumulation of the CTNNB1 protein in
+;cytoplasm and nucleus.
+;[863..869]:malignancy:"tumors"
+;[876..885]:variation-event:"mutations"
+;[913..919]:gene-protein:"CTNNB1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[859..862] The) (NNS:[863..869] tumors))
+      (PP (IN:[870..874] with)
+        (NP (NNS:[876..885] mutations))))
+    (VP (VBD:[886..892] showed)
+      (NP
+        (NP (NN:[893..905] accumulation))
+        (PP (IN:[906..908] of)
+          (NP (DT:[909..912] the) (NN:[913..919] CTNNB1) (NN:[920..927] protein))))
+      (PP-LOC (IN:[928..930] in)
+        (NP (NN:[931..940] cytoplasm) (CC:[941..944] and)
+            (NN:[945..952] nucleus))))
+    (.:[952..953] .)))
+
+;sentence 8 Span:955..1108
+;This is the first report of frequent somatic mutation of the CTNNB1 gene at 
+;codons adjacent to those encoding to Ser/Thr residues in endometrial cancer.
+;[1000..1008]:variation-event:"mutation"
+;[1016..1022]:gene-rna:"CTNNB1"
+;[1089..1107]:malignancy:"endometrial cancer"
+(SENT
+  (S
+    (NP-SBJ (DT:[955..959] This))
+    (VP (VBZ:[960..962] is)
+      (NP-PRD
+        (NP (DT:[963..966] the) (JJ:[967..972] first) (NN:[973..979] report))
+        (PP (IN:[980..982] of)
+          (NP
+            (NP (JJ:[983..991] frequent) (JJ:[992..999] somatic)
+                (NN:[1000..1008] mutation))
+            (PP (IN:[1009..1011] of)
+              (NP (DT:[1012..1015] the) (NN:[1016..1022] CTNNB1)
+                  (NN:[1023..1027] gene)))
+            (PP-LOC (IN:[1028..1030] at)
+              (NP
+                (NP (NNS:[1032..1038] codons))
+                (ADJP (JJ:[1039..1047] adjacent)
+                  (PP (TO:[1048..1050] to)
+                    (NP
+                      (NP (DT:[1051..1056] those))
+                      (VP (VBG:[1057..1065] encoding)
+                        (PP (TO:[1066..1068] to)
+                          (NP
+                            (NML (NN:[1069..1072] Ser) (SYM:[1072..1073] /)
+                                 (NN:[1073..1076] Thr))
+                            (NNS:[1077..1085] residues)))))))))
+            (PP (IN:[1086..1088] in)
+              (NP (JJ:[1089..1100] endometrial) (NN:[1101..1107] cancer)))))))
+    (.:[1107..1108] .)))
+
+;section 9 Span:1112..1157
+;PMID: 10671680 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1112..1116] PMID) (::[1116..1117] :) (CD:[1118..1126] 10671680)
+        (NN:[1127..1128] -LSB-) (NNP:[1128..1134] PubMed) (::[1135..1136] -)
+        (NN:[1137..1144] indexed) (IN:[1145..1148] for)
+        (NNP:[1149..1157] MEDLINE-RSB-)))

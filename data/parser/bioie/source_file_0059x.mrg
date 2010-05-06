@@ -1,0 +1,436 @@
+;PMID: 11986336
+;source_file_612.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..92] = [t:40..92]
+;2)section:[e:96..208] = [t:96..208]
+;3)section:[e:212..324] = [t:212..324]
+;4)sentence:[e:328..424] = [t:328..424]
+;5)sentence:[e:425..575] = [t:425..575]
+;6)sentence:[e:576..739] = [t:576..739]
+;7)sentence:[e:740..823] = [t:740..823]
+;8)sentence:[e:824..915] = [t:824..915]
+;9)sentence:[e:916..1168] = [t:916..1168]
+;10)sentence:[e:1169..1280] = [t:1169..1280]
+;11)sentence:[e:1281..1373] = [t:1281..1373]
+;12)sentence:[e:1374..1481] = [t:1374..1481]
+;13)sentence:[e:1482..1581] = [t:1482..1581]
+;14)sentence:[e:1583..1699] = [t:1583..1699]
+;15)sentence:[e:1700..1844] = [t:1700..1844]
+;16)section:[e:1848..1893] = [t:1848..1893]
+
+;section 0 Span:0..35
+;J Clin Pathol  2002 May;55(5):340-5
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Clin) (NNP:[7..13] Pathol) (CD:[15..19] 2002)
+        (NNP:[20..23] May) (::[23..24] ;) (CD:[24..26] 55)
+        (-LRB-:[26..27] -LRB-) (CD:[27..28] 5) (-RRB-:[28..29] -RRB-)
+        (::[29..30] :) (CD:[30..33] 340) (HYPH:[33..34] -) (CD:[34..35] 5)))
+
+;sentence 1 Span:40..92
+;Pancreatic cancer after remote peptic ulcer surgery.
+;[40..57]:malignancy:"Pancreatic cancer"
+(SENT
+  (NP-HLN
+    (NP (JJ:[40..50] Pancreatic) (NN:[51..57] cancer))
+    (PP-TMP (IN:[58..63] after)
+      (NP (JJ:[64..70] remote)
+        (NML (JJ:[71..77] peptic) (NN:[78..83] ulcer))
+        (NN:[84..91] surgery)))
+    (.:[91..92] .)))
+
+;section 2 Span:96..208
+;Tascilar M, van Rees BP, Sturm PD, Tytgat GN, Hruban RH, Goodman SN,
+;Giardiello  FM, Offerhaus GJ, Tersmette AC.
+(SEC
+  (FRAG (DT:[96..104] Tascilar) (NNP:[105..106] M) (,:[106..107] ,)
+        (NNP:[108..111] van) (NNP:[112..116] Rees) (NNP:[117..119] BP)
+        (,:[119..120] ,) (NNP:[121..126] Sturm) (NNP:[127..129] PD)
+        (,:[129..130] ,) (NNP:[131..137] Tytgat) (NNP:[138..140] GN)
+        (,:[140..141] ,) (NNP:[142..148] Hruban) (NNP:[149..151] RH)
+        (,:[151..152] ,) (NNP:[153..160] Goodman) (NNP:[161..163] SN)
+        (,:[163..164] ,) (NNP:[165..175] Giardiello) (NNP:[177..179] FM)
+        (,:[179..180] ,) (NNP:[181..190] Offerhaus) (NNP:[191..193] GJ)
+        (,:[193..194] ,) (NNP:[195..204] Tersmette) (NNP:[205..207] AC)
+        (.:[207..208] .)))
+
+;section 3 Span:212..324
+;Department of Pathology, Academic Medical Center, University of Amsterdam,
+;1105  AZ, Amsterdam, The Netherlands.
+(SEC
+  (FRAG (NNP:[212..222] Department) (IN:[223..225] of)
+        (NNP:[226..235] Pathology) (,:[235..236] ,) (NNP:[237..245] Academic)
+        (NNP:[246..253] Medical) (NNP:[254..260] Center) (,:[260..261] ,)
+        (NNP:[262..272] University) (IN:[273..275] of)
+        (NNP:[276..285] Amsterdam) (,:[285..286] ,) (CD:[287..291] 1105)
+        (NNP:[293..295] AZ) (,:[295..296] ,) (NNP:[297..306] Amsterdam)
+        (,:[306..307] ,) (DT:[308..311] The) (NNP:[312..323] Netherlands)
+        (.:[323..324] .)))
+
+;sentence 4 Span:328..424
+;BACKGROUND: Peptic ulcer surgery may carry an increased risk for pancreatic 
+;cancer development.
+;[393..411]:malignancy:"pancreatic  cancer"
+(SENT
+  (NP (NN:[328..338] BACKGROUND) (::[338..339] :))
+  (S
+    (NP-SBJ
+      (NML (JJ:[340..346] Peptic) (NN:[347..352] ulcer))
+      (NN:[353..360] surgery))
+    (VP (MD:[361..364] may)
+      (VP (VB:[365..370] carry)
+        (NP
+          (NP (DT:[371..373] an) (VBN:[374..383] increased) (NN:[384..388] risk))
+          (PP (IN:[389..392] for)
+            (NP
+              (NML (JJ:[393..403] pancreatic) (NN:[405..411] cancer))
+              (NN:[412..423] development))))))
+    (.:[423..424] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[328..424]::NP:S:
+
+;sentence 5 Span:425..575
+;Molecular analysis of K-ras codon 12, frequently mutated in  conventional
+;pancreatic cancers, might provide insight into the aetiological  mechanisms.
+;[447..452]:gene-rna:"K-ras"
+;[453..461]:variation-location:"codon 12"
+;[499..517]:malignancy:"pancreatic cancers"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[425..434] Molecular) (NN:[435..443] analysis))
+      (PP (IN:[444..446] of)
+        (NP
+          (NP (NN:[447..452] K-ras)
+             (NN:[453..458] codon) (CD:[459..461] 12))
+          (,:[461..462] ,)
+          (VP
+            (ADVP (RB:[463..473] frequently))
+            (JJ:[474..481] mutated)
+            (NP (-NONE-:[481..481] *))
+            (PP (IN:[482..484] in)
+              (NP (JJ:[486..498] conventional)
+                 (JJ:[499..509] pancreatic) (NNS:[510..517] cancers)))))))
+    (,:[517..518] ,)
+    (VP (MD:[519..524] might)
+      (VP (VB:[525..532] provide)
+        (NP
+          (NP (NN:[533..540] insight))
+          (PP (IN:[541..545] into)
+            (NP (DT:[546..549] the) (JJ:[550..562] aetiological)
+                (NNS:[564..574] mechanisms))))))
+    (.:[574..575] .)))
+
+;sentence 6 Span:576..739
+;METHODS: The relative risk of pancreatic cancer was computed by  multivariate
+;and person-year analysis in a cohort of 2633 patients who had  undergone
+;gastrectomy.
+;[606..623]:malignancy:"pancreatic cancer"
+(SENT
+  (NP (NNS:[576..583] METHODS) (::[583..584] :))
+  (S
+    (NP-SBJ-3
+      (NP (DT:[585..588] The) (JJ:[589..597] relative) (NN:[598..602] risk))
+      (PP (IN:[603..605] of)
+        (NP (JJ:[606..616] pancreatic) (NN:[617..623] cancer))))
+    (VP (VBD:[624..627] was)
+      (VP (VBN:[628..636] computed)
+        (NP-3 (-NONE-:[636..636] *))
+        (PP-MNR (IN:[637..639] by)
+          (NP
+            (NP (JJ:[641..653] multivariate)
+              (NML-2 (-NONE-:[653..653] *P*)))
+            (CC:[654..657] and)
+            (NP
+              (NML (NN:[658..664] person) (HYPH:[664..665] -)
+                   (NN:[665..669] year))
+              (NML-2 (NN:[670..678] analysis)))))
+        (PP (IN:[679..681] in)
+          (NP
+            (NP (DT:[682..683] a) (NN:[684..690] cohort))
+            (PP (IN:[691..693] of)
+              (NP
+                (NP (CD:[694..698] 2633) (NNS:[699..707] patients))
+                (SBAR
+                  (WHNP-1 (WP:[708..711] who))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[711..711] *T*))
+                    (VP (VBD:[712..715] had)
+                      (VP (VBN:[717..726] undergone)
+                        (NP (NN:[727..738] gastrectomy))))))))))))
+    (.:[738..739] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[576..739]::NP:S:
+
+;sentence 7 Span:740..823
+;Lung cancer risk was analysed as an indirect means of  assessing smoking
+;behaviour.
+;[740..751]:malignancy:"Lung cancer"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[740..744] Lung) (NN:[745..751] cancer))
+      (NN:[752..756] risk))
+    (VP (VBD:[757..760] was)
+      (VP (VBN:[761..769] analysed)
+        (NP-1 (-NONE-:[769..769] *))
+        (PP (IN:[770..772] as)
+          (NP
+            (NP (DT:[773..775] an) (JJ:[776..784] indirect)
+                (NN:[785..790] means))
+            (PP (IN:[791..793] of)
+              (S-NOM
+                (NP-SBJ (-NONE-:[793..793] *))
+                (VP (VBG:[795..804] assessing)
+                  (NP (NN:[805..812] smoking) (NN:[813..822] behaviour)))))))))
+    (.:[822..823] .)))
+
+;sentence 8 Span:824..915
+;K-ras codon 12 mutational analysis was performed on  15 postgastrectomy
+;pancreatic cancers.
+;[824..829]:gene-rna:"K-ras"
+;[830..838]:variation-location:"codon 12"
+;[880..914]:malignancy:"postgastrectomy pancreatic cancers"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[824..829] K-ras)
+         (NN:[830..835] codon) (CD:[836..838] 12))
+      (JJ:[839..849] mutational) (NN:[850..858] analysis))
+    (VP (VBD:[859..862] was)
+      (VP (VBN:[863..872] performed)
+        (NP-1 (-NONE-:[872..872] *))
+        (PP (IN:[873..875] on)
+          (NP (CD:[877..879] 15)
+             (JJ:[880..895] postgastrectomy) (JJ:[896..906] pancreatic)
+             (NNS:[907..914] cancers)))))
+    (.:[914..915] .)))
+
+;sentence 9 Span:916..1168
+;RESULTS: There was an overall increased  risk of pancreatic carcinoma of 1.8
+;(95% confidence interval, 1.3 to 2.6) five  to 59 years postoperatively,
+;which gradually increased to 3.6 at 35 years or  more after surgery (chi(2)
+;test for trend, p < 0.05).
+;[965..985]:malignancy:"pancreatic carcinoma"
+(SENT
+  (NP (NNS:[916..923] RESULTS) (::[923..924] :))
+  (S
+    (NP-SBJ (EX:[925..930] There))
+    (VP (VBD:[931..934] was)
+      (NP-PRD
+        (NP
+          (NP (DT:[935..937] an) (JJ:[938..945] overall)
+              (VBN:[946..955] increased) (NN:[957..961] risk))
+          (PP (IN:[962..964] of)
+            (NP (JJ:[965..975] pancreatic) (NN:[976..985] carcinoma)))
+          (PP (IN:[986..988] of)
+            (NP (CD:[989..992] 1.8)
+              (PRN (-LRB-:[993..994] -LRB-)
+                (S
+                  (NP-SBJ
+                    (NML
+                      (NML (CD:[994..996] 95) (NN:[996..997] %))
+                      (NN:[998..1008] confidence))
+                    (NN:[1009..1017] interval))
+                  (,:[1017..1018] ,)
+                  (NP-PRD
+                    (NP (CD:[1019..1022] 1.3))
+                    (PP (TO:[1023..1025] to)
+                      (NP (CD:[1026..1029] 2.6)))))
+                (-RRB-:[1029..1030] -RRB-))))
+          (NP-TMP
+            (NP
+              (QP (CD:[1031..1035] five) (TO:[1037..1039] to)
+                  (CD:[1040..1042] 59))
+              (NNS:[1043..1048] years))
+            (ADVP (RB:[1049..1064] postoperatively))))
+        (,:[1064..1065] ,)
+        (SBAR
+          (WHNP-1 (WDT:[1066..1071] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1071..1071] *T*))
+            (ADVP (RB:[1072..1081] gradually))
+            (VP (VBD:[1082..1091] increased)
+              (PP (TO:[1092..1094] to)
+                (NP (CD:[1095..1098] 3.6)))
+              (PP (IN:[1099..1101] at)
+                (NP
+                  (NP
+                    (QP (CD:[1102..1104] 35))
+                    (NNS:[1105..1110] years)
+                    (QP (CC:[1111..1113] or) (JJR:[1115..1119] more)))
+                  (PP-TMP (IN:[1120..1125] after)
+                    (NP (NN:[1126..1133] surgery)))))
+              (PRN (-LRB-:[1134..1135] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (NN:[1135..1141] chi-LRB-2-RRB-) (NN:[1142..1146] test))
+                    (PP (IN:[1147..1150] for)
+                      (NP (NN:[1151..1156] trend))))
+                  (,:[1156..1157] ,)
+                  (S
+                    (NP-SBJ (NN:[1158..1159] p))
+                    (VP (SYM:[1160..1161] <)
+                      (NP (CD:[1162..1166] 0.05)))))
+                (-RRB-:[1166..1167] -RRB-)))))))
+    (.:[1167..1168] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[916..1168]::NP:S:
+
+;sentence 10 Span:1169..1280
+;Multivariate analysis  indicated that parameters other than postoperative
+;interval did not influence  the risk.
+(SENT
+  (S
+    (NP-SBJ (JJ:[1169..1181] Multivariate) (NN:[1182..1190] analysis))
+    (VP (VBD:[1192..1201] indicated)
+      (SBAR (IN:[1202..1206] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1207..1217] parameters))
+            (ADJP (JJ:[1218..1223] other)
+              (PP (IN:[1224..1228] than)
+                (NP (JJ:[1229..1242] postoperative) (NN:[1243..1251] interval)))))
+          (VP (VBD:[1252..1255] did) (RB:[1256..1259] not)
+            (VP (VB:[1260..1269] influence)
+              (NP (DT:[1271..1274] the) (NN:[1275..1279] risk)))))))
+    (.:[1279..1280] .)))
+
+;sentence 11 Span:1281..1373
+;Lung cancer risk was significantly increased after surgery, but no  time
+;trend was observed.
+;[1281..1292]:malignancy:"Lung cancer"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NML (NN:[1281..1285] Lung) (NN:[1286..1292] cancer))
+        (NN:[1293..1297] risk))
+      (VP (VBD:[1298..1301] was)
+        (ADVP (RB:[1302..1315] significantly))
+        (VP (VBN:[1316..1325] increased)
+          (NP-2 (-NONE-:[1325..1325] *))
+          (PP-TMP (IN:[1326..1331] after)
+            (NP (NN:[1332..1339] surgery))))))
+    (,:[1339..1340] ,) (CC:[1341..1344] but)
+    (S
+      (NP-SBJ-1 (DT:[1345..1347] no) (NN:[1349..1353] time)
+                (NN:[1354..1359] trend))
+      (VP (VBD:[1360..1363] was)
+        (VP (VBN:[1364..1372] observed)
+          (NP-1 (-NONE-:[1372..1372] *)))))
+    (.:[1372..1373] .)))
+
+;sentence 12 Span:1374..1481
+;The spectrum and prevalence of K-ras codon 12 mutations  were comparable to
+;conventional pancreatic cancer.
+;[1405..1410]:gene-rna:"K-ras"
+;[1411..1419]:variation-location:"codon 12"
+;[1420..1429]:variation-event:"mutations"
+;[1463..1480]:malignancy:"pancreatic cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1374..1377] The) (NN:[1378..1386] spectrum) (CC:[1387..1390] and)
+          (NN:[1391..1401] prevalence))
+      (PP (IN:[1402..1404] of)
+        (NP (NN:[1405..1410] K-ras)
+          (NML (NN:[1411..1416] codon) (CD:[1417..1419] 12))
+          (NNS:[1420..1429] mutations))))
+    (VP (VBD:[1431..1435] were)
+      (ADJP-PRD (JJ:[1436..1446] comparable)
+        (PP (TO:[1447..1449] to)
+          (NP (JJ:[1450..1462] conventional)
+             (JJ:[1463..1473] pancreatic) (NN:[1474..1480] cancer)))))
+    (.:[1480..1481] .)))
+
+;sentence 13 Span:1482..1581
+;CONCLUSIONS: Remote partial  gastrectomy is associated with an increased risk
+;of pancreatic cancer.
+;[1563..1580]:malignancy:"pancreatic cancer"
+(SENT
+  (NP (NNS:[1482..1493] CONCLUSIONS) (::[1493..1494] :))
+  (S
+    (NP-SBJ-1 (JJ:[1495..1501] Remote) (JJ:[1502..1509] partial)
+              (NN:[1511..1522] gastrectomy))
+    (VP (VBZ:[1523..1525] is)
+      (VP (VBN:[1526..1536] associated)
+        (NP-1 (-NONE-:[1536..1536] *))
+        (PP-CLR (IN:[1537..1541] with)
+          (NP
+            (NP (DT:[1542..1544] an) (VBN:[1545..1554] increased)
+                (NN:[1555..1559] risk))
+            (PP (IN:[1560..1562] of)
+              (NP (JJ:[1563..1573] pancreatic) (NN:[1574..1580] cancer)))))))
+    (.:[1580..1581] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1482..1581]::NP:S:
+
+;sentence 14 Span:1583..1699
+;Postgastrectomy and non-postgastrectomy pancreatic cancers may share similar 
+;aetiological factors, such as smoking.
+;[1583..1598]...[1623..1641]:malignancy-type:"Postgastrectomy"..."pancreatic
+;cancers"
+;[1603..1641]:malignancy:"non-postgastrectomy pancreatic cancers"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1583..1598] Postgastrectomy)
+        (NML-1 (-NONE-:[1598..1598] *P*)))
+      (CC:[1599..1602] and)
+      (NP
+        (ADJP (JJ:[1603..1606] non) (HYPH:[1606..1607] -)
+              (JJ:[1607..1622] postgastrectomy))
+        (NML-1 (JJ:[1623..1633] pancreatic) (NNS:[1634..1641] cancers))))
+    (VP (MD:[1642..1645] may)
+      (VP (VB:[1646..1651] share)
+        (NP
+          (NP (JJ:[1652..1659] similar) (JJ:[1661..1673] aetiological)
+              (NNS:[1674..1681] factors))
+          (,:[1681..1682] ,)
+          (PP (JJ:[1683..1687] such) (IN:[1688..1690] as)
+            (NP (NN:[1691..1698] smoking))))))
+    (.:[1698..1699] .)))
+
+;sentence 15 Span:1700..1844
+;However, the neoplastic process in  patients who have undergone gastrectomy
+;appears to be accelerated by factors  related to the surgery itself.
+(SENT
+  (S
+    (ADVP (RB:[1700..1707] However))
+    (,:[1707..1708] ,)
+    (NP-SBJ-1
+      (NP (DT:[1709..1712] the) (JJ:[1713..1723] neoplastic)
+          (NN:[1724..1731] process))
+      (PP-LOC (IN:[1732..1734] in)
+        (NP
+          (NP (NNS:[1736..1744] patients))
+          (SBAR
+            (WHNP-2 (WP:[1745..1748] who))
+            (S
+              (NP-SBJ-2 (-NONE-:[1748..1748] *T*))
+              (VP (VBP:[1749..1753] have)
+                (VP (VBN:[1754..1763] undergone)
+                  (NP (NN:[1764..1775] gastrectomy)))))))))
+    (VP (VBZ:[1776..1783] appears)
+      (S
+        (NP-SBJ-1 (-NONE-:[1783..1783] *))
+        (VP (TO:[1784..1786] to)
+          (VP (VB:[1787..1789] be)
+            (VP (VBN:[1790..1801] accelerated)
+              (NP-1 (-NONE-:[1801..1801] *))
+              (PP (IN:[1802..1804] by)
+                (NP-LGS
+                  (NP (NNS:[1805..1812] factors))
+                  (VP (JJ:[1814..1821] related)
+                    (NP (-NONE-:[1821..1821] *))
+                    (PP-CLR (TO:[1822..1824] to)
+                      (NP (DT:[1825..1828] the) (NN:[1829..1836] surgery)
+                          (PRP:[1837..1843] itself)))))))))))
+    (.:[1843..1844] .)))
+
+;section 16 Span:1848..1893
+;PMID: 11986336 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1848..1852] PMID) (::[1852..1853] :) (CD:[1854..1862] 11986336)
+        (-LRB-:[1863..1864] -LSB-) (NNP:[1864..1870] PubMed) (::[1871..1872] -)
+        (NN:[1873..1880] indexed) (IN:[1881..1884] for)
+        (NNP:[1885..1892] MEDLINE) (-RRB-:[1892..1893] -RSB-)))

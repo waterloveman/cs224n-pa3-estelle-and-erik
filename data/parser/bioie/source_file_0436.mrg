@@ -1,0 +1,446 @@
+;PMID: 4038859
+;source_file_2657.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..168] = [t:44..168]
+;2)section:[e:172..215] = [t:172..215]
+;3)sentence:[e:219..367] = [t:219..367]
+;4)sentence:[e:368..575] = [t:368..575]
+;5)sentence:[e:576..734] = [t:576..734]
+;6)sentence:[e:735..902] = [t:735..902]
+;7)sentence:[e:903..1084] = [t:903..1084]
+;8)sentence:[e:1085..1244] = [t:1085..1244]
+;9)sentence:[e:1246..1410] = [t:1246..1410]
+;10)sentence:[e:1411..1515] = [t:1411..1515]
+;11)sentence:[e:1516..1660] = [t:1516..1660]
+;12)section:[e:1660..1693] = [t:1660..1693]
+;13)section:[e:1697..1741] = [t:1697..1741]
+
+;section 0 Span:0..38
+;Anesthesiology. 1985 Mar;62(3):255-62.
+(SEC
+  (FRAG (NNP:[0..14] Anesthesiology) (IN:[14..15] .) (CD:[16..20] 1985)
+        (CC:[21..28] Mar;62-LRB-) (CD:[28..29] 3) (-RRB-:[29..30] -RRB-)
+        (CD:[30..34] :255) (::[34..35] -) (CD:[35..37] 62) (.:[37..38] .)))
+
+;sentence 1 Span:44..168
+;Inhibition and stimulation of enflurane metabolism in the rat following a
+;single  dose or chronic administration of ethanol.
+;[74..83]:substance:"enflurane"
+;[160..167]:substance:"ethanol"
+(SENT
+  (NP-HLN
+    (NP-1 (NN:[44..54] Inhibition) (CC:[55..58] and) (NN:[59..70] stimulation))
+    (PP (IN:[71..73] of)
+      (NP (NN:[74..83] enflurane) (NN:[84..94] metabolism)))
+    (PP (IN:[95..97] in)
+      (NP (DT:[98..101] the) (NN:[102..105] rat)))
+    (PP (VBG:[106..115] following)
+      (NP
+        (NP
+          (NP (DT:[116..117] a) (JJ:[118..124] single) (NN:[126..130] dose))
+          (CC:[131..133] or)
+          (NP (JJ:[134..141] chronic) (NN:[142..156] administration)))
+        (PP (IN:[157..159] of)
+          (NP (NN:[160..167] ethanol)))))
+    (.:[167..168] .)))
+
+;section 2 Span:172..215
+;Pantuck EJ, Pantuck CB, Ryan DE, Conney AH.
+(SEC
+  (FRAG (NNP:[172..179] Pantuck) (NNP:[180..182] EJ) (,:[182..183] ,)
+        (NNP:[184..191] Pantuck) (NNP:[192..194] CB) (,:[194..195] ,)
+        (NNP:[196..200] Ryan) (NNP:[201..203] DE) (,:[203..204] ,)
+        (NNP:[205..211] Conney) (NNP:[212..214] AH) (.:[214..215] .)))
+
+;sentence 3 Span:219..367
+;The effects of a single oral dose or chronic ingestion of ethanol on in vivo
+;and  in vitro metabolism of enflurane were studied in Fischer 344 rats.
+;[277..284]:substance:"ethanol"
+;[324..333]:substance:"enflurane"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[219..222] The) (NNS:[223..230] effects))
+      (PP (IN:[231..233] of)
+        (NP
+          (NP
+            (NP (DT:[234..235] a) (JJ:[236..242] single) (JJ:[243..247] oral)
+                (NN:[248..252] dose))
+            (CC:[253..255] or)
+            (NP (JJ:[256..263] chronic) (NN:[264..273] ingestion)))
+          (PP (IN:[274..276] of)
+            (NP (NN:[277..284] ethanol)))))
+      (PP (IN:[285..287] on)
+        (NP
+          (NP
+            (NP
+              (ADJP (FW:[288..290] in) (FW:[291..295] vivo))
+              (NML-1 (-NONE-:[295..295] *P*)))
+            (CC:[296..299] and)
+            (NP
+              (ADJP (FW:[301..303] in) (FW:[304..309] vitro))
+              (NML-1 (NN:[310..320] metabolism))))
+          (PP (IN:[321..323] of)
+            (NP (NN:[324..333] enflurane))))))
+    (VP (VBD:[334..338] were)
+      (VP (VBN:[339..346] studied)
+        (NP-2 (-NONE-:[346..346] *))
+        (PP-LOC (IN:[347..349] in)
+          (NP
+            (NML (NNP:[350..357] Fischer) (CD:[358..361] 344))
+            (NNS:[362..366] rats)))))
+    (.:[366..367] .)))
+
+;sentence 4 Span:368..575
+;At various  intervals after ethanol treatment, enflurane was administered ip
+;and 1 h after  enflurane administration fluoride and ethanol levels were
+;measured in plasma and  hepatic microsomes were prepared.
+;[396..403]:substance:"ethanol"
+;[415..424]:substance:"enflurane"
+;[449..450]:quantitative-value:"1"
+;[451..452]:quantitative-units:"h"
+;[460..469]:substance:"enflurane"
+;[485..493]:substance:"fluoride"
+;[498..505]:substance:"ethanol"
+(SENT
+  (S
+    (S
+      (PP-TMP (IN:[368..370] At)
+        (NP
+          (NP (JJ:[371..378] various) (NNS:[380..389] intervals))
+          (PP (IN:[390..395] after)
+            (NP (NN:[396..403] ethanol) (NN:[404..413] treatment)))))
+      (,:[413..414] ,)
+      (NP-SBJ (NN:[415..424] enflurane))
+      (VP (VBD:[425..428] was)
+        (VP (VBN:[429..441] administered)
+          (ADVP-MNR (RB:[442..444] ip)))))
+    (CC:[445..448] and)
+    (S
+      (S
+        (NP-TMP
+          (NP (CD:[449..450] 1) (NN:[451..452] h))
+          (PP (IN:[453..458] after)
+            (NP (NN:[460..469] enflurane) (NN:[470..484] administration))))
+        (NP-SBJ-2
+          (NP (NN:[485..493] fluoride)
+            (NML-1 (-NONE-:[493..493] *P*)))
+          (CC:[494..497] and)
+          (NP (NN:[498..505] ethanol)
+            (NML-1 (NNS:[506..512] levels))))
+        (VP (VBD:[513..517] were)
+          (VP (VBN:[518..526] measured)
+            (NP-2 (-NONE-:[526..526] *))
+            (PP (IN:[527..529] in)
+              (NP (NN:[530..536] plasma))))))
+      (CC:[537..540] and)
+      (S
+        (NP-SBJ-3 (JJ:[542..549] hepatic) (NNS:[550..560] microsomes))
+        (VP (VBD:[561..565] were)
+          (VP (VBN:[566..574] prepared)
+            (NP-3 (-NONE-:[574..574] *))))))
+    (.:[574..575] .)))
+
+;sentence 5 Span:576..734
+;The concentration of ethanol in plasma (+/-  SE) was 0.138 +/- 0.035% at 9 h
+;after the single dose of ethanol and decreased  almost to control levels by
+;17 h.
+;[597..604]:substance:"ethanol"
+;[629..645]:quantitative-value:"0.138 +/- 0.035%"
+;[649..650]:quantitative-value:"9"
+;[651..652]:quantitative-units:"h"
+;[678..685]:substance:"ethanol"
+;[729..731]:quantitative-value:"17"
+;[732..733]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[576..579] The) (NN:[580..593] concentration))
+      (PP (IN:[594..596] of)
+        (NP (NN:[597..604] ethanol)))
+      (PP-LOC (IN:[605..607] in)
+        (NP (NN:[608..614] plasma)))
+      (PRN (-LRB-:[615..616] -LRB-)
+        (NP (SYM:[616..619] +/-) (NN:[621..623] SE))
+        (-RRB-:[623..624] -RRB-)))
+    (VP
+      (VP (VBD:[625..628] was)
+        (NP-PRD
+          (NML (CD:[629..634] 0.138) (SYM:[635..638] +/-) (CD:[639..644] 0.035))
+          (NN:[644..645] %))
+        (PP-TMP (IN:[646..648] at)
+          (PP
+            (NP-ADV (CD:[649..650] 9) (NN:[651..652] h))
+            (IN:[653..658] after)
+            (NP
+              (NP (DT:[659..662] the) (JJ:[663..669] single)
+                  (NN:[670..674] dose))
+              (PP (IN:[675..677] of)
+                (NP (NN:[678..685] ethanol)))))))
+      (CC:[686..689] and)
+      (VP (VBD:[690..699] decreased)
+        (PP-CLR
+          (ADVP (RB:[701..707] almost))
+          (TO:[708..710] to)
+          (NP (NN:[711..718] control) (NNS:[719..725] levels)))
+        (PP-TMP (IN:[726..728] by)
+          (NP (CD:[729..731] 17) (NN:[732..733] h)))))
+    (.:[733..734] .)))
+
+;sentence 6 Span:735..902
+;The hepatic microsomal defluorination of  enflurane was enhanced 3.5-fold and
+;6.3-fold at 9 and 25 h after the ethanol  dose and returned to the control
+;level by 33 h.
+;[777..786]:substance:"enflurane"
+;[800..808]:quantitative-value:"3.5-fold"
+;[813..821]:quantitative-value:"6.3-fold"
+;[825..826]:quantitative-value:"9"
+;[831..833]:quantitative-value:"25"
+;[834..835]:quantitative-units:"h"
+;[846..853]:substance:"ethanol"
+;[897..899]:quantitative-value:"33"
+;[900..901]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[735..738] The) (JJ:[739..746] hepatic) (JJ:[747..757] microsomal)
+          (NN:[758..772] defluorination))
+      (PP (IN:[773..775] of)
+        (NP (NN:[777..786] enflurane))))
+    (VP
+      (VP (VBD:[787..790] was)
+        (VP (VBN:[791..799] enhanced)
+          (NP-2 (-NONE-:[799..799] *))
+          (ADVP-EXT
+            (ADVP (CD:[800..803] 3.5) (HYPH:[803..804] -) (RB:[804..808] fold))
+            (CC:[809..812] and)
+            (ADVP (CD:[813..816] 6.3) (HYPH:[816..817] -) (RB:[817..821] fold)))
+          (PP-TMP (IN:[822..824] at)
+            (PP
+              (NP-ADV
+                (NP (CD:[825..826] 9)
+                  (NML-1 (-NONE-:[826..826] *P*)))
+                (CC:[827..830] and)
+                (NP (CD:[831..833] 25)
+                  (NML-1 (NN:[834..835] h))))
+              (IN:[836..841] after)
+              (NP (DT:[842..845] the) (NN:[846..853] ethanol)
+                  (NN:[855..859] dose))))))
+      (CC:[860..863] and)
+      (VP (VBD:[864..872] returned)
+        (PP-CLR (TO:[873..875] to)
+          (NP (DT:[876..879] the) (NN:[880..887] control) (NN:[888..893] level)))
+        (PP-TMP (IN:[894..896] by)
+          (NP (CD:[897..899] 33) (NN:[900..901] h)))))
+    (.:[901..902] .)))
+
+;sentence 7 Span:903..1084
+;In vivo defluorination was  inhibited almost completely at 8 h after the
+;ethanol dose, increased to 3.4  times the control level at 24 h, and
+;decreased to the control level by 32 h.
+;[962..963]:quantitative-value:"8"
+;[964..965]:quantitative-units:"h"
+;[976..983]:substance:"ethanol"
+;[1003..1013]:quantitative-value:"3.4  times"
+;[1035..1037]:quantitative-value:"24"
+;[1038..1039]:quantitative-units:"h"
+;[1079..1081]:quantitative-value:"32"
+;[1082..1083]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (FW:[903..905] In) (FW:[906..910] vivo))
+      (NN:[911..925] defluorination))
+    (VP
+      (VP (VBD:[926..929] was)
+        (VP (VBN:[931..940] inhibited)
+          (NP-1 (-NONE-:[940..940] *))
+          (ADVP-EXT (RB:[941..947] almost) (RB:[948..958] completely))
+          (PP-TMP (IN:[959..961] at)
+            (PP
+              (NP-ADV (CD:[962..963] 8) (NN:[964..965] h))
+              (IN:[966..971] after)
+              (NP (DT:[972..975] the) (NN:[976..983] ethanol)
+                  (NN:[984..988] dose))))))
+      (,:[988..989] ,)
+      (VP (VBD:[990..999] increased)
+        (PP-CLR (TO:[1000..1002] to)
+          (NP
+            (QP (CD:[1003..1006] 3.4) (NNS:[1008..1013] times))
+            (DT:[1014..1017] the) (NN:[1018..1025] control)
+             (NN:[1026..1031] level)))
+        (PP-TMP (IN:[1032..1034] at)
+          (NP (CD:[1035..1037] 24) (NN:[1038..1039] h))))
+      (,:[1039..1040] ,) (CC:[1041..1044] and)
+      (VP (VBD:[1045..1054] decreased)
+        (PP-CLR (TO:[1055..1057] to)
+          (NP (DT:[1058..1061] the) (NN:[1062..1069] control)
+              (NN:[1070..1075] level)))
+        (PP-TMP (IN:[1076..1078] by)
+          (NP (CD:[1079..1081] 32) (NN:[1082..1083] h)))))
+    (.:[1083..1084] .)))
+
+;sentence 8 Span:1085..1244
+;At  1 h after the end of chronic ethanol treatment, the concentration of
+;ethanol in  plasma was 0.254 +/- 0.018%, and it decreased to the control
+;level by 9 h.
+;[1089..1090]:quantitative-value:"1"
+;[1091..1092]:quantitative-units:"h"
+;[1118..1125]:substance:"ethanol"
+;[1158..1165]:substance:"ethanol"
+;[1181..1197]:quantitative-value:"0.254 +/- 0.018%"
+;[1240..1241]:quantitative-value:"9"
+;[1242..1243]:quantitative-units:"h"
+(SENT
+  (S
+    (S
+      (PP (IN:[1085..1087] At)
+        (PP
+          (NP-ADV (CD:[1089..1090] 1) (NN:[1091..1092] h))
+          (IN:[1093..1098] after)
+          (NP
+            (NP (DT:[1099..1102] the) (NN:[1103..1106] end))
+            (PP (IN:[1107..1109] of)
+              (NP (JJ:[1110..1117] chronic) (NN:[1118..1125] ethanol)
+                  (NN:[1126..1135] treatment))))))
+      (,:[1135..1136] ,)
+      (NP-SBJ
+        (NP (DT:[1137..1140] the) (NN:[1141..1154] concentration))
+        (PP (IN:[1155..1157] of)
+          (NP (NN:[1158..1165] ethanol)))
+        (PP-LOC (IN:[1166..1168] in)
+          (NP (NN:[1170..1176] plasma))))
+      (VP (VBD:[1177..1180] was)
+        (NP-PRD
+          (QP (CD:[1181..1186] 0.254) (SYM:[1187..1190] +/-)
+              (CD:[1191..1196] 0.018))
+          (NN:[1196..1197] %))))
+    (,:[1197..1198] ,) (CC:[1199..1202] and)
+    (S
+      (NP-SBJ (PRP:[1203..1205] it))
+      (VP (VBD:[1206..1215] decreased)
+        (PP-CLR (TO:[1216..1218] to)
+          (NP (DT:[1219..1222] the) (NN:[1223..1230] control)
+              (NN:[1231..1236] level)))
+        (PP-TMP (IN:[1237..1239] by)
+          (NP (CD:[1240..1241] 9) (NN:[1242..1243] h)))))
+    (.:[1243..1244] .)))
+
+;sentence 9 Span:1246..1410
+;Hepatic microsomal enflurane defluorinating activity was increased 10.5-fold
+;at  1 h after the end of chronic treatment and decreased to the control level
+;by 13  h.
+;[1265..1274]:substance:"enflurane"
+;[1313..1322]:quantitative-value:"10.5-fold"
+;[1327..1328]:quantitative-value:"1"
+;[1329..1330]:quantitative-units:"h"
+;[1404..1406]:quantitative-value:"13"
+;[1408..1409]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1246..1253] Hepatic) (JJ:[1254..1264] microsomal)
+      (ADJP (NN:[1265..1274] enflurane) (VBG:[1275..1289] defluorinating))
+      (NN:[1290..1298] activity))
+    (VP
+      (VP (VBD:[1299..1302] was)
+        (VP (VBN:[1303..1312] increased)
+          (NP-1 (-NONE-:[1312..1312] *))
+          (ADVP-EXT (CD:[1313..1317] 10.5) (HYPH:[1317..1318] -)
+                    (RB:[1318..1322] fold))
+          (PP-TMP (IN:[1323..1325] at)
+            (PP
+              (NP-ADV (CD:[1327..1328] 1) (NN:[1329..1330] h))
+              (IN:[1331..1336] after)
+              (NP
+                (NP (DT:[1337..1340] the) (NN:[1341..1344] end))
+                (PP (IN:[1345..1347] of)
+                  (NP (JJ:[1348..1355] chronic) (NN:[1356..1365] treatment))))))))
+      (CC:[1366..1369] and)
+      (VP (VBD:[1370..1379] decreased)
+        (PP-CLR (TO:[1380..1382] to)
+          (NP (DT:[1383..1386] the) (NN:[1387..1394] control)
+              (NN:[1395..1400] level)))
+        (PP-TMP (IN:[1401..1403] by)
+          (NP (CD:[1404..1406] 13) (NN:[1408..1409] h)))))
+    (.:[1409..1410] .)))
+
+;sentence 10 Span:1411..1515
+;Immediately following chronic treatment, enflurane defluorination in vivo was
+; almost totally inhibited.
+;[1452..1461]:substance:"enflurane"
+(SENT
+  (S
+    (S-TMP
+      (NP-SBJ (-NONE-:[1411..1411] *))
+      (ADVP (RB:[1411..1422] Immediately))
+      (VP (VBG:[1423..1432] following)
+        (NP (JJ:[1433..1440] chronic) (NN:[1441..1450] treatment))))
+    (,:[1450..1451] ,)
+    (NP-SBJ-1
+      (NP (NN:[1452..1461] enflurane) (NN:[1462..1476] defluorination))
+      (ADJP (FW:[1477..1479] in) (FW:[1480..1484] vivo)))
+    (VP (VBD:[1485..1488] was)
+      (ADVP-EXT (RB:[1490..1496] almost) (RB:[1497..1504] totally))
+      (VP (VBN:[1505..1514] inhibited)
+        (NP-1 (-NONE-:[1514..1514] *))))
+    (.:[1514..1515] .)))
+
+;sentence 11 Span:1516..1660
+;It increased to 9.3 times the control level at 4 h  after chronic treatment
+;was stopped and then decreased to nearly the control  level at 12 h.
+;[1532..1541]:quantitative-value:"9.3 times"
+;[1563..1564]:quantitative-value:"4"
+;[1655..1657]:quantitative-value:"12"
+;[1658..1659]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1516..1518] It))
+    (VP
+      (VP (VBD:[1519..1528] increased)
+        (PP-CLR (TO:[1529..1531] to)
+          (NP
+            (QP (CD:[1532..1535] 9.3) (NNS:[1536..1541] times))
+            (DT:[1542..1545] the) (NN:[1546..1553] control)
+             (NN:[1554..1559] level)))
+        (PP-TMP (IN:[1560..1562] at)
+          (NP
+            (NP (CD:[1563..1564] 4) (NN:[1565..1566] h))
+            (SBAR-TMP (IN:[1568..1573] after)
+              (S
+                (NP-SBJ-1 (JJ:[1574..1581] chronic) (NN:[1582..1591] treatment))
+                (VP (VBD:[1592..1595] was)
+                  (VP (VBN:[1596..1603] stopped)
+                    (NP-1 (-NONE-:[1603..1603] *)))))))))
+      (CC:[1604..1607] and)
+      (VP
+        (ADVP-TMP (RB:[1608..1612] then))
+        (VBD:[1613..1622] decreased)
+        (PP-CLR (TO:[1623..1625] to)
+          (NP
+            (ADVP (RB:[1626..1632] nearly))
+            (DT:[1633..1636] the) (NN:[1637..1644] control)
+             (NN:[1646..1651] level)))
+        (PP-TMP (IN:[1652..1654] at)
+          (NP (CD:[1655..1657] 12) (NN:[1658..1659] h)))))
+    (.:[1659..1660] .)))
+
+;section 12 Span:1660..1693
+;(ABSTRACT TRUNCATED AT 250 WORDS)
+(SEC
+  (PRN (-LRB-:[1660..1661] -LRB-)
+    (NP
+      (NP (NN:[1661..1669] ABSTRACT) (VBN:[1670..1679] TRUNCATED))
+      (PP-LOC (IN:[1680..1682] AT)
+        (NP (CD:[1683..1686] 250) (NNS:[1687..1692] WORDS))))
+    (-RRB-:[1692..1693] -RRB-)))
+
+;section 13 Span:1697..1741
+;PMID: 4038859 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1697..1701] PMID) (::[1701..1702] :) (CD:[1703..1710] 4038859)
+        (NN:[1711..1712] -LSB-) (NNP:[1712..1718] PubMed) (::[1719..1720] -)
+        (NN:[1721..1728] indexed) (IN:[1729..1732] for)
+        (NNP:[1733..1741] MEDLINE-RSB-)))

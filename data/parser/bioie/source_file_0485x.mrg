@@ -1,0 +1,440 @@
+;PMID: 10661623
+;source_file_1361.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:39..129] = [t:39..129]
+;2)section:[e:133..252] = [t:133..252]
+;3)section:[e:256..336] = [t:256..336]
+;4)sentence:[e:340..507] = [t:340..507]
+;5)sentence:[e:508..623] = [t:508..623]
+;6)sentence:[e:624..780] = [t:624..780]
+;7)sentence:[e:781..841] = [t:781..841]
+;8)sentence:[e:842..900] = [t:842..900]
+;9)sentence:[e:901..1100] = [t:901..1100]
+;10)sentence:[e:1101..1231] = [t:1101..1231]
+;11)sentence:[e:1232..1370] = [t:1232..1370]
+;12)sentence:[e:1371..1502] = [t:1371..1502]
+;13)sentence:[e:1503..1668] = [t:1503..1668]
+;14)sentence:[e:1669..1831] = [t:1669..1831]
+;15)section:[e:1835..1880] = [t:1835..1880]
+
+;section 0 Span:0..34
+;Anal Cell Pathol  1999;19(1):39-46
+(SEC
+  (FRAG (NNP:[0..4] Anal) (NNP:[5..9] Cell) (NNP:[10..16] Pathol)
+        (CD:[18..26] 1999;19-LRB-) (CD:[26..27] 1) (-RRB-:[27..28] -RRB-)
+        (CD:[28..31] :39) (IN:[31..32] -) (CD:[32..34] 46)))
+
+;sentence 1 Span:39..129
+;K-ras2 activation and genome instability increase proliferation and size of
+;FAP  adenomas.
+;[39..45]:gene-rna:"K-ras2"
+;[115..128]:malignancy:"FAP  adenomas"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NN:[39..45] K-ras2) (NN:[46..56] activation))
+      (CC:[57..60] and)
+      (NP (NN:[61..67] genome) (NN:[68..79] instability)))
+    (VP (VBP:[80..88] increase)
+      (NP
+        (NP (NN:[89..102] proliferation) (CC:[103..106] and)
+            (NN:[107..111] size))
+        (PP (IN:[112..114] of)
+          (NP (NN:[115..118] FAP) (NNS:[120..128] adenomas)))))
+    (.:[128..129] .)))
+
+;section 2 Span:133..252
+;Rapallo A, Sciutto A, Geido E, Orecchia R, Infusini E, Pujic N, d'Amore ES, 
+;Monaco R, Risio M, Rossini FP, Giaretti W.
+(SEC
+  (FRAG (NNP:[133..140] Rapallo) (NNP:[141..142] A) (,:[142..143] ,)
+        (NNP:[144..151] Sciutto) (NNP:[152..153] A) (,:[153..154] ,)
+        (NNP:[155..160] Geido) (NNP:[161..162] E) (,:[162..163] ,)
+        (NNP:[164..172] Orecchia) (NNP:[173..175] R,) (NNP:[176..184] Infusini)
+        (NNP:[185..186] E) (,:[186..187] ,) (NNP:[188..193] Pujic)
+        (NNP:[194..195] N) (,:[195..196] ,) (NNP:[197..204] d'Amore)
+        (NNP:[205..207] ES) (,:[207..208] ,) (NNP:[210..216] Monaco)
+        (NNP:[217..219] R,) (NNP:[220..225] Risio) (NNP:[226..228] M,)
+        (NNP:[229..236] Rossini) (NNP:[237..239] FP) (,:[239..240] ,)
+        (NNP:[241..249] Giaretti) (NNP:[250..252] W.)))
+
+;section 3 Span:256..336
+;Laboratory of Biophysics and Cytometry, National Cancer Institute, Genoa,
+;Italy.
+(SEC
+  (FRAG (NN:[256..266] Laboratory) (IN:[267..269] of)
+        (NNP:[270..280] Biophysics) (CC:[281..284] and)
+        (NNP:[285..294] Cytometry) (,:[294..295] ,) (NNP:[296..304] National)
+        (NNP:[305..311] Cancer) (NNP:[312..321] Institute) (,:[321..322] ,)
+        (NNP:[323..328] Genoa) (,:[328..329] ,) (NNP:[330..335] Italy)
+        (.:[335..336] .)))
+
+;sentence 4 Span:340..507
+;The possible role of K-ras2 mutations and aneuploidy toward increase of 
+;proliferation and adenoma size in Familial Adenomatous Polyposis (FAP)
+;adenomas  is not known.
+;[361..367]:gene-rna:"K-ras2"
+;[382..392]:variation-type:"aneuploidy"
+;[431..438]:malignancy:"adenoma"
+;[447..492]:malignancy:"Familial Adenomatous Polyposis (FAP) adenomas"
+;[479..482]:malignancy:"FAP"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[340..343] The) (JJ:[344..352] possible) (NN:[353..357] role))
+      (PP (IN:[358..360] of)
+        (NP
+          (NP
+            (NP (NN:[361..367] K-ras2) (NNS:[368..377] mutations))
+            (CC:[378..381] and)
+            (NP (NN:[382..392] aneuploidy)))
+          (PP (IN:[393..399] toward)
+            (NP
+              (NP (NN:[400..408] increase))
+              (PP (IN:[409..411] of)
+                (NP
+                  (NP (NN:[413..426] proliferation))
+                  (CC:[427..430] and)
+                  (NP (NN:[431..438] adenoma) (NN:[439..443] size))))
+              (PP (IN:[444..446] in)
+                (NP
+                  (NML
+                    (NML (JJ:[447..455] Familial) (JJ:[456..467] Adenomatous)
+                         (NN:[468..477] Polyposis))
+                    (NML (-LRB-:[478..479] -LRB-) (NN:[479..482] FAP)
+                         (-RRB-:[482..483] -RRB-)))
+                  (NNS:[484..492] adenomas))))))))
+    (VP (VBZ:[494..496] is) (RB:[497..500] not)
+      (VP (VBN:[501..506] known)
+        (NP-1 (-NONE-:[506..506] *))))
+    (.:[506..507] .)))
+
+;sentence 5 Span:508..623
+;The present study addresses these issues by investigating 147  colorectal
+;adenomas obtained from four FAP patients.
+;[571..590]:malignancy:"colorectal adenomas"
+;[610..613]:malignancy:"FAP"
+(SENT
+  (S
+    (NP-SBJ (DT:[508..511] The) (JJ:[512..519] present) (NN:[520..525] study))
+    (VP (VBZ:[526..535] addresses)
+      (NP (DT:[536..541] these) (NNS:[542..548] issues))
+      (PP (IN:[549..551] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[551..551] *))
+          (VP (VBG:[552..565] investigating)
+            (NP
+              (NP (CD:[566..569] 147)
+                 (JJ:[571..581] colorectal) (NNS:[582..590] adenomas))
+              (VP (VBN:[591..599] obtained)
+                (NP (-NONE-:[599..599] *))
+                (PP (IN:[600..604] from)
+                  (NP (CD:[605..609] four) (NN:[610..613] FAP)
+                      (NNS:[614..622] patients)))))))))
+    (.:[622..623] .)))
+
+;sentence 6 Span:624..780
+;The majority of adenomas  had size lower than or equal to 10 mm (86%), low
+;grade dysplasia (63%), and were  preferentially located in the right colon
+;(60%).
+;[640..648]:malignancy:"adenomas"
+;[695..714]:malignancy:"low grade dysplasia"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[624..627] The) (NN:[628..636] majority))
+      (PP (IN:[637..639] of)
+        (NP (NNS:[640..648] adenomas))))
+    (VP
+      (VP (VBD:[650..653] had)
+        (NP
+          (NP
+            (NP (NN:[654..658] size))
+            (NP
+              (QP (JJR:[659..664] lower) (IN:[665..669] than) (CC:[670..672] or)
+                  (JJ:[673..678] equal) (TO:[679..681] to) (CD:[682..684] 10))
+              (NN:[685..687] mm)
+              (PRN (-LRB-:[688..689] -LRB-)
+                (NP (CD:[689..691] 86) (NN:[691..692] %))
+                (-RRB-:[692..693] -RRB-))))
+          (,:[693..694] ,)
+          (NP
+             (JJ:[695..698] low) (NN:[699..704] grade) (NN:[705..714] dysplasia)
+            (PRN (-LRB-:[715..716] -LRB-)
+              (NP (CD:[716..718] 63) (NN:[718..719] %))
+              (-RRB-:[719..720] -RRB-)))))
+      (,:[720..721] ,) (CC:[722..725] and)
+      (VP (VBD:[726..730] were)
+        (ADVP (RB:[732..746] preferentially))
+        (VP (VBN:[747..754] located)
+          (NP-1 (-NONE-:[754..754] *))
+          (PP-LOC (IN:[755..757] in)
+            (NP (DT:[758..761] the) (JJ:[762..767] right) (NN:[768..773] colon)))
+          (PRN (-LRB-:[774..775] -LRB-)
+            (NP (CD:[775..777] 60) (NN:[777..778] %))
+            (-RRB-:[778..779] -RRB-)))))
+    (.:[779..780] .)))
+
+;sentence 7 Span:781..841
+;Normal mucosa samples were  obtained from 19 healthy donors.
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[781..787] Normal) (NN:[788..794] mucosa)
+              (NNS:[795..802] samples))
+    (VP (VBD:[803..807] were)
+      (VP (VBN:[809..817] obtained)
+        (NP-1 (-NONE-:[817..817] *))
+        (PP (IN:[818..822] from)
+          (NP (CD:[823..825] 19) (JJ:[826..833] healthy) (NNS:[834..840] donors)))))
+    (.:[840..841] .)))
+
+;sentence 8 Span:842..900
+;Three synchronous adenocarcinomas were also  investigated.
+;[860..875]:malignancy:"adenocarcinomas"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[842..847] Three) (JJ:[848..859] synchronous)
+              (NNS:[860..875] adenocarcinomas))
+    (VP (VBD:[876..880] were)
+      (ADVP (RB:[881..885] also))
+      (VP (VBN:[887..899] investigated)
+        (NP-1 (-NONE-:[899..899] *))))
+    (.:[899..900] .)))
+
+;sentence 9 Span:901..1100
+;K-ras2 mutation spectrum was analysed by PCR and Sequence Specific 
+;Oligonucleotide (SSO) hybridization, while flow cytometry (FCM) was used for 
+;evaluating degree of DNA ploidy and S-phase fraction.
+;[901..907]:gene-rna:"K-ras2"
+;[1072..1078]:variation-type:"ploidy"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[901..907] K-ras2) (NN:[908..916] mutation)
+              (NN:[917..925] spectrum))
+    (VP (VBD:[926..929] was)
+      (VP (VBN:[930..938] analysed)
+        (NP-2 (-NONE-:[938..938] *))
+        (PP-MNR (IN:[939..941] by)
+          (NP
+            (NP (NN:[942..945] PCR))
+            (CC:[946..949] and)
+            (NP
+              (NML
+                (NML (NN:[950..958] Sequence) (JJ:[959..967] Specific)
+                     (NN:[969..984] Oligonucleotide))
+                (NML (-LRB-:[985..986] -LRB-) (NN:[986..989] SSO)
+                     (-RRB-:[989..990] -RRB-)))
+              (NN:[991..1004] hybridization))))
+        (,:[1004..1005] ,)
+        (SBAR-ADV (IN:[1006..1011] while)
+          (S
+            (NP-SBJ-1
+              (NP (NN:[1012..1016] flow) (NN:[1017..1026] cytometry))
+              (NP (-LRB-:[1027..1028] -LRB-) (NN:[1028..1031] FCM)
+                  (-RRB-:[1031..1032] -RRB-)))
+            (VP (VBD:[1033..1036] was)
+              (VP (VBN:[1037..1041] used)
+                (NP-1 (-NONE-:[1041..1041] *))
+                (PP (IN:[1042..1045] for)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[1045..1045] *))
+                    (VP (VBG:[1047..1057] evaluating)
+                      (NP
+                        (NP (NN:[1058..1064] degree))
+                        (PP (IN:[1065..1067] of)
+                          (NP
+                            (NP (NN:[1068..1071] DNA) (NN:[1072..1078] ploidy))
+                            (CC:[1079..1082] and)
+                            (NP (NN:[1083..1090] S-phase)
+                                (NN:[1091..1099] fraction))))))))))))))
+    (.:[1099..1100] .)))
+
+;sentence 10 Span:1101..1231
+;Overall, incidences of  K-ras2 mutations, DNA aneuploidy and high S-phase
+;values (>7.2%) were 6.6%, 5.4%  and 10.5%, respectively.
+;[1125..1131]:gene-rna:"K-ras2"
+;[1147..1157]:variation-type:"aneuploidy"
+(SENT
+  (S
+    (ADVP (RB:[1101..1108] Overall))
+    (,:[1108..1109] ,)
+    (NP-SBJ
+      (NP (NNS:[1110..1120] incidences))
+      (PP (IN:[1121..1123] of)
+        (NP
+          (NP (NN:[1125..1131] K-ras2) (NNS:[1132..1141] mutations))
+          (,:[1141..1142] ,)
+          (NP (NN:[1143..1146] DNA) (NN:[1147..1157] aneuploidy))
+          (CC:[1158..1161] and)
+          (NP (JJ:[1162..1166] high) (NN:[1167..1174] S-phase)
+              (NNS:[1175..1181] values)
+            (PRN (-LRB-:[1182..1183] -LRB-)
+              (VP (SYM:[1183..1184] >)
+                (NP (CD:[1184..1187] 7.2) (NN:[1187..1188] %)))
+              (-RRB-:[1188..1189] -RRB-))))))
+    (VP (VBD:[1190..1194] were)
+      (NP-PRD
+        (NP (CD:[1195..1198] 6.6) (NN:[1198..1199] %))
+        (,:[1199..1200] ,)
+        (NP (CD:[1201..1204] 5.4) (NN:[1204..1205] %))
+        (CC:[1207..1210] and)
+        (NP (CD:[1211..1215] 10.5) (NN:[1215..1216] %)))
+      (,:[1216..1217] ,)
+      (ADVP (RB:[1218..1230] respectively)))
+    (.:[1230..1231] .)))
+
+;sentence 11 Span:1232..1370
+;In particular, among the adenomas with size lower than  5 mm, K-ras2 mutation
+;and DNA aneuploidy frequencies were only slightly above  1%.
+;[1257..1265]:malignancy:"adenomas"
+;[1294..1300]:gene-rna:"K-ras2"
+;[1318..1328]:variation-type:"aneuploidy"
+(SENT
+  (S
+    (PP (IN:[1232..1234] In)
+      (NP (JJ:[1235..1245] particular)))
+    (,:[1245..1246] ,)
+    (PP (IN:[1247..1252] among)
+      (NP
+        (NP (DT:[1253..1256] the) (NNS:[1257..1265] adenomas))
+        (PP (IN:[1266..1270] with)
+          (NP (NN:[1271..1275] size)
+            (NML
+              (QP (JJR:[1276..1281] lower) (IN:[1282..1286] than)
+                  (CD:[1288..1289] 5))
+              (NN:[1290..1292] mm))))))
+    (,:[1292..1293] ,)
+    (NP-SBJ
+      (NP (NN:[1294..1300] K-ras2) (NN:[1301..1309] mutation)
+        (NML-1 (-NONE-:[1309..1309] *P*)))
+      (CC:[1310..1313] and)
+      (NP (NN:[1314..1317] DNA) (NN:[1318..1328] aneuploidy)
+        (NML-1 (NNS:[1329..1340] frequencies))))
+    (VP (VBD:[1341..1345] were)
+      (ADVP (RB:[1346..1350] only) (RB:[1351..1359] slightly))
+      (PP-PRD (IN:[1360..1365] above)
+        (NP (CD:[1367..1368] 1) (NN:[1368..1369] %))))
+    (.:[1369..1370] .)))
+
+;sentence 12 Span:1371..1502
+;Statistically significant correlations were found between K-ras2 and size, 
+;DNA ploidy and size and K-ras2 and S-phase (p < 0.001).
+;[1429..1435]:gene-rna:"K-ras2"
+;[1451..1457]:variation-type:"ploidy"
+;[1471..1477]:gene-rna:"K-ras2"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (RB:[1371..1384] Statistically) (JJ:[1385..1396] significant))
+      (NNS:[1397..1409] correlations))
+    (VP (VBD:[1410..1414] were)
+      (VP (VBN:[1415..1420] found)
+        (NP-1 (-NONE-:[1420..1420] *))
+        (PP (IN:[1421..1428] between)
+          (NP
+            (NP (NN:[1429..1435] K-ras2) (CC:[1436..1439] and)
+                (NN:[1440..1444] size))
+            (,:[1444..1445] ,)
+            (NP
+              (NP (NN:[1447..1450] DNA) (NN:[1451..1457] ploidy))
+              (CC:[1458..1461] and)
+              (NP (NN:[1462..1466] size)))
+            (CC:[1467..1470] and)
+            (NP (NN:[1471..1477] K-ras2) (CC:[1478..1481] and)
+                (NN:[1482..1489] S-phase))))
+        (PRN (-LRB-:[1490..1491] -LRB-)
+          (S
+            (NP-SBJ (NN:[1491..1492] p))
+            (VP (SYM:[1493..1494] <)
+              (NP (CD:[1495..1500] 0.001))))
+          (-RRB-:[1500..1501] -RRB-))))
+    (.:[1501..1502] .)))
+
+;sentence 13 Span:1503..1668
+;In particular, among the  wild type K-ras2 adenomas, high S-phase values were
+;detected in 8% of the cases  versus 57% among the K-ras2 mutated adenomas (p
+;= 0.0005).
+;[1539..1545]:gene-rna:"K-ras2"
+;[1546..1554]:malignancy:"adenomas"
+;[1631..1637]:gene-rna:"K-ras2"
+;[1646..1654]:malignancy:"adenomas"
+(SENT
+  (S
+    (PP (IN:[1503..1505] In)
+      (NP (JJ:[1506..1516] particular)))
+    (,:[1516..1517] ,)
+    (PP (IN:[1518..1523] among)
+      (NP (DT:[1524..1527] the)
+        (NML (JJ:[1529..1533] wild) (NN:[1534..1538] type))
+        (NN:[1539..1545] K-ras2) (NNS:[1546..1554] adenomas)))
+    (,:[1554..1555] ,)
+    (NP-SBJ-1 (JJ:[1556..1560] high) (NN:[1561..1568] S-phase)
+              (NNS:[1569..1575] values))
+    (VP (VBD:[1576..1580] were)
+      (VP (VBN:[1581..1589] detected)
+        (NP-1 (-NONE-:[1589..1589] *))
+        (PP (IN:[1590..1592] in)
+          (NP
+            (NP
+              (NP (CD:[1593..1594] 8) (NN:[1594..1595] %))
+              (PP (IN:[1596..1598] of)
+                (NP (DT:[1599..1602] the) (NNS:[1603..1608] cases))))
+            (PP (IN:[1610..1616] versus)
+              (NP
+                (NP (CD:[1617..1619] 57) (NN:[1619..1620] %))
+                (PP (IN:[1621..1626] among)
+                  (NP (DT:[1627..1630] the) (NN:[1631..1637] K-ras2)
+                      (VBN:[1638..1645] mutated) (NNS:[1646..1654] adenomas)))))))
+        (PRN (-LRB-:[1655..1656] -LRB-)
+          (S
+            (NP-SBJ (NN:[1656..1657] p))
+            (VP (SYM:[1658..1659] =)
+              (NP (CD:[1660..1666] 0.0005))))
+          (-RRB-:[1666..1667] -RRB-))))
+    (.:[1667..1668] .)))
+
+;sentence 14 Span:1669..1831
+;The present series of  FAP adenomas indicates that K-ras2 activation and
+;gross genomic changes play a  role toward a proliferative gain and tumour
+;growth in size.
+;[1692..1704]:malignancy:"FAP adenomas"
+;[1720..1726]:gene-rna:"K-ras2"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1669..1672] The) (JJ:[1673..1680] present)
+          (NN:[1681..1687] series))
+      (PP (IN:[1688..1690] of)
+        (NP (NN:[1692..1695] FAP) (NNS:[1696..1704] adenomas))))
+    (VP (VBZ:[1705..1714] indicates)
+      (SBAR (IN:[1715..1719] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1720..1726] K-ras2) (NN:[1727..1737] activation))
+            (CC:[1738..1741] and)
+            (NP (JJ:[1742..1747] gross) (JJ:[1748..1755] genomic)
+                (NNS:[1756..1763] changes)))
+          (VP (VBP:[1764..1768] play)
+            (NP
+              (NP (DT:[1769..1770] a) (NN:[1772..1776] role))
+              (PP (IN:[1777..1783] toward)
+                (NP
+                  (NP
+                    (NP (DT:[1784..1785] a) (JJ:[1786..1799] proliferative)
+                        (NN:[1800..1804] gain))
+                    (CC:[1805..1808] and)
+                    (NP (NN:[1809..1815] tumour) (NN:[1816..1822] growth)))
+                  (PP (IN:[1823..1825] in)
+                    (NP (NN:[1826..1830] size))))))))))
+    (.:[1830..1831] .)))
+
+;section 15 Span:1835..1880
+;PMID: 10661623 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1835..1839] PMID) (::[1839..1840] :) (CD:[1841..1849] 10661623)
+        (IN:[1850..1851] -LSB-) (NNP:[1851..1857] PubMed) (HYPH:[1858..1859] -)
+        (JJ:[1860..1867] indexed) (IN:[1868..1871] for)
+        (NNP:[1872..1880] MEDLINE-RSB-)))

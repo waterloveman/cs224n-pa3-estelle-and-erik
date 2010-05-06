@@ -1,0 +1,194 @@
+;PMID: 6587382
+;source_file_1236.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..48] = [t:0..48]
+;1)sentence:[e:53..137] = [t:53..137]
+;2)section:[e:141..210] = [t:141..210]
+;3)sentence:[e:214..332] = [t:214..332]
+;4)sentence:[e:333..500] = [t:333..500]
+;5)sentence:[e:501..604] = [t:501..604]
+;6)sentence:[e:605..817] = [t:605..817]
+;7)section:[e:821..865] = [t:821..865]
+
+;section 0 Span:0..48
+;Proc Natl Acad Sci U S A  1984 Jun;81(12):3670-4
+(SEC
+  (FRAG (NNP:[0..4] Proc) (NNP:[5..9] Natl) (NNP:[10..14] Acad)
+        (NNP:[15..18] Sci) (NNP:[19..20] U) (NNP:[21..22] S) (NNP:[23..24] A)
+        (CD:[26..30] 1984) (::[31..38] Jun;81-LRB-) (CD:[38..40] 12)
+        (-RRB-:[40..41] -RRB-) (CD:[41..46] :3670) (::[46..47] -)
+        (CD:[47..48] 4)))
+
+;sentence 1 Span:53..137
+;Mechanism of activation of an N-ras oncogene of SW-1271 human lung carcinoma 
+;cells.
+;[83..88]:gene-rna:"N-ras"
+;[101..136]:malignancy:"SW-1271 human lung carcinoma  cells"
+(SENT
+  (NP-HLN
+    (NP (NN:[53..62] Mechanism))
+    (PP (IN:[63..65] of)
+      (NP
+        (NP (NN:[66..76] activation))
+        (PP (IN:[77..79] of)
+          (NP
+            (NP (DT:[80..82] an) (NN:[83..88] N-ras) (NN:[89..97] oncogene))
+            (PP (IN:[98..100] of)
+              (NP (NN:[101..108] SW-1271) (JJ:[109..114] human)
+                  (NN:[115..119] lung) (NN:[120..129] carcinoma)
+                  (NNS:[131..136] cells)))))))
+    (.:[136..137] .)))
+
+;section 2 Span:141..210
+;Yuasa Y, Gol RA, Chang A, Chiu IM, Reddy EP, Tronick SR, Aaronson SA.
+(SEC
+  (FRAG (NNP:[141..146] Yuasa) (NNP:[147..148] Y) (,:[148..149] ,)
+        (NNP:[150..153] Gol) (NNP:[154..156] RA) (,:[156..157] ,)
+        (NNP:[158..163] Chang) (NNP:[164..165] A) (,:[165..166] ,)
+        (NNP:[167..171] Chiu) (NNP:[172..174] IM) (,:[174..175] ,)
+        (NNP:[176..181] Reddy) (NNP:[182..184] EP) (,:[184..185] ,)
+        (NNP:[186..193] Tronick) (NNP:[194..196] SR) (,:[196..197] ,)
+        (NNP:[198..206] Aaronson) (NNP:[207..209] SA) (.:[209..210] .)))
+
+;sentence 3 Span:214..332
+;An N-ras-related transforming gene was detected in the human lung carcinoma
+;cell  line SW-1271 and molecularly cloned.
+;[217..222]:gene-rna:"N-ras"
+;[275..308]:malignancy:"lung carcinoma cell  line SW-1271"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[214..216] An)
+      (ADJP (NN:[217..222] N-ras) (HYPH:[222..223] -) (VBN:[223..230] related))
+      (VBG:[231..243] transforming) (NN:[244..248] gene))
+    (VP (VBD:[249..252] was)
+      (VP
+        (VP (VBN:[253..261] detected)
+          (NP-1 (-NONE-:[261..261] *))
+          (PP (IN:[262..264] in)
+            (NP
+              (NP (DT:[265..268] the) (JJ:[269..274] human) (NN:[275..279] lung)
+                  (NN:[280..289] carcinoma) (NN:[290..294] cell)
+                  (NN:[296..300] line))
+              (NP (NN:[301..308] SW-1271)))))
+        (CC:[309..312] and)
+        (VP
+          (ADVP (RB:[313..324] molecularly))
+          (VBN:[325..331] cloned)
+          (NP-1 (-NONE-:[331..331] *)))))
+    (.:[331..332] .)))
+
+;sentence 4 Span:333..500
+;The lesion responsible for its acquisition  of transforming activity was
+;localized to a single nucleotide transition from A  to G in codon 61 of the
+;predicted protein.
+;[439..449]:variation-type:"transition"
+;[455..456]:variation-state-original:"A"
+;[461..462]:variation-state-altered:"G"
+;[466..474]:variation-location:"codon 61"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[333..336] The) (NN:[337..343] lesion))
+      (ADJP (JJ:[344..355] responsible)
+        (PP (IN:[356..359] for)
+          (NP
+            (NP (PRP$:[360..363] its) (NN:[364..375] acquisition))
+            (PP (IN:[377..379] of)
+              (NP (VBG:[380..392] transforming) (NN:[393..401] activity)))))))
+    (VP (VBD:[402..405] was)
+      (VP (VBN:[406..415] localized)
+        (NP-1 (-NONE-:[415..415] *))
+        (PP (TO:[416..418] to)
+          (NP
+            (NP (DT:[419..420] a) (JJ:[421..427] single)
+                (NN:[428..438] nucleotide) (NN:[439..449] transition))
+            (PP (IN:[450..454] from)
+              (NP (NN:[455..456] A)))
+            (PP (TO:[458..460] to)
+              (NP (NN:[461..462] G)))))
+        (PP-LOC (IN:[463..465] in)
+          (NP
+            (NP (NN:[466..471] codon) (CD:[472..474] 61))
+            (PP (IN:[475..477] of)
+              (NP (DT:[478..481] the) (VBN:[482..491] predicted)
+                  (NN:[492..499] protein)))))))
+    (.:[499..500] .)))
+
+;sentence 5 Span:501..604
+;This lesion in the second exon  results in the substitution of arginine for
+;glutamine at this position.
+;[520..531]:variation-location:"second exon"
+;[548..560]:variation-type:"substitution"
+;[564..572]:variation-state-altered:"arginine"
+;[577..586]:variation-state-original:"glutamine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[501..505] This) (NN:[506..512] lesion))
+      (PP (IN:[513..515] in)
+        (NP (DT:[516..519] the)
+           (JJ:[520..526] second) (NN:[527..531] exon))))
+    (VP (VBZ:[533..540] results)
+      (PP (IN:[541..543] in)
+        (NP
+          (NP (DT:[544..547] the) (NN:[548..560] substitution))
+          (PP (IN:[561..563] of)
+            (NP (NN:[564..572] arginine)))
+          (PP (IN:[573..576] for)
+            (NP (NN:[577..586] glutamine)))))
+      (PP-LOC (IN:[587..589] at)
+        (NP (DT:[590..594] this) (NN:[595..603] position))))
+    (.:[603..604] .)))
+
+;sentence 6 Span:605..817
+;These  findings, together with previous studies, indicate that the activation
+;of ras  oncogenes in human tumors is most commonly due to point mutations at
+;one of two  major "hot spots" in the ras coding sequence.
+;[686..689]:gene-rna:"ras"
+;[741..756]:variation-type:"point mutations"
+;[797..800]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[605..610] These) (NNS:[612..620] findings))
+    (,:[620..621] ,)
+    (ADVP (RB:[622..630] together)
+      (PP (IN:[631..635] with)
+        (NP (JJ:[636..644] previous) (NNS:[645..652] studies))))
+    (,:[652..653] ,)
+    (VP (VBP:[654..662] indicate)
+      (SBAR (IN:[663..667] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[668..671] the) (NN:[672..682] activation))
+            (PP (IN:[683..685] of)
+              (NP (NN:[686..689] ras) (NNS:[691..700] oncogenes)))
+            (PP-LOC (IN:[701..703] in)
+              (NP (JJ:[704..709] human) (NNS:[710..716] tumors))))
+          (VP (VBZ:[717..719] is)
+            (ADVP (RBS:[720..724] most) (RB:[725..733] commonly))
+            (PP-PRD (JJ:[734..737] due)
+              (PP (TO:[738..740] to)
+                (NP
+                  (NP (NN:[741..746] point) (NNS:[747..756] mutations))
+                  (PP (IN:[757..759] at)
+                    (NP
+                      (NP (CD:[760..763] one))
+                      (PP (IN:[764..766] of)
+                        (NP
+                          (NP (CD:[767..770] two) (JJ:[772..777] major)
+                              (``:[778..779] ") (JJ:[779..782] hot)
+                              (NNS:[783..788] spots) ('':[788..789] "))
+                          (PP (IN:[790..792] in)
+                            (NP (DT:[793..796] the) (NN:[797..800] ras)
+                                (NN:[801..807] coding) (NN:[808..816] sequence))))))))))))))
+    (.:[816..817] .)))
+
+;section 7 Span:821..865
+;PMID: 6587382 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[821..825] PMID) (::[825..826] :) (CD:[827..834] 6587382)
+        (NN:[835..836] -LSB-) (NNP:[836..842] PubMed) (::[843..844] -)
+        (NN:[845..852] indexed) (IN:[853..856] for)
+        (NNP:[857..865] MEDLINE-RSB-)))

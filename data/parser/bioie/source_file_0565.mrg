@@ -1,0 +1,454 @@
+;PMID: 2479464
+;source_file_1021.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)section:[e:43..93] = [t:43..93]
+;2)sentence:[e:97..237] = [t:97..237]
+;3)section:[e:241..289] = [t:241..289]
+;4)section:[e:293..412] = [t:293..412]
+;5)sentence:[e:416..929] = [t:416..929]
+;6)sentence:[e:930..1096] = [t:930..1096]
+;7)sentence:[e:1097..1206] = [t:1097..1206]
+;8)sentence:[e:1207..1389] = [t:1207..1389]
+;9)sentence:[e:1390..1566] = [t:1390..1566]
+;10)sentence:[e:1567..1771] = [t:1567..1771]
+;11)sentence:[e:1772..1845] = [t:1772..1845]
+;12)sentence:[e:1846..2047] = [t:1846..2047]
+;13)sentence:[e:2048..2242] = [t:2048..2242]
+;14)section:[e:2246..2290] = [t:2246..2289]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:2246..2290][t:2246..2289]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[2289..2290] ]
+
+;section 0 Span:0..37
+;Cancer Res. 1989 Dec 1;49(23):6551-5.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (.:[10..11] .) (CD:[12..16] 1989)
+        (NNP:[17..20] Dec) (CC:[21..26] 1;49-LRB-) (CD:[26..28] 23)
+        (-RRB-:[28..29] -RRB-) (CD:[29..34] :6551) (CD:[34..36] -5)
+        (.:[36..37] .)))
+
+;section 1 Span:43..93
+;Erratum in:      Cancer Res 1990 Jan 15;50(2):449.
+(SEC
+  (FRAG (NNP:[43..50] Erratum) (IN:[51..53] in) (::[53..54] :)
+        (NNP:[60..66] Cancer) (NNP:[67..70] Res) (CD:[71..75] 1990)
+        (NNP:[76..79] Jan) (CC:[80..86] 15;50-LRB-) (CD:[86..87] 2)
+        (-RRB-:[87..88] -RRB-) (.:[88..92] :449) (.:[92..93] .)))
+
+;sentence 2 Span:97..237
+;Lack of evidence for aromatase in human prostatic tissues: effects of 
+;4-hydroxyandrostenedione and other inhibitors on androgen metabolism.
+;[118..127]:cyp450:"aromatase"
+;[168..192]:substance:"4-hydroxyandrostenedione"
+;[203..213]:substance:"inhibitors"
+;[217..225]:substance:"androgen"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[97..101] Lack))
+      (PP (IN:[102..104] of)
+        (NP
+          (NP (NN:[105..113] evidence))
+          (PP (IN:[114..117] for)
+            (NP
+              (NP (NN:[118..127] aromatase))
+              (PP-LOC (IN:[128..130] in)
+                (NP (JJ:[131..136] human) (JJ:[137..146] prostatic)
+                    (NNS:[147..154] tissues))))))))
+    (::[154..155] :)
+    (NP
+      (NP (NNS:[156..163] effects))
+      (PP (IN:[164..166] of)
+        (NP
+          (NP (NN:[168..192] 4-hydroxyandrostenedione))
+          (CC:[193..196] and)
+          (NP (JJ:[197..202] other) (NNS:[203..213] inhibitors))))
+      (PP (IN:[214..216] on)
+        (NP (NN:[217..225] androgen) (NN:[226..236] metabolism))))
+    (.:[236..237] .)))
+
+;section 3 Span:241..289
+;Brodie AM, Son C, King DA, Meyer KM, Inkster SE.
+(SEC
+  (FRAG (NNP:[241..247] Brodie) (VBP:[248..250] AM) (,:[250..251] ,)
+        (NNP:[252..255] Son) (NNP:[256..257] C) (,:[257..258] ,)
+        (NNP:[259..263] King) (NNP:[264..266] DA) (,:[266..267] ,)
+        (NNP:[268..273] Meyer) (NNP:[274..276] KM) (,:[276..277] ,)
+        (NNP:[278..285] Inkster) (NNP:[286..289] SE.)))
+
+;section 4 Span:293..412
+;Department of Pharmacology and Experimental Therapeutics, School of Medicine,
+; University of Maryland, Baltimore 21201.
+(SEC
+  (FRAG (NNP:[293..303] Department) (IN:[304..306] of)
+        (NNP:[307..319] Pharmacology) (CC:[320..323] and)
+        (NNP:[324..336] Experimental) (NNP:[337..349] Therapeutics)
+        (,:[349..350] ,) (NNP:[351..357] School) (IN:[358..360] of)
+        (NNP:[361..369] Medicine) (,:[369..370] ,) (NNP:[372..382] University)
+        (IN:[383..385] of) (NNP:[386..394] Maryland) (,:[394..395] ,)
+        (NNP:[396..405] Baltimore) (CD:[406..411] 21201) (.:[411..412] .)))
+
+;sentence 5 Span:416..929
+;The effects of 4-hydroxyandrostenedione (4-OHA) and other aromatase
+;inhibitors,  10-propargylestr-4-ene-3,17-dione and 
+;imidazo[1,5-alpha]-3,4,5,6-tetrahydropyrin-6-yl-(4-benzonitrile), as well as
+;5  alpha-reductase inhibitors N,N-diethyl-4-methyl-3-oxo-4-aza-5 
+;alpha-androstane-17 beta-carboxyamide and 
+;4-methyl-3-oxo-4-aza-androsta-5-ene-17-ol were investigated in prostatic
+;tissue  from six patients with benign prostatic hypertrophy and seven
+;patients with  prostatic cancer, and from normal men at autopsy.
+;[431..455]:substance:"4-hydroxyandrostenedione"
+;[457..462]:substance:"4-OHA"
+;[474..483]:cyp450:"aromatase"
+;[484..494]:substance:"inhibitors"
+;[497..530]:substance:"10-propargylestr-4-ene-3,17-dione"
+;[536..600]:substance:"imidazo[1,5-alpha]-3,4,5,6-tetrahydropyrin-6-yl-(4-benz
+;onitrile)"
+;[613..631]:substance:"5  alpha-reductase"
+;[632..642]:substance:"inhibitors"
+;[643..716]:substance:"N,N-diethyl-4-methyl-3-oxo-4-aza-5  alpha-androstane-17
+;beta-carboxyamide"
+;[722..763]:substance:"4-methyl-3-oxo-4-aza-androsta-5-ene-17-ol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[416..419] The) (NNS:[420..427] effects))
+      (PP (IN:[428..430] of)
+        (NP
+          (NP
+            (NP
+              (NP (NN:[431..455] 4-hydroxyandrostenedione))
+              (NP (-LRB-:[456..457] -LRB-) (NN:[457..462] 4-OHA)
+                  (-RRB-:[462..463] -RRB-)))
+            (CC:[464..467] and)
+            (NP
+              (NP (JJ:[468..473] other) (NN:[474..483] aromatase)
+                  (NNS:[484..494] inhibitors))
+              (,:[494..495] ,)
+              (NP (NN:[497..530] 10-propargylestr-4-ene-3,17-dione)
+                  (CC:[531..534] and)
+                  (NN:[536..600] imidazo-LSB-1,5-alpha-RSB--3,4,5,6-tetrahydropyrin-6-yl--LRB-4-benzonitrile-RRB-))))
+          (,:[600..601] ,)
+          (CONJP (RB:[602..604] as) (RB:[605..609] well) (RB:[610..612] as))
+          (NP
+            (NP
+              (NML (CD:[613..614] 5) (NN:[616..631] alpha-reductase))
+              (NNS:[632..642] inhibitors))
+            (NP
+              (NP (NN:[643..677] N,N-diethyl-4-methyl-3-oxo-4-aza-5)
+                  (NN:[679..698] alpha-androstane-17)
+                  (NN:[699..716] beta-carboxyamide))
+              (CC:[717..720] and)
+              (NP (NN:[722..763] 4-methyl-3-oxo-4-aza-androsta-5-ene-17-ol)))))))
+    (VP (VBD:[764..768] were)
+      (VP (VBN:[769..781] investigated)
+        (NP-1 (-NONE-:[781..781] *))
+        (PP-LOC (IN:[782..784] in)
+          (NP
+            (NP (JJ:[785..794] prostatic) (NN:[795..801] tissue))
+            (PP
+              (PP (IN:[803..807] from)
+                (NP
+                  (NP
+                    (NP (CD:[808..811] six) (NNS:[812..820] patients))
+                    (PP (IN:[821..825] with)
+                      (NP (JJ:[826..832] benign) (JJ:[833..842] prostatic)
+                          (NN:[843..854] hypertrophy))))
+                  (CC:[855..858] and)
+                  (NP
+                    (NP (CD:[859..864] seven) (NNS:[865..873] patients))
+                    (PP (IN:[874..878] with)
+                      (NP (JJ:[880..889] prostatic) (NN:[890..896] cancer))))))
+              (,:[896..897] ,) (CC:[898..901] and)
+              (PP (IN:[902..906] from)
+                (NP
+                  (NP (JJ:[907..913] normal) (NNS:[914..917] men))
+                  (PP (IN:[918..920] at)
+                    (NP (NN:[921..928] autopsy))))))))))
+    (.:[928..929] .)))
+
+;sentence 6 Span:930..1096
+;We attempted to measure  aromatase activity in the tissue incubations by
+;quantitating 3H2O released from  androstenedione or testosterone labeled at
+;the C-1 position.
+;[955..964]:cyp450:"aromatase"
+;[1016..1020]:substance:"3H2O"
+;[1036..1051]:substance:"androstenedione"
+;[1055..1067]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ-1 (PRP:[930..932] We))
+    (VP (VBD:[933..942] attempted)
+      (S
+        (NP-SBJ-1 (-NONE-:[942..942] *))
+        (VP (TO:[943..945] to)
+          (VP (VB:[946..953] measure)
+            (NP
+              (NP (NN:[955..964] aromatase) (NN:[965..973] activity))
+              (PP-LOC (IN:[974..976] in)
+                (NP (DT:[977..980] the) (NN:[981..987] tissue)
+                    (NNS:[988..999] incubations))))
+            (PP-MNR (IN:[1000..1002] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[1002..1002] *))
+                (VP (VBG:[1003..1015] quantitating)
+                  (NP
+                    (NP (NN:[1016..1020] 3H2O))
+                    (VP (VBN:[1021..1029] released)
+                      (NP (-NONE-:[1029..1029] *))
+                      (PP (IN:[1030..1034] from)
+                        (NP
+                          (NP (NN:[1036..1051] androstenedione)
+                              (CC:[1052..1054] or)
+                              (NN:[1055..1067] testosterone))
+                          (VP (VBN:[1068..1075] labeled)
+                            (NP (-NONE-:[1075..1075] *))
+                            (PP-LOC (IN:[1076..1078] at)
+                              (NP (DT:[1079..1082] the) (NN:[1083..1086] C-1)
+                                  (NN:[1087..1095] position)))))))))))))))
+    (.:[1095..1096] .)))
+
+;sentence 7 Span:1097..1206
+;High performance  liquid chromatography and thin layer chromatography were
+;used to isolate steroid  products.
+;[1188..1205]:substance:"steroid  products"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML (JJ:[1097..1101] High) (NN:[1102..1113] performance))
+        (NN:[1115..1121] liquid) (NN:[1122..1136] chromatography))
+      (CC:[1137..1140] and)
+      (NP
+        (NML (JJ:[1141..1145] thin) (NN:[1146..1151] layer))
+        (NN:[1152..1166] chromatography)))
+    (VP (VBD:[1167..1171] were)
+      (VP (VBN:[1172..1176] used)
+        (NP-1 (-NONE-:[1176..1176] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1176..1176] *))
+          (VP (TO:[1177..1179] to)
+            (VP (VB:[1180..1187] isolate)
+              (NP (JJ:[1188..1195] steroid) (NNS:[1197..1205] products)))))))
+    (.:[1205..1206] .)))
+
+;sentence 8 Span:1207..1389
+;Although the amount of 3H2O released was at least twice that of the 
+;heat-inactivated tissue samples, no estrone or estradiol was detected on high
+; performance liquid chromatography.
+;[1230..1234]:substance:"3H2O"
+;[1312..1319]:substance:"estrone"
+;[1323..1332]:substance:"estradiol"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1207..1215] Although)
+      (S
+        (NP-SBJ
+          (NP (DT:[1216..1219] the) (NN:[1220..1226] amount))
+          (PP (IN:[1227..1229] of)
+            (NP
+              (NP (NN:[1230..1234] 3H2O))
+              (VP (VBN:[1235..1243] released)
+                (NP (-NONE-:[1243..1243] *))))))
+        (VP (VBD:[1244..1247] was)
+          (NP-PRD
+            (NP
+              (QP (IN:[1248..1250] at) (JJS:[1251..1256] least)
+                  (RB:[1257..1262] twice))
+              (DT:[1263..1267] that))
+            (PP (IN:[1268..1270] of)
+              (NP (DT:[1271..1274] the)
+                (ADJP (NN:[1276..1280] heat) (HYPH:[1280..1281] -)
+                      (VBN:[1281..1292] inactivated))
+                (NN:[1293..1299] tissue) (NNS:[1300..1307] samples)))))))
+    (,:[1307..1308] ,)
+    (NP-SBJ-1 (DT:[1309..1311] no) (NN:[1312..1319] estrone)
+              (CC:[1320..1322] or) (NN:[1323..1332] estradiol))
+    (VP (VBD:[1333..1336] was)
+      (VP (VBN:[1337..1345] detected)
+        (NP-1 (-NONE-:[1345..1345] *))
+        (PP (IN:[1346..1348] on)
+          (NP
+            (NML (JJ:[1349..1353] high) (NN:[1355..1366] performance))
+            (NN:[1367..1373] liquid) (NN:[1374..1388] chromatography)))))
+    (.:[1388..1389] .)))
+
+;sentence 9 Span:1390..1566
+;The 3H2O release was significantly inhibited  by 4-OHA and
+;N,N-diethyl-4-methyl-3-oxo-4-aza-5 alpha-androstane-17  beta-carboxyamide,
+;but not by the other aromatase inhibitors.
+;[1394..1398]:substance:"3H2O"
+;[1439..1444]:substance:"4-OHA"
+;[1449..1522]:substance:"N,N-diethyl-4-methyl-3-oxo-4-aza-5
+;alpha-androstane-17  beta-carboxyamide"
+;[1545..1554]:cyp450:"aromatase"
+;[1555..1565]:substance:"inhibitors"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1390..1393] The) (NN:[1394..1398] 3H2O)
+              (NN:[1399..1406] release))
+    (VP (VBD:[1407..1410] was)
+      (VP
+        (VP
+          (ADVP (RB:[1411..1424] significantly))
+          (VBN:[1425..1434] inhibited)
+          (NP-1 (-NONE-:[1434..1434] *))
+          (PP=2 (IN:[1436..1438] by)
+            (NP-LGS
+              (NP (NN:[1439..1444] 4-OHA))
+              (CC:[1445..1448] and)
+              (NP (NN:[1449..1483] N,N-diethyl-4-methyl-3-oxo-4-aza-5)
+                  (NN:[1484..1503] alpha-androstane-17)
+                  (NN:[1505..1522] beta-carboxyamide)))))
+        (,:[1522..1523] ,) (CC:[1524..1527] but)
+        (VP (RB:[1528..1531] not)
+          (PP=2 (IN:[1532..1534] by)
+            (NP-LGS (DT:[1535..1538] the) (JJ:[1539..1544] other)
+                    (NN:[1545..1554] aromatase) (NNS:[1555..1565] inhibitors))))))
+    (.:[1565..1566] .)))
+
+;sentence 10 Span:1567..1771
+;4-OHA also  inhibited 5 alpha-reductase in both benign prostatic hypertrophy
+;and cancer  tissue, although to a lesser extent than
+;N,N-diethyl-4-methyl-3-oxo-4-aza-5  alpha-androstane-17 beta-carboxyamide.
+;[1567..1572]:substance:"4-OHA"
+;[1589..1606]:substance:"5 alpha-reductase"
+;[1697..1770]:substance:"N,N-diethyl-4-methyl-3-oxo-4-aza-5 
+;alpha-androstane-17 beta-carboxyamide"
+(SENT
+  (S
+    (NP-SBJ (NN:[1567..1572] 4-OHA))
+    (ADVP (RB:[1573..1577] also))
+    (VP (VBD:[1579..1588] inhibited)
+      (NP (CD:[1589..1590] 5) (NN:[1591..1606] alpha-reductase))
+      (PP-LOC (IN:[1607..1609] in)
+        (NP (DT:[1610..1614] both)
+          (NP (JJ:[1615..1621] benign) (JJ:[1622..1631] prostatic)
+              (NN:[1632..1643] hypertrophy))
+          (CC:[1644..1647] and)
+          (NP (NN:[1648..1654] cancer) (NN:[1656..1662] tissue))))
+      (,:[1662..1663] ,)
+      (SBAR-ADV (IN:[1664..1672] although)
+        (FRAG
+          (PP (TO:[1673..1675] to)
+            (NP
+              (NP (DT:[1676..1677] a) (JJR:[1678..1684] lesser)
+                  (NN:[1685..1691] extent))
+              (SBAR (IN:[1692..1696] than)
+                (S
+                  (NP-SBJ (NN:[1697..1731] N,N-diethyl-4-methyl-3-oxo-4-aza-5)
+                          (NN:[1733..1752] alpha-androstane-17)
+                          (NN:[1753..1770] beta-carboxyamide))
+                  (VP (-NONE-:[1770..1770] *?*)))))))))
+    (.:[1770..1771] .)))
+
+;sentence 11 Span:1772..1845
+;The other aromatase inhibitors were  without effect on 5 alpha-reductase.
+;[1782..1791]:cyp450:"aromatase"
+;[1792..1802]:substance:"inhibitors"
+;[1827..1844]:substance:"5 alpha-reductase"
+(SENT
+  (S
+    (NP-SBJ (DT:[1772..1775] The) (JJ:[1776..1781] other)
+            (NN:[1782..1791] aromatase) (NNS:[1792..1802] inhibitors))
+    (VP (VBD:[1803..1807] were)
+      (PP-PRD (IN:[1809..1816] without)
+        (NP
+          (NP (NN:[1817..1823] effect))
+          (PP (IN:[1824..1826] on)
+            (NP (CD:[1827..1828] 5) (NN:[1829..1844] alpha-reductase))))))
+    (.:[1844..1845] .)))
+
+;sentence 12 Span:1846..2047
+;Our results indicate that 3H2O released  from [1 beta-3H]androstenedione and
+;[1,2,6,7-3H]androstenedione does not  correlate with estrogen formation and
+;may be the result of other metabolic  reactions.
+;[1872..1876]:substance:"3H2O"
+;[1892..1918]:substance:"[1 beta-3H]androstenedione"
+;[1923..1950]:substance:"[1,2,6,7-3H]androstenedione"
+;[1976..1984]:substance:"estrogen"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1846..1849] Our) (NNS:[1850..1857] results))
+    (VP (VBP:[1858..1866] indicate)
+      (SBAR (IN:[1867..1871] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1872..1876] 3H2O))
+            (VP (VBN:[1877..1885] released)
+              (NP (-NONE-:[1885..1885] *))
+              (PP (IN:[1887..1891] from)
+                (NP (NN:[1892..1918] -LSB-1-SP-beta-3H-RSB-androstenedione)
+                    (CC:[1919..1922] and)
+                    (NN:[1923..1950] -LSB-1,2,6,7-3H-RSB-androstenedione)))))
+          (VP
+            (VP (VBZ:[1951..1955] does) (RB:[1956..1959] not)
+              (VP (VB:[1961..1970] correlate)
+                (PP-CLR (IN:[1971..1975] with)
+                  (NP (NN:[1976..1984] estrogen) (NN:[1985..1994] formation)))))
+            (CC:[1995..1998] and)
+            (VP (MD:[1999..2002] may)
+              (VP (VB:[2003..2005] be)
+                (NP-PRD
+                  (NP (DT:[2006..2009] the) (NN:[2010..2016] result))
+                  (PP (IN:[2017..2019] of)
+                    (NP (JJ:[2020..2025] other) (JJ:[2026..2035] metabolic)
+                        (NNS:[2037..2046] reactions))))))))))
+    (.:[2046..2047] .)))
+
+;sentence 13 Span:2048..2242
+;Although it appears that the prostate lacks aromatase, 4-OHA may be  of
+;benefit in patients with benign prostatic hypertrophy or prostatic cancer by 
+;inhibiting this enzyme in peripheral tissue.
+;[2092..2101]:cyp450:"aromatase"
+;[2103..2108]:substance:"4-OHA"
+;[2214..2220]:cyp450:"enzyme"
+(SENT
+  (S
+    (SBAR-ADV (IN:[2048..2056] Although)
+      (S
+        (S-ADV (PRP:[2057..2059] it))
+        (VP (VBZ:[2060..2067] appears)
+          (SBAR (IN:[2068..2072] that)
+            (S
+              (NP-SBJ (DT:[2073..2076] the) (NN:[2077..2085] prostate))
+              (VP (VBZ:[2086..2091] lacks)
+                (NP (NN:[2092..2101] aromatase))))))))
+    (,:[2101..2102] ,)
+    (NP-SBJ (NN:[2103..2108] 4-OHA))
+    (VP (MD:[2109..2112] may)
+      (VP (VB:[2113..2115] be)
+        (PP-PRD (IN:[2117..2119] of)
+          (NP (NN:[2120..2127] benefit)))
+        (PP-LOC (IN:[2128..2130] in)
+          (NP
+            (NP (NNS:[2131..2139] patients))
+            (PP (VBP:[2140..2144] with)
+              (NP
+                (NP (JJ:[2145..2151] benign) (JJ:[2152..2161] prostatic)
+                    (NN:[2162..2173] hypertrophy))
+                (CC:[2174..2176] or)
+                (NP (JJ:[2177..2186] prostatic) (NN:[2187..2193] cancer))))))
+        (PP (IN:[2194..2196] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[2196..2196] *))
+            (VP (VBG:[2198..2208] inhibiting)
+              (NP (DT:[2209..2213] this) (NN:[2214..2220] enzyme))
+              (PP-LOC (IN:[2221..2223] in)
+                (NP (JJ:[2224..2234] peripheral) (NN:[2235..2241] tissue))))))))
+    (.:[2241..2242] .)))
+
+;section 14 Span:2246..2289
+;PMID: 2479464 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2246..2250] PMID) (::[2250..2251] :) (CD:[2252..2259] 2479464)
+        (-LRB-:[2260..2261] -LSB-) (NNP:[2261..2267] PubMed) (::[2268..2269] -)
+        (VBN:[2270..2277] indexed) (IN:[2278..2281] for)
+        (NNP:[2282..2289] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2289..EOF] ]
+
+(ORPH -RSB-)

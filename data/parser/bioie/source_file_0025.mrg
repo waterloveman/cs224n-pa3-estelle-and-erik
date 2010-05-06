@@ -1,0 +1,431 @@
+;PMID: 12665390
+;source_file_620.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)section:[e:35..119] = [t:35..119]
+;2)section:[e:123..154] = [t:123..153]
+;3)section:[e:158..292] = [t:158..288]
+;4)sentence:[e:296..446] = [t:296..446]
+;5)sentence:[e:447..657] = [t:447..657]
+;6)sentence:[e:658..798] = [t:658..798]
+;7)sentence:[e:799..959] = [t:799..959]
+;8)sentence:[e:960..1070] = [t:960..1070]
+;9)sentence:[e:1071..1300] = [t:1071..1300]
+;10)sentence:[e:1301..1462] = [t:1301..1462]
+;11)sentence:[e:1463..1665] = [t:1463..1665]
+;12)sentence:[e:1666..1806] = [t:1666..1806]
+;13)section:[e:1810..1828] = [t:1810..1828]
+;14)section:[e:1834..1840] = [t:1834..1840]
+;15)section:[e:1846..1862] = [t:1846..1862]
+;16)section:[e:1866..1911] = [t:1866..1910]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:123..154][t:123..153]
+;ERROR_Section end mismatch[e:158..292][t:158..288]
+;ERROR_Section end mismatch[e:1866..1911][t:1866..1910]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[153..154] .
+;ERROR_Token in entity file but not tree[261..292]
+;adam_trenton@urmc.rochester.edu
+;ERROR_Token in entity file but not tree[1910..1911] ]
+;ERROR_POS mismatch [11..15] t:token e:CD 2003
+;ERROR_Token in tree file but not entity[261..288]
+;adam_trenton@urmc.rochester
+
+;section 0 Span:0..29
+;CNS Drugs. 2003;17(5):307-24.
+(SEC
+  (FRAG (NNP:[0..3] CNS) (NNP:[4..9] Drugs) (.:[9..10] .) (token:[11..15] 2003)
+        (::[15..16] ;) (CD:[16..18] 17) (-LRB-:[18..19] -LRB-) (CD:[19..20] 5)
+        (-RRB-:[20..21] -RRB-) (::[21..22] :) (CD:[22..25] 307) (::[25..26] -)
+        (CD:[26..28] 24) (.:[28..29] .)))
+
+;section 1 Span:35..119
+;Fatalities associated with therapeutic use and overdose of atypical 
+;antipsychotics.
+;[104..118]:substance:"antipsychotics"
+(SEC
+  (NP-HLN
+    (NP (NNS:[35..45] Fatalities))
+    (VP (VBN:[46..56] associated)
+      (NP (-NONE-:[56..56] *))
+      (PP-CLR (IN:[57..61] with)
+        (NP
+          (NP
+            (NP (JJ:[62..73] therapeutic) (NN:[74..77] use))
+            (CC:[78..81] and)
+            (NP (NN:[82..90] overdose)))
+          (PP (IN:[91..93] of)
+            (NP (JJ:[94..102] atypical) (NNS:[104..118] antipsychotics))))))
+    (.:[118..119] .)))
+;ERROR_Entity in section[104..118]:substance "antipsychotics"
+
+;section 2 Span:123..153
+;Trenton A, Currier G, Zwemer F
+(SEC
+  (FRAG (NNP:[123..130] Trenton) (NNP:[131..132] A) (,:[132..133] ,)
+        (NNP:[134..141] Currier) (NNP:[142..143] G) (,:[143..144] ,)
+        (NNP:[145..151] Zwemer) (NNP:[152..153] F)))
+
+(ORPH .)
+
+;section 3 Span:158..288
+;Department of Psychiatry, University of Rochester School of Medicine,
+;Rochester,  New York 14642, USA. adam_trenton@urmc.rochester
+(SEC
+  (FRAG (NNP:[158..168] Department) (IN:[169..171] of)
+        (NNP:[172..182] Psychiatry) (,:[182..183] ,) (NNP:[184..194] University)
+        (IN:[195..197] of) (NNP:[198..207] Rochester) (NNP:[208..214] School)
+        (IN:[215..217] of) (NNP:[218..226] Medicine) (,:[226..227] ,)
+        (NNP:[228..237] Rochester) (,:[237..238] ,) (NNP:[240..243] New)
+        (NNP:[244..248] York) (CD:[249..254] 14642) (,:[254..255] ,)
+        (NNP:[256..259] USA) (.:[259..260] .)
+        (NNP:[261..288] adam_trenton@urmc.rochester)))
+;ERROR_Orphan Text from Tree File[153..158] .
+
+(ORPH .edu)
+
+;sentence 4 Span:296..446
+;Since 1989, several novel antipsychotic drugs have become available for use 
+;including clozapine, risperidone, olanzapine, quetiapine and ziprasidone.
+;[322..341]:substance:"antipsychotic drugs"
+;[383..392]:substance:"clozapine"
+;[394..405]:substance:"risperidone"
+;[407..417]:substance:"olanzapine"
+;[419..429]:substance:"quetiapine"
+;[434..445]:substance:"ziprasidone"
+(SENT
+  (S
+    (PP-TMP (IN:[296..301] Since)
+      (NP (CD:[302..306] 1989)))
+    (,:[306..307] ,)
+    (NP-SBJ (JJ:[308..315] several) (JJ:[316..321] novel)
+       (JJ:[322..335] antipsychotic) (NNS:[336..341] drugs))
+    (VP (VBP:[342..346] have)
+      (VP (VBN:[347..353] become)
+        (ADJP-PRD (JJ:[354..363] available)
+          (PP (IN:[364..367] for)
+            (NP (NN:[368..371] use))))
+        (PP (VBG:[373..382] including)
+          (NP (NN:[383..392] clozapine) (,:[392..393] ,)
+              (NN:[394..405] risperidone) (,:[405..406] ,)
+              (NN:[407..417] olanzapine) (,:[417..418] ,)
+              (NN:[419..429] quetiapine) (CC:[430..433] and)
+              (NN:[434..445] ziprasidone)))))
+    (.:[445..446] .)))
+;ERROR_Orphan Text from Tree File[288..296] .edu
+
+;sentence 5 Span:447..657
+;These  agents represent a substantial improvement in the treatment of
+;schizophrenia and  related disorders and are considered to have a favourable
+;adverse effect profile  relative to traditional antipsychotics.
+;[454..460]:substance:"agents"
+;[642..656]:substance:"antipsychotics"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[447..452] These) (NNS:[454..460] agents))
+    (VP
+      (VP (VBP:[461..470] represent)
+        (NP
+          (NP (DT:[471..472] a) (JJ:[473..484] substantial)
+              (NN:[485..496] improvement))
+          (PP (IN:[497..499] in)
+            (NP
+              (NP (DT:[500..503] the) (NN:[504..513] treatment))
+              (PP (IN:[514..516] of)
+                (NP
+                  (NP (NN:[517..530] schizophrenia))
+                  (CC:[531..534] and)
+                  (NP (JJ:[536..543] related) (NNS:[544..553] disorders))))))))
+      (CC:[554..557] and)
+      (VP (VBP:[558..561] are)
+        (VP (VBN:[562..572] considered)
+          (S
+            (NP-SBJ-1 (-NONE-:[572..572] *))
+            (VP (TO:[573..575] to)
+              (VP (VB:[576..580] have)
+                (NP
+                  (NP (DT:[581..582] a) (JJ:[583..593] favourable)
+                    (NML (JJ:[594..601] adverse) (NN:[602..608] effect))
+                    (NN:[609..616] profile))
+                  (ADJP (JJ:[618..626] relative)
+                    (PP (TO:[627..629] to)
+                      (NP (JJ:[630..641] traditional)
+                          (NNS:[642..656] antipsychotics)))))))))))
+    (.:[656..657] .)))
+
+;sentence 6 Span:658..798
+;Nonetheless, in rare cases, people have  died as a result of taking atypical
+;antipsychotic drugs at therapeutic and  supratherapeutic doses.
+;[735..754]:substance:"antipsychotic drugs"
+(SENT
+  (S
+    (ADVP (RB:[658..669] Nonetheless))
+    (,:[669..670] ,)
+    (PP (IN:[671..673] in)
+      (NP (JJ:[674..678] rare) (NNS:[679..684] cases)))
+    (,:[684..685] ,)
+    (NP-SBJ (NNS:[686..692] people))
+    (VP (VBP:[693..697] have)
+      (VP (VBN:[699..703] died)
+        (PP (IN:[704..706] as)
+          (NP
+            (NP (DT:[707..708] a) (NN:[709..715] result))
+            (PP (IN:[716..718] of)
+              (S-NOM
+                (NP-SBJ (-NONE-:[718..718] *))
+                (VP (VBG:[719..725] taking)
+                  (NP (JJ:[726..734] atypical)
+                     (JJ:[735..748] antipsychotic) (NNS:[749..754] drugs))
+                  (PP (IN:[755..757] at)
+                    (NP
+                      (NP (JJ:[758..769] therapeutic)
+                        (NML-1 (-NONE-:[769..769] *P*)))
+                      (CC:[770..773] and)
+                      (NP (JJ:[775..791] supratherapeutic)
+                        (NML-1 (NNS:[792..797] doses))))))))))))
+    (.:[797..798] .)))
+
+;sentence 7 Span:799..959
+;Toxic doses of atypical antipsychotics are highly  variable: some patients
+;have died while taking therapeutic doses and others have  survived massive
+;overdoses.
+;[823..837]:substance:"antipsychotics"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[799..804] Toxic) (NNS:[805..810] doses))
+      (PP (IN:[811..813] of)
+        (NP (JJ:[814..822] atypical) (NNS:[823..837] antipsychotics))))
+    (VP (VBP:[838..841] are)
+      (ADJP-PRD (RB:[842..848] highly) (JJ:[850..858] variable) (::[858..859] :)
+        (S-ADV
+          (S
+            (NP-SBJ (DT:[860..864] some) (NNS:[865..873] patients))
+            (VP (VBP:[874..878] have)
+              (VP (VBN:[879..883] died)
+                (SBAR-ADV (IN:[884..889] while)
+                  (S
+                    (NP-SBJ (-NONE-:[889..889] *))
+                    (VP (VBG:[890..896] taking)
+                      (NP (JJ:[897..908] therapeutic) (NNS:[909..914] doses))))))))
+          (CC:[915..918] and)
+          (S
+            (NP-SBJ (NNS:[919..925] others))
+            (VP (VBP:[926..930] have)
+              (VP (VBN:[932..940] survived)
+                (NP (JJ:[941..948] massive) (NNS:[949..958] overdoses))))))))
+    (.:[958..959] .)))
+
+;sentence 8 Span:960..1070
+;Toxicity may be increased by coingestion of other  agents, particularly drugs
+;with similar metabolic pathways.
+;[1011..1017]:substance:"agents"
+;[1032..1037]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[960..968] Toxicity))
+    (VP (MD:[969..972] may)
+      (VP (VB:[973..975] be)
+        (VP (VBN:[976..985] increased)
+          (NP-1 (-NONE-:[985..985] *))
+          (PP (IN:[986..988] by)
+            (NP-LGS
+              (NP (NN:[989..1000] coingestion))
+              (NP (IN:[1001..1003] of)
+                (NP
+                  (NP (JJ:[1004..1009] other) (NNS:[1011..1017] agents))
+                  (,:[1017..1018] ,)
+                  (NP
+                    (NP
+                      (ADVP (RB:[1019..1031] particularly))
+                      (NNS:[1032..1037] drugs))
+                    (PP (IN:[1038..1042] with)
+                      (NP (JJ:[1043..1050] similar) (JJ:[1051..1060] metabolic)
+                          (NNS:[1061..1069] pathways)))))))))))
+    (.:[1069..1070] .)))
+
+;sentence 9 Span:1071..1300
+;Atypical  antipsychotics are metabolised predominantly by cytochrome p450
+;(CYP)  isoenzymes, particularly CYP1A2 (clozapine and olanzapine), CYP3A4
+;(clozapine,  quetiapine and ziprasidone) and CYP2D6 (olanzapine and
+;risperidone).
+;[1081..1095]:substance:"antipsychotics"
+;[1129..1162]:cyp450:"cytochrome p450 (CYP)  isoenzymes"
+;[1177..1183]:cyp450:"CYP1A2"
+;[1185..1194]:substance:"clozapine"
+;[1199..1209]:substance:"olanzapine"
+;[1212..1218]:cyp450:"CYP3A4"
+;[1220..1229]:substance:"clozapine"
+;[1232..1242]:substance:"quetiapine"
+;[1247..1258]:substance:"ziprasidone"
+;[1264..1270]:cyp450:"CYP2D6"
+;[1272..1282]:substance:"olanzapine"
+;[1287..1298]:substance:"risperidone"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1071..1079] Atypical) (NNS:[1081..1095] antipsychotics))
+    (VP (VBP:[1096..1099] are)
+      (VP (VBN:[1100..1111] metabolised)
+        (NP-1 (-NONE-:[1111..1111] *))
+        (PP-MNR
+          (ADVP (RB:[1112..1125] predominantly))
+          (IN:[1126..1128] by)
+          (NP
+            (NP
+              (NML
+                (NML (NN:[1129..1139] cytochrome) (NN:[1140..1144] p450))
+                (NML (-LRB-:[1145..1146] -LRB-) (NN:[1146..1149] CYP)
+                     (-RRB-:[1149..1150] -RRB-)))
+              (NNS:[1152..1162] isoenzymes))
+            (,:[1162..1163] ,)
+            (NP
+              (ADVP (RB:[1164..1176] particularly))
+              (NP (NN:[1177..1183] CYP1A2)
+                (PRN (-LRB-:[1184..1185] -LRB-)
+                  (NP (NN:[1185..1194] clozapine) (CC:[1195..1198] and)
+                      (NN:[1199..1209] olanzapine))
+                  (-RRB-:[1209..1210] -RRB-)))
+              (,:[1210..1211] ,)
+              (NP (NN:[1212..1218] CYP3A4)
+                (PRN (-LRB-:[1219..1220] -LRB-)
+                  (NP (NN:[1220..1229] clozapine) (,:[1229..1230] ,)
+                      (NN:[1232..1242] quetiapine) (CC:[1243..1246] and)
+                      (NN:[1247..1258] ziprasidone))
+                  (-RRB-:[1258..1259] -RRB-)))
+              (CC:[1260..1263] and)
+              (NP (NN:[1264..1270] CYP2D6)
+                (PRN (-LRB-:[1271..1272] -LRB-)
+                  (NP (NN:[1272..1282] olanzapine) (CC:[1283..1286] and)
+                      (NN:[1287..1298] risperidone))
+                  (-RRB-:[1298..1299] -RRB-))))))))
+    (.:[1299..1300] .)))
+
+;sentence 10 Span:1301..1462
+;Concurrent  prescription of other drugs that inhibit these isoenzymes may
+;increase the  probability of adverse events in patients taking atypical
+;antipsychotics.
+;[1335..1340]:substance:"drugs"
+;[1360..1370]:cyp450:"isoenzymes"
+;[1447..1461]:substance:"antipsychotics"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1301..1311] Concurrent) (NN:[1313..1325] prescription))
+      (PP (IN:[1326..1328] of)
+        (NP
+          (NP (JJ:[1329..1334] other) (NNS:[1335..1340] drugs))
+          (SBAR
+            (WHNP-1 (WDT:[1341..1345] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[1345..1345] *T*))
+              (VP (VB:[1346..1353] inhibit)
+                (NP (DT:[1354..1359] these) (NNS:[1360..1370] isoenzymes))))))))
+    (VP (MD:[1371..1374] may)
+      (VP (VB:[1375..1383] increase)
+        (NP
+          (NP (DT:[1384..1387] the) (NN:[1389..1400] probability))
+          (PP (IN:[1401..1403] of)
+            (NP (JJ:[1404..1411] adverse) (NNS:[1412..1418] events)))
+          (PP-LOC (IN:[1419..1421] in)
+            (NP
+              (NP (NNS:[1422..1430] patients))
+              (VP (VBG:[1431..1437] taking)
+                (NP (JJ:[1438..1446] atypical) (NNS:[1447..1461] antipsychotics))))))))
+    (.:[1461..1462] .)))
+
+;sentence 11 Span:1463..1665
+;Deaths  due to atypical antipsychotic toxicity are often related to
+;cardiovascular  complications, but pulmonary, neurological, endocrine and
+;gastrointestinal  complications have also caused fatalities.
+;[1487..1500]:substance:"antipsychotic"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (NNS:[1463..1469] Deaths))
+        (ADJP (JJ:[1471..1474] due)
+          (PP (TO:[1475..1477] to)
+            (NP (JJ:[1478..1486] atypical) (JJ:[1487..1500] antipsychotic)
+                (NN:[1501..1509] toxicity)))))
+      (VP (VBP:[1510..1513] are)
+        (VP
+          (ADVP (RB:[1514..1519] often))
+          (VBN:[1520..1527] related)
+          (NP-2 (-NONE-:[1527..1527] *))
+          (PP-CLR (TO:[1528..1530] to)
+            (NP (JJ:[1531..1545] cardiovascular)
+                (NNS:[1547..1560] complications))))))
+    (,:[1560..1561] ,) (CC:[1562..1565] but)
+    (S
+      (NP-SBJ
+        (NP (JJ:[1566..1575] pulmonary)
+          (NML-1 (-NONE-:[1575..1575] *P*)))
+        (,:[1575..1576] ,)
+        (NP (JJ:[1577..1589] neurological)
+          (NML-1 (-NONE-:[1589..1589] *P*)))
+        (,:[1589..1590] ,)
+        (NP (JJ:[1591..1600] endocrine)
+          (NML-1 (-NONE-:[1600..1600] *P*)))
+        (CC:[1601..1604] and)
+        (NP (JJ:[1605..1621] gastrointestinal)
+          (NML-1 (NNS:[1623..1636] complications))))
+      (VP (VBP:[1637..1641] have)
+        (ADVP (RB:[1642..1646] also))
+        (VP (VBN:[1647..1653] caused)
+          (NP (NNS:[1654..1664] fatalities)))))
+    (.:[1664..1665] .)))
+
+;sentence 12 Span:1666..1806
+;Prevention and management of atypical  antipsychotic overdose are of
+;increased clinical relevance as prescription of  these drugs increases.
+;[1705..1718]:substance:"antipsychotic"
+;[1790..1795]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1666..1676] Prevention) (CC:[1677..1680] and)
+          (NN:[1681..1691] management))
+      (PP (IN:[1692..1694] of)
+        (NP (JJ:[1695..1703] atypical) (JJ:[1705..1718] antipsychotic)
+            (NN:[1719..1727] overdose))))
+    (VP (VBP:[1728..1731] are)
+      (PP-PRD (IN:[1732..1734] of)
+        (NP (VBN:[1735..1744] increased) (JJ:[1745..1753] clinical)
+            (NN:[1754..1763] relevance)))
+      (PP (IN:[1764..1766] as)
+        (S-NOM
+          (NP-SBJ
+            (NP (NN:[1767..1779] prescription))
+            (PP (IN:[1780..1782] of)
+              (NP (DT:[1784..1789] these) (NNS:[1790..1795] drugs))))
+          (VP (VBZ:[1796..1805] increases)))))
+    (.:[1805..1806] .)))
+
+;section 13 Span:1810..1828
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1810..1821] Publication) (NNP:[1822..1827] Types)
+        (::[1827..1828] :)))
+
+;section 14 Span:1834..1840
+;Review
+(SEC
+  (FRAG (NNP:[1834..1840] Review)))
+
+;section 15 Span:1846..1862
+;Review, Tutorial
+(SEC
+  (FRAG (NNP:[1846..1852] Review) (,:[1852..1853] ,) (NNP:[1854..1862] Tutorial)))
+
+;section 16 Span:1866..1910
+;PMID: 12665390 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1866..1870] PMID) (::[1870..1871] :) (CD:[1872..1880] 12665390)
+        (-LRB-:[1881..1882] -LSB-) (NNP:[1882..1888] PubMed) (::[1889..1890] -)
+        (VBN:[1891..1898] indexed) (IN:[1899..1902] for)
+        (NNP:[1903..1910] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1910..EOF] ]
+
+(ORPH -RSB-)

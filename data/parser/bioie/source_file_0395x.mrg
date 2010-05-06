@@ -1,0 +1,309 @@
+;PMID: 11358461
+;source_file_2904.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..147] = [t:42..147]
+;2)section:[e:151..250] = [t:151..250]
+;3)section:[e:254..376] = [t:254..376]
+;4)sentence:[e:380..541] = [t:380..541]
+;5)sentence:[e:542..599] = [t:542..599]
+;6)sentence:[e:600..869] = [t:600..869]
+;7)sentence:[e:870..1116] = [t:870..1116]
+;8)sentence:[e:1117..1221] = [t:1117..1221]
+;9)sentence:[e:1222..1366] = [t:1222..1366]
+;10)section:[e:1367..1398] = [t:1367..1398]
+;11)section:[e:1402..1447] = [t:1402..1447]
+
+;section 0 Span:0..36
+;Exp Neurol.  2001 Jun;169(2):479-85.
+(SEC
+  (FRAG (NNP:[0..3] Exp) (NNP:[4..10] Neurol) (.:[10..11] .) (CD:[13..17] 2001)
+        (CC:[18..25] Jun;169) (-LRB-:[25..26] -LRB-) (CD:[26..27] 2)
+        (-RRB-:[27..28] -RRB-) (CD:[28..32] :479) (::[32..33] -)
+        (CD:[33..35] 85) (.:[35..36] .)))
+
+;sentence 1 Span:42..147
+;Biochemical analysis of cybrids expressing mitochondrial DNA from Contursi 
+;kindred Parkinson's subjects.
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..53] Biochemical) (NN:[54..62] analysis))
+    (PP (IN:[63..65] of)
+      (NP
+        (NP (NNS:[66..73] cybrids))
+        (VP (VBG:[74..84] expressing)
+          (NP
+            (NP (JJ:[85..98] mitochondrial) (NN:[99..102] DNA))
+            (PP (IN:[103..107] from)
+              (NP
+                (NP (NNP:[108..116] Contursi) (NN:[118..125] kindred)
+                    (NNP:[126..135] Parkinson) (POS:[135..137] 's))
+                (NNS:[138..146] subjects)))))))
+    (.:[146..147] .)))
+
+;section 2 Span:151..250
+;Swerdlow RH, Parks JK, Cassarino DS, Binder DR, Bennett JP Jr, Di Iorio G,
+;Golbe  LI, Parker WD Jr.
+(SEC
+  (FRAG (NNP:[151..159] Swerdlow) (NNP:[160..162] RH) (,:[162..163] ,)
+        (NNP:[164..169] Parks) (NNP:[170..172] JK) (,:[172..173] ,)
+        (NNP:[174..183] Cassarino) (NNP:[184..186] DS) (,:[186..187] ,)
+        (NNP:[188..194] Binder) (NNP:[195..197] DR) (,:[197..198] ,)
+        (NNP:[199..206] Bennett) (NNP:[207..209] JP) (NNP:[210..212] Jr)
+        (,:[212..213] ,) (NNP:[214..216] Di) (NNP:[217..222] Iorio)
+        (NNP:[223..224] G) (,:[224..225] ,) (NNP:[226..231] Golbe)
+        (NNP:[233..235] LI) (,:[235..236] ,) (NNP:[237..243] Parker)
+        (JJ:[244..246] WD) (NNP:[247..249] Jr) (.:[249..250] .)))
+
+;section 3 Span:254..376
+;Center for the Study of Neurodegenerative Diseases, University of Virginia 
+;Health System, Charlottesville, Virginia, USA.
+(SEC
+  (FRAG (NNP:[254..260] Center) (IN:[261..264] for) (DT:[265..268] the)
+        (NN:[269..274] Study) (IN:[275..277] of)
+        (JJ:[278..295] Neurodegenerative) (NNP:[296..304] Diseases)
+        (,:[304..305] ,) (NNP:[306..316] University) (IN:[317..319] of)
+        (NNP:[320..328] Virginia) (NNP:[330..336] Health)
+        (NNP:[337..343] System) (,:[343..344] ,)
+        (NNP:[345..360] Charlottesville) (,:[360..361] ,)
+        (NNP:[362..370] Virginia) (,:[370..371] ,) (NNP:[372..375] USA)
+        (.:[375..376] .)))
+
+;sentence 4 Span:380..541
+;Complex I activity is reduced in cytoplasmic hybrid (cybrid) cell lines that 
+;contain mitochondrial DNA (mtDNA) from sporadic Parkinson's disease (PD) 
+;patients.
+;[466..483]:gene-rna:"mitochondrial DNA"
+;[485..490]:gene-rna:"mtDNA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[380..387] Complex) (CD:[388..389] I))
+      (NN:[390..398] activity))
+    (VP (VBZ:[399..401] is)
+      (VP (VBN:[402..409] reduced)
+        (NP-1 (-NONE-:[409..409] *))
+        (PP (IN:[410..412] in)
+          (NP
+            (NP
+              (NML
+                (NML (JJ:[413..424] cytoplasmic) (JJ:[425..431] hybrid))
+                (NML (-LRB-:[432..433] -LRB-) (JJ:[433..439] cybrid)
+                     (-RRB-:[439..440] -RRB-)))
+              (NN:[441..445] cell) (NNS:[446..451] lines))
+            (SBAR
+              (WHNP-2 (WDT:[452..456] that))
+              (S
+                (NP-SBJ-2 (-NONE-:[456..456] *T*))
+                (VP (VBP:[458..465] contain)
+                  (NP
+                    (NP
+                      (NP (JJ:[466..479] mitochondrial) (NN:[480..483] DNA))
+                      (NP (-LRB-:[484..485] -LRB-) (NN:[485..490] mtDNA)
+                          (-RRB-:[490..491] -RRB-)))
+                    (PP (IN:[492..496] from)
+                      (NP (JJ:[497..505] sporadic)
+                        (NML
+                          (NML
+                            (NP (NNP:[506..515] Parkinson) (POS:[515..517] 's))
+                            (NN:[518..525] disease))
+                          (NML (-LRB-:[526..527] -LRB-) (NN:[527..529] PD)
+                               (-RRB-:[529..530] -RRB-)))
+                        (NNS:[532..540] patients)))))))))))
+    (.:[540..541] .)))
+
+;sentence 5 Span:542..599
+;This implies that mtDNA aberration occurs in sporadic PD.
+;[560..565]:gene-rna:"mtDNA"
+(SENT
+  (S
+    (NP-SBJ (DT:[542..546] This))
+    (VP (VBZ:[547..554] implies)
+      (SBAR (IN:[555..559] that)
+        (S
+          (NP-SBJ (NN:[560..565] mtDNA) (NN:[566..576] aberration))
+          (VP (VBZ:[577..583] occurs)
+            (PP (IN:[584..586] in)
+              (NP (JJ:[587..595] sporadic) (NN:[596..598] PD)))))))
+    (.:[598..599] .)))
+
+;sentence 6 Span:600..869
+;To assess  the integrity of mtDNA in autosomal dominant PD arising from
+;mutation of the  alpha-synuclein gene, we transferred mitochondrial genes
+;from PD-affected  members of the Italian-American Contursi kindred to cells
+;previously depleted of  their endogenous mtDNA.
+;[628..633]:gene-rna:"mtDNA"
+;[689..704]:gene-rna:"alpha-synuclein"
+;[863..868]:gene-rna:"mtDNA"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[600..600] *))
+      (VP (TO:[600..602] To)
+        (VP (VB:[603..609] assess)
+          (NP
+            (NP (DT:[611..614] the) (NN:[615..624] integrity))
+            (PP (IN:[625..627] of)
+              (NP (NN:[628..633] mtDNA))))
+          (PP (IN:[634..636] in)
+            (NP
+              (NP (JJ:[637..646] autosomal) (JJ:[647..655] dominant)
+                  (NN:[656..658] PD))
+              (VP (VBG:[659..666] arising)
+                (PP (IN:[667..671] from)
+                  (NP
+                    (NP (NN:[672..680] mutation))
+                    (PP (IN:[681..683] of)
+                      (NP (DT:[684..687] the) (NN:[689..704] alpha-synuclein)
+                          (NN:[705..709] gene)))))))))))
+    (,:[709..710] ,)
+    (NP-SBJ (PRP:[711..713] we))
+    (VP (VBD:[714..725] transferred)
+      (NP
+        (NP (JJ:[726..739] mitochondrial) (NNS:[740..745] genes))
+        (PP (IN:[746..750] from)
+          (NP
+            (NP
+              (ADJP (NN:[751..753] PD) (HYPH:[753..754] -)
+                    (VBN:[754..762] affected))
+              (NNS:[764..771] members))
+            (PP (IN:[772..774] of)
+              (NP (DT:[775..778] the)
+                (ADJP (JJ:[779..786] Italian) (HYPH:[786..787] -)
+                      (JJ:[787..795] American))
+                (NNP:[796..804] Contursi) (NN:[805..812] kindred)))))
+        (PP (TO:[813..815] to)
+          (NP
+            (NP (NNS:[816..821] cells))
+            (VP
+              (ADVP (RB:[822..832] previously))
+              (VBN:[833..841] depleted)
+              (NP (-NONE-:[841..841] *))
+              (PP (IN:[842..844] of)
+                (NP (PRP$:[846..851] their) (JJ:[852..862] endogenous)
+                    (NN:[863..868] mtDNA))))))))
+    (.:[868..869] .)))
+
+;sentence 7 Span:870..1116
+;Unlike cybrid cell lines expressing mtDNA from persons  with sporadic or
+;maternally inherited PD, the resultant Contursi cybrid lines  did not
+;manifest complex I deficiency, indicating that in Contursi PD mtDNA 
+;integrity is relatively preserved.
+;[906..911]:gene-rna:"mtDNA"
+;[1075..1080]:gene-rna:"mtDNA"
+(SENT
+  (S
+    (PP (IN:[870..876] Unlike)
+      (NP
+        (NP (JJ:[877..883] cybrid) (NN:[884..888] cell) (NNS:[889..894] lines))
+        (VP (VBG:[895..905] expressing)
+          (NP (NN:[906..911] mtDNA)))
+        (PP (IN:[912..916] from)
+          (NP
+            (NP (NNS:[917..924] persons))
+            (PP (IN:[926..930] with)
+              (NP
+                (NP
+                  (ADJP (JJ:[931..939] sporadic))
+                  (NML-1 (-NONE-:[939..939] *P*)))
+                (CC:[940..942] or)
+                (NP
+                  (ADJP (RB:[943..953] maternally) (VBN:[954..963] inherited))
+                  (NML-1 (NN:[964..966] PD)))))))))
+    (,:[966..967] ,)
+    (NP-SBJ (DT:[968..971] the) (JJ:[972..981] resultant)
+            (NNP:[982..990] Contursi) (JJ:[991..997] cybrid)
+            (NNS:[998..1003] lines))
+    (VP (VBD:[1005..1008] did) (RB:[1009..1012] not)
+      (VP (VB:[1013..1021] manifest)
+        (NP
+          (NML (NN:[1022..1029] complex) (CD:[1030..1031] I))
+          (NN:[1032..1042] deficiency))
+        (,:[1042..1043] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1043..1043] *))
+          (VP (VBG:[1044..1054] indicating)
+            (SBAR (IN:[1055..1059] that)
+              (S
+                (PP (IN:[1060..1062] in)
+                  (NP (NNP:[1063..1071] Contursi)))
+                (NP-SBJ-2 (NN:[1072..1074] PD) (NN:[1075..1080] mtDNA)
+                          (NN:[1082..1091] integrity))
+                (VP (VBZ:[1092..1094] is)
+                  (ADVP (RB:[1095..1105] relatively))
+                  (VP (VBN:[1106..1115] preserved)
+                    (NP-2 (-NONE-:[1115..1115] *))))))))))
+    (.:[1115..1116] .)))
+
+;sentence 8 Span:1117..1221
+;Compared to control cybrids, however,  Contursi cybrid lines did show some
+;evidence of oxidative stress.
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ-1 (-NONE-:[1117..1117] *))
+      (VP (VBN:[1117..1125] Compared)
+        (NP-1 (-NONE-:[1125..1125] *))
+        (PP-CLR (TO:[1126..1128] to)
+          (NP (NN:[1129..1136] control) (NNS:[1137..1144] cybrids)))))
+    (,:[1144..1145] ,)
+    (ADVP (RB:[1146..1153] however))
+    (,:[1153..1154] ,)
+    (NP-SBJ (NNP:[1156..1164] Contursi) (JJ:[1165..1171] cybrid)
+            (NNS:[1172..1177] lines))
+    (VP (VBD:[1178..1181] did)
+      (VP (VB:[1182..1186] show)
+        (NP
+          (NP (DT:[1187..1191] some) (NN:[1192..1200] evidence))
+          (PP (IN:[1201..1203] of)
+            (NP (JJ:[1204..1213] oxidative) (NN:[1214..1220] stress))))))
+    (.:[1220..1221] .)))
+
+;sentence 9 Span:1222..1366
+;For reasons  that are unclear, at least a limited amount of mtDNA damage may
+;nevertheless  develop in PD patients with alpha-synuclein mutation.
+;[1282..1287]:gene-rna:"mtDNA"
+;[1341..1356]:gene-rna:"alpha-synuclein"
+(SENT
+  (S
+    (PP (IN:[1222..1225] For)
+      (NP
+        (NP (NNS:[1226..1233] reasons))
+        (SBAR
+          (WHNP-1 (WDT:[1235..1239] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[1239..1239] *T*))
+            (VP (VBP:[1240..1243] are)
+              (ADJP-PRD (JJ:[1244..1251] unclear)))))))
+    (,:[1251..1252] ,)
+    (NP-SBJ
+      (NP
+        (ADVP (IN:[1253..1255] at) (JJS:[1256..1261] least))
+        (DT:[1262..1263] a) (VBN:[1264..1271] limited) (NN:[1272..1278] amount))
+      (PP (IN:[1279..1281] of)
+        (NP (NN:[1282..1287] mtDNA) (NN:[1288..1294] damage))))
+    (VP (MD:[1295..1298] may)
+      (ADVP (RB:[1299..1311] nevertheless))
+      (VP (VB:[1313..1320] develop)
+        (PP-LOC (IN:[1321..1323] in)
+          (NP
+            (NP (NN:[1324..1326] PD) (NNS:[1327..1335] patients))
+            (PP (IN:[1336..1340] with)
+              (NP (NN:[1341..1356] alpha-synuclein) (NN:[1357..1365] mutation)))))))
+    (.:[1365..1366] .)))
+
+;section 10 Span:1367..1398
+;Copyright 2001 Academic  Press.
+(SEC
+  (FRAG (NN:[1367..1376] Copyright) (CD:[1377..1381] 2001)
+        (NNP:[1382..1390] Academic) (NNP:[1392..1397] Press) (.:[1397..1398] .)))
+
+;section 11 Span:1402..1447
+;PMID: 11358461 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1402..1406] PMID) (::[1406..1407] :) (CD:[1408..1416] 11358461)
+        (NN:[1417..1418] -LSB-) (NNP:[1418..1424] PubMed) (::[1425..1426] -)
+        (NN:[1427..1434] indexed) (IN:[1435..1438] for)
+        (NNP:[1439..1447] MEDLINE-RSB-)))

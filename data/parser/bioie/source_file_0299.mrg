@@ -1,0 +1,511 @@
+;PMID: 3884171
+;source_file_838.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..168] = [t:43..168]
+;2)section:[e:172..242] = [t:172..241]
+;3)sentence:[e:246..432] = [t:246..432]
+;4)sentence:[e:433..1078] = [t:433..1078]
+;5)sentence:[e:1079..1312] = [t:1079..1312]
+;6)sentence:[e:1313..1492] = [t:1313..1492]
+;7)sentence:[e:1493..1727] = [t:1493..1727]
+;8)sentence:[e:1728..1994] = [t:1728..1994]
+;9)sentence:[e:1995..2185] = [t:1995..2185]
+;10)sentence:[e:2186..2255] = [t:2186..2255]
+;11)section:[e:2259..2303] = [t:2259..2302]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:172..242][t:172..241]
+;ERROR_Section end mismatch[e:2259..2303][t:2259..2302]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[241..242] .
+;ERROR_Token in entity file but not tree[1655..1659] 3-MC
+;ERROR_Token in entity file but not tree[1659..1660] -
+;ERROR_Token in entity file but not tree[1660..1669] inducible
+;ERROR_Token in entity file but not tree[2302..2303] ]
+;ERROR_Token in tree file but not entity[1655..1669] 3-MC-inducible
+
+;section 0 Span:0..37
+;Carcinogenesis. 1985 Mar;6(3):415-20.
+(SEC
+  (FRAG (NNP:[0..14] Carcinogenesis) (IN:[14..15] .) (CD:[16..20] 1985)
+        (NNP:[21..24] Mar) (::[24..25] ;) (CD:[25..26] 6) (-LRB-:[26..27] -LRB-)
+        (CD:[27..28] 3) (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..33] 415)
+        (::[33..34] -) (CD:[34..36] 20) (.:[36..37] .)))
+
+;sentence 1 Span:43..168
+;Mutagenic activation of carcinogenic N-nitrosopropylamines by rat liver: 
+;evidence for a cytochrome P-450 dependent reaction.
+;[80..101]:substance:"N-nitrosopropylamines"
+;[132..148]:cyp450:"cytochrome P-450"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[43..52] Mutagenic) (NN:[53..63] activation))
+      (PP (IN:[64..66] of)
+        (NP (JJ:[67..79] carcinogenic) (NNS:[80..101] N-nitrosopropylamines)))
+      (PP (IN:[102..104] by)
+        (NP (NN:[105..108] rat) (NN:[109..114] liver))))
+    (::[114..115] :)
+    (NP
+      (NP (NN:[117..125] evidence))
+      (PP (IN:[126..129] for)
+        (NP (DT:[130..131] a)
+          (ADJP
+            (NML (NN:[132..142] cytochrome) (NN:[143..148] P-450))
+            (JJ:[149..158] dependent))
+          (NN:[159..167] reaction))))
+    (.:[167..168] .)))
+
+;section 2 Span:172..241
+;Mori Y, Yamazaki H, Toyoshi K, Makino T, Obara T, Yokose Y, Konishi Y
+(SEC
+  (FRAG (NNP:[172..176] Mori) (NNP:[177..178] Y) (,:[178..179] ,)
+        (NNP:[180..188] Yamazaki) (NNP:[189..190] H) (,:[190..191] ,)
+        (NNP:[192..199] Toyoshi) (NNP:[200..201] K) (,:[201..202] ,)
+        (NNP:[203..209] Makino) (NNP:[210..211] T) (,:[211..212] ,)
+        (NNP:[213..218] Obara) (NNP:[219..220] T) (,:[220..221] ,)
+        (NNP:[222..228] Yokose) (NNP:[229..230] Y) (,:[230..231] ,)
+        (NNP:[232..239] Konishi) (NNP:[240..241] Y)))
+
+(ORPH .)
+
+;sentence 3 Span:246..432
+;Mutagenic potential of carcinogenic N-nitrosopropylamines was examined by the
+; Ames's liquid incubation assay, using rat liver 9000 g supernatant (S9)
+;fraction  for metabolic activation.
+;[282..303]:substance:"N-nitrosopropylamines"
+;[373..377]:quantitative-value:"9000"
+;[378..379]:quantitative-units:"g"
+;[380..391]:substance:"supernatant"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[246..255] Mutagenic) (NN:[256..265] potential))
+      (PP (IN:[266..268] of)
+        (NP (JJ:[269..281] carcinogenic) (NNS:[282..303] N-nitrosopropylamines))))
+    (VP (VBD:[304..307] was)
+      (VP (VBN:[308..316] examined)
+        (NP-1 (-NONE-:[316..316] *))
+        (PP-MNR (IN:[317..319] by)
+          (NP
+            (NP (DT:[320..323] the) (NNP:[325..329] Ames) (POS:[329..331] 's))
+            (NML (NN:[332..338] liquid) (NN:[339..349] incubation))
+            (NN:[350..355] assay)))
+        (,:[355..356] ,)
+        (S-MNR
+          (NP-SBJ (-NONE-:[356..356] *))
+          (VP (VBG:[357..362] using)
+            (NP
+              (NML (NN:[363..366] rat) (NN:[367..372] liver))
+              (NML
+                (NML
+                  (NML (CD:[373..377] 9000) (NN:[378..379] g))
+                  (NN:[380..391] supernatant))
+                (NML (-LRB-:[392..393] -LRB-) (NN:[393..395] S9)
+                     (-RRB-:[395..396] -RRB-)))
+              (NN:[397..405] fraction))
+            (PP-PRP (IN:[407..410] for)
+              (NP (JJ:[411..420] metabolic) (NN:[421..431] activation)))))))
+    (.:[431..432] .)))
+;ERROR_Orphan Text from Tree File[241..246] .
+
+;sentence 4 Span:433..1078
+;N-Nitrosobis(2-hydroxypropyl)amine, 
+;N-nitroso(2-hydroxypropyl)-(2-oxopropyl)amine (HPOP), 
+;N-nitrosobis(2-oxopropyl)amine (BOP), N-nitrosobis(2-acetoxypropyl)amine, 
+;N-nitroso-2,6-dimethylmorpholine, N-nitrosomethyl-(2-hydroxypropyl)amine and 
+;N-nitrosomethyl(2-oxopropyl)amine all showed positive mutagenicity in strain 
+;TA100 in the presence of liver S9 while being negative in strain TA98. With
+;the  exception of HPOP and BOP, which were also mutagenic in TA100 without S9
+; metabolic activation, these N-nitrosopropylamines required the presence of 
+;microsomes as a source of enzymes as well as NADP+ as a cofactor for
+;mutagenic  activation.
+;[433..467]:substance:"N-Nitrosobis(2-hydroxypropyl)amine"
+;[470..515]:substance:"N-nitroso(2-hydroxypropyl)-(2-oxopropyl)amine"
+;[517..521]:substance:"HPOP"
+;[525..555]:substance:"N-nitrosobis(2-oxopropyl)amine"
+;[557..560]:substance:"BOP"
+;[563..597]:substance:"N-nitrosobis(2-acetoxypropyl)amine"
+;[600..632]:substance:"N-nitroso-2,6-dimethylmorpholine"
+;[634..672]:substance:"N-nitrosomethyl-(2-hydroxypropyl)amine"
+;[678..711]:substance:"N-nitrosomethyl(2-oxopropyl)amine"
+;[850..854]:substance:"HPOP"
+;[859..862]:substance:"BOP"
+;[939..960]:substance:"N-nitrosopropylamines"
+;[1013..1020]:substance:"enzymes"
+;[1032..1037]:substance:"NADP+"
+;[1043..1051]:substance:"cofactor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[433..467] N-Nitrosobis-LRB-2-hydroxypropyl-RRB-amine))
+      (,:[467..468] ,)
+      (NP
+        (NP
+            (NN:[470..515] N-nitroso-LRB-2-hydroxypropyl-RRB---LRB-2-oxopropyl-RRB-amine))
+        (NP (-LRB-:[516..517] -LRB-) (NN:[517..521] HPOP)
+            (-RRB-:[521..522] -RRB-)))
+      (,:[522..523] ,)
+      (NP
+        (NP (NN:[525..555] N-nitrosobis-LRB-2-oxopropyl-RRB-amine))
+        (NP (-LRB-:[556..557] -LRB-) (NN:[557..560] BOP)
+            (-RRB-:[560..561] -RRB-)))
+      (,:[561..562] ,)
+      (NP (NN:[563..597] N-nitrosobis-LRB-2-acetoxypropyl-RRB-amine))
+      (,:[597..598] ,)
+      (NP (NN:[600..632] N-nitroso-2,6-dimethylmorpholine))
+      (,:[632..633] ,)
+      (NP (NN:[634..672] N-nitrosomethyl--LRB-2-hydroxypropyl-RRB-amine))
+      (CC:[673..676] and)
+      (NP (NN:[678..711] N-nitrosomethyl-LRB-2-oxopropyl-RRB-amine)))
+    (RB:[712..715] all)
+    (VP (VBD:[716..722] showed)
+      (NP (JJ:[723..731] positive) (NN:[732..744] mutagenicity))
+      (PP (IN:[745..747] in)
+        (NP (NN:[748..754] strain) (NN:[756..761] TA100)))
+      (PP (IN:[762..764] in)
+        (NP
+          (NP (DT:[765..768] the) (NN:[769..777] presence))
+          (PP (IN:[778..780] of)
+            (NP (NN:[781..786] liver) (NN:[787..789] S9)))))
+      (SBAR-ADV (IN:[790..795] while)
+        (S
+          (NP-SBJ (-NONE-:[795..795] *))
+          (VP (VBG:[796..801] being)
+            (ADJP-PRD (JJ:[802..810] negative)
+              (PP (IN:[811..813] in)
+                (NP (NN:[814..820] strain) (NN:[821..825] TA98))))))))
+    (.:[825..826] .))
+  (S
+    (PP (IN:[827..831] With)
+      (NP
+        (NP (DT:[832..835] the) (NN:[837..846] exception))
+        (PP (IN:[847..849] of)
+          (NP
+            (NP (NN:[850..854] HPOP) (CC:[855..858] and) (NN:[859..862] BOP))
+            (,:[862..863] ,)
+            (SBAR
+              (WHNP-1 (WDT:[864..869] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[869..869] *T*))
+                (VP (VBD:[870..874] were)
+                  (ADVP (RB:[875..879] also))
+                  (ADJP-PRD (JJ:[880..889] mutagenic))
+                  (PP (IN:[890..892] in)
+                    (NP (NN:[893..898] TA100)))
+                  (PP (IN:[899..906] without)
+                    (NP (NN:[907..909] S9) (JJ:[911..920] metabolic)
+                        (NN:[921..931] activation))))))))))
+    (,:[931..932] ,)
+    (NP-SBJ (DT:[933..938] these) (NNS:[939..960] N-nitrosopropylamines))
+    (VP (VBD:[961..969] required)
+      (NP
+        (NP (DT:[970..973] the) (NN:[974..982] presence))
+        (PP (IN:[983..985] of)
+          (NP
+            (NP
+              (NP (NNS:[987..997] microsomes))
+              (PP (IN:[998..1000] as)
+                (NP
+                  (NP (DT:[1001..1002] a) (NN:[1003..1009] source))
+                  (PP (IN:[1010..1012] of)
+                    (NP (NNS:[1013..1020] enzymes))))))
+            (CONJP (RB:[1021..1023] as) (RB:[1024..1028] well)
+                   (IN:[1029..1031] as))
+            (NP
+              (NP (NN:[1032..1037] NADP+))
+              (PP (IN:[1038..1040] as)
+                (NP
+                  (NP (DT:[1041..1042] a) (NN:[1043..1051] cofactor))
+                  (PP (IN:[1052..1055] for)
+                    (NP (JJ:[1056..1065] mutagenic) (NN:[1067..1077] activation))))))))))
+    (.:[1077..1078] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[433..1078]::S:S:
+
+;sentence 5 Span:1079..1312
+;Treatment of rats with polychlorinated biphenyls or phenobarbital  (PB)
+;resulted in a marked increase in the ability of S9 to activate the seven 
+;N-nitrosamines tested whereas 3-methylcholanthrene (3-MC) induction was not 
+;effective.
+;[1102..1127]:substance:"polychlorinated biphenyls"
+;[1131..1144]:substance:"phenobarbital"
+;[1147..1149]:substance:"PB"
+;[1225..1239]:substance:"N-nitrosamines"
+;[1255..1275]:substance:"3-methylcholanthrene"
+;[1277..1281]:substance:"3-MC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1079..1088] Treatment))
+        (PP (IN:[1089..1091] of)
+          (NP (NNS:[1092..1096] rats))))
+      (PP (IN:[1097..1101] with)
+        (NP
+          (NP (JJ:[1102..1117] polychlorinated) (NNS:[1118..1127] biphenyls))
+          (CC:[1128..1130] or)
+          (NP
+            (NP (NN:[1131..1144] phenobarbital))
+            (NP (-LRB-:[1146..1147] -LRB-) (NN:[1147..1149] PB)
+                (-RRB-:[1149..1150] -RRB-))))))
+    (VP (VBD:[1151..1159] resulted)
+      (PP-CLR (IN:[1160..1162] in)
+        (NP
+          (NP (DT:[1163..1164] a) (JJ:[1165..1171] marked)
+              (NN:[1172..1180] increase))
+          (PP (IN:[1181..1183] in)
+            (NP
+              (NP (DT:[1184..1187] the) (NN:[1188..1195] ability)
+                (S-1 (-NONE-:[1195..1195] *ICH*)))
+              (PP (IN:[1196..1198] of)
+                (NP (NN:[1199..1201] S9)))
+              (S-1
+                (NP-SBJ (-NONE-:[1201..1201] *))
+                (VP (TO:[1202..1204] to)
+                  (VP (VB:[1205..1213] activate)
+                    (NP
+                      (NP (DT:[1214..1217] the) (CD:[1218..1223] seven)
+                          (NNS:[1225..1239] N-nitrosamines))
+                      (VP (VBN:[1240..1246] tested)
+                        (NP (-NONE-:[1246..1246] *)))))))))))
+      (S-ADV
+        (ADVP (RB:[1247..1254] whereas))
+        (NP-SBJ
+          (NML
+            (NML (NN:[1255..1275] 3-methylcholanthrene))
+            (NML (-LRB-:[1276..1277] -LRB-) (NN:[1277..1281] 3-MC)
+                 (-RRB-:[1281..1282] -RRB-)))
+          (NN:[1283..1292] induction))
+        (VP (VBD:[1293..1296] was) (RB:[1297..1300] not)
+          (ADJP-PRD (JJ:[1302..1311] effective)))))
+    (.:[1311..1312] .)))
+
+;sentence 6 Span:1313..1492
+;All the mutagenic activities were considerably decreased by  preincubation in
+;an atmosphere of either carbon monoxide or nitrogen gas or by  adding
+;cytochrome c to the S9 mixture.
+;[1415..1430]:substance:"carbon monoxide"
+;[1434..1446]:substance:"nitrogen gas"
+;[1461..1473]:substance:"cytochrome c"
+(SENT
+  (S
+    (NP-SBJ-1 (PDT:[1313..1316] All) (DT:[1317..1320] the)
+              (JJ:[1321..1330] mutagenic) (NNS:[1331..1341] activities))
+    (VP (VBD:[1342..1346] were)
+      (VP
+        (ADVP (RB:[1347..1359] considerably))
+        (VBN:[1360..1369] decreased)
+        (NP-1 (-NONE-:[1369..1369] *))
+        (PP-MNR
+          (PP (IN:[1370..1372] by)
+            (NP
+              (NP (NN:[1374..1387] preincubation))
+              (PP-LOC (IN:[1388..1390] in)
+                (NP
+                  (NP (DT:[1391..1393] an) (NN:[1394..1404] atmosphere))
+                  (PP (IN:[1405..1407] of)
+                    (NP (CC:[1408..1414] either)
+                      (NP (NN:[1415..1421] carbon) (NN:[1422..1430] monoxide))
+                      (CC:[1431..1433] or)
+                      (NP (NN:[1434..1442] nitrogen) (NN:[1443..1446] gas))))))))
+          (CC:[1447..1449] or)
+          (PP (IN:[1450..1452] by)
+            (S-NOM
+              (NP-SBJ (-NONE-:[1452..1452] *))
+              (VP (VBG:[1454..1460] adding)
+                (NP (NN:[1461..1471] cytochrome) (NN:[1472..1473] c))
+                (PP (TO:[1474..1476] to)
+                  (NP (DT:[1477..1480] the) (-RRB-:[1481..1483] S9)
+                      (NN:[1484..1491] mixture)))))))))
+    (.:[1491..1492] .)))
+
+;sentence 7 Span:1493..1727
+;Metyrapone, a specific inhibitor of  PB-inducible major cytochrome P-450,
+;considerably inhibited mutagenicity,  whereas 7,8-benzoflavone, a specific
+;inhibitor of 3-MC-inducible major  cytochrome P-448, was totally lacking this
+;effect.
+;[1493..1503]:substance:"Metyrapone"
+;[1516..1525]:substance:"inhibitor"
+;[1530..1532]:substance:"PB"
+;[1549..1565]:cyp450:"cytochrome P-450"
+;[1613..1629]:substance:"7,8-benzoflavone"
+;[1642..1651]:substance:"inhibitor"
+;[1655..1659]:substance:"3-MC"
+;[1677..1693]:cyp450:"cytochrome P-448"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1493..1503] Metyrapone))
+      (,:[1503..1504] ,)
+      (NP
+        (NP-SBJ (DT:[1505..1506] a) (JJ:[1507..1515] specific)
+                (NN:[1516..1525] inhibitor))
+        (PP (IN:[1526..1528] of)
+          (NP
+            (ADJP (NN:[1530..1532] PB) (HYPH:[1532..1533] -)
+                  (JJ:[1533..1542] inducible))
+            (JJ:[1543..1548] major)
+             (NN:[1549..1559] cytochrome) (NN:[1560..1565] P-450)))))
+    (,:[1565..1566] ,)
+    (ADVP (RB:[1567..1579] considerably))
+    (VP (VBD:[1580..1589] inhibited)
+      (NP (NN:[1590..1602] mutagenicity))
+      (,:[1602..1603] ,)
+      (S
+        (ADVP (IN:[1605..1612] whereas))
+        (NP-SBJ
+          (NP (NN:[1613..1629] 7,8-benzoflavone))
+          (,:[1629..1630] ,)
+          (NP
+            (NP (DT:[1631..1632] a) (JJ:[1633..1641] specific)
+                (NN:[1642..1651] inhibitor))
+            (PP (IN:[1652..1654] of)
+              (NP (JJ:[1655..1669] 3-MC-inducible) (JJ:[1670..1675] major)
+                 (NN:[1677..1687] cytochrome) (NN:[1688..1693] P-448)))))
+        (,:[1693..1694] ,)
+        (VP (VBD:[1695..1698] was)
+          (ADVP (RB:[1699..1706] totally))
+          (VP (VBG:[1707..1714] lacking)
+            (NP (DT:[1715..1719] this) (NN:[1720..1726] effect))))))
+    (.:[1726..1727] .)))
+
+;sentence 8 Span:1728..1994
+;These results demonstrate a  correlation between rat liver S9 dependent
+;mutagenicity of six  N-nitrosopropylamines and their known carcinogenicity in
+;rat in vivo  experiments, and that the PB-inducible major cytochrome P-450 is
+;involved in the  mutagenic activation.
+;[1821..1842]:substance:"N-nitrosopropylamines"
+;[1917..1919]:substance:"PB"
+;[1936..1952]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1728..1733] These) (NNS:[1734..1741] results))
+    (VP (VBD:[1742..1753] demonstrate)
+      (UCP
+        (NP
+          (NP (DT:[1754..1755] a) (NN:[1757..1768] correlation))
+          (PP (IN:[1769..1776] between)
+            (NP
+              (NP
+                (NP
+                  (NML (NN:[1777..1780] rat) (NN:[1781..1786] liver))
+                  (ADJP (NN:[1787..1789] S9) (JJ:[1790..1799] dependent))
+                  (NN:[1800..1812] mutagenicity))
+                (PP (IN:[1813..1815] of)
+                  (NP (CD:[1816..1819] six)
+                      (NNS:[1821..1842] N-nitrosopropylamines))))
+              (CC:[1843..1846] and)
+              (NP
+                (NP (PRP$:[1847..1852] their) (JJ:[1853..1858] known)
+                    (NN:[1859..1874] carcinogenicity))
+                (PP-LOC (IN:[1875..1877] in)
+                  (NP (NN:[1878..1881] rat)
+                    (ADJP (FW:[1882..1884] in) (FW:[1885..1889] vivo))
+                    (NNS:[1891..1902] experiments)))))))
+        (,:[1902..1903] ,) (CC:[1904..1907] and)
+        (SBAR (IN:[1908..1912] that)
+          (S
+            (NP-SBJ-1 (DT:[1913..1916] the)
+              (ADJP (NN:[1917..1919] PB) (HYPH:[1919..1920] -)
+                    (JJ:[1920..1929] inducible))
+              (JJ:[1930..1935] major)
+               (NN:[1936..1946] cytochrome) (NN:[1947..1952] P-450))
+            (VP (VBZ:[1953..1955] is)
+              (VP (JJ:[1956..1964] involved)
+                (NP-1 (-NONE-:[1964..1964] *))
+                (PP-CLR (IN:[1965..1967] in)
+                  (NP (DT:[1968..1971] the) (JJ:[1973..1982] mutagenic)
+                      (NN:[1983..1993] activation)))))))))
+    (.:[1993..1994] .)))
+
+;sentence 9 Span:1995..2185
+;BOP was also shown to be activated by extrahepatic (lung,  kidney, pancreas)
+;tissue S9, blood S9 and bovine serum albumin (BSA) to the  extent of 50% of
+;that activity obtained with liver S9.
+;[1995..1998]:substance:"BOP"
+;[2096..2116]:substance:"bovine serum albumin"
+;[2118..2121]:substance:"BSA"
+;[2141..2144]:quantitative-value:"50%"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1995..1998] BOP))
+    (VP (VBD:[1999..2002] was)
+      (ADVP (RB:[2003..2007] also))
+      (VP (VBN:[2008..2013] shown)
+        (S
+          (NP-SBJ-1 (-NONE-:[2013..2013] *))
+          (VP (TO:[2014..2016] to)
+            (VP (VB:[2017..2019] be)
+              (VP (VBN:[2020..2029] activated)
+                (NP-1 (-NONE-:[2029..2029] *))
+                (PP-MNR (IN:[2030..2032] by)
+                  (NP
+                    (NP
+                      (NML
+                        (NML (JJ:[2033..2045] extrahepatic)
+                          (PRN (-LRB-:[2046..2047] -LRB-)
+                            (NP (NN:[2047..2051] lung) (,:[2051..2052] ,)
+                                (NN:[2054..2060] kidney) (,:[2060..2061] ,)
+                                (NN:[2062..2070] pancreas))
+                            (-RRB-:[2070..2071] -RRB-)))
+                        (NN:[2072..2078] tissue))
+                      (NN:[2079..2081] S9))
+                    (,:[2081..2082] ,)
+                    (NP (NN:[2083..2088] blood) (NN:[2089..2091] S9))
+                    (CC:[2092..2095] and)
+                    (NP
+                      (NP
+                        (NML (NN:[2096..2102] bovine) (NN:[2103..2108] serum))
+                        (NN:[2109..2116] albumin))
+                      (NP (-LRB-:[2117..2118] -LRB-) (NN:[2118..2121] BSA)
+                          (-RRB-:[2121..2122] -RRB-)))))
+                (PP-EXT (TO:[2123..2125] to)
+                  (NP
+                    (NP (DT:[2126..2129] the) (NN:[2131..2137] extent))
+                    (PP (IN:[2138..2140] of)
+                      (NP
+                        (NP (CD:[2141..2143] 50) (NN:[2143..2144] %))
+                        (PP (IN:[2145..2147] of)
+                          (NP
+                            (NP (DT:[2148..2152] that)
+                                (NN:[2153..2161] activity))
+                            (VP (VBN:[2162..2170] obtained)
+                              (NP (-NONE-:[2170..2170] *))
+                              (PP (IN:[2171..2175] with)
+                                (NP (NN:[2176..2181] liver) (NN:[2182..2184] S9))))))))))))))))
+    (.:[2184..2185] .)))
+
+;sentence 10 Span:2186..2255
+;A possible mechanism of  BSA-mediated activation of BOP is discussed.
+;[2211..2214]:substance:"BSA"
+;[2238..2241]:substance:"BOP"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[2186..2187] A) (JJ:[2188..2196] possible)
+          (NN:[2197..2206] mechanism))
+      (PP (IN:[2207..2209] of)
+        (NP
+          (NP
+            (ADJP (NN:[2211..2214] BSA) (HYPH:[2214..2215] -)
+                  (VBN:[2215..2223] mediated))
+            (NN:[2224..2234] activation))
+          (PP (IN:[2235..2237] of)
+            (NP (NN:[2238..2241] BOP))))))
+    (VP (VBZ:[2242..2244] is)
+      (VP (VBN:[2245..2254] discussed)
+        (NP-1 (-NONE-:[2254..2254] *))))
+    (.:[2254..2255] .)))
+
+;section 11 Span:2259..2302
+;PMID: 3884171 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2259..2263] PMID) (::[2263..2264] :) (CD:[2265..2272] 3884171)
+        (-LRB-:[2273..2274] -LSB-) (NNP:[2274..2280] PubMed) (::[2281..2282] -)
+        (VBN:[2283..2290] indexed) (IN:[2291..2294] for)
+        (NNP:[2295..2302] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2302..EOF] ]
+
+(ORPH -RSB-)

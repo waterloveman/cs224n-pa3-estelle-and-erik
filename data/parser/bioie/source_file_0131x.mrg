@@ -1,0 +1,437 @@
+;PMID: 10766161
+;source_file_1211.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..130] = [t:40..130]
+;2)section:[e:134..173] = [t:134..173]
+;3)section:[e:177..291] = [t:177..291]
+;4)sentence:[e:295..436] = [t:295..436]
+;5)sentence:[e:437..547] = [t:437..547]
+;6)sentence:[e:548..809] = [t:548..809]
+;7)sentence:[e:810..1003] = [t:810..1003]
+;8)sentence:[e:1005..1080] = [t:1005..1080]
+;9)sentence:[e:1081..1258] = [t:1081..1258]
+;10)sentence:[e:1259..1373] = [t:1259..1373]
+;11)sentence:[e:1374..1607] = [t:1374..1607]
+;12)sentence:[e:1608..1784] = [t:1608..1784]
+;13)section:[e:1788..1833] = [t:1788..1833]
+
+;section 0 Span:0..35
+;Cancer Res  2000 Apr 1;60(7):1800-4
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 2000) (.:[17..20] Apr)
+        (CD:[21..26] 1;60-LRB-) (CD:[26..28] 7-RRB-) (CD:[28..33] :1800)
+        (::[33..34] -) (CD:[34..35] 4)))
+
+;sentence 1 Span:40..130
+;Relative reciprocity of NRAS and PTEN/MMAC1 alterations in cutaneous melanoma
+; cell lines.
+;[64..68]:gene-rna:"NRAS"
+;[73..77]:gene-rna:"PTEN"
+;[78..83]:gene-rna:"MMAC1"
+;[99..129]:malignancy:"cutaneous melanoma  cell lines"
+(SENT
+  (NP-HLN
+    (NP (JJ:[40..48] Relative) (NN:[49..60] reciprocity))
+    (PP (IN:[61..63] of)
+      (NP
+        (NP
+          (NML
+            (NML (NN:[64..68] NRAS))
+            (CC:[69..72] and)
+            (NML (NN:[73..77] PTEN) (SYM:[77..78] /) (NN:[78..83] MMAC1)))
+          (NNS:[84..95] alterations))
+        (PP-LOC (IN:[96..98] in)
+          (NP
+            (NML (JJ:[99..108] cutaneous) (NN:[109..117] melanoma))
+            (NN:[119..123] cell) (NNS:[124..129] lines)))))
+    (.:[129..130] .)))
+
+;section 2 Span:134..173
+;Tsao H, Zhang X, Fowlkes K, Haluska FG.
+(SEC
+  (FRAG (NNP:[134..138] Tsao) (NNP:[139..140] H) (,:[140..141] ,)
+        (NNP:[142..147] Zhang) (NNP:[148..149] X) (,:[149..150] ,)
+        (NNP:[151..158] Fowlkes) (NNP:[159..160] K) (,:[160..161] ,)
+        (NNP:[162..169] Haluska) (NNP:[170..173] FG.)))
+
+;section 3 Span:177..291
+;Department of Dermatology, Massachusetts General Hospital and 
+;Dana-Farber/Partners CancerCare, Boston 02114, USA.
+(SEC
+  (FRAG (NNP:[177..187] Department) (IN:[188..190] of)
+        (NNP:[191..202] Dermatology) (,:[202..203] ,)
+        (NNP:[204..217] Massachusetts) (NNP:[218..225] General)
+        (NNP:[226..234] Hospital) (CC:[235..238] and) (NNP:[240..244] Dana)
+        (::[244..245] -) (NNP:[245..251] Farber) (NNP:[251..252] /)
+        (NNP:[252..260] Partners) (NNP:[261..271] CancerCare) (,:[271..272] ,)
+        (NNP:[273..279] Boston) (VBD:[280..285] 02114) (NNP:[285..286] ,)
+        (NNP:[287..290] USA) (.:[290..291] .)))
+
+;sentence 4 Span:295..436
+;Both inactivation of the tumor suppressor gene, PTEN/MMAC1, and oncogenic 
+;activation of RAS have been described in human cutaneous melanoma.
+;[343..347]:gene-rna:"PTEN"
+;[348..353]:gene-rna:"MMAC1"
+;[384..387]:gene-rna:"RAS"
+;[417..435]:malignancy:"cutaneous melanoma"
+(SENT
+  (S
+    (NP-SBJ-1 (CC:[295..299] Both)
+      (NP
+        (NP (NN:[300..312] inactivation))
+        (PP (IN:[313..315] of)
+          (NP
+            (NP (DT:[316..319] the)
+              (NML (NN:[320..325] tumor) (NN:[326..336] suppressor))
+              (NN:[337..341] gene))
+            (,:[341..342] ,)
+            (NP (NN:[343..347] PTEN) (SYM:[347..348] /) (NN:[348..353] MMAC1)))))
+      (,:[353..354] ,) (CC:[355..358] and)
+      (NP
+        (NP (JJ:[359..368] oncogenic) (NN:[370..380] activation))
+        (PP (IN:[381..383] of)
+          (NP (NN:[384..387] RAS)))))
+    (VP (VBP:[388..392] have)
+      (VP (VBN:[393..397] been)
+        (VP (VBN:[398..407] described)
+          (NP-1 (-NONE-:[407..407] *))
+          (PP (IN:[408..410] in)
+            (NP (JJ:[411..416] human)
+               (JJ:[417..426] cutaneous) (NN:[427..435] melanoma))))))
+    (.:[435..436] .)))
+
+;sentence 5 Span:437..547
+;In mice,  activation of a RAS-containing pathway is a necessary step in the
+;pathogenesis  of murine melanomas.
+;[463..466]:gene-rna:"RAS"
+;[537..546]:malignancy:"melanomas"
+(SENT
+  (S
+    (PP-LOC (IN:[437..439] In)
+      (NP (NNS:[440..444] mice)))
+    (,:[444..445] ,)
+    (NP-SBJ
+      (NP (NN:[447..457] activation))
+      (PP (IN:[458..460] of)
+        (NP (DT:[461..462] a)
+          (ADJP (NN:[463..466] RAS) (HYPH:[466..467] -)
+                (VBG:[467..477] containing))
+          (NN:[478..485] pathway))))
+    (VP (VBZ:[486..488] is)
+      (NP-PRD
+        (NP (DT:[489..490] a) (JJ:[491..500] necessary) (NN:[501..505] step))
+        (PP (IN:[506..508] in)
+          (NP
+            (NP (DT:[509..512] the) (NN:[513..525] pathogenesis))
+            (PP (IN:[527..529] of)
+              (NP (JJ:[530..536] murine) (NNS:[537..546] melanomas)))))))
+    (.:[546..547] .)))
+
+;sentence 6 Span:548..809
+;Because PTEN negatively regulates on the downstream effects  of
+;phosphatidylinositol-3-kinase (PI3-K), we hypothesized that the loss of 
+;PTEN/MMAC1 and the activation of RAS may be largely equivalent because RAS is
+;a  known positive upstream regulator of PI3-K.
+;[556..560]:gene-rna:"PTEN"
+;[612..641]:gene-protein:"phosphatidylinositol-3-kinase"
+;[643..648]:gene-protein:"PI3-K"
+;[676..680]:variation-type:"loss"
+;[685..689]:gene-rna:"PTEN"
+;[690..695]:gene-rna:"MMAC1"
+;[718..721]:gene-rna:"RAS"
+;[756..759]:gene-rna:"RAS"
+;[803..808]:gene-protein:"PI3-K"
+(SENT
+  (S
+    (SBAR-ADV (IN:[548..555] Because)
+      (S
+        (NP-SBJ (NN:[556..560] PTEN))
+        (ADVP (RB:[561..571] negatively))
+        (VP (VBZ:[572..581] regulates)
+          (PP (IN:[582..584] on)
+            (NP
+              (NP (DT:[585..588] the) (JJ:[589..599] downstream)
+                  (NNS:[600..607] effects))
+              (PP (IN:[609..611] of)
+                (NP
+                  (NP (NN:[612..641] phosphatidylinositol-3-kinase))
+                  (NP (-LRB-:[642..643] -LRB-) (NN:[643..648] PI3-K)
+                      (-RRB-:[648..649] -RRB-)))))))))
+    (,:[649..650] ,)
+    (NP-SBJ (PRP:[651..653] we))
+    (VP (VBD:[654..666] hypothesized)
+      (SBAR (IN:[667..671] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (DT:[672..675] the) (NN:[676..680] loss))
+              (PP (IN:[681..683] of)
+                (NP (NN:[685..689] PTEN) (SYM:[689..690] /)
+                    (NN:[690..695] MMAC1))))
+            (CC:[696..699] and)
+            (NP
+              (NP (DT:[700..703] the) (NN:[704..714] activation))
+              (PP (IN:[715..717] of)
+                (NP (NN:[718..721] RAS)))))
+          (VP (MD:[722..725] may)
+            (VP (VB:[726..728] be)
+              (ADJP-PRD (RB:[729..736] largely) (JJ:[737..747] equivalent))
+              (SBAR-ADV (IN:[748..755] because)
+                (S
+                  (NP-SBJ (NN:[756..759] RAS))
+                  (VP (VBZ:[760..762] is)
+                    (NP-PRD
+                      (NP (DT:[763..764] a) (VBN:[766..771] known)
+                          (JJ:[772..780] positive) (JJ:[781..789] upstream)
+                          (NN:[790..799] regulator))
+                      (PP (IN:[800..802] of)
+                        (NP (NN:[803..808] PI3-K))))))))))))
+    (.:[808..809] .)))
+
+;sentence 7 Span:810..1003
+;We expanded our previous survey of  PTEN/MMAC1 mutations and analyzed the RAS
+;status of 53 cutaneous melanoma cell  lines, 18 glioma cell lines, and 17
+;uncultured cutaneous melanoma metastasis.
+;[846..850]:gene-rna:"PTEN"
+;[851..856]:gene-rna:"MMAC1"
+;[884..887]:gene-rna:"RAS"
+;[901..931]:malignancy:"cutaneous melanoma cell  lines"
+;[936..953]:malignancy:"glioma cell lines"
+;[973..1002]:malignancy:"cutaneous melanoma metastasis"
+(SENT
+  (S
+    (NP-SBJ (PRP:[810..812] We))
+    (VP
+      (VP (VBD:[813..821] expanded)
+        (NP
+          (NP (PRP$:[822..825] our) (JJ:[826..834] previous)
+              (NN:[835..841] survey))
+          (PP (IN:[842..844] of)
+            (NP
+              (NML (NN:[846..850] PTEN) (SYM:[850..851] /) (NN:[851..856] MMAC1))
+              (NNS:[857..866] mutations)))))
+      (CC:[867..870] and)
+      (VP (VBD:[871..879] analyzed)
+        (NP
+          (NP (DT:[880..883] the) (NN:[884..887] RAS) (NN:[888..894] status))
+          (PP (IN:[895..897] of)
+            (NP
+              (NP (CD:[898..900] 53)
+                
+                (NML (JJ:[901..910] cutaneous) (NN:[911..919] melanoma))
+                (NN:[920..924] cell) (NNS:[926..931] lines))
+              (,:[931..932] ,)
+              (NP (CD:[933..935] 18)
+                 (NN:[936..942] glioma) (NN:[943..947] cell)
+                 (NNS:[948..953] lines))
+              (,:[953..954] ,) (CC:[955..958] and)
+              (NP (CD:[959..961] 17) (JJ:[962..972] uncultured)
+                
+                (NML (JJ:[973..982] cutaneous) (NN:[983..991] melanoma))
+                (NN:[992..1002] metastasis)))))))
+    (.:[1002..1003] .)))
+
+;sentence 8 Span:1005..1080
+;Overall, 51% of the cell lines had alterations in either PTEN/MMAC1 or RAS.
+;[1025..1035]:malignancy:"cell lines"
+;[1062..1066]:gene-rna:"PTEN"
+;[1067..1072]:gene-rna:"MMAC1"
+;[1076..1079]:gene-rna:"RAS"
+(SENT
+  (S
+    (ADVP (RB:[1005..1012] Overall))
+    (,:[1012..1013] ,)
+    (NP-SBJ
+      (NP (CD:[1014..1016] 51) (NN:[1016..1017] %))
+      (PP (IN:[1018..1020] of)
+        (NP (DT:[1021..1024] the)
+           (NN:[1025..1029] cell) (NNS:[1030..1035] lines))))
+    (VP (VBD:[1036..1039] had)
+      (NP
+        (NP (NNS:[1040..1051] alterations))
+        (PP-LOC (IN:[1052..1054] in)
+          (NP (CC:[1055..1061] either)
+            (NP (NN:[1062..1066] PTEN) (SYM:[1066..1067] /)
+                (NN:[1067..1072] MMAC1))
+            (CC:[1073..1075] or)
+            (NP (NN:[1076..1079] RAS))))))
+    (.:[1079..1080] .)))
+
+;sentence 9 Span:1081..1258
+;We  found 16 cell lines (30%) with alterations in PTEN/MMAC1 and 11 cell
+;lines (21%)  with activating NRAS mutations; only 1 cell line had concurrent
+;alterations in  both genes.
+;[1094..1104]:malignancy:"cell lines"
+;[1131..1135]:gene-rna:"PTEN"
+;[1136..1141]:gene-rna:"MMAC1"
+;[1149..1159]:malignancy:"cell lines"
+;[1183..1187]:gene-rna:"NRAS"
+;[1206..1215]:malignancy:"cell line"
+;[1252..1257]:gene-rna:"genes"
+(SENT
+  (S
+    (S
+      (NP-SBJ (PRP:[1081..1083] We))
+      (VP (VBD:[1085..1090] found)
+        (NP
+          (NP
+            (NP (CD:[1091..1093] 16)
+               (NN:[1094..1098] cell) (NNS:[1099..1104] lines)
+              (PRN (-LRB-:[1105..1106] -LRB-)
+                (NP (CD:[1106..1108] 30) (NN:[1108..1109] %))
+                (-RRB-:[1109..1110] -RRB-)))
+            (PP (IN:[1111..1115] with)
+              (NP
+                (NP (NNS:[1116..1127] alterations))
+                (PP (IN:[1128..1130] in)
+                  (NP (NN:[1131..1135] PTEN) (SYM:[1135..1136] /)
+                      (NN:[1136..1141] MMAC1))))))
+          (CC:[1142..1145] and)
+          (NP
+            (NP (CD:[1146..1148] 11)
+               (NN:[1149..1153] cell) (NNS:[1154..1159] lines)
+              (PRN (-LRB-:[1160..1161] -LRB-)
+                (NP (CD:[1161..1163] 21) (NN:[1163..1164] %))
+                (-RRB-:[1164..1165] -RRB-)))
+            (PP (IN:[1167..1171] with)
+              (NP (VBG:[1172..1182] activating) (NN:[1183..1187] NRAS)
+                  (NNS:[1188..1197] mutations)))))))
+    (::[1197..1198] ;)
+    (S
+      (NP-SBJ (RB:[1199..1203] only) (CD:[1204..1205] 1)
+         (NN:[1206..1210] cell) (NN:[1211..1215] line))
+      (VP (VBD:[1216..1219] had)
+        (NP
+          (NP (JJ:[1220..1230] concurrent) (NNS:[1231..1242] alterations))
+          (PP-LOC (IN:[1243..1245] in)
+            (NP (DT:[1247..1251] both) (NNS:[1252..1257] genes))))))
+    (.:[1257..1258] .)))
+
+;sentence 10 Span:1259..1373
+;Moreover, glioma cell lines with a high frequency of PTEN/MMAC1  inactivation
+;had no identifiable RAS alterations.
+;[1269..1286]:malignancy:"glioma cell lines"
+;[1312..1316]:gene-rna:"PTEN"
+;[1317..1322]:gene-rna:"MMAC1"
+;[1357..1360]:gene-rna:"RAS"
+(SENT
+  (S
+    (ADVP (RB:[1259..1267] Moreover))
+    (,:[1267..1268] ,)
+    (NP-SBJ
+      (NP (NN:[1269..1275] glioma) (NN:[1276..1280] cell)
+          (NNS:[1281..1286] lines))
+      (PP (IN:[1287..1291] with)
+        (NP
+          (NP (DT:[1292..1293] a) (JJ:[1294..1298] high)
+              (NN:[1299..1308] frequency))
+          (PP (IN:[1309..1311] of)
+            (NP
+              (NML (NN:[1312..1316] PTEN) (SYM:[1316..1317] /)
+                   (NN:[1317..1322] MMAC1))
+              (NN:[1324..1336] inactivation))))))
+    (VP (VBD:[1337..1340] had)
+      (NP (DT:[1341..1343] no) (JJ:[1344..1356] identifiable)
+          (NN:[1357..1360] RAS) (NNS:[1361..1372] alterations)))
+    (.:[1372..1373] .)))
+
+;sentence 11 Span:1374..1607
+;Ectopic expression of PTEN in  several cutaneous melanoma cell lines
+;suppressed colony formation irrespective  of PTEN/MMAC1 status; furthermore,
+;PTEN expression in cell lines carrying  activated RAS also suppressed colony
+;formation.
+;[1396..1400]:gene-rna:"PTEN"
+;[1413..1442]:malignancy:"cutaneous melanoma cell lines"
+;[1488..1492]:gene-rna:"PTEN"
+;[1493..1498]:gene-rna:"MMAC1"
+;[1520..1524]:gene-rna:"PTEN"
+;[1539..1549]:malignancy:"cell lines"
+;[1570..1573]:gene-rna:"RAS"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (JJ:[1374..1381] Ectopic) (NN:[1382..1392] expression))
+        (PP (IN:[1393..1395] of)
+          (NP (NN:[1396..1400] PTEN)))
+        (PP-LOC (IN:[1401..1403] in)
+          (NP (JJ:[1405..1412] several)
+            
+            (NML (JJ:[1413..1422] cutaneous) (NN:[1423..1431] melanoma))
+            (NN:[1432..1436] cell) (NNS:[1437..1442] lines))))
+      (VP (VBD:[1443..1453] suppressed)
+        (NP (NN:[1454..1460] colony) (NN:[1461..1470] formation))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1470..1470] *))
+          (ADJP-PRD (JJ:[1471..1483] irrespective)
+            (PP (IN:[1485..1487] of)
+              (NP
+                (NML (NN:[1488..1492] PTEN) (SYM:[1492..1493] /)
+                     (NN:[1493..1498] MMAC1))
+                (NN:[1499..1505] status)))))))
+    (::[1505..1506] ;)
+    (S
+      (ADVP (RB:[1507..1518] furthermore))
+      (,:[1518..1519] ,)
+      (NP-SBJ
+        (NP (NN:[1520..1524] PTEN) (NN:[1525..1535] expression))
+        (PP-LOC (IN:[1536..1538] in)
+          (NP
+            (NP (NN:[1539..1543] cell) (NNS:[1544..1549] lines))
+            (VP (VBG:[1550..1558] carrying)
+              (NP (VBN:[1560..1569] activated) (NN:[1570..1573] RAS))))))
+      (ADVP (RB:[1574..1578] also))
+      (VP (VBD:[1579..1589] suppressed)
+        (NP (NN:[1590..1596] colony) (NN:[1597..1606] formation))))
+    (.:[1606..1607] .)))
+
+;sentence 12 Span:1608..1784
+;The relative reciprocity of  PTEN/MMAC1 abrogation and NRAS activation
+;suggests that the two genetic changes,  in a subset of cutaneous melanomas,
+;are functionally overlapping.
+;[1637..1641]:gene-rna:"PTEN"
+;[1642..1647]:gene-rna:"MMAC1"
+;[1663..1667]:gene-rna:"NRAS"
+;[1734..1753]:malignancy:"cutaneous melanomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1608..1611] The) (JJ:[1612..1620] relative)
+          (NN:[1621..1632] reciprocity))
+      (PP (IN:[1633..1635] of)
+        (NP
+          (NP
+            (NML (NN:[1637..1641] PTEN) (SYM:[1641..1642] /)
+                 (NN:[1642..1647] MMAC1))
+            (NN:[1648..1658] abrogation))
+          (CC:[1659..1662] and)
+          (NP (NN:[1663..1667] NRAS) (NN:[1668..1678] activation)))))
+    (VP (VBZ:[1679..1687] suggests)
+      (SBAR (IN:[1688..1692] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1693..1696] the) (CD:[1697..1700] two)
+                (JJ:[1701..1708] genetic) (NNS:[1709..1716] changes))
+            (,:[1716..1717] ,)
+            (PP (IN:[1719..1721] in)
+              (NP
+                (NP (DT:[1722..1723] a) (NN:[1724..1730] subset))
+                (PP (IN:[1731..1733] of)
+                  (NP (JJ:[1734..1743] cutaneous) (NNS:[1744..1753] melanomas))))))
+          (,:[1753..1754] ,)
+          (VP (VBP:[1755..1758] are)
+            (ADJP-PRD
+              (ADVP (RB:[1759..1771] functionally))
+              (VBG:[1772..1783] overlapping))))))
+    (.:[1783..1784] .)))
+
+;section 13 Span:1788..1833
+;PMID: 10766161 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1788..1792] PMID) (::[1792..1793] :) (CD:[1794..1802] 10766161)
+        (NN:[1803..1804] -LSB-) (NNP:[1804..1810] PubMed) (::[1811..1812] -)
+        (NN:[1813..1820] indexed) (IN:[1821..1824] for)
+        (NNP:[1825..1833] MEDLINE-RSB-)))

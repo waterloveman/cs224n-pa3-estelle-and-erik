@@ -1,0 +1,378 @@
+;PMID: 1581907
+;source_file_474.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)sentence:[e:0..151] = [t:0..151]
+;1)section:[e:155..219] = [t:155..219]
+;2)sentence:[e:223..305] = [t:223..305]
+;3)sentence:[e:309..539] = [t:309..539]
+;4)sentence:[e:541..691] = [t:541..691]
+;5)sentence:[e:692..731] = [t:692..731]
+;6)sentence:[e:732..809] = [t:732..809]
+;7)sentence:[e:810..992] = [t:810..992]
+;8)sentence:[e:993..1068] = [t:993..1068]
+;9)sentence:[e:1069..1303] = [t:1069..1303]
+;10)sentence:[e:1304..1427] = [t:1304..1427]
+;11)section:[e:1431..1475] = [t:1431..1475]
+
+;sentence 0 Span:0..151
+;Cancer Res  1992 May 15;52(10):2903-6     ras gene mutations as a prognostic
+;marker in adenocarcinoma of the human lung  without lymph node metastasis.
+;[42..45]:gene-rna:"ras"
+;[87..119]:malignancy:"adenocarcinoma of the human lung"
+;[129..150]:malignancy:"lymph node metastasis"
+(SENT
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1992)
+        (NNP:[17..20] May) (CD:[21..23] 15) (CD:[23..25] ;5) (CD:[25..26] 2)
+        (NN:[26..27] -LRB-) (NN:[27..29] 10) (NN:[29..30] -RRB-) (::[30..31] :)
+        (CD:[31..34] 290) (JJ:[34..37] 3-6))
+  (NP-HLN
+    (NP (NN:[42..45] ras) (NN:[46..50] gene) (NNS:[51..60] mutations))
+    (PP (IN:[61..63] as)
+      (NP (DT:[64..65] a) (JJ:[66..76] prognostic) (NN:[77..83] marker)))
+    (PP (IN:[84..86] in)
+      (NP
+        
+        (NP (NN:[87..101] adenocarcinoma))
+        (PP (IN:[102..104] of)
+          (NP (DT:[105..108] the) (JJ:[109..114] human) (NN:[115..119] lung)))
+        (PP (IN:[121..128] without)
+          (NP
+            (NML (NN:[129..134] lymph) (NN:[135..139] node))
+            (NN:[140..150] metastasis)))))
+    (.:[150..151] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[0..151]::FRAG:NP:
+
+;section 1 Span:155..219
+;Sugio K, Ishida T, Yokoyama H, Inoue T, Sugimachi K, Sasazuki T.
+(SEC
+  (FRAG (NNP:[155..160] Sugio) (NNP:[161..163] K,) (NNP:[164..170] Ishida)
+        (NNP:[171..172] T) (,:[172..173] ,) (NNP:[174..182] Yokoyama)
+        (NNP:[183..185] H,) (NNP:[186..191] Inoue) (NNP:[192..193] T)
+        (,:[193..194] ,) (NNP:[195..204] Sugimachi) (NNP:[205..207] K,)
+        (NNP:[208..216] Sasazuki) (NNP:[217..219] T.)))
+
+;sentence 2 Span:223..305
+;Department of Surgery II, Faculty of Medicine, Kyushu University, Fukuoka, 
+;Japan.
+(SENT
+  (FRAG (NNP:[223..233] Department) (IN:[234..236] of) (NNP:[237..244] Surgery)
+        (NNP:[245..247] II) (,:[247..248] ,) (NNP:[249..256] Faculty)
+        (IN:[257..259] of) (NNP:[260..268] Medicine) (,:[268..269] ,)
+        (NNP:[270..276] Kyushu) (NNP:[277..287] University) (,:[287..288] ,)
+        (NNP:[289..296] Fukuoka) (,:[296..297] ,) (NNP:[299..304] Japan)
+        (.:[304..305] .)))
+
+;sentence 3 Span:309..539
+;Adenocarcinoma of the lung obtained at surgical resection was examined for 
+;mutation at codons 12, 13, and 61 of the oncogenes K-ras, H-ras, and N-ras, 
+;using polymerase chain reaction and oligonucleotide hybridization
+;techniques.
+;[309..335]:malignancy:"Adenocarcinoma of the lung"
+;[385..393]:variation-event:"mutation"
+;[397..406]:variation-location:"codons 12"
+;[397..403]...[416..418]:variation-location:"codons"..."61"
+;[397..403]...[408..410]:variation-location:"codons"..."13"
+;[436..441]:gene-rna:"K-ras"
+;[443..448]:gene-rna:"H-ras"
+;[454..459]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP (NN:[309..323] Adenocarcinoma))
+        (PP (IN:[324..326] of)
+          (NP (DT:[327..330] the) (NN:[331..335] lung))))
+      (VP (VBN:[336..344] obtained)
+        (NP (-NONE-:[344..344] *))
+        (PP (IN:[345..347] at)
+          (NP (JJ:[348..356] surgical) (NN:[357..366] resection)))))
+    (VP (VBD:[367..370] was)
+      (VP (VBN:[371..379] examined)
+        (NP-3 (-NONE-:[379..379] *))
+        (PP (IN:[380..383] for)
+          (NP (NN:[385..393] mutation)))
+        (PP-LOC (IN:[394..396] at)
+          (NP
+            (NP
+              (NP
+                (NML-2 (NNS:[397..403] codons))
+                (CD:[404..406] 12))
+              (,:[406..407] ,)
+              (NP
+                (NML-2 (-NONE-:[407..407] *P*))
+                (CD:[408..410] 13))
+              (,:[410..411] ,) (CC:[412..415] and)
+              (NP
+                (NML-2 (-NONE-:[415..415] *P*))
+                (CD:[416..418] 61)))
+            (PP (IN:[419..421] of)
+              (NP
+                (NP (DT:[422..425] the) (NNS:[426..435] oncogenes))
+                (NP (NN:[436..441] K-ras) (,:[441..442] ,) (NN:[443..448] H-ras)
+                    (,:[448..449] ,) (CC:[450..453] and) (NN:[454..459] N-ras))))))
+        (,:[459..460] ,)
+        (S-MNR
+          (NP-SBJ (-NONE-:[460..460] *))
+          (VP (VBG:[462..467] using)
+            (NP
+              (NP
+                (NML (NN:[468..478] polymerase) (NN:[479..484] chain)
+                     (NN:[485..493] reaction))
+                (NML-1 (-NONE-:[493..493] *P*)))
+              (CC:[494..497] and)
+              (NP
+                (NML (NN:[498..513] oligonucleotide)
+                     (NN:[514..527] hybridization))
+                (NML-1 (NNS:[528..538] techniques))))))))
+    (.:[538..539] .)))
+
+;sentence 4 Span:541..691
+;The mutation was detected in 18 of the 115 cases (15.7%), and 15 of 18 were
+;at  codon 12, 2 were at codon 13 of K-ras, and 1 was at codon 61 of N-ras.
+;[545..553]:variation-event:"mutation"
+;[621..629]:variation-location:"codon 12"
+;[641..649]:variation-location:"codon 13"
+;[653..658]:gene-rna:"K-ras"
+;[673..681]:variation-location:"codon 61"
+;[685..690]:gene-rna:"N-ras"
+(SENT
+  (S
+    (S
+      (S
+        (NP-SBJ-1 (DT:[541..544] The) (NN:[545..553] mutation))
+        (VP (VBD:[554..557] was)
+          (VP (VBN:[558..566] detected)
+            (NP-1 (-NONE-:[566..566] *))
+            (PP (IN:[567..569] in)
+              (NP
+                (NP (CD:[570..572] 18))
+                (PP (IN:[573..575] of)
+                  (NP (DT:[576..579] the) (CD:[580..583] 115)
+                      (NNS:[584..589] cases)
+                    (PRN (-LRB-:[590..591] -LRB-)
+                      (NP (CD:[591..595] 15.7) (NN:[595..596] %))
+                      (-RRB-:[596..597] -RRB-)))))))))
+      (,:[597..598] ,) (CC:[599..602] and)
+      (S
+        (S
+          (NP-SBJ
+            (NP (CD:[603..605] 15))
+            (PP (IN:[606..608] of)
+              (NP (CD:[609..611] 18))))
+          (VP (VBD:[612..616] were)
+            (PP-LOC-PRD (IN:[617..619] at)
+              (NP (NN:[621..626] codon) (CD:[627..629] 12)))))
+        (,:[629..630] ,)
+        (S
+          (NP-SBJ (CD:[631..632] 2))
+          (VP (VBD:[633..637] were)
+            (PP-LOC-PRD (IN:[638..640] at)
+              (NP
+                (NP (NN:[641..646] codon) (CD:[647..649] 13))
+                (PP (IN:[650..652] of)
+                  (NP (NN:[653..658] K-ras)))))))
+        (,:[658..659] ,) (CC:[660..663] and)
+        (S
+          (NP-SBJ (CD:[664..665] 1))
+          (VP (VBD:[666..669] was)
+            (PP-LOC-PRD (IN:[670..672] at)
+              (NP
+                (NP (NN:[673..678] codon) (CD:[679..681] 61))
+                (PP (IN:[682..684] of)
+                  (NP (NN:[685..690] N-ras)))))))))
+    (.:[690..691] .)))
+
+;sentence 5 Span:692..731
+;G to T  transversions were most common.
+;[692..693]:variation-state-original:"G"
+;[697..698]:variation-state-altered:"T"
+;[700..713]:variation-type:"transversions"
+(SENT
+  (S
+    (NP-SBJ
+      (NML
+        (NML (NN:[692..693] G))
+        (PP (TO:[694..696] to)
+          (NP (NN:[697..698] T))))
+      (NNS:[700..713] transversions))
+    (VP (VBD:[714..718] were)
+      (ADJP-PRD (RBS:[719..723] most) (JJ:[724..730] common)))
+    (.:[730..731] .)))
+
+;sentence 6 Span:732..809
+;The ras gene mutations were more frequent in the  male patients (P =
+;0.0048).
+;[736..739]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[732..735] The)
+      (NML (NN:[736..739] ras) (NN:[740..744] gene))
+      (NNS:[745..754] mutations))
+    (VP (VBD:[755..759] were)
+      (ADJP-PRD (RBR:[760..764] more) (JJ:[765..773] frequent))
+      (PP-LOC (IN:[774..776] in)
+        (NP (DT:[777..780] the) (JJ:[782..786] male) (NNS:[787..795] patients)))
+      (PRN (-LRB-:[796..797] -LRB-)
+        (S
+          (NP-SBJ (NN:[797..798] P))
+          (PP (SYM:[799..800] =)
+            (NP (CD:[801..807] 0.0048))))
+        (-RRB-:[807..808] -RRB-)))
+    (.:[808..809] .)))
+
+;sentence 7 Span:810..992
+;No significant differences were found to be related  to stage of the disease
+;or tumor-nodes-metastases classification between  positive and negative
+;groups of the ras gene mutations.
+;[973..976]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[810..812] No) (JJ:[813..824] significant)
+              (NNS:[825..836] differences))
+    (VP (VBD:[837..841] were)
+      (VP (VBN:[842..847] found)
+        (S
+          (NP-SBJ-2 (-NONE-:[847..847] *))
+          (VP (TO:[848..850] to)
+            (VP (VB:[851..853] be)
+              (VP (JJ:[854..861] related)
+                (NP-2 (-NONE-:[861..861] *))
+                (PP-CLR (TO:[863..865] to)
+                  (NP
+                    (NP
+                      (NP (NN:[866..871] stage))
+                      (PP (IN:[872..874] of)
+                        (NP (DT:[875..878] the) (NN:[879..886] disease))))
+                    (CC:[887..889] or)
+                    (NP
+                      (NML (NN:[890..895] tumor) (HYPH:[895..896] -)
+                           (NNS:[896..901] nodes) (HYPH:[901..902] -)
+                           (NNS:[902..912] metastases))
+                      (NN:[913..927] classification))))
+                (PP (IN:[928..935] between)
+                  (NP
+                    (NP
+                      (NP (JJ:[937..945] positive)
+                        (NML-1 (-NONE-:[945..945] *P*)))
+                      (CC:[946..949] and)
+                      (NP (JJ:[950..958] negative)
+                        (NML-1 (NNS:[959..965] groups))))
+                    (PP (IN:[966..968] of)
+                      (NP (DT:[969..972] the)
+                        (NML (NN:[973..976] ras) (NN:[977..981] gene))
+                        (NNS:[982..991] mutations)))))))))))
+    (.:[991..992] .)))
+
+;sentence 8 Span:993..1068
+;A history of tobacco use  was not always a factor contributing to mutation.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[993..994] A) (NN:[995..1002] history))
+      (PP (IN:[1003..1005] of)
+        (NP (NN:[1006..1013] tobacco) (NN:[1014..1017] use))))
+    (VP (VBD:[1019..1022] was) (RB:[1023..1026] not)
+      (ADVP-TMP (RB:[1027..1033] always))
+      (NP-PRD
+        (NP (DT:[1034..1035] a) (NN:[1036..1042] factor))
+        (VP (VBG:[1043..1055] contributing)
+          (PP-CLR (TO:[1056..1058] to)
+            (NP (NN:[1059..1067] mutation))))))
+    (.:[1067..1068] .)))
+
+;sentence 9 Span:1069..1303
+;Of the completely resected  group without lymph node metastasis, the 5-year
+;survival rate in the  ras-positive group was 53.3%, which was significantly
+;poorer than the 83.6%  survival rate in the ras-negative group (P less than
+;0.05).
+;[1111..1132]:malignancy:"lymph node metastasis"
+;[1167..1170]:gene-rna:"ras"
+;[1265..1268]:gene-rna:"ras"
+(SENT
+  (S
+    (PP (IN:[1069..1071] Of)
+      (NP
+        (NP (DT:[1072..1075] the)
+          (ADJP (RB:[1076..1086] completely) (VBN:[1087..1095] resected))
+          (NN:[1097..1102] group))
+        (PP (IN:[1103..1110] without)
+          (NP
+            (NML (NN:[1111..1116] lymph) (NN:[1117..1121] node))
+            (NN:[1122..1132] metastasis)))))
+    (,:[1132..1133] ,)
+    (NP-SBJ
+      (NP (DT:[1134..1137] the)
+        (NML (CD:[1138..1139] 5) (HYPH:[1139..1140] -) (NN:[1140..1144] year))
+        (NN:[1145..1153] survival) (NN:[1154..1158] rate))
+      (PP (IN:[1159..1161] in)
+        (NP (DT:[1162..1165] the)
+          (ADJP (NN:[1167..1170] ras) (HYPH:[1170..1171] -)
+                (JJ:[1171..1179] positive))
+          (NN:[1180..1185] group))))
+    (VP (VBD:[1186..1189] was)
+      (NP-PRD
+        (NP (CD:[1190..1194] 53.3) (NN:[1194..1195] %))
+        (,:[1195..1196] ,)
+        (SBAR
+          (WHNP-1 (WDT:[1197..1202] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1202..1202] *T*))
+            (VP (VBD:[1203..1206] was)
+              (ADJP-PRD
+                (ADJP (RB:[1207..1220] significantly) (JJR:[1221..1227] poorer))
+                (PP (IN:[1228..1232] than)
+                  (NP
+                    (NP (DT:[1233..1236] the)
+                      (NML (CD:[1237..1241] 83.6) (NN:[1241..1242] %))
+                      (NN:[1244..1252] survival) (NN:[1253..1257] rate))
+                    (PP (IN:[1258..1260] in)
+                      (NP (DT:[1261..1264] the)
+                        (ADJP (NN:[1265..1268] ras) (HYPH:[1268..1269] -)
+                              (JJ:[1269..1277] negative))
+                        (NN:[1278..1283] group)))
+                    (PRN (-LRB-:[1284..1285] -LRB-)
+                      (S
+                        (NP-SBJ (NN:[1285..1286] P))
+                        (ADJP-PRD (JJR:[1287..1291] less)
+                          (PP (IN:[1292..1296] than)
+                            (NP (CD:[1297..1301] 0.05)))))
+                      (-RRB-:[1301..1302] -RRB-))))))))))
+    (.:[1302..1303] .)))
+
+;sentence 10 Span:1304..1427
+;Our findings suggest  that ras gene mutations may be prognostic, especially
+;in the early stage  adenocarcinoma of the lung.
+;[1331..1334]:gene-rna:"ras"
+;[1387..1426]:malignancy:"early stage  adenocarcinoma of the lung"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1304..1307] Our) (NNS:[1308..1316] findings))
+    (VP (VBP:[1317..1324] suggest)
+      (SBAR (IN:[1326..1330] that)
+        (S
+          (NP-SBJ (NN:[1331..1334] ras) (NN:[1335..1339] gene)
+                  (NNS:[1340..1349] mutations))
+          (VP (MD:[1350..1353] may)
+            (VP (VB:[1354..1356] be)
+              (ADJP-PRD (JJ:[1357..1367] prognostic))
+              (,:[1367..1368] ,)
+              (PP
+                (ADVP (RB:[1369..1379] especially))
+                (IN:[1380..1382] in)
+                (NP
+                  (NP (DT:[1383..1386] the)
+                    (ADJP (JJ:[1387..1392] early) (NN:[1393..1398] stage))
+                    (NN:[1400..1414] adenocarcinoma))
+                  (PP (IN:[1415..1417] of)
+                    (NP (DT:[1418..1421] the) (NN:[1422..1426] lung))))))))))
+    (.:[1426..1427] .)))
+
+;section 11 Span:1431..1475
+;PMID: 1581907 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1431..1435] PMID) (::[1435..1436] :) (CD:[1437..1444] 1581907)
+        (NN:[1445..1446] -LSB-) (NNP:[1446..1452] PubMed) (::[1453..1454] -)
+        (NN:[1455..1462] indexed) (IN:[1463..1466] for)
+        (NNP:[1467..1475] MEDLINE-RSB-)))

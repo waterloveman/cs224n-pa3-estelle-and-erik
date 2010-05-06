@@ -1,0 +1,446 @@
+;PMID: 10759189
+;source_file_565.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:51..121] = [t:51..121]
+;2)section:[e:125..157] = [t:125..157]
+;3)section:[e:161..257] = [t:161..257]
+;4)sentence:[e:261..444] = [t:261..444]
+;5)sentence:[e:445..563] = [t:445..563]
+;6)sentence:[e:564..640] = [t:564..640]
+;7)sentence:[e:641..821] = [t:641..821]
+;8)sentence:[e:822..914] = [t:822..914]
+;9)sentence:[e:915..1080] = [t:915..1080]
+;10)sentence:[e:1081..1212] = [t:1081..1212]
+;11)sentence:[e:1213..1266] = [t:1213..1266]
+;12)sentence:[e:1267..1385] = [t:1267..1385]
+;13)sentence:[e:1386..1491] = [t:1386..1491]
+;14)sentence:[e:1492..1606] = [t:1492..1606]
+;15)sentence:[e:1607..1745] = [t:1607..1745]
+;16)sentence:[e:1747..1860] = [t:1747..1860]
+;17)section:[e:1864..1909] = [t:1864..1909]
+
+;section 0 Span:0..46
+;J Neuropathol Exp Neurol  2000 Apr;59(4):333-7
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..13] Neuropathol) (NNP:[14..17] Exp)
+        (NNP:[18..24] Neurol) (CD:[26..30] 2000) (CD:[31..36] Apr;5)
+        (CD:[36..37] 9) (NN:[37..38] -LRB-) (NN:[38..39] 4) (NN:[39..40] -RRB-)
+        (::[40..41] :) (CD:[41..43] 33) (CD:[43..46] 3-7)))
+
+;sentence 1 Span:51..121
+;Nuclear localization and mutation of beta-catenin in medulloblastomas.
+;[76..84]:variation-event:"mutation"
+;[88..100]:gene-generic:"beta-catenin"
+;[104..120]:malignancy:"medulloblastomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[51..58] Nuclear) (NN:[59..71] localization))
+      (CC:[72..75] and)
+      (NP
+        (NP (NN:[76..84] mutation))
+        (PP (IN:[85..87] of)
+          (NP (NN:[88..100] beta-catenin)))))
+    (PP-LOC (IN:[101..103] in)
+      (NP (NNS:[104..120] medulloblastomas)))
+    (.:[120..121] .)))
+
+;section 2 Span:125..157
+;Eberhart CG, Tihan T, Burger PC.
+(SEC
+  (FRAG (NNP:[125..133] Eberhart) (NNP:[134..136] CG) (,:[136..137] ,)
+        (NNP:[138..143] Tihan) (NNP:[144..145] T) (,:[145..146] ,)
+        (NNP:[147..153] Burger) (NNP:[154..156] PC) (.:[156..157] .)))
+
+;section 3 Span:161..257
+;Department of Pathology, Johns Hopkins University School of Medicine,
+;Baltimore,  Maryland, USA.
+(SEC
+  (FRAG (NNP:[161..171] Department) (IN:[172..174] of)
+        (NNP:[175..184] Pathology) (NNP:[184..185] ,) (NNP:[186..191] Johns)
+        (NNP:[192..199] Hopkins) (NNP:[200..210] University)
+        (NNP:[211..217] School) (IN:[218..220] of) (NNP:[221..229] Medicine)
+        (,:[229..230] ,) (NNP:[231..240] Baltimore) (,:[240..241] ,)
+        (NNP:[243..251] Maryland) (,:[251..252] ,) (NNP:[253..256] USA)
+        (.:[256..257] .)))
+
+;sentence 4 Span:261..444
+;The adenomatous polyposis coli (APC) gene, a member of the Wingless/Wnt
+;signal  transduction pathway, has been implicated in the development of
+;medulloblastomas  in Turcot's syndrome.
+;[265..291]:gene-rna:"adenomatous polyposis coli"
+;[293..296]:gene-rna:"APC"
+;[320..328]:gene-generic:"Wingless"
+;[329..332]:gene-generic:"Wnt"
+;[405..421]:malignancy:"medulloblastomas"
+;[426..443]:malignancy:"Turcot's syndrome"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[261..264] The)
+        (NML
+          (NML (JJ:[265..276] adenomatous) (NN:[277..286] polyposis)
+               (NN:[287..291] coli))
+          (NML (-LRB-:[292..293] -LRB-) (NN:[293..296] APC)
+               (-RRB-:[296..297] -RRB-)))
+        (NN:[298..302] gene))
+      (,:[302..303] ,)
+      (NP
+        (NP (DT:[304..305] a) (NN:[306..312] member))
+        (PP (IN:[313..315] of)
+          (NP (DT:[316..319] the)
+            (NML (JJ:[320..328] Wingless) (SYM:[328..329] /) (NN:[329..332] Wnt))
+            (NN:[333..339] signal) (NN:[341..353] transduction)
+             (NN:[354..361] pathway)))))
+    (,:[361..362] ,)
+    (VP (VBZ:[363..366] has)
+      (VP (VBN:[367..371] been)
+        (VP (VBN:[372..382] implicated)
+          (NP-1 (-NONE-:[382..382] *))
+          (PP (IN:[383..385] in)
+            (NP
+              (NP (DT:[386..389] the) (NN:[390..401] development))
+              (PP (IN:[402..404] of)
+                (NP (NNS:[405..421] medulloblastomas)))
+              (PP (IN:[423..425] in)
+                (NP
+                  (NP (NNP:[426..432] Turcot) (POS:[432..434] 's))
+                  (NN:[435..443] syndrome))))))))
+    (.:[443..444] .)))
+
+;sentence 5 Span:445..563
+;beta-catenin also functions in this highly conserved  signaling pathway and
+;is instrumental in growth and development.
+;[445..457]:gene-generic:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (NN:[445..457] beta-catenin))
+    (ADVP (RB:[458..462] also))
+    (VP
+      (VP (VBZ:[463..472] functions)
+        (PP (IN:[473..475] in)
+          (NP (DT:[476..480] this)
+            (ADJP (RB:[481..487] highly) (JJ:[488..497] conserved))
+            (NN:[499..508] signaling) (NN:[509..516] pathway))))
+      (CC:[517..520] and)
+      (VP (VBZ:[521..523] is)
+        (NP-PRD
+          (NP (JJ:[524..536] instrumental))
+          (PP (IN:[537..539] in)
+            (NP (NN:[540..546] growth) (CC:[547..550] and)
+                (NN:[551..562] development))))))
+    (.:[562..563] .)))
+
+;sentence 6 Span:564..640
+;Mutations in  either APC or beta-catenin can stabilize beta-catenin protein.
+;[585..588]:gene-rna:"APC"
+;[592..604]:gene-rna:"beta-catenin"
+;[619..631]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[564..573] Mutations))
+      (PP-LOC (IN:[574..576] in)
+        (NP (CC:[578..584] either) (NN:[585..588] APC) (CC:[589..591] or)
+            (NN:[592..604] beta-catenin))))
+    (VP (MD:[605..608] can)
+      (VP (VB:[609..618] stabilize)
+        (NP (NN:[619..631] beta-catenin) (NN:[632..639] protein))))
+    (.:[639..640] .)))
+
+;sentence 7 Span:641..821
+;Stabilized  beta-catenin complexes with Tcf/Lef transcription factors and
+;moves from the  cytoplasm into the nucleus where it regulates the
+;transcription of c-Myc and  other genes.
+;[653..665]:gene-protein:"beta-catenin"
+;[681..684]:gene-protein:"Tcf"
+;[685..688]:gene-protein:"Lef"
+;[798..803]:gene-rna:"c-Myc"
+(SENT
+  (S
+    (NP-SBJ (JJ:[641..651] Stabilized) (NN:[653..665] beta-catenin))
+    (VP
+      (VP (VBZ:[666..675] complexes)
+        (PP (IN:[676..680] with)
+          (NP
+            (NML (NN:[681..684] Tcf) (SYM:[684..685] /) (NN:[685..688] Lef))
+            (NN:[689..702] transcription) (NNS:[703..710] factors))))
+      (CC:[711..714] and)
+      (VP (VBZ:[715..720] moves)
+        (PP (IN:[721..725] from)
+          (NP (DT:[726..729] the) (NN:[731..740] cytoplasm)))
+        (PP (IN:[741..745] into)
+          (NP
+            (NP (DT:[746..749] the) (NN:[750..757] nucleus))
+            (SBAR
+              (WHADVP-1 (WRB:[758..763] where))
+              (S
+                (NP-SBJ (PRP:[764..766] it))
+                (VP (VBZ:[767..776] regulates)
+                  (NP
+                    (NP (DT:[777..780] the) (NN:[781..794] transcription))
+                    (PP (IN:[795..797] of)
+                      (NP
+                        (NP (NN:[798..803] c-Myc))
+                        (CC:[804..807] and)
+                        (NP (JJ:[809..814] other) (NNS:[815..820] genes)))))
+                  (ADVP-LOC-1 (-NONE-:[820..820] *T*)))))))))
+    (.:[820..821] .)))
+
+;sentence 8 Span:822..914
+;Nuclear localization of beta-catenin therefore implies activation  of the
+;signaling pathway.
+;[846..858]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[822..829] Nuclear) (NN:[830..842] localization))
+      (PP (IN:[843..845] of)
+        (NP (NN:[846..858] beta-catenin))))
+    (ADVP (RB:[859..868] therefore))
+    (VP (VBZ:[869..876] implies)
+      (NP
+        (NP (NN:[877..887] activation))
+        (PP (IN:[889..891] of)
+          (NP (DT:[892..895] the) (NN:[896..905] signaling)
+              (NN:[906..913] pathway)))))
+    (.:[913..914] .)))
+
+;sentence 9 Span:915..1080
+;We have analyzed the subcellular localization of  beta-catenin in 51 sporadic
+;medulloblastomas and in 1 medulloblastoma arising in  a patient with Turcot's
+;syndrome.
+;[965..977]:gene-protein:"beta-catenin"
+;[984..1009]:malignancy:"sporadic medulloblastomas"
+;[1019..1034]:malignancy:"medulloblastoma"
+;[1062..1079]:malignancy:"Turcot's syndrome"
+(SENT
+  (S
+    (NP-SBJ (PRP:[915..917] We))
+    (VP (VBP:[918..922] have)
+      (VP (VBN:[923..931] analyzed)
+        (NP
+          (NP (DT:[932..935] the) (JJ:[936..947] subcellular)
+              (NN:[948..960] localization))
+          (PP (IN:[961..963] of)
+            (NP (NN:[965..977] beta-catenin))))
+        (PP-LOC
+          (PP (IN:[978..980] in)
+            (NP (CD:[981..983] 51)
+               (JJ:[984..992] sporadic) (NNS:[993..1009] medulloblastomas)))
+          (CC:[1010..1013] and)
+          (PP (IN:[1014..1016] in)
+            (NP
+              (NP (CD:[1017..1018] 1) (NN:[1019..1034] medulloblastoma))
+              (VP (VBG:[1035..1042] arising)
+                (PP-LOC (IN:[1043..1045] in)
+                  (NP
+                    (NP (DT:[1047..1048] a) (NN:[1049..1056] patient))
+                    (PP (IN:[1057..1061] with)
+                      (NP
+                        (NP (NNP:[1062..1068] Turcot) (POS:[1068..1070] 's))
+                        (NN:[1071..1079] syndrome)))))))))))
+    (.:[1079..1080] .)))
+
+;sentence 10 Span:1081..1212
+;Nuclear beta-catenin staining was present in 9  of the sporadic tumors (18%)
+;and in the 1 medulloblastoma from a Turcot's  patient.
+;[1089..1101]:gene-protein:"beta-catenin"
+;[1136..1151]:malignancy:"sporadic tumors"
+;[1171..1186]:malignancy:"medulloblastoma"
+;[1194..1202]:malignancy:"Turcot's"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1081..1088] Nuclear) (NN:[1089..1101] beta-catenin)
+            (NN:[1102..1110] staining))
+    (VP (VBD:[1111..1114] was)
+      (ADJP-PRD (JJ:[1115..1122] present))
+      (PP-LOC
+        (PP (IN:[1123..1125] in)
+          (NP
+            (NP (CD:[1126..1127] 9))
+            (PP (IN:[1129..1131] of)
+              (NP (DT:[1132..1135] the)
+                 (JJ:[1136..1144] sporadic) (NNS:[1145..1151] tumors)))
+            (PRN (-LRB-:[1152..1153] -LRB-)
+              (NP (CD:[1153..1155] 18) (NN:[1155..1156] %))
+              (-RRB-:[1156..1157] -RRB-))))
+        (CC:[1158..1161] and)
+        (PP (IN:[1162..1164] in)
+          (NP
+            (NP (DT:[1165..1168] the) (CD:[1169..1170] 1)
+                (NN:[1171..1186] medulloblastoma))
+            (PP (IN:[1187..1191] from)
+              (NP (DT:[1192..1193] a)
+                (NML (NNP:[1194..1200] Turcot) (POS:[1200..1202] 's))
+                (NN:[1204..1211] patient)))))))
+    (.:[1211..1212] .)))
+
+;sentence 11 Span:1213..1266
+;The remaining 41 cases did not show nuclear staining.
+(SENT
+  (S
+    (NP-SBJ (DT:[1213..1216] The) (VBG:[1217..1226] remaining)
+            (CD:[1227..1229] 41) (NNS:[1230..1235] cases))
+    (VP (VBD:[1236..1239] did) (RB:[1240..1243] not)
+      (VP (VB:[1244..1248] show)
+        (NP (JJ:[1249..1256] nuclear) (NN:[1257..1265] staining))))
+    (.:[1265..1266] .)))
+
+;sentence 12 Span:1267..1385
+;This confirms  earlier observations that Wingless/Wnt signaling is involved
+;in a subset of  sporadic medulloblastomas.
+;[1308..1316]:gene-generic:"Wingless"
+;[1317..1320]:gene-generic:"Wnt"
+;[1359..1384]:malignancy:"sporadic medulloblastomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[1267..1271] This))
+    (VP (VBZ:[1272..1280] confirms)
+      (NP (JJR:[1282..1289] earlier) (NNS:[1290..1302] observations)
+        (SBAR (IN:[1303..1307] that)
+          (S
+            (NP-SBJ-1
+              (NML (JJ:[1308..1316] Wingless) (SYM:[1316..1317] /)
+                   (NN:[1317..1320] Wnt))
+              (NN:[1321..1330] signaling))
+            (VP (VBZ:[1331..1333] is)
+              (VP (VBN:[1334..1342] involved)
+                (NP-1 (-NONE-:[1342..1342] *))
+                (PP-CLR (IN:[1343..1345] in)
+                  (NP
+                    (NP (DT:[1346..1347] a) (NN:[1348..1354] subset))
+                    (PP (IN:[1355..1357] of)
+                      (NP (JJ:[1359..1367] sporadic)
+                          (NNS:[1368..1384] medulloblastomas)))))))))))
+    (.:[1384..1385] .)))
+
+;sentence 13 Span:1386..1491
+;We also examined 48 glial and meningeal CNS tumors,  all of which were
+;negative for nuclear beta-catenin.
+;[1406..1411]:malignancy:"glial"
+;[1416..1436]:malignancy:"meningeal CNS tumors"
+;[1478..1490]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1386..1388] We))
+    (ADVP (RB:[1389..1393] also))
+    (VP (VBD:[1394..1402] examined)
+      (NP
+        (NP (CD:[1403..1405] 48)
+          (NML
+            (NML
+              (NML (JJ:[1406..1411] glial)
+                (NML-3 (-NONE-:[1411..1411] *P*)))
+              (NML-2 (-NONE-:[1411..1411] *P*)))
+            (CC:[1412..1415] and)
+            (NML
+              (NML-3 (JJ:[1416..1425] meningeal)
+                (NML (NN:[1426..1429] CNS)))
+              (NML-2 (NNS:[1430..1436] tumors)))))
+        (,:[1436..1437] ,)
+        (SBAR
+          (WHNP-1
+            (NP (DT:[1439..1442] all))
+            (WHPP (IN:[1443..1445] of)
+              (WHNP (WDT:[1446..1451] which))))
+          (S
+            (NP-SBJ-1 (-NONE-:[1451..1451] *T*))
+            (VP (VBD:[1452..1456] were)
+              (ADJP-PRD (JJ:[1457..1465] negative)
+                (PP (IN:[1466..1469] for)
+                  (NP (JJ:[1470..1477] nuclear) (NN:[1478..1490] beta-catenin)))))))))
+    (.:[1490..1491] .)))
+
+;sentence 14 Span:1492..1606
+;Exon 3 of beta-catenin was  sequenced in 6 of the 9 sporadic medulloblastomas
+;with nuclear beta-catenin  staining.
+;[1492..1498]:variation-location:"Exon 3"
+;[1502..1514]:gene-rna:"beta-catenin"
+;[1544..1569]:malignancy:"sporadic medulloblastomas"
+;[1583..1595]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1492..1496] Exon) (CD:[1497..1498] 3))
+      (PP (IN:[1499..1501] of)
+        (NP (NN:[1502..1514] beta-catenin))))
+    (VP (VBD:[1515..1518] was)
+      (VP (VBN:[1520..1529] sequenced)
+        (NP-1 (-NONE-:[1529..1529] *))
+        (PP (IN:[1530..1532] in)
+          (NP
+            (NP (CD:[1533..1534] 6))
+            (PP (IN:[1535..1537] of)
+              (NP
+                (NP (DT:[1538..1541] the) (CD:[1542..1543] 9)
+                   (JJ:[1544..1552] sporadic)
+                   (NNS:[1553..1569] medulloblastomas))
+                (PP (IN:[1570..1574] with)
+                  (NP (JJ:[1575..1582] nuclear) (NN:[1583..1595] beta-catenin)
+                      (NN:[1597..1605] staining)))))))))
+    (.:[1605..1606] .)))
+
+;sentence 15 Span:1607..1745
+;Five of the 6 tumors sequenced had mutations affecting highly  conserved
+;beta-catenin phosphorylation sites involved in protein stability.
+;[1621..1627]:malignancy:"tumors"
+;[1642..1651]:variation-event:"mutations"
+;[1680..1692]:gene-generic:"beta-catenin"
+;[1727..1734]:gene-protein:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1607..1611] Five))
+      (PP (IN:[1612..1614] of)
+        (NP
+          (NP (DT:[1615..1618] the) (CD:[1619..1620] 6)
+              (NNS:[1621..1627] tumors))
+          (VP (VBN:[1628..1637] sequenced)
+            (NP (-NONE-:[1637..1637] *))))))
+    (VP (VBD:[1638..1641] had)
+      (NP
+        (NP (NNS:[1642..1651] mutations))
+        (VP (VBG:[1652..1661] affecting)
+          (NP
+            (NP
+              (ADJP (RB:[1662..1668] highly) (JJ:[1670..1679] conserved))
+              (NN:[1680..1692] beta-catenin) (NN:[1693..1708] phosphorylation)
+               (NNS:[1709..1714] sites))
+            (VP (VBN:[1715..1723] involved)
+              (NP (-NONE-:[1723..1723] *))
+              (PP-CLR (IN:[1724..1726] in)
+                (NP (NN:[1727..1734] protein) (NN:[1735..1744] stability))))))))
+    (.:[1744..1745] .)))
+
+;sentence 16 Span:1747..1860
+;These data suggest a simple immunohistochemical method to screen for 
+;beta-catenin mutations in medulloblastomas.
+;[1817..1829]:gene-rna:"beta-catenin"
+;[1843..1859]:malignancy:"medulloblastomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[1747..1752] These) (NNS:[1753..1757] data))
+    (VP (VBP:[1758..1765] suggest)
+      (NP (DT:[1766..1767] a) (JJ:[1768..1774] simple)
+          (JJ:[1775..1794] immunohistochemical) (NN:[1795..1801] method))
+      (S-PRP
+        (NP-SBJ (-NONE-:[1801..1801] *))
+        (VP (TO:[1802..1804] to)
+          (VP (VB:[1805..1811] screen)
+            (PP (IN:[1812..1815] for)
+              (NP (NN:[1817..1829] beta-catenin) (NNS:[1830..1839] mutations)))
+            (PP-LOC (IN:[1840..1842] in)
+              (NP (NNS:[1843..1859] medulloblastomas)))))))
+    (.:[1859..1860] .)))
+
+;section 17 Span:1864..1909
+;PMID: 10759189 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1864..1868] PMID) (::[1868..1869] :) (CD:[1870..1878] 10759189)
+        (NN:[1879..1880] -LSB-) (NNP:[1880..1886] PubMed) (::[1887..1888] -)
+        (NN:[1889..1896] indexed) (IN:[1897..1900] for)
+        (NNP:[1901..1909] MEDLINE-RSB-)))

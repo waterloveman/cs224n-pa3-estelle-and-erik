@@ -1,0 +1,418 @@
+;PMID: 10199577
+;source_file_1914.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..145] = [t:41..145]
+;2)section:[e:149..178] = [t:149..178]
+;3)section:[e:182..293] = [t:182..293]
+;4)sentence:[e:297..472] = [t:297..472]
+;5)sentence:[e:473..771] = [t:473..771]
+;6)sentence:[e:772..926] = [t:772..926]
+;7)sentence:[e:927..1076] = [t:927..1076]
+;8)sentence:[e:1077..1335] = [t:1077..1335]
+;9)sentence:[e:1336..1411] = [t:1336..1411]
+;10)sentence:[e:1412..1476] = [t:1412..1476]
+;11)sentence:[e:1477..1573] = [t:1477..1573]
+;12)sentence:[e:1574..1677] = [t:1574..1677]
+;13)section:[e:1681..1726] = [t:1681..1726]
+
+;section 0 Span:0..35
+;Toxicology. 1999 Jan 1;132(1):9-18.
+(SEC
+  (FRAG (NNP:[0..10] Toxicology) (.:[10..11] .) (CD:[12..16] 1999)
+        (CC:[17..20] Jan) (CD:[21..26] 1;132) (-LRB-:[26..27] -LRB-)
+        (CD:[27..28] 1) (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..32] 9-)
+        (CD:[32..34] 18) (.:[34..35] .)))
+
+;sentence 1 Span:41..145
+;Trichloroethylene inhibits aldehyde dehydrogenase only for aliphatic
+;aldehydes  of short chains in rats.
+;[41..58]:substance:"Trichloroethylene"
+;[68..90]:substance:"aldehyde dehydrogenase"
+;[100..119]:substance:"aliphatic aldehydes"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[41..58] Trichloroethylene))
+    (VP (VBZ:[59..67] inhibits)
+      (NP (NN:[68..76] aldehyde) (NN:[77..90] dehydrogenase))
+      (PP (RB:[91..95] only) (IN:[96..99] for)
+        (NP
+          (NP (JJ:[100..109] aliphatic) (NNS:[110..119] aldehydes))
+          (PP (IN:[121..123] of)
+            (NP (JJ:[124..129] short) (NNS:[130..136] chains)))))
+      (PP-LOC (IN:[137..139] in)
+        (NP (NNS:[140..144] rats))))
+    (.:[144..145] .)))
+
+;section 2 Span:149..178
+;Wang RS, Nakajima T, Honma T.
+(SEC
+  (FRAG (NNP:[149..153] Wang) (NNP:[154..156] RS) (,:[156..157] ,)
+        (NNP:[158..166] Nakajima) (NNP:[167..168] T) (,:[168..169] ,)
+        (NNP:[170..175] Honma) (NNP:[176..178] T.)))
+
+;section 3 Span:182..293
+;Division of Health Effects Research, National Institute of Industrial Health,
+; Kawasaki, Japan. wang@niih.go.jp
+(SEC
+  (FRAG (NNP:[182..190] Division) (IN:[191..193] of) (NNP:[194..200] Health)
+        (NNS:[201..208] Effects) (NNP:[209..217] Research) (,:[217..218] ,)
+        (NNP:[219..227] National) (NNP:[228..237] Institute) (IN:[238..240] of)
+        (NNP:[241..251] Industrial) (NNP:[252..258] Health) (,:[258..259] ,)
+        (NNP:[261..269] Kawasaki) (,:[269..270] ,) (NNP:[271..276] Japan)
+        (.:[276..277] .) (``:[278..290] wang@niih.go) (NN:[290..293] .jp)))
+
+;sentence 4 Span:297..472
+;The effects of trichloroethylene (TCE) administration on aldehyde
+;dehydrogenase  (ALDH) and cytochrome P450 isozymes were studied in rats and
+;compared with those  of methanol.
+;[312..329]:substance:"trichloroethylene"
+;[331..334]:substance:"TCE"
+;[354..376]:substance:"aldehyde dehydrogenase"
+;[379..383]:substance:"ALDH"
+;[389..413]:cyp450:"cytochrome P450 isozymes"
+;[463..471]:substance:"methanol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[297..300] The) (NNS:[301..308] effects))
+      (PP (IN:[309..311] of)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[312..329] trichloroethylene))
+              (NML (-LRB-:[330..331] -LRB-) (NN:[331..334] TCE)
+                   (-RRB-:[334..335] -RRB-)))
+            (NN:[336..350] administration))
+          (PP (IN:[351..353] on)
+            (NP
+              (NP
+                (NP (NN:[354..362] aldehyde) (NN:[363..376] dehydrogenase))
+                (NP (-LRB-:[378..379] -LRB-) (NN:[379..383] ALDH)
+                    (-RRB-:[383..384] -RRB-)))
+              (CC:[385..388] and)
+              (NP
+                (NML (NN:[389..399] cytochrome) (NN:[400..404] P450))
+                (NNS:[405..413] isozymes)))))))
+    (VP (VBD:[414..418] were)
+      (VP
+        (VP (VBN:[419..426] studied)
+          (NP-1 (-NONE-:[426..426] *))
+          (PP-LOC (IN:[427..429] in)
+            (NP-SBJ (NNS:[430..434] rats))))
+        (CC:[435..438] and)
+        (VP (VBN:[439..447] compared)
+          (NP-1 (-NONE-:[447..447] *))
+          (-NONE-:[447..447] *P*)
+          (PP-CLR (IN:[448..452] with)
+            (NP
+              (NP (DT:[453..458] those))
+              (PP (IN:[460..462] of)
+                (NP (NN:[463..471] methanol))))))))
+    (.:[471..472] .)))
+
+;sentence 5 Span:473..771
+;Intragastric administration of TCE to rats at 0.05 or 0.2 ml/kg for  1 week
+;significantly inhibited ALDH activity for aliphatic aldehydes of short 
+;chains in the mitochondrial and cytosolic fractions of rat liver,
+;respectively,  but had no effect on the activity for long chain aliphatic
+;aldehydes.
+;[504..507]:substance:"TCE"
+;[519..523]:quantitative-value:"0.05"
+;[527..530]:quantitative-value:"0.2"
+;[531..536]:quantitative-units:"ml/kg"
+;[542..543]:quantitative-value:"1"
+;[544..548]:quantitative-units:"week"
+;[573..577]:substance:"ALDH"
+;[591..610]:substance:"aliphatic aldehydes"
+;[740..770]:substance:"long chain aliphatic aldehydes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[473..485] Intragastric) (NN:[486..500] administration))
+      (PP (IN:[501..503] of)
+        (NP (NN:[504..507] TCE)))
+      (PP (TO:[508..510] to)
+        (NP (NNS:[511..515] rats)))
+      (PP (IN:[516..518] at)
+        (NP
+          (NP
+            (NP (CD:[519..523] 0.05)
+              (NML-2 (-NONE-:[523..523] *P*)))
+            (PP-3 (-NONE-:[523..523] *P*)))
+          (CC:[524..526] or)
+          (NP
+            (NP (CD:[527..530] 0.2)
+              (NML-2 (NN:[531..533] ml)))
+            (PP-3 (SYM:[533..534] /)
+              (NP (NN:[534..536] kg))))))
+      (PP-TMP (IN:[537..540] for)
+        (NP (CD:[542..543] 1) (NN:[544..548] week))))
+    (VP
+      (VP
+        (ADVP (RB:[549..562] significantly))
+        (VBD:[563..572] inhibited)
+        (NP (NN:[573..577] ALDH) (NN:[578..586] activity))
+        (PP (IN:[587..590] for)
+          (NP
+            (NP (JJ:[591..600] aliphatic) (NNS:[601..610] aldehydes))
+            (PP (IN:[611..613] of)
+              (NP (JJ:[614..619] short) (NNS:[621..627] chains)))))
+        (PP (IN:[628..630] in)
+          (NP
+            (NP (DT:[631..634] the)
+              (NML
+                (NML (JJ:[635..648] mitochondrial)
+                  (NML-1 (-NONE-:[648..648] *P*)))
+                (CC:[649..652] and)
+                (NML (JJ:[653..662] cytosolic)
+                  (NML-1 (NNS:[663..672] fractions)))))
+            (PP (IN:[673..675] of)
+              (NP (NN:[676..679] rat) (NN:[680..685] liver)))
+            (,:[685..686] ,)
+            (ADVP (RB:[687..699] respectively)))))
+      (,:[699..700] ,) (CC:[702..705] but)
+      (VP (VBD:[706..709] had)
+        (NP
+          (NP (DT:[710..712] no) (NN:[713..719] effect))
+          (PP (IN:[720..722] on)
+            (NP (DT:[723..726] the) (NN:[727..735] activity)))
+          (PP (IN:[736..739] for)
+            (NP
+              (NML (JJ:[740..744] long) (NN:[745..750] chain))
+              (JJ:[751..760] aliphatic) (NNS:[761..770] aldehydes))))))
+    (.:[770..771] .)))
+
+;sentence 6 Span:772..926
+;ALDH  activity catalyzing the metabolism of some aromatic aldehydes was even
+;induced  by TCE. Microsomal ALDH activity was not decreased by TCE
+;treatment.
+;[772..776]:substance:"ALDH"
+;[821..839]:substance:"aromatic aldehydes"
+;[861..864]:substance:"TCE"
+;[877..881]:substance:"ALDH"
+;[912..915]:substance:"TCE"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[772..776] ALDH) (NN:[778..786] activity))
+      (VP (VBG:[787..797] catalyzing)
+        (NP
+          (NP (DT:[798..801] the) (NN:[802..812] metabolism))
+          (PP (IN:[813..815] of)
+            (NP (DT:[816..820] some)
+               (JJ:[821..829] aromatic) (NNS:[830..839] aldehydes))))))
+    (VP (VBD:[840..843] was)
+      (ADVP (RB:[844..848] even))
+      (VP (VBN:[849..856] induced)
+        (NP-2 (-NONE-:[856..856] *))
+        (PP (IN:[858..860] by)
+          (NP-LGS (NN:[861..864] TCE)))))
+    (.:[864..865] .))
+  (S
+    (NP-SBJ-1 (JJ:[866..876] Microsomal) (NN:[877..881] ALDH)
+              (NN:[882..890] activity))
+    (VP (VBD:[891..894] was) (RB:[895..898] not)
+      (VP (VBN:[899..908] decreased)
+        (NP-1 (-NONE-:[908..908] *))
+        (PP (IN:[909..911] by)
+          (NP-LGS (NN:[912..915] TCE) (NN:[916..925] treatment)))))
+    (.:[925..926] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[772..926]::S:S:
+
+;sentence 7 Span:927..1076
+;A kinetic  study showed that the low-Km isozyme of ALDH for propionaldehyde
+;in  mitochondrial and cytosolic fractions was inhibited by TCE treatment.
+;[964..966]:quantitative-name:"Km"
+;[967..974]:substance:"isozyme"
+;[978..982]:substance:"ALDH"
+;[987..1002]:substance:"propionaldehyde"
+;[1062..1065]:substance:"TCE"
+(SENT
+  (S
+    (NP-SBJ (DT:[927..928] A) (JJ:[929..936] kinetic) (NN:[938..943] study))
+    (VP (VBD:[944..950] showed)
+      (SBAR (IN:[951..955] that)
+        (S
+          (NP-SBJ-2
+            (NP (DT:[956..959] the)
+              (NML (JJ:[960..963] low) (HYPH:[963..964] -) (NN:[964..966] Km))
+              (NN:[967..974] isozyme))
+            (PP (IN:[975..977] of)
+              (NP (NN:[978..982] ALDH)))
+            (PP (IN:[983..986] for)
+              (NP (NN:[987..1002] propionaldehyde)))
+            (PP-LOC (IN:[1003..1005] in)
+              (NP
+                (NP (JJ:[1007..1020] mitochondrial)
+                  (NML-1 (-NONE-:[1020..1020] *P*)))
+                (CC:[1021..1024] and)
+                (NP (JJ:[1025..1034] cytosolic)
+                  (NML-1 (NNS:[1035..1044] fractions))))))
+          (VP (VBD:[1045..1048] was)
+            (VP (VBN:[1049..1058] inhibited)
+              (NP-2 (-NONE-:[1058..1058] *))
+              (PP (IN:[1059..1061] by)
+                (NP-LGS (NN:[1062..1065] TCE) (NN:[1066..1075] treatment))))))))
+    (.:[1075..1076] .)))
+
+;sentence 8 Span:1077..1335
+;Addition  of TCE, trichloroethanol or trichloroacetic acid to the in vitro
+;assay system  did not affect the activity for acetaldehyde, but chloral
+;hydrate at 0.02 mM  decreased the activity by 42 and 35% in cytosol and the
+;700 x g supernatant,  respectively.
+;[1090..1094]:substance:"TCE,"
+;[1095..1111]:substance:"trichloroethanol"
+;[1115..1135]:substance:"trichloroacetic acid"
+;[1198..1210]:substance:"acetaldehyde"
+;[1216..1231]:substance:"chloral hydrate"
+;[1235..1239]:quantitative-value:"0.02"
+;[1240..1242]:quantitative-units:"mM"
+;[1270..1272]...[1279..1280]:quantitative-value:"42"..."%"
+;[1277..1280]:quantitative-value:"35%"
+;[1300..1305]:quantitative-value:"700 x"
+;[1306..1307]:quantitative-units:"g"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[1077..1085] Addition))
+        (PP (IN:[1087..1089] of)
+          (NP
+            
+            (NP (NN:[1090..1093] TCE))
+            (,:[1093..1094] ,)
+            (NP (NN:[1095..1111] trichloroethanol))
+            (CC:[1112..1114] or)
+            (NP (JJ:[1115..1130] trichloroacetic) (NN:[1131..1135] acid))))
+        (PP (TO:[1136..1138] to)
+          (NP (DT:[1139..1142] the)
+            (ADJP (FW:[1143..1145] in) (FW:[1146..1151] vitro))
+            (NN:[1152..1157] assay) (NN:[1158..1164] system))))
+      (VP (VBD:[1166..1169] did) (RB:[1170..1173] not)
+        (VP (VB:[1174..1180] affect)
+          (NP (DT:[1181..1184] the) (NN:[1185..1193] activity))
+          (PP (IN:[1194..1197] for)
+            (NP (NN:[1198..1210] acetaldehyde))))))
+    (,:[1210..1211] ,) (CC:[1212..1215] but)
+    (S
+      (NP-SBJ
+        (NP (JJ:[1216..1223] chloral) (NN:[1224..1231] hydrate))
+        (PP (IN:[1232..1234] at)
+          (NP (CD:[1235..1239] 0.02) (NN:[1240..1242] mM))))
+      (VP (VBD:[1244..1253] decreased)
+        (NP (DT:[1254..1257] the) (NN:[1258..1266] activity))
+        (PP (IN:[1267..1269] by)
+          (NP-EXT
+            (NP (CD:[1270..1272] 42)
+              (NML-1 (-NONE-:[1272..1272] *P*)))
+            (CC:[1273..1276] and)
+            (NP (CD:[1277..1279] 35)
+              (NML-1 (NN:[1279..1280] %)))))
+        (PP-LOC (IN:[1281..1283] in)
+          (NP
+            (NP (NN:[1284..1291] cytosol))
+            (CC:[1292..1295] and)
+            (NP (DT:[1296..1299] the)
+              (NML
+                 (CD:[1300..1303] 700) (SYM:[1304..1305] x)
+                (NN:[1306..1307] g))
+              (NN:[1308..1319] supernatant))))
+        (,:[1319..1320] ,)
+        (ADVP (RB:[1322..1334] respectively))))
+    (.:[1334..1335] .)))
+
+;sentence 9 Span:1336..1411
+;Methanol treatment, on the other hand, had no effect on any ALDH  activity.
+;[1336..1344]:substance:"Methanol"
+;[1396..1400]:substance:"ALDH"
+(SENT
+  (S
+    (NP-SBJ (NN:[1336..1344] Methanol) (NN:[1345..1354] treatment))
+    (,:[1354..1355] ,)
+    (PP (IN:[1356..1358] on)
+      (NP (DT:[1359..1362] the) (JJ:[1363..1368] other) (NN:[1369..1373] hand)))
+    (VP (,:[1373..1374] ,) (VBD:[1375..1378] had)
+      (NP (DT:[1379..1381] no) (NN:[1382..1388] effect))
+      (PP (IN:[1389..1391] on)
+        (NP (DT:[1392..1395] any) (NN:[1396..1400] ALDH)
+            (NN:[1402..1410] activity))))
+    (.:[1410..1411] .)))
+
+;sentence 10 Span:1412..1476
+;Both TCE and methanol significantly induced CYP2E1 in rat liver.
+;[1417..1420]:substance:"TCE"
+;[1425..1433]:substance:"methanol"
+;[1456..1462]:cyp450:"CYP2E1"
+(SENT
+  (S
+    (NP-SBJ (CC:[1412..1416] Both)
+      (NML (NN:[1417..1420] TCE) (CC:[1421..1424] and)
+           (NN:[1425..1433] methanol)))
+    (ADVP (RB:[1434..1447] significantly))
+    (VP (VBD:[1448..1455] induced)
+      (NP (NN:[1456..1462] CYP2E1))
+      (PP-LOC (IN:[1463..1465] in)
+        (NP (NN:[1466..1469] rat) (NN:[1470..1475] liver))))
+    (.:[1475..1476] .)))
+
+;sentence 11 Span:1477..1573
+;The  combined effects of TCE on ALDH and cytochrome P450 may account for the 
+;degreasers' flush.
+;[1502..1505]:substance:"TCE"
+;[1509..1513]:substance:"ALDH"
+;[1518..1533]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1477..1480] The) (VBN:[1482..1490] combined)
+          (NNS:[1491..1498] effects))
+      (PP (IN:[1499..1501] of)
+        (NP (NN:[1502..1505] TCE)))
+      (PP (IN:[1506..1508] on)
+        (NP
+          (NP (NN:[1509..1513] ALDH))
+          (CC:[1514..1517] and)
+          (NP (NN:[1518..1528] cytochrome) (NN:[1529..1533] P450)))))
+    (VP (MD:[1534..1537] may)
+      (VP (VB:[1538..1545] account)
+        (PP-CLR (IN:[1546..1549] for)
+          (NP
+            (NP (DT:[1550..1553] the) (NNS:[1555..1565] degreasers)
+                (POS:[1565..1566] '))
+            (NN:[1567..1572] flush)))))
+    (.:[1572..1573] .)))
+
+;sentence 12 Span:1574..1677
+;Exposure to TCE and methanol may result in a change in the  metabolism and
+;toxicity of other chemicals.
+;[1586..1589]:substance:"TCE"
+;[1594..1602]:substance:"methanol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1574..1582] Exposure))
+      (PP (TO:[1583..1585] to)
+        (NP (NN:[1586..1589] TCE) (CC:[1590..1593] and)
+            (NN:[1594..1602] methanol))))
+    (VP (MD:[1603..1606] may)
+      (VP (VB:[1607..1613] result)
+        (PP-CLR (IN:[1614..1616] in)
+          (NP (DT:[1617..1618] a) (NN:[1619..1625] change)))
+        (PP (IN:[1626..1628] in)
+          (NP
+            (NP (DT:[1629..1632] the) (NN:[1634..1644] metabolism)
+                (CC:[1645..1648] and) (NN:[1649..1657] toxicity))
+            (PP (IN:[1658..1660] of)
+              (NP (JJ:[1661..1666] other) (NNS:[1667..1676] chemicals)))))))
+    (.:[1676..1677] .)))
+
+;section 13 Span:1681..1726
+;PMID: 10199577 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1681..1685] PMID) (::[1685..1686] :) (CD:[1687..1695] 10199577)
+        (NN:[1696..1697] -LSB-) (NNP:[1697..1703] PubMed) (::[1704..1705] -)
+        (NN:[1706..1713] indexed) (IN:[1714..1717] for)
+        (NNP:[1718..1726] MEDLINE-RSB-)))

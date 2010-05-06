@@ -1,0 +1,303 @@
+;PMID: 2326830
+;source_file_650.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:37..117] = [t:37..117]
+;2)section:[e:121..156] = [t:121..156]
+;3)section:[e:160..248] = [t:160..248]
+;4)sentence:[e:252..555] = [t:252..555]
+;5)sentence:[e:556..736] = [t:556..736]
+;6)sentence:[e:737..896] = [t:737..896]
+;7)sentence:[e:897..1126] = [t:897..1126]
+;8)sentence:[e:1127..1197] = [t:1127..1197]
+;9)section:[e:1201..1245] = [t:1201..1245]
+
+;section 0 Span:0..31
+;Steroids. 1990 Feb;55(2):69-73.
+(SEC
+  (FRAG (NNP:[0..8] Steroids) (,:[8..9] .) (CD:[10..14] 1990)
+        (CC:[15..22] Feb;55-LRB-) (CD:[22..23] 2) (-RRB-:[23..24] -RRB-)
+        (CD:[24..27] :69) (::[27..28] -) (CD:[28..30] 73) (.:[30..31] .)))
+
+;sentence 1 Span:37..117
+;Aromatase inhibition by R 76 713: a kinetic analysis in rat ovarian
+;homogenates.
+;[37..46]:cyp450:"Aromatase"
+;[61..69]:substance:"R 76 713"
+;[105..116]:substance:"homogenates"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[37..46] Aromatase) (NN:[47..57] inhibition))
+      (PP (IN:[58..60] by)
+        (NP (NN:[61..69] R-SP-76-SP-713))))
+    (::[69..70] :)
+    (NP
+      (NP (DT:[71..72] a) (JJ:[73..80] kinetic) (NN:[81..89] analysis))
+      (PP-LOC (IN:[90..92] in)
+        (NP (NN:[93..96] rat) (JJ:[97..104] ovarian)
+            (NNS:[105..116] homogenates))))
+    (.:[116..117] .)))
+
+;section 2 Span:121..156
+;Krekels MD, Wouters W, De Coster R.
+(SEC
+  (FRAG (NNP:[121..128] Krekels) (NNP:[129..131] MD) (,:[131..132] ,)
+        (NNP:[133..140] Wouters) (NNP:[141..142] W) (,:[142..143] ,)
+        (NNP:[144..146] De) (NNP:[147..153] Coster) (NNP:[154..156] R.)))
+
+;section 3 Span:160..248
+;Department of Endocrinology and Oncology, Janssen Research Foundation,
+;Beerse,  Belgium.
+(SEC
+  (FRAG (NNP:[160..170] Department) (IN:[171..173] of)
+        (NNP:[174..187] Endocrinology) (CC:[188..191] and)
+        (NNP:[192..200] Oncology) (,:[200..201] ,) (NNP:[202..209] Janssen)
+        (NNP:[210..218] Research) (NNP:[219..229] Foundation) (,:[229..230] ,)
+        (NNP:[231..237] Beerse) (,:[237..238] ,) (NNP:[240..247] Belgium)
+        (.:[247..248] .)))
+
+;sentence 4 Span:252..555
+;Reaction kinetics of the aromatase enzyme and of a new nonsteroidal aromatase
+; inhibitor, R 76 713 
+;(6-[(4-chlorophenyl)(1H-1,2,4-triazol-1-yl)-methyl]-1-methyl-1H-
+;benzotriazole),  were studied in ovarian homogenates obtained from pregnant
+;mare's serum  gonadotropin (PMSG)-injected female Wistar rats.
+;[277..293]:cyp450:"aromatase enzyme"
+;[320..329]:cyp450:"aromatase"
+;[331..340]:substance:"inhibitor"
+;[342..350]:substance:"R 76 713"
+;[353..430]:substance:"6-[(4-chlorophenyl)(1H-1,2,4-triazol-1-yl)-methyl]-1-me
+;thyl-1H- benzotriazole"
+;[458..469]:substance:"homogenates"
+;[484..519]:substance:"pregnant mare's serum  gonadotropin"
+;[521..525]:substance:"PMSG"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[252..260] Reaction) (NNS:[261..269] kinetics))
+      (PP
+        (PP (IN:[270..272] of)
+          (NP (DT:[273..276] the)
+             (NN:[277..286] aromatase) (NN:[287..293] enzyme)))
+        (CC:[294..297] and)
+        (PP (IN:[298..300] of)
+          (NP
+            (NP (DT:[301..302] a) (JJ:[303..306] new)
+                (JJ:[307..319] nonsteroidal) (NN:[320..329] aromatase)
+                (NN:[331..340] inhibitor))
+            (,:[340..341] ,)
+            (NP
+              (NP (NN:[342..350] R-SP-76-SP-713))
+              (NP (-LRB-:[352..353] -LRB-)
+                
+                 (NN:[353..416] 6--LSB--LRB-4-chlorophenyl-RRB--LRB-1H-1,2,4-triazol-1-yl-RRB--methyl-RSB--1-methyl-1H-)
+                 (NN:[417..430] benzotriazole)
+                (-RRB-:[430..431] -RRB-)))))))
+    (,:[431..432] ,)
+    (VP (VBD:[434..438] were)
+      (VP (VBN:[439..446] studied)
+        (NP-1 (-NONE-:[446..446] *))
+        (PP-LOC (IN:[447..449] in)
+          (NP
+            (NP (JJ:[450..457] ovarian) (NNS:[458..469] homogenates))
+            (VP (VBD:[470..478] obtained)
+              (NP (-NONE-:[478..478] *))
+              (PP (IN:[479..483] from)
+                (NP
+                  (ADJP
+                    (NML
+                      (NML
+                        (NP (JJ:[484..492] pregnant) (NN:[493..497] mare)
+                            (POS:[497..499] 's))
+                        (NN:[500..505] serum) (NN:[507..519] gonadotropin))
+                      (NML (-LRB-:[520..521] -LRB-) (NN:[521..525] PMSG)
+                           (-RRB-:[525..526] -RRB-)))
+                    (HYPH:[526..527] -) (VBN:[527..535] injected))
+                  (JJ:[536..542] female) (NNP:[543..549] Wistar)
+                   (NNS:[550..554] rats))))))))
+    (.:[554..555] .)))
+
+;sentence 5 Span:556..736
+;The Km (Michaelis constant) of  the aromatase enzyme with androstenedione as
+;the substrate was 47 +/- 13 nM; for  testosterone as the substrate, a value
+;of 159 +/- 10 nM was found.
+;[560..562]:quantitative-name:"Km"
+;[564..582]:quantitative-name:"Michaelis constant"
+;[592..608]:cyp450:"aromatase enzyme"
+;[614..629]:substance:"androstenedione"
+;[637..646]:substance:"substrate"
+;[651..660]:quantitative-value:"47 +/- 13"
+;[661..663]:quantitative-units:"nM"
+;[670..682]:substance:"testosterone"
+;[690..699]:substance:"substrate"
+;[712..722]:quantitative-value:"159 +/- 10"
+;[723..725]:quantitative-units:"nM"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP
+          (NP (DT:[556..559] The) (NN:[560..562] Km))
+          (NP (-LRB-:[563..564] -LRB-)
+             (NNP:[564..573] Michaelis) (NN:[574..582] constant)
+            (-RRB-:[582..583] -RRB-)))
+        (PP (IN:[584..586] of)
+          (NP
+            (NP (DT:[588..591] the)
+               (NN:[592..601] aromatase) (NN:[602..608] enzyme))
+            (PP (IN:[609..613] with)
+              (NP
+                (NP (NN:[614..629] androstenedione))
+                (PP (IN:[630..632] as)
+                  (NP (DT:[633..636] the) (NN:[637..646] substrate))))))))
+      (VP (VBD:[647..650] was)
+        (NP-PRD
+          (QP (CD:[651..653] 47) (SYM:[654..657] +/-) (CD:[658..660] 13))
+          (NN:[661..663] nM))))
+    (::[663..664] ;)
+    (S
+      (PP (IN:[665..668] for)
+        (NP
+          (NP (NN:[670..682] testosterone))
+          (PP (IN:[683..685] as)
+            (NP (DT:[686..689] the) (NN:[690..699] substrate)))))
+      (,:[699..700] ,)
+      (NP-SBJ-1
+        (NP (DT:[701..702] a) (NN:[703..708] value))
+        (PP (IN:[709..711] of)
+          (NP
+            (QP (CD:[712..715] 159) (SYM:[716..719] +/-) (CD:[720..722] 10))
+            (NN:[723..725] nM))))
+      (VP (VBD:[726..729] was)
+        (VP (VBN:[730..735] found)
+          (NP-1 (-NONE-:[735..735] *)))))
+    (.:[735..736] .)))
+
+;sentence 6 Span:737..896
+;In the  presence of increasing concentrations of R 76 713, the Km increased
+;while the  Vmax (maximal velocity of enzyme-catalyzed reaction) remained
+;unchanged.
+;[786..794]:substance:"R 76 713"
+;[800..802]:quantitative-name:"Km"
+;[824..828]:quantitative-name:"Vmax"
+;[830..846]:quantitative-name:"maximal velocity"
+;[850..856]:substance:"enzyme"
+(SENT
+  (S
+    (PP (IN:[737..739] In)
+      (NP
+        (NP (DT:[740..743] the) (NN:[745..753] presence))
+        (PP (IN:[754..756] of)
+          (NP
+            (NP (VBG:[757..767] increasing) (NNS:[768..782] concentrations))
+            (PP (IN:[783..785] of)
+              (NP (NN:[786..794] R-SP-76-SP-713)))))))
+    (,:[794..795] ,)
+    (NP-SBJ (DT:[796..799] the) (NN:[800..802] Km))
+    (VP (VBD:[803..812] increased)
+      (SBAR-ADV (IN:[813..818] while)
+        (S
+          (NP-SBJ
+            (NP (DT:[819..822] the) (NN:[824..828] Vmax))
+            (NP (-LRB-:[829..830] -LRB-)
+              (NP (JJ:[830..837] maximal) (NN:[838..846] velocity))
+              (PP (IN:[847..849] of)
+                (NP
+                  (ADJP (NN:[850..856] enzyme) (HYPH:[856..857] -)
+                        (VBN:[857..866] catalyzed))
+                  (NN:[867..875] reaction)))
+              (-RRB-:[875..876] -RRB-)))
+          (VP (VBD:[877..885] remained)
+            (ADJP-PRD (JJ:[886..895] unchanged))))))
+    (.:[895..896] .)))
+
+;sentence 7 Span:897..1126
+;Using  androstenedione and testosterone as the substrate, Lineweaver-Burk
+;analysis of  the data showed a Ki (dissociation constant of the
+;enzyme-inhibitor complex) for  R 76 713 of 0.7 +/- 0.3 nM and 1.6 +/- 0.4 nM,
+;respectively.
+;[904..919]:substance:"androstenedione"
+;[924..936]:substance:"testosterone"
+;[944..953]:substance:"substrate"
+;[1002..1004]:quantitative-name:"Ki"
+;[1006..1027]:quantitative-name:"dissociation constant"
+;[1035..1059]:substance:"enzyme-inhibitor complex"
+;[1066..1074]:substance:"R 76 713"
+;[1078..1089]:quantitative-value:"0.7 +/- 0.3"
+;[1090..1092]:quantitative-units:"nM"
+;[1097..1108]:quantitative-value:"1.6 +/- 0.4"
+;[1109..1111]:quantitative-units:"nM"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[897..897] *))
+      (VP (VBG:[897..902] Using)
+        (NP (NN:[904..919] androstenedione) (CC:[920..923] and)
+            (NN:[924..936] testosterone))
+        (PP (IN:[937..939] as)
+          (NP (DT:[940..943] the) (NN:[944..953] substrate)))))
+    (,:[953..954] ,)
+    (NP-SBJ
+      (NP
+        (NML (NNP:[955..965] Lineweaver) (HYPH:[965..966] -)
+             (NNP:[966..970] Burk))
+        (NN:[971..979] analysis))
+      (PP (IN:[980..982] of)
+        (NP (DT:[984..987] the) (NN:[988..992] data))))
+    (VP (VBD:[993..999] showed)
+      (NP
+        (NP
+          (NP (DT:[1000..1001] a) (NN:[1002..1004] Ki))
+          (NP (-LRB-:[1005..1006] -LRB-)
+            (NP (NN:[1006..1018] dissociation) (NN:[1019..1027] constant))
+            (PP (IN:[1028..1030] of)
+              (NP (DT:[1031..1034] the)
+                
+                (ADJP (NN:[1035..1041] enzyme) (HYPH:[1041..1042] -)
+                      (NN:[1042..1051] inhibitor))
+                (NN:[1052..1059] complex)))
+            (-RRB-:[1059..1060] -RRB-)))
+        (PP (IN:[1061..1064] for)
+          (NP (NN:[1066..1074] R-SP-76-SP-713)))
+        (PP (IN:[1075..1077] of)
+          (NP
+            (NP
+              (QP (CD:[1078..1081] 0.7) (SYM:[1082..1085] +/-)
+                  (CD:[1086..1089] 0.3))
+              (NN:[1090..1092] nM))
+            (CC:[1093..1096] and)
+            (NP
+              (QP (CD:[1097..1100] 1.6) (SYM:[1101..1104] +/-)
+                  (CD:[1105..1108] 0.4))
+              (NN:[1109..1111] nM)))))
+      (,:[1111..1112] ,)
+      (ADVP (RB:[1113..1125] respectively)))
+    (.:[1125..1126] .)))
+
+;sentence 8 Span:1127..1197
+;R 76 713 appeared  to competitively inhibit the rat ovarian aromatase.
+;[1127..1135]:substance:"R 76 713"
+;[1187..1196]:cyp450:"aromatase"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1127..1135] R-SP-76-SP-713))
+    (VP (VBD:[1136..1144] appeared)
+      (S
+        (NP-SBJ-1 (-NONE-:[1144..1144] *))
+        (VP (TO:[1146..1148] to)
+          (ADVP (RB:[1149..1162] competitively))
+          (VP (VB:[1163..1170] inhibit)
+            (NP (DT:[1171..1174] the) (NN:[1175..1178] rat)
+                (JJ:[1179..1186] ovarian) (NN:[1187..1196] aromatase))))))
+    (.:[1196..1197] .)))
+
+;section 9 Span:1201..1245
+;PMID: 2326830 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1201..1205] PMID) (::[1205..1206] :) (CD:[1207..1214] 2326830)
+        (NN:[1215..1216] -LSB-) (NNP:[1216..1222] PubMed) (::[1223..1224] -)
+        (NN:[1225..1232] indexed) (IN:[1233..1236] for)
+        (NNP:[1237..1245] MEDLINE-RSB-)))

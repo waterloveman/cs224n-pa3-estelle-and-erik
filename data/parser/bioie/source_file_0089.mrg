@@ -1,0 +1,601 @@
+;PMID: 8534263
+;source_file_932.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..191] = [t:49..191]
+;2)section:[e:195..215] = [t:195..215]
+;3)section:[e:219..299] = [t:219..299]
+;4)sentence:[e:303..522] = [t:303..522]
+;5)sentence:[e:523..718] = [t:523..718]
+;6)sentence:[e:719..950] = [t:719..950]
+;7)sentence:[e:951..1066] = [t:951..1066]
+;8)sentence:[e:1068..1224] = [t:1068..1224]
+;9)sentence:[e:1226..1448] = [t:1226..1448]
+;10)sentence:[e:1449..1556] = [t:1449..1556]
+;11)sentence:[e:1557..1789] = [t:1557..1789]
+;12)sentence:[e:1790..1920] = [t:1790..1920]
+;13)sentence:[e:1922..2121] = [t:1922..2121]
+;14)sentence:[e:2122..2397] = [t:2122..2397]
+;15)section:[e:2401..2445] = [t:2401..2445]
+
+;section 0 Span:0..43
+;Biochem Pharmacol. 1996 Jan 12;51(1):15-20.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1996) (NNP:[24..27] Jan) (CD:[28..34] 12;51-LRB-)
+        (CD:[34..35] 1) (-RRB-:[35..36] -RRB-) (CD:[36..39] :15) (::[39..40] -)
+        (CD:[40..42] 20) (.:[42..43] .)))
+
+;sentence 1 Span:49..191
+;Inhibition of microsomal cytochromes P450 in rat liver by the tricyclic 
+;antidepressant drug desipramine and its primary oxidized metabolites.
+;[74..90]:cyp450:"cytochromes P450"
+;[122..141]:substance:"antidepressant drug"
+;[142..153]:substance:"desipramine"
+;[179..190]:substance:"metabolites"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..59] Inhibition))
+    (PP (IN:[60..62] of)
+      (NP (JJ:[63..73] microsomal)
+         (NNS:[74..85] cytochromes) (NN:[86..90] P450)))
+    (PP-LOC (IN:[91..93] in)
+      (NP (NN:[94..97] rat) (NN:[98..103] liver)))
+    (PP (IN:[104..106] by)
+      (NP
+        (NP
+          (NP (DT:[107..110] the) (JJ:[111..120] tricyclic)
+             (JJ:[122..136] antidepressant) (NN:[137..141] drug))
+          (NP (NN:[142..153] desipramine)))
+        (CC:[154..157] and)
+        (NP (PRP$:[158..161] its) (JJ:[162..169] primary)
+            (VBN:[170..178] oxidized) (NNS:[179..190] metabolites))))
+    (.:[190..191] .)))
+
+;section 2 Span:195..215
+;McNeil CM, Murray M.
+(SEC
+  (FRAG (NNP:[195..201] McNeil) (NNP:[202..204] CM) (,:[204..205] ,)
+        (NNP:[206..212] Murray) (NNP:[213..215] M.)))
+
+;section 3 Span:219..299
+;Department of Medicine, University of Sydney, Westmead Hospital, NSW,
+;Australia.
+(SEC
+  (FRAG (NNP:[219..229] Department) (IN:[230..232] of) (NNP:[233..241] Medicine)
+        (,:[241..242] ,) (NNP:[243..253] University) (IN:[254..256] of)
+        (NNP:[257..263] Sydney) (,:[263..264] ,) (NNP:[265..273] Westmead)
+        (NNP:[274..282] Hospital) (,:[282..283] ,) (NNP:[284..287] NSW)
+        (,:[287..288] ,) (NNP:[289..298] Australia) (.:[298..299] .)))
+
+;sentence 4 Span:303..522
+;N-Monoalkyl substituted tricyclic antidepressants like desipramine (DES)
+;undergo  cytochrome P450 (P450)-mediated biotransformation in liver to
+;produce inhibitory  metabolite-intermediate (MI) complexes with the enzyme.
+;[337..352]:substance:"antidepressants"
+;[358..369]:substance:"desipramine"
+;[371..374]:substance:"DES"
+;[385..400]:cyp450:"cytochrome P450"
+;[402..406]:cyp450:"P450"
+;[467..505]:substance:"metabolite-intermediate (MI) complexes"
+;[515..521]:cyp450:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (ADJP (NN:[303..314] N-Monoalkyl) (VBN:[315..326] substituted))
+        (JJ:[327..336] tricyclic) (NNS:[337..352] antidepressants))
+      (PP (IN:[353..357] like)
+        (NP
+          (NP (NN:[358..369] desipramine))
+          (NP (-LRB-:[370..371] -LRB-) (NN:[371..374] DES)
+              (-RRB-:[374..375] -RRB-)))))
+    (VP (VBP:[376..383] undergo)
+      (NP
+        (ADJP
+          (NML
+            (NML (NN:[385..395] cytochrome) (NN:[396..400] P450))
+            (NML (-LRB-:[401..402] -LRB-) (NN:[402..406] P450)
+                 (-RRB-:[406..407] -RRB-)))
+          (HYPH:[407..408] -) (VBN:[408..416] mediated))
+        (NN:[417..434] biotransformation))
+      (PP-LOC (IN:[435..437] in)
+        (NP (NN:[438..443] liver)))
+      (S-PRP
+        (NP-SBJ-1 (-NONE-:[443..443] *))
+        (VP (TO:[444..446] to)
+          (VP (VB:[447..454] produce)
+            (NP (JJ:[455..465] inhibitory)
+              
+              (NML
+                (NML (NN:[467..477] metabolite) (HYPH:[477..478] -)
+                     (NN:[478..490] intermediate))
+                (NML (-LRB-:[491..492] -LRB-) (NN:[492..494] MI)
+                     (-RRB-:[494..495] -RRB-)))
+              (NNS:[496..505] complexes))
+            (PP (IN:[506..510] with)
+              (NP (DT:[511..514] the) (NN:[515..521] enzyme)))))))
+    (.:[521..522] .)))
+
+;sentence 5 Span:523..718
+;However, additional  oxidation pathways that generate isolable metabolites
+;have also been identified,  so that the relationship between MI complexation
+;and total oxidative metabolism  is unclear.
+;[586..597]:substance:"metabolites"
+;[659..661]:substance:"MI"
+(SENT
+  (S
+    (ADVP (RB:[523..530] However))
+    (,:[530..531] ,)
+    (NP-SBJ-2
+      (NP (JJ:[532..542] additional) (NN:[544..553] oxidation)
+          (NNS:[554..562] pathways))
+      (SBAR
+        (WHNP-1 (WDT:[563..567] that))
+        (S
+          (NP-SBJ-1 (-NONE-:[567..567] *T*))
+          (VP (VBP:[568..576] generate)
+            (NP (JJ:[577..585] isolable) (NNS:[586..597] metabolites))))))
+    (VP (VBP:[598..602] have)
+      (ADVP (RB:[603..607] also))
+      (VP (VBN:[608..612] been)
+        (VP (VBN:[613..623] identified)
+          (NP-2 (-NONE-:[623..623] *))
+          (,:[623..624] ,)
+          (SBAR-ADV (IN:[626..628] so)
+            (SBAR (IN:[629..633] that)
+              (S
+                (NP-SBJ
+                  (NP (DT:[634..637] the) (NN:[638..650] relationship))
+                  (PP (IN:[651..658] between)
+                    (NP
+                      (NP (NN:[659..661] MI) (NN:[662..674] complexation))
+                      (CC:[675..678] and)
+                      (NP (JJ:[679..684] total) (JJ:[685..694] oxidative)
+                          (NN:[695..705] metabolism)))))
+                (VP (VBZ:[707..709] is)
+                  (ADJP-PRD (JJ:[710..717] unclear)))))))))
+    (.:[717..718] .)))
+
+;sentence 6 Span:719..950
+;The present study investigated the capacity of DES and three  putative
+;metabolites (2-hydroxy- and 10-hydroxy-DES and  N,N-didesmethylimipramine;
+;DIDES) to elicit MI complexation and inhibit  P450-dependent activities in
+;rat liver.
+;[766..769]:substance:"DES"
+;[790..801]:substance:"metabolites"
+;[803..813]...[829..832]:substance:"2-hydroxy-"..."DES"
+;[818..832]:substance:"10-hydroxy-DES"
+;[838..863]:substance:"N,N-didesmethylimipramine"
+;[865..870]:substance:"DIDES"
+;[882..884]:substance:"MI"
+;[911..915]:cyp450:"P450"
+(SENT
+  (S
+    (NP-SBJ (DT:[719..722] The) (JJ:[723..730] present) (NN:[731..736] study))
+    (VP (VBD:[737..749] investigated)
+      (NP
+        (NP (DT:[750..753] the) (NN:[754..762] capacity)
+          (S-3 (-NONE-:[762..762] *ICH*)))
+        (PP (IN:[763..765] of)
+          (NP
+            (NP (NN:[766..769] DES))
+            (CC:[770..773] and)
+            (NP
+              (NP (CD:[774..779] three) (JJ:[781..789] putative)
+                  (NNS:[790..801] metabolites))
+              (PRN (-LRB-:[802..803] -LRB-)
+                (NP
+                  (NP (JJ:[803..812] 2-hydroxy) (HYPH:[812..813] -)
+                    (NML-2 (-NONE-:[813..813] *P*)))
+                  (CC:[814..817] and)
+                  (NP (JJ:[818..828] 10-hydroxy) (HYPH:[828..829] -)
+                    (NML-2 (NN:[829..832] DES)))
+                  (CC:[833..836] and)
+                  (NP
+                    (NP (NN:[838..863] N,N-didesmethylimipramine))
+                    (::[863..864] ;)
+                    (NP (NN:[865..870] DIDES))))
+                (-RRB-:[870..871] -RRB-)))))
+        (S-3
+          (NP-SBJ (-NONE-:[871..871] *))
+          (VP (TO:[872..874] to)
+            (VP
+              (VP (VB:[875..881] elicit)
+                (NP (NN:[882..884] MI) (NN:[885..897] complexation))
+                (PP-LOC-1 (-NONE-:[897..897] *RNR*)))
+              (CC:[898..901] and)
+              (VP (VB:[902..909] inhibit)
+                (NP
+                  (ADJP (NN:[911..915] P450) (HYPH:[915..916] -)
+                        (JJ:[916..925] dependent))
+                  (NNS:[926..936] activities))
+                (PP-LOC-1 (-NONE-:[936..936] *RNR*)))
+              (PP-LOC-1 (IN:[937..939] in)
+                (NP (NN:[940..943] rat) (NN:[944..949] liver))))))))
+    (.:[949..950] .)))
+
+;sentence 7 Span:951..1066
+;MI complexation of P450 was produced by  DES, but not with the three
+;metabolites, in NADPH-supplemented microsomes.
+;[951..953]:substance:"MI"
+;[970..974]:cyp450:"P450"
+;[992..995]:substance:"DES"
+;[1020..1031]:substance:"metabolites"
+;[1036..1041]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (NN:[951..953] MI) (NN:[954..966] complexation))
+      (PP (IN:[967..969] of)
+        (NP (NN:[970..974] P450))))
+    (VP
+      (VP (VBD:[975..978] was)
+        (VP (VBN:[979..987] produced)
+          (NP-3 (-NONE-:[987..987] *))
+          (PP (IN:[988..990] by)
+            (NP-LGS (NN:[992..995] DES)))
+          (PP-LOC-2 (-NONE-:[995..995] *RNR*))))
+      (,:[995..996] ,) (CC:[997..1000] but)
+      (VP (RB:[1001..1004] not)
+        (PP (IN:[1005..1009] with)
+          (NP (DT:[1010..1013] the) (CD:[1014..1019] three)
+              (NNS:[1020..1031] metabolites)))
+        (PP-LOC-2 (-NONE-:[1031..1031] *RNR*)))
+      (,:[1031..1032] ,)
+      (PP-LOC-2 (IN:[1033..1035] in)
+        (NP
+          (ADJP (NN:[1036..1041] NADPH) (HYPH:[1041..1042] -)
+                (VBN:[1042..1054] supplemented))
+          (NNS:[1055..1065] microsomes))))
+    (.:[1065..1066] .)))
+
+;sentence 8 Span:1068..1224
+;Consistent with this finding, inhibition of testosterone hydroxylation
+;pathways  was enhanced markedly by prior incubation of DES with NADPH and
+;microsomes.
+;[1112..1124]:substance:"testosterone"
+;[1194..1197]:substance:"DES"
+;[1203..1208]:substance:"NADPH"
+(SENT
+  (ADJP
+    (ADJP-ADV (JJ:[1068..1078] Consistent)
+      (PP (IN:[1079..1083] with)
+        (NP (DT:[1084..1088] this) (NN:[1089..1096] finding))))
+    (,:[1096..1097] ,)
+    (NP-SBJ-1
+      (NP (NN:[1098..1108] inhibition))
+      (PP (IN:[1109..1111] of)
+        (NP (NN:[1112..1124] testosterone) (NN:[1125..1138] hydroxylation)
+            (NNS:[1139..1147] pathways))))
+    (VP (VBD:[1149..1152] was)
+      (VP (VBN:[1153..1161] enhanced)
+        (NP-1 (-NONE-:[1161..1161] *))
+        (ADVP-MNR (RB:[1162..1170] markedly))
+        (PP (IN:[1171..1173] by)
+          (NP-LGS
+            (NP (JJ:[1174..1179] prior) (NN:[1180..1190] incubation))
+            (PP (IN:[1191..1193] of)
+              (NP (NN:[1194..1197] DES)))
+            (PP (IN:[1198..1202] with)
+              (NP (NN:[1203..1208] NADPH) (CC:[1209..1212] and)
+                  (NNS:[1213..1223] microsomes)))))))
+    (.:[1223..1224] .)))
+
+;sentence 9 Span:1226..1448
+;Direct addition of DIDES to incubations resulted in significant inhibition of
+; P450 activities (IC50s of 35 and 29 microM against estradiol 6 beta- and 16 
+;alpha-hydroxylation mediated by P450s 3A2 and 2C11, respectively).
+;[1245..1250]:substance:"DIDES"
+;[1305..1309]:cyp450:"P450"
+;[1322..1327]:quantitative-name:"IC50s"
+;[1331..1333]:quantitative-value:"35"
+;[1338..1340]:quantitative-value:"29"
+;[1341..1347]:quantitative-units:"microM"
+;[1356..1365]:substance:"estradiol"
+;[1414..1423]:cyp450:"P450s 3A2"
+;[1414..1419]...[1428..1432]:cyp450:"P450s"..."2C11"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1226..1232] Direct) (NN:[1233..1241] addition))
+      (PP (IN:[1242..1244] of)
+        (NP (NN:[1245..1250] DIDES)))
+      (PP (TO:[1251..1253] to)
+        (NP (NNS:[1254..1265] incubations))))
+    (VP (VBD:[1266..1274] resulted)
+      (PP-CLR (IN:[1275..1277] in)
+        (NP
+          (NP (JJ:[1278..1289] significant) (NN:[1290..1300] inhibition))
+          (PP (IN:[1301..1303] of)
+            (NP
+              (NP (NN:[1305..1309] P450) (NNS:[1310..1320] activities))
+              (PRN (-LRB-:[1321..1322] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (NNS:[1322..1327] IC50s))
+                    (PP (IN:[1328..1330] of)
+                      (NP
+                        (NP (CD:[1331..1333] 35)
+                          (NML-4 (-NONE-:[1333..1333] *P*)))
+                        (CC:[1334..1337] and)
+                        (NP (CD:[1338..1340] 29)
+                          (NML-4 (NN:[1341..1347] microM))))))
+                  (PP (IN:[1348..1355] against)
+                    (NP
+                      (NP
+                        (NP
+                          (NML-3 (NN:[1356..1365] estradiol))
+                          (NML (CD:[1366..1367] 6) (SYM:[1368..1372] beta))
+                          (HYPH:[1372..1373] -)
+                          (NML-2 (-NONE-:[1373..1373] *P*)))
+                        (CC:[1374..1377] and)
+                        (NP
+                          (NML-3 (-NONE-:[1377..1377] *P*))
+                          (NML (CD:[1378..1380] 16) (SYM:[1382..1387] alpha))
+                          (HYPH:[1387..1388] -)
+                          (NML-2 (NN:[1388..1401] hydroxylation))))
+                      (VP (VBN:[1402..1410] mediated)
+                        (NP (-NONE-:[1410..1410] *))
+                        (PP (IN:[1411..1413] by)
+                          (NP-LGS
+                            (NP
+                              (NML-1 (NNS:[1414..1419] P450s))
+                              (NN:[1420..1423] 3A2))
+                            (CC:[1424..1427] and)
+                            (NP
+                              (NML-1 (-NONE-:[1427..1427] *P*))
+                              (NN:[1428..1432] 2C11))))
+                        (,:[1432..1433] ,)
+                        (ADVP (RB:[1434..1446] respectively))))))
+                (-RRB-:[1446..1447] -RRB-)))))))
+    (.:[1447..1448] .)))
+
+;sentence 10 Span:1449..1556
+;Neither  2-hydroxy- nor 10-hydroxy-DES directly inhibited testosterone
+;hydroxylation  (IC50s > 100 microM).
+;[1458..1468]...[1484..1487]:substance:"2-hydroxy-"..."DES"
+;[1473..1487]:substance:"10-hydroxy-DES"
+;[1507..1519]:substance:"testosterone"
+;[1536..1541]:quantitative-name:"IC50s"
+;[1542..1547]:quantitative-value:"> 100"
+;[1548..1554]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (CC:[1449..1456] Neither)
+      (NP (JJ:[1458..1467] 2-hydroxy) (HYPH:[1467..1468] -)
+        (NML-1 (-NONE-:[1468..1468] *P*)))
+      (CC:[1469..1472] nor)
+      (NP (JJ:[1473..1483] 10-hydroxy) (HYPH:[1483..1484] -)
+        (NML-1 (NN:[1484..1487] DES))))
+    (ADVP-MNR (RB:[1488..1496] directly))
+    (VP (VBD:[1497..1506] inhibited)
+      (NP (NN:[1507..1519] testosterone) (NN:[1520..1533] hydroxylation))
+      (PRN (-LRB-:[1535..1536] -LRB-)
+        (S
+          (NP-SBJ (NNS:[1536..1541] IC50s))
+          (VP (SYM:[1542..1543] >)
+            (NP (CD:[1544..1547] 100) (NN:[1548..1554] microM))))
+        (-RRB-:[1554..1555] -RRB-)))
+    (.:[1555..1556] .)))
+
+;sentence 11 Span:1557..1789
+;However, after a preincubation step between these  metabolites and
+;NADPH-fortified microsomes, enhanced inhibition of reactions  mediated by
+;P450 3A2 and P450 2C11/2A1 was produced by 2-hydroxy-DES and  10-hydroxy-DES,
+;respectively.
+;[1608..1619]:substance:"metabolites"
+;[1624..1629]:substance:"NADPH"
+;[1698..1706]:cyp450:"P450 3A2"
+;[1711..1720]:cyp450:"P450 2C11"
+;[1711..1715]...[1721..1724]:cyp450:"P450"..."2A1"
+;[1741..1754]:substance:"2-hydroxy-DES"
+;[1760..1774]:substance:"10-hydroxy-DES"
+(SENT
+  (S
+    (ADVP (RB:[1557..1564] However))
+    (,:[1564..1565] ,)
+    (PP-TMP (IN:[1566..1571] after)
+      (NP
+        (NP (DT:[1572..1573] a) (NN:[1574..1587] preincubation)
+            (NN:[1588..1592] step))
+        (PP (IN:[1593..1600] between)
+          (NP
+            (NP (DT:[1601..1606] these) (NNS:[1608..1619] metabolites))
+            (CC:[1620..1623] and)
+            (NP
+              (ADJP (NN:[1624..1629] NADPH) (HYPH:[1629..1630] -)
+                    (VBN:[1630..1639] fortified))
+              (NNS:[1640..1650] microsomes))))))
+    (,:[1650..1651] ,)
+    (NP-SBJ-2
+      (NP (VBN:[1652..1660] enhanced) (NN:[1661..1671] inhibition))
+      (PP (IN:[1672..1674] of)
+        (NP
+          (NP (NNS:[1675..1684] reactions))
+          (VP (VBN:[1686..1694] mediated)
+            (NP (-NONE-:[1694..1694] *))
+            (PP (IN:[1695..1697] by)
+              (NP-LGS
+                (NP (NN:[1698..1702] P450) (NN:[1703..1706] 3A2))
+                (CC:[1707..1710] and)
+                (NP
+                  (NP
+                    (NML-1 (NN:[1711..1715] P450))
+                    (NN:[1716..1720] 2C11))
+                  (SYM:[1720..1721] /)
+                  (NP
+                    (NML-1 (-NONE-:[1721..1721] *P*))
+                    (NN:[1721..1724] 2A1)))))))))
+    (VP (VBD:[1725..1728] was)
+      (VP (VBN:[1729..1737] produced)
+        (NP-2 (-NONE-:[1737..1737] *))
+        (PP (IN:[1738..1740] by)
+          (NP-LGS (NN:[1741..1754] 2-hydroxy-DES) (CC:[1755..1758] and)
+                  (NN:[1760..1774] 10-hydroxy-DES)))
+        (,:[1774..1775] ,)
+        (ADVP (RB:[1776..1788] respectively))))
+    (.:[1788..1789] .)))
+
+;sentence 12 Span:1790..1920
+;Metabolism of DES to DIDES and 2-hydroxy-DES was  estimated as 7.77 +/- 0.48
+;nmol/mg protein/hr (10-hydroxy-DES was not detected).
+;[1804..1807]:substance:"DES"
+;[1811..1816]:substance:"DIDES"
+;[1821..1834]:substance:"2-hydroxy-DES"
+;[1853..1866]:quantitative-value:"7.77 +/- 0.48"
+;[1867..1885]:quantitative-units:"nmol/mg protein/hr"
+;[1887..1901]:substance:"10-hydroxy-DES"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1790..1800] Metabolism))
+      (PP (IN:[1801..1803] of)
+        (NP (NN:[1804..1807] DES)))
+      (PP (TO:[1808..1810] to)
+        (NP (NN:[1811..1816] DIDES) (CC:[1817..1820] and)
+            (NN:[1821..1834] 2-hydroxy-DES))))
+    (VP (VBD:[1835..1838] was)
+      (VP (VBN:[1840..1849] estimated)
+        (NP-2 (-NONE-:[1849..1849] *))
+        (PP (IN:[1850..1852] as)
+          (NP
+            (NP
+              (QP (CD:[1853..1857] 7.77) (SYM:[1858..1861] +/-)
+                  (CD:[1862..1866] 0.48))
+              (NN:[1867..1871] nmol))
+            (PP (SYM:[1871..1872] /)
+              (NP
+                (NP (NN:[1872..1874] mg))
+                (NP (NN:[1875..1882] protein))))
+            (PP (SYM:[1882..1883] /)
+              (NP (NN:[1883..1885] hr)))))
+        (PRN (-LRB-:[1886..1887] -LRB-)
+          (S
+            (NP-SBJ-1 (NN:[1887..1901] 10-hydroxy-DES))
+            (VP (VBD:[1902..1905] was) (RB:[1906..1909] not)
+              (VP (VBN:[1910..1918] detected)
+                (NP-1 (-NONE-:[1918..1918] *)))))
+          (-RRB-:[1918..1919] -RRB-))))
+    (.:[1919..1920] .)))
+
+;sentence 13 Span:1922..2121
+;It is likely that secondary oxidized metabolites derived from 2-hydroxy-DES,
+;as  well as the primary metabolite DIDES, may contribute to the inhibition of
+;P450  activity during DES biotransformation.
+;[1959..1970]:substance:"metabolites"
+;[1984..1997]:substance:"2-hydroxy-DES"
+;[2023..2033]:substance:"metabolite"
+;[2034..2039]:substance:"DIDES"
+;[2077..2081]:cyp450:"P450"
+;[2099..2102]:substance:"DES"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1922..1924] It))
+    (VP (VBZ:[1925..1927] is)
+      (ADJP-PRD (JJ:[1928..1934] likely)
+        (SBAR (IN:[1935..1939] that)
+          (S
+            (NP-SBJ
+              (NP
+                (NP (JJ:[1940..1949] secondary) (VBN:[1950..1958] oxidized)
+                    (NNS:[1959..1970] metabolites))
+                (VP (VBN:[1971..1978] derived)
+                  (NP (-NONE-:[1978..1978] *))
+                  (PP (IN:[1979..1983] from)
+                    (NP (NN:[1984..1997] 2-hydroxy-DES) (,:[1997..1998] ,)))))
+              (CONJP (RB:[1999..2001] as) (RB:[2003..2007] well)
+                     (IN:[2008..2010] as))
+              (NP
+                (NP (DT:[2011..2014] the) (JJ:[2015..2022] primary)
+                    (NN:[2023..2033] metabolite))
+                (NP (NN:[2034..2039] DIDES))))
+            (,:[2039..2040] ,)
+            (VP (MD:[2041..2044] may)
+              (VP (VB:[2045..2055] contribute)
+                (PP-CLR (TO:[2056..2058] to)
+                  (NP
+                    (NP (DT:[2059..2062] the) (NN:[2063..2073] inhibition))
+                    (PP (IN:[2074..2076] of)
+                      (NP
+                        (NP (NN:[2077..2081] P450) (NN:[2083..2091] activity))
+                        (PP-TMP (IN:[2092..2098] during)
+                          (NP (NN:[2099..2102] DES)
+                              (NN:[2103..2120] biotransformation)))))))))))))
+    (.:[2120..2121] .)))
+
+;sentence 14 Span:2122..2397
+;These results indicate that the  2-hydroxy-, 10-hydroxy-, and
+;N-desmethyl-metabolites of DES are not involved in  MI complexation, but
+;complexation is not the sole mechanism by which DES  inhibits microsomal drug
+;oxidation that may lead to pharmacokinetic drug  interactions.
+;[2155..2165]...[2196..2207]:substance:"2-hydroxy-"..."metabolites"
+;[2167..2178]...[2196..2207]:substance:"10-hydroxy-"..."metabolites"
+;[2211..2214]:substance:"DES"
+;[2236..2238]:substance:"MI"
+;[2305..2308]:substance:"DES"
+;[2330..2334]:substance:"drug"
+;[2378..2382]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ (DT:[2122..2127] These) (NNS:[2128..2135] results))
+    (VP (VBP:[2136..2144] indicate)
+      (SBAR (IN:[2145..2149] that)
+        (S
+          (S
+            (NP-SBJ-4
+              (NP (DT:[2150..2153] the)
+                (NML
+                  (NML (JJ:[2155..2164] 2-hydroxy) (HYPH:[2164..2165] -)
+                    (NML-3 (-NONE-:[2165..2165] *P*)))
+                  (,:[2165..2166] ,)
+                  (NML (JJ:[2167..2177] 10-hydroxy) (HYPH:[2177..2178] -)
+                    (NML-3 (-NONE-:[2178..2178] *P*)))
+                  (,:[2178..2179] ,) (CC:[2180..2183] and)
+                  (NML (NN:[2184..2195] N-desmethyl) (HYPH:[2195..2196] -)
+                    (NML-3 (NNS:[2196..2207] metabolites)))))
+              (PP (IN:[2208..2210] of)
+                (NP (NN:[2211..2214] DES))))
+            (VP (VBP:[2215..2218] are) (RB:[2219..2222] not)
+              (VP (VBN:[2223..2231] involved)
+                (NP-4 (-NONE-:[2231..2231] *))
+                (PP-CLR (IN:[2232..2234] in)
+                  (NP (NN:[2236..2238] MI) (NN:[2239..2251] complexation))))))
+          (,:[2251..2252] ,) (CC:[2253..2256] but)
+          (S
+            (NP-SBJ (NN:[2257..2269] complexation))
+            (VP (VBZ:[2270..2272] is) (RB:[2273..2276] not)
+              (NP-PRD
+                (NP (DT:[2277..2280] the) (JJ:[2281..2285] sole)
+                    (NN:[2286..2295] mechanism))
+                (SBAR
+                  (WHPP-2 (IN:[2296..2298] by)
+                    (WHNP (WDT:[2299..2304] which)))
+                  (S
+                    (NP-SBJ (NN:[2305..2308] DES))
+                    (VP (VBZ:[2310..2318] inhibits)
+                      (PP-MNR-2 (-NONE-:[2318..2318] *T*))
+                      (NP
+                        (NP (JJ:[2319..2329] microsomal) (NN:[2330..2334] drug)
+                            (NN:[2335..2344] oxidation))
+                        (SBAR
+                          (WHNP-1 (WDT:[2345..2349] that))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[2349..2349] *T*))
+                            (VP (MD:[2350..2353] may)
+                              (VP (VB:[2354..2358] lead)
+                                (PP-CLR (TO:[2359..2361] to)
+                                  (NP (JJ:[2362..2377] pharmacokinetic)
+                                      (NN:[2378..2382] drug)
+                                      (NNS:[2384..2396] interactions)))))))))))))))))
+    (.:[2396..2397] .)))
+
+;section 15 Span:2401..2445
+;PMID: 8534263 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2401..2405] PMID) (::[2405..2406] :) (CD:[2407..2414] 8534263)
+        (NN:[2415..2416] -LSB-) (NNP:[2416..2422] PubMed) (::[2423..2424] -)
+        (NN:[2425..2432] indexed) (IN:[2433..2436] for)
+        (NNP:[2437..2445] MEDLINE-RSB-)))

@@ -1,0 +1,273 @@
+;PMID: 8198573
+;source_file_2852.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..54] = [t:0..54]
+;1)sentence:[e:60..244] = [t:60..244]
+;2)section:[e:248..310] = [t:248..310]
+;3)section:[e:314..377] = [t:314..377]
+;4)sentence:[e:381..632] = [t:381..632]
+;5)sentence:[e:633..840] = [t:633..840]
+;6)sentence:[e:841..1094] = [t:841..1094]
+;7)sentence:[e:1096..1302] = [t:1096..1302]
+;8)section:[e:1306..1350] = [t:1306..1350]
+
+;section 0 Span:0..54
+;Biochem Biophys Res Commun.  1994 May 30;201(1):180-5.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (.:[26..27] .) (CD:[29..33] 1994)
+        (NNP:[34..37] May) (CD:[38..40] 30) (CD:[40..44] ;201)
+        (-LRB-:[44..45] -LRB-) (CD:[45..46] 1) (-RRB-:[46..47] -RRB-)
+        (::[47..48] :) (CD:[48..51] 180) (CD:[51..53] -5) (.:[53..54] .)))
+
+;sentence 1 Span:60..244
+;Anti-beta 2 subunit antisense oligonucleotides modulate the surface
+;expression  of the alpha 1 subunit of N-type omega-CTX sensitive Ca2+
+;channels in IMR 32  human neuroblastoma cells.
+;[173..182]:gene-protein:"omega-CTX"
+;[193..206]:gene-protein:"Ca2+ channels"
+;[224..237]:malignancy-type:"neuroblastoma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML (AFX:[60..64] Anti) (HYPH:[64..65] -)
+        (NML (SYM:[65..69] beta) (CD:[70..71] 2))
+        (NN:[72..79] subunit))
+      (JJ:[80..89] antisense) (NNS:[90..106] oligonucleotides))
+    (VP (VBP:[107..115] modulate)
+      (NP
+        (NP (DT:[116..119] the) (NN:[120..127] surface)
+            (NN:[128..138] expression))
+        (PP (IN:[140..142] of)
+          (NP
+            (NP (DT:[143..146] the)
+              (NML (SYM:[147..152] alpha) (CD:[153..154] 1))
+              (NN:[155..162] subunit))
+            (PP (IN:[163..165] of)
+              (NP
+                (NML (NN:[166..167] N) (HYPH:[167..168] -) (NN:[168..172] type))
+                (ADJP (NN:[173..182] omega-CTX) (JJ:[183..192] sensitive))
+                 (NN:[193..197] Ca2+) (NNS:[198..206] channels))))))
+      (PP-LOC (IN:[207..209] in)
+        (NP
+          (NML (NN:[210..213] IMR) (CD:[214..216] 32))
+          (JJ:[218..223] human) (NN:[224..237] neuroblastoma)
+           (NNS:[238..243] cells))))
+    (.:[243..244] .)))
+
+;section 2 Span:248..310
+;Tarroni P, Passafaro M, Pollo A, Popoli M, Clementi F, Sher E.
+(SEC
+  (FRAG (NNP:[248..255] Tarroni) (NNP:[256..258] P,) (NNP:[259..268] Passafaro)
+        (NNP:[269..271] M,) (NNP:[272..277] Pollo) (NNP:[278..279] A)
+        (,:[279..280] ,) (NNP:[281..287] Popoli) (NNP:[288..290] M,)
+        (NNP:[291..299] Clementi) (NNP:[300..301] F) (,:[301..302] ,)
+        (NNP:[303..307] Sher) (NNP:[308..310] E.)))
+
+;section 3 Span:314..377
+;Department of Medical Pharmacology, University of Milan, Italy.
+(SEC
+  (FRAG (NNP:[314..324] Department) (IN:[325..327] of) (NNP:[328..335] Medical)
+        (NNP:[336..348] Pharmacology) (,:[348..349] ,)
+        (NNP:[350..360] University) (IN:[361..363] of) (NNP:[364..369] Milan)
+        (,:[369..370] ,) (NNP:[371..376] Italy) (.:[376..377] .)))
+
+;sentence 4 Span:381..632
+;High voltage activated Ca2+ channels are heteropolymeric complexes in which
+;the  alpha 1 subunit forms the channel, while the alpha 2-delta and beta
+;subunits are  important for the assembly and regulation of the biophysical
+;properties of the  channel.
+;[404..417]:gene-protein:"Ca2+ channels"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[381..385] High) (NN:[386..393] voltage))
+      (VBN:[394..403] activated)
+       (NN:[404..408] Ca2+) (NNS:[409..417] channels))
+    (VP (VBP:[418..421] are)
+      (NP-PRD
+        (NP (JJ:[422..437] heteropolymeric) (NNS:[438..447] complexes))
+        (SBAR
+          (WHPP-3 (IN:[448..450] in)
+            (WHNP (WDT:[451..456] which)))
+          (S
+            (NP-SBJ (DT:[457..460] the)
+              (NML (SYM:[462..467] alpha) (CD:[468..469] 1))
+              (NN:[470..477] subunit))
+            (VP (VBZ:[478..483] forms)
+              (NP (DT:[484..487] the) (NN:[488..495] channel))
+              (PP-3 (-NONE-:[495..495] *T*))))))
+      (,:[495..496] ,)
+      (SBAR-ADV (IN:[497..502] while)
+        (S
+          (NP-SBJ (DT:[503..506] the)
+            (NML
+              (NML
+                (NML
+                  (NML-1 (SYM:[507..512] alpha) (CD:[513..514] 2))
+                  (HYPH:[514..515] -) (SYM:[515..520] delta))
+                (NML-2 (-NONE-:[520..520] *P*)))
+              (CC:[521..524] and)
+              (NML
+                (NML
+                  (NML-1 (-NONE-:[524..524] *P*))
+                  (SYM:[525..529] beta))
+                (NML-2 (NNS:[530..538] subunits)))))
+          (VP (VBP:[539..542] are)
+            (ADJP-PRD (JJ:[544..553] important)
+              (PP (IN:[554..557] for)
+                (NP
+                  (NP (DT:[558..561] the) (NN:[562..570] assembly)
+                      (CC:[571..574] and) (NN:[575..585] regulation))
+                  (PP (IN:[586..588] of)
+                    (NP
+                      (NP (DT:[589..592] the) (JJ:[593..604] biophysical)
+                          (NNS:[605..615] properties))
+                      (PP (IN:[616..618] of)
+                        (NP (DT:[619..622] the) (NN:[624..631] channel))))))))))))
+    (.:[631..632] .)))
+
+;sentence 5 Span:633..840
+;We have tested the role of the beta 2 subunit on the expression and 
+;electrophysiological properties of the omega-conotoxin GVIA-sensitive Ca2+ 
+;channel expressed in the IMR 32 human neuroblastoma cell line.
+;[741..756]:gene-protein:"omega-conotoxin"
+;[772..785]:gene-protein:"Ca2+  channel"
+;[816..829]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[633..635] We))
+    (VP (VBP:[636..640] have)
+      (VP (VBN:[641..647] tested)
+        (NP
+          (NP (DT:[648..651] the) (NN:[652..656] role))
+          (PP (IN:[657..659] of)
+            (NP (DT:[660..663] the)
+              (NML (SYM:[664..668] beta) (CD:[669..670] 2))
+              (NN:[671..678] subunit)))
+          (PP (IN:[679..681] on)
+            (NP
+              (NP
+                (NP (DT:[682..685] the) (NN:[686..696] expression))
+                (CC:[697..700] and)
+                (NP (JJ:[702..722] electrophysiological)
+                    (NNS:[723..733] properties)))
+              (PP (IN:[734..736] of)
+                (NP
+                  (NP (DT:[737..740] the) (NN:[741..756] omega-conotoxin)
+                    (ADJP (NN:[757..761] GVIA) (HYPH:[761..762] -)
+                          (JJ:[762..771] sensitive))
+                     (NN:[772..776] Ca2+) (NN:[778..785] channel))
+                  (VP (VBN:[786..795] expressed)
+                    (NP (-NONE-:[795..795] *))
+                    (PP (IN:[796..798] in)
+                      (NP (DT:[799..802] the)
+                        (NML (NN:[803..806] IMR) (CD:[807..809] 32))
+                        (JJ:[810..815] human) (NN:[816..829] neuroblastoma)
+                         (NN:[830..834] cell) (NN:[835..839] line)))))))))))
+    (.:[839..840] .)))
+
+;sentence 6 Span:841..1094
+;Anti-beta 2  subunit antisense oligonucleotides supplied to the cells in
+;culture induced a  time-dependent increase in the number of
+;[125I]-omega-conotoxin binding sites on  the cell surface, which was not
+;paralleled by an increase in current amplitude.
+;[980..996]:gene-protein:"-omega-conotoxin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (AFX:[841..845] Anti) (HYPH:[845..846] -)
+          (NML (SYM:[846..850] beta) (CD:[851..852] 2))
+          (NN:[854..861] subunit))
+        (JJ:[862..871] antisense) (NNS:[872..888] oligonucleotides))
+      (VP (VBN:[889..897] supplied)
+        (NP (-NONE-:[897..897] *))
+        (PP (TO:[898..900] to)
+          (NP (DT:[901..904] the) (NNS:[905..910] cells)))
+        (PP (IN:[911..913] in)
+          (NP (NN:[914..921] culture)))))
+    (VP (VBD:[922..929] induced)
+      (NP
+        (NP
+          (NP (DT:[930..931] a)
+            (ADJP (NN:[933..937] time) (HYPH:[937..938] -)
+                  (JJ:[938..947] dependent))
+            (NN:[948..956] increase))
+          (PP (IN:[957..959] in)
+            (NP
+              (NP (DT:[960..963] the) (NN:[964..970] number))
+              (PP (IN:[971..973] of)
+                (NP (NN:[974..980] -LSB-125I-RSB-)
+                    (NN:[980..996] -omega-conotoxin) (NN:[997..1004] binding)
+                    (NNS:[1005..1010] sites)))))
+          (PP (IN:[1011..1013] on)
+            (NP (DT:[1015..1018] the) (NN:[1019..1023] cell)
+                (NN:[1024..1031] surface))))
+        (,:[1031..1032] ,)
+        (SBAR
+          (WHNP-1 (WDT:[1033..1038] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1038..1038] *T*))
+            (VP (VBD:[1039..1042] was) (RB:[1043..1046] not)
+              (VP (VBN:[1047..1057] paralleled)
+                (NP-1 (-NONE-:[1057..1057] *))
+                (PP (IN:[1058..1060] by)
+                  (NP-LGS
+                    (NP (DT:[1061..1063] an) (NN:[1064..1072] increase))
+                    (PP (IN:[1073..1075] in)
+                      (NP (NN:[1076..1083] current) (NN:[1084..1093] amplitude)))))))))))
+    (.:[1093..1094] .)))
+
+;sentence 7 Span:1096..1302
+;We suggest that a reduction in the expression of beta 2 stimulates the
+;transport  to the plasma membrane of non-functioning Ca2+ channels and, in
+;particular, of  the alpha 1 omega-conotoxin binding subunit.
+;[1220..1233]:gene-protein:"Ca2+ channels"
+;[1270..1285]:gene-protein:"omega-conotoxin"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1096..1098] We))
+    (VP (VBP:[1099..1106] suggest)
+      (SBAR (IN:[1107..1111] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1112..1113] a) (NN:[1114..1123] reduction))
+            (PP (IN:[1124..1126] in)
+              (NP
+                (NP (DT:[1127..1130] the) (NN:[1131..1141] expression))
+                (PP (IN:[1142..1144] of)
+                  (NP (SYM:[1145..1149] beta) (CD:[1150..1151] 2))))))
+          (VP (VBZ:[1152..1162] stimulates)
+            (NP
+              (NP (DT:[1163..1166] the) (NN:[1167..1176] transport))
+              (PP (TO:[1178..1180] to)
+                (NP (DT:[1181..1184] the) (NN:[1185..1191] plasma)
+                    (NN:[1192..1200] membrane)))
+              (PP
+                (PP (IN:[1201..1203] of)
+                  (NP
+                    (ADJP (AFX:[1204..1207] non) (HYPH:[1207..1208] -)
+                          (VBG:[1208..1219] functioning))
+                     (NN:[1220..1224] Ca2+) (NNS:[1225..1233] channels)))
+                (CC:[1234..1237] and) (,:[1237..1238] ,)
+                (PP
+                  (PP (IN:[1239..1241] in)
+                    (NP (JJ:[1242..1252] particular)))
+                  (,:[1252..1253] ,) (IN:[1254..1256] of)
+                  (NP (DT:[1258..1261] the)
+                    (NML (SYM:[1262..1267] alpha) (CD:[1268..1269] 1))
+                    (NML (NN:[1270..1285] omega-conotoxin)
+                         (NN:[1286..1293] binding))
+                    (NN:[1294..1301] subunit)))))))))
+    (.:[1301..1302] .)))
+
+;section 8 Span:1306..1350
+;PMID: 8198573 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1306..1310] PMID) (::[1310..1311] :) (CD:[1312..1319] 8198573)
+        (NN:[1320..1321] -LSB-) (NNP:[1321..1327] PubMed) (::[1328..1329] -)
+        (NN:[1330..1337] indexed) (IN:[1338..1341] for)
+        (NNP:[1342..1350] MEDLINE-RSB-)))

@@ -1,0 +1,310 @@
+;PMID: 3264700
+;source_file_646.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..154] = [t:48..154]
+;2)section:[e:158..201] = [t:158..201]
+;3)section:[e:205..283] = [t:205..283]
+;4)sentence:[e:287..483] = [t:287..483]
+;5)sentence:[e:484..659] = [t:484..659]
+;6)sentence:[e:660..788] = [t:660..788]
+;7)sentence:[e:789..975] = [t:789..975]
+;8)sentence:[e:976..1040] = [t:976..1040]
+;9)section:[e:1044..1088] = [t:1044..1088]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[435..438] azo
+;ERROR_Token in entity file but not tree[438..439] -
+;ERROR_Token in entity file but not tree[439..440] (
+;ERROR_Token in entity file but not tree[440..441] 2
+;ERROR_Token in entity file but not tree[441..442] )
+;ERROR_Token in entity file but not tree[445..450] azoxy
+;ERROR_Token in entity file but not tree[450..451] -
+;ERROR_Token in entity file but not tree[451..452] (
+;ERROR_Token in entity file but not tree[452..453] 3
+;ERROR_Token in entity file but not tree[453..454] )
+;ERROR_Token in entity file but not tree[459..466] hydrazo
+;ERROR_Token in entity file but not tree[466..467] -
+;ERROR_Token in entity file but not tree[467..468] (
+;ERROR_Token in entity file but not tree[468..469] 4
+;ERROR_Token in entity file but not tree[469..470] )
+;ERROR_POS mismatch [32..33] t:token e:CD 3
+;ERROR_Token in tree file but not entity[435..442] azo-(2)
+;ERROR_Token in tree file but not entity[445..454] azoxy-(3)
+;ERROR_Token in tree file but not entity[459..470] hydrazo-(4)
+
+;section 0 Span:0..42
+;Anticancer Drug Des. 1988 Dec;3(3):185-90.
+(SEC
+  (FRAG (NNP:[0..10] Anticancer) (NNP:[11..15] Drug) (NNP:[16..19] Des)
+        (JJ:[19..20] .) (CD:[21..25] 1988) (JJ:[26..30] Dec;) (CD:[30..31] 3)
+        (NN:[31..32] -LRB-) (token:[32..33] 3) (-RRB-:[33..34] -RRB-)
+        (::[34..35] :) (CD:[35..37] 18) (CD:[37..41] 5-90) (.:[41..42] .)))
+
+;sentence 1 Span:48..154
+;Selective inhibition of cholesterol side-chain cleavage by potential pro-drug
+; forms of aminoglutethimide.
+;[72..83]:substance:"cholesterol"
+;[117..132]:substance:"pro-drug  forms"
+;[136..153]:substance:"aminoglutethimide"
+(SENT
+  (NP-SBJ
+    (NP (JJ:[48..57] Selective) (NN:[58..68] inhibition))
+    (PP (IN:[69..71] of)
+      (NP (NN:[72..83] cholesterol)
+        (NML (NN:[84..88] side) (HYPH:[88..89] -) (NN:[89..94] chain))
+        (NN:[95..103] cleavage)))
+    (PP (IN:[104..106] by)
+      (NP
+        (NP (JJ:[107..116] potential)
+          
+          (NML (AFX:[117..120] pro) (HYPH:[120..121] -) (NN:[121..125] drug))
+          (NNS:[127..132] forms))
+        (PP (IN:[133..135] of)
+          (NP (NN:[136..153] aminoglutethimide)))))
+    (.:[153..154] .)))
+
+;section 2 Span:158..201
+;Jarman M, Barrie SE, Leung CS, Rowlands MG.
+(SEC
+  (FRAG (NNP:[158..164] Jarman) (NNP:[165..167] M,) (NNP:[168..174] Barrie)
+        (NNP:[175..177] SE) (,:[177..178] ,) (NNP:[179..184] Leung)
+        (NNP:[185..187] CS) (,:[187..188] ,) (NNP:[189..197] Rowlands)
+        (NNP:[198..201] MG.)))
+
+;section 3 Span:205..283
+;Section of Drug Development, Institute of Cancer Research, Sutton, Surrey,
+;UK.
+(SEC
+  (FRAG (NN:[205..212] Section) (IN:[213..215] of) (NNP:[216..220] Drug)
+        (NNP:[221..232] Development) (,:[232..233] ,) (NNP:[234..243] Institute)
+        (IN:[244..246] of) (NNP:[247..253] Cancer) (NNP:[254..262] Research)
+        (,:[262..263] ,) (NNP:[264..270] Sutton) (,:[270..271] ,)
+        (NNP:[272..278] Surrey) (,:[278..279] ,) (NNP:[280..283] UK.)))
+
+;sentence 4 Span:287..483
+;Potential pro-drugs for aminoglutethimide (1) an agent used for the treatment
+;of  hormone-dependent breast cancer have been synthesized, namely the
+;azo-(2),  azoxy-(3) and hydrazo-(4) derivatives.
+;[297..306]:substance:"pro-drugs"
+;[311..328]:substance:"aminoglutethimide"
+;[330..331]:substance:"1"
+;[336..341]:substance:"agent"
+;[369..376]:substance:"hormone"
+;[435..438]...[471..482]:substance:"azo"..."derivatives"
+;[440..441]:substance:"2"
+;[445..450]...[471..482]:substance:"azoxy"..."derivatives"
+;[452..453]:substance:"3"
+;[459..466]...[471..482]:substance:"hydrazo"..."derivatives"
+;[468..469]:substance:"4"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[287..296] Potential)
+         (AFX:[297..300] pro) (HYPH:[300..301] -) (NNS:[301..306] drugs))
+      (PP (IN:[307..310] for)
+        (NP
+          (NP (NN:[311..328] aminoglutethimide)
+            (PRN (-LRB-:[329..330] -LRB-)
+              (NP (CD:[330..331] 1))
+              (-RRB-:[331..332] -RRB-)))
+          (NP
+            (NP (DT:[333..335] an) (NN:[336..341] agent))
+            (VP (VBN:[342..346] used)
+              (NP (-NONE-:[346..346] *))
+              (PP (IN:[347..350] for)
+                (NP
+                  (NP (DT:[351..354] the) (NN:[355..364] treatment))
+                  (PP (IN:[365..367] of)
+                    (NP
+                      (ADJP (NN:[369..376] hormone) (HYPH:[376..377] -)
+                            (JJ:[377..386] dependent))
+                      (NN:[387..393] breast) (NN:[394..400] cancer))))))))))
+    (VP (VBP:[401..405] have)
+      (VP (VBN:[406..410] been)
+        (VP (VBN:[411..422] synthesized)
+          (NP-2 (-NONE-:[422..422] *))
+          (,:[422..423] ,)
+          (NP
+            (ADVP (RB:[424..430] namely))
+            (DT:[431..434] the)
+            (NML
+              (NML (NN:[435..442] azo--LRB-2-RRB-)
+                (NML-1 (-NONE-:[442..442] *P*)))
+              (,:[442..443] ,)
+              (NML (NN:[445..454] azoxy--LRB-3-RRB-)
+                (NML-1 (-NONE-:[454..454] *P*)))
+              (CC:[455..458] and)
+              (NML (NN:[459..470] hydrazo--LRB-4-RRB-)
+                (NML-1 (NNS:[471..482] derivatives))))))))
+    (.:[482..483] .)))
+
+;sentence 5 Span:484..659
+;These compounds have been tested for  inhibitory action towards the two main
+;target enzymes for 1, aromatase and the  cholesterol side-chain cleavage
+;enzyme complex, P-450scc.
+;[490..499]:substance:"compounds"
+;[568..575]:substance:"enzymes"
+;[580..581]:substance:"1"
+;[583..592]:cyp450:"aromatase"
+;[602..648]:cyp450:"cholesterol side-chain cleavage enzyme complex"
+;[650..658]:cyp450:"P-450scc"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[484..489] These) (NNS:[490..499] compounds))
+    (VP (VBP:[500..504] have)
+      (VP (VBN:[505..509] been)
+        (VP (VBN:[510..516] tested)
+          (NP-1 (-NONE-:[516..516] *))
+          (PP-CLR (IN:[517..520] for)
+            (NP
+              (NP (JJ:[522..532] inhibitory) (NN:[533..539] action))
+              (PP (IN:[540..547] towards)
+                (NP
+                  (NP
+                    (NP (DT:[548..551] the) (CD:[552..555] two)
+                        (JJ:[556..560] main) (NN:[561..567] target)
+                        (NNS:[568..575] enzymes))
+                    (PP (IN:[576..579] for)
+                      (NP (CD:[580..581] 1))))
+                  (,:[581..582] ,)
+                  (NP
+                    (NP (NN:[583..592] aromatase))
+                    (CC:[593..596] and)
+                    (NP
+                      (NP (DT:[597..600] the)
+                        
+                        (NML (NN:[602..613] cholesterol)
+                          (NML (NN:[614..618] side) (HYPH:[618..619] -)
+                               (NN:[619..624] chain))
+                          (NN:[625..633] cleavage))
+                        (NN:[634..640] enzyme) (NN:[641..648] complex))
+                      (,:[648..649] ,)
+                      (NP (NN:[650..658] P-450scc)))))))))))
+    (.:[658..659] .)))
+
+;sentence 6 Span:660..788
+;None inhibited  aromatase but 3 and 4 inhibited P-450scc, the respective IC50
+;values being about  twice and one-half that for 1.
+;[676..685]:cyp450:"aromatase"
+;[690..691]:substance:"3"
+;[696..697]:substance:"4"
+;[708..716]:cyp450:"P-450scc"
+;[733..737]:quantitative-name:"IC50"
+;[758..763]:quantitative-value:"twice"
+;[768..776]:quantitative-value:"one-half"
+;[786..787]:substance:"1"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[660..664] None))
+        (FRAG-2 (-NONE-:[664..664] *ICH*)))
+      (VP (VBD:[665..674] inhibited)
+        (NP (NN:[676..685] aromatase))
+        (FRAG-2 (CC:[686..689] but)
+          (NP (CD:[690..691] 3)))))
+    (CC:[692..695] and)
+    (S
+      (NP-SBJ (CD:[696..697] 4))
+      (VP (VBD:[698..707] inhibited)
+        (NP (NN:[708..716] P-450scc))
+        (,:[716..717] ,)
+        (S-ADV
+          (NP-SBJ (DT:[718..721] the) (JJ:[722..732] respective)
+                  (NN:[733..737] IC50) (NNS:[738..744] values))
+          (VP (VBG:[745..750] being)
+            (NP-PRD
+              (NP (RB:[751..756] about)
+                (NML
+                  (NML (RB:[758..763] twice)
+                    (NML-1 (-NONE-:[763..763] *P*)))
+                  (CC:[764..767] and)
+                  (NML (RB:[768..776] one-half)
+                    (NML-1 (DT:[777..781] that)))))
+              (PP (IN:[782..785] for)
+                (NP (CD:[786..787] 1))))))))
+    (.:[787..788] .)))
+
+;sentence 7 Span:789..975
+;Compounds 1 and 3 were also tested as inhibitors  of the 17
+;alpha-hydroxylase-C17,20 lyase complex in comparison with ketoconazole  which
+;acts against prostatic cancer by this mechanism.
+;[789..798]:substance:"Compounds"
+;[799..800]:substance:"1"
+;[805..806]:substance:"3"
+;[827..837]:substance:"inhibitors"
+;[846..887]:cyp450:"17 alpha-hydroxylase-C17,20 lyase complex"
+;[907..919]:substance:"ketoconazole"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NML-2 (NNS:[789..798] Compounds))
+        (CD:[799..800] 1))
+      (CC:[801..804] and)
+      (NP
+        (NML-2 (-NONE-:[804..804] *P*))
+        (CD:[805..806] 3)))
+    (VP (VBD:[807..811] were)
+      (ADVP (RB:[812..816] also))
+      (VP (VBN:[817..823] tested)
+        (NP-3 (-NONE-:[823..823] *))
+        (PP (IN:[824..826] as)
+          (NP
+            (NP (NNS:[827..837] inhibitors))
+            (PP (IN:[839..841] of)
+              (NP (DT:[842..845] the)
+                
+                (NML
+                  (NML (CD:[846..848] 17) (NN:[849..866] alpha-hydroxylase))
+                  (HYPH:[866..867] -) (NN:[867..873] C17,20)
+                   (NN:[874..879] lyase))
+                (NN:[880..887] complex)))))
+        (PP (IN:[888..890] in)
+          (NP
+            (NP (NN:[891..901] comparison))
+            (PP (IN:[902..906] with)
+              (NP
+                (NP (NN:[907..919] ketoconazole))
+                (SBAR
+                  (WHNP-1 (WDT:[921..926] which))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[926..926] *T*))
+                    (VP (VBZ:[927..931] acts)
+                      (PP (IN:[932..939] against)
+                        (NP (JJ:[940..949] prostatic) (NN:[950..956] cancer)))
+                      (PP (IN:[957..959] by)
+                        (NP (DT:[960..964] this) (NN:[965..974] mechanism))))))))))))
+    (.:[974..975] .)))
+
+;sentence 8 Span:976..1040
+;The azoxy-derivative 3  was a weak inhibitor but 1 was inactive.
+;[980..998]:substance:"azoxy-derivative 3"
+;[1011..1020]:substance:"inhibitor"
+;[1025..1026]:substance:"1"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NML (DT:[976..979] The) (NN:[980..985] azoxy) (HYPH:[985..986] -)
+             (NN:[986..996] derivative))
+        (CD:[997..998] 3))
+      (VP (VBD:[1000..1003] was)
+        (NP-PRD (DT:[1004..1005] a) (JJ:[1006..1010] weak)
+                (NN:[1011..1020] inhibitor))))
+    (CC:[1021..1024] but)
+    (S
+      (NP-SBJ (CD:[1025..1026] 1))
+      (VP (VBD:[1027..1030] was)
+        (ADJP-PRD (JJ:[1031..1039] inactive))))
+    (.:[1039..1040] .)))
+
+;section 9 Span:1044..1088
+;PMID: 3264700 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1044..1048] PMID) (::[1048..1049] :) (CD:[1050..1057] 3264700)
+        (NN:[1058..1059] -LSB-) (NNP:[1059..1065] PubMed) (::[1066..1067] -)
+        (NN:[1068..1075] indexed) (IN:[1076..1079] for)
+        (NNP:[1080..1088] MEDLINE-RSB-)))

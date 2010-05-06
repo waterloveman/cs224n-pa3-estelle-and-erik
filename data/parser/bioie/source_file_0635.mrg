@@ -1,0 +1,554 @@
+;PMID: 9582502
+;source_file_870.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..197] = [t:42..197]
+;2)section:[e:201..226] = [t:201..226]
+;3)section:[e:230..306] = [t:230..306]
+;4)sentence:[e:310..518] = [t:310..518]
+;5)sentence:[e:519..683] = [t:519..683]
+;6)sentence:[e:684..799] = [t:684..799]
+;7)sentence:[e:800..919] = [t:800..919]
+;8)sentence:[e:920..1091] = [t:920..1091]
+;9)sentence:[e:1092..1189] = [t:1092..1189]
+;10)sentence:[e:1190..1328] = [t:1190..1328]
+;11)sentence:[e:1330..1465] = [t:1330..1465]
+;12)sentence:[e:1466..1672] = [t:1466..1672]
+;13)sentence:[e:1673..1758] = [t:1673..1758]
+;14)sentence:[e:1759..2002] = [t:1759..2002]
+;15)sentence:[e:2003..2125] = [t:2003..2125]
+;16)section:[e:2129..2173] = [t:2129..2173]
+
+;section 0 Span:0..36
+;J Endocrinol. 1998 Mar;156(3):461-7.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..12] Endocrinol) (.:[12..13] .)
+        ('':[14..18] 1998) (CC:[19..27] Mar;156-LRB-) (CD:[27..28] 3)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :461) (::[33..34] -)
+        (CD:[34..36] 7.)))
+
+;sentence 1 Span:42..197
+;Interleukin-1 inhibits Leydig cell steroidogenesis without affecting 
+;steroidogenic acute regulatory protein messenger ribonucleic acid or protein 
+;levels.
+;[42..55]:substance:"Interleukin-1"
+;[112..150]:substance:"steroidogenic acute regulatory protein"
+;[161..177]:substance:"ribonucleic acid"
+;[181..188]:substance:"protein"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[42..55] Interleukin-1))
+    (VP (VBZ:[56..64] inhibits)
+      (NP (NNP:[65..71] Leydig) (NN:[72..76] cell) (NN:[77..92] steroidogenesis))
+      (PP (IN:[93..100] without)
+        (S-NOM
+          (NP-SBJ (-NONE-:[100..100] *))
+          (VP (VBG:[101..110] affecting)
+            (NP
+              (NP
+                (NML-2 (JJ:[112..125] steroidogenic) (JJ:[126..131] acute)
+                       (JJ:[132..142] regulatory) (NN:[143..150] protein))
+                (NML (NN:[151..160] messenger)
+                   (JJ:[161..172] ribonucleic) (NN:[173..177] acid))
+                (NML-1 (-NONE-:[177..177] *P*)))
+              (CC:[178..180] or)
+              (NP
+                (NML-2 (-NONE-:[180..180] *P*))
+                (NN:[181..188] protein)
+                (NML-1 (NNS:[190..196] levels))))))))
+    (.:[196..197] .)))
+
+;section 2 Span:201..226
+;Lin T, Wang D, Stocco DM.
+(SEC
+  (FRAG (NNP:[201..204] Lin) (NNP:[205..206] T) (,:[206..207] ,)
+        (NNP:[208..212] Wang) (NNP:[213..214] D) (,:[214..215] ,)
+        (NNP:[216..222] Stocco) (NNP:[223..225] DM) (.:[225..226] .)))
+
+;section 3 Span:230..306
+;Medical Service, WJB Dorn Veterans' Hospital, Columbia, South Carolina, USA.
+(SEC
+  (FRAG (NNP:[230..237] Medical) (NNP:[238..245] Service) (,:[245..246] ,)
+        (NNP:[247..250] WJB) (NNP:[251..255] Dorn) (NNP:[256..264] Veterans)
+        (POS:[264..265] ') (NN:[266..274] Hospital) (,:[274..275] ,)
+        (NNP:[276..284] Columbia) (,:[284..285] ,) (NNP:[286..291] South)
+        (NNP:[292..300] Carolina) (,:[300..301] ,) (NNP:[302..305] USA)
+        (.:[305..306] .)))
+
+;sentence 4 Span:310..518
+;The rate-limiting step of steroidogenesis is the transport of the substrate 
+;cholesterol from the outer to the inner mitochondrial membrane which involves
+;a  cycloheximide-sensitive newly synthesized protein.
+;[376..385]:substance:"substrate"
+;[387..398]:substance:"cholesterol"
+;[468..481]:substance:"cycloheximide"
+;[510..517]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[310..313] The)
+        (ADJP (NN:[314..318] rate) (HYPH:[318..319] -) (VBG:[319..327] limiting))
+        (NN:[328..332] step))
+      (PP (IN:[333..335] of)
+        (NP (NN:[336..351] steroidogenesis))))
+    (VP (VBZ:[352..354] is)
+      (NP-PRD
+        (NP
+          (NP (DT:[355..358] the) (NN:[359..368] transport))
+          (PP (IN:[369..371] of)
+            (NP (DT:[372..375] the) (NN:[376..385] substrate)
+                (NN:[387..398] cholesterol)))
+          (PP (IN:[399..403] from)
+            (NP (DT:[404..407] the) (JJ:[408..413] outer)))
+          (PP (TO:[414..416] to)
+            (NP (DT:[417..420] the) (JJ:[421..426] inner)
+                (JJ:[427..440] mitochondrial) (NN:[441..449] membrane))))
+        (SBAR
+          (WHNP-1 (WDT:[450..455] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[455..455] *T*))
+            (VP (VBZ:[456..464] involves)
+              (NP (DT:[465..466] a)
+                (ADJP (NN:[468..481] cycloheximide) (HYPH:[481..482] -)
+                      (JJ:[482..491] sensitive))
+                (ADJP (RB:[492..497] newly) (VBN:[498..509] synthesized))
+                (NN:[510..517] protein)))))))
+    (.:[517..518] .)))
+
+;sentence 5 Span:519..683
+;A protein believed to carry  out this function was recently cloned from MA-10
+;mouse Leydig tumor cells and  named the steroidogenic acute regulatory
+;protein (StAR).
+;[521..528]:substance:"protein"
+;[637..675]:substance:"steroidogenic acute regulatory protein"
+;[677..681]:substance:"StAR"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[519..520] A) (NN:[521..528] protein))
+      (VP (VBN:[529..537] believed)
+        (S
+          (NP-SBJ (-NONE-:[537..537] *))
+          (VP (TO:[538..540] to)
+            (VP (VB:[541..546] carry)
+              (PRT (RP:[548..551] out))
+              (NP (DT:[552..556] this) (NN:[557..565] function)))))))
+    (VP (VBD:[566..569] was)
+      (VP
+        (VP
+          (ADVP-TMP (RB:[570..578] recently))
+          (VBN:[579..585] cloned)
+          (NP-1 (-NONE-:[585..585] *))
+          (PP (IN:[586..590] from)
+            (NP (NN:[591..596] MA-10) (NN:[597..602] mouse)
+                (NNP:[603..609] Leydig) (NN:[610..615] tumor)
+                (NNS:[616..621] cells))))
+        (CC:[622..625] and)
+        (VP (VBN:[627..632] named)
+          (NP-1 (-NONE-:[632..632] *))
+          (NP (DT:[633..636] the)
+            (NML
+              (NML (JJ:[637..650] steroidogenic) (JJ:[651..656] acute)
+                   (JJ:[657..667] regulatory) (NN:[668..675] protein))
+              (NML (-LRB-:[676..677] -LRB-) (NN:[677..681] StAR)
+                   (-RRB-:[681..682] -RRB-)))))))
+    (.:[682..683] .)))
+
+;sentence 6 Span:684..799
+;In the present study,  we evaluated the expression and regulation of StAR in
+;primary cultures of rat  Leydig cells.
+;[753..757]:substance:"StAR"
+(SENT
+  (S
+    (PP (IN:[684..686] In)
+      (NP (DT:[687..690] the) (JJ:[691..698] present) (NN:[699..704] study)))
+    (,:[704..705] ,)
+    (NP-SBJ (PRP:[707..709] we))
+    (VP (VBD:[710..719] evaluated)
+      (NP
+        (NP (DT:[720..723] the) (NN:[724..734] expression) (CC:[735..738] and)
+            (NN:[739..749] regulation))
+        (PP (IN:[750..752] of)
+          (NP (NN:[753..757] StAR))))
+      (PP-LOC (IN:[758..760] in)
+        (NP
+          (NP (JJ:[761..768] primary) (NNS:[769..777] cultures))
+          (PP (IN:[778..780] of)
+            (NP (NN:[781..784] rat) (NNP:[786..792] Leydig)
+                (NNS:[793..798] cells))))))
+    (.:[798..799] .)))
+
+;sentence 7 Span:800..919
+;StAR mRNA was expressed in Leydig cells as two major transcripts  of 3.8 and
+;1.7 kb and one minor transcript of 1.2 kb.
+;[800..809]:substance:"StAR mRNA"
+;[869..872]:quantitative-value:"3.8"
+;[877..880]:quantitative-value:"1.7"
+;[881..883]:quantitative-units:"kb"
+;[912..915]:quantitative-value:"1.2"
+;[916..918]:quantitative-units:"kb"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[800..804] StAR) (NN:[805..809] mRNA))
+    (VP (VBD:[810..813] was)
+      (VP (VBN:[814..823] expressed)
+        (NP-1 (-NONE-:[823..823] *))
+        (PP-LOC (IN:[824..826] in)
+          (NP (NNP:[827..833] Leydig) (NNS:[834..839] cells)))
+        (PP (IN:[840..842] as)
+          (NP
+            (NP
+              (NP (CD:[843..846] two) (JJ:[847..852] major)
+                  (NNS:[853..864] transcripts))
+              (PP (IN:[866..868] of)
+                (NP
+                  (NP (CD:[869..872] 3.8)
+                    (NML-2 (-NONE-:[872..872] *P*)))
+                  (CC:[873..876] and)
+                  (NP (CD:[877..880] 1.7)
+                    (NML-2 (NN:[881..883] kb))))))
+            (CC:[884..887] and)
+            (NP
+              (NP (CD:[888..891] one) (JJ:[892..897] minor)
+                  (NN:[898..908] transcript))
+              (PP (IN:[909..911] of)
+                (NP (CD:[912..915] 1.2) (NN:[916..918] kb))))))))
+    (.:[918..919] .)))
+
+;sentence 8 Span:920..1091
+;Induction of StAR mRNA  transcripts could be detected as early as 30 min
+;after the addition of human  choriogonadotropin (hCG) with peak levels
+;attained between 2 and 4 h.
+;[933..942]:substance:"StAR mRNA"
+;[986..988]:quantitative-value:"30"
+;[989..992]:quantitative-units:"min"
+;[1015..1040]:substance:"human  choriogonadotropin"
+;[1042..1045]:substance:"hCG"
+;[1073..1088]:quantitative-value:"between 2 and 4"
+;[1089..1090]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[920..929] Induction))
+      (PP (IN:[930..932] of)
+        (NP
+           (NN:[933..937] StAR) (NN:[938..942] mRNA)
+          (NNS:[944..955] transcripts))))
+    (VP (MD:[956..961] could)
+      (VP (VB:[962..964] be)
+        (VP (VBN:[965..973] detected)
+          (NP-2 (-NONE-:[973..973] *))
+          (ADVP
+            (ADVP (RB:[974..976] as) (RB:[977..982] early))
+            (PP (IN:[983..985] as)
+              (PP-TMP
+                (NP-ADV (CD:[986..988] 30) (NN:[989..992] min))
+                (IN:[993..998] after)
+                (NP
+                  (NP (DT:[999..1002] the) (NN:[1003..1011] addition))
+                  (PP (IN:[1012..1014] of)
+                    (NP
+                      (NP (JJ:[1015..1020] human)
+                          (NN:[1022..1040] choriogonadotropin))
+                      (NP (-LRB-:[1041..1042] -LRB-) (NN:[1042..1045] hCG)
+                          (-RRB-:[1045..1046] -RRB-))))))))
+          (PP (IN:[1047..1051] with)
+            (NP
+              (NP (JJ:[1052..1056] peak) (NNS:[1057..1063] levels))
+              (VP (VBN:[1064..1072] attained)
+                (NP (-NONE-:[1072..1072] *))
+                (PP-TMP (IN:[1073..1080] between)
+                  (NP
+                    (NP (CD:[1081..1082] 2)
+                      (NML-1 (-NONE-:[1082..1082] *P*)))
+                    (CC:[1083..1086] and)
+                    (NP (CD:[1087..1088] 4)
+                      (NML-1 (NN:[1089..1090] h)))))))))))
+    (.:[1090..1091] .)))
+
+;sentence 9 Span:1092..1189
+;hCG in  concentrations of 0.1-10 ng/ml caused a dose-dependent increase in
+;StAR mRNA  expression.
+;[1092..1095]:substance:"hCG"
+;[1118..1124]:quantitative-value:"0.1-10"
+;[1125..1130]:quantitative-units:"ng/ml"
+;[1167..1176]:substance:"StAR mRNA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1092..1095] hCG))
+      (PP (IN:[1096..1098] in)
+        (NP
+          (NP (NNS:[1100..1114] concentrations))
+          (PP (IN:[1115..1117] of)
+            (NP
+              (NP
+                (QP (CD:[1118..1121] 0.1) (HYPH:[1121..1122] -)
+                    (CD:[1122..1124] 10))
+                (NN:[1125..1127] ng))
+              (PP (SYM:[1127..1128] /)
+                (NP (NN:[1128..1130] ml))))))))
+    (VP (VBD:[1131..1137] caused)
+      (NP
+        (NP (DT:[1138..1139] a)
+          (ADJP (NN:[1140..1144] dose) (HYPH:[1144..1145] -)
+                (JJ:[1145..1154] dependent))
+          (NN:[1155..1163] increase))
+        (PP (IN:[1164..1166] in)
+          (NP
+            (NML (NN:[1167..1171] StAR) (NN:[1172..1176] mRNA))
+            (NN:[1178..1188] expression)))))
+    (.:[1188..1189] .)))
+
+;sentence 10 Span:1190..1328
+;hCG administered at a dose of 10 ng/ml increased the 3.8 kb StAR  mRNA level
+;about 14-fold and the 1.7 kb StAR mRNA level about 13.6-fold.
+;[1190..1193]:substance:"hCG"
+;[1220..1222]:quantitative-value:"10"
+;[1223..1228]:quantitative-units:"ng/ml"
+;[1243..1246]:quantitative-value:"3.8"
+;[1247..1249]:quantitative-units:"kb"
+;[1250..1260]:substance:"StAR  mRNA"
+;[1267..1280]:quantitative-value:"about 14-fold"
+;[1289..1292]:quantitative-value:"1.7"
+;[1293..1295]:quantitative-units:"kb"
+;[1296..1305]:substance:"StAR mRNA"
+;[1312..1327]:quantitative-value:"about 13.6-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1190..1193] hCG))
+      (VP (VBN:[1194..1206] administered)
+        (NP (-NONE-:[1206..1206] *))
+        (PP (IN:[1207..1209] at)
+          (NP
+            (NP (DT:[1210..1211] a) (NN:[1212..1216] dose))
+            (PP (IN:[1217..1219] of)
+              (NP
+                (NP (CD:[1220..1222] 10) (NN:[1223..1225] ng))
+                (PP (SYM:[1225..1226] /)
+                  (NP (NN:[1226..1228] ml)))))))))
+    (VP
+      (VP (VBD:[1229..1238] increased)
+        (NP=1 (DT:[1239..1242] the)
+          (NML (CD:[1243..1246] 3.8) (NN:[1247..1249] kb))
+          (NML (NN:[1250..1254] StAR) (NN:[1256..1260] mRNA))
+          (NN:[1261..1266] level))
+        (ADVP-EXT=2
+          (QP (RB:[1267..1272] about) (CD:[1273..1275] 14) (HYPH:[1275..1276] -))
+          (RB:[1276..1280] fold)))
+      (CC:[1281..1284] and)
+      (VP
+        (NP=1 (DT:[1285..1288] the)
+          (NML (CD:[1289..1292] 1.7) (NN:[1293..1295] kb))
+          (NML (NN:[1296..1300] StAR) (NN:[1301..1305] mRNA))
+          (NN:[1306..1311] level))
+        (ADVP-EXT=2
+          (QP (RB:[1312..1317] about) (CD:[1318..1322] 13.6)
+              (HYPH:[1322..1323] -))
+          (RB:[1323..1327] fold))))
+    (.:[1327..1328] .)))
+
+;sentence 11 Span:1330..1465
+;hCG-stimulated StAR mRNA was associated with increased StAR protein levels as
+; determined by immunoblot analysis (a 4.5-fold increase).
+;[1330..1333]:substance:"hCG"
+;[1345..1354]:substance:"StAR mRNA"
+;[1385..1397]:substance:"StAR protein"
+;[1446..1454]:quantitative-value:"4.5-fold"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (NN:[1330..1333] hCG) (HYPH:[1333..1334] -)
+            (VBN:[1334..1344] stimulated))
+       (NN:[1345..1349] StAR) (NN:[1350..1354] mRNA))
+    (VP (VBD:[1355..1358] was)
+      (VP (VBN:[1359..1369] associated)
+        (NP-1 (-NONE-:[1369..1369] *))
+        (PP-CLR (IN:[1370..1374] with)
+          (NP
+            (NP (VBN:[1375..1384] increased)
+              (NML (NN:[1385..1389] StAR) (NN:[1390..1397] protein))
+              (NNS:[1398..1404] levels))
+            (SBAR (IN:[1405..1407] as)
+              (S
+                (NP-SBJ-2 (-NONE-:[1407..1407] *))
+                (VP (VBN:[1409..1419] determined)
+                  (NP-2 (-NONE-:[1419..1419] *))
+                  (PP-MNR (IN:[1420..1422] by)
+                    (NP (NN:[1423..1433] immunoblot) (NN:[1434..1442] analysis))))))
+            (PRN (-LRB-:[1443..1444] -LRB-)
+              (NP (DT:[1444..1445] a)
+                (QP (CD:[1446..1449] 4.5) (HYPH:[1449..1450] -)
+                    (JJ:[1450..1454] fold))
+                (NN:[1455..1463] increase))
+              (-RRB-:[1463..1464] -RRB-))))))
+    (.:[1464..1465] .)))
+
+;sentence 12 Span:1466..1672
+;Murine interleukin-1  alpha (mIL-1 alpha) at a concentration of 100 ng/ml
+;inhibited hCG-induced  cytochrome P450 side-chain cleavage (P450 scc) mRNA
+;expression and testosterone  formation almost completely.
+;[1466..1493]:substance:"Murine interleukin-1  alpha"
+;[1495..1506]:substance:"mIL-1 alpha"
+;[1530..1533]:quantitative-value:"100"
+;[1534..1539]:quantitative-units:"ng/ml"
+;[1550..1553]:substance:"hCG"
+;[1563..1614]:substance:"cytochrome P450 side-chain cleavage (P450 scc) mRNA"
+;[1630..1642]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[1466..1472] Murine) (NN:[1473..1486] interleukin-1)
+            (SYM:[1488..1493] alpha))
+        (NP (-LRB-:[1494..1495] -LRB-)
+           (NN:[1495..1500] mIL-1) (SYM:[1501..1506] alpha)
+          (-RRB-:[1506..1507] -RRB-)))
+      (PP (IN:[1508..1510] at)
+        (NP
+          (NP (DT:[1511..1512] a) (NN:[1513..1526] concentration))
+          (PP (IN:[1527..1529] of)
+            (NP
+              (NP (CD:[1530..1533] 100) (NN:[1534..1536] ng))
+              (PP (SYM:[1536..1537] /)
+                (NP (NN:[1537..1539] ml))))))))
+    (VP (VBD:[1540..1549] inhibited)
+      (NP
+        (NP
+          (NML
+            (ADJP (NN:[1550..1553] hCG) (HYPH:[1553..1554] -)
+                  (VBN:[1554..1561] induced))
+            (NML
+              (NML
+                (NML (NN:[1563..1573] cytochrome) (NN:[1574..1578] P450))
+                (NML (NN:[1579..1583] side) (HYPH:[1583..1584] -)
+                     (NN:[1584..1589] chain))
+                (NN:[1590..1598] cleavage))
+              (NML (-LRB-:[1599..1600] -LRB-) (NN:[1600..1604] P450)
+                   (NN:[1605..1608] scc) (-RRB-:[1608..1609] -RRB-))))
+          (NN:[1610..1614] mRNA) (NN:[1615..1625] expression))
+        (CC:[1626..1629] and)
+        (NP (NN:[1630..1642] testosterone) (NN:[1644..1653] formation)))
+      (ADVP (RB:[1654..1660] almost) (RB:[1661..1671] completely)))
+    (.:[1671..1672] .)))
+
+;sentence 13 Span:1673..1758
+;Interestingly, mIL-1 alpha had no effect on  hCG-induced StAR mRNA or protein
+;levels.
+;[1688..1699]:substance:"mIL-1 alpha"
+;[1718..1721]:substance:"hCG"
+;[1730..1739]:substance:"StAR mRNA"
+;[1743..1750]:substance:"protein"
+(SENT
+  (S
+    (ADVP (RB:[1673..1686] Interestingly))
+    (,:[1686..1687] ,)
+    (NP-SBJ (NN:[1688..1693] mIL-1) (SYM:[1694..1699] alpha))
+    (VP (VBD:[1700..1703] had)
+      (NP
+        (NP (DT:[1704..1706] no) (NN:[1707..1713] effect))
+        (PP (IN:[1714..1716] on)
+          (NP
+            (NP
+              (ADJP-1 (NN:[1718..1721] hCG) (HYPH:[1721..1722] -)
+                      (VBN:[1722..1729] induced))
+              (NML
+                (NML-2 (NN:[1730..1734] StAR))
+                (NN:[1735..1739] mRNA))
+              (NML-3 (-NONE-:[1739..1739] *P*)))
+            (CC:[1740..1742] or)
+            (NP
+              (ADJP-1 (-NONE-:[1742..1742] *P*))
+              (NML
+                (NML-2 (-NONE-:[1742..1742] *P*))
+                (NN:[1743..1750] protein))
+              (NML-3 (NNS:[1751..1757] levels)))))))
+    (.:[1757..1758] .)))
+
+;sentence 14 Span:1759..2002
+;Furthermore, mIL-1 alpha (10 ng/ml)  decreased conversion of
+;(22R)-hydroxycholesterol to testosterone while the  conversion of
+;pregnenolone, 17-hydroxypregnenolone, dehydroepiandrosterone and 
+;androstenedione to testosterone were not affected.
+;[1772..1783]:substance:"mIL-1 alpha"
+;[1785..1787]:quantitative-value:"10"
+;[1788..1793]:quantitative-units:"ng/ml"
+;[1820..1844]:substance:"(22R)-hydroxycholesterol"
+;[1848..1860]:substance:"testosterone"
+;[1886..1898]:substance:"pregnenolone"
+;[1900..1922]:substance:"17-hydroxypregnenolone"
+;[1924..1946]:substance:"dehydroepiandrosterone"
+;[1952..1967]:substance:"androstenedione"
+;[1971..1983]:substance:"testosterone"
+(SENT
+  (S
+    (ADVP (RB:[1759..1770] Furthermore))
+    (,:[1770..1771] ,)
+    (NP-SBJ
+       (NN:[1772..1777] mIL-1) (SYM:[1778..1783] alpha)
+      (PRN (-LRB-:[1784..1785] -LRB-)
+        (NP
+          (NP (CD:[1785..1787] 10) (NN:[1788..1790] ng))
+          (PP (SYM:[1790..1791] /)
+            (NP (NN:[1791..1793] ml))))
+        (-RRB-:[1793..1794] -RRB-)))
+    (VP (VBD:[1796..1805] decreased)
+      (NP
+        (NP (NN:[1806..1816] conversion))
+        (PP (IN:[1817..1819] of)
+          (NP (NN:[1820..1844] -LRB-22R-RRB--hydroxycholesterol)))
+        (PP (TO:[1845..1847] to)
+          (NP (NN:[1848..1860] testosterone))))
+      (SBAR-ADV (IN:[1861..1866] while)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[1867..1870] the) (NN:[1872..1882] conversion))
+            (PP (IN:[1883..1885] of)
+              (NP (NN:[1886..1898] pregnenolone) (,:[1898..1899] ,)
+                  (NN:[1900..1922] 17-hydroxypregnenolone) (,:[1922..1923] ,)
+                  (NN:[1924..1946] dehydroepiandrosterone) (CC:[1947..1950] and)
+                  (NN:[1952..1967] androstenedione)))
+            (PP (TO:[1968..1970] to)
+              (NP (NN:[1971..1983] testosterone))))
+          (VP (VBD:[1984..1988] were) (RB:[1989..1992] not)
+            (VP (VBN:[1993..2001] affected)
+              (NP-1 (-NONE-:[2001..2001] *)))))))
+    (.:[2001..2002] .)))
+
+;sentence 15 Span:2003..2125
+;These results indicate that  the major inhibitory effect of IL-1 on Leydig
+;cell function occurs at the level  of P450 scc.
+;[2063..2067]:substance:"IL-1"
+;[2116..2124]:cyp450:"P450 scc"
+(SENT
+  (S
+    (NP-SBJ (DT:[2003..2008] These) (NNS:[2009..2016] results))
+    (VP (VBP:[2017..2025] indicate)
+      (SBAR (IN:[2026..2030] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[2032..2035] the) (JJ:[2036..2041] major)
+                (JJ:[2042..2052] inhibitory) (NN:[2053..2059] effect))
+            (PP (IN:[2060..2062] of)
+              (NP (NN:[2063..2067] IL-1)))
+            (PP (IN:[2068..2070] on)
+              (NP (NNP:[2071..2077] Leydig) (NN:[2078..2082] cell)
+                  (NN:[2083..2091] function))))
+          (VP (VBZ:[2092..2098] occurs)
+            (PP (IN:[2099..2101] at)
+              (NP
+                (NP (DT:[2102..2105] the) (NN:[2106..2111] level))
+                (PP (IN:[2113..2115] of)
+                  (NP (NN:[2116..2120] P450) (NN:[2121..2124] scc)))))))))
+    (.:[2124..2125] .)))
+
+;section 16 Span:2129..2173
+;PMID: 9582502 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2129..2133] PMID) (::[2133..2134] :) (CD:[2135..2142] 9582502)
+        (NN:[2143..2144] -LSB-) (NNP:[2144..2150] PubMed) (::[2151..2152] -)
+        (NN:[2153..2160] indexed) (IN:[2161..2164] for)
+        (NNP:[2165..2173] MEDLINE-RSB-)))

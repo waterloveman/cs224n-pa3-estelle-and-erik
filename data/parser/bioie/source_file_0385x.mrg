@@ -1,0 +1,266 @@
+;PMID: 2676145
+;source_file_800.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..91] = [t:42..91]
+;2)section:[e:95..106] = [t:95..106]
+;3)section:[e:110..221] = [t:110..221]
+;4)sentence:[e:225..421] = [t:225..421]
+;5)sentence:[e:422..621] = [t:422..621]
+;6)sentence:[e:622..876] = [t:622..876]
+;7)sentence:[e:877..987] = [t:877..987]
+;8)section:[e:991..1035] = [t:991..1035]
+
+;section 0 Span:0..37
+;Cancer Res  1989 Oct 15;49(20):5530-3
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1989)
+        (NNP:[17..20] Oct) (CD:[21..23] 15) (CC:[23..27] ;49-LRB-)
+        (CD:[27..29] 20) (-RRB-:[29..30] -RRB-) (CD:[30..35] :5530)
+        (::[35..36] -) (CD:[36..37] 3)))
+
+;sentence 1 Span:42..91
+;Activated N-ras oncogenes in human neuroblastoma.
+;[52..57]:gene-rna:"N-ras"
+;[77..90]:malignancy:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..51] Activated) (NN:[52..57] N-ras) (NNS:[58..67] oncogenes))
+    (PP (IN:[68..70] in)
+      (NP (JJ:[71..76] human) (NN:[77..90] neuroblastoma)))
+    (.:[90..91] .)))
+
+;section 2 Span:95..106
+;Ireland CM.
+(SEC
+  (FRAG (NNP:[95..102] Ireland) (NNP:[103..105] CM) (.:[105..106] .)))
+
+;section 3 Span:110..221
+;Children's Leukemia and Cancer Research Unit, Prince of Wales Children's 
+;Hospital, New South Wales, Australia.
+(SEC
+  (FRAG (NNP:[110..118] Children) (POS:[118..120] 's) (NNP:[121..129] Leukemia)
+        (CC:[130..133] and) (NNP:[134..140] Cancer) (NNP:[141..149] Research)
+        (NNP:[150..154] Unit) (,:[154..155] ,) (NNP:[156..162] Prince)
+        (IN:[163..165] of) (NNP:[166..171] Wales) (NNP:[172..180] Children)
+        (POS:[180..182] 's) (NNP:[184..192] Hospital) (,:[192..193] ,)
+        (NNP:[194..197] New) (NNP:[198..203] South) (NNP:[204..209] Wales)
+        (,:[209..210] ,) (NNP:[211..220] Australia) (.:[220..221] .)))
+
+;sentence 4 Span:225..421
+;Fifteen primary neuroblastomas and four bone marrow samples from
+;neuroblastoma  patients, representing clinical Stages I to IV, have been
+;screened for mutations  in codons 12, 13, and 61 of N-ras.
+;[233..255]:malignancy:"primary neuroblastomas"
+;[290..351]:malignancy:"neuroblastoma  patients, representing clinical Stages
+;I to IV"
+;[376..385]:variation-event:"mutations"
+;[390..399]:variation-location:"codons 12"
+;[390..396]...[409..411]:variation-location:"codons"..."61"
+;[390..396]...[401..403]:variation-location:"codons"..."13"
+;[415..420]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (CD:[225..232] Fifteen)
+           (JJ:[233..240] primary) (NNS:[241..255] neuroblastomas))
+        (CC:[256..259] and)
+        (NP
+          (NP (CD:[260..264] four)
+            (NML (NN:[265..269] bone) (NN:[270..276] marrow))
+            (NNS:[277..284] samples))
+          (PP (IN:[285..289] from)
+            (NP (NN:[290..303] neuroblastoma) (NNS:[305..313] patients)))))
+      (,:[313..314] ,)
+      (VP (VBG:[315..327] representing)
+        (NP
+          (NP (JJ:[328..336] clinical) (NNS:[337..343] Stages) (CD:[344..345] I))
+          (PP (TO:[346..348] to)
+            (NP (CD:[349..351] IV))))))
+    (,:[351..352] ,)
+    (VP (VBP:[353..357] have)
+      (VP (VBN:[358..362] been)
+        (VP (VBN:[363..371] screened)
+          (NP-1 (-NONE-:[371..371] *))
+          (PP-CLR (IN:[372..375] for)
+            (NP
+              (NP (NNS:[376..385] mutations))
+              (PP-LOC (IN:[387..389] in)
+                (NP
+                  (NP
+                    (NP
+                      (NML-2 (NNS:[390..396] codons))
+                      (CD:[397..399] 12))
+                    (,:[399..400] ,)
+                    (NP
+                      (NML-2 (-NONE-:[400..400] *P*))
+                      (CD:[401..403] 13))
+                    (,:[403..404] ,) (CC:[405..408] and)
+                    (NP
+                      (NML-2 (-NONE-:[408..408] *P*))
+                      (CD:[409..411] 61)))
+                  (PP (IN:[412..414] of)
+                    (NP (NN:[415..420] N-ras))))))))))
+    (.:[420..421] .)))
+
+;sentence 5 Span:422..621
+;Neuroblastoma DNAs were subjected to the  polymerase chain reaction to
+;amplify the relevant sequences and were then  hybridized with specific
+;oligonucleotides to locate and identify point  mutations.
+;[422..435]:malignancy:"Neuroblastoma"
+;[464..474]:gene-protein:"polymerase"
+;[604..620]:variation-type:"point  mutations"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[422..435] Neuroblastoma) (NNS:[436..440] DNAs))
+    (VP
+      (VP (VBD:[441..445] were)
+        (VP (VBN:[446..455] subjected)
+          (NP-1 (-NONE-:[455..455] *))
+          (PP (TO:[456..458] to)
+            (NP (DT:[459..462] the) (NN:[464..474] polymerase)
+                (NN:[475..480] chain) (NN:[481..489] reaction)))
+          (S-PRP
+            (NP-SBJ (-NONE-:[489..489] *))
+            (VP (TO:[490..492] to)
+              (VP (VB:[493..500] amplify)
+                (NP (DT:[501..504] the) (JJ:[505..513] relevant)
+                    (NNS:[514..523] sequences)))))))
+      (CC:[524..527] and)
+      (VP (VBD:[528..532] were)
+        (ADVP (RB:[533..537] then))
+        (VP (VBN:[539..549] hybridized)
+          (NP-1 (-NONE-:[549..549] *))
+          (PP (IN:[550..554] with)
+            (NP (JJ:[555..563] specific) (NNS:[564..580] oligonucleotides)))
+          (S-PRP
+            (NP-SBJ (-NONE-:[580..580] *))
+            (VP (TO:[581..583] to)
+              (VP (VB:[584..590] locate) (CC:[591..594] and)
+                  (VB:[595..603] identify)
+                (NP (NN:[604..609] point) (NNS:[611..620] mutations))))))))
+    (.:[620..621] .)))
+
+;sentence 6 Span:622..876
+;The results show that one Stage I tumor contained an N-ras gene that  was
+;activated by a GC-CG transversion of the first base of codon 61, while in 
+;one Stage II tumor, activation of N-ras involved a GC-CG transversion of the 
+;first position of codon 13.
+;[648..661]:malignancy:"Stage I tumor"
+;[675..680]:gene-rna:"N-ras"
+;[711..713]:variation-state-original:"GC"
+;[714..716]:variation-state-altered:"CG"
+;[717..729]:variation-type:"transversion"
+;[737..759]:variation-location:"first base of codon 61"
+;[775..789]:malignancy:"Stage II tumor"
+;[805..810]:gene-rna:"N-ras"
+;[822..824]:variation-state-original:"GC"
+;[825..827]:variation-state-altered:"CG"
+;[828..840]:variation-type:"transversion"
+;[849..875]:variation-location:"first position of codon 13"
+(SENT
+  (S
+    (NP-SBJ (DT:[622..625] The) (NNS:[626..633] results))
+    (VP (VBP:[634..638] show)
+      (SBAR (IN:[639..643] that)
+        (S
+          (NP-SBJ (CD:[644..647] one)
+            
+            (NML (NN:[648..653] Stage) (CD:[654..655] I))
+            (NN:[656..661] tumor))
+          (VP (VBD:[662..671] contained)
+            (NP
+              (NP (DT:[672..674] an) (NN:[675..680] N-ras) (NN:[681..685] gene))
+              (SBAR
+                (WHNP-1 (WDT:[686..690] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[690..690] *T*))
+                  (VP (VBD:[692..695] was)
+                    (VP (VBN:[696..705] activated)
+                      (NP-1 (-NONE-:[705..705] *))
+                      (PP (IN:[706..708] by)
+                        (NP-LGS
+                          (NP (DT:[709..710] a)
+                            (NML
+                              (NML (NN:[711..713] GC))
+                              (PP (SYM:[713..714] -)
+                                (NP (NN:[714..716] CG))))
+                            (NN:[717..729] transversion))
+                          (PP (IN:[730..732] of)
+                            (NP
+                              (NP (DT:[733..736] the) (JJ:[737..742] first)
+                                  (NN:[743..747] base))
+                              (PP (IN:[748..750] of)
+                                (NP (NN:[751..756] codon) (CD:[757..759] 61)))))))
+                      (,:[759..760] ,)
+                      (SBAR-ADV (IN:[761..766] while)
+                        (S
+                          (PP-LOC (IN:[767..769] in)
+                            (NP (CD:[771..774] one)
+                              
+                              (NML (NN:[775..780] Stage) (CD:[781..783] II))
+                              (NN:[784..789] tumor)))
+                          (,:[789..790] ,)
+                          (NP-SBJ
+                            (NP (NN:[791..801] activation))
+                            (PP (IN:[802..804] of)
+                              (NP (NN:[805..810] N-ras))))
+                          (VP (VBD:[811..819] involved)
+                            (NP
+                              (NP (DT:[820..821] a)
+                                (NML
+                                  (NML (NN:[822..824] GC))
+                                  (PP (SYM:[824..825] -)
+                                    (NP (NN:[825..827] CG))))
+                                (NN:[828..840] transversion))
+                              (PP (IN:[841..843] of)
+                                (NP
+                                  (NP (DT:[844..847] the) (JJ:[849..854] first)
+                                      (NN:[855..863] position))
+                                  (PP (IN:[864..866] of)
+                                    (NP (NN:[867..872] codon) (CD:[873..875] 13))))))))))))))))))
+    (.:[875..876] .)))
+
+;sentence 7 Span:877..987
+;N-ras activations were not detected in the six Stage  III tumors and eight
+;Stage IV tumors that were examined.
+;[877..882]:gene-rna:"N-ras"
+;[924..941]:malignancy:"Stage  III tumors"
+;[952..967]:malignancy:"Stage IV tumors"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[877..882] N-ras) (NNS:[883..894] activations))
+    (VP (VBD:[895..899] were) (RB:[900..903] not)
+      (VP (VBN:[904..912] detected)
+        (NP-1 (-NONE-:[912..912] *))
+        (PP (IN:[913..915] in)
+          (NP
+            (NP
+              (NP (DT:[916..919] the) (CD:[920..923] six)
+                
+                (NML (NN:[924..929] Stage) (CD:[931..934] III))
+                (NNS:[935..941] tumors))
+              (CC:[942..945] and)
+              (NP (CD:[946..951] eight)
+                
+                (NML (NN:[952..957] Stage) (CD:[958..960] IV))
+                (NNS:[961..967] tumors)))
+            (SBAR
+              (WHNP-2 (WDT:[968..972] that))
+              (S
+                (NP-SBJ-2 (-NONE-:[972..972] *T*))
+                (VP (VBD:[973..977] were)
+                  (VP (VBN:[978..986] examined)
+                    (NP-2 (-NONE-:[986..986] *))))))))))
+    (.:[986..987] .)))
+
+;section 8 Span:991..1035
+;PMID: 2676145 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[991..995] PMID) (::[995..996] :) (CD:[997..1004] 2676145)
+        (NN:[1005..1006] -LSB-) (NNP:[1006..1012] PubMed) (::[1013..1014] -)
+        (NN:[1015..1022] indexed) (IN:[1023..1026] for)
+        (NNP:[1027..1035] MEDLINE-RSB-)))

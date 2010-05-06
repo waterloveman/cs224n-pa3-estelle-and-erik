@@ -1,0 +1,389 @@
+;PMID: 3982392
+;source_file_884.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..98] = [t:42..98]
+;2)sentence:[e:99..178] = [t:99..178]
+;3)section:[e:182..219] = [t:182..219]
+;4)sentence:[e:223..522] = [t:223..522]
+;5)sentence:[e:523..635] = [t:523..635]
+;6)sentence:[e:636..744] = [t:636..744]
+;7)sentence:[e:745..868] = [t:745..868]
+;8)sentence:[e:869..973] = [t:869..973]
+;9)sentence:[e:974..1134] = [t:974..1134]
+;10)sentence:[e:1135..1409] = [t:1135..1409]
+;11)sentence:[e:1410..1589] = [t:1410..1589]
+;12)sentence:[e:1590..1695] = [t:1590..1695]
+;13)section:[e:1699..1743] = [t:1699..1743]
+
+;section 0 Span:0..36
+;Mol Pharmacol. 1985 Apr;27(4):471-9.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..13] Pharmacol) (.:[13..14] .)
+        (CD:[15..19] 1985) (.:[20..27] Apr;27-LRB-) (CD:[27..29] 4-RRB-)
+        (CD:[29..33] :471) (::[33..34] -) (CD:[34..36] 9.)))
+
+;sentence 1 Span:42..98
+;Sexual differentiation of cytochrome P-450 in rat liver.
+;[68..84]:cyp450:"cytochrome P-450"
+(SENT
+  (NP-HLN
+    (NP (JJ:[42..48] Sexual) (NN:[49..64] differentiation))
+    (PP (IN:[65..67] of)
+      (NP (NN:[68..78] cytochrome) (NN:[79..84] P-450)))
+    (PP-LOC (IN:[85..87] in)
+      (NP (NN:[88..91] rat) (NN:[92..97] liver)))
+    (.:[97..98] .)))
+
+;sentence 2 Span:99..178
+;Evidence for a  constitutive isozyme as the male-specific 16
+;alpha-hydroxylase.
+;[128..135]:substance:"isozyme"
+;[157..177]:substance:"16 alpha-hydroxylase"
+(SENT
+  (NP-HLN
+    (NP (NN:[99..107] Evidence))
+    (PP (IN:[108..111] for)
+      (NP
+        (NP (DT:[112..113] a) (JJ:[115..127] constitutive)
+            (NN:[128..135] isozyme))
+        (PP (IN:[136..138] as)
+          (NP (DT:[139..142] the)
+            (ADJP (JJ:[143..147] male) (HYPH:[147..148] -)
+                  (JJ:[148..156] specific))
+             (CD:[157..159] 16) (NN:[160..177] alpha-hydroxylase)))))
+    (.:[177..178] .)))
+
+;section 3 Span:182..219
+;Morgan ET, MacGeoch C, Gustafsson JA.
+(SEC
+  (FRAG (NNP:[182..188] Morgan) (NNP:[189..191] ET) (,:[191..192] ,)
+        (NNP:[193..201] MacGeoch) (NNP:[202..203] C) (,:[203..204] ,)
+        (NNP:[205..215] Gustafsson) (NNP:[216..219] JA.)))
+
+;sentence 4 Span:223..522
+;Cytochrome P-450 isozyme RLM5 [Cheng, K-C., and J.B. Schenkman, J. Biol.
+;Chem.  257:2378-2385 (1982)], possessing a high steroid 16
+;alpha-hydroxylating  activity, was isolated from male rat livers, and the
+;hypothesis that this  protein is the sexually differentiated 16
+;alpha-hydroxylase was tested.
+;[223..252]:cyp450:"Cytochrome P-450 isozyme RLM5"
+;[344..351]:substance:"steroid"
+;[451..458]:substance:"protein"
+;[490..510]:substance:"16 alpha-hydroxylase"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP
+          
+          (NML (NN:[223..233] Cytochrome) (NN:[234..239] P-450))
+          (NN:[240..247] isozyme) (NN:[248..252] RLM5)
+          (PRN (-LRB-:[253..254] -LSB-)
+            (FRAG (NNP:[254..259] Cheng) (,:[259..260] ,) (NNP:[261..265] K-C.)
+                  (,:[265..266] ,) (CC:[267..270] and) (NNP:[271..275] J.B.)
+                  (NNP:[276..285] Schenkman) (,:[285..286] ,)
+                  (NNP:[287..289] J.) (NNP:[290..295] Biol.)
+                  (NNP:[296..301] Chem.) (CD:[303..306] 257) (::[306..307] :)
+                  (CD:[307..311] 2378) (HYPH:[311..312] -) (CD:[312..316] 2385)
+                  (-LRB-:[317..318] -LRB-) (CD:[318..322] 1982)
+                  (-RRB-:[322..323] -RRB-))
+            (-RRB-:[323..324] -RSB-)))
+        (,:[324..325] ,)
+        (VP (VBG:[326..336] possessing)
+          (NP (DT:[337..338] a) (JJ:[339..343] high) (NN:[344..351] steroid)
+            (ADJP (CD:[352..354] 16) (JJ:[355..374] alpha-hydroxylating))
+            (NN:[376..384] activity))))
+      (,:[384..385] ,)
+      (VP (VBD:[386..389] was)
+        (VP (VBN:[390..398] isolated)
+          (NP-1 (-NONE-:[398..398] *))
+          (PP (IN:[399..403] from)
+            (NP (JJ:[404..408] male) (NN:[409..412] rat) (NNS:[413..419] livers))))))
+    (,:[419..420] ,) (CC:[421..424] and)
+    (S
+      (NP-SBJ-2 (DT:[425..428] the) (NN:[429..439] hypothesis)
+        (SBAR (IN:[440..444] that)
+          (S
+            (NP-SBJ (DT:[445..449] this) (NN:[451..458] protein))
+            (VP (VBZ:[459..461] is)
+              (NP-PRD (DT:[462..465] the)
+                (ADJP (RB:[466..474] sexually) (VBN:[475..489] differentiated))
+                 (CD:[490..492] 16) (NN:[493..510] alpha-hydroxylase))))))
+      (VP (VBD:[511..514] was)
+        (VP (VBN:[515..521] tested)
+          (NP-2 (-NONE-:[521..521] *)))))
+    (.:[521..522] .)))
+
+;sentence 5 Span:523..635
+;Isozyme  RLM5 was not detected when the same purification procedure was
+;applied to female  rat liver microsomes.
+;[523..536]:cyp450:"Isozyme  RLM5"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[523..530] Isozyme) (NN:[532..536] RLM5))
+    (VP (VBD:[537..540] was) (RB:[541..544] not)
+      (VP (VBN:[545..553] detected)
+        (NP-1 (-NONE-:[553..553] *))
+        (SBAR-ADV
+          (WHADVP-3 (WRB:[554..558] when))
+          (S
+            (NP-SBJ-2 (DT:[559..562] the) (JJ:[563..567] same)
+                      (NN:[568..580] purification) (NN:[581..590] procedure))
+            (VP (VBD:[591..594] was)
+              (VP (VBN:[595..602] applied)
+                (NP-2 (-NONE-:[602..602] *))
+                (PP (TO:[603..605] to)
+                  (NP (JJ:[606..612] female) (NN:[614..617] rat)
+                      (NN:[618..623] liver) (NNS:[624..634] microsomes)))
+                (ADVP-TMP-3 (-NONE-:[634..634] *T*))))))))
+    (.:[634..635] .)))
+
+;sentence 6 Span:636..744
+;However, a female isozyme named DEa and possessing a  similar Mr was obtained
+;from similar column fractions.
+(SENT
+  (S
+    (ADVP (RB:[636..643] However))
+    (,:[643..644] ,)
+    (NP-SBJ-1
+      (NP (DT:[645..646] a) (JJ:[647..653] female) (NN:[654..661] isozyme))
+      (VP
+        (VP (VBN:[662..667] named)
+          (S
+            (NP-SBJ (-NONE-:[667..667] *))
+            (NP-PRD (NN:[668..671] DEa))))
+        (CC:[672..675] and)
+        (VP (VBG:[676..686] possessing)
+          (NP (DT:[687..688] a) (JJ:[690..697] similar) (NN:[698..700] Mr)))))
+    (VP (VBD:[701..704] was)
+      (VP (VBN:[705..713] obtained)
+        (NP-1 (-NONE-:[713..713] *))
+        (PP (IN:[714..718] from)
+          (NP (JJ:[719..726] similar) (NN:[727..733] column)
+              (NNS:[734..743] fractions)))))
+    (.:[743..744] .)))
+
+;sentence 7 Span:745..868
+;The DEa isozyme had  insignificant steroid-hydroxylating activity and a
+;substrate specificity  different from isozyme RLM5.
+;[749..760]:substance:"DEa isozyme"
+;[780..787]:substance:"steroid"
+;[817..826]:substance:"substrate"
+;[855..867]:cyp450:"isozyme RLM5"
+(SENT
+  (S
+    (NP-SBJ (DT:[745..748] The)
+       (NN:[749..752] DEa) (NN:[753..760] isozyme))
+    (VP (VBD:[761..764] had)
+      (NP
+        (NP (JJ:[766..779] insignificant)
+          (ADJP (NN:[780..787] steroid) (HYPH:[787..788] -)
+                (VBG:[788..801] hydroxylating))
+          (NN:[802..810] activity))
+        (CC:[811..814] and)
+        (NP
+          (NP (DT:[815..816] a) (NN:[817..826] substrate)
+              (NN:[827..838] specificity))
+          (ADJP (JJ:[840..849] different)
+            (PP (IN:[850..854] from)
+              (NP (NN:[855..862] isozyme) (NN:[863..867] RLM5)))))))
+    (.:[867..868] .)))
+
+;sentence 8 Span:869..973
+;The two proteins could also be distinguished in  their primary structures and
+;immunochemical properties.
+;[877..885]:substance:"proteins"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[869..872] The) (CD:[873..876] two) (NNS:[877..885] proteins))
+    (VP (MD:[886..891] could)
+      (ADVP (RB:[892..896] also))
+      (VP (VB:[897..899] be)
+        (VP (VBN:[900..913] distinguished)
+          (NP-1 (-NONE-:[913..913] *))
+          (PP (IN:[914..916] in)
+            (NP (PRP$:[918..923] their)
+              (NML
+                (NML (JJ:[924..931] primary) (NNS:[932..942] structures))
+                (CC:[943..946] and)
+                (NML (JJ:[947..961] immunochemical) (NNS:[962..972] properties))))))))
+    (.:[972..973] .)))
+
+;sentence 9 Span:974..1134
+;Rabbit antibodies were  raised to isozyme RLM5 and were made specific by
+;immunoabsorption with a crude  female cytochrome P-450 fraction coupled to
+;Affi-Gel 10.
+;[981..991]:substance:"antibodies"
+;[1008..1020]:cyp450:"isozyme RLM5"
+;[1085..1101]:cyp450:"cytochrome P-450"
+;[1122..1133]:substance:"Affi-Gel 10"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[974..980] Rabbit) (NNS:[981..991] antibodies))
+    (VP
+      (VP (VBD:[992..996] were)
+        (VP (VBN:[998..1004] raised)
+          (NP-1 (-NONE-:[1004..1004] *))
+          (PP (TO:[1005..1007] to)
+            (NP (NN:[1008..1015] isozyme) (NN:[1016..1020] RLM5)))))
+      (CC:[1021..1024] and)
+      (VP (VBD:[1025..1029] were)
+        (VP (VBN:[1030..1034] made)
+          (NP-1 (-NONE-:[1034..1034] *))
+          (ADJP-PRD (JJ:[1035..1043] specific))
+          (PP-MNR (IN:[1044..1046] by)
+            (NP
+              (NP (NN:[1047..1063] immunoabsorption))
+              (PP (IN:[1064..1068] with)
+                (NP
+                  (NP (DT:[1069..1070] a) (JJ:[1071..1076] crude)
+                      (JJ:[1078..1084] female)
+                    (NML (NN:[1085..1095] cytochrome) (NN:[1096..1101] P-450))
+                    (NN:[1102..1110] fraction))
+                  (VP (VBN:[1111..1118] coupled)
+                    (NP (-NONE-:[1118..1118] *))
+                    (PP (TO:[1119..1121] to)
+                      (NP (NN:[1122..1130] Affi-Gel) (CD:[1131..1133] 10)))))))))))
+    (.:[1133..1134] .)))
+
+;sentence 10 Span:1135..1409
+;The antibodies were  used in a Western blot immunoassay to demonstrate that
+;isozyme RLM5 can be  detected in liver microsomes of male rats at levels at
+;least 20 times higher  than those in the female, and that its sexual
+;differentiation is neonatally  imprinted by androgen.
+;[1211..1223]:cyp450:"isozyme RLM5"
+;[1293..1301]:quantitative-value:"20 times"
+;[1400..1408]:substance:"androgen"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[1135..1138] The) (NNS:[1139..1149] antibodies))
+    (VP (VBD:[1150..1154] were)
+      (VP (VBN:[1156..1160] used)
+        (NP-3 (-NONE-:[1160..1160] *))
+        (PP (IN:[1161..1163] in)
+          (NP (DT:[1164..1165] a)
+            (NML (JJ:[1166..1173] Western) (NN:[1174..1178] blot))
+            (NN:[1179..1190] immunoassay)))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1190..1190] *))
+          (VP (TO:[1191..1193] to)
+            (VP (VB:[1194..1205] demonstrate)
+              (SBAR
+                (SBAR (IN:[1206..1210] that)
+                  (S
+                    (NP-SBJ-2 (NN:[1211..1218] isozyme) (NN:[1219..1223] RLM5))
+                    (VP (MD:[1224..1227] can)
+                      (VP (VB:[1228..1230] be)
+                        (VP (VBN:[1232..1240] detected)
+                          (NP-2 (-NONE-:[1240..1240] *))
+                          (PP-LOC (IN:[1241..1243] in)
+                            (NP
+                              (NP (NN:[1244..1249] liver)
+                                  (NNS:[1250..1260] microsomes))
+                              (PP (IN:[1261..1263] of)
+                                (NP (JJ:[1264..1268] male)
+                                    (NNS:[1269..1273] rats)))))
+                          (PP (IN:[1274..1276] at)
+                            (NP
+                              (NP (NNS:[1277..1283] levels))
+                              (ADJP
+                                (ADJP
+                                  (QP (IN:[1284..1286] at)
+                                      (JJS:[1287..1292] least)
+                                     (CD:[1293..1295] 20)
+                                     (NNS:[1296..1301] times))
+                                  (JJR:[1302..1308] higher))
+                                (PP (IN:[1310..1314] than)
+                                  (NP
+                                    (NP (DT:[1315..1320] those))
+                                    (PP (IN:[1321..1323] in)
+                                      (NP (DT:[1324..1327] the)
+                                          (NN:[1328..1334] female)))))))))))))
+                (,:[1334..1335] ,) (CC:[1336..1339] and)
+                (SBAR (IN:[1340..1344] that)
+                  (S
+                    (NP-SBJ-1 (PRP$:[1345..1348] its) (JJ:[1349..1355] sexual)
+                              (NN:[1356..1371] differentiation))
+                    (VP (VBZ:[1372..1374] is)
+                      (ADVP (RB:[1375..1385] neonatally))
+                      (VP (VBN:[1387..1396] imprinted)
+                        (NP-1 (-NONE-:[1396..1396] *))
+                        (PP (IN:[1397..1399] by)
+                          (NP-LGS (NN:[1400..1408] androgen)))))))))))))
+    (.:[1408..1409] .)))
+
+;sentence 11 Span:1410..1589
+;The antibodies were able to specifically inhibit 70% of  the testosterone 16
+;alpha-hydroxylase activity in male rat liver microsomes but  had no effect on
+;the activity in females.
+;[1414..1424]:substance:"antibodies"
+;[1459..1462]:quantitative-value:"70%"
+;[1471..1504]:substance:"testosterone 16 alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1410..1413] The) (NNS:[1414..1424] antibodies))
+    (VP
+      (VP (VBD:[1425..1429] were)
+        (ADJP-PRD (JJ:[1430..1434] able)
+          (S
+            (NP-SBJ-1 (-NONE-:[1434..1434] *))
+            (VP (TO:[1435..1437] to)
+              (VP
+                (ADVP (RB:[1438..1450] specifically))
+                (VB:[1451..1458] inhibit)
+                (NP
+                  (NP (CD:[1459..1461] 70) (NN:[1461..1462] %))
+                  (PP (IN:[1463..1465] of)
+                    (NP (DT:[1467..1470] the)
+                       (NN:[1471..1483] testosterone)
+                      (NML (CD:[1484..1486] 16)
+                           (NN:[1487..1504] alpha-hydroxylase))
+                      (NN:[1505..1513] activity))))
+                (PP-LOC (IN:[1514..1516] in)
+                  (NP (JJ:[1517..1521] male) (NN:[1522..1525] rat)
+                      (NN:[1526..1531] liver) (NNS:[1532..1542] microsomes))))))))
+      (CC:[1543..1546] but)
+      (VP (VBD:[1548..1551] had)
+        (NP
+          (NP (DT:[1552..1554] no) (NN:[1555..1561] effect))
+          (PP (IN:[1562..1564] on)
+            (NP
+              (NP (DT:[1565..1568] the) (NN:[1569..1577] activity))
+              (PP-LOC (IN:[1578..1580] in)
+                (NP (NNS:[1581..1588] females))))))))
+    (.:[1588..1589] .)))
+
+;sentence 12 Span:1590..1695
+;It was concluded that isozyme RLM5 is  the major sexually differentiated
+;microsomal 16 alpha-hydroxylase.
+;[1612..1624]:cyp450:"isozyme RLM5"
+;[1674..1694]:substance:"16 alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[1590..1592] It))
+      (SBAR-1 (-NONE-:[1592..1592] *EXP*)))
+    (VP (VBD:[1593..1596] was)
+      (VP (VBN:[1597..1606] concluded)
+        (NP-2 (-NONE-:[1606..1606] *))
+        (SBAR-1 (IN:[1607..1611] that)
+          (S
+            (NP-SBJ (NN:[1612..1619] isozyme) (NN:[1620..1624] RLM5))
+            (VP (VBZ:[1625..1627] is)
+              (NP-PRD (DT:[1629..1632] the) (JJ:[1633..1638] major)
+                (ADJP (RB:[1639..1647] sexually)
+                      (VBN:[1648..1662] differentiated))
+                (JJ:[1663..1673] microsomal)
+                 (CD:[1674..1676] 16) (NN:[1677..1694] alpha-hydroxylase)))))))
+    (.:[1694..1695] .)))
+
+;section 13 Span:1699..1743
+;PMID: 3982392 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1699..1703] PMID) (::[1703..1704] :) (CD:[1705..1712] 3982392)
+        (NN:[1713..1714] -LSB-) (NNP:[1714..1720] PubMed) (::[1721..1722] -)
+        (NN:[1723..1730] indexed) (IN:[1731..1734] for)
+        (NNP:[1735..1743] MEDLINE-RSB-)))

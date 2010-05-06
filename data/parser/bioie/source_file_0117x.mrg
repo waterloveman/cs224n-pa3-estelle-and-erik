@@ -1,0 +1,394 @@
+;PMID: 7952399
+;source_file_502.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..102] = [t:36..102]
+;2)section:[e:106..159] = [t:106..159]
+;3)section:[e:163..243] = [t:163..243]
+;4)sentence:[e:247..522] = [t:247..522]
+;5)sentence:[e:523..672] = [t:523..672]
+;6)sentence:[e:673..843] = [t:673..843]
+;7)sentence:[e:844..971] = [t:844..971]
+;8)sentence:[e:972..1093] = [t:972..1093]
+;9)sentence:[e:1094..1176] = [t:1094..1176]
+;10)sentence:[e:1177..1317] = [t:1177..1317]
+;11)sentence:[e:1318..1437] = [t:1318..1437]
+;12)sentence:[e:1438..1559] = [t:1438..1559]
+;13)section:[e:1563..1607] = [t:1563..1607]
+
+;section 0 Span:0..31
+;Surg Oncol  1994 Jun;3(3):153-9
+(SEC
+  (FRAG (NNP:[0..4] Surg) (NNP:[5..10] Oncol) (CD:[12..16] 1994)
+        (NNP:[17..21] Jun;) (CD:[21..22] 3) (NN:[22..23] -LRB-) (NN:[23..24] 3)
+        (NN:[24..25] -RRB-) (VBZ:[25..26] :) (CD:[26..28] 15) (CD:[28..31] 3-9)))
+
+;sentence 1 Span:36..102
+;Analysis of multiple molecular changes in human endocrine tumours.
+;[78..101]:malignancy:"human endocrine tumours"
+(SENT
+  (NP-HLN
+    (NP (NN:[36..44] Analysis))
+    (PP (IN:[45..47] of)
+      (NP (JJ:[48..56] multiple) (JJ:[57..66] molecular) (NNS:[67..74] changes)))
+    (PP-LOC (IN:[75..77] in)
+      (NP (JJ:[78..83] human) (JJ:[84..93] endocrine) (NNS:[94..101] tumours)))
+    (.:[101..102] .)))
+
+;section 2 Span:106..159
+;Arany I, Rady P, Evers BM, Tyring SK, Townsend CM Jr.
+(SEC
+  (FRAG (``:[106..111] Arany) (PRP:[112..113] I) (VBP:[113..114] ,)
+        (NNP:[115..119] Rady) (NNP:[120..122] P,) (NNP:[123..128] Evers)
+        (NNP:[129..131] BM) (,:[131..132] ,) (NNP:[133..139] Tyring)
+        (NNP:[140..142] SK) (,:[142..143] ,) (NNP:[144..152] Townsend)
+        (NNP:[153..155] CM) (NNP:[156..159] Jr.)))
+
+;section 3 Span:163..243
+;Department of Microbiology, University of Texas Medical Branch, Galveston
+;77555.
+(SEC
+  (FRAG (NNP:[163..173] Department) (IN:[174..176] of)
+        (NNP:[177..189] Microbiology) (,:[189..190] ,)
+        (NNP:[191..201] University) (IN:[202..204] of) (NNP:[205..210] Texas)
+        (NNP:[211..218] Medical) (NNP:[219..225] Branch) (,:[225..226] ,)
+        (NNP:[227..236] Galveston) (CD:[237..242] 77555) (.:[242..243] .)))
+
+;sentence 4 Span:247..522
+;To define the molecular changes occurring in endocrine tumours, we have
+;analysed  three human endocrine tumours established in our laboratory: BON, a
+;functioning  carcinoid tumour from the pancreas; SIM, a nonfunctioning
+;carcinoid of the  ileum; and STAN, a pheochromocytoma.
+;[292..309]:malignancy:"endocrine tumours"
+;[335..358]:malignancy:"human endocrine tumours"
+;[390..393]:malignancy:"BON"
+;[397..444]:malignancy:"functioning  carcinoid tumour from the pancreas"
+;[446..449]:malignancy:"SIM"
+;[453..491]:malignancy:"nonfunctioning carcinoid of the  ileum"
+;[497..501]:malignancy:"STAN"
+;[505..521]:malignancy:"pheochromocytoma"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[247..247] *))
+      (VP (TO:[247..249] To)
+        (VP (VB:[250..256] define)
+          (NP
+            (NP (DT:[257..260] the) (JJ:[261..270] molecular)
+                (NNS:[271..278] changes))
+            (VP (VBG:[279..288] occurring)
+              (PP-LOC (IN:[289..291] in)
+                (NP (JJ:[292..301] endocrine) (NNS:[302..309] tumours))))))))
+    (,:[309..310] ,)
+    (NP-SBJ (PRP:[311..313] we))
+    (VP (VBP:[314..318] have)
+      (VP (VBN:[319..327] analysed)
+        (NP
+          (NP
+            (NP (CD:[329..334] three)
+               (JJ:[335..340] human) (JJ:[341..350] endocrine)
+               (NNS:[351..358] tumours))
+            (VP (VBN:[359..370] established)
+              (NP (-NONE-:[370..370] *))
+              (PP (IN:[371..373] in)
+                (NP (PRP$:[374..377] our) (NN:[378..388] laboratory)))))
+          (::[388..389] :)
+          (NP
+            (NP
+              (NP (NN:[390..393] BON))
+              (,:[393..394] ,)
+              (NP
+                (NP (DT:[395..396] a) (JJ:[397..408] functioning)
+                    (JJ:[410..419] carcinoid) (NN:[420..426] tumour))
+                (PP (IN:[427..431] from)
+                  (NP (DT:[432..435] the) (NN:[436..444] pancreas)))))
+            (::[444..445] ;)
+            (NP
+              (NP (NN:[446..449] SIM))
+              (,:[449..450] ,)
+              (NP
+                (NP (DT:[451..452] a) (JJ:[453..467] nonfunctioning)
+                    (NN:[468..477] carcinoid))
+                (PP (IN:[478..480] of)
+                  (NP (DT:[481..484] the) (NN:[486..491] ileum)))))
+            (::[491..492] ;) (CC:[493..496] and)
+            (NP
+              (NP (NN:[497..501] STAN))
+              (,:[501..502] ,)
+              (NP (DT:[503..504] a) (NN:[505..521] pheochromocytoma)))))))
+    (.:[521..522] .)))
+
+;sentence 5 Span:523..672
+;A homozygous point mutation of the N-ras  gene was identified at codon 61 in
+;BON cells in conjunction with overexpression  of N-ras mRNA and protein.
+;[525..550]:variation-type:"homozygous point mutation"
+;[558..563]:gene-rna:"N-ras"
+;[588..596]:variation-location:"codon 61"
+;[600..603]:malignancy:"BON"
+;[649..654]:gene-rna:"N-ras"
+;[664..671]:gene-protein:"protein"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[523..524] A)
+         (JJ:[525..535] homozygous) (NN:[536..541] point)
+         (NN:[542..550] mutation))
+      (PP (IN:[551..553] of)
+        (NP (DT:[554..557] the) (NN:[558..563] N-ras) (NN:[565..569] gene))))
+    (VP (VBD:[570..573] was)
+      (VP (VBN:[574..584] identified)
+        (NP-2 (-NONE-:[584..584] *))
+        (PP-LOC (IN:[585..587] at)
+          (NP
+            (NP (NN:[588..593] codon) (CD:[594..596] 61))
+            (PP-LOC (IN:[597..599] in)
+              (NP (NN:[600..603] BON) (NNS:[604..609] cells)))))
+        (PP (IN:[610..612] in)
+          (NP
+            (NP (NN:[613..624] conjunction))
+            (PP (IN:[625..629] with)
+              (NP
+                (NP (NN:[630..644] overexpression))
+                (PP (IN:[646..648] of)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[649..654] N-ras))
+                      (NN:[655..659] mRNA))
+                    (CC:[660..663] and)
+                    (NP
+                      (NML-1 (-NONE-:[663..663] *P*))
+                      (NN:[664..671] protein))))))))))
+    (.:[671..672] .)))
+
+;sentence 6 Span:673..843
+;BON cells also exhibited increased expression of  c-myc and cdc2 kinase mRNA
+;and protein; TGF-beta 1, p53 and retinoblastoma (RB)  mRNA and protein levels
+;were decreased.
+;[673..676]:malignancy:"BON"
+;[723..728]:gene-rna:"c-myc"
+;[733..744]:gene-rna:"cdc2 kinase"
+;[754..761]:gene-protein:"protein"
+;[763..773]:gene-rna:"TGF-beta 1"
+;[775..778]:gene-rna:"p53"
+;[783..797]:gene-rna:"retinoblastoma"
+;[799..801]:gene-rna:"RB"
+;[813..820]:gene-protein:"protein"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[673..676] BON) (NNS:[677..682] cells))
+      (ADVP (RB:[683..687] also))
+      (VP (VBD:[688..697] exhibited)
+        (NP
+          (NP (JJ:[698..707] increased) (NN:[708..718] expression))
+          (PP (IN:[719..721] of)
+            (NP
+              (NP (NN:[723..728] c-myc)
+                (NML-4 (-NONE-:[728..728] *P*)))
+              (CC:[729..732] and)
+              (NP
+                (NML (NN:[733..737] cdc2) (NN:[738..744] kinase))
+                (NML-4 (NN:[745..749] mRNA) (CC:[750..753] and)
+                       (NN:[754..761] protein))))))))
+    (::[761..762] ;)
+    (S
+      (NP-SBJ-3
+        (NP
+          (NML (NN:[763..771] TGF-beta) (CD:[772..773] 1))
+          (NML-2 (-NONE-:[773..773] *P*)))
+        (,:[773..774] ,)
+        (NP (NN:[775..778] p53)
+          (NML-2 (-NONE-:[778..778] *P*)))
+        (CC:[779..782] and)
+        (NP
+          (NML
+            (NML (NN:[783..797] retinoblastoma))
+            (NML (-LRB-:[798..799] -LRB-) (NN:[799..801] RB)
+                 (-RRB-:[801..802] -RRB-)))
+          (NML-2 (NN:[804..808] mRNA)
+            (NML-1 (-NONE-:[808..808] *P*))
+            (CC:[809..812] and)
+            (NML (NN:[813..820] protein)
+              (NML-1 (NNS:[821..827] levels))))))
+      (VP (VBD:[828..832] were)
+        (VP (JJ:[833..842] decreased)
+          (NP-3 (-NONE-:[842..842] *)))))
+    (.:[842..843] .)))
+
+;sentence 7 Span:844..971
+;In addition, increased expression of the  mdm2 oncogene and both the
+;truncated and the wild-type RB protein were noted in  BON.
+;[886..890]:gene-rna:"mdm2"
+;[941..943]:gene-protein:"RB"
+;[967..970]:malignancy:"BON"
+(SENT
+  (S
+    (PP (IN:[844..846] In)
+      (NP (NN:[847..855] addition)))
+    (,:[855..856] ,)
+    (NP-SBJ-2
+      (NP (JJ:[857..866] increased) (NN:[867..877] expression))
+      (PP (IN:[878..880] of)
+        (NP
+          (NP (DT:[881..884] the) (NN:[886..890] mdm2) (NN:[891..899] oncogene))
+          (CC:[900..903] and)
+          (NP (PDT:[904..908] both)
+            (NP (DT:[909..912] the) (JJ:[913..922] truncated)
+              (NML-1 (-NONE-:[922..922] *P*)))
+            (CC:[923..926] and)
+            (NP (DT:[927..930] the) (JJ:[931..940] wild-type)
+              (NML-1 (NN:[941..943] RB) (NN:[944..951] protein)))))))
+    (VP (VBD:[952..956] were)
+      (VP (VBN:[957..962] noted)
+        (NP-2 (-NONE-:[962..962] *))
+        (PP (IN:[963..965] in)
+          (NP (NN:[967..970] BON)))))
+    (.:[970..971] .)))
+
+;sentence 8 Span:972..1093
+;SIM cells exhibited moderately increased N-ras and c-myc mRNA levels along 
+;with decreased levels of RB mRNA and protein.
+;[972..975]:malignancy:"SIM"
+;[1013..1018]:gene-rna:"N-ras"
+;[1023..1028]:gene-rna:"c-myc"
+;[1073..1075]:gene-rna:"RB"
+;[1085..1092]:gene-protein:"protein"
+(SENT
+  (S
+    (NP-SBJ (NN:[972..975] SIM) (NNS:[976..981] cells))
+    (VP (VBD:[982..991] exhibited)
+      (NP
+        (NP
+          (ADJP-2 (RB:[992..1002] moderately) (JJ:[1003..1012] increased))
+          (NN:[1013..1018] N-ras)
+          (NML-1 (-NONE-:[1018..1018] *P*)))
+        (CC:[1019..1022] and)
+        (NP
+          (ADJP-2 (-NONE-:[1022..1022] *P*))
+          (NN:[1023..1028] c-myc)
+          (NML-1 (NN:[1029..1033] mRNA) (NNS:[1034..1040] levels))))
+      (PP (IN:[1041..1046] along)
+        (PP (IN:[1048..1052] with)
+          (NP
+            (NP (JJ:[1053..1062] decreased) (NNS:[1063..1069] levels))
+            (PP (IN:[1070..1072] of)
+              (NP
+                (NP (NN:[1073..1075] RB) (NN:[1076..1080] mRNA))
+                (CC:[1081..1084] and)
+                (NP (NN:[1085..1092] protein))))))))
+    (.:[1092..1093] .)))
+
+;sentence 9 Span:1094..1176
+;Similar to BON and SIM, analysis  of STAN showed increased N-ras and c-myc
+;levels.
+;[1105..1108]:malignancy:"BON"
+;[1113..1116]:malignancy:"SIM"
+;[1131..1135]:malignancy:"STAN"
+;[1153..1158]:gene-generic:"N-ras"
+;[1163..1168]:gene-generic:"c-myc"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1094..1094] *))
+      (ADJP-PRD (JJ:[1094..1101] Similar)
+        (PP (TO:[1102..1104] to)
+          (NP (NN:[1105..1108] BON) (CC:[1109..1112] and) (NN:[1113..1116] SIM)))))
+    (,:[1116..1117] ,)
+    (NP-SBJ
+      (NP (NN:[1118..1126] analysis))
+      (PP (IN:[1128..1130] of)
+        (NP (NN:[1131..1135] STAN))))
+    (VP (VBD:[1136..1142] showed)
+      (NP
+        (NP
+          (ADJP-2 (JJ:[1143..1152] increased))
+          (NN:[1153..1158] N-ras)
+          (NML-1 (-NONE-:[1158..1158] *P*)))
+        (CC:[1159..1162] and)
+        (NP
+          (ADJP-2 (-NONE-:[1162..1162] *P*))
+          (NN:[1163..1168] c-myc)
+          (NML-1 (NNS:[1169..1175] levels)))))
+    (.:[1175..1176] .)))
+
+;sentence 10 Span:1177..1317
+;Our data show multiple  molecular changes in the three human endocrine
+;tumours with the BON cell line  exhibiting the most dramatic changes.
+;[1232..1255]:malignancy:"human endocrine tumours"
+;[1265..1268]:malignancy:"BON"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1177..1180] Our) (NNS:[1181..1185] data))
+    (VP (VBP:[1186..1190] show)
+      (NP (JJ:[1191..1199] multiple) (JJ:[1201..1210] molecular)
+          (NNS:[1211..1218] changes))
+      (PP-LOC (IN:[1219..1221] in)
+        (NP (DT:[1222..1225] the) (CD:[1226..1231] three)
+           (JJ:[1232..1237] human) (JJ:[1238..1247] endocrine)
+           (NNS:[1248..1255] tumours)))
+      (PP (IN:[1256..1260] with)
+        (S-NOM
+          (NP-SBJ (DT:[1261..1264] the) (NN:[1265..1268] BON)
+                  (NN:[1269..1273] cell) (NN:[1274..1278] line))
+          (VP (VBG:[1280..1290] exhibiting)
+            (NP (DT:[1291..1294] the)
+              (ADJP (RBS:[1295..1299] most) (JJ:[1300..1308] dramatic))
+              (NNS:[1309..1316] changes))))))
+    (.:[1316..1317] .)))
+
+;sentence 11 Span:1318..1437
+;Furthermore, our data suggest the  existence of different molecular pathways
+;in the pathogenesis of endocrine  tumours.
+;[1418..1436]:malignancy:"endocrine  tumours"
+(SENT
+  (S
+    (ADVP (RB:[1318..1329] Furthermore))
+    (,:[1329..1330] ,)
+    (NP-SBJ (PRP$:[1331..1334] our) (NNS:[1335..1339] data))
+    (VP (VBP:[1340..1347] suggest)
+      (NP
+        (NP (DT:[1348..1351] the) (NN:[1353..1362] existence))
+        (PP (IN:[1363..1365] of)
+          (NP (JJ:[1366..1375] different) (JJ:[1376..1385] molecular)
+              (NNS:[1386..1394] pathways))))
+      (PP (IN:[1395..1397] in)
+        (NP
+          (NP (DT:[1398..1401] the) (NN:[1402..1414] pathogenesis))
+          (PP (IN:[1415..1417] of)
+            (NP (JJ:[1418..1427] endocrine) (NNS:[1429..1436] tumours))))))
+    (.:[1436..1437] .)))
+
+;sentence 12 Span:1438..1559
+;These cell lines will provide unique in vitro models to further analyse  the
+;significance of these molecular alterations.
+;[1438..1454]:malignancy:"These cell lines"
+(SENT
+  (S
+    (NP-SBJ (DT:[1438..1443] These) (NN:[1444..1448] cell)
+            (NNS:[1449..1454] lines))
+    (VP (MD:[1455..1459] will)
+      (VP (VB:[1460..1467] provide)
+        (NP (JJ:[1468..1474] unique)
+          (ADJP (FW:[1475..1477] in) (FW:[1478..1483] vitro))
+          (NNS:[1484..1490] models))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1490..1490] *))
+          (VP (TO:[1491..1493] to)
+            (ADVP (RB:[1494..1501] further))
+            (VP (VB:[1502..1509] analyse)
+              (NP
+                (NP (DT:[1511..1514] the) (NN:[1515..1527] significance))
+                (PP (IN:[1528..1530] of)
+                  (NP (DT:[1531..1536] these) (JJ:[1537..1546] molecular)
+                      (NNS:[1547..1558] alterations)))))))))
+    (.:[1558..1559] .)))
+
+;section 13 Span:1563..1607
+;PMID: 7952399 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1563..1567] PMID) (::[1567..1568] :) (CD:[1569..1576] 7952399)
+        (NN:[1577..1578] -LSB-) (NNP:[1578..1584] PubMed) (::[1585..1586] -)
+        (NN:[1587..1594] indexed) (IN:[1595..1598] for)
+        (NNP:[1599..1607] MEDLINE-RSB-)))

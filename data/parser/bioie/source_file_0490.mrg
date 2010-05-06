@@ -1,0 +1,564 @@
+;PMID: 12667489
+;source_file_1861.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..47] = [t:0..47]
+;1)sentence:[e:53..204] = [t:53..204]
+;2)section:[e:208..263] = [t:208..263]
+;3)section:[e:267..370] = [t:267..370]
+;4)sentence:[e:374..649] = [t:374..649]
+;5)sentence:[e:650..761] = [t:650..761]
+;6)sentence:[e:762..918] = [t:762..918]
+;7)sentence:[e:919..1054] = [t:919..1054]
+;8)sentence:[e:1056..1210] = [t:1056..1210]
+;9)sentence:[e:1211..1349] = [t:1211..1349]
+;10)sentence:[e:1350..1524] = [t:1350..1524]
+;11)sentence:[e:1526..1693] = [t:1526..1693]
+;12)sentence:[e:1694..1757] = [t:1694..1757]
+;13)sentence:[e:1758..1914] = [t:1758..1914]
+;14)sentence:[e:1915..2184] = [t:1915..2184]
+;15)sentence:[e:2185..2335] = [t:2185..2335]
+;16)section:[e:2339..2384] = [t:2339..2384]
+
+;section 0 Span:0..47
+;Arch Biochem Biophys. 2003 Apr 15;412(2):251-8.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 2003) (NNP:[27..30] Apr) (CD:[31..33] 15)
+        (CC:[33..38] ;412-LRB-) (CD:[38..39] 2) (-RRB-:[39..40] -RRB-)
+        (CD:[40..44] :251) (::[44..45] -) (CD:[45..47] 8.)))
+
+;sentence 1 Span:53..204
+;Glucocorticoids inhibit interconversion of 7-hydroxy and 7-oxo metabolites of
+; dehydroepiandrosterone: a role for 11beta-hydroxysteroid dehydrogenases?
+;[53..68]:substance:"Glucocorticoids"
+;[96..105]...[116..127]:substance:"7-hydroxy"..."metabolites"
+;[110..127]:substance:"7-oxo metabolites"
+;[132..154]:substance:"dehydroepiandrosterone"
+;[167..203]:substance:"11beta-hydroxysteroid dehydrogenases"
+(SENT
+  (FRAG-HLN
+    (S
+      (NP-SBJ (NNS:[53..68] Glucocorticoids))
+      (VP (VBP:[69..76] inhibit)
+        (NP
+          (NP (NN:[77..92] interconversion))
+          (PP (IN:[93..95] of)
+            (NP
+              (NP
+                (NP (JJ:[96..105] 7-hydroxy)
+                  (NML-1 (-NONE-:[105..105] *P*)))
+                (CC:[106..109] and)
+                (NP (JJ:[110..115] 7-oxo)
+                  (NML-1 (NNS:[116..127] metabolites))))
+              (PP (IN:[128..130] of)
+                (NP (NN:[132..154] dehydroepiandrosterone))))))))
+    (::[154..155] :)
+    (NP
+      (NP (DT:[156..157] a) (NN:[158..162] role))
+      (PP (IN:[163..166] for)
+        (NP (NN:[167..188] 11beta-hydroxysteroid)
+            (NNS:[189..203] dehydrogenases)))
+      (.:[203..204] ?))))
+
+;section 2 Span:208..263
+;Robinzon B, Michael KK, Ripp SL, Winters SJ, Prough RA.
+(SEC
+  (FRAG (NNP:[208..216] Robinzon) (NNP:[217..218] B) (,:[218..219] ,)
+        (NNP:[220..227] Michael) (NNP:[228..230] KK) (,:[230..231] ,)
+        (NNP:[232..236] Ripp) (NNP:[237..239] SL) (,:[239..240] ,)
+        (NNP:[241..248] Winters) (NNP:[249..251] SJ) (,:[251..252] ,)
+        (NNP:[253..259] Prough) (NNP:[260..263] RA.)))
+
+;section 3 Span:267..370
+;Department of Biochemistry, University of Louisville Health Science Center, 
+;Louisville, KY 40292, USA.
+(SEC
+  (FRAG (NNP:[267..277] Department) (IN:[278..280] of)
+        (NNP:[281..293] Biochemistry) (,:[293..294] ,)
+        (NNP:[295..305] University) (IN:[306..308] of)
+        (NNP:[309..319] Louisville) (NNP:[320..326] Health)
+        (NNP:[327..334] Science) (NNP:[335..341] Center) (,:[341..342] ,)
+        (NNP:[344..354] Louisville) (,:[354..355] ,) (NNP:[356..358] KY)
+        (CD:[359..364] 40292) (,:[364..365] ,) (NNP:[366..369] USA)
+        (.:[369..370] .)))
+
+;sentence 4 Span:374..649
+;The cytochrome p450-dependent formation and subsequent interconversion of 
+;dehydroepiandrosterone (DHEA) metabolites 7 alpha-hydroxy-DHEA (7 
+;alpha-OH-DHEA), 7 beta-hydroxy-DHEA (7 beta-OH-DHEA), and 7-oxo-DHEA was 
+;observed in human, pig, and rat liver microsomal fractions.
+;[378..393]:cyp450:"cytochrome p450"
+;[449..490]:substance:"dehydroepiandrosterone (DHEA) metabolites"
+;[491..511]:substance:"7 alpha-hydroxy-DHEA"
+;[513..529]:substance:"7  alpha-OH-DHEA"
+;[532..551]:substance:"7 beta-hydroxy-DHEA"
+;[553..567]:substance:"7 beta-OH-DHEA"
+;[574..584]:substance:"7-oxo-DHEA"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (DT:[374..377] The)
+        (NML
+          (NML
+            (ADJP
+              (NML (NN:[378..388] cytochrome) (NN:[389..393] p450))
+              (HYPH:[393..394] -) (JJ:[394..403] dependent))
+            (NN:[404..413] formation))
+          (CC:[414..417] and)
+          (NML (JJ:[418..428] subsequent) (NN:[429..444] interconversion))))
+      (PP (IN:[445..447] of)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[449..471] dehydroepiandrosterone))
+              (NP (-LRB-:[472..473] -LRB-) (NN:[473..477] DHEA)
+                  (-RRB-:[477..478] -RRB-)))
+            (NNS:[479..490] metabolites))
+          (NP
+            (NP
+              (NP (CD:[491..492] 7) (NN:[493..511] alpha-hydroxy-DHEA))
+              (NP (-LRB-:[512..513] -LRB-)
+                 (CD:[513..514] 7) (NN:[516..529] alpha-OH-DHEA)
+                (-RRB-:[529..530] -RRB-)))
+            (,:[530..531] ,)
+            (NP
+              (NP (CD:[532..533] 7) (NN:[534..551] beta-hydroxy-DHEA))
+              (NP (-LRB-:[552..553] -LRB-)
+                 (CD:[553..554] 7) (NN:[555..567] beta-OH-DHEA)
+                (-RRB-:[567..568] -RRB-)))
+            (,:[568..569] ,) (CC:[570..573] and)
+            (NP (NN:[574..584] 7-oxo-DHEA))))))
+    (VP (VBD:[585..588] was)
+      (VP (VBN:[590..598] observed)
+        (NP-4 (-NONE-:[598..598] *))
+        (PP-LOC (IN:[599..601] in)
+          (NP
+            (NP (JJ:[602..607] human)
+              (NML-1 (-NONE-:[607..607] *P*)))
+            (,:[607..608] ,)
+            (NP (NN:[609..612] pig)
+              (NML-1 (-NONE-:[612..612] *P*)))
+            (,:[612..613] ,) (CC:[614..617] and)
+            (NP (NN:[618..621] rat)
+              (NML-1 (NN:[622..627] liver) (JJ:[628..638] microsomal)
+                     (NNS:[639..648] fractions)))))))
+    (.:[648..649] .)))
+
+;sentence 5 Span:650..761
+;Rat liver  mitochondria and nuclei also converted DHEA to 7 alpha-OH-DHEA and
+;7-oxo-DHEA,  but at a lower rate.
+;[700..704]:substance:"DHEA"
+;[708..723]:substance:"7 alpha-OH-DHEA"
+;[728..738]:substance:"7-oxo-DHEA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML-2 (NN:[650..653] Rat) (NN:[654..659] liver))
+        (NNS:[661..673] mitochondria))
+      (CC:[674..677] and)
+      (NP
+        (NML-2 (-NONE-:[677..677] *P*))
+        (NNS:[678..684] nuclei)))
+    (VP
+      (VP
+        (ADVP (RB:[685..689] also))
+        (VBD:[690..699] converted)
+        (NP (NN:[700..704] DHEA))
+        (PP-CLR (TO:[705..707] to)
+          (NP
+            (NP (CD:[708..709] 7) (NN:[710..723] alpha-OH-DHEA))
+            (CC:[724..727] and)
+            (NP (NN:[728..738] 7-oxo-DHEA)))))
+      (,:[738..739] ,) (CC:[741..744] but)
+      (FRAG
+        (PP-MNR (IN:[745..747] at)
+          (NP (DT:[748..749] a) (JJR:[750..755] lower) (NN:[756..760] rate)))))
+    (.:[760..761] .)))
+
+;sentence 6 Span:762..918
+;With NADP(+), and less so with NAD(+), rat, pig, and human  liver microsomes
+;and rat liver mitochondria and nuclei converted 7 alpha-OH-DHEA  to
+;7-oxo-DHEA.
+;[767..774]:substance:"NADP(+)"
+;[793..799]:substance:"NAD(+)"
+;[887..902]:substance:"7 alpha-OH-DHEA"
+;[907..917]:substance:"7-oxo-DHEA"
+(SENT
+  (S
+    (PP
+      (PP (IN:[762..766] With)
+        (NP (NN:[767..771] NADP) (-LRB-:[771..772] -LRB-) (SYM:[772..773] +)
+            (-RRB-:[773..774] -RRB-)))
+      (,:[774..775] ,) (CC:[776..779] and)
+      (PP
+        (ADVP-EXT (RBR:[780..784] less) (RB:[785..787] so))
+        (IN:[788..792] with)
+        (NP (NN:[793..796] NAD) (-LRB-:[796..797] -LRB-) (SYM:[797..798] +)
+            (-RRB-:[798..799] -RRB-))))
+    (,:[799..800] ,)
+    (NP-SBJ
+      (NP
+        (NP (NN:[801..804] rat)
+          (NML-3 (-NONE-:[804..804] *P*)))
+        (,:[804..805] ,)
+        (NP (NN:[806..809] pig)
+          (NML-3 (-NONE-:[809..809] *P*)))
+        (,:[809..810] ,) (CC:[811..814] and)
+        (NP (JJ:[815..820] human)
+          (NML-3 (NN:[822..827] liver) (NNS:[828..838] microsomes))))
+      (CC:[839..842] and)
+      (NP
+        (NP
+          (NML-2 (NN:[843..846] rat))
+          (NN:[847..852] liver) (NNS:[853..865] mitochondria))
+        (CC:[866..869] and)
+        (NP
+          (NML-2 (-NONE-:[869..869] *P*))
+          (NNS:[870..876] nuclei))))
+    (VP (VBD:[877..886] converted)
+      (NP (CD:[887..888] 7) (NN:[889..902] alpha-OH-DHEA))
+      (PP-CLR (TO:[904..906] to)
+        (NP (NN:[907..917] 7-oxo-DHEA))))
+    (.:[917..918] .)))
+
+;sentence 7 Span:919..1054
+;This reaction was inhibited by corticosterone and the 11  beta-hydroxysteroid
+;dehydrogenase (11 betaHSD) inhibitor carbenoxolone (CBX).
+;[950..964]:substance:"corticosterone"
+;[973..1010]:substance:"11  beta-hydroxysteroid dehydrogenase"
+;[1012..1022]:substance:"11 betaHSD"
+;[1024..1033]:substance:"inhibitor"
+;[1034..1047]:substance:"carbenoxolone"
+;[1049..1052]:substance:"CBX"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[919..923] This) (NN:[924..932] reaction))
+    (VP (VBD:[933..936] was)
+      (VP (VBN:[937..946] inhibited)
+        (NP-1 (-NONE-:[946..946] *))
+        (PP (IN:[947..949] by)
+          (NP-LGS
+            (NP (NN:[950..964] corticosterone))
+            (CC:[965..968] and)
+            (NP
+              (NP (DT:[969..972] the)
+                (NML
+                  (NML (CD:[973..975] 11) (NN:[977..996] beta-hydroxysteroid)
+                       (NN:[997..1010] dehydrogenase))
+                  (NML (-LRB-:[1011..1012] -LRB-)
+                     (CD:[1012..1014] 11) (NN:[1015..1022] betaHSD)
+                    (-RRB-:[1022..1023] -RRB-)))
+                (NN:[1024..1033] inhibitor))
+              (NP
+                (NP (NN:[1034..1047] carbenoxolone))
+                (NP (-LRB-:[1048..1049] -LRB-) (NN:[1049..1052] CBX)
+                    (-RRB-:[1052..1053] -RRB-))))))))
+    (.:[1053..1054] .)))
+
+;sentence 8 Span:1056..1210
+;The conversion of 7 alpha-OH-DHEA to 7-oxo-DHEA by rat kidney occurred at
+;higher  rates with NAD(+) than with NADP(+) and was inhibited by
+;corticosterone.
+;[1074..1089]:substance:"7 alpha-OH-DHEA"
+;[1093..1103]:substance:"7-oxo-DHEA"
+;[1149..1155]:substance:"NAD(+)"
+;[1166..1173]:substance:"NADP(+)"
+;[1195..1209]:substance:"corticosterone"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1056..1059] The) (NN:[1060..1070] conversion))
+      (PP (IN:[1071..1073] of)
+        (NP (CD:[1074..1075] 7) (NN:[1076..1089] alpha-OH-DHEA)))
+      (PP (TO:[1090..1092] to)
+        (NP (NN:[1093..1103] 7-oxo-DHEA)))
+      (PP (IN:[1104..1106] by)
+        (NP (NN:[1107..1110] rat) (NN:[1111..1117] kidney))))
+    (VP
+      (VP (VBD:[1118..1126] occurred)
+        (PP (IN:[1127..1129] at)
+          (NP (JJR:[1130..1136] higher) (NNS:[1138..1143] rates)))
+        (PP (IN:[1144..1148] with)
+          (NP (NN:[1149..1152] NAD) (-LRB-:[1152..1153] -LRB-)
+              (SYM:[1153..1154] +) (-RRB-:[1154..1155] -RRB-)))
+        (PP (IN:[1156..1160] than)
+          (PP (IN:[1161..1165] with)
+            (NP (NN:[1166..1170] NADP) (-LRB-:[1170..1171] -LRB-)
+                (SYM:[1171..1172] +) (-RRB-:[1172..1173] -RRB-)))))
+      (CC:[1174..1177] and)
+      (VP (VBD:[1178..1181] was)
+        (VP (VBN:[1182..1191] inhibited)
+          (NP-1 (-NONE-:[1191..1191] *))
+          (PP (IN:[1192..1194] by)
+            (NP-LGS (NN:[1195..1209] corticosterone))))))
+    (.:[1209..1210] .)))
+
+;sentence 9 Span:1211..1349
+;With  NADPH, 7-oxo-DHEA was converted to unidentified hydroxylated
+;metabolites and low  levels of 7 alpha-OH-DHEA by rat liver microsomes.
+;[1217..1222]:substance:"NADPH"
+;[1224..1234]:substance:"7-oxo-DHEA"
+;[1278..1289]:substance:"metabolites"
+;[1309..1324]:substance:"7 alpha-OH-DHEA"
+(SENT
+  (S
+    (PP (IN:[1211..1215] With)
+      (NP (NN:[1217..1222] NADPH)))
+    (,:[1222..1223] ,)
+    (NP-SBJ-1 (NN:[1224..1234] 7-oxo-DHEA))
+    (VP (VBD:[1235..1238] was)
+      (VP (VBN:[1239..1248] converted)
+        (NP-1 (-NONE-:[1248..1248] *))
+        (PP-CLR (TO:[1249..1251] to)
+          (NP
+            (NP (JJ:[1252..1264] unidentified) (VBN:[1265..1277] hydroxylated)
+                (NNS:[1278..1289] metabolites))
+            (CC:[1290..1293] and)
+            (NP
+              (NP (JJ:[1294..1297] low) (NNS:[1299..1305] levels))
+              (PP (IN:[1306..1308] of)
+                (NP (CD:[1309..1310] 7) (NN:[1311..1324] alpha-OH-DHEA))))))
+        (PP (IN:[1325..1327] by)
+          (NP-LGS (NN:[1328..1331] rat) (NN:[1332..1337] liver)
+                  (NNS:[1338..1348] microsomes)))))
+    (.:[1348..1349] .)))
+
+;sentence 10 Span:1350..1524
+;In contrast, pig liver  microsomal fractions reduced 7-oxo-DHEA to nearly
+;equal amounts of 7 alpha- and  7 beta-OH-DHEA, while human fractions produced
+;mainly 7 beta-OH-DHEA.
+;[1403..1413]:substance:"7-oxo-DHEA"
+;[1441..1449]...[1462..1469]:substance:"7 alpha-"..."OH-DHEA"
+;[1455..1469]:substance:"7 beta-OH-DHEA"
+;[1509..1523]:substance:"7 beta-OH-DHEA"
+(SENT
+  (S
+    (PP (IN:[1350..1352] In)
+      (NP (NN:[1353..1361] contrast)))
+    (,:[1361..1362] ,)
+    (NP-SBJ (NN:[1363..1366] pig) (NN:[1367..1372] liver)
+            (JJ:[1374..1384] microsomal) (NNS:[1385..1394] fractions))
+    (VP (VBD:[1395..1402] reduced)
+      (NP (NN:[1403..1413] 7-oxo-DHEA))
+      (PP-CLR (TO:[1414..1416] to)
+        (NP
+          (NP
+            (ADJP (RB:[1417..1423] nearly) (JJ:[1424..1429] equal))
+            (NNS:[1430..1437] amounts))
+          (PP (IN:[1438..1440] of)
+            (NP
+              (NP (CD:[1441..1442] 7) (SYM:[1443..1448] alpha)
+                  (HYPH:[1448..1449] -)
+                (NML-1 (-NONE-:[1449..1449] *P*)))
+              (CC:[1450..1453] and)
+              (NP (CD:[1455..1456] 7) (SYM:[1457..1461] beta)
+                  (HYPH:[1461..1462] -)
+                (NML-1 (NN:[1462..1469] OH-DHEA)))))))
+      (,:[1469..1470] ,)
+      (SBAR-ADV (IN:[1471..1476] while)
+        (S
+          (NP-SBJ (JJ:[1477..1482] human) (NNS:[1483..1492] fractions))
+          (VP (VBD:[1493..1501] produced)
+            (ADVP (RB:[1502..1508] mainly))
+            (NP (CD:[1509..1510] 7) (NN:[1511..1523] beta-OH-DHEA))))))
+    (.:[1523..1524] .)))
+
+;sentence 11 Span:1526..1693
+;Dehydrocorticosterone inhibited the reduction to both isomers by pig liver 
+;microsomes, but only to 7 alpha-OH-DHEA by human microsomes; CBX inhibited
+;both  reactions.
+;[1526..1547]:substance:"Dehydrocorticosterone"
+;[1580..1587]:substance:"isomers"
+;[1626..1641]:substance:"7 alpha-OH-DHEA"
+;[1663..1666]:substance:"CBX"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1526..1547] Dehydrocorticosterone))
+      (VP
+        (VP (VBD:[1548..1557] inhibited)
+          (NP
+            (NP (DT:[1558..1561] the) (NN:[1562..1571] reduction))
+            (PP=2 (TO:[1572..1574] to)
+              (NP (DT:[1575..1579] both) (NNS:[1580..1587] isomers)))
+            (PP=3 (IN:[1588..1590] by)
+              (NP (NN:[1591..1594] pig) (NN:[1595..1600] liver)
+                  (NNS:[1602..1612] microsomes)))))
+        (,:[1612..1613] ,) (CC:[1614..1617] but)
+        (VP
+          (ADVP (RB:[1618..1622] only))
+          (NP
+            (PP=2 (TO:[1623..1625] to)
+              (NP (CD:[1626..1627] 7) (NN:[1628..1641] alpha-OH-DHEA)))
+            (PP=3 (IN:[1642..1644] by)
+              (NP (JJ:[1645..1650] human) (NNS:[1651..1661] microsomes)))))))
+    (::[1661..1662] ;)
+    (S
+      (NP-SBJ (NN:[1663..1666] CBX))
+      (VP (VBD:[1667..1676] inhibited)
+        (NP (DT:[1677..1681] both) (NNS:[1683..1692] reactions))))
+    (.:[1692..1693] .)))
+
+;sentence 12 Span:1694..1757
+;Rat kidney did not reduce 7-oxo-DHEA with either NADPH or NADH.
+;[1720..1730]:substance:"7-oxo-DHEA"
+;[1743..1748]:substance:"NADPH"
+;[1752..1756]:substance:"NADH"
+(SENT
+  (S
+    (NP-SBJ (NN:[1694..1697] Rat) (NN:[1698..1704] kidney))
+    (VP (VBD:[1705..1708] did) (RB:[1709..1712] not)
+      (VP (VB:[1713..1719] reduce)
+        (NP (NN:[1720..1730] 7-oxo-DHEA))
+        (PP (IN:[1731..1735] with)
+          (NP (CC:[1736..1742] either) (NN:[1743..1748] NADPH)
+              (CC:[1749..1751] or) (NN:[1752..1756] NADH)))))
+    (.:[1756..1757] .)))
+
+;sentence 13 Span:1758..1914
+;These  results demonstrate that DHEA is first converted in liver to 7
+;alpha-OH-DHEA,  which is subsequently oxidized to 7-oxo-DHEA in both liver
+;and kidney.
+;[1790..1794]:substance:"DHEA"
+;[1826..1841]:substance:"7 alpha-OH-DHEA"
+;[1878..1888]:substance:"7-oxo-DHEA"
+(SENT
+  (S
+    (NP-SBJ (DT:[1758..1763] These) (NNS:[1765..1772] results))
+    (VP (VBP:[1773..1784] demonstrate)
+      (SBAR (IN:[1785..1789] that)
+        (S
+          (NP-SBJ (NN:[1790..1794] DHEA))
+          (VP (VBZ:[1795..1797] is)
+            (ADVP-TMP (RB:[1798..1803] first))
+            (VP (VBN:[1804..1813] converted)
+              (PP-LOC (IN:[1814..1816] in)
+                (NP (NN:[1817..1822] liver)))
+              (PP-CLR (TO:[1823..1825] to)
+                (NP
+                  (NP (CD:[1826..1827] 7) (NN:[1828..1841] alpha-OH-DHEA))
+                  (,:[1841..1842] ,)
+                  (SBAR
+                    (WHNP-1 (WDT:[1844..1849] which))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1849..1849] *T*))
+                      (VP (VBZ:[1850..1852] is)
+                        (ADVP-TMP (RB:[1853..1865] subsequently))
+                        (VP (VBN:[1866..1874] oxidized)
+                          (PP-CLR (TO:[1875..1877] to)
+                            (NP (NN:[1878..1888] 7-oxo-DHEA)))
+                          (PP-LOC (IN:[1889..1891] in)
+                            (NP (CC:[1892..1896] both) (NN:[1897..1902] liver)
+                                (CC:[1903..1906] and) (NN:[1907..1913] kidney))))))))))))))
+    (.:[1913..1914] .)))
+
+;sentence 14 Span:1915..2184
+;In liver,  interconversion of 7-oxo-DHEA and 7-OH-DHEA isomers is largely
+;catalyzed by 11  betaHSD1, while in kidney 11 betaHSD2 (NAD(+)-dependent) and
+;11 betaHSD3  (NADP(+)-dependent) likely catalyze the unidirectional oxidation
+;of 7  alpha-hydroxy-DHEA to 7-oxo-DHEA.
+;[1945..1955]...[1970..1977]:substance:"7-oxo-DHEA"..."isomers"
+;[1960..1977]:substance:"7-OH-DHEA isomers"
+;[2002..2014]:substance:"11  betaHSD1"
+;[2032..2043]:substance:"11 betaHSD2"
+;[2045..2051]:substance:"NAD(+)"
+;[2067..2078]:substance:"11 betaHSD3"
+;[2081..2088]:substance:"NADP(+)"
+;[2148..2169]:substance:"7  alpha-hydroxy-DHEA"
+;[2173..2183]:substance:"7-oxo-DHEA"
+(SENT
+  (S
+    (PP-LOC (IN:[1915..1917] In)
+      (NP (NN:[1918..1923] liver)))
+    (,:[1923..1924] ,)
+    (NP-SBJ-2
+      (NP (NN:[1926..1941] interconversion))
+      (PP (IN:[1942..1944] of)
+        (NP
+          (NP (NN:[1945..1955] 7-oxo-DHEA)
+            (NML-1 (-NONE-:[1955..1955] *P*)))
+          (CC:[1956..1959] and)
+          (NP (NN:[1960..1969] 7-OH-DHEA)
+            (NML-1 (NNS:[1970..1977] isomers))))))
+    (VP (VBZ:[1978..1980] is)
+      (ADVP (RB:[1981..1988] largely))
+      (VP (VBN:[1989..1998] catalyzed)
+        (NP-2 (-NONE-:[1998..1998] *))
+        (PP (IN:[1999..2001] by)
+          (NP-LGS (CD:[2002..2004] 11) (NN:[2006..2014] betaHSD1)))
+        (,:[2014..2015] ,)
+        (SBAR-ADV (IN:[2016..2021] while)
+          (S
+            (PP-LOC (IN:[2022..2024] in)
+              (NP (NN:[2025..2031] kidney)))
+            (NP-SBJ
+              (NP
+                 (CD:[2032..2034] 11) (NN:[2035..2043] betaHSD2)
+                (PRN (-LRB-:[2044..2045] -LRB-)
+                  (ADJP
+                    (NML (NN:[2045..2048] NAD) (-LRB-:[2048..2049] -LRB-)
+                         (SYM:[2049..2050] +) (-RRB-:[2050..2051] -RRB-))
+                    (HYPH:[2051..2052] -) (JJ:[2052..2061] dependent))
+                  (-RRB-:[2061..2062] -RRB-)))
+              (CC:[2063..2066] and)
+              (NP
+                 (CD:[2067..2069] 11) (NN:[2070..2078] betaHSD3)
+                (PRN (-LRB-:[2080..2081] -LRB-)
+                  (NML (NN:[2081..2085] NADP) (-LRB-:[2085..2086] -LRB-)
+                       (SYM:[2086..2087] +) (-RRB-:[2087..2088] -RRB-))
+                  (HYPH:[2088..2089] -) (JJ:[2089..2098] dependent)
+                   (-RRB-:[2098..2099] -RRB-))))
+            (ADVP (RB:[2100..2106] likely))
+            (VP (VBP:[2107..2115] catalyze)
+              (NP
+                (NP (DT:[2116..2119] the) (JJ:[2120..2134] unidirectional)
+                    (NN:[2135..2144] oxidation))
+                (PP (IN:[2145..2147] of)
+                  (NP (CD:[2148..2149] 7) (NN:[2151..2169] alpha-hydroxy-DHEA)))
+                (PP (TO:[2170..2172] to)
+                  (NP (NN:[2173..2183] 7-oxo-DHEA)))))))))
+    (.:[2183..2184] .)))
+
+;sentence 15 Span:2185..2335
+;Distinct species-specific routes of metabolism  of DHEA and the
+;interconversion of its metabolites obviate extrapolation of  animal studies
+;to humans.
+;[2236..2240]:substance:"DHEA"
+;[2272..2283]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[2185..2193] Distinct)
+          (ADJP (NN:[2194..2201] species) (HYPH:[2201..2202] -)
+                (JJ:[2202..2210] specific))
+          (NNS:[2211..2217] routes))
+        (PP (IN:[2218..2220] of)
+          (NP
+            (NP (NN:[2221..2231] metabolism))
+            (PP (IN:[2233..2235] of)
+              (NP (NN:[2236..2240] DHEA))))))
+      (CC:[2241..2244] and)
+      (NP
+        (NP (DT:[2245..2248] the) (NN:[2249..2264] interconversion))
+        (PP (IN:[2265..2267] of)
+          (NP (PRP$:[2268..2271] its) (NNS:[2272..2283] metabolites)))))
+    (VP (VBP:[2284..2291] obviate)
+      (NP
+        (NP (NN:[2292..2305] extrapolation))
+        (PP (IN:[2306..2308] of)
+          (NP (NN:[2310..2316] animal) (NNS:[2317..2324] studies)))
+        (PP (TO:[2325..2327] to)
+          (NP (NNS:[2328..2334] humans)))))
+    (.:[2334..2335] .)))
+
+;section 16 Span:2339..2384
+;PMID: 12667489 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2339..2343] PMID) (::[2343..2344] :) (CD:[2345..2353] 12667489)
+        (NN:[2354..2355] -LSB-) (NNP:[2355..2361] PubMed) (::[2362..2363] -)
+        (NN:[2364..2371] indexed) (IN:[2372..2375] for)
+        (NNP:[2376..2384] MEDLINE-RSB-)))

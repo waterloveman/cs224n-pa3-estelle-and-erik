@@ -1,0 +1,484 @@
+;PMID: 10835530
+;source_file_568.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:47..166] = [t:47..166]
+;2)section:[e:170..204] = [t:170..204]
+;3)section:[e:208..314] = [t:208..314]
+;4)sentence:[e:318..436] = [t:318..436]
+;5)sentence:[e:437..708] = [t:437..708]
+;6)sentence:[e:710..853] = [t:710..853]
+;7)sentence:[e:854..1016] = [t:854..1016]
+;8)sentence:[e:1017..1161] = [t:1017..1161]
+;9)sentence:[e:1162..1299] = [t:1162..1299]
+;10)sentence:[e:1300..1368] = [t:1300..1368]
+;11)sentence:[e:1369..1496] = [t:1369..1496]
+;12)sentence:[e:1497..1625] = [t:1497..1625]
+;13)sentence:[e:1626..1770] = [t:1626..1770]
+;14)sentence:[e:1771..1924] = [t:1771..1924]
+;15)section:[e:1928..1973] = [t:1928..1973]
+
+;section 0 Span:0..42
+;Arch Pathol Lab Med  2000 Jun;124(6):894-7
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..11] Pathol) (NNP:[12..15] Lab)
+        (NNP:[16..19] Med) (CD:[21..25] 2000) (.:[26..32] Jun;12)
+        (CD:[32..33] 4) (NN:[33..34] -LRB-) (NN:[34..35] 6) (NN:[35..36] -RRB-)
+        (::[36..37] :) (CD:[37..39] 89) (CD:[39..42] 4-7)))
+
+;sentence 1 Span:47..166
+;Spindle cell tumor of urinary bladder serosa with phenotypic and genotypic 
+;features of gastrointestinal stromal tumor.
+;[47..91]:malignancy:"Spindle cell tumor of urinary bladder serosa"
+;[135..165]:malignancy:"gastrointestinal stromal tumor"
+(SENT
+  (NP-HLN
+    
+    (NP (NN:[47..54] Spindle) (NN:[55..59] cell) (NN:[60..65] tumor))
+    (PP (IN:[66..68] of)
+      (NP (JJ:[69..76] urinary) (NN:[77..84] bladder) (NN:[85..91] serosa)))
+    (PP (IN:[92..96] with)
+      (NP
+        (NP
+          (NP (JJ:[97..107] phenotypic)
+            (NML-1 (-NONE-:[107..107] *P*)))
+          (CC:[108..111] and)
+          (NP (JJ:[112..121] genotypic)
+            (NML-1 (NNS:[123..131] features))))
+        (PP (IN:[132..134] of)
+          (NP (JJ:[135..151] gastrointestinal) (JJ:[152..159] stromal)
+              (NN:[160..165] tumor)))))
+    (.:[165..166] .)))
+
+;section 2 Span:170..204
+;Lasota J, Carlson JA, Miettinen M.
+(SEC
+  (FRAG (NNP:[170..176] Lasota) (NNP:[177..179] J,) (NNP:[180..187] Carlson)
+        (NNP:[188..190] JA) (,:[190..191] ,) (NNP:[192..201] Miettinen)
+        (NNP:[202..204] M.)))
+
+;section 3 Span:208..314
+;Department of Soft Tissue Pathology, Armed Forces Institute of Pathology, 
+;Washington, DC 20306-6000, USA.
+(SEC
+  (FRAG (NNP:[208..218] Department) (IN:[219..221] of) (NNP:[222..226] Soft)
+        (NNP:[227..233] Tissue) (NNP:[234..243] Pathology) (,:[243..244] ,)
+        (NNP:[245..250] Armed) (NNP:[251..257] Forces)
+        (NNP:[258..267] Institute) (IN:[268..270] of) (NNP:[271..280] Pathology)
+        (,:[280..281] ,) (NNP:[283..293] Washington) (,:[293..294] ,)
+        (NNP:[295..297] DC) (CD:[298..302] 2030) (CD:[302..308] 6-6000)
+        (,:[308..309] ,) (NNP:[310..313] USA) (.:[313..314] .)))
+
+;sentence 4 Span:318..436
+;Most mesenchymal tumors of the gastrointestinal tract are now referred to as 
+;gastrointestinal stromal tumors (GISTs).
+;[323..371]:malignancy:"mesenchymal tumors of the gastrointestinal tract"
+;[396..427]:malignancy:"gastrointestinal stromal tumors"
+;[429..434]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJS:[318..322] Most) (JJ:[323..334] mesenchymal)
+          (NNS:[335..341] tumors))
+      (PP (IN:[342..344] of)
+        (NP (DT:[345..348] the) (JJ:[349..365] gastrointestinal)
+            (NN:[366..371] tract))))
+    (VP (VBP:[372..375] are)
+      (ADVP-TMP (RB:[376..379] now))
+      (VP (VBN:[380..388] referred)
+        (PP (TO:[389..391] to)
+          (NP-1 (-NONE-:[391..391] *)))
+        (PP (IN:[392..394] as)
+          (NP
+            (NP (JJ:[396..412] gastrointestinal) (JJ:[413..420] stromal)
+                (NNS:[421..427] tumors))
+            (NP (-LRB-:[428..429] -LRB-) (NNS:[429..434] GISTs)
+                (-RRB-:[434..435] -RRB-))))))
+    (.:[435..436] .)))
+
+;sentence 5 Span:437..708
+;The tumors differ from ordinary  leiomyomas and schwannomas in several
+;respects: the GISTs typically express  c-kit protein (CD117) and CD34, 30% to
+;50% of them are (often focally) positive  for alpha-smooth muscle actin, and
+;all are negative for desmin and S100 protein.
+;[441..447]:malignancy:"tumors"
+;[470..480]:malignancy:"leiomyomas"
+;[485..496]:malignancy:"schwannomas"
+;[522..527]:malignancy:"GISTs"
+;[547..552]:gene-rna:"c-kit"
+;[562..567]:gene-protein:"CD117"
+;[573..577]:gene-protein:"CD34"
+;[632..657]:gene-protein:"alpha-smooth muscle actin"
+;[684..690]:gene-protein:"desmin"
+;[695..699]:gene-protein:"S100"
+(SENT
+  (S
+    (NP-SBJ (DT:[437..440] The) (NNS:[441..447] tumors))
+    (VP (VBP:[448..454] differ)
+      (PP (IN:[455..459] from)
+        (NP
+          (NP
+            (ADJP-1 (JJ:[460..468] ordinary))
+            (NNS:[470..480] leiomyomas))
+          (CC:[481..484] and)
+          (NP
+            (ADJP-1 (-NONE-:[484..484] *P*))
+            (NNS:[485..496] schwannomas))))
+      (PP (IN:[497..499] in)
+        (NP (JJ:[500..507] several) (NNS:[508..516] respects)))
+      (::[516..517] :)
+      (S-ADV
+        (S
+          (NP-SBJ (DT:[518..521] the) (NNS:[522..527] GISTs))
+          (ADVP (RB:[528..537] typically))
+          (VP (VBP:[538..545] express)
+            (NP
+              (NP (NN:[547..552] c-kit) (NN:[553..560] protein)
+                (PRN (-LRB-:[561..562] -LRB-)
+                  (NP (NN:[562..567] CD117))
+                  (-RRB-:[567..568] -RRB-)))
+              (CC:[569..572] and)
+              (NP (NN:[573..577] CD34)))))
+        (,:[577..578] ,)
+        (S
+          (NP-SBJ
+            (NP (CD:[579..581] 30) (NN:[581..582] %))
+            (PP (TO:[583..585] to)
+              (NP (CD:[586..588] 50) (NN:[588..589] %)))
+            (PP (IN:[590..592] of)
+              (NP (PRP:[593..597] them))))
+          (VP (VBP:[598..601] are)
+            (PRN (-LRB-:[602..603] -LRB-)
+              (ADVP (RB:[603..608] often) (RB:[609..616] focally))
+              (-RRB-:[616..617] -RRB-))
+            (ADJP-PRD (JJ:[618..626] positive)
+              (PP (IN:[628..631] for)
+                (NP
+                  (NML (SYM:[632..637] alpha))
+                  (HYPH:[637..638] -)
+                  (NML (JJ:[638..644] smooth) (NN:[645..651] muscle)
+                       (NN:[652..657] actin)))))))
+        (,:[657..658] ,) (CC:[659..662] and)
+        (S
+          (NP-SBJ (DT:[663..666] all))
+          (VP (VBP:[667..670] are)
+            (ADJP-PRD (JJ:[671..679] negative)
+              (PP (IN:[680..683] for)
+                (NP
+                  (NP (NN:[684..690] desmin))
+                  (CC:[691..694] and)
+                  (NP (NN:[695..699] S100) (NN:[700..707] protein)))))))))
+    (.:[707..708] .)))
+
+;sentence 6 Span:710..853
+;Recently, mutations in the exon 11 of the c-kit gene have been identified and
+; confirmed as a molecular genetic marker for the subset of GISTs.
+;[720..729]:variation-event:"mutations"
+;[737..744]:variation-location:"exon 11"
+;[752..757]:gene-rna:"c-kit"
+;[847..852]:malignancy:"GISTs"
+(SENT
+  (S
+    (ADVP-TMP (RB:[710..718] Recently))
+    (,:[718..719] ,)
+    (NP-SBJ-1
+      (NP (NNS:[720..729] mutations))
+      (PP-LOC (IN:[730..732] in)
+        (NP
+          (NP (DT:[733..736] the)
+             (NN:[737..741] exon) (CD:[742..744] 11))
+          (PP (IN:[745..747] of)
+            (NP (DT:[748..751] the) (NN:[752..757] c-kit) (NN:[758..762] gene))))))
+    (VP (VBP:[763..767] have)
+      (VP (VBN:[768..772] been)
+        (VP (VBN:[773..783] identified) (CC:[784..787] and)
+            (VBN:[789..798] confirmed)
+          (NP-1 (-NONE-:[798..798] *))
+          (PP (IN:[799..801] as)
+            (NP
+              (NP (DT:[802..803] a) (JJ:[804..813] molecular)
+                  (JJ:[814..821] genetic) (NN:[822..828] marker))
+              (PP (IN:[829..832] for)
+                (NP
+                  (NP (DT:[833..836] the) (NN:[837..843] subset))
+                  (PP (IN:[844..846] of)
+                    (NP (NNS:[847..852] GISTs))))))))))
+    (.:[852..853] .)))
+
+;sentence 7 Span:854..1016
+;In this report,  we describe a mesenchymal tumor removed from the pelvic
+;cavity of a 52-year-old  woman, who is alive without disease 36 months after
+;the surgery.
+;[885..902]:malignancy:"mesenchymal tumor"
+(SENT
+  (S
+    (PP (IN:[854..856] In)
+      (NP (DT:[857..861] this) (NN:[862..868] report)))
+    (,:[868..869] ,)
+    (NP-SBJ (PRP:[871..873] we))
+    (VP (VBP:[874..882] describe)
+      (NP
+        (NP (DT:[883..884] a)
+           (JJ:[885..896] mesenchymal) (NN:[897..902] tumor))
+        (VP (VBN:[903..910] removed)
+          (NP (-NONE-:[910..910] *))
+          (PP (IN:[911..915] from)
+            (NP
+              (NP (DT:[916..919] the) (JJ:[920..926] pelvic)
+                  (NN:[927..933] cavity))
+              (PP (IN:[934..936] of)
+                (NP
+                  (NP (DT:[937..938] a)
+                    (ADJP
+                      (NML (CD:[939..941] 52) (HYPH:[941..942] -)
+                           (NN:[942..946] year))
+                      (HYPH:[946..947] -) (JJ:[947..950] old))
+                    (NN:[952..957] woman))
+                  (,:[957..958] ,)
+                  (SBAR
+                    (WHNP-1 (WP:[959..962] who))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[962..962] *T*))
+                      (VP (VBZ:[963..965] is)
+                        (ADJP-PRD (JJ:[966..971] alive)
+                          (PP (IN:[972..979] without)
+                            (NP (NN:[980..987] disease)))
+                          (NP-TMP
+                            (NP (CD:[988..990] 36) (NNS:[991..997] months))
+                            (PP (IN:[998..1003] after)
+                              (NP (DT:[1004..1007] the)
+                                  (NN:[1008..1015] surgery)))))))))))))))
+    (.:[1015..1016] .)))
+
+;sentence 8 Span:1017..1161
+;The 5-cm tumor  was densely attached to the external aspect of the urinary
+;bladder but was  attached to small intestine by only filmy adhesions.
+;[1026..1136]:malignancy:"tumor  was densely attached to the external aspect
+;of the urinary bladder but was  attached to small intestine"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1017..1020] The)
+      (NML (CD:[1021..1022] 5) (HYPH:[1022..1023] -) (NN:[1023..1025] cm))
+      (NN:[1026..1031] tumor))
+    (VP
+      (VP (VBD:[1033..1036] was)
+        (ADVP (RB:[1037..1044] densely))
+        (VP (VBN:[1045..1053] attached)
+          (NP-1 (-NONE-:[1053..1053] *))
+          (PP (TO:[1054..1056] to)
+            (NP
+              (NP (DT:[1057..1060] the) (JJ:[1061..1069] external)
+                  (NN:[1070..1076] aspect))
+              (PP (IN:[1077..1079] of)
+                (NP (DT:[1080..1083] the) (JJ:[1084..1091] urinary)
+                    (NN:[1092..1099] bladder)))))))
+      (CC:[1100..1103] but)
+      (VP (VBD:[1104..1107] was)
+        (VP (VBN:[1109..1117] attached)
+          (NP-1 (-NONE-:[1117..1117] *))
+          (PP (TO:[1118..1120] to)
+            (NP (JJ:[1121..1126] small) (NN:[1127..1136] intestine)))
+          (PP (IN:[1137..1139] by)
+            (NP
+              (ADVP (RB:[1140..1144] only))
+              (JJ:[1145..1150] filmy) (NNS:[1151..1160] adhesions))))))
+    (.:[1160..1161] .)))
+
+;sentence 9 Span:1162..1299
+;The tumor grossly resembled  a leiomyoma and was histologically composed of
+;sheets of spindle cells with a  dense collagenous background.
+;[1166..1171]:malignancy:"tumor"
+;[1193..1202]:malignancy:"leiomyoma"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1162..1165] The) (NN:[1166..1171] tumor))
+    (VP
+      (VP
+        (ADVP (RB:[1172..1179] grossly))
+        (VBD:[1180..1189] resembled)
+        (NP (DT:[1191..1192] a) (NN:[1193..1202] leiomyoma)))
+      (CC:[1203..1206] and)
+      (VP (VBD:[1207..1210] was)
+        (ADVP (RB:[1211..1225] histologically))
+        (VP (VBN:[1226..1234] composed)
+          (NP-1 (-NONE-:[1234..1234] *))
+          (PP (IN:[1235..1237] of)
+            (NP
+              (NP (NNS:[1238..1244] sheets))
+              (PP (IN:[1245..1247] of)
+                (NP (NN:[1248..1255] spindle) (NNS:[1256..1261] cells)))))
+          (PP (IN:[1262..1266] with)
+            (NP (DT:[1267..1268] a) (JJ:[1270..1275] dense)
+                (JJ:[1276..1287] collagenous) (NN:[1288..1298] background))))))
+    (.:[1298..1299] .)))
+
+;sentence 10 Span:1300..1368
+;The mitotic activity was low, less then 1 per 50  high-power fields.
+(SENT
+  (S
+    (NP-SBJ (DT:[1300..1303] The) (JJ:[1304..1311] mitotic)
+            (NN:[1312..1320] activity))
+    (VP (VBD:[1321..1324] was)
+      (ADJP-PRD (JJ:[1325..1328] low))
+      (,:[1328..1329] ,)
+      (NP-ADV
+        (NP
+          (QP (JJR:[1330..1334] less) (IN:[1335..1339] then) (CD:[1340..1341] 1)))
+        (PP (IN:[1342..1345] per)
+          (NP (CD:[1346..1348] 50)
+            (NML (JJ:[1350..1354] high) (HYPH:[1354..1355] -)
+                 (NN:[1355..1360] power))
+            (NNS:[1361..1367] fields)))))
+    (.:[1367..1368] .)))
+
+;sentence 11 Span:1369..1496
+;Immunohistochemically, the tumor cells were negative for  alpha-smooth muscle
+;actin and desmin and positive for CD117 and CD34.
+;[1396..1401]:malignancy:"tumor"
+;[1427..1452]:gene-protein:"alpha-smooth muscle actin"
+;[1457..1463]:gene-protein:"desmin"
+;[1481..1486]:gene-protein:"CD117"
+;[1491..1495]:gene-protein:"CD34"
+(SENT
+  (S
+    (ADVP (RB:[1369..1390] Immunohistochemically))
+    (,:[1390..1391] ,)
+    (NP-SBJ (DT:[1392..1395] the) (NN:[1396..1401] tumor)
+            (NNS:[1402..1407] cells))
+    (VP (VBD:[1408..1412] were)
+      (ADJP-PRD
+        (ADJP (JJ:[1413..1421] negative)
+          (PP (IN:[1422..1425] for)
+            (NP
+              (NP
+                (NML (SYM:[1427..1432] alpha))
+                (HYPH:[1432..1433] -)
+                (NML (JJ:[1433..1439] smooth) (NN:[1440..1446] muscle)
+                     (NN:[1447..1452] actin)))
+              (CC:[1453..1456] and)
+              (NP (NN:[1457..1463] desmin)))))
+        (CC:[1464..1467] and)
+        (ADJP (JJ:[1468..1476] positive)
+          (PP (IN:[1477..1480] for)
+            (NP (NN:[1481..1486] CD117) (CC:[1487..1490] and)
+                (NN:[1491..1495] CD34))))))
+    (.:[1495..1496] .)))
+
+;sentence 12 Span:1497..1625
+;Molecular  genetic analysis of the exon 11 of the c-kit gene revealed a point
+;mutation in  the region commonly mutated in GISTs.
+;[1532..1539]:variation-location:"exon 11"
+;[1547..1552]:gene-rna:"c-kit"
+;[1569..1583]:variation-type:"point mutation"
+;[1619..1624]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1497..1506] Molecular) (JJ:[1508..1515] genetic)
+          (NN:[1516..1524] analysis))
+      (PP (IN:[1525..1527] of)
+        (NP
+          (NP (DT:[1528..1531] the)
+             (NN:[1532..1536] exon) (CD:[1537..1539] 11))
+          (PP (IN:[1540..1542] of)
+            (NP (DT:[1543..1546] the) (NN:[1547..1552] c-kit)
+                (NN:[1553..1557] gene))))))
+    (VP (VBD:[1558..1566] revealed)
+      (NP (DT:[1567..1568] a)
+         (NN:[1569..1574] point) (NN:[1575..1583] mutation))
+      (PP-LOC (IN:[1584..1586] in)
+        (NP
+          (NP (DT:[1588..1591] the) (NN:[1592..1598] region))
+          (VP (RB:[1599..1607] commonly) (VBN:[1608..1615] mutated)
+            (NP (-NONE-:[1615..1615] *))
+            (PP (IN:[1616..1618] in)
+              (NP (NNS:[1619..1624] GISTs)))))))
+    (.:[1624..1625] .)))
+
+;sentence 13 Span:1626..1770
+;This mutation substituted T for A in the  codon 557, leading to the change of
+;amino acid sequence (tryptophan for  arginine) of the KIT protein.
+;[1626..1639]:variation-event:"This mutation"
+;[1652..1653]:variation-state-altered:"T"
+;[1658..1659]:variation-state-altered:"A"
+;[1668..1677]:variation-location:"codon 557"
+;[1725..1735]:variation-state-altered:"tryptophan"
+;[1741..1749]:variation-state-original:"arginine"
+;[1758..1761]:gene-protein:"KIT"
+(SENT
+  (S
+    (NP-SBJ (DT:[1626..1630] This) (NN:[1631..1639] mutation))
+    (VP (VBD:[1640..1651] substituted)
+      (NP
+        (NP (NN:[1652..1653] T))
+        (PP (IN:[1654..1657] for)
+          (NP (NN:[1658..1659] A))))
+      (PP-LOC (IN:[1660..1662] in)
+        (NP (DT:[1663..1666] the)
+           (NN:[1668..1673] codon) (CD:[1674..1677] 557)))
+      (,:[1677..1678] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1678..1678] *))
+        (VP (VBG:[1679..1686] leading)
+          (PP-CLR (TO:[1687..1689] to)
+            (NP
+              (NP (DT:[1690..1693] the) (NN:[1694..1700] change))
+              (PP (IN:[1701..1703] of)
+                (NP (JJ:[1704..1709] amino) (NN:[1710..1714] acid)
+                    (NN:[1715..1723] sequence)))
+              (PRN (-LRB-:[1724..1725] -LRB-)
+                (NP
+                  (NP (NN:[1725..1735] tryptophan))
+                  (PP (IN:[1736..1739] for)
+                    (NP (NN:[1741..1749] arginine))))
+                (-RRB-:[1749..1750] -RRB-))
+              (PP (IN:[1751..1753] of)
+                (NP (DT:[1754..1757] the) (NN:[1758..1761] KIT)
+                    (NN:[1762..1769] protein))))))))
+    (.:[1769..1770] .)))
+
+;sentence 14 Span:1771..1924
+;This case illustrates that tumors phenotypically  and genotypically similar
+;to GISTs may present in sites other than the tubular  gastrointestinal
+;tract.
+;[1798..1804]:malignancy:"tumors"
+;[1850..1855]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ (DT:[1771..1775] This) (NN:[1776..1780] case))
+    (VP (VBZ:[1781..1792] illustrates)
+      (SBAR (IN:[1793..1797] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1798..1804] tumors))
+            (ADJP
+              (ADJP
+                (ADJP (RB:[1805..1819] phenotypically)
+                  (ADJP-1 (-NONE-:[1819..1819] *P*)))
+                (CC:[1821..1824] and)
+                (ADJP (RB:[1825..1838] genotypically)
+                  (ADJP-1 (JJ:[1839..1846] similar))))
+              (PP-2 (TO:[1847..1849] to)
+                (NP (NNS:[1850..1855] GISTs)))))
+          (VP (MD:[1856..1859] may)
+            (VP (VB:[1860..1867] present)
+              (PP-LOC (IN:[1868..1870] in)
+                (NP
+                  (NP (NNS:[1871..1876] sites))
+                  (ADJP
+                    (ADJP (JJ:[1877..1882] other))
+                    (PP (IN:[1883..1887] than)
+                      (NP (DT:[1888..1891] the) (JJ:[1892..1899] tubular)
+                          (JJ:[1901..1917] gastrointestinal)
+                          (NN:[1918..1923] tract)))))))))))
+    (.:[1923..1924] .)))
+
+;section 15 Span:1928..1973
+;PMID: 10835530 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1928..1932] PMID) (::[1932..1933] :) (CD:[1934..1942] 10835530)
+        (NN:[1943..1944] -LSB-) (NNP:[1944..1950] PubMed) (::[1951..1952] -)
+        (NN:[1953..1960] indexed) (IN:[1961..1964] for)
+        (NNP:[1965..1973] MEDLINE-RSB-)))

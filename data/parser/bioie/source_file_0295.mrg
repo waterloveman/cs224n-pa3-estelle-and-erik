@@ -1,0 +1,383 @@
+;PMID: 2311333
+;source_file_951.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..163] = [t:49..163]
+;2)section:[e:167..209] = [t:167..209]
+;3)section:[e:213..291] = [t:213..291]
+;4)sentence:[e:295..621] = [t:295..621]
+;5)sentence:[e:622..981] = [t:622..981]
+;6)sentence:[e:982..1253] = [t:982..1253]
+;7)sentence:[e:1254..1547] = [t:1254..1547]
+;8)sentence:[e:1548..1862] = [t:1548..1862]
+;9)sentence:[e:1863..2016] = [t:1863..2016]
+;10)section:[e:2020..2064] = [t:2020..2064]
+
+;section 0 Span:0..43
+;Clin Pharmacol Ther. 1990 Mar;47(3):313-22.
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..14] Pharmacol) (NNP:[15..19] Ther)
+        (.:[19..20] .) (CD:[21..25] 1990) (CC:[26..33] Mar;47-LRB-)
+        (CD:[33..34] 3) (-RRB-:[34..35] -RRB-) (CD:[35..39] :313)
+        (HYPH:[39..40] -) (CD:[40..42] 22) (.:[42..43] .)))
+
+;sentence 1 Span:49..163
+;Polymorphism in hydroxylation of mephenytoin and hexobarbital stereoisomers
+;in  relation to hepatic P-450 human-2.
+;[82..93]:substance:"mephenytoin"
+;[98..124]:substance:"hexobarbital stereoisomers"
+;[149..162]:cyp450:"P-450 human-2"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..61] Polymorphism))
+    (PP (IN:[62..64] in)
+      (NP
+        (NP (NN:[65..78] hydroxylation))
+        (PP (IN:[79..81] of)
+          (NP
+            (NP (NN:[82..93] mephenytoin)
+              (NML-1 (-NONE-:[93..93] *P*)))
+            (CC:[94..97] and)
+            (NP (NN:[98..110] hexobarbital)
+              (NML-1 (NNS:[111..124] stereoisomers)))))))
+    (PP (IN:[125..127] in)
+      (NP
+        (NP (NN:[129..137] relation))
+        (PP (TO:[138..140] to)
+          (NP (JJ:[141..148] hepatic)
+             (NN:[149..154] P-450) (NN:[155..162] human-2)))))
+    (.:[162..163] .)))
+
+;section 2 Span:167..209
+;Yasumori T, Murayama N, Yamazoe Y, Kato R.
+(SEC
+  (FRAG (NNP:[167..175] Yasumori) (NNP:[176..177] T) (,:[177..178] ,)
+        (NNP:[179..187] Murayama) (NNP:[188..189] N) (,:[189..190] ,)
+        (NNP:[191..198] Yamazoe) (NNP:[199..200] Y) (,:[200..201] ,)
+        (NNP:[202..206] Kato) (NNP:[207..209] R.)))
+
+;section 3 Span:213..291
+;Department of Pharmacology, School of Medicine, Keio University, Tokyo,
+;Japan.
+(SEC
+  (FRAG (NNP:[213..223] Department) (IN:[224..226] of)
+        (NNP:[227..239] Pharmacology) (,:[239..240] ,) (NNP:[241..247] School)
+        (IN:[248..250] of) (NNP:[251..259] Medicine) (,:[259..260] ,)
+        (NNP:[261..265] Keio) (NNP:[266..276] University) (,:[276..277] ,)
+        (NNP:[278..283] Tokyo) (,:[283..284] ,) (NNP:[285..290] Japan)
+        (.:[290..291] .)))
+
+;sentence 4 Span:295..621
+;Stereoselective 4'-hydroxylations of R-(-)-mephenytoin and S-(+)-mephenytoin
+;and  3'-hydroxylation of R-(-)-hexobarbital and S-(+)-hexobarbital were
+;determined in  liver microsomes of 14 Japanese subjects who were extensive
+;metabolizers of  mephenytoin and in five Japanese subjects who were poor
+;metabolizers of  mephenytoin.
+;[332..349]:substance:"R-(-)-mephenytoin"
+;[354..371]:substance:"S-(+)-mephenytoin"
+;[397..415]:substance:"R-(-)-hexobarbital"
+;[420..438]:substance:"S-(+)-hexobarbital"
+;[536..547]:substance:"mephenytoin"
+;[609..620]:substance:"mephenytoin"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP (JJ:[295..310] Stereoselective) (NNS:[311..328] 4'-hydroxylations))
+        (PP (IN:[329..331] of)
+          (NP
+            (NP (NN:[332..349] R--LRB---RRB--mephenytoin))
+            (CC:[350..353] and)
+            (NP (NN:[354..371] S--LRB-+-RRB--mephenytoin)))))
+      (CC:[372..375] and)
+      (NP
+        (NP (NN:[377..393] 3'-hydroxylation))
+        (PP (IN:[394..396] of)
+          (NP
+            (NP (NN:[397..415] R--LRB---RRB--hexobarbital))
+            (CC:[416..419] and)
+            (NP (NN:[420..438] S--LRB-+-RRB--hexobarbital))))))
+    (VP (VBD:[439..443] were)
+      (VP (VBN:[444..454] determined)
+        (NP-3 (-NONE-:[454..454] *))
+        (PP-LOC
+          (PP (IN:[455..457] in)
+            (NP
+              (NP (NN:[459..464] liver) (NNS:[465..475] microsomes))
+              (PP (IN:[476..478] of)
+                (NP
+                  (NP (CD:[479..481] 14) (JJ:[482..490] Japanese)
+                      (NNS:[491..499] subjects))
+                  (SBAR
+                    (WHNP-2 (WP:[500..503] who))
+                    (S
+                      (NP-SBJ-2 (-NONE-:[503..503] *T*))
+                      (VP (VBD:[504..508] were)
+                        (NP-PRD
+                          (NP (JJ:[509..518] extensive)
+                              (NNS:[519..531] metabolizers))
+                          (PP (IN:[532..534] of)
+                            (NP (NN:[536..547] mephenytoin)))))))))))
+          (CC:[548..551] and)
+          (PP (IN:[552..554] in)
+            (NP
+              (NP (CD:[555..559] five) (JJ:[560..568] Japanese)
+                  (NNS:[569..577] subjects))
+              (SBAR
+                (WHNP-1 (WP:[578..581] who))
+                (S
+                  (NP-SBJ-1 (-NONE-:[581..581] *T*))
+                  (VP (VBD:[582..586] were)
+                    (NP-PRD
+                      (NP (JJ:[587..591] poor) (NNS:[592..604] metabolizers))
+                      (PP (IN:[605..607] of)
+                        (NP (NN:[609..620] mephenytoin))))))))))))
+    (.:[620..621] .)))
+
+;sentence 5 Span:622..981
+;Content of P-450 human-2 assessed by Western blots was correlated  to
+;microsomal S-(+)-mephenytoin 4'-hydroxylation, R-(-)-hexobarbital 3' 
+;alpha-hydroxylation, and S-(+)-hexobarbital 3' beta-hydroxylation, and was
+;less  correlated to R-(-)mephenytoin 4'-hydroxylation, R-(-)-hexobarbital 3' 
+;beta-hydroxylation, and S-(+)-hexobarbital 3' alpha-hydroxylation.
+;[633..646]:cyp450:"P-450 human-2"
+;[703..720]:substance:"S-(+)-mephenytoin"
+;[739..757]:substance:"R-(-)-hexobarbital"
+;[787..805]:substance:"S-(+)-hexobarbital"
+;[857..873]:substance:"R-(-)mephenytoin"
+;[892..910]:substance:"R-(-)-hexobarbital"
+;[939..957]:substance:"S-(+)-hexobarbital"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (NN:[622..629] Content))
+        (PP (IN:[630..632] of)
+          (NP (NN:[633..638] P-450) (NN:[639..646] human-2))))
+      (VP (VBN:[647..655] assessed)
+        (NP (-NONE-:[655..655] *))
+        (PP-MNR (IN:[656..658] by)
+          (NP (JJ:[659..666] Western) (NNS:[667..672] blots)))))
+    (VP
+      (VP (VBD:[673..676] was)
+        (VP (VBN:[677..687] correlated)
+          (NP-1 (-NONE-:[687..687] *))
+          (PP-CLR (TO:[689..691] to)
+            (NP
+              (NP
+                (ADJP-2 (JJ:[692..702] microsomal))
+                (NN:[703..720] S--LRB-+-RRB--mephenytoin)
+                 (NN:[721..737] 4'-hydroxylation))
+              (,:[737..738] ,)
+              (NP
+                (ADJP-2 (-NONE-:[738..738] *P*))
+                (NN:[739..757] R--LRB---RRB--hexobarbital) (CD:[758..759] 3)
+                 (SYM:[759..760] ') (NN:[762..781] alpha-hydroxylation))
+              (,:[781..782] ,) (CC:[783..786] and)
+              (NP
+                (ADJP-2 (-NONE-:[786..786] *P*))
+                (NN:[787..805] S--LRB-+-RRB--hexobarbital) (CD:[806..807] 3)
+                 (SYM:[807..808] ') (NN:[809..827] beta-hydroxylation))))))
+      (,:[827..828] ,) (CC:[829..832] and)
+      (VP (VBD:[833..836] was)
+        (ADVP (RBR:[837..841] less))
+        (VP (VBN:[843..853] correlated)
+          (NP-1 (-NONE-:[853..853] *))
+          (PP-CLR (TO:[854..856] to)
+            (NP
+              (NP (NN:[857..873] R--LRB---RRB-mephenytoin)
+                  (NN:[874..890] 4'-hydroxylation))
+              (,:[890..891] ,)
+              (NP (NN:[892..910] R--LRB---RRB--hexobarbital) (CD:[911..912] 3)
+                  (SYM:[912..913] ') (NN:[915..933] beta-hydroxylation))
+              (,:[933..934] ,) (CC:[935..938] and)
+              (NP (NN:[939..957] S--LRB-+-RRB--hexobarbital) (CD:[958..959] 3)
+                  (SYM:[959..960] ') (NN:[961..980] alpha-hydroxylation)))))))
+    (.:[980..981] .)))
+
+;sentence 6 Span:982..1253
+;Antibodies  raised against P-450 human-2 inhibited microsomal
+;S-(+)-mephenytoin  4'-hydroxylation efficiently but was less efficient on
+;R-(-)-mephenytoin  4'-hydroxylation in extensive metabolizers and on
+;4'-hydroxylation of  mephenytoin enantiomers in poor metabolizers.
+;[982..992]:substance:"Antibodies"
+;[1009..1022]:cyp450:"P-450 human-2"
+;[1044..1061]:substance:"S-(+)-mephenytoin"
+;[1118..1135]:substance:"R-(-)-mephenytoin"
+;[1208..1231]:substance:"mephenytoin enantiomers"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[982..992] Antibodies))
+      (VP (VBN:[994..1000] raised)
+        (NP (-NONE-:[1000..1000] *))
+        (PP (IN:[1001..1008] against)
+          (NP (NN:[1009..1014] P-450) (NN:[1015..1022] human-2)))))
+    (VP
+      (VP (VBD:[1023..1032] inhibited)
+        (NP (JJ:[1033..1043] microsomal)
+            (NN:[1044..1061] S--LRB-+-RRB--mephenytoin)
+            (NN:[1063..1079] 4'-hydroxylation))
+        (ADVP (RB:[1080..1091] efficiently)))
+      (CC:[1092..1095] but)
+      (VP
+        (VP (VBD:[1096..1099] was)
+          (ADJP-PRD (RBR:[1100..1104] less) (JJ:[1105..1114] efficient))
+          (PP=1 (IN:[1115..1117] on)
+            (NP (NN:[1118..1135] R--LRB---RRB--mephenytoin)
+                (NN:[1137..1153] 4'-hydroxylation)))
+          (PP-LOC=2 (IN:[1154..1156] in)
+            (NP (JJ:[1157..1166] extensive) (NNS:[1167..1179] metabolizers))))
+        (CC:[1180..1183] and)
+        (VP
+          (PP=1 (IN:[1184..1186] on)
+            (NP
+              (NP (NN:[1187..1203] 4'-hydroxylation))
+              (PP (IN:[1204..1206] of)
+                (NP (NN:[1208..1219] mephenytoin) (NNS:[1220..1231] enantiomers)))))
+          (PP-LOC=2 (IN:[1232..1234] in)
+            (NP (JJ:[1235..1239] poor) (NNS:[1240..1252] metabolizers))))))
+    (.:[1252..1253] .)))
+
+;sentence 7 Span:1254..1547
+;The antibodies also inhibited  R-(-)-hexobarbital 3' alpha-hydroxylation and
+;S-(+)-hexobarbital 3'  beta-hydroxylation but did not effectively inhibit the
+;hydroxylation of the two  other optical isomers of hexobarbital in extensive
+;metabolizers and of four  stereoisomers in poor metabolizers.
+;[1258..1268]:substance:"antibodies"
+;[1285..1303]:substance:"R-(-)-hexobarbital"
+;[1331..1349]:substance:"S-(+)-hexobarbital"
+;[1449..1456]:substance:"isomers"
+;[1460..1472]:substance:"hexobarbital"
+;[1512..1525]:substance:"stereoisomers"
+(SENT
+  (S
+    (NP-SBJ (DT:[1254..1257] The) (NNS:[1258..1268] antibodies))
+    (VP
+      (VP
+        (ADVP (RB:[1269..1273] also))
+        (VBD:[1274..1283] inhibited)
+        (NP
+          (NP (NN:[1285..1303] R--LRB---RRB--hexobarbital) (CD:[1304..1305] 3)
+              (SYM:[1305..1306] ') (NN:[1307..1326] alpha-hydroxylation))
+          (CC:[1327..1330] and)
+          (NP (NN:[1331..1349] S--LRB-+-RRB--hexobarbital) (CD:[1350..1351] 3)
+              (SYM:[1351..1352] ') (NN:[1354..1372] beta-hydroxylation))))
+      (CC:[1373..1376] but)
+      (VP (VBD:[1377..1380] did) (RB:[1381..1384] not)
+        (ADVP (RB:[1385..1396] effectively))
+        (VP
+          (VP (VB:[1397..1404] inhibit)
+            (NP
+              (NP (DT:[1405..1408] the) (NN:[1409..1422] hydroxylation))
+              (PP=2 (IN:[1423..1425] of)
+                (NP
+                  (NP (DT:[1426..1429] the) (CD:[1430..1433] two)
+                      (JJ:[1435..1440] other) (JJ:[1441..1448] optical)
+                      (NNS:[1449..1456] isomers))
+                  (PP (IN:[1457..1459] of)
+                    (NP (NN:[1460..1472] hexobarbital))))))
+            (PP-LOC=3 (IN:[1473..1475] in)
+              (NP (JJ:[1476..1485] extensive) (NNS:[1486..1498] metabolizers))))
+          (CC:[1499..1502] and)
+          (VP
+            (PP=2 (IN:[1503..1505] of)
+              (NP (CD:[1506..1510] four) (NNS:[1512..1525] stereoisomers)))
+            (PP-LOC=3 (IN:[1526..1528] in)
+              (NP (JJ:[1529..1533] poor) (NNS:[1534..1546] metabolizers)))))))
+    (.:[1546..1547] .)))
+
+;sentence 8 Span:1548..1862
+;These findings indicate the close  relationship between polymorphic
+;mephenytoin 4'-hydroxylation and two  stereospecific hexobarbital
+;hydroxylations, and they suggest that P-450 human-2  is a typical
+;S-(+)-mephenytoin 4'-hydroxylase and a major hexobarbital  3'-hydroxylase in
+;the livers of extensive metabolizers.
+;[1616..1627]:substance:"mephenytoin"
+;[1669..1681]:substance:"hexobarbital"
+;[1720..1733]:cyp450:"P-450 human-2"
+;[1748..1780]:substance:"S-(+)-mephenytoin 4'-hydroxylase"
+;[1793..1821]:substance:"hexobarbital  3'-hydroxylase"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[1548..1553] These) (NNS:[1554..1562] findings))
+      (VP (VBP:[1563..1571] indicate)
+        (NP
+          (NP (DT:[1572..1575] the) (JJ:[1576..1581] close)
+              (NN:[1583..1595] relationship))
+          (PP (IN:[1596..1603] between)
+            (NP
+              (NP (JJ:[1604..1615] polymorphic) (NN:[1616..1627] mephenytoin)
+                  (NN:[1628..1644] 4'-hydroxylation))
+              (CC:[1645..1648] and)
+              (NP (CD:[1649..1652] two) (JJ:[1654..1668] stereospecific)
+                  (NN:[1669..1681] hexobarbital)
+                  (NNS:[1682..1696] hydroxylations)))))))
+    (,:[1696..1697] ,) (CC:[1698..1701] and)
+    (S
+      (NP-SBJ (PRP:[1702..1706] they))
+      (VP (VBP:[1707..1714] suggest)
+        (SBAR (IN:[1715..1719] that)
+          (S
+            (NP-SBJ (NN:[1720..1725] P-450) (NN:[1726..1733] human-2))
+            (VP (VBZ:[1735..1737] is)
+              (NP-PRD
+                (NP (DT:[1738..1739] a) (JJ:[1740..1747] typical)
+                   (NN:[1748..1765] S--LRB-+-RRB--mephenytoin)
+                   (NN:[1766..1780] 4'-hydroxylase))
+                (CC:[1781..1784] and)
+                (NP (DT:[1785..1786] a) (JJ:[1787..1792] major)
+                   (NN:[1793..1805] hexobarbital)
+                   (NN:[1807..1821] 3'-hydroxylase)))
+              (PP-LOC (IN:[1822..1824] in)
+                (NP
+                  (NP (DT:[1825..1828] the) (NNS:[1829..1835] livers))
+                  (PP (IN:[1836..1838] of)
+                    (NP (JJ:[1839..1848] extensive)
+                        (NNS:[1849..1861] metabolizers))))))))))
+    (.:[1861..1862] .)))
+
+;sentence 9 Span:1863..2016
+;The findings were  further supported by the experiments that used P-450
+;human-2 complementary  dexoyribonucleic acid-derived protein in yeast
+;microsomes.
+;[1929..1942]:cyp450:"P-450 human-2"
+;[1958..1995]:substance:"dexoyribonucleic acid-derived protein"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1863..1866] The) (NNS:[1867..1875] findings))
+    (VP (VBD:[1876..1880] were)
+      (ADVP (RB:[1882..1889] further))
+      (VP (VBN:[1890..1899] supported)
+        (NP-2 (-NONE-:[1899..1899] *))
+        (PP (IN:[1900..1902] by)
+          (NP-LGS
+            (NP (DT:[1903..1906] the) (NNS:[1907..1918] experiments))
+            (SBAR
+              (WHNP-1 (WDT:[1919..1923] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[1923..1923] *T*))
+                (VP (VBD:[1924..1928] used)
+                  (NP
+                     (NN:[1929..1934] P-450) (NN:[1935..1942] human-2)
+                    (JJ:[1943..1956] complementary)
+                    
+                    (ADJP
+                      (NML (JJ:[1958..1974] dexoyribonucleic)
+                           (NN:[1975..1979] acid))
+                      (HYPH:[1979..1980] -) (VBN:[1980..1987] derived))
+                    (NN:[1988..1995] protein))
+                  (PP (IN:[1996..1998] in)
+                    (NP (NN:[1999..2004] yeast) (NNS:[2005..2015] microsomes))))))))))
+    (.:[2015..2016] .)))
+
+;section 10 Span:2020..2064
+;PMID: 2311333 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2020..2024] PMID) (::[2024..2025] :) (CD:[2026..2033] 2311333)
+        (IN:[2034..2035] -LSB-) (NNP:[2035..2041] PubMed) (HYPH:[2042..2043] -)
+        (JJ:[2044..2051] indexed) (IN:[2052..2055] for)
+        (NNP:[2056..2064] MEDLINE-RSB-)))

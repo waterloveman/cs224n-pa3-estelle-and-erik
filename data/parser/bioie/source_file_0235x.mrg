@@ -1,0 +1,335 @@
+;PMID: 9778107
+;source_file_1393.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..149] = [t:38..149]
+;2)section:[e:153..194] = [t:153..194]
+;3)section:[e:198..283] = [t:198..283]
+;4)sentence:[e:287..608] = [t:287..608]
+;5)sentence:[e:609..796] = [t:609..796]
+;6)sentence:[e:797..895] = [t:797..895]
+;7)sentence:[e:896..986] = [t:896..986]
+;8)sentence:[e:987..1124] = [t:987..1124]
+;9)sentence:[e:1125..1345] = [t:1125..1345]
+;10)section:[e:1349..1393] = [t:1349..1393]
+
+;section 0 Span:0..33
+;Pathol Int  1998 Sep;48(9):689-94
+(SEC
+  (FRAG (DT:[0..6] Pathol) (JJ:[7..10] Int) (CD:[12..16] 1998)
+        (-LRB-:[17..24] Sep;48-LRB-) (CD:[24..25] 9) (-RRB-:[25..26] -RRB-)
+        (CD:[26..30] :689) (HYPH:[30..31] -) (CD:[31..33] 94)))
+
+;sentence 1 Span:38..149
+;Alterations of p53 gene and Ha-ras gene are independent events in solar 
+;keratosis and squamous cell carcinoma.
+;[53..56]:gene-rna:"p53"
+;[66..72]:gene-rna:"Ha-ras"
+;[104..120]:malignancy:"solar  keratosis"
+;[125..148]:malignancy:"squamous cell carcinoma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NNS:[38..49] Alterations))
+      (PP (IN:[50..52] of)
+        (NP
+          (NP (NN:[53..56] p53) (NN:[57..61] gene))
+          (CC:[62..65] and)
+          (NP (NN:[66..72] Ha-ras) (NN:[73..77] gene)))))
+    (VP (VBP:[78..81] are)
+      (NP-PRD (JJ:[82..93] independent) (NNS:[94..100] events))
+      (PP (IN:[101..103] in)
+        (NP
+          (NP (JJ:[104..109] solar) (NN:[111..120] keratosis))
+          (CC:[121..124] and)
+          (NP (JJ:[125..133] squamous) (NN:[134..138] cell)
+              (NN:[139..148] carcinoma)))))
+    (.:[148..149] .)))
+
+;section 2 Span:153..194
+;Taguchi M, Tsuchida T, Ikeda S, Sekiya T.
+(SEC
+  (FRAG (NNP:[153..160] Taguchi) (VBD:[161..163] M,) (NNP:[164..172] Tsuchida)
+        (NNP:[173..174] T) (,:[174..175] ,) (NNP:[176..181] Ikeda)
+        (NNP:[182..184] S,) (NNP:[185..191] Sekiya) (NNP:[192..194] T.)))
+
+;section 3 Span:198..283
+;Department of Dermatology, Saitama Medical School, Japan. 
+;mtaguchi@saitama-med.ac.jp
+(SEC
+  (FRAG (NNP:[198..208] Department) (IN:[209..211] of)
+        (NNP:[212..223] Dermatology) (,:[223..224] ,) (NNP:[225..232] Saitama)
+        (NNP:[233..240] Medical) (NNP:[241..247] School) (,:[247..248] ,)
+        (NNP:[249..254] Japan) (POS:[254..255] .)
+        (NN:[257..273] mtaguchi@saitama) (HYPH:[273..274] -) (JJ:[274..277] med)
+        (NN:[277..281] .ac.) (.:[281..283] jp)))
+
+;sentence 4 Span:287..608
+;In order to clarity the multiple-step progression from solar keratosis to 
+;squamous cell carcinoma, aberrations of the p53 gene (exons 2-11) and ras
+;genes  (exons 1 and 2) in solar keratosis and squamous cell carcinoma were
+;investigated  by polymerase chain reaction and single-strand conformation
+;polymorphism  analysis.
+;[342..357]:malignancy:"solar keratosis"
+;[362..385]:malignancy:"squamous cell carcinoma"
+;[406..409]:gene-rna:"p53"
+;[416..426]:variation-location:"exons 2-11"
+;[432..435]:gene-rna:"ras"
+;[444..451]:variation-location:"exons 1"
+;[444..449]...[456..457]:variation-location:"exons"..."2"
+;[462..477]:malignancy:"solar keratosis"
+;[482..505]:malignancy:"squamous cell carcinoma"
+;[528..538]:gene-protein:"polymerase"
+(SENT
+  (S
+    (SBAR-PRP (IN:[287..289] In) (NN:[290..295] order)
+      (S
+        (NP-SBJ (-NONE-:[295..295] *))
+        (VP (TO:[296..298] to)
+          (VP (NN:[299..306] clarity)
+            (NP
+              (NP (DT:[307..310] the)
+                (ADJP (JJ:[311..319] multiple) (HYPH:[319..320] -)
+                      (NN:[320..324] step))
+                (NN:[325..336] progression))
+              (PP (IN:[337..341] from)
+                (NP (JJ:[342..347] solar) (NN:[348..357] keratosis)))
+              (PP (TO:[358..360] to)
+                (NP (JJ:[362..370] squamous) (NN:[371..375] cell)
+                    (NN:[376..385] carcinoma))))))))
+    (,:[385..386] ,)
+    (NP-SBJ-3
+      (NP (NNS:[387..398] aberrations))
+      (PP (IN:[399..401] of)
+        (NP
+          (NP (DT:[402..405] the) (NN:[406..409] p53) (NN:[410..414] gene)
+            (PRN (-LRB-:[415..416] -LRB-)
+              (NP
+                (NP
+                  (NML-2 (NNS:[416..421] exons))
+                  (CD:[422..423] 2))
+                (PP (HYPH:[423..424] -)
+                  (NP
+                    (NML-2 (-NONE-:[424..424] *P*))
+                    (CD:[424..426] 11))))
+              (-RRB-:[426..427] -RRB-)))
+          (CC:[428..431] and)
+          (NP (NN:[432..435] ras) (NNS:[436..441] genes)
+            (PRN (-LRB-:[443..444] -LRB-)
+              (NP
+                (NP
+                  (NML-1 (NNS:[444..449] exons))
+                  (CD:[450..451] 1))
+                (CC:[452..455] and)
+                (NP
+                  (NML-1 (-NONE-:[455..455] *P*))
+                  (CD:[456..457] 2)))
+              (-RRB-:[457..458] -RRB-)))))
+      (PP (IN:[459..461] in)
+        (NP
+          (NP (JJ:[462..467] solar) (NN:[468..477] keratosis))
+          (CC:[478..481] and)
+          (NP (JJ:[482..490] squamous) (NN:[491..495] cell)
+              (NN:[496..505] carcinoma)))))
+    (VP (VBD:[506..510] were)
+      (VP (VBN:[511..523] investigated)
+        (NP-3 (-NONE-:[523..523] *))
+        (PP-MNR (IN:[525..527] by)
+          (NP
+            (NP (NN:[528..538] polymerase) (NN:[539..544] chain)
+                (NN:[545..553] reaction))
+            (CC:[554..557] and)
+            (NP
+              (NML (JJ:[558..564] single) (HYPH:[564..565] -)
+                   (NN:[565..571] strand))
+              (NN:[572..584] conformation) (NN:[585..597] polymorphism)
+               (NN:[599..607] analysis))))))
+    (.:[607..608] .)))
+
+;sentence 5 Span:609..796
+;In a series of Japanese patients, eight of 27 (30%) samples of solar 
+;keratosis and three of six (50%) samples of squamous cell carcinoma showed 
+;structural abnormalities in the p53 gene.
+;[672..688]:malignancy:"solar  keratosis"
+;[723..746]:malignancy:"squamous cell carcinoma"
+;[787..790]:gene-rna:"p53"
+(SENT
+  (S
+    (PP (IN:[609..611] In)
+      (NP
+        (NP (DT:[612..613] a) (NN:[614..620] series))
+        (PP (IN:[621..623] of)
+          (NP (JJ:[624..632] Japanese) (NNS:[633..641] patients)))))
+    (,:[641..642] ,)
+    (NP-SBJ
+      (NP
+        (NP (CD:[643..648] eight))
+        (PP (IN:[649..651] of)
+          (NP
+            (NP (CD:[652..654] 27)
+              (PRN (-LRB-:[655..656] -LRB-)
+                (NP (CD:[656..658] 30) (NN:[658..659] %))
+                (-RRB-:[659..660] -RRB-))
+              (NNS:[661..668] samples))
+            (PP (IN:[669..671] of)
+              (NP (JJ:[672..677] solar) (NN:[679..688] keratosis))))))
+      (CC:[689..692] and)
+      (NP
+        (NP (CD:[693..698] three))
+        (PP (IN:[699..701] of)
+          (NP
+            (NP (CD:[702..705] six)
+              (PRN (-LRB-:[706..707] -LRB-)
+                (NP (CD:[707..709] 50) (NN:[709..710] %))
+                (-RRB-:[710..711] -RRB-))
+              (NNS:[712..719] samples))
+            (PP (IN:[720..722] of)
+              (NP (JJ:[723..731] squamous) (NN:[732..736] cell)
+                  (NN:[737..746] carcinoma)))))))
+    (VP (VBD:[747..753] showed)
+      (NP (JJ:[755..765] structural) (NNS:[766..779] abnormalities))
+      (PP-LOC (IN:[780..782] in)
+        (NP (DT:[783..786] the) (NN:[787..790] p53) (NN:[791..795] gene))))
+    (.:[795..796] .)))
+
+;sentence 6 Span:797..895
+;Only one solar keratosis (4%) showed a  point mutation in the Ha-ras gene but
+;not in the p53 gene.
+;[806..821]:malignancy:"solar keratosis"
+;[837..851]:variation-type:"point mutation"
+;[859..865]:gene-rna:"Ha-ras"
+;[886..889]:gene-rna:"p53"
+(SENT
+  (S
+    (NP-SBJ
+      (ADVP (RB:[797..801] Only))
+      (CD:[802..805] one)
+       (JJ:[806..811] solar) (NN:[812..821] keratosis)
+      (PRN (-LRB-:[822..823] -LRB-)
+        (NP (CD:[823..824] 4) (NN:[824..825] %))
+        (-RRB-:[825..826] -RRB-)))
+    (VP
+      (VP (VBD:[827..833] showed)
+        (NP (DT:[834..835] a)
+           (NN:[837..842] point) (NN:[843..851] mutation))
+        (PP-LOC=1 (IN:[852..854] in)
+          (NP (DT:[855..858] the) (NN:[859..865] Ha-ras) (NN:[866..870] gene))))
+      (CC:[871..874] but) (RB:[875..878] not)
+      (VP
+        (PP-LOC=1 (IN:[879..881] in)
+          (NP (DT:[882..885] the) (NN:[886..889] p53) (NN:[890..894] gene)))))
+    (.:[894..895] .)))
+
+;sentence 7 Span:896..986
+;Among these cases, no  mutation of ras genes could be detected in squamous
+;cell carcinoma.
+;[931..934]:gene-rna:"ras"
+;[962..985]:malignancy:"squamous cell carcinoma"
+(SENT
+  (S
+    (PP (IN:[896..901] Among)
+      (NP (DT:[902..907] these) (NNS:[908..913] cases)))
+    (,:[913..914] ,)
+    (NP-SBJ-1
+      (NP (DT:[915..917] no) (NN:[919..927] mutation))
+      (PP (IN:[928..930] of)
+        (NP (NN:[931..934] ras) (NNS:[935..940] genes))))
+    (VP (MD:[941..946] could)
+      (VP (VB:[947..949] be)
+        (VP (VBN:[950..958] detected)
+          (NP-1 (-NONE-:[958..958] *))
+          (PP (IN:[959..961] in)
+            (NP (JJ:[962..970] squamous) (NN:[971..975] cell)
+                (NN:[976..985] carcinoma))))))
+    (.:[985..986] .)))
+
+;sentence 8 Span:987..1124
+;Simultaneous  mutation of ras genes and the p53 gene was not detected in any
+;cases of either  solar keratosis or squamous cell carcinoma.
+;[1013..1016]:gene-rna:"ras"
+;[1031..1034]:gene-rna:"p53"
+;[1081..1096]:malignancy:"solar keratosis"
+;[1100..1123]:malignancy:"squamous cell carcinoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[987..999] Simultaneous) (NN:[1001..1009] mutation))
+      (PP (IN:[1010..1012] of)
+        (NP
+          (NP (NN:[1013..1016] ras) (NNS:[1017..1022] genes))
+          (CC:[1023..1026] and)
+          (NP (DT:[1027..1030] the) (NN:[1031..1034] p53) (NN:[1035..1039] gene)))))
+    (VP (VBD:[1040..1043] was) (RB:[1044..1047] not)
+      (VP (VBN:[1048..1056] detected)
+        (NP-1 (-NONE-:[1056..1056] *))
+        (PP (IN:[1057..1059] in)
+          (NP
+            (NP (DT:[1060..1063] any) (NNS:[1064..1069] cases))
+            (PP (IN:[1070..1072] of)
+              (NP (CC:[1073..1079] either)
+                (NP (JJ:[1081..1086] solar) (NN:[1087..1096] keratosis))
+                (CC:[1097..1099] or)
+                (NP (JJ:[1100..1108] squamous) (NN:[1109..1113] cell)
+                    (NN:[1114..1123] carcinoma))))))))
+    (.:[1123..1124] .)))
+
+;sentence 9 Span:1125..1345
+;It is concluded that aberrations of  the p53 gene and ras genes are induced
+;through independent processes of  ultraviolet irradiation in the course of
+;carcinogenic change from solar  keratosis to squamous cell carcinoma.
+;[1166..1169]:gene-rna:"p53"
+;[1179..1182]:gene-rna:"ras"
+;[1301..1317]:malignancy:"solar  keratosis"
+;[1321..1344]:malignancy:"squamous cell carcinoma"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[1125..1127] It))
+      (SBAR-3 (-NONE-:[1127..1127] *EXP*)))
+    (VP (VBZ:[1128..1130] is)
+      (VP (VBN:[1131..1140] concluded)
+        (NP-2 (-NONE-:[1140..1140] *))
+        (SBAR-3 (IN:[1141..1145] that)
+          (S
+            (NP-SBJ-1
+              (NP (NNS:[1146..1157] aberrations))
+              (PP (IN:[1158..1160] of)
+                (NP
+                  (NP (DT:[1162..1165] the) (NN:[1166..1169] p53)
+                      (NN:[1170..1174] gene))
+                  (CC:[1175..1178] and)
+                  (NP (NN:[1179..1182] ras) (NNS:[1183..1188] genes)))))
+            (VP (VBP:[1189..1192] are)
+              (VP (VBN:[1193..1200] induced)
+                (NP-1 (-NONE-:[1200..1200] *))
+                (PP (IN:[1201..1208] through)
+                  (NP
+                    (NP (JJ:[1209..1220] independent)
+                        (NNS:[1221..1230] processes))
+                    (PP (IN:[1231..1233] of)
+                      (NP (JJ:[1235..1246] ultraviolet)
+                          (NN:[1247..1258] irradiation)))))
+                (PP (IN:[1259..1261] in)
+                  (NP
+                    (NP (DT:[1262..1265] the) (NN:[1266..1272] course))
+                    (PP (IN:[1273..1275] of)
+                      (NP
+                        (NP (JJ:[1276..1288] carcinogenic)
+                            (NN:[1289..1295] change))
+                        (PP (IN:[1296..1300] from)
+                          (NP (JJ:[1301..1306] solar)
+                              (NN:[1308..1317] keratosis)))
+                        (PP (TO:[1318..1320] to)
+                          (NP (JJ:[1321..1329] squamous) (NN:[1330..1334] cell)
+                              (NN:[1335..1344] carcinoma)))))))))))))
+    (.:[1344..1345] .)))
+
+;section 10 Span:1349..1393
+;PMID: 9778107 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1349..1353] PMID) (::[1353..1354] :) (CD:[1355..1362] 9778107)
+        (IN:[1363..1364] -LSB-) (NNP:[1364..1370] PubMed) (HYPH:[1371..1372] -)
+        (JJ:[1373..1380] indexed) (IN:[1381..1384] for)
+        (NNP:[1385..1393] MEDLINE-RSB-)))

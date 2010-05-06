@@ -1,0 +1,229 @@
+;PMID: 7947263
+;source_file_1232.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..174] = [t:41..174]
+;2)section:[e:178..230] = [t:178..230]
+;3)section:[e:234..301] = [t:234..301]
+;4)sentence:[e:305..437] = [t:305..437]
+;5)sentence:[e:438..727] = [t:438..727]
+;6)sentence:[e:728..931] = [t:728..931]
+;7)sentence:[e:932..1039] = [t:932..1039]
+;8)section:[e:1043..1087] = [t:1043..1087]
+
+;section 0 Span:0..36
+;Br J Haematol  1994 Jun;87(2):235-42
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..13] Haematol) (CD:[15..19] 1994)
+        (CC:[20..27] Jun;87-LRB-) (CD:[27..28] 2) (-RRB-:[28..29] -RRB-)
+        (CD:[29..33] :235) (::[33..34] -) (CD:[34..36] 42)))
+
+;sentence 1 Span:41..174
+;Establishment and characterization of a novel myeloid cell line from the bone
+; marrow of a patient with the myelodysplastic syndrome.
+;[87..104]:malignancy:"myeloid cell line"
+;[149..173]:malignancy:"myelodysplastic syndrome"
+(SENT
+  (NP-HLN
+    (NP (NN:[41..54] Establishment) (CC:[55..58] and)
+        (NN:[59..75] characterization))
+    (PP (IN:[76..78] of)
+      (NP
+        (NP (DT:[79..80] a) (JJ:[81..86] novel)
+           (JJ:[87..94] myeloid) (NN:[95..99] cell) (NN:[100..104] line))
+        (PP (IN:[105..109] from)
+          (NP
+            (NP (DT:[110..113] the) (NN:[114..118] bone) (NN:[120..126] marrow))
+            (PP (IN:[127..129] of)
+              (NP
+                (NP (DT:[130..131] a) (NN:[132..139] patient))
+                (PP (IN:[140..144] with)
+                  (NP (DT:[145..148] the)
+                     (JJ:[149..164] myelodysplastic) (NN:[165..173] syndrome)))))))))
+    (.:[173..174] .)))
+
+;section 2 Span:178..230
+;Tohyama K, Tsutani H, Ueda T, Nakamura T, Yoshida Y.
+(SEC
+  (FRAG (NNP:[178..185] Tohyama) (NNP:[186..187] K) (,:[187..188] ,)
+        (NNP:[189..196] Tsutani) (NNP:[197..198] H) (,:[198..199] ,)
+        (NNP:[200..204] Ueda) (NNP:[205..206] T) (,:[206..207] ,)
+        (NNP:[208..216] Nakamura) (NNP:[217..218] T) (,:[218..219] ,)
+        (NNP:[220..227] Yoshida) (NNP:[228..230] Y.)))
+
+;section 3 Span:234..301
+;First Department of Internal Medicine, Fukui Medical School, Japan.
+(SEC
+  (FRAG (NNP:[234..239] First) (NNP:[240..250] Department) (IN:[251..253] of)
+        (NNP:[254..262] Internal) (NNP:[263..271] Medicine) (,:[271..272] ,)
+        (NNP:[273..278] Fukui) (NNP:[279..286] Medical) (NNP:[287..293] School)
+        (,:[293..294] ,) (NNP:[295..300] Japan) (.:[300..301] .)))
+
+;sentence 4 Span:305..437
+;A novel long-term cultured myeloid cell line was established from the bone 
+;marrow of a patient with myelodysplastic syndrome (MDS).
+;[332..349]:malignancy:"myeloid cell line"
+;[406..430]:malignancy:"myelodysplastic syndrome"
+;[432..435]:malignancy:"MDS"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[305..306] A) (JJ:[307..312] novel)
+      (NML (JJ:[313..317] long) (HYPH:[317..318] -) (NN:[318..322] term))
+      (VBN:[323..331] cultured)
+       (JJ:[332..339] myeloid) (NN:[340..344] cell) (NN:[345..349] line))
+    (VP (VBD:[350..353] was)
+      (VP (VBN:[354..365] established)
+        (NP-1 (-NONE-:[365..365] *))
+        (PP (IN:[366..370] from)
+          (NP
+            (NP (DT:[371..374] the) (NN:[375..379] bone) (NN:[381..387] marrow))
+            (PP (IN:[388..390] of)
+              (NP
+                (NP (DT:[391..392] a) (NN:[393..400] patient))
+                (PP (IN:[401..405] with)
+                  (NP
+                    (NP (JJ:[406..421] myelodysplastic) (NN:[422..430] syndrome))
+                    (NP (-LRB-:[431..432] -LRB-) (NN:[432..435] MDS)
+                        (-RRB-:[435..436] -RRB-))))))))))
+    (.:[436..437] .)))
+
+;sentence 5 Span:438..727
+;This cell line,  designated MDS92, proliferated in the presence of
+;interleukin-3 or  granulocyte-macrophage colony-stimulating factor and
+;transiently in the presence  of Steel factor, with a tendency for gradual
+;maturation, and formed myeloid  colonies in the semi-solid culture
+;condition.
+;[443..452]:malignancy:"cell line"
+;[466..471]:malignancy:"MDS92"
+;[505..518]:gene-protein:"interleukin-3"
+;[523..571]:gene-protein:"granulocyte-macrophage colony-stimulating factor"
+;[608..620]:gene-protein:"Steel factor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[438..442] This)
+         (NN:[443..447] cell) (NN:[448..452] line))
+      (,:[452..453] ,)
+      (VP (VBN:[455..465] designated)
+        (S
+          (NP-SBJ (-NONE-:[465..465] *))
+          (NP-PRD (NN:[466..471] MDS92)))))
+    (,:[471..472] ,)
+    (VP
+      (VP
+        (VP (VBD:[473..485] proliferated)
+          (PP=1 (IN:[486..488] in)
+            (NP
+              (NP (DT:[489..492] the) (NN:[493..501] presence))
+              (PP (IN:[502..504] of)
+                (NP
+                  (NP (NN:[505..518] interleukin-3))
+                  (CC:[519..521] or)
+                  (NP
+                    (NML (NN:[523..534] granulocyte) (HYPH:[534..535] -)
+                         (NN:[535..545] macrophage))
+                    (NML (NN:[546..552] colony) (HYPH:[552..553] -)
+                         (VBG:[553..564] stimulating))
+                    (NN:[565..571] factor)))))))
+        (CC:[572..575] and)
+        (VP
+          (ADVP (RB:[576..587] transiently))
+          (PP=1 (IN:[588..590] in)
+            (NP
+              (NP (DT:[591..594] the) (NN:[595..603] presence))
+              (PP (IN:[605..607] of)
+                (NP (NNP:[608..613] Steel) (NN:[614..620] factor)))))
+          (,:[620..621] ,)
+          (PP (IN:[622..626] with)
+            (NP
+              (NP (DT:[627..628] a) (NN:[629..637] tendency))
+              (PP (IN:[638..641] for)
+                (NP (JJ:[642..649] gradual) (NN:[650..660] maturation)))))))
+      (,:[660..661] ,) (CC:[662..665] and)
+      (VP (VBD:[666..672] formed)
+        (NP (JJ:[673..680] myeloid) (NNS:[682..690] colonies))
+        (PP (IN:[691..693] in)
+          (NP (DT:[694..697] the)
+            (NML
+              (ADJP (AFX:[698..702] semi) (HYPH:[702..703] -)
+                    (JJ:[703..708] solid))
+              (NN:[709..716] culture))
+            (NN:[717..726] condition)))))
+    (.:[726..727] .)))
+
+;sentence 6 Span:728..931
+;In addition, the MDS92 cell line  represented rather complicated karyotypic
+;abnormalities including the deletion  of fifth and seventh chromosomes and a
+;point mutation at codon 12 of the N-ras  oncogene.
+;[745..760]:malignancy:"MDS92 cell line"
+;[832..840]:variation-type:"deletion"
+;[845..850]...[855..862]...[863..874]:variation-location:"fifth"..."seventh"..
+;."chromosomes"
+;[881..895]:variation-type:"point mutation"
+;[899..907]:variation-location:"codon 12"
+;[915..920]:gene-rna:"N-ras"
+(SENT
+  (S
+    (PP (IN:[728..730] In)
+      (NP (NN:[731..739] addition)))
+    (,:[739..740] ,)
+    (NP-SBJ (DT:[741..744] the)
+       (NN:[745..750] MDS92) (NN:[751..755] cell) (NN:[756..760] line))
+    (VP (VBD:[762..773] represented)
+      (NP
+        (NP (RB:[774..780] rather) (JJ:[781..792] complicated)
+            (JJ:[793..803] karyotypic) (NNS:[804..817] abnormalities))
+        (PP (VBG:[818..827] including)
+          (NP
+            (NP
+              (NP (DT:[828..831] the) (NN:[832..840] deletion))
+              (PP (IN:[842..844] of)
+                (NP
+                  (NP (JJ:[845..850] fifth)
+                    (NML-1 (-NONE-:[850..850] *P*)))
+                  (CC:[851..854] and)
+                  (NP (JJ:[855..862] seventh)
+                    (NML-1 (NNS:[863..874] chromosomes))))))
+            (CC:[875..878] and)
+            (NP
+              (NP (DT:[879..880] a)
+                 (NN:[881..886] point) (NN:[887..895] mutation))
+              (PP-LOC (IN:[896..898] at)
+                (NP
+                  (NP (NN:[899..904] codon) (CD:[905..907] 12))
+                  (PP (IN:[908..910] of)
+                    (NP (DT:[911..914] the) (NN:[915..920] N-ras)
+                        (NN:[922..930] oncogene))))))))))
+    (.:[930..931] .)))
+
+;sentence 7 Span:932..1039
+;These characteristics of the MDS92 cell line are exclusively  compatible with
+;the property of preleukaemia.
+;[961..976]:malignancy:"MDS92 cell line"
+;[1026..1038]:malignancy:"preleukaemia"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[932..937] These) (NNS:[938..953] characteristics))
+      (PP (IN:[954..956] of)
+        (NP (DT:[957..960] the)
+           (NN:[961..966] MDS92) (NN:[967..971] cell) (NN:[972..976] line))))
+    (VP (VBP:[977..980] are)
+      (ADVP (RB:[981..992] exclusively))
+      (ADJP-PRD (JJ:[994..1004] compatible)
+        (PP (IN:[1005..1009] with)
+          (NP
+            (NP (DT:[1010..1013] the) (NN:[1014..1022] property))
+            (PP (IN:[1023..1025] of)
+              (NP (NN:[1026..1038] preleukaemia)))))))
+    (.:[1038..1039] .)))
+
+;section 8 Span:1043..1087
+;PMID: 7947263 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1043..1047] PMID) (::[1047..1048] :) (CD:[1049..1056] 7947263)
+        (NN:[1057..1058] -LSB-) (NNP:[1058..1064] PubMed) (::[1065..1066] -)
+        (NN:[1067..1074] indexed) (IN:[1075..1078] for)
+        (NNP:[1079..1087] MEDLINE-RSB-)))
