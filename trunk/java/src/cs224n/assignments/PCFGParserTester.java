@@ -54,6 +54,7 @@ public class PCFGParserTester {
 
     private Grammar grammar;
     private Lexicon lexicon;
+    private CounterMap<String, String> pTagToWord;
 
     public void train(List<Tree<String>> trainTrees) {
       List<Tree<String>> binarizedTrees = new LinkedList<Tree<String>>();
@@ -65,44 +66,156 @@ public class PCFGParserTester {
       }
       lexicon = new Lexicon(binarizedTrees);
       grammar = new Grammar(binarizedTrees);
-      System.out.println(lexicon.wordCounter);
-      System.out.println(lexicon.tagCounter);
-      System.out.println(lexicon.typeTagCounter);
-      System.out.println("------------");
-      System.out.println(grammar);
-    }
 
-    public Tree<String> getBestParse(List<String> sentence) {
-      // TODO: implement this method
-      return null;
-    }
-
-    @SuppressWarnings("unchecked")
-    private void cky(ArrayList<String> words, Grammar grammar, Lexicon lexicon) {
-      ArrayList<String> nonterminals = new ArrayList<String>();
-      nonterminals.addAll(grammar.binaryRulesByLeftChild.keySet());
-      nonterminals.addAll(grammar.unaryRulesByChild.keySet());
-      int nNonterminals = nonterminals.size();
-      int nWords = words.size();
-
-      double[][][] score = new double[nWords + 1][nWords + 1][nNonterminals];
-      Pair[][][] back = new Pair[nWords + 1][nWords + 1][nNonterminals];
-      for (int i = 0; i < nWords; i++) { // For each word in the sentence
-        for (int A = 0; A < nonterminals.size(); A++) { // For each nonterminal
-          double p = P(nonterminals.get(A), words.get(i), grammar);
-          if(p >= 0) score[i][i+1][A] = p;
+      pTagToWord = new CounterMap<String, String>();
+      for (String word : lexicon.wordToTagCounters.keySet()) {
+        for (String tag : lexicon.wordToTagCounters.getCounter(word).keySet()) {
+          pTagToWord.incrementCount(tag, word, 1);
+        }
+      }
+      for (String tag : pTagToWord.keySet()) {
+        double total = pTagToWord.getCounter(tag).totalCount();
+        for (String word : pTagToWord.getCounter(tag).keySet()) {
+          double oldCount = pTagToWord.getCount(tag, word);
+          pTagToWord.setCount(tag, word, oldCount / total);
         }
       }
     }
 
-    private double P(String parent, String child, Grammar grammar) {
+    public Tree<String> getBestParse(List<String> sentence) {
+      cky(new ArrayList<String>(sentence));
+      return null;
+    }
+
+    private void cky(ArrayList<String> words) {
+      Set<String> allNonterminals = new HashSet<String>();
+      for (List<BinaryRule> rules : grammar.binaryRulesByLeftChild.values()) {
+        for (BinaryRule rule : rules) {
+          allNonterminals.add(rule.parent);
+          allNonterminals.add(rule.leftChild);
+          allNonterminals.add(rule.rightChild);
+        }
+      }
+      for (List<UnaryRule> rules : grammar.unaryRulesByChild.values()) {
+        for (UnaryRule rule : rules) {
+          allNonterminals.add(rule.parent);
+          allNonterminals.add(rule.child);
+        }
+      }
+      ArrayList<String> nonterminals = new ArrayList<String>(allNonterminals);
+
+      int nNonterminals = nonterminals.size();
+      int nWords = words.size();
+
+      double[][][] score = new double[nWords + 1][nWords + 1][nNonterminals];
+      int[][][] back = new int[nWords + 1][nWords + 1][nNonterminals];
+
+      // First loop - fill in the diagonal?
+      for (int i = 0; i < nWords; i++) { // For each word in the sentence
+        // Get the probability of each nonterminal generating that word
+        for (int A = 0; A < nonterminals.size(); A++) {
+          score[i][i + 1][A] =
+              pTagToWord.getCount(nonterminals.get(A), words.get(i));
+        }
+        // Handle unaries
+        boolean added;
+        do {
+          added = false;
+          // Check each pair of nonterminals
+          for (int A = 0; A < nonterminals.size(); A++) {
+            for (int B = 0; B < nonterminals.size(); B++) {
+              double p = P(nonterminals.get(A), nonterminals.get(B));
+              if (score[i][i + 1][B] > 0 &&  p > 0) {
+                double prob = p * score[i][i + 1][B];
+                if (prob > score[i][i + 1][A]) {
+                  score[i][i + 1][A] = prob;
+                  back[i][i + 1][A] = B;
+                  added = true;
+                }
+              }
+            }
+          }
+        } while (added);
+      }
+
+      // Second loop, run DP
+      for (int span = 2; span < nWords; span++) {
+        for (int begin = 0; begin < nWords - span; begin++) {
+          int end = begin + span;
+          for (int split = begin + 1; split < end - 1; split++) {
+            // Handle binaries
+            for (int A = 0; A < nNonterminals; A++) {
+              for (int B = 0; B < nNonterminals; B++) {
+                for (int C = 0; C < nNonterminals; C++) {
+                  double prob =
+                      score[begin][split][B] * score[split][end][C]
+                          * P(nonterminals.get(A),
+                              nonterminals.get(B),
+                              nonterminals.get(C));
+                  if (prob > score[begin][end][A]) {
+                    score[begin][end][A] = prob;
+                    back[begin][end][A] = 0 /*new Triple(split, B, C)*/;
+                  }
+                }
+              }
+            }
+            // Handle unaries
+            boolean added;
+            do {
+              added = false;
+              for (int A = 0; A < nNonterminals; A++) {
+                for (int B = 0; B < nNonterminals; B++) {
+                  double prob =
+                      P(nonterminals.get(A), nonterminals.get(B))
+                          * score[begin][end][B];
+                  if (prob > score[begin][end][A]) {
+                    score[begin][end][A] = prob;
+                    back[begin][end][A] = B;
+                    added = true;
+                  }
+                }
+              }
+            } while (added);
+          }
+        }
+      }
+
+      renderScores(score);
+      System.out.println(nonterminals);
+      // System.out.println(Arrays.deepToString(score));
+    }
+
+    private void renderScores(double[][][] score) {
+      for (int i = 0; i < score.length; i++) {
+        for (int j = 0; j < score[i].length; j++) {
+          double max = score[i][j][0];
+          for (int k = 1; k < score[j].length; k++) {
+            max = Math.max(max, score[i][j][k]);
+          }
+          System.out.printf("%.2f ", max);
+        }
+        System.out.println();
+      }
+    }
+
+    private double P(String parent, String child) {
       List<UnaryRule> rules = grammar.getUnaryRulesByChild(child);
       for (UnaryRule rule : rules) {
         if (rule.parent.equals(parent)) {
           return rule.score;
         }
       }
-      return -1;
+      return 0;
+    }
+
+    private double P(String parent, String lchild, String rchild) {
+      List<BinaryRule> rules = grammar.getBinaryRulesByLeftChild(lchild);
+      for (BinaryRule rule : rules) {
+        if (rule.parent.equals(parent) && rule.rightChild.equals(rchild)) {
+          return rule.score;
+        }
+      }
+      return 0;
     }
   }
 
