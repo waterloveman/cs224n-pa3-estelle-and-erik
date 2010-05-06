@@ -1,0 +1,452 @@
+;PMID: 11455201
+;source_file_822.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..204] = [t:44..204]
+;2)section:[e:208..263] = [t:208..263]
+;3)section:[e:267..368] = [t:267..368]
+;4)sentence:[e:372..598] = [t:372..598]
+;5)sentence:[e:599..828] = [t:599..828]
+;6)sentence:[e:829..1026] = [t:829..1026]
+;7)sentence:[e:1027..1174] = [t:1027..1174]
+;8)sentence:[e:1175..1525] = [t:1175..1525]
+;9)sentence:[e:1526..1692] = [t:1526..1692]
+;10)sentence:[e:1693..2010] = [t:1693..2010]
+;11)section:[e:2011..2045] = [t:2011..2045]
+;12)section:[e:2049..2094] = [t:2049..2094]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1547..1551] 6(Z)
+;ERROR_Token in entity file but not tree[1551..1552] ,
+;ERROR_Token in entity file but not tree[1552..1557] 15(Z)
+;ERROR_Token in entity file but not tree[1557..1558] -
+;ERROR_Token in entity file but not tree[1558..1560] 20
+;ERROR_Token in entity file but not tree[1560..1561] -
+;ERROR_Token in entity file but not tree[1561..1565] HEDE
+;ERROR_Token in tree file but not entity[1547..1565] 6(Z),15(Z)-20-HEDE
+
+;section 0 Span:0..38
+;J Vasc Res. 2001 Jul-Aug;38(4):305-14.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Vasc) (NNP:[7..10] Res) (.:[10..11] .)
+        (CD:[12..16] 2001) (NNP:[17..20] Jul) (HYPH:[20..21] -)
+        (JJ:[21..28] Aug;38-LRB-) (HYPH:[28..30] 4-RRB-) (CD:[30..34] :305)
+        (HYPH:[34..35] -) (CD:[35..37] 14) (.:[37..38] .)))
+
+;sentence 1 Span:44..204
+;Relative contributions of cyclooxygenase- and cytochrome P450 
+;omega-hydroxylase-dependent pathways to hypoxic dilation of skeletal muscle 
+;resistance arteries.
+;[70..84]:substance:"cyclooxygenase"
+;[90..124]:substance:"cytochrome P450  omega-hydroxylase"
+(SENT
+  (NP-HLN
+    (NP (JJ:[44..52] Relative) (NNS:[53..66] contributions))
+    (PP (IN:[67..69] of)
+      (NP
+        (NP
+          (ADJP (NN:[70..84] cyclooxygenase) (HYPH:[84..85] -)
+            (ADJP-1 (-NONE-:[85..85] *P*)))
+          (NML-2 (-NONE-:[85..85] *P*)))
+        (CC:[86..89] and)
+        (NP
+          (ADJP
+            (NML
+              (NML (NN:[90..100] cytochrome) (NN:[101..105] P450))
+              (NN:[107..124] omega-hydroxylase))
+            (HYPH:[124..125] -)
+            (ADJP-1 (JJ:[125..134] dependent)))
+          (NML-2 (NNS:[135..143] pathways)))))
+    (PP (TO:[144..146] to)
+      (NP
+        (NP (JJ:[147..154] hypoxic) (NN:[155..163] dilation))
+        (PP (IN:[164..166] of)
+          (NP
+            (NML (JJ:[167..175] skeletal) (NN:[176..182] muscle))
+            (NN:[184..194] resistance) (NNS:[195..203] arteries)))))
+    (.:[203..204] .)))
+
+;section 2 Span:208..263
+;Frisbee JC, Roman RJ, Krishna UM, Falck JR, Lombard JH.
+(SEC
+  (FRAG (NNP:[208..215] Frisbee) (NNP:[216..218] JC) (,:[218..219] ,)
+        (NNP:[220..225] Roman) (NNP:[226..228] RJ) (,:[228..229] ,)
+        (NNP:[230..237] Krishna) (NNP:[238..240] UM) (,:[240..241] ,)
+        (NNP:[242..247] Falck) (NNP:[248..250] JR) (,:[250..251] ,)
+        (NNP:[252..259] Lombard) (NNP:[260..263] JH.)))
+
+;section 3 Span:267..368
+;Department of Physiology, Medical College of Wisconsin, Milwaukee, Wisc
+;53226,  USA. jfrisbee@mcw.edu
+(SEC
+  (FRAG (NNP:[267..277] Department) (IN:[278..280] of)
+        (NNP:[281..291] Physiology) (NNP:[291..292] ,) (NNP:[293..300] Medical)
+        (NNP:[301..308] College) (IN:[309..311] of) (NNP:[312..321] Wisconsin)
+        (,:[321..322] ,) (NNP:[323..332] Milwaukee) (,:[332..333] ,)
+        (NNP:[334..338] Wisc) (CD:[339..344] 53226) (,:[344..345] ,)
+        (NNP:[347..350] USA) (.:[350..351] .) ('':[352..364] jfrisbee@mcw)
+        (.:[364..368] .edu)))
+
+;sentence 4 Span:372..598
+;This study determined the contribution of prostanoids, cytochrome P450
+;(CP450)  4A enzyme metabolites of arachidonic acid, and other potential
+;mediators of  hypoxic dilation of isolated rat skeletal muscle resistance
+;arteries.
+;[414..425]:substance:"prostanoids"
+;[427..473]:substance:"cytochrome P450 (CP450)  4A enzyme metabolites"
+;[477..493]:substance:"arachidonic acid"
+;[515..524]:substance:"mediators"
+(SENT
+  (S
+    (NP-SBJ (DT:[372..376] This) (NN:[377..382] study))
+    (VP (VBD:[383..393] determined)
+      (NP
+        (NP (DT:[394..397] the) (NN:[398..410] contribution))
+        (PP (IN:[411..413] of)
+          (NP
+            (NP (NNS:[414..425] prostanoids))
+            (,:[425..426] ,)
+            (NP
+              (NP
+                (NML
+                  (NML
+                    (NML (NN:[427..437] cytochrome) (NN:[438..442] P450))
+                    (NML (-LRB-:[443..444] -LRB-) (NN:[444..449] CP450)
+                         (-RRB-:[449..450] -RRB-)))
+                  (NN:[452..454] 4A))
+                (NN:[455..461] enzyme) (NNS:[462..473] metabolites))
+              (PP (IN:[474..476] of)
+                (NP (JJ:[477..488] arachidonic) (NN:[489..493] acid))))
+            (,:[493..494] ,) (CC:[495..498] and)
+            (NP
+              (NP (JJ:[499..504] other) (JJ:[505..514] potential)
+                  (NNS:[515..524] mediators))
+              (PP (IN:[525..527] of)
+                (NP
+                  (NP (JJ:[529..536] hypoxic) (NN:[537..545] dilation))
+                  (PP (IN:[546..548] of)
+                    (NP (VBN:[549..557] isolated) (NN:[558..561] rat)
+                      (NML (JJ:[562..570] skeletal) (NN:[571..577] muscle))
+                      (NN:[578..588] resistance) (NNS:[589..597] arteries))))))))))
+    (.:[597..598] .)))
+
+;sentence 5 Span:599..828
+;Gracilis  arteries (GA) were viewed via television microscopy and dilator
+;responses to  hypoxia (reduction in superfusate and perfusate PO2 from
+;approximately 145 to  approximately 40 mm Hg) were measured with a video
+;micrometer.
+;[758..761]:quantitative-value:"145"
+;[780..782]:quantitative-value:"40"
+;[783..788]:quantitative-units:"mm Hg"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (NN:[599..607] Gracilis) (NNS:[609..617] arteries))
+        (NP (-LRB-:[618..619] -LRB-) (NN:[619..621] GA) (-RRB-:[621..622] -RRB-)))
+      (VP (VBD:[623..627] were)
+        (VP (VBN:[628..634] viewed)
+          (NP-1 (-NONE-:[634..634] *))
+          (PP-MNR (IN:[635..638] via)
+            (NP (NN:[639..649] television) (NN:[650..660] microscopy))))))
+    (CC:[661..664] and)
+    (S
+      (NP-SBJ-5
+        (NP (NN:[665..672] dilator) (NNS:[673..682] responses))
+        (PP (TO:[683..685] to)
+          (NP (NN:[687..694] hypoxia)))
+        (PRN (-LRB-:[695..696] -LRB-)
+          (NP
+            (NP (NN:[696..705] reduction))
+            (PP (IN:[706..708] in)
+              (NP
+                (NP (NN:[709..720] superfusate)
+                  (NML-2 (-NONE-:[720..720] *P*)))
+                (CC:[721..724] and)
+                (NP (NN:[725..734] perfusate)
+                  (NML-2 (NN:[735..738] PO2)))))
+            (PP
+              (PP (IN:[739..743] from)
+                (NP
+                  (NML
+                    (ADVP (RB:[744..757] approximately) (CD:[758..761] 145))
+                    (NML-3 (-NONE-:[761..761] *P*)))
+                  (NML-4 (-NONE-:[761..761] *P*))))
+              (PP (TO:[762..764] to)
+                (NP
+                  (NML
+                    (QP (RB:[766..779] approximately) (CD:[780..782] 40))
+                    (NML-3 (NN:[783..785] mm)))
+                  (NML-4 (NN:[786..788] Hg))))))
+          (-RRB-:[788..789] -RRB-)))
+      (VP (VBD:[790..794] were)
+        (VP (VBN:[795..803] measured)
+          (NP-5 (-NONE-:[803..803] *))
+          (PP-MNR (IN:[804..808] with)
+            (NP (DT:[809..810] a) (NN:[811..816] video)
+                (NN:[817..827] micrometer))))))
+    (.:[827..828] .)))
+
+;sentence 6 Span:829..1026
+;Hypoxic dilation  of gracilis arteries was severely impaired by either
+;endothelium removal or  cyclooxygenase inhibition with indomethacin, but not
+;by nitric oxide synthase  inhibition with L-NAME.
+;[924..938]:substance:"cyclooxygenase"
+;[955..967]:substance:"indomethacin"
+;[980..1001]:substance:"nitric oxide synthase"
+;[1019..1025]:substance:"L-NAME"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[829..836] Hypoxic) (NN:[837..845] dilation))
+      (PP (IN:[847..849] of)
+        (NP (NN:[850..858] gracilis) (NNS:[859..867] arteries))))
+    (VP
+      (VP (VBD:[868..871] was)
+        (ADVP (RB:[872..880] severely))
+        (VP (VBN:[881..889] impaired)
+          (NP-2 (-NONE-:[889..889] *))
+          (PP=1 (IN:[890..892] by)
+            (NP-LGS (CC:[893..899] either)
+              (NP (NN:[900..911] endothelium) (NN:[912..919] removal))
+              (CC:[920..922] or)
+              (NP
+                (NP (NN:[924..938] cyclooxygenase) (NN:[939..949] inhibition))
+                (PP (IN:[950..954] with)
+                  (NP (NN:[955..967] indomethacin))))))))
+      (,:[967..968] ,) (CC:[969..972] but)
+      (VP (RB:[973..976] not)
+        (PP=1 (IN:[977..979] by)
+          (NP-LGS
+            (NML
+              (NML
+                (NML (JJ:[980..986] nitric) (NN:[987..992] oxide))
+                (NN:[993..1001] synthase))
+              (NN:[1003..1013] inhibition))
+            (PP (IN:[1014..1018] with)
+              (NP (NN:[1019..1025] L-NAME)))))))
+    (.:[1025..1026] .)))
+
+;sentence 7 Span:1027..1174
+;Treatment of GA with 17-octadecynoic acid (17-ODYA)  alone to inhibit CP450
+;4A enzymes significantly reduced hypoxic dilation from  control levels.
+;[1048..1068]:substance:"17-octadecynoic acid"
+;[1070..1077]:substance:"17-ODYA"
+;[1097..1113]:cyp450:"CP450 4A enzymes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1027..1036] Treatment))
+        (PP (IN:[1037..1039] of)
+          (NP (NN:[1040..1042] GA)))
+        (PP (IN:[1043..1047] with)
+          (NP
+            (NML
+              (NML (JJ:[1048..1063] 17-octadecynoic) (NN:[1064..1068] acid))
+              (NML (-LRB-:[1069..1070] -LRB-) (NN:[1070..1077] 17-ODYA)
+                   (-RRB-:[1077..1078] -RRB-)))
+            (ADVP (RB:[1080..1085] alone)))))
+      (SBAR
+        (WHNP-1 (-NONE-:[1085..1085] 0))
+        (S
+          (NP-SBJ-1 (-NONE-:[1085..1085] *ICH*))
+          (VP (TO:[1086..1088] to)
+            (VP (VB:[1089..1096] inhibit)
+              (NP
+                (NML (NN:[1097..1102] CP450) (NN:[1103..1105] 4A))
+                (NNS:[1106..1113] enzymes)))))))
+    (ADVP (RB:[1114..1127] significantly))
+    (VP (VBD:[1128..1135] reduced)
+      (NP (JJ:[1136..1143] hypoxic) (NN:[1144..1152] dilation))
+      (PP (IN:[1153..1157] from)
+        (NP (NN:[1159..1166] control) (NNS:[1167..1173] levels))))
+    (.:[1173..1174] .)))
+
+;sentence 8 Span:1175..1525
+;Treatment of vessels with  N-methylsulfonyl-6-(2-proparglyoxyphenyl)hexanoic
+;acid (MS-PPOH) to inhibit the  production of epoxyeicosatrienoic acids (EETs)
+;did not alter hypoxic dilation,  although treatment with
+;dibromo-dodecenyl-methylsulfimide (DDMS) to inhibit 
+;20-hydroxyeicosatetraenoic acid (20-HETE) production had similar effects as 
+;17-ODYA.
+;[1202..1256]:substance:"N-methylsulfonyl-6-(2-proparglyoxyphenyl)hexanoic
+;acid"
+;[1258..1265]:substance:"MS-PPOH"
+;[1297..1322]:substance:"epoxyeicosatrienoic acids"
+;[1324..1328]:substance:"EETs"
+;[1387..1420]:substance:"dibromo-dodecenyl-methylsulfimide"
+;[1422..1426]:substance:"DDMS"
+;[1440..1471]:substance:"20-hydroxyeicosatetraenoic acid"
+;[1473..1480]:substance:"20-HETE"
+;[1517..1524]:substance:"17-ODYA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1175..1184] Treatment))
+        (PP (IN:[1185..1187] of)
+          (NP (NNS:[1188..1195] vessels)))
+        (PP (IN:[1196..1200] with)
+          (NP
+            (NP
+                (JJ:[1202..1251] N-methylsulfonyl-6--LRB-2-proparglyoxyphenyl-RRB-hexanoic)
+                (NN:[1252..1256] acid))
+            (NP (-LRB-:[1257..1258] -LRB-) (NN:[1258..1265] MS-PPOH)
+                (-RRB-:[1265..1266] -RRB-)))))
+      (SBAR
+        (WHNP-1 (-NONE-:[1266..1266] 0))
+        (S
+          (NP-SBJ-1 (-NONE-:[1266..1266] *T*))
+          (VP (TO:[1267..1269] to)
+            (VP (VB:[1270..1277] inhibit)
+              (NP
+                (NP (DT:[1278..1281] the) (NN:[1283..1293] production))
+                (PP (IN:[1294..1296] of)
+                  (NP
+                    (NP (JJ:[1297..1316] epoxyeicosatrienoic)
+                        (NNS:[1317..1322] acids))
+                    (NP (-LRB-:[1323..1324] -LRB-) (NNS:[1324..1328] EETs)
+                        (-RRB-:[1328..1329] -RRB-))))))))))
+    (VP (VBD:[1330..1333] did) (RB:[1334..1337] not)
+      (VP (VB:[1338..1343] alter)
+        (NP (JJ:[1344..1351] hypoxic) (NN:[1352..1360] dilation))
+        (,:[1360..1361] ,)
+        (SBAR-ADV (IN:[1363..1371] although)
+          (S
+            (NP-SBJ
+              (NP
+                (NP (NN:[1372..1381] treatment))
+                (PP (IN:[1382..1386] with)
+                  (NP
+                    (NP (NN:[1387..1420] dibromo-dodecenyl-methylsulfimide))
+                    (NP (-LRB-:[1421..1422] -LRB-) (NN:[1422..1426] DDMS)
+                        (-RRB-:[1426..1427] -RRB-)))))
+              (SBAR
+                (WHNP-2 (-NONE-:[1427..1427] 0))
+                (S
+                  (NP-SBJ-2 (-NONE-:[1427..1427] *T*))
+                  (VP (TO:[1428..1430] to)
+                    (VP (VB:[1431..1438] inhibit)
+                      (NP
+                        (NML
+                          (NML (JJ:[1440..1466] 20-hydroxyeicosatetraenoic)
+                               (NN:[1467..1471] acid))
+                          (NML (-LRB-:[1472..1473] -LRB-)
+                               (NN:[1473..1480] 20-HETE)
+                               (-RRB-:[1480..1481] -RRB-)))
+                        (NN:[1482..1492] production)))))))
+            (VP (VBD:[1493..1496] had)
+              (NP
+                (NP (JJ:[1497..1504] similar) (NNS:[1505..1512] effects))
+                (PP (IN:[1513..1515] as)
+                  (NP (NN:[1517..1524] 17-ODYA)))))))))
+    (.:[1524..1525] .)))
+
+;sentence 9 Span:1526..1692
+;Treatment of GA with 6(Z),15(Z)-20-HEDE, a competitive antagonist of  the
+;actions of 20-HETE, mimicked the effects of 17-ODYA and DDMS treatment on 
+;hypoxic dilation.
+;[1547..1565]:substance:"6(Z),15(Z)-20-HEDE"
+;[1581..1591]:substance:"antagonist"
+;[1611..1618]:substance:"20-HETE"
+;[1644..1651]:substance:"17-ODYA"
+;[1656..1660]:substance:"DDMS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1526..1535] Treatment))
+      (PP (IN:[1536..1538] of)
+        (NP (NN:[1539..1541] GA)))
+      (PP (IN:[1542..1546] with)
+        (NP
+          (NP (NN:[1547..1565] 6-LRB-Z-RRB-,15-LRB-Z-RRB--20-HEDE))
+          (,:[1565..1566] ,)
+          (NP
+            (NP (DT:[1567..1568] a) (JJ:[1569..1580] competitive)
+                (NN:[1581..1591] antagonist))
+            (PP (IN:[1592..1594] of)
+              (NP
+                (NP (DT:[1596..1599] the) (NNS:[1600..1607] actions))
+                (PP (IN:[1608..1610] of)
+                  (NP (NN:[1611..1618] 20-HETE)))))))))
+    (,:[1618..1619] ,)
+    (VP (VBD:[1620..1628] mimicked)
+      (NP
+        (NP (DT:[1629..1632] the) (NNS:[1633..1640] effects))
+        (PP (IN:[1641..1643] of)
+          (NP
+            (NP (NN:[1644..1651] 17-ODYA)
+              (NML-1 (-NONE-:[1651..1651] *P*)))
+            (CC:[1652..1655] and)
+            (NP (NN:[1656..1660] DDMS)
+              (NML-1 (NN:[1661..1670] treatment)))))
+        (PP (IN:[1671..1673] on)
+          (NP (JJ:[1675..1682] hypoxic) (NN:[1683..1691] dilation)))))
+    (.:[1691..1692] .)))
+
+;sentence 10 Span:1693..2010
+;These results suggest that hypoxic dilation of skeletal muscle  resistance
+;arteries primarily represents the effects of enhanced prostanoid  release
+;from vascular endothelium, although a contribution of reduced 20-HETE 
+;production via CP450 omega-hydroxylase enzymes also regulates hypoxic
+;dilation  of these vessels.
+;[1822..1832]:substance:"prostanoid"
+;[1904..1911]:substance:"20-HETE"
+;[1928..1959]:substance:"CP450 omega-hydroxylase enzymes"
+(SENT
+  (S
+    (NP-SBJ (DT:[1693..1698] These) (NNS:[1699..1706] results))
+    (VP (VBP:[1707..1714] suggest)
+      (SBAR (IN:[1715..1719] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1720..1727] hypoxic) (NN:[1728..1736] dilation))
+            (PP (IN:[1737..1739] of)
+              (NP
+                (NML (JJ:[1740..1748] skeletal) (NN:[1749..1755] muscle))
+                (NN:[1757..1767] resistance) (NNS:[1768..1776] arteries))))
+          (ADVP (RB:[1777..1786] primarily))
+          (VP (VBZ:[1787..1797] represents)
+            (NP
+              (NP (DT:[1798..1801] the) (NNS:[1802..1809] effects))
+              (PP (IN:[1810..1812] of)
+                (NP (VBN:[1813..1821] enhanced) (NN:[1822..1832] prostanoid)
+                    (NN:[1834..1841] release)))
+              (PP (IN:[1842..1846] from)
+                (NP (JJ:[1847..1855] vascular) (NN:[1856..1867] endothelium))))
+            (,:[1867..1868] ,)
+            (SBAR-ADV (IN:[1869..1877] although)
+              (S
+                (NP-SBJ
+                  (NP (DT:[1878..1879] a) (NN:[1880..1892] contribution))
+                  (PP (IN:[1893..1895] of)
+                    (NP (VBN:[1896..1903] reduced) (NN:[1904..1911] 20-HETE)
+                        (NN:[1913..1923] production)))
+                  (PP (IN:[1924..1927] via)
+                    (NP (NN:[1928..1933] CP450)
+                        (NN:[1934..1951] omega-hydroxylase)
+                        (NNS:[1952..1959] enzymes))))
+                (ADVP (RB:[1960..1964] also))
+                (VP (VBZ:[1965..1974] regulates)
+                  (NP
+                    (NP (JJ:[1975..1982] hypoxic) (NN:[1983..1991] dilation))
+                    (PP (IN:[1993..1995] of)
+                      (NP (DT:[1996..2001] these) (NNS:[2002..2009] vessels)))))))))))
+    (.:[2009..2010] .)))
+
+;section 11 Span:2011..2045
+;Copyright 2001 S. Karger AG, Basel
+(SEC
+  (FRAG (NN:[2011..2020] Copyright) (CD:[2021..2025] 2001) (NNP:[2026..2028] S.)
+        (NNP:[2029..2035] Karger) (NNP:[2036..2038] AG) (,:[2038..2039] ,)
+        (NNP:[2040..2045] Basel)))
+
+;section 12 Span:2049..2094
+;PMID: 11455201 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2049..2053] PMID) (::[2053..2054] :) (CD:[2055..2063] 11455201)
+        (IN:[2064..2065] -LSB-) (NNP:[2065..2071] PubMed) (HYPH:[2072..2073] -)
+        (JJ:[2074..2081] indexed) (IN:[2082..2085] for)
+        (NNP:[2086..2094] MEDLINE-RSB-)))

@@ -1,0 +1,346 @@
+;PMID: 8061947
+;source_file_1947.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..74] = [t:0..74]
+;1)sentence:[e:80..216] = [t:80..216]
+;2)section:[e:220..235] = [t:220..235]
+;3)section:[e:239..311] = [t:239..311]
+;4)sentence:[e:315..537] = [t:315..537]
+;5)sentence:[e:538..693] = [t:538..693]
+;6)sentence:[e:695..848] = [t:695..848]
+;7)sentence:[e:849..1011] = [t:849..1011]
+;8)sentence:[e:1012..1177] = [t:1012..1177]
+;9)sentence:[e:1178..1323] = [t:1178..1323]
+;10)sentence:[e:1324..1534] = [t:1324..1534]
+;11)section:[e:1538..1582] = [t:1538..1582]
+
+;section 0 Span:0..74
+;Comp Biochem Physiol Pharmacol Toxicol Endocrinol. 1994 Mar;107(3):405-14.
+(SEC
+  (FRAG (NNP:[0..4] Comp) (NNP:[5..12] Biochem) (NNP:[13..20] Physiol)
+        (NNP:[21..30] Pharmacol) (NNP:[31..38] Toxicol)
+        (NNP:[39..49] Endocrinol) (.:[49..50] .) (CD:[51..55] 1994)
+        (CC:[56..64] Mar;107-LRB-) (CD:[64..65] 3) (-RRB-:[65..66] -RRB-)
+        (CD:[66..70] :405) (::[70..71] -) (CD:[71..73] 14) (.:[73..74] .)))
+
+;sentence 1 Span:80..216
+;Effects of in vivo benzo(a)pyrene treatment on liver microsomal
+;mixed-function  oxidase activities of gilthead seabream (Sparus aurata).
+;[99..113]:substance:"benzo(a)pyrene"
+;[144..167]:substance:"mixed-function  oxidase"
+(SENT
+  (NP-HLN
+    (NP (NNS:[80..87] Effects))
+    (PP (IN:[88..90] of)
+      (NP
+        (ADJP (FW:[91..93] in) (FW:[94..98] vivo))
+        (NN:[99..113] benzo-LRB-a-RRB-pyrene) (NN:[114..123] treatment)))
+    (PP (IN:[124..126] on)
+      (NP
+        (NP (NN:[127..132] liver) (JJ:[133..143] microsomal)
+          (NML
+            (NML (VBN:[144..149] mixed) (HYPH:[149..150] -)
+                 (NN:[150..158] function))
+            (NN:[160..167] oxidase))
+          (NNS:[168..178] activities))
+        (PP (IN:[179..181] of)
+          (NP
+            (NP (NN:[182..190] gilthead) (NN:[191..199] seabream))
+            (NP (-LRB-:[200..201] -LRB-) (NNP:[201..207] Sparus)
+                (NNP:[208..214] aurata) (-RRB-:[214..215] -RRB-))))))
+    (.:[215..216] .)))
+
+;section 2 Span:220..235
+;Arinc E, Sen A.
+(SEC
+  (FRAG (NNP:[220..225] Arinc) (NNP:[226..227] E) (,:[227..228] ,)
+        (NNP:[229..232] Sen) (NN:[233..235] A.)))
+
+;section 3 Span:239..311
+;Department of Biology, Middle East Technical University, Ankara, Turkey.
+(SEC
+  (FRAG (NNP:[239..249] Department) (IN:[250..252] of) (NNP:[253..260] Biology)
+        (,:[260..261] ,) (NNP:[262..268] Middle) (NNP:[269..273] East)
+        (NNP:[274..283] Technical) (NNP:[284..294] University) (,:[294..295] ,)
+        (NNP:[296..302] Ankara) (,:[302..303] ,) (NNP:[304..310] Turkey)
+        (.:[310..311] .)))
+
+;sentence 4 Span:315..537
+;Benzo(a)pyrene [B(a)P] treatment of gilthead seabream, 25 mg/kg, i.p. for 5 
+;consecutive days, did not cause any significant changes in ethylmorphine 
+;N-demethylase and aniline 4-hydroxylase activities of liver microsomes.
+;[315..329]:substance:"Benzo(a)pyrene"
+;[331..336]:substance:"B(a)P"
+;[370..372]:quantitative-value:"25"
+;[373..378]:quantitative-units:"mg/kg"
+;[389..390]:quantitative-value:"5"
+;[404..408]:quantitative-units:"days"
+;[451..479]:substance:"ethylmorphine  N-demethylase"
+;[484..505]:substance:"aniline 4-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (NML (NN:[315..329] Benzo-LRB-a-RRB-pyrene))
+          (NML (-LRB-:[330..331] -LSB-) (NN:[331..336] B-LRB-a-RRB-P)
+               (-RRB-:[336..337] -RSB-)))
+        (NN:[338..347] treatment))
+      (PP (IN:[348..350] of)
+        (NP (NN:[351..359] gilthead) (NN:[360..368] seabream))))
+    (,:[368..369] ,)
+    (NP-ADV
+      (NP (CD:[370..372] 25) (NN:[373..375] mg))
+      (PP (SYM:[375..376] /)
+        (NP (NN:[376..378] kg))))
+    (,:[378..379] ,)
+    (ADVP (RB:[380..384] i.p.)
+      (PP-TMP (IN:[385..388] for)
+        (NP (CD:[389..390] 5) (JJ:[392..403] consecutive) (NNS:[404..408] days))))
+    (,:[408..409] ,)
+    (VP (VBD:[410..413] did) (RB:[414..417] not)
+      (VP (VB:[418..423] cause)
+        (NP (DT:[424..427] any) (JJ:[428..439] significant)
+            (NNS:[440..447] changes))
+        (PP (IN:[448..450] in)
+          (NP
+            (NP
+              (NP
+                (NML (NN:[451..464] ethylmorphine) (NN:[466..479] N-demethylase))
+                (NML-1 (-NONE-:[479..479] *P*)))
+              (CC:[480..483] and)
+              (NP
+                (NML (NN:[484..491] aniline) (NN:[492..505] 4-hydroxylase))
+                (NML-1 (NNS:[506..516] activities))))
+            (PP (IN:[517..519] of)
+              (NP (NN:[520..525] liver) (NNS:[526..536] microsomes)))))))
+    (.:[536..537] .)))
+
+;sentence 5 Span:538..693
+;The same  treatment did not alter the liver microsomal cytochrome b5 content,
+; NADH-cytochrome b5 reductase and NADPH-cytochrome P450 reductase
+;activities.
+;[593..606]:substance:"cytochrome b5"
+;[617..621]:substance:"NADH"
+;[622..645]:substance:"cytochrome b5 reductase"
+;[650..655]:substance:"NADPH"
+;[656..681]:substance:"cytochrome P450 reductase"
+(SENT
+  (S
+    (NP-SBJ (DT:[538..541] The) (JJ:[542..546] same) (NN:[548..557] treatment))
+    (VP (VBD:[558..561] did) (RB:[562..565] not)
+      (VP (VB:[566..571] alter)
+        (NP (DT:[572..575] the)
+          (NML
+            (NML (NN:[576..581] liver) (JJ:[582..592] microsomal)
+              (NML (NN:[593..603] cytochrome) (NN:[604..606] b5))
+              (NN:[607..614] content))
+            (,:[614..615] ,)
+            (NML
+              (NML (NN:[617..621] NADH) (HYPH:[621..622] -)
+                
+                (NML (NN:[622..632] cytochrome) (NN:[633..635] b5))
+                (NN:[636..645] reductase))
+              (NML-1 (-NONE-:[645..645] *P*)))
+            (CC:[646..649] and)
+            (NML
+              (NML (NN:[650..655] NADPH) (HYPH:[655..656] -)
+                
+                (NML (NN:[656..666] cytochrome) (NN:[667..671] P450))
+                (NN:[672..681] reductase))
+              (NML-1 (NNS:[682..692] activities)))))))
+    (.:[692..693] .)))
+
+;sentence 6 Span:695..848
+;However, benzo(a)pyrene treatment caused a 2-3-fold increase in 
+;7-ethoxyresorufin O-deethylase (7-EROD) activity of gilthead seabream liver 
+;microsomes.
+;[704..718]:substance:"benzo(a)pyrene"
+;[738..746]:quantitative-value:"2-3-fold"
+;[760..790]:substance:"7-ethoxyresorufin O-deethylase"
+;[792..798]:substance:"7-EROD"
+(SENT
+  (S
+    (ADVP (RB:[695..702] However))
+    (,:[702..703] ,)
+    (NP-SBJ (NN:[704..718] benzo-LRB-a-RRB-pyrene) (NN:[719..728] treatment))
+    (VP (VBD:[729..735] caused)
+      (NP (DT:[736..737] a)
+        (QP (CD:[738..739] 2) (HYPH:[739..740] -) (CD:[740..741] 3)
+            (HYPH:[741..742] -) (JJ:[742..746] fold))
+        (NN:[747..755] increase))
+      (PP (IN:[756..758] in)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[760..777] 7-ethoxyresorufin)
+                   (NN:[778..790] O-deethylase))
+              (NML (-LRB-:[791..792] -LRB-) (NN:[792..798] 7-EROD)
+                   (-RRB-:[798..799] -RRB-)))
+            (NN:[800..808] activity))
+          (PP (IN:[809..811] of)
+            (NP
+              (NML (NN:[812..820] gilthead) (NN:[821..829] seabream))
+              (NN:[830..835] liver) (NNS:[837..847] microsomes))))))
+    (.:[847..848] .)))
+
+;sentence 7 Span:849..1011
+;Although, upon treatment, total cytochrome P450 content of liver  microsomes
+;increased about 1.7-fold in 1990 fall, no such increase was observed  in
+;spring 1991.
+;[881..896]:cyp450:"cytochrome P450"
+;[942..950]:quantitative-value:"1.7-fold"
+(SENT
+  (S
+    (SBAR-ADV (IN:[849..857] Although) (,:[857..858] ,)
+      (S
+        (PP (IN:[859..863] upon)
+          (NP (NN:[864..873] treatment)))
+        (,:[873..874] ,)
+        (NP-SBJ
+          (NP (JJ:[875..880] total)
+            (NML (NN:[881..891] cytochrome) (NN:[892..896] P450))
+            (NN:[897..904] content))
+          (PP (IN:[905..907] of)
+            (NP (NN:[908..913] liver) (NNS:[915..925] microsomes))))
+        (VP (VBD:[926..935] increased)
+          (ADVP-EXT
+            (QP (RB:[936..941] about) (CD:[942..945] 1.7))
+            (HYPH:[945..946] -) (RB:[946..950] fold))
+          (PP-TMP (IN:[951..953] in)
+            (NP (CD:[954..958] 1990) (NN:[959..963] fall))))))
+    (,:[963..964] ,)
+    (NP-SBJ-1 (DT:[965..967] no) (JJ:[968..972] such) (NN:[973..981] increase))
+    (VP (VBD:[982..985] was)
+      (VP (VBN:[986..994] observed)
+        (NP-1 (-NONE-:[994..994] *))
+        (PP-TMP (IN:[996..998] in)
+          (NP (NN:[999..1005] spring) (CD:[1006..1010] 1991)))))
+    (.:[1010..1011] .)))
+
+;sentence 8 Span:1012..1177
+;However, a new cytochrome P450 with an apparent M(r) of 58,000  was observed
+;on SDS-PAGE of liver microsomes obtained from benzo(a)pyrene  treated
+;gilthead seabream.
+;[1027..1042]:cyp450:"cytochrome P450"
+;[1060..1064]:quantitative-name:"M(r)"
+;[1068..1074]:quantitative-value:"58,000"
+;[1135..1149]:substance:"benzo(a)pyrene"
+(SENT
+  (S
+    (ADVP (RB:[1012..1019] However))
+    (,:[1019..1020] ,)
+    (NP-SBJ-1
+      (NP (DT:[1021..1022] a) (JJ:[1023..1026] new)
+         (NN:[1027..1037] cytochrome) (NN:[1038..1042] P450))
+      (PP (IN:[1043..1047] with)
+        (NP
+          (NP (DT:[1048..1050] an) (JJ:[1051..1059] apparent)
+              (NN:[1060..1064] M-LRB-r-RRB-))
+          (PP (IN:[1065..1067] of)
+            (NP (CD:[1068..1074] 58,000))))))
+    (VP (VBD:[1076..1079] was)
+      (VP (VBN:[1080..1088] observed)
+        (NP-1 (-NONE-:[1088..1088] *))
+        (PP (IN:[1089..1091] on)
+          (NP
+            (NP (NN:[1092..1095] SDS) (HYPH:[1095..1096] -)
+                (NN:[1096..1100] PAGE))
+            (PP (IN:[1101..1103] of)
+              (NP
+                (NP (NN:[1104..1109] liver) (NNS:[1110..1120] microsomes))
+                (VP (VBN:[1121..1129] obtained)
+                  (NP (-NONE-:[1129..1129] *))
+                  (PP (IN:[1130..1134] from)
+                    (NP
+                      (ADJP (NN:[1135..1149] benzo-LRB-a-RRB-pyrene)
+                            (VBN:[1151..1158] treated))
+                      (NN:[1159..1167] gilthead) (NN:[1168..1176] seabream))))))))))
+    (.:[1176..1177] .)))
+
+;sentence 9 Span:1178..1323
+;Besides, in vitro addition of 0.2 x 10(-6) M  benzo(a)pyrene to the
+;incubation mixture inhibited 7-ethoxyresorufin  O-deethylase activity by
+;93%.
+;[1208..1220]:quantitative-value:"0.2 x 10(-6)"
+;[1221..1222]:quantitative-units:"M"
+;[1224..1238]:substance:"benzo(a)pyrene"
+;[1275..1306]:substance:"7-ethoxyresorufin  O-deethylase"
+;[1319..1322]:quantitative-value:"93%"
+(SENT
+  (S
+    (ADVP (IN:[1178..1185] Besides))
+    (,:[1185..1186] ,)
+    (NP-SBJ
+      (NP
+        (ADJP (FW:[1187..1189] in) (FW:[1190..1195] vitro))
+        (NN:[1196..1204] addition))
+      (PP (IN:[1205..1207] of)
+        (NP
+          (NML
+            (QP (CD:[1208..1211] 0.2) (SYM:[1212..1213] x)
+                (CD:[1214..1220] 10-LRB--6-RRB-))
+            (NN:[1221..1222] M))
+          (NN:[1224..1238] benzo-LRB-a-RRB-pyrene)))
+      (PP (TO:[1239..1241] to)
+        (NP (DT:[1242..1245] the) (NN:[1246..1256] incubation)
+            (NN:[1257..1264] mixture))))
+    (VP (VBD:[1265..1274] inhibited)
+      (NP
+        (NML (NN:[1275..1292] 7-ethoxyresorufin) (NN:[1294..1306] O-deethylase))
+        (NN:[1307..1315] activity))
+      (PP-EXT (IN:[1316..1318] by)
+        (NP (CD:[1319..1321] 93) (NN:[1321..1322] %))))
+    (.:[1322..1323] .)))
+
+;sentence 10 Span:1324..1534
+;Gilthead seabream liver microsomal  4-ethoxyresorufin O-deethylase activity
+;was characterized with respect to  substrate concentration, amount of enzyme,
+;type of buffer used, incubation  period and temperature.
+;[1360..1390]:substance:"4-ethoxyresorufin O-deethylase"
+;[1435..1444]:substance:"substrate"
+;[1470..1476]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[1324..1332] Gilthead) (NN:[1333..1341] seabream))
+      (NN:[1342..1347] liver) (JJ:[1348..1358] microsomal)
+      (NML (NN:[1360..1377] 4-ethoxyresorufin) (NN:[1378..1390] O-deethylase))
+      (NN:[1391..1399] activity))
+    (VP (VBD:[1400..1403] was)
+      (VP (VBN:[1404..1417] characterized)
+        (NP-1 (-NONE-:[1417..1417] *))
+        (PP (IN:[1418..1422] with)
+          (NP
+            (NP (NN:[1423..1430] respect))
+            (PP (TO:[1431..1433] to)
+              (NP
+                (NP (NN:[1435..1444] substrate) (NN:[1445..1458] concentration))
+                (,:[1458..1459] ,)
+                (NP
+                  (NP (NN:[1460..1466] amount))
+                  (PP (IN:[1467..1469] of)
+                    (NP (NN:[1470..1476] enzyme))))
+                (,:[1476..1477] ,)
+                (NP
+                  (NP
+                    (NP (NN:[1478..1482] type))
+                    (PP (IN:[1483..1485] of)
+                      (NP (NN:[1486..1492] buffer))))
+                  (VP (VBN:[1493..1497] used)
+                    (NP (-NONE-:[1497..1497] *))))
+                (,:[1497..1498] ,)
+                (NP (NN:[1499..1509] incubation) (NN:[1511..1517] period))
+                (CC:[1518..1521] and)
+                (NP (NN:[1522..1533] temperature))))))))
+    (.:[1533..1534] .)))
+
+;section 11 Span:1538..1582
+;PMID: 8061947 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1538..1542] PMID) (::[1542..1543] :) (CD:[1544..1551] 8061947)
+        (NN:[1552..1553] -LSB-) (NNP:[1553..1559] PubMed) (::[1560..1561] -)
+        (NN:[1562..1569] indexed) (IN:[1570..1573] for)
+        (NNP:[1574..1582] MEDLINE-RSB-)))

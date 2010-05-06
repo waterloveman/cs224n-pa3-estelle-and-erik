@@ -1,0 +1,499 @@
+;PMID: 11414690
+;source_file_622.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..47] = [t:0..47]
+;1)section:[e:53..185] = [t:53..185]
+;2)section:[e:189..243] = [t:189..243]
+;3)section:[e:247..335] = [t:247..335]
+;4)sentence:[e:339..558] = [t:339..558]
+;5)sentence:[e:559..622] = [t:559..622]
+;6)sentence:[e:623..711] = [t:623..711]
+;7)sentence:[e:712..804] = [t:712..804]
+;8)sentence:[e:805..1080] = [t:805..1080]
+;9)sentence:[e:1081..1173] = [t:1081..1173]
+;10)sentence:[e:1174..1279] = [t:1174..1279]
+;11)sentence:[e:1280..1412] = [t:1280..1412]
+;12)sentence:[e:1413..1589] = [t:1413..1589]
+;13)sentence:[e:1590..1979] = [t:1590..1979]
+;14)section:[e:1980..2010] = [t:1980..2010]
+;15)section:[e:2014..2059] = [t:2014..2059]
+
+;section 0 Span:0..47
+;Arch Biochem Biophys. 2001 Jul 1;391(1):99-110.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 2001) (CC:[27..30] Jul)
+        (CD:[31..37] 1;391-LRB-) (CD:[37..38] 1) (-RRB-:[38..39] -RRB-)
+        (CD:[39..42] :99) (NN:[42..43] -) (CD:[43..46] 110) (.:[46..47] .)))
+
+;section 1 Span:53..185
+;Differential effects of naturally occurring isothiocyanates on the activities
+;of  cytochrome P450 2E1 and the mutant P450 2E1 T303A.
+;[97..112]:substance:"isothiocyanates"
+;[135..154]:cyp450:"cytochrome P450 2E1"
+;[170..184]:cyp450:"P450 2E1 T303A"
+(SEC
+  (NP-HLN
+    (NP (JJ:[53..65] Differential) (NNS:[66..73] effects))
+    (PP (IN:[74..76] of)
+      (NP
+        (ADJP (RB:[77..86] naturally) (VBG:[87..96] occurring))
+        (NNS:[97..112] isothiocyanates)))
+    (PP (IN:[113..115] on)
+      (NP
+        (NP (DT:[116..119] the) (NNS:[120..130] activities))
+        (PP (IN:[131..133] of)
+          (NP
+            (NP
+              (NML (NN:[135..145] cytochrome) (NN:[146..150] P450))
+              (NN:[151..154] 2E1))
+            (CC:[155..158] and)
+            (NP
+              (NP (DT:[159..162] the) (NN:[163..169] mutant)
+                  (NN:[170..174] P450) (NN:[175..178] 2E1))
+              (NP (NN:[179..184] T303A)))))))
+    (.:[184..185] .)))
+;ERROR_Entity in section[97..112]:substance "isothiocyanates"
+;ERROR_Entity in section[135..154]:cyp450 "cytochrome P450 2E1"
+;ERROR_Entity in section[170..184]:cyp450 "P450 2E1 T303A"
+
+;section 2 Span:189..243
+;Moreno RL, Goosen T, Kent UM, Chung FL, Hollenberg PF.
+(SEC
+  (FRAG (NNP:[189..195] Moreno) (NNP:[196..198] RL) (,:[198..199] ,)
+        (NNP:[200..206] Goosen) (NNP:[207..208] T) (,:[208..209] ,)
+        (NNP:[210..214] Kent) (NNP:[215..217] UM) (,:[217..218] ,)
+        (NNP:[219..224] Chung) (NNP:[225..227] FL) (,:[227..228] ,)
+        (NNP:[229..239] Hollenberg) (NNP:[240..243] PF.)))
+
+;section 3 Span:247..335
+;Department of Pharmacology, The University of Michigan, Ann Arbor, Michigan 
+;48109, USA.
+(SEC
+  (FRAG (NNP:[247..257] Department) (IN:[258..260] of)
+        (NNP:[261..273] Pharmacology) (,:[273..274] ,) (DT:[275..278] The)
+        (NNP:[279..289] University) (IN:[290..292] of) (NNP:[293..301] Michigan)
+        (,:[301..302] ,) (NNP:[303..306] Ann) (NNP:[307..312] Arbor)
+        (,:[312..313] ,) (NNP:[314..322] Michigan) (VBZ:[324..329] 48109)
+        (,:[329..330] ,) (NNP:[331..334] USA) (.:[334..335] .)))
+
+;sentence 4 Span:339..558
+;The effects of benzyl (BITC) and phenethyl isothiocyanate (PEITC) on the 
+;activity of a P450 2E1 mutant where the conserved threonine at position 303
+;was  replaced with an alanine residue (P450 2E1 T303A) were examined.
+;[354..360]...[382..396]:substance:"benzyl"..."isothiocyanate"
+;[362..366]:substance:"BITC"
+;[372..396]:substance:"phenethyl isothiocyanate"
+;[398..403]:substance:"PEITC"
+;[427..435]:cyp450:"P450 2E1"
+;[528..542]:cyp450:"P450 2E1 T303A"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (NP (DT:[339..342] The) (NNS:[343..350] effects))
+        (PP (IN:[351..353] of)
+          (NP
+            (NP
+              (NP (NN:[354..360] benzyl))
+              (NP (-LRB-:[361..362] -LRB-) (NN:[362..366] BITC)
+                  (-RRB-:[366..367] -RRB-)))
+            (CC:[368..371] and)
+            (NP
+              (NP (NN:[372..381] phenethyl) (NN:[382..396] isothiocyanate))
+              (NP (-LRB-:[397..398] -LRB-) (NN:[398..403] PEITC)
+                  (-RRB-:[403..404] -RRB-))))))
+      (PP (IN:[405..407] on)
+        (NP
+          (NP (DT:[408..411] the) (NN:[413..421] activity))
+          (PP (IN:[422..424] of)
+            (NP
+              (NP (DT:[425..426] a)
+                (NML (NN:[427..431] P450) (NN:[432..435] 2E1))
+                (NN:[436..442] mutant))
+              (SBAR
+                (WHADVP-3 (WRB:[443..448] where))
+                (S
+                  (NP-SBJ-1
+                    (NP (DT:[449..452] the) (VBN:[453..462] conserved)
+                        (NN:[463..472] threonine))
+                    (PP-LOC (IN:[473..475] at)
+                      (NP (NN:[476..484] position) (CD:[485..488] 303))))
+                  (VP (VBD:[489..492] was)
+                    (VP (VBN:[494..502] replaced)
+                      (NP-1 (-NONE-:[502..502] *))
+                      (PP-CLR (IN:[503..507] with)
+                        (NP (DT:[508..510] an) (NN:[511..518] alanine)
+                            (NN:[519..526] residue)
+                          (PRN (-LRB-:[527..528] -LRB-)
+                            (NP (NN:[528..532] P450) (NN:[533..536] 2E1)
+                                (NN:[537..542] T303A))
+                            (-RRB-:[542..543] -RRB-))))
+                      (ADVP-3 (-NONE-:[543..543] *T*)))))))))))
+    (VP (VBD:[544..548] were)
+      (VP (VBN:[549..557] examined)
+        (NP-2 (-NONE-:[557..557] *))))
+    (.:[557..558] .)))
+
+;sentence 5 Span:559..622
+;PEITC  inactivated the mutant enzyme with a K(I) of 1.6 microM.
+;[559..564]:substance:"PEITC"
+;[589..595]:substance:"enzyme"
+;[603..607]:quantitative-name:"K(I)"
+;[611..614]:quantitative-value:"1.6"
+;[615..621]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (NN:[559..564] PEITC))
+    (VP (VBD:[566..577] inactivated)
+      (NP (DT:[578..581] the) (NN:[582..588] mutant) (NN:[589..595] enzyme))
+      (PP (IN:[596..600] with)
+        (NP
+          (NP (DT:[601..602] a) (NN:[603..607] K-LRB-I-RRB-))
+          (PP (IN:[608..610] of)
+            (NP (CD:[611..614] 1.6) (NN:[615..621] microM))))))
+    (.:[621..622] .)))
+
+;sentence 6 Span:623..711
+;PEITC also inactivated  the wild-type P450 2E1 as efficiently with a K(I) of
+;2.7 microM.
+;[623..628]:substance:"PEITC"
+;[661..669]:cyp450:"P450 2E1"
+;[692..696]:quantitative-name:"K(I)"
+;[700..703]:quantitative-value:"2.7"
+;[704..710]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (NN:[623..628] PEITC))
+    (ADVP (RB:[629..633] also))
+    (VP (VBD:[634..645] inactivated)
+      (NP (DT:[647..650] the)
+        (NML (JJ:[651..655] wild) (HYPH:[655..656] -) (NN:[656..660] type))
+         (NN:[661..665] P450) (NN:[666..669] 2E1))
+      (ADVP (IN:[670..672] as) (RB:[673..684] efficiently))
+      (PP (IN:[685..689] with)
+        (NP
+          (NP (DT:[690..691] a) (NN:[692..696] K-LRB-I-RRB-))
+          (PP (IN:[697..699] of)
+            (NP (CD:[700..703] 2.7) (NN:[704..710] microM))))))
+    (.:[710..711] .)))
+
+;sentence 7 Span:712..804
+;The  inactivation was entirely dependent on NADPH and followed
+;pseudo-first-order  kinetics.
+;[756..761]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ (DT:[712..715] The) (NN:[717..729] inactivation))
+    (VP
+      (VP (VBD:[730..733] was)
+        (ADJP-PRD (RB:[734..742] entirely) (JJ:[743..752] dependent)
+          (PP (IN:[753..755] on)
+            (NP (NN:[756..761] NADPH)))))
+      (CC:[762..765] and)
+      (VP (VBD:[766..774] followed)
+        (NP
+          (NML (AFX:[775..781] pseudo) (HYPH:[781..782] -) (JJ:[782..787] first)
+               (HYPH:[787..788] -) (NN:[788..793] order))
+          (NNS:[795..803] kinetics))))
+    (.:[803..804] .)))
+
+;sentence 8 Span:805..1080
+;Previously we reported the mechanism-based inactivation of wild-type  P450
+;2E1 by BITC with a K(I) of 13 microM. In contrast to the wild-type enzyme, 
+;the P450 2E1 T303A mutant was not inactivated by BITC but it was inhibited in
+;a  competitive manner with a K(i) of 3 microM.
+;[875..883]:cyp450:"P450 2E1"
+;[887..891]:substance:"BITC"
+;[899..903]:quantitative-name:"K(I)"
+;[907..909]:quantitative-value:"13"
+;[910..916]:quantitative-units:"microM"
+;[947..953]:substance:"enzyme"
+;[960..974]:cyp450:"P450 2E1 T303A"
+;[1005..1009]:substance:"BITC"
+;[1063..1067]:quantitative-name:"K(i)"
+;[1071..1072]:quantitative-value:"3"
+;[1073..1079]:quantitative-units:"microM"
+(SENT
+  (S
+    (ADVP-TMP (RB:[805..815] Previously))
+    (NP-SBJ (PRP:[816..818] we))
+    (VP (VBD:[819..827] reported)
+      (NP
+        (NP (DT:[828..831] the)
+          (ADJP (NN:[832..841] mechanism) (HYPH:[841..842] -)
+                (VBN:[842..847] based))
+          (NN:[848..860] inactivation))
+        (PP (IN:[861..863] of)
+          (NP
+            (NML (JJ:[864..868] wild) (HYPH:[868..869] -) (NN:[869..873] type))
+             (NN:[875..879] P450) (NN:[880..883] 2E1)))
+        (PP (IN:[884..886] by)
+          (NP (NN:[887..891] BITC)))
+        (PP (IN:[892..896] with)
+          (NP
+            (NP (DT:[897..898] a) (NN:[899..903] K-LRB-I-RRB-))
+            (PP (IN:[904..906] of)
+              (NP (CD:[907..909] 13) (NN:[910..916] microM)))))))
+    (::[916..917] .))
+  (S
+    (S
+      (PP (IN:[918..920] In)
+        (NP
+          (NP (NN:[921..929] contrast))
+          (PP (TO:[930..932] to)
+            (NP (DT:[933..936] the)
+              (NML (JJ:[937..941] wild) (HYPH:[941..942] -) (NN:[942..946] type))
+              (NN:[947..953] enzyme)))))
+      (,:[953..954] ,)
+      (NP-SBJ-2 (DT:[956..959] the)
+        
+        (NML (NN:[960..964] P450) (NN:[965..968] 2E1))
+        (NN:[969..974] T303A)
+        (NN:[975..981] mutant))
+      (VP (VBD:[982..985] was) (RB:[986..989] not)
+        (VP (VBN:[990..1001] inactivated)
+          (NP-2 (-NONE-:[1001..1001] *))
+          (PP (IN:[1002..1004] by)
+            (NP-LGS (NN:[1005..1009] BITC))))))
+    (CC:[1010..1013] but)
+    (S
+      (NP-SBJ-1 (PRP:[1014..1016] it))
+      (VP (VBD:[1017..1020] was)
+        (VP (VBN:[1021..1030] inhibited)
+          (NP-1 (-NONE-:[1030..1030] *))
+          (PP-MNR (IN:[1031..1033] in)
+            (NP (DT:[1034..1035] a) (JJ:[1037..1048] competitive)
+                (NN:[1049..1055] manner)))
+          (PP (IN:[1056..1060] with)
+            (NP
+              (NP (DT:[1061..1062] a) (NN:[1063..1067] K-LRB-i-RRB-))
+              (PP (IN:[1068..1070] of)
+                (NP (CD:[1071..1072] 3) (NN:[1073..1079] microM))))))))
+    (.:[1079..1080] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[805..1080]::S:S:
+
+;sentence 9 Span:1081..1173
+;The binding constants determined by  spectral binding studies were similar
+;for both enzymes.
+;[1165..1172]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1081..1084] The) (NN:[1085..1092] binding)
+          (NNS:[1093..1102] constants))
+      (VP (VBN:[1103..1113] determined)
+        (NP (-NONE-:[1113..1113] *))
+        (PP-MNR (IN:[1114..1116] by)
+          (NP (JJ:[1118..1126] spectral) (NN:[1127..1134] binding)
+              (NNS:[1135..1142] studies)))))
+    (VP (VBD:[1143..1147] were)
+      (ADJP-PRD (JJ:[1148..1155] similar))
+      (PP (IN:[1156..1159] for)
+        (NP (DT:[1160..1164] both) (NNS:[1165..1172] enzymes))))
+    (.:[1172..1173] .)))
+
+;sentence 10 Span:1174..1279
+;The binding of BITC  produced characteristic Type I spectral changes in the
+;wild-type and mutant  enzyme.
+;[1189..1193]:substance:"BITC"
+;[1272..1278]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1174..1177] The) (NN:[1178..1185] binding))
+      (PP (IN:[1186..1188] of)
+        (NP (NN:[1189..1193] BITC))))
+    (VP (VBN:[1195..1203] produced)
+      (NP (JJ:[1204..1218] characteristic)
+        (NML (NN:[1219..1223] Type) (CD:[1224..1225] I))
+        (JJ:[1226..1234] spectral) (NNS:[1235..1242] changes))
+      (PP-LOC (IN:[1243..1245] in)
+        (NP (DT:[1246..1249] the)
+          (NML
+            (NML
+              (NML (JJ:[1250..1254] wild) (HYPH:[1254..1255] -)
+                   (NN:[1255..1259] type))
+              (NML-1 (-NONE-:[1259..1259] *P*)))
+            (CC:[1260..1263] and)
+            (NML (NN:[1264..1270] mutant)
+              (NML-1 (NN:[1272..1278] enzyme)))))))
+    (.:[1278..1279] .)))
+
+;sentence 11 Span:1280..1412
+;A radiolabeled BITC metabolite bound to P450 2E1 and to P450 2E1 T303A  when
+;both enzymes were incubated with [(14)C]BITC and NADPH.
+;[1295..1310]:substance:"BITC metabolite"
+;[1320..1328]:cyp450:"P450 2E1"
+;[1336..1350]:cyp450:"P450 2E1 T303A"
+;[1362..1369]:cyp450:"enzymes"
+;[1390..1401]:substance:"[(14)C]BITC"
+;[1406..1411]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ (DT:[1280..1281] A) (VBN:[1282..1294] radiolabeled)
+       (NN:[1295..1299] BITC) (NN:[1300..1310] metabolite))
+    (VP (VBD:[1311..1316] bound)
+      (PP-CLR
+        (PP (TO:[1317..1319] to)
+          (NP (NN:[1320..1324] P450) (NN:[1325..1328] 2E1)))
+        (CC:[1329..1332] and)
+        (PP (TO:[1333..1335] to)
+          (NP
+            (NML (NN:[1336..1340] P450) (NN:[1341..1344] 2E1))
+            (NN:[1345..1350] T303A))))
+      (SBAR-ADV
+        (WHADVP-2 (WRB:[1352..1356] when))
+        (S
+          (NP-SBJ-1 (DT:[1357..1361] both) (NNS:[1362..1369] enzymes))
+          (VP (VBD:[1370..1374] were)
+            (VP (VBN:[1375..1384] incubated)
+              (NP-1 (-NONE-:[1384..1384] *))
+              (PP (IN:[1385..1389] with)
+                (NP (NN:[1390..1401] -LSB--LRB-14-RRB-C-RSB-BITC)
+                    (CC:[1402..1405] and) (NN:[1406..1411] NADPH)))
+              (ADVP-TMP-2 (-NONE-:[1411..1411] *T*)))))))
+    (.:[1411..1412] .)))
+
+;sentence 12 Span:1413..1589
+;Whole protein  electrospray ion trap mass spectrometry indicated that a mass
+;consistent with  one molecule of benzylisocyanate and oxygen was adducted to
+;the wild-type  enzyme.
+;[1419..1426]:substance:"protein"
+;[1523..1539]:substance:"benzylisocyanate"
+;[1544..1550]:substance:"oxygen"
+;[1582..1588]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[1413..1418] Whole) (NN:[1419..1426] protein))
+      (NML (NN:[1428..1440] electrospray) (NN:[1441..1444] ion)
+           (NN:[1445..1449] trap))
+      (NN:[1450..1454] mass) (NN:[1455..1467] spectrometry))
+    (VP (VBD:[1468..1477] indicated)
+      (SBAR (IN:[1478..1482] that)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[1483..1484] a) (NN:[1485..1489] mass))
+            (ADJP (JJ:[1490..1500] consistent)
+              (PP (IN:[1501..1505] with)
+                (NP
+                  (NP (CD:[1507..1510] one) (NN:[1511..1519] molecule))
+                  (PP (IN:[1520..1522] of)
+                    (NP (NN:[1523..1539] benzylisocyanate) (CC:[1540..1543] and)
+                        (NN:[1544..1550] oxygen)))))))
+          (VP (VBD:[1551..1554] was)
+            (VP (VBN:[1555..1563] adducted)
+              (NP-1 (-NONE-:[1563..1563] *))
+              (PP-CLR (TO:[1564..1566] to)
+                (NP (DT:[1567..1570] the)
+                  (NML (JJ:[1571..1575] wild) (HYPH:[1575..1576] -)
+                       (NN:[1576..1580] type))
+                  (NN:[1582..1588] enzyme))))))))
+    (.:[1588..1589] .)))
+
+;sentence 13 Span:1590..1979
+;The mass adducted to the T303A mutant was consistent with the addition  of
+;one hydroxylated BITC or of one benzylisocyanate moiety and one sulfur 
+;molecule. Analysis of the metabolites of BITC indicated that each enzyme 
+;produced similar metabolites but that the mutant enzyme generated
+;significantly  higher amounts of benzaldehyde and benzoic acid when compared
+;to the wild-type  enzyme.
+;[1615..1620]:cyp450:"T303A"
+;[1682..1686]:substance:"BITC"
+;[1697..1713]:substance:"benzylisocyanate"
+;[1729..1735]:substance:"sulfur"
+;[1763..1774]:substance:"metabolites"
+;[1778..1782]:substance:"BITC"
+;[1803..1809]:substance:"enzyme"
+;[1828..1839]:substance:"metabolites"
+;[1860..1866]:substance:"enzyme"
+;[1910..1922]:substance:"benzaldehyde"
+;[1927..1939]:substance:"benzoic acid"
+;[1972..1978]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1590..1593] The) (NN:[1594..1598] mass))
+      (VP (VBN:[1599..1607] adducted)
+        (NP (-NONE-:[1607..1607] *))
+        (PP-CLR (TO:[1608..1610] to)
+          (NP (DT:[1611..1614] the) (NN:[1615..1620] T303A)
+              (NN:[1621..1627] mutant)))))
+    (VP (VBD:[1628..1631] was)
+      (ADJP-PRD (JJ:[1632..1642] consistent)
+        (PP (IN:[1643..1647] with)
+          (NP
+            (NP (DT:[1648..1651] the) (NN:[1652..1660] addition))
+            (PP
+              (PP (IN:[1662..1664] of)
+                (NP (CD:[1665..1668] one) (VBN:[1669..1681] hydroxylated)
+                    (NN:[1682..1686] BITC)))
+              (CC:[1687..1689] or)
+              (PP (IN:[1690..1692] of)
+                (NP
+                  (NP (CD:[1693..1696] one) (NN:[1697..1713] benzylisocyanate)
+                      (NN:[1714..1720] moiety))
+                  (CC:[1721..1724] and)
+                  (NP (CD:[1725..1728] one) (NN:[1729..1735] sulfur)
+                      (NN:[1737..1745] molecule)))))))))
+    (.:[1745..1746] .))
+  (S
+    (NP-SBJ
+      (NP (NN:[1747..1755] Analysis))
+      (PP (IN:[1756..1758] of)
+        (NP
+          (NP (DT:[1759..1762] the) (NNS:[1763..1774] metabolites))
+          (PP (IN:[1775..1777] of)
+            (NP (NN:[1778..1782] BITC))))))
+    (VP (VBD:[1783..1792] indicated)
+      (SBAR
+        (SBAR (IN:[1793..1797] that)
+          (S
+            (NP-SBJ (DT:[1798..1802] each) (NN:[1803..1809] enzyme))
+            (VP (VBD:[1811..1819] produced)
+              (NP (JJ:[1820..1827] similar) (NNS:[1828..1839] metabolites)))))
+        (CC:[1840..1843] but)
+        (SBAR (IN:[1844..1848] that)
+          (S
+            (NP-SBJ (DT:[1849..1852] the) (NN:[1853..1859] mutant)
+                    (NN:[1860..1866] enzyme))
+            (VP (VBD:[1867..1876] generated)
+              (NP
+                (NP
+                  (ADJP (RB:[1877..1890] significantly)
+                        (JJR:[1892..1898] higher))
+                  (NNS:[1899..1906] amounts))
+                (PP (IN:[1907..1909] of)
+                  (NP
+                    (NP (NN:[1910..1922] benzaldehyde))
+                    (CC:[1923..1926] and)
+                    (NP (JJ:[1927..1934] benzoic) (NN:[1935..1939] acid)))))
+              (SBAR-ADV (WRB:[1940..1944] when)
+                (S
+                  (NP-SBJ-1 (-NONE-:[1944..1944] *))
+                  (VP (VBN:[1945..1953] compared)
+                    (NP-1 (-NONE-:[1953..1953] *))
+                    (PP-CLR (TO:[1954..1956] to)
+                      (NP (DT:[1957..1960] the)
+                        (NML (JJ:[1961..1965] wild) (HYPH:[1965..1966] -)
+                             (NN:[1966..1970] type))
+                        (NN:[1972..1978] enzyme)))))))))))
+    (.:[1978..1979] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1590..1979]::S:S:
+
+;section 14 Span:1980..2010
+;Copyright 2001 Academic Press.
+(SEC
+  (FRAG (NN:[1980..1989] Copyright) (CD:[1990..1994] 2001)
+        (NNP:[1995..2003] Academic) (NNP:[2004..2009] Press) (.:[2009..2010] .)))
+
+;section 15 Span:2014..2059
+;PMID: 11414690 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2014..2018] PMID) (::[2018..2019] :) (CD:[2020..2028] 11414690)
+        (-LRB-:[2029..2030] -LSB-) (NNP:[2030..2036] PubMed)
+        (HYPH:[2037..2038] -) (VBN:[2039..2046] indexed) (IN:[2047..2050] for)
+        (NNP:[2051..2058] MEDLINE) (-RRB-:[2058..2059] -RSB-)))

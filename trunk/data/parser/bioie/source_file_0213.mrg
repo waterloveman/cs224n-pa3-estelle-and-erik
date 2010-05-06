@@ -1,0 +1,549 @@
+;PMID: 11159802
+;source_file_865.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..152] = [t:47..152]
+;2)section:[e:156..225] = [t:156..225]
+;3)section:[e:229..371] = [t:229..371]
+;4)sentence:[e:375..642] = [t:375..642]
+;5)sentence:[e:643..928] = [t:643..928]
+;6)sentence:[e:929..1090] = [t:929..1090]
+;7)sentence:[e:1091..1216] = [t:1091..1216]
+;8)sentence:[e:1217..1302] = [t:1217..1302]
+;9)sentence:[e:1304..1450] = [t:1304..1450]
+;10)sentence:[e:1452..1588] = [t:1452..1588]
+;11)sentence:[e:1589..1786] = [t:1589..1786]
+;12)sentence:[e:1787..1906] = [t:1787..1906]
+;13)sentence:[e:1907..1979] = [t:1907..1979]
+;14)section:[e:1983..2028] = [t:1983..2028]
+
+;section 0 Span:0..41
+;Drug Metab Dispos. 2001 Feb;29(2):133-40.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 2001) (CC:[24..31] Feb;29-LRB-)
+        (CD:[31..32] 2) (-RRB-:[32..33] -RRB-) (CD:[33..37] :133)
+        (HYPH:[37..38] -) (CD:[38..40] 40) (.:[40..41] .)))
+
+;sentence 1 Span:47..152
+;CYP3A4 is the major CYP isoform mediating the in vitro hydroxylation and 
+;demethylation of flunitrazepam.
+;[47..53]:cyp450:"CYP3A4"
+;[67..78]:cyp450:"CYP isoform"
+;[138..151]:substance:"flunitrazepam"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[47..53] CYP3A4))
+    (VP (VBZ:[54..56] is)
+      (NP-PRD
+        (NP (DT:[57..60] the) (JJ:[61..66] major)
+           (NN:[67..70] CYP) (NN:[71..78] isoform))
+        (VP (VBG:[79..88] mediating)
+          (NP
+            (NP (DT:[89..92] the)
+              (NML
+                (NML
+                  (ADJP-1 (FW:[93..95] in) (FW:[96..101] vitro))
+                  (NN:[102..115] hydroxylation))
+                (CC:[116..119] and)
+                (NML
+                  (ADJP-1 (-NONE-:[119..119] *P*))
+                  (NN:[121..134] demethylation))))
+            (PP (IN:[135..137] of)
+              (NP (NN:[138..151] flunitrazepam)))))))
+    (.:[151..152] .)))
+
+;section 2 Span:156..225
+;Hesse LM, Venkatakrishnan K, von Moltke LL, Shader RI, Greenblatt DJ.
+(SEC
+  (FRAG (NNP:[156..161] Hesse) (NNP:[162..164] LM) (,:[164..165] ,)
+        (NNP:[166..181] Venkatakrishnan) (NNP:[182..183] K) (NNP:[183..184] ,)
+        (NNP:[185..188] von) (NNP:[189..195] Moltke) (NNP:[196..198] LL)
+        (,:[198..199] ,) (NNP:[200..206] Shader) (NNP:[207..209] RI)
+        (,:[209..210] ,) (NNP:[211..221] Greenblatt) (NNP:[222..225] DJ.)))
+
+;section 3 Span:229..371
+;Department of Pharmacology and Experimental Therapeutics, Tufts University 
+;School of Medicine, 136 Harrison Ave., Boston, Massachusetts, USA.
+(SEC
+  (FRAG (NNP:[229..239] Department) (IN:[240..242] of)
+        (NNP:[243..255] Pharmacology) (CC:[256..259] and)
+        (NNP:[260..272] Experimental) (NNP:[273..285] Therapeutics)
+        (,:[285..286] ,) (NNP:[287..292] Tufts) (NNP:[293..303] University)
+        (NNP:[305..311] School) (IN:[312..314] of) (NNP:[315..323] Medicine)
+        (,:[323..324] ,) (CD:[325..328] 136) (NNP:[329..337] Harrison)
+        (NNP:[338..341] Ave) (NN:[341..342] .) (,:[342..343] ,)
+        (NNP:[344..350] Boston) (,:[350..351] ,) (NNP:[352..365] Massachusetts)
+        (,:[365..366] ,) (NNP:[367..370] USA) (.:[370..371] .)))
+
+;sentence 4 Span:375..642
+;The kinetics of flunitrazepam (FNTZ) N-demethylation to
+;desmethylflunitrazepam  (DM FNTZ), and 3-hydroxylation to
+;3-hydroxyflunitrazepam (3-OH FNTZ), were  studied in human liver microsomes
+;and in microsomes containing heterologously  expressed individual human
+;CYPs.
+;[391..404]:substance:"flunitrazepam"
+;[406..410]:substance:"FNTZ"
+;[431..453]:substance:"desmethylflunitrazepam"
+;[456..463]:substance:"DM FNTZ"
+;[489..511]:substance:"3-hydroxyflunitrazepam"
+;[513..522]:substance:"3-OH FNTZ"
+;[637..641]:cyp450:"CYPs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[375..378] The) (NNS:[379..387] kinetics))
+      (PP (IN:[388..390] of)
+        (NP
+          (NP
+            (NP
+              (NML
+                (NML (NN:[391..404] flunitrazepam))
+                (NML (-LRB-:[405..406] -LRB-) (NN:[406..410] FNTZ)
+                     (-RRB-:[410..411] -RRB-)))
+              (NN:[412..427] N-demethylation))
+            (PP (TO:[428..430] to)
+              (NP
+                (NP (NN:[431..453] desmethylflunitrazepam))
+                (NP (-LRB-:[455..456] -LRB-)
+                   (NN:[456..458] DM) (NN:[459..463] FNTZ)
+                  (-RRB-:[463..464] -RRB-)))))
+          (,:[464..465] ,) (CC:[466..469] and)
+          (NP
+            (NP (NN:[470..485] 3-hydroxylation))
+            (PP (TO:[486..488] to)
+              (NP
+                (NP (NN:[489..511] 3-hydroxyflunitrazepam))
+                (NP (-LRB-:[512..513] -LRB-)
+                   (NN:[513..517] 3-OH) (NN:[518..522] FNTZ)
+                  (-RRB-:[522..523] -RRB-))))))))
+    (,:[523..524] ,)
+    (VP (VBD:[525..529] were)
+      (VP (VBN:[531..538] studied)
+        (NP-1 (-NONE-:[538..538] *))
+        (PP-LOC
+          (PP (IN:[539..541] in)
+            (NP (JJ:[542..547] human) (NN:[548..553] liver)
+                (NNS:[554..564] microsomes)))
+          (CC:[565..568] and)
+          (PP (IN:[569..571] in)
+            (NP
+              (NP (NNS:[572..582] microsomes))
+              (VP (VBG:[583..593] containing)
+                (NP
+                  (ADJP (RB:[594..608] heterologously)
+                        (VBN:[610..619] expressed))
+                  (JJ:[620..630] individual) (JJ:[631..636] human)
+                   (NNS:[637..641] CYPs))))))))
+    (.:[641..642] .)))
+
+;sentence 5 Span:643..928
+;FNTZ was N-demethylated by cDNA-expressed  CYP2A6 (K(m) = 1921 microM),
+;CYP2B6 (K(m) = 101 microM), CYP2C9 (K(m) = 50  microM), CYP2C19 (K(m) = 60
+;microM), and CYP3A4 (K(m) = 155 microM), and  3-hydroxylated by
+;cDNA-expressed CYP2A6 (K(m) = 298 microM) and CYP3A4 (K(m) =  286 microM).
+;[643..647]:substance:"FNTZ"
+;[670..674]:substance:"cDNA"
+;[686..692]:cyp450:"CYP2A6"
+;[694..698]:quantitative-name:"K(m)"
+;[701..705]:quantitative-value:"1921"
+;[706..712]:quantitative-units:"microM"
+;[715..721]:cyp450:"CYP2B6"
+;[723..727]:quantitative-name:"K(m)"
+;[730..733]:quantitative-value:"101"
+;[734..740]:quantitative-units:"microM"
+;[743..749]:cyp450:"CYP2C9"
+;[751..755]:quantitative-name:"K(m)"
+;[758..760]:quantitative-value:"50"
+;[762..768]:quantitative-units:"microM"
+;[771..778]:cyp450:"CYP2C19"
+;[780..784]:quantitative-name:"K(m)"
+;[787..789]:quantitative-value:"60"
+;[790..796]:quantitative-units:"microM"
+;[803..809]:cyp450:"CYP3A4"
+;[811..815]:quantitative-name:"K(m)"
+;[818..821]:quantitative-value:"155"
+;[822..828]:quantitative-units:"microM"
+;[854..858]:substance:"cDNA"
+;[869..875]:cyp450:"CYP2A6"
+;[877..881]:quantitative-name:"K(m)"
+;[884..887]:quantitative-value:"298"
+;[888..894]:quantitative-units:"microM"
+;[900..906]:cyp450:"CYP3A4"
+;[908..912]:quantitative-name:"K(m)"
+;[916..919]:quantitative-value:"286"
+;[920..926]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-3 (NN:[643..647] FNTZ))
+    (VP (VBD:[648..651] was)
+      (VP
+        (VP (VBN:[652..666] N-demethylated)
+          (NP-3 (-NONE-:[666..666] *))
+          (PP-MNR (IN:[667..669] by)
+            (NP
+              (NP
+                (ADJP-2 (NN:[670..674] cDNA) (HYPH:[674..675] -)
+                        (VBN:[675..684] expressed))
+                (NN:[686..692] CYP2A6)
+                (PRN (-LRB-:[693..694] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[694..698] K-LRB-m-RRB-))
+                    (VP (SYM:[699..700] =)
+                      (NP (CD:[701..705] 1921) (NN:[706..712] microM))))
+                  (-RRB-:[712..713] -RRB-)))
+              (,:[713..714] ,)
+              (NP
+                (ADJP-2 (-NONE-:[714..714] *P*))
+                (NN:[715..721] CYP2B6)
+                (PRN (-LRB-:[722..723] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[723..727] K-LRB-m-RRB-))
+                    (VP (SYM:[728..729] =)
+                      (NP (CD:[730..733] 101) (NN:[734..740] microM))))
+                  (-RRB-:[740..741] -RRB-)))
+              (,:[741..742] ,)
+              (NP
+                (ADJP-2 (-NONE-:[742..742] *P*))
+                (NN:[743..749] CYP2C9)
+                (PRN (-LRB-:[750..751] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[751..755] K-LRB-m-RRB-))
+                    (VP (SYM:[756..757] =)
+                      (NP (CD:[758..760] 50) (NN:[762..768] microM))))
+                  (-RRB-:[768..769] -RRB-)))
+              (,:[769..770] ,)
+              (NP
+                (ADJP-2 (-NONE-:[770..770] *P*))
+                (NN:[771..778] CYP2C19)
+                (PRN (-LRB-:[779..780] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[780..784] K-LRB-m-RRB-))
+                    (VP (SYM:[785..786] =)
+                      (NP (CD:[787..789] 60) (NN:[790..796] microM))))
+                  (-RRB-:[796..797] -RRB-)))
+              (,:[797..798] ,) (CC:[799..802] and)
+              (NP
+                (ADJP-2 (-NONE-:[802..802] *P*))
+                (NN:[803..809] CYP3A4)
+                (PRN (-LRB-:[810..811] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[811..815] K-LRB-m-RRB-))
+                    (VP (SYM:[816..817] =)
+                      (NP (CD:[818..821] 155) (NN:[822..828] microM))))
+                  (-RRB-:[828..829] -RRB-))))))
+        (,:[829..830] ,) (CC:[831..834] and)
+        (VP (VBN:[836..850] 3-hydroxylated)
+          (NP-3 (-NONE-:[850..850] *))
+          (PP-MNR (IN:[851..853] by)
+            (NP
+              (NP
+                (ADJP-1 (NN:[854..858] cDNA) (HYPH:[858..859] -)
+                        (VBN:[859..868] expressed))
+                (NN:[869..875] CYP2A6)
+                (PRN (-LRB-:[876..877] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[877..881] K-LRB-m-RRB-))
+                    (VP (SYM:[882..883] =)
+                      (NP (CD:[884..887] 298) (NN:[888..894] microM))))
+                  (-RRB-:[894..895] -RRB-)))
+              (CC:[896..899] and)
+              (NP
+                (ADJP-1 (-NONE-:[899..899] *P*))
+                (NN:[900..906] CYP3A4)
+                (PRN (-LRB-:[907..908] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[908..912] K-LRB-m-RRB-))
+                    (VP (SYM:[913..914] =)
+                      (NP (CD:[916..919] 286) (NN:[920..926] microM))))
+                  (-RRB-:[926..927] -RRB-))))))))
+    (.:[927..928] .)))
+
+;sentence 6 Span:929..1090
+;The 3-hydroxylation pathway was predominant in liver microsomes,  accounting
+;for more than 80% of intrinsic clearance compared with the  N-demethylation
+;pathway.
+;[1020..1023]:quantitative-value:"80%"
+(SENT
+  (S
+    (NP-SBJ (DT:[929..932] The) (NN:[933..948] 3-hydroxylation)
+            (NN:[949..956] pathway))
+    (VP (VBD:[957..960] was)
+      (ADJP-PRD (JJ:[961..972] predominant))
+      (PP-LOC (IN:[973..975] in)
+        (NP (NN:[976..981] liver) (NNS:[982..992] microsomes)))
+      (,:[992..993] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[993..993] *))
+        (VP (VBG:[995..1005] accounting)
+          (PP-CLR (IN:[1006..1009] for)
+            (NP
+              (NP
+                (QP (JJR:[1010..1014] more) (IN:[1015..1019] than)
+                    (CD:[1020..1022] 80))
+                (NN:[1022..1023] %))
+              (PP (IN:[1024..1026] of)
+                (NP (JJ:[1027..1036] intrinsic) (NN:[1037..1046] clearance)))))
+          (S-ADV
+            (NP-SBJ-1 (-NONE-:[1046..1046] *))
+            (VP (VBN:[1047..1055] compared)
+              (NP-1 (-NONE-:[1055..1055] *))
+              (PP-CLR (IN:[1056..1060] with)
+                (NP (DT:[1061..1064] the) (NN:[1066..1081] N-demethylation)
+                    (NN:[1082..1089] pathway))))))))
+    (.:[1089..1090] .)))
+
+;sentence 7 Span:1091..1216
+;After adjusting for estimated relative abundance, CYP3A  accounted for the
+;majority of intrinsic clearance via both pathways.
+;[1141..1146]:cyp450:"CYP3A"
+(SENT
+  (S
+    (PP-TMP (IN:[1091..1096] After)
+      (S-NOM
+        (NP-SBJ (-NONE-:[1096..1096] *))
+        (VP (VBG:[1097..1106] adjusting)
+          (PP (IN:[1107..1110] for)
+            (NP (VBN:[1111..1120] estimated) (JJ:[1121..1129] relative)
+                (NN:[1130..1139] abundance))))))
+    (,:[1139..1140] ,)
+    (NP-SBJ (NN:[1141..1146] CYP3A))
+    (VP (VBD:[1148..1157] accounted)
+      (PP-CLR (IN:[1158..1161] for)
+        (NP
+          (NP (DT:[1162..1165] the) (NN:[1166..1174] majority))
+          (PP (IN:[1175..1177] of)
+            (NP
+              (NP (JJ:[1178..1187] intrinsic) (NN:[1188..1197] clearance))
+              (PP (IN:[1198..1201] via)
+                (NP (DT:[1202..1206] both) (NNS:[1207..1215] pathways))))))))
+    (.:[1215..1216] .)))
+
+;sentence 8 Span:1217..1302
+;This  finding was supported by chemical inhibition studies in human liver
+;microsomes.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1217..1221] This) (NN:[1223..1230] finding))
+    (VP (VBD:[1231..1234] was)
+      (VP (VBN:[1235..1244] supported)
+        (NP-1 (-NONE-:[1244..1244] *))
+        (PP-CLR (IN:[1245..1247] by)
+          (NP
+            (NP (JJ:[1248..1256] chemical) (NN:[1257..1267] inhibition)
+                (NNS:[1268..1275] studies))
+            (PP-LOC (IN:[1276..1278] in)
+              (NP (JJ:[1279..1284] human) (NN:[1285..1290] liver)
+                  (NNS:[1291..1301] microsomes)))))))
+    (.:[1301..1302] .)))
+
+;sentence 9 Span:1304..1450
+;Formation of 3-OH FNTZ was reduced to 10% or less of control values by 
+;ketoconazole (IC(50) = 0.11 microM) and ritonavir (IC(50) = 0.041 microM).
+;[1317..1326]:substance:"3-OH FNTZ"
+;[1342..1345]:quantitative-value:"10%"
+;[1376..1388]:substance:"ketoconazole"
+;[1390..1396]:quantitative-name:"IC(50)"
+;[1399..1403]:quantitative-value:"0.11"
+;[1404..1410]:quantitative-units:"microM"
+;[1416..1425]:substance:"ritonavir"
+;[1427..1433]:quantitative-name:"IC(50)"
+;[1436..1441]:quantitative-value:"0.041"
+;[1442..1448]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1304..1313] Formation))
+      (PP (IN:[1314..1316] of)
+        (NP (NN:[1317..1321] 3-OH) (NN:[1322..1326] FNTZ))))
+    (VP (VBD:[1327..1330] was)
+      (VP (VBN:[1331..1338] reduced)
+        (NP-1 (-NONE-:[1338..1338] *))
+        (PP-CLR (TO:[1339..1341] to)
+          (NP
+            (QP
+               (CD:[1342..1344] 10) (NN:[1344..1345] %)
+              (CC:[1346..1348] or) (JJR:[1349..1353] less))
+            (PP (IN:[1354..1356] of)
+              (NP (NN:[1357..1364] control) (NNS:[1365..1371] values)))))
+        (PP-MNR (IN:[1372..1374] by)
+          (NP
+            (NP (NN:[1376..1388] ketoconazole)
+              (PRN (-LRB-:[1389..1390] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1390..1396] IC-LRB-50-RRB-))
+                  (VP (SYM:[1397..1398] =)
+                    (NP (CD:[1399..1403] 0.11) (NN:[1404..1410] microM))))
+                (-RRB-:[1410..1411] -RRB-)))
+            (CC:[1412..1415] and)
+            (NP (NN:[1416..1425] ritonavir)
+              (PRN (-LRB-:[1426..1427] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1427..1433] IC-LRB-50-RRB-))
+                  (VP (SYM:[1434..1435] =)
+                    (NP (CD:[1436..1441] 0.041) (NN:[1442..1448] microM))))
+                (-RRB-:[1448..1449] -RRB-)))))))
+    (.:[1449..1450] .)))
+
+;sentence 10 Span:1452..1588
+;Formation of DM FNTZ was inhibited to 40% of control velocity by 2.5 microM 
+;ketoconazole and to 30% of control by 2.5 microM ritonavir.
+;[1465..1472]:substance:"DM FNTZ"
+;[1490..1493]:quantitative-value:"40%"
+;[1517..1520]:quantitative-value:"2.5"
+;[1521..1527]:quantitative-units:"microM"
+;[1529..1541]:substance:"ketoconazole"
+;[1549..1552]:quantitative-value:"30%"
+;[1567..1570]:quantitative-value:"2.5"
+;[1571..1577]:quantitative-units:"microM"
+;[1578..1587]:substance:"ritonavir"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (NN:[1452..1461] Formation))
+      (PP (IN:[1462..1464] of)
+        (NP (NN:[1465..1467] DM) (NN:[1468..1472] FNTZ))))
+    (VP (VBD:[1473..1476] was)
+      (VP
+        (VP (VBN:[1477..1486] inhibited)
+          (NP-4 (-NONE-:[1486..1486] *))
+          (PP=2 (TO:[1487..1489] to)
+            (NP
+              (NP (CD:[1490..1492] 40) (NN:[1492..1493] %))
+              (PP (IN:[1494..1496] of)
+                (NP (NN:[1497..1504] control) (NN:[1505..1513] velocity)))))
+          (PP-MNR=3 (IN:[1514..1516] by)
+            (NP
+              (NP (CD:[1517..1520] 2.5) (NN:[1521..1527] microM))
+              (NP (NN:[1529..1541] ketoconazole)))))
+        (CC:[1542..1545] and)
+        (VP
+          (PP=2 (TO:[1546..1548] to)
+            (NP
+              (NP (CD:[1549..1551] 30) (NN:[1551..1552] %))
+              (PP (IN:[1553..1555] of)
+                (NP (NN:[1556..1563] control)))))
+          (PP-MNR=3 (IN:[1564..1566] by)
+            (NP
+              (NP (CD:[1567..1570] 2.5) (NN:[1571..1577] microM))
+              (NP (NN:[1578..1587] ritonavir)))))))
+    (.:[1587..1588] .)))
+
+;sentence 11 Span:1589..1786
+;Neither 3-OH FNTZ  nor DM FNTZ formation was inhibited to less than 85% of
+;control activity by  alpha-naphthoflavone (CYP1A2), sulfaphenazole (CYP2C9),
+;omeprazole (CYP2C19), or  quinidine (CYP2D6).
+;[1597..1606]:substance:"3-OH FNTZ"
+;[1612..1619]:substance:"DM FNTZ"
+;[1657..1660]:quantitative-value:"85%"
+;[1685..1705]:substance:"alpha-naphthoflavone"
+;[1707..1713]:cyp450:"CYP1A2"
+;[1716..1730]:substance:"sulfaphenazole"
+;[1732..1738]:cyp450:"CYP2C9"
+;[1741..1751]:substance:"omeprazole"
+;[1753..1760]:cyp450:"CYP2C19"
+;[1767..1776]:substance:"quinidine"
+;[1778..1784]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ-1 (CC:[1589..1596] Neither)
+      (NP (NN:[1597..1601] 3-OH) (NN:[1602..1606] FNTZ))
+      (CC:[1608..1611] nor)
+      (NP
+        (NML (NN:[1612..1614] DM) (NN:[1615..1619] FNTZ))
+        (NN:[1620..1629] formation)))
+    (VP (VBD:[1630..1633] was)
+      (VP (VBN:[1634..1643] inhibited)
+        (NP-1 (-NONE-:[1643..1643] *))
+        (PP (TO:[1644..1646] to)
+          (NP
+            (NP
+              (QP (JJR:[1647..1651] less) (IN:[1652..1656] than)
+                  (CD:[1657..1659] 85))
+              (NN:[1659..1660] %))
+            (PP (IN:[1661..1663] of)
+              (NP (NN:[1664..1671] control) (NN:[1672..1680] activity)))))
+        (PP-MNR (IN:[1681..1683] by)
+          (NP
+            (NP (NN:[1685..1705] alpha-naphthoflavone)
+              (PRN (-LRB-:[1706..1707] -LRB-)
+                (NP (NN:[1707..1713] CYP1A2))
+                (-RRB-:[1713..1714] -RRB-)))
+            (,:[1714..1715] ,)
+            (NP (NN:[1716..1730] sulfaphenazole)
+              (PRN (-LRB-:[1731..1732] -LRB-)
+                (NP (NN:[1732..1738] CYP2C9))
+                (-RRB-:[1738..1739] -RRB-)))
+            (,:[1739..1740] ,)
+            (NP (NN:[1741..1751] omeprazole)
+              (PRN (-LRB-:[1752..1753] -LRB-)
+                (NP (NN:[1753..1760] CYP2C19))
+                (-RRB-:[1760..1761] -RRB-)))
+            (,:[1761..1762] ,) (CC:[1763..1765] or)
+            (NP (NN:[1767..1776] quinidine)
+              (PRN (-LRB-:[1777..1778] -LRB-)
+                (NP (NN:[1778..1784] CYP2D6))
+                (-RRB-:[1784..1785] -RRB-)))))))
+    (.:[1785..1786] .)))
+
+;sentence 12 Span:1787..1906
+;Thus, CYP-dependent FNTZ biotransformation, like that of  many benzodiazepine
+;derivatives, is mediated mainly by CYP3A.
+;[1793..1796]:cyp450:"CYP"
+;[1807..1811]:substance:"FNTZ"
+;[1850..1876]:substance:"benzodiazepine derivatives"
+;[1900..1905]:cyp450:"CYP3A"
+(SENT
+  (S
+    (ADVP (RB:[1787..1791] Thus))
+    (,:[1791..1792] ,)
+    (NP-SBJ-1
+      (NP
+        (ADJP (NN:[1793..1796] CYP) (HYPH:[1796..1797] -)
+              (JJ:[1797..1806] dependent))
+        (NN:[1807..1811] FNTZ) (NN:[1812..1829] biotransformation))
+      (,:[1829..1830] ,)
+      (PP (IN:[1831..1835] like)
+        (NP
+          (NP (DT:[1836..1840] that))
+          (PP (IN:[1841..1843] of)
+            (NP (JJ:[1845..1849] many)
+               (NN:[1850..1864] benzodiazepine) (NNS:[1865..1876] derivatives)))))
+      (,:[1876..1877] ,))
+    (VP (VBZ:[1878..1880] is)
+      (VP (VBN:[1881..1889] mediated)
+        (NP-1 (-NONE-:[1889..1889] *))
+        (PP
+          (ADVP (RB:[1890..1896] mainly))
+          (IN:[1897..1899] by)
+          (NP-LGS (NN:[1900..1905] CYP3A)))))
+    (.:[1905..1906] .)))
+
+;sentence 13 Span:1907..1979
+;Clinical  interactions of FNTZ with CYP3A inhibitors can be anticipated.
+;[1933..1937]:substance:"FNTZ"
+;[1943..1948]:cyp450:"CYP3A"
+;[1949..1959]:substance:"inhibitors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[1907..1915] Clinical) (NNS:[1917..1929] interactions))
+      (PP (IN:[1930..1932] of)
+        (NP (NN:[1933..1937] FNTZ)))
+      (PP (IN:[1938..1942] with)
+        (NP (NN:[1943..1948] CYP3A) (NNS:[1949..1959] inhibitors))))
+    (VP (MD:[1960..1963] can)
+      (VP (VB:[1964..1966] be)
+        (NP (VBN:[1967..1978] anticipated)
+          (NP-1 (-NONE-:[1978..1978] *)))))
+    (.:[1978..1979] .)))
+
+;section 14 Span:1983..2028
+;PMID: 11159802 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1983..1987] PMID) (::[1987..1988] :) (CD:[1989..1997] 11159802)
+        (IN:[1998..1999] -LSB-) (NNP:[1999..2005] PubMed) (HYPH:[2006..2007] -)
+        (JJ:[2008..2015] indexed) (IN:[2016..2019] for)
+        (NNP:[2020..2028] MEDLINE-RSB-)))

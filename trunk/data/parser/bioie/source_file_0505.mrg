@@ -1,0 +1,427 @@
+;PMID: 2032655
+;source_file_1752.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..155] = [t:47..155]
+;2)section:[e:159..182] = [t:159..182]
+;3)section:[e:186..293] = [t:186..293]
+;4)sentence:[e:297..404] = [t:297..404]
+;5)sentence:[e:405..540] = [t:405..540]
+;6)sentence:[e:541..714] = [t:541..714]
+;7)sentence:[e:715..920] = [t:715..920]
+;8)sentence:[e:922..1011] = [t:922..1011]
+;9)sentence:[e:1012..1327] = [t:1012..1327]
+;10)sentence:[e:1328..1461] = [t:1328..1461]
+;11)sentence:[e:1462..1610] = [t:1462..1610]
+;12)sentence:[e:1611..1812] = [t:1611..1812]
+;13)section:[e:1816..1860] = [t:1816..1860]
+
+;section 0 Span:0..41
+;Food Chem Toxicol. 1991 Mar;29(3):145-51.
+(SEC
+  (FRAG (NNP:[0..4] Food) (NNP:[5..9] Chem) (NNP:[10..17] Toxicol)
+        (.:[17..18] .) (CD:[19..23] 1991) (CC:[24..31] Mar;29-LRB-)
+        (CD:[31..32] 3) (-RRB-:[32..33] -RRB-) (::[33..34] :)
+        (CD:[34..40] 145-51) (.:[40..41] .)))
+
+;sentence 1 Span:47..155
+;Coumarin-induced changes in delta-aminolaevulinic acid synthase and
+;cytochrome  P-450 in chick embryo liver.
+;[47..55]:substance:"Coumarin"
+;[75..110]:substance:"delta-aminolaevulinic acid synthase"
+;[115..132]:cyp450:"cytochrome  P-450"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (NN:[47..55] Coumarin) (HYPH:[55..56] -) (VBN:[56..63] induced))
+      (NNS:[64..71] changes))
+    (PP (IN:[72..74] in)
+      (NP
+        (NP
+          (NML (JJ:[75..96] delta-aminolaevulinic) (NN:[97..101] acid))
+          (NN:[102..110] synthase))
+        (CC:[111..114] and)
+        (NP (NN:[115..125] cytochrome) (NN:[127..132] P-450))))
+    (PP-LOC (IN:[133..135] in)
+      (NP (NN:[136..141] chick) (NN:[142..148] embryo) (NN:[149..154] liver)))
+    (.:[154..155] .)))
+
+;section 2 Span:159..182
+;Goeger DE, Anderson KE.
+(SEC
+  (FRAG (NNP:[159..165] Goeger) (NNP:[166..168] DE) (,:[168..169] ,)
+        (NNP:[170..178] Anderson) (NNP:[179..182] KE.)))
+
+;section 3 Span:186..293
+;Department of Preventive Medicine & Community Health, University of Texas 
+;Medical Branch, Galveston 77550.
+(SEC
+  (FRAG (NNP:[186..196] Department) (IN:[197..199] of)
+        (JJ:[200..210] Preventive) (NNP:[211..219] Medicine) (CC:[220..221] &)
+        (NNP:[222..231] Community) (NNP:[232..238] Health) (,:[238..239] ,)
+        (NNP:[240..250] University) (IN:[251..253] of) (NNP:[254..259] Texas)
+        (NNP:[261..268] Medical) (NNP:[269..275] Branch) (,:[275..276] ,)
+        (NNP:[277..286] Galveston) (CD:[287..292] 77550) (.:[292..293] .)))
+
+;sentence 4 Span:297..404
+;Coumarin occurs naturally in the diet and inhibits several cytochrome P-450 
+;enzymes in laboratory animals.
+;[297..305]:substance:"Coumarin"
+;[356..381]:cyp450:"cytochrome P-450  enzymes"
+(SENT
+  (S
+    (NP-SBJ (NN:[297..305] Coumarin))
+    (VP
+      (VP (VBZ:[306..312] occurs)
+        (ADVP (RB:[313..322] naturally))
+        (PP-LOC (IN:[323..325] in)
+          (NP (DT:[326..329] the) (NN:[330..334] diet))))
+      (CC:[335..338] and)
+      (VP (VBZ:[339..347] inhibits)
+        (NP (JJ:[348..355] several)
+          
+          (NML (NN:[356..366] cytochrome) (NN:[367..372] P-450))
+          (NNS:[374..381] enzymes))
+        (PP-LOC (IN:[382..384] in)
+          (NP (NN:[385..395] laboratory) (NNS:[396..403] animals)))))
+    (.:[403..404] .)))
+
+;sentence 5 Span:405..540
+;The effect of coumarin was examined on haem  biosynthesis and cytochrome
+;P-450 activities in the 18-day-old chick embryo  liver in ovo.
+;[419..427]:substance:"coumarin"
+;[444..448]:substance:"haem"
+;[467..483]:cyp450:"cytochrome P-450"
+;[502..504]:quantitative-value:"18"
+;[505..508]:quantitative-units:"day"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[405..408] The) (NN:[409..415] effect))
+      (PP (IN:[416..418] of)
+        (NP (NN:[419..427] coumarin)))
+      (PP-2 (-NONE-:[427..427] *ICH*)))
+    (VP (VBD:[428..431] was)
+      (VP (VBN:[432..440] examined)
+        (NP-1 (-NONE-:[440..440] *))
+        (PP-2 (IN:[441..443] on)
+          (NP
+            (NP (NN:[444..448] haem) (NN:[450..462] biosynthesis))
+            (CC:[463..466] and)
+            (NP
+              (NML (NN:[467..477] cytochrome) (NN:[478..483] P-450))
+              (NNS:[484..494] activities))))
+        (PP-LOC (IN:[495..497] in)
+          (NP (DT:[498..501] the)
+            (ADJP
+              (NML (CD:[502..504] 18) (HYPH:[504..505] -) (NN:[505..508] day))
+              (HYPH:[508..509] -) (JJ:[509..512] old))
+            (NN:[513..518] chick) (NN:[519..525] embryo) (NN:[527..532] liver)))
+        (ADVP (FW:[533..535] in) (FW:[536..539] ovo))))
+    (.:[539..540] .)))
+
+;sentence 6 Span:541..714
+;At 40 and 50 mumol/embryo coumarin increased delta-aminolaevulinic  acid
+;synthase, porphyrins, cytochrome P-450, benzphetamine N-demethylase and 
+;benzo[a]pyrene hydroxylase.
+;[544..546]:quantitative-value:"40"
+;[551..553]:quantitative-value:"50"
+;[554..566]:quantitative-units:"mumol/embryo"
+;[567..575]:substance:"coumarin"
+;[586..622]:substance:"delta-aminolaevulinic  acid synthase"
+;[624..634]:substance:"porphyrins"
+;[636..652]:cyp450:"cytochrome P-450"
+;[654..681]:cyp450:"benzphetamine N-demethylase"
+;[687..713]:cyp450:"benzo[a]pyrene hydroxylase"
+(SENT
+  (S
+    (PP (IN:[541..543] At)
+      (NP
+        (NP
+          (NP (CD:[544..546] 40)
+            (NML-1 (-NONE-:[546..546] *P*)))
+          (CC:[547..550] and)
+          (NP (CD:[551..553] 50)
+            (NML-1 (NN:[554..559] mumol))))
+        (PP (SYM:[559..560] /)
+          (NP (NN:[560..566] embryo)))))
+    (NP-SBJ (NN:[567..575] coumarin))
+    (VP (VBD:[576..585] increased)
+      (NP
+        (NP
+          (NML (JJ:[586..607] delta-aminolaevulinic) (NN:[609..613] acid))
+          (NN:[614..622] synthase))
+        (,:[622..623] ,)
+        (NP (NNS:[624..634] porphyrins))
+        (,:[634..635] ,)
+        (NP (NN:[636..646] cytochrome) (NN:[647..652] P-450))
+        (,:[652..653] ,)
+        (NP (NN:[654..667] benzphetamine) (NN:[668..681] N-demethylase))
+        (CC:[682..685] and)
+        (NP (NN:[687..701] benzo-LSB-a-RSB-pyrene) (NN:[702..713] hydroxylase))))
+    (.:[713..714] .)))
+
+;sentence 7 Span:715..920
+;At 10 mumol/embryo coumarin decreased aniline  4-hydroxylase, and at both 10
+;and 50 mumol/embryo it decreased 7-ethoxyresorufin  O-deethylase, coumarin
+;7-hydroxylase and nitrosodimethylamine N-demethylase.
+;[718..720]:quantitative-value:"10"
+;[721..733]:quantitative-units:"mumol/embryo"
+;[734..742]:substance:"coumarin"
+;[753..775]:cyp450:"aniline  4-hydroxylase"
+;[789..791]:quantitative-value:"10"
+;[796..798]:quantitative-value:"50"
+;[799..811]:quantitative-units:"mumol/embryo"
+;[825..856]:cyp450:"7-ethoxyresorufin  O-deethylase"
+;[858..880]:cyp450:"coumarin 7-hydroxylase"
+;[885..919]:cyp450:"nitrosodimethylamine N-demethylase"
+(SENT
+  (S
+    (S
+      (PP (IN:[715..717] At)
+        (NP
+          (NP (CD:[718..720] 10) (NN:[721..726] mumol))
+          (PP (SYM:[726..727] /)
+            (NP (NN:[727..733] embryo)))))
+      (NP-SBJ (NN:[734..742] coumarin))
+      (VP (VBD:[743..752] decreased)
+        (NP (NN:[753..760] aniline) (NN:[762..775] 4-hydroxylase))))
+    (,:[775..776] ,) (CC:[777..780] and)
+    (S
+      (PP (IN:[781..783] at)
+        (NP
+          (NP (CC:[784..788] both)
+            (NP (CD:[789..791] 10)
+              (NML-1 (-NONE-:[791..791] *P*)))
+            (CC:[792..795] and)
+            (NP (CD:[796..798] 50)
+              (NML-1 (NN:[799..804] mumol))))
+          (PP (SYM:[804..805] /)
+            (NP (NN:[805..811] embryo)))))
+      (NP-SBJ (PRP:[812..814] it))
+      (VP (VBD:[815..824] decreased)
+        (NP
+          (NP (NN:[825..842] 7-ethoxyresorufin) (NN:[844..856] O-deethylase))
+          (,:[856..857] ,)
+          (NP (NN:[858..866] coumarin) (NN:[867..880] 7-hydroxylase))
+          (CC:[881..884] and)
+          (NP (NN:[885..905] nitrosodimethylamine) (NN:[906..919] N-demethylase)))))
+    (.:[919..920] .)))
+
+;sentence 8 Span:922..1011
+;7-Hydroxycoumarin and 5, 7-methoxycoumarin at 40 mumol/embryo had none of
+;these  effects.
+;[922..939]:substance:"7-Hydroxycoumarin"
+;[944..964]:substance:"5, 7-methoxycoumarin"
+;[968..970]:quantitative-value:"40"
+;[971..983]:quantitative-units:"mumol/embryo"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[922..939] 7-Hydroxycoumarin))
+        (CC:[940..943] and)
+        (NP (CD:[944..945] 5) (,:[945..946] ,) (NN:[947..964] 7-methoxycoumarin)))
+      (PP (IN:[965..967] at)
+        (NP
+          (NP (CD:[968..970] 40) (NN:[971..976] mumol))
+          (PP (SYM:[976..977] /)
+            (NP (NN:[977..983] embryo))))))
+    (VP (VBD:[984..987] had)
+      (NP
+        (NP (NN:[988..992] none))
+        (PP (IN:[993..995] of)
+          (NP (DT:[996..1001] these) (NNS:[1003..1010] effects)))))
+    (.:[1010..1011] .)))
+
+;sentence 9 Span:1012..1327
+;Coumarin (5-500 microM) added to liver microsomes inhibited aniline 
+;hydroxylase by 45%, but not nitrosodimethylamine N-demethylase, and inhibited
+; 7-ethoxyresorufin O-deethylase in microsomes from
+;3-methylcholanthrene-treated  embryos by 15 and 100% at coumarin
+;concentrations of 250 and 500 microM,  respectively.
+;[1012..1020]:substance:"Coumarin"
+;[1022..1027]:quantitative-value:"5-500"
+;[1028..1034]:quantitative-units:"microM"
+;[1072..1092]:cyp450:"aniline  hydroxylase"
+;[1096..1099]:quantitative-value:"45%"
+;[1109..1143]:cyp450:"nitrosodimethylamine N-demethylase"
+;[1160..1190]:cyp450:"7-ethoxyresorufin O-deethylase"
+;[1210..1230]:substance:"3-methylcholanthrene"
+;[1251..1253]...[1261..1262]:quantitative-value:"15"..."%"
+;[1258..1262]:quantitative-value:"100%"
+;[1266..1274]:substance:"coumarin"
+;[1293..1296]:quantitative-value:"250"
+;[1301..1304]:quantitative-value:"500"
+;[1305..1311]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1012..1020] Coumarin))
+      (PRN (-LRB-:[1021..1022] -LRB-)
+        (NP
+          (QP (CD:[1022..1023] 5) (HYPH:[1023..1024] -) (CD:[1024..1027] 500))
+          (NN:[1028..1034] microM))
+        (-RRB-:[1034..1035] -RRB-))
+      (VP (VBN:[1036..1041] added)
+        (NP (-NONE-:[1041..1041] *))
+        (PP-CLR (TO:[1042..1044] to)
+          (NP (NN:[1045..1050] liver) (NNS:[1051..1061] microsomes)))))
+    (VP
+      (VP
+        (VP=3 (VBD:[1062..1071] inhibited)
+          (NP=4 (NN:[1072..1079] aniline) (NN:[1081..1092] hydroxylase))
+          (PP=5 (IN:[1093..1095] by)
+            (NP-EXT (CD:[1096..1098] 45) (NN:[1098..1099] %))))
+        (,:[1099..1100] ,) (CC:[1101..1104] but)
+        (VP=3 (RB:[1105..1108] not)
+          (NP=4 (NN:[1109..1129] nitrosodimethylamine)
+                (NN:[1130..1143] N-demethylase))
+          (PP=5 (-NONE-:[1143..1143] *NOT*))))
+      (,:[1143..1144] ,) (CC:[1145..1148] and)
+      (VP (VBD:[1149..1158] inhibited)
+        (NP (NN:[1160..1177] 7-ethoxyresorufin) (NN:[1178..1190] O-deethylase))
+        (PP-LOC (IN:[1191..1193] in)
+          (NP
+            (NP (NNS:[1194..1204] microsomes))
+            (PP (IN:[1205..1209] from)
+              (NP
+                (ADJP (NN:[1210..1230] 3-methylcholanthrene)
+                      (HYPH:[1230..1231] -) (VBN:[1231..1238] treated))
+                (NNS:[1240..1247] embryos)))))
+        (PP-EXT (IN:[1248..1250] by)
+          (NP
+            (NP (CD:[1251..1253] 15)
+              (NML-2 (-NONE-:[1253..1253] *P*)))
+            (CC:[1254..1257] and)
+            (NP (CD:[1258..1261] 100)
+              (NML-2 (NN:[1261..1262] %)))))
+        (PP (IN:[1263..1265] at)
+          (NP
+            (NP (NN:[1266..1274] coumarin) (NNS:[1275..1289] concentrations))
+            (PP (IN:[1290..1292] of)
+              (NP
+                (NP (CD:[1293..1296] 250)
+                  (NML-1 (-NONE-:[1296..1296] *P*)))
+                (CC:[1297..1300] and)
+                (NP (CD:[1301..1304] 500)
+                  (NML-1 (NN:[1305..1311] microM)))))))
+        (,:[1311..1312] ,)
+        (ADVP (RB:[1314..1326] respectively))))
+    (.:[1326..1327] .)))
+
+;sentence 10 Span:1328..1461
+;Coumarin 7-hydroxylase activity in chick embryo liver was  comparable with
+;that reported for human liver and greater than in the rat.
+;[1328..1350]:cyp450:"Coumarin 7-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (NN:[1328..1336] Coumarin) (NN:[1337..1350] 7-hydroxylase))
+        (NN:[1351..1359] activity))
+      (PP-LOC (IN:[1360..1362] in)
+        (NP (NN:[1363..1368] chick) (NN:[1369..1375] embryo)
+            (NN:[1376..1381] liver))))
+    (VP (VBD:[1382..1385] was)
+      (ADJP-PRD
+        (ADJP (JJ:[1387..1397] comparable)
+          (PP (IN:[1398..1402] with)
+            (NP
+              (NP (DT:[1403..1407] that))
+              (VP (VBN:[1408..1416] reported)
+                (NP (-NONE-:[1416..1416] *))
+                (PP (IN:[1417..1420] for)
+                  (NP (JJ:[1421..1426] human) (NN:[1427..1432] liver)))))))
+        (CC:[1433..1436] and)
+        (ADJP
+          (ADJP (JJR:[1437..1444] greater))
+          (PP (IN:[1445..1449] than)
+            (PP-LOC (IN:[1450..1452] in)
+              (NP (DT:[1453..1456] the) (NN:[1457..1460] rat)))))))
+    (.:[1460..1461] .)))
+
+;sentence 11 Span:1462..1610
+;The  data indicate that coumarin can both increase and decrease cytochrome
+;P-450  activities in chick embryo liver and can induce haem biosynthesis.
+;[1486..1494]:substance:"coumarin"
+;[1526..1542]:cyp450:"cytochrome P-450"
+;[1592..1596]:substance:"haem"
+(SENT
+  (S
+    (NP-SBJ (DT:[1462..1465] The) (NNS:[1467..1471] data))
+    (VP (VBP:[1472..1480] indicate)
+      (SBAR (IN:[1481..1485] that)
+        (S
+          (NP-SBJ (NN:[1486..1494] coumarin))
+          (VP
+            (VP (MD:[1495..1498] can)
+              (VP (CC:[1499..1503] both) (VB:[1504..1512] increase)
+                  (CC:[1513..1516] and) (VB:[1517..1525] decrease)
+                (NP
+                  (NP
+                    (NML (NN:[1526..1536] cytochrome) (NN:[1537..1542] P-450))
+                    (NNS:[1544..1554] activities))
+                  (PP-LOC (IN:[1555..1557] in)
+                    (NP (NN:[1558..1563] chick) (NN:[1564..1570] embryo)
+                        (NN:[1571..1576] liver))))))
+            (CC:[1577..1580] and)
+            (VP (MD:[1581..1584] can)
+              (VP (VB:[1585..1591] induce)
+                (NP (NN:[1592..1596] haem) (NN:[1597..1609] biosynthesis))))))))
+    (.:[1609..1610] .)))
+
+;sentence 12 Span:1611..1812
+;Because the  chick embryo liver hydroxylates coumarin at position 7 in a
+;manner similar to  humans, it may be a more suitable model than the rat for
+;studying some of the  metabolic effects of coumarin.
+;[1656..1664]:substance:"coumarin"
+;[1803..1811]:substance:"coumarin"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1611..1618] Because)
+      (S
+        (NP-SBJ (DT:[1619..1622] the) (NN:[1624..1629] chick)
+                (NN:[1630..1636] embryo) (NN:[1637..1642] liver))
+        (VP (VBZ:[1643..1655] hydroxylates)
+          (NP (NN:[1656..1664] coumarin))
+          (PP-LOC (IN:[1665..1667] at)
+            (NP (NN:[1668..1676] position) (CD:[1677..1678] 7)))
+          (PP-MNR (IN:[1679..1681] in)
+            (NP
+              (NP (DT:[1682..1683] a) (NN:[1684..1690] manner))
+              (ADJP (JJ:[1691..1698] similar)
+                (PP (TO:[1699..1701] to)
+                  (NP (NNS:[1703..1709] humans)))))))))
+    (,:[1709..1710] ,)
+    (NP-SBJ (PRP:[1711..1713] it))
+    (VP (MD:[1714..1717] may)
+      (VP (VB:[1718..1720] be)
+        (NP-PRD
+          (NP (DT:[1721..1722] a) (RBR:[1723..1727] more)
+              (JJ:[1728..1736] suitable) (NN:[1737..1742] model))
+          (PP (IN:[1743..1747] than)
+            (NP (DT:[1748..1751] the) (NN:[1752..1755] rat)))
+          (PP (IN:[1756..1759] for)
+            (S-NOM
+              (NP-SBJ (-NONE-:[1759..1759] *))
+              (VP (VBG:[1760..1768] studying)
+                (NP
+                  (NP (DT:[1769..1773] some))
+                  (PP (IN:[1774..1776] of)
+                    (NP
+                      (NP (DT:[1777..1780] the) (JJ:[1782..1791] metabolic)
+                          (NNS:[1792..1799] effects))
+                      (PP (IN:[1800..1802] of)
+                        (NP (NN:[1803..1811] coumarin))))))))))))
+    (.:[1811..1812] .)))
+
+;section 13 Span:1816..1860
+;PMID: 2032655 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1816..1820] PMID) (::[1820..1821] :) (CD:[1822..1829] 2032655)
+        (NN:[1830..1831] -LSB-) (NNP:[1831..1837] PubMed) (::[1838..1839] -)
+        (NN:[1840..1847] indexed) (IN:[1848..1851] for)
+        (NNP:[1852..1860] MEDLINE-RSB-)))

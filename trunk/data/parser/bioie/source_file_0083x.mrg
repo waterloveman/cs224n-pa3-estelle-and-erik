@@ -1,0 +1,302 @@
+;PMID: 1902567
+;source_file_2862.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..51] = [t:0..51]
+;1)sentence:[e:57..124] = [t:57..124]
+;2)section:[e:128..180] = [t:128..180]
+;3)section:[e:184..255] = [t:184..255]
+;4)sentence:[e:259..426] = [t:259..426]
+;5)sentence:[e:427..562] = [t:427..562]
+;6)sentence:[e:563..702] = [t:563..702]
+;7)sentence:[e:703..764] = [t:703..764]
+;8)sentence:[e:765..932] = [t:765..932]
+;9)sentence:[e:933..1096] = [t:933..1096]
+;10)sentence:[e:1097..1324] = [t:1097..1324]
+;11)section:[e:1328..1372] = [t:1328..1372]
+
+;section 0 Span:0..51
+;Proc Natl Acad Sci U S A.  1991 May 1;88(9):3554-8.
+(SEC
+  (FRAG (NNP:[0..4] Proc) (NNP:[5..9] Natl) (NNP:[10..14] Acad)
+        (NNP:[15..18] Sci) (NNP:[19..20] U) (NNP:[21..22] S) (NNP:[23..24] A)
+        (IN:[24..25] .) (CD:[27..31] 1991) (NNP:[32..35] May) (CD:[36..40] 1;88)
+        (-LRB-:[40..41] -LRB-) (CD:[41..42] 9) (-RRB-:[42..43] -RRB-)
+        (::[43..44] :) (CD:[44..48] 3554) (::[48..49] -) (CD:[49..51] 8.)))
+
+;sentence 1 Span:57..124
+;Neurotrophic protein S100 beta stimulates glial cell proliferation.
+;[78..87]:gene-protein:"S100 beta"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[57..69] Neurotrophic) (NN:[70..77] protein))
+       (NN:[78..82] S100) (SYM:[83..87] beta))
+    (VP (VBZ:[88..98] stimulates)
+      (NP
+        (NML (JJ:[99..104] glial) (NN:[105..109] cell))
+        (NN:[110..123] proliferation)))
+    (.:[123..124] .)))
+
+;section 2 Span:128..180
+;Selinfreund RH, Barger SW, Pledger WJ, Van Eldik LJ.
+(SEC
+  (FRAG (NNP:[128..139] Selinfreund) (NNP:[140..142] RH) (,:[142..143] ,)
+        (NNP:[144..150] Barger) (NNP:[151..153] SW) (,:[153..154] ,)
+        (NNP:[155..162] Pledger) (NNP:[163..165] WJ) (,:[165..166] ,)
+        (NNP:[167..170] Van) (NNP:[171..176] Eldik) (NNP:[177..180] LJ.)))
+
+;section 3 Span:184..255
+;Department of Pharmacology, Vanderbilt University, Nashville, TN 37232.
+(SEC
+  (FRAG (NNP:[184..194] Department) (IN:[195..197] of)
+        (NNP:[198..210] Pharmacology) (,:[210..211] ,)
+        (NNP:[212..222] Vanderbilt) (NNP:[223..233] University) (,:[233..234] ,)
+        (NNP:[235..244] Nashville) (,:[244..245] ,) (NN:[246..248] TN)
+        (CD:[249..254] 37232) (.:[254..255] .)))
+
+;sentence 4 Span:259..426
+;Nervous system development involves a coordinated series of events, including
+; regulation of cell proliferation and differentiation by specific
+;extracellular  factors.
+(SENT
+  (S
+    (NP-SBJ
+      (NML (JJ:[259..266] Nervous) (NN:[267..273] system))
+      (NN:[274..285] development))
+    (VP (VBZ:[286..294] involves)
+      (NP
+        (NP (DT:[295..296] a) (VBN:[297..308] coordinated)
+            (NN:[309..315] series))
+        (PP (IN:[316..318] of)
+          (NP
+            (NP (NNS:[319..325] events))
+            (,:[325..326] ,)
+            (PP (VBG:[327..336] including)
+              (NP
+                (NP (NN:[338..348] regulation))
+                (PP (IN:[349..351] of)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[352..356] cell))
+                      (NN:[357..370] proliferation))
+                    (CC:[371..374] and)
+                    (NP
+                      (NML-1 (-NONE-:[374..374] *P*))
+                      (NN:[375..390] differentiation))))
+                (PP (IN:[391..393] by)
+                  (NP (JJ:[394..402] specific) (JJ:[403..416] extracellular)
+                      (NNS:[418..425] factors)))))))))
+    (.:[425..426] .)))
+
+;sentence 5 Span:427..562
+;S100 beta is a neurotrophic protein that has been implicated in  regulation
+;of cellular proliferation, but direct evidence was lacking.
+;[427..436]:gene-protein:"S100 beta"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[427..431] S100) (SYM:[432..436] beta))
+      (VP (VBZ:[437..439] is)
+        (NP-PRD
+          (NP (DT:[440..441] a) (JJ:[442..454] neurotrophic)
+              (NN:[455..462] protein))
+          (SBAR
+            (WHNP-1 (WDT:[463..467] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[467..467] *T*))
+              (VP (VBZ:[468..471] has)
+                (VP (VBN:[472..476] been)
+                  (VP (VBN:[477..487] implicated)
+                    (NP-1 (-NONE-:[487..487] *))
+                    (PP (IN:[488..490] in)
+                      (NP
+                        (NP (NN:[492..502] regulation))
+                        (PP (IN:[503..505] of)
+                          (NP (JJ:[506..514] cellular)
+                              (NN:[515..528] proliferation)))))))))))))
+    (,:[528..529] ,) (CC:[530..533] but)
+    (S
+      (NP-SBJ (JJ:[534..540] direct) (NN:[541..549] evidence))
+      (VP (VBD:[550..553] was)
+        (ADJP-PRD (VBG:[554..561] lacking))))
+    (.:[561..562] .)))
+
+;sentence 6 Span:563..702
+;In this  report, nanomolar concentrations of S100 beta are shown to stimulate
+; proliferation of rat C6 glioma cells and primary astrocytes.
+;[608..617]:gene-protein:"S100 beta"
+;[666..678]:malignancy-type:"glioma cells"
+(SENT
+  (S
+    (PP (IN:[563..565] In)
+      (NP (DT:[566..570] this) (NN:[572..578] report)))
+    (,:[578..579] ,)
+    (NP-SBJ-1
+      (NP (JJ:[580..589] nanomolar) (NNS:[590..604] concentrations))
+      (PP (IN:[605..607] of)
+        (NP (NN:[608..612] S100) (SYM:[613..617] beta))))
+    (VP (VBP:[618..621] are)
+      (VP (VBN:[622..627] shown)
+        (S
+          (NP-SBJ-1 (-NONE-:[627..627] *))
+          (VP (TO:[628..630] to)
+            (VP (VB:[631..640] stimulate)
+              (NP
+                (NP (NN:[642..655] proliferation))
+                (PP (IN:[656..658] of)
+                  (NP
+                    (NP
+                      (NML-2 (NN:[659..662] rat))
+                      (NN:[663..665] C6)
+                       (NN:[666..672] glioma) (NNS:[673..678] cells))
+                    (CC:[679..682] and)
+                    (NP
+                      (NML-2 (-NONE-:[682..682] *P*))
+                      (JJ:[683..690] primary) (NNS:[691..701] astrocytes))))))))))
+    (.:[701..702] .)))
+
+;sentence 7 Span:703..764
+;An S100 mutant with  a single amino acid change was inactive.
+;[706..710]:gene-protein:"S100"
+;[726..750]:variation-type:"single amino acid change"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[703..705] An) (NN:[706..710] S100) (NN:[711..717] mutant))
+      (PP (IN:[718..722] with)
+        (NP (DT:[724..725] a)
+          (NP (JJ:[726..732] single)
+            (NML (JJ:[733..738] amino) (NN:[739..743] acid))
+            (NN:[744..750] change)))))
+    (VP (VBD:[751..754] was)
+      (ADJP-PRD (JJ:[755..763] inactive)))
+    (.:[763..764] .)))
+
+;sentence 8 Span:765..932
+;S100 beta also stimulated increases in  the steady-state levels of c-myc and
+;c-fos protooncogene mRNAs and complemented  the effects of platelet-derived
+;growth factor.
+;[765..774]:gene-protein:"S100 beta"
+;[832..837]:gene-rna:"c-myc"
+;[842..847]:gene-rna:"c-fos"
+;[901..931]:gene-protein:"platelet-derived growth factor"
+(SENT
+  (S
+    (NP-SBJ (NN:[765..769] S100) (SYM:[770..774] beta))
+    (ADVP (RB:[775..779] also))
+    (VP
+      (VP (VBD:[780..790] stimulated)
+        (NP
+          (NP (NNS:[791..800] increases))
+          (PP (IN:[801..803] in)
+            (NP
+              (NP (DT:[805..808] the)
+                (NML (JJ:[809..815] steady) (HYPH:[815..816] -)
+                     (NN:[816..821] state))
+                (NNS:[822..828] levels))
+              (PP (IN:[829..831] of)
+                (NP
+                  (NP (NN:[832..837] c-myc)
+                    (NML-1 (-NONE-:[837..837] *P*)))
+                  (CC:[838..841] and)
+                  (NP (NN:[842..847] c-fos)
+                    (NML-1 (NN:[848..861] protooncogene) (NNS:[862..867] mRNAs)))))))))
+      (CC:[868..871] and)
+      (VP (VBD:[872..884] complemented)
+        (NP
+          (NP (DT:[886..889] the) (NNS:[890..897] effects))
+          (PP (IN:[898..900] of)
+            (NP
+              (ADJP (NN:[901..909] platelet) (HYPH:[909..910] -)
+                    (VBN:[910..917] derived))
+              (NN:[918..924] growth) (NN:[925..931] factor))))))
+    (.:[931..932] .)))
+
+;sentence 9 Span:933..1096
+;Two neuroblastoma cell lines did  not proliferate in response to S100 beta,
+;suggesting that the mitogenic activity  of S100 beta is selective for
+;astroglial cells.
+;[937..950]:malignancy-type:"neuroblastoma"
+;[998..1007]:gene-protein:"S100 beta"
+;[1052..1061]:gene-protein:"S100 beta"
+(SENT
+  (S
+    (NP-SBJ (CD:[933..936] Two) (NN:[937..950] neuroblastoma)
+            (NN:[951..955] cell) (NNS:[956..961] lines))
+    (VP (VBD:[962..965] did) (RB:[967..970] not)
+      (VP (VB:[971..982] proliferate)
+        (PP (IN:[983..985] in)
+          (NP
+            (NP (NN:[986..994] response))
+            (PP (TO:[995..997] to)
+              (NP (NN:[998..1002] S100) (SYM:[1003..1007] beta)))))
+        (,:[1007..1008] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1008..1008] *))
+          (VP (VBG:[1009..1019] suggesting)
+            (SBAR (IN:[1020..1024] that)
+              (S
+                (NP-SBJ
+                  (NP (DT:[1025..1028] the) (JJ:[1029..1038] mitogenic)
+                      (NN:[1039..1047] activity))
+                  (PP (IN:[1049..1051] of)
+                    (NP (NN:[1052..1056] S100) (SYM:[1057..1061] beta))))
+                (VP (VBZ:[1062..1064] is)
+                  (ADJP-PRD (JJ:[1065..1074] selective))
+                  (PP (IN:[1075..1078] for)
+                    (NP (JJ:[1079..1089] astroglial) (NNS:[1090..1095] cells))))))))))
+    (.:[1095..1096] .)))
+
+;sentence 10 Span:1097..1324
+;These results suggest that S100  beta may be involved in the coordinate
+;development and maintenance of the  central nervous system by synchronously
+;stimulating the differentiation of  neurons and the proliferation of
+;astroglia.
+;[1124..1134]:gene-protein:"S100  beta"
+(SENT
+  (S
+    (NP-SBJ (DT:[1097..1102] These) (NNS:[1103..1110] results))
+    (VP (VBP:[1111..1118] suggest)
+      (SBAR (IN:[1119..1123] that)
+        (S
+          (NP-SBJ-1 (NN:[1124..1128] S100) (SYM:[1130..1134] beta))
+          (VP (MD:[1135..1138] may)
+            (VP (VB:[1139..1141] be)
+              (VP (VBN:[1142..1150] involved)
+                (NP-1 (-NONE-:[1150..1150] *))
+                (PP-CLR (IN:[1151..1153] in)
+                  (NP
+                    (NP (DT:[1154..1157] the) (JJ:[1158..1168] coordinate)
+                        (NN:[1169..1180] development) (CC:[1181..1184] and)
+                        (NN:[1185..1196] maintenance))
+                    (PP (IN:[1197..1199] of)
+                      (NP (DT:[1200..1203] the) (JJ:[1205..1212] central)
+                          (JJ:[1213..1220] nervous) (NN:[1221..1227] system)))))
+                (PP (IN:[1228..1230] by)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[1230..1230] *))
+                    (ADVP (RB:[1231..1244] synchronously))
+                    (VP (VBG:[1245..1256] stimulating)
+                      (NP
+                        (NP
+                          (NP (DT:[1257..1260] the)
+                              (NN:[1261..1276] differentiation))
+                          (PP (IN:[1277..1279] of)
+                            (NP (NNS:[1281..1288] neurons))))
+                        (CC:[1289..1292] and)
+                        (NP
+                          (NP (DT:[1293..1296] the)
+                              (NN:[1297..1310] proliferation))
+                          (PP (IN:[1311..1313] of)
+                            (NP (NN:[1314..1323] astroglia))))))))))))))
+    (.:[1323..1324] .)))
+
+;section 11 Span:1328..1372
+;PMID: 1902567 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1328..1332] PMID) (::[1332..1333] :) (CD:[1334..1341] 1902567)
+        (NN:[1342..1343] -LSB-) (NNP:[1343..1349] PubMed) (::[1350..1351] -)
+        (NN:[1352..1359] indexed) (IN:[1360..1363] for)
+        (NNP:[1364..1372] MEDLINE-RSB-)))

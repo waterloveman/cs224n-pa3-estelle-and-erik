@@ -1,0 +1,437 @@
+;PMID: 10711629
+;source_file_1869.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..164] = [t:46..164]
+;2)section:[e:168..219] = [t:168..219]
+;3)section:[e:223..283] = [t:223..283]
+;4)sentence:[e:287..423] = [t:287..423]
+;5)sentence:[e:424..680] = [t:424..680]
+;6)sentence:[e:682..755] = [t:682..755]
+;7)sentence:[e:757..908] = [t:757..908]
+;8)sentence:[e:910..1091] = [t:910..1091]
+;9)sentence:[e:1092..1291] = [t:1092..1291]
+;10)sentence:[e:1292..1475] = [t:1292..1475]
+;11)sentence:[e:1476..1705] = [t:1476..1705]
+;12)sentence:[e:1706..1845] = [t:1706..1845]
+;13)section:[e:1849..1894] = [t:1849..1894]
+
+;section 0 Span:0..40
+;J Biochem Mol Toxicol. 2000;14(3):140-7.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Biochem) (NNP:[10..13] Mol)
+        (NNP:[14..21] Toxicol) (.:[21..22] .) (CD:[23..27] 2000) (::[27..28] ;)
+        (CD:[28..30] 14) (-LRB-:[30..31] -LRB-) (CD:[31..32] 3)
+        (-RRB-:[32..33] -RRB-) (::[33..34] :) (CD:[34..37] 140) (::[37..38] -)
+        (CD:[38..40] 7.)))
+
+;sentence 1 Span:46..164
+;Metabolism of thalidomide in human microsomes, cloned human cytochrome P-450 
+;isozymes, and Hansen's disease patients.
+;[60..71]:substance:"thalidomide"
+;[106..132]:cyp450:"cytochrome P-450  isozymes"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..56] Metabolism))
+    (PP (IN:[57..59] of)
+      (NP (NN:[60..71] thalidomide)))
+    (PP-LOC (IN:[72..74] in)
+      (NP
+        (NP (JJ:[75..80] human) (NNS:[81..91] microsomes))
+        (,:[91..92] ,)
+        (NP (VBN:[93..99] cloned) (JJ:[100..105] human)
+          
+          (NML (NN:[106..116] cytochrome) (NN:[117..122] P-450))
+          (NNS:[124..132] isozymes))
+        (,:[132..133] ,) (CC:[134..137] and)
+        (NP
+          (NML
+            (NP (NNP:[138..144] Hansen) (POS:[144..146] 's))
+            (NN:[147..154] disease))
+          (NNS:[155..163] patients))))
+    (.:[163..164] .)))
+
+;section 2 Span:168..219
+;Teo SK, Sabourin PJ, O'Brien K, Kook KA, Thomas SD.
+(SEC
+  (FRAG (NNP:[168..171] Teo) (NNP:[172..174] SK) (,:[174..175] ,)
+        (NNP:[176..184] Sabourin) (NNP:[185..187] PJ) (,:[187..188] ,)
+        (NNP:[189..196] O'Brien) (NNP:[197..199] K,) (NNP:[200..204] Kook)
+        (NNP:[205..207] KA) (,:[207..208] ,) (NNP:[209..215] Thomas)
+        (NNP:[216..218] SD) (.:[218..219] .)))
+
+;section 3 Span:223..283
+;Celgene Corporation, Warren, NJ 07059, USA. steo@celgene.com
+(SEC
+  (FRAG (NNP:[223..230] Celgene) (NNP:[231..242] Corporation) (,:[242..243] ,)
+        (NNP:[244..250] Warren) (,:[250..251] ,) (NNP:[252..254] NJ)
+        (CD:[255..260] 07059) (,:[260..261] ,) (NNP:[262..265] USA)
+        (.:[265..266] .) ('':[267..283] steo@celgene.com)))
+
+;sentence 4 Span:287..423
+;Previous in vitro studies in rat microsomal preparations suggested that 
+;thalidomide is metabolized by the cytochrome P450 system (CYP).
+;[360..371]:substance:"thalidomide"
+;[394..409]:cyp450:"cytochrome P450"
+;[418..421]:cyp450:"CYP"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[287..295] Previous)
+        (ADJP (FW:[296..298] in) (FW:[299..304] vitro))
+        (NNS:[305..312] studies))
+      (PP-LOC (IN:[313..315] in)
+        (NP (NN:[316..319] rat) (JJ:[320..330] microsomal)
+            (NNS:[331..343] preparations))))
+    (VP (VBD:[344..353] suggested)
+      (SBAR (IN:[354..358] that)
+        (S
+          (NP-SBJ-1 (NN:[360..371] thalidomide))
+          (VP (VBZ:[372..374] is)
+            (VP (VBN:[375..386] metabolized)
+              (NP-1 (-NONE-:[386..386] *))
+              (PP (IN:[387..389] by)
+                (NP-LGS
+                  (NP (DT:[390..393] the)
+                    (NML (NN:[394..404] cytochrome) (NN:[405..409] P450))
+                    (NN:[410..416] system))
+                  (NP (-LRB-:[417..418] -LRB-) (NN:[418..421] CYP)
+                      (-RRB-:[421..422] -RRB-)))))))))
+    (.:[422..423] .)))
+
+;sentence 5 Span:424..680
+;In this study,  we examined the extent of thalidomide metabolism by
+;preparations of pooled human  microsomes, microsomes containing cloned human
+;CYP isozymes (CYPIA2, CYP2A6,  CYP2B6, CYP2C9, CYP2C19, CYP2D6, CYP2E1,
+;CYP3A4), and Hansen's disease patients.
+;[466..477]:substance:"thalidomide"
+;[569..581]:cyp450:"CYP isozymes"
+;[583..589]:cyp450:"CYPIA2"
+;[591..597]:cyp450:"CYP2A6"
+;[600..606]:cyp450:"CYP2B6"
+;[608..614]:cyp450:"CYP2C9"
+;[616..623]:cyp450:"CYP2C19"
+;[625..631]:cyp450:"CYP2D6"
+;[633..639]:cyp450:"CYP2E1"
+;[641..647]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (PP-LOC (IN:[424..426] In)
+      (NP (DT:[427..431] this) (NN:[432..437] study)))
+    (,:[437..438] ,)
+    (NP-SBJ (PRP:[440..442] we))
+    (VP (VBD:[443..451] examined)
+      (NP
+        (NP (DT:[452..455] the) (NN:[456..462] extent))
+        (PP (IN:[463..465] of)
+          (NP
+            (NP (NN:[466..477] thalidomide) (NN:[478..488] metabolism))
+            (PP (IN:[489..491] by)
+              (NP
+                (NP (NNS:[492..504] preparations))
+                (PP (IN:[505..507] of)
+                  (NP
+                    (NP (VBN:[508..514] pooled) (JJ:[515..520] human)
+                        (NNS:[522..532] microsomes))
+                    (,:[532..533] ,)
+                    (NP
+                      (NP (NNS:[534..544] microsomes))
+                      (VP (VBG:[545..555] containing)
+                        (NP
+                          (NP (VBN:[556..562] cloned) (JJ:[563..568] human)
+                             (NN:[569..572] CYP) (NNS:[573..581] isozymes))
+                          (PRN (-LRB-:[582..583] -LRB-)
+                            (NP (NN:[583..589] CYPIA2) (,:[589..590] ,)
+                                (NN:[591..597] CYP2A6) (,:[597..598] ,)
+                                (NN:[600..606] CYP2B6) (,:[606..607] ,)
+                                (NN:[608..614] CYP2C9) (,:[614..615] ,)
+                                (NN:[616..623] CYP2C19) (,:[623..624] ,)
+                                (NN:[625..631] CYP2D6) (,:[631..632] ,)
+                                (NN:[633..639] CYP2E1) (,:[639..640] ,)
+                                (NN:[641..647] CYP3A4))
+                            (-RRB-:[647..648] -RRB-)))))
+                    (,:[648..649] ,) (CC:[650..653] and)
+                    (NP
+                      (NML
+                        (NP (NNP:[654..660] Hansen) (POS:[660..662] 's))
+                        (NN:[663..670] disease))
+                      (NNS:[671..679] patients))))))))))
+    (.:[679..680] .)))
+
+;sentence 6 Span:682..755
+;Results indicated that thalidomide was a poor substrate for CYP isozymes.
+;[705..716]:substance:"thalidomide"
+;[728..737]:substance:"substrate"
+;[742..754]:cyp450:"CYP isozymes"
+(SENT
+  (S
+    (NP-SBJ (NNS:[682..689] Results))
+    (VP (VBD:[690..699] indicated)
+      (SBAR (IN:[700..704] that)
+        (S
+          (NP-SBJ (NN:[705..716] thalidomide))
+          (VP (VBD:[717..720] was)
+            (NP-PRD (DT:[721..722] a) (JJ:[723..727] poor)
+                    (NN:[728..737] substrate))
+            (PP (IN:[738..741] for)
+              (NP (NN:[742..745] CYP) (NNS:[746..754] isozymes)))))))
+    (.:[754..755] .)))
+
+;sentence 7 Span:757..908
+;Alteration of incubation buffer, pH, incubation time, and microsome and 
+;thalidomide concentrations did not increase the production of any
+;metabolites.
+;[790..792]:quantitative-name:"pH"
+;[830..841]:substance:"thalidomide"
+;[896..907]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[757..767] Alteration))
+      (PP (IN:[768..770] of)
+        (NP
+          (NP (NN:[771..781] incubation) (NN:[782..788] buffer))
+          (,:[788..789] ,)
+          (NP (NN:[790..792] pH))
+          (,:[792..793] ,)
+          (NP (NN:[794..804] incubation) (NN:[805..809] time))
+          (,:[809..810] ,) (CC:[811..814] and)
+          (NP
+            (NP (NN:[815..824] microsome)
+              (NML-1 (-NONE-:[824..824] *P*)))
+            (CC:[825..828] and)
+            (NP (NN:[830..841] thalidomide)
+              (NML-1 (NNS:[842..856] concentrations)))))))
+    (VP (VBD:[857..860] did) (RB:[861..864] not)
+      (VP (VB:[865..873] increase)
+        (NP
+          (NP (DT:[874..877] the) (NN:[878..888] production))
+          (PP (IN:[889..891] of)
+            (NP (DT:[892..895] any) (NNS:[896..907] metabolites))))))
+    (.:[907..908] .)))
+
+;sentence 8 Span:910..1091
+;Thalidomide also did not inhibit metabolism of CYP-specific substrates and 
+;therefore any interactions with other drugs that are metabolized by the same 
+;enzyme system are unlikely.
+;[910..921]:substance:"Thalidomide"
+;[957..960]:cyp450:"CYP"
+;[970..980]:substance:"substrates"
+;[1024..1029]:substance:"drugs"
+;[1064..1070]:substance:"enzyme"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[910..921] Thalidomide))
+      (ADVP (RB:[922..926] also))
+      (VP (VBD:[927..930] did) (RB:[931..934] not)
+        (VP (VB:[935..942] inhibit)
+          (NP
+            (NP (NN:[943..953] metabolism))
+            (PP (IN:[954..956] of)
+              (NP
+                (ADJP (NN:[957..960] CYP) (HYPH:[960..961] -)
+                      (JJ:[961..969] specific))
+                (NNS:[970..980] substrates)))))))
+    (CC:[981..984] and)
+    (S
+      (ADVP (RB:[986..995] therefore))
+      (NP-SBJ
+        (NP (DT:[996..999] any) (NNS:[1000..1012] interactions))
+        (PP (IN:[1013..1017] with)
+          (NP
+            (NP (JJ:[1018..1023] other) (NNS:[1024..1029] drugs))
+            (SBAR
+              (WHNP-1 (WDT:[1030..1034] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[1034..1034] *T*))
+                (VP (VBP:[1035..1038] are)
+                  (VP (VBN:[1039..1050] metabolized)
+                    (NP-1 (-NONE-:[1050..1050] *))
+                    (PP (IN:[1051..1053] by)
+                      (NP-LGS (DT:[1054..1057] the) (JJ:[1058..1062] same)
+                              (NN:[1064..1070] enzyme) (NN:[1071..1077] system))))))))))
+      (VP (VBP:[1078..1081] are)
+        (ADJP-PRD (JJ:[1082..1090] unlikely))))
+    (.:[1090..1091] .)))
+
+;sentence 9 Span:1092..1291
+;Hansen's patients were given a single oral dose of  thalidomide (400 mg), and
+;their blood and urine were collected at time points up  to 72 hours,
+;processed, and analyzed by tandem mass spectrometry.
+;[1144..1155]:substance:"thalidomide"
+;[1157..1160]:quantitative-value:"400"
+;[1161..1163]:quantitative-units:"mg"
+;[1186..1191]:substance:"urine"
+;[1229..1231]:quantitative-value:"72"
+;[1232..1237]:quantitative-units:"hours"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (NNP:[1092..1098] Hansen) (POS:[1098..1100] 's))
+        (NNS:[1101..1109] patients))
+      (VP (VBD:[1110..1114] were)
+        (VP (VBN:[1115..1120] given)
+          (NP-1 (-NONE-:[1120..1120] *))
+          (NP
+            (NP (DT:[1121..1122] a) (JJ:[1123..1129] single)
+                (JJ:[1130..1134] oral) (NN:[1135..1139] dose))
+            (PP (IN:[1140..1142] of)
+              (NP (NN:[1144..1155] thalidomide)))
+            (PRN (-LRB-:[1156..1157] -LRB-)
+              (NP (CD:[1157..1160] 400) (NN:[1161..1163] mg))
+              (-RRB-:[1163..1164] -RRB-))))))
+    (,:[1164..1165] ,) (CC:[1166..1169] and)
+    (S
+      (NP-SBJ-2 (PRP$:[1170..1175] their) (NN:[1176..1181] blood)
+                (CC:[1182..1185] and) (NN:[1186..1191] urine))
+      (VP (VBD:[1192..1196] were)
+        (VP
+          (VP (VBN:[1197..1206] collected)
+            (NP-2 (-NONE-:[1206..1206] *))
+            (PP-TMP (IN:[1207..1209] at)
+              (NP
+                (NP (NN:[1210..1214] time) (NNS:[1215..1221] points))
+                (PP (IN:[1222..1224] up) (TO:[1226..1228] to)
+                  (NP (CD:[1229..1231] 72) (NNS:[1232..1237] hours))))))
+          (,:[1237..1238] ,)
+          (VP (VBN:[1239..1248] processed)
+            (NP-2 (-NONE-:[1248..1248] *)))
+          (,:[1248..1249] ,) (CC:[1250..1253] and)
+          (VP (VBN:[1254..1262] analyzed)
+            (NP-2 (-NONE-:[1262..1262] *))
+            (PP-MNR (IN:[1263..1265] by)
+              (NP (NN:[1266..1272] tandem) (NN:[1273..1277] mass)
+                  (NN:[1278..1290] spectrometry)))))))
+    (.:[1290..1291] .)))
+
+;sentence 10 Span:1292..1475
+;Although  thalidomide was present in the plasma and urine, no metabolites
+;were found in  the plasma and very low amounts of the 5-OH thalidomide
+;metabolite were present  in the urine.
+;[1302..1313]:substance:"thalidomide"
+;[1344..1349]:substance:"urine"
+;[1354..1365]:substance:"metabolites"
+;[1420..1447]:substance:"5-OH thalidomide metabolite"
+;[1469..1474]:substance:"urine"
+(SENT
+  (S
+    (S
+      (SBAR-ADV (IN:[1292..1300] Although)
+        (S
+          (NP-SBJ (NN:[1302..1313] thalidomide))
+          (VP (VBD:[1314..1317] was)
+            (ADJP-PRD (JJ:[1318..1325] present))
+            (PP-LOC (IN:[1326..1328] in)
+              (NP (DT:[1329..1332] the) (NN:[1333..1339] plasma)
+                  (CC:[1340..1343] and) (NN:[1344..1349] urine))))))
+      (,:[1349..1350] ,)
+      (NP-SBJ-1 (DT:[1351..1353] no) (NNS:[1354..1365] metabolites))
+      (VP (VBD:[1366..1370] were)
+        (VP (VBN:[1371..1376] found)
+          (NP-1 (-NONE-:[1376..1376] *))
+          (PP-LOC (IN:[1377..1379] in)
+            (NP (DT:[1381..1384] the) (NN:[1385..1391] plasma))))))
+    (CC:[1392..1395] and)
+    (S
+      (NP-SBJ
+        (NP (RB:[1396..1400] very) (JJ:[1401..1404] low)
+            (NNS:[1405..1412] amounts))
+        (PP (IN:[1413..1415] of)
+          (NP (DT:[1416..1419] the)
+             (NN:[1420..1424] 5-OH) (NN:[1425..1436] thalidomide)
+             (NN:[1437..1447] metabolite))))
+      (VP (VBD:[1448..1452] were)
+        (ADJP-PRD (JJ:[1453..1460] present))
+        (PP-LOC (IN:[1462..1464] in)
+          (NP (DT:[1465..1468] the) (NN:[1469..1474] urine)))))
+    (.:[1474..1475] .)))
+
+;sentence 11 Span:1476..1705
+;These results suggest that thalidomide does not undergo  significant
+;metabolism by human CYP and that clinically important interactions  between
+;thalidomide and drugs that are also metabolized by this enzyme system  are
+;unlikely.
+;[1503..1514]:substance:"thalidomide"
+;[1565..1568]:cyp450:"CYP"
+;[1621..1632]:substance:"thalidomide"
+;[1637..1642]:substance:"drugs"
+;[1677..1683]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[1476..1481] These) (NNS:[1482..1489] results))
+    (VP (VBP:[1490..1497] suggest)
+      (SBAR
+        (SBAR (IN:[1498..1502] that)
+          (S
+            (NP-SBJ (NN:[1503..1514] thalidomide))
+            (VP (VBZ:[1515..1519] does) (RB:[1520..1523] not)
+              (VP (VB:[1524..1531] undergo)
+                (NP
+                  (NP (JJ:[1533..1544] significant) (NN:[1545..1555] metabolism))
+                  (PP (IN:[1556..1558] by)
+                    (NP (JJ:[1559..1564] human) (NN:[1565..1568] CYP))))))))
+        (CC:[1569..1572] and)
+        (SBAR (IN:[1573..1577] that)
+          (S
+            (NP-SBJ
+              (NP
+                (ADJP (RB:[1578..1588] clinically) (JJ:[1589..1598] important))
+                (NNS:[1599..1611] interactions))
+              (PP (IN:[1613..1620] between)
+                (NP
+                  (NP (NN:[1621..1632] thalidomide))
+                  (CC:[1633..1636] and)
+                  (NP
+                    (NP (NNS:[1637..1642] drugs))
+                    (SBAR
+                      (WHNP-1 (WDT:[1643..1647] that))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[1647..1647] *T*))
+                        (VP (VBP:[1648..1651] are)
+                          (ADVP (RB:[1652..1656] also))
+                          (VP (VBN:[1657..1668] metabolized)
+                            (NP-1 (-NONE-:[1668..1668] *))
+                            (PP (IN:[1669..1671] by)
+                              (NP-LGS (DT:[1672..1676] this)
+                                      (NN:[1677..1683] enzyme)
+                                      (NN:[1684..1690] system)))))))))))
+            (VP (VBP:[1692..1695] are)
+              (ADJP-PRD (JJ:[1696..1704] unlikely)))))))
+    (.:[1704..1705] .)))
+
+;sentence 12 Span:1706..1845
+;The major route of thalidomide breakdown in humans and animals is  through
+;spontaneous hydrolysis with subsequent elimination in the urine.
+;[1725..1736]:substance:"thalidomide"
+;[1839..1844]:substance:"urine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1706..1709] The) (JJ:[1710..1715] major) (NN:[1716..1721] route))
+      (PP (IN:[1722..1724] of)
+        (NP (NN:[1725..1736] thalidomide) (NN:[1737..1746] breakdown)))
+      (PP-LOC (IN:[1747..1749] in)
+        (NP (NNS:[1750..1756] humans) (CC:[1757..1760] and)
+            (NNS:[1761..1768] animals))))
+    (VP (VBZ:[1769..1771] is)
+      (PP-PRD (IN:[1773..1780] through)
+        (NP
+          (NP (JJ:[1781..1792] spontaneous) (NN:[1793..1803] hydrolysis))
+          (PP (IN:[1804..1808] with)
+            (NP
+              (NP (JJ:[1809..1819] subsequent) (NN:[1820..1831] elimination))
+              (PP-LOC (IN:[1832..1834] in)
+                (NP (DT:[1835..1838] the) (NN:[1839..1844] urine))))))))
+    (.:[1844..1845] .)))
+
+;section 13 Span:1849..1894
+;PMID: 10711629 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1849..1853] PMID) (::[1853..1854] :) (CD:[1855..1863] 10711629)
+        (NN:[1864..1865] -LSB-) (NNP:[1865..1871] PubMed) (::[1872..1873] -)
+        (NN:[1874..1881] indexed) (IN:[1882..1885] for)
+        (NNP:[1886..1893] MEDLINE) (-RRB-:[1893..1894] -RSB-)))

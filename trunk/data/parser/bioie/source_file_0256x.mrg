@@ -1,0 +1,288 @@
+;PMID: 11410369
+;source_file_2840.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..123] = [t:38..123]
+;2)section:[e:127..155] = [t:127..155]
+;3)section:[e:159..305] = [t:159..305]
+;4)sentence:[e:309..428] = [t:309..428]
+;5)sentence:[e:429..581] = [t:429..581]
+;6)sentence:[e:582..666] = [t:582..666]
+;7)sentence:[e:667..793] = [t:667..793]
+;8)sentence:[e:794..911] = [t:794..911]
+;9)sentence:[e:912..979] = [t:912..979]
+;10)sentence:[e:980..1075] = [t:980..1075]
+;11)sentence:[e:1076..1129] = [t:1076..1129]
+;12)sentence:[e:1130..1268] = [t:1130..1268]
+;13)section:[e:1272..1317] = [t:1272..1317]
+
+;section 0 Span:0..32
+;Gene.  2001 Jun 13;271(1):87-92.
+(SEC
+  (FRAG (NNP:[0..4] Gene) (.:[4..5] .) (CD:[7..11] 2001) (NNP:[12..15] Jun)
+        (CD:[16..22] 13;271) (-LRB-:[22..23] -LRB-) (CD:[23..24] 1)
+        (-RRB-:[24..25] -RRB-) (::[25..26] :) (CD:[26..28] 87) (::[28..29] -)
+        (CD:[29..31] 92) (.:[31..32] .)))
+
+;sentence 1 Span:38..123
+;Structure of the human M(2) muscarinic acetylcholine receptor gene and its 
+;promoter.
+;[61..99]:gene-rna:"M(2) muscarinic acetylcholine receptor"
+(SENT
+  (NP-HLN
+    (NP (NN:[38..47] Structure))
+    (PP (IN:[48..50] of)
+      (NP
+        (NP (DT:[51..54] the) (JJ:[55..60] human)
+          (NML (NN:[61..65] M-LRB-2-RRB-) (JJ:[66..76] muscarinic)
+               (NN:[77..90] acetylcholine) (NN:[91..99] receptor))
+          (NN:[100..104] gene))
+        (CC:[105..108] and)
+        (NP (PRP$:[109..112] its) (NN:[114..122] promoter))))
+    (.:[122..123] .)))
+
+;section 2 Span:127..155
+;Zhou C, Fryer AD, Jacoby DB.
+(SEC
+  (FRAG (NNP:[127..131] Zhou) (NNP:[132..133] C) (,:[133..134] ,)
+        (NNP:[135..140] Fryer) (NNP:[141..143] AD) (,:[143..144] ,)
+        (NNP:[145..151] Jacoby) (NNP:[152..155] DB.)))
+
+;section 3 Span:159..305
+;Division of Pulmonary and Critical Care Medicine, School of Medicine, Johns 
+;Hopkins University, 615 North Wolfe Street, Baltimore, MD 21205, USA.
+(SEC
+  (FRAG (NNP:[159..167] Division) (IN:[168..170] of) (NNP:[171..180] Pulmonary)
+        (CC:[181..184] and) (NNP:[185..193] Critical) (NNP:[194..198] Care)
+        (NNP:[199..207] Medicine) (,:[207..208] ,) (NNP:[209..215] School)
+        (IN:[216..218] of) (NNP:[219..227] Medicine) (,:[227..228] ,)
+        (NNP:[229..234] Johns) (NNP:[236..243] Hopkins)
+        (NNP:[244..254] University) (,:[254..255] ,) (CD:[256..259] 615)
+        (NNP:[260..265] North) (NNP:[266..271] Wolfe) (NNP:[272..278] Street)
+        (,:[278..279] ,) (NNP:[280..289] Baltimore) (,:[289..290] ,)
+        (NNP:[291..293] MD) (CD:[294..299] 21205) (,:[299..300] ,)
+        (NNP:[301..304] USA) (.:[304..305] .)))
+
+;sentence 4 Span:309..428
+;The M(2) muscarinic receptor inhibits the release of acetylcholine from 
+;cholinergic fibers in the lungs and elsewhere.
+;[313..337]:gene-protein:"M(2) muscarinic receptor"
+(SENT
+  (S
+    (NP-SBJ (DT:[309..312] The)
+       (NN:[313..317] M-LRB-2-RRB-) (JJ:[318..328] muscarinic)
+       (NN:[329..337] receptor))
+    (VP (VBZ:[338..346] inhibits)
+      (NP
+        (NP (DT:[347..350] the) (NN:[351..358] release))
+        (PP (IN:[359..361] of)
+          (NP (NN:[362..375] acetylcholine)))
+        (PP (IN:[376..380] from)
+          (NP (JJ:[382..393] cholinergic) (NNS:[394..400] fibers))))
+      (UCP-LOC
+        (PP (IN:[401..403] in)
+          (NP (DT:[404..407] the) (NNS:[408..413] lungs)))
+        (CC:[414..417] and)
+        (ADVP (RB:[418..427] elsewhere))))
+    (.:[427..428] .)))
+
+;sentence 5 Span:429..581
+;In airway parasympathetic  neurons, M(2) receptor expression is decreased by
+;viral infections and by  interferon-gamma, increasing actylcholine release.
+;[465..478]:gene-generic:"M(2) receptor"
+;[531..547]:gene-protein:"interferon-gamma"
+(SENT
+  (S
+    (PP-LOC (IN:[429..431] In)
+      (NP (NN:[432..438] airway) (JJ:[439..454] parasympathetic)
+          (NNS:[456..463] neurons)))
+    (,:[463..464] ,)
+    (NP-SBJ-1
+      (NML (NN:[465..469] M-LRB-2-RRB-) (NN:[470..478] receptor))
+      (NN:[479..489] expression))
+    (VP (VBZ:[490..492] is)
+      (VP (VBN:[493..502] decreased)
+        (NP-1 (-NONE-:[502..502] *))
+        (PP
+          (PP (IN:[503..505] by)
+            (NP-LGS (JJ:[506..511] viral) (NNS:[512..522] infections)))
+          (CC:[523..526] and)
+          (PP (IN:[527..529] by)
+            (NP-LGS (NN:[531..541] interferon) (HYPH:[541..542] -)
+                    (SYM:[542..547] gamma))))
+        (,:[547..548] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[548..548] *))
+          (VP (VBG:[549..559] increasing)
+            (NP (NN:[560..572] actylcholine) (NN:[573..580] release))))))
+    (.:[580..581] .)))
+
+;sentence 6 Span:582..666
+;Dexamethasone increases M(2)  receptor expression, decreasing acetylcholine
+;release.
+;[606..620]:gene-generic:"M(2)  receptor"
+(SENT
+  (S
+    (NP-SBJ (NN:[582..595] Dexamethasone))
+    (VP (VBZ:[596..605] increases)
+      (NP
+        (NML (NN:[606..610] M-LRB-2-RRB-) (NN:[612..620] receptor))
+        (NN:[621..631] expression))
+      (,:[631..632] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[632..632] *))
+        (VP (VBG:[633..643] decreasing)
+          (NP (NN:[644..657] acetylcholine) (NN:[658..665] release)))))
+    (.:[665..666] .)))
+
+;sentence 7 Span:667..793
+;We carried out 5' rapid  amplification of cDNA ends beginning with mRNA from
+;human heart and IMR32 human  neuroblastoma cells.
+;[773..786]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[667..669] We))
+    (VP (VBD:[670..677] carried)
+      (PRT (RP:[678..681] out))
+      (NP
+        (NP
+          (NML (CD:[682..683] 5) (SYM:[683..684] '))
+          (JJ:[685..690] rapid) (NN:[692..705] amplification))
+        (PP (IN:[706..708] of)
+          (NP (NN:[709..713] cDNA) (NNS:[714..718] ends))))
+      (S-ADV
+        (NP-SBJ (-NONE-:[718..718] *))
+        (VP (VBG:[719..728] beginning)
+          (PP (IN:[729..733] with)
+            (NP
+              (NP (NN:[734..738] mRNA))
+              (PP (IN:[739..743] from)
+                (NP
+                  (NP (JJ:[744..749] human) (NN:[750..755] heart)
+                    (NML-1 (-NONE-:[755..755] *P*)))
+                  (CC:[756..759] and)
+                  (NP (NN:[760..765] IMR32) (JJ:[766..771] human)
+                      (NN:[773..786] neuroblastoma)
+                    (NML-1 (NNS:[787..792] cells))))))))))
+    (.:[792..793] .)))
+
+;sentence 8 Span:794..911
+;This demonstrated a 5' UTR of 100 BP, corresponding to two  sequences on
+;chromosome 7, separated by a 22.6 kB intron.
+(SENT
+  (S
+    (NP-SBJ (DT:[794..798] This))
+    (VP (VBD:[799..811] demonstrated)
+      (NP
+        (NP
+          (NP (DT:[812..813] a)
+            (NML (CD:[814..815] 5) (SYM:[815..816] '))
+            (NN:[817..820] UTR))
+          (PP (IN:[821..823] of)
+            (NP (CD:[824..827] 100) (NN:[828..830] BP))))
+        (,:[830..831] ,)
+        (VP (VBG:[832..845] corresponding)
+          (PP-CLR (TO:[846..848] to)
+            (NP
+              (NP
+                (NP (CD:[849..852] two) (NNS:[854..863] sequences))
+                (PP-LOC (IN:[864..866] on)
+                  (NP (NN:[867..877] chromosome) (CD:[878..879] 7))))
+              (,:[879..880] ,)
+              (VP (VBN:[881..890] separated)
+                (NP (-NONE-:[890..890] *))
+                (PP (IN:[891..893] by)
+                  (NP-LGS (DT:[894..895] a)
+                    (NML (CD:[896..900] 22.6) (NN:[901..903] kB))
+                    (NN:[904..910] intron)))))))))
+    (.:[910..911] .)))
+
+;sentence 9 Span:912..979
+;The splice acceptor  site is at -45 relative to the initiating atg.
+(SENT
+  (S
+    (NP-SBJ (DT:[912..915] The)
+      (NML (NN:[916..922] splice) (NN:[923..931] acceptor))
+      (NN:[933..937] site))
+    (VP (VBZ:[938..940] is)
+      (PP-PRD (IN:[941..943] at)
+        (NP (SYM:[944..945] -) (CD:[945..947] 45)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[947..947] *))
+        (ADJP-PRD (JJ:[948..956] relative)
+          (PP (TO:[957..959] to)
+            (NP (DT:[960..963] the) (VBG:[964..974] initiating)
+                (NN:[975..978] atg))))))
+    (.:[978..979] .)))
+
+;sentence 10 Span:980..1075
+;The 3000 BP upstream of 5' RACE  product were subcloned into a pGL3
+;luciferase reporter vector.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[980..983] The) (CD:[984..988] 3000) (NN:[989..991] BP))
+      (ADJP (JJ:[992..1000] upstream)
+        (PP (IN:[1001..1003] of)
+          (NP
+            (NML (CD:[1004..1005] 5) (SYM:[1005..1006] '))
+            (NN:[1007..1011] RACE) (NN:[1013..1020] product)))))
+    (VP (VBD:[1021..1025] were)
+      (VP (VBN:[1026..1035] subcloned)
+        (NP-1 (-NONE-:[1035..1035] *))
+        (PP (IN:[1036..1040] into)
+          (NP (DT:[1041..1042] a)
+            (NML (NN:[1043..1047] pGL3) (NN:[1048..1058] luciferase))
+            (NN:[1059..1067] reporter) (NN:[1068..1074] vector)))))
+    (.:[1074..1075] .)))
+
+;sentence 11 Span:1076..1129
+;Deletional  constructs were expressed in IMR32 cells.
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1076..1086] Deletional) (NNS:[1088..1098] constructs))
+    (VP (VBD:[1099..1103] were)
+      (VP (VBN:[1104..1113] expressed)
+        (NP-1 (-NONE-:[1113..1113] *))
+        (PP-LOC (IN:[1114..1116] in)
+          (NP (NN:[1117..1122] IMR32) (NNS:[1123..1128] cells)))))
+    (.:[1128..1129] .)))
+
+;sentence 12 Span:1130..1268
+;These demonstrated that 412 BP  provided full expression of the reporter
+;gene, and suggested a repressor element  between -1848 and -1510.
+(SENT
+  (S
+    (NP-SBJ (DT:[1130..1135] These))
+    (VP
+      (VP (VBD:[1136..1148] demonstrated)
+        (SBAR (IN:[1149..1153] that)
+          (S
+            (NP-SBJ (CD:[1154..1157] 412) (NN:[1158..1160] BP))
+            (VP (VBD:[1162..1170] provided)
+              (NP
+                (NP (JJ:[1171..1175] full) (NN:[1176..1186] expression))
+                (PP (IN:[1187..1189] of)
+                  (NP (DT:[1190..1193] the) (NN:[1194..1202] reporter)
+                      (NN:[1203..1207] gene))))))))
+      (,:[1207..1208] ,) (CC:[1209..1212] and)
+      (VP (VBD:[1213..1222] suggested)
+        (NP
+          (NP (DT:[1223..1224] a) (NN:[1225..1234] repressor)
+              (NN:[1235..1242] element))
+          (PP (IN:[1244..1251] between)
+            (NP
+              (NP (SYM:[1252..1253] -) (CD:[1253..1257] 1848))
+              (CC:[1258..1261] and)
+              (NP (SYM:[1262..1263] -) (CD:[1263..1267] 1510)))))))
+    (.:[1267..1268] .)))
+
+;section 13 Span:1272..1317
+;PMID: 11410369 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1272..1276] PMID) (::[1276..1277] :) (CD:[1278..1286] 11410369)
+        (NN:[1287..1288] -LSB-) (NNP:[1288..1294] PubMed) (::[1295..1296] -)
+        (NN:[1297..1304] indexed) (IN:[1305..1308] for)
+        (NNP:[1309..1317] MEDLINE-RSB-)))

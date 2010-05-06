@@ -1,0 +1,437 @@
+;PMID: 10753890
+;source_file_657.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..166] = [t:48..166]
+;2)section:[e:170..214] = [t:170..214]
+;3)section:[e:218..346] = [t:218..346]
+;4)sentence:[e:350..437] = [t:350..437]
+;5)sentence:[e:438..661] = [t:438..661]
+;6)sentence:[e:663..913] = [t:663..913]
+;7)sentence:[e:914..1112] = [t:914..1112]
+;8)sentence:[e:1113..1275] = [t:1113..1275]
+;9)sentence:[e:1277..1461] = [t:1277..1461]
+;10)sentence:[e:1462..1699] = [t:1462..1699]
+;11)sentence:[e:1700..1788] = [t:1700..1788]
+;12)section:[e:1792..1837] = [t:1792..1837]
+
+;section 0 Span:0..42
+;J Biol Chem. 2000 Apr 14;275(15):10918-24.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        (CD:[13..17] 2000) (JJ:[18..21] Apr) (CD:[22..28] 14;275)
+        (-LRB-:[28..29] -LRB-) (CD:[29..31] 15) (-RRB-:[31..32] -RRB-)
+        (::[32..33] :) (CD:[33..37] 1091) (CD:[37..41] 8-24) (.:[41..42] .)))
+
+;sentence 1 Span:48..166
+;Farnesoid X receptor responds to bile acids and represses cholesterol 
+;7alpha-hydroxylase gene (CYP7A1) transcription.
+;[48..68]:substance:"Farnesoid X receptor"
+;[81..91]:substance:"bile acids"
+;[144..150]:cyp450:"CYP7A1"
+(SENT
+  (S-HLN
+    (NP-SBJ (JJ:[48..57] Farnesoid) (NN:[58..59] X) (NN:[60..68] receptor))
+    (VP
+      (VP (VBZ:[69..77] responds)
+        (PP (TO:[78..80] to)
+          (NP (NN:[81..85] bile) (NNS:[86..91] acids))))
+      (CC:[92..95] and)
+      (VP (VBZ:[96..105] represses)
+        (NP
+          (NML
+            (NML (NN:[106..117] cholesterol) (NN:[119..137] 7alpha-hydroxylase)
+                 (NN:[138..142] gene))
+            (NML (-LRB-:[143..144] -LRB-) (NN:[144..150] CYP7A1)
+                 (-RRB-:[150..151] -RRB-)))
+          (NN:[152..165] transcription))))
+    (.:[165..166] .)))
+
+;section 2 Span:170..214
+;Chiang JY, Kimmel R, Weinberger C, Stroup D.
+(SEC
+  (FRAG (NNP:[170..176] Chiang) (NNP:[177..179] JY) (,:[179..180] ,)
+        (NNP:[181..187] Kimmel) (NNP:[188..189] R) (,:[189..190] ,)
+        (NNP:[191..201] Weinberger) (NNP:[202..204] C,) (NNP:[205..211] Stroup)
+        (NNP:[212..214] D.)))
+
+;section 3 Span:218..346
+;Department of Biochemistry, Northeastern Ohio Universities College of
+;Medicine,  Rootstown, Ohio 44272, USA. jchiang@neoucom.edu
+(SEC
+  (FRAG (NNP:[218..228] Department) (IN:[229..231] of)
+        (NNP:[232..244] Biochemistry) (,:[244..245] ,)
+        (DT:[246..258] Northeastern) (NNP:[259..263] Ohio)
+        (NNP:[264..276] Universities) (NNP:[277..284] College)
+        (IN:[285..287] of) (NNP:[288..296] Medicine) (,:[296..297] ,)
+        (NNP:[299..308] Rootstown) (,:[308..309] ,) (NNP:[310..314] Ohio)
+        (NNP:[315..320] 44272) (,:[320..321] ,) (NNP:[322..325] USA)
+        (.:[325..326] .) (IN:[327..342] jchiang@neoucom) (NN:[342..346] .edu)))
+
+;sentence 4 Span:350..437
+;Cholesterol 7alpha-hydroxylase gene (CYP7A1) transcription is repressed by
+;bile  acids.
+;[387..393]:cyp450:"CYP7A1"
+;[425..436]:substance:"bile  acids"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML
+        (NML (NN:[350..361] Cholesterol) (NN:[362..380] 7alpha-hydroxylase)
+             (NN:[381..385] gene))
+        (NML (-LRB-:[386..387] -LRB-) (NN:[387..393] CYP7A1)
+             (-RRB-:[393..394] -RRB-)))
+      (NN:[395..408] transcription))
+    (VP (VBZ:[409..411] is)
+      (VP (VBN:[412..421] repressed)
+        (NP-1 (-NONE-:[421..421] *))
+        (PP (IN:[422..424] by)
+          (NP-LGS (NN:[425..429] bile) (NNS:[431..436] acids)))))
+    (.:[436..437] .)))
+
+;sentence 5 Span:438..661
+;The goal of this study is to elucidate the mechanism of CYP7A1  transcription
+;by bile acid-activated farnesoid X receptor (FXR) in its native  promoter and
+;cellular context and to identify FXR response elements in the gene.
+;[494..500]:cyp450:"CYP7A1"
+;[519..528]:substance:"bile acid"
+;[539..559]:substance:"farnesoid X receptor"
+;[561..564]:substance:"FXR"
+;[581..589]:substance:"promoter"
+;[627..630]:substance:"FXR"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[438..441] The) (NN:[442..446] goal))
+      (PP (IN:[447..449] of)
+        (NP (DT:[450..454] this) (NN:[455..460] study))))
+    (VP (VBZ:[461..463] is)
+      (S-NOM-PRD
+        (NP-SBJ (-NONE-:[463..463] *))
+        (VP
+          (VP (TO:[464..466] to)
+            (VP (VB:[467..476] elucidate)
+              (NP
+                (NP (DT:[477..480] the) (NN:[481..490] mechanism))
+                (PP (IN:[491..493] of)
+                  (NP
+                    (NP (NN:[494..500] CYP7A1) (NN:[502..515] transcription))
+                    (PP (IN:[516..518] by)
+                      (NP
+                        (NP
+                          (ADJP
+                            (NML (NN:[519..523] bile) (NN:[524..528] acid))
+                            (HYPH:[528..529] -) (VBN:[529..538] activated))
+                          (NML
+                            (NML (JJ:[539..548] farnesoid) (NN:[549..550] X)
+                                 (NN:[551..559] receptor))
+                            (NML (-LRB-:[560..561] -LRB-) (NN:[561..564] FXR)
+                                 (-RRB-:[564..565] -RRB-))))
+                        (PP (IN:[566..568] in)
+                          (NP (PRP$:[569..572] its)
+                            (NML
+                              (NML (JJ:[573..579] native)
+                                   (NN:[581..589] promoter))
+                              (CC:[590..593] and)
+                              (NML (JJ:[594..602] cellular)
+                                   (NN:[603..610] context))))))))))))
+          (CC:[611..614] and)
+          (VP (TO:[615..617] to)
+            (VP (VB:[618..626] identify)
+              (NP (NN:[627..630] FXR) (NN:[631..639] response)
+                  (NNS:[640..648] elements))
+              (PP (IN:[649..651] in)
+                (NP (DT:[652..655] the) (NN:[656..660] gene))))))))
+    (.:[660..661] .)))
+
+;sentence 6 Span:663..913
+;In Chinese hamster ovary cells transfected with retinoid X receptor alpha 
+;(RXRalpha)/FXR, only chenodeoxycholic acid (CDCA) and deoxycholic acid (DCA) 
+;were able to stimulate a heterologous promoter/reporter containing an
+;ecdysone  response element.
+;[711..736]:substance:"retinoid X receptor alpha"
+;[739..747]:substance:"RXRalpha"
+;[749..752]:substance:"FXR"
+;[759..780]:substance:"chenodeoxycholic acid"
+;[782..786]:substance:"CDCA"
+;[792..808]:substance:"deoxycholic acid"
+;[810..813]:substance:"DCA"
+;[854..862]:substance:"promoter"
+;[886..894]:substance:"ecdysone"
+(SENT
+  (S
+    (PP-LOC (IN:[663..665] In)
+      (NP
+        (NP (JJ:[666..673] Chinese) (NN:[674..681] hamster)
+            (NN:[682..687] ovary) (NNS:[688..693] cells))
+        (VP (VBN:[694..705] transfected)
+          (NP (-NONE-:[705..705] *))
+          (PP (IN:[706..710] with)
+            (NP
+              (NML
+                (NML (JJ:[711..719] retinoid) (NN:[720..721] X)
+                     (NN:[722..730] receptor) (SYM:[731..736] alpha))
+                (NML (-LRB-:[738..739] -LRB-) (NN:[739..747] RXRalpha)
+                     (-RRB-:[747..748] -RRB-)))
+              (SYM:[748..749] /) (NN:[749..752] FXR))))))
+    (,:[752..753] ,)
+    (NP-SBJ-1
+      (ADVP (RB:[754..758] only))
+      (NP
+        (NP
+          (NP (JJ:[759..775] chenodeoxycholic) (NN:[776..780] acid))
+          (NP (-LRB-:[781..782] -LRB-) (NN:[782..786] CDCA)
+              (-RRB-:[786..787] -RRB-)))
+        (CC:[788..791] and)
+        (NP
+          (NP (JJ:[792..803] deoxycholic) (NN:[804..808] acid))
+          (NP (-LRB-:[809..810] -LRB-) (NN:[810..813] DCA)
+              (-RRB-:[813..814] -RRB-)))))
+    (VP (VBD:[816..820] were)
+      (ADJP-PRD (JJ:[821..825] able)
+        (S
+          (NP-SBJ-1 (-NONE-:[825..825] *))
+          (VP (TO:[826..828] to)
+            (VP (VB:[829..838] stimulate)
+              (NP
+                (NP (DT:[839..840] a) (JJ:[841..853] heterologous)
+                  (NML (NN:[854..862] promoter) (SYM:[862..863] /)
+                       (NN:[863..871] reporter)))
+                (VP (VBG:[872..882] containing)
+                  (NP (DT:[883..885] an) (NN:[886..894] ecdysone)
+                      (NN:[896..904] response) (NN:[905..912] element)))))))))
+    (.:[912..913] .)))
+
+;sentence 7 Span:914..1112
+;In HepG2 cells, all bile acids (25 microM) were able to  repress
+;CYP7A1/luciferase reporter activity, and only CDCA and DCA further  repressed
+;reporter activity when cotransfected with RXRalpha/FXR.
+;[934..944]:substance:"bile acids"
+;[946..948]:quantitative-value:"25"
+;[949..955]:quantitative-units:"microM"
+;[979..985]:cyp450:"CYP7A1"
+;[1025..1029]:substance:"CDCA"
+;[1034..1037]:substance:"DCA"
+;[1099..1107]:substance:"RXRalpha"
+;[1108..1111]:substance:"FXR"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[914..916] In)
+        (NP (NN:[917..922] HepG2) (NNS:[923..928] cells)))
+      (,:[928..929] ,)
+      (NP-SBJ-3 (DT:[930..933] all)
+         (NN:[934..938] bile) (NNS:[939..944] acids)
+        (PRN (-LRB-:[945..946] -LRB-)
+          (NP (CD:[946..948] 25) (NN:[949..955] microM))
+          (-RRB-:[955..956] -RRB-)))
+      (VP (VBD:[957..961] were)
+        (ADJP-PRD (JJ:[962..966] able)
+          (S
+            (NP-SBJ-3 (-NONE-:[966..966] *))
+            (VP (TO:[967..969] to)
+              (VP (VB:[971..978] repress)
+                (NP
+                  (NML (NN:[979..985] CYP7A1) (SYM:[985..986] /)
+                       (NN:[986..996] luciferase))
+                  (NN:[997..1005] reporter) (NN:[1006..1014] activity))))))))
+    (,:[1014..1015] ,) (CC:[1016..1019] and)
+    (S
+      (NP-SBJ
+        (ADVP (RB:[1020..1024] only))
+        (NN:[1025..1029] CDCA) (CC:[1030..1033] and) (NN:[1034..1037] DCA))
+      (ADVP (RBR:[1038..1045] further))
+      (VP (VBD:[1047..1056] repressed)
+        (NP (NN:[1057..1065] reporter) (NN:[1066..1074] activity))
+        (SBAR-ADV
+          (WHADVP-1 (WRB:[1075..1079] when))
+          (S
+            (NP-SBJ-2 (-NONE-:[1079..1079] *))
+            (VP (VBN:[1080..1093] cotransfected)
+              (NP-2 (-NONE-:[1093..1093] *))
+              (PP (IN:[1094..1098] with)
+                (NP (NN:[1099..1107] RXRalpha) (SYM:[1107..1108] /)
+                    (NN:[1108..1111] FXR)))
+              (ADVP-TMP-1 (-NONE-:[1111..1111] *T*)))))))
+    (.:[1111..1112] .)))
+
+;sentence 8 Span:1113..1275
+;The  concentration of CDCA required to inhibit 50% of reporter activity
+;(IC(50)) was  determined to be approximately 25 microM without FXR and 10
+;microM with FXR.
+;[1135..1139]:substance:"CDCA"
+;[1160..1163]:quantitative-value:"50%"
+;[1186..1192]:quantitative-name:"IC(50)"
+;[1216..1232]:quantitative-value:"approximately 25"
+;[1233..1239]:quantitative-units:"microM"
+;[1248..1251]:substance:"FXR"
+;[1256..1258]:quantitative-value:"10"
+;[1259..1265]:quantitative-units:"microM"
+;[1271..1274]:substance:"FXR"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP
+          (NP (DT:[1113..1116] The) (NN:[1118..1131] concentration))
+          (PP (IN:[1132..1134] of)
+            (NP (NN:[1135..1139] CDCA))))
+        (VP (VBN:[1140..1148] required)
+          (NP (-NONE-:[1148..1148] *))
+          (VP (TO:[1149..1151] to)
+            (VP (VB:[1152..1159] inhibit)
+              (NP
+                (NP (CD:[1160..1162] 50) (NN:[1162..1163] %))
+                (PP (IN:[1164..1166] of)
+                  (NP (NN:[1167..1175] reporter) (NN:[1176..1184] activity))))))))
+      (NP (-LRB-:[1185..1186] -LRB-)
+         (NN:[1186..1188] IC) (-LRB-:[1188..1189] -LRB-) (CD:[1189..1191] 50)
+         (-RRB-:[1191..1192] -RRB-)
+        (-RRB-:[1192..1193] -RRB-)))
+    (VP (VBD:[1194..1197] was)
+      (VP (VBN:[1199..1209] determined)
+        (S
+          (NP-SBJ-3 (-NONE-:[1209..1209] *))
+          (VP (TO:[1210..1212] to)
+            (VP
+              (VP (VB:[1213..1215] be)
+                (NP=1
+                  (QP (RB:[1216..1229] approximately) (CD:[1230..1232] 25))
+                  (NN:[1233..1239] microM))
+                (PP=2 (IN:[1240..1247] without)
+                  (NP (NN:[1248..1251] FXR))))
+              (CC:[1252..1255] and)
+              (VP
+                (NP=1 (CD:[1256..1258] 10) (NN:[1259..1265] microM))
+                (PP=2 (IN:[1266..1270] with)
+                  (NP (NN:[1271..1274] FXR)))))))))
+    (.:[1274..1275] .)))
+
+;sentence 9 Span:1277..1461
+;Deletion analysis revealed that the bile acid response element located
+;between  nucleotides -148 and -128 was the FXR response element, but
+;RXRalpha/FXR did not  bind to this sequence.
+;[1313..1322]:substance:"bile acid"
+;[1391..1394]:substance:"FXR"
+;[1417..1425]:substance:"RXRalpha"
+;[1426..1429]:substance:"FXR"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1277..1285] Deletion) (NN:[1286..1294] analysis))
+      (VP (VBD:[1295..1303] revealed)
+        (SBAR (IN:[1304..1308] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1309..1312] the)
+                (NML (NN:[1313..1317] bile) (NN:[1318..1322] acid))
+                (NN:[1323..1331] response) (NN:[1332..1339] element))
+              (VP (VBN:[1340..1347] located)
+                (NP (-NONE-:[1347..1347] *))
+                (PP-LOC (IN:[1348..1355] between)
+                  (NP
+                    (NP
+                      (NML-1 (NNS:[1357..1368] nucleotides))
+                      (SYM:[1369..1370] -) (CD:[1370..1373] 148))
+                    (CC:[1374..1377] and)
+                    (NP
+                      (NML-1 (-NONE-:[1377..1377] *P*))
+                      (SYM:[1378..1379] -) (CD:[1379..1382] 128))))))
+            (VP (VBD:[1383..1386] was)
+              (NP-PRD (DT:[1387..1390] the) (NN:[1391..1394] FXR)
+                      (NN:[1395..1403] response) (NN:[1404..1411] element)))))))
+    (,:[1411..1412] ,) (CC:[1413..1416] but)
+    (S
+      (NP-SBJ (NN:[1417..1425] RXRalpha) (SYM:[1425..1426] /)
+              (NN:[1426..1429] FXR))
+      (VP (VBD:[1430..1433] did) (RB:[1434..1437] not)
+        (VP (VB:[1439..1443] bind)
+          (PP (TO:[1444..1446] to)
+            (NP (DT:[1447..1451] this) (NN:[1452..1460] sequence))))))
+    (.:[1460..1461] .)))
+
+;sentence 10 Span:1462..1699
+;These results suggest that bile acid-activated FXR exerts  its inhibitory
+;effect on CYP7A1 transcription by an indirect mechanism, in  contrast to the
+;stimulation and binding of FXR to intestinal bile acid-binding  protein gene
+;promoter.
+;[1489..1498]:substance:"bile acid"
+;[1509..1512]:substance:"FXR"
+;[1546..1552]:cyp450:"CYP7A1"
+;[1640..1643]:substance:"FXR"
+;[1658..1667]:substance:"bile acid"
+;[1690..1698]:substance:"promoter"
+(SENT
+  (S
+    (NP-SBJ (DT:[1462..1467] These) (NNS:[1468..1475] results))
+    (VP (VBP:[1476..1483] suggest)
+      (SBAR (IN:[1484..1488] that)
+        (S
+          (NP-SBJ
+            (ADJP
+              (NML (NN:[1489..1493] bile) (NN:[1494..1498] acid))
+              (HYPH:[1498..1499] -) (VBN:[1499..1508] activated))
+            (NN:[1509..1512] FXR))
+          (VP (VBZ:[1513..1519] exerts)
+            (NP (PRP$:[1521..1524] its) (JJ:[1525..1535] inhibitory)
+                (NN:[1536..1542] effect))
+            (PP (IN:[1543..1545] on)
+              (NP (NN:[1546..1552] CYP7A1) (NN:[1553..1566] transcription)))
+            (PP (IN:[1567..1569] by)
+              (NP (DT:[1570..1572] an) (JJ:[1573..1581] indirect)
+                  (NN:[1582..1591] mechanism)))
+            (,:[1591..1592] ,)
+            (PP (IN:[1593..1595] in)
+              (NP
+                (NP (NN:[1597..1605] contrast))
+                (PP (TO:[1606..1608] to)
+                  (NP
+                    (NP
+                      (NP (DT:[1609..1612] the) (NN:[1613..1624] stimulation))
+                      (CC:[1625..1628] and)
+                      (NP (NN:[1629..1636] binding)))
+                    (PP (IN:[1637..1639] of)
+                      (NP (NN:[1640..1643] FXR)))
+                    (PP (TO:[1644..1646] to)
+                      (NP (JJ:[1647..1657] intestinal)
+                        (ADJP
+                          (NML (NN:[1658..1662] bile) (NN:[1663..1667] acid))
+                          (HYPH:[1667..1668] -) (VBG:[1668..1675] binding))
+                        (NN:[1677..1684] protein) (NN:[1685..1689] gene)
+                         (NN:[1690..1698] promoter)))))))))))
+    (.:[1698..1699] .)))
+
+;sentence 11 Span:1700..1788
+;Results also reveal that bile acid receptors other than  FXR are present in
+;HepG2 cells.
+;[1725..1744]:substance:"bile acid receptors"
+;[1757..1760]:substance:"FXR"
+(SENT
+  (S
+    (NP-SBJ (NNS:[1700..1707] Results))
+    (ADVP (RB:[1708..1712] also))
+    (VP (VBP:[1713..1719] reveal)
+      (SBAR (IN:[1720..1724] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1725..1729] bile) (NN:[1730..1734] acid)
+                (NNS:[1735..1744] receptors))
+            (ADJP
+              (ADJP (JJ:[1745..1750] other))
+              (PP (IN:[1751..1755] than)
+                (NP (NN:[1757..1760] FXR)))))
+          (VP (VBP:[1761..1764] are)
+            (ADJP-PRD (JJ:[1765..1772] present))
+            (PP-LOC (IN:[1773..1775] in)
+              (NP (NN:[1776..1781] HepG2) (NNS:[1782..1787] cells)))))))
+    (.:[1787..1788] .)))
+
+;section 12 Span:1792..1837
+;PMID: 10753890 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1792..1796] PMID) (::[1796..1797] :) (CD:[1798..1806] 10753890)
+        (NN:[1807..1808] -LSB-) (NNP:[1808..1814] PubMed) (::[1815..1816] -)
+        (NN:[1817..1824] indexed) (IN:[1825..1828] for)
+        (NNP:[1829..1837] MEDLINE-RSB-)))

@@ -1,0 +1,695 @@
+;PMID: 2874666
+;source_file_1801.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..223] = [t:41..223]
+;2)section:[e:227..292] = [t:227..292]
+;3)sentence:[e:296..680] = [t:296..680]
+;4)sentence:[e:682..932] = [t:682..932]
+;5)sentence:[e:933..1009] = [t:933..1009]
+;6)sentence:[e:1010..1180] = [t:1010..1180]
+;7)sentence:[e:1181..1377] = [t:1181..1377]
+;8)sentence:[e:1378..1564] = [t:1378..1564]
+;9)sentence:[e:1565..1699] = [t:1565..1699]
+;10)sentence:[e:1700..1830] = [t:1700..1830]
+;11)sentence:[e:1831..2047] = [t:1831..2047]
+;12)sentence:[e:2048..2256] = [t:2048..2256]
+;13)sentence:[e:2257..2430] = [t:2257..2430]
+;14)sentence:[e:2431..2675] = [t:2431..2675]
+;15)sentence:[e:2676..2778] = [t:2676..2778]
+;16)sentence:[e:2779..2937] = [t:2779..2937]
+;17)section:[e:2941..2985] = [t:2941..2985]
+
+;section 0 Span:0..35
+;Xenobiotica. 1986 May;16(5):449-64.
+(SEC
+  (FRAG (NNP:[0..11] Xenobiotica) (IN:[11..12] .) (CD:[13..17] 1986)
+        (NNP:[18..21] May) (CD:[21..24] ;16) (-LRB-:[24..25] -LRB-)
+        (CD:[25..26] 5) (-RRB-:[26..27] -RRB-) (::[27..28] :)
+        (CD:[28..34] 449-64) (.:[34..35] .)))
+
+;sentence 1 Span:41..223
+;The molecular mechanisms of two common polymorphisms of drug
+;oxidation--evidence  for functional changes in cytochrome P-450 isozymes
+;catalysing bufuralol and  mephenytoin oxidation.
+;[97..101]:substance:"drug"
+;[149..174]:cyp450:"cytochrome P-450 isozymes"
+;[186..195]:substance:"bufuralol"
+;[201..212]:substance:"mephenytoin"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (DT:[41..44] The) (JJ:[45..54] molecular) (NNS:[55..65] mechanisms))
+      (PP (IN:[66..68] of)
+        (NP
+          (NP (CD:[69..72] two) (JJ:[73..79] common)
+              (NNS:[80..93] polymorphisms))
+          (PP (IN:[94..96] of)
+            (NP (NN:[97..101] drug) (NN:[102..111] oxidation))))))
+    (::[111..113] --)
+    (NP
+      (NP (NN:[113..121] evidence))
+      (PP (IN:[123..126] for)
+        (NP
+          (NP (JJ:[127..137] functional) (NNS:[138..145] changes))
+          (PP (IN:[146..148] in)
+            (NP
+              (NP
+                (NML (NN:[149..159] cytochrome) (NN:[160..165] P-450))
+                (NNS:[166..174] isozymes))
+              (VP (VBG:[175..185] catalysing)
+                (NP
+                  (NP (NN:[186..195] bufuralol)
+                    (NML-1 (-NONE-:[195..195] *P*)))
+                  (CC:[196..199] and)
+                  (NP (NN:[201..212] mephenytoin)
+                    (NML-1 (NN:[213..222] oxidation))))))))))
+    (.:[222..223] .)))
+
+;section 2 Span:227..292
+;Meyer UA, Gut J, Kronbach T, Skoda C, Meier UT, Catin T, Dayer P.
+(SEC
+  (FRAG (NNP:[227..232] Meyer) (NNP:[233..235] UA) (,:[235..236] ,)
+        (NNP:[237..240] Gut) (NNP:[241..243] J,) (NNP:[244..252] Kronbach)
+        (NNP:[253..254] T) (,:[254..255] ,) (NNP:[256..261] Skoda)
+        (NNP:[262..263] C) (,:[263..264] ,) (NNP:[265..270] Meier)
+        (NNP:[271..273] UT) (,:[273..274] ,) (NNP:[275..280] Catin)
+        (NNP:[281..282] T) (,:[282..283] ,) (NNP:[284..289] Dayer)
+        (NNP:[290..292] P.)))
+
+;sentence 3 Span:296..680
+;Using the stereospecific metabolism of (+)- and (-)-bufuralol and (+)- and 
+;(-)-metoprolol as model reactions, we have characterized the enzymic
+;deficiency  of the debrisoquine/sparteine-type polymorphism by comparing
+;kinetic data of  subjects in vivo with their microsomal activities in vitro
+;and with  reconstituted activities of cytochrome P-450 isozymes purified from
+;human liver.
+;[335..339]...[348..357]:substance:"(+)-"..."bufuralol"
+;[344..357]:substance:"(-)-bufuralol"
+;[362..366]...[376..386]:substance:"(+)-"..."metoprolol"
+;[372..386]:substance:"(-)-metoprolol"
+;[460..472]:substance:"debrisoquine"
+;[473..482]:substance:"sparteine"
+;[628..653]:cyp450:"cytochrome P-450 isozymes"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[296..296] *))
+      (VP (VBG:[296..301] Using)
+        (NP
+          (NP (DT:[302..305] the) (JJ:[306..320] stereospecific)
+              (NN:[321..331] metabolism))
+          (PP (IN:[332..334] of)
+            (NP
+              (NP
+                (NP
+                  (ADJP (-LRB-:[335..336] -LRB-) (SYM:[336..337] +)
+                        (-RRB-:[337..338] -RRB-))
+                  (HYPH:[338..339] -)
+                  (NML-2 (-NONE-:[339..339] *P*)))
+                (CC:[340..343] and)
+                (NP
+                  (ADJP (-LRB-:[344..345] -LRB-) (SYM:[345..346] -)
+                        (-RRB-:[346..347] -RRB-))
+                  (HYPH:[347..348] -)
+                  (NML-2 (NN:[348..357] bufuralol))))
+              (CC:[358..361] and)
+              (NP
+                (NP
+                  (ADJP (-LRB-:[362..363] -LRB-) (SYM:[363..364] +)
+                        (-RRB-:[364..365] -RRB-))
+                  (HYPH:[365..366] -)
+                  (NML-1 (-NONE-:[366..366] *P*)))
+                (CC:[367..370] and)
+                (NP
+                  (ADJP (-LRB-:[372..373] -LRB-) (SYM:[373..374] -)
+                        (-RRB-:[374..375] -RRB-))
+                  (HYPH:[375..376] -)
+                  (NML-1 (NN:[376..386] metoprolol)))))))
+        (PP (IN:[387..389] as)
+          (NP (JJ:[390..395] model) (NNS:[396..405] reactions)))))
+    (,:[405..406] ,)
+    (NP-SBJ (PRP:[407..409] we))
+    (VP (VBP:[410..414] have)
+      (VP (VBN:[415..428] characterized)
+        (NP
+          (NP (DT:[429..432] the) (JJ:[433..440] enzymic)
+              (NN:[441..451] deficiency))
+          (PP (IN:[453..455] of)
+            (NP (DT:[456..459] the)
+              (ADJP
+                (NML (NN:[460..472] debrisoquine) (SYM:[472..473] /)
+                     (NN:[473..482] sparteine))
+                (HYPH:[482..483] -) (NN:[483..487] type))
+              (NN:[488..500] polymorphism))))
+        (PP (IN:[501..503] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[503..503] *))
+            (VP (VBG:[504..513] comparing)
+              (NP
+                (NP (JJ:[514..521] kinetic) (NNS:[522..526] data))
+                (PP (IN:[527..529] of)
+                  (NP
+                    (NP (NNS:[531..539] subjects))
+                    (ADVP (FW:[540..542] in) (FW:[543..547] vivo)))))
+              (PP-CLR
+                (PP (IN:[548..552] with)
+                  (NP
+                    (NP (PRP$:[553..558] their) (JJ:[559..569] microsomal)
+                        (NNS:[570..580] activities))
+                    (ADJP (FW:[581..583] in) (FW:[584..589] vitro))))
+                (CC:[590..593] and)
+                (PP (IN:[594..598] with)
+                  (NP
+                    (NP (VBN:[600..613] reconstituted)
+                        (NNS:[614..624] activities))
+                    (PP (IN:[625..627] of)
+                      (NP
+                        (NP
+                          (NML (NN:[628..638] cytochrome) (NN:[639..644] P-450))
+                          (NNS:[645..653] isozymes))
+                        (VP (VBN:[654..662] purified)
+                          (NP (-NONE-:[662..662] *))
+                          (PP (IN:[663..667] from)
+                            (NP (JJ:[668..673] human) (NN:[674..679] liver))))))))))))))
+    (.:[679..680] .)))
+
+;sentence 4 Span:682..932
+;The metabolism of bufuralol in liver microsomes of in vivo phenotyped 'poor 
+;metabolizers' of debrisoquine and/or sparteine is characterized by a marked 
+;increase in Km, a decrease in Vmax and a virtual loss of the
+;stereoselectivity  of the reaction.
+;[700..709]:substance:"bufuralol"
+;[759..771]:substance:"metabolizers"
+;[776..788]:substance:"debrisoquine"
+;[796..805]:substance:"sparteine"
+;[848..850]:quantitative-name:"Km"
+;[866..870]:quantitative-name:"Vmax"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[682..685] The) (NN:[686..696] metabolism))
+      (PP (IN:[697..699] of)
+        (NP (NN:[700..709] bufuralol)))
+      (PP-LOC (IN:[710..712] in)
+        (NP
+          (NP (NN:[713..718] liver) (NNS:[719..729] microsomes))
+          (PP (IN:[730..732] of)
+            (NP
+              (NP
+                (ADJP
+                  (ADVP (FW:[733..735] in) (FW:[736..740] vivo))
+                  (VBN:[741..751] phenotyped))
+                (``:[752..753] ') (JJ:[753..757] poor)
+                 (NNS:[759..771] metabolizers) ('':[771..772] '))
+              (PP (IN:[773..775] of)
+                (NP (NN:[776..788] debrisoquine) (CC:[789..795] and/or)
+                    (NN:[796..805] sparteine))))))))
+    (VP (VBZ:[806..808] is)
+      (VP (VBN:[809..822] characterized)
+        (NP-1 (-NONE-:[822..822] *))
+        (PP (IN:[823..825] by)
+          (NP-LGS
+            (NP
+              (NP (DT:[826..827] a) (JJ:[828..834] marked)
+                  (NN:[836..844] increase))
+              (PP (IN:[845..847] in)
+                (NP (NN:[848..850] Km))))
+            (,:[850..851] ,)
+            (NP
+              (NP (DT:[852..853] a) (NN:[854..862] decrease))
+              (PP (IN:[863..865] in)
+                (NP (NN:[866..870] Vmax))))
+            (CC:[871..874] and)
+            (NP
+              (NP (DT:[875..876] a) (JJ:[877..884] virtual) (NN:[885..889] loss))
+              (PP (IN:[890..892] of)
+                (NP
+                  (NP (DT:[893..896] the) (NN:[897..914] stereoselectivity))
+                  (PP (IN:[916..918] of)
+                    (NP (DT:[919..922] the) (NN:[923..931] reaction))))))))))
+    (.:[931..932] .)))
+
+;sentence 5 Span:933..1009
+;These parameters apparently allow the 'phenotyping' of  microsomes in vitro.
+(SENT
+  (S
+    (NP-SBJ (DT:[933..938] These) (NNS:[939..949] parameters))
+    (ADVP (RB:[950..960] apparently))
+    (VP (VBP:[961..966] allow)
+      (NP
+        (NP (DT:[967..970] the) (``:[971..972] ') (NN:[972..983] phenotyping)
+            ('':[983..984] '))
+        (PP (IN:[985..987] of)
+          (NP (NNS:[989..999] microsomes))))
+      (ADVP (FW:[1000..1002] in) (FW:[1003..1008] vitro)))
+    (.:[1008..1009] .)))
+
+;sentence 6 Span:1010..1180
+;A structural model of the active site of a cytochrome P-450  for
+;stereospecific metabolism of bufuralol and other polymorphically metabolized 
+;substrates was constructed.
+;[1053..1069]:cyp450:"cytochrome P-450"
+;[1104..1113]:substance:"bufuralol"
+;[1153..1163]:substance:"substrates"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1010..1011] A) (JJ:[1012..1022] structural)
+          (NN:[1023..1028] model))
+      (PP (IN:[1029..1031] of)
+        (NP
+          (NP (DT:[1032..1035] the) (JJ:[1036..1042] active)
+              (NN:[1043..1047] site))
+          (PP (IN:[1048..1050] of)
+            (NP (DT:[1051..1052] a)
+               (NN:[1053..1063] cytochrome) (NN:[1064..1069] P-450)))
+          (PP (IN:[1071..1074] for)
+            (NP
+              (NP (JJ:[1075..1089] stereospecific) (NN:[1090..1100] metabolism))
+              (PP (IN:[1101..1103] of)
+                (NP
+                  (NP (NN:[1104..1113] bufuralol))
+                  (CC:[1114..1117] and)
+                  (NP (JJ:[1118..1123] other)
+                    (ADJP (RB:[1124..1139] polymorphically)
+                          (VBN:[1140..1151] metabolized))
+                    (NNS:[1153..1163] substrates)))))))))
+    (VP (VBD:[1164..1167] was)
+      (VP (VBN:[1168..1179] constructed)
+        (NP-1 (-NONE-:[1179..1179] *))))
+    (.:[1179..1180] .)))
+
+;sentence 7 Span:1181..1377
+;Two cytochrome P-450 isozymes, P-450 buf I and P-450  buf II, both with MW
+;50,000 Da, were purified from human liver on the basis of  their ability to
+;metabolize bufuralol to 1'-hydroxy-bufuralol.
+;[1185..1210]:cyp450:"cytochrome P-450 isozymes"
+;[1212..1223]:cyp450:"P-450 buf I"
+;[1228..1241]:cyp450:"P-450  buf II"
+;[1253..1255]:quantitative-name:"MW"
+;[1256..1262]:quantitative-value:"50,000"
+;[1263..1265]:quantitative-units:"Da"
+;[1343..1352]:substance:"bufuralol"
+;[1356..1376]:substance:"1'-hydroxy-bufuralol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[1181..1184] Two)
+        
+        (NML (NN:[1185..1195] cytochrome) (NN:[1196..1201] P-450))
+        (NNS:[1202..1210] isozymes))
+      (,:[1210..1211] ,)
+      (NP
+        (NP
+          (NP (NN:[1212..1217] P-450) (NN:[1218..1221] buf) (CD:[1222..1223] I))
+          (CC:[1224..1227] and)
+          (NP (NN:[1228..1233] P-450) (NN:[1235..1238] buf) (CD:[1239..1241] II)))
+        (,:[1241..1242] ,)
+        (NP
+          (NP (DT:[1243..1247] both))
+          (PP (IN:[1248..1252] with)
+            (NP (NN:[1253..1255] MW) (CD:[1256..1262] 50,000)
+                (NN:[1263..1265] Da))))))
+    (,:[1265..1266] ,)
+    (VP (VBD:[1267..1271] were)
+      (VP (VBN:[1272..1280] purified)
+        (NP-1 (-NONE-:[1280..1280] *))
+        (PP (IN:[1281..1285] from)
+          (NP (JJ:[1286..1291] human) (NN:[1292..1297] liver)))
+        (PP (IN:[1298..1300] on)
+          (NP
+            (NP (DT:[1301..1304] the) (NN:[1305..1310] basis))
+            (PP (IN:[1311..1313] of)
+              (NP (PRP$:[1315..1320] their) (NN:[1321..1328] ability)
+                (S
+                  (NP-SBJ (-NONE-:[1328..1328] *))
+                  (VP (TO:[1329..1331] to)
+                    (VP (VB:[1332..1342] metabolize)
+                      (NP (NN:[1343..1352] bufuralol))
+                      (PP (TO:[1353..1355] to)
+                        (NP (NN:[1356..1376] 1'-hydroxy-bufuralol))))))))))))
+    (.:[1376..1377] .)))
+
+;sentence 8 Span:1378..1564
+;However, P-450  buf I metabolized bufuralol in a highly stereoselective
+;fashion ((-)/(+) ratio  0.16) as compared to P-450 buf II (ratio 0.99) and
+;had a markedly lower Km for  bufuralol.
+;[1387..1399]:cyp450:"P-450  buf I"
+;[1412..1421]:substance:"bufuralol"
+;[1459..1466]:quantitative-name:"(-)/(+)"
+;[1474..1478]:quantitative-value:"0.16"
+;[1495..1507]:cyp450:"P-450 buf II"
+;[1515..1519]:quantitative-value:"0.99"
+;[1546..1548]:quantitative-name:"Km"
+;[1554..1563]:substance:"bufuralol"
+(SENT
+  (S
+    (ADVP (RB:[1378..1385] However))
+    (,:[1385..1386] ,)
+    (NP-SBJ (NN:[1387..1392] P-450) (NN:[1394..1397] buf) (CD:[1398..1399] I))
+    (VP
+      (VP (VBD:[1400..1411] metabolized)
+        (NP (NN:[1412..1421] bufuralol))
+        (PP (IN:[1422..1424] in)
+          (NP (DT:[1425..1426] a)
+            (ADJP (RB:[1427..1433] highly) (JJ:[1434..1449] stereoselective))
+            (NN:[1450..1457] fashion)))
+        (PRN (-LRB-:[1458..1459] -LRB-)
+          (FRAG
+            (NP
+              (NML (-LRB-:[1459..1460] -LRB-) (SYM:[1460..1461] -)
+                   (-RRB-:[1461..1462] -RRB-) (SYM:[1462..1463] /)
+                   (-LRB-:[1463..1464] -LRB-) (SYM:[1464..1465] +)
+                   (-RRB-:[1465..1466] -RRB-))
+              (NN:[1467..1472] ratio))
+            (NP (CD:[1474..1478] 0.16)))
+          (-RRB-:[1478..1479] -RRB-))
+        (PP (IN:[1480..1482] as)
+          (S-NOM
+            (NP-SBJ-1 (-NONE-:[1482..1482] *))
+            (VP (VBN:[1483..1491] compared)
+              (NP-1 (-NONE-:[1491..1491] *))
+              (PP-CLR (TO:[1492..1494] to)
+                (NP
+                   (NN:[1495..1500] P-450) (NN:[1501..1504] buf)
+                   (CD:[1505..1507] II)
+                  (PRN (-LRB-:[1508..1509] -LRB-)
+                    (FRAG
+                      (NP (NN:[1509..1514] ratio))
+                      (NP (CD:[1515..1519] 0.99)))
+                    (-RRB-:[1519..1520] -RRB-))))))))
+      (CC:[1521..1524] and)
+      (VP (VBD:[1525..1528] had)
+        (NP
+          (NP (DT:[1529..1530] a)
+            (ADJP (RB:[1531..1539] markedly) (JJR:[1540..1545] lower))
+            (NN:[1546..1548] Km))
+          (PP (IN:[1549..1552] for)
+            (NP (NN:[1554..1563] bufuralol))))))
+    (.:[1563..1564] .)))
+
+;sentence 9 Span:1565..1699
+;Moreover, bufuralol 1'-hydroxylation by P-450 buf I was uniquely 
+;characterized by its extreme sensitivity to inhibition by quinidine.
+;[1575..1584]:substance:"bufuralol"
+;[1605..1616]:cyp450:"P-450 buf I"
+;[1689..1698]:substance:"quinidine"
+(SENT
+  (S
+    (ADVP (RB:[1565..1573] Moreover))
+    (,:[1573..1574] ,)
+    (NP-SBJ-1
+      (NP (NN:[1575..1584] bufuralol) (NN:[1585..1601] 1'-hydroxylation))
+      (PP (IN:[1602..1604] by)
+        (NP (NN:[1605..1610] P-450) (NN:[1611..1614] buf) (CD:[1615..1616] I))))
+    (VP (VBD:[1617..1620] was)
+      (ADVP-MNR (RB:[1621..1629] uniquely))
+      (VP (VBN:[1631..1644] characterized)
+        (NP-1 (-NONE-:[1644..1644] *))
+        (PP (IN:[1645..1647] by)
+          (NP-LGS
+            (NP (PRP$:[1648..1651] its) (JJ:[1652..1659] extreme)
+                (NN:[1660..1671] sensitivity))
+            (PP (TO:[1672..1674] to)
+              (NP
+                (NP (NN:[1675..1685] inhibition))
+                (PP (IN:[1686..1688] by)
+                  (NP (NN:[1689..1698] quinidine)))))))))
+    (.:[1698..1699] .)))
+
+;sentence 10 Span:1700..1830
+;Antibodies  against P-450 buf I and P-450 buf II inhibited bufuralol
+;metabolism in  microsomes and with the reconstituted enzymes.
+;[1700..1710]:substance:"Antibodies"
+;[1720..1731]:cyp450:"P-450 buf I"
+;[1736..1748]:cyp450:"P-450 buf II"
+;[1759..1768]:substance:"bufuralol"
+;[1822..1829]:cyp450:"enzymes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1700..1710] Antibodies))
+      (PP (IN:[1712..1719] against)
+        (NP
+          (NP (NN:[1720..1725] P-450) (NN:[1726..1729] buf) (CD:[1730..1731] I))
+          (CC:[1732..1735] and)
+          (NP (NN:[1736..1741] P-450) (NN:[1742..1745] buf) (CD:[1746..1748] II)))))
+    (VP (VBD:[1749..1758] inhibited)
+      (NP (NN:[1759..1768] bufuralol) (NN:[1769..1779] metabolism))
+      (PP
+        (PP-LOC (IN:[1780..1782] in)
+          (NP (NNS:[1784..1794] microsomes)))
+        (CC:[1795..1798] and)
+        (PP (IN:[1799..1803] with)
+          (NP (DT:[1804..1807] the) (VBN:[1808..1821] reconstituted)
+              (NNS:[1822..1829] enzymes)))))
+    (.:[1829..1830] .)))
+
+;sentence 11 Span:1831..2047
+;Immunochemical studies with these  antibodies with microsomes and
+;translations in vitro of RNA from livers of  extensive and poor metabolizers
+;showed no evidence for a decrease in the  recognized protein or its mRNA.
+;[1866..1876]:substance:"antibodies"
+;[1922..1925]:substance:"RNA"
+;[1961..1973]:substance:"metabolizers"
+;[2027..2034]:substance:"protein"
+;[2042..2046]:substance:"mRNA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1831..1845] Immunochemical) (NNS:[1846..1853] studies))
+      (PP (IN:[1854..1858] with)
+        (NP
+          (NP (DT:[1859..1864] these) (NNS:[1866..1876] antibodies))
+          (PP (IN:[1877..1881] with)
+            (NP
+              (NP (NNS:[1882..1892] microsomes) (CC:[1893..1896] and)
+                  (NNS:[1897..1909] translations))
+              (ADJP (FW:[1910..1912] in) (FW:[1913..1918] vitro))
+              (PP (IN:[1919..1921] of)
+                (NP
+                  (NP (NN:[1922..1925] RNA))
+                  (PP (IN:[1926..1930] from)
+                    (NP
+                      (NP (NNS:[1931..1937] livers))
+                      (PP (IN:[1938..1940] of)
+                        (NP
+                          (NP (JJ:[1942..1951] extensive)
+                            (NML-1 (-NONE-:[1951..1951] *P*)))
+                          (CC:[1952..1955] and)
+                          (NP (JJ:[1956..1960] poor)
+                            (NML-1 (NNS:[1961..1973] metabolizers))))))))))))))
+    (VP (VBD:[1974..1980] showed)
+      (NP
+        (NP (DT:[1981..1983] no) (NN:[1984..1992] evidence))
+        (PP (IN:[1993..1996] for)
+          (NP
+            (NP (DT:[1997..1998] a) (NN:[1999..2007] decrease))
+            (PP (IN:[2008..2010] in)
+              (NP
+                (NP (DT:[2011..2014] the) (VBN:[2016..2026] recognized)
+                    (NN:[2027..2034] protein))
+                (CC:[2035..2037] or)
+                (NP (PRP$:[2038..2041] its) (NN:[2042..2046] mRNA))))))))
+    (.:[2046..2047] .)))
+
+;sentence 12 Span:2048..2256
+;Because the antibodies do not discriminate  between P-450 buf I and P-450 buf
+;II, both a decreased content of P-450 buf I or  its functional alteration
+;could explain the polymorphic metabolism in  microsomes.
+;[2060..2070]:substance:"antibodies"
+;[2100..2111]:cyp450:"P-450 buf I"
+;[2116..2128]:cyp450:"P-450 buf II"
+;[2158..2169]:cyp450:"P-450 buf I"
+(SENT
+  (S
+    (SBAR-PRP (IN:[2048..2055] Because)
+      (S
+        (NP-SBJ (DT:[2056..2059] the) (NNS:[2060..2070] antibodies))
+        (VP (VBP:[2071..2073] do) (RB:[2074..2077] not)
+          (VP (VB:[2078..2090] discriminate)
+            (PP (IN:[2092..2099] between)
+              (NP
+                (NP (NN:[2100..2105] P-450) (NN:[2106..2109] buf)
+                    (CD:[2110..2111] I))
+                (CC:[2112..2115] and)
+                (NP (NN:[2116..2121] P-450) (NN:[2122..2125] buf)
+                    (CD:[2126..2128] II))))))))
+    (,:[2128..2129] ,)
+    (NP-SBJ (CC:[2130..2134] both)
+      (NP
+        (NP (DT:[2135..2136] a) (VBN:[2137..2146] decreased)
+            (NN:[2147..2154] content))
+        (PP (IN:[2155..2157] of)
+          (NP (NN:[2158..2163] P-450) (NN:[2164..2167] buf) (CD:[2168..2169] I))))
+      (CC:[2170..2172] or)
+      (NP (PRP$:[2174..2177] its) (JJ:[2178..2188] functional)
+          (NN:[2189..2199] alteration)))
+    (VP (MD:[2200..2205] could)
+      (VP (VB:[2206..2213] explain)
+        (NP
+          (NP (DT:[2214..2217] the) (JJ:[2218..2229] polymorphic)
+              (NN:[2230..2240] metabolism))
+          (PP-LOC (IN:[2241..2243] in)
+            (NP (NNS:[2245..2255] microsomes))))))
+    (.:[2255..2256] .)))
+
+;sentence 13 Span:2257..2430
+;The genetically defective stereospecific metabolism of mephenytoin  was
+;determined in liver microsomes of extensive and poor metabolizers of 
+;mephenytoin phenotyped in vivo.
+;[2312..2323]:substance:"mephenytoin"
+;[2382..2394]:substance:"metabolizers"
+;[2399..2410]:substance:"mephenytoin"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[2257..2260] The)
+        (ADJP (RB:[2261..2272] genetically) (JJ:[2273..2282] defective))
+        (JJ:[2283..2297] stereospecific) (NN:[2298..2308] metabolism))
+      (PP (IN:[2309..2311] of)
+        (NP (NN:[2312..2323] mephenytoin))))
+    (VP (VBD:[2325..2328] was)
+      (VP (VBN:[2329..2339] determined)
+        (NP-2 (-NONE-:[2339..2339] *))
+        (PP-LOC (IN:[2340..2342] in)
+          (NP
+            (NP (NN:[2343..2348] liver) (NNS:[2349..2359] microsomes))
+            (PP (IN:[2360..2362] of)
+              (NP
+                (NP
+                  (NP
+                    (NP (JJ:[2363..2372] extensive)
+                      (NML-1 (-NONE-:[2372..2372] *P*)))
+                    (CC:[2373..2376] and)
+                    (NP (JJ:[2377..2381] poor)
+                      (NML-1 (NNS:[2382..2394] metabolizers))))
+                  (PP (IN:[2395..2397] of)
+                    (NP (NN:[2399..2410] mephenytoin))))
+                (VP (VBN:[2411..2421] phenotyped)
+                  (NP (-NONE-:[2421..2421] *))
+                  (ADVP (FW:[2422..2424] in) (FW:[2425..2429] vivo)))))))))
+    (.:[2429..2430] .)))
+
+;sentence 14 Span:2431..2675
+;Microsomes of poor metabolizers were  characterized by an increased Km and a
+;decreased Vmax for S-mephenytoin  hydroxylation as compared to extensive
+;metabolizers and a loss of  stereospecificity for the hydroxylation of
+;S-versus R-mephenytoin.
+;[2450..2462]:substance:"metabolizers"
+;[2499..2501]:quantitative-name:"Km"
+;[2518..2522]:quantitative-name:"Vmax"
+;[2527..2540]:substance:"S-mephenytoin"
+;[2581..2593]:substance:"metabolizers"
+;[2652..2654]...[2663..2674]:substance:"S-"..."mephenytoin"
+;[2661..2674]:substance:"R-mephenytoin"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[2431..2441] Microsomes))
+      (PP (IN:[2442..2444] of)
+        (NP (JJ:[2445..2449] poor) (NNS:[2450..2462] metabolizers))))
+    (VP (VBD:[2463..2467] were)
+      (VP (VBN:[2469..2482] characterized)
+        (NP-2 (-NONE-:[2482..2482] *))
+        (PP (IN:[2483..2485] by)
+          (NP-LGS
+            (NP
+              (NP
+                (NP (DT:[2486..2488] an) (VBN:[2489..2498] increased)
+                    (NN:[2499..2501] Km))
+                (CC:[2502..2505] and)
+                (NP (DT:[2506..2507] a) (VBN:[2508..2517] decreased)
+                    (NN:[2518..2522] Vmax)))
+              (PP (IN:[2523..2526] for)
+                (NP (NN:[2527..2540] S-mephenytoin)
+                    (NN:[2542..2555] hydroxylation)))
+              (PP (IN:[2556..2558] as)
+                (S-NOM
+                  (NP-SBJ-1 (-NONE-:[2558..2558] *))
+                  (VP (VBN:[2559..2567] compared)
+                    (NP-1 (-NONE-:[2567..2567] *))
+                    (PP-CLR (TO:[2568..2570] to)
+                      (NP (JJ:[2571..2580] extensive)
+                          (NNS:[2581..2593] metabolizers)))))))
+            (CC:[2594..2597] and)
+            (NP
+              (NP (DT:[2598..2599] a) (NN:[2600..2604] loss))
+              (PP (IN:[2605..2607] of)
+                (NP
+                  (NP (NN:[2609..2626] stereospecificity))
+                  (PP (IN:[2627..2630] for)
+                    (NP
+                      (NP (DT:[2631..2634] the) (NN:[2635..2648] hydroxylation))
+                      (PP (IN:[2649..2651] of)
+                        (NP
+                          (NP (NN:[2652..2653] S) (HYPH:[2653..2654] -)
+                            (NML-3 (-NONE-:[2654..2654] *P*)))
+                          (IN:[2654..2660] versus)
+                          (NP (NN:[2661..2662] R) (HYPH:[2662..2663] -)
+                            (NML-3 (NN:[2663..2674] mephenytoin))))))))))))))
+    (.:[2674..2675] .)))
+
+;sentence 15 Span:2676..2778
+;A cytochrome  P-450 with high activity for mephenytoin 4-hydroxylation was
+;purified from human  liver.
+;[2678..2695]:cyp450:"cytochrome  P-450"
+;[2719..2730]:substance:"mephenytoin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[2676..2677] A)
+         (NN:[2678..2688] cytochrome) (NN:[2690..2695] P-450))
+      (PP (IN:[2696..2700] with)
+        (NP (JJ:[2701..2705] high) (NN:[2706..2714] activity)))
+      (PP (IN:[2715..2718] for)
+        (NP (NN:[2719..2730] mephenytoin) (NN:[2731..2746] 4-hydroxylation))))
+    (VP (VBD:[2747..2750] was)
+      (VP (VBN:[2751..2759] purified)
+        (NP-1 (-NONE-:[2759..2759] *))
+        (PP (IN:[2760..2764] from)
+          (NP (JJ:[2765..2770] human) (NN:[2772..2777] liver)))))
+    (.:[2777..2778] .)))
+
+;sentence 16 Span:2779..2937
+;Immunochemical studies with inhibitory antibodies against this isozyme 
+;suggest the presence in poor-metabolizer microsomes of a functionally altered
+; enzyme.
+;[2818..2828]:substance:"antibodies"
+;[2842..2849]:substance:"isozyme"
+;[2880..2891]:substance:"metabolizer"
+;[2930..2936]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[2779..2793] Immunochemical) (NNS:[2794..2801] studies))
+      (PP (IN:[2802..2806] with)
+        (NP
+          (NP (JJ:[2807..2817] inhibitory) (NNS:[2818..2828] antibodies))
+          (PP (IN:[2829..2836] against)
+            (NP (DT:[2837..2841] this) (NN:[2842..2849] isozyme))))))
+    (VP (VBP:[2851..2858] suggest)
+      (NP
+        (NP (DT:[2859..2862] the) (NN:[2863..2871] presence))
+        (PP-LOC (IN:[2872..2874] in)
+          (NP
+            (NP
+              (NML (JJ:[2875..2879] poor) (HYPH:[2879..2880] -)
+                   (NN:[2880..2891] metabolizer))
+              (NNS:[2892..2902] microsomes))
+            (PP (IN:[2903..2905] of)
+              (NP (DT:[2906..2907] a)
+                (ADJP (RB:[2908..2920] functionally) (VBN:[2921..2928] altered))
+                (NN:[2930..2936] enzyme)))))))
+    (.:[2936..2937] .)))
+
+;section 17 Span:2941..2985
+;PMID: 2874666 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2941..2945] PMID) (::[2945..2946] :) (CD:[2947..2954] 2874666)
+        (NN:[2955..2956] -LSB-) (NNP:[2956..2962] PubMed) (::[2963..2964] -)
+        (NN:[2965..2972] indexed) (IN:[2973..2976] for)
+        (NNP:[2977..2985] MEDLINE-RSB-)))

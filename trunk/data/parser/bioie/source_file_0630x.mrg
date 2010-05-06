@@ -1,0 +1,337 @@
+;PMID: 12065772
+;source_file_615.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:39..165] = [t:39..165]
+;2)section:[e:169..225] = [t:169..225]
+;3)section:[e:229..318] = [t:229..318]
+;4)sentence:[e:322..406] = [t:322..406]
+;5)sentence:[e:407..667] = [t:407..667]
+;6)sentence:[e:668..821] = [t:668..821]
+;7)sentence:[e:822..933] = [t:822..933]
+;8)sentence:[e:935..1066] = [t:935..1066]
+;9)sentence:[e:1067..1227] = [t:1067..1227]
+;10)section:[e:1228..1388] = [t:1228..1388]
+;11)section:[e:1392..1437] = [t:1392..1437]
+
+;section 0 Span:0..34
+;Mod Pathol  2002 Jun;15(6):599-605
+(SEC
+  (FRAG (NNP:[0..3] Mod) (NNP:[4..10] Pathol) (VBD:[12..16] 2002)
+        (DT:[17..22] Jun;1) (CD:[22..23] 5) (NN:[23..24] -LRB-) (NN:[24..25] 6)
+        (NN:[25..26] -RRB-) (::[26..27] :) (CD:[27..29] 59) (CD:[29..34] 9-605)))
+
+;sentence 1 Span:39..165
+;Mucinous and nonmucinous appendiceal adenocarcinomas: different 
+;clinicopathological features but similar genetic alterations.
+;[39..47]...[64..91]:malignancy-type:"Mucinous"..."appendiceal
+;adenocarcinomas"
+;[52..91]:malignancy:"nonmucinous appendiceal adenocarcinomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[39..47] Mucinous)
+        (NML-1 (-NONE-:[47..47] *P*)))
+      (CC:[48..51] and)
+      (NP (JJ:[52..63] nonmucinous)
+        (NML-1 (JJ:[64..75] appendiceal) (NNS:[76..91] adenocarcinomas))))
+    (::[91..92] :)
+    (NP
+      (NP (JJ:[93..102] different) (JJ:[104..123] clinicopathological)
+          (NNS:[124..132] features))
+      (CC:[133..136] but)
+      (NP (JJ:[137..144] similar) (JJ:[145..152] genetic)
+          (NNS:[153..164] alterations)))
+    (.:[164..165] .)))
+
+;section 2 Span:169..225
+;Kabbani W, Houlihan PS, Luthra R, Hamilton SR, Rashid A.
+(SEC
+  (FRAG (NNP:[169..176] Kabbani) (NNP:[177..178] W) (,:[178..179] ,)
+        (NNP:[180..188] Houlihan) (NNP:[189..191] PS) (,:[191..192] ,)
+        (NNP:[193..199] Luthra) (NNP:[200..201] R) (,:[201..202] ,)
+        (NNP:[203..211] Hamilton) (NNP:[212..214] SR) (,:[214..215] ,)
+        (NNP:[216..222] Rashid) (NN:[223..225] A.)))
+
+;section 3 Span:229..318
+;Department of Pathology, University of Texas M. D. Anderson Cancer Center, 
+;Houston, USA.
+(SEC
+  (FRAG (NNP:[229..239] Department) (IN:[240..242] of)
+        (NNP:[243..252] Pathology) (,:[252..253] ,) (NNP:[254..264] University)
+        (IN:[265..267] of) (NNP:[268..273] Texas) (NNP:[274..276] M.)
+        (NNP:[277..279] D.) (NNP:[280..288] Anderson) (NNP:[289..295] Cancer)
+        (NNP:[296..302] Center) (,:[302..303] ,) (NNP:[305..312] Houston)
+        (,:[312..313] ,) (NNP:[314..317] USA) (.:[317..318] .)))
+
+;sentence 4 Span:322..406
+;The genetic alterations of appendiceal carcinomas have not been reported in 
+;detail.
+;[349..371]:malignancy:"appendiceal carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[322..325] The) (JJ:[326..333] genetic)
+          (NNS:[334..345] alterations))
+      (PP (IN:[346..348] of)
+        (NP (JJ:[349..360] appendiceal) (NNS:[361..371] carcinomas))))
+    (VP (VBP:[372..376] have) (RB:[377..380] not)
+      (VP (VBN:[381..385] been)
+        (VP (VBN:[386..394] reported)
+          (NP-1 (-NONE-:[394..394] *))
+          (PP (IN:[395..397] in)
+            (NP (NN:[399..405] detail))))))
+    (.:[405..406] .)))
+
+;sentence 5 Span:407..667
+;We studied the clinicopathological factors and genetic alterations  including
+;microsatellite instability, p53 overexpression, and mutations of the  K-ras
+;proto-oncogene of 30 appendiceal adenocarcinomas, consisting of 23  mucinous
+;and 7 nonmucinous carcinomas.
+;[513..516]:gene-protein:"p53"
+;[555..560]:gene-rna:"K-ras"
+;[582..609]:malignancy:"appendiceal adenocarcinomas"
+;[629..637]:malignancy:"mucinous"
+;[644..666]:malignancy:"nonmucinous carcinomas"
+(SENT
+  (S
+    (NP-SBJ (PRP:[407..409] We))
+    (VP (VBD:[410..417] studied)
+      (NP
+        (NP (DT:[418..421] the)
+          (NML
+            (NML (JJ:[422..441] clinicopathological) (NNS:[442..449] factors))
+            (CC:[450..453] and)
+            (NML (JJ:[454..461] genetic) (NNS:[462..473] alterations))))
+        (PP (VBG:[475..484] including)
+          (NP
+            (NP
+              (NP (NN:[485..499] microsatellite) (NN:[500..511] instability))
+              (,:[511..512] ,)
+              (NP (NN:[513..516] p53) (NN:[517..531] overexpression))
+              (,:[531..532] ,) (CC:[533..536] and)
+              (NP (NNS:[537..546] mutations)))
+            (PP (IN:[547..549] of)
+              (NP
+                (NP (DT:[550..553] the) (NN:[555..560] K-ras)
+                    (AFX:[561..566] proto) (HYPH:[566..567] -)
+                    (NN:[567..575] oncogene))
+                (PP (IN:[576..578] of)
+                  (NP
+                    (NP (CD:[579..581] 30)
+                       (JJ:[582..593] appendiceal)
+                       (NNS:[594..609] adenocarcinomas))
+                    (,:[609..610] ,)
+                    (VP (VBG:[611..621] consisting)
+                      (PP (IN:[622..624] of)
+                        (NP
+                          (NP (CD:[625..627] 23) (JJ:[629..637] mucinous)
+                            (NML-1 (-NONE-:[637..637] *P*)))
+                          (CC:[638..641] and)
+                          (NP (CD:[642..643] 7)
+                             (JJ:[644..655] nonmucinous)
+                            (NML-1 (NNS:[656..666] carcinomas))))))))))))))
+    (.:[666..667] .)))
+
+;sentence 6 Span:668..821
+;Sixteen (70%) mucinous carcinomas  presented with pseudomyxoma peritonei, but
+;6 of 7 (86%) nonmucinous carcinomas  presented with appendicitis (P =.002).
+;[676..701]:malignancy:"(70%) mucinous carcinomas"
+;[718..740]:malignancy:"pseudomyxoma peritonei"
+;[746..781]:malignancy:"6 of 7 (86%) nonmucinous carcinomas"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[668..675] Sixteen)
+        
+        (PRN (-LRB-:[676..677] -LRB-)
+          (NP (CD:[677..679] 70) (NN:[679..680] %))
+          (-RRB-:[680..681] -RRB-))
+        (JJ:[682..690] mucinous) (NNS:[691..701] carcinomas))
+      (VP (VBD:[703..712] presented)
+        (PP (IN:[713..717] with)
+          (NP (NN:[718..730] pseudomyxoma) (NN:[731..740] peritonei)))))
+    (,:[740..741] ,) (CC:[742..745] but)
+    (S
+      (NP-SBJ
+        (NP (CD:[746..747] 6))
+        (PP (IN:[748..750] of)
+          (NP (CD:[751..752] 7)
+            (PRN (-LRB-:[753..754] -LRB-)
+              (NP (CD:[754..756] 86) (NN:[756..757] %))
+              (-RRB-:[757..758] -RRB-))
+            (JJ:[759..770] nonmucinous) (NNS:[771..781] carcinomas))))
+      (VP (VBD:[783..792] presented)
+        (PP (IN:[793..797] with)
+          (NP (NN:[798..810] appendicitis)))
+        (PRN (-LRB-:[811..812] -LRB-)
+          (S
+            (NP-SBJ (NN:[812..813] P))
+            (VP (SYM:[814..815] =)
+              (NP (CD:[815..819] .002))))
+          (-RRB-:[819..820] -RRB-))))
+    (.:[820..821] .)))
+
+;sentence 7 Span:822..933
+;All carcinomas were microsatellite  stable, and p53 overexpression was
+;present in only 1 of 30 (3%) carcinomas.
+;[826..836]:malignancy:"carcinomas"
+;[870..873]:gene-protein:"p53"
+;[909..932]:malignancy:"1 of 30 (3%) carcinomas"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[822..825] All) (NNS:[826..836] carcinomas))
+      (VP (VBD:[837..841] were)
+        (NP-PRD (NN:[842..856] microsatellite) (JJ:[858..864] stable))))
+    (,:[864..865] ,) (CC:[866..869] and)
+    (S
+      (NP-SBJ (NN:[870..873] p53) (NN:[874..888] overexpression))
+      (VP (VBD:[889..892] was)
+        (ADJP-PRD (JJ:[893..900] present))
+        (PP-LOC (IN:[901..903] in)
+          (NP (RB:[904..908] only)
+             (CD:[909..910] 1)
+            (PP (IN:[911..913] of)
+              (NP (CD:[914..916] 30)
+                (PRN (-LRB-:[917..918] -LRB-)
+                  (NP (CD:[918..919] 3) (NN:[919..920] %))
+                  (-RRB-:[920..921] -RRB-))
+                (NNS:[922..932] carcinomas)))))))
+    (.:[932..933] .)))
+
+;sentence 8 Span:935..1066
+;K-ras mutation was present in 11 of 20 (55%) carcinomas, including 8 of 16
+;(50%)  mucinous and 3 of 4 (75%) nonmucinous carcinomas.
+;[935..940]:gene-rna:"K-ras"
+;[965..990]:malignancy:"11 of 20 (55%) carcinomas"
+;[1002..1025]:malignancy:"8 of 16 (50%)  mucinous"
+;[1030..1065]:malignancy:"3 of 4 (75%) nonmucinous carcinomas"
+(SENT
+  (S
+    (NP-SBJ (NN:[935..940] K-ras) (NN:[941..949] mutation))
+    (VP (VBD:[950..953] was)
+      (ADJP-PRD (JJ:[954..961] present))
+      (PP-LOC (IN:[962..964] in)
+        (NP
+          
+          (NP (CD:[965..967] 11))
+          (PP (IN:[968..970] of)
+            (NP (CD:[971..973] 20)
+              (PRN (-LRB-:[974..975] -LRB-)
+                (NP (CD:[975..977] 55) (NN:[977..978] %))
+                (-RRB-:[978..979] -RRB-))
+              (NNS:[980..990] carcinomas)))
+          (,:[990..991] ,)
+          (PP (VBG:[992..1001] including)
+            (NP
+              (NP
+                (NP (CD:[1002..1003] 8))
+                (PP (IN:[1004..1006] of)
+                  (NP (CD:[1007..1009] 16)
+                    (PRN (-LRB-:[1010..1011] -LRB-)
+                      (NP (CD:[1011..1013] 50) (NN:[1013..1014] %))
+                      (-RRB-:[1014..1015] -RRB-))
+                    (JJ:[1017..1025] mucinous)
+                    (NML-1 (-NONE-:[1025..1025] *P*)))))
+              (CC:[1026..1029] and)
+              (NP
+                (NP (CD:[1030..1031] 3))
+                (PP (IN:[1032..1034] of)
+                  (NP (CD:[1035..1036] 4)
+                    (PRN (-LRB-:[1037..1038] -LRB-)
+                      (NP (CD:[1038..1040] 75) (NN:[1040..1041] %))
+                      (-RRB-:[1041..1042] -RRB-))
+                    (JJ:[1043..1054] nonmucinous)
+                    (NML-1 (NNS:[1055..1065] carcinomas))))))))))
+    (.:[1065..1066] .)))
+
+;sentence 9 Span:1067..1227
+;The mean survival of patients  with mucinous carcinomas was 26 +/- 19 months
+;compared with 13 +/- 9 months for  patients with nonmucinous carcinomas (P
+;=.0002).
+;[1103..1122]:malignancy:"mucinous carcinomas"
+;[1193..1215]:malignancy:"nonmucinous carcinomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1067..1070] The) (JJ:[1071..1075] mean)
+          (NN:[1076..1084] survival))
+      (PP (IN:[1085..1087] of)
+        (NP
+          (NP (NNS:[1088..1096] patients))
+          (PP (IN:[1098..1102] with)
+            (NP (JJ:[1103..1111] mucinous) (NNS:[1112..1122] carcinomas))))))
+    (VP (VBD:[1123..1126] was)
+      (NP-PRD
+        (QP (CD:[1127..1129] 26) (SYM:[1130..1133] +/-) (CD:[1134..1136] 19))
+        (NNS:[1137..1143] months))
+      (S-ADV
+        (NP-SBJ-1 (-NONE-:[1143..1143] *))
+        (VP (VBN:[1144..1152] compared)
+          (NP-1 (-NONE-:[1152..1152] *))
+          (PP-CLR (IN:[1153..1157] with)
+            (NP
+              (NP
+                (QP (CD:[1158..1160] 13) (SYM:[1161..1164] +/-)
+                    (CD:[1165..1166] 9))
+                (NNS:[1167..1173] months))
+              (PP (IN:[1174..1177] for)
+                (NP
+                  (NP (NNS:[1179..1187] patients))
+                  (PP (IN:[1188..1192] with)
+                    (NP (JJ:[1193..1204] nonmucinous)
+                        (NNS:[1205..1215] carcinomas)))))))))
+      (PRN (-LRB-:[1216..1217] -LRB-)
+        (S
+          (NP-SBJ (NN:[1217..1218] P))
+          (VP (SYM:[1219..1220] =)
+            (NP (CD:[1220..1225] .0002))))
+        (-RRB-:[1225..1226] -RRB-)))
+    (.:[1226..1227] .)))
+
+;section 10 Span:1228..1388
+;Our findings suggest that  mucinous and nonmucinous carcinomas of appendix
+;have similar genetic  alterations, but different clinical presentation and
+;prognosis.
+;[1255..1263]:malignancy:"mucinous"
+;[1268..1302]:malignancy:"nonmucinous carcinomas of appendix"
+(SEC
+  (S
+    (NP-SBJ (PRP$:[1228..1231] Our) (NNS:[1232..1240] findings))
+    (VP (VBP:[1241..1248] suggest)
+      (SBAR (IN:[1249..1253] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (JJ:[1255..1263] mucinous)
+                (NML-1 (-NONE-:[1263..1263] *P*)))
+              (CC:[1264..1267] and)
+              (NP (JJ:[1268..1279] nonmucinous)
+                (NML-1 (NNS:[1280..1290] carcinomas))))
+            (PP (IN:[1291..1293] of)
+              (NP (NN:[1294..1302] appendix))))
+          (VP (VBP:[1303..1307] have)
+            (NP
+              (NP (JJ:[1308..1315] similar) (JJ:[1316..1323] genetic)
+                  (NNS:[1325..1336] alterations))
+              (,:[1336..1337] ,) (CC:[1338..1341] but)
+              (NP (JJ:[1342..1351] different)
+                (NML
+                  (NML (JJ:[1352..1360] clinical) (NN:[1361..1373] presentation))
+                  (CC:[1374..1377] and)
+                  (NML (NN:[1378..1387] prognosis)))))))))
+    (.:[1387..1388] .)))
+;ERROR_Entity in section[1255..1263]:malignancy "mucinous"
+;ERROR_Entity in section[1268..1302]:malignancy "nonmucinous carcinomas of
+;appendix"
+
+;section 11 Span:1392..1437
+;PMID: 12065772 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1392..1396] PMID) (::[1396..1397] :) (CD:[1398..1406] 12065772)
+        (NN:[1407..1408] -LSB-) (NNP:[1408..1414] PubMed) (::[1415..1416] -)
+        (NN:[1417..1424] indexed) (IN:[1425..1428] for)
+        (NNP:[1429..1437] MEDLINE-RSB-)))

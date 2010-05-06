@@ -1,0 +1,270 @@
+;PMID: 9065402
+;source_file_521.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)section:[e:43..54] = [t:43..54]
+;2)section:[e:57..95] = [t:57..95]
+;3)sentence:[e:99..193] = [t:99..193]
+;4)section:[e:197..275] = [t:197..275]
+;5)section:[e:279..395] = [t:279..395]
+;6)sentence:[e:399..506] = [t:399..506]
+;7)sentence:[e:507..691] = [t:507..691]
+;8)sentence:[e:692..808] = [t:692..808]
+;9)sentence:[e:809..983] = [t:809..983]
+;10)sentence:[e:984..1175] = [t:984..1175]
+;11)section:[e:1179..1223] = [t:1179..1223]
+
+;section 0 Span:0..38
+;Science  1997 Mar 21;275(5307):1787-90
+(SEC
+  (FRAG (NNP:[0..7] Science) (CD:[9..13] 1997) (NNP:[14..17] Mar)
+        (CD:[18..20] 21) (CD:[20..29] ;275-LRB-5307) (CD:[29..30] -RRB-)
+        (CD:[30..35] :1787) (HYPH:[35..36] -) (CD:[36..38] 90)))
+
+;section 1 Span:43..54
+;Comment in:
+(SEC
+  (FRAG (NN:[43..50] Comment) (IN:[51..53] in) (NN:[53..54] :)))
+
+;section 2 Span:57..95
+;Science. 1997 Mar 21;275(5307):1752-3.
+(SEC
+  (FRAG (NN:[57..64] Science) (IN:[64..65] .) (CD:[66..70] 1997)
+        (NNP:[71..74] Mar) (CD:[75..77] 21) (CD:[77..86] ;275-LRB-5307)
+        (CD:[86..87] -RRB-) (CD:[87..92] :1752) (HYPH:[92..93] -)
+        (CD:[93..94] 3) (.:[94..95] .)))
+
+;sentence 3 Span:99..193
+;Activation of beta-catenin-Tcf signaling in colon cancer by mutations in 
+;beta-catenin or APC.
+;[113..125]:gene-generic:"beta-catenin"
+;[126..129]:gene-generic:"Tcf"
+;[143..155]:malignancy:"colon cancer"
+;[173..185]:gene-rna:"beta-catenin"
+;[189..192]:gene-rna:"APC"
+(SENT
+  (NP-HLN
+    (NP (NN:[99..109] Activation))
+    (PP (IN:[110..112] of)
+      (NP
+        (NML (NN:[113..125] beta-catenin) (HYPH:[125..126] -)
+             (NN:[126..129] Tcf))
+        (NN:[130..139] signaling)))
+    (PP (IN:[140..142] in)
+      (NP (NN:[143..148] colon) (NN:[149..155] cancer)))
+    (PP-MNR (IN:[156..158] by)
+      (NP
+        (NP (NNS:[159..168] mutations))
+        (PP-LOC (IN:[169..171] in)
+          (NP (NN:[173..185] beta-catenin) (CC:[186..188] or)
+              (NN:[189..192] APC)))))
+    (.:[192..193] .)))
+
+;section 4 Span:197..275
+;Morin PJ, Sparks AB, Korinek V, Barker N, Clevers H, Vogelstein B, Kinzler
+;KW.
+(SEC
+  (FRAG (NNP:[197..202] Morin) (NNP:[203..205] PJ) (,:[205..206] ,)
+        (NNP:[207..213] Sparks) (NNP:[214..216] AB) (,:[216..217] ,)
+        (NNP:[218..225] Korinek) (NNP:[226..227] V) (,:[227..228] ,)
+        (NNP:[229..235] Barker) (NNP:[236..237] N) (,:[237..238] ,)
+        (NNP:[239..246] Clevers) (NNP:[247..248] H) (,:[248..249] ,)
+        (NNP:[250..260] Vogelstein) (NNP:[261..262] B) (,:[262..263] ,)
+        (NNP:[264..271] Kinzler) (NNP:[272..275] KW.)))
+
+;section 5 Span:279..395
+;Howard Hughes Medical Institute and Johns Hopkins Oncology Center, 424 North 
+;Bond Street, Baltimore, MD 21231, USA.
+(SEC
+  (FRAG (NNP:[279..285] Howard) (NNP:[286..292] Hughes) (NNP:[293..300] Medical)
+        (NNP:[301..310] Institute) (CC:[311..314] and) (NNP:[315..320] Johns)
+        (NNP:[321..328] Hopkins) (NNP:[329..337] Oncology)
+        (NNP:[338..344] Center) (,:[344..345] ,) (NNP:[346..349] 424)
+        (NNP:[350..355] North) (NNP:[357..361] Bond) (NNP:[362..368] Street)
+        (,:[368..369] ,) (NNP:[370..379] Baltimore) (,:[379..380] ,)
+        (NNP:[381..383] MD) (CD:[384..389] 21231) (,:[389..390] ,)
+        (NNP:[391..394] USA) (.:[394..395] .)))
+
+;sentence 6 Span:399..506
+;Inactivation of the adenomatous polyposis coli (APC) tumor suppressor gene 
+;initiates colorectal neoplasia.
+;[419..445]:gene-rna:"adenomatous polyposis coli"
+;[447..450]:gene-rna:"APC"
+;[485..505]:malignancy:"colorectal neoplasia"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[399..411] Inactivation))
+      (PP (IN:[412..414] of)
+        (NP (DT:[415..418] the)
+          (NML
+            (NML (JJ:[419..430] adenomatous) (NN:[431..440] polyposis)
+                 (NN:[441..445] coli))
+            (NML (-LRB-:[446..447] -LRB-) (NN:[447..450] APC)
+                 (-RRB-:[450..451] -RRB-)))
+          (NML (NN:[452..457] tumor) (NN:[458..468] suppressor))
+          (NN:[469..473] gene))))
+    (VP (VBZ:[475..484] initiates)
+      (NP (JJ:[485..495] colorectal) (NN:[496..505] neoplasia)))
+    (.:[505..506] .)))
+
+;sentence 7 Span:507..691
+;One of the biochemical activities associated  with the APC protein is
+;down-regulation of transcriptional activation mediated  by beta-catenin and T
+;cell transcription factor 4 (Tcf-4).
+;[562..565]:gene-protein:"APC"
+;[636..648]:gene-generic:"beta-catenin"
+;[655..682]:gene-generic:"cell transcription factor 4"
+;[684..689]:gene-generic:"Tcf-4"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[507..510] One))
+      (PP (IN:[511..513] of)
+        (NP
+          (NP (DT:[514..517] the) (JJ:[518..529] biochemical)
+              (NNS:[530..540] activities))
+          (VP (VBN:[541..551] associated)
+            (NP (-NONE-:[551..551] *))
+            (PP-CLR (IN:[553..557] with)
+              (NP (DT:[558..561] the) (NN:[562..565] APC)
+                  (NN:[566..573] protein)))))))
+    (VP (VBZ:[574..576] is)
+      (NP-PRD
+        (NP
+          (NP (RB:[577..581] down) (HYPH:[581..582] -)
+              (NN:[582..592] regulation))
+          (PP (IN:[593..595] of)
+            (NP (JJ:[596..611] transcriptional) (NN:[612..622] activation))))
+        (VP (VBN:[623..631] mediated)
+          (NP (-NONE-:[631..631] *))
+          (PP (IN:[633..635] by)
+            (NP-LGS
+              (NP (NN:[636..648] beta-catenin))
+              (CC:[649..652] and)
+              (NP
+                (NP
+                  (NML
+                    (NML (NN:[653..654] T) (NN:[655..659] cell))
+                    (NN:[660..673] transcription) (NN:[674..680] factor))
+                  (CD:[681..682] 4))
+                (NP (-LRB-:[683..684] -LRB-) (NN:[684..689] Tcf-4)
+                    (-RRB-:[689..690] -RRB-))))))))
+    (.:[690..691] .)))
+
+;sentence 8 Span:692..808
+;The protein products  of mutant APC genes present in colorectal tumors were
+;found to be defective in  this activity.
+;[696..712]:gene-protein:"protein products"
+;[724..727]:gene-rna:"APC"
+;[745..762]:malignancy:"colorectal tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[692..695] The)
+           (NN:[696..703] protein) (NNS:[704..712] products))
+        (PP (IN:[714..716] of)
+          (NP (JJ:[717..723] mutant) (NN:[724..727] APC) (NNS:[728..733] genes))))
+      (ADJP (JJ:[734..741] present)
+        (PP-LOC (IN:[742..744] in)
+          (NP (JJ:[745..755] colorectal) (NNS:[756..762] tumors)))))
+    (VP (VBD:[763..767] were)
+      (VP (VBN:[768..773] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[773..773] *))
+          (VP (TO:[774..776] to)
+            (VP (VB:[777..779] be)
+              (ADJP-PRD (JJ:[780..789] defective))
+              (PP (IN:[790..792] in)
+                (NP (DT:[794..798] this) (NN:[799..807] activity))))))))
+    (.:[807..808] .)))
+
+;sentence 9 Span:809..983
+;Furthermore, colorectal tumors with intact APC genes were found  to contain
+;activating mutations of beta-catenin that altered functionally  significant
+;phosphorylation sites.
+;[822..839]:malignancy:"colorectal tumors"
+;[852..855]:gene-rna:"APC"
+;[909..921]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (ADVP (RB:[809..820] Furthermore))
+    (,:[820..821] ,)
+    (NP-SBJ-1
+      (NP (JJ:[822..832] colorectal) (NNS:[833..839] tumors))
+      (PP (IN:[840..844] with)
+        (NP (JJ:[845..851] intact) (NN:[852..855] APC) (NNS:[856..861] genes))))
+    (VP (VBD:[862..866] were)
+      (VP (VBN:[867..872] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[872..872] *))
+          (VP (TO:[874..876] to)
+            (VP (VB:[877..884] contain)
+              (NP
+                (NP
+                  (NP (VBG:[885..895] activating) (NNS:[896..905] mutations))
+                  (PP (IN:[906..908] of)
+                    (NP (NN:[909..921] beta-catenin))))
+                (SBAR
+                  (WHNP-2 (WDT:[922..926] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[926..926] *T*))
+                    (VP (VBD:[927..934] altered)
+                      (NP
+                        (ADJP (RB:[935..947] functionally)
+                              (JJ:[949..960] significant))
+                        (NN:[961..976] phosphorylation) (NNS:[977..982] sites)))))))))))
+    (.:[982..983] .)))
+
+;sentence 10 Span:984..1175
+;These results indicate that regulation of  beta-catenin is critical to APC's
+;tumor suppressive effect and that this  regulation can be circumvented by
+;mutations in either APC or beta-catenin.
+;[1027..1039]:gene-generic:"beta-catenin"
+;[1055..1058]:gene-rna:"APC"
+;[1155..1158]:gene-rna:"APC"
+;[1162..1174]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[984..989] These) (NNS:[990..997] results))
+    (VP (VBP:[998..1006] indicate)
+      (SBAR
+        (SBAR (IN:[1007..1011] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1012..1022] regulation))
+              (PP (IN:[1023..1025] of)
+                (NP (NN:[1027..1039] beta-catenin))))
+            (VP (VBZ:[1040..1042] is)
+              (ADJP-PRD (JJ:[1043..1051] critical)
+                (PP (TO:[1052..1054] to)
+                  (NP
+                    (NP (NN:[1055..1058] APC) (POS:[1058..1060] 's))
+                    (ADJP (NN:[1061..1066] tumor) (JJ:[1067..1078] suppressive))
+                    (NN:[1079..1085] effect)))))))
+        (CC:[1086..1089] and)
+        (SBAR (IN:[1090..1094] that)
+          (S
+            (NP-SBJ-1 (DT:[1095..1099] this) (NN:[1101..1111] regulation))
+            (VP (MD:[1112..1115] can)
+              (VP (VB:[1116..1118] be)
+                (VP (VBN:[1119..1131] circumvented)
+                  (NP-1 (-NONE-:[1131..1131] *))
+                  (PP-MNR (IN:[1132..1134] by)
+                    (NP
+                      (NP (NNS:[1135..1144] mutations))
+                      (PP-LOC (IN:[1145..1147] in)
+                        (NP (CC:[1148..1154] either) (NN:[1155..1158] APC)
+                            (CC:[1159..1161] or) (NN:[1162..1174] beta-catenin))))))))))))
+    (.:[1174..1175] .)))
+
+;section 11 Span:1179..1223
+;PMID: 9065402 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1179..1183] PMID) (::[1183..1184] :) (CD:[1185..1192] 9065402)
+        (IN:[1193..1194] -LSB-) (NNP:[1194..1200] PubMed) (HYPH:[1201..1202] -)
+        (JJ:[1203..1210] indexed) (IN:[1211..1214] for)
+        (NNP:[1215..1223] MEDLINE-RSB-)))

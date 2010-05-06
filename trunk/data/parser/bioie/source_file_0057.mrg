@@ -1,0 +1,170 @@
+;PMID: 115774
+;source_file_1012.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..28] = [t:0..28]
+;1)sentence:[e:34..100] = [t:34..100]
+;2)section:[e:104..131] = [t:104..131]
+;3)sentence:[e:135..288] = [t:135..288]
+;4)sentence:[e:290..395] = [t:290..395]
+;5)sentence:[e:396..546] = [t:396..546]
+;6)sentence:[e:547..735] = [t:547..735]
+;7)section:[e:739..782] = [t:739..782]
+
+;section 0 Span:0..28
+;Horm Res. 1979;11(4):179-85.
+(SEC
+  (FRAG (NNP:[0..4] Horm) (NNP:[5..8] Res) (.:[8..9] .)
+        ('':[10..18] 1979;11-LRB-) (VBD:[18..20] 4-RRB-) (CD:[20..24] :179)
+        (::[24..25] -) (CD:[25..27] 85) (.:[27..28] .)))
+
+;sentence 1 Span:34..100
+;Subcellular distribution of aromatase in human placenta and ovary.
+;[62..71]:substance:"aromatase"
+(SENT
+  (NP-HLN
+    (NP (JJ:[34..45] Subcellular) (NN:[46..58] distribution))
+    (PP (IN:[59..61] of)
+      (NP (NN:[62..71] aromatase)))
+    (PP-LOC (IN:[72..74] in)
+      (NP
+        (NP
+          (ADJP-1 (JJ:[75..80] human))
+          (NN:[81..89] placenta))
+        (CC:[90..93] and)
+        (NP
+          (ADJP-1 (-NONE-:[93..93] *P*))
+          (NN:[94..99] ovary))))
+    (.:[99..100] .)))
+
+;section 2 Span:104..131
+;Thompson EA Jr, Siiteri PK.
+(SEC
+  (FRAG (NNP:[104..112] Thompson) (NNP:[113..115] EA) (NNP:[116..118] Jr)
+        (,:[118..119] ,) (NNP:[120..127] Siiteri) (NNP:[128..131] PK.)))
+
+;sentence 3 Span:135..288
+;The aromatization of androstenedione in human ovarian microsomes is inhibited
+;by  an antibody to porcine hepatic microsomal NADPH-cytochrome c reductase.
+;[156..171]:substance:"androstenedione"
+;[220..228]:substance:"antibody"
+;[259..287]:substance:"NADPH-cytochrome c reductase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[135..138] The) (NN:[139..152] aromatization))
+      (PP (IN:[153..155] of)
+        (NP (NN:[156..171] androstenedione)))
+      (PP-LOC (IN:[172..174] in)
+        (NP (JJ:[175..180] human) (JJ:[181..188] ovarian)
+            (NNS:[189..199] microsomes))))
+    (VP (VBZ:[200..202] is)
+      (VP (VBN:[203..212] inhibited)
+        (NP-1 (-NONE-:[212..212] *))
+        (PP (IN:[213..215] by)
+          (NP-LGS
+            (NP (DT:[217..219] an) (NN:[220..228] antibody))
+            (PP (TO:[229..231] to)
+              (NP (JJ:[232..239] porcine) (JJ:[240..247] hepatic)
+                  (JJ:[248..258] microsomal)
+                
+                (NML (NN:[259..264] NADPH) (HYPH:[264..265] -)
+                     (NN:[265..275] cytochrome) (NN:[276..277] c))
+                (NN:[278..287] reductase)))))))
+    (.:[287..288] .)))
+
+;sentence 4 Span:290..395
+;Likewise, the antibody inhibits aromatization in mitochondria isolated from 
+;human ovaries and placentae.
+;[304..312]:substance:"antibody"
+(SENT
+  (S
+    (ADVP (RB:[290..298] Likewise))
+    (,:[298..299] ,)
+    (NP-SBJ (DT:[300..303] the) (NN:[304..312] antibody))
+    (VP (VBZ:[313..321] inhibits)
+      (NP (NN:[322..335] aromatization))
+      (PP-LOC (IN:[336..338] in)
+        (NP
+          (NP (NNS:[339..351] mitochondria))
+          (VP (VBN:[352..360] isolated)
+            (NP (-NONE-:[360..360] *))
+            (PP (IN:[361..365] from)
+              (NP
+                (NP
+                  (ADJP-1 (JJ:[367..372] human))
+                  (NNS:[373..380] ovaries))
+                (CC:[381..384] and)
+                (NP
+                  (ADJP-1 (-NONE-:[384..384] *P*))
+                  (NNS:[385..394] placentae))))))))
+    (.:[394..395] .)))
+
+;sentence 5 Span:396..546
+;A given quantity of the antibody produces the same  percent inhibition of
+;aromatization in microsomes and mitochondria of both  ovaries and placentae.
+;[420..428]:substance:"antibody"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[396..397] A) (JJ:[398..403] given) (NN:[404..412] quantity))
+      (PP (IN:[413..415] of)
+        (NP (DT:[416..419] the) (NN:[420..428] antibody))))
+    (VP (VBZ:[429..437] produces)
+      (NP
+        (NP (DT:[438..441] the) (JJ:[442..446] same) (NN:[448..455] percent)
+            (NN:[456..466] inhibition))
+        (PP (IN:[467..469] of)
+          (NP (NN:[470..483] aromatization))))
+      (PP-LOC (IN:[484..486] in)
+        (NP
+          (NP (NNS:[487..497] microsomes) (CC:[498..501] and)
+              (NNS:[502..514] mitochondria))
+          (PP (IN:[515..517] of)
+            (NP (CC:[518..522] both) (NNS:[524..531] ovaries)
+                (CC:[532..535] and) (NNS:[536..545] placentae))))))
+    (.:[545..546] .)))
+
+;sentence 6 Span:547..735
+;These data, in addition to the low specific activity  observed for the
+;mitochondrial aromatase, indicate that aromatization in  mitochondria
+;probably results from microsomal contamination.
+;[632..641]:substance:"aromatase"
+(SENT
+  (S
+    (NP-SBJ (DT:[547..552] These) (NNS:[553..557] data))
+    (,:[557..558] ,)
+    (PP (IN:[559..561] in)
+      (NP
+        (NP (NN:[562..570] addition))
+        (PP (TO:[571..573] to)
+          (NP
+            (NP (DT:[574..577] the) (JJ:[578..581] low) (JJ:[582..590] specific)
+                (NN:[591..599] activity))
+            (VP (VBN:[601..609] observed)
+              (NP (-NONE-:[609..609] *))
+              (PP (IN:[610..613] for)
+                (NP (DT:[614..617] the) (JJ:[618..631] mitochondrial)
+                    (NN:[632..641] aromatase))))))))
+    (,:[641..642] ,)
+    (VP (VBP:[643..651] indicate)
+      (SBAR (IN:[652..656] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[657..670] aromatization))
+            (PP (IN:[671..673] in)
+              (NP (NNS:[675..687] mitochondria))))
+          (ADVP (RB:[688..696] probably))
+          (VP (VBZ:[697..704] results)
+            (PP (IN:[705..709] from)
+              (NP (JJ:[710..720] microsomal) (NN:[721..734] contamination)))))))
+    (.:[734..735] .)))
+
+;section 7 Span:739..782
+;PMID: 115774 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[739..743] PMID) (::[743..744] :) (CD:[745..751] 115774)
+        (NN:[752..753] -LSB-) (NNP:[753..759] PubMed) (::[760..761] -)
+        (NN:[762..769] indexed) (IN:[770..773] for)
+        (NNP:[774..782] MEDLINE-RSB-)))

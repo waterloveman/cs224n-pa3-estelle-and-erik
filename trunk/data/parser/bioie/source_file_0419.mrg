@@ -1,0 +1,392 @@
+;PMID: 9820175
+;source_file_1757.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..132] = [t:41..132]
+;2)section:[e:136..213] = [t:136..213]
+;3)section:[e:217..319] = [t:217..319]
+;4)sentence:[e:323..473] = [t:323..473]
+;5)sentence:[e:474..556] = [t:474..556]
+;6)sentence:[e:558..647] = [t:558..647]
+;7)sentence:[e:648..838] = [t:648..838]
+;8)sentence:[e:839..1036] = [t:839..1036]
+;9)sentence:[e:1037..1094] = [t:1037..1094]
+;10)sentence:[e:1095..1215] = [t:1095..1215]
+;11)sentence:[e:1216..1380] = [t:1216..1380]
+;12)sentence:[e:1381..1523] = [t:1381..1523]
+;13)section:[e:1527..1571] = [t:1527..1571]
+
+;section 0 Span:0..35
+;Br J Cancer. 1998 Nov;78(9):1170-4.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..11] Cancer) (.:[11..12] .)
+        (CD:[13..17] 1998) (VBD:[18..24] Nov;78) (-LRB-:[24..25] -LRB-)
+        (CD:[25..26] 9) (-RRB-:[26..27] -RRB-) (::[27..28] :) (CD:[28..32] 1170)
+        (CD:[32..35] -4.)))
+
+;sentence 1 Span:41..132
+;Potent and non-specific inhibition of cytochrome P450 by JM216, a new oral 
+;platinum agent.
+;[79..94]:cyp450:"cytochrome P450"
+;[98..103]:substance:"JM216"
+;[117..131]:substance:"platinum agent"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP
+        (ADJP (JJ:[41..47] Potent))
+        (CC:[48..51] and)
+        (ADJP (AFX:[52..55] non) (HYPH:[55..56] -) (JJ:[56..64] specific)))
+      (NN:[65..75] inhibition))
+    (PP (IN:[76..78] of)
+      (NP (NN:[79..89] cytochrome) (NN:[90..94] P450)))
+    (PP (IN:[95..97] by)
+      (NP
+        (NP (NN:[98..103] JM216))
+        (,:[103..104] ,)
+        (NP (DT:[105..106] a) (JJ:[107..110] new) (JJ:[111..115] oral)
+           (NN:[117..125] platinum) (NN:[126..131] agent))))
+    (.:[131..132] .)))
+
+;section 2 Span:136..213
+;Ando Y, Shimizu T, Nakamura K, Mushiroda T, Nakagawa T, Kodama T, Kamataki
+;T.
+(SEC
+  (FRAG (NNP:[136..140] Ando) (NNP:[141..142] Y) (,:[142..143] ,)
+        (NNP:[144..151] Shimizu) (NNP:[152..153] T) (,:[153..154] ,)
+        (NNP:[155..163] Nakamura) (NNP:[164..166] K,) (NNP:[167..176] Mushiroda)
+        (NNP:[177..178] T) (,:[178..179] ,) (NNP:[180..188] Nakagawa)
+        (NNP:[189..190] T) (,:[190..191] ,) (NNP:[192..198] Kodama)
+        (NNP:[199..200] T) (,:[200..201] ,) (NNP:[202..210] Kamataki)
+        (NNP:[211..213] T.)))
+
+;section 3 Span:217..319
+;Division of Drug Metabolism, Faculty of Pharmaceutical Sciences, Hokkaido 
+;University, Sapporo, Japan.
+(SEC
+  (FRAG (NNP:[217..225] Division) (IN:[226..228] of) (NNP:[229..233] Drug)
+        (NNP:[234..244] Metabolism) (,:[244..245] ,) (NNP:[246..253] Faculty)
+        (IN:[254..256] of) (NNP:[257..271] Pharmaceutical)
+        (NNPS:[272..280] Sciences) (,:[280..281] ,) (NNP:[282..290] Hokkaido)
+        (NNP:[292..302] University) (,:[302..303] ,) (NNP:[304..311] Sapporo)
+        (,:[311..312] ,) (NNP:[313..318] Japan) (.:[318..319] .)))
+
+;sentence 4 Span:323..473
+;Bis-acetato-ammine-dichloro-cyclohexylamine-platinum (IV), JM216, is the
+;first  antineoplastic platinum compound that can be given to patients
+;orally.
+;[323..380]:substance:"Bis-acetato-ammine-dichloro-cyclohexylamine-platinum
+;(IV)"
+;[382..387]:substance:"JM216"
+;[403..435]:substance:"antineoplastic platinum compound"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[323..375] Bis-acetato-ammine-dichloro-cyclohexylamine-platinum)
+          (-LRB-:[376..377] -LRB-) (CD:[377..379] IV) (-RRB-:[379..380] -RRB-))
+      (,:[380..381] ,)
+      (NP (NN:[382..387] JM216)))
+    (,:[387..388] ,)
+    (VP (VBZ:[389..391] is)
+      (NP-PRD
+        (NP (DT:[392..395] the) (JJ:[396..401] first)
+           (JJ:[403..417] antineoplastic) (NN:[418..426] platinum)
+           (NN:[427..435] compound))
+        (SBAR
+          (WHNP-1 (WDT:[436..440] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[440..440] *T*))
+            (VP (MD:[441..444] can)
+              (VP (VB:[445..447] be)
+                (VP (VBN:[448..453] given)
+                  (NP-1 (-NONE-:[453..453] *))
+                  (PP-DTV (TO:[454..456] to)
+                    (NP (NNS:[457..465] patients)))
+                  (ADVP-MNR (RB:[466..472] orally)))))))))
+    (.:[472..473] .)))
+
+;sentence 5 Span:474..556
+;Several  phase II clinical trials of JM216 monotherapy have already been
+;reported.
+;[511..516]:substance:"JM216"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[474..481] Several)
+        (NML (NN:[483..488] phase) (CD:[489..491] II))
+        (JJ:[492..500] clinical) (NNS:[501..507] trials))
+      (PP (IN:[508..510] of)
+        (NP (NN:[511..516] JM216) (NN:[517..528] monotherapy))))
+    (VP (VBP:[529..533] have)
+      (ADVP-TMP (RB:[534..541] already))
+      (VP (VBN:[542..546] been)
+        (VP (VBN:[547..555] reported)
+          (NP-1 (-NONE-:[555..555] *)))))
+    (.:[555..556] .)))
+
+;sentence 6 Span:558..647
+;However, no information on the potential drug interactions caused by JM216 is
+; available.
+;[599..603]:substance:"drug"
+;[627..632]:substance:"JM216"
+(SENT
+  (S
+    (ADVP (RB:[558..565] However))
+    (,:[565..566] ,)
+    (NP-SBJ
+      (NP (DT:[567..569] no) (NN:[570..581] information))
+      (PP (IN:[582..584] on)
+        (NP
+          (NP (DT:[585..588] the) (JJ:[589..598] potential) (NN:[599..603] drug)
+              (NNS:[604..616] interactions))
+          (VP (VBN:[617..623] caused)
+            (NP (-NONE-:[623..623] *))
+            (PP (IN:[624..626] by)
+              (NP-LGS (NN:[627..632] JM216)))))))
+    (VP (VBZ:[633..635] is)
+      (ADJP-PRD (JJ:[637..646] available)))
+    (.:[646..647] .)))
+
+;sentence 7 Span:648..838
+;In this study, the capacity of JM216 to inhibit cytochrome P450 (CYP)  in
+;human liver microsomes was investigated by measuring the inhibition potential
+; (IC50 and Ki) on prototype reactions.
+;[679..684]:substance:"JM216"
+;[696..711]:cyp450:"cytochrome P450"
+;[713..716]:cyp450:"CYP"
+;[802..806]:quantitative-name:"IC50"
+;[811..813]:quantitative-name:"Ki"
+(SENT
+  (S
+    (PP-LOC (IN:[648..650] In)
+      (NP (DT:[651..655] this) (NN:[656..661] study)))
+    (,:[661..662] ,)
+    (NP-SBJ-1
+      (NP (DT:[663..666] the) (NN:[667..675] capacity)
+        (S-3 (-NONE-:[675..675] *ICH*)))
+      (PP (IN:[676..678] of)
+        (NP (NN:[679..684] JM216)))
+      (S-3
+        (NP-SBJ (-NONE-:[684..684] *))
+        (VP (TO:[685..687] to)
+          (VP (VB:[688..695] inhibit)
+            (NP
+              (NP (NN:[696..706] cytochrome) (NN:[707..711] P450))
+              (NP (-LRB-:[712..713] -LRB-) (NN:[713..716] CYP)
+                  (-RRB-:[716..717] -RRB-)))
+            (PP-LOC (IN:[719..721] in)
+              (NP (JJ:[722..727] human) (NN:[728..733] liver)
+                  (NNS:[734..744] microsomes)))))))
+    (VP (VBD:[745..748] was)
+      (VP (VBN:[749..761] investigated)
+        (NP-1 (-NONE-:[761..761] *))
+        (PP-MNR (IN:[762..764] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[764..764] *))
+            (VP (VBG:[765..774] measuring)
+              (NP
+                (NP (DT:[775..778] the) (NN:[779..789] inhibition)
+                    (NN:[790..799] potential))
+                (NP (-LRB-:[801..802] -LRB-) (NN:[802..806] IC50)
+                    (CC:[807..810] and) (NN:[811..813] Ki)
+                    (-RRB-:[813..814] -RRB-)))
+              (PP (IN:[815..817] on)
+                (NP (NN:[818..827] prototype) (NNS:[828..837] reactions))))))))
+    (.:[837..838] .)))
+
+;sentence 8 Span:839..1036
+;Specific substrates of CYP included  testosterone (catalysed by CYP3A4),
+;paclitaxel (CYP2C8), 7-ethoxyresorufin  (CYP1A1, CYP1A2), coumarin (CYP2A6),
+;aniline (CYP2E1) and (+/-)-bufuralol  (CYP2D6).
+;[848..858]:substance:"substrates"
+;[862..865]:cyp450:"CYP"
+;[876..888]:substance:"testosterone"
+;[903..909]:cyp450:"CYP3A4"
+;[912..922]:substance:"paclitaxel"
+;[924..930]:cyp450:"CYP2C8"
+;[933..950]:substance:"7-ethoxyresorufin"
+;[953..959]:cyp450:"CYP1A1"
+;[961..967]:cyp450:"CYP1A2"
+;[970..978]:substance:"coumarin"
+;[980..986]:cyp450:"CYP2A6"
+;[989..996]:substance:"aniline"
+;[998..1004]:cyp450:"CYP2E1"
+;[1010..1025]:substance:"(+/-)-bufuralol"
+;[1028..1034]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[839..847] Specific) (NNS:[848..858] substrates))
+      (PP (IN:[859..861] of)
+        (NP (NN:[862..865] CYP))))
+    (VP (VBD:[866..874] included)
+      (NP
+        (NP (NN:[876..888] testosterone)
+          (PRN (-LRB-:[889..890] -LRB-)
+            (VP (VBN:[890..899] catalysed)
+              (NP (-NONE-:[899..899] *))
+              (PP (IN:[900..902] by)
+                (NP-LGS (NN:[903..909] CYP3A4))))
+            (-RRB-:[909..910] -RRB-)))
+        (,:[910..911] ,)
+        (NP (NN:[912..922] paclitaxel)
+          (PRN (-LRB-:[923..924] -LRB-)
+            (NP (NN:[924..930] CYP2C8))
+            (-RRB-:[930..931] -RRB-)))
+        (,:[931..932] ,)
+        (NP (NN:[933..950] 7-ethoxyresorufin)
+          (PRN (-LRB-:[952..953] -LRB-)
+            (NP (NN:[953..959] CYP1A1) (,:[959..960] ,) (NN:[961..967] CYP1A2))
+            (-RRB-:[967..968] -RRB-)))
+        (,:[968..969] ,)
+        (NP (NN:[970..978] coumarin)
+          (PRN (-LRB-:[979..980] -LRB-)
+            (NP (NN:[980..986] CYP2A6))
+            (-RRB-:[986..987] -RRB-)))
+        (,:[987..988] ,)
+        (NP (NN:[989..996] aniline)
+          (PRN (-LRB-:[997..998] -LRB-)
+            (NP (NN:[998..1004] CYP2E1))
+            (-RRB-:[1004..1005] -RRB-)))
+        (CC:[1006..1009] and)
+        (NP (NN:[1010..1025] -LRB-+/--RRB--bufuralol)
+          (PRN (-LRB-:[1027..1028] -LRB-)
+            (NP (NN:[1028..1034] CYP2D6))
+            (-RRB-:[1034..1035] -RRB-)))))
+    (.:[1035..1036] .)))
+
+;sentence 9 Span:1037..1094
+;JM216 inhibited the catalytic activities of CYP isozymes.
+;[1037..1042]:substance:"JM216"
+;[1081..1093]:cyp450:"CYP isozymes"
+(SENT
+  (S
+    (NP-SBJ (NN:[1037..1042] JM216))
+    (VP (VBD:[1043..1052] inhibited)
+      (NP
+        (NP (DT:[1053..1056] the) (JJ:[1057..1066] catalytic)
+            (NNS:[1067..1077] activities))
+        (PP (IN:[1078..1080] of)
+          (NP (NN:[1081..1084] CYP) (NNS:[1085..1093] isozymes)))))
+    (.:[1093..1094] .)))
+
+;sentence 10 Span:1095..1215
+;The IC50  values were between 0.3 microM and 10 microM, indicating strong and
+;non-specific  inhibitory effects of JM216.
+;[1099..1103]:quantitative-name:"IC50"
+;[1125..1128]:quantitative-value:"0.3"
+;[1129..1135]:quantitative-units:"microM"
+;[1140..1142]:quantitative-value:"10"
+;[1143..1149]:quantitative-units:"microM"
+;[1209..1214]:substance:"JM216"
+(SENT
+  (S
+    (NP-SBJ (DT:[1095..1098] The) (NN:[1099..1103] IC50)
+            (NNS:[1105..1111] values))
+    (VP (VBD:[1112..1116] were)
+      (PP-PRD (IN:[1117..1124] between)
+        (NP
+          (NP (CD:[1125..1128] 0.3) (NN:[1129..1135] microM))
+          (CC:[1136..1139] and)
+          (NP (CD:[1140..1142] 10) (NN:[1143..1149] microM))))
+      (,:[1149..1150] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1150..1150] *))
+        (VP (VBG:[1151..1161] indicating)
+          (NP
+            (NP
+              (ADJP
+                (ADJP (JJ:[1162..1168] strong))
+                (CC:[1169..1172] and)
+                (ADJP (AFX:[1173..1176] non) (HYPH:[1176..1177] -)
+                      (JJ:[1177..1185] specific)))
+              (JJ:[1187..1197] inhibitory) (NNS:[1198..1205] effects))
+            (PP (IN:[1206..1208] of)
+              (NP (NN:[1209..1214] JM216)))))))
+    (.:[1214..1215] .)))
+
+;sentence 11 Span:1216..1380
+;The inhibition occurred in a non-competitive  manner, and the Ki value was
+;1.0 and 0.9 microM for metabolite formation of  testosterone and paclitaxel
+;respectively.
+;[1278..1280]:quantitative-name:"Ki"
+;[1291..1294]:quantitative-value:"1.0"
+;[1299..1302]:quantitative-value:"0.9"
+;[1303..1309]:quantitative-units:"microM"
+;[1314..1324]:substance:"metabolite"
+;[1339..1351]:substance:"testosterone"
+;[1356..1366]:substance:"paclitaxel"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[1216..1219] The) (NN:[1220..1230] inhibition))
+      (VP (VBD:[1231..1239] occurred)
+        (PP-MNR (IN:[1240..1242] in)
+          (NP (DT:[1243..1244] a)
+            (ADJP (AFX:[1245..1248] non) (HYPH:[1248..1249] -)
+                  (JJ:[1249..1260] competitive))
+            (NN:[1262..1268] manner)))))
+    (,:[1268..1269] ,) (CC:[1270..1273] and)
+    (S
+      (NP-SBJ (DT:[1274..1277] the) (NN:[1278..1280] Ki) (NN:[1281..1286] value))
+      (VP (VBD:[1287..1290] was)
+        (NP-PRD
+          (NP (CD:[1291..1294] 1.0)
+            (NML-1 (-NONE-:[1294..1294] *P*)))
+          (CC:[1295..1298] and)
+          (NP (CD:[1299..1302] 0.9)
+            (NML-1 (NN:[1303..1309] microM))))
+        (PP (IN:[1310..1313] for)
+          (NP
+            (NP (NN:[1314..1324] metabolite) (NN:[1325..1334] formation))
+            (PP (IN:[1335..1337] of)
+              (NP (NN:[1339..1351] testosterone) (CC:[1352..1355] and)
+                  (NN:[1356..1366] paclitaxel)))))
+        (ADVP (RB:[1367..1379] respectively))))
+    (.:[1379..1380] .)))
+
+;sentence 12 Span:1381..1523
+;Therefore, some in vivo studies should  be conducted to determine whether or
+;not there is a correlation between in vivo  and in vitro results.
+(SENT
+  (S
+    (ADVP (RB:[1381..1390] Therefore))
+    (,:[1390..1391] ,)
+    (NP-SBJ-2 (DT:[1392..1396] some)
+      (ADJP (FW:[1397..1399] in) (FW:[1400..1404] vivo))
+      (NNS:[1405..1412] studies))
+    (VP (MD:[1413..1419] should)
+      (VP (VB:[1421..1423] be)
+        (VP (VBN:[1424..1433] conducted)
+          (NP-2 (-NONE-:[1433..1433] *))
+          (S-PRP
+            (NP-SBJ (-NONE-:[1433..1433] *))
+            (VP (TO:[1434..1436] to)
+              (VP (VB:[1437..1446] determine)
+                (SBAR (IN:[1447..1454] whether) (CC:[1455..1457] or)
+                      (RB:[1458..1461] not)
+                  (S
+                    (NP-SBJ (EX:[1462..1467] there))
+                    (PP (VBZ:[1468..1470] is)
+                      (NP-PRD
+                        (NP (DT:[1471..1472] a) (NN:[1473..1484] correlation))
+                        (PP (IN:[1485..1492] between)
+                          (NP
+                            (NP
+                              (ADJP (FW:[1493..1495] in) (FW:[1496..1500] vivo))
+                              (NML-1 (-NONE-:[1500..1500] *P*)))
+                            (CC:[1502..1505] and)
+                            (NP
+                              (ADJP (FW:[1506..1508] in) (FW:[1509..1514] vitro))
+                              (NML-1 (NNS:[1515..1522] results)))))))))))))))
+    (.:[1522..1523] .)))
+
+;section 13 Span:1527..1571
+;PMID: 9820175 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1527..1531] PMID) (::[1531..1532] :) (CD:[1533..1540] 9820175)
+        (NN:[1541..1542] -LSB-) (NNP:[1542..1548] PubMed) (::[1549..1550] -)
+        (NN:[1551..1558] indexed) (IN:[1559..1562] for)
+        (NNP:[1563..1571] MEDLINE-RSB-)))

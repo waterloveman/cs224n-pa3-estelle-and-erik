@@ -1,0 +1,667 @@
+;PMID: 6252201
+;source_file_835.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..176] = [t:47..176]
+;2)sentence:[e:177..202] = [t:177..202]
+;3)section:[e:206..242] = [t:206..241]
+;4)sentence:[e:246..450] = [t:246..450]
+;5)sentence:[e:451..689] = [t:451..689]
+;6)sentence:[e:690..824] = [t:690..824]
+;7)sentence:[e:825..1036] = [t:825..1036]
+;8)sentence:[e:1037..1274] = [t:1037..1274]
+;9)sentence:[e:1275..1503] = [t:1275..1503]
+;10)sentence:[e:1504..1776] = [t:1504..1776]
+;11)sentence:[e:1777..1949] = [t:1777..1949]
+;12)sentence:[e:1950..2201] = [t:1950..2201]
+;13)sentence:[e:2202..2308] = [t:2202..2308]
+;14)sentence:[e:2309..2402] = [t:2309..2402]
+;15)section:[e:2406..2450] = [t:2406..2449]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:206..242][t:206..241]
+;ERROR_Section end mismatch[e:2406..2450][t:2406..2449]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[241..242] .
+;ERROR_Token in entity file but not tree[2449..2450] ]
+
+;section 0 Span:0..41
+;J Biochem (Tokyo). 1980 Aug;88(2):505-16.
+(SEC
+  (FRAG (JJ:[0..1] J) (NN:[2..9] Biochem) (NN:[10..11] -LRB-)
+        (NN:[11..16] Tokyo) (NN:[16..17] -RRB-) (.:[17..18] .)
+        (CD:[19..23] 1980) (NNP:[24..27] Aug) (::[27..28] ;) (CD:[28..30] 88)
+        (-LRB-:[30..31] -LRB-) (CD:[31..32] 2) (-RRB-:[32..33] -RRB-)
+        (::[33..34] :) (CD:[34..37] 505) (::[37..38] -) (CD:[38..40] 16)
+        (.:[40..41] .)))
+
+;sentence 1 Span:47..176
+;Multiple forms of cytochrome P-450 purified from liver microsomes of 
+;phenobarbital- and 3-methylcholanthrene-pretreated rabbits.
+;[65..81]:cyp450:"cytochrome P-450"
+;[117..130]:substance:"phenobarbital"
+;[136..156]:substance:"3-methylcholanthrene"
+(SENT
+  (NP-HLN
+    (NP (JJ:[47..55] Multiple) (NNS:[56..61] forms))
+    (PP (IN:[62..64] of)
+      (NP (NN:[65..75] cytochrome) (NN:[76..81] P-450)))
+    (VP (VBN:[82..90] purified)
+      (NP (-NONE-:[90..90] *))
+      (PP (IN:[91..95] from)
+        (NP
+          (NP (NN:[96..101] liver) (NNS:[102..112] microsomes))
+          (PP (IN:[113..115] of)
+            (NP
+              (NP
+                (ADJP (NN:[117..130] phenobarbital) (HYPH:[130..131] -)
+                  (ADJP-1 (-NONE-:[131..131] *P*)))
+                (NML-2 (-NONE-:[131..131] *P*)))
+              (CC:[132..135] and)
+              (NP
+                (ADJP (NN:[136..156] 3-methylcholanthrene) (HYPH:[156..157] -)
+                  (ADJP-1 (VBN:[157..167] pretreated)))
+                (NML-2 (NNS:[168..175] rabbits))))))))
+    (.:[175..176] .)))
+
+;sentence 2 Span:177..202
+;II. Spectral  properties.
+(SENT
+  (NP (LS:[177..179] II) (.:[179..180] .))
+  (NP (JJ:[181..189] Spectral) (NNS:[191..201] properties) (.:[201..202] .)))
+;ERROR_Sentence has multiple children (TB Error):[177..202]::NP:NP:
+
+;section 3 Span:206..241
+;Hashimoto-Yutsudo C, Imai Y, Sato R
+(SEC
+  (FRAG (NNP:[206..215] Hashimoto) (::[215..216] -) (NNP:[216..223] Yutsudo)
+        (NNP:[224..225] C) (,:[225..226] ,) (NNP:[227..231] Imai)
+        (NNP:[232..233] Y) (,:[233..234] ,) (NNP:[235..239] Sato)
+        (NNP:[240..241] R)))
+
+(ORPH .)
+
+;sentence 4 Span:246..450
+;The spectral properties of multiple forms of cytochrome P-450 purified or 
+;partially purified from liver microsomes of phenobarbital (PB)- and 
+;3-methylcholanthrene (MC)-treated rabbits have been studied.
+;[291..307]:cyp450:"cytochrome P-450"
+;[365..378]:substance:"phenobarbital"
+;[380..382]:substance:"PB"
+;[390..410]:substance:"3-methylcholanthrene"
+;[412..414]:substance:"MC"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[246..249] The) (JJ:[250..258] spectral)
+          (NNS:[259..269] properties))
+      (PP (IN:[270..272] of)
+        (NP
+          (NP (JJ:[273..281] multiple) (NNS:[282..287] forms))
+          (PP (IN:[288..290] of)
+            (NP
+              (NP (NN:[291..301] cytochrome) (NN:[302..307] P-450))
+              (VP
+                (VP
+                  (VP (VBN:[308..316] purified)
+                    (NP (-NONE-:[316..316] *)))
+                  (CC:[317..319] or)
+                  (VP
+                    (ADVP (RB:[321..330] partially))
+                    (VBN:[331..339] purified)
+                    (NP (-NONE-:[339..339] *))))
+                (PP (IN:[340..344] from)
+                  (NP
+                    (NP (NN:[345..350] liver) (NNS:[351..361] microsomes))
+                    (PP (IN:[362..364] of)
+                      (NP
+                        (NP
+                          (ADJP
+                            (NML
+                              (NML (NN:[365..378] phenobarbital))
+                              (NML (-LRB-:[379..380] -LRB-) (NN:[380..382] PB)
+                                   (-RRB-:[382..383] -RRB-)))
+                            (HYPH:[383..384] -)
+                            (ADJP-3 (-NONE-:[384..384] *P*)))
+                          (NML-1 (-NONE-:[384..384] *P*)))
+                        (CC:[385..388] and)
+                        (NP
+                          (ADJP
+                            (NML
+                              (NML (NN:[390..410] 3-methylcholanthrene))
+                              (NML (-LRB-:[411..412] -LRB-) (NN:[412..414] MC)
+                                   (-RRB-:[414..415] -RRB-)))
+                            (HYPH:[415..416] -)
+                            (ADJP-3 (VBN:[416..423] treated)))
+                          (NML-1 (NNS:[424..431] rabbits)))))))))))))
+    (VP (VBP:[432..436] have)
+      (VP (VBN:[437..441] been)
+        (VP (VBN:[442..449] studied)
+          (NP-2 (-NONE-:[449..449] *)))))
+    (.:[449..450] .)))
+;ERROR_Orphan Text from Tree File[241..246] .
+
+;sentence 5 Span:451..689
+;Both optical  absorption and EPR studies have shown that the oxidized forms
+;of P-450(1),  P-450(2) (from PB-treated animals), and P-450(3) (from
+;MC-treated animals) are  in the low spin state, having a Soret absorption
+;peak at 417-418 nm.
+;[530..538]:cyp450:"P-450(1)"
+;[541..549]:cyp450:"P-450(2)"
+;[556..558]:substance:"PB"
+;[581..589]:cyp450:"P-450(3)"
+;[596..598]:substance:"MC"
+;[678..685]:quantitative-value:"417-418"
+;[686..688]:quantitative-units:"nm"
+(SENT
+  (S
+    (NP-SBJ (CC:[451..455] Both)
+      (NP (JJ:[456..463] optical) (NN:[465..475] absorption))
+      (CC:[476..479] and)
+      (NML (NN:[480..483] EPR) (NNS:[484..491] studies)))
+    (VP (VBP:[492..496] have)
+      (VP (VBN:[497..502] shown)
+        (SBAR (IN:[503..507] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[508..511] the) (JJ:[512..520] oxidized)
+                  (NNS:[521..526] forms))
+              (PP (IN:[527..529] of)
+                (NP
+                  (NP (NN:[530..538] P-450-LRB-1-RRB-))
+                  (,:[538..539] ,)
+                  (NP
+                    (NP (NN:[541..549] P-450-LRB-2-RRB-))
+                    (PRN (-LRB-:[550..551] -LRB-)
+                      (PP (IN:[551..555] from)
+                        (NP
+                          (ADJP (NN:[556..558] PB) (HYPH:[558..559] -)
+                                (VBN:[559..566] treated))
+                          (NNS:[567..574] animals)))
+                      (-RRB-:[574..575] -RRB-)))
+                  (,:[575..576] ,) (CC:[577..580] and)
+                  (NP
+                    (NP (NN:[581..589] P-450-LRB-3-RRB-))
+                    (PRN (-LRB-:[590..591] -LRB-)
+                      (PP (IN:[591..595] from)
+                        (NP
+                          (ADJP (NN:[596..598] MC) (HYPH:[598..599] -)
+                                (VBN:[599..606] treated))
+                          (NNS:[607..614] animals)))
+                      (-RRB-:[614..615] -RRB-))))))
+            (VP (VBP:[616..619] are)
+              (PP-PRD (IN:[621..623] in)
+                (NP (DT:[624..627] the)
+                  (NML (JJ:[628..631] low) (NN:[632..636] spin))
+                  (NN:[637..642] state)))
+              (,:[642..643] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[643..643] *))
+                (VP (VBG:[644..650] having)
+                  (NP (DT:[651..652] a) (NN:[653..658] Soret)
+                      (NN:[659..669] absorption) (NN:[670..674] peak))
+                  (PP (IN:[675..677] at)
+                    (NP
+                      (QP (CD:[678..681] 417) (HYPH:[681..682] -)
+                          (CD:[682..685] 418))
+                      (NN:[686..688] nm))))))))))
+    (.:[688..689] .)))
+
+;sentence 6 Span:690..824
+;Oxidized  P-448(1) (from both PB- and MC-treated animals), on the other hand,
+;shows a  Soret peak at 393 nm and a weak band at 646 nm.
+;[700..708]:cyp450:"P-448(1)"
+;[720..722]:substance:"PB"
+;[728..730]:substance:"MC"
+;[791..794]:quantitative-value:"393"
+;[795..797]:quantitative-units:"nm"
+;[817..820]:quantitative-value:"646"
+;[821..823]:quantitative-units:"nm"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[690..698] Oxidized) (NN:[700..708] P-448-LRB-1-RRB-))
+      (PRN (-LRB-:[709..710] -LRB-)
+        (PP (IN:[710..714] from)
+          (NP (CC:[715..719] both)
+            (NP
+              (ADJP (NN:[720..722] PB) (HYPH:[722..723] -)
+                (ADJP-2 (-NONE-:[723..723] *P*)))
+              (NML-1 (-NONE-:[723..723] *P*)))
+            (CC:[724..727] and)
+            (NP
+              (ADJP (NN:[728..730] MC) (HYPH:[730..731] -)
+                (ADJP-2 (VBN:[731..738] treated)))
+              (NML-1 (NNS:[739..746] animals)))))
+        (-RRB-:[746..747] -RRB-)))
+    (,:[747..748] ,)
+    (PP (IN:[749..751] on)
+      (NP (DT:[752..755] the) (JJ:[756..761] other) (NN:[762..766] hand)))
+    (,:[766..767] ,)
+    (VP (VBZ:[768..773] shows)
+      (NP
+        (NP
+          (NP (DT:[774..775] a) (NN:[777..782] Soret) (NN:[783..787] peak))
+          (PP-LOC (IN:[788..790] at)
+            (NP (CD:[791..794] 393) (NN:[795..797] nm))))
+        (CC:[798..801] and)
+        (NP
+          (NP (DT:[802..803] a) (JJ:[804..808] weak) (NN:[809..813] band))
+          (PP-LOC (IN:[814..816] at)
+            (NP (CD:[817..820] 646) (NN:[821..823] nm))))))
+    (.:[823..824] .)))
+
+;sentence 7 Span:825..1036
+;This and EPR evidence indicate  that P-448(1) contains heme which is
+;predominantly in the high spin state,  though EPR studies at low temperature
+;indicate the presence of a small amount of  low spin ferric heme.
+;[862..870]:cyp450:"P-448(1)"
+;[880..884]:substance:"heme"
+;[1024..1035]:substance:"ferric heme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[825..829] This))
+      (CC:[830..833] and)
+      (NP (NN:[834..837] EPR) (NN:[838..846] evidence)))
+    (VP (VBP:[847..855] indicate)
+      (SBAR (IN:[857..861] that)
+        (S
+          (NP-SBJ (NN:[862..870] P-448-LRB-1-RRB-))
+          (VP (NNS:[871..879] contains)
+            (NP
+              (NP (NN:[880..884] heme))
+              (SBAR
+                (WHNP-1 (WDT:[885..890] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[890..890] *T*))
+                  (VP (VBZ:[891..893] is)
+                    (PP-PRD
+                      (ADVP (JJ:[894..907] predominantly))
+                      (IN:[908..910] in)
+                      (NP (DT:[911..914] the)
+                        (NML (JJ:[915..919] high) (NN:[920..924] spin))
+                        (NN:[925..930] state))))))))))
+      (,:[930..931] ,)
+      (SBAR-ADV (IN:[933..939] though)
+        (S
+          (NP-SBJ
+            (NP (NN:[940..943] EPR) (NNS:[944..951] studies))
+            (PP (IN:[952..954] at)
+              (NP (JJ:[955..958] low) (NN:[959..970] temperature))))
+          (VP (VBP:[971..979] indicate)
+            (NP
+              (NP (DT:[980..983] the) (NN:[984..992] presence))
+              (PP (IN:[993..995] of)
+                (NP
+                  (NP (DT:[996..997] a) (JJ:[998..1003] small)
+                      (NN:[1004..1010] amount))
+                  (PP (IN:[1011..1013] of)
+                    (NP
+                      (NML (JJ:[1015..1018] low) (NN:[1019..1023] spin))
+                       (JJ:[1024..1030] ferric) (NN:[1031..1035] heme))))))))))
+    (.:[1035..1036] .)))
+
+;sentence 8 Span:1037..1274
+;The presence of tightly bound MC in P-448(1) purified from  MM-treated
+;animals is reflected by characteristic absorption peaks in the  ultraviolet
+;region, but this does not affect the absorption spectra in the Soret  and
+;visible regions.
+;[1067..1069]:substance:"MC"
+;[1073..1081]:cyp450:"P-448(1)"
+;[1097..1099]:substance:"MM"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (DT:[1037..1040] The) (NN:[1041..1049] presence))
+        (PP (IN:[1050..1052] of)
+          (NP
+            (ADJP (RB:[1053..1060] tightly) (MD:[1061..1066] bound))
+            (NN:[1067..1069] MC)))
+        (PP-LOC (IN:[1070..1072] in)
+          (NP
+            (NP (NN:[1073..1081] P-448-LRB-1-RRB-))
+            (VP (VBN:[1082..1090] purified)
+              (NP (-NONE-:[1090..1090] *))
+              (PP (IN:[1091..1095] from)
+                (NP
+                  (ADJP (NN:[1097..1099] MM) (HYPH:[1099..1100] -)
+                        (VBN:[1100..1107] treated))
+                  (NNS:[1108..1115] animals)))))))
+      (VP (VBZ:[1116..1118] is)
+        (VP (VBN:[1119..1128] reflected)
+          (NP-2 (-NONE-:[1128..1128] *))
+          (PP (IN:[1129..1131] by)
+            (NP-LGS
+              (NP (JJ:[1132..1146] characteristic) (NN:[1147..1157] absorption)
+                  (NNS:[1158..1163] peaks))
+              (PP (IN:[1164..1166] in)
+                (NP (DT:[1167..1170] the) (NN:[1172..1183] ultraviolet)
+                    (NN:[1184..1190] region))))))))
+    (,:[1190..1191] ,) (CC:[1192..1195] but)
+    (S
+      (NP-SBJ (DT:[1196..1200] this))
+      (VP (VBZ:[1201..1205] does) (RB:[1206..1209] not)
+        (VP (VB:[1210..1216] affect)
+          (NP (DT:[1217..1220] the) (NN:[1221..1231] absorption)
+              (NN:[1232..1239] spectra))
+          (PP-LOC (IN:[1240..1242] in)
+            (NP (DT:[1243..1246] the)
+              (NML
+                (NML (NN:[1247..1252] Soret)
+                  (NML-1 (-NONE-:[1252..1252] *P*)))
+                (CC:[1254..1257] and)
+                (NML (JJ:[1258..1265] visible)
+                  (NML-1 (NNS:[1266..1273] regions)))))))))
+    (.:[1273..1274] .)))
+
+;sentence 9 Span:1275..1503
+;Emulgen 913, a nonionic detergent, causes the conversion of  oxidized
+;P-448(1) from the high to the low spin state, as evidenced by optical 
+;absorption and EPR results; bound MC inhibits this conversion in a 
+;noncompetitive way.
+;[1275..1286]:substance:"Emulgen 913"
+;[1299..1308]:substance:"detergent"
+;[1345..1353]:cyp450:"P-448(1)"
+;[1450..1452]:substance:"MC"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[1275..1282] Emulgen) (CD:[1283..1286] 913))
+        (,:[1286..1287] ,)
+        (NP (DT:[1288..1289] a) (JJ:[1290..1298] nonionic)
+            (NN:[1299..1308] detergent)))
+      (,:[1308..1309] ,)
+      (VP (VBZ:[1310..1316] causes)
+        (NP
+          (NP (DT:[1317..1320] the) (NN:[1321..1331] conversion))
+          (PP (IN:[1332..1334] of)
+            (NP (VBN:[1336..1344] oxidized) (NN:[1345..1353] P-448-LRB-1-RRB-)))
+          (PP (IN:[1354..1358] from)
+            (NP (DT:[1359..1362] the) (JJ:[1363..1367] high)))
+          (PP (TO:[1368..1370] to)
+            (NP (DT:[1371..1374] the) (JJ:[1375..1378] low)
+                (NN:[1379..1383] spin) (NN:[1384..1389] state))))
+        (,:[1389..1390] ,)
+        (SBAR (IN:[1391..1393] as)
+          (S
+            (NP-SBJ-2 (-NONE-:[1393..1393] *))
+            (VP (JJ:[1394..1403] evidenced)
+              (NP-2 (-NONE-:[1403..1403] *))
+              (PP (IN:[1404..1406] by)
+                (NP
+                  (NP
+                    (NML (JJ:[1407..1414] optical) (NN:[1416..1426] absorption))
+                    (NML-1 (-NONE-:[1426..1426] *P*)))
+                  (CC:[1427..1430] and)
+                  (NP (NN:[1431..1434] EPR)
+                    (NML-1 (NNS:[1435..1442] results))))))))))
+    (::[1442..1443] ;)
+    (S
+      (NP-SBJ (VBN:[1444..1449] bound) (NN:[1450..1452] MC))
+      (VP (VBZ:[1453..1461] inhibits)
+        (NP (DT:[1462..1466] this) (NN:[1467..1477] conversion))
+        (PP (IN:[1478..1480] in)
+          (NP (DT:[1481..1482] a) (JJ:[1484..1498] noncompetitive)
+              (NN:[1499..1502] way)))))
+    (.:[1502..1503] .)))
+
+;sentence 10 Span:1504..1776
+;Binding of ethyl isocyanide to reduced P-450(1) and P-448(1)  results in the
+;appearance of two Soret peaks in the 430 and 455 nm regions, the  relative
+;intensities of which are dependent on pH. At any pH the 455 nm peak of 
+;P-448(1) is always higher than that of P-450(1).
+;[1515..1531]:substance:"ethyl isocyanide"
+;[1543..1551]:cyp450:"P-450(1)"
+;[1556..1564]:cyp450:"P-448(1)"
+;[1618..1621]:quantitative-value:"430"
+;[1626..1629]:quantitative-value:"455"
+;[1630..1632]:quantitative-units:"nm"
+;[1694..1696]:quantitative-name:"pH"
+;[1705..1707]:quantitative-name:"pH"
+;[1712..1715]:quantitative-value:"455"
+;[1716..1718]:quantitative-units:"nm"
+;[1728..1736]:cyp450:"P-448(1)"
+;[1767..1775]:cyp450:"P-450(1)"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1504..1511] Binding))
+      (PP (IN:[1512..1514] of)
+        (NP (JJ:[1515..1520] ethyl) (NN:[1521..1531] isocyanide)))
+      (PP (TO:[1532..1534] to)
+        (NP
+          (NP
+            (ADJP-2 (JJ:[1535..1542] reduced))
+            (NN:[1543..1551] P-450-LRB-1-RRB-))
+          (CC:[1552..1555] and)
+          (NP
+            (ADJP-2 (-NONE-:[1555..1555] *P*))
+            (NN:[1556..1564] P-448-LRB-1-RRB-)))))
+    (VP (NNS:[1566..1573] results)
+      (PP-CLR (IN:[1574..1576] in)
+        (NP
+          (NP (DT:[1577..1580] the) (NN:[1581..1591] appearance))
+          (PP (IN:[1592..1594] of)
+            (NP (CD:[1595..1598] two) (NN:[1599..1604] Soret)
+                (NNS:[1605..1610] peaks)))
+          (PP-LOC (IN:[1611..1613] in)
+            (NP
+              (NP (DT:[1614..1617] the)
+                (NML
+                  (NML
+                    (NML (CD:[1618..1621] 430)
+                      (NML-1 (-NONE-:[1621..1621] *P*)))
+                    (NML-3 (-NONE-:[1621..1621] *P*)))
+                  (CC:[1622..1625] and)
+                  (NML
+                    (NML (CD:[1626..1629] 455)
+                      (NML-1 (NN:[1630..1632] nm)))
+                    (NML-3 (NNS:[1633..1640] regions))))
+                (,:[1640..1641] ,))
+              (SBAR
+                (WHNP-4
+                  (NP (DT:[1642..1645] the) (JJ:[1647..1655] relative)
+                      (NNS:[1656..1667] intensities))
+                  (WHPP (IN:[1668..1670] of)
+                    (WHNP (WDT:[1671..1676] which))))
+                (S
+                  (NP-SBJ-4 (-NONE-:[1676..1676] *T*))
+                  (VP (VBP:[1677..1680] are)
+                    (ADJP-PRD (JJ:[1681..1690] dependent)
+                      (PP (IN:[1691..1693] on)
+                        (NP (NN:[1694..1696] pH))))))))))))
+    (.:[1696..1697] .))
+  (S
+    (PP (IN:[1698..1700] At)
+      (NP (DT:[1701..1704] any) (NN:[1705..1707] pH)))
+    (NP-SBJ
+      (NP (DT:[1708..1711] the)
+        (NML (CD:[1712..1715] 455) (NN:[1716..1718] nm))
+        (NN:[1719..1723] peak))
+      (PP (IN:[1724..1726] of)
+        (NP (NN:[1728..1736] P-448-LRB-1-RRB-))))
+    (VP (VBZ:[1737..1739] is)
+      (ADVP (RB:[1740..1746] always))
+      (ADJP-PRD
+        (ADJP (JJR:[1747..1753] higher))
+        (PP (IN:[1754..1758] than)
+          (NP
+            (NP (DT:[1759..1763] that))
+            (PP (IN:[1764..1766] of)
+              (NP (NN:[1767..1775] P-450-LRB-1-RRB-)))))))
+    (.:[1775..1776] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1504..1776]::S:S:
+
+;sentence 11 Span:1777..1949
+;Benzphetamine and aniline,  added to oxidized P-450(1), cause Type I and Type
+;II spectral changes,  respectively, but the magnitudes of the changes are
+;small in both cases.
+;[1777..1790]:substance:"Benzphetamine"
+;[1795..1802]:substance:"aniline"
+;[1823..1831]:cyp450:"P-450(1)"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[1777..1790] Benzphetamine) (CC:[1791..1794] and)
+            (NN:[1795..1802] aniline)))
+      (,:[1802..1803] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1803..1803] *))
+        (VP (VBD:[1805..1810] added)
+          (PP (TO:[1811..1813] to)
+            (NP (JJ:[1814..1822] oxidized) (NN:[1823..1831] P-450-LRB-1-RRB-)))))
+      (,:[1831..1832] ,)
+      (VP (VBD:[1833..1838] cause)
+        (NP
+          (NP
+            (NML (NN:[1839..1843] Type) (CD:[1844..1845] I))
+            (NML-1 (-NONE-:[1845..1845] *P*)))
+          (CC:[1846..1849] and)
+          (NP
+            (NML (NN:[1850..1854] Type) (CD:[1855..1857] II))
+            (NML-1 (JJ:[1858..1866] spectral) (NNS:[1867..1874] changes))))
+        (,:[1874..1875] ,)
+        (ADVP (RB:[1877..1889] respectively))))
+    (,:[1889..1890] ,) (CC:[1891..1894] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[1895..1898] the) (NNS:[1899..1909] magnitudes))
+        (PP (IN:[1910..1912] of)
+          (NP (DT:[1913..1916] the) (NNS:[1917..1924] changes))))
+      (VP (VBP:[1925..1928] are)
+        (ADJP-PRD (JJ:[1929..1934] small))
+        (PP-LOC (IN:[1935..1937] in)
+          (NP (DT:[1938..1942] both) (NNS:[1943..1948] cases)))))
+    (.:[1948..1949] .)))
+
+;sentence 12 Span:1950..2201
+;The  Soret peak of oxidized P-448(1) at 393 nm is completely shifted to 420
+;nm on  addition of aniline, resulting in a reverse Type I spectral change;
+;acetanilide  causes the conversion of the Soret peak to the low spin state to
+;only a slight  extent.
+;[1978..1986]:cyp450:"P-448(1)"
+;[1990..1993]:quantitative-value:"393"
+;[1994..1996]:quantitative-units:"nm"
+;[2022..2025]:quantitative-value:"420"
+;[2026..2028]:quantitative-units:"nm"
+;[2045..2052]:substance:"aniline"
+;[2101..2112]:substance:"acetanilide"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP (DT:[1950..1953] The) (NN:[1955..1960] Soret) (NN:[1961..1965] peak))
+        (PP (IN:[1966..1968] of)
+          (NP (JJ:[1969..1977] oxidized) (NN:[1978..1986] P-448-LRB-1-RRB-)))
+        (PP (IN:[1987..1989] at)
+          (NP (CD:[1990..1993] 393) (NN:[1994..1996] nm))))
+      (VP (VBZ:[1997..1999] is)
+        (VP
+          (ADVP (RB:[2000..2010] completely))
+          (VBN:[2011..2018] shifted)
+          (NP-1 (-NONE-:[2018..2018] *))
+          (PP (TO:[2019..2021] to)
+            (NP (CD:[2022..2025] 420) (NN:[2026..2028] nm)))
+          (PP (IN:[2029..2031] on)
+            (NP
+              (NP (NN:[2033..2041] addition))
+              (PP (IN:[2042..2044] of)
+                (NP (NN:[2045..2052] aniline)))))
+          (,:[2052..2053] ,)
+          (S-ADV
+            (NP-SBJ (-NONE-:[2053..2053] *))
+            (VP (VBG:[2054..2063] resulting)
+              (PP-CLR (IN:[2064..2066] in)
+                (NP (DT:[2067..2068] a) (NN:[2069..2076] reverse)
+                  (NML (NN:[2077..2081] Type) (CD:[2082..2083] I))
+                  (JJ:[2084..2092] spectral) (NN:[2093..2099] change))))))))
+    (::[2099..2100] ;)
+    (S
+      (NP-SBJ (NN:[2101..2112] acetanilide))
+      (VP (VBZ:[2114..2120] causes)
+        (NP
+          (NP (DT:[2121..2124] the) (NN:[2125..2135] conversion))
+          (PP (IN:[2136..2138] of)
+            (NP (DT:[2139..2142] the) (NN:[2143..2148] Soret)
+                (NN:[2149..2153] peak)))
+          (PP (TO:[2154..2156] to)
+            (NP (DT:[2157..2160] the)
+              (NML (JJ:[2161..2164] low) (NN:[2165..2169] spin))
+              (NN:[2170..2175] state))))
+        (PP (TO:[2176..2178] to)
+          (NP
+            (ADVP (RB:[2179..2183] only))
+            (DT:[2184..2185] a) (JJ:[2186..2192] slight)
+             (NN:[2194..2200] extent)))))
+    (.:[2200..2201] .)))
+
+;sentence 13 Span:2202..2308
+;The conversions caused by aniline and acetanilide are both inhibited by  the
+;presence of tightly bound MC.
+;[2228..2235]:substance:"aniline"
+;[2240..2251]:substance:"acetanilide"
+;[2305..2307]:substance:"MC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[2202..2205] The) (NNS:[2206..2217] conversions))
+      (VP (VBN:[2218..2224] caused)
+        (NP (-NONE-:[2224..2224] *))
+        (PP (IN:[2225..2227] by)
+          (NP-LGS (NN:[2228..2235] aniline) (CC:[2236..2239] and)
+                  (NN:[2240..2251] acetanilide)))))
+    (VP (VBP:[2252..2255] are)
+      (VP
+        (ADVP (DT:[2256..2260] both))
+        (VBN:[2261..2270] inhibited)
+        (NP-1 (-NONE-:[2270..2270] *))
+        (PP (IN:[2271..2273] by)
+          (NP-LGS
+            (NP (DT:[2275..2278] the) (NN:[2279..2287] presence))
+            (PP (IN:[2288..2290] of)
+              (NP
+                (ADJP (RB:[2291..2298] tightly) (JJ:[2299..2304] bound))
+                (NN:[2305..2307] MC)))))))
+    (.:[2307..2308] .)))
+
+;sentence 14 Span:2309..2402
+;On the basis of these and other observations,  the spin state of these
+;P-450's are discussed.
+;[2380..2387]:cyp450:"P-450's"
+(SENT
+  (S
+    (PP (IN:[2309..2311] On)
+      (NP
+        (NP (DT:[2312..2315] the) (NN:[2316..2321] basis))
+        (PP (IN:[2322..2324] of)
+          (NP
+            (NP (DT:[2325..2330] these)
+              (NML-2 (-NONE-:[2330..2330] *P*)))
+            (CC:[2331..2334] and)
+            (NP (JJ:[2335..2340] other)
+              (NML-2 (NNS:[2341..2353] observations)))))))
+    (,:[2353..2354] ,)
+    (NP-SBJ-1
+      (NP (DT:[2356..2359] the) (NN:[2360..2364] spin) (NN:[2365..2370] state))
+      (PP (IN:[2371..2373] of)
+        (NP (DT:[2374..2379] these) (NNS:[2380..2387] P-450's))))
+    (VP (VBP:[2388..2391] are)
+      (VP (VBN:[2392..2401] discussed)
+        (NP-1 (-NONE-:[2401..2401] *))))
+    (.:[2401..2402] .)))
+
+;section 15 Span:2406..2449
+;PMID: 6252201 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2406..2410] PMID) (::[2410..2411] :) (CD:[2412..2419] 6252201)
+        (-LRB-:[2420..2421] -LSB-) (NNP:[2421..2427] PubMed) (::[2428..2429] -)
+        (VBN:[2430..2437] indexed) (IN:[2438..2441] for)
+        (NNP:[2442..2449] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2449..EOF] ]
+
+(ORPH -RSB-)

@@ -1,0 +1,346 @@
+;PMID: 9377556
+;source_file_526.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)section:[e:43..162] = [t:43..162]
+;2)section:[e:166..270] = [t:166..270]
+;3)section:[e:274..358] = [t:274..358]
+;4)sentence:[e:362..439] = [t:362..439]
+;5)sentence:[e:441..530] = [t:441..530]
+;6)sentence:[e:531..588] = [t:531..588]
+;7)sentence:[e:589..756] = [t:589..756]
+;8)sentence:[e:757..932] = [t:757..932]
+;9)sentence:[e:933..1044] = [t:933..1044]
+;10)sentence:[e:1045..1233] = [t:1045..1233]
+;11)sentence:[e:1234..1404] = [t:1234..1404]
+;12)section:[e:1408..1452] = [t:1408..1452]
+
+;section 0 Span:0..38
+;Cancer Res  1997 Oct 15;57(20):4478-81
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1997)
+        (NNP:[17..20] Oct) (CD:[21..23] 15) (CD:[23..25] ;5) (CD:[25..26] 7)
+        (CD:[26..29] -LRB-20) (-RRB-:[29..30] -RRB-) (::[30..31] :)
+        (CD:[31..34] 447) (CD:[34..38] 8-81)))
+
+;section 1 Span:43..162
+;Mutations in beta-catenin are uncommon in colorectal cancer occurring in 
+;occasional replication error-positive tumors.
+;[56..68]:gene-rna:"beta-catenin"
+;[85..102]:malignancy:"colorectal cancer"
+;[117..161]:malignancy:"occasional replication error-positive tumors"
+(SEC
+  (S-HLN
+    (NP-SBJ
+      (NP (NNS:[43..52] Mutations))
+      (PP-LOC (IN:[53..55] in)
+        (NP (NN:[56..68] beta-catenin))))
+    (VP (VBP:[69..72] are)
+      (ADJP-PRD (JJ:[73..81] uncommon))
+      (PP (IN:[82..84] in)
+        (NP (JJ:[85..95] colorectal) (NN:[96..102] cancer)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[102..102] *))
+        (VP (VBG:[103..112] occurring)
+          (PP-LOC (IN:[113..115] in)
+            (NP (JJ:[117..127] occasional)
+              (ADJP
+                (NML (NN:[128..139] replication) (NN:[140..145] error))
+                (HYPH:[145..146] -) (JJ:[146..154] positive))
+              (NNS:[155..161] tumors))))))
+    (.:[161..162] .)))
+;ERROR_Entity in section[56..68]:gene-rna "beta-catenin"
+;ERROR_Entity in section[85..102]:malignancy "colorectal cancer"
+;ERROR_Entity in section[117..161]:malignancy "occasional replication
+;error-positive tumors"
+
+;section 2 Span:166..270
+;Kitaeva MN, Grogan L, Williams JP, Dimond E, Nakahara K, Hausner P, DeNobile
+;JW,  Soballe PW, Kirsch IR.
+(SEC
+  (FRAG (NNP:[166..173] Kitaeva) (NNP:[174..176] MN) (,:[176..177] ,)
+        (NNP:[178..184] Grogan) (NNP:[185..187] L,) (NNP:[188..196] Williams)
+        (NNP:[197..199] JP) (,:[199..200] ,) (NNP:[201..207] Dimond)
+        (NNP:[208..209] E) (,:[209..210] ,) (NNP:[211..219] Nakahara)
+        (NNP:[220..222] K,) (NNP:[223..230] Hausner) (NNP:[231..233] P,)
+        (NNP:[234..242] DeNobile) (NNP:[243..246] JW,) (NNP:[248..255] Soballe)
+        (NNP:[256..259] PW,) (NNP:[260..266] Kirsch) (NNP:[267..270] IR.)))
+
+;section 3 Span:274..358
+;Genetics Department, National Cancer Institute, Bethesda, Maryland
+;20889-5101,  USA.
+(SEC
+  (FRAG (NNP:[274..282] Genetics) (NNP:[283..293] Department) (,:[293..294] ,)
+        (NNP:[295..303] National) (NNP:[304..310] Cancer)
+        (NNP:[311..320] Institute) (,:[320..321] ,) (NNP:[322..330] Bethesda)
+        (,:[330..331] ,) (NNP:[332..340] Maryland) (VBZ:[341..345] 2088)
+        (CD:[345..351] 9-5101) (,:[351..352] ,) (NNP:[354..357] USA)
+        (.:[357..358] .)))
+
+;sentence 4 Span:362..439
+;Beta-catenin has been identified as an oncogene in colon cancer and
+;melanoma.
+;[362..374]:gene-rna:"Beta-catenin"
+;[413..425]:malignancy:"colon cancer"
+;[430..438]:malignancy:"melanoma"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[362..374] Beta-catenin))
+    (VP (VBZ:[375..378] has)
+      (VP (VBN:[379..383] been)
+        (VP (VBN:[384..394] identified)
+          (NP-1 (-NONE-:[394..394] *))
+          (PP (IN:[395..397] as)
+            (NP (DT:[398..400] an) (NN:[401..409] oncogene)))
+          (PP (IN:[410..412] in)
+            (NP
+              (NP (NN:[413..418] colon) (NN:[419..425] cancer))
+              (CC:[426..429] and)
+              (NP (NN:[430..438] melanoma)))))))
+    (.:[438..439] .)))
+
+;sentence 5 Span:441..530
+;Phosphorylation of sites in exon 3 of beta-catenin leads to degradation of
+;this  protein.
+;[469..475]:variation-location:"exon 3"
+;[479..491]:gene-rna:"beta-catenin"
+;[522..529]:gene-protein:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[441..456] Phosphorylation))
+      (PP (IN:[457..459] of)
+        (NP (NNS:[460..465] sites)))
+      (PP-LOC (IN:[466..468] in)
+        (NP
+          (NP (NN:[469..473] exon) (CD:[474..475] 3))
+          (PP (IN:[476..478] of)
+            (NP (NN:[479..491] beta-catenin))))))
+    (VP (VBZ:[492..497] leads)
+      (PP-CLR (TO:[498..500] to)
+        (NP
+          (NP (NN:[501..512] degradation))
+          (PP (IN:[513..515] of)
+            (NP (DT:[516..520] this) (NN:[522..529] protein))))))
+    (.:[529..530] .)))
+
+;sentence 6 Span:531..588
+;These sites are primary targets for activating mutations.
+;[531..542]:variation-location:"These sites"
+;[578..587]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ (DT:[531..536] These) (NNS:[537..542] sites))
+    (VP (VBP:[543..546] are)
+      (NP-PRD
+        (NP (JJ:[547..554] primary) (NNS:[555..562] targets))
+        (PP (IN:[563..566] for)
+          (NP (VBG:[567..577] activating) (NNS:[578..587] mutations)))))
+    (.:[587..588] .)))
+
+;sentence 7 Span:589..756
+;The frequency  with which oncogenic mutations at these sites are found in
+;colorectal cancer is  unknown, as is the frequency of their occurrence in
+;other malignancies.
+;[625..634]:variation-event:"mutations"
+;[638..649]:variation-location:"these sites"
+;[663..680]:malignancy:"colorectal cancer"
+;[743..755]:malignancy:"malignancies"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[589..592] The) (NN:[593..602] frequency))
+      (SBAR
+        (WHPP-2 (IN:[604..608] with)
+          (WHNP (WDT:[609..614] which)))
+        (S
+          (NP-SBJ-1
+            (NP (JJ:[615..624] oncogenic) (NNS:[625..634] mutations))
+            (PP (IN:[635..637] at)
+              (NP (DT:[638..643] these) (NNS:[644..649] sites))))
+          (VP (VBP:[650..653] are)
+            (VP (VBN:[654..659] found)
+              (NP-1 (-NONE-:[659..659] *))
+              (PP-LOC (IN:[660..662] in)
+                (NP (JJ:[663..673] colorectal) (NN:[674..680] cancer)))
+              (PP-2 (-NONE-:[680..680] *T*)))))))
+    (VP (VBZ:[681..683] is)
+      (ADJP-PRD (JJ:[685..692] unknown))
+      (,:[692..693] ,)
+      (SBAR-ADV (IN:[694..696] as)
+        (SINV (VBZ:[697..699] is)
+          (NP-SBJ
+            (NP (DT:[700..703] the) (NN:[704..713] frequency))
+            (PP (IN:[714..716] of)
+              (NP
+                (NP (PRP$:[717..722] their) (NN:[723..733] occurrence))
+                (PP (IN:[734..736] in)
+                  (NP (JJ:[737..742] other) (NNS:[743..755] malignancies))))))
+          (VP (-NONE-:[755..755] *?*)))))
+    (.:[755..756] .)))
+
+;sentence 8 Span:757..932
+;We  analyzed 92 colorectal cancers (CRCs) and 57 cancer cell lines
+;(representing a  diversity of tumor types) to determine the frequency of
+;activating mutations in  this gene.
+;[773..791]:malignancy:"colorectal cancers"
+;[793..797]:malignancy:"CRCs"
+;[806..866]:malignancy:"cancer cell lines (representing a  diversity of tumor
+;types)"
+;[922..931]:gene-rna:"this gene"
+(SENT
+  (S
+    (NP-SBJ (PRP:[757..759] We))
+    (VP (VBD:[761..769] analyzed)
+      (NP
+        (NP (CD:[770..772] 92)
+          (NML
+            (NML (JJ:[773..783] colorectal) (NNS:[784..791] cancers))
+            (NML (-LRB-:[792..793] -LRB-) (NNS:[793..797] CRCs)
+                 (-RRB-:[797..798] -RRB-))))
+        (CC:[799..802] and)
+        (NP (CD:[803..805] 57)
+           (NN:[806..812] cancer) (NN:[813..817] cell) (NNS:[818..823] lines)
+          (PRN (-LRB-:[824..825] -LRB-)
+            (VP (VBG:[825..837] representing)
+              (NP
+                (NP (DT:[838..839] a) (NN:[841..850] diversity))
+                (PP (IN:[851..853] of)
+                  (NP (NN:[854..859] tumor) (NNS:[860..865] types)))))
+            (-RRB-:[865..866] -RRB-))))
+      (S-PRP
+        (NP-SBJ (-NONE-:[866..866] *))
+        (VP (TO:[867..869] to)
+          (VP (VB:[870..879] determine)
+            (NP
+              (NP (DT:[880..883] the) (NN:[884..893] frequency))
+              (PP (IN:[894..896] of)
+                (NP (VBG:[897..907] activating) (NNS:[908..917] mutations)))
+              (PP-LOC (IN:[918..920] in)
+                (NP (DT:[922..926] this) (NN:[927..931] gene))))))))
+    (.:[931..932] .)))
+
+;sentence 9 Span:933..1044
+;Mutations in exon 3 of beta-catenin were found in 2 of 92 CRCs and in  the
+;colorectal cancer cell line HCT 116.
+;[933..942]:variation-event:"Mutations"
+;[946..952]:variation-location:"exon 3"
+;[956..968]:gene-rna:"beta-catenin"
+;[991..995]:malignancy:"CRCs"
+;[1008..1043]:malignancy:"colorectal cancer cell line HCT 116"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[933..942] Mutations))
+      (PP-LOC (IN:[943..945] in)
+        (NP (NN:[946..950] exon) (CD:[951..952] 3)))
+      (PP (IN:[953..955] of)
+        (NP (NN:[956..968] beta-catenin))))
+    (VP (VBD:[969..973] were)
+      (VP (VBN:[974..979] found)
+        (NP-1 (-NONE-:[979..979] *))
+        (PP-LOC
+          (PP (IN:[980..982] in)
+            (NP
+              (NP (CD:[983..984] 2))
+              (PP (IN:[985..987] of)
+                (NP (CD:[988..990] 92) (NNS:[991..995] CRCs)))))
+          (CC:[996..999] and)
+          (PP (IN:[1000..1002] in)
+            (NP
+              (NP (DT:[1004..1007] the)
+                (NML (JJ:[1008..1018] colorectal) (NN:[1019..1025] cancer))
+                (NN:[1026..1030] cell) (NN:[1031..1035] line))
+              (NP (NN:[1036..1039] HCT) (CD:[1040..1043] 116)))))))
+    (.:[1043..1044] .)))
+
+;sentence 10 Span:1045..1233
+;Both tumors with beta-catenin mutations  exhibited widespread microsatellite
+;instability, which is indicative of a  replication error phenotype, a
+;phenotype known to be present in HCT 116.
+;[1050..1056]:malignancy:"tumors"
+;[1062..1074]:gene-rna:"beta-catenin"
+;[1225..1232]:malignancy:"HCT 116"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1045..1049] Both) (NNS:[1050..1056] tumors))
+      (PP (IN:[1057..1061] with)
+        (NP (NN:[1062..1074] beta-catenin) (NNS:[1075..1084] mutations))))
+    (VP (VBD:[1086..1095] exhibited)
+      (NP
+        (NP (JJ:[1096..1106] widespread) (NN:[1107..1121] microsatellite)
+            (NN:[1122..1133] instability))
+        (,:[1133..1134] ,)
+        (SBAR
+          (WHNP-1 (WDT:[1135..1140] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1140..1140] *T*))
+            (VP (VBZ:[1141..1143] is)
+              (ADJP-PRD (JJ:[1144..1154] indicative)
+                (PP (IN:[1155..1157] of)
+                  (NP
+                    (NP (DT:[1158..1159] a)
+                      (NML (NN:[1161..1172] replication) (NN:[1173..1178] error))
+                      (NN:[1179..1188] phenotype))
+                    (,:[1188..1189] ,)
+                    (NP
+                      (NP (DT:[1190..1191] a) (NN:[1192..1201] phenotype))
+                      (VP (VBN:[1202..1207] known)
+                        (S
+                          (NP-SBJ (-NONE-:[1207..1207] *))
+                          (VP (TO:[1208..1210] to)
+                            (VP (VB:[1211..1213] be)
+                              (ADJP-PRD (JJ:[1214..1221] present))
+                              (PP-LOC (IN:[1222..1224] in)
+                                (NP (NN:[1225..1228] HCT) (CD:[1229..1232] 116))))))))))))))))
+    (.:[1232..1233] .)))
+
+;sentence 11 Span:1234..1404
+;This  suggests that mutations in beta-catenin are infrequent in CRC and
+;miscellaneous  cancer cell lines and may occur in association with a
+;replication error  phenotype.
+;[1267..1279]:gene-rna:"beta-catenin"
+;[1298..1301]:malignancy:"CRC"
+;[1306..1338]:malignancy:"miscellaneous  cancer cell lines"
+(SENT
+  (S
+    (NP-SBJ (DT:[1234..1238] This))
+    (VP (VBZ:[1240..1248] suggests)
+      (SBAR (IN:[1249..1253] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1254..1263] mutations))
+            (PP-LOC (IN:[1264..1266] in)
+              (NP (NN:[1267..1279] beta-catenin))))
+          (VP
+            (VP (VBP:[1280..1283] are)
+              (ADJP-PRD (JJ:[1284..1294] infrequent))
+              (PP-LOC (IN:[1295..1297] in)
+                (NP
+                  (NP (NN:[1298..1301] CRC))
+                  (CC:[1302..1305] and)
+                  (NP (JJ:[1306..1319] miscellaneous) (NN:[1321..1327] cancer)
+                      (NN:[1328..1332] cell) (NNS:[1333..1338] lines)))))
+            (CC:[1339..1342] and)
+            (VP (MD:[1343..1346] may)
+              (VP (VB:[1347..1352] occur)
+                (PP (IN:[1353..1355] in)
+                  (NP
+                    (NP (NN:[1356..1367] association))
+                    (PP (IN:[1368..1372] with)
+                      (NP (DT:[1373..1374] a)
+                        (NML (NN:[1375..1386] replication)
+                             (NN:[1387..1392] error))
+                        (NN:[1394..1403] phenotype)))))))))))
+    (.:[1403..1404] .)))
+
+;section 12 Span:1408..1452
+;PMID: 9377556 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1408..1412] PMID) (::[1412..1413] :) (CD:[1414..1421] 9377556)
+        (NN:[1422..1423] -LSB-) (NNP:[1423..1429] PubMed) (::[1430..1431] -)
+        (NN:[1432..1439] indexed) (IN:[1440..1443] for)
+        (NNP:[1444..1452] MEDLINE-RSB-)))

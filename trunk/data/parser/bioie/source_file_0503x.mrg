@@ -1,0 +1,325 @@
+;PMID: 8394991
+;source_file_2998.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)section:[e:44..94] = [t:44..94]
+;2)sentence:[e:98..188] = [t:98..188]
+;3)section:[e:192..244] = [t:192..244]
+;4)section:[e:248..310] = [t:248..310]
+;5)sentence:[e:314..419] = [t:314..419]
+;6)sentence:[e:420..684] = [t:420..684]
+;7)sentence:[e:685..778] = [t:685..778]
+;8)sentence:[e:779..889] = [t:779..889]
+;9)sentence:[e:890..1167] = [t:890..1167]
+;10)sentence:[e:1168..1526] = [t:1168..1526]
+;11)section:[e:1530..1574] = [t:1530..1574]
+
+;section 0 Span:0..38
+;Mol Pharmacol.  1993 Aug;44(2):346-55.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..13] Pharmacol) (.:[13..14] .)
+        (CD:[16..20] 1993) (NNP:[21..24] Aug) (::[24..25] ;) (CD:[25..27] 44)
+        (-LRB-:[27..28] -LRB-) (CD:[28..29] 2) (-RRB-:[29..30] -RRB-)
+        (::[30..31] :) (CD:[31..37] 346-55) (.:[37..38] .)))
+
+;section 1 Span:44..94
+;Erratum in:      Mol Pharmacol 1994 Mar;45(3):561.
+(SEC
+  (FRAG (NNP:[44..51] Erratum) (IN:[52..54] in) (NNP:[54..55] :)
+        (NNP:[61..64] Mol) (NNP:[65..74] Pharmacol) (CD:[75..79] 1994)
+        (NNP:[80..83] Mar) (::[83..84] ;) (CD:[84..86] 45)
+        (-LRB-:[86..87] -LRB-) (CD:[87..88] 3) (-RRB-:[88..89] -RRB-)
+        (::[89..90] :) (CD:[90..93] 561) (.:[93..94] .)))
+
+;sentence 2 Span:98..188
+;Cloned murine bradykinin receptor exhibits a mixed B1 and B2 pharmacological 
+;selectivity.
+;[112..131]:gene-protein:"bradykinin receptor"
+;[149..151]:gene-protein:"B1"
+;[156..158]:gene-protein:"B2"
+(SENT
+  (S-HLN
+    (NP-SBJ (VBN:[98..104] Cloned) (JJ:[105..111] murine)
+       (NN:[112..122] bradykinin) (NN:[123..131] receptor))
+    (VP (VBZ:[132..140] exhibits)
+      (NP (DT:[141..142] a) (VBN:[143..148] mixed)
+        (NML (NN:[149..151] B1) (CC:[152..155] and) (NN:[156..158] B2))
+        (JJ:[159..174] pharmacological) (NN:[176..187] selectivity)))
+    (.:[187..188] .)))
+
+;section 3 Span:192..244
+;McIntyre P, Phillips E, Skidmore E, Brown M, Webb M.
+(SEC
+  (FRAG (NNP:[192..200] McIntyre) (NNP:[201..202] P) (,:[202..203] ,)
+        (NNP:[204..212] Phillips) (NNP:[213..214] E) (,:[214..215] ,)
+        (NNP:[216..224] Skidmore) (NNP:[225..226] E) (,:[226..227] ,)
+        (NNP:[228..233] Brown) (NNP:[234..235] M) (,:[235..236] ,)
+        (NNP:[237..241] Webb) (NNP:[242..243] M) (.:[243..244] .)))
+
+;section 4 Span:248..310
+;Sandoz Institute for Medical Research, London, United Kingdom.
+(SEC
+  (FRAG (NNP:[248..254] Sandoz) (NNP:[255..264] Institute) (IN:[265..268] for)
+        (NNP:[269..276] Medical) (NNP:[277..285] Research) (,:[285..286] ,)
+        (NNP:[287..293] London) (,:[293..294] ,) (NNP:[295..301] United)
+        (NNP:[302..309] Kingdom) (.:[309..310] .)))
+
+;sentence 5 Span:314..419
+;We have isolated DNA clones encoding functional bradykinin receptors from
+;human,  rat, and mouse sources.
+;[362..382]:gene-protein:"bradykinin receptors"
+(SENT
+  (S
+    (NP-SBJ (PRP:[314..316] We))
+    (VP (VBP:[317..321] have)
+      (VP (VBN:[322..330] isolated)
+        (NP
+          (NP (NN:[331..334] DNA) (NNS:[335..341] clones))
+          (VP (VBG:[342..350] encoding)
+            (NP (JJ:[351..361] functional)
+               (NN:[362..372] bradykinin) (NNS:[373..382] receptors))))
+        (PP (IN:[383..387] from)
+          (NP
+            (NP (JJ:[388..393] human)
+              (NML-1 (-NONE-:[393..393] *P*)))
+            (,:[393..394] ,)
+            (NP (NN:[396..399] rat)
+              (NML-1 (-NONE-:[399..399] *P*)))
+            (,:[399..400] ,) (CC:[401..404] and)
+            (NP (NN:[405..410] mouse)
+              (NML-1 (NNS:[411..418] sources)))))))
+    (.:[418..419] .)))
+
+;sentence 6 Span:420..684
+;Genomic bradykinin receptor clones have been isolated  from mouse and human
+;cosmid libraries and cDNA clones have been isolated from  the human lung
+;fibroblast cell line W138, from the neuroblastoma/glioma hybrid  NG108-15,
+;and from rat dorsal root ganglion cells.
+;[428..447]:gene-protein:"bradykinin receptor"
+;[605..618]:malignancy-type:"neuroblastoma"
+;[619..625]:malignancy-type:"glioma"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (JJ:[420..427] Genomic)
+        (NML (NN:[428..438] bradykinin) (NN:[439..447] receptor))
+        (NNS:[448..454] clones))
+      (VP (VBP:[455..459] have)
+        (VP (VBN:[460..464] been)
+          (VP (VBN:[465..473] isolated)
+            (NP-1 (-NONE-:[473..473] *))
+            (PP (IN:[475..479] from)
+              (NP
+                (NP (NN:[480..485] mouse)
+                  (NML-2 (-NONE-:[485..485] *P*)))
+                (CC:[486..489] and)
+                (NP (JJ:[490..495] human)
+                  (NML-2 (NN:[496..502] cosmid) (NNS:[503..512] libraries)))))))))
+    (CC:[513..516] and)
+    (S
+      (NP-SBJ-3 (NN:[517..521] cDNA) (NNS:[522..528] clones))
+      (VP (VBP:[529..533] have)
+        (VP (VBN:[534..538] been)
+          (VP (VBN:[539..547] isolated)
+            (NP-3 (-NONE-:[547..547] *))
+            (PP
+              (PP (IN:[548..552] from)
+                (NP
+                  (NP (DT:[554..557] the) (JJ:[558..563] human)
+                      (NN:[564..568] lung) (NN:[569..579] fibroblast)
+                      (NN:[580..584] cell) (NN:[585..589] line))
+                  (NP (NN:[590..594] W138))))
+              (,:[594..595] ,)
+              (PP (IN:[596..600] from)
+                (NP (DT:[601..604] the)
+                  (NML (NN:[605..618] neuroblastoma) (SYM:[618..619] /)
+                       (NN:[619..625] glioma))
+                  (NN:[626..632] hybrid) (NN:[634..642] NG108-15)))
+              (,:[642..643] ,) (CC:[644..647] and)
+              (PP (IN:[648..652] from)
+                (NP (NN:[653..656] rat) (JJ:[657..663] dorsal)
+                    (NN:[664..668] root) (NN:[669..677] ganglion)
+                    (NNS:[678..683] cells))))))))
+    (.:[683..684] .)))
+
+;sentence 7 Span:685..778
+;The receptor protein is  encoded by an intronless region of the gene in both
+;mouse and human.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[685..688] The) (NN:[689..697] receptor)
+              (NN:[698..705] protein))
+    (VP (VBZ:[706..708] is)
+      (VP (VBN:[710..717] encoded)
+        (NP-1 (-NONE-:[717..717] *))
+        (PP (IN:[718..720] by)
+          (NP
+            (NP (DT:[721..723] an) (JJ:[724..734] intronless)
+                (NN:[735..741] region))
+            (PP (IN:[742..744] of)
+              (NP (DT:[745..748] the) (NN:[749..753] gene)))))
+        (PP (IN:[754..756] in)
+          (NP (CC:[757..761] both)
+            (NP (NN:[762..767] mouse))
+            (CC:[768..771] and)
+            (NP (NN:[772..777] human))))))
+    (.:[777..778] .)))
+
+;sentence 8 Span:779..889
+;There is  evidence of a splice acceptor site 8 bases upstream from the
+;initiation codon in  all three species.
+(SENT
+  (S
+    (NP-SBJ (EX:[779..784] There))
+    (VP (VBZ:[785..787] is)
+      (NP
+        (NP (NN:[789..797] evidence))
+        (PP (IN:[798..800] of)
+          (NP (DT:[801..802] a) (NN:[803..809] splice) (NN:[810..818] acceptor)
+              (NN:[819..823] site))))
+      (ADVP-LOC
+        (NP (CD:[824..825] 8) (NNS:[826..831] bases))
+        (RB:[832..840] upstream)
+        (PP (IN:[841..845] from)
+          (NP (DT:[846..849] the) (NN:[850..860] initiation)
+              (NN:[861..866] codon))))
+      (PP-LOC (IN:[867..869] in)
+        (NP (DT:[871..874] all) (CD:[875..880] three) (NNS:[881..888] species))))
+    (.:[888..889] .)))
+
+;sentence 9 Span:890..1167
+;The function of the expressed receptor proteins from mouse,  rat, and human
+;was tested by electrophysiological assays after injection of cRNA  into
+;Xenopus laevis oocytes and also by binding assays with membranes from COS-7 
+;cells transfected with cloned receptor-encoding DNA.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[890..893] The) (NN:[894..902] function))
+      (PP (IN:[903..905] of)
+        (NP
+          (NP (DT:[906..909] the) (VBN:[910..919] expressed)
+              (NN:[920..928] receptor) (NNS:[929..937] proteins))
+          (PP (IN:[938..942] from)
+            (NP (NN:[943..948] mouse) (,:[948..949] ,) (NN:[951..954] rat)
+                (,:[954..955] ,) (CC:[956..959] and) (NN:[960..965] human))))))
+    (VP (VBD:[966..969] was)
+      (VP
+        (VP (VBN:[970..976] tested)
+          (NP-1 (-NONE-:[976..976] *))
+          (PP=2 (IN:[977..979] by)
+            (NP (JJ:[980..1000] electrophysiological) (NNS:[1001..1007] assays)))
+          (PP=3 (IN:[1008..1013] after)
+            (NP
+              (NP (NN:[1014..1023] injection))
+              (PP (IN:[1024..1026] of)
+                (NP (NN:[1027..1031] cRNA)))
+              (PP (IN:[1033..1037] into)
+                (NP (NNP:[1038..1045] Xenopus) (NNP:[1046..1052] laevis)
+                    (NNS:[1053..1060] oocytes))))))
+        (VP (CC:[1061..1064] and)
+          (ADVP (RB:[1065..1069] also))
+          (PP=2 (IN:[1070..1072] by)
+            (NP
+              (NP (NN:[1073..1080] binding) (NNS:[1081..1087] assays))
+              (PP (IN:[1088..1092] with)
+                (NP
+                  (NP (NNS:[1093..1102] membranes))
+                  (PP (IN:[1103..1107] from)
+                    (NP
+                      (NP (NN:[1108..1113] COS-7) (NNS:[1115..1120] cells))
+                      (VP (VBN:[1121..1132] transfected)
+                        (NP (-NONE-:[1132..1132] *))
+                        (PP (IN:[1133..1137] with)
+                          (NP (VBN:[1138..1144] cloned)
+                            (ADJP (NN:[1145..1153] receptor)
+                                  (HYPH:[1153..1154] -)
+                                  (VBG:[1154..1162] encoding))
+                            (NN:[1163..1166] DNA))))))))))
+          (PP=3 (-NONE-:[1166..1166] *NOT*)))))
+    (.:[1166..1167] .)))
+
+;sentence 10 Span:1168..1526
+;The receptors from human  and rat showed the pharmacological properties of B2
+;receptors in both expression  systems when tested with a variety of
+;bradykinin analogues, but receptors from  mouse divided into two populations,
+;one population with pharmacological  properties of B1-like receptors and
+;another, larger, population with properties  of B2 receptors.
+;[1243..1255]:gene-protein:"B2 receptors"
+;[1314..1324]:gene-protein:"bradykinin"
+;[1443..1460]:gene-protein:"B1-like receptors"
+;[1513..1525]:gene-protein:"B2 receptors"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1168..1171] The) (NNS:[1172..1181] receptors))
+        (PP (IN:[1182..1186] from)
+          (NP (NN:[1187..1192] human) (CC:[1194..1197] and)
+              (NN:[1198..1201] rat))))
+      (VP (VBD:[1202..1208] showed)
+        (NP
+          (NP (DT:[1209..1212] the) (JJ:[1213..1228] pharmacological)
+              (NNS:[1229..1239] properties))
+          (PP (IN:[1240..1242] of)
+            (NP (NN:[1243..1245] B2) (NNS:[1246..1255] receptors))))
+        (PP (IN:[1256..1258] in)
+          (NP (DT:[1259..1263] both) (NN:[1264..1274] expression)
+              (NNS:[1276..1283] systems)))
+        (SBAR-ADV
+          (WHADVP-1 (WRB:[1284..1288] when))
+          (S
+            (NP-SBJ-2 (-NONE-:[1288..1288] *))
+            (VP (VBN:[1289..1295] tested)
+              (NP-2 (-NONE-:[1295..1295] *))
+              (PP (IN:[1296..1300] with)
+                (NP
+                  (NP (DT:[1301..1302] a) (NN:[1303..1310] variety))
+                  (PP (IN:[1311..1313] of)
+                    (NP (NN:[1314..1324] bradykinin)
+                        (NNS:[1325..1334] analogues)))))
+              (ADVP-TMP-1 (-NONE-:[1334..1334] *T*)))))))
+    (,:[1334..1335] ,) (CC:[1336..1339] but)
+    (S
+      (NP-SBJ
+        (NP (NNS:[1340..1349] receptors))
+        (PP (IN:[1350..1354] from)
+          (NP (NN:[1356..1361] mouse))))
+      (VP (VBN:[1362..1369] divided)
+        (PP (IN:[1370..1374] into)
+          (NP
+            (NP (CD:[1375..1378] two) (NNS:[1379..1390] populations))
+            (,:[1390..1391] ,)
+            (NP
+              (NP
+                (NP (CD:[1392..1395] one) (NN:[1396..1406] population))
+                (PP (IN:[1407..1411] with)
+                  (NP
+                    (NP (JJ:[1412..1427] pharmacological)
+                        (NNS:[1429..1439] properties))
+                    (PP (IN:[1440..1442] of)
+                      (NP
+                        (ADJP (NN:[1443..1445] B1) (HYPH:[1445..1446] -)
+                              (JJ:[1446..1450] like))
+                        (NNS:[1451..1460] receptors))))))
+              (CC:[1461..1464] and)
+              (NP
+                (NP (DT:[1465..1472] another) (,:[1472..1473] ,)
+                    (JJR:[1474..1480] larger) (,:[1480..1481] ,)
+                    (NN:[1482..1492] population))
+                (PP (IN:[1493..1497] with)
+                  (NP
+                    (NP (NNS:[1498..1508] properties))
+                    (PP (IN:[1510..1512] of)
+                      (NP (NN:[1513..1515] B2) (NNS:[1516..1525] receptors)))))))))))
+    (.:[1525..1526] .)))
+
+;section 11 Span:1530..1574
+;PMID: 8394991 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1530..1534] PMID) (::[1534..1535] :) (CD:[1536..1543] 8394991)
+        (NN:[1544..1545] -LSB-) (NNP:[1545..1551] PubMed) (::[1552..1553] -)
+        (NN:[1554..1561] indexed) (IN:[1562..1565] for)
+        (NNP:[1566..1573] MEDLINE) (-RRB-:[1573..1574] -RSB-)))

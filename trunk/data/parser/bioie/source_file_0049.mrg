@@ -1,0 +1,528 @@
+;PMID: 8452565
+;source_file_1733.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..154] = [t:51..154]
+;2)section:[e:158..212] = [t:158..212]
+;3)section:[e:216..287] = [t:216..287]
+;4)sentence:[e:291..501] = [t:291..501]
+;5)sentence:[e:502..659] = [t:502..659]
+;6)sentence:[e:660..740] = [t:660..740]
+;7)sentence:[e:741..818] = [t:741..818]
+;8)sentence:[e:819..893] = [t:819..893]
+;9)sentence:[e:894..938] = [t:894..938]
+;10)sentence:[e:939..1018] = [t:939..1018]
+;11)sentence:[e:1019..1152] = [t:1019..1152]
+;12)sentence:[e:1154..1233] = [t:1154..1233]
+;13)sentence:[e:1235..1337] = [t:1235..1337]
+;14)sentence:[e:1338..1412] = [t:1338..1412]
+;15)sentence:[e:1413..1560] = [t:1413..1560]
+;16)sentence:[e:1561..1717] = [t:1561..1717]
+;17)sentence:[e:1718..1901] = [t:1718..1901]
+;18)section:[e:1905..1949] = [t:1905..1949]
+
+;section 0 Span:0..45
+;Biochem Pharmacol. 1993 Feb 24;45(4):899-907.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (,:[17..18] .)
+        (CD:[19..23] 1993) (NNP:[24..27] Feb) (CD:[28..34] 24;45-LRB-)
+        (CD:[34..35] 4) (-RRB-:[35..36] -RRB-) (::[36..37] :) (CD:[37..40] 899)
+        (::[40..41] -) (CD:[41..44] 907) (.:[44..45] .)))
+
+;sentence 1 Span:51..154
+;Cytochrome P450 isoforms in human fetal tissues related to 
+;phenobarbital-inducible forms in the mouse.
+;[51..75]:cyp450:"Cytochrome P450 isoforms"
+;[111..124]:substance:"phenobarbital"
+(SENT
+  (NP-HLN
+    (NP
+      (NML (NN:[51..61] Cytochrome) (NN:[62..66] P450))
+      (NNS:[67..75] isoforms))
+    (PP-LOC (IN:[76..78] in)
+      (NP
+        (NP (JJ:[79..84] human) (JJ:[85..90] fetal) (NNS:[91..98] tissues))
+        (VP (VBN:[99..106] related)
+          (NP (-NONE-:[106..106] *))
+          (PP-CLR (TO:[107..109] to)
+            (NP
+              (NP
+                (ADJP (NN:[111..124] phenobarbital) (HYPH:[124..125] -)
+                      (JJ:[125..134] inducible))
+                (NNS:[135..140] forms))
+              (PP-LOC (IN:[141..143] in)
+                (NP (DT:[144..147] the) (NN:[148..153] mouse))))))))
+    (.:[153..154] .)))
+
+;section 2 Span:158..212
+;Maenpaa J, Rane A, Raunio H, Honkakoski P, Pelkonen O.
+(SEC
+  (FRAG (NNP:[158..165] Maenpaa) (NNP:[166..168] J,) (NNP:[169..173] Rane)
+        (NNP:[174..175] A) (,:[175..176] ,) (NNP:[177..183] Raunio)
+        (NNP:[184..186] H,) (NNP:[187..197] Honkakoski) (NNP:[198..200] P,)
+        (NNP:[201..209] Pelkonen) (NNP:[210..211] O) (.:[211..212] .)))
+
+;section 3 Span:216..287
+;Department of Pharmacology and Toxicology, University of Oulu, Finland.
+(SEC
+  (FRAG (NNP:[216..226] Department) (IN:[227..229] of)
+        (NNP:[230..242] Pharmacology) (CC:[243..246] and)
+        (NNP:[247..257] Toxicology) (,:[257..258] ,) (NNP:[259..269] University)
+        (IN:[270..272] of) (NNP:[273..277] Oulu) (,:[277..278] ,)
+        (NNP:[279..286] Finland) (.:[286..287] .)))
+
+;sentence 4 Span:291..501
+;Four polyclonal antibodies raised against purified mouse liver cytochrome
+;P450s  representing Cyp1a, Cyp2a, Cyp2b and Cyp2c subfamilies were used to
+;detect their  related forms in human adult and fetal tissues.
+;[296..317]:substance:"polyclonal antibodies"
+;[354..370]:cyp450:"cytochrome P450s"
+;[385..390]...[415..426]:cyp450:"Cyp1a"..."subfamilies"
+;[392..397]...[415..426]:cyp450:"Cyp2a"..."subfamilies"
+;[399..404]...[415..426]:cyp450:"Cyp2b"..."subfamilies"
+;[409..426]:cyp450:"Cyp2c subfamilies"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (CD:[291..295] Four)
+         (JJ:[296..306] polyclonal) (NNS:[307..317] antibodies))
+      (VP (VBN:[318..324] raised)
+        (NP (-NONE-:[324..324] *))
+        (PP (IN:[325..332] against)
+          (NP
+            (NP (VBN:[333..341] purified) (NN:[342..347] mouse)
+                (NN:[348..353] liver)
+               (NN:[354..364] cytochrome) (NNS:[365..370] P450s))
+            (VP (VBG:[372..384] representing)
+              (NP
+                (NP (NN:[385..390] Cyp1a)
+                  (NML-3 (-NONE-:[390..390] *P*)))
+                (,:[390..391] ,)
+                (NP (NN:[392..397] Cyp2a)
+                  (NML-3 (-NONE-:[397..397] *P*)))
+                (,:[397..398] ,)
+                (NP (NN:[399..404] Cyp2b)
+                  (NML-3 (-NONE-:[404..404] *P*)))
+                (CC:[405..408] and)
+                (NP (NN:[409..414] Cyp2c)
+                  (NML-3 (NNS:[415..426] subfamilies)))))))))
+    (VP (VBD:[427..431] were)
+      (VP (VBN:[432..436] used)
+        (NP-4 (-NONE-:[436..436] *))
+        (S-CLR
+          (NP-SBJ (-NONE-:[436..436] *))
+          (VP (TO:[437..439] to)
+            (VP (VB:[440..446] detect)
+              (NP (PRP$:[447..452] their) (VBN:[454..461] related)
+                  (NNS:[462..467] forms))
+              (PP-LOC (IN:[468..470] in)
+                (NP
+                  (NP
+                    (ADJP-2 (JJ:[471..476] human))
+                    (JJ:[477..482] adult)
+                    (NML-1 (-NONE-:[482..482] *P*)))
+                  (CC:[483..486] and)
+                  (NP
+                    (ADJP-2 (-NONE-:[486..486] *P*))
+                    (JJ:[487..492] fetal)
+                    (NML-1 (NNS:[493..500] tissues))))))))))
+    (.:[500..501] .)))
+
+;sentence 5 Span:502..659
+;In immunoblot analysis,  anti-Cyp2c antibody detected two to three proteins
+;in adult livers and one to  three proteins in 70% of the 18 fetal livers
+;studied.
+;[527..546]:substance:"anti-Cyp2c antibody"
+;[569..577]:substance:"proteins"
+;[612..620]:substance:"proteins"
+;[624..627]:quantitative-value:"70%"
+(SENT
+  (S
+    (PP (IN:[502..504] In)
+      (NP (NN:[505..515] immunoblot) (NN:[516..524] analysis)))
+    (,:[524..525] ,)
+    (NP-SBJ
+      (NML (AFX:[527..531] anti) (HYPH:[531..532] -) (NN:[532..537] Cyp2c))
+      (NN:[538..546] antibody))
+    (VP
+      (VP (VBD:[547..555] detected)
+        (NP=2
+          (NP (CD:[556..559] two))
+          (PP (TO:[560..562] to)
+            (NP (CD:[563..568] three) (NNS:[569..577] proteins))))
+        (PP-LOC=3 (IN:[578..580] in)
+          (NP (JJ:[581..586] adult) (NNS:[587..593] livers))))
+      (CC:[594..597] and)
+      (VP
+        (NP=2
+          (NP (CD:[598..601] one))
+          (PP (TO:[602..604] to)
+            (NP (CD:[606..611] three) (NNS:[612..620] proteins))))
+        (PP-LOC=3 (IN:[621..623] in)
+          (NP
+            (NP (CD:[624..626] 70) (NN:[626..627] %))
+            (PP (IN:[628..630] of)
+              (NP
+                (NP (DT:[631..634] the) (CD:[635..637] 18) (JJ:[638..643] fetal)
+                    (NNS:[644..650] livers))
+                (VP (VBN:[651..658] studied)
+                  (NP (-NONE-:[658..658] *)))))))))
+    (.:[658..659] .)))
+
+;sentence 6 Span:660..740
+;Anti-Cyp2a-5 antibody  recognized a 50-kDa protein in 50% of the fetal
+;adrenals.
+;[660..681]:substance:"Anti-Cyp2a-5 antibody"
+;[696..698]:quantitative-value:"50"
+;[699..702]:quantitative-units:"kDa"
+;[703..710]:substance:"protein"
+;[714..717]:quantitative-value:"50%"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (AFX:[660..664] Anti) (HYPH:[664..665] -) (NN:[665..672] Cyp2a-5))
+      (NN:[673..681] antibody))
+    (VP (VBD:[683..693] recognized)
+      (NP (DT:[694..695] a)
+        (NML (CD:[696..698] 50) (HYPH:[698..699] -) (NN:[699..702] kDa))
+        (NN:[703..710] protein))
+      (PP-LOC (IN:[711..713] in)
+        (NP
+          (NP (CD:[714..716] 50) (NN:[716..717] %))
+          (PP (IN:[718..720] of)
+            (NP (DT:[721..724] the) (JJ:[725..730] fetal)
+                (NNS:[731..739] adrenals))))))
+    (.:[739..740] .)))
+
+;sentence 7 Span:741..818
+;Anti-Cyp1a-2 antibody  reacted with a single protein (55 kDa) in adult
+;liver.
+;[741..762]:substance:"Anti-Cyp1a-2 antibody"
+;[786..793]:substance:"protein"
+;[795..797]:quantitative-value:"55"
+;[798..801]:quantitative-units:"kDa"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (AFX:[741..745] Anti) (HYPH:[745..746] -) (NN:[746..753] Cyp1a-2))
+      (NN:[754..762] antibody))
+    (VP (VBD:[764..771] reacted)
+      (PP-CLR (IN:[772..776] with)
+        (NP (DT:[777..778] a) (JJ:[779..785] single) (NN:[786..793] protein)
+          (PRN (-LRB-:[794..795] -LRB-)
+            (NP (CD:[795..797] 55) (NN:[798..801] kDa))
+            (-RRB-:[801..802] -RRB-))))
+      (PP-LOC (IN:[803..805] in)
+        (NP (JJ:[806..811] adult) (NN:[812..817] liver))))
+    (.:[817..818] .)))
+
+;sentence 8 Span:819..893
+;The anti-Cyp2b-10  antibody did not detect proteins in any of the tissues.
+;[823..846]:substance:"anti-Cyp2b-10  antibody"
+;[862..870]:substance:"proteins"
+(SENT
+  (S
+    (NP-SBJ (DT:[819..822] The)
+      
+      (NML (AFX:[823..827] anti) (HYPH:[827..828] -) (NN:[828..836] Cyp2b-10))
+      (NN:[838..846] antibody))
+    (VP (VBD:[847..850] did) (RB:[851..854] not)
+      (VP (VB:[855..861] detect)
+        (NP (NNS:[862..870] proteins))
+        (PP-LOC (IN:[871..873] in)
+          (NP
+            (NP (DT:[874..877] any))
+            (PP (IN:[878..880] of)
+              (NP (DT:[881..884] the) (NNS:[885..892] tissues)))))))
+    (.:[892..893] .)))
+
+;sentence 9 Span:894..938
+;No proteins were  detected in fetal kidneys.
+;[897..905]:substance:"proteins"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[894..896] No) (NNS:[897..905] proteins))
+    (VP (VBD:[906..910] were)
+      (VP (VBN:[912..920] detected)
+        (NP-1 (-NONE-:[920..920] *))
+        (PP-LOC (IN:[921..923] in)
+          (NP (JJ:[924..929] fetal) (NNS:[930..937] kidneys)))))
+    (.:[937..938] .)))
+
+;sentence 10 Span:939..1018
+;There was no coumarin 7-hydroxylase activity (COH) in  fetal liver or
+;adrenals.
+;[952..974]:cyp450:"coumarin 7-hydroxylase"
+;[985..988]:cyp450:"COH"
+(SENT
+  (S
+    (NP-SBJ (EX:[939..944] There))
+    (VP (VBD:[945..948] was)
+      (NP-PRD
+        (NP (DT:[949..951] no)
+          (NML (NN:[952..960] coumarin) (NN:[961..974] 7-hydroxylase))
+          (NN:[975..983] activity))
+        (NP (-LRB-:[984..985] -LRB-) (NN:[985..988] COH)
+            (-RRB-:[988..989] -RRB-)))
+      (PP-LOC (IN:[990..992] in)
+        (NP
+          (NP
+            (ADJP-1 (JJ:[994..999] fetal))
+            (NN:[1000..1005] liver))
+          (CC:[1006..1008] or)
+          (NP
+            (ADJP-1 (-NONE-:[1008..1008] *P*))
+            (NNS:[1009..1017] adrenals)))))
+    (.:[1017..1018] .)))
+
+;sentence 11 Span:1019..1152
+;The 7-ethoxycoumarin O-deethylase (ECOD) activities  were slightly higher in
+;fetal adrenals (mean 6.1 pmol/mg protein/min) vs livers.
+;[1023..1052]:substance:"7-ethoxycoumarin O-deethylase"
+;[1054..1058]:substance:"ECOD"
+;[1117..1120]:quantitative-value:"6.1"
+;[1121..1140]:quantitative-units:"pmol/mg protein/min"
+(SENT
+  (S
+    (NP-SBJ (DT:[1019..1022] The)
+      (NML
+        (NML (NN:[1023..1039] 7-ethoxycoumarin) (NN:[1040..1052] O-deethylase))
+        (NP (-LRB-:[1053..1054] -LRB-) (NN:[1054..1058] ECOD)
+            (-RRB-:[1058..1059] -RRB-)))
+      (NNS:[1060..1070] activities))
+    (VP (VBD:[1072..1076] were)
+      (ADJP-PRD (RB:[1077..1085] slightly) (JJR:[1086..1092] higher))
+      (PP-LOC (IN:[1093..1095] in)
+        (NP
+          (NP (JJ:[1096..1101] fetal) (NNS:[1102..1110] adrenals)
+            (PRN (-LRB-:[1111..1112] -LRB-)
+              (FRAG
+                (NP (JJ:[1112..1116] mean))
+                (NP
+                  (NP (CD:[1117..1120] 6.1) (NN:[1121..1125] pmol))
+                  (PP (SYM:[1125..1126] /)
+                    (NP
+                      (NP
+                        (NP (NN:[1126..1128] mg))
+                        (NP (NN:[1129..1136] protein)))
+                      (PP (SYM:[1136..1137] /)
+                        (NP (NN:[1137..1140] min)))))))
+              (-RRB-:[1140..1141] -RRB-)))
+          (PP (IN:[1142..1144] vs)
+            (NP (NNS:[1145..1151] livers))))))
+    (.:[1151..1152] .)))
+
+;sentence 12 Span:1154..1233
+;The fetal adrenal ECOD activity was not inhibited by the anti-Cyp2a-5
+;antibody.
+;[1172..1176]:substance:"ECOD"
+;[1211..1232]:substance:"anti-Cyp2a-5 antibody"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1154..1157] The) (JJ:[1158..1163] fetal)
+              (JJ:[1164..1171] adrenal) (NN:[1172..1176] ECOD)
+              (NN:[1177..1185] activity))
+    (VP (VBD:[1186..1189] was) (RB:[1190..1193] not)
+      (VP (VBN:[1194..1203] inhibited)
+        (NP-1 (-NONE-:[1203..1203] *))
+        (PP (IN:[1204..1206] by)
+          (NP-LGS (DT:[1207..1210] the)
+            
+            (NML (AFX:[1211..1215] anti) (HYPH:[1215..1216] -)
+                 (NN:[1216..1223] Cyp2a-5))
+            (NN:[1224..1232] antibody)))))
+    (.:[1232..1233] .)))
+
+;sentence 13 Span:1235..1337
+;Aryl hydrocarbon hydroxylase (AHH) activities in fetal livers were about 5%
+;of  those in adult livers.
+;[1235..1263]:cyp450:"Aryl hydrocarbon hydroxylase"
+;[1265..1268]:cyp450:"AHH"
+;[1308..1310]:quantitative-value:"5%"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (NML
+            (NML (NN:[1235..1239] Aryl) (NN:[1240..1251] hydrocarbon))
+            (NN:[1252..1263] hydroxylase))
+          (NML (-LRB-:[1264..1265] -LRB-) (NN:[1265..1268] AHH)
+               (-RRB-:[1268..1269] -RRB-)))
+        (NNS:[1270..1280] activities))
+      (PP-LOC (IN:[1281..1283] in)
+        (NP (JJ:[1284..1289] fetal) (NNS:[1290..1296] livers))))
+    (VP (VBD:[1297..1301] were)
+      (NP-PRD
+        (NP
+          (QP (RB:[1302..1307] about) (CD:[1308..1309] 5))
+          (NN:[1309..1310] %))
+        (PP (IN:[1311..1313] of)
+          (NP
+            (NP (DT:[1315..1320] those))
+            (PP-LOC (IN:[1321..1323] in)
+              (NP (JJ:[1324..1329] adult) (NNS:[1330..1336] livers)))))))
+    (.:[1336..1337] .)))
+
+;sentence 14 Span:1338..1412
+;AHH activity in fetal liver was not inhibited by the  anti-Cyp2c antibody.
+;[1338..1341]:cyp450:"AHH"
+;[1392..1411]:substance:"anti-Cyp2c antibody"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1338..1341] AHH) (NN:[1342..1350] activity))
+      (PP-LOC (IN:[1351..1353] in)
+        (NP (JJ:[1354..1359] fetal) (NN:[1360..1365] liver))))
+    (VP (VBD:[1366..1369] was) (RB:[1370..1373] not)
+      (VP (VBN:[1374..1383] inhibited)
+        (NP-1 (-NONE-:[1383..1383] *))
+        (PP (IN:[1384..1386] by)
+          (NP-LGS (DT:[1387..1390] the)
+            
+            (NML (AFX:[1392..1396] anti) (HYPH:[1396..1397] -)
+                 (NN:[1397..1402] Cyp2c))
+            (NN:[1403..1411] antibody)))))
+    (.:[1411..1412] .)))
+
+;sentence 15 Span:1413..1560
+;Testosterone 6 beta-hydroxylase activity was much lower in  fetal liver than
+;in adult liver (about 20 and 1700 pmol/mg protein/min,  respectively).
+;[1413..1444]:substance:"Testosterone 6 beta-hydroxylase"
+;[1512..1514]:quantitative-value:"20"
+;[1519..1523]:quantitative-value:"1700"
+;[1524..1543]:quantitative-units:"pmol/mg protein/min"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (NN:[1413..1425] Testosterone) (CD:[1426..1427] 6)
+           (NN:[1428..1444] beta-hydroxylase))
+      (NN:[1445..1453] activity))
+    (VP (VBD:[1454..1457] was)
+      (ADJP-PRD
+        (ADJP (RB:[1458..1462] much) (JJR:[1463..1468] lower))
+        (PP-3 (-NONE-:[1468..1468] *ICH*)))
+      (PP-LOC (IN:[1469..1471] in)
+        (NP (JJ:[1473..1478] fetal) (NN:[1479..1484] liver)))
+      (PP-3 (IN:[1485..1489] than)
+        (PP-LOC (IN:[1490..1492] in)
+          (NP (JJ:[1493..1498] adult) (NN:[1499..1504] liver))))
+      (PRN (-LRB-:[1505..1506] -LRB-)
+        (FRAG
+          (NP
+            (NP
+              (NP
+                (QP
+                  (ADVP-2 (RB:[1506..1511] about))
+                  (CD:[1512..1514] 20))
+                (NML-1 (-NONE-:[1514..1514] *P*)))
+              (CC:[1515..1518] and)
+              (NP
+                (QP
+                  (ADVP-2 (-NONE-:[1518..1518] *P*))
+                  (CD:[1519..1523] 1700))
+                (NML-1 (NN:[1524..1528] pmol))))
+            (PP (SYM:[1528..1529] /)
+              (NP
+                (NP
+                  (NML (NN:[1529..1531] mg))
+                  (NN:[1532..1539] protein))
+                (PP (SYM:[1539..1540] /)
+                  (NP (NN:[1540..1543] min))))))
+          (,:[1543..1544] ,)
+          (ADVP (RB:[1546..1558] respectively)))
+        (-RRB-:[1558..1559] -RRB-)))
+    (.:[1559..1560] .)))
+
+;sentence 16 Span:1561..1717
+;No immunoinhibition occurred in fetal adrenal progesterone  hydroxylation,
+;hepatic benzphetamine N-demethylation and hepatic ethylmorphine 
+;N-demethylation.
+;[1607..1619]:substance:"progesterone"
+;[1644..1657]:substance:"benzphetamine"
+;[1686..1699]:substance:"ethylmorphine"
+(SENT
+  (S
+    (NP-SBJ (DT:[1561..1563] No) (NN:[1564..1580] immunoinhibition))
+    (VP (VBD:[1581..1589] occurred)
+      (PP-LOC (IN:[1590..1592] in)
+        (NP
+          (NP
+            (ADJP-1 (JJ:[1593..1598] fetal))
+            (JJ:[1599..1606] adrenal) (NN:[1607..1619] progesterone)
+             (NN:[1621..1634] hydroxylation))
+          (,:[1634..1635] ,)
+          (NP
+            (ADJP-1 (-NONE-:[1635..1635] *P*))
+            (NML (JJ:[1636..1643] hepatic) (NN:[1644..1657] benzphetamine))
+            (NN:[1658..1673] N-demethylation))
+          (CC:[1674..1677] and)
+          (NP
+            (ADJP-1 (-NONE-:[1677..1677] *P*))
+            (NML (JJ:[1678..1685] hepatic) (NN:[1686..1699] ethylmorphine))
+            (NN:[1701..1716] N-demethylation)))))
+    (.:[1716..1717] .)))
+
+;sentence 17 Span:1718..1901
+;These data suggest that members of the P450 subfamilies 1A, 2A  and 2B are
+;expressed at a very low level in fetal liver, and that fetal liver  may
+;contain members of the 2C subfamily.
+;[1757..1776]:cyp450:"P450 subfamilies 1A"
+;[1757..1773]...[1786..1788]:cyp450:"P450 subfamilies"..."2B"
+;[1757..1773]...[1778..1780]:cyp450:"P450 subfamilies"..."2A"
+;[1888..1900]:cyp450:"2C subfamily"
+(SENT
+  (S
+    (NP-SBJ (DT:[1718..1723] These) (NNS:[1724..1728] data))
+    (VP (VBP:[1729..1736] suggest)
+      (SBAR
+        (SBAR (IN:[1737..1741] that)
+          (S
+            (NP-SBJ-2
+              (NP (NNS:[1742..1749] members))
+              (PP (IN:[1750..1752] of)
+                (NP (DT:[1753..1756] the)
+                  (NML
+                    (NML
+                      (NML-1 (NN:[1757..1761] P450)
+                             (NNS:[1762..1773] subfamilies))
+                      (NN:[1774..1776] 1A))
+                    (,:[1776..1777] ,)
+                    (NML
+                      (NML-1 (-NONE-:[1777..1777] *P*))
+                      (NN:[1778..1780] 2A))
+                    (CC:[1782..1785] and)
+                    (NML
+                      (NML-1 (-NONE-:[1785..1785] *P*))
+                      (NN:[1786..1788] 2B))))))
+            (VP (VBP:[1789..1792] are)
+              (VP (VBN:[1793..1802] expressed)
+                (NP-2 (-NONE-:[1802..1802] *))
+                (PP (IN:[1803..1805] at)
+                  (NP (DT:[1806..1807] a)
+                    (ADJP (RB:[1808..1812] very) (JJ:[1813..1816] low))
+                    (NN:[1817..1822] level)))
+                (PP-LOC (IN:[1823..1825] in)
+                  (NP (JJ:[1826..1831] fetal) (NN:[1832..1837] liver)))))))
+        (,:[1837..1838] ,) (CC:[1839..1842] and)
+        (SBAR (IN:[1843..1847] that)
+          (S
+            (NP-SBJ (JJ:[1848..1853] fetal) (NN:[1854..1859] liver))
+            (VP (MD:[1861..1864] may)
+              (VP (VB:[1865..1872] contain)
+                (NP
+                  (NP (NNS:[1873..1880] members))
+                  (PP (IN:[1881..1883] of)
+                    (NP (DT:[1884..1887] the)
+                       (NN:[1888..1890] 2C) (NN:[1891..1900] subfamily))))))))))
+    (.:[1900..1901] .)))
+
+;section 18 Span:1905..1949
+;PMID: 8452565 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1905..1909] PMID) (::[1909..1910] :) (CD:[1911..1918] 8452565)
+        (NN:[1919..1920] -LSB-) (NNP:[1920..1926] PubMed) (::[1927..1928] -)
+        (NN:[1929..1936] indexed) (IN:[1937..1940] for)
+        (NNP:[1941..1949] MEDLINE-RSB-)))

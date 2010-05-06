@@ -1,0 +1,528 @@
+;PMID: 7703357
+;source_file_1948.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..122] = [t:49..122]
+;2)section:[e:126..184] = [t:126..184]
+;3)section:[e:188..291] = [t:188..291]
+;4)sentence:[e:295..589] = [t:295..589]
+;5)sentence:[e:590..814] = [t:590..814]
+;6)sentence:[e:815..869] = [t:815..869]
+;7)sentence:[e:870..971] = [t:870..971]
+;8)sentence:[e:972..1054] = [t:972..1054]
+;9)sentence:[e:1055..1325] = [t:1055..1325]
+;10)sentence:[e:1326..1449] = [t:1326..1449]
+;11)sentence:[e:1450..1560] = [t:1450..1560]
+;12)sentence:[e:1561..1676] = [t:1561..1676]
+;13)sentence:[e:1677..1815] = [t:1677..1815]
+;14)sentence:[e:1816..1880] = [t:1816..1880]
+;15)section:[e:1884..1928] = [t:1884..1928]
+
+;section 0 Span:0..43
+;Chem Res Toxicol. 1995 Jan-Feb;8(1):136-42.
+(SEC
+  (FRAG (NNP:[0..4] Chem) (NNP:[5..8] Res) (NNP:[9..16] Toxicol) (.:[16..17] .)
+        (CD:[18..22] 1995) (NNP:[23..27] Jan-) (CD:[27..32] Feb;8)
+        (-LRB-:[32..33] -LRB-) (CD:[33..34] 1) (-RRB-:[34..35] -RRB-)
+        (::[35..36] :) (CD:[36..42] 136-42) (.:[42..43] .)))
+
+;sentence 1 Span:49..122
+;Oxidation of benzo[a]pyrene by recombinant human cytochrome P450 enzymes.
+;[62..76]:substance:"benzo[a]pyrene"
+;[98..121]:cyp450:"cytochrome P450 enzymes"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..58] Oxidation))
+    (PP (IN:[59..61] of)
+      (NP (NN:[62..76] benzo-LSB-a-RSB-pyrene)))
+    (PP (IN:[77..79] by)
+      (NP (JJ:[80..91] recombinant) (JJ:[92..97] human)
+        
+        (NML (NN:[98..108] cytochrome) (NN:[109..113] P450))
+        (NNS:[114..121] enzymes)))
+    (.:[121..122] .)))
+
+;section 2 Span:126..184
+;Bauer E, Guo Z, Ueng YF, Bell LC, Zeldin D, Guengerich FP.
+(SEC
+  (FRAG (NNP:[126..131] Bauer) (NNP:[132..133] E) (,:[133..134] ,)
+        (NNP:[135..138] Guo) (NNP:[139..140] Z) (,:[140..141] ,)
+        (NNP:[142..146] Ueng) (NNP:[147..149] YF) (,:[149..150] ,)
+        (NNP:[151..155] Bell) (NNP:[156..158] LC) (,:[158..159] ,)
+        (NNP:[160..166] Zeldin) (NNP:[167..168] D) (,:[168..169] ,)
+        (NNP:[170..180] Guengerich) (NNP:[181..183] FP) (.:[183..184] .)))
+
+;section 3 Span:188..291
+;Department of Biochemistry, Vanderbilt University School of Medicine,
+;Nashville,  Tennessee 37232, USA.
+(SEC
+  (FRAG (NNP:[188..198] Department) (IN:[199..201] of)
+        (NNP:[202..214] Biochemistry) (,:[214..215] ,)
+        (NNP:[216..226] Vanderbilt) (NNP:[227..237] University)
+        (NNP:[238..244] School) (IN:[245..247] of) (NNP:[248..256] Medicine)
+        (,:[256..257] ,) (NNP:[258..267] Nashville) (,:[267..268] ,)
+        (NNP:[270..279] Tennessee) (VBD:[280..285] 37232) (,:[285..286] ,)
+        (NNP:[287..290] USA) (.:[290..291] .)))
+
+;sentence 4 Span:295..589
+;The oxidation of benzo[a]pyrene (B[a]P) was examined using reconstituted
+;systems  prepared with recombinant human cytochrome P450 (P450) enzymes 1A1,
+;1A2, 2C8,  2C10, 2E1, and 3A4 and with microsomes prepared from Saccharomyces
+;cerevisiae  expressing recombinant human P450s 2C8, 2C9, and 2C18.
+;[312..326]:substance:"benzo[a]pyrene"
+;[328..333]:substance:"B[a]P"
+;[409..443]:cyp450:"cytochrome P450 (P450) enzymes 1A1"
+;[409..439]...[471..474]:cyp450:"cytochrome P450 (P450) enzymes"..."3A4"
+;[409..439]...[462..465]:cyp450:"cytochrome P450 (P450) enzymes"..."2E1"
+;[409..439]...[456..460]:cyp450:"cytochrome P450 (P450) enzymes"..."2C10"
+;[409..439]...[450..453]:cyp450:"cytochrome P450 (P450) enzymes"..."2C8"
+;[409..439]...[445..448]:cyp450:"cytochrome P450 (P450) enzymes"..."1A2"
+;[564..573]:cyp450:"P450s 2C8"
+;[564..569]...[584..588]:cyp450:"P450s"..."2C18"
+;[564..569]...[575..578]:cyp450:"P450s"..."2C9"
+(SENT
+  (S
+    (NP-SBJ-8
+      (NP (DT:[295..298] The) (NN:[299..308] oxidation))
+      (PP (IN:[309..311] of)
+        (NP
+          (NP (NN:[312..326] benzo-LSB-a-RSB-pyrene))
+          (NP (-LRB-:[327..328] -LRB-) (NN:[328..333] B-LSB-a-RSB-P)
+              (-RRB-:[333..334] -RRB-)))))
+    (VP (VBD:[335..338] was)
+      (VP (VBN:[339..347] examined)
+        (NP-8 (-NONE-:[347..347] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[347..347] *))
+          (VP (VBG:[348..353] using)
+            (NP
+              (NP (VBN:[354..367] reconstituted) (NNS:[368..375] systems))
+              (VP (VBN:[377..385] prepared)
+                (NP (-NONE-:[385..385] *))
+                (PP
+                  (PP (IN:[386..390] with)
+                    (NP
+                      (NP
+                        (ADJP-7 (JJ:[391..402] recombinant))
+                        (ADJP-6 (JJ:[403..408] human))
+                        
+                        (NML-5
+                          (NML (NN:[409..419] cytochrome) (NN:[420..424] P450))
+                          (NML (-LRB-:[425..426] -LRB-) (NN:[426..430] P450)
+                               (-RRB-:[430..431] -RRB-)))
+                        (NML-4 (NNS:[432..439] enzymes))
+                        (NN:[440..443] 1A1))
+                      (,:[443..444] ,)
+                      (NP
+                        (ADJP-7 (-NONE-:[444..444] *P*))
+                        (ADJP-6 (-NONE-:[444..444] *P*))
+                        (NML-5 (-NONE-:[444..444] *P*))
+                        (NML-4 (-NONE-:[444..444] *P*))
+                        (NN:[445..448] 1A2))
+                      (,:[448..449] ,)
+                      (NP
+                        (ADJP-7 (-NONE-:[449..449] *P*))
+                        (ADJP-6 (-NONE-:[449..449] *P*))
+                        (NML-5 (-NONE-:[449..449] *P*))
+                        (NML-4 (-NONE-:[449..449] *P*))
+                        (NN:[450..453] 2C8))
+                      (,:[453..454] ,)
+                      (NP
+                        (ADJP-7 (-NONE-:[454..454] *P*))
+                        (ADJP-6 (-NONE-:[454..454] *P*))
+                        (NML-5 (-NONE-:[454..454] *P*))
+                        (NML-4 (-NONE-:[454..454] *P*))
+                        (NN:[456..460] 2C10))
+                      (,:[460..461] ,)
+                      (NP
+                        (ADJP-7 (-NONE-:[461..461] *P*))
+                        (ADJP-6 (-NONE-:[461..461] *P*))
+                        (NML-5 (-NONE-:[461..461] *P*))
+                        (NML-4 (-NONE-:[461..461] *P*))
+                        (NN:[462..465] 2E1))
+                      (,:[465..466] ,) (CC:[467..470] and)
+                      (NP
+                        (ADJP-7 (-NONE-:[470..470] *P*))
+                        (ADJP-6 (-NONE-:[470..470] *P*))
+                        (NML-5 (-NONE-:[470..470] *P*))
+                        (NML-4 (-NONE-:[470..470] *P*))
+                        (NN:[471..474] 3A4))))
+                  (CC:[475..478] and)
+                  (PP (IN:[479..483] with)
+                    (NP
+                      (NP (NNS:[484..494] microsomes))
+                      (VP (VBN:[495..503] prepared)
+                        (NP (-NONE-:[503..503] *))
+                        (PP (IN:[504..508] from)
+                          (NP
+                            (NP (NNP:[509..522] Saccharomyces)
+                                (NNP:[523..533] cerevisiae))
+                            (VP (VBG:[535..545] expressing)
+                              (NP
+                                (NP
+                                  (ADJP-2 (JJ:[546..557] recombinant))
+                                  (ADJP-1 (JJ:[558..563] human))
+                                  
+                                  (NML-3 (NNS:[564..569] P450s))
+                                  (NN:[570..573] 2C8))
+                                (,:[573..574] ,)
+                                (NP
+                                  (ADJP-2 (-NONE-:[574..574] *P*))
+                                  (ADJP-1 (-NONE-:[574..574] *P*))
+                                  (NML-3 (-NONE-:[574..574] *P*))
+                                  (NN:[575..578] 2C9))
+                                (,:[578..579] ,) (CC:[580..583] and)
+                                (NP
+                                  (ADJP-2 (-NONE-:[583..583] *P*))
+                                  (ADJP-1 (-NONE-:[583..583] *P*))
+                                  (NML-3 (-NONE-:[583..583] *P*))
+                                  (NN:[584..588] 2C18))))))))))))))))
+    (.:[588..589] .)))
+
+;sentence 5 Span:590..814
+;Products measured by HPLC  included the 3- and 9-phenols, the 4,5-, 7,8-, and
+;9,10-dihydrodiols (detected  in the presence of epoxide hydrolase), and
+;products in the polar fraction  eluting immediately after the void volume.
+;[590..598]:substance:"Products"
+;[630..632]...[639..646]:substance:"3-"..."phenols"
+;[637..646]:substance:"9-phenols"
+;[652..656]...[673..685]:substance:"4,5-"..."dihydrodiols"
+;[658..662]...[673..685]:substance:"7,8-"..."dihydrodiols"
+;[668..685]:substance:"9,10-dihydrodiols"
+;[716..733]:substance:"epoxide hydrolase"
+;[740..748]:substance:"products"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[590..598] Products))
+      (VP (VBN:[599..607] measured)
+        (NP (-NONE-:[607..607] *))
+        (PP (IN:[608..610] by)
+          (NP (NN:[611..615] HPLC)))))
+    (VP (VBD:[617..625] included)
+      (NP
+        (NP (DT:[626..629] the)
+          (NML
+            (NML (CD:[630..631] 3) (HYPH:[631..632] -)
+              (NML-2 (-NONE-:[632..632] *P*)))
+            (CC:[633..636] and)
+            (NML (CD:[637..638] 9) (HYPH:[638..639] -)
+              (NML-2 (NNS:[639..646] phenols)))))
+        (,:[646..647] ,)
+        (NP (DT:[648..651] the)
+          (NML
+            (NML
+              (NML (CD:[652..653] 4) (,:[653..654] ,) (CD:[654..655] 5))
+              (HYPH:[655..656] -)
+              (NML-1 (-NONE-:[656..656] *P*)))
+            (,:[656..657] ,)
+            (NML
+              (NML (CD:[658..659] 7) (,:[659..660] ,) (CD:[660..661] 8))
+              (HYPH:[661..662] -)
+              (NML-1 (-NONE-:[662..662] *P*)))
+            (,:[662..663] ,) (CC:[664..667] and)
+            (NML
+              (NML (CD:[668..669] 9) (,:[669..670] ,) (CD:[670..672] 10))
+              (HYPH:[672..673] -)
+              (NML-1 (NNS:[673..685] dihydrodiols))))
+          (PRN (-LRB-:[686..687] -LRB-)
+            (VP (VBN:[687..695] detected)
+              (NP (-NONE-:[695..695] *))
+              (PP (IN:[697..699] in)
+                (NP
+                  (NP (DT:[700..703] the) (NN:[704..712] presence))
+                  (PP (IN:[713..715] of)
+                    (NP (NN:[716..723] epoxide) (NN:[724..733] hydrolase))))))
+            (-RRB-:[733..734] -RRB-)))
+        (,:[734..735] ,) (CC:[736..739] and)
+        (NP
+          (NP
+            (NP (NNS:[740..748] products))
+            (PP (IN:[749..751] in)
+              (NP (DT:[752..755] the) (JJ:[756..761] polar)
+                  (NN:[762..770] fraction))))
+          (VP (VBG:[772..779] eluting)
+            (PP-TMP
+              (ADVP (RB:[780..791] immediately))
+              (IN:[792..797] after)
+              (NP (DT:[798..801] the) (NN:[802..806] void)
+                  (NN:[807..813] volume)))))))
+    (.:[813..814] .)))
+
+;sentence 6 Span:815..869
+;The most active enzyme in all  reactions was P450 1A1.
+;[831..837]:cyp450:"enzyme"
+;[860..868]:cyp450:"P450 1A1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[815..818] The)
+        (ADJP (RBS:[819..823] most) (JJ:[824..830] active))
+        (NN:[831..837] enzyme))
+      (PP (IN:[838..840] in)
+        (NP (DT:[841..844] all) (NNS:[846..855] reactions))))
+    (VP (VBD:[856..859] was)
+      (NP-PRD (NN:[860..864] P450) (NN:[865..868] 1A1)))
+    (.:[868..869] .)))
+
+;sentence 7 Span:870..971
+;P450 3A4 and P450 1A2 formed appreciable amounts of  several of the products,
+;including the 3-phenol.
+;[870..878]:cyp450:"P450 3A4"
+;[883..891]:cyp450:"P450 1A2"
+;[938..946]:substance:"products"
+;[962..970]:substance:"3-phenol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[870..874] P450) (NN:[875..878] 3A4))
+      (CC:[879..882] and)
+      (NP (NN:[883..887] P450) (NN:[888..891] 1A2)))
+    (VP (VBD:[892..898] formed)
+      (NP
+        (NP (JJ:[899..910] appreciable) (NNS:[911..918] amounts))
+        (PP (IN:[919..921] of)
+          (NP
+            (NP (JJ:[923..930] several))
+            (PP (IN:[931..933] of)
+              (NP (DT:[934..937] the) (NNS:[938..946] products)))
+            (,:[946..947] ,)
+            (PP (VBG:[948..957] including)
+              (NP (DT:[958..961] the) (NN:[962..970] 3-phenol)))))))
+    (.:[970..971] .)))
+
+;sentence 8 Span:972..1054
+;P450 2C enzymes and P450 2E1  formed relatively low amounts of all B[a]P
+;products.
+;[972..987]:cyp450:"P450 2C enzymes"
+;[992..1000]:cyp450:"P450 2E1"
+;[1039..1053]:substance:"B[a]P products"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (NN:[972..976] P450) (NN:[977..979] 2C))
+        (NNS:[980..987] enzymes))
+      (CC:[988..991] and)
+      (NP (NN:[992..996] P450) (NN:[997..1000] 2E1)))
+    (VP (VBD:[1002..1008] formed)
+      (NP
+        (NP
+          (ADJP (RB:[1009..1019] relatively) (JJ:[1020..1023] low))
+          (NNS:[1024..1031] amounts))
+        (PP (IN:[1032..1034] of)
+          (NP (DT:[1035..1038] all)
+             (NN:[1039..1044] B-LSB-a-RSB-P) (NNS:[1045..1053] products)))))
+    (.:[1053..1054] .)))
+
+;sentence 9 Span:1055..1325
+;Consideration of these  patterns along with knowledge of levels of expression
+;of the P450s in human  tissues and previous results with microsomes leads to
+;the conclusion that P450  1A1 should dominate the oxidation of B[a]P in
+;tissues where it is present and  inducible.
+;[1140..1145]:cyp450:"P450s"
+;[1230..1239]:cyp450:"P450  1A1"
+;[1273..1278]:substance:"B[a]P"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1055..1068] Consideration))
+      (PP (IN:[1069..1071] of)
+        (NP (DT:[1072..1077] these) (NNS:[1079..1087] patterns)))
+      (PP (IN:[1088..1093] along)
+        (PP (IN:[1094..1098] with)
+          (NP
+            (NP (NN:[1099..1108] knowledge))
+            (PP (IN:[1109..1111] of)
+              (NP
+                (NP
+                  (NP (NNS:[1112..1118] levels))
+                  (PP (IN:[1119..1121] of)
+                    (NP
+                      (NP (NN:[1122..1132] expression))
+                      (PP (IN:[1133..1135] of)
+                        (NP (DT:[1136..1139] the) (NNS:[1140..1145] P450s)))
+                      (PP-LOC (IN:[1146..1148] in)
+                        (NP (JJ:[1149..1154] human) (NNS:[1156..1163] tissues))))))
+                (CC:[1164..1167] and)
+                (NP
+                  (NP (JJ:[1168..1176] previous) (NNS:[1177..1184] results))
+                  (PP (IN:[1185..1189] with)
+                    (NP (NNS:[1190..1200] microsomes))))))))))
+    (VP (VBZ:[1201..1206] leads)
+      (PP-CLR (TO:[1207..1209] to)
+        (NP (DT:[1210..1213] the) (NN:[1214..1224] conclusion)
+          (SBAR (IN:[1225..1229] that)
+            (S
+              (NP-SBJ (NN:[1230..1234] P450) (NN:[1236..1239] 1A1))
+              (VP (MD:[1240..1246] should)
+                (VP (VB:[1247..1255] dominate)
+                  (NP
+                    (NP (DT:[1256..1259] the) (NN:[1260..1269] oxidation))
+                    (PP (IN:[1270..1272] of)
+                      (NP (NN:[1273..1278] B-LSB-a-RSB-P))))
+                  (PP-LOC (IN:[1279..1281] in)
+                    (NP
+                      (NP (NNS:[1282..1289] tissues))
+                      (SBAR
+                        (WHADVP-1 (WRB:[1290..1295] where))
+                        (S
+                          (NP-SBJ (PRP:[1296..1298] it))
+                          (VP (VBZ:[1299..1301] is)
+                            (ADJP-PRD (JJ:[1302..1309] present)
+                                      (CC:[1310..1313] and)
+                                      (JJ:[1315..1324] inducible))
+                            (WHADVP-LOC-1 (-NONE-:[1324..1324] *T*))))))))))))))
+    (.:[1324..1325] .)))
+
+;sentence 10 Span:1326..1449
+;In human liver the level of P450 1A1 is low and P450 3A4, P450 2C  subfamily
+;enzymes, and P450 1A2 probably all contribute.
+;[1354..1362]:cyp450:"P450 1A1"
+;[1374..1382]...[1393..1410]:cyp450:"P450 3A4"..."subfamily enzymes"
+;[1384..1410]:cyp450:"P450 2C  subfamily enzymes"
+;[1416..1424]:cyp450:"P450 1A2"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[1326..1328] In)
+        (NP (JJ:[1329..1334] human) (NN:[1335..1340] liver)))
+      (NP-SBJ
+        (NP (DT:[1341..1344] the) (NN:[1345..1350] level))
+        (PP (IN:[1351..1353] of)
+          (NP (NN:[1354..1358] P450) (NN:[1359..1362] 1A1))))
+      (VP (VBZ:[1363..1365] is)
+        (ADJP-PRD (JJ:[1366..1369] low))))
+    (CC:[1370..1373] and)
+    (S
+      (NP-SBJ
+        (NP (NN:[1374..1378] P450) (NN:[1379..1382] 3A4))
+        (,:[1382..1383] ,)
+        (NP
+          (NML (NN:[1384..1388] P450) (NN:[1389..1391] 2C))
+          (NN:[1393..1402] subfamily) (NNS:[1403..1410] enzymes))
+        (,:[1410..1411] ,) (CC:[1412..1415] and)
+        (NP (NN:[1416..1420] P450) (NN:[1421..1424] 1A2)))
+      (ADVP (RB:[1425..1433] probably))
+      (VP (DT:[1434..1437] all) (VBP:[1438..1448] contribute)))
+    (.:[1448..1449] .)))
+
+;sentence 11 Span:1450..1560
+;Of the human P450s  considered here, P450 1A2 was the most active hepatic
+;enzyme forming the  7,8-dihydrodiol.
+;[1463..1468]:cyp450:"P450s"
+;[1487..1495]:cyp450:"P450 1A2"
+;[1524..1530]:cyp450:"enzyme"
+;[1544..1559]:substance:"7,8-dihydrodiol"
+(SENT
+  (S
+    (PP (IN:[1450..1452] Of)
+      (NP
+        (NP (DT:[1453..1456] the) (JJ:[1457..1462] human)
+            (NNS:[1463..1468] P450s))
+        (VP (VBN:[1470..1480] considered)
+          (NP (-NONE-:[1480..1480] *))
+          (ADVP (RB:[1481..1485] here)))))
+    (,:[1485..1486] ,)
+    (NP-SBJ (NN:[1487..1491] P450) (NN:[1492..1495] 1A2))
+    (VP (VBD:[1496..1499] was)
+      (NP-PRD
+        (NP (DT:[1500..1503] the)
+          (ADJP (RBS:[1504..1508] most) (JJ:[1509..1515] active))
+          (JJ:[1516..1523] hepatic) (NN:[1524..1530] enzyme))
+        (VP (VBG:[1531..1538] forming)
+          (PP (DT:[1539..1542] the)
+            (NP (NN:[1544..1559] 7,8-dihydrodiol))))))
+    (.:[1559..1560] .)))
+
+;sentence 12 Span:1561..1676
+;7,8-Benzoflavone stimulated the oxidation of B[a]P by P450 3A4  and inhibited
+;the oxidations catalyzed by P450 1A2.
+;[1561..1577]:substance:"7,8-Benzoflavone"
+;[1606..1611]:substance:"B[a]P"
+;[1615..1623]:cyp450:"P450 3A4"
+;[1667..1675]:cyp450:"P450 1A2"
+(SENT
+  (S
+    (NP-SBJ (NN:[1561..1577] 7,8-Benzoflavone))
+    (VP
+      (VP (VBD:[1578..1588] stimulated)
+        (NP
+          (NP (DT:[1589..1592] the) (NN:[1593..1602] oxidation))
+          (PP (IN:[1603..1605] of)
+            (NP (NN:[1606..1611] B-LSB-a-RSB-P)))
+          (PP (IN:[1612..1614] by)
+            (NP (NN:[1615..1619] P450) (NN:[1620..1623] 3A4)))))
+      (CC:[1625..1628] and)
+      (VP (VBD:[1629..1638] inhibited)
+        (NP
+          (NP (DT:[1639..1642] the) (NNS:[1643..1653] oxidations))
+          (VP (VBN:[1654..1663] catalyzed)
+            (NP (-NONE-:[1663..1663] *))
+            (PP (IN:[1664..1666] by)
+              (NP-LGS (NN:[1667..1671] P450) (NN:[1672..1675] 1A2)))))))
+    (.:[1675..1676] .)))
+
+;sentence 13 Span:1677..1815
+;The extent of inhibition of  P450 1A1 was less (than with P450 1A2), probably
+;due to the rapid oxidation of  7,8-benzoflavone by P450 1A1.
+;[1706..1714]:cyp450:"P450 1A1"
+;[1735..1743]:cyp450:"P450 1A2"
+;[1786..1802]:substance:"7,8-benzoflavone"
+;[1806..1814]:cyp450:"P450 1A1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1677..1680] The) (NN:[1681..1687] extent))
+      (PP (IN:[1688..1690] of)
+        (NP
+          (NP (NN:[1691..1701] inhibition))
+          (PP (IN:[1702..1704] of)
+            (NP (NN:[1706..1710] P450) (NN:[1711..1714] 1A1))))))
+    (VP (VBD:[1715..1718] was)
+      (ADJP-PRD (RBR:[1719..1723] less)
+        (PRN (-LRB-:[1724..1725] -LRB-)
+          (PP (IN:[1725..1729] than)
+            (PP (IN:[1730..1734] with)
+              (NP (NN:[1735..1739] P450) (NN:[1740..1743] 1A2))))
+          (-RRB-:[1743..1744] -RRB-)))
+      (,:[1744..1745] ,)
+      (PP
+        (ADVP (RB:[1746..1754] probably))
+        (JJ:[1755..1758] due)
+        (PP (TO:[1759..1761] to)
+          (NP
+            (NP (DT:[1762..1765] the) (JJ:[1766..1771] rapid)
+                (NN:[1772..1781] oxidation))
+            (PP (IN:[1782..1784] of)
+              (NP (NN:[1786..1802] 7,8-benzoflavone)))
+            (PP (IN:[1803..1805] by)
+              (NP (NN:[1806..1810] P450) (NN:[1811..1814] 1A1)))))))
+    (.:[1814..1815] .)))
+
+;sentence 14 Span:1816..1880
+;The major 7,8-benzoflavone product appears to be  the 5,6-oxide.
+;[1826..1842]:substance:"7,8-benzoflavone"
+;[1843..1850]:substance:"product"
+;[1870..1879]:substance:"5,6-oxide"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1816..1819] The) (JJ:[1820..1825] major)
+              (NN:[1826..1842] 7,8-benzoflavone) (NN:[1843..1850] product))
+    (VP (VBZ:[1851..1858] appears)
+      (S
+        (NP-SBJ-1 (-NONE-:[1858..1858] *))
+        (VP (TO:[1859..1861] to)
+          (VP (VB:[1862..1864] be)
+            (NP-PRD (DT:[1866..1869] the) (NN:[1870..1879] 5,6-oxide))))))
+    (.:[1879..1880] .)))
+
+;section 15 Span:1884..1928
+;PMID: 7703357 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1884..1888] PMID) (::[1888..1889] :) (CD:[1890..1897] 7703357)
+        (NN:[1898..1899] -LSB-) (NNP:[1899..1905] PubMed) (::[1906..1907] -)
+        (NN:[1908..1915] indexed) (IN:[1916..1919] for)
+        (NNP:[1920..1928] MEDLINE-RSB-)))

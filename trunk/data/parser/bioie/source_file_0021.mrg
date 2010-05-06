@@ -1,0 +1,307 @@
+;PMID: 1673402
+;source_file_896.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..192] = [t:51..192]
+;2)section:[e:196..258] = [t:196..258]
+;3)section:[e:262..335] = [t:262..335]
+;4)sentence:[e:339..486] = [t:339..486]
+;5)sentence:[e:487..574] = [t:487..574]
+;6)sentence:[e:575..669] = [t:575..669]
+;7)sentence:[e:670..817] = [t:670..817]
+;8)sentence:[e:818..967] = [t:818..967]
+;9)sentence:[e:968..1160] = [t:968..1160]
+;10)sentence:[e:1161..1414] = [t:1161..1414]
+;11)section:[e:1418..1462] = [t:1418..1462]
+
+;section 0 Span:0..45
+;Drug Metab Dispos. 1991 Jan-Feb;19(1):218-21.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1991) (-RRB-:[24..28] Jan-)
+        (CC:[28..35] Feb;19-LRB-) (CD:[35..36] 1) (-RRB-:[36..37] -RRB-)
+        (CD:[37..41] :218) (::[41..42] -) (CD:[42..44] 21) (.:[44..45] .)))
+
+;sentence 1 Span:51..192
+;Mouse hepatic microsomal enzyme that catalyzes oxidation of 11-oxo-delta 
+;8-tetrahydrocannabinol to delta 8-tetrahydrocannabinol-11-oic acid.
+;[76..82]:substance:"enzyme"
+;[111..147]:substance:"11-oxo-delta  8-tetrahydrocannabinol"
+;[151..191]:substance:"delta 8-tetrahydrocannabinol-11-oic acid"
+(SENT
+  (NP-HLN
+    (NP (NN:[51..56] Mouse) (JJ:[57..64] hepatic) (JJ:[65..75] microsomal)
+        (NN:[76..82] enzyme))
+    (SBAR
+      (WHNP-1 (WDT:[83..87] that))
+      (S
+        (NP-SBJ-1 (-NONE-:[87..87] *T*))
+        (VP (VBZ:[88..97] catalyzes)
+          (NP
+            (NP (NN:[98..107] oxidation))
+            (PP (IN:[108..110] of)
+              (NP (NN:[111..123] 11-oxo-delta)
+                  (NN:[125..147] 8-tetrahydrocannabinol)))
+            (PP (TO:[148..150] to)
+              (NP (SYM:[151..156] delta)
+                  (JJ:[157..186] 8-tetrahydrocannabinol-11-oic)
+                  (NN:[187..191] acid)))))))
+    (.:[191..192] .)))
+
+;section 2 Span:196..258
+;Watanabe K, Hirahashi N, Narimatsu S, Yamamoto I, Yoshimura H.
+(SEC
+  (FRAG (NNP:[196..204] Watanabe) (NNP:[205..206] K) (,:[206..207] ,)
+        (NNP:[208..217] Hirahashi) (NNP:[218..219] N) (,:[219..220] ,)
+        (NNP:[221..230] Narimatsu) (NNP:[231..233] S,) (NNP:[234..242] Yamamoto)
+        (NNP:[243..244] I) (,:[244..245] ,) (NNP:[246..255] Yoshimura)
+        (NNP:[256..258] H.)))
+
+;section 3 Span:262..335
+;Faculty of Pharmaceutical Sciences, Hokuriku University, Kanazawa, Japan.
+(SEC
+  (FRAG (IN:[262..269] Faculty) (IN:[270..272] of)
+        (NNP:[273..287] Pharmaceutical) (NNPS:[288..296] Sciences)
+        (,:[296..297] ,) (NNP:[298..306] Hokuriku) (NNP:[307..317] University)
+        (,:[317..318] ,) (NNP:[319..327] Kanazawa) (,:[327..328] ,)
+        (NNP:[329..334] Japan) (.:[334..335] .)))
+
+;sentence 4 Span:339..486
+;Mouse hepatic microsomes oxidized 11-oxo-delta 8-tetrahydrocannabinol 
+;(11-oxo-delta 8-THC, aldehyde) to delta 8-THC-11-oic-acid (carboxylic acid).
+;[373..408]:substance:"11-oxo-delta 8-tetrahydrocannabinol"
+;[411..429]:substance:"11-oxo-delta 8-THC"
+;[431..439]:substance:"aldehyde"
+;[444..467]:substance:"delta 8-THC-11-oic-acid"
+;[469..484]:substance:"carboxylic acid"
+(SENT
+  (S
+    (NP-SBJ (NN:[339..344] Mouse) (JJ:[345..352] hepatic)
+            (NNS:[353..363] microsomes))
+    (VP (VBD:[364..372] oxidized)
+      (NP
+        (NP (NN:[373..385] 11-oxo-delta) (NN:[386..408] 8-tetrahydrocannabinol))
+        (NP (-LRB-:[410..411] -LRB-)
+          (NP (NN:[411..423] 11-oxo-delta) (NN:[424..429] 8-THC))
+          (,:[429..430] ,)
+          (NP (NN:[431..439] aldehyde))
+          (-RRB-:[439..440] -RRB-)))
+      (PP (TO:[441..443] to)
+        (NP
+          (NP
+            (NML (SYM:[444..449] delta) (JJ:[450..462] 8-THC-11-oic))
+            (HYPH:[462..463] -) (NN:[463..467] acid))
+          (NP (-LRB-:[468..469] -LRB-)
+             (JJ:[469..479] carboxylic) (NN:[480..484] acid)
+            (-RRB-:[484..485] -RRB-)))))
+    (.:[485..486] .)))
+
+;sentence 5 Span:487..574
+;The  reaction required NADPH and molecular oxygen and showed an optimal pH
+;around  7.5.
+;[510..515]:substance:"NADPH"
+;[530..536]:substance:"oxygen"
+;[559..561]:quantitative-name:"pH"
+;[570..573]:quantitative-value:"7.5"
+(SENT
+  (S
+    (NP-SBJ (DT:[487..490] The) (NN:[492..500] reaction))
+    (VP
+      (VP (VBD:[501..509] required)
+        (NP
+          (NP (NN:[510..515] NADPH))
+          (CC:[516..519] and)
+          (NP (JJ:[520..529] molecular) (NN:[530..536] oxygen))))
+      (CC:[537..540] and)
+      (VP (VBD:[541..547] showed)
+        (NP (DT:[548..550] an) (JJ:[551..558] optimal) (NN:[559..561] pH))
+        (ADVP
+          (QP (RB:[562..568] around) (CD:[570..573] 7.5)))))
+    (.:[573..574] .)))
+
+;sentence 6 Span:575..669
+;The activity of NADPH-dependent carboxylic acid formation was mainly 
+;localized in microsomes.
+;[591..596]:substance:"NADPH"
+;[607..622]:substance:"carboxylic acid"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[575..578] The) (NN:[579..587] activity))
+      (PP (IN:[588..590] of)
+        (NP
+          (ADJP (NN:[591..596] NADPH) (HYPH:[596..597] -)
+                (JJ:[597..606] dependent))
+          (NML (JJ:[607..617] carboxylic) (NN:[618..622] acid))
+          (NN:[623..632] formation))))
+    (VP (VBD:[633..636] was)
+      (ADVP (RB:[637..643] mainly))
+      (VP (VBN:[645..654] localized)
+        (NP-1 (-NONE-:[654..654] *))
+        (PP-LOC (IN:[655..657] in)
+          (NP (NNS:[658..668] microsomes)))))
+    (.:[668..669] .)))
+
+;sentence 7 Span:670..817
+;The reaction was inhibited by various inhibitors of  cytochrome
+;P-450-dependent oxidation such as SKF 525-A, alpha-naphthoflavone,  and
+;metyrapone.
+;[708..718]:substance:"inhibitors"
+;[723..739]:cyp450:"cytochrome P-450"
+;[768..777]:substance:"SKF 525-A"
+;[779..799]:substance:"alpha-naphthoflavone"
+;[806..816]:substance:"metyrapone"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[670..673] The) (NN:[674..682] reaction))
+    (VP (VBD:[683..686] was)
+      (VP (VBN:[687..696] inhibited)
+        (NP-1 (-NONE-:[696..696] *))
+        (PP (IN:[697..699] by)
+          (NP-LGS
+            (NP (JJ:[700..707] various) (NNS:[708..718] inhibitors))
+            (PP (IN:[719..721] of)
+              (NP
+                (ADJP
+                  (NML (NN:[723..733] cytochrome) (NN:[734..739] P-450))
+                  (HYPH:[739..740] -) (JJ:[740..749] dependent))
+                (NN:[750..759] oxidation)))
+            (PP (JJ:[760..764] such) (IN:[765..767] as)
+              (NP
+                (NP (NN:[768..771] SKF) (NN:[772..777] 525-A))
+                (,:[777..778] ,)
+                (NP (NN:[779..799] alpha-naphthoflavone))
+                (,:[799..800] ,) (CC:[802..805] and)
+                (NP (NN:[806..816] metyrapone))))))))
+    (.:[816..817] .)))
+
+;sentence 8 Span:818..967
+;Disulfiram and menadione also inhibited the microsomal oxidation  of the
+;aldehyde to the carboxylic acid, but pyrazole did not inhibit the  reaction.
+;[818..828]:substance:"Disulfiram"
+;[833..842]:substance:"menadione"
+;[891..899]:substance:"aldehyde"
+;[907..922]:substance:"carboxylic acid"
+;[928..936]:substance:"pyrazole"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[818..828] Disulfiram) (CC:[829..832] and)
+              (NN:[833..842] menadione))
+      (ADVP (RB:[843..847] also))
+      (VP (VBD:[848..857] inhibited)
+        (NP
+          (NP (DT:[858..861] the) (JJ:[862..872] microsomal)
+              (NN:[873..882] oxidation))
+          (PP (IN:[884..886] of)
+            (NP (DT:[887..890] the) (NN:[891..899] aldehyde)))
+          (PP (TO:[900..902] to)
+            (NP (DT:[903..906] the)
+               (JJ:[907..917] carboxylic) (NN:[918..922] acid))))))
+    (,:[922..923] ,) (CC:[924..927] but)
+    (S
+      (NP-SBJ (NN:[928..936] pyrazole))
+      (VP (VBD:[937..940] did) (RB:[941..944] not)
+        (VP (VB:[945..952] inhibit)
+          (NP (DT:[953..956] the) (NN:[958..966] reaction)))))
+    (.:[966..967] .)))
+
+;sentence 9 Span:968..1160
+;The pretreatment of mice with phenobarbital significantly increased  the
+;oxidation activity on the basis of microsomal protein, but did not affect it 
+;on the basis of cytochrome P-450 content.
+;[998..1011]:substance:"phenobarbital"
+;[1087..1094]:substance:"protein"
+;[1135..1151]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[968..971] The) (NN:[972..984] pretreatment))
+      (PP (IN:[985..987] of)
+        (NP (NNS:[988..992] mice)))
+      (PP (IN:[993..997] with)
+        (NP (NN:[998..1011] phenobarbital))))
+    (VP
+      (VP
+        (ADVP (RB:[1012..1025] significantly))
+        (VBD:[1026..1035] increased)
+        (NP (DT:[1037..1040] the) (NN:[1041..1050] oxidation)
+            (NN:[1051..1059] activity))
+        (PP (IN:[1060..1062] on)
+          (NP
+            (NP (DT:[1063..1066] the) (NN:[1067..1072] basis))
+            (PP (IN:[1073..1075] of)
+              (NP (JJ:[1076..1086] microsomal) (NN:[1087..1094] protein))))))
+      (,:[1094..1095] ,) (CC:[1096..1099] but)
+      (VP (VBD:[1100..1103] did) (RB:[1104..1107] not)
+        (VP (VB:[1108..1114] affect)
+          (NP (PRP:[1115..1117] it))
+          (PP (IN:[1119..1121] on)
+            (NP
+              (NP (DT:[1122..1125] the) (NN:[1126..1131] basis))
+              (PP (IN:[1132..1134] of)
+                (NP
+                  (NML (NN:[1135..1145] cytochrome) (NN:[1146..1151] P-450))
+                  (NN:[1152..1159] content))))))))
+    (.:[1159..1160] .)))
+
+;sentence 10 Span:1161..1414
+;The mechanism for the oxidation of the  aldehyde to the carboxylic acid was
+;confirmed to be oxygenation, since oxygen-18  was incorporated into delta
+;8-THC-11-oic acid from molecular oxygen during the  hepatic microsomal
+;oxidation of 11-oxo-delta 8-THC.
+;[1201..1209]:substance:"aldehyde"
+;[1217..1232]:substance:"carboxylic acid"
+;[1272..1281]:substance:"oxygen-18"
+;[1305..1328]:substance:"delta 8-THC-11-oic acid"
+;[1344..1350]:substance:"oxygen"
+;[1395..1413]:substance:"11-oxo-delta 8-THC"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1161..1164] The) (NN:[1165..1174] mechanism))
+      (PP (IN:[1175..1178] for)
+        (NP
+          (NP (DT:[1179..1182] the) (NN:[1183..1192] oxidation))
+          (PP (IN:[1193..1195] of)
+            (NP (DT:[1196..1199] the) (NN:[1201..1209] aldehyde)))
+          (PP (TO:[1210..1212] to)
+            (NP (DT:[1213..1216] the)
+               (JJ:[1217..1227] carboxylic) (NN:[1228..1232] acid))))))
+    (VP (VBD:[1233..1236] was)
+      (VP (VBN:[1237..1246] confirmed)
+        (S
+          (NP-SBJ-2 (-NONE-:[1246..1246] *))
+          (VP (TO:[1247..1249] to)
+            (VP (VB:[1250..1252] be)
+              (NP-PRD (NN:[1253..1264] oxygenation)))))
+        (,:[1264..1265] ,)
+        (SBAR-ADV (IN:[1266..1271] since)
+          (S
+            (NP-SBJ-1 (NN:[1272..1281] oxygen-18))
+            (VP (VBD:[1283..1286] was)
+              (VP (VBN:[1287..1299] incorporated)
+                (NP-1 (-NONE-:[1299..1299] *))
+                (PP (IN:[1300..1304] into)
+                  (NP
+                    (NML (SYM:[1305..1310] delta) (JJ:[1311..1323] 8-THC-11-oic))
+                    (NN:[1324..1328] acid)))
+                (PP (IN:[1329..1333] from)
+                  (NP (JJ:[1334..1343] molecular) (NN:[1344..1350] oxygen)))
+                (PP-TMP (IN:[1351..1357] during)
+                  (NP
+                    (NP (DT:[1358..1361] the) (JJ:[1363..1370] hepatic)
+                        (JJ:[1371..1381] microsomal) (NN:[1382..1391] oxidation))
+                    (PP (IN:[1392..1394] of)
+                      (NP (NN:[1395..1407] 11-oxo-delta) (NN:[1408..1413] 8-THC)))))))))))
+    (.:[1413..1414] .)))
+
+;section 11 Span:1418..1462
+;PMID: 1673402 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1418..1422] PMID) (::[1422..1423] :) (CD:[1424..1431] 1673402)
+        (NN:[1432..1433] -LSB-) (NNP:[1433..1439] PubMed) (::[1440..1441] -)
+        (NN:[1442..1449] indexed) (IN:[1450..1453] for)
+        (NNP:[1454..1462] MEDLINE-RSB-)))

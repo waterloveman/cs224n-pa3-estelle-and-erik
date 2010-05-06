@@ -1,0 +1,551 @@
+;PMID: 3259740
+;source_file_647.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..47] = [t:0..47]
+;1)sentence:[e:53..185] = [t:53..185]
+;2)section:[e:189..223] = [t:189..223]
+;3)section:[e:227..317] = [t:227..317]
+;4)sentence:[e:321..580] = [t:321..580]
+;5)sentence:[e:581..758] = [t:581..758]
+;6)sentence:[e:759..945] = [t:759..945]
+;7)sentence:[e:947..1094] = [t:947..1094]
+;8)sentence:[e:1095..1410] = [t:1095..1410]
+;9)sentence:[e:1411..1526] = [t:1411..1526]
+;10)sentence:[e:1527..1681] = [t:1527..1681]
+;11)sentence:[e:1682..1887] = [t:1682..1887]
+;12)sentence:[e:1888..2071] = [t:1888..2071]
+;13)sentence:[e:2072..2200] = [t:2072..2200]
+;14)section:[e:2204..2248] = [t:2204..2248]
+;Token/POS Errors
+;ERROR_POS mismatch [39..40] t:token e:CD 1
+
+;section 0 Span:0..47
+;Toxicol Appl Pharmacol. 1988 Jun 15;94(1):1-10.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..12] Appl) (NNP:[13..22] Pharmacol)
+        (.:[22..23] .) (CD:[24..28] 1988) (JJ:[29..32] Jun) (CD:[33..38] 15;94)
+        (NN:[38..39] -LRB-) (token:[39..40] 1) (-RRB-:[40..41] -RRB-)
+        (::[41..42] :) (CD:[42..46] 1-10) (.:[46..47] .)))
+
+;sentence 1 Span:53..185
+;The effect of piperonyl butoxide on hepatic cytochrome P-450-dependent 
+;monooxygenase activities in rainbow trout (Salmo gairdneri).
+;[67..85]:substance:"piperonyl butoxide"
+;[97..113]:cyp450:"cytochrome P-450"
+;[125..138]:substance:"monooxygenase"
+(SENT
+  (NP-HLN
+    (NP (DT:[53..56] The) (NN:[57..63] effect))
+    (PP (IN:[64..66] of)
+      (NP (NN:[67..76] piperonyl) (NN:[77..85] butoxide)))
+    (PP (IN:[86..88] on)
+      (NP (JJ:[89..96] hepatic)
+        (ADJP
+          (NML (NN:[97..107] cytochrome) (NN:[108..113] P-450))
+          (HYPH:[113..114] -) (JJ:[114..123] dependent))
+        (NN:[125..138] monooxygenase) (NNS:[139..149] activities)))
+    (PP-LOC (IN:[150..152] in)
+      (NP
+        (NP (JJ:[153..160] rainbow) (NNS:[161..166] trout))
+        (NP (-LRB-:[167..168] -LRB-) (NNP:[168..173] Salmo)
+            (NNP:[174..183] gairdneri) (-RRB-:[183..184] -RRB-))))
+    (.:[184..185] .)))
+
+;section 2 Span:189..223
+;Erickson DA, Goodrich MS, Lech JJ.
+(SEC
+  (FRAG (NNP:[189..197] Erickson) (NNP:[198..200] DA) (,:[200..201] ,)
+        (NNP:[202..210] Goodrich) (NNP:[211..213] MS) (,:[213..214] ,)
+        (NNP:[215..219] Lech) (NNP:[220..223] JJ.)))
+
+;section 3 Span:227..317
+;Department of Pharmacology and Toxicology, Medical College of Wisconsin, 
+;Milwaukee 53226.
+(SEC
+  (FRAG (NNP:[227..237] Department) (IN:[238..240] of)
+        (NNP:[241..253] Pharmacology) (CC:[254..257] and)
+        (NNP:[258..268] Toxicology) (NNP:[268..269] ,) (NNP:[270..277] Medical)
+        (NNP:[278..285] College) (IN:[286..288] of) (NNP:[289..298] Wisconsin)
+        (,:[298..299] ,) (NNP:[301..310] Milwaukee) (.:[311..316] 53226)
+        (.:[316..317] .)))
+
+;sentence 4 Span:321..580
+;Although piperonyl butoxide (PBO) is commonly used both in vivo and in vitro
+;as  an inhibitor of cytochrome P-450-dependent monooxygenase (MO) activity in
+;a wide  variety of species, the effect of PBO on the hepatic MO of fishes has
+;never been  characterized.
+;[330..348]:substance:"piperonyl butoxide"
+;[350..353]:substance:"PBO"
+;[405..414]:substance:"inhibitor"
+;[418..434]:cyp450:"cytochrome P-450"
+;[445..458]:substance:"monooxygenase"
+;[460..462]:substance:"MO"
+;[518..521]:substance:"PBO"
+;[537..539]:substance:"MO"
+(SENT
+  (S
+    (SBAR-ADV (IN:[321..329] Although)
+      (S
+        (NP-SBJ-2
+          (NP (NN:[330..339] piperonyl) (NN:[340..348] butoxide))
+          (NP (-LRB-:[349..350] -LRB-) (NN:[350..353] PBO)
+              (-RRB-:[353..354] -RRB-)))
+        (VP (VBZ:[355..357] is)
+          (VP
+            (ADVP (RB:[358..366] commonly))
+            (VBN:[367..371] used)
+            (NP-2 (-NONE-:[371..371] *))
+            (ADVP (CC:[372..376] both)
+              (ADVP (FW:[377..379] in) (FW:[380..384] vivo))
+              (CC:[385..388] and)
+              (ADVP (FW:[389..391] in) (FW:[392..397] vitro)))
+            (PP (IN:[398..400] as)
+              (NP
+                (NP (DT:[402..404] an) (NN:[405..414] inhibitor))
+                (PP (IN:[415..417] of)
+                  (NP
+                    (ADJP
+                      (NML (NN:[418..428] cytochrome) (NN:[429..434] P-450))
+                      (HYPH:[434..435] -) (JJ:[435..444] dependent))
+                    (NML
+                      (NML (NN:[445..458] monooxygenase))
+                      (NML (-LRB-:[459..460] -LRB-) (NN:[460..462] MO)
+                           (-RRB-:[462..463] -RRB-)))
+                    (NN:[464..472] activity)))))
+            (PP (IN:[473..475] in)
+              (NP
+                (NP (DT:[476..477] a) (JJ:[478..482] wide)
+                    (NN:[484..491] variety))
+                (PP (IN:[492..494] of)
+                  (NP (NNS:[495..502] species)))))))))
+    (,:[502..503] ,)
+    (NP-SBJ-1
+      (NP (DT:[504..507] the) (NN:[508..514] effect))
+      (PP (IN:[515..517] of)
+        (NP (NN:[518..521] PBO)))
+      (PP (IN:[522..524] on)
+        (NP
+          (NP (DT:[525..528] the) (JJ:[529..536] hepatic) (NN:[537..539] MO))
+          (PP (IN:[540..542] of)
+            (NP (NNS:[543..549] fishes))))))
+    (VP (VBZ:[550..553] has)
+      (ADVP-TMP (RB:[554..559] never))
+      (VP (VBN:[560..564] been)
+        (VP (VBN:[566..579] characterized)
+          (NP-1 (-NONE-:[579..579] *)))))
+    (.:[579..580] .)))
+
+;sentence 5 Span:581..758
+;The MO activity in hepatic microsomes from rainbow trout exposed  to either 1
+;or 2 ppm PBO for 24 hr in a static system was induced to a similar  level in
+;both treatment groups.
+;[585..587]:substance:"MO"
+;[657..658]:quantitative-value:"1"
+;[662..663]:quantitative-value:"2"
+;[664..667]:quantitative-units:"ppm"
+;[668..671]:substance:"PBO"
+;[676..678]:quantitative-value:"24"
+;[679..681]:quantitative-units:"hr"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[581..584] The) (NN:[585..587] MO) (NN:[588..596] activity))
+      (PP-LOC (IN:[597..599] in)
+        (NP
+          (NP (JJ:[600..607] hepatic) (NNS:[608..618] microsomes))
+          (PP (IN:[619..623] from)
+            (NP
+              (NP (JJ:[624..631] rainbow) (NNS:[632..637] trout))
+              (VP (VBN:[638..645] exposed)
+                (NP (-NONE-:[645..645] *))
+                (PP-CLR (TO:[647..649] to)
+                  (NP
+                    (NML
+                      (QP (CC:[650..656] either) (CD:[657..658] 1)
+                          (CC:[659..661] or) (CD:[662..663] 2))
+                      (NN:[664..667] ppm))
+                    (NN:[668..671] PBO)))
+                (PP-TMP (IN:[672..675] for)
+                  (NP (CD:[676..678] 24) (NN:[679..681] hr)))
+                (PP-LOC (IN:[682..684] in)
+                  (NP (DT:[685..686] a) (JJ:[687..693] static)
+                      (NN:[694..700] system)))))))))
+    (VP (VBD:[701..704] was)
+      (VP (VBN:[705..712] induced)
+        (NP-1 (-NONE-:[712..712] *))
+        (PP (TO:[713..715] to)
+          (NP (DT:[716..717] a) (JJ:[718..725] similar) (NN:[727..732] level)))
+        (PP-LOC (IN:[733..735] in)
+          (NP (DT:[736..740] both) (NN:[741..750] treatment)
+              (NNS:[751..757] groups)))))
+    (.:[757..758] .)))
+
+;sentence 6 Span:759..945
+;Conversely, when PBO was administered in a  flow-through system to trout, the
+;hepatic microsomes of treated animals  contained MO activities that were
+;induced in a dose-dependent manner.
+;[776..779]:substance:"PBO"
+;[886..888]:substance:"MO"
+(SENT
+  (S
+    (ADVP (RB:[759..769] Conversely))
+    (,:[769..770] ,)
+    (SBAR-ADV
+      (WHADVP (WRB:[771..775] when))
+      (S
+        (NP-SBJ-2 (NN:[776..779] PBO))
+        (VP (VBD:[780..783] was)
+          (VP (VBN:[784..796] administered)
+            (NP-2 (-NONE-:[796..796] *))
+            (PP (IN:[797..799] in)
+              (NP (DT:[800..801] a) (NN:[803..815] flow-through)
+                  (NN:[816..822] system)))
+            (PP-CLR (TO:[823..825] to)
+              (NP (NNS:[826..831] trout)))))))
+    (,:[831..832] ,)
+    (NP-SBJ
+      (NP (DT:[833..836] the) (JJ:[837..844] hepatic)
+          (NNS:[845..855] microsomes))
+      (PP (IN:[856..858] of)
+        (NP (JJ:[859..866] treated) (NNS:[867..874] animals))))
+    (VP (VBD:[876..885] contained)
+      (NP
+        (NP (NN:[886..888] MO) (NNS:[889..899] activities))
+        (SBAR
+          (WHNP-1 (WDT:[900..904] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[904..904] *T*))
+            (VP (VBD:[905..909] were)
+              (VP (VBN:[910..917] induced)
+                (NP-1 (-NONE-:[917..917] *))
+                (PP-MNR (IN:[918..920] in)
+                  (NP (DT:[921..922] a)
+                    (ADJP (NN:[923..927] dose) (HYPH:[927..928] -)
+                          (JJ:[928..937] dependent))
+                    (NN:[938..944] manner)))))))))
+    (.:[944..945] .)))
+
+;sentence 7 Span:947..1094
+;Furthermore, total cytochrome P-450 was significantly increased in the livers
+;of  trout treated in a flow-through system with 1 ppm or more of PBO.
+;[966..982]:cyp450:"cytochrome P-450"
+;[1073..1074]:quantitative-value:"1"
+;[1075..1078]:quantitative-units:"ppm"
+;[1090..1093]:substance:"PBO"
+(SENT
+  (S
+    (ADVP (RB:[947..958] Furthermore))
+    (,:[958..959] ,)
+    (NP-SBJ-1 (JJ:[960..965] total)
+       (NN:[966..976] cytochrome) (NN:[977..982] P-450))
+    (VP (VBD:[983..986] was)
+      (VP
+        (ADVP (RB:[987..1000] significantly))
+        (VBN:[1001..1010] increased)
+        (NP-1 (-NONE-:[1010..1010] *))
+        (PP-LOC (IN:[1011..1013] in)
+          (NP
+            (NP (DT:[1014..1017] the) (NNS:[1018..1024] livers))
+            (PP (IN:[1025..1027] of)
+              (NP
+                (NP (NNS:[1029..1034] trout))
+                (VP (VBN:[1035..1042] treated)
+                  (NP (-NONE-:[1042..1042] *))
+                  (PP (IN:[1043..1045] in)
+                    (NP (DT:[1046..1047] a) (NN:[1048..1060] flow-through)
+                        (NN:[1061..1067] system)))
+                  (PP-CLR (IN:[1068..1072] with)
+                    (NP
+                      (NP
+                        (NP (CD:[1073..1074] 1) (NN:[1075..1078] ppm))
+                        (QP (CC:[1079..1081] or) (JJR:[1082..1086] more)))
+                      (PP (IN:[1087..1089] of)
+                        (NP (NN:[1090..1093] PBO))))))))))))
+    (.:[1093..1094] .)))
+
+;sentence 8 Span:1095..1410
+;The in vitro  inhibition kinetics of PBO toward the
+;7-ethoxycoumarin-O-deethylase (ECOD) and  7-ethoxyresorufin-O-deethylase
+;(EROD) activities of hepatic microsomes from  trout treated with
+;beta-naphthoflavone (BNF) (100 mg/kg, ip) or PBO (4 ppm by  flow-through) and
+;untreated trout were compared with Dixon plots.
+;[1132..1135]:substance:"PBO"
+;[1147..1176]:substance:"7-ethoxycoumarin-O-deethylase"
+;[1178..1182]:substance:"ECOD"
+;[1189..1219]:substance:"7-ethoxyresorufin-O-deethylase"
+;[1221..1225]:substance:"EROD"
+;[1285..1304]:substance:"beta-naphthoflavone"
+;[1306..1309]:substance:"BNF"
+;[1312..1315]:quantitative-value:"100"
+;[1316..1321]:quantitative-units:"mg/kg"
+;[1330..1333]:substance:"PBO"
+;[1335..1336]:quantitative-value:"4"
+;[1337..1340]:quantitative-units:"ppm"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1095..1098] The)
+        (ADJP (FW:[1099..1101] in) (FW:[1102..1107] vitro))
+        (NN:[1109..1119] inhibition) (NNS:[1120..1128] kinetics))
+      (PP (IN:[1129..1131] of)
+        (NP (NN:[1132..1135] PBO)))
+      (PP (IN:[1136..1142] toward)
+        (NP
+          (NP (DT:[1143..1146] the)
+            (NML
+              (NML
+                (NML
+                  (NML (NN:[1147..1176] 7-ethoxycoumarin-O-deethylase))
+                  (NML (-LRB-:[1177..1178] -LRB-) (NN:[1178..1182] ECOD)
+                       (-RRB-:[1182..1183] -RRB-)))
+                (NML-1 (-NONE-:[1183..1183] *P*)))
+              (CC:[1184..1187] and)
+              (NML
+                (NML
+                  (NML (NN:[1189..1219] 7-ethoxyresorufin-O-deethylase))
+                  (NML (-LRB-:[1220..1221] -LRB-) (NN:[1221..1225] EROD)
+                       (-RRB-:[1225..1226] -RRB-)))
+                (NML-1 (NNS:[1227..1237] activities)))))
+          (PP (IN:[1238..1240] of)
+            (NP
+              (NP (JJ:[1241..1248] hepatic) (NNS:[1249..1259] microsomes))
+              (PP (IN:[1260..1264] from)
+                (NP
+                  (NP
+                    (NP (NNS:[1266..1271] trout))
+                    (VP (VBN:[1272..1279] treated)
+                      (NP (-NONE-:[1279..1279] *))
+                      (PP-CLR (IN:[1280..1284] with)
+                        (NP
+                          (NP
+                            (NP (NN:[1285..1304] beta-naphthoflavone))
+                            (NP (-LRB-:[1305..1306] -LRB-) (NN:[1306..1309] BNF)
+                                (-RRB-:[1309..1310] -RRB-))
+                            (PRN (-LRB-:[1311..1312] -LRB-)
+                              (NP
+                                (NP (CD:[1312..1315] 100) (NN:[1316..1318] mg))
+                                (PP (SYM:[1318..1319] /)
+                                  (NP (NN:[1319..1321] kg))))
+                              (,:[1321..1322] ,)
+                              (NP-ADV (NN:[1323..1325] ip))
+                              (-RRB-:[1325..1326] -RRB-)))
+                          (CC:[1327..1329] or)
+                          (NP (NN:[1330..1333] PBO)
+                            (PRN (-LRB-:[1334..1335] -LRB-)
+                              (FRAG
+                                (NP (CD:[1335..1336] 4) (NN:[1337..1340] ppm))
+                                (PP (IN:[1341..1343] by)
+                                  (NP (NN:[1345..1357] flow-through))))
+                              (-RRB-:[1357..1358] -RRB-)))))))
+                  (CC:[1359..1362] and)
+                  (NP (JJ:[1363..1372] untreated) (NNS:[1373..1378] trout)))))))))
+    (VP (VBD:[1379..1383] were)
+      (VP (VBN:[1384..1392] compared)
+        (NP-2 (-NONE-:[1392..1392] *))
+        (PP-MNR (IN:[1393..1397] with)
+          (NP (NNP:[1398..1403] Dixon) (NNS:[1404..1409] plots)))))
+    (.:[1409..1410] .)))
+
+;sentence 9 Span:1411..1526
+;With respect  to ECOD activity, the slopes of Dixon plots from control, BNF-
+;and PBO-treated  animals were similar.
+;[1428..1432]:substance:"ECOD"
+;[1483..1486]:substance:"BNF"
+;[1492..1495]:substance:"PBO"
+(SENT
+  (S
+    (PP (IN:[1411..1415] With)
+      (NP
+        (NP (NN:[1416..1423] respect))
+        (PP (TO:[1425..1427] to)
+          (NP (NN:[1428..1432] ECOD) (NN:[1433..1441] activity)))))
+    (,:[1441..1442] ,)
+    (NP-SBJ
+      (NP (DT:[1443..1446] the) (NNS:[1447..1453] slopes))
+      (PP (IN:[1454..1456] of)
+        (NP
+          (NP (NNP:[1457..1462] Dixon) (NNS:[1463..1468] plots))
+          (PP (IN:[1469..1473] from)
+            (NP
+              (NP (NN:[1474..1481] control)
+                (NML-2 (-NONE-:[1481..1481] *P*)))
+              (,:[1481..1482] ,)
+              (NP
+                (ADJP (NN:[1483..1486] BNF) (HYPH:[1486..1487] -)
+                  (ADJP-1 (-NONE-:[1487..1487] *P*)))
+                (NML-2 (-NONE-:[1487..1487] *P*)))
+              (CC:[1488..1491] and)
+              (NP
+                (ADJP (NN:[1492..1495] PBO) (HYPH:[1495..1496] -)
+                  (ADJP-1 (VBN:[1496..1503] treated)))
+                (NML-2 (NNS:[1505..1512] animals))))))))
+    (VP (VBD:[1513..1517] were)
+      (ADJP-PRD (JJ:[1518..1525] similar)))
+    (.:[1525..1526] .)))
+
+;sentence 10 Span:1527..1681
+;However, the slopes of Dixon plots of EROD inhibition by  PBO in microsomes
+;from BNF- and PBO-treated trout were significantly different  from each
+;other.
+;[1565..1569]:substance:"EROD"
+;[1585..1588]:substance:"PBO"
+;[1608..1611]:substance:"BNF"
+;[1617..1620]:substance:"PBO"
+(SENT
+  (S
+    (ADVP (RB:[1527..1534] However))
+    (,:[1534..1535] ,)
+    (NP-SBJ
+      (NP (DT:[1536..1539] the) (NNS:[1540..1546] slopes))
+      (PP (IN:[1547..1549] of)
+        (NP
+          (NP (NNP:[1550..1555] Dixon) (NNS:[1556..1561] plots))
+          (PP (IN:[1562..1564] of)
+            (NP
+              (NP (NN:[1565..1569] EROD) (NN:[1570..1580] inhibition))
+              (PP (IN:[1581..1583] by)
+                (NP (NN:[1585..1588] PBO)))
+              (PP-LOC (IN:[1589..1591] in)
+                (NP
+                  (NP (NNS:[1592..1602] microsomes))
+                  (PP (IN:[1603..1607] from)
+                    (NP
+                      (NP
+                        (ADJP (NN:[1608..1611] BNF) (HYPH:[1611..1612] -)
+                          (ADJP-1 (-NONE-:[1612..1612] *P*)))
+                        (NML-2 (-NONE-:[1612..1612] *P*)))
+                      (CC:[1613..1616] and)
+                      (NP
+                        (ADJP (NN:[1617..1620] PBO) (HYPH:[1620..1621] -)
+                          (ADJP-1 (VBN:[1621..1628] treated)))
+                        (NML-2 (NNS:[1629..1634] trout))))))))))))
+    (VP (VBD:[1635..1639] were)
+      (ADJP-PRD (RB:[1640..1653] significantly) (JJ:[1654..1663] different)
+        (PP (IN:[1665..1669] from)
+          (NP (DT:[1670..1674] each) (JJ:[1675..1680] other)))))
+    (.:[1680..1681] .)))
+
+;sentence 11 Span:1682..1887
+;Treatment of trout with PBO in a flow-through system resulted  in an increase
+;in ECOD and EROD activity in hepatic microsomes while  simultaneously
+;decreasing their activity toward [14C]rotenone oxidation.
+;[1706..1709]:substance:"PBO"
+;[1763..1767]:substance:"ECOD"
+;[1772..1776]:substance:"EROD"
+;[1863..1876]:substance:"[14C]rotenone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1682..1691] Treatment))
+      (PP (IN:[1692..1694] of)
+        (NP (NNS:[1695..1700] trout)))
+      (PP (IN:[1701..1705] with)
+        (NP (NN:[1706..1709] PBO)))
+      (PP-LOC (IN:[1710..1712] in)
+        (NP (DT:[1713..1714] a) (NN:[1715..1727] flow-through)
+            (NN:[1728..1734] system))))
+    (VP (VBD:[1735..1743] resulted)
+      (PP-CLR (IN:[1745..1747] in)
+        (NP
+          (NP (DT:[1748..1750] an) (NN:[1751..1759] increase))
+          (PP (IN:[1760..1762] in)
+            (NP
+              (NP (NN:[1763..1767] ECOD)
+                (NML-1 (-NONE-:[1767..1767] *P*)))
+              (CC:[1768..1771] and)
+              (NP (NN:[1772..1776] EROD)
+                (NML-1 (NN:[1777..1785] activity)))))
+          (PP-LOC (IN:[1786..1788] in)
+            (NP (JJ:[1789..1796] hepatic) (NNS:[1797..1807] microsomes)))))
+      (SBAR-ADV (IN:[1808..1813] while)
+        (S
+          (NP-SBJ (-NONE-:[1813..1813] *))
+          (ADVP (RB:[1815..1829] simultaneously))
+          (VP (VBG:[1830..1840] decreasing)
+            (NP
+              (NP (PRP$:[1841..1846] their) (NN:[1847..1855] activity))
+              (PP (IN:[1856..1862] toward)
+                (NP (NN:[1863..1876] -LSB-14C-RSB-rotenone)
+                    (NN:[1877..1886] oxidation))))))))
+    (.:[1886..1887] .)))
+
+;sentence 12 Span:1888..2071
+;These  data suggest that the cytochrome P-450 isozyme composition in hepatic
+;microsomes  from PBO-treated rainbow trout may be qualitatively different
+;from that of  BNF-treated trout.
+;[1917..1941]:cyp450:"cytochrome P-450 isozyme"
+;[1982..1985]:substance:"PBO"
+;[2053..2056]:substance:"BNF"
+(SENT
+  (S
+    (NP-SBJ (DT:[1888..1893] These) (NNS:[1895..1899] data))
+    (VP (VBP:[1900..1907] suggest)
+      (SBAR (IN:[1908..1912] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1913..1916] the)
+              
+              (NML (NN:[1917..1927] cytochrome) (NN:[1928..1933] P-450))
+              (NN:[1934..1941] isozyme)
+              (NN:[1942..1953] composition))
+            (PP-LOC (IN:[1954..1956] in)
+              (NP
+                (NP (JJ:[1957..1964] hepatic) (NNS:[1965..1975] microsomes))
+                (PP (IN:[1977..1981] from)
+                  (NP
+                    (ADJP (NN:[1982..1985] PBO) (HYPH:[1985..1986] -)
+                          (VBN:[1986..1993] treated))
+                    (JJ:[1994..2001] rainbow) (NNS:[2002..2007] trout))))))
+          (VP (MD:[2008..2011] may)
+            (VP (VB:[2012..2014] be)
+              (ADJP-PRD (RB:[2015..2028] qualitatively)
+                        (JJ:[2029..2038] different)
+                (PP (IN:[2039..2043] from)
+                  (NP
+                    (NP (DT:[2044..2048] that))
+                    (PP (IN:[2049..2051] of)
+                      (NP
+                        (ADJP (NN:[2053..2056] BNF) (HYPH:[2056..2057] -)
+                              (VBN:[2057..2064] treated))
+                        (NNS:[2065..2070] trout)))))))))))
+    (.:[2070..2071] .)))
+
+;sentence 13 Span:2072..2200
+;Also, the activity of hepatic microsomes from PBO-treated  trout toward a
+;specific substrate may be either inhibited or induced.
+;[2118..2121]:substance:"PBO"
+;[2155..2164]:substance:"substrate"
+(SENT
+  (S
+    (ADVP (RB:[2072..2076] Also))
+    (,:[2076..2077] ,)
+    (NP-SBJ-1
+      (NP (DT:[2078..2081] the) (NN:[2082..2090] activity))
+      (PP (IN:[2091..2093] of)
+        (NP
+          (NP (JJ:[2094..2101] hepatic) (NNS:[2102..2112] microsomes))
+          (PP (IN:[2113..2117] from)
+            (NP
+              (NP
+                (ADJP (NN:[2118..2121] PBO) (HYPH:[2121..2122] -)
+                      (VBN:[2122..2129] treated))
+                (NNS:[2131..2136] trout))
+              (PP (IN:[2137..2143] toward)
+                (NP (DT:[2144..2145] a) (JJ:[2146..2154] specific)
+                    (NN:[2155..2164] substrate))))))))
+    (VP (MD:[2165..2168] may)
+      (VP (VB:[2169..2171] be)
+        (VP (CC:[2172..2178] either) (VBN:[2179..2188] inhibited)
+            (CC:[2189..2191] or) (VBN:[2192..2199] induced)
+          (NP-1 (-NONE-:[2199..2199] *)))))
+    (.:[2199..2200] .)))
+
+;section 14 Span:2204..2248
+;PMID: 3259740 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2204..2208] PMID) (::[2208..2209] :) (CD:[2210..2217] 3259740)
+        (NN:[2218..2219] -LSB-) (NNP:[2219..2225] PubMed) (::[2226..2227] -)
+        (NN:[2228..2235] indexed) (IN:[2236..2239] for)
+        (NNP:[2240..2248] MEDLINE-RSB-)))

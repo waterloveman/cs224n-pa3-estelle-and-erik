@@ -1,0 +1,379 @@
+;PMID: 2302711
+;source_file_2930.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..113] = [t:44..113]
+;2)section:[e:117..191] = [t:117..191]
+;3)section:[e:195..260] = [t:195..260]
+;4)sentence:[e:264..426] = [t:264..426]
+;5)sentence:[e:427..648] = [t:427..648]
+;6)sentence:[e:649..745] = [t:649..745]
+;7)sentence:[e:746..821] = [t:746..821]
+;8)sentence:[e:822..945] = [t:822..945]
+;9)sentence:[e:946..1040] = [t:946..1040]
+;10)sentence:[e:1042..1140] = [t:1042..1140]
+;11)sentence:[e:1141..1212] = [t:1141..1212]
+;12)sentence:[e:1213..1435] = [t:1213..1435]
+;13)section:[e:1439..1483] = [t:1439..1483]
+
+;section 0 Span:0..38
+;Cancer Res.  1990 Mar 1;50(5):1459-63.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (.:[10..11] .) (CD:[13..17] 1990)
+        (NNP:[18..21] Mar) (CC:[22..27] 1;50-LRB-) (CD:[27..28] 5)
+        (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..34] 1459)
+        (HYPH:[34..35] -) (CD:[35..37] 63) (.:[37..38] .)))
+
+;sentence 1 Span:44..113
+;myc gene amplification and expression in primary human neuroblastoma.
+;[44..47]:gene-rna:"myc"
+;[53..66]:variation-type:"amplification"
+;[85..92]:malignancy-clinical-stage:"primary"
+;[99..112]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (NML-1 (NN:[44..47] myc) (NN:[48..52] gene))
+        (NN:[53..66] amplification))
+      (CC:[67..70] and)
+      (NP
+        (NML-1 (-NONE-:[70..70] *P*))
+        (NN:[71..81] expression)))
+    (PP (IN:[82..84] in)
+      (NP (JJ:[85..92] primary) (JJ:[93..98] human) (NN:[99..112] neuroblastoma)))
+    (.:[112..113] .)))
+
+;section 2 Span:117..191
+;Slavc I, Ellenbogen R, Jung WH, Vawter GF, Kretschmar C, Grier H, Korf BR.
+(SEC
+  (FRAG (NNP:[117..122] Slavc) (NNP:[123..124] I) (,:[124..125] ,)
+        (NNP:[126..136] Ellenbogen) (NNP:[137..138] R) (,:[138..139] ,)
+        (NNP:[140..144] Jung) (NNP:[145..147] WH) (,:[147..148] ,)
+        (NNP:[149..155] Vawter) (NNP:[156..158] GF) (,:[158..159] ,)
+        (NNP:[160..170] Kretschmar) (NNP:[171..172] C) (,:[172..173] ,)
+        (NNP:[174..179] Grier) (NNP:[180..182] H,) (NNP:[183..187] Korf)
+        (NNP:[188..191] BR.)))
+
+;section 3 Span:195..260
+;Division of Genetics, Children's Hospital, Boston, Massachusetts.
+(SEC
+  (FRAG (NN:[195..203] Division) (IN:[204..206] of) (NNP:[207..215] Genetics)
+        (,:[215..216] ,) (NNP:[217..225] Children) (POS:[225..227] 's)
+        (NNP:[228..236] Hospital) (,:[236..237] ,) (NNP:[238..244] Boston)
+        (,:[244..245] ,) (NNP:[246..259] Massachusetts) (.:[259..260] .)))
+
+;sentence 4 Span:264..426
+;Although N-myc amplification in neuroblastomas correlates with poor
+;prognosis,  not all neuroblastomas which fail to respond to therapy have
+;N-myc  amplification.
+;[273..278]:gene-rna:"N-myc"
+;[279..292]:variation-type:"amplification"
+;[296..310]:malignancy-type:"neuroblastomas"
+;[352..366]:malignancy-type:"neuroblastomas"
+;[405..410]:gene-rna:"N-myc"
+;[412..425]:variation-type:"amplification"
+(SENT
+  (S
+    (SBAR-ADV (IN:[264..272] Although)
+      (S
+        (NP-SBJ
+          (NP (NN:[273..278] N-myc) (NN:[279..292] amplification))
+          (PP (IN:[293..295] in)
+            (NP (NNS:[296..310] neuroblastomas))))
+        (VP (VBZ:[311..321] correlates)
+          (PP-CLR (IN:[322..326] with)
+            (NP (JJ:[327..331] poor) (NN:[332..341] prognosis))))))
+    (,:[341..342] ,)
+    (NP-SBJ
+      (NP (RB:[344..347] not) (DT:[348..351] all)
+          (NNS:[352..366] neuroblastomas))
+      (SBAR
+        (WHNP-1 (WDT:[367..372] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[372..372] *T*))
+          (VP (VBP:[373..377] fail)
+            (S
+              (NP-SBJ (-NONE-:[377..377] *))
+              (VP (TO:[378..380] to)
+                (VP (VB:[381..388] respond)
+                  (PP (TO:[389..391] to)
+                    (NP (NN:[392..399] therapy))))))))))
+    (VP (VBP:[400..404] have)
+      (NP (NN:[405..410] N-myc) (NN:[412..425] amplification)))
+    (.:[425..426] .)))
+
+;sentence 5 Span:427..648
+;To determine whether other modes of myc gene activation underlie  progression
+;of some neuroblastomas, 45 were analyzed for amplification of N-myc,  c-myc
+;and L-myc and 26 were studied for transcription of these oncogenes.
+;[463..466]:gene-rna:"myc"
+;[513..527]:malignancy-type:"neuroblastomas"
+;[550..563]:variation-type:"amplification"
+;[567..572]:gene-rna:"N-myc"
+;[575..580]:gene-rna:"c-myc"
+;[585..590]:gene-rna:"L-myc"
+(SENT
+  (S
+    (S
+      (S-PRP
+        (NP-SBJ (-NONE-:[427..427] *))
+        (VP (TO:[427..429] To)
+          (VP (VB:[430..439] determine)
+            (SBAR (IN:[440..447] whether)
+              (S
+                (NP-SBJ
+                  (NP (JJ:[448..453] other) (NNS:[454..459] modes))
+                  (PP (IN:[460..462] of)
+                    (NP (NN:[463..466] myc) (NN:[467..471] gene)
+                        (NN:[472..482] activation))))
+                (VP (VBP:[483..491] underlie)
+                  (NP
+                    (NP (NN:[493..504] progression))
+                    (PP (IN:[505..507] of)
+                      (NP (DT:[508..512] some) (NNS:[513..527] neuroblastomas))))))))))
+      (,:[527..528] ,)
+      (NP-SBJ-2 (CD:[529..531] 45))
+      (VP (VBD:[532..536] were)
+        (VP (VBN:[537..545] analyzed)
+          (NP-2 (-NONE-:[545..545] *))
+          (PP (IN:[546..549] for)
+            (NP
+              (NP (NN:[550..563] amplification))
+              (PP (IN:[564..566] of)
+                (NP
+                  (NP (NN:[567..572] N-myc))
+                  (,:[572..573] ,)
+                  (NP (NN:[575..580] c-myc))
+                  (CC:[581..584] and)
+                  (NP (NN:[585..590] L-myc)))))))))
+    (CC:[591..594] and)
+    (S
+      (NP-SBJ-1 (CD:[595..597] 26))
+      (VP (VBD:[598..602] were)
+        (VP (VBN:[603..610] studied)
+          (NP-1 (-NONE-:[610..610] *))
+          (PP (IN:[611..614] for)
+            (NP
+              (NP (NN:[615..628] transcription))
+              (PP (IN:[629..631] of)
+                (NP (DT:[632..637] these) (NNS:[638..647] oncogenes))))))))
+    (.:[647..648] .)))
+
+;sentence 6 Span:649..745
+;N-myc  amplification was found in 6 of 45 tumors; no tumor had amplification
+;of c-myc  or L-myc.
+;[649..654]:gene-rna:"N-myc"
+;[656..669]:variation-type:"amplification"
+;[712..725]:variation-type:"amplification"
+;[729..734]:gene-rna:"c-myc"
+;[739..744]:gene-rna:"L-myc"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[649..654] N-myc) (NN:[656..669] amplification))
+      (VP (VBD:[670..673] was)
+        (VP (VBN:[674..679] found)
+          (NP-1 (-NONE-:[679..679] *))
+          (PP (IN:[680..682] in)
+            (NP
+              (NP (CD:[683..684] 6))
+              (PP (IN:[685..687] of)
+                (NP (CD:[688..690] 45) (NNS:[691..697] tumors))))))))
+    (::[697..698] ;)
+    (S
+      (NP-SBJ (DT:[699..701] no) (NN:[702..707] tumor))
+      (VP (VBD:[708..711] had)
+        (NP
+          (NP (NN:[712..725] amplification))
+          (PP (IN:[726..728] of)
+            (NP (NN:[729..734] c-myc) (CC:[736..738] or) (NN:[739..744] L-myc))))))
+    (.:[744..745] .)))
+
+;sentence 7 Span:746..821
+;Transcription of both N-myc and c-myc occurred in 21 of 26  neuroblastomas.
+;[768..773]:gene-rna:"N-myc"
+;[778..783]:gene-rna:"c-myc"
+;[806..820]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[746..759] Transcription))
+      (PP (IN:[760..762] of)
+        (NP (CC:[763..767] both) (NN:[768..773] N-myc) (CC:[774..777] and)
+            (NN:[778..783] c-myc))))
+    (VP (VBD:[784..792] occurred)
+      (PP (IN:[793..795] in)
+        (NP
+          (NP (CD:[796..798] 21))
+          (PP (IN:[799..801] of)
+            (NP (CD:[802..804] 26) (NNS:[806..820] neuroblastomas))))))
+    (.:[820..821] .)))
+
+;sentence 8 Span:822..945
+;No tumor without N-myc amplification had a level of N-myc  expression near
+;that of a tumor or cell line with amplification.
+;[839..844]:gene-rna:"N-myc"
+;[845..858]:variation-type:"amplification"
+;[874..879]:gene-rna:"N-myc"
+;[931..944]:variation-type:"amplification"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[822..824] No) (NN:[825..830] tumor))
+      (PP (IN:[831..838] without)
+        (NP (NN:[839..844] N-myc) (NN:[845..858] amplification))))
+    (VP (VBD:[859..862] had)
+      (NP
+        (NP (DT:[863..864] a) (NN:[865..870] level))
+        (PP (IN:[871..873] of)
+          (NP (NN:[874..879] N-myc) (NN:[881..891] expression))))
+      (PP (IN:[892..896] near)
+        (NP
+          (NP (DT:[897..901] that))
+          (PP (IN:[902..904] of)
+            (NP
+              (NP
+                (NP (DT:[905..906] a) (NN:[907..912] tumor))
+                (CC:[913..915] or)
+                (NP (NN:[916..920] cell) (NN:[921..925] line)))
+              (PP (IN:[926..930] with)
+                (NP (NN:[931..944] amplification))))))))
+    (.:[944..945] .)))
+
+;sentence 9 Span:946..1040
+;One tumor with  N-myc amplification was the only specimen with N-myc but not
+;c-myc expression.
+;[962..967]:gene-rna:"N-myc"
+;[968..981]:variation-type:"amplification"
+;[1009..1014]:gene-rna:"N-myc"
+;[1023..1028]:gene-rna:"c-myc"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[946..949] One) (NN:[950..955] tumor))
+      (PP (IN:[956..960] with)
+        (NP (NN:[962..967] N-myc) (NN:[968..981] amplification))))
+    (VP (VBD:[982..985] was)
+      (NP-PRD
+        (NP (DT:[986..989] the) (JJ:[990..994] only) (NN:[995..1003] specimen))
+        (PP (IN:[1004..1008] with)
+          (NP
+            (NP (NN:[1009..1014] N-myc)
+              (NML-1 (-NONE-:[1014..1014] *P*)))
+            (CONJP (CC:[1015..1018] but) (RB:[1019..1022] not))
+            (NP (NN:[1023..1028] c-myc)
+              (NML-1 (NN:[1029..1039] expression)))))))
+    (.:[1039..1040] .)))
+
+;sentence 10 Span:1042..1140
+;Five samples had c-myc but not N-myc expression; all had histological
+;features  of ganglioneuroma.
+;[1059..1064]:gene-rna:"c-myc"
+;[1073..1078]:gene-rna:"N-myc"
+;[1125..1139]:malignancy-type:"ganglioneuroma"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[1042..1046] Five) (NNS:[1047..1054] samples))
+      (VP (VBD:[1055..1058] had)
+        (NP
+          (NP (NN:[1059..1064] c-myc)
+            (NML-1 (-NONE-:[1064..1064] *P*)))
+          (CONJP (CC:[1065..1068] but) (RB:[1069..1072] not))
+          (NP (NN:[1073..1078] N-myc)
+            (NML-1 (NN:[1079..1089] expression))))))
+    (::[1089..1090] ;)
+    (S
+      (NP-SBJ (DT:[1091..1094] all))
+      (VP (VBD:[1095..1098] had)
+        (NP
+          (NP (JJ:[1099..1111] histological) (NNS:[1112..1120] features))
+          (PP (IN:[1122..1124] of)
+            (NP (NN:[1125..1139] ganglioneuroma))))))
+    (.:[1139..1140] .)))
+
+;sentence 11 Span:1141..1212
+;DNA index did not correlate with myc gene amplification or  expression.
+;[1174..1177]:gene-rna:"myc"
+;[1183..1196]:variation-type:"amplification"
+(SENT
+  (S
+    (NP-SBJ (NN:[1141..1144] DNA) (NN:[1145..1150] index))
+    (VP (VBD:[1151..1154] did) (RB:[1155..1158] not)
+      (VP (VB:[1159..1168] correlate)
+        (PP-CLR (IN:[1169..1173] with)
+          (NP
+            (NP
+              (NML-1 (NN:[1174..1177] myc) (NN:[1178..1182] gene))
+              (NN:[1183..1196] amplification))
+            (CC:[1197..1199] or)
+            (NP
+              (NML-1 (-NONE-:[1199..1199] *P*))
+              (NN:[1201..1211] expression))))))
+    (.:[1211..1212] .)))
+
+;sentence 12 Span:1213..1435
+;It is concluded that N-myc and c-myc are commonly expressed in  primary
+;untreated neuroblastomas, but in the absence of N-myc amplification, 
+;expression of these genes does not appear to correlate with disease
+;progression.
+;[1234..1239]:gene-rna:"N-myc"
+;[1244..1249]:gene-rna:"c-myc"
+;[1277..1284]:malignancy-clinical-stage:"primary"
+;[1295..1309]:malignancy-type:"neuroblastomas"
+;[1333..1338]:gene-rna:"N-myc"
+;[1339..1352]:variation-type:"amplification"
+(SENT
+  (S
+    (S
+      (NP-1
+        (NP (PRP:[1213..1215] It))
+        (SBAR-2 (-NONE-:[1215..1215] *EXP*)))
+      (VP (VBZ:[1216..1218] is)
+        (VP (VBN:[1219..1228] concluded)
+          (NP-1 (-NONE-:[1228..1228] *T*))
+          (SBAR-2 (IN:[1229..1233] that)
+            (S
+              (NP-SBJ-3
+                (NP (NN:[1234..1239] N-myc))
+                (CC:[1240..1243] and)
+                (NP (NN:[1244..1249] c-myc)))
+              (VP (VBP:[1250..1253] are)
+                (ADVP (RB:[1254..1262] commonly))
+                (VP (VBN:[1263..1272] expressed)
+                  (NP-3 (-NONE-:[1272..1272] *))
+                  (PP-LOC (IN:[1273..1275] in)
+                    (NP (JJ:[1277..1284] primary) (JJ:[1285..1294] untreated)
+                        (NNS:[1295..1309] neuroblastomas))))))))))
+    (,:[1309..1310] ,) (CC:[1311..1314] but)
+    (S
+      (PP (IN:[1315..1317] in)
+        (NP
+          (NP (DT:[1318..1321] the) (NN:[1322..1329] absence))
+          (PP (IN:[1330..1332] of)
+            (NP (NN:[1333..1338] N-myc) (NN:[1339..1352] amplification)))))
+      (,:[1352..1353] ,)
+      (NP-SBJ-4
+        (NP (NN:[1355..1365] expression))
+        (PP (IN:[1366..1368] of)
+          (NP (DT:[1369..1374] these) (NNS:[1375..1380] genes))))
+      (VP (VBZ:[1381..1385] does) (RB:[1386..1389] not)
+        (VP (VB:[1390..1396] appear)
+          (S
+            (NP-SBJ-4 (-NONE-:[1396..1396] *))
+            (VP (TO:[1397..1399] to)
+              (VP (VB:[1400..1409] correlate)
+                (PP-CLR (IN:[1410..1414] with)
+                  (NP (NN:[1415..1422] disease) (NN:[1423..1434] progression)))))))))
+    (.:[1434..1435] .)))
+
+;section 13 Span:1439..1483
+;PMID: 2302711 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1439..1443] PMID) (::[1443..1444] :) (CD:[1445..1452] 2302711)
+        (NN:[1453..1454] -LSB-) (NNP:[1454..1460] PubMed) (::[1461..1462] -)
+        (NN:[1463..1470] indexed) (IN:[1471..1474] for)
+        (NNP:[1475..1483] MEDLINE-RSB-)))

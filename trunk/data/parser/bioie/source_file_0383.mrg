@@ -1,0 +1,530 @@
+;PMID: 12515739
+;source_file_1862.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)section:[e:42..179] = [t:42..179]
+;2)sentence:[e:183..293] = [t:183..293]
+;3)section:[e:297..401] = [t:297..401]
+;4)section:[e:405..493] = [t:405..493]
+;5)sentence:[e:497..691] = [t:497..691]
+;6)sentence:[e:692..822] = [t:692..822]
+;7)sentence:[e:823..1155] = [t:823..1155]
+;8)sentence:[e:1156..1271] = [t:1156..1271]
+;9)sentence:[e:1272..1462] = [t:1272..1462]
+;10)sentence:[e:1463..1774] = [t:1463..1774]
+;11)sentence:[e:1775..1817] = [t:1775..1817]
+;12)sentence:[e:1819..1898] = [t:1819..1898]
+;13)sentence:[e:1900..2041] = [t:1900..2041]
+;14)section:[e:2045..2116] = [t:2045..2116]
+;15)section:[e:2120..2165] = [t:2120..2165]
+
+;section 0 Span:0..36
+;Circulation. 2003 Jan 7;107(1):32-7.
+(SEC
+  (FRAG (NN:[0..11] Circulation) (.:[11..12] .) (CD:[13..17] 2003)
+        (CC:[18..21] Jan) (CD:[22..27] 7;107) (-LRB-:[27..28] -LRB-)
+        (CD:[28..29] 1) (-RRB-:[29..30] -RRB-) (::[30..31] :) (CD:[31..33] 32)
+        (CD:[33..36] -7.)))
+
+;section 1 Span:42..179
+;Comment in:      Circulation. 2003 Jun 10;107(22):e210; author reply e210.   
+;  Circulation. 2003 Jun 24;107(24):e223; author reply e223.
+(SEC
+  (FRAG (NNP:[42..49] Comment) (IN:[50..52] in) (NNP:[52..53] :)
+        (NNP:[59..70] Circulation) (.:[70..71] .) (CD:[72..76] 2003)
+        (NNP:[77..80] Jun) (CD:[81..83] 10) (CD:[83..87] ;107)
+        (-LRB-:[87..88] -LRB-) (CD:[88..90] 22) (-RRB-:[90..91] -RRB-)
+        (CD:[91..96] :e210) (::[96..97] ;) (NN:[98..104] author)
+        (VBZ:[105..110] reply) (NN:[111..115] e210) (.:[115..116] .)
+        (NN:[122..133] Circulation) (.:[133..134] .) (CD:[135..139] 2003)
+        (NNP:[140..143] Jun) (CD:[144..150] 24;107) (-LRB-:[150..151] -LRB-)
+        (CD:[151..153] 24) (-RRB-:[153..154] -RRB-) (CD:[154..159] :e223)
+        (::[159..160] ;) (NN:[161..167] author) (RB:[168..173] reply)
+        (CD:[174..178] e223) (.:[178..179] .)))
+
+;sentence 2 Span:183..293
+;Atorvastatin reduces the ability of clopidogrel to inhibit platelet
+;aggregation:  a new drug-drug interaction.
+;[183..195]:substance:"Atorvastatin"
+;[219..230]:substance:"clopidogrel"
+;[271..275]:substance:"drug"
+;[276..280]:substance:"drug"
+(SENT
+  (FRAG-HLN
+    (S
+      (NP-SBJ (NN:[183..195] Atorvastatin))
+      (VP (VBZ:[196..203] reduces)
+        (NP
+          (NP (DT:[204..207] the) (NN:[208..215] ability)
+            (S-1 (-NONE-:[215..215] *ICH*)))
+          (PP (IN:[216..218] of)
+            (NP (NN:[219..230] clopidogrel)))
+          (S-1
+            (NP-SBJ (-NONE-:[230..230] *))
+            (VP (TO:[231..233] to)
+              (VP (VB:[234..241] inhibit)
+                (NP (NN:[242..250] platelet) (NN:[251..262] aggregation))))))))
+    (::[262..263] :)
+    (NP (DT:[265..266] a) (JJ:[267..270] new)
+      (NML (NN:[271..275] drug) (HYPH:[275..276] -) (NN:[276..280] drug))
+      (NN:[281..292] interaction))
+    (.:[292..293] .)))
+
+;section 3 Span:297..401
+;Lau WC, Waskell LA, Watkins PB, Neer CJ, Horowitz K, Hopp AS, Tait AR,
+;Carville  DG, Guyer KE, Bates ER.
+(SEC
+  (FRAG (NNP:[297..300] Lau) (NNP:[301..303] WC) (,:[303..304] ,)
+        (NNP:[305..312] Waskell) (NNP:[313..315] LA) (,:[315..316] ,)
+        (NNP:[317..324] Watkins) (NN:[325..327] PB) (,:[327..328] ,)
+        (NNP:[329..333] Neer) (NNP:[334..336] CJ) (,:[336..337] ,)
+        (NNP:[338..346] Horowitz) (NNP:[347..349] K,) (NNP:[350..354] Hopp)
+        (NNP:[355..357] AS) (,:[357..358] ,) (NNP:[359..363] Tait)
+        (NNP:[364..366] AR) (,:[366..367] ,) (NNP:[368..376] Carville)
+        (NNP:[378..380] DG) (,:[380..381] ,) (NNP:[382..387] Guyer)
+        (NNP:[388..390] KE) (,:[390..391] ,) (NNP:[392..397] Bates)
+        (NN:[398..400] ER) (.:[400..401] .)))
+
+;section 4 Span:405..493
+;Department of Anesthesiology, University of Michigan, Ann Arbor, USA. 
+;weiclau@umich.edu
+(SEC
+  (FRAG (NNP:[405..415] Department) (IN:[416..418] of)
+        (NNP:[419..433] Anesthesiology) (,:[433..434] ,)
+        (NNP:[435..445] University) (IN:[446..448] of) (NNP:[449..457] Michigan)
+        (,:[457..458] ,) (NNP:[459..462] Ann) (NNP:[463..468] Arbor)
+        (,:[468..469] ,) (NNP:[470..473] USA) (.:[473..474] .)
+        ('':[476..489] weiclau@umich) (.:[489..493] .edu)))
+
+;sentence 5 Span:497..691
+;BACKGROUND: We observed that the prodrug clopidogrel was less effective in 
+;inhibiting platelet aggregation with coadministration of atorvastatin during 
+;point-of-care platelet function testing.
+;[530..537]:substance:"prodrug"
+;[538..549]:substance:"clopidogrel"
+;[630..642]:substance:"atorvastatin"
+(SENT
+  (NP (NN:[497..507] BACKGROUND) (::[507..508] :))
+  (S
+    (NP-SBJ (PRP:[509..511] We))
+    (VP (VBN:[512..520] observed)
+      (SBAR (IN:[521..525] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[526..529] the) (NN:[530..537] prodrug))
+            (NP (NN:[538..549] clopidogrel)))
+          (VP (VBD:[550..553] was)
+            (ADJP-PRD (RBR:[554..558] less) (JJ:[559..568] effective))
+            (PP (IN:[569..571] in)
+              (S-NOM
+                (NP-SBJ (-NONE-:[571..571] *))
+                (VP (VBG:[573..583] inhibiting)
+                  (NP (NN:[584..592] platelet) (NN:[593..604] aggregation))
+                  (PP (IN:[605..609] with)
+                    (NP
+                      (NP (NN:[610..626] coadministration))
+                      (PP (IN:[627..629] of)
+                        (NP (NN:[630..642] atorvastatin)))))
+                  (PP-TMP (IN:[643..649] during)
+                    (NP
+                      (NML
+                        (NML (NN:[651..656] point))
+                        (HYPH:[656..657] -)
+                        (PP (IN:[657..659] of) (HYPH:[659..660] -)
+                          (NP (NN:[660..664] care))))
+                      (NN:[665..673] platelet) (NN:[674..682] function)
+                       (NN:[683..690] testing))))))))))
+    (.:[690..691] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[497..691]::NP:S:
+
+;sentence 6 Span:692..822
+;Because atorvastatin is metabolized by  cytochrome P450 (CYP) 3A4, we
+;hypothesized that clopidogrel might be activated  by CYP3A4.
+;[700..712]:substance:"atorvastatin"
+;[732..757]:cyp450:"cytochrome P450 (CYP) 3A4"
+;[780..791]:substance:"clopidogrel"
+;[815..821]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (SBAR-ADV (IN:[692..699] Because)
+      (S
+        (NP-SBJ-2 (NN:[700..712] atorvastatin))
+        (VP (VBZ:[713..715] is)
+          (VP (VBN:[716..727] metabolized)
+            (NP-2 (-NONE-:[727..727] *))
+            (PP (IN:[728..730] by)
+              (NP-LGS
+                (NML
+                  (NML (NN:[732..742] cytochrome) (NN:[743..747] P450))
+                  (NML (-LRB-:[748..749] -LRB-) (NN:[749..752] CYP)
+                       (-RRB-:[752..753] -RRB-)))
+                (NN:[754..757] 3A4)))))))
+    (,:[757..758] ,)
+    (NP-SBJ (PRP:[759..761] we))
+    (VP (VBD:[762..774] hypothesized)
+      (SBAR (IN:[775..779] that)
+        (S
+          (NP-SBJ-1 (NN:[780..791] clopidogrel))
+          (VP (MD:[792..797] might)
+            (VP (VB:[798..800] be)
+              (VP (VBN:[801..810] activated)
+                (NP-1 (-NONE-:[810..810] *))
+                (PP (IN:[812..814] by)
+                  (NP-LGS (NN:[815..821] CYP3A4)))))))))
+    (.:[821..822] .)))
+
+;sentence 7 Span:823..1155
+;METHODS AND RESULTS: Platelet aggregation was measured in 44 patients 
+;undergoing coronary artery stent implantation treated with clopidogrel or 
+;clopidogrel plus pravastatin or atorvastatin, and in 27 volunteers treated
+;with  clopidogrel and either erythromycin or troleandomycin, CYP3A4
+;inhibitors, or  rifampin, a CYP3A4 inducer.
+;[953..964]:substance:"clopidogrel"
+;[969..980]:substance:"clopidogrel"
+;[986..997]:substance:"pravastatin"
+;[1001..1013]:substance:"atorvastatin"
+;[1050..1061]:substance:"clopidogrel"
+;[1073..1085]:substance:"erythromycin"
+;[1089..1103]:substance:"troleandomycin"
+;[1105..1111]:cyp450:"CYP3A4"
+;[1112..1122]:substance:"inhibitors"
+;[1128..1136]:substance:"rifampin"
+;[1140..1146]:cyp450:"CYP3A4"
+;[1147..1154]:substance:"inducer"
+(SENT
+  (NP (NNS:[823..830] METHODS) (CC:[831..834] AND) (NNS:[835..842] RESULTS)
+      (::[842..843] :))
+  (S
+    (NP-SBJ-1 (NN:[844..852] Platelet) (NN:[853..864] aggregation))
+    (VP (VBD:[865..868] was)
+      (VP (VBN:[869..877] measured)
+        (NP-1 (-NONE-:[877..877] *))
+        (PP-LOC
+          (PP (IN:[878..880] in)
+            (NP
+              (NP
+                (NP (CD:[881..883] 44) (NNS:[884..892] patients))
+                (VP (VBG:[894..904] undergoing)
+                  (NP
+                    (NML (JJ:[905..913] coronary) (NN:[914..920] artery))
+                    (NN:[921..926] stent) (NN:[927..939] implantation))))
+              (VP (VBN:[940..947] treated)
+                (NP (-NONE-:[947..947] *))
+                (PP-CLR (IN:[948..952] with)
+                  (NP
+                    (NP (NN:[953..964] clopidogrel))
+                    (CC:[965..967] or)
+                    (NP
+                      (NP (NN:[969..980] clopidogrel))
+                      (CC:[981..985] plus)
+                      (NP (NN:[986..997] pravastatin) (CC:[998..1000] or)
+                          (NN:[1001..1013] atorvastatin))))))))
+          (,:[1013..1014] ,) (CC:[1015..1018] and)
+          (PP-LOC (IN:[1019..1021] in)
+            (NP
+              (NP (CD:[1022..1024] 27) (NNS:[1025..1035] volunteers))
+              (VP (VBN:[1036..1043] treated)
+                (NP (-NONE-:[1043..1043] *))
+                (PP-CLR (IN:[1044..1048] with)
+                  (NP
+                    (NP (NN:[1050..1061] clopidogrel))
+                    (CC:[1062..1065] and)
+                    (NP (CC:[1066..1072] either)
+                      (NP
+                        (NP (NN:[1073..1085] erythromycin) (CC:[1086..1088] or)
+                            (NN:[1089..1103] troleandomycin))
+                        (,:[1103..1104] ,)
+                        (NP (NN:[1105..1111] CYP3A4)
+                            (NNS:[1112..1122] inhibitors)))
+                      (,:[1122..1123] ,) (CC:[1124..1126] or)
+                      (NP
+                        (NP (NN:[1128..1136] rifampin))
+                        (,:[1136..1137] ,)
+                        (NP (DT:[1138..1139] a) (NN:[1140..1146] CYP3A4)
+                            (NN:[1147..1154] inducer))))))))))))
+    (.:[1154..1155] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[823..1155]::NP:S:
+
+;sentence 8 Span:1156..1271
+;Atorvastatin, but not pravastatin, attenuated the  antiplatelet activity of
+;clopidogrel in a dose-dependent manner.
+;[1156..1168]:substance:"Atorvastatin"
+;[1178..1189]:substance:"pravastatin"
+;[1232..1243]:substance:"clopidogrel"
+(SENT
+  (S
+    (NP-SBJ (NN:[1156..1168] Atorvastatin) (,:[1168..1169] ,)
+      (CONJP (CC:[1170..1173] but) (RB:[1174..1177] not))
+      (NN:[1178..1189] pravastatin))
+    (,:[1189..1190] ,)
+    (VP (VBD:[1191..1201] attenuated)
+      (NP
+        (NP (DT:[1202..1205] the) (NN:[1207..1219] antiplatelet)
+            (NN:[1220..1228] activity))
+        (PP (IN:[1229..1231] of)
+          (NP (NN:[1232..1243] clopidogrel))))
+      (PP (IN:[1244..1246] in)
+        (NP (DT:[1247..1248] a)
+          (ADJP (NN:[1249..1253] dose) (HYPH:[1253..1254] -)
+                (JJ:[1254..1263] dependent))
+          (NN:[1264..1270] manner))))
+    (.:[1270..1271] .)))
+
+;sentence 9 Span:1272..1462
+;Percent  platelet aggregation was 34+/-23, 58+/-15 (P=0.027), 74+/-10
+;(P=0.002), and  89+/-7 (P=0.001) in the presence of clopidogrel and 0, 10,
+;20, and 40 mg of  atorvastatin, respectively.
+;[1306..1313]:quantitative-value:"34+/-23"
+;[1315..1322]:quantitative-value:"58+/-15"
+;[1334..1341]:quantitative-value:"74+/-10"
+;[1358..1364]:quantitative-value:"89+/-7"
+;[1394..1405]:substance:"clopidogrel"
+;[1410..1411]:quantitative-value:"0"
+;[1413..1415]:quantitative-value:"10"
+;[1417..1419]:quantitative-value:"20"
+;[1425..1427]:quantitative-value:"40"
+;[1428..1430]:quantitative-units:"mg"
+;[1435..1447]:substance:"atorvastatin"
+(SENT
+  (S
+    (NP-SBJ (NN:[1272..1279] Percent) (NN:[1281..1289] platelet)
+            (NN:[1290..1301] aggregation))
+    (VP (VBD:[1302..1305] was)
+      (NP-PRD
+        (NP
+          (QP (CD:[1306..1308] 34) (SYM:[1308..1311] +/-) (CD:[1311..1313] 23)))
+        (,:[1313..1314] ,)
+        (NP
+          (QP (CD:[1315..1317] 58) (SYM:[1317..1320] +/-) (CD:[1320..1322] 15))
+          (PRN (-LRB-:[1323..1324] -LRB-)
+            (S
+              (NP-SBJ (NN:[1324..1325] P))
+              (VP (SYM:[1325..1326] =)
+                (NP (CD:[1326..1331] 0.027))))
+            (-RRB-:[1331..1332] -RRB-)))
+        (,:[1332..1333] ,)
+        (NP
+          (QP (CD:[1334..1336] 74) (SYM:[1336..1339] +/-) (CD:[1339..1341] 10))
+          (PRN (-LRB-:[1342..1343] -LRB-)
+            (S
+              (NP-SBJ (NN:[1343..1344] P))
+              (VP (SYM:[1344..1345] =)
+                (NP (CD:[1345..1350] 0.002))))
+            (-RRB-:[1350..1351] -RRB-)))
+        (,:[1351..1352] ,) (CC:[1353..1356] and)
+        (NP
+          (NP
+            (QP (CD:[1358..1360] 89) (SYM:[1360..1363] +/-) (CD:[1363..1364] 7)))
+          (PRN (-LRB-:[1365..1366] -LRB-)
+            (S
+              (NP-SBJ (NN:[1366..1367] P))
+              (VP (SYM:[1367..1368] =)
+                (NP (CD:[1368..1373] 0.001))))
+            (-RRB-:[1373..1374] -RRB-))))
+      (PP (IN:[1375..1377] in)
+        (NP
+          (NP (DT:[1378..1381] the) (NN:[1382..1390] presence))
+          (PP (IN:[1391..1393] of)
+            (NP
+              (NP (NN:[1394..1405] clopidogrel))
+              (CC:[1406..1409] and)
+              (NP
+                (NP
+                  (NP (CD:[1410..1411] 0)
+                    (NML-1 (-NONE-:[1411..1411] *P*)))
+                  (,:[1411..1412] ,)
+                  (NP (CD:[1413..1415] 10)
+                    (NML-1 (-NONE-:[1415..1415] *P*)))
+                  (,:[1415..1416] ,)
+                  (NP (CD:[1417..1419] 20)
+                    (NML-1 (-NONE-:[1419..1419] *P*)))
+                  (,:[1419..1420] ,) (CC:[1421..1424] and)
+                  (NP (CD:[1425..1427] 40)
+                    (NML-1 (NN:[1428..1430] mg))))
+                (PP (IN:[1431..1433] of)
+                  (NP (NN:[1435..1447] atorvastatin))))
+              (,:[1447..1448] ,)
+              (ADVP (RB:[1449..1461] respectively)))))))
+    (.:[1461..1462] .)))
+
+;sentence 10 Span:1463..1774
+;Erythromycin attenuated platelet aggregation  inhibition (55+/-12 versus
+;42+/-12% platelet aggregation; P=0.002), as did  troleandomycin (78+/-18
+;versus 45+/-18% platelet aggregation; P<0.0003), whereas  rifampin enhanced
+;platelet aggregation inhibition (33+/-18 versus 56+/-20%  platelet
+;aggregation, P=0.001).
+;[1463..1475]:substance:"Erythromycin"
+;[1521..1528]...[1543..1544]:quantitative-value:"55+/-12"..."%"
+;[1536..1544]:quantitative-value:"42+/-12%"
+;[1585..1599]:substance:"troleandomycin"
+;[1601..1608]...[1623..1624]:quantitative-value:"78+/-18"..."%"
+;[1616..1624]:quantitative-value:"45+/-18%"
+;[1667..1675]:substance:"rifampin"
+;[1718..1725]...[1740..1741]:quantitative-value:"33+/-18"..."%"
+;[1733..1741]:quantitative-value:"56+/-20%"
+(SENT
+  (S
+    (NP-SBJ (NN:[1463..1475] Erythromycin))
+    (VP (VBD:[1476..1486] attenuated)
+      (NP (NN:[1487..1495] platelet) (NN:[1496..1507] aggregation)
+          (NN:[1509..1519] inhibition)
+        (PRN (-LRB-:[1520..1521] -LRB-)
+          (FRAG
+            (NP
+              (NP
+                (QP (CD:[1521..1523] 55) (SYM:[1523..1526] +/-)
+                    (CD:[1526..1528] 12)))
+              (PP (IN:[1529..1535] versus)
+                (NP
+                  (NP
+                    (QP (CD:[1536..1538] 42) (SYM:[1538..1541] +/-)
+                        (CD:[1541..1543] 12))
+                    (NN:[1543..1544] %))
+                  (NP (NN:[1545..1553] platelet) (NN:[1554..1565] aggregation)))))
+            (::[1565..1566] ;)
+            (S
+              (NP-SBJ (NN:[1567..1568] P))
+              (VP (SYM:[1568..1569] =)
+                (NP (CD:[1569..1574] 0.002)))))
+          (-RRB-:[1574..1575] -RRB-)))
+      (,:[1575..1576] ,)
+      (PP (IN:[1577..1579] as)
+        (SINV-NOM
+          (VP (VBD:[1580..1583] did))
+          (NP-SBJ (NN:[1585..1599] troleandomycin))
+          (PRN (-LRB-:[1600..1601] -LRB-)
+            (FRAG
+              (NP
+                (NP
+                  (QP (CD:[1601..1603] 78) (SYM:[1603..1606] +/-)
+                      (CD:[1606..1608] 18)))
+                (PP (IN:[1609..1615] versus)
+                  (NP
+                    (NP
+                      (QP (CD:[1616..1618] 45) (SYM:[1618..1621] +/-)
+                          (CD:[1621..1623] 18))
+                      (NN:[1623..1624] %))
+                    (NP (NN:[1625..1633] platelet) (NN:[1634..1645] aggregation)))))
+              (::[1645..1646] ;)
+              (S
+                (NP-SBJ (NN:[1647..1648] P))
+                (VP (SYM:[1648..1649] <)
+                  (NP (CD:[1649..1655] 0.0003)))))
+            (-RRB-:[1655..1656] -RRB-))))
+      (,:[1656..1657] ,)
+      (SBAR-ADV (IN:[1658..1665] whereas)
+        (S
+          (NP-SBJ (NN:[1667..1675] rifampin))
+          (VP (VBD:[1676..1684] enhanced)
+            (NP (NN:[1685..1693] platelet) (NN:[1694..1705] aggregation)
+                (NN:[1706..1716] inhibition))
+            (PRN (-LRB-:[1717..1718] -LRB-)
+              (FRAG
+                (NP
+                  (NP
+                    (QP (CD:[1718..1720] 33) (SYM:[1720..1723] +/-)
+                        (CD:[1723..1725] 18)))
+                  (PP (IN:[1726..1732] versus)
+                    (NP
+                      (NP
+                        (QP (CD:[1733..1735] 56) (SYM:[1735..1738] +/-)
+                            (CD:[1738..1740] 20))
+                        (NN:[1740..1741] %))
+                      (NP (NN:[1743..1751] platelet)
+                          (NN:[1752..1763] aggregation)))))
+                (,:[1763..1764] ,)
+                (S
+                  (NP-SBJ (NN:[1765..1766] P))
+                  (VP (SYM:[1766..1767] =)
+                    (NP (CD:[1767..1772] 0.001)))))
+              (-RRB-:[1772..1773] -RRB-))))))
+    (.:[1773..1774] .)))
+
+;sentence 11 Span:1775..1817
+;CONCLUSIONS: CYP3A4 activates clopidogrel.
+;[1788..1794]:cyp450:"CYP3A4"
+;[1805..1816]:substance:"clopidogrel"
+(SENT
+  (NP (NNS:[1775..1786] CONCLUSIONS) (::[1786..1787] :))
+  (S
+    (NP-SBJ (NN:[1788..1794] CYP3A4))
+    (VP (VBZ:[1795..1804] activates)
+      (NP (NN:[1805..1816] clopidogrel)))
+    (.:[1816..1817] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1775..1817]::NP:S:
+
+;sentence 12 Span:1819..1898
+;Atorvastatin, another CYP3A4 substrate, competitively inhibits this
+;activation.
+;[1819..1831]:substance:"Atorvastatin"
+;[1841..1847]:cyp450:"CYP3A4"
+;[1848..1857]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1819..1831] Atorvastatin))
+      (,:[1831..1832] ,)
+      (NP (DT:[1833..1840] another) (NN:[1841..1847] CYP3A4)
+          (NN:[1848..1857] substrate)))
+    (,:[1857..1858] ,)
+    (ADVP (RB:[1859..1872] competitively))
+    (VP (VBZ:[1873..1881] inhibits)
+      (NP (DT:[1882..1886] this) (NN:[1887..1897] activation)))
+    (.:[1897..1898] .)))
+
+;sentence 13 Span:1900..2041
+;Use of a statin not metabolized by CYP3A4 and point-of-care platelet function
+; testing may be warranted in patients treated with clopidogrel.
+;[1909..1915]:substance:"statin"
+;[1935..1941]:cyp450:"CYP3A4"
+;[2029..2040]:substance:"clopidogrel"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1900..1903] Use))
+        (PP (IN:[1904..1906] of)
+          (NP
+            (NP (DT:[1907..1908] a) (NN:[1909..1915] statin))
+            (VP (RB:[1916..1919] not) (VBN:[1920..1931] metabolized)
+              (NP (-NONE-:[1931..1931] *))
+              (PP (IN:[1932..1934] by)
+                (NP-LGS (NN:[1935..1941] CYP3A4)))))))
+      (CC:[1942..1945] and)
+      (NP
+        (NML
+          (NML (NN:[1946..1951] point))
+          (HYPH:[1951..1952] -)
+          (PP (IN:[1952..1954] of) (HYPH:[1954..1955] -)
+            (NP (NN:[1955..1959] care))))
+        (NN:[1960..1968] platelet) (NN:[1969..1977] function)
+         (NN:[1979..1986] testing)))
+    (VP (MD:[1987..1990] may)
+      (VP (VB:[1991..1993] be)
+        (ADJP-PRD (VBN:[1994..2003] warranted))
+        (PP-LOC (IN:[2004..2006] in)
+          (NP
+            (NP (NNS:[2007..2015] patients))
+            (VP (VBN:[2016..2023] treated)
+              (NP (-NONE-:[2023..2023] *))
+              (PP-CLR (IN:[2024..2028] with)
+                (NP (NN:[2029..2040] clopidogrel))))))))
+    (.:[2040..2041] .)))
+
+;section 14 Span:2045..2116
+;Publication Types:      Clinical Trial      Randomized Controlled Trial
+(SEC
+  (FRAG (NNP:[2045..2056] Publication) (NNP:[2057..2062] Types)
+        (::[2062..2063] :) (NNP:[2069..2077] Clinical) (NNP:[2078..2083] Trial)
+        (NNP:[2089..2099] Randomized) (NNP:[2100..2110] Controlled)
+        (NNP:[2111..2116] Trial)))
+
+;section 15 Span:2120..2165
+;PMID: 12515739 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2120..2124] PMID) (::[2124..2125] :) (CD:[2126..2134] 12515739)
+        (NN:[2135..2136] -LSB-) (NNP:[2136..2142] PubMed) (::[2143..2144] -)
+        (NN:[2145..2152] indexed) (IN:[2153..2156] for)
+        (NNP:[2157..2165] MEDLINE-RSB-)))

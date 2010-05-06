@@ -1,0 +1,289 @@
+;PMID: 2684256
+;source_file_1416.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..136] = [t:40..136]
+;2)section:[e:140..171] = [t:140..171]
+;3)section:[e:175..273] = [t:175..273]
+;4)sentence:[e:277..429] = [t:277..429]
+;5)sentence:[e:431..568] = [t:431..568]
+;6)sentence:[e:569..780] = [t:569..780]
+;7)sentence:[e:781..909] = [t:781..909]
+;8)sentence:[e:910..1144] = [t:910..1144]
+;9)section:[e:1148..1192] = [t:1148..1192]
+
+;section 0 Span:0..35
+;Br J Haematol  1989 Oct;73(2):165-7
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..13] Haematol) (CD:[15..19] 1989)
+        (-LRB-:[20..27] Oct;73-LRB-) (CD:[27..28] 2) (-RRB-:[28..29] -RRB-)
+        (CD:[29..33] :165) (HYPH:[33..34] -) (CD:[34..35] 7)))
+
+;sentence 1 Span:40..136
+;Co-incident N and K ras gene mutations in a case of AML, restricted to
+;differing  cell lineages.
+;[52..53]...[60..63]:gene-rna:"N"..."ras"
+;[58..63]:gene-rna:"K ras"
+;[92..95]:malignancy:"AML"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (ADJP (AFX:[40..42] Co) (HYPH:[42..43] -) (JJ:[43..51] incident))
+        (NML
+          (NML
+            (NML (NN:[52..53] N)
+              (NML-2 (-NONE-:[53..53] *P*)))
+            (NML-1 (-NONE-:[53..53] *P*)))
+          (CC:[54..57] and)
+          (NML
+            (NML (NN:[58..59] K)
+              (NML-2 (NN:[60..63] ras)))
+            (NML-1 (NN:[64..68] gene) (NNS:[69..78] mutations)))))
+      (PP (IN:[79..81] in)
+        (NP
+          (NP (DT:[82..83] a) (NN:[84..88] case))
+          (PP (IN:[89..91] of)
+            (NP (NN:[92..95] AML))))))
+    (,:[95..96] ,)
+    (VP (VBN:[97..107] restricted)
+      (NP (-NONE-:[107..107] *))
+      (PP (TO:[108..110] to)
+        (NP (VBG:[111..120] differing) (NN:[122..126] cell)
+            (NNS:[127..135] lineages))))
+    (.:[135..136] .)))
+
+;section 2 Span:140..171
+;Hiorns LR, Cotter FE, Young BD.
+(SEC
+  (FRAG (NNP:[140..146] Hiorns) (NNP:[147..149] LR) (,:[149..150] ,)
+        (NNP:[151..157] Cotter) (NNP:[158..160] FE) (,:[160..161] ,)
+        (NNP:[162..167] Young) (NNP:[168..171] BD.)))
+
+;section 3 Span:175..273
+;Imperial Cancer Research Fund, Department of Medical Oncology, St
+;Bartholomew's  Hospital, London.
+(SEC
+  (FRAG (NNP:[175..183] Imperial) (NNP:[184..190] Cancer)
+        (NNP:[191..199] Research) (NNP:[200..204] Fund) (,:[204..205] ,)
+        (NNP:[206..216] Department) (IN:[217..219] of) (NNP:[220..227] Medical)
+        (NNP:[228..236] Oncology) (,:[236..237] ,) (NNP:[238..240] St)
+        (NNP:[241..252] Bartholomew) (POS:[252..254] 's)
+        (NN:[256..264] Hospital) (,:[264..265] ,) (NNP:[266..272] London)
+        (.:[272..273] .)))
+
+;sentence 4 Span:277..429
+;Peripheral blood from a patient with acute myeloid leukaemia (AML) of M5 FAB 
+;classification, was shown to have mutations to both the N and K ras genes.
+;[314..369]:malignancy:"acute myeloid leukaemia (AML) of M5 FAB 
+;classification"
+;[339..342]:malignancy:"AML"
+;[411..412]...[419..422]:gene-rna:"N"..."ras"
+;[417..422]:gene-rna:"K ras"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (JJ:[277..287] Peripheral) (NN:[288..293] blood))
+      (PP (IN:[294..298] from)
+        (NP
+          (NP (DT:[299..300] a) (NN:[301..308] patient))
+          (PP (IN:[309..313] with)
+            (NP
+              (NP
+                (NP (JJ:[314..319] acute) (JJ:[320..327] myeloid)
+                    (NN:[328..337] leukaemia))
+                (NP (-LRB-:[338..339] -LRB-) (NN:[339..342] AML)
+                    (-RRB-:[342..343] -RRB-)))
+              (PP (IN:[344..346] of)
+                (NP
+                  (NML (NN:[347..349] M5) (NN:[350..353] FAB))
+                  (NN:[355..369] classification))))))))
+    (,:[369..370] ,)
+    (VP (VBD:[371..374] was)
+      (VP (VBN:[375..380] shown)
+        (S
+          (NP-SBJ-3 (-NONE-:[380..380] *))
+          (VP (TO:[381..383] to)
+            (VP (VB:[384..388] have)
+              (NP
+                (NP (NNS:[389..398] mutations))
+                (PP (TO:[399..401] to)
+                  (NP (CC:[402..406] both) (DT:[407..410] the)
+                    (NML
+                      (NML
+                        (NML (NN:[411..412] N)
+                          (NML-1 (-NONE-:[412..412] *P*)))
+                        (NML-2 (-NONE-:[412..412] *P*)))
+                      (CC:[413..416] and)
+                      (NML
+                        (NML (NN:[417..418] K)
+                          (NML-1 (NN:[419..422] ras)))
+                        (NML-2 (NNS:[423..428] genes))))))))))))
+    (.:[428..429] .)))
+
+;sentence 5 Span:431..568
+;Leucophoresed blood was separated on a discontinuous Percoll density gradient
+;to  provide fractions enriched for different cell lineages.
+(SENT
+  (S
+    (NP-SBJ-1 (VBN:[431..444] Leucophoresed) (NN:[445..450] blood))
+    (VP (VBD:[451..454] was)
+      (VP (VBN:[455..464] separated)
+        (NP-1 (-NONE-:[464..464] *))
+        (PP-MNR (IN:[465..467] on)
+          (NP (DT:[468..469] a) (JJ:[470..483] discontinuous)
+              (NNP:[484..491] Percoll) (NN:[492..499] density)
+              (NN:[500..508] gradient)))
+        (S-PRP
+          (NP-SBJ (-NONE-:[508..508] *))
+          (VP (TO:[509..511] to)
+            (VP (VB:[513..520] provide)
+              (NP
+                (NP (NNS:[521..530] fractions))
+                (VP (VBN:[531..539] enriched)
+                  (NP (-NONE-:[539..539] *))
+                  (PP (IN:[540..543] for)
+                    (NP (JJ:[544..553] different) (NN:[554..558] cell)
+                        (NNS:[559..567] lineages))))))))))
+    (.:[567..568] .)))
+
+;sentence 6 Span:569..780
+;DNA extracted from these  fractions was amplified using the polymerase chain
+;reaction (PCR) technique, and  hybridized with oligonucleotide probes
+;specific for the single base mutations  previously demonstrated.
+;[629..639]:gene-protein:"polymerase"
+;[733..754]:variation-type:"single base mutations"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[569..572] DNA))
+      (VP (VBN:[573..582] extracted)
+        (NP (-NONE-:[582..582] *))
+        (PP (IN:[583..587] from)
+          (NP (DT:[588..593] these) (NNS:[595..604] fractions)))))
+    (VP (VBD:[605..608] was)
+      (VP
+        (VP (VBN:[609..618] amplified)
+          (NP-1 (-NONE-:[618..618] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[618..618] *))
+            (VP (VBG:[619..624] using)
+              (NP (DT:[625..628] the)
+                (NML
+                  (NML (NN:[629..639] polymerase) (NN:[640..645] chain)
+                       (NN:[646..654] reaction))
+                  (NML (-LRB-:[655..656] -LRB-) (NN:[656..659] PCR)
+                       (-RRB-:[659..660] -RRB-)))
+                (NN:[661..670] technique)))))
+        (,:[670..671] ,) (CC:[672..675] and)
+        (VP (VBN:[677..687] hybridized)
+          (NP-1 (-NONE-:[687..687] *))
+          (PP (IN:[688..692] with)
+            (NP
+              (NP (NN:[693..708] oligonucleotide) (NNS:[709..715] probes))
+              (ADJP (JJ:[716..724] specific)
+                (PP (IN:[725..728] for)
+                  (NP
+                    (NP (DT:[729..732] the)
+                      
+                      (NML (JJ:[733..739] single) (NN:[740..744] base))
+                      (NNS:[745..754] mutations))
+                    (VP (RB:[756..766] previously) (VBN:[767..779] demonstrated)
+                      (NP (-NONE-:[779..779] *)))))))))))
+    (.:[779..780] .)))
+
+;sentence 7 Span:781..909
+;The N-ras mutation was shown to be restricted to the  blast and monocytic
+;cell fractions, concordant with the FAB subtype of M5.
+;[785..790]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[781..784] The) (NN:[785..790] N-ras) (NN:[791..799] mutation))
+    (VP (VBD:[800..803] was)
+      (VP (VBN:[804..809] shown)
+        (S
+          (NP-SBJ-2 (-NONE-:[809..809] *))
+          (VP (TO:[810..812] to)
+            (VP (VB:[813..815] be)
+              (ADJP-PRD (JJ:[816..826] restricted)
+                (PP (TO:[827..829] to)
+                  (NP (DT:[830..833] the)
+                    (NML
+                      (NML (NN:[835..840] blast)
+                        (NML-1 (-NONE-:[840..840] *P*)))
+                      (CC:[841..844] and)
+                      (NML (JJ:[845..854] monocytic)
+                        (NML-1 (NN:[855..859] cell) (NNS:[860..869] fractions))))))))))
+        (,:[869..870] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[870..870] *))
+          (ADJP-PRD (JJ:[871..881] concordant)
+            (PP (IN:[882..886] with)
+              (NP
+                (NP (DT:[887..890] the) (NN:[891..894] FAB)
+                    (NN:[895..902] subtype))
+                (PP (IN:[903..905] of)
+                  (NP (NN:[906..908] M5)))))))))
+    (.:[908..909] .)))
+
+;sentence 8 Span:910..1144
+;The  K-ras mutation, however, was present in all fractions, suggesting it had
+; occurred in a multi-potential stem cell representing an earlier stage in the
+; generation of the leukaemia, or possibly an incidental background
+;phenomenon.
+;[915..920]:gene-rna:"K-ras"
+;[1085..1094]:malignancy:"leukaemia"
+(SENT
+  (S
+    (NP-SBJ (DT:[910..913] The) (NN:[915..920] K-ras) (NN:[921..929] mutation))
+    (,:[929..930] ,)
+    (ADVP (RB:[931..938] however))
+    (,:[938..939] ,)
+    (VP (VBD:[940..943] was)
+      (ADJP-PRD (JJ:[944..951] present))
+      (PP-LOC (IN:[952..954] in)
+        (NP (DT:[955..958] all) (NNS:[959..968] fractions)))
+      (,:[968..969] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[969..969] *))
+        (VP (VBG:[970..980] suggesting)
+          (SBAR (-NONE-:[980..980] 0)
+            (S
+              (NP-SBJ (PRP:[981..983] it))
+              (VP (VBD:[984..987] had)
+                (VP (VBN:[989..997] occurred)
+                  (PP (IN:[998..1000] in)
+                    (NP
+                      (NP (DT:[1001..1002] a)
+                        (ADJP (AFX:[1003..1008] multi) (HYPH:[1008..1009] -)
+                              (NN:[1009..1018] potential))
+                        (NN:[1019..1023] stem) (NN:[1024..1028] cell))
+                      (VP (VBG:[1029..1041] representing)
+                        (NP
+                          (NP
+                            (NP (DT:[1042..1044] an) (JJR:[1045..1052] earlier)
+                                (NN:[1053..1058] stage))
+                            (PP (IN:[1059..1061] in)
+                              (NP
+                                (NP (DT:[1062..1065] the)
+                                    (NN:[1067..1077] generation))
+                                (PP (IN:[1078..1080] of)
+                                  (NP (DT:[1081..1084] the)
+                                      (NN:[1085..1094] leukaemia))))))
+                          (,:[1094..1095] ,) (CC:[1096..1098] or)
+                          (NP
+                            (ADVP (RB:[1099..1107] possibly))
+                            (DT:[1108..1110] an) (JJ:[1111..1121] incidental)
+                             (NN:[1122..1132] background)
+                             (NN:[1133..1143] phenomenon)))))))))))))
+    (.:[1143..1144] .)))
+
+;section 9 Span:1148..1192
+;PMID: 2684256 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1148..1152] PMID) (::[1152..1153] :) (CD:[1154..1161] 2684256)
+        (IN:[1162..1163] -LSB-) (NNP:[1163..1169] PubMed) (HYPH:[1170..1171] -)
+        (JJ:[1172..1179] indexed) (IN:[1180..1183] for)
+        (NNP:[1184..1192] MEDLINE-RSB-)))

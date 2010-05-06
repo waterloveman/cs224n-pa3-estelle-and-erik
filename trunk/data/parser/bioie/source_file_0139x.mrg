@@ -1,0 +1,329 @@
+;PMID: 9713462
+;source_file_758.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:48..178] = [t:48..178]
+;2)section:[e:182..257] = [t:182..257]
+;3)section:[e:261..334] = [t:261..334]
+;4)sentence:[e:338..453] = [t:338..453]
+;5)sentence:[e:454..553] = [t:454..553]
+;6)sentence:[e:554..734] = [t:554..734]
+;7)sentence:[e:735..887] = [t:735..887]
+;8)sentence:[e:889..999] = [t:889..999]
+;9)sentence:[e:1000..1205] = [t:1000..1205]
+;10)section:[e:1209..1253] = [t:1209..1253]
+
+;section 0 Span:0..43
+;Anticancer Res  1998 Jul-Aug;18(4B):2789-92
+(SEC
+  (FRAG (DT:[0..10] Anticancer) (NNP:[11..14] Res) (CD:[16..20] 1998)
+        (.:[21..24] Jul) (JJ:[24..25] -) (SYM:[25..32] Aug;18-LRB-)
+        (::[32..35] 4B-RRB-) (CD:[35..40] :2789) (::[40..41] -) (CD:[41..43] 92)))
+
+;sentence 1 Span:48..178
+;Mutations of ras genes are relatively frequent in Japanese prostate cancers: 
+;pointing to genetic differences between populations.
+;[61..64]:gene-rna:"ras"
+;[107..123]:malignancy:"prostate cancers"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NNS:[48..57] Mutations))
+      (PP (IN:[58..60] of)
+        (NP (NN:[61..64] ras) (NNS:[65..70] genes))))
+    (VP (VBP:[71..74] are)
+      (ADJP-PRD (RB:[75..85] relatively) (JJ:[86..94] frequent))
+      (PP-LOC (IN:[95..97] in)
+        (NP (JJ:[98..106] Japanese)
+           (NN:[107..115] prostate) (NNS:[116..123] cancers)))
+      (::[123..124] :)
+      (S-ADV
+        (NP-SBJ (-NONE-:[124..124] *))
+        (VP (VBG:[126..134] pointing)
+          (PP-CLR (TO:[135..137] to)
+            (NP
+              (NP (JJ:[138..145] genetic) (NNS:[146..157] differences))
+              (PP (IN:[158..165] between)
+                (NP (NNS:[166..177] populations))))))))
+    (.:[177..178] .)))
+
+;section 2 Span:182..257
+;Shiraishi T, Muneyuki T, Fukutome K, Ito H, Kotake T, Watanabe M, Yatani R.
+(SEC
+  (FRAG (NNP:[182..191] Shiraishi) (NNP:[192..193] T) (,:[193..194] ,)
+        (NNP:[195..203] Muneyuki) (NNP:[204..205] T) (,:[205..206] ,)
+        (NNP:[207..215] Fukutome) (NNP:[216..217] K) (,:[217..218] ,)
+        (NNP:[219..222] Ito) (NNP:[223..224] H) (,:[224..225] ,)
+        (NNP:[226..232] Kotake) (NNP:[233..234] T) (,:[234..235] ,)
+        (NNP:[236..244] Watanabe) (NNP:[245..247] M,) (NNP:[248..254] Yatani)
+        (NNP:[255..257] R.)))
+
+;section 3 Span:261..334
+;Second Department of Pathology, Mie University School of Medicine, Japan.
+(SEC
+  (FRAG (NNP:[261..267] Second) (NNP:[268..278] Department) (IN:[279..281] of)
+        (NNP:[282..291] Pathology) (,:[291..292] ,) (NNP:[293..296] Mie)
+        (NNP:[297..307] University) (NNP:[308..314] School) (IN:[315..317] of)
+        (NNP:[318..326] Medicine) (,:[326..327] ,) (NNP:[328..333] Japan)
+        (.:[333..334] .)))
+
+;sentence 4 Span:338..453
+;Point mutations of the ras gene family are thought to be involved in the 
+;development of a variety of human tumors.
+;[338..353]:variation-type:"Point mutations"
+;[361..364]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[338..343] Point) (NNS:[344..353] mutations))
+      (PP (IN:[354..356] of)
+        (NP (DT:[357..360] the)
+          (NML (NN:[361..364] ras) (NN:[365..369] gene))
+          (NN:[370..376] family))))
+    (VP (VBP:[377..380] are)
+      (VP (VBN:[381..388] thought)
+        (S
+          (NP-SBJ-1 (-NONE-:[388..388] *))
+          (VP (TO:[389..391] to)
+            (VP (VB:[392..394] be)
+              (VP (VBN:[395..403] involved)
+                (NP-1 (-NONE-:[403..403] *))
+                (PP-CLR (IN:[404..406] in)
+                  (NP
+                    (NP (DT:[407..410] the) (NN:[412..423] development))
+                    (PP (IN:[424..426] of)
+                      (NP
+                        (NP (DT:[427..428] a) (NN:[429..436] variety))
+                        (PP (IN:[437..439] of)
+                          (NP (JJ:[440..445] human) (NNS:[446..452] tumors)))))))))))))
+    (.:[452..453] .)))
+
+;sentence 5 Span:454..553
+;However, it remains unknown whether  the ras gene might play a key role in
+;prostate carcinogenesis.
+;[495..498]:gene-rna:"ras"
+(SENT
+  (S
+    (ADVP (RB:[454..461] However))
+    (,:[461..462] ,)
+    (NP-SBJ (PRP:[463..465] it))
+    (VP (VBZ:[466..473] remains)
+      (ADJP-PRD (JJ:[474..481] unknown)
+        (SBAR (IN:[482..489] whether)
+          (S
+            (NP-SBJ (DT:[491..494] the) (NN:[495..498] ras) (NN:[499..503] gene))
+            (VP (MD:[504..509] might)
+              (VP (VB:[510..514] play)
+                (NP (DT:[515..516] a) (JJ:[517..520] key) (NN:[521..525] role))
+                (PP (IN:[526..528] in)
+                  (NP (NN:[529..537] prostate) (NN:[538..552] carcinogenesis)))))))))
+    (.:[552..553] .)))
+
+;sentence 6 Span:554..734
+;We therefore  analysed Ki-,N- and H-ras gene mutations in a series of 81
+;Japanese prostate  cancers using PCR-SSCP analysis and Mutant-Allele-Specific
+;Amplification (MASA)  method.
+;[577..580]...[590..593]:gene-rna:"Ki-"..."ras"
+;[581..583]...[590..593]:gene-rna:"N-"..."ras"
+;[588..593]:gene-rna:"H-ras"
+;[636..653]:malignancy:"prostate  cancers"
+(SENT
+  (S
+    (NP-SBJ (PRP:[554..556] We))
+    (ADVP (RB:[557..566] therefore))
+    (VP (VBD:[568..576] analysed)
+      (NP
+        (NP
+          (NP
+            (NML (NN:[577..579] Ki) (HYPH:[579..580] -)
+              (NML-2 (-NONE-:[580..580] *P*)))
+            (NML-1 (-NONE-:[580..580] *P*)))
+          (,:[580..581] ,)
+          (NP
+            (NML (NN:[581..582] N) (HYPH:[582..583] -)
+              (NML-2 (-NONE-:[583..583] *P*)))
+            (NML-1 (-NONE-:[583..583] *P*)))
+          (CC:[584..587] and)
+          (NP
+            (NML (NN:[588..589] H) (HYPH:[589..590] -)
+              (NML-2 (NN:[590..593] ras)))
+            (NML-1 (NN:[594..598] gene) (NNS:[599..608] mutations))))
+        (PP-LOC (IN:[609..611] in)
+          (NP
+            (NP (DT:[612..613] a) (NN:[614..620] series))
+            (PP (IN:[621..623] of)
+              (NP (CD:[624..626] 81) (JJ:[627..635] Japanese)
+                 (NN:[636..644] prostate) (NNS:[646..653] cancers))))))
+      (S-MNR
+        (NP-SBJ (-NONE-:[653..653] *))
+        (VP (VBG:[654..659] using)
+          (NP
+            (NP
+              (NML (NN:[660..663] PCR) (HYPH:[663..664] -) (NN:[664..668] SSCP))
+              (NN:[669..677] analysis))
+            (CC:[678..681] and)
+            (NP
+              (NML
+                (NML
+                  (ADJP (JJ:[682..688] Mutant) (HYPH:[688..689] -)
+                        (NN:[689..695] Allele) (HYPH:[695..696] -)
+                        (JJ:[696..704] Specific))
+                  (NN:[705..718] Amplification))
+                (NML (-LRB-:[719..720] -LRB-) (NN:[720..724] MASA)
+                     (-RRB-:[724..725] -RRB-)))
+              (NN:[727..733] method))))))
+    (.:[733..734] .)))
+
+;sentence 7 Span:735..887
+;Mutated as genes were detected in 20 of the 81 samples (24%); three of  22
+;latent, one of five stage B, four of 14 stage C and 12 of 40 stage D
+;cancers.
+;[743..745]:gene-rna:"as"
+;[810..816]:malignancy:"latent"
+;[830..837]:malignancy:"stage B"
+;[850..857]:malignancy:"stage C"
+;[871..886]:malignancy:"stage D cancers"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[735..742] Mutated))
+      (PP (IN:[743..745] as)
+        (NP (NNS:[746..751] genes))))
+    (VP (VBD:[752..756] were)
+      (VP (VBN:[757..765] detected)
+        (NP-1 (-NONE-:[765..765] *))
+        (PP-LOC (IN:[766..768] in)
+          (NP
+            (NP
+              (NP (CD:[769..771] 20))
+              (PP (IN:[772..774] of)
+                (NP (DT:[775..778] the) (CD:[779..781] 81)
+                    (NNS:[782..789] samples)))
+              (PRN (-LRB-:[790..791] -LRB-)
+                (NP (CD:[791..793] 24) (NN:[793..794] %))
+                (-RRB-:[794..795] -RRB-)))
+            (::[795..796] ;)
+            (NP
+              (NP
+                (NP (CD:[797..802] three))
+                (PP (IN:[803..805] of)
+                  (NP (CD:[807..809] 22) (JJ:[810..816] latent)
+                    (NML-2 (-NONE-:[816..816] *RNR*)))))
+              (,:[816..817] ,)
+              (NP
+                (NP (CD:[818..821] one))
+                (PP (IN:[822..824] of)
+                  (NP (CD:[825..829] five)
+                    (NML (NN:[830..835] stage) (NN:[836..837] B))
+                    (NML-2 (-NONE-:[837..837] *RNR*)))))
+              (,:[837..838] ,)
+              (NP
+                (NP (CD:[839..843] four))
+                (PP (IN:[844..846] of)
+                  (NP
+                    (NP (CD:[847..849] 14)
+                      (NML (NN:[850..855] stage) (NN:[856..857] C))
+                      (NML-2 (-NONE-:[857..857] *RNR*)))
+                    (CC:[858..861] and)
+                    (NP
+                      (NP (CD:[862..864] 12))
+                      (PP (IN:[865..867] of)
+                        (NP (CD:[868..870] 40)
+                          (NML (NN:[871..876] stage) (NN:[877..878] D))
+                          (NML-2 (-NONE-:[878..878] *RNR*))))))))
+              (NML-2 (NNS:[879..886] cancers)))))))
+    (.:[886..887] .)))
+
+;sentence 8 Span:889..999
+;Of the twenty as gene mutations, 13 were in Ki-ras (codon 12), five in H-ras 
+;codon 61 and two H-ras codon 13.
+;[911..920]:variation-event:"mutations"
+;[933..939]:gene-rna:"Ki-ras"
+;[941..949]:variation-location:"codon 12"
+;[960..965]:gene-rna:"H-ras"
+;[967..975]:variation-location:"codon 61"
+;[984..989]:gene-rna:"H-ras"
+;[990..998]:variation-location:"codon 13"
+(SENT
+  (S
+    (S
+      (PP-TPC-1 (IN:[889..891] Of)
+        (NP
+          (NP (DT:[892..895] the) (CD:[896..902] twenty))
+          (PP (IN:[903..905] as)
+            (NP (NN:[906..910] gene) (NNS:[911..920] mutations)))))
+      (,:[920..921] ,)
+      (NP-SBJ=2
+        (NP (CD:[922..924] 13))
+        (PP-1 (-NONE-:[924..924] *T*)))
+      (VP (VBD:[925..929] were)
+        (PP-PRD=3 (IN:[930..932] in)
+          (NP (NN:[933..939] Ki-ras)
+            (PRN (-LRB-:[940..941] -LRB-)
+              (NP (NN:[941..946] codon) (CD:[947..949] 12))
+              (-RRB-:[949..950] -RRB-))))))
+    (,:[950..951] ,)
+    (S
+      (NP-SBJ=2 (CD:[952..956] five))
+      (PP-PRD=3 (IN:[957..959] in)
+        (NP=4 (NN:[960..965] H-ras)
+           (NN:[967..972] codon) (CD:[973..975] 61))))
+    (CC:[976..979] and)
+    (S
+      (NP-SBJ=2 (CD:[980..983] two))
+      (NP=4 (NN:[984..989] H-ras)
+         (NN:[990..995] codon) (CD:[996..998] 13)))
+    (.:[998..999] .)))
+
+;sentence 9 Span:1000..1205
+;The observed frequency of ras gene mutations  was higher than that reported
+;in the literature for some non-Japanese prostate  cancers, suggesting the
+;possibility of genetic differences between populations.
+;[1026..1029]:gene-rna:"ras"
+;[1116..1133]:malignancy:"prostate  cancers"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1000..1003] The) (VBN:[1004..1012] observed)
+          (NN:[1013..1022] frequency))
+      (PP (IN:[1023..1025] of)
+        (NP (NN:[1026..1029] ras) (NN:[1030..1034] gene)
+            (NNS:[1035..1044] mutations))))
+    (VP (VBD:[1046..1049] was)
+      (ADJP-PRD
+        (ADJP (JJR:[1050..1056] higher))
+        (PP (IN:[1057..1061] than)
+          (NP
+            (NP (DT:[1062..1066] that))
+            (VP (VBN:[1067..1075] reported)
+              (NP (-NONE-:[1075..1075] *))
+              (PP (IN:[1076..1078] in)
+                (NP
+                  (NP (DT:[1079..1082] the) (NN:[1083..1093] literature))
+                  (PP (IN:[1094..1097] for)
+                    (NP (DT:[1098..1102] some)
+                      (ADJP (AFX:[1103..1106] non) (HYPH:[1106..1107] -)
+                            (JJ:[1107..1115] Japanese))
+                       (NN:[1116..1124] prostate) (NNS:[1126..1133] cancers)))))))))
+      (,:[1133..1134] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1134..1134] *))
+        (VP (VBG:[1135..1145] suggesting)
+          (NP
+            (NP (DT:[1146..1149] the) (NN:[1150..1161] possibility))
+            (PP (IN:[1162..1164] of)
+              (NP
+                (NP (JJ:[1165..1172] genetic) (NNS:[1173..1184] differences))
+                (PP (IN:[1185..1192] between)
+                  (NP (NNS:[1193..1204] populations)))))))))
+    (.:[1204..1205] .)))
+
+;section 10 Span:1209..1253
+;PMID: 9713462 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1209..1213] PMID) (::[1213..1214] :) (CD:[1215..1222] 9713462)
+        (NN:[1223..1224] -LSB-) (NNP:[1224..1230] PubMed) (::[1231..1232] -)
+        (NN:[1233..1240] indexed) (IN:[1241..1244] for)
+        (NNP:[1245..1253] MEDLINE-RSB-)))

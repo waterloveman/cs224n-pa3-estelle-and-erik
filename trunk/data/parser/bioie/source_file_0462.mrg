@@ -1,0 +1,510 @@
+;PMID: 2749732
+;source_file_894.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..151] = [t:52..151]
+;2)section:[e:155..183] = [t:155..183]
+;3)section:[e:187..250] = [t:187..250]
+;4)sentence:[e:254..353] = [t:254..353]
+;5)sentence:[e:354..468] = [t:354..468]
+;6)sentence:[e:469..632] = [t:469..632]
+;7)sentence:[e:633..914] = [t:633..914]
+;8)sentence:[e:915..1014] = [t:915..1014]
+;9)sentence:[e:1015..1115] = [t:1015..1115]
+;10)sentence:[e:1116..1222] = [t:1116..1222]
+;11)sentence:[e:1223..1359] = [t:1223..1359]
+;12)sentence:[e:1360..1580] = [t:1360..1580]
+;13)sentence:[e:1582..1685] = [t:1582..1685]
+;14)sentence:[e:1686..2094] = [t:1686..2094]
+;15)sentence:[e:2095..2224] = [t:2095..2224]
+;16)section:[e:2228..2272] = [t:2228..2272]
+
+;section 0 Span:0..46
+;Toxicol Appl Pharmacol. 1989 Jul;99(3):454-65.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..12] Appl) (NNP:[13..22] Pharmacol)
+        (,:[22..23] .) (CD:[24..28] 1989) (CC:[29..36] Jul;99-LRB-)
+        (CD:[36..37] 3) (-RRB-:[37..38] -RRB-) (CD:[38..42] :454) (::[42..43] -)
+        (CD:[43..45] 65) (.:[45..46] .)))
+
+;sentence 1 Span:52..151
+;Effects of trichloroethylene and its metabolites on rodent hepatocyte 
+;intercellular communication.
+;[63..80]:substance:"trichloroethylene"
+;[89..100]:substance:"metabolites"
+(SENT
+  (NP-HLN
+    (NP (NNS:[52..59] Effects))
+    (PP (IN:[60..62] of)
+      (NP
+        (NP (NN:[63..80] trichloroethylene))
+        (CC:[81..84] and)
+        (NP (PRP$:[85..88] its) (NNS:[89..100] metabolites))))
+    (PP (IN:[101..103] on)
+      (NP (NN:[104..110] rodent) (NN:[111..121] hepatocyte)
+          (JJ:[123..136] intercellular) (NN:[137..150] communication)))
+    (.:[150..151] .)))
+
+;section 2 Span:155..183
+;Klaunig JE, Ruch RJ, Lin EL.
+(SEC
+  (FRAG (NNP:[155..162] Klaunig) (NNP:[163..165] JE) (,:[165..166] ,)
+        (NNP:[167..171] Ruch) (NNP:[172..174] RJ) (,:[174..175] ,)
+        (NNP:[176..179] Lin) (NNP:[180..183] EL.)))
+
+;section 3 Span:187..250
+;Department of Pathology, Medical College of Ohio, Toledo 43699.
+(SEC
+  (FRAG (NNP:[187..197] Department) (IN:[198..200] of)
+        (NNP:[201..210] Pathology) (NNP:[210..211] ,) (NNP:[212..219] Medical)
+        (NNP:[220..227] College) (IN:[228..230] of) (NNP:[231..235] Ohio)
+        (,:[235..236] ,) (NNP:[237..243] Toledo) (CD:[244..249] 43699)
+        (.:[249..250] .)))
+
+;sentence 4 Span:254..353
+;Chronic exposure to trichloroethylene (TCE) results in hepatocellular cancer
+;in  mice but not rats.
+;[274..291]:substance:"trichloroethylene"
+;[293..296]:substance:"TCE"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[254..261] Chronic) (NN:[262..270] exposure))
+      (PP (TO:[271..273] to)
+        (NP
+          (NP (NN:[274..291] trichloroethylene))
+          (NP (-LRB-:[292..293] -LRB-) (NN:[293..296] TCE)
+              (-RRB-:[296..297] -RRB-)))))
+    (VP (VBZ:[298..305] results)
+      (PP-CLR (IN:[306..308] in)
+        (NP (JJ:[309..323] hepatocellular) (NN:[324..330] cancer)))
+      (PP-LOC (IN:[331..333] in)
+        (NP (NNS:[335..339] mice)
+          (CONJP (CC:[340..343] but) (RB:[344..347] not))
+          (NNS:[348..352] rats))))
+    (.:[352..353] .)))
+
+;sentence 5 Span:354..468
+;The induction of hepatic tumors by TCE appears to be mediated  through
+;nongenotoxic or tumor promotion mechanisms.
+;[389..392]:substance:"TCE"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[354..357] The) (NN:[358..367] induction))
+      (PP (IN:[368..370] of)
+        (NP (JJ:[371..378] hepatic) (NNS:[379..385] tumors)))
+      (PP (IN:[386..388] by)
+        (NP (NN:[389..392] TCE))))
+    (VP (VBZ:[393..400] appears)
+      (S
+        (NP-SBJ-2 (-NONE-:[400..400] *))
+        (VP (TO:[401..403] to)
+          (VP (VB:[404..406] be)
+            (VP (VBN:[407..415] mediated)
+              (NP-2 (-NONE-:[415..415] *))
+              (PP (IN:[417..424] through)
+                (NP
+                  (NP (JJ:[425..437] nongenotoxic)
+                    (NML-1 (-NONE-:[437..437] *P*)))
+                  (CC:[438..440] or)
+                  (NP
+                    (NML (NN:[441..446] tumor) (NN:[447..456] promotion))
+                    (NML-1 (NNS:[457..467] mechanisms))))))))))
+    (.:[467..468] .)))
+
+;sentence 6 Span:469..632
+;One cellular effect  exhibited by a number of nongenotoxic carcinogens and
+;tumor promoters is the  inhibition of gap junction mediated intercellular
+;communication.
+;[528..539]:substance:"carcinogens"
+;[550..559]:substance:"promoters"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[469..472] One) (JJ:[473..481] cellular) (NN:[482..488] effect))
+      (VP (VBN:[490..499] exhibited)
+        (NP (-NONE-:[499..499] *))
+        (PP (IN:[500..502] by)
+          (NP-LGS
+            (NP (DT:[503..504] a) (NN:[505..511] number))
+            (PP (IN:[512..514] of)
+              (NP
+                (NP (JJ:[515..527] nongenotoxic) (NNS:[528..539] carcinogens))
+                (CC:[540..543] and)
+                (NP (NN:[544..549] tumor) (NNS:[550..559] promoters))))))))
+    (VP (VBZ:[560..562] is)
+      (NP-PRD
+        (NP (DT:[563..566] the) (NN:[568..578] inhibition))
+        (PP (IN:[579..581] of)
+          (NP
+            (ADJP
+              (NML (NN:[582..585] gap) (NN:[586..594] junction))
+              (VBN:[595..603] mediated))
+            (JJ:[604..617] intercellular) (NN:[618..631] communication)))))
+    (.:[631..632] .)))
+
+;sentence 7 Span:633..914
+;In the present  study, the effects of trichloroethylene (TCE) and its
+;metabolites,  trichloracetic acid (TCA), trichloroethanol (TCEth), and
+;chloral hydrate (CH) on  gap junction mediated intercellular communication in
+;cultured B6C3F1 mouse and  F344 rat hepatocytes were assessed.
+;[671..688]:substance:"trichloroethylene"
+;[690..693]:substance:"TCE"
+;[703..714]:substance:"metabolites"
+;[717..736]:substance:"trichloracetic acid"
+;[738..741]:substance:"TCA"
+;[744..760]:substance:"trichloroethanol"
+;[762..767]:substance:"TCEth"
+;[774..789]:substance:"chloral hydrate"
+;[791..793]:substance:"CH"
+(SENT
+  (S
+    (PP-LOC (IN:[633..635] In)
+      (NP (DT:[636..639] the) (JJ:[640..647] present) (NN:[649..654] study)))
+    (,:[654..655] ,)
+    (NP-SBJ-3
+      (NP (DT:[656..659] the) (NNS:[660..667] effects))
+      (PP (IN:[668..670] of)
+        (NP
+          (NP
+            (NP (NN:[671..688] trichloroethylene))
+            (NP (-LRB-:[689..690] -LRB-) (NN:[690..693] TCE)
+                (-RRB-:[693..694] -RRB-)))
+          (CC:[695..698] and)
+          (NP
+            (NP (PRP$:[699..702] its) (NNS:[703..714] metabolites))
+            (,:[714..715] ,)
+            (NP
+              (NP
+                (NP (JJ:[717..731] trichloracetic) (NN:[732..736] acid))
+                (NP (-LRB-:[737..738] -LRB-) (NN:[738..741] TCA)
+                    (-RRB-:[741..742] -RRB-)))
+              (,:[742..743] ,)
+              (NP
+                (NP (NN:[744..760] trichloroethanol))
+                (NP (-LRB-:[761..762] -LRB-) (NN:[762..767] TCEth)
+                    (-RRB-:[767..768] -RRB-)))
+              (,:[768..769] ,) (CC:[770..773] and)
+              (NP
+                (NP (JJ:[774..781] chloral) (NN:[782..789] hydrate))
+                (NP (-LRB-:[790..791] -LRB-) (NN:[791..793] CH)
+                    (-RRB-:[793..794] -RRB-)))))))
+      (PP (IN:[795..797] on)
+        (NP
+          (NP
+            (ADJP
+              (NML (NN:[799..802] gap) (NN:[803..811] junction))
+              (VBN:[812..820] mediated))
+            (JJ:[821..834] intercellular) (NN:[835..848] communication))
+          (PP-LOC (IN:[849..851] in)
+            (NP
+              (NP
+                (ADJP-1 (VBN:[852..860] cultured))
+                (NN:[861..867] B6C3F1) (NN:[868..873] mouse)
+                (NML-2 (-NONE-:[873..873] *P*)))
+              (CC:[874..877] and)
+              (NP
+                (ADJP-1 (-NONE-:[877..877] *P*))
+                (NN:[879..883] F344) (NN:[884..887] rat)
+                (NML-2 (NNS:[888..899] hepatocytes))))))))
+    (VP (VBD:[900..904] were)
+      (VP (VBN:[905..913] assessed)
+        (NP-3 (-NONE-:[913..913] *))))
+    (.:[913..914] .)))
+
+;sentence 8 Span:915..1014
+;TCE and TCA inhibited intercellular  communication in mouse hepatocytes but
+;not in rat hepatocytes.
+;[915..918]:substance:"TCE"
+;[923..926]:substance:"TCA"
+(SENT
+  (S
+    (NP-SBJ (NN:[915..918] TCE) (CC:[919..922] and) (NN:[923..926] TCA))
+    (VP
+      (VP=1 (VBD:[927..936] inhibited)
+        (NP (JJ:[937..950] intercellular) (NN:[952..965] communication))
+        (PP-LOC=3 (IN:[966..968] in)
+          (NP (NN:[969..974] mouse) (NNS:[975..986] hepatocytes))))
+      (CC:[987..990] but)
+      (VP=1 (RB:[991..994] not)
+        (PP-LOC=3 (IN:[995..997] in)
+          (NP (NN:[998..1001] rat) (NNS:[1002..1013] hepatocytes)))))
+    (.:[1013..1014] .)))
+
+;sentence 9 Span:1015..1115
+;TCEth and CH had  no effect on hepatocyte intercellular communication in
+;either rat or mouse  cells.
+;[1015..1020]:substance:"TCEth"
+;[1025..1027]:substance:"CH"
+(SENT
+  (S
+    (NP-SBJ (NN:[1015..1020] TCEth) (CC:[1021..1024] and) (NN:[1025..1027] CH))
+    (VP (VBD:[1028..1031] had)
+      (NP
+        (NP (DT:[1033..1035] no) (NN:[1036..1042] effect))
+        (PP (IN:[1043..1045] on)
+          (NP (NN:[1046..1056] hepatocyte) (JJ:[1057..1070] intercellular)
+              (NN:[1071..1084] communication))))
+      (PP-LOC (IN:[1085..1087] in)
+        (NP (CC:[1088..1094] either)
+          (NP (NN:[1095..1098] rat)
+            (NML-1 (-NONE-:[1098..1098] *P*)))
+          (CC:[1099..1101] or)
+          (NP (NN:[1102..1107] mouse)
+            (NML-1 (NNS:[1109..1114] cells))))))
+    (.:[1114..1115] .)))
+
+;sentence 10 Span:1116..1222
+;TCE and TCA inhibited intercellular communication in both 24-hr-old and 
+;freshly plated mouse hepatocytes.
+;[1116..1119]:substance:"TCE"
+;[1124..1127]:substance:"TCA"
+;[1174..1176]:quantitative-value:"24"
+;[1177..1179]:quantitative-units:"hr"
+(SENT
+  (S
+    (NP-SBJ (NN:[1116..1119] TCE) (CC:[1120..1123] and) (NN:[1124..1127] TCA))
+    (VP (VBD:[1128..1137] inhibited)
+      (NP (JJ:[1138..1151] intercellular) (NN:[1152..1165] communication))
+      (PP-LOC (IN:[1166..1168] in)
+        (NP (CC:[1169..1173] both)
+          (NP
+            (ADJP
+              (NML (CD:[1174..1176] 24) (HYPH:[1176..1177] -)
+                   (NN:[1177..1179] hr))
+              (HYPH:[1179..1180] -) (JJ:[1180..1183] old))
+            (NML-1 (-NONE-:[1183..1183] *P*)))
+          (CC:[1184..1187] and)
+          (NP
+            (ADJP (RB:[1189..1196] freshly) (VBN:[1197..1203] plated))
+            (NML-1 (NN:[1204..1209] mouse) (NNS:[1210..1221] hepatocytes))))))
+    (.:[1221..1222] .)))
+
+;sentence 11 Span:1223..1359
+;Both compounds produced greater inhibition of  intercellular communication in
+;freshly plated cells when compared to 24-hr-old  cultures.
+;[1228..1237]:substance:"compounds"
+;[1339..1341]:quantitative-value:"24"
+;[1342..1344]:quantitative-units:"hr"
+(SENT
+  (S
+    (NP-SBJ (DT:[1223..1227] Both) (NNS:[1228..1237] compounds))
+    (VP (VBD:[1238..1246] produced)
+      (NP
+        (NP (JJR:[1247..1254] greater) (NN:[1255..1265] inhibition))
+        (PP (IN:[1266..1268] of)
+          (NP (JJ:[1270..1283] intercellular) (NN:[1284..1297] communication))))
+      (PP-LOC (IN:[1298..1300] in)
+        (NP
+          (ADJP (RB:[1301..1308] freshly) (VBN:[1309..1315] plated))
+          (NNS:[1316..1321] cells)))
+      (SBAR-TMP
+        (WHADVP-1 (WRB:[1322..1326] when))
+        (S
+          (NP-SBJ-2 (-NONE-:[1326..1326] *))
+          (VP (VBN:[1327..1335] compared)
+            (NP-2 (-NONE-:[1335..1335] *))
+            (PP-CLR (TO:[1336..1338] to)
+              (NP
+                (ADJP
+                  (NML (CD:[1339..1341] 24) (HYPH:[1341..1342] -)
+                       (NN:[1342..1344] hr))
+                  (HYPH:[1344..1345] -) (JJ:[1345..1348] old))
+                (NNS:[1350..1358] cultures)))
+            (ADVP-1 (-NONE-:[1358..1358] *T*))))))
+    (.:[1358..1359] .)))
+
+;sentence 12 Span:1360..1580
+;TCE appeared to require cytochrome P450 metabolism by the mouse  hepatocytes
+;to exhibit its inhibitory effect on dye coupling since treatment  with
+;SKF-525A prevented the inhibition of intercellular communication by TCE.
+;[1360..1363]:substance:"TCE"
+;[1384..1399]:cyp450:"cytochrome P450"
+;[1508..1516]:substance:"SKF-525A"
+;[1576..1579]:substance:"TCE"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1360..1363] TCE))
+    (VP (VBD:[1364..1372] appeared)
+      (S
+        (NP-SBJ-1 (-NONE-:[1372..1372] *))
+        (VP (TO:[1373..1375] to)
+          (VP (VB:[1376..1383] require)
+            (NP
+              (NP
+                (NML (NN:[1384..1394] cytochrome) (NN:[1395..1399] P450))
+                (NN:[1400..1410] metabolism))
+              (PP (IN:[1411..1413] by)
+                (NP (DT:[1414..1417] the) (NN:[1418..1423] mouse)
+                    (NNS:[1425..1436] hepatocytes))))
+            (S-PRP
+              (NP-SBJ (-NONE-:[1436..1436] *))
+              (VP (TO:[1437..1439] to)
+                (VP (VB:[1440..1447] exhibit)
+                  (NP
+                    (NP (PRP$:[1448..1451] its) (JJ:[1452..1462] inhibitory)
+                        (NN:[1463..1469] effect))
+                    (PP (IN:[1470..1472] on)
+                      (NP (NN:[1473..1476] dye) (NN:[1477..1485] coupling)))))))
+            (SBAR-ADV (IN:[1486..1491] since)
+              (S
+                (NP-SBJ
+                  (NP (NN:[1492..1501] treatment))
+                  (PP (IN:[1503..1507] with)
+                    (NP (NN:[1508..1516] SKF-525A))))
+                (VP (VBD:[1517..1526] prevented)
+                  (NP
+                    (NP (DT:[1527..1530] the) (NN:[1531..1541] inhibition))
+                    (PP (IN:[1542..1544] of)
+                      (NP (JJ:[1545..1558] intercellular)
+                          (NN:[1559..1572] communication)))
+                    (PP (IN:[1573..1575] by)
+                      (NP (NN:[1576..1579] TCE)))))))))))
+    (.:[1579..1580] .)))
+
+;sentence 13 Span:1582..1685
+;The inhibitory effect of TCA on intercellular communication was unaffected by
+; treatment with SKF-525A.
+;[1607..1610]:substance:"TCA"
+;[1676..1684]:substance:"SKF-525A"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1582..1585] The) (JJ:[1586..1596] inhibitory)
+          (NN:[1597..1603] effect))
+      (PP (IN:[1604..1606] of)
+        (NP (NN:[1607..1610] TCA)))
+      (PP (IN:[1611..1613] on)
+        (NP (JJ:[1614..1627] intercellular) (NN:[1628..1641] communication))))
+    (VP (VBD:[1642..1645] was)
+      (ADJP-PRD (JJ:[1646..1656] unaffected)
+        (PP (IN:[1657..1659] by)
+          (NP
+            (NP (NN:[1661..1670] treatment))
+            (PP (IN:[1671..1675] with)
+              (NP (NN:[1676..1684] SKF-525A)))))))
+    (.:[1684..1685] .)))
+
+;sentence 14 Span:1686..2094
+;While the species dependent effect of TCE on  intercellular communication may
+;be correlated with different rates and extent of  metabolism of TCE by rat
+;and mouse hepatocytes, the inhibiting effect of TCA  only on mouse
+;hepatocytes suggests that other intrinsic factors in the male  mouse make
+;this species more susceptible to the effects of TCE and TCA on gap  junction
+;mediated intercellular communication.
+;[1724..1727]:substance:"TCE"
+;[1828..1831]:substance:"TCE"
+;[1887..1890]:substance:"TCA"
+;[2028..2031]:substance:"TCE"
+;[2036..2039]:substance:"TCA"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1686..1691] While)
+      (S
+        (NP-SBJ-4
+          (NP (DT:[1692..1695] the)
+            (ADJP (NN:[1696..1703] species) (JJ:[1704..1713] dependent))
+            (NN:[1714..1720] effect))
+          (PP (IN:[1721..1723] of)
+            (NP (NN:[1724..1727] TCE)))
+          (PP (IN:[1728..1730] on)
+            (NP (JJ:[1732..1745] intercellular) (NN:[1746..1759] communication))))
+        (VP (MD:[1760..1763] may)
+          (VP (VB:[1764..1766] be)
+            (VP (VBN:[1767..1777] correlated)
+              (NP-4 (-NONE-:[1777..1777] *))
+              (PP-CLR (IN:[1778..1782] with)
+                (NP
+                  (NP
+                    (ADJP-2 (JJ:[1783..1792] different))
+                    (NNS:[1793..1798] rates))
+                  (CC:[1799..1802] and)
+                  (NP
+                    (NP
+                      (ADJP-2 (-NONE-:[1802..1802] *P*))
+                      (NN:[1803..1809] extent)))
+                  (PP (IN:[1810..1812] of)
+                    (NP
+                      (NP (NN:[1814..1824] metabolism))
+                      (PP (IN:[1825..1827] of)
+                        (NP (NN:[1828..1831] TCE)))
+                      (PP (IN:[1832..1834] by)
+                        (NP
+                          (NP (NN:[1835..1838] rat)
+                            (NML-1 (-NONE-:[1838..1838] *P*)))
+                          (CC:[1839..1842] and)
+                          (NP (NN:[1843..1848] mouse)
+                            (NML-1 (NNS:[1849..1860] hepatocytes))))))))))))))
+    (,:[1860..1861] ,)
+    (NP-SBJ
+      (NP (DT:[1862..1865] the) (VBG:[1866..1876] inhibiting)
+          (NN:[1877..1883] effect))
+      (PP (IN:[1884..1886] of)
+        (NP (NN:[1887..1890] TCA)))
+      (PP
+        (ADVP (RB:[1892..1896] only))
+        (IN:[1897..1899] on)
+        (NP (NN:[1900..1905] mouse) (NNS:[1906..1917] hepatocytes))))
+    (VP (VBZ:[1918..1926] suggests)
+      (SBAR (IN:[1927..1931] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1932..1937] other) (JJ:[1938..1947] intrinsic)
+                (NNS:[1948..1955] factors))
+            (PP-LOC (IN:[1956..1958] in)
+              (NP (DT:[1959..1962] the) (JJ:[1963..1967] male)
+                  (NN:[1969..1974] mouse))))
+          (VP (VBP:[1975..1979] make)
+            (S
+              (NP-SBJ (DT:[1980..1984] this) (NN:[1985..1992] species))
+              (ADJP-PRD (RBR:[1993..1997] more) (JJ:[1998..2009] susceptible)
+                (PP (TO:[2010..2012] to)
+                  (NP
+                    (NP (DT:[2013..2016] the) (NNS:[2017..2024] effects))
+                    (PP (IN:[2025..2027] of)
+                      (NP (NN:[2028..2031] TCE) (CC:[2032..2035] and)
+                          (NN:[2036..2039] TCA)))
+                    (PP (IN:[2040..2042] on)
+                      (NP
+                        (ADJP
+                          (NML (NN:[2043..2046] gap) (NN:[2048..2056] junction))
+                          (VBN:[2057..2065] mediated))
+                        (JJ:[2066..2079] intercellular)
+                         (NN:[2080..2093] communication)))))))))))
+    (.:[2093..2094] .)))
+
+;sentence 15 Span:2095..2224
+;These findings may account, in  part, for the observed species difference in
+;susceptibility to TCE induced liver  carcinogenesis.
+;[2190..2193]:substance:"TCE"
+(SENT
+  (S
+    (NP-SBJ (DT:[2095..2100] These) (NNS:[2101..2109] findings))
+    (VP (MD:[2110..2113] may)
+      (VP (VB:[2114..2121] account) (,:[2121..2122] ,)
+        (PP (IN:[2123..2125] in)
+          (NP (NN:[2127..2131] part)))
+        (,:[2131..2132] ,)
+        (PP-CLR (IN:[2133..2136] for)
+          (NP
+            (NP (DT:[2137..2140] the) (VBN:[2141..2149] observed)
+                (NN:[2150..2157] species) (NN:[2158..2168] difference))
+            (PP (IN:[2169..2171] in)
+              (NP
+                (NP (NN:[2172..2186] susceptibility))
+                (PP (TO:[2187..2189] to)
+                  (NP
+                    (ADJP (NN:[2190..2193] TCE) (VBN:[2194..2201] induced))
+                    (NN:[2202..2207] liver) (NN:[2209..2223] carcinogenesis)))))))))
+    (.:[2223..2224] .)))
+
+;section 16 Span:2228..2272
+;PMID: 2749732 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2228..2232] PMID) (::[2232..2233] :) (CD:[2234..2241] 2749732)
+        (NN:[2242..2243] -LSB-) (NNP:[2243..2249] PubMed) (::[2250..2251] -)
+        (NN:[2252..2259] indexed) (IN:[2260..2263] for)
+        (NNP:[2264..2272] MEDLINE-RSB-)))

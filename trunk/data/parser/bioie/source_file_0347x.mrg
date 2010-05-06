@@ -1,0 +1,345 @@
+;PMID: 1528853
+;source_file_2909.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..53] = [t:0..53]
+;1)sentence:[e:59..164] = [t:59..164]
+;2)section:[e:168..226] = [t:168..226]
+;3)section:[e:230..321] = [t:230..321]
+;4)sentence:[e:325..496] = [t:325..496]
+;5)sentence:[e:497..687] = [t:497..687]
+;6)sentence:[e:688..796] = [t:688..796]
+;7)sentence:[e:797..943] = [t:797..943]
+;8)sentence:[e:944..1046] = [t:944..1046]
+;9)sentence:[e:1047..1261] = [t:1047..1261]
+;10)sentence:[e:1262..1410] = [t:1262..1410]
+;11)section:[e:1414..1458] = [t:1414..1458]
+
+;section 0 Span:0..53
+;Proc Natl Acad Sci U S A.  1992 Sep 15;89(18):8492-6.
+(SEC
+  (FRAG (NNP:[0..4] Proc) (NNP:[5..9] Natl) (NNP:[10..14] Acad)
+        (NNP:[15..18] Sci) (NNP:[19..20] U) (NNP:[21..22] S) (NNP:[23..24] A)
+        (.:[24..25] .) (CD:[27..31] 1992) (NNP:[32..35] Sep) (CD:[36..38] 15)
+        (CD:[38..41] ;89) (-LRB-:[41..42] -LRB-) (CD:[42..44] 18)
+        (-RRB-:[44..45] -RRB-) (::[45..46] :) (CD:[46..50] 8492)
+        (CD:[50..53] -6.)))
+
+;sentence 1 Span:59..164
+;HEN1 and HEN2: a subgroup of basic helix-loop-helix genes that are
+;coexpressed  in a human neuroblastoma.
+;[59..63]:gene-rna:"HEN1"
+;[68..72]:gene-rna:"HEN2"
+;[88..110]:gene-rna:"basic helix-loop-helix"
+;[150..163]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[59..63] HEN1) (CC:[64..67] and) (NN:[68..72] HEN2))
+    (::[72..73] :)
+    (NP
+      (NP (DT:[74..75] a) (NN:[76..84] subgroup))
+      (PP (IN:[85..87] of)
+        (NP
+          (NP
+             (JJ:[88..93] basic)
+            (NML (NN:[94..99] helix) (HYPH:[99..100] -) (NN:[100..104] loop)
+                 (HYPH:[104..105] -) (NN:[105..110] helix))
+            (NNS:[111..116] genes))
+          (SBAR
+            (WHNP-1 (WDT:[117..121] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[121..121] *T*))
+              (VP (VBP:[122..125] are)
+                (VP (VBN:[126..137] coexpressed)
+                  (NP-1 (-NONE-:[137..137] *))
+                  (PP-LOC (IN:[139..141] in)
+                    (NP (DT:[142..143] a) (JJ:[144..149] human)
+                        (NN:[150..163] neuroblastoma))))))))))
+    (.:[163..164] .)))
+
+;section 2 Span:168..226
+;Brown L, Espinosa R 3rd, Le Beau MM, Siciliano MJ, Baer R.
+(SEC
+  (FRAG (NNP:[168..173] Brown) (NNP:[174..176] L,) (NNP:[177..185] Espinosa)
+        (NNP:[186..187] R) (CD:[188..191] 3rd) (,:[191..192] ,)
+        (NNP:[193..195] Le) (NNP:[196..200] Beau) (NNP:[201..203] MM)
+        (,:[203..204] ,) (NNP:[205..214] Siciliano) (NNP:[215..217] MJ)
+        (,:[217..218] ,) (NNP:[219..223] Baer) (NNP:[224..226] R.)))
+
+;section 3 Span:230..321
+;Department of Microbiology, University of Texas Southwestern Medical Center, 
+;Dallas 75235.
+(SEC
+  (FRAG (NNP:[230..240] Department) (IN:[241..243] of)
+        (NNP:[244..256] Microbiology) (,:[256..257] ,)
+        (NNP:[258..268] University) (IN:[269..271] of) (NNP:[272..277] Texas)
+        (NNP:[278..290] Southwestern) (NNP:[291..298] Medical)
+        (NNP:[299..305] Center) (,:[305..306] ,) (NNP:[308..314] Dallas)
+        (CD:[315..320] 75235) (.:[320..321] .)))
+
+;sentence 4 Span:325..496
+;An important family of regulatory molecules is made up of proteins that
+;possess  the DNA-binding and dimerization motif known as the basic
+;helix-loop-helix  (bHLH) domain.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[325..327] An) (JJ:[328..337] important) (NN:[338..344] family))
+      (PP (IN:[345..347] of)
+        (NP (JJ:[348..358] regulatory) (NNS:[359..368] molecules))))
+    (VP (VBZ:[369..371] is)
+      (VP (VBN:[372..376] made)
+        (NP-1 (-NONE-:[376..376] *))
+        (PRT (RP:[377..379] up))
+        (PP-CLR (IN:[380..382] of)
+          (NP
+            (NP (NNS:[383..391] proteins))
+            (SBAR
+              (WHNP-2 (WDT:[392..396] that))
+              (S
+                (NP-SBJ-2 (-NONE-:[396..396] *T*))
+                (VP (VBP:[397..404] possess)
+                  (NP
+                    (NP (DT:[406..409] the)
+                      (UCP
+                        (ADJP (NN:[410..413] DNA) (HYPH:[413..414] -)
+                              (VBG:[414..421] binding))
+                        (CC:[422..425] and)
+                        (NML (NN:[426..438] dimerization)))
+                      (NN:[439..444] motif))
+                    (VP (VBN:[445..450] known)
+                      (NP (-NONE-:[450..450] *))
+                      (PP (IN:[451..453] as)
+                        (NP (DT:[454..457] the)
+                          (NML
+                            (NML (JJ:[458..463] basic) (NN:[464..469] helix)
+                                 (HYPH:[469..470] -) (NN:[470..474] loop)
+                                 (HYPH:[474..475] -) (NN:[475..480] helix))
+                            (NML (-LRB-:[482..483] -LRB-) (NN:[483..487] bHLH)
+                                 (-RRB-:[487..488] -RRB-)))
+                          (NN:[489..495] domain))))))))))))
+    (.:[495..496] .)))
+
+;sentence 5 Span:497..687
+;The bHLH family includes subgroups of closely related proteins  that share
+;common functional properties and overlapping patterns of expression  (e.g.,
+;the MyoD1 and achaete-scute subgroups).
+;[501..505]:gene-protein:"bHLH"
+(SENT
+  (S
+    (NP-SBJ (DT:[497..500] The) (NN:[501..505] bHLH) (NN:[506..512] family))
+    (VP (VBZ:[513..521] includes)
+      (NP
+        (NP (NNS:[522..531] subgroups))
+        (PP (IN:[532..534] of)
+          (NP
+            (NP
+              (ADJP (RB:[535..542] closely) (VBN:[543..550] related))
+              (NNS:[551..559] proteins))
+            (SBAR
+              (WHNP-1 (WDT:[561..565] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[565..565] *T*))
+                (VP (VBP:[566..571] share)
+                  (NP
+                    (NP (JJ:[572..578] common) (JJ:[579..589] functional)
+                        (NNS:[590..600] properties))
+                    (CC:[601..604] and)
+                    (NP
+                      (NP (VBG:[605..616] overlapping) (NNS:[617..625] patterns))
+                      (PP (IN:[626..628] of)
+                        (NP (NN:[629..639] expression)
+                          (PRN (-LRB-:[641..642] -LRB-)
+                            (NP
+                              (ADVP (FW:[642..646] e.g.))
+                              (,:[646..647] ,)
+                              (NP (DT:[648..651] the) (NN:[652..657] MyoD1)
+                                (NML-2 (-NONE-:[657..657] *P*)))
+                              (CC:[658..661] and)
+                              (NP
+                                (NML (NN:[662..669] achaete) (HYPH:[669..670] -)
+                                     (NN:[670..675] scute))
+                                (NML-2 (NNS:[676..685] subgroups))))
+                            (-RRB-:[685..686] -RRB-)))))))))))))
+    (.:[686..687] .)))
+
+;sentence 6 Span:688..796
+;In this report we describe HEN1  and HEN2, mammalian genes that encode a
+;distinct subgroup of bHLH proteins.
+;[715..719]:gene-rna:"HEN1"
+;[725..729]:gene-rna:"HEN2"
+;[782..786]:gene-protein:"bHLH"
+(SENT
+  (S
+    (PP (IN:[688..690] In)
+      (NP (DT:[691..695] this) (NN:[696..702] report)))
+    (NP-SBJ (PRP:[703..705] we))
+    (VP (VBP:[706..714] describe)
+      (NP
+        (NP
+          (NP (NN:[715..719] HEN1))
+          (CC:[721..724] and)
+          (NP (NN:[725..729] HEN2)))
+        (,:[729..730] ,)
+        (NP
+          (NP (JJ:[731..740] mammalian) (NNS:[741..746] genes))
+          (SBAR
+            (WHNP-1 (WDT:[747..751] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[751..751] *T*))
+              (VP (VBP:[752..758] encode)
+                (NP
+                  (NP (DT:[759..760] a) (JJ:[761..769] distinct)
+                      (NN:[770..778] subgroup))
+                  (PP (IN:[779..781] of)
+                    (NP (NN:[782..786] bHLH) (NNS:[787..795] proteins))))))))))
+    (.:[795..796] .)))
+
+;sentence 7 Span:797..943
+;The  HEN1 gene was identified on the basis of cross-hybridization with TAL1,
+;a known  bHLH gene implicated in T-cell acute lymphoblastic leukemia.
+;[802..806]:gene-rna:"HEN1"
+;[868..872]:gene-rna:"TAL1"
+;[883..887]:gene-rna:"bHLH"
+;[914..942]:malignancy-type:"acute lymphoblastic leukemia"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[797..800] The) (NN:[802..806] HEN1) (NN:[807..811] gene))
+    (VP (VBD:[812..815] was)
+      (VP (VBN:[816..826] identified)
+        (NP-1 (-NONE-:[826..826] *))
+        (PP (IN:[827..829] on)
+          (NP
+            (NP (DT:[830..833] the) (NN:[834..839] basis))
+            (PP (IN:[840..842] of)
+              (NP
+                (NP (AFX:[843..848] cross) (HYPH:[848..849] -)
+                    (NN:[849..862] hybridization))
+                (PP (IN:[863..867] with)
+                  (NP
+                    (NP (NN:[868..872] TAL1))
+                    (,:[872..873] ,)
+                    (NP
+                      (NP (DT:[874..875] a) (VBN:[876..881] known)
+                          (NN:[883..887] bHLH) (NN:[888..892] gene))
+                      (VP (VBN:[893..903] implicated)
+                        (NP (-NONE-:[903..903] *))
+                        (PP (IN:[904..906] in)
+                          (NP (NN:[907..913] T-cell)
+                             (JJ:[914..919] acute) (JJ:[920..933] lymphoblastic)
+                             (NN:[934..942] leukemia)))))))))))))
+    (.:[942..943] .)))
+
+;sentence 8 Span:944..1046
+;In situ  fluorescence hybridization was used to localize the human HEN1 gene
+;to  chromosome band 1q22.
+;[1011..1015]:gene-rna:"HEN1"
+;[1041..1045]:variation-location:"1q22"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (FW:[944..946] In) (FW:[947..951] situ))
+      (NN:[953..965] fluorescence) (NN:[966..979] hybridization))
+    (VP (VBD:[980..983] was)
+      (VP (VBN:[984..988] used)
+        (NP-1 (-NONE-:[988..988] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[988..988] *))
+          (VP (TO:[989..991] to)
+            (VP (VB:[992..1000] localize)
+              (NP (DT:[1001..1004] the) (JJ:[1005..1010] human)
+                  (NN:[1011..1015] HEN1) (NN:[1016..1020] gene))
+              (PP (TO:[1021..1023] to)
+                (NP (NN:[1025..1035] chromosome) (NN:[1036..1040] band)
+                    (NN:[1041..1045] 1q22))))))))
+    (.:[1045..1046] .)))
+
+;sentence 9 Span:1047..1261
+;HEN1 and HEN2 are coexpressed in the IMR-32 human  neuroblastoma cell line,
+;and they encode highly related proteins of 133 and 135  residues,
+;respectively, that share 98% amino acid identity in their hHLH  domains.
+;[1047..1051]:gene-rna:"HEN1"
+;[1056..1060]:gene-rna:"HEN2"
+;[1098..1111]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[1047..1051] HEN1) (CC:[1052..1055] and)
+                (NN:[1056..1060] HEN2))
+      (VP (VBP:[1061..1064] are)
+        (VP (VBN:[1065..1076] coexpressed)
+          (NP-1 (-NONE-:[1076..1076] *))
+          (PP (IN:[1077..1079] in)
+            (NP (DT:[1080..1083] the) (NN:[1084..1090] IMR-32)
+                (JJ:[1091..1096] human) (NN:[1098..1111] neuroblastoma)
+                (NN:[1112..1116] cell) (NN:[1117..1121] line))))))
+    (,:[1121..1122] ,) (CC:[1123..1126] and)
+    (S
+      (NP-SBJ (PRP:[1127..1131] they))
+      (VP (VBP:[1132..1138] encode)
+        (NP
+          (NP
+            (NP
+              (ADJP (RB:[1139..1145] highly) (VBN:[1146..1153] related))
+              (NNS:[1154..1162] proteins))
+            (PP (IN:[1163..1165] of)
+              (NP
+                (NP (CD:[1166..1169] 133)
+                  (NML-2 (-NONE-:[1169..1169] *P*)))
+                (CC:[1170..1173] and)
+                (NP (CD:[1174..1177] 135)
+                  (NML-2 (NNS:[1179..1187] residues))))))
+          (SBAR-3 (-NONE-:[1187..1187] *ICH*)))
+        (,:[1187..1188] ,)
+        (ADVP (RB:[1189..1201] respectively))
+        (,:[1201..1202] ,)
+        (SBAR-3
+          (WHNP-4 (WDT:[1203..1207] that))
+          (S
+            (NP-SBJ-4 (-NONE-:[1207..1207] *T*))
+            (VP (VBP:[1208..1213] share)
+              (NP (CD:[1214..1216] 98) (NN:[1216..1217] %)
+                (NML (JJ:[1218..1223] amino) (NN:[1224..1228] acid))
+                (NN:[1229..1237] identity))
+              (PP (IN:[1238..1240] in)
+                (NP (PRP$:[1241..1246] their) (NN:[1247..1251] hHLH)
+                    (NNS:[1253..1260] domains))))))))
+    (.:[1260..1261] .)))
+
+;sentence 10 Span:1262..1410
+;These data imply that the bHLH protein subgroup encoded by HEN1 and  HEN2 may
+;serve important regulatory functions in the developing nervous system.
+;[1288..1292]:gene-protein:"bHLH"
+;[1321..1325]:gene-rna:"HEN1"
+;[1331..1335]:gene-rna:"HEN2"
+(SENT
+  (S
+    (NP-SBJ (DT:[1262..1267] These) (NNS:[1268..1272] data))
+    (VP (VBP:[1273..1278] imply)
+      (SBAR (IN:[1279..1283] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1284..1287] the) (NN:[1288..1292] bHLH)
+                (NN:[1293..1300] protein) (NN:[1301..1309] subgroup))
+            (VP (VBN:[1310..1317] encoded)
+              (NP (-NONE-:[1317..1317] *))
+              (PP (IN:[1318..1320] by)
+                (NP-LGS (NN:[1321..1325] HEN1) (CC:[1326..1329] and)
+                        (NN:[1331..1335] HEN2)))))
+          (VP (MD:[1336..1339] may)
+            (VP (VB:[1340..1345] serve)
+              (NP (JJ:[1346..1355] important) (JJ:[1356..1366] regulatory)
+                  (NNS:[1367..1376] functions))
+              (PP (IN:[1377..1379] in)
+                (NP (DT:[1380..1383] the) (VBG:[1384..1394] developing)
+                    (JJ:[1395..1402] nervous) (NN:[1403..1409] system))))))))
+    (.:[1409..1410] .)))
+
+;section 11 Span:1414..1458
+;PMID: 1528853 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1414..1418] PMID) (::[1418..1419] :) (CD:[1420..1427] 1528853)
+        (NN:[1428..1429] -LSB-) (NNP:[1429..1435] PubMed) (::[1436..1437] -)
+        (NN:[1438..1445] indexed) (IN:[1446..1449] for)
+        (NNP:[1450..1458] MEDLINE-RSB-)))

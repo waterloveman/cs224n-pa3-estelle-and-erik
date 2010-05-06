@@ -1,0 +1,319 @@
+;PMID: 7748555
+;source_file_2995.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..131] = [t:38..131]
+;2)section:[e:135..248] = [t:135..248]
+;3)section:[e:252..352] = [t:252..352]
+;4)sentence:[e:356..453] = [t:356..453]
+;5)sentence:[e:454..642] = [t:454..642]
+;6)sentence:[e:643..929] = [t:643..929]
+;7)sentence:[e:930..1204] = [t:930..1204]
+;8)sentence:[e:1205..1359] = [t:1205..1359]
+;9)sentence:[e:1360..1524] = [t:1360..1524]
+;10)section:[e:1528..1572] = [t:1528..1572]
+
+;section 0 Span:0..32
+;Neuron.  1995 May;14(5):1075-81.
+(SEC
+  (FRAG (NNP:[0..6] Neuron) (,:[6..7] .) (CD:[9..13] 1995) (NNP:[14..17] May)
+        (::[17..18] ;) (CD:[18..20] 14) (-LRB-:[20..21] -LRB-) (CD:[21..22] 5)
+        (-RRB-:[22..23] -RRB-) (::[23..24] :) (CD:[24..31] 1075-81)
+        (.:[31..32] .)))
+
+;sentence 1 Span:38..131
+;Huntingtin is a cytoplasmic protein associated with vesicles in human and rat
+; brain neurons.
+;[38..48]:gene-protein:"Huntingtin"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[38..48] Huntingtin))
+    (VP (VBZ:[49..51] is)
+      (NP-PRD
+        (NP (DT:[52..53] a) (JJ:[54..65] cytoplasmic) (NN:[66..73] protein))
+        (VP (VBN:[74..84] associated)
+          (NP (-NONE-:[84..84] *))
+          (PP-CLR (IN:[85..89] with)
+            (NP
+              (NP (NNS:[90..98] vesicles))
+              (PP (IN:[99..101] in)
+                (NP
+                  (NP (JJ:[102..107] human)
+                    (NML-1 (-NONE-:[107..107] *P*)))
+                  (CC:[108..111] and)
+                  (NP (NN:[112..115] rat)
+                    (NML-1 (NN:[117..122] brain) (NNS:[123..130] neurons))))))))))
+    (.:[130..131] .)))
+
+;section 2 Span:135..248
+;DiFiglia M, Sapp E, Chase K, Schwarz C, Meloni A, Young C, Martin E,
+;Vonsattel  JP, Carraway R, Reeves SA, et al.
+(SEC
+  (FRAG (NNP:[135..143] DiFiglia) (NNP:[144..145] M) (,:[145..146] ,)
+        (NNP:[147..151] Sapp) (NNP:[152..153] E) (,:[153..154] ,)
+        (NNP:[155..160] Chase) (NNP:[161..162] K) (,:[162..163] ,)
+        (NNP:[164..171] Schwarz) (NNP:[172..173] C) (,:[173..174] ,)
+        (NNP:[175..181] Meloni) (NNP:[182..183] A) (,:[183..184] ,)
+        (NNP:[185..190] Young) (NNP:[191..192] C) (,:[192..193] ,)
+        (NNP:[194..200] Martin) (NNP:[201..202] E) (,:[202..203] ,)
+        (NNP:[204..213] Vonsattel) (NNP:[215..217] JP) (,:[217..218] ,)
+        (NNP:[219..227] Carraway) (NNP:[228..229] R) (,:[229..230] ,)
+        (NNP:[231..237] Reeves) (NNP:[238..240] SA) (,:[240..241] ,)
+        (NNP:[242..244] et) (FW:[245..247] al) (.:[247..248] .)))
+
+;section 3 Span:252..352
+;Department of Neurology, Massachusetts General Hospital, Harvard Medical
+;School,  Boston 02114, USA.
+(SEC
+  (FRAG (NNP:[252..262] Department) (IN:[263..265] of)
+        (NNP:[266..275] Neurology) (,:[275..276] ,)
+        (NNP:[277..290] Massachusetts) (NNP:[291..298] General)
+        (NNP:[299..307] Hospital) (,:[307..308] ,) (NNP:[309..316] Harvard)
+        (NNP:[317..324] Medical) (NNP:[325..331] School) (,:[331..332] ,)
+        (NNP:[334..340] Boston) (VBD:[341..346] 02114) (NNP:[346..347] ,)
+        (NNP:[348..351] USA) (.:[351..352] .)))
+
+;sentence 4 Span:356..453
+;The gene defective in Huntington's disease encodes a protein, huntingtin,
+;with  unknown function.
+;[418..428]:gene-protein:"huntingtin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[356..359] The) (NN:[360..364] gene))
+      (ADJP (JJ:[365..374] defective)
+        (PP (IN:[375..377] in)
+          (NP
+            (NP (NNP:[378..388] Huntington) (POS:[388..390] 's))
+            (NN:[391..398] disease)))))
+    (VP (VBZ:[399..406] encodes)
+      (NP
+        (NP
+          (NP (DT:[407..408] a) (NN:[409..416] protein))
+          (,:[416..417] ,)
+          (NP (NN:[418..428] huntingtin)))
+        (,:[428..429] ,)
+        (PP (IN:[430..434] with)
+          (NP (JJ:[436..443] unknown) (NN:[444..452] function)))))
+    (.:[452..453] .)))
+
+;sentence 5 Span:454..642
+;Antisera generated against three separate regions of  huntingtin identified a
+;single high molecular weight protein of approximately  320 kDa on immunoblots
+;of human neuroblastoma extracts.
+;[508..518]:gene-protein:"huntingtin"
+;[619..632]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[454..462] Antisera))
+      (VP (VBN:[463..472] generated)
+        (NP (-NONE-:[472..472] *))
+        (PP (IN:[473..480] against)
+          (NP
+            (NP (CD:[481..486] three) (JJ:[487..495] separate)
+                (NNS:[496..503] regions))
+            (PP (IN:[504..506] of)
+              (NP (NN:[508..518] huntingtin)))))))
+    (VP (VBD:[519..529] identified)
+      (NP
+        (NP (DT:[530..531] a) (JJ:[532..538] single)
+          (NML (JJ:[539..543] high) (JJ:[544..553] molecular)
+               (NN:[554..560] weight))
+          (NN:[561..568] protein))
+        (PP (IN:[569..571] of)
+          (NP
+            (QP (RB:[572..585] approximately) (CD:[587..590] 320))
+            (NN:[591..594] kDa))))
+      (PP-LOC (IN:[595..597] on)
+        (NP
+          (NP (NNS:[598..609] immunoblots))
+          (PP (IN:[610..612] of)
+            (NP (JJ:[613..618] human) (NN:[619..632] neuroblastoma)
+                (NNS:[633..641] extracts))))))
+    (.:[641..642] .)))
+
+;sentence 6 Span:643..929
+;The same protein species  was detected in human and rat cortex synaptosomes
+;and in sucrose density  gradients of vesicle-enriched fractions, where
+;huntingtin immunoreactivity  overlapped with the distribution of vesicle
+;membrane proteins (SV2, transferrin  receptor, and synaptophysin).
+;[790..800]:gene-protein:"huntingtin"
+;[882..885]:gene-protein:"SV2"
+;[887..908]:gene-protein:"transferrin  receptor"
+;[914..927]:gene-protein:"synaptophysin"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[643..646] The) (JJ:[647..651] same) (NN:[652..659] protein)
+              (NN:[660..667] species))
+    (VP (VBD:[669..672] was)
+      (VP (VBN:[673..681] detected)
+        (NP-1 (-NONE-:[681..681] *))
+        (PP
+          (PP (IN:[682..684] in)
+            (NP
+              (NP (JJ:[685..690] human)
+                (NML-2 (-NONE-:[690..690] *P*)))
+              (CC:[691..694] and)
+              (NP (NN:[695..698] rat)
+                (NML-2 (NN:[699..705] cortex) (NNS:[706..718] synaptosomes)))))
+          (CC:[719..722] and)
+          (PP (IN:[723..725] in)
+            (NP
+              (NP
+                (NP (NN:[726..733] sucrose) (NN:[734..741] density)
+                    (NNS:[743..752] gradients))
+                (PP (IN:[753..755] of)
+                  (NP
+                    (ADJP (NN:[756..763] vesicle) (HYPH:[763..764] -)
+                          (VBN:[764..772] enriched))
+                    (NNS:[773..782] fractions))))
+              (,:[782..783] ,)
+              (SBAR
+                (WHADVP-3 (WRB:[784..789] where))
+                (S
+                  (NP-SBJ (NN:[790..800] huntingtin)
+                          (NN:[801..817] immunoreactivity))
+                  (VP (VBD:[819..829] overlapped)
+                    (PP (IN:[830..834] with)
+                      (NP
+                        (NP (DT:[835..838] the) (NN:[839..851] distribution))
+                        (PP (IN:[852..854] of)
+                          (NP (NN:[855..862] vesicle) (NN:[863..871] membrane)
+                              (NNS:[872..880] proteins)
+                            (PRN (-LRB-:[881..882] -LRB-)
+                              (NP
+                                (NP (NN:[882..885] SV2))
+                                (,:[885..886] ,)
+                                (NP (NN:[887..898] transferrin)
+                                    (NN:[900..908] receptor))
+                                (,:[908..909] ,) (CC:[910..913] and)
+                                (NP (NN:[914..927] synaptophysin)))
+                              (-RRB-:[927..928] -RRB-))))))
+                    (ADVP-3 (-NONE-:[928..928] *T*))))))))))
+    (.:[928..929] .)))
+
+;sentence 7 Span:930..1204
+;Immunohistochemistry in human and rat brain  revealed widespread cytoplasmic
+;labeling of huntingtin within neurons,  particularly cell bodies and
+;dendrites, rather than the more selective pattern  of axon terminal labeling
+;characteristic of many vesicle-associated proteins.
+;[1019..1029]:gene-protein:"huntingtin"
+;[1176..1203]:gene-protein:"vesicle-associated proteins"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[930..950] Immunohistochemistry))
+      (PP (IN:[951..953] in)
+        (NP
+          (NP (JJ:[954..959] human)
+            (NML-1 (-NONE-:[959..959] *P*)))
+          (CC:[960..963] and)
+          (NP (NN:[964..967] rat)
+            (NML-1 (NN:[968..973] brain))))))
+    (VP (VBD:[975..983] revealed)
+      (NP
+        (NP (JJ:[984..994] widespread) (JJ:[995..1006] cytoplasmic)
+            (NN:[1007..1015] labeling))
+        (PP (IN:[1016..1018] of)
+          (NP (NN:[1019..1029] huntingtin)))
+        (PP (IN:[1030..1036] within)
+          (NP
+            (NP
+              (NP (NNS:[1037..1044] neurons))
+              (,:[1044..1045] ,)
+              (NP (RB:[1047..1059] particularly)
+                (NP (NN:[1060..1064] cell) (NNS:[1065..1071] bodies))
+                (CC:[1072..1075] and)
+                (NP (NNS:[1076..1085] dendrites))))
+            (,:[1085..1086] ,)
+            (PP (RB:[1087..1093] rather) (IN:[1094..1098] than)
+              (NP
+                (NP
+                  (NP (DT:[1099..1102] the)
+                    (ADJP (RBR:[1103..1107] more) (JJ:[1108..1117] selective))
+                    (NN:[1118..1125] pattern))
+                  (PP (IN:[1127..1129] of)
+                    (NP (NN:[1130..1134] axon) (NN:[1135..1143] terminal)
+                        (NN:[1144..1152] labeling))))
+                (ADJP (JJ:[1153..1167] characteristic)
+                  (PP (IN:[1168..1170] of)
+                    (NP (JJ:[1171..1175] many)
+                      
+                      (ADJP (NN:[1176..1183] vesicle) (HYPH:[1183..1184] -)
+                            (VBN:[1184..1194] associated))
+                      (NNS:[1195..1203] proteins))))))))))
+    (.:[1203..1204] .)))
+
+;sentence 8 Span:1205..1359
+;At  the ultrastructural level, immunoreactivity in cortical neurons was
+;detected in  the matrix of the cytoplasm and around the membranes of the
+;vesicles.
+(SENT
+  (S
+    (PP (IN:[1205..1207] At)
+      (NP (DT:[1209..1212] the) (JJ:[1213..1228] ultrastructural)
+          (NN:[1229..1234] level)))
+    (,:[1234..1235] ,)
+    (NP-SBJ-1
+      (NP (NN:[1236..1252] immunoreactivity))
+      (PP (IN:[1253..1255] in)
+        (NP (JJ:[1256..1264] cortical) (NNS:[1265..1272] neurons))))
+    (VP (VBD:[1273..1276] was)
+      (VP (VBN:[1277..1285] detected)
+        (NP-1 (-NONE-:[1285..1285] *))
+        (PP-LOC
+          (PP (IN:[1286..1288] in)
+            (NP
+              (NP (DT:[1290..1293] the) (NN:[1294..1300] matrix))
+              (PP (IN:[1301..1303] of)
+                (NP (DT:[1304..1307] the) (NN:[1308..1317] cytoplasm)))))
+          (CC:[1318..1321] and)
+          (PP (IN:[1322..1328] around)
+            (NP
+              (NP (DT:[1329..1332] the) (NNS:[1333..1342] membranes))
+              (PP (IN:[1343..1345] of)
+                (NP (DT:[1346..1349] the) (NNS:[1350..1358] vesicles))))))))
+    (.:[1358..1359] .)))
+
+;sentence 9 Span:1360..1524
+;The  ubiquitous cytoplasmic distribution of huntingtin in neurons and its
+;association  with vesicles suggest that huntingtin may have a role in vesicle
+;trafficking.
+;[1404..1414]:gene-protein:"huntingtin"
+;[1474..1484]:gene-protein:"huntingtin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1360..1363] The) (JJ:[1365..1375] ubiquitous)
+            (JJ:[1376..1387] cytoplasmic) (NN:[1388..1400] distribution))
+        (PP (IN:[1401..1403] of)
+          (NP (NN:[1404..1414] huntingtin)))
+        (PP-LOC (IN:[1415..1417] in)
+          (NP (NNS:[1418..1425] neurons))))
+      (CC:[1426..1429] and)
+      (NP
+        (NP (PRP$:[1430..1433] its) (NN:[1434..1445] association))
+        (PP (IN:[1447..1451] with)
+          (NP (NNS:[1452..1460] vesicles)))))
+    (VP (VBP:[1461..1468] suggest)
+      (SBAR (IN:[1469..1473] that)
+        (S
+          (NP-SBJ (NN:[1474..1484] huntingtin))
+          (VP (MD:[1485..1488] may)
+            (VP (VB:[1489..1493] have)
+              (NP (DT:[1494..1495] a) (NN:[1496..1500] role))
+              (PP (IN:[1501..1503] in)
+                (NP (NN:[1504..1511] vesicle) (NN:[1512..1523] trafficking))))))))
+    (.:[1523..1524] .)))
+
+;section 10 Span:1528..1572
+;PMID: 7748555 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1528..1532] PMID) (::[1532..1533] :) (CD:[1534..1541] 7748555)
+        (NN:[1542..1543] -LSB-) (NNP:[1543..1549] PubMed) (::[1550..1551] -)
+        (NN:[1552..1559] indexed) (IN:[1560..1563] for)
+        (NNP:[1564..1571] MEDLINE) (-RRB-:[1571..1572] -RSB-)))

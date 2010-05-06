@@ -1,0 +1,499 @@
+;PMID: 7992822
+;source_file_903.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)section:[e:43..54] = [t:43..54]
+;2)section:[e:60..93] = [t:60..93]
+;3)sentence:[e:97..163] = [t:97..163]
+;4)section:[e:167..177] = [t:167..177]
+;5)section:[e:181..292] = [t:181..292]
+;6)sentence:[e:296..397] = [t:296..397]
+;7)sentence:[e:398..537] = [t:398..537]
+;8)sentence:[e:538..745] = [t:538..745]
+;9)sentence:[e:746..797] = [t:746..797]
+;10)sentence:[e:798..895] = [t:798..895]
+;11)sentence:[e:896..987] = [t:896..987]
+;12)sentence:[e:989..1128] = [t:989..1128]
+;13)sentence:[e:1129..1269] = [t:1129..1269]
+;14)sentence:[e:1270..1416] = [t:1270..1416]
+;15)sentence:[e:1417..1609] = [t:1417..1609]
+;16)sentence:[e:1610..1837] = [t:1610..1837]
+;17)sentence:[e:1839..1990] = [t:1839..1990]
+;18)section:[e:1994..2012] = [t:1994..2012]
+;19)section:[e:2018..2024] = [t:2018..2024]
+;20)section:[e:2030..2046] = [t:2030..2046]
+;21)section:[e:2050..2094] = [t:2050..2093]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:2050..2094][t:2050..2093]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[2093..2094] ]
+
+;section 0 Span:0..37
+;Am J Med. 1994 Dec 19;97(6A):13S-23S.
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..8] Med) (.:[8..9] .)
+        (CD:[10..14] 1994) (NNP:[15..18] Dec) (CD:[19..21] 19) (::[21..22] ;)
+        (CD:[22..24] 97) (-LRB-:[24..25] -LRB-) (CD:[25..27] 6A)
+        (-RRB-:[27..28] -RRB-) (::[28..29] :) (CD:[29..32] 13S) (::[32..33] -)
+        (CD:[33..36] 23S) (.:[36..37] .)))
+
+;section 1 Span:43..54
+;Comment in:
+(SEC
+  (FRAG (NNP:[43..50] Comment) (IN:[51..53] in) (NNP:[53..54] :)))
+
+;section 2 Span:60..93
+;Am J Med. 1996 Jan;100(1):119-21.
+(SEC
+  (FRAG (NNP:[60..62] Am) (NNP:[63..64] J) (NNP:[65..68] Med) (.:[68..69] .)
+        (CD:[70..74] 1996) (NNP:[75..78] Jan) (::[78..79] ;) (CD:[79..82] 100)
+        (-LRB-:[82..83] -LRB-) (CD:[83..84] 1) (-RRB-:[84..85] -RRB-)
+        (::[85..86] :) (CD:[86..89] 119) (::[89..90] -) (CD:[90..92] 21)
+        (.:[92..93] .)))
+
+;sentence 3 Span:97..163
+;Pharmacokinetics of the newer antidepressants: clinical relevance.
+;[127..142]:substance:"antidepressants"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NNS:[97..113] Pharmacokinetics))
+      (PP (IN:[114..116] of)
+        (NP (DT:[117..120] the) (JJR:[121..126] newer)
+            (NNS:[127..142] antidepressants))))
+    (::[142..143] :)
+    (NP (JJ:[144..152] clinical) (NN:[153..162] relevance))
+    (.:[162..163] .)))
+
+;section 4 Span:167..177
+;DeVane CL.
+(SEC
+  (FRAG (NNP:[167..173] DeVane) (NNP:[174..177] CL.)))
+
+;section 5 Span:181..292
+;Department of Psychiatry and Behavioral Sciences, Medical University of South
+; Carolina, Charleston 29425-0742.
+(SEC
+  (FRAG (NNP:[181..191] Department) (IN:[192..194] of)
+        (NNP:[195..205] Psychiatry) (CC:[206..209] and)
+        (NNP:[210..220] Behavioral) (NNP:[221..229] Sciences) (,:[229..230] ,)
+        (NNP:[231..238] Medical) (NNP:[239..249] University) (IN:[250..252] of)
+        (NNP:[253..258] South) (NNP:[260..268] Carolina) (,:[268..269] ,)
+        (NNP:[270..280] Charleston) (CD:[281..291] 29425-0742) (.:[291..292] .)))
+
+;sentence 6 Span:296..397
+;The newer antidepressants are a diverse group of compounds with distinct 
+;pharmacokinetic properties.
+;[306..321]:substance:"antidepressants"
+;[345..354]:substance:"compounds"
+(SENT
+  (S
+    (NP-SBJ (DT:[296..299] The) (JJR:[300..305] newer)
+            (NNS:[306..321] antidepressants))
+    (VP (VBP:[322..325] are)
+      (NP-PRD
+        (NP (DT:[326..327] a) (JJ:[328..335] diverse) (NN:[336..341] group))
+        (PP (IN:[342..344] of)
+          (NP
+            (NP (NNS:[345..354] compounds))
+            (PP (IN:[355..359] with)
+              (NP (JJ:[360..368] distinct) (JJ:[370..385] pharmacokinetic)
+                  (NNS:[386..396] properties)))))))
+    (.:[396..397] .)))
+
+;sentence 7 Span:398..537
+;The selective serotonin reuptake inhibitors  (SSRIs)--paroxetine, sertraline,
+;and fluvoxamine--have elimination half-lives of  15-26 hours.
+;[402..441]:substance:"selective serotonin reuptake inhibitors"
+;[444..449]:substance:"SSRIs"
+;[452..462]:substance:"paroxetine"
+;[464..474]:substance:"sertraline"
+;[480..491]:substance:"fluvoxamine"
+;[525..530]:quantitative-value:"15-26"
+;[531..536]:quantitative-units:"hours"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[398..401] The)
+        (NML
+          (NML (JJ:[402..411] selective)
+            (NML (NN:[412..421] serotonin) (NN:[422..430] reuptake))
+            (NNS:[431..441] inhibitors))
+          (NML (-LRB-:[443..444] -LRB-) (NNS:[444..449] SSRIs)
+               (-RRB-:[449..450] -RRB-))))
+      (::[450..452] --)
+      (NP (NN:[452..462] paroxetine) (,:[462..463] ,) (NN:[464..474] sertraline)
+          (,:[474..475] ,) (CC:[476..479] and) (NN:[480..491] fluvoxamine)))
+    (::[491..493] --)
+    (VP (VBP:[493..497] have)
+      (NP
+        (NP (NN:[498..509] elimination) (NNS:[510..520] half-lives))
+        (PP (IN:[521..523] of)
+          (NP
+            (QP (CD:[525..527] 15) (HYPH:[527..528] -) (CD:[528..530] 26))
+            (NNS:[531..536] hours)))))
+    (.:[536..537] .)))
+
+;sentence 8 Span:538..745
+;The extended half-life of fluoxetine (4-6 days) and its active  metabolite,
+;norfluoxetine (4-16 days), results in an extended time to  steady-state and a
+;prolonged washout period when dosing is discontinued.
+;[564..574]:substance:"fluoxetine"
+;[576..579]:quantitative-value:"4-6"
+;[580..584]:quantitative-units:"days"
+;[602..612]:substance:"metabolite"
+;[614..627]:substance:"norfluoxetine"
+;[629..633]:quantitative-value:"4-16"
+;[634..638]:quantitative-units:"days"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[538..541] The) (JJ:[542..550] extended) (NN:[551..560] half-life))
+      (PP (IN:[561..563] of)
+        (NP
+          (NP (NN:[564..574] fluoxetine)
+            (PRN (-LRB-:[575..576] -LRB-)
+              (NP
+                (QP (CD:[576..577] 4) (HYPH:[577..578] -) (CD:[578..579] 6))
+                (NNS:[580..584] days))
+              (-RRB-:[584..585] -RRB-)))
+          (CC:[586..589] and)
+          (NP
+            (NP (PRP$:[590..593] its) (JJ:[594..600] active)
+                (NN:[602..612] metabolite))
+            (,:[612..613] ,)
+            (NP (NN:[614..627] norfluoxetine))
+            (PRN (-LRB-:[628..629] -LRB-)
+              (NP
+                (QP (CD:[629..630] 4) (HYPH:[630..631] -) (CD:[631..633] 16))
+                (NNS:[634..638] days))
+              (-RRB-:[638..639] -RRB-))))))
+    (,:[639..640] ,)
+    (VP (VBZ:[641..648] results)
+      (PP-CLR (IN:[649..651] in)
+        (NP
+          (NP (DT:[652..654] an) (JJ:[655..663] extended)
+            (NML
+              (NML (NN:[664..668] time))
+              (PP (TO:[669..671] to)
+                (NP (NN:[673..685] steady-state)))))
+          (CC:[686..689] and)
+          (NP
+            (NP (DT:[690..691] a) (JJ:[692..701] prolonged)
+                (NN:[702..709] washout) (NN:[710..716] period))
+            (SBAR
+              (WHADVP-2 (WRB:[717..721] when))
+              (S
+                (NP-SBJ-1 (NN:[722..728] dosing))
+                (VP (VBZ:[729..731] is)
+                  (VP (VBN:[732..744] discontinued)
+                    (NP-1 (-NONE-:[744..744] *))
+                    (ADVP-TMP-2 (-NONE-:[744..744] *T*))))))))))
+    (.:[744..745] .)))
+
+;sentence 9 Span:746..797
+;The  SSRIs are administered as a single daily dose.
+;[751..756]:substance:"SSRIs"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[746..749] The) (NNS:[751..756] SSRIs))
+    (VP (VBP:[757..760] are)
+      (VP (VBN:[761..773] administered)
+        (NP-1 (-NONE-:[773..773] *))
+        (PP (IN:[774..776] as)
+          (NP (DT:[777..778] a) (JJ:[779..785] single) (JJ:[786..791] daily)
+              (NN:[792..796] dose)))))
+    (.:[796..797] .)))
+
+;sentence 10 Span:798..895
+;Venlafaxine and nefazodone have  short half-lives, 2-5 hours, and are dosed >
+;or = 2 times daily.
+;[798..809]:substance:"Venlafaxine"
+;[814..824]:substance:"nefazodone"
+;[849..852]:quantitative-value:"2-5"
+;[853..858]:quantitative-units:"hours"
+;[874..888]:quantitative-value:"> or = 2 times"
+;[889..894]:quantitative-units:"daily"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[798..809] Venlafaxine) (CC:[810..813] and)
+              (NN:[814..824] nefazodone))
+    (VP
+      (VP (VBP:[825..829] have)
+        (NP
+          (NP (JJ:[831..836] short) (NNS:[837..847] half-lives))
+          (,:[847..848] ,)
+          (NP
+            (QP (CD:[849..850] 2) (HYPH:[850..851] -) (CD:[851..852] 5))
+            (NNS:[853..858] hours))))
+      (,:[858..859] ,) (CC:[860..863] and)
+      (VP (VBP:[864..867] are)
+        (VP (VBN:[868..873] dosed)
+          (NP-1 (-NONE-:[873..873] *))
+          (ADVP-TMP
+            (NP
+              (QP (SYM:[874..875] >) (CC:[876..878] or) (SYM:[879..880] =)
+                  (CD:[881..882] 2))
+              (NNS:[883..888] times))
+            (RB:[889..894] daily)))))
+    (.:[894..895] .)))
+
+;sentence 11 Span:896..987
+;The newer  antidepressants are all highly cleared from the body through
+;hepatic metabolism.
+;[907..922]:substance:"antidepressants"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[896..899] The) (JJR:[900..905] newer)
+              (NNS:[907..922] antidepressants))
+    (VP (VBP:[923..926] are) (DT:[927..930] all)
+      (ADVP (RB:[931..937] highly))
+      (VP (VBN:[938..945] cleared)
+        (NP-1 (-NONE-:[945..945] *))
+        (PP (IN:[946..950] from)
+          (NP (DT:[951..954] the) (NN:[955..959] body)))
+        (PP-MNR (IN:[960..967] through)
+          (NP (JJ:[968..975] hepatic) (NN:[976..986] metabolism)))))
+    (.:[986..987] .)))
+
+;sentence 12 Span:989..1128
+;The biotransformation of all the drugs except paroxetine and fluvoxamine
+;results  in the formation of pharmacologically active metabolites.
+;[1022..1027]:substance:"drugs"
+;[1035..1045]:substance:"paroxetine"
+;[1050..1061]:substance:"fluvoxamine"
+;[1116..1127]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[989..992] The) (NN:[993..1010] biotransformation))
+      (PP (IN:[1011..1013] of)
+        (NP
+          (NP (PDT:[1014..1017] all) (DT:[1018..1021] the)
+              (NNS:[1022..1027] drugs))
+          (PP (IN:[1028..1034] except)
+            (NP (NN:[1035..1045] paroxetine) (CC:[1046..1049] and)
+                (NN:[1050..1061] fluvoxamine))))))
+    (VP (VBZ:[1062..1069] results)
+      (PP-CLR (IN:[1071..1073] in)
+        (NP
+          (NP (DT:[1074..1077] the) (NN:[1078..1087] formation))
+          (PP (IN:[1088..1090] of)
+            (NP
+              (ADJP (RB:[1091..1108] pharmacologically) (JJ:[1109..1115] active))
+              (NNS:[1116..1127] metabolites))))))
+    (.:[1127..1128] .)))
+
+;sentence 13 Span:1129..1269
+;The newer  antidepressants display a broad variability similar to the
+;tricyclic  antidepressants (TCAs) in steady-state drug concentrations.
+;[1140..1155]:substance:"antidepressants"
+;[1199..1225]:substance:"tricyclic  antidepressants"
+;[1227..1231]:substance:"TCAs"
+;[1249..1253]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ (DT:[1129..1132] The) (JJR:[1133..1138] newer)
+            (NNS:[1140..1155] antidepressants))
+    (VP (VBP:[1156..1163] display)
+      (NP
+        (NP (DT:[1164..1165] a) (JJ:[1166..1171] broad)
+            (NN:[1172..1183] variability))
+        (ADJP (JJ:[1184..1191] similar)
+          (PP (TO:[1192..1194] to)
+            (NP (DT:[1195..1198] the)
+              (NML
+                (NML (JJ:[1199..1208] tricyclic)
+                     (NNS:[1210..1225] antidepressants))
+                (NML (-LRB-:[1226..1227] -LRB-) (NNS:[1227..1231] TCAs)
+                     (-RRB-:[1231..1232] -RRB-)))))))
+      (PP (IN:[1233..1235] in)
+        (NP (NN:[1236..1248] steady-state) (NN:[1249..1253] drug)
+            (NNS:[1254..1268] concentrations))))
+    (.:[1268..1269] .)))
+
+;sentence 14 Span:1270..1416
+;Due largely to a  safer toxicity profile, the variability in clearance is of
+;lesser importance  with the newer antidepressants than with the TCAs.
+;[1381..1396]:substance:"antidepressants"
+;[1411..1415]:substance:"TCAs"
+(SENT
+  (S
+    (PP (JJ:[1270..1273] Due)
+      (ADVP (RB:[1274..1281] largely))
+      (PP (TO:[1282..1284] to)
+        (NP (DT:[1285..1286] a) (JJR:[1288..1293] safer)
+            (NN:[1294..1302] toxicity) (NN:[1303..1310] profile))))
+    (,:[1310..1311] ,)
+    (NP-SBJ
+      (NP (DT:[1312..1315] the) (NN:[1316..1327] variability))
+      (PP (IN:[1328..1330] in)
+        (NP (NN:[1331..1340] clearance))))
+    (VP (VBZ:[1341..1343] is)
+      (PP-PRD (IN:[1344..1346] of)
+        (NP
+          (NP (JJR:[1347..1353] lesser) (NN:[1354..1364] importance))
+          (PP-1 (-NONE-:[1364..1364] *ICH*))))
+      (PP (IN:[1366..1370] with)
+        (NP (DT:[1371..1374] the) (JJR:[1375..1380] newer)
+            (NNS:[1381..1396] antidepressants)))
+      (PP-1 (IN:[1397..1401] than)
+        (PP (IN:[1402..1406] with)
+          (NP (DT:[1407..1410] the) (NNS:[1411..1415] TCAs)))))
+    (.:[1415..1416] .)))
+
+;sentence 15 Span:1417..1609
+;No useable concentration  versus therapeutic effect relationship has been
+;found with the newer drugs, and  widely varying concentrations appear to have
+;little relationship to adverse  effects.
+;[1512..1517]:substance:"drugs"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[1417..1419] No) (JJ:[1420..1427] useable)
+        (NML
+          (NML (NN:[1428..1441] concentration))
+          (PP (IN:[1443..1449] versus)
+            (NP (JJ:[1450..1461] therapeutic) (NN:[1462..1468] effect))))
+        (NN:[1469..1481] relationship))
+      (VP (VBZ:[1482..1485] has)
+        (VP (VBN:[1486..1490] been)
+          (VP (VBN:[1491..1496] found)
+            (NP-1 (-NONE-:[1496..1496] *))
+            (PP (IN:[1497..1501] with)
+              (NP (DT:[1502..1505] the) (JJR:[1506..1511] newer)
+                  (NNS:[1512..1517] drugs)))))))
+    (,:[1517..1518] ,) (CC:[1519..1522] and)
+    (S
+      (NP-SBJ-2
+        (ADJP (RB:[1524..1530] widely) (VBG:[1531..1538] varying))
+        (NNS:[1539..1553] concentrations))
+      (VP (VBP:[1554..1560] appear)
+        (S
+          (NP-SBJ-2 (-NONE-:[1560..1560] *))
+          (VP (TO:[1561..1563] to)
+            (VP (VB:[1564..1568] have)
+              (NP
+                (NP (JJ:[1569..1575] little) (NN:[1576..1588] relationship))
+                (PP (TO:[1589..1591] to)
+                  (NP (JJ:[1592..1599] adverse) (NNS:[1601..1608] effects)))))))))
+    (.:[1608..1609] .)))
+
+;sentence 16 Span:1610..1837
+;Knowledge of kinetic characteristics is important for designing dosage 
+;regimens and avoiding potentially serious drug-drug interactions that are 
+;mediated through inhibition of specific hepatic cytochrome P450 enzyme
+;pathways.
+;[1724..1728]:substance:"drug"
+;[1729..1733]:substance:"drug"
+;[1805..1827]:cyp450:"cytochrome P450 enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1610..1619] Knowledge))
+      (PP (IN:[1620..1622] of)
+        (NP (JJ:[1623..1630] kinetic) (NNS:[1631..1646] characteristics))))
+    (VP (VBZ:[1647..1649] is)
+      (ADJP-PRD (JJ:[1650..1659] important)
+        (PP (IN:[1660..1663] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1663..1663] *))
+            (VP
+              (VP (VBG:[1664..1673] designing)
+                (NP (NN:[1674..1680] dosage) (NNS:[1682..1690] regimens)))
+              (CC:[1691..1694] and)
+              (VP (VBG:[1695..1703] avoiding)
+                (NP
+                  (NP
+                    (ADJP (RB:[1704..1715] potentially)
+                          (JJ:[1716..1723] serious))
+                    (NML
+                      (NML (NN:[1724..1728] drug))
+                      (PP (HYPH:[1728..1729] -)
+                        (NP (NN:[1729..1733] drug))))
+                    (NNS:[1734..1746] interactions))
+                  (SBAR
+                    (WHNP-1 (WDT:[1747..1751] that))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1751..1751] *T*))
+                      (VP (VBP:[1752..1755] are)
+                        (VP (VBN:[1757..1765] mediated)
+                          (NP-1 (-NONE-:[1765..1765] *))
+                          (PP-MNR (IN:[1766..1773] through)
+                            (NP
+                              (NP (NN:[1774..1784] inhibition))
+                              (PP (IN:[1785..1787] of)
+                                (NP (JJ:[1788..1796] specific)
+                                    (JJ:[1797..1804] hepatic)
+                                  
+                                  (NML (NN:[1805..1815] cytochrome)
+                                       (NN:[1816..1820] P450))
+                                  (NN:[1821..1827] enzyme)
+                                  (NNS:[1828..1836] pathways))))))))))))))))
+    (.:[1836..1837] .)))
+
+;sentence 17 Span:1839..1990
+;Each of the SSRIs inhibits at least one cytochrome P450 enzyme, and all of
+;the  SSRIs increase serum concentrations of concomitantly administered TCAs.
+;[1851..1856]:substance:"SSRIs"
+;[1879..1901]:cyp450:"cytochrome P450 enzyme"
+;[1919..1924]:substance:"SSRIs"
+;[1985..1989]:substance:"TCAs"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1839..1843] Each))
+        (PP (IN:[1844..1846] of)
+          (NP (DT:[1847..1850] the) (NNS:[1851..1856] SSRIs))))
+      (VP (VBZ:[1857..1865] inhibits)
+        (NP
+          (QP (IN:[1866..1868] at) (JJS:[1869..1874] least)
+              (CD:[1875..1878] one))
+          
+          (NML (NN:[1879..1889] cytochrome) (NN:[1890..1894] P450))
+          (NN:[1895..1901] enzyme))))
+    (,:[1901..1902] ,) (CC:[1903..1906] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[1907..1910] all))
+        (PP (IN:[1911..1913] of)
+          (NP (DT:[1914..1917] the) (NNS:[1919..1924] SSRIs))))
+      (VP (VBP:[1925..1933] increase)
+        (NP
+          (NP (NN:[1934..1939] serum) (NNS:[1940..1954] concentrations))
+          (PP (IN:[1955..1957] of)
+            (NP
+              (ADJP (RB:[1958..1971] concomitantly)
+                    (VBN:[1972..1984] administered))
+              (NNS:[1985..1989] TCAs))))))
+    (.:[1989..1990] .)))
+
+;section 18 Span:1994..2012
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1994..2005] Publication) (NNP:[2006..2011] Types)
+        (::[2011..2012] :)))
+
+;section 19 Span:2018..2024
+;Review
+(SEC
+  (FRAG (NNP:[2018..2024] Review)))
+
+;section 20 Span:2030..2046
+;Review, Academic
+(SEC
+  (FRAG (NNP:[2030..2036] Review) (,:[2036..2037] ,) (NNP:[2038..2046] Academic)))
+
+;section 21 Span:2050..2093
+;PMID: 7992822 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2050..2054] PMID) (::[2054..2055] :) (CD:[2056..2063] 7992822)
+        (-LRB-:[2064..2065] -LSB-) (NNP:[2065..2071] PubMed) (::[2072..2073] -)
+        (VBN:[2074..2081] indexed) (IN:[2082..2085] for)
+        (NNP:[2086..2093] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2093..EOF] ]
+
+(ORPH -RSB-)

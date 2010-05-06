@@ -1,0 +1,335 @@
+;PMID: 8961670
+;source_file_773.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:46..133] = [t:46..133]
+;2)section:[e:137..204] = [t:137..204]
+;3)section:[e:208..288] = [t:208..288]
+;4)sentence:[e:292..380] = [t:292..380]
+;5)sentence:[e:381..619] = [t:381..619]
+;6)sentence:[e:620..708] = [t:620..708]
+;7)sentence:[e:709..748] = [t:709..748]
+;8)sentence:[e:749..910] = [t:749..910]
+;9)sentence:[e:911..1132] = [t:911..1132]
+;10)section:[e:1136..1180] = [t:1136..1180]
+
+;section 0 Span:0..41
+;J Formos Med Assoc  1996 Oct;95(10):741-5
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Formos) (NNP:[9..12] Med)
+        (NNP:[13..18] Assoc) (CD:[20..24] 1996) (IN:[25..32] Oct;95-LRB-)
+        (CD:[32..34] 10) (-RRB-:[34..35] -RRB-) (CD:[35..39] :741)
+        (::[39..40] -) (CD:[40..41] 5)))
+
+;sentence 1 Span:46..133
+;Detection of k-ras point mutations in codons 12 and 13 in non-small cell lung
+; cancers.
+;[59..64]:gene-rna:"k-ras"
+;[65..80]:variation-type:"point mutations"
+;[84..93]:variation-location:"codons 12"
+;[84..90]...[98..100]:variation-location:"codons"..."13"
+;[104..132]:malignancy:"non-small cell lung  cancers"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..55] Detection))
+    (PP (IN:[56..58] of)
+      (NP (NN:[59..64] k-ras)
+         (NN:[65..70] point) (NNS:[71..80] mutations)))
+    (PP-LOC (IN:[81..83] in)
+      (NP
+        (NP
+          (NML-1 (DT:[84..90] codons))
+          (CD:[91..93] 12))
+        (CC:[94..97] and)
+        (NP
+          (NML-1 (-NONE-:[97..97] *P*))
+          (CD:[98..100] 13))))
+    (PP-LOC (IN:[101..103] in)
+      (NP
+        (NML (AFX:[104..107] non) (HYPH:[107..108] -) (JJ:[108..113] small)
+             (NN:[114..118] cell))
+        (NN:[119..123] lung) (NNS:[125..132] cancers)))
+    (.:[132..133] .)))
+
+;section 2 Span:137..204
+;Hsu NY, Chen CY, Wu CH, Liu TJ, Kwan PC, Hsu CP, Hsia JY, Chang WT.
+(SEC
+  (FRAG (NNP:[137..140] Hsu) (NNP:[141..143] NY) (,:[143..144] ,)
+        (NNP:[145..149] Chen) (NNP:[150..152] CY) (,:[152..153] ,)
+        (NNP:[154..156] Wu) (NNP:[157..159] CH) (,:[159..160] ,)
+        (NNP:[161..164] Liu) (NNP:[165..167] TJ) (,:[167..168] ,)
+        (NNP:[169..173] Kwan) (NNP:[174..176] PC) (,:[176..177] ,)
+        (NNP:[178..181] Hsu) (NNP:[182..184] CP) (,:[184..185] ,)
+        (NNP:[186..190] Hsia) (NNP:[191..193] JY) (,:[193..194] ,)
+        (NNP:[195..200] Chang) (NNP:[201..204] WT.)))
+
+;section 3 Span:208..288
+;Department of Medical Research, Taichung veterans General Hospital, Taiwan,
+;ROC.
+(SEC
+  (FRAG (NNP:[208..218] Department) (IN:[219..221] of) (NNP:[222..229] Medical)
+        (NNP:[230..238] Research) (,:[238..239] ,) (NNP:[240..248] Taichung)
+        (NNS:[249..257] veterans) (NNP:[258..265] General)
+        (NNP:[266..274] Hospital) (,:[274..275] ,) (NNP:[276..282] Taiwan)
+        (,:[282..283] ,) (NNP:[284..288] ROC.)))
+
+;sentence 4 Span:292..380
+;Point mutations of the K-ras gene have been reported in a wide variety of
+;human  tumors.
+;[292..307]:variation-type:"Point mutations"
+;[315..320]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[292..297] Point) (NNS:[298..307] mutations))
+      (PP (IN:[308..310] of)
+        (NP (DT:[311..314] the) (NN:[315..320] K-ras) (NN:[321..325] gene))))
+    (VP (VBP:[326..330] have)
+      (VP (VBN:[331..335] been)
+        (VP (VBN:[336..344] reported)
+          (NP-1 (-NONE-:[344..344] *))
+          (PP-LOC (IN:[345..347] in)
+            (NP
+              (NP (DT:[348..349] a) (JJ:[350..354] wide) (NN:[355..362] variety))
+              (PP (IN:[363..365] of)
+                (NP (JJ:[366..371] human) (NNS:[373..379] tumors))))))))
+    (.:[379..380] .)))
+
+;sentence 5 Span:381..619
+;By using polymerase chain reaction followed by direct DNA sequencing, we 
+;screened for point mutations at codons 12 and 13 of the K-ras gene in
+;specimens  obtained from fresh frozen tumors in 38 patients with non-small
+;cell lung  cancers.
+;[390..400]:gene-protein:"polymerase"
+;[468..483]:variation-type:"point mutations"
+;[487..496]:variation-location:"codons 12"
+;[487..493]...[501..503]:variation-location:"codons"..."13"
+;[511..516]:gene-rna:"K-ras"
+;[563..569]:malignancy:"tumors"
+;[590..618]:malignancy:"non-small cell lung  cancers"
+(SENT
+  (S
+    (PP-MNR (IN:[381..383] By)
+      (S-NOM
+        (NP-SBJ (-NONE-:[383..383] *))
+        (VP (VBG:[384..389] using)
+          (NP
+            (NP (NN:[390..400] polymerase) (NN:[401..406] chain)
+                (NN:[407..415] reaction))
+            (VP (VBN:[416..424] followed)
+              (NP (-NONE-:[424..424] *))
+              (PP (IN:[425..427] by)
+                (NP-LGS (JJ:[428..434] direct) (NN:[435..438] DNA)
+                        (NN:[439..449] sequencing))))))))
+    (,:[449..450] ,)
+    (NP-SBJ (PRP:[451..453] we))
+    (VP (VBD:[455..463] screened)
+      (PP (IN:[464..467] for)
+        (NP
+          (NP (NN:[468..473] point) (NNS:[474..483] mutations))
+          (PP-LOC (IN:[484..486] at)
+            (NP
+              (NP
+                (NP
+                  (NML-1 (NNS:[487..493] codons))
+                  (CD:[494..496] 12))
+                (CC:[497..500] and)
+                (NP
+                  (NML-1 (-NONE-:[500..500] *P*))
+                  (CD:[501..503] 13)))
+              (PP (IN:[504..506] of)
+                (NP (DT:[507..510] the) (NN:[511..516] K-ras)
+                    (NN:[517..521] gene)))))))
+      (PP-LOC (IN:[522..524] in)
+        (NP
+          (NP (NNS:[525..534] specimens))
+          (VP (VBN:[536..544] obtained)
+            (NP (-NONE-:[544..544] *))
+            (PP (IN:[545..549] from)
+              (NP (JJ:[550..555] fresh) (JJ:[556..562] frozen)
+                  (NNS:[563..569] tumors)))
+            (PP-LOC (IN:[570..572] in)
+              (NP
+                (NP (CD:[573..575] 38) (NNS:[576..584] patients))
+                (PP (IN:[585..589] with)
+                  (NP
+                    (NML (AFX:[590..593] non) (HYPH:[593..594] -)
+                         (JJ:[594..599] small) (NN:[600..604] cell))
+                    (NN:[605..609] lung) (NNS:[611..618] cancers)))))))))
+    (.:[618..619] .)))
+
+;sentence 6 Span:620..708
+;Point mutations were detected in two of 38 (5.3%) resected non-small  cell
+;lung cancers.
+;[620..635]:variation-type:"Point mutations"
+;[679..707]:malignancy:"non-small  cell lung cancers"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[620..625] Point) (NNS:[626..635] mutations))
+    (VP (VBD:[636..640] were)
+      (VP (VBN:[641..649] detected)
+        (NP-1 (-NONE-:[649..649] *))
+        (PP-LOC (IN:[650..652] in)
+          (NP
+            (NP (CD:[653..656] two))
+            (PP (IN:[657..659] of)
+              (NP (CD:[660..662] 38)
+                (PRN (-LRB-:[663..664] -LRB-)
+                  (NP (CD:[664..667] 5.3) (NN:[667..668] %))
+                  (-RRB-:[668..669] -RRB-))
+                (JJ:[670..678] resected)
+                
+                (NML (AFX:[679..682] non) (HYPH:[682..683] -)
+                     (JJ:[683..688] small) (NN:[690..694] cell))
+                (NN:[695..699] lung) (NNS:[700..707] cancers)))))))
+    (.:[707..708] .)))
+
+;sentence 7 Span:709..748
+;Both of them were G to T transversions.
+;[727..728]:variation-state-original:"G"
+;[732..733]:variation-state-altered:"T"
+;[734..747]:variation-type:"transversions"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[709..713] Both))
+      (PP (IN:[714..716] of)
+        (NP (PRP:[717..721] them))))
+    (VP (VBD:[722..726] were)
+      (NP-PRD
+        (NML
+          (NML (NN:[727..728] G))
+          (PP (TO:[729..731] to)
+            (NP (NN:[732..733] T))))
+        (NNS:[734..747] transversions)))
+    (.:[747..748] .)))
+
+;sentence 8 Span:749..910
+;One patient was found  to have a K-ras codon 13 point mutation (GGC to TGC,
+;gly to cys), while the  other had a codon 12 point mutation (GGT to GTT, gly
+;to val).
+;[782..787]:gene-rna:"K-ras"
+;[788..796]:variation-location:"codon 13"
+;[797..811]:variation-type:"point mutation"
+;[813..816]:variation-state-original:"GGC"
+;[820..823]:variation-state-altered:"TGC"
+;[825..828]:variation-state-original:"gly"
+;[832..836]:variation-state-altered:"cys)"
+;[861..869]:variation-location:"codon 12"
+;[870..884]:variation-type:"point mutation"
+;[886..889]:variation-state-original:"GGT"
+;[893..896]:variation-state-altered:"GTT"
+;[898..901]:variation-state-original:"gly"
+;[905..908]:variation-state-altered:"val"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[749..752] One) (NN:[753..760] patient))
+    (VP (VBD:[761..764] was)
+      (VP (VBN:[765..770] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[770..770] *))
+          (VP (TO:[772..774] to)
+            (VP (VB:[775..779] have)
+              (NP (DT:[780..781] a) (NN:[782..787] K-ras)
+                (NML (NN:[788..793] codon) (CD:[794..796] 13))
+                 (NN:[797..802] point) (NN:[803..811] mutation)
+                (PRN (-LRB-:[812..813] -LRB-)
+                  (NP
+                    (NP
+                      (NP (NN:[813..816] GGC))
+                      (PP (TO:[817..819] to)
+                        (NP (NN:[820..823] TGC))))
+                    (,:[823..824] ,)
+                    (NP
+                      (NP (NN:[825..828] gly))
+                      (PP (TO:[829..831] to)
+                        (NP (NN:[832..835] cys)))))
+                  (-RRB-:[835..836] -RRB-))))))
+        (,:[836..837] ,)
+        (SBAR-ADV (IN:[838..843] while)
+          (S
+            (NP-SBJ (DT:[844..847] the) (NN:[849..854] other))
+            (VP (VBD:[855..858] had)
+              (NP (DT:[859..860] a)
+                (NML (NN:[861..866] codon) (CD:[867..869] 12))
+                 (NN:[870..875] point) (NN:[876..884] mutation)
+                (PRN (-LRB-:[885..886] -LRB-)
+                  (NP
+                    (NP
+                      (NP (NN:[886..889] GGT))
+                      (PP (TO:[890..892] to)
+                        (NP (NN:[893..896] GTT))))
+                    (,:[896..897] ,)
+                    (NP
+                      (NP (NN:[898..901] gly))
+                      (PP (TO:[902..904] to)
+                        (NP (NN:[905..908] val)))))
+                  (-RRB-:[908..909] -RRB-))))))))
+    (.:[909..910] .)))
+
+;sentence 9 Span:911..1132
+;Based on the  limited numbers in this study, we found that the frequency of
+;K-ras point  mutations in codons 12 and 13 among Asian patients with lung
+;adenocarcinomas was  lower than that detected among Caucasian patients.
+;[987..992]:gene-rna:"K-ras"
+;[993..1009]:variation-type:"point  mutations"
+;[1013..1022]:variation-location:"codons 12"
+;[1013..1019]...[1027..1029]:variation-location:"codons"..."13"
+;[1056..1076]:malignancy:"lung adenocarcinomas"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[911..911] *))
+      (VP (VBN:[911..916] Based)
+        (PP-CLR (IN:[917..919] on)
+          (NP
+            (NP (DT:[920..923] the) (JJ:[925..932] limited)
+                (NNS:[933..940] numbers))
+            (PP (IN:[941..943] in)
+              (NP (DT:[944..948] this) (NN:[949..954] study)))))))
+    (,:[954..955] ,)
+    (NP-SBJ (PRP:[956..958] we))
+    (VP (VBD:[959..964] found)
+      (SBAR (IN:[965..969] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[970..973] the) (NN:[974..983] frequency))
+            (PP (IN:[984..986] of)
+              (NP (NN:[987..992] K-ras)
+                 (NN:[993..998] point) (NNS:[1000..1009] mutations)))
+            (PP-LOC (IN:[1010..1012] in)
+              (NP
+                (NP
+                  (NML-1 (NNS:[1013..1019] codons))
+                  (CD:[1020..1022] 12))
+                (CC:[1023..1026] and)
+                (NP
+                  (NML-1 (-NONE-:[1026..1026] *P*))
+                  (CD:[1027..1029] 13)))))
+          (PP (IN:[1030..1035] among)
+            (NP
+              (NP (JJ:[1036..1041] Asian) (NNS:[1042..1050] patients))
+              (PP (IN:[1051..1055] with)
+                (NP (NN:[1056..1060] lung) (NNS:[1061..1076] adenocarcinomas)))))
+          (VP (VBD:[1077..1080] was)
+            (ADJP-PRD
+              (ADJP (JJR:[1082..1087] lower))
+              (PP (IN:[1088..1092] than)
+                (NP
+                  (NP (DT:[1093..1097] that))
+                  (VP (VBN:[1098..1106] detected)
+                    (NP (-NONE-:[1106..1106] *))
+                    (PP (IN:[1107..1112] among)
+                      (NP (JJ:[1113..1122] Caucasian)
+                          (NNS:[1123..1131] patients)))))))))))
+    (.:[1131..1132] .)))
+
+;section 10 Span:1136..1180
+;PMID: 8961670 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1136..1140] PMID) (::[1140..1141] :) (CD:[1142..1149] 8961670)
+        (NN:[1150..1151] -LSB-) (NNP:[1151..1157] PubMed) (::[1158..1159] -)
+        (NN:[1160..1167] indexed) (IN:[1168..1171] for)
+        (NNP:[1172..1180] MEDLINE-RSB-)))

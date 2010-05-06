@@ -1,0 +1,344 @@
+;PMID: 1700215
+;source_file_1754.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..219] = [t:52..219]
+;2)section:[e:223..283] = [t:223..283]
+;3)section:[e:287..356] = [t:287..356]
+;4)sentence:[e:360..475] = [t:360..475]
+;5)sentence:[e:476..683] = [t:476..683]
+;6)sentence:[e:684..811] = [t:684..811]
+;7)sentence:[e:812..920] = [t:812..920]
+;8)sentence:[e:921..1041] = [t:921..1041]
+;9)sentence:[e:1042..1120] = [t:1042..1120]
+;10)sentence:[e:1121..1276] = [t:1121..1276]
+;11)section:[e:1280..1324] = [t:1280..1324]
+
+;section 0 Span:0..46
+;J Cardiovasc Pharmacol. 1990 Sep;16(3):438-43.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..12] Cardiovasc) (NNP:[13..22] Pharmacol)
+        (.:[22..23] .) (CD:[24..28] 1990) (CC:[29..35] Sep;16)
+        (-LRB-:[35..36] -LRB-) (CD:[36..37] 3) (-RRB-:[37..38] -RRB-)
+        (CD:[38..45] :438-43) (.:[45..46] .)))
+
+;sentence 1 Span:52..219
+;Cytochrome P450-dependent arachidonic acid metabolites, 19- and 
+;20-hydroxyeicosatetraenoic acids, enhance sodium-potassium ATPase activity in
+; vascular smooth muscle.
+;[52..67]:cyp450:"Cytochrome P450"
+;[78..106]:substance:"arachidonic acid metabolites"
+;[108..111]...[120..149]:substance:"19-"..."hydroxyeicosatetraenoic acids"
+;[117..149]:substance:"20-hydroxyeicosatetraenoic acids"
+;[159..182]:substance:"sodium-potassium ATPase"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP
+        (ADJP
+          (NML (NN:[52..62] Cytochrome) (NN:[63..67] P450))
+          (HYPH:[67..68] -) (JJ:[68..77] dependent))
+        
+        (NML (JJ:[78..89] arachidonic) (NN:[90..94] acid))
+        (NNS:[95..106] metabolites))
+      (,:[106..107] ,)
+      (NP
+        (NP
+          (ADJP (CD:[108..110] 19) (HYPH:[110..111] -)
+            (ADJP-1 (-NONE-:[111..111] *P*)))
+          (NML-2 (-NONE-:[111..111] *P*)))
+        (CC:[112..115] and)
+        (NP
+          (ADJP (CD:[117..119] 20) (HYPH:[119..120] -)
+            (ADJP-1 (JJ:[120..143] hydroxyeicosatetraenoic)))
+          (NML-2 (NNS:[144..149] acids)))))
+    (,:[149..150] ,)
+    (VP (VBP:[151..158] enhance)
+      (NP
+        
+        (NML (NN:[159..165] sodium) (HYPH:[165..166] -)
+             (NN:[166..175] potassium))
+        (NN:[176..182] ATPase)
+        (NN:[183..191] activity))
+      (PP-LOC (IN:[192..194] in)
+        (NP (JJ:[196..204] vascular) (JJ:[205..211] smooth)
+            (NN:[212..218] muscle))))
+    (.:[218..219] .)))
+
+;section 2 Span:223..283
+;Escalante B, Sessa WC, Falck JR, Yadagiri P, Schwartzman ML.
+(SEC
+  (FRAG (NNP:[223..232] Escalante) (NNP:[233..234] B) (,:[234..235] ,)
+        (NNP:[236..241] Sessa) (NNP:[242..244] WC) (,:[244..245] ,)
+        (NNP:[246..251] Falck) (NNP:[252..254] JR) (,:[254..255] ,)
+        (NNP:[256..264] Yadagiri) (NNP:[265..267] P,)
+        (NNP:[268..279] Schwartzman) (NNP:[280..282] ML) (.:[282..283] .)))
+
+;section 3 Span:287..356
+;Department of Pharmacology, New York Medical College, Valhalla 10595.
+(SEC
+  (FRAG (NNP:[287..297] Department) (IN:[298..300] of)
+        (NNP:[301..313] Pharmacology) (,:[313..314] ,) (NNP:[315..318] New)
+        (NNP:[319..323] York) (NNP:[324..331] Medical) (NNP:[332..339] College)
+        (,:[339..340] ,) (NNP:[341..349] Valhalla) (CD:[350..355] 10595)
+        (.:[355..356] .)))
+
+;sentence 4 Span:360..475
+;Several cytochrome P450-dependent arachidonic acid metabolites have been
+;shown  to affect Na+,K(+)-ATPase activity.
+;[368..383]:cyp450:"cytochrome P450"
+;[394..422]:substance:"arachidonic acid metabolites"
+;[450..465]:substance:"Na+,K(+)-ATPase"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[360..367] Several)
+      (ADJP
+        (NML (NN:[368..378] cytochrome) (NN:[379..383] P450))
+        (HYPH:[383..384] -) (JJ:[384..393] dependent))
+      
+      (NML (JJ:[394..405] arachidonic) (NN:[406..410] acid))
+      (NNS:[411..422] metabolites))
+    (VP (VBP:[423..427] have)
+      (VP (VBN:[428..432] been)
+        (VP (VBN:[433..438] shown)
+          (S
+            (NP-SBJ-1 (-NONE-:[438..438] *))
+            (VP (TO:[440..442] to)
+              (VP (VB:[443..449] affect)
+                (NP (NN:[450..465] Na+,K-LRB-+-RRB--ATPase)
+                    (NN:[466..474] activity))))))))
+    (.:[474..475] .)))
+
+;sentence 5 Span:476..683
+;In the present study, we tested the effect  of omega- and omega -
+;1-hydroxylated products, i.e., 19- and  20-hydroxyeicosatetraenoic acids (19-
+;and 20-HETE), on the K-induced relaxation  in rat aortic rings.
+;[557..565]:substance:"products"
+;[573..576]...[585..614]:substance:"19-"..."hydroxyeicosatetraenoic acids"
+;[582..614]:substance:"20-hydroxyeicosatetraenoic acids"
+;[616..619]...[627..631]:substance:"19-"..."HETE"
+;[624..631]:substance:"20-HETE"
+;[641..642]:substance:"K"
+(SENT
+  (S
+    (PP-LOC (IN:[476..478] In)
+      (NP (DT:[479..482] the) (JJ:[483..490] present) (NN:[491..496] study)))
+    (,:[496..497] ,)
+    (NP-SBJ (PRP:[498..500] we))
+    (VP (VBD:[501..507] tested)
+      (NP
+        (NP (DT:[508..511] the) (NN:[512..518] effect))
+        (PP (IN:[520..522] of)
+          (NP
+            (NP
+              (NP
+                (ADJP (SYM:[523..528] omega) (HYPH:[528..529] -)
+                  (ADJP-4 (-NONE-:[529..529] *P*)))
+                (NML-5 (-NONE-:[529..529] *P*)))
+              (CC:[530..533] and)
+              (NP
+                (ADJP (SYM:[534..539] omega) (HYPH:[540..541] -)
+                      (CD:[542..543] 1) (HYPH:[543..544] -)
+                  (ADJP-4 (VBN:[544..556] hydroxylated)))
+                (NML-5 (NNS:[557..565] products))))
+            (,:[565..566] ,)
+            (NP
+              (ADVP (FW:[567..571] i.e.))
+              (,:[571..572] ,)
+              (NP
+                (NP
+                  (NP
+                    (ADJP (CD:[573..575] 19) (HYPH:[575..576] -)
+                      (ADJP-2 (-NONE-:[576..576] *P*)))
+                    (NML-3 (-NONE-:[576..576] *P*)))
+                  (CC:[577..580] and)
+                  (NP
+                    (ADJP (CD:[582..584] 20) (HYPH:[584..585] -)
+                      (ADJP-2 (JJ:[585..608] hydroxyeicosatetraenoic)))
+                    (NML-3 (NNS:[609..614] acids))))
+                (NP (-LRB-:[615..616] -LRB-)
+                  (NP (CD:[616..618] 19) (HYPH:[618..619] -)
+                    (NML-1 (-NONE-:[619..619] *P*)))
+                  (CC:[620..623] and)
+                  (NP (CD:[624..626] 20) (HYPH:[626..627] -)
+                    (NML-1 (NN:[627..631] HETE)))
+                  (-RRB-:[631..632] -RRB-))))))
+        (,:[632..633] ,)
+        (PP (IN:[634..636] on)
+          (NP
+            (NP (DT:[637..640] the)
+              (ADJP (NN:[641..642] K) (HYPH:[642..643] -)
+                    (VBN:[643..650] induced))
+              (NN:[651..661] relaxation))
+            (PP-LOC (IN:[663..665] in)
+              (NP (NN:[666..669] rat) (JJ:[670..676] aortic)
+                  (NNS:[677..682] rings)))))))
+    (.:[682..683] .)))
+
+;sentence 6 Span:684..811
+;19-HETE and 20-HETE increased the magnitude of the  potassium-induced
+;relaxation in a dose-dependent fashion (10(-7)-10(-5) M).
+;[684..691]:substance:"19-HETE"
+;[696..703]:substance:"20-HETE"
+;[736..745]:substance:"potassium"
+;[794..807]:quantitative-value:"10(-7)-10(-5)"
+;[808..809]:quantitative-units:"M"
+(SENT
+  (S
+    (NP-SBJ (NN:[684..691] 19-HETE) (CC:[692..695] and) (NN:[696..703] 20-HETE))
+    (VP (VBD:[704..713] increased)
+      (NP
+        (NP (DT:[714..717] the) (NN:[718..727] magnitude))
+        (PP (IN:[728..730] of)
+          (NP (DT:[731..734] the)
+            (ADJP (NN:[736..745] potassium) (HYPH:[745..746] -)
+                  (VBN:[746..753] induced))
+            (NN:[754..764] relaxation))))
+      (PP-MNR (IN:[765..767] in)
+        (NP (DT:[768..769] a)
+          (ADJP (NN:[770..774] dose) (HYPH:[774..775] -)
+                (JJ:[775..784] dependent))
+          (NN:[785..792] fashion)))
+      (PRN (-LRB-:[793..794] -LRB-)
+        (PRN
+          (QP (CD:[794..800] 10-LRB--7-RRB-) (HYPH:[800..801] -)
+              (CD:[801..807] 10-LRB--5-RRB-))
+          (NN:[808..809] M))
+        (-RRB-:[809..810] -RRB-)))
+    (.:[810..811] .)))
+
+;sentence 7 Span:812..920
+;The  inhibitory effect of ouabain on the potassium-induced relaxation was
+;reversed by  both 19- and 20-HETE.
+;[838..845]:substance:"ouabain"
+;[853..862]:substance:"potassium"
+;[904..907]...[915..919]:substance:"19-"..."HETE"
+;[912..919]:substance:"20-HETE"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[812..815] The) (JJ:[817..827] inhibitory) (NN:[828..834] effect))
+      (PP (IN:[835..837] of)
+        (NP (NN:[838..845] ouabain)))
+      (PP (IN:[846..848] on)
+        (NP (DT:[849..852] the)
+          (ADJP (NN:[853..862] potassium) (HYPH:[862..863] -)
+                (VBN:[863..870] induced))
+          (NN:[871..881] relaxation))))
+    (VP (VBD:[882..885] was)
+      (VP (VBN:[886..894] reversed)
+        (NP-2 (-NONE-:[894..894] *))
+        (PP (IN:[895..897] by)
+          (NP-LGS (CC:[899..903] both)
+            (NML (CD:[904..906] 19) (HYPH:[906..907] -)
+              (NML-1 (-NONE-:[907..907] *P*)))
+            (CC:[908..911] and)
+            (NML (CD:[912..914] 20) (HYPH:[914..915] -)
+              (NML-1 (NN:[915..919] HETE)))))))
+    (.:[919..920] .)))
+
+;sentence 8 Span:921..1041
+;In addition, indomethacin fully inhibited the stimulatory  effect of 19- and
+;20-HETE on relaxation induced by potassium.
+;[934..946]:substance:"indomethacin"
+;[990..993]...[1001..1005]:substance:"19-"..."HETE"
+;[998..1005]:substance:"20-HETE"
+;[1031..1040]:substance:"potassium"
+(SENT
+  (S
+    (PP (IN:[921..923] In)
+      (NP (NN:[924..932] addition)))
+    (,:[932..933] ,)
+    (NP-SBJ (NN:[934..946] indomethacin))
+    (ADVP (RB:[947..952] fully))
+    (VP (VBD:[953..962] inhibited)
+      (NP
+        (NP (DT:[963..966] the) (JJ:[967..978] stimulatory)
+            (NN:[980..986] effect))
+        (PP (IN:[987..989] of)
+          (NP
+            (NP (CD:[990..992] 19) (HYPH:[992..993] -)
+              (NML-1 (-NONE-:[993..993] *P*)))
+            (CC:[994..997] and)
+            (NP (CD:[998..1000] 20) (HYPH:[1000..1001] -)
+              (NML-1 (NN:[1001..1005] HETE)))))
+        (PP (IN:[1006..1008] on)
+          (NP
+            (NP (NN:[1009..1019] relaxation))
+            (VP (VBN:[1020..1027] induced)
+              (NP (-NONE-:[1027..1027] *))
+              (PP (IN:[1028..1030] by)
+                (NP-LGS (NN:[1031..1040] potassium))))))))
+    (.:[1040..1041] .)))
+
+;sentence 9 Span:1042..1120
+;Vascular  ouabain-sensitive 86Rb uptake was also increased by 19- and
+;20-HETE.
+;[1052..1059]:substance:"ouabain"
+;[1070..1074]:substance:"86Rb"
+;[1104..1107]...[1115..1119]:substance:"19-"..."HETE"
+;[1112..1119]:substance:"20-HETE"
+(SENT
+  (S
+    (NP-SBJ-2 (JJ:[1042..1050] Vascular)
+      (ADJP (NN:[1052..1059] ouabain) (HYPH:[1059..1060] -)
+            (JJ:[1060..1069] sensitive))
+      (NN:[1070..1074] 86Rb) (NN:[1075..1081] uptake))
+    (VP (VBD:[1082..1085] was)
+      (ADVP (RB:[1086..1090] also))
+      (VP (VBN:[1091..1100] increased)
+        (NP-2 (-NONE-:[1100..1100] *))
+        (PP (IN:[1101..1103] by)
+          (NP-LGS
+            (NP (CD:[1104..1106] 19) (HYPH:[1106..1107] -)
+              (NML-1 (-NONE-:[1107..1107] *P*)))
+            (CC:[1108..1111] and)
+            (NP (CD:[1112..1114] 20) (HYPH:[1114..1115] -)
+              (NML-1 (NN:[1115..1119] HETE)))))))
+    (.:[1119..1120] .)))
+
+;sentence 10 Span:1121..1276
+;These  observations suggest that 19- and 20-HETE stimulate vascular
+;Na+,K(+)-ATPase via  their conversion by cyclooxygenase to prostaglandin-like
+;material.
+;[1154..1157]...[1165..1169]:substance:"19-"..."HETE"
+;[1162..1169]:substance:"20-HETE"
+;[1189..1204]:substance:"Na+,K(+)-ATPase"
+;[1230..1244]:substance:"cyclooxygenase"
+;[1248..1261]:substance:"prostaglandin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1121..1126] These) (NNS:[1128..1140] observations))
+    (VP (VBP:[1141..1148] suggest)
+      (SBAR (IN:[1149..1153] that)
+        (S
+          (NP-SBJ
+            (NP (CD:[1154..1156] 19) (HYPH:[1156..1157] -)
+              (NML-1 (-NONE-:[1157..1157] *P*)))
+            (CC:[1158..1161] and)
+            (NP (CD:[1162..1164] 20) (HYPH:[1164..1165] -)
+              (NML-1 (NN:[1165..1169] HETE))))
+          (VP (VBP:[1170..1179] stimulate)
+            (NP (JJ:[1180..1188] vascular)
+                (NN:[1189..1204] Na+,K-LRB-+-RRB--ATPase))
+            (PP-MNR (IN:[1205..1208] via)
+              (NP
+                (NP (PRP$:[1210..1215] their) (NN:[1216..1226] conversion))
+                (PP (IN:[1227..1229] by)
+                  (NP (NN:[1230..1244] cyclooxygenase)))
+                (PP (TO:[1245..1247] to)
+                  (NP
+                    (ADJP (NN:[1248..1261] prostaglandin) (HYPH:[1261..1262] -)
+                          (JJ:[1262..1266] like))
+                    (NN:[1267..1275] material)))))))))
+    (.:[1275..1276] .)))
+
+;section 11 Span:1280..1324
+;PMID: 1700215 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1280..1284] PMID) (::[1284..1285] :) (CD:[1286..1293] 1700215)
+        (NN:[1294..1295] -LSB-) (NNP:[1295..1301] PubMed) (::[1302..1303] -)
+        (NN:[1304..1311] indexed) (IN:[1312..1315] for)
+        (NNP:[1316..1324] MEDLINE-RSB-)))

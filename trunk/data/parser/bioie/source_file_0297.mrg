@@ -1,0 +1,459 @@
+;PMID: 3985627
+;source_file_1925.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..210] = [t:49..210]
+;2)section:[e:214..288] = [t:214..288]
+;3)sentence:[e:292..392] = [t:292..392]
+;4)sentence:[e:393..855] = [t:393..855]
+;5)sentence:[e:856..1065] = [t:856..1065]
+;6)sentence:[e:1066..1345] = [t:1066..1345]
+;7)sentence:[e:1346..1762] = [t:1346..1762]
+;8)section:[e:1766..1810] = [t:1766..1810]
+
+;section 0 Span:0..43
+;Arch Biochem Biophys. 1985 Apr;238(1):43-8.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 1985) (.:[27..34] Apr;238)
+        (-LRB-:[34..35] -LRB-) (CD:[35..36] 1) (-RRB-:[36..37] -RRB-)
+        (CD:[37..40] :43) (::[40..41] -) (CD:[41..43] 8.)))
+
+;sentence 1 Span:49..210
+;Dealkylation of pentoxyresorufin: a rapid and sensitive assay for measuring 
+;induction of cytochrome(s) P-450 by phenobarbital and other xenobiotics in
+;the  rat.
+;[65..81]:substance:"pentoxyresorufin"
+;[139..158]:cyp450:"cytochrome(s) P-450"
+;[162..175]:substance:"phenobarbital"
+;[186..197]:substance:"xenobiotics"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[49..61] Dealkylation))
+      (PP (IN:[62..64] of)
+        (NP (NN:[65..81] pentoxyresorufin))))
+    (::[81..82] :)
+    (NP
+      (NP (DT:[83..84] a)
+        (ADJP (JJ:[85..90] rapid) (CC:[91..94] and) (JJ:[95..104] sensitive))
+        (NN:[105..110] assay))
+      (PP (IN:[111..114] for)
+        (S-NOM
+          (NP-SBJ (-NONE-:[114..114] *))
+          (VP (VBG:[115..124] measuring)
+            (NP
+              (NP (NN:[126..135] induction))
+              (PP (IN:[136..138] of)
+                (NP (NN:[139..152] cytochrome-LRB-s-RRB-) (NN:[153..158] P-450)))
+              (PP (IN:[159..161] by)
+                (NP
+                  (NP (NN:[162..175] phenobarbital))
+                  (CC:[176..179] and)
+                  (NP (JJ:[180..185] other) (NNS:[186..197] xenobiotics)))))
+            (PP-LOC (IN:[198..200] in)
+              (NP (DT:[201..204] the) (NN:[206..209] rat)))))))
+    (.:[209..210] .)))
+
+;section 2 Span:214..288
+;Lubet RA, Mayer RT, Cameron JW, Nims RW, Burke MD, Wolff T, Guengerich FP.
+(SEC
+  (FRAG (NNP:[214..219] Lubet) (NNP:[220..222] RA) (,:[222..223] ,)
+        (NNP:[224..229] Mayer) (NN:[230..232] RT) (,:[232..233] ,)
+        (NNP:[234..241] Cameron) (NNP:[242..244] JW) (,:[244..245] ,)
+        (NNP:[246..250] Nims) (NNP:[251..253] RW) (,:[253..254] ,)
+        (NNP:[255..260] Burke) (NNP:[261..263] MD) (,:[263..264] ,)
+        (NNP:[265..270] Wolff) (NNP:[271..272] T) (,:[272..273] ,)
+        (NNP:[274..284] Guengerich) (NNP:[285..287] FP) (.:[287..288] .)))
+
+;sentence 3 Span:292..392
+;The O-dealkylation of pentoxyresorufin (7-pentoxyphenoxazone) by rat liver 
+;microsomes was examined.
+;[314..330]:substance:"pentoxyresorufin"
+;[332..352]:substance:"7-pentoxyphenoxazone"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[292..295] The) (NN:[296..310] O-dealkylation))
+      (PP (IN:[311..313] of)
+        (NP
+          (NP (NN:[314..330] pentoxyresorufin))
+          (NP (-LRB-:[331..332] -LRB-) (NN:[332..352] 7-pentoxyphenoxazone)
+              (-RRB-:[352..353] -RRB-))))
+      (PP (IN:[354..356] by)
+        (NP (NN:[357..360] rat) (NN:[361..366] liver)
+            (NNS:[368..378] microsomes))))
+    (VP (VBD:[379..382] was)
+      (VP (VBN:[383..391] examined)
+        (NP-1 (-NONE-:[391..391] *))))
+    (.:[391..392] .)))
+
+;sentence 4 Span:393..855
+;The reaction appeared highly specific for certain  phenobarbital inducible
+;forms of cytochrome P-450 and was increased 95- to  140-fold by animal
+;pretreatment with phenobarbital (75 mg/kg/day, four ip  injections) and
+;approximately 50-fold by Aroclor 1254 (500 mg/kg, one ip  injection) while
+;animal pretreatment with 3-methylcholanthrene (50 mg/kg/day,  three ip
+;injections) resulted in less than a 2-fold increase over the rate  detected
+;in control microsomes.
+;[444..457]:substance:"phenobarbital"
+;[477..493]:cyp450:"cytochrome P-450"
+;[512..528]:quantitative-value:"95- to  140-fold"
+;[557..570]:substance:"phenobarbital"
+;[572..574]:quantitative-value:"75"
+;[575..584]:quantitative-units:"mg/kg/day"
+;[625..632]:quantitative-value:"50-fold"
+;[636..648]:substance:"Aroclor 1254"
+;[650..653]:quantitative-value:"500"
+;[654..659]:quantitative-units:"mg/kg"
+;[711..731]:substance:"3-methylcholanthrene"
+;[733..735]:quantitative-value:"50"
+;[736..745]:quantitative-units:"mg/kg/day"
+;[781..799]:quantitative-value:"less than a 2-fold"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (DT:[393..396] The) (NN:[397..405] reaction))
+      (VP
+        (VP (VBD:[406..414] appeared)
+          (ADJP-PRD (RB:[415..421] highly) (JJ:[422..430] specific)
+            (PP (IN:[431..434] for)
+              (NP
+                (NP (JJ:[435..442] certain)
+                  (ADJP (NN:[444..457] phenobarbital) (JJ:[458..467] inducible))
+                  (NNS:[468..473] forms))
+                (PP (IN:[474..476] of)
+                  (NP (NN:[477..487] cytochrome) (NN:[488..493] P-450)))))))
+        (CC:[494..497] and)
+        (VP (VBD:[498..501] was)
+          (VP
+            (VP (VBN:[502..511] increased)
+              (NP-2 (-NONE-:[511..511] *))
+              (ADVP-EXT=4
+                (QP (CD:[512..514] 95) (HYPH:[514..515] -) (TO:[516..518] to)
+                    (CD:[520..523] 140) (HYPH:[523..524] -))
+                (RB:[524..528] fold))
+              (PP-MNR=5 (IN:[529..531] by)
+                (NP
+                  (NP (NN:[532..538] animal) (NN:[539..551] pretreatment))
+                  (PP (IN:[552..556] with)
+                    (NP
+                      (NP (NN:[557..570] phenobarbital))
+                      (PRN (-LRB-:[571..572] -LRB-)
+                        (FRAG
+                          (NP
+                            (NP (CD:[572..574] 75) (NN:[575..577] mg))
+                            (PP (SYM:[577..578] /)
+                              (NP (NN:[578..580] kg)))
+                            (PP (SYM:[580..581] /)
+                              (NP (NN:[581..584] day))))
+                          (,:[584..585] ,)
+                          (NP (CD:[586..590] four) (JJ:[591..593] ip)
+                              (NNS:[595..605] injections)))
+                        (-RRB-:[605..606] -RRB-)))))))
+            (CC:[607..610] and)
+            (VP
+              (ADVP-EXT=4
+                (QP (RB:[611..624] approximately) (CD:[625..627] 50))
+                (HYPH:[627..628] -) (RB:[628..632] fold))
+              (PP-MNR=5 (IN:[633..635] by)
+                (NP
+                  (NP (NNP:[636..643] Aroclor) (CD:[644..648] 1254))
+                  (PRN (-LRB-:[649..650] -LRB-)
+                    (FRAG
+                      (NP
+                        (NP (CD:[650..653] 500) (NN:[654..656] mg))
+                        (PP (SYM:[656..657] /)
+                          (NP (NN:[657..659] kg))))
+                      (,:[659..660] ,)
+                      (NP (CD:[661..664] one) (JJ:[665..667] ip)
+                          (NN:[669..678] injection)))
+                    (-RRB-:[678..679] -RRB-)))))))
+        (SBAR-ADV (IN:[680..685] while)
+          (S
+            (NP-SBJ
+              (NP (NN:[686..692] animal) (NN:[693..705] pretreatment))
+              (PP (IN:[706..710] with)
+                (NP (NN:[711..731] 3-methylcholanthrene)
+                  (PRN (-LRB-:[732..733] -LRB-)
+                    (FRAG
+                      (NP
+                        (NP (CD:[733..735] 50) (NN:[736..738] mg))
+                        (PP (SYM:[738..739] /)
+                          (NP (NN:[739..741] kg)))
+                        (PP (SYM:[741..742] /)
+                          (NP (NN:[742..745] day))))
+                      (,:[745..746] ,)
+                      (NP (CD:[748..753] three) (JJ:[754..756] ip)
+                          (NNS:[757..767] injections)))
+                    (-RRB-:[767..768] -RRB-)))))
+            (VP (VBD:[769..777] resulted)
+              (PP-CLR (IN:[778..780] in)
+                (NP
+                  (NP
+                    (QP (JJR:[781..785] less) (IN:[786..790] than)
+                        (DT:[791..792] a) (CD:[793..794] 2) (HYPH:[794..795] -)
+                        (JJ:[795..799] fold))
+                    (NN:[800..808] increase))
+                  (PP (IN:[809..813] over)
+                    (NP
+                      (NP (DT:[814..817] the) (NN:[818..822] rate))
+                      (VP (VBN:[824..832] detected)
+                        (NP (-NONE-:[832..832] *))
+                        (PP-LOC (IN:[833..835] in)
+                          (NP (NN:[836..843] control)
+                              (NNS:[844..854] microsomes)))))))))))))
+    (.:[854..855] .)))
+
+;sentence 5 Span:856..1065
+;It was observed that this activity, in  microsomes for Aroclor-pretreated
+;rats, was dependent on O2 and was inhibited by  metyrapone and SKF 525-A,
+;indicative of cytochrome(s) P-450 mediation in the  reaction.
+;[911..918]:substance:"Aroclor"
+;[953..955]:substance:"O2"
+;[978..988]:substance:"metyrapone"
+;[993..1002]:substance:"SKF 525-A"
+;[1018..1037]:cyp450:"cytochrome(s) P-450"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[856..858] It))
+      (SBAR-3 (-NONE-:[858..858] *EXP*)))
+    (VP (VBD:[859..862] was)
+      (VP (VBN:[863..871] observed)
+        (NP-2 (-NONE-:[871..871] *))
+        (SBAR-3 (IN:[872..876] that)
+          (S
+            (NP-SBJ-1
+              (NP (DT:[877..881] this) (NN:[882..890] activity))
+              (,:[890..891] ,)
+              (PP-LOC (IN:[892..894] in)
+                (NP
+                  (NP (NNS:[896..906] microsomes))
+                  (PP (IN:[907..910] for)
+                    (NP
+                      (ADJP (NNP:[911..918] Aroclor) (HYPH:[918..919] -)
+                            (VBN:[919..929] pretreated))
+                      (NNS:[930..934] rats))))))
+            (,:[934..935] ,)
+            (VP
+              (VP (VBD:[936..939] was)
+                (ADJP-PRD (JJ:[940..949] dependent)
+                  (PP (IN:[950..952] on)
+                    (NP (NN:[953..955] O2)))))
+              (CC:[956..959] and)
+              (VP (VBD:[960..963] was)
+                (VP (VBN:[964..973] inhibited)
+                  (NP-1 (-NONE-:[973..973] *))
+                  (PP (IN:[974..976] by)
+                    (NP-LGS
+                      (NP (NN:[978..988] metyrapone))
+                      (CC:[989..992] and)
+                      (NP (NN:[993..996] SKF) (CD:[997..1002] 525-A))))
+                  (,:[1002..1003] ,)
+                  (S-ADV
+                    (NP-SBJ (-NONE-:[1003..1003] *))
+                    (ADJP-PRD (JJ:[1004..1014] indicative)
+                      (PP (IN:[1015..1017] of)
+                        (NP
+                          (NP
+                            (NML (NN:[1018..1031] cytochrome-LRB-s-RRB-)
+                                 (NN:[1032..1037] P-450))
+                            (NN:[1038..1047] mediation))
+                          (PP-LOC (IN:[1048..1050] in)
+                            (NP (DT:[1051..1054] the) (NN:[1056..1064] reaction))))))))))))))
+    (.:[1064..1065] .)))
+
+;sentence 6 Span:1066..1345
+;When antibodies directed against purified cytochrome(s) P-450s were  employed
+;to inhibit the pentoxyresorufin O-dealkylation reaction, antibodies to 
+;P-450PB-B greatly inhibited the reaction (greater than 90%), while antibodies
+;to  P-450PB-C or P-450PB/PCN-E had minimal effects.
+;[1071..1081]:substance:"antibodies"
+;[1108..1128]:cyp450:"cytochrome(s) P-450s"
+;[1159..1175]:substance:"pentoxyresorufin"
+;[1201..1211]:substance:"antibodies"
+;[1216..1225]:cyp450:"P-450PB-B"
+;[1258..1274]:quantitative-value:"greater than 90%"
+;[1283..1293]:substance:"antibodies"
+;[1298..1307]:cyp450:"P-450PB-C"
+;[1311..1318]:cyp450:"P-450PB"
+;[1311..1316]...[1319..1324]:cyp450:"P-450"..."PCN-E"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-2 (WRB:[1066..1070] When))
+      (S
+        (NP-SBJ-1
+          (NP (NNS:[1071..1081] antibodies))
+          (VP (VBN:[1082..1090] directed)
+            (NP (-NONE-:[1090..1090] *))
+            (PP (IN:[1091..1098] against)
+              (NP (VBN:[1099..1107] purified)
+                 (NNS:[1108..1121] cytochrome-LRB-s-RRB-)
+                 (NNS:[1122..1128] P-450s)))))
+        (VP (VBD:[1129..1133] were)
+          (VP (VBN:[1135..1143] employed)
+            (NP-1 (-NONE-:[1143..1143] *))
+            (S-PRP
+              (NP-SBJ (-NONE-:[1143..1143] *))
+              (VP (TO:[1144..1146] to)
+                (VP (VB:[1147..1154] inhibit)
+                  (NP (DT:[1155..1158] the) (NN:[1159..1175] pentoxyresorufin)
+                      (NN:[1176..1190] O-dealkylation)
+                      (NN:[1191..1199] reaction)))))
+            (ADVP-TMP-2 (-NONE-:[1199..1199] *T*))))))
+    (,:[1199..1200] ,)
+    (NP-SBJ
+      (NP (NNS:[1201..1211] antibodies))
+      (PP (TO:[1212..1214] to)
+        (NP (NN:[1216..1225] P-450PB-B))))
+    (ADVP (RB:[1226..1233] greatly))
+    (VP (VBD:[1234..1243] inhibited)
+      (NP (DT:[1244..1247] the) (NN:[1248..1256] reaction))
+      (PRN (-LRB-:[1257..1258] -LRB-)
+        (ADJP
+          (ADJP (JJR:[1258..1265] greater))
+          (PP (IN:[1266..1270] than)
+            (NP (CD:[1271..1273] 90) (NN:[1273..1274] %))))
+        (-RRB-:[1274..1275] -RRB-))
+      (,:[1275..1276] ,)
+      (SBAR-ADV (IN:[1277..1282] while)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1283..1293] antibodies))
+            (PP (TO:[1294..1296] to)
+              (NP
+                (NP (NN:[1298..1307] P-450PB-C))
+                (CC:[1308..1310] or)
+                (NP
+                   (NN:[1311..1316] P-450) (NN:[1316..1318] PB)
+                  (SYM:[1318..1319] /) (NN:[1319..1324] PCN-E)))))
+          (VP (VBD:[1325..1328] had)
+            (NP (JJ:[1329..1336] minimal) (NNS:[1337..1344] effects))))))
+    (.:[1344..1345] .)))
+
+;sentence 7 Span:1346..1762
+;Assay of hepatic microsomes from  rats which were pretreated with varying
+;doses of phenobarbital (0.9-75  mg/kg/day, four ip injections) indicated that
+;while aminopyrine-N-demethylase  activity was induced only 2-fold at the
+;maximum dose (75 mg/kg/day),  pentoxyresorufin O-dealkylase activity was
+;induced approximately 140-fold at  this dose and approximately 4-fold by a
+;dose of phenobarbital as low as 0.9  mg/kg.
+;[1429..1442]:substance:"phenobarbital"
+;[1444..1450]:quantitative-value:"0.9-75"
+;[1452..1461]:quantitative-units:"mg/kg/day"
+;[1504..1529]:substance:"aminopyrine-N-demethylase"
+;[1557..1563]:quantitative-value:"2-fold"
+;[1585..1587]:quantitative-value:"75"
+;[1588..1597]:quantitative-units:"mg/kg/day"
+;[1601..1630]:substance:"pentoxyresorufin O-dealkylase"
+;[1666..1674]:quantitative-value:"140-fold"
+;[1707..1713]:quantitative-value:"4-fold"
+;[1727..1740]:substance:"phenobarbital"
+;[1751..1754]:quantitative-value:"0.9"
+;[1756..1761]:quantitative-units:"mg/kg"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1346..1351] Assay))
+      (PP (IN:[1352..1354] of)
+        (NP
+          (NP (JJ:[1355..1362] hepatic) (NNS:[1363..1373] microsomes))
+          (PP (IN:[1374..1378] from)
+            (NP
+              (NP (NNS:[1380..1384] rats))
+              (SBAR
+                (WHNP-3 (WDT:[1385..1390] which))
+                (S
+                  (NP-SBJ-3 (-NONE-:[1390..1390] *T*))
+                  (VP (VBD:[1391..1395] were)
+                    (VP (VBN:[1396..1406] pretreated)
+                      (NP-3 (-NONE-:[1406..1406] *))
+                      (PP (IN:[1407..1411] with)
+                        (NP
+                          (NP (VBG:[1412..1419] varying)
+                              (NNS:[1420..1425] doses))
+                          (PP (IN:[1426..1428] of)
+                            (NP (NN:[1429..1442] phenobarbital)))
+                          (PRN (-LRB-:[1443..1444] -LRB-)
+                            (FRAG
+                              (NP
+                                (NP
+                                  (QP (CD:[1444..1447] 0.9)
+                                      (HYPH:[1447..1448] -) (CD:[1448..1450] 75))
+                                  (NN:[1452..1454] mg))
+                                (PP (SYM:[1454..1455] /)
+                                  (NP (NN:[1455..1457] kg)))
+                                (PP (SYM:[1457..1458] /)
+                                  (NP (NN:[1458..1461] day))))
+                              (,:[1461..1462] ,)
+                              (NP (CD:[1463..1467] four) (JJ:[1468..1470] ip)
+                                  (NNS:[1471..1481] injections)))
+                            (-RRB-:[1481..1482] -RRB-)))))))))))))
+    (VP (VBD:[1483..1492] indicated)
+      (SBAR (IN:[1493..1497] that)
+        (S
+          (SBAR-ADV (IN:[1498..1503] while)
+            (S
+              (NP-SBJ-2 (NN:[1504..1529] aminopyrine-N-demethylase)
+                        (NN:[1531..1539] activity))
+              (VP (VBD:[1540..1543] was)
+                (VP (VBN:[1544..1551] induced)
+                  (NP-2 (-NONE-:[1551..1551] *))
+                  (ADVP-EXT (RB:[1552..1556] only)
+                     (CD:[1557..1558] 2) (HYPH:[1558..1559] -)
+                     (RB:[1559..1563] fold))
+                  (PP (IN:[1564..1566] at)
+                    (NP (DT:[1567..1570] the) (JJ:[1571..1578] maximum)
+                        (NN:[1579..1583] dose)
+                      (PRN (-LRB-:[1584..1585] -LRB-)
+                        (NP
+                          (NP (CD:[1585..1587] 75) (NN:[1588..1590] mg))
+                          (PP (SYM:[1590..1591] /)
+                            (NP (NN:[1591..1593] kg)))
+                          (PP (SYM:[1593..1594] /)
+                            (NP (NN:[1594..1597] day))))
+                        (-RRB-:[1597..1598] -RRB-))))))))
+          (,:[1598..1599] ,)
+          (NP-SBJ-1
+             (NN:[1601..1617] pentoxyresorufin) (NN:[1618..1630] O-dealkylase)
+            (NN:[1631..1639] activity))
+          (VP (VBD:[1640..1643] was)
+            (VP
+              (VP (VBN:[1644..1651] induced)
+                (NP-1 (-NONE-:[1651..1651] *))
+                (ADVP-EXT=5 (RB:[1652..1665] approximately)
+                   (CD:[1666..1669] 140) (HYPH:[1669..1670] -)
+                   (RB:[1670..1674] fold))
+                (PP=4 (IN:[1675..1677] at)
+                  (NP (DT:[1679..1683] this) (NN:[1684..1688] dose))))
+              (CC:[1689..1692] and)
+              (VP
+                (ADVP-EXT=5
+                  (QP (RB:[1693..1706] approximately) (CD:[1707..1708] 4))
+                  (HYPH:[1708..1709] -) (RB:[1709..1713] fold))
+                (PP (IN:[1714..1716] by)
+                  (NP
+                    (NP (DT:[1717..1718] a) (NN:[1719..1723] dose))
+                    (PP (IN:[1724..1726] of)
+                      (NP (NN:[1727..1740] phenobarbital)))
+                    (PP (IN:[1741..1743] as)
+                      (ADJP (JJ:[1744..1747] low)
+                        (PP (IN:[1748..1750] as)
+                          (NP
+                            (NP (CD:[1751..1754] 0.9) (NN:[1756..1758] mg))
+                            (PP (SYM:[1758..1759] /)
+                              (NP (NN:[1759..1761] kg)))))))))
+                (PP=4 (-NONE-:[1761..1761] *NOT*))))))))
+    (.:[1761..1762] .)))
+
+;section 8 Span:1766..1810
+;PMID: 3985627 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1766..1770] PMID) (::[1770..1771] :) (CD:[1772..1779] 3985627)
+        (-LRB-:[1780..1781] -LSB-) (NNP:[1781..1787] PubMed)
+        (HYPH:[1788..1789] -) (NN:[1790..1797] indexed) (IN:[1798..1801] for)
+        (NNP:[1802..1809] MEDLINE) (-RRB-:[1809..1810] -RSB-)))

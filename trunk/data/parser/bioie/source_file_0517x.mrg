@@ -1,0 +1,300 @@
+;PMID: 11890673
+;source_file_2914.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..53] = [t:0..53]
+;1)sentence:[e:59..117] = [t:59..117]
+;2)section:[e:121..191] = [t:121..191]
+;3)section:[e:195..324] = [t:195..324]
+;4)sentence:[e:328..502] = [t:328..502]
+;5)sentence:[e:503..607] = [t:503..607]
+;6)sentence:[e:608..791] = [t:608..791]
+;7)sentence:[e:792..881] = [t:792..881]
+;8)sentence:[e:882..1213] = [t:882..1213]
+;9)sentence:[e:1214..1384] = [t:1214..1384]
+;10)section:[e:1385..1416] = [t:1385..1416]
+;11)section:[e:1420..1465] = [t:1420..1465]
+
+;section 0 Span:0..53
+;Biochem Biophys Res Commun.  2002 Mar 22;292(1):71-8.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (.:[26..27] .) (CD:[29..33] 2002)
+        (NNP:[34..37] Mar) (CD:[38..40] 22) (CD:[40..44] ;292)
+        (-LRB-:[44..45] -LRB-) (CD:[45..46] 1) (-RRB-:[46..47] -RRB-)
+        (::[47..48] :) (CD:[48..50] 71) (::[50..51] -) (CD:[51..53] 8.)))
+
+;sentence 1 Span:59..117
+;Sp1 and Sp3 activate the rat connexin40 proximal promoter.
+;[59..62]:gene-protein:"Sp1"
+;[67..70]:gene-protein:"Sp3"
+;[88..98]:gene-protein:"connexin40"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[59..62] Sp1) (CC:[63..66] and) (NN:[67..70] Sp3))
+    (VP (VBP:[71..79] activate)
+      (NP (DT:[80..83] the) (NN:[84..87] rat) (NN:[88..98] connexin40)
+          (JJ:[99..107] proximal) (NN:[108..116] promoter)))
+    (.:[116..117] .)))
+
+;section 2 Span:121..191
+;Teunissen BE, van Amersfoorth SC, Opthof T, Jongsma HJ, Bierhuizen MF.
+(SEC
+  (FRAG (NNP:[121..130] Teunissen) (NNP:[131..133] BE) (,:[133..134] ,)
+        (NNP:[135..138] van) (NNP:[139..150] Amersfoorth) (NNP:[151..153] SC)
+        (,:[153..154] ,) (NNP:[155..161] Opthof) (NNP:[162..163] T)
+        (,:[163..164] ,) (NNP:[165..172] Jongsma) (NNP:[173..175] HJ)
+        (,:[175..176] ,) (NNP:[177..187] Bierhuizen) (NNP:[188..191] MF.)))
+
+;section 3 Span:195..324
+;Department of Medical Physiology, University Medical Center Utrecht, 3508 AB 
+;Utrecht, The Netherlands. B.E.J.Teunissen@med.uu.nl
+(SEC
+  (FRAG (NNP:[195..205] Department) (IN:[206..208] of) (NNP:[209..216] Medical)
+        (NNP:[217..227] Physiology) (,:[227..228] ,) (NNP:[229..239] University)
+        (NNP:[240..247] Medical) (NNP:[248..254] Center)
+        (NNP:[255..262] Utrecht) (,:[262..263] ,) (CD:[264..268] 3508)
+        (NN:[269..271] AB) (NNP:[273..280] Utrecht) (,:[280..281] ,)
+        (DT:[282..285] The) (NNP:[286..297] Netherlands) (.:[297..298] .)
+        (NNP:[299..318] B.E.J.Teunissen@med) (.:[318..324] .uu.nl)))
+
+;sentence 4 Span:328..502
+;The rat gap junction protein connexin40 (rCx40) has a characteristic 
+;developmental and regional expression pattern, for which the exact regulatory
+; mechanisms are not known.
+;[357..367]:gene-protein:"connexin40"
+;[369..374]:gene-protein:"rCx40"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[328..331] The) (NN:[332..335] rat)
+        (NML
+          (NML (NN:[336..339] gap) (NN:[340..348] junction))
+          (NN:[349..356] protein))
+        (NN:[357..367] connexin40))
+      (NP (-LRB-:[368..369] -LRB-) (NN:[369..374] rCx40)
+          (-RRB-:[374..375] -RRB-)))
+    (VP (VBZ:[376..379] has)
+      (NP (DT:[380..381] a) (JJ:[382..396] characteristic)
+        (NML
+          (NML (JJ:[398..411] developmental)
+            (NML-2 (-NONE-:[411..411] *P*)))
+          (CC:[412..415] and)
+          (NML (JJ:[416..424] regional)
+            (NML-2 (NN:[425..435] expression) (NN:[436..443] pattern)))))
+      (,:[443..444] ,)
+      (SBAR
+        (WHPP-3 (IN:[445..448] for)
+          (WHNP (WDT:[449..454] which)))
+        (S
+          (NP-SBJ-1 (DT:[455..458] the) (JJ:[459..464] exact)
+                    (JJ:[465..475] regulatory) (NNS:[477..487] mechanisms))
+          (VP (VBP:[488..491] are) (RB:[492..495] not)
+            (VP (VBN:[496..501] known)
+              (NP-1 (-NONE-:[501..501] *))
+              (PP-3 (-NONE-:[501..501] *T*)))))))
+    (.:[501..502] .)))
+
+;sentence 5 Span:503..607
+;To identify the molecular factors controlling Cx40  expression, its proximal
+;promoter was characterized.
+;[549..553]:gene-protein:"Cx40"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[503..503] *))
+      (VP (TO:[503..505] To)
+        (VP (VB:[506..514] identify)
+          (NP
+            (NP (DT:[515..518] the) (JJ:[519..528] molecular)
+                (NNS:[529..536] factors))
+            (VP (VBG:[537..548] controlling)
+              (NP (NN:[549..553] Cx40) (NN:[555..565] expression)))))))
+    (,:[565..566] ,)
+    (NP-SBJ-1 (PRP$:[567..570] its) (JJ:[571..579] proximal)
+              (NN:[580..588] promoter))
+    (VP (VBD:[589..592] was)
+      (VP (VBN:[593..606] characterized)
+        (NP-1 (-NONE-:[606..606] *))))
+    (.:[606..607] .)))
+
+;sentence 6 Span:608..791
+;The proximal rCx40 promoter  is the most conserved noncoding region within
+;the Cx40-gene known thus far and  contains five potential binding sites for
+;Sp-family transcription factors.
+;[621..626]:gene-protein:"rCx40"
+;[687..691]:gene-rna:"Cx40"
+;[759..790]:gene-protein:"Sp-family transcription factors"
+(SENT
+  (S
+    (NP-SBJ (DT:[608..611] The) (JJ:[612..620] proximal) (NN:[621..626] rCx40)
+            (NN:[627..635] promoter))
+    (VP
+      (VP (VBZ:[637..639] is)
+        (NP-PRD
+          (NP
+            (NP (DT:[640..643] the)
+              (ADJP (RBS:[644..648] most) (VBN:[649..658] conserved))
+              (JJ:[659..668] noncoding) (NN:[669..675] region))
+            (PP (IN:[676..682] within)
+              (NP (DT:[683..686] the) (NN:[687..691] Cx40) (HYPH:[691..692] -)
+                  (NN:[692..696] gene))))
+          (VP (VBN:[697..702] known)
+            (ADVP (RB:[703..707] thus) (RB:[708..711] far)))))
+      (CC:[712..715] and)
+      (VP (VBZ:[717..725] contains)
+        (NP
+          (NP (CD:[726..730] five) (JJ:[731..740] potential)
+              (NN:[741..748] binding) (NNS:[749..754] sites))
+          (PP (IN:[755..758] for)
+            (NP (NN:[759..761] Sp) (HYPH:[761..762] -) (NN:[762..768] family)
+                (NN:[769..782] transcription) (NNS:[783..790] factors))))))
+    (.:[790..791] .)))
+
+;sentence 7 Span:792..881
+;The  binding of both Sp1 and Sp3 to each of these DNA elements was
+;demonstrated by  EMSA.
+;[813..816]:gene-protein:"Sp1"
+;[821..824]:gene-protein:"Sp3"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[792..795] The) (NN:[797..804] binding))
+      (PP (IN:[805..807] of)
+        (NP (CC:[808..812] both) (NN:[813..816] Sp1) (CC:[817..820] and)
+            (NN:[821..824] Sp3)))
+      (PP (TO:[825..827] to)
+        (NP
+          (NP (DT:[828..832] each))
+          (PP (IN:[833..835] of)
+            (NP (DT:[836..841] these) (NN:[842..845] DNA)
+                (NNS:[846..854] elements))))))
+    (VP (VBD:[855..858] was)
+      (VP (VBN:[859..871] demonstrated)
+        (NP-1 (-NONE-:[871..871] *))
+        (PP-MNR (IN:[872..874] by)
+          (NP (NN:[876..880] EMSA)))))
+    (.:[880..881] .)))
+
+;sentence 8 Span:882..1213
+;Luciferase assays of the natural rCx40 proximal promoter or mutated 
+;derivatives in Cx40-expressing (NCM, primary rat neonatal cardiomyocytes and 
+;A7r5, rat smooth muscle embryonic thoracic aorta cells) and -nonexpressing
+;cells  (N2A, mouse neuroblastoma cells) revealed that all sites are
+;contributing to  basal promoter activity.
+;[882..892]:gene-protein:"Luciferase"
+;[915..920]:gene-protein:"rCx40"
+;[966..970]:gene-generic:"Cx40"
+;[1123..1142]:malignancy-type:"neuroblastoma cells"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[882..892] Luciferase) (NNS:[893..899] assays))
+      (PP (IN:[900..902] of)
+        (NP
+          (NP
+            (NP (DT:[903..906] the) (JJ:[907..914] natural)
+                (NN:[915..920] rCx40) (JJ:[921..929] proximal)
+                (NN:[930..938] promoter))
+            (CC:[939..941] or)
+            (NP (VBN:[942..949] mutated) (NNS:[951..962] derivatives)))
+          (PP-LOC (IN:[963..965] in)
+            (NP
+              (NP
+                (ADJP
+                  (NML-1 (NN:[966..970] Cx40))
+                  (HYPH:[970..971] -) (VBG:[971..981] expressing))
+                (PRN (-LRB-:[982..983] -LRB-)
+                  (NP
+                    (NP
+                      (NP (NN:[983..986] NCM))
+                      (,:[986..987] ,)
+                      (NP (JJ:[988..995] primary) (NN:[996..999] rat)
+                          (JJ:[1000..1008] neonatal)
+                          (NNS:[1009..1023] cardiomyocytes)))
+                    (CC:[1024..1027] and)
+                    (NP
+                      (NP (NN:[1029..1033] A7r5))
+                      (,:[1033..1034] ,)
+                      (NP (NN:[1035..1038] rat)
+                        (NML (JJ:[1039..1045] smooth) (NN:[1046..1052] muscle))
+                        (JJ:[1053..1062] embryonic) (JJ:[1063..1071] thoracic)
+                         (NN:[1072..1077] aorta) (NNS:[1078..1083] cells)))))
+                (-RRB-:[1083..1084] -RRB-)
+                (NML-2 (-NONE-:[1084..1084] *P*)))
+              (CC:[1085..1088] and)
+              (NP
+                (ADJP
+                  (NML-1 (-NONE-:[1088..1088] *P*))
+                  (HYPH:[1089..1090] -) (JJ:[1090..1103] nonexpressing))
+                (NML-2 (NNS:[1104..1109] cells))
+                (PRN (-LRB-:[1111..1112] -LRB-)
+                  (NP
+                    (NP (NN:[1112..1115] N2A))
+                    (,:[1115..1116] ,)
+                    (NP (NN:[1117..1122] mouse)
+                       (NN:[1123..1136] neuroblastoma) (NNS:[1137..1142] cells)))
+                  (-RRB-:[1142..1143] -RRB-))))))))
+    (VP (VBD:[1144..1152] revealed)
+      (SBAR (IN:[1153..1157] that)
+        (S
+          (NP-SBJ (DT:[1158..1161] all) (NNS:[1162..1167] sites))
+          (VP (VBP:[1168..1171] are)
+            (VP (VBG:[1172..1184] contributing)
+              (PP (TO:[1185..1187] to)
+                (NP (JJ:[1189..1194] basal) (NN:[1195..1203] promoter)
+                    (NN:[1204..1212] activity))))))))
+    (.:[1212..1213] .)))
+
+;sentence 9 Span:1214..1384
+;Trans-activation assays in Drosophila Schneider line 2  cells demonstrated
+;that Sp1 and Sp3 activate the rCx40 proximal promoter in a  dose-dependent
+;and additive manner.
+;[1294..1297]:gene-protein:"Sp1"
+;[1302..1305]:gene-protein:"Sp3"
+;[1319..1324]:gene-protein:"rCx40"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (AFX:[1214..1219] Trans) (HYPH:[1219..1220] -)
+             (NN:[1220..1230] activation))
+        (NNS:[1231..1237] assays))
+      (PP-LOC (IN:[1238..1240] in)
+        (NP (NNP:[1241..1251] Drosophila) (NNP:[1252..1261] Schneider)
+          (NML (NN:[1262..1266] line) (CD:[1267..1268] 2))
+          (NNS:[1270..1275] cells))))
+    (VP (VBD:[1276..1288] demonstrated)
+      (SBAR (IN:[1289..1293] that)
+        (S
+          (NP-SBJ (NN:[1294..1297] Sp1) (CC:[1298..1301] and)
+                  (NN:[1302..1305] Sp3))
+          (VP (VBP:[1306..1314] activate)
+            (NP (DT:[1315..1318] the) (NN:[1319..1324] rCx40)
+                (JJ:[1325..1333] proximal) (NN:[1334..1342] promoter))
+            (PP (IN:[1343..1345] in)
+              (NP (DT:[1346..1347] a)
+                (ADJP
+                  (ADJP (NN:[1349..1353] dose) (HYPH:[1353..1354] -)
+                        (JJ:[1354..1363] dependent))
+                  (CC:[1364..1367] and)
+                  (ADJP (JJ:[1368..1376] additive)))
+                (NN:[1377..1383] manner)))))))
+    (.:[1383..1384] .)))
+
+;section 10 Span:1385..1416
+;(C)2002 Elsevier Science (USA).
+(SEC
+  (FRAG (-LRB-:[1385..1386] -LRB-) (NN:[1386..1392] C-RRB-2002)
+        (NNP:[1393..1401] Elsevier) (NNP:[1402..1409] Science)
+        (-LRB-:[1410..1411] -LRB-) (NNP:[1411..1414] USA)
+        (-RRB-:[1414..1415] -RRB-) (.:[1415..1416] .)))
+
+;section 11 Span:1420..1465
+;PMID: 11890673 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1420..1424] PMID) (::[1424..1425] :) (CD:[1426..1434] 11890673)
+        (NN:[1435..1436] -LSB-) (NNP:[1436..1442] PubMed) (::[1443..1444] -)
+        (NN:[1445..1452] indexed) (IN:[1453..1456] for)
+        (NNP:[1457..1465] MEDLINE-RSB-)))

@@ -1,0 +1,441 @@
+;PMID: 9507564
+;source_file_969.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..54] = [t:0..54]
+;1)sentence:[e:60..151] = [t:60..151]
+;2)section:[e:155..239] = [t:155..239]
+;3)section:[e:243..354] = [t:243..354]
+;4)sentence:[e:358..615] = [t:358..615]
+;5)sentence:[e:616..779] = [t:616..779]
+;6)sentence:[e:780..1034] = [t:780..1034]
+;7)sentence:[e:1035..1199] = [t:1035..1199]
+;8)sentence:[e:1200..1316] = [t:1200..1316]
+;9)sentence:[e:1317..1458] = [t:1317..1458]
+;10)sentence:[e:1460..1559] = [t:1460..1559]
+;11)sentence:[e:1560..1691] = [t:1560..1691]
+;12)sentence:[e:1692..1963] = [t:1692..1963]
+;13)section:[e:1967..2011] = [t:1967..2011]
+
+;section 0 Span:0..54
+;Res Commun Mol Pathol Pharmacol. 1997 Jul;97(1):13-24.
+(SEC
+  (FRAG (NNP:[0..3] Res) (NNP:[4..10] Commun) (NNP:[11..14] Mol)
+        (NNP:[15..21] Pathol) (NNP:[22..31] Pharmacol) (.:[31..32] .)
+        (CD:[33..37] 1997) (NNP:[38..45] Jul;97-LRB-) (CD:[45..46] 1)
+        (-RRB-:[46..47] -RRB-) (CD:[47..50] :13) (IN:[50..51] -)
+        (CD:[51..53] 24) (.:[53..54] .)))
+
+;sentence 1 Span:60..151
+;Cyclophosphamide increases 5-hydroxytryptamine release from the isolated
+;ileum  of the rat.
+;[60..76]:substance:"Cyclophosphamide"
+;[87..106]:substance:"5-hydroxytryptamine"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[60..76] Cyclophosphamide))
+    (VP (VBZ:[77..86] increases)
+      (NP
+        (NP (NN:[87..106] 5-hydroxytryptamine) (NN:[107..114] release))
+        (PP (IN:[115..119] from)
+          (NP
+            (NP (DT:[120..123] the) (VBN:[124..132] isolated)
+                (NN:[133..138] ileum))
+            (PP (IN:[140..142] of)
+              (NP (DT:[143..146] the) (NN:[147..150] rat)))))))
+    (.:[150..151] .)))
+
+;section 2 Span:155..239
+;Minami M, Ogawa T, Endo T, Hamaue N, Hirafuji M, Yoshioka M, Blower PR,
+;Andrews  PL.
+(SEC
+  (FRAG (NNP:[155..161] Minami) (VBD:[162..164] M,) (NNP:[165..170] Ogawa)
+        (NNP:[171..172] T) (VBD:[172..173] ,) (NNP:[174..178] Endo)
+        (NNP:[179..180] T) (,:[180..181] ,) (NNP:[182..188] Hamaue)
+        (NNP:[189..190] N) (,:[190..191] ,) (NNP:[192..200] Hirafuji)
+        (NNP:[201..203] M,) (NNP:[204..212] Yoshioka) (NNP:[213..215] M,)
+        (NNP:[216..222] Blower) (NNP:[223..225] PR) (,:[225..226] ,)
+        (NNP:[227..234] Andrews) (NNP:[236..239] PL.)))
+
+;section 3 Span:243..354
+;Department of Pharmacology, Faculty of Pharmaceutical Sciences, Health
+;Sciences  University of Hokkaido, Japan.
+(SEC
+  (FRAG (NNP:[243..253] Department) (IN:[254..256] of)
+        (NNP:[257..269] Pharmacology) (,:[269..270] ,) (NNP:[271..278] Faculty)
+        (IN:[279..281] of) (NNP:[282..296] Pharmaceutical)
+        (NNPS:[297..305] Sciences) (,:[305..306] ,) (NNP:[307..313] Health)
+        (NNP:[314..322] Sciences) (NNP:[324..334] University) (IN:[335..337] of)
+        (NNP:[338..346] Hokkaido) (,:[346..347] ,) (NNP:[348..353] Japan)
+        (.:[353..354] .)))
+
+;sentence 4 Span:358..615
+;We recently reported that chronic administration of cyclophosphamide 
+;significantly increased urinary 5-hydroxyindole acetic acid (5-HIAA)
+;excretion  in rats indicative of a release of 5-hydroxytryptamine (5-HT) from
+;intestinal  enterochromaffin (EC) cells.
+;[410..426]:substance:"cyclophosphamide"
+;[460..487]:substance:"5-hydroxyindole acetic acid"
+;[489..495]:substance:"5-HIAA"
+;[543..562]:substance:"5-hydroxytryptamine"
+;[564..568]:substance:"5-HT"
+(SENT
+  (S
+    (NP-SBJ (PRP:[358..360] We))
+    (ADVP-TMP (RB:[361..369] recently))
+    (VP (VBD:[370..378] reported)
+      (SBAR (IN:[379..383] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[384..391] chronic) (NN:[392..406] administration))
+            (PP (IN:[407..409] of)
+              (NP (NN:[410..426] cyclophosphamide))))
+          (ADVP (RB:[428..441] significantly))
+          (VP (VBD:[442..451] increased)
+            (NP (JJ:[452..459] urinary)
+              (NML
+                (NML (NN:[460..475] 5-hydroxyindole) (JJ:[476..482] acetic)
+                     (NN:[483..487] acid))
+                (NML (-LRB-:[488..489] -LRB-) (NN:[489..495] 5-HIAA)
+                     (-RRB-:[495..496] -RRB-)))
+              (NN:[497..506] excretion))
+            (PP-LOC (IN:[508..510] in)
+              (NP (NNS:[511..515] rats)))
+            (S-ADV
+              (NP-SBJ (-NONE-:[515..515] *))
+              (ADJP-PRD (JJ:[516..526] indicative)
+                (PP (IN:[527..529] of)
+                  (NP
+                    (NP (DT:[530..531] a) (NN:[532..539] release))
+                    (PP (IN:[540..542] of)
+                      (NP
+                        (NP (NN:[543..562] 5-hydroxytryptamine))
+                        (NP (-LRB-:[563..564] -LRB-) (NN:[564..568] 5-HT)
+                            (-RRB-:[568..569] -RRB-))))
+                    (PP (IN:[570..574] from)
+                      (NP (JJ:[575..585] intestinal)
+                        (NML
+                          (NML (NN:[587..603] enterochromaffin))
+                          (NML (-LRB-:[604..605] -LRB-) (NN:[605..607] EC)
+                               (-RRB-:[607..608] -RRB-)))
+                        (NNS:[609..614] cells)))))))))))
+    (.:[614..615] .)))
+
+;sentence 5 Span:616..779
+;Cyclophosphamide is considered to be an inactive  prodrug and require
+;conversion to active emetic metabolities (e.g. phosphoramide  mustard) by
+;hepatic metabolism.
+;[616..632]:substance:"Cyclophosphamide"
+;[666..673]:substance:"prodrug"
+;[707..726]:substance:"emetic metabolities"
+;[733..755]:substance:"phosphoramide  mustard"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[616..632] Cyclophosphamide))
+    (VP (VBZ:[633..635] is)
+      (VP (VBN:[636..646] considered)
+        (S
+          (NP-SBJ-1 (-NONE-:[646..646] *))
+          (VP (TO:[647..649] to)
+            (VP
+              (VP (VB:[650..652] be)
+                (NP-PRD (DT:[653..655] an) (JJ:[656..664] inactive)
+                        (NN:[666..673] prodrug)))
+              (CC:[674..677] and)
+              (VP (VB:[678..685] require)
+                (NP
+                  (NP (NN:[686..696] conversion))
+                  (PP (TO:[697..699] to)
+                    (NP
+                      (NP (JJ:[700..706] active)
+                         (JJ:[707..713] emetic) (NNS:[714..726] metabolities))
+                      (NP (-LRB-:[727..728] -LRB-)
+                        (ADVP (FW:[728..732] e.g.))
+                         (NN:[733..746] phosphoramide) (NN:[748..755] mustard)
+                        (-RRB-:[755..756] -RRB-))))
+                  (PP (IN:[757..759] by)
+                    (NP (JJ:[760..767] hepatic) (NN:[768..778] metabolism))))))))))
+    (.:[778..779] .)))
+
+;sentence 6 Span:780..1034
+;However the presence of cytochrome P450 in the  intestine raises the
+;possibility of cyclophosphamide metabolism in the wall of  the intestine, a
+;site which would have considerable significance for 5-HT  release and the
+;emetic effects of cyclophosphamide.
+;[804..819]:cyp450:"cytochrome P450"
+;[864..880]:substance:"cyclophosphamide"
+;[977..981]:substance:"5-HT"
+;[1017..1033]:substance:"cyclophosphamide"
+(SENT
+  (S
+    (ADVP (RB:[780..787] However))
+    (NP-SBJ
+      (NP (DT:[788..791] the) (NN:[792..800] presence))
+      (PP (IN:[801..803] of)
+        (NP (NN:[804..814] cytochrome) (NN:[815..819] P450)))
+      (PP-LOC (IN:[820..822] in)
+        (NP (DT:[823..826] the) (NN:[828..837] intestine))))
+    (VP (VBZ:[838..844] raises)
+      (NP
+        (NP (DT:[845..848] the) (NN:[849..860] possibility))
+        (PP (IN:[861..863] of)
+          (NP
+            (NP (NN:[864..880] cyclophosphamide) (NN:[881..891] metabolism))
+            (PP-LOC (IN:[892..894] in)
+              (NP
+                (NP
+                  (NP (DT:[895..898] the) (NN:[899..903] wall))
+                  (PP (IN:[904..906] of)
+                    (NP (DT:[908..911] the) (NN:[912..921] intestine))))
+                (,:[921..922] ,)
+                (NP
+                  (NP (DT:[923..924] a) (NN:[925..929] site))
+                  (SBAR
+                    (WHNP-1 (WDT:[930..935] which))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[935..935] *T*))
+                      (VP (MD:[936..941] would)
+                        (VP (VB:[942..946] have)
+                          (NP (JJ:[947..959] considerable)
+                              (NN:[960..972] significance))
+                          (PP (IN:[973..976] for)
+                            (NP
+                              (NP (NN:[977..981] 5-HT) (NN:[983..990] release))
+                              (CC:[991..994] and)
+                              (NP
+                                (NP (DT:[995..998] the) (JJ:[999..1005] emetic)
+                                    (NNS:[1006..1013] effects))
+                                (PP (IN:[1014..1016] of)
+                                  (NP (NN:[1017..1033] cyclophosphamide)))))))))))))))))
+    (.:[1033..1034] .)))
+
+;sentence 7 Span:1035..1199
+;The aim of this study was to  investigate whether cyclophosphamide could
+;induce the release of 5-HT from the  isolated ileum and to examine its
+;mechanism of action.
+;[1085..1101]:substance:"cyclophosphamide"
+;[1130..1134]:substance:"5-HT"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1035..1038] The) (NN:[1039..1042] aim))
+      (PP (IN:[1043..1045] of)
+        (NP (DT:[1046..1050] this) (NN:[1051..1056] study))))
+    (VP (VBD:[1057..1060] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[1060..1060] *))
+        (VP
+          (VP (TO:[1061..1063] to)
+            (VP (VB:[1065..1076] investigate)
+              (SBAR (IN:[1077..1084] whether)
+                (S
+                  (NP-SBJ (NN:[1085..1101] cyclophosphamide))
+                  (VP (MD:[1102..1107] could)
+                    (VP (VB:[1108..1114] induce)
+                      (NP
+                        (NP (DT:[1115..1118] the) (NN:[1119..1126] release))
+                        (PP (IN:[1127..1129] of)
+                          (NP (NN:[1130..1134] 5-HT)))
+                        (PP (IN:[1135..1139] from)
+                          (NP (DT:[1140..1143] the) (VBN:[1145..1153] isolated)
+                              (NN:[1154..1159] ileum))))))))))
+          (CC:[1160..1163] and)
+          (VP (TO:[1164..1166] to)
+            (VP (VB:[1167..1174] examine)
+              (NP
+                (NP (PRP$:[1175..1178] its) (NN:[1179..1188] mechanism))
+                (PP (IN:[1189..1191] of)
+                  (NP (NN:[1192..1198] action)))))))))
+    (.:[1198..1199] .)))
+
+;sentence 8 Span:1200..1316
+;Cyclophosphamide (10(-6)M  and 10(-7)M) induced a concentration dependent
+;increase of 5-HT from rat  isolated ileum.
+;[1200..1216]:substance:"Cyclophosphamide"
+;[1218..1224]:quantitative-value:"10(-6)"
+;[1224..1225]:quantitative-units:"M"
+;[1231..1237]:quantitative-value:"10(-7)"
+;[1237..1238]:quantitative-units:"M"
+;[1286..1290]:substance:"5-HT"
+(SENT
+  (S
+    (NP-SBJ (NN:[1200..1216] Cyclophosphamide)
+      (PRN (-LRB-:[1217..1218] -LRB-)
+        (NP (CD:[1218..1224] 10-LRB--6-RRB-) (NN:[1224..1225] M))
+        (CC:[1227..1230] and)
+        (NP (CD:[1231..1237] 10-LRB--7-RRB-) (NN:[1237..1238] M))
+        (-RRB-:[1238..1239] -RRB-)))
+    (VP (VBD:[1240..1247] induced)
+      (NP
+        (NP (DT:[1248..1249] a)
+          (ADJP (NN:[1250..1263] concentration) (JJ:[1264..1273] dependent))
+          (NN:[1274..1282] increase))
+        (PP (IN:[1283..1285] of)
+          (NP
+            (NP (NN:[1286..1290] 5-HT))
+            (PP (IN:[1291..1295] from)
+              (NP (NN:[1296..1299] rat) (VBN:[1301..1309] isolated)
+                  (NN:[1310..1315] ileum)))))))
+    (.:[1315..1316] .)))
+
+;sentence 9 Span:1317..1458
+;This cyclophosphamide-induced 5-HT release was significantly  reduced by
+;granisetron (10(-6)M and 10(-7)M) or atropine (10(-7)M and 10(-6)M).
+;[1322..1338]:substance:"cyclophosphamide"
+;[1347..1351]:substance:"5-HT"
+;[1390..1401]:substance:"granisetron"
+;[1403..1409]:quantitative-value:"10(-6)"
+;[1409..1410]:quantitative-units:"M"
+;[1415..1421]:quantitative-value:"10(-7)"
+;[1421..1422]:quantitative-units:"M"
+;[1427..1435]:substance:"atropine"
+;[1437..1443]:quantitative-value:"10(-7)"
+;[1443..1444]:quantitative-units:"M"
+;[1449..1455]:quantitative-value:"10(-6)"
+;[1455..1456]:quantitative-units:"M"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1317..1321] This)
+      (ADJP (NN:[1322..1338] cyclophosphamide) (HYPH:[1338..1339] -)
+            (VBN:[1339..1346] induced))
+      (NN:[1347..1351] 5-HT) (NN:[1352..1359] release))
+    (VP (VBD:[1360..1363] was)
+      (ADVP (RB:[1364..1377] significantly))
+      (VP (VBN:[1379..1386] reduced)
+        (NP-1 (-NONE-:[1386..1386] *))
+        (PP (IN:[1387..1389] by)
+          (NP-LGS
+            (NP (NN:[1390..1401] granisetron)
+              (PRN (-LRB-:[1402..1403] -LRB-)
+                (NP
+                  (NP (CD:[1403..1409] 10-LRB--6-RRB-) (NN:[1409..1410] M))
+                  (CC:[1411..1414] and)
+                  (NP (CD:[1415..1421] 10-LRB--7-RRB-) (NN:[1421..1422] M)))
+                (-RRB-:[1422..1423] -RRB-)))
+            (CC:[1424..1426] or)
+            (NP (NN:[1427..1435] atropine)
+              (PRN (-LRB-:[1436..1437] -LRB-)
+                (NP
+                  (NP (CD:[1437..1443] 10-LRB--7-RRB-) (NN:[1443..1444] M))
+                  (CC:[1445..1448] and)
+                  (NP (CD:[1449..1455] 10-LRB--6-RRB-) (NN:[1455..1456] M)))
+                (-RRB-:[1456..1457] -RRB-)))))))
+    (.:[1457..1458] .)))
+
+;sentence 10 Span:1460..1559
+;Tetrodotoxin (10(-6)M completely inhibited the increased 5-HT release induced
+;by  cyclophosphamide.
+;[1460..1472]:substance:"Tetrodotoxin"
+;[1474..1480]:quantitative-value:"10(-6)"
+;[1480..1481]:quantitative-units:"M"
+;[1517..1521]:substance:"5-HT"
+;[1542..1558]:substance:"cyclophosphamide"
+(SENT
+  (S
+    (NP-SBJ (NN:[1460..1472] Tetrodotoxin)
+      (PRN (-LRB-:[1473..1474] -LRB-)
+        (NP (CD:[1474..1480] 10-LRB--6-RRB-) (NN:[1480..1481] M))))
+    (ADVP (RB:[1482..1492] completely))
+    (VP (VBD:[1493..1502] inhibited)
+      (NP
+        (NP (DT:[1503..1506] the) (VBN:[1507..1516] increased)
+            (NN:[1517..1521] 5-HT) (NN:[1522..1529] release))
+        (VP (VBN:[1530..1537] induced)
+          (NP (-NONE-:[1537..1537] *))
+          (PP-MNR (IN:[1538..1540] by)
+            (NP (NN:[1542..1558] cyclophosphamide))))))
+    (.:[1558..1559] .)))
+
+;sentence 11 Span:1560..1691
+;These results suggest that cyclophosphamide has the capacity  to induce 5-HT
+;release via activation of enteric cholinergic neurons.
+;[1587..1603]:substance:"cyclophosphamide"
+;[1632..1636]:substance:"5-HT"
+(SENT
+  (S
+    (NP-SBJ (DT:[1560..1565] These) (NNS:[1566..1573] results))
+    (VP (VBP:[1574..1581] suggest)
+      (SBAR (IN:[1582..1586] that)
+        (S
+          (NP-SBJ (NN:[1587..1603] cyclophosphamide))
+          (VP (VBZ:[1604..1607] has)
+            (NP (DT:[1608..1611] the) (NN:[1612..1620] capacity)
+              (S
+                (NP-SBJ (-NONE-:[1620..1620] *))
+                (VP (TO:[1622..1624] to)
+                  (VP (VB:[1625..1631] induce)
+                    (NP (NN:[1632..1636] 5-HT) (NN:[1637..1644] release))
+                    (PP (IN:[1645..1648] via)
+                      (NP
+                        (NP (NN:[1649..1659] activation))
+                        (PP (IN:[1660..1662] of)
+                          (NP (JJ:[1663..1670] enteric)
+                              (JJ:[1671..1682] cholinergic)
+                              (NNS:[1683..1690] neurons)))))))))))))
+    (.:[1690..1691] .)))
+
+;sentence 12 Span:1692..1963
+;In  addition the in vitro study demonstrate for the first time that
+;cyclophosphamide  may be activated to emetic metabolites at extra-hepatic
+;sites (e.g. intestine)  and that conversion at these sites could contribute
+;to the mechanism of  cyclophosphamide induced emesis.
+;[1760..1776]:substance:"cyclophosphamide"
+;[1798..1816]:substance:"emetic metabolites"
+;[1931..1947]:substance:"cyclophosphamide"
+(SENT
+  (S
+    (PP (IN:[1692..1694] In)
+      (NP (NN:[1696..1704] addition)))
+    (NP-SBJ (DT:[1705..1708] the)
+      (ADJP (FW:[1709..1711] in) (FW:[1712..1717] vitro))
+      (NN:[1718..1723] study))
+    (VP (VBP:[1724..1735] demonstrate)
+      (PP (IN:[1736..1739] for)
+        (NP (DT:[1740..1743] the) (JJ:[1744..1749] first) (NN:[1750..1754] time)))
+      (SBAR
+        (SBAR (IN:[1755..1759] that)
+          (S
+            (NP-SBJ-1 (NN:[1760..1776] cyclophosphamide))
+            (VP (MD:[1778..1781] may)
+              (VP (VB:[1782..1784] be)
+                (VP (VBN:[1785..1794] activated)
+                  (NP-1 (-NONE-:[1794..1794] *))
+                  (PP (TO:[1795..1797] to)
+                    (NP (JJ:[1798..1804] emetic) (NNS:[1805..1816] metabolites)))
+                  (PP-LOC (IN:[1817..1819] at)
+                    (NP
+                      (ADJP (AFX:[1820..1825] extra) (HYPH:[1825..1826] -)
+                            (JJ:[1826..1833] hepatic))
+                      (NNS:[1834..1839] sites)
+                      (PRN (-LRB-:[1840..1841] -LRB-)
+                        (NP
+                          (ADVP (FW:[1841..1845] e.g.))
+                          (NN:[1846..1855] intestine))
+                        (-RRB-:[1855..1856] -RRB-)))))))))
+        (CC:[1858..1861] and)
+        (SBAR (IN:[1862..1866] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1867..1877] conversion))
+              (PP-LOC (IN:[1878..1880] at)
+                (NP (DT:[1881..1886] these) (NNS:[1887..1892] sites))))
+            (VP (MD:[1893..1898] could)
+              (VP (VB:[1899..1909] contribute)
+                (PP-CLR (TO:[1910..1912] to)
+                  (NP
+                    (NP (DT:[1913..1916] the) (NN:[1917..1926] mechanism))
+                    (PP (IN:[1927..1929] of)
+                      (NP
+                        (ADJP (NN:[1931..1947] cyclophosphamide)
+                              (VBN:[1948..1955] induced))
+                        (NN:[1956..1962] emesis)))))))))))
+    (.:[1962..1963] .)))
+
+;section 13 Span:1967..2011
+;PMID: 9507564 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1967..1971] PMID) (::[1971..1972] :) (CD:[1973..1980] 9507564)
+        (IN:[1981..1982] -LSB-) (NNP:[1982..1988] PubMed) (HYPH:[1989..1990] -)
+        (JJ:[1991..1998] indexed) (IN:[1999..2002] for)
+        (NNP:[2003..2011] MEDLINE-RSB-)))

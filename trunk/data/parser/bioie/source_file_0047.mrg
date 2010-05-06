@@ -1,0 +1,226 @@
+;PMID: 1639908
+;source_file_1859.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..238] = [t:46..238]
+;2)section:[e:242..277] = [t:242..277]
+;3)section:[e:281..364] = [t:281..364]
+;4)sentence:[e:368..471] = [t:368..471]
+;5)sentence:[e:472..643] = [t:472..643]
+;6)sentence:[e:644..882] = [t:644..882]
+;7)sentence:[e:883..981] = [t:883..981]
+;8)section:[e:985..1029] = [t:985..1029]
+
+;section 0 Span:0..40
+;J Chromatogr. 1992 Feb 28;593(1-2):25-8.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..12] Chromatogr) (.:[12..13] .)
+        (CD:[14..18] 1992) (NNP:[19..22] Feb) (CD:[23..28] 28;59)
+        (CD:[28..29] 3) (NN:[29..30] -LRB-) (NN:[30..33] 1-2)
+        (-RRB-:[33..34] -RRB-) (CD:[34..38] :25-) (CD:[38..40] 8.)))
+
+;sentence 1 Span:46..238
+;High-performance liquid chromatographic analysis of FCE 24304 
+;(6-methylenandrosta-1,4-diene-3,17-dione) and FCE 24928 
+;(4-aminoandrosta-1,4,6-triene-3,17-dione), two new aromatase inhibitors.
+;[98..107]:substance:"FCE 24304"
+;[110..149]:substance:"6-methylenandrosta-1,4-diene-3,17-dione"
+;[155..164]:substance:"FCE 24928"
+;[167..206]:substance:"4-aminoandrosta-1,4,6-triene-3,17-dione"
+;[217..226]:substance:"aromatase"
+;[227..237]:substance:"inhibitors"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (JJ:[46..50] High) (HYPH:[50..51] -) (NN:[51..62] performance))
+      (JJ:[63..69] liquid) (JJ:[70..85] chromatographic) (NN:[86..94] analysis))
+    (PP (IN:[95..97] of)
+      (NP
+        (NP
+          (NP
+            (NP (NN:[98..101] FCE) (CD:[102..107] 24304))
+            (NP (-LRB-:[109..110] -LRB-)
+                (NN:[110..149] 6-methylenandrosta-1,4-diene-3,17-dione)
+                (-RRB-:[149..150] -RRB-)))
+          (CC:[151..154] and)
+          (NP
+            (NP (NN:[155..158] FCE) (CD:[159..164] 24928))
+            (NP (-LRB-:[166..167] -LRB-)
+                (NN:[167..206] 4-aminoandrosta-1,4,6-triene-3,17-dione)
+                (-RRB-:[206..207] -RRB-))))
+        (,:[207..208] ,)
+        (NP (CD:[209..212] two) (JJ:[213..216] new) (NN:[217..226] aromatase)
+            (NNS:[227..237] inhibitors))))
+    (.:[237..238] .)))
+
+;section 2 Span:242..277
+;Del Nero S, Di Somma M, Vigevani A.
+(SEC
+  (FRAG (NN:[242..245] Del) (NNP:[246..250] Nero) (NNP:[251..252] S)
+        (,:[252..253] ,) (NNP:[254..256] Di) (NNP:[257..262] Somma)
+        (NNP:[263..265] M,) (NNP:[266..274] Vigevani) (NNP:[275..276] A)
+        (.:[276..277] .)))
+
+;section 3 Span:281..364
+;Department of Analytical Chemistry, R & D Farmitalia Carlo Erba Srl, Milan, 
+;Italy.
+(SEC
+  (FRAG (NNP:[281..291] Department) (IN:[292..294] of)
+        (NNP:[295..305] Analytical) (NNP:[306..315] Chemistry) (,:[315..316] ,)
+        (NNP:[317..318] R) (CC:[319..320] &) (NNP:[321..322] D)
+        (NNP:[323..333] Farmitalia) (NNP:[334..339] Carlo) (NNP:[340..344] Erba)
+        (NNP:[345..348] Srl) (,:[348..349] ,) (NNP:[350..355] Milan)
+        (,:[355..356] ,) (NNP:[358..363] Italy) (.:[363..364] .)))
+
+;sentence 4 Span:368..471
+;The cytochrome P-450-dependent aromatase enzyme plays an important role in 
+;hormone-dependent diseases.
+;[372..388]:cyp450:"cytochrome P-450"
+;[399..415]:cyp450:"aromatase enzyme"
+;[444..451]:substance:"hormone"
+(SENT
+  (S
+    (NP-SBJ (DT:[368..371] The)
+      (ADJP
+        (NML (NN:[372..382] cytochrome) (NN:[383..388] P-450))
+        (HYPH:[388..389] -) (JJ:[389..398] dependent))
+       (NN:[399..408] aromatase) (NN:[409..415] enzyme))
+    (VP (VBZ:[416..421] plays)
+      (NP (DT:[422..424] an) (JJ:[425..434] important) (NN:[435..439] role))
+      (PP (IN:[440..442] in)
+        (NP
+          (ADJP (NN:[444..451] hormone) (HYPH:[451..452] -)
+                (JJ:[452..461] dependent))
+          (NNS:[462..470] diseases))))
+    (.:[470..471] .)))
+
+;sentence 5 Span:472..643
+;Many products that inhibit this type of enzyme were  obtained: FCE 24304 (I)
+;and FCE 24928 (II) proved to possess remarkable activity  and are presently
+;under development.
+;[512..518]:substance:"enzyme"
+;[535..544]:substance:"FCE 24304"
+;[553..562]:substance:"FCE 24928"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (JJ:[472..476] Many) (NNS:[477..485] products))
+        (SBAR
+          (WHNP-1 (WDT:[486..490] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[490..490] *T*))
+            (VP
+              (NP (VBP:[491..498] inhibit))
+              (NP
+                (NP (DT:[499..503] this) (NN:[504..508] type))
+                (PP (IN:[509..511] of)
+                  (NP (NN:[512..518] enzyme))))))))
+      (VP (VBD:[519..523] were)
+        (VP (VBN:[525..533] obtained)
+          (NP-2 (-NONE-:[533..533] *)))))
+    (::[533..534] :)
+    (S
+      (NP-SBJ-3
+        (NP
+          (NP (NN:[535..538] FCE) (CD:[539..544] 24304))
+          (NP (LS:[545..548] -LRB-I-RRB-)))
+        (CC:[549..552] and)
+        (NP
+          (NP (NN:[553..556] FCE) (CD:[557..562] 24928))
+          (NP (LS:[563..567] -LRB-II-RRB-))))
+      (VP
+        (VP (VBD:[568..574] proved)
+          (S
+            (NP-SBJ-3 (-NONE-:[574..574] *))
+            (VP (TO:[575..577] to)
+              (VP (VB:[578..585] possess)
+                (NP (JJ:[586..596] remarkable) (NN:[597..605] activity))))))
+        (CC:[607..610] and)
+        (VP (VBP:[611..614] are)
+          (ADVP-TMP (RB:[615..624] presently))
+          (PP-PRD (IN:[625..630] under)
+            (NP (NN:[631..642] development))))))
+    (.:[642..643] .)))
+
+;sentence 6 Span:644..882
+;Compounds I and II and their synthetic  intermediates are analyzed by means
+;of a high-performance liquid chromatographic  method, affording rapid and
+;efficient separation, good resolution and  identification of all the examined
+;compounds.
+;[644..655]:substance:"Compounds I"
+;[644..653]...[660..662]:substance:"Compounds"..."II"
+;[684..697]:substance:"intermediates"
+;[872..881]:substance:"compounds"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NP
+          (NML-2 (NNS:[644..653] Compounds))
+          (CD:[654..655] I))
+        (CC:[656..659] and)
+        (NP
+          (NML-2 (-NONE-:[659..659] *P*))
+          (CD:[660..662] II)))
+      (CC:[663..666] and)
+      (NP (PRP$:[667..672] their) (JJ:[673..682] synthetic)
+          (NNS:[684..697] intermediates)))
+    (VP (VBP:[698..701] are)
+      (VP (VBN:[702..710] analyzed)
+        (NP-3 (-NONE-:[710..710] *))
+        (PP-MNR (IN:[711..713] by)
+          (NP
+            (NP (NNS:[714..719] means))
+            (PP (IN:[720..722] of)
+              (NP (DT:[723..724] a)
+                (NP (JJ:[725..729] high) (HYPH:[729..730] -)
+                    (NN:[730..741] performance))
+                (JJ:[742..748] liquid) (JJ:[749..764] chromatographic)
+                 (NN:[766..772] method)))))
+        (,:[772..773] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[773..773] *))
+          (VP (VBG:[774..783] affording)
+            (NP
+              (NP
+                (ADJP (JJ:[784..789] rapid) (CC:[790..793] and)
+                      (JJ:[794..803] efficient))
+                (NN:[804..814] separation))
+              (,:[814..815] ,)
+              (NP (JJ:[816..820] good) (NN:[821..831] resolution))
+              (CC:[832..835] and)
+              (NP
+                (NP (NN:[837..851] identification))
+                (PP (IN:[852..854] of)
+                  (NP (PDT:[855..858] all) (DT:[859..862] the)
+                      (VBN:[863..871] examined) (NNS:[872..881] compounds)))))))))
+    (.:[881..882] .)))
+
+;sentence 7 Span:883..981
+;The linearity, specificity,  sensitivity, precision and accuracy for the
+;method are also provided.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[883..886] The) (NN:[887..896] linearity) (,:[896..897] ,)
+          (NN:[898..909] specificity) (,:[909..910] ,)
+          (NN:[912..923] sensitivity) (,:[923..924] ,) (NN:[925..934] precision)
+          (CC:[935..938] and) (NN:[939..947] accuracy))
+      (PP (IN:[948..951] for)
+        (NP (DT:[952..955] the) (NN:[956..962] method))))
+    (VP (VBP:[963..966] are)
+      (ADVP (RB:[967..971] also))
+      (VP (VBN:[972..980] provided)
+        (NP-1 (-NONE-:[980..980] *))))
+    (.:[980..981] .)))
+
+;section 8 Span:985..1029
+;PMID: 1639908 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[985..989] PMID) (::[989..990] :) (CD:[991..998] 1639908)
+        (NN:[999..1000] -LSB-) (NNP:[1000..1006] PubMed) (::[1007..1008] -)
+        (NN:[1009..1016] indexed) (IN:[1017..1020] for)
+        (NNP:[1021..1029] MEDLINE-RSB-)))

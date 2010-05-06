@@ -1,0 +1,303 @@
+;PMID: 10804287
+;source_file_735.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..93] = [t:43..93]
+;2)section:[e:97..184] = [t:97..184]
+;3)section:[e:188..337] = [t:188..337]
+;4)sentence:[e:341..456] = [t:341..456]
+;5)sentence:[e:457..591] = [t:457..591]
+;6)sentence:[e:592..1060] = [t:592..1060]
+;7)sentence:[e:1061..1149] = [t:1061..1149]
+;8)sentence:[e:1150..1246] = [t:1150..1246]
+;9)sentence:[e:1247..1355] = [t:1247..1355]
+;10)section:[e:1359..1404] = [t:1359..1404]
+
+;section 0 Span:0..38
+;Jpn J Cancer Res  2000 Apr;91(4):395-8
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 2000) (.:[23..30] Apr;91-LRB-) (CD:[30..32] 4-RRB-)
+        (CD:[32..36] :395) (::[36..37] -) (CD:[37..38] 8)))
+
+;sentence 1 Span:43..93
+;Mutation of the SRC gene in endometrial carcinoma.
+;[59..62]:gene-rna:"SRC"
+;[71..92]:malignancy:"endometrial carcinoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[43..51] Mutation))
+    (PP (IN:[52..54] of)
+      (NP (DT:[55..58] the) (NN:[59..62] SRC) (NN:[63..67] gene)))
+    (PP (IN:[68..70] in)
+      (NP (JJ:[71..82] endometrial) (NN:[83..92] carcinoma)))
+    (.:[92..93] .)))
+
+;section 2 Span:97..184
+;Sugimura M, Kobayashi K, Sagae S, Nishioka Y, Ishioka S, Terasawa K, Tokino
+;T,  Kudo R.
+(SEC
+  (FRAG (NNP:[97..105] Sugimura) (NNP:[106..108] M,) (NNP:[109..118] Kobayashi)
+        (NNP:[119..120] K) (,:[120..121] ,) (NNP:[122..127] Sagae)
+        (NNP:[128..130] S,) (NNP:[131..139] Nishioka) (NNP:[140..141] Y)
+        (,:[141..142] ,) (NNP:[143..150] Ishioka) (NNP:[151..153] S,)
+        (NNP:[154..162] Terasawa) (NNP:[163..164] K) (,:[164..165] ,)
+        (NNP:[166..172] Tokino) (NNP:[173..174] T) (,:[174..175] ,)
+        (NNP:[177..181] Kudo) (NNP:[182..184] R.)))
+
+;section 3 Span:188..337
+;Department of Obstetrics and Gynecology, Cancer Research Institute, Sapporo 
+;Medical University School of Medicine, Chuo-ku, Sapporo 060-0061, Japan.
+(SEC
+  (FRAG (NNP:[188..198] Department) (IN:[199..201] of)
+        (NNP:[202..212] Obstetrics) (CC:[213..216] and)
+        (NNP:[217..227] Gynecology) (,:[227..228] ,) (NNP:[229..235] Cancer)
+        (NNP:[236..244] Research) (NNP:[245..254] Institute) (,:[254..255] ,)
+        (NNP:[256..263] Sapporo) (NNP:[265..272] Medical)
+        (NNP:[273..283] University) (NNP:[284..290] School) (IN:[291..293] of)
+        (NNP:[294..302] Medicine) (,:[302..303] ,) (NNP:[304..308] Chuo)
+        (::[308..309] -) (NN:[309..311] ku) (,:[311..312] ,)
+        (NNP:[313..320] Sapporo) (CD:[321..324] 060) (CD:[324..329] -0061)
+        (,:[329..330] ,) (NNP:[331..336] Japan) (.:[336..337] .)))
+
+;sentence 4 Span:341..456
+;Recently, an activating mutation of the SRC gene has been implicated in about
+; one-tenth of advanced colon cancers.
+;[381..384]:gene-rna:"SRC"
+;[433..455]:malignancy:"advanced colon cancers"
+(SENT
+  (S
+    (ADVP-TMP (RB:[341..349] Recently))
+    (,:[349..350] ,)
+    (NP-SBJ-1
+      (NP (DT:[351..353] an) (VBG:[354..364] activating)
+          (NN:[365..373] mutation))
+      (PP (IN:[374..376] of)
+        (NP (DT:[377..380] the) (NN:[381..384] SRC) (NN:[385..389] gene))))
+    (VP (VBZ:[390..393] has)
+      (VP (VBN:[394..398] been)
+        (VP (VBN:[399..409] implicated)
+          (NP-1 (-NONE-:[409..409] *))
+          (PP (IN:[410..412] in)
+            (NP
+              (NP (RB:[413..418] about) (NN:[420..429] one-tenth))
+              (PP (IN:[430..432] of)
+                (NP (VBN:[433..441] advanced) (NN:[442..447] colon)
+                    (NNS:[448..455] cancers))))))))
+    (.:[455..456] .)))
+
+;sentence 5 Span:457..591
+;The SRC 531 mutation results in truncation  of SRC directly C-terminal to the
+;regulatory Tyr 530 and appears to activate the  Tyr 530.
+;[461..464]:gene-rna:"SRC"
+;[465..468]:variation-location:"531"
+;[469..477]:variation-event:"mutation"
+;[489..499]:variation-type:"truncation"
+;[504..507]:gene-rna:"SRC"
+;[550..553]:variation-location:"530"
+;[587..591]:variation-location:"530."
+(SENT
+  (S
+    (NP-SBJ (DT:[457..460] The) (NN:[461..464] SRC) (CD:[465..468] 531)
+            (NN:[469..477] mutation))
+    (VP
+      (VP (VBZ:[478..485] results)
+        (PP-CLR (IN:[486..488] in)
+          (NP
+            (NP (NN:[489..499] truncation))
+            (PP (IN:[501..503] of)
+              (NP
+                (NP (NN:[504..507] SRC))
+                (ADJP (RB:[508..516] directly) (NN:[517..518] C)
+                      (HYPH:[518..519] -) (JJ:[519..527] terminal)
+                  (PP (TO:[528..530] to)
+                    (NP (DT:[531..534] the) (JJ:[535..545] regulatory)
+                        (NN:[546..549] Tyr) (CD:[550..553] 530)))))))))
+      (CC:[554..557] and)
+      (VP (VBZ:[558..565] appears)
+        (S
+          (NP-SBJ (-NONE-:[565..565] *))
+          (VP (TO:[566..568] to)
+            (VP (VB:[569..577] activate)
+              (NP (DT:[578..581] the) (NN:[583..586] Tyr) (CD:[587..590] 530)))))))
+    (.:[590..591] .)))
+
+;sentence 6 Span:592..1060
+;To investigate whether mutation of SRC plays an important role in the 
+;development and progression of gynecological tumors, we performed mutational 
+;analysis of the entire coding region of SRC in 70 ovarian carcinomas, 68 
+;endometrial carcinomas and 3 endometrial stromal sarcomas by means of
+;polymerase  chain reaction-single strand conformation polymorphism (PCR-SSCP)
+;followed by  nucleotide sequencing and restriction fragment length
+;polymorphism (RFLP)  analysis.
+;[627..630]:gene-rna:"SRC"
+;[694..714]:malignancy:"gynecological tumors"
+;[781..784]:gene-rna:"SRC"
+;[791..809]:malignancy:"ovarian carcinomas"
+;[815..837]:malignancy:"endometrial carcinomas"
+;[844..872]:malignancy:"endometrial stromal sarcomas"
+;[885..895]:gene-protein:"polymerase"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[592..592] *))
+      (VP (TO:[592..594] To)
+        (VP (VB:[595..606] investigate)
+          (SBAR (IN:[607..614] whether)
+            (S
+              (NP-SBJ
+                (NP (NN:[615..623] mutation))
+                (PP (IN:[624..626] of)
+                  (NP (NN:[627..630] SRC))))
+              (VP (VBZ:[631..636] plays)
+                (NP (DT:[637..639] an) (JJ:[640..649] important)
+                    (NN:[650..654] role))
+                (PP (IN:[655..657] in)
+                  (NP
+                    (NP (DT:[658..661] the) (NN:[663..674] development)
+                        (CC:[675..678] and) (NN:[679..690] progression))
+                    (PP (IN:[691..693] of)
+                      (NP (JJ:[694..707] gynecological) (NNS:[708..714] tumors)))))))))))
+    (,:[714..715] ,)
+    (NP-SBJ (PRP:[716..718] we))
+    (VP (VBD:[719..728] performed)
+      (NP
+        (NP (JJ:[729..739] mutational) (NN:[741..749] analysis))
+        (PP (IN:[750..752] of)
+          (NP
+            (NP (DT:[753..756] the) (JJ:[757..763] entire)
+                (NN:[764..770] coding) (NN:[771..777] region))
+            (PP (IN:[778..780] of)
+              (NP (NN:[781..784] SRC)))))
+        (PP-LOC (IN:[785..787] in)
+          (NP
+            (NP (CD:[788..790] 70)
+               (JJ:[791..798] ovarian) (NNS:[799..809] carcinomas))
+            (,:[809..810] ,)
+            (NP (CD:[811..813] 68)
+               (JJ:[815..826] endometrial) (NNS:[827..837] carcinomas))
+            (CC:[838..841] and)
+            (NP (CD:[842..843] 3)
+               (JJ:[844..855] endometrial) (JJ:[856..863] stromal)
+               (NNS:[864..872] sarcomas)))))
+      (PP-MNR (IN:[873..875] by)
+        (NP
+          (NP (NNS:[876..881] means))
+          (PP (IN:[882..884] of)
+            (NP
+              (NP
+                (NP
+                  (NML (NN:[885..895] polymerase) (NN:[897..902] chain)
+                       (NN:[903..911] reaction))
+                  (HYPH:[911..912] -)
+                  (NML
+                    (NML (JJ:[912..918] single) (NN:[919..925] strand))
+                    (NN:[926..938] conformation) (NN:[939..951] polymorphism)))
+                (NP (-LRB-:[952..953] -LRB-) (NN:[953..956] PCR)
+                    (HYPH:[956..957] -) (NN:[957..961] SSCP)
+                    (-RRB-:[961..962] -RRB-)))
+              (VP (VBN:[963..971] followed)
+                (NP (-NONE-:[971..971] *))
+                (PP (IN:[972..974] by)
+                  (NP-LGS
+                    (NP (NN:[976..986] nucleotide) (NN:[987..997] sequencing))
+                    (CC:[998..1001] and)
+                    (NP
+                      (NML
+                        (NML (NN:[1002..1013] restriction)
+                             (NN:[1014..1022] fragment) (NN:[1023..1029] length)
+                             (NN:[1030..1042] polymorphism))
+                        (NML (-LRB-:[1043..1044] -LRB-) (NN:[1044..1048] RFLP)
+                             (-RRB-:[1048..1049] -RRB-)))
+                      (NN:[1051..1059] analysis))))))))))
+    (.:[1059..1060] .)))
+
+;sentence 7 Span:1061..1149
+;We found one truncated mutation at codon 531 (Gln to Stop) in an  endometrial
+;carcinoma.
+;[1074..1092]:variation-type:"truncated mutation"
+;[1096..1105]:variation-location:"codon 531"
+;[1107..1110]:variation-state-original:"Gln"
+;[1114..1118]:variation-state-altered:"Stop"
+;[1127..1148]:malignancy:"endometrial carcinoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1061..1063] We))
+    (VP (VBD:[1064..1069] found)
+      (NP (CD:[1070..1073] one)
+         (VBN:[1074..1083] truncated) (NN:[1084..1092] mutation))
+      (PP-LOC (IN:[1093..1095] at)
+        (NP
+           (NN:[1096..1101] codon) (CD:[1102..1105] 531)
+          (PRN (-LRB-:[1106..1107] -LRB-)
+            (NP
+              (NP (NN:[1107..1110] Gln))
+              (PP (TO:[1111..1113] to)
+                (NP (NN:[1114..1118] Stop))))
+            (-RRB-:[1118..1119] -RRB-))))
+      (PP-LOC (IN:[1120..1122] in)
+        (NP (DT:[1123..1125] an)
+           (JJ:[1127..1138] endometrial) (NN:[1139..1148] carcinoma))))
+    (.:[1148..1149] .)))
+
+;sentence 8 Span:1150..1246
+;However, we found no mutation of this gene in ovarian  carcinoma or
+;endometrial stromal sarcoma.
+;[1188..1192]:gene-rna:"gene"
+;[1196..1214]:malignancy:"ovarian  carcinoma"
+;[1218..1245]:malignancy:"endometrial stromal sarcoma"
+(SENT
+  (S
+    (ADVP (RB:[1150..1157] However))
+    (,:[1157..1158] ,)
+    (NP-SBJ (PRP:[1159..1161] we))
+    (VP (VBD:[1162..1167] found)
+      (NP
+        (NP (DT:[1168..1170] no) (NN:[1171..1179] mutation))
+        (PP (IN:[1180..1182] of)
+          (NP (DT:[1183..1187] this) (NN:[1188..1192] gene))))
+      (PP (IN:[1193..1195] in)
+        (NP
+          (NP (JJ:[1196..1203] ovarian) (NN:[1205..1214] carcinoma))
+          (CC:[1215..1217] or)
+          (NP (JJ:[1218..1229] endometrial) (JJ:[1230..1237] stromal)
+              (NN:[1238..1245] sarcoma)))))
+    (.:[1245..1246] .)))
+
+;sentence 9 Span:1247..1355
+;Our results suggest that mutation of  SRC may be implicated in a small
+;proportion of endometrial carcinomas.
+;[1285..1288]:gene-rna:"SRC"
+;[1332..1354]:malignancy:"endometrial carcinomas"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1247..1250] Our) (NNS:[1251..1258] results))
+    (VP (VBP:[1259..1266] suggest)
+      (SBAR (IN:[1267..1271] that)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1272..1280] mutation))
+            (PP (IN:[1281..1283] of)
+              (NP (NN:[1285..1288] SRC))))
+          (VP (MD:[1289..1292] may)
+            (VP (VB:[1293..1295] be)
+              (VP (VBN:[1296..1306] implicated)
+                (NP-1 (-NONE-:[1306..1306] *))
+                (PP-CLR (IN:[1307..1309] in)
+                  (NP
+                    (NP (DT:[1310..1311] a) (JJ:[1312..1317] small)
+                        (NN:[1318..1328] proportion))
+                    (PP (IN:[1329..1331] of)
+                      (NP (JJ:[1332..1343] endometrial)
+                          (NNS:[1344..1354] carcinomas)))))))))))
+    (.:[1354..1355] .)))
+
+;section 10 Span:1359..1404
+;PMID: 10804287 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1359..1363] PMID) (::[1363..1364] :) (CD:[1365..1373] 10804287)
+        (NN:[1374..1375] -LSB-) (NNP:[1375..1381] PubMed) (::[1382..1383] -)
+        (NN:[1384..1391] indexed) (IN:[1392..1395] for)
+        (NNP:[1396..1404] MEDLINE-RSB-)))

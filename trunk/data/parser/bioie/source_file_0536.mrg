@@ -1,0 +1,273 @@
+;PMID: 7078154
+;source_file_1016.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..159] = [t:47..159]
+;2)section:[e:163..222] = [t:163..222]
+;3)sentence:[e:226..492] = [t:226..492]
+;4)sentence:[e:493..631] = [t:493..631]
+;5)sentence:[e:632..826] = [t:632..826]
+;6)sentence:[e:827..999] = [t:827..999]
+;7)sentence:[e:1000..1151] = [t:1000..1151]
+;8)section:[e:1155..1199] = [t:1155..1199]
+
+;section 0 Span:0..41
+;J Steroid Biochem. 1982 Feb;16(2):157-63.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Steroid) (NNP:[10..17] Biochem)
+        (.:[17..18] .) (CD:[19..23] 1982) (CC:[24..31] Feb;16-LRB-)
+        (CD:[31..32] 2) (-RRB-:[32..33] -RRB-) (CD:[33..37] :157) (::[37..38] -)
+        (CD:[38..40] 63) (.:[40..41] .)))
+
+;sentence 1 Span:47..159
+;Aromatization of 15 alpha and 16 alpha hydroxylated androgens in the human 
+;placental using [1,2-3H]-substrates.
+;[99..108]:substance:"androgens"
+;[139..158]:substance:"[1,2-3H]-substrates"
+(SENT
+  (NP-HLN
+    (NP (NN:[47..60] Aromatization))
+    (PP (IN:[61..63] of)
+      (NP
+        (NP
+          (ADJP
+            (NML (CD:[64..66] 15) (SYM:[67..72] alpha))
+            (ADJP-2 (-NONE-:[72..72] *P*)))
+          (NML-1 (-NONE-:[72..72] *P*)))
+        (CC:[73..76] and)
+        (NP
+          (ADJP
+            (NML (CD:[77..79] 16) (SYM:[80..85] alpha))
+            (ADJP-2 (VBN:[86..98] hydroxylated)))
+          (NML-1 (NNS:[99..108] androgens)))))
+    (PP-LOC (IN:[109..111] in)
+      (NP (DT:[112..115] the) (JJ:[116..121] human) (NN:[123..132] placental)))
+    (S-ADV
+      (NP-SBJ (-NONE-:[132..132] *))
+      (VP (VBG:[133..138] using)
+        (NP (NNS:[139..158] -LSB-1,2-3H-RSB--substrates))))
+    (.:[158..159] .)))
+
+;section 2 Span:163..222
+;Cantineau R, Kremers P, De Graeve J, Gielen JE, Lambotte R.
+(SEC
+  (FRAG (NNP:[163..172] Cantineau) (NNP:[173..175] R,) (NNP:[176..183] Kremers)
+        (NNP:[184..185] P) (,:[185..186] ,) (NNP:[187..189] De)
+        (NNP:[190..196] Graeve) (NNP:[197..199] J,) (NNP:[200..206] Gielen)
+        (NNP:[207..209] JE) (,:[209..210] ,) (NNP:[211..219] Lambotte)
+        (NNP:[220..222] R.)))
+
+;sentence 3 Span:226..492
+;This in vitro study reports data on the aromatization of [1,2-3H]-C19
+;steroids  in the human term placenta [androstenedione (III), testosterone
+;(IV), 15  alpha-hydroxy-androstenedione (V), 15 alpha-hydroxy-testosterone
+;(VI), 16  alpha-hydroxy-androstenedione (VII)].
+;[283..304]:substance:"[1,2-3H]-C19 steroids"
+;[334..349]:substance:"androstenedione"
+;[351..354]:substance:"III"
+;[357..369]:substance:"testosterone"
+;[371..373]:substance:"IV"
+;[376..409]:substance:"15  alpha-hydroxy-androstenedione"
+;[411..412]:substance:"V"
+;[415..444]:substance:"15 alpha-hydroxy-testosterone"
+;[446..448]:substance:"VI"
+;[451..484]:substance:"16  alpha-hydroxy-androstenedione"
+;[486..489]:substance:"VII"
+(SENT
+  (S
+    (NP-SBJ (DT:[226..230] This)
+      (ADJP (FW:[231..233] in) (FW:[234..239] vitro))
+      (NN:[240..245] study))
+    (VP (VBZ:[246..253] reports)
+      (NP
+        (NP (NNS:[254..258] data))
+        (PP (IN:[259..261] on)
+          (NP
+            (NP (DT:[262..265] the) (NN:[266..279] aromatization))
+            (PP (IN:[280..282] of)
+              (NP (NN:[283..295] -LSB-1,2-3H-RSB--C19) (NNS:[296..304] steroids)))
+            (PP-LOC (IN:[306..308] in)
+              (NP (DT:[309..312] the) (JJ:[313..318] human) (NN:[319..323] term)
+                  (NN:[324..332] placenta)))
+            (PRN (-LRB-:[333..334] -LSB-)
+              (NP (NN:[334..349] androstenedione)
+                (PRN (-LRB-:[350..351] -LRB-)
+                  (NP (CD:[351..354] III))
+                  (-RRB-:[354..355] -RRB-)))
+              (,:[355..356] ,)
+              (NP (NN:[357..369] testosterone)
+                (PRN (-LRB-:[370..371] -LRB-)
+                  (NP (CD:[371..373] IV))
+                  (-RRB-:[373..374] -RRB-)))
+              (,:[374..375] ,)
+              (NP
+                 (CD:[376..378] 15)
+                 (NN:[380..409] alpha-hydroxy-androstenedione)
+                (PRN (-LRB-:[410..411] -LRB-)
+                  (NP (CD:[411..412] V))
+                  (-RRB-:[412..413] -RRB-)))
+              (,:[413..414] ,)
+              (NP
+                 (CD:[415..417] 15) (NN:[418..444] alpha-hydroxy-testosterone)
+                (PRN (-LRB-:[445..446] -LRB-)
+                  (NP (CD:[446..448] VI))
+                  (-RRB-:[448..449] -RRB-)))
+              (,:[449..450] ,)
+              (NP
+                 (CD:[451..453] 16)
+                 (NN:[455..484] alpha-hydroxy-androstenedione)
+                (PRN (-LRB-:[485..486] -LRB-)
+                  (NP (CD:[486..489] VII))
+                  (-RRB-:[489..490] -RRB-)))
+              (-RRB-:[490..491] -RSB-))))))
+    (.:[491..492] .)))
+
+;sentence 4 Span:493..631
+;The hydroxylated androgens were  microbiologically synthesized from
+;commercially radiolabelled  [1,2-3H]-androstenedione and testosterone.
+;[510..519]:substance:"androgens"
+;[589..613]:substance:"[1,2-3H]-androstenedione"
+;[618..630]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[493..496] The) (VBN:[497..509] hydroxylated)
+              (NNS:[510..519] androgens))
+    (VP (VBD:[520..524] were)
+      (ADVP (RB:[526..543] microbiologically))
+      (VP (VBN:[544..555] synthesized)
+        (NP-2 (-NONE-:[555..555] *))
+        (PP (IN:[556..560] from)
+          (NP
+            (NP
+              (ADJP-1 (RB:[561..573] commercially)
+                      (VBN:[574..587] radiolabelled))
+              (NN:[589..613] -LSB-1,2-3H-RSB--androstenedione))
+            (CC:[614..617] and)
+            (NP
+              (ADJP-1 (-NONE-:[617..617] *P*))
+              (NN:[618..630] testosterone))))))
+    (.:[630..631] .)))
+
+;sentence 5 Span:632..826
+;Androstenedione and testosterone were  good substrates for the human
+;placental aromatase (low Km values, high Vmax);  they strongly inhibited the
+;15 and 16 hydroxylated androgens aromatizations.
+;[632..647]:substance:"Androstenedione"
+;[652..664]:substance:"testosterone"
+;[676..686]:substance:"substrates"
+;[711..720]:cyp450:"aromatase"
+;[726..728]:quantitative-name:"Km"
+;[742..746]:quantitative-name:"Vmax"
+;[801..810]:substance:"androgens"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[632..647] Androstenedione) (CC:[648..651] and)
+              (NN:[652..664] testosterone))
+      (VP (VBD:[665..669] were)
+        (NP-PRD
+          (NP (JJ:[671..675] good) (NNS:[676..686] substrates))
+          (PP (IN:[687..690] for)
+            (NP (DT:[691..694] the) (JJ:[695..700] human)
+                (NN:[701..710] placental) (NN:[711..720] aromatase)))
+          (PRN (-LRB-:[721..722] -LRB-)
+            (NP
+              (NP (JJ:[722..725] low) (NN:[726..728] Km) (NNS:[729..735] values))
+              (,:[735..736] ,)
+              (NP (JJ:[737..741] high) (NN:[742..746] Vmax)))
+            (-RRB-:[746..747] -RRB-)))))
+    (::[747..748] ;)
+    (S
+      (NP-SBJ (PRP:[750..754] they))
+      (ADVP (RB:[755..763] strongly))
+      (VP (VBD:[764..773] inhibited)
+        (NP (DT:[774..777] the)
+          (NML
+            (NML
+              (ADJP (CD:[778..780] 15)
+                (ADJP-2 (-NONE-:[780..780] *P*)))
+              (NML-1 (-NONE-:[780..780] *P*)))
+            (CC:[781..784] and)
+            (NML
+              (ADJP (CD:[785..787] 16)
+                (ADJP-2 (VBN:[788..800] hydroxylated)))
+              (NML-1 (NNS:[801..810] androgens) (NNS:[811..825] aromatizations)))))))
+    (.:[825..826] .)))
+
+;sentence 6 Span:827..999
+;On  the other hand, these hydroxylated compounds acted as poor substrates and
+;were  only non-competitive inhibitors of the androstenedione and testosterone
+; aromatizations.
+;[866..875]:substance:"compounds"
+;[890..900]:substance:"substrates"
+;[932..942]:substance:"inhibitors"
+;[950..965]:substance:"androstenedione"
+;[970..982]:substance:"testosterone"
+(SENT
+  (S
+    (PP (IN:[827..829] On)
+      (NP (DT:[831..834] the) (JJ:[835..840] other) (NN:[841..845] hand)))
+    (,:[845..846] ,)
+    (NP-SBJ (DT:[847..852] these) (VBN:[853..865] hydroxylated)
+            (NNS:[866..875] compounds))
+    (VP
+      (VP (VBD:[876..881] acted)
+        (PP-CLR (IN:[882..884] as)
+          (NP (JJ:[885..889] poor) (NNS:[890..900] substrates))))
+      (CC:[901..904] and)
+      (VP (VBD:[905..909] were)
+        (NP-PRD
+          (NP (RB:[911..915] only)
+            (ADJP (AFX:[916..919] non) (HYPH:[919..920] -)
+                  (JJ:[920..931] competitive))
+            (NNS:[932..942] inhibitors))
+          (PP (IN:[943..945] of)
+            (NP (DT:[946..949] the)
+              (NML
+                (NML (NN:[950..965] androstenedione)
+                  (NML-1 (-NONE-:[965..965] *P*)))
+                (CC:[966..969] and)
+                (NML (NN:[970..982] testosterone)
+                  (NML-1 (NNS:[984..998] aromatizations)))))))))
+    (.:[998..999] .)))
+
+;sentence 7 Span:1000..1151
+;However, 15 alpha-hydroxy-androstenedione could not be  disregarded as a
+;potential precursor of 15 alpha-hydroxylated estrogens in the  human
+;placenta.
+;[1009..1041]:substance:"15 alpha-hydroxy-androstenedione"
+;[1118..1127]:substance:"estrogens"
+(SENT
+  (S
+    (ADVP (RB:[1000..1007] However))
+    (,:[1007..1008] ,)
+    (NP-SBJ-1 (CD:[1009..1011] 15)
+              (NN:[1012..1041] alpha-hydroxy-androstenedione))
+    (VP (MD:[1042..1047] could) (RB:[1048..1051] not)
+      (VP (VB:[1052..1054] be)
+        (VP (VBN:[1056..1067] disregarded)
+          (NP-1 (-NONE-:[1067..1067] *))
+          (PP (IN:[1068..1070] as)
+            (NP
+              (NP (DT:[1071..1072] a) (JJ:[1073..1082] potential)
+                  (NN:[1083..1092] precursor))
+              (PP (IN:[1093..1095] of)
+                (NP
+                  (ADJP
+                    (NML (CD:[1096..1098] 15) (SYM:[1099..1104] alpha))
+                    (HYPH:[1104..1105] -) (VBN:[1105..1117] hydroxylated))
+                  (NNS:[1118..1127] estrogens)))
+              (PP-LOC (IN:[1128..1130] in)
+                (NP (DT:[1131..1134] the) (JJ:[1136..1141] human)
+                    (NN:[1142..1150] placenta))))))))
+    (.:[1150..1151] .)))
+
+;section 8 Span:1155..1199
+;PMID: 7078154 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1155..1159] PMID) (::[1159..1160] :) (CD:[1161..1168] 7078154)
+        (NN:[1169..1170] -LSB-) (NNP:[1170..1176] PubMed) (::[1177..1178] -)
+        (NN:[1179..1186] indexed) (IN:[1187..1190] for)
+        (NNP:[1191..1199] MEDLINE-RSB-)))

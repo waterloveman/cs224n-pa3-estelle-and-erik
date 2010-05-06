@@ -1,0 +1,593 @@
+;PMID: 8818577
+;source_file_1918.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..158] = [t:47..158]
+;2)section:[e:162..186] = [t:162..186]
+;3)section:[e:190..281] = [t:190..281]
+;4)sentence:[e:285..368] = [t:285..368]
+;5)sentence:[e:369..486] = [t:369..486]
+;6)sentence:[e:487..645] = [t:487..645]
+;7)sentence:[e:646..910] = [t:646..910]
+;8)sentence:[e:911..1095] = [t:911..1095]
+;9)sentence:[e:1096..1322] = [t:1096..1322]
+;10)sentence:[e:1323..1497] = [t:1323..1497]
+;11)sentence:[e:1498..1735] = [t:1498..1735]
+;12)sentence:[e:1736..1923] = [t:1736..1923]
+;13)sentence:[e:1924..2031] = [t:1924..2031]
+;14)sentence:[e:2032..2245] = [t:2032..2245]
+;15)sentence:[e:2246..2448] = [t:2246..2448]
+;16)section:[e:2452..2496] = [t:2452..2496]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1274..1278] P450
+;ERROR_Token in entity file but not tree[1278..1281] 1A2
+;ERROR_Token in entity file but not tree[2073..2077] P450
+;ERROR_Token in entity file but not tree[2077..2080] 2D6
+;ERROR_Token in tree file but not entity[1274..1281] P4501A2
+;ERROR_Token in tree file but not entity[2073..2080] P4502D6
+
+;section 0 Span:0..41
+;Drug Metab Dispos. 1996 Jul;24(7):786-91.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1996) (.:[24..29] Jul;2) (::[29..31] 4-LRB-)
+        (CD:[31..32] 7) (-RRB-:[32..33] -RRB-) (CD:[33..40] :786-91)
+        (.:[40..41] .)))
+
+;sentence 1 Span:47..158
+;Identification of human liver cytochrome P450 isoforms involved in the in
+;vitro  metabolism of cyclobenzaprine.
+;[77..101]:cyp450:"cytochrome P450 isoforms"
+;[142..157]:substance:"cyclobenzaprine"
+(SENT
+  (NP-HLN
+    (NP (NN:[47..61] Identification))
+    (PP (IN:[62..64] of)
+      (NP
+        (NP (JJ:[65..70] human) (NN:[71..76] liver)
+          
+          (NML (NN:[77..87] cytochrome) (NN:[88..92] P450))
+          (NNS:[93..101] isoforms))
+        (VP (VBN:[102..110] involved)
+          (NP (-NONE-:[110..110] *))
+          (PP-CLR (IN:[111..113] in)
+            (NP
+              (NP (DT:[114..117] the)
+                (ADJP (FW:[118..120] in) (FW:[121..126] vitro))
+                (NN:[128..138] metabolism))
+              (PP (IN:[139..141] of)
+                (NP (NN:[142..157] cyclobenzaprine))))))))
+    (.:[157..158] .)))
+
+;section 2 Span:162..186
+;Wang RW, Liu L, Cheng H.
+(SEC
+  (FRAG (NNP:[162..166] Wang) (NNP:[167..169] RW) (,:[169..170] ,)
+        (NNP:[171..174] Liu) (NNP:[175..177] L,) (NNP:[178..183] Cheng)
+        (NNP:[184..186] H.)))
+
+;section 3 Span:190..281
+;Department of Drug Metabolism, Merck Research Laboratories, Rahway, New
+;Jersey  07065, USA.
+(SEC
+  (FRAG (NNP:[190..200] Department) (IN:[201..203] of) (NNP:[204..208] Drug)
+        (NNP:[209..219] Metabolism) (,:[219..220] ,) (NNP:[221..226] Merck)
+        (NNP:[227..235] Research) (NNP:[236..248] Laboratories) (,:[248..249] ,)
+        (NNP:[250..256] Rahway) (,:[256..257] ,) (NNP:[258..261] New)
+        (NNP:[262..268] Jersey) (CD:[270..275] 07065) (,:[275..276] ,)
+        (NNP:[277..280] USA) (.:[280..281] .)))
+
+;sentence 4 Span:285..368
+;Cyclobenzaprine (Flexeril) is a muscle relaxant, possessing a tricyclic 
+;structure.
+;[285..300]:substance:"Cyclobenzaprine"
+;[302..310]:substance:"Flexeril"
+;[324..332]:substance:"relaxant"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[285..300] Cyclobenzaprine))
+      (NP (-LRB-:[301..302] -LRB-) (NNP:[302..310] Flexeril)
+          (-RRB-:[310..311] -RRB-)))
+    (VP (VBZ:[312..314] is)
+      (NP-PRD
+        (NP (DT:[315..316] a) (NN:[317..323] muscle) (NN:[324..332] relaxant))
+        (,:[332..333] ,)
+        (VP (VBG:[334..344] possessing)
+          (NP (DT:[345..346] a) (JJ:[347..356] tricyclic)
+              (NN:[358..367] structure)))))
+    (.:[367..368] .)))
+
+;sentence 5 Span:369..486
+;Numerous therapeutic agents containing this structure are known to be 
+;metabolized by polymorphic cytochrome P4502D6.
+;[378..396]:substance:"therapeutic agents"
+;[467..485]:cyp450:"cytochrome P4502D6"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[369..377] Numerous)
+         (JJ:[378..389] therapeutic) (NNS:[390..396] agents))
+      (VP (VBG:[397..407] containing)
+        (NP (DT:[408..412] this) (NN:[413..422] structure))))
+    (VP (VBP:[423..426] are)
+      (VP (VBN:[427..432] known)
+        (S
+          (NP-SBJ-1 (-NONE-:[432..432] *))
+          (VP (TO:[433..435] to)
+            (VP (VB:[436..438] be)
+              (VP (VBN:[440..451] metabolized)
+                (NP-1 (-NONE-:[451..451] *))
+                (PP (IN:[452..454] by)
+                  (NP-LGS (JJ:[455..466] polymorphic)
+                     (NN:[467..477] cytochrome) (NN:[478..485] P4502D6)))))))))
+    (.:[485..486] .)))
+
+;sentence 6 Span:487..645
+;The aim of this study was to  determine if cytochrome P4502D6 and other
+;isoforms are involved in the  metabolism of cyclobenzaprine in human liver
+;microsomes.
+;[530..548]:cyp450:"cytochrome P4502D6"
+;[559..567]:cyp450:"isoforms"
+;[603..618]:substance:"cyclobenzaprine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[487..490] The) (NN:[491..494] aim))
+      (PP (IN:[495..497] of)
+        (NP (DT:[498..502] this) (NN:[503..508] study))))
+    (VP (VBD:[509..512] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[512..512] *))
+        (VP (TO:[513..515] to)
+          (VP (VB:[517..526] determine)
+            (SBAR (IN:[527..529] if)
+              (S
+                (NP-SBJ-1
+                  (NP (NN:[530..540] cytochrome) (NN:[541..548] P4502D6))
+                  (CC:[549..552] and)
+                  (NP (JJ:[553..558] other) (NNS:[559..567] isoforms)))
+                (VP (VBP:[568..571] are)
+                  (VP (VBN:[572..580] involved)
+                    (NP-1 (-NONE-:[580..580] *))
+                    (PP-CLR (IN:[581..583] in)
+                      (NP
+                        (NP (DT:[584..587] the) (NN:[589..599] metabolism))
+                        (PP (IN:[600..602] of)
+                          (NP (NN:[603..618] cyclobenzaprine)))))
+                    (PP-LOC (IN:[619..621] in)
+                      (NP (JJ:[622..627] human) (NN:[628..633] liver)
+                          (NNS:[634..644] microsomes)))))))))))
+    (.:[644..645] .)))
+
+;sentence 7 Span:646..910
+;Selective cytochrome  P450 inhibitors for CYP1A1/2 (furafylline and
+;7,8-benzoflavone) and CYP3A4  (troleandomycin, gestodene, and ketoconazole)
+;inhibited the formation of  desmethylcyclobenzaprine, a major metabolite of
+;cyclobenzaprine, in human liver  microsomes.
+;[656..672]:cyp450:"cytochrome  P450"
+;[673..683]:substance:"inhibitors"
+;[688..694]:cyp450:"CYP1A1"
+;[688..693]...[695..696]:cyp450:"CYP1A"..."2"
+;[698..709]:substance:"furafylline"
+;[714..730]:substance:"7,8-benzoflavone"
+;[736..742]:cyp450:"CYP3A4"
+;[745..759]:substance:"troleandomycin"
+;[761..770]:substance:"gestodene"
+;[776..788]:substance:"ketoconazole"
+;[818..842]:substance:"desmethylcyclobenzaprine"
+;[852..862]:substance:"metabolite"
+;[866..881]:substance:"cyclobenzaprine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[646..655] Selective)
+        (NML (NN:[656..666] cytochrome) (NN:[668..672] P450))
+        (NNS:[673..683] inhibitors))
+      (PP (IN:[684..687] for)
+        (NP
+          (NP
+            (NP
+              (NML-1 (NN:[688..693] CYP1A))
+              (CD:[693..694] 1))
+            (SYM:[694..695] /)
+            (NP
+              (NML-1 (-NONE-:[695..695] *P*))
+              (CD:[695..696] 2))
+            (PRN (-LRB-:[697..698] -LRB-)
+              (NP (NN:[698..709] furafylline) (CC:[710..713] and)
+                  (NN:[714..730] 7,8-benzoflavone))
+              (-RRB-:[730..731] -RRB-)))
+          (CC:[732..735] and)
+          (NP (NN:[736..742] CYP3A4)
+            (PRN (-LRB-:[744..745] -LRB-)
+              (NP (NN:[745..759] troleandomycin) (,:[759..760] ,)
+                  (NN:[761..770] gestodene) (,:[770..771] ,) (CC:[772..775] and)
+                  (NN:[776..788] ketoconazole))
+              (-RRB-:[788..789] -RRB-))))))
+    (VP (VBD:[790..799] inhibited)
+      (NP
+        (NP (DT:[800..803] the) (NN:[804..813] formation))
+        (PP (IN:[814..816] of)
+          (NP
+            (NP (NN:[818..842] desmethylcyclobenzaprine))
+            (,:[842..843] ,)
+            (NP
+              (NP (DT:[844..845] a) (JJ:[846..851] major)
+                  (NN:[852..862] metabolite))
+              (PP (IN:[863..865] of)
+                (NP (NN:[866..881] cyclobenzaprine)))))))
+      (,:[881..882] ,)
+      (PP-LOC (IN:[883..885] in)
+        (NP (JJ:[886..891] human) (NN:[892..897] liver)
+            (NNS:[899..909] microsomes))))
+    (.:[909..910] .)))
+
+;sentence 8 Span:911..1095
+;Antibodies directed against CYP1A1/2 and CYP3A4 inhibited the  demethylation
+;reaction whereas anti-human CYP2C9/10, CYP2C19, and CYP2E1  antibodies did
+;not show any inhibitory effects.
+;[911..921]:substance:"Antibodies"
+;[939..945]:cyp450:"CYP1A1"
+;[939..944]...[946..947]:cyp450:"CYP1A"..."2"
+;[952..958]:cyp450:"CYP3A4"
+;[1005..1022]...[1048..1058]:substance:"anti-human CYP2C9"..."antibodies"
+;[1005..1021]...[1023..1025]...[1048..1058]:substance:"anti-human
+;CYP2C"..."10"..."antibodies"
+;[1005..1015]...[1040..1058]:substance:"anti-human"..."CYP2E1  antibodies"
+;[1005..1015]...[1027..1034]...[1048..1058]:substance:"anti-human"..."CYP2C19"
+;..."antibodies"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[911..921] Antibodies))
+      (VP (VBN:[922..930] directed)
+        (NP (-NONE-:[930..930] *))
+        (PP (IN:[931..938] against)
+          (NP
+            (NP
+              (NP
+                (NML-5 (NN:[939..944] CYP1A))
+                (CD:[944..945] 1))
+              (SYM:[945..946] /)
+              (NP
+                (NML-5 (-NONE-:[946..946] *P*))
+                (CD:[946..947] 2)))
+            (CC:[948..951] and)
+            (NP (NN:[952..958] CYP3A4))))))
+    (VP (VBD:[959..968] inhibited)
+      (NP (DT:[969..972] the) (NN:[974..987] demethylation)
+          (NN:[988..996] reaction))
+      (SBAR-ADV (IN:[997..1004] whereas)
+        (S
+          (NP-SBJ
+            (NP
+              (NP
+                (NML
+                  (ADJP-3 (AFX:[1005..1009] anti) (HYPH:[1009..1010] -)
+                          (JJ:[1010..1015] human))
+                  (NML-1 (NN:[1016..1021] CYP2C))
+                  (CD:[1021..1022] 9))
+                (NML-4 (-NONE-:[1022..1022] *P*)))
+              (SYM:[1022..1023] /)
+              (NP
+                (NML
+                  (ADJP-3 (-NONE-:[1023..1023] *P*))
+                  (NML-1 (-NONE-:[1023..1023] *P*))
+                  (CD:[1023..1025] 10))
+                (NML-4 (-NONE-:[1025..1025] *P*))))
+            (,:[1025..1026] ,)
+            (NP
+              (NML
+                (ADJP-3 (-NONE-:[1026..1026] *P*))
+                (NN:[1027..1034] CYP2C19))
+              (NML-4 (-NONE-:[1034..1034] *P*)))
+            (,:[1034..1035] ,) (CC:[1036..1039] and)
+            (NP
+              (ADJP-3 (-NONE-:[1039..1039] *P*))
+              (NN:[1040..1046] CYP2E1)
+              (NML-4 (NNS:[1048..1058] antibodies))))
+          (VP (VBD:[1059..1062] did) (RB:[1063..1066] not)
+            (VP (VB:[1067..1071] show)
+              (NP (DT:[1072..1075] any) (JJ:[1076..1086] inhibitory)
+                  (NNS:[1087..1094] effects)))))))
+    (.:[1094..1095] .)))
+
+;sentence 9 Span:1096..1322
+;When a panel of microsomes  prepared from human B-lymphoblastoid cells that
+;expressed specific human  cytochrome P450 isoforms were used, only microsomes
+;containing cytochromes  P4501A2, 2D6, and 3A4 catalyzed N-demethylation.
+;[1198..1222]:cyp450:"cytochrome P450 isoforms"
+;[1261..1281]:cyp450:"cytochromes  P4501A2"
+;[1261..1278]...[1292..1295]:cyp450:"cytochromes  P450"..."3A4"
+;[1261..1278]...[1283..1286]:cyp450:"cytochromes  P450"..."2D6"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-4 (WRB:[1096..1100] When))
+      (S
+        (NP-SBJ-3
+          (NP (DT:[1101..1102] a) (NN:[1103..1108] panel))
+          (PP (IN:[1109..1111] of)
+            (NP
+              (NP (NNS:[1112..1122] microsomes))
+              (VP (VBN:[1124..1132] prepared)
+                (NP (-NONE-:[1132..1132] *))
+                (PP (IN:[1133..1137] from)
+                  (NP
+                    (NP (JJ:[1138..1143] human)
+                        (JJ:[1144..1160] B-lymphoblastoid)
+                        (NNS:[1161..1166] cells))
+                    (SBAR
+                      (WHNP-2 (WDT:[1167..1171] that))
+                      (S
+                        (NP-SBJ-2 (-NONE-:[1171..1171] *T*))
+                        (VP (VBD:[1172..1181] expressed)
+                          (NP (JJ:[1182..1190] specific) (JJ:[1191..1196] human)
+                            
+                            (NML (NN:[1198..1208] cytochrome)
+                                 (NN:[1209..1213] P450))
+                            (NNS:[1214..1222] isoforms)))))))))))
+        (VP (VBD:[1223..1227] were)
+          (VP (VBN:[1228..1232] used)
+            (NP-3 (-NONE-:[1232..1232] *))
+            (ADVP-TMP-4 (-NONE-:[1232..1232] *T*))))))
+    (,:[1232..1233] ,)
+    (NP-SBJ
+      (NP (RB:[1234..1238] only) (NNS:[1239..1249] microsomes))
+      (VP (VBG:[1250..1260] containing)
+        (NP
+          (NP
+            (NML-1 (NNS:[1261..1272] cytochromes))
+            (NN:[1274..1281] P4501A2))
+          (,:[1281..1282] ,)
+          (NP
+            (NML-1 (-NONE-:[1282..1282] *P*))
+            (NN:[1283..1286] 2D6))
+          (,:[1286..1287] ,) (CC:[1288..1291] and)
+          (NP
+            (NML-1 (-NONE-:[1291..1291] *P*))
+            (NN:[1292..1295] 3A4)))))
+    (VP (VBD:[1296..1305] catalyzed)
+      (NP (NN:[1306..1321] N-demethylation)))
+    (.:[1321..1322] .)))
+
+;sentence 10 Span:1323..1497
+;In addition, demethylation  catalyzed by these recombinant cytochromes P450
+;can be completely inhibited with  selective inhibitors at concentrations as
+;low as 1 to 20 microM.
+;[1382..1398]:cyp450:"cytochromes P450"
+;[1443..1453]:substance:"inhibitors"
+;[1482..1489]:quantitative-value:"1 to 20"
+;[1490..1496]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[1323..1325] In)
+      (NP (NN:[1326..1334] addition)))
+    (,:[1334..1335] ,)
+    (NP-SBJ-1
+      (NP (NN:[1336..1349] demethylation))
+      (VP (VBN:[1351..1360] catalyzed)
+        (NP (-NONE-:[1360..1360] *))
+        (PP (IN:[1361..1363] by)
+          (NP-LGS (DT:[1364..1369] these) (JJ:[1370..1381] recombinant)
+             (NNS:[1382..1393] cytochromes) (NN:[1394..1398] P450)))))
+    (VP (MD:[1399..1402] can)
+      (VP (VB:[1403..1405] be)
+        (ADVP (RB:[1406..1416] completely))
+        (VP (VBN:[1417..1426] inhibited)
+          (NP-1 (-NONE-:[1426..1426] *))
+          (PP-MNR (IN:[1427..1431] with)
+            (NP (JJ:[1433..1442] selective) (NNS:[1443..1453] inhibitors)))
+          (PP (IN:[1454..1456] at)
+            (NP
+              (NP (NNS:[1457..1471] concentrations))
+              (ADJP
+                (ADJP (RB:[1472..1474] as) (JJ:[1475..1478] low))
+                (PP (IN:[1479..1481] as)
+                  (NP
+                    (QP (CD:[1482..1483] 1) (TO:[1484..1486] to)
+                        (CD:[1487..1489] 20))
+                    (NN:[1490..1496] microM)))))))))
+    (.:[1496..1497] .)))
+
+;sentence 11 Span:1498..1735
+;Interestingly,  cyclobenzaprine N-demethylation was significantly correlated
+;with caffeine  3-demethylation (1A2) and testosterone 6 beta-hydroxylation
+;(3A4) but not with  dextromethorphan O-demethylation (2D6) in human liver
+;microsomes.
+;[1514..1529]:substance:"cyclobenzaprine"
+;[1580..1588]:substance:"caffeine"
+;[1607..1610]:cyp450:"1A2"
+;[1616..1628]:substance:"testosterone"
+;[1651..1654]:cyp450:"3A4"
+;[1670..1686]:substance:"dextromethorphan"
+;[1704..1707]:cyp450:"2D6"
+(SENT
+  (S
+    (ADVP (RB:[1498..1511] Interestingly))
+    (,:[1511..1512] ,)
+    (NP-SBJ-1 (NN:[1514..1529] cyclobenzaprine)
+              (NN:[1530..1545] N-demethylation))
+    (VP (VBD:[1546..1549] was)
+      (VP
+        (VP
+          (ADVP (RB:[1550..1563] significantly))
+          (VBN:[1564..1574] correlated)
+          (NP-1 (-NONE-:[1574..1574] *))
+          (PP-CLR=2 (IN:[1575..1579] with)
+            (NP
+              (NP (NN:[1580..1588] caffeine) (NN:[1590..1605] 3-demethylation)
+                (PRN (-LRB-:[1606..1607] -LRB-)
+                  (NP (NN:[1607..1610] 1A2))
+                  (-RRB-:[1610..1611] -RRB-)))
+              (CC:[1612..1615] and)
+              (NP (NN:[1616..1628] testosterone) (CD:[1629..1630] 6)
+                  (NN:[1631..1649] beta-hydroxylation)
+                (PRN (-LRB-:[1650..1651] -LRB-)
+                  (NP (NN:[1651..1654] 3A4))
+                  (-RRB-:[1654..1655] -RRB-))))))
+        (CC:[1656..1659] but)
+        (VP (RB:[1660..1663] not)
+          (PP-CLR=2 (IN:[1664..1668] with)
+            (NP (NN:[1670..1686] dextromethorphan)
+                (NN:[1687..1702] O-demethylation)
+              (PRN (-LRB-:[1703..1704] -LRB-)
+                (NP (NN:[1704..1707] 2D6))
+                (-RRB-:[1707..1708] -RRB-)))))
+        (PP-LOC (IN:[1709..1711] in)
+          (NP (JJ:[1712..1717] human) (NN:[1718..1723] liver)
+              (NNS:[1724..1734] microsomes)))))
+    (.:[1734..1735] .)))
+
+;sentence 12 Span:1736..1923
+;To further  determine the involvement of cytochrome P4502D6 in
+;cyclobenzaprine metabolism,  liver microsomes from a human that lacked CYP2D6
+;enzyme activities was included  in this study.
+;[1777..1795]:cyp450:"cytochrome P4502D6"
+;[1799..1814]:substance:"cyclobenzaprine"
+;[1870..1883]:cyp450:"CYP2D6 enzyme"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[1736..1736] *))
+      (VP (TO:[1736..1738] To)
+        (ADVP (RBR:[1739..1746] further))
+        (VP (VB:[1748..1757] determine)
+          (NP
+            (NP (DT:[1758..1761] the) (NN:[1762..1773] involvement))
+            (PP (IN:[1774..1776] of)
+              (NP (NN:[1777..1787] cytochrome) (NN:[1788..1795] P4502D6)))
+            (PP (IN:[1796..1798] in)
+              (NP (NN:[1799..1814] cyclobenzaprine) (NN:[1815..1825] metabolism)))))))
+    (,:[1825..1826] ,)
+    (NP-SBJ-2
+      (NP (NN:[1828..1833] liver) (NNS:[1834..1844] microsomes))
+      (PP (IN:[1845..1849] from)
+        (NP
+          (NP (DT:[1850..1851] a) (NN:[1852..1857] human))
+          (SBAR
+            (WHNP-1 (WDT:[1858..1862] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[1862..1862] *T*))
+              (VP (VBD:[1863..1869] lacked)
+                (NP
+                   (NN:[1870..1876] CYP2D6) (NN:[1877..1883] enzyme)
+                  (NNS:[1884..1894] activities))))))))
+    (VP (VBD:[1895..1898] was)
+      (VP (VBN:[1899..1907] included)
+        (NP-2 (-NONE-:[1907..1907] *))
+        (PP-CLR (IN:[1909..1911] in)
+          (NP (DT:[1912..1916] this) (NN:[1917..1922] study)))))
+    (.:[1922..1923] .)))
+
+;sentence 13 Span:1924..2031
+;The data showed that cyclobenzaprine N-demethylation still  occurred in the
+;incubation with this microsome.
+;[1945..1960]:substance:"cyclobenzaprine"
+(SENT
+  (S
+    (NP-SBJ (DT:[1924..1927] The) (NNS:[1928..1932] data))
+    (VP (VBD:[1933..1939] showed)
+      (SBAR (IN:[1940..1944] that)
+        (S
+          (NP-SBJ (NN:[1945..1960] cyclobenzaprine)
+                  (NN:[1961..1976] N-demethylation))
+          (ADVP (RB:[1977..1982] still))
+          (VP (VBD:[1984..1992] occurred)
+            (PP-LOC (IN:[1993..1995] in)
+              (NP
+                (NP (DT:[1996..1999] the) (NN:[2000..2010] incubation))
+                (PP (IN:[2011..2015] with)
+                  (NP (DT:[2016..2020] this) (NN:[2021..2030] microsome)))))))))
+    (.:[2030..2031] .)))
+
+;sentence 14 Span:2032..2245
+;These results suggested that  cytochrome P4502D6 plays only a minor role in
+;cyclobenzaprine N-demethylation  whereas 3A4 and 1A2 are primarily
+;responsible for cyclobenzaprine metabolism in  human liver microsomes.
+;[2062..2080]:cyp450:"cytochrome P4502D6"
+;[2062..2077]...[2157..2160]:cyp450:"cytochrome P450"..."1A2"
+;[2062..2077]...[2149..2152]:cyp450:"cytochrome P450"..."3A4"
+;[2108..2123]:substance:"cyclobenzaprine"
+;[2191..2206]:substance:"cyclobenzaprine"
+(SENT
+  (S
+    (NP-SBJ (DT:[2032..2037] These) (NNS:[2038..2045] results))
+    (VP (VBD:[2046..2055] suggested)
+      (SBAR (IN:[2056..2060] that)
+        (S
+          (NP-SBJ (NN:[2062..2072] cytochrome) (NN:[2073..2080] P4502D6))
+          (VP (VBZ:[2081..2086] plays)
+            (NP (RB:[2087..2091] only) (DT:[2092..2093] a)
+                (JJ:[2094..2099] minor) (NN:[2100..2104] role))
+            (PP (IN:[2105..2107] in)
+              (NP (NN:[2108..2123] cyclobenzaprine)
+                  (NN:[2124..2139] N-demethylation)))
+            (SBAR-ADV (IN:[2141..2148] whereas)
+              (S
+                (NP-SBJ (NN:[2149..2152] 3A4) (CC:[2153..2156] and)
+                        (NN:[2157..2160] 1A2))
+                (VP (VBP:[2161..2164] are)
+                  (ADVP (RB:[2165..2174] primarily))
+                  (ADJP-PRD (JJ:[2175..2186] responsible)
+                    (PP (IN:[2187..2190] for)
+                      (NP
+                        (NP (NN:[2191..2206] cyclobenzaprine)
+                            (NN:[2207..2217] metabolism))
+                        (PP-LOC (IN:[2218..2220] in)
+                          (NP (JJ:[2222..2227] human) (NN:[2228..2233] liver)
+                              (NNS:[2234..2244] microsomes)))))))))))))
+    (.:[2244..2245] .)))
+
+;sentence 15 Span:2246..2448
+;Due to the minimum involvement of CYP2D6 in the vitro  metabolism of
+;cyclobenzaprine, the polymorphism of cytochrome P4502D6 in man  should not be
+;of muci concern in the clinical use of cyclobenzaprine.
+;[2280..2286]:cyp450:"CYP2D6"
+;[2315..2330]:substance:"cyclobenzaprine"
+;[2352..2370]:cyp450:"cytochrome P4502D6"
+;[2432..2447]:substance:"cyclobenzaprine"
+(SENT
+  (S
+    (PP (IN:[2246..2249] Due)
+      (PP (TO:[2250..2252] to)
+        (NP
+          (NP (DT:[2253..2256] the) (JJ:[2257..2264] minimum)
+              (NN:[2265..2276] involvement))
+          (PP (IN:[2277..2279] of)
+            (NP (NN:[2280..2286] CYP2D6)))
+          (PP-LOC (IN:[2287..2289] in)
+            (NP
+              (NP (DT:[2290..2293] the) (FW:[2294..2299] vitro)
+                  (NN:[2301..2311] metabolism))
+              (PP (IN:[2312..2314] of)
+                (NP (NN:[2315..2330] cyclobenzaprine))))))))
+    (,:[2330..2331] ,)
+    (NP-SBJ
+      (NP (DT:[2332..2335] the) (NN:[2336..2348] polymorphism))
+      (PP (IN:[2349..2351] of)
+        (NP (NN:[2352..2362] cytochrome) (NN:[2363..2370] P4502D6)))
+      (PP-LOC (IN:[2371..2373] in)
+        (NP (NN:[2374..2377] man))))
+    (VP (MD:[2379..2385] should) (RB:[2386..2389] not)
+      (VP (VB:[2390..2392] be)
+        (PP-PRD (IN:[2393..2395] of)
+          (NP (JJ:[2396..2400] muci) (NN:[2401..2408] concern)))
+        (PP (IN:[2409..2411] in)
+          (NP
+            (NP (DT:[2412..2415] the) (JJ:[2416..2424] clinical)
+                (NN:[2425..2428] use))
+            (PP (IN:[2429..2431] of)
+              (NP (NN:[2432..2447] cyclobenzaprine)))))))
+    (.:[2447..2448] .)))
+
+;section 16 Span:2452..2496
+;PMID: 8818577 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2452..2456] PMID) (::[2456..2457] :) (CD:[2458..2465] 8818577)
+        (NN:[2466..2467] -LSB-) (NNP:[2467..2473] PubMed) (::[2474..2475] -)
+        (NN:[2476..2483] indexed) (IN:[2484..2487] for)
+        (NNP:[2488..2496] MEDLINE-RSB-)))

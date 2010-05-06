@@ -1,0 +1,347 @@
+;PMID: 8289473
+;source_file_1412.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)sentence:[e:34..146] = [t:34..146]
+;2)section:[e:150..228] = [t:150..228]
+;3)section:[e:232..309] = [t:232..309]
+;4)sentence:[e:313..437] = [t:313..437]
+;5)sentence:[e:438..580] = [t:438..580]
+;6)sentence:[e:581..686] = [t:581..686]
+;7)sentence:[e:687..757] = [t:687..757]
+;8)sentence:[e:758..905] = [t:758..905]
+;9)sentence:[e:906..1238] = [t:906..1238]
+;10)sentence:[e:1239..1303] = [t:1239..1303]
+;11)sentence:[e:1304..1433] = [t:1304..1433]
+;12)sentence:[e:1434..1535] = [t:1434..1535]
+;13)section:[e:1539..1583] = [t:1539..1583]
+
+;section 0 Span:0..29
+;Leukemia  1994 Jan;8(1):102-5
+(SEC
+  (FRAG (NNP:[0..8] Leukemia) (CD:[10..14] 1994) (NNP:[15..21] Jan;8-LRB-)
+        (CD:[21..22] 1) (-RRB-:[22..23] -RRB-) (CD:[23..27] :102)
+        (HYPH:[27..28] -) (CD:[28..29] 5)))
+
+;sentence 1 Span:34..146
+;Ras point mutations occur in acute myeloid leukemia with illegitimate T-cell 
+;receptor delta gene rearrangement.
+;[34..37]:gene-rna:"Ras"
+;[38..53]:variation-type:"point mutations"
+;[63..85]:malignancy:"acute myeloid leukemia"
+;[104..126]:gene-rna:"T-cell  receptor delta"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[34..37] Ras)
+       (NN:[38..43] point) (NNS:[44..53] mutations))
+    (VP (VBP:[54..59] occur)
+      (PP (IN:[60..62] in)
+        (NP (JJ:[63..68] acute) (JJ:[69..76] myeloid) (NN:[77..85] leukemia)))
+      (PP (IN:[86..90] with)
+        (NP (JJ:[91..103] illegitimate)
+          (NML
+            
+            (NML (NN:[104..110] T-cell) (NN:[112..120] receptor))
+            (SYM:[121..126] delta)
+            (NN:[127..131] gene))
+          (NN:[132..145] rearrangement))))
+    (.:[145..146] .)))
+
+;section 2 Span:150..228
+;Schmidt CA, Przybylski G, Vogel D, Ludwig WD, Oettle H, Neubauer A, Siegert
+;W.
+(SEC
+  (FRAG (NNP:[150..157] Schmidt) (NNP:[158..160] CA) (,:[160..161] ,)
+        (NNP:[162..172] Przybylski) (NNP:[173..174] G) (,:[174..175] ,)
+        (NNP:[176..181] Vogel) (NNP:[182..183] D) (,:[183..184] ,)
+        (NNP:[185..191] Ludwig) (NNP:[192..194] WD) (,:[194..195] ,)
+        (NNP:[196..202] Oettle) (NNP:[203..204] H) (,:[204..205] ,)
+        (NNP:[206..214] Neubauer) (NNP:[215..216] A) (,:[216..217] ,)
+        (NNP:[218..225] Siegert) (NNP:[226..228] W.)))
+
+;section 3 Span:232..309
+;Abt. Hamatologie, Klinikum Rudolf Virchow, Freie Universitat Berlin,
+;Germany.
+(SEC
+  (FRAG (NNP:[232..235] Abt) (NNP:[235..236] .) (NNP:[237..248] Hamatologie)
+        (,:[248..249] ,) (NNP:[250..258] Klinikum) (NNP:[259..265] Rudolf)
+        (NNP:[266..273] Virchow) (,:[273..274] ,) (DT:[275..280] Freie)
+        (NNP:[281..292] Universitat) (NNP:[293..299] Berlin) (,:[299..300] ,)
+        (NNP:[301..308] Germany) (.:[308..309] .)))
+
+;sentence 4 Span:313..437
+;Mutations in the ras proto-oncogenes are the most frequently observed
+;molecular  alteration in acute myeloid leukemia (AML).
+;[330..333]:gene-rna:"ras"
+;[408..430]:malignancy:"acute myeloid leukemia"
+;[432..435]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[313..322] Mutations))
+      (PP-LOC (IN:[323..325] in)
+        (NP (DT:[326..329] the) (NN:[330..333] ras) (AFX:[334..339] proto)
+            (HYPH:[339..340] -) (NNS:[340..349] oncogenes))))
+    (VP (VBP:[350..353] are)
+      (NP-PRD (DT:[354..357] the)
+        (ADJP
+          (ADVP (RBS:[358..362] most) (RB:[363..373] frequently))
+          (VBN:[374..382] observed))
+        (JJ:[383..392] molecular) (NN:[394..404] alteration))
+      (PP (IN:[405..407] in)
+        (NP
+          (NP (JJ:[408..413] acute) (JJ:[414..421] myeloid)
+              (NN:[422..430] leukemia))
+          (NP (-LRB-:[431..432] -LRB-) (NN:[432..435] AML)
+              (-RRB-:[435..436] -RRB-)))))
+    (.:[436..437] .)))
+
+;sentence 5 Span:438..580
+;Whether ras mutations occur as late  or relatively early events in the
+;multistep process of myeloid transformation,  remains an open question.
+;[446..449]:gene-rna:"ras"
+(SENT
+  (S
+    (SBAR-SBJ (IN:[438..445] Whether)
+      (S
+        (NP-SBJ (NN:[446..449] ras) (NNS:[450..459] mutations))
+        (VP (VBP:[460..465] occur)
+          (PP (IN:[466..468] as)
+            (NP
+              (NP (JJ:[469..473] late)
+                (NML-1 (-NONE-:[473..473] *P*)))
+              (CC:[475..477] or)
+              (NP
+                (ADJP (RB:[478..488] relatively) (JJ:[489..494] early))
+                (NML-1 (NNS:[495..501] events)))))
+          (PP (IN:[502..504] in)
+            (NP
+              (NP (DT:[505..508] the) (JJ:[509..518] multistep)
+                  (NN:[519..526] process))
+              (PP (IN:[527..529] of)
+                (NP (JJ:[530..537] myeloid) (NN:[538..552] transformation))))))))
+    (,:[552..553] ,)
+    (VP (VBZ:[555..562] remains)
+      (NP-PRD (DT:[563..565] an) (JJ:[566..570] open) (NN:[571..579] question)))
+    (.:[579..580] .)))
+
+;sentence 6 Span:581..686
+;We previously described illegitimate T-cell receptor  (TCR)-delta gene
+;rearrangements in a subset of AML.
+;[618..646]:gene-rna:"T-cell receptor  (TCR)-delta"
+;[636..639]:gene-rna:"TCR"
+;[682..685]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ (PRP:[581..583] We))
+    (ADVP (RB:[584..594] previously))
+    (VP (VBD:[595..604] described)
+      (NP (JJ:[605..617] illegitimate)
+        (NML
+          
+          (NML
+            (NML (NN:[618..624] T-cell) (NN:[625..633] receptor))
+            (NML (-LRB-:[635..636] -LRB-) (NN:[636..639] TCR)
+                 (-RRB-:[639..640] -RRB-)))
+          (HYPH:[640..641] -) (SYM:[641..646] delta)
+          (NN:[647..651] gene))
+        (NNS:[652..666] rearrangements))
+      (PP (IN:[667..669] in)
+        (NP
+          (NP (DT:[670..671] a) (NN:[672..678] subset))
+          (PP (IN:[679..681] of)
+            (NP (NN:[682..685] AML))))))
+    (.:[685..686] .)))
+
+;sentence 7 Span:687..757
+;These recombinations were  detected in 9 out of 100 de novo AML cases.
+;[739..750]:malignancy:"de novo AML"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[687..692] These) (NNS:[693..707] recombinations))
+    (VP (VBD:[708..712] were)
+      (VP (VBN:[714..722] detected)
+        (NP-1 (-NONE-:[722..722] *))
+        (PP (IN:[723..725] in)
+          (NP
+            (NP (CD:[726..727] 9))
+            (PP (IN:[728..731] out)
+              (PP (IN:[732..734] of)
+                (NP (CD:[735..738] 100)
+                  
+                  (ADJP (FW:[739..741] de) (FW:[742..746] novo))
+                  (NN:[747..750] AML)
+                  (NNS:[751..756] cases))))))))
+    (.:[756..757] .)))
+
+;sentence 8 Span:758..905
+;Southern blot analysis suggested the  presence of these recombinations in the
+;vast majority of AML cells and thus  could be used as clonal markers.
+;[853..862]:malignancy:"AML cells"
+(SENT
+  (S
+    (NP-SBJ (JJ:[758..766] Southern) (NN:[767..771] blot)
+            (NN:[772..780] analysis))
+    (VP
+      (VP (VBD:[781..790] suggested)
+        (NP
+          (NP (DT:[791..794] the) (NN:[796..804] presence))
+          (PP (IN:[805..807] of)
+            (NP (DT:[808..813] these) (NNS:[814..828] recombinations)))
+          (PP (IN:[829..831] in)
+            (NP
+              (NP (DT:[832..835] the) (JJ:[836..840] vast)
+                  (NN:[841..849] majority))
+              (PP (IN:[850..852] of)
+                (NP (NN:[853..856] AML) (NNS:[857..862] cells)))))))
+      (CC:[863..866] and)
+      (VP
+        (ADVP (RB:[867..871] thus))
+        (MD:[873..878] could)
+        (VP (VB:[879..881] be)
+          (VP (VBN:[882..886] used)
+            (NP (-NONE-:[886..886] *))
+            (PP (IN:[887..889] as)
+              (NP (JJ:[890..896] clonal) (NNS:[897..904] markers)))))))
+    (.:[904..905] .)))
+
+;sentence 9 Span:906..1238
+;In order to more accurately define the role of  ras proto-oncogene mutations
+;in the multistep process of malignant  transformation in myeloid leukemias,
+;we performed single strand conformation  polymorphism (SSCP) assays, slot
+;blot and direct sequencing analysis on these  nine cases with illegitimate
+;TCR delta gene rearrangements.
+;[954..957]:gene-rna:"ras"
+;[1040..1057]:malignancy:"myeloid leukemias"
+;[1208..1217]:gene-rna:"TCR delta"
+(SENT
+  (S
+    (S-PRP
+      (PP (IN:[906..908] In)
+        (NP (NN:[909..914] order)))
+      (NP-SBJ (-NONE-:[914..914] *))
+      (VP (TO:[915..917] to)
+        (ADVP (RBR:[918..922] more) (RB:[923..933] accurately))
+        (VP (VB:[934..940] define)
+          (NP
+            (NP (DT:[941..944] the) (NN:[945..949] role))
+            (PP (IN:[950..952] of)
+              (NP (NN:[954..957] ras)
+                (NML (AFX:[958..963] proto) (HYPH:[963..964] -)
+                     (NN:[964..972] oncogene))
+                (NNS:[973..982] mutations))))
+          (PP (IN:[983..985] in)
+            (NP
+              (NP (DT:[986..989] the) (JJ:[990..999] multistep)
+                  (NN:[1000..1007] process))
+              (PP (IN:[1008..1010] of)
+                (NP (JJ:[1011..1020] malignant) (NN:[1022..1036] transformation)))))
+          (PP (IN:[1037..1039] in)
+            (NP (JJ:[1040..1047] myeloid) (NNS:[1048..1057] leukemias))))))
+    (,:[1057..1058] ,)
+    (NP-SBJ (PRP:[1059..1061] we))
+    (VP (VBD:[1062..1071] performed)
+      (NP
+        (NP
+          (NML
+            (NML (JJ:[1072..1078] single) (NN:[1079..1085] strand)
+                 (NN:[1086..1098] conformation) (NN:[1100..1112] polymorphism))
+            (NML (-LRB-:[1113..1114] -LRB-) (NN:[1114..1118] SSCP)
+                 (-RRB-:[1118..1119] -RRB-)))
+          (NNS:[1120..1126] assays))
+        (,:[1126..1127] ,)
+        (NP (NN:[1128..1132] slot) (NN:[1133..1137] blot))
+        (CC:[1138..1141] and)
+        (NP (JJ:[1142..1148] direct) (NN:[1149..1159] sequencing)
+            (NN:[1160..1168] analysis)))
+      (PP (IN:[1169..1171] on)
+        (NP
+          (NP (DT:[1172..1177] these) (CD:[1179..1183] nine)
+              (NNS:[1184..1189] cases))
+          (PP (IN:[1190..1194] with)
+            (NP (JJ:[1195..1207] illegitimate)
+              (NML
+                 (NN:[1208..1211] TCR) (SYM:[1212..1217] delta)
+                (NN:[1218..1222] gene))
+              (NNS:[1223..1237] rearrangements))))))
+    (.:[1237..1238] .)))
+
+;sentence 10 Span:1239..1303
+;Ras proto-oncogene  mutations were found in three of nine cases.
+;[1239..1242]:gene-rna:"Ras"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1239..1242] Ras)
+      (NP (AFX:[1243..1248] proto) (HYPH:[1248..1249] -)
+          (NN:[1249..1257] oncogene))
+      (NNS:[1259..1268] mutations))
+    (VP (VBD:[1269..1273] were)
+      (VP (VBN:[1274..1279] found)
+        (NP-1 (-NONE-:[1279..1279] *))
+        (PP (IN:[1280..1282] in)
+          (NP
+            (NP (CD:[1283..1288] three))
+            (PP (IN:[1289..1291] of)
+              (NP (CD:[1292..1296] nine) (NNS:[1297..1302] cases)))))))
+    (.:[1302..1303] .)))
+
+;sentence 11 Span:1304..1433
+;Interestingly, SSCP, slot blot and  sequencing suggested the presence of the
+;respective mutations in most of the  leukemic cells.
+;[1392..1401]:variation-event:"mutations"
+;[1418..1432]:malignancy:"leukemic cells"
+(SENT
+  (S
+    (ADVP (RB:[1304..1317] Interestingly))
+    (,:[1317..1318] ,)
+    (NP-SBJ
+      (NP (NN:[1319..1323] SSCP))
+      (,:[1323..1324] ,)
+      (NP (NN:[1325..1329] slot) (NN:[1330..1334] blot))
+      (CC:[1335..1338] and)
+      (NP (NN:[1340..1350] sequencing)))
+    (VP (VBD:[1351..1360] suggested)
+      (NP
+        (NP (DT:[1361..1364] the) (NN:[1365..1373] presence))
+        (PP (IN:[1374..1376] of)
+          (NP (DT:[1377..1380] the) (JJ:[1381..1391] respective)
+              (NNS:[1392..1401] mutations)))
+        (PP-LOC (IN:[1402..1404] in)
+          (NP
+            (NP (JJS:[1405..1409] most))
+            (PP (IN:[1410..1412] of)
+              (NP (DT:[1413..1416] the)
+                 (JJ:[1418..1426] leukemic) (NNS:[1427..1432] cells)))))))
+    (.:[1432..1433] .)))
+
+;sentence 12 Span:1434..1535
+;Thus, ras mutations presumably occurred early in the process of 
+;transformation in these three cases.
+;[1440..1443]:gene-rna:"ras"
+(SENT
+  (S
+    (ADVP (RB:[1434..1438] Thus))
+    (,:[1438..1439] ,)
+    (NP-SBJ (NN:[1440..1443] ras) (NNS:[1444..1453] mutations))
+    (ADVP (RB:[1454..1464] presumably))
+    (VP (VBD:[1465..1473] occurred)
+      (ADVP-TMP (RB:[1474..1479] early)
+        (PP (IN:[1480..1482] in)
+          (NP
+            (NP (DT:[1483..1486] the) (NN:[1487..1494] process))
+            (PP (IN:[1495..1497] of)
+              (NP (NN:[1499..1513] transformation))))))
+      (PP (IN:[1514..1516] in)
+        (NP (DT:[1517..1522] these) (CD:[1523..1528] three)
+            (NNS:[1529..1534] cases))))
+    (.:[1534..1535] .)))
+
+;section 13 Span:1539..1583
+;PMID: 8289473 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1539..1543] PMID) (::[1543..1544] :) (CD:[1545..1552] 8289473)
+        (IN:[1553..1554] -LSB-) (NNP:[1554..1560] PubMed) (HYPH:[1561..1562] -)
+        (JJ:[1563..1570] indexed) (IN:[1571..1574] for)
+        (NNP:[1575..1583] MEDLINE-RSB-)))

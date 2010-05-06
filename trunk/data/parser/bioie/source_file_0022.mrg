@@ -1,0 +1,545 @@
+;PMID: 7685382
+;source_file_905.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..179] = [t:52..179]
+;2)section:[e:183..225] = [t:183..224]
+;3)section:[e:229..324] = [t:229..324]
+;4)sentence:[e:328..558] = [t:328..558]
+;5)sentence:[e:559..784] = [t:559..784]
+;6)sentence:[e:785..1036] = [t:785..1036]
+;7)sentence:[e:1038..1156] = [t:1038..1156]
+;8)sentence:[e:1157..1272] = [t:1157..1272]
+;9)sentence:[e:1274..1452] = [t:1274..1452]
+;10)sentence:[e:1453..1575] = [t:1453..1575]
+;11)sentence:[e:1576..1788] = [t:1576..1788]
+;12)sentence:[e:1789..1934] = [t:1789..1934]
+;13)sentence:[e:1935..2016] = [t:1935..2016]
+;14)section:[e:2020..2064] = [t:2020..2063]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:183..225][t:183..224]
+;ERROR_Section end mismatch[e:2020..2064][t:2020..2063]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[36..37] )
+;ERROR_Token in entity file but not tree[37..38] :
+;ERROR_Token in entity file but not tree[224..225] .
+;ERROR_Token in entity file but not tree[2063..2064] ]
+;ERROR_Token in tree file but not entity[36..38] ):
+
+;section 0 Span:0..46
+;J Pharmacol Exp Ther. 1993 Jun;265(3):1047-54.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1993) (NNP:[27..30] Jun)
+        (::[30..31] ;) (CD:[31..34] 265) (-LRB-:[34..35] -LRB-) (CD:[35..36] 3)
+        (-RRB-:[36..38] -RRB-:) (CD:[38..42] 1047) (HYPH:[42..43] -)
+        (CD:[43..45] 54) (.:[45..46] .)))
+
+;sentence 1 Span:52..179
+;Adrenochrome reaction implicates oxygen radicals in metabolism of
+;cyclosporine A  and FK-506 in rat and human liver microsomes.
+;[52..64]:substance:"Adrenochrome"
+;[85..100]:substance:"oxygen radicals"
+;[118..132]:substance:"cyclosporine A"
+;[138..144]:substance:"FK-506"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[52..64] Adrenochrome) (NN:[65..73] reaction))
+    (VP (VBZ:[74..84] implicates)
+      (NP (NN:[85..91] oxygen) (NNS:[92..100] radicals))
+      (PP (IN:[101..103] in)
+        (NP
+          (NP (NN:[104..114] metabolism))
+          (PP (IN:[115..117] of)
+            (NP
+              (NP (NN:[118..130] cyclosporine) (NN:[131..132] A))
+              (CC:[134..137] and)
+              (NP (NN:[138..144] FK-506))))))
+      (PP-LOC (IN:[145..147] in)
+        (NP
+          (NP (NN:[148..151] rat)
+            (NML-1 (-NONE-:[151..151] *P*)))
+          (CC:[152..155] and)
+          (NP (JJ:[156..161] human)
+            (NML-1 (NN:[162..167] liver) (NNS:[168..178] microsomes))))))
+    (.:[178..179] .)))
+
+;section 2 Span:183..224
+;Ahmed SS, Strobel HW, Napoli KL, Grevel J
+(SEC
+  (FRAG (NNP:[183..188] Ahmed) (NNP:[189..191] SS) (,:[191..192] ,)
+        (NNP:[193..200] Strobel) (NNP:[201..203] HW) (,:[203..204] ,)
+        (NNP:[205..211] Napoli) (NNP:[212..214] KL) (,:[214..215] ,)
+        (NNP:[216..222] Grevel) (NNP:[223..224] J)))
+
+(ORPH .)
+
+;section 3 Span:229..324
+;Department of Biochemistry and Molecular Biology, University of Texas Medical
+; School, Houston.
+(SEC
+  (FRAG (NNP:[229..239] Department) (IN:[240..242] of)
+        (NNP:[243..255] Biochemistry) (CC:[256..259] and)
+        (NNP:[260..269] Molecular) (NNP:[270..277] Biology) (,:[277..278] ,)
+        (NNP:[279..289] University) (IN:[290..292] of) (NNP:[293..298] Texas)
+        (NNP:[299..306] Medical) (NNP:[308..314] School) (,:[314..315] ,)
+        (NNP:[316..323] Houston) (.:[323..324] .)))
+;ERROR_Orphan Text from Tree File[224..229] .
+
+;sentence 4 Span:328..558
+;The role of oxygen radicals in the metabolism of cyclosporine A (CyA),
+;FR900506  (FK-506) and carbon tetrachloride (CCl4) catalyzed by the
+;cytochrome P450 system  was investigated in vitro in rat and human microsomal
+;preparations.
+;[340..355]:substance:"oxygen radicals"
+;[377..391]:substance:"cyclosporine A"
+;[393..396]:substance:"CyA"
+;[399..407]:substance:"FR900506"
+;[410..416]:substance:"FK-506"
+;[422..442]:substance:"carbon tetrachloride"
+;[444..448]:substance:"CCl4"
+;[467..482]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[328..331] The) (NN:[332..336] role))
+      (PP (IN:[337..339] of)
+        (NP (NN:[340..346] oxygen) (NNS:[347..355] radicals)))
+      (PP (IN:[356..358] in)
+        (NP
+          (NP (DT:[359..362] the) (NN:[363..373] metabolism))
+          (PP (IN:[374..376] of)
+            (NP
+              (NP
+                (NP
+                  (NP (NN:[377..389] cyclosporine) (NN:[390..391] A))
+                  (NP (-LRB-:[392..393] -LRB-) (NN:[393..396] CyA)
+                      (-RRB-:[396..397] -RRB-)))
+                (,:[397..398] ,)
+                (NP
+                  (NP (NN:[399..407] FR900506))
+                  (NP (-LRB-:[409..410] -LRB-) (NN:[410..416] FK-506)
+                      (-RRB-:[416..417] -RRB-)))
+                (CC:[418..421] and)
+                (NP
+                  (NP (NN:[422..428] carbon) (NN:[429..442] tetrachloride))
+                  (NP (-LRB-:[443..444] -LRB-) (NN:[444..448] CCl4)
+                      (-RRB-:[448..449] -RRB-))))
+              (VP (VBN:[450..459] catalyzed)
+                (NP (-NONE-:[459..459] *))
+                (PP (IN:[460..462] by)
+                  (NP-LGS (DT:[463..466] the)
+                    (NML (NN:[467..477] cytochrome) (NN:[478..482] P450))
+                    (NN:[483..489] system)))))))))
+    (VP (VBD:[491..494] was)
+      (VP (VBN:[495..507] investigated)
+        (NP-2 (-NONE-:[507..507] *))
+        (ADVP (FW:[508..510] in) (FW:[511..516] vitro))
+        (PP-LOC (IN:[517..519] in)
+          (NP
+            (NP (NN:[520..523] rat)
+              (NML-1 (-NONE-:[523..523] *P*)))
+            (CC:[524..527] and)
+            (NP (JJ:[528..533] human)
+              (NML-1 (JJ:[534..544] microsomal) (NNS:[545..557] preparations)))))))
+    (.:[557..558] .)))
+
+;sentence 5 Span:559..784
+;Varying  concentrations of CyA, FK-506 and CCl4 (100 microM-1.0 mM) were
+;added to  microsomal preparations, and lipid peroxidation was measured by
+;malondialdehyde  (MDA) formation as detected by the thiobarbituric acid
+;assay.
+;[586..589]:substance:"CyA"
+;[591..597]:substance:"FK-506"
+;[602..606]:substance:"CCl4"
+;[608..611]:quantitative-value:"100"
+;[612..618]:quantitative-units:"microM"
+;[619..622]:quantitative-value:"1.0"
+;[623..625]:quantitative-units:"mM"
+;[671..676]:substance:"lipid"
+;[706..721]:substance:"malondialdehyde"
+;[724..727]:substance:"MDA"
+;[758..777]:substance:"thiobarbituric acid"
+(SENT
+  (S
+    (S
+      (NP-SBJ-3
+        (NP (JJ:[559..566] Varying) (NNS:[568..582] concentrations))
+        (PP (IN:[583..585] of)
+          (NP (NN:[586..589] CyA) (,:[589..590] ,) (NN:[591..597] FK-506)
+              (CC:[598..601] and) (NN:[602..606] CCl4)))
+        (PRN (-LRB-:[607..608] -LRB-)
+          (NP
+            (NP (CD:[608..611] 100) (NN:[612..618] microM))
+            (PP (HYPH:[618..619] -)
+              (NP (CD:[619..622] 1.0) (NN:[623..625] mM))))
+          (-RRB-:[625..626] -RRB-)))
+      (VP (VBD:[627..631] were)
+        (VP (VBN:[632..637] added)
+          (NP-3 (-NONE-:[637..637] *))
+          (PP-CLR (TO:[638..640] to)
+            (NP (JJ:[642..652] microsomal) (NNS:[653..665] preparations))))))
+    (,:[665..666] ,) (CC:[667..670] and)
+    (S
+      (NP-SBJ-2 (NN:[671..676] lipid) (NN:[677..689] peroxidation))
+      (VP (VBD:[690..693] was)
+        (VP (VBN:[694..702] measured)
+          (NP-2 (-NONE-:[702..702] *))
+          (PP-MNR (IN:[703..705] by)
+            (NP
+              (NML
+                (NML (NN:[706..721] malondialdehyde))
+                (NML (-LRB-:[723..724] -LRB-) (NN:[724..727] MDA)
+                     (-RRB-:[727..728] -RRB-)))
+              (NN:[729..738] formation)))
+          (SBAR-ADV (IN:[739..741] as)
+            (S
+              (NP-SBJ-1 (-NONE-:[741..741] *))
+              (VP (VBN:[742..750] detected)
+                (NP-1 (-NONE-:[750..750] *))
+                (PP (IN:[751..753] by)
+                  (NP-LGS (DT:[754..757] the)
+                    (NML (JJ:[758..772] thiobarbituric) (NN:[773..777] acid))
+                    (NN:[778..783] assay)))))))))
+    (.:[783..784] .)))
+
+;sentence 6 Span:785..1036
+;The effects of  oxygen radical scavengers [superoxide dismutase (SOD) and
+;catalase (CAT)] and an  antioxidant [glutathione (GLUT)] were tested on
+;various incubations of CyA,  FK-506 and CCl4 to assess the role of oxygen
+;radicals in lipid peroxidation.
+;[801..815]:substance:"oxygen radical"
+;[816..826]:substance:"scavengers"
+;[828..848]:substance:"superoxide dismutase"
+;[850..853]:substance:"SOD"
+;[859..867]:substance:"catalase"
+;[869..872]:substance:"CAT"
+;[883..894]:substance:"antioxidant"
+;[896..907]:substance:"glutathione"
+;[909..913]:substance:"GLUT"
+;[954..957]:substance:"CyA"
+;[960..966]:substance:"FK-506"
+;[971..975]:substance:"CCl4"
+;[998..1013]:substance:"oxygen radicals"
+;[1017..1022]:substance:"lipid"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[785..788] The) (NNS:[789..796] effects))
+      (PP (IN:[797..799] of)
+        (NP
+          (NP
+            (NP
+              (NML (NN:[801..807] oxygen) (NN:[808..815] radical))
+              (NNS:[816..826] scavengers))
+            (NP (-LRB-:[827..828] -LSB-)
+              (NP
+                (NP (NN:[828..838] superoxide) (NN:[839..848] dismutase))
+                (NP (-LRB-:[849..850] -LRB-) (NN:[850..853] SOD)
+                    (-RRB-:[853..854] -RRB-)))
+              (CC:[855..858] and)
+              (NP
+                (NP (NN:[859..867] catalase))
+                (NP (-LRB-:[868..869] -LRB-) (NN:[869..872] CAT)
+                    (-RRB-:[872..873] -RRB-)))
+              (-RRB-:[873..874] -RSB-)))
+          (CC:[875..878] and)
+          (NP
+            (NP (DT:[879..881] an) (NN:[883..894] antioxidant))
+            (NP (-LRB-:[895..896] -LSB-)
+              (NP (NN:[896..907] glutathione))
+              (NP (-LRB-:[908..909] -LRB-) (NN:[909..913] GLUT)
+                  (-RRB-:[913..914] -RRB-))
+              (-RRB-:[914..915] -RSB-))))))
+    (VP (VBD:[916..920] were)
+      (VP (VBN:[921..927] tested)
+        (NP-1 (-NONE-:[927..927] *))
+        (PP (IN:[928..930] on)
+          (NP
+            (NP (JJ:[931..938] various) (NNS:[939..950] incubations))
+            (PP (IN:[951..953] of)
+              (NP (NN:[954..957] CyA) (,:[957..958] ,) (NN:[960..966] FK-506)
+                  (CC:[967..970] and) (NN:[971..975] CCl4)))))
+        (S-PRP
+          (NP-SBJ (-NONE-:[975..975] *))
+          (VP (TO:[976..978] to)
+            (VP (VB:[979..985] assess)
+              (NP
+                (NP (DT:[986..989] the) (NN:[990..994] role))
+                (PP (IN:[995..997] of)
+                  (NP (NN:[998..1004] oxygen) (NNS:[1005..1013] radicals)))
+                (PP (IN:[1014..1016] in)
+                  (NP (NN:[1017..1022] lipid) (NN:[1023..1035] peroxidation)))))))))
+    (.:[1035..1036] .)))
+
+;sentence 7 Span:1038..1156
+;CyA-dependent MDA formation was moderately inhibited by SOD in the rat model
+;and  increased by SOD in the human model.
+;[1038..1041]:substance:"CyA"
+;[1052..1055]:substance:"MDA"
+;[1094..1097]:substance:"SOD"
+;[1133..1136]:substance:"SOD"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (NN:[1038..1041] CyA) (HYPH:[1041..1042] -)
+            (JJ:[1042..1051] dependent))
+      (NN:[1052..1055] MDA) (NN:[1056..1065] formation))
+    (VP (VBD:[1066..1069] was)
+      (VP
+        (VP
+          (ADVP (RB:[1070..1080] moderately))
+          (VBN:[1081..1090] inhibited)
+          (NP-1 (-NONE-:[1090..1090] *))
+          (PP (IN:[1091..1093] by)
+            (NP-LGS (NN:[1094..1097] SOD)))
+          (PP (IN:[1098..1100] in)
+            (NP (DT:[1101..1104] the) (NN:[1105..1108] rat)
+                (NN:[1109..1114] model))))
+        (CC:[1115..1118] and)
+        (VP (VBN:[1120..1129] increased)
+          (NP-1 (-NONE-:[1129..1129] *))
+          (PP (IN:[1130..1132] by)
+            (NP-LGS (NN:[1133..1136] SOD)))
+          (PP (IN:[1137..1139] in)
+            (NP (DT:[1140..1143] the) (JJ:[1144..1149] human)
+                (NN:[1150..1155] model))))))
+    (.:[1155..1156] .)))
+
+;sentence 8 Span:1157..1272
+;In both models, CAT slightly inhibited  CyA-dependent MDA formation and GLUT
+;significantly inhibited MDA formation.
+;[1173..1176]:substance:"CAT"
+;[1197..1200]:substance:"CyA"
+;[1211..1214]:substance:"MDA"
+;[1229..1233]:substance:"GLUT"
+;[1258..1261]:substance:"MDA"
+(SENT
+  (S
+    (PP (IN:[1157..1159] In)
+      (NP (DT:[1160..1164] both) (NNS:[1165..1171] models)))
+    (,:[1171..1172] ,)
+    (S
+      (NP-SBJ (NN:[1173..1176] CAT))
+      (ADVP (RB:[1177..1185] slightly))
+      (VP (VBD:[1186..1195] inhibited)
+        (NP
+          (ADJP (NN:[1197..1200] CyA) (HYPH:[1200..1201] -)
+                (JJ:[1201..1210] dependent))
+          (NN:[1211..1214] MDA) (NN:[1215..1224] formation))))
+    (CC:[1225..1228] and)
+    (S
+      (NP-SBJ (NN:[1229..1233] GLUT))
+      (ADVP (RB:[1234..1247] significantly))
+      (VP (VBD:[1248..1257] inhibited)
+        (NP (NN:[1258..1261] MDA) (NN:[1262..1271] formation))))
+    (.:[1271..1272] .)))
+
+;sentence 9 Span:1274..1452
+;FK-506-dependent MDA formation, studied only in the rat model, paralleled 
+;CyA-induced MDA formation but showed greater inhibition with CAT and less 
+;inhibition with SOD or GLUT.
+;[1274..1280]:substance:"FK-506"
+;[1291..1294]:substance:"MDA"
+;[1349..1352]:substance:"CyA"
+;[1361..1364]:substance:"MDA"
+;[1410..1413]:substance:"CAT"
+;[1440..1443]:substance:"SOD"
+;[1447..1451]:substance:"GLUT"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (ADJP (NN:[1274..1280] FK-506) (HYPH:[1280..1281] -)
+              (JJ:[1281..1290] dependent))
+        (NN:[1291..1294] MDA) (NN:[1295..1304] formation))
+      (,:[1304..1305] ,)
+      (VP (VBN:[1306..1313] studied)
+        (NP (-NONE-:[1313..1313] *))
+        (ADVP (RB:[1314..1318] only))
+        (PP (IN:[1319..1321] in)
+          (NP (DT:[1322..1325] the) (NN:[1326..1329] rat)
+              (NN:[1330..1335] model)))))
+    (,:[1335..1336] ,)
+    (VP
+      (VP (VBD:[1337..1347] paralleled)
+        (NP
+          (ADJP (NN:[1349..1352] CyA) (HYPH:[1352..1353] -)
+                (VBN:[1353..1360] induced))
+          (NN:[1361..1364] MDA) (NN:[1365..1374] formation)))
+      (CC:[1375..1378] but)
+      (VP (VBD:[1379..1385] showed)
+        (NP
+          (NP
+            (NP (JJR:[1386..1393] greater) (NN:[1394..1404] inhibition))
+            (PP (IN:[1405..1409] with)
+              (NP (NN:[1410..1413] CAT))))
+          (CC:[1414..1417] and)
+          (NP
+            (NP (JJR:[1418..1422] less) (NN:[1424..1434] inhibition))
+            (PP (IN:[1435..1439] with)
+              (NP (NN:[1440..1443] SOD) (CC:[1444..1446] or)
+                  (NN:[1447..1451] GLUT)))))))
+    (.:[1451..1452] .)))
+
+;sentence 10 Span:1453..1575
+;In both models, CCl4-dependent MDA formation was  significantly inhibited by
+;GLUT and showed no sensitivity to SOD or CAT.
+;[1469..1473]:substance:"CCl4"
+;[1484..1487]:substance:"MDA"
+;[1530..1534]:substance:"GLUT"
+;[1564..1567]:substance:"SOD"
+;[1571..1574]:substance:"CAT"
+(SENT
+  (S
+    (PP (IN:[1453..1455] In)
+      (NP (DT:[1456..1460] both) (NNS:[1461..1467] models)))
+    (,:[1467..1468] ,)
+    (NP-SBJ-1
+      (ADJP (NN:[1469..1473] CCl4) (HYPH:[1473..1474] -)
+            (JJ:[1474..1483] dependent))
+      (NN:[1484..1487] MDA) (NN:[1488..1497] formation))
+    (VP
+      (VP (VBD:[1498..1501] was)
+        (ADVP (RB:[1503..1516] significantly))
+        (VP (VBN:[1517..1526] inhibited)
+          (NP-1 (-NONE-:[1526..1526] *))
+          (PP (IN:[1527..1529] by)
+            (NP-LGS (NN:[1530..1534] GLUT)))))
+      (CC:[1535..1538] and)
+      (VP (VBD:[1539..1545] showed)
+        (NP
+          (NP (DT:[1546..1548] no) (NN:[1549..1560] sensitivity))
+          (PP (TO:[1561..1563] to)
+            (NP (NN:[1564..1567] SOD) (CC:[1568..1570] or) (NN:[1571..1574] CAT))))))
+    (.:[1574..1575] .)))
+
+;sentence 11 Span:1576..1788
+;In  addition, the adrenochrome reaction, which measures the oxidation of
+;epinephrine  to adrenochrome, was used to measure the increased oxygen
+;radical-flux resulting  from the metabolism of CyA, FK-506 and CCl4.
+;[1594..1606]:substance:"adrenochrome"
+;[1649..1660]:substance:"epinephrine"
+;[1665..1677]:substance:"adrenochrome"
+;[1713..1727]:substance:"oxygen radical"
+;[1767..1770]:substance:"CyA"
+;[1772..1778]:substance:"FK-506"
+;[1783..1787]:substance:"CCl4"
+(SENT
+  (S
+    (PP (IN:[1576..1578] In)
+      (NP (NN:[1580..1588] addition)))
+    (,:[1588..1589] ,)
+    (NP-SBJ-2
+      (NP (DT:[1590..1593] the) (NN:[1594..1606] adrenochrome)
+          (NN:[1607..1615] reaction))
+      (,:[1615..1616] ,)
+      (SBAR
+        (WHNP-1 (WDT:[1617..1622] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[1622..1622] *T*))
+          (VP (VBZ:[1623..1631] measures)
+            (NP
+              (NP (DT:[1632..1635] the) (NN:[1636..1645] oxidation))
+              (PP (IN:[1646..1648] of)
+                (NP (NN:[1649..1660] epinephrine)))
+              (PP (TO:[1662..1664] to)
+                (NP (NN:[1665..1677] adrenochrome))))))))
+    (,:[1677..1678] ,)
+    (VP (VBD:[1679..1682] was)
+      (VP (VBN:[1683..1687] used)
+        (NP-2 (-NONE-:[1687..1687] *))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1687..1687] *))
+          (VP (TO:[1688..1690] to)
+            (VP (VB:[1691..1698] measure)
+              (NP
+                (NP (DT:[1699..1702] the) (JJ:[1703..1712] increased)
+                  (NML (NN:[1713..1719] oxygen) (NN:[1720..1727] radical))
+                  (HYPH:[1727..1728] -) (NN:[1728..1732] flux))
+                (VP (VBG:[1733..1742] resulting)
+                  (PP (IN:[1744..1748] from)
+                    (NP
+                      (NP (DT:[1749..1752] the) (NN:[1753..1763] metabolism))
+                      (PP (IN:[1764..1766] of)
+                        (NP (NN:[1767..1770] CyA) (,:[1770..1771] ,)
+                            (NN:[1772..1778] FK-506) (CC:[1779..1782] and)
+                            (NN:[1783..1787] CCl4))))))))))))
+    (.:[1787..1788] .)))
+
+;sentence 12 Span:1789..1934
+;CyA with epinephrine showed the  highest oxidative activity, followed by
+;FK-506 and then CCl4, which showed the  least formation of adrenochrome.
+;[1789..1792]:substance:"CyA"
+;[1798..1809]:substance:"epinephrine"
+;[1862..1868]:substance:"FK-506"
+;[1878..1882]:substance:"CCl4"
+;[1921..1933]:substance:"adrenochrome"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1789..1792] CyA))
+      (PP (IN:[1793..1797] with)
+        (NP (NN:[1798..1809] epinephrine))))
+    (VP (VBD:[1810..1816] showed)
+      (NP (DT:[1817..1820] the) (JJS:[1822..1829] highest)
+          (JJ:[1830..1839] oxidative) (NN:[1840..1848] activity))
+      (,:[1848..1849] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1849..1849] *))
+        (VP (VBN:[1850..1858] followed)
+          (NP (-NONE-:[1858..1858] *))
+          (PP (IN:[1859..1861] by)
+            (NP-LGS
+              (NP (NN:[1862..1868] FK-506))
+              (CONJP (CC:[1869..1872] and) (RB:[1873..1877] then))
+              (NP
+                (NP (NN:[1878..1882] CCl4))
+                (,:[1882..1883] ,)
+                (SBAR
+                  (WHNP-1 (WDT:[1884..1889] which))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1889..1889] *T*))
+                    (VP (VBD:[1890..1896] showed)
+                      (NP
+                        (NP (IN:[1897..1900] the) (JJS:[1902..1907] least)
+                            (NN:[1908..1917] formation))
+                        (PP (IN:[1918..1920] of)
+                          (NP (NN:[1921..1933] adrenochrome)))))))))))))
+    (.:[1933..1934] .)))
+
+;sentence 13 Span:1935..2016
+;These results indicated a role for oxygen  radicals in CyA and FK-506
+;metabolism.
+;[1970..1986]:substance:"oxygen  radicals"
+;[1990..1993]:substance:"CyA"
+;[1998..2004]:substance:"FK-506"
+(SENT
+  (S
+    (NP-SBJ (DT:[1935..1940] These) (NNS:[1941..1948] results))
+    (VP (VBD:[1949..1958] indicated)
+      (NP
+        (NP (DT:[1959..1960] a) (NN:[1961..1965] role))
+        (PP (IN:[1966..1969] for)
+          (NP (NN:[1970..1976] oxygen) (NNS:[1978..1986] radicals)))
+        (PP (IN:[1987..1989] in)
+          (NP
+            (NP (NN:[1990..1993] CyA)
+              (NML-1 (-NONE-:[1993..1993] *P*)))
+            (CC:[1994..1997] and)
+            (NP (NN:[1998..2004] FK-506)
+              (NML-1 (NN:[2005..2015] metabolism)))))))
+    (.:[2015..2016] .)))
+
+;section 14 Span:2020..2063
+;PMID: 7685382 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2020..2024] PMID) (::[2024..2025] :) (CD:[2026..2033] 7685382)
+        (-LRB-:[2034..2035] -LSB-) (NNP:[2035..2041] PubMed) (::[2042..2043] -)
+        (VBN:[2044..2051] indexed) (IN:[2052..2055] for)
+        (NNP:[2056..2063] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2063..EOF] ]
+
+(ORPH -RSB-)

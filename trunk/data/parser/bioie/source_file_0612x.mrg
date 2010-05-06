@@ -1,0 +1,323 @@
+;PMID: 7918071
+;source_file_791.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..172] = [t:40..172]
+;2)section:[e:176..242] = [t:176..242]
+;3)section:[e:246..356] = [t:246..356]
+;4)sentence:[e:360..504] = [t:360..504]
+;5)sentence:[e:505..665] = [t:505..665]
+;6)sentence:[e:666..801] = [t:666..801]
+;7)sentence:[e:802..1008] = [t:802..1008]
+;8)sentence:[e:1009..1175] = [t:1009..1175]
+;9)sentence:[e:1176..1311] = [t:1176..1311]
+;10)sentence:[e:1312..1434] = [t:1312..1434]
+;11)section:[e:1438..1482] = [t:1438..1482]
+
+;section 0 Span:0..35
+;Br J Haematol  1994 Apr;86(4):774-9
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..13] Haematol) (CD:[15..19] 1994)
+        (.:[20..27] Apr;86-LRB-) (CD:[27..29] 4-RRB-) (CD:[29..33] :774)
+        (::[33..34] -) (CD:[34..35] 9)))
+
+;sentence 1 Span:40..172
+;Point mutations of the N-ras gene in the blood plasma DNA of patients with 
+;myelodysplastic syndrome or acute myelogenous leukaemia.
+;[40..55]:variation-type:"Point mutations"
+;[63..68]:gene-rna:"N-ras"
+;[116..140]:malignancy:"myelodysplastic syndrome"
+;[144..171]:malignancy:"acute myelogenous leukaemia"
+(SENT
+  (NP-HLN
+    (NP (NN:[40..45] Point) (NNS:[46..55] mutations))
+    (PP (IN:[56..58] of)
+      (NP (DT:[59..62] the) (NN:[63..68] N-ras) (NN:[69..73] gene)))
+    (PP-LOC (IN:[74..76] in)
+      (NP
+        (NP (DT:[77..80] the)
+          (NML (NN:[81..86] blood) (NN:[87..93] plasma))
+          (NN:[94..97] DNA))
+        (PP (IN:[98..100] of)
+          (NP
+            (NP (NNS:[101..109] patients))
+            (PP (IN:[110..114] with)
+              (NP
+                (NP (JJ:[116..131] myelodysplastic) (NN:[132..140] syndrome))
+                (CC:[141..143] or)
+                (NP (JJ:[144..149] acute) (JJ:[150..161] myelogenous)
+                    (NN:[162..171] leukaemia))))))))
+    (.:[171..172] .)))
+
+;section 2 Span:176..242
+;Vasioukhin V, Anker P, Maurice P, Lyautey J, Lederrey C, Stroun M.
+(SEC
+  (FRAG (NNP:[176..186] Vasioukhin) (NNP:[187..188] V) (,:[188..189] ,)
+        (NNP:[190..195] Anker) (NNP:[196..197] P) (,:[197..198] ,)
+        (NNP:[199..206] Maurice) (NNP:[207..208] P) (,:[208..209] ,)
+        (NNP:[210..217] Lyautey) (NNP:[218..220] J,) (NNP:[221..229] Lederrey)
+        (NNP:[230..231] C) (,:[231..232] ,) (NNP:[233..239] Stroun)
+        (NNP:[240..242] M.)))
+
+;section 3 Span:246..356
+;Department of Plant Physiology, Pavillon des Isotopes, Faculty of Science, 
+;University of Geneva, Switzerland.
+(SEC
+  (FRAG (NNP:[246..256] Department) (IN:[257..259] of) (NNP:[260..265] Plant)
+        (NNP:[266..276] Physiology) (,:[276..277] ,) (NNP:[278..286] Pavillon)
+        (NNP:[287..290] des) (NNP:[291..299] Isotopes) (,:[299..300] ,)
+        (NNP:[301..308] Faculty) (IN:[309..311] of) (NNP:[312..319] Science)
+        (,:[319..320] ,) (NNP:[322..332] University) (IN:[333..335] of)
+        (NNP:[336..342] Geneva) (,:[342..343] ,) (NNP:[344..355] Switzerland)
+        (.:[355..356] .)))
+
+;sentence 4 Span:360..504
+;Oncogene mutations are frequently found in several tumour types and, among 
+;these, point mutations of the ras gene are particularly significant.
+;[443..458]:variation-type:"point mutations"
+;[466..469]:gene-rna:"ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[360..368] Oncogene) (NNS:[369..378] mutations))
+      (VP (VBP:[379..382] are)
+        (ADVP (RB:[383..393] frequently))
+        (VP (VBN:[394..399] found)
+          (NP-1 (-NONE-:[399..399] *))
+          (PP-LOC (IN:[400..402] in)
+            (NP (JJ:[403..410] several) (NN:[411..417] tumour)
+                (NNS:[418..423] types))))))
+    (CC:[424..427] and) (,:[427..428] ,)
+    (S
+      (PP (IN:[429..434] among)
+        (NP (DT:[436..441] these)))
+      (,:[441..442] ,)
+      (NP-SBJ
+        (NP (NN:[443..448] point) (NNS:[449..458] mutations))
+        (PP (IN:[459..461] of)
+          (NP (DT:[462..465] the) (NN:[466..469] ras) (NN:[470..474] gene))))
+      (VP (VBP:[475..478] are)
+        (ADJP-PRD (RB:[479..491] particularly) (JJ:[492..503] significant))))
+    (.:[503..504] .)))
+
+;sentence 5 Span:505..665
+;A  predominance of N-ras mutations has been found in the bone marrow DNA of 
+;patients with myelodysplastic syndrome (MDS) or acute myelogenous leukaemia 
+;(AML).
+;[524..529]:gene-rna:"N-ras"
+;[596..620]:malignancy:"myelodysplastic syndrome"
+;[622..625]:malignancy:"MDS"
+;[630..657]:malignancy:"acute myelogenous leukaemia"
+;[660..663]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[505..506] A) (NN:[508..520] predominance))
+      (PP (IN:[521..523] of)
+        (NP (NN:[524..529] N-ras) (NNS:[530..539] mutations))))
+    (VP (VBZ:[540..543] has)
+      (VP (VBN:[544..548] been)
+        (VP (VBN:[549..554] found)
+          (NP-1 (-NONE-:[554..554] *))
+          (PP-LOC (IN:[555..557] in)
+            (NP
+              (NP (DT:[558..561] the)
+                (NML (NN:[562..566] bone) (NN:[567..573] marrow))
+                (NN:[574..577] DNA))
+              (PP (IN:[578..580] of)
+                (NP
+                  (NP (NNS:[582..590] patients))
+                  (PP (IN:[591..595] with)
+                    (NP
+                      (NP
+                        (NP (JJ:[596..611] myelodysplastic)
+                            (NN:[612..620] syndrome))
+                        (NP (-LRB-:[621..622] -LRB-) (NN:[622..625] MDS)
+                            (-RRB-:[625..626] -RRB-)))
+                      (CC:[627..629] or)
+                      (NP
+                        (NP (JJ:[630..635] acute) (JJ:[636..647] myelogenous)
+                            (NN:[648..657] leukaemia))
+                        (NP (-LRB-:[659..660] -LRB-) (NN:[660..663] AML)
+                            (-RRB-:[663..664] -RRB-))))))))))))
+    (.:[664..665] .)))
+
+;sentence 6 Span:666..801
+;On the other hand, increased levels of plasma DNA have previously been 
+;observed in patients suffering from various malignant diseases.
+(SENT
+  (S
+    (PP (IN:[666..668] On)
+      (NP (DT:[669..672] the) (JJ:[673..678] other) (NN:[679..683] hand)))
+    (,:[683..684] ,)
+    (NP-SBJ-1
+      (NP (JJ:[685..694] increased) (NNS:[695..701] levels))
+      (PP (IN:[702..704] of)
+        (NP (NN:[705..711] plasma) (NN:[712..715] DNA))))
+    (VP (VBP:[716..720] have)
+      (ADVP (RB:[721..731] previously))
+      (VP (VBN:[732..736] been)
+        (VP (VBN:[738..746] observed)
+          (NP-1 (-NONE-:[746..746] *))
+          (PP-LOC (IN:[747..749] in)
+            (NP
+              (NP (NNS:[750..758] patients))
+              (VP (VBG:[759..768] suffering)
+                (PP (IN:[769..773] from)
+                  (NP (JJ:[774..781] various) (JJ:[782..791] malignant)
+                      (NNS:[792..800] diseases)))))))))
+    (.:[800..801] .)))
+
+;sentence 7 Span:802..1008
+;In the present  work we have investigated, by polymerase chain reaction
+;(PCR), point mutations  of the N-ras gene in the DNA of plasma, blood cells
+;and bone marrow of 10  patients suffering from AML or MDS.
+;[848..858]:gene-protein:"polymerase"
+;[881..896]:variation-type:"point mutations"
+;[905..910]:gene-rna:"N-ras"
+;[997..1000]:malignancy:"AML"
+;[1004..1007]:malignancy:"MDS"
+(SENT
+  (S
+    (PP (IN:[802..804] In)
+      (NP (DT:[805..808] the) (JJ:[809..816] present) (NN:[818..822] work)))
+    (NP-SBJ (PRP:[823..825] we))
+    (VP (VBP:[826..830] have)
+      (VP (VBN:[831..843] investigated) (,:[843..844] ,)
+        (PP-MNR (IN:[845..847] by)
+          (NP
+            (NP (NN:[848..858] polymerase) (NN:[859..864] chain)
+                (NN:[865..873] reaction))
+            (NP (-LRB-:[874..875] -LRB-) (NN:[875..878] PCR)
+                (-RRB-:[878..879] -RRB-))))
+        (,:[879..880] ,)
+        (NP
+          (NP (NN:[881..886] point) (NNS:[887..896] mutations))
+          (PP (IN:[898..900] of)
+            (NP (DT:[901..904] the) (NN:[905..910] N-ras) (NN:[911..915] gene))))
+        (PP-LOC (IN:[916..918] in)
+          (NP
+            (NP (DT:[919..922] the) (NN:[923..926] DNA))
+            (PP (IN:[927..929] of)
+              (NP
+                (NP
+                  (NP (NN:[930..936] plasma))
+                  (,:[936..937] ,)
+                  (NP (NN:[938..943] blood) (NNS:[944..949] cells))
+                  (CC:[950..953] and)
+                  (NP (NN:[954..958] bone) (NN:[959..965] marrow)))
+                (PP (IN:[966..968] of)
+                  (NP
+                    (NP (CD:[969..971] 10) (NNS:[973..981] patients))
+                    (VP (VBG:[982..991] suffering)
+                      (PP (IN:[992..996] from)
+                        (NP (NN:[997..1000] AML) (CC:[1001..1003] or)
+                            (NN:[1004..1007] MDS))))))))))))
+    (.:[1007..1008] .)))
+
+;sentence 8 Span:1009..1175
+;The different ras mutations detected in five  cases were always present in
+;the plasma DNA while sometimes absent in the DNA of  peripheral blood cells
+;or bone marrow.
+;[1023..1026]:gene-rna:"ras"
+;[1027..1036]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1009..1012] The) (JJ:[1013..1022] different)
+          (NN:[1023..1026] ras) (NNS:[1027..1036] mutations))
+      (VP (VBN:[1037..1045] detected)
+        (NP (-NONE-:[1045..1045] *))
+        (PP (IN:[1046..1048] in)
+          (NP (CD:[1049..1053] five) (NNS:[1055..1060] cases)))))
+    (VP (VBD:[1061..1065] were)
+      (ADJP-PRD (RB:[1066..1072] always) (JJ:[1073..1080] present))
+      (PP-LOC (IN:[1081..1083] in)
+        (NP (DT:[1084..1087] the) (NN:[1088..1094] plasma) (NN:[1095..1098] DNA)))
+      (SBAR-ADV (IN:[1099..1104] while)
+        (S
+          (NP-SBJ-1 (-NONE-:[1104..1104] *))
+          (ADJP-PRD (RB:[1105..1114] sometimes) (JJ:[1115..1121] absent))
+          (PP-LOC (IN:[1122..1124] in)
+            (NP
+              (NP (DT:[1125..1128] the) (NN:[1129..1132] DNA))
+              (PP (IN:[1133..1135] of)
+                (NP
+                  (NP
+                    (ADJP-2 (JJ:[1137..1147] peripheral))
+                    (NN:[1148..1153] blood) (NNS:[1154..1159] cells))
+                  (CC:[1160..1162] or)
+                  (NP
+                    (ADJP-2 (-NONE-:[1162..1162] *P*))
+                    (NN:[1163..1167] bone) (NN:[1168..1174] marrow)))))))))
+    (.:[1174..1175] .)))
+
+;sentence 9 Span:1176..1311
+;This indicates that a bone marrow biopsy  or aspiration does not necessarily
+;contain all the malignant clones involved in  the disease.
+;[1269..1285]:malignancy:"malignant clones"
+;[1303..1310]:malignancy:"disease"
+(SENT
+  (S
+    (NP-SBJ (DT:[1176..1180] This))
+    (VP (VBZ:[1181..1190] indicates)
+      (SBAR (IN:[1191..1195] that)
+        (S
+          (NP-SBJ (DT:[1196..1197] a)
+            (NML
+              (NML
+                (NML-1 (NN:[1198..1202] bone) (NN:[1203..1209] marrow))
+                (NN:[1210..1216] biopsy))
+              (CC:[1218..1220] or)
+              (NML
+                (NML-1 (-NONE-:[1220..1220] *P*))
+                (NN:[1221..1231] aspiration))))
+          (VP (VBZ:[1232..1236] does) (RB:[1237..1240] not)
+            (ADVP (RB:[1241..1252] necessarily))
+            (VP (VB:[1253..1260] contain)
+              (NP
+                (NP (PDT:[1261..1264] all) (DT:[1265..1268] the)
+                   (JJ:[1269..1278] malignant) (NNS:[1279..1285] clones))
+                (VP (VBN:[1286..1294] involved)
+                  (NP (-NONE-:[1294..1294] *))
+                  (PP-CLR (IN:[1295..1297] in)
+                    (NP (DT:[1299..1302] the) (NN:[1303..1310] disease))))))))))
+    (.:[1310..1311] .)))
+
+;sentence 10 Span:1312..1434
+;Plasma could thus prove to be an easily accessible and useful  material for
+;detection and monitoring of myeloid disorders.
+;[1416..1433]:malignancy:"myeloid disorders"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1312..1318] Plasma))
+    (VP (MD:[1319..1324] could)
+      (ADVP (RB:[1325..1329] thus))
+      (VP (VB:[1330..1335] prove)
+        (S
+          (NP-SBJ-1 (-NONE-:[1335..1335] *))
+          (VP (TO:[1336..1338] to)
+            (VP (VB:[1339..1341] be)
+              (NP-PRD (DT:[1342..1344] an)
+                (ADJP
+                  (ADJP (RB:[1345..1351] easily) (JJ:[1352..1362] accessible))
+                  (CC:[1363..1366] and)
+                  (ADJP (JJ:[1367..1373] useful)))
+                (NN:[1375..1383] material))
+              (PP-PRP (IN:[1384..1387] for)
+                (NP
+                  (NP (NN:[1388..1397] detection) (CC:[1398..1401] and)
+                      (NN:[1402..1412] monitoring))
+                  (PP (IN:[1413..1415] of)
+                    (NP (JJ:[1416..1423] myeloid) (NNS:[1424..1433] disorders))))))))))
+    (.:[1433..1434] .)))
+
+;section 11 Span:1438..1482
+;PMID: 7918071 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1438..1442] PMID) (::[1442..1443] :) (CD:[1444..1451] 7918071)
+        (NN:[1452..1453] -LSB-) (NNP:[1453..1459] PubMed) (::[1460..1461] -)
+        (NN:[1462..1469] indexed) (IN:[1470..1473] for)
+        (NNP:[1474..1482] MEDLINE-RSB-)))

@@ -1,0 +1,293 @@
+;PMID: 8490873
+;source_file_2876.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..142] = [t:47..142]
+;2)section:[e:146..156] = [t:146..156]
+;3)section:[e:160..225] = [t:160..225]
+;4)sentence:[e:229..306] = [t:229..306]
+;5)sentence:[e:308..515] = [t:308..515]
+;6)sentence:[e:516..688] = [t:516..688]
+;7)sentence:[e:689..1015] = [t:689..1015]
+;8)sentence:[e:1016..1351] = [t:1016..1351]
+;9)section:[e:1355..1399] = [t:1355..1399]
+
+;section 0 Span:0..41
+;Cancer.  1993 May 15;71(10 Suppl):3310-3.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (,:[6..7] .) (CD:[9..13] 1993) (NNP:[14..17] May)
+        (CD:[18..20] 15) (::[20..21] ;) (CD:[21..23] 71) (-LRB-:[23..24] -LRB-)
+        (CD:[24..26] 10) (NN:[27..32] Suppl) (-RRB-:[32..33] -RRB-)
+        (::[33..34] :) (CD:[34..40] 3310-3) (.:[40..41] .)))
+
+;sentence 1 Span:47..142
+;Disordered differentiation as a target for novel approaches to the treatment
+;of  neuroblastoma.
+;[128..141]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (VBN:[47..57] Disordered) (NN:[58..73] differentiation))
+    (PP (IN:[74..76] as)
+      (NP
+        (NP (DT:[77..78] a) (NN:[79..85] target))
+        (PP (IN:[86..89] for)
+          (NP
+            (NP (JJ:[90..95] novel) (NNS:[96..106] approaches))
+            (PP (TO:[107..109] to)
+              (NP
+                (NP (DT:[110..113] the) (NN:[114..123] treatment))
+                (PP (IN:[124..126] of)
+                  (NP (NN:[128..141] neuroblastoma)))))))))
+    (.:[141..142] .)))
+
+;section 2 Span:146..156
+;Israel MA.
+(SEC
+  (FRAG (NNP:[146..152] Israel) (NNP:[153..155] MA) (.:[155..156] .)))
+
+;section 3 Span:160..225
+;Pediatrics Branch, National Cancer Institute, Bethesda, Maryland.
+(SEC
+  (FRAG (NNP:[160..170] Pediatrics) (NNP:[171..177] Branch) (,:[177..178] ,)
+        (NNP:[179..187] National) (NNP:[188..194] Cancer)
+        (NNP:[195..204] Institute) (,:[204..205] ,) (NNP:[206..214] Bethesda)
+        (,:[214..215] ,) (NNP:[216..224] Maryland) (.:[224..225] .)))
+
+;sentence 4 Span:229..306
+;Some childhood malignant neoplasms are thought to arise in embryonic
+;tissues.
+;[234..243]:malignancy-developmental-state:"childhood"
+;[244..253]:malignancy-clinical-stage:"malignant"
+;[254..263]:malignancy-type:"neoplasms"
+;[288..297]:malignancy-developmental-state:"embryonic"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[229..233] Some) (NN:[234..243] childhood)
+              (JJ:[244..253] malignant) (NNS:[254..263] neoplasms))
+    (VP (VBP:[264..267] are)
+      (VP (VBN:[268..275] thought)
+        (S
+          (NP-SBJ-1 (-NONE-:[275..275] *))
+          (VP (TO:[276..278] to)
+            (VP (VB:[279..284] arise)
+              (PP-LOC (IN:[285..287] in)
+                (NP (JJ:[288..297] embryonic) (NNS:[298..305] tissues))))))))
+    (.:[305..306] .)))
+
+;sentence 5 Span:308..515
+;These tumors present unique opportunities for studying the maturation of 
+;specific cellular lineages and examining the possible role of alterations in
+;the  regulation of differentiation in tumor development.
+(SENT
+  (S
+    (NP-SBJ (DT:[308..313] These) (NNS:[314..320] tumors))
+    (VP (VBP:[321..328] present)
+      (NP
+        (NP (JJ:[329..335] unique) (NNS:[336..349] opportunities))
+        (PP (IN:[350..353] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[353..353] *))
+            (VP
+              (VP (VBG:[354..362] studying)
+                (NP
+                  (NP (DT:[363..366] the) (NN:[367..377] maturation))
+                  (PP (IN:[378..380] of)
+                    (NP (JJ:[382..390] specific) (JJ:[391..399] cellular)
+                        (NNS:[400..408] lineages)))))
+              (CC:[409..412] and)
+              (VP (VBG:[413..422] examining)
+                (NP
+                  (NP (DT:[423..426] the) (JJ:[427..435] possible)
+                      (NN:[436..440] role))
+                  (PP (IN:[441..443] of)
+                    (NP
+                      (NP (NNS:[444..455] alterations))
+                      (PP (IN:[456..458] in)
+                        (NP
+                          (NP (DT:[459..462] the) (NN:[464..474] regulation))
+                          (PP (IN:[475..477] of)
+                            (NP (NN:[478..493] differentiation)))))))
+                  (PP (IN:[494..496] in)
+                    (NP (NN:[497..502] tumor) (NN:[503..514] development))))))))))
+    (.:[514..515] .)))
+
+;sentence 6 Span:516..688
+;Several features of  neuroblastoma, a tumor thought to arise in cells
+;originating in the embryonic  neural crest, suggest that it may be
+;particularly useful in this regard.
+;[537..550]:malignancy-type:"neuroblastoma"
+;[605..614]:malignancy-developmental-state:"embryonic"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[516..523] Several) (NNS:[524..532] features))
+        (PP (IN:[533..535] of)
+          (NP (NN:[537..550] neuroblastoma))))
+      (,:[550..551] ,)
+      (NP
+        (NP (DT:[552..553] a) (NN:[554..559] tumor))
+        (VP (VBN:[560..567] thought)
+          (S
+            (NP-SBJ (-NONE-:[567..567] *))
+            (VP (TO:[568..570] to)
+              (VP (VB:[571..576] arise)
+                (PP-LOC (IN:[577..579] in)
+                  (NP
+                    (NP (NNS:[580..585] cells))
+                    (VP (VBG:[586..597] originating)
+                      (PP-LOC (IN:[598..600] in)
+                        (NP (DT:[601..604] the) (JJ:[605..614] embryonic)
+                            (JJ:[616..622] neural) (NN:[623..628] crest))))))))))))
+    (,:[628..629] ,)
+    (VP (VBP:[630..637] suggest)
+      (SBAR (IN:[638..642] that)
+        (S
+          (NP-SBJ (PRP:[643..645] it))
+          (VP (MD:[646..649] may)
+            (VP (VB:[650..652] be)
+              (ADJP-PRD (RB:[653..665] particularly) (JJ:[666..672] useful))
+              (PP (IN:[673..675] in)
+                (NP (DT:[676..680] this) (NN:[681..687] regard))))))))
+    (.:[687..688] .)))
+
+;sentence 7 Span:689..1015
+;The  identification of a series of markers that characterize the various cell
+;types  of the peripheral nervous system that are detectable in neuroblastoma
+;tumor  tissues has made it possible to recognize that the cells of
+;neuroblastoma tumor  cell lines and tissues correspond to specific stages of
+;adrenal gland  development.
+;[830..843]:malignancy-type:"neuroblastoma"
+;[911..930]:malignancy-type:"neuroblastoma tumor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[689..692] The) (NN:[694..708] identification))
+      (PP (IN:[709..711] of)
+        (NP
+          (NP (DT:[712..713] a) (NN:[714..720] series))
+          (PP (IN:[721..723] of)
+            (NP
+              (NP
+                (NP (NNS:[724..731] markers))
+                (SBAR
+                  (WHNP-2 (WDT:[732..736] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[736..736] *T*))
+                    (VP (VBP:[737..749] characterize)
+                      (NP
+                        (NP (DT:[750..753] the) (JJ:[754..761] various)
+                            (NN:[762..766] cell) (NNS:[767..772] types))
+                        (PP (IN:[774..776] of)
+                          (NP (DT:[777..780] the) (JJ:[781..791] peripheral)
+                              (JJ:[792..799] nervous) (NN:[800..806] system))))))))
+              (SBAR
+                (WHNP-3 (WDT:[807..811] that))
+                (S
+                  (NP-SBJ-3 (-NONE-:[811..811] *T*))
+                  (VP (VBP:[812..815] are)
+                    (ADJP-PRD (JJ:[816..826] detectable))
+                    (PP-LOC (IN:[827..829] in)
+                      (NP (NN:[830..843] neuroblastoma) (NN:[844..849] tumor)
+                          (NNS:[851..858] tissues)))))))))))
+    (VP (VBZ:[859..862] has)
+      (VP (VBN:[863..867] made)
+        (S
+          (NP-SBJ (PRP:[868..870] it))
+          (ADJP-PRD (JJ:[871..879] possible)
+            (S
+              (NP-SBJ (-NONE-:[879..879] *))
+              (VP (TO:[880..882] to)
+                (VP (VB:[883..892] recognize)
+                  (SBAR (IN:[893..897] that)
+                    (S
+                      (NP-SBJ
+                        (NP (DT:[898..901] the) (NNS:[902..907] cells))
+                        (PP (IN:[908..910] of)
+                          (NP
+                            (NP
+                              (NML-1 (NN:[911..924] neuroblastoma)
+                                     (NN:[925..930] tumor))
+                              (NN:[932..936] cell) (NNS:[937..942] lines))
+                            (CC:[943..946] and)
+                            (NP
+                              (NML-1 (-NONE-:[946..946] *P*))
+                              (NNS:[947..954] tissues)))))
+                      (VP (VBP:[955..965] correspond)
+                        (PP-CLR (TO:[966..968] to)
+                          (NP
+                            (NP (JJ:[969..977] specific) (NNS:[978..984] stages))
+                            (PP (IN:[985..987] of)
+                              (NP (JJ:[988..995] adrenal) (NN:[996..1001] gland)
+                                  (NN:[1003..1014] development)))))))))))))))
+    (.:[1014..1015] .)))
+
+;sentence 8 Span:1016..1351
+;Experiments directed at understanding the cellular signals by which  neural
+;crest cell maturation is mediated may provide insights of therapeutic  import
+;because neuroblastoma tumors corresponding to some stages of  differentiation
+;respond very differently to nonspecific cytotoxic therapies than  tumors
+;corresponding to other stages.
+;[1178..1198]:malignancy-type:"neuroblastoma tumors"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1016..1027] Experiments))
+      (VP (VBN:[1028..1036] directed)
+        (NP (-NONE-:[1036..1036] *))
+        (PP (IN:[1037..1039] at)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1039..1039] *))
+            (VP (VBG:[1040..1053] understanding)
+              (NP
+                (NP (DT:[1054..1057] the) (JJ:[1058..1066] cellular)
+                    (NNS:[1067..1074] signals))
+                (SBAR
+                  (WHPP-2 (IN:[1075..1077] by)
+                    (WHNP (WDT:[1078..1083] which)))
+                  (S
+                    (NP-SBJ-1 (JJ:[1085..1091] neural) (NN:[1092..1097] crest)
+                              (NN:[1098..1102] cell)
+                              (NN:[1103..1113] maturation))
+                    (VP (VBZ:[1114..1116] is)
+                      (VP (VBN:[1117..1125] mediated)
+                        (NP-1 (-NONE-:[1125..1125] *))
+                        (PP-MNR-2 (-NONE-:[1125..1125] *T*))))))))))))
+    (VP (MD:[1126..1129] may)
+      (VP (VB:[1130..1137] provide)
+        (NP
+          (NP (NNS:[1138..1146] insights))
+          (PP (IN:[1147..1149] of)
+            (NP (JJ:[1150..1161] therapeutic) (NN:[1163..1169] import))))
+        (SBAR-PRP (IN:[1170..1177] because)
+          (S
+            (NP-SBJ
+              (NP (NN:[1178..1191] neuroblastoma) (NNS:[1192..1198] tumors))
+              (VP (VBG:[1199..1212] corresponding)
+                (PP-CLR (TO:[1213..1215] to)
+                  (NP
+                    (NP (DT:[1216..1220] some) (NNS:[1221..1227] stages))
+                    (PP (IN:[1228..1230] of)
+                      (NP (NN:[1232..1247] differentiation)))))))
+            (VP (VBP:[1248..1255] respond)
+              (ADVP (RB:[1256..1260] very) (RB:[1261..1272] differently))
+              (PP-CLR (TO:[1273..1275] to)
+                (NP (JJ:[1276..1287] nonspecific) (JJ:[1288..1297] cytotoxic)
+                    (NNS:[1298..1307] therapies)))
+              (PP (IN:[1308..1312] than)
+                (NP
+                  (NP (NNS:[1314..1320] tumors))
+                  (VP (VBG:[1321..1334] corresponding)
+                    (PP-CLR (TO:[1335..1337] to)
+                      (NP (JJ:[1338..1343] other) (NNS:[1344..1350] stages)))))))))))
+    (.:[1350..1351] .)))
+
+;section 9 Span:1355..1399
+;PMID: 8490873 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1355..1359] PMID) (::[1359..1360] :) (CD:[1361..1368] 8490873)
+        (NN:[1369..1370] -LSB-) (NNP:[1370..1376] PubMed) (::[1377..1378] -)
+        (NN:[1379..1386] indexed) (IN:[1387..1390] for)
+        (NNP:[1391..1398] MEDLINE) (-RRB-:[1398..1399] -RSB-)))

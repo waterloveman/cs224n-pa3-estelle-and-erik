@@ -1,0 +1,254 @@
+;PMID: 9797083
+;source_file_1392.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..133] = [t:38..133]
+;2)section:[e:137..220] = [t:137..220]
+;3)section:[e:224..343] = [t:224..343]
+;4)sentence:[e:347..513] = [t:347..513]
+;5)sentence:[e:514..709] = [t:514..709]
+;6)sentence:[e:710..989] = [t:710..989]
+;7)sentence:[e:990..1072] = [t:990..1072]
+;8)sentence:[e:1073..1177] = [t:1073..1177]
+;9)section:[e:1181..1225] = [t:1181..1225]
+
+;section 0 Span:0..33
+;Ann Hematol  1998 Sep;77(3):131-4
+(SEC
+  (FRAG (DT:[0..3] Ann) (NNP:[4..11] Hematol) (CD:[13..17] 1998)
+        (CD:[18..25] Sep;77-LRB-) (CD:[25..26] 3) (-RRB-:[26..27] -RRB-)
+        (CD:[27..31] :131) (HYPH:[31..32] -) (CD:[32..33] 4)))
+
+;sentence 1 Span:38..133
+;c-kit mutation and osteopetrosis-like osteopathy in a patient with systemic
+;mast  cell disease.
+;[38..43]:gene-rna:"c-kit"
+;[105..132]:malignancy:"systemic mast  cell disease"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[38..43] c-kit) (NN:[44..52] mutation))
+      (CC:[53..56] and)
+      (NP
+        (ADJP (NN:[57..70] osteopetrosis) (HYPH:[70..71] -) (JJ:[71..75] like))
+        (NN:[76..86] osteopathy)))
+    (PP-LOC (IN:[87..89] in)
+      (NP
+        (NP (DT:[90..91] a) (NN:[92..99] patient))
+        (PP (IN:[100..104] with)
+          (NP (JJ:[105..113] systemic)
+            (NML (NN:[114..118] mast) (NN:[120..124] cell))
+            (NN:[125..132] disease)))))
+    (.:[132..133] .)))
+
+;section 2 Span:137..220
+;Reinacher-Schick A, Petrasch S, Longley BJ, Teschendorf C, Graeven U,
+;Schmiegel  W.
+(SEC
+  (FRAG (NNP:[137..146] Reinacher) (HYPH:[146..147] -) (NNP:[147..153] Schick)
+        (NNP:[154..155] A) (,:[155..156] ,) (NNP:[157..165] Petrasch)
+        (NNP:[166..168] S,) (NNP:[169..176] Longley) (NNP:[177..179] BJ)
+        (,:[179..180] ,) (NNP:[181..192] Teschendorf) (NNP:[193..194] C)
+        (,:[194..195] ,) (NNP:[196..203] Graeven) (NNP:[204..205] U)
+        (,:[205..206] ,) (NNP:[207..216] Schmiegel) (NNP:[218..220] W.)))
+
+;section 3 Span:224..343
+;Department of Medicine, Knappschaftskrankenhaus, Ruhr University, Bochum, 
+;Germany. Anke.C.Reinacher@ruhr-uni-bochum.de
+(SEC
+  (FRAG (NNP:[224..234] Department) (IN:[235..237] of) (NNP:[238..246] Medicine)
+        (,:[246..247] ,) (NNP:[248..271] Knappschaftskrankenhaus)
+        (,:[271..272] ,) (NNP:[273..277] Ruhr) (NNP:[278..288] University)
+        (,:[288..289] ,) (NNP:[290..296] Bochum) (,:[296..297] ,)
+        (NNP:[299..306] Germany) (.:[306..307] .) (NNP:[308..312] Anke)
+        (NNP:[312..315] .C.) (NNP:[315..329] Reinacher@ruhr) (HYPH:[329..330] -)
+        (JJ:[330..333] uni) (HYPH:[333..334] -) (JJ:[334..340] bochum)
+        (NN:[340..343] .de)))
+
+;sentence 4 Span:347..513
+;We describe the case of a 69-year-old man with systemic mastocytosis and
+;severe  osteopetrosis who carries a somatic activating mutation in the c-kit 
+;proto-oncogene.
+;[394..415]:malignancy:"systemic mastocytosis"
+;[491..496]:gene-rna:"c-kit"
+(SENT
+  (S
+    (NP-SBJ (PRP:[347..349] We))
+    (VP (VBP:[350..358] describe)
+      (NP
+        (NP (DT:[359..362] the) (NN:[363..367] case))
+        (PP (IN:[368..370] of)
+          (NP
+            (NP
+              (NP (DT:[371..372] a)
+                (ADJP
+                  (NML (CD:[373..375] 69) (HYPH:[375..376] -)
+                       (NN:[376..380] year))
+                  (HYPH:[380..381] -) (JJ:[381..384] old))
+                (NN:[385..388] man))
+              (PP (IN:[389..393] with)
+                (NP
+                  (NP (JJ:[394..402] systemic) (NN:[403..415] mastocytosis))
+                  (CC:[416..419] and)
+                  (NP (JJ:[420..426] severe) (NN:[428..441] osteopetrosis)))))
+            (SBAR
+              (WHNP-1 (WP:[442..445] who))
+              (S
+                (NP-SBJ-1 (-NONE-:[445..445] *T*))
+                (VP (VBZ:[446..453] carries)
+                  (NP (DT:[454..455] a) (JJ:[456..463] somatic)
+                      (VBG:[464..474] activating) (NN:[475..483] mutation))
+                  (PP-LOC (IN:[484..486] in)
+                    (NP (DT:[487..490] the) (NN:[491..496] c-kit)
+                        (AFX:[498..503] proto) (HYPH:[503..504] -)
+                        (NN:[504..512] oncogene))))))))))
+    (.:[512..513] .)))
+
+;sentence 5 Span:514..709
+;The patient initially presented with urticaria pigmentosa,  progressing to
+;systemic mast cell disease with severe anemia due to bone marrow 
+;involvement, chronic diarrhea, and hepatosplenomegaly.
+;[551..571]:malignancy:"urticaria pigmentosa"
+;[589..615]:malignancy:"systemic mast cell disease"
+(SENT
+  (S
+    (NP-SBJ (DT:[514..517] The) (NN:[518..525] patient))
+    (ADVP-TMP (RB:[526..535] initially))
+    (VP (VBD:[536..545] presented)
+      (PP (IN:[546..550] with)
+        (NP (NN:[551..560] urticaria) (NN:[561..571] pigmentosa)))
+      (,:[571..572] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[572..572] *))
+        (VP (VBG:[574..585] progressing)
+          (PP (TO:[586..588] to)
+            (NP
+              (NP (JJ:[589..597] systemic)
+                (NML (NN:[598..602] mast) (NN:[603..607] cell))
+                (NN:[608..615] disease))
+              (PP (IN:[616..620] with)
+                (NP (JJ:[621..627] severe) (NN:[628..634] anemia)))))
+          (PP (JJ:[635..638] due)
+            (PP (TO:[639..641] to)
+              (NP
+                (NP
+                  (NML (NN:[642..646] bone) (NN:[647..653] marrow))
+                  (NN:[655..666] involvement))
+                (,:[666..667] ,)
+                (NP (JJ:[668..675] chronic) (NN:[676..684] diarrhea))
+                (,:[684..685] ,) (CC:[686..689] and)
+                (NP (NN:[690..708] hepatosplenomegaly))))))))
+    (.:[708..709] .)))
+
+;sentence 6 Span:710..989
+;Direct sequencing using  amplimers from reverse transcriptase-polymerase
+;chain reactions (RT-PCR) from  skin mast cell-derived RNA revealed a point
+;mutation in the c-kit proto-oncogene  at position 2468, introducing a new
+;recognition site for the restriction  endonuclease HinfI.
+;[750..771]:gene-protein:"reverse transcriptase"
+;[772..782]:gene-protein:"polymerase"
+;[852..866]:variation-type:"point mutation"
+;[874..879]:gene-rna:"c-kit"
+;[899..912]:variation-location:"position 2468"
+;[983..988]:gene-protein:"HinfI"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[710..716] Direct) (NN:[717..727] sequencing))
+      (VP (VBG:[728..733] using)
+        (NP
+          (NP (NNS:[735..744] amplimers))
+          (PP (IN:[745..749] from)
+            (NP
+              (NP
+                (NML (JJ:[750..757] reverse) (NN:[758..771] transcriptase))
+                (HYPH:[771..772] -)
+                (NML (NN:[772..782] polymerase) (NN:[783..788] chain)
+                     (NNS:[789..798] reactions)))
+              (NP (-LRB-:[799..800] -LRB-)
+                (NML (NN:[800..802] RT))
+                (HYPH:[802..803] -)
+                (NML (NN:[803..806] PCR))
+                (-RRB-:[806..807] -RRB-))))
+          (PP (IN:[808..812] from)
+            (NP (NN:[814..818] skin)
+              (ADJP
+                (NML (NN:[819..823] mast) (NN:[824..828] cell))
+                (HYPH:[828..829] -) (VBN:[829..836] derived))
+              (NN:[837..840] RNA))))))
+    (VP (VBD:[841..849] revealed)
+      (NP
+        (NP
+          (NP (DT:[850..851] a)
+             (NN:[852..857] point) (NN:[858..866] mutation))
+          (PP-LOC (IN:[867..869] in)
+            (NP (DT:[870..873] the) (NN:[874..879] c-kit) (AFX:[880..885] proto)
+                (HYPH:[885..886] -) (NN:[886..894] oncogene)))
+          (PP-LOC (IN:[896..898] at)
+            (NP (NN:[899..907] position) (CD:[908..912] 2468))))
+        (,:[912..913] ,)
+        (VP (VBG:[914..925] introducing)
+          (NP (DT:[926..927] a) (JJ:[928..931] new) (NN:[932..943] recognition)
+              (NN:[944..948] site))
+          (PP (IN:[949..952] for)
+            (NP
+              (NP (DT:[953..956] the) (NN:[957..968] restriction)
+                  (NN:[970..982] endonuclease))
+              (NP (NN:[983..988] HinfI)))))))
+    (.:[988..989] .)))
+
+;sentence 7 Span:990..1072
+;Treatment with interferon-alpha 2a, prednisone, and  erythropoietin was
+;initiated.
+;[1005..1024]:gene-protein:"interferon-alpha 2a"
+;[1043..1057]:gene-protein:"erythropoietin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[990..999] Treatment))
+      (PP (IN:[1000..1004] with)
+        (NP
+          (NP (NN:[1005..1021] interferon-alpha) (NN:[1022..1024] 2a))
+          (,:[1024..1025] ,)
+          (NP (NN:[1026..1036] prednisone))
+          (,:[1036..1037] ,) (CC:[1038..1041] and)
+          (NP (NN:[1043..1057] erythropoietin)))))
+    (VP (VBD:[1058..1061] was)
+      (VP (VBN:[1062..1071] initiated)
+        (NP-1 (-NONE-:[1071..1071] *))))
+    (.:[1071..1072] .)))
+
+;sentence 8 Span:1073..1177
+;Subsequently, clinical symptoms improved  significantly and hemoglobin levels
+;are now stable at 13 g/dl.
+;[1133..1143]:gene-protein:"hemoglobin"
+(SENT
+  (S
+    (S
+      (ADVP-TMP (RB:[1073..1085] Subsequently))
+      (,:[1085..1086] ,)
+      (NP-SBJ (JJ:[1087..1095] clinical) (NNS:[1096..1104] symptoms))
+      (VP (VBD:[1105..1113] improved)
+        (ADVP (RB:[1115..1128] significantly))))
+    (CC:[1129..1132] and)
+    (S
+      (NP-SBJ (NN:[1133..1143] hemoglobin) (NNS:[1144..1150] levels))
+      (VP (VBP:[1151..1154] are)
+        (ADVP-TMP (RB:[1155..1158] now))
+        (ADJP-PRD (JJ:[1159..1165] stable))
+        (PP (IN:[1166..1168] at)
+          (NP
+            (NP (CD:[1169..1171] 13) (NN:[1172..1173] g))
+            (PP (SYM:[1173..1174] /)
+              (NP (NN:[1174..1176] dl)))))))
+    (.:[1176..1177] .)))
+
+;section 9 Span:1181..1225
+;PMID: 9797083 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1181..1185] PMID) (::[1185..1186] :) (CD:[1187..1194] 9797083)
+        (IN:[1195..1196] -LSB-) (NNP:[1196..1202] PubMed) (HYPH:[1203..1204] -)
+        (JJ:[1205..1212] indexed) (IN:[1213..1216] for)
+        (NNP:[1217..1225] MEDLINE-RSB-)))

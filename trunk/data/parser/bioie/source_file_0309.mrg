@@ -1,0 +1,415 @@
+;PMID: 8182306
+;source_file_1791.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..58] = [t:0..58]
+;1)sentence:[e:64..120] = [t:64..120]
+;2)section:[e:124..145] = [t:124..145]
+;3)section:[e:149..217] = [t:149..217]
+;4)section:[e:221..304] = [t:221..304]
+;5)section:[e:null] = [t:306..532]
+;6)sentence:[e:308..532] = [t:null]
+;7)sentence:[e:533..613] = [t:533..613]
+;8)sentence:[e:614..737] = [t:614..737]
+;9)sentence:[e:738..899] = [t:738..899]
+;10)sentence:[e:900..1096] = [t:900..1096]
+;11)sentence:[e:1098..1267] = [t:1098..1267]
+;12)sentence:[e:1268..1434] = [t:1268..1434]
+;13)sentence:[e:1435..1492] = [t:1435..1492]
+;14)sentence:[e:1493..1560] = [t:1493..1560]
+;15)sentence:[e:1562..1705] = [t:1562..1705]
+;16)section:[e:1709..1753] = [t:1709..1753]
+;Sentence Matching Errors
+;ERROR_Tree section missing entity section[306..532]
+;ERROR_Entity section missing treebank section[308..532]
+;ERROR_Entity not in any tree[358..367] cyp450 "aromatase"
+;ERROR_Entity not in any tree[404..410] substance "agents"
+;ERROR_Entity not in any tree[414..423] cyp450 "aromatase"
+;ERROR_Entity not in any tree[441..468] cyp450 "aromatase cytochrome  P-450"
+;ERROR_Entity not in any tree[470..479] cyp450 "P-450arom"
+
+;section 0 Span:0..58
+;Nippon Sanka Fujinka Gakkai Zasshi. 1994 May;46(5):449-56.
+(SEC
+  (FRAG (NNP:[0..6] Nippon) (NNP:[7..12] Sanka) (NNP:[13..20] Fujinka)
+        (NNP:[21..27] Gakkai) (NNP:[28..34] Zasshi) (.:[34..35] .)
+        (CD:[36..40] 1994) (NNP:[41..44] May) (CD:[44..47] ;46)
+        (-LRB-:[47..48] -LRB-) (CD:[48..49] 5) (-RRB-:[49..50] -RRB-)
+        (::[50..51] :) (CD:[51..55] 449-) (CD:[55..57] 56) (.:[57..58] .)))
+
+;sentence 1 Span:64..120
+;[Regulation of aromatase in human choriocarcinoma cells]
+;[79..88]:cyp450:"aromatase"
+(SENT
+  (NP-HLN (-LRB-:[64..65] -LSB-)
+    (NP (NN:[65..75] Regulation))
+    (PP (IN:[76..78] of)
+      (NP (NN:[79..88] aromatase)))
+    (PP-LOC (IN:[89..91] in)
+      (NP (JJ:[92..97] human) (NN:[98..113] choriocarcinoma)
+          (NNS:[114..119] cells)))
+    (-RRB-:[119..120] -RSB-)))
+
+;section 2 Span:124..145
+;[Article in Japanese]
+(SEC
+  (FRAG (-LRB-:[124..125] -LSB-) (NN:[125..132] Article) (IN:[133..135] in)
+        (JJ:[136..144] Japanese) (NNS:[144..145] -RSB-)))
+
+;section 3 Span:149..217
+;Kanno H, Kitawaki J, Maeda K, Kim T, Noguchi T, Yamamoto T, Okada H.
+(SEC
+  (FRAG (NNP:[149..154] Kanno) (NNP:[155..157] H,) (NNP:[158..166] Kitawaki)
+        (NNP:[167..169] J,) (NNP:[170..175] Maeda) (NNP:[176..178] K,)
+        (NNP:[179..182] Kim) (NNP:[183..184] T) (,:[184..185] ,)
+        (NNP:[186..193] Noguchi) (NNP:[194..195] T) (,:[195..196] ,)
+        (NNP:[197..205] Yamamoto) (NNP:[206..207] T) (,:[207..208] ,)
+        (NNP:[209..214] Okada) (NNP:[215..217] H.)))
+
+;section 4 Span:221..304
+;Department of Obstetrics and Gynecology, Kyoto Prefectural University of 
+;Medicine.
+(SEC
+  (FRAG (NNP:[221..231] Department) (IN:[232..234] of)
+        (NNP:[235..245] Obstetrics) (CC:[246..249] and)
+        (NNP:[250..260] Gynecology) (,:[260..261] ,) (NNP:[262..267] Kyoto)
+        (NNP:[268..279] Prefectural) (NNP:[280..290] University)
+        (IN:[291..293] of) (NNP:[295..303] Medicine) (.:[303..304] .)))
+
+;section 5 Span:306..532
+;  To examine the mechanism regulating trophoblastic aromatase, we studied the
+; effects of various agents on aromatase activity and the aromatase cytochrome
+; P-450 (P-450arom) concentration in human choriocarcinoma JEG-3 cells.
+(SEC
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[306..306] *))
+      (VP (TO:[308..310] To)
+        (VP (VB:[311..318] examine)
+          (NP
+            (NP (DT:[319..322] the) (NN:[323..332] mechanism))
+            (VP (VBG:[333..343] regulating)
+              (NP (JJ:[344..357] trophoblastic) (NN:[358..367] aromatase)))))))
+    (,:[367..368] ,)
+    (NP-SBJ (PRP:[369..371] we))
+    (VP (VBD:[372..379] studied)
+      (NP
+        (NP (DT:[380..383] the) (NNS:[385..392] effects))
+        (PP (IN:[393..395] of)
+          (NP (JJ:[396..403] various) (NNS:[404..410] agents)))
+        (PP (IN:[411..413] on)
+          (NP
+            (NP
+              (NP (NN:[414..423] aromatase) (NN:[424..432] activity))
+              (CC:[433..436] and)
+              (NP (DT:[437..440] the)
+                (NML
+                  (NML (NN:[441..450] aromatase) (NN:[451..461] cytochrome)
+                       (NN:[463..468] P-450))
+                  (NML (-LRB-:[469..470] -LRB-) (NN:[470..479] P-450arom)
+                       (-RRB-:[479..480] -RRB-)))
+                (NN:[481..494] concentration)))
+            (PP-LOC (IN:[495..497] in)
+              (NP (JJ:[498..503] human) (NN:[504..519] choriocarcinoma)
+                  (NN:[520..525] JEG-3) (NNS:[526..531] cells)))))))
+    (.:[531..532] .)))
+
+;sentence 6 Span:533..613
+;Aromatase  activity was assessed by radioassay with [1 beta-3H]
+;androstenedione.
+;[533..542]:cyp450:"Aromatase"
+;[585..612]:substance:"[1 beta-3H] androstenedione"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[533..542] Aromatase) (NN:[544..552] activity))
+    (VP (VBD:[553..556] was)
+      (VP (VBN:[557..565] assessed)
+        (NP-1 (-NONE-:[565..565] *))
+        (PP-MNR (IN:[566..568] by)
+          (NP
+            (NP (NN:[569..579] radioassay))
+            (PP (IN:[580..584] with)
+              (NP
+                (NML (-LRB-:[585..586] -LSB-) (CD:[586..587] 1)
+                     (NN:[588..595] beta-3H) (-RRB-:[595..596] -RSB-))
+                (NN:[597..612] androstenedione)))))))
+    (.:[612..613] .)))
+
+;sentence 7 Span:614..737
+;The  P-450arom concentration was determined by an enzyme-linked immunosorbent
+;assay  with specific antibodies to P-450arom.
+;[619..628]:cyp450:"P-450arom"
+;[664..670]:substance:"enzyme"
+;[713..723]:substance:"antibodies"
+;[727..736]:cyp450:"P-450arom"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[614..617] The) (NN:[619..628] P-450arom)
+              (NN:[629..642] concentration))
+    (VP (VBD:[643..646] was)
+      (VP (VBN:[647..657] determined)
+        (NP-1 (-NONE-:[657..657] *))
+        (PP (IN:[658..660] by)
+          (NP-LGS
+            (NP (DT:[661..663] an)
+              (ADJP (NN:[664..670] enzyme) (HYPH:[670..671] -)
+                    (VBN:[671..677] linked))
+              (NN:[678..691] immunosorbent) (NN:[692..697] assay))
+            (PP (IN:[699..703] with)
+              (NP
+                (NP (JJ:[704..712] specific) (NNS:[713..723] antibodies))
+                (PP (TO:[724..726] to)
+                  (NP (NN:[727..736] P-450arom)))))))))
+    (.:[736..737] .)))
+
+;sentence 8 Span:738..899
+;Human chorionic gonadotropin (hCG)  stimulated aromatase activity and
+;increased the P-450arom concentration in a  concentration-dependent (0.1-100
+;IU/ml) manner.
+;[738..766]:substance:"Human chorionic gonadotropin"
+;[768..771]:substance:"hCG"
+;[785..794]:cyp450:"aromatase"
+;[822..831]:cyp450:"P-450arom"
+;[877..884]:quantitative-value:"0.1-100"
+;[885..890]:quantitative-units:"IU/ml"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[738..743] Human) (JJ:[744..753] chorionic)
+          (NN:[754..766] gonadotropin))
+      (NP (-LRB-:[767..768] -LRB-) (NN:[768..771] hCG) (-RRB-:[771..772] -RRB-)))
+    (VP
+      (VP (VBD:[774..784] stimulated)
+        (NP (NN:[785..794] aromatase) (NN:[795..803] activity)))
+      (CC:[804..807] and)
+      (VP (VBD:[808..817] increased)
+        (NP (DT:[818..821] the) (NN:[822..831] P-450arom)
+            (NN:[832..845] concentration))
+        (PP (IN:[846..848] in)
+          (NP (DT:[849..850] a)
+            (ADJP (NN:[852..865] concentration) (HYPH:[865..866] -)
+                  (JJ:[866..875] dependent))
+            (PRN (-LRB-:[876..877] -LRB-)
+              (NP
+                (NP
+                  (QP (CD:[877..880] 0.1) (HYPH:[880..881] -)
+                      (CD:[881..884] 100))
+                  (NN:[885..887] IU))
+                (PP (SYM:[887..888] /)
+                  (NP (NN:[888..890] ml))))
+              (-RRB-:[890..891] -RRB-))
+            (NN:[892..898] manner)))))
+    (.:[898..899] .)))
+
+;sentence 9 Span:900..1096
+;Cholera toxin (CT), an adenylate  cyclase activator, stimulated aromatase
+;activity and the P-450arom concentration  in a concentration-dependent
+;(0.1-10ng/ml) and a time-dependent (12-72h) manner.
+;[900..913]:substance:"Cholera toxin"
+;[915..917]:substance:"CT"
+;[923..951]:substance:"adenylate  cyclase activator"
+;[964..973]:cyp450:"aromatase"
+;[991..1000]:cyp450:"P-450arom"
+;[1046..1052]:quantitative-value:"0.1-10"
+;[1052..1057]:quantitative-units:"ng/ml"
+;[1081..1086]:quantitative-value:"12-72"
+;[1086..1087]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[900..907] Cholera) (NN:[908..913] toxin))
+        (NP (-LRB-:[914..915] -LRB-) (NN:[915..917] CT) (-RRB-:[917..918] -RRB-)))
+      (,:[918..919] ,)
+      (NP (DT:[920..922] an)
+        
+        (NML (NN:[923..932] adenylate) (NN:[934..941] cyclase))
+        (NN:[942..951] activator)))
+    (,:[951..952] ,)
+    (VP (VBD:[953..963] stimulated)
+      (NP
+        (NP (NN:[964..973] aromatase) (NN:[974..982] activity))
+        (CC:[983..986] and)
+        (NP (DT:[987..990] the) (NN:[991..1000] P-450arom)
+            (NN:[1001..1014] concentration)))
+      (PP (IN:[1016..1018] in)
+        (NP
+          (NP (DT:[1019..1020] a)
+            (ADJP (NN:[1021..1034] concentration) (HYPH:[1034..1035] -)
+                  (JJ:[1035..1044] dependent))
+            (PRN (-LRB-:[1045..1046] -LRB-)
+              (NP
+                (NP
+                  (QP (CD:[1046..1049] 0.1) (HYPH:[1049..1050] -)
+                      (CD:[1050..1052] 10))
+                  (NN:[1052..1054] ng))
+                (PP (SYM:[1054..1055] /)
+                  (NP (NN:[1055..1057] ml))))
+              (-RRB-:[1057..1058] -RRB-))
+            (NML-1 (-NONE-:[1058..1058] *P*)))
+          (CC:[1059..1062] and)
+          (NP (DT:[1063..1064] a)
+            (ADJP (NN:[1065..1069] time) (HYPH:[1069..1070] -)
+                  (JJ:[1070..1079] dependent))
+            (PRN (-LRB-:[1080..1081] -LRB-)
+              (NP
+                (QP (CD:[1081..1083] 12) (HYPH:[1083..1084] -)
+                    (CD:[1084..1086] 72))
+                (NN:[1086..1087] h))
+              (-RRB-:[1087..1088] -RRB-))
+            (NML-1 (NN:[1089..1095] manner))))))
+    (.:[1095..1096] .)))
+
+;sentence 10 Span:1098..1267
+;12-O-tetradecanoyl phorbol 13-acetate (TPA) (0.1-100ng/ml), a protein-kinase
+;C  activator, also stimulated aromatase activity and increased the P-450arom 
+;concentration.
+;[1098..1135]:substance:"12-O-tetradecanoyl phorbol 13-acetate"
+;[1137..1140]:substance:"TPA"
+;[1143..1150]:quantitative-value:"0.1-100"
+;[1150..1155]:quantitative-units:"ng/ml"
+;[1160..1176]:substance:"protein-kinase C"
+;[1178..1187]:substance:"activator"
+;[1205..1214]:cyp450:"aromatase"
+;[1242..1251]:cyp450:"P-450arom"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1098..1116] 12-O-tetradecanoyl) (NN:[1117..1124] phorbol)
+            (NN:[1125..1135] 13-acetate))
+        (NP (-LRB-:[1136..1137] -LRB-) (NN:[1137..1140] TPA)
+            (-RRB-:[1140..1141] -RRB-))
+        (PRN (-LRB-:[1142..1143] -LRB-)
+          (NP
+            (NP
+              (QP (CD:[1143..1146] 0.1) (HYPH:[1146..1147] -)
+                  (CD:[1147..1150] 100))
+              (NN:[1150..1152] ng))
+            (PP (SYM:[1152..1153] /)
+              (NP (NN:[1153..1155] ml))))
+          (-RRB-:[1155..1156] -RRB-)))
+      (,:[1156..1157] ,)
+      (NP (DT:[1158..1159] a)
+        (NML (NN:[1160..1167] protein) (HYPH:[1167..1168] -)
+             (NN:[1168..1174] kinase) (NN:[1175..1176] C))
+        (NN:[1178..1187] activator)))
+    (,:[1187..1188] ,)
+    (ADVP (RB:[1189..1193] also))
+    (VP
+      (VP (VBD:[1194..1204] stimulated)
+        (NP (NN:[1205..1214] aromatase) (NN:[1215..1223] activity)))
+      (CC:[1224..1227] and)
+      (VP (VBD:[1228..1237] increased)
+        (NP (DT:[1238..1241] the) (NN:[1242..1251] P-450arom)
+            (NN:[1253..1266] concentration))))
+    (.:[1266..1267] .)))
+
+;sentence 11 Span:1268..1434
+;On the other hand, Ca2+ ionophore A23187, an agent increasing  intracellular
+;Ca2+ accumulation, inhibited aromatase activity and reduced the  P-450arom
+;concentration.
+;[1287..1301]:substance:"Ca2+ ionophore"
+;[1302..1308]:substance:"A23187"
+;[1313..1318]:substance:"agent"
+;[1345..1349]:substance:"Ca2+"
+;[1374..1383]:cyp450:"aromatase"
+;[1410..1419]:cyp450:"P-450arom"
+(SENT
+  (S
+    (PP (IN:[1268..1270] On)
+      (NP (DT:[1271..1274] the) (JJ:[1275..1280] other) (NN:[1281..1285] hand)))
+    (,:[1285..1286] ,)
+    (NP-SBJ
+      (NP
+        
+        (NML (NN:[1287..1290] Ca2) (SYM:[1290..1291] +))
+        (NN:[1292..1301] ionophore)
+        (NN:[1302..1308] A23187))
+      (,:[1308..1309] ,)
+      (NP
+        (NP (DT:[1310..1312] an) (NN:[1313..1318] agent))
+        (VP (VBG:[1319..1329] increasing)
+          (NP (JJ:[1331..1344] intracellular)
+            (NML (NN:[1345..1348] Ca2) (SYM:[1348..1349] +))
+            (NN:[1350..1362] accumulation)))))
+    (,:[1362..1363] ,)
+    (VP
+      (VP (VBD:[1364..1373] inhibited)
+        (NP (NN:[1374..1383] aromatase) (NN:[1384..1392] activity)))
+      (CC:[1393..1396] and)
+      (VP (VBD:[1397..1404] reduced)
+        (NP (DT:[1405..1408] the) (NN:[1410..1419] P-450arom)
+            (NN:[1420..1433] concentration))))
+    (.:[1433..1434] .)))
+
+;sentence 12 Span:1435..1492
+;The effects of CT, TPA and Ca2+ ionophore were  additive.
+;[1450..1452]:substance:"CT"
+;[1454..1457]:substance:"TPA"
+;[1462..1476]:substance:"Ca2+ ionophore"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1435..1438] The) (NNS:[1439..1446] effects))
+      (PP (IN:[1447..1449] of)
+        (NP
+          (NP (NN:[1450..1452] CT))
+          (,:[1452..1453] ,)
+          (NP (NN:[1454..1457] TPA))
+          (CC:[1458..1461] and)
+          (NP
+            (NML (NN:[1462..1465] Ca2) (SYM:[1465..1466] +))
+            (NN:[1467..1476] ionophore)))))
+    (VP (VBD:[1477..1481] were)
+      (ADJP-PRD (JJ:[1483..1491] additive)))
+    (.:[1491..1492] .)))
+
+;sentence 13 Span:1493..1560
+;Aromatase activity was correlated with the P-450arom concentration.
+;[1493..1502]:cyp450:"Aromatase"
+;[1536..1545]:cyp450:"P-450arom"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1493..1502] Aromatase) (NN:[1503..1511] activity))
+    (VP (VBD:[1512..1515] was)
+      (VP (VBN:[1516..1526] correlated)
+        (NP-1 (-NONE-:[1526..1526] *))
+        (PP-CLR (IN:[1527..1531] with)
+          (NP (DT:[1532..1535] the) (NN:[1536..1545] P-450arom)
+              (NN:[1546..1559] concentration)))))
+    (.:[1559..1560] .)))
+
+;sentence 14 Span:1562..1705
+;These results suggest that in JEG-3 cells the signal transduction system 
+;modulates aromatase activity by changing the P-450arom concentration.
+;[1646..1655]:cyp450:"aromatase"
+;[1681..1690]:cyp450:"P-450arom"
+(SENT
+  (S
+    (NP-SBJ (DT:[1562..1567] These) (NNS:[1568..1575] results))
+    (VP (VBP:[1576..1583] suggest)
+      (SBAR (IN:[1584..1588] that)
+        (S
+          (PP-LOC (IN:[1589..1591] in)
+            (NP (NN:[1592..1597] JEG-3) (NNS:[1598..1603] cells)))
+          (NP-SBJ (DT:[1604..1607] the) (NN:[1608..1614] signal)
+                  (NN:[1615..1627] transduction) (NN:[1628..1634] system))
+          (VP (VBZ:[1636..1645] modulates)
+            (NP (NN:[1646..1655] aromatase) (NN:[1656..1664] activity))
+            (PP-MNR (IN:[1665..1667] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[1667..1667] *))
+                (VP (VBG:[1668..1676] changing)
+                  (NP (DT:[1677..1680] the) (NN:[1681..1690] P-450arom)
+                      (NN:[1691..1704] concentration)))))))))
+    (.:[1704..1705] .)))
+
+;section 15 Span:1709..1753
+;PMID: 8182306 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1709..1713] PMID) (::[1713..1714] :) (CD:[1715..1722] 8182306)
+        (NN:[1723..1724] -LSB-) (NNP:[1724..1730] PubMed) (::[1731..1732] -)
+        (NN:[1733..1740] indexed) (IN:[1741..1744] for)
+        (NNP:[1745..1753] MEDLINE-RSB-)))

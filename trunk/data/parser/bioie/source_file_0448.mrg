@@ -1,0 +1,351 @@
+;PMID: 7756104
+;source_file_994.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..127] = [t:48..127]
+;2)section:[e:131..176] = [t:131..176]
+;3)section:[e:180..266] = [t:180..266]
+;4)sentence:[e:270..377] = [t:270..377]
+;5)sentence:[e:378..582] = [t:378..582]
+;6)sentence:[e:583..801] = [t:583..801]
+;7)sentence:[e:802..961] = [t:802..961]
+;8)sentence:[e:963..1108] = [t:963..1108]
+;9)sentence:[e:1109..1252] = [t:1109..1252]
+;10)sentence:[e:1253..1417] = [t:1253..1417]
+;11)section:[e:1421..1465] = [t:1421..1465]
+
+;section 0 Span:0..42
+;Br J Clin Pharmacol. 1995 Jan;39(1):77-80.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..9] Clin)
+        (NNP:[10..19] Pharmacol) (.:[19..20] .) (CD:[21..25] 1995)
+        (::[26..33] Jan;39-LRB-) (CD:[33..34] 1) (-RRB-:[34..35] -RRB-)
+        (CD:[35..38] :77) (::[38..39] -) (CD:[39..41] 80) (.:[41..42] .)))
+
+;sentence 1 Span:48..127
+;Evidence for a role of cytochrome P450 2D6 and 3A4 in ethylmorphine
+;metabolism.
+;[71..90]:cyp450:"cytochrome P450 2D6"
+;[71..86]...[95..98]:cyp450:"cytochrome P450"..."3A4"
+;[102..115]:substance:"ethylmorphine"
+(SENT
+  (NP-HLN
+    (NP (NN:[48..56] Evidence))
+    (PP (IN:[57..60] for)
+      (NP
+        (NP (DT:[61..62] a) (NN:[63..67] role))
+        (PP (IN:[68..70] of)
+          (NP
+            (NML
+              (NML-1 (NN:[71..81] cytochrome) (NN:[82..86] P450))
+              (NN:[87..90] 2D6))
+            (CC:[91..94] and)
+            (NP
+              (NML-1 (-NONE-:[94..94] *P*))
+              (NN:[95..98] 3A4))))
+        (PP (IN:[99..101] in)
+          (NP (NN:[102..115] ethylmorphine) (NN:[116..126] metabolism)))))
+    (.:[126..127] .)))
+
+;section 2 Span:131..176
+;Liu Z, Mortimer O, Smith CA, Wolf CR, Rane A.
+(SEC
+  (FRAG (NNP:[131..134] Liu) (NNP:[135..136] Z) (,:[136..137] ,)
+        (NNP:[138..146] Mortimer) (NNP:[147..148] O) (,:[148..149] ,)
+        (NNP:[150..155] Smith) (NNP:[156..158] CA) (,:[158..159] ,)
+        (NNP:[160..164] Wolf) (NNP:[165..167] CR) (,:[167..168] ,)
+        (NNP:[169..173] Rane) (NN:[174..176] A.)))
+
+;section 3 Span:180..266
+;Department of Clinical Pharmacology, Akademiska Hospital, Uppsala University,
+; Sweden.
+(SEC
+  (FRAG (NNP:[180..190] Department) (IN:[191..193] of) (NNP:[194..202] Clinical)
+        (NNP:[203..215] Pharmacology) (,:[215..216] ,)
+        (NNP:[217..227] Akademiska) (NNP:[228..236] Hospital) (,:[236..237] ,)
+        (NNP:[238..245] Uppsala) (NNP:[246..256] University) (IN:[256..257] ,)
+        (NNP:[259..265] Sweden) (.:[265..266] .)))
+
+;sentence 4 Span:270..377
+;Ethylmorphine is metabolised by N-demethylation (to norethylmorphine) and by 
+;O-deethylation (to morphine).
+;[270..283]:substance:"Ethylmorphine"
+;[322..338]:substance:"norethylmorphine"
+;[367..375]:substance:"morphine"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[270..283] Ethylmorphine))
+    (VP (VBZ:[284..286] is)
+      (VP (VBN:[287..298] metabolised)
+        (NP-1 (-NONE-:[298..298] *))
+        (PP-MNR
+          (PP (IN:[299..301] by)
+            (NP (NN:[302..317] N-demethylation)
+              (PRN (-LRB-:[318..319] -LRB-)
+                (PP (TO:[319..321] to)
+                  (NP (NN:[322..338] norethylmorphine)))
+                (-RRB-:[338..339] -RRB-))))
+          (CC:[340..343] and)
+          (PP (IN:[344..346] by)
+            (NP (NN:[348..362] O-deethylation)
+              (PRN (-LRB-:[363..364] -LRB-)
+                (PP (TO:[364..366] to)
+                  (NP (NN:[367..375] morphine)))
+                (-RRB-:[375..376] -RRB-)))))))
+    (.:[376..377] .)))
+
+;sentence 5 Span:378..582
+;The O-deethylation reaction was previously shown  in vivo to co-segregate
+;with the O-demethylation of dextromethorphan indicating  that ethylmorphine
+;is a substrate of polymorphic cytochrome P450(CYP)2D6.
+;[480..496]:substance:"dextromethorphan"
+;[514..527]:substance:"ethylmorphine"
+;[533..542]:substance:"substrate"
+;[558..581]:cyp450:"cytochrome P450(CYP)2D6"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[378..381] The) (NN:[382..396] O-deethylation)
+              (NN:[397..405] reaction))
+    (VP (VBD:[406..409] was)
+      (ADVP-TMP (RB:[410..420] previously))
+      (VP (VBN:[421..426] shown)
+        (NP-1 (-NONE-:[426..426] *))
+        (ADVP (FW:[428..430] in) (FW:[431..435] vivo))
+        (S
+          (NP-SBJ-1 (-NONE-:[435..435] *))
+          (VP (TO:[436..438] to)
+            (VP (AFX:[439..441] co) (HYPH:[441..442] -)
+                (VB:[442..451] segregate)
+              (PP (IN:[452..456] with)
+                (NP
+                  (NP (DT:[457..460] the) (NN:[461..476] O-demethylation))
+                  (PP (IN:[477..479] of)
+                    (NP (NN:[480..496] dextromethorphan))))))))
+        (S-ADV
+          (NP-SBJ (-NONE-:[496..496] *))
+          (VP (VBG:[497..507] indicating)
+            (SBAR (IN:[509..513] that)
+              (S
+                (NP-SBJ (NN:[514..527] ethylmorphine))
+                (VP (VBZ:[528..530] is)
+                  (NP-PRD
+                    (NP (DT:[531..532] a) (NN:[533..542] substrate))
+                    (PP (IN:[543..545] of)
+                      (NP (JJ:[546..557] polymorphic)
+                        
+                        (NML
+                          (NML (NN:[558..568] cytochrome) (NN:[569..573] P450))
+                          (NML (-LRB-:[573..574] -LRB-) (NN:[574..577] CYP)
+                               (-RRB-:[577..578] -RRB-)))
+                        (NN:[578..581] 2D6)))))))))))
+    (.:[581..582] .)))
+
+;sentence 6 Span:583..801
+;To  study further the features of ethylmorphine metabolism we investigated
+;its  N-demethylation and O-deethylation in human liver microsomes from eight 
+;extensive (EM) and one poor metaboliser (PM) of dextromethorphan.
+;[617..630]:substance:"ethylmorphine"
+;[784..800]:substance:"dextromethorphan"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[583..583] *))
+      (VP (TO:[583..585] To)
+        (VP (VB:[587..592] study)
+          (ADVP (RB:[593..600] further))
+          (NP
+            (NP (DT:[601..604] the) (NNS:[605..613] features))
+            (PP (IN:[614..616] of)
+              (NP (NN:[617..630] ethylmorphine) (NN:[631..641] metabolism)))))))
+    (NP-SBJ (PRP:[642..644] we))
+    (VP (VBD:[645..657] investigated)
+      (NP (PRP$:[658..661] its) (NN:[663..678] N-demethylation)
+          (CC:[679..682] and) (NN:[683..697] O-deethylation))
+      (PP-LOC (IN:[698..700] in)
+        (NP
+          (NP (JJ:[701..706] human) (NN:[707..712] liver)
+              (NNS:[713..723] microsomes))
+          (PP (IN:[724..728] from)
+            (NP
+              (NP
+                (NP (CD:[729..734] eight)
+                  (NML
+                    (NML (JJ:[736..745] extensive)
+                      (NML-1 (-NONE-:[745..745] *P*)))
+                    (NML (-LRB-:[746..747] -LRB-) (NN:[747..749] EM)
+                         (-RRB-:[749..750] -RRB-))))
+                (CC:[751..754] and)
+                (NP (CD:[755..758] one)
+                  (NML
+                    (NML (JJ:[759..763] poor)
+                      (NML-1 (NN:[764..775] metaboliser)))
+                    (NML (-LRB-:[776..777] -LRB-) (NN:[777..779] PM)
+                         (-RRB-:[779..780] -RRB-)))))
+              (PP (IN:[781..783] of)
+                (NP (NN:[784..800] dextromethorphan))))))))
+    (.:[800..801] .)))
+
+;sentence 7 Span:802..961
+;Whereas  N-demethylation varied only two-fold there was a 4.3-fold variation
+;in the  O-deethylation of ethylmorphine, the lowest rate being observed in
+;the PM.
+;[839..847]:quantitative-value:"two-fold"
+;[860..868]:quantitative-value:"4.3-fold"
+;[905..918]:substance:"ethylmorphine"
+(SENT
+  (S
+    (SBAR-ADV (IN:[802..809] Whereas)
+      (S
+        (NP-SBJ (NN:[811..826] N-demethylation))
+        (VP (VBD:[827..833] varied)
+          (ADVP-EXT
+            (QP (RB:[834..838] only)
+               (CD:[839..842] two) (HYPH:[842..843] -) (RB:[843..847] fold))))))
+    (NP-SBJ (EX:[848..853] there))
+    (VP (VBD:[854..857] was)
+      (NP-PRD
+        (NP (DT:[858..859] a)
+          (QP (CD:[860..863] 4.3) (HYPH:[863..864] -) (JJ:[864..868] fold))
+          (NN:[869..878] variation))
+        (PP (IN:[879..881] in)
+          (NP
+            (NP (DT:[882..885] the) (NN:[887..901] O-deethylation))
+            (PP (IN:[902..904] of)
+              (NP (NN:[905..918] ethylmorphine))))))
+      (,:[918..919] ,)
+      (S-ADV
+        (NP-SBJ-1 (DT:[920..923] the) (JJS:[924..930] lowest)
+                  (NN:[931..935] rate))
+        (VP (VBG:[936..941] being)
+          (VP (VBN:[942..950] observed)
+            (NP-1 (-NONE-:[950..950] *))
+            (PP-LOC (IN:[951..953] in)
+              (NP (DT:[954..957] the) (NN:[958..960] PM)))))))
+    (.:[960..961] .)))
+
+;sentence 8 Span:963..1108
+;Quinidine, at a concentration of 1 microM, inhibited O-deethylation in 
+;microsomes from an EM, but was unable to do so in microsomes from the PM.
+;[963..972]:substance:"Quinidine"
+;[996..997]:quantitative-value:"1"
+;[998..1004]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[963..972] Quinidine))
+      (,:[972..973] ,)
+      (PP (IN:[974..976] at)
+        (NP
+          (NP (DT:[977..978] a) (NN:[979..992] concentration))
+          (PP (IN:[993..995] of)
+            (NP (CD:[996..997] 1) (NN:[998..1004] microM))))))
+    (,:[1004..1005] ,)
+    (VP
+      (VP (VBD:[1006..1015] inhibited)
+        (NP (NN:[1016..1030] O-deethylation))
+        (PP-LOC (IN:[1031..1033] in)
+          (NP
+            (NP (NNS:[1035..1045] microsomes))
+            (PP (IN:[1046..1050] from)
+              (NP (DT:[1051..1053] an) (NN:[1054..1056] EM))))))
+      (,:[1056..1057] ,) (CC:[1058..1061] but)
+      (VP (VBD:[1062..1065] was)
+        (ADJP-PRD (JJ:[1066..1072] unable)
+          (S
+            (NP-SBJ (-NONE-:[1072..1072] *))
+            (VP (TO:[1073..1075] to)
+              (VP (VB:[1076..1078] do)
+                (ADVP (RB:[1079..1081] so))
+                (PP-LOC (IN:[1082..1084] in)
+                  (NP
+                    (NP (NNS:[1085..1095] microsomes))
+                    (PP (IN:[1096..1100] from)
+                      (NP (DT:[1101..1104] the) (NN:[1105..1107] PM)))))))))))
+    (.:[1107..1108] .)))
+
+;sentence 9 Span:1109..1252
+;The  immunoidentified CYP2D6 and CYP3A4 correlated with the rates of
+;O-deethylation  (r = 0.972) and N-demethylation (r = 0.969), respectively.
+;[1131..1137]:cyp450:"CYP2D6"
+;[1142..1148]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (NP-SBJ (DT:[1109..1112] The)
+      (NML
+        (NML
+          (ADJP-1 (VBN:[1114..1130] immunoidentified))
+          (NN:[1131..1137] CYP2D6))
+        (CC:[1138..1141] and)
+        (NML
+          (ADJP-1 (-NONE-:[1141..1141] *P*))
+          (NN:[1142..1148] CYP3A4))))
+    (VP (VBD:[1149..1159] correlated)
+      (PP-CLR (IN:[1160..1164] with)
+        (NP
+          (NP (DT:[1165..1168] the) (NNS:[1169..1174] rates))
+          (PP (IN:[1175..1177] of)
+            (NP
+              (NP (NN:[1178..1192] O-deethylation)
+                (PRN (-LRB-:[1194..1195] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[1195..1196] r))
+                    (VP (SYM:[1197..1198] =)
+                      (NP (CD:[1199..1204] 0.972))))
+                  (-RRB-:[1204..1205] -RRB-)))
+              (CC:[1206..1209] and)
+              (NP (NN:[1210..1225] N-demethylation)
+                (PRN (-LRB-:[1226..1227] -LRB-)
+                  (S
+                    (NP-SBJ (NN:[1227..1228] r))
+                    (VP (SYM:[1229..1230] =)
+                      (NP (CD:[1231..1236] 0.969))))
+                  (-RRB-:[1236..1237] -RRB-)))))))
+      (,:[1237..1238] ,)
+      (ADVP (RB:[1239..1251] respectively)))
+    (.:[1251..1252] .)))
+
+;sentence 10 Span:1253..1417
+;We conclude that the  O-deethylation of ethylmorphine is catalysed by the
+;CYP2D6 in human liver  microsomes consistent with previous findings in
+;healthy volunteers.
+;[1293..1306]:substance:"ethylmorphine"
+;[1327..1333]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1253..1255] We))
+    (VP (VBP:[1256..1264] conclude)
+      (SBAR (IN:[1265..1269] that)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[1270..1273] the) (NN:[1275..1289] O-deethylation))
+            (PP (IN:[1290..1292] of)
+              (NP (NN:[1293..1306] ethylmorphine))))
+          (VP (VBZ:[1307..1309] is)
+            (VP (VBN:[1310..1319] catalysed)
+              (NP-1 (-NONE-:[1319..1319] *))
+              (PP (IN:[1320..1322] by)
+                (NP-LGS
+                  (NP (DT:[1323..1326] the) (NN:[1327..1333] CYP2D6))
+                  (PP-LOC (IN:[1334..1336] in)
+                    (NP (JJ:[1337..1342] human) (NN:[1343..1348] liver)
+                        (NNS:[1350..1360] microsomes)))))
+              (S-ADV
+                (NP-SBJ (-NONE-:[1360..1360] *))
+                (ADJP-PRD (JJ:[1361..1371] consistent)
+                  (PP (IN:[1372..1376] with)
+                    (NP
+                      (NP (JJ:[1377..1385] previous) (NNS:[1386..1394] findings))
+                      (PP-LOC (IN:[1395..1397] in)
+                        (NP (JJ:[1398..1405] healthy)
+                            (NNS:[1406..1416] volunteers))))))))))))
+    (.:[1416..1417] .)))
+
+;section 11 Span:1421..1465
+;PMID: 7756104 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1421..1425] PMID) (::[1425..1426] :) (CD:[1427..1434] 7756104)
+        (NN:[1435..1436] -LSB-) (NNP:[1436..1442] PubMed) (::[1443..1444] -)
+        (NN:[1445..1452] indexed) (IN:[1453..1456] for)
+        (NNP:[1457..1465] MEDLINE-RSB-)))

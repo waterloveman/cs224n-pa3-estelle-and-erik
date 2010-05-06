@@ -1,0 +1,523 @@
+;PMID: 9314612
+;source_file_872.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..92] = [t:48..92]
+;2)sentence:[e:93..122] = [t:93..122]
+;3)section:[e:126..188] = [t:126..188]
+;4)section:[e:192..256] = [t:192..256]
+;5)sentence:[e:260..546] = [t:260..546]
+;6)sentence:[e:547..622] = [t:547..622]
+;7)sentence:[e:623..733] = [t:623..733]
+;8)sentence:[e:735..997] = [t:735..997]
+;9)sentence:[e:998..1237] = [t:998..1237]
+;10)sentence:[e:1238..1430] = [t:1238..1430]
+;11)sentence:[e:1431..1554] = [t:1431..1554]
+;12)sentence:[e:1555..1673] = [t:1555..1673]
+;13)sentence:[e:1674..1854] = [t:1674..1854]
+;14)sentence:[e:1855..2034] = [t:1855..2034]
+;15)section:[e:2038..2056] = [t:2038..2056]
+;16)section:[e:2062..2068] = [t:2062..2068]
+;17)section:[e:2074..2090] = [t:2074..2090]
+;18)section:[e:2094..2138] = [t:2094..2138]
+
+;section 0 Span:0..42
+;Clin Pharmacokinet. 1997 Sep;33(3):214-24.
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..18] Pharmacokinet) (.:[18..19] .)
+        (CD:[20..24] 1997) (CC:[25..32] Sep;33-LRB-) (CD:[32..33] 3)
+        (-RRB-:[33..34] -RRB-) (CD:[34..38] :214) (::[38..39] -)
+        (CD:[39..41] 24) (.:[41..42] .)))
+
+;sentence 1 Span:48..92
+;Pharmacokinetic interactions with felbamate.
+;[82..91]:substance:"felbamate"
+(SENT
+  (NP-HLN
+    (NP (JJ:[48..63] Pharmacokinetic) (NNS:[64..76] interactions))
+    (PP (IN:[77..81] with)
+      (NP (NN:[82..91] felbamate)))
+    (.:[91..92] .)))
+
+;sentence 2 Span:93..122
+;In vitro-in vivo correlation.
+(SENT
+  (NP
+    (ADJP
+      (ADJP (FW:[93..95] In) (FW:[96..101] vitro))
+      (PP (HYPH:[101..102] -)
+        (ADJP (FW:[102..104] in) (FW:[105..109] vivo))))
+    (NN:[110..121] correlation) (.:[121..122] .)))
+
+;section 3 Span:126..188
+;Glue P, Banfield CR, Perhach JL, Mather GG, Racha JK, Levy RH.
+(SEC
+  (FRAG (NNP:[126..130] Glue) (NNP:[131..132] P) (,:[132..133] ,)
+        (NNP:[134..142] Banfield) (NNP:[143..145] CR) (,:[145..146] ,)
+        (NNP:[147..154] Perhach) (NNP:[155..157] JL) (,:[157..158] ,)
+        (NNP:[159..165] Mather) (NNP:[166..168] GG) (,:[168..169] ,)
+        (NNP:[170..175] Racha) (NNP:[176..178] JK) (,:[178..179] ,)
+        (NNP:[180..184] Levy) (NNP:[185..188] RH.)))
+
+;section 4 Span:192..256
+;Schering-Plough Research Institute, Kenilworth, New Jersey, USA.
+(SEC
+  (FRAG (NNP:[192..200] Schering) (::[200..201] -) (NNP:[201..207] Plough)
+        (NNP:[208..216] Research) (NNP:[217..226] Institute) (,:[226..227] ,)
+        (NNP:[228..238] Kenilworth) (,:[238..239] ,) (NNP:[240..243] New)
+        (NNP:[244..250] Jersey) (,:[250..251] ,) (NNP:[252..255] USA)
+        (.:[255..256] .)))
+
+;sentence 5 Span:260..546
+;This article provides an analysis of the degree of agreement between in vivo 
+;interaction studies performed in patients with epilepsy and healthy
+;individuals,  and in vitro studies which identified the cytochromes P450
+;(CYP) inhibited by  felbamate and those involved in its metabolism.
+;[462..478]:cyp450:"cytochromes P450"
+;[480..483]:cyp450:"CYP"
+;[499..508]:substance:"felbamate"
+(SENT
+  (S
+    (NP-SBJ (DT:[260..264] This) (NN:[265..272] article))
+    (VP (VBZ:[273..281] provides)
+      (NP
+        (NP (DT:[282..284] an) (NN:[285..293] analysis))
+        (PP (IN:[294..296] of)
+          (NP
+            (NP (DT:[297..300] the) (NN:[301..307] degree))
+            (PP (IN:[308..310] of)
+              (NP
+                (NP (NN:[311..320] agreement))
+                (PP (IN:[321..328] between)
+                  (NP
+                    (NP
+                      (NP
+                        (ADJP (FW:[329..331] in) (FW:[332..336] vivo))
+                        (NN:[338..349] interaction) (NNS:[350..357] studies))
+                      (VP (VBN:[358..367] performed)
+                        (NP (-NONE-:[367..367] *))
+                        (PP (IN:[368..370] in)
+                          (NP
+                            (NP
+                              (NP (NNS:[371..379] patients))
+                              (PP (IN:[380..384] with)
+                                (NP (NN:[385..393] epilepsy))))
+                            (CC:[394..397] and)
+                            (NP (JJ:[398..405] healthy)
+                                (NNS:[406..417] individuals))))))
+                    (,:[417..418] ,) (CC:[420..423] and)
+                    (NP
+                      (NP
+                        (ADJP (FW:[424..426] in) (FW:[427..432] vitro))
+                        (NNS:[433..440] studies))
+                      (SBAR
+                        (WHNP-1 (WDT:[441..446] which))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[446..446] *T*))
+                          (VP (VBD:[447..457] identified)
+                            (NP
+                              (NP
+                                (NP (DT:[458..461] the)
+                                  (NML
+                                    (NML (NNS:[462..473] cytochromes)
+                                         (NN:[474..478] P450))
+                                    (NML (-LRB-:[479..480] -LRB-)
+                                         (NN:[480..483] CYP)
+                                         (-RRB-:[483..484] -RRB-))))
+                                (VP (VBN:[485..494] inhibited)
+                                  (NP (-NONE-:[494..494] *))
+                                  (PP (IN:[495..497] by)
+                                    (NP-LGS (NN:[499..508] felbamate)))))
+                              (CC:[509..512] and)
+                              (NP
+                                (NP (DT:[513..518] those))
+                                (VP (VBN:[519..527] involved)
+                                  (NP (-NONE-:[527..527] *))
+                                  (PP-CLR (IN:[528..530] in)
+                                    (NP (PRP$:[531..534] its)
+                                        (NN:[535..545] metabolism))))))))))))))))))
+    (.:[545..546] .)))
+
+;sentence 6 Span:547..622
+;In vitro studies show that  felbamate is a substrate for CYP3A4 and CYP2E1.
+;[575..584]:substance:"felbamate"
+;[590..599]:substance:"substrate"
+;[604..610]:cyp450:"CYP3A4"
+;[615..621]:cyp450:"CYP2E1"
+(SENT
+  (S
+    (NP-SBJ
+      (ADJP (FW:[547..549] In) (FW:[550..555] vitro))
+      (NNS:[556..563] studies))
+    (VP (VBP:[564..568] show)
+      (SBAR (IN:[569..573] that)
+        (S
+          (NP-SBJ (NN:[575..584] felbamate))
+          (VP (VBZ:[585..587] is)
+            (NP-PRD
+              (NP (DT:[588..589] a) (NN:[590..599] substrate))
+              (PP (IN:[600..603] for)
+                (NP (NN:[604..610] CYP3A4) (CC:[611..614] and)
+                    (NN:[615..621] CYP2E1))))))))
+    (.:[621..622] .)))
+
+;sentence 7 Span:623..733
+;Compounds which induce CYP3A4  (e.g. carbamazepine, phenytoin and
+;phenobarbital) increase felbamate clearance.
+;[623..632]:substance:"Compounds"
+;[646..652]:cyp450:"CYP3A4"
+;[660..673]:substance:"carbamazepine"
+;[675..684]:substance:"phenytoin"
+;[689..702]:substance:"phenobarbital"
+;[713..722]:substance:"felbamate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[623..632] Compounds))
+      (SBAR
+        (WHNP-1 (WDT:[633..638] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[638..638] *T*))
+          (VP (VBP:[639..645] induce)
+            (NP (NN:[646..652] CYP3A4))
+            (PRN (-LRB-:[654..655] -LRB-)
+              (NP
+                (ADVP (FW:[655..659] e.g.))
+                (NN:[660..673] carbamazepine) (,:[673..674] ,)
+                 (NN:[675..684] phenytoin) (CC:[685..688] and)
+                 (NN:[689..702] phenobarbital))
+              (-RRB-:[702..703] -RRB-))))))
+    (VP (VBP:[704..712] increase)
+      (NP (NN:[713..722] felbamate) (NN:[723..732] clearance)))
+    (.:[732..733] .)))
+
+;sentence 8 Span:735..997
+;However, the CYP3A4 inhibitors gestodene, ethinyl estradiol and erythromycin 
+;have little or no effect on felbamate trough plasma concentrations,
+;consistent  with the fact that the pathway is relatively minor for felbamate
+;under normal  (non-induced) conditions.
+;[748..754]:cyp450:"CYP3A4"
+;[755..765]:substance:"inhibitors"
+;[766..775]:substance:"gestodene"
+;[777..794]:substance:"ethinyl estradiol"
+;[799..811]:substance:"erythromycin"
+;[841..850]:substance:"felbamate"
+;[948..957]:substance:"felbamate"
+(SENT
+  (S
+    (ADVP (RB:[735..742] However))
+    (,:[742..743] ,)
+    (NP-SBJ
+      (NP (DT:[744..747] the) (NN:[748..754] CYP3A4) (NNS:[755..765] inhibitors))
+      (NP
+        (NP (NN:[766..775] gestodene))
+        (,:[775..776] ,)
+        (NP (NN:[777..784] ethinyl) (NN:[785..794] estradiol))
+        (CC:[795..798] and)
+        (NP (NN:[799..811] erythromycin))))
+    (VP (VBP:[813..817] have)
+      (NP
+        (NP
+          (NP (JJ:[818..824] little)
+            (NML-1 (-NONE-:[824..824] *P*)))
+          (CC:[825..827] or)
+          (NP (DT:[828..830] no)
+            (NML-1 (NN:[831..837] effect))))
+        (PP (IN:[838..840] on)
+          (NP (NN:[841..850] felbamate) (NN:[851..857] trough)
+              (NN:[858..864] plasma) (NNS:[865..879] concentrations))))
+      (,:[879..880] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[880..880] *))
+        (ADJP-PRD (JJ:[881..891] consistent)
+          (PP (IN:[893..897] with)
+            (NP (DT:[898..901] the) (NN:[902..906] fact)
+              (SBAR (IN:[907..911] that)
+                (S
+                  (NP-SBJ (DT:[912..915] the) (NN:[916..923] pathway))
+                  (VP (VBZ:[924..926] is)
+                    (ADJP-PRD (RB:[927..937] relatively) (JJ:[938..943] minor))
+                    (PP (IN:[944..947] for)
+                      (NP (NN:[948..957] felbamate)))
+                    (PP (IN:[958..963] under)
+                      (NP (JJ:[964..970] normal)
+                        (PRN (-LRB-:[972..973] -LRB-)
+                          (ADJP (AFX:[973..976] non) (HYPH:[976..977] -)
+                                (VBN:[977..984] induced))
+                          (-RRB-:[984..985] -RRB-))
+                        (NNS:[986..996] conditions)))))))))))
+    (.:[996..997] .)))
+
+;sentence 9 Span:998..1237
+;Felbamate has been shown in vitro to inhibit CYP2C19,  which would account
+;for its effect on phenytoin clearance, and it had been  postulated that this
+;could be the mechanism underlying the reduced clearance of  phenobarbital by
+;felbamate.
+;[998..1007]:substance:"Felbamate"
+;[1043..1050]:cyp450:"CYP2C19"
+;[1091..1100]:substance:"phenytoin"
+;[1210..1223]:substance:"phenobarbital"
+;[1227..1236]:substance:"felbamate"
+(SENT
+  (S
+    (S
+      (NP-SBJ-4 (NN:[998..1007] Felbamate))
+      (VP (VBZ:[1008..1011] has)
+        (VP (VBN:[1012..1016] been)
+          (VP (VBN:[1017..1022] shown)
+            (ADVP (FW:[1023..1025] in) (FW:[1026..1031] vitro))
+            (S
+              (NP-SBJ-4 (-NONE-:[1031..1031] *))
+              (VP (TO:[1032..1034] to)
+                (VP (VB:[1035..1042] inhibit)
+                  (NP (NN:[1043..1050] CYP2C19)))))
+            (,:[1050..1051] ,)
+            (SBAR-ADV
+              (WHNP-1 (WDT:[1053..1058] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[1058..1058] *T*))
+                (VP (MD:[1059..1064] would)
+                  (VP (VB:[1065..1072] account)
+                    (PP-CLR (IN:[1073..1076] for)
+                      (NP
+                        (NP (PRP$:[1077..1080] its) (NN:[1081..1087] effect))
+                        (PP (IN:[1088..1090] on)
+                          (NP (NN:[1091..1100] phenytoin)
+                              (NN:[1101..1110] clearance)))))))))))))
+    (,:[1110..1111] ,) (CC:[1112..1115] and)
+    (S
+      (NP-SBJ-3
+        (NP (PRP:[1116..1118] it))
+        (SBAR-2 (-NONE-:[1118..1118] *EXP*)))
+      (VP (VBD:[1119..1122] had)
+        (VP (VBN:[1123..1127] been)
+          (VP (VBN:[1129..1139] postulated)
+            (NP-3 (-NONE-:[1139..1139] *))
+            (SBAR-2 (IN:[1140..1144] that)
+              (S
+                (NP-SBJ (DT:[1145..1149] this))
+                (VP (MD:[1150..1155] could)
+                  (VP (VB:[1156..1158] be)
+                    (NP-PRD
+                      (NP (DT:[1159..1162] the) (NN:[1163..1172] mechanism))
+                      (VP (VBG:[1173..1183] underlying)
+                        (NP
+                          (NP (DT:[1184..1187] the) (VBN:[1188..1195] reduced)
+                              (NN:[1196..1205] clearance))
+                          (PP (IN:[1206..1208] of)
+                            (NP (NN:[1210..1223] phenobarbital)))
+                          (PP (IN:[1224..1226] by)
+                            (NP (NN:[1227..1236] felbamate))))))))))))))
+    (.:[1236..1237] .)))
+
+;sentence 10 Span:1238..1430
+;Although not yet examined in vitro, felbamate  appears to induce the activity
+;of CYP3A4, which would account for it reducing  plasma concentrations of
+;carbamazepine or the progestin gestodene.
+;[1274..1283]:substance:"felbamate"
+;[1319..1325]:cyp450:"CYP3A4"
+;[1389..1402]:substance:"carbamazepine"
+;[1410..1419]:substance:"progestin"
+;[1420..1429]:substance:"gestodene"
+(SENT
+  (S
+    (SBAR-ADV (IN:[1238..1246] Although)
+      (S
+        (NP-SBJ-1 (-NONE-:[1246..1246] *))
+        (ADVP-TMP (RB:[1247..1250] not) (RB:[1251..1254] yet))
+        (VP (VBN:[1255..1263] examined)
+          (NP-1 (-NONE-:[1263..1263] *))
+          (ADVP (FW:[1264..1266] in) (FW:[1267..1272] vitro)))))
+    (,:[1272..1273] ,)
+    (NP-SBJ-2 (NN:[1274..1283] felbamate))
+    (VP (VBZ:[1285..1292] appears)
+      (S
+        (NP-SBJ-2 (-NONE-:[1292..1292] *))
+        (VP (TO:[1293..1295] to)
+          (VP (VB:[1296..1302] induce)
+            (NP
+              (NP (DT:[1303..1306] the) (NN:[1307..1315] activity))
+              (PP (IN:[1316..1318] of)
+                (NP (NN:[1319..1325] CYP3A4)))))))
+      (,:[1325..1326] ,)
+      (SBAR-ADV
+        (WHNP-3 (WDT:[1327..1332] which))
+        (S
+          (NP-SBJ-3 (-NONE-:[1332..1332] *T*))
+          (VP (MD:[1333..1338] would)
+            (VP (VB:[1339..1346] account)
+              (PP-CLR (IN:[1347..1350] for)
+                (S-NOM
+                  (NP-SBJ (PRP:[1351..1353] it))
+                  (VP (VBG:[1354..1362] reducing)
+                    (NP
+                      (NP (NN:[1364..1370] plasma)
+                          (NNS:[1371..1385] concentrations))
+                      (PP (IN:[1386..1388] of)
+                        (NP
+                          (NP (NN:[1389..1402] carbamazepine))
+                          (CC:[1403..1405] or)
+                          (NP
+                            (NP (DT:[1406..1409] the)
+                                (NN:[1410..1419] progestin))
+                            (NP (NN:[1420..1429] gestodene))))))))))))))
+    (.:[1429..1430] .)))
+
+;sentence 11 Span:1431..1554
+;Interactions  involving felbamate and non-CYP450-mediated metabolic pathways
+;have also been  addressed in clinical studies.
+;[1455..1464]:substance:"felbamate"
+;[1473..1479]:cyp450:"CYP450"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[1431..1443] Interactions))
+      (VP (VBG:[1445..1454] involving)
+        (NP
+          (NP (NN:[1455..1464] felbamate))
+          (CC:[1465..1468] and)
+          (NP
+            (ADJP (AFX:[1469..1472] non) (HYPH:[1472..1473] -)
+                  (NN:[1473..1479] CYP450) (HYPH:[1479..1480] -)
+                  (VBN:[1480..1488] mediated))
+            (JJ:[1489..1498] metabolic) (NNS:[1499..1507] pathways)))))
+    (VP (VBP:[1508..1512] have)
+      (ADVP (RB:[1513..1517] also))
+      (VP (VBN:[1518..1522] been)
+        (VP (VBN:[1524..1533] addressed)
+          (NP-1 (-NONE-:[1533..1533] *))
+          (PP (IN:[1534..1536] in)
+            (NP (JJ:[1537..1545] clinical) (NNS:[1546..1553] studies))))))
+    (.:[1553..1554] .)))
+
+;sentence 12 Span:1555..1673
+;The reduction in valproic acid (valproate sodium)  clearance by felbamate is
+;through the inhibition of beta-oxidation.
+;[1572..1585]:substance:"valproic acid"
+;[1587..1603]:substance:"valproate sodium"
+;[1619..1628]:substance:"felbamate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1555..1558] The) (NN:[1559..1568] reduction))
+      (PP (IN:[1569..1571] in)
+        (NP
+          (NML
+            (NML (JJ:[1572..1580] valproic) (NN:[1581..1585] acid))
+            (NML (-LRB-:[1586..1587] -LRB-)
+               (NN:[1587..1596] valproate) (NN:[1597..1603] sodium)
+              (-RRB-:[1603..1604] -RRB-)))
+          (NN:[1606..1615] clearance)))
+      (PP (IN:[1616..1618] by)
+        (NP (NN:[1619..1628] felbamate))))
+    (VP (VBZ:[1629..1631] is)
+      (PP-PRD (IN:[1632..1639] through)
+        (NP
+          (NP (DT:[1640..1643] the) (NN:[1644..1654] inhibition))
+          (PP (IN:[1655..1657] of)
+            (NP (NN:[1658..1672] beta-oxidation))))))
+    (.:[1672..1673] .)))
+
+;sentence 13 Span:1674..1854
+;No  clinically relevant pharmacokinetic interactions were noted between
+;felbamate  and lamotrigine, clonazepam, vigabatrin, nor the active
+;monohydroxy metabolite  of oxcarbazepine.
+;[1746..1755]:substance:"felbamate"
+;[1761..1772]:substance:"lamotrigine"
+;[1774..1784]:substance:"clonazepam"
+;[1786..1796]:substance:"vigabatrin"
+;[1813..1835]:substance:"monohydroxy metabolite"
+;[1840..1853]:substance:"oxcarbazepine"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1674..1676] No)
+      (ADJP (RB:[1678..1688] clinically) (JJ:[1689..1697] relevant))
+      (JJ:[1698..1713] pharmacokinetic) (NNS:[1714..1726] interactions))
+    (VP (VBD:[1727..1731] were)
+      (VP (VBN:[1732..1737] noted)
+        (NP-1 (-NONE-:[1737..1737] *))
+        (PP (IN:[1738..1745] between)
+          (NP
+            (NP (NN:[1746..1755] felbamate) (CC:[1757..1760] and)
+                (NN:[1761..1772] lamotrigine))
+            (,:[1772..1773] ,)
+            (NP (NN:[1774..1784] clonazepam))
+            (,:[1784..1785] ,)
+            (NP (NN:[1786..1796] vigabatrin))
+            (,:[1796..1797] ,) (CC:[1798..1801] nor)
+            (NP
+              (NP (DT:[1802..1805] the) (JJ:[1806..1812] active)
+                 (JJ:[1813..1824] monohydroxy) (NN:[1825..1835] metabolite))
+              (PP (IN:[1837..1839] of)
+                (NP (NN:[1840..1853] oxcarbazepine))))))))
+    (.:[1853..1854] .)))
+
+;sentence 14 Span:1855..2034
+;Information on the mechanisms underlying felbamate's drug:drug  interaction
+;profile permits predictions to be made concerning the likelihood of 
+;interactions with other compounds.
+;[1896..1905]:substance:"felbamate"
+;[1908..1912]:substance:"drug"
+;[1913..1917]:substance:"drug"
+;[2024..2033]:substance:"compounds"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1855..1866] Information))
+      (PP (IN:[1867..1869] on)
+        (NP
+          (NP (DT:[1870..1873] the) (NNS:[1874..1884] mechanisms))
+          (VP (VBG:[1885..1895] underlying)
+            (NP
+              (NP (NN:[1896..1905] felbamate) (POS:[1905..1907] 's))
+              (NML
+                (NML
+                  (NML (NN:[1908..1912] drug))
+                  (PP (::[1912..1913] :)
+                    (NP (NN:[1913..1917] drug))))
+                (NN:[1919..1930] interaction))
+              (NN:[1931..1938] profile))))))
+    (VP (VBZ:[1939..1946] permits)
+      (S
+        (NP-SBJ-2
+          (NP (NNS:[1947..1958] predictions))
+          (VP-1 (-NONE-:[1958..1958] *ICH*)))
+        (VP (TO:[1959..1961] to)
+          (VP (VB:[1962..1964] be)
+            (VP (VBN:[1965..1969] made)
+              (NP-2 (-NONE-:[1969..1969] *))
+              (VP-1 (VBG:[1970..1980] concerning)
+                (NP
+                  (NP (DT:[1981..1984] the) (NN:[1985..1995] likelihood))
+                  (PP (IN:[1996..1998] of)
+                    (NP
+                      (NP (NNS:[2000..2012] interactions))
+                      (PP (IN:[2013..2017] with)
+                        (NP (JJ:[2018..2023] other) (NNS:[2024..2033] compounds))))))))))))
+    (.:[2033..2034] .)))
+
+;section 15 Span:2038..2056
+;Publication Types:
+(SEC
+  (FRAG (NNP:[2038..2049] Publication) (NNP:[2050..2055] Types)
+        (::[2055..2056] :)))
+
+;section 16 Span:2062..2068
+;Review
+(SEC
+  (FRAG (NNP:[2062..2068] Review)))
+
+;section 17 Span:2074..2090
+;Review, Tutorial
+(SEC
+  (FRAG (NNP:[2074..2080] Review) (,:[2080..2081] ,) (NNP:[2082..2090] Tutorial)))
+
+;section 18 Span:2094..2138
+;PMID: 9314612 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2094..2098] PMID) (::[2098..2099] :) (CD:[2100..2107] 9314612)
+        (NN:[2108..2109] -LSB-) (NNP:[2109..2115] PubMed) (::[2116..2117] -)
+        (NN:[2118..2125] indexed) (IN:[2126..2129] for)
+        (NNP:[2130..2138] MEDLINE-RSB-)))

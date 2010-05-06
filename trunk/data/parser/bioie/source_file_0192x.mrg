@@ -1,0 +1,485 @@
+;PMID: 9856847
+;source_file_1379.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:47..210] = [t:47..210]
+;2)section:[e:214..262] = [t:214..262]
+;3)section:[e:266..339] = [t:266..339]
+;4)sentence:[e:343..715] = [t:343..715]
+;5)sentence:[e:716..816] = [t:716..816]
+;6)sentence:[e:817..1065] = [t:817..1065]
+;7)sentence:[e:1066..1239] = [t:1066..1239]
+;8)sentence:[e:1240..1426] = [t:1240..1426]
+;9)sentence:[e:1427..1551] = [t:1427..1551]
+;10)sentence:[e:1552..1745] = [t:1552..1745]
+;11)sentence:[e:1746..2086] = [t:1746..2086]
+;12)section:[e:2090..2134] = [t:2090..2134]
+
+;section 0 Span:0..42
+;J Invest Dermatol  1998 Dec;111(6):1227-31
+(SEC
+  (FRAG (NNP:[0..1] J) (DT:[2..8] Invest) (NNP:[9..17] Dermatol)
+        (CD:[19..23] 1998) (.:[24..32] Dec;111-LRB-) (CD:[32..34] 6-RRB-)
+        (CD:[34..39] :1227) (HYPH:[39..40] -) (CD:[40..42] 31)))
+
+;sentence 1 Span:47..210
+;Identification of activating c-kit mutations in adult-, but not in 
+;childhood-onset indolent mastocytosis: a possible explanation for divergent 
+;clinical behavior.
+;[76..81]:gene-rna:"c-kit"
+;[95..101]...[125..152]:malignancy:"adult-"..."onset indolent mastocytosis"
+;[115..152]:malignancy:"childhood-onset indolent mastocytosis"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[47..61] Identification))
+      (PP (IN:[62..64] of)
+        (NP (VBG:[65..75] activating) (NN:[76..81] c-kit)
+            (NNS:[82..91] mutations)))
+      (PP
+        (PP (IN:[92..94] in)
+          (NP
+            (NML (NN:[95..100] adult) (HYPH:[100..101] -)
+              (NML-1 (-NONE-:[101..101] *RNR*)))
+            (NML-2 (-NONE-:[101..101] *RNR*))))
+        (,:[101..102] ,)
+        (CONJP (CC:[103..106] but) (RB:[107..110] not))
+        (PP (IN:[111..113] in)
+          (NP
+            (NML (NN:[115..124] childhood) (HYPH:[124..125] -)
+              (NML-1 (-NONE-:[125..125] *RNR*)))
+            (NML-2 (-NONE-:[125..125] *RNR*))))
+        (NML-1 (NN:[125..130] onset))
+        (NML-2 (JJ:[131..139] indolent) (NN:[140..152] mastocytosis))))
+    (::[152..153] :)
+    (NP
+      (NP (DT:[154..155] a) (JJ:[156..164] possible) (NN:[165..176] explanation))
+      (PP (IN:[177..180] for)
+        (NP (JJ:[181..190] divergent) (JJ:[192..200] clinical)
+            (NN:[201..209] behavior))))
+    (.:[209..210] .)))
+
+;section 2 Span:214..262
+;Buttner C, Henz BM, Welker P, Sepp NT, Grabbe J.
+(SEC
+  (FRAG (NNP:[214..221] Buttner) (NNP:[222..223] C) (,:[223..224] ,)
+        (NNP:[225..229] Henz) (NNP:[230..232] BM) (,:[232..233] ,)
+        (NNP:[234..240] Welker) (NNP:[241..242] P) (,:[242..243] ,)
+        (NNP:[244..248] Sepp) (NNP:[249..251] NT) (,:[251..252] ,)
+        (NNP:[253..259] Grabbe) (NNP:[260..262] J.)))
+
+;section 3 Span:266..339
+;Department of Dermatology, Charite, Humboldt University, Berlin, Germany.
+(SEC
+  (FRAG (NNP:[266..276] Department) (IN:[277..279] of)
+        (NNP:[280..291] Dermatology) (,:[291..292] ,) (NNP:[293..300] Charite)
+        (,:[300..301] ,) (NNP:[302..310] Humboldt) (NNP:[311..321] University)
+        (,:[321..322] ,) (NNP:[323..329] Berlin) (,:[329..330] ,)
+        (NNP:[331..338] Germany) (.:[338..339] .)))
+
+;sentence 4 Span:343..715
+;Mastocytosis represents a mast cell proliferative disease that generally runs
+;a  benign clinical course, with spontaneous remissions mostly by puberty in 
+;childhood-onset disease, although rare forms, particularly in adult-onset 
+;disease, can be associated with (pre)malignant hematologic disorders and very
+; rarely present as mast cell leukemia or malignant mastocytosis.
+;[343..355]:malignancy:"Mastocytosis"
+;[498..521]:malignancy:"childhood-onset disease"
+;[560..580]:malignancy:"adult-onset  disease"
+;[670..688]:malignancy:"mast cell leukemia"
+;[692..714]:malignancy:"malignant mastocytosis"
+(SENT
+  (S
+    (NP-SBJ (NN:[343..355] Mastocytosis))
+    (VP (VBZ:[356..366] represents)
+      (NP
+        (NP (DT:[367..368] a)
+          (NML (NN:[369..373] mast) (NN:[374..378] cell))
+          (JJ:[379..392] proliferative) (NN:[393..400] disease))
+        (SBAR
+          (WHNP-2 (WDT:[401..405] that))
+          (S
+            (NP-SBJ-2 (-NONE-:[405..405] *T*))
+            (ADVP (RB:[406..415] generally))
+            (VP (VBZ:[416..420] runs)
+              (NP (DT:[421..422] a) (JJ:[424..430] benign)
+                  (JJ:[431..439] clinical) (NN:[440..446] course)))))
+        (,:[446..447] ,)
+        (PP (IN:[448..452] with)
+          (NP
+            (NP (JJ:[453..464] spontaneous) (NNS:[465..475] remissions))
+            (PP
+              (ADVP (RB:[476..482] mostly))
+              (IN:[483..485] by)
+              (NP (NN:[486..493] puberty)))
+            (PP (IN:[494..496] in)
+              (NP
+                (NML (NN:[498..507] childhood) (HYPH:[507..508] -)
+                     (NN:[508..513] onset))
+                (NN:[514..521] disease))))))
+      (,:[521..522] ,)
+      (SBAR-ADV (IN:[523..531] although)
+        (S
+          (NP-SBJ-1 (JJ:[532..536] rare) (NNS:[537..542] forms))
+          (,:[542..543] ,)
+          (PP
+            (ADVP (RB:[544..556] particularly))
+            (IN:[557..559] in)
+            (NP
+              (NML (NN:[560..565] adult) (HYPH:[565..566] -)
+                   (NN:[566..571] onset))
+              (NN:[573..580] disease)))
+          (,:[580..581] ,)
+          (VP
+            (VP (MD:[582..585] can)
+              (VP (VB:[586..588] be)
+                (VP (VBN:[589..599] associated)
+                  (NP-1 (-NONE-:[599..599] *))
+                  (PP-CLR (IN:[600..604] with)
+                    (NP (JJ:[605..619] -LRB-pre-RRB-malignant)
+                        (JJ:[620..631] hematologic) (NNS:[632..641] disorders))))))
+            (CC:[642..645] and)
+            (VP
+              (ADVP (RB:[646..650] very) (RB:[652..658] rarely))
+              (VBP:[659..666] present)
+              (PP (IN:[667..669] as)
+                (NP
+                  (NP
+                    (NML (NN:[670..674] mast) (NN:[675..679] cell))
+                    (NN:[680..688] leukemia))
+                  (CC:[689..691] or)
+                  (NP (JJ:[692..701] malignant) (NN:[702..714] mastocytosis)))))))))
+    (.:[714..715] .)))
+
+;sentence 5 Span:716..816
+;Reasons for this  divergent clinical behavior of childhood- versus
+;adult-onset disease are  unknown.
+;[765..775]...[789..802]:malignancy:"childhood-"..."onset disease"
+;[783..802]:malignancy:"adult-onset disease"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[716..723] Reasons))
+      (PP (IN:[724..727] for)
+        (NP
+          (NP (DT:[728..732] this) (JJ:[734..743] divergent)
+              (JJ:[744..752] clinical) (NN:[753..761] behavior))
+          (PP (IN:[762..764] of)
+            (NP
+              (NP
+                (NML (NN:[765..774] childhood) (HYPH:[774..775] -)
+                  (NML-1 (-NONE-:[775..775] *RNR*)))
+                (NML-2 (-NONE-:[775..775] *RNR*)))
+              (PP (IN:[776..782] versus)
+                (NP
+                  (NML (NN:[783..788] adult) (HYPH:[788..789] -)
+                    (NML-1 (-NONE-:[789..789] *RNR*)))
+                  (NML-2 (-NONE-:[789..789] *RNR*))))
+              (NML-1 (NN:[789..794] onset))
+              (NML-2 (NN:[795..802] disease)))))))
+    (VP (VBP:[803..806] are)
+      (ADJP-PRD (JJ:[808..815] unknown)))
+    (.:[815..816] .)))
+
+;sentence 6 Span:817..1065
+;Recently, two activating mutations in the intracellular domain of the 
+;proto-oncogene c-kit, which encodes a tyrosine kinase receptor for the mast
+;cell  growth factor stem cell factor, have been detected in the human
+;leukemic mast  cell line HMC-1.
+;[903..908]:gene-rna:"c-kit"
+;[926..950]:gene-protein:"tyrosine kinase receptor"
+;[959..1000]:gene-protein:"mast cell  growth factor stem cell factor"
+;[1034..1053]:malignancy:"leukemic mast  cell"
+(SENT
+  (S
+    (ADVP-TMP (RB:[817..825] Recently))
+    (,:[825..826] ,)
+    (NP-SBJ-2
+      (NP (CD:[827..830] two) (VBG:[831..841] activating)
+          (NNS:[842..851] mutations))
+      (PP (IN:[852..854] in)
+        (NP
+          (NP (DT:[855..858] the) (JJ:[859..872] intracellular)
+              (NN:[873..879] domain))
+          (PP (IN:[880..882] of)
+            (NP
+              (NP
+                (NP (DT:[883..886] the) (AFX:[888..893] proto)
+                    (HYPH:[893..894] -) (NN:[894..902] oncogene))
+                (NP (NN:[903..908] c-kit)))
+              (,:[908..909] ,)
+              (SBAR
+                (WHNP-1 (WDT:[910..915] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[915..915] *T*))
+                  (VP (VBZ:[916..923] encodes)
+                    (NP
+                      (NP (DT:[924..925] a)
+                         (NN:[926..934] tyrosine) (NN:[935..941] kinase)
+                         (NN:[942..950] receptor))
+                      (PP (IN:[951..954] for)
+                        (NP (DT:[955..958] the)
+                          
+                          (NML
+                            (NML (NN:[959..963] mast) (NN:[964..968] cell))
+                            (NML (NN:[970..976] growth) (NN:[977..983] factor)))
+                          (NML
+                            (NML (NN:[984..988] stem) (NN:[989..993] cell))
+                            (NN:[994..1000] factor)))))))))))))
+    (,:[1000..1001] ,)
+    (VP (VBP:[1002..1006] have)
+      (VP (VBN:[1007..1011] been)
+        (VP (VBN:[1012..1020] detected)
+          (NP-2 (-NONE-:[1020..1020] *))
+          (PP (IN:[1021..1023] in)
+            (NP
+              (NML (DT:[1024..1027] the) (JJ:[1028..1033] human)
+                 (JJ:[1034..1042] leukemic)
+                (NML (NN:[1043..1047] mast) (NN:[1049..1053] cell))
+                (NN:[1054..1058] line))
+              (NML (NN:[1059..1064] HMC-1)))))))
+    (.:[1064..1065] .)))
+
+;sentence 7 Span:1066..1239
+;We have therefore studied lesional skin biopsies from patients  with adult-
+;and childhood-onset indolent mastocytosis for the presence of these  codon
+;560 and 816 mutations.
+;[1135..1141]...[1156..1183]:malignancy:"adult-"..."onset indolent
+;mastocytosis"
+;[1146..1183]:malignancy:"childhood-onset indolent mastocytosis"
+;[1211..1220]:variation-location:"codon 560"
+;[1211..1216]...[1225..1228]:variation-location:"codon"..."816"
+;[1229..1238]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1066..1068] We))
+    (VP (VBP:[1069..1073] have)
+      (ADVP (RB:[1074..1083] therefore))
+      (VP (VBN:[1084..1091] studied)
+        (NP
+          (NP (JJ:[1092..1100] lesional) (NN:[1101..1105] skin)
+              (NNS:[1106..1114] biopsies))
+          (PP (IN:[1115..1119] from)
+            (NP
+              (NP (NNS:[1120..1128] patients))
+              (PP (IN:[1130..1134] with)
+                (NP
+                  (NP
+                    (NML (NN:[1135..1140] adult) (HYPH:[1140..1141] -)
+                      (NML-3 (-NONE-:[1141..1141] *P*)))
+                    (NML-4 (-NONE-:[1141..1141] *P*)))
+                  (CC:[1142..1145] and)
+                  (NP
+                    (NML (NN:[1146..1155] childhood) (HYPH:[1155..1156] -)
+                      (NML-3 (NN:[1156..1161] onset)))
+                    (NML-4 (JJ:[1162..1170] indolent)
+                           (NN:[1171..1183] mastocytosis))))))))
+        (PP (IN:[1184..1187] for)
+          (NP
+            (NP (DT:[1188..1191] the) (NN:[1192..1200] presence))
+            (PP (IN:[1201..1203] of)
+              (NP (DT:[1204..1209] these)
+                (NML
+                  (NML
+                    (NML
+                      (NML-2 (NN:[1211..1216] codon))
+                      (CD:[1217..1220] 560))
+                    (NML-1 (-NONE-:[1220..1220] *P*)))
+                  (CC:[1221..1224] and)
+                  (NML
+                    (NML
+                      (NML-2 (-NONE-:[1224..1224] *P*))
+                      (CD:[1225..1228] 816))
+                    (NML-1 (NNS:[1229..1238] mutations))))))))))
+    (.:[1238..1239] .)))
+
+;sentence 8 Span:1240..1426
+;C-kit coding DNA sequences were amplified and  analyzed by mutation-specific
+;restriction analyses, and mutated polymerase chain  reaction products were
+;additionally cloned and sequenced.
+;[1240..1245]:gene-rna:"C-kit"
+;[1351..1361]:gene-protein:"polymerase"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[1240..1245] C-kit) (VBG:[1246..1252] coding)
+                (NN:[1253..1256] DNA) (NNS:[1257..1266] sequences))
+      (VP (VBD:[1267..1271] were)
+        (VP (VBN:[1272..1281] amplified) (CC:[1282..1285] and)
+            (VBN:[1287..1295] analyzed)
+          (NP-2 (-NONE-:[1295..1295] *))
+          (PP-MNR (IN:[1296..1298] by)
+            (NP
+              (NML (NN:[1299..1307] mutation) (HYPH:[1307..1308] -)
+                   (JJ:[1308..1316] specific))
+              (NN:[1317..1328] restriction) (NNS:[1329..1337] analyses))))))
+    (,:[1337..1338] ,) (CC:[1339..1342] and)
+    (S
+      (NP-SBJ-1 (VBN:[1343..1350] mutated)
+        (NML (NN:[1351..1361] polymerase) (NN:[1362..1367] chain)
+             (NN:[1369..1377] reaction))
+        (NNS:[1378..1386] products))
+      (VP (VBD:[1387..1391] were)
+        (ADVP (RB:[1392..1404] additionally))
+        (VP (VBN:[1405..1411] cloned) (CC:[1412..1415] and)
+            (VBN:[1416..1425] sequenced)
+          (NP-1 (-NONE-:[1425..1425] *)))))
+    (.:[1425..1426] .)))
+
+;sentence 9 Span:1427..1551
+;The codon 816 mutation  was found in all six samples from adult patients, but
+;not in any of the 11  specimens from children.
+;[1431..1440]:variation-location:"codon 816"
+;[1441..1449]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1427..1430] The)
+      (NML (NN:[1431..1436] codon) (CD:[1437..1440] 816))
+      (NN:[1441..1449] mutation))
+    (VP (VBD:[1451..1454] was)
+      (VP
+        (VP (VBN:[1455..1460] found)
+          (NP-2 (-NONE-:[1460..1460] *))
+          (PP=1 (IN:[1461..1463] in)
+            (NP
+              (NP (DT:[1464..1467] all) (CD:[1468..1471] six)
+                  (NNS:[1472..1479] samples))
+              (PP (IN:[1480..1484] from)
+                (NP (JJ:[1485..1490] adult) (NNS:[1491..1499] patients))))))
+        (,:[1499..1500] ,) (CC:[1501..1504] but)
+        (VP (RB:[1505..1508] not)
+          (PP=1 (IN:[1509..1511] in)
+            (NP
+              (NP (DT:[1512..1515] any))
+              (PP (IN:[1516..1518] of)
+                (NP
+                  (NP (DT:[1519..1522] the) (CD:[1523..1525] 11)
+                      (NNS:[1527..1536] specimens))
+                  (PP (IN:[1537..1541] from)
+                    (NP (NNS:[1542..1550] children))))))))))
+    (.:[1550..1551] .)))
+
+;sentence 10 Span:1552..1745
+;In addition, the codon 560 mutation could be  demonstrated for the first time
+;in indolent mastocytosis, namely in two of four  specimens from adult
+;patients, but not in those from two children.
+;[1569..1578]:variation-location:"codon 560"
+;[1579..1587]:variation-event:"mutation"
+;[1633..1654]:malignancy:"indolent mastocytosis"
+(SENT
+  (S
+    (PP (IN:[1552..1554] In)
+      (NP (NN:[1555..1563] addition)))
+    (,:[1563..1564] ,)
+    (NP-SBJ-1 (DT:[1565..1568] the)
+      (NML (NN:[1569..1574] codon) (CD:[1575..1578] 560))
+      (NN:[1579..1587] mutation))
+    (VP (MD:[1588..1593] could)
+      (VP (VB:[1594..1596] be)
+        (VP (VBN:[1598..1610] demonstrated)
+          (NP-1 (-NONE-:[1610..1610] *))
+          (PP (IN:[1611..1614] for)
+            (NP (DT:[1615..1618] the) (JJ:[1619..1624] first)
+                (NN:[1625..1629] time)))
+          (PP (IN:[1630..1632] in)
+            (NP (JJ:[1633..1641] indolent) (NN:[1642..1654] mastocytosis)))
+          (,:[1654..1655] ,)
+          (PP
+            (PP
+              (ADVP (RB:[1656..1662] namely))
+              (IN:[1663..1665] in)
+              (NP
+                (NP (CD:[1666..1669] two))
+                (PP (IN:[1670..1672] of)
+                  (NP
+                    (NP (CD:[1673..1677] four) (NNS:[1679..1688] specimens))
+                    (PP (IN:[1689..1693] from)
+                      (NP (JJ:[1694..1699] adult) (NNS:[1700..1708] patients)))))))
+            (,:[1708..1709] ,)
+            (CONJP (CC:[1710..1713] but) (RB:[1714..1717] not))
+            (PP (IN:[1718..1720] in)
+              (NP
+                (NP (DT:[1721..1726] those))
+                (PP (IN:[1727..1731] from)
+                  (NP (CD:[1732..1735] two) (NNS:[1736..1744] children)))))))))
+    (.:[1744..1745] .)))
+
+;sentence 11 Span:1746..2086
+;These data  thus provide a possible explanation for the divergent clinical
+;behavior of  adult- versus childhood-onset indolent mastocytosis, with the
+;first being  associated with an activating mutation, possibly as part of a
+;neoplastic  process, and the latter representing most likely a reactive
+;process of an as yet  unknown pathogenesis.
+;[1834..1840]...[1858..1885]:malignancy:"adult-"..."onset indolent
+;mastocytosis"
+;[1848..1885]:malignancy:"childhood-onset indolent mastocytosis"
+(SENT
+  (S
+    (NP-SBJ (DT:[1746..1751] These) (NNS:[1752..1756] data))
+    (ADVP (RB:[1758..1762] thus))
+    (VP (VBP:[1763..1770] provide)
+      (NP
+        (NP (DT:[1771..1772] a) (JJ:[1773..1781] possible)
+            (NN:[1782..1793] explanation))
+        (PP (IN:[1794..1797] for)
+          (NP
+            (NP (DT:[1798..1801] the) (JJ:[1802..1811] divergent)
+                (JJ:[1812..1820] clinical) (NN:[1821..1829] behavior))
+            (PP (IN:[1830..1832] of)
+              (NP
+                (NP
+                  (NML (NN:[1834..1839] adult) (HYPH:[1839..1840] -)
+                    (NML-2 (-NONE-:[1840..1840] *RNR*)))
+                  (NML-3 (-NONE-:[1840..1840] *RNR*)))
+                (PP (IN:[1841..1847] versus)
+                  (NP
+                    (NML (NN:[1848..1857] childhood) (HYPH:[1857..1858] -)
+                      (NML-2 (-NONE-:[1858..1858] *RNR*)))
+                    (NML-3 (-NONE-:[1858..1858] *RNR*))))
+                (NML-2 (NN:[1858..1863] onset))
+                (NML-3 (JJ:[1864..1872] indolent) (NN:[1873..1885] mastocytosis)))))))
+      (,:[1885..1886] ,)
+      (PP (IN:[1887..1891] with)
+        (S-NOM
+          (S
+            (NP-SBJ-1 (DT:[1892..1895] the) (JJ:[1896..1901] first))
+            (VP (VBG:[1902..1907] being)
+              (VP (VBN:[1909..1919] associated)
+                (NP-1 (-NONE-:[1919..1919] *))
+                (PP-CLR (IN:[1920..1924] with)
+                  (NP (DT:[1925..1927] an) (VBG:[1928..1938] activating)
+                      (NN:[1939..1947] mutation)))
+                (,:[1947..1948] ,)
+                (PP
+                  (ADVP (RB:[1949..1957] possibly))
+                  (IN:[1958..1960] as)
+                  (NP
+                    (NP (NN:[1961..1965] part))
+                    (PP (IN:[1966..1968] of)
+                      (NP (DT:[1969..1970] a) (JJ:[1971..1981] neoplastic)
+                          (NN:[1983..1990] process))))))))
+          (,:[1990..1991] ,) (CC:[1992..1995] and)
+          (S
+            (NP-SBJ (DT:[1996..1999] the) (JJ:[2000..2006] latter))
+            (VP (VBG:[2007..2019] representing)
+              (ADVP (RBS:[2020..2024] most) (RB:[2025..2031] likely))
+              (NP
+                (NP (DT:[2032..2033] a) (JJ:[2034..2042] reactive)
+                    (NN:[2043..2050] process))
+                (PP (IN:[2051..2053] of)
+                  (NP (DT:[2054..2056] an)
+                    (ADJP
+                      (ADVP (RB:[2057..2059] as) (RB:[2060..2063] yet))
+                      (JJ:[2065..2072] unknown))
+                    (NN:[2073..2085] pathogenesis)))))))))
+    (.:[2085..2086] .)))
+
+;section 12 Span:2090..2134
+;PMID: 9856847 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2090..2094] PMID) (::[2094..2095] :) (CD:[2096..2103] 9856847)
+        (IN:[2104..2105] -LSB-) (NNP:[2105..2111] PubMed) (HYPH:[2112..2113] -)
+        (JJ:[2114..2121] indexed) (IN:[2122..2125] for)
+        (NNP:[2126..2134] MEDLINE-RSB-)))

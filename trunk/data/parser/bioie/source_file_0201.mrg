@@ -1,0 +1,502 @@
+;PMID: 3017439
+;source_file_2653.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..139] = [t:51..139]
+;2)section:[e:143..190] = [t:143..190]
+;3)sentence:[e:194..477] = [t:194..477]
+;4)sentence:[e:478..591] = [t:478..591]
+;5)sentence:[e:592..694] = [t:592..694]
+;6)sentence:[e:695..1028] = [t:695..1028]
+;7)sentence:[e:1029..1263] = [t:1029..1263]
+;8)sentence:[e:1264..1354] = [t:1264..1354]
+;9)sentence:[e:1355..1497] = [t:1355..1497]
+;10)sentence:[e:1498..1603] = [t:1498..1603]
+;11)sentence:[e:1604..1840] = [t:1604..1840]
+;12)sentence:[e:1841..1966] = [t:1841..1966]
+;13)sentence:[e:1967..2055] = [t:1967..2055]
+;14)section:[e:2059..2103] = [t:2059..2103]
+
+;section 0 Span:0..45
+;Biochim Biophys Acta. 1986 Aug 29;888(1):1-9.
+(SEC
+  (FRAG (NNP:[0..7] Biochim) (NNP:[8..15] Biophys) (NNP:[16..20] Acta)
+        (.:[20..21] .) (CD:[22..26] 1986) (NNP:[27..30] Aug)
+        (CD:[31..37] 29;888) (-LRB-:[37..38] -LRB-) (CD:[38..39] 1)
+        (-RRB-:[39..40] -RRB-) (::[40..41] :) (CD:[41..42] 1) (HYPH:[42..43] -)
+        (CD:[43..45] 9.)))
+
+;sentence 1 Span:51..139
+;Detection of free radicals as a consequence of rat intestinal cellular drug 
+;metabolism.
+;[69..77]:substance:"radicals"
+;[122..126]:substance:"drug"
+(SENT
+  (NP-SBJ
+    (NP (NN:[51..60] Detection))
+    (PP (IN:[61..63] of)
+      (NP (JJ:[64..68] free) (NNS:[69..77] radicals)))
+    (PP (IN:[78..80] as)
+      (NP
+        (NP (DT:[81..82] a) (NN:[83..94] consequence))
+        (PP (IN:[95..97] of)
+          (NP (NN:[98..101] rat) (JJ:[102..112] intestinal)
+              (JJ:[113..121] cellular) (NN:[122..126] drug)
+              (NN:[128..138] metabolism)))))
+    (.:[138..139] .)))
+
+;section 2 Span:143..190
+;Mansbach CM 2nd, Rosen GM, Rahn CA, Strauss KE.
+(SEC
+  (FRAG (NNP:[143..151] Mansbach) (NNP:[152..154] CM) (CD:[155..158] 2nd)
+        (,:[158..159] ,) (NNP:[160..165] Rosen) (NNP:[166..168] GM)
+        (,:[168..169] ,) (NNP:[170..174] Rahn) (NNP:[175..177] CA)
+        (,:[177..178] ,) (NNP:[179..186] Strauss) (NNP:[187..190] KE.)))
+
+;sentence 3 Span:194..477
+;Because the intestine is the first pass organ for orally administered drugs
+;and  because some of these drugs are known to undergo oxidative metabolism
+;leading to  the formation of free radicals, we investigated the potential for
+;this to occur  in cell suspensions of rat enterocytes.
+;[264..269]:substance:"drugs"
+;[297..302]:substance:"drugs"
+;[379..387]:substance:"radicals"
+(SENT
+  (S
+    (SBAR-PRD
+      (SBAR (IN:[194..201] Because)
+        (S
+          (NP-SBJ (DT:[202..205] the) (NN:[206..215] intestine))
+          (VP (VBZ:[216..218] is)
+            (NP-PRD
+              (NP (DT:[219..222] the)
+                (NML (JJ:[223..228] first) (NN:[229..233] pass))
+                (NN:[234..239] organ))
+              (PP (IN:[240..243] for)
+                (NP
+                  (ADJP (RB:[244..250] orally) (VBN:[251..263] administered))
+                  (NNS:[264..269] drugs)))))))
+      (CC:[270..273] and)
+      (SBAR (IN:[275..282] because)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[283..287] some))
+            (PP (IN:[288..290] of)
+              (NP (DT:[291..296] these) (NNS:[297..302] drugs))))
+          (VP (VBP:[303..306] are)
+            (VP (VBN:[307..312] known)
+              (S
+                (NP-SBJ-1 (-NONE-:[312..312] *))
+                (VP (TO:[313..315] to)
+                  (VP (VB:[316..323] undergo)
+                    (NP
+                      (NP (JJ:[324..333] oxidative) (NN:[334..344] metabolism))
+                      (VP (VBG:[345..352] leading)
+                        (PP-CLR (TO:[353..355] to)
+                          (NP
+                            (NP (DT:[357..360] the) (NN:[361..370] formation))
+                            (PP (IN:[371..373] of)
+                              (NP (JJ:[374..378] free) (NNS:[379..387] radicals)))))))))))))))
+    (,:[387..388] ,)
+    (NP-SBJ (PRP:[389..391] we))
+    (VP (VBD:[392..404] investigated)
+      (NP (DT:[405..408] the) (NN:[409..418] potential)
+        (SBAR (IN:[419..422] for)
+          (S
+            (NP-SBJ (DT:[423..427] this))
+            (VP (TO:[428..430] to)
+              (VP (VB:[431..436] occur)
+                (PP-LOC (IN:[438..440] in)
+                  (NP
+                    (NP (NN:[441..445] cell) (NNS:[446..457] suspensions))
+                    (PP (IN:[458..460] of)
+                      (NP (NN:[461..464] rat) (NNS:[465..476] enterocytes)))))))))))
+    (.:[476..477] .)))
+
+;sentence 4 Span:478..591
+;As part of our study, the effect of  intracellularly produced superoxide on
+;cellular metabolism was investigated.
+;[540..550]:substance:"superoxide"
+(SENT
+  (S
+    (PP (IN:[478..480] As)
+      (NP
+        (NP (NN:[481..485] part))
+        (PP (IN:[486..488] of)
+          (NP (PRP$:[489..492] our) (NN:[493..498] study)))))
+    (,:[498..499] ,)
+    (NP-SBJ-1
+      (NP (DT:[500..503] the) (NN:[504..510] effect))
+      (PP (IN:[511..513] of)
+        (NP
+          (ADJP (RB:[515..530] intracellularly) (VBN:[531..539] produced))
+          (NN:[540..550] superoxide)))
+      (PP (IN:[551..553] on)
+        (NP (JJ:[554..562] cellular) (NN:[563..573] metabolism))))
+    (VP (VBD:[574..577] was)
+      (VP (VBN:[578..590] investigated)
+        (NP-1 (-NONE-:[590..590] *))))
+    (.:[590..591] .)))
+
+;sentence 5 Span:592..694
+;The  drugs chosen were the quinone, menadione and the aromatic
+;nitro-containing  compound, nitrazepam.
+;[597..602]:substance:"drugs"
+;[619..626]:substance:"quinone"
+;[628..637]:substance:"menadione"
+;[646..681]:substance:"aromatic nitro-containing  compound"
+;[683..693]:substance:"nitrazepam"
+(SENT
+  (S
+    (NP-SBJ
+      (NP-1 (DT:[592..595] The) (NNS:[597..602] drugs))
+      (VP (VBN:[603..609] chosen)
+        (NP-1 (-NONE-:[609..609] *))))
+    (VP (VBD:[610..614] were)
+      (NP-PRD
+        (NP
+          (NP (DT:[615..618] the) (NN:[619..626] quinone))
+          (,:[626..627] ,)
+          (NP (NN:[628..637] menadione)))
+        (CC:[638..641] and)
+        (NP
+          (NP (DT:[642..645] the)
+             (JJ:[646..654] aromatic)
+            (ADJP (NN:[655..660] nitro) (HYPH:[660..661] -)
+                  (VBG:[661..671] containing))
+            (NN:[673..681] compound))
+          (,:[681..682] ,)
+          (NP (NN:[683..693] nitrazepam)))))
+    (.:[693..694] .)))
+
+;sentence 6 Span:695..1028
+;On incubation of both drugs with isolated enterocytes and  the spin trap,
+;5,5-dimethyl-1-pyrroline N-oxide (DMPO), rapid appearance of an  electron
+;paramagnetic resonance (EPR) spectrum was recorded which was  characteristic
+;of hydroxyl radicals being spin trapped by DMPO giving 
+;2,2-dimethyl-5-hydroxy-1-pyrrolidenyloxyl (DMPO-OH).
+;[717..722]:substance:"drugs"
+;[769..801]:substance:"5,5-dimethyl-1-pyrroline N-oxide"
+;[803..807]:substance:"DMPO"
+;[923..940]:substance:"hydroxyl radicals"
+;[963..967]:substance:"DMPO"
+;[976..1017]:substance:"2,2-dimethyl-5-hydroxy-1-pyrrolidenyloxyl"
+;[1019..1026]:substance:"DMPO-OH"
+(SENT
+  (S
+    (PP (IN:[695..697] On)
+      (NP
+        (NP (NN:[698..708] incubation))
+        (PP (IN:[709..711] of)
+          (NP (DT:[712..716] both) (NNS:[717..722] drugs)))
+        (PP (IN:[723..727] with)
+          (NP
+            (NP (VBN:[728..736] isolated) (NNS:[737..748] enterocytes))
+            (CC:[749..752] and)
+            (NP
+              (NP (DT:[754..757] the) (NN:[758..762] spin) (NN:[763..767] trap))
+              (,:[767..768] ,)
+              (NP
+                (NP (NN:[769..793] 5,5-dimethyl-1-pyrroline)
+                    (NN:[794..801] N-oxide))
+                (NP (-LRB-:[802..803] -LRB-) (NN:[803..807] DMPO)
+                    (-RRB-:[807..808] -RRB-))))))))
+    (,:[808..809] ,)
+    (NP-SBJ-3
+      (NP
+        (NP (JJ:[810..815] rapid) (NN:[816..826] appearance))
+        (PP (IN:[827..829] of)
+          (NP (DT:[830..832] an)
+            (NML
+              (NML (NN:[834..842] electron) (JJ:[843..855] paramagnetic)
+                   (NN:[856..865] resonance))
+              (NML (-LRB-:[866..867] -LRB-) (NN:[867..870] EPR)
+                   (-RRB-:[870..871] -RRB-)))
+            (NN:[872..880] spectrum))))
+      (SBAR-2 (-NONE-:[880..880] *ICH*)))
+    (VP (VBD:[881..884] was)
+      (VP (VBN:[885..893] recorded)
+        (NP-3 (-NONE-:[893..893] *))
+        (SBAR-2
+          (WHNP-1 (WDT:[894..899] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[899..899] *T*))
+            (VP (VBD:[900..903] was)
+              (ADJP-PRD (JJ:[905..919] characteristic)
+                (PP (IN:[920..922] of)
+                  (S-NOM
+                    (NP-SBJ (NN:[923..931] hydroxyl) (NNS:[932..940] radicals))
+                    (VP (VBG:[941..946] being)
+                      (VP (NN:[947..951] spin) (VBN:[952..959] trapped)
+                        (NP (-NONE-:[959..959] *))
+                        (PP (IN:[960..962] by)
+                          (NP-LGS (NN:[963..967] DMPO)))
+                        (S-ADV
+                          (NP-SBJ (-NONE-:[967..967] *))
+                          (VP (VBG:[968..974] giving)
+                            (NP
+                              (NP
+                                  (NN:[976..1017] 2,2-dimethyl-5-hydroxy-1-pyrrolidenyloxyl))
+                              (NP (-LRB-:[1018..1019] -LRB-)
+                                  (NN:[1019..1026] DMPO-OH)
+                                  (-RRB-:[1026..1027] -RRB-)))))))))))))))
+    (.:[1027..1028] .)))
+
+;sentence 7 Span:1029..1263
+;Experiments were conducted  which determined that the EPR spectrum of DMPO-OH
+;resulted from the initial spin  trapping of superoxide by DMPO to yield the
+;corresponding nitroxide,  2,2-dimethyl-5-hydroxyl-1-pyrrolidenyloxyl
+;(DMPO-OOH).
+;[1099..1106]:substance:"DMPO-OH"
+;[1151..1161]:substance:"superoxide"
+;[1165..1169]:substance:"DMPO"
+;[1197..1206]:substance:"nitroxide"
+;[1209..1251]:substance:"2,2-dimethyl-5-hydroxyl-1-pyrrolidenyloxyl"
+;[1253..1261]:substance:"DMPO-OOH"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[1029..1040] Experiments))
+      (SBAR-3 (-NONE-:[1040..1040] *ICH*)))
+    (VP (VBD:[1041..1045] were)
+      (VP (VBN:[1046..1055] conducted)
+        (NP-2 (-NONE-:[1055..1055] *T*))
+        (SBAR-3
+          (WHNP-1 (WDT:[1057..1062] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1062..1062] *T*))
+            (VP (VBD:[1063..1073] determined)
+              (SBAR (IN:[1074..1078] that)
+                (S
+                  (NP-SBJ
+                    (NP (DT:[1079..1082] the) (NN:[1083..1086] EPR)
+                        (NN:[1087..1095] spectrum))
+                    (PP (IN:[1096..1098] of)
+                      (NP (NN:[1099..1106] DMPO-OH))))
+                  (VP (VBD:[1107..1115] resulted)
+                    (PP-CLR (IN:[1116..1120] from)
+                      (NP
+                        (NP (DT:[1121..1124] the) (JJ:[1125..1132] initial)
+                            (NN:[1133..1137] spin) (NN:[1139..1147] trapping))
+                        (PP (IN:[1148..1150] of)
+                          (NP (NN:[1151..1161] superoxide)))
+                        (PP (IN:[1162..1164] by)
+                          (NP (NN:[1165..1169] DMPO)))))))))))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1169..1169] *))
+          (VP (TO:[1170..1172] to)
+            (VP (VB:[1173..1178] yield)
+              (NP
+                (NP (DT:[1179..1182] the) (VBG:[1183..1196] corresponding)
+                    (NN:[1197..1206] nitroxide))
+                (,:[1206..1207] ,)
+                (NP
+                  (NP
+                      (NN:[1209..1251] 2,2-dimethyl-5-hydroxyl-1-pyrrolidenyloxyl))
+                  (NP (-LRB-:[1252..1253] -LRB-) (NN:[1253..1261] DMPO-OOH)
+                      (-RRB-:[1261..1262] -RRB-)))))))))
+    (.:[1262..1263] .)))
+
+;sentence 8 Span:1264..1354
+;Bioreduction of DMPO-OOH  by glutathione peroxidase led to the rapid
+;formation of DMPO-OH.
+;[1280..1288]:substance:"DMPO-OOH"
+;[1293..1315]:substance:"glutathione peroxidase"
+;[1346..1353]:substance:"DMPO-OH"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1264..1276] Bioreduction))
+      (PP (IN:[1277..1279] of)
+        (NP (NN:[1280..1288] DMPO-OOH)))
+      (PP (IN:[1290..1292] by)
+        (NP (NN:[1293..1304] glutathione) (NN:[1305..1315] peroxidase))))
+    (VP (VBD:[1316..1319] led)
+      (PP-CLR (TO:[1320..1322] to)
+        (NP
+          (NP (DT:[1323..1326] the) (JJ:[1327..1332] rapid)
+              (NN:[1333..1342] formation))
+          (PP (IN:[1343..1345] of)
+            (NP (NN:[1346..1353] DMPO-OH))))))
+    (.:[1353..1354] .)))
+
+;sentence 9 Span:1355..1497
+;We believe this  enzymic pathway accounted for the EPR spectrum noted in
+;incubations with either  drug in the presence of the spin trap, DMPO.
+;[1453..1457]:substance:"drug"
+;[1492..1496]:substance:"DMPO"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1355..1357] We))
+    (VP (VBP:[1358..1365] believe)
+      (SBAR (-NONE-:[1365..1365] 0)
+        (S
+          (NP-SBJ (DT:[1366..1370] this) (JJ:[1372..1379] enzymic)
+                  (NN:[1380..1387] pathway))
+          (VP (VBD:[1388..1397] accounted)
+            (PP-CLR (IN:[1398..1401] for)
+              (NP
+                (NP-1 (DT:[1402..1405] the) (NN:[1406..1409] EPR)
+                      (NN:[1410..1418] spectrum))
+                (VP (VBN:[1419..1424] noted)
+                  (NP-1 (-NONE-:[1424..1424] *))
+                  (PP (IN:[1425..1427] in)
+                    (NP
+                      (NP (NNS:[1428..1439] incubations))
+                      (PP (IN:[1440..1444] with)
+                        (NP (DT:[1445..1451] either) (NN:[1453..1457] drug)))
+                      (PP (IN:[1458..1460] in)
+                        (NP
+                          (NP (DT:[1461..1464] the) (NN:[1465..1473] presence))
+                          (PP (IN:[1474..1476] of)
+                            (NP
+                              (NP (DT:[1477..1480] the) (NN:[1481..1485] spin)
+                                  (NN:[1486..1490] trap))
+                              (,:[1490..1491] ,)
+                              (NP (NN:[1492..1496] DMPO)))))))))))))))
+    (.:[1496..1497] .)))
+
+;sentence 10 Span:1498..1603
+;The incubation of enterocytes with  both drugs did not mediate release of
+;51Cr nor lactate dehydrogenase.
+;[1539..1544]:substance:"drugs"
+;[1572..1576]:substance:"51Cr"
+;[1581..1602]:substance:"lactate dehydrogenase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1498..1501] The) (NN:[1502..1512] incubation))
+      (PP (IN:[1513..1515] of)
+        (NP (NNS:[1516..1527] enterocytes)))
+      (PP (IN:[1528..1532] with)
+        (NP (DT:[1534..1538] both) (NNS:[1539..1544] drugs))))
+    (VP (VBD:[1545..1548] did) (RB:[1549..1552] not)
+      (VP (VB:[1553..1560] mediate)
+        (NP
+          (NP (NN:[1561..1568] release))
+          (PP (IN:[1569..1571] of)
+            (NP
+              (NP (NN:[1572..1576] 51Cr))
+              (CC:[1577..1580] nor)
+              (NP (NN:[1581..1588] lactate) (NN:[1589..1602] dehydrogenase)))))))
+    (.:[1602..1603] .)))
+
+;sentence 11 Span:1604..1840
+;However,  production of 14CO2 from [14C]glucose was severely inhibited
+;(4-5-fold) in the  presence of both drugs, while the incorporation of
+;[14C]leucine into  trichloroacetic acid precipitable protein was antagonized
+;by menadione only.
+;[1628..1633]:substance:"14CO2"
+;[1639..1651]:substance:"[14C]glucose"
+;[1676..1684]:quantitative-value:"4-5-fold"
+;[1711..1716]:substance:"drugs"
+;[1745..1757]:substance:"[14C]leucine"
+;[1764..1784]:substance:"trichloroacetic acid"
+;[1798..1805]:substance:"protein"
+;[1825..1834]:substance:"menadione"
+(SENT
+  (S
+    (ADVP (RB:[1604..1611] However))
+    (,:[1611..1612] ,)
+    (NP-SBJ-2
+      (NP (NN:[1614..1624] production))
+      (PP (IN:[1625..1627] of)
+        (NP (NN:[1628..1633] 14CO2)))
+      (PP (IN:[1634..1638] from)
+        (NP (NN:[1639..1651] -LSB-14C-RSB-glucose))))
+    (VP (VBD:[1652..1655] was)
+      (ADVP (RB:[1656..1664] severely))
+      (VP (VBN:[1665..1674] inhibited)
+        (NP-2 (-NONE-:[1674..1674] *))
+        (PRN (-LRB-:[1675..1676] -LRB-)
+          (ADVP-EXT
+            (QP (CD:[1676..1677] 4) (HYPH:[1677..1678] -) (CD:[1678..1679] 5))
+            (HYPH:[1679..1680] -) (RB:[1680..1684] fold))
+          (-RRB-:[1684..1685] -RRB-))
+        (PP-LOC (IN:[1686..1688] in)
+          (NP
+            (NP (DT:[1689..1692] the) (NN:[1694..1702] presence))
+            (PP (IN:[1703..1705] of)
+              (NP (DT:[1706..1710] both) (NNS:[1711..1716] drugs)))))
+        (,:[1716..1717] ,)
+        (SBAR-ADV (IN:[1718..1723] while)
+          (S
+            (NP-SBJ-1
+              (NP (DT:[1724..1727] the) (NN:[1728..1741] incorporation))
+              (PP (IN:[1742..1744] of)
+                (NP (NN:[1745..1757] -LSB-14C-RSB-leucine)))
+              (PP (IN:[1758..1762] into)
+                (NP
+                  (ADJP
+                    (NML (JJ:[1764..1779] trichloroacetic)
+                         (NN:[1780..1784] acid))
+                    (JJ:[1785..1797] precipitable))
+                  (NN:[1798..1805] protein))))
+            (VP (VBD:[1806..1809] was)
+              (VP (VBN:[1810..1821] antagonized)
+                (NP-1 (-NONE-:[1821..1821] *))
+                (PP (IN:[1822..1824] by)
+                  (NP-LGS (NN:[1825..1834] menadione)
+                    (ADVP (RB:[1835..1839] only))))))))))
+    (.:[1839..1840] .)))
+
+;sentence 12 Span:1841..1966
+;We  conclude that superoxide can be demonstrated to arise as the result of 
+;enterocyte metabolism of menadione or nitrazepam.
+;[1859..1869]:substance:"superoxide"
+;[1942..1951]:substance:"menadione"
+;[1955..1965]:substance:"nitrazepam"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1841..1843] We))
+    (VP (VBP:[1845..1853] conclude)
+      (SBAR (IN:[1854..1858] that)
+        (S
+          (NP-SBJ-1 (NN:[1859..1869] superoxide))
+          (VP (MD:[1870..1873] can)
+            (VP (VB:[1874..1876] be)
+              (VP (VBN:[1877..1889] demonstrated)
+                (S
+                  (NP-SBJ-1 (-NONE-:[1889..1889] *))
+                  (VP (TO:[1890..1892] to)
+                    (VP (VB:[1893..1898] arise)
+                      (PP-MNR (IN:[1899..1901] as)
+                        (NP
+                          (NP (DT:[1902..1905] the) (NN:[1906..1912] result))
+                          (PP (IN:[1913..1915] of)
+                            (NP
+                              (NP (NN:[1917..1927] enterocyte)
+                                  (NN:[1928..1938] metabolism))
+                              (PP (IN:[1939..1941] of)
+                                (NP (NN:[1942..1951] menadione)
+                                    (CC:[1952..1954] or)
+                                    (NN:[1955..1965] nitrazepam))))))))))))))))
+    (.:[1965..1966] .)))
+
+;sentence 13 Span:1967..2055
+;The consequence of oxidative  metabolism of these drugs results in cellular
+;dysfunction.
+;[2017..2022]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1967..1970] The) (NN:[1971..1982] consequence))
+      (PP (IN:[1983..1985] of)
+        (NP
+          (NP (JJ:[1986..1995] oxidative) (NN:[1997..2007] metabolism))
+          (PP (IN:[2008..2010] of)
+            (NP (DT:[2011..2016] these) (NNS:[2017..2022] drugs))))))
+    (VP (VBZ:[2023..2030] results)
+      (PP-CLR (IN:[2031..2033] in)
+        (NP (JJ:[2034..2042] cellular) (NN:[2043..2054] dysfunction))))
+    (.:[2054..2055] .)))
+
+;section 14 Span:2059..2103
+;PMID: 3017439 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2059..2063] PMID) (::[2063..2064] :) (CD:[2065..2072] 3017439)
+        (NN:[2073..2074] -LSB-) (NNP:[2074..2080] PubMed) (::[2081..2082] -)
+        (NN:[2083..2090] indexed) (IN:[2091..2094] for)
+        (NNP:[2095..2103] MEDLINE-RSB-)))

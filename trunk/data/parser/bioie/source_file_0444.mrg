@@ -1,0 +1,373 @@
+;PMID: 8431360
+;source_file_635.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:40..125] = [t:40..125]
+;2)section:[e:129..170] = [t:129..170]
+;3)section:[e:174..246] = [t:174..246]
+;4)sentence:[e:250..379] = [t:250..379]
+;5)sentence:[e:380..572] = [t:380..572]
+;6)sentence:[e:574..671] = [t:574..671]
+;7)sentence:[e:672..784] = [t:672..784]
+;8)sentence:[e:785..922] = [t:785..922]
+;9)sentence:[e:923..1108] = [t:923..1108]
+;10)sentence:[e:1109..1197] = [t:1109..1197]
+;11)sentence:[e:1198..1336] = [t:1198..1336]
+;12)sentence:[e:1337..1412] = [t:1337..1412]
+;13)sentence:[e:1413..1513] = [t:1413..1513]
+;14)section:[e:1517..1561] = [t:1517..1561]
+
+;section 0 Span:0..34
+;Br J Cancer. 1993 Feb;67(2):321-5.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..11] Cancer) (.:[11..12] .)
+        (CD:[13..17] 1993) (CC:[18..23] Feb;6) (CD:[23..24] 7)
+        (NN:[24..25] -LRB-) (NN:[25..26] 2) (NN:[26..27] -RRB-) (VBZ:[27..28] :)
+        (CD:[28..30] 32) (CD:[30..33] 1-5) (.:[33..34] .)))
+
+;sentence 1 Span:40..125
+;Metabolism of the bioreductive cytotoxin SR 4233 by tumour cells: enzymatic 
+;studies.
+;[71..80]:substance:"cytotoxin"
+;[81..88]:substance:"SR 4233"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[40..50] Metabolism))
+      (PP (IN:[51..53] of)
+        (NP
+          (NP (DT:[54..57] the) (JJ:[58..70] bioreductive)
+              (NN:[71..80] cytotoxin))
+          (NP (NN:[81..83] SR) (CD:[84..88] 4233))))
+      (PP (IN:[89..91] by)
+        (NP (NN:[92..98] tumour) (NNS:[99..104] cells))))
+    (::[104..105] :)
+    (NP (JJ:[106..115] enzymatic) (NNS:[117..124] studies))
+    (.:[124..125] .)))
+
+;section 2 Span:129..170
+;Wang J, Biedermann KA, Wolf CR, Brown JM.
+(SEC
+  (FRAG (NNP:[129..133] Wang) (NNP:[134..136] J,) (NNP:[137..147] Biedermann)
+        (NNP:[148..150] KA) (,:[150..151] ,) (NNP:[152..156] Wolf)
+        (NNP:[157..159] CR) (,:[159..160] ,) (NNP:[161..166] Brown)
+        (NNP:[167..169] JM) (.:[169..170] .)))
+
+;section 3 Span:174..246
+;Department of Radiation Oncology, Stanford University, California 94305.
+(SEC
+  (FRAG (NNP:[174..184] Department) (IN:[185..187] of)
+        (NNP:[188..197] Radiation) (NNP:[198..206] Oncology) (,:[206..207] ,)
+        (NNP:[208..216] Stanford) (NNP:[217..227] University) (,:[227..228] ,)
+        (NNP:[229..239] California) (CD:[240..245] 94305) (.:[245..246] .)))
+
+;sentence 4 Span:250..379
+;SR 4233 (3-amino-1,2,4-benzotriazine 1,4-dioxide) is an anti-tumour agent
+;that  has a highly selective toxicity to hypoxic cells.
+;[250..257]:substance:"SR 4233"
+;[259..298]:substance:"3-amino-1,2,4-benzotriazine 1,4-dioxide"
+;[318..323]:substance:"agent"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[250..252] SR) (CD:[253..257] 4233))
+      (NP (-LRB-:[258..259] -LRB-)
+         (NN:[259..286] 3-amino-1,2,4-benzotriazine) (NN:[287..298] 1,4-dioxide)
+        (-RRB-:[298..299] -RRB-)))
+    (VP (VBZ:[300..302] is)
+      (NP-PRD
+        (NP (DT:[303..305] an)
+          (NML (AFX:[306..310] anti) (HYPH:[310..311] -) (NN:[311..317] tumour))
+          (NN:[318..323] agent))
+        (SBAR
+          (WHNP-1 (WDT:[324..328] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[328..328] *T*))
+            (VP (VBZ:[330..333] has)
+              (NP
+                (NP (DT:[334..335] a)
+                  (ADJP (RB:[336..342] highly) (JJ:[343..352] selective))
+                  (NN:[353..361] toxicity))
+                (PP (TO:[362..364] to)
+                  (NP (JJ:[365..372] hypoxic) (NNS:[373..378] cells)))))))))
+    (.:[378..379] .)))
+
+;sentence 5 Span:380..572
+;In this study we delineate the  role of several different bioreductive
+;enzymes in the metabolism of SR 4233 by  two tumour cell lines HT 1080 (human
+;fibrosarcoma) and SCCVII (mouse carcinoma).
+;[451..458]:substance:"enzymes"
+;[480..487]:substance:"SR 4233"
+(SENT
+  (S
+    (PP-LOC (IN:[380..382] In)
+      (NP (DT:[383..387] this) (NN:[388..393] study)))
+    (NP-SBJ (PRP:[394..396] we))
+    (VP (VBP:[397..406] delineate)
+      (NP (DT:[407..410] the) (NN:[412..416] role))
+      (PP (IN:[417..419] of)
+        (NP (JJ:[420..427] several) (JJ:[428..437] different)
+            (JJ:[438..450] bioreductive) (NNS:[451..458] enzymes)))
+      (PP (IN:[459..461] in)
+        (NP
+          (NP (DT:[462..465] the) (NN:[466..476] metabolism))
+          (PP (IN:[477..479] of)
+            (NP (NN:[480..482] SR) (CD:[483..487] 4233)))
+          (PP (IN:[488..490] by)
+            (NP
+              (NP (CD:[492..495] two) (NN:[496..502] tumour)
+                  (NN:[503..507] cell) (NNS:[508..513] lines))
+              (NP
+                (NP (NN:[514..516] HT) (CD:[517..521] 1080)
+                  (PRN (-LRB-:[522..523] -LRB-)
+                    (NP (JJ:[523..528] human) (NN:[529..541] fibrosarcoma))
+                    (-RRB-:[541..542] -RRB-)))
+                (CC:[543..546] and)
+                (NP (NN:[547..553] SCCVII)
+                  (PRN (-LRB-:[554..555] -LRB-)
+                    (NP (NN:[555..560] mouse) (NN:[561..570] carcinoma))
+                    (-RRB-:[570..571] -RRB-)))))))))
+    (.:[571..572] .)))
+
+;sentence 6 Span:574..671
+;Enzyme kinetics demonstrates similar KM of HT 1080 and SCCVII cell sonicates
+;and  differing Vmax.
+;[574..580]:substance:"Enzyme"
+;[611..613]:quantitative-name:"KM"
+;[666..670]:quantitative-name:"Vmax"
+(SENT
+  (S
+    (NP-SBJ (NN:[574..580] Enzyme) (NN:[581..589] kinetics))
+    (VP (VBZ:[590..602] demonstrates)
+      (NP
+        (NP
+          (NP (JJ:[603..610] similar) (NN:[611..613] KM))
+          (PP (IN:[614..616] of)
+            (NP
+              (NP
+                (NML (NN:[617..619] HT) (CD:[620..624] 1080))
+                (NML-1 (-NONE-:[624..624] *P*)))
+              (CC:[625..628] and)
+              (NP (NN:[629..635] SCCVII)
+                (NML-1 (NN:[636..640] cell) (NNS:[641..650] sonicates))))))
+        (CC:[651..654] and)
+        (NP (JJ:[656..665] differing) (NN:[666..670] Vmax))))
+    (.:[670..671] .)))
+
+;sentence 7 Span:672..784
+;Among all cofactors tested, NADPH was the most important one in  reducing SR
+;4233 by both tumour cell sonicates.
+;[682..691]:substance:"cofactors"
+;[700..705]:substance:"NADPH"
+;[746..753]:substance:"SR 4233"
+(SENT
+  (S
+    (PP (IN:[672..677] Among)
+      (NP
+        (NP (DT:[678..681] all) (NNS:[682..691] cofactors))
+        (VP (VBN:[692..698] tested)
+          (NP (-NONE-:[698..698] *)))))
+    (,:[698..699] ,)
+    (NP-SBJ (NN:[700..705] NADPH))
+    (VP (VBD:[706..709] was)
+      (NP-PRD
+        (NP (DT:[710..713] the)
+          (ADJP (RBS:[714..718] most) (JJ:[719..728] important))
+          (NN:[729..732] one))
+        (PP (IN:[733..735] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[735..735] *))
+            (VP (VBG:[737..745] reducing)
+              (NP (NN:[746..748] SR) (CD:[749..753] 4233))
+              (PP (IN:[754..756] by)
+                (NP (DT:[757..761] both)
+                  (NML (NN:[762..768] tumour) (NN:[769..773] cell))
+                  (NNS:[774..783] sonicates))))))))
+    (.:[783..784] .)))
+
+;sentence 8 Span:785..922
+;NADH was the second most  important cofactor while hypoxanthine and
+;N-methylnicotinamide were less  involved in the reduction of SR 4233.
+;[785..789]:substance:"NADH"
+;[821..829]:substance:"cofactor"
+;[836..848]:substance:"hypoxanthine"
+;[853..873]:substance:"N-methylnicotinamide"
+;[914..921]:substance:"SR 4233"
+(SENT
+  (S
+    (NP-SBJ (NN:[785..789] NADH))
+    (VP (VBD:[790..793] was)
+      (NP-PRD (DT:[794..797] the)
+        (ADJP
+          (ADVP (RB:[798..804] second) (RBS:[805..809] most))
+          (JJ:[811..820] important))
+        (NN:[821..829] cofactor))
+      (SBAR-ADV (IN:[830..835] while)
+        (S
+          (NP-SBJ (NN:[836..848] hypoxanthine) (CC:[849..852] and)
+                  (NN:[853..873] N-methylnicotinamide))
+          (VP (VBD:[874..878] were)
+            (ADJP-PRD (RBR:[879..883] less) (JJ:[885..893] involved)
+              (PP (IN:[894..896] in)
+                (NP
+                  (NP (DT:[897..900] the) (NN:[901..910] reduction))
+                  (PP (IN:[911..913] of)
+                    (NP (NN:[914..916] SR) (CD:[917..921] 4233))))))))))
+    (.:[921..922] .)))
+
+;sentence 9 Span:923..1108
+;Carbon monoxide inhibited the reduction by  about 60% suggesting that
+;cytochrome P-450 may play a major role in the  reduction of SR 4233 under
+;hypoxia in both SCCVII and HT 1080 cells.
+;[923..938]:substance:"Carbon monoxide"
+;[973..976]:quantitative-value:"60%"
+;[993..1009]:cyp450:"cytochrome P-450"
+;[1053..1060]:substance:"SR 4233"
+(SENT
+  (S
+    (NP-SBJ (NN:[923..929] Carbon) (NN:[930..938] monoxide))
+    (VP (VBD:[939..948] inhibited)
+      (NP (DT:[949..952] the) (NN:[953..962] reduction))
+      (PP-EXT (IN:[963..965] by)
+        (NP
+          (QP (RB:[967..972] about) (CD:[973..975] 60))
+          (NN:[975..976] %)))
+      (S-ADV
+        (NP-SBJ (-NONE-:[976..976] *))
+        (VP (VBG:[977..987] suggesting)
+          (SBAR (IN:[988..992] that)
+            (S
+              (NP-SBJ (NN:[993..1003] cytochrome) (NN:[1004..1009] P-450))
+              (VP (MD:[1010..1013] may)
+                (VP (VB:[1014..1018] play)
+                  (NP (DT:[1019..1020] a) (JJ:[1021..1026] major)
+                      (NN:[1027..1031] role))
+                  (PP (IN:[1032..1034] in)
+                    (NP
+                      (NP (DT:[1035..1038] the) (NN:[1040..1049] reduction))
+                      (PP (IN:[1050..1052] of)
+                        (NP (NN:[1053..1055] SR) (CD:[1056..1060] 4233)))
+                      (PP (IN:[1061..1066] under)
+                        (NP (NN:[1067..1074] hypoxia)))))
+                  (PP-LOC (IN:[1075..1077] in)
+                    (NP (CC:[1078..1082] both)
+                      (NP (NN:[1083..1089] SCCVII)
+                        (NML-1 (-NONE-:[1089..1089] *P*)))
+                      (CC:[1090..1093] and)
+                      (NP
+                        (NML (NN:[1094..1096] HT) (CD:[1097..1101] 1080))
+                        (NML-1 (NNS:[1102..1107] cells))))))))))))
+    (.:[1107..1108] .)))
+
+;sentence 10 Span:1109..1197
+;DT  diaphorase is also involved, particularly in HT 1080 cells, in this drug 
+;reduction.
+;[1109..1123]:substance:"DT  diaphorase"
+;[1181..1185]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1109..1111] DT) (NN:[1113..1123] diaphorase))
+    (VP (VBZ:[1124..1126] is)
+      (VP
+        (ADVP (RB:[1127..1131] also))
+        (JJ:[1132..1140] involved)
+        (NP-1 (-NONE-:[1140..1140] *))
+        (,:[1140..1141] ,)
+        (PP
+          (ADVP (RB:[1142..1154] particularly))
+          (IN:[1155..1157] in)
+          (NP
+            (NML (NN:[1158..1160] HT) (CD:[1161..1165] 1080))
+            (NNS:[1166..1171] cells)))
+        (,:[1171..1172] ,)
+        (PP-CLR (IN:[1173..1175] in)
+          (NP (DT:[1176..1180] this) (NN:[1181..1185] drug)
+              (NN:[1187..1196] reduction)))))
+    (.:[1196..1197] .)))
+
+;sentence 11 Span:1198..1336
+;The level of functional cytochrome P-450, cytochrome P-450 reductase 
+;activity and DT diaphorase activity in both cell lines were assayed.
+;[1222..1238]:cyp450:"cytochrome P-450"
+;[1240..1266]:cyp450:"cytochrome P-450 reductase"
+;[1281..1294]:substance:"DT diaphorase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1198..1201] The) (NN:[1202..1207] level))
+      (PP (IN:[1208..1210] of)
+        (NP
+          (NP (JJ:[1211..1221] functional)
+             (NN:[1222..1232] cytochrome) (NN:[1233..1238] P-450))
+          (,:[1238..1239] ,)
+          (NP
+            (NML
+              (NML (NN:[1240..1250] cytochrome) (NN:[1251..1256] P-450))
+              (NN:[1257..1266] reductase))
+            (NN:[1268..1276] activity))
+          (CC:[1277..1280] and)
+          (NP
+            (NML (NN:[1281..1283] DT) (NN:[1284..1294] diaphorase))
+            (NN:[1295..1303] activity))))
+      (PP-LOC (IN:[1304..1306] in)
+        (NP (DT:[1307..1311] both) (NN:[1312..1316] cell)
+            (NNS:[1317..1322] lines))))
+    (VP (VBD:[1323..1327] were)
+      (VP (VBN:[1328..1335] assayed)
+        (NP-1 (-NONE-:[1335..1335] *))))
+    (.:[1335..1336] .)))
+
+;sentence 12 Span:1337..1412
+;These  enzyme levels were all higher in SCCVII cells than in HT 1080 cells.
+;[1344..1350]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[1337..1342] These) (NN:[1344..1350] enzyme)
+            (NNS:[1351..1357] levels))
+    (VP (VBD:[1358..1362] were) (DT:[1363..1366] all)
+      (ADJP-PRD
+        (ADJP (JJR:[1367..1373] higher))
+        (PP-1 (-NONE-:[1373..1373] *ICH*)))
+      (PP-LOC (IN:[1374..1376] in)
+        (NP (NN:[1377..1383] SCCVII) (NNS:[1384..1389] cells)))
+      (PP-1 (IN:[1390..1394] than)
+        (PP-LOC (IN:[1395..1397] in)
+          (NP
+            (NML (NN:[1398..1400] HT) (CD:[1401..1405] 1080))
+            (NNS:[1406..1411] cells)))))
+    (.:[1411..1412] .)))
+
+;sentence 13 Span:1413..1513
+;This result  correlated the higher Vmax of SR 4233 reduction in SCCVII cells
+;than in HT 1080  cells.
+;[1448..1452]:quantitative-name:"Vmax"
+;[1456..1463]:substance:"SR 4233"
+(SENT
+  (S
+    (NP-SBJ (DT:[1413..1417] This) (NN:[1418..1424] result))
+    (VP (VBD:[1426..1436] correlated)
+      (NP
+        (NP (DT:[1437..1440] the) (JJR:[1441..1447] higher)
+            (NN:[1448..1452] Vmax))
+        (PP (IN:[1453..1455] of)
+          (NP
+            (NML (NN:[1456..1458] SR) (CD:[1459..1463] 4233))
+            (NN:[1464..1473] reduction)))
+        (PP-LOC (IN:[1474..1476] in)
+          (NP (NN:[1477..1483] SCCVII) (NNS:[1484..1489] cells)))
+        (PP (IN:[1490..1494] than)
+          (PP-LOC (IN:[1495..1497] in)
+            (NP
+              (NML (NN:[1498..1500] HT) (CD:[1501..1505] 1080))
+              (NNS:[1507..1512] cells))))))
+    (.:[1512..1513] .)))
+
+;section 14 Span:1517..1561
+;PMID: 8431360 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1517..1521] PMID) (::[1521..1522] :) (CD:[1523..1530] 8431360)
+        (NN:[1531..1532] -LSB-) (NNP:[1532..1538] PubMed) (::[1539..1540] -)
+        (NN:[1541..1548] indexed) (IN:[1549..1552] for)
+        (NNP:[1553..1561] MEDLINE-RSB-)))

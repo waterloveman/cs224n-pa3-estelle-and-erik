@@ -1,0 +1,355 @@
+;PMID: 8431911
+;source_file_514.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:49..136] = [t:49..136]
+;2)section:[e:140..220] = [t:140..220]
+;3)section:[e:224..278] = [t:224..278]
+;4)sentence:[e:282..569] = [t:282..569]
+;5)sentence:[e:570..685] = [t:570..685]
+;6)sentence:[e:686..764] = [t:686..764]
+;7)sentence:[e:765..866] = [t:765..866]
+;8)sentence:[e:867..939] = [t:867..939]
+;9)sentence:[e:940..983] = [t:940..983]
+;10)sentence:[e:984..1167] = [t:984..1167]
+;11)sentence:[e:1168..1305] = [t:1168..1305]
+;12)section:[e:1309..1353] = [t:1309..1353]
+
+;section 0 Span:0..44
+;Cancer Genet Cytogenet  1993 Jan;65(1):12-20
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..12] Genet) (NNP:[13..22] Cytogenet)
+        (CD:[24..28] 1993) (CD:[29..34] Jan;6) (CD:[34..35] 5)
+        (NN:[35..36] -LRB-) (NN:[36..37] 1) (NN:[37..38] -RRB-) (::[38..39] :)
+        (CD:[39..40] 1) (CD:[40..44] 2-20)))
+
+;sentence 1 Span:49..136
+;Analysis of karyotype, SCE, and point mutation of RAS oncogene in Indian MDS 
+;patients.
+;[72..75]:variation-type:"SCE"
+;[81..95]:variation-type:"point mutation"
+;[99..102]:gene-rna:"RAS"
+;[122..125]:malignancy:"MDS"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..57] Analysis))
+    (PP (IN:[58..60] of)
+      (NP
+        (NP
+          (NP (NN:[61..70] karyotype))
+          (,:[70..71] ,)
+          (NP (NN:[72..75] SCE))
+          (,:[75..76] ,) (CC:[77..80] and)
+          (NP (NN:[81..86] point) (NN:[87..95] mutation)))
+        (PP (IN:[96..98] of)
+          (NP (NN:[99..102] RAS) (NN:[103..111] oncogene)))))
+    (PP-LOC (IN:[112..114] in)
+      (NP (JJ:[115..121] Indian) (NN:[122..125] MDS) (NNS:[127..135] patients)))
+    (.:[135..136] .)))
+
+;section 2 Span:140..220
+;Mansoor AM, Bharadwaj TP, Sethuraman S, Chandy M, Pushpa V, Kamada N, Murthy
+;PB.
+(SEC
+  (FRAG (VBG:[140..147] Mansoor) (NNP:[148..150] AM) (,:[150..151] ,)
+        (NNP:[152..161] Bharadwaj) (NNP:[162..164] TP) (,:[164..165] ,)
+        (NNP:[166..176] Sethuraman) (NNP:[177..178] S) (,:[178..179] ,)
+        (NNP:[180..186] Chandy) (NNP:[187..189] M,) (NNP:[190..196] Pushpa)
+        (NNP:[197..198] V) (,:[198..199] ,) (NNP:[200..206] Kamada)
+        (NNP:[207..208] N) (,:[208..209] ,) (NNP:[210..216] Murthy)
+        (NNP:[217..220] PB.)))
+
+;section 3 Span:224..278
+;Department of Hematology, Hiroshima University, Japan.
+(SEC
+  (FRAG (NNP:[224..234] Department) (IN:[235..237] of)
+        (NNP:[238..248] Hematology) (IN:[248..249] ,) (NNP:[250..259] Hiroshima)
+        (NNP:[260..270] University) (IN:[270..271] ,) (NNP:[272..277] Japan)
+        (.:[277..278] .)))
+
+;sentence 4 Span:282..569
+;Thirty Indian patients diagnosed as having primary myelodysplastic syndrome
+;as  per the French-American-British classification were investigated, on
+;admission,  for the frequencies of nonrandom karyotype abnormalities, sister
+;chromatid  exchange, and point mutations of the RAS oncogene.
+;[325..357]:malignancy:"primary myelodysplastic syndrome"
+;[501..527]:variation-type:"sister chromatid  exchange"
+;[533..548]:variation-type:"point mutations"
+;[556..559]:gene-rna:"RAS"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[282..288] Thirty) (JJ:[289..295] Indian)
+          (NNS:[296..304] patients))
+      (VP (VBN:[305..314] diagnosed)
+        (NP (-NONE-:[314..314] *))
+        (SBAR (IN:[315..317] as)
+          (S
+            (NP-SBJ (-NONE-:[317..317] *))
+            (VP (VBG:[318..324] having)
+              (NP (JJ:[325..332] primary) (JJ:[333..348] myelodysplastic)
+                  (NN:[349..357] syndrome))
+              (PP (IN:[358..360] as)
+                (PP (IN:[362..365] per)
+                  (NP (DT:[366..369] the)
+                    (NML (JJ:[370..376] French) (HYPH:[376..377] -)
+                         (JJ:[377..385] American) (HYPH:[385..386] -)
+                         (JJ:[386..393] British))
+                    (NN:[394..408] classification)))))))))
+    (VP (VBD:[409..413] were)
+      (VP (VBN:[414..426] investigated)
+        (NP-1 (-NONE-:[426..426] *))
+        (,:[426..427] ,)
+        (PP-TMP (IN:[428..430] on)
+          (NP (NN:[431..440] admission)))
+        (,:[440..441] ,)
+        (PP (IN:[443..446] for)
+          (NP
+            (NP (DT:[447..450] the) (NNS:[451..462] frequencies))
+            (PP (IN:[463..465] of)
+              (NP
+                (NP (JJ:[466..475] nonrandom) (NN:[476..485] karyotype)
+                    (NNS:[486..499] abnormalities))
+                (,:[499..500] ,)
+                (NP (NN:[501..507] sister) (NN:[508..517] chromatid)
+                    (NN:[519..527] exchange))
+                (,:[527..528] ,) (CC:[529..532] and)
+                (NP
+                  (NP (NN:[533..538] point) (NNS:[539..548] mutations))
+                  (PP (IN:[549..551] of)
+                    (NP (DT:[552..555] the) (NN:[556..559] RAS)
+                        (NN:[560..568] oncogene))))))))))
+    (.:[568..569] .)))
+
+;sentence 5 Span:570..685
+;Successful karyotype analysis  was possible in 24 patients, of whom 9 (37.5%)
+;showed nonrandom karyotypic  changes.
+(SENT
+  (S
+    (NP-SBJ (JJ:[570..580] Successful) (NN:[581..590] karyotype)
+            (NN:[591..599] analysis))
+    (VP (VBD:[601..604] was)
+      (ADJP-PRD (JJ:[605..613] possible)
+        (PP (IN:[614..616] in)
+          (NP
+            (NP (CD:[617..619] 24) (NNS:[620..628] patients))
+            (,:[628..629] ,)
+            (SBAR
+              (WHPP-1 (IN:[630..632] of)
+                (WHNP (WP:[633..637] whom)))
+              (S
+                (NP-SBJ
+                  (NP (CD:[638..639] 9)
+                    (PRN (-LRB-:[640..641] -LRB-)
+                      (NP (CD:[641..645] 37.5) (NN:[645..646] %))
+                      (-RRB-:[646..647] -RRB-)))
+                  (PP-1 (-NONE-:[647..647] *T*)))
+                (VP (VBD:[648..654] showed)
+                  (NP (JJ:[655..664] nonrandom) (JJ:[665..675] karyotypic)
+                      (NNS:[677..684] changes)))))))))
+    (.:[684..685] .)))
+
+;sentence 6 Span:686..764
+;Anomalies of chromosomes 5, 7, and 8 were detected in their bone marrow 
+;(BM).
+;[686..695]:variation-event:"Anomalies"
+;[699..712]:variation-location:"chromosomes 5"
+;[699..710]...[721..722]:variation-location:"chromosomes"..."8"
+;[699..710]...[714..715]:variation-location:"chromosomes"..."7"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[686..695] Anomalies))
+      (PP (IN:[696..698] of)
+        (NP
+          (NP
+            (NML-1 (NNS:[699..710] chromosomes))
+            (CD:[711..712] 5))
+          (,:[712..713] ,)
+          (NP
+            (NML-1 (-NONE-:[713..713] *P*))
+            (CD:[714..715] 7))
+          (,:[715..716] ,) (CC:[717..720] and)
+          (NP
+            (NML-1 (-NONE-:[720..720] *P*))
+            (CD:[721..722] 8)))))
+    (VP (VBD:[723..727] were)
+      (VP (VBN:[728..736] detected)
+        (NP-2 (-NONE-:[736..736] *))
+        (PP-LOC (IN:[737..739] in)
+          (NP (PRP$:[740..745] their)
+            (NML
+              (NML (NN:[746..750] bone) (NN:[751..757] marrow))
+              (NML (-LRB-:[759..760] -LRB-) (NN:[760..762] BM)
+                   (-RRB-:[762..763] -RRB-)))))))
+    (.:[763..764] .)))
+
+;sentence 7 Span:765..866
+;In addition, two new anomalies, del(8)(q22) and +19, were observed for the 
+;first time in our series.
+;[786..795]:variation-event:"anomalies"
+;[797..800]:variation-type:"del"
+;[801..802]:variation-location:"8"
+;[804..807]:variation-location:"q22"
+;[813..816]:variation-location:"+19"
+(SENT
+  (S
+    (PP (IN:[765..767] In)
+      (NP (NN:[768..776] addition)))
+    (,:[776..777] ,)
+    (NP-SBJ-1
+      (NP (CD:[778..781] two) (JJ:[782..785] new) (NNS:[786..795] anomalies))
+      (,:[795..796] ,)
+      (NP
+        (NP (NN:[797..800] del) (-LRB-:[800..801] -LRB-) (CD:[801..802] 8)
+            (-RRB-:[802..803] -RRB-) (-LRB-:[803..804] -LRB-)
+            (NN:[804..807] q22) (-RRB-:[807..808] -RRB-))
+        (CC:[809..812] and)
+        (NP (SYM:[813..814] +) (CD:[814..816] 19))))
+    (,:[816..817] ,)
+    (VP (VBD:[818..822] were)
+      (VP (VBN:[823..831] observed)
+        (NP-1 (-NONE-:[831..831] *))
+        (PP (IN:[832..835] for)
+          (NP (DT:[836..839] the) (JJ:[841..846] first) (NN:[847..851] time)))
+        (PP (IN:[852..854] in)
+          (NP (PRP$:[855..858] our) (NN:[859..865] series)))))
+    (.:[865..866] .)))
+
+;sentence 8 Span:867..939
+;Six MDS patients were studied for SCE in either BM or  peripheral blood.
+;[871..874]:malignancy:"MDS"
+;[901..904]:variation-type:"SCE"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[867..870] Six) (NN:[871..874] MDS) (NNS:[875..883] patients))
+    (VP (VBD:[884..888] were)
+      (VP (VBN:[889..896] studied)
+        (NP-1 (-NONE-:[896..896] *))
+        (PP (IN:[897..900] for)
+          (NP (NN:[901..904] SCE)))
+        (PP-LOC (IN:[905..907] in)
+          (NP (CC:[908..914] either)
+            (NP (NN:[915..917] BM))
+            (CC:[918..920] or)
+            (NP (JJ:[922..932] peripheral) (NN:[933..938] blood))))))
+    (.:[938..939] .)))
+
+;sentence 9 Span:940..983
+;These data revealed a normal SCE incidence.
+;[969..972]:variation-type:"SCE"
+(SENT
+  (S
+    (NP-SBJ (DT:[940..945] These) (NNS:[946..950] data))
+    (VP (VBD:[951..959] revealed)
+      (NP (DT:[960..961] a) (JJ:[962..968] normal) (NN:[969..972] SCE)
+          (NN:[973..982] incidence)))
+    (.:[982..983] .)))
+
+;sentence 10 Span:984..1167
+;Of the 10 MDS  patients studied for point mutations of NRAS 12 and 61 and
+;KRAS 12 and 61, one  patient exhibited a base substitution at position 1 of
+;the 12th codon of the  KRAS gene.
+;[994..997]:malignancy:"MDS"
+;[1020..1035]:variation-type:"point mutations"
+;[1039..1043]:gene-rna:"NRAS"
+;[1044..1046]:variation-location:"12"
+;[1051..1053]:variation-location:"61"
+;[1058..1062]:gene-rna:"KRAS"
+;[1063..1065]:variation-location:"12"
+;[1070..1072]:variation-location:"61"
+;[1099..1116]:variation-type:"base substitution"
+;[1120..1148]:variation-location:"position 1 of the 12th codon"
+;[1157..1161]:gene-rna:"KRAS"
+(SENT
+  (S
+    (PP-3 (IN:[984..986] Of)
+      (NP
+        (NP (DT:[987..990] the) (CD:[991..993] 10) (NN:[994..997] MDS)
+            (NNS:[999..1007] patients))
+        (VP (VBN:[1008..1015] studied)
+          (NP (-NONE-:[1015..1015] *))
+          (PP (IN:[1016..1019] for)
+            (NP
+              (NP (NN:[1020..1025] point) (NNS:[1026..1035] mutations))
+              (PP (IN:[1036..1038] of)
+                (NP
+                  (NP
+                    (NP
+                      (NML-2 (NN:[1039..1043] NRAS))
+                      (CD:[1044..1046] 12))
+                    (CC:[1047..1050] and)
+                    (NP
+                      (NML-2 (-NONE-:[1050..1050] *P*))
+                      (CD:[1051..1053] 61)))
+                  (CC:[1054..1057] and)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[1058..1062] KRAS))
+                      (CD:[1063..1065] 12))
+                    (CC:[1066..1069] and)
+                    (NP
+                      (NML-1 (-NONE-:[1069..1069] *P*))
+                      (CD:[1070..1072] 61))))))))))
+    (,:[1072..1073] ,)
+    (NP-SBJ
+      (NP (CD:[1074..1077] one) (NN:[1079..1086] patient))
+      (PP-3 (-NONE-:[1086..1086] *T*)))
+    (VP (VBD:[1087..1096] exhibited)
+      (NP (DT:[1097..1098] a)
+         (NN:[1099..1103] base) (NN:[1104..1116] substitution))
+      (PP-LOC (IN:[1117..1119] at)
+        (NP
+          (NP (NN:[1120..1128] position) (CD:[1129..1130] 1))
+          (PP (IN:[1131..1133] of)
+            (NP
+              (NP (DT:[1134..1137] the) (JJ:[1138..1142] 12th)
+                  (NN:[1143..1148] codon))
+              (PP (IN:[1149..1151] of)
+                (NP (DT:[1152..1155] the) (NN:[1157..1161] KRAS)
+                    (NN:[1162..1166] gene))))))))
+    (.:[1166..1167] .)))
+
+;sentence 11 Span:1168..1305
+;These data, gathered for the first time on the Indian patients, throw  some
+;light on the nature of genetic changes in MDS of our country.
+;[1286..1289]:malignancy:"MDS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1168..1173] These) (NNS:[1174..1178] data))
+      (,:[1178..1179] ,)
+      (VP (VBN:[1180..1188] gathered)
+        (NP (-NONE-:[1188..1188] *))
+        (PP (IN:[1189..1192] for)
+          (NP (DT:[1193..1196] the) (JJ:[1197..1202] first)
+              (NN:[1203..1207] time)))
+        (PP (IN:[1208..1210] on)
+          (NP (DT:[1211..1214] the) (JJ:[1215..1221] Indian)
+              (NNS:[1222..1230] patients)))))
+    (,:[1230..1231] ,)
+    (VP (VBP:[1232..1237] throw)
+      (NP
+        (NP (DT:[1239..1243] some) (NN:[1244..1249] light))
+        (PP (IN:[1250..1252] on)
+          (NP
+            (NP (DT:[1253..1256] the) (NN:[1257..1263] nature))
+            (PP (IN:[1264..1266] of)
+              (NP
+                (NP (JJ:[1267..1274] genetic) (NNS:[1275..1282] changes))
+                (PP (IN:[1283..1285] in)
+                  (NP
+                    (NP (NN:[1286..1289] MDS))
+                    (PP (IN:[1290..1292] of)
+                      (NP (PRP$:[1293..1296] our) (NN:[1297..1304] country)))))))))))
+    (.:[1304..1305] .)))
+
+;section 12 Span:1309..1353
+;PMID: 8431911 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1309..1313] PMID) (::[1313..1314] :) (CD:[1315..1322] 8431911)
+        (NN:[1323..1324] -LSB-) (NNP:[1324..1330] PubMed) (::[1331..1332] -)
+        (NN:[1333..1340] indexed) (IN:[1341..1344] for)
+        (NNP:[1345..1353] MEDLINE-RSB-)))

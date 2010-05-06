@@ -1,0 +1,489 @@
+;PMID: 10612810
+;source_file_676.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:51..138] = [t:51..138]
+;2)section:[e:142..259] = [t:142..259]
+;3)section:[e:263..354] = [t:263..354]
+;4)sentence:[e:358..516] = [t:358..516]
+;5)sentence:[e:518..698] = [t:518..698]
+;6)sentence:[e:699..902] = [t:699..902]
+;7)sentence:[e:903..1081] = [t:903..1081]
+;8)sentence:[e:1082..1269] = [t:1082..1269]
+;9)sentence:[e:1270..1538] = [t:1270..1538]
+;10)sentence:[e:1539..1611] = [t:1539..1611]
+;11)sentence:[e:1612..1706] = [t:1612..1706]
+;12)sentence:[e:1707..1822] = [t:1707..1822]
+;13)sentence:[e:1823..1931] = [t:1823..1931]
+;14)sentence:[e:1932..2140] = [t:1932..2140]
+;15)section:[e:2141..2184] = [t:2141..2184]
+;16)section:[e:2185..2216] = [t:2185..2216]
+;17)section:[e:2220..2265] = [t:2220..2265]
+
+;section 0 Span:0..46
+;Genes Chromosomes Cancer  2000 Feb;27(2):202-8
+(SEC
+  (FRAG (NNP:[0..5] Genes) (NNP:[6..17] Chromosomes) (NNP:[18..24] Cancer)
+        (CD:[26..30] 2000) (CC:[31..38] Feb;27-LRB-) (CD:[38..39] 2)
+        (-RRB-:[39..40] -RRB-) (CD:[40..44] :202) (::[44..45] -) (CD:[45..46] 8)))
+
+;sentence 1 Span:51..138
+;Somatic mutations of the APC, KRAS, and TP53 genes in nonpolypoid colorectal 
+;adenomas.
+;[76..79]:gene-rna:"APC"
+;[81..85]:gene-rna:"KRAS"
+;[91..95]:gene-rna:"TP53"
+;[105..137]:malignancy:"nonpolypoid colorectal  adenomas"
+(SENT
+  (NP-HLN
+    (NP (JJ:[51..58] Somatic) (NNS:[59..68] mutations))
+    (PP (IN:[69..71] of)
+      (NP (DT:[72..75] the)
+        (NML
+          (NML (NN:[76..79] APC)
+            (NML-1 (-NONE-:[79..79] *P*)))
+          (,:[79..80] ,)
+          (NML (NN:[81..85] KRAS)
+            (NML-1 (-NONE-:[85..85] *P*)))
+          (,:[85..86] ,) (CC:[87..90] and)
+          (NML (NN:[91..95] TP53)
+            (NML-1 (NNS:[96..101] genes))))))
+    (PP-LOC (IN:[102..104] in)
+      (NP (JJ:[105..116] nonpolypoid) (JJ:[117..127] colorectal)
+          (NNS:[129..137] adenomas)))
+    (.:[137..138] .)))
+
+;section 2 Span:142..259
+;van Wyk R, Slezak P, Hayes VM, Buys CH, Kotze MJ, de Jong G, Rubio C, Dolk A,
+; Jaramillo E, Koizumi K, Grobbelaar JJ.
+(SEC
+  (FRAG (NNP:[142..145] van) (NNP:[146..149] Wyk) (NNP:[150..152] R,)
+        (NNP:[153..159] Slezak) (NNP:[160..161] P) (,:[161..162] ,)
+        (NNP:[163..168] Hayes) (NNP:[169..171] VM) (,:[171..172] ,)
+        (NNP:[173..177] Buys) (NNP:[178..180] CH) (,:[180..181] ,)
+        (NNP:[182..187] Kotze) (NNP:[188..190] MJ) (,:[190..191] ,)
+        (IN:[192..194] de) (NNP:[195..199] Jong) (NNP:[200..201] G)
+        (,:[201..202] ,) (NNP:[203..208] Rubio) (NNP:[209..210] C)
+        (,:[210..211] ,) (NNP:[212..216] Dolk) (NNP:[217..218] A)
+        (,:[218..219] ,) (NNP:[221..230] Jaramillo) (NNP:[231..232] E)
+        (,:[232..233] ,) (NNP:[234..241] Koizumi) (NNP:[242..243] K)
+        (,:[243..244] ,) (NNP:[245..255] Grobbelaar) (NNP:[256..259] JJ.)))
+
+;section 3 Span:263..354
+;Division of Human Genetics, Faculty of Medicine, University of Stellenbosch, 
+;South Africa.
+(SEC
+  (FRAG (NNP:[263..271] Division) (IN:[272..274] of) (NNP:[275..280] Human)
+        (NNP:[281..289] Genetics) (,:[289..290] ,) (NNP:[291..298] Faculty)
+        (IN:[299..301] of) (NNP:[302..310] Medicine) (,:[310..311] ,)
+        (NNP:[312..322] University) (IN:[323..325] of)
+        (NNP:[326..338] Stellenbosch) (,:[338..339] ,) (NNP:[341..346] South)
+        (NNP:[347..353] Africa) (.:[353..354] .)))
+
+;sentence 4 Span:358..516
+;Colorectal adenomas are macroscopically visible morphological changes of the 
+;mucosa that can develop focal carcinoma in the absence of surgical
+;intervention.
+;[358..377]:malignancy:"Colorectal adenomas"
+;[460..475]:malignancy:"focal carcinoma"
+(SENT
+  (S
+    (NP-SBJ (JJ:[358..368] Colorectal) (NNS:[369..377] adenomas))
+    (VP (VBP:[378..381] are)
+      (NP-PRD
+        (NP
+          (NP
+            (ADJP (RB:[382..397] macroscopically) (JJ:[398..405] visible))
+            (JJ:[406..419] morphological) (NNS:[420..427] changes))
+          (PP (IN:[428..430] of)
+            (NP (DT:[431..434] the) (NN:[436..442] mucosa))))
+        (SBAR
+          (WHNP-1 (WDT:[443..447] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[447..447] *T*))
+            (VP (MD:[448..451] can)
+              (VP (VB:[452..459] develop)
+                (NP (JJ:[460..465] focal) (NN:[466..475] carcinoma))
+                (PP (IN:[476..478] in)
+                  (NP
+                    (NP (DT:[479..482] the) (NN:[483..490] absence))
+                    (PP (IN:[491..493] of)
+                      (NP (JJ:[494..502] surgical) (NN:[503..515] intervention)))))))))))
+    (.:[515..516] .)))
+
+;sentence 5 Span:518..698
+;The successive molecular changes proposed to occur at different stages in the
+; adenoma-carcinoma sequence were primarily based on DNA studies of exophytic,
+; polypoid-type adenomas.
+;[597..604]:malignancy:"adenoma"
+;[605..614]:malignancy:"carcinoma"
+;[663..697]:malignancy:"exophytic,  polypoid-type adenomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[518..521] The) (JJ:[522..532] successive)
+          (JJ:[533..542] molecular) (NNS:[543..550] changes))
+      (VP (VBN:[551..559] proposed)
+        (S
+          (NP-SBJ (-NONE-:[559..559] *))
+          (VP (TO:[560..562] to)
+            (VP (VB:[563..568] occur)
+              (PP (IN:[569..571] at)
+                (NP
+                  (NP (JJ:[572..581] different) (NNS:[582..588] stages))
+                  (PP (IN:[589..591] in)
+                    (NP (DT:[592..595] the)
+                      (NML
+                        (NML (NN:[597..604] adenoma))
+                        (PP (HYPH:[604..605] -)
+                          (NP (NN:[605..614] carcinoma))))
+                      (NN:[615..623] sequence))))))))))
+    (VP (VBD:[624..628] were)
+      (ADVP (RB:[629..638] primarily))
+      (VP (VBN:[639..644] based)
+        (NP-1 (-NONE-:[644..644] *))
+        (PP-CLR (IN:[645..647] on)
+          (NP
+            (NP (NN:[648..651] DNA) (NNS:[652..659] studies))
+            (PP (IN:[660..662] of)
+              (NP (JJ:[663..672] exophytic) (,:[672..673] ,)
+                (NML (JJ:[675..683] polypoid) (HYPH:[683..684] -)
+                     (NN:[684..688] type))
+                (NNS:[689..697] adenomas)))))))
+    (.:[697..698] .)))
+
+;sentence 6 Span:699..902
+;Not all colorectal lesions, however, display an  exophytic phenotype and a
+;presumed distinct colorectal neoplasm, the nonpolypoid  adenoma, was
+;subsequently described as a precursor of colorectal cancer.
+;[707..725]:malignancy:"colorectal lesions"
+;[792..811]:malignancy:"colorectal neoplasm"
+;[817..837]:malignancy:"nonpolypoid  adenoma"
+;[884..901]:malignancy:"colorectal cancer"
+(SENT
+  (S
+    (S
+      (NP-SBJ (RB:[699..702] Not) (DT:[703..706] all)
+         (JJ:[707..717] colorectal) (NNS:[718..725] lesions))
+      (,:[725..726] ,)
+      (ADVP (RB:[727..734] however))
+      (,:[734..735] ,)
+      (VP (VBP:[736..743] display)
+        (NP (DT:[744..746] an) (JJ:[748..757] exophytic)
+            (NN:[758..767] phenotype))))
+    (CC:[768..771] and)
+    (S
+      (NP-SBJ-1
+        (NP (DT:[772..773] a)
+          (ADJP (VBN:[774..782] presumed) (JJ:[783..791] distinct))
+           (JJ:[792..802] colorectal) (NN:[803..811] neoplasm))
+        (,:[811..812] ,)
+        (NP (DT:[813..816] the)
+           (JJ:[817..828] nonpolypoid) (NN:[830..837] adenoma)))
+      (,:[837..838] ,)
+      (VP (VBD:[839..842] was)
+        (ADVP (RB:[843..855] subsequently))
+        (VP (VBN:[856..865] described)
+          (NP-1 (-NONE-:[865..865] *))
+          (PP-CLR (IN:[866..868] as)
+            (NP
+              (NP (DT:[869..870] a) (NN:[871..880] precursor))
+              (PP (IN:[881..883] of)
+                (NP (JJ:[884..894] colorectal) (NN:[895..901] cancer))))))))
+    (.:[901..902] .)))
+
+;sentence 7 Span:903..1081
+;The low  incidence of KRAS mutations in nonpolypoid colorectal adenomas
+;reported  previously suggested a different genetic basis for the
+;transformation process in  these lesions.
+;[925..929]:gene-rna:"KRAS"
+;[943..974]:malignancy:"nonpolypoid colorectal adenomas"
+;[1073..1080]:malignancy:"lesions"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[903..906] The) (JJ:[907..910] low) (NN:[912..921] incidence))
+      (PP (IN:[922..924] of)
+        (NP (NN:[925..929] KRAS) (NNS:[930..939] mutations)))
+      (PP-LOC (IN:[940..942] in)
+        (NP (JJ:[943..954] nonpolypoid) (JJ:[955..965] colorectal)
+            (NNS:[966..974] adenomas)))
+      (VP (VBN:[975..983] reported)
+        (NP (-NONE-:[983..983] *))
+        (ADVP (RB:[985..995] previously))))
+    (VP (VBD:[996..1005] suggested)
+      (NP
+        (NP (DT:[1006..1007] a) (JJ:[1008..1017] different)
+            (JJ:[1018..1025] genetic) (NN:[1026..1031] basis))
+        (PP (IN:[1032..1035] for)
+          (NP
+            (NP (DT:[1036..1039] the) (NN:[1040..1054] transformation)
+                (NN:[1055..1062] process))
+            (PP-LOC (IN:[1063..1065] in)
+              (NP (DT:[1067..1072] these) (NNS:[1073..1080] lesions)))))))
+    (.:[1080..1081] .)))
+
+;sentence 8 Span:1082..1269
+;We have pursued the identification of genetic changes in benign  sporadic
+;nonpolypoid colorectal adenomas in a selected Swedish patient group  with no
+;family history of colorectal cancer.
+;[1139..1187]:malignancy:"benign  sporadic nonpolypoid colorectal adenomas"
+;[1251..1268]:malignancy:"colorectal cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1082..1084] We))
+    (VP (VBP:[1085..1089] have)
+      (VP (VBN:[1090..1097] pursued)
+        (NP
+          (NP (DT:[1098..1101] the) (NN:[1102..1116] identification))
+          (PP (IN:[1117..1119] of)
+            (NP
+              (NP (JJ:[1120..1127] genetic) (NNS:[1128..1135] changes))
+              (PP-LOC (IN:[1136..1138] in)
+                (NP (JJ:[1139..1145] benign) (JJ:[1147..1155] sporadic)
+                    (JJ:[1156..1167] nonpolypoid) (JJ:[1168..1178] colorectal)
+                    (NNS:[1179..1187] adenomas))))))
+        (PP-LOC (IN:[1188..1190] in)
+          (NP
+            (NP (DT:[1191..1192] a) (VBN:[1193..1201] selected)
+                (JJ:[1202..1209] Swedish) (NN:[1210..1217] patient)
+                (NN:[1218..1223] group))
+            (PP (IN:[1225..1229] with)
+              (NP
+                (NP (DT:[1230..1232] no) (NN:[1233..1239] family)
+                    (NN:[1240..1247] history))
+                (PP (IN:[1248..1250] of)
+                  (NP (JJ:[1251..1261] colorectal) (NN:[1262..1268] cancer)))))))))
+    (.:[1268..1269] .)))
+
+;sentence 9 Span:1270..1538
+;Mutation screening of the  adenomatous polyposis coli (APC), KRAS, and TP53
+;genes was conducted using the  protein truncation test,
+;heteroduplex-single-strand conformation polymorphism  analysis, and
+;denaturing gradient gel electrophoresis on PCR-amplified  fragments.
+;[1297..1323]:gene-rna:"adenomatous polyposis coli"
+;[1325..1328]:gene-rna:"APC"
+;[1331..1335]:gene-rna:"KRAS"
+;[1341..1345]:gene-rna:"TP53"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1270..1278] Mutation) (NN:[1279..1288] screening))
+      (PP (IN:[1289..1291] of)
+        (NP (DT:[1292..1295] the)
+          (NML
+            (NML
+              (NML
+                (NML (JJ:[1297..1308] adenomatous) (NN:[1309..1318] polyposis)
+                     (NN:[1319..1323] coli))
+                (NML (-LRB-:[1324..1325] -LRB-) (NN:[1325..1328] APC)
+                     (-RRB-:[1328..1329] -RRB-)))
+              (NML-1 (-NONE-:[1329..1329] *P*)))
+            (,:[1329..1330] ,)
+            (NML (NN:[1331..1335] KRAS)
+              (NML-1 (-NONE-:[1335..1335] *P*)))
+            (,:[1335..1336] ,) (CC:[1337..1340] and)
+            (NML (NN:[1341..1345] TP53)
+              (NML-1 (NNS:[1346..1351] genes)))))))
+    (VP (VBD:[1352..1355] was)
+      (VP (VBN:[1356..1365] conducted)
+        (NP-2 (-NONE-:[1365..1365] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[1365..1365] *))
+          (VP (VBG:[1366..1371] using)
+            (NP
+              (NP (DT:[1372..1375] the)
+                (NML (NN:[1377..1384] protein) (NN:[1385..1395] truncation))
+                (NN:[1396..1400] test))
+              (,:[1400..1401] ,)
+              (NP
+                (NML
+                  (NML
+                    (NML (NN:[1402..1414] heteroduplex) (HYPH:[1414..1415] -)
+                         (JJ:[1415..1421] single) (HYPH:[1421..1422] -)
+                         (NN:[1422..1428] strand))
+                    (NN:[1429..1441] conformation))
+                  (NN:[1442..1454] polymorphism))
+                (NN:[1456..1464] analysis))
+              (,:[1464..1465] ,) (CC:[1466..1469] and)
+              (NP
+                (NML (VBG:[1470..1480] denaturing) (NN:[1481..1489] gradient))
+                (NN:[1490..1493] gel) (NN:[1494..1509] electrophoresis)))
+            (PP (IN:[1510..1512] on)
+              (NP
+                (ADJP (NN:[1513..1516] PCR) (HYPH:[1516..1517] -)
+                      (VBN:[1517..1526] amplified))
+                (NNS:[1528..1537] fragments)))))))
+    (.:[1537..1538] .)))
+
+;sentence 10 Span:1539..1611
+;Fourteen mutations in the APC gene were characterized in 10/20  samples.
+;[1565..1568]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[1539..1547] Fourteen) (NNS:[1548..1557] mutations))
+      (PP-LOC (IN:[1558..1560] in)
+        (NP (DT:[1561..1564] the) (NN:[1565..1568] APC) (NN:[1569..1573] gene))))
+    (VP (VBD:[1574..1578] were)
+      (VP (VBN:[1579..1592] characterized)
+        (NP-1 (-NONE-:[1592..1592] *))
+        (PP-LOC (IN:[1593..1595] in)
+          (NP
+            (NP (CD:[1596..1598] 10))
+            (PP (SYM:[1598..1599] /)
+              (NP (CD:[1599..1601] 20)
+                (NP (NNS:[1603..1610] samples))))))))
+    (.:[1610..1611] .)))
+
+;sentence 11 Span:1612..1706
+;Mutations in the KRAS and TP53 genes were identified in 3/57 and 4/51 
+;adenomas, respectively.
+;[1629..1633]:gene-rna:"KRAS"
+;[1638..1642]:gene-rna:"TP53"
+;[1683..1691]:malignancy:"adenomas"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (NNS:[1612..1621] Mutations))
+      (PP-LOC (IN:[1622..1624] in)
+        (NP (DT:[1625..1628] the)
+          (NML
+            (NML (NN:[1629..1633] KRAS)
+              (NML-1 (-NONE-:[1633..1633] *P*)))
+            (CC:[1634..1637] and)
+            (NML (NN:[1638..1642] TP53)
+              (NML-1 (NNS:[1643..1648] genes)))))))
+    (VP (VBD:[1649..1653] were)
+      (VP (VBN:[1654..1664] identified)
+        (NP-3 (-NONE-:[1664..1664] *))
+        (PP-LOC (IN:[1665..1667] in)
+          (NP
+            (NP
+              (NP (CD:[1668..1669] 3))
+              (PP (SYM:[1669..1670] /)
+                (NP (CD:[1670..1672] 57)
+                  (NML-2 (-NONE-:[1672..1672] *RNR*)))))
+            (CC:[1673..1676] and)
+            (NP
+              (NP (CD:[1677..1678] 4))
+              (PP (SYM:[1678..1679] /)
+                (NP (CD:[1679..1681] 51)
+                  (NML-2 (-NONE-:[1681..1681] *RNR*)))))
+            (NML-2 (NNS:[1683..1691] adenomas))))
+        (,:[1691..1692] ,)
+        (ADVP (RB:[1693..1705] respectively))))
+    (.:[1705..1706] .)))
+
+;sentence 12 Span:1707..1822
+;The mutation frequencies and distribution of mutations  in APC correlate with
+;published data on exophytic adenomas.
+;[1766..1769]:gene-rna:"APC"
+;[1803..1821]:malignancy:"exophytic adenomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1707..1710] The) (NN:[1711..1719] mutation)
+          (NNS:[1720..1731] frequencies))
+      (CC:[1732..1735] and)
+      (NP
+        (NP (NN:[1736..1748] distribution))
+        (PP (IN:[1749..1751] of)
+          (NP (NNS:[1752..1761] mutations))))
+      (PP-LOC (IN:[1763..1765] in)
+        (NP (NN:[1766..1769] APC))))
+    (VP (VBP:[1770..1779] correlate)
+      (PP-CLR (IN:[1780..1784] with)
+        (NP
+          (NP (VBN:[1785..1794] published) (NNS:[1795..1799] data))
+          (PP (IN:[1800..1802] on)
+            (NP (JJ:[1803..1812] exophytic) (NNS:[1813..1821] adenomas))))))
+    (.:[1821..1822] .)))
+
+;sentence 13 Span:1823..1931
+;The low mutation  frequency of the TP53 gene is consistent with the benign
+;nature of the research  material.
+;[1858..1862]:gene-rna:"TP53"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1823..1826] The) (JJ:[1827..1830] low) (NN:[1831..1839] mutation)
+          (NN:[1841..1850] frequency))
+      (PP (IN:[1851..1853] of)
+        (NP (DT:[1854..1857] the) (NN:[1858..1862] TP53) (NN:[1863..1867] gene))))
+    (VP (VBZ:[1868..1870] is)
+      (ADJP-PRD (JJ:[1871..1881] consistent)
+        (PP (IN:[1882..1886] with)
+          (NP
+            (NP (DT:[1887..1890] the) (JJ:[1891..1897] benign)
+                (NN:[1898..1904] nature))
+            (PP (IN:[1905..1907] of)
+              (NP (DT:[1908..1911] the) (NN:[1912..1920] research)
+                  (NN:[1922..1930] material)))))))
+    (.:[1930..1931] .)))
+
+;sentence 14 Span:1932..2140
+;KRAS activation (an early event in polypoid colorectal adenomas)  apparently
+;does not play a significant role in nonpolypoid adenoma development  but may
+;result in the development of a polypoid configuration.
+;[1932..1936]:gene-rna:"KRAS"
+;[1967..1995]:malignancy:"polypoid colorectal adenomas"
+;[2045..2064]:malignancy:"nonpolypoid adenoma"
+;[2057..2064]...[2117..2125]:malignancy:"adenoma"..."polypoid"
+(SENT
+  (S
+    (NP-SBJ (NN:[1932..1936] KRAS) (NN:[1937..1947] activation)
+      (PRN (-LRB-:[1948..1949] -LRB-)
+        (NP
+          (NP (DT:[1949..1951] an) (JJ:[1952..1957] early)
+              (NN:[1958..1963] event))
+          (PP-LOC (IN:[1964..1966] in)
+            (NP (JJ:[1967..1975] polypoid) (JJ:[1976..1986] colorectal)
+                (NNS:[1987..1995] adenomas))))
+        (-RRB-:[1995..1996] -RRB-)))
+    (VP
+      (VP
+        (ADVP (RB:[1998..2008] apparently))
+        (VBZ:[2009..2013] does) (RB:[2014..2017] not)
+        (VP (VB:[2018..2022] play)
+          (NP (DT:[2023..2024] a) (JJ:[2025..2036] significant)
+              (NN:[2037..2041] role))
+          (PP (IN:[2042..2044] in)
+            (NP
+              (NML (JJ:[2045..2056] nonpolypoid) (NN:[2057..2064] adenoma))
+              (NN:[2065..2076] development)))))
+      (CC:[2078..2081] but)
+      (VP (MD:[2082..2085] may)
+        (VP (VB:[2086..2092] result)
+          (PP-CLR (IN:[2093..2095] in)
+            (NP
+              (NP (DT:[2096..2099] the) (NN:[2100..2111] development))
+              (PP (IN:[2112..2114] of)
+                (NP (DT:[2115..2116] a) (JJ:[2117..2125] polypoid)
+                    (NN:[2126..2139] configuration))))))))
+    (.:[2139..2140] .)))
+
+;section 15 Span:2141..2184
+;Genes Chromosomes  Cancer 27:202-208, 2000.
+(SEC
+  (FRAG (NNP:[2141..2146] Genes) (NNP:[2147..2158] Chromosomes)
+        (NNP:[2160..2166] Cancer) (CD:[2167..2169] 27) (SYM:[2169..2170] :)
+        (CD:[2170..2173] 202) (HYPH:[2173..2174] -) (CD:[2174..2177] 208)
+        (,:[2177..2178] ,) (CD:[2179..2183] 2000) (.:[2183..2184] .)))
+
+;section 16 Span:2185..2216
+;Copyright 2000 Wiley-Liss, Inc.
+(SEC
+  (FRAG (NN:[2185..2194] Copyright) (CD:[2195..2199] 2000)
+        (NNP:[2200..2205] Wiley) (HYPH:[2205..2206] -) (NNP:[2206..2210] Liss)
+        (,:[2210..2211] ,) (NNP:[2212..2216] Inc.)))
+
+;section 17 Span:2220..2265
+;PMID: 10612810 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2220..2224] PMID) (::[2224..2225] :) (CD:[2226..2234] 10612810)
+        (NN:[2235..2236] -LSB-) (NNP:[2236..2242] PubMed) (::[2243..2244] -)
+        (NN:[2245..2252] indexed) (IN:[2253..2256] for)
+        (NNP:[2257..2265] MEDLINE-RSB-)))

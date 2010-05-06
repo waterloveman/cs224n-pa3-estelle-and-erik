@@ -1,0 +1,388 @@
+;PMID: 8533197
+;source_file_778.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..25] = [t:0..25]
+;1)sentence:[e:30..140] = [t:30..140]
+;2)section:[e:144..209] = [t:144..209]
+;3)section:[e:213..316] = [t:213..316]
+;4)sentence:[e:320..434] = [t:320..434]
+;5)sentence:[e:435..560] = [t:435..560]
+;6)sentence:[e:561..650] = [t:561..650]
+;7)sentence:[e:651..908] = [t:651..908]
+;8)sentence:[e:909..1046] = [t:909..1046]
+;9)sentence:[e:1047..1174] = [t:1047..1174]
+;10)sentence:[e:1175..1236] = [t:1175..1236]
+;11)sentence:[e:1237..1353] = [t:1237..1353]
+;12)section:[e:1357..1401] = [t:1357..1401]
+
+;section 0 Span:0..25
+;Urol Int  1995;55(2):63-7
+(SEC
+  (FRAG (IN:[0..4] Urol) (NNP:[5..8] Int) (CD:[10..14] 1995)
+        (.:[14..18] ;55-LRB-) (CD:[18..19] 2) (-RRB-:[19..20] -RRB-)
+        (CD:[20..23] :63) (::[23..24] -) (CD:[24..25] 7)))
+
+;sentence 1 Span:30..140
+;Infrequent involvement of mutations on neurofibromatosis type 1, H-ras, K-ras
+; and N-ras in urothelial tumors.
+;[69..93]:gene-rna:"neurofibromatosis type 1"
+;[95..100]:gene-rna:"H-ras"
+;[102..107]:gene-rna:"K-ras"
+;[113..118]:gene-rna:"N-ras"
+;[122..139]:malignancy:"urothelial tumors"
+(SENT
+  (NP-HLN
+    (NP (JJ:[30..40] Infrequent) (NN:[41..52] involvement))
+    (PP (IN:[53..55] of)
+      (NP (NNS:[56..65] mutations)))
+    (PP (IN:[66..68] on)
+      (NP
+        (NP (NN:[69..86] neurofibromatosis) (NN:[87..91] type) (CD:[92..93] 1))
+        (,:[93..94] ,)
+        (NP (NN:[95..100] H-ras))
+        (,:[100..101] ,)
+        (NP (NN:[102..107] K-ras))
+        (CC:[109..112] and)
+        (NP (NN:[113..118] N-ras))))
+    (PP-LOC (IN:[119..121] in)
+      (NP (JJ:[122..132] urothelial) (NNS:[133..139] tumors)))
+    (.:[139..140] .)))
+
+;section 2 Span:144..209
+;Uchida T, Wada C, Ishida H, Egawa S, Ao T, Yokoyama E, Koshiba K.
+(SEC
+  (FRAG (NNP:[144..150] Uchida) (NNP:[151..152] T) (,:[152..153] ,)
+        (NNP:[154..158] Wada) (NNP:[159..160] C) (,:[160..161] ,)
+        (NNP:[162..168] Ishida) (NNP:[169..170] H) (,:[170..171] ,)
+        (NNP:[172..177] Egawa) (NNP:[178..180] S,) (NNP:[181..183] Ao)
+        (NNP:[184..185] T) (,:[185..186] ,) (NNP:[187..195] Yokoyama)
+        (NNP:[196..197] E) (,:[197..198] ,) (NNP:[199..206] Koshiba)
+        (NNP:[207..209] K.)))
+
+;section 3 Span:213..316
+;Department of Urology and Clinical Pathology, Kitasato University School of 
+;Medicine, Kanagawa, Japan.
+(SEC
+  (FRAG (NNP:[213..223] Department) (IN:[224..226] of) (NNP:[227..234] Urology)
+        (CC:[235..238] and) (NNP:[239..247] Clinical) (NNP:[248..257] Pathology)
+        (,:[257..258] ,) (NNP:[259..267] Kitasato) (NNP:[268..278] University)
+        (NNP:[279..285] School) (IN:[286..288] of) (NNP:[290..298] Medicine)
+        (,:[298..299] ,) (NNP:[300..308] Kanagawa) (,:[308..309] ,)
+        (NNP:[310..315] Japan) (.:[315..316] .)))
+
+;sentence 4 Span:320..434
+;The neurofibromatosis type 1 (NF1) gene is considered a tumor-suppressor gene
+; whose product acts upstream of ras.
+;[324..348]:gene-rna:"neurofibromatosis type 1"
+;[350..353]:gene-rna:"NF1"
+;[430..433]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[320..323] The)
+      (NML
+        (NML (NN:[324..341] neurofibromatosis) (NN:[342..346] type)
+             (CD:[347..348] 1))
+        (NML (-LRB-:[349..350] -LRB-) (NN:[350..353] NF1)
+             (-RRB-:[353..354] -RRB-)))
+      (NN:[355..359] gene))
+    (VP (VBZ:[360..362] is)
+      (VP (VBN:[363..373] considered)
+        (S
+          (NP-SBJ-1 (-NONE-:[373..373] *))
+          (NP-PRD
+            (NP (DT:[374..375] a)
+              (NML (NN:[376..381] tumor) (HYPH:[381..382] -)
+                   (NN:[382..392] suppressor))
+              (NN:[393..397] gene))
+            (SBAR
+              (WHNP-2 (WP$:[399..404] whose) (NN:[405..412] product))
+              (S
+                (NP-SBJ-2 (-NONE-:[412..412] *T*))
+                (VP (VBZ:[413..417] acts)
+                  (NP
+                    (NP (RB:[418..426] upstream))
+                    (PP (IN:[427..429] of)
+                      (NP (NN:[430..433] ras)))))))))))
+    (.:[433..434] .)))
+
+;sentence 5 Span:435..560
+;The ras gene is an oncogene very commonly  detected in human cancers and
+;consists of three families, H-ras, K-ras and  N-ras.
+;[439..442]:gene-rna:"ras"
+;[536..541]:gene-rna:"H-ras"
+;[543..548]:gene-rna:"K-ras"
+;[554..559]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[435..438] The) (NN:[439..442] ras) (NN:[443..447] gene))
+    (VP
+      (VP (VBZ:[448..450] is)
+        (NP-PRD
+          (NP (DT:[451..453] an) (NN:[454..462] oncogene))
+          (VP
+            (ADVP (RB:[463..467] very) (RB:[468..476] commonly))
+            (VBN:[478..486] detected)
+            (NP (-NONE-:[486..486] *))
+            (PP-LOC (IN:[487..489] in)
+              (NP (JJ:[490..495] human) (NNS:[496..503] cancers))))))
+      (CC:[504..507] and)
+      (VP (VBZ:[508..516] consists)
+        (PP-CLR (IN:[517..519] of)
+          (NP
+            (NP (CD:[520..525] three) (NNS:[526..534] families))
+            (,:[534..535] ,)
+            (NP (NN:[536..541] H-ras) (,:[541..542] ,) (NN:[543..548] K-ras)
+                (CC:[549..552] and) (NN:[554..559] N-ras))))))
+    (.:[559..560] .)))
+
+;sentence 6 Span:561..650
+;These genes are converted to active oncogenes by point mutations in codon 
+;12, 13, or 61.
+;[567..572]:gene-rna:"genes"
+;[610..625]:variation-type:"point mutations"
+;[629..638]:variation-location:"codon  12"
+;[629..634]...[647..649]:variation-location:"codon"..."61"
+;[629..634]...[640..642]:variation-location:"codon"..."13"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[561..566] These) (NNS:[567..572] genes))
+    (VP (VBP:[573..576] are)
+      (VP (VBN:[577..586] converted)
+        (NP-1 (-NONE-:[586..586] *))
+        (PP-CLR (TO:[587..589] to)
+          (NP (JJ:[590..596] active) (NNS:[597..606] oncogenes)))
+        (PP-MNR (IN:[607..609] by)
+          (NP
+            (NP (NN:[610..615] point) (NNS:[616..625] mutations))
+            (PP (IN:[626..628] in)
+              (NP
+                (NP
+                  (NML-2 (NN:[629..634] codon))
+                  (CD:[636..638] 12))
+                (,:[638..639] ,)
+                (NP
+                  (NML-2 (-NONE-:[639..639] *P*))
+                  (CD:[640..642] 13))
+                (,:[642..643] ,) (CC:[644..646] or)
+                (NP
+                  (NML-2 (-NONE-:[646..646] *P*))
+                  (CD:[647..649] 61))))))))
+    (.:[649..650] .)))
+
+;sentence 7 Span:651..908
+;Examination was made of the mutations of these genes in 39  urothelial
+;malignant tumors (31 bladder cancer, 6 renal pelvic tumor, and 2  ureter
+;tumors) using polymerase chain reaction single-stranded conformation 
+;polymorphism and direct sequencing methods.
+;[679..688]:variation-event:"mutations"
+;[698..703]:gene-rna:"genes"
+;[711..738]:malignancy:"urothelial malignant tumors"
+;[743..757]:malignancy:"bladder cancer"
+;[761..779]:malignancy:"renal pelvic tumor"
+;[788..801]:malignancy:"ureter tumors"
+;[809..819]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[651..662] Examination))
+      (PP-2 (-NONE-:[662..662] *ICH*)))
+    (VP (VBD:[663..666] was)
+      (VP (VBN:[667..671] made)
+        (NP-1 (-NONE-:[671..671] *))
+        (PP-2 (IN:[672..674] of)
+          (NP
+            (NP (DT:[675..678] the) (NNS:[679..688] mutations))
+            (PP (IN:[689..691] of)
+              (NP (DT:[692..697] these) (NNS:[698..703] genes)))))
+        (PP-LOC (IN:[704..706] in)
+          (NP (CD:[707..709] 39)
+             (JJ:[711..721] urothelial) (JJ:[722..731] malignant)
+             (NNS:[732..738] tumors)
+            (PRN (-LRB-:[739..740] -LRB-)
+              (NP
+                (NP (CD:[740..742] 31)
+                   (NN:[743..750] bladder) (NN:[751..757] cancer))
+                (,:[757..758] ,)
+                (NP (CD:[759..760] 6)
+                   (JJ:[761..766] renal) (JJ:[767..773] pelvic)
+                   (NN:[774..779] tumor))
+                (,:[779..780] ,) (CC:[781..784] and)
+                (NP (CD:[785..786] 2)
+                   (NN:[788..794] ureter) (NNS:[795..801] tumors)))
+              (-RRB-:[801..802] -RRB-))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[802..802] *))
+          (VP (VBG:[803..808] using)
+            (NP
+              (NP
+                (NML (NN:[809..819] polymerase) (NN:[820..825] chain)
+                     (NN:[826..834] reaction))
+                (NML (JJ:[835..850] single-stranded)
+                     (NN:[851..863] conformation))
+                (NN:[865..877] polymorphism))
+              (CC:[878..881] and)
+              (NP
+                (NML (JJ:[882..888] direct) (NN:[889..899] sequencing))
+                (NNS:[900..907] methods)))))))
+    (.:[907..908] .)))
+
+;sentence 8 Span:909..1046
+;Three of 39 (7.7%) cases showed  mobility shifts in the ras family gene but
+;no point mutations in NF1 and N-ras  genes could be detected.
+;[965..968]:gene-rna:"ras"
+;[988..1003]:variation-type:"point mutations"
+;[1007..1010]:gene-rna:"NF1"
+;[1015..1020]:gene-rna:"N-ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (CD:[909..914] Three))
+        (PP (IN:[915..917] of)
+          (NP (CD:[918..920] 39)
+            (PRN (-LRB-:[921..922] -LRB-)
+              (NP (CD:[922..925] 7.7) (NN:[925..926] %))
+              (-RRB-:[926..927] -RRB-))
+            (NNS:[928..933] cases))))
+      (VP (VBD:[934..940] showed)
+        (NP
+          (NP (NN:[942..950] mobility) (NNS:[951..957] shifts))
+          (PP (IN:[958..960] in)
+            (NP (DT:[961..964] the)
+              (NML (NN:[965..968] ras) (NN:[969..975] family))
+              (NN:[976..980] gene))))))
+    (CC:[981..984] but)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[985..987] no)
+           (NN:[988..993] point) (NNS:[994..1003] mutations))
+        (PP-LOC (IN:[1004..1006] in)
+          (NP
+            (NP (NN:[1007..1010] NF1)
+              (NML-1 (-NONE-:[1010..1010] *P*)))
+            (CC:[1011..1014] and)
+            (NP (NN:[1015..1020] N-ras)
+              (NML-1 (NNS:[1022..1027] genes))))))
+      (VP (MD:[1028..1033] could)
+        (VP (VB:[1034..1036] be)
+          (VP (VBN:[1037..1045] detected)
+            (NP-2 (-NONE-:[1045..1045] *))))))
+    (.:[1045..1046] .)))
+
+;sentence 9 Span:1047..1174
+;Mutations were found in 1 case in H-ras at codon 13  (GGT-GTT/GGT) and K-ras
+;at codon 12 in 2 cases (GGT-GCT/GGT, GGT-GTT/GGT).
+;[1047..1056]:variation-event:"Mutations"
+;[1081..1086]:gene-rna:"H-ras"
+;[1090..1098]:variation-location:"codon 13"
+;[1101..1104]:variation-state-original:"GGT"
+;[1105..1108]:variation-state-altered:"GTT"
+;[1109..1112]:variation-state-altered:"GGT"
+;[1118..1123]:gene-rna:"K-ras"
+;[1127..1135]:variation-location:"codon 12"
+;[1148..1151]:variation-state-original:"GGT"
+;[1152..1155]:variation-state-altered:"GCT"
+;[1156..1160]:variation-state-altered:"GGT,"
+;[1161..1164]:variation-state-original:"GGT"
+;[1165..1168]:variation-state-altered:"GTT"
+;[1169..1172]:variation-state-altered:"GGT"
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[1047..1056] Mutations))
+    (VP (VBD:[1057..1061] were)
+      (VP
+        (VP (VBN:[1062..1067] found)
+          (NP-1 (-NONE-:[1067..1067] *))
+          (PP=5 (IN:[1068..1070] in)
+            (NP (CD:[1071..1072] 1) (NN:[1073..1077] case)))
+          (PP-LOC (IN:[1078..1080] in)
+            (NP=2 (NN:[1081..1086] H-ras)))
+          (PP-LOC=3 (IN:[1087..1089] at)
+            (NP (NN:[1090..1095] codon) (CD:[1096..1098] 13)))
+          (PRN=4 (-LRB-:[1100..1101] -LRB-)
+            (NP
+              (NP (NN:[1101..1104] GGT))
+              (PP (HYPH:[1104..1105] -)
+                (NP (NN:[1105..1108] GTT) (SYM:[1108..1109] /)
+                    (NN:[1109..1112] GGT))))
+            (-RRB-:[1112..1113] -RRB-)))
+        (CC:[1114..1117] and)
+        (VP
+          (NP=2 (NN:[1118..1123] K-ras))
+          (PP-LOC=3 (IN:[1124..1126] at)
+            (NP (NN:[1127..1132] codon) (CD:[1133..1135] 12)))
+          (PP=5 (IN:[1136..1138] in)
+            (NP (CD:[1139..1140] 2) (NNS:[1141..1146] cases)))
+          (PRN=4 (-LRB-:[1147..1148] -LRB-)
+            (NP
+              (NP
+                (NP (NN:[1148..1151] GGT))
+                (PP (HYPH:[1151..1152] -)
+                  (NP (NN:[1152..1155] GCT) (SYM:[1155..1156] /)
+                      (NN:[1156..1159] GGT))))
+              (,:[1159..1160] ,)
+              (NP
+                (NP (NN:[1161..1164] GGT))
+                (PP (HYPH:[1164..1165] -)
+                  (NP (NN:[1165..1168] GTT) (SYM:[1168..1169] /)
+                      (NN:[1169..1172] GGT)))))
+            (-RRB-:[1172..1173] -RRB-)))))
+    (.:[1173..1174] .)))
+
+;sentence 10 Span:1175..1236
+;All 3  cases had progressed far beyond grade 2 and stage pT2.
+;[1214..1221]:malignancy:"grade 2"
+;[1226..1235]:malignancy:"stage pT2"
+(SENT
+  (S
+    (NP-SBJ (DT:[1175..1178] All) (CD:[1179..1180] 3) (NNS:[1182..1187] cases))
+    (VP (VBD:[1188..1191] had)
+      (VP (VBN:[1192..1202] progressed)
+        (PP
+          (ADVP (RB:[1203..1206] far))
+          (IN:[1207..1213] beyond)
+          (NP
+            (NP (NN:[1214..1219] grade) (CD:[1220..1221] 2))
+            (CC:[1222..1225] and)
+            (NP (NN:[1226..1231] stage) (NN:[1232..1235] pT2))))))
+    (.:[1235..1236] .)))
+
+;sentence 11 Span:1237..1353
+;It follows from the above  that NF1 and ras gene mutations are infrequent in
+;the pathogenesis of urothelial  tumors.
+;[1269..1272]:gene-rna:"NF1"
+;[1277..1280]:gene-rna:"ras"
+;[1334..1352]:malignancy:"urothelial  tumors"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1237..1239] It))
+    (VP (VBZ:[1240..1247] follows)
+      (PP (IN:[1248..1252] from)
+        (NP (DT:[1253..1256] the) (NN:[1257..1262] above)))
+      (SBAR (IN:[1264..1268] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1269..1272] NF1)
+              (NML-1 (-NONE-:[1272..1272] *P*)))
+            (CC:[1273..1276] and)
+            (NP
+              (NML (NN:[1277..1280] ras) (NN:[1281..1285] gene))
+              (NML-1 (NNS:[1286..1295] mutations))))
+          (VP (VBP:[1296..1299] are)
+            (ADJP-PRD (JJ:[1300..1310] infrequent))
+            (PP (IN:[1311..1313] in)
+              (NP
+                (NP (DT:[1314..1317] the) (NN:[1318..1330] pathogenesis))
+                (PP (IN:[1331..1333] of)
+                  (NP (JJ:[1334..1344] urothelial) (NNS:[1346..1352] tumors)))))))))
+    (.:[1352..1353] .)))
+
+;section 12 Span:1357..1401
+;PMID: 8533197 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1357..1361] PMID) (::[1361..1362] :) (CD:[1363..1370] 8533197)
+        (NN:[1371..1372] -LSB-) (NNP:[1372..1378] PubMed) (::[1379..1380] -)
+        (NN:[1381..1388] indexed) (IN:[1389..1392] for)
+        (NNP:[1393..1401] MEDLINE-RSB-)))

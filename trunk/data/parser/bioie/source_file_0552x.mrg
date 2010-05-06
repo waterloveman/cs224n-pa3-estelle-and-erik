@@ -1,0 +1,284 @@
+;PMID: 1921261
+;source_file_810.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..116] = [t:41..116]
+;2)section:[e:120..162] = [t:120..162]
+;3)section:[e:166..240] = [t:166..240]
+;4)sentence:[e:244..381] = [t:244..381]
+;5)sentence:[e:382..544] = [t:382..544]
+;6)sentence:[e:545..664] = [t:545..664]
+;7)sentence:[e:665..871] = [t:665..871]
+;8)sentence:[e:872..1051] = [t:872..1051]
+;9)sentence:[e:1052..1139] = [t:1052..1139]
+;10)section:[e:1143..1187] = [t:1143..1187]
+
+;section 0 Span:0..36
+;Kobe J Med Sci  1991 Feb;37(1):35-45
+(SEC
+  (FRAG (NNP:[0..4] Kobe) (NNP:[5..6] J) (NNP:[7..10] Med) (NNP:[11..14] Sci)
+        (CD:[16..20] 1991) (CC:[21..28] Feb;37-LRB-) (CD:[28..29] 1)
+        (-RRB-:[29..30] -RRB-) (CD:[30..33] :35) (::[33..34] -) (CD:[34..36] 45)))
+
+;sentence 1 Span:41..116
+;RAS gene mutations in multiple myeloma and related monoclonal gammopathies.
+;[41..44]:gene-rna:"RAS"
+;[63..79]:malignancy:"multiple myeloma"
+;[92..115]:malignancy:"monoclonal gammopathies"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[41..44] RAS) (NN:[45..49] gene) (NNS:[50..59] mutations))
+      (PP-LOC (IN:[60..62] in)
+        (NP (JJ:[63..71] multiple) (NN:[72..79] myeloma))))
+    (CC:[80..83] and)
+    (NP (JJ:[84..91] related)
+       (JJ:[92..102] monoclonal) (NNS:[103..115] gammopathies))
+    (.:[115..116] .)))
+
+;section 2 Span:120..162
+;Matozaki S, Nakagawa T, Nakao Y, Fujita T.
+(SEC
+  (FRAG (NNP:[120..128] Matozaki) (NNP:[129..131] S,) (NNP:[132..140] Nakagawa)
+        (NNP:[141..142] T) (,:[142..143] ,) (NNP:[144..149] Nakao)
+        (NNP:[150..151] Y) (,:[151..152] ,) (NNP:[153..159] Fujita)
+        (NNP:[160..162] T.)))
+
+;section 3 Span:166..240
+;Department of Hematology/Oncology, Hyogo Medical Center for Adult, Akashi.
+(SEC
+  (FRAG (NNP:[166..176] Department) (IN:[177..179] of)
+        (NNP:[180..190] Hematology) (NNP:[190..191] /) (NNP:[191..199] Oncology)
+        (,:[199..200] ,) (NNP:[201..206] Hyogo) (NNP:[207..214] Medical)
+        (NNP:[215..221] Center) (IN:[222..225] for) (NNP:[226..231] Adult)
+        (,:[231..232] ,) (NNP:[233..239] Akashi) (.:[239..240] .)))
+
+;sentence 4 Span:244..381
+;The presence of RAS gene mutations in precancerous lesions suggests that they
+; participate in the early stages of neoplastic development.
+;[260..263]:gene-rna:"RAS"
+;[282..302]:malignancy:"precancerous lesions"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[244..247] The) (NN:[248..256] presence))
+      (PP (IN:[257..259] of)
+        (NP (NN:[260..263] RAS) (NN:[264..268] gene) (NNS:[269..278] mutations)))
+      (PP-LOC (IN:[279..281] in)
+        (NP (JJ:[282..294] precancerous) (NNS:[295..302] lesions))))
+    (VP (VBZ:[303..311] suggests)
+      (SBAR (IN:[312..316] that)
+        (S
+          (NP-SBJ (PRP:[317..321] they))
+          (VP (VBP:[323..334] participate)
+            (PP-CLR (IN:[335..337] in)
+              (NP
+                (NP (DT:[338..341] the) (JJ:[342..347] early)
+                    (NNS:[348..354] stages))
+                (PP (IN:[355..357] of)
+                  (NP (JJ:[358..368] neoplastic) (NN:[369..380] development)))))))))
+    (.:[380..381] .)))
+
+;sentence 5 Span:382..544
+;Furthermore,  neoplastic progression from monoclonal gammopathy of
+;undetermined significance  (MGUS) to overt multiple myeloma (MM) have been
+;frequently observed.
+;[424..474]:malignancy:"monoclonal gammopathy of undetermined significance"
+;[477..481]:malignancy:"MGUS"
+;[492..508]:malignancy:"multiple myeloma"
+;[510..512]:malignancy:"MM"
+(SENT
+  (S
+    (ADVP (RB:[382..393] Furthermore))
+    (,:[393..394] ,)
+    (NP-SBJ-1
+      (NP (JJ:[396..406] neoplastic) (NN:[407..418] progression))
+      (PP (IN:[419..423] from)
+        (NP
+          (NP
+            (NP (JJ:[424..434] monoclonal) (NN:[435..445] gammopathy))
+            (PP (IN:[446..448] of)
+              (NP (JJ:[449..461] undetermined) (NN:[462..474] significance))))
+          (NP (-LRB-:[476..477] -LRB-) (NN:[477..481] MGUS)
+              (-RRB-:[481..482] -RRB-))))
+      (PP (TO:[483..485] to)
+        (NP (JJ:[486..491] overt)
+          (NML
+            (NML (JJ:[492..500] multiple) (NN:[501..508] myeloma))
+            (NML (-LRB-:[509..510] -LRB-) (NN:[510..512] MM)
+                 (-RRB-:[512..513] -RRB-))))))
+    (VP (VBP:[514..518] have)
+      (VP (VBN:[519..523] been)
+        (ADVP (RB:[524..534] frequently))
+        (VP (VBN:[535..543] observed)
+          (NP-1 (-NONE-:[543..543] *)))))
+    (.:[543..544] .)))
+
+;sentence 6 Span:545..664
+;These  observations prompted us to study the pathogenetic role of RAS genes
+;in MM and  related monoclonal gammopathies.
+;[611..614]:gene-rna:"RAS"
+;[624..626]:malignancy:"MM"
+;[640..663]:malignancy:"monoclonal gammopathies"
+(SENT
+  (S
+    (NP-SBJ (DT:[545..550] These) (NNS:[552..564] observations))
+    (VP (VBD:[565..573] prompted)
+      (S
+        (NP-SBJ (PRP:[574..576] us))
+        (VP (TO:[577..579] to)
+          (VP (VB:[580..585] study)
+            (NP
+              (NP (DT:[586..589] the) (JJ:[590..602] pathogenetic)
+                  (NN:[603..607] role))
+              (PP (IN:[608..610] of)
+                (NP (NN:[611..614] RAS) (NNS:[615..620] genes)))
+              (PP (IN:[621..623] in)
+                (NP
+                  (NP (NN:[624..626] MM))
+                  (CC:[627..630] and)
+                  (NP (JJ:[632..639] related)
+                     (JJ:[640..650] monoclonal) (NNS:[651..663] gammopathies)))))))))
+    (.:[663..664] .)))
+
+;sentence 7 Span:665..871
+;DNA from 18 patients with monoclonal  gamma-globulinemia including 12 MM were
+;investigated for the presence of N- and  K-RAS gene mutations by polymerase
+;chain reaction (PCR)/oligonucleotide  hybridization.
+;[691..721]:malignancy:"monoclonal  gamma-globulinemia"
+;[735..737]:malignancy:"MM"
+;[776..778]...[786..789]:gene-rna:"N-"..."RAS"
+;[784..789]:gene-rna:"K-RAS"
+;[808..818]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[665..668] DNA))
+      (PP (IN:[669..673] from)
+        (NP
+          (NP (CD:[674..676] 18) (NNS:[677..685] patients))
+          (PP (IN:[686..690] with)
+            (NP
+              (NP (JJ:[691..701] monoclonal) (NN:[703..721] gamma-globulinemia))
+              (PP (VBG:[722..731] including)
+                (NP (CD:[732..734] 12) (NN:[735..737] MM))))))))
+    (VP (VBD:[738..742] were)
+      (VP (VBN:[743..755] investigated)
+        (NP-1 (-NONE-:[755..755] *))
+        (PP (IN:[756..759] for)
+          (NP
+            (NP (DT:[760..763] the) (NN:[764..772] presence))
+            (PP (IN:[773..775] of)
+              (NP
+                (NP
+                  (NML (NN:[776..777] N) (HYPH:[777..778] -)
+                    (NML-2 (-NONE-:[778..778] *P*)))
+                  (NML-3 (-NONE-:[778..778] *P*)))
+                (CC:[779..782] and)
+                (NP
+                  (NML (NN:[784..785] K) (HYPH:[785..786] -)
+                    (NML-2 (NN:[786..789] RAS)))
+                  (NML-3 (NN:[790..794] gene) (NNS:[795..804] mutations)))))))
+        (PP-MNR (IN:[805..807] by)
+          (NP
+            (NP
+              (NP (NN:[808..818] polymerase) (NN:[819..824] chain)
+                  (NN:[825..833] reaction))
+              (NP (-LRB-:[834..835] -LRB-) (NN:[835..838] PCR)
+                  (-RRB-:[838..839] -RRB-)))
+            (SYM:[839..840] /)
+            (NP (NN:[840..855] oligonucleotide) (NN:[857..870] hybridization))))))
+    (.:[870..871] .)))
+
+;sentence 8 Span:872..1051
+;Mutations involving codons 12, 13 or 61 of N-RAS gene were  identified in 3
+;of the 12 MM patients, 1 of the solitary plasmacytoma patients  and none of
+;the 3 of the MGUS patients.
+;[872..881]:variation-event:"Mutations"
+;[892..901]:variation-location:"codons 12"
+;[892..898]...[909..911]:variation-location:"codons"..."61"
+;[892..898]...[903..905]:variation-location:"codons"..."13"
+;[915..920]:gene-rna:"N-RAS"
+;[958..960]:malignancy:"MM"
+;[980..1001]:malignancy:"solitary plasmacytoma"
+;[1037..1041]:malignancy:"MGUS"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NNS:[872..881] Mutations))
+      (VP (VBG:[882..891] involving)
+        (NP
+          (NP
+            (NP
+              (NML-1 (NNS:[892..898] codons))
+              (CD:[899..901] 12))
+            (,:[901..902] ,)
+            (NP
+              (NML-1 (-NONE-:[902..902] *P*))
+              (CD:[903..905] 13))
+            (CC:[906..908] or)
+            (NP
+              (NML-1 (-NONE-:[908..908] *P*))
+              (CD:[909..911] 61)))
+          (PP (IN:[912..914] of)
+            (NP (NN:[915..920] N-RAS) (NN:[921..925] gene))))))
+    (VP (VBD:[926..930] were)
+      (VP (VBN:[932..942] identified)
+        (NP-2 (-NONE-:[942..942] *))
+        (PP-LOC (IN:[943..945] in)
+          (NP
+            (NP
+              (NP (CD:[946..947] 3))
+              (PP (IN:[948..950] of)
+                (NP (DT:[951..954] the) (CD:[955..957] 12) (NN:[958..960] MM)
+                    (NNS:[961..969] patients))))
+            (,:[969..970] ,)
+            (NP
+              (NP (CD:[971..972] 1))
+              (PP (IN:[973..975] of)
+                (NP (DT:[976..979] the)
+                  (NML (JJ:[980..988] solitary) (NN:[989..1001] plasmacytoma))
+                  (NNS:[1002..1010] patients))))
+            (CC:[1012..1015] and)
+            (NP
+              (NP (NN:[1016..1020] none))
+              (PP (IN:[1021..1023] of)
+                (NP
+                  (NP (DT:[1024..1027] the) (CD:[1028..1029] 3))
+                  (PP (IN:[1030..1032] of)
+                    (NP (DT:[1033..1036] the) (NN:[1037..1041] MGUS)
+                        (NNS:[1042..1050] patients))))))))))
+    (.:[1050..1051] .)))
+
+;sentence 9 Span:1052..1139
+;In the case of plasmacytoma, RAS  mutations were detected in his bone marrow
+;specimens.
+;[1067..1079]:malignancy:"plasmacytoma"
+;[1081..1084]:gene-rna:"RAS"
+(SENT
+  (S
+    (PP (IN:[1052..1054] In)
+      (NP
+        (NP (DT:[1055..1058] the) (NN:[1059..1063] case))
+        (PP (IN:[1064..1066] of)
+          (NP (NN:[1067..1079] plasmacytoma)))))
+    (,:[1079..1080] ,)
+    (NP-SBJ-1 (NN:[1081..1084] RAS) (NNS:[1086..1095] mutations))
+    (VP (VBD:[1096..1100] were)
+      (VP (VBN:[1101..1109] detected)
+        (NP-1 (-NONE-:[1109..1109] *))
+        (PP-LOC (IN:[1110..1112] in)
+          (NP (PRP$:[1113..1116] his)
+            (NML (NN:[1117..1121] bone) (NN:[1122..1128] marrow))
+            (NNS:[1129..1138] specimens)))))
+    (.:[1138..1139] .)))
+
+;section 10 Span:1143..1187
+;PMID: 1921261 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1143..1147] PMID) (::[1147..1148] :) (CD:[1149..1156] 1921261)
+        (NN:[1157..1158] -LSB-) (NNP:[1158..1164] PubMed) (::[1165..1166] -)
+        (NN:[1167..1174] indexed) (IN:[1175..1178] for)
+        (NNP:[1179..1187] MEDLINE-RSB-)))

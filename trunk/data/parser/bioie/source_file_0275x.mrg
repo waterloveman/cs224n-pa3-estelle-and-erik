@@ -1,0 +1,245 @@
+;PMID: 10071245
+;source_file_756.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..147] = [t:42..147]
+;2)section:[e:151..205] = [t:151..205]
+;3)section:[e:209..281] = [t:209..281]
+;4)sentence:[e:285..495] = [t:285..495]
+;5)sentence:[e:496..646] = [t:496..646]
+;6)sentence:[e:647..779] = [t:647..779]
+;7)sentence:[e:780..907] = [t:780..907]
+;8)sentence:[e:908..1093] = [t:908..1093]
+;9)section:[e:1097..1142] = [t:1097..1142]
+
+;section 0 Span:0..37
+;Virchows Arch  1999 Feb;434(2):117-20
+(SEC
+  (FRAG (NNP:[0..8] Virchows) (NNP:[9..13] Arch) (CD:[15..19] 1999)
+        (.:[20..28] Feb;434-LRB-) (CD:[28..29] 2) (-RRB-:[29..30] -RRB-)
+        (CD:[30..34] :117) (::[34..35] -) (CD:[35..37] 20)))
+
+;sentence 1 Span:42..147
+;In serous ovarian neoplasms the frequency of Ki-ras mutations correlates with
+; their malignant potential.
+;[45..69]:malignancy:"serous ovarian neoplasms"
+;[87..93]:gene-rna:"Ki-ras"
+(SENT
+  (S-HLN
+    (PP-LOC (IN:[42..44] In)
+      (NP (JJ:[45..51] serous) (JJ:[52..59] ovarian) (NNS:[60..69] neoplasms)))
+    (NP-SBJ
+      (NP (DT:[70..73] the) (NN:[74..83] frequency))
+      (PP (IN:[84..86] of)
+        (NP (NN:[87..93] Ki-ras) (NNS:[94..103] mutations))))
+    (VP (VBZ:[104..114] correlates)
+      (PP-CLR (IN:[115..119] with)
+        (NP (PRP$:[121..126] their) (JJ:[127..136] malignant)
+            (NN:[137..146] potential))))
+    (.:[146..147] .)))
+
+;section 2 Span:151..205
+;Haas CJ, Diebold J, Hirschmann A, Rohrbach H, Lohrs U.
+(SEC
+  (FRAG (NNP:[151..155] Haas) (NNP:[156..158] CJ) (,:[158..159] ,)
+        (NNP:[160..167] Diebold) (NNP:[168..170] J,) (NNP:[171..181] Hirschmann)
+        (NNP:[182..183] A) (,:[183..184] ,) (NNP:[185..193] Rohrbach)
+        (NNP:[194..195] H) (,:[195..196] ,) (NNP:[197..202] Lohrs)
+        (NNP:[203..205] U.)))
+
+;section 3 Span:209..281
+;Institute of Pathology, Ludwig-Maximilians-Universitat, Munich, Germany.
+(SEC
+  (FRAG (NNP:[209..218] Institute) (IN:[219..221] of) (NNP:[222..231] Pathology)
+        (,:[231..232] ,) (NNP:[233..239] Ludwig) (::[239..240] -)
+        (NNP:[240..251] Maximilians) (::[251..252] -)
+        (NNP:[252..263] Universitat) (,:[263..264] ,) (NNP:[265..271] Munich)
+        (,:[271..272] ,) (NNP:[273..280] Germany) (.:[280..281] .)))
+
+;sentence 4 Span:285..495
+;We analysed 44 tissue samples from serous ovarian neoplasms of different 
+;malignant potential for Ki-ras mutations by denaturing gradient gel 
+;electrophoresis (DGGE) and direct sequencing after microdissection.
+;[320..344]:malignancy:"serous ovarian neoplasms"
+;[383..389]:gene-rna:"Ki-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[285..287] We))
+    (VP (VBD:[288..296] analysed)
+      (NP
+        (NP (CD:[297..299] 44) (NN:[300..306] tissue) (NNS:[307..314] samples))
+        (PP (IN:[315..319] from)
+          (NP
+            (NP (JJ:[320..326] serous) (JJ:[327..334] ovarian)
+                (NNS:[335..344] neoplasms))
+            (PP (IN:[345..347] of)
+              (NP (JJ:[348..357] different) (JJ:[359..368] malignant)
+                  (NN:[369..378] potential))))))
+      (PP-PRP (IN:[379..382] for)
+        (NP (NN:[383..389] Ki-ras) (NNS:[390..399] mutations)))
+      (PP-MNR (IN:[400..402] by)
+        (NP
+          (NP
+            (NP
+              (NML (VBG:[403..413] denaturing) (NN:[414..422] gradient))
+              (NN:[423..426] gel) (NN:[428..443] electrophoresis))
+            (NP (-LRB-:[444..445] -LRB-) (NN:[445..449] DGGE)
+                (-RRB-:[449..450] -RRB-)))
+          (CC:[451..454] and)
+          (NP
+            (NP (JJ:[455..461] direct) (NN:[462..472] sequencing))
+            (PP-TMP (IN:[473..478] after)
+              (NP (NN:[479..494] microdissection)))))))
+    (.:[494..495] .)))
+
+;sentence 5 Span:496..646
+;Point  mutations at codon 12 were found in 7 of 20 tumours of low malignant
+;potential  (LMP) (35%) and in 2 of 6 well-differentiated carcinomas (33%).
+;[496..512]:variation-type:"Point  mutations"
+;[516..524]:variation-location:"codon 12"
+;[547..581]:malignancy:"tumours of low malignant potential"
+;[584..587]:malignancy:"LMP"
+;[609..639]:malignancy:"well-differentiated carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[496..501] Point) (NNS:[503..512] mutations))
+      (PP-LOC (IN:[513..515] at)
+        (NP (NN:[516..521] codon) (CD:[522..524] 12))))
+    (VP (VBD:[525..529] were)
+      (VP (VBN:[530..535] found)
+        (NP-1 (-NONE-:[535..535] *))
+        (PP-LOC
+          (PP (IN:[536..538] in)
+            (NP
+              (NP (CD:[539..540] 7))
+              (PP (IN:[541..543] of)
+                (NP
+                  (NP (CD:[544..546] 20) (NNS:[547..554] tumours))
+                  (PP (IN:[555..557] of)
+                    (NP
+                      (NP (JJ:[558..561] low) (JJ:[562..571] malignant)
+                          (NN:[572..581] potential))
+                      (NP (-LRB-:[583..584] -LRB-) (NN:[584..587] LMP)
+                          (-RRB-:[587..588] -RRB-))))))
+              (PRN (-LRB-:[589..590] -LRB-)
+                (NP (CD:[590..592] 35) (NN:[592..593] %))
+                (-RRB-:[593..594] -RRB-))))
+          (CC:[595..598] and)
+          (PP (IN:[599..601] in)
+            (NP
+              (NP (CD:[602..603] 2))
+              (PP (IN:[604..606] of)
+                (NP (CD:[607..608] 6)
+                  
+                  (ADJP (RB:[609..613] well) (HYPH:[613..614] -)
+                        (JJ:[614..628] differentiated))
+                  (NNS:[629..639] carcinomas)))
+              (PRN (-LRB-:[640..641] -LRB-)
+                (NP (CD:[641..643] 33) (NN:[643..644] %))
+                (-RRB-:[644..645] -RRB-)))))))
+    (.:[645..646] .)))
+
+;sentence 6 Span:647..779
+;In contrast, no  mutations were detected in the 11 poorly differentiated
+;ovarian carcinoma  samples or in the 7 serous cystadenomas.
+;[698..737]:malignancy:"poorly differentiated ovarian carcinoma"
+;[759..778]:malignancy:"serous cystadenomas"
+(SENT
+  (S
+    (PP (IN:[647..649] In)
+      (NP (NN:[650..658] contrast)))
+    (,:[658..659] ,)
+    (NP-SBJ-1 (DT:[660..662] no) (NNS:[664..673] mutations))
+    (VP (VBD:[674..678] were)
+      (VP (VBN:[679..687] detected)
+        (NP-1 (-NONE-:[687..687] *))
+        (PP-LOC
+          (PP (IN:[688..690] in)
+            (NP (DT:[691..694] the) (CD:[695..697] 11)
+              
+              (ADJP (RB:[698..704] poorly) (JJ:[705..719] differentiated))
+              (JJ:[720..727] ovarian) (NN:[728..737] carcinoma)
+              (NNS:[739..746] samples)))
+          (CC:[747..749] or)
+          (PP (IN:[750..752] in)
+            (NP (DT:[753..756] the) (CD:[757..758] 7)
+               (JJ:[759..765] serous) (NNS:[766..778] cystadenomas))))))
+    (.:[778..779] .)))
+
+;sentence 7 Span:780..907
+;The frequency of Ki-ras mutations in  serous ovarian tumours seems to
+;correlate with the malignant potential of the  neoplasms.
+;[797..803]:gene-rna:"Ki-ras"
+;[818..840]:malignancy:"serous ovarian tumours"
+;[897..906]:malignancy:"neoplasms"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[780..783] The) (NN:[784..793] frequency))
+      (PP (IN:[794..796] of)
+        (NP
+          (NP (NN:[797..803] Ki-ras) (NNS:[804..813] mutations))
+          (PP-LOC (IN:[814..816] in)
+            (NP (JJ:[818..824] serous) (JJ:[825..832] ovarian)
+                (NNS:[833..840] tumours))))))
+    (VP (VBZ:[841..846] seems)
+      (S
+        (NP-SBJ-1 (-NONE-:[846..846] *))
+        (VP (TO:[847..849] to)
+          (VP (VB:[850..859] correlate)
+            (PP-CLR (IN:[860..864] with)
+              (NP
+                (NP (DT:[865..868] the) (JJ:[869..878] malignant)
+                    (NN:[879..888] potential))
+                (PP (IN:[889..891] of)
+                  (NP (DT:[892..895] the) (NNS:[897..906] neoplasms)))))))))
+    (.:[906..907] .)))
+
+;sentence 8 Span:908..1093
+;The data favour the hypothesis of a de novo development of poorly 
+;differentiated ovarian carcinomas and do not support an evolution from LMP 
+;tumours or well-differentiated carcinomas.
+;[967..1008]:malignancy:"poorly  differentiated ovarian carcinomas"
+;[1046..1058]:malignancy:"LMP  tumours"
+;[1062..1092]:malignancy:"well-differentiated carcinomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[908..911] The) (NNS:[912..916] data))
+    (VP
+      (VP (VBP:[917..923] favour)
+        (NP
+          (NP (DT:[924..927] the) (NN:[928..938] hypothesis))
+          (PP (IN:[939..941] of)
+            (NP
+              (NP (DT:[942..943] a)
+                (ADJP (FW:[944..946] de) (FW:[947..951] novo))
+                (NN:[952..963] development))
+              (PP (IN:[964..966] of)
+                (NP
+                  (ADJP (RB:[967..973] poorly) (JJ:[975..989] differentiated))
+                  (JJ:[990..997] ovarian) (NNS:[998..1008] carcinomas)))))))
+      (CC:[1009..1012] and)
+      (VP (VBP:[1013..1015] do) (RB:[1016..1019] not)
+        (VP (VB:[1020..1027] support)
+          (NP
+            (NP (DT:[1028..1030] an) (NN:[1031..1040] evolution))
+            (PP (IN:[1041..1045] from)
+              (NP
+                (NP (NN:[1046..1049] LMP) (NNS:[1051..1058] tumours))
+                (CC:[1059..1061] or)
+                (NP
+                  (ADJP (RB:[1062..1066] well) (HYPH:[1066..1067] -)
+                        (JJ:[1067..1081] differentiated))
+                  (NNS:[1082..1092] carcinomas))))))))
+    (.:[1092..1093] .)))
+
+;section 9 Span:1097..1142
+;PMID: 10071245 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1097..1101] PMID) (::[1101..1102] :) (CD:[1103..1111] 10071245)
+        (NN:[1112..1113] -LSB-) (NNP:[1113..1119] PubMed) (::[1120..1121] -)
+        (NN:[1122..1129] indexed) (IN:[1130..1133] for)
+        (NNP:[1134..1142] MEDLINE-RSB-)))

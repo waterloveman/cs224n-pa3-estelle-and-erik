@@ -1,0 +1,480 @@
+;PMID: 9242359
+;source_file_1872.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..213] = [t:44..213]
+;2)section:[e:217..254] = [t:217..254]
+;3)section:[e:258..421] = [t:258..421]
+;4)sentence:[e:425..544] = [t:425..544]
+;5)sentence:[e:545..683] = [t:545..683]
+;6)sentence:[e:684..838] = [t:684..838]
+;7)sentence:[e:839..954] = [t:839..954]
+;8)sentence:[e:955..1148] = [t:955..1148]
+;9)sentence:[e:1149..1324] = [t:1149..1324]
+;10)sentence:[e:1325..1459] = [t:1325..1459]
+;11)sentence:[e:1460..1651] = [t:1460..1651]
+;12)sentence:[e:1652..1885] = [t:1652..1885]
+;13)sentence:[e:1886..2062] = [t:1886..2062]
+;14)section:[e:2066..2110] = [t:2066..2110]
+
+;section 0 Span:0..38
+;Toxicol Lett. 1997 Jun 16;92(1):67-77.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..12] Lett) (.:[12..13] .)
+        (CD:[14..18] 1997) (NNP:[19..22] Jun) (CD:[23..25] 16) (::[25..26] ;)
+        (CD:[26..28] 92) (-LRB-:[28..29] -LRB-) (CD:[29..30] 1)
+        (-RRB-:[30..31] -RRB-) (::[31..32] :) (CD:[32..34] 67) (::[34..35] -)
+        (CD:[35..37] 77) (.:[37..38] .)))
+
+;sentence 1 Span:44..213
+;alpha-Tocopheryl hemisuccinate administration increases rat liver subcellular
+; alpha-tocopherol levels and protects against carbon tetrachloride-induced 
+;hepatotoxicity.
+;[44..74]:substance:"alpha-Tocopheryl hemisuccinate"
+;[123..139]:substance:"alpha-tocopherol"
+;[168..188]:substance:"carbon tetrachloride"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML (NN:[44..60] alpha-Tocopheryl) (NN:[61..74] hemisuccinate))
+      (NN:[75..89] administration))
+    (VP
+      (VP (VBZ:[90..99] increases)
+        (NP (NN:[100..103] rat) (NN:[104..109] liver)
+            (JJ:[110..121] subcellular) (NN:[123..139] alpha-tocopherol)
+            (NNS:[140..146] levels)))
+      (CC:[147..150] and)
+      (VP (VBZ:[151..159] protects)
+        (PP-CLR (IN:[160..167] against)
+          (NP
+            (ADJP
+              (NML (NN:[168..174] carbon) (NN:[175..188] tetrachloride))
+              (HYPH:[188..189] -) (VBN:[189..196] induced))
+            (NN:[198..212] hepatotoxicity)))))
+    (.:[212..213] .)))
+
+;section 2 Span:217..254
+;Tirmenstein MA, Leraas TL, Fariss MW.
+(SEC
+  (FRAG (NNP:[217..228] Tirmenstein) (NNP:[229..231] MA) (,:[231..232] ,)
+        (NNP:[233..239] Leraas) (NNP:[240..242] TL) (,:[242..243] ,)
+        (NNP:[244..250] Fariss) (NNP:[251..253] MW) (.:[253..254] .)))
+
+;section 3 Span:258..421
+;Department of Pharmaceutical Sciences, College of Pharmacy and Graduate
+;Program  in Pharmacology/Toxicology, Washington State University, Pullman
+;99164-6510,  USA.
+(SEC
+  (FRAG (NNP:[258..268] Department) (IN:[269..271] of)
+        (NNP:[272..286] Pharmaceutical) (NNP:[287..295] Sciences)
+        (,:[295..296] ,) (NNP:[297..304] College) (IN:[305..307] of)
+        (NNP:[308..316] Pharmacy) (CC:[317..320] and) (NNP:[321..329] Graduate)
+        (NNP:[330..337] Program) (IN:[339..341] in)
+        (NNP:[342..354] Pharmacology) (SYM:[354..355] /)
+        (NNP:[355..365] Toxicology) (,:[365..366] ,) (NNP:[367..377] Washington)
+        (NNP:[378..383] State) (NNP:[384..394] University) (,:[394..395] ,)
+        (NNP:[396..403] Pullman) (CD:[404..409] 99164) (HYPH:[409..410] -)
+        (CD:[410..414] 6510) (,:[414..415] ,) (NNP:[417..420] USA)
+        (.:[420..421] .)))
+
+;sentence 4 Span:425..544
+;Rats were administered a series of tocopherol analogs 18 h prior to a 
+;hepatotoxic dose of carbon tetrachloride (CCl4).
+;[460..470]:substance:"tocopherol"
+;[471..478]:substance:"analogs"
+;[479..481]:quantitative-value:"18"
+;[482..483]:quantitative-units:"h"
+;[516..536]:substance:"carbon tetrachloride"
+;[538..542]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[425..429] Rats))
+    (VP (VBD:[430..434] were)
+      (VP (VBN:[435..447] administered)
+        (NP-1 (-NONE-:[447..447] *))
+        (NP
+          (NP (DT:[448..449] a) (NN:[450..456] series))
+          (PP (IN:[457..459] of)
+            (NP (NN:[460..470] tocopherol) (NNS:[471..478] analogs))))
+        (NP-TMP
+          (NP (CD:[479..481] 18) (NN:[482..483] h))
+          (ADJP (JJ:[484..489] prior)
+            (PP (TO:[490..492] to)
+              (NP
+                (NP (DT:[493..494] a) (JJ:[496..507] hepatotoxic)
+                    (NN:[508..512] dose))
+                (PP (IN:[513..515] of)
+                  (NP
+                    (NP (NN:[516..522] carbon) (NN:[523..536] tetrachloride))
+                    (NP (-LRB-:[537..538] -LRB-) (NN:[538..542] CCl4)
+                        (-RRB-:[542..543] -RRB-))))))))))
+    (.:[543..544] .)))
+
+;sentence 5 Span:545..683
+;Of the compounds tested, only  d-alpha-tocopheryl hemisuccinate (TS) provided
+;significant protection against  CCl4-induced hepatotoxicity.
+;[552..561]:substance:"compounds"
+;[576..608]:substance:"d-alpha-tocopheryl hemisuccinate"
+;[610..612]:substance:"TS"
+;[655..659]:substance:"CCl4"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[545..547] Of)
+      (NP
+        (NP (DT:[548..551] the) (NNS:[552..561] compounds))
+        (VP (VBN:[562..568] tested)
+          (NP (-NONE-:[568..568] *)))))
+    (,:[568..569] ,)
+    (NP-SBJ
+      (NP
+        (NP
+          (ADVP (RB:[570..574] only))
+           (NN:[576..594] d-alpha-tocopheryl) (NN:[595..608] hemisuccinate))
+        (NP (-LRB-:[609..610] -LRB-) (NN:[610..612] TS) (-RRB-:[612..613] -RRB-)))
+      (PP-1 (-NONE-:[613..613] *T*)))
+    (VP (VBD:[614..622] provided)
+      (NP
+        (NP (JJ:[623..634] significant) (NN:[635..645] protection))
+        (PP (IN:[646..653] against)
+          (NP
+            (ADJP (NN:[655..659] CCl4) (HYPH:[659..660] -)
+                  (VBN:[660..667] induced))
+            (NN:[668..682] hepatotoxicity)))))
+    (.:[682..683] .)))
+
+;sentence 6 Span:684..838
+;No protection was observed with either  d-alpha-tocopherol (alpha-T) or a
+;tocopherol succinate ether derivative,  d-alpha-tocopheryloxybutyric acid
+;(TSE).
+;[724..742]:substance:"d-alpha-tocopherol"
+;[744..751]:substance:"alpha-T"
+;[758..795]:substance:"tocopherol succinate ether derivative"
+;[798..831]:substance:"d-alpha-tocopheryloxybutyric acid"
+;[833..836]:substance:"TSE"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[684..686] No) (NN:[687..697] protection))
+    (VP (VBD:[698..701] was)
+      (VP (VBN:[702..710] observed)
+        (NP-1 (-NONE-:[710..710] *))
+        (PP (IN:[711..715] with)
+          (NP (CC:[716..722] either)
+            (NP
+              (NP (NN:[724..742] d-alpha-tocopherol))
+              (NP (-LRB-:[743..744] -LRB-) (NN:[744..751] alpha-T)
+                  (-RRB-:[751..752] -RRB-)))
+            (CC:[753..755] or)
+            (NP
+              (NP (DT:[756..757] a)
+                
+                (NML (NN:[758..768] tocopherol) (NN:[769..778] succinate))
+                (NN:[779..784] ether) (NN:[785..795] derivative))
+              (,:[795..796] ,)
+              (NP
+                (NP (JJ:[798..826] d-alpha-tocopheryloxybutyric)
+                    (NN:[827..831] acid))
+                (NP (-LRB-:[832..833] -LRB-) (NN:[833..836] TSE)
+                    (-RRB-:[836..837] -RRB-))))))))
+    (.:[837..838] .)))
+
+;sentence 7 Span:839..954
+;None of the tocopherol analogs  significantly inhibited CYP2E1 activity as
+;measured by oxidation of  p-nitrophenol.
+;[851..861]:substance:"tocopherol"
+;[862..869]:substance:"analogs"
+;[895..901]:cyp450:"CYP2E1"
+;[940..953]:substance:"p-nitrophenol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[839..843] None))
+      (PP (IN:[844..846] of)
+        (NP (DT:[847..850] the) (NN:[851..861] tocopherol)
+            (NNS:[862..869] analogs))))
+    (ADVP-EXT (RB:[871..884] significantly))
+    (VP (VBD:[885..894] inhibited)
+      (NP (NN:[895..901] CYP2E1) (NN:[902..910] activity))
+      (PP-MNR (IN:[911..913] as)
+        (S-NOM
+          (NP-SBJ-1 (-NONE-:[913..913] *))
+          (VP (VBN:[914..922] measured)
+            (NP-1 (-NONE-:[922..922] *))
+            (PP-MNR (IN:[923..925] by)
+              (NP
+                (NP (NN:[926..935] oxidation))
+                (PP (IN:[936..938] of)
+                  (NP (NN:[940..953] p-nitrophenol)))))))))
+    (.:[953..954] .)))
+
+;sentence 8 Span:955..1148
+;Liver homogenates and subcellular fractions (cytosol, nuclei,  plasma
+;membranes, mitochondria and microsomes) were collected 18 h after  tocopherol
+;analog administration in the absence of CCl4.
+;[1080..1082]:quantitative-value:"18"
+;[1083..1084]:quantitative-units:"h"
+;[1092..1102]:substance:"tocopherol"
+;[1103..1109]:substance:"analog"
+;[1143..1147]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[955..960] Liver) (NNS:[961..972] homogenates))
+      (CC:[973..976] and)
+      (NP (JJ:[977..988] subcellular) (NNS:[989..998] fractions)
+        (PRN (-LRB-:[999..1000] -LRB-)
+          (NP
+            (NP (NN:[1000..1007] cytosol))
+            (,:[1007..1008] ,)
+            (NP (NNS:[1009..1015] nuclei))
+            (,:[1015..1016] ,)
+            (NP (NN:[1018..1024] plasma) (NNS:[1025..1034] membranes))
+            (,:[1034..1035] ,)
+            (NP (NNS:[1036..1048] mitochondria))
+            (CC:[1049..1052] and)
+            (NP (NNS:[1053..1063] microsomes)))
+          (-RRB-:[1063..1064] -RRB-))))
+    (VP (VBD:[1065..1069] were)
+      (VP (VBN:[1070..1079] collected)
+        (NP-1 (-NONE-:[1079..1079] *))
+        (PP
+          (NP-ADV (CD:[1080..1082] 18) (NN:[1083..1084] h))
+          (IN:[1085..1090] after)
+          (NP
+            (NP (NN:[1092..1102] tocopherol) (NN:[1103..1109] analog)
+                (NN:[1110..1124] administration))
+            (PP (IN:[1125..1127] in)
+              (NP
+                (NP (DT:[1128..1131] the) (NN:[1132..1139] absence))
+                (PP (IN:[1140..1142] of)
+                  (NP (NN:[1143..1147] CCl4)))))))))
+    (.:[1147..1148] .)))
+
+;sentence 9 Span:1149..1324
+;Homogenate and  subcellular alpha-T levels were not significantly increased
+;following TSE  administration but were increased 2-3 fold following TS and
+;alpha-T  administration.
+;[1177..1184]:substance:"alpha-T"
+;[1235..1238]:substance:"TSE"
+;[1274..1282]:quantitative-value:"2-3 fold"
+;[1293..1295]:substance:"TS"
+;[1300..1307]:substance:"alpha-T"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (NN:[1149..1159] Homogenate)
+        (NML-2 (-NONE-:[1159..1159] *P*)))
+      (CC:[1160..1163] and)
+      (NP (JJ:[1165..1176] subcellular)
+        (NML-2 (NN:[1177..1184] alpha-T) (NNS:[1185..1191] levels))))
+    (VP
+      (VP (VBD:[1192..1196] were) (RB:[1197..1200] not)
+        (ADVP-EXT (RB:[1201..1214] significantly))
+        (VP (VBN:[1215..1224] increased)
+          (NP-3 (-NONE-:[1224..1224] *))
+          (S-TMP
+            (NP-SBJ (-NONE-:[1224..1224] *))
+            (VP (VBG:[1225..1234] following)
+              (NP (NN:[1235..1238] TSE) (NN:[1240..1254] administration))))))
+      (CC:[1255..1258] but)
+      (VP (VBD:[1259..1263] were)
+        (VP (VBN:[1264..1273] increased)
+          (NP-3 (-NONE-:[1273..1273] *))
+          (ADVP-EXT
+            (QP (CD:[1274..1275] 2) (HYPH:[1275..1276] -) (CD:[1276..1277] 3))
+            (RB:[1278..1282] fold))
+          (S-TMP
+            (NP-SBJ (-NONE-:[1282..1282] *))
+            (VP (VBG:[1283..1292] following)
+              (NP
+                (NP (NN:[1293..1295] TS)
+                  (NML-1 (-NONE-:[1295..1295] *P*)))
+                (CC:[1296..1299] and)
+                (NP (NN:[1300..1307] alpha-T)
+                  (NML-1 (NN:[1309..1323] administration)))))))))
+    (.:[1323..1324] .)))
+
+;sentence 10 Span:1325..1459
+;Total tocopherol levels (alpha-T+ TS + TSE) in liver homogenates  and
+;subcellular fractions were highest in rats supplemented with TS.
+;[1331..1341]:substance:"tocopherol"
+;[1350..1357]:substance:"alpha-T"
+;[1359..1361]:substance:"TS"
+;[1364..1367]:substance:"TSE"
+;[1456..1458]:substance:"TS"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1325..1330] Total) (NN:[1331..1341] tocopherol)
+          (NNS:[1342..1348] levels)
+        (PRN (-LRB-:[1349..1350] -LRB-)
+          (NP (NN:[1350..1357] alpha-T) (SYM:[1357..1358] +)
+              (NN:[1359..1361] TS) (SYM:[1362..1363] +) (NN:[1364..1367] TSE))
+          (-RRB-:[1367..1368] -RRB-)))
+      (PP-LOC (IN:[1369..1371] in)
+        (NP
+          (NP (NN:[1372..1377] liver) (NNS:[1378..1389] homogenates))
+          (CC:[1391..1394] and)
+          (NP (JJ:[1395..1406] subcellular) (NNS:[1407..1416] fractions)))))
+    (VP (VBD:[1417..1421] were)
+      (ADJP-PRD (JJS:[1422..1429] highest))
+      (PP-LOC (IN:[1430..1432] in)
+        (NP
+          (NP (NNS:[1433..1437] rats))
+          (VP (VBN:[1438..1450] supplemented)
+            (NP (-NONE-:[1450..1450] *))
+            (PP (IN:[1451..1455] with)
+              (NP (NN:[1456..1458] TS)))))))
+    (.:[1458..1459] .)))
+
+;sentence 11 Span:1460..1651
+;In these  animals, TS was detected in all subcellular fractions and total
+;tocopherol  levels were increased from 6-23 fold over those seen in controls
+;and 2-9 fold  over alpha-T treated rats.
+;[1479..1481]:substance:"TS"
+;[1534..1544]:substance:"tocopherol"
+;[1573..1582]:quantitative-value:"6-23 fold"
+;[1615..1623]:quantitative-value:"2-9 fold"
+;[1630..1637]:substance:"alpha-T"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[1460..1462] In)
+        (NP (DT:[1463..1468] these) (NNS:[1470..1477] animals)))
+      (,:[1477..1478] ,)
+      (NP-SBJ-2 (NN:[1479..1481] TS))
+      (VP (VBD:[1482..1485] was)
+        (VP (VBN:[1486..1494] detected)
+          (NP-2 (-NONE-:[1494..1494] *))
+          (PP-LOC (IN:[1495..1497] in)
+            (NP (DT:[1498..1501] all) (JJ:[1502..1513] subcellular)
+                (NNS:[1514..1523] fractions))))))
+    (CC:[1524..1527] and)
+    (S
+      (NP-SBJ-3 (JJ:[1528..1533] total) (NN:[1534..1544] tocopherol)
+                (NNS:[1546..1552] levels))
+      (VP (VBD:[1553..1557] were)
+        (VP (VBN:[1558..1567] increased)
+          (NP-3 (-NONE-:[1567..1567] *))
+          (ADVP-EXT
+            (ADVP
+              (QP (IN:[1568..1572] from) (CD:[1573..1574] 6)
+                  (HYPH:[1574..1575] -) (CD:[1575..1577] 23))
+              (RB:[1578..1582] fold)
+              (PP (IN:[1583..1587] over)
+                (NP
+                  (NP (DT:[1588..1593] those))
+                  (VP (VBN:[1594..1598] seen)
+                    (NP (-NONE-:[1598..1598] *))
+                    (PP (IN:[1599..1601] in)
+                      (NP (NNS:[1602..1610] controls)))))))
+            (CC:[1611..1614] and)
+            (ADVP
+              
+              (QP (CD:[1615..1616] 2) (HYPH:[1616..1617] -) (CD:[1617..1618] 9))
+              (RB:[1619..1623] fold)
+              (PP (IN:[1625..1629] over)
+                (NP
+                  (ADJP (NN:[1630..1637] alpha-T) (VBN:[1638..1645] treated))
+                  (NNS:[1646..1650] rats))))))))
+    (.:[1650..1651] .)))
+
+;sentence 12 Span:1652..1885
+;In vitro studies in which liver homogenates and  subcellular fractions were
+;peroxidized with ascorbate and ADP/Fe suggest that  increasing levels of
+;alpha-T but not TS correlates with increased protection  against lipid
+;peroxidation.
+;[1745..1754]:substance:"ascorbate"
+;[1759..1762]:substance:"ADP"
+;[1763..1765]:substance:"Fe"
+;[1801..1808]:substance:"alpha-T"
+;[1817..1819]:substance:"TS"
+;[1866..1871]:substance:"lipid"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (ADJP (FW:[1652..1654] In) (FW:[1655..1660] vitro))
+        (NNS:[1661..1668] studies))
+      (SBAR
+        (WHPP (IN:[1669..1671] in)
+          (WHNP (WDT:[1672..1677] which)))
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1678..1683] liver) (NNS:[1684..1695] homogenates))
+            (CC:[1696..1699] and)
+            (NP (JJ:[1701..1712] subcellular) (NNS:[1713..1722] fractions)))
+          (VP (VBD:[1723..1727] were)
+            (VP (VBN:[1728..1739] peroxidized)
+              (NP-1 (-NONE-:[1739..1739] *))
+              (PP-MNR (IN:[1740..1744] with)
+                (NP
+                  (NP (NN:[1745..1754] ascorbate))
+                  (CC:[1755..1758] and)
+                  (NP (NN:[1759..1762] ADP) (SYM:[1762..1763] /)
+                      (NN:[1763..1765] Fe)))))))))
+    (VP (VBP:[1766..1773] suggest)
+      (SBAR (IN:[1774..1778] that)
+        (S
+          (NP-SBJ
+            (NP (VBG:[1780..1790] increasing) (NNS:[1791..1797] levels))
+            (PP (IN:[1798..1800] of)
+              (NP
+                (NP (NN:[1801..1808] alpha-T))
+                (CONJP (CC:[1809..1812] but) (RB:[1813..1816] not))
+                (NP (NN:[1817..1819] TS)))))
+          (VP (VBZ:[1820..1830] correlates)
+            (PP-CLR (IN:[1831..1835] with)
+              (NP
+                (NP (VBN:[1836..1845] increased) (NN:[1846..1856] protection))
+                (PP (IN:[1858..1865] against)
+                  (NP (NN:[1866..1871] lipid) (NN:[1872..1884] peroxidation)))))))))
+    (.:[1884..1885] .)))
+
+;sentence 13 Span:1886..2062
+;These results suggest that the ability of TS to  protect against CCl4-induced
+;hepatotoxicity relates to its enhanced hepatic  accumulation and subsequent
+;hydrolysis to alpha-T.
+;[1928..1930]:substance:"TS"
+;[1951..1955]:substance:"CCl4"
+;[2054..2061]:substance:"alpha-T"
+(SENT
+  (S
+    (NP-SBJ (DT:[1886..1891] These) (NNS:[1892..1899] results))
+    (VP (VBP:[1900..1907] suggest)
+      (SBAR (IN:[1908..1912] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1913..1916] the) (NN:[1917..1924] ability)
+              (S-1 (-NONE-:[1924..1924] *ICH*)))
+            (PP (IN:[1925..1927] of)
+              (NP (NN:[1928..1930] TS)))
+            (S-1
+              (NP-SBJ (-NONE-:[1930..1930] *))
+              (VP (TO:[1931..1933] to)
+                (VP (VB:[1935..1942] protect)
+                  (PP-CLR (IN:[1943..1950] against)
+                    (NP
+                      (ADJP (NN:[1951..1955] CCl4) (HYPH:[1955..1956] -)
+                            (VBN:[1956..1963] induced))
+                      (NN:[1964..1978] hepatotoxicity)))))))
+          (VP (VBZ:[1979..1986] relates)
+            (PP-CLR (TO:[1987..1989] to)
+              (NP
+                (NP (PRP$:[1990..1993] its) (VBN:[1994..2002] enhanced)
+                    (JJ:[2003..2010] hepatic) (NN:[2012..2024] accumulation))
+                (CC:[2025..2028] and)
+                (NP
+                  (NP (JJ:[2029..2039] subsequent) (NN:[2040..2050] hydrolysis))
+                  (PP (TO:[2051..2053] to)
+                    (NP (NN:[2054..2061] alpha-T))))))))))
+    (.:[2061..2062] .)))
+
+;section 14 Span:2066..2110
+;PMID: 9242359 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2066..2070] PMID) (::[2070..2071] :) (CD:[2072..2079] 9242359)
+        (NN:[2080..2081] -LSB-) (NNP:[2081..2087] PubMed) (::[2088..2089] -)
+        (NN:[2090..2097] indexed) (IN:[2098..2101] for)
+        (NNP:[2102..2109] MEDLINE) (-RRB-:[2109..2110] -RSB-)))

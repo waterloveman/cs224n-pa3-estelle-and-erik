@@ -1,0 +1,492 @@
+;PMID: 9179693
+;source_file_666.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:37..110] = [t:37..110]
+;2)section:[e:114..181] = [t:114..181]
+;3)section:[e:185..258] = [t:185..258]
+;4)sentence:[e:262..273] = [t:262..273]
+;5)sentence:[e:274..373] = [t:274..373]
+;6)sentence:[e:374..433] = [t:374..433]
+;7)sentence:[e:434..569] = [t:434..569]
+;8)sentence:[e:570..578] = [t:570..578]
+;9)sentence:[e:580..756] = [t:580..756]
+;10)sentence:[e:757..1048] = [t:757..1048]
+;11)sentence:[e:1049..1203] = [t:1049..1203]
+;12)sentence:[e:1205..1213] = [t:1205..1213]
+;13)sentence:[e:1214..1357] = [t:1214..1357]
+;14)sentence:[e:1358..1450] = [t:1358..1450]
+;15)sentence:[e:1451..1462] = [t:1451..1462]
+;16)sentence:[e:1463..1653] = [t:1463..1653]
+;17)sentence:[e:1654..1819] = [t:1654..1819]
+;18)sentence:[e:1820..1887] = [t:1820..1887]
+;19)section:[e:1891..1935] = [t:1891..1935]
+
+;section 0 Span:0..32
+;Int J Urol  1997 Mar;4(2):178-85
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..10] Urol) (CD:[12..16] 1997)
+        (CC:[17..23] Mar;4-LRB-) (CD:[23..24] 2) (-RRB-:[24..25] -RRB-)
+        (CD:[25..29] :178) (::[29..30] -) (CD:[30..32] 85)))
+
+;sentence 1 Span:37..110
+;Screening of H-ras gene point mutations in 50 cases of bladder carcinoma.
+;[50..55]:gene-rna:"H-ras"
+;[61..76]:variation-type:"point mutations"
+;[92..109]:malignancy:"bladder carcinoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[37..46] Screening))
+    (PP (IN:[47..49] of)
+      (NP
+        (NML (NN:[50..55] H-ras) (NN:[56..60] gene))
+         (NN:[61..66] point) (NNS:[67..76] mutations)))
+    (PP (IN:[77..79] in)
+      (NP
+        (NP (CD:[80..82] 50) (NNS:[83..88] cases))
+        (PP (IN:[89..91] of)
+          (NP (NN:[92..99] bladder) (NN:[100..109] carcinoma)))))
+    (.:[109..110] .)))
+
+;section 2 Span:114..181
+;Saito S, Hata M, Fukuyama R, Sakai K, Kudoh J, Tazaki H, Shimizu N.
+(SEC
+  (FRAG (NNP:[114..119] Saito) (NNP:[120..122] S,) (NNP:[123..127] Hata)
+        (NNP:[128..130] M,) (NNP:[131..139] Fukuyama) (NNP:[140..142] R,)
+        (NNP:[143..148] Sakai) (NNP:[149..150] K) (,:[150..151] ,)
+        (NNP:[152..157] Kudoh) (NNP:[158..160] J,) (NNP:[161..167] Tazaki)
+        (NNP:[168..169] H) (,:[169..170] ,) (NNP:[171..178] Shimizu)
+        (NNP:[179..181] N.)))
+
+;section 3 Span:185..258
+;Department of Urology, School of Medicine, Keio University, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[185..195] Department) (IN:[196..198] of) (NNP:[199..206] Urology)
+        (,:[206..207] ,) (NNP:[208..214] School) (IN:[215..217] of)
+        (NNP:[218..226] Medicine) (,:[226..227] ,) (NNP:[228..232] Keio)
+        (NNP:[233..243] University) (,:[243..244] ,) (NNP:[245..250] Tokyo)
+        (,:[250..251] ,) (NNP:[252..257] Japan) (.:[257..258] .)))
+
+;sentence 4 Span:262..273
+;BACKGROUND:
+(SENT
+  (NP (NN:[262..272] BACKGROUND) (::[272..273] :)))
+
+;sentence 5 Span:274..373
+;Mutation converts the H-ras gene into an activated oncogene in about  10% of
+;human bladder cancers.
+;[274..282]:variation-event:"Mutation"
+;[296..301]:gene-rna:"H-ras"
+;[357..372]:malignancy:"bladder cancers"
+(SENT
+  (S
+    (NP-SBJ (NN:[274..282] Mutation))
+    (VP (VBZ:[283..291] converts)
+      (NP (DT:[292..295] the) (NN:[296..301] H-ras) (NN:[302..306] gene))
+      (PP (IN:[307..311] into)
+        (NP (DT:[312..314] an) (VBN:[315..324] activated)
+            (NN:[325..333] oncogene)))
+      (PP (IN:[334..336] in)
+        (NP
+          (NP
+            (QP (RB:[337..342] about) (CD:[344..346] 10))
+            (NN:[346..347] %))
+          (PP (IN:[348..350] of)
+            (NP (JJ:[351..356] human)
+               (NN:[357..364] bladder) (NNS:[365..372] cancers))))))
+    (.:[372..373] .)))
+
+;sentence 6 Span:374..433
+;Codons 12 and 61 are the major "hot spots" for  activation.
+;[374..383]:variation-location:"Codons 12"
+;[374..380]...[388..390]:variation-location:"Codons"..."61"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML-1 (NNS:[374..380] Codons))
+        (CD:[381..383] 12))
+      (CC:[384..387] and)
+      (NP
+        (NML-1 (-NONE-:[387..387] *P*))
+        (CD:[388..390] 61)))
+    (VP (VBP:[391..394] are)
+      (NP-PRD
+        (NP (DT:[395..398] the) (JJ:[399..404] major) (``:[405..406] ")
+            (JJ:[406..409] hot) (NNS:[410..415] spots) ('':[415..416] "))
+        (PP (IN:[417..420] for)
+          (NP (NN:[422..432] activation)))))
+    (.:[432..433] .)))
+
+;sentence 7 Span:434..569
+;A simple and accurate method to detect point mutations in these  codons may
+;be clinically useful for early diagnosis of bladder cancer.
+;[473..488]:variation-type:"point mutations"
+;[492..505]:variation-location:"these  codons"
+;[554..568]:malignancy:"bladder cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[434..435] A)
+        (ADJP (JJ:[436..442] simple) (CC:[443..446] and)
+              (JJ:[447..455] accurate))
+        (NN:[456..462] method))
+      (SBAR
+        (WHNP-1 (-NONE-:[462..462] 0))
+        (S
+          (NP-SBJ-1 (-NONE-:[462..462] *T*))
+          (VP (TO:[463..465] to)
+            (NP (VB:[466..472] detect)
+              (NP (NN:[473..478] point) (NNS:[479..488] mutations))
+              (PP-LOC (IN:[489..491] in)
+                (NP (DT:[492..497] these) (NNS:[499..505] codons))))))))
+    (VP (MD:[506..509] may)
+      (VP (VB:[510..512] be)
+        (ADJP-PRD (RB:[513..523] clinically) (JJ:[524..530] useful)
+          (PP (IN:[531..534] for)
+            (NP
+              (NP (JJ:[535..540] early) (NN:[541..550] diagnosis))
+              (PP (IN:[551..553] of)
+                (NP (NN:[554..561] bladder) (NN:[562..568] cancer))))))))
+    (.:[568..569] .)))
+
+;sentence 8 Span:570..578
+;METHODS:
+(SENT
+  (NP (NNS:[570..577] METHODS) (::[577..578] :)))
+
+;sentence 9 Span:580..756
+;Bladder cancer samples from 50 patients, plus 10 samples of normal bladder 
+;mucosa, were analyzed for possible point mutation of the H-ras gene at either
+; codon 12 or codon 61.
+;[580..594]:malignancy:"Bladder cancer"
+;[691..705]:variation-type:"point mutation"
+;[713..718]:gene-rna:"H-ras"
+;[735..743]:variation-location:"codon 12"
+;[747..755]:variation-location:"codon 61"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP
+          (NML (NN:[580..587] Bladder) (NN:[588..594] cancer))
+          (NNS:[595..602] samples))
+        (PP (IN:[603..607] from)
+          (NP (CD:[608..610] 50) (NNS:[611..619] patients))))
+      (,:[619..620] ,) (CC:[621..625] plus)
+      (NP
+        (NP (CD:[626..628] 10) (NNS:[629..636] samples))
+        (PP (IN:[637..639] of)
+          (NP (JJ:[640..646] normal) (NN:[647..654] bladder)
+              (NN:[656..662] mucosa)))))
+    (,:[662..663] ,)
+    (VP (VBD:[664..668] were)
+      (VP (VBN:[669..677] analyzed)
+        (NP-1 (-NONE-:[677..677] *))
+        (PP (IN:[678..681] for)
+          (NP
+            (NP (JJ:[682..690] possible)
+               (NN:[691..696] point) (NN:[697..705] mutation))
+            (PP (IN:[706..708] of)
+              (NP (DT:[709..712] the) (NN:[713..718] H-ras) (NN:[719..723] gene)))
+            (PP-LOC (IN:[724..726] at)
+              (NP (CC:[727..733] either)
+                (NP (NN:[735..740] codon) (CD:[741..743] 12))
+                (CC:[744..746] or)
+                (NP (NN:[747..752] codon) (CD:[753..755] 61))))))))
+    (.:[755..756] .)))
+
+;sentence 10 Span:757..1048
+;The H-ras gene DNA segments that include these 2 codons  were amplified by
+;PCR methods, then the possible presence of a point mutation  was evaluated at
+;each codon by susceptibility of the respective DNA segments to  digestion
+;with the restriction enzyme and by dot blot hybridization assay.
+;[761..766]:gene-rna:"H-ras"
+;[798..812]:variation-location:"these 2 codons"
+;[877..891]:variation-type:"point mutation"
+;[915..920]:variation-location:"codon"
+;[993..1011]:gene-protein:"restriction enzyme"
+(SENT
+  (S
+    (S
+      (NP-SBJ-3
+        (NP (DT:[757..760] The)
+          (NML (NN:[761..766] H-ras) (NN:[767..771] gene))
+          (NN:[772..775] DNA) (NNS:[776..784] segments))
+        (SBAR
+          (WHNP-2 (WDT:[785..789] that))
+          (S
+            (NP-SBJ-2 (-NONE-:[789..789] *T*))
+            (VP (VBP:[790..797] include)
+              (NP (DT:[798..803] these) (CD:[804..805] 2)
+                  (NNS:[806..812] codons))))))
+      (VP (VBD:[814..818] were)
+        (VP (VBN:[819..828] amplified)
+          (NP-3 (-NONE-:[828..828] *))
+          (PP-MNR (IN:[829..831] by)
+            (NP (NN:[832..835] PCR) (NNS:[836..843] methods))))))
+    (,:[843..844] ,) (RB:[845..849] then)
+    (S
+      (NP-SBJ-1
+        (NP (DT:[850..853] the) (JJ:[854..862] possible)
+            (NN:[863..871] presence))
+        (PP (IN:[872..874] of)
+          (NP (DT:[875..876] a)
+             (NN:[877..882] point) (NN:[883..891] mutation))))
+      (VP (VBD:[893..896] was)
+        (VP (VBN:[897..906] evaluated)
+          (NP-1 (-NONE-:[906..906] *))
+          (PP-LOC (IN:[907..909] at)
+            (NP (DT:[910..914] each) (NN:[915..920] codon)))
+          (PP-MNR
+            (PP (IN:[921..923] by)
+              (NP
+                (NP (NN:[924..938] susceptibility))
+                (PP (IN:[939..941] of)
+                  (NP (DT:[942..945] the) (JJ:[946..956] respective)
+                      (NN:[957..960] DNA) (NNS:[961..969] segments)))
+                (PP (TO:[970..972] to)
+                  (NP
+                    (NP (NN:[974..983] digestion))
+                    (PP (IN:[984..988] with)
+                      (NP (DT:[989..992] the)
+                         (NN:[993..1004] restriction) (NN:[1005..1011] enzyme)))))))
+            (CC:[1012..1015] and)
+            (PP (IN:[1016..1018] by)
+              (NP
+                (NML (NN:[1019..1022] dot) (NN:[1023..1027] blot))
+                (NN:[1028..1041] hybridization) (NN:[1042..1047] assay)))))))
+    (.:[1047..1048] .)))
+
+;sentence 11 Span:1049..1203
+;A  bladder cancer patient who had an H-ras gene mutation was examined to see 
+;whether the mutation was also detectable in the cells released in the urine.
+;[1052..1066]:malignancy:"bladder cancer"
+;[1086..1091]:gene-rna:"H-ras"
+;[1139..1147]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1049..1050] A)
+        (NML (NN:[1052..1059] bladder) (NN:[1060..1066] cancer))
+        (NN:[1067..1074] patient))
+      (SBAR
+        (WHNP-1 (WP:[1075..1078] who))
+        (S
+          (NP-SBJ-1 (-NONE-:[1078..1078] *T*))
+          (VP (VBD:[1079..1082] had)
+            (NP (DT:[1083..1085] an)
+              (NML (NN:[1086..1091] H-ras) (NN:[1092..1096] gene))
+              (NN:[1097..1105] mutation))))))
+    (VP (VBD:[1106..1109] was)
+      (VP (VBN:[1110..1118] examined)
+        (NP-2 (-NONE-:[1118..1118] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1118..1118] *))
+          (VP (TO:[1119..1121] to)
+            (VP (VB:[1122..1125] see)
+              (SBAR (IN:[1127..1134] whether)
+                (S
+                  (NP-SBJ (DT:[1135..1138] the) (NN:[1139..1147] mutation))
+                  (VP (VBD:[1148..1151] was)
+                    (ADVP (RB:[1152..1156] also))
+                    (ADJP-PRD (JJ:[1157..1167] detectable)
+                      (PP-LOC (IN:[1168..1170] in)
+                        (NP
+                          (NP (DT:[1171..1174] the) (NNS:[1175..1180] cells))
+                          (VP (VBN:[1181..1189] released)
+                            (NP (-NONE-:[1189..1189] *))
+                            (PP-LOC (IN:[1190..1192] in)
+                              (NP (DT:[1193..1196] the) (NN:[1197..1202] urine)))))))))))))))
+    (.:[1202..1203] .)))
+
+;sentence 12 Span:1205..1213
+;RESULTS:
+(SENT
+  (NP (NNS:[1205..1212] RESULTS) (::[1212..1213] :)))
+
+;sentence 13 Span:1214..1357
+;Definite or possible point mutations were found in 6 (12%) out of 50  bladder
+;cancer patients, while no mutation was detected in normal mucosa.
+;[1235..1250]:variation-type:"point mutations"
+;[1284..1298]:malignancy:"bladder cancer"
+(SENT
+  (S
+    (NP-SBJ-2
+      (ADJP (JJ:[1214..1222] Definite) (CC:[1223..1225] or)
+            (JJ:[1226..1234] possible))
+       (NN:[1235..1240] point) (NNS:[1241..1250] mutations))
+    (VP (VBD:[1251..1255] were)
+      (VP (VBN:[1256..1261] found)
+        (NP-2 (-NONE-:[1261..1261] *))
+        (PP-LOC (IN:[1262..1264] in)
+          (NP
+            (NP (CD:[1265..1266] 6)
+              (PRN (-LRB-:[1267..1268] -LRB-)
+                (NP (CD:[1268..1270] 12) (NN:[1270..1271] %))
+                (-RRB-:[1271..1272] -RRB-)))
+            (PP (IN:[1273..1276] out)
+              (PP (IN:[1277..1279] of)
+                (NP (CD:[1280..1282] 50)
+                  (NML (NN:[1284..1291] bladder) (NN:[1292..1298] cancer))
+                  (NNS:[1299..1307] patients))))))
+        (,:[1307..1308] ,)
+        (SBAR-ADV (IN:[1309..1314] while)
+          (S
+            (NP-SBJ-1 (DT:[1315..1317] no) (NN:[1318..1326] mutation))
+            (VP (VBD:[1327..1330] was)
+              (VP (VBN:[1331..1339] detected)
+                (NP-1 (-NONE-:[1339..1339] *))
+                (PP-LOC (IN:[1340..1342] in)
+                  (NP (JJ:[1343..1349] normal) (NN:[1350..1356] mucosa)))))))))
+    (.:[1356..1357] .)))
+
+;sentence 14 Span:1358..1450
+;A  point mutation could also be detected in cells isolated from the patient's
+;urine  sample.
+;[1361..1375]:variation-type:"point mutation"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1358..1359] A)
+       (NN:[1361..1366] point) (NN:[1367..1375] mutation))
+    (VP (MD:[1376..1381] could)
+      (ADVP (RB:[1382..1386] also))
+      (VP (VB:[1387..1389] be)
+        (VP (VBN:[1390..1398] detected)
+          (NP-1 (-NONE-:[1398..1398] *))
+          (PP-LOC (IN:[1399..1401] in)
+            (NP
+              (NP (NNS:[1402..1407] cells))
+              (VP (VBN:[1408..1416] isolated)
+                (NP (-NONE-:[1416..1416] *))
+                (PP (IN:[1417..1421] from)
+                  (NP
+                    (NP (DT:[1422..1425] the) (NN:[1426..1433] patient)
+                        (POS:[1433..1435] 's))
+                    (NN:[1436..1441] urine) (NN:[1443..1449] sample)))))))))
+    (.:[1449..1450] .)))
+
+;sentence 15 Span:1451..1462
+;CONCLUSION:
+(SENT
+  (NP (NN:[1451..1461] CONCLUSION) (::[1461..1462] :)))
+
+;sentence 16 Span:1463..1653
+;The prevalence of point mutations at codon 12 or codon 61 of  the H-ras gene
+;found in this study was similar to that previously estimated for  human
+;bladder cancer by DNA transfection assay.
+;[1481..1496]:variation-type:"point mutations"
+;[1500..1508]:variation-location:"codon 12"
+;[1512..1520]:variation-location:"codon 61"
+;[1529..1534]:gene-rna:"H-ras"
+;[1612..1626]:malignancy:"bladder cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1463..1466] The) (NN:[1467..1477] prevalence))
+        (PP (IN:[1478..1480] of)
+          (NP
+            (NP (NN:[1481..1486] point) (NNS:[1487..1496] mutations))
+            (PP-LOC (IN:[1497..1499] at)
+              (NP
+                (NP
+                  (NP (NN:[1500..1505] codon) (CD:[1506..1508] 12))
+                  (CC:[1509..1511] or)
+                  (NP (NN:[1512..1517] codon) (CD:[1518..1520] 61)))
+                (PP (IN:[1521..1523] of)
+                  (NP (DT:[1525..1528] the) (NN:[1529..1534] H-ras)
+                      (NN:[1535..1539] gene))))))))
+      (VP (VBN:[1540..1545] found)
+        (NP (-NONE-:[1545..1545] *))
+        (PP (IN:[1546..1548] in)
+          (NP (DT:[1549..1553] this) (NN:[1554..1559] study)))))
+    (VP (VBD:[1560..1563] was)
+      (ADJP-PRD
+        (ADJP (JJ:[1564..1571] similar))
+        (PP (TO:[1572..1574] to)
+          (NP
+            (NP (DT:[1575..1579] that))
+            (VP
+              (ADVP-TMP (RB:[1580..1590] previously))
+              (VBN:[1591..1600] estimated)
+              (NP (-NONE-:[1600..1600] *))
+              (PP (IN:[1601..1604] for)
+                (NP (JJ:[1606..1611] human)
+                   (NN:[1612..1619] bladder) (NN:[1620..1626] cancer)))
+              (PP-MNR (IN:[1627..1629] by)
+                (NP (NN:[1630..1633] DNA) (NN:[1634..1646] transfection)
+                    (NN:[1647..1652] assay))))))))
+    (.:[1652..1653] .)))
+
+;sentence 17 Span:1654..1819
+;The method we have used for  detecting point mutations of the H-ras gene
+;provides a simple and highly  accurate way to detect mutated cancer cells
+;even in the urine.
+;[1693..1708]:variation-type:"point mutations"
+;[1716..1721]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1654..1657] The) (NN:[1658..1664] method))
+      (SBAR
+        (WHNP-2 (-NONE-:[1664..1664] 0))
+        (S
+          (NP-SBJ (PRP:[1665..1667] we))
+          (VP (VBP:[1668..1672] have)
+            (VP (VBN:[1673..1677] used)
+              (NP-2 (-NONE-:[1677..1677] *T*))
+              (PP (IN:[1678..1681] for)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[1681..1681] *))
+                  (VP (VBG:[1683..1692] detecting)
+                    (NP
+                      (NP (NN:[1693..1698] point) (NNS:[1699..1708] mutations))
+                      (PP (IN:[1709..1711] of)
+                        (NP (DT:[1712..1715] the) (NN:[1716..1721] H-ras)
+                            (NN:[1722..1726] gene))))))))))))
+    (VP (VBZ:[1727..1735] provides)
+      (S
+        (NP-SBJ (DT:[1736..1737] a)
+          (NML
+            (NML (JJ:[1738..1744] simple)
+              (NML-1 (-NONE-:[1744..1744] *P*)))
+            (CC:[1745..1748] and)
+            (NML
+              (ADJP (RB:[1749..1755] highly) (JJ:[1757..1765] accurate))
+              (NML-1 (NN:[1766..1769] way)))))
+        (VP (TO:[1770..1772] to)
+          (VP (VB:[1773..1779] detect)
+            (NP (VBN:[1780..1787] mutated) (NN:[1788..1794] cancer)
+                (NNS:[1795..1800] cells))
+            (PP-LOC
+              (ADVP (RB:[1801..1805] even))
+              (IN:[1806..1808] in)
+              (NP (DT:[1809..1812] the) (NN:[1813..1818] urine)))))))
+    (.:[1818..1819] .)))
+
+;sentence 18 Span:1820..1887
+;It may be  clinically usable for early diagnosis of bladder cancer.
+;[1872..1886]:malignancy:"bladder cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1820..1822] It))
+    (VP (MD:[1823..1826] may)
+      (VP (VB:[1827..1829] be)
+        (ADJP-PRD (RB:[1831..1841] clinically) (JJ:[1842..1848] usable)
+          (PP (IN:[1849..1852] for)
+            (NP
+              (NP (JJ:[1853..1858] early) (NN:[1859..1868] diagnosis))
+              (PP (IN:[1869..1871] of)
+                (NP (NN:[1872..1879] bladder) (NN:[1880..1886] cancer))))))))
+    (.:[1886..1887] .)))
+
+;section 19 Span:1891..1935
+;PMID: 9179693 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1891..1895] PMID) (::[1895..1896] :) (CD:[1897..1904] 9179693)
+        (NN:[1905..1906] -LSB-) (NNP:[1906..1912] PubMed) (::[1913..1914] -)
+        (NN:[1915..1922] indexed) (IN:[1923..1926] for)
+        (NNP:[1927..1935] MEDLINE-RSB-)))

@@ -1,0 +1,354 @@
+;PMID: 9592195
+;source_file_1403.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:39..199] = [t:39..199]
+;2)section:[e:203..243] = [t:203..243]
+;3)section:[e:247..339] = [t:247..339]
+;4)sentence:[e:343..617] = [t:343..617]
+;5)sentence:[e:618..906] = [t:618..906]
+;6)sentence:[e:907..973] = [t:907..973]
+;7)sentence:[e:974..1155] = [t:974..1155]
+;8)sentence:[e:1156..1478] = [t:1156..1478]
+;9)sentence:[e:1479..1632] = [t:1479..1632]
+;10)section:[e:1636..1680] = [t:1636..1680]
+
+;section 0 Span:0..34
+;Int J Oncol  1998 Jun;12(6):1333-8
+(SEC
+  (FRAG (NNP:[0..3] Int) (DT:[4..5] J) (NNP:[6..11] Oncol) (CD:[13..17] 1998)
+        (.:[18..25] Jun;12-LRB-) (CD:[25..27] 6-RRB-) (CD:[27..32] :1333)
+        (HYPH:[32..33] -) (CD:[33..34] 8)))
+
+;sentence 1 Span:39..199
+;Detection of ras gene mutations in peripheral blood of carcinoma patients
+;using  CD45 immunomagnetic separation and nested mutant allele specific
+;amplification.
+;[52..55]:gene-rna:"ras"
+;[94..103]:malignancy:"carcinoma"
+;[120..124]:gene-protein:"CD45"
+(SENT
+  (NP-HLN
+    (NP (NN:[39..48] Detection))
+    (PP (IN:[49..51] of)
+      (NP (NN:[52..55] ras) (NN:[56..60] gene) (NNS:[61..70] mutations)))
+    (PP-LOC (IN:[71..73] in)
+      (NP
+        (NP (JJ:[74..84] peripheral) (NN:[85..90] blood))
+        (PP (IN:[91..93] of)
+          (NP (NN:[94..103] carcinoma) (NNS:[104..112] patients)))))
+    (S-MNR
+      (NP-SBJ (-NONE-:[112..112] *))
+      (VP (VBG:[113..118] using)
+        (NP
+          (NP (NN:[120..124] CD45) (JJ:[125..139] immunomagnetic)
+              (NN:[140..150] separation))
+          (CC:[151..154] and)
+          (NP
+            (ADJP
+              (NML (VBN:[155..161] nested) (JJ:[162..168] mutant)
+                   (NN:[169..175] allele))
+              (JJ:[176..184] specific))
+            (NN:[185..198] amplification)))))
+    (.:[198..199] .)))
+
+;section 2 Span:203..243
+;Shibata K, Mori M, Kitano S, Akiyoshi T.
+(SEC
+  (FRAG (NNP:[203..210] Shibata) (NNP:[211..212] K) (,:[212..213] ,)
+        (NNP:[214..218] Mori) (NNP:[219..221] M,) (NNP:[222..228] Kitano)
+        (NNP:[229..231] S,) (NNP:[232..240] Akiyoshi) (NNP:[241..243] T.)))
+
+;section 3 Span:247..339
+;Department of Surgery, Medical Institute of Bioregulation, Kyushu University,
+; Beppu, Japan.
+(SEC
+  (FRAG (NNP:[247..257] Department) (IN:[258..260] of) (NNP:[261..268] Surgery)
+        (NNP:[268..269] ,) (NNP:[270..277] Medical) (NNP:[278..287] Institute)
+        (IN:[288..290] of) (NNP:[291..304] Bioregulation) (,:[304..305] ,)
+        (NNP:[306..312] Kyushu) (NNP:[313..323] University) (,:[323..324] ,)
+        (NNP:[326..331] Beppu) (,:[331..332] ,) (NNP:[333..338] Japan)
+        (.:[338..339] .)))
+
+;sentence 4 Span:343..617
+;We developed a sensitive technique of detecting circulating tumor cells in 
+;carcinoma patients, using CD45 immunomagnetic separation to isolate
+;epithelial  cells in blood samples and specific polymerase chain reaction
+;analysis to  identify point mutations of the K-ras gene.
+;[403..414]:malignancy:"tumor cells"
+;[419..428]:malignancy:"carcinoma"
+;[445..449]:gene-protein:"CD45"
+;[535..545]:gene-protein:"polymerase"
+;[583..598]:variation-type:"point mutations"
+;[606..611]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[343..345] We))
+    (VP (VBD:[346..355] developed)
+      (NP
+        (NP (DT:[356..357] a) (JJ:[358..367] sensitive)
+            (NN:[368..377] technique))
+        (PP (IN:[378..380] of)
+          (S-NOM
+            (NP-SBJ (-NONE-:[380..380] *))
+            (VP (VBG:[381..390] detecting)
+              (NP
+                (NP (VBG:[391..402] circulating)
+                   (NN:[403..408] tumor) (NNS:[409..414] cells))
+                (PP-LOC (IN:[415..417] in)
+                  (NP (NN:[419..428] carcinoma) (NNS:[429..437] patients)))))))))
+    (,:[437..438] ,)
+    (S-MNR
+      (NP-SBJ (-NONE-:[438..438] *))
+      (VP
+        (VP (VBG:[439..444] using)
+          (NP (NN:[445..449] CD45) (JJ:[450..464] immunomagnetic)
+              (NN:[465..475] separation))
+          (S-PRP
+            (NP-SBJ (-NONE-:[475..475] *))
+            (VP (TO:[476..478] to)
+              (VP (VB:[479..486] isolate)
+                (NP (JJ:[487..497] epithelial) (NNS:[499..504] cells))
+                (PP-LOC (IN:[505..507] in)
+                  (NP (NN:[508..513] blood) (NNS:[514..521] samples)))))))
+        (CC:[522..525] and)
+        (VP
+          (NP
+            (NML (JJ:[526..534] specific) (NN:[535..545] polymerase)
+                 (NN:[546..551] chain) (NN:[552..560] reaction))
+            (NN:[561..569] analysis))
+          (S-PRP
+            (NP-SBJ (-NONE-:[569..569] *))
+            (VP (TO:[570..572] to)
+              (VP (VB:[574..582] identify)
+                (NP
+                  (NP (NN:[583..588] point) (NNS:[589..598] mutations))
+                  (PP (IN:[599..601] of)
+                    (NP (DT:[602..605] the) (NN:[606..611] K-ras)
+                        (NN:[612..616] gene))))))))))
+    (.:[616..617] .)))
+
+;sentence 5 Span:618..906
+;The method is based on the fact that  the peripheral blood mononuclear cells
+;(PBMC) that express CD45 antigen are  trapped with anti-CD45 conjugated
+;supramagnetic microbeads while the carcinoma  cells that do not express CD45
+;antigen are not trapped and pass through the  magnetic fields.
+;[715..727]:gene-protein:"CD45 antigen"
+;[751..755]:gene-protein:"CD45"
+;[802..818]:malignancy:"carcinoma  cells"
+;[839..851]:gene-protein:"CD45 antigen"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[618..621] The) (NN:[622..628] method))
+    (VP (VBZ:[629..631] is)
+      (VP (VBN:[632..637] based)
+        (NP-1 (-NONE-:[637..637] *))
+        (PP-CLR (IN:[638..640] on)
+          (NP (DT:[641..644] the) (NN:[645..649] fact)
+            (SBAR (IN:[650..654] that)
+              (S
+                (NP-SBJ-4
+                  (NP (DT:[656..659] the)
+                    (NML
+                      (NML (JJ:[660..670] peripheral) (NN:[671..676] blood)
+                           (JJ:[677..688] mononuclear) (NNS:[689..694] cells))
+                      (NML (-LRB-:[695..696] -LRB-) (NN:[696..700] PBMC)
+                           (-RRB-:[700..701] -RRB-))))
+                  (SBAR
+                    (WHNP-5 (WDT:[702..706] that))
+                    (S
+                      (NP-SBJ-5 (-NONE-:[706..706] *T*))
+                      (VP (VBP:[707..714] express)
+                        (NP (NN:[715..719] CD45) (NN:[720..727] antigen))))))
+                (VP (VBP:[728..731] are)
+                  (VP (VBN:[733..740] trapped)
+                    (NP-4 (-NONE-:[740..740] *))
+                    (PP (IN:[741..745] with)
+                      (NP
+                        (NML (AFX:[746..750] anti) (HYPH:[750..751] -)
+                             (NN:[751..755] CD45))
+                        (VBN:[756..766] conjugated)
+                         (JJ:[767..780] supramagnetic)
+                         (NNS:[781..791] microbeads)))
+                    (SBAR-ADV (IN:[792..797] while)
+                      (S
+                        (NP-SBJ-3
+                          (NP (DT:[798..801] the)
+                             (NN:[802..811] carcinoma) (NNS:[813..818] cells))
+                          (SBAR
+                            (WHNP-2 (WDT:[819..823] that))
+                            (S
+                              (NP-SBJ-2 (-NONE-:[823..823] *T*))
+                              (VP (VBP:[824..826] do) (RB:[827..830] not)
+                                (VP (VB:[831..838] express)
+                                  (NP (NN:[839..843] CD45)
+                                      (NN:[844..851] antigen)))))))
+                        (VP
+                          (VP (VBP:[852..855] are) (RB:[856..859] not)
+                            (VP (VBN:[860..867] trapped)
+                              (NP-3 (-NONE-:[867..867] *))))
+                          (CC:[868..871] and)
+                          (VP (VBP:[872..876] pass)
+                            (PP (IN:[877..884] through)
+                              (NP (DT:[885..888] the) (JJ:[890..898] magnetic)
+                                  (NNS:[899..905] fields)))))))))))))))
+    (.:[905..906] .)))
+
+;sentence 6 Span:907..973
+;This method concentrated the number of carcinoma cells 3.3  times.
+;[946..961]:malignancy:"carcinoma cells"
+(SENT
+  (S
+    (NP-SBJ (DT:[907..911] This) (NN:[912..918] method))
+    (VP (VBD:[919..931] concentrated)
+      (NP
+        (NP (DT:[932..935] the) (NN:[936..942] number))
+        (PP (IN:[943..945] of)
+          (NP (NN:[946..955] carcinoma) (NNS:[956..961] cells))))
+      (NP-EXT
+        (QP (CD:[962..965] 3.3) (NNS:[967..972] times))))
+    (.:[972..973] .)))
+
+;sentence 7 Span:974..1155
+;After this separation, the modified method of mutant allele specific 
+;amplification was applied and this method was able to ten control carcinoma 
+;cells in a background of 107 PBMC.
+;[1110..1126]:malignancy:"carcinoma  cells"
+(SENT
+  (S
+    (S
+      (PP-TMP (IN:[974..979] After)
+        (NP (DT:[980..984] this) (NN:[985..995] separation)))
+      (,:[995..996] ,)
+      (NP-SBJ-1
+        (NP (DT:[997..1000] the) (VBN:[1001..1009] modified)
+            (NN:[1010..1016] method))
+        (PP (IN:[1017..1019] of)
+          (NP
+            (ADJP
+              (NML (JJ:[1020..1026] mutant) (NN:[1027..1033] allele))
+              (JJ:[1034..1042] specific))
+            (NN:[1044..1057] amplification))))
+      (VP (VBD:[1058..1061] was)
+        (VP (VBN:[1062..1069] applied)
+          (NP-1 (-NONE-:[1069..1069] *)))))
+    (CC:[1070..1073] and)
+    (S
+      (NP-SBJ (DT:[1074..1078] this) (NN:[1079..1085] method))
+      (VP (VBD:[1086..1089] was)
+        (ADJP-PRD (JJ:[1090..1094] able)
+          (PP (TO:[1095..1097] to)
+            (NP (CD:[1098..1101] ten) (NN:[1102..1109] control)
+               (NN:[1110..1119] carcinoma) (NNS:[1121..1126] cells))))
+        (PP-LOC (IN:[1127..1129] in)
+          (NP
+            (NP (DT:[1130..1131] a) (NN:[1132..1142] background))
+            (PP (IN:[1143..1145] of)
+              (NP (CD:[1146..1149] 107) (NN:[1150..1154] PBMC)))))))
+    (.:[1154..1155] .)))
+
+;sentence 8 Span:1156..1478
+;A preliminary clinical study demonstrated  that six cases of end-stage
+;carcinoma with K-ras mutations in the primary tumor  showed the same
+;mutations in the peripheral blood samples, while two cases  without K-ras
+;mutation in the primary tumor and 10 healthy volunteers showed no  mutation
+;in the peripheral blood samples.
+;[1217..1236]:malignancy:"end-stage carcinoma"
+;[1242..1247]:gene-rna:"K-ras"
+;[1296..1305]:variation-event:"mutations"
+;[1364..1369]:gene-rna:"K-ras"
+;[1437..1445]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ (DT:[1156..1157] A) (JJ:[1158..1169] preliminary)
+            (JJ:[1170..1178] clinical) (NN:[1179..1184] study))
+    (VP (VBD:[1185..1197] demonstrated)
+      (SBAR (IN:[1199..1203] that)
+        (S
+          (NP-SBJ
+            (NP (CD:[1204..1207] six) (NNS:[1208..1213] cases))
+            (PP (IN:[1214..1216] of)
+              (NP
+                (NP
+                  (NML (NN:[1217..1220] end) (HYPH:[1220..1221] -)
+                       (NN:[1221..1226] stage))
+                  (NN:[1227..1236] carcinoma))
+                (PP (IN:[1237..1241] with)
+                  (NP
+                    (NP (NN:[1242..1247] K-ras) (NNS:[1248..1257] mutations))
+                    (PP-LOC (IN:[1258..1260] in)
+                      (NP (DT:[1261..1264] the) (JJ:[1265..1272] primary)
+                          (NN:[1273..1278] tumor))))))))
+          (VP (VBD:[1280..1286] showed)
+            (NP (DT:[1287..1290] the) (JJ:[1291..1295] same)
+                (NNS:[1296..1305] mutations))
+            (PP-LOC (IN:[1306..1308] in)
+              (NP (DT:[1309..1312] the) (JJ:[1313..1323] peripheral)
+                  (NN:[1324..1329] blood) (NNS:[1330..1337] samples)))
+            (,:[1337..1338] ,)
+            (SBAR-ADV (IN:[1339..1344] while)
+              (S
+                (NP-SBJ
+                  (NP
+                    (NP (CD:[1345..1348] two) (NNS:[1349..1354] cases))
+                    (PP (IN:[1356..1363] without)
+                      (NP
+                        (NP (NN:[1364..1369] K-ras) (NN:[1370..1378] mutation))
+                        (PP (IN:[1379..1381] in)
+                          (NP (DT:[1382..1385] the) (JJ:[1386..1393] primary)
+                              (NN:[1394..1399] tumor))))))
+                  (CC:[1400..1403] and)
+                  (NP (CD:[1404..1406] 10) (JJ:[1407..1414] healthy)
+                      (NNS:[1415..1425] volunteers)))
+                (VP (VBD:[1426..1432] showed)
+                  (NP (DT:[1433..1435] no) (NN:[1437..1445] mutation))
+                  (PP-LOC (IN:[1446..1448] in)
+                    (NP (DT:[1449..1452] the) (JJ:[1453..1463] peripheral)
+                        (NN:[1464..1469] blood) (NNS:[1470..1477] samples))))))))))
+    (.:[1477..1478] .)))
+
+;sentence 9 Span:1479..1632
+;The results suggest that this method  may be very useful to detect
+;circulating carcinoma cells in the patient whose  primary tumor shows K-ras
+;mutations.
+;[1558..1573]:malignancy:"carcinoma cells"
+;[1616..1621]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[1479..1482] The) (NNS:[1483..1490] results))
+    (VP (VBP:[1491..1498] suggest)
+      (SBAR (IN:[1499..1503] that)
+        (S
+          (NP-SBJ (DT:[1504..1508] this) (NN:[1509..1515] method))
+          (VP (MD:[1517..1520] may)
+            (VP (VB:[1521..1523] be)
+              (ADJP-PRD (RB:[1524..1528] very) (JJ:[1529..1535] useful))
+              (S-PRP
+                (NP-SBJ (-NONE-:[1535..1535] *))
+                (VP (TO:[1536..1538] to)
+                  (VP (VB:[1539..1545] detect)
+                    (NP (VBG:[1546..1557] circulating)
+                       (NN:[1558..1567] carcinoma) (NNS:[1568..1573] cells))
+                    (PP-LOC (IN:[1574..1576] in)
+                      (NP
+                        (NP (DT:[1577..1580] the) (NN:[1581..1588] patient))
+                        (SBAR
+                          (WHNP-1 (WP$:[1589..1594] whose)
+                                  (JJ:[1596..1603] primary)
+                                  (NN:[1604..1609] tumor))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[1609..1609] *T*))
+                            (VP (VBZ:[1610..1615] shows)
+                              (NP (NN:[1616..1621] K-ras)
+                                  (NNS:[1622..1631] mutations)))))))))))))))
+    (.:[1631..1632] .)))
+
+;section 10 Span:1636..1680
+;PMID: 9592195 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1636..1640] PMID) (::[1640..1641] :) (CD:[1642..1649] 9592195)
+        (IN:[1650..1651] -LSB-) (NNP:[1651..1657] PubMed) (HYPH:[1658..1659] -)
+        (JJ:[1660..1667] indexed) (IN:[1668..1671] for)
+        (NNP:[1672..1680] MEDLINE-RSB-)))

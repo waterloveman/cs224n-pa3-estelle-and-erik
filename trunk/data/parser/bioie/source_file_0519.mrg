@@ -1,0 +1,556 @@
+;PMID: 3404442
+;source_file_886.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..197] = [t:50..197]
+;2)section:[e:201..244] = [t:201..244]
+;3)section:[e:248..328] = [t:248..328]
+;4)sentence:[e:332..501] = [t:332..501]
+;5)sentence:[e:502..669] = [t:502..669]
+;6)sentence:[e:670..792] = [t:670..792]
+;7)sentence:[e:793..967] = [t:793..967]
+;8)sentence:[e:969..1093] = [t:969..1093]
+;9)sentence:[e:1094..1217] = [t:1094..1217]
+;10)sentence:[e:1218..1333] = [t:1218..1333]
+;11)sentence:[e:1334..1524] = [t:1334..1524]
+;12)sentence:[e:1525..1677] = [t:1525..1677]
+;13)sentence:[e:1678..1826] = [t:1678..1826]
+;14)sentence:[e:1827..2040] = [t:1827..2040]
+;15)sentence:[e:2042..2185] = [t:2042..2185]
+;16)section:[e:2189..2233] = [t:2189..2232]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:2189..2233][t:2189..2232]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[2232..2233] ]
+
+;section 0 Span:0..44
+;J Pharmacol Exp Ther. 1988 Aug;246(2):454-9.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1988)
+        (CC:[27..35] Aug;246-LRB-) (CD:[35..36] 2) (-RRB-:[36..37] -RRB-)
+        (CD:[37..41] :454) (::[41..42] -) (CD:[42..44] 9.)))
+
+;sentence 1 Span:50..197
+;Characterization of halothane oxidation by hepatic microsomes and purified 
+;cytochromes P-450 using a gas chromatographic mass spectrometric assay.
+;[70..79]:substance:"halothane"
+;[126..143]:cyp450:"cytochromes P-450"
+(SENT
+  (FRAG-HLN
+    (NP
+      (NP (NN:[50..66] Characterization))
+      (PP (IN:[67..69] of)
+        (NP (NN:[70..79] halothane) (NN:[80..89] oxidation)))
+      (PP (IN:[90..92] by)
+        (NP
+          (NP (JJ:[93..100] hepatic) (NNS:[101..111] microsomes))
+          (CC:[112..115] and)
+          (NP (VBN:[116..124] purified)
+             (NNS:[126..137] cytochromes) (NN:[138..143] P-450)))))
+    (S-MNR
+      (NP-SBJ (-NONE-:[143..143] *))
+      (VP (VBG:[144..149] using)
+        (NP (DT:[150..151] a)
+          (ADJP (NN:[152..155] gas) (JJ:[156..171] chromatographic))
+          (ADJP (NN:[172..176] mass) (JJ:[177..190] spectrometric))
+          (NN:[191..196] assay))))
+    (.:[196..197] .)))
+
+;section 2 Span:201..244
+;Gruenke LD, Konopka K, Koop DR, Waskell LA.
+(SEC
+  (FRAG (NNP:[201..208] Gruenke) (NNP:[209..211] LD) (,:[211..212] ,)
+        (NNP:[213..220] Konopka) (NNP:[221..222] K) (,:[222..223] ,)
+        (NNP:[224..228] Koop) (NNP:[229..231] DR) (,:[231..232] ,)
+        (NNP:[233..240] Waskell) (NNP:[241..244] LA.)))
+
+;section 3 Span:248..328
+;Department of Pharmaceutical Chemistry, University of California, San
+;Francisco.
+(SEC
+  (FRAG (NNP:[248..258] Department) (IN:[259..261] of)
+        (NNP:[262..276] Pharmaceutical) (NNP:[277..286] Chemistry)
+        (,:[286..287] ,) (NNP:[288..298] University) (IN:[299..301] of)
+        (NNP:[302..312] California) (,:[312..313] ,) (NNP:[314..317] San)
+        (NNP:[318..327] Francisco) (.:[327..328] .)))
+
+;sentence 4 Span:332..501
+;A sensitive assay for trifluoroacetic acid, the major product of the
+;oxidative  metabolism of halothane, has been developed to study the
+;biotransformation of  halothane.
+;[354..374]:substance:"trifluoroacetic acid"
+;[386..393]:substance:"product"
+;[426..435]:substance:"halothane"
+;[491..500]:substance:"halothane"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[332..333] A) (JJ:[334..343] sensitive) (NN:[344..349] assay))
+      (PP (IN:[350..353] for)
+        (NP
+          (NP (JJ:[354..369] trifluoroacetic) (NN:[370..374] acid))
+          (,:[374..375] ,)
+          (NP
+            (NP (DT:[376..379] the) (JJ:[380..385] major)
+                (NN:[386..393] product))
+            (PP (IN:[394..396] of)
+              (NP
+                (NP (DT:[397..400] the) (JJ:[401..410] oxidative)
+                    (NN:[412..422] metabolism))
+                (PP (IN:[423..425] of)
+                  (NP (NN:[426..435] halothane)))))))))
+    (,:[435..436] ,)
+    (VP (VBZ:[437..440] has)
+      (VP (VBN:[441..445] been)
+        (VP (VBN:[446..455] developed)
+          (NP-1 (-NONE-:[455..455] *))
+          (S-PRP
+            (NP-SBJ (-NONE-:[455..455] *))
+            (VP (TO:[456..458] to)
+              (VP (VB:[459..464] study)
+                (NP
+                  (NP (DT:[465..468] the) (NN:[469..486] biotransformation))
+                  (PP (IN:[487..489] of)
+                    (NP (NN:[491..500] halothane))))))))))
+    (.:[500..501] .)))
+
+;sentence 5 Span:502..669
+;A selected ion monitoring gas chromatographic mass spectrometric  assay
+;measured trifluoroacetic acid levels as low as 1 microM in 100 microliter  of
+;reaction mixture.
+;[513..516]:substance:"ion"
+;[583..603]:substance:"trifluoroacetic acid"
+;[621..622]:quantitative-value:"1"
+;[623..629]:quantitative-units:"microM"
+;[633..636]:quantitative-value:"100"
+;[637..647]:quantitative-units:"microliter"
+(SENT
+  (S
+    (NP-SBJ (DT:[502..503] A) (VBN:[504..512] selected)
+      (ADJP (NN:[513..516] ion) (VBG:[517..527] monitoring))
+      (ADJP (NN:[528..531] gas) (JJ:[532..547] chromatographic))
+      (ADJP (NN:[548..552] mass) (JJ:[553..566] spectrometric))
+      (NN:[568..573] assay))
+    (VP (VBD:[574..582] measured)
+      (NP
+        (NP
+          (NML (JJ:[583..598] trifluoroacetic) (NN:[599..603] acid))
+          (NNS:[604..610] levels))
+        (ADJP
+          (ADJP (RB:[611..613] as) (JJ:[614..617] low))
+          (PP (IN:[618..620] as)
+            (NP
+              (NP (CD:[621..622] 1) (NN:[623..629] microM))
+              (PP-LOC (IN:[630..632] in)
+                (NP
+                  (NP (CD:[633..636] 100) (NN:[637..647] microliter))
+                  (PP (IN:[649..651] of)
+                    (NP (NN:[652..660] reaction) (NN:[661..668] mixture))))))))))
+    (.:[668..669] .)))
+
+;sentence 6 Span:670..792
+;This assay was used to quantitate halothane metabolism in  human and rabbit
+;microsomal systems and with purified proteins.
+;[704..713]:substance:"halothane"
+;[783..791]:substance:"proteins"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[670..674] This) (NN:[675..680] assay))
+    (VP (VBD:[681..684] was)
+      (VP (VBN:[685..689] used)
+        (NP-2 (-NONE-:[689..689] *))
+        (UCP
+          (S-PRP
+            (NP-SBJ (-NONE-:[689..689] *))
+            (VP (TO:[690..692] to)
+              (VP (VB:[693..703] quantitate)
+                (NP
+                  (NP (NN:[704..713] halothane) (NN:[714..724] metabolism))
+                  (PP (IN:[725..727] in)
+                    (NP
+                      (NP (JJ:[729..734] human)
+                        (NML-1 (-NONE-:[734..734] *P*)))
+                      (CC:[735..738] and)
+                      (NP (NN:[739..745] rabbit)
+                        (NML-1 (JJ:[746..756] microsomal)
+                               (NNS:[757..764] systems)))))))))
+          (CC:[765..768] and)
+          (PP (IN:[769..773] with)
+            (NP (VBN:[774..782] purified) (NNS:[783..791] proteins))))))
+    (.:[791..792] .)))
+
+;sentence 7 Span:793..967
+;Trifluoroacetic  acid production was examined as a function of the
+;concentration of substrate  present, the amount of microsomal protein used
+;and the length of reaction time.
+;[793..814]:substance:"Trifluoroacetic  acid"
+;[877..886]:substance:"substrate"
+;[922..929]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (JJ:[793..808] Trifluoroacetic) (NN:[810..814] acid))
+      (NN:[815..825] production))
+    (VP (VBD:[826..829] was)
+      (VP (VBN:[830..838] examined)
+        (NP-1 (-NONE-:[838..838] *))
+        (PP (IN:[839..841] as)
+          (NP
+            (NP (DT:[842..843] a) (NN:[844..852] function))
+            (PP (IN:[853..855] of)
+              (NP
+                (NP
+                  (NP (DT:[856..859] the) (NN:[860..873] concentration))
+                  (PP (IN:[874..876] of)
+                    (NP
+                      (NP (NN:[877..886] substrate))
+                      (ADJP (JJ:[888..895] present)))))
+                (,:[895..896] ,)
+                (NP
+                  (NP (DT:[897..900] the) (NN:[901..907] amount))
+                  (PP (IN:[908..910] of)
+                    (NP
+                      (NP (JJ:[911..921] microsomal) (NN:[922..929] protein))
+                      (VP (VBN:[930..934] used)
+                        (NP (-NONE-:[934..934] *))))))
+                (CC:[935..938] and)
+                (NP
+                  (NP (DT:[939..942] the) (NN:[943..949] length))
+                  (PP (IN:[950..952] of)
+                    (NP (NN:[953..961] reaction) (NN:[962..966] time))))))))))
+    (.:[966..967] .)))
+
+;sentence 8 Span:969..1093
+;Halothane metabolism in microsomes was linear for at least 30 min, and up to
+;a  microsomal protein concentration of 1 mg/ml.
+;[969..978]:substance:"Halothane"
+;[1019..1030]:quantitative-value:"at least 30"
+;[1031..1034]:quantitative-units:"min"
+;[1060..1067]:substance:"protein"
+;[1085..1086]:quantitative-value:"1"
+;[1087..1092]:quantitative-units:"mg/ml"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[969..978] Halothane) (NN:[979..989] metabolism))
+      (PP-LOC (IN:[990..992] in)
+        (NP (NNS:[993..1003] microsomes))))
+    (VP (VBD:[1004..1007] was)
+      (ADJP-PRD (JJ:[1008..1014] linear))
+      (PP
+        (PP-TMP (IN:[1015..1018] for)
+          (NP
+            (QP (IN:[1019..1021] at) (JJS:[1022..1027] least)
+                (CD:[1028..1030] 30))
+            (NN:[1031..1034] min)))
+        (,:[1034..1035] ,) (CC:[1036..1039] and)
+        (PP (RB:[1040..1042] up)
+          (PP (TO:[1043..1045] to)
+            (NP
+              (NP (DT:[1046..1047] a) (JJ:[1049..1059] microsomal)
+                  (NN:[1060..1067] protein) (NN:[1068..1081] concentration))
+              (PP (IN:[1082..1084] of)
+                (NP
+                  (NP (CD:[1085..1086] 1) (NN:[1087..1089] mg))
+                  (PP (SYM:[1089..1090] /)
+                    (NP (NN:[1090..1092] ml))))))))))
+    (.:[1092..1093] .)))
+
+;sentence 9 Span:1094..1217
+;In rabbits, phenobarbital and  imidazole induced the microsomal metabolism of
+;halothane 7.36- and 18.2-fold,  respectively.
+;[1106..1119]:substance:"phenobarbital"
+;[1125..1134]:substance:"imidazole"
+;[1172..1181]:substance:"halothane"
+;[1182..1187]...[1197..1201]:quantitative-value:"7.36-"..."fold"
+;[1192..1201]:quantitative-value:"18.2-fold"
+(SENT
+  (S
+    (PP-LOC (IN:[1094..1096] In)
+      (NP (NNS:[1097..1104] rabbits)))
+    (,:[1104..1105] ,)
+    (NP-SBJ (NN:[1106..1119] phenobarbital) (CC:[1120..1123] and)
+            (NN:[1125..1134] imidazole))
+    (VP (VBD:[1135..1142] induced)
+      (NP
+        (NP (DT:[1143..1146] the) (JJ:[1147..1157] microsomal)
+            (NN:[1158..1168] metabolism))
+        (PP (IN:[1169..1171] of)
+          (NP (NN:[1172..1181] halothane))))
+      (ADVP-EXT
+        (ADVP
+          (QP (CD:[1182..1186] 7.36) (HYPH:[1186..1187] -)
+            (ADVP-1 (-NONE-:[1187..1187] *P*))))
+        (CC:[1188..1191] and)
+        (ADVP
+          (QP (CD:[1192..1196] 18.2) (HYPH:[1196..1197] -)
+            (ADVP-1 (RB:[1197..1201] fold)))))
+      (,:[1201..1202] ,)
+      (ADVP (RB:[1204..1216] respectively)))
+    (.:[1216..1217] .)))
+
+;sentence 10 Span:1218..1333
+;Imidazole was used because it is a potent inducer of cytochrome  P-450
+;isozyme 3a which is also induced by ethanol.
+;[1218..1227]:substance:"Imidazole"
+;[1260..1267]:substance:"inducer"
+;[1271..1299]:cyp450:"cytochrome  P-450 isozyme 3a"
+;[1325..1332]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[1218..1227] Imidazole))
+    (VP (VBD:[1228..1231] was)
+      (VP (VBN:[1232..1236] used)
+        (NP-2 (-NONE-:[1236..1236] *))
+        (SBAR-PRP (IN:[1237..1244] because)
+          (S
+            (NP-SBJ (PRP:[1245..1247] it))
+            (VP (VBZ:[1248..1250] is)
+              (NP-PRD
+                (NP (DT:[1251..1252] a) (JJ:[1253..1259] potent)
+                    (NN:[1260..1267] inducer))
+                (PP (IN:[1268..1270] of)
+                  (NP
+                    (NP
+                      (NML (NN:[1271..1281] cytochrome) (NN:[1283..1288] P-450))
+                      (NN:[1289..1296] isozyme) (NN:[1297..1299] 3a))
+                    (SBAR
+                      (WHNP-1 (WDT:[1300..1305] which))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[1305..1305] *T*))
+                        (VP (VBZ:[1306..1308] is)
+                          (ADVP (RB:[1309..1313] also))
+                          (VP (VBN:[1314..1321] induced)
+                            (NP-1 (-NONE-:[1321..1321] *))
+                            (PP (IN:[1322..1324] by)
+                              (NP-LGS (NN:[1325..1332] ethanol)))))))))))))))
+    (.:[1332..1333] .)))
+
+;sentence 11 Span:1334..1524
+;The cytochrome P-450 in  microsomes from a single human subject metabolized
+;halothane at a rate  comparable to that found in microsomes from
+;phenobarbital- and  imidazole-pretreated rabbits.
+;[1338..1354]:cyp450:"cytochrome P-450"
+;[1410..1419]:substance:"halothane"
+;[1475..1488]:substance:"phenobarbital"
+;[1495..1504]:substance:"imidazole"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1334..1337] The)
+         (NN:[1338..1348] cytochrome) (NN:[1349..1354] P-450))
+      (PP-LOC (IN:[1355..1357] in)
+        (NP
+          (NP (NNS:[1359..1369] microsomes))
+          (PP (IN:[1370..1374] from)
+            (NP (DT:[1375..1376] a) (JJ:[1377..1383] single)
+                (JJ:[1384..1389] human) (NN:[1390..1397] subject))))))
+    (VP (VBD:[1398..1409] metabolized)
+      (NP (NN:[1410..1419] halothane))
+      (PP (IN:[1420..1422] at)
+        (NP
+          (NP (DT:[1423..1424] a) (NN:[1425..1429] rate))
+          (ADJP (JJ:[1431..1441] comparable)
+            (PP (TO:[1442..1444] to)
+              (NP
+                (NP (DT:[1445..1449] that))
+                (VP (VBN:[1450..1455] found)
+                  (NP (-NONE-:[1455..1455] *))
+                  (PP-LOC (IN:[1456..1458] in)
+                    (NP
+                      (NP (NNS:[1459..1469] microsomes))
+                      (PP (IN:[1470..1474] from)
+                        (NP
+                          (NP
+                            (ADJP (NN:[1475..1488] phenobarbital)
+                                  (HYPH:[1488..1489] -)
+                              (ADJP-1 (-NONE-:[1489..1489] *P*)))
+                            (NML-2 (-NONE-:[1489..1489] *P*)))
+                          (CC:[1490..1493] and)
+                          (NP
+                            (ADJP (NN:[1495..1504] imidazole)
+                                  (HYPH:[1504..1505] -)
+                              (ADJP-1 (VBN:[1505..1515] pretreated)))
+                            (NML-2 (NNS:[1516..1523] rabbits))))))))))))))
+    (.:[1523..1524] .)))
+
+;sentence 12 Span:1525..1677
+;The purified phenobarbital and imidazole inducible  cytochromes P-450,
+;isozymes 2 and 3a, catalyzed the oxidation of halothane to  trifluoroacetic
+;acid.
+;[1538..1551]:substance:"phenobarbital"
+;[1556..1565]:substance:"imidazole"
+;[1577..1594]:cyp450:"cytochromes P-450"
+;[1596..1606]:cyp450:"isozymes 2"
+;[1596..1604]...[1611..1613]:cyp450:"isozymes"..."3a"
+;[1642..1651]:substance:"halothane"
+;[1656..1676]:substance:"trifluoroacetic acid"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1525..1528] The) (VBN:[1529..1537] purified)
+          (NN:[1538..1551] phenobarbital))
+      (CC:[1552..1555] and)
+      (NP
+        (NP
+          (ADJP-2 (NN:[1556..1565] imidazole) (JJ:[1566..1575] inducible))
+          (NML-3 (NNS:[1577..1588] cytochromes) (NN:[1589..1594] P-450))
+          (,:[1594..1595] ,)
+          
+          (NML-1 (NNS:[1596..1604] isozymes))
+          (CD:[1605..1606] 2))
+        (CC:[1607..1610] and)
+        (NP
+          (ADJP-2 (-NONE-:[1610..1610] *P*))
+          (NML-3 (-NONE-:[1610..1610] *P*))
+          (NML-1 (-NONE-:[1610..1610] *P*))
+          (NN:[1611..1613] 3a))))
+    (,:[1613..1614] ,)
+    (VP (VBD:[1615..1624] catalyzed)
+      (NP
+        (NP (DT:[1625..1628] the) (NN:[1629..1638] oxidation))
+        (PP (IN:[1639..1641] of)
+          (NP (NN:[1642..1651] halothane)))
+        (PP (TO:[1652..1654] to)
+          (NP (JJ:[1656..1671] trifluoroacetic) (NN:[1672..1676] acid)))))
+    (.:[1676..1677] .)))
+
+;sentence 13 Span:1678..1826
+;Cytochrome b5 stimulated the isozyme 3a-catalyzed  oxidation of halothane by
+;19-fold, whereas isozyme 2 catalyzed oxidation was  increased 4.3-fold.
+;[1678..1691]:substance:"Cytochrome b5"
+;[1707..1717]:cyp450:"isozyme 3a"
+;[1742..1751]:substance:"halothane"
+;[1755..1762]:quantitative-value:"19-fold"
+;[1772..1781]:cyp450:"isozyme 2"
+;[1817..1825]:quantitative-value:"4.3-fold"
+(SENT
+  (S
+    (NP-SBJ (NN:[1678..1688] Cytochrome) (NN:[1689..1691] b5))
+    (VP (VBD:[1692..1702] stimulated)
+      (NP
+        (NP (DT:[1703..1706] the)
+          (ADJP
+            (NML (NN:[1707..1714] isozyme) (NN:[1715..1717] 3a))
+            (HYPH:[1717..1718] -) (VBN:[1718..1727] catalyzed))
+          (NN:[1729..1738] oxidation))
+        (PP (IN:[1739..1741] of)
+          (NP (NN:[1742..1751] halothane))))
+      (PP-EXT (IN:[1752..1754] by)
+        (ADVP
+          (QP (CD:[1755..1757] 19) (HYPH:[1757..1758] -) (RB:[1758..1762] fold))))
+      (,:[1762..1763] ,)
+      (SBAR-ADV (IN:[1764..1771] whereas)
+        (S
+          (NP-SBJ-1
+            (NML
+              (NML (NN:[1772..1779] isozyme) (CD:[1780..1781] 2))
+              (VBN:[1782..1791] catalyzed))
+            (NN:[1792..1801] oxidation))
+          (VP (VBD:[1802..1805] was)
+            (VP (VBN:[1807..1816] increased)
+              (NP-1 (-NONE-:[1816..1816] *))
+              (ADVP-EXT
+                (QP (CD:[1817..1820] 4.3) (HYPH:[1820..1821] -)
+                    (RB:[1821..1825] fold))))))))
+    (.:[1825..1826] .)))
+
+;sentence 14 Span:1827..2040
+;Antibodies to cytochrome P-450 3a inhibited halothane  metabolism by 90% in
+;microsomes from imidazole-pretreated rabbits, suggesting  that isozyme 3a
+;catalyzes halothane metabolism in imidazole-pretreated rabbits.
+;[1827..1837]:substance:"Antibodies"
+;[1841..1860]:cyp450:"cytochrome P-450 3a"
+;[1871..1880]:substance:"halothane"
+;[1896..1899]:quantitative-value:"90%"
+;[1919..1928]:substance:"imidazole"
+;[1966..1976]:cyp450:"isozyme 3a"
+;[1987..1996]:substance:"halothane"
+;[2011..2020]:substance:"imidazole"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1827..1837] Antibodies))
+      (PP (TO:[1838..1840] to)
+        (NP
+          (NML (NN:[1841..1851] cytochrome) (NN:[1852..1857] P-450))
+          (NN:[1858..1860] 3a))))
+    (VP (VBD:[1861..1870] inhibited)
+      (NP (NN:[1871..1880] halothane) (NN:[1882..1892] metabolism))
+      (PP-EXT (IN:[1893..1895] by)
+        (NP (CD:[1896..1898] 90) (NN:[1898..1899] %)))
+      (PP-LOC (IN:[1900..1902] in)
+        (NP
+          (NP (NNS:[1903..1913] microsomes))
+          (PP (IN:[1914..1918] from)
+            (NP
+              (ADJP (NN:[1919..1928] imidazole) (HYPH:[1928..1929] -)
+                    (VBN:[1929..1939] pretreated))
+              (NNS:[1940..1947] rabbits)))))
+      (,:[1947..1948] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1948..1948] *))
+        (VP (VBG:[1949..1959] suggesting)
+          (SBAR (IN:[1961..1965] that)
+            (S
+              (NP-SBJ (NN:[1966..1973] isozyme) (NN:[1974..1976] 3a))
+              (VP (VBZ:[1977..1986] catalyzes)
+                (NP (NN:[1987..1996] halothane) (NN:[1997..2007] metabolism))
+                (PP-LOC (IN:[2008..2010] in)
+                  (NP
+                    (ADJP (NN:[2011..2020] imidazole) (HYPH:[2020..2021] -)
+                          (VBN:[2021..2031] pretreated))
+                    (NNS:[2032..2039] rabbits)))))))))
+    (.:[2039..2040] .)))
+
+;sentence 15 Span:2042..2185
+;In conclusion, the oxidation of halothane to trifluoroacetic acid by
+;cytochrome  P-450 isozymes 3a and 2 is enhanced markedly by cytochrome b5.
+;[2074..2083]:substance:"halothane"
+;[2087..2107]:substance:"trifluoroacetic acid"
+;[2111..2140]:cyp450:"cytochrome  P-450 isozymes 3a"
+;[2111..2137]...[2145..2146]:cyp450:"cytochrome  P-450 isozymes"..."2"
+;[2171..2184]:substance:"cytochrome b5"
+(SENT
+  (S
+    (PP (IN:[2042..2044] In)
+      (NP (NN:[2045..2055] conclusion)))
+    (,:[2055..2056] ,)
+    (NP-SBJ-3
+      (NP (DT:[2057..2060] the) (NN:[2061..2070] oxidation))
+      (PP (IN:[2071..2073] of)
+        (NP (NN:[2074..2083] halothane)))
+      (PP (TO:[2084..2086] to)
+        (NP (JJ:[2087..2102] trifluoroacetic) (NN:[2103..2107] acid)))
+      (PP (IN:[2108..2110] by)
+        (NP
+          (NP
+            (NML-2 (NN:[2111..2121] cytochrome) (NN:[2123..2128] P-450))
+            (NML-1 (NNS:[2129..2137] isozymes))
+            (NN:[2138..2140] 3a))
+          (CC:[2141..2144] and)
+          (NP
+            (NML-2 (-NONE-:[2144..2144] *P*))
+            (NML-1 (-NONE-:[2144..2144] *P*))
+            (CD:[2145..2146] 2)))))
+    (VP (VBZ:[2147..2149] is)
+      (VP (VBN:[2150..2158] enhanced)
+        (NP-3 (-NONE-:[2158..2158] *))
+        (ADVP (RB:[2159..2167] markedly))
+        (PP (IN:[2168..2170] by)
+          (NP-LGS (NN:[2171..2181] cytochrome) (NN:[2182..2184] b5)))))
+    (.:[2184..2185] .)))
+
+;section 16 Span:2189..2232
+;PMID: 3404442 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2189..2193] PMID) (::[2193..2194] :) (CD:[2195..2202] 3404442)
+        (-LRB-:[2203..2204] -LSB-) (NNP:[2204..2210] PubMed) (::[2211..2212] -)
+        (VBN:[2213..2220] indexed) (IN:[2221..2224] for)
+        (NNP:[2225..2232] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2232..EOF] ]
+
+(ORPH -RSB-)

@@ -1,0 +1,430 @@
+;PMID: 6836571
+;source_file_833.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..159] = [t:52..159]
+;2)section:[e:163..206] = [t:163..206]
+;3)sentence:[e:210..331] = [t:210..331]
+;4)sentence:[e:332..596] = [t:332..596]
+;5)sentence:[e:597..720] = [t:597..720]
+;6)sentence:[e:721..1054] = [t:721..1054]
+;7)sentence:[e:1055..1165] = [t:1055..1165]
+;8)sentence:[e:1166..1323] = [t:1166..1323]
+;9)sentence:[e:1324..1454] = [t:1324..1454]
+;10)sentence:[e:1455..1734] = [t:1455..1734]
+;11)section:[e:1738..1782] = [t:1738..1782]
+
+;section 0 Span:0..46
+;Toxicol Appl Pharmacol. 1983 Feb;67(2):159-65.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..12] Appl) (NNP:[13..22] Pharmacol)
+        (.:[22..23] .) (CD:[24..28] 1983) (CC:[29..36] Feb;67-LRB-)
+        (CD:[36..37] 2) (-RRB-:[37..38] -RRB-) (CD:[38..42] :159)
+        (NN:[42..43] -) (CD:[43..45] 65) (.:[45..46] .)))
+
+;sentence 1 Span:52..159
+;Time course of the carbon tetrachloride-induced decrease in mitochondrial 
+;aldehyde dehydrogenase activity.
+;[71..91]:substance:"carbon tetrachloride"
+;[127..149]:substance:"aldehyde dehydrogenase"
+(SENT
+  (NP-HLN
+    (NP (NN:[52..56] Time) (NN:[57..63] course))
+    (PP (IN:[64..66] of)
+      (NP
+        (NP (DT:[67..70] the)
+          (ADJP
+            (NML (NN:[71..77] carbon) (NN:[78..91] tetrachloride))
+            (HYPH:[91..92] -) (VBN:[92..99] induced))
+          (NN:[100..108] decrease))
+        (PP (IN:[109..111] in)
+          (NP (JJ:[112..125] mitochondrial)
+            (NML (NN:[127..135] aldehyde) (NN:[136..149] dehydrogenase))
+            (NN:[150..158] activity)))))
+    (.:[158..159] .)))
+
+;section 2 Span:163..206
+;Hjelle JJ, Grubbs JH, Beer DG, Petersen DR.
+(SEC
+  (FRAG (NNP:[163..169] Hjelle) (NNP:[170..172] JJ) (,:[172..173] ,)
+        (NNP:[174..180] Grubbs) (NNP:[181..183] JH) (,:[183..184] ,)
+        (NNP:[185..189] Beer) (NNP:[190..192] DG) (,:[192..193] ,)
+        (NNP:[194..202] Petersen) (NNP:[203..206] DR.)))
+
+;sentence 3 Span:210..331
+;Hepatic microsomal enzymes like cytochrome P-450 and glucose 6-phosphatase
+;are  inhibited after exposure to CCl4 in vivo.
+;[229..236]:substance:"enzymes"
+;[242..258]:cyp450:"cytochrome P-450"
+;[263..284]:substance:"glucose 6-phosphatase"
+;[318..322]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[210..217] Hepatic) (JJ:[218..228] microsomal)
+          (NNS:[229..236] enzymes))
+      (PP (IN:[237..241] like)
+        (NP
+          (NP (NN:[242..252] cytochrome) (NN:[253..258] P-450))
+          (CD:[259..262] and)
+          (NP (NN:[263..270] glucose) (NN:[271..284] 6-phosphatase)))))
+    (VP (VBP:[285..288] are)
+      (VP (JJ:[290..299] inhibited)
+        (NP-1 (-NONE-:[299..299] *))
+        (PP-TMP (IN:[300..305] after)
+          (NP
+            (NP (NN:[306..314] exposure))
+            (PP (TO:[315..317] to)
+              (NP (NN:[318..322] CCl4)))))
+        (ADVP (FW:[323..325] in) (FW:[326..330] vivo))))
+    (.:[330..331] .)))
+
+;sentence 4 Span:332..596
+;Since comparatively less is known  about the effects of CCl4 on nonmicrosomal
+;enzymes, we investigated the rapidity  by which CCl4 inhibits the low Km
+;mitochondrial aldehyde dehydrogenase (ALDH)  isozyme, an enzyme known to be
+;inhibited 24 hr after CCl4 treatment.
+;[388..392]:substance:"CCl4"
+;[410..417]:substance:"enzymes"
+;[458..462]:substance:"CCl4"
+;[480..482]:quantitative-name:"Km"
+;[497..535]:substance:"aldehyde dehydrogenase (ALDH)  isozyme"
+;[540..546]:substance:"enzyme"
+;[569..571]:quantitative-value:"24"
+;[572..574]:quantitative-units:"hr"
+;[581..585]:substance:"CCl4"
+(SENT
+  (S
+    (SBAR-ADV (IN:[332..337] Since)
+      (S
+        (NP-SBJ (RB:[338..351] comparatively) (JJR:[352..356] less))
+        (VP (VBZ:[357..359] is)
+          (ADJP-PRD (JJ:[360..365] known)
+            (PP (IN:[367..372] about)
+              (NP
+                (NP (DT:[373..376] the) (NNS:[377..384] effects))
+                (PP (IN:[385..387] of)
+                  (NP (NN:[388..392] CCl4)))
+                (PP (IN:[393..395] on)
+                  (NP (JJ:[396..409] nonmicrosomal) (NNS:[410..417] enzymes)))))))))
+    (,:[417..418] ,)
+    (NP-SBJ (PRP:[419..421] we))
+    (VP (VBD:[422..434] investigated)
+      (NP
+        (NP (DT:[435..438] the) (NN:[439..447] rapidity))
+        (SBAR
+          (WHPP-1 (IN:[449..451] by)
+            (WHNP (WDT:[452..457] which)))
+          (S
+            (NP-SBJ (NN:[458..462] CCl4))
+            (VP (VBZ:[463..471] inhibits)
+              (NP
+                (NP (DT:[472..475] the)
+                  (NML (JJ:[476..479] low) (NN:[480..482] Km))
+                  (JJ:[483..496] mitochondrial)
+                  
+                  (NML
+                    (NML (NN:[497..505] aldehyde) (NN:[506..519] dehydrogenase))
+                    (NML (-LRB-:[520..521] -LRB-) (NN:[521..525] ALDH)
+                         (-RRB-:[525..526] -RRB-)))
+                  (NN:[528..535] isozyme))
+                (,:[535..536] ,)
+                (NP
+                  (NP (DT:[537..539] an) (NN:[540..546] enzyme))
+                  (VP (JJ:[547..552] known)
+                    (S
+                      (NP-SBJ-2 (-NONE-:[552..552] *))
+                      (VP (TO:[553..555] to)
+                        (VP (VB:[556..558] be)
+                          (VP (JJ:[559..568] inhibited)
+                            (NP-2 (-NONE-:[568..568] *))
+                            (PP-TMP
+                              (NP-ADV (CD:[569..571] 24) (NNS:[572..574] hr))
+                              (IN:[575..580] after)
+                              (NP (NN:[581..585] CCl4) (NN:[586..595] treatment))))))))))
+              (PP-1 (-NONE-:[595..595] *T*)))))))
+    (.:[595..596] .)))
+
+;sentence 5 Span:597..720
+;The  activity of this ALDH isozyme was significantly lowered 6 and 12 hr
+;after a  single 1 ml/kg intragastric dose of CCl4.
+;[619..631]:substance:"ALDH isozyme"
+;[658..659]:quantitative-value:"6"
+;[664..666]:quantitative-value:"12"
+;[667..669]:quantitative-units:"hr"
+;[686..687]:quantitative-value:"1"
+;[688..693]:quantitative-units:"ml/kg"
+;[715..719]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[597..600] The) (NN:[602..610] activity))
+      (PP (IN:[611..613] of)
+        (NP (DT:[614..618] this)
+           (NN:[619..623] ALDH) (NN:[624..631] isozyme))))
+    (VP (VBD:[632..635] was)
+      (ADVP (RB:[636..649] significantly))
+      (VP (VBN:[650..657] lowered)
+        (NP-2 (-NONE-:[657..657] *))
+        (PP
+          (NP-ADV
+            (NP (CD:[658..659] 6)
+              (NML-1 (-NONE-:[659..659] *P*)))
+            (CC:[660..663] and)
+            (NP (CD:[664..666] 12)
+              (NML-1 (NNS:[667..669] hr))))
+          (IN:[670..675] after)
+          (NP
+            (NP (DT:[676..677] a) (JJ:[679..685] single)
+              (NML
+                (NML (CD:[686..687] 1) (NN:[688..690] ml))
+                (PP (SYM:[690..691] /)
+                  (NP (NN:[691..693] kg))))
+              (JJ:[694..706] intragastric) (NN:[707..711] dose))
+            (PP (IN:[712..714] of)
+              (NP (NN:[715..719] CCl4)))))))
+    (.:[719..720] .)))
+
+;sentence 6 Span:721..1054
+;The mitochondrial low Km ALDH specific  activities exhibited a similar
+;pattern of destruction/inhibition to the  documented target enzyme microsomal
+;cytochrome P-450 in that lowest values were  observed 6 hr after CCl4. These
+;values were 44 and 37% of control for cytochrome  P-450 content and the low
+;Km ALDH activity, respectively.
+;[743..745]:quantitative-name:"Km"
+;[746..750]:substance:"ALDH"
+;[852..858]:substance:"enzyme"
+;[870..886]:cyp450:"cytochrome P-450"
+;[924..925]:quantitative-value:"6"
+;[926..928]:quantitative-units:"hr"
+;[935..939]:substance:"CCl4"
+;[959..961]...[968..969]:quantitative-value:"44"..."%"
+;[966..969]:quantitative-value:"37%"
+;[985..1002]:cyp450:"cytochrome  P-450"
+;[1023..1025]:quantitative-name:"Km"
+;[1026..1030]:substance:"ALDH"
+(SENT
+  (S
+    (NP-SBJ (DT:[721..724] The) (JJ:[725..738] mitochondrial)
+      (NML (JJ:[739..742] low) (NN:[743..745] Km))
+      (ADJP (NN:[746..750] ALDH) (JJ:[751..759] specific))
+      (NNS:[761..771] activities))
+    (VP (VBD:[772..781] exhibited)
+      (NP
+        (NP (DT:[782..783] a) (JJ:[784..791] similar) (NN:[792..799] pattern))
+        (PP (IN:[800..802] of)
+          (NP (NN:[803..814] destruction) (SYM:[814..815] /)
+              (NN:[815..825] inhibition)))
+        (PP (TO:[826..828] to)
+          (NP
+            (NP (DT:[829..832] the) (VBN:[834..844] documented)
+                (NN:[845..851] target) (NN:[852..858] enzyme))
+            (NP (JJ:[859..869] microsomal)
+               (NN:[870..880] cytochrome) (NN:[881..886] P-450)))))
+      (SBAR-ADV (IN:[887..889] in) (IN:[890..894] that)
+        (S
+          (NP-SBJ-1 (JJS:[895..901] lowest) (NNS:[902..908] values))
+          (VP (VBD:[909..913] were)
+            (VP (VBN:[915..923] observed)
+              (NP-1 (-NONE-:[923..923] *))
+              (PP-TMP
+                (NP-ADV (CD:[924..925] 6) (NNS:[926..928] hr))
+                (IN:[929..934] after)
+                (NP (NN:[935..939] CCl4))))))))
+    (.:[939..940] .))
+  (S
+    (NP-SBJ (DT:[941..946] These) (NNS:[947..953] values))
+    (VP (VBD:[954..958] were)
+      (NP-PRD
+        (NP
+          (NP (CD:[959..961] 44)
+            (NML-2 (-NONE-:[961..961] *P*)))
+          (CC:[962..965] and)
+          (NP (CD:[966..968] 37)
+            (NML-2 (NN:[968..969] %))))
+        (PP (IN:[970..972] of)
+          (NP (NN:[973..980] control))))
+      (PP (IN:[981..984] for)
+        (NP
+          (NP
+            (NML (NN:[985..995] cytochrome) (NN:[997..1002] P-450))
+            (NN:[1003..1010] content))
+          (CC:[1011..1014] and)
+          (NP (DT:[1015..1018] the)
+            (NML (JJ:[1019..1022] low) (NN:[1023..1025] Km))
+            (NN:[1026..1030] ALDH) (NN:[1031..1039] activity))))
+      (,:[1039..1040] ,)
+      (ADVP (RB:[1041..1053] respectively)))
+    (.:[1053..1054] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[721..1054]::S:S:
+
+;sentence 7 Span:1055..1165
+;Alcohol dehydrogenase  activity, expressed as activity per gram liver, was
+;depressed 12 hr after CCl4  dosing.
+;[1055..1076]:substance:"Alcohol dehydrogenase"
+;[1101..1124]:quantitative-units:"activity per gram liver"
+;[1140..1142]:quantitative-value:"12"
+;[1143..1145]:quantitative-units:"hr"
+;[1152..1156]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML (NN:[1055..1062] Alcohol) (NN:[1063..1076] dehydrogenase))
+        (NN:[1078..1086] activity))
+      (,:[1086..1087] ,)
+      (VP (VBN:[1088..1097] expressed)
+        (NP (-NONE-:[1097..1097] *))
+        (PP-CLR (IN:[1098..1100] as)
+          (NP
+            (NP (NN:[1101..1109] activity))
+            (PP (IN:[1110..1113] per)
+              (NP (NN:[1114..1118] gram) (NN:[1119..1124] liver))))))
+      (,:[1124..1125] ,))
+    (VP (VBD:[1126..1129] was)
+      (VP (VBN:[1130..1139] depressed)
+        (NP-1 (-NONE-:[1139..1139] *))
+        (PP-TMP
+          (NP-ADV (CD:[1140..1142] 12) (NNS:[1143..1145] hr))
+          (IN:[1146..1151] after)
+          (NP (NN:[1152..1156] CCl4) (NN:[1158..1164] dosing)))))
+    (.:[1164..1165] .)))
+
+;sentence 8 Span:1166..1323
+;Finally, the activity of the low Km cytosolic ALDH, the isozyme that 
+;metabolizes malondialdehyde at low concentrations, was not affected by CCl4 
+;treatment.
+;[1199..1201]:quantitative-name:"Km"
+;[1212..1216]:substance:"ALDH"
+;[1222..1229]:substance:"isozyme"
+;[1248..1263]:substance:"malondialdehyde"
+;[1307..1311]:substance:"CCl4"
+(SENT
+  (S
+    (ADVP (RB:[1166..1173] Finally))
+    (,:[1173..1174] ,)
+    (NP-SBJ-2
+      (NP (DT:[1175..1178] the) (NN:[1179..1187] activity))
+      (PP (IN:[1188..1190] of)
+        (NP
+          (NP (DT:[1191..1194] the)
+            (NML (JJ:[1195..1198] low) (NN:[1199..1201] Km))
+            (JJ:[1202..1211] cytosolic) (NN:[1212..1216] ALDH))
+          (,:[1216..1217] ,)
+          (NP
+            (NP (DT:[1218..1221] the) (NN:[1222..1229] isozyme))
+            (SBAR
+              (WHNP-1 (WDT:[1230..1234] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[1234..1234] *T*))
+                (VP (VBZ:[1236..1247] metabolizes)
+                  (NP (NN:[1248..1263] malondialdehyde))
+                  (PP (IN:[1264..1266] at)
+                    (NP (JJ:[1267..1270] low) (NN:[1271..1285] concentrations))))))))))
+    (,:[1285..1286] ,)
+    (VP (VBD:[1287..1290] was) (RB:[1291..1294] not)
+      (VP (VBN:[1295..1303] affected)
+        (NP-2 (-NONE-:[1303..1303] *))
+        (PP (IN:[1304..1306] by)
+          (NP-LGS (NN:[1307..1311] CCl4) (NN:[1313..1322] treatment)))))
+    (.:[1322..1323] .)))
+
+;sentence 9 Span:1324..1454
+;The CCl4-induced decline in the activity of the matrix ALDH isozyme  occurs
+;earlier than previously reported mitochondrial damage.
+;[1328..1332]:substance:"CCl4"
+;[1379..1391]:substance:"ALDH isozyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1324..1327] The)
+        (ADJP (NN:[1328..1332] CCl4) (HYPH:[1332..1333] -)
+              (VBN:[1333..1340] induced))
+        (NN:[1341..1348] decline))
+      (PP (IN:[1349..1351] in)
+        (NP
+          (NP (DT:[1352..1355] the) (NN:[1356..1364] activity))
+          (PP (IN:[1365..1367] of)
+            (NP (DT:[1368..1371] the)
+              (NML (NN:[1372..1378] matrix) (NN:[1379..1383] ALDH))
+              (NN:[1384..1391] isozyme))))))
+    (VP (VBZ:[1393..1399] occurs)
+      (ADVP (JJR:[1400..1407] earlier)
+        (PP (IN:[1408..1412] than)
+          (NP
+            (ADJP (RB:[1413..1423] previously) (VBN:[1424..1432] reported))
+            (JJ:[1433..1446] mitochondrial) (NN:[1447..1453] damage)))))
+    (.:[1453..1454] .)))
+
+;sentence 10 Span:1455..1734
+;The study of  sensitive enzymes like the low Km ALDH may provide valuable
+;information by which  it may be possible to determine the relationship of the
+;truly rapid biochemical  effects of CCl4 such as microsomal lipid
+;peroxidation with later effects on  nonmicrosomal components.
+;[1479..1486]:substance:"enzymes"
+;[1500..1502]:quantitative-name:"Km"
+;[1503..1507]:substance:"ALDH"
+;[1643..1647]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1455..1458] The) (NN:[1459..1464] study))
+      (PP (IN:[1465..1467] of)
+        (NP
+          (NP (JJ:[1469..1478] sensitive) (NNS:[1479..1486] enzymes))
+          (PP (IN:[1487..1491] like)
+            (NP (DT:[1492..1495] the)
+              (NML (JJ:[1496..1499] low) (NN:[1500..1502] Km))
+              (NN:[1503..1507] ALDH))))))
+    (VP (MD:[1508..1511] may)
+      (VP (VB:[1512..1519] provide)
+        (NP
+          (NP (JJ:[1520..1528] valuable) (NN:[1529..1540] information))
+          (SBAR
+            (WHPP-1 (IN:[1541..1543] by)
+              (WHNP (WDT:[1544..1549] which)))
+            (S
+              (NP-SBJ (PRP:[1551..1553] it))
+              (VP (MD:[1554..1557] may)
+                (VP (VB:[1558..1560] be)
+                  (ADJP-PRD (JJ:[1561..1569] possible)
+                    (S
+                      (NP-SBJ (-NONE-:[1569..1569] *))
+                      (VP (TO:[1570..1572] to)
+                        (VP (VB:[1573..1582] determine)
+                          (NP
+                            (NP (DT:[1583..1586] the)
+                                (NN:[1587..1599] relationship))
+                            (PP (IN:[1600..1602] of)
+                              (NP
+                                (NP
+                                  (NP (DT:[1603..1606] the)
+                                    (ADJP (RB:[1607..1612] truly)
+                                          (JJ:[1613..1618] rapid))
+                                    (JJ:[1619..1630] biochemical)
+                                     (NNS:[1632..1639] effects))
+                                  (PP (IN:[1640..1642] of)
+                                    (NP (NN:[1643..1647] CCl4))))
+                                (PP (JJ:[1648..1652] such) (IN:[1653..1655] as)
+                                  (NP (JJ:[1656..1666] microsomal)
+                                      (NN:[1667..1672] lipid)
+                                      (NN:[1673..1685] peroxidation)))))
+                            (PP (IN:[1686..1690] with)
+                              (NP
+                                (NP (JJ:[1691..1696] later)
+                                    (NNS:[1697..1704] effects))
+                                (PP (IN:[1705..1707] on)
+                                  (NP (JJ:[1709..1722] nonmicrosomal)
+                                      (NNS:[1723..1733] components))))))
+                          (PP-1 (-NONE-:[1733..1733] *T*)))))))))))))
+    (.:[1733..1734] .)))
+
+;section 11 Span:1738..1782
+;PMID: 6836571 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1738..1742] PMID) (::[1742..1743] :) (CD:[1744..1751] 6836571)
+        (-LRB-:[1752..1753] -LSB-) (NNP:[1753..1759] PubMed)
+        (HYPH:[1760..1761] -) (NN:[1762..1769] indexed) (IN:[1770..1773] for)
+        (NNP:[1774..1781] MEDLINE) (-RRB-:[1781..1782] -RSB-)))

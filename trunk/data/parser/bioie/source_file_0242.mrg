@@ -1,0 +1,540 @@
+;PMID: 2891479
+;source_file_1887.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..144] = [t:50..144]
+;2)sentence:[e:145..188] = [t:145..188]
+;3)section:[e:192..218] = [t:192..218]
+;4)section:[e:222..301] = [t:222..301]
+;5)sentence:[e:305..421] = [t:305..421]
+;6)sentence:[e:422..545] = [t:422..545]
+;7)sentence:[e:547..679] = [t:547..679]
+;8)sentence:[e:680..848] = [t:680..848]
+;9)sentence:[e:849..997] = [t:849..997]
+;10)sentence:[e:998..1095] = [t:998..1095]
+;11)sentence:[e:1097..1330] = [t:1097..1330]
+;12)sentence:[e:1332..1498] = [t:1332..1498]
+;13)sentence:[e:1499..1589] = [t:1499..1589]
+;14)sentence:[e:1590..1745] = [t:1590..1745]
+;15)sentence:[e:1746..1983] = [t:1746..1983]
+;16)section:[e:1987..2031] = [t:1987..2031]
+
+;section 0 Span:0..44
+;Drug Metab Dispos. 1987 Sep-Oct;15(5):634-9.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1987) (NN:[24..34] Sep-Oct;15)
+        (-LRB-:[34..35] -LRB-) (CD:[35..36] 5) (-RRB-:[36..37] -RRB-)
+        (::[37..38] :) (CD:[38..41] 634) (::[41..42] -) (CD:[42..44] 9.)))
+
+;sentence 1 Span:50..144
+;Oxidation of the alcohol dehydrogenase inhibitor pyrazole to
+;4-hydroxypyrazole  by microsomes.
+;[67..88]:substance:"alcohol dehydrogenase"
+;[89..98]:substance:"inhibitor"
+;[99..107]:substance:"pyrazole"
+;[111..128]:substance:"4-hydroxypyrazole"
+(SENT
+  (NP-HLN
+    (NP (NN:[50..59] Oxidation))
+    (PP (IN:[60..62] of)
+      (NP
+        (NP (DT:[63..66] the)
+          (NML (NN:[67..74] alcohol) (NN:[75..88] dehydrogenase))
+          (NN:[89..98] inhibitor))
+        (NP (NN:[99..107] pyrazole))))
+    (PP (TO:[108..110] to)
+      (NP (NN:[111..128] 4-hydroxypyrazole)))
+    (PP (IN:[130..132] by)
+      (NP (NNS:[133..143] microsomes)))
+    (.:[143..144] .)))
+
+;sentence 2 Span:145..188
+;Effect of cytochrome P-450 inducing agents.
+;[155..171]:cyp450:"cytochrome P-450"
+;[181..187]:substance:"agents"
+(SENT
+  (NP-HLN
+    (NP (NN:[145..151] Effect))
+    (PP (IN:[152..154] of)
+      (NP
+        (ADJP
+          (NML (NN:[155..165] cytochrome) (NN:[166..171] P-450))
+          (VBG:[172..180] inducing))
+        (NNS:[181..187] agents)))
+    (.:[187..188] .)))
+
+;section 3 Span:192..218
+;Feierman DE, Cederbaum AI.
+(SEC
+  (FRAG (NNP:[192..200] Feierman) (NNP:[201..203] DE) (,:[203..204] ,)
+        (NNP:[205..214] Cederbaum) (NNP:[215..218] AI.)))
+
+;section 4 Span:222..301
+;Department of Biochemistry, Mount Sinai School of Medicine, New York, NY
+;10029.
+(SEC
+  (FRAG (NNP:[222..232] Department) (IN:[233..235] of)
+        (NNP:[236..248] Biochemistry) (,:[248..249] ,) (NNP:[250..255] Mount)
+        (NNP:[256..261] Sinai) (NNP:[262..268] School) (IN:[269..271] of)
+        (NNP:[272..280] Medicine) (,:[280..281] ,) (NNP:[282..285] New)
+        (NNP:[286..290] York) (,:[290..291] ,) (NNP:[292..294] NY)
+        (CD:[295..300] 10029) (.:[300..301] .)))
+
+;sentence 5 Span:305..421
+;Pyrazole and its analogues are widely used to inhibit alcohol dehydrogenase
+;and  to block the metabolism of ethanol.
+;[305..313]:substance:"Pyrazole"
+;[322..331]:substance:"analogues"
+;[359..380]:substance:"alcohol dehydrogenase"
+;[413..420]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[305..313] Pyrazole))
+      (CC:[314..317] and)
+      (NP (PRP$:[318..321] its) (NNS:[322..331] analogues)))
+    (VP (VBP:[332..335] are)
+      (VP
+        (ADVP (RB:[336..342] widely))
+        (VBN:[343..347] used)
+        (NP-1 (-NONE-:[347..347] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[347..347] *))
+          (VP
+            (VP (TO:[348..350] to)
+              (VP (VB:[351..358] inhibit)
+                (NP (NN:[359..366] alcohol) (NN:[367..380] dehydrogenase))))
+            (CC:[381..384] and)
+            (VP (TO:[386..388] to)
+              (VP (VB:[389..394] block)
+                (NP
+                  (NP (DT:[395..398] the) (NN:[399..409] metabolism))
+                  (PP (IN:[410..412] of)
+                    (NP (NN:[413..420] ethanol))))))))))
+    (.:[420..421] .)))
+
+;sentence 6 Span:422..545
+;Experiments were conducted to demonstrate  that pyrazole is oxidized to
+;4-hydroxypyrazole by isolated rat liver microsomes.
+;[470..478]:substance:"pyrazole"
+;[494..511]:substance:"4-hydroxypyrazole"
+(SENT
+  (S (NNS:[422..433] Experiments)
+    (VP (VBD:[434..438] were)
+      (VP (VBN:[439..448] conducted)
+        (NP-2 (-NONE-:[448..448] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[448..448] *))
+          (VP (TO:[449..451] to)
+            (VP (VB:[452..463] demonstrate)
+              (SBAR (IN:[465..469] that)
+                (S
+                  (NP-SBJ-1 (NN:[470..478] pyrazole))
+                  (VP (VBZ:[479..481] is)
+                    (VP (VBN:[482..490] oxidized)
+                      (NP-1 (-NONE-:[490..490] *))
+                      (PP (TO:[491..493] to)
+                        (NP (NN:[494..511] 4-hydroxypyrazole)))
+                      (PP (IN:[512..514] by)
+                        (NP-LGS (VBN:[515..523] isolated) (NN:[524..527] rat)
+                                (NN:[528..533] liver)
+                                (NNS:[534..544] microsomes))))))))))))
+    (.:[544..545] .)))
+
+;sentence 7 Span:547..679
+;A HPLC procedure employing UV and electrochemical detection was developed for
+; the separation and quantitation of 4-hydroxypyrazole.
+;[661..678]:substance:"4-hydroxypyrazole"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[547..548] A) (NN:[549..553] HPLC) (NN:[554..563] procedure))
+      (VP (VBG:[564..573] employing)
+        (NP
+          (NP (JJ:[574..576] UV)
+            (NML-2 (-NONE-:[576..576] *P*)))
+          (CC:[577..580] and)
+          (NP (JJ:[581..596] electrochemical)
+            (NML-2 (NN:[597..606] detection))))))
+    (VP (VBD:[607..610] was)
+      (VP (VBN:[611..620] developed)
+        (NP-1 (-NONE-:[620..620] *))
+        (PP (IN:[621..624] for)
+          (NP
+            (NP (DT:[626..629] the) (NN:[630..640] separation)
+                (CC:[641..644] and) (NN:[645..657] quantitation))
+            (PP (IN:[658..660] of)
+              (NP (NN:[661..678] 4-hydroxypyrazole)))))))
+    (.:[678..679] .)))
+
+;sentence 8 Span:680..848
+;Pyrazole metabolism was  NADPH-dependent, sensitive to inhibition by carbon
+;monoxide, and was depressed  in the presence of other substrates such as
+;aniline or ethanol.
+;[680..688]:substance:"Pyrazole"
+;[705..710]:substance:"NADPH"
+;[749..764]:substance:"carbon monoxide"
+;[810..820]:substance:"substrates"
+;[829..836]:substance:"aniline"
+;[840..847]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ (NN:[680..688] Pyrazole) (NN:[689..699] metabolism))
+    (VP
+      (VP (VBD:[700..703] was)
+        (ADJP-PRD
+          (ADJP (NN:[705..710] NADPH) (HYPH:[710..711] -)
+                (JJ:[711..720] dependent))
+          (,:[720..721] ,)
+          (ADJP (JJ:[722..731] sensitive)
+            (PP (TO:[732..734] to)
+              (NP
+                (NP (NN:[735..745] inhibition))
+                (PP (IN:[746..748] by)
+                  (NP (NN:[749..755] carbon) (NN:[756..764] monoxide))))))))
+      (,:[764..765] ,) (CC:[766..769] and)
+      (VP (VBD:[770..773] was)
+        (ADJP-PRD (VBN:[774..783] depressed))
+        (PP (IN:[785..787] in)
+          (NP
+            (NP (DT:[788..791] the) (NN:[792..800] presence))
+            (PP (IN:[801..803] of)
+              (NP
+                (NP (JJ:[804..809] other) (NNS:[810..820] substrates))
+                (PP (JJ:[821..825] such) (IN:[826..828] as)
+                  (NP (NN:[829..836] aniline) (CC:[837..839] or)
+                      (NN:[840..847] ethanol)))))))))
+    (.:[847..848] .)))
+
+;sentence 9 Span:849..997
+;Prior treatment  of rats with either pyrazole or 4-methylpyrazole resulted in
+;an increase in  pyrazole oxidation to 4-hydroxypyrazole by microsomes.
+;[886..894]:substance:"pyrazole"
+;[898..914]:substance:"4-methylpyrazole"
+;[943..951]:substance:"pyrazole"
+;[965..982]:substance:"4-hydroxypyrazole"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[849..854] Prior) (NN:[855..864] treatment))
+      (PP (IN:[866..868] of)
+        (NP (NNS:[869..873] rats)))
+      (PP (IN:[874..878] with)
+        (NP (CC:[879..885] either)
+          (NP (NN:[886..894] pyrazole) (CC:[895..897] or)
+              (NN:[898..914] 4-methylpyrazole)))))
+    (VP (VBD:[915..923] resulted)
+      (PP-CLR (IN:[924..926] in)
+        (NP
+          (NP (DT:[927..929] an) (NN:[930..938] increase))
+          (PP (IN:[939..941] in)
+            (NP
+              (NP (NN:[943..951] pyrazole) (NN:[952..961] oxidation))
+              (PP (TO:[962..964] to)
+                (NP (NN:[965..982] 4-hydroxypyrazole)))
+              (PP (IN:[983..985] by)
+                (NP (NNS:[986..996] microsomes))))))))
+    (.:[996..997] .)))
+
+;sentence 10 Span:998..1095
+;Increases were observed  when rates were expressed either per mg of protein
+;or per nmol of P-450.
+;[1056..1073]:quantitative-units:"per mg of protein"
+;[1077..1094]:quantitative-units:"per nmol of P-450"
+(SENT
+  (S
+    (NP-SBJ-2 (NNS:[998..1007] Increases))
+    (VP (VBD:[1008..1012] were)
+      (VP (VBN:[1013..1021] observed)
+        (NP-2 (-NONE-:[1021..1021] *))
+        (SBAR-ADV
+          (WHADVP-3 (WRB:[1023..1027] when))
+          (S
+            (NP-SBJ-1 (NNS:[1028..1033] rates))
+            (VP (VBD:[1034..1038] were)
+              (VP (VBN:[1039..1048] expressed)
+                (NP-1 (-NONE-:[1048..1048] *))
+                (PP (CC:[1049..1055] either)
+                  (PP (IN:[1056..1059] per)
+                    (NP
+                      (NP (NN:[1060..1062] mg))
+                      (PP (IN:[1063..1065] of)
+                        (NP (NN:[1066..1073] protein)))))
+                  (CC:[1074..1076] or)
+                  (PP (IN:[1077..1080] per)
+                    (NP
+                      (NP (NN:[1081..1085] nmol))
+                      (PP (IN:[1086..1088] of)
+                        (NP (NN:[1089..1094] P-450))))))
+                (ADVP-TMP-3 (-NONE-:[1094..1094] *T*))))))))
+    (.:[1094..1095] .)))
+
+;sentence 11 Span:1097..1330
+;Microsomes from pyrazole- and 4-methylpyrazole-treated rats had Km values for
+; pyrazole of about 0.29 and 0.14 mM, respectively, and Vmax values of about
+;0.5  and 0.7 nmol of 4-hydroxypyrazole per min per mg of protein,
+;respectively.
+;[1113..1121]:substance:"pyrazole"
+;[1127..1143]:substance:"4-methylpyrazole"
+;[1161..1163]:quantitative-name:"Km"
+;[1176..1184]:substance:"pyrazole"
+;[1194..1198]:quantitative-value:"0.29"
+;[1203..1207]:quantitative-value:"0.14"
+;[1208..1210]:quantitative-units:"mM"
+;[1230..1234]:quantitative-name:"Vmax"
+;[1251..1254]:quantitative-value:"0.5"
+;[1260..1263]:quantitative-value:"0.7"
+;[1264..1268]:quantitative-units:"nmol"
+;[1272..1289]:substance:"4-hydroxypyrazole"
+;[1290..1315]:quantitative-units:"per min per mg of protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1097..1107] Microsomes))
+      (PP (IN:[1108..1112] from)
+        (NP
+          (NP
+            (ADJP (NN:[1113..1121] pyrazole) (HYPH:[1121..1122] -)
+              (ADJP-4 (-NONE-:[1122..1122] *P*)))
+            (NML-5 (-NONE-:[1122..1122] *P*)))
+          (CC:[1123..1126] and)
+          (NP
+            (ADJP (NN:[1127..1143] 4-methylpyrazole) (HYPH:[1143..1144] -)
+              (ADJP-4 (VBN:[1144..1151] treated)))
+            (NML-5 (NNS:[1152..1156] rats))))))
+    (VP (VBD:[1157..1160] had)
+      (NP
+        (NP
+          (NP (NN:[1161..1163] Km) (NNS:[1164..1170] values))
+          (PP (IN:[1171..1174] for)
+            (NP (NN:[1176..1184] pyrazole)))
+          (PP (IN:[1185..1187] of)
+            (NP
+              (NP
+                (NP
+                  (QP
+                    (ADJP-3 (RB:[1188..1193] about))
+                    (CD:[1194..1198] 0.29))
+                  (NML-2 (-NONE-:[1198..1198] *P*)))
+                (CC:[1199..1202] and)
+                (NP
+                  (QP
+                    (ADJP-3 (-NONE-:[1202..1202] *P*))
+                    (CD:[1203..1207] 0.14))
+                  (NML-2 (NN:[1208..1210] mM))))
+              (,:[1210..1211] ,)
+              (ADVP (RB:[1212..1224] respectively)))))
+        (,:[1224..1225] ,) (CC:[1226..1229] and)
+        (NP
+          (NP (NN:[1230..1234] Vmax) (NNS:[1235..1241] values))
+          (PP (IN:[1242..1244] of)
+            (NP
+              (NP
+                (NP
+                  (NP
+                    (QP
+                      (ADJP-1 (RB:[1245..1250] about))
+                      (CD:[1251..1254] 0.5))
+                    (NML-6 (-NONE-:[1254..1254] *P*)))
+                  (CC:[1256..1259] and)
+                  (NP
+                    (QP
+                      (ADJP-1 (-NONE-:[1259..1259] *P*))
+                      (CD:[1260..1263] 0.7))
+                    (NML-6 (NN:[1264..1268] nmol))))
+                (PP (IN:[1269..1271] of)
+                  (NP (NN:[1272..1289] 4-hydroxypyrazole))))
+              
+              (PP (IN:[1290..1293] per)
+                (NP (NN:[1294..1297] min)))
+              (PP (IN:[1298..1301] per)
+                (NP
+                  (NP (NN:[1302..1304] mg))
+                  (PP (IN:[1305..1307] of)
+                    (NP (NN:[1308..1315] protein)))))
+              (,:[1315..1316] ,)
+              (ADVP (RB:[1317..1329] respectively)))))))
+    (.:[1329..1330] .)))
+
+;sentence 12 Span:1332..1498
+;Chronic consumption of ethanol for 24 days resulted in an increase in
+;pyrazole  oxidation (per mg of protein and per nmol of P-450) as compared to
+;pair-fed  controls.
+;[1355..1362]:substance:"ethanol"
+;[1367..1369]:quantitative-value:"24"
+;[1370..1374]:quantitative-units:"days"
+;[1402..1410]:substance:"pyrazole"
+;[1423..1440]:quantitative-units:"per mg of protein"
+;[1445..1462]:quantitative-units:"per nmol of P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1332..1339] Chronic) (NN:[1340..1351] consumption))
+      (PP (IN:[1352..1354] of)
+        (NP (NN:[1355..1362] ethanol)))
+      (PP (IN:[1363..1366] for)
+        (NP (CD:[1367..1369] 24) (NNS:[1370..1374] days))))
+    (VP (VBD:[1375..1383] resulted)
+      (PP-CLR (IN:[1384..1386] in)
+        (NP
+          (NP (DT:[1387..1389] an) (NN:[1390..1398] increase))
+          (PP (IN:[1399..1401] in)
+            (NP (NN:[1402..1410] pyrazole) (NN:[1412..1421] oxidation)))
+          (PRN (-LRB-:[1422..1423] -LRB-)
+            (PP
+              (PP (IN:[1423..1426] per)
+                (NP
+                  (NP (NN:[1427..1429] mg))
+                  (PP (IN:[1430..1432] of)
+                    (NP (NN:[1433..1440] protein)))))
+              (CC:[1441..1444] and)
+              (PP (IN:[1445..1448] per)
+                (NP
+                  (NP (NN:[1449..1453] nmol))
+                  (PP (IN:[1454..1456] of)
+                    (NP (NN:[1457..1462] P-450))))))
+            (-RRB-:[1462..1463] -RRB-))))
+      (PP (IN:[1464..1466] as)
+        (S-NOM
+          (NP-SBJ-1 (-NONE-:[1466..1466] *))
+          (VP (VBN:[1467..1475] compared)
+            (NP-1 (-NONE-:[1475..1475] *))
+            (PP-CLR (TO:[1476..1478] to)
+              (NP
+                (ADJP (NN:[1479..1483] pair) (HYPH:[1483..1484] -)
+                      (VBN:[1484..1487] fed))
+                (NNS:[1489..1497] controls)))))))
+    (.:[1497..1498] .)))
+
+;sentence 13 Span:1499..1589
+;By contrast, phenobarbital treatment lowered the rate of production of 
+;4-hydroxypyrazole.
+;[1512..1525]:substance:"phenobarbital"
+;[1571..1588]:substance:"4-hydroxypyrazole"
+(SENT
+  (S
+    (PP (IN:[1499..1501] By)
+      (NP (NN:[1502..1510] contrast)))
+    (,:[1510..1511] ,)
+    (NP-SBJ (NN:[1512..1525] phenobarbital) (NN:[1526..1535] treatment))
+    (VP (VBD:[1536..1543] lowered)
+      (NP
+        (NP (DT:[1544..1547] the) (NN:[1548..1552] rate))
+        (PP (IN:[1553..1555] of)
+          (NP
+            (NP (NN:[1556..1566] production))
+            (PP (IN:[1567..1569] of)
+              (NP (NN:[1571..1588] 4-hydroxypyrazole)))))))
+    (.:[1588..1589] .)))
+
+;sentence 14 Span:1590..1745
+;Treatment with 3-methylcholanthrene resulted in an increase  in pyrazole
+;oxidation when rates were expressed per mg of protein, but not per  nmol of
+;P-450.
+;[1605..1625]:substance:"3-methylcholanthrene"
+;[1654..1662]:substance:"pyrazole"
+;[1699..1716]:quantitative-units:"per mg of protein"
+;[1726..1744]:quantitative-units:"per  nmol of P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1590..1599] Treatment))
+      (PP (IN:[1600..1604] with)
+        (NP (NN:[1605..1625] 3-methylcholanthrene))))
+    (VP (VBD:[1626..1634] resulted)
+      (PP-CLR (IN:[1635..1637] in)
+        (NP
+          (NP (DT:[1638..1640] an) (NN:[1641..1649] increase))
+          (PP (IN:[1651..1653] in)
+            (NP (NN:[1654..1662] pyrazole) (NN:[1663..1672] oxidation)))))
+      (SBAR-ADV
+        (WHADVP-4 (WRB:[1673..1677] when))
+        (S
+          (NP-SBJ-3 (NNS:[1678..1683] rates))
+          (VP (VBD:[1684..1688] were)
+            (VP
+              (VP=1 (VBN:[1689..1698] expressed)
+                (NP-3 (-NONE-:[1698..1698] *))
+                (PP=2 (IN:[1699..1702] per)
+                  (NP
+                    (NP (NN:[1703..1705] mg))
+                    (PP (IN:[1706..1708] of)
+                      (NP (NN:[1709..1716] protein)))))
+                (ADVP-TMP-4 (-NONE-:[1716..1716] *T*)))
+              (,:[1716..1717] ,) (CC:[1718..1721] but)
+              (VP=1 (RB:[1722..1725] not)
+                (NP-3 (-NONE-:[1725..1725] *))
+                (PP=2 (IN:[1726..1729] per)
+                  (NP
+                    (NP (NN:[1731..1735] nmol))
+                    (PP (IN:[1736..1738] of)
+                      (NP (NN:[1739..1744] P-450)))))))))))
+    (.:[1744..1745] .)))
+
+;sentence 15 Span:1746..1983
+;These results show that pyrazole is oxidized to 4-hydroxypyrazole  by
+;microsomes in a P-450-dependent manner and that this metabolism can be 
+;increased by certain inducers, e.g. pyrazole, 4-methylpyrazole, and chronic 
+;ethanol treatment.
+;[1770..1778]:substance:"pyrazole"
+;[1794..1811]:substance:"4-hydroxypyrazole"
+;[1832..1837]:cyp450:"P-450"
+;[1909..1917]:substance:"inducers"
+;[1924..1932]:substance:"pyrazole"
+;[1934..1950]:substance:"4-methylpyrazole"
+;[1965..1972]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ (DT:[1746..1751] These) (NNS:[1752..1759] results))
+    (VP (VBP:[1760..1764] show)
+      (SBAR
+        (SBAR (IN:[1765..1769] that)
+          (S
+            (NP-SBJ-2 (NN:[1770..1778] pyrazole))
+            (VP (VBZ:[1779..1781] is)
+              (VP
+                (NP (VBN:[1782..1790] oxidized)
+                  (NP-2 (-NONE-:[1790..1790] *)))
+                (PP (TO:[1791..1793] to)
+                  (NP (NN:[1794..1811] 4-hydroxypyrazole)))
+                (PP (IN:[1813..1815] by)
+                  (NP (NNS:[1816..1826] microsomes)))
+                (PP-MNR (IN:[1827..1829] in)
+                  (NP (DT:[1830..1831] a)
+                    (ADJP (NN:[1832..1837] P-450) (HYPH:[1837..1838] -)
+                          (JJ:[1838..1847] dependent))
+                    (NN:[1848..1854] manner)))))))
+        (CC:[1855..1858] and)
+        (SBAR (IN:[1859..1863] that)
+          (S
+            (NP-SBJ-1 (DT:[1864..1868] this) (NN:[1869..1879] metabolism))
+            (VP (MD:[1880..1883] can)
+              (VP (VB:[1884..1886] be)
+                (VP (VBN:[1888..1897] increased)
+                  (NP-1 (-NONE-:[1897..1897] *))
+                  (PP (IN:[1898..1900] by)
+                    (NP
+                      (NP-LGS (JJ:[1901..1908] certain)
+                              (NNS:[1909..1917] inducers))
+                      (,:[1917..1918] ,)
+                      (PP (FW:[1919..1923] e.g.)
+                        (NP
+                          (NP (NN:[1924..1932] pyrazole))
+                          (,:[1932..1933] ,)
+                          (NP (NN:[1934..1950] 4-methylpyrazole))
+                          (,:[1950..1951] ,) (CC:[1952..1955] and)
+                          (NP (JJ:[1956..1963] chronic)
+                              (NN:[1965..1972] ethanol)
+                              (NN:[1973..1982] treatment)))))))))))))
+    (.:[1982..1983] .)))
+
+;section 16 Span:1987..2031
+;PMID: 2891479 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1987..1991] PMID) (::[1991..1992] :) (CD:[1993..2000] 2891479)
+        (NN:[2001..2002] -LSB-) (NNP:[2002..2008] PubMed) (::[2009..2010] -)
+        (NN:[2011..2018] indexed) (IN:[2019..2022] for)
+        (NNP:[2023..2031] MEDLINE-RSB-)))

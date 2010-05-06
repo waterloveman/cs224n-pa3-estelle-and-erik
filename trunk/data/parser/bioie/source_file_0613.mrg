@@ -1,0 +1,457 @@
+;PMID: 3030702
+;source_file_890.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..37]
+;1)sentence:[e:44..90] = [t:44..90]
+;2)section:[e:94..127] = [t:94..126]
+;3)sentence:[e:131..257] = [t:131..257]
+;4)sentence:[e:258..350] = [t:258..350]
+;5)sentence:[e:351..470] = [t:351..470]
+;6)sentence:[e:471..611] = [t:471..611]
+;7)sentence:[e:612..787] = [t:612..787]
+;8)sentence:[e:788..856] = [t:788..856]
+;9)sentence:[e:857..954] = [t:857..954]
+;10)sentence:[e:955..1162] = [t:955..1162]
+;11)sentence:[e:1163..1269] = [t:1163..1269]
+;12)sentence:[e:1270..1366] = [t:1270..1366]
+;13)sentence:[e:1367..1541] = [t:1367..1541]
+;14)sentence:[e:1542..1661] = [t:1542..1661]
+;15)section:[e:1665..1709] = [t:1665..1708]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:0..38][t:0..37]
+;ERROR_Section end mismatch[e:94..127][t:94..126]
+;ERROR_Section end mismatch[e:1665..1709][t:1665..1708]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[37..38] .
+;ERROR_Token in entity file but not tree[126..127] .
+;ERROR_Token in entity file but not tree[524..526] [1
+;ERROR_Token in entity file but not tree[528..537] beta-3H]T
+;ERROR_Token in entity file but not tree[1708..1709] ]
+;ERROR_Token in tree file but not entity[524..537] [1beta-3H]T
+
+;section 0 Span:0..37
+;Endocrinology. 1987 Apr;120(4):1482-9
+(SEC
+  (FRAG (NNP:[0..13] Endocrinology) (IN:[13..14] .) (CD:[15..19] 1987)
+        (NNP:[20..23] Apr) (::[23..24] ;) (CD:[24..27] 120)
+        (-LRB-:[27..28] -LRB-) (CD:[28..29] 4) (-RRB-:[29..30] -RRB-)
+        (::[30..31] :) (CD:[31..35] 1482) (::[35..36] -) (CD:[36..37] 9)))
+
+(ORPH .)
+
+;sentence 1 Span:44..90
+;Aromatase activity in a rat Leydig cell tumor.
+;[44..53]:cyp450:"Aromatase"
+(SENT
+  (NP-HLN
+    (NP-SBJ (NN:[44..53] Aromatase) (NN:[54..62] activity))
+    (PP-LOC (IN:[63..65] in)
+      (NP (DT:[66..67] a) (NN:[68..71] rat)
+        (NML (NNP:[72..78] Leydig) (NN:[79..83] cell))
+        (NN:[84..89] tumor)))
+    (.:[89..90] .)))
+;ERROR_Orphan Text from Tree File[37..44] .
+
+;section 2 Span:94..126
+;Orczyk GP, Mordes JP, Longcope C
+(SEC
+  (FRAG (NNP:[94..100] Orczyk) (NNP:[101..103] GP) (,:[103..104] ,)
+        (NNP:[105..111] Mordes) (NNP:[112..114] JP) (,:[114..115] ,)
+        (NNP:[116..124] Longcope) (NNP:[125..126] C)))
+
+(ORPH .)
+
+;sentence 3 Span:131..257
+;Male Wistar-Furth rats bearing the transplantable LTW(m) Leydig cell tumor
+;have  elevated serum estradiol (E2) concentrations.
+;[227..236]:substance:"estradiol"
+;[238..240]:substance:"E2"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[131..135] Male)
+        (NML (NNP:[136..142] Wistar) (HYPH:[142..143] -) (NNP:[143..148] Furth))
+        (NNS:[149..153] rats))
+      (VP (VBG:[154..161] bearing)
+        (NP (DT:[162..165] the) (JJ:[166..180] transplantable)
+          (NML (NN:[181..184] LTW) (-LRB-:[184..185] -LRB-) (NN:[185..186] m)
+               (-RRB-:[186..187] -RRB-))
+          (NML (NNP:[188..194] Leydig) (NN:[195..199] cell))
+          (NN:[200..205] tumor))))
+    (VP (VBP:[206..210] have)
+      (NP (JJ:[212..220] elevated) (NN:[221..226] serum)
+        (NML
+          (NML (NN:[227..236] estradiol))
+          (NML (-LRB-:[237..238] -LRB-) (NN:[238..240] E2)
+               (-RRB-:[240..241] -RRB-)))
+        (NNS:[242..256] concentrations)))
+    (.:[256..257] .)))
+;ERROR_Orphan Text from Tree File[126..131] .
+
+;sentence 4 Span:258..350
+;We measured the ability of these  tumors to aromatize testosterone (T) to E2
+;by two methods.
+;[312..324]:substance:"testosterone"
+;[326..327]:substance:"T"
+;[332..334]:substance:"E2"
+(SENT
+  (S
+    (NP-SBJ (PRP:[258..260] We))
+    (VP (VBD:[261..269] measured)
+      (NP
+        (NP (DT:[270..273] the) (NN:[274..281] ability)
+          (S-1 (-NONE-:[281..281] *ICH*)))
+        (PP (IN:[282..284] of)
+          (NP (DT:[285..290] these) (NNS:[292..298] tumors)))
+        (S-1
+          (NP-SBJ (-NONE-:[298..298] *))
+          (VP (TO:[299..301] to)
+            (VP (VB:[302..311] aromatize)
+              (NP
+                (NP (NN:[312..324] testosterone))
+                (NP (-LRB-:[325..326] -LRB-) (NN:[326..327] T)
+                    (-RRB-:[327..328] -RRB-)))
+              (PP (TO:[329..331] to)
+                (NP (NN:[332..334] E2)))))))
+      (PP-MNR (IN:[335..337] by)
+        (NP (CD:[338..341] two) (NNS:[342..349] methods))))
+    (.:[349..350] .)))
+
+;sentence 5 Span:351..470
+;First, tumor minces  were incubated with [7-3H]T, and the resultant [3H]E2
+;and [3H]estrone were  purified and measured.
+;[392..399]:substance:"[7-3H]T"
+;[419..425]:substance:"[3H]E2"
+;[430..441]:substance:"[3H]estrone"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[351..356] First))
+      (,:[356..357] ,)
+      (NP-SBJ-2 (NN:[358..363] tumor) (NNS:[364..370] minces))
+      (VP (VBD:[372..376] were)
+        (VP (VBN:[377..386] incubated)
+          (NP-2 (-NONE-:[386..386] *))
+          (PP-MNR (IN:[387..391] with)
+            (NP (NN:[392..399] -LSB-7-3H-RSB-T))))))
+    (,:[399..400] ,) (CC:[401..404] and)
+    (S
+      (NP-SBJ-1 (DT:[405..408] the) (JJ:[409..418] resultant)
+                (NN:[419..425] -LSB-3H-RSB-E2) (CC:[426..429] and)
+                (NN:[430..441] -LSB-3H-RSB-estrone))
+      (VP (VBD:[442..446] were)
+        (VP (VBN:[448..456] purified) (CC:[457..460] and)
+            (VBN:[461..469] measured)
+          (NP-1 (-NONE-:[469..469] *)))))
+    (.:[469..470] .)))
+
+;sentence 6 Span:471..611
+;In addition, tumor cell cultures were incubated with [1  beta-3H]T, and the
+;resultant [3H]H2O was determined as a measure of  aromatization.
+;[524..537]:substance:"[1  beta-3H]T"
+;[557..564]:substance:"[3H]H2O"
+(SENT
+  (S
+    (S
+      (PP (IN:[471..473] In)
+        (NP (NN:[474..482] addition)))
+      (,:[482..483] ,)
+      (NP-SBJ-2 (NN:[484..489] tumor) (NN:[490..494] cell)
+                (NNS:[495..503] cultures))
+      (VP (VBD:[504..508] were)
+        (VP (VBN:[509..518] incubated)
+          (NP-2 (-NONE-:[518..518] *))
+          (PP-MNR (IN:[519..523] with)
+            (NP (NN:[524..537] -LSB-1beta-3H-RSB-T))))))
+    (,:[537..538] ,) (CC:[539..542] and)
+    (S
+      (NP-SBJ-1 (DT:[543..546] the) (JJ:[547..556] resultant)
+                (NN:[557..564] -LSB-3H-RSB-H2O))
+      (VP (VBD:[565..568] was)
+        (VP (VBN:[569..579] determined)
+          (NP-1 (-NONE-:[579..579] *))
+          (PP (IN:[580..582] as)
+            (NP
+              (NP (DT:[583..584] a) (NN:[585..592] measure))
+              (PP (IN:[593..595] of)
+                (NP (NN:[597..610] aromatization))))))))
+    (.:[610..611] .)))
+
+;sentence 7 Span:612..787
+;Tumor minces aromatized more actively than normal rat testicular  tissue
+;(3.30 +/- 0.15% of the T added was converted to E2 by the tumor vs. 0.30  +/-
+;0.25% by normal testis).
+;[686..700]:quantitative-value:"3.30 +/- 0.15%"
+;[708..709]:substance:"T"
+;[733..735]:substance:"E2"
+;[753..768]:quantitative-value:"0.30  +/- 0.25%"
+(SENT
+  (S
+    (NP-SBJ (NN:[612..617] Tumor) (NNS:[618..624] minces))
+    (VP (VBD:[625..635] aromatized)
+      (ADVP
+        (ADVP (RBR:[636..640] more) (RB:[641..649] actively))
+        (PP (IN:[650..654] than)
+          (NP (JJ:[655..661] normal) (NN:[662..665] rat)
+              (JJ:[666..676] testicular) (NN:[678..684] tissue))))
+      (PRN (-LRB-:[685..686] -LRB-)
+        (S
+          (S
+            (NP-SBJ-1=2
+              (NP
+                (QP (CD:[686..690] 3.30) (SYM:[691..694] +/-)
+                    (CD:[695..699] 0.15))
+                (NN:[699..700] %))
+              (PP (IN:[701..703] of)
+                (NP
+                  (NP (DT:[704..707] the) (NN:[708..709] T))
+                  (VP (VBN:[710..715] added)
+                    (NP (-NONE-:[715..715] *))))))
+            (VP (VBD:[716..719] was)
+              (VP (VBN:[720..729] converted)
+                (NP-1 (-NONE-:[729..729] *))
+                (PP-CLR (TO:[730..732] to)
+                  (NP (NN:[733..735] E2)))
+                (PP=3 (IN:[736..738] by)
+                  (NP-LGS (DT:[739..742] the) (NN:[743..748] tumor))))))
+          (IN:[749..752] vs.)
+          (S
+            (NP-SBJ=2
+              (QP (CD:[753..757] 0.30) (SYM:[759..762] +/-) (CD:[763..767] 0.25))
+              (NN:[767..768] %))
+            (PP=3 (IN:[769..771] by)
+              (NP-LGS (JJ:[772..778] normal) (NN:[779..785] testis)))))
+        (-RRB-:[785..786] -RRB-)))
+    (.:[786..787] .)))
+
+;sentence 8 Span:788..856
+;Most of the aromatizing actitivity was localized to  the microsomes.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJS:[788..792] Most))
+      (PP (IN:[793..795] of)
+        (NP (DT:[796..799] the) (NN:[800..811] aromatizing)
+            (NN:[812..822] actitivity))))
+    (VP (VBD:[823..826] was)
+      (VP (VBN:[827..836] localized)
+        (NP-1 (-NONE-:[836..836] *))
+        (PP (TO:[837..839] to)
+          (NP (DT:[841..844] the) (NNS:[845..855] microsomes)))))
+    (.:[855..856] .)))
+
+;sentence 9 Span:857..954
+;Using cell cultures the maximum velocity was 6.1 pmol/h X 5 X  10(5) cells,
+;and the Km was 98 nM.
+;[881..897]:quantitative-name:"maximum velocity"
+;[902..905]:quantitative-value:"6.1"
+;[906..931]:quantitative-units:"pmol/h X 5 X  10(5) cells"
+;[941..943]:quantitative-name:"Km"
+;[948..950]:quantitative-value:"98"
+;[951..953]:quantitative-units:"nM"
+(SENT
+  (S
+    (S
+      (S-ADV
+        (NP-SBJ (-NONE-:[857..857] *))
+        (VP (VBG:[857..862] Using)
+          (NP (NN:[863..867] cell) (NNS:[868..876] cultures))))
+      (NP-SBJ (DT:[877..880] the)
+         (JJ:[881..888] maximum) (NN:[889..897] velocity))
+      (VP (VBD:[898..901] was)
+        (NP-PRD
+          (NP (CD:[902..905] 6.1) (NN:[906..910] pmol))
+          (PP (SYM:[910..911] /)
+            (NP (NN:[911..912] h)))
+          (PP (SYM:[913..914] X)
+            (NP
+              (QP (CD:[915..916] 5) (SYM:[917..918] X)
+                  (CD:[920..925] 10-LRB-5-RRB-))
+              (NNS:[926..931] cells))))))
+    (,:[931..932] ,) (CC:[933..936] and)
+    (S
+      (NP-SBJ (DT:[937..940] the) (NN:[941..943] Km))
+      (VP (VBD:[944..947] was)
+        (NP-PRD (CD:[948..950] 98) (NN:[951..953] nM))))
+    (.:[953..954] .)))
+
+;sentence 10 Span:955..1162
+;In neither minces nor cell cultures were we  able to show stimulation of
+;aromatization with hCG, (Bu)2cAMP, or phorbol  esters, although we could show
+;stimulation by these agents in normal testicular  cells.
+;[1047..1050]:substance:"hCG"
+;[1052..1061]:substance:"(Bu)2cAMP"
+;[1066..1081]:substance:"phorbol  esters"
+;[1127..1133]:substance:"agents"
+(SENT
+  (SINV
+    (PP (IN:[955..957] In)
+      (NP (CC:[958..965] neither)
+        (NP (NNS:[966..972] minces))
+        (CC:[973..976] nor)
+        (NP (NN:[977..981] cell) (NNS:[982..990] cultures))))
+    (VBD:[991..995] were)
+    (NP-SBJ-1 (PRP:[996..998] we))
+    (ADJP-PRD (JJ:[1000..1004] able)
+      (S
+        (NP-SBJ-1 (-NONE-:[1004..1004] *))
+        (VP (TO:[1005..1007] to)
+          (VP (VB:[1008..1012] show)
+            (NP
+              (NP (NN:[1013..1024] stimulation))
+              (PP (IN:[1025..1027] of)
+                (NP (NN:[1028..1041] aromatization)))
+              (PP (IN:[1042..1046] with)
+                (NP
+                  (NP (NN:[1047..1050] hCG))
+                  (,:[1050..1051] ,)
+                  (NP (NN:[1052..1061] -LRB-Bu-RRB-2cAMP))
+                  (,:[1061..1062] ,) (CC:[1063..1065] or)
+                  (NP (NN:[1066..1073] phorbol) (NNS:[1075..1081] esters)))))))))
+    (,:[1081..1082] ,)
+    (SBAR-ADV (IN:[1083..1091] although)
+      (S
+        (NP-SBJ (PRP:[1092..1094] we))
+        (VP (MD:[1095..1100] could)
+          (VP (VB:[1101..1105] show)
+            (NP
+              (NP (NN:[1106..1117] stimulation))
+              (PP (IN:[1118..1120] by)
+                (NP (DT:[1121..1126] these) (NNS:[1127..1133] agents))))
+            (PP-LOC (IN:[1134..1136] in)
+              (NP (JJ:[1137..1143] normal) (JJ:[1144..1154] testicular)
+                  (NNS:[1156..1161] cells)))))))
+    (.:[1161..1162] .)))
+
+;sentence 11 Span:1163..1269
+;We were unable to inhibit the aromatase activity with human  beta-endorphin
+;or stimulate it with naloxone.
+;[1193..1202]:cyp450:"aromatase"
+;[1224..1238]:substance:"beta-endorphin"
+;[1260..1268]:substance:"naloxone"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1163..1165] We))
+    (VP (VBD:[1166..1170] were)
+      (ADJP-PRD (JJ:[1171..1177] unable)
+        (S
+          (NP-SBJ (-NONE-:[1177..1177] *))
+          (VP (TO:[1178..1180] to)
+            (VP
+              (VP (VB:[1181..1188] inhibit)
+                (NP (DT:[1189..1192] the) (NN:[1193..1202] aromatase)
+                    (NN:[1203..1211] activity))
+                (PP-MNR (IN:[1212..1216] with)
+                  (NP (JJ:[1217..1222] human) (NN:[1224..1238] beta-endorphin))))
+              (CC:[1239..1241] or)
+              (VP (VB:[1242..1251] stimulate)
+                (NP (PRP:[1252..1254] it))
+                (PP-MNR (IN:[1255..1259] with)
+                  (NP (NN:[1260..1268] naloxone)))))))))
+    (.:[1268..1269] .)))
+
+;sentence 12 Span:1270..1366
+;However, we were able to inhibit  the aromatase activity with
+;4-hydroxy-4-androstene-3,17-dione.
+;[1308..1317]:cyp450:"aromatase"
+;[1332..1365]:substance:"4-hydroxy-4-androstene-3,17-dione"
+(SENT
+  (S
+    (ADVP (RB:[1270..1277] However))
+    (,:[1277..1278] ,)
+    (NP-SBJ (PRP:[1279..1281] we))
+    (VP (VBD:[1282..1286] were)
+      (ADJP-PRD (JJ:[1287..1291] able)
+        (S
+          (NP-SBJ (-NONE-:[1291..1291] *))
+          (VP (TO:[1292..1294] to)
+            (VP (VB:[1295..1302] inhibit)
+              (NP (DT:[1304..1307] the) (NN:[1308..1317] aromatase)
+                  (NN:[1318..1326] activity))
+              (PP-MNR (IN:[1327..1331] with)
+                (NP (NN:[1332..1365] 4-hydroxy-4-androstene-3,17-dione))))))))
+    (.:[1365..1366] .)))
+
+;sentence 13 Span:1367..1541
+;We conclude that  the LTW(m) rat Leydig cell tumor has an active autonomous
+;aromatase system that  is not responsive to compounds affecting the adenylate
+;cyclase-cAMP system.
+;[1443..1452]:cyp450:"aromatase"
+;[1487..1496]:substance:"compounds"
+;[1511..1528]:substance:"adenylate cyclase"
+;[1529..1533]:substance:"cAMP"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1367..1369] We))
+    (VP (VBP:[1370..1378] conclude)
+      (SBAR (IN:[1379..1383] that)
+        (S
+          (NP-SBJ (DT:[1385..1388] the)
+            (NML (NN:[1389..1392] LTW) (-LRB-:[1392..1393] -LRB-)
+                 (NN:[1393..1394] m) (-RRB-:[1394..1395] -RRB-))
+            (NN:[1396..1399] rat)
+            (NML (NNP:[1400..1406] Leydig) (NN:[1407..1411] cell))
+            (NN:[1412..1417] tumor))
+          (VP (VBZ:[1418..1421] has)
+            (NP
+              (NP (DT:[1422..1424] an) (JJ:[1425..1431] active)
+                  (JJ:[1432..1442] autonomous) (NN:[1443..1452] aromatase)
+                  (NN:[1453..1459] system))
+              (SBAR
+                (WHNP-1 (WDT:[1460..1464] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1464..1464] *T*))
+                  (VP (VBZ:[1466..1468] is) (RB:[1469..1472] not)
+                    (ADJP-PRD (JJ:[1473..1483] responsive)
+                      (PP (TO:[1484..1486] to)
+                        (NP
+                          (NP (NNS:[1487..1496] compounds))
+                          (VP (VBG:[1497..1506] affecting)
+                            (NP (DT:[1507..1510] the)
+                              (NML
+                                (NML (NN:[1511..1520] adenylate)
+                                     (NN:[1521..1528] cyclase))
+                                (HYPH:[1528..1529] -) (NN:[1529..1533] cAMP))
+                              (NN:[1534..1540] system))))))))))))))
+    (.:[1540..1541] .)))
+
+;sentence 14 Span:1542..1661
+;It  can be inhibited by 4-hydroxy-4-androstene-3,17-dione, a
+;competitive-suicide  inhibitor of the aromatase enzyme(s).
+;[1566..1599]:substance:"4-hydroxy-4-androstene-3,17-dione"
+;[1624..1633]:substance:"inhibitor"
+;[1641..1660]:cyp450:"aromatase enzyme(s)"
+(SENT
+  (S
+    (NP-SBJ-1 (PRP:[1542..1544] It))
+    (VP (MD:[1546..1549] can)
+      (VP (VB:[1550..1552] be)
+        (VP (VBN:[1553..1562] inhibited)
+          (NP-1 (-NONE-:[1562..1562] *))
+          (PP (IN:[1563..1565] by)
+            (NP-LGS
+              (NP (NN:[1566..1599] 4-hydroxy-4-androstene-3,17-dione))
+              (,:[1599..1600] ,)
+              (NP
+                (NP (DT:[1601..1602] a)
+                  (NML (JJ:[1603..1614] competitive) (HYPH:[1614..1615] -)
+                       (NN:[1615..1622] suicide))
+                  (NN:[1624..1633] inhibitor))
+                (PP (IN:[1634..1636] of)
+                  (NP (DT:[1637..1640] the)
+                     (NN:[1641..1650] aromatase)
+                     (NN:[1651..1660] enzyme-LRB-s-RRB-)))))))))
+    (.:[1660..1661] .)))
+
+;section 15 Span:1665..1708
+;PMID: 3030702 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1665..1669] PMID) (::[1669..1670] :) (CD:[1671..1678] 3030702)
+        (-LRB-:[1679..1680] -LSB-) (NNP:[1680..1686] PubMed) (::[1687..1688] -)
+        (NN:[1689..1696] indexed) (IN:[1697..1700] for)
+        (NNP:[1701..1708] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1708..EOF] ]
+
+(ORPH -RSB-)

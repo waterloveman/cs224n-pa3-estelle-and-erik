@@ -1,0 +1,520 @@
+;PMID: 9431830
+;source_file_631.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..149] = [t:49..149]
+;2)section:[e:153..188] = [t:153..188]
+;3)section:[e:192..310] = [t:192..310]
+;4)sentence:[e:314..319] = [t:314..319]
+;5)sentence:[e:320..523] = [t:320..523]
+;6)sentence:[e:524..532] = [t:524..532]
+;7)sentence:[e:533..888] = [t:533..888]
+;8)sentence:[e:889..897] = [t:889..897]
+;9)sentence:[e:898..982] = [t:898..982]
+;10)sentence:[e:983..1115] = [t:983..1115]
+;11)sentence:[e:1116..1227] = [t:1116..1227]
+;12)sentence:[e:1228..1302] = [t:1228..1302]
+;13)sentence:[e:1303..1542] = [t:1303..1542]
+;14)sentence:[e:1543..1651] = [t:1543..1651]
+;15)sentence:[e:1652..1784] = [t:1652..1784]
+;16)sentence:[e:1785..1977] = [t:1785..1977]
+;17)sentence:[e:1978..1990] = [t:1978..1990]
+;18)sentence:[e:1991..2161] = [t:1991..2161]
+;19)section:[e:2165..2209] = [t:2165..2209]
+;Token/POS Errors
+;ERROR_POS mismatch [33..34] t:token e:CD 6
+
+;section 0 Span:0..43
+;Br J Clin Pharmacol. 1997 Dec;44(6):549-55.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..9] Clin)
+        (NNP:[10..19] Pharmacol) (.:[19..20] .) (CD:[21..25] 1997)
+        (NNPS:[26..32] Dec;44) (CC:[32..33] -LRB-) (token:[33..34] 6)
+        (NN:[34..35] -RRB-) (::[35..36] :) (CD:[36..38] 54) (CD:[38..42] 9-55)
+        (.:[42..43] .)))
+
+;sentence 1 Span:49..149
+;Characterization of the human cytochrome P450 enzymes involved in the
+;metabolism  of dihydrocodeine.
+;[79..102]:cyp450:"cytochrome P450 enzymes"
+;[134..148]:substance:"dihydrocodeine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[49..65] Characterization))
+      (PP (IN:[66..68] of)
+        (NP (DT:[69..72] the)
+          (NML (JJ:[73..78] human) (NN:[79..89] cytochrome) (NN:[90..94] P450))
+          (NNS:[95..102] enzymes))))
+    (VP (JJ:[103..111] involved)
+      (NP (-NONE-:[111..111] *))
+      (PP-CLR (IN:[112..114] in)
+        (NP
+          (NP (DT:[115..118] the) (NN:[119..129] metabolism))
+          (PP (IN:[131..133] of)
+            (NP (NN:[134..148] dihydrocodeine))))))
+    (.:[148..149] .)))
+
+;section 2 Span:153..188
+;Kirkwood LC, Nation RL, Somogyi AA.
+(SEC
+  (FRAG (NNP:[153..161] Kirkwood) (NNP:[162..164] LC) (,:[164..165] ,)
+        (NNP:[166..172] Nation) (NNP:[173..175] RL) (,:[175..176] ,)
+        (NNP:[177..184] Somogyi) (NNP:[185..187] AA) (.:[187..188] .)))
+
+;section 3 Span:192..310
+;Centre for Pharmaceutical Research, School of Pharmacy and Medical Sciences, 
+;University of South Australia, Adelaide.
+(SEC
+  (FRAG (NNP:[192..198] Centre) (NNP:[199..202] for)
+        (NNP:[203..217] Pharmaceutical) (NNP:[218..226] Research)
+        (NNP:[226..227] ,) (NNP:[228..234] School) (IN:[235..237] of)
+        (NNP:[238..246] Pharmacy) (CC:[247..250] and) (NNP:[251..258] Medical)
+        (NNP:[259..267] Sciences) (,:[267..268] ,) (NNP:[270..280] University)
+        (IN:[281..283] of) (NNP:[284..289] South) (NNP:[290..299] Australia)
+        (,:[299..300] ,) (NNP:[301..309] Adelaide) (.:[309..310] .)))
+
+;sentence 4 Span:314..319
+;AIMS:
+(SENT
+  (NP (NNS:[314..318] AIMS) (::[318..319] :)))
+
+;sentence 5 Span:320..523
+;Using human liver microsomes from donors of the CYP2D6 poor and extensive 
+;metabolizer genotypes, the role of individual cytochromes P-450 in the
+;oxidative  metabolism of dihydrocodeine was investigated.
+;[368..374]:cyp450:"CYP2D6"
+;[441..458]:cyp450:"cytochromes P-450"
+;[491..505]:substance:"dihydrocodeine"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[320..320] *))
+      (VP (VBG:[320..325] Using)
+        (NP
+          (NP (JJ:[326..331] human) (NN:[332..337] liver)
+              (NNS:[338..348] microsomes))
+          (PP (IN:[349..353] from)
+            (NP
+              (NP (NNS:[354..360] donors))
+              (PP (IN:[361..363] of)
+                (NP (DT:[364..367] the)
+                  (NP
+                    (NML
+                      (ADJP
+                        (NML-2 (NN:[368..374] CYP2D6))
+                        (JJ:[375..379] poor))
+                      (NML-3 (-NONE-:[379..379] *P*)))
+                    (CC:[380..383] and)
+                    (NML
+                      (ADJP
+                        (NML-2 (-NONE-:[383..383] *P*))
+                        (JJ:[384..393] extensive))
+                      (NML-3 (NN:[395..406] metabolizer)
+                             (NNS:[407..416] genotypes)))))))))))
+    (,:[416..417] ,)
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[418..421] the) (NN:[422..426] role))
+        (PP (IN:[427..429] of)
+          (NP (JJ:[430..440] individual)
+             (NNS:[441..452] cytochromes) (NN:[453..458] P-450))))
+      (PP (IN:[459..461] in)
+        (NP
+          (NP (DT:[462..465] the) (JJ:[466..475] oxidative)
+              (NN:[477..487] metabolism))
+          (PP (IN:[488..490] of)
+            (NP (NN:[491..505] dihydrocodeine))))))
+    (VP (VBD:[506..509] was)
+      (VP (VBN:[510..522] investigated)
+        (NP-1 (-NONE-:[522..522] *))))
+    (.:[522..523] .)))
+
+;sentence 6 Span:524..532
+;METHODS:
+(SENT
+  (NP (NNS:[524..531] METHODS) (::[531..532] :)))
+
+;sentence 7 Span:533..888
+;The kinetics of  formation of N- and O-demethylated metabolites,
+;nordihydrocodeine and  dihydromorphine, were determined using microsomes from
+;six extensive and one  poor metabolizer and the effects of chemical
+;inhibitors selective for individual  P-450 enzymes of the 1A, 2A, 2C, 2D, 2E
+;and 3A families and of LKM1  (anti-CYP2D6) antibodies were studied.
+;[585..596]:substance:"metabolites"
+;[598..615]:substance:"nordihydrocodeine"
+;[621..636]:substance:"dihydromorphine"
+;[735..754]:substance:"chemical inhibitors"
+;[781..794]:cyp450:"P-450 enzymes"
+;[802..804]...[828..836]:cyp450:"1A"..."families"
+;[806..808]...[828..836]:cyp450:"2A"..."families"
+;[810..813]...[828..836]:cyp450:"2C,"..."families"
+;[814..816]...[828..836]:cyp450:"2D"..."families"
+;[818..820]...[828..836]:cyp450:"2E"..."families"
+;[825..836]:cyp450:"3A families"
+;[844..874]:substance:"LKM1  (anti-CYP2D6) antibodies"
+(SENT
+  (S
+    (S
+      (NP-SBJ-3
+        (NP (DT:[533..536] The) (NNS:[537..545] kinetics))
+        (PP (IN:[546..548] of)
+          (NP
+            (NP (NN:[550..559] formation))
+            (PP (IN:[560..562] of)
+              (NP
+                (NP
+                  (NP
+                    (ADJP (NN:[563..564] N) (HYPH:[564..565] -)
+                      (ADJP-4 (-NONE-:[565..565] *P*)))
+                    (NML-6 (-NONE-:[565..565] *P*)))
+                  (CC:[566..569] and)
+                  (NP
+                    (ADJP (NN:[570..571] O) (HYPH:[571..572] -)
+                      (ADJP-4 (VBN:[572..584] demethylated)))
+                    (NML-6 (NNS:[585..596] metabolites))))
+                (,:[596..597] ,)
+                (NP (NN:[598..615] nordihydrocodeine) (CC:[616..619] and)
+                    (NN:[621..636] dihydromorphine)))))))
+      (,:[636..637] ,)
+      (VP (VBD:[638..642] were)
+        (VP (VBN:[643..653] determined)
+          (NP-3 (-NONE-:[653..653] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[653..653] *))
+            (VP (VBG:[654..659] using)
+              (NP
+                (NP (NNS:[660..670] microsomes))
+                (PP (IN:[671..675] from)
+                  (NP
+                    (NP (CD:[676..679] six) (JJ:[680..689] extensive)
+                      (NML-2 (-NONE-:[689..689] *P*)))
+                    (CC:[690..693] and)
+                    (NP (CD:[694..697] one) (JJ:[699..703] poor)
+                      (NML-2 (NN:[704..715] metabolizer)))))))))))
+    (CC:[716..719] and)
+    (S
+      (NP-SBJ-1
+        (NP (DT:[720..723] the) (NNS:[724..731] effects))
+        (PP (IN:[732..734] of)
+          (NP
+            (NP (JJ:[735..743] chemical) (NNS:[744..754] inhibitors))
+            (ADJP (JJ:[755..764] selective)
+              (PP (IN:[765..768] for)
+                (NP
+                  (NP (JJ:[769..779] individual)
+                     (NN:[781..786] P-450) (NN:[787..794] enzymes))
+                  (PP
+                    (PP (IN:[795..797] of)
+                      (NP (DT:[798..801] the)
+                        (NML
+                          (NML (NN:[802..804] 1A)
+                            (NML-5 (-NONE-:[804..804] *P*)))
+                          (,:[804..805] ,)
+                          (NML (NN:[806..808] 2A)
+                            (NML-5 (-NONE-:[808..808] *P*)))
+                          (,:[808..809] ,)
+                          (NML (NN:[810..812] 2C)
+                            (NML-5 (-NONE-:[812..812] *P*)))
+                          (,:[812..813] ,)
+                          (NML (NN:[814..816] 2D)
+                            (NML-5 (-NONE-:[816..816] *P*)))
+                          (,:[816..817] ,)
+                          (NML (NN:[818..820] 2E)
+                            (NML-5 (-NONE-:[820..820] *P*)))
+                          (CC:[821..824] and)
+                          (NML (NN:[825..827] 3A)
+                            (NML-5 (NNS:[828..836] families))))))
+                    (CC:[837..840] and)
+                    (PP (IN:[841..843] of)
+                      (NP
+                        (NML (NN:[844..848] LKM1)
+                          (NP (-LRB-:[850..851] -LRB-) (AFX:[851..855] anti)
+                              (HYPH:[855..856] -) (NN:[856..862] CYP2D6)
+                              (-RRB-:[862..863] -RRB-)))
+                        (NNS:[864..874] antibodies))))))))))
+      (VP (VBD:[875..879] were)
+        (VP (VBN:[880..887] studied)
+          (NP-1 (-NONE-:[887..887] *)))))
+    (.:[887..888] .)))
+
+;sentence 8 Span:889..897
+;RESULTS:
+(SENT
+  (NP (NNS:[889..896] RESULTS) (::[896..897] :)))
+
+;sentence 9 Span:898..982
+;Nordihydrocodeine was the major  metabolite in both poor and extensive
+;metabolizers.
+;[898..915]:substance:"Nordihydrocodeine"
+;[931..941]:substance:"metabolite"
+(SENT
+  (S
+    (NP-SBJ (NN:[898..915] Nordihydrocodeine))
+    (VP (VBD:[916..919] was)
+      (NP-PRD (DT:[920..923] the) (JJ:[924..929] major)
+              (NN:[931..941] metabolite))
+      (PP-LOC (IN:[942..944] in)
+        (NP (CC:[945..949] both)
+          (NML
+            (NML (JJ:[950..954] poor)
+              (NML-1 (-NONE-:[954..954] *P*)))
+            (CC:[955..958] and)
+            (NML (JJ:[959..968] extensive)
+              (NML-1 (NNS:[969..981] metabolizers)))))))
+    (.:[981..982] .)))
+
+;sentence 10 Span:983..1115
+;Kinetic constants for  N-demethylation derived from the single enzyme
+;Michaelis-Menten model did not  differ between the two groups.
+;[1046..1052]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[983..990] Kinetic) (NNS:[991..1000] constants))
+        (PP (IN:[1001..1004] for)
+          (NP (NN:[1006..1021] N-demethylation))))
+      (VP (VBN:[1022..1029] derived)
+        (NP (-NONE-:[1029..1029] *))
+        (PP (IN:[1030..1034] from)
+          (NP (DT:[1035..1038] the)
+            (NML (JJ:[1039..1045] single) (NN:[1046..1052] enzyme))
+            (NML (NNP:[1053..1062] Michaelis) (HYPH:[1062..1063] -)
+                 (NNP:[1063..1069] Menten))
+            (NN:[1070..1075] model)))))
+    (VP (VBD:[1076..1079] did) (RB:[1080..1083] not)
+      (VP (VB:[1085..1091] differ)
+        (PP (IN:[1092..1099] between)
+          (NP (DT:[1100..1103] the) (CD:[1104..1107] two)
+              (NNS:[1108..1114] groups)))))
+    (.:[1114..1115] .)))
+
+;sentence 11 Span:1116..1227
+;Troleandomycin and erythromycin selectively  inhibited N-demethylation in
+;both extensive and poor metabolizers.
+;[1116..1130]:substance:"Troleandomycin"
+;[1135..1147]:substance:"erythromycin"
+(SENT
+  (S
+    (NP-SBJ (NN:[1116..1130] Troleandomycin) (CC:[1131..1134] and)
+            (NN:[1135..1147] erythromycin))
+    (ADVP (RB:[1148..1159] selectively))
+    (VP (VBD:[1161..1170] inhibited)
+      (NP (NN:[1171..1186] N-demethylation))
+      (PP-LOC (IN:[1187..1189] in)
+        (NP (CC:[1190..1194] both)
+          (NP (JJ:[1195..1204] extensive)
+            (NML-1 (-NONE-:[1204..1204] *P*)))
+          (CC:[1205..1208] and)
+          (NP (JJ:[1209..1213] poor)
+            (NML-1 (NNS:[1214..1226] metabolizers))))))
+    (.:[1226..1227] .)))
+
+;sentence 12 Span:1228..1302
+;The CYP3A  inducer, alpha-naphthoflavone, increased N-demethylation rates.
+;[1232..1237]:cyp450:"CYP3A"
+;[1239..1246]:substance:"inducer"
+;[1248..1268]:substance:"alpha-naphthoflavone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1228..1231] The) (NN:[1232..1237] CYP3A)
+          (NN:[1239..1246] inducer))
+      (,:[1246..1247] ,)
+      (NP (NN:[1248..1268] alpha-naphthoflavone)))
+    (,:[1268..1269] ,)
+    (VP (VBD:[1270..1279] increased)
+      (NP (NN:[1280..1295] N-demethylation) (NNS:[1296..1301] rates)))
+    (.:[1301..1302] .)))
+
+;sentence 13 Span:1303..1542
+;The kinetics of  formation of dihydromorphine in both groups were best
+;described by a single  enzyme Michaelis-Menten model although inhibition
+;studies in extensive  metabolizers suggested involvement of two enzymes with
+;similar Km values.
+;[1333..1348]:substance:"dihydromorphine"
+;[1397..1403]:substance:"enzyme"
+;[1511..1518]:substance:"enzymes"
+;[1532..1534]:quantitative-name:"Km"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1303..1306] The) (NNS:[1307..1315] kinetics))
+      (PP (IN:[1316..1318] of)
+        (NP
+          (NP (NN:[1320..1329] formation))
+          (PP (IN:[1330..1332] of)
+            (NP (NN:[1333..1348] dihydromorphine)))))
+      (PP-LOC (IN:[1349..1351] in)
+        (NP (DT:[1352..1356] both) (NNS:[1357..1363] groups))))
+    (VP (VBD:[1364..1368] were)
+      (ADVP (RBS:[1369..1373] best))
+      (VP (VBN:[1374..1383] described)
+        (NP-1 (-NONE-:[1383..1383] *))
+        (PP (IN:[1384..1386] by)
+          (NP-LGS (DT:[1387..1388] a)
+            (NML (JJ:[1389..1395] single) (NN:[1397..1403] enzyme))
+            (NML (NNP:[1404..1413] Michaelis) (HYPH:[1413..1414] -)
+                 (NNP:[1414..1420] Menten))
+            (NN:[1421..1426] model)))))
+    (SBAR-ADV (IN:[1427..1435] although)
+      (S
+        (NP-SBJ
+          (NP (NN:[1436..1446] inhibition) (NNS:[1447..1454] studies))
+          (PP (IN:[1455..1457] in)
+            (NP (JJ:[1458..1467] extensive) (NNS:[1469..1481] metabolizers))))
+        (VP (VBD:[1482..1491] suggested)
+          (NP
+            (NP (NN:[1492..1503] involvement))
+            (PP (IN:[1504..1506] of)
+              (NP
+                (NP (CD:[1507..1510] two) (NNS:[1511..1518] enzymes))
+                (PP (IN:[1519..1523] with)
+                  (NP (JJ:[1524..1531] similar) (NN:[1532..1534] Km)
+                      (NNS:[1535..1541] values)))))))))
+    (.:[1541..1542] .)))
+
+;sentence 14 Span:1543..1651
+;The  kinetic constants for O-demethylation were significantly different in
+;extensive  and poor metabolizers.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1543..1546] The) (JJ:[1548..1555] kinetic)
+          (NNS:[1556..1565] constants))
+      (PP (IN:[1566..1569] for)
+        (NP (NN:[1570..1585] O-demethylation))))
+    (VP (VBD:[1586..1590] were)
+      (ADJP-PRD
+        (ADVP (RB:[1591..1604] significantly))
+        (JJ:[1605..1614] different)
+        (PP-LOC (IN:[1615..1617] in)
+          (NP
+            (NP (JJ:[1618..1627] extensive)
+              (NML-1 (-NONE-:[1627..1627] *P*)))
+            (CC:[1629..1632] and)
+            (NP (JJ:[1633..1637] poor)
+              (NML-1 (NNS:[1638..1650] metabolizers)))))))
+    (.:[1650..1651] .)))
+
+;sentence 15 Span:1652..1784
+;The extensive metabolizers had a mean intrinsic clearance  to dihydromorphine
+;more than ten times greater than the poor metabolizer.
+;[1714..1729]:substance:"dihydromorphine"
+;[1730..1749]:quantitative-value:"more than ten times"
+(SENT
+  (S
+    (NP-SBJ (DT:[1652..1655] The) (JJ:[1656..1665] extensive)
+            (NNS:[1666..1678] metabolizers))
+    (VP (VBD:[1679..1682] had)
+      (NP
+        (NP
+          (NP (DT:[1683..1684] a) (JJ:[1685..1689] mean)
+              (JJ:[1690..1699] intrinsic) (NN:[1700..1709] clearance))
+          (PP (TO:[1711..1713] to)
+            (NP (NN:[1714..1729] dihydromorphine))))
+        (ADJP
+          (ADJP
+            (NML
+              (QP (RBR:[1730..1734] more) (IN:[1735..1739] than)
+                  (CD:[1740..1743] ten) (NNS:[1744..1749] times)))
+            (JJR:[1750..1757] greater))
+          (PP (IN:[1758..1762] than)
+            (NP (DT:[1763..1766] the) (JJ:[1767..1771] poor)
+                (NN:[1772..1783] metabolizer))))))
+    (.:[1783..1784] .)))
+
+;sentence 16 Span:1785..1977
+;The  CYP2D6 chemical inhibitors, quinidine and quinine, and LKM1 antibodies
+;inhibited  O-demethylation in extensive metabolizers; no effect was observed
+;in microsomes  from a poor metabolizer.
+;[1790..1796]:cyp450:"CYP2D6"
+;[1797..1816]:substance:"chemical inhibitors"
+;[1818..1827]:substance:"quinidine"
+;[1832..1839]:substance:"quinine"
+;[1845..1860]:substance:"LKM1 antibodies"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP
+          (NP (DT:[1785..1788] The) (NN:[1790..1796] CYP2D6)
+             (JJ:[1797..1805] chemical) (NNS:[1806..1816] inhibitors))
+          (,:[1816..1817] ,)
+          (NP (NN:[1818..1827] quinidine) (CC:[1828..1831] and)
+              (NN:[1832..1839] quinine)))
+        (,:[1839..1840] ,) (CC:[1841..1844] and)
+        (NP (NN:[1845..1849] LKM1) (NNS:[1850..1860] antibodies)))
+      (VP (VBD:[1861..1870] inhibited)
+        (NP (NN:[1872..1887] O-demethylation))
+        (PP (IN:[1888..1890] in)
+          (NP (JJ:[1891..1900] extensive) (NNS:[1901..1913] metabolizers)))))
+    (::[1913..1914] ;)
+    (S
+      (NP-SBJ-1 (DT:[1915..1917] no) (NN:[1918..1924] effect))
+      (VP (VBD:[1925..1928] was)
+        (VP (VBN:[1929..1937] observed)
+          (NP-1 (-NONE-:[1937..1937] *))
+          (PP-LOC (IN:[1938..1940] in)
+            (NP
+              (NP (NNS:[1941..1951] microsomes))
+              (PP (IN:[1953..1957] from)
+                (NP (DT:[1958..1959] a) (JJ:[1960..1964] poor)
+                    (NN:[1965..1976] metabolizer))))))))
+    (.:[1976..1977] .)))
+
+;sentence 17 Span:1978..1990
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1978..1989] CONCLUSIONS) (::[1989..1990] :)))
+
+;sentence 18 Span:1991..2161
+;CYP2D6 is the major enzyme mediating  O-demethylation of dihydrocodeine to
+;dihydromorphine. In contrast,  nordihydrocodeine formation is predominantly
+;catalysed by CYP3A.
+;[1991..1997]:cyp450:"CYP2D6"
+;[2011..2017]:cyp450:"enzyme"
+;[2048..2062]:substance:"dihydrocodeine"
+;[2066..2081]:substance:"dihydromorphine"
+;[2097..2114]:substance:"nordihydrocodeine"
+;[2155..2160]:cyp450:"CYP3A"
+(SENT
+  (S
+    (NP-SBJ (NN:[1991..1997] CYP2D6))
+    (VP (VBZ:[1998..2000] is)
+      (NP-PRD
+        (NP (DT:[2001..2004] the) (JJ:[2005..2010] major)
+            (NN:[2011..2017] enzyme))
+        (VP (VBG:[2018..2027] mediating)
+          (NP
+            (NP (NN:[2029..2044] O-demethylation))
+            (PP (IN:[2045..2047] of)
+              (NP (NN:[2048..2062] dihydrocodeine)))
+            (PP (TO:[2063..2065] to)
+              (NP (NN:[2066..2081] dihydromorphine)))))))
+    (.:[2081..2082] .))
+  (S
+    (PP (IN:[2083..2085] In)
+      (NP (NN:[2086..2094] contrast)))
+    (,:[2094..2095] ,)
+    (NP-SBJ-1 (NN:[2097..2114] nordihydrocodeine) (NN:[2115..2124] formation))
+    (VP (VBZ:[2125..2127] is)
+      (VP
+        (ADVP (RB:[2128..2141] predominantly))
+        (VBN:[2142..2151] catalysed)
+        (NP-1 (-NONE-:[2151..2151] *))
+        (PP (IN:[2152..2154] by)
+          (NP-LGS (NN:[2155..2160] CYP3A)))))
+    (.:[2160..2161] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1991..2161]::S:S:
+
+;section 19 Span:2165..2209
+;PMID: 9431830 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2165..2169] PMID) (::[2169..2170] :) (CD:[2171..2178] 9431830)
+        (NN:[2179..2180] -LSB-) (NNP:[2180..2186] PubMed) (::[2187..2188] -)
+        (NN:[2189..2196] indexed) (IN:[2197..2200] for)
+        (NNP:[2201..2209] MEDLINE-RSB-)))

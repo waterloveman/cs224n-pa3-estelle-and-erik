@@ -1,0 +1,404 @@
+;PMID: 9797369
+;source_file_1390.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:46..108] = [t:46..108]
+;2)section:[e:112..167] = [t:112..167]
+;3)section:[e:171..305] = [t:171..305]
+;4)sentence:[e:309..327] = [t:309..327]
+;5)sentence:[e:328..484] = [t:328..484]
+;6)sentence:[e:485..593] = [t:485..593]
+;7)sentence:[e:594..602] = [t:594..602]
+;8)sentence:[e:603..722] = [t:603..722]
+;9)sentence:[e:723..880] = [t:723..880]
+;10)sentence:[e:881..889] = [t:881..889]
+;11)sentence:[e:890..1033] = [t:890..1033]
+;12)sentence:[e:1034..1207] = [t:1034..1207]
+;13)sentence:[e:1208..1437] = [t:1208..1437]
+;14)sentence:[e:1438..1585] = [t:1438..1585]
+;15)sentence:[e:1586..1598] = [t:1586..1598]
+;16)sentence:[e:1599..1712] = [t:1599..1712]
+;17)section:[e:1716..1760] = [t:1716..1760]
+
+;section 0 Span:0..41
+;Gastroenterology  1998 Nov;115(5):1144-53
+(SEC
+  (FRAG (IN:[0..16] Gastroenterology) (CD:[18..22] 1998)
+        (CD:[23..31] Nov;115-LRB-) (CD:[31..32] 5) (-RRB-:[32..33] -RRB-)
+        (CD:[33..38] :1144) (IN:[38..39] -) (CD:[39..41] 53)))
+
+;sentence 1 Span:46..108
+;Oncogenic ras induces gastrin gene expression in colon cancer.
+;[56..59]:gene-rna:"ras"
+;[68..75]:gene-generic:"gastrin"
+;[95..107]:malignancy:"colon cancer"
+(SENT
+  (S-HLN
+    (NP-SBJ (JJ:[46..55] Oncogenic) (NN:[56..59] ras))
+    (VP (VBZ:[60..67] induces)
+      (NP (NN:[68..75] gastrin) (NN:[76..80] gene) (NN:[81..91] expression))
+      (PP (IN:[92..94] in)
+        (NP (NN:[95..100] colon) (NN:[101..107] cancer))))
+    (.:[107..108] .)))
+
+;section 2 Span:112..167
+;Nakata H, Wang SL, Chung DC, Westwick JK, Tillotson LG.
+(SEC
+  (FRAG (NNP:[112..118] Nakata) (NNP:[119..120] H) (,:[120..121] ,)
+        (NNP:[122..126] Wang) (NNP:[127..129] SL) (NNP:[129..130] ,)
+        (NNP:[131..136] Chung) (NNP:[137..139] DC) (,:[139..140] ,)
+        (NNP:[141..149] Westwick) (NNP:[150..152] JK) (,:[152..153] ,)
+        (NNP:[154..163] Tillotson) (NNP:[164..167] LG.)))
+
+;section 3 Span:171..305
+;Division of Digestive Diseases and Nutrition, Department of Medicine,
+;University  of North Carolina, Chapel Hill, North Carolina, USA.
+(SEC
+  (FRAG (NNP:[171..179] Division) (CD:[180..182] of) (NNP:[183..192] Digestive)
+        (NNP:[193..201] Diseases) (CC:[202..205] and) (NNP:[206..215] Nutrition)
+        (,:[215..216] ,) (NNP:[217..227] Department) (IN:[228..230] of)
+        (NNP:[231..239] Medicine) (,:[239..240] ,) (NNP:[241..251] University)
+        (IN:[253..255] of) (NNP:[256..261] North) (NNP:[262..270] Carolina)
+        (,:[270..271] ,) (NNP:[272..278] Chapel) (NNP:[279..283] Hill)
+        (,:[283..284] ,) (NNP:[285..290] North) (NNP:[291..299] Carolina)
+        (,:[299..300] ,) (NNP:[301..304] USA) (.:[304..305] .)))
+
+;sentence 4 Span:309..327
+;BACKGROUND & AIMS:
+(SENT
+  (NP (NN:[309..319] BACKGROUND) (CC:[320..321] &) (NNS:[322..326] AIMS)
+      (::[326..327] :)))
+
+;sentence 5 Span:328..484
+;The expression of gastrin, as a tumor growth factor, is  significantly
+;increased in some colon cancers compared with the low levels found  in normal
+;mucosa.
+;[346..353]:gene-protein:"gastrin"
+;[360..379]:gene-protein:"tumor growth factor"
+;[417..430]:malignancy:"colon cancers"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[328..331] The) (NN:[332..342] expression))
+      (PP (IN:[343..345] of)
+        (NP (NN:[346..353] gastrin)))
+      (,:[353..354] ,)
+      (PP (IN:[355..357] as)
+        (NP (DT:[358..359] a)
+           (NN:[360..365] tumor) (NN:[366..372] growth) (NN:[373..379] factor))))
+    (,:[379..380] ,)
+    (VP (VBZ:[381..383] is)
+      (ADVP (RB:[385..398] significantly))
+      (VP (VBN:[399..408] increased)
+        (NP-2 (-NONE-:[408..408] *))
+        (PP (IN:[409..411] in)
+          (NP (DT:[412..416] some)
+             (NN:[417..422] colon) (NNS:[423..430] cancers)))
+        (S-ADV
+          (NP-SBJ-1 (-NONE-:[430..430] *))
+          (VP (VBN:[431..439] compared)
+            (NP-1 (-NONE-:[439..439] *))
+            (PP-CLR (IN:[440..444] with)
+              (NP
+                (NP (DT:[445..448] the) (JJ:[449..452] low)
+                    (NNS:[453..459] levels))
+                (VP (VBN:[460..465] found)
+                  (NP (-NONE-:[465..465] *))
+                  (PP (IN:[467..469] in)
+                    (NP (JJ:[470..476] normal) (NN:[477..483] mucosa))))))))))
+    (.:[483..484] .)))
+
+;sentence 6 Span:485..593
+;The aim of this study was to elucidate the transcriptional  mechanisms of
+;gastrin induction in colon cancer.
+;[559..566]:gene-generic:"gastrin"
+;[580..592]:malignancy:"colon cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[485..488] The) (NN:[489..492] aim))
+      (PP (IN:[493..495] of)
+        (NP (DT:[496..500] this) (NN:[501..506] study))))
+    (VP (VBD:[507..510] was)
+      (S-NOM-PRD
+        (NP-SBJ (-NONE-:[510..510] *))
+        (VP (TO:[511..513] to)
+          (VP (VB:[514..523] elucidate)
+            (NP
+              (NP (DT:[524..527] the) (JJ:[528..543] transcriptional)
+                  (NNS:[545..555] mechanisms))
+              (PP (IN:[556..558] of)
+                (NP (NN:[559..566] gastrin) (NN:[567..576] induction))))
+            (PP (IN:[577..579] in)
+              (NP (NN:[580..585] colon) (NN:[586..592] cancer)))))))
+    (.:[592..593] .)))
+
+;sentence 7 Span:594..602
+;METHODS:
+(SENT
+  (NP (NNS:[594..601] METHODS) (::[601..602] :)))
+
+;sentence 8 Span:603..722
+;Gastrin messenger  (mRNA) levels and K-ras genotype were determined in colon
+;cancer cell lines and  surgical specimens.
+;[603..610]:gene-rna:"Gastrin"
+;[640..645]:gene-rna:"K-ras"
+;[674..686]:malignancy:"colon cancer"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[603..610] Gastrin) (NN:[611..620] messenger)
+        (PRN (-LRB-:[622..623] -LRB-)
+          (NP (NN:[623..627] mRNA))
+          (-RRB-:[627..628] -RRB-))
+        (NNS:[629..635] levels))
+      (CC:[636..639] and)
+      (NP (NN:[640..645] K-ras) (NN:[646..654] genotype)))
+    (VP (VBD:[655..659] were)
+      (VP (VBN:[660..670] determined)
+        (NP-1 (-NONE-:[670..670] *))
+        (PP (IN:[671..673] in)
+          (NP
+            (NP
+              (NML (NN:[674..679] colon) (NN:[680..686] cancer))
+              (NN:[687..691] cell) (NNS:[692..697] lines))
+            (CC:[698..701] and)
+            (NP (JJ:[703..711] surgical) (NNS:[712..721] specimens))))))
+    (.:[721..722] .)))
+
+;sentence 9 Span:723..880
+;Colon cancer cells were transfected with oncogenic ras  expression vectors,
+;and transcriptional activity was assayed with  gastrin-luciferase reporter
+;genes.
+;[723..735]:malignancy:"Colon cancer"
+;[774..777]:gene-rna:"ras"
+;[846..853]:gene-rna:"gastrin"
+;[854..864]:gene-rna:"luciferase"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+         (NN:[723..728] Colon) (NN:[729..735] cancer)
+        (NNS:[736..741] cells))
+      (VP (VBD:[742..746] were)
+        (VP (VBN:[747..758] transfected)
+          (NP-2 (-NONE-:[758..758] *))
+          (PP (IN:[759..763] with)
+            (NP (JJ:[764..773] oncogenic) (NN:[774..777] ras)
+                (NN:[779..789] expression) (NNS:[790..797] vectors))))))
+    (,:[797..798] ,) (CC:[799..802] and)
+    (S
+      (NP-SBJ-1 (JJ:[803..818] transcriptional) (NN:[819..827] activity))
+      (VP (VBD:[828..831] was)
+        (VP (VBN:[832..839] assayed)
+          (NP-1 (-NONE-:[839..839] *))
+          (PP (IN:[840..844] with)
+            (NP
+              (NML (NN:[846..853] gastrin) (HYPH:[853..854] -)
+                   (NN:[854..864] luciferase))
+              (NN:[865..873] reporter) (NNS:[874..879] genes))))))
+    (.:[879..880] .)))
+
+;sentence 10 Span:881..889
+;RESULTS:
+(SENT
+  (NP (NNS:[881..888] RESULTS) (::[888..889] :)))
+
+;sentence 11 Span:890..1033
+;Colon cancer cell lines and tissues  with K-ras mutations all had
+;significantly higher gastrin mRNA levels than those  that were ras wild
+;type.
+;[890..902]:malignancy:"Colon cancer"
+;[932..937]:gene-rna:"K-ras"
+;[977..984]:gene-rna:"gastrin"
+;[1019..1022]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML (NN:[890..895] Colon) (NN:[896..902] cancer))
+        (NN:[903..907] cell) (NNS:[908..913] lines))
+      (CC:[914..917] and)
+      (NP
+        (NP (NNS:[918..925] tissues))
+        (PP (IN:[927..931] with)
+          (NP (NN:[932..937] K-ras) (NNS:[938..947] mutations)))))
+    (ADVP (DT:[948..951] all))
+    (VP (VBD:[952..955] had)
+      (NP
+        (NP
+          (ADJP (RB:[956..969] significantly) (JJR:[970..976] higher))
+          (NN:[977..984] gastrin) (NN:[985..989] mRNA) (NNS:[990..996] levels))
+        (PP (IN:[997..1001] than)
+          (NP
+            (NP (DT:[1002..1007] those))
+            (SBAR
+              (WHNP-1 (WDT:[1009..1013] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[1013..1013] *T*))
+                (VP (VBD:[1014..1018] were)
+                  (NP-PRD (NN:[1019..1022] ras) (JJ:[1023..1027] wild)
+                          (NN:[1028..1032] type)))))))))
+    (.:[1032..1033] .)))
+
+;sentence 12 Span:1034..1207
+;Treatment of several ras mutant cell lines with  PD98059, an inhibitor of
+;mitogen-activated protein kinase kinase, resulted in a  decrease in
+;endogenous gastrin mRNA levels.
+;[1055..1058]:gene-rna:"ras"
+;[1108..1147]:gene-protein:"mitogen-activated protein kinase kinase"
+;[1187..1194]:gene-rna:"gastrin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1034..1043] Treatment))
+      (PP (IN:[1044..1046] of)
+        (NP (JJ:[1047..1054] several) (NN:[1055..1058] ras)
+            (JJ:[1059..1065] mutant) (NN:[1066..1070] cell)
+            (NNS:[1071..1076] lines)))
+      (PP (IN:[1077..1081] with)
+        (NP
+          (NP (NN:[1083..1090] PD98059))
+          (,:[1090..1091] ,)
+          (NP
+            (NP (DT:[1092..1094] an) (NN:[1095..1104] inhibitor))
+            (PP (IN:[1105..1107] of)
+              (NP
+                (ADJP (NN:[1108..1115] mitogen) (HYPH:[1115..1116] -)
+                      (VBN:[1116..1125] activated))
+                (NN:[1126..1133] protein) (NN:[1134..1140] kinase)
+                 (NN:[1141..1147] kinase)))))))
+    (,:[1147..1148] ,)
+    (VP (VBD:[1149..1157] resulted)
+      (PP-CLR (IN:[1158..1160] in)
+        (NP
+          (NP (DT:[1161..1162] a) (NN:[1164..1172] decrease))
+          (PP (IN:[1173..1175] in)
+            (NP (JJ:[1176..1186] endogenous) (NN:[1187..1194] gastrin)
+                (NN:[1195..1199] mRNA) (NNS:[1200..1206] levels))))))
+    (.:[1206..1207] .)))
+
+;sentence 13 Span:1208..1437
+;The effects of ras on gastrin  expression appeared to be mediated through the
+;gastrin promoter because  transfection of oncogenic ras and activated raf
+;expression vectors both induced  gastrin-promoter, luciferase-reporter
+;genes.
+;[1223..1226]:gene-rna:"ras"
+;[1230..1237]:gene-protein:"gastrin"
+;[1286..1293]:gene-rna:"gastrin"
+;[1338..1341]:gene-rna:"ras"
+;[1356..1359]:gene-rna:"raf"
+;[1393..1400]:gene-rna:"gastrin"
+;[1411..1421]:gene-rna:"luciferase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1208..1211] The) (NNS:[1212..1219] effects))
+      (PP (IN:[1220..1222] of)
+        (NP (NN:[1223..1226] ras)))
+      (PP (IN:[1227..1229] on)
+        (NP (NN:[1230..1237] gastrin) (NN:[1239..1249] expression))))
+    (VP (VBD:[1250..1258] appeared)
+      (S
+        (NP-SBJ-1 (-NONE-:[1258..1258] *))
+        (VP (TO:[1259..1261] to)
+          (VP (VB:[1262..1264] be)
+            (VP (VBN:[1265..1273] mediated)
+              (NP-1 (-NONE-:[1273..1273] *))
+              (PP (IN:[1274..1281] through)
+                (NP (DT:[1282..1285] the) (NN:[1286..1293] gastrin)
+                    (NN:[1294..1302] promoter)))))))
+      (SBAR-PRP (IN:[1303..1310] because)
+        (S
+          (NP-SBJ
+            (NP (NN:[1312..1324] transfection))
+            (PP (IN:[1325..1327] of)
+              (NP
+                (NP (JJ:[1328..1337] oncogenic) (NN:[1338..1341] ras))
+                (CC:[1342..1345] and)
+                (NP (VBN:[1346..1355] activated) (NN:[1356..1359] raf)
+                    (NN:[1360..1370] expression) (NNS:[1371..1378] vectors)))))
+          (ADVP (DT:[1379..1383] both))
+          (VP (VBD:[1384..1391] induced)
+            (NP
+              (NML
+                (NML (NN:[1393..1400] gastrin) (HYPH:[1400..1401] -)
+                     (NN:[1401..1409] promoter))
+                (,:[1409..1410] ,)
+                (NML (NN:[1411..1421] luciferase) (HYPH:[1421..1422] -)
+                     (NN:[1422..1430] reporter)))
+              (NNS:[1431..1436] genes))))))
+    (.:[1436..1437] .)))
+
+;sentence 14 Span:1438..1585
+;The inductive effects of oncogenic  ras could be blocked by the coexpression
+;of dominant negative forms of raf and  extracellular regulated kinase.
+;[1474..1477]:gene-rna:"ras"
+;[1545..1548]:gene-generic:"raf"
+;[1578..1584]:gene-protein:"kinase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1438..1441] The) (JJ:[1442..1451] inductive)
+          (NNS:[1452..1459] effects))
+      (PP (IN:[1460..1462] of)
+        (NP (JJ:[1463..1472] oncogenic) (NN:[1474..1477] ras))))
+    (VP (MD:[1478..1483] could)
+      (VP (VB:[1484..1486] be)
+        (VP (VBN:[1487..1494] blocked)
+          (NP-1 (-NONE-:[1494..1494] *))
+          (PP (IN:[1495..1497] by)
+            (NP-LGS
+              (NP (DT:[1498..1501] the) (NN:[1502..1514] coexpression))
+              (PP (IN:[1515..1517] of)
+                (NP
+                  (NP
+                    (NP (JJ:[1518..1526] dominant) (JJ:[1527..1535] negative)
+                        (NNS:[1536..1541] forms))
+                    (PP (IN:[1542..1544] of)
+                      (NP (NN:[1545..1548] raf))))
+                  (CC:[1549..1552] and)
+                  (NP (JJ:[1554..1567] extracellular)
+                      (VBN:[1568..1577] regulated) (NN:[1578..1584] kinase)))))))))
+    (.:[1584..1585] .)))
+
+;sentence 15 Span:1586..1598
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1586..1597] CONCLUSIONS) (::[1597..1598] :)))
+
+;sentence 16 Span:1599..1712
+;Oncogenic ras induces gastrin gene  expression through activation of the
+;Raf-MEK-ERK signal transduction pathway.
+;[1609..1612]:gene-rna:"ras"
+;[1621..1628]:gene-rna:"gastrin"
+;[1672..1675]:gene-rna:"Raf"
+;[1676..1679]:gene-rna:"MEK"
+;[1680..1683]:gene-rna:"ERK"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1599..1608] Oncogenic) (NN:[1609..1612] ras))
+    (VP (VBZ:[1613..1620] induces)
+      (NP (NN:[1621..1628] gastrin) (NN:[1629..1633] gene)
+          (NN:[1635..1645] expression))
+      (PP (IN:[1646..1653] through)
+        (NP
+          (NP (NN:[1654..1664] activation))
+          (PP (IN:[1665..1667] of)
+            (NP (DT:[1668..1671] the)
+              (NML (NN:[1672..1675] Raf) (HYPH:[1675..1676] -)
+                   (NN:[1676..1679] MEK) (HYPH:[1679..1680] -)
+                   (NN:[1680..1683] ERK))
+              (NML (NN:[1684..1690] signal) (NN:[1691..1703] transduction))
+              (NN:[1704..1711] pathway))))))
+    (.:[1711..1712] .)))
+
+;section 17 Span:1716..1760
+;PMID: 9797369 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1716..1720] PMID) (::[1720..1721] :) (CD:[1722..1729] 9797369)
+        (IN:[1730..1731] -LSB-) (NNP:[1731..1737] PubMed) (HYPH:[1738..1739] -)
+        (JJ:[1740..1747] indexed) (IN:[1748..1751] for)
+        (NNP:[1752..1760] MEDLINE-RSB-)))

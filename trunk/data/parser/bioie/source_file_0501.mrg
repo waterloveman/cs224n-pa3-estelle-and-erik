@@ -1,0 +1,352 @@
+;PMID: 7423654
+;source_file_997.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..122] = [t:48..122]
+;2)section:[e:126..172] = [t:126..172]
+;3)sentence:[e:176..344] = [t:176..344]
+;4)sentence:[e:345..396] = [t:345..396]
+;5)sentence:[e:397..548] = [t:397..548]
+;6)sentence:[e:549..732] = [t:549..732]
+;7)sentence:[e:734..867] = [t:734..867]
+;8)sentence:[e:868..965] = [t:868..965]
+;9)sentence:[e:967..1121] = [t:967..1121]
+;10)sentence:[e:1123..1184] = [t:1123..1184]
+;11)sentence:[e:1185..1316] = [t:1185..1316]
+;12)section:[e:1320..1364] = [t:1320..1364]
+
+;section 0 Span:0..42
+;Undersea Biomed Res. 1980 Sep;7(3):161-70.
+(SEC
+  (FRAG (NNP:[0..8] Undersea) (NNP:[9..15] Biomed) (NNP:[16..19] Res)
+        (IN:[19..20] .) (CD:[21..25] 1980) (CC:[26..32] Sep;7-LRB-)
+        (CD:[32..33] 3) (-RRB-:[33..34] -RRB-) (CD:[34..38] :161) (::[38..39] -)
+        (CD:[39..41] 70) (.:[41..42] .)))
+
+;sentence 1 Span:48..122
+;In vivo and in vitro induction of cytochrome P-450 synthesis in hyperoxia.
+;[82..98]:cyp450:"cytochrome P-450"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (ADJP (FW:[48..50] In) (FW:[51..55] vivo))
+        (NML-1 (-NONE-:[55..55] *P*)))
+      (CC:[56..59] and)
+      (NP
+        (ADJP (FW:[60..62] in) (FW:[63..68] vitro))
+        (NML-1 (NN:[69..78] induction))))
+    (PP (IN:[79..81] of)
+      (NP
+        (NML (NN:[82..92] cytochrome) (NN:[93..98] P-450))
+        (NN:[99..108] synthesis)))
+    (PP (IN:[109..111] in)
+      (NP (NN:[112..121] hyperoxia)))
+    (.:[121..122] .)))
+
+;section 2 Span:126..172
+;Longmuir IS, Gottlieb SF, Pashko LL, Martin P.
+(SEC
+  (FRAG (NNP:[126..134] Longmuir) (NNP:[135..137] IS) (,:[137..138] ,)
+        (NNP:[139..147] Gottlieb) (NNP:[148..150] SF) (,:[150..151] ,)
+        (NNP:[152..158] Pashko) (NNP:[159..161] LL) (,:[161..162] ,)
+        (NNP:[163..169] Martin) (NNP:[170..172] P.)))
+
+;sentence 3 Span:176..344
+;Exposure of dark- or light-adapted mice to 1--3 ATA oxygen for times ranging 
+;from 15 min to 4 h caused a progressive increase in P-450, which peaked and
+;then  decayed.
+;[219..223]:quantitative-value:"1--3"
+;[224..227]:quantitative-units:"ATA"
+;[228..234]:substance:"oxygen"
+;[259..261]:quantitative-value:"15"
+;[262..265]:quantitative-units:"min"
+;[269..270]:quantitative-value:"4"
+;[271..272]:quantitative-units:"h"
+;[306..311]:cyp450:"P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[176..184] Exposure))
+      (PP (IN:[185..187] of)
+        (NP
+          (NP
+            (ADJP (NN:[188..192] dark) (HYPH:[192..193] -)
+              (ADJP-2 (-NONE-:[193..193] *P*)))
+            (NML-3 (-NONE-:[193..193] *P*)))
+          (CC:[194..196] or)
+          (NP
+            (ADJP (NN:[197..202] light) (HYPH:[202..203] -)
+              (ADJP-2 (VBN:[203..210] adapted)))
+            (NML-3 (NNS:[211..215] mice)))))
+      (PP (TO:[216..218] to)
+        (NP
+          (NML
+            (QP (CD:[219..220] 1) (SYM:[220..222] --) (CD:[222..223] 3))
+            (NN:[224..227] ATA))
+          (NN:[228..234] oxygen)))
+      (PP (IN:[235..238] for)
+        (NP
+          (NP (NNS:[239..244] times))
+          (VP (VBG:[245..252] ranging)
+            (PP (IN:[254..258] from)
+              (NP (CD:[259..261] 15) (NN:[262..265] min)))
+            (PP (TO:[266..268] to)
+              (NP (CD:[269..270] 4) (NN:[271..272] h)))))))
+    (VP (VBD:[273..279] caused)
+      (NP
+        (NP
+          (NP (DT:[280..281] a) (JJ:[282..293] progressive)
+              (NN:[294..302] increase))
+          (PP (IN:[303..305] in)
+            (NP (NN:[306..311] P-450))))
+        (,:[311..312] ,)
+        (SBAR
+          (WHNP-1 (WDT:[313..318] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[318..318] *T*))
+            (VP (VBD:[319..325] peaked)
+              (CONJP (CC:[326..329] and) (RB:[330..334] then))
+              (VBD:[336..343] decayed))))))
+    (.:[343..344] .)))
+
+;sentence 4 Span:345..396
+;The rate of decay appears to be independent of PO2.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[345..348] The) (NN:[349..353] rate))
+      (PP (IN:[354..356] of)
+        (NP (NN:[357..362] decay))))
+    (VP (VBZ:[363..370] appears)
+      (S
+        (NP-SBJ-1 (-NONE-:[370..370] *))
+        (VP (TO:[371..373] to)
+          (VP (VB:[374..376] be)
+            (ADJP-PRD (JJ:[377..388] independent)
+              (PP (IN:[389..391] of)
+                (NP (NN:[392..395] PO2))))))))
+    (.:[395..396] .)))
+
+;sentence 5 Span:397..548
+;A linear, inverse  relationship was noted between the PO2 in the range of
+;1--4 ATA and the duration  of exposure needed to obtain maximum P-450
+;levels.
+;[471..475]:quantitative-value:"1--4"
+;[476..479]:quantitative-units:"ATA"
+;[535..540]:cyp450:"P-450"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[397..398] A) (JJ:[399..405] linear) (,:[405..406] ,)
+              (JJ:[407..414] inverse) (NN:[416..428] relationship))
+    (VP (VBD:[429..432] was)
+      (VP (VBN:[433..438] noted)
+        (NP-1 (-NONE-:[438..438] *))
+        (PP (IN:[439..446] between)
+          (NP
+            (NP
+              (NP (DT:[447..450] the) (NN:[451..454] PO2))
+              (PP (IN:[455..457] in)
+                (NP
+                  (NP (DT:[458..461] the) (NN:[462..467] range))
+                  (PP (IN:[468..470] of)
+                    (NP
+                      (QP (CD:[471..472] 1) (SYM:[472..474] --)
+                          (CD:[474..475] 4))
+                      (NN:[476..479] ATA))))))
+            (CC:[480..483] and)
+            (NP
+              (NP
+                (NP (DT:[484..487] the) (NN:[488..496] duration))
+                (PP (IN:[498..500] of)
+                  (NP (NN:[501..509] exposure))))
+              (VP (VBN:[510..516] needed)
+                (S
+                  (NP-SBJ (-NONE-:[516..516] *))
+                  (VP (TO:[517..519] to)
+                    (VP (VB:[520..526] obtain)
+                      (NP (JJ:[527..534] maximum) (NN:[535..540] P-450)
+                          (NNS:[541..547] levels)))))))))))
+    (.:[547..548] .)))
+
+;sentence 6 Span:549..732
+;Cytochrome P-450 was induced  by hyperoxia in vitro in a suspension of
+;hepatocytes, and this induction was  prevented by inhibitors of transcription
+;and translation and by disulfiram.
+;[549..565]:cyp450:"Cytochrome P-450"
+;[670..680]:substance:"inhibitors"
+;[721..731]:substance:"disulfiram"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[549..559] Cytochrome) (NN:[560..565] P-450))
+      (VP (VBD:[566..569] was)
+        (VP (VBN:[570..577] induced)
+          (NP-1 (-NONE-:[577..577] *))
+          (PP (IN:[579..581] by)
+            (NP-LGS (NN:[582..591] hyperoxia)))
+          (ADVP (FW:[592..594] in) (FW:[595..600] vitro))
+          (PP-LOC (IN:[601..603] in)
+            (NP
+              (NP (DT:[604..605] a) (NN:[606..616] suspension))
+              (PP (IN:[617..619] of)
+                (NP (NNS:[620..631] hepatocytes))))))))
+    (,:[631..632] ,) (CC:[633..636] and)
+    (S
+      (NP-SBJ-2 (DT:[637..641] this) (NN:[642..651] induction))
+      (VP (VBD:[652..655] was)
+        (VP (VBN:[657..666] prevented)
+          (NP-2 (-NONE-:[666..666] *))
+          (PP
+            (PP (IN:[667..669] by)
+              (NP-LGS
+                (NP (NNS:[670..680] inhibitors))
+                (PP (IN:[681..683] of)
+                  (NP (NN:[684..697] transcription) (CC:[698..701] and)
+                      (NN:[702..713] translation)))))
+            (CC:[714..717] and)
+            (PP (IN:[718..720] by)
+              (NP-LGS (NN:[721..731] disulfiram)))))))
+    (.:[731..732] .)))
+
+;sentence 7 Span:734..867
+;Cytochrome P-450 induction is not a general phenomenon of stress, albeit 
+;physical restraint may decrease the level of P-450 induced.
+;[734..750]:cyp450:"Cytochrome P-450"
+;[853..858]:cyp450:"P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (NN:[734..744] Cytochrome) (NN:[745..750] P-450))
+      (NN:[751..760] induction))
+    (VP (VBZ:[761..763] is) (RB:[764..767] not)
+      (NP-PRD
+        (NP (DT:[768..769] a) (JJ:[770..777] general) (NN:[778..788] phenomenon))
+        (PP (IN:[789..791] of)
+          (NP (NN:[792..798] stress))))
+      (,:[798..799] ,)
+      (SBAR-ADV (IN:[800..806] albeit)
+        (S
+          (NP-SBJ (JJ:[808..816] physical) (NN:[817..826] restraint))
+          (VP (MD:[827..830] may)
+            (VP (VB:[831..839] decrease)
+              (NP
+                (NP (DT:[840..843] the) (NN:[844..849] level))
+                (PP (IN:[850..852] of)
+                  (NP
+                    (NP (NN:[853..858] P-450))
+                    (VP (VBN:[859..866] induced)
+                      (NP (-NONE-:[866..866] *)))))))))))
+    (.:[866..867] .)))
+
+;sentence 8 Span:868..965
+;Induction was a  specific effect of increased oxygen tensions and was not due
+;to pressure per se.
+;[914..920]:substance:"oxygen"
+(SENT
+  (S
+    (NP-SBJ (NN:[868..877] Induction))
+    (VP
+      (VP (VBD:[878..881] was)
+        (NP-PRD
+          (NP (DT:[882..883] a) (JJ:[885..893] specific) (NN:[894..900] effect))
+          (PP (IN:[901..903] of)
+            (NP (VBN:[904..913] increased) (NN:[914..920] oxygen)
+                (NNS:[921..929] tensions)))))
+      (CC:[930..933] and)
+      (VP (VBD:[934..937] was) (RB:[938..941] not)
+        (PP-PRP-PRD (JJ:[942..945] due)
+          (PP (TO:[946..948] to)
+            (NP
+              (NP (NN:[949..957] pressure))
+              (ADVP (FW:[958..961] per) (FW:[962..964] se)))))))
+    (.:[964..965] .)))
+
+;sentence 9 Span:967..1121
+;Neither equivalent pressures of compressed air in the in vivo experiments nor
+; equivalent pressures of nitrogen in the in vitro experiments induced P-450.
+;[1010..1013]:substance:"air"
+;[1070..1078]:substance:"nitrogen"
+;[1115..1120]:cyp450:"P-450"
+(SENT
+  (S
+    (NP-SBJ (CC:[967..974] Neither)
+      (NP
+        (NP (JJ:[975..985] equivalent) (NNS:[986..995] pressures))
+        (PP (IN:[996..998] of)
+          (NP (VBN:[999..1009] compressed) (NN:[1010..1013] air)))
+        (PP (IN:[1014..1016] in)
+          (NP (DT:[1017..1020] the)
+            (ADJP (FW:[1021..1023] in) (FW:[1024..1028] vivo))
+            (NNS:[1029..1040] experiments))))
+      (CC:[1041..1044] nor)
+      (NP
+        (NP (JJ:[1046..1056] equivalent) (NNS:[1057..1066] pressures))
+        (PP (IN:[1067..1069] of)
+          (NP (NN:[1070..1078] nitrogen)))
+        (PP (IN:[1079..1081] in)
+          (NP (DT:[1082..1085] the)
+            (ADJP (FW:[1086..1088] in) (FW:[1089..1094] vitro))
+            (NNS:[1095..1106] experiments)))))
+    (VP (VBD:[1107..1114] induced)
+      (NP (NN:[1115..1120] P-450)))
+    (.:[1120..1121] .)))
+
+;sentence 10 Span:1123..1184
+;Induction in vivo was inhibited by disulfiram and metyrapone.
+;[1158..1168]:substance:"disulfiram"
+;[1173..1183]:substance:"metyrapone"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1123..1132] Induction))
+      (ADVP (FW:[1133..1135] in) (FW:[1136..1140] vivo)))
+    (VP (VBD:[1141..1144] was)
+      (VP (VBN:[1145..1154] inhibited)
+        (NP-1 (-NONE-:[1154..1154] *))
+        (PP (IN:[1155..1157] by)
+          (NP-LGS (NN:[1158..1168] disulfiram) (CC:[1169..1172] and)
+                  (NN:[1173..1183] metyrapone)))))
+    (.:[1183..1184] .)))
+
+;sentence 11 Span:1185..1316
+;Hyperoxia is the  most rapid inducer of P-450 yet found, and this response
+;may represent a  protective mechanism against hyperoxia.
+;[1225..1230]:cyp450:"P-450"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1185..1194] Hyperoxia))
+      (VP (VBZ:[1195..1197] is)
+        (NP-PRD
+          (NP
+            (NP (DT:[1198..1201] the)
+              (ADJP (RBS:[1203..1207] most) (JJ:[1208..1213] rapid))
+              (NN:[1214..1221] inducer))
+            (PP (IN:[1222..1224] of)
+              (NP (NN:[1225..1230] P-450))))
+          (VP
+            (ADVP-TMP (RB:[1231..1234] yet))
+            (VBN:[1235..1240] found)
+            (NP (-NONE-:[1240..1240] *))))))
+    (,:[1240..1241] ,) (CC:[1242..1245] and)
+    (S
+      (NP-SBJ (DT:[1246..1250] this) (NN:[1251..1259] response))
+      (VP (MD:[1260..1263] may)
+        (VP (VB:[1264..1273] represent)
+          (NP
+            (NP (DT:[1274..1275] a) (JJ:[1277..1287] protective)
+                (NN:[1288..1297] mechanism))
+            (PP (IN:[1298..1305] against)
+              (NP (NN:[1306..1315] hyperoxia)))))))
+    (.:[1315..1316] .)))
+
+;section 12 Span:1320..1364
+;PMID: 7423654 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1320..1324] PMID) (::[1324..1325] :) (CD:[1326..1333] 7423654)
+        (NN:[1334..1335] -LSB-) (NNP:[1335..1341] PubMed) (::[1342..1343] -)
+        (NN:[1344..1351] indexed) (IN:[1352..1355] for)
+        (NNP:[1356..1364] MEDLINE-RSB-)))

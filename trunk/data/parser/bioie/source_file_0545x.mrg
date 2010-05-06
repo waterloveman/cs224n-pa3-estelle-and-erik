@@ -1,0 +1,500 @@
+;PMID: 10835516
+;source_file_1210.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:47..91] = [t:47..91]
+;2)section:[e:95..114] = [t:95..114]
+;3)section:[e:118..211] = [t:118..211]
+;4)sentence:[e:215..225] = [t:215..225]
+;5)sentence:[e:226..434] = [t:226..434]
+;6)sentence:[e:435..442] = [t:435..442]
+;7)sentence:[e:444..668] = [t:444..668]
+;8)sentence:[e:669..677] = [t:669..677]
+;9)sentence:[e:679..711] = [t:679..711]
+;10)sentence:[e:712..721] = [t:712..721]
+;11)sentence:[e:722..798] = [t:722..798]
+;12)sentence:[e:799..922] = [t:799..922]
+;13)sentence:[e:923..931] = [t:923..931]
+;14)sentence:[e:932..1004] = [t:932..1004]
+;15)sentence:[e:1005..1194] = [t:1005..1194]
+;16)sentence:[e:1195..1437] = [t:1195..1437]
+;17)sentence:[e:1438..1530] = [t:1438..1530]
+;18)sentence:[e:1531..1542] = [t:1531..1542]
+;19)sentence:[e:1543..1674] = [t:1543..1674]
+;20)sentence:[e:1675..1831] = [t:1675..1831]
+;21)section:[e:1835..1880] = [t:1835..1880]
+
+;section 0 Span:0..42
+;Arch Pathol Lab Med  2000 Jun;124(6):836-9
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..11] Pathol) (NNP:[12..15] Lab)
+        (NNP:[16..19] Med) (CD:[21..25] 2000) (.:[26..34] Jun;124-LRB-)
+        (CD:[34..36] 6-RRB-) (CD:[36..40] :836) (::[40..41] -) (CD:[41..42] 9)))
+
+;sentence 1 Span:47..91
+;ras gene mutations in salivary gland tumors.
+;[47..50]:gene-rna:"ras"
+;[69..90]:malignancy:"salivary gland tumors"
+(SENT
+  (NP-HLN
+    (NP (NN:[47..50] ras) (NN:[51..55] gene) (NNS:[56..65] mutations))
+    (PP (IN:[66..68] in)
+      (NP (JJ:[69..77] salivary) (NN:[78..83] gland) (NNS:[84..90] tumors)))
+    (.:[90..91] .)))
+
+;section 2 Span:95..114
+;Yoo J, Robinson RA.
+(SEC
+  (FRAG (NNP:[95..98] Yoo) (NNP:[99..101] J,) (NNP:[102..110] Robinson)
+        (.:[111..114] RA.)))
+
+;section 3 Span:118..211
+;Department of Pathology, Catholic University, St Vincent Hospital, Suwon, 
+;Republic of Korea.
+(SEC
+  (FRAG (NNP:[118..128] Department) (IN:[129..131] of)
+        (NNP:[132..141] Pathology) (NNP:[141..142] ,) (NNP:[143..151] Catholic)
+        (NNP:[152..162] University) (,:[162..163] ,) (NNP:[164..166] St)
+        (NNP:[167..174] Vincent) (NNP:[175..183] Hospital) (,:[183..184] ,)
+        (NNP:[185..190] Suwon) (,:[190..191] ,) (NNP:[193..201] Republic)
+        (IN:[202..204] of) (NNP:[205..210] Korea) (.:[210..211] .)))
+
+;sentence 4 Span:215..225
+;OBJECTIVE:
+(SENT
+  (NP (NN:[215..224] OBJECTIVE) (::[224..225] :)))
+
+;sentence 5 Span:226..434
+;To assess the prevalence of activating mutations in K-ras and H-ras  genes in
+;salivary gland tumors with ductal or acinar differentiation and to  evaluate
+;their potential correlation with clinical parameters.
+;[278..283]:gene-rna:"K-ras"
+;[288..293]:gene-rna:"H-ras"
+;[304..337]...[348..363]:malignancy:"salivary gland tumors with
+;ductal"..."differentiation"
+;[304..330]...[341..363]:malignancy:"salivary gland tumors with"..."acinar
+;differentiation"
+(SENT
+  (S
+    (NP-SBJ (-NONE-:[226..226] *))
+    (VP
+      (VP (TO:[226..228] To)
+        (VP (VB:[229..235] assess)
+          (NP
+            (NP (DT:[236..239] the) (NN:[240..250] prevalence))
+            (PP (IN:[251..253] of)
+              (NP
+                (NP (VBG:[254..264] activating) (NNS:[265..274] mutations))
+                (PP (IN:[275..277] in)
+                  (NP
+                    (NP (NN:[278..283] K-ras)
+                      (NML-1 (-NONE-:[283..283] *P*)))
+                    (CC:[284..287] and)
+                    (NP (NN:[288..293] H-ras)
+                      (NML-1 (NNS:[295..300] genes))))))))
+          (PP-LOC (IN:[301..303] in)
+            (NP
+              (NP (JJ:[304..312] salivary) (NN:[313..318] gland)
+                  (NNS:[319..325] tumors))
+              (PP (IN:[326..330] with)
+                (NP
+                  (NP (JJ:[331..337] ductal)
+                    (NML-2 (-NONE-:[337..337] *P*)))
+                  (CC:[338..340] or)
+                  (NP (JJ:[341..347] acinar)
+                    (NML-2 (NN:[348..363] differentiation)))))))))
+      (CC:[364..367] and)
+      (VP (TO:[368..370] to)
+        (VP (VB:[372..380] evaluate)
+          (NP
+            (NP (PRP$:[381..386] their) (JJ:[387..396] potential)
+                (NN:[397..408] correlation))
+            (PP (IN:[409..413] with)
+              (NP (JJ:[414..422] clinical) (NNS:[423..433] parameters)))))))
+    (.:[433..434] .)))
+
+;sentence 6 Span:435..442
+;DESIGN:
+(SENT
+  (NP (NN:[435..441] DESIGN) (::[441..442] :)))
+
+;sentence 7 Span:444..668
+;Paraffin-embedded tissue samples of salivary gland carcinomas were
+;investigated  by the application of a direct sequence analysis procedure with
+;automated DNA  sequencing of polymerase chain reaction-amplified ras
+;sequences.
+;[480..505]:malignancy:"salivary gland carcinomas"
+;[618..628]:gene-protein:"polymerase"
+;[654..657]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (ADJP (NN:[444..452] Paraffin) (HYPH:[452..453] -)
+              (VBN:[453..461] embedded))
+        (NN:[462..468] tissue) (NNS:[469..476] samples))
+      (PP (IN:[477..479] of)
+        (NP (JJ:[480..488] salivary) (NN:[489..494] gland)
+            (NNS:[495..505] carcinomas))))
+    (VP (VBD:[506..510] were)
+      (VP (VBN:[511..523] investigated)
+        (NP-1 (-NONE-:[523..523] *))
+        (PP-MNR (IN:[525..527] by)
+          (NP
+            (NP (DT:[528..531] the) (NN:[532..543] application))
+            (PP (IN:[544..546] of)
+              (NP (DT:[547..548] a)
+                (NML
+                  (NML (JJ:[549..555] direct) (NN:[556..564] sequence))
+                  (NN:[565..573] analysis))
+                (NN:[574..583] procedure)))
+            (PP (IN:[584..588] with)
+              (NP
+                (NP (VBN:[589..598] automated) (NN:[599..602] DNA)
+                    (NN:[604..614] sequencing))
+                (PP (IN:[615..617] of)
+                  (NP
+                    (ADJP
+                      (NML (NN:[618..628] polymerase) (NN:[629..634] chain)
+                           (NN:[635..643] reaction))
+                      (HYPH:[643..644] -) (VBN:[644..653] amplified))
+                    (NN:[654..657] ras) (NNS:[658..667] sequences)))))))))
+    (.:[667..668] .)))
+
+;sentence 8 Span:669..677
+;SETTING:
+(SENT
+  (NP (NN:[669..676] SETTING) (::[676..677] :)))
+
+;sentence 9 Span:679..711
+;Tertiary care teaching hospital.
+(SENT
+  (NP (JJ:[679..687] Tertiary) (NN:[688..692] care) (NN:[693..701] teaching)
+      (NN:[702..710] hospital) (.:[710..711] .)))
+
+;sentence 10 Span:712..721
+;PATIENTS:
+(SENT
+  (NP (NNS:[712..720] PATIENTS) (::[720..721] :)))
+
+;sentence 11 Span:722..798
+;Twenty-four patients with salivary  gland carcinoma were surgically treated.
+;[748..773]:malignancy:"salivary  gland carcinoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[722..733] Twenty-four) (NNS:[734..742] patients))
+      (PP (IN:[743..747] with)
+        (NP (JJ:[748..756] salivary) (NN:[758..763] gland)
+            (NN:[764..773] carcinoma))))
+    (VP (VBD:[774..778] were)
+      (ADVP-MNR (RB:[779..789] surgically))
+      (VP (VBN:[790..797] treated)
+        (NP-1 (-NONE-:[797..797] *))))
+    (.:[797..798] .)))
+
+;sentence 12 Span:799..922
+;Nine had adenocarcinoma, 1 had  adenosquamous carcinoma, 11 had
+;mucoepidermoid carcinoma, and 3 had acinic cell  carcinoma.
+;[808..822]:malignancy:"adenocarcinoma"
+;[831..854]:malignancy:"adenosquamous carcinoma"
+;[863..887]:malignancy:"mucoepidermoid carcinoma"
+;[899..921]:malignancy:"acinic cell  carcinoma"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[799..803] Nine))
+      (VP (VBD:[804..807] had)
+        (NP (NN:[808..822] adenocarcinoma))))
+    (,:[822..823] ,)
+    (S
+      (NP-SBJ (CD:[824..825] 1))
+      (VP (VBD:[826..829] had)
+        (NP (JJ:[831..844] adenosquamous) (NN:[845..854] carcinoma))))
+    (,:[854..855] ,)
+    (S
+      (NP-SBJ (CD:[856..858] 11))
+      (VP (VBD:[859..862] had)
+        (NP (JJ:[863..877] mucoepidermoid) (NN:[878..887] carcinoma))))
+    (,:[887..888] ,) (CC:[889..892] and)
+    (S
+      (NP-SBJ (CD:[893..894] 3))
+      (VP (VBD:[895..898] had)
+        (NP
+          (NML (JJ:[899..905] acinic) (NN:[906..910] cell))
+          (NN:[912..921] carcinoma))))
+    (.:[921..922] .)))
+
+;sentence 13 Span:923..931
+;RESULTS:
+(SENT
+  (NP (NNS:[923..930] RESULTS) (::[930..931] :)))
+
+;sentence 14 Span:932..1004
+;Point mutations were detected in 7 (29%) of the 24  carcinomas examined.
+;[932..947]:variation-type:"Point mutations"
+;[984..994]:malignancy:"carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[932..937] Point) (NNS:[938..947] mutations))
+    (VP (VBD:[948..952] were)
+      (VP (VBN:[953..961] detected)
+        (NP-1 (-NONE-:[961..961] *))
+        (PP-LOC (IN:[962..964] in)
+          (NP
+            (NP (CD:[965..966] 7)
+              (PRN (-LRB-:[967..968] -LRB-)
+                (NP (CD:[968..970] 29) (NN:[970..971] %))
+                (-RRB-:[971..972] -RRB-)))
+            (PP (IN:[973..975] of)
+              (NP
+                (NP (DT:[976..979] the) (CD:[980..982] 24)
+                    (NNS:[984..994] carcinomas))
+                (VP (VBN:[995..1003] examined)
+                  (NP (-NONE-:[1003..1003] *)))))))))
+    (.:[1003..1004] .)))
+
+;sentence 15 Span:1005..1194
+;The K-ras gene was mutated in only 2 samples (8%): a  GGC-to-ATC mutation at
+;codon 13 in an adenocarcinoma and a GGC-to-GTC  transversion mutation at
+;codon 13 in a mucoepidermoid carcinoma.
+;[1009..1014]:gene-rna:"K-ras"
+;[1059..1062]:variation-state-original:"GGC"
+;[1066..1069]:variation-state-altered:"ATC"
+;[1070..1078]:variation-event:"mutation"
+;[1082..1090]:variation-location:"codon 13"
+;[1097..1111]:malignancy:"adenocarcinoma"
+;[1118..1121]:variation-state-original:"GGC"
+;[1125..1128]:variation-state-altered:"GTC"
+;[1130..1142]:variation-type:"transversion"
+;[1143..1151]:variation-event:"mutation"
+;[1155..1163]:variation-location:"codon 13"
+;[1169..1193]:malignancy:"mucoepidermoid carcinoma"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1005..1008] The) (NN:[1009..1014] K-ras)
+              (NN:[1015..1019] gene))
+    (VP (VBD:[1020..1023] was)
+      (VP (VBN:[1024..1031] mutated)
+        (NP-1 (-NONE-:[1031..1031] *))
+        (PP (IN:[1032..1034] in)
+          (NP
+            (NP (RB:[1035..1039] only) (CD:[1040..1041] 2)
+                (NNS:[1042..1049] samples)
+              (PRN (-LRB-:[1050..1051] -LRB-)
+                (NP (CD:[1051..1052] 8) (NN:[1052..1053] %))
+                (-RRB-:[1053..1054] -RRB-)))
+            (::[1054..1055] :)
+            (NP
+              (NP
+                (NP (DT:[1056..1057] a)
+                  (NML
+                    (NML (NN:[1059..1062] GGC) (HYPH:[1062..1063] -))
+                    (PP (TO:[1063..1065] to) (HYPH:[1065..1066] -)
+                      (NP (NN:[1066..1069] ATC))))
+                  (NN:[1070..1078] mutation))
+                (PP-LOC (IN:[1079..1081] at)
+                  (NP (NN:[1082..1087] codon) (CD:[1088..1090] 13)))
+                (PP-LOC (IN:[1091..1093] in)
+                  (NP (DT:[1094..1096] an) (NN:[1097..1111] adenocarcinoma))))
+              (CC:[1112..1115] and)
+              (NP
+                (NP (DT:[1116..1117] a)
+                  (NML
+                    (NML
+                      (NML (NN:[1118..1121] GGC) (HYPH:[1121..1122] -))
+                      (PP (TO:[1122..1124] to) (HYPH:[1124..1125] -)
+                        (NP (NN:[1125..1128] GTC))))
+                    (NN:[1130..1142] transversion))
+                  (NN:[1143..1151] mutation))
+                (PP-LOC (IN:[1152..1154] at)
+                  (NP (NN:[1155..1160] codon) (CD:[1161..1163] 13)))
+                (PP-LOC (IN:[1164..1166] in)
+                  (NP (DT:[1167..1168] a)
+                     (JJ:[1169..1183] mucoepidermoid)
+                     (NN:[1184..1193] carcinoma)))))))))
+    (.:[1193..1194] .)))
+
+;sentence 16 Span:1195..1437
+;Five (21%)  harbored H-ras mutations: 4 contained a GGC-to-GTC transversion
+;mutation at  codon 12 and 1 had 2 distinct mutations, the same G-to-T at
+;codon 12 as was  shown in the other cases and a GGT-to-GGA heterozygous
+;mutation at codon 13.
+;[1216..1221]:gene-rna:"H-ras"
+;[1247..1250]:variation-state-original:"GGC"
+;[1254..1257]:variation-state-altered:"GTC"
+;[1258..1270]:variation-type:"transversion"
+;[1271..1279]:variation-event:"mutation"
+;[1284..1292]:variation-location:"codon 12"
+;[1314..1323]:variation-event:"mutations"
+;[1334..1335]:variation-state-original:"G"
+;[1339..1340]:variation-state-altered:"T"
+;[1344..1352]:variation-location:"codon 12"
+;[1392..1395]:variation-state-original:"GGT"
+;[1399..1402]:variation-state-altered:"GGA"
+;[1428..1436]:variation-location:"codon 13"
+(SENT
+  (S
+    (NP-SBJ (CD:[1195..1199] Five)
+      (PRN (-LRB-:[1200..1201] -LRB-)
+        (NP (CD:[1201..1203] 21) (NN:[1203..1204] %))
+        (-RRB-:[1204..1205] -RRB-)))
+    (VP (VBD:[1207..1215] harbored)
+      (NP (NN:[1216..1221] H-ras) (NNS:[1222..1231] mutations))
+      (::[1231..1232] :)
+      (S
+        (S
+          (NP-SBJ (CD:[1233..1234] 4))
+          (VP (VBD:[1235..1244] contained)
+            (NP
+              (NP (DT:[1245..1246] a)
+                (NML
+                  (NML
+                    (NML (NN:[1247..1250] GGC) (HYPH:[1250..1251] -))
+                    (PP (TO:[1251..1253] to) (HYPH:[1253..1254] -)
+                      (NP (NN:[1254..1257] GTC))))
+                  (NN:[1258..1270] transversion))
+                (NN:[1271..1279] mutation))
+              (PP (IN:[1280..1282] at)
+                (NP (NN:[1284..1289] codon) (CD:[1290..1292] 12))))))
+        (CC:[1293..1296] and)
+        (S
+          (NP-SBJ (CD:[1297..1298] 1))
+          (VP (VBD:[1299..1302] had)
+            (NP
+              (NP (CD:[1303..1304] 2) (JJ:[1305..1313] distinct)
+                  (NNS:[1314..1323] mutations))
+              (,:[1323..1324] ,)
+              (NP
+                (NP
+                  (NP (DT:[1325..1328] the) (JJ:[1329..1333] same)
+                    (NML
+                      (NML (NN:[1334..1335] G) (HYPH:[1335..1336] -))
+                      (PP (TO:[1336..1338] to) (HYPH:[1338..1339] -)
+                        (NP (NN:[1339..1340] T)))))
+                  (PP-LOC (IN:[1341..1343] at)
+                    (NP (NN:[1344..1349] codon) (CD:[1350..1352] 12)))
+                  (PP (IN:[1353..1355] as)
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1355..1355] *))
+                      (VP (VBD:[1356..1359] was)
+                        (VP (VBN:[1361..1366] shown)
+                          (NP-1 (-NONE-:[1366..1366] *))
+                          (PP (IN:[1367..1369] in)
+                            (NP (DT:[1370..1373] the) (JJ:[1374..1379] other)
+                                (NNS:[1380..1385] cases))))))))
+                (CC:[1386..1389] and)
+                (NP
+                  (NP (DT:[1390..1391] a)
+                    (NML
+                      (NML (NN:[1392..1395] GGT) (HYPH:[1395..1396] -))
+                      (PP (TO:[1396..1398] to) (HYPH:[1398..1399] -)
+                        (NP (NN:[1399..1402] GGA))))
+                    (JJ:[1403..1415] heterozygous) (NN:[1416..1424] mutation))
+                  (PP-LOC (IN:[1425..1427] at)
+                    (NP (NN:[1428..1433] codon) (CD:[1434..1436] 13))))))))))
+    (.:[1436..1437] .)))
+
+;sentence 17 Span:1438..1530
+;All  the H-ras mutations were in the group of mucoepidermoid carcinoma
+;lesions (45%;  5/11).
+;[1447..1452]:gene-rna:"H-ras"
+;[1484..1516]:malignancy:"mucoepidermoid carcinoma lesions"
+(SENT
+  (S
+    (NP-SBJ (PDT:[1438..1441] All) (DT:[1443..1446] the) (NN:[1447..1452] H-ras)
+            (NNS:[1453..1462] mutations))
+    (VP (VBD:[1463..1467] were)
+      (PP-PRD (IN:[1468..1470] in)
+        (NP
+          (NP (DT:[1471..1474] the) (NN:[1475..1480] group))
+          (PP (IN:[1481..1483] of)
+            (NP (JJ:[1484..1498] mucoepidermoid) (NN:[1499..1508] carcinoma)
+                (NNS:[1509..1516] lesions)))))
+      (PRN (-LRB-:[1517..1518] -LRB-)
+        (FRAG
+          (NP (CD:[1518..1520] 45) (NN:[1520..1521] %))
+          (::[1521..1522] ;)
+          (NP
+            (NP (CD:[1524..1525] 5))
+            (PP (SYM:[1525..1526] /)
+              (NP (CD:[1526..1528] 11)))))
+        (-RRB-:[1528..1529] -RRB-)))
+    (.:[1529..1530] .)))
+
+;sentence 18 Span:1531..1542
+;CONCLUSION:
+(SENT
+  (NP (NN:[1531..1541] CONCLUSION) (::[1541..1542] :)))
+
+;sentence 19 Span:1543..1674
+;Our data suggest that K-ras gene alteration is probably not  an important
+;factor in the oncogenesis of human salivary gland tumors.
+;[1565..1570]:gene-rna:"K-ras"
+;[1652..1673]:malignancy:"salivary gland tumors"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1543..1546] Our) (NNS:[1547..1551] data))
+    (VP (VBP:[1552..1559] suggest)
+      (SBAR (IN:[1560..1564] that)
+        (S
+          (NP-SBJ (NN:[1565..1570] K-ras) (NN:[1571..1575] gene)
+                  (NN:[1576..1586] alteration))
+          (VP (VBZ:[1587..1589] is)
+            (ADVP (RB:[1590..1598] probably))
+            (RB:[1599..1602] not)
+            (NP-PRD
+              (NP (DT:[1604..1606] an) (JJ:[1607..1616] important)
+                  (NN:[1617..1623] factor))
+              (PP (IN:[1624..1626] in)
+                (NP
+                  (NP (DT:[1627..1630] the) (NN:[1631..1642] oncogenesis))
+                  (PP (IN:[1643..1645] of)
+                    (NP (JJ:[1646..1651] human)
+                      
+                      (NML (JJ:[1652..1660] salivary) (NN:[1661..1666] gland))
+                      (NNS:[1667..1673] tumors))))))))))
+    (.:[1673..1674] .)))
+
+;sentence 20 Span:1675..1831
+;However,  mutational activation of the H-ras gene appears to play a role in
+;the  development and/or progression of salivary gland mucoepidermoid
+;carcinomas.
+;[1714..1719]:gene-rna:"H-ras"
+;[1790..1830]:malignancy:"salivary gland mucoepidermoid carcinomas"
+(SENT
+  (S
+    (ADVP (RB:[1675..1682] However))
+    (,:[1682..1683] ,)
+    (NP-SBJ-1
+      (NP (JJ:[1685..1695] mutational) (NN:[1696..1706] activation))
+      (PP (IN:[1707..1709] of)
+        (NP (DT:[1710..1713] the) (NN:[1714..1719] H-ras) (NN:[1720..1724] gene))))
+    (VP (VBZ:[1725..1732] appears)
+      (S
+        (NP-SBJ-1 (-NONE-:[1732..1732] *))
+        (VP (TO:[1733..1735] to)
+          (VP (VB:[1736..1740] play)
+            (NP (DT:[1741..1742] a) (NN:[1743..1747] role))
+            (PP (IN:[1748..1750] in)
+              (NP
+                (NP
+                  (NP (DT:[1751..1754] the) (NN:[1756..1767] development))
+                  (CC:[1768..1774] and/or)
+                  (NP (NN:[1775..1786] progression)))
+                (PP (IN:[1787..1789] of)
+                  (NP
+                    (NML (JJ:[1790..1798] salivary) (NN:[1799..1804] gland))
+                    (JJ:[1805..1819] mucoepidermoid)
+                     (NNS:[1820..1830] carcinomas)))))))))
+    (.:[1830..1831] .)))
+
+;section 21 Span:1835..1880
+;PMID: 10835516 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1835..1839] PMID) (::[1839..1840] :) (CD:[1841..1849] 10835516)
+        (NN:[1850..1851] -LSB-) (NNP:[1851..1857] PubMed) (::[1858..1859] -)
+        (NN:[1860..1867] indexed) (IN:[1868..1871] for)
+        (NNP:[1872..1880] MEDLINE-RSB-)))

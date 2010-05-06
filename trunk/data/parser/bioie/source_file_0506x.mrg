@@ -1,0 +1,317 @@
+;PMID: 1946468
+;source_file_2908.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..53] = [t:0..53]
+;1)sentence:[e:59..184] = [t:59..184]
+;2)section:[e:188..248] = [t:188..248]
+;3)section:[e:252..328] = [t:252..328]
+;4)sentence:[e:332..497] = [t:332..497]
+;5)sentence:[e:498..812] = [t:498..812]
+;6)sentence:[e:813..1101] = [t:813..1101]
+;7)sentence:[e:1103..1221] = [t:1103..1221]
+;8)sentence:[e:1222..1409] = [t:1222..1409]
+;9)section:[e:1413..1457] = [t:1413..1457]
+
+;section 0 Span:0..53
+;Proc Natl Acad Sci U S A.  1991 Nov 15;88(22):9994-8.
+(SEC
+  (FRAG (NNP:[0..4] Proc) (NNP:[5..9] Natl) (NNP:[10..14] Acad)
+        (NNP:[15..18] Sci) (NNP:[19..20] U) (NNP:[21..22] S) (NNP:[23..24] A)
+        (.:[24..25] .) (CD:[27..31] 1991) (NNP:[32..35] Nov) (CD:[36..38] 15)
+        (CD:[38..41] ;88) (-LRB-:[41..42] -LRB-) (CD:[42..44] 22)
+        (-RRB-:[44..45] -RRB-) (CD:[45..50] :9994) (::[50..51] -)
+        (CD:[51..53] 8.)))
+
+;sentence 1 Span:59..184
+;Insulin-like growth factor I shifts from promoting cell division to
+;potentiating  maturation during neuronal differentiation.
+;[59..87]:gene-protein:"Insulin-like growth factor I"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (ADJP (NN:[59..66] Insulin) (HYPH:[66..67] -) (JJ:[67..71] like))
+      (NML (NN:[72..78] growth) (NN:[79..85] factor))
+      (CD:[86..87] I))
+    (VP (VBZ:[88..94] shifts)
+      (PP (IN:[95..99] from)
+        (NP
+          (NP (VBG:[100..109] promoting) (NN:[110..114] cell)
+              (NN:[115..123] division))
+          (PP (TO:[124..126] to)
+            (NP (VBG:[127..139] potentiating) (NN:[141..151] maturation)))
+          (PP-TMP (IN:[152..158] during)
+            (NP (JJ:[159..167] neuronal) (NN:[168..183] differentiation))))))
+    (.:[183..184] .)))
+
+;section 2 Span:188..248
+;Pahlman S, Meyerson G, Lindgren E, Schalling M, Johansson I.
+(SEC
+  (FRAG (NNP:[188..195] Pahlman) (NNP:[196..197] S) (,:[197..198] ,)
+        (NNP:[199..207] Meyerson) (NNP:[208..209] G) (,:[209..210] ,)
+        (NNP:[211..219] Lindgren) (NNP:[220..221] E) (,:[221..222] ,)
+        (NNP:[223..232] Schalling) (NNP:[233..235] M,)
+        (NNP:[236..245] Johansson) (NNP:[246..248] I.)))
+
+;section 3 Span:252..328
+;Department of Pathology, University of Uppsala, University Hospital, Sweden.
+(SEC
+  (FRAG (NNP:[252..262] Department) (IN:[263..265] of)
+        (NNP:[266..275] Pathology) (,:[275..276] ,) (NNP:[277..287] University)
+        (IN:[288..290] of) (NNP:[291..298] Uppsala) (,:[298..299] ,)
+        (NNP:[300..310] University) (NNP:[311..319] Hospital) (,:[319..320] ,)
+        (NNP:[321..327] Sweden) (.:[327..328] .)))
+
+;sentence 4 Span:332..497
+;SH-SY5Y neuroblastoma cells undergo neuronal differentiation and their 
+;proliferation is inhibited when they are treated with phorbol 12-myristate 
+;13-acetate (PMA).
+;[340..359]:malignancy-type:"neuroblastoma cells"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[332..339] SH-SY5Y)
+         (NN:[340..353] neuroblastoma) (NNS:[354..359] cells))
+      (VP (VBP:[360..367] undergo)
+        (NP (JJ:[368..376] neuronal) (NN:[377..392] differentiation))))
+    (CC:[393..396] and)
+    (S
+      (NP-SBJ-1 (PRP$:[397..402] their) (NN:[404..417] proliferation))
+      (VP (VBZ:[418..420] is)
+        (VP (VBN:[421..430] inhibited)
+          (NP-1 (-NONE-:[430..430] *))
+          (SBAR-ADV
+            (WHADVP-2 (WRB:[431..435] when))
+            (S
+              (NP-SBJ-3 (PRP:[436..440] they))
+              (VP (VBP:[441..444] are)
+                (VP (VBN:[445..452] treated)
+                  (NP-3 (-NONE-:[452..452] *))
+                  (PP-CLR (IN:[453..457] with)
+                    (NP
+                      (NP (NN:[458..465] phorbol) (NN:[466..478] 12-myristate)
+                          (NN:[480..490] 13-acetate))
+                      (NP (-LRB-:[491..492] -LRB-) (NN:[492..495] PMA)
+                          (-RRB-:[495..496] -RRB-))))
+                  (ADVP-2 (-NONE-:[496..496] *T*)))))))))
+    (.:[496..497] .)))
+
+;sentence 5 Span:498..812
+;Insulin and insulin-like growth factor I (IGF-I) are mitogens  for the
+;nontreated SH-SY5Y cells, whereas the proliferative response to such  factor
+;stimulation is lost upon differentiation, in spite of the fact that the 
+;receptors for insulin and IGF-I remain expressed and functional in the 
+;differentiated cells.
+;[498..505]:gene-protein:"Insulin"
+;[510..538]:gene-protein:"insulin-like growth factor I"
+;[540..545]:gene-protein:"IGF-I"
+;[733..740]:gene-protein:"insulin"
+;[745..750]:gene-protein:"IGF-I"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[498..505] Insulin))
+        (CC:[506..509] and)
+        (NP
+          (NP
+            (ADJP (NN:[510..517] insulin) (HYPH:[517..518] -)
+                  (JJ:[518..522] like))
+            (NML (NN:[523..529] growth) (NN:[530..536] factor))
+            (CD:[537..538] I))
+          (NP (-LRB-:[539..540] -LRB-) (NN:[540..545] IGF-I)
+              (-RRB-:[545..546] -RRB-))))
+      (VP (VBP:[547..550] are)
+        (NP-PRD
+          (NP (NNS:[551..559] mitogens))
+          (PP (IN:[561..564] for)
+            (NP (DT:[565..568] the) (JJ:[569..579] nontreated)
+                (NN:[580..587] SH-SY5Y) (NNS:[588..593] cells))))))
+    (,:[593..594] ,) (IN:[595..602] whereas)
+    (S
+      (NP-SBJ-1
+        (NP (DT:[603..606] the) (JJ:[607..620] proliferative)
+            (NN:[621..629] response))
+        (PP (TO:[630..632] to)
+          (NP (JJ:[633..637] such) (NN:[639..645] factor)
+              (NN:[646..657] stimulation))))
+      (VP (VBZ:[658..660] is)
+        (VP (VBN:[661..665] lost)
+          (NP-1 (-NONE-:[665..665] *))
+          (PP (IN:[666..670] upon)
+            (NP (NN:[671..686] differentiation)))
+          (,:[686..687] ,)
+          (PP (IN:[688..690] in)
+            (NP
+              (NP (NN:[691..696] spite))
+              (PP (IN:[697..699] of)
+                (NP (DT:[700..703] the) (NN:[704..708] fact)
+                  (SBAR (IN:[709..713] that)
+                    (S
+                      (NP-SBJ
+                        (NP (DT:[714..717] the) (NNS:[719..728] receptors))
+                        (PP (IN:[729..732] for)
+                          (NP (NN:[733..740] insulin) (CC:[741..744] and)
+                              (NN:[745..750] IGF-I))))
+                      (VP (VBP:[751..757] remain)
+                        (ADJP-PRD
+                          (ADJP (VBN:[758..767] expressed))
+                          (CC:[768..771] and)
+                          (ADJP (JJ:[772..782] functional)))
+                        (PP-LOC (IN:[783..785] in)
+                          (NP (DT:[786..789] the)
+                              (VBN:[791..805] differentiated)
+                              (NNS:[806..811] cells)))))))))))))
+    (.:[811..812] .)))
+
+;sentence 6 Span:813..1101
+;Here we show that the PMA-induced differentiation of  SH-SY5Y cells grown in
+;a serum-free medium is strongly potentiated by nanomolar  concentrations of
+;IGF-I, as judged by morphology and markers for neuronal 
+;differentiation--e.g., neuropeptide tyrosine and growth-associated protein
+;43.
+;[966..971]:gene-protein:"IGF-I"
+;[1072..1100]:gene-protein:"growth-associated protein 43"
+(SENT
+  (S
+    (ADVP (RB:[813..817] Here))
+    (NP-SBJ (PRP:[818..820] we))
+    (VP (VBP:[821..825] show)
+      (SBAR (IN:[826..830] that)
+        (S
+          (NP-SBJ-1
+            (NP (DT:[831..834] the)
+              (ADJP (NN:[835..838] PMA) (HYPH:[838..839] -)
+                    (VBN:[839..846] induced))
+              (NN:[847..862] differentiation))
+            (PP (IN:[863..865] of)
+              (NP
+                (NP (NN:[867..874] SH-SY5Y) (NNS:[875..880] cells))
+                (VP (VBN:[881..886] grown)
+                  (NP (-NONE-:[886..886] *))
+                  (PP (IN:[887..889] in)
+                    (NP (DT:[890..891] a)
+                      (ADJP (NN:[892..897] serum) (HYPH:[897..898] -)
+                            (JJ:[898..902] free))
+                      (NN:[903..909] medium)))))))
+          (VP (VBZ:[910..912] is)
+            (ADVP (RB:[913..921] strongly))
+            (VP (VBN:[922..933] potentiated)
+              (NP-1 (-NONE-:[933..933] *))
+              (PP (IN:[934..936] by)
+                (NP-LGS
+                  (NP (JJ:[937..946] nanomolar) (NNS:[948..962] concentrations))
+                  (PP (IN:[963..965] of)
+                    (NP (NN:[966..971] IGF-I)))))
+              (,:[971..972] ,)
+              (SBAR-ADV (IN:[973..975] as)
+                (S
+                  (NP-SBJ-2 (-NONE-:[975..975] *))
+                  (VP (VBN:[976..982] judged)
+                    (NP-2 (-NONE-:[982..982] *))
+                    (PP-MNR (IN:[983..985] by)
+                      (NP
+                        (NP (NN:[986..996] morphology) (CC:[997..1000] and)
+                            (NNS:[1001..1008] markers))
+                        (PP (IN:[1009..1012] for)
+                          (NP
+                            (NP
+                              (NP (JJ:[1013..1021] neuronal)
+                                  (NN:[1023..1038] differentiation))
+                              (::[1038..1040] --)
+                              (NP
+                                (ADVP (FW:[1040..1044] e.g.))
+                                (,:[1044..1045] ,)
+                                 (NN:[1046..1058] neuropeptide)
+                                 (NN:[1059..1067] tyrosine)))
+                            (CC:[1068..1071] and)
+                            (NP
+                              (ADJP (NN:[1072..1078] growth)
+                                    (HYPH:[1078..1079] -)
+                                    (VBN:[1079..1089] associated))
+                              (NN:[1090..1097] protein) (CD:[1098..1100] 43))))))))))))))
+    (.:[1100..1101] .)))
+
+;sentence 7 Span:1103..1221
+;Also, insulin and IGF-II potentiated the phorbol ester-induced
+;differentiation,  although less efficiently than IGF-I.
+;[1109..1116]:gene-protein:"insulin"
+;[1121..1127]:gene-protein:"IGF-II"
+;[1215..1220]:gene-protein:"IGF-I"
+(SENT
+  (S
+    (ADVP (RB:[1103..1107] Also))
+    (,:[1107..1108] ,)
+    (NP-SBJ (NN:[1109..1116] insulin) (CC:[1117..1120] and)
+            (NN:[1121..1127] IGF-II))
+    (VP (VBD:[1128..1139] potentiated)
+      (NP (DT:[1140..1143] the)
+        (ADJP
+          (NML (NN:[1144..1151] phorbol) (NN:[1152..1157] ester))
+          (HYPH:[1157..1158] -) (VBN:[1158..1165] induced))
+        (NN:[1166..1181] differentiation))
+      (,:[1181..1182] ,)
+      (SBAR-ADV (IN:[1184..1192] although)
+        (FRAG
+          (ADVP (RBR:[1193..1197] less) (RB:[1198..1209] efficiently))
+          (PP (IN:[1210..1214] than)
+            (NP (NN:[1215..1220] IGF-I))))))
+    (.:[1220..1221] .)))
+
+;sentence 8 Span:1222..1409
+;Using blocking anti-receptor antibodies,  it could be shown that the
+;differentiation induced by these factors, in  combination with PMA, was
+;primarily mediated through the IGF-I receptor.
+;[1251..1261]:gene-protein:"antibodies"
+;[1394..1408]:gene-protein:"IGF-I receptor"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[1222..1222] *))
+      (VP (VBG:[1222..1227] Using)
+        (NP (VBG:[1228..1236] blocking)
+          (ADJP (AFX:[1237..1241] anti) (HYPH:[1241..1242] -)
+                (NN:[1242..1250] receptor))
+          (NNS:[1251..1261] antibodies))))
+    (,:[1261..1262] ,)
+    (NP-SBJ-1
+      (NP (PRP:[1264..1266] it))
+      (SBAR-2 (-NONE-:[1266..1266] *EXP*)))
+    (VP (MD:[1267..1272] could)
+      (VP (VB:[1273..1275] be)
+        (VP (VBN:[1276..1281] shown)
+          (NP-1 (-NONE-:[1281..1281] *))
+          (SBAR-2 (IN:[1282..1286] that)
+            (S
+              (NP-SBJ-3
+                (NP
+                  (NP (DT:[1287..1290] the) (NN:[1291..1306] differentiation))
+                  (VP (VBN:[1307..1314] induced)
+                    (NP (-NONE-:[1314..1314] *))
+                    (PP (IN:[1315..1317] by)
+                      (NP-LGS (DT:[1318..1323] these) (NNS:[1324..1331] factors)))))
+                (,:[1331..1332] ,)
+                (PP (IN:[1333..1335] in)
+                  (NP
+                    (NP (NN:[1337..1348] combination))
+                    (PP (IN:[1349..1353] with)
+                      (NP (NN:[1354..1357] PMA))))))
+              (,:[1357..1358] ,)
+              (VP (VBD:[1359..1362] was)
+                (VP
+                  (ADVP (RB:[1363..1372] primarily))
+                  (VBN:[1373..1381] mediated)
+                  (NP-3 (-NONE-:[1381..1381] *))
+                  (PP (IN:[1382..1389] through)
+                    (NP (DT:[1390..1393] the)
+                       (NN:[1394..1399] IGF-I) (NN:[1400..1408] receptor))))))))))
+    (.:[1408..1409] .)))
+
+;section 9 Span:1413..1457
+;PMID: 1946468 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1413..1417] PMID) (::[1417..1418] :) (CD:[1419..1426] 1946468)
+        (NN:[1427..1428] -LSB-) (NNP:[1428..1434] PubMed) (::[1435..1436] -)
+        (NN:[1437..1444] indexed) (IN:[1445..1448] for)
+        (NNP:[1449..1457] MEDLINE-RSB-)))

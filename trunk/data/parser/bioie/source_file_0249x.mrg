@@ -1,0 +1,704 @@
+;PMID: 11286481
+;source_file_582.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..162] = [t:40..162]
+;2)section:[e:166..238] = [t:166..238]
+;3)section:[e:242..329] = [t:242..329]
+;4)sentence:[e:333..470] = [t:333..470]
+;5)sentence:[e:471..638] = [t:471..638]
+;6)sentence:[e:639..749] = [t:639..749]
+;7)sentence:[e:750..851] = [t:750..851]
+;8)sentence:[e:852..1011] = [t:852..1011]
+;9)sentence:[e:1012..1195] = [t:1012..1195]
+;10)sentence:[e:1197..1338] = [t:1197..1338]
+;11)sentence:[e:1339..1456] = [t:1339..1456]
+;12)sentence:[e:1457..1590] = [t:1457..1590]
+;13)sentence:[e:1591..1649] = [t:1591..1649]
+;14)sentence:[e:1650..1802] = [t:1650..1802]
+;15)sentence:[e:1803..1907] = [t:1803..1907]
+;16)sentence:[e:1908..1987] = [t:1908..1987]
+;17)sentence:[e:1988..2132] = [t:1988..2132]
+;18)sentence:[e:2133..2216] = [t:2133..2216]
+;19)sentence:[e:2217..2332] = [t:2217..2332]
+;20)sentence:[e:2333..2452] = [t:2333..2452]
+;21)section:[e:2454..2494] = [t:2454..2494]
+;22)section:[e:2498..2543] = [t:2498..2543]
+
+;section 0 Span:0..35
+;Br J Cancer  2001 Apr 6;84(7):982-9
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..11] Cancer) (CD:[13..17] 2001)
+        (CC:[18..21] Apr) (CD:[22..25] 6;8) (CD:[25..26] 4) (NN:[26..27] -LRB-)
+        (NN:[27..28] 7) (NN:[28..29] -RRB-) (::[29..30] :) (CD:[30..32] 98)
+        (CD:[32..35] 2-9)))
+
+;sentence 1 Span:40..162
+;Frequent k- ras -2 mutations and p16(INK4A)methylation in hepatocellular 
+;carcinomas in workers exposed to vinyl chloride.
+;[49..58]:gene-rna:"k- ras -2"
+;[73..76]:gene-rna:"p16"
+;[77..82]:gene-rna:"INK4A"
+;[98..124]:malignancy:"hepatocellular  carcinomas"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[40..48] Frequent)
+        (NML
+          (NML (NN:[49..50] k) (HYPH:[50..51] -) (NN:[52..55] ras))
+          (SYM:[56..57] -) (CD:[57..58] 2))
+        (NNS:[59..68] mutations))
+      (CC:[69..72] and)
+      (NP (NN:[73..76] p16)
+        (PRN (-LRB-:[76..77] -LRB-)
+          (NP (NN:[77..82] INK4A))
+          (-RRB-:[82..83] -RRB-))
+        (NN:[83..94] methylation)))
+    (PP (IN:[95..97] in)
+      (NP
+        (NP (JJ:[98..112] hepatocellular) (NNS:[114..124] carcinomas))
+        (PP-LOC (IN:[125..127] in)
+          (NP
+            (NP (NNS:[128..135] workers))
+            (VP (VBN:[136..143] exposed)
+              (NP (-NONE-:[143..143] *))
+              (PP-CLR (TO:[144..146] to)
+                (NP (NN:[147..152] vinyl) (NN:[153..161] chloride))))))))
+    (.:[161..162] .)))
+
+;section 2 Span:166..238
+;Weihrauch M, Benicke M, Lehnert G, Wittekind C, Wrbitzky R, Tannapfel A.
+(SEC
+  (FRAG (NNP:[166..175] Weihrauch) (NNP:[176..178] M,) (NNP:[179..186] Benicke)
+        (NNP:[187..189] M,) (NNP:[190..197] Lehnert) (NNP:[198..200] G,)
+        (NNP:[201..210] Wittekind) (NNP:[211..213] C,) (NNP:[214..222] Wrbitzky)
+        (NNP:[223..224] R) (,:[224..225] ,) (NNP:[226..235] Tannapfel)
+        (NN:[236..238] A.)))
+
+;section 3 Span:242..329
+;Institute of Occupational and Environmental Medicine, University of Hannover,
+; Germany.
+(SEC
+  (FRAG (NNP:[242..251] Institute) (IN:[252..254] of)
+        (NNP:[255..267] Occupational) (CC:[268..271] and)
+        (NNP:[272..285] Environmental) (NNP:[286..294] Medicine)
+        (,:[294..295] ,) (NNP:[296..306] University) (IN:[307..309] of)
+        (NNP:[310..318] Hannover) (,:[318..319] ,) (NNP:[321..328] Germany)
+        (.:[328..329] .)))
+
+;sentence 4 Span:333..470
+;Vinyl chloride (VC) is a know animal and human carcinogen associated with
+;liver  angiosarcomas (LAS) and hepatocellular carcinomas (HCC).
+;[407..427]:malignancy:"liver  angiosarcomas"
+;[429..432]:malignancy:"LAS"
+;[438..463]:malignancy:"hepatocellular carcinomas"
+;[465..468]:malignancy:"HCC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[333..338] Vinyl) (NN:[339..347] chloride))
+      (NP (-LRB-:[348..349] -LRB-) (NN:[349..351] VC) (-RRB-:[351..352] -RRB-)))
+    (VP (VBZ:[353..355] is)
+      (NP-PRD
+        (NP (DT:[356..357] a)
+          (NML
+            (NML
+              (ADJP-1 (JJ:[358..362] know))
+              (NN:[363..369] animal)
+              (NML-2 (-NONE-:[369..369] *P*)))
+            (CC:[370..373] and)
+            (NML
+              (ADJP-1 (-NONE-:[373..373] *P*))
+              (JJ:[374..379] human)
+              (NML-2 (NN:[380..390] carcinogen)))))
+        (VP (VBN:[391..401] associated)
+          (NP (-NONE-:[401..401] *))
+          (PP-CLR (IN:[402..406] with)
+            (NP
+              (NP
+                (NP (NN:[407..412] liver) (NNS:[414..427] angiosarcomas))
+                (NP (-LRB-:[428..429] -LRB-) (NN:[429..432] LAS)
+                    (-RRB-:[432..433] -RRB-)))
+              (CC:[434..437] and)
+              (NP
+                (NP (JJ:[438..452] hepatocellular) (NNS:[453..463] carcinomas))
+                (NP (-LRB-:[464..465] -LRB-) (NN:[465..468] HCC)
+                    (-RRB-:[468..469] -RRB-))))))))
+    (.:[469..470] .)))
+
+;sentence 5 Span:471..638
+;In VC-associated LAS  mutations of the K- ras -2 gene have been reported;
+;however, no data about the  prevalence of such mutations in VC associated
+;HCCs are available.
+;[474..491]:malignancy:"VC-associated LAS"
+;[510..519]:gene-rna:"K- ras -2"
+;[605..623]:malignancy:"VC associated HCCs"
+(SENT
+  (S
+    (PP (IN:[471..473] In)
+      (NP
+        (ADJP (NN:[474..476] VC) (HYPH:[476..477] -) (VBN:[477..487] associated))
+        (NN:[488..491] LAS)))
+    (NP-SBJ-1
+      (NP (NNS:[493..502] mutations))
+      (PP (IN:[503..505] of)
+        (NP (DT:[506..509] the)
+          (NML
+            (NML (NN:[510..511] K) (HYPH:[511..512] -) (NN:[513..516] ras))
+            (SYM:[517..518] -) (CD:[518..519] 2))
+          (NN:[520..524] gene))))
+    (VP (VBP:[525..529] have)
+      (VP (VBN:[530..534] been)
+        (VP (VBN:[535..543] reported)
+          (NP-1 (-NONE-:[543..543] *))
+          (::[543..544] ;)
+          (S-ADV
+            (ADVP (RB:[545..552] however))
+            (,:[552..553] ,)
+            (NP-SBJ
+              (NP (DT:[554..556] no) (NNS:[557..561] data))
+              (PP (IN:[562..567] about)
+                (NP
+                  (NP (DT:[568..571] the) (NN:[573..583] prevalence))
+                  (PP (IN:[584..586] of)
+                    (NP (JJ:[587..591] such) (NNS:[592..601] mutations)))
+                  (PP-LOC (IN:[602..604] in)
+                    (NP
+                      (ADJP (NN:[605..607] VC) (VBN:[608..618] associated))
+                      (NNS:[619..623] HCCs))))))
+            (VP (VBP:[624..627] are)
+              (ADJP-PRD (JJ:[628..637] available)))))))
+    (.:[637..638] .)))
+
+;sentence 6 Span:639..749
+;Recent data  indicate K- ras -2 mutations induce P16 methylation accompanied
+;by inactivation  of the p16 gene.
+;[661..670]:gene-rna:"K- ras -2"
+;[688..691]:gene-rna:"P16"
+;[740..743]:gene-rna:"p16"
+(SENT
+  (S
+    (NP-SBJ (JJ:[639..645] Recent) (NNS:[646..650] data))
+    (VP (VBP:[652..660] indicate)
+      (NP-SBJ
+        (NML
+          (NML (NN:[661..662] K) (HYPH:[662..663] -) (NN:[664..667] ras))
+          (SYM:[668..669] -) (CD:[669..670] 2))
+        (NNS:[671..680] mutations))
+      (VP (VBP:[681..687] induce)
+        (NP
+          (NP (NN:[688..691] P16) (NN:[692..703] methylation))
+          (VP (VBN:[704..715] accompanied)
+            (NP (-NONE-:[715..715] *))
+            (PP (IN:[716..718] by)
+              (NP-LGS
+                (NP (NN:[719..731] inactivation))
+                (PP (IN:[733..735] of)
+                  (NP (DT:[736..739] the) (NN:[740..743] p16)
+                      (NN:[744..748] gene)))))))))
+    (.:[748..749] .)))
+
+;sentence 7 Span:750..851
+;The presence of K- ras -2 mutations was analysed in tissue from  18 patients
+;with VC associated HCCs.
+;[766..775]:gene-rna:"K- ras -2"
+;[832..850]:malignancy:"VC associated HCCs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[750..753] The) (NN:[754..762] presence))
+      (PP (IN:[763..765] of)
+        (NP
+          (NML
+            (NML (NN:[766..767] K) (HYPH:[767..768] -) (NN:[769..772] ras))
+            (SYM:[773..774] -) (CD:[774..775] 2))
+          (NNS:[776..785] mutations))))
+    (VP (VBD:[786..789] was)
+      (VP (VBN:[790..798] analysed)
+        (NP-1 (-NONE-:[798..798] *))
+        (PP (IN:[799..801] in)
+          (NP
+            (NP (NN:[802..808] tissue))
+            (PP (IN:[809..813] from)
+              (NP
+                (NP (CD:[815..817] 18) (NNS:[818..826] patients))
+                (PP (IN:[827..831] with)
+                  (NP
+                    (ADJP (NN:[832..834] VC) (VBN:[835..845] associated))
+                    (NNS:[846..850] HCCs)))))))))
+    (.:[850..851] .)))
+
+;sentence 8 Span:852..1011
+;As a control group, 20 patients with  hepatocellular carcinoma due to
+;hepatitis B (n = 7), hepatitis C (n = 5) and  alcoholic liver cirrhosis (n =
+;8) was used.
+;[890..933]:malignancy:"hepatocellular carcinoma due to hepatitis B"
+;[943..954]:malignancy:"hepatitis C"
+;[968..993]:malignancy:"alcoholic liver cirrhosis"
+(SENT
+  (S
+    (PP-TPC-2 (IN:[852..854] As)
+      (NP (DT:[855..856] a) (NN:[857..864] control) (NN:[865..870] group)))
+    (,:[870..871] ,)
+    (NP-SBJ-1
+      (NP (CD:[872..874] 20) (NNS:[875..883] patients))
+      (PP (IN:[884..888] with)
+        (NP
+          (NP (JJ:[890..904] hepatocellular) (NN:[905..914] carcinoma))
+          (PP (JJ:[915..918] due)
+            (PP (TO:[919..921] to)
+              (NP
+                (NP (NN:[922..931] hepatitis) (NN:[932..933] B)
+                  (PRN (-LRB-:[934..935] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[935..936] n))
+                      (VP (SYM:[937..938] =)
+                        (NP (CD:[939..940] 7))))
+                    (-RRB-:[940..941] -RRB-)))
+                (,:[941..942] ,)
+                (NP
+                   (NN:[943..952] hepatitis) (NN:[953..954] C)
+                  (PRN (-LRB-:[955..956] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[956..957] n))
+                      (VP (SYM:[958..959] =)
+                        (NP (CD:[960..961] 5))))
+                    (-RRB-:[961..962] -RRB-)))
+                (CC:[963..966] and)
+                (NP
+                   (JJ:[968..977] alcoholic) (NN:[978..983] liver)
+                   (NN:[984..993] cirrhosis)
+                  (PRN (-LRB-:[994..995] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[995..996] n))
+                      (VP (SYM:[997..998] =)
+                        (NP (CD:[999..1000] 8))))
+                    (-RRB-:[1000..1001] -RRB-)))))))))
+    (VP (VBD:[1002..1005] was)
+      (VP (VBN:[1006..1010] used)
+        (NP-1 (-NONE-:[1010..1010] *))
+        (PP-2 (-NONE-:[1010..1010] *T*))))
+    (.:[1010..1011] .)))
+
+;sentence 9 Span:1012..1195
+;The specific mutations were  determined by direct sequencing of codon 12 and
+;13 of the K- ras -2 gene in  carcinomatous and adjacent non-neoplastic liver
+;tissue after microdissection.
+;[1025..1034]:variation-event:"mutations"
+;[1076..1084]:variation-location:"codon 12"
+;[1076..1081]...[1089..1091]:variation-location:"codon"..."13"
+;[1099..1108]:gene-rna:"K- ras -2"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1012..1015] The) (JJ:[1016..1024] specific)
+              (NNS:[1025..1034] mutations))
+    (VP (VBD:[1035..1039] were)
+      (VP (VBN:[1041..1051] determined)
+        (NP-2 (-NONE-:[1051..1051] *))
+        (PP-MNR (IN:[1052..1054] by)
+          (NP
+            (NP (JJ:[1055..1061] direct) (NN:[1062..1072] sequencing))
+            (PP (IN:[1073..1075] of)
+              (NP
+                (NP
+                  (NP
+                    (NML-1 (NN:[1076..1081] codon))
+                    (CD:[1082..1084] 12))
+                  (CC:[1085..1088] and)
+                  (NP
+                    (NML-1 (-NONE-:[1088..1088] *P*))
+                    (CD:[1089..1091] 13)))
+                (PP (IN:[1092..1094] of)
+                  (NP (DT:[1095..1098] the)
+                    (NML
+                      (NML (NN:[1099..1100] K) (HYPH:[1100..1101] -)
+                           (NN:[1102..1105] ras))
+                      (SYM:[1106..1107] -) (CD:[1107..1108] 2))
+                    (NN:[1109..1113] gene)))))
+            (PP-LOC (IN:[1114..1116] in)
+              (NP
+                (NP (JJ:[1118..1131] carcinomatous)
+                  (NML-3 (-NONE-:[1131..1131] *P*)))
+                (CC:[1132..1135] and)
+                (NP (JJ:[1136..1144] adjacent)
+                  (ADJP (AFX:[1145..1148] non) (HYPH:[1148..1149] -)
+                        (JJ:[1149..1159] neoplastic))
+                  (NML-3 (NN:[1160..1165] liver) (NN:[1166..1172] tissue)))))))
+        (PP-TMP (IN:[1173..1178] after)
+          (NP (NN:[1179..1194] microdissection)))))
+    (.:[1194..1195] .)))
+
+;sentence 10 Span:1197..1338
+;The status of p16 was evaluated by methylation-specific PCR (MSP), 
+;microsatellite analysis, DNA sequencing and immunohistochemical staining.
+;[1211..1214]:gene-rna:"p16"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1197..1200] The) (NN:[1201..1207] status))
+      (PP (IN:[1208..1210] of)
+        (NP (NN:[1211..1214] p16))))
+    (VP (VBD:[1215..1218] was)
+      (VP (VBN:[1219..1228] evaluated)
+        (NP-1 (-NONE-:[1228..1228] *))
+        (PP-MNR (IN:[1229..1231] by)
+          (NP
+            (NP
+              (NP
+                (ADJP (NN:[1232..1243] methylation) (HYPH:[1243..1244] -)
+                      (JJ:[1244..1252] specific))
+                (NN:[1253..1256] PCR))
+              (NP (-LRB-:[1257..1258] -LRB-) (NN:[1258..1261] MSP)
+                  (-RRB-:[1261..1262] -RRB-)))
+            (,:[1262..1263] ,)
+            (NP (NN:[1265..1279] microsatellite) (NN:[1280..1288] analysis))
+            (,:[1288..1289] ,)
+            (NP (NN:[1290..1293] DNA) (NN:[1294..1304] sequencing))
+            (CC:[1305..1308] and)
+            (NP (JJ:[1309..1328] immunohistochemical) (NN:[1329..1337] staining))))))
+    (.:[1337..1338] .)))
+
+;sentence 11 Span:1339..1456
+;All  patients had a documented chronic quantitated exposure to VC (average
+;8883 ppmy,  average duration: 245 months).
+(SENT
+  (S
+    (NP-SBJ (DT:[1339..1342] All) (NNS:[1344..1352] patients))
+    (VP (VBD:[1353..1356] had)
+      (NP
+        (NP (DT:[1357..1358] a) (JJ:[1359..1369] documented)
+            (JJ:[1370..1377] chronic) (JJ:[1378..1389] quantitated)
+            (NN:[1390..1398] exposure))
+        (PP (TO:[1399..1401] to)
+          (NP (NN:[1402..1404] VC))))
+      (PRN (-LRB-:[1405..1406] -LRB-)
+        (NP
+          (QP (NN:[1406..1413] average) (CD:[1414..1418] 8883))
+          (NN:[1419..1423] ppmy))
+        (,:[1423..1424] ,)
+        (S
+          (NP-SBJ (NN:[1426..1433] average) (NN:[1434..1442] duration))
+          (::[1442..1443] :)
+          (NP-PRD (CD:[1444..1447] 245) (NNS:[1448..1454] months)))
+        (-RRB-:[1454..1455] -RRB-)))
+    (.:[1455..1456] .)))
+
+;sentence 12 Span:1457..1590
+;K- ras -2 mutations were found in 6 of 18 (33%)  examined VC-associated HCCs
+;and in 3 cases of adjacent non-neoplastic liver  tissue.
+;[1457..1466]:gene-rna:"K- ras -2"
+;[1467..1476]:variation-event:"mutations"
+;[1515..1533]:malignancy:"VC-associated HCCs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML
+        (NML (NN:[1457..1458] K) (HYPH:[1458..1459] -) (NN:[1460..1463] ras))
+        (SYM:[1464..1465] -) (CD:[1465..1466] 2))
+      (NNS:[1467..1476] mutations))
+    (VP (VBD:[1477..1481] were)
+      (VP (VBN:[1482..1487] found)
+        (NP-1 (-NONE-:[1487..1487] *))
+        (PP-LOC
+          (PP (IN:[1488..1490] in)
+            (NP
+              (NP (CD:[1491..1492] 6))
+              (PP (IN:[1493..1495] of)
+                (NP (CD:[1496..1498] 18)
+                  (PRN (-LRB-:[1499..1500] -LRB-)
+                    (NP (CD:[1500..1502] 33) (NN:[1502..1503] %))
+                    (-RRB-:[1503..1504] -RRB-))
+                  (JJ:[1506..1514] examined)
+                  
+                  (ADJP (NN:[1515..1517] VC) (HYPH:[1517..1518] -)
+                        (VBN:[1518..1528] associated))
+                  (NNS:[1529..1533] HCCs)))))
+          (CC:[1534..1537] and)
+          (PP (IN:[1538..1540] in)
+            (NP
+              (NP (CD:[1541..1542] 3) (NNS:[1543..1548] cases))
+              (PP (IN:[1549..1551] of)
+                (NP (JJ:[1552..1560] adjacent)
+                  (ADJP (AFX:[1561..1564] non) (HYPH:[1564..1565] -)
+                        (JJ:[1565..1575] neoplastic))
+                  (NN:[1576..1581] liver) (NN:[1583..1589] tissue))))))))
+    (.:[1589..1590] .)))
+
+;sentence 13 Span:1591..1649
+;There were 3 G --> A point mutations in the tumour tissue.
+;[1604..1605]:variation-state-original:"G"
+;[1610..1611]:variation-state-altered:"A"
+;[1612..1627]:variation-type:"point mutations"
+;[1635..1648]:malignancy:"tumour tissue"
+(SENT
+  (S
+    (NP-SBJ (EX:[1591..1596] There))
+    (VP (VBD:[1597..1601] were)
+      (NP-PRD (CD:[1602..1603] 3)
+        (NML
+          (NML (NN:[1604..1605] G))
+          (PP (SYM:[1606..1609] -->)
+            (NP (NN:[1610..1611] A))))
+         (NN:[1612..1617] point) (NNS:[1618..1627] mutations))
+      (PP-LOC (IN:[1628..1630] in)
+        (NP (DT:[1631..1634] the)
+           (NN:[1635..1641] tumour) (NN:[1642..1648] tissue))))
+    (.:[1648..1649] .)))
+
+;sentence 14 Span:1650..1802
+;All 3  mutations found in non-neoplastic liver from VC-exposed patients were
+;also G -->  A point mutations (codon 12- and codon 13-aspartate mutations).
+;[1657..1666]:variation-event:"mutations"
+;[1702..1721]:malignancy:"VC-exposed patients"
+;[1732..1733]:variation-state-original:"G"
+;[1739..1740]:variation-state-altered:"A"
+;[1741..1756]:variation-type:"point mutations"
+;[1758..1766]:variation-location:"codon 12"
+;[1772..1780]:variation-location:"codon 13"
+;[1781..1790]:variation-state-generic:"aspartate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1650..1653] All) (CD:[1654..1655] 3) (NNS:[1657..1666] mutations))
+      (VP (VBN:[1667..1672] found)
+        (NP (-NONE-:[1672..1672] *))
+        (PP-LOC (IN:[1673..1675] in)
+          (NP
+            (NP
+              (ADJP (AFX:[1676..1679] non) (HYPH:[1679..1680] -)
+                    (JJ:[1680..1690] neoplastic))
+              (NN:[1691..1696] liver))
+            (PP (IN:[1697..1701] from)
+              (NP
+                (ADJP (NN:[1702..1704] VC) (HYPH:[1704..1705] -)
+                      (VBN:[1705..1712] exposed))
+                (NNS:[1713..1721] patients)))))))
+    (VP (VBD:[1722..1726] were)
+      (ADVP (RB:[1727..1731] also))
+      (NP-PRD
+        (NML
+          (NML (NN:[1732..1733] G))
+          (PP (SYM:[1734..1737] -->)
+            (NP (NN:[1739..1740] A))))
+         (NN:[1741..1746] point) (NNS:[1747..1756] mutations)
+        (PRN (-LRB-:[1757..1758] -LRB-)
+          (NP
+            (NP
+              (NML
+                (NML (NN:[1758..1763] codon) (CD:[1764..1766] 12))
+                (HYPH:[1766..1767] -)
+                (NML-1 (-NONE-:[1767..1767] *P*)))
+              (NML-2 (-NONE-:[1767..1767] *P*)))
+            (CC:[1768..1771] and)
+            (NP
+              (NML
+                (NML (NN:[1772..1777] codon) (CD:[1778..1780] 13))
+                (HYPH:[1780..1781] -)
+                (NML-1 (NN:[1781..1790] aspartate)))
+              (NML-2 (NNS:[1791..1800] mutations))))
+          (-RRB-:[1800..1801] -RRB-))))
+    (.:[1801..1802] .)))
+
+;sentence 15 Span:1803..1907
+;Hypermethylation  of the 5' CpG island of the p16 gene was found in 13 of 18
+;examined carcinomas  (72%).
+;[1849..1852]:gene-rna:"p16"
+;[1889..1899]:malignancy:"carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1803..1819] Hypermethylation))
+      (PP (IN:[1821..1823] of)
+        (NP
+          (NP (DT:[1824..1827] the)
+            (NML (CD:[1828..1829] 5) (SYM:[1829..1830] ') (NN:[1831..1834] CpG))
+            (NN:[1835..1841] island))
+          (PP (IN:[1842..1844] of)
+            (NP (DT:[1845..1848] the) (NN:[1849..1852] p16)
+                (NN:[1853..1857] gene))))))
+    (VP (VBD:[1858..1861] was)
+      (VP (VBN:[1862..1867] found)
+        (NP-1 (-NONE-:[1867..1867] *))
+        (PP-LOC (IN:[1868..1870] in)
+          (NP
+            (NP (CD:[1871..1873] 13))
+            (PP (IN:[1874..1876] of)
+              (NP (CD:[1877..1879] 18) (JJ:[1880..1888] examined)
+                  (NNS:[1889..1899] carcinomas)))
+            (PRN (-LRB-:[1901..1902] -LRB-)
+              (NP (CD:[1902..1904] 72) (NN:[1904..1905] %))
+              (-RRB-:[1905..1906] -RRB-))))))
+    (.:[1906..1907] .)))
+
+;sentence 16 Span:1908..1987
+;Of 6 cancers with K- ras -2 mutations, 5 specimens also showed methylated 
+;p16.
+;[1913..1920]:malignancy:"cancers"
+;[1926..1935]:gene-rna:"K- ras -2"
+;[1936..1945]:variation-event:"mutations"
+;[1983..1986]:gene-rna:"p16"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[1908..1910] Of)
+      (NP
+        (NP (CD:[1911..1912] 6) (NNS:[1913..1920] cancers))
+        (PP (IN:[1921..1925] with)
+          (NP
+            (NML
+              (NML (NN:[1926..1927] K) (HYPH:[1927..1928] -)
+                   (NN:[1929..1932] ras))
+              (SYM:[1933..1934] -) (CD:[1934..1935] 2))
+            (NNS:[1936..1945] mutations)))))
+    (,:[1945..1946] ,)
+    (NP-SBJ
+      (NP (CD:[1947..1948] 5) (NNS:[1949..1958] specimens))
+      (PP-1 (-NONE-:[1958..1958] *T*)))
+    (ADVP (RB:[1959..1963] also))
+    (VP (VBD:[1964..1970] showed)
+      (NP (JJ:[1971..1981] methylated) (NN:[1983..1986] p16)))
+    (.:[1986..1987] .)))
+
+;sentence 17 Span:1988..2132
+;Within the control group, K- ras -2 mutation were found in 3 of 20 (15%) 
+;examined HCC. p16 methylation occurred in 11 out of 20 (55%) patients.
+;[2014..2023]:gene-rna:"K- ras -2"
+;[2071..2074]:malignancy:"HCC"
+;[2076..2079]:gene-rna:"p16"
+(SENT
+  (S
+    (PP (IN:[1988..1994] Within)
+      (NP (DT:[1995..1998] the) (NN:[1999..2006] control)
+          (NN:[2007..2012] group)))
+    (,:[2012..2013] ,)
+    (NP-SBJ-1
+      (NML
+        (NML (NN:[2014..2015] K) (HYPH:[2015..2016] -) (NN:[2017..2020] ras))
+        (SYM:[2021..2022] -) (CD:[2022..2023] 2))
+      (NNS:[2024..2032] mutation))
+    (VP (VBD:[2033..2037] were)
+      (VP (VBN:[2038..2043] found)
+        (NP-1 (-NONE-:[2043..2043] *))
+        (PP-LOC (IN:[2044..2046] in)
+          (NP
+            (NP (CD:[2047..2048] 3))
+            (PP (IN:[2049..2051] of)
+              (NP (CD:[2052..2054] 20)
+                (PRN (-LRB-:[2055..2056] -LRB-)
+                  (NP (CD:[2056..2058] 15) (NN:[2058..2059] %))
+                  (-RRB-:[2059..2060] -RRB-))
+                (JJ:[2062..2070] examined) (NN:[2071..2074] HCC)))))))
+    (.:[2074..2075] .))
+  (S
+    (NP-SBJ (NN:[2076..2079] p16) (NN:[2080..2091] methylation))
+    (VP (VBD:[2092..2100] occurred)
+      (PP-LOC (IN:[2101..2103] in)
+        (NP
+          (NP (CD:[2104..2106] 11))
+          (PP (IN:[2107..2110] out)
+            (PP (IN:[2111..2113] of)
+              (NP (CD:[2114..2116] 20)
+                (PRN (-LRB-:[2117..2118] -LRB-)
+                  (NP (CD:[2118..2120] 55) (NN:[2120..2121] %))
+                  (-RRB-:[2121..2122] -RRB-))
+                (NNS:[2123..2131] patients)))))))
+    (.:[2131..2132] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1988..2132]::S:S:
+
+;sentence 18 Span:2133..2216
+;K- ras -2  mutations and p16 methylation are frequent events in VC associated
+;HCCs.
+;[2133..2142]:gene-rna:"K- ras -2"
+;[2158..2161]:gene-rna:"p16"
+;[2197..2215]:malignancy:"VC associated HCCs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (NML (NN:[2133..2134] K) (HYPH:[2134..2135] -) (NN:[2136..2139] ras))
+          (SYM:[2140..2141] -) (CD:[2141..2142] 2))
+        (NNS:[2144..2153] mutations))
+      (CC:[2154..2157] and)
+      (NP (NN:[2158..2161] p16) (NN:[2162..2173] methylation)))
+    (VP (VBP:[2174..2177] are)
+      (NP-PRD (JJ:[2178..2186] frequent) (NNS:[2187..2193] events))
+      (PP (IN:[2194..2196] in)
+        (NP
+          (ADJP (NN:[2197..2199] VC) (VBN:[2200..2210] associated))
+          (NNS:[2211..2215] HCCs))))
+    (.:[2215..2216] .)))
+
+;sentence 19 Span:2217..2332
+;We  observed a K- ras -2 mutation pattern characteristic of chloroethylene
+;oxide, a  carcinogenic metabolite of VC.
+;[2232..2241]:gene-rna:"K- ras -2"
+;[2242..2250]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ (PRP:[2217..2219] We))
+    (VP (VBD:[2221..2229] observed)
+      (NP
+        (NP (DT:[2230..2231] a)
+          (NML
+            (NML (NN:[2232..2233] K) (HYPH:[2233..2234] -) (NN:[2235..2238] ras))
+            (SYM:[2239..2240] -) (CD:[2240..2241] 2))
+          (NN:[2242..2250] mutation) (NN:[2251..2258] pattern))
+        (ADJP (JJ:[2259..2273] characteristic)
+          (PP (IN:[2274..2276] of)
+            (NP
+              (NP (NN:[2277..2291] chloroethylene) (NN:[2292..2297] oxide))
+              (,:[2297..2298] ,)
+              (NP
+                (NP (DT:[2299..2300] a) (JJ:[2302..2314] carcinogenic)
+                    (NN:[2315..2325] metabolite))
+                (PP (IN:[2326..2328] of)
+                  (NP (NN:[2329..2331] VC)))))))))
+    (.:[2331..2332] .)))
+
+;sentence 20 Span:2333..2452
+;Our results strongly suggest that K- ras -2  mutations play an important role
+;in the pathogenesis of VC-associated HCC.
+;[2367..2376]:gene-rna:"K- ras -2"
+;[2434..2451]:malignancy:"VC-associated HCC"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[2333..2336] Our) (NNS:[2337..2344] results))
+    (ADVP (RB:[2345..2353] strongly))
+    (VP (VBP:[2354..2361] suggest)
+      (SBAR (IN:[2362..2366] that)
+        (S
+          (NP-SBJ
+            (NML
+              (NML (NN:[2367..2368] K) (HYPH:[2368..2369] -)
+                   (NN:[2370..2373] ras))
+              (SYM:[2374..2375] -) (CD:[2375..2376] 2))
+            (NNS:[2378..2387] mutations))
+          (VP (VBP:[2388..2392] play)
+            (NP (DT:[2393..2395] an) (JJ:[2396..2405] important)
+                (NN:[2406..2410] role))
+            (PP (IN:[2411..2413] in)
+              (NP
+                (NP (DT:[2414..2417] the) (NN:[2418..2430] pathogenesis))
+                (PP (IN:[2431..2433] of)
+                  (NP
+                    (ADJP (NN:[2434..2436] VC) (HYPH:[2436..2437] -)
+                          (VBN:[2437..2447] associated))
+                    (NN:[2448..2451] HCC)))))))))
+    (.:[2451..2452] .)))
+
+;section 21 Span:2454..2494
+;Copyright 2001 Cancer Research Campaign.
+(SEC
+  (FRAG (NN:[2454..2463] Copyright) (CD:[2464..2468] 2001)
+        (NNP:[2469..2475] Cancer) (NNP:[2476..2484] Research)
+        (NNP:[2485..2493] Campaign) (.:[2493..2494] .)))
+
+;section 22 Span:2498..2543
+;PMID: 11286481 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2498..2502] PMID) (::[2502..2503] :) (CD:[2504..2512] 11286481)
+        (NN:[2513..2514] -LSB-) (NNP:[2514..2520] PubMed) (::[2521..2522] -)
+        (NN:[2523..2530] indexed) (IN:[2531..2534] for)
+        (NNP:[2535..2543] MEDLINE-RSB-)))

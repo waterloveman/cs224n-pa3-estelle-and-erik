@@ -1,0 +1,292 @@
+;PMID: 10329457
+;source_file_2939.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..55] = [t:0..55]
+;1)sentence:[e:61..183] = [t:61..183]
+;2)section:[e:187..231] = [t:187..231]
+;3)section:[e:235..389] = [t:235..389]
+;4)section:[e:391..414] = [t:391..414]
+;5)sentence:[e:418..546] = [t:418..546]
+;6)sentence:[e:547..636] = [t:547..636]
+;7)sentence:[e:637..756] = [t:637..756]
+;8)sentence:[e:757..941] = [t:757..941]
+;9)sentence:[e:942..1217] = [t:942..1217]
+;10)sentence:[e:1218..1278] = [t:1218..1278]
+;11)sentence:[e:1280..1412] = [t:1280..1412]
+;12)section:[e:1413..1444] = [t:1413..1444]
+;13)section:[e:1448..1493] = [t:1448..1493]
+
+;section 0 Span:0..55
+;Biochem Biophys Res Commun.  1999 May 19;258(3):745-51.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (,:[26..27] .) (CD:[29..33] 1999)
+        (NNP:[34..37] May) (CD:[38..44] 19;258) (-LRB-:[44..45] -LRB-)
+        (CD:[45..46] 3) (-RRB-:[46..47] -RRB-) (CD:[47..54] :745-51)
+        (.:[54..55] .)))
+
+;sentence 1 Span:61..183
+;BCL-2 is upregulated in human SH-SY5Y neuroblastoma cells differentiated by 
+;overexpression of fibroblast growth factor 1.
+;[61..66]:gene-rna:"BCL-2"
+;[99..112]:malignancy-type:"neuroblastoma"
+;[156..182]:gene-protein:"fibroblast growth factor 1"
+(SENT
+  (S-HLN
+    (NP-SBJ-1 (NN:[61..66] BCL-2))
+    (VP (VBZ:[67..69] is)
+      (VP (VBN:[70..81] upregulated)
+        (NP-1 (-NONE-:[81..81] *))
+        (PP-CLR (IN:[82..84] in)
+          (NP
+            (NP (JJ:[85..90] human) (NN:[91..98] SH-SY5Y)
+                (NN:[99..112] neuroblastoma) (NNS:[113..118] cells))
+            (VP (VBN:[119..133] differentiated)
+              (NP (-NONE-:[133..133] *))
+              (PP (IN:[134..136] by)
+                (NP-LGS
+                  (NP (NN:[138..152] overexpression))
+                  (PP (IN:[153..155] of)
+                    (NP (NN:[156..166] fibroblast)
+                      (NML (NN:[167..173] growth) (NN:[174..180] factor))
+                      (CD:[181..182] 1))))))))))
+    (.:[182..183] .)))
+
+;section 2 Span:187..231
+;Raguenez G, Desire L, Lantrua V, Courtois Y.
+(SEC
+  (FRAG (NNP:[187..195] Raguenez) (NNP:[196..197] G) (,:[197..198] ,)
+        (NNP:[199..205] Desire) (NNP:[206..208] L,) (NNP:[209..216] Lantrua)
+        (NNP:[217..218] V) (,:[218..219] ,) (NNP:[220..228] Courtois)
+        (NNP:[229..230] Y) (.:[230..231] .)))
+
+;section 3 Span:235..389
+;Developpement, Vieillissement et Pathologie de la Retine, INSERM U. 450, 
+;Affiliee CNRS, Association Claude Bernard - 29 rue Wilhem, Paris, 75016,
+;France.
+(SEC
+  (FRAG (NNP:[235..248] Developpement) (,:[248..249] ,)
+        (NNP:[250..264] Vieillissement) (NNP:[265..267] et)
+        (NNP:[268..278] Pathologie) (NNP:[279..281] de) (NNP:[282..284] la)
+        (NNP:[285..291] Retine) (,:[291..292] ,) (NNP:[293..299] INSERM)
+        (NNP:[300..301] U) (.:[301..302] .) (CD:[303..306] 450) (,:[306..307] ,)
+        (NNP:[309..317] Affiliee) (NNP:[318..322] CNRS) (,:[322..323] ,)
+        (NNP:[324..335] Association) (NNP:[336..342] Claude)
+        (NNP:[343..350] Bernard) (HYPH:[351..352] -) (CD:[353..355] 29)
+        (NNS:[356..359] rue) (NNP:[360..366] Wilhem) (,:[366..367] ,)
+        (NNP:[368..373] Paris) (,:[373..374] ,) (CD:[375..380] 75016)
+        (,:[380..381] ,) (NNP:[382..388] France) (.:[388..389] .)))
+
+;section 4 Span:391..414
+;raguenez@kinfobiogen.fr
+(SEC
+  (FRAG (NN:[391..411] raguenez@kinfobiogen) (NN:[411..414] .fr)))
+
+;sentence 5 Span:418..546
+;Fibroblast growth factor 1 (FGF1) is a multipotent factor in the development
+;and  differentiation of the central nervous system.
+;[418..444]:gene-protein:"Fibroblast growth factor 1"
+;[446..450]:gene-protein:"FGF1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[418..428] Fibroblast)
+        (NML (NN:[429..435] growth) (NN:[436..442] factor))
+        (CD:[443..444] 1))
+      (NP (-LRB-:[445..446] -LRB-) (NN:[446..450] FGF1) (-RRB-:[450..451] -RRB-)))
+    (VP (VBZ:[452..454] is)
+      (NP-PRD (DT:[455..456] a) (JJ:[457..468] multipotent)
+              (NN:[469..475] factor))
+      (PP (IN:[476..478] in)
+        (NP
+          (NP (DT:[479..482] the) (NN:[483..494] development)
+              (CC:[495..498] and) (NN:[500..515] differentiation))
+          (PP (IN:[516..518] of)
+            (NP (DT:[519..522] the) (JJ:[523..530] central)
+                (JJ:[531..538] nervous) (NN:[539..545] system))))))
+    (.:[545..546] .)))
+
+;sentence 6 Span:547..636
+;Recent studies in PC12 cells  attribute these effects to high endogenous FGF1
+;expression.
+;[620..624]:gene-protein:"FGF1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[547..553] Recent) (NNS:[554..561] studies))
+      (PP (IN:[562..564] in)
+        (NP (NN:[565..569] PC12) (NNS:[570..575] cells))))
+    (VP (VBP:[577..586] attribute)
+      (NP (DT:[587..592] these) (NNS:[593..600] effects))
+      (PP (TO:[601..603] to)
+        (NP (JJ:[604..608] high) (JJ:[609..619] endogenous) (NN:[620..624] FGF1)
+            (NN:[625..635] expression))))
+    (.:[635..636] .)))
+
+;sentence 7 Span:637..756
+;To examine the  differentiation mechanisms induced by FGF1, we performed
+;studies in SH-SY5Y  human neuroblastoma cells.
+;[691..695]:gene-protein:"FGF1"
+;[736..749]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[637..637] *))
+      (VP (TO:[637..639] To)
+        (VP (VB:[640..647] examine)
+          (NP
+            (NP (DT:[648..651] the) (NN:[653..668] differentiation)
+                (NNS:[669..679] mechanisms))
+            (VP (VBN:[680..687] induced)
+              (NP (-NONE-:[687..687] *))
+              (PP (IN:[688..690] by)
+                (NP-LGS (NN:[691..695] FGF1))))))))
+    (,:[695..696] ,)
+    (NP-SBJ (PRP:[697..699] we))
+    (VP (VBD:[700..709] performed)
+      (NP (NNS:[710..717] studies))
+      (PP-LOC (IN:[718..720] in)
+        (NP (NN:[721..728] SH-SY5Y) (JJ:[730..735] human)
+            (NN:[736..749] neuroblastoma) (NNS:[750..755] cells))))
+    (.:[755..756] .)))
+
+;sentence 8 Span:757..941
+;We monitored the impact of FGF1 overexpression in  SH-SY5Y either after
+;addition of exogenous FGF1 and heparin or after stable  transfection with the
+;FGF1 eukaryotic expression vector.
+;[784..788]:gene-protein:"FGF1"
+;[851..855]:gene-protein:"FGF1"
+;[907..911]:gene-generic:"FGF1"
+(SENT
+  (S
+    (NP-SBJ (PRP:[757..759] We))
+    (VP (VBD:[760..769] monitored)
+      (NP
+        (NP (DT:[770..773] the) (NN:[774..780] impact))
+        (PP (IN:[781..783] of)
+          (NP (NN:[784..788] FGF1) (NN:[789..803] overexpression))))
+      (PP (IN:[804..806] in)
+        (NP (NN:[808..815] SH-SY5Y)))
+      (PP-TMP (CC:[816..822] either)
+        (PP (IN:[823..828] after)
+          (NP
+            (NP (NN:[829..837] addition))
+            (PP (IN:[838..840] of)
+              (NP
+                (NP (JJ:[841..850] exogenous) (NN:[851..855] FGF1))
+                (CC:[856..859] and)
+                (NP (NN:[860..867] heparin))))))
+        (CC:[868..870] or)
+        (PP (IN:[871..876] after)
+          (NP
+            (NP (JJ:[877..883] stable) (NN:[885..897] transfection))
+            (PP (IN:[898..902] with)
+              (NP (DT:[903..906] the) (NN:[907..911] FGF1)
+                  (JJ:[912..922] eukaryotic) (NN:[923..933] expression)
+                  (NN:[934..940] vector)))))))
+    (.:[940..941] .)))
+
+;sentence 9 Span:942..1217
+;Under both conditions,  the FGF1 endogenous rise caused SH-SY5Y cell
+;differentiation with morphological  changes (appearance of neuritic
+;extensions), increased GAP-43 gene expression,  decreased of N-myc gene
+;expression, and prolonged long-term survival in  serum-free media.
+;[970..974]:gene-protein:"FGF1"
+;[1102..1108]:gene-rna:"GAP-43"
+;[1140..1145]:gene-rna:"N-myc"
+(SENT
+  (S
+    (PP (IN:[942..947] Under)
+      (NP (DT:[948..952] both) (NNS:[953..963] conditions)))
+    (,:[963..964] ,)
+    (NP-SBJ (DT:[966..969] the) (NN:[970..974] FGF1) (JJ:[975..985] endogenous)
+            (NN:[986..990] rise))
+    (VP
+      (VP (VBD:[991..997] caused)
+        (NP (NN:[998..1005] SH-SY5Y) (NN:[1006..1010] cell)
+            (NN:[1011..1026] differentiation))
+        (PP (IN:[1027..1031] with)
+          (NP (JJ:[1032..1045] morphological) (NNS:[1047..1054] changes)
+            (PRN (-LRB-:[1055..1056] -LRB-)
+              (NP
+                (NP (NN:[1056..1066] appearance))
+                (PP (IN:[1067..1069] of)
+                  (NP (JJ:[1070..1078] neuritic) (NNS:[1079..1089] extensions))))
+              (-RRB-:[1089..1090] -RRB-)))))
+      (,:[1090..1091] ,)
+      (VP (VBD:[1092..1101] increased)
+        (NP (NN:[1102..1108] GAP-43) (NN:[1109..1113] gene)
+            (NN:[1114..1124] expression)))
+      (,:[1124..1125] ,)
+      (VP (VBD:[1127..1136] decreased)
+        (PP (IN:[1137..1139] of)
+          (NP (NN:[1140..1145] N-myc) (NN:[1146..1150] gene)
+              (NN:[1151..1161] expression))))
+      (,:[1161..1162] ,) (CC:[1163..1166] and)
+      (VP (VBD:[1167..1176] prolonged)
+        (NP
+          (NML (JJ:[1177..1181] long) (HYPH:[1181..1182] -)
+               (NN:[1182..1186] term))
+          (NN:[1187..1195] survival))
+        (PP-LOC (IN:[1196..1198] in)
+          (NP
+            (ADJP (NN:[1200..1205] serum) (HYPH:[1205..1206] -)
+                  (JJ:[1206..1210] free))
+            (NNS:[1211..1216] media)))))
+    (.:[1216..1217] .)))
+
+;sentence 10 Span:1218..1278
+;These modifications were correlated with Bcl-2 upregulation.
+;[1259..1264]:gene-rna:"Bcl-2"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1218..1223] These) (NNS:[1224..1237] modifications))
+    (VP (VBD:[1238..1242] were)
+      (VP (VBN:[1243..1253] correlated)
+        (NP-1 (-NONE-:[1253..1253] *))
+        (PP-CLR (IN:[1254..1258] with)
+          (NP (NN:[1259..1264] Bcl-2) (NN:[1265..1277] upregulation)))))
+    (.:[1277..1278] .)))
+
+;sentence 11 Span:1280..1412
+;These results suggest that there is a link between the endogenous FGF1
+;signaling  pathway and Bcl-2 in neuronal survival modulation.
+;[1346..1350]:gene-generic:"FGF1"
+;[1374..1379]:gene-rna:"Bcl-2"
+(SENT
+  (S
+    (NP-SBJ (DT:[1280..1285] These) (NNS:[1286..1293] results))
+    (VP (VBP:[1294..1301] suggest)
+      (SBAR (IN:[1302..1306] that)
+        (S
+          (NP-SBJ (EX:[1307..1312] there))
+          (VP (VBZ:[1313..1315] is)
+            (NP-PRD
+              (NP (DT:[1316..1317] a) (NN:[1318..1322] link))
+              (PP (IN:[1323..1330] between)
+                (NP
+                  (NP (DT:[1331..1334] the) (JJ:[1335..1345] endogenous)
+                      (NN:[1346..1350] FGF1) (NN:[1351..1360] signaling)
+                      (NN:[1362..1369] pathway))
+                  (CC:[1370..1373] and)
+                  (NP (NN:[1374..1379] Bcl-2)))))
+            (PP (IN:[1380..1382] in)
+              (NP (JJ:[1383..1391] neuronal) (NN:[1392..1400] survival)
+                  (NN:[1401..1411] modulation)))))))
+    (.:[1411..1412] .)))
+
+;section 12 Span:1413..1444
+;Copyright 1999 Academic  Press.
+(SEC
+  (FRAG (NN:[1413..1422] Copyright) (CD:[1423..1427] 1999)
+        (NNP:[1428..1436] Academic) (NNP:[1438..1443] Press) (.:[1443..1444] .)))
+
+;section 13 Span:1448..1493
+;PMID: 10329457 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1448..1452] PMID) (::[1452..1453] :) (CD:[1454..1462] 10329457)
+        (NN:[1463..1464] -LSB-) (NNP:[1464..1470] PubMed) (::[1471..1472] -)
+        (NN:[1473..1480] indexed) (IN:[1481..1484] for)
+        (NNP:[1485..1493] MEDLINE-RSB-)))

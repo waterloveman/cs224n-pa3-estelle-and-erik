@@ -1,0 +1,506 @@
+;PMID: 6090441
+;source_file_836.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..40]
+;1)sentence:[e:47..172] = [t:47..172]
+;2)section:[e:176..196] = [t:176..195]
+;3)sentence:[e:200..414] = [t:200..414]
+;4)sentence:[e:415..512] = [t:415..512]
+;5)sentence:[e:514..611] = [t:514..611]
+;6)sentence:[e:612..811] = [t:612..811]
+;7)sentence:[e:812..1069] = [t:812..1069]
+;8)sentence:[e:1070..1258] = [t:1070..1258]
+;9)sentence:[e:1259..1379] = [t:1259..1379]
+;10)sentence:[e:1380..1528] = [t:1380..1528]
+;11)sentence:[e:1529..1622] = [t:1529..1622]
+;12)sentence:[e:1623..1983] = [t:1623..1983]
+;13)section:[e:1987..2031] = [t:1987..2030]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:0..41][t:0..40]
+;ERROR_Section end mismatch[e:176..196][t:176..195]
+;ERROR_Section end mismatch[e:1987..2031][t:1987..2030]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[40..41] .
+;ERROR_Token in entity file but not tree[195..196] .
+;ERROR_Token in entity file but not tree[2030..2031] ]
+
+;section 0 Span:0..40
+;J Biol Chem. 1984 Oct 10;259(19):11654-7
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        (CD:[13..17] 1984) (NNP:[18..21] Oct) (CD:[22..24] 10) (::[24..25] ;)
+        (CD:[25..28] 259) (-LRB-:[28..29] -LRB-) (CD:[29..31] 19)
+        (-RRB-:[31..32] -RRB-) (::[32..33] :) (CD:[33..38] 11654) (::[38..39] -)
+        (CD:[39..40] 7)))
+
+(ORPH .)
+
+;sentence 1 Span:47..172
+;Luteinizing hormone and cyclic AMP-mediated induction of microsomal
+;cytochrome  P-450 enzymes in cultured mouse Leydig cells.
+;[47..66]:substance:"Luteinizing hormone"
+;[71..81]:substance:"cyclic AMP"
+;[115..140]:cyp450:"cytochrome  P-450 enzymes"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (ADJP
+           (VBG:[47..58] Luteinizing) (NN:[59..66] hormone)
+          (ADJP-1 (-NONE-:[66..66] *P*)))
+        (NML-2 (-NONE-:[66..66] *P*)))
+      (CC:[67..70] and)
+      (NP
+        (ADJP
+           (JJ:[71..77] cyclic) (NN:[78..81] AMP)
+          (ADJP-1 (HYPH:[81..82] -) (VBN:[82..90] mediated)))
+        (NML-2 (NN:[91..100] induction))))
+    (PP (IN:[101..103] of)
+      (NP (JJ:[104..114] microsomal)
+        
+        (NML (NN:[115..125] cytochrome) (NN:[127..132] P-450))
+        (NNS:[133..140] enzymes)))
+    (PP-LOC (IN:[141..143] in)
+      (NP (VBN:[144..152] cultured) (NN:[153..158] mouse) (NN:[159..165] Leydig)
+          (NNS:[166..171] cells)))
+    (.:[171..172] .)))
+;ERROR_Orphan Text from Tree File[40..47] .
+
+;section 2 Span:176..195
+;Malaska T, Payne AH
+(SEC
+  (FRAG (NNP:[176..183] Malaska) (NNP:[184..185] T) (,:[185..186] ,)
+        (NNP:[187..192] Payne) (NNP:[193..195] AH)))
+
+(ORPH .)
+
+;sentence 3 Span:200..414
+;Treatment of mouse Leydig cell cultures with luteinizing hormone (LH) or with
+; 8-bromo-cAMP (8-Br-cAMP) for 5 days elicited a dose- and time-dependent
+;increase  in the microsomal cytochrome P-450 enzyme activities.
+;[245..264]:substance:"luteinizing hormone"
+;[266..268]:substance:"LH"
+;[279..291]:substance:"8-bromo-cAMP"
+;[293..302]:substance:"8-Br-cAMP"
+;[308..309]:quantitative-value:"5"
+;[310..314]:quantitative-units:"days"
+;[379..402]:cyp450:"cytochrome P-450 enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[200..209] Treatment))
+      (PP (IN:[210..212] of)
+        (NP (NN:[213..218] mouse) (NN:[219..225] Leydig) (NN:[226..230] cell)
+            (NNS:[231..239] cultures)))
+      (PP
+        (PP (IN:[240..244] with)
+          (NP
+            (NP (VBG:[245..256] luteinizing) (NN:[257..264] hormone))
+            (NP (-LRB-:[265..266] -LRB-) (NN:[266..268] LH)
+                (-RRB-:[268..269] -RRB-))))
+        (CC:[270..272] or)
+        (PP (IN:[273..277] with)
+          (NP
+            (NP (NN:[279..291] 8-bromo-cAMP))
+            (NP (-LRB-:[292..293] -LRB-) (NN:[293..302] 8-Br-cAMP)
+                (-RRB-:[302..303] -RRB-)))))
+      (PP-TMP (IN:[304..307] for)
+        (NP (CD:[308..309] 5) (NNS:[310..314] days))))
+    (VP (VBD:[315..323] elicited)
+      (NP
+        (NP (DT:[324..325] a)
+          (NML
+            (NML
+              (NML (NN:[326..330] dose) (HYPH:[330..331] -)
+                (ADJP-1 (-NONE-:[331..331] *P*)))
+              (NML-2 (-NONE-:[331..331] *P*)))
+            (CC:[332..335] and)
+            (NML
+              (NML (NN:[336..340] time) (HYPH:[340..341] -)
+                (ADJP-1 (JJ:[341..350] dependent)))
+              (NML-2 (NN:[351..359] increase)))))
+        (PP (IN:[361..363] in)
+          (NP (DT:[364..367] the) (JJ:[368..378] microsomal)
+            
+            (NML (NN:[379..389] cytochrome) (NN:[390..395] P-450))
+            (NN:[396..402] enzyme)
+            (NNS:[403..413] activities)))))
+    (.:[413..414] .)))
+;ERROR_Orphan Text from Tree File[195..200] .
+
+;sentence 4 Span:415..512
+;17 alpha-Hydroxylase and  C17-20 lyase as well as a parallel increase in
+;testosterone production.
+;[415..435]:cyp450:"17 alpha-Hydroxylase"
+;[441..453]:cyp450:"C17-20 lyase"
+;[488..500]:substance:"testosterone"
+(SENT
+  (NP
+    (NP
+      (NP (CD:[415..417] 17) (NN:[418..435] alpha-Hydroxylase))
+      (CC:[436..439] and)
+      (NP (NN:[441..447] C17-20) (NN:[448..453] lyase)))
+    (CONJP (RB:[454..456] as) (RB:[457..461] well) (IN:[462..464] as))
+    (NP
+      (NP (DT:[465..466] a) (JJ:[467..475] parallel) (NN:[476..484] increase))
+      (PP (IN:[485..487] in)
+        (NP (NN:[488..500] testosterone) (NN:[501..511] production))))
+    (.:[511..512] .)))
+
+;sentence 5 Span:514..611
+;Reduction of the oxygen tension from 19 to 1% resulted in a greater increase
+;in  enzyme activity.
+;[531..537]:substance:"oxygen"
+;[551..559]:quantitative-value:"19 to 1%"
+;[595..601]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[514..523] Reduction))
+      (PP (IN:[524..526] of)
+        (NP (DT:[527..530] the) (NN:[531..537] oxygen) (NN:[538..545] tension)))
+      (PP (IN:[546..550] from)
+        (NP (CD:[551..553] 19)
+          (NML-1 (-NONE-:[553..553] *RNR*))))
+      (PP (TO:[554..556] to)
+        (NP (CD:[557..558] 1)
+          (NML-1 (-NONE-:[558..558] *RNR*))))
+      (NML-1 (NN:[558..559] %)))
+    (VP (VBD:[560..568] resulted)
+      (PP-CLR (IN:[569..571] in)
+        (NP
+          (NP (DT:[572..573] a) (JJR:[574..581] greater)
+              (NN:[582..590] increase))
+          (PP (IN:[591..593] in)
+            (NP (NN:[595..601] enzyme) (NN:[602..610] activity))))))
+    (.:[610..611] .)))
+
+;sentence 6 Span:612..811
+;Induction of microsomal cytochrome P-450 activities was 35 to  50% greater
+;with 8-Br-cAMP than with LH and the increase in C17-20 lyase  activity was
+;4-fold greater than that of 17 alpha-hydroxylase.
+;[636..652]:cyp450:"cytochrome P-450"
+;[668..678]:quantitative-value:"35 to  50%"
+;[692..701]:substance:"8-Br-cAMP"
+;[712..714]:substance:"LH"
+;[735..747]:cyp450:"C17-20 lyase"
+;[762..768]:quantitative-value:"4-fold"
+;[790..810]:cyp450:"17 alpha-hydroxylase"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[612..621] Induction))
+        (PP (IN:[622..624] of)
+          (NP (JJ:[625..635] microsomal)
+            (NML (NN:[636..646] cytochrome) (NN:[647..652] P-450))
+            (NNS:[653..663] activities))))
+      (VP (VBD:[664..667] was)
+        (ADJP-PRD
+          (ADJP
+            (NP-ADV
+              (QP (CD:[668..670] 35) (TO:[671..673] to) (CD:[675..677] 50))
+              (NN:[677..678] %))
+            (JJR:[679..686] greater))
+          (PP (IN:[687..691] with)
+            (NP (NN:[692..701] 8-Br-cAMP)))
+          (PP (IN:[702..706] than)
+            (PP (IN:[707..711] with)
+              (NP (NN:[712..714] LH)))))))
+    (CC:[715..718] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[719..722] the) (NN:[723..731] increase))
+        (PP (IN:[732..734] in)
+          (NP
+            (NML (NN:[735..741] C17-20) (NN:[742..747] lyase))
+            (NN:[749..757] activity))))
+      (VP (VBD:[758..761] was)
+        (ADJP-PRD
+          (ADJP
+            (ADVP (CD:[762..763] 4) (HYPH:[763..764] -) (RB:[764..768] fold))
+            (JJR:[769..776] greater))
+          (PP (IN:[777..781] than)
+            (NP
+              (NP (DT:[782..786] that))
+              (PP (IN:[787..789] of)
+                (NP (CD:[790..792] 17) (NN:[793..810] alpha-hydroxylase))))))))
+    (.:[810..811] .)))
+
+;sentence 7 Span:812..1069
+;Maximal induction  of P-450 enzyme activities was observed between 3 and 5
+;days of continual  treatment with 8-Br-cAMP or LH. Removal of 8-Br-cAMP from
+;the culture medium  inhibited any further increase in C17-20 lyase activity
+;and testosterone  production.
+;[834..846]:cyp450:"P-450 enzyme"
+;[871..886]:quantitative-value:"between 3 and 5"
+;[887..891]:quantitative-units:"days"
+;[921..930]:substance:"8-Br-cAMP"
+;[934..936]:substance:"LH"
+;[949..958]:substance:"8-Br-cAMP"
+;[976..982]:substance:"medium"
+;[1018..1030]:cyp450:"C17-20 lyase"
+;[1044..1056]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[812..819] Maximal) (NN:[820..829] induction))
+      (PP (IN:[831..833] of)
+        (NP
+          (NML (NN:[834..839] P-450) (NN:[840..846] enzyme))
+          (NNS:[847..857] activities))))
+    (VP (VBD:[858..861] was)
+      (VP (VBN:[862..870] observed)
+        (NP-2 (-NONE-:[870..870] *))
+        (PP (IN:[871..878] between)
+          (NP
+            (NP
+              (NP (CD:[879..880] 3)
+                (NML-1 (-NONE-:[880..880] *P*)))
+              (CC:[881..884] and)
+              (NP (CD:[885..886] 5)
+                (NML-1 (NNS:[887..891] days))))
+            (PP (IN:[892..894] of)
+              (NP
+                (NP (JJ:[895..904] continual) (NN:[906..915] treatment))
+                (PP (IN:[916..920] with)
+                  (NP (NN:[921..930] 8-Br-cAMP) (CC:[931..933] or)
+                      (NN:[934..936] LH)))))))))
+    (.:[936..937] .))
+  (S
+    (NP-SBJ
+      (NP (NN:[938..945] Removal))
+      (PP (IN:[946..948] of)
+        (NP (NN:[949..958] 8-Br-cAMP)))
+      (PP (IN:[959..963] from)
+        (NP (DT:[964..967] the) (NN:[968..975] culture) (NN:[976..982] medium))))
+    (VP (VBD:[984..993] inhibited)
+      (NP
+        (NP (DT:[994..997] any) (JJ:[998..1005] further)
+            (NN:[1006..1014] increase))
+        (PP (IN:[1015..1017] in)
+          (NP
+            (NP
+              (NML (NN:[1018..1024] C17-20) (NN:[1025..1030] lyase))
+              (NN:[1031..1039] activity))
+            (CC:[1040..1043] and)
+            (NP (NN:[1044..1056] testosterone) (NN:[1058..1068] production))))))
+    (.:[1068..1069] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[812..1069]::S:S:
+
+;sentence 8 Span:1070..1258
+;The role of protein synthesis in the induction process was  investigated by
+;incubating Leydig cell cultures with and without cycloheximide  between 24
+;and 48 h of treatment with 8-Br-cAMP.
+;[1082..1089]:substance:"protein"
+;[1195..1208]:substance:"cycloheximide"
+;[1210..1227]:quantitative-value:"between 24 and 48"
+;[1228..1229]:quantitative-units:"h"
+;[1248..1257]:substance:"8-Br-cAMP"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1070..1073] The) (NN:[1074..1078] role))
+      (PP (IN:[1079..1081] of)
+        (NP (NN:[1082..1089] protein) (NN:[1090..1099] synthesis)))
+      (PP (IN:[1100..1102] in)
+        (NP (DT:[1103..1106] the) (NN:[1107..1116] induction)
+            (NN:[1117..1124] process))))
+    (VP (VBD:[1125..1128] was)
+      (VP (VBN:[1130..1142] investigated)
+        (NP-2 (-NONE-:[1142..1142] *))
+        (PP-MNR (IN:[1143..1145] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1145..1145] *))
+            (VP (VBG:[1146..1156] incubating)
+              (NP (NN:[1157..1163] Leydig) (NN:[1164..1168] cell)
+                  (NNS:[1169..1177] cultures))
+              (PP (IN:[1178..1182] with) (CC:[1183..1186] and)
+                  (IN:[1187..1194] without)
+                (NP (NN:[1195..1208] cycloheximide)))
+              (PP-TMP (IN:[1210..1217] between)
+                (NP
+                  (NP
+                    (NP (CD:[1218..1220] 24)
+                      (NML-1 (-NONE-:[1220..1220] *P*)))
+                    (CC:[1221..1224] and)
+                    (NP (CD:[1225..1227] 48)
+                      (NML-1 (NN:[1228..1229] h))))
+                  (PP (IN:[1230..1232] of)
+                    (NP
+                      (NP (NN:[1233..1242] treatment))
+                      (PP (IN:[1243..1247] with)
+                        (NP (NN:[1248..1257] 8-Br-cAMP))))))))))))
+    (.:[1257..1258] .)))
+
+;sentence 9 Span:1259..1379
+;Cycloheximide completely  inhibited the induction of C17-20 lyase activity
+;and the increase in  testosterone production.
+;[1259..1272]:substance:"Cycloheximide"
+;[1312..1324]:cyp450:"C17-20 lyase"
+;[1355..1367]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ (NN:[1259..1272] Cycloheximide))
+    (VP
+      (ADVP (RB:[1273..1283] completely))
+      (VBD:[1285..1294] inhibited)
+      (NP
+        (NP
+          (NP (DT:[1295..1298] the) (NN:[1299..1308] induction))
+          (PP (IN:[1309..1311] of)
+            (NP
+              (NML (NN:[1312..1318] C17-20) (NN:[1319..1324] lyase))
+              (NN:[1325..1333] activity))))
+        (CC:[1334..1337] and)
+        (NP
+          (NP (DT:[1338..1341] the) (NN:[1342..1350] increase))
+          (PP (IN:[1351..1353] in)
+            (NP (NN:[1355..1367] testosterone) (NN:[1368..1378] production))))))
+    (.:[1378..1379] .)))
+
+;sentence 10 Span:1380..1528
+;After removal of the inhibitor, cultures responded in a  manner that
+;paralleled induction in cultures that had not been treated with 
+;cycloheximide.
+;[1401..1410]:substance:"inhibitor"
+;[1514..1527]:substance:"cycloheximide"
+(SENT
+  (S
+    (PP-TMP (IN:[1380..1385] After)
+      (NP
+        (NP (NN:[1386..1393] removal))
+        (PP (IN:[1394..1396] of)
+          (NP (DT:[1397..1400] the) (NN:[1401..1410] inhibitor)))))
+    (,:[1410..1411] ,)
+    (NP-SBJ (NNS:[1412..1420] cultures))
+    (VP (VBD:[1421..1430] responded)
+      (PP (IN:[1431..1433] in)
+        (NP
+          (NP (DT:[1434..1435] a) (NN:[1437..1443] manner))
+          (SBAR
+            (WHNP-2 (IN:[1444..1448] that))
+            (S
+              (NP-SBJ-2 (-NONE-:[1448..1448] *T*))
+              (VP (VBD:[1449..1459] paralleled)
+                (NP
+                  (NP (NN:[1460..1469] induction))
+                  (PP-LOC (IN:[1470..1472] in)
+                    (NP
+                      (NP (NNS:[1473..1481] cultures))
+                      (SBAR
+                        (WHNP-1 (WDT:[1482..1486] that))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[1486..1486] *T*))
+                          (VP (VBD:[1487..1490] had) (RB:[1491..1494] not)
+                            (VP (VBN:[1495..1499] been)
+                              (VP (VBN:[1500..1507] treated)
+                                (NP-1 (-NONE-:[1507..1507] *))
+                                (PP (IN:[1508..1512] with)
+                                  (NP (NN:[1514..1527] cycloheximide)))))))))))))))))
+    (.:[1527..1528] .)))
+
+;sentence 11 Span:1529..1622
+;In both cases, a 24-h lag period occurred prior to an increase in  cytochrome
+;P-450 activity.
+;[1546..1548]:quantitative-value:"24"
+;[1549..1550]:quantitative-units:"h"
+;[1596..1612]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (PP (IN:[1529..1531] In)
+      (NP (DT:[1532..1536] both) (NNS:[1537..1542] cases)))
+    (,:[1542..1543] ,)
+    (NP-SBJ (DT:[1544..1545] a)
+      (NML (CD:[1546..1548] 24) (HYPH:[1548..1549] -) (NN:[1549..1550] h))
+      (NN:[1551..1554] lag) (NN:[1555..1561] period))
+    (VP (VBD:[1562..1570] occurred)
+      (PP-TMP (RB:[1571..1576] prior)
+        (PP (TO:[1577..1579] to)
+          (NP
+            (NP (DT:[1580..1582] an) (NN:[1583..1591] increase))
+            (PP (IN:[1592..1594] in)
+              (NP
+                (NML (NN:[1596..1606] cytochrome) (NN:[1607..1612] P-450))
+                (NN:[1613..1621] activity)))))))
+    (.:[1621..1622] .)))
+
+;sentence 12 Span:1623..1983
+;These data suggest that the increase in microsomal  cytochrome P-450
+;activities represents an increase in enzyme synthesis and,  furthermore, that
+;reduction of oxygen tension decreases degradation of newly  synthesized
+;Leydig cell microsomal cytochrome P-450 activities as recently  reported
+;(Quinn, P.G., and Payne, A.H. (1984) J. Biol. Chem. 259, 4130-4135).
+;[1675..1691]:cyp450:"cytochrome P-450"
+;[1729..1735]:cyp450:"enzyme"
+;[1783..1789]:substance:"oxygen"
+;[1865..1881]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[1623..1628] These) (NNS:[1629..1633] data))
+    (VP (VBP:[1634..1641] suggest)
+      (SBAR
+        (SBAR (IN:[1642..1646] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[1647..1650] the) (NN:[1651..1659] increase))
+              (PP (IN:[1660..1662] in)
+                (NP (JJ:[1663..1673] microsomal)
+                  (NML (NN:[1675..1685] cytochrome) (NN:[1686..1691] P-450))
+                  (NNS:[1692..1702] activities))))
+            (VP (VBZ:[1703..1713] represents)
+              (NP
+                (NP (DT:[1714..1716] an) (NN:[1717..1725] increase))
+                (PP (IN:[1726..1728] in)
+                  (NP (NN:[1729..1735] enzyme) (NN:[1736..1745] synthesis)))))))
+        (CC:[1746..1749] and) (,:[1749..1750] ,)
+        (ADVP (RB:[1752..1763] furthermore))
+        (,:[1763..1764] ,)
+        (SBAR (DT:[1765..1769] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1770..1779] reduction))
+              (PP (IN:[1780..1782] of)
+                (NP (NN:[1783..1789] oxygen) (NN:[1790..1797] tension))))
+            (VP (VBZ:[1798..1807] decreases)
+              (NP
+                (NP (NN:[1808..1819] degradation))
+                (PP (IN:[1820..1822] of)
+                  (NP
+                    (ADJP (RB:[1823..1828] newly) (VBN:[1830..1841] synthesized))
+                    (NML (NN:[1842..1848] Leydig) (NN:[1849..1853] cell))
+                    (JJ:[1854..1864] microsomal)
+                    (NML (NN:[1865..1875] cytochrome) (NN:[1876..1881] P-450))
+                    (NNS:[1882..1892] activities))))
+              (SBAR (IN:[1893..1895] as)
+                (S
+                  (NP-SBJ-1 (-NONE-:[1895..1895] *))
+                  (ADVP (RB:[1896..1904] recently))
+                  (VP (VBD:[1906..1914] reported)
+                    (NP-1 (-NONE-:[1914..1914] *))
+                    (PRN (-LRB-:[1915..1916] -LRB-)
+                      (FRAG (NNP:[1916..1921] Quinn) (,:[1921..1922] ,)
+                            (NNP:[1923..1927] P.G.) (,:[1927..1928] ,)
+                            (CC:[1929..1932] and) (NNP:[1933..1938] Payne)
+                            (,:[1938..1939] ,) (NNP:[1940..1944] A.H.)
+                            (-LRB-:[1945..1946] -LRB-) (CD:[1946..1950] 1984)
+                            (-RRB-:[1950..1951] -RRB-) (NNP:[1952..1954] J.)
+                            (NNP:[1955..1960] Biol.) (NNP:[1961..1966] Chem.)
+                            (CD:[1967..1970] 259) (,:[1970..1971] ,)
+                            (CD:[1972..1976] 4130) (HYPH:[1976..1977] -)
+                            (CD:[1977..1981] 4135))
+                      (-RRB-:[1981..1982] -RRB-))))))))))
+    (.:[1982..1983] .)))
+
+;section 13 Span:1987..2030
+;PMID: 6090441 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1987..1991] PMID) (::[1991..1992] :) (CD:[1993..2000] 6090441)
+        (-LRB-:[2001..2002] -LSB-) (NNP:[2002..2008] PubMed) (::[2009..2010] -)
+        (VBN:[2011..2018] indexed) (IN:[2019..2022] for)
+        (NNP:[2023..2030] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2030..EOF] ]
+
+(ORPH -RSB-)

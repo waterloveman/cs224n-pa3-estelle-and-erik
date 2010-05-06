@@ -1,0 +1,345 @@
+;PMID: 7157839
+;source_file_1860.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..126] = [t:41..126]
+;2)sentence:[e:127..171] = [t:127..171]
+;3)section:[e:175..259] = [t:175..259]
+;4)sentence:[e:263..503] = [t:263..503]
+;5)sentence:[e:504..632] = [t:504..632]
+;6)sentence:[e:633..763] = [t:633..763]
+;7)sentence:[e:764..994] = [t:764..994]
+;8)sentence:[e:995..1118] = [t:995..1118]
+;9)sentence:[e:1119..1369] = [t:1119..1369]
+;10)section:[e:1373..1417] = [t:1373..1417]
+
+;section 0 Span:0..35
+;Xenobiotica. 1982 Sep;12(9):581-90.
+(SEC
+  (FRAG (NNP:[0..11] Xenobiotica) (.:[11..12] .) (CD:[13..17] 1982)
+        (CC:[18..25] Sep;12-LRB-) (CD:[25..26] 9) (-RRB-:[26..27] -RRB-)
+        (::[27..28] :) (CD:[28..31] 581) (HYPH:[31..32] -) (CD:[32..34] 90)
+        (.:[34..35] .)))
+
+;sentence 1 Span:41..126
+;Studies on the metabolism of dimethylnitrosamine in vitro by rat-liver 
+;preparations.
+;[70..89]:substance:"dimethylnitrosamine"
+(SENT
+  (NP-HLN
+    (NP (NNS:[41..48] Studies))
+    (PP (IN:[49..51] on)
+      (NP
+        (NP (DT:[52..55] the) (NN:[56..66] metabolism))
+        (PP (IN:[67..69] of)
+          (NP (NN:[70..89] dimethylnitrosamine)))
+        (ADJP (FW:[90..92] in) (FW:[93..98] vitro))
+        (PP (IN:[99..101] by)
+          (NP
+            (NML (NN:[102..105] rat) (HYPH:[105..106] -) (NN:[106..111] liver))
+            (NNS:[113..125] preparations)))))
+    (.:[125..126] .)))
+
+;sentence 2 Span:127..171
+;III. Effect of cobaltous chloride treatment.
+;[142..160]:substance:"cobaltous chloride"
+(SENT
+  (NP-HLN (LS:[127..131] III.))
+  (NP-HLN
+    (NP (NN:[132..138] Effect))
+    (PP (IN:[139..141] of)
+      (NP
+        (NML (JJ:[142..151] cobaltous) (NN:[152..160] chloride))
+        (NN:[161..170] treatment)))
+    (.:[170..171] .)))
+;ERROR_Sentence has multiple children (TB Error):[127..171]::NP:NP:
+
+;section 3 Span:175..259
+;Lake BG, Collins MA, Harris RA, Phillips JC, Cottrell RC, Longland RC,
+;Gangolli  SD.
+(SEC
+  (FRAG (NNP:[175..179] Lake) (NNP:[180..182] BG) (,:[182..183] ,)
+        (NNP:[184..191] Collins) (NNP:[192..194] MA) (,:[194..195] ,)
+        (NNP:[196..202] Harris) (NNP:[203..205] RA) (,:[205..206] ,)
+        (NNP:[207..215] Phillips) (NNP:[216..218] JC) (,:[218..219] ,)
+        (NNP:[220..228] Cottrell) (NNP:[229..231] RC) (,:[231..232] ,)
+        (NNP:[233..241] Longland) (NNP:[242..244] RC) (,:[244..245] ,)
+        (NNP:[246..254] Gangolli) (NNP:[256..259] SD.)))
+
+;sentence 4 Span:263..503
+;1. The effects of CoCl2 administration to rats on xenobiotic metabolism, 
+;dimethylnitrosamine (DMN) metabolism to formaldehyde and methanol, and
+;monoamine  oxidase (MAO) enzyme activities in hepatic subcellular fractions
+;have been  studied.
+;[281..286]:substance:"CoCl2"
+;[313..323]:substance:"xenobiotic"
+;[337..356]:substance:"dimethylnitrosamine"
+;[358..361]:substance:"DMN"
+;[377..389]:substance:"formaldehyde"
+;[394..402]:substance:"methanol"
+;[408..439]:substance:"monoamine  oxidase (MAO) enzyme"
+(SENT
+  (NP (LS:[263..265] 1.))
+  (S
+    (NP-SBJ-1
+      (NP (DT:[266..269] The) (NNS:[270..277] effects))
+      (PP (IN:[278..280] of)
+        (NP
+          (NP (NN:[281..286] CoCl2) (NN:[287..301] administration))
+          (NP (TO:[302..304] to)
+            (NP (NNS:[305..309] rats)))))
+      (PP (IN:[310..312] on)
+        (NP
+          (NP (JJ:[313..323] xenobiotic) (NN:[324..334] metabolism))
+          (,:[334..335] ,)
+          (NP
+            (NP
+              (NML
+                (NML (NN:[337..356] dimethylnitrosamine))
+                (NML (-LRB-:[357..358] -LRB-) (NN:[358..361] DMN)
+                     (-RRB-:[361..362] -RRB-)))
+              (NN:[363..373] metabolism))
+            (PP (TO:[374..376] to)
+              (NP (NN:[377..389] formaldehyde) (CC:[390..393] and)
+                  (NN:[394..402] methanol))))
+          (,:[402..403] ,) (CC:[404..407] and)
+          (NP
+            (NP
+              
+              (NML
+                (NML (NN:[408..417] monoamine) (NN:[419..426] oxidase))
+                (NML (-LRB-:[427..428] -LRB-) (NN:[428..431] MAO)
+                     (-RRB-:[431..432] -RRB-)))
+              (NN:[433..439] enzyme)
+              (NNS:[440..450] activities))
+            (PP-LOC (IN:[451..453] in)
+              (NP (JJ:[454..461] hepatic) (JJ:[462..473] subcellular)
+                  (NNS:[474..483] fractions)))))))
+    (VP (VBP:[484..488] have)
+      (VP (VBN:[489..493] been)
+        (VP (VBN:[495..502] studied)
+          (NP-1 (-NONE-:[502..502] *)))))
+    (.:[502..503] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[263..503]::NP:S:
+
+;sentence 5 Span:504..632
+;2. CoCl2 treatment markedly decreased hepatic mixed-function oxidase  enzyme
+;activities and microsomal cytochrome P-450 content.
+;[507..512]:substance:"CoCl2"
+;[550..580]:substance:"mixed-function oxidase  enzyme"
+;[607..623]:cyp450:"cytochrome P-450"
+(SENT
+  (NP (LS:[504..506] 2.))
+  (S
+    (NP-SBJ (NN:[507..512] CoCl2) (NN:[513..522] treatment))
+    (ADVP (RB:[523..531] markedly))
+    (VP (VBD:[532..541] decreased)
+      (NP
+        (NP (JJ:[542..549] hepatic)
+          
+          (NML (VBN:[550..555] mixed) (HYPH:[555..556] -)
+               (NN:[556..564] function))
+          (NN:[565..572] oxidase) (NN:[574..580] enzyme)
+          (NNS:[581..591] activities))
+        (CC:[592..595] and)
+        (NP (JJ:[596..606] microsomal)
+          (NML (NN:[607..617] cytochrome) (NN:[618..623] P-450))
+          (NN:[624..631] content))))
+    (.:[631..632] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[504..632]::NP:S:
+
+;sentence 6 Span:633..763
+;In contrast, the  N-oxidation of N, N-dimethylaniline and the activity of
+;microsomal  NADPH-cytochrome c reductase was unaffected.
+;[666..686]:substance:"N, N-dimethylaniline"
+;[719..747]:substance:"NADPH-cytochrome c reductase"
+(SENT
+  (S
+    (PP (IN:[633..635] In)
+      (NP (NN:[636..644] contrast)))
+    (,:[644..645] ,)
+    (NP-SBJ
+      (NP
+        (NP (DT:[646..649] the) (NN:[651..662] N-oxidation))
+        (PP (IN:[663..665] of)
+          (NP (NN:[666..667] N) (,:[667..668] ,)
+              (NN:[669..686] N-dimethylaniline))))
+      (CC:[687..690] and)
+      (NP
+        (NP (DT:[691..694] the) (NN:[695..703] activity))
+        (PP (IN:[704..706] of)
+          (NP (JJ:[707..717] microsomal)
+            
+            (NML (NN:[719..724] NADPH) (HYPH:[724..725] -)
+                 (NN:[725..735] cytochrome) (NN:[736..737] c))
+            (NN:[738..747] reductase)))))
+    (VP (VBD:[748..751] was)
+      (ADJP-PRD (JJ:[752..762] unaffected)))
+    (.:[762..763] .)))
+
+;sentence 7 Span:764..994
+;3. The metabolism of DMN to  formaldehyde by postmitochondrial supernatant
+;fractions was decreased at  substrate concn. of 0 . 5, 5 and 50 mM by CoCl2
+;treatment but the metabolism of  5 and 50 mM DMN to methanol was affected
+;less.
+;[785..788]:substance:"DMN"
+;[793..805]:substance:"formaldehyde"
+;[827..838]:substance:"supernatant"
+;[867..876]:substance:"substrate"
+;[887..892]:quantitative-value:"0 . 5"
+;[894..895]:quantitative-value:"5"
+;[900..902]:quantitative-value:"50"
+;[903..905]:quantitative-units:"mM"
+;[909..914]:substance:"CoCl2"
+;[948..949]:quantitative-value:"5"
+;[954..956]:quantitative-value:"50"
+;[957..959]:quantitative-units:"mM"
+;[960..963]:substance:"DMN"
+;[967..975]:substance:"methanol"
+(SENT
+  (NP (LS:[764..766] 3.))
+  (S
+    (S
+      (NP-SBJ-4
+        (NP (DT:[767..770] The) (NN:[771..781] metabolism))
+        (PP (IN:[782..784] of)
+          (NP (NN:[785..788] DMN)))
+        (PP (TO:[789..791] to)
+          (NP (NN:[793..805] formaldehyde)))
+        (PP (IN:[806..808] by)
+          (NP (JJ:[809..826] postmitochondrial) (JJ:[827..838] supernatant)
+              (NNS:[839..848] fractions))))
+      (VP (VBD:[849..852] was)
+        (VP (VBN:[853..862] decreased)
+          (NP-4 (-NONE-:[862..862] *))
+          (PP (IN:[863..865] at)
+            (NP
+              (NP (NN:[867..876] substrate) (NN:[877..883] concn.))
+              (PP (IN:[884..886] of)
+                (NP
+                  (NP
+                    (QP (CD:[887..888] 0) (.:[889..890] .) (CD:[891..892] 5))
+                    (NML-3 (-NONE-:[892..892] *P*)))
+                  (,:[892..893] ,)
+                  (NP (CD:[894..895] 5)
+                    (NML-3 (-NONE-:[895..895] *P*)))
+                  (CC:[896..899] and)
+                  (NP (CD:[900..902] 50)
+                    (NML-3 (NN:[903..905] mM)))))))
+          (PP (IN:[906..908] by)
+            (NP (NN:[909..914] CoCl2) (NN:[915..924] treatment))))))
+    (CC:[925..928] but)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[929..932] the) (NN:[933..943] metabolism))
+        (PP (IN:[944..946] of)
+          (NP
+            (NP
+              (NML (CD:[948..949] 5)
+                (NML-1 (-NONE-:[949..949] *P*)))
+              (NML-5 (-NONE-:[949..949] *P*)))
+            (CC:[950..953] and)
+            (NP
+              (NML (CD:[954..956] 50)
+                (NML-1 (NN:[957..959] mM)))
+              (NML-5 (NN:[960..963] DMN)))))
+        (PP (TO:[964..966] to)
+          (NP (NN:[967..975] methanol))))
+      (VP (VBD:[976..979] was)
+        (VP (VBN:[980..988] affected)
+          (NP-2 (-NONE-:[988..988] *))
+          (ADVP-EXT (RBR:[989..993] less)))))
+    (.:[993..994] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[764..994]::NP:S:
+
+;sentence 8 Span:995..1118
+;4. CoCl2 had little effect on MAO  activities in whole homogenates, but
+;microsomal MAO activities were markedly  inhibited.
+;[998..1003]:substance:"CoCl2"
+;[1025..1028]:substance:"MAO"
+;[1050..1061]:substance:"homogenates"
+;[1078..1081]:substance:"MAO"
+(SENT
+  (NP (LS:[995..997] 4.))
+  (S
+    (S
+      (NP-SBJ (NN:[998..1003] CoCl2))
+      (VP (VBD:[1004..1007] had)
+        (NP
+          (NP (JJ:[1008..1014] little) (NN:[1015..1021] effect))
+          (PP (IN:[1022..1024] on)
+            (NP (NN:[1025..1028] MAO) (NNS:[1030..1040] activities))))
+        (PP-LOC (IN:[1041..1043] in)
+          (NP (JJ:[1044..1049] whole) (NNS:[1050..1061] homogenates)))))
+    (,:[1061..1062] ,) (CC:[1063..1066] but)
+    (S
+      (NP-SBJ-1 (JJ:[1067..1077] microsomal) (NN:[1078..1081] MAO)
+                (NNS:[1082..1092] activities))
+      (VP (VBD:[1093..1097] were)
+        (ADVP (RB:[1098..1106] markedly))
+        (VP (VBN:[1108..1117] inhibited)
+          (NP-1 (-NONE-:[1117..1117] *)))))
+    (.:[1117..1118] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[995..1118]::NP:S:
+
+;sentence 9 Span:1119..1369
+;5. The inhibition of microsomal MAO indicates that CoCl2 is not a  specific
+;inhibitor of cytochrome P-450-dependent biotransformations and  consequently
+;the inhibition of DMN metabolism is not evidence of a wholly  cytochrome
+;P-450-dependent process.
+;[1151..1154]:substance:"MAO"
+;[1170..1175]:substance:"CoCl2"
+;[1195..1204]:substance:"inhibitor"
+;[1208..1224]:cyp450:"cytochrome P-450"
+;[1290..1293]:substance:"DMN"
+;[1334..1350]:cyp450:"cytochrome P-450"
+(SENT
+  (NP (LS:[1119..1121] 5.))
+  (S
+    (NP-SBJ
+      (NP (DT:[1122..1125] The) (NN:[1126..1136] inhibition))
+      (PP (IN:[1137..1139] of)
+        (NP (JJ:[1140..1150] microsomal) (NN:[1151..1154] MAO))))
+    (VP (VBZ:[1155..1164] indicates)
+      (SBAR (IN:[1165..1169] that)
+        (S
+          (S
+            (NP-SBJ (NN:[1170..1175] CoCl2))
+            (VP (VBZ:[1176..1178] is) (RB:[1179..1182] not)
+              (NP-PRD
+                (NP (DT:[1183..1184] a) (JJ:[1186..1194] specific)
+                    (NN:[1195..1204] inhibitor))
+                (PP (IN:[1205..1207] of)
+                  (NP
+                    (ADJP
+                      (NML (NN:[1208..1218] cytochrome) (NN:[1219..1224] P-450))
+                      (HYPH:[1224..1225] -) (JJ:[1225..1234] dependent))
+                    (NNS:[1235..1253] biotransformations))))))
+          (CC:[1254..1257] and)
+          (S
+            (ADVP (RB:[1259..1271] consequently))
+            (NP-SBJ
+              (NP (DT:[1272..1275] the) (NN:[1276..1286] inhibition))
+              (PP (IN:[1287..1289] of)
+                (NP (NN:[1290..1293] DMN) (NN:[1294..1304] metabolism))))
+            (VP (VBZ:[1305..1307] is) (RB:[1308..1311] not)
+              (NP-PRD
+                (NP (NN:[1312..1320] evidence))
+                (PP (IN:[1321..1323] of)
+                  (NP (DT:[1324..1325] a)
+                    (ADJP (RB:[1326..1332] wholly)
+                      (NML (NN:[1334..1344] cytochrome) (NN:[1345..1350] P-450))
+                      (HYPH:[1350..1351] -) (JJ:[1351..1360] dependent))
+                    (NN:[1361..1368] process)))))))))
+    (.:[1368..1369] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1119..1369]::NP:S:
+
+;section 10 Span:1373..1417
+;PMID: 7157839 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1373..1377] PMID) (::[1377..1378] :) (CD:[1379..1386] 7157839)
+        (NN:[1387..1388] -LSB-) (NNP:[1388..1394] PubMed) (::[1395..1396] -)
+        (NN:[1397..1404] indexed) (IN:[1405..1408] for)
+        (NNP:[1409..1417] MEDLINE-RSB-)))

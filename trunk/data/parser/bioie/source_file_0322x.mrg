@@ -1,0 +1,399 @@
+;PMID: 9097993
+;source_file_522.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:46..141] = [t:46..141]
+;2)section:[e:145..245] = [t:145..245]
+;3)section:[e:249..337] = [t:249..337]
+;4)sentence:[e:341..459] = [t:341..459]
+;5)sentence:[e:460..582] = [t:460..582]
+;6)sentence:[e:583..819] = [t:583..819]
+;7)sentence:[e:820..1035] = [t:820..1035]
+;8)sentence:[e:1036..1199] = [t:1036..1199]
+;9)sentence:[e:1200..1350] = [t:1200..1350]
+;10)sentence:[e:1351..1430] = [t:1351..1430]
+;11)sentence:[e:1431..1572] = [t:1431..1572]
+;12)section:[e:1573..1701] = [t:1573..1701]
+;13)section:[e:1705..1749] = [t:1705..1749]
+
+;section 0 Span:0..41
+;Gastroenterology  1997 Apr;112(4):1114-20
+(SEC
+  (FRAG (IN:[0..16] Gastroenterology) (CD:[18..22] 1997) (CD:[23..29] Apr;11)
+        (CD:[29..30] 2) (NN:[30..31] -LRB-) (NN:[31..32] 4) (NN:[32..33] -RRB-)
+        (::[33..34] :) (CD:[34..37] 111) (CD:[37..41] 4-20)))
+
+;sentence 1 Span:46..141
+;K-ras mutations are found in DNA extracted from the plasma of patients with 
+;colorectal cancer.
+;[46..51]:gene-rna:"K-ras"
+;[123..140]:malignancy:"colorectal cancer"
+(SENT
+  (S-HLN
+    (NP-SBJ-1 (NN:[46..51] K-ras) (NNS:[52..61] mutations))
+    (VP (VBP:[62..65] are)
+      (VP (VBN:[66..71] found)
+        (NP-1 (-NONE-:[71..71] *))
+        (PP-LOC (IN:[72..74] in)
+          (NP
+            (NP (NN:[75..78] DNA))
+            (VP (VBN:[79..88] extracted)
+              (NP (-NONE-:[88..88] *))
+              (PP (IN:[89..93] from)
+                (NP
+                  (NP (DT:[94..97] the) (NN:[98..104] plasma))
+                  (PP (IN:[105..107] of)
+                    (NP
+                      (NP (NNS:[108..116] patients))
+                      (PP (IN:[117..121] with)
+                        (NP (JJ:[123..133] colorectal) (NN:[134..140] cancer))))))))))))
+    (.:[140..141] .)))
+
+;section 2 Span:145..245
+;Anker P, Lefort F, Vasioukhin V, Lyautey J, Lederrey C, Chen XQ, Stroun M, 
+;Mulcahy HE, Farthing MJ.
+(SEC
+  (FRAG (NNP:[145..150] Anker) (NNP:[151..153] P,) (NNP:[154..160] Lefort)
+        (NNP:[161..162] F) (,:[162..163] ,) (NNP:[164..174] Vasioukhin)
+        (NNP:[175..176] V) (,:[176..177] ,) (NNP:[178..185] Lyautey)
+        (NNP:[186..188] J,) (NNP:[189..197] Lederrey) (NNP:[198..200] C,)
+        (NNP:[201..205] Chen) (NNP:[206..208] XQ) (,:[208..209] ,)
+        (NNP:[210..216] Stroun) (NNP:[217..219] M,) (NNP:[221..228] Mulcahy)
+        (NNP:[229..231] HE) (,:[231..232] ,) (NNP:[233..241] Farthing)
+        (NNP:[242..245] MJ.)))
+
+;section 3 Span:249..337
+;Departement de Biochimie et de Physiologie Vegetale, Universite de Geneve, 
+;Switzerland.
+(SEC
+  (FRAG (NNP:[249..260] Departement) (IN:[261..263] de)
+        (NNP:[264..273] Biochimie) (NNP:[274..276] et) (IN:[277..279] de)
+        (NNP:[280..291] Physiologie) (NNP:[292..300] Vegetale) (,:[300..301] ,)
+        (NNP:[302..312] Universite) (IN:[313..315] de) (NNP:[316..322] Geneve)
+        (,:[322..323] ,) (NNP:[325..336] Switzerland) (.:[336..337] .)))
+
+;sentence 4 Span:341..459
+;BACKGROUND & AIMS: Circulating DNA can be isolated from the plasma of healthy
+; subjects and from patients with cancer.
+;[452..458]:malignancy:"cancer"
+(SENT
+  (NP (NN:[341..351] BACKGROUND) (CC:[352..353] &) (NNS:[354..358] AIMS)
+      (::[358..359] :))
+  (S
+    (NP-SBJ-1 (VBG:[360..371] Circulating) (NN:[372..375] DNA))
+    (VP (MD:[376..379] can)
+      (VP (VB:[380..382] be)
+        (VP (VBN:[383..391] isolated)
+          (NP-1 (-NONE-:[391..391] *))
+          (PP
+            (PP (IN:[392..396] from)
+              (NP
+                (NP (DT:[397..400] the) (NN:[401..407] plasma))
+                (PP (IN:[408..410] of)
+                  (NP (JJ:[411..418] healthy) (NNS:[420..428] subjects)))))
+            (CC:[429..432] and)
+            (PP (IN:[433..437] from)
+              (NP
+                (NP (NNS:[438..446] patients))
+                (PP (IN:[447..451] with)
+                  (NP (NN:[452..458] cancer)))))))))
+    (.:[458..459] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[341..459]::NP:S:
+
+;sentence 5 Span:460..582
+;The aim of this study was to detect  K-ras mutations in DNA extracted from
+;the plasma of patients with colorectal  cancer.
+;[497..502]:gene-rna:"K-ras"
+;[563..581]:malignancy:"colorectal  cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[460..463] The) (NN:[464..467] aim))
+      (PP (IN:[468..470] of)
+        (NP (DT:[471..475] this) (NN:[476..481] study))))
+    (VP (VBD:[482..485] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[485..485] *))
+        (VP (TO:[486..488] to)
+          (VP (VB:[489..495] detect)
+            (NP (NN:[497..502] K-ras) (NNS:[503..512] mutations))
+            (PP-LOC (IN:[513..515] in)
+              (NP
+                (NP (NN:[516..519] DNA))
+                (VP (VBN:[520..529] extracted)
+                  (NP (-NONE-:[529..529] *))
+                  (PP (IN:[530..534] from)
+                    (NP
+                      (NP (DT:[535..538] the) (NN:[539..545] plasma))
+                      (PP (IN:[546..548] of)
+                        (NP
+                          (NP (NNS:[549..557] patients))
+                          (PP (IN:[558..562] with)
+                            (NP (JJ:[563..573] colorectal)
+                                (NN:[575..581] cancer))))))))))))))
+    (.:[581..582] .)))
+
+;sentence 6 Span:583..819
+;METHODS: Tumor and plasma DNA were extracted from 14 patients with 
+;colorectal cancer (stages A-D), and K-ras alterations were detected using a 
+;polymerase chain reaction assay that uses sequence-specific primers to
+;amplify  mutant DNA.
+;[592..597]:malignancy:"Tumor"
+;[651..681]:malignancy:"colorectal cancer (stages A-D)"
+;[687..692]:gene-rna:"K-ras"
+(SENT
+  (NP (NNS:[583..590] METHODS) (::[590..591] :))
+  (S
+    (S
+      (NP-SBJ-4
+        (NP (NN:[592..597] Tumor)
+          (NML-1 (-NONE-:[597..597] *P*)))
+        (CC:[598..601] and)
+        (NP (NN:[602..608] plasma)
+          (NML-1 (NN:[609..612] DNA))))
+      (VP (VBD:[613..617] were)
+        (VP (VBN:[618..627] extracted)
+          (NP-4 (-NONE-:[627..627] *))
+          (PP (IN:[628..632] from)
+            (NP
+              (NP (CD:[633..635] 14) (NNS:[636..644] patients))
+              (PP (IN:[645..649] with)
+                (NP (JJ:[651..661] colorectal) (NN:[662..668] cancer)
+                  (PRN (-LRB-:[669..670] -LRB-)
+                    (NP
+                      (NP (NNS:[670..676] stages) (NN:[677..678] A))
+                      (PP (HYPH:[678..679] -)
+                        (NP (NN:[679..680] D))))
+                    (-RRB-:[680..681] -RRB-)))))))))
+    (,:[681..682] ,) (CC:[683..686] and)
+    (S
+      (NP-SBJ-3 (NN:[687..692] K-ras) (NNS:[693..704] alterations))
+      (VP (VBD:[705..709] were)
+        (VP (VBN:[710..718] detected)
+          (NP-3 (-NONE-:[718..718] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[718..718] *))
+            (VP (VBG:[719..724] using)
+              (NP
+                (NP (DT:[725..726] a)
+                  (NML (NN:[728..738] polymerase) (NN:[739..744] chain)
+                       (NN:[745..753] reaction))
+                  (NN:[754..759] assay))
+                (SBAR
+                  (WHNP-2 (WDT:[760..764] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[764..764] *T*))
+                    (VP (VBZ:[765..769] uses)
+                      (NP
+                        (ADJP (NN:[770..778] sequence) (HYPH:[778..779] -)
+                              (JJ:[779..787] specific))
+                        (NNS:[788..795] primers))
+                      (S-PRP
+                        (NP-SBJ (-NONE-:[795..795] *))
+                        (VP (TO:[796..798] to)
+                          (VP (VB:[799..806] amplify)
+                            (NP (JJ:[808..814] mutant) (NN:[815..818] DNA))))))))))))))
+    (.:[818..819] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[583..819]::NP:S:
+
+;sentence 7 Span:820..1035
+;These results were confirmed with another polymerase chain reaction  assay
+;that creates an enzyme restriction site in the absence of a K-ras mutation 
+;followed by direct sequencing and additional cloning techniques.
+;[955..960]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[820..825] These) (NNS:[826..833] results))
+    (VP (VBD:[834..838] were)
+      (VP (VBN:[839..848] confirmed)
+        (NP-1 (-NONE-:[848..848] *))
+        (PP-MNR (IN:[849..853] with)
+          (NP
+            (NP
+              (NP (DT:[854..861] another)
+                (NML (NN:[862..872] polymerase) (NN:[873..878] chain)
+                     (NN:[879..887] reaction))
+                (NN:[889..894] assay))
+              (SBAR
+                (WHNP-2 (WDT:[895..899] that))
+                (S
+                  (NP-SBJ-2 (-NONE-:[899..899] *T*))
+                  (VP (VBZ:[900..907] creates)
+                    (NP (DT:[908..910] an)
+                      (NML (NN:[911..917] enzyme) (NN:[918..929] restriction))
+                      (NN:[930..934] site))
+                    (PP (IN:[935..937] in)
+                      (NP
+                        (NP (DT:[938..941] the) (NN:[942..949] absence))
+                        (PP (IN:[950..952] of)
+                          (NP (DT:[953..954] a) (NN:[955..960] K-ras)
+                              (NN:[961..969] mutation)))))))))
+            (VP (VBN:[971..979] followed)
+              (NP (-NONE-:[979..979] *))
+              (PP (IN:[980..982] by)
+                (NP-LGS
+                  (NP (JJ:[983..989] direct) (NN:[990..1000] sequencing))
+                  (CC:[1001..1004] and)
+                  (NP (JJ:[1005..1015] additional) (NN:[1016..1023] cloning)
+                      (NNS:[1024..1034] techniques)))))))))
+    (.:[1034..1035] .)))
+
+;sentence 8 Span:1036..1199
+;RESULTS: Seven  patients (50%) had a codon 12 K-ras mutation within their
+;primary tumor, and  identical mutations were found in the plasma DNA of 6
+;patients (86%).
+;[1073..1081]:variation-location:"codon 12"
+;[1082..1087]:gene-rna:"K-ras"
+;[1088..1096]:variation-event:"mutation"
+;[1110..1123]:malignancy:"primary tumor"
+;[1130..1149]:variation-event:"identical mutations"
+(SENT
+  (NP (NNS:[1036..1043] RESULTS) (::[1043..1044] :))
+  (S
+    (S
+      (NP-SBJ (CD:[1045..1050] Seven) (NNS:[1052..1060] patients)
+        (PRN (-LRB-:[1061..1062] -LRB-)
+          (NP (CD:[1062..1064] 50) (NN:[1064..1065] %))
+          (-RRB-:[1065..1066] -RRB-)))
+      (VP (VBD:[1067..1070] had)
+        (NP (DT:[1071..1072] a)
+          (NML (NN:[1073..1078] codon) (CD:[1079..1081] 12))
+          (NN:[1082..1087] K-ras) (NN:[1088..1096] mutation))
+        (PP-LOC (IN:[1097..1103] within)
+          (NP (PRP$:[1104..1109] their)
+             (JJ:[1110..1117] primary) (NN:[1118..1123] tumor)))))
+    (,:[1123..1124] ,) (CC:[1125..1128] and)
+    (S
+      (NP-SBJ-1 (JJ:[1130..1139] identical) (NNS:[1140..1149] mutations))
+      (VP (VBD:[1150..1154] were)
+        (VP (VBN:[1155..1160] found)
+          (NP-1 (-NONE-:[1160..1160] *))
+          (PP-LOC (IN:[1161..1163] in)
+            (NP
+              (NP (DT:[1164..1167] the) (NN:[1168..1174] plasma)
+                  (NN:[1175..1178] DNA))
+              (PP (IN:[1179..1181] of)
+                (NP (CD:[1182..1183] 6) (NNS:[1184..1192] patients)
+                  (PRN (-LRB-:[1193..1194] -LRB-)
+                    (NP (CD:[1194..1196] 86) (NN:[1196..1197] %))
+                    (-RRB-:[1197..1198] -RRB-)))))))))
+    (.:[1198..1199] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1036..1199]::NP:S:
+
+;sentence 9 Span:1200..1350
+;Mutant DNA  was not detected in the plasma specimens of 7 patients whose
+;tumors tested  negative for K-ras alterations or in healthy control
+;subjects.
+;[1273..1279]:malignancy:"tumors"
+;[1301..1306]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-2 (JJ:[1200..1206] Mutant) (NN:[1207..1210] DNA))
+    (VP (VBD:[1212..1215] was) (RB:[1216..1219] not)
+      (VP (VBN:[1220..1228] detected)
+        (NP-2 (-NONE-:[1228..1228] *))
+        (PP-LOC
+          (PP (IN:[1229..1231] in)
+            (NP
+              (NP (DT:[1232..1235] the) (NN:[1236..1242] plasma)
+                  (NNS:[1243..1252] specimens))
+              (PP (IN:[1253..1255] of)
+                (NP
+                  (NP (CD:[1256..1257] 7) (NNS:[1258..1266] patients))
+                  (SBAR
+                    (WHNP-1 (WP$:[1267..1272] whose) (NNS:[1273..1279] tumors))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1279..1279] *T*))
+                      (VP (VBD:[1280..1286] tested)
+                        (ADJP-CLR (JJ:[1288..1296] negative))
+                        (PP-CLR (IN:[1297..1300] for)
+                          (NP (NN:[1301..1306] K-ras)
+                              (NNS:[1307..1318] alterations))))))))))
+          (CC:[1319..1321] or)
+          (PP (IN:[1322..1324] in)
+            (NP (JJ:[1325..1332] healthy) (NN:[1333..1340] control)
+                (NNS:[1341..1349] subjects))))))
+    (.:[1349..1350] .)))
+
+;sentence 10 Span:1351..1430
+;Similar results  were obtained using all three molecular biological
+;techniques.
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1351..1358] Similar) (NNS:[1359..1366] results))
+    (VP (VBD:[1368..1372] were)
+      (VP (VBN:[1373..1381] obtained)
+        (NP-1 (-NONE-:[1381..1381] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[1381..1381] *))
+          (VP (VBG:[1382..1387] using)
+            (NP (DT:[1388..1391] all) (CD:[1392..1397] three)
+                (JJ:[1398..1407] molecular) (JJ:[1408..1418] biological)
+                (NNS:[1419..1429] techniques))))))
+    (.:[1429..1430] .)))
+
+;sentence 11 Span:1431..1572
+;CONCLUSIONS:  K-ras abnormalities can be detected in circulating DNA
+;extracted from the plasma  specimens of patients with colorectal cancer.
+;[1445..1450]:gene-rna:"K-ras"
+;[1554..1571]:malignancy:"colorectal cancer"
+(SENT
+  (NP (NNS:[1431..1442] CONCLUSIONS) (::[1442..1443] :))
+  (S
+    (NP-SBJ-1 (NN:[1445..1450] K-ras) (NNS:[1451..1464] abnormalities))
+    (VP (MD:[1465..1468] can)
+      (VP (VB:[1469..1471] be)
+        (VP (VBN:[1472..1480] detected)
+          (NP-1 (-NONE-:[1480..1480] *))
+          (PP-LOC (IN:[1481..1483] in)
+            (NP
+              (NP (VBG:[1484..1495] circulating) (NN:[1496..1499] DNA))
+              (VP (VBN:[1500..1509] extracted)
+                (NP (-NONE-:[1509..1509] *))
+                (PP (IN:[1510..1514] from)
+                  (NP
+                    (NP (DT:[1515..1518] the) (NN:[1519..1525] plasma)
+                        (NNS:[1527..1536] specimens))
+                    (PP (IN:[1537..1539] of)
+                      (NP
+                        (NP (NNS:[1540..1548] patients))
+                        (PP (IN:[1549..1553] with)
+                          (NP (JJ:[1554..1564] colorectal)
+                              (NN:[1565..1571] cancer)))))))))))))
+    (.:[1571..1572] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1431..1572]::NP:S:
+
+;section 12 Span:1573..1701
+;If these results are confirmed in  larger studies, genetic analysis of plasma
+;DNA may have clinical applications in  the future.
+(SEC
+  (S
+    (SBAR-ADV (IN:[1573..1575] If)
+      (S
+        (NP-SBJ-1 (DT:[1576..1581] these) (NNS:[1582..1589] results))
+        (VP (VBP:[1590..1593] are)
+          (VP (VBN:[1594..1603] confirmed)
+            (NP-1 (-NONE-:[1603..1603] *))
+            (PP (IN:[1604..1606] in)
+              (NP (JJR:[1608..1614] larger) (NNS:[1615..1622] studies)))))))
+    (,:[1622..1623] ,)
+    (NP-SBJ
+      (NP (JJ:[1624..1631] genetic) (NN:[1632..1640] analysis))
+      (PP (IN:[1641..1643] of)
+        (NP (NN:[1644..1650] plasma) (NN:[1651..1654] DNA))))
+    (VP (MD:[1655..1658] may)
+      (VP (VB:[1659..1663] have)
+        (NP (JJ:[1664..1672] clinical) (NNS:[1673..1685] applications))
+        (PP-TMP (IN:[1686..1688] in)
+          (NP (DT:[1690..1693] the) (NN:[1694..1700] future)))))
+    (.:[1700..1701] .)))
+
+;section 13 Span:1705..1749
+;PMID: 9097993 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1705..1709] PMID) (::[1709..1710] :) (CD:[1711..1718] 9097993)
+        (NN:[1719..1720] -LSB-) (NNP:[1720..1726] PubMed) (::[1727..1728] -)
+        (NN:[1729..1736] indexed) (IN:[1737..1740] for)
+        (NNP:[1741..1749] MEDLINE-RSB-)))

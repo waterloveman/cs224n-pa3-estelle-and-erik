@@ -1,0 +1,360 @@
+;PMID: 8161790
+;source_file_1231.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:37..106] = [t:37..106]
+;2)section:[e:110..176] = [t:110..176]
+;3)section:[e:180..263] = [t:180..263]
+;4)sentence:[e:267..487] = [t:267..487]
+;5)sentence:[e:488..667] = [t:488..667]
+;6)sentence:[e:669..894] = [t:669..894]
+;7)sentence:[e:896..1024] = [t:896..1024]
+;8)sentence:[e:1025..1174] = [t:1025..1174]
+;9)sentence:[e:1175..1335] = [t:1175..1335]
+;10)sentence:[e:1336..1514] = [t:1336..1514]
+;11)section:[e:1518..1562] = [t:1518..1562]
+
+;section 0 Span:0..32
+;Blood  1994 Apr 15;83(8):2248-54
+(SEC
+  (FRAG (NNP:[0..5] Blood) (CD:[7..11] 1994) (NNP:[12..15] Apr) (CD:[16..18] 15)
+        (CC:[18..22] ;83-LRB-) (CD:[22..23] 8) (-RRB-:[23..24] -RRB-)
+        (CD:[24..29] :2248) (::[29..30] -) (CD:[30..32] 54)))
+
+;sentence 1 Span:37..106
+;Mutations of the N-ras gene in juvenile chronic myelogenous leukemia.
+;[54..59]:gene-rna:"N-ras"
+;[68..105]:malignancy:"juvenile chronic myelogenous leukemia"
+(SENT
+  (NP-HLN
+    (NP (NNS:[37..46] Mutations))
+    (PP (IN:[47..49] of)
+      (NP (DT:[50..53] the) (NN:[54..59] N-ras) (NN:[60..64] gene)))
+    (PP (IN:[65..67] in)
+      (NP (JJ:[68..76] juvenile) (JJ:[77..84] chronic) (JJ:[85..96] myelogenous)
+          (NN:[97..105] leukemia)))
+    (.:[105..106] .)))
+
+;section 2 Span:110..176
+;Miyauchi J, Asada M, Sasaki M, Tsunematsu Y, Kojima S, Mizutani S.
+(SEC
+  (FRAG (NNP:[110..118] Miyauchi) (NNP:[119..121] J,) (NNP:[122..127] Asada)
+        (NNP:[128..130] M,) (NNP:[131..137] Sasaki) (NNP:[138..140] M,)
+        (NNP:[141..151] Tsunematsu) (NNP:[152..153] Y) (,:[153..154] ,)
+        (NNP:[155..161] Kojima) (NNP:[162..164] S,) (NNP:[165..173] Mizutani)
+        (NNP:[174..176] S.)))
+
+;section 3 Span:180..263
+;Department of Virology, National Children's Medical Research Center, Tokyo, 
+;Japan.
+(SEC
+  (FRAG (NNP:[180..190] Department) (IN:[191..193] of) (NNP:[194..202] Virology)
+        (,:[202..203] ,) (NNP:[204..212] National) (NNP:[213..221] Children)
+        (POS:[221..223] 's) (NNP:[224..231] Medical) (NNP:[232..240] Research)
+        (NNP:[241..247] Center) (,:[247..248] ,) (NNP:[249..254] Tokyo)
+        (,:[254..255] ,) (NNP:[257..262] Japan) (.:[262..263] .)))
+
+;sentence 4 Span:267..487
+;Juvenile chronic myelogenous leukemia (JCML), a myeloproliferative disorder
+;of  childhood, is distinct from adult-type chronic myelogenous leukemia (CML)
+;and  bears resemblance to chronic myelomonocytic leukemia (CMMoL).
+;[267..304]:malignancy:"Juvenile chronic myelogenous leukemia"
+;[306..310]:malignancy:"JCML"
+;[375..414]:malignancy:"adult-type chronic myelogenous leukemia"
+;[416..419]:malignancy:"CML"
+;[447..478]:malignancy:"chronic myelomonocytic leukemia"
+;[480..485]:malignancy:"CMMoL"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[267..275] Juvenile) (JJ:[276..283] chronic)
+            (JJ:[284..295] myelogenous) (NN:[296..304] leukemia))
+        (NP (-LRB-:[305..306] -LRB-) (NN:[306..310] JCML)
+            (-RRB-:[310..311] -RRB-)))
+      (,:[311..312] ,)
+      (NP
+        (NP (DT:[313..314] a) (JJ:[315..333] myeloproliferative)
+            (NN:[334..342] disorder))
+        (PP (IN:[343..345] of)
+          (NP (NN:[347..356] childhood)))))
+    (,:[356..357] ,)
+    (VP
+      (VP (VBZ:[358..360] is)
+        (ADJP-PRD (JJ:[361..369] distinct)
+          (PP (IN:[370..374] from)
+            (NP
+              (NML (JJ:[375..380] adult) (HYPH:[380..381] -)
+                   (NN:[381..385] type))
+              (NML
+                (NML (JJ:[386..393] chronic) (JJ:[394..405] myelogenous)
+                     (NN:[406..414] leukemia))
+                (NML (-LRB-:[415..416] -LRB-) (NN:[416..419] CML)
+                     (-RRB-:[419..420] -RRB-)))))))
+      (CC:[421..424] and)
+      (VP (VBZ:[426..431] bears)
+        (NP
+          (NP (NN:[432..443] resemblance))
+          (PP (TO:[444..446] to)
+            (NP
+              (NP (JJ:[447..454] chronic) (JJ:[455..469] myelomonocytic)
+                  (NN:[470..478] leukemia))
+              (NP (-LRB-:[479..480] -LRB-) (NN:[480..485] CMMoL)
+                  (-RRB-:[485..486] -RRB-)))))))
+    (.:[486..487] .)))
+
+;sentence 5 Span:488..667
+;Since mutations in  the N-ras gene have been found at high frequencies in
+;CMMoL, but only rarely in  CML, we analyzed mutations activating the N-ras
+;gene in 20 patients with JCML.
+;[512..517]:gene-rna:"N-ras"
+;[562..567]:malignancy:"CMMoL"
+;[589..592]:malignancy:"CML"
+;[631..636]:gene-rna:"N-ras"
+;[662..666]:malignancy:"JCML"
+(SENT
+  (S
+    (SBAR-ADV (IN:[488..493] Since)
+      (S
+        (NP-SBJ-3
+          (NP (NNS:[494..503] mutations))
+          (PP (IN:[504..506] in)
+            (NP (DT:[508..511] the) (NN:[512..517] N-ras) (NN:[518..522] gene))))
+        (VP (VBP:[523..527] have)
+          (VP (VBN:[528..532] been)
+            (VP
+              (VP (VBN:[533..538] found)
+                (NP-3 (-NONE-:[538..538] *))
+                (PP=2 (IN:[539..541] at)
+                  (NP (JJ:[542..546] high) (NNS:[547..558] frequencies)))
+                (PP=1 (IN:[559..561] in)
+                  (NP (NN:[562..567] CMMoL))))
+              (,:[567..568] ,) (CC:[569..572] but)
+              (VP
+                (ADVP (RB:[573..577] only) (RB:[578..584] rarely))
+                (PP=2 (-NONE-:[584..584] *NOT*))
+                (PP=1 (IN:[585..587] in)
+                  (NP (NN:[589..592] CML)))))))))
+    (,:[592..593] ,)
+    (NP-SBJ (PRP:[594..596] we))
+    (VP (VBD:[597..605] analyzed)
+      (NP
+        (NP (NNS:[606..615] mutations))
+        (VP (VBG:[616..626] activating)
+          (NP (DT:[627..630] the) (NN:[631..636] N-ras) (NN:[637..641] gene))))
+      (PP (IN:[642..644] in)
+        (NP
+          (NP (CD:[645..647] 20) (NNS:[648..656] patients))
+          (PP (IN:[657..661] with)
+            (NP (NN:[662..666] JCML))))))
+    (.:[666..667] .)))
+
+;sentence 6 Span:669..894
+;We used the strategy for analysis of gene mutations based on in vitro DNA 
+;amplification by polymerase chain reaction (PCR) followed by single-strand 
+;conformation polymorphism (SSCP) analysis and/or direct sequence analysis.
+;[761..771]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ (PRP:[669..671] We))
+    (VP (VBD:[672..676] used)
+      (NP
+        (NP
+          (NP (DT:[677..680] the) (NN:[681..689] strategy))
+          (PP (IN:[690..693] for)
+            (NP
+              (NP (NN:[694..702] analysis))
+              (PP (IN:[703..705] of)
+                (NP (NN:[706..710] gene) (NNS:[711..720] mutations))))))
+        (VP (VBN:[721..726] based)
+          (NP (-NONE-:[726..726] *))
+          (PP (IN:[727..729] on)
+            (NP
+              (NP
+                (NP
+                  (NML (FW:[730..732] in) (FW:[733..738] vitro))
+                  (NN:[739..742] DNA) (NN:[744..757] amplification))
+                (PP (IN:[758..760] by)
+                  (NP
+                    (NP (NN:[761..771] polymerase) (NN:[772..777] chain)
+                        (NN:[778..786] reaction))
+                    (NP (-LRB-:[787..788] -LRB-) (NN:[788..791] PCR)
+                        (-RRB-:[791..792] -RRB-)))))
+              (VP (VBN:[793..801] followed)
+                (NP (-NONE-:[801..801] *))
+                (PP-LGS (IN:[802..804] by)
+                  (NP
+                    (NP
+                      (NML
+                        (NML
+                          (NML (JJ:[805..811] single) (HYPH:[811..812] -)
+                               (NN:[812..818] strand))
+                          (NN:[820..832] conformation)
+                           (NN:[833..845] polymorphism))
+                        (NML (-LRB-:[846..847] -LRB-) (NN:[847..851] SSCP)
+                             (-RRB-:[851..852] -RRB-)))
+                      (NN:[853..861] analysis))
+                    (CC:[862..868] and/or)
+                    (NP (JJ:[869..875] direct) (NN:[876..884] sequence)
+                        (NN:[885..893] analysis))))))))))
+    (.:[893..894] .)))
+
+;sentence 7 Span:896..1024
+;Nucleotide sequence analysis showed single nucleotide substitutions involving
+; codons 12, 13, or 61 in six of 20 patients (30%).
+;[932..963]:variation-type:"single nucleotide substitutions"
+;[975..981]...[982..984]...[986..988]...[993..995]:variation-location:"codons"
+;..."12"..."13"..."61"
+(SENT
+  (S
+    (NP-SBJ (NN:[896..906] Nucleotide) (NN:[907..915] sequence)
+            (NN:[916..924] analysis))
+    (VP (VBD:[925..931] showed)
+      (NP
+        (NP (JJ:[932..938] single) (NN:[939..949] nucleotide)
+            (NNS:[950..963] substitutions))
+        (VP (VBG:[964..973] involving)
+          (NP
+            (NP
+              (NML-1 (NNS:[975..981] codons))
+              (CD:[982..984] 12))
+            (,:[984..985] ,)
+            (NP
+              (NML-1 (-NONE-:[985..985] *P*))
+              (CD:[986..988] 13))
+            (,:[988..989] ,) (CC:[990..992] or)
+            (NP
+              (NML-1 (-NONE-:[992..992] *P*))
+              (CD:[993..995] 61)))))
+      (PP-LOC (IN:[996..998] in)
+        (NP
+          (NP (CD:[999..1002] six))
+          (PP (IN:[1003..1005] of)
+            (NP (CD:[1006..1008] 20) (NNS:[1009..1017] patients)))
+          (PRN (-LRB-:[1018..1019] -LRB-)
+            (NP (CD:[1019..1021] 30) (NN:[1021..1022] %))
+            (-RRB-:[1022..1023] -RRB-)))))
+    (.:[1023..1024] .)))
+
+;sentence 8 Span:1025..1174
+;Four of six patients with  mutations were in chronic phase and the other two
+;in blast crisis, indicating no  apparent correlation with disease stage.
+;[1052..1061]:variation-event:"mutations"
+;[1070..1083]:malignancy:"chronic phase"
+;[1105..1117]:malignancy:"blast crisis"
+(SENT
+  (S
+    (S
+      (NP-SBJ=2
+        (NP (CD:[1025..1029] Four))
+        (PP (IN:[1030..1032] of)
+          (NP
+            (NP (CD:[1033..1036] six) (NNS:[1037..1045] patients))
+            (PP (IN:[1046..1050] with)
+              (NP (NNS:[1052..1061] mutations))))))
+      (VP (VBD:[1062..1066] were)
+        (PP-PRD=1 (IN:[1067..1069] in)
+          (NP (JJ:[1070..1077] chronic) (NN:[1078..1083] phase)))))
+    (CC:[1084..1087] and)
+    (S
+      (NP-SBJ=2 (DT:[1088..1091] the) (JJ:[1092..1097] other)
+                (CD:[1098..1101] two))
+      (VP
+        (PP-PRD=1 (IN:[1102..1104] in)
+          (NP (NN:[1105..1110] blast) (NN:[1111..1117] crisis)))
+        (,:[1117..1118] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1118..1118] *))
+          (VP (VBG:[1119..1129] indicating)
+            (NP
+              (NP (DT:[1130..1132] no) (JJ:[1134..1142] apparent)
+                  (NN:[1143..1154] correlation))
+              (PP (IN:[1155..1159] with)
+                (NP (NN:[1160..1167] disease) (NN:[1168..1173] stage))))))))
+    (.:[1173..1174] .)))
+
+;sentence 9 Span:1175..1335
+;Most of the patients with mutations  were in the older age group with poor
+;prognosis, although one patient in the  younger age group also harbored the
+;mutation.
+;[1201..1210]:variation-event:"mutations"
+;[1326..1334]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJS:[1175..1179] Most))
+      (PP (IN:[1180..1182] of)
+        (NP
+          (NP (DT:[1183..1186] the) (NNS:[1187..1195] patients))
+          (PP (IN:[1196..1200] with)
+            (NP (NNS:[1201..1210] mutations))))))
+    (VP (VBD:[1212..1216] were)
+      (PP-PRD (IN:[1217..1219] in)
+        (NP
+          (NP (DT:[1220..1223] the) (JJR:[1224..1229] older)
+              (NN:[1230..1233] age) (NN:[1234..1239] group))
+          (PP (IN:[1240..1244] with)
+            (NP (JJ:[1245..1249] poor) (NN:[1250..1259] prognosis)))))
+      (,:[1259..1260] ,)
+      (SBAR (IN:[1261..1269] although)
+        (S
+          (NP-SBJ
+            (NP (CD:[1270..1273] one) (NN:[1274..1281] patient))
+            (PP (IN:[1282..1284] in)
+              (NP (DT:[1285..1288] the) (JJR:[1290..1297] younger)
+                  (NN:[1298..1301] age) (NN:[1302..1307] group))))
+          (ADVP (RB:[1308..1312] also))
+          (VP (VBD:[1313..1321] harbored)
+            (NP (DT:[1322..1325] the) (NN:[1326..1334] mutation))))))
+    (.:[1334..1335] .)))
+
+;sentence 10 Span:1336..1514
+;These data suggest that N-ras gene  mutations may be involved in the
+;pathogenesis and/or prognosis of JCML and  provide further evidence that JCML
+;is an entity distinct from CML.
+;[1360..1365]:gene-rna:"N-ras"
+;[1438..1442]:malignancy:"JCML"
+;[1478..1482]:malignancy:"JCML"
+;[1510..1513]:malignancy:"CML"
+(SENT
+  (S
+    (NP-SBJ (DT:[1336..1341] These) (NNS:[1342..1346] data))
+    (VP
+      (VP (VBP:[1347..1354] suggest)
+        (SBAR (IN:[1355..1359] that)
+          (S
+            (NP-SBJ-1 (NN:[1360..1365] N-ras) (NN:[1366..1370] gene)
+                      (NNS:[1372..1381] mutations))
+            (VP (MD:[1382..1385] may)
+              (VP (VB:[1386..1388] be)
+                (VP (VBN:[1389..1397] involved)
+                  (NP-1 (-NONE-:[1397..1397] *))
+                  (PP-CLR (IN:[1398..1400] in)
+                    (NP
+                      (NP (DT:[1401..1404] the) (NN:[1405..1417] pathogenesis)
+                          (CC:[1418..1424] and/or) (NN:[1425..1434] prognosis))
+                      (PP (IN:[1435..1437] of)
+                        (NP (NN:[1438..1442] JCML)))))))))))
+      (CC:[1443..1446] and)
+      (VP (VBP:[1448..1455] provide)
+        (NP (JJ:[1456..1463] further) (NN:[1464..1472] evidence)
+          (SBAR (IN:[1473..1477] that)
+            (S
+              (NP-SBJ (NN:[1478..1482] JCML))
+              (VP (VBZ:[1483..1485] is)
+                (NP-PRD
+                  (NP (DT:[1486..1488] an) (NN:[1489..1495] entity))
+                  (ADJP (JJ:[1496..1504] distinct)
+                    (PP (IN:[1505..1509] from)
+                      (NP (NN:[1510..1513] CML)))))))))))
+    (.:[1513..1514] .)))
+
+;section 11 Span:1518..1562
+;PMID: 8161790 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1518..1522] PMID) (::[1522..1523] :) (CD:[1524..1531] 8161790)
+        (NN:[1532..1533] -LSB-) (NNP:[1533..1539] PubMed) (::[1540..1541] -)
+        (NN:[1542..1549] indexed) (IN:[1550..1553] for)
+        (NNP:[1554..1562] MEDLINE-RSB-)))

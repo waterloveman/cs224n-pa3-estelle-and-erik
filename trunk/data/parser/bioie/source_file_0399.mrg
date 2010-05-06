@@ -1,0 +1,443 @@
+;PMID: 8518837
+;source_file_1944.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..153] = [t:44..153]
+;2)section:[e:157..196] = [t:157..196]
+;3)section:[e:200..278] = [t:200..278]
+;4)sentence:[e:282..412] = [t:282..412]
+;5)sentence:[e:413..621] = [t:413..621]
+;6)sentence:[e:622..802] = [t:622..802]
+;7)sentence:[e:803..1048] = [t:803..1048]
+;8)sentence:[e:1049..1154] = [t:1049..1154]
+;9)sentence:[e:1155..1345] = [t:1155..1345]
+;10)sentence:[e:1346..1494] = [t:1346..1494]
+;11)sentence:[e:1495..1685] = [t:1495..1685]
+;12)sentence:[e:1686..1857] = [t:1686..1857]
+;13)section:[e:1861..1905] = [t:1861..1905]
+
+;section 0 Span:0..38
+;Pharmacogenetics. 1993 Apr;3(2):77-85.
+(SEC
+  (FRAG (NNP:[0..16] Pharmacogenetics) (,:[16..17] .) (CD:[18..22] 1993)
+        (CC:[23..29] Apr;3-LRB-) (CD:[29..30] 2) (-RRB-:[30..31] -RRB-)
+        (CD:[31..34] :77) (::[34..35] -) (CD:[35..37] 85) (.:[37..38] .)))
+
+;sentence 1 Span:44..153
+;Hepatic microsomal tolbutamide hydroxylation in Japanese: in vitro evidence
+;for  rapid and slow metabolizers.
+;[63..74]:substance:"tolbutamide"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[44..51] Hepatic) (JJ:[52..62] microsomal)
+          (NN:[63..74] tolbutamide) (NN:[75..88] hydroxylation))
+      (PP (IN:[89..91] in)
+        (NP (JJ:[92..100] Japanese))))
+    (::[100..101] :)
+    (NP
+      (NP
+        (ADJP (FW:[102..104] in) (FW:[105..110] vitro))
+        (NN:[111..119] evidence))
+      (PP (IN:[120..123] for)
+        (NP
+          (NP (JJ:[125..130] rapid)
+            (NML-1 (-NONE-:[130..130] *P*)))
+          (CC:[131..134] and)
+          (NP (JJ:[135..139] slow)
+            (NML-1 (NNS:[140..152] metabolizers))))))
+    (.:[152..153] .)))
+
+;section 2 Span:157..196
+;Chen LS, Yasumori T, Yamazoe Y, Kato R.
+(SEC
+  (FRAG (NNP:[157..161] Chen) (NNP:[162..164] LS) (,:[164..165] ,)
+        (NNP:[166..174] Yasumori) (NNP:[175..176] T) (,:[176..177] ,)
+        (NNP:[178..185] Yamazoe) (NNP:[186..187] Y) (,:[187..188] ,)
+        (NNP:[189..193] Kato) (NNP:[194..196] R.)))
+
+;section 3 Span:200..278
+;Department of Pharmacology, School of Medicine, Keio University, Tokyo,
+;Japan.
+(SEC
+  (FRAG (NNP:[200..210] Department) (IN:[211..213] of)
+        (NNP:[214..226] Pharmacology) (,:[226..227] ,) (NNP:[228..234] School)
+        (IN:[235..237] of) (NNP:[238..246] Medicine) (,:[246..247] ,)
+        (NNP:[248..252] Keio) (NNP:[253..263] University) (,:[263..264] ,)
+        (NNP:[265..270] Tokyo) (,:[270..271] ,) (NNP:[272..277] Japan)
+        (.:[277..278] .)))
+
+;sentence 4 Span:282..412
+;Microsomal hydroxylation of tolbutamide in Japanese livers was studied in
+;vitro  to ascertain the enzyme catalysing this reaction.
+;[310..321]:substance:"tolbutamide"
+;[380..386]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[282..292] Microsomal) (NN:[293..306] hydroxylation))
+      (PP (IN:[307..309] of)
+        (NP (NN:[310..321] tolbutamide)))
+      (PP-LOC (IN:[322..324] in)
+        (NP (JJ:[325..333] Japanese) (NNS:[334..340] livers))))
+    (VP (VBD:[341..344] was)
+      (VP (VBN:[345..352] studied)
+        (NP-1 (-NONE-:[352..352] *))
+        (ADVP (FW:[353..355] in) (FW:[356..361] vitro))
+        (S-PRP
+          (NP-SBJ (-NONE-:[361..361] *))
+          (VP (TO:[363..365] to)
+            (VP (VB:[366..375] ascertain)
+              (NP
+                (NP (DT:[376..379] the) (NN:[380..386] enzyme))
+                (VP (VBG:[387..397] catalysing)
+                  (NP (DT:[398..402] this) (NN:[403..411] reaction)))))))))
+    (.:[411..412] .)))
+
+;sentence 5 Span:413..621
+;Rates of tolbutamide  hydroxylation differed individually 33-fold and 42-fold
+;at 0.1 mM and 2.4 mM  tolbutamide concentrations, respectively, and were
+;segregated into two groups,  rapid and slow metabolizers.
+;[422..433]:substance:"tolbutamide"
+;[471..478]:quantitative-value:"33-fold"
+;[483..490]:quantitative-value:"42-fold"
+;[494..497]:quantitative-value:"0.1"
+;[498..500]:quantitative-units:"mM"
+;[505..508]:quantitative-value:"2.4"
+;[509..511]:quantitative-units:"mM"
+;[513..524]:substance:"tolbutamide"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (NNS:[413..418] Rates))
+      (PP (IN:[419..421] of)
+        (NP (NN:[422..433] tolbutamide) (NN:[435..448] hydroxylation))))
+    (VP
+      (VP (VBD:[449..457] differed)
+        (ADVP (RB:[458..470] individually))
+        (ADVP-EXT
+          (ADVP
+            (QP (CD:[471..473] 33) (HYPH:[473..474] -) (RB:[474..478] fold)))
+          (CC:[479..482] and)
+          (ADVP
+            (QP (CD:[483..485] 42) (HYPH:[485..486] -) (RB:[486..490] fold))))
+        (PP (IN:[491..493] at)
+          (NP
+            (NP
+              (NML
+                (NML (CD:[494..497] 0.1) (NN:[498..500] mM))
+                (NML-2 (-NONE-:[500..500] *P*)))
+              (NML-3 (-NONE-:[500..500] *P*)))
+            (CC:[501..504] and)
+            (NP
+              (NML
+                (NML (CD:[505..508] 2.4) (NN:[509..511] mM))
+                (NML-2 (NN:[513..524] tolbutamide)))
+              (NML-3 (NNS:[525..539] concentrations)))))
+        (,:[539..540] ,)
+        (ADVP (RB:[541..553] respectively)))
+      (,:[553..554] ,) (CC:[555..558] and)
+      (VP (VBD:[559..563] were)
+        (VP (VBN:[564..574] segregated)
+          (NP-4 (-NONE-:[574..574] *))
+          (PP (IN:[575..579] into)
+            (NP
+              (NP (CD:[580..583] two) (NNS:[584..590] groups))
+              (,:[590..591] ,)
+              (NP
+                (NP (JJ:[593..598] rapid)
+                  (NML-1 (-NONE-:[598..598] *P*)))
+                (CC:[599..602] and)
+                (NP (JJ:[603..607] slow)
+                  (NML-1 (NNS:[608..620] metabolizers)))))))))
+    (.:[620..621] .)))
+
+;sentence 6 Span:622..802
+;An antibody raised against P450 human-2 (a form of  CYP2C9) strongly
+;inhibited the hydroxylation in livers of rapid metabolizers but  only weakly
+;inhibited in the slow metabolizer.
+;[625..633]:substance:"antibody"
+;[649..661]:cyp450:"P450 human-2"
+;[674..680]:cyp450:"CYP2C9"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[622..624] An) (NN:[625..633] antibody))
+      (VP (VBN:[634..640] raised)
+        (NP (-NONE-:[640..640] *))
+        (PP (IN:[641..648] against)
+          (NP
+             (NN:[649..653] P450) (NN:[654..661] human-2)
+            (PRN (-LRB-:[662..663] -LRB-)
+              (NP
+                (NP (DT:[663..664] a) (NN:[665..669] form))
+                (PP (IN:[670..672] of)
+                  (NP (NN:[674..680] CYP2C9))))
+              (-RRB-:[680..681] -RRB-))))))
+    (VP
+      (VP
+        (ADVP (RB:[682..690] strongly))
+        (VBD:[691..700] inhibited)
+        (NP
+          (NP (DT:[701..704] the) (NN:[705..718] hydroxylation))
+          (PP-1 (-NONE-:[718..718] *ICH*)))
+        (PP-LOC (IN:[719..721] in)
+          (NP (NNS:[722..728] livers)))
+        (PP-1 (IN:[729..731] of)
+          (NP (JJ:[732..737] rapid) (NNS:[738..750] metabolizers))))
+      (CC:[751..754] but)
+      (VP
+        (ADVP (RB:[756..760] only))
+        (ADVP (RB:[761..767] weakly))
+        (VBD:[768..777] inhibited)
+        (PP (IN:[778..780] in)
+          (NP (DT:[781..784] the) (JJ:[785..789] slow)
+              (NN:[790..801] metabolizer)))))
+    (.:[801..802] .)))
+
+;sentence 7 Span:803..1048
+;Kinetic experiments further  demonstrated a clear distinction in tolbutamide
+;hydroxylation between two  groups; the mean of apparent Km values for
+;tolbutamide was 0.25 mM (n = 3) in  the rapid group and 2.58 mM (n = 2) in
+;the slow, respectively.
+;[868..879]:substance:"tolbutamide"
+;[936..938]:quantitative-name:"Km"
+;[950..961]:substance:"tolbutamide"
+;[966..970]:quantitative-value:"0.25"
+;[971..973]:quantitative-units:"mM"
+;[1006..1010]:quantitative-value:"2.58"
+;[1011..1013]:quantitative-units:"mM"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[803..810] Kinetic) (NNS:[811..822] experiments))
+      (ADVP (RB:[823..830] further))
+      (VP (VBD:[832..844] demonstrated)
+        (NP
+          (NP (DT:[845..846] a) (JJ:[847..852] clear)
+              (NN:[853..864] distinction))
+          (PP (IN:[865..867] in)
+            (NP (NN:[868..879] tolbutamide) (NN:[880..893] hydroxylation)))
+          (PP (IN:[894..901] between)
+            (NP (CD:[902..905] two) (NNS:[907..913] groups))))))
+    (::[913..914] ;)
+    (S
+      (NP-SBJ
+        (NP (DT:[915..918] the) (NN:[919..923] mean))
+        (PP (IN:[924..926] of)
+          (NP
+            (NP (JJ:[927..935] apparent) (NN:[936..938] Km)
+                (NNS:[939..945] values))
+            (PP (IN:[946..949] for)
+              (NP (NN:[950..961] tolbutamide))))))
+      (VP
+        (VP (VBD:[962..965] was)
+          (NP-PRD=1 (CD:[966..970] 0.25) (NN:[971..973] mM)
+            (PRN (-LRB-:[974..975] -LRB-)
+              (S
+                (NP-SBJ (NN:[975..976] n))
+                (VP (SYM:[977..978] =)
+                  (NP (CD:[979..980] 3))))
+              (-RRB-:[980..981] -RRB-)))
+          (PP=2 (IN:[982..984] in)
+            (NP (DT:[986..989] the) (JJ:[990..995] rapid) (NN:[996..1001] group))))
+        (CC:[1002..1005] and)
+        (VP
+          (NP-PRD=1 (CD:[1006..1010] 2.58) (NN:[1011..1013] mM)
+            (PRN (-LRB-:[1014..1015] -LRB-)
+              (S
+                (NP-SBJ (NN:[1015..1016] n))
+                (VP (SYM:[1017..1018] =)
+                  (NP (CD:[1019..1020] 2))))
+              (-RRB-:[1020..1021] -RRB-)))
+          (PP=2 (IN:[1022..1024] in)
+            (NP (DT:[1025..1028] the) (JJ:[1029..1033] slow))))
+        (,:[1033..1034] ,)
+        (ADVP (RB:[1035..1047] respectively))))
+    (.:[1047..1048] .)))
+
+;sentence 8 Span:1049..1154
+;These data  suggest that different enzymes are involved in the hydroxylation
+;in both  metabolizer groups.
+;[1084..1091]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ (DT:[1049..1054] These) (NNS:[1055..1059] data))
+    (VP (VBP:[1061..1068] suggest)
+      (SBAR (IN:[1069..1073] that)
+        (S
+          (NP-SBJ-1 (JJ:[1074..1083] different) (NNS:[1084..1091] enzymes))
+          (VP (VBP:[1092..1095] are)
+            (VP (VBN:[1096..1104] involved)
+              (NP-1 (-NONE-:[1104..1104] *))
+              (PP-CLR (IN:[1105..1107] in)
+                (NP
+                  (NP (DT:[1108..1111] the) (NN:[1112..1125] hydroxylation))
+                  (PP (IN:[1126..1128] in)
+                    (NP (DT:[1129..1133] both) (NN:[1135..1146] metabolizer)
+                        (NNS:[1147..1153] groups))))))))))
+    (.:[1153..1154] .)))
+
+;sentence 9 Span:1155..1345
+;Furthermore, CYP2C9 produced by cDNA expression in yeasts,  catalysed
+;tolbutamide hydroxylation at rates similar to the rapid metabolizer  group at
+;both the 0.1 mM and 2.4 mM concentrations.
+;[1168..1174]:cyp450:"CYP2C9"
+;[1187..1191]:substance:"cDNA"
+;[1225..1236]:substance:"tolbutamide"
+;[1312..1315]:quantitative-value:"0.1"
+;[1316..1318]:quantitative-units:"mM"
+;[1323..1326]:quantitative-value:"2.4"
+;[1327..1329]:quantitative-units:"mM"
+(SENT
+  (S
+    (ADVP (RB:[1155..1166] Furthermore))
+    (,:[1166..1167] ,)
+    (NP-SBJ
+      (NP (NN:[1168..1174] CYP2C9))
+      (VP (VBN:[1175..1183] produced)
+        (NP (-NONE-:[1183..1183] *))
+        (PP (IN:[1184..1186] by)
+          (NP-LGS (NN:[1187..1191] cDNA) (NN:[1192..1202] expression)))
+        (PP-LOC (IN:[1203..1205] in)
+          (NP (NNS:[1206..1212] yeasts)))))
+    (,:[1212..1213] ,)
+    (VP (VBD:[1215..1224] catalysed)
+      (NP (NN:[1225..1236] tolbutamide) (NN:[1237..1250] hydroxylation))
+      (PP (IN:[1251..1253] at)
+        (NP
+          (NP (NNS:[1254..1259] rates))
+          (ADJP (JJ:[1260..1267] similar)
+            (PP (TO:[1268..1270] to)
+              (NP (DT:[1271..1274] the) (JJ:[1275..1280] rapid)
+                  (NN:[1281..1292] metabolizer) (NN:[1294..1299] group))))
+          (PP (IN:[1300..1302] at)
+            (NP (CC:[1303..1307] both) (DT:[1308..1311] the)
+              (NML
+                (NML
+                  (NML (CD:[1312..1315] 0.1) (NN:[1316..1318] mM))
+                  (NML-1 (-NONE-:[1318..1318] *P*)))
+                (CC:[1319..1322] and)
+                (NML
+                  (NML (CD:[1323..1326] 2.4) (NN:[1327..1329] mM))
+                  (NML-1 (NNS:[1330..1344] concentrations)))))))))
+    (.:[1344..1345] .)))
+
+;sentence 10 Span:1346..1494
+;The apparent Km value of the  expressed protein for tolbutamide, 0.26 mM, was
+;similar to that determined for  the rapid group of microsomal samples.
+;[1359..1361]:quantitative-name:"Km"
+;[1386..1393]:substance:"protein"
+;[1398..1409]:substance:"tolbutamide"
+;[1411..1415]:quantitative-value:"0.26"
+;[1416..1418]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1346..1349] The) (JJ:[1350..1358] apparent)
+            (NN:[1359..1361] Km) (NN:[1362..1367] value))
+        (PP (IN:[1368..1370] of)
+          (NP (DT:[1371..1374] the) (VBN:[1376..1385] expressed)
+              (NN:[1386..1393] protein)))
+        (PP (IN:[1394..1397] for)
+          (NP (NN:[1398..1409] tolbutamide))))
+      (,:[1409..1410] ,)
+      (NP (CD:[1411..1415] 0.26) (NN:[1416..1418] mM)))
+    (,:[1418..1419] ,)
+    (VP (VBD:[1420..1423] was)
+      (ADJP-PRD (JJ:[1424..1431] similar)
+        (PP (TO:[1432..1434] to)
+          (NP
+            (NP (DT:[1435..1439] that))
+            (VP (VBN:[1440..1450] determined)
+              (NP (-NONE-:[1450..1450] *))
+              (PP (IN:[1451..1454] for)
+                (NP
+                  (NP (DT:[1456..1459] the) (JJ:[1460..1465] rapid)
+                      (NN:[1466..1471] group))
+                  (PP (IN:[1472..1474] of)
+                    (NP (JJ:[1475..1485] microsomal) (NNS:[1486..1493] samples))))))))))
+    (.:[1493..1494] .)))
+
+;sentence 11 Span:1495..1685
+;Clear correlations were observed between  the rate of microsomal tolbutamide
+;hydroxylation at 0.1 mM and CYP2C9 protein  content or the rate of
+;S-mephenytoin 4'-hydroxylation in human liver.
+;[1560..1571]:substance:"tolbutamide"
+;[1589..1592]:quantitative-value:"0.1"
+;[1593..1595]:quantitative-units:"mM"
+;[1600..1614]:cyp450:"CYP2C9 protein"
+;[1639..1652]:substance:"S-mephenytoin"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[1495..1500] Clear) (NNS:[1501..1513] correlations))
+    (VP (VBD:[1514..1518] were)
+      (VP (VBN:[1519..1527] observed)
+        (NP-1 (-NONE-:[1527..1527] *))
+        (PP (IN:[1528..1535] between)
+          (NP
+            (NP
+              (NP (DT:[1537..1540] the) (NN:[1541..1545] rate))
+              (PP (IN:[1546..1548] of)
+                (NP (JJ:[1549..1559] microsomal) (NN:[1560..1571] tolbutamide)
+                    (NN:[1572..1585] hydroxylation)))
+              (PP (IN:[1586..1588] at)
+                (NP (CD:[1589..1592] 0.1) (NN:[1593..1595] mM))))
+            (CC:[1596..1599] and)
+            (NP
+              (NP
+                (NP
+                   (NN:[1600..1606] CYP2C9) (NN:[1607..1614] protein)
+                  (NN:[1616..1623] content))
+                (CC:[1624..1626] or)
+                (NP
+                  (NP (DT:[1627..1630] the) (NN:[1631..1635] rate))
+                  (PP (IN:[1636..1638] of)
+                    (NP (NN:[1639..1652] S-mephenytoin)
+                        (NN:[1653..1669] 4'-hydroxylation)))))
+              (PP (IN:[1670..1672] in)
+                (NP (JJ:[1673..1678] human) (NN:[1679..1684] liver))))))))
+    (.:[1684..1685] .)))
+
+;sentence 12 Span:1686..1857
+;These  results indicate that considerable portions of microsomal tolbutamide 
+;hydroxylation are catalysed by CYP2C9 or the closely related form in the
+;rapid  metabolizers.
+;[1751..1762]:substance:"tolbutamide"
+;[1795..1801]:cyp450:"CYP2C9"
+(SENT
+  (S
+    (NP-SBJ (DT:[1686..1691] These) (NNS:[1693..1700] results))
+    (VP (VBP:[1701..1709] indicate)
+      (SBAR (IN:[1710..1714] that)
+        (S
+          (NP-SBJ-1
+            (NP (JJ:[1715..1727] considerable) (NNS:[1728..1736] portions))
+            (PP (IN:[1737..1739] of)
+              (NP (JJ:[1740..1750] microsomal) (NN:[1751..1762] tolbutamide)
+                  (NN:[1764..1777] hydroxylation))))
+          (VP (VBP:[1778..1781] are)
+            (VP (VBN:[1782..1791] catalysed)
+              (NP-1 (-NONE-:[1791..1791] *))
+              (PP (IN:[1792..1794] by)
+                (NP-LGS
+                  (NP (NN:[1795..1801] CYP2C9))
+                  (CC:[1802..1804] or)
+                  (NP (DT:[1805..1808] the)
+                    (ADJP (RB:[1809..1816] closely) (VBN:[1817..1824] related))
+                    (NN:[1825..1829] form))))
+              (PP (IN:[1830..1832] in)
+                (NP (DT:[1833..1836] the) (JJ:[1837..1842] rapid)
+                    (NNS:[1844..1856] metabolizers))))))))
+    (.:[1856..1857] .)))
+
+;section 13 Span:1861..1905
+;PMID: 8518837 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1861..1865] PMID) (::[1865..1866] :) (CD:[1867..1874] 8518837)
+        (NN:[1875..1876] -LSB-) (NNP:[1876..1882] PubMed) (::[1883..1884] -)
+        (NN:[1885..1892] indexed) (IN:[1893..1896] for)
+        (NNP:[1897..1905] MEDLINE-RSB-)))

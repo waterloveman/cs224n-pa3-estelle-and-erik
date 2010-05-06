@@ -1,0 +1,425 @@
+;PMID: 3345196
+;source_file_1799.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..145] = [t:49..145]
+;2)section:[e:149..164] = [t:149..164]
+;3)section:[e:168..253] = [t:168..253]
+;4)sentence:[e:257..402] = [t:257..402]
+;5)sentence:[e:403..536] = [t:403..536]
+;6)sentence:[e:537..819] = [t:537..819]
+;7)sentence:[e:820..1147] = [t:820..1147]
+;8)sentence:[e:1148..1348] = [t:1148..1348]
+;9)sentence:[e:1349..1617] = [t:1349..1617]
+;10)sentence:[e:1618..1721] = [t:1618..1721]
+;11)section:[e:1725..1769] = [t:1725..1769]
+
+;section 0 Span:0..43
+;Biochem Pharmacol. 1988 Mar 1;37(5):781-91.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1988) (NNP:[24..27] Mar) (CD:[28..32] 1;37)
+        (-LRB-:[32..33] -LRB-) (CD:[33..34] 5) (-RRB-:[34..35] -RRB-)
+        (CD:[35..39] :781) (::[39..40] -) (CD:[40..42] 91) (.:[42..43] .)))
+
+;sentence 1 Span:49..145
+;Stimulation of the conjugation of lipid dienes in hepatic microsomes by 
+;3,3'-dichlorobenzidine.
+;[83..95]:substance:"lipid dienes"
+;[122..144]:substance:"3,3'-dichlorobenzidine"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..60] Stimulation))
+    (PP (IN:[61..63] of)
+      (NP
+        (NP (DT:[64..67] the) (NN:[68..79] conjugation))
+        (PP (IN:[80..82] of)
+          (NP (NN:[83..88] lipid) (NNS:[89..95] dienes)))))
+    (PP-LOC (IN:[96..98] in)
+      (NP (JJ:[99..106] hepatic) (NNS:[107..117] microsomes)))
+    (PP (IN:[118..120] by)
+      (NP (NN:[122..144] 3,3'-dichlorobenzidine)))
+    (.:[144..145] .)))
+
+;section 2 Span:149..164
+;Iba MM, Lang B.
+(SEC
+  (FRAG (NNP:[149..152] Iba) (NNP:[153..155] MM) (,:[155..156] ,)
+        (NNP:[157..161] Lang) (NNP:[162..164] B.)))
+
+;section 3 Span:168..253
+;Department of Pharmacology and Toxicology, Rutgers University, Piscataway, NJ
+; 08854.
+(SEC
+  (FRAG (NNP:[168..178] Department) (IN:[179..181] of)
+        (NNP:[182..194] Pharmacology) (CC:[195..198] and)
+        (NNP:[199..209] Toxicology) (,:[209..210] ,) (NNP:[211..218] Rutgers)
+        (NNP:[219..229] University) (,:[229..230] ,) (NNP:[231..241] Piscataway)
+        (,:[241..242] ,) (NNP:[243..245] NJ) (CD:[247..252] 08854)
+        (.:[252..253] .)))
+
+;sentence 4 Span:257..402
+;Pretreatment of male rats with 3,3'-dichlorobenzidine (DCB) resulted in the 
+;accumulation of conjugated dienes in lipids from hepatic microsomes.
+;[288..310]:substance:"3,3'-dichlorobenzidine"
+;[312..315]:substance:"DCB"
+;[361..367]:substance:"dienes"
+;[371..377]:substance:"lipids"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[257..269] Pretreatment))
+      (PP (IN:[270..272] of)
+        (NP (JJ:[273..277] male) (NNS:[278..282] rats)))
+      (PP (IN:[283..287] with)
+        (NP
+          (NP (NN:[288..310] 3,3'-dichlorobenzidine))
+          (NP (-LRB-:[311..312] -LRB-) (NN:[312..315] DCB)
+              (-RRB-:[315..316] -RRB-)))))
+    (VP (VBD:[317..325] resulted)
+      (PP-CLR (IN:[326..328] in)
+        (NP
+          (NP (DT:[329..332] the) (NN:[334..346] accumulation))
+          (PP (IN:[347..349] of)
+            (NP (VBN:[350..360] conjugated) (NNS:[361..367] dienes)))))
+      (PP-LOC (IN:[368..370] in)
+        (NP
+          (NP (NNS:[371..377] lipids))
+          (PP (IN:[378..382] from)
+            (NP (JJ:[383..390] hepatic) (NNS:[391..401] microsomes))))))
+    (.:[401..402] .)))
+
+;sentence 5 Span:403..536
+;In vitro,  these microsomes had 2-fold the NADPH-dependent malondialdehyde
+;(MDA)-forming  capacity of microsomes from untreated rats.
+;[435..441]:quantitative-value:"2-fold"
+;[446..451]:substance:"NADPH"
+;[462..477]:substance:"malondialdehyde"
+;[479..482]:substance:"MDA"
+(SENT
+  (S
+    (ADVP (FW:[403..405] In) (FW:[406..411] vitro))
+    (,:[411..412] ,)
+    (NP-SBJ (DT:[414..419] these) (NNS:[420..430] microsomes))
+    (VP (VBD:[431..434] had)
+      (NP
+        (NP
+          (ADVP (CD:[435..436] 2) (HYPH:[436..437] -) (RB:[437..441] fold))
+          (DT:[442..445] the)
+          (ADJP (NN:[446..451] NADPH) (HYPH:[451..452] -)
+                (JJ:[452..461] dependent))
+          (ADJP
+            (NML
+              (NML (NN:[462..477] malondialdehyde))
+              (NML (-LRB-:[478..479] -LRB-) (NN:[479..482] MDA)
+                   (-RRB-:[482..483] -RRB-)))
+            (HYPH:[483..484] -) (VBG:[484..491] forming))
+          (NN:[493..501] capacity))
+        (PP (IN:[502..504] of)
+          (NP
+            (NP (NNS:[505..515] microsomes))
+            (PP (IN:[516..520] from)
+              (NP (JJ:[521..530] untreated) (NNS:[531..535] rats)))))))
+    (.:[535..536] .)))
+
+;sentence 6 Span:537..819
+;To determine the mechanisms of the  DCB-induced accumulation of diene
+;conjugation, the effects of added DCB on  NADPH- or iron + ascorbic acid-
+;(Fe2+-ascorbate-) dependent diene conjugation,  oxygen uptake and MDA
+;formation were examined in microsomes from untreated rats  in vitro.
+;[573..576]:substance:"DCB"
+;[601..606]:substance:"diene"
+;[641..644]:substance:"DCB"
+;[649..654]:substance:"NADPH"
+;[659..663]:substance:"iron"
+;[666..679]:substance:"ascorbic acid"
+;[682..685]:substance:"Fe2"
+;[687..696]:substance:"ascorbate"
+;[709..714]:substance:"diene"
+;[729..735]:substance:"oxygen"
+;[747..750]:substance:"MDA"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[537..537] *))
+      (VP (TO:[537..539] To)
+        (VP (VB:[540..549] determine)
+          (NP
+            (NP (DT:[550..553] the) (NNS:[554..564] mechanisms))
+            (PP (IN:[565..567] of)
+              (NP
+                (NP (DT:[568..571] the)
+                  (ADJP (NN:[573..576] DCB) (HYPH:[576..577] -)
+                        (VBN:[577..584] induced))
+                  (NN:[585..597] accumulation))
+                (PP (IN:[598..600] of)
+                  (NP (NN:[601..606] diene) (NN:[607..618] conjugation)))))))))
+    (,:[618..619] ,)
+    (NP-SBJ-3
+      (NP (DT:[620..623] the) (NNS:[624..631] effects))
+      (PP (IN:[632..634] of)
+        (NP (VBN:[635..640] added) (NN:[641..644] DCB)))
+      (PP (IN:[645..647] on)
+        (NP
+          (NP
+            (NP
+              (ADJP (NN:[649..654] NADPH) (HYPH:[654..655] -)
+                (ADJP-2 (-NONE-:[655..655] *P*)))
+              (NML-1 (-NONE-:[655..655] *P*)))
+            (CC:[656..658] or)
+            (NP
+              (ADJP
+                (NML
+                  (NML
+                    (NML (NN:[659..663] iron))
+                    (SYM:[664..665] +)
+                    (NML (JJ:[666..674] ascorbic) (NN:[675..679] acid)))
+                  (HYPH:[679..680] -)
+                  (NML (-LRB-:[681..682] -LRB-) (NN:[682..685] Fe2)
+                       (SYM:[685..686] +) (HYPH:[686..687] -)
+                       (NN:[687..696] ascorbate) (HYPH:[696..697] -)
+                       (-RRB-:[697..698] -RRB-)))
+                (ADJP-2 (JJ:[699..708] dependent)))
+              (NML-1 (NN:[709..714] diene) (NN:[715..726] conjugation))))
+          (,:[726..727] ,)
+          (NP (NN:[729..735] oxygen) (NN:[736..742] uptake))
+          (CC:[743..746] and)
+          (NP (NN:[747..750] MDA) (NN:[751..760] formation)))))
+    (VP (VBD:[761..765] were)
+      (VP (VBN:[766..774] examined)
+        (NP-3 (-NONE-:[774..774] *))
+        (PP-LOC (IN:[775..777] in)
+          (NP
+            (NP (NNS:[778..788] microsomes))
+            (PP (IN:[789..793] from)
+              (NP (JJ:[794..803] untreated) (NNS:[804..808] rats)))))
+        (ADVP (FW:[810..812] in) (FW:[813..818] vitro))))
+    (.:[818..819] .)))
+
+;sentence 7 Span:820..1147
+;In the presence of NADPH, added DCB stimulated diene conjugation in 
+;microsomal lipids as did in vivo DCB pretreatment but inhibited the uptake of
+; oxygen and the formation of MDA. When Fe2+-ascorbate was substituted for
+;NADPH,  the formation of diene conjugation, oxygen uptake, and MDA formation
+;were  inhibited by added DCB.
+;[839..844]:substance:"NADPH"
+;[852..855]:substance:"DCB"
+;[867..872]:substance:"diene"
+;[900..906]:substance:"lipids"
+;[922..925]:substance:"DCB"
+;[968..974]:substance:"oxygen"
+;[996..999]:substance:"MDA"
+;[1006..1010]:substance:"Fe2+"
+;[1011..1020]:substance:"ascorbate"
+;[1041..1046]:substance:"NADPH"
+;[1066..1071]:substance:"diene"
+;[1085..1091]:substance:"oxygen"
+;[1104..1107]:substance:"MDA"
+;[1143..1146]:substance:"DCB"
+(SENT
+  (S
+    (PP (IN:[820..822] In)
+      (NP
+        (NP (DT:[823..826] the) (NN:[827..835] presence))
+        (PP (IN:[836..838] of)
+          (NP (NN:[839..844] NADPH)))))
+    (,:[844..845] ,)
+    (NP-SBJ (VBN:[846..851] added) (NN:[852..855] DCB))
+    (VP
+      (VP (VBD:[856..866] stimulated)
+        (NP (NN:[867..872] diene) (NN:[873..884] conjugation))
+        (PP-LOC (IN:[885..887] in)
+          (NP (JJ:[889..899] microsomal) (NNS:[900..906] lipids)))
+        (SBAR-ADV (IN:[907..909] as)
+          (SINV (VBD:[910..913] did)
+            (NP-SBJ
+              (ADJP (FW:[914..916] in) (FW:[917..921] vivo))
+              (NN:[922..925] DCB) (NN:[926..938] pretreatment))
+            (VP (-NONE-:[938..938] *?*)))))
+      (CC:[939..942] but)
+      (VP (VBD:[943..952] inhibited)
+        (NP
+          (NP
+            (NP (DT:[953..956] the) (NN:[957..963] uptake))
+            (PP (IN:[964..966] of)
+              (NP (NN:[968..974] oxygen))))
+          (CC:[975..978] and)
+          (NP
+            (NP (DT:[979..982] the) (NN:[983..992] formation))
+            (PP (IN:[993..995] of)
+              (NP (NN:[996..999] MDA)))))))
+    (.:[999..1000] .))
+  (S
+    (SBAR-TMP
+      (WHADVP-2 (WRB:[1001..1005] When))
+      (S
+        (NP-SBJ-1
+          (NML (NN:[1006..1009] Fe2) (SYM:[1009..1010] +))
+          (HYPH:[1010..1011] -) (NN:[1011..1020] ascorbate))
+        (VP (VBD:[1021..1024] was)
+          (VP (VBN:[1025..1036] substituted)
+            (NP-1 (-NONE-:[1036..1036] *))
+            (PP (IN:[1037..1040] for)
+              (NP (NN:[1041..1046] NADPH)))
+            (ADVP-2 (-NONE-:[1046..1046] *T*))))))
+    (,:[1046..1047] ,)
+    (NP-SBJ-4
+      (NP
+        (NP (DT:[1049..1052] the) (NN:[1053..1062] formation))
+        (PP (IN:[1063..1065] of)
+          (NP (NN:[1066..1071] diene) (NN:[1072..1083] conjugation))))
+      (,:[1083..1084] ,)
+      (NP (NN:[1085..1091] oxygen) (NN:[1092..1098] uptake))
+      (,:[1098..1099] ,) (CC:[1100..1103] and)
+      (NP (NN:[1104..1107] MDA) (NN:[1108..1117] formation)))
+    (VP (VBD:[1118..1122] were)
+      (VP (VBN:[1124..1133] inhibited)
+        (NP-4 (-NONE-:[1133..1133] *))
+        (PP (IN:[1134..1136] by)
+          (NP-LGS (VBN:[1137..1142] added) (NN:[1143..1146] DCB)))))
+    (.:[1146..1147] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[820..1147]::S:S:
+
+;sentence 8 Span:1148..1348
+;The DCB-induced stimulation of diene conjugation, in  addition to being
+;strictly NADPH dependent, was carbon monoxide sensitive and  was concomitant
+;with the binding of added DCB to microsomal lipids.
+;[1152..1155]:substance:"DCB"
+;[1179..1184]:substance:"diene"
+;[1229..1234]:substance:"NADPH"
+;[1250..1265]:substance:"carbon monoxide"
+;[1323..1326]:substance:"DCB"
+;[1341..1347]:substance:"lipids"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1148..1151] The)
+          (ADJP (NN:[1152..1155] DCB) (HYPH:[1155..1156] -)
+                (VBN:[1156..1163] induced))
+          (NN:[1164..1175] stimulation))
+        (PP (IN:[1176..1178] of)
+          (NP (NN:[1179..1184] diene) (NN:[1185..1196] conjugation))))
+      (,:[1196..1197] ,)
+      (PP (IN:[1198..1200] in)
+        (NP
+          (NP (NN:[1202..1210] addition))
+          (PP (TO:[1211..1213] to)
+            (S-NOM
+              (NP-SBJ (-NONE-:[1213..1213] *))
+              (VP (VBG:[1214..1219] being)
+                (ADJP-PRD (RB:[1220..1228] strictly) (NN:[1229..1234] NADPH)
+                          (JJ:[1235..1244] dependent))))))))
+    (,:[1244..1245] ,)
+    (VP
+      (VP (VBD:[1246..1249] was)
+        (ADJP-PRD
+          (NML (NN:[1250..1256] carbon) (NN:[1257..1265] monoxide))
+          (JJ:[1266..1275] sensitive)))
+      (CC:[1276..1279] and)
+      (VP (VBD:[1281..1284] was)
+        (ADJP-PRD (JJ:[1285..1296] concomitant)
+          (PP (IN:[1297..1301] with)
+            (NP
+              (NP (DT:[1302..1305] the) (NN:[1306..1313] binding))
+              (PP (IN:[1314..1316] of)
+                (NP (VBN:[1317..1322] added) (NN:[1323..1326] DCB)))
+              (PP (TO:[1327..1329] to)
+                (NP (JJ:[1330..1340] microsomal) (NNS:[1341..1347] lipids))))))))
+    (.:[1347..1348] .)))
+
+;sentence 9 Span:1349..1617
+;It is  postulated that a metabolite of DCB generated by cytochrome P-450
+;reacts with  membrane lipids both in vivo and in vitro in a manner analogous
+;to the  initiation of lipid peroxidation but at the same time prevents the
+;autocatalytic  decomposition of the lipids.
+;[1374..1384]:substance:"metabolite"
+;[1388..1391]:substance:"DCB"
+;[1405..1421]:cyp450:"cytochrome P-450"
+;[1444..1450]:substance:"lipids"
+;[1521..1526]:substance:"lipid"
+;[1610..1616]:substance:"lipids"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (PRP:[1349..1351] It))
+      (SBAR-2 (-NONE-:[1351..1351] *EXP*)))
+    (VP (VBZ:[1352..1354] is)
+      (VP (VBN:[1356..1366] postulated)
+        (NP-1 (-NONE-:[1366..1366] *))
+        (SBAR-2 (IN:[1367..1371] that)
+          (S
+            (NP-SBJ
+              (NP
+                (NP (DT:[1372..1373] a) (NN:[1374..1384] metabolite))
+                (PP (IN:[1385..1387] of)
+                  (NP (NN:[1388..1391] DCB))))
+              (VP (VBN:[1392..1401] generated)
+                (NP (-NONE-:[1401..1401] *))
+                (PP (IN:[1402..1404] by)
+                  (NP-LGS (NN:[1405..1415] cytochrome) (NN:[1416..1421] P-450)))))
+            (VP
+              (VP (VBZ:[1422..1428] reacts)
+                (PP-CLR (IN:[1429..1433] with)
+                  (NP (NN:[1435..1443] membrane) (NNS:[1444..1450] lipids)))
+                (ADVP (CC:[1451..1455] both)
+                  (ADVP (FW:[1456..1458] in) (FW:[1459..1463] vivo))
+                  (CC:[1464..1467] and)
+                  (ADVP (FW:[1468..1470] in) (FW:[1471..1476] vitro)))
+                (PP (IN:[1477..1479] in)
+                  (NP
+                    (NP (DT:[1480..1481] a) (NN:[1482..1488] manner))
+                    (ADJP (JJ:[1489..1498] analogous)
+                      (PP (TO:[1499..1501] to)
+                        (NP
+                          (NP (DT:[1502..1505] the) (NN:[1507..1517] initiation))
+                          (PP (IN:[1518..1520] of)
+                            (NP (NN:[1521..1526] lipid)
+                                (NN:[1527..1539] peroxidation)))))))))
+              (CC:[1540..1543] but)
+              (VP
+                (PP-TMP (IN:[1544..1546] at)
+                  (NP (DT:[1547..1550] the) (JJ:[1551..1555] same)
+                      (NN:[1556..1560] time)))
+                (VBZ:[1561..1569] prevents)
+                (NP
+                  (NP (DT:[1570..1573] the) (JJ:[1574..1587] autocatalytic)
+                      (NN:[1589..1602] decomposition))
+                  (PP (IN:[1603..1605] of)
+                    (NP (DT:[1606..1609] the) (NNS:[1610..1616] lipids))))))))))
+    (.:[1616..1617] .)))
+
+;sentence 10 Span:1618..1721
+;The DCB-induced diene conjugation is interpreted as  predisposing to
+;deleterious changes in microsomes.
+;[1622..1625]:substance:"DCB"
+;[1634..1639]:substance:"diene"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1618..1621] The)
+      (ADJP (NN:[1622..1625] DCB) (HYPH:[1625..1626] -)
+            (VBN:[1626..1633] induced))
+      (NN:[1634..1639] diene) (NN:[1640..1651] conjugation))
+    (VP (VBZ:[1652..1654] is)
+      (VP (VBN:[1655..1666] interpreted)
+        (NP-1 (-NONE-:[1666..1666] *))
+        (PP-CLR (IN:[1667..1669] as)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1669..1669] *))
+            (VP (VBG:[1671..1683] predisposing)
+              (PP (TO:[1684..1686] to)
+                (NP
+                  (NP (JJ:[1687..1698] deleterious) (NNS:[1699..1706] changes))
+                  (PP (IN:[1707..1709] in)
+                    (NP (NNS:[1710..1720] microsomes))))))))))
+    (.:[1720..1721] .)))
+
+;section 11 Span:1725..1769
+;PMID: 3345196 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1725..1729] PMID) (::[1729..1730] :) (CD:[1731..1738] 3345196)
+        (NN:[1739..1740] -LSB-) (NNP:[1740..1746] PubMed) (::[1747..1748] -)
+        (NN:[1749..1756] indexed) (IN:[1757..1760] for)
+        (NNP:[1761..1769] MEDLINE-RSB-)))

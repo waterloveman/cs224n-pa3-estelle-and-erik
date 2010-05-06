@@ -1,0 +1,330 @@
+;PMID: 7830489
+;source_file_2963.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:36..93] = [t:36..93]
+;2)section:[e:97..141] = [t:97..141]
+;3)section:[e:145..185] = [t:145..185]
+;4)sentence:[e:189..289] = [t:189..289]
+;5)sentence:[e:290..416] = [t:290..416]
+;6)sentence:[e:417..735] = [t:417..735]
+;7)sentence:[e:736..833] = [t:736..833]
+;8)sentence:[e:834..1054] = [t:834..1054]
+;9)sentence:[e:1055..1129] = [t:1055..1129]
+;10)sentence:[e:1130..1262] = [t:1130..1262]
+;11)sentence:[e:1263..1479] = [t:1263..1479]
+;12)section:[e:1483..1527] = [t:1483..1527]
+
+;section 0 Span:0..30
+;Life Sci.  1995;56(1):PL19-25.
+(SEC
+  (FRAG (NNP:[0..4] Life) (NNP:[5..8] Sci) (.:[8..9] .) (CD:[11..15] 1995)
+        (::[15..16] ;) (CD:[16..18] 56) (-LRB-:[18..19] -LRB-) (CD:[19..20] 1)
+        (-RRB-:[20..21] -RRB-) (::[21..22] :) (NN:[22..29] PL19-25)
+        (.:[29..30] .)))
+
+;sentence 1 Span:36..93
+;Adrenomedullin mediates vasodilation via CGRP1 receptors.
+;[36..50]:gene-protein:"Adrenomedullin"
+;[77..92]:gene-protein:"CGRP1 receptors"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[36..50] Adrenomedullin))
+    (VP (VBZ:[51..59] mediates)
+      (NP (NN:[60..72] vasodilation))
+      (PP-MNR (IN:[73..76] via)
+        (NP (NN:[77..82] CGRP1) (NNS:[83..92] receptors))))
+    (.:[92..93] .)))
+
+;section 2 Span:97..141
+;Entzeroth M, Doods HN, Wieland HA, Wienen W.
+(SEC
+  (FRAG (NNP:[97..106] Entzeroth) (NNP:[107..108] M) (,:[108..109] ,)
+        (NNP:[110..115] Doods) (NNP:[116..118] HN) (,:[118..119] ,)
+        (NNP:[120..127] Wieland) (NNP:[128..130] HA) (,:[130..131] ,)
+        (NNP:[132..138] Wienen) (NNP:[139..140] W) (.:[140..141] .)))
+
+;section 3 Span:145..185
+;Dr. Karl Thomae GmbH, Biberach, Germany.
+(SEC
+  (FRAG (NNP:[145..147] Dr) (.:[147..148] .) (NNP:[149..153] Karl)
+        (NNP:[154..160] Thomae) (NNP:[161..165] GmbH) (,:[165..166] ,)
+        (NNP:[167..175] Biberach) (,:[175..176] ,) (NNP:[177..184] Germany)
+        (.:[184..185] .)))
+
+;sentence 4 Span:189..289
+;Adrenomedullin is a recently discovered 52 amino acid polypeptide with potent
+; hypotensive activity.
+;[189..203]:gene-protein:"Adrenomedullin"
+(SENT
+  (S
+    (NP-SBJ (NN:[189..203] Adrenomedullin))
+    (VP (VBZ:[204..206] is)
+      (NP-PRD
+        (NP (DT:[207..208] a)
+          (ADJP (RB:[209..217] recently) (VBN:[218..228] discovered))
+          (NML (CD:[229..231] 52) (JJ:[232..237] amino) (NN:[238..242] acid))
+          (NN:[243..254] polypeptide))
+        (PP (IN:[255..259] with)
+          (NP (JJ:[260..266] potent) (JJ:[268..279] hypotensive)
+              (NN:[280..288] activity)))))
+    (.:[288..289] .)))
+
+;sentence 5 Span:290..416
+;The peptide possesses 21% homology with the amino acid  sequence of human
+;calcitonin gene-related peptide-alpha (hCGRP-alpha).
+;[364..401]:gene-protein:"calcitonin gene-related peptide-alpha"
+;[403..414]:gene-protein:"hCGRP-alpha"
+(SENT
+  (S
+    (NP-SBJ (DT:[290..293] The) (NN:[294..301] peptide))
+    (VP (VBZ:[302..311] possesses)
+      (NP
+        (NP
+          (NML (CD:[312..314] 21) (NN:[314..315] %))
+          (NN:[316..324] homology))
+        (PP (IN:[325..329] with)
+          (NP
+            (NP (DT:[330..333] the)
+              (NML (JJ:[334..339] amino) (NN:[340..344] acid))
+              (NN:[346..354] sequence))
+            (PP (IN:[355..357] of)
+              (NP
+                (NP (JJ:[358..363] human)
+                   (NN:[364..374] calcitonin)
+                  (ADJP (NN:[375..379] gene) (HYPH:[379..380] -)
+                        (VBN:[380..387] related))
+                  (SYM:[388..401] peptide-alpha))
+                (NP (-LRB-:[402..403] -LRB-) (NN:[403..414] hCGRP-alpha)
+                    (-RRB-:[414..415] -RRB-))))))))
+    (.:[415..416] .)))
+
+;sentence 6 Span:417..735
+;In  125I-hCGRP-alpha receptor binding experiments using membranes from human 
+;neuroblastoma cells (SK-N-MC) adrenomedullin is a potent competitor with a Ki
+;of  0.37 nM. In SK-N-MC cells hCGRP-alpha and adrenomedullin 
+;concentration-dependently increase cAMP levels with -logEC50 values of 9.65
+;and  7.75, respectively.
+;[421..446]:gene-protein:"125I-hCGRP-alpha receptor"
+;[495..508]:malignancy-type:"neuroblastoma"
+;[525..539]:gene-protein:"adrenomedullin"
+;[603..614]:gene-protein:"hCGRP-alpha"
+;[619..633]:gene-protein:"adrenomedullin"
+(SENT
+  (S
+    (PP (IN:[417..419] In)
+      (NP
+        (NP
+          (NML (NN:[421..437] 125I-hCGRP-alpha) (NN:[438..446] receptor))
+          (NN:[447..454] binding) (NNS:[455..466] experiments))
+        (VP (VBG:[467..472] using)
+          (NP
+            (NP (NNS:[473..482] membranes))
+            (PP (IN:[483..487] from)
+              (NP (JJ:[488..493] human) (NN:[495..508] neuroblastoma)
+                  (NNS:[509..514] cells)))
+            (PRN (-LRB-:[515..516] -LRB-)
+              (NP (NN:[516..523] SK-N-MC))
+              (-RRB-:[523..524] -RRB-))))))
+    (NP-SBJ (NN:[525..539] adrenomedullin))
+    (VP (VBZ:[540..542] is)
+      (NP-PRD
+        (NP (DT:[543..544] a) (JJ:[545..551] potent) (NN:[552..562] competitor))
+        (PP (IN:[563..567] with)
+          (NP
+            (NP (DT:[568..569] a) (NN:[570..572] Ki))
+            (PP (IN:[573..575] of)
+              (NP (CD:[577..581] 0.37) (NN:[582..584] nM)))))))
+    (.:[584..585] .))
+  (S
+    (PP-LOC (IN:[586..588] In)
+      (NP (NN:[589..596] SK-N-MC) (NNS:[597..602] cells)))
+    (NP-SBJ (NN:[603..614] hCGRP-alpha) (CC:[615..618] and)
+            (NN:[619..633] adrenomedullin))
+    (ADVP (NN:[635..648] concentration) (HYPH:[648..649] -)
+          (RB:[649..660] dependently))
+    (VP (VBP:[661..669] increase)
+      (NP
+        (NP (NN:[670..674] cAMP) (NNS:[675..681] levels))
+        (PP (IN:[682..686] with)
+          (NP
+            (NP (NN:[687..695] -logEC50) (NNS:[696..702] values))
+            (PP (IN:[703..705] of)
+              (NP (CD:[706..710] 9.65) (CC:[711..714] and) (CD:[716..720] 7.75))))))
+      (,:[720..721] ,)
+      (ADVP (RB:[722..734] respectively)))
+    (.:[734..735] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[417..735]::S:S:
+
+;sentence 7 Span:736..833
+;Both responses were attenuated in the presence of 30 nM  CGRP[8-37], a CGRP1
+;receptor antagonist.
+;[807..821]:gene-protein:"CGRP1 receptor"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[736..740] Both) (NNS:[741..750] responses))
+    (VP (VBD:[751..755] were)
+      (VP (VBN:[756..766] attenuated)
+        (NP-1 (-NONE-:[766..766] *))
+        (PP (IN:[767..769] in)
+          (NP
+            (NP (DT:[770..773] the) (NN:[774..782] presence))
+            (PP (IN:[783..785] of)
+              (NP
+                (NP (CD:[786..788] 30) (NN:[789..791] nM)
+                    (NN:[793..803] CGRP-LSB-8-37-RSB-))
+                (,:[803..804] ,)
+                (NP (DT:[805..806] a)
+                  (NML (NN:[807..812] CGRP1) (NN:[813..821] receptor))
+                  (NN:[822..832] antagonist))))))))
+    (.:[832..833] .)))
+
+;sentence 8 Span:834..1054
+;In isolated rat hearts, perfused at  constant flow, bolus infusion of
+;adrenomedullin (1 to 100 nM) resulted in a  concentration-dependent,
+;pronounced and long-lasting vasodilation with an  approximate EC50 of about 3
+;nM.
+;[904..918]:gene-protein:"adrenomedullin"
+(SENT
+  (S
+    (PP-LOC (IN:[834..836] In)
+      (NP
+        (NP (VBN:[837..845] isolated) (NN:[846..849] rat)
+            (NNS:[850..856] hearts))
+        (,:[856..857] ,)
+        (VP (VBN:[858..866] perfused)
+          (NP (-NONE-:[866..866] *))
+          (PP (IN:[867..869] at)
+            (NP (JJ:[871..879] constant) (NN:[880..884] flow))))))
+    (,:[884..885] ,)
+    (NP-SBJ
+      (NP (NN:[886..891] bolus) (NN:[892..900] infusion))
+      (PP (IN:[901..903] of)
+        (NP (NN:[904..918] adrenomedullin)
+          (PRN (-LRB-:[919..920] -LRB-)
+            (NP
+              (QP (CD:[920..921] 1) (TO:[922..924] to) (CD:[925..928] 100))
+              (NN:[929..931] nM))
+            (-RRB-:[931..932] -RRB-)))))
+    (VP (VBD:[933..941] resulted)
+      (PP-CLR (IN:[942..944] in)
+        (NP (DT:[945..946] a)
+          (ADJP
+            (ADJP (NN:[948..961] concentration) (HYPH:[961..962] -)
+                  (JJ:[962..971] dependent))
+            (,:[971..972] ,)
+            (ADJP (JJ:[973..983] pronounced))
+            (CC:[984..987] and)
+            (ADJP (JJ:[988..992] long) (HYPH:[992..993] -)
+                  (VBG:[993..1000] lasting)))
+          (NN:[1001..1013] vasodilation)))
+      (PP (IN:[1014..1018] with)
+        (NP
+          (NP (DT:[1019..1021] an) (JJ:[1023..1034] approximate)
+              (NN:[1035..1039] EC50))
+          (PP (IN:[1040..1042] of)
+            (NP
+              (QP (RB:[1043..1048] about) (CD:[1049..1050] 3))
+              (NN:[1051..1053] nM))))))
+    (.:[1053..1054] .)))
+
+;sentence 9 Span:1055..1129
+;This effect was markedly attenuated in the  presence of 100 nM CGRP[8-37].
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1055..1059] This) (NN:[1060..1066] effect))
+    (VP (VBD:[1067..1070] was)
+      (ADVP (RB:[1071..1079] markedly))
+      (VP (VBN:[1080..1090] attenuated)
+        (NP-1 (-NONE-:[1090..1090] *))
+        (PP (IN:[1091..1093] in)
+          (NP
+            (NP (DT:[1094..1097] the) (NN:[1099..1107] presence))
+            (PP (IN:[1108..1110] of)
+              (NP
+                (NML (CD:[1111..1114] 100) (NN:[1115..1117] nM))
+                (NN:[1118..1128] CGRP-LSB-8-37-RSB-)))))))
+    (.:[1128..1129] .)))
+
+;sentence 10 Span:1130..1262
+;In this model, bolus infusion of hCGRP-alpha  (0.01 to 100 nM) evoked a
+;comparable vasodilation with an approximate EC50 of  0.5 nM.
+;[1163..1174]:gene-protein:"hCGRP-alpha"
+(SENT
+  (S
+    (PP (IN:[1130..1132] In)
+      (NP (DT:[1133..1137] this) (NN:[1138..1143] model)))
+    (,:[1143..1144] ,)
+    (NP-SBJ
+      (NP (NN:[1145..1150] bolus) (NN:[1151..1159] infusion))
+      (PP (IN:[1160..1162] of)
+        (NP (NN:[1163..1174] hCGRP-alpha)))
+      (PRN (-LRB-:[1176..1177] -LRB-)
+        (NP
+          (QP (CD:[1177..1181] 0.01) (TO:[1182..1184] to) (CD:[1185..1188] 100))
+          (NN:[1189..1191] nM))
+        (-RRB-:[1191..1192] -RRB-)))
+    (VP (VBD:[1193..1199] evoked)
+      (NP (DT:[1200..1201] a) (JJ:[1202..1212] comparable)
+          (NN:[1213..1225] vasodilation))
+      (PP (IN:[1226..1230] with)
+        (NP
+          (NP (DT:[1231..1233] an) (JJ:[1234..1245] approximate)
+              (NN:[1246..1250] EC50))
+          (PP (IN:[1251..1253] of)
+            (NP (CD:[1255..1258] 0.5) (NN:[1259..1261] nM))))))
+    (.:[1261..1262] .)))
+
+;sentence 11 Span:1263..1479
+;This effect was also potently inhibited in the presence of CGRP[8-37].  These
+;results suggest that adrenomedullin-mediated vasodilation is linked to the 
+;activation of CGRP1 receptors in the coronary vascular system.
+;[1362..1376]:gene-protein:"adrenomedullin"
+;[1431..1446]:gene-protein:"CGRP1 receptors"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[1263..1267] This) (NN:[1268..1274] effect))
+      (VP (VBD:[1275..1278] was)
+        (ADVP (RB:[1279..1283] also))
+        (ADVP (RB:[1284..1292] potently))
+        (VP (VBN:[1293..1302] inhibited)
+          (NP-1 (-NONE-:[1302..1302] *))
+          (PP (IN:[1303..1305] in)
+            (NP
+              (NP (DT:[1306..1309] the) (NN:[1310..1318] presence))
+              (PP (IN:[1319..1321] of)
+                (NP (NN:[1322..1332] CGRP-LSB-8-37-RSB-)))))))
+      (.:[1332..1333] .))
+    (S
+      (NP-SBJ (DT:[1335..1340] These) (NNS:[1341..1348] results))
+      (VP (VBP:[1349..1356] suggest)
+        (SBAR (IN:[1357..1361] that)
+          (S
+            (NP-SBJ-2
+              (ADJP (NN:[1362..1376] adrenomedullin) (HYPH:[1376..1377] -)
+                    (VBN:[1377..1385] mediated))
+              (NN:[1386..1398] vasodilation))
+            (VP (VBZ:[1399..1401] is)
+              (VP (VBN:[1402..1408] linked)
+                (NP-2 (-NONE-:[1408..1408] *))
+                (PP (TO:[1409..1411] to)
+                  (NP
+                    (NP (DT:[1412..1415] the) (NN:[1417..1427] activation))
+                    (PP (IN:[1428..1430] of)
+                      (NP (NN:[1431..1436] CGRP1)
+                        (NML (NNS:[1437..1446] receptors))))
+                    (PP (IN:[1447..1449] in)
+                      (NP (DT:[1450..1453] the) (JJ:[1454..1462] coronary)
+                          (JJ:[1463..1471] vascular) (NN:[1472..1478] system)))))))))))
+    (.:[1478..1479] .)))
+
+;section 12 Span:1483..1527
+;PMID: 7830489 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1483..1487] PMID) (::[1487..1488] :) (CD:[1489..1496] 7830489)
+        (NN:[1497..1498] -LSB-) (NNP:[1498..1504] PubMed) (::[1505..1506] -)
+        (NN:[1507..1514] indexed) (IN:[1515..1518] for)
+        (NNP:[1519..1526] MEDLINE) (-RRB-:[1526..1527] -RSB-)))

@@ -1,0 +1,345 @@
+;PMID: 7902340
+;source_file_688.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..134] = [t:43..134]
+;2)section:[e:138..210] = [t:138..210]
+;3)section:[e:214..311] = [t:214..311]
+;4)sentence:[e:315..539] = [t:315..539]
+;5)sentence:[e:540..708] = [t:540..708]
+;6)sentence:[e:710..866] = [t:710..866]
+;7)sentence:[e:868..1046] = [t:868..1046]
+;8)sentence:[e:1047..1223] = [t:1047..1223]
+;9)sentence:[e:1224..1405] = [t:1224..1405]
+;10)section:[e:1409..1453] = [t:1409..1453]
+
+;section 0 Span:0..38
+;Int J Cancer  1993 Nov 11;55(5):785-90
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..12] Cancer) (CD:[14..18] 1993)
+        (CC:[19..22] Nov) (CD:[23..29] 11;55-LRB-) (CD:[29..30] 5)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :785) (::[35..36] -)
+        (CD:[36..38] 90)))
+
+;sentence 1 Span:43..134
+;Screening of human bladder tumors and urine sediments for the presence of
+;H-ras  mutations.
+;[62..76]:malignancy:"bladder tumors"
+;[117..122]:gene-rna:"H-ras"
+(SENT
+  (NP
+    (NP (NN:[43..52] Screening))
+    (PP (IN:[53..55] of)
+      (NP
+        (NP
+          (ADJP-1 (JJ:[56..61] human))
+           (NN:[62..69] bladder) (NNS:[70..76] tumors))
+        (CC:[77..80] and)
+        (NP
+          (ADJP-1 (-NONE-:[80..80] *P*))
+          (NN:[81..86] urine) (NNS:[87..96] sediments))))
+    (PP (IN:[97..100] for)
+      (NP
+        (NP (DT:[101..104] the) (NN:[105..113] presence))
+        (PP (IN:[114..116] of)
+          (NP (NN:[117..122] H-ras) (NNS:[124..133] mutations)))))
+    (.:[133..134] .)))
+
+;section 2 Span:138..210
+;Levesque P, Ramchurren N, Saini K, Joyce A, Libertino J, Summerhayes IC.
+(SEC
+  (FRAG (NNP:[138..146] Levesque) (NNP:[147..148] P) (,:[148..149] ,)
+        (NNP:[150..160] Ramchurren) (NNP:[161..162] N) (,:[162..163] ,)
+        (NNP:[164..169] Saini) (NNP:[170..171] K) (,:[171..172] ,)
+        (NNP:[173..178] Joyce) (NNP:[179..180] A) (,:[180..181] ,)
+        (NNP:[182..191] Libertino) (NNP:[192..194] J,)
+        (NNP:[195..206] Summerhayes) (NNP:[207..209] IC) (.:[209..210] .)))
+
+;section 3 Span:214..311
+;Department of Surgery, New England Deaconess Hospital, Harvard Medical
+;School,  Boston, MA 02215.
+(SEC
+  (FRAG (NNP:[214..224] Department) (IN:[225..227] of) (NNP:[228..235] Surgery)
+        (,:[235..236] ,) (NNP:[237..240] New) (NNP:[241..248] England)
+        (NNP:[249..258] Deaconess) (NNP:[259..267] Hospital) (,:[267..268] ,)
+        (NNP:[269..276] Harvard) (NNP:[277..284] Medical)
+        (NNP:[285..291] School) (,:[291..292] ,) (NNP:[294..300] Boston)
+        (,:[300..301] ,) (NNP:[302..304] MA) (CD:[305..310] 02215)
+        (.:[310..311] .)))
+
+;sentence 4 Span:315..539
+;A series of 111 human bladder tumors were screened using oligonucleotide
+;mutant  specific probes, restriction enzyme analysis and single-stranded
+;confirmation  polymorphism (SSCP) for the presence of H-ras activation
+;events.
+;[337..351]:malignancy:"bladder tumors"
+;[515..520]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[315..316] A) (NN:[317..323] series))
+      (PP (IN:[324..326] of)
+        (NP (CD:[327..330] 111) (JJ:[331..336] human)
+           (NN:[337..344] bladder) (NNS:[345..351] tumors))))
+    (VP (VBD:[352..356] were)
+      (VP (VBN:[357..365] screened)
+        (NP-1 (-NONE-:[365..365] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[365..365] *))
+          (VP (VBG:[366..371] using)
+            (NP
+              (NP (NN:[372..387] oligonucleotide)
+                (ADJP (JJ:[388..394] mutant) (JJ:[396..404] specific))
+                (NNS:[405..411] probes))
+              (,:[411..412] ,)
+              (NP
+                (NML (NN:[413..424] restriction) (NN:[425..431] enzyme))
+                (NN:[432..440] analysis))
+              (CC:[441..444] and)
+              (NP
+                (NP
+                  (ADJP (JJ:[445..451] single) (HYPH:[451..452] -)
+                        (JJ:[452..460] stranded))
+                  (NN:[461..473] confirmation) (NN:[475..487] polymorphism))
+                (NP (-LRB-:[488..489] -LRB-) (NN:[489..493] SSCP)
+                    (-RRB-:[493..494] -RRB-))))))
+        (PP-CLR (IN:[495..498] for)
+          (NP
+            (NP (DT:[499..502] the) (NN:[503..511] presence))
+            (PP (IN:[512..514] of)
+              (NP (NN:[515..520] H-ras) (NN:[521..531] activation)
+                  (NNS:[532..538] events)))))))
+    (.:[538..539] .)))
+
+;sentence 5 Span:540..708
+;Thirty-three  tumors were found to harbor H-ras mutations where a glycine to
+;valine (G-->T)  change in codon 12 was the most common point mutation
+;recorded (26 tumors).
+;[554..560]:malignancy:"tumors"
+;[582..587]:gene-rna:"H-ras"
+;[588..597]:variation-event:"mutations"
+;[606..613]:variation-state-original:"glycine"
+;[617..623]:variation-state-altered:"valine"
+;[625..626]:variation-state-original:"G"
+;[629..630]:variation-state-altered:"T"
+;[643..651]:variation-location:"codon 12"
+;[672..686]:variation-type:"point mutation"
+;[700..706]:malignancy:"tumors"
+(SENT
+  (S
+    (NP-SBJ-2 (CD:[540..552] Thirty-three) (NNS:[554..560] tumors))
+    (VP (VBD:[561..565] were)
+      (VP (VBN:[566..571] found)
+        (S
+          (NP-SBJ-2 (-NONE-:[571..571] *))
+          (VP (TO:[572..574] to)
+            (VP (VB:[575..581] harbor)
+              (NP (NN:[582..587] H-ras) (NNS:[588..597] mutations)))))
+        (SBAR-ADV (WRB:[598..603] where)
+          (S
+            (NP-SBJ
+              (NP (DT:[604..605] a)
+                (NML
+                  (NML (NN:[606..613] glycine))
+                  (PP (TO:[614..616] to)
+                    (NP (NN:[617..623] valine)
+                      (PRN (-LRB-:[624..625] -LRB-)
+                        (NP
+                          (NP (NN:[625..626] G))
+                          (PP (SYM:[626..629] -->)
+                            (NP (NN:[629..630] T))))
+                        (-RRB-:[630..631] -RRB-)))))
+                (NN:[633..639] change))
+              (PP-LOC (IN:[640..642] in)
+                (NP (NN:[643..648] codon) (CD:[649..651] 12))))
+            (VP (VBD:[652..655] was)
+              (NP-PRD
+                (NP (DT:[656..659] the)
+                  (ADJP (RBS:[660..664] most) (JJ:[665..671] common))
+                   (NN:[672..677] point) (NN:[678..686] mutation))
+                (VP (VBN:[687..695] recorded)
+                  (NP (-NONE-:[695..695] *))
+                  (PRN (-LRB-:[696..697] -LRB-)
+                    (NP (CD:[697..699] 26) (NNS:[700..706] tumors))
+                    (-RRB-:[706..707] -RRB-)))))))))
+    (.:[707..708] .)))
+
+;sentence 6 Span:710..866
+;Additional mutations involved glycine to cysteine at codon 13 (2 tumors) and 
+;glutamine to arginine/lysine/leucine at codon 61 (3/1/1 tumors,
+;respectively).
+;[721..730]:variation-event:"mutations"
+;[740..747]:variation-state-original:"glycine"
+;[751..759]:variation-state-altered:"cysteine"
+;[763..771]:variation-location:"codon 13"
+;[775..781]:malignancy:"tumors"
+;[788..797]:variation-state-original:"glutamine"
+;[801..809]:variation-state-altered:"arginine"
+;[810..816]:variation-state-altered:"lysine"
+;[817..824]:variation-state-altered:"leucine"
+;[828..836]:variation-location:"codon 61"
+;[844..850]:malignancy:"tumors"
+(SENT
+  (S
+    (NP-SBJ (JJ:[710..720] Additional) (NNS:[721..730] mutations))
+    (VP (VBD:[731..739] involved)
+      (NP
+        (NP
+          (NP (NN:[740..747] glycine))
+          (PP (TO:[748..750] to)
+            (NP
+              (NP (NN:[751..759] cysteine))
+              (PP-LOC (IN:[760..762] at)
+                (NP
+                   (NN:[763..768] codon) (CD:[769..771] 13)
+                  (PRN (-LRB-:[772..773] -LRB-)
+                    (NP (CD:[773..774] 2) (NNS:[775..781] tumors))
+                    (-RRB-:[781..782] -RRB-)))))))
+        (CC:[783..786] and)
+        (NP
+          (NP (NN:[788..797] glutamine))
+          (PP (TO:[798..800] to)
+            (NP
+              (NP (NN:[801..809] arginine) (SYM:[809..810] /)
+                  (NN:[810..816] lysine) (SYM:[816..817] /)
+                  (NN:[817..824] leucine))
+              (PP-LOC (IN:[825..827] at)
+                (NP
+                   (NN:[828..833] codon) (CD:[834..836] 61)
+                  (PRN (-LRB-:[837..838] -LRB-)
+                    (NP
+                      (NP (CD:[838..839] 3) (SYM:[839..840] /) (CD:[840..841] 1)
+                          (SYM:[841..842] /) (CD:[842..843] 1)
+                          (NNS:[844..850] tumors))
+                      (,:[850..851] ,)
+                      (ADVP (RB:[852..864] respectively)))
+                    (-RRB-:[864..865] -RRB-)))))))))
+    (.:[865..866] .)))
+
+;sentence 7 Span:868..1046
+;Ambiguous signals recorded with oligonucleotide probes were further analyzed 
+;using SSCP analysis revealing the presence of H-ras mutations in restricted 
+;regions of some tumors.
+;[992..997]:gene-rna:"H-ras"
+;[1039..1045]:malignancy:"tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[868..877] Ambiguous) (NNS:[878..885] signals))
+      (VP (VBN:[886..894] recorded)
+        (NP (-NONE-:[894..894] *))
+        (PP (IN:[895..899] with)
+          (NP (NN:[900..915] oligonucleotide) (NNS:[916..922] probes)))))
+    (VP (VBD:[923..927] were)
+      (ADVP (RB:[928..935] further))
+      (VP (VBN:[936..944] analyzed)
+        (NP-1 (-NONE-:[944..944] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[944..944] *))
+          (VP (VBG:[946..951] using)
+            (NP (NN:[952..956] SSCP) (NN:[957..965] analysis))))
+        (S-ADV
+          (NP-SBJ (-NONE-:[965..965] *))
+          (VP (VBG:[966..975] revealing)
+            (NP
+              (NP (DT:[976..979] the) (NN:[980..988] presence))
+              (PP (IN:[989..991] of)
+                (NP
+                  (NP (NN:[992..997] H-ras) (NNS:[998..1007] mutations))
+                  (PP (IN:[1008..1010] in)
+                    (NP
+                      (NP (VBN:[1011..1021] restricted)
+                          (NNS:[1023..1030] regions))
+                      (PP (IN:[1031..1033] of)
+                        (NP (DT:[1034..1038] some) (NNS:[1039..1045] tumors))))))))))))
+    (.:[1045..1046] .)))
+
+;sentence 8 Span:1047..1223
+;The apparent sensitivity of SSCP enabled us to extend  this study to DNA
+;isolated from urine sediments where 4 of the 9 patients  studied showed
+;representation of mutant H-ras.
+;[1217..1222]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1047..1050] The) (JJ:[1051..1059] apparent)
+          (NN:[1060..1071] sensitivity))
+      (PP (IN:[1072..1074] of)
+        (NP (NN:[1075..1079] SSCP))))
+    (VP (VBD:[1080..1087] enabled)
+      (S
+        (NP-SBJ (PRP:[1088..1090] us))
+        (VP (TO:[1091..1093] to)
+          (VP (VB:[1094..1100] extend)
+            (NP (DT:[1102..1106] this) (NN:[1107..1112] study))
+            (PP (TO:[1113..1115] to)
+              (NP
+                (NP (NN:[1116..1119] DNA))
+                (VP (VBN:[1120..1128] isolated)
+                  (NP (-NONE-:[1128..1128] *))
+                  (PP (IN:[1129..1133] from)
+                    (NP (NN:[1134..1139] urine) (NNS:[1140..1149] sediments))))))
+            (SBAR-ADV (WRB:[1150..1155] where)
+              (S
+                (NP-SBJ
+                  (NP (CD:[1156..1157] 4))
+                  (PP (IN:[1158..1160] of)
+                    (NP
+                      (NP (DT:[1161..1164] the) (CD:[1165..1166] 9)
+                          (NNS:[1167..1175] patients))
+                      (VP (VBN:[1177..1184] studied)
+                        (NP (-NONE-:[1184..1184] *))))))
+                (VP (VBD:[1185..1191] showed)
+                  (NP
+                    (NP (NN:[1192..1206] representation))
+                    (PP (IN:[1207..1209] of)
+                      (NP (JJ:[1210..1216] mutant) (NN:[1217..1222] H-ras)))))))))))
+    (.:[1222..1223] .)))
+
+;sentence 9 Span:1224..1405
+;Our study demonstrates a  sensitive, non-invasive assay for the screening of
+;urine-borne cells, with no  requirement for prior knowledge of the mutational
+;change at the H-ras locus.
+;[1393..1398]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1224..1227] Our) (NN:[1228..1233] study))
+    (VP (VBZ:[1234..1246] demonstrates)
+      (NP
+        (NP (DT:[1247..1248] a) (JJ:[1250..1259] sensitive) (,:[1259..1260] ,)
+          (ADJP (AFX:[1261..1264] non) (HYPH:[1264..1265] -)
+                (JJ:[1265..1273] invasive))
+          (NN:[1274..1279] assay))
+        (PP (IN:[1280..1283] for)
+          (NP
+            (NP (DT:[1284..1287] the) (NN:[1288..1297] screening))
+            (PP (IN:[1298..1300] of)
+              (NP
+                (NML (NN:[1301..1306] urine) (HYPH:[1306..1307] -)
+                     (VBN:[1307..1312] borne))
+                (NNS:[1313..1318] cells)))))
+        (,:[1318..1319] ,)
+        (PP (IN:[1320..1324] with)
+          (NP
+            (NP (DT:[1325..1327] no) (NN:[1329..1340] requirement))
+            (PP (IN:[1341..1344] for)
+              (NP
+                (NP (JJ:[1345..1350] prior) (NN:[1351..1360] knowledge))
+                (PP (IN:[1361..1363] of)
+                  (NP
+                    (NP (DT:[1364..1367] the) (JJ:[1368..1378] mutational)
+                        (NN:[1379..1385] change))
+                    (PP-LOC (IN:[1386..1388] at)
+                      (NP (DT:[1389..1392] the) (NN:[1393..1398] H-ras)
+                          (NN:[1399..1404] locus)))))))))))
+    (.:[1404..1405] .)))
+
+;section 10 Span:1409..1453
+;PMID: 7902340 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1409..1413] PMID) (::[1413..1414] :) (CD:[1415..1422] 7902340)
+        (NN:[1423..1424] -LSB-) (NNP:[1424..1430] PubMed) (::[1431..1432] -)
+        (NN:[1433..1440] indexed) (IN:[1441..1444] for)
+        (NNP:[1445..1453] MEDLINE-RSB-)))

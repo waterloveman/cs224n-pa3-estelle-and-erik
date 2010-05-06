@@ -1,0 +1,630 @@
+;PMID: 10218951
+;source_file_849.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..230] = [t:45..230]
+;2)section:[e:234..287] = [t:234..287]
+;3)section:[e:291..389] = [t:291..389]
+;4)sentence:[e:393..625] = [t:393..625]
+;5)sentence:[e:627..796] = [t:627..796]
+;6)sentence:[e:797..950] = [t:797..950]
+;7)sentence:[e:952..1065] = [t:952..1065]
+;8)sentence:[e:1066..1219] = [t:1066..1219]
+;9)sentence:[e:1220..1460] = [t:1220..1460]
+;10)sentence:[e:1461..1629] = [t:1461..1629]
+;11)sentence:[e:1630..1725] = [t:1630..1725]
+;12)sentence:[e:1726..1944] = [t:1726..1944]
+;13)sentence:[e:1945..2105] = [t:1945..2105]
+;14)sentence:[e:2106..2201] = [t:2106..2201]
+;15)sentence:[e:2202..2427] = [t:2202..2427]
+;16)sentence:[e:2428..2584] = [t:2428..2584]
+;17)section:[e:2588..2633] = [t:2588..2633]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[90..92] D3
+;ERROR_Token in entity file but not tree[92..93] -
+;ERROR_Token in entity file but not tree[93..111] 1alpha-hydroxylase
+;ERROR_Token in tree file but not entity[90..111] D3-1alpha-hydroxylase
+
+;section 0 Span:0..39
+;Endocrinology. 1999 May;140(5):2027-34.
+(SEC
+  (FRAG (NNP:[0..13] Endocrinology) (,:[13..14] .) (CD:[15..19] 1999)
+        (NNP:[20..23] May) (CD:[23..28] ;140-LRB-) (CD:[28..29] 5)
+        (-RRB-:[29..30] -RRB-) (CD:[30..35] :2027) (::[35..36] -)
+        (CD:[36..38] 34) (.:[38..39] .)))
+
+;sentence 1 Span:45..230
+;Constitutive expression of 25-hydroxyvitamin D3-1alpha-hydroxylase in a 
+;transformed human proximal tubule cell line: evidence for direct regulation
+;of  vitamin D metabolism by calcium.
+;[72..111]:cyp450:"25-hydroxyvitamin D3-1alpha-hydroxylase"
+;[198..207]:substance:"vitamin D"
+;[222..229]:substance:"calcium"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[45..57] Constitutive) (NN:[58..68] expression))
+      (PP (IN:[69..71] of)
+        (NP (NN:[72..89] 25-hydroxyvitamin) (NN:[90..111] D3-1alpha-hydroxylase)))
+      (PP-LOC (IN:[112..114] in)
+        (NP (DT:[115..116] a) (JJ:[118..129] transformed) (JJ:[130..135] human)
+          (NML (JJ:[136..144] proximal) (NN:[145..151] tubule))
+          (NN:[152..156] cell) (NN:[157..161] line))))
+    (::[161..162] :)
+    (NP
+      (NP (NN:[163..171] evidence))
+      (PP (IN:[172..175] for)
+        (NP
+          (NP (JJ:[176..182] direct) (NN:[183..193] regulation))
+          (PP (IN:[194..196] of)
+            (NP
+              (NML (NN:[198..205] vitamin) (NN:[206..207] D))
+              (NN:[208..218] metabolism)))
+          (PP (IN:[219..221] by)
+            (NP (NN:[222..229] calcium))))))
+    (.:[229..230] .)))
+
+;section 2 Span:234..287
+;Bland R, Walker EA, Hughes SV, Stewart PM, Hewison M.
+(SEC
+  (FRAG (NNP:[234..239] Bland) (NNP:[240..242] R,) (NNP:[243..249] Walker)
+        (NNS:[250..252] EA) (,:[252..253] ,) (NNP:[254..260] Hughes)
+        (NNP:[261..263] SV) (,:[263..264] ,) (NNP:[265..272] Stewart)
+        (NNP:[273..275] PM) (,:[275..276] ,) (NNP:[277..284] Hewison)
+        (NNP:[285..287] M.)))
+
+;section 3 Span:291..389
+;Department of Medicine, Institute of Clinical Research, University of 
+;Birmingham, United Kingdom.
+(SEC
+  (FRAG (NNP:[291..301] Department) (IN:[302..304] of) (NNP:[305..313] Medicine)
+        (,:[313..314] ,) (NNP:[315..324] Institute) (IN:[325..327] of)
+        (NNP:[328..336] Clinical) (NNP:[337..345] Research) (,:[345..346] ,)
+        (NNP:[347..357] University) (IN:[358..360] of)
+        (NNP:[362..372] Birmingham) (,:[372..373] ,) (NNP:[374..380] United)
+        (NNP:[381..388] Kingdom) (.:[388..389] .)))
+
+;sentence 4 Span:393..625
+;Circulating levels of the active form of vitamin D, 1,25-dihydroxyvitamin D3 
+;(1,25-(OH)2D3) are dependent on activity of the renal mitochondrial
+;cytochrome  P450 enzyme, 25-hydroxyvitamin D3-1alpha-hydroxylase
+;(1alpha-hydroxylase).
+;[434..443]:substance:"vitamin D"
+;[445..469]:substance:"1,25-dihydroxyvitamin D3"
+;[472..484]:substance:"1,25-(OH)2D3"
+;[539..562]:cyp450:"cytochrome  P450 enzyme"
+;[564..603]:cyp450:"25-hydroxyvitamin D3-1alpha-hydroxylase"
+;[605..623]:cyp450:"1alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (VBG:[393..404] Circulating) (NNS:[405..411] levels))
+      (PP (IN:[412..414] of)
+        (NP
+          (NP
+            (NP (DT:[415..418] the) (JJ:[419..425] active) (NN:[426..430] form))
+            (PP (IN:[431..433] of)
+              (NP (NN:[434..441] vitamin) (NN:[442..443] D))))
+          (,:[443..444] ,)
+          (NP
+            (NP (NN:[445..466] 1,25-dihydroxyvitamin) (NN:[467..469] D3))
+            (NP (-LRB-:[471..472] -LRB-) (NN:[472..484] 1,25--LRB-OH-RRB-2D3)
+                (-RRB-:[484..485] -RRB-))))))
+    (VP (VBP:[486..489] are)
+      (ADJP-PRD (JJ:[490..499] dependent)
+        (PP (IN:[500..502] on)
+          (NP
+            (NP (NN:[503..511] activity))
+            (PP (IN:[512..514] of)
+              (NP
+                (NP (DT:[515..518] the) (JJ:[519..524] renal)
+                    (JJ:[525..538] mitochondrial)
+                  
+                  (NML (NN:[539..549] cytochrome) (NN:[551..555] P450))
+                  (NN:[556..562] enzyme))
+                (,:[562..563] ,)
+                (NP
+                  (NP (NN:[564..581] 25-hydroxyvitamin)
+                      (NN:[582..603] D3-1alpha-hydroxylase))
+                  (NP (-LRB-:[604..605] -LRB-)
+                      (NN:[605..623] 1alpha-hydroxylase)
+                      (-RRB-:[623..624] -RRB-)))))))))
+    (.:[624..625] .)))
+
+;sentence 5 Span:627..796
+;Production of 1,25-(OH)2D3 occurs predominantly in the renal proximal tubule,
+; with 1alpha-hydroxylase activity being impaired in renal insufficiency and
+;renal  disease.
+;[641..653]:substance:"1,25-(OH)2D3"
+;[711..729]:cyp450:"1alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[627..637] Production))
+      (PP (IN:[638..640] of)
+        (NP (NN:[641..653] 1,25--LRB-OH-RRB-2D3))))
+    (VP (VBZ:[654..660] occurs)
+      (ADVP (RB:[661..674] predominantly))
+      (PP-LOC (IN:[675..677] in)
+        (NP (DT:[678..681] the) (JJ:[682..687] renal) (JJ:[688..696] proximal)
+            (NN:[697..703] tubule)))
+      (,:[703..704] ,)
+      (PP (IN:[706..710] with)
+        (S-NOM
+          (NP-SBJ-1 (NN:[711..729] 1alpha-hydroxylase) (NN:[730..738] activity))
+          (VP (VBG:[739..744] being)
+            (VP (VBN:[745..753] impaired)
+              (NP-1 (-NONE-:[753..753] *))
+              (PP (IN:[754..756] in)
+                (NP
+                  (NP (JJ:[757..762] renal) (NN:[763..776] insufficiency))
+                  (CC:[777..780] and)
+                  (NP (JJ:[781..786] renal) (NN:[788..795] disease)))))))))
+    (.:[795..796] .)))
+
+;sentence 6 Span:797..950
+;The expression and activity of 1alpha-hydroxylase are tightly regulated  in
+;response to serum levels of PTH, calcium, phosphate, and 1,25-(OH)2D3
+;itself.
+;[828..846]:cyp450:"1alpha-hydroxylase"
+;[885..890]:substance:"serum"
+;[901..904]:substance:"PTH"
+;[906..913]:substance:"calcium"
+;[915..924]:substance:"phosphate"
+;[930..942]:substance:"1,25-(OH)2D3"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[797..800] The) (NN:[801..811] expression) (CC:[812..815] and)
+          (NN:[816..824] activity))
+      (PP (IN:[825..827] of)
+        (NP (NN:[828..846] 1alpha-hydroxylase))))
+    (VP (VBP:[847..850] are)
+      (ADVP (RB:[851..858] tightly))
+      (VP (VBN:[859..868] regulated)
+        (NP-1 (-NONE-:[868..868] *))
+        (PP (IN:[870..872] in)
+          (NP
+            (NP (NN:[873..881] response))
+            (PP (TO:[882..884] to)
+              (NP
+                (NP (NN:[885..890] serum) (NNS:[891..897] levels))
+                (PP (IN:[898..900] of)
+                  (NP
+                    (NP (NN:[901..904] PTH))
+                    (,:[904..905] ,)
+                    (NP (NN:[906..913] calcium))
+                    (,:[913..914] ,)
+                    (NP (NN:[915..924] phosphate))
+                    (,:[924..925] ,) (CC:[926..929] and)
+                    (NP (NN:[930..942] 1,25--LRB-OH-RRB-2D3)
+                        (PRP:[943..949] itself))))))))))
+    (.:[949..950] .)))
+
+;sentence 7 Span:952..1065
+;As a consequence of this, the characterization of 1alpha-hydroxylase in human
+; renal tissue has proved difficult.
+;[1002..1020]:cyp450:"1alpha-hydroxylase"
+(SENT
+  (S
+    (PP (IN:[952..954] As)
+      (NP
+        (NP (DT:[955..956] a) (NN:[957..968] consequence))
+        (PP (IN:[969..971] of)
+          (NP (DT:[972..976] this)))))
+    (,:[976..977] ,)
+    (NP-SBJ
+      (NP (DT:[978..981] the) (NN:[982..998] characterization))
+      (PP (IN:[999..1001] of)
+        (NP (NN:[1002..1020] 1alpha-hydroxylase)))
+      (PP-LOC (IN:[1021..1023] in)
+        (NP (JJ:[1024..1029] human) (JJ:[1031..1036] renal)
+            (NN:[1037..1043] tissue))))
+    (VP (VBZ:[1044..1047] has)
+      (VP (VBN:[1048..1054] proved)
+        (S
+          (NP-SBJ (-NONE-:[1054..1054] *))
+          (ADJP-PRD (JJ:[1055..1064] difficult)))))
+    (.:[1064..1065] .)))
+
+;sentence 8 Span:1066..1219
+;In this study we have characterized  constitutive 1alpha-hydroxylase
+;expression in a simian virus 40-transformed  human proximal tubule cell line,
+;HKC-8.
+;[1116..1134]:cyp450:"1alpha-hydroxylase"
+(SENT
+  (S
+    (PP (IN:[1066..1068] In)
+      (NP (DT:[1069..1073] this) (NN:[1074..1079] study)))
+    (NP-SBJ (PRP:[1080..1082] we))
+    (VP (VBP:[1083..1087] have)
+      (VP (VBN:[1088..1101] characterized)
+        (NP (JJ:[1103..1115] constitutive) (NN:[1116..1134] 1alpha-hydroxylase)
+            (NN:[1135..1145] expression))
+        (PP-LOC (IN:[1146..1148] in)
+          (NP
+            (NP (DT:[1149..1150] a)
+              (ADJP
+                (NML (JJ:[1151..1157] simian) (NN:[1158..1163] virus)
+                     (CD:[1164..1166] 40))
+                (HYPH:[1166..1167] -) (VBN:[1167..1178] transformed))
+              (JJ:[1180..1185] human)
+              (NML (JJ:[1186..1194] proximal) (NN:[1195..1201] tubule))
+              (NN:[1202..1206] cell) (NN:[1207..1211] line))
+            (,:[1211..1212] ,)
+            (NP (NN:[1213..1218] HKC-8))))))
+    (.:[1218..1219] .)))
+
+;sentence 9 Span:1220..1460
+;Initial analyses of  [3H]25-hydroxyvitamin D3 (25OHD3) metabolism in these
+;cells using straight and  reverse phase HPLC revealed product peaks that
+;coincided with authentic  1,25-(OH)2D3 as well as 24,25-dihydroxyvitamin D3
+;(24,25-(OH)2D3).
+;[1241..1265]:substance:"[3H]25-hydroxyvitamin D3"
+;[1267..1273]:substance:"25OHD3"
+;[1349..1356]:substance:"product"
+;[1394..1406]:substance:"1,25-(OH)2D3"
+;[1418..1443]:substance:"24,25-dihydroxyvitamin D3"
+;[1445..1458]:substance:"24,25-(OH)2D3"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[1220..1227] Initial) (NNS:[1228..1236] analyses))
+        (PP (IN:[1237..1239] of)
+          (NP
+            (NML
+              (NML (NN:[1241..1262] -LSB-3H-RSB-25-hydroxyvitamin)
+                   (NN:[1263..1265] D3))
+              (NML (-LRB-:[1266..1267] -LRB-) (NN:[1267..1273] 25OHD3)
+                   (-RRB-:[1273..1274] -RRB-)))
+            (NN:[1275..1285] metabolism)))
+        (PP-LOC (IN:[1286..1288] in)
+          (NP (DT:[1289..1294] these) (NNS:[1295..1300] cells))))
+      (VP (VBG:[1301..1306] using)
+        (NP
+          (NP
+            (NML (JJ:[1307..1315] straight)
+              (NML-2 (-NONE-:[1315..1315] *P*)))
+            (NML-3 (-NONE-:[1315..1315] *P*)))
+          (CC:[1316..1319] and)
+          (NP
+            (NML (JJ:[1321..1328] reverse)
+              (NML-2 (NN:[1329..1334] phase)))
+            (NML-3 (NN:[1335..1339] HPLC))))))
+    (VP (VBD:[1340..1348] revealed)
+      (NP
+        (NP (NN:[1349..1356] product) (NNS:[1357..1362] peaks))
+        (SBAR
+          (WHNP-1 (WDT:[1363..1367] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[1367..1367] *T*))
+            (VP (VBD:[1368..1377] coincided)
+              (PP-CLR (IN:[1378..1382] with)
+                (NP
+                  (NP (JJ:[1383..1392] authentic)
+                      (NN:[1394..1406] 1,25--LRB-OH-RRB-2D3))
+                  (CONJP (RB:[1407..1409] as) (RB:[1410..1414] well)
+                         (IN:[1415..1417] as))
+                  (NP
+                    (NP (NN:[1418..1440] 24,25-dihydroxyvitamin)
+                        (NN:[1441..1443] D3))
+                    (NP (-LRB-:[1444..1445] -LRB-)
+                        (NN:[1445..1458] 24,25--LRB-OH-RRB-2D3)
+                        (-RRB-:[1458..1459] -RRB-))))))))))
+    (.:[1459..1460] .)))
+
+;sentence 10 Span:1461..1629
+;Enzyme  kinetic studies indicated that the Km for synthesis of 1,25-(OH)2D3
+;in HKC-8  cells was 120 nmol/liter 25OHD3, with a maximum velocity of 21
+;pmol/h/mg  protein.
+;[1461..1467]:substance:"Enzyme"
+;[1504..1506]:quantitative-name:"Km"
+;[1524..1536]:substance:"1,25-(OH)2D3"
+;[1557..1560]:quantitative-value:"120"
+;[1561..1571]:quantitative-units:"nmol/liter"
+;[1572..1578]:substance:"25OHD3"
+;[1587..1603]:quantitative-name:"maximum velocity"
+;[1607..1609]:quantitative-value:"21"
+;[1610..1619]:quantitative-units:"pmol/h/mg"
+;[1621..1628]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ (NN:[1461..1467] Enzyme) (JJ:[1469..1476] kinetic)
+            (NNS:[1477..1484] studies))
+    (VP (VBD:[1485..1494] indicated)
+      (SBAR (IN:[1495..1499] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1500..1503] the) (NN:[1504..1506] Km))
+            (PP (IN:[1507..1510] for)
+              (NP
+                (NP (NN:[1511..1520] synthesis))
+                (PP (IN:[1521..1523] of)
+                  (NP (NN:[1524..1536] 1,25--LRB-OH-RRB-2D3)))
+                (PP-LOC (IN:[1537..1539] in)
+                  (NP (NN:[1540..1545] HKC-8) (NNS:[1547..1552] cells))))))
+          (VP (VBD:[1553..1556] was)
+            (NP-PRD
+              (NP
+                (NML
+                  (NML (CD:[1557..1560] 120) (NN:[1561..1565] nmol))
+                  (PP (SYM:[1565..1566] /)
+                    (NP (NN:[1566..1571] liter))))
+                (NN:[1572..1578] 25OHD3))
+              (,:[1578..1579] ,)
+              (PP (IN:[1580..1584] with)
+                (NP
+                  (NP (DT:[1585..1586] a)
+                     (NN:[1587..1594] maximum) (NN:[1595..1603] velocity))
+                  (PP (IN:[1604..1606] of)
+                    (NP
+                      (NP (CD:[1607..1609] 21) (NN:[1610..1614] pmol))
+                      (PP (SYM:[1614..1615] /)
+                        (NP (NN:[1615..1616] h)))
+                      (PP (SYM:[1616..1617] /)
+                        (NP (NN:[1617..1619] mg) (NN:[1621..1628] protein))))))))))))
+    (.:[1628..1629] .)))
+
+;sentence 11 Span:1630..1725
+;This activity was inhibited by treatment with ketoconazole, but not  diphenyl
+;phenylenediamine.
+;[1676..1688]:substance:"ketoconazole"
+;[1699..1724]:substance:"diphenyl phenylenediamine"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1630..1634] This) (NN:[1635..1643] activity))
+    (VP (VBD:[1644..1647] was)
+      (VP
+        (VP (VBN:[1648..1657] inhibited)
+          (NP-1 (-NONE-:[1657..1657] *))
+          (PP (IN:[1658..1660] by)
+            (NP-LGS=2
+              (NP (NN:[1661..1670] treatment))
+              (PP (IN:[1671..1675] with)
+                (NP (NN:[1676..1688] ketoconazole))))))
+        (,:[1688..1689] ,)
+        (CONJP (CC:[1690..1693] but) (RB:[1694..1697] not))
+        (VP
+          (NP-LGS=2 (NN:[1699..1707] diphenyl)
+                    (NN:[1708..1724] phenylenediamine)))))
+    (.:[1724..1725] .)))
+
+;sentence 12 Span:1726..1944
+;RT-PCR analysis of RNA from HKC-8 cells revealed a  transcript similar in
+;size to that observed in keratinocytes and primary  cultures of human
+;proximal tubule cells, and protein was detected by Western  blot analysis.
+;[1745..1748]:substance:"RNA"
+;[1897..1904]:substance:"protein"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP
+          (NML (NN:[1726..1728] RT) (HYPH:[1728..1729] -) (NN:[1729..1732] PCR))
+          (NN:[1733..1741] analysis))
+        (PP (IN:[1742..1744] of)
+          (NP
+            (NP (NN:[1745..1748] RNA))
+            (PP (IN:[1749..1753] from)
+              (NP (NN:[1754..1759] HKC-8) (NNS:[1760..1765] cells))))))
+      (VP (VBD:[1766..1774] revealed)
+        (NP
+          (NP (DT:[1775..1776] a) (NN:[1778..1788] transcript))
+          (ADJP (JJ:[1789..1796] similar)
+            (PP (IN:[1797..1799] in)
+              (NP (NN:[1800..1804] size)))
+            (PP (TO:[1805..1807] to)
+              (NP
+                (NP (DT:[1808..1812] that))
+                (VP (VBN:[1813..1821] observed)
+                  (NP (-NONE-:[1821..1821] *))
+                  (PP-LOC (IN:[1822..1824] in)
+                    (NP
+                      (NP
+                        (NP (NNS:[1825..1838] keratinocytes))
+                        (CC:[1839..1842] and)
+                        (NP (JJ:[1843..1850] primary)
+                            (NNS:[1852..1860] cultures)))
+                      (PP (IN:[1861..1863] of)
+                        (NP (JJ:[1864..1869] human)
+                          (NML (JJ:[1870..1878] proximal)
+                               (NN:[1879..1885] tubule))
+                          (NNS:[1886..1891] cells))))))))))))
+    (,:[1891..1892] ,) (CC:[1893..1896] and)
+    (S
+      (NP-SBJ-1 (NN:[1897..1904] protein))
+      (VP (VBD:[1905..1908] was)
+        (VP (VBN:[1909..1917] detected)
+          (NP-1 (-NONE-:[1917..1917] *))
+          (PP-MNR (IN:[1918..1920] by)
+            (NP
+              (NML (JJ:[1921..1928] Western) (NN:[1930..1934] blot))
+              (NN:[1935..1943] analysis))))))
+    (.:[1943..1944] .)))
+
+;sentence 13 Span:1945..2105
+;Synthesis of 1,25-(OH)2D3 was up regulated by treatment with  forskolin (10
+;micromol/liter, 24 h) and was down-regulated by 1,25-(OH)2D3 (10  nmol/liter,
+;24 h).
+;[1958..1970]:substance:"1,25-(OH)2D3"
+;[2007..2016]:substance:"forskolin"
+;[2018..2020]:quantitative-value:"10"
+;[2021..2035]:quantitative-units:"micromol/liter"
+;[2037..2039]:quantitative-value:"24"
+;[2040..2041]:quantitative-units:"h"
+;[2069..2081]:substance:"1,25-(OH)2D3"
+;[2083..2085]:quantitative-value:"10"
+;[2087..2097]:quantitative-units:"nmol/liter"
+;[2099..2101]:quantitative-value:"24"
+;[2102..2103]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1945..1954] Synthesis))
+      (PP (IN:[1955..1957] of)
+        (NP (NN:[1958..1970] 1,25--LRB-OH-RRB-2D3))))
+    (VP
+      (VP (VBD:[1971..1974] was)
+        (VP (RB:[1975..1977] up) (VBN:[1978..1987] regulated)
+          (NP-1 (-NONE-:[1987..1987] *))
+          (PP (IN:[1988..1990] by)
+            (NP-LGS
+              (NP (NN:[1991..2000] treatment))
+              (PP (IN:[2001..2005] with)
+                (NP (NN:[2007..2016] forskolin)))
+              (PRN (-LRB-:[2017..2018] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (CD:[2018..2020] 10) (NN:[2021..2029] micromol))
+                    (PP (SYM:[2029..2030] /)
+                      (NP (NN:[2030..2035] liter))))
+                  (,:[2035..2036] ,)
+                  (NP-TMP (CD:[2037..2039] 24) (NN:[2040..2041] h)))
+                (-RRB-:[2041..2042] -RRB-))))))
+      (CC:[2043..2046] and)
+      (VP (VBD:[2047..2050] was)
+        (VP (RB:[2051..2055] down) (HYPH:[2055..2056] -)
+            (VBN:[2056..2065] regulated)
+          (NP-1 (-NONE-:[2065..2065] *))
+          (PP (IN:[2066..2068] by)
+            (NP-LGS
+              (NP (NN:[2069..2081] 1,25--LRB-OH-RRB-2D3))
+              (PRN (-LRB-:[2082..2083] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (CD:[2083..2085] 10) (NN:[2087..2091] nmol))
+                    (PP (SYM:[2091..2092] /)
+                      (NP (NN:[2092..2097] liter))))
+                  (,:[2097..2098] ,)
+                  (NP-TMP (CD:[2099..2101] 24) (NN:[2102..2103] h)))
+                (-RRB-:[2103..2104] -RRB-)))))))
+    (.:[2104..2105] .)))
+
+;sentence 14 Span:2106..2201
+;1Alpha-hydroxylase activity in HKC-8 cells was also sensitive  to the
+;concentration of calcium.
+;[2106..2124]:cyp450:"1Alpha-hydroxylase"
+;[2193..2200]:substance:"calcium"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[2106..2124] 1Alpha-hydroxylase) (NN:[2125..2133] activity))
+      (PP-LOC (IN:[2134..2136] in)
+        (NP (NN:[2137..2142] HKC-8) (NNS:[2143..2148] cells))))
+    (VP (VBD:[2149..2152] was)
+      (ADVP (RB:[2153..2157] also))
+      (ADJP-PRD (JJ:[2158..2167] sensitive)
+        (PP (TO:[2169..2171] to)
+          (NP
+            (NP (DT:[2172..2175] the) (NN:[2176..2189] concentration))
+            (PP (IN:[2190..2192] of)
+              (NP (NN:[2193..2200] calcium)))))))
+    (.:[2200..2201] .)))
+
+;sentence 15 Span:2202..2427
+;Cells grown in low calcium (0.5 mmol/liter)  showed a 4.8-fold induction of
+;1alpha-hydroxylase, whereas treatment with medium  containing high levels of
+;calcium (2 mmol/liter) significantly inhibited  1,25-(OH)2D3 production.
+;[2221..2228]:substance:"calcium"
+;[2230..2233]:quantitative-value:"0.5"
+;[2234..2244]:quantitative-units:"mmol/liter"
+;[2256..2264]:quantitative-value:"4.8-fold"
+;[2278..2296]:cyp450:"1alpha-hydroxylase"
+;[2321..2327]:substance:"medium"
+;[2355..2362]:substance:"calcium"
+;[2364..2365]:quantitative-value:"2"
+;[2366..2376]:quantitative-units:"mmol/liter"
+;[2403..2415]:substance:"1,25-(OH)2D3"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[2202..2207] Cells))
+      (VP (VBN:[2208..2213] grown)
+        (NP (-NONE-:[2213..2213] *))
+        (PP (IN:[2214..2216] in)
+          (NP (JJ:[2217..2220] low) (NN:[2221..2228] calcium)
+            (PRN (-LRB-:[2229..2230] -LRB-)
+              (NP
+                (NP (CD:[2230..2233] 0.5) (NN:[2234..2238] mmol))
+                (PP (SYM:[2238..2239] /)
+                  (NP (NN:[2239..2244] liter))))
+              (-RRB-:[2244..2245] -RRB-))))))
+    (VP (VBD:[2247..2253] showed)
+      (NP
+        (NP (DT:[2254..2255] a)
+          (ADJP (CD:[2256..2259] 4.8) (HYPH:[2259..2260] -)
+                (JJ:[2260..2264] fold))
+          (NN:[2265..2274] induction))
+        (PP (IN:[2275..2277] of)
+          (NP (NN:[2278..2296] 1alpha-hydroxylase))))
+      (,:[2296..2297] ,)
+      (SBAR-ADV (IN:[2298..2305] whereas)
+        (S
+          (NP-SBJ
+            (NP (NN:[2306..2315] treatment))
+            (PP (IN:[2316..2320] with)
+              (NP
+                (NP (NN:[2321..2327] medium))
+                (VP (VBG:[2329..2339] containing)
+                  (NP
+                    (NP (JJ:[2340..2344] high) (NNS:[2345..2351] levels))
+                    (PP (IN:[2352..2354] of)
+                      (NP
+                        (NP (NN:[2355..2362] calcium))
+                        (PRN (-LRB-:[2363..2364] -LRB-)
+                          (NP
+                            (NP (CD:[2364..2365] 2) (NN:[2366..2370] mmol))
+                            (PP (SYM:[2370..2371] /)
+                              (NP (NN:[2371..2376] liter))))
+                          (-RRB-:[2376..2377] -RRB-)))))))))
+          (VP
+            (ADVP (RB:[2378..2391] significantly))
+            (VBD:[2392..2401] inhibited)
+            (NP (NN:[2403..2415] 1,25--LRB-OH-RRB-2D3)
+                (NN:[2416..2426] production))))))
+    (.:[2426..2427] .)))
+
+;sentence 16 Span:2428..2584
+;These data suggest that direct effects of calcium on  proximal tubule cells
+;may be an important feature of the regulation of renal  1,25-(OH)2D3
+;production.
+;[2470..2477]:substance:"calcium"
+;[2560..2572]:substance:"1,25-(OH)2D3"
+(SENT
+  (S
+    (NP-SBJ (DT:[2428..2433] These) (NNS:[2434..2438] data))
+    (VP (VBP:[2439..2446] suggest)
+      (SBAR (IN:[2447..2451] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[2452..2458] direct) (NNS:[2459..2466] effects))
+            (PP (IN:[2467..2469] of)
+              (NP (NN:[2470..2477] calcium)))
+            (PP (IN:[2478..2480] on)
+              (NP
+                (NML (JJ:[2482..2490] proximal) (NN:[2491..2497] tubule))
+                (NNS:[2498..2503] cells))))
+          (VP (MD:[2504..2507] may)
+            (VP (VB:[2508..2510] be)
+              (NP-PRD
+                (NP (DT:[2511..2513] an) (JJ:[2514..2523] important)
+                    (NN:[2524..2531] feature))
+                (PP (IN:[2532..2534] of)
+                  (NP
+                    (NP (DT:[2535..2538] the) (NN:[2539..2549] regulation))
+                    (PP (IN:[2550..2552] of)
+                      (NP (JJ:[2553..2558] renal)
+                          (NN:[2560..2572] 1,25--LRB-OH-RRB-2D3)
+                          (NN:[2573..2583] production)))))))))))
+    (.:[2583..2584] .)))
+
+;section 17 Span:2588..2633
+;PMID: 10218951 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2588..2592] PMID) (::[2592..2593] :) (CD:[2594..2602] 10218951)
+        (NN:[2603..2604] -LSB-) (NNP:[2604..2610] PubMed) (::[2611..2612] -)
+        (NN:[2613..2620] indexed) (IN:[2621..2624] for)
+        (NNP:[2625..2633] MEDLINE-RSB-)))

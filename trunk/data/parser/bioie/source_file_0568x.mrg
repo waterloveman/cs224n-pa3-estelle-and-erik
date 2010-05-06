@@ -1,0 +1,449 @@
+;PMID: 11376557
+;source_file_713.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..133] = [t:43..133]
+;2)section:[e:137..201] = [t:137..201]
+;3)section:[e:205..332] = [t:205..332]
+;4)sentence:[e:336..473] = [t:336..473]
+;5)sentence:[e:474..770] = [t:474..770]
+;6)sentence:[e:771..1117] = [t:771..1117]
+;7)sentence:[e:1118..1276] = [t:1118..1276]
+;8)sentence:[e:1277..1385] = [t:1277..1385]
+;9)sentence:[e:1386..1514] = [t:1386..1514]
+;10)sentence:[e:1515..1742] = [t:1515..1742]
+;11)section:[e:1746..1791] = [t:1746..1791]
+
+;section 0 Span:0..38
+;Jpn J Cancer Res  2001 May;92(5):494-8
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 2001) (CC:[23..30] May;92-LRB-) (CD:[30..31] 5)
+        (-RRB-:[31..32] -RRB-) (CD:[32..36] :494) (::[36..37] -) (CD:[37..38] 8)))
+
+;sentence 1 Span:43..133
+;Mutations in c-kit gene exons 9 and 13 in gastrointestinal stromal tumors
+;among  Japanese.
+;[43..52]:variation-event:"Mutations"
+;[56..61]:gene-rna:"c-kit"
+;[67..74]:variation-location:"exons 9"
+;[67..72]...[79..81]:variation-location:"exons"..."13"
+;[85..116]:malignancy:"gastrointestinal stromal tumors"
+(SENT
+  (NP-HLN
+    (NP (NNS:[43..52] Mutations))
+    (PP-LOC (IN:[53..55] in)
+      (NP
+        (NP (NN:[56..61] c-kit) (NN:[62..66] gene))
+        (NML
+          (NML
+            (NML-1 (NNS:[67..72] exons))
+            (CD:[73..74] 9))
+          (CC:[75..78] and)
+          (NML
+            (NML-1 (-NONE-:[78..78] *P*))
+            (CD:[79..81] 13)))))
+    (PP-LOC (IN:[82..84] in)
+      (NP (JJ:[85..101] gastrointestinal) (JJ:[102..109] stromal)
+          (NNS:[110..116] tumors)))
+    (PP (IN:[117..122] among)
+      (NP (NNPS:[124..132] Japanese)))
+    (.:[132..133] .)))
+
+;section 2 Span:137..201
+;Sakurai S, Oguni S, Hironaka M, Fukayama M, Morinaga S, Saito K.
+(SEC
+  (FRAG (NNP:[137..144] Sakurai) (NNP:[145..147] S,) (NNP:[148..153] Oguni)
+        (NNP:[154..156] S,) (NNP:[157..165] Hironaka) (NNP:[166..168] M,)
+        (NNP:[169..177] Fukayama) (NNP:[178..180] M,) (NNP:[181..189] Morinaga)
+        (NNP:[190..192] S,) (NNP:[193..198] Saito) (NNP:[199..201] K.)))
+
+;section 3 Span:205..332
+;Department of Pathology, Jichi Medical School, Minamikawachi-machi,
+;Kawachi-gun,  Tochigi 329-0498, Japan. ssakurai@jichi.ac.jp
+(SEC
+  (FRAG (NNP:[205..215] Department) (IN:[216..218] of)
+        (NNP:[219..228] Pathology) (,:[228..229] ,) (NNP:[230..235] Jichi)
+        (NNP:[236..243] Medical) (NNP:[244..250] School) (,:[250..251] ,)
+        (NNP:[252..265] Minamikawachi) (::[265..266] -) (NN:[266..271] machi)
+        (,:[271..272] ,) (NNP:[273..280] Kawachi) (::[280..281] -)
+        (NN:[281..284] gun) (,:[284..285] ,) (NNP:[287..294] Tochigi)
+        (CD:[295..298] 329) (::[298..299] -) (CD:[299..303] 0498)
+        (,:[303..304] ,) (NNP:[305..310] Japan) (.:[310..311] .)
+        ('':[312..326] ssakurai@jichi) (VBD:[326..330] .ac.) (.:[330..332] jp)))
+
+;sentence 4 Span:336..473
+;Gain-of-function mutation in c-kit proto-oncogene exon 11 has been described
+;in  about 20 -- 50% of gastrointestinal stroma tumor (GIST).
+;[353..361]:variation-event:"mutation"
+;[365..370]:gene-rna:"c-kit"
+;[386..393]:variation-location:"exon 11"
+;[436..465]:malignancy:"gastrointestinal stroma tumor"
+;[467..471]:malignancy:"GIST"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML
+          (NML (NN:[336..340] Gain))
+          (HYPH:[340..341] -)
+          (PP (IN:[341..343] of) (HYPH:[343..344] -)
+            (NP (NN:[344..352] function))))
+        (NN:[353..361] mutation))
+      (PP-LOC (IN:[362..364] in)
+        (NP (NN:[365..370] c-kit)
+          (NML (AFX:[371..376] proto) (HYPH:[376..377] -)
+               (NN:[377..385] oncogene))
+           (NN:[386..390] exon) (CD:[391..393] 11))))
+    (VP (VBZ:[394..397] has)
+      (VP (VBN:[398..402] been)
+        (VP (VBN:[403..412] described)
+          (NP-1 (-NONE-:[412..412] *))
+          (PP (IN:[413..415] in)
+            (NP
+              (NP
+                (QP (RB:[417..422] about) (CD:[423..425] 20)
+                    (HYPH:[426..428] --) (CD:[429..431] 50))
+                (NN:[431..432] %))
+              (PP (IN:[433..435] of)
+                (NP
+                  (NP (JJ:[436..452] gastrointestinal) (NN:[453..459] stroma)
+                      (NN:[460..465] tumor))
+                  (NP (-LRB-:[466..467] -LRB-) (NN:[467..471] GIST)
+                      (-RRB-:[471..472] -RRB-)))))))))
+    (.:[472..473] .)))
+
+;sentence 5 Span:474..770
+;Recently, additional  mutational hot-spots in exon 9 and exon 13 of the c-kit
+;gene have been reported  in GISTs without mutations of exon 11, but a
+;subsequent report in a Western  population indicated that only a small
+;portion of GISTs (eight of 200 GISTs, 4%)  showed mutations in these
+;regions.
+;[520..526]:variation-location:"exon 9"
+;[531..538]:variation-location:"exon 13"
+;[546..551]:gene-rna:"c-kit"
+;[580..585]:malignancy:"GISTs"
+;[594..603]:variation-event:"mutations"
+;[607..614]:variation-location:"exon 11"
+;[704..709]:malignancy:"GISTs"
+;[724..729]:malignancy:"GISTs"
+;[743..752]:variation-event:"mutations"
+(SENT
+  (S
+    (S
+      (ADVP-TMP (RB:[474..482] Recently))
+      (,:[482..483] ,)
+      (NP-SBJ-1
+        (NP (JJ:[484..494] additional) (JJ:[496..506] mutational)
+            (JJ:[507..510] hot) (HYPH:[510..511] -) (NNS:[511..516] spots))
+        (PP-LOC (IN:[517..519] in)
+          (NP
+            (NP
+              (NP (NN:[520..524] exon) (CD:[525..526] 9))
+              (CC:[527..530] and)
+              (NP (NN:[531..535] exon) (CD:[536..538] 13)))
+            (PP (IN:[539..541] of)
+              (NP (DT:[542..545] the) (NN:[546..551] c-kit) (NN:[552..556] gene))))))
+      (VP (VBP:[557..561] have)
+        (VP (VBN:[562..566] been)
+          (VP (VBN:[567..575] reported)
+            (NP-1 (-NONE-:[575..575] *))
+            (PP-LOC (IN:[577..579] in)
+              (NP
+                (NP (NNS:[580..585] GISTs))
+                (PP (IN:[586..593] without)
+                  (NP
+                    (NP (NNS:[594..603] mutations))
+                    (PP (IN:[604..606] of)
+                      (NP (NN:[607..611] exon) (CD:[612..614] 11)))))))))))
+    (,:[614..615] ,) (CC:[616..619] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[620..621] a) (JJ:[622..632] subsequent) (NN:[633..639] report))
+        (PP (IN:[640..642] in)
+          (NP (DT:[643..644] a) (JJ:[645..652] Western)
+              (NN:[654..664] population))))
+      (VP (VBD:[665..674] indicated)
+        (SBAR (IN:[675..679] that)
+          (S
+            (NP-SBJ
+              (NP (RB:[680..684] only) (DT:[685..686] a) (JJ:[687..692] small)
+                  (NN:[693..700] portion))
+              (PP (IN:[701..703] of)
+                (NP (NNS:[704..709] GISTs)
+                  (PRN (-LRB-:[710..711] -LRB-)
+                    (FRAG
+                      (NP
+                        (NP (CD:[711..716] eight))
+                        (PP (IN:[717..719] of)
+                          (NP (CD:[720..723] 200) (NNS:[724..729] GISTs))))
+                      (,:[729..730] ,)
+                      (NP (CD:[731..732] 4) (NN:[732..733] %)))
+                    (-RRB-:[733..734] -RRB-)))))
+            (VP (VBD:[736..742] showed)
+              (NP
+                (NP (NNS:[743..752] mutations))
+                (PP-LOC (IN:[753..755] in)
+                  (NP (DT:[756..761] these) (NNS:[762..769] regions)))))))))
+    (.:[769..770] .)))
+
+;sentence 6 Span:771..1117
+;In this study, we evaluated mutations in exon  9 and exon 13 of the c-kit
+;gene by both polymerase chain reaction-single strand  conformation
+;polymorphism analysis and direct sequencing in 48 GISTs in a  Japanese
+;population, for which the clinicopathological and immunohistochemical 
+;features and mutations in exon 11 had previously been reported.
+;[799..808]:variation-event:"mutations"
+;[812..819]:variation-location:"exon  9"
+;[824..831]:variation-location:"exon 13"
+;[839..844]:gene-rna:"c-kit"
+;[858..868]:gene-protein:"polymerase"
+;[962..967]:malignancy:"GISTs"
+;[1067..1076]:variation-event:"mutations"
+;[1080..1087]:variation-location:"exon 11"
+(SENT
+  (S
+    (PP (IN:[771..773] In)
+      (NP (DT:[774..778] this) (NN:[779..784] study)))
+    (,:[784..785] ,)
+    (NP-SBJ (PRP:[786..788] we))
+    (VP (VBD:[789..798] evaluated)
+      (NP
+        (NP (NNS:[799..808] mutations))
+        (PP-LOC (IN:[809..811] in)
+          (NP
+            (NP
+              (NP (NN:[812..816] exon) (CD:[818..819] 9))
+              (CC:[820..823] and)
+              (NP (NN:[824..828] exon) (CD:[829..831] 13)))
+            (PP (IN:[832..834] of)
+              (NP (DT:[835..838] the) (NN:[839..844] c-kit) (NN:[845..849] gene))))))
+      (PP-MNR (IN:[850..852] by)
+        (NP (CC:[853..857] both)
+          (NP
+            (NML
+              (NML (NN:[858..868] polymerase) (NN:[869..874] chain)
+                   (NN:[875..883] reaction))
+              (HYPH:[883..884] -)
+              (NML
+                (NML (JJ:[884..890] single) (NN:[891..897] strand))
+                (NN:[899..911] conformation) (NN:[912..924] polymorphism)))
+            (NN:[925..933] analysis))
+          (CC:[934..937] and)
+          (NP (JJ:[938..944] direct) (NN:[945..955] sequencing))))
+      (PP-LOC (IN:[956..958] in)
+        (NP
+          (NP (CD:[959..961] 48) (NNS:[962..967] GISTs))
+          (PP (IN:[968..970] in)
+            (NP
+              (NP (DT:[971..972] a) (JJ:[974..982] Japanese)
+                  (NN:[983..993] population))
+              (,:[993..994] ,)
+              (SBAR
+                (WHPP-3 (IN:[995..998] for)
+                  (WHNP (WDT:[999..1004] which)))
+                (S
+                  (NP-SBJ-2
+                    (NP (DT:[1005..1008] the)
+                      (NML
+                        (NML (JJ:[1009..1028] clinicopathological)
+                          (NML-1 (-NONE-:[1028..1028] *P*)))
+                        (CC:[1029..1032] and)
+                        (NML (JJ:[1033..1052] immunohistochemical)
+                          (NML-1 (NNS:[1054..1062] features)))))
+                    (CC:[1063..1066] and)
+                    (NP
+                      (NP (NNS:[1067..1076] mutations))
+                      (PP (IN:[1077..1079] in)
+                        (NP (NN:[1080..1084] exon) (CD:[1085..1087] 11)))))
+                  (VP (VBD:[1088..1091] had)
+                    (ADVP-TMP (RB:[1092..1102] previously))
+                    (VP (VBN:[1103..1107] been)
+                      (VP (VBN:[1108..1116] reported)
+                        (NP-2 (-NONE-:[1116..1116] *))
+                        (PP-3 (-NONE-:[1116..1116] *T*))))))))))))
+    (.:[1116..1117] .)))
+
+;sentence 7 Span:1118..1276
+;C-kit gene  mutation in exon 9, representing insertion of GCC TAT, was
+;identified in only 4  of 48 GISTs (8%), and none of the GISTs had mutations
+;in exon 13.
+;[1118..1123]:gene-rna:"C-kit"
+;[1130..1138]:variation-event:"mutation"
+;[1142..1148]:variation-location:"exon 9"
+;[1163..1172]:variation-type:"insertion"
+;[1176..1183]:variation-state-generic:"GCC TAT"
+;[1217..1222]:malignancy:"GISTs"
+;[1245..1250]:malignancy:"GISTs"
+;[1255..1264]:variation-event:"mutations"
+;[1268..1275]:variation-location:"exon 13"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1
+        (NP
+          (NP (NN:[1118..1123] C-kit) (NN:[1124..1128] gene)
+              (NN:[1130..1138] mutation))
+          (PP-LOC (IN:[1139..1141] in)
+            (NP (NN:[1142..1146] exon) (CD:[1147..1148] 9))))
+        (,:[1148..1149] ,)
+        (VP (VBG:[1150..1162] representing)
+          (NP
+            (NP (NN:[1163..1172] insertion))
+            (PP (IN:[1173..1175] of)
+              (NP (NN:[1176..1179] GCC) (NN:[1180..1183] TAT))))))
+      (,:[1183..1184] ,)
+      (VP (VBD:[1185..1188] was)
+        (VP (VBN:[1189..1199] identified)
+          (NP-1 (-NONE-:[1199..1199] *))
+          (PP-LOC (IN:[1200..1202] in)
+            (NP
+              (NP (RB:[1203..1207] only) (CD:[1208..1209] 4))
+              (PP (IN:[1211..1213] of)
+                (NP (CD:[1214..1216] 48) (NNS:[1217..1222] GISTs)
+                  (PRN (-LRB-:[1223..1224] -LRB-)
+                    (NP (CD:[1224..1225] 8) (NN:[1225..1226] %))
+                    (-RRB-:[1226..1227] -RRB-)))))))))
+    (,:[1227..1228] ,) (CC:[1229..1232] and)
+    (S
+      (NP-SBJ
+        (NP (NN:[1233..1237] none))
+        (PP (IN:[1238..1240] of)
+          (NP (DT:[1241..1244] the) (NNS:[1245..1250] GISTs))))
+      (VP (VBD:[1251..1254] had)
+        (NP (NNS:[1255..1264] mutations))
+        (PP-LOC (IN:[1265..1267] in)
+          (NP (NN:[1268..1272] exon) (CD:[1273..1275] 13)))))
+    (.:[1275..1276] .)))
+
+;sentence 8 Span:1277..1385
+;All four GISTs  with mutation in exon 9 were high-risk, and the patients died
+;of multiple tumor  metastasis.
+;[1286..1291]:malignancy:"GISTs"
+;[1298..1306]:variation-event:"mutation"
+;[1310..1316]:variation-location:"exon 9"
+;[1367..1384]:malignancy:"tumor  metastasis"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[1277..1280] All) (CD:[1281..1285] four)
+            (NNS:[1286..1291] GISTs))
+        (PP (IN:[1293..1297] with)
+          (NP
+            (NP (NNS:[1298..1306] mutation))
+            (PP-LOC (IN:[1307..1309] in)
+              (NP (NN:[1310..1314] exon) (CD:[1315..1316] 9))))))
+      (VP (VBD:[1317..1321] were)
+        (NP-PRD (JJ:[1322..1326] high) (HYPH:[1326..1327] -)
+                (NN:[1327..1331] risk))))
+    (,:[1331..1332] ,) (CC:[1333..1336] and)
+    (S
+      (NP-SBJ (DT:[1337..1340] the) (NNS:[1341..1349] patients))
+      (VP (VBD:[1350..1354] died)
+        (PP-CLR (IN:[1355..1357] of)
+          (NP (JJ:[1358..1366] multiple)
+             (NN:[1367..1372] tumor) (NN:[1374..1384] metastasis)))))
+    (.:[1384..1385] .)))
+
+;sentence 9 Span:1386..1514
+;Mutations in exon 9 and exon 13 of the c-kit gene were also rare  events in
+;Japanese GISTs and were related to a poor prognosis.
+;[1386..1395]:variation-event:"Mutations"
+;[1399..1405]:variation-location:"exon 9"
+;[1410..1417]:variation-location:"exon 13"
+;[1425..1430]:gene-rna:"c-kit"
+;[1471..1476]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[1386..1395] Mutations))
+      (PP-LOC (IN:[1396..1398] in)
+        (NP
+          (NP
+            (NP (NN:[1399..1403] exon) (CD:[1404..1405] 9))
+            (CC:[1406..1409] and)
+            (NP (NN:[1410..1414] exon) (CD:[1415..1417] 13)))
+          (PP (IN:[1418..1420] of)
+            (NP (DT:[1421..1424] the) (NN:[1425..1430] c-kit)
+                (NN:[1431..1435] gene))))))
+    (VP
+      (VP (VBD:[1436..1440] were)
+        (ADVP (RB:[1441..1445] also))
+        (NP-PRD (JJ:[1446..1450] rare) (NNS:[1452..1458] events))
+        (PP-LOC (IN:[1459..1461] in)
+          (NP (JJ:[1462..1470] Japanese) (NNS:[1471..1476] GISTs))))
+      (CC:[1477..1480] and)
+      (VP (VBD:[1481..1485] were)
+        (VP (VBN:[1486..1493] related)
+          (NP-1 (-NONE-:[1493..1493] *))
+          (PP-CLR (TO:[1494..1496] to)
+            (NP (DT:[1497..1498] a) (JJ:[1499..1503] poor)
+                (NN:[1504..1513] prognosis))))))
+    (.:[1513..1514] .)))
+
+;sentence 10 Span:1515..1742
+;These results in  Japanese are consistent with those in Western populations,
+;although a  preferential occurrence of GISTs with exon 9 mutation in the
+;small intestine,  which was suggested in a previous report, was not
+;observed.
+;[1631..1636]:malignancy:"GISTs"
+;[1642..1648]:variation-location:"exon 9"
+;[1649..1657]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1515..1520] These) (NNS:[1521..1528] results))
+      (PP (IN:[1529..1531] in)
+        (NP (JJ:[1533..1541] Japanese))))
+    (VP (VBP:[1542..1545] are)
+      (ADJP-PRD (JJ:[1546..1556] consistent)
+        (PP (IN:[1557..1561] with)
+          (NP
+            (NP (DT:[1562..1567] those))
+            (PP (IN:[1568..1570] in)
+              (NP (JJ:[1571..1578] Western) (NNS:[1579..1590] populations))))))
+      (,:[1590..1591] ,)
+      (SBAR-ADV (IN:[1592..1600] although)
+        (S
+          (NP-SBJ-2
+            (NP
+              (NP (DT:[1601..1602] a) (JJ:[1604..1616] preferential)
+                  (NN:[1617..1627] occurrence))
+              (PP (IN:[1628..1630] of)
+                (NP
+                  (NP (NNS:[1631..1636] GISTs))
+                  (PP (IN:[1637..1641] with)
+                    (NP
+                      (NP
+                        (NML (NN:[1642..1646] exon) (CD:[1647..1648] 9))
+                        (NN:[1649..1657] mutation))
+                      (PP-LOC (IN:[1658..1660] in)
+                        (NP (DT:[1661..1664] the) (JJ:[1665..1670] small)
+                            (NN:[1671..1680] intestine))))))))
+            (,:[1680..1681] ,)
+            (SBAR
+              (WHNP-1 (WDT:[1683..1688] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[1688..1688] *T*))
+                (VP (VBD:[1689..1692] was)
+                  (VP (VBN:[1693..1702] suggested)
+                    (NP-1 (-NONE-:[1702..1702] *))
+                    (PP (IN:[1703..1705] in)
+                      (NP (DT:[1706..1707] a) (JJ:[1708..1716] previous)
+                          (NN:[1717..1723] report))))))))
+          (,:[1723..1724] ,)
+          (VP (VBD:[1725..1728] was) (RB:[1729..1732] not)
+            (VP (VBN:[1733..1741] observed)
+              (NP-2 (-NONE-:[1741..1741] *)))))))
+    (.:[1741..1742] .)))
+
+;section 11 Span:1746..1791
+;PMID: 11376557 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1746..1750] PMID) (::[1750..1751] :) (CD:[1752..1760] 11376557)
+        (NN:[1761..1762] -LSB-) (NNP:[1762..1768] PubMed) (::[1769..1770] -)
+        (NN:[1771..1778] indexed) (IN:[1779..1782] for)
+        (NNP:[1783..1791] MEDLINE-RSB-)))

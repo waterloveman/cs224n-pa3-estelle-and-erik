@@ -1,0 +1,230 @@
+;PMID: 2183158
+;source_file_1417.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..104] = [t:35..104]
+;2)section:[e:108..208] = [t:108..208]
+;3)section:[e:212..287] = [t:212..287]
+;4)sentence:[e:291..476] = [t:291..476]
+;5)sentence:[e:477..701] = [t:477..701]
+;6)sentence:[e:702..909] = [t:702..909]
+;7)sentence:[e:910..1037] = [t:910..1037]
+;8)section:[e:1041..1085] = [t:1041..1085]
+
+;section 0 Span:0..30
+;Oncogene  1990 Apr;5(4):565-70
+(SEC
+  (FRAG (NNP:[0..8] Oncogene) (CD:[10..14] 1990) (IN:[15..21] Apr;5-LRB-)
+        (CD:[21..23] 4-RRB-) (CD:[23..27] :565) (HYPH:[27..28] -)
+        (CD:[28..30] 70)))
+
+;sentence 1 Span:35..104
+;Presence of mutations in all three ras genes in human thyroid tumors.
+;[70..73]:gene-rna:"ras"
+;[89..103]:malignancy:"thyroid tumors"
+(SENT
+  (NP-HLN
+    (NP (NN:[35..43] Presence))
+    (PP (IN:[44..46] of)
+      (NP (NNS:[47..56] mutations)))
+    (PP-LOC (IN:[57..59] in)
+      (NP (DT:[60..63] all) (CD:[64..69] three) (NN:[70..73] ras)
+          (NNS:[74..79] genes)))
+    (PP-LOC (IN:[80..82] in)
+      (NP (JJ:[83..88] human)
+         (JJ:[89..96] thyroid) (NNS:[97..103] tumors)))
+    (.:[103..104] .)))
+
+;section 2 Span:108..208
+;Suarez HG, du Villard JA, Severino M, Caillou B, Schlumberger M, Tubiana M, 
+;Parmentier C, Monier R.
+(SEC
+  (FRAG (NNP:[108..114] Suarez) (NNP:[115..117] HG) (,:[117..118] ,)
+        (NNP:[119..121] du) (NNP:[122..129] Villard) (NNP:[130..132] JA)
+        (,:[132..133] ,) (NNP:[134..142] Severino) (NNP:[143..145] M,)
+        (NNP:[146..153] Caillou) (NNP:[154..155] B) (,:[155..156] ,)
+        (NNP:[157..169] Schlumberger) (NNP:[170..172] M,)
+        (NNP:[173..180] Tubiana) (NNP:[181..183] M,) (NNP:[185..195] Parmentier)
+        (NNP:[196..197] C) (,:[197..198] ,) (NNP:[199..205] Monier)
+        (NNP:[206..208] R.)))
+
+;section 3 Span:212..287
+;Institut de recherches scientifiques sur le cancer-CNRS, Villejuif, France.
+(SEC
+  (FRAG (NNP:[212..220] Institut) (IN:[221..223] de) (NNP:[224..234] recherches)
+        (CC:[235..248] scientifiques) (VBG:[249..252] sur) (JJ:[253..255] le)
+        (NN:[256..262] cancer) (HYPH:[262..263] -) (JJ:[263..267] CNRS)
+        (,:[267..268] ,) (NNP:[269..278] Villejuif) (,:[278..279] ,)
+        (NNP:[280..286] France) (.:[286..287] .)))
+
+;sentence 4 Span:291..476
+;Polymerase chain reaction (PCR) amplification followed by oligonucleotide 
+;probing was used to investigate the presence of ras genes mutations in human 
+;thyroid adenomas and carcinomas.
+;[291..301]:gene-protein:"Polymerase"
+;[414..417]:gene-rna:"ras"
+;[444..460]:malignancy:"thyroid adenomas"
+;[444..451]...[465..475]:malignancy:"thyroid"..."carcinomas"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP
+        (NML
+          (NML (NN:[291..301] Polymerase) (NN:[302..307] chain)
+               (NN:[308..316] reaction))
+          (NML (-LRB-:[317..318] -LRB-) (NN:[318..321] PCR)
+               (-RRB-:[321..322] -RRB-)))
+        (NN:[323..336] amplification))
+      (VP (VBN:[337..345] followed)
+        (NP (-NONE-:[345..345] *))
+        (PP (IN:[346..348] by)
+          (NP-LGS (NN:[349..364] oligonucleotide) (NN:[366..373] probing)))))
+    (VP (VBD:[374..377] was)
+      (VP (VBN:[378..382] used)
+        (NP-3 (-NONE-:[382..382] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[382..382] *))
+          (VP (TO:[383..385] to)
+            (VP (VB:[386..397] investigate)
+              (NP
+                (NP (DT:[398..401] the) (NN:[402..410] presence))
+                (PP (IN:[411..413] of)
+                  (NP (NN:[414..417] ras) (NNS:[418..423] genes)
+                      (NNS:[424..433] mutations))))
+              (PP-LOC (IN:[434..436] in)
+                (NP
+                  (NP
+                    (ADJP-1 (JJ:[437..442] human))
+                    
+                    (ADJP-2 (JJ:[444..451] thyroid))
+                    (NNS:[452..460] adenomas))
+                  (CC:[461..464] and)
+                  (NP
+                    (ADJP-1 (-NONE-:[464..464] *P*))
+                    (ADJP-2 (-NONE-:[464..464] *P*))
+                    (NNS:[465..475] carcinomas)))))))))
+    (.:[475..476] .)))
+
+;sentence 5 Span:477..701
+;The results confirm the frequent occurrence of  mutations in all three ras
+;genes in both adenomas and carcinomas, in agreement  with the hypothesis that
+;the ras mutations may constitute early steps in thyroid  tumorigenesis.
+;[548..551]:gene-rna:"ras"
+;[566..574]:malignancy:"adenomas"
+;[579..589]:malignancy:"carcinomas"
+;[634..637]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[477..480] The) (NNS:[481..488] results))
+    (VP (VBP:[489..496] confirm)
+      (NP
+        (NP (DT:[497..500] the) (JJ:[501..509] frequent)
+            (NN:[510..520] occurrence))
+        (PP (IN:[521..523] of)
+          (NP (NNS:[525..534] mutations)))
+        (PP-LOC (IN:[535..537] in)
+          (NP (DT:[538..541] all) (CD:[542..547] three) (NN:[548..551] ras)
+              (NNS:[552..557] genes)))
+        (PP-LOC (IN:[558..560] in)
+          (NP (CC:[561..565] both) (NNS:[566..574] adenomas) (CC:[575..578] and)
+              (NNS:[579..589] carcinomas))))
+      (,:[589..590] ,)
+      (PP (IN:[591..593] in)
+        (NP
+          (NP (NN:[594..603] agreement))
+          (PP (IN:[605..609] with)
+            (NP (DT:[610..613] the) (NN:[614..624] hypothesis)
+              (SBAR (IN:[625..629] that)
+                (S
+                  (NP-SBJ (DT:[630..633] the) (NN:[634..637] ras)
+                          (NNS:[638..647] mutations))
+                  (VP (MD:[648..651] may)
+                    (VP (VB:[652..662] constitute)
+                      (NP (JJ:[663..668] early) (NNS:[669..674] steps))
+                      (PP (IN:[675..677] in)
+                        (NP (JJ:[678..685] thyroid)
+                            (NN:[687..700] tumorigenesis))))))))))))
+    (.:[700..701] .)))
+
+;sentence 6 Span:702..909
+;No evident correlation between the frequency of ras mutations,  the identity
+;of the mutated ras gene, the position affected in the ras gene or  the type
+;of mutation and the pathological features is apparent.
+;[750..753]:gene-rna:"ras"
+;[794..797]:gene-rna:"ras"
+;[833..836]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[702..704] No) (JJ:[705..712] evident) (NN:[713..724] correlation))
+      (PP (IN:[725..732] between)
+        (NP
+          (NP
+            (NP
+              (NP (DT:[733..736] the) (NN:[737..746] frequency))
+              (PP (IN:[747..749] of)
+                (NP (NN:[750..753] ras) (NNS:[754..763] mutations))))
+            (,:[763..764] ,)
+            (NP
+              (NP (DT:[766..769] the) (NN:[770..778] identity))
+              (PP (IN:[779..781] of)
+                (NP (DT:[782..785] the) (VBN:[786..793] mutated)
+                    (NN:[794..797] ras) (NN:[798..802] gene))))
+            (,:[802..803] ,)
+            (NP
+              (NP (DT:[804..807] the) (NN:[808..816] position))
+              (VP (VBN:[817..825] affected)
+                (NP (-NONE-:[825..825] *))
+                (PP (IN:[826..828] in)
+                  (NP (DT:[829..832] the) (NN:[833..836] ras)
+                      (NN:[837..841] gene)))))
+            (CC:[842..844] or)
+            (NP
+              (NP (DT:[846..849] the) (NN:[850..854] type))
+              (PP (IN:[855..857] of)
+                (NP (NN:[858..866] mutation)))))
+          (CC:[867..870] and)
+          (NP (DT:[871..874] the) (JJ:[875..887] pathological)
+              (NNS:[888..896] features)))))
+    (VP (VBZ:[897..899] is)
+      (ADJP-PRD (JJ:[900..908] apparent)))
+    (.:[908..909] .)))
+
+;sentence 7 Span:910..1037
+;However,  definitive conclusion on this point is precluded because of the
+;small number of  tumors examined at the present time.
+(SENT
+  (S
+    (ADVP (RB:[910..917] However))
+    (,:[917..918] ,)
+    (NP-SBJ-1
+      (NP (JJ:[920..930] definitive) (NN:[931..941] conclusion))
+      (PP (IN:[942..944] on)
+        (NP (DT:[945..949] this) (NN:[950..955] point))))
+    (VP (VBZ:[956..958] is)
+      (VP (VBN:[959..968] precluded)
+        (NP-1 (-NONE-:[968..968] *))
+        (PP (IN:[969..976] because)
+          (PP (IN:[977..979] of)
+            (NP
+              (NP (DT:[980..983] the) (JJ:[984..989] small)
+                  (NN:[990..996] number))
+              (PP (IN:[997..999] of)
+                (NP
+                  (NP (NNS:[1001..1007] tumors))
+                  (VP (VBN:[1008..1016] examined)
+                    (NP (-NONE-:[1016..1016] *))))))))
+        (PP (IN:[1017..1019] at)
+          (NP (DT:[1020..1023] the) (JJ:[1024..1031] present)
+              (NN:[1032..1036] time)))))
+    (.:[1036..1037] .)))
+
+;section 8 Span:1041..1085
+;PMID: 2183158 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1041..1045] PMID) (::[1045..1046] :) (CD:[1047..1054] 2183158)
+        (IN:[1055..1056] -LSB-) (NNP:[1056..1062] PubMed) (HYPH:[1063..1064] -)
+        (JJ:[1065..1072] indexed) (IN:[1073..1076] for)
+        (NNP:[1077..1085] MEDLINE-RSB-)))

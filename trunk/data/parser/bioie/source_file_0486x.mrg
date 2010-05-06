@@ -1,0 +1,319 @@
+;PMID: 1619852
+;source_file_1191.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..165] = [t:36..165]
+;2)section:[e:169..177] = [t:169..177]
+;3)section:[e:181..254] = [t:181..254]
+;4)sentence:[e:258..432] = [t:258..432]
+;5)sentence:[e:433..556] = [t:433..556]
+;6)sentence:[e:557..846] = [t:557..846]
+;7)sentence:[e:847..985] = [t:847..985]
+;8)sentence:[e:986..1108] = [t:986..1108]
+;9)sentence:[e:1109..1246] = [t:1109..1246]
+;10)section:[e:1250..1294] = [t:1250..1294]
+
+;section 0 Span:0..31
+;Keio J Med  1992 Jun;41(2):80-6
+(SEC
+  (FRAG (NNP:[0..4] Keio) (NNP:[5..6] J) (NNP:[7..10] Med) (CD:[12..16] 1992)
+        (-LRB-:[17..24] Jun;41-LRB-) (CD:[24..25] 2) (-RRB-:[25..26] -RRB-)
+        (CD:[26..29] :80) (HYPH:[29..30] -) (CD:[30..31] 6)))
+
+;sentence 1 Span:36..165
+;Detection of H-ras gene point mutations in transitional cell carcinoma of
+;human  urinary bladder using polymerase chain reaction.
+;[49..54]:gene-rna:"H-ras"
+;[60..75]:variation-type:"point mutations"
+;[79..109]...[117..132]:malignancy:"transitional cell carcinoma of"..."urinary
+;bladder"
+;[139..149]:gene-protein:"polymerase"
+(SENT
+  (FRAG-HLN
+    (NP
+      (NP (NN:[36..45] Detection))
+      (PP (IN:[46..48] of)
+        (NP (NN:[49..54] H-ras) (NN:[55..59] gene)
+           (NN:[60..65] point) (NNS:[66..75] mutations)))
+      (PP (IN:[76..78] in)
+        (NP
+          (NP (JJ:[79..91] transitional) (NN:[92..96] cell)
+              (NN:[97..106] carcinoma))
+          (PP (IN:[107..109] of)
+            (NP (JJ:[110..115] human) (JJ:[117..124] urinary)
+                (NN:[125..132] bladder))))))
+    (S-MNR
+      (NP-SBJ (-NONE-:[132..132] *))
+      (VP (VBG:[133..138] using)
+        (NP (NN:[139..149] polymerase) (NN:[150..155] chain)
+            (NN:[156..164] reaction))))
+    (.:[164..165] .)))
+
+;section 2 Span:169..177
+;Saito S.
+(SEC
+  (FRAG (NNP:[169..174] Saito) (NNP:[175..177] S.)))
+
+;section 3 Span:181..254
+;Department of Urology, School of Medicine, Keio University, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[181..191] Department) (IN:[192..194] of) (NNP:[195..202] Urology)
+        (,:[202..203] ,) (NNP:[204..210] School) (IN:[211..213] of)
+        (NNP:[214..222] Medicine) (,:[222..223] ,) (NNP:[224..228] Keio)
+        (NNP:[229..239] University) (,:[239..240] ,) (NNP:[241..246] Tokyo)
+        (,:[246..247] ,) (NNP:[248..253] Japan) (.:[253..254] .)))
+
+;sentence 4 Span:258..432
+;It has been reported that the H-ras gene is activated as oncogene in human 
+;bladder cancer cases, and that codon 12 and codon 61 are the major "hot
+;spots"  of its activation.
+;[288..293]:gene-rna:"H-ras"
+;[334..348]:malignancy:"bladder cancer"
+;[365..373]:variation-location:"codon 12"
+;[378..386]:variation-location:"codon 61"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (PRP:[258..260] It))
+      (SBAR-2 (-NONE-:[260..260] *EXP*)))
+    (VP (VBZ:[261..264] has)
+      (VP (VBN:[265..269] been)
+        (VP (VBN:[270..278] reported)
+          (NP-1 (-NONE-:[278..278] *))
+          (SBAR-2
+            (SBAR (IN:[279..283] that)
+              (S
+                (NP-SBJ-3 (DT:[284..287] the) (NN:[288..293] H-ras)
+                          (NN:[294..298] gene))
+                (VP (VBZ:[299..301] is)
+                  (VP (VBN:[302..311] activated)
+                    (NP-3 (-NONE-:[311..311] *))
+                    (PP (IN:[312..314] as)
+                      (NP (NN:[315..323] oncogene)))
+                    (PP (IN:[324..326] in)
+                      (NP
+                        (NML (JJ:[327..332] human)
+                           (NN:[334..341] bladder) (NN:[342..348] cancer))
+                        (NNS:[349..354] cases)))))))
+            (,:[354..355] ,) (CC:[356..359] and)
+            (SBAR (IN:[360..364] that)
+              (S
+                (NP-SBJ
+                  (NP (NN:[365..370] codon) (CD:[371..373] 12))
+                  (CC:[374..377] and)
+                  (NP (NN:[378..383] codon) (CD:[384..386] 61)))
+                (VP (VBP:[387..390] are)
+                  (NP-PRD
+                    (NP (DT:[391..394] the) (JJ:[395..400] major)
+                        (``:[401..402] ") (JJ:[402..405] hot)
+                        (NNS:[406..411] spots) ('':[411..412] "))
+                    (PP (IN:[414..416] of)
+                      (NP (PRP$:[417..420] its) (NN:[421..431] activation)))))))))))
+    (.:[431..432] .)))
+
+;sentence 5 Span:433..556
+;A simple method to detect point mutations in these codons of  H-ras gene was
+;established for the use of clinical diagnosis.
+;[459..474]:variation-type:"point mutations"
+;[484..490]:variation-location:"codons"
+;[495..500]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[433..434] A) (JJ:[435..441] simple) (NN:[442..448] method))
+      (SBAR
+        (WHNP-1 (-NONE-:[448..448] 0))
+        (S
+          (NP-SBJ-1 (-NONE-:[448..448] *T*))
+          (VP (TO:[449..451] to)
+            (VP (VB:[452..458] detect)
+              (NP (NN:[459..464] point) (NNS:[465..474] mutations))
+              (PP-LOC (IN:[475..477] in)
+                (NP
+                  (NP (DT:[478..483] these) (NNS:[484..490] codons))
+                  (PP (IN:[491..493] of)
+                    (NP (NN:[495..500] H-ras) (NN:[501..505] gene))))))))))
+    (VP (VBD:[506..509] was)
+      (VP (VBN:[510..521] established)
+        (NP-2 (-NONE-:[521..521] *))
+        (PP (IN:[522..525] for)
+          (NP
+            (NP (DT:[526..529] the) (NN:[530..533] use))
+            (PP (IN:[534..536] of)
+              (NP (JJ:[537..545] clinical) (NN:[546..555] diagnosis)))))))
+    (.:[555..556] .)))
+
+;sentence 6 Span:557..846
+;In this method,  the DNA segments including codon 12 or codon 61 were
+;amplified by polymerase  chain reaction (PCR), and the reaction products were
+;examined for their  susceptibility to the restriction enzyme NaeI or BstNI,
+;and by dot blot  hybridization assay with oligonucleotide probes.
+;[601..609]:variation-location:"codon 12"
+;[613..621]:variation-location:"codon 61"
+;[640..650]:gene-protein:"polymerase"
+;[766..770]:gene-protein:"NaeI"
+;[774..779]:gene-protein:"BstNI"
+(SENT
+  (S
+    (S
+      (PP (IN:[557..559] In)
+        (NP (DT:[560..564] this) (NN:[565..571] method)))
+      (,:[571..572] ,)
+      (NP-SBJ-1
+        (NP (DT:[574..577] the) (NN:[578..581] DNA) (NNS:[582..590] segments))
+        (PP (VBG:[591..600] including)
+          (NP
+            (NP (NN:[601..606] codon) (CD:[607..609] 12))
+            (CC:[610..612] or)
+            (NP (NN:[613..618] codon) (CD:[619..621] 61)))))
+      (VP (VBD:[622..626] were)
+        (VP (VBN:[627..636] amplified)
+          (NP-1 (-NONE-:[636..636] *))
+          (PP-MNR (IN:[637..639] by)
+            (NP
+              (NP (NN:[640..650] polymerase) (NN:[652..657] chain)
+                  (NN:[658..666] reaction))
+              (NP (-LRB-:[667..668] -LRB-) (NN:[668..671] PCR)
+                  (-RRB-:[671..672] -RRB-)))))))
+    (,:[672..673] ,) (CC:[674..677] and)
+    (S
+      (NP-SBJ-2 (DT:[678..681] the) (NN:[682..690] reaction)
+                (NNS:[691..699] products))
+      (VP (VBD:[700..704] were)
+        (VP (VBN:[705..713] examined)
+          (NP-2 (-NONE-:[713..713] *))
+          (PP
+            (PP (IN:[714..717] for)
+              (NP
+                (NP (PRP$:[718..723] their) (NN:[725..739] susceptibility))
+                (PP (TO:[740..742] to)
+                  (NP
+                    (NP (DT:[743..746] the) (NN:[747..758] restriction)
+                        (NN:[759..765] enzyme))
+                    (NP (NN:[766..770] NaeI) (CC:[771..773] or)
+                        (NN:[774..779] BstNI))))))
+            (,:[779..780] ,) (CC:[781..784] and)
+            (PP (IN:[785..787] by)
+              (NP
+                (NP
+                  (NML
+                    (NML (NN:[788..791] dot) (NN:[792..796] blot))
+                    (NN:[798..811] hybridization))
+                  (NN:[812..817] assay))
+                (PP (IN:[818..822] with)
+                  (NP (NN:[823..838] oligonucleotide) (NNS:[839..845] probes)))))))))
+    (.:[845..846] .)))
+
+;sentence 7 Span:847..985
+;Point mutations were detectable  in small amounts of DNAs isolated from fresh
+;or frozen tumor tissues, urine  cells and paraffin sections.
+;[847..862]:variation-type:"Point mutations"
+;[935..948]:malignancy:"tumor tissues"
+(SENT
+  (S
+    (NP-SBJ (NN:[847..852] Point) (NNS:[853..862] mutations))
+    (VP (VBD:[863..867] were)
+      (ADJP-PRD (JJ:[868..878] detectable))
+      (PP-LOC (IN:[880..882] in)
+        (NP
+          (NP (JJ:[883..888] small) (NNS:[889..896] amounts))
+          (PP (IN:[897..899] of)
+            (NP
+              (NP (NNS:[900..904] DNAs))
+              (VP (VBN:[905..913] isolated)
+                (NP (-NONE-:[913..913] *))
+                (PP (IN:[914..918] from)
+                  (NP
+                    (NP (JJ:[919..924] fresh)
+                      (NML-1 (-NONE-:[924..924] *P*)))
+                    (CC:[925..927] or)
+                    (NP (VBN:[928..934] frozen)
+                      (NML-1 (NN:[935..940] tumor) (NNS:[941..948] tissues)))
+                    (,:[948..949] ,)
+                    (NP (NN:[950..955] urine) (NNS:[957..962] cells))
+                    (CC:[963..966] and)
+                    (NP (NN:[967..975] paraffin) (NNS:[976..984] sections))))))))))
+    (.:[984..985] .)))
+
+;sentence 8 Span:986..1108
+;The method was applied for a clinical sample and a  case that had a point
+;mutation at codon 12 of H-ras gene was detected.
+;[1054..1068]:variation-type:"point mutation"
+;[1072..1080]:variation-location:"codon 12"
+;[1084..1089]:gene-rna:"H-ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[986..989] The) (NN:[990..996] method))
+      (VP (VBD:[997..1000] was)
+        (VP (VBN:[1001..1008] applied)
+          (NP-1 (-NONE-:[1008..1008] *))
+          (PP (IN:[1009..1012] for)
+            (NP (DT:[1013..1014] a) (JJ:[1015..1023] clinical)
+                (NN:[1024..1030] sample))))))
+    (CC:[1031..1034] and)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[1035..1036] a) (NN:[1038..1042] case))
+        (SBAR
+          (WHNP-3 (WDT:[1043..1047] that))
+          (S
+            (NP-SBJ-3 (-NONE-:[1047..1047] *T*))
+            (VP (VBD:[1048..1051] had)
+              (NP (DT:[1052..1053] a)
+                 (NN:[1054..1059] point) (NN:[1060..1068] mutation))
+              (PP-LOC (IN:[1069..1071] at)
+                (NP
+                  (NP (NN:[1072..1077] codon) (CD:[1078..1080] 12))
+                  (PP (IN:[1081..1083] of)
+                    (NP (NN:[1084..1089] H-ras) (NN:[1090..1094] gene)))))))))
+      (VP (VBD:[1095..1098] was)
+        (VP (VBN:[1099..1107] detected)
+          (NP-2 (-NONE-:[1107..1107] *)))))
+    (.:[1107..1108] .)))
+
+;sentence 9 Span:1109..1246
+;The point  mutation was existed in DNAs of primary tumor tissue, all
+;recurrent tumor  tissues and cells isolated from urine of this case.
+;[1113..1128]:variation-type:"point  mutation"
+;[1152..1172]:malignancy:"primary tumor tissue"
+;[1178..1202]:malignancy:"recurrent tumor  tissues"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1109..1112] The)
+       (NN:[1113..1118] point) (NN:[1120..1128] mutation))
+    (VP (VBD:[1129..1132] was)
+      (VP (VBN:[1133..1140] existed)
+        (NP-1 (-NONE-:[1140..1140] *))
+        (PP-LOC (IN:[1141..1143] in)
+          (NP
+            (NP (NNS:[1144..1148] DNAs))
+            (PP (IN:[1149..1151] of)
+              (NP
+                (NP (JJ:[1152..1159] primary) (NN:[1160..1165] tumor)
+                    (NN:[1166..1172] tissue))
+                (,:[1172..1173] ,)
+                (NP (DT:[1174..1177] all)
+                   (JJ:[1178..1187] recurrent) (NN:[1188..1193] tumor)
+                   (NNS:[1195..1202] tissues))
+                (CC:[1203..1206] and)
+                (NP
+                  (NP (NNS:[1207..1212] cells))
+                  (VP (VBN:[1213..1221] isolated)
+                    (NP (-NONE-:[1221..1221] *))
+                    (PP (IN:[1222..1226] from)
+                      (NP
+                        (NP (NN:[1227..1232] urine))
+                        (PP (IN:[1233..1235] of)
+                          (NP (DT:[1236..1240] this) (NN:[1241..1245] case)))))))))))))
+    (.:[1245..1246] .)))
+
+;section 10 Span:1250..1294
+;PMID: 1619852 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1250..1254] PMID) (::[1254..1255] :) (CD:[1256..1263] 1619852)
+        (IN:[1264..1265] -LSB-) (NNP:[1265..1271] PubMed) (HYPH:[1272..1273] -)
+        (JJ:[1274..1281] indexed) (IN:[1282..1285] for)
+        (NNP:[1286..1294] MEDLINE-RSB-)))

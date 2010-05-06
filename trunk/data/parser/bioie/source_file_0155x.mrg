@@ -1,0 +1,382 @@
+;PMID: 7928631
+;source_file_1233.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:44..132] = [t:44..132]
+;2)section:[e:136..199] = [t:136..199]
+;3)section:[e:203..263] = [t:203..263]
+;4)sentence:[e:267..549] = [t:267..549]
+;5)sentence:[e:550..749] = [t:550..749]
+;6)sentence:[e:750..889] = [t:750..889]
+;7)sentence:[e:890..1001] = [t:890..1001]
+;8)sentence:[e:1002..1061] = [t:1002..1061]
+;9)sentence:[e:1062..1179] = [t:1062..1179]
+;10)sentence:[e:1180..1276] = [t:1180..1276]
+;11)sentence:[e:1277..1474] = [t:1277..1474]
+;12)section:[e:1478..1522] = [t:1478..1522]
+
+;section 0 Span:0..39
+;Jpn J Cancer Res  1994 Aug;85(8):847-52
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 1994) (CC:[23..30] Aug;85-LRB-) (CD:[30..31] 8)
+        (-RRB-:[31..32] -RRB-) (CD:[32..36] :847) (::[36..37] -)
+        (CD:[37..39] 52)))
+
+;sentence 1 Span:44..132
+;State of adenomatous polyposis coli gene and ras oncogenes in Japanese
+;prostate  cancer.
+;[53..79]:gene-rna:"adenomatous polyposis coli"
+;[89..92]:gene-rna:"ras"
+;[115..131]:malignancy:"prostate  cancer"
+(SENT
+  (NP-HLN
+    (NP (NN:[44..49] State))
+    (PP (IN:[50..52] of)
+      (NP
+        (NP
+           (JJ:[53..64] adenomatous) (NN:[65..74] polyposis) (NN:[75..79] coli)
+          (NN:[80..84] gene))
+        (CC:[85..88] and)
+        (NP (NN:[89..92] ras) (NNS:[93..102] oncogenes))))
+    (PP (IN:[103..105] in)
+      (NP (JJ:[106..114] Japanese)
+         (NN:[115..123] prostate) (NN:[125..131] cancer)))
+    (.:[131..132] .)))
+
+;section 2 Span:136..199
+;Suzuki H, Aida S, Akimoto S, Igarashi T, Yatani R, Shimazaki J.
+(SEC
+  (FRAG (NNP:[136..142] Suzuki) (NNP:[143..144] H) (,:[144..145] ,)
+        (NNP:[146..150] Aida) (NNP:[151..153] S,) (NNP:[154..161] Akimoto)
+        (NNP:[162..164] S,) (NNP:[165..173] Igarashi) (NNP:[174..175] T)
+        (,:[175..176] ,) (NNP:[177..183] Yatani) (NNP:[184..186] R,)
+        (NNP:[187..196] Shimazaki) (NNP:[197..199] J.)))
+
+;section 3 Span:203..263
+;Department of Urology, School of Medicine, Chiba University.
+(SEC
+  (FRAG (NNP:[203..213] Department) (IN:[214..216] of) (NNP:[217..224] Urology)
+        (,:[224..225] ,) (NNP:[226..232] School) (IN:[233..235] of)
+        (NNP:[236..244] Medicine) (,:[244..245] ,) (NNP:[246..251] Chiba)
+        (NNP:[252..262] University) (.:[262..263] .)))
+
+;sentence 4 Span:267..549
+;Genetic alterations of ras oncogenes (K-, H- and N-ras) and adenomatous 
+;polyposis coli (APC) gene in tissues of prostate cancer from Japanese
+;patients  were examined using PCR-SSCP (polymerase chain reaction-single
+;strand  conformation polymorphism) analysis and direct sequencing.
+;[290..293]:gene-rna:"ras"
+;[305..307]...[309..311]...[316..318]...[318..321]:gene-rna:"K-"..."H-"..."N-"
+;..."ras"
+;[327..354]:gene-rna:"adenomatous  polyposis coli"
+;[356..359]:gene-rna:"APC"
+;[380..395]:malignancy:"prostate cancer"
+;[450..460]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[267..274] Genetic) (NNS:[275..286] alterations))
+      (PP (IN:[287..289] of)
+        (NP
+          (NP (NN:[290..293] ras) (NNS:[294..303] oncogenes)
+            (PRN (-LRB-:[304..305] -LRB-)
+              (NP
+                (NP (NN:[305..306] K) (HYPH:[306..307] -)
+                  (NML-2 (-NONE-:[307..307] *P*)))
+                (,:[307..308] ,)
+                (NP (NN:[309..310] H) (HYPH:[310..311] -)
+                  (NML-2 (-NONE-:[311..311] *P*)))
+                (CC:[312..315] and)
+                (NP (NN:[316..317] N) (HYPH:[317..318] -)
+                  (NML-2 (NN:[318..321] ras))))
+              (-RRB-:[321..322] -RRB-)))
+          (CC:[323..326] and)
+          (NP
+            (NML
+              (NML (JJ:[327..338] adenomatous) (NN:[340..349] polyposis)
+                   (NN:[350..354] coli))
+              (NML (-LRB-:[355..356] -LRB-) (NN:[356..359] APC)
+                   (-RRB-:[359..360] -RRB-)))
+            (NN:[361..365] gene))))
+      (PP-LOC (IN:[366..368] in)
+        (NP
+          (NP (NNS:[369..376] tissues))
+          (PP (IN:[377..379] of)
+            (NP
+              (NP (NN:[380..388] prostate) (NN:[389..395] cancer))
+              (PP (IN:[396..400] from)
+                (NP (JJ:[401..409] Japanese) (NNS:[410..418] patients))))))))
+    (VP (VBD:[420..424] were)
+      (VP (VBN:[425..433] examined)
+        (NP-1 (-NONE-:[433..433] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[433..433] *))
+          (VP (VBG:[434..439] using)
+            (NP
+              (NP
+                (NML
+                  (NML (NN:[440..443] PCR) (HYPH:[443..444] -)
+                       (NN:[444..448] SSCP))
+                  (NML (-LRB-:[449..450] -LRB-)
+                    (NML (NN:[450..460] polymerase) (NN:[461..466] chain)
+                         (NN:[467..475] reaction))
+                    (HYPH:[475..476] -)
+                    (NML
+                      (NML (JJ:[476..482] single) (NN:[483..489] strand))
+                      (NN:[491..503] conformation) (NN:[504..516] polymorphism))
+                    (-RRB-:[516..517] -RRB-)))
+                (NN:[518..526] analysis))
+              (CC:[527..530] and)
+              (NP (JJ:[531..537] direct) (NN:[538..548] sequencing)))))))
+    (.:[548..549] .)))
+
+;sentence 5 Span:550..749
+;Tissues from 8 cases  of untreated stage B prostate cancer surgically removed
+;and from 10 cases of  endocrine therapy-resistant metastatic disease obtained
+;at autopsy were used in  the present study.
+;[585..608]:malignancy:"stage B prostate cancer"
+;[678..696]:malignancy:"metastatic disease"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[550..557] Tissues))
+      (PP
+        (PP (IN:[558..562] from)
+          (NP
+            (NP (CD:[563..564] 8) (NNS:[565..570] cases))
+            (PP (IN:[572..574] of)
+              (NP
+                (NP (JJ:[575..584] untreated)
+                  
+                  (NML (NN:[585..590] stage) (NN:[591..592] B))
+                  (NN:[593..601] prostate) (NN:[602..608] cancer))
+                (VP
+                  (ADVP-MNR (RB:[609..619] surgically))
+                  (VBN:[620..627] removed)
+                  (NP (-NONE-:[627..627] *)))))))
+        (CC:[628..631] and)
+        (PP (IN:[632..636] from)
+          (NP
+            (NP
+              (NP (CD:[637..639] 10) (NNS:[640..645] cases))
+              (PP (IN:[646..648] of)
+                (NP
+                  (ADJP
+                    (NML (JJ:[650..659] endocrine) (NN:[660..667] therapy))
+                    (HYPH:[667..668] -) (JJ:[668..677] resistant))
+                   (JJ:[678..688] metastatic) (NN:[689..696] disease))))
+            (VP (VBN:[697..705] obtained)
+              (NP (-NONE-:[705..705] *))
+              (PP (IN:[706..708] at)
+                (NP (NN:[709..716] autopsy))))))))
+    (VP (VBD:[717..721] were)
+      (VP (VBN:[722..726] used)
+        (NP-1 (-NONE-:[726..726] *))
+        (PP (IN:[727..729] in)
+          (NP (DT:[731..734] the) (JJ:[735..742] present) (NN:[743..748] study)))))
+    (.:[748..749] .)))
+
+;sentence 6 Span:750..889
+;In four out of 18 cases (22%), ras point mutations were  found, two in either
+;codon 12 or 61 of K-ras and two in either 13 or 61 of  H-ras.
+;[781..784]:gene-rna:"ras"
+;[785..800]:variation-type:"point mutations"
+;[828..833]...[834..836]...[840..842]...[870..872]...[876..878]:variation-loca
+;tion:"codon"..."12"..."61"..."13"..."61"
+;[846..851]:gene-rna:"K-ras"
+;[883..888]:gene-rna:"H-ras"
+(SENT
+  (S
+    (PP (IN:[750..752] In)
+      (NP
+        (NP (CD:[753..757] four))
+        (PP (IN:[758..761] out)
+          (PP (IN:[762..764] of)
+            (NP (CD:[765..767] 18) (NNS:[768..773] cases)
+              (PRN (-LRB-:[774..775] -LRB-)
+                (NP (CD:[775..777] 22) (NN:[777..778] %))
+                (-RRB-:[778..779] -RRB-)))))))
+    (,:[779..780] ,)
+    (NP-SBJ-2 (NN:[781..784] ras)
+       (NN:[785..790] point) (NNS:[791..800] mutations))
+    (VP (VBD:[801..805] were)
+      (VP (VBN:[807..812] found)
+        (NP-2 (-NONE-:[812..812] *))
+        (,:[812..813] ,)
+        (FRAG
+          (NP
+            (NP
+              (NP (CD:[814..817] two))
+              (PP (IN:[818..820] in)
+                (NP
+                  (NP (CC:[821..827] either)
+                    (NP
+                      (NML-1 (NN:[828..833] codon))
+                      (CD:[834..836] 12))
+                    (CC:[837..839] or)
+                    (NP
+                      (NML-1 (-NONE-:[839..839] *P*))
+                      (CD:[840..842] 61)))
+                  (PP (IN:[843..845] of)
+                    (NP (NN:[846..851] K-ras))))))
+            (CC:[852..855] and)
+            (NP
+              (NP (CD:[856..859] two))
+              (PP (IN:[860..862] in)
+                (NP
+                  (NP (CC:[863..869] either) (CD:[870..872] 13)
+                      (CC:[873..875] or) (CD:[876..878] 61))
+                  (PP (IN:[879..881] of)
+                    (NP (NN:[883..888] H-ras))))))))))
+    (.:[888..889] .)))
+
+;sentence 7 Span:890..1001
+;These point mutations were detected in one of the stage B cases (13%) and  in
+;three of the autopsy cases (30%).
+;[896..911]:variation-type:"point mutations"
+;[940..947]:malignancy:"stage B"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[890..895] These)
+       (NN:[896..901] point) (NNS:[902..911] mutations))
+    (VP (VBD:[912..916] were)
+      (VP (VBN:[917..925] detected)
+        (NP-1 (-NONE-:[925..925] *))
+        (PP
+          (PP (IN:[926..928] in)
+            (NP
+              (NP (CD:[929..932] one))
+              (PP (IN:[933..935] of)
+                (NP (DT:[936..939] the)
+                  (NML (NN:[940..945] stage) (NN:[946..947] B))
+                  (NNS:[948..953] cases)))
+              (PRN (-LRB-:[954..955] -LRB-)
+                (NP (CD:[955..957] 13) (NN:[957..958] %))
+                (-RRB-:[958..959] -RRB-))))
+          (CC:[960..963] and)
+          (PP (IN:[965..967] in)
+            (NP
+              (NP (CD:[968..973] three))
+              (PP (IN:[974..976] of)
+                (NP (DT:[977..980] the) (NN:[981..988] autopsy)
+                    (NNS:[989..994] cases)))
+              (PRN (-LRB-:[995..996] -LRB-)
+                (NP (CD:[996..998] 30) (NN:[998..999] %))
+                (-RRB-:[999..1000] -RRB-)))))))
+    (.:[1000..1001] .)))
+
+;sentence 8 Span:1002..1061
+;All these cases were poorly differentiated  adenocarcinoma.
+;[1023..1060]:malignancy:"poorly differentiated  adenocarcinoma"
+(SENT
+  (S
+    (NP-SBJ (PDT:[1002..1005] All) (DT:[1006..1011] these)
+            (NNS:[1012..1017] cases))
+    (VP (VBD:[1018..1022] were)
+      (ADJP-PRD
+        (ADJP (RB:[1023..1029] poorly) (VBN:[1030..1044] differentiated))
+        (NN:[1046..1060] adenocarcinoma)))
+    (.:[1060..1061] .)))
+
+;sentence 9 Span:1062..1179
+;In autopsy cases showing ras mutation in cancerous prostate, the  same
+;alteration was observed in metastatic tissues.
+;[1087..1090]:gene-rna:"ras"
+;[1091..1099]:variation-event:"mutation"
+;[1103..1121]:malignancy:"cancerous prostate"
+;[1133..1143]:variation-event:"alteration"
+;[1160..1178]:malignancy:"metastatic tissues"
+(SENT
+  (S
+    (PP (IN:[1062..1064] In)
+      (NP
+        (NP (NN:[1065..1072] autopsy) (NNS:[1073..1078] cases))
+        (VP (VBG:[1079..1086] showing)
+          (NP (NN:[1087..1090] ras) (NN:[1091..1099] mutation))
+          (PP (IN:[1100..1102] in)
+            (NP (JJ:[1103..1112] cancerous) (NN:[1113..1121] prostate))))))
+    (,:[1121..1122] ,)
+    (NP-SBJ-1 (DT:[1123..1126] the) (JJ:[1128..1132] same)
+              (NN:[1133..1143] alteration))
+    (VP (VBD:[1144..1147] was)
+      (VP (VBN:[1148..1156] observed)
+        (NP-1 (-NONE-:[1156..1156] *))
+        (PP (IN:[1157..1159] in)
+          (NP (JJ:[1160..1170] metastatic) (NNS:[1171..1178] tissues)))))
+    (.:[1178..1179] .)))
+
+;sentence 10 Span:1180..1276
+;No APC gene mutation was  detected in any sample, although polymorphism was
+;found in some cases.
+;[1183..1186]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1180..1182] No) (NN:[1183..1186] APC) (NN:[1187..1191] gene)
+              (NN:[1192..1200] mutation))
+    (VP (VBD:[1201..1204] was)
+      (VP (VBN:[1206..1214] detected)
+        (NP-2 (-NONE-:[1214..1214] *))
+        (PP (IN:[1215..1217] in)
+          (NP (DT:[1218..1221] any) (NN:[1222..1228] sample)))
+        (,:[1228..1229] ,)
+        (SBAR-ADV (IN:[1230..1238] although)
+          (S
+            (NP-SBJ-1 (NN:[1239..1251] polymorphism))
+            (VP (VBD:[1252..1255] was)
+              (VP (VBN:[1256..1261] found)
+                (NP-1 (-NONE-:[1261..1261] *))
+                (PP (IN:[1262..1264] in)
+                  (NP (DT:[1265..1269] some) (NNS:[1270..1275] cases)))))))))
+    (.:[1275..1276] .)))
+
+;sentence 11 Span:1277..1474
+;These  results indicate that ras oncogene mutations are related to the
+;progression of  prostate cancer, whereas APC gene alteration is not involved
+;in tumorigenesis  and development of this cancer.
+;[1306..1309]:gene-rna:"ras"
+;[1364..1379]:malignancy:"prostate cancer"
+;[1389..1392]:gene-rna:"APC"
+;[1467..1473]:malignancy:"cancer"
+(SENT
+  (S
+    (NP-SBJ (DT:[1277..1282] These) (NNS:[1284..1291] results))
+    (VP (VBP:[1292..1300] indicate)
+      (SBAR (IN:[1301..1305] that)
+        (S
+          (NP-SBJ-2 (NN:[1306..1309] ras) (NN:[1310..1318] oncogene)
+                    (NNS:[1319..1328] mutations))
+          (VP (VBP:[1329..1332] are)
+            (VP (JJ:[1333..1340] related)
+              (NP-2 (-NONE-:[1340..1340] *))
+              (PP-CLR (TO:[1341..1343] to)
+                (NP
+                  (NP (DT:[1344..1347] the) (NN:[1348..1359] progression))
+                  (PP (IN:[1360..1362] of)
+                    (NP (NN:[1364..1372] prostate) (NN:[1373..1379] cancer)))))
+              (,:[1379..1380] ,)
+              (SBAR-ADV (IN:[1381..1388] whereas)
+                (S
+                  (NP-SBJ-1 (NN:[1389..1392] APC) (NN:[1393..1397] gene)
+                            (NN:[1398..1408] alteration))
+                  (VP (VBZ:[1409..1411] is) (RB:[1412..1415] not)
+                    (VP (VBN:[1416..1424] involved)
+                      (NP-1 (-NONE-:[1424..1424] *))
+                      (PP (IN:[1425..1427] in)
+                        (NP
+                          (NP (NN:[1428..1441] tumorigenesis)
+                              (CC:[1443..1446] and)
+                              (NN:[1447..1458] development))
+                          (PP (IN:[1459..1461] of)
+                            (NP (DT:[1462..1466] this) (NN:[1467..1473] cancer))))))))))))))
+    (.:[1473..1474] .)))
+
+;section 12 Span:1478..1522
+;PMID: 7928631 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1478..1482] PMID) (::[1482..1483] :) (CD:[1484..1491] 7928631)
+        (NN:[1492..1493] -LSB-) (NNP:[1493..1499] PubMed) (::[1500..1501] -)
+        (NN:[1502..1509] indexed) (IN:[1510..1513] for)
+        (NNP:[1514..1522] MEDLINE-RSB-)))

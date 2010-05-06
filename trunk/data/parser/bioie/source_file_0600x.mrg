@@ -1,0 +1,329 @@
+;PMID: 11215737
+;source_file_1204.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..153] = [t:41..153]
+;2)section:[e:157..262] = [t:157..262]
+;3)section:[e:266..352] = [t:266..352]
+;4)sentence:[e:356..541] = [t:356..541]
+;5)sentence:[e:542..796] = [t:542..796]
+;6)sentence:[e:797..899] = [t:797..899]
+;7)sentence:[e:900..992] = [t:900..992]
+;8)sentence:[e:994..1103] = [t:994..1103]
+;9)sentence:[e:1104..1198] = [t:1104..1198]
+;10)sentence:[e:1199..1361] = [t:1199..1361]
+;11)section:[e:1365..1410] = [t:1365..1410]
+
+;section 0 Span:0..36
+;Dig Dis Sci  2000 Nov;45(11):2187-94
+(SEC
+  (FRAG (NNP:[0..3] Dig) (NNP:[4..7] Dis) (NNP:[8..11] Sci) (CD:[13..17] 2000)
+        (.:[18..25] Nov;45-LRB-) (CD:[25..27] 11) (-RRB-:[27..28] -RRB-)
+        (CD:[28..33] :2187) (::[33..34] -) (CD:[34..36] 94)))
+
+;sentence 1 Span:41..153
+;No major difference in K-ras and p53 abnormalities in sporadic and hereditary
+; nonpolyposis colorectal adenomas.
+;[64..69]:gene-rna:"K-ras"
+;[74..77]:gene-rna:"p53"
+;[95..103]...[120..152]:malignancy:"sporadic"..."nonpolyposis colorectal
+;adenomas"
+;[108..152]:malignancy:"hereditary  nonpolyposis colorectal adenomas"
+(SENT
+  (NP-HLN
+    (NP (DT:[41..43] No) (JJ:[44..49] major) (NN:[50..60] difference))
+    (PP (IN:[61..63] in)
+      (NP
+        (NP (NN:[64..69] K-ras)
+          (NML-1 (-NONE-:[69..69] *P*)))
+        (CC:[70..73] and)
+        (NP (NN:[74..77] p53)
+          (NML-1 (NNS:[78..91] abnormalities)))))
+    (PP-LOC (IN:[92..94] in)
+      (NP
+        (ADJP (JJ:[95..103] sporadic) (CC:[104..107] and)
+              (JJ:[108..118] hereditary))
+        (NN:[120..132] nonpolyposis) (JJ:[133..143] colorectal)
+         (NNS:[144..152] adenomas)))
+    (.:[152..153] .)))
+
+;section 2 Span:157..262
+;Voskuil DW, Kampman E, van Geloof W, Grubben M, Kok F, van Muijen G,
+;Nagengast  F, Vasen H, van't Veer P.
+(SEC
+  (FRAG (NNP:[157..164] Voskuil) (NNP:[165..167] DW) (,:[167..168] ,)
+        (NNP:[169..176] Kampman) (NNP:[177..178] E) (,:[178..179] ,)
+        (NNP:[180..183] van) (NNP:[184..190] Geloof) (NNP:[191..192] W)
+        (,:[192..193] ,) (NNP:[194..201] Grubben) (NNP:[202..204] M,)
+        (NNP:[205..208] Kok) (NNP:[209..210] F) (,:[210..211] ,)
+        (NNP:[212..215] van) (NNP:[216..222] Muijen) (NNP:[223..224] G)
+        (,:[224..225] ,) (NNP:[226..235] Nagengast) (NNP:[237..238] F)
+        (,:[238..239] ,) (NNP:[240..245] Vasen) (NNP:[246..247] H)
+        (,:[247..248] ,) (VBD:[249..254] van't) (NNP:[255..259] Veer)
+        (NNP:[260..262] P.)))
+
+;section 3 Span:266..352
+;Division of Human Nutrition and Epidemiology, Wageningen University, The 
+;Netherlands.
+(SEC
+  (FRAG (NNP:[266..274] Division) (IN:[275..277] of) (NNP:[278..283] Human)
+        (NNP:[284..293] Nutrition) (CC:[294..297] and)
+        (NNP:[298..310] Epidemiology) (,:[310..311] ,)
+        (NNP:[312..322] Wageningen) (NNP:[323..333] University) (,:[333..334] ,)
+        (DT:[335..338] The) (NNP:[340..351] Netherlands) (.:[351..352] .)))
+
+;sentence 4 Span:356..541
+;K-ras and p53 gene mutations are known to occur in high frequencies in
+;sporadic  colorectal cancers, but findings are inconsistent in hereditary
+;nonpolyposis  colorectal cancer (HNPCC).
+;[356..361]:gene-rna:"K-ras"
+;[366..369]:gene-rna:"p53"
+;[427..455]:malignancy:"sporadic  colorectal cancers"
+;[490..532]:malignancy:"hereditary nonpolyposis  colorectal cancer"
+;[534..539]:malignancy:"HNPCC"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP (NN:[356..361] K-ras)
+          (NML-1 (-NONE-:[361..361] *P*)))
+        (CC:[362..365] and)
+        (NP (NN:[366..369] p53)
+          (NML-1 (NN:[370..374] gene) (NNS:[375..384] mutations))))
+      (VP (VBP:[385..388] are)
+        (VP (VBN:[389..394] known)
+          (S
+            (NP-SBJ-2 (-NONE-:[394..394] *))
+            (VP (TO:[395..397] to)
+              (VP (VB:[398..403] occur)
+                (PP (IN:[404..406] in)
+                  (NP (JJ:[407..411] high) (NNS:[412..423] frequencies)))
+                (PP-LOC (IN:[424..426] in)
+                  (NP (JJ:[427..435] sporadic) (JJ:[437..447] colorectal)
+                      (NNS:[448..455] cancers)))))))))
+    (,:[455..456] ,) (CC:[457..460] but)
+    (S
+      (NP-SBJ (NNS:[461..469] findings))
+      (VP (VBP:[470..473] are)
+        (ADJP-PRD (JJ:[474..486] inconsistent))
+        (PP (IN:[487..489] in)
+          (NP
+            (NP (JJ:[490..500] hereditary) (NN:[501..513] nonpolyposis)
+                (JJ:[515..525] colorectal) (NN:[526..532] cancer))
+            (NP (-LRB-:[533..534] -LRB-) (NN:[534..539] HNPCC)
+                (-RRB-:[539..540] -RRB-))))))
+    (.:[540..541] .)))
+
+;sentence 5 Span:542..796
+;We compared K-ras codon 12 and 13 gene mutations and  p53 protein
+;overexpression in 48 HNPCC (positive for Amsterdam criteria) and 59  sporadic
+;colorectal adenomas, to examine whether they may represent similar or 
+;different molecular pathways to cancer.
+;[554..559]:gene-rna:"K-ras"
+;[560..568]:variation-location:"codon 12"
+;[560..565]...[573..575]:variation-location:"codon"..."13"
+;[581..590]:variation-event:"mutations"
+;[596..599]:gene-protein:"p53"
+;[629..634]:malignancy:"HNPCC"
+;[677..705]:malignancy:"sporadic colorectal adenomas"
+(SENT
+  (S
+    (NP-SBJ (PRP:[542..544] We))
+    (VP (VBD:[545..553] compared)
+      (NP
+        (NP
+          (NP
+            (NML-1 (NN:[554..559] K-ras))
+            (NML
+              (NML-2 (NN:[560..565] codon))
+              (CD:[566..568] 12))
+            (NML-3 (-NONE-:[568..568] *P*)))
+          (CC:[569..572] and)
+          (NP
+            (NML-1 (-NONE-:[572..572] *P*))
+            (NML
+              (NML-2 (-NONE-:[572..572] *P*))
+              (CD:[573..575] 13))
+            (NML-3 (NN:[576..580] gene) (NNS:[581..590] mutations))))
+        (CC:[591..594] and)
+        (NP (NN:[596..599] p53)
+          (NML (NN:[600..607] protein) (NN:[608..622] overexpression))))
+      (PP (IN:[623..625] in)
+        (NP
+          (NP (CD:[626..628] 48) (NN:[629..634] HNPCC)
+            (PRN (-LRB-:[635..636] -LRB-)
+              (ADJP (JJ:[636..644] positive)
+                (PP (IN:[645..648] for)
+                  (NP (NNP:[649..658] Amsterdam) (NNS:[659..667] criteria))))
+              (-RRB-:[667..668] -RRB-)))
+          (CC:[669..672] and)
+          (NP (CD:[673..675] 59)
+             (JJ:[677..685] sporadic) (JJ:[686..696] colorectal)
+             (NNS:[697..705] adenomas))))
+      (,:[705..706] ,)
+      (S-PRP
+        (NP-SBJ (-NONE-:[706..706] *))
+        (VP (TO:[707..709] to)
+          (VP (VB:[710..717] examine)
+            (SBAR (IN:[718..725] whether)
+              (S
+                (NP-SBJ (PRP:[726..730] they))
+                (VP (MD:[731..734] may)
+                  (VP (VB:[735..744] represent)
+                    (NP
+                      (NP
+                        (NP (JJ:[745..752] similar)
+                          (NML-4 (-NONE-:[752..752] *P*)))
+                        (CC:[753..755] or)
+                        (NP (JJ:[757..766] different)
+                          (NML-4 (JJ:[767..776] molecular)
+                                 (NNS:[777..785] pathways))))
+                      (PP (TO:[786..788] to)
+                        (NP (NN:[789..795] cancer))))))))))))
+    (.:[795..796] .)))
+
+;sentence 6 Span:797..899
+;In sporadic adenomas K-ras mutations  were detected in 32% and p53
+;overexpression in 31% of the cases.
+;[800..817]:malignancy:"sporadic adenomas"
+;[818..823]:gene-rna:"K-ras"
+;[860..863]:gene-protein:"p53"
+(SENT
+  (S
+    (PP (IN:[797..799] In)
+      (NP (JJ:[800..808] sporadic) (NNS:[809..817] adenomas)))
+    (S
+      (NP-SBJ-1=2 (NN:[818..823] K-ras) (NNS:[824..833] mutations))
+      (VP (VBD:[835..839] were)
+        (VP (VBN:[840..848] detected)
+          (NP-1 (-NONE-:[848..848] *))
+          (PP=3 (IN:[849..851] in)
+            (NP
+              (NP (CD:[852..854] 32) (NN:[854..855] %))
+              (PP-4 (-NONE-:[855..855] *RNR*)))))))
+    (CC:[856..859] and)
+    (S
+      (NP-SBJ=2 (NN:[860..863] p53) (NN:[864..878] overexpression))
+      (PP=3 (IN:[879..881] in)
+        (NP
+          (NP (CD:[882..884] 31) (NN:[884..885] %))
+          (PP-4 (-NONE-:[885..885] *RNR*)))))
+    (PP-4 (IN:[886..888] of)
+      (NP (DT:[889..892] the) (NNS:[893..898] cases)))
+    (.:[898..899] .)))
+
+;sentence 7 Span:900..992
+;Similarly,  K-ras mutations and p53 overexpression were both found in 25% of
+;HNPCC adenomas.
+;[912..917]:gene-rna:"K-ras"
+;[932..935]:gene-protein:"p53"
+;[977..991]:malignancy:"HNPCC adenomas"
+(SENT
+  (S
+    (ADVP (RB:[900..909] Similarly))
+    (,:[909..910] ,)
+    (NP-SBJ-1
+      (NP (NN:[912..917] K-ras) (NNS:[918..927] mutations))
+      (CC:[928..931] and)
+      (NP (NN:[932..935] p53) (NN:[936..950] overexpression)))
+    (VP (VBD:[951..955] were) (DT:[956..960] both)
+      (VP (VBN:[961..966] found)
+        (NP-1 (-NONE-:[966..966] *))
+        (PP (IN:[967..969] in)
+          (NP
+            (NP (CD:[970..972] 25) (NN:[972..973] %))
+            (PP (IN:[974..976] of)
+              (NP (NN:[977..982] HNPCC) (NNS:[983..991] adenomas)))))))
+    (.:[991..992] .)))
+
+;sentence 8 Span:994..1103
+;The frequencies of these abnormalities were not significantly different
+;between  HNPCC and sporadic adenomas.
+;[1075..1080]:malignancy:"HNPCC"
+;[1085..1102]:malignancy:"sporadic adenomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[994..997] The) (NNS:[998..1009] frequencies))
+      (PP (IN:[1010..1012] of)
+        (NP (DT:[1013..1018] these) (NNS:[1019..1032] abnormalities))))
+    (VP (VBD:[1033..1037] were) (RB:[1038..1041] not)
+      (ADJP-PRD (RB:[1042..1055] significantly) (JJ:[1056..1065] different)
+        (PP (IN:[1066..1073] between)
+          (NP
+            (NP (NN:[1075..1080] HNPCC))
+            (CC:[1081..1084] and)
+            (NP (JJ:[1085..1093] sporadic) (NNS:[1094..1102] adenomas))))))
+    (.:[1102..1103] .)))
+
+;sentence 9 Span:1104..1198
+;When taking differences in adenoma size into  account, the frequencies were
+;even more similar.
+;[1131..1138]:malignancy:"adenoma"
+(SENT
+  (S
+    (SBAR-ADV (WRB:[1104..1108] When)
+      (S
+        (NP-SBJ (-NONE-:[1108..1108] *))
+        (VP (VBG:[1109..1115] taking)
+          (NP
+            (NP (NNS:[1116..1127] differences))
+            (PP (IN:[1128..1130] in)
+              (NP (NN:[1131..1138] adenoma) (NN:[1139..1143] size))))
+          (PP (IN:[1144..1148] into)
+            (NP (NN:[1150..1157] account))))))
+    (,:[1157..1158] ,)
+    (NP-SBJ (DT:[1159..1162] the) (NNS:[1163..1174] frequencies))
+    (VP (VBD:[1175..1179] were)
+      (ADJP-PRD
+        (ADVP (RB:[1180..1184] even) (RBR:[1185..1189] more))
+        (JJ:[1190..1197] similar)))
+    (.:[1197..1198] .)))
+
+;sentence 10 Span:1199..1361
+;In conclusion, these results  suggest a similar molecular pathway to adenomas
+;in HNPCC and sporadic  carcinogenesis, with respect to involvement of K-ras
+;and p53.
+;[1268..1276]:malignancy:"adenomas"
+;[1280..1285]:malignancy:"HNPCC"
+;[1347..1352]:gene-rna:"K-ras"
+;[1357..1360]:gene-rna:"p53"
+(SENT
+  (S
+    (PP (IN:[1199..1201] In)
+      (NP (NN:[1202..1212] conclusion)))
+    (,:[1212..1213] ,)
+    (NP-SBJ (DT:[1214..1219] these) (NNS:[1220..1227] results))
+    (VP (VBP:[1229..1236] suggest)
+      (NP (DT:[1237..1238] a) (JJ:[1239..1246] similar)
+          (JJ:[1247..1256] molecular) (NN:[1257..1264] pathway))
+      (PP (TO:[1265..1267] to)
+        (NP (NNS:[1268..1276] adenomas)))
+      (PP (IN:[1277..1279] in)
+        (NP
+          (NP (NN:[1280..1285] HNPCC))
+          (CC:[1286..1289] and)
+          (NP (JJ:[1290..1298] sporadic) (NN:[1300..1314] carcinogenesis))))
+      (,:[1314..1315] ,)
+      (PP (IN:[1316..1320] with)
+        (NP
+          (NP (NN:[1321..1328] respect))
+          (PP (TO:[1329..1331] to)
+            (NP
+              (NP (NN:[1332..1343] involvement))
+              (PP (IN:[1344..1346] of)
+                (NP
+                  (NP (NN:[1347..1352] K-ras))
+                  (CC:[1353..1356] and)
+                  (NP (NN:[1357..1360] p53)))))))))
+    (.:[1360..1361] .)))
+
+;section 11 Span:1365..1410
+;PMID: 11215737 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1365..1369] PMID) (::[1369..1370] :) (CD:[1371..1379] 11215737)
+        (NN:[1380..1381] -LSB-) (NNP:[1381..1387] PubMed) (::[1388..1389] -)
+        (NN:[1390..1397] indexed) (IN:[1398..1401] for)
+        (NNP:[1402..1410] MEDLINE-RSB-)))

@@ -1,0 +1,518 @@
+;PMID: 9342584
+;source_file_985.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..110] = [t:46..110]
+;2)section:[e:114..140] = [t:114..140]
+;3)section:[e:144..213] = [t:144..213]
+;4)sentence:[e:217..228] = [t:217..228]
+;5)sentence:[e:229..477] = [t:229..477]
+;6)sentence:[e:478..629] = [t:478..629]
+;7)sentence:[e:630..638] = [t:630..638]
+;8)sentence:[e:639..790] = [t:639..790]
+;9)sentence:[e:791..895] = [t:791..895]
+;10)sentence:[e:896..1056] = [t:896..1056]
+;11)sentence:[e:1057..1151] = [t:1057..1151]
+;12)sentence:[e:1152..1462] = [t:1152..1462]
+;13)sentence:[e:1464..1475] = [t:1464..1475]
+;14)sentence:[e:1476..1678] = [t:1476..1678]
+;15)sentence:[e:1679..1784] = [t:1679..1784]
+;16)section:[e:1788..1832] = [t:1788..1832]
+
+;section 0 Span:0..40
+;Eur J Clin Pharmacol. 1997;52(6):479-85.
+(SEC
+  (FRAG (NNP:[0..3] Eur) (NNP:[4..5] J) (NNP:[6..10] Clin)
+        (NNP:[11..20] Pharmacol) (.:[20..21] .) ('':[22..30] 1997;52-LRB-)
+        (CC:[30..32] 6-RRB-) (CD:[32..36] :479) (HYPH:[36..37] -)
+        (CD:[37..39] 85) (.:[39..40] .)))
+
+;sentence 1 Span:46..110
+;Metabolism of carteolol by cDNA-expressed human cytochrome P450.
+;[60..69]:substance:"carteolol"
+;[73..77]:substance:"cDNA"
+;[94..109]:cyp450:"cytochrome P450"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..56] Metabolism))
+    (PP (IN:[57..59] of)
+      (NP (NN:[60..69] carteolol)))
+    (PP (IN:[70..72] by)
+      (NP
+        (ADJP (NN:[73..77] cDNA) (HYPH:[77..78] -) (VBN:[78..87] expressed))
+        (JJ:[88..93] human)
+         (NN:[94..104] cytochrome) (NN:[105..109] P450)))
+    (.:[109..110] .)))
+
+;section 2 Span:114..140
+;Kudo S, Uchida M, Odomi M.
+(SEC
+  (FRAG (NNP:[114..118] Kudo) (NNP:[119..121] S,) (NNP:[122..128] Uchida)
+        (NNP:[129..131] M,) (NNP:[132..137] Odomi) (NNP:[138..140] M.)))
+
+;section 3 Span:144..213
+;Tokushima Research Institute, Otsuka Pharmaceutical Co., Ltd., Japan.
+(SEC
+  (FRAG (NNP:[144..153] Tokushima) (NNP:[154..162] Research)
+        (NNP:[163..172] Institute) (,:[172..173] ,) (NNP:[174..180] Otsuka)
+        (NNP:[181..195] Pharmaceutical) (NNP:[196..199] Co.) (,:[199..200] ,)
+        (NNP:[201..205] Ltd.) (,:[205..206] ,) (NNP:[207..212] Japan)
+        (.:[212..213] .)))
+
+;sentence 4 Span:217..228
+;OBJECTIVES:
+(SENT
+  (NP (NNS:[217..227] OBJECTIVES) (::[227..228] :)))
+
+;sentence 5 Span:229..477
+;To determine human cytochrome P450 isoform(s) (CYPs) involved in the 
+;metabolism of carteolol, the biotransformation of the compound was
+;investigated  in vitro using ten isoforms of human cytochrome P450 expressed
+;in human AHH-1 TK  +/- cell lines.
+;[248..274]:cyp450:"cytochrome P450 isoform(s)"
+;[276..280]:cyp450:"CYPs"
+;[313..322]:substance:"carteolol"
+;[353..361]:substance:"compound"
+;[399..407]:cyp450:"isoforms"
+;[417..432]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[229..229] *))
+      (VP (TO:[229..231] To)
+        (VP (VB:[232..241] determine)
+          (NP
+            (NP (JJ:[242..247] human)
+              (NML
+                (NML
+                  (NML (NN:[248..258] cytochrome) (NN:[259..263] P450))
+                  (NNS:[264..274] isoform-LRB-s-RRB-))
+                (NML (-LRB-:[275..276] -LRB-) (NNS:[276..280] CYPs)
+                     (-RRB-:[280..281] -RRB-))))
+            (VP (VBN:[282..290] involved)
+              (NP (-NONE-:[290..290] *))
+              (PP-CLR (IN:[291..293] in)
+                (NP
+                  (NP (DT:[294..297] the) (NN:[299..309] metabolism))
+                  (PP (IN:[310..312] of)
+                    (NP (NN:[313..322] carteolol))))))))))
+    (,:[322..323] ,)
+    (NP-SBJ-1
+      (NP (DT:[324..327] the) (NN:[328..345] biotransformation))
+      (PP (IN:[346..348] of)
+        (NP (DT:[349..352] the) (NN:[353..361] compound))))
+    (VP (VBD:[362..365] was)
+      (VP (VBN:[366..378] investigated)
+        (NP-1 (-NONE-:[378..378] *))
+        (ADVP (FW:[380..382] in) (FW:[383..388] vitro))
+        (S-MNR
+          (NP-SBJ (-NONE-:[388..388] *))
+          (VP (VBG:[389..394] using)
+            (NP
+              (NP
+                (NP (CD:[395..398] ten) (NNS:[399..407] isoforms))
+                (PP (IN:[408..410] of)
+                  (NP (JJ:[411..416] human)
+                     (NN:[417..427] cytochrome) (NN:[428..432] P450))))
+              (VP (VBN:[433..442] expressed)
+                (NP (-NONE-:[442..442] *))
+                (PP-LOC (IN:[443..445] in)
+                  (NP (JJ:[446..451] human)
+                    (NML (NN:[452..457] AHH-1) (NN:[458..460] TK)
+                         (SYM:[462..465] +/-))
+                    (NN:[466..470] cell) (NNS:[471..476] lines)))))))))
+    (.:[476..477] .)))
+
+;sentence 6 Span:478..629
+;In addition, the inhibitory effects of carteolol on the  activities of
+;important CYP isoforms, namely, CYP1A2, 2C9, 2C19, 2E1, and 3A4,  were
+;examined.
+;[517..526]:substance:"carteolol"
+;[559..571]:cyp450:"CYP isoforms"
+;[581..587]:cyp450:"CYP1A2"
+;[581..584]...[609..612]:cyp450:"CYP"..."3A4"
+;[581..584]...[600..603]:cyp450:"CYP"..."2E1"
+;[581..584]...[594..598]:cyp450:"CYP"..."2C19"
+;[581..584]...[589..592]:cyp450:"CYP"..."2C9"
+(SENT
+  (S
+    (PP (IN:[478..480] In)
+      (NP (NN:[481..489] addition)))
+    (,:[489..490] ,)
+    (NP-SBJ-2
+      (NP (DT:[491..494] the) (JJ:[495..505] inhibitory)
+          (NNS:[506..513] effects))
+      (PP (IN:[514..516] of)
+        (NP (NN:[517..526] carteolol)))
+      (PP (IN:[527..529] on)
+        (NP
+          (NP (DT:[530..533] the) (NNS:[535..545] activities))
+          (PP (IN:[546..548] of)
+            (NP
+              (NP (JJ:[549..558] important)
+                 (NN:[559..562] CYP) (NNS:[563..571] isoforms))
+              (,:[571..572] ,)
+              (NP
+                (ADVP (RB:[573..579] namely))
+                (,:[579..580] ,)
+                (NP
+                  (NML-1 (NN:[581..584] CYP))
+                  (NN:[584..587] 1A2))
+                (,:[587..588] ,)
+                (NP
+                  (NML-1 (-NONE-:[588..588] *P*))
+                  (NN:[589..592] 2C9))
+                (,:[592..593] ,)
+                (NP
+                  (NML-1 (-NONE-:[593..593] *P*))
+                  (NN:[594..598] 2C19))
+                (,:[598..599] ,)
+                (NP
+                  (NML-1 (-NONE-:[599..599] *P*))
+                  (NN:[600..603] 2E1))
+                (,:[603..604] ,) (CC:[605..608] and)
+                (NP
+                  (NML-1 (-NONE-:[608..608] *P*))
+                  (NN:[609..612] 3A4))))))))
+    (,:[612..613] ,)
+    (VP (VBD:[615..619] were)
+      (VP (VBN:[620..628] examined)
+        (NP-2 (-NONE-:[628..628] *))))
+    (.:[628..629] .)))
+
+;sentence 7 Span:630..638
+;RESULTS:
+(SENT
+  (NP (NNS:[630..637] RESULTS) (::[637..638] :)))
+
+;sentence 8 Span:639..790
+;Carteolol was metabolised to 8-hydroxycarteolol by CYP  2D6 with KM and Vmax
+;values of 183 mumoles.l-1 and 26.09 pmol.min-1.pmol-1 P450,  respectively.
+;[639..648]:substance:"Carteolol"
+;[668..686]:substance:"8-hydroxycarteolol"
+;[690..698]:cyp450:"CYP  2D6"
+;[704..706]:quantitative-name:"KM"
+;[711..715]:quantitative-name:"Vmax"
+;[726..729]:quantitative-value:"183"
+;[730..741]:quantitative-units:"mumoles.l-1"
+;[746..751]:quantitative-value:"26.09"
+;[752..774]:quantitative-units:"pmol.min-1.pmol-1 P450"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[639..648] Carteolol))
+    (VP (VBD:[649..652] was)
+      (VP (VBN:[653..664] metabolised)
+        (NP-1 (-NONE-:[664..664] *))
+        (PP (TO:[665..667] to)
+          (NP (NN:[668..686] 8-hydroxycarteolol)))
+        (PP (IN:[687..689] by)
+          (NP-LGS (NN:[690..693] CYP) (NN:[695..698] 2D6)))
+        (PP (IN:[699..703] with)
+          (NP
+            (NP
+              (NP (NN:[704..706] KM)
+                (NML-2 (-NONE-:[706..706] *P*)))
+              (CC:[707..710] and)
+              (NP (NN:[711..715] Vmax)
+                (NML-2 (NNS:[716..722] values))))
+            (PP (IN:[723..725] of)
+              (NP
+                (NP
+                  (NP
+                    (NP (CD:[726..729] 183) (NNS:[730..737] mumoles))
+                    (PP (SYM:[737..738] .)
+                      (NP (NN:[738..741] l-1))))
+                  (CC:[742..745] and)
+                  (NP
+                    (NP (CD:[746..751] 26.09) (NN:[752..756] pmol))
+                    (PP (SYM:[756..757] .)
+                      (NP (NN:[757..762] min-1)))))
+                (PP (SYM:[762..763] .)
+                  (NP (NN:[763..769] pmol-1) (NN:[770..774] P450)))))))
+        (,:[774..775] ,)
+        (ADVP (RB:[777..789] respectively))))
+    (.:[789..790] .)))
+
+;sentence 9 Span:791..895
+;CYP1A1, 1A2, 2A6, 2B6, 2C8, 2C9, 2C19, 2E1 and 3A4 were not  involved in the
+;metabolism of the compound.
+;[791..797]:cyp450:"CYP1A1"
+;[791..794]...[838..841]:cyp450:"CYP"..."3A4"
+;[791..794]...[830..833]:cyp450:"CYP"..."2E1"
+;[791..794]...[824..828]:cyp450:"CYP"..."2C19"
+;[791..794]...[819..822]:cyp450:"CYP"..."2C9"
+;[791..794]...[814..817]:cyp450:"CYP"..."2C8"
+;[791..794]...[809..812]:cyp450:"CYP"..."2B6"
+;[791..794]...[804..807]:cyp450:"CYP"..."2A6"
+;[791..794]...[799..802]:cyp450:"CYP"..."1A2"
+;[886..894]:substance:"compound"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (NML-1 (NN:[791..794] CYP))
+        (NN:[794..797] 1A1))
+      (,:[797..798] ,)
+      (NP
+        (NML-1 (-NONE-:[798..798] *P*))
+        (NN:[799..802] 1A2))
+      (,:[802..803] ,)
+      (NP
+        (NML-1 (-NONE-:[803..803] *P*))
+        (NN:[804..807] 2A6))
+      (,:[807..808] ,)
+      (NP
+        (NML-1 (-NONE-:[808..808] *P*))
+        (NN:[809..812] 2B6))
+      (,:[812..813] ,)
+      (NP
+        (NML-1 (-NONE-:[813..813] *P*))
+        (NN:[814..817] 2C8))
+      (,:[817..818] ,)
+      (NP
+        (NML-1 (-NONE-:[818..818] *P*))
+        (NN:[819..822] 2C9))
+      (,:[822..823] ,)
+      (NP
+        (NML-1 (-NONE-:[823..823] *P*))
+        (NN:[824..828] 2C19))
+      (,:[828..829] ,)
+      (NP
+        (NML-1 (-NONE-:[829..829] *P*))
+        (NN:[830..833] 2E1))
+      (CC:[834..837] and)
+      (NP
+        (NML-1 (-NONE-:[837..837] *P*))
+        (NN:[838..841] 3A4)))
+    (VP (VBD:[842..846] were) (RB:[847..850] not)
+      (VP (VBN:[852..860] involved)
+        (NP-2 (-NONE-:[860..860] *))
+        (PP-CLR (IN:[861..863] in)
+          (NP
+            (NP (DT:[864..867] the) (NN:[868..878] metabolism))
+            (PP (IN:[879..881] of)
+              (NP (DT:[882..885] the) (NN:[886..894] compound)))))))
+    (.:[894..895] .)))
+
+;sentence 10 Span:896..1056
+;CYPD6-mediated carteolol  8-hydroxylase activity was inhibited by quinidine,
+;propranolol, nortriptyline,  dextromethorphan, sparteine, bufuralol, and
+;biperiden.
+;[896..901]:cyp450:"CYPD6"
+;[911..935]:substance:"carteolol  8-hydroxylase"
+;[962..971]:substance:"quinidine"
+;[973..984]:substance:"propranolol"
+;[986..999]:substance:"nortriptyline"
+;[1002..1018]:substance:"dextromethorphan"
+;[1020..1029]:substance:"sparteine"
+;[1031..1040]:substance:"bufuralol"
+;[1046..1055]:substance:"biperiden"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (NN:[896..901] CYPD6) (HYPH:[901..902] -) (VBN:[902..910] mediated))
+      (NML (NN:[911..920] carteolol) (NN:[922..935] 8-hydroxylase))
+      (NN:[936..944] activity))
+    (VP (VBD:[945..948] was)
+      (VP (VBN:[949..958] inhibited)
+        (NP-1 (-NONE-:[958..958] *))
+        (PP (IN:[959..961] by)
+          (NP-LGS (NN:[962..971] quinidine) (,:[971..972] ,)
+                  (NN:[973..984] propranolol) (,:[984..985] ,)
+                  (NN:[986..999] nortriptyline) (,:[999..1000] ,)
+                  (NN:[1002..1018] dextromethorphan) (,:[1018..1019] ,)
+                  (NN:[1020..1029] sparteine) (,:[1029..1030] ,)
+                  (NN:[1031..1040] bufuralol) (,:[1040..1041] ,)
+                  (CC:[1042..1045] and) (NN:[1046..1055] biperiden)))))
+    (.:[1055..1056] .)))
+
+;sentence 11 Span:1057..1151
+;Biperiden competitively  inhibited the catalytic reaction with a Ki value of
+;0.45 mumoles.l-1.
+;[1057..1066]:substance:"Biperiden"
+;[1122..1124]:quantitative-name:"Ki"
+;[1134..1138]:quantitative-value:"0.45"
+;[1139..1150]:quantitative-units:"mumoles.l-1"
+(SENT
+  (S
+    (NP-SBJ (NN:[1057..1066] Biperiden))
+    (ADVP (RB:[1067..1080] competitively))
+    (VP (VBD:[1082..1091] inhibited)
+      (NP (DT:[1092..1095] the) (JJ:[1096..1105] catalytic)
+          (NN:[1106..1114] reaction))
+      (PP (IN:[1115..1119] with)
+        (NP
+          (NP (DT:[1120..1121] a) (NN:[1122..1124] Ki) (NN:[1125..1130] value))
+          (PP (IN:[1131..1133] of)
+            (NP
+              (NP (CD:[1134..1138] 0.45) (NNS:[1139..1146] mumoles))
+              (PP (SYM:[1146..1147] .)
+                (NP (NN:[1147..1150] l-1))))))))
+    (.:[1150..1151] .)))
+
+;sentence 12 Span:1152..1462
+;Carteolol  did not affect the following catalytic reactions: CYP1A2-mediated
+;(R)-warfarin  6-hydroxylation, CYP2C9-mediated tolbutamide
+;methylhydroxylation,  CYP2C19-mediated (S)-mephenytoin 4-hydroxylation,
+;CYP2E1-mediated chlorzoxazone  6-hydroxylation, and CYP3A4-mediated
+;testosterone 6 beta-hydroxylation.
+;[1152..1161]:substance:"Carteolol"
+;[1213..1219]:cyp450:"CYP1A2"
+;[1229..1241]:substance:"(R)-warfarin"
+;[1260..1266]:cyp450:"CYP2C9"
+;[1276..1287]:substance:"tolbutamide"
+;[1310..1317]:cyp450:"CYP2C19"
+;[1327..1342]:substance:"(S)-mephenytoin"
+;[1360..1366]:cyp450:"CYP2E1"
+;[1376..1389]:substance:"chlorzoxazone"
+;[1412..1418]:cyp450:"CYP3A4"
+;[1428..1440]:substance:"testosterone"
+(SENT
+  (S
+    (NP-SBJ (NN:[1152..1161] Carteolol))
+    (VP (VBD:[1163..1166] did) (RB:[1167..1170] not)
+      (VP (VB:[1171..1177] affect)
+        (NP
+          (NP (DT:[1178..1181] the) (VBG:[1182..1191] following)
+              (JJ:[1192..1201] catalytic) (NNS:[1202..1211] reactions))
+          (::[1211..1212] :)
+          (NP
+            (NP
+              (ADJP (NN:[1213..1219] CYP1A2) (HYPH:[1219..1220] -)
+                    (VBN:[1220..1228] mediated))
+              (NN:[1229..1241] -LRB-R-RRB--warfarin)
+               (NN:[1243..1258] 6-hydroxylation))
+            (,:[1258..1259] ,)
+            (NP
+              (ADJP (NN:[1260..1266] CYP2C9) (HYPH:[1266..1267] -)
+                    (VBN:[1267..1275] mediated))
+              (NN:[1276..1287] tolbutamide)
+               (NN:[1288..1307] methylhydroxylation))
+            (,:[1307..1308] ,)
+            (NP
+              (ADJP (NN:[1310..1317] CYP2C19) (HYPH:[1317..1318] -)
+                    (VBN:[1318..1326] mediated))
+              (NN:[1327..1342] -LRB-S-RRB--mephenytoin)
+               (NN:[1343..1358] 4-hydroxylation))
+            (,:[1358..1359] ,)
+            (NP
+              (ADJP (NN:[1360..1366] CYP2E1) (HYPH:[1366..1367] -)
+                    (VBN:[1367..1375] mediated))
+              (NN:[1376..1389] chlorzoxazone) (NN:[1391..1406] 6-hydroxylation))
+            (,:[1406..1407] ,) (CC:[1408..1411] and)
+            (NP
+              (ADJP (NN:[1412..1418] CYP3A4) (HYPH:[1418..1419] -)
+                    (VBN:[1419..1427] mediated))
+              (NN:[1428..1440] testosterone) (CD:[1441..1442] 6)
+               (NN:[1443..1461] beta-hydroxylation))))))
+    (.:[1461..1462] .)))
+
+;sentence 13 Span:1464..1475
+;CONCLUSION:
+(SENT
+  (NP (NN:[1464..1474] CONCLUSION) (::[1474..1475] :)))
+
+;sentence 14 Span:1476..1678
+;8-Hydroxylation is the only cytochrome P450-catalyzed metabolic  reaction of
+;carteolol by its expressed microsomes, and CYP2D6 is the principal  isoform
+;of the enzyme involved in the catalytic reaction.
+;[1504..1519]:cyp450:"cytochrome P450"
+;[1553..1562]:substance:"carteolol"
+;[1596..1602]:cyp450:"CYP2D6"
+;[1621..1628]:cyp450:"isoform"
+;[1636..1642]:cyp450:"enzyme"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1476..1491] 8-Hydroxylation))
+      (VP (VBZ:[1492..1494] is)
+        (NP-PRD
+          (NP (DT:[1495..1498] the) (JJ:[1499..1503] only)
+            (ADJP
+              (NML (NN:[1504..1514] cytochrome) (NN:[1515..1519] P450))
+              (HYPH:[1519..1520] -) (VBN:[1520..1529] catalyzed))
+            (JJ:[1530..1539] metabolic) (NN:[1541..1549] reaction))
+          (PP (IN:[1550..1552] of)
+            (NP (NN:[1553..1562] carteolol)))
+          (PP (IN:[1563..1565] by)
+            (NP (PRP$:[1566..1569] its) (VBN:[1570..1579] expressed)
+                (NNS:[1580..1590] microsomes))))))
+    (,:[1590..1591] ,) (CC:[1592..1595] and)
+    (S
+      (NP-SBJ (NN:[1596..1602] CYP2D6))
+      (VP (VBZ:[1603..1605] is)
+        (NP-PRD
+          (NP (DT:[1606..1609] the) (JJ:[1610..1619] principal)
+              (NN:[1621..1628] isoform))
+          (PP (IN:[1629..1631] of)
+            (NP
+              (NP (DT:[1632..1635] the) (NN:[1636..1642] enzyme))
+              (VP (VBN:[1643..1651] involved)
+                (NP (-NONE-:[1651..1651] *))
+                (PP-CLR (IN:[1652..1654] in)
+                  (NP (DT:[1655..1658] the) (JJ:[1659..1668] catalytic)
+                      (NN:[1669..1677] reaction)))))))))
+    (.:[1677..1678] .)))
+
+;sentence 15 Span:1679..1784
+;Carteolol has neither  stimulative nor inhibitory effects on CYP1A2, 2C9,
+;2C19, 2E1, and 3A4  activities.
+;[1679..1688]:substance:"Carteolol"
+;[1740..1746]:cyp450:"CYP1A2"
+;[1740..1743]...[1768..1771]:cyp450:"CYP"..."3A4"
+;[1740..1743]...[1759..1762]:cyp450:"CYP"..."2E1"
+;[1740..1743]...[1753..1757]:cyp450:"CYP"..."2C19"
+;[1740..1743]...[1748..1751]:cyp450:"CYP"..."2C9"
+(SENT
+  (S
+    (NP-SBJ (NN:[1679..1688] Carteolol))
+    (VP (VBZ:[1689..1692] has)
+      (NP
+        (NP (CC:[1693..1700] neither)
+          (NP (JJ:[1702..1713] stimulative)
+            (NML-1 (-NONE-:[1713..1713] *P*)))
+          (CC:[1714..1717] nor)
+          (NP (JJ:[1718..1728] inhibitory)
+            (NML-1 (NNS:[1729..1736] effects))))
+        (PP (IN:[1737..1739] on)
+          (NP
+            (NP
+              (NML
+                (NML-3 (NN:[1740..1743] CYP))
+                (NN:[1743..1746] 1A2))
+              (NML-2 (-NONE-:[1746..1746] *P*)))
+            (,:[1746..1747] ,)
+            (NP
+              (NML
+                (NML-3 (-NONE-:[1747..1747] *P*))
+                (NN:[1748..1751] 2C9))
+              (NML-2 (-NONE-:[1751..1751] *P*)))
+            (,:[1751..1752] ,)
+            (NP
+              (NML
+                (NML-3 (-NONE-:[1752..1752] *P*))
+                (NN:[1753..1757] 2C19))
+              (NML-2 (-NONE-:[1757..1757] *P*)))
+            (,:[1757..1758] ,)
+            (NP
+              (NML
+                (NML-3 (-NONE-:[1758..1758] *P*))
+                (NN:[1759..1762] 2E1))
+              (NML-2 (-NONE-:[1762..1762] *P*)))
+            (,:[1762..1763] ,) (CC:[1764..1767] and)
+            (NP
+              (NML
+                (NML-3 (-NONE-:[1767..1767] *P*))
+                (NN:[1768..1771] 3A4))
+              (NML-2 (NNS:[1773..1783] activities)))))))
+    (.:[1783..1784] .)))
+
+;section 16 Span:1788..1832
+;PMID: 9342584 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1788..1792] PMID) (::[1792..1793] :) (CD:[1794..1801] 9342584)
+        (IN:[1802..1803] -LSB-) (NNP:[1803..1809] PubMed) (HYPH:[1810..1811] -)
+        (JJ:[1812..1819] indexed) (IN:[1820..1823] for)
+        (NNP:[1824..1832] MEDLINE-RSB-)))

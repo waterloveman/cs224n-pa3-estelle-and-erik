@@ -1,0 +1,307 @@
+;PMID: 9142963
+;source_file_929.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..34] = [t:0..34]
+;1)sentence:[e:40..89] = [t:40..89]
+;2)section:[e:93..104] = [t:93..104]
+;3)section:[e:108..178] = [t:108..178]
+;4)sentence:[e:182..482] = [t:182..482]
+;5)sentence:[e:483..639] = [t:483..639]
+;6)sentence:[e:640..854] = [t:640..854]
+;7)sentence:[e:855..1001] = [t:855..1001]
+;8)sentence:[e:1002..1261] = [t:1002..1261]
+;9)section:[e:1265..1283] = [t:1265..1283]
+;10)section:[e:1289..1295] = [t:1289..1295]
+;11)section:[e:1301..1317] = [t:1301..1317]
+;12)section:[e:1321..1365] = [t:1321..1365]
+
+;section 0 Span:0..34
+;Acta Oncol. 1996;35 Suppl 5:38-43.
+(SEC
+  (FRAG (NNP:[0..4] Acta) (NNP:[5..10] Oncol) (.:[10..11] .)
+        (CD:[12..19] 1996;35) (NNP:[20..25] Suppl) (CD:[26..30] 5:38)
+        (::[30..31] -) (CD:[31..33] 43) (.:[33..34] .)))
+
+;sentence 1 Span:40..89
+;Aromatase inhibition for breast cancer treatment.
+;[40..49]:cyp450:"Aromatase"
+(SENT
+  (NP-HLN
+    (NP (NN:[40..49] Aromatase) (NN:[50..60] inhibition))
+    (PP (IN:[61..64] for)
+      (NP
+        (NML (NN:[65..71] breast) (NN:[72..78] cancer))
+        (NN:[79..88] treatment)))
+    (.:[88..89] .)))
+
+;section 2 Span:93..104
+;Lonning PE.
+(SEC
+  (FRAG (NNP:[93..100] Lonning) (NNP:[101..104] PE.)))
+
+;section 3 Span:108..178
+;Department of Oncology, Haukeland University Hospital, Bergen, Norway.
+(SEC
+  (FRAG (NNP:[108..118] Department) (IN:[119..121] of) (NNP:[122..130] Oncology)
+        (,:[130..131] ,) (NNP:[132..141] Haukeland) (NNP:[142..152] University)
+        (NNP:[153..161] Hospital) (,:[161..162] ,) (NNP:[163..169] Bergen)
+        (,:[169..170] ,) (NNP:[171..177] Norway) (.:[177..178] .)))
+
+;sentence 4 Span:182..482
+;While the first generation aromatase inhibitor aminoglutethimide and second-
+;and  third generation inhibitors like formestane and fadrozole all have been
+;found to  inhibit in vivo aromatization by 85-93%, the novel aromatase
+;inhibitors  letrozole and arimidex inhibit in vivo aromatization by 97-99%.
+;[209..218]:cyp450:"aromatase"
+;[219..228]:substance:"inhibitor"
+;[229..246]:substance:"aminoglutethimide"
+;[281..291]:substance:"inhibitors"
+;[297..307]:substance:"formestane"
+;[312..321]:substance:"fadrozole"
+;[379..385]:quantitative-value:"85-93%"
+;[397..406]:cyp450:"aromatase"
+;[407..417]:substance:"inhibitors"
+;[419..428]:substance:"letrozole"
+;[433..441]:substance:"arimidex"
+;[475..481]:quantitative-value:"97-99%"
+(SENT
+  (S
+    (SBAR-ADV (IN:[182..187] While)
+      (S
+        (NP-SBJ-3
+          (NP
+            (NP (DT:[188..191] the)
+              (NML (JJ:[192..197] first) (NN:[198..208] generation))
+              (NN:[209..218] aromatase) (NN:[219..228] inhibitor))
+            (NP (NN:[229..246] aminoglutethimide)))
+          (CC:[247..250] and)
+          (NP
+            (NP
+              (NP
+                (NML (JJ:[251..257] second) (HYPH:[257..258] -)
+                  (NML-1 (-NONE-:[258..258] *P*)))
+                (NML-2 (-NONE-:[258..258] *P*)))
+              (CC:[259..262] and)
+              (NP
+                (NML (JJ:[264..269] third)
+                  (NML-1 (NN:[270..280] generation)))
+                (NML-2 (NNS:[281..291] inhibitors))))
+            (PP (IN:[292..296] like)
+              (NP (NN:[297..307] formestane) (CC:[308..311] and)
+                  (NN:[312..321] fadrozole)))))
+        (DT:[322..325] all)
+        (VP (VBP:[326..330] have)
+          (VP (VBN:[331..335] been)
+            (VP (VBN:[336..341] found)
+              (S
+                (NP-SBJ-3 (-NONE-:[341..341] *))
+                (VP (TO:[342..344] to)
+                  (VP (VB:[346..353] inhibit)
+                    (NP
+                      (ADJP (FW:[354..356] in) (FW:[357..361] vivo))
+                      (NN:[362..375] aromatization))
+                    (PP-EXT (IN:[376..378] by)
+                      (NP
+                        (QP (CD:[379..381] 85) (HYPH:[381..382] -)
+                            (CD:[382..384] 93))
+                        (NN:[384..385] %)))))))))))
+    (,:[385..386] ,)
+    (NP-SBJ
+      (NP (DT:[387..390] the) (JJ:[391..396] novel) (NN:[397..406] aromatase)
+          (NNS:[407..417] inhibitors))
+      (NP (NN:[419..428] letrozole) (CC:[429..432] and) (NN:[433..441] arimidex)))
+    (VP (VBP:[442..449] inhibit)
+      (NP
+        (ADJP (FW:[450..452] in) (FW:[453..457] vivo))
+        (NN:[458..471] aromatization))
+      (PP-EXT (IN:[472..474] by)
+        (NP
+          (QP (CD:[475..477] 97) (HYPH:[477..478] -) (CD:[478..480] 99))
+          (NN:[480..481] %))))
+    (.:[481..482] .)))
+
+;sentence 5 Span:483..639
+;However, we do  not know whether these drugs cause a higher response rate or
+;a longer duration  of remission compared with less potent aromatase
+;inhibitors.
+;[522..527]:substance:"drugs"
+;[618..627]:cyp450:"aromatase"
+;[628..638]:substance:"inhibitors"
+(SENT
+  (S
+    (ADVP (RB:[483..490] However))
+    (,:[490..491] ,)
+    (NP-SBJ (PRP:[492..494] we))
+    (VP (VBP:[495..497] do) (RB:[499..502] not)
+      (VP (VB:[503..507] know)
+        (SBAR (IN:[508..515] whether)
+          (S
+            (NP-SBJ (DT:[516..521] these) (NNS:[522..527] drugs))
+            (VP (VBP:[528..533] cause)
+              (NP
+                (NP
+                  (NP (DT:[534..535] a) (JJR:[536..542] higher)
+                      (NN:[543..551] response) (NN:[552..556] rate))
+                  (CC:[557..559] or)
+                  (NP
+                    (NP (DT:[560..561] a) (JJR:[562..568] longer)
+                        (NN:[569..577] duration))
+                    (PP (IN:[579..581] of)
+                      (NP (NN:[582..591] remission)))))
+                (VP (VBN:[592..600] compared)
+                  (NP (-NONE-:[600..600] *))
+                  (PP-CLR (IN:[601..605] with)
+                    (NP
+                      (ADJP (RBR:[606..610] less) (JJ:[611..617] potent))
+                      (NN:[618..627] aromatase) (NNS:[628..638] inhibitors))))))))))
+    (.:[638..639] .)))
+
+;sentence 6 Span:640..854
+;Lack of  cross-resistance to steroidal and non-steroidal aromatase inhibitors
+;suggests  that these drugs may have partially different mechanisms of action,
+;probably by  influencing the intratumour aromatase enzyme.
+;[669..678]...[697..706]:cyp450:"steroidal"..."aromatase"
+;[683..706]:cyp450:"non-steroidal aromatase"
+;[707..717]:substance:"inhibitors"
+;[739..744]:substance:"drugs"
+;[837..853]:cyp450:"aromatase enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[640..644] Lack))
+      (PP (IN:[645..647] of)
+        (NP
+          (NP (AFX:[649..654] cross) (HYPH:[654..655] -)
+              (NN:[655..665] resistance))
+          (PP (TO:[666..668] to)
+            (NP
+              (NP (JJ:[669..678] steroidal)
+                (NML-1 (-NONE-:[678..678] *P*)))
+              (CC:[679..682] and)
+              (NP
+                (ADJP (AFX:[683..686] non) (HYPH:[686..687] -)
+                      (JJ:[687..696] steroidal))
+                (NML-1 (NN:[697..706] aromatase) (NNS:[707..717] inhibitors))))))))
+    (VP (VBZ:[718..726] suggests)
+      (SBAR (IN:[728..732] that)
+        (S
+          (NP-SBJ (DT:[733..738] these) (NNS:[739..744] drugs))
+          (VP (MD:[745..748] may)
+            (VP (VB:[749..753] have)
+              (NP
+                (NP
+                  (ADJP (RB:[754..763] partially) (JJ:[764..773] different))
+                  (NNS:[774..784] mechanisms))
+                (PP (IN:[785..787] of)
+                  (NP (NN:[788..794] action))))
+              (,:[794..795] ,)
+              (ADVP (RB:[796..804] probably))
+              (PP-MNR (IN:[805..807] by)
+                (S
+                  (NP-SBJ (-NONE-:[807..807] *))
+                  (VP (VBG:[809..820] influencing)
+                    (NP (DT:[821..824] the) (JJ:[825..836] intratumour)
+                       (NN:[837..846] aromatase) (NN:[847..853] enzyme))))))))))
+    (.:[853..854] .)))
+
+;sentence 7 Span:855..1001
+;Recent studies have shown that  breast cancer cells may adapt to alterations
+;in oestrogen concentration in vitro  by increasing their sensitivity.
+;[935..944]:substance:"oestrogen"
+(SENT
+  (S
+    (NP-SBJ (JJ:[855..861] Recent) (NNS:[862..869] studies))
+    (VP (VBP:[870..874] have)
+      (VP (VBN:[875..880] shown)
+        (SBAR (IN:[881..885] that)
+          (S
+            (NP-SBJ (NN:[887..893] breast) (NN:[894..900] cancer)
+                    (NNS:[901..906] cells))
+            (VP (MD:[907..910] may)
+              (VP (VB:[911..916] adapt)
+                (PP-CLR (TO:[917..919] to)
+                  (NP
+                    (NP (NNS:[920..931] alterations))
+                    (PP (IN:[932..934] in)
+                      (NP (NN:[935..944] oestrogen)
+                          (NN:[945..958] concentration)))))
+                (ADVP (FW:[959..961] in) (FW:[962..967] vitro))
+                (PP-MNR (IN:[969..971] by)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[971..971] *))
+                    (VP (VBG:[972..982] increasing)
+                      (NP (PRP$:[983..988] their) (NN:[989..1000] sensitivity)))))))))))
+    (.:[1000..1001] .)))
+
+;sentence 8 Span:1002..1261
+;The observation that patients suffering relapse  following castration,
+;hypophysectomy or adrenalectomy may respond to treatment  with aromatase
+;inhibitors suggests that similar mechanisms could be responsible  for
+;acquired resistance to oestrogen deprivation.
+;[1136..1145]:cyp450:"aromatase"
+;[1146..1156]:substance:"inhibitors"
+;[1239..1248]:substance:"oestrogen"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1002..1005] The) (NN:[1006..1017] observation))
+      (SBAR (IN:[1018..1022] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1023..1031] patients))
+            (VP (VBG:[1032..1041] suffering)
+              (NP (NN:[1042..1049] relapse))
+              (S-TMP
+                (NP-SBJ (-NONE-:[1049..1049] *))
+                (VP (VBG:[1051..1060] following)
+                  (NP (NN:[1061..1071] castration) (,:[1071..1072] ,)
+                      (NN:[1073..1087] hypophysectomy) (CC:[1088..1090] or)
+                      (NN:[1091..1104] adrenalectomy))))))
+          (VP (MD:[1105..1108] may)
+            (VP (VB:[1109..1116] respond)
+              (PP-CLR (TO:[1117..1119] to)
+                (NP
+                  (NP (NN:[1120..1129] treatment))
+                  (PP (IN:[1131..1135] with)
+                    (NP (NN:[1136..1145] aromatase)
+                        (NNS:[1146..1156] inhibitors))))))))))
+    (VP (VBZ:[1157..1165] suggests)
+      (SBAR (IN:[1166..1170] that)
+        (S
+          (NP-SBJ (JJ:[1171..1178] similar) (NNS:[1179..1189] mechanisms))
+          (VP (MD:[1190..1195] could)
+            (VP (VB:[1196..1198] be)
+              (ADJP-PRD (JJ:[1199..1210] responsible)
+                (PP (IN:[1212..1215] for)
+                  (NP
+                    (NP (VBN:[1216..1224] acquired) (NN:[1225..1235] resistance))
+                    (PP (TO:[1236..1238] to)
+                      (NP (NN:[1239..1248] oestrogen)
+                          (NN:[1249..1260] deprivation)))))))))))
+    (.:[1260..1261] .)))
+
+;section 9 Span:1265..1283
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1265..1276] Publication) (NNP:[1277..1282] Types)
+        (::[1282..1283] :)))
+
+;section 10 Span:1289..1295
+;Review
+(SEC
+  (FRAG (NNP:[1289..1295] Review)))
+
+;section 11 Span:1301..1317
+;Review, Tutorial
+(SEC
+  (FRAG (NNP:[1301..1307] Review) (,:[1307..1308] ,) (NNP:[1309..1317] Tutorial)))
+
+;section 12 Span:1321..1365
+;PMID: 9142963 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1321..1325] PMID) (::[1325..1326] :) (CD:[1327..1334] 9142963)
+        (NN:[1335..1336] -LSB-) (NNP:[1336..1342] PubMed) (::[1343..1344] -)
+        (NN:[1345..1352] indexed) (IN:[1353..1356] for)
+        (NNP:[1357..1365] MEDLINE-RSB-)))

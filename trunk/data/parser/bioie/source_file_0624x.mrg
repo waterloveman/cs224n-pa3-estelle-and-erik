@@ -1,0 +1,321 @@
+;PMID: 6589638
+;source_file_2885.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..50] = [t:0..50]
+;1)sentence:[e:56..193] = [t:56..193]
+;2)section:[e:197..259] = [t:197..259]
+;3)sentence:[e:263..439] = [t:263..439]
+;4)sentence:[e:440..570] = [t:440..570]
+;5)sentence:[e:571..716] = [t:571..716]
+;6)sentence:[e:717..917] = [t:717..917]
+;7)sentence:[e:918..1108] = [t:918..1108]
+;8)sentence:[e:1109..1249] = [t:1109..1249]
+;9)sentence:[e:1250..1370] = [t:1250..1370]
+;10)section:[e:1374..1418] = [t:1374..1418]
+
+;section 0 Span:0..50
+;Proc Natl Acad Sci U S A.  1984 Aug;81(15):4940-4.
+(SEC
+  (FRAG (NNP:[0..4] Proc) (NNP:[5..9] Natl) (NNP:[10..14] Acad)
+        (NNP:[15..18] Sci) (NNP:[19..20] U) (NNP:[21..22] S) (NNP:[23..24] A)
+        (.:[24..25] .) (CD:[27..31] 1984) (::[32..36] Aug;) (CD:[36..38] 81)
+        (-LRB-:[38..39] -LRB-) (CD:[39..41] 15) (-RRB-:[41..42] -RRB-)
+        (::[42..43] :) (CD:[43..47] 4940) (CD:[47..50] -4.)))
+
+;sentence 1 Span:56..193
+;Enhanced expression of the human gene N-myc consequent to amplification of
+;DNA  may contribute to malignant progression of neuroblastoma.
+;[94..99]:gene-rna:"N-myc"
+;[114..127]:variation-type:"amplification"
+;[179..192]:malignancy-type:"neuroblastoma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (VBN:[56..64] Enhanced) (NN:[65..75] expression))
+      (PP (IN:[76..78] of)
+        (NP
+          (NP (DT:[79..82] the) (JJ:[83..88] human) (NN:[89..93] gene))
+          (NP (NN:[94..99] N-myc))))
+      (ADJP (JJ:[100..110] consequent)
+        (PP (TO:[111..113] to)
+          (NP
+            (NP (NN:[114..127] amplification))
+            (PP (IN:[128..130] of)
+              (NP (NN:[131..134] DNA)))))))
+    (VP (MD:[136..139] may)
+      (VP (VB:[140..150] contribute)
+        (PP-CLR (TO:[151..153] to)
+          (NP
+            (NP (JJ:[154..163] malignant) (NN:[164..175] progression))
+            (PP (IN:[176..178] of)
+              (NP (NN:[179..192] neuroblastoma)))))))
+    (.:[192..193] .)))
+
+;section 2 Span:197..259
+;Schwab M, Ellison J, Busch M, Rosenau W, Varmus HE, Bishop JM.
+(SEC
+  (FRAG (NNP:[197..203] Schwab) (NNP:[204..206] M,) (NNP:[207..214] Ellison)
+        (NNP:[215..217] J,) (NNP:[218..223] Busch) (NNP:[224..226] M,)
+        (NNP:[227..234] Rosenau) (NNP:[235..236] W) (,:[236..237] ,)
+        (NNP:[238..244] Varmus) (NNP:[245..247] HE) (,:[247..248] ,)
+        (NNP:[249..255] Bishop) (NNP:[256..258] JM) (.:[258..259] .)))
+
+;sentence 3 Span:263..439
+;Previous studies had revealed that DNA with partial similarity to the myc 
+;oncogene (N-myc) is frequently amplified in human neuroblastoma cell lines
+;and  neuroblastoma tumors.
+;[333..336]:gene-rna:"myc"
+;[348..353]:gene-rna:"N-myc"
+;[369..378]:variation-type:"amplified"
+;[388..401]:malignancy-type:"neuroblastoma"
+;[418..438]:malignancy-type:"neuroblastoma tumors"
+(SENT
+  (S
+    (NP-SBJ (JJ:[263..271] Previous) (NNS:[272..279] studies))
+    (VP (VBD:[280..283] had)
+      (VP (VBN:[284..292] revealed)
+        (SBAR (IN:[293..297] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[298..301] DNA))
+              (PP (IN:[302..306] with)
+                (NP
+                  (NP (JJ:[307..314] partial) (NN:[315..325] similarity))
+                  (PP (TO:[326..328] to)
+                    (NP
+                      (NP (DT:[329..332] the) (NN:[333..336] myc)
+                          (NN:[338..346] oncogene))
+                      (PRN (-LRB-:[347..348] -LRB-) (NN:[348..353] N-myc)
+                           (-RRB-:[353..354] -RRB-)))))))
+            (VP (VBZ:[355..357] is)
+              (ADVP-TMP (RB:[358..368] frequently))
+              (VP (VBN:[369..378] amplified)
+                (PP (IN:[379..381] in)
+                  (NP
+                    (NP (JJ:[382..387] human) (NN:[388..401] neuroblastoma)
+                        (NN:[402..406] cell) (NNS:[407..412] lines))
+                    (CC:[413..416] and)
+                    (NP-LOC (NN:[418..431] neuroblastoma)
+                            (NNS:[432..438] tumors))))))))))
+    (.:[438..439] .)))
+
+;sentence 4 Span:440..570
+;We show here for one patient that N-myc amplification is  confined to the
+;neuroblastoma tumor and is not present in normal tissue.
+;[474..479]:gene-rna:"N-myc"
+;[480..493]:variation-type:"amplification"
+;[514..533]:malignancy-type:"neuroblastoma tumor"
+(SENT
+  (S
+    (NP-SBJ (PRP:[440..442] We))
+    (VP (VBP:[443..447] show)
+      (ADVP (RB:[448..452] here))
+      (PP (IN:[453..456] for)
+        (NP (CD:[457..460] one) (NN:[461..468] patient)))
+      (SBAR (IN:[469..473] that)
+        (S
+          (NP-SBJ-1 (NN:[474..479] N-myc) (NN:[480..493] amplification))
+          (VP
+            (VP (VBZ:[494..496] is)
+              (VP (VBN:[498..506] confined)
+                (NP-1 (-NONE-:[506..506] *))
+                (PP (TO:[507..509] to)
+                  (NP (DT:[510..513] the)
+                     (NN:[514..527] neuroblastoma) (NN:[528..533] tumor)))))
+            (CC:[534..537] and)
+            (VP (VBZ:[538..540] is) (RB:[541..544] not)
+              (ADJP-PRD (JJ:[545..552] present))
+              (PP-LOC (IN:[553..555] in)
+                (NP (JJ:[556..562] normal) (NN:[563..569] tissue))))))))
+    (.:[569..570] .)))
+
+;sentence 5 Span:571..716
+;N-myc  mRNA approximately equal to 4.0 kilobases in size is detectable in
+;neuroblastoma  cell lines and tumors and in a retinoblastoma cell line.
+;[571..576]:gene-rna:"N-myc"
+;[645..658]:malignancy-type:"neuroblastoma"
+;[691..705]:malignancy-type:"retinoblastoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[571..576] N-myc) (NN:[578..582] mRNA))
+      (ADJP (RB:[583..596] approximately) (JJ:[597..602] equal)
+        (PP (TO:[603..605] to)
+          (NP
+            (NP (CD:[606..609] 4.0) (NNS:[610..619] kilobases))
+            (PP (IN:[620..622] in)
+              (NP (NN:[623..627] size)))))))
+    (VP (VBZ:[628..630] is)
+      (ADJP-PRD (JJ:[631..641] detectable))
+      (PP
+        (PP (IN:[642..644] in)
+          (NP
+            (NP
+              (NML-1 (NN:[645..658] neuroblastoma))
+              (NN:[660..664] cell) (NNS:[665..670] lines))
+            (CC:[671..674] and)
+            (NP
+              (NML-1 (-NONE-:[674..674] *P*))
+              (NNS:[675..681] tumors))))
+        (CC:[682..685] and)
+        (PP (IN:[686..688] in)
+          (NP (DT:[689..690] a) (NN:[691..705] retinoblastoma)
+              (NN:[706..710] cell) (NN:[711..715] line)))))
+    (.:[715..716] .)))
+
+;sentence 6 Span:717..917
+;By contrast,  appreciable amounts of this RNA were not present in a number of
+;cell lines  derived from other human tumors and in fibroblasts from a normal
+;individual and  from a neuroblastoma patient.
+;[895..908]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (PP (IN:[717..719] By)
+      (NP (NN:[720..728] contrast)))
+    (,:[728..729] ,)
+    (NP-SBJ
+      (NP (JJ:[731..742] appreciable) (NNS:[743..750] amounts))
+      (PP (IN:[751..753] of)
+        (NP (DT:[754..758] this) (NN:[759..762] RNA))))
+    (VP (VBD:[763..767] were)
+      (VP (RB:[768..771] not)
+        (ADJP-PRD (JJ:[772..779] present))
+        (PP
+          (PP (IN:[780..782] in)
+            (NP
+              (NP (DT:[783..784] a) (NN:[785..791] number))
+              (PP (IN:[792..794] of)
+                (NP
+                  (NP (NN:[795..799] cell) (NNS:[800..805] lines))
+                  (VP (VBN:[807..814] derived)
+                    (NP (-NONE-:[814..814] *))
+                    (PP (IN:[815..819] from)
+                      (NP (JJ:[820..825] other) (JJ:[826..831] human)
+                          (NNS:[832..838] tumors))))))))
+          (CC:[839..842] and)
+          (PP-LOC (IN:[843..845] in)
+            (NP
+              (NP (NNS:[846..857] fibroblasts))
+              (PP
+                (PP (IN:[858..862] from)
+                  (NP (DT:[863..864] a) (JJ:[865..871] normal)
+                      (NN:[872..882] individual)))
+                (CC:[883..886] and)
+                (PP (IN:[888..892] from)
+                  (NP (DT:[893..894] a) (NN:[895..908] neuroblastoma)
+                      (NN:[909..916] patient)))))))))
+    (.:[916..917] .)))
+
+;sentence 7 Span:918..1108
+;Low levels of N-myc RNA were found in human and  murine neuroblastoma cell
+;lines lacking amplification of this gene, up to  80-fold greater levels in
+;all cell lines carrying amplified N-myc.
+;[932..937]:gene-rna:"N-myc"
+;[974..987]:malignancy-type:"neuroblastoma"
+;[1007..1020]:variation-type:"amplification"
+;[1092..1101]:variation-type:"amplified"
+;[1102..1107]:gene-rna:"N-myc"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[918..921] Low) (NNS:[922..928] levels))
+      (PP (IN:[929..931] of)
+        (NP (NN:[932..937] N-myc) (NN:[938..941] RNA))))
+    (VP (VBD:[942..946] were)
+      (VP (VBN:[947..952] found)
+        (NP-1 (-NONE-:[952..952] *))
+        (PP (IN:[953..955] in)
+          (NP
+            (NP
+              (NP (JJ:[956..961] human)
+                (NML-2 (-NONE-:[961..961] *P*)))
+              (CC:[962..965] and)
+              (NP (JJ:[967..973] murine)
+                (NML-2 (NN:[974..987] neuroblastoma) (NN:[988..992] cell)
+                       (NNS:[993..998] lines))))
+            (VP (VBG:[999..1006] lacking)
+              (NP
+                (NP (NN:[1007..1020] amplification))
+                (PP (IN:[1021..1023] of)
+                  (NP (DT:[1024..1028] this) (NN:[1029..1033] gene)))))))
+        (,:[1033..1034] ,)
+        (NP-ADV
+          (NP
+            (ADJP
+              (NML
+                (QP (RB:[1035..1037] up) (TO:[1038..1040] to)
+                    (CD:[1042..1044] 80))
+                (HYPH:[1044..1045] -) (RB:[1045..1049] fold))
+              (JJR:[1050..1057] greater))
+            (NNS:[1058..1064] levels))
+          (PP (IN:[1065..1067] in)
+            (NP
+              (NP (DT:[1068..1071] all) (NN:[1072..1076] cell)
+                  (NNS:[1077..1082] lines))
+              (VP (VBG:[1083..1091] carrying)
+                (NP (VBN:[1092..1101] amplified) (NN:[1102..1107] N-myc))))))))
+    (.:[1107..1108] .)))
+
+;sentence 8 Span:1109..1249
+;In situ  hybridization to sections of neuroblastoma tumors revealed high
+;expression of  N-myc predominantly in undifferentiated neuroblasts.
+;[1147..1167]:malignancy-type:"neuroblastoma tumors"
+;[1197..1202]:gene-rna:"N-myc"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (ADJP (FW:[1109..1111] In) (FW:[1112..1116] situ))
+        (NN:[1118..1131] hybridization))
+      (PP (TO:[1132..1134] to)
+        (NP
+          (NP (NNS:[1135..1143] sections))
+          (PP (IN:[1144..1146] of)
+            (NP (NN:[1147..1160] neuroblastoma) (NNS:[1161..1167] tumors))))))
+    (VP (VBD:[1168..1176] revealed)
+      (NP
+        (NP (JJ:[1177..1181] high) (NN:[1182..1192] expression))
+        (PP (IN:[1193..1195] of)
+          (NP (NN:[1197..1202] N-myc))))
+      (PP-LOC
+        (ADVP (RB:[1203..1216] predominantly))
+        (IN:[1217..1219] in)
+        (NP (JJ:[1220..1236] undifferentiated) (NNS:[1237..1248] neuroblasts))))
+    (.:[1248..1249] .)))
+
+;sentence 9 Span:1250..1370
+;We hypothesize that  amplification and consequent elevated expression of
+;N-myc may be related to  malignant progression.
+;[1271..1284]:variation-type:"amplification"
+;[1323..1328]:gene-rna:"N-myc"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1250..1252] We))
+    (VP (VBP:[1253..1264] hypothesize)
+      (SBAR (IN:[1265..1269] that)
+        (S
+          (NP-SBJ-1
+            (NP
+              (NP (NN:[1271..1284] amplification))
+              (CC:[1285..1288] and)
+              (NP (JJ:[1289..1299] consequent) (VBN:[1300..1308] elevated)
+                  (NN:[1309..1319] expression)))
+            (PP (IN:[1320..1322] of)
+              (NP (NN:[1323..1328] N-myc))))
+          (VP (MD:[1329..1332] may)
+            (VP (VB:[1333..1335] be)
+              (VP (VBN:[1336..1343] related)
+                (NP-1 (-NONE-:[1343..1343] *))
+                (PP-CLR (TO:[1344..1346] to)
+                  (NP (JJ:[1348..1357] malignant) (NN:[1358..1369] progression)))))))))
+    (.:[1369..1370] .)))
+
+;section 10 Span:1374..1418
+;PMID: 6589638 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1374..1378] PMID) (::[1378..1379] :) (CD:[1380..1387] 6589638)
+        (NN:[1388..1389] -LSB-) (NNP:[1389..1395] PubMed) (::[1396..1397] -)
+        (NN:[1398..1405] indexed) (IN:[1406..1409] for)
+        (NNP:[1410..1418] MEDLINE-RSB-)))

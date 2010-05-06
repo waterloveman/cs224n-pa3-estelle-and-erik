@@ -1,0 +1,318 @@
+;PMID: 2470006
+;source_file_2887.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:37..140] = [t:37..140]
+;2)section:[e:144..253] = [t:144..253]
+;3)section:[e:257..345] = [t:257..345]
+;4)sentence:[e:349..634] = [t:349..634]
+;5)sentence:[e:635..876] = [t:635..876]
+;6)sentence:[e:877..1056] = [t:877..1056]
+;7)sentence:[e:1057..1175] = [t:1057..1175]
+;8)sentence:[e:1176..1372] = [t:1176..1372]
+;9)section:[e:1376..1420] = [t:1376..1420]
+
+;section 0 Span:0..31
+;Oncogene.  1989 Apr;4(4):421-7.
+(SEC
+  (FRAG (NNP:[0..8] Oncogene) (,:[8..9] .) (CD:[11..15] 1989)
+        (.:[16..22] Apr;4-LRB-) (CD:[22..23] 4) (-RRB-:[23..24] -RRB-)
+        (::[24..25] :) (CD:[25..28] 421) (HYPH:[28..29] -) (CD:[29..31] 7.)))
+
+;sentence 1 Span:37..140
+;Coordinate alteration of pp60c-src abundance and c-src RNA expression in
+;human  neuroblastoma variants.
+;[62..71]:gene-protein:"pp60c-src"
+;[86..91]:gene-rna:"c-src"
+;[117..130]:malignancy-type:"neuroblastoma"
+(SENT
+  (NP-HLN
+    (NP (JJ:[37..47] Coordinate) (NN:[48..58] alteration))
+    (PP (IN:[59..61] of)
+      (NP
+        (NP
+          (NP (NN:[62..71] pp60c-src) (NN:[72..81] abundance))
+          (CC:[82..85] and)
+          (NP
+            (NML (NN:[86..91] c-src) (NN:[92..95] RNA))
+            (NN:[96..106] expression)))
+        (PP-LOC (IN:[107..109] in)
+          (NP (JJ:[110..115] human) (NN:[117..130] neuroblastoma)
+              (NNS:[131..139] variants)))))
+    (.:[139..140] .)))
+
+;section 2 Span:144..253
+;Veillette A, O'Shaughnessy J, Horak ID, Israel MA, Yee D, Rosen N, Fujita DJ,
+; Kung HJ, Biedler JL, Bolen JB.
+(SEC
+  (FRAG (NNP:[144..153] Veillette) (NNP:[154..155] A) (,:[155..156] ,)
+        (NNP:[157..170] O'Shaughnessy) (NNP:[171..173] J,)
+        (NNP:[174..179] Horak) (NNP:[180..182] ID) (,:[182..183] ,)
+        (NNP:[184..190] Israel) (NNP:[191..193] MA) (,:[193..194] ,)
+        (NNP:[195..198] Yee) (NNP:[199..200] D) (,:[200..201] ,)
+        (NNP:[202..207] Rosen) (NNP:[208..209] N) (,:[209..210] ,)
+        (NNP:[211..217] Fujita) (NNP:[218..220] DJ) (,:[220..221] ,)
+        (NNP:[223..227] Kung) (NNP:[228..230] HJ) (,:[230..231] ,)
+        (NNP:[232..239] Biedler) (NNP:[240..242] JL) (,:[242..243] ,)
+        (NNP:[244..249] Bolen) (NNP:[250..253] JB.)))
+
+;section 3 Span:257..345
+;Laboratory of Tumor Virus Biology, National Cancer Institute, Bethesda,
+;Maryland  20892.
+(SEC
+  (FRAG (NN:[257..267] Laboratory) (IN:[268..270] of) (NN:[271..276] Tumor)
+        (NNP:[277..282] Virus) (NNP:[283..290] Biology) (,:[290..291] ,)
+        (NNP:[292..300] National) (NNP:[301..307] Cancer)
+        (NNP:[308..317] Institute) (,:[317..318] ,) (NNP:[319..327] Bethesda)
+        (,:[327..328] ,) (NNP:[329..337] Maryland) (CD:[339..344] 20892)
+        (.:[344..345] .)))
+
+;sentence 4 Span:349..634
+;We examined the expression, abundance, and protein kinase activity of
+;pp60c-src  in two different pairs of genetically indistinguishable cloned
+;human  neuroblastoma cell variants which display altered phenotypes as the
+;result of  conversion from a neuronal to a non-neuronal phenotype.
+;[392..406]:gene-protein:"protein kinase"
+;[419..428]:gene-protein:"pp60c-src"
+;[500..513]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[349..351] We))
+    (VP (VBD:[352..360] examined)
+      (NP
+        (NP
+          (NP (DT:[361..364] the) (NN:[365..375] expression))
+          (,:[375..376] ,)
+          (NP (NN:[377..386] abundance))
+          (,:[386..387] ,) (CC:[388..391] and)
+          (NP
+            (NML (NN:[392..399] protein) (NN:[400..406] kinase))
+            (NN:[407..415] activity)))
+        (PP (IN:[416..418] of)
+          (NP (NN:[419..428] pp60c-src))))
+      (PP-LOC (IN:[430..432] in)
+        (NP
+          (NP (CD:[433..436] two) (JJ:[437..446] different)
+              (NNS:[447..452] pairs))
+          (PP (IN:[453..455] of)
+            (NP
+              (NP
+                (ADJP (RB:[456..467] genetically)
+                      (JJ:[468..485] indistinguishable))
+                (VBN:[486..492] cloned) (JJ:[493..498] human)
+                 (NN:[500..513] neuroblastoma) (NN:[514..518] cell)
+                 (NNS:[519..527] variants))
+              (SBAR
+                (WHNP-1 (WDT:[528..533] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[533..533] *T*))
+                  (VP (VBP:[534..541] display)
+                    (NP (VBN:[542..549] altered) (NNS:[550..560] phenotypes))
+                    (PP (IN:[561..563] as)
+                      (NP
+                        (NP (DT:[564..567] the) (NN:[568..574] result))
+                        (PP (IN:[575..577] of)
+                          (NP
+                            (NP (NN:[579..589] conversion))
+                            (PP (IN:[590..594] from)
+                              (NP (DT:[595..596] a) (JJ:[597..605] neuronal)
+                                (NML-2 (-NONE-:[605..605] *P*))))
+                            (PP (TO:[606..608] to)
+                              (NP (DT:[609..610] a)
+                                (ADJP (AFX:[611..614] non) (HYPH:[614..615] -)
+                                      (JJ:[615..623] neuronal))
+                                (NML-2 (NN:[624..633] phenotype))))))))))))))))
+    (.:[633..634] .)))
+
+;sentence 5 Span:635..876
+;The results demonstrate  that cells which exhibit the neuroblastic (N-type)
+;phenotype possess high levels  of pp60c-src protein and that one of the two
+;N-type cell lines is capable of  expressing the neuronal-specific isoenzyme
+;of pp60c-src.
+;[745..754]:gene-protein:"pp60c-src"
+;[853..875]:gene-protein:"isoenzyme of pp60c-src"
+(SENT
+  (S
+    (NP-SBJ (DT:[635..638] The) (NNS:[639..646] results))
+    (VP (VBP:[647..658] demonstrate)
+      (SBAR
+        (SBAR (IN:[660..664] that)
+          (S
+            (NP-SBJ
+              (NP (NNS:[665..670] cells))
+              (SBAR
+                (WHNP-1 (WDT:[671..676] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[676..676] *T*))
+                  (VP (VBP:[677..684] exhibit)
+                    (NP (DT:[685..688] the)
+                      (NML
+                        (NML (JJ:[689..701] neuroblastic))
+                        (NML (-LRB-:[702..703] -LRB-) (NN:[703..709] N-type)
+                             (-RRB-:[709..710] -RRB-)))
+                      (NN:[711..720] phenotype))))))
+            (VP (VBP:[721..728] possess)
+              (NP
+                (NP (JJ:[729..733] high) (NNS:[734..740] levels))
+                (PP (IN:[742..744] of)
+                  (NP (NN:[745..754] pp60c-src) (NN:[755..762] protein)))))))
+        (CC:[763..766] and)
+        (SBAR (IN:[767..771] that)
+          (S
+            (NP-SBJ
+              (NP (CD:[772..775] one))
+              (PP (IN:[776..778] of)
+                (NP (DT:[779..782] the) (CD:[783..786] two)
+                    (NN:[787..793] N-type) (NN:[794..798] cell)
+                    (NNS:[799..804] lines))))
+            (VP (VBZ:[805..807] is)
+              (ADJP-PRD (JJ:[808..815] capable)
+                (PP (IN:[816..818] of)
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[818..818] *))
+                    (VP (VBG:[820..830] expressing)
+                      (NP
+                        (NP (DT:[831..834] the)
+                          (ADJP (JJ:[835..843] neuronal) (HYPH:[843..844] -)
+                                (JJ:[844..852] specific))
+                          (NN:[853..862] isoenzyme))
+                        (PP (IN:[863..865] of)
+                          (NP (NN:[866..875] pp60c-src)))))))))))))
+    (.:[875..876] .)))
+
+;sentence 6 Span:877..1056
+;In contrast, cells  which display the substrate-adherent (S-type) phenotype
+;have low levels of  pp60c-src protein and express exclusively the
+;non-neuronal isoenzyme of  pp60c-src.
+;[973..982]:gene-protein:"pp60c-src"
+;[1032..1055]:gene-protein:"isoenzyme of  pp60c-src"
+(SENT
+  (S
+    (PP (IN:[877..879] In)
+      (NP (NN:[880..888] contrast)))
+    (,:[888..889] ,)
+    (NP-SBJ
+      (NP (NNS:[890..895] cells))
+      (SBAR
+        (WHNP-1 (WDT:[897..902] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[902..902] *T*))
+          (VP (VBP:[903..910] display)
+            (NP (DT:[911..914] the)
+              (NML
+                (NML (NN:[915..924] substrate) (HYPH:[924..925] -)
+                     (JJ:[925..933] adherent))
+                (NML (-LRB-:[934..935] -LRB-) (NN:[935..941] S-type)
+                     (-RRB-:[941..942] -RRB-)))
+              (NN:[943..952] phenotype))))))
+    (VP
+      (VP (VBP:[953..957] have)
+        (NP
+          (NP (JJ:[958..961] low) (NNS:[962..968] levels))
+          (PP (IN:[969..971] of)
+            (NP (NN:[973..982] pp60c-src) (NN:[983..990] protein)))))
+      (CC:[991..994] and)
+      (VP (VBP:[995..1002] express)
+        (ADVP (RB:[1003..1014] exclusively))
+        (NP
+          (NP (DT:[1015..1018] the)
+            (ADJP (AFX:[1019..1022] non) (HYPH:[1022..1023] -)
+                  (JJ:[1023..1031] neuronal))
+            (NML (NN:[1032..1041] isoenzyme)))
+          (PP (IN:[1042..1044] of)
+            (NP (NN:[1046..1055] pp60c-src))))))
+    (.:[1055..1056] .)))
+
+;sentence 7 Span:1057..1175
+;In all cells examined the abundance of pp60c-src was found to be 
+;proportional to the steady-state level of c-src RNA.
+;[1096..1105]:gene-protein:"pp60c-src"
+;[1165..1170]:gene-rna:"c-src"
+(SENT
+  (S
+    (PP-LOC (IN:[1057..1059] In)
+      (NP
+        (NP (DT:[1060..1063] all) (NNS:[1064..1069] cells))
+        (VP (VBN:[1070..1078] examined)
+          (NP (-NONE-:[1078..1078] *)))))
+    (NP-SBJ-1
+      (NP (DT:[1079..1082] the) (NN:[1083..1092] abundance))
+      (PP (IN:[1093..1095] of)
+        (NP (NN:[1096..1105] pp60c-src))))
+    (VP (VBD:[1106..1109] was)
+      (VP (VBN:[1110..1115] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1115..1115] *))
+          (VP (TO:[1116..1118] to)
+            (VP (VB:[1119..1121] be)
+              (ADJP-PRD (JJ:[1123..1135] proportional)
+                (PP (TO:[1136..1138] to)
+                  (NP
+                    (NP (DT:[1139..1142] the)
+                      (NML (JJ:[1143..1149] steady) (HYPH:[1149..1150] -)
+                           (NN:[1150..1155] state))
+                      (NN:[1156..1161] level))
+                    (PP (IN:[1162..1164] of)
+                      (NP (NN:[1165..1170] c-src) (NN:[1171..1174] RNA)))))))))))
+    (.:[1174..1175] .)))
+
+;sentence 8 Span:1176..1372
+;In each case the protein  kinase activity of pp60c-src was found to be
+;proportional to the abundance of  the protein and independent of the ratio of
+;neuronal to non-neuronal species of  pp60c-src.
+;[1193..1208]:gene-protein:"protein  kinase"
+;[1221..1230]:gene-protein:"pp60c-src"
+;[1362..1371]:gene-protein:"pp60c-src"
+(SENT
+  (S
+    (PP (IN:[1176..1178] In)
+      (NP (DT:[1179..1183] each) (NN:[1184..1188] case)))
+    (NP-SBJ-1
+      (NP (DT:[1189..1192] the)
+        (NML (NN:[1193..1200] protein) (NN:[1202..1208] kinase))
+        (NN:[1209..1217] activity))
+      (PP (IN:[1218..1220] of)
+        (NP (NN:[1221..1230] pp60c-src))))
+    (VP (VBD:[1231..1234] was)
+      (VP (VBN:[1235..1240] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1240..1240] *))
+          (VP (TO:[1241..1243] to)
+            (VP (VB:[1244..1246] be)
+              (ADJP-PRD
+                (ADJP (JJ:[1247..1259] proportional)
+                  (PP (TO:[1260..1262] to)
+                    (NP
+                      (NP (DT:[1263..1266] the) (NN:[1267..1276] abundance))
+                      (PP (IN:[1277..1279] of)
+                        (NP (DT:[1281..1284] the) (NN:[1285..1292] protein))))))
+                (CC:[1293..1296] and)
+                (ADJP (JJ:[1297..1308] independent)
+                  (PP (IN:[1309..1311] of)
+                    (NP
+                      (NP (DT:[1312..1315] the) (NN:[1316..1321] ratio))
+                      (PP (IN:[1322..1324] of)
+                        (NP
+                          (NP (JJ:[1325..1333] neuronal)
+                            (NML-3 (-NONE-:[1333..1333] *P*)))
+                          (PP-2 (-NONE-:[1333..1333] *RNR*))))
+                      (PP (TO:[1334..1336] to)
+                        (NP
+                          (NP
+                            (ADJP (AFX:[1337..1340] non) (HYPH:[1340..1341] -)
+                                  (JJ:[1341..1349] neuronal))
+                            (NML-3 (NNS:[1350..1357] species)))
+                          (PP-2 (-NONE-:[1357..1357] *RNR*))))
+                      (PP-2 (IN:[1358..1360] of)
+                        (NP (NN:[1362..1371] pp60c-src))))))))))))
+    (.:[1371..1372] .)))
+
+;section 9 Span:1376..1420
+;PMID: 2470006 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1376..1380] PMID) (::[1380..1381] :) (CD:[1382..1389] 2470006)
+        (NN:[1390..1391] -LSB-) (NNP:[1391..1397] PubMed) (::[1398..1399] -)
+        (NN:[1400..1407] indexed) (IN:[1408..1411] for)
+        (NNP:[1412..1420] MEDLINE-RSB-)))

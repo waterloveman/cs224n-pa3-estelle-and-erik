@@ -1,0 +1,328 @@
+;PMID: 9535729
+;source_file_2962.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..55] = [t:0..55]
+;1)sentence:[e:61..182] = [t:61..182]
+;2)section:[e:186..277] = [t:186..277]
+;3)section:[e:281..343] = [t:281..343]
+;4)sentence:[e:347..470] = [t:347..470]
+;5)sentence:[e:471..617] = [t:471..617]
+;6)sentence:[e:618..896] = [t:618..896]
+;7)sentence:[e:897..983] = [t:897..983]
+;8)sentence:[e:984..1125] = [t:984..1125]
+;9)sentence:[e:1126..1477] = [t:1126..1477]
+;10)section:[e:1481..1525] = [t:1481..1525]
+
+;section 0 Span:0..55
+;Biochem Biophys Res Commun.  1998 Mar 27;244(3):706-11.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (.:[26..27] .) (CD:[29..33] 1998)
+        (NNP:[34..37] Mar) (CD:[38..40] 27) (::[40..41] ;) (CD:[41..44] 244)
+        (-LRB-:[44..45] -LRB-) (CD:[45..46] 3) (-RRB-:[46..47] -RRB-)
+        (::[47..48] :) (CD:[48..54] 706-11) (.:[54..55] .)))
+
+;sentence 1 Span:61..182
+;Long-term exposure to retinoic acid induces the expression of IRK1 channels
+;in  HERG channel-endowed neuroblastoma cells.
+;[123..136]:gene-protein:"IRK1 channels"
+;[141..153]:gene-protein:"HERG channel"
+;[162..175]:malignancy-type:"neuroblastoma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP
+        (NML (JJ:[61..65] Long) (HYPH:[65..66] -) (NN:[66..70] term))
+        (NN:[71..79] exposure))
+      (PP (TO:[80..82] to)
+        (NP (JJ:[83..91] retinoic) (NN:[92..96] acid))))
+    (VP (VBZ:[97..104] induces)
+      (NP
+        (NP (DT:[105..108] the) (NN:[109..119] expression))
+        (PP (IN:[120..122] of)
+          (NP (NN:[123..127] IRK1) (NNS:[128..136] channels))))
+      (PP-LOC (IN:[137..139] in)
+        (NP
+          (ADJP
+            (NML (NN:[141..145] HERG) (NN:[146..153] channel))
+            (HYPH:[153..154] -) (VBN:[154..161] endowed))
+          (NN:[162..175] neuroblastoma) (NNS:[176..181] cells))))
+    (.:[181..182] .)))
+
+;section 2 Span:186..277
+;Arcangeli A, Rosati B, Cherubini A, Crociani O, Fontana L, Passani B, Wanke
+;E,  Olivotto M.
+(SEC
+  (FRAG (NNP:[186..195] Arcangeli) (NNP:[196..197] A) (,:[197..198] ,)
+        (NNP:[199..205] Rosati) (NNP:[206..207] B) (,:[207..208] ,)
+        (NNP:[209..218] Cherubini) (NNP:[219..220] A) (,:[220..221] ,)
+        (NNP:[222..230] Crociani) (NNP:[231..232] O) (,:[232..233] ,)
+        (NNP:[234..241] Fontana) (NNP:[242..243] L) (,:[243..244] ,)
+        (NNP:[245..252] Passani) (NNP:[253..254] B) (,:[254..255] ,)
+        (NNP:[256..261] Wanke) (NNP:[262..263] E) (,:[263..264] ,)
+        (NNP:[266..274] Olivotto) (NNP:[275..276] M) (.:[276..277] .)))
+
+;section 3 Span:281..343
+;Institute of General Pathology, University of Florence, Italy.
+(SEC
+  (FRAG (NNP:[281..290] Institute) (IN:[291..293] of) (NNP:[294..301] General)
+        (NNP:[302..311] Pathology) (,:[311..312] ,) (NNP:[313..323] University)
+        (IN:[324..326] of) (NNP:[327..335] Florence) (,:[335..336] ,)
+        (NNP:[337..342] Italy) (.:[342..343] .)))
+
+;sentence 4 Span:347..470
+;The modulation of inward K+ conductances was studied during neuronal 
+;differentiation of human SH-SY5Y neuroblastoma cells.
+;[450..463]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[347..350] The) (NN:[351..361] modulation))
+      (PP (IN:[362..364] of)
+        (NP (JJ:[365..371] inward) (NN:[372..374] K+)
+            (NNS:[375..387] conductances))))
+    (VP (VBD:[388..391] was)
+      (VP (VBN:[392..399] studied)
+        (NP-1 (-NONE-:[399..399] *))
+        (PP-TMP (IN:[400..406] during)
+          (NP
+            (NP (JJ:[407..415] neuronal) (NN:[417..432] differentiation))
+            (PP (IN:[433..435] of)
+              (NP (JJ:[436..441] human) (NN:[442..449] SH-SY5Y)
+                  (NN:[450..463] neuroblastoma) (NNS:[464..469] cells)))))))
+    (.:[469..470] .)))
+
+;sentence 5 Span:471..617
+;Under standard culture  conditions, these cells express the herg gene, and
+;the HERG current is the main  inward K+ current regulating their Vrest.
+;[531..535]:gene-rna:"herg"
+;[550..554]:gene-protein:"HERG"
+(SENT
+  (S
+    (S
+      (PP (IN:[471..476] Under)
+        (NP (JJ:[477..485] standard) (NN:[486..493] culture)
+            (NNS:[495..505] conditions)))
+      (,:[505..506] ,)
+      (NP-SBJ (DT:[507..512] these) (NNS:[513..518] cells))
+      (VP (VBP:[519..526] express)
+        (NP (DT:[527..530] the) (NN:[531..535] herg) (NN:[536..540] gene))))
+    (,:[540..541] ,) (CC:[542..545] and)
+    (S
+      (NP-SBJ (DT:[546..549] the) (NN:[550..554] HERG) (NN:[555..562] current))
+      (VP (VBZ:[563..565] is)
+        (NP-PRD
+          (NP (DT:[566..569] the) (JJ:[570..574] main) (JJ:[576..582] inward)
+              (NN:[583..585] K+) (NN:[586..593] current))
+          (VP (VBG:[594..604] regulating)
+            (NP (PRP$:[605..610] their) (NN:[611..616] Vrest))))))
+    (.:[616..617] .)))
+
+;sentence 6 Span:618..896
+;After 10-20 days exposure to Retinoic  Acid (RA), SH-SY5Y cells showed, in
+;addition to HERG currents, a novel current  characterized by inward
+;rectification, dependence on the extracellular K+  concentration, and
+;blockade by Cs+ and Ba2+, the main features of the IRK1  current.
+;[705..709]:gene-protein:"HERG"
+;[882..886]:gene-protein:"IRK1"
+(SENT
+  (S
+    (PP-TMP (IN:[618..623] After)
+      (NP
+        (NP
+          (QP (CD:[624..626] 10) (HYPH:[626..627] -) (CD:[627..629] 20))
+          (NNS:[630..634] days) (NN:[635..643] exposure))
+        (PP (TO:[644..646] to)
+          (NP
+            (NP (JJ:[647..655] Retinoic) (NN:[657..661] Acid))
+            (NP (-LRB-:[662..663] -LRB-) (NN:[663..665] RA)
+                (-RRB-:[665..666] -RRB-))))))
+    (,:[666..667] ,)
+    (NP-SBJ (NN:[668..675] SH-SY5Y) (NNS:[676..681] cells))
+    (VP (VBD:[682..688] showed) (,:[688..689] ,)
+      (PP (IN:[690..692] in)
+        (NP
+          (NP (NN:[693..701] addition))
+          (PP (TO:[702..704] to)
+            (NP (NN:[705..709] HERG) (NNS:[710..718] currents)))))
+      (,:[718..719] ,)
+      (NP
+        (NP (DT:[720..721] a) (JJ:[722..727] novel) (NN:[728..735] current))
+        (VP (VBN:[737..750] characterized)
+          (NP (-NONE-:[750..750] *))
+          (PP (IN:[751..753] by)
+            (NP-LGS
+              (NP
+                (NP (JJ:[754..760] inward) (NN:[761..774] rectification))
+                (,:[774..775] ,)
+                (NP
+                  (NP (NN:[776..786] dependence))
+                  (PP (IN:[787..789] on)
+                    (NP (DT:[790..793] the) (JJ:[794..807] extracellular)
+                        (NN:[808..810] K+) (NN:[812..825] concentration))))
+                (,:[825..826] ,) (CC:[827..830] and)
+                (NP
+                  (NP (NN:[831..839] blockade))
+                  (PP (IN:[840..842] by)
+                    (NP (NN:[843..846] Cs+) (CC:[847..850] and)
+                        (NN:[851..855] Ba2+)))))
+              (,:[855..856] ,)
+              (NP
+                (NP (DT:[857..860] the) (JJ:[861..865] main)
+                    (NNS:[866..874] features))
+                (PP (IN:[875..877] of)
+                  (NP (DT:[878..881] the) (NN:[882..886] IRK1)
+                      (NN:[888..895] current)))))))))
+    (.:[895..896] .)))
+
+;sentence 7 Span:897..983
+;The appearance of this current is accompanied by a strong  hyperpolarisation
+;of Vrest.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[897..900] The) (NN:[901..911] appearance))
+      (PP (IN:[912..914] of)
+        (NP (DT:[915..919] this) (NN:[920..927] current))))
+    (VP (VBZ:[928..930] is)
+      (VP (VBN:[931..942] accompanied)
+        (NP-1 (-NONE-:[942..942] *))
+        (PP (IN:[943..945] by)
+          (NP-LGS
+            (NP (DT:[946..947] a) (JJ:[948..954] strong)
+                (NN:[956..973] hyperpolarisation))
+            (PP (IN:[974..976] of)
+              (NP (NN:[977..982] Vrest)))))))
+    (.:[982..983] .)))
+
+;sentence 8 Span:984..1125
+;RT-PCR experiments confirmed that a transcript of  the IRK1 (Kir 2.1) gene
+;actually appears in SH-SY5Y cells treated for 10-20 days  with RA.
+;[1039..1043]:gene-rna:"IRK1"
+;[1045..1052]:gene-rna:"Kir 2.1"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (NN:[984..986] RT) (HYPH:[986..987] -) (NN:[987..990] PCR))
+      (NNS:[991..1002] experiments))
+    (VP (VBD:[1003..1012] confirmed)
+      (SBAR (IN:[1013..1017] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1018..1019] a) (NN:[1020..1030] transcript))
+            (PP (IN:[1031..1033] of)
+              (NP (DT:[1035..1038] the) (NN:[1039..1043] IRK1)
+                (PRN (-LRB-:[1044..1045] -LRB-)
+                  (NP (NN:[1045..1048] Kir) (CD:[1049..1052] 2.1))
+                  (-RRB-:[1052..1053] -RRB-))
+                (NN:[1054..1058] gene))))
+          (ADVP (RB:[1059..1067] actually))
+          (VP (VBZ:[1068..1075] appears)
+            (PP-LOC (IN:[1076..1078] in)
+              (NP
+                (NP (NN:[1079..1086] SH-SY5Y) (NNS:[1087..1092] cells))
+                (VP (VBN:[1093..1100] treated)
+                  (NP (-NONE-:[1100..1100] *))
+                  (PP-TMP (IN:[1101..1104] for)
+                    (NP
+                      (NP
+                        (QP (CD:[1105..1107] 10) (HYPH:[1107..1108] -)
+                            (CD:[1108..1110] 20))
+                        (NNS:[1111..1115] days))
+                      (PP (IN:[1117..1121] with)
+                        (NP (NN:[1122..1124] RA))))))))))))
+    (.:[1124..1125] .)))
+
+;sentence 9 Span:1126..1477
+;On the whole, data here presented demonstrate that RA-induced neuronal 
+;differentiation of neuroblastoma cells is accompanied by the switch from a 
+;HERG-driven to a IRK1-driven control of Vrest, similarly to what happens in 
+;normal differentiating neurons; however, in tumor cells, this switch does not
+; imply the abolition of HERG channel expression.
+;[1217..1230]:malignancy-type:"neuroblastoma"
+;[1274..1278]:gene-generic:"HERG"
+;[1291..1295]:gene-generic:"IRK1"
+;[1453..1465]:gene-protein:"HERG channel"
+(SENT
+  (S
+    (PP (IN:[1126..1128] On)
+      (NP (DT:[1129..1132] the) (NN:[1133..1138] whole)))
+    (,:[1138..1139] ,)
+    (NP-SBJ
+      (NP (NNS:[1140..1144] data))
+      (VP
+        (ADVP (RB:[1145..1149] here))
+        (VBN:[1150..1159] presented)
+        (NP (-NONE-:[1159..1159] *))))
+    (VP (VBP:[1160..1171] demonstrate)
+      (SBAR (IN:[1172..1176] that)
+        (S
+          (NP-SBJ-1
+            (NP
+              (ADJP (NN:[1177..1179] RA) (HYPH:[1179..1180] -)
+                    (VBN:[1180..1187] induced))
+              (JJ:[1188..1196] neuronal) (NN:[1198..1213] differentiation))
+            (PP (IN:[1214..1216] of)
+              (NP (NN:[1217..1230] neuroblastoma) (NNS:[1231..1236] cells))))
+          (VP (VBZ:[1237..1239] is)
+            (VP (VBN:[1240..1251] accompanied)
+              (NP-1 (-NONE-:[1251..1251] *))
+              (PP (IN:[1252..1254] by)
+                (NP-LGS
+                  (NP (DT:[1255..1258] the) (NN:[1259..1265] switch))
+                  (PP (IN:[1266..1270] from)
+                    (NP
+                      (NP (DT:[1271..1272] a)
+                        (ADJP (NN:[1274..1278] HERG) (HYPH:[1278..1279] -)
+                              (VBN:[1279..1285] driven))
+                        (NML-4 (-NONE-:[1285..1285] *RNR*)))
+                      (PP-2 (-NONE-:[1285..1285] *RNR*))))
+                  (PP (TO:[1286..1288] to)
+                    (NP
+                      (NP (DT:[1289..1290] a)
+                        (ADJP (NN:[1291..1295] IRK1) (HYPH:[1295..1296] -)
+                              (VBN:[1296..1302] driven))
+                        (NML-4 (-NONE-:[1302..1302] *RNR*)))
+                      (PP-2 (-NONE-:[1302..1302] *RNR*))))
+                  (NML-4 (NN:[1303..1310] control))
+                  (PP-2 (IN:[1311..1313] of)
+                    (NP (NN:[1314..1319] Vrest)))))
+              (,:[1319..1320] ,)
+              (ADVP (RB:[1321..1330] similarly)
+                (PP (TO:[1331..1333] to)
+                  (SBAR-NOM
+                    (WHNP-3 (WP:[1334..1338] what))
+                    (S
+                      (NP-SBJ-3 (-NONE-:[1338..1338] *T*))
+                      (VP (VBZ:[1339..1346] happens)
+                        (PP-LOC (IN:[1347..1349] in)
+                          (NP (JJ:[1351..1357] normal)
+                              (VBG:[1358..1373] differentiating)
+                              (NNS:[1374..1381] neurons))))))))))))
+      (::[1381..1382] ;)
+      (S-ADV
+        (ADVP (RB:[1383..1390] however))
+        (,:[1390..1391] ,)
+        (PP-LOC (IN:[1392..1394] in)
+          (NP (NN:[1395..1400] tumor) (NNS:[1401..1406] cells)))
+        (,:[1406..1407] ,)
+        (NP-SBJ (DT:[1408..1412] this) (NN:[1413..1419] switch))
+        (VP (VBZ:[1420..1424] does) (RB:[1425..1428] not)
+          (VP (VB:[1430..1435] imply)
+            (NP
+              (NP (DT:[1436..1439] the) (NN:[1440..1449] abolition))
+              (PP (IN:[1450..1452] of)
+                (NP
+                   (NN:[1453..1457] HERG) (NN:[1458..1465] channel)
+                  (NN:[1466..1476] expression))))))))
+    (.:[1476..1477] .)))
+
+;section 10 Span:1481..1525
+;PMID: 9535729 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1481..1485] PMID) (::[1485..1486] :) (CD:[1487..1494] 9535729)
+        (NN:[1495..1496] -LSB-) (NNP:[1496..1502] PubMed) (::[1503..1504] -)
+        (NN:[1505..1512] indexed) (IN:[1513..1516] for)
+        (NNP:[1517..1524] MEDLINE) (-RRB-:[1524..1525] -RSB-)))

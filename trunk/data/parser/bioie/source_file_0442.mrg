@@ -1,0 +1,616 @@
+;PMID: 8669690
+;source_file_633.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..162] = [t:44..162]
+;2)section:[e:166..197] = [t:166..197]
+;3)section:[e:201..315] = [t:201..315]
+;4)sentence:[e:319..330] = [t:319..330]
+;5)sentence:[e:331..552] = [t:331..552]
+;6)sentence:[e:553..717] = [t:553..717]
+;7)sentence:[e:719..1105] = [t:719..1105]
+;8)sentence:[e:1107..1115] = [t:1107..1115]
+;9)sentence:[e:1116..1301] = [t:1116..1301]
+;10)sentence:[e:1302..1549] = [t:1302..1549]
+;11)sentence:[e:1550..1735] = [t:1550..1735]
+;12)sentence:[e:1737..1745] = [t:1737..1745]
+;13)sentence:[e:1746..2006] = [t:1746..2006]
+;14)sentence:[e:2007..2263] = [t:2007..2263]
+;15)sentence:[e:2265..2277] = [t:2265..2277]
+;16)sentence:[e:2278..2540] = [t:2278..2540]
+;17)section:[e:2544..2588] = [t:2544..2588]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[537..538] K
+;ERROR_Token in entity file but not tree[538..539] +
+;ERROR_Token in entity file but not tree[539..541] Ca
+;ERROR_Token in entity file but not tree[1895..1896] K
+;ERROR_Token in entity file but not tree[1896..1897] +
+;ERROR_Token in entity file but not tree[1897..1899] Ca
+;ERROR_POS mismatch [28..29] t:token e:CD 6
+;ERROR_Token in tree file but not entity[537..541] K+Ca
+;ERROR_Token in tree file but not entity[1895..1899] K+Ca
+
+;section 0 Span:0..38
+;Anesthesiology. 1996 Jun;84(6):1485-8.
+(SEC
+  (FRAG (VBG:[0..14] Anesthesiology) (RB:[14..15] .) (CD:[16..20] 1996)
+        (.:[21..26] Jun;8) (CD:[26..27] 4) (NN:[27..28] -LRB-)
+        (token:[28..29] 6) (-RRB-:[29..30] -RRB-) (::[30..31] :)
+        (CD:[31..34] 148) (CD:[34..37] 5-8) (.:[37..38] .)))
+
+;sentence 1 Span:44..162
+;Etomidate and thiopental inhibit the release of endothelium-derived 
+;hyperpolarizing factor in the human renal artery.
+;[44..53]:substance:"Etomidate"
+;[58..68]:substance:"thiopental"
+;[92..135]:substance:"endothelium-derived  hyperpolarizing factor"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[44..53] Etomidate) (CC:[54..57] and) (NN:[58..68] thiopental))
+    (VP (VBP:[69..76] inhibit)
+      (NP
+        (NP (DT:[77..80] the) (NN:[81..88] release))
+        (PP (IN:[89..91] of)
+          (NP
+            (ADJP (NN:[92..103] endothelium) (HYPH:[103..104] -)
+                  (VBN:[104..111] derived))
+            (VBG:[113..128] hyperpolarizing) (NN:[129..135] factor))))
+      (PP-LOC (IN:[136..138] in)
+        (NP (DT:[139..142] the) (JJ:[143..148] human) (JJ:[149..154] renal)
+            (NN:[155..161] artery))))
+    (.:[161..162] .)))
+
+;section 2 Span:166..197
+;Kessler P, Lischke V, Hecker M.
+(SEC
+  (FRAG (NNP:[166..173] Kessler) (NNP:[174..176] P,) (NNP:[177..184] Lischke)
+        (NNP:[185..186] V) (,:[186..187] ,) (NNP:[188..194] Hecker)
+        (NNP:[195..197] M.)))
+
+;section 3 Span:201..315
+;Center of Anesthesiology and Resuscitation, Johann Wolfgang Goethe University
+; Clinic, Frankfurt am Main, Germany.
+(SEC
+  (FRAG (NNP:[201..207] Center) (IN:[208..210] of)
+        (NNP:[211..225] Anesthesiology) (CC:[226..229] and)
+        (NNP:[230..243] Resuscitation) (,:[243..244] ,) (NNP:[245..251] Johann)
+        (NNP:[252..260] Wolfgang) (NNP:[261..267] Goethe)
+        (NNP:[268..278] University) (NNP:[280..286] Clinic) (,:[286..287] ,)
+        (NNP:[288..297] Frankfurt) (,:[298..300] am) (NNP:[301..305] Main)
+        (IN:[305..306] ,) (NNP:[307..314] Germany) (.:[314..315] .)))
+
+;sentence 4 Span:319..330
+;BACKGROUND:
+(SENT
+  (NP (NN:[319..329] BACKGROUND) (::[329..330] :)))
+
+;sentence 5 Span:331..552
+;Endothelium-derived hyperpolarizing factor is thought to be a  cytochrome
+;P450-derived arachidonic acid metabolite that hyperpolarizes vascular  smooth
+;muscle cells by opening Ca(2+)-activated K+ channels (K+Ca channels).
+;[331..373]:substance:"Endothelium-derived hyperpolarizing factor"
+;[394..409]:cyp450:"cytochrome P450"
+;[418..445]:substance:"arachidonic acid metabolite"
+;[507..513]:substance:"Ca(2+)"
+;[524..526]:substance:"K+"
+;[537..538]:substance:"K"
+;[539..541]:substance:"Ca"
+(SENT
+  (S
+    (NP-SBJ-2
+      (ADJP (NN:[331..342] Endothelium) (HYPH:[342..343] -)
+            (VBN:[343..350] derived))
+      (VBG:[351..366] hyperpolarizing) (NN:[367..373] factor))
+    (VP (VBZ:[374..376] is)
+      (VP (VBN:[377..384] thought)
+        (S
+          (NP-SBJ-2 (-NONE-:[384..384] *))
+          (VP (TO:[385..387] to)
+            (VP (VB:[388..390] be)
+              (NP-PRD
+                (NP (DT:[391..392] a)
+                  (ADJP
+                    (NML (NN:[394..404] cytochrome) (NN:[405..409] P450))
+                    (HYPH:[409..410] -) (VBN:[410..417] derived))
+                  
+                  (NML (JJ:[418..429] arachidonic) (NN:[430..434] acid))
+                  (NN:[435..445] metabolite))
+                (SBAR
+                  (WHNP-1 (WDT:[446..450] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[450..450] *T*))
+                    (VP (VBZ:[451..465] hyperpolarizes)
+                      (NP (JJ:[466..474] vascular)
+                        (NML (JJ:[476..482] smooth) (NN:[483..489] muscle))
+                        (NNS:[490..495] cells))
+                      (PP-MNR (IN:[496..498] by)
+                        (S-NOM
+                          (NP-SBJ (-NONE-:[498..498] *))
+                          (VP (VBG:[499..506] opening)
+                            (NP
+                              (NP
+                                (ADJP (NN:[507..513] Ca-LRB-2+-RRB-)
+                                      (HYPH:[513..514] -)
+                                      (VBN:[514..523] activated))
+                                (NN:[524..526] K+) (NNS:[527..535] channels))
+                              (NP (-LRB-:[536..537] -LRB-) (NN:[537..541] K+Ca)
+                                  (NNS:[542..550] channels)
+                                  (-RRB-:[550..551] -RRB-)))))))))))))))
+    (.:[551..552] .)))
+
+;sentence 6 Span:553..717
+;In  the rabbit carotid artery both volatile and intravenous anesthetics
+;inhibit the  acetylcholine-stimulated release of endothelium-derived
+;hyperpolarizing factor.
+;[613..624]:substance:"anesthetics"
+;[638..651]:substance:"acetylcholine"
+;[674..716]:substance:"endothelium-derived hyperpolarizing factor"
+(SENT
+  (S
+    (PP-LOC (IN:[553..555] In)
+      (NP (DT:[557..560] the) (NN:[561..567] rabbit) (JJ:[568..575] carotid)
+          (NN:[576..582] artery)))
+    (NP-SBJ (CC:[583..587] both)
+      (NP (JJ:[588..596] volatile)
+        (NML-1 (-NONE-:[596..596] *P*)))
+      (CC:[597..600] and)
+      (NP (JJ:[601..612] intravenous)
+        (NML-1 (NNS:[613..624] anesthetics))))
+    (VP (VBP:[625..632] inhibit)
+      (NP
+        (NP (DT:[633..636] the)
+          (ADJP (NN:[638..651] acetylcholine) (HYPH:[651..652] -)
+                (VBN:[652..662] stimulated))
+          (NN:[663..670] release))
+        (PP (IN:[671..673] of)
+          (NP
+            (ADJP (NN:[674..685] endothelium) (HYPH:[685..686] -)
+                  (VBN:[686..693] derived))
+            (VBG:[694..709] hyperpolarizing) (NN:[710..716] factor)))))
+    (.:[716..717] .)))
+
+;sentence 7 Span:719..1105
+;Because the release of this factor may help to maintain vascular tone in
+;humans  under conditions of a failing nitric oxide synthesis, e.g., in
+;atherosclerosis,  the effects of two intravenous anesthetics, thiopental and
+;etomidate, on the  endothelium-derived hyperpolarizing factor-mediated
+;relaxant response to  acetylcholine were investigated in human isolated renal
+;artery segments.
+;[747..753]:substance:"factor"
+;[830..842]:substance:"nitric oxide"
+;[912..923]:substance:"anesthetics"
+;[925..935]:substance:"thiopental"
+;[940..949]:substance:"etomidate"
+;[959..1001]:substance:"endothelium-derived hyperpolarizing factor"
+;[1011..1019]:substance:"relaxant"
+;[1033..1046]:substance:"acetylcholine"
+(SENT
+  (S
+    (SBAR-PRP (IN:[719..726] Because)
+      (S
+        (NP-SBJ
+          (NP (DT:[727..730] the) (NN:[731..738] release))
+          (PP (IN:[739..741] of)
+            (NP (DT:[742..746] this) (NN:[747..753] factor))))
+        (VP (MD:[754..757] may)
+          (VP (VB:[758..762] help)
+            (VP (TO:[763..765] to)
+              (VP (VB:[766..774] maintain)
+                (NP (JJ:[775..783] vascular) (NN:[784..788] tone))
+                (PP (IN:[789..791] in)
+                  (NP (NNS:[792..798] humans)))
+                (PP (IN:[800..805] under)
+                  (NP
+                    (NP (NNS:[806..816] conditions))
+                    (PP (IN:[817..819] of)
+                      (NP (DT:[820..821] a) (VBG:[822..829] failing)
+                        (NML (JJ:[830..836] nitric) (NN:[837..842] oxide))
+                        (NN:[843..852] synthesis)))
+                    (,:[852..853] ,)
+                    (PP (FW:[854..858] e.g.) (,:[858..859] ,)
+                      (PP (IN:[860..862] in)
+                        (NP (NN:[863..878] atherosclerosis))))))))))))
+    (,:[878..879] ,)
+    (NP-SBJ-1
+      (NP (DT:[881..884] the) (NNS:[885..892] effects))
+      (PP (IN:[893..895] of)
+        (NP
+          (NP (CD:[896..899] two) (JJ:[900..911] intravenous)
+              (NNS:[912..923] anesthetics))
+          (,:[923..924] ,)
+          (NP (NN:[925..935] thiopental) (CC:[936..939] and)
+              (NN:[940..949] etomidate))))
+      (,:[949..950] ,)
+      (PP (IN:[951..953] on)
+        (NP
+          (NP (DT:[954..957] the)
+            (ADJP (NN:[959..970] endothelium) (HYPH:[970..971] -)
+                  (VBN:[971..978] derived))
+            (ADJP
+              (NML (VBG:[979..994] hyperpolarizing) (NN:[995..1001] factor))
+              (HYPH:[1001..1002] -) (VBN:[1002..1010] mediated))
+            (JJ:[1011..1019] relaxant) (NN:[1020..1028] response))
+          (PP (TO:[1029..1031] to)
+            (NP (NN:[1033..1046] acetylcholine))))))
+    (VP (VBD:[1047..1051] were)
+      (VP (VBN:[1052..1064] investigated)
+        (NP-1 (-NONE-:[1064..1064] *))
+        (PP-LOC (IN:[1065..1067] in)
+          (NP (JJ:[1068..1073] human) (VBN:[1074..1082] isolated)
+            (NML (JJ:[1083..1088] renal) (NN:[1089..1095] artery))
+            (NNS:[1096..1104] segments)))))
+    (.:[1104..1105] .)))
+
+;sentence 8 Span:1107..1115
+;METHODS:
+(SENT
+  (NP (NNS:[1107..1114] METHODS) (::[1114..1115] :)))
+
+;sentence 9 Span:1116..1301
+;The segments were suspended in Krebs-Henseleit solution (37 degrees C) 
+;containing the cyclooxygenase inhibitor diclofenac (1 microM) and
+;preconstricted  with norepinephrine (6 microM).
+;[1173..1175]:quantitative-value:"37"
+;[1176..1185]:quantitative-units:"degrees C"
+;[1203..1217]:substance:"cyclooxygenase"
+;[1218..1227]:substance:"inhibitor"
+;[1228..1238]:substance:"diclofenac"
+;[1240..1241]:quantitative-value:"1"
+;[1242..1248]:quantitative-units:"microM"
+;[1275..1289]:substance:"norepinephrine"
+;[1291..1292]:quantitative-value:"6"
+;[1293..1299]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1116..1119] The) (NNS:[1120..1128] segments))
+    (VP (VBD:[1129..1133] were)
+      (VP
+        (VP (VBN:[1134..1143] suspended)
+          (NP-1 (-NONE-:[1143..1143] *))
+          (PP-LOC (IN:[1144..1146] in)
+            (NP
+              (NP
+                (NP
+                  (NML (NNP:[1147..1152] Krebs) (HYPH:[1152..1153] -)
+                       (NNP:[1153..1162] Henseleit))
+                  (NN:[1163..1171] solution))
+                (PRN (-LRB-:[1172..1173] -LRB-)
+                  (NP (CD:[1173..1175] 37)
+                     (NNS:[1176..1183] degrees) (JJ:[1184..1185] C))
+                  (-RRB-:[1185..1186] -RRB-)))
+              (VP (VBG:[1188..1198] containing)
+                (NP
+                  (NP
+                    (NP (DT:[1199..1202] the) (NN:[1203..1217] cyclooxygenase)
+                        (NN:[1218..1227] inhibitor))
+                    (NP (NN:[1228..1238] diclofenac)))
+                  (PRN (-LRB-:[1239..1240] -LRB-)
+                    (NP (CD:[1240..1241] 1) (NN:[1242..1248] microM))
+                    (-RRB-:[1248..1249] -RRB-)))))))
+        (CC:[1250..1253] and)
+        (VP (VBN:[1254..1268] preconstricted)
+          (NP-1 (-NONE-:[1268..1268] *))
+          (PP-MNR (IN:[1270..1274] with)
+            (NP
+              (NP (NN:[1275..1289] norepinephrine))
+              (PRN (-LRB-:[1290..1291] -LRB-)
+                (NP (CD:[1291..1292] 6) (NN:[1293..1299] microM))
+                (-RRB-:[1299..1300] -RRB-)))))))
+    (.:[1300..1301] .)))
+
+;sentence 10 Span:1302..1549
+;Relaxations caused by acetylcholine (1 microM)  were compared in the presence
+;and absence of the nitric oxide synthase inhibitor  N(G)-nitro-L-arginine
+;(0.1 mM) in control segments and in segments exposed to  etomidate or
+;thiopental (0.03-0.3 mM).
+;[1324..1337]:substance:"acetylcholine"
+;[1339..1340]:quantitative-value:"1"
+;[1341..1347]:quantitative-units:"microM"
+;[1399..1420]:substance:"nitric oxide synthase"
+;[1421..1430]:substance:"inhibitor"
+;[1432..1453]:substance:"N(G)-nitro-L-arginine"
+;[1455..1458]:quantitative-value:"0.1"
+;[1459..1461]:quantitative-units:"mM"
+;[1511..1520]:substance:"etomidate"
+;[1524..1534]:substance:"thiopental"
+;[1536..1544]:quantitative-value:"0.03-0.3"
+;[1545..1547]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[1302..1313] Relaxations))
+      (VP (VBN:[1314..1320] caused)
+        (NP (-NONE-:[1320..1320] *))
+        (PP (IN:[1321..1323] by)
+          (NP-LGS
+            (NP (NN:[1324..1337] acetylcholine))
+            (PRN (-LRB-:[1338..1339] -LRB-)
+              (NP (CD:[1339..1340] 1) (NN:[1341..1347] microM))
+              (-RRB-:[1347..1348] -RRB-))))))
+    (VP (VBD:[1350..1354] were)
+      (VP (VBN:[1355..1363] compared)
+        (NP-1 (-NONE-:[1363..1363] *))
+        (PP-LOC (IN:[1364..1366] in)
+          (NP
+            (NP (DT:[1367..1370] the) (NN:[1371..1379] presence)
+                (CC:[1380..1383] and) (NN:[1384..1391] absence))
+            (PP (IN:[1392..1394] of)
+              (NP
+                (NP
+                  (NP (DT:[1395..1398] the)
+                    
+                    (NML (JJ:[1399..1405] nitric) (NN:[1406..1411] oxide))
+                    (NN:[1412..1420] synthase)
+                    (NN:[1421..1430] inhibitor))
+                  (NP (NN:[1432..1453] N-LRB-G-RRB--nitro-L-arginine)))
+                (PRN (-LRB-:[1454..1455] -LRB-)
+                  (NP (CD:[1455..1458] 0.1) (NN:[1459..1461] mM))
+                  (-RRB-:[1461..1462] -RRB-))))))
+        (PP
+          (PP (IN:[1463..1465] in)
+            (NP (NN:[1466..1473] control) (NNS:[1474..1482] segments)))
+          (CC:[1483..1486] and)
+          (PP (IN:[1487..1489] in)
+            (NP
+              (NP (NNS:[1490..1498] segments))
+              (VP (VBN:[1499..1506] exposed)
+                (NP (-NONE-:[1506..1506] *))
+                (PP (TO:[1507..1509] to)
+                  (NP
+                    (NP (NN:[1511..1520] etomidate) (CC:[1521..1523] or)
+                        (NN:[1524..1534] thiopental))
+                    (PRN (-LRB-:[1535..1536] -LRB-)
+                      (NP
+                        (QP (CD:[1536..1540] 0.03) (HYPH:[1540..1541] -)
+                            (CD:[1541..1544] 0.3))
+                        (NN:[1545..1547] mM))
+                      (-RRB-:[1547..1548] -RRB-))))))))))
+    (.:[1548..1549] .)))
+
+;sentence 11 Span:1550..1735
+;In addition, the effects of the two  anesthetics on the relaxant response to
+;the nitric oxide donors glyceryl  trinitrate (3 microM) and sodium
+;nitroprusside (0.1 microM) were examined.
+;[1587..1598]:substance:"anesthetics"
+;[1631..1650]:substance:"nitric oxide donors"
+;[1651..1671]:substance:"glyceryl  trinitrate"
+;[1673..1674]:quantitative-value:"3"
+;[1675..1681]:quantitative-units:"microM"
+;[1687..1707]:substance:"sodium nitroprusside"
+;[1709..1712]:quantitative-value:"0.1"
+;[1713..1719]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[1550..1552] In)
+      (NP (NN:[1553..1561] addition)))
+    (,:[1561..1562] ,)
+    (NP-SBJ-1
+      (NP (DT:[1563..1566] the) (NNS:[1567..1574] effects))
+      (PP (IN:[1575..1577] of)
+        (NP (DT:[1578..1581] the) (CD:[1582..1585] two)
+            (NNS:[1587..1598] anesthetics)))
+      (PP (IN:[1599..1601] on)
+        (NP
+          (NP (DT:[1602..1605] the) (JJ:[1606..1614] relaxant)
+              (NN:[1615..1623] response))
+          (PP (TO:[1624..1626] to)
+            (NP
+              (NP (DT:[1627..1630] the)
+                
+                (NML (JJ:[1631..1637] nitric) (NN:[1638..1643] oxide))
+                (NNS:[1644..1650] donors))
+              (NP
+                (NP
+                  (NP (NN:[1651..1659] glyceryl) (NN:[1661..1671] trinitrate))
+                  (PRN (-LRB-:[1672..1673] -LRB-)
+                    (NP (CD:[1673..1674] 3) (NN:[1675..1681] microM))
+                    (-RRB-:[1681..1682] -RRB-)))
+                (CC:[1683..1686] and)
+                (NP
+                  (NP (NN:[1687..1693] sodium) (NN:[1694..1707] nitroprusside))
+                  (PRN (-LRB-:[1708..1709] -LRB-)
+                    (NP (CD:[1709..1712] 0.1) (NN:[1713..1719] microM))
+                    (-RRB-:[1719..1720] -RRB-)))))))))
+    (VP (VBD:[1721..1725] were)
+      (VP (VBN:[1726..1734] examined)
+        (NP-1 (-NONE-:[1734..1734] *))))
+    (.:[1734..1735] .)))
+
+;sentence 12 Span:1737..1745
+;RESULTS:
+(SENT
+  (NP (NNS:[1737..1744] RESULTS) (::[1744..1745] :)))
+
+;sentence 13 Span:1746..2006
+;The relaxant response to acetylcholine, which was resistant to both  nitric
+;oxide synthase and cyclooxygenase blockade, was markedly reduced by the  K+Ca
+;channel antagonist tetrabutyl ammonium (3 mM) and the cytochrome P450 
+;inhibitor clotrimazole (30 microM).
+;[1771..1784]:substance:"acetylcholine"
+;[1815..1836]:substance:"nitric oxide synthase"
+;[1841..1855]:substance:"cyclooxygenase"
+;[1895..1896]:substance:"K"
+;[1897..1899]:substance:"Ca"
+;[1908..1918]:substance:"antagonist"
+;[1919..1938]:substance:"tetrabutyl ammonium"
+;[1940..1941]:quantitative-value:"3"
+;[1942..1944]:quantitative-units:"mM"
+;[1954..1969]:cyp450:"cytochrome P450"
+;[1971..1980]:substance:"inhibitor"
+;[1981..1993]:substance:"clotrimazole"
+;[1995..1997]:quantitative-value:"30"
+;[1998..2004]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1746..1749] The) (JJ:[1750..1758] relaxant)
+          (NN:[1759..1767] response))
+      (PP (TO:[1768..1770] to)
+        (NP
+          (NP (NN:[1771..1784] acetylcholine))
+          (,:[1784..1785] ,)
+          (SBAR
+            (WHNP-1 (WDT:[1786..1791] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[1791..1791] *T*))
+              (VP (VBD:[1792..1795] was)
+                (ADJP-PRD (JJ:[1796..1805] resistant)
+                  (PP (TO:[1806..1808] to)
+                    (NP (CC:[1809..1813] both)
+                      (NP
+                        (NML (JJ:[1815..1821] nitric) (NN:[1822..1827] oxide))
+                        (NN:[1828..1836] synthase))
+                      (CC:[1837..1840] and)
+                      (NP (NN:[1841..1855] cyclooxygenase)
+                          (NN:[1856..1864] blockade)))))))))))
+    (,:[1864..1865] ,)
+    (VP (VBD:[1866..1869] was)
+      (ADVP (JJ:[1870..1878] markedly))
+      (VP (VBN:[1879..1886] reduced)
+        (NP-2 (-NONE-:[1886..1886] *))
+        (PP-MNR (IN:[1887..1889] by)
+          (NP
+            (NP
+              (NP
+                (NML (DT:[1890..1893] the)
+                  (NML (NN:[1895..1899] K+Ca) (NN:[1900..1907] channel))
+                  (NN:[1908..1918] antagonist))
+                 (NN:[1919..1929] tetrabutyl) (NN:[1930..1938] ammonium))
+              (PRN (-LRB-:[1939..1940] -LRB-)
+                (NP (CD:[1940..1941] 3) (NN:[1942..1944] mM))
+                (-RRB-:[1944..1945] -RRB-)))
+            (CC:[1946..1949] and)
+            (NP
+              (NP
+                (NP (DT:[1950..1953] the)
+                  (NML (NN:[1954..1964] cytochrome) (NN:[1965..1969] P450))
+                  (NN:[1971..1980] inhibitor))
+                (NP (NN:[1981..1993] clotrimazole)))
+              (PRN (-LRB-:[1994..1995] -LRB-)
+                (NP (CD:[1995..1997] 30) (NN:[1998..2004] microM))
+                (-RRB-:[2004..2005] -RRB-)))))))
+    (.:[2005..2006] .)))
+
+;sentence 14 Span:2007..2263
+;Both etomidate and thiopental, at a  concentration of 0.3 mM, selectively
+;attenuated the relaxant response to  acetylcholine in
+;N(G)-nitro-L-arginine-treated segments, but did not affect  relaxations
+;elicited by glyceryl trinitrate or sodium nitroprusside.
+;[2012..2021]:substance:"etomidate"
+;[2026..2036]:substance:"thiopental"
+;[2061..2064]:quantitative-value:"0.3"
+;[2065..2067]:quantitative-units:"mM"
+;[2118..2131]:substance:"acetylcholine"
+;[2135..2156]:substance:"N(G)-nitro-L-arginine"
+;[2219..2238]:substance:"glyceryl trinitrate"
+;[2242..2262]:substance:"sodium nitroprusside"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[2007..2011] Both) (NN:[2012..2021] etomidate)
+          (CC:[2022..2025] and) (NN:[2026..2036] thiopental))
+      (,:[2036..2037] ,)
+      (PP (IN:[2038..2040] at)
+        (NP
+          (NP (DT:[2041..2042] a) (NN:[2044..2057] concentration))
+          (PP (IN:[2058..2060] of)
+            (NP (CD:[2061..2064] 0.3) (NN:[2065..2067] mM))))))
+    (,:[2067..2068] ,)
+    (VP
+      (VP
+        (ADVP (RB:[2069..2080] selectively))
+        (VBD:[2081..2091] attenuated)
+        (NP
+          (NP (DT:[2092..2095] the) (JJ:[2096..2104] relaxant)
+              (NN:[2105..2113] response))
+          (PP (TO:[2114..2116] to)
+            (NP (NN:[2118..2131] acetylcholine))))
+        (PP-LOC (IN:[2132..2134] in)
+          (NP
+            (ADJP (NN:[2135..2156] N-LRB-G-RRB--nitro-L-arginine)
+                  (HYPH:[2156..2157] -) (VBN:[2157..2164] treated))
+            (NNS:[2165..2173] segments))))
+      (,:[2173..2174] ,) (CC:[2175..2178] but)
+      (VP (VBD:[2179..2182] did) (RB:[2183..2186] not)
+        (VP (VB:[2187..2193] affect)
+          (NP
+            (NP (NNS:[2195..2206] relaxations))
+            (VP (VBN:[2207..2215] elicited)
+              (NP (-NONE-:[2215..2215] *))
+              (PP (IN:[2216..2218] by)
+                (NP-LGS
+                  (NP (NN:[2219..2227] glyceryl) (NN:[2228..2238] trinitrate))
+                  (CC:[2239..2241] or)
+                  (NP (NN:[2242..2248] sodium) (NN:[2249..2262] nitroprusside)))))))))
+    (.:[2262..2263] .)))
+
+;sentence 15 Span:2265..2277
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[2265..2276] CONCLUSIONS) (::[2276..2277] :)))
+
+;sentence 16 Span:2278..2540
+;Etomidate and thiopental inhibit the endothelium-derived  hyperpolarizing
+;factor-mediated relaxant response to acetylcholine in the human  renal
+;artery, an effect that appears to be attributable to the cytochrome 
+;P450-inhibiting properties of these anesthetics.
+;[2278..2287]:substance:"Etomidate"
+;[2292..2302]:substance:"thiopental"
+;[2315..2358]:substance:"endothelium-derived  hyperpolarizing factor"
+;[2389..2402]:substance:"acetylcholine"
+;[2480..2496]:cyp450:"cytochrome  P450"
+;[2528..2539]:substance:"anesthetics"
+(SENT
+  (S
+    (NP-SBJ (NN:[2278..2287] Etomidate) (CC:[2288..2291] and)
+            (NN:[2292..2302] thiopental))
+    (VP (VBP:[2303..2310] inhibit)
+      (NP
+        (NP (DT:[2311..2314] the)
+          (ADJP (NN:[2315..2326] endothelium) (HYPH:[2326..2327] -)
+                (VBN:[2327..2334] derived))
+          (ADJP
+            (NML (VBG:[2336..2351] hyperpolarizing) (NN:[2352..2358] factor))
+            (HYPH:[2358..2359] -) (VBN:[2359..2367] mediated))
+          (JJ:[2368..2376] relaxant) (NN:[2377..2385] response))
+        (PP (TO:[2386..2388] to)
+          (NP (NN:[2389..2402] acetylcholine))))
+      (PP-LOC (IN:[2403..2405] in)
+        (NP (DT:[2406..2409] the) (JJ:[2410..2415] human)
+            (JJ:[2417..2422] renal) (NN:[2423..2429] artery)))
+      (,:[2429..2430] ,)
+      (NP-ADV
+        (NP (DT:[2431..2433] an) (NN:[2434..2440] effect))
+        (SBAR
+          (WHNP-1 (WDT:[2441..2445] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[2445..2445] *T*))
+            (VP (VBZ:[2446..2453] appears)
+              (S
+                (NP-SBJ-1 (-NONE-:[2453..2453] *))
+                (VP (TO:[2454..2456] to)
+                  (VP (VB:[2457..2459] be)
+                    (ADJP-PRD (JJ:[2460..2472] attributable)
+                      (PP (TO:[2473..2475] to)
+                        (NP
+                          (NP (DT:[2476..2479] the)
+                            (ADJP
+                              (NML (NN:[2480..2490] cytochrome)
+                                   (NN:[2492..2496] P450))
+                              (HYPH:[2496..2497] -)
+                               (VBG:[2497..2507] inhibiting))
+                            (NNS:[2508..2518] properties))
+                          (PP (IN:[2519..2521] of)
+                            (NP (DT:[2522..2527] these)
+                                (NNS:[2528..2539] anesthetics))))))))))))))
+    (.:[2539..2540] .)))
+
+;section 17 Span:2544..2588
+;PMID: 8669690 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2544..2548] PMID) (::[2548..2549] :) (CD:[2550..2557] 8669690)
+        (NN:[2558..2559] -LSB-) (NNP:[2559..2565] PubMed) (::[2566..2567] -)
+        (NN:[2568..2575] indexed) (IN:[2576..2579] for)
+        (NNP:[2580..2588] MEDLINE-RSB-)))

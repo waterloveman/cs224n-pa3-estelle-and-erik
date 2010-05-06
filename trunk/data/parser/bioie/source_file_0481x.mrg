@@ -1,0 +1,298 @@
+;PMID: 9927037
+;source_file_1367.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..170] = [t:41..170]
+;2)section:[e:174..326] = [t:174..326]
+;3)section:[e:330..436] = [t:330..436]
+;4)sentence:[e:440..596] = [t:440..596]
+;5)sentence:[e:597..776] = [t:597..776]
+;6)sentence:[e:777..977] = [t:777..977]
+;7)sentence:[e:978..1219] = [t:978..1219]
+;8)sentence:[e:1220..1379] = [t:1220..1379]
+;9)section:[e:1383..1427] = [t:1383..1427]
+
+;section 0 Span:0..36
+;Cancer Res  1999 Jan 15;59(2):307-10
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1999)
+        (NNP:[17..20] Jan) (CD:[21..27] 15;59-LRB-) (CD:[27..28] 2)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :307) (NN:[33..34] -)
+        (CD:[34..36] 10)))
+
+;sentence 1 Span:41..170
+;Somatic mutations in the kinase domain of the Met/hepatocyte growth factor 
+;receptor gene in childhood hepatocellular carcinomas.
+;[66..72]:gene-protein:"kinase"
+;[87..90]:gene-rna:"Met"
+;[91..125]:gene-rna:"hepatocyte growth factor  receptor"
+;[134..169]:malignancy:"childhood hepatocellular carcinomas"
+(SENT
+  (NP-HLN
+    (NP (JJ:[41..48] Somatic) (NNS:[49..58] mutations))
+    (PP (IN:[59..61] in)
+      (NP
+        (NP (DT:[62..65] the) (NN:[66..72] kinase) (NN:[73..79] domain))
+        (PP (IN:[80..82] of)
+          (NP (DT:[83..86] the)
+            (NML (NN:[87..90] Met) (SYM:[90..91] /) (NN:[91..101] hepatocyte))
+            (NML (NN:[102..108] growth) (NN:[109..115] factor)
+                 (NN:[117..125] receptor))
+            (NN:[126..130] gene)))))
+    (PP (IN:[131..133] in)
+      (NP (NN:[134..143] childhood) (JJ:[144..158] hepatocellular)
+          (NNS:[159..169] carcinomas)))
+    (.:[169..170] .)))
+
+;section 2 Span:174..326
+;Park WS, Dong SM, Kim SY, Na EY, Shin MS, Pi JH, Kim BJ, Bae JH, Hong YK, Lee
+; KS, Lee SH, Yoo NJ, Jang JJ, Pack S, Zhuang Z, Schmidt L, Zbar B, Lee JY.
+(SEC
+  (FRAG (NNP:[174..178] Park) (NNP:[179..181] WS) (,:[181..182] ,)
+        (NNP:[183..187] Dong) (NNP:[188..190] SM) (,:[190..191] ,)
+        (NNP:[192..195] Kim) (NNP:[196..198] SY) (,:[198..199] ,)
+        (NNP:[200..202] Na) (NNP:[203..205] EY) (,:[205..206] ,)
+        (NNP:[207..211] Shin) (NNP:[212..214] MS) (,:[214..215] ,)
+        (NNP:[216..218] Pi) (NNP:[219..221] JH) (,:[221..222] ,)
+        (NNP:[223..226] Kim) (NNP:[227..229] BJ) (,:[229..230] ,)
+        (NNP:[231..234] Bae) (NNP:[235..237] JH) (,:[237..238] ,)
+        (NNP:[239..243] Hong) (NNP:[244..246] YK) (,:[246..247] ,)
+        (NNP:[248..251] Lee) (NNP:[253..255] KS) (,:[255..256] ,)
+        (NNP:[257..260] Lee) (NNP:[261..263] SH) (,:[263..264] ,)
+        (NNP:[265..268] Yoo) (NNP:[269..271] NJ) (,:[271..272] ,)
+        (NNP:[273..277] Jang) (NNP:[278..280] JJ) (,:[280..281] ,)
+        (NNP:[282..286] Pack) (NNP:[287..289] S,) (NNP:[290..296] Zhuang)
+        (NNP:[297..298] Z) (,:[298..299] ,) (NNP:[300..307] Schmidt)
+        (NNP:[308..310] L,) (NNP:[311..315] Zbar) (NNP:[316..317] B)
+        (,:[317..318] ,) (NNP:[319..322] Lee) (NNP:[323..325] JY)
+        (.:[325..326] .)))
+
+;section 3 Span:330..436
+;Department of Pathology and Cancer Research Institute, Catholic University 
+;Medical College, Seoul, Korea.
+(SEC
+  (FRAG (NNP:[330..340] Department) (IN:[341..343] of)
+        (NNP:[344..353] Pathology) (CC:[354..357] and) (NNP:[358..364] Cancer)
+        (NNP:[365..373] Research) (NNP:[374..383] Institute) (IN:[383..384] ,)
+        (NNP:[385..393] Catholic) (NNP:[394..404] University)
+        (NNP:[406..413] Medical) (NNP:[414..421] College) (,:[421..422] ,)
+        (NNP:[423..428] Seoul) (,:[428..429] ,) (NNP:[430..435] Korea)
+        (.:[435..436] .)))
+
+;sentence 4 Span:440..596
+;The MET protooncogene encodes a transmembrane tyrosine kinase identified as
+;the  receptor of a polypeptide known as hepatocyte growth factor/scatter
+;factor.
+;[444..447]:gene-rna:"MET"
+;[486..501]:gene-protein:"tyrosine kinase"
+;[556..580]:gene-protein:"hepatocyte growth factor"
+;[581..595]:gene-protein:"scatter factor"
+(SENT
+  (S
+    (NP-SBJ (DT:[440..443] The) (NN:[444..447] MET)
+            (NN:[448..461] protooncogene))
+    (VP (VBZ:[462..469] encodes)
+      (NP
+        (NP (DT:[470..471] a) (JJ:[472..485] transmembrane)
+           (NN:[486..494] tyrosine) (NN:[495..501] kinase))
+        (VP (VBN:[502..512] identified)
+          (NP (-NONE-:[512..512] *))
+          (PP (IN:[513..515] as)
+            (NP
+              (NP (DT:[516..519] the) (NN:[521..529] receptor))
+              (PP (IN:[530..532] of)
+                (NP
+                  (NP (DT:[533..534] a) (NN:[535..546] polypeptide))
+                  (VP (VBN:[547..552] known)
+                    (NP (-NONE-:[552..552] *))
+                    (PP (IN:[553..555] as)
+                      (NP
+                        (NML (NN:[556..566] hepatocyte) (NN:[567..573] growth)
+                             (NN:[574..580] factor))
+                        (SYM:[580..581] /)
+                        (NML (NN:[581..588] scatter) (NN:[589..595] factor))))))))))))
+    (.:[595..596] .)))
+
+;sentence 5 Span:597..776
+;We  performed PCR-based single-strand conformational polymorphism and
+;sequencing  analysis of the tyrosine kinase domain of the MET gene (exon
+;15-19) in 75  primary liver cancers.
+;[695..710]:gene-protein:"tyrosine kinase"
+;[725..728]:gene-rna:"MET"
+;[735..745]:variation-location:"exon 15-19"
+;[754..775]:malignancy:"primary liver cancers"
+(SENT
+  (S
+    (NP-SBJ (PRP:[597..599] We))
+    (VP (VBD:[601..610] performed)
+      (NP
+        (NP
+          (ADJP (NN:[611..614] PCR) (HYPH:[614..615] -) (VBN:[615..620] based))
+          (NML (JJ:[621..627] single) (HYPH:[627..628] -) (NN:[628..634] strand))
+          (JJ:[635..649] conformational) (NN:[650..662] polymorphism))
+        (CC:[663..666] and)
+        (NP
+          (NP (NN:[667..677] sequencing) (NN:[679..687] analysis))
+          (PP (IN:[688..690] of)
+            (NP
+              (NP (DT:[691..694] the)
+                 (NN:[695..703] tyrosine) (NN:[704..710] kinase)
+                (NN:[711..717] domain))
+              (PP (IN:[718..720] of)
+                (NP (DT:[721..724] the) (NN:[725..728] MET) (NN:[729..733] gene)))
+              (PRN (-LRB-:[734..735] -LRB-)
+                (NP
+                  (NP
+                    (NML-1 (NN:[735..739] exon))
+                    (CD:[740..742] 15))
+                  (PP (HYPH:[742..743] -)
+                    (NP
+                      (NML-1 (-NONE-:[743..743] *P*))
+                      (CD:[743..745] 19))))
+                (-RRB-:[745..746] -RRB-))))))
+      (PP-LOC (IN:[747..749] in)
+        (NP (CD:[750..752] 75)
+           (JJ:[754..761] primary) (NN:[762..767] liver)
+           (NNS:[768..775] cancers))))
+    (.:[775..776] .)))
+
+;sentence 6 Span:777..977
+;Three missense mutations were detected exclusively in 10  childhood
+;hepatocellular carcinomas (HCCs), while no mutations were detected in  16
+;adult HCCs, 21 cholangiocarcinomas, or 28 hepatoblastomas.
+;[783..801]:variation-type:"missense mutations"
+;[835..870]:malignancy:"childhood hepatocellular carcinomas"
+;[872..876]:malignancy:"HCCs"
+;[919..929]:malignancy:"adult HCCs"
+;[934..953]:malignancy:"cholangiocarcinomas"
+;[961..976]:malignancy:"hepatoblastomas"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[777..782] Three)
+       (JJ:[783..791] missense) (NNS:[792..801] mutations))
+    (VP (VBD:[802..806] were)
+      (VP (VBN:[807..815] detected)
+        (NP-1 (-NONE-:[815..815] *))
+        (ADVP (RB:[816..827] exclusively))
+        (PP (IN:[828..830] in)
+          (NP (CD:[831..833] 10) (NN:[835..844] childhood)
+            (NML
+              (NML (JJ:[845..859] hepatocellular) (NNS:[860..870] carcinomas))
+              (NML (-LRB-:[871..872] -LRB-) (NNS:[872..876] HCCs)
+                   (-RRB-:[876..877] -RRB-)))))
+        (,:[877..878] ,)
+        (SBAR-ADV (IN:[879..884] while)
+          (S
+            (NP-SBJ-2 (DT:[885..887] no) (NNS:[888..897] mutations))
+            (VP (VBD:[898..902] were)
+              (VP (VBN:[903..911] detected)
+                (NP-2 (-NONE-:[911..911] *))
+                (PP-LOC (IN:[912..914] in)
+                  (NP
+                    (NP (CD:[916..918] 16)
+                       (JJ:[919..924] adult) (NNS:[925..929] HCCs))
+                    (,:[929..930] ,)
+                    (NP (CD:[931..933] 21) (NNS:[934..953] cholangiocarcinomas))
+                    (,:[953..954] ,) (CC:[955..957] or)
+                    (NP (CD:[958..960] 28) (NNS:[961..976] hepatoblastomas))))))))))
+    (.:[976..977] .)))
+
+;sentence 7 Span:978..1219
+;The extremely  short incubation period from hepatitis B virus infection to
+;the genesis of  childhood HCC as compared with the adult HCC suggests that
+;there may be an  additional mechanism that accelerates the carcinogenesis of
+;childhood HCC.
+;[1022..1049]:malignancy:"hepatitis B virus infection"
+;[1069..1082]:malignancy:"childhood HCC"
+;[1104..1113]:malignancy:"adult HCC"
+;[1205..1218]:malignancy:"childhood HCC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[978..981] The)
+          (ADJP (RB:[982..991] extremely) (JJ:[993..998] short))
+          (NN:[999..1009] incubation) (NN:[1010..1016] period))
+        (PP (IN:[1017..1021] from)
+          (NP
+            (NML (NN:[1022..1031] hepatitis) (NN:[1032..1033] B))
+            (NN:[1034..1039] virus) (NN:[1040..1049] infection)))
+        (PP (TO:[1050..1052] to)
+          (NP
+            (NP (DT:[1053..1056] the) (NN:[1057..1064] genesis))
+            (PP (IN:[1065..1067] of)
+              (NP (NN:[1069..1078] childhood) (NN:[1079..1082] HCC))))))
+      (SBAR (IN:[1083..1085] as)
+        (S
+          (NP-SBJ-2 (-NONE-:[1085..1085] *))
+          (VP (VBN:[1086..1094] compared)
+            (NP-2 (-NONE-:[1094..1094] *))
+            (PP-CLR (IN:[1095..1099] with)
+              (NP (DT:[1100..1103] the)
+                 (JJ:[1104..1109] adult) (NN:[1110..1113] HCC)))))))
+    (VP (VBZ:[1114..1122] suggests)
+      (SBAR (IN:[1123..1127] that)
+        (S
+          (NP-SBJ (EX:[1128..1133] there))
+          (VP (MD:[1134..1137] may)
+            (VP (VB:[1138..1140] be)
+              (NP-PRD
+                (NP (DT:[1141..1143] an) (JJ:[1145..1155] additional)
+                    (NN:[1156..1165] mechanism))
+                (SBAR
+                  (WHNP-1 (WDT:[1166..1170] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1170..1170] *T*))
+                    (VP (VBZ:[1171..1182] accelerates)
+                      (NP
+                        (NP (DT:[1183..1186] the)
+                            (NN:[1187..1201] carcinogenesis))
+                        (PP (IN:[1202..1204] of)
+                          (NP (NN:[1205..1214] childhood) (NN:[1215..1218] HCC)))))))))))))
+    (.:[1218..1219] .)))
+
+;sentence 8 Span:1220..1379
+;Our  results indicate that mutations of the tyrosine kinase domain of the MET
+;gene  may be involved in the acceleration of the carcinogenesis in childhood
+;HCC.
+;[1264..1279]:gene-protein:"tyrosine kinase"
+;[1294..1297]:gene-rna:"MET"
+;[1365..1378]:malignancy:"childhood HCC"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1220..1223] Our) (NNS:[1225..1232] results))
+    (VP (VBP:[1233..1241] indicate)
+      (SBAR (IN:[1242..1246] that)
+        (S
+          (NP-SBJ-1
+            (NP (NNS:[1247..1256] mutations))
+            (PP (IN:[1257..1259] of)
+              (NP
+                (NP (DT:[1260..1263] the)
+                   (NN:[1264..1272] tyrosine) (NN:[1273..1279] kinase)
+                  (NN:[1280..1286] domain))
+                (PP (IN:[1287..1289] of)
+                  (NP (DT:[1290..1293] the) (NN:[1294..1297] MET)
+                      (NN:[1298..1302] gene))))))
+          (VP (MD:[1304..1307] may)
+            (VP (VB:[1308..1310] be)
+              (VP (VBN:[1311..1319] involved)
+                (NP-1 (-NONE-:[1319..1319] *))
+                (PP-CLR (IN:[1320..1322] in)
+                  (NP
+                    (NP (DT:[1323..1326] the) (NN:[1327..1339] acceleration))
+                    (PP (IN:[1340..1342] of)
+                      (NP (DT:[1343..1346] the) (NN:[1347..1361] carcinogenesis)))
+                    (PP (IN:[1362..1364] in)
+                      (NP (NN:[1365..1374] childhood) (NN:[1375..1378] HCC)))))))))))
+    (.:[1378..1379] .)))
+
+;section 9 Span:1383..1427
+;PMID: 9927037 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1383..1387] PMID) (::[1387..1388] :) (CD:[1389..1396] 9927037)
+        (-LRB-:[1397..1398] -LSB-) (NNP:[1398..1404] PubMed)
+        (HYPH:[1405..1406] -) (NN:[1407..1414] indexed) (IN:[1415..1418] for)
+        (NNP:[1419..1426] MEDLINE) (-RRB-:[1426..1427] -RSB-)))

@@ -1,0 +1,400 @@
+;PMID: 3977952
+;source_file_885.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..141] = [t:50..141]
+;2)section:[e:145..190] = [t:145..189]
+;3)sentence:[e:194..406] = [t:194..406]
+;4)sentence:[e:407..528] = [t:407..528]
+;5)sentence:[e:529..651] = [t:529..651]
+;6)sentence:[e:652..718] = [t:652..718]
+;7)sentence:[e:719..837] = [t:719..837]
+;8)sentence:[e:838..946] = [t:838..946]
+;9)sentence:[e:947..1139] = [t:947..1139]
+;10)sentence:[e:1140..1300] = [t:1140..1300]
+;11)sentence:[e:1301..1455] = [t:1301..1455]
+;12)sentence:[e:1456..1574] = [t:1456..1574]
+;13)section:[e:1578..1622] = [t:1578..1621]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:145..190][t:145..189]
+;ERROR_Section end mismatch[e:1578..1622][t:1578..1621]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[189..190] .
+;ERROR_Token in entity file but not tree[1621..1622] ]
+
+;section 0 Span:0..44
+;Biochem Pharmacol. 1985 Mar 15;34(6):755-62.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1985) (NNP:[24..27] Mar) (CD:[28..34] 15;34-LRB-)
+        (CD:[34..36] 6-RRB-) (CD:[36..40] :755) (::[40..41] -) (CD:[41..43] 62)
+        (.:[43..44] .)))
+
+;sentence 1 Span:50..141
+;Effect of benzo[a]pyrene on DNA synthesis and DNA polymerase activity of rat 
+;liver nuclei.
+;[60..74]:substance:"benzo[a]pyrene"
+;[78..81]:substance:"DNA"
+;[96..110]:substance:"DNA polymerase"
+(SENT
+  (NP-HLN
+    (NP (NN:[50..56] Effect))
+    (PP (IN:[57..59] of)
+      (NP (NN:[60..74] benzo-LSB-a-RSB-pyrene)))
+    (PP (IN:[75..77] on)
+      (NP
+        (NP
+          (NP (NN:[78..81] DNA) (NN:[82..91] synthesis))
+          (CC:[92..95] and)
+          (NP
+             (NN:[96..99] DNA) (NN:[100..110] polymerase)
+            (NN:[111..119] activity)))
+        (PP (IN:[120..122] of)
+          (NP (NN:[123..126] rat) (NN:[128..133] liver) (NNS:[134..140] nuclei)))))
+    (.:[140..141] .)))
+
+;section 2 Span:145..189
+;Salazar I, Tarrago-Litvak L, Litvak S, Gil L
+(SEC
+  (FRAG (NNP:[145..152] Salazar) (NNP:[153..154] I) (,:[154..155] ,)
+        (NNP:[156..163] Tarrago) (::[163..164] -) (NNP:[164..170] Litvak)
+        (NNP:[171..172] L) (,:[172..173] ,) (NNP:[174..180] Litvak)
+        (NNP:[181..182] S) (,:[182..183] ,) (NNP:[184..187] Gil)
+        (NNP:[188..189] L)))
+
+(ORPH .)
+
+;sentence 3 Span:194..406
+;When benzo[a]pyrene (B[a]P) was administered intraperitoneally to rats 48 hr 
+;before they were killed, the DNA-synthesizing capability of isolated rat
+;liver  nuclei was decreased as compared with control animals.
+;[199..213]:substance:"benzo[a]pyrene"
+;[215..220]:substance:"B[a]P"
+;[265..267]:quantitative-value:"48"
+;[268..270]:quantitative-units:"hr"
+;[301..304]:substance:"DNA"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-3 (WRB:[194..198] When))
+      (S
+        (NP-SBJ-2
+          (NP (NN:[199..213] benzo-LSB-a-RSB-pyrene))
+          (NP (-LRB-:[214..215] -LRB-) (NN:[215..220] B-LSB-a-RSB-P)
+              (-RRB-:[220..221] -RRB-)))
+        (VP (VBD:[222..225] was)
+          (VP (VBN:[226..238] administered)
+            (NP-2 (-NONE-:[238..238] *))
+            (ADVP (RB:[239..256] intraperitoneally))
+            (PP-CLR (TO:[257..259] to)
+              (NP (NNS:[260..264] rats)))
+            (SBAR-TMP
+              (NP-ADV (CD:[265..267] 48) (NN:[268..270] hr))
+              (IN:[272..278] before)
+              (S
+                (NP-SBJ-4 (PRP:[279..283] they))
+                (VP (VBD:[284..288] were)
+                  (VP (VBN:[289..295] killed)
+                    (NP-4 (-NONE-:[295..295] *))))))
+            (ADVP-TMP-3 (-NONE-:[295..295] *T*))))))
+    (,:[295..296] ,)
+    (NP-SBJ-1
+      (NP (DT:[297..300] the)
+        (ADJP (NN:[301..304] DNA) (HYPH:[304..305] -)
+              (VBG:[305..317] synthesizing))
+        (NN:[318..328] capability))
+      (PP (IN:[329..331] of)
+        (NP (VBN:[332..340] isolated) (NN:[341..344] rat) (NN:[345..350] liver)
+            (NNS:[352..358] nuclei))))
+    (VP (VBD:[359..362] was)
+      (VP (VBN:[363..372] decreased)
+        (NP-1 (-NONE-:[372..372] *))
+        (PP (IN:[373..375] as)
+          (S-NOM
+            (NP-SBJ-5 (-NONE-:[375..375] *))
+            (VP (VBN:[376..384] compared)
+              (NP-5 (-NONE-:[384..384] *))
+              (PP-CLR (IN:[385..389] with)
+                (NP (NN:[390..397] control) (NNS:[398..405] animals))))))))
+    (.:[405..406] .)))
+;ERROR_Orphan Text from Tree File[189..194] .
+
+;sentence 4 Span:407..528
+;B[a]P also inhibited in  vitro DNA synthesis in nuclei purified from control
+;animals; this effect was  enhanced by NADPH.
+;[407..412]:substance:"B[a]P"
+;[438..441]:substance:"DNA"
+;[522..527]:substance:"NADPH"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[407..412] B-LSB-a-RSB-P))
+      (VP
+        (ADVP (RB:[413..417] also))
+        (VBD:[418..427] inhibited)
+        (NP
+          (ADJP (FW:[428..430] in) (FW:[432..437] vitro))
+          (NN:[438..441] DNA) (NN:[442..451] synthesis))
+        (PP-LOC (IN:[452..454] in)
+          (NP
+            (NP (NNS:[455..461] nuclei))
+            (VP (VBN:[462..470] purified)
+              (NP (-NONE-:[470..470] *))
+              (PP (IN:[471..475] from)
+                (NP (NN:[476..483] control) (NNS:[484..491] animals))))))))
+    (::[491..492] ;)
+    (S
+      (NP-SBJ-1 (DT:[493..497] this) (NN:[498..504] effect))
+      (VP (VBD:[505..508] was)
+        (VP (VBN:[510..518] enhanced)
+          (NP-1 (-NONE-:[518..518] *))
+          (PP (IN:[519..521] by)
+            (NP (NN:[522..527] NADPH))))))
+    (.:[527..528] .)))
+
+;sentence 5 Span:529..651
+;DNA polymerases solubilized from purified nuclei of  B[a]P-treated animals
+;were less active than those of control animals.
+;[529..544]:substance:"DNA polymerases"
+;[582..587]:substance:"B[a]P"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[529..532] DNA) (NNS:[533..544] polymerases))
+      (VP (VBN:[545..556] solubilized)
+        (NP (-NONE-:[556..556] *))
+        (PP (IN:[557..561] from)
+          (VP
+            (NP (VBN:[562..570] purified) (NNS:[571..577] nuclei))
+            (PP (IN:[578..580] of)
+              (NP
+                (ADJP (NN:[582..587] B-LSB-a-RSB-P) (HYPH:[587..588] -)
+                      (VBN:[588..595] treated))
+                (NNS:[596..603] animals)))))))
+    (VP (VBD:[604..608] were)
+      (ADJP-PRD
+        (ADJP (RBR:[609..613] less) (JJ:[614..620] active))
+        (PP (IN:[621..625] than)
+          (NP
+            (NP (DT:[626..631] those))
+            (PP (IN:[632..634] of)
+              (NP (NN:[635..642] control) (NNS:[643..650] animals)))))))
+    (.:[650..651] .)))
+
+;sentence 6 Span:652..718
+;DNA  polymerase alpha was more inhibited than DNA polymerase beta.
+;[652..673]:substance:"DNA  polymerase alpha"
+;[698..717]:substance:"DNA polymerase beta"
+(SENT
+  (S
+    (NP-SBJ (NN:[652..655] DNA) (NN:[657..667] polymerase)
+            (SYM:[668..673] alpha))
+    (VP (VBD:[674..677] was)
+      (ADJP-PRD
+        (ADJP (RBR:[678..682] more) (JJ:[683..692] inhibited))
+        (PP (IN:[693..697] than)
+          (NP (NN:[698..701] DNA) (NN:[702..712] polymerase)
+              (SYM:[713..717] beta)))))
+    (.:[717..718] .)))
+
+;sentence 7 Span:719..837
+;Purified rat liver  nuclei devoid of cytoplasmic contamination possess an
+;NADPH-dependent B[a]P  hydroxylase activity.
+;[793..798]:substance:"NADPH"
+;[809..827]:substance:"B[a]P  hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (VBN:[719..727] Purified) (NN:[728..731] rat) (NN:[732..737] liver)
+          (NNS:[739..745] nuclei))
+      (ADJP (JJ:[746..752] devoid)
+        (PP (IN:[753..755] of)
+          (NP (JJ:[756..767] cytoplasmic) (NN:[768..781] contamination)))))
+    (VP (VBP:[782..789] possess)
+      (NP (DT:[790..792] an)
+        (ADJP (NN:[793..798] NADPH) (HYPH:[798..799] -)
+              (JJ:[799..808] dependent))
+        (NML (NN:[809..814] B-LSB-a-RSB-P) (NN:[816..827] hydroxylase))
+        (NN:[828..836] activity)))
+    (.:[836..837] .)))
+
+;sentence 8 Span:838..946
+;The observed inhibition of DNA synthesis in nuclei  isolated from
+;B[a]P-treated rats was increased by NADPH.
+;[865..868]:substance:"DNA"
+;[904..909]:substance:"B[a]P"
+;[940..945]:substance:"NADPH"
+(SENT
+  (NP-SBJ-1
+    (NP (DT:[838..841] The) (VBN:[842..850] observed) (NN:[851..861] inhibition))
+    (PP (IN:[862..864] of)
+      (NP (NN:[865..868] DNA) (NN:[869..878] synthesis)))
+    (PP-LOC (IN:[879..881] in)
+      (NP
+        (NP (NNS:[882..888] nuclei))
+        (VP (VBN:[890..898] isolated)
+          (NP (-NONE-:[898..898] *))
+          (PP (IN:[899..903] from)
+            (NP
+              (ADJP (NN:[904..909] B-LSB-a-RSB-P) (HYPH:[909..910] -)
+                    (VBN:[910..917] treated))
+              (NNS:[918..922] rats)))))))
+  (VP (VBD:[923..926] was)
+    (VP (VBN:[927..936] increased)
+      (NP-1 (-NONE-:[936..936] *))
+      (PP-MNR (IN:[937..939] by)
+        (NP (NN:[940..945] NADPH)))))
+  (.:[945..946] .))
+;ERROR_Sentence has multiple children (TB Error):[838..946]::NP:VP:.:
+
+;sentence 9 Span:947..1139
+;Moreover, there was an  increased inhibition of DNA polymerase activity by
+;nuclear membranes obtained  from B[a]P-treated animals when the incubations
+;were performed in the presence  of NADPH.
+;[995..1009]:substance:"DNA polymerase"
+;[1055..1060]:substance:"B[a]P"
+;[1133..1138]:substance:"NADPH"
+(SENT
+  (S
+    (ADVP (RB:[947..955] Moreover))
+    (,:[955..956] ,)
+    (NP-SBJ (EX:[957..962] there))
+    (VP (VBD:[963..966] was)
+      (NP-PRD
+        (NP (DT:[967..969] an) (VBN:[971..980] increased)
+            (NN:[981..991] inhibition))
+        (PP (IN:[992..994] of)
+          (NP
+            (NML (NN:[995..998] DNA) (NN:[999..1009] polymerase))
+            (NN:[1010..1018] activity)))
+        (PP-MNR (IN:[1019..1021] by)
+          (NP
+            (NP (JJ:[1022..1029] nuclear) (NNS:[1030..1039] membranes))
+            (VP (VBN:[1040..1048] obtained)
+              (NP (-NONE-:[1048..1048] *))
+              (PP (IN:[1050..1054] from)
+                (NP
+                  (ADJP (NN:[1055..1060] B-LSB-a-RSB-P) (HYPH:[1060..1061] -)
+                        (VBN:[1061..1068] treated))
+                  (NNS:[1069..1076] animals)))))))
+      (SBAR-TMP
+        (WHADVP-2 (WRB:[1077..1081] when))
+        (S
+          (NP-SBJ-1 (DT:[1082..1085] the) (NNS:[1086..1097] incubations))
+          (VP (VBD:[1098..1102] were)
+            (VP (VBN:[1103..1112] performed)
+              (NP-1 (-NONE-:[1112..1112] *))
+              (PP-LOC (IN:[1113..1115] in)
+                (NP
+                  (NP (DT:[1116..1119] the) (NN:[1120..1128] presence))
+                  (PP (IN:[1130..1132] of)
+                    (NP (NN:[1133..1138] NADPH)))))
+              (ADVP-TMP-2 (-NONE-:[1138..1138] *T*)))))))
+    (.:[1138..1139] .)))
+
+;sentence 10 Span:1140..1300
+;Also, the derivative B[a]P-trans-9,10-dihydrodiol was a potent  inhibitor of
+;DNA polymerase alpha under conditions where DNA polymerase beta was  less
+;affected.
+;[1161..1189]:substance:"B[a]P-trans-9,10-dihydrodiol"
+;[1204..1213]:substance:"inhibitor"
+;[1217..1237]:substance:"DNA polymerase alpha"
+;[1261..1280]:substance:"DNA polymerase beta"
+(SENT
+  (S
+    (ADVP (RB:[1140..1144] Also))
+    (,:[1144..1145] ,)
+    (NP-SBJ (DT:[1146..1149] the) (NN:[1150..1160] derivative)
+            (NN:[1161..1189] B-LSB-a-RSB-P-trans-9,10-dihydrodiol))
+    (VP (VBD:[1190..1193] was)
+      (NP-PRD
+        (NP (DT:[1194..1195] a) (JJ:[1196..1202] potent)
+            (NN:[1204..1213] inhibitor))
+        (PP (IN:[1214..1216] of)
+          (NP (NN:[1217..1220] DNA) (NN:[1221..1231] polymerase)
+              (SYM:[1232..1237] alpha)))
+        (PP (IN:[1238..1243] under)
+          (NP
+            (NP (NNS:[1244..1254] conditions))
+            (SBAR
+              (WHADVP-1 (WRB:[1255..1260] where))
+              (S
+                (NP-SBJ (NN:[1261..1264] DNA) (NN:[1265..1275] polymerase)
+                        (SYM:[1276..1280] beta))
+                (VP (VBD:[1281..1284] was)
+                  (ADJP-PRD (RBR:[1286..1290] less) (JJ:[1291..1299] affected))
+                  (ADVP-1 (-NONE-:[1299..1299] *T*)))))))))
+    (.:[1299..1300] .)))
+
+;sentence 11 Span:1301..1455
+;These results suggest that nuclear B[a]P hydroxylase might be  involved in
+;the inhibition of DNA synthesis probably at the level of DNA  polymerase
+;alpha.
+;[1336..1353]:substance:"B[a]P hydroxylase"
+;[1394..1397]:substance:"DNA"
+;[1433..1454]:substance:"DNA  polymerase alpha"
+(SENT
+  (S
+    (NP-SBJ (DT:[1301..1306] These) (NNS:[1307..1314] results))
+    (VP (VBP:[1315..1322] suggest)
+      (SBAR (IN:[1323..1327] that)
+        (S
+          (NP-SBJ-1 (JJ:[1328..1335] nuclear)
+             (NN:[1336..1341] B-LSB-a-RSB-P) (NN:[1342..1353] hydroxylase))
+          (VP (MD:[1354..1359] might)
+            (VP (VB:[1360..1362] be)
+              (VP (VBN:[1364..1372] involved)
+                (NP-1 (-NONE-:[1372..1372] *))
+                (PP-CLR (IN:[1373..1375] in)
+                  (NP
+                    (NP (DT:[1376..1379] the) (NN:[1380..1390] inhibition))
+                    (PP (IN:[1391..1393] of)
+                      (NP (NN:[1394..1397] DNA) (NN:[1398..1407] synthesis)))))
+                (PP-LOC
+                  (ADVP (RB:[1408..1416] probably))
+                  (IN:[1417..1419] at)
+                  (NP
+                    (NP (DT:[1420..1423] the) (NN:[1424..1429] level))
+                    (PP (IN:[1430..1432] of)
+                      (NP (NN:[1433..1436] DNA) (NN:[1438..1448] polymerase)
+                          (SYM:[1449..1454] alpha)))))))))))
+    (.:[1454..1455] .)))
+
+;sentence 12 Span:1456..1574
+;As in the in vivo studies, the nuclear polymerase most  affected by the
+;hydrocarbon in vitro was DNA polymerase alpha.
+;[1495..1505]:substance:"polymerase"
+;[1528..1539]:substance:"hydrocarbon"
+;[1553..1573]:substance:"DNA polymerase alpha"
+(SENT
+  (S
+    (PP (IN:[1456..1458] As)
+      (PP-LOC (IN:[1459..1461] in)
+        (NP (DT:[1462..1465] the)
+          (ADJP (FW:[1466..1468] in) (FW:[1469..1473] vivo))
+          (NNS:[1474..1481] studies))))
+    (,:[1481..1482] ,)
+    (NP-SBJ
+      (NP (DT:[1483..1486] the) (JJ:[1487..1494] nuclear)
+          (NN:[1495..1505] polymerase))
+      (ADJP (RBS:[1506..1510] most) (JJ:[1512..1520] affected)
+        (PP (IN:[1521..1523] by)
+          (NP (DT:[1524..1527] the) (NN:[1528..1539] hydrocarbon)))
+        (ADVP (FW:[1540..1542] in) (FW:[1543..1548] vitro))))
+    (VP (VBD:[1549..1552] was)
+      (NP-PRD (NN:[1553..1556] DNA) (NN:[1557..1567] polymerase)
+              (SYM:[1568..1573] alpha)))
+    (.:[1573..1574] .)))
+
+;section 13 Span:1578..1621
+;PMID: 3977952 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1578..1582] PMID) (::[1582..1583] :) (CD:[1584..1591] 3977952)
+        (-LRB-:[1592..1593] -LSB-) (NNP:[1593..1599] PubMed) (::[1600..1601] -)
+        (VBN:[1602..1609] indexed) (IN:[1610..1613] for)
+        (NNP:[1614..1621] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1621..EOF] ]
+
+(ORPH -RSB-)

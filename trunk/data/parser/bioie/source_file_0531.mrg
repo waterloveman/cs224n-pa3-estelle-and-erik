@@ -1,0 +1,498 @@
+;PMID: 10725304
+;source_file_978.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..145] = [t:46..145]
+;2)section:[e:149..262] = [t:149..262]
+;3)section:[e:266..396] = [t:266..396]
+;4)sentence:[e:400..480] = [t:400..480]
+;5)sentence:[e:482..648] = [t:482..648]
+;6)sentence:[e:649..749] = [t:649..749]
+;7)sentence:[e:750..865] = [t:750..865]
+;8)sentence:[e:867..956] = [t:867..956]
+;9)sentence:[e:957..1119] = [t:957..1119]
+;10)sentence:[e:1120..1249] = [t:1120..1249]
+;11)sentence:[e:1250..1377] = [t:1250..1377]
+;12)sentence:[e:1378..1511] = [t:1378..1511]
+;13)sentence:[e:1512..1711] = [t:1512..1711]
+;14)sentence:[e:1712..1917] = [t:1712..1917]
+;15)sentence:[e:1918..2016] = [t:1918..2016]
+;16)section:[e:2020..2065] = [t:2020..2065]
+
+;section 0 Span:0..40
+;Drug Metab Dispos. 2000 Apr;28(4):383-5.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 2000) (CC:[24..31] Apr;28-LRB-)
+        (CD:[31..33] 4-RRB-) (CD:[33..37] :383) (::[37..39] -5) (.:[39..40] .)))
+
+;sentence 1 Span:46..145
+;Oxidative metabolism of bupivacaine into pipecolylxylidine in humans is
+;mainly  catalyzed by CYP3A.
+;[70..81]:substance:"bupivacaine"
+;[87..104]:substance:"pipecolylxylidine"
+;[139..144]:cyp450:"CYP3A"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (JJ:[46..55] Oxidative) (NN:[56..66] metabolism))
+      (PP (IN:[67..69] of)
+        (NP (NN:[70..81] bupivacaine)))
+      (PP (IN:[82..86] into)
+        (NP (NN:[87..104] pipecolylxylidine)))
+      (PP-LOC (IN:[105..107] in)
+        (NP (NNS:[108..114] humans))))
+    (VP (VBZ:[115..117] is)
+      (ADVP (RB:[118..124] mainly))
+      (VP (VBN:[126..135] catalyzed)
+        (NP-1 (-NONE-:[135..135] *))
+        (PP (IN:[136..138] by)
+          (NP-LGS (NN:[139..144] CYP3A)))))
+    (.:[144..145] .)))
+
+;section 2 Span:149..262
+;Gantenbein M, Attolini L, Bruguerolle B, Villard PH, Puyoou F, Durand A, 
+;Lacarelle B, Hardwigsen J, Le-Treut YP.
+(SEC
+  (FRAG (NNP:[149..159] Gantenbein) (NNP:[160..162] M,)
+        (NNP:[163..171] Attolini) (NNP:[172..174] L,)
+        (NNP:[175..186] Bruguerolle) (NNP:[187..188] B) (,:[188..189] ,)
+        (NNP:[190..197] Villard) (NNP:[198..200] PH) (,:[200..201] ,)
+        (NNP:[202..208] Puyoou) (NNP:[209..210] F) (,:[210..211] ,)
+        (DT:[212..218] Durand) (NNP:[219..220] A) (,:[220..221] ,)
+        (NNP:[223..232] Lacarelle) (NNP:[233..234] B) (,:[234..235] ,)
+        (NNP:[236..246] Hardwigsen) (NNP:[247..249] J,) (NNP:[250..252] Le)
+        (HYPH:[252..253] -) (NNP:[253..258] Treut) (NNP:[259..261] YP)
+        (.:[261..262] .)))
+
+;section 3 Span:266..396
+;Laboratory of Medical Pharmacology (EA2199), School of Medicine, School of 
+;Pharmacy, Universite Mediterranee, Marseilles, France.
+(SEC
+  (FRAG (NN:[266..276] Laboratory) (IN:[277..279] of) (NNP:[280..287] Medical)
+        (NNP:[288..300] Pharmacology) (-LRB-:[301..302] -LRB-)
+        (NNP:[302..308] EA2199) (-RRB-:[308..309] -RRB-) (,:[309..310] ,)
+        (NNP:[311..317] School) (IN:[318..320] of) (NNP:[321..329] Medicine)
+        (,:[329..330] ,) (NNP:[331..337] School) (IN:[338..340] of)
+        (NNP:[342..350] Pharmacy) (,:[350..351] ,) (NNP:[352..362] Universite)
+        (NNP:[363..375] Mediterranee) (,:[375..376] ,)
+        (NNP:[377..387] Marseilles) (,:[387..388] ,) (NNP:[389..395] France)
+        (.:[395..396] .)))
+
+;sentence 4 Span:400..480
+;Bupivacaine is used to provide prolonged anesthesia and postoperative
+;analgesia.
+;[400..411]:substance:"Bupivacaine"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[400..411] Bupivacaine))
+    (VP (VBZ:[412..414] is)
+      (VP (VBN:[415..419] used)
+        (NP-1 (-NONE-:[419..419] *))
+        (S-ADV
+          (NP-SBJ (-NONE-:[419..419] *))
+          (VP (TO:[420..422] to)
+            (VP (VB:[423..430] provide)
+              (NP
+                (NP (VBN:[431..440] prolonged) (NN:[441..451] anesthesia))
+                (CC:[452..455] and)
+                (NP (JJ:[456..469] postoperative) (NN:[470..479] analgesia))))))))
+    (.:[479..480] .)))
+
+;sentence 5 Span:482..648
+;The human cytochrome P450 (CYP) involved in bupivacaine degradation into 
+;pipecolylxylidine (PPX), its major metabolite, has, to our knowledge, never
+;been  described.
+;[492..507]:cyp450:"cytochrome P450"
+;[509..512]:cyp450:"CYP"
+;[526..537]:substance:"bupivacaine"
+;[556..573]:substance:"pipecolylxylidine"
+;[575..578]:substance:"PPX"
+;[591..601]:substance:"metabolite"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[482..485] The) (JJ:[486..491] human)
+        (NML
+          (NML (NN:[492..502] cytochrome) (NN:[503..507] P450))
+          (NML (-LRB-:[508..509] -LRB-) (NN:[509..512] CYP)
+               (-RRB-:[512..513] -RRB-))))
+      (VP (VBN:[514..522] involved)
+        (NP (-NONE-:[522..522] *))
+        (PP-CLR (IN:[523..525] in)
+          (NP
+            (NP (NN:[526..537] bupivacaine) (NN:[538..549] degradation))
+            (PP (IN:[550..554] into)
+              (NP
+                (NP
+                  (NP (NN:[556..573] pipecolylxylidine))
+                  (NP (-LRB-:[574..575] -LRB-) (NN:[575..578] PPX)
+                      (-RRB-:[578..579] -RRB-)))
+                (,:[579..580] ,)
+                (NP (PRP$:[581..584] its) (JJ:[585..590] major)
+                    (NN:[591..601] metabolite))))))))
+    (,:[601..602] ,)
+    (VP (VBZ:[603..606] has) (,:[606..607] ,)
+      (PP (TO:[608..610] to)
+        (NP (PRP$:[611..614] our) (NN:[615..624] knowledge)))
+      (,:[624..625] ,)
+      (ADVP-TMP (RB:[626..631] never))
+      (VP (VBN:[632..636] been)
+        (VP (VBN:[638..647] described)
+          (NP-1 (-NONE-:[647..647] *)))))
+    (.:[647..648] .)))
+
+;sentence 6 Span:649..749
+;Microsome samples were prepared from six human livers and incubated  in the
+;presence of bupivacaine.
+;[737..748]:substance:"bupivacaine"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[649..658] Microsome) (NNS:[659..666] samples))
+    (VP (VBD:[667..671] were)
+      (VP
+        (VP (VBN:[672..680] prepared)
+          (NP-1 (-NONE-:[680..680] *))
+          (PP (IN:[681..685] from)
+            (NP (CD:[686..689] six) (JJ:[690..695] human)
+                (NNS:[696..702] livers))))
+        (CC:[703..706] and)
+        (VP (VBN:[707..716] incubated)
+          (NP-1 (-NONE-:[716..716] *))
+          (PP (IN:[718..720] in)
+            (NP
+              (NP (DT:[721..724] the) (NN:[725..733] presence))
+              (PP (IN:[734..736] of)
+                (NP (NN:[737..748] bupivacaine))))))))
+    (.:[748..749] .)))
+
+;sentence 7 Span:750..865
+;The concentrations of PPX in the microsomal  suspensions were assessed, and
+;K(m) and V(max) values were calculated.
+;[772..775]:substance:"PPX"
+;[826..830]:quantitative-name:"K(m)"
+;[835..841]:quantitative-name:"V(max)"
+(SENT
+  (S
+    (S
+      (NP-SBJ-3
+        (NP (DT:[750..753] The) (NNS:[754..768] concentrations))
+        (PP (IN:[769..771] of)
+          (NP (NN:[772..775] PPX)))
+        (PP-LOC (IN:[776..778] in)
+          (NP (DT:[779..782] the) (JJ:[783..793] microsomal)
+              (NNS:[795..806] suspensions))))
+      (VP (VBD:[807..811] were)
+        (VP (VBN:[812..820] assessed)
+          (NP-3 (-NONE-:[820..820] *)))))
+    (,:[820..821] ,) (CC:[822..825] and)
+    (S
+      (NP-SBJ-2
+        (NP (NN:[826..830] K-LRB-m-RRB-)
+          (NML-1 (-NONE-:[830..830] *P*)))
+        (CC:[831..834] and)
+        (NP (NN:[835..841] V-LRB-max-RRB-)
+          (NML-1 (NNS:[842..848] values))))
+      (VP (VBD:[849..853] were)
+        (VP (VBN:[854..864] calculated)
+          (NP-2 (-NONE-:[864..864] *)))))
+    (.:[864..865] .)))
+
+;sentence 8 Span:867..956
+;Bupivacaine incubations were then performed with specific CYP substrates and 
+;inhibitors.
+;[867..878]:substance:"Bupivacaine"
+;[925..928]:cyp450:"CYP"
+;[929..939]:substance:"substrates"
+;[945..955]:substance:"inhibitors"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[867..878] Bupivacaine) (NNS:[879..890] incubations))
+    (VP (VBD:[891..895] were)
+      (ADVP-TMP (RB:[896..900] then))
+      (VP (VBN:[901..910] performed)
+        (NP-2 (-NONE-:[910..910] *))
+        (PP (IN:[911..915] with)
+          (NP (JJ:[916..924] specific)
+            (NML
+              (NML
+                (NML-1 (NN:[925..928] CYP))
+                (NNS:[929..939] substrates))
+              (CC:[940..943] and)
+              (NML
+                (NML-1 (-NONE-:[943..943] *P*))
+                (NNS:[945..955] inhibitors)))))))
+    (.:[955..956] .)))
+
+;sentence 9 Span:957..1119
+;For each sample of hepatic microsomes, the correlation between the  rate of
+;PPX formation and the corresponding erythromycin N-demethylase activity  was
+;analyzed.
+;[1033..1036]:substance:"PPX"
+;[1069..1095]:substance:"erythromycin N-demethylase"
+(SENT
+  (S
+    (PP (IN:[957..960] For)
+      (NP
+        (NP (DT:[961..965] each) (NN:[966..972] sample))
+        (PP (IN:[973..975] of)
+          (NP (JJ:[976..983] hepatic) (NNS:[984..994] microsomes)))))
+    (,:[994..995] ,)
+    (NP-SBJ-1
+      (NP (DT:[996..999] the) (NN:[1000..1011] correlation))
+      (PP (IN:[1012..1019] between)
+        (NP
+          (NP
+            (NP (DT:[1020..1023] the) (NN:[1025..1029] rate))
+            (PP (IN:[1030..1032] of)
+              (NP (NN:[1033..1036] PPX) (NN:[1037..1046] formation))))
+          (CC:[1047..1050] and)
+          (NP (DT:[1051..1054] the) (VBG:[1055..1068] corresponding)
+            (NML (NN:[1069..1081] erythromycin) (NN:[1082..1095] N-demethylase))
+            (NN:[1096..1104] activity)))))
+    (VP (VBD:[1106..1109] was)
+      (VP (VBN:[1110..1118] analyzed)
+        (NP-1 (-NONE-:[1118..1118] *))))
+    (.:[1118..1119] .)))
+
+;sentence 10 Span:1120..1249
+;Finally, an immunoinhibition study using an anti-rabbit CYP3A6  antibody and
+;assays with cDNA-expressed human CYP were conducted.
+;[1164..1192]:substance:"anti-rabbit CYP3A6  antibody"
+;[1209..1213]:substance:"cDNA"
+;[1230..1233]:cyp450:"CYP"
+(SENT
+  (S
+    (ADVP (RB:[1120..1127] Finally))
+    (,:[1127..1128] ,)
+    (NP-SBJ-1
+      (NP (DT:[1129..1131] an) (NN:[1132..1148] immunoinhibition)
+          (NN:[1149..1154] study))
+      (VP (VBG:[1155..1160] using)
+        (NP
+          (NP (DT:[1161..1163] an)
+            
+            (ADJP (AFX:[1164..1168] anti) (HYPH:[1168..1169] -)
+                  (NN:[1169..1175] rabbit) (NN:[1176..1182] CYP3A6))
+            (NN:[1184..1192] antibody))
+          (CC:[1193..1196] and)
+          (NP
+            (NP (NNS:[1197..1203] assays))
+            (PP (IN:[1204..1208] with)
+              (NP
+                (ADJP (NN:[1209..1213] cDNA) (HYPH:[1213..1214] -)
+                      (VBN:[1214..1223] expressed))
+                (JJ:[1224..1229] human) (NN:[1230..1233] CYP)))))))
+    (VP (VBD:[1234..1238] were)
+      (VP (VBN:[1239..1248] conducted)
+        (NP-1 (-NONE-:[1248..1248] *))))
+    (.:[1248..1249] .)))
+
+;sentence 11 Span:1250..1377
+;The apparent  K(m) and V(max) values of bupivacaine were, respectively, 125
+;microM and 4.78  nmol/min/mg of microsomal protein.
+;[1264..1268]:quantitative-name:"K(m)"
+;[1273..1279]:quantitative-name:"V(max)"
+;[1290..1301]:substance:"bupivacaine"
+;[1322..1325]:quantitative-value:"125"
+;[1326..1332]:quantitative-units:"microM"
+;[1337..1341]:quantitative-value:"4.78"
+;[1343..1354]:quantitative-units:"nmol/min/mg"
+;[1369..1376]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1250..1253] The)
+        (NML
+          (NML
+            (ADJP-4 (JJ:[1254..1262] apparent))
+            (NN:[1264..1268] K-LRB-m-RRB-)
+            (NML-3 (-NONE-:[1268..1268] *P*)))
+          (CC:[1269..1272] and)
+          (NML
+            (ADJP-4 (-NONE-:[1272..1272] *P*))
+            (NN:[1273..1279] V-LRB-max-RRB-)
+            (NML-3 (NNS:[1280..1286] values)))))
+      (PP (IN:[1287..1289] of)
+        (NP (NN:[1290..1301] bupivacaine))))
+    (VP (VBD:[1302..1306] were) (,:[1306..1307] ,)
+      (ADVP (RB:[1308..1320] respectively))
+      (,:[1320..1321] ,)
+      (NP-PRD
+        (NP
+          (NP (CD:[1322..1325] 125) (NN:[1326..1332] microM))
+          (CC:[1333..1336] and)
+          (NP (CD:[1337..1341] 4.78) (NN:[1343..1347] nmol)))
+        (PP (SYM:[1347..1348] /)
+          (NP (NN:[1348..1351] min)))
+        (PP (SYM:[1351..1352] /)
+          (NP
+            (NP (NN:[1352..1354] mg))
+            (PP (IN:[1355..1357] of)
+              (NP (JJ:[1358..1368] microsomal) (NN:[1369..1376] protein)))))))
+    (.:[1376..1377] .)))
+
+;sentence 12 Span:1378..1511
+;The strongest inhibition of bupivacaine  metabolism was obtained for
+;troleandomycin (-95% at 50 microM), a specific CYP3A  inhibitor.
+;[1406..1417]:substance:"bupivacaine"
+;[1447..1461]:substance:"troleandomycin"
+;[1463..1467]:quantitative-value:"-95%"
+;[1471..1473]:quantitative-value:"50"
+;[1474..1480]:quantitative-units:"microM"
+;[1494..1499]:cyp450:"CYP3A"
+;[1501..1510]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1378..1381] The) (JJS:[1382..1391] strongest)
+          (NN:[1392..1402] inhibition))
+      (PP (IN:[1403..1405] of)
+        (NP (NN:[1406..1417] bupivacaine) (NN:[1419..1429] metabolism))))
+    (VP (VBD:[1430..1433] was)
+      (VP (VBN:[1434..1442] obtained)
+        (NP-1 (-NONE-:[1442..1442] *))
+        (PP (IN:[1443..1446] for)
+          (NP
+            (NP (NN:[1447..1461] troleandomycin)
+              (PRN (-LRB-:[1462..1463] -LRB-)
+                (NP
+                  (NP
+                    (QP (SYM:[1463..1464] -) (CD:[1464..1466] 95))
+                    (NN:[1466..1467] %))
+                  (PP (IN:[1468..1470] at)
+                    (NP (CD:[1471..1473] 50) (NN:[1474..1480] microM))))
+                (-RRB-:[1480..1481] -RRB-)))
+            (,:[1481..1482] ,)
+            (NP (DT:[1483..1484] a) (JJ:[1485..1493] specific)
+                (NN:[1494..1499] CYP3A) (NN:[1501..1510] inhibitor))))))
+    (.:[1510..1511] .)))
+
+;sentence 13 Span:1512..1711
+;The correlation between PPX formation and erythromycin N-demethylase 
+;activity showed an R value of 0.99 whereas anti-rabbit CYP3A6 antibody
+;inhibited  the degradation of bupivacaine into PPX by 99%.
+;[1536..1539]:substance:"PPX"
+;[1554..1580]:substance:"erythromycin N-demethylase"
+;[1625..1652]:substance:"anti-rabbit CYP3A6 antibody"
+;[1683..1694]:substance:"bupivacaine"
+;[1700..1703]:substance:"PPX"
+;[1707..1710]:quantitative-value:"99%"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1512..1515] The) (NN:[1516..1527] correlation))
+      (PP (IN:[1528..1535] between)
+        (NP
+          (NP (NN:[1536..1539] PPX) (NN:[1540..1549] formation))
+          (CC:[1550..1553] and)
+          (NP
+            (NML (NN:[1554..1566] erythromycin) (NN:[1567..1580] N-demethylase))
+            (NN:[1582..1590] activity)))))
+    (VP (VBD:[1591..1597] showed)
+      (NP
+        (NP (DT:[1598..1600] an) (NN:[1601..1602] R) (NN:[1603..1608] value))
+        (PP (IN:[1609..1611] of)
+          (NP (CD:[1612..1616] 0.99))))
+      (SBAR-ADV (IN:[1617..1624] whereas)
+        (S
+          (NP-SBJ
+            (ADJP (AFX:[1625..1629] anti) (HYPH:[1629..1630] -)
+                  (NN:[1630..1636] rabbit) (NN:[1637..1643] CYP3A6))
+            (NN:[1644..1652] antibody))
+          (VP (VBD:[1653..1662] inhibited)
+            (NP
+              (NP (DT:[1664..1667] the) (NN:[1668..1679] degradation))
+              (PP (IN:[1680..1682] of)
+                (NP (NN:[1683..1694] bupivacaine)))
+              (PP (IN:[1695..1699] into)
+                (NP (NN:[1700..1703] PPX))))
+            (PP-EXT (IN:[1704..1706] by)
+              (NP (CD:[1707..1709] 99) (NN:[1709..1710] %)))))))
+    (.:[1710..1711] .)))
+
+;sentence 14 Span:1712..1917
+;Finally, CYP1A2 and CYP2E1  cDNA-expressed forms of human CYP did not allow
+;PPX formation, CYP2C19 and  CYP2D6 produced only small amounts whereas CYP3A4
+;most efficiently metabolized  bupivacaine into PPX.
+;[1721..1727]:cyp450:"CYP1A2"
+;[1732..1738]:cyp450:"CYP2E1"
+;[1740..1744]:substance:"cDNA"
+;[1770..1773]:cyp450:"CYP"
+;[1788..1791]:substance:"PPX"
+;[1803..1810]:cyp450:"CYP2C19"
+;[1816..1822]:cyp450:"CYP2D6"
+;[1859..1865]:cyp450:"CYP3A4"
+;[1896..1907]:substance:"bupivacaine"
+;[1913..1916]:substance:"PPX"
+(SENT
+  (S
+    (S
+      (ADVP (RB:[1712..1719] Finally))
+      (,:[1719..1720] ,)
+      (NP-SBJ
+        (NP
+          (NP (NN:[1721..1727] CYP1A2)
+            (NML-1 (-NONE-:[1727..1727] *P*)))
+          (CC:[1728..1731] and)
+          (NP (NN:[1732..1738] CYP2E1)
+            (NML-1
+              (ADJP (NN:[1740..1744] cDNA) (HYPH:[1744..1745] -)
+                    (VBN:[1745..1754] expressed))
+              (NNS:[1755..1760] forms))))
+        (PP (IN:[1761..1763] of)
+          (NP (JJ:[1764..1769] human) (NN:[1770..1773] CYP))))
+      (VP (VBD:[1774..1777] did) (RB:[1778..1781] not)
+        (VP (VB:[1782..1787] allow)
+          (NP (NN:[1788..1791] PPX) (NN:[1792..1801] formation)))))
+    (,:[1801..1802] ,)
+    (S
+      (NP-SBJ (NN:[1803..1810] CYP2C19) (CC:[1811..1814] and)
+              (NN:[1816..1822] CYP2D6))
+      (VP (VBD:[1823..1831] produced)
+        (NP (RB:[1832..1836] only) (JJ:[1837..1842] small)
+            (NNS:[1843..1850] amounts))
+        (SBAR-ADV (IN:[1851..1858] whereas)
+          (S
+            (NP-SBJ (NN:[1859..1865] CYP3A4))
+            (ADVP (RBS:[1866..1870] most) (RB:[1871..1882] efficiently))
+            (VP (VBD:[1883..1894] metabolized)
+              (NP (NN:[1896..1907] bupivacaine))
+              (PP (IN:[1908..1912] into)
+                (NP (NN:[1913..1916] PPX))))))))
+    (.:[1916..1917] .)))
+
+;sentence 15 Span:1918..2016
+;These results demonstrated that bupivacaine degradation  into PPX was
+;mediated in humans by CYP3A.
+;[1950..1961]:substance:"bupivacaine"
+;[1980..1983]:substance:"PPX"
+;[2010..2015]:cyp450:"CYP3A"
+(SENT
+  (S
+    (NP-SBJ (DT:[1918..1923] These) (NNS:[1924..1931] results))
+    (VP (VBD:[1932..1944] demonstrated)
+      (SBAR (IN:[1945..1949] that)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1950..1961] bupivacaine) (NN:[1962..1973] degradation))
+            (PP (IN:[1975..1979] into)
+              (NP (NN:[1980..1983] PPX))))
+          (VP (VBD:[1984..1987] was)
+            (VP (VBN:[1988..1996] mediated)
+              (NP-1 (-NONE-:[1996..1996] *))
+              (PP-LOC (IN:[1997..1999] in)
+                (NP (NNS:[2000..2006] humans)))
+              (PP (IN:[2007..2009] by)
+                (NP-LGS (NN:[2010..2015] CYP3A))))))))
+    (.:[2015..2016] .)))
+
+;section 16 Span:2020..2065
+;PMID: 10725304 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2020..2024] PMID) (::[2024..2025] :) (CD:[2026..2034] 10725304)
+        (IN:[2035..2036] -LSB-) (NNP:[2036..2042] PubMed) (HYPH:[2043..2044] -)
+        (JJ:[2045..2052] indexed) (IN:[2053..2056] for)
+        (NNP:[2057..2065] MEDLINE-RSB-)))

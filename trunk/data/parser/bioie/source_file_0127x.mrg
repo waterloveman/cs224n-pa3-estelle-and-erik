@@ -1,0 +1,295 @@
+;PMID: 10968705
+;source_file_2865.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..111] = [t:50..111]
+;2)section:[e:115..123] = [t:115..123]
+;3)section:[e:127..241] = [t:127..241]
+;4)sentence:[e:245..546] = [t:245..546]
+;5)sentence:[e:547..719] = [t:547..719]
+;6)sentence:[e:720..978] = [t:720..978]
+;7)sentence:[e:979..1176] = [t:979..1176]
+;8)sentence:[e:1177..1269] = [t:1177..1269]
+;9)section:[e:1273..1291] = [t:1273..1291]
+;10)section:[e:1297..1303] = [t:1297..1303]
+;11)section:[e:1309..1325] = [t:1309..1325]
+;12)section:[e:1329..1374] = [t:1329..1374]
+
+;section 0 Span:0..44
+;Semin Diagn Pathol.  2000 Aug;17(3):194-203.
+(SEC
+  (FRAG (NNP:[0..5] Semin) (NNP:[6..11] Diagn) (NNP:[12..18] Pathol)
+        (.:[18..19] .) (CD:[21..25] 2000) (CC:[26..33] Aug;17-LRB-)
+        (CD:[33..34] 3) (-RRB-:[34..35] -RRB-) (CD:[35..39] :194)
+        (CD:[39..43] -203) (.:[43..44] .)))
+
+;sentence 1 Span:50..111
+;Immunohistology of neuroendocrine and neuroectodermal tumors.
+;[69..83]...[104..110]:malignancy-type:"neuroendocrine"..."tumors"
+;[88..110]:malignancy-type:"neuroectodermal tumors"
+(SENT
+  (NP-HLN
+    (NP (NN:[50..65] Immunohistology))
+    (PP (IN:[66..68] of)
+      (NP
+        (NP (JJ:[69..83] neuroendocrine)
+          (NML-1 (-NONE-:[83..83] *P*)))
+        (CC:[84..87] and)
+        (NP (JJ:[88..103] neuroectodermal)
+          (NML-1 (NNS:[104..110] tumors)))))
+    (.:[110..111] .)))
+
+;section 2 Span:115..123
+;Wick MR.
+(SEC
+  (FRAG (NNP:[115..119] Wick) (NNP:[120..123] MR.)))
+
+;section 3 Span:127..241
+;Fechner Laboratory of Surgical Pathology, University of Virginia Medical
+;Center,  Charlottesville 22908-0214, USA.
+(SEC
+  (FRAG (NNP:[127..134] Fechner) (NNP:[135..145] Laboratory) (IN:[146..148] of)
+        (NNP:[149..157] Surgical) (NNP:[158..167] Pathology) (,:[167..168] ,)
+        (NNP:[169..179] University) (IN:[180..182] of) (NNP:[183..191] Virginia)
+        (NNP:[192..199] Medical) (NNP:[200..206] Center) (,:[206..207] ,)
+        (NNP:[209..224] Charlottesville) (CD:[225..229] 2290) (CD:[229..230] 8)
+        (CD:[230..235] -0214) (,:[235..236] ,) (NNP:[237..240] USA)
+        (.:[240..241] .)))
+
+;sentence 4 Span:245..546
+;Neuroendocrine and neuroectodermal tumors are interrelated, and comprise a 
+;neoplastic family including lesions formerly termed "carcinoid," "atypical 
+;carcinoid," "small cell undifferentiated carcinoma," "primitive 
+;neuroepithelioma," "chemodectoma," and "neuroblastoma," to name but a few 
+;entities.
+;[245..259]...[280..286]:malignancy-type:"Neuroendocrine"..."tumors"
+;[264..286]:malignancy-type:"neuroectodermal tumors"
+;[321..331]:malignancy-type:"neoplastic"
+;[349..356]:malignancy-type:"lesions"
+;[374..383]:malignancy-type:"carcinoid"
+;[387..406]:malignancy-type:"atypical  carcinoid"
+;[410..447]:malignancy-type:"small cell undifferentiated carcinoma"
+;[451..460]:malignancy-clinical-stage:"primitive"
+;[462..478]:malignancy-type:"neuroepithelioma"
+;[482..494]:malignancy-type:"chemodectoma"
+;[502..515]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[245..259] Neuroendocrine)
+        (NML-1 (-NONE-:[259..259] *P*)))
+      (CC:[260..263] and)
+      (NP (JJ:[264..279] neuroectodermal)
+        (NML-1 (NNS:[280..286] tumors))))
+    (VP
+      (VP (VBP:[287..290] are)
+        (VP (VBN:[291..303] interrelated)
+          (NP-2 (-NONE-:[303..303] *))))
+      (,:[303..304] ,) (CC:[305..308] and)
+      (VP (VBP:[309..317] comprise)
+        (NP
+          (NP (DT:[318..319] a) (JJ:[321..331] neoplastic)
+              (NN:[332..338] family))
+          (PP (VBG:[339..348] including)
+            (NP
+              (NP (NNS:[349..356] lesions))
+              (VP
+                (ADVP (RB:[357..365] formerly))
+                (VBN:[366..372] termed)
+                (NP (-NONE-:[372..372] *))
+                (UCP (``:[373..374] ")
+                  (NP (JJ:[374..383] carcinoid))
+                  (,:[383..384] ,) ('':[384..385] ") (``:[386..387] ")
+                  (ADJP (JJ:[387..395] atypical) (JJ:[397..406] carcinoid))
+                  (,:[406..407] ,) ('':[407..408] ") (``:[409..410] ")
+                  (NP
+                    (NML (JJ:[410..415] small) (NN:[416..420] cell))
+                    (JJ:[421..437] undifferentiated) (NN:[438..447] carcinoma))
+                  (,:[447..448] ,) ('':[448..449] ") (``:[450..451] ")
+                  (NP (JJ:[451..460] primitive) (NN:[462..478] neuroepithelioma))
+                  (,:[478..479] ,) ('':[479..480] ") (``:[481..482] ")
+                  (NP (NN:[482..494] chemodectoma))
+                  (,:[494..495] ,) ('':[495..496] ") (CC:[497..500] and)
+                   (``:[501..502] ")
+                  (NP (NN:[502..515] neuroblastoma)))))))
+        (,:[515..516] ,) ('':[516..517] ")
+        (S-ADV
+          (NP-SBJ (-NONE-:[517..517] *))
+          (VP (TO:[518..520] to)
+            (VP (VB:[521..525] name)
+              (NP (RB:[526..529] but) (DT:[530..531] a) (JJ:[532..535] few)
+                  (NNS:[537..545] entities)))))))
+    (.:[545..546] .)))
+
+;sentence 5 Span:547..719
+;The nosology of these neoplasms has been simplified recently, in part  as a
+;result of a better understanding of their immunophenotypes and molecular 
+;biological attributes.
+;[569..578]:malignancy-type:"neoplasms"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[547..550] The) (NN:[551..559] nosology))
+      (PP (IN:[560..562] of)
+        (NP (DT:[563..568] these) (NNS:[569..578] neoplasms))))
+    (VP (VBZ:[579..582] has)
+      (VP (VBN:[583..587] been)
+        (VP (VBN:[588..598] simplified)
+          (NP-1 (-NONE-:[598..598] *))
+          (ADVP-TMP (RB:[599..607] recently))
+          (,:[607..608] ,)
+          (PP
+            (PP (IN:[609..611] in)
+              (NP (NN:[612..616] part)))
+            (IN:[618..620] as)
+            (NP
+              (NP (DT:[621..622] a) (NN:[623..629] result))
+              (PP (IN:[630..632] of)
+                (NP
+                  (NP (DT:[633..634] a) (JJR:[635..641] better)
+                      (NN:[642..655] understanding))
+                  (PP (IN:[656..658] of)
+                    (NP
+                      (NP (PRP$:[659..664] their)
+                          (NNS:[665..681] immunophenotypes))
+                      (CC:[682..685] and)
+                      (NP (JJ:[686..695] molecular) (JJ:[697..707] biological)
+                          (NNS:[708..718] attributes)))))))))))
+    (.:[718..719] .)))
+
+;sentence 6 Span:720..978
+;This review considers those immunohistochemical markers  that are now
+;generally available for diagnostic evaluation of neuroendocrine and 
+;neuroectodermal differentiation, and provides information on the relative 
+;sensitivity and specificity of each of them.
+(SENT
+  (S
+    (NP-SBJ (DT:[720..724] This) (NN:[725..731] review))
+    (VP
+      (VP (VBZ:[732..741] considers)
+        (NP
+          (NP (DT:[742..747] those) (JJ:[748..767] immunohistochemical)
+              (NNS:[768..775] markers))
+          (SBAR
+            (WHNP-1 (WDT:[777..781] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[781..781] *T*))
+              (VP (VBP:[782..785] are)
+                (ADVP-TMP (RB:[786..789] now))
+                (ADJP-PRD (RB:[790..799] generally) (JJ:[800..809] available)
+                  (PP (IN:[810..813] for)
+                    (NP
+                      (NP (JJ:[814..824] diagnostic) (NN:[825..835] evaluation))
+                      (PP (IN:[836..838] of)
+                        (NP
+                          (NP (JJ:[839..853] neuroendocrine)
+                            (NML-2 (-NONE-:[853..853] *P*)))
+                          (CC:[854..857] and)
+                          (NP (JJ:[859..874] neuroectodermal)
+                            (NML-2 (NN:[875..890] differentiation)))))))))))))
+      (,:[890..891] ,) (CC:[892..895] and)
+      (VP (VBZ:[896..904] provides)
+        (NP
+          (NP (NN:[905..916] information))
+          (PP (IN:[917..919] on)
+            (NP
+              (NP (DT:[920..923] the) (JJ:[924..932] relative)
+                (NML (NN:[934..945] sensitivity) (CC:[946..949] and)
+                     (NN:[950..961] specificity)))
+              (PP (IN:[962..964] of)
+                (NP
+                  (NP (DT:[965..969] each))
+                  (PP (IN:[970..972] of)
+                    (NP (PRP:[973..977] them))))))))))
+    (.:[977..978] .)))
+
+;sentence 7 Span:979..1176
+;Intermediate filament proteins,  chromogranins, synaptophysin, CD56, CD57,
+;CD99, neuron-specific (gamma-dimer)  enolase, protein gene product 9.5, and
+;specific neuropeptide products are  discussed.
+;[979..1009]:gene-protein:"Intermediate filament proteins"
+;[1012..1025]:gene-protein:"chromogranins"
+;[1027..1040]:gene-protein:"synaptophysin"
+;[1042..1046]:gene-protein:"CD56"
+;[1048..1052]:gene-protein:"CD57"
+;[1054..1058]:gene-protein:"CD99"
+;[1060..1098]:gene-protein:"neuron-specific (gamma-dimer)  enolase"
+;[1108..1124]:gene-protein:"gene product 9.5"
+;[1139..1151]:gene-protein:"neuropeptide"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[979..991] Intermediate) (NN:[992..1000] filament)
+          (NNS:[1001..1009] proteins))
+      (,:[1009..1010] ,)
+      (NP (NNS:[1012..1025] chromogranins))
+      (,:[1025..1026] ,)
+      (NP (NN:[1027..1040] synaptophysin))
+      (,:[1040..1041] ,)
+      (NP (NN:[1042..1046] CD56))
+      (,:[1046..1047] ,)
+      (NP (NN:[1048..1052] CD57))
+      (,:[1052..1053] ,)
+      (NP (NN:[1054..1058] CD99))
+      (,:[1058..1059] ,)
+      (NP
+        (NML (NN:[1060..1066] neuron) (HYPH:[1066..1067] -)
+             (JJ:[1067..1075] specific))
+        (PRN (-LRB-:[1076..1077] -LRB-)
+          (NP (NN:[1077..1088] gamma-dimer))
+          (-RRB-:[1088..1089] -RRB-))
+        (NN:[1091..1098] enolase))
+      (,:[1098..1099] ,)
+      (NP (NN:[1100..1107] protein)
+         (NN:[1108..1112] gene) (NN:[1113..1120] product) (CD:[1121..1124] 9.5))
+      (,:[1124..1125] ,) (CC:[1126..1129] and)
+      (NP (JJ:[1130..1138] specific) (NN:[1139..1151] neuropeptide)
+          (NNS:[1152..1160] products)))
+    (VP (VBP:[1161..1164] are)
+      (VP (VBN:[1166..1175] discussed)
+        (NP-1 (-NONE-:[1175..1175] *))))
+    (.:[1175..1176] .)))
+
+;sentence 8 Span:1177..1269
+;The application of such determinants in regional differential  diagnosis is
+;also summarized.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1177..1180] The) (NN:[1181..1192] application))
+      (PP (IN:[1193..1195] of)
+        (NP (JJ:[1196..1200] such) (NNS:[1201..1213] determinants)))
+      (PP (IN:[1214..1216] in)
+        (NP (JJ:[1217..1225] regional) (JJ:[1226..1238] differential)
+            (NN:[1240..1249] diagnosis))))
+    (VP (VBZ:[1250..1252] is)
+      (ADVP (RB:[1253..1257] also))
+      (VP (VBN:[1258..1268] summarized)
+        (NP-1 (-NONE-:[1268..1268] *))))
+    (.:[1268..1269] .)))
+
+;section 9 Span:1273..1291
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1273..1284] Publication) (NNP:[1285..1290] Types)
+        (::[1290..1291] :)))
+
+;section 10 Span:1297..1303
+;Review
+(SEC
+  (FRAG (NNP:[1297..1303] Review)))
+
+;section 11 Span:1309..1325
+;Review, Academic
+(SEC
+  (FRAG (NNP:[1309..1315] Review) (,:[1315..1316] ,) (NNP:[1317..1325] Academic)))
+
+;section 12 Span:1329..1374
+;PMID: 10968705 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1329..1333] PMID) (::[1333..1334] :) (CD:[1335..1343] 10968705)
+        (NN:[1344..1345] -LSB-) (NNP:[1345..1351] PubMed) (::[1352..1353] -)
+        (NN:[1354..1361] indexed) (IN:[1362..1365] for)
+        (NNP:[1366..1374] MEDLINE-RSB-)))

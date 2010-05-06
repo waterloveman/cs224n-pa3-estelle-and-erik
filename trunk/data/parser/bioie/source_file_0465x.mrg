@@ -1,0 +1,307 @@
+;PMID: 2659902
+;source_file_1181.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)sentence:[e:34..148] = [t:34..148]
+;2)section:[e:152..197] = [t:152..197]
+;3)section:[e:201..274] = [t:201..274]
+;4)sentence:[e:278..444] = [t:278..444]
+;5)sentence:[e:445..656] = [t:445..656]
+;6)sentence:[e:657..815] = [t:657..815]
+;7)sentence:[e:816..936] = [t:816..936]
+;8)sentence:[e:937..1079] = [t:937..1079]
+;9)sentence:[e:1080..1165] = [t:1080..1165]
+;10)section:[e:1169..1213] = [t:1169..1213]
+
+;section 0 Span:0..29
+;Leukemia  1989 Jul;3(7):511-5
+(SEC
+  (FRAG (NNP:[0..8] Leukemia) (CD:[10..14] 1989) (.:[15..21] Jul;3-LRB-)
+        (CD:[21..23] 7-RRB-) (CD:[23..27] :511) (HYPH:[27..28] -)
+        (CD:[28..29] 5)))
+
+;sentence 1 Span:34..148
+;c-myc amplification coexistent with activating N-ras point mutation in the 
+;biphenotypic leukemic cell line RED-3.
+;[34..39]:gene-rna:"c-myc"
+;[40..53]:variation-type:"amplification"
+;[81..86]:gene-rna:"N-ras"
+;[87..101]:variation-type:"point mutation"
+;[123..147]:malignancy:"leukemic cell line RED-3"
+(SENT
+  (NP-HLN
+    (NP (NN:[34..39] c-myc) (NN:[40..53] amplification))
+    (ADJP (JJ:[54..64] coexistent)
+      (PP (IN:[65..69] with)
+        (NP (VBG:[70..80] activating) (NN:[81..86] N-ras)
+           (NN:[87..92] point) (NN:[93..101] mutation))))
+    (PP-LOC (IN:[102..104] in)
+      (NP
+        (NP (DT:[105..108] the) (JJ:[110..122] biphenotypic)
+            (JJ:[123..131] leukemic) (NN:[132..136] cell) (NN:[137..141] line))
+        (NP (NN:[142..147] RED-3))))
+    (.:[147..148] .)))
+
+;section 2 Span:152..197
+;Mallet MK, Mane SM, Meltzer SJ, Needleman SW.
+(SEC
+  (FRAG (NNP:[152..158] Mallet) (NNP:[159..161] MK) (,:[161..162] ,)
+        (NNP:[163..167] Mane) (NNP:[168..170] SM) (,:[170..171] ,)
+        (NNP:[172..179] Meltzer) (NNP:[180..182] SJ) (,:[182..183] ,)
+        (NNP:[184..193] Needleman) (NNP:[194..197] SW.)))
+
+;section 3 Span:201..274
+;Department of Medicine, University of Maryland Hospital, Baltimore 21201.
+(SEC
+  (FRAG (NNP:[201..211] Department) (IN:[212..214] of) (NNP:[215..223] Medicine)
+        (,:[223..224] ,) (NNP:[225..235] University) (IN:[236..238] of)
+        (NNP:[239..247] Maryland) (NNP:[248..256] Hospital) (,:[256..257] ,)
+        (NNP:[258..267] Baltimore) (.:[268..273] 21201) (.:[273..274] .)))
+
+;sentence 4 Span:278..444
+;While activation of the protooncogene c-N-ras is observed regularly in acute 
+;myelogenous leukemia, amplification of c-myc in AML cells or derived lines is
+; uncommon.
+;[316..323]:gene-rna:"c-N-ras"
+;[349..376]:malignancy:"acute  myelogenous leukemia"
+;[378..391]:variation-type:"amplification"
+;[395..400]:gene-rna:"c-myc"
+;[404..407]:malignancy:"AML"
+(SENT
+  (S
+    (SBAR-ADV (IN:[278..283] While)
+      (S
+        (NP-SBJ-1
+          (NP (NN:[284..294] activation))
+          (PP (IN:[295..297] of)
+            (NP
+              (NP (DT:[298..301] the) (NN:[302..315] protooncogene))
+              (NP (NN:[316..323] c-N-ras)))))
+        (VP (VBZ:[324..326] is)
+          (VP (VBN:[327..335] observed)
+            (NP-1 (-NONE-:[335..335] *))
+            (ADVP-TMP (RB:[336..345] regularly))
+            (PP (IN:[346..348] in)
+              (NP (JJ:[349..354] acute) (JJ:[356..367] myelogenous)
+                  (NN:[368..376] leukemia)))))))
+    (,:[376..377] ,)
+    (NP-SBJ
+      (NP (NN:[378..391] amplification))
+      (PP (IN:[392..394] of)
+        (NP (NN:[395..400] c-myc)))
+      (PP-LOC (IN:[401..403] in)
+        (NP
+          (NP (NN:[404..407] AML) (NNS:[408..413] cells))
+          (CC:[414..416] or)
+          (NP (VBN:[417..424] derived) (NNS:[425..430] lines)))))
+    (VP (VBZ:[431..433] is)
+      (ADJP-PRD (JJ:[435..443] uncommon)))
+    (.:[443..444] .)))
+
+;sentence 5 Span:445..656
+;In particular, concurrent ras/myc activation, which has been shown to  be
+;critical in several elegant models of malignancy, has been demonstrated in a 
+;very small number of human tumors or derivative cell lines.
+;[471..474]:gene-rna:"ras"
+;[475..478]:gene-rna:"myc"
+(SENT
+  (S
+    (PP (IN:[445..447] In)
+      (NP (JJ:[448..458] particular)))
+    (,:[458..459] ,)
+    (NP-SBJ-3
+      (NP (JJ:[460..470] concurrent)
+        (NML
+          (NML (NN:[471..474] ras)
+            (NML-1 (-NONE-:[474..474] *P*)))
+          (SYM:[474..475] /)
+          (NML (NN:[475..478] myc)
+            (NML-1 (NN:[479..489] activation)))))
+      (,:[489..490] ,)
+      (SBAR
+        (WHNP-2 (WDT:[491..496] which))
+        (S
+          (NP-SBJ-2 (-NONE-:[496..496] *T*))
+          (VP (VBZ:[497..500] has)
+            (VP (VBN:[501..505] been)
+              (VP (VBN:[506..511] shown)
+                (S
+                  (NP-SBJ-2 (-NONE-:[511..511] *))
+                  (VP (TO:[512..514] to)
+                    (VP (VB:[516..518] be)
+                      (ADJP-PRD (JJ:[519..527] critical))
+                      (PP (IN:[528..530] in)
+                        (NP
+                          (NP (JJ:[531..538] several) (JJ:[539..546] elegant)
+                              (NNS:[547..553] models))
+                          (PP (IN:[554..556] of)
+                            (NP (NN:[557..567] malignancy))))))))))))))
+    (,:[567..568] ,)
+    (VP (VBZ:[569..572] has)
+      (VP (VBN:[573..577] been)
+        (VP (VBN:[578..590] demonstrated)
+          (NP-3 (-NONE-:[590..590] *))
+          (PP-LOC (IN:[591..593] in)
+            (NP
+              (NP (DT:[594..595] a)
+                (ADJP (RB:[597..601] very) (JJ:[602..607] small))
+                (NN:[608..614] number))
+              (PP (IN:[615..617] of)
+                (NP
+                  (NP (JJ:[618..623] human) (NNS:[624..630] tumors))
+                  (CC:[631..633] or)
+                  (NP (JJ:[634..644] derivative) (NN:[645..649] cell)
+                      (NNS:[650..655] lines)))))))))
+    (.:[655..656] .)))
+
+;sentence 6 Span:657..815
+;A cell line, RED-3,  is described which was derived from cells of a patient
+;with aggressive acute  leukemia which exhibits many markers of lineage
+;infidelity.
+;[670..675]:malignancy:"RED-3"
+;[738..764]:malignancy:"aggressive acute  leukemia"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP
+        (NP (DT:[657..658] A) (NN:[659..663] cell) (NN:[664..668] line))
+        (,:[668..669] ,)
+        (NP (NN:[670..675] RED-3)))
+      (SBAR-1 (-NONE-:[675..675] *ICH*)))
+    (,:[675..676] ,)
+    (VP (VBZ:[678..680] is)
+      (VP (VBN:[681..690] described)
+        (NP-4 (-NONE-:[690..690] *))
+        (SBAR-1
+          (WHNP-3 (WDT:[691..696] which))
+          (S
+            (NP-SBJ-3 (-NONE-:[696..696] *T*))
+            (VP (VBD:[697..700] was)
+              (VP (VBN:[701..708] derived)
+                (NP-3 (-NONE-:[708..708] *))
+                (PP (IN:[709..713] from)
+                  (NP
+                    (NP (NNS:[714..719] cells))
+                    (PP (IN:[720..722] of)
+                      (NP
+                        (NP (DT:[723..724] a) (NN:[725..732] patient))
+                        (PP (IN:[733..737] with)
+                          (NP
+                            (NP (JJ:[738..748] aggressive) (JJ:[749..754] acute)
+                                (NN:[756..764] leukemia))
+                            (SBAR
+                              (WHNP-2 (WDT:[765..770] which))
+                              (S
+                                (NP-SBJ-2 (-NONE-:[770..770] *T*))
+                                (VP (VBZ:[771..779] exhibits)
+                                  (NP
+                                    (NP (JJ:[780..784] many)
+                                        (NNS:[785..792] markers))
+                                    (PP (IN:[793..795] of)
+                                      (NP (NN:[796..803] lineage)
+                                          (NN:[804..814] infidelity)))))))))))))))))))
+    (.:[814..815] .)))
+
+;sentence 7 Span:816..936
+;DNA from this cell  line contains an activating point mutation of c-N-ras as
+;well as 20-30-fold  amplification of c-myc.
+;[864..878]:variation-type:"point mutation"
+;[882..889]:gene-rna:"c-N-ras"
+;[913..926]:variation-type:"amplification"
+;[930..935]:gene-rna:"c-myc"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[816..819] DNA))
+      (PP (IN:[820..824] from)
+        (NP (DT:[825..829] this) (NN:[830..834] cell) (NN:[836..840] line))))
+    (VP (VBZ:[841..849] contains)
+      (NP
+        (NP
+          (NP (DT:[850..852] an) (VBG:[853..863] activating)
+             (NN:[864..869] point) (NN:[870..878] mutation))
+          (PP (IN:[879..881] of)
+            (NP (NN:[882..889] c-N-ras))))
+        (CONJP (RB:[890..892] as) (RB:[893..897] well) (IN:[898..900] as))
+        (NP
+          (NP
+            (QP
+              (QP (CD:[901..903] 20) (HYPH:[903..904] -) (CD:[904..906] 30))
+              (HYPH:[906..907] -) (JJ:[907..911] fold))
+            (NN:[913..926] amplification))
+          (PP (IN:[927..929] of)
+            (NP (NN:[930..935] c-myc))))))
+    (.:[935..936] .)))
+
+;sentence 8 Span:937..1079
+;After HL-60, this is the second example of ras/myc  activation in AML derived
+;cells and demonstrates that this lesion is not unique  to HL-60.
+;[943..948]:malignancy:"HL-60"
+;[980..983]:gene-rna:"ras"
+;[984..987]:gene-rna:"myc"
+;[1003..1006]:malignancy:"AML"
+;[1043..1054]:malignancy:"this lesion"
+;[1073..1078]:malignancy:"HL-60"
+(SENT
+  (S
+    (PP (IN:[937..942] After)
+      (NP (NN:[943..948] HL-60)))
+    (,:[948..949] ,)
+    (NP-SBJ (DT:[950..954] this))
+    (VP
+      (VP (VBZ:[955..957] is)
+        (NP-PRD
+          (NP (DT:[958..961] the) (JJ:[962..968] second) (NN:[969..976] example))
+          (PP (IN:[977..979] of)
+            (NP
+              (NP (NN:[980..983] ras)
+                (NML-1 (-NONE-:[983..983] *P*)))
+              (SYM:[983..984] /)
+              (NP (NN:[984..987] myc)
+                (NML-1 (NN:[989..999] activation))))))
+        (PP-LOC (IN:[1000..1002] in)
+          (NP
+            (ADJP (NN:[1003..1006] AML) (VBN:[1007..1014] derived))
+            (NNS:[1015..1020] cells))))
+      (CC:[1021..1024] and)
+      (VP (VBZ:[1025..1037] demonstrates)
+        (SBAR (IN:[1038..1042] that)
+          (S
+            (NP-SBJ (DT:[1043..1047] this) (NN:[1048..1054] lesion))
+            (VP (VBZ:[1055..1057] is)
+              (ADJP-PRD (RB:[1058..1061] not) (JJ:[1062..1068] unique)
+                (PP (TO:[1070..1072] to)
+                  (NP (NN:[1073..1078] HL-60)))))))))
+    (.:[1078..1079] .)))
+
+;sentence 9 Span:1080..1165
+;Rather, it may be important in leukemogenesis in a small proportion of  AML
+;patients.
+;[1152..1155]:malignancy:"AML"
+(SENT
+  (S
+    (ADVP (RB:[1080..1086] Rather))
+    (,:[1086..1087] ,)
+    (NP-SBJ (PRP:[1088..1090] it))
+    (VP (MD:[1091..1094] may)
+      (VP (VB:[1095..1097] be)
+        (ADJP-PRD (JJ:[1098..1107] important))
+        (PP (IN:[1108..1110] in)
+          (NP (NN:[1111..1125] leukemogenesis)))
+        (PP-LOC (IN:[1126..1128] in)
+          (NP
+            (NP (DT:[1129..1130] a) (JJ:[1131..1136] small)
+                (NN:[1137..1147] proportion))
+            (PP (IN:[1148..1150] of)
+              (NP (NN:[1152..1155] AML) (NNS:[1156..1164] patients)))))))
+    (.:[1164..1165] .)))
+
+;section 10 Span:1169..1213
+;PMID: 2659902 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1169..1173] PMID) (::[1173..1174] :) (CD:[1175..1182] 2659902)
+        (IN:[1183..1184] -LSB-) (NNP:[1184..1190] PubMed) (HYPH:[1191..1192] -)
+        (JJ:[1193..1200] indexed) (IN:[1201..1204] for)
+        (NNP:[1205..1213] MEDLINE-RSB-)))

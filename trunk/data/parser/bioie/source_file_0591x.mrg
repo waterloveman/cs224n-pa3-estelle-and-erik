@@ -1,0 +1,474 @@
+;PMID: 11048799
+;source_file_1208.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..123] = [t:40..123]
+;2)section:[e:127..177] = [t:127..177]
+;3)section:[e:181..286] = [t:181..286]
+;4)sentence:[e:290..451] = [t:290..451]
+;5)sentence:[e:452..754] = [t:452..754]
+;6)sentence:[e:755..982] = [t:755..982]
+;7)sentence:[e:983..1211] = [t:983..1211]
+;8)sentence:[e:1213..1297] = [t:1213..1297]
+;9)sentence:[e:1298..1422] = [t:1298..1422]
+;10)sentence:[e:1423..1559] = [t:1423..1559]
+;11)sentence:[e:1560..1663] = [t:1560..1663]
+;12)sentence:[e:1664..1732] = [t:1664..1732]
+;13)sentence:[e:1733..1868] = [t:1733..1868]
+;14)section:[e:1872..1917] = [t:1872..1917]
+
+;section 0 Span:0..35
+;Mod Pathol  2000 Oct;13(10):1066-71
+(SEC
+  (FRAG (DT:[0..3] Mod) (NNP:[4..10] Pathol) (CD:[12..16] 2000)
+        (.:[17..24] Oct;13-LRB-) (CD:[24..26] 10) (-RRB-:[26..27] -RRB-)
+        (CD:[27..32] :1066) (HYPH:[32..33] -) (CD:[33..35] 71)))
+
+;sentence 1 Span:40..123
+;Mutational analysis of the CTNNB1 and APC genes in uterine endometrioid 
+;carcinoma.
+;[67..73]:gene-rna:"CTNNB1"
+;[78..81]:gene-rna:"APC"
+;[91..122]:malignancy:"uterine endometrioid  carcinoma"
+(SENT
+  (NP-HLN
+    (NP (JJ:[40..50] Mutational) (NN:[51..59] analysis))
+    (PP (IN:[60..62] of)
+      (NP (DT:[63..66] the)
+        (NML
+          (NML (NN:[67..73] CTNNB1)
+            (NML-1 (-NONE-:[73..73] *P*)))
+          (CC:[74..77] and)
+          (NML (NN:[78..81] APC)
+            (NML-1 (NNS:[82..87] genes))))))
+    (PP (IN:[88..90] in)
+      (NP (JJ:[91..98] uterine) (JJ:[99..111] endometrioid)
+          (NN:[113..122] carcinoma)))
+    (.:[122..123] .)))
+
+;section 2 Span:127..177
+;Schlosshauer PW, Pirog EC, Levine RL, Ellenson LH.
+(SEC
+  (FRAG (NNP:[127..139] Schlosshauer) (NNP:[140..142] PW) (,:[142..143] ,)
+        (NNP:[144..149] Pirog) (NNP:[150..152] EC) (,:[152..153] ,)
+        (NNP:[154..160] Levine) (NNP:[161..163] RL) (,:[163..164] ,)
+        (NNP:[165..173] Ellenson) (NNP:[174..177] LH.)))
+
+;section 3 Span:181..286
+;Department of Pathology, Joan and Sanford I. Weill Medical College of Cornell
+; University, New York, USA.
+(SEC
+  (FRAG (NNP:[181..191] Department) (IN:[192..194] of)
+        (NNP:[195..204] Pathology) (,:[204..205] ,) (NNP:[206..210] Joan)
+        (CC:[211..214] and) (NNP:[215..222] Sanford) (NNP:[223..224] I)
+        (.:[224..225] .) (NNP:[226..231] Weill) (NNP:[232..239] Medical)
+        (NNP:[240..247] College) (IN:[248..250] of) (NNP:[251..258] Cornell)
+        (NNP:[260..270] University) (,:[270..271] ,) (NNP:[272..275] New)
+        (NNP:[276..280] York) (,:[280..281] ,) (NNP:[282..285] USA)
+        (.:[285..286] .)))
+
+;sentence 4 Span:290..451
+;Despite recent studies, the molecular genetic events responsible for the 
+;development of uterine endometrioid carcinoma (UEC) remain incompletely 
+;characterized.
+;[379..409]:malignancy:"uterine endometrioid carcinoma"
+;[411..414]:malignancy:"UEC"
+(SENT
+  (S
+    (PP (IN:[290..297] Despite)
+      (NP (JJ:[298..304] recent) (NNS:[305..312] studies)))
+    (,:[312..313] ,)
+    (NP-SBJ
+      (NP (DT:[314..317] the) (JJ:[318..327] molecular) (JJ:[328..335] genetic)
+          (NNS:[336..342] events))
+      (ADJP (JJ:[343..354] responsible)
+        (PP (IN:[355..358] for)
+          (NP
+            (NP (DT:[359..362] the) (NN:[364..375] development))
+            (PP (IN:[376..378] of)
+              (NP
+                (NP (JJ:[379..386] uterine) (JJ:[387..399] endometrioid)
+                    (NN:[400..409] carcinoma))
+                (NP (-LRB-:[410..411] -LRB-)
+                  (NP (NN:[411..414] UEC))
+                  (-RRB-:[414..415] -RRB-))))))))
+    (VP (VBP:[416..422] remain)
+      (ADJP-PRD (RB:[423..435] incompletely) (VBN:[437..450] characterized)))
+    (.:[450..451] .)))
+
+;sentence 5 Span:452..754
+;Mutations in the beta-catenin (CTNNB1) gene have been recently  reported in a
+;small percentage of UECs and in the endometrioid variant of  ovarian
+;carcinoma suggesting that the Wnt signal transduction pathway is  involved in
+;the development of female genital tract tumors with endometrioid 
+;morphology.
+;[469..481]:gene-rna:"beta-catenin"
+;[483..489]:gene-rna:"CTNNB1"
+;[550..554]:malignancy:"UECs"
+;[566..608]:malignancy:"endometrioid variant of  ovarian carcinoma"
+;[629..632]:gene-generic:"Wnt"
+;[696..723]...[729..741]:malignancy:"female genital tract
+;tumors"..."endometrioid"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[452..461] Mutations))
+      (PP (IN:[462..464] in)
+        (NP (DT:[465..468] the)
+          (NML
+            (NML (NN:[469..481] beta-catenin))
+            (NML (-LRB-:[482..483] -LRB-) (NN:[483..489] CTNNB1)
+                 (-RRB-:[489..490] -RRB-)))
+          (NN:[491..495] gene))))
+    (VP (VBP:[496..500] have)
+      (VP (VBN:[501..505] been)
+        (VP
+          (ADVP-TMP (RB:[506..514] recently))
+          (VBN:[516..524] reported)
+          (NP-1 (-NONE-:[524..524] *))
+          (PP
+            (PP (IN:[525..527] in)
+              (NP
+                (NP (DT:[528..529] a) (JJ:[530..535] small)
+                    (NN:[536..546] percentage))
+                (PP (IN:[547..549] of)
+                  (NP (NNS:[550..554] UECs)))))
+            (CC:[555..558] and)
+            (PP (IN:[559..561] in)
+              (NP
+                (NP (DT:[562..565] the) (JJ:[566..578] endometrioid)
+                    (NN:[579..586] variant))
+                (PP (IN:[587..589] of)
+                  (NP (JJ:[591..598] ovarian) (NN:[599..608] carcinoma))))))
+          (S-ADV
+            (NP-SBJ (-NONE-:[608..608] *))
+            (VP (VBG:[609..619] suggesting)
+              (SBAR (IN:[620..624] that)
+                (S
+                  (NP-SBJ-2 (DT:[625..628] the) (NN:[629..632] Wnt)
+                    (NML (NN:[633..639] signal) (NN:[640..652] transduction))
+                    (NN:[653..660] pathway))
+                  (VP (VBZ:[661..663] is)
+                    (VP (VBN:[665..673] involved)
+                      (NP-2 (-NONE-:[673..673] *))
+                      (PP-CLR (IN:[674..676] in)
+                        (NP
+                          (NP (DT:[677..680] the) (NN:[681..692] development))
+                          (PP (IN:[693..695] of)
+                            (NP
+                              (NP (JJ:[696..702] female)
+                                (NML (JJ:[703..710] genital)
+                                     (NN:[711..716] tract))
+                                (NNS:[717..723] tumors))
+                              (PP (IN:[724..728] with)
+                                (NP (JJ:[729..741] endometrioid)
+                                    (NN:[743..753] morphology))))))))))))))))
+    (.:[753..754] .)))
+
+;sentence 6 Span:755..982
+;The Wnt pathway is a critical pathway in the development of  colorectal
+;cancer (CRC) with mutations occurring in the beta-catenin (CTNNB1) or 
+;adenomatous polyposis coli (APC) genes in 10 to 15% and 85% of cases, 
+;respectively.
+;[759..762]:gene-generic:"Wnt"
+;[816..833]:malignancy:"colorectal cancer"
+;[835..838]:malignancy:"CRC"
+;[872..884]:gene-rna:"beta-catenin"
+;[886..892]:gene-rna:"CTNNB1"
+;[898..924]:gene-rna:"adenomatous polyposis coli"
+;[926..929]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ (DT:[755..758] The) (NN:[759..762] Wnt) (NN:[763..770] pathway))
+    (VP (VBZ:[771..773] is)
+      (NP-PRD (DT:[774..775] a) (JJ:[776..784] critical) (NN:[785..792] pathway))
+      (PP (IN:[793..795] in)
+        (NP
+          (NP (DT:[796..799] the) (NN:[800..811] development))
+          (PP (IN:[812..814] of)
+            (NP
+              (NP (JJ:[816..826] colorectal) (NN:[827..833] cancer))
+              (NP (-LRB-:[834..835] -LRB-) (NN:[835..838] CRC)
+                  (-RRB-:[838..839] -RRB-))))))
+      (PP (IN:[840..844] with)
+        (NP
+          (NP (NNS:[845..854] mutations))
+          (VP (VBG:[855..864] occurring)
+            (PP (IN:[865..867] in)
+              (NP (DT:[868..871] the)
+                (NML
+                  (NML
+                    (NML
+                      (NML (NN:[872..884] beta-catenin))
+                      (NML (-LRB-:[885..886] -LRB-) (NN:[886..892] CTNNB1)
+                           (-RRB-:[892..893] -RRB-)))
+                    (NML-1 (-NONE-:[893..893] *P*)))
+                  (CC:[894..896] or)
+                  (NML
+                    (NML
+                      (NML (JJ:[898..909] adenomatous) (NN:[910..919] polyposis)
+                           (NN:[920..924] coli))
+                      (NML (-LRB-:[925..926] -LRB-) (NN:[926..929] APC)
+                           (-RRB-:[929..930] -RRB-)))
+                    (NML-1 (NNS:[931..936] genes)))))))))
+      (PP (IN:[937..939] in)
+        (NP
+          (NP
+            (QP (CD:[940..942] 10) (TO:[943..945] to) (CD:[946..948] 15))
+            (NN:[948..949] %))
+          (CC:[950..953] and)
+          (NP
+            (NP (CD:[954..956] 85) (NN:[956..957] %))
+            (PP (IN:[958..960] of)
+              (NP (NNS:[961..966] cases))))))
+      (,:[966..967] ,)
+      (ADVP (RB:[969..981] respectively)))
+    (.:[981..982] .)))
+
+;sentence 7 Span:983..1211
+;Because UEC and CRC share other molecular genetic alterations and  histologic
+;features and previous studies of UEC have not reported an analysis of  the
+;APC gene, we chose to further elucidate the role of the Wnt pathway in UEC.
+;[991..994]:malignancy:"UEC"
+;[999..1002]:malignancy:"CRC"
+;[1094..1097]:malignancy:"UEC"
+;[1136..1139]:gene-rna:"APC"
+;[1192..1195]:gene-generic:"Wnt"
+;[1207..1210]:malignancy:"UEC"
+(SENT
+  (S
+    (SBAR-PRP (IN:[983..990] Because)
+      (S
+        (S
+          (NP-SBJ (NN:[991..994] UEC) (CC:[995..998] and) (NN:[999..1002] CRC))
+          (VP (VBP:[1003..1008] share)
+            (NP
+              (NP (JJ:[1009..1014] other) (JJ:[1015..1024] molecular)
+                  (JJ:[1025..1032] genetic) (NNS:[1033..1044] alterations))
+              (CC:[1045..1048] and)
+              (NP (JJ:[1050..1060] histologic) (NNS:[1061..1069] features)))))
+        (CC:[1070..1073] and)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1074..1082] previous) (NNS:[1083..1090] studies))
+            (PP (IN:[1091..1093] of)
+              (NP (NN:[1094..1097] UEC))))
+          (VP (VBP:[1098..1102] have) (RB:[1103..1106] not)
+            (VP (VBN:[1107..1115] reported)
+              (NP
+                (NP (DT:[1116..1118] an) (NN:[1119..1127] analysis))
+                (PP (IN:[1128..1130] of)
+                  (NP (DT:[1132..1135] the) (NN:[1136..1139] APC)
+                      (NN:[1140..1144] gene)))))))))
+    (,:[1144..1145] ,)
+    (NP-SBJ (PRP:[1146..1148] we))
+    (VP (VBD:[1149..1154] chose)
+      (S
+        (NP-SBJ (-NONE-:[1154..1154] *))
+        (VP (TO:[1155..1157] to)
+          (ADVP (RB:[1158..1165] further))
+          (VP (VB:[1166..1175] elucidate)
+            (NP
+              (NP (DT:[1176..1179] the) (NN:[1180..1184] role))
+              (PP (IN:[1185..1187] of)
+                (NP (DT:[1188..1191] the) (NN:[1192..1195] Wnt)
+                    (NN:[1196..1203] pathway)))
+              (PP (IN:[1204..1206] in)
+                (NP (NN:[1207..1210] UEC))))))))
+    (.:[1210..1211] .)))
+
+;sentence 8 Span:1213..1297
+;To this end, we analyzed 32 cases of UEC for mutations of the CTNNB1 and APC 
+;genes.
+;[1250..1253]:malignancy:"UEC"
+;[1275..1281]:gene-rna:"CTNNB1"
+;[1286..1289]:gene-rna:"APC"
+(SENT
+  (S
+    (PP (TO:[1213..1215] To)
+      (NP (DT:[1216..1220] this) (NN:[1221..1224] end)))
+    (,:[1224..1225] ,)
+    (NP-SBJ (PRP:[1226..1228] we))
+    (VP (VBD:[1229..1237] analyzed)
+      (NP
+        (NP (CD:[1238..1240] 32) (NNS:[1241..1246] cases))
+        (PP (IN:[1247..1249] of)
+          (NP (NN:[1250..1253] UEC))))
+      (PP (IN:[1254..1257] for)
+        (NP
+          (NP (NNS:[1258..1267] mutations))
+          (PP (IN:[1268..1270] of)
+            (NP (DT:[1271..1274] the)
+              (NML
+                (NML (NN:[1275..1281] CTNNB1)
+                  (NML-1 (-NONE-:[1281..1281] *P*)))
+                (CC:[1282..1285] and)
+                (NML (NN:[1286..1289] APC)
+                  (NML-1 (NNS:[1291..1296] genes)))))))))
+    (.:[1296..1297] .)))
+
+;sentence 9 Span:1298..1422
+;Mutations of CTNNB1 were present in six of 32 (18%) cases: four grade 1 
+;carcinomas, one grade 2, and one grade 3 carcinoma.
+;[1311..1317]:gene-rna:"CTNNB1"
+;[1362..1381]:malignancy:"grade 1  carcinomas"
+;[1387..1394]...[1412..1421]:malignancy:"grade 2"..."carcinoma"
+;[1404..1421]:malignancy:"grade 3 carcinoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1298..1307] Mutations))
+      (PP (IN:[1308..1310] of)
+        (NP (NN:[1311..1317] CTNNB1))))
+    (VP (VBD:[1318..1322] were)
+      (ADJP-PRD (JJ:[1323..1330] present)
+        (PP (IN:[1331..1333] in)
+          (NP
+            (NP
+              (NP (CD:[1334..1337] six))
+              (PP (IN:[1338..1340] of)
+                (NP (CD:[1341..1343] 32)
+                  (PRN (-LRB-:[1344..1345] -LRB-)
+                    (NP (CD:[1345..1347] 18) (NN:[1347..1348] %))
+                    (-RRB-:[1348..1349] -RRB-))
+                  (NNS:[1350..1355] cases))))
+            (::[1355..1356] :)
+            (NP (CD:[1357..1361] four)
+              
+              (NML (NN:[1362..1367] grade) (CD:[1368..1369] 1))
+              (NML (NNS:[1371..1381] carcinomas)))
+            (,:[1381..1382] ,)
+            (NP (CD:[1383..1386] one)
+              (NML (NN:[1387..1392] grade) (CD:[1393..1394] 2)))
+            (,:[1394..1395] ,) (CC:[1396..1399] and)
+            (NP (CD:[1400..1403] one)
+              
+              (NML (NN:[1404..1409] grade) (CD:[1410..1411] 3))
+              (NN:[1412..1421] carcinoma))))))
+    (.:[1421..1422] .)))
+
+;sentence 10 Span:1423..1559
+;Five missense mutations were  identified, three involving Ser/Thr
+;phosphorylation sites and two adjacent to a  Ser phosphorylation site.
+;[1428..1446]:variation-type:"missense mutations"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[1423..1427] Five)
+         (JJ:[1428..1436] missense) (NNS:[1437..1446] mutations))
+      (NP-2 (-NONE-:[1446..1446] *ICH*)))
+    (VP (VBD:[1447..1451] were)
+      (VP (VBN:[1453..1463] identified)
+        (NP-1 (-NONE-:[1463..1463] *))
+        (,:[1463..1464] ,))
+      (NP-2
+        (NP
+          (NP (CD:[1465..1470] three))
+          (VP (VBG:[1471..1480] involving)
+            (NP
+              (NML (NN:[1481..1484] Ser) (SYM:[1484..1485] /)
+                   (NN:[1485..1488] Thr))
+              (NN:[1489..1504] phosphorylation) (NNS:[1505..1510] sites))))
+        (CC:[1511..1514] and)
+        (NP
+          (NP (CD:[1515..1518] two))
+          (ADJP (JJ:[1519..1527] adjacent)
+            (PP (TO:[1528..1530] to)
+              (NP (DT:[1531..1532] a) (NN:[1534..1537] Ser)
+                  (NN:[1538..1553] phosphorylation) (NN:[1554..1558] site)))))))
+    (.:[1558..1559] .)))
+
+;sentence 11 Span:1560..1663
+;One case contained a deletion encompassing codons 34  to 37, which includes a
+;Ser phosphorylation site.
+;[1581..1589]:variation-type:"deletion"
+;[1603..1619]:variation-location:"codons 34  to 37"
+(SENT
+  (S
+    (NP-SBJ (CD:[1560..1563] One) (NN:[1564..1568] case))
+    (VP (VBD:[1569..1578] contained)
+      (NP
+        (NP
+          (NP (DT:[1579..1580] a) (NN:[1581..1589] deletion))
+          (VP (VBG:[1590..1602] encompassing)
+            
+            (NP
+              (NML-1 (NNS:[1603..1609] codons))
+              (CD:[1610..1612] 34))
+            (PP (TO:[1614..1616] to)
+              (NP
+                (NML-1 (-NONE-:[1616..1616] *P*))
+                (CD:[1617..1619] 37)))))
+        (,:[1619..1620] ,)
+        (SBAR
+          (WHNP-2 (WDT:[1621..1626] which))
+          (S
+            (NP-SBJ-2 (-NONE-:[1626..1626] *T*))
+            (VP (VBZ:[1627..1635] includes)
+              (NP (DT:[1636..1637] a) (NN:[1638..1641] Ser)
+                  (NN:[1642..1657] phosphorylation) (NN:[1658..1662] site)))))))
+    (.:[1662..1663] .)))
+
+;sentence 12 Span:1664..1732
+;No mutations resulting in  truncation of the APC protein were found.
+;[1667..1676]:variation-event:"mutations"
+;[1709..1712]:gene-protein:"APC"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1664..1666] No) (NNS:[1667..1676] mutations))
+      (VP (VBG:[1677..1686] resulting)
+        (PP (IN:[1687..1689] in)
+          (NP
+            (NP (NN:[1691..1701] truncation))
+            (PP (IN:[1702..1704] of)
+              (NP (DT:[1705..1708] the) (NN:[1709..1712] APC)
+                  (NN:[1713..1720] protein)))))))
+    (VP (VBD:[1721..1725] were)
+      (VP (VBN:[1726..1731] found)
+        (NP-1 (-NONE-:[1731..1731] *))))
+    (.:[1731..1732] .)))
+
+;sentence 13 Span:1733..1868
+;Our results support a role for the Wnt  signaling pathway via mutation of
+;CTNNB1, but not APC, in the development of a  subset of UECs.
+;[1768..1771]:gene-generic:"Wnt"
+;[1807..1813]:gene-rna:"CTNNB1"
+;[1823..1826]:gene-rna:"APC"
+;[1863..1867]:malignancy:"UECs"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1733..1736] Our) (NNS:[1737..1744] results))
+    (VP (VBP:[1745..1752] support)
+      (NP
+        (NP (DT:[1753..1754] a) (NN:[1755..1759] role))
+        (PP (IN:[1760..1763] for)
+          (NP (DT:[1764..1767] the) (NN:[1768..1771] Wnt)
+              (NN:[1773..1782] signaling) (NN:[1783..1790] pathway)))
+        (PP (IN:[1791..1794] via)
+          (NP
+            (NP (NN:[1795..1803] mutation))
+            (PP (IN:[1804..1806] of)
+              (NP (NN:[1807..1813] CTNNB1) (,:[1813..1814] ,)
+                (CONJP (CC:[1815..1818] but) (RB:[1819..1822] not))
+                (NN:[1823..1826] APC)))))
+        (,:[1826..1827] ,)
+        (PP (IN:[1828..1830] in)
+          (NP
+            (NP (DT:[1831..1834] the) (NN:[1835..1846] development))
+            (PP (IN:[1847..1849] of)
+              (NP
+                (NP (DT:[1850..1851] a) (NN:[1853..1859] subset))
+                (PP (IN:[1860..1862] of)
+                  (NP (NNS:[1863..1867] UECs)))))))))
+    (.:[1867..1868] .)))
+
+;section 14 Span:1872..1917
+;PMID: 11048799 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1872..1876] PMID) (::[1876..1877] :) (CD:[1878..1886] 11048799)
+        (-LRB-:[1887..1888] -LSB-) (NNP:[1888..1894] PubMed)
+        (HYPH:[1895..1896] -) (NN:[1897..1904] indexed) (IN:[1905..1908] for)
+        (NNP:[1909..1916] MEDLINE) (-RRB-:[1916..1917] -RSB-)))

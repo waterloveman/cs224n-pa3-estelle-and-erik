@@ -1,0 +1,576 @@
+;PMID: 1530660
+;source_file_653.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..231] = [t:49..231]
+;2)section:[e:235..257] = [t:235..257]
+;3)section:[e:261..313] = [t:261..313]
+;4)sentence:[e:317..561] = [t:317..561]
+;5)sentence:[e:562..786] = [t:562..786]
+;6)sentence:[e:787..1011] = [t:787..1011]
+;7)sentence:[e:1012..1230] = [t:1012..1230]
+;8)sentence:[e:1231..1443] = [t:1231..1443]
+;9)sentence:[e:1444..1597] = [t:1444..1597]
+;10)sentence:[e:1598..1897] = [t:1598..1897]
+;11)sentence:[e:1899..2276] = [t:1899..2276]
+;12)sentence:[e:2277..2583] = [t:2277..2583]
+;13)section:[e:2587..2631] = [t:2587..2631]
+
+;section 0 Span:0..43
+;Biochem Pharmacol. 1992 Sep 1;44(5):913-20.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1992) (NNPS:[24..27] Sep) (CD:[28..33] 1;44-LRB-)
+        (CD:[33..34] 5) (-RRB-:[34..35] -RRB-) (CD:[35..39] :913)
+        (IN:[39..40] -) (CD:[40..42] 20) (.:[42..43] .)))
+
+;sentence 1 Span:49..231
+;Activation of 6-aminochrysene to genotoxic products by different forms of rat
+; liver cytochrome P450 in an O-acetyltransferase-overexpressing Salmonella 
+;typhimurium strain (NM2009).
+;[63..78]:substance:"6-aminochrysene"
+;[92..100]:substance:"products"
+;[134..149]:cyp450:"cytochrome P450"
+;[156..175]:substance:"O-acetyltransferase"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..59] Activation))
+    (PP (IN:[60..62] of)
+      (NP (NN:[63..78] 6-aminochrysene)))
+    (PP (TO:[79..81] to)
+      (NP (JJ:[82..91] genotoxic) (NNS:[92..100] products)))
+    (PP (IN:[101..103] by)
+      (NP
+        (NP (JJ:[104..113] different) (NNS:[114..119] forms))
+        (PP (IN:[120..122] of)
+          (NP (NN:[123..126] rat) (NN:[128..133] liver)
+             (NN:[134..144] cytochrome) (NN:[145..149] P450)))))
+    (PP-LOC (IN:[150..152] in)
+      (NP
+        (NP (DT:[153..155] an)
+          (ADJP (NN:[156..175] O-acetyltransferase) (HYPH:[175..176] -)
+                (VBG:[176..190] overexpressing))
+          (NML (NNP:[191..201] Salmonella) (NNP:[203..214] typhimurium))
+          (NN:[215..221] strain))
+        (NP (-LRB-:[222..223] -LRB-) (NN:[223..229] NM2009)
+            (-RRB-:[229..230] -RRB-))))
+    (.:[230..231] .)))
+
+;section 2 Span:235..257
+;Yamazaki H, Shimada T.
+(SEC
+  (FRAG (NNP:[235..243] Yamazaki) (NNP:[244..245] H) (,:[245..246] ,)
+        (NNP:[247..254] Shimada) (NNP:[255..257] T.)))
+
+;section 3 Span:261..313
+;Osaka Prefectural Institute of Public Health, Japan.
+(SEC
+  (FRAG (NNP:[261..266] Osaka) (NNP:[267..278] Prefectural)
+        (NNP:[279..288] Institute) (IN:[289..291] of) (NNP:[292..298] Public)
+        (NNP:[299..305] Health) (,:[305..306] ,) (NNP:[307..312] Japan)
+        (.:[312..313] .)))
+
+;sentence 4 Span:317..561
+;Metabolic activation of a potent mutagen, 6-aminochrysene, to genotoxic
+;products  in a newly developed tester strain, Salmonella typhimurium NM2009,
+;was studied  in a rat liver microsomal monooxygenase system containing
+;cytochrome P450  (P450).
+;[350..357]:substance:"mutagen"
+;[359..374]:substance:"6-aminochrysene"
+;[389..397]:substance:"products"
+;[505..518]:substance:"monooxygenase"
+;[537..552]:cyp450:"cytochrome P450"
+;[555..559]:cyp450:"P450"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[317..326] Metabolic) (NN:[327..337] activation))
+      (PP (IN:[338..340] of)
+        (NP
+          (NP (DT:[341..342] a) (JJ:[343..349] potent) (NN:[350..357] mutagen))
+          (,:[357..358] ,)
+          (NP (NN:[359..374] 6-aminochrysene))))
+      (,:[374..375] ,)
+      (PP (TO:[376..378] to)
+        (NP (JJ:[379..388] genotoxic) (NNS:[389..397] products)))
+      (PP-LOC (IN:[399..401] in)
+        (NP
+          (NP (DT:[402..403] a)
+            (ADJP (RB:[404..409] newly) (VBN:[410..419] developed))
+            (NN:[420..426] tester) (NN:[427..433] strain))
+          (,:[433..434] ,)
+          (NP (NNP:[435..445] Salmonella) (NNP:[446..457] typhimurium)
+              (NN:[458..464] NM2009)))))
+    (VP (,:[464..465] ,) (VBD:[466..469] was)
+      (VP (VBN:[470..477] studied)
+        (NP-1 (-NONE-:[477..477] *))
+        (PP-LOC (IN:[479..481] in)
+          (NP
+            (NP (DT:[482..483] a) (NN:[484..487] rat) (NN:[488..493] liver)
+                (JJ:[494..504] microsomal) (NN:[505..518] monooxygenase)
+                (NN:[519..525] system))
+            (VP (VBG:[526..536] containing)
+              (NP
+                (NP (NN:[537..547] cytochrome) (NN:[548..552] P450))
+                (NP (-LRB-:[554..555] -LRB-) (NN:[555..559] P450)
+                    (-RRB-:[559..560] -RRB-))))))))
+    (.:[560..561] .)))
+
+;sentence 5 Span:562..786
+;Since the tester strain was constructed by introducing an 
+;O-acetyltransferase gene into the original strain S. typhimurium
+;TA1535/pSK1002,  it is highly sensitive toward the reactive metabolites of
+;carcinogenic  arylamines.
+;[746..757]:substance:"metabolites"
+;[775..785]:substance:"arylamines"
+(SENT
+  (S
+    (SBAR-ADV (IN:[562..567] Since)
+      (S
+        (NP-SBJ-1 (DT:[568..571] the) (NN:[572..578] tester)
+                  (NN:[579..585] strain))
+        (VP (VBD:[586..589] was)
+          (VP (VBN:[590..601] constructed)
+            (NP-1 (-NONE-:[601..601] *))
+            (PP (IN:[602..604] by)
+              (S-NOM
+                (NP-SBJ (-NONE-:[604..604] *))
+                (VP (VBG:[605..616] introducing)
+                  (NP (DT:[617..619] an) (NN:[621..640] O-acetyltransferase)
+                      (NN:[641..645] gene))
+                  (PP-CLR (IN:[646..650] into)
+                    (NP
+                      (NP (DT:[651..654] the) (JJ:[655..663] original)
+                          (NN:[664..670] strain))
+                      (NP (NNP:[671..673] S.) (NNP:[674..685] typhimurium)
+                          (NN:[686..692] TA1535) (SYM:[692..693] /)
+                          (NN:[693..700] pSK1002)))))))))))
+    (,:[700..701] ,)
+    (NP-SBJ (PRP:[703..705] it))
+    (VP (VBZ:[706..708] is)
+      (ADJP-PRD (RB:[709..715] highly) (JJ:[716..725] sensitive)
+        (PP (IN:[726..732] toward)
+          (NP
+            (NP (DT:[733..736] the) (JJ:[737..745] reactive)
+                (NNS:[746..757] metabolites))
+            (PP (IN:[758..760] of)
+              (NP (JJ:[761..773] carcinogenic) (NNS:[775..785] arylamines)))))))
+    (.:[785..786] .)))
+
+;sentence 6 Span:787..1011
+;DNA-damaging activities of 6-aminochrysene were detected at very low 
+;concentrations of substrate (between 0.01 and 0.2 microM) and liver
+;microsomes  (from 0.2 to 2 micrograms protein/mL) in the S. typhimurium
+;NM2009 strain.
+;[787..790]:substance:"DNA"
+;[814..829]:substance:"6-aminochrysene"
+;[875..884]:substance:"substrate"
+;[894..898]:quantitative-value:"0.01"
+;[903..906]:quantitative-value:"0.2"
+;[907..913]:quantitative-units:"microM"
+;[943..946]:quantitative-value:"0.2"
+;[950..951]:quantitative-value:"2"
+;[952..973]:quantitative-units:"micrograms protein/mL"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (ADJP (NN:[787..790] DNA) (HYPH:[790..791] -) (VBG:[791..799] damaging))
+        (NNS:[800..810] activities))
+      (PP (IN:[811..813] of)
+        (NP (NN:[814..829] 6-aminochrysene))))
+    (VP (VBD:[830..834] were)
+      (VP (VBN:[835..843] detected)
+        (NP-1 (-NONE-:[843..843] *))
+        (PP (IN:[844..846] at)
+          (NP
+            (NP
+              (ADJP (RB:[847..851] very) (JJ:[852..855] low))
+              (NNS:[857..871] concentrations))
+            (PP (IN:[872..874] of)
+              (NP
+                (NP (NN:[875..884] substrate)
+                  (PP (-LRB-:[885..886] -LRB-)
+                    (PP (IN:[886..893] between)
+                      (NP
+                        (NP (CD:[894..898] 0.01)
+                          (NML-2 (-NONE-:[898..898] *P*)))
+                        (CC:[899..902] and)
+                        (NP (CD:[903..906] 0.2)
+                          (NML-2 (NN:[907..913] microM)))))
+                    (-RRB-:[913..914] -RRB-)))
+                (CC:[915..918] and)
+                (NP (NN:[919..924] liver) (NNS:[925..935] microsomes)
+                  (PRN (-LRB-:[937..938] -LRB-)
+                    (NP
+                      (NP
+                        (NML
+                          (QP (IN:[938..942] from) (CD:[943..946] 0.2)
+                              (TO:[947..949] to) (CD:[950..951] 2))
+                          (NNS:[952..962] micrograms))
+                        (NN:[963..970] protein))
+                      (PP-5 (SYM:[970..971] /)
+                        (NP (NN:[971..973] mL))))
+                    (NN:[973..974] -RRB-)))))))
+        (PP-LOC (IN:[975..977] in)
+          (NP (DT:[978..981] the)
+            (NML (NNP:[982..984] S.) (NNP:[985..996] typhimurium))
+            (NN:[997..1003] NM2009) (NN:[1004..1010] strain)))))
+    (.:[1010..1011] .)))
+
+;sentence 7 Span:1012..1230
+;Thus,  the potency of genotoxic activities induced by 6-aminochrysene was
+;about 10- to  20-times greater than those induced by the well-known mutagens
+;2-aminoanthracene  and 2-amino-3,5-dimethylimidazo[4,5-f]quinoline.
+;[1066..1081]:substance:"6-aminochrysene"
+;[1154..1162]:substance:"mutagens"
+;[1163..1180]:substance:"2-aminoanthracene"
+;[1186..1229]:substance:"2-amino-3,5-dimethylimidazo[4,5-f]quinoline"
+(SENT
+  (S
+    (ADVP (RB:[1012..1016] Thus))
+    (,:[1016..1017] ,)
+    (NP-SBJ
+      (NP
+        (NP (DT:[1019..1022] the) (NN:[1023..1030] potency))
+        (PP (IN:[1031..1033] of)
+          (NP (JJ:[1034..1043] genotoxic) (NNS:[1044..1054] activities))))
+      (VP (VBN:[1055..1062] induced)
+        (NP (-NONE-:[1062..1062] *))
+        (PP (IN:[1063..1065] by)
+          (NP-LGS (NN:[1066..1081] 6-aminochrysene)))))
+    (VP (VBD:[1082..1085] was)
+      (ADJP-PRD
+        (ADJP
+          (NML
+            (QP (IN:[1086..1091] about) (CD:[1092..1094] 10)
+                (HYPH:[1094..1095] -) (TO:[1096..1098] to) (CD:[1100..1102] 20)
+                (HYPH:[1102..1103] -) (NNS:[1103..1108] times)))
+          (JJR:[1109..1116] greater))
+        (PP (IN:[1117..1121] than)
+          (NP
+            (NP (DT:[1122..1127] those))
+            (VP (VBN:[1128..1135] induced)
+              (NP (-NONE-:[1135..1135] *))
+              (PP (IN:[1136..1138] by)
+                (NP-LGS
+                  (NP (DT:[1139..1142] the)
+                    (ADJP (RB:[1143..1147] well) (HYPH:[1147..1148] -)
+                          (VBN:[1148..1153] known))
+                    (NNS:[1154..1162] mutagens))
+                  (NP (NN:[1163..1180] 2-aminoanthracene) (CC:[1182..1185] and)
+                      (NN:[1186..1229] 2-amino-3,5-dimethylimidazo-LSB-4,5-f-RSB-quinoline)))))))))
+    (.:[1229..1230] .)))
+
+;sentence 8 Span:1231..1443
+;Liver microsomes isolated from  rats treated with phenobarbital (PB) and a
+;polychlorinated biphenyl mixture,  Kanechlor 500, catalyzed very efficiently
+;the activation of 6-aminochrysene to  genotoxic metabolites.
+;[1281..1294]:substance:"phenobarbital"
+;[1296..1298]:substance:"PB"
+;[1306..1338]:substance:"polychlorinated biphenyl mixture"
+;[1341..1354]:substance:"Kanechlor 500"
+;[1401..1416]:substance:"6-aminochrysene"
+;[1431..1442]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1231..1236] Liver) (NNS:[1237..1247] microsomes))
+      (VP (VBN:[1248..1256] isolated)
+        (NP (-NONE-:[1256..1256] *))
+        (PP (IN:[1257..1261] from)
+          (NP
+            (NP (NNS:[1263..1267] rats))
+            (VP (VBN:[1268..1275] treated)
+              (NP (-NONE-:[1275..1275] *))
+              (PP-MNR (IN:[1276..1280] with)
+                (NP
+                  (NP
+                    (NP (NN:[1281..1294] phenobarbital))
+                    (NP (-LRB-:[1295..1296] -LRB-) (NN:[1296..1298] PB)
+                        (-RRB-:[1298..1299] -RRB-)))
+                  (CC:[1300..1303] and)
+                  (NP
+                    (NP (DT:[1304..1305] a)
+                       (VBN:[1306..1321] polychlorinated)
+                       (NN:[1322..1330] biphenyl) (NN:[1331..1338] mixture))
+                    (,:[1338..1339] ,)
+                    (NP (NN:[1341..1350] Kanechlor) (CD:[1351..1354] 500))))))))))
+    (,:[1354..1355] ,)
+    (VP (VBD:[1356..1365] catalyzed)
+      (ADVP (RB:[1366..1370] very) (RB:[1371..1382] efficiently))
+      (NP
+        (NP (CC:[1383..1386] the) (NN:[1387..1397] activation))
+        (PP (IN:[1398..1400] of)
+          (NP (NN:[1401..1416] 6-aminochrysene)))
+        (PP (TO:[1417..1419] to)
+          (NP (JJ:[1421..1430] genotoxic) (NNS:[1431..1442] metabolites)))))
+    (.:[1442..1443] .)))
+
+;sentence 9 Span:1444..1597
+;Treatment of rats with beta-naphthoflavone (BNF) and with  dexamethasone also
+;caused moderate induction of the microsomal activation of  6-aminochrysene.
+;[1467..1486]:substance:"beta-naphthoflavone"
+;[1488..1491]:substance:"BNF"
+;[1503..1516]:substance:"dexamethasone"
+;[1581..1596]:substance:"6-aminochrysene"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1444..1453] Treatment))
+      (PP (IN:[1454..1456] of)
+        (NP (NNS:[1457..1461] rats)))
+      (PP
+        (PP (IN:[1462..1466] with)
+          (NP
+            (NP (SYM:[1467..1471] beta) (HYPH:[1471..1472] -)
+                (NN:[1472..1486] naphthoflavone))
+            (NP (-LRB-:[1487..1488] -LRB-) (NN:[1488..1491] BNF)
+                (-RRB-:[1491..1492] -RRB-))))
+        (CC:[1493..1496] and)
+        (PP (IN:[1497..1501] with)
+          (NP (NN:[1503..1516] dexamethasone)))))
+    (ADVP (RB:[1517..1521] also))
+    (VP (VBD:[1522..1528] caused)
+      (NP
+        (NP (JJ:[1529..1537] moderate) (NN:[1538..1547] induction))
+        (PP (IN:[1548..1550] of)
+          (NP
+            (NP (DT:[1551..1554] the) (JJ:[1555..1565] microsomal)
+                (NN:[1566..1576] activation))
+            (PP (IN:[1577..1579] of)
+              (NP (NN:[1581..1596] 6-aminochrysene)))))))
+    (.:[1596..1597] .)))
+
+;sentence 10 Span:1598..1897
+;Studies employing immunoinhibition of microsomal catalytic  activities and
+;reconstitution with purified P450 enzymes suggested that the most  important
+;enzymes involved in the activation of 6-aminochrysene were P450 2B1  and 2B2;
+;other enzymes including P450 1A1 and 1A2 participated to some extent.
+;[1702..1714]:cyp450:"P450 enzymes"
+;[1750..1757]:cyp450:"enzymes"
+;[1788..1803]:substance:"6-aminochrysene"
+;[1809..1817]:cyp450:"P450 2B1"
+;[1809..1813]...[1823..1826]:cyp450:"P450"..."2B2"
+;[1834..1841]:cyp450:"enzymes"
+;[1852..1860]:cyp450:"P450 1A1"
+;[1852..1856]...[1865..1868]:cyp450:"P450"..."1A2"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1598..1605] Studies))
+      (VP (VBG:[1606..1615] employing)
+        (NP
+          (NP
+            (NP (NN:[1616..1632] immunoinhibition))
+            (PP (IN:[1633..1635] of)
+              (NP (JJ:[1636..1646] microsomal) (JJ:[1647..1656] catalytic)
+                  (NNS:[1658..1668] activities))))
+          (CC:[1669..1672] and)
+          (NP
+            (NP (NN:[1673..1687] reconstitution))
+            (PP (IN:[1688..1692] with)
+              (NP (VBN:[1693..1701] purified)
+                 (NN:[1702..1706] P450) (NNS:[1707..1714] enzymes)))))))
+    (VP (VBD:[1715..1724] suggested)
+      (SBAR (IN:[1725..1729] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1730..1733] the)
+              (ADJP (RBS:[1734..1738] most) (JJ:[1740..1749] important))
+              (NNS:[1750..1757] enzymes))
+            (VP (VBN:[1758..1766] involved)
+              (NP (-NONE-:[1766..1766] *))
+              (PP-CLR (IN:[1767..1769] in)
+                (NP
+                  (NP (DT:[1770..1773] the) (NN:[1774..1784] activation))
+                  (PP (IN:[1785..1787] of)
+                    (NP (NN:[1788..1803] 6-aminochrysene)))))))
+          (VP (VBD:[1804..1808] were)
+            (NP-PRD
+              (NP
+                (NML-1 (NN:[1809..1813] P450))
+                (NN:[1814..1817] 2B1))
+              (CC:[1819..1822] and)
+              (NP
+                (NML-1 (-NONE-:[1822..1822] *P*))
+                (NN:[1823..1826] 2B2)))))))
+    (::[1826..1827] ;)
+    (S
+      (NP-SBJ
+        (NP (JJ:[1828..1833] other) (NNS:[1834..1841] enzymes))
+        (PP (VBG:[1842..1851] including)
+          (NP
+            (NP
+              (NML-2 (NN:[1852..1856] P450))
+              (NN:[1857..1860] 1A1))
+            (CC:[1861..1864] and)
+            (NP
+              (NML-2 (-NONE-:[1864..1864] *P*))
+              (NN:[1865..1868] 1A2)))))
+      (VP (VBD:[1869..1881] participated)
+        (PP (TO:[1882..1884] to)
+          (NP (DT:[1885..1889] some) (NN:[1890..1896] extent)))))
+    (.:[1896..1897] .)))
+
+;sentence 11 Span:1899..2276
+;We also found that the microsomal activation of 6-aminochrysene was catalyzed
+; more effectively in an acetyltransferase-overexpressing strain (NM2009) than
+;in  the original TA1535/pSK1002 strain and that these activities could be
+;inhibited  by an acetyltransferase inhibitor, pentachlorophenol, in liver
+;microsomes from  PB-treated rats, but not in those from BNF-treated rats.
+;[1947..1962]:substance:"6-aminochrysene"
+;[2001..2018]:substance:"acetyltransferase"
+;[2146..2163]:substance:"acetyltransferase"
+;[2164..2173]:substance:"inhibitor"
+;[2175..2192]:substance:"pentachlorophenol"
+;[2220..2222]:substance:"PB"
+;[2259..2262]:substance:"BNF"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1899..1901] We))
+    (ADVP (RB:[1902..1906] also))
+    (VP (VBD:[1907..1912] found)
+      (SBAR
+        (SBAR (IN:[1913..1917] that)
+          (S
+            (NP-SBJ-4
+              (NP (DT:[1918..1921] the) (JJ:[1922..1932] microsomal)
+                  (NN:[1933..1943] activation))
+              (PP (IN:[1944..1946] of)
+                (NP (NN:[1947..1962] 6-aminochrysene))))
+            (VP (VBD:[1963..1966] was)
+              (VP (VBN:[1967..1976] catalyzed)
+                (NP-4 (-NONE-:[1976..1976] *))
+                (ADVP
+                  (ADVP (RBR:[1978..1982] more) (RB:[1983..1994] effectively))
+                  (PP-5 (-NONE-:[1994..1994] *ICH*)))
+                (PP-LOC (IN:[1995..1997] in)
+                  (NP
+                    (NP (DT:[1998..2000] an)
+                      (ADJP (NN:[2001..2018] acetyltransferase)
+                            (HYPH:[2018..2019] -)
+                            (VBG:[2019..2033] overexpressing))
+                      (NN:[2034..2040] strain))
+                    (NP (-LRB-:[2041..2042] -LRB-) (NN:[2042..2048] NM2009)
+                        (-RRB-:[2048..2049] -RRB-))))
+                (PP-5 (IN:[2050..2054] than)
+                  (PP (IN:[2055..2057] in)
+                    (NP-LOC (DT:[2059..2062] the) (JJ:[2063..2071] original)
+                      (NML (NN:[2072..2078] TA1535) (SYM:[2078..2079] /)
+                           (NN:[2079..2086] pSK1002))
+                      (NN:[2087..2093] strain))))))))
+        (CC:[2094..2097] and)
+        (SBAR (IN:[2098..2102] that)
+          (S
+            (NP-SBJ-3 (DT:[2103..2108] these) (NNS:[2109..2119] activities))
+            (VP (MD:[2120..2125] could)
+              (VP (VB:[2126..2128] be)
+                (VP
+                  (VP (VBN:[2129..2138] inhibited)
+                    (NP-3 (-NONE-:[2138..2138] *))
+                    (PP (IN:[2140..2142] by)
+                      (NP-LGS
+                        (NP (DT:[2143..2145] an)
+                            (NN:[2146..2163] acetyltransferase)
+                            (NN:[2164..2173] inhibitor))
+                        (,:[2173..2174] ,)
+                        (NP (NN:[2175..2192] pentachlorophenol))))
+                    (,:[2192..2193] ,)
+                    (PP-LOC=1 (IN:[2194..2196] in)
+                      (NP
+                        (NP (NN:[2197..2202] liver)
+                            (NNS:[2203..2213] microsomes))
+                        (PP (IN:[2214..2218] from)
+                          (NP
+                            (ADJP (NN:[2220..2222] PB) (HYPH:[2222..2223] -)
+                                  (VBN:[2223..2230] treated))
+                            (NNS:[2231..2235] rats))))))
+                  (,:[2235..2236] ,) (CC:[2237..2240] but)
+                  (VP (RB:[2241..2244] not)
+                    (PP-LOC=1 (IN:[2245..2247] in)
+                      (NP
+                        (NP (DT:[2248..2253] those))
+                        (PP (IN:[2254..2258] from)
+                          (NP
+                            (ADJP (NN:[2259..2262] BNF) (HYPH:[2262..2263] -)
+                                  (VBN:[2263..2270] treated))
+                            (NNS:[2271..2275] rats)))))))))))))
+    (.:[2275..2276] .)))
+
+;sentence 12 Span:2277..2583
+;These results suggest  that the P450/acetyltransferase system is one of the
+;most important catalysts  for the activation of 6-aminochrysene in liver
+;microsomes of PB-treated rats,  and that activation by BNF-induced P450
+;enzymes occurs by different mechanisms,  probably through the ring oxidation
+;pathway.
+;[2309..2313]:cyp450:"P450"
+;[2314..2331]:substance:"acetyltransferase"
+;[2368..2377]:substance:"catalysts"
+;[2401..2416]:substance:"6-aminochrysene"
+;[2440..2442]:substance:"PB"
+;[2481..2484]:substance:"BNF"
+;[2493..2505]:cyp450:"P450 enzymes"
+(SENT
+  (S
+    (NP-SBJ (DT:[2277..2282] These) (NNS:[2283..2290] results))
+    (VP (VBP:[2291..2298] suggest)
+      (SBAR
+        (SBAR (IN:[2300..2304] that)
+          (S
+            (NP-SBJ (DT:[2305..2308] the)
+              (NML (NN:[2309..2313] P450) (SYM:[2313..2314] /)
+                   (NN:[2314..2331] acetyltransferase))
+              (NN:[2332..2338] system))
+            (VP (VBZ:[2339..2341] is)
+              (NP-PRD
+                (NP (CD:[2342..2345] one))
+                (PP (IN:[2346..2348] of)
+                  (NP
+                    (NP (DT:[2349..2352] the)
+                      (ADJP (RBS:[2353..2357] most) (JJ:[2358..2367] important))
+                      (NNS:[2368..2377] catalysts))
+                    (PP (IN:[2379..2382] for)
+                      (NP
+                        (NP (DT:[2383..2386] the) (NN:[2387..2397] activation))
+                        (PP (IN:[2398..2400] of)
+                          (NP (NN:[2401..2416] 6-aminochrysene)))
+                        (PP-LOC (IN:[2417..2419] in)
+                          (NP
+                            (NP (NN:[2420..2425] liver)
+                                (NNS:[2426..2436] microsomes))
+                            (PP (IN:[2437..2439] of)
+                              (NP
+                                (ADJP (NN:[2440..2442] PB) (HYPH:[2442..2443] -)
+                                      (VBN:[2443..2450] treated))
+                                (NNS:[2451..2455] rats)))))))))))))
+        (,:[2455..2456] ,) (CC:[2458..2461] and)
+        (SBAR (IN:[2462..2466] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[2467..2477] activation))
+              (PP (IN:[2478..2480] by)
+                (NP
+                  (ADJP (NN:[2481..2484] BNF) (HYPH:[2484..2485] -)
+                        (VBN:[2485..2492] induced))
+                   (NN:[2493..2497] P450) (NNS:[2498..2505] enzymes))))
+            (VP (VBZ:[2506..2512] occurs)
+              (PP (IN:[2513..2515] by)
+                (NP (JJ:[2516..2525] different) (NNS:[2526..2536] mechanisms)))
+              (,:[2536..2537] ,)
+              (FRAG-ADV
+                (ADVP (RB:[2539..2547] probably))
+                (PP (IN:[2548..2555] through)
+                  (NP (DT:[2556..2559] the) (NN:[2560..2564] ring)
+                      (NN:[2565..2574] oxidation) (NN:[2575..2582] pathway)))))))))
+    (.:[2582..2583] .)))
+
+;section 13 Span:2587..2631
+;PMID: 1530660 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2587..2591] PMID) (::[2591..2592] :) (CD:[2593..2600] 1530660)
+        (-LRB-:[2601..2602] -LSB-) (NNP:[2602..2608] PubMed)
+        (HYPH:[2609..2610] -) (VBN:[2611..2618] indexed) (IN:[2619..2622] for)
+        (NNP:[2623..2630] MEDLINE) (-RRB-:[2630..2631] -RSB-)))

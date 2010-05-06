@@ -1,0 +1,487 @@
+;PMID: 1755509
+;source_file_1903.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..186] = [t:50..186]
+;2)section:[e:190..229] = [t:190..229]
+;3)section:[e:233..311] = [t:233..311]
+;4)sentence:[e:315..395] = [t:315..395]
+;5)sentence:[e:397..600] = [t:397..600]
+;6)sentence:[e:601..777] = [t:601..777]
+;7)sentence:[e:778..896] = [t:778..896]
+;8)sentence:[e:897..1182] = [t:897..1182]
+;9)sentence:[e:1184..1442] = [t:1184..1442]
+;10)sentence:[e:1443..1597] = [t:1443..1597]
+;11)sentence:[e:1598..1994] = [t:1598..1994]
+;12)section:[e:1998..2042] = [t:1998..2042]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[27..30] Oct
+;ERROR_Token in entity file but not tree[30..31] ;
+;ERROR_Token in entity file but not tree[31..33] 15
+;ERROR_Token in entity file but not tree[36..37] :
+;ERROR_Token in entity file but not tree[37..40] 779
+;ERROR_Token in entity file but not tree[40..41] -
+;ERROR_Token in entity file but not tree[41..43] 84
+;ERROR_Token in entity file but not tree[227..228] C
+;ERROR_Token in entity file but not tree[228..229] .
+;ERROR_Token in entity file but not tree[2034..2041] MEDLINE
+;ERROR_Token in entity file but not tree[2041..2042] ]
+;ERROR_Token in tree file but not entity[27..33] Oct;15
+;ERROR_Token in tree file but not entity[36..40] :779
+;ERROR_Token in tree file but not entity[40..43] -84
+;ERROR_POS mismatch [176..185] t:NN e:CD P-450IIE1
+;ERROR_Token in tree file but not entity[227..229] C.
+;ERROR_POS mismatch [886..895] t:NN e:CD P-450IIE1
+;ERROR_Token in tree file but not entity[2034..2042] MEDLINE]
+
+;section 0 Span:0..44
+;Alcohol Clin Exp Res. 1991 Oct;15(5):779-84.
+(SEC
+  (FRAG (NNP:[0..7] Alcohol) (NNP:[8..12] Clin) (NNP:[13..16] Exp)
+        (NNP:[17..20] Res) (.:[20..21] .) (CD:[22..26] 1991) (.:[27..33] Oct;15)
+        (-LRB-:[33..34] -LRB-) (CD:[34..35] 5) (-RRB-:[35..36] -RRB-)
+        (CD:[36..40] :779) (CD:[40..43] -84) (.:[43..44] .)))
+
+;sentence 1 Span:50..186
+;Ethanol-induced enhancement of cocaine bioactivation and irreversible protein
+; binding: evidence against a role of cytochrome P-450IIE1.
+;[50..57]:substance:"Ethanol"
+;[81..88]:substance:"cocaine"
+;[120..127]:substance:"protein"
+;[165..185]:cyp450:"cytochrome P-450IIE1"
+(SENT
+  (NP-HLN
+    (NP
+      (NP
+        (ADJP (NN:[50..57] Ethanol) (HYPH:[57..58] -) (VBN:[58..65] induced))
+        (NN:[66..77] enhancement))
+      (PP (IN:[78..80] of)
+        (NP
+          (NP
+            (NML-1 (NN:[81..88] cocaine))
+            (NN:[89..102] bioactivation))
+          (CC:[103..106] and)
+          (NP
+            (NML-1 (-NONE-:[106..106] *P*))
+            (JJ:[107..119] irreversible) (NN:[120..127] protein)
+             (NN:[129..136] binding)))))
+    (::[136..137] :)
+    (NP
+      (NP (NN:[138..146] evidence))
+      (PP (IN:[147..154] against)
+        (NP
+          (NP (DT:[155..156] a) (NN:[157..161] role))
+          (PP (IN:[162..164] of)
+            (NP (NN:[165..175] cytochrome) (NN:[176..185] P-450IIE1))))))
+    (.:[185..186] .)))
+
+;section 2 Span:190..229
+;Boelsterli UA, Atanasoski S, Goldlin C.
+(SEC
+  (FRAG (NNP:[190..200] Boelsterli) (NNP:[201..203] UA) (,:[203..204] ,)
+        (NNP:[205..215] Atanasoski) (NNP:[216..217] S) (,:[217..218] ,)
+        (NNP:[219..226] Goldlin) (NNP:[227..229] C.)))
+
+;section 3 Span:233..311
+;Institute of Toxicology, Swiss Federal Institute of Technology,
+;Schwerzenbach.
+(SEC
+  (FRAG (NNP:[233..242] Institute) (IN:[243..245] of)
+        (NNP:[246..256] Toxicology) (,:[256..257] ,) (NNP:[258..263] Swiss)
+        (NNP:[264..271] Federal) (NNP:[272..281] Institute) (IN:[282..284] of)
+        (NNP:[285..295] Technology) (,:[295..296] ,)
+        (NNP:[297..310] Schwerzenbach) (.:[310..311] .)))
+
+;sentence 4 Span:315..395
+;Chronic ethanol consumption potentiates cocaine-induced liver injury in
+;rodents.
+;[323..330]:substance:"ethanol"
+;[355..362]:substance:"cocaine"
+(SENT
+  (S
+    (NP-SBJ (JJ:[315..322] Chronic) (NN:[323..330] ethanol)
+            (NN:[331..342] consumption))
+    (VP (VBZ:[343..354] potentiates)
+      (NP
+        (ADJP (NN:[355..362] cocaine) (HYPH:[362..363] -)
+              (VBN:[363..370] induced))
+        (NN:[371..376] liver) (NN:[377..383] injury))
+      (PP-LOC (IN:[384..386] in)
+        (NML (NNS:[387..394] rodents))))
+    (.:[394..395] .)))
+
+;sentence 5 Span:397..600
+;Since cocaine has to be bioactivated by a cytochrome P-450-dependent
+;N-oxidative  pathway to exert its hepatotoxic effects, we studied the role of
+;the  ethanol-inducible P-450IIE1 for cocaine metabolism.
+;[403..410]:substance:"cocaine"
+;[439..455]:cyp450:"cytochrome P-450"
+;[549..556]:substance:"ethanol"
+;[567..576]:cyp450:"P-450IIE1"
+;[581..588]:substance:"cocaine"
+(SENT
+  (S
+    (SBAR-ADV (IN:[397..402] Since)
+      (S
+        (NP-SBJ-1 (NN:[403..410] cocaine))
+        (VP (VBZ:[411..414] has)
+          (S
+            (NP-SBJ-1 (-NONE-:[414..414] *))
+            (VP (TO:[415..417] to)
+              (VP (VB:[418..420] be)
+                (VP (VBN:[421..433] bioactivated)
+                  (NP-1 (-NONE-:[433..433] *))
+                  (PP (IN:[434..436] by)
+                    (NP-LGS (DT:[437..438] a)
+                      (ADJP
+                        (NML (NN:[439..449] cytochrome) (NN:[450..455] P-450))
+                        (HYPH:[455..456] -) (JJ:[456..465] dependent))
+                      (JJ:[466..477] N-oxidative) (NN:[479..486] pathway)))
+                  (S-PRP
+                    (NP-SBJ-1 (-NONE-:[486..486] *))
+                    (VP (TO:[487..489] to)
+                      (VP (VB:[490..495] exert)
+                        (NP (PRP$:[496..499] its) (JJ:[500..511] hepatotoxic)
+                            (NNS:[512..519] effects))))))))))))
+    (,:[519..520] ,)
+    (NP-SBJ (PRP:[521..523] we))
+    (VP (VBD:[524..531] studied)
+      (NP
+        (NP (DT:[532..535] the) (NN:[536..540] role))
+        (PP (IN:[541..543] of)
+          (NP (DT:[544..547] the)
+            (ADJP (NN:[549..556] ethanol) (HYPH:[556..557] -)
+                  (JJ:[557..566] inducible))
+            (NN:[567..576] P-450IIE1)))
+        (PP (IN:[577..580] for)
+          (NP (NN:[581..588] cocaine) (NN:[589..599] metabolism)))))
+    (.:[599..600] .)))
+
+;sentence 6 Span:601..777
+;Male Sprague-Dawley rats  were pretreated with either a liquid diet
+;containing ethanol (30% of calories)  for 4 weeks or injected with pyrazole
+;(200 mg/kg/day, ip, for 3 days).
+;[657..663]:substance:"liquid"
+;[680..687]:substance:"ethanol"
+;[689..692]:quantitative-value:"30%"
+;[711..712]:quantitative-value:"4"
+;[713..718]:quantitative-units:"weeks"
+;[736..744]:substance:"pyrazole"
+;[746..749]:quantitative-value:"200"
+;[750..759]:quantitative-units:"mg/kg/day"
+;[769..770]:quantitative-value:"3"
+;[771..775]:quantitative-units:"days"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[601..605] Male)
+      (NML (NNP:[606..613] Sprague) (HYPH:[613..614] -) (NNP:[614..620] Dawley))
+      (NNS:[621..625] rats))
+    (VP (VBD:[627..631] were)
+      (VP
+        (VP (VBN:[632..642] pretreated)
+          (NP-1 (-NONE-:[642..642] *))
+          (PP-MNR (IN:[643..647] with)
+            (NP (CC:[648..654] either)
+              (NP (DT:[655..656] a) (NN:[657..663] liquid) (NN:[664..668] diet))
+              (VP (VBG:[669..679] containing)
+                (NP
+                  (NP (NN:[680..687] ethanol))
+                  (PRN (-LRB-:[688..689] -LRB-)
+                    (NP
+                      (NP (CD:[689..691] 30) (NN:[691..692] %))
+                      (PP (IN:[693..695] of)
+                        (NP (NNS:[696..704] calories))))
+                    (-RRB-:[704..705] -RRB-))))))
+          (PP-TMP (IN:[707..710] for)
+            (NP (CD:[711..712] 4) (NNS:[713..718] weeks))))
+        (CC:[719..721] or)
+        (VP (VBN:[722..730] injected)
+          (NP-1 (-NONE-:[730..730] *))
+          (PP-MNR (IN:[731..735] with)
+            (NP
+              (NP (NN:[736..744] pyrazole))
+              (PRN (-LRB-:[745..746] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (CD:[746..749] 200) (NN:[750..752] mg))
+                    (PP (SYM:[752..753] /)
+                      (NP (NN:[753..755] kg)))
+                    (PP (SYM:[755..756] /)
+                      (NP (NN:[756..759] day))))
+                  (,:[759..760] ,)
+                  (ADVP (RB:[761..763] ip))
+                  (,:[763..764] ,)
+                  (PP-TMP (IN:[765..768] for)
+                    (NP (CD:[769..770] 3) (NNS:[771..775] days))))
+                (-RRB-:[775..776] -RRB-)))))))
+    (.:[776..777] .)))
+
+;sentence 7 Span:778..896
+;Both  agents induced microsomal p-nitrophenol hydroxylation which is a probe
+;for the  catalytic activity of P-450IIE1.
+;[784..790]:substance:"agents"
+;[810..823]:substance:"p-nitrophenol"
+;[886..895]:cyp450:"P-450IIE1"
+(SENT
+  (S
+    (NP-SBJ (DT:[778..782] Both) (NNS:[784..790] agents))
+    (VP (VBD:[791..798] induced)
+      (NP
+        (NP (JJ:[799..809] microsomal) (NN:[810..823] p-nitrophenol)
+            (NN:[824..837] hydroxylation))
+        (SBAR
+          (WHNP-1 (WDT:[838..843] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[843..843] *T*))
+            (VP (VBZ:[844..846] is)
+              (NP-PRD
+                (NP (DT:[847..848] a) (NN:[849..854] probe))
+                (PP (IN:[855..858] for)
+                  (NP
+                    (NP (DT:[859..862] the) (JJ:[864..873] catalytic)
+                        (NN:[874..882] activity))
+                    (PP (IN:[883..885] of)
+                      (NP (NN:[886..895] P-450IIE1)))))))))))
+    (.:[895..896] .)))
+
+;sentence 8 Span:897..1182
+;However, only ethanol, but not pyrazole,  increased both microsomal cocaine
+;N-demethylase activity (by 47%) and the extent  of irreversible binding of
+;[3H]-cocaine to microsomal proteins (by 100%), which  was taken as a
+;quantitative endpoint for the formation of a reactive metabolite.
+;[911..918]:substance:"ethanol"
+;[928..936]:substance:"pyrazole"
+;[965..986]:substance:"cocaine N-demethylase"
+;[1000..1003]:quantitative-value:"47%"
+;[1048..1060]:substance:"[3H]-cocaine"
+;[1075..1083]:substance:"proteins"
+;[1088..1092]:quantitative-value:"100%"
+;[1171..1181]:substance:"metabolite"
+(SENT
+  (S
+    (ADVP (RB:[897..904] However))
+    (,:[904..905] ,)
+    (NP-SBJ
+      (NP (RB:[906..910] only) (NN:[911..918] ethanol))
+      (,:[918..919] ,)
+      (CONJP (CC:[920..923] but) (RB:[924..927] not))
+      (NP (NN:[928..936] pyrazole)))
+    (,:[936..937] ,)
+    (VP (VBD:[939..948] increased)
+      (NP (CC:[949..953] both)
+        (NP
+          (NP (JJ:[954..964] microsomal)
+            (NML (NN:[965..972] cocaine) (NN:[973..986] N-demethylase))
+            (NN:[987..995] activity))
+          (PRN (-LRB-:[996..997] -LRB-)
+            (PP-EXT (IN:[997..999] by)
+              (NP (CD:[1000..1002] 47) (NN:[1002..1003] %)))
+            (-RRB-:[1003..1004] -RRB-)))
+        (CC:[1005..1008] and)
+        (NP
+          (NP (DT:[1009..1012] the) (NN:[1013..1019] extent))
+          (PP (IN:[1021..1023] of)
+            (NP
+              (NP (JJ:[1024..1036] irreversible) (NN:[1037..1044] binding))
+              (PP (IN:[1045..1047] of)
+                (NP (NN:[1048..1060] -LSB-3H-RSB--cocaine)))
+              (PP (TO:[1061..1063] to)
+                (NP (JJ:[1064..1074] microsomal) (NNS:[1075..1083] proteins)))
+              (PRN (-LRB-:[1084..1085] -LRB-)
+                (PP-EXT (IN:[1085..1087] by)
+                  (NP (CD:[1088..1091] 100) (NN:[1091..1092] %)))
+                (-RRB-:[1092..1093] -RRB-))))))
+      (,:[1093..1094] ,)
+      (SBAR-ADV
+        (WHNP-1 (WDT:[1095..1100] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[1100..1100] *T*))
+          (VP (VBD:[1102..1105] was)
+            (VP (VBN:[1106..1111] taken)
+              (NP-1 (-NONE-:[1111..1111] *))
+              (PP-CLR (IN:[1112..1114] as)
+                (NP
+                  (NP (DT:[1115..1116] a) (JJ:[1117..1129] quantitative)
+                      (NN:[1130..1138] endpoint))
+                  (PP (IN:[1139..1142] for)
+                    (NP
+                      (NP (DT:[1143..1146] the) (NN:[1147..1156] formation))
+                      (PP (IN:[1157..1159] of)
+                        (NP (DT:[1160..1161] a) (JJ:[1162..1170] reactive)
+                            (NN:[1171..1181] metabolite))))))))))))
+    (.:[1181..1182] .)))
+
+;sentence 9 Span:1184..1442
+;Cocaine N-demethylation and irreversible protein binding of cocaine were not 
+;inhibited by P-450IIE1 isozyme-selective substrates, nor was the rate of
+;cocaine  metabolism and binding decreased by functionally active polyclonal
+;anti-rat  P-450IIE1 antibodies.
+;[1184..1191]:substance:"Cocaine"
+;[1225..1232]:substance:"protein"
+;[1244..1251]:substance:"cocaine"
+;[1275..1292]:cyp450:"P-450IIE1 isozyme"
+;[1303..1313]:substance:"substrates"
+;[1335..1342]:substance:"cocaine"
+;[1400..1441]:substance:"polyclonal anti-rat  P-450IIE1 antibodies"
+(SENT
+  (S
+    (S
+      (NP-SBJ-3
+        (NP (NN:[1184..1191] Cocaine) (NN:[1192..1207] N-demethylation))
+        (CC:[1208..1211] and)
+        (NP
+          (NP (JJ:[1212..1224] irreversible) (NN:[1225..1232] protein)
+              (NN:[1233..1240] binding))
+          (PP (IN:[1241..1243] of)
+            (NP (NN:[1244..1251] cocaine)))))
+      (VP (VBD:[1252..1256] were) (RB:[1257..1260] not)
+        (VP (VBN:[1262..1271] inhibited)
+          (NP-3 (-NONE-:[1271..1271] *))
+          (PP (IN:[1272..1274] by)
+            (NP-LGS
+              (ADJP
+                (NML (NN:[1275..1284] P-450IIE1) (NN:[1285..1292] isozyme))
+                (HYPH:[1292..1293] -) (JJ:[1293..1302] selective))
+              (NNS:[1303..1313] substrates))))))
+    (,:[1313..1314] ,) (CC:[1315..1318] nor)
+    (SINV (VBD:[1319..1322] was)
+      (NP-SBJ-2
+        (NP (DT:[1323..1326] the) (NN:[1327..1331] rate))
+        (PP (IN:[1332..1334] of)
+          (NP
+            (NP
+              (NML-1 (NN:[1335..1342] cocaine))
+              (NN:[1344..1354] metabolism))
+            (CC:[1355..1358] and)
+            (NP
+              (NML-1 (-NONE-:[1358..1358] *P*))
+              (NN:[1359..1366] binding)))))
+      (VP (VBN:[1367..1376] decreased)
+        (NP-2 (-NONE-:[1376..1376] *))
+        (PP (IN:[1377..1379] by)
+          (NP-LGS
+            (ADJP (RB:[1380..1392] functionally) (JJ:[1393..1399] active))
+             (JJ:[1400..1410] polyclonal)
+            (NML (AFX:[1411..1415] anti) (HYPH:[1415..1416] -)
+                 (NN:[1416..1419] rat) (NN:[1421..1430] P-450IIE1))
+            (NNS:[1431..1441] antibodies)))))
+    (.:[1441..1442] .)))
+
+;sentence 10 Span:1443..1597
+;Furthermore, pyrazole pretreatment sensitized cultured  hepatocytes to the
+;glutathione-dependent cytotoxic effects of nontoxic  concentrations of
+;cocaine.
+;[1456..1464]:substance:"pyrazole"
+;[1518..1529]:substance:"glutathione"
+;[1589..1596]:substance:"cocaine"
+(SENT
+  (S
+    (ADVP (RB:[1443..1454] Furthermore))
+    (,:[1454..1455] ,)
+    (NP-SBJ (NN:[1456..1464] pyrazole) (NN:[1465..1477] pretreatment))
+    (VP (VBD:[1478..1488] sensitized)
+      (NP (VBN:[1489..1497] cultured) (NNS:[1499..1510] hepatocytes))
+      (PP-CLR (TO:[1511..1513] to)
+        (NP
+          (NP (DT:[1514..1517] the)
+            (ADJP (NN:[1518..1529] glutathione) (HYPH:[1529..1530] -)
+                  (JJ:[1530..1539] dependent))
+            (JJ:[1540..1549] cytotoxic) (NNS:[1550..1557] effects))
+          (PP (IN:[1558..1560] of)
+            (NP
+              (NP (JJ:[1561..1569] nontoxic) (NNS:[1571..1585] concentrations))
+              (PP (IN:[1586..1588] of)
+                (NP (NN:[1589..1596] cocaine))))))))
+    (.:[1596..1597] .)))
+
+;sentence 11 Span:1598..1994
+;These results indicate that (a) cocaine is not a  major substrate for the
+;ethanol-inducible P-450IIE1, (b) the enhancing effects  of ethanol on cocaine
+;bioactivation may be due to induction of other P-450  isoforms, and (c)
+;induction of P-450IIE1 may potentiate cocaine-induced  hepatocellular
+;toxicity in vitro independently of cocaine metabolism, e.g., by 
+;P-450IIE1-dependent oxidative stress.
+;[1630..1637]:substance:"cocaine"
+;[1654..1663]:substance:"substrate"
+;[1672..1679]:substance:"ethanol"
+;[1690..1699]:cyp450:"P-450IIE1"
+;[1731..1738]:substance:"ethanol"
+;[1742..1749]:substance:"cocaine"
+;[1797..1812]:cyp450:"P-450  isoforms"
+;[1835..1844]:cyp450:"P-450IIE1"
+;[1860..1867]:substance:"cocaine"
+;[1927..1934]:substance:"cocaine"
+;[1957..1966]:cyp450:"P-450IIE1"
+(SENT
+  (S
+    (NP-SBJ (DT:[1598..1603] These) (NNS:[1604..1611] results))
+    (VP (VBP:[1612..1620] indicate)
+      (SBAR (IN:[1621..1625] that)
+        (S
+          (S
+            (LST (LS:[1626..1629] -LRB-a-RRB-))
+            (NP-SBJ (NN:[1630..1637] cocaine))
+            (VP (VBZ:[1638..1640] is) (RB:[1641..1644] not)
+              (NP-PRD
+                (NP (DT:[1645..1646] a) (JJ:[1648..1653] major)
+                    (NN:[1654..1663] substrate))
+                (PP (IN:[1664..1667] for)
+                  (NP (DT:[1668..1671] the)
+                    (ADJP (NN:[1672..1679] ethanol) (HYPH:[1679..1680] -)
+                          (JJ:[1680..1689] inducible))
+                    (NN:[1690..1699] P-450IIE1))))))
+          (,:[1699..1700] ,)
+          (S
+            (LST (LS:[1701..1704] -LRB-b-RRB-))
+            (NP-SBJ
+              (NP (DT:[1705..1708] the) (VBG:[1709..1718] enhancing)
+                  (NNS:[1719..1726] effects))
+              (PP (IN:[1728..1730] of)
+                (NP (NN:[1731..1738] ethanol)))
+              (PP (IN:[1739..1741] on)
+                (NP (NN:[1742..1749] cocaine) (NN:[1750..1763] bioactivation))))
+            (VP (MD:[1764..1767] may)
+              (VP (VB:[1768..1770] be)
+                (PP-PRD (IN:[1771..1774] due)
+                  (PP (TO:[1775..1777] to)
+                    (NP
+                      (NP (NN:[1778..1787] induction))
+                      (PP (IN:[1788..1790] of)
+                        (NP (JJ:[1791..1796] other)
+                           (NN:[1797..1802] P-450) (NNS:[1804..1812] isoforms)))))))))
+          (,:[1812..1813] ,) (CC:[1814..1817] and)
+          (S
+            (LST (LS:[1818..1821] -LRB-c-RRB-))
+            (NP-SBJ
+              (NP (NN:[1822..1831] induction))
+              (PP (IN:[1832..1834] of)
+                (NP (NN:[1835..1844] P-450IIE1))))
+            (VP (MD:[1845..1848] may)
+              (VP (VB:[1849..1859] potentiate)
+                (NP
+                  (ADJP (NN:[1860..1867] cocaine) (HYPH:[1867..1868] -)
+                        (VBN:[1868..1875] induced))
+                  (JJ:[1877..1891] hepatocellular) (NN:[1892..1900] toxicity))
+                (ADVP (FW:[1901..1903] in) (FW:[1904..1909] vitro))
+                (ADVP-MNR (RB:[1910..1923] independently)
+                  (PP (IN:[1924..1926] of)
+                    (NP (NN:[1927..1934] cocaine) (NN:[1935..1945] metabolism))))
+                (,:[1945..1946] ,)
+                (PP-MNR
+                  (ADVP (FW:[1947..1951] e.g.))
+                  (,:[1951..1952] ,) (IN:[1953..1955] by)
+                  (NP
+                    (ADJP (NN:[1957..1966] P-450IIE1) (HYPH:[1966..1967] -)
+                          (JJ:[1967..1976] dependent))
+                    (JJ:[1977..1986] oxidative) (NN:[1987..1993] stress)))))))))
+    (.:[1993..1994] .)))
+
+;section 12 Span:1998..2042
+;PMID: 1755509 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1998..2002] PMID) (::[2002..2003] :) (CD:[2004..2011] 1755509)
+        (NN:[2012..2013] -LSB-) (NNP:[2013..2019] PubMed) (::[2020..2021] -)
+        (NN:[2022..2029] indexed) (IN:[2030..2033] for)
+        (NNP:[2034..2042] MEDLINE-RSB-)))

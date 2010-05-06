@@ -1,0 +1,209 @@
+;PMID: 1341278
+;source_file_471.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)sentence:[e:0..127] = [t:0..127]
+;1)section:[e:131..201] = [t:131..201]
+;2)sentence:[e:205..279] = [t:205..279]
+;3)sentence:[e:283..453] = [t:283..453]
+;4)sentence:[e:454..592] = [t:454..592]
+;5)sentence:[e:594..645] = [t:594..645]
+;6)sentence:[e:646..708] = [t:646..708]
+;7)sentence:[e:709..856] = [t:709..856]
+;8)section:[e:860..904] = [t:860..904]
+
+;sentence 0 Span:0..127
+;Surg Oncol  1992 Dec;1(6):405-11     Analysis of ras oncogene mutations in
+;human squamous cell carcinoma of the head  and neck.
+;[49..52]:gene-rna:"ras"
+;[81..126]:malignancy:"squamous cell carcinoma of the head  and neck"
+(SENT
+  (FRAG (NNP:[0..4] Surg) (NNP:[5..10] Oncol) (CD:[12..16] 1992)
+        (NNP:[17..21] Dec;) (CD:[21..22] 1) (NN:[22..23] -LRB-) (CD:[23..24] 6)
+        (NN:[24..25] -RRB-) (::[25..26] :) (CD:[26..28] 40) (CD:[28..32] 5-11))
+  (NP-HLN
+    (NP (NN:[37..45] Analysis))
+    (PP (IN:[46..48] of)
+      (NP (NN:[49..52] ras) (NN:[53..61] oncogene) (NNS:[62..71] mutations)))
+    (PP (IN:[72..74] in)
+      (NP
+        (NP (JJ:[75..80] human)
+          (NML (JJ:[81..89] squamous) (NN:[90..94] cell))
+          (NN:[95..104] carcinoma))
+        (PP (IN:[105..107] of)
+          (NP (DT:[108..111] the) (NN:[112..116] head) (CC:[118..121] and)
+              (NN:[122..126] neck)))))
+    (.:[126..127] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[0..127]::FRAG:NP:
+
+;section 1 Span:131..201
+;Nunez F, Dominguez O, Coto E, Suarez-Nieto C, Perez P, Lopez-Larrea C.
+(SEC
+  (FRAG (NNP:[131..136] Nunez) (NNP:[137..138] F) (,:[138..139] ,)
+        (NNP:[140..149] Dominguez) (NNP:[150..152] O,) (NNP:[153..157] Coto)
+        (NNP:[158..159] E) (,:[159..160] ,) (NNP:[161..166] Suare)
+        (NNP:[166..173] z-Nieto) (NNP:[174..176] C,) (NNP:[177..182] Perez)
+        (NNP:[183..185] P,) (NNP:[186..190] Lope) (NNP:[190..198] z-Larrea)
+        (NNP:[199..201] C.)))
+
+;sentence 2 Span:205..279
+;Department of Otolaryngology, Hospital Central de Asturias, Oviedo, Spain.
+(SENT
+  (FRAG (NNP:[205..215] Department) (IN:[216..218] of)
+        (NNP:[219..233] Otolaryngology) (,:[233..234] ,)
+        (NNP:[235..243] Hospital) (NNP:[244..251] Central) (NNP:[252..254] de)
+        (NNP:[255..263] Asturias) (,:[263..264] ,) (NNP:[265..271] Oviedo)
+        (,:[271..272] ,) (NNP:[273..278] Spain) (.:[278..279] .)))
+
+;sentence 3 Span:283..453
+;The presence of proto-oncogene mutations at codons 12, 13 and 61 of the Ha-, 
+;Ki-, and N-ras in primary head and neck squamous cell carcinoma are analysed
+;in  this study.
+;[314..323]:variation-event:"mutations"
+;[327..336]:variation-location:"codons 12"
+;[338..340]:variation-location:"13"
+;[345..347]:variation-location:"61"
+;[355..358]...[372..375]:gene-rna:"Ha-"..."ras"
+;[361..364]...[372..375]:gene-rna:"Ki-"..."ras"
+;[370..375]:gene-rna:"N-ras"
+;[379..424]:malignancy:"primary head and neck squamous cell carcinoma"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[283..286] The) (NN:[287..295] presence))
+      (PP (IN:[296..298] of)
+        (NP
+          (NML (AFX:[299..304] proto) (HYPH:[304..305] -)
+               (NN:[305..313] oncogene))
+          (NNS:[314..323] mutations)))
+      (PP-LOC (IN:[324..326] at)
+        (NP
+          (NP
+            (NP
+              (NML-2 (NNS:[327..333] codons))
+              (CD:[334..336] 12))
+            (,:[336..337] ,)
+            (NP
+              (NML-2 (-NONE-:[337..337] *P*))
+              (CD:[338..340] 13))
+            (CC:[341..344] and)
+            (NP
+              (NML-2 (-NONE-:[344..344] *P*))
+              (CD:[345..347] 61)))
+          (PP (IN:[348..350] of)
+            (NP (DT:[351..354] the)
+              (NML
+                (NML (NN:[355..357] Ha) (HYPH:[357..358] -)
+                  (NML-1 (-NONE-:[358..358] *P*)))
+                (,:[358..359] ,)
+                (NML (NN:[361..363] Ki) (HYPH:[363..364] -)
+                  (NML-1 (-NONE-:[364..364] *P*)))
+                (,:[364..365] ,) (CC:[366..369] and)
+                (NML (NN:[370..371] N) (HYPH:[371..372] -)
+                  (NML-1 (NN:[372..375] ras))))))))
+      (PP (IN:[376..378] in)
+        (NP (JJ:[379..386] primary)
+          (NML (NN:[387..391] head) (CC:[392..395] and) (NN:[396..400] neck))
+          (JJ:[401..409] squamous) (NN:[410..414] cell)
+           (NN:[415..424] carcinoma))))
+    (VP (VBP:[425..428] are)
+      (VP (VBN:[429..437] analysed)
+        (NP-3 (-NONE-:[437..437] *))
+        (PP (IN:[438..440] in)
+          (NP (DT:[442..446] this) (NN:[447..452] study)))))
+    (.:[452..453] .)))
+
+;sentence 4 Span:454..592
+;Oncogene ras-specific sequences were amplified by the polymerase  chain
+;reaction and probed with mutation specific oligonucleotide probes.
+;[463..466]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML
+        (NML (NN:[454..462] Oncogene) (NN:[463..466] ras))
+        (HYPH:[466..467] -) (JJ:[467..475] specific))
+      (NNS:[476..485] sequences))
+    (VP (VBD:[486..490] were)
+      (VP
+        (VP (VBN:[491..500] amplified)
+          (NP-1 (-NONE-:[500..500] *))
+          (PP (IN:[501..503] by)
+            (NP-LGS (DT:[504..507] the) (NN:[508..518] polymerase)
+                    (NN:[520..525] chain) (NN:[526..534] reaction))))
+        (CC:[535..538] and)
+        (VP (VBD:[539..545] probed)
+          (NP-1 (-NONE-:[545..545] *))
+          (PP-MNR (IN:[546..550] with)
+            (NP
+              (ADJP (NN:[551..559] mutation) (JJ:[560..568] specific))
+              (NN:[569..584] oligonucleotide) (NNS:[585..591] probes))))))
+    (.:[591..592] .)))
+
+;sentence 5 Span:594..645
+;Mutations were detected in 8 of 22 samples (36.3%).
+;[621..636]:malignancy:"8 of 22 samples"
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[594..603] Mutations))
+    (VP (VBD:[604..608] were)
+      (VP (VBN:[609..617] detected)
+        (NP-1 (-NONE-:[617..617] *))
+        (PP (IN:[618..620] in)
+          (NP
+            (NP (CD:[621..622] 8))
+            (PP (IN:[623..625] of)
+              (NP (CD:[626..628] 22) (NNS:[629..636] samples)
+                (PRN (-LRB-:[637..638] -LRB-)
+                  (NP (CD:[638..642] 36.3) (NN:[642..643] %))
+                  (-RRB-:[643..644] -RRB-))))))))
+    (.:[644..645] .)))
+
+;sentence 6 Span:646..708
+;No mutations were detected  on patients' peripheral blood DNA.
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[646..648] No) (NNS:[649..658] mutations))
+    (VP (VBD:[659..663] were)
+      (VP (VBN:[664..672] detected)
+        (NP-1 (-NONE-:[672..672] *))
+        (PP (IN:[674..676] on)
+          (NP
+            (NP (NNS:[677..685] patients) (POS:[685..686] '))
+            (JJ:[687..697] peripheral) (NN:[698..703] blood) (NN:[704..707] DNA)))))
+    (.:[707..708] .)))
+
+;sentence 7 Span:709..856
+;We found that histologically and clinically,  squamous cell carcinomas with
+;or without a ras mutation do not differ  significantly from each other.
+;[755..779]:malignancy:"squamous cell carcinomas"
+;[798..801]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[709..711] We))
+    (VP (VBD:[712..717] found)
+      (SBAR (IN:[718..722] that)
+        (S
+          (ADVP (RB:[723..737] histologically) (CC:[738..741] and)
+                (RB:[742..752] clinically))
+          (,:[752..753] ,)
+          (NP-SBJ
+            (NP (JJ:[755..763] squamous) (NN:[764..768] cell)
+                (NNS:[769..779] carcinomas))
+            (PP (IN:[780..784] with) (CC:[785..787] or) (IN:[788..795] without)
+              (NP (DT:[796..797] a) (NN:[798..801] ras) (NN:[802..810] mutation))))
+          (VP (VBP:[811..813] do) (RB:[814..817] not)
+            (VP (VB:[818..824] differ)
+              (ADVP (RB:[826..839] significantly))
+              (PP (IN:[840..844] from)
+                (NP (DT:[845..849] each) (JJ:[850..855] other))))))))
+    (.:[855..856] .)))
+
+;section 8 Span:860..904
+;PMID: 1341278 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[860..864] PMID) (::[864..865] :) (CD:[866..873] 1341278)
+        (NN:[874..875] -LSB-) (NNP:[875..881] PubMed) (::[882..883] -)
+        (NN:[884..891] indexed) (IN:[892..895] for)
+        (NNP:[896..904] MEDLINE-RSB-)))

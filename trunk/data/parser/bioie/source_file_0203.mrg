@@ -1,0 +1,547 @@
+;PMID: 11510894
+;source_file_975.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..131] = [t:44..131]
+;2)section:[e:135..170] = [t:135..170]
+;3)section:[e:174..296] = [t:174..296]
+;4)sentence:[e:300..543] = [t:300..543]
+;5)sentence:[e:544..756] = [t:544..756]
+;6)sentence:[e:757..990] = [t:757..990]
+;7)sentence:[e:991..1224] = [t:991..1224]
+;8)sentence:[e:1225..1385] = [t:1225..1385]
+;9)sentence:[e:1386..1557] = [t:1386..1557]
+;10)sentence:[e:1558..1744] = [t:1558..1744]
+;11)sentence:[e:1745..1819] = [t:1745..1819]
+;12)sentence:[e:1820..2002] = [t:1820..2002]
+;13)sentence:[e:2003..2235] = [t:2003..2235]
+;14)section:[e:2239..2284] = [t:2239..2284]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[866..870] i.e.
+;ERROR_Token in tree file but not entity[865..870]  i.e.
+
+;section 0 Span:0..38
+;Pflugers Arch. 2001 Jul;442(4):603-13.
+(SEC
+  (FRAG (NNP:[0..8] Pflugers) (NNP:[9..13] Arch) (.:[13..14] .)
+        (CD:[15..19] 2001) (CC:[20..28] Jul;442-LRB-) (CD:[28..30] 4-RRB-)
+        (CD:[30..34] :603) (HYPH:[34..35] -) (CD:[35..37] 13) (.:[37..38] .)))
+
+;sentence 1 Span:44..131
+;Fatty acids inhibit anion secretion in rat colon: apical and basolateral
+;action  sites.
+;[44..55]:substance:"Fatty acids"
+;[64..69]:substance:"anion"
+(SENT
+  (UCP-HLN
+    (S
+      (NP-SBJ (JJ:[44..49] Fatty) (NNS:[50..55] acids))
+      (VP (VBP:[56..63] inhibit)
+        (NP (NN:[64..69] anion) (NN:[70..79] secretion))
+        (PP-LOC (IN:[80..82] in)
+          (NP (NN:[83..86] rat) (NN:[87..92] colon)))))
+    (::[92..93] :)
+    (NP
+      (NP (JJ:[94..100] apical)
+        (NML-1 (-NONE-:[100..100] *P*)))
+      (CC:[101..104] and)
+      (NP (JJ:[105..116] basolateral)
+        (NML-1 (NN:[117..123] action) (NNS:[125..130] sites))))
+    (.:[130..131] .)))
+
+;section 2 Span:135..170
+;Schultheiss G, Ribeiro R, Diener M.
+(SEC
+  (FRAG (NNP:[135..146] Schultheiss) (NNP:[147..148] G) (,:[148..149] ,)
+        (NNP:[150..157] Ribeiro) (NNP:[158..160] R,) (NNP:[161..167] Diener)
+        (NNP:[168..170] M.)))
+
+;section 3 Span:174..296
+;Institut fur Veterinar-Physiologie, Justus-Liebig-Universitat Giessen,
+;Germany.  gerhard.schultheiss@vetmed.uni-giessen.de
+(SEC
+  (FRAG (NNP:[174..182] Institut) (NN:[183..186] fur) (NN:[187..196] Veterinar)
+        (HYPH:[196..197] -) (NNP:[197..208] Physiologie) (,:[208..209] ,)
+        (NNP:[210..216] Justus) (HYPH:[216..217] -) (NNP:[217..223] Liebig)
+        (HYPH:[223..224] -) (NNP:[224..235] Universitat)
+        (NNP:[236..243] Giessen) (,:[243..244] ,) (NNP:[245..252] Germany)
+        (.:[252..253] .) ('':[255..262] gerhard)
+        (VBD:[262..281] .schultheiss@vetmed) (CD:[281..285] .uni)
+        (HYPH:[285..286] -) (JJ:[286..293] giessen) (NN:[293..296] .de)))
+
+;sentence 4 Span:300..543
+;Ca2+-dependent secretagogues evoke only a transient Cl- secretion in
+;intestinal  epithelia, although they induce a prolonged increase in the
+;intracellular Ca2+  concentration, suggesting that they may exert an
+;additional antisecretory  action.
+;[300..304]:substance:"Ca2+"
+;[315..328]:substance:"secretagogues"
+;[352..355]:substance:"Cl-"
+;[455..459]:substance:"Ca2+"
+(SENT
+  (S
+    (NP-SBJ
+      (ADJP
+        (NML (NN:[300..303] Ca2) (SYM:[303..304] +))
+        (HYPH:[304..305] -) (JJ:[305..314] dependent))
+      (NNS:[315..328] secretagogues))
+    (VP (VBP:[329..334] evoke)
+      (NP (RB:[335..339] only) (DT:[340..341] a) (JJ:[342..351] transient)
+         (NN:[352..354] Cl) (SYM:[354..355] -)
+        (NN:[356..365] secretion))
+      (PP-LOC (IN:[366..368] in)
+        (NP (JJ:[369..379] intestinal) (NNS:[381..390] epithelia)))
+      (,:[390..391] ,)
+      (SBAR-ADV (IN:[392..400] although)
+        (S
+          (NP-SBJ (PRP:[401..405] they))
+          (VP (VBP:[406..412] induce)
+            (NP (DT:[413..414] a) (VBN:[415..424] prolonged)
+                (NN:[425..433] increase))
+            (PP (IN:[434..436] in)
+              (NP (DT:[437..440] the) (JJ:[441..454] intracellular)
+                (NML (NN:[455..458] Ca2) (SYM:[458..459] +))
+                (NN:[461..474] concentration)))
+            (,:[474..475] ,)
+            (S-ADV
+              (NP-SBJ (-NONE-:[475..475] *))
+              (VP (VBG:[476..486] suggesting)
+                (SBAR (IN:[487..491] that)
+                  (S
+                    (NP-SBJ (PRP:[492..496] they))
+                    (VP (MD:[497..500] may)
+                      (VP (VB:[501..506] exert)
+                        (NP (DT:[507..509] an) (JJ:[510..520] additional)
+                            (JJ:[521..534] antisecretory) (NN:[536..542] action))))))))))))
+    (.:[542..543] .)))
+
+;sentence 5 Span:544..756
+;In order to study the mechanism of this antisecretory effect, Cl-  secretion,
+;measured as the increase in short-circuit current (Isc), was evoked  by
+;carbachol in the absence and presence of different inhibitors.
+;[606..609]:substance:"Cl-"
+;[650..671]:quantitative-name:"short-circuit current"
+;[673..676]:quantitative-name:"Isc"
+;[694..703]:substance:"carbachol"
+;[745..755]:substance:"inhibitors"
+(SENT
+  (S
+    (SBAR-ADV (IN:[544..546] In) (NN:[547..552] order)
+      (S
+        (NP-SBJ (-NONE-:[552..552] *))
+        (VP (TO:[553..555] to)
+          (VP (VB:[556..561] study)
+            (NP
+              (NP (DT:[562..565] the) (NN:[566..575] mechanism))
+              (PP (IN:[576..578] of)
+                (NP (DT:[579..583] this) (JJ:[584..597] antisecretory)
+                    (NN:[598..604] effect))))))))
+    (,:[604..605] ,)
+    (NP-SBJ-1
+      (NP
+         (NN:[606..608] Cl) (SYM:[608..609] -)
+        (NN:[611..620] secretion))
+      (,:[620..621] ,)
+      (VP (VBN:[622..630] measured)
+        (NP (-NONE-:[630..630] *))
+        (PP (IN:[631..633] as)
+          (NP
+            (NP
+              (NP (DT:[634..637] the) (NN:[638..646] increase))
+              (PP (IN:[647..649] in)
+                (NP
+                  (NML (JJ:[650..655] short) (HYPH:[655..656] -)
+                       (NN:[656..663] circuit))
+                  (NN:[664..671] current))))
+            (NP (-LRB-:[672..673] -LRB-) (NN:[673..676] Isc)
+                (-RRB-:[676..677] -RRB-))))))
+    (,:[677..678] ,)
+    (VP (VBD:[679..682] was)
+      (VP (VBN:[683..689] evoked)
+        (NP-1 (-NONE-:[689..689] *))
+        (PP (IN:[691..693] by)
+          (NP-LGS (NN:[694..703] carbachol)))
+        (PP (IN:[704..706] in)
+          (NP
+            (NP (DT:[707..710] the) (NN:[711..718] absence) (CC:[719..722] and)
+                (NN:[723..731] presence))
+            (PP (IN:[732..734] of)
+              (NP (JJ:[735..744] different) (NNS:[745..755] inhibitors)))))))
+    (.:[755..756] .)))
+
+;sentence 6 Span:757..990
+;Neither a  calmodulin antagonist, calmidazolium, nor different inhibitors of
+;the nitric  oxide (NO) pathway, i.e. Nomega-nitro-L-arginine (L-NNA) and 
+;Nomega-nitro-L-arginine methylester (L-NAME), affected the carbachol-induced 
+;Isc.
+;[768..778]:substance:"calmodulin"
+;[779..789]:substance:"antagonist"
+;[791..804]:substance:"calmidazolium"
+;[820..830]:substance:"inhibitors"
+;[838..851]:substance:"nitric  oxide"
+;[853..855]:substance:"NO"
+;[871..894]:substance:"Nomega-nitro-L-arginine"
+;[896..901]:substance:"L-NNA"
+;[908..943]:substance:"Nomega-nitro-L-arginine methylester"
+;[945..951]:substance:"L-NAME"
+;[967..976]:substance:"carbachol"
+;[986..989]:quantitative-name:"Isc"
+(SENT
+  (S
+    (NP-SBJ (CC:[757..764] Neither)
+      (NP
+        (NP (DT:[765..766] a) (NN:[768..778] calmodulin)
+            (NN:[779..789] antagonist))
+        (,:[789..790] ,)
+        (NP (NN:[791..804] calmidazolium)))
+      (,:[804..805] ,) (CC:[806..809] nor)
+      (NP
+        (NP
+          (NP (JJ:[810..819] different) (NNS:[820..830] inhibitors))
+          (PP (IN:[831..833] of)
+            (NP (DT:[834..837] the)
+              (NML
+                (NML (JJ:[838..844] nitric) (NN:[846..851] oxide))
+                (NML (-LRB-:[852..853] -LRB-) (NN:[853..855] NO)
+                     (-RRB-:[855..856] -RRB-)))
+              (NN:[857..864] pathway))))
+        (,:[864..865] ,)
+        (NP
+          (ADVP (FW:[865..870] i.e.))
+          (NP
+            (NP (NN:[871..894] Nomega-nitro-L-arginine))
+            (NP (-LRB-:[895..896] -LRB-) (NN:[896..901] L-NNA)
+                (-RRB-:[901..902] -RRB-)))
+          (CC:[903..906] and)
+          (NP
+            (NP (NN:[908..931] Nomega-nitro-L-arginine)
+                (NN:[932..943] methylester))
+            (NP (-LRB-:[944..945] -LRB-) (NN:[945..951] L-NAME)
+                (-RRB-:[951..952] -RRB-))))))
+    (,:[952..953] ,)
+    (VP (VBD:[954..962] affected)
+      (NP (DT:[963..966] the)
+        (ADJP (NN:[967..976] carbachol) (HYPH:[976..977] -)
+              (VBN:[977..984] induced))
+        (NN:[986..989] Isc)))
+    (.:[989..990] .)))
+
+;sentence 7 Span:991..1224
+;However, inhibition of phospholipases A2 (PLA2) by quinacrine or 
+;arachidonyltrifluoromethyl ketone (AACOCF3) enhanced the Isc response evoked
+;by  carbachol, suggesting a role of fatty acids in the downregulation of
+;anion  secretion.
+;[1014..1031]:substance:"phospholipases A2"
+;[1033..1037]:substance:"PLA2"
+;[1042..1052]:substance:"quinacrine"
+;[1057..1090]:substance:"arachidonyltrifluoromethyl ketone"
+;[1092..1099]:substance:"AACOCF3"
+;[1114..1117]:quantitative-name:"Isc"
+;[1138..1147]:substance:"carbachol"
+;[1170..1181]:substance:"fatty acids"
+;[1207..1212]:substance:"anion"
+(SENT
+  (S
+    (ADVP (RB:[991..998] However))
+    (,:[998..999] ,)
+    (NP-SBJ
+      (NP (NN:[1000..1010] inhibition))
+      (PP (IN:[1011..1013] of)
+        (NP
+          (NP (NNS:[1014..1028] phospholipases) (NN:[1029..1031] A2))
+          (NP (-LRB-:[1032..1033] -LRB-) (NN:[1033..1037] PLA2)
+              (-RRB-:[1037..1038] -RRB-))))
+      (PP (IN:[1039..1041] by)
+        (NP
+          (NP (NN:[1042..1052] quinacrine))
+          (CC:[1053..1055] or)
+          (NP
+            (NP (NN:[1057..1083] arachidonyltrifluoromethyl)
+                (NN:[1084..1090] ketone))
+            (NP (-LRB-:[1091..1092] -LRB-) (NN:[1092..1099] AACOCF3)
+                (-RRB-:[1099..1100] -RRB-))))))
+    (VP (VBD:[1101..1109] enhanced)
+      (NP
+        (NP (DT:[1110..1113] the) (NN:[1114..1117] Isc)
+            (NN:[1118..1126] response))
+        (VP (VBN:[1127..1133] evoked)
+          (NP (-NONE-:[1133..1133] *))
+          (PP (IN:[1134..1136] by)
+            (NP-LGS (NN:[1138..1147] carbachol)))))
+      (,:[1147..1148] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1148..1148] *))
+        (VP (VBG:[1149..1159] suggesting)
+          (NP
+            (NP (DT:[1160..1161] a) (NN:[1162..1166] role))
+            (PP (IN:[1167..1169] of)
+              (NP (JJ:[1170..1175] fatty) (NNS:[1176..1181] acids)))
+            (PP (IN:[1182..1184] in)
+              (NP
+                (NP (DT:[1185..1188] the) (NN:[1189..1203] downregulation))
+                (PP (IN:[1204..1206] of)
+                  (NP (NN:[1207..1212] anion) (NN:[1214..1223] secretion)))))))))
+    (.:[1223..1224] .)))
+
+;sentence 8 Span:1225..1385
+;Neither econazole, a cytochrome P450 inhibitor, nor  nordihydroguaiaretic
+;acid (NDGA), an inhibitor of lipoxygenases, mimicked the  action of the PLA2
+;blockers.
+;[1233..1242]:substance:"econazole"
+;[1246..1261]:cyp450:"cytochrome P450"
+;[1262..1271]:substance:"inhibitor"
+;[1278..1303]:substance:"nordihydroguaiaretic acid"
+;[1305..1309]:substance:"NDGA"
+;[1315..1324]:substance:"inhibitor"
+;[1328..1341]:substance:"lipoxygenases"
+;[1371..1375]:substance:"PLA2"
+;[1376..1384]:substance:"blockers"
+(SENT
+  (S
+    (NP-SBJ (CC:[1225..1232] Neither)
+      (NP
+        (NP (NN:[1233..1242] econazole))
+        (,:[1242..1243] ,)
+        (NP (DT:[1244..1245] a)
+          (NML (NN:[1246..1256] cytochrome) (NN:[1257..1261] P450))
+          (NN:[1262..1271] inhibitor)))
+      (,:[1271..1272] ,) (CC:[1273..1276] nor)
+      (NP
+        (NP
+          (NP (JJ:[1278..1298] nordihydroguaiaretic) (NN:[1299..1303] acid))
+          (NP (-LRB-:[1304..1305] -LRB-) (NN:[1305..1309] NDGA)
+              (-RRB-:[1309..1310] -RRB-)))
+        (,:[1310..1311] ,)
+        (NP
+          (NP (DT:[1312..1314] an) (NN:[1315..1324] inhibitor))
+          (PP (IN:[1325..1327] of)
+            (NP (NNS:[1328..1341] lipoxygenases))))))
+    (,:[1341..1342] ,)
+    (VP (VBD:[1343..1351] mimicked)
+      (NP
+        (NP (DT:[1352..1355] the) (NN:[1357..1363] action))
+        (PP (IN:[1364..1366] of)
+          (NP (DT:[1367..1370] the) (NN:[1371..1375] PLA2)
+              (NNS:[1376..1384] blockers)))))
+    (.:[1384..1385] .)))
+
+;sentence 9 Span:1386..1557
+;Conversely, short- or medium-chain fatty acids  inhibited the carbachol- and
+;forskolin-induced Isc with caprate (C10:0) being  the most efficient
+;water-soluble fatty acid.
+;[1421..1432]:substance:"fatty acids"
+;[1448..1457]:substance:"carbachol"
+;[1463..1472]:substance:"forskolin"
+;[1481..1484]:quantitative-name:"Isc"
+;[1490..1497]:substance:"caprate"
+;[1499..1504]:substance:"C10:0"
+;[1532..1537]:substance:"water"
+;[1546..1556]:substance:"fatty acid"
+(SENT
+  (S
+    (ADVP (RB:[1386..1396] Conversely))
+    (,:[1396..1397] ,)
+    (NP-SBJ
+      (NP
+        (NML (JJ:[1398..1403] short) (HYPH:[1403..1404] -)
+          (NML-3 (-NONE-:[1404..1404] *P*)))
+        (NML-4 (-NONE-:[1404..1404] *P*)))
+      (CC:[1405..1407] or)
+      (NP
+        (NML (JJ:[1408..1414] medium) (HYPH:[1414..1415] -)
+          (NML-3 (NN:[1415..1420] chain)))
+        (NML-4 (JJ:[1421..1426] fatty) (NNS:[1427..1432] acids))))
+    (VP (VBD:[1434..1443] inhibited)
+      (NP (DT:[1444..1447] the)
+        (NML
+          (NML
+            (ADJP (NN:[1448..1457] carbachol) (HYPH:[1457..1458] -)
+              (ADJP-2 (-NONE-:[1458..1458] *P*)))
+            (NML-1 (-NONE-:[1458..1458] *P*)))
+          (CC:[1459..1462] and)
+          (NML
+            (ADJP (NN:[1463..1472] forskolin) (HYPH:[1472..1473] -)
+              (ADJP-2 (VBN:[1473..1480] induced)))
+            (NML-1 (NN:[1481..1484] Isc)))))
+      (PP (IN:[1485..1489] with)
+        (NP
+          (NP
+            (NP (NN:[1490..1497] caprate))
+            (NP (-LRB-:[1498..1499] -LRB-) (NN:[1499..1504] C10:0)
+                (-RRB-:[1504..1505] -RRB-)))
+          (VP (VBG:[1506..1511] being)
+            (NP-PRD (DT:[1513..1516] the)
+              (ADJP (RBS:[1517..1521] most) (JJ:[1522..1531] efficient))
+              (ADJP (NN:[1532..1537] water) (HYPH:[1537..1538] -)
+                    (JJ:[1538..1545] soluble))
+               (JJ:[1546..1551] fatty) (NN:[1552..1556] acid))))))
+    (.:[1556..1557] .)))
+
+;sentence 10 Span:1558..1744
+;This fatty acid inhibited a Cl-  current, which was driven across the apical
+;membrane by a serosally to mucosally  directed Cl- gradient after
+;depolarization of the basolateral membrane.
+;[1563..1573]:substance:"fatty acid"
+;[1586..1589]:substance:"Cl-"
+;[1682..1685]:substance:"Cl-"
+(SENT
+  (S
+    (NP-SBJ (DT:[1558..1562] This)
+       (JJ:[1563..1568] fatty) (NN:[1569..1573] acid))
+    (VP (VBD:[1574..1583] inhibited)
+      (NP
+        (NP (DT:[1584..1585] a)
+           (NN:[1586..1588] Cl) (SYM:[1588..1589] -)
+          (NN:[1591..1598] current))
+        (,:[1598..1599] ,)
+        (SBAR
+          (WHNP-1 (WDT:[1600..1605] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1605..1605] *T*))
+            (VP (VBD:[1606..1609] was)
+              (VP (VBN:[1610..1616] driven)
+                (NP-1 (-NONE-:[1616..1616] *))
+                (PP (IN:[1617..1623] across)
+                  (NP (DT:[1624..1627] the) (JJ:[1628..1634] apical)
+                      (NN:[1635..1643] membrane)))
+                (PP (IN:[1644..1646] by)
+                  (NP-LGS (DT:[1647..1648] a)
+                    (ADJP
+                      (ADVP (RB:[1649..1658] serosally)
+                        (PP (TO:[1659..1661] to)
+                          (ADVP (RB:[1662..1671] mucosally))))
+                      (VBN:[1673..1681] directed))
+                     (NN:[1682..1684] Cl) (SYM:[1684..1685] -)
+                    (NN:[1686..1694] gradient)))
+                (PP-TMP (IN:[1695..1700] after)
+                  (NP
+                    (NP (NN:[1701..1715] depolarization))
+                    (PP (IN:[1716..1718] of)
+                      (NP (DT:[1719..1722] the) (JJ:[1723..1734] basolateral)
+                          (NN:[1735..1743] membrane)))))))))))
+    (.:[1743..1744] .)))
+
+;sentence 11 Span:1745..1819
+;A second  action site of fatty acids seems to be the basolateral membrane.
+;[1770..1781]:substance:"fatty acids"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1745..1746] A) (JJ:[1747..1753] second) (NN:[1755..1761] action)
+          (NN:[1762..1766] site))
+      (PP (IN:[1767..1769] of)
+        (NP (JJ:[1770..1775] fatty) (NNS:[1776..1781] acids))))
+    (VP (VBZ:[1782..1787] seems)
+      (S
+        (NP-SBJ-1 (-NONE-:[1787..1787] *))
+        (VP (TO:[1788..1790] to)
+          (NP (VB:[1791..1793] be)
+            (NP-PRD (DT:[1794..1797] the) (JJ:[1798..1809] basolateral)
+                    (NN:[1810..1818] membrane))))))
+    (.:[1818..1819] .)))
+
+;sentence 12 Span:1820..2002
+;After  permeabilization of the apical membrane with the ionophore nystatin, a
+;mucosally  to serosally directed K+ gradient induced a K+ current, which was
+;also inhibited  by caprate.
+;[1876..1885]:substance:"ionophore"
+;[1886..1894]:substance:"nystatin"
+;[1931..1933]:substance:"K+"
+;[1953..1955]:substance:"K+"
+;[1994..2001]:substance:"caprate"
+(SENT
+  (S
+    (PP-TMP (IN:[1820..1825] After)
+      (NP
+        (NP (NN:[1827..1843] permeabilization))
+        (PP (IN:[1844..1846] of)
+          (NP (DT:[1847..1850] the) (JJ:[1851..1857] apical)
+              (NN:[1858..1866] membrane)))
+        (PP (IN:[1867..1871] with)
+          (NP (DT:[1872..1875] the) (NN:[1876..1885] ionophore)
+              (NN:[1886..1894] nystatin)))))
+    (,:[1894..1895] ,)
+    (NP-SBJ (DT:[1896..1897] a)
+      (ADJP
+        (ADVP (RB:[1898..1907] mucosally)
+          (PP (TO:[1909..1911] to)
+            (ADVP (RB:[1912..1921] serosally))))
+        (VBN:[1922..1930] directed))
+      (NML (NN:[1931..1932] K) (SYM:[1932..1933] +))
+      (NN:[1934..1942] gradient))
+    (VP (VBD:[1943..1950] induced)
+      (NP
+        (NP (DT:[1951..1952] a)
+          (NML (NN:[1953..1954] K) (SYM:[1954..1955] +))
+          (NN:[1956..1963] current))
+        (,:[1963..1964] ,)
+        (SBAR
+          (WHNP-1 (WDT:[1965..1970] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1970..1970] *T*))
+            (VP (VBD:[1971..1974] was)
+              (ADVP (RB:[1975..1979] also))
+              (VP (VBN:[1980..1989] inhibited)
+                (NP-1 (-NONE-:[1989..1989] *))
+                (PP (IN:[1991..1993] by)
+                  (NP-LGS (NN:[1994..2001] caprate)))))))))
+    (.:[2001..2002] .)))
+
+;sentence 13 Span:2003..2235
+;These results indicate that carbachol not only acts as a  secretagogue but at
+;the same time initializes downregulation by increasing the  intracellular
+;concentration of fatty acids, a mechanism limiting the resulting  Cl-
+;secretion.
+;[2031..2040]:substance:"carbachol"
+;[2061..2073]:substance:"secretagogue"
+;[2172..2183]:substance:"fatty acids"
+;[2221..2224]:substance:"Cl-"
+(SENT
+  (S
+    (NP-SBJ (DT:[2003..2008] These) (NNS:[2009..2016] results))
+    (VP (VBP:[2017..2025] indicate)
+      (SBAR (IN:[2026..2030] that)
+        (S
+          (NP-SBJ (NN:[2031..2040] carbachol))
+          (VP
+            (VP
+              (ADVP (RB:[2041..2044] not) (RB:[2045..2049] only))
+              (VBZ:[2050..2054] acts)
+              (PP (IN:[2055..2057] as)
+                (NP (DT:[2058..2059] a) (NN:[2061..2073] secretagogue))))
+            (CC:[2074..2077] but)
+            (VP
+              (PP-TMP (IN:[2078..2080] at)
+                (NP (DT:[2081..2084] the) (JJ:[2085..2089] same)
+                    (NN:[2090..2094] time)))
+              (VBZ:[2095..2106] initializes)
+              (NP (NN:[2107..2121] downregulation))
+              (PP-MNR (IN:[2122..2124] by)
+                (NP
+                  (S-NOM
+                    (NP-SBJ (-NONE-:[2124..2124] *))
+                    (VP (VBG:[2125..2135] increasing)
+                      (NP
+                        (NP (DT:[2136..2139] the)
+                            (JJ:[2141..2154] intracellular)
+                            (NN:[2155..2168] concentration))
+                        (PP (IN:[2169..2171] of)
+                          (NP (JJ:[2172..2177] fatty) (NNS:[2178..2183] acids))))))
+                  (,:[2183..2184] ,)
+                  (NP
+                    (NP (DT:[2185..2186] a) (NN:[2187..2196] mechanism))
+                    (VP (VBG:[2197..2205] limiting)
+                      (NP (DT:[2206..2209] the) (VBG:[2210..2219] resulting)
+                         (NN:[2221..2223] Cl) (SYM:[2223..2224] -)
+                        (NN:[2225..2234] secretion)))))))))))
+    (.:[2234..2235] .)))
+
+;section 14 Span:2239..2284
+;PMID: 11510894 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2239..2243] PMID) (::[2243..2244] :) (CD:[2245..2253] 11510894)
+        (IN:[2254..2255] -LSB-) (NNP:[2255..2261] PubMed) (HYPH:[2262..2263] -)
+        (JJ:[2264..2271] indexed) (IN:[2272..2275] for)
+        (NNP:[2276..2284] MEDLINE-RSB-)))

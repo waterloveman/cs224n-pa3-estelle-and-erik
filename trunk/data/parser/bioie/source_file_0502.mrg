@@ -1,0 +1,558 @@
+;PMID: 8384872
+;source_file_876.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..50] = [t:0..50]
+;1)sentence:[e:56..210] = [t:56..210]
+;2)section:[e:214..288] = [t:214..288]
+;3)section:[e:292..396] = [t:292..396]
+;4)sentence:[e:400..556] = [t:400..556]
+;5)sentence:[e:557..728] = [t:557..728]
+;6)sentence:[e:729..917] = [t:729..917]
+;7)sentence:[e:918..1159] = [t:918..1159]
+;8)sentence:[e:1160..1317] = [t:1160..1317]
+;9)sentence:[e:1318..1609] = [t:1318..1609]
+;10)sentence:[e:1610..1676] = [t:1610..1676]
+;11)sentence:[e:1678..1942] = [t:1678..1942]
+;12)sentence:[e:1943..2150] = [t:1943..2150]
+;13)section:[e:2154..2198] = [t:2154..2198]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[797..799] 52
+;ERROR_Token in entity file but not tree[799..800] -
+;ERROR_Token in entity file but not tree[800..803] kDa
+;ERROR_Token in tree file but not entity[797..803] 52-kDa
+
+;section 0 Span:0..50
+;J Steroid Biochem Mol Biol. 1993 Mar;44(3):251-61.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Steroid) (NNP:[10..17] Biochem)
+        (NNP:[18..21] Mol) (NNP:[22..26] Biol) (.:[26..27] .) ('':[28..32] 1993)
+        (CC:[33..40] Mar;44-LRB-) (CD:[40..41] 3) (-RRB-:[41..42] -RRB-)
+        (CD:[42..46] :251) (::[46..47] -) (CD:[47..49] 61) (.:[49..50] .)))
+
+;sentence 1 Span:56..210
+;Interaction of 2,3,7,8-tetrachlorodibenzo-p-dioxin, 
+;12-O-tetradecanoylphorbol-13-acetate (TPA) and 17 beta-estradiol in MCF-7
+;human  breast cancer cells.
+;[71..106]:substance:"2,3,7,8-tetrachlorodibenzo-p-dioxin"
+;[109..145]:substance:"12-O-tetradecanoylphorbol-13-acetate"
+;[147..150]:substance:"TPA"
+;[156..173]:substance:"17 beta-estradiol"
+(SENT
+  (NP-HLN
+    (NP (NN:[56..67] Interaction))
+    (PP (IN:[68..70] of)
+      (NP
+        (NP (NN:[71..106] 2,3,7,8-tetrachlorodibenzo-p-dioxin))
+        (,:[106..107] ,)
+        (NP
+          (NP (NN:[109..145] 12-O-tetradecanoylphorbol-13-acetate))
+          (NP (-LRB-:[146..147] -LRB-) (NN:[147..150] TPA)
+              (-RRB-:[150..151] -RRB-)))
+        (CC:[152..155] and)
+        (NP (CD:[156..158] 17) (NN:[159..173] beta-estradiol))))
+    (PP-LOC (IN:[174..176] in)
+      (NP (NN:[177..182] MCF-7) (JJ:[183..188] human) (NN:[190..196] breast)
+          (NN:[197..203] cancer) (NNS:[204..209] cells)))
+    (.:[209..210] .)))
+
+;section 2 Span:214..288
+;Moore M, Narasimhan TR, Wang X, Krishnan V, Safe S, Williams HJ, Scott AI.
+(SEC
+  (FRAG (NNP:[214..219] Moore) (NNP:[220..222] M,) (NNP:[223..233] Narasimhan)
+        (NNP:[234..236] TR) (,:[236..237] ,) (NNP:[238..242] Wang)
+        (NNP:[243..244] X) (,:[244..245] ,) (NNP:[246..254] Krishnan)
+        (NNP:[255..256] V) (,:[256..257] ,) (NNP:[258..262] Safe)
+        (NNP:[263..265] S,) (NNP:[266..274] Williams) (NNP:[275..277] HJ)
+        (,:[277..278] ,) (NNP:[279..284] Scott) (NNP:[285..288] AI.)))
+
+;section 3 Span:292..396
+;Department of Veterinary Physiology and Pharmacology, Texas A&M University, 
+;College Station 77843-4466.
+(SEC
+  (FRAG (NNP:[292..302] Department) (IN:[303..305] of)
+        (NNP:[306..316] Veterinary) (NNP:[317..327] Physiology)
+        (CC:[328..331] and) (NNP:[332..344] Pharmacology) (,:[344..345] ,)
+        (NNP:[346..351] Texas) (NNP:[352..355] A&M) (NNP:[356..366] University)
+        (,:[366..367] ,) (NNP:[369..376] College) (NNP:[377..384] Station)
+        (CD:[385..390] 77843) (::[390..391] -) (CD:[391..395] 4466)
+        (.:[395..396] .)))
+
+;sentence 4 Span:400..556
+;2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD) and 
+;12-O-tetradecanoylphorbol-13-acetate (TPA) are both tumor promoters which act
+; through different mechanisms.
+;[400..435]:substance:"2,3,7,8-Tetrachlorodibenzo-p-dioxin"
+;[437..441]:substance:"TCDD"
+;[448..484]:substance:"12-O-tetradecanoylphorbol-13-acetate"
+;[486..489]:substance:"TPA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[400..435] 2,3,7,8-Tetrachlorodibenzo-p-dioxin))
+        (NP (-LRB-:[436..437] -LRB-) (NN:[437..441] TCDD)
+            (-RRB-:[441..442] -RRB-)))
+      (CC:[443..446] and)
+      (NP
+        (NP (NN:[448..484] 12-O-tetradecanoylphorbol-13-acetate))
+        (NP (-LRB-:[485..486] -LRB-) (NN:[486..489] TPA)
+            (-RRB-:[489..490] -RRB-))))
+    (VP (VBP:[491..494] are) (DT:[495..499] both)
+      (NP-PRD
+        (NP (NN:[500..505] tumor) (NNS:[506..515] promoters))
+        (SBAR
+          (WHNP-1 (WDT:[516..521] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[521..521] *T*))
+            (VP (VBP:[522..525] act)
+              (PP (IN:[527..534] through)
+                (NP (JJ:[535..544] different) (NNS:[545..555] mechanisms))))))))
+    (.:[555..556] .)))
+
+;sentence 5 Span:557..728
+;In MCF-7 human breast cancer cells, both TCDD and  TPA inhibited constitutive
+;and 17 beta-estradiol-induced cell proliferation but  showed no apparent
+;interactive effects.
+;[598..602]:substance:"TCDD"
+;[608..611]:substance:"TPA"
+;[639..656]:substance:"17 beta-estradiol"
+(SENT
+  (S
+    (PP-LOC (IN:[557..559] In)
+      (NP (NN:[560..565] MCF-7) (JJ:[566..571] human) (NN:[572..578] breast)
+          (NN:[579..585] cancer) (NNS:[586..591] cells)))
+    (,:[591..592] ,)
+    (NP-SBJ (CC:[593..597] both) (NN:[598..602] TCDD) (CC:[603..606] and)
+            (NN:[608..611] TPA))
+    (VP
+      (VP (VBD:[612..621] inhibited)
+        (NP
+          (NP (JJ:[622..634] constitutive)
+            (NML-1 (-NONE-:[634..634] *P*)))
+          (CC:[635..638] and)
+          (NP
+            (ADJP
+              (NML (CD:[639..641] 17) (NN:[642..656] beta-estradiol))
+              (HYPH:[656..657] -) (VBN:[657..664] induced))
+            (NML-1 (NN:[665..669] cell) (NN:[670..683] proliferation)))))
+      (CC:[684..687] but)
+      (VP (VBD:[689..695] showed)
+        (NP (DT:[696..698] no) (JJ:[699..707] apparent)
+            (JJ:[708..719] interactive) (NNS:[720..727] effects))))
+    (.:[727..728] .)))
+
+;sentence 6 Span:729..917
+;TCDD also inhibited the 17  beta-estradiol-induced secretion of the 52-kDa
+;protein (procathepsin D) and  induced CYP1A1 gene expression whereas TPA
+;alone was inactive for these  responses.
+;[729..733]:substance:"TCDD"
+;[753..771]:substance:"17  beta-estradiol"
+;[797..799]:quantitative-value:"52"
+;[800..803]:quantitative-units:"kDa"
+;[804..811]:substance:"protein"
+;[813..827]:substance:"procathepsin D"
+;[842..848]:cyp450:"CYP1A1"
+;[873..876]:substance:"TPA"
+(SENT
+  (S
+    (NP-SBJ (NN:[729..733] TCDD))
+    (ADVP (RB:[734..738] also))
+    (VP
+      (VP (VBD:[739..748] inhibited)
+        (NP
+          (NP (DT:[749..752] the)
+            (ADJP
+              (NML (CD:[753..755] 17) (NN:[757..771] beta-estradiol))
+              (HYPH:[771..772] -) (VBN:[772..779] induced))
+            (NN:[780..789] secretion))
+          (PP (IN:[790..792] of)
+            (NP (DT:[793..796] the)
+              (NML
+                (NML (NN:[797..803] 52-kDa) (NN:[804..811] protein))
+                (NML (-LRB-:[812..813] -LRB-)
+                   (NN:[813..825] procathepsin) (NN:[826..827] D)
+                  (-RRB-:[827..828] -RRB-)))))))
+      (CC:[829..832] and)
+      (VP (VBD:[834..841] induced)
+        (NP (NN:[842..848] CYP1A1) (NN:[849..853] gene)
+            (NN:[854..864] expression))
+        (SBAR-ADV (IN:[865..872] whereas)
+          (S
+            (NP-SBJ
+              (NP (NN:[873..876] TPA))
+              (ADVP (RB:[877..882] alone)))
+            (VP (VBD:[883..886] was)
+              (ADJP-PRD (JJ:[887..895] inactive))
+              (PP (IN:[896..899] for)
+                (NP (DT:[900..905] these) (NNS:[907..916] responses))))))))
+    (.:[916..917] .)))
+
+;sentence 7 Span:918..1159
+;Moreover, TPA did not modulate the TCDD-mediated antiestrogenic or  induction
+;responses and did not decrease levels of the nuclear Ah receptor  complex as
+;determined in a gel mobility shift assay using a 32P-dioxin  responsive
+;element (DRE).
+;[928..931]:substance:"TPA"
+;[953..957]:substance:"TCDD"
+;[1049..1069]:substance:"Ah receptor  complex"
+;[1122..1152]:substance:"32P-dioxin  responsive element"
+;[1154..1157]:substance:"DRE"
+(SENT
+  (S
+    (ADVP (RB:[918..926] Moreover))
+    (,:[926..927] ,)
+    (NP-SBJ (NN:[928..931] TPA))
+    (VP
+      (VP (VBD:[932..935] did) (RB:[936..939] not)
+        (VP (VB:[940..948] modulate)
+          (NP (DT:[949..952] the)
+            (NML
+              (NML
+                (ADJP-1 (NN:[953..957] TCDD) (HYPH:[957..958] -)
+                        (VBN:[958..966] mediated))
+                (JJ:[967..981] antiestrogenic)
+                (NML-2 (-NONE-:[981..981] *P*)))
+              (CC:[982..984] or)
+              (NML
+                (ADJP-1 (-NONE-:[984..984] *P*))
+                (NN:[986..995] induction)
+                (NML-2 (NNS:[996..1005] responses)))))))
+      (CC:[1006..1009] and)
+      (VP (VBD:[1010..1013] did) (RB:[1014..1017] not)
+        (VP (VB:[1018..1026] decrease)
+          (NP
+            (NP (NNS:[1027..1033] levels))
+            (PP (IN:[1034..1036] of)
+              (NP (DT:[1037..1040] the) (JJ:[1041..1048] nuclear)
+                
+                (NML (NN:[1049..1051] Ah) (NN:[1052..1060] receptor))
+                (NN:[1062..1069] complex))))
+          (SBAR-ADV (IN:[1070..1072] as)
+            (S
+              (NP-SBJ-3 (-NONE-:[1072..1072] *))
+              (VP (VBN:[1073..1083] determined)
+                (NP-3 (-NONE-:[1083..1083] *))
+                (PP (IN:[1084..1086] in)
+                  (NP (DT:[1087..1088] a)
+                    (NML (NN:[1089..1092] gel) (NN:[1093..1101] mobility)
+                         (NN:[1102..1107] shift))
+                    (NN:[1108..1113] assay)))
+                (S-MNR
+                  (NP-SBJ (-NONE-:[1113..1113] *))
+                  (VP (VBG:[1114..1119] using)
+                    (NP (DT:[1120..1121] a)
+                      (NML
+                        (NML
+                          (ADJP (NN:[1122..1132] 32P-dioxin)
+                                (JJ:[1134..1144] responsive))
+                          (NN:[1145..1152] element))
+                        (NML (-LRB-:[1153..1154] -LRB-) (NN:[1154..1157] DRE)
+                             (-RRB-:[1157..1158] -RRB-))))))))))))
+    (.:[1158..1159] .)))
+
+;sentence 8 Span:1160..1317
+;The interactions of TPA and TCDD on the metabolism of  [13C]glucose to
+;[13C]lactate was also investigated using 13C-nuclear magnetic  resonance
+;spectroscopy.
+;[1180..1183]:substance:"TPA"
+;[1188..1192]:substance:"TCDD"
+;[1215..1227]:substance:"[13C]glucose"
+;[1231..1243]:substance:"[13C]lactate"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1160..1163] The) (NNS:[1164..1176] interactions))
+      (PP (IN:[1177..1179] of)
+        (NP (NN:[1180..1183] TPA) (CC:[1184..1187] and) (NN:[1188..1192] TCDD)))
+      (PP (IN:[1193..1195] on)
+        (NP
+          (NP (DT:[1196..1199] the) (NN:[1200..1210] metabolism))
+          (PP (IN:[1211..1213] of)
+            (NP (NN:[1215..1227] -LSB-13C-RSB-glucose)))
+          (PP (TO:[1228..1230] to)
+            (NP (NN:[1231..1243] -LSB-13C-RSB-lactate))))))
+    (VP (VBD:[1244..1247] was)
+      (ADVP (RB:[1248..1252] also))
+      (VP (VBN:[1253..1265] investigated)
+        (NP-1 (-NONE-:[1265..1265] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[1265..1265] *))
+          (VP (VBG:[1266..1271] using)
+            (NP
+              (NML (NN:[1272..1275] 13C) (HYPH:[1275..1276] -)
+                   (JJ:[1276..1283] nuclear) (JJ:[1284..1292] magnetic)
+                   (NN:[1294..1303] resonance))
+              (NN:[1304..1316] spectroscopy))))))
+    (.:[1316..1317] .)))
+
+;sentence 9 Span:1318..1609
+;The rate of formation of [13C]lactate from [13C]glucose  in MCF-7 cells
+;treated with DMSO (control), 1 nM 17 beta-estradiol, 1 nM TCDD, 1  nM TCDD
+;plus 1 nM 17 beta-estradiol, and 0.1 ng/ml TPA plus 1 nM 17  beta-estradiol
+;was 28, 48, 20, 22 and 50 fmol lactate formed/cell/h,  respectively.
+;[1343..1355]:substance:"[13C]lactate"
+;[1361..1373]:substance:"[13C]glucose"
+;[1403..1407]:substance:"DMSO"
+;[1409..1416]:substance:"control"
+;[1419..1420]:quantitative-value:"1"
+;[1421..1423]:quantitative-units:"nM"
+;[1424..1441]:substance:"17 beta-estradiol"
+;[1443..1444]:quantitative-value:"1"
+;[1445..1447]:quantitative-units:"nM"
+;[1448..1452]:substance:"TCDD"
+;[1454..1455]:quantitative-value:"1"
+;[1457..1459]:quantitative-units:"nM"
+;[1460..1464]:substance:"TCDD"
+;[1470..1471]:quantitative-value:"1"
+;[1472..1474]:quantitative-units:"nM"
+;[1475..1492]:substance:"17 beta-estradiol"
+;[1498..1501]:quantitative-value:"0.1"
+;[1502..1507]:quantitative-units:"ng/ml"
+;[1508..1511]:substance:"TPA"
+;[1517..1518]:quantitative-value:"1"
+;[1519..1521]:quantitative-units:"nM"
+;[1522..1540]:substance:"17  beta-estradiol"
+;[1545..1547]:quantitative-value:"28"
+;[1549..1551]:quantitative-value:"48"
+;[1553..1555]:quantitative-value:"20"
+;[1557..1559]:quantitative-value:"22"
+;[1564..1566]:quantitative-value:"50"
+;[1567..1593]:quantitative-units:"fmol lactate formed/cell/h"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1318..1321] The) (NN:[1322..1326] rate))
+      (PP (IN:[1327..1329] of)
+        (NP
+          (NP (NN:[1330..1339] formation))
+          (PP (IN:[1340..1342] of)
+            (NP (NN:[1343..1355] -LSB-13C-RSB-lactate)))
+          (PP (IN:[1356..1360] from)
+            (NP (NN:[1361..1373] -LSB-13C-RSB-glucose)))
+          (PP-LOC (IN:[1375..1377] in)
+            (NP
+              (NP (NN:[1378..1383] MCF-7) (NNS:[1384..1389] cells))
+              (VP (VBN:[1390..1397] treated)
+                (NP (-NONE-:[1397..1397] *))
+                (PP (IN:[1398..1402] with)
+                  (NP
+                    (NP (NN:[1403..1407] DMSO)
+                      (PRN (-LRB-:[1408..1409] -LRB-)
+                        (NP (NN:[1409..1416] control))
+                        (-RRB-:[1416..1417] -RRB-)))
+                    (,:[1417..1418] ,)
+                    (NP
+                      (NML (CD:[1419..1420] 1) (NN:[1421..1423] nM))
+                       (CD:[1424..1426] 17) (NN:[1427..1441] beta-estradiol))
+                    (,:[1441..1442] ,)
+                    (NP
+                      (NML (CD:[1443..1444] 1) (NN:[1445..1447] nM))
+                      (NN:[1448..1452] TCDD))
+                    (,:[1452..1453] ,)
+                    (NP
+                      (NP
+                        (NML (CD:[1454..1455] 1) (NN:[1457..1459] nM))
+                        (NN:[1460..1464] TCDD))
+                      (CC:[1465..1469] plus)
+                      (NP
+                        (NML (CD:[1470..1471] 1) (NN:[1472..1474] nM))
+                         (CD:[1475..1477] 17) (NN:[1478..1492] beta-estradiol)))
+                    (,:[1492..1493] ,) (CC:[1494..1497] and)
+                    (NP
+                      (NP
+                        (NML
+                          (NML (CD:[1498..1501] 0.1) (NN:[1502..1504] ng))
+                          (PP (SYM:[1504..1505] /)
+                            (NP (NN:[1505..1507] ml))))
+                        (NN:[1508..1511] TPA))
+                      (CC:[1512..1516] plus)
+                      (NP
+                        (NML (CD:[1517..1518] 1) (NN:[1519..1521] nM))
+                         (CD:[1522..1524] 17) (NN:[1526..1540] beta-estradiol)))))))))))
+    (VP (VBD:[1541..1544] was)
+      (NP-PRD
+        (NP
+          (NP
+            (NML (CD:[1545..1547] 28)
+              (NML-2 (-NONE-:[1547..1547] *P*)))
+            (NML-1 (-NONE-:[1547..1547] *P*)))
+          (,:[1547..1548] ,)
+          (NP
+            (NML (CD:[1549..1551] 48)
+              (NML-2 (-NONE-:[1551..1551] *P*)))
+            (NML-1 (-NONE-:[1551..1551] *P*)))
+          (,:[1551..1552] ,)
+          (NP
+            (NML (CD:[1553..1555] 20)
+              (NML-2 (-NONE-:[1555..1555] *P*)))
+            (NML-1 (-NONE-:[1555..1555] *P*)))
+          (,:[1555..1556] ,)
+          (NP
+            (NML (CD:[1557..1559] 22)
+              (NML-2 (-NONE-:[1559..1559] *P*)))
+            (NML-1 (-NONE-:[1559..1559] *P*)))
+          (CC:[1560..1563] and)
+          (NP
+            (NML (CD:[1564..1566] 50)
+              (NML-2 (NN:[1567..1571] fmol)))
+            (NML-1 (NN:[1572..1579] lactate))))
+        (VP (VBN:[1580..1586] formed)
+          (NP (-NONE-:[1586..1586] *))
+          (PP (SYM:[1586..1587] /)
+            (NP (NN:[1587..1591] cell)))
+          (PP (SYM:[1591..1592] /)
+            (NP (NN:[1592..1593] h)))))
+      (,:[1593..1594] ,)
+      (ADVP (RB:[1596..1608] respectively)))
+    (.:[1608..1609] .)))
+
+;sentence 10 Span:1610..1676
+;Thus, TCDD, but not TPA, inhibited this estrogen-induced response.
+;[1616..1620]:substance:"TCDD"
+;[1630..1633]:substance:"TPA"
+;[1650..1658]:substance:"estrogen"
+(SENT
+  (S
+    (ADVP (RB:[1610..1614] Thus))
+    (,:[1614..1615] ,)
+    (NP-SBJ (NN:[1616..1620] TCDD) (,:[1620..1621] ,)
+      (CONJP (CC:[1622..1625] but) (RB:[1626..1629] not))
+      (NN:[1630..1633] TPA))
+    (,:[1633..1634] ,)
+    (VP (VBD:[1635..1644] inhibited)
+      (NP (DT:[1645..1649] this)
+        (ADJP (NN:[1650..1658] estrogen) (HYPH:[1658..1659] -)
+              (VBN:[1659..1666] induced))
+        (NN:[1667..1675] response)))
+    (.:[1675..1676] .)))
+
+;sentence 11 Span:1678..1942
+;However, a comparison of the rate of lactate formation in cells treated with 
+;TCDD plus 17 beta-estradiol (22 fmol/cell/h) or TCDD plus 17 beta-estradiol
+;plus  TPA (61 fmol/cell/h) showed that TPA significantly inhibited the
+;TCDD-mediated  antiestrogenic response.
+;[1715..1722]:substance:"lactate"
+;[1756..1760]:substance:"TCDD"
+;[1766..1783]:substance:"17 beta-estradiol"
+;[1785..1787]:quantitative-value:"22"
+;[1788..1799]:quantitative-units:"fmol/cell/h"
+;[1804..1808]:substance:"TCDD"
+;[1814..1831]:substance:"17 beta-estradiol"
+;[1838..1841]:substance:"TPA"
+;[1843..1845]:quantitative-value:"61"
+;[1846..1857]:quantitative-units:"fmol/cell/h"
+;[1871..1874]:substance:"TPA"
+;[1903..1907]:substance:"TCDD"
+(SENT
+  (S
+    (ADVP (RB:[1678..1685] However))
+    (,:[1685..1686] ,)
+    (NP-SBJ
+      (NP (DT:[1687..1688] a) (NN:[1689..1699] comparison))
+      (PP (IN:[1700..1702] of)
+        (NP
+          (NP (DT:[1703..1706] the) (NN:[1707..1711] rate))
+          (PP (IN:[1712..1714] of)
+            (NP
+              (NP (NN:[1715..1722] lactate) (NN:[1723..1732] formation))
+              (PP-LOC (IN:[1733..1735] in)
+                (NP
+                  (NP (NNS:[1736..1741] cells))
+                  (VP (VBN:[1742..1749] treated)
+                    (NP (-NONE-:[1749..1749] *))
+                    (PP (IN:[1750..1754] with)
+                      (NP
+                        (NP
+                          (NP (NN:[1756..1760] TCDD))
+                          (CC:[1761..1765] plus)
+                          (NP (CD:[1766..1768] 17)
+                              (NN:[1769..1783] beta-estradiol))
+                          (PRN (-LRB-:[1784..1785] -LRB-)
+                            (NP
+                              (NP (CD:[1785..1787] 22) (NN:[1788..1792] fmol))
+                              (PP (SYM:[1792..1793] /)
+                                (NP (NN:[1793..1797] cell)))
+                              (PP (SYM:[1797..1798] /)
+                                (NP (NN:[1798..1799] h))))
+                            (-RRB-:[1799..1800] -RRB-)))
+                        (CC:[1801..1803] or)
+                        (NP
+                          (NP (NN:[1804..1808] TCDD))
+                          (CC:[1809..1813] plus)
+                          (NP (CD:[1814..1816] 17)
+                              (NN:[1817..1831] beta-estradiol))
+                          (CC:[1832..1836] plus)
+                          (NP (NN:[1838..1841] TPA))
+                          (PRN (-LRB-:[1842..1843] -LRB-)
+                            (NP
+                              (NP (CD:[1843..1845] 61) (NN:[1846..1850] fmol))
+                              (PP (SYM:[1850..1851] /)
+                                (NP (NN:[1851..1855] cell)))
+                              (PP (SYM:[1855..1856] /)
+                                (NP (NN:[1856..1857] h))))
+                            (-RRB-:[1857..1858] -RRB-)))))))))))))
+    (VP (VBD:[1859..1865] showed)
+      (SBAR (IN:[1866..1870] that)
+        (S
+          (NP-SBJ (NN:[1871..1874] TPA))
+          (ADVP (RB:[1875..1888] significantly))
+          (VP (VBD:[1889..1898] inhibited)
+            (NP (DT:[1899..1902] the)
+              (ADJP (NN:[1903..1907] TCDD) (HYPH:[1907..1908] -)
+                    (VBN:[1908..1916] mediated))
+              (JJ:[1918..1932] antiestrogenic) (NN:[1933..1941] response))))))
+    (.:[1941..1942] .)))
+
+;sentence 12 Span:1943..2150
+;The results of these studies in MCF-7 cells demonstrate  that the
+;interactions of TCDD and TPA are highly response-specific and do not  involve
+;TPA-mediated downregulation of the nuclear Ah receptor complex.
+;[2025..2029]:substance:"TCDD"
+;[2034..2037]:substance:"TPA"
+;[2087..2090]:substance:"TPA"
+;[2130..2149]:substance:"Ah receptor complex"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1943..1946] The) (NNS:[1947..1954] results))
+      (PP (IN:[1955..1957] of)
+        (NP
+          (NP (DT:[1958..1963] these) (NNS:[1964..1971] studies))
+          (PP (IN:[1972..1974] in)
+            (NP (NN:[1975..1980] MCF-7) (NNS:[1981..1986] cells))))))
+    (VP (VBP:[1987..1998] demonstrate)
+      (SBAR (IN:[2000..2004] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[2005..2008] the) (NNS:[2009..2021] interactions))
+            (PP (IN:[2022..2024] of)
+              (NP (NN:[2025..2029] TCDD) (CC:[2030..2033] and)
+                  (NN:[2034..2037] TPA))))
+          (VP
+            (VP (VBP:[2038..2041] are)
+              (ADJP-PRD (RB:[2042..2048] highly) (NN:[2049..2057] response)
+                        (HYPH:[2057..2058] -) (JJ:[2058..2066] specific)))
+            (CC:[2067..2070] and)
+            (VP (VBP:[2071..2073] do) (RB:[2074..2077] not)
+              (VP (VB:[2079..2086] involve)
+                (NP
+                  (NP
+                    (ADJP (NN:[2087..2090] TPA) (HYPH:[2090..2091] -)
+                          (VBN:[2091..2099] mediated))
+                    (NN:[2100..2114] downregulation))
+                  (PP (IN:[2115..2117] of)
+                    (NP (DT:[2118..2121] the) (JJ:[2122..2129] nuclear)
+                      
+                      (NML (NN:[2130..2132] Ah) (NN:[2133..2141] receptor))
+                      (NN:[2142..2149] complex))))))))))
+    (.:[2149..2150] .)))
+
+;section 13 Span:2154..2198
+;PMID: 8384872 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2154..2158] PMID) (::[2158..2159] :) (CD:[2160..2167] 8384872)
+        (NN:[2168..2169] -LSB-) (NNP:[2169..2175] PubMed) (::[2176..2177] -)
+        (NN:[2178..2185] indexed) (IN:[2186..2189] for)
+        (NNP:[2190..2198] MEDLINE-RSB-)))

@@ -1,0 +1,293 @@
+;PMID: 10653207
+;source_file_1911.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..106] = [t:50..106]
+;2)section:[e:110..163] = [t:110..163]
+;3)section:[e:167..301] = [t:167..301]
+;4)sentence:[e:305..403] = [t:305..403]
+;5)sentence:[e:404..530] = [t:404..530]
+;6)sentence:[e:531..671] = [t:531..671]
+;7)sentence:[e:672..900] = [t:672..900]
+;8)sentence:[e:901..960] = [t:901..960]
+;9)sentence:[e:961..1074] = [t:961..1074]
+;10)sentence:[e:1075..1186] = [t:1075..1186]
+;11)section:[e:1190..1235] = [t:1190..1235]
+
+;section 0 Span:0..44
+;J Clin Psychopharmacol. 2000 Feb;20(1):43-5.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Clin) (NNP:[7..22] Psychopharmacol)
+        (.:[22..23] .) (CD:[24..28] 2000) (CC:[29..36] Feb;20-LRB-)
+        (CD:[36..37] 1) (-RRB-:[37..38] -RRB-) (CD:[38..41] :43) (::[41..43] -5)
+        (.:[43..44] .)))
+
+;sentence 1 Span:50..106
+;Cytochrome P450 2D6 and treatment of codeine dependence.
+;[50..69]:cyp450:"Cytochrome P450 2D6"
+;[87..94]:substance:"codeine"
+(SENT
+  (NP-HLN
+    (NP (NN:[50..60] Cytochrome) (NN:[61..65] P450) (NN:[66..69] 2D6))
+    (CC:[70..73] and)
+    (NP
+      (NP (NN:[74..83] treatment))
+      (PP (IN:[84..86] of)
+        (NP (NN:[87..94] codeine) (NN:[95..105] dependence))))
+    (.:[105..106] .)))
+
+;section 2 Span:110..163
+;Romach MK, Otton SV, Somer G, Tyndale RF, Sellers EM.
+(SEC
+  (FRAG (NNP:[110..116] Romach) (NNP:[117..119] MK) (,:[119..120] ,)
+        (NNP:[121..126] Otton) (NNP:[127..129] SV) (,:[129..130] ,)
+        (NNP:[131..136] Somer) (NNP:[137..138] G) (,:[138..139] ,)
+        (NNP:[140..147] Tyndale) (NNP:[148..150] RF) (,:[150..151] ,)
+        (NNP:[152..159] Sellers) (NN:[160..162] EM) (.:[162..163] .)))
+
+;section 3 Span:167..301
+;Department of Psychiatry, Centre for Research in Women's Health, University
+;of  Toronto, Ontario, Canada. myroslava.romach@utoronto.ca
+(SEC
+  (FRAG (NNP:[167..177] Department) (IN:[178..180] of)
+        (NNP:[181..191] Psychiatry) (,:[191..192] ,) (NNP:[193..199] Centre)
+        (IN:[200..203] for) (NNP:[204..212] Research) (IN:[213..215] in)
+        (NNP:[216..221] Women) (POS:[221..223] 's) (NNP:[224..230] Health)
+        (,:[230..231] ,) (NNP:[232..242] University) (IN:[243..245] of)
+        (NNP:[247..254] Toronto) (,:[254..255] ,) (NNP:[256..263] Ontario)
+        (,:[263..264] ,) (NNP:[265..271] Canada) (.:[271..272] .)
+        (NNP:[273..282] myroslava) (NNP:[282..301] .romach@utoronto.ca)))
+
+;sentence 4 Span:305..403
+;Oral opioid analgesics such as codeine are used extensively worldwide and are
+; frequently misused.
+;[310..327]:substance:"opioid analgesics"
+;[336..343]:substance:"codeine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[305..309] Oral)
+         (JJ:[310..316] opioid) (NNS:[317..327] analgesics))
+      (PP (JJ:[328..332] such) (IN:[333..335] as)
+        (NP (NN:[336..343] codeine))))
+    (VP
+      (VP (VBP:[344..347] are)
+        (VP (VBN:[348..352] used)
+          (NP-1 (-NONE-:[352..352] *))
+          (ADVP (RB:[353..364] extensively))
+          (ADVP-LOC (RB:[365..374] worldwide))))
+      (CC:[375..378] and)
+      (VP (VBP:[379..382] are)
+        (VP
+          (ADVP-TMP (RB:[384..394] frequently))
+          (VBN:[395..402] misused)
+          (NP-1 (-NONE-:[402..402] *)))))
+    (.:[402..403] .)))
+
+;sentence 5 Span:404..530
+;Codeine is a substrate of CYP2D6, a genetically polymorphic  P450 enzyme, and
+;is metabolized to the more potent drug morphine.
+;[404..411]:substance:"Codeine"
+;[417..426]:substance:"substrate"
+;[430..436]:cyp450:"CYP2D6"
+;[465..476]:cyp450:"P450 enzyme"
+;[516..520]:substance:"drug"
+;[521..529]:substance:"morphine"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[404..411] Codeine))
+    (VP
+      (VP (VBZ:[412..414] is)
+        (NP-PRD
+          (NP (DT:[415..416] a) (NN:[417..426] substrate))
+          (PP (IN:[427..429] of)
+            (NP
+              (NP (NN:[430..436] CYP2D6))
+              (,:[436..437] ,)
+              (NP (DT:[438..439] a)
+                (ADJP (RB:[440..451] genetically) (JJ:[452..463] polymorphic))
+                 (NN:[465..469] P450) (NN:[470..476] enzyme))))))
+      (,:[476..477] ,) (CC:[478..481] and)
+      (VP (VBZ:[482..484] is)
+        (VP (VBN:[485..496] metabolized)
+          (NP-1 (-NONE-:[496..496] *))
+          (PP (TO:[497..499] to)
+            (NP
+              (NP (DT:[500..503] the)
+                (ADJP (RBR:[504..508] more) (JJ:[509..515] potent))
+                (NN:[516..520] drug))
+              (NP (NN:[521..529] morphine)))))))
+    (.:[529..530] .)))
+
+;sentence 6 Span:531..671
+;CYP2D6  activity can be inhibited by fluoxetine, and the inhibition of
+;morphine  formation may help individuals reduce their use of codeine.
+;[531..537]:cyp450:"CYP2D6"
+;[568..578]:substance:"fluoxetine"
+;[602..610]:substance:"morphine"
+;[663..670]:substance:"codeine"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[531..537] CYP2D6) (NN:[539..547] activity))
+      (VP (MD:[548..551] can)
+        (VP (VB:[552..554] be)
+          (VP (VBN:[555..564] inhibited)
+            (NP-2 (-NONE-:[564..564] *))
+            (PP (IN:[565..567] by)
+              (NP-LGS (NN:[568..578] fluoxetine)))))))
+    (,:[578..579] ,) (CC:[580..583] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[584..587] the) (NN:[588..598] inhibition))
+        (PP (IN:[599..601] of)
+          (NP (NN:[602..610] morphine) (NN:[612..621] formation))))
+      (VP (MD:[622..625] may)
+        (VP (VB:[626..630] help)
+          (S
+            (NP-SBJ (NNS:[631..642] individuals))
+            (VP (VBP:[643..649] reduce)
+              (NP
+                (NP (PRP$:[650..655] their) (NN:[656..659] use))
+                (PP (IN:[660..662] of)
+                  (NP (NN:[663..670] codeine)))))))))
+    (.:[670..671] .)))
+
+;sentence 7 Span:672..900
+;Fourteen long-term  users of oral opiates (principally codeine) were assessed
+;for an open-label  pilot treatment study of fluoxetine 20 mg/day combined
+;with a brief behavioral  intervention and structured tapering of the opiate.
+;[706..713]:substance:"opiates"
+;[727..734]:substance:"codeine"
+;[794..804]:substance:"fluoxetine"
+;[805..807]:quantitative-value:"20"
+;[808..814]:quantitative-units:"mg/day"
+;[893..899]:substance:"opiate"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[672..680] Fourteen)
+        (NML (JJ:[681..685] long) (HYPH:[685..686] -) (NN:[686..690] term))
+        (NNS:[692..697] users))
+      (PP (IN:[698..700] of)
+        (NP
+          (NP (JJ:[701..705] oral) (NNS:[706..713] opiates))
+          (NP (-LRB-:[714..715] -LRB-) (RB:[715..726] principally)
+              (NN:[727..734] codeine) (-RRB-:[734..735] -RRB-)))))
+    (VP (VBD:[736..740] were)
+      (VP (VBN:[741..749] assessed)
+        (NP-1 (-NONE-:[749..749] *))
+        (PP (IN:[750..753] for)
+          (NP
+            (NP (DT:[754..756] an)
+              (NML (JJ:[757..761] open) (HYPH:[761..762] -)
+                   (NN:[762..767] label))
+              (JJ:[769..774] pilot) (NN:[775..784] treatment)
+               (NN:[785..790] study))
+            (PP (IN:[791..793] of)
+              (NP
+                (NP
+                  (NP (NN:[794..804] fluoxetine))
+                  (NP
+                    (NP (CD:[805..807] 20) (NN:[808..810] mg))
+                    (PP (SYM:[810..811] /)
+                      (NP (NN:[811..814] day)))))
+                (VP (VBN:[815..823] combined)
+                  (NP (-NONE-:[823..823] *))
+                  (PP (IN:[824..828] with)
+                    (NP
+                      (NP (DT:[829..830] a) (JJ:[831..836] brief)
+                          (JJ:[837..847] behavioral)
+                          (NN:[849..861] intervention))
+                      (CC:[862..865] and)
+                      (NP
+                        (NP (VBN:[866..876] structured)
+                            (VBG:[877..885] tapering))
+                        (PP (IN:[886..888] of)
+                          (NP (DT:[889..892] the) (NN:[893..899] opiate)))))))))))))
+    (.:[899..900] .)))
+
+;sentence 8 Span:901..960
+;Eight subjects entered and  completed the 8-week treatment.
+;[943..944]:quantitative-value:"8"
+;[945..949]:quantitative-units:"week"
+(SENT
+  (S
+    (NP-SBJ (CD:[901..906] Eight) (NNS:[907..915] subjects))
+    (VP (VBD:[916..923] entered) (CC:[924..927] and) (VBD:[929..938] completed)
+      (NP-1 (DT:[939..942] the)
+        (NML (CD:[943..944] 8) (HYPH:[944..945] -) (NN:[945..949] week))
+        (NN:[950..959] treatment)))
+    (.:[959..960] .)))
+
+;sentence 9 Span:961..1074
+;Opiate use decreased by 30% to 100% of baseline  use (p < 0.0001) in parallel
+;with a decrease in CYP2D6 activity.
+;[961..967]:substance:"Opiate"
+;[985..988]:quantitative-value:"30%"
+;[992..996]:quantitative-value:"100%"
+;[1058..1064]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ (NN:[961..967] Opiate) (NN:[968..971] use))
+    (VP (VBD:[972..981] decreased)
+      (PP-EXT (IN:[982..984] by)
+        (NP
+          (NP
+            (NP (CD:[985..987] 30) (NN:[987..988] %))
+            (TO:[989..991] to)
+            (NP (CD:[992..995] 100) (NN:[995..996] %)))
+          (PP (IN:[997..999] of)
+            (NP (NN:[1000..1008] baseline) (NN:[1010..1013] use)))))
+      (PRN (-LRB-:[1014..1015] -LRB-)
+        (S
+          (NP-SBJ (NN:[1015..1016] p))
+          (VP (SYM:[1017..1018] <)
+            (NP (CD:[1019..1025] 0.0001))))
+        (-RRB-:[1025..1026] -RRB-))
+      (PP (IN:[1027..1029] in)
+        (NP
+          (NP (NN:[1030..1038] parallel))
+          (PP (IN:[1039..1043] with)
+            (NP
+              (NP (DT:[1044..1045] a) (NN:[1046..1054] decrease))
+              (PP (IN:[1055..1057] in)
+                (NP (NN:[1058..1064] CYP2D6) (NN:[1065..1073] activity))))))))
+    (.:[1073..1074] .)))
+
+;sentence 10 Span:1075..1186
+;Fluoxetine may  have a role in the treatment of opiate dependence by
+;decreasing  opiate-reinforcing properties.
+;[1075..1085]:substance:"Fluoxetine"
+;[1123..1129]:substance:"opiate"
+;[1156..1162]:substance:"opiate"
+(SENT
+  (S
+    (NP-SBJ (NN:[1075..1085] Fluoxetine))
+    (VP (MD:[1086..1089] may)
+      (VP (VB:[1091..1095] have)
+        (NP (DT:[1096..1097] a) (NN:[1098..1102] role))
+        (PP (IN:[1103..1105] in)
+          (NP
+            (NP (DT:[1106..1109] the) (NN:[1110..1119] treatment))
+            (PP (IN:[1120..1122] of)
+              (NP (NN:[1123..1129] opiate) (NN:[1130..1140] dependence)))))
+        (PP-MNR (IN:[1141..1143] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1143..1143] *))
+            (VP (VBG:[1144..1154] decreasing)
+              (NP
+                (NML (NN:[1156..1162] opiate) (HYPH:[1162..1163] -)
+                     (VBG:[1163..1174] reinforcing))
+                (NNS:[1175..1185] properties)))))))
+    (.:[1185..1186] .)))
+
+;section 11 Span:1190..1235
+;PMID: 10653207 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1190..1194] PMID) (::[1194..1195] :) (CD:[1196..1204] 10653207)
+        (NN:[1205..1206] -LSB-) (NNP:[1206..1212] PubMed) (::[1213..1214] -)
+        (NN:[1215..1222] indexed) (IN:[1223..1226] for)
+        (NNP:[1227..1235] MEDLINE-RSB-)))

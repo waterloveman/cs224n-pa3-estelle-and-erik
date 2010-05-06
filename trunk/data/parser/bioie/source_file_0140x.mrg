@@ -1,0 +1,380 @@
+;PMID: 11309300
+;source_file_583.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..125] = [t:41..125]
+;2)section:[e:129..208] = [t:129..208]
+;3)section:[e:212..320] = [t:212..320]
+;4)sentence:[e:324..701] = [t:324..701]
+;5)sentence:[e:702..1261] = [t:702..1261]
+;6)sentence:[e:1262..1478] = [t:1262..1478]
+;7)sentence:[e:1479..1610] = [t:1479..1610]
+;8)section:[e:1614..1659] = [t:1614..1659]
+
+;section 0 Span:0..36
+;Cancer Res  2001 Apr 15;61(8):3406-9
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 2001)
+        (NNP:[17..20] Apr) (CD:[21..25] 15;6) (CD:[25..26] 1)
+        (-LRB-:[26..27] -LRB-) (CD:[27..28] 8) (-RRB-:[28..29] -RRB-)
+        (::[29..30] :) (CD:[30..33] 340) (CD:[33..36] 6-9)))
+
+;sentence 1 Span:41..125
+;Beta-catenin mutations in biliary tract cancers: a population-based study in 
+;China.
+;[41..53]:gene-rna:"Beta-catenin"
+;[67..88]:malignancy:"biliary tract cancers"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[41..53] Beta-catenin) (NNS:[54..63] mutations))
+      (PP (IN:[64..66] in)
+        (NP
+          (NML (JJ:[67..74] biliary) (NN:[75..80] tract))
+          (NNS:[81..88] cancers))))
+    (::[88..89] :)
+    (NP
+      (NP (DT:[90..91] a)
+        (ADJP (NN:[92..102] population) (HYPH:[102..103] -)
+              (VBN:[103..108] based))
+        (NN:[109..114] study))
+      (PP-LOC (IN:[115..117] in)
+        (NP (NNP:[119..124] China))))
+    (.:[124..125] .)))
+
+;section 2 Span:129..208
+;Rashid A, Gao YT, Bhakta S, Shen MC, Wang BS, Deng J, Fraumeni JF Jr, Hsing
+;AW.
+(SEC
+  (FRAG (NNP:[129..135] Rashid) (NNP:[136..137] A) (,:[137..138] ,)
+        (NNP:[139..142] Gao) (NNP:[143..145] YT) (,:[145..146] ,)
+        (NNP:[147..153] Bhakta) (NNP:[154..155] S) (,:[155..156] ,)
+        (NNP:[157..161] Shen) (NNP:[162..164] MC) (,:[164..165] ,)
+        (NNP:[166..170] Wang) (NNP:[171..173] BS) (,:[173..174] ,)
+        (NNP:[175..179] Deng) (NNP:[180..182] J,) (NNP:[183..191] Fraumeni)
+        (NNP:[192..194] JF) (NNP:[195..197] Jr) (,:[197..198] ,)
+        (NNP:[199..204] Hsing) (NNP:[205..208] AW.)))
+
+;section 3 Span:212..320
+;Department of Pathology, M.D. Anderson Cancer Center, 1515 Holcombe
+;Boulevard,  Houston, TX 77030-4095, USA.
+(SEC
+  (FRAG (NNP:[212..222] Department) (IN:[223..225] of)
+        (NNP:[226..235] Pathology) (,:[235..236] ,) (NNP:[237..241] M.D.)
+        (NNP:[242..250] Anderson) (NNP:[251..257] Cancer)
+        (NNP:[258..264] Center) (,:[264..265] ,) (IN:[266..270] 1515)
+        (NNP:[271..279] Holcombe) (NNP:[280..289] Boulevard) (,:[289..290] ,)
+        (NNP:[292..299] Houston) (,:[299..300] ,) (NNP:[301..303] TX)
+        (CD:[304..308] 7703) (CD:[308..314] 0-4095) (,:[314..315] ,)
+        (NNP:[316..319] USA) (.:[319..320] .)))
+
+;sentence 4 Span:324..701
+;beta-Catenin is an ubiquitously expressed cytoplasmic protein that has a
+;crucial  role in both cadherin-mediated cell-cell adhesion and as a
+;downstream signaling  molecule in the wingless/Wnt pathway. Activating
+;mutations in exon 3 of the  beta-catenin gene, at the phosphorylation sites
+;for ubiquitination and  degradation of beta-catenin, are present in a variety
+;of cancers.
+;[324..336]:gene-protein:"beta-Catenin"
+;[419..427]:gene-protein:"cadherin"
+;[503..511]:gene-protein:"wingless"
+;[512..515]:gene-protein:"Wnt"
+;[525..545]:variation-event:"Activating mutations"
+;[549..555]:variation-location:"exon 3"
+;[564..576]:gene-rna:"beta-catenin"
+;[651..663]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (NN:[324..336] beta-Catenin))
+    (VP (VBZ:[337..339] is)
+      (NP-PRD
+        (NP (DT:[340..342] an)
+          (ADJP (RB:[343..355] ubiquitously) (VBN:[356..365] expressed))
+          (JJ:[366..377] cytoplasmic) (NN:[378..385] protein))
+        (SBAR
+          (WHNP-1 (WDT:[386..390] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[390..390] *T*))
+            (VP (VBZ:[391..394] has)
+              (NP (DT:[395..396] a) (JJ:[397..404] crucial) (NN:[406..410] role))
+              (PP
+                (PP (IN:[411..413] in)
+                  (NP (CC:[414..418] both)
+                    (ADJP (NN:[419..427] cadherin) (HYPH:[427..428] -)
+                          (VBN:[428..436] mediated))
+                    (NML
+                      (NML (NN:[437..441] cell))
+                      (PP (HYPH:[441..442] -)
+                        (NP (NN:[442..446] cell))))
+                    (NN:[447..455] adhesion)))
+                (CC:[456..459] and)
+                (PP (IN:[460..462] as)
+                  (NP
+                    (NP (DT:[463..464] a) (RB:[465..475] downstream)
+                        (VBG:[476..485] signaling) (NN:[487..495] molecule))
+                    (PP (IN:[496..498] in)
+                      (NP (DT:[499..502] the)
+                        (NML (JJ:[503..511] wingless) (SYM:[511..512] /)
+                             (NN:[512..515] Wnt))
+                        (NN:[516..523] pathway)))))))))))
+    (.:[523..524] .))
+  (S
+    (NP-SBJ
+      (NP (VBG:[525..535] Activating) (NNS:[536..545] mutations))
+      (PP-LOC (IN:[546..548] in)
+        (NP
+          (NP (NN:[549..553] exon) (CD:[554..555] 3))
+          (PP (IN:[556..558] of)
+            (NP (DT:[559..562] the) (NN:[564..576] beta-catenin)
+                (NN:[577..581] gene))))))
+    (,:[581..582] ,)
+    (PP-LOC (IN:[583..585] at)
+      (NP
+        (NP (DT:[586..589] the) (NN:[590..605] phosphorylation)
+            (NNS:[606..611] sites))
+        (PP (IN:[612..615] for)
+          (NP
+            (NP (NN:[616..630] ubiquitination) (CC:[631..634] and)
+                (NN:[636..647] degradation))
+            (PP (IN:[648..650] of)
+              (NP (NN:[651..663] beta-catenin)))))))
+    (,:[663..664] ,)
+    (VP (VBP:[665..668] are)
+      (ADJP-PRD (JJ:[669..676] present)
+        (PP (IN:[677..679] in)
+          (NP
+            (NP (DT:[680..681] a) (NN:[682..689] variety))
+            (PP (IN:[690..692] of)
+              (NP (NNS:[693..700] cancers)))))))
+    (.:[700..701] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[324..701]::S:S:
+
+;sentence 5 Span:702..1261
+;Because  alterations of the adenomatous polyposis coli (APC) gene are present
+;in biliary  tract cancers and the APC protein modulates levels of
+;beta-catenin, we evaluated  the role of beta-catenin in biliary tract cancer
+;by sequencing the third exon of  the beta-catenin gene among 107 biliary
+;tract cancers and 7 gallbladder adenomas  from a population-based study in
+;CHINA: Point mutations of serine or threonine  phosphorylation sites in exon
+;3 of beta-catenin were present in 8 of 107 (7.5%)  biliary tract cancers and
+;4 of 7 (57.1%) gallbladder adenomas.
+;[730..756]:gene-rna:"adenomatous polyposis coli"
+;[758..761]:gene-rna:"APC"
+;[783..805]:malignancy:"biliary  tract cancers"
+;[814..817]:gene-protein:"APC"
+;[846..858]:gene-protein:"beta-catenin"
+;[886..898]:gene-protein:"beta-catenin"
+;[902..922]:malignancy:"biliary tract cancer"
+;[941..951]:variation-location:"third exon"
+;[960..972]:gene-rna:"beta-catenin"
+;[988..1009]:malignancy:"biliary tract cancers"
+;[1016..1036]:malignancy:"gallbladder adenomas"
+;[1078..1093]:variation-type:"Point mutations"
+;[1143..1149]:variation-location:"exon 3"
+;[1153..1165]:gene-rna:"beta-catenin"
+;[1199..1220]:malignancy:"biliary tract cancers"
+;[1240..1260]:malignancy:"gallbladder adenomas"
+(SENT
+  (S
+    (SBAR-ADV (IN:[702..709] Because)
+      (S
+        (S
+          (NP-SBJ
+            (NP (NNS:[711..722] alterations))
+            (PP (IN:[723..725] of)
+              (NP (DT:[726..729] the)
+                (NML
+                  (NML (JJ:[730..741] adenomatous) (NN:[742..751] polyposis)
+                       (NN:[752..756] coli))
+                  (NML (-LRB-:[757..758] -LRB-) (NN:[758..761] APC)
+                       (-RRB-:[761..762] -RRB-)))
+                (NN:[763..767] gene))))
+          (VP (VBP:[768..771] are)
+            (ADJP-PRD (JJ:[772..779] present)
+              (PP (IN:[780..782] in)
+                (NP
+                  (NML (JJ:[783..790] biliary) (NN:[792..797] tract))
+                  (NNS:[798..805] cancers))))))
+        (CC:[806..809] and)
+        (S
+          (NP-SBJ (DT:[810..813] the) (NN:[814..817] APC)
+                  (NN:[818..825] protein))
+          (VP (VBZ:[826..835] modulates)
+            (NP
+              (NP (NNS:[836..842] levels))
+              (PP (IN:[843..845] of)
+                (NP (NN:[846..858] beta-catenin))))))))
+    (,:[858..859] ,)
+    (NP-SBJ (PRP:[860..862] we))
+    (VP (VBD:[863..872] evaluated)
+      (NP
+        (NP (DT:[874..877] the) (NN:[878..882] role))
+        (PP (IN:[883..885] of)
+          (NP (NN:[886..898] beta-catenin))))
+      (PP (IN:[899..901] in)
+        (NP
+          (NML (JJ:[902..909] biliary) (NN:[910..915] tract))
+          (NN:[916..922] cancer)))
+      (PP-MNR (IN:[923..925] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[925..925] *))
+          (VP (VBG:[926..936] sequencing)
+            (NP
+              (NP (DT:[937..940] the)
+                 (JJ:[941..946] third) (NN:[947..951] exon))
+              (PP (IN:[952..954] of)
+                (NP (DT:[956..959] the) (NN:[960..972] beta-catenin)
+                    (NN:[973..977] gene))))
+            (PP (IN:[978..983] among)
+              (NP
+                (NP
+                  (NP (CD:[984..987] 107)
+                    
+                    (NML (JJ:[988..995] biliary) (NN:[996..1001] tract))
+                    (NNS:[1002..1009] cancers))
+                  (CC:[1010..1013] and)
+                  (NP (CD:[1014..1015] 7)
+                     (NN:[1016..1027] gallbladder) (NNS:[1028..1036] adenomas)))
+                (PP (IN:[1038..1042] from)
+                  (NP
+                    (NP (DT:[1043..1044] a)
+                      (ADJP (NN:[1045..1055] population) (HYPH:[1055..1056] -)
+                            (VBN:[1056..1061] based))
+                      (NN:[1062..1067] study))
+                    (PP-LOC (IN:[1068..1070] in)
+                      (NP (NNP:[1071..1076] CHINA)))))))))))
+    (::[1076..1077] :)
+    (S
+      (NP-SBJ
+        (NP (NN:[1078..1083] Point) (NNS:[1084..1093] mutations))
+        (PP (IN:[1094..1096] of)
+          (NP
+            (NP
+              (NML (NN:[1097..1103] serine)
+                (NML-2 (-NONE-:[1103..1103] *P*)))
+              (NML-1 (-NONE-:[1103..1103] *P*)))
+            (CC:[1104..1106] or)
+            (NP
+              (NML (NN:[1107..1116] threonine)
+                (NML-2 (NN:[1118..1133] phosphorylation)))
+              (NML-1 (NNS:[1134..1139] sites)))))
+        (PP-LOC (IN:[1140..1142] in)
+          (NP
+            (NP (NN:[1143..1147] exon) (CD:[1148..1149] 3))
+            (PP (IN:[1150..1152] of)
+              (NP (NN:[1153..1165] beta-catenin))))))
+      (VP (VBD:[1166..1170] were)
+        (ADJP-PRD (JJ:[1171..1178] present)
+          (PP-LOC (IN:[1179..1181] in)
+            (NP
+              (NP
+                (NP (CD:[1182..1183] 8))
+                (PP (IN:[1184..1186] of)
+                  (NP (CD:[1187..1190] 107)
+                    (PRN (-LRB-:[1191..1192] -LRB-)
+                      (NP (CD:[1192..1195] 7.5) (NN:[1195..1196] %))
+                      (-RRB-:[1196..1197] -RRB-))
+                    
+                    (NML (JJ:[1199..1206] biliary) (NN:[1207..1212] tract))
+                    (NNS:[1213..1220] cancers))))
+              (CC:[1221..1224] and)
+              (NP
+                (NP (CD:[1225..1226] 4))
+                (PP (IN:[1227..1229] of)
+                  (NP (CD:[1230..1231] 7)
+                    (PRN (-LRB-:[1232..1233] -LRB-)
+                      (NP (CD:[1233..1237] 57.1) (NN:[1237..1238] %))
+                      (-RRB-:[1238..1239] -RRB-))
+                     (NN:[1240..1251] gallbladder) (NNS:[1252..1260] adenomas)))))))))
+    (.:[1260..1261] .)))
+
+;sentence 6 Span:1262..1478
+;Mutations of  beta-catenin were more frequent in ampullary and gallbladder
+;carcinomas than in  bile duct carcinomas (P = 0.04) and in papillary
+;adenocarcinomas than other  histological types of carcinomas (P = 0.02).
+;[1276..1288]:gene-rna:"beta-catenin"
+;[1311..1320]...[1337..1347]:malignancy-type:"ampullary"..."carcinomas"
+;[1325..1347]:malignancy:"gallbladder carcinomas"
+;[1357..1377]:malignancy:"bile duct carcinomas"
+;[1396..1421]:malignancy:"papillary adenocarcinomas"
+;[1456..1466]:malignancy:"carcinomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1262..1271] Mutations))
+      (PP (IN:[1272..1274] of)
+        (NP (NN:[1276..1288] beta-catenin))))
+    (VP
+      (VP (VBD:[1289..1293] were)
+        (ADJP-PRD
+          (ADJP (RBR:[1294..1298] more) (JJ:[1299..1307] frequent))
+          (PP-LOC=2 (IN:[1308..1310] in)
+            (NP
+              (NP (JJ:[1311..1320] ampullary)
+                (NML-1 (-NONE-:[1320..1320] *P*)))
+              (CC:[1321..1324] and)
+              (NP (NN:[1325..1336] gallbladder)
+                (NML-1 (NNS:[1337..1347] carcinomas)))))
+          (PP=3 (IN:[1348..1352] than)
+            (PP-LOC (IN:[1353..1355] in)
+              (NP
+                (NML (NN:[1357..1361] bile) (NN:[1362..1366] duct))
+                (NNS:[1367..1377] carcinomas))))
+          (PRN=4 (-LRB-:[1378..1379] -LRB-)
+            (S
+              (NP-SBJ (NN:[1379..1380] P))
+              (VP (SYM:[1381..1382] =)
+                (NP (CD:[1383..1387] 0.04))))
+            (-RRB-:[1387..1388] -RRB-))))
+      (CC:[1389..1392] and)
+      (VP
+        (PP-LOC=2 (IN:[1393..1395] in)
+          (NP (JJ:[1396..1405] papillary) (NNS:[1406..1421] adenocarcinomas)))
+        (PP=3 (IN:[1422..1426] than)
+          (NP
+            (NP (JJ:[1427..1432] other) (JJ:[1434..1446] histological)
+                (NNS:[1447..1452] types))
+            (PP (IN:[1453..1455] of)
+              (NP (NNS:[1456..1466] carcinomas)))))
+        (PRN=4 (-LRB-:[1467..1468] -LRB-)
+          (S
+            (NP-SBJ (NN:[1468..1469] P))
+            (VP (SYM:[1470..1471] =)
+              (NP (CD:[1472..1476] 0.02))))
+          (-RRB-:[1476..1477] -RRB-))))
+    (.:[1477..1478] .)))
+
+;sentence 7 Span:1479..1610
+;These results suggest that the  molecular pathways of biliary tract neoplasms
+;vary by anatomical subsite and  histological subtype.
+;[1533..1556]:malignancy:"biliary tract neoplasms"
+(SENT
+  (S
+    (NP-SBJ (DT:[1479..1484] These) (NNS:[1485..1492] results))
+    (VP (VBP:[1493..1500] suggest)
+      (SBAR (IN:[1501..1505] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1506..1509] the) (JJ:[1511..1520] molecular)
+                (NNS:[1521..1529] pathways))
+            (PP (IN:[1530..1532] of)
+              (NP
+                (NML (JJ:[1533..1540] biliary) (NN:[1541..1546] tract))
+                (NNS:[1547..1556] neoplasms))))
+          (VP (VBP:[1557..1561] vary)
+            (PP (IN:[1562..1564] by)
+              (NP
+                (NP (JJ:[1565..1575] anatomical) (NN:[1576..1583] subsite))
+                (CC:[1584..1587] and)
+                (NP (JJ:[1589..1601] histological) (NN:[1602..1609] subtype))))))))
+    (.:[1609..1610] .)))
+
+;section 8 Span:1614..1659
+;PMID: 11309300 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1614..1618] PMID) (::[1618..1619] :) (CD:[1620..1628] 11309300)
+        (-LRB-:[1629..1630] -LSB-) (NNP:[1630..1636] PubMed) (::[1637..1638] -)
+        (NN:[1639..1646] indexed) (IN:[1647..1650] for)
+        (NNP:[1651..1659] MEDLINE-RSB-)))

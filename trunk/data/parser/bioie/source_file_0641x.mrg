@@ -1,0 +1,223 @@
+;PMID: 2538792
+;source_file_803.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..140] = [t:35..140]
+;2)section:[e:144..162] = [t:144..162]
+;3)section:[e:166..226] = [t:166..226]
+;4)sentence:[e:230..444] = [t:230..444]
+;5)sentence:[e:445..677] = [t:445..677]
+;6)sentence:[e:678..764] = [t:678..764]
+;7)sentence:[e:765..918] = [t:765..918]
+;8)section:[e:922..966] = [t:922..966]
+
+;section 0 Span:0..30
+;Oncogene  1989 Feb;4(2):189-93
+(SEC
+  (FRAG (IN:[0..8] Oncogene) (CD:[10..14] 1989) (CC:[15..21] Feb;4-LRB-)
+        (CD:[21..22] 2) (-RRB-:[22..23] -RRB-) (CD:[23..27] :189) (::[27..28] -)
+        (CD:[28..30] 93)))
+
+;sentence 1 Span:35..140
+;Activated N-ras gene was found in human hepatoma tissue but only in a small 
+;fraction of the tumor cells.
+;[45..50]:gene-rna:"N-ras"
+;[75..90]:malignancy:"hepatoma tissue"
+;[128..139]:malignancy:"tumor cells"
+(SENT
+  (S-HLN
+    (NP-SBJ-1 (JJ:[35..44] Activated) (NN:[45..50] N-ras) (NN:[51..55] gene))
+    (VP (VBD:[56..59] was)
+      (VP
+        (VP (VBN:[60..65] found)
+          (NP-1 (-NONE-:[65..65] *))
+          (PP-LOC=2 (IN:[66..68] in)
+            (NP (JJ:[69..74] human)
+               (NN:[75..83] hepatoma) (NN:[84..90] tissue))))
+        (CC:[91..94] but)
+        (VP
+          (ADVP (RB:[95..99] only))
+          (PP-LOC=2 (IN:[100..102] in)
+            (NP
+              (NP (DT:[103..104] a) (JJ:[105..110] small)
+                  (NN:[112..120] fraction))
+              (PP (IN:[121..123] of)
+                (NP (DT:[124..127] the)
+                   (NN:[128..133] tumor) (NNS:[134..139] cells))))))))
+    (.:[139..140] .)))
+
+;section 2 Span:144..162
+;Takada S, Koike K.
+(SEC
+  (FRAG (NNP:[144..150] Takada) (NNP:[151..153] S,) (NNP:[154..159] Koike)
+        (NNP:[160..162] K.)))
+
+;section 3 Span:166..226
+;Department of Gene Research, Cancer Institute, Tokyo, Japan.
+(SEC
+  (FRAG (NNP:[166..176] Department) (IN:[177..179] of) (NNP:[180..184] Gene)
+        (NNP:[185..193] Research) (,:[193..194] ,) (NNP:[195..201] Cancer)
+        (NNP:[202..211] Institute) (,:[211..212] ,) (NNP:[213..218] Tokyo)
+        (,:[218..219] ,) (NNP:[220..225] Japan) (.:[225..226] .)))
+
+;sentence 4 Span:230..444
+;Activated N-ras gene was isolated from human hepatoma tissue by DNA
+;transfection  assay coupled with the neomycin selection method and molecular
+;cloning and a  point mutation in the codon 61 (CAA----AAA) was noted.
+;[240..245]:gene-rna:"N-ras"
+;[275..290]:malignancy:"hepatoma tissue"
+;[390..404]:variation-type:"point mutation"
+;[412..420]:variation-location:"codon 61"
+;[422..425]:variation-state-original:"CAA"
+;[429..432]:variation-state-altered:"AAA"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (JJ:[230..239] Activated) (NN:[240..245] N-ras)
+                (NN:[246..250] gene))
+      (VP (VBD:[251..254] was)
+        (VP (VBN:[255..263] isolated)
+          (NP-1 (-NONE-:[263..263] *))
+          (PP (IN:[264..268] from)
+            (NP (JJ:[269..274] human)
+               (NN:[275..283] hepatoma) (NN:[284..290] tissue)))
+          (PP-MNR (IN:[291..293] by)
+            (NP
+              (NP (NN:[294..297] DNA) (NN:[298..310] transfection)
+                  (NN:[312..317] assay))
+              (VP (VBN:[318..325] coupled)
+                (NP (-NONE-:[325..325] *))
+                (PP-CLR (IN:[326..330] with)
+                  (NP (DT:[331..334] the) (NN:[335..343] neomycin)
+                      (NN:[344..353] selection) (NN:[354..360] method)))))))))
+    (CC:[361..364] and)
+    (S
+      (NP-SBJ-2
+        (NP
+          (NP (JJ:[365..374] molecular) (NN:[375..382] cloning))
+          (CC:[383..386] and)
+          (NP (DT:[387..388] a)
+             (NN:[390..395] point) (NN:[396..404] mutation)))
+        (PP-LOC (IN:[405..407] in)
+          (NP (DT:[408..411] the)
+             (NN:[412..417] codon) (CD:[418..420] 61)
+            (PRN (-LRB-:[421..422] -LRB-)
+              (NP
+                (NP (NN:[422..425] CAA))
+                (PP (SYM:[425..429] ----)
+                  (NP (NN:[429..432] AAA))))
+              (-RRB-:[432..433] -RRB-)))))
+      (VP (VBD:[434..437] was)
+        (VP (VBN:[438..443] noted)
+          (NP-2 (-NONE-:[443..443] *)))))
+    (.:[443..444] .)))
+
+;sentence 5 Span:445..677
+;However, examination of  the proportion of the mutated N-ras gene in the
+;tumor part by molecular cloning  and by hybridization using synthetic
+;oligonucleotide probes indicated that the  mutated gene occurred with very
+;low frequency.
+;[500..505]:gene-rna:"N-ras"
+;[518..523]:malignancy:"tumor"
+;[639..643]:gene-rna:"gene"
+(SENT
+  (S
+    (ADVP (RB:[445..452] However))
+    (,:[452..453] ,)
+    (NP-SBJ
+      (NP (NN:[454..465] examination))
+      (PP (IN:[466..468] of)
+        (NP
+          (NP (DT:[470..473] the) (NN:[474..484] proportion))
+          (PP (IN:[485..487] of)
+            (NP (DT:[488..491] the) (JJ:[492..499] mutated)
+                (NN:[500..505] N-ras) (NN:[506..510] gene)))))
+      (PP (IN:[511..513] in)
+        (NP (DT:[514..517] the) (NN:[518..523] tumor) (NN:[524..528] part)))
+      (PP-MNR
+        (PP (IN:[529..531] by)
+          (NP (JJ:[532..541] molecular) (NN:[542..549] cloning)))
+        (CC:[551..554] and)
+        (PP (IN:[555..557] by)
+          (NP
+            (NP (NN:[558..571] hybridization))
+            (VP (VBG:[572..577] using)
+              (NP (JJ:[578..587] synthetic) (NN:[588..603] oligonucleotide)
+                  (NNS:[604..610] probes)))))))
+    (VP (VBD:[611..620] indicated)
+      (SBAR (IN:[621..625] that)
+        (S
+          (NP-SBJ (DT:[626..629] the) (JJ:[631..638] mutated)
+                  (NN:[639..643] gene))
+          (VP (VBD:[644..652] occurred)
+            (PP (IN:[653..657] with)
+              (NP
+                (ADJP (RB:[658..662] very) (JJ:[663..666] low))
+                (NN:[667..676] frequency)))))))
+    (.:[676..677] .)))
+
+;sentence 6 Span:678..764
+;The activated N-ras gene appears  located only in a small fraction of the
+;tumor cells.
+;[692..697]:gene-rna:"N-ras"
+;[752..763]:malignancy:"tumor cells"
+(SENT
+  (S
+    (NP-SBJ (DT:[678..681] The) (JJ:[682..691] activated) (NN:[692..697] N-ras)
+            (NN:[698..702] gene))
+    (VP (VBZ:[703..710] appears)
+      (S
+        (NP-SBJ (-NONE-:[710..710] *))
+        (VP (VBN:[712..719] located)
+          (NP (-NONE-:[719..719] *))
+          (PP-LOC
+            (ADVP (RB:[720..724] only))
+            (IN:[725..727] in)
+            (NP
+              (NP (DT:[728..729] a) (JJ:[730..735] small)
+                  (NN:[736..744] fraction))
+              (PP (IN:[745..747] of)
+                (NP (DT:[748..751] the)
+                   (NN:[752..757] tumor) (NNS:[758..763] cells))))))))
+    (.:[763..764] .)))
+
+;sentence 7 Span:765..918
+;The experimental data  indicate activation of this gene as possibly not the
+;major cause of carcinoma,  but rather a manifestation of tumor
+;heterogeneity.
+;[816..820]:gene-rna:"gene"
+;[856..865]:malignancy:"carcinoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[765..768] The) (JJ:[769..781] experimental)
+            (NNS:[782..786] data))
+    (VP (VBP:[788..796] indicate)
+      (NP
+        (NP (NN:[797..807] activation))
+        (PP (IN:[808..810] of)
+          (NP (DT:[811..815] this) (NN:[816..820] gene))))
+      (PP (IN:[821..823] as)
+        (NP
+          (NP
+            (NP
+              (ADVP (RB:[824..832] possibly) (RB:[833..836] not))
+              (DT:[837..840] the) (JJ:[841..846] major) (NN:[847..852] cause))
+            (PP (IN:[853..855] of)
+              (NP (NN:[856..865] carcinoma))))
+          (,:[865..866] ,)
+          (CONJP (CC:[868..871] but) (RB:[872..878] rather))
+          (NP
+            (NP (DT:[879..880] a) (NN:[881..894] manifestation))
+            (PP (IN:[895..897] of)
+              (NP (NN:[898..903] tumor) (NN:[904..917] heterogeneity)))))))
+    (.:[917..918] .)))
+
+;section 8 Span:922..966
+;PMID: 2538792 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[922..926] PMID) (::[926..927] :) (CD:[928..935] 2538792)
+        (NN:[936..937] -LSB-) (NNP:[937..943] PubMed) (::[944..945] -)
+        (NN:[946..953] indexed) (IN:[954..957] for)
+        (NNP:[958..966] MEDLINE-RSB-)))

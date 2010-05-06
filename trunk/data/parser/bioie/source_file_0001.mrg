@@ -1,0 +1,339 @@
+;PMID: 6150824
+;source_file_1017.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..123] = [t:50..123]
+;2)sentence:[e:125..185] = [t:125..185]
+;3)section:[e:189..252] = [t:189..252]
+;4)sentence:[e:256..486] = [t:256..486]
+;5)sentence:[e:487..631] = [t:487..631]
+;6)sentence:[e:632..708] = [t:632..708]
+;7)sentence:[e:709..1000] = [t:709..1000]
+;8)sentence:[e:1001..1309] = [t:1001..1309]
+;9)section:[e:1313..1357] = [t:1313..1357]
+
+;section 0 Span:0..44
+;Drug Metab Dispos. 1984 Nov-Dec;12(6):742-8.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1984) (::[24..28] Nov-)
+        (CD:[28..35] Dec;12-LRB-) (CD:[35..37] 6-RRB-) (CD:[37..41] :742)
+        (::[41..42] -) (CD:[42..44] 8.)))
+
+;sentence 1 Span:50..123
+;In vitro metabolism of mono-2-ethylhexyl phthalate by microsomal enzymes.
+;[73..100]:substance:"mono-2-ethylhexyl phthalate"
+;[115..122]:substance:"enzymes"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (FW:[50..52] In) (FW:[53..58] vitro))
+      (NN:[59..69] metabolism))
+    (PP (IN:[70..72] of)
+      (NP (NN:[73..90] mono-2-ethylhexyl) (NN:[91..100] phthalate)))
+    (PP (IN:[101..103] by)
+      (NP (JJ:[104..114] microsomal) (NNS:[115..122] enzymes)))
+    (.:[122..123] .)))
+
+;sentence 2 Span:125..185
+;Similarity to omega- and (omega-1) oxidation of fatty acids.
+;[173..184]:substance:"fatty acids"
+(SENT
+  (NP
+    (NP (NN:[125..135] Similarity))
+    (PP (TO:[136..138] to)
+      (NP
+        (NP
+          (NP (SYM:[139..144] omega) (HYPH:[144..145] -)
+            (NML-1 (-NONE-:[145..145] *P*)))
+          (CC:[146..149] and)
+          (NP (-LRB-:[150..151] -LRB-)
+            (NML (SYM:[151..156] omega) (HYPH:[156..157] -) (CD:[157..158] 1))
+            (-RRB-:[158..159] -RRB-)
+            (NML-1 (NN:[160..169] oxidation))))
+        (PP (IN:[170..172] of)
+          (NP (JJ:[173..178] fatty) (NNS:[179..184] acids)))))
+    (.:[184..185] .)))
+
+;section 3 Span:189..252
+;Albro PW, Chae K, Philpot R, Corbett JT, Schroeder J, Jordan S.
+(SEC
+  (FRAG (NNP:[189..194] Albro) (NNP:[195..197] PW) (,:[197..198] ,)
+        (NNP:[199..203] Chae) (NNP:[204..205] K) (,:[205..206] ,)
+        (NNP:[207..214] Philpot) (NNP:[215..217] R,) (NNP:[218..225] Corbett)
+        (NNP:[226..228] JT) (,:[228..229] ,) (NNP:[230..239] Schroeder)
+        (NNP:[240..242] J,) (NNP:[243..249] Jordan) (NNP:[250..252] S.)))
+
+;sentence 4 Span:256..486
+;Mono-2-ethylhexyl pthalate (MEHP) is oxidized to omega-, omega-1-, and 
+;omega-2-hydroxylation products as well as (very slightly) to a dicarboxylic
+;acid  by washed microsomes from rat liver and kidney, and rabbit but not rat
+;lung.
+;[256..282]:substance:"Mono-2-ethylhexyl pthalate"
+;[284..288]:substance:"MEHP"
+;[391..408]:substance:"dicarboxylic acid"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (NN:[256..273] Mono-2-ethylhexyl) (NN:[274..282] pthalate))
+      (NP (-LRB-:[283..284] -LRB-) (NN:[284..288] MEHP) (-RRB-:[288..289] -RRB-)))
+    (VP (VBZ:[290..292] is)
+      (VP
+        (VP (VBN:[293..301] oxidized)
+          (NP-4 (-NONE-:[301..301] *))
+          (PP
+            (PP (TO:[302..304] to)
+              (NP
+                (NP (SYM:[305..310] omega) (HYPH:[310..311] -)
+                  (NML-3 (-NONE-:[311..311] *P*)))
+                (,:[311..312] ,)
+                (NP
+                  (NML (SYM:[313..318] omega) (HYPH:[318..319] -)
+                       (CD:[319..320] 1))
+                  (HYPH:[320..321] -)
+                  (NML-3 (-NONE-:[321..321] *P*)))
+                (,:[321..322] ,) (CC:[323..326] and)
+                (NP
+                  (NML (SYM:[328..333] omega) (HYPH:[333..334] -)
+                       (CD:[334..335] 2))
+                  (HYPH:[335..336] -)
+                  (NML-3 (NN:[336..349] hydroxylation) (NNS:[350..358] products)))))
+            (CONJP (RB:[359..361] as) (RB:[362..366] well) (IN:[367..369] as))
+            (PP
+              (PRN (-LRB-:[370..371] -LRB-)
+                (ADVP (RB:[371..375] very) (RB:[376..384] slightly))
+                (-RRB-:[384..385] -RRB-))
+              (TO:[386..388] to)
+              (NP (DT:[389..390] a)
+                 (JJ:[391..403] dicarboxylic) (NN:[404..408] acid))))
+          (PP (IN:[410..412] by)
+            (NP
+              (NP-LGS (VBN:[413..419] washed) (NNS:[420..430] microsomes))
+              (PP (IN:[431..435] from)
+                (NP=5
+                  (NP
+                    (NP
+                      (NML-2 (NN:[436..439] rat))
+                      (NN:[440..445] liver))
+                    (CC:[446..449] and)
+                    (NP
+                      (NML-2 (-NONE-:[449..449] *P*))
+                      (NN:[450..456] kidney)))
+                  (,:[456..457] ,) (CC:[458..461] and)
+                  (NP (NN:[462..468] rabbit)
+                    (NML-1 (-NONE-:[468..468] *P*))))))))
+        (CC:[469..472] but)
+        (VP (RB:[473..476] not)
+          (NP=5 (NN:[477..480] rat)
+            (NML-1 (NN:[481..485] lung))))))
+    (.:[485..486] .)))
+
+;sentence 5 Span:487..631
+;The  reactions involve molecular oxygen, are strongly inhibited by carbon
+;monoxide  and oxidized cytochrome c, and NADPH is preferred over NADH.
+;[520..526]:substance:"oxygen"
+;[554..569]:substance:"carbon monoxide"
+;[584..596]:substance:"cytochrome c"
+;[602..607]:substance:"NADPH"
+;[626..630]:substance:"NADH"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (DT:[487..490] The) (NNS:[492..501] reactions))
+      (VP
+        (VP (VBP:[502..509] involve)
+          (NP (JJ:[510..519] molecular) (NN:[520..526] oxygen)))
+        (,:[526..527] ,)
+        (VP (VBP:[528..531] are)
+          (ADVP (RB:[532..540] strongly))
+          (VP (VBN:[541..550] inhibited)
+            (NP-2 (-NONE-:[550..550] *))
+            (PP (IN:[551..553] by)
+              (NP-LGS
+                (NP (NN:[554..560] carbon) (NN:[561..569] monoxide))
+                (CC:[571..574] and)
+                (NP (VBN:[575..583] oxidized)
+                   (NN:[584..594] cytochrome) (NN:[595..596] c))))))))
+    (,:[596..597] ,) (CC:[598..601] and)
+    (S
+      (NP-SBJ-1 (NN:[602..607] NADPH))
+      (VP (VBZ:[608..610] is)
+        (VP (VBN:[611..620] preferred)
+          (NP-1 (-NONE-:[620..620] *))
+          (PP (IN:[621..625] over)
+            (NP (NN:[626..630] NADH))))))
+    (.:[630..631] .)))
+
+;sentence 6 Span:632..708
+;Piperonyl butoxide  inhibits hydroxylation of MEHP, but clofibrate does not.
+;[632..650]:substance:"Piperonyl butoxide"
+;[678..682]:substance:"MEHP"
+;[688..698]:substance:"clofibrate"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[632..641] Piperonyl) (NN:[642..650] butoxide))
+      (VP (VBZ:[652..660] inhibits)
+        (NP
+          (NP (NN:[661..674] hydroxylation))
+          (PP (IN:[675..677] of)
+            (NP (NN:[678..682] MEHP))))))
+    (,:[682..683] ,) (CC:[684..687] but)
+    (S
+      (NP-SBJ (NN:[688..698] clofibrate))
+      (VP (VBZ:[699..703] does) (RB:[704..707] not)
+        (VP (-NONE-:[707..707] *?*))))
+    (.:[707..708] .)))
+
+;sentence 7 Span:709..1000
+;The differential  effects of inducers (phenobarbital and clofibrate) and
+;inhibitors (sodium  laurate, n-decane, metyrapone) on terminal and
+;subterminal hydroxylation as well  as differences in apparent Km for the two
+;suggest that rat liver contains at  least two different MEHP hydroxylases.
+;[738..746]:substance:"inducers"
+;[748..761]:substance:"phenobarbital"
+;[766..776]:substance:"clofibrate"
+;[782..792]:substance:"inhibitors"
+;[794..809]:substance:"sodium  laurate"
+;[811..819]:substance:"n-decane"
+;[821..831]:substance:"metyrapone"
+;[911..913]:quantitative-name:"Km"
+;[982..999]:substance:"MEHP hydroxylases"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[709..712] The) (JJ:[713..725] differential)
+            (NNS:[727..734] effects))
+        (PP (IN:[735..737] of)
+          (NP
+            (NP (NNS:[738..746] inducers)
+              (PRN (-LRB-:[747..748] -LRB-)
+                (NP (NN:[748..761] phenobarbital) (CC:[762..765] and)
+                    (NN:[766..776] clofibrate))
+                (-RRB-:[776..777] -RRB-)))
+            (CC:[778..781] and)
+            (NP (NNS:[782..792] inhibitors)
+              (PRN (-LRB-:[793..794] -LRB-)
+                (NP
+                  (NP (NN:[794..800] sodium) (NN:[802..809] laurate))
+                  (,:[809..810] ,)
+                  (NP (NN:[811..819] n-decane))
+                  (,:[819..820] ,)
+                  (NP (NN:[821..831] metyrapone)))
+                (-RRB-:[831..832] -RRB-)))))
+        (PP (IN:[833..835] on)
+          (NP
+            (NP (JJ:[836..844] terminal)
+              (NML-1 (-NONE-:[844..844] *P*)))
+            (CC:[845..848] and)
+            (NP (JJ:[849..860] subterminal)
+              (NML-1 (NN:[861..874] hydroxylation))))))
+      (CONJP (RB:[875..877] as) (RB:[878..882] well) (IN:[884..886] as))
+      (NP
+        (NP (NNS:[887..898] differences))
+        (PP (IN:[899..901] in)
+          (NP
+            (NP (JJ:[902..910] apparent) (NN:[911..913] Km))
+            (PP (IN:[914..917] for)
+              (NP (DT:[918..921] the) (CD:[922..925] two)))))))
+    (VP (VBP:[926..933] suggest)
+      (SBAR (IN:[934..938] that)
+        (S
+          (NP-SBJ (NN:[939..942] rat) (NN:[943..948] liver))
+          (VP (VBZ:[949..957] contains)
+            (NP
+              (QP (IN:[958..960] at) (JJS:[962..967] least) (CD:[968..971] two))
+              (JJ:[972..981] different)
+               (NN:[982..986] MEHP) (NNS:[987..999] hydroxylases))))))
+    (.:[999..1000] .)))
+
+;sentence 8 Span:1001..1309
+;Comparisons of tissue distribution,  susceptibility to inhibitors, and
+;induction properties suggest that the  hydroxylation of MEHP is more likely
+;to be mediated by the P-450 isozymes  associated with omega- and
+;(omega-1)-hydroxylation of fatty acids than with  those that utilize
+;hydrocarbons as substrates.
+;[1056..1066]:substance:"inhibitors"
+;[1128..1132]:substance:"MEHP"
+;[1170..1184]:cyp450:"P-450 isozymes"
+;[1240..1251]:substance:"fatty acids"
+;[1282..1294]:substance:"hydrocarbons"
+;[1298..1308]:substance:"substrates"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1001..1012] Comparisons))
+      (PP (IN:[1013..1015] of)
+        (NP
+          (NP (NN:[1016..1022] tissue) (NN:[1023..1035] distribution))
+          (,:[1035..1036] ,)
+          (NP
+            (NP (NN:[1038..1052] susceptibility))
+            (PP (TO:[1053..1055] to)
+              (NP (NNS:[1056..1066] inhibitors))))
+          (,:[1066..1067] ,) (CC:[1068..1071] and)
+          (NP (NN:[1072..1081] induction) (NNS:[1082..1092] properties)))))
+    (VP (VBP:[1093..1100] suggest)
+      (SBAR (IN:[1101..1105] that)
+        (S
+          (NP-SBJ-2
+            (NP (DT:[1106..1109] the) (NN:[1111..1124] hydroxylation))
+            (PP (IN:[1125..1127] of)
+              (NP (NN:[1128..1132] MEHP))))
+          (VP (VBZ:[1133..1135] is)
+            (ADJP-PRD
+              (ADJP (RBR:[1136..1140] more) (JJ:[1141..1147] likely)
+                (S
+                  (NP-SBJ-2 (-NONE-:[1147..1147] *))
+                  (VP (TO:[1148..1150] to)
+                    (VP (VB:[1151..1153] be)
+                      (VP (VBN:[1154..1162] mediated)
+                        (NP-2 (-NONE-:[1162..1162] *))
+                        (PP (IN:[1163..1165] by)
+                          (NP-LGS
+                            (NP (DT:[1166..1169] the)
+                               (NN:[1170..1175] P-450)
+                               (NNS:[1176..1184] isozymes))
+                            (VP (VBN:[1186..1196] associated)
+                              (NP (-NONE-:[1196..1196] *))
+                              (PP-CLR (IN:[1197..1201] with)
+                                (NP
+                                  (NP
+                                    (NP (SYM:[1202..1207] omega)
+                                        (HYPH:[1207..1208] -)
+                                      (NML-1 (-NONE-:[1208..1208] *P*)))
+                                    (CC:[1209..1212] and)
+                                    (NP (-LRB-:[1213..1214] -LRB-)
+                                      (NML (SYM:[1214..1219] omega)
+                                           (HYPH:[1219..1220] -)
+                                           (CD:[1220..1221] 1))
+                                      (-RRB-:[1221..1222] -RRB-)
+                                       (HYPH:[1222..1223] -)
+                                      (NML-1 (NN:[1223..1236] hydroxylation))))
+                                  (PP (IN:[1237..1239] of)
+                                    (NP (JJ:[1240..1245] fatty)
+                                        (NNS:[1246..1251] acids)))))))))))))
+              (PP (IN:[1252..1256] than)
+                (PP (IN:[1257..1261] with)
+                  (NP
+                    (NP (DT:[1263..1268] those))
+                    (SBAR
+                      (WHNP-3 (WDT:[1269..1273] that))
+                      (S
+                        (NP-SBJ-3 (-NONE-:[1273..1273] *T*))
+                        (VP (VBP:[1274..1281] utilize)
+                          (NP (NNS:[1282..1294] hydrocarbons))
+                          (PP (IN:[1295..1297] as)
+                            (NP (NNS:[1298..1308] substrates))))))))))))))
+    (.:[1308..1309] .)))
+
+;section 9 Span:1313..1357
+;PMID: 6150824 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1313..1317] PMID) (::[1317..1318] :) (CD:[1319..1326] 6150824)
+        (NN:[1327..1328] -LSB-) (NNP:[1328..1334] PubMed) (::[1335..1336] -)
+        (NN:[1337..1344] indexed) (IN:[1345..1348] for)
+        (NNP:[1349..1357] MEDLINE-RSB-)))

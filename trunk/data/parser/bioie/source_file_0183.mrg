@@ -1,0 +1,443 @@
+;PMID: 10448061
+;source_file_848.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..52] = [t:0..52]
+;1)sentence:[e:58..121] = [t:58..121]
+;2)section:[e:125..156] = [t:125..156]
+;3)section:[e:160..245] = [t:160..245]
+;4)sentence:[e:249..461] = [t:249..461]
+;5)sentence:[e:462..757] = [t:462..757]
+;6)sentence:[e:758..889] = [t:758..889]
+;7)sentence:[e:890..1094] = [t:890..1094]
+;8)sentence:[e:1095..1221] = [t:1095..1221]
+;9)sentence:[e:1222..1294] = [t:1222..1294]
+;10)sentence:[e:1295..1387] = [t:1295..1387]
+;11)sentence:[e:1388..1591] = [t:1388..1591]
+;12)sentence:[e:1592..1755] = [t:1592..1755]
+;13)section:[e:1757..1787] = [t:1757..1787]
+;14)section:[e:1791..1836] = [t:1791..1836]
+
+;section 0 Span:0..52
+;Biochem Biophys Res Commun. 1999 Aug 19;262(1):20-4.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (,:[26..27] .) (CD:[28..32] 1999)
+        (NNP:[33..36] Aug) (CD:[37..44] 19;262-LRB-) (CD:[44..45] 1)
+        (-RRB-:[45..46] -RRB-) (CD:[46..49] :20) (::[49..50] -) (CD:[50..52] 4.)))
+
+;sentence 1 Span:58..121
+;Resveratrol is a selective human cytochrome P450 1A1 inhibitor.
+;[58..69]:substance:"Resveratrol"
+;[91..110]:cyp450:"cytochrome P450 1A1"
+;[111..120]:substance:"inhibitor"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[58..69] Resveratrol))
+    (VP (VBZ:[70..72] is)
+      (NP-PRD (DT:[73..74] a) (JJ:[75..84] selective)
+        (NML (JJ:[85..90] human)
+          
+          (NML (NN:[91..101] cytochrome) (NN:[102..106] P450))
+          (NN:[107..110] 1A1))
+        (NN:[111..120] inhibitor)))
+    (.:[120..121] .)))
+
+;section 2 Span:125..156
+;Chun YJ, Kim MY, Guengerich FP.
+(SEC
+  (FRAG (NNP:[125..129] Chun) (NNP:[130..132] YJ) (,:[132..133] ,)
+        (NNP:[134..137] Kim) (NNP:[138..140] MY) (,:[140..141] ,)
+        (NNP:[142..152] Guengerich) (NNP:[153..155] FP) (.:[155..156] .)))
+
+;section 3 Span:160..245
+;College of Pharmacy, Chungang University, Seoul, Korea, 156-756. 
+;yjchun@chungang.edu
+(SEC
+  (FRAG (NNP:[160..167] College) (IN:[168..170] of) (NNP:[171..179] Pharmacy)
+        (,:[179..180] ,) (NNP:[181..189] Chungang) (NNP:[190..200] University)
+        (,:[200..201] ,) (NNP:[202..207] Seoul) (,:[207..208] ,)
+        (NNP:[209..214] Korea) (,:[214..215] ,) (CD:[216..219] 156)
+        (::[219..220] -) (CD:[220..223] 756) (.:[223..224] .)
+        (-RRB-:[226..241] yjchun@chungang) (.:[241..245] .edu)))
+
+;sentence 4 Span:249..461
+;Resveratrol (trans-3,4',5-trihydroxystilbene) is a phytoalexin compound found
+;in  juice and wine produced from dark-skinned grape cultivars and reported to
+;have  anti-inflammatory and anticarcinogenic activities.
+;[249..260]:substance:"Resveratrol"
+;[262..293]:substance:"trans-3,4',5-trihydroxystilbene"
+;[300..320]:substance:"phytoalexin compound"
+;[331..336]:substance:"juice"
+;[341..345]:substance:"wine"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[249..260] Resveratrol)
+      (PRN (-LRB-:[261..262] -LRB-)
+        (NP (NN:[262..293] trans-3,4',5-trihydroxystilbene))
+        (-RRB-:[293..294] -RRB-)))
+    (VP (VBZ:[295..297] is)
+      (NP-PRD
+        (NP (DT:[298..299] a)
+           (NN:[300..311] phytoalexin) (NN:[312..320] compound))
+        (VP
+          (VP (VBN:[321..326] found)
+            (NP (-NONE-:[326..326] *))
+            (PP-LOC (IN:[327..329] in)
+              (NP
+                (NP (NN:[331..336] juice) (CC:[337..340] and)
+                    (NN:[341..345] wine))
+                (VP (VBN:[346..354] produced)
+                  (NP (-NONE-:[354..354] *))
+                  (PP-CLR (IN:[355..359] from)
+                    (NP (JJ:[360..372] dark-skinned) (NN:[373..378] grape)
+                        (NNS:[379..388] cultivars)))))))
+          (CC:[389..392] and)
+          (VP (VBN:[393..401] reported)
+            (S
+              (NP-SBJ-2 (-NONE-:[401..401] *))
+              (VP (TO:[402..404] to)
+                (VP (VB:[405..409] have)
+                  (NP
+                    (NP
+                      (ADJP (AFX:[411..415] anti) (HYPH:[415..416] -)
+                            (JJ:[416..428] inflammatory))
+                      (NML-1 (-NONE-:[428..428] *P*)))
+                    (CC:[429..432] and)
+                    (NP (JJ:[433..449] anticarcinogenic)
+                      (NML-1 (NNS:[450..460] activities)))))))))))
+    (.:[460..461] .)))
+
+;sentence 5 Span:462..757
+;To investigate the mechanism  of anticarcinogenic activities of resveratrol,
+;the effects on cytochrome P450  (P450) were determined in human liver
+;microsomes and Escherichia coli membranes  coexpressing human P450 1A1 or
+;P450 1A2 with human NADPH-P450 reductase  (bicistronic expression system).
+;[526..537]:substance:"resveratrol"
+;[554..569]:cyp450:"cytochrome P450"
+;[572..576]:cyp450:"P450"
+;[671..679]:cyp450:"P450 1A1"
+;[683..691]:cyp450:"P450 1A2"
+;[703..723]:substance:"NADPH-P450 reductase"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[462..462] *))
+      (VP (TO:[462..464] To)
+        (VP (VB:[465..476] investigate)
+          (NP
+            (NP (DT:[477..480] the) (NN:[481..490] mechanism))
+            (PP (IN:[492..494] of)
+              (NP
+                (NP (JJ:[495..511] anticarcinogenic) (NNS:[512..522] activities))
+                (PP (IN:[523..525] of)
+                  (NP (NN:[526..537] resveratrol)))))))))
+    (,:[537..538] ,)
+    (NP-SBJ-2
+      (NP (DT:[539..542] the) (NNS:[543..550] effects))
+      (PP (IN:[551..553] on)
+        (NP
+          (NP (NN:[554..564] cytochrome) (NN:[565..569] P450))
+          (NP (-LRB-:[571..572] -LRB-) (NN:[572..576] P450)
+              (-RRB-:[576..577] -RRB-)))))
+    (VP (VBD:[578..582] were)
+      (VP (VBN:[583..593] determined)
+        (NP-2 (-NONE-:[593..593] *))
+        (PP-LOC (IN:[594..596] in)
+          (NP
+            (NP
+              (NP (JJ:[597..602] human) (NN:[603..608] liver)
+                  (NNS:[609..619] microsomes))
+              (CC:[620..623] and)
+              (NP
+                (NML (NNP:[624..635] Escherichia) (NNP:[636..640] coli))
+                (NNS:[641..650] membranes)))
+            (VP (VBG:[652..664] coexpressing)
+              (NP
+                (NP
+                  (ADJP-1 (JJ:[665..670] human))
+                   (NN:[671..675] P450) (NN:[676..679] 1A1))
+                (CC:[680..682] or)
+                (NP
+                  (ADJP-1 (-NONE-:[682..682] *P*))
+                   (NN:[683..687] P450) (NN:[688..691] 1A2)))
+              (PP-CLR (IN:[692..696] with)
+                (NP (JJ:[697..702] human)
+                  
+                  (NP (NN:[703..708] NADPH) (HYPH:[708..709] -)
+                      (NN:[709..713] P450))
+                  (NN:[714..723] reductase)
+                  (PRN (-LRB-:[725..726] -LRB-)
+                    (NP (JJ:[726..737] bicistronic) (NN:[738..748] expression)
+                        (NN:[749..755] system))
+                    (-RRB-:[755..756] -RRB-)))))))))
+    (.:[756..757] .)))
+
+;sentence 6 Span:758..889
+;Resveratrol slightly inhibited ethoxyresorufin  O-deethylation (EROD)
+;activity in human liver microsomes with an IC(50) of 1.1  mM.
+;[758..769]:substance:"Resveratrol"
+;[789..804]:substance:"ethoxyresorufin"
+;[871..877]:quantitative-name:"IC(50)"
+;[881..884]:quantitative-value:"1.1"
+;[886..888]:quantitative-units:"mM"
+(SENT
+  (S
+    (NP-SBJ (NN:[758..769] Resveratrol))
+    (VP
+      (ADVP (RB:[770..778] slightly))
+      (VBD:[779..788] inhibited)
+      (NP
+        (NML
+          (NML (NN:[789..804] ethoxyresorufin) (NN:[806..807] O)
+               (HYPH:[807..808] -) (NN:[808..820] deethylation))
+          (NML (-LRB-:[821..822] -LRB-) (NN:[822..826] EROD)
+               (-RRB-:[826..827] -RRB-)))
+        (NN:[828..836] activity))
+      (PP-LOC (IN:[837..839] in)
+        (NP (JJ:[840..845] human) (NN:[846..851] liver)
+            (NNS:[852..862] microsomes)))
+      (PP (IN:[863..867] with)
+        (NP
+          (NP (DT:[868..870] an) (NN:[871..877] IC-LRB-50-RRB-))
+          (PP (IN:[878..880] of)
+            (NP (CD:[881..884] 1.1) (NN:[886..888] mM))))))
+    (.:[888..889] .)))
+
+;sentence 7 Span:890..1094
+;Interestingly, resveratrol exhibited potent inhibition of human P450 1A1 in 
+;a dose-dependent manner with IC(50) of 23 microM for EROD and IC(50) of 11 
+;microM for methoxyresorufin O-demethylation (MROD).
+;[905..916]:substance:"resveratrol"
+;[954..962]:cyp450:"P450 1A1"
+;[996..1002]:quantitative-name:"IC(50)"
+;[1006..1008]:quantitative-value:"23"
+;[1009..1015]:quantitative-units:"microM"
+;[1029..1035]:quantitative-name:"IC(50)"
+;[1039..1041]:quantitative-value:"11"
+;[1043..1049]:quantitative-units:"microM"
+;[1054..1070]:substance:"methoxyresorufin"
+(SENT
+  (S
+    (ADVP (RB:[890..903] Interestingly))
+    (,:[903..904] ,)
+    (NP-SBJ (NN:[905..916] resveratrol))
+    (VP (VBD:[917..926] exhibited)
+      (NP
+        (NP (JJ:[927..933] potent) (NN:[934..944] inhibition))
+        (PP (IN:[945..947] of)
+          (NP (JJ:[948..953] human)
+             (NN:[954..958] P450) (NN:[959..962] 1A1))))
+      (PP-MNR (IN:[963..965] in)
+        (NP (DT:[967..968] a)
+          (ADJP (NN:[969..973] dose) (HYPH:[973..974] -)
+                (JJ:[974..983] dependent))
+          (NN:[984..990] manner)))
+      (PP (IN:[991..995] with)
+        (NP
+          (NP
+            (NP (NN:[996..1002] IC-LRB-50-RRB-))
+            (PP (IN:[1003..1005] of)
+              (NP (CD:[1006..1008] 23) (NN:[1009..1015] microM)))
+            (PP (IN:[1016..1019] for)
+              (NP (NN:[1020..1024] EROD))))
+          (CC:[1025..1028] and)
+          (NP
+            (NP (NN:[1029..1035] IC-LRB-50-RRB-))
+            (PP (IN:[1036..1038] of)
+              (NP (CD:[1039..1041] 11) (NN:[1043..1049] microM)))
+            (PP (IN:[1050..1053] for)
+              (NP
+                (NP (NN:[1054..1070] methoxyresorufin) (NN:[1071..1072] O)
+                    (HYPH:[1072..1073] -) (NN:[1073..1086] demethylation))
+                (NP (-LRB-:[1087..1088] -LRB-) (NN:[1088..1092] MROD)
+                    (-RRB-:[1092..1093] -RRB-))))))))
+    (.:[1093..1094] .)))
+
+;sentence 8 Span:1095..1221
+;However, the inhibition of  human P450 1A2 by resveratrol was not so strong
+;(IC(50) 1.2 mM for EROD and 580  microM for MROD).
+;[1129..1137]:cyp450:"P450 1A2"
+;[1141..1152]:substance:"resveratrol"
+;[1172..1178]:quantitative-name:"IC(50)"
+;[1179..1182]:quantitative-value:"1.2"
+;[1183..1185]:quantitative-units:"mM"
+;[1199..1202]:quantitative-value:"580"
+;[1204..1210]:quantitative-units:"microM"
+(SENT
+  (S
+    (ADVP (RB:[1095..1102] However))
+    (,:[1102..1103] ,)
+    (NP-SBJ
+      (NP (DT:[1104..1107] the) (NN:[1108..1118] inhibition))
+      (PP (IN:[1119..1121] of)
+        (NP (JJ:[1123..1128] human)
+           (NN:[1129..1133] P450) (NN:[1134..1137] 1A2)))
+      (PP (IN:[1138..1140] by)
+        (NP (NN:[1141..1152] resveratrol))))
+    (VP (VBD:[1153..1156] was) (RB:[1157..1160] not)
+      (ADJP-PRD (RB:[1161..1163] so) (JJ:[1164..1170] strong))
+      (PRN (-LRB-:[1171..1172] -LRB-)
+        (S
+          (NP-SBJ (NN:[1172..1178] IC-LRB-50-RRB-))
+          (NP-PRD
+            (NP
+              (NP (CD:[1179..1182] 1.2) (NN:[1183..1185] mM))
+              (PP (IN:[1186..1189] for)
+                (NP (NN:[1190..1194] EROD))))
+            (CC:[1195..1198] and)
+            (NP
+              (NP (CD:[1199..1202] 580) (NN:[1204..1210] microM))
+              (PP (IN:[1211..1214] for)
+                (NP (NN:[1215..1219] MROD))))))
+        (-RRB-:[1219..1220] -RRB-)))
+    (.:[1220..1221] .)))
+
+;sentence 9 Span:1222..1294
+;Resveratrol showed over 50-fold selectivity for P450 1A1 over  P450 1A2.
+;[1222..1233]:substance:"Resveratrol"
+;[1246..1253]:quantitative-value:"50-fold"
+;[1270..1278]:cyp450:"P450 1A1"
+;[1285..1293]:cyp450:"P450 1A2"
+(SENT
+  (S
+    (NP-SBJ (NN:[1222..1233] Resveratrol))
+    (VP (VBD:[1234..1240] showed)
+      (NP
+        (ADJP-EXT
+          (QP (IN:[1241..1245] over) (CD:[1246..1248] 50))
+          (HYPH:[1248..1249] -) (JJ:[1249..1253] fold))
+        (NN:[1254..1265] selectivity))
+      (PP (IN:[1266..1269] for)
+        (NP (NN:[1270..1274] P450) (NN:[1275..1278] 1A1)))
+      (PP (IN:[1279..1283] over)
+        (NP (NN:[1285..1289] P450) (NN:[1290..1293] 1A2))))
+    (.:[1293..1294] .)))
+
+;sentence 10 Span:1295..1387
+;The activities of human NADPH-P450 reductase were not significantly  changed
+;by resveratrol.
+;[1319..1339]:substance:"NADPH-P450 reductase"
+;[1375..1386]:substance:"resveratrol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1295..1298] The) (NNS:[1299..1309] activities))
+      (PP (IN:[1310..1312] of)
+        (NP (JJ:[1313..1318] human)
+          
+          (NML (NN:[1319..1324] NADPH) (HYPH:[1324..1325] -)
+               (NN:[1325..1329] P450))
+          (NN:[1330..1339] reductase))))
+    (VP (VBD:[1340..1344] were) (RB:[1345..1348] not)
+      (VP
+        (ADVP (RB:[1349..1362] significantly))
+        (VBN:[1364..1371] changed)
+        (NP-1 (-NONE-:[1371..1371] *))
+        (PP-LGS (IN:[1372..1374] by)
+          (NP (NN:[1375..1386] resveratrol)))))
+    (.:[1386..1387] .)))
+
+;sentence 11 Span:1388..1591
+;In a human P450 1A1/reductase bicistronic expression  system, resveratrol
+;inhibited human P450 1A1 activity in a mixed-type inhibition 
+;(competitive-noncompetitive) with a K(i) values of 9 and 89 microM.
+;[1399..1407]:cyp450:"P450 1A1"
+;[1408..1417]:substance:"reductase"
+;[1450..1461]:substance:"resveratrol"
+;[1478..1486]:cyp450:"P450 1A1"
+;[1560..1564]:quantitative-name:"K(i)"
+;[1575..1576]:quantitative-value:"9"
+;[1581..1583]:quantitative-value:"89"
+;[1584..1590]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[1388..1390] In)
+      (NP (DT:[1391..1392] a)
+        (NML
+          (NML (JJ:[1393..1398] human)
+             (NN:[1399..1403] P450) (NN:[1404..1407] 1A1))
+          (SYM:[1407..1408] /)
+          (NML (NN:[1408..1417] reductase) (JJ:[1418..1429] bicistronic)
+               (NN:[1430..1440] expression)))
+        (NN:[1442..1448] system)))
+    (,:[1448..1449] ,)
+    (NP-SBJ (NN:[1450..1461] resveratrol))
+    (VP (VBD:[1462..1471] inhibited)
+      (NP
+        (NML (JJ:[1472..1477] human)
+           (NN:[1478..1482] P450) (NN:[1483..1486] 1A1))
+        (NN:[1487..1495] activity))
+      (PP-LOC (IN:[1496..1498] in)
+        (PRN
+          (NP (DT:[1499..1500] a) (JJ:[1501..1511] mixed-type)
+              (NN:[1512..1522] inhibition)
+            (PRN (-LRB-:[1524..1525] -LRB-)
+              (ADJP (JJ:[1525..1536] competitive) (HYPH:[1536..1537] -)
+                    (JJ:[1537..1551] noncompetitive))
+              (-RRB-:[1551..1552] -RRB-)))
+          (PP (IN:[1553..1557] with)
+            (NP
+              (NP (DT:[1558..1559] a) (NN:[1560..1564] K-LRB-i-RRB-)
+                  (NNS:[1565..1571] values))
+              (PP (IN:[1572..1574] of)
+                (NP
+                  (NP (CD:[1575..1576] 9)
+                    (NML-1 (-NONE-:[1576..1576] *P*)))
+                  (CC:[1577..1580] and)
+                  (NP (CD:[1581..1583] 89)
+                    (NML-1 (NN:[1584..1590] microM))))))))))
+    (.:[1590..1591] .)))
+
+;sentence 12 Span:1592..1755
+;These  results suggest that resveratrol is a selective human P450 1A1
+;inhibitor, and  may be considered for use as a strong cancer chemopreventive
+;agent in humans.
+;[1620..1631]:substance:"resveratrol"
+;[1653..1661]:cyp450:"P450 1A1"
+;[1662..1671]:substance:"inhibitor"
+;[1739..1744]:substance:"agent"
+(SENT
+  (S
+    (NP-SBJ (DT:[1592..1597] These) (NNS:[1599..1606] results))
+    (VP (VBP:[1607..1614] suggest)
+      (SBAR (IN:[1615..1619] that)
+        (S
+          (NP-SBJ-1 (NN:[1620..1631] resveratrol))
+          (VP
+            (VP (VBZ:[1632..1634] is)
+              (NP-PRD (DT:[1635..1636] a) (JJ:[1637..1646] selective)
+                (NML (JJ:[1647..1652] human)
+                   (NN:[1653..1657] P450) (NN:[1658..1661] 1A1))
+                (NN:[1662..1671] inhibitor)))
+            (,:[1671..1672] ,) (CC:[1673..1676] and)
+            (VP (MD:[1678..1681] may)
+              (VP (VB:[1682..1684] be)
+                (VP (VBN:[1685..1695] considered)
+                  (NP-1 (-NONE-:[1695..1695] *))
+                  (PP (IN:[1696..1699] for)
+                    (NP
+                      (NP (NN:[1700..1703] use))
+                      (PP (IN:[1704..1706] as)
+                        (NP (DT:[1707..1708] a) (JJ:[1709..1715] strong)
+                          (ADJP (NN:[1716..1722] cancer)
+                                (JJ:[1723..1738] chemopreventive))
+                          (NN:[1739..1744] agent)))
+                      (PP-LOC (IN:[1745..1747] in)
+                        (NP (NNS:[1748..1754] humans))))))))))))
+    (.:[1754..1755] .)))
+
+;section 13 Span:1757..1787
+;Copyright 1999 Academic Press.
+(SEC
+  (FRAG (NN:[1757..1766] Copyright) (CD:[1767..1771] 1999)
+        (NNP:[1772..1780] Academic) (NNP:[1781..1786] Press) (.:[1786..1787] .)))
+
+;section 14 Span:1791..1836
+;PMID: 10448061 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1791..1795] PMID) (::[1795..1796] :) (CD:[1797..1805] 10448061)
+        (NN:[1806..1807] -LSB-) (NNP:[1807..1813] PubMed) (::[1814..1815] -)
+        (NN:[1816..1823] indexed) (IN:[1824..1827] for)
+        (NNP:[1828..1836] MEDLINE-RSB-)))

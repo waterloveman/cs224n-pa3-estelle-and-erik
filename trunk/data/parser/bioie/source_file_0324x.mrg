@@ -1,0 +1,508 @@
+;PMID: 10945494
+;source_file_570.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..192] = [t:38..192]
+;2)section:[e:196..309] = [t:196..309]
+;3)section:[e:313..426] = [t:313..426]
+;4)sentence:[e:430..619] = [t:430..619]
+;5)sentence:[e:620..745] = [t:620..745]
+;6)sentence:[e:746..994] = [t:746..994]
+;7)sentence:[e:995..1116] = [t:995..1116]
+;8)sentence:[e:1117..1191] = [t:1117..1191]
+;9)sentence:[e:1192..1364] = [t:1192..1364]
+;10)sentence:[e:1365..1701] = [t:1365..1701]
+;11)sentence:[e:1702..2034] = [t:1702..2034]
+;12)section:[e:2038..2083] = [t:2038..2083]
+
+;section 0 Span:0..33
+;Br J Cancer  2000 Aug;83(4):473-9
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..11] Cancer) (CD:[13..17] 2000)
+        (.:[18..25] Aug;83-LRB-) (CD:[25..27] 4-RRB-) (CD:[27..31] :473)
+        (::[31..32] -) (CD:[32..33] 9)))
+
+;sentence 1 Span:38..192
+;Multiple molecular marker testing (p53, C-Ki-ras, c-erbB-2) improves
+;estimation  of prognosis in potentially curative resected non-small cell lung
+;cancer.
+;[73..76]:gene-rna:"p53"
+;[78..86]:gene-rna:"C-Ki-ras"
+;[88..96]:gene-rna:"c-erbB-2"
+;[165..191]:malignancy:"non-small cell lung cancer"
+(SENT
+  (S-HLN
+    (NP-SBJ (JJ:[38..46] Multiple)
+      (NML (JJ:[47..56] molecular) (NN:[57..63] marker))
+      (NN:[64..71] testing)
+      (PRN (-LRB-:[72..73] -LRB-)
+        (NP (NN:[73..76] p53) (,:[76..77] ,) (NN:[78..86] C-Ki-ras)
+            (,:[86..87] ,) (NN:[88..96] c-erbB-2))
+        (-RRB-:[96..97] -RRB-)))
+    (VP (VBZ:[98..106] improves)
+      (NP
+        (NP (NN:[107..117] estimation))
+        (PP (IN:[119..121] of)
+          (NP
+            (NP (NN:[122..131] prognosis))
+            (PP (IN:[132..134] in)
+              (NP
+                (ADJP (RB:[135..146] potentially) (JJ:[147..155] curative))
+                (JJ:[156..164] resected)
+                
+                (NML (AFX:[165..168] non) (HYPH:[168..169] -)
+                  (NML (JJ:[169..174] small) (NN:[175..179] cell)))
+                (NN:[180..184] lung) (NN:[185..191] cancer)))))))
+    (.:[191..192] .)))
+
+;section 2 Span:196..309
+;Schneider PM, Praeuer HW, Stoeltzing O, Boehm J, Manning J, Metzger R, Fink
+;U,  Wegerer S, Hoelscher AH, Roth JA.
+(SEC
+  (FRAG (NNP:[196..205] Schneider) (NNP:[206..208] PM) (,:[208..209] ,)
+        (NNP:[210..217] Praeuer) (NNP:[218..220] HW) (,:[220..221] ,)
+        (NNP:[222..232] Stoeltzing) (NNP:[233..234] O) (,:[234..235] ,)
+        (NNP:[236..241] Boehm) (NNP:[242..244] J,) (NNP:[245..252] Manning)
+        (NNP:[253..255] J,) (NNP:[256..263] Metzger) (NNP:[264..266] R,)
+        (NNP:[267..271] Fink) (NNP:[272..273] U) (,:[273..274] ,)
+        (NNP:[276..283] Wegerer) (NNP:[284..286] S,) (NNP:[287..296] Hoelscher)
+        (NNP:[297..299] AH) (,:[299..300] ,) (NNP:[301..305] Roth)
+        (.:[306..309] JA.)))
+
+;section 3 Span:313..426
+;Department of Visceral and Vascular Surgery, University of Cologne, Germany. 
+;Paul.Schneider@Medizin.Uni-Koeln.de
+(SEC
+  (FRAG (NNP:[313..323] Department) (IN:[324..326] of) (NNP:[327..335] Visceral)
+        (CC:[336..339] and) (NNP:[340..348] Vascular) (NNP:[349..356] Surgery)
+        (,:[356..357] ,) (NNP:[358..368] University) (IN:[369..371] of)
+        (NNP:[372..379] Cologne) (,:[379..380] ,) (NNP:[381..388] Germany)
+        (IN:[388..389] .) (NNP:[391..426] Paul.Schneider@Medizin.Uni-Koeln.de)))
+
+;sentence 4 Span:430..619
+;A prospective study was performed in patients with non-small cell lung cancer
+; (NSCLC) to evaluate the prognostic importance of multiple molecular marker
+;(p53,  c-Ki-ras, c-erbB-2) testing.
+;[481..507]:malignancy:"non-small cell lung cancer"
+;[510..515]:malignancy:"NSCLC"
+;[585..588]:gene-rna:"p53"
+;[591..599]:gene-rna:"c-Ki-ras"
+;[601..609]:gene-rna:"c-erbB-2"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[430..431] A) (JJ:[432..443] prospective)
+              (NN:[444..449] study))
+    (VP (VBD:[450..453] was)
+      (VP (VBN:[454..463] performed)
+        (NP-1 (-NONE-:[463..463] *))
+        (PP (IN:[464..466] in)
+          (NP
+            (NP (NNS:[467..475] patients))
+            (PP (IN:[476..480] with)
+              (NP
+                (NP
+                  (NML (AFX:[481..484] non) (HYPH:[484..485] -)
+                    (NML (JJ:[485..490] small) (NN:[491..495] cell)))
+                  (NN:[496..500] lung) (NN:[501..507] cancer))
+                (NP (-LRB-:[509..510] -LRB-) (NN:[510..515] NSCLC)
+                    (-RRB-:[515..516] -RRB-))))))
+        (S-PRP
+          (NP-SBJ (-NONE-:[516..516] *))
+          (VP (TO:[517..519] to)
+            (VP (VB:[520..528] evaluate)
+              (NP
+                (NP (DT:[529..532] the) (JJ:[533..543] prognostic)
+                    (NN:[544..554] importance))
+                (PP (IN:[555..557] of)
+                  (NP (JJ:[558..566] multiple)
+                    (NML (JJ:[567..576] molecular) (NN:[577..583] marker))
+                    (PRN (-LRB-:[584..585] -LRB-)
+                      (NP (NN:[585..588] p53) (,:[588..589] ,)
+                          (NN:[591..599] c-Ki-ras) (,:[599..600] ,)
+                          (NN:[601..609] c-erbB-2))
+                      (-RRB-:[609..610] -RRB-))
+                    (NN:[611..618] testing)))))))))
+    (.:[618..619] .)))
+
+;sentence 5 Span:620..745
+;103 patients with potentially curative resections  (RO resection) for NSCLC
+;in histopathological stages I-IIIA were included.
+;[690..695]:malignancy:"NSCLC"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (CD:[620..623] 103) (NNS:[624..632] patients))
+      (PP (IN:[633..637] with)
+        (NP
+          (NP
+            (ADJP (RB:[638..649] potentially) (JJ:[650..658] curative))
+            (NNS:[659..669] resections)
+            (PRN (-LRB-:[671..672] -LRB-)
+              (NP (NN:[672..674] RO) (NN:[675..684] resection))
+              (-RRB-:[684..685] -RRB-)))
+          (PP (IN:[686..689] for)
+            (NP (NN:[690..695] NSCLC)))
+          (PP (IN:[696..698] in)
+            (NP
+              (NP
+                (NML-1 (JJ:[699..716] histopathological) (NNS:[717..723] stages))
+                (NN:[724..725] I))
+              (PP (HYPH:[725..726] -)
+                (NP
+                  (NML-1 (-NONE-:[726..726] *P*))
+                  (NN:[726..730] IIIA))))))))
+    (VP (VBD:[731..735] were)
+      (VP (VBN:[736..744] included)
+        (NP-2 (-NONE-:[744..744] *))))
+    (.:[744..745] .)))
+
+;sentence 6 Span:746..994
+;SSCP  analysis and DNA sequencing for p53 and c-Ki-ras genes were performed
+;on paired  tumour and normal lung tissue samples and immunohistochemistry
+;(c-erbB-2) was  done on frozen tissue sections with a specific anti-c-erbB-2
+;monoclonal  antibody.
+;[784..787]:gene-rna:"p53"
+;[792..800]:gene-rna:"c-Ki-ras"
+;[833..839]:malignancy:"tumour"
+;[897..905]:gene-protein:"c-erbB-2"
+;[959..993]:gene-protein:"anti-c-erbB-2 monoclonal  antibody"
+;[964..972]:gene-rna:"c-erbB-2"
+(SENT
+  (S
+    (S
+      (NP-SBJ-4
+        (NP
+          (NP (NN:[746..750] SSCP) (NN:[752..760] analysis))
+          (CC:[761..764] and)
+          (NP (NN:[765..768] DNA) (NN:[769..779] sequencing)))
+        (PP (IN:[780..783] for)
+          (NP
+            (NP (NN:[784..787] p53)
+              (NML-3 (-NONE-:[787..787] *P*)))
+            (CC:[788..791] and)
+            (NP (NN:[792..800] c-Ki-ras)
+              (NML-3 (NNS:[801..806] genes))))))
+      (VP (VBD:[807..811] were)
+        (VP (VBN:[812..821] performed)
+          (NP-4 (-NONE-:[821..821] *))
+          (PP (IN:[822..824] on)
+            (NP (JJ:[825..831] paired)
+              (NML
+                (NML (NN:[833..839] tumour)
+                  (NML-2 (-NONE-:[839..839] *P*)))
+                (CC:[840..843] and)
+                (NML (JJ:[844..850] normal) (NN:[851..855] lung)
+                     (NN:[856..862] tissue)
+                  (NML-2 (NNS:[863..870] samples)))))))))
+    (CC:[871..874] and)
+    (S
+      (NP-SBJ-1 (NN:[875..895] immunohistochemistry)
+        (PRN (-LRB-:[896..897] -LRB-)
+          (NP (NN:[897..905] c-erbB-2))
+          (-RRB-:[905..906] -RRB-)))
+      (VP (VBD:[907..910] was)
+        (VP (VBN:[912..916] done)
+          (NP-1 (-NONE-:[916..916] *))
+          (PP (IN:[917..919] on)
+            (NP
+              (NP (JJ:[920..926] frozen) (NN:[927..933] tissue)
+                  (NNS:[934..942] sections))
+              (PP (IN:[943..947] with)
+                (NP (DT:[948..949] a) (JJ:[950..958] specific)
+                  
+                  (ADJP (AFX:[959..963] anti) (HYPH:[963..964] -)
+                        (NN:[964..972] c-erbB-2))
+                  (JJ:[973..983] monoclonal) (NN:[985..993] antibody))))))))
+    (.:[993..994] .)))
+
+;sentence 7 Span:995..1116
+;46/103 (44.6%) NSCLC showed p53 mutations and 17/103 (16.5%) c-Ki-ras 
+;mutations including 12/37 (32.4%) adenocarcinomas.
+;[1010..1015]:malignancy:"NSCLC"
+;[1023..1026]:gene-rna:"p53"
+;[1056..1064]:gene-rna:"c-Ki-ras"
+;[1100..1115]:malignancy:"adenocarcinomas"
+(SENT
+  (S
+    (S
+      (NP-SBJ=1
+        (NP (CD:[995..997] 46))
+        (PP (SYM:[997..998] /)
+          (NP (CD:[998..1001] 103)
+            (PRN (-LRB-:[1002..1003] -LRB-)
+              (NP (CD:[1003..1007] 44.6) (NN:[1007..1008] %))
+              (-RRB-:[1008..1009] -RRB-))
+            (NN:[1010..1015] NSCLC))))
+      (VP=2 (VBD:[1016..1022] showed)
+        (NP (NN:[1023..1026] p53) (NNS:[1027..1036] mutations))))
+    (CC:[1037..1040] and)
+    (S
+      (NP-SBJ=1
+        (NP (CD:[1041..1043] 17))
+        (PP (SYM:[1043..1044] /)
+          (NP (CD:[1044..1047] 103)
+            (PRN (-LRB-:[1048..1049] -LRB-)
+              (NP (CD:[1049..1053] 16.5) (NN:[1053..1054] %))
+              (-RRB-:[1054..1055] -RRB-)))))
+      (VP=2
+        (NP (NN:[1056..1064] c-Ki-ras) (NNS:[1066..1075] mutations))
+        (PP (VBG:[1076..1085] including)
+          (NP
+            (NP (CD:[1086..1088] 12))
+            (PP (SYM:[1088..1089] /)
+              (NP (CD:[1089..1091] 37)
+                (PRN (-LRB-:[1092..1093] -LRB-)
+                  (NP (CD:[1093..1097] 32.4) (NN:[1097..1098] %))
+                  (-RRB-:[1098..1099] -RRB-))
+                (NNS:[1100..1115] adenocarcinomas)))))))
+    (.:[1115..1116] .)))
+
+;sentence 8 Span:1117..1191
+;Overexpression of c-erbB-2  (p185) was detected in 56/103 (54.4%) tumours.
+;[1135..1143]:gene-rna:"c-erbB-2"
+;[1146..1150]:gene-rna:"p185"
+;[1183..1190]:malignancy:"tumours"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1117..1131] Overexpression))
+      (PP (IN:[1132..1134] of)
+        (NP (NN:[1135..1143] c-erbB-2)
+          (PRN (-LRB-:[1145..1146] -LRB-)
+            (NP (NN:[1146..1150] p185))
+            (-RRB-:[1150..1151] -RRB-)))))
+    (VP (VBD:[1152..1155] was)
+      (VP (VBN:[1156..1164] detected)
+        (NP-1 (-NONE-:[1164..1164] *))
+        (PP-LOC (IN:[1165..1167] in)
+          (NP
+            (NP (CD:[1168..1170] 56))
+            (PP (SYM:[1170..1171] /)
+              (NP (CD:[1171..1174] 103)
+                (PRN (-LRB-:[1175..1176] -LRB-)
+                  (NP (CD:[1176..1180] 54.4) (NN:[1180..1181] %))
+                  (-RRB-:[1181..1182] -RRB-))
+                (NNS:[1183..1190] tumours)))))))
+    (.:[1190..1191] .)))
+
+;sentence 9 Span:1192..1364
+;24/103 (23.3%) NSCLC were  negative for alterations in all 3 parameters
+;(c-Ki-ras, p53 and p185) whereas  79/103 (76.7%) were positive for at least
+;one of the 3 parameters.
+;[1207..1212]:malignancy:"NSCLC"
+;[1265..1273]:gene-rna:"c-Ki-ras"
+;[1275..1278]:gene-rna:"p53"
+;[1283..1287]:gene-rna:"p185"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1192..1194] 24))
+      (PP (SYM:[1194..1195] /)
+        (NP (CD:[1195..1198] 103)
+          (PRN (-LRB-:[1199..1200] -LRB-)
+            (NP (CD:[1200..1204] 23.3) (NN:[1204..1205] %))
+            (-RRB-:[1205..1206] -RRB-))
+          (NN:[1207..1212] NSCLC))))
+    (VP (VBD:[1213..1217] were)
+      (ADJP-PRD (JJ:[1219..1227] negative)
+        (PP (IN:[1228..1231] for)
+          (NP (NNS:[1232..1243] alterations))))
+      (PP (IN:[1244..1246] in)
+        (NP (DT:[1247..1250] all) (CD:[1251..1252] 3)
+            (NNS:[1253..1263] parameters)
+          (PRN (-LRB-:[1264..1265] -LRB-)
+            (NP (NN:[1265..1273] c-Ki-ras) (,:[1273..1274] ,)
+                (NN:[1275..1278] p53) (CC:[1279..1282] and)
+                (NN:[1283..1287] p185))
+            (-RRB-:[1287..1288] -RRB-))))
+      (SBAR-ADV (IN:[1289..1296] whereas)
+        (S
+          (NP-SBJ
+            (NP (CD:[1298..1300] 79))
+            (PP (SYM:[1300..1301] /)
+              (NP (CD:[1301..1304] 103)
+                (PRN (-LRB-:[1305..1306] -LRB-)
+                  (NP (CD:[1306..1310] 76.7) (NN:[1310..1311] %))
+                  (-RRB-:[1311..1312] -RRB-)))))
+          (VP (VBD:[1313..1317] were)
+            (ADJP-PRD (JJ:[1318..1326] positive)
+              (PP (IN:[1327..1330] for)
+                (NP
+                  (NP
+                    (QP (IN:[1331..1333] at) (JJS:[1334..1339] least)
+                        (CD:[1340..1343] one)))
+                  (PP (IN:[1344..1346] of)
+                    (NP (DT:[1347..1350] the) (CD:[1351..1352] 3)
+                        (NNS:[1353..1363] parameters))))))))))
+    (.:[1363..1364] .)))
+
+;sentence 10 Span:1365..1701
+;In a  regression model including a multiple molecular marker parameter
+;(negative for  all 3 markers versus positive for at least one marker),
+;histopathological stage  (P<0.00001), respectively the pT (P<0.01) and pN
+;(P<0.00001) categories and the  multiple molecular marker parameter (P<0.01)
+;were of significant prognostic  importance.
+(SENT
+  (S
+    (PP (IN:[1365..1367] In)
+      (NP
+        (NP (DT:[1368..1369] a) (NN:[1371..1381] regression)
+            (NN:[1382..1387] model))
+        (PP (VBG:[1388..1397] including)
+          (NP
+            (NP (DT:[1398..1399] a) (JJ:[1400..1408] multiple)
+              (NML (JJ:[1409..1418] molecular) (NN:[1419..1425] marker))
+              (NN:[1426..1435] parameter)
+              (PRN (-LRB-:[1436..1437] -LRB-)
+                (ADJP (JJ:[1437..1445] negative)
+                  (PP (IN:[1446..1449] for)
+                    (NP (DT:[1451..1454] all) (CD:[1455..1456] 3)
+                        (NNS:[1457..1464] markers)))
+                  (PP (IN:[1465..1471] versus)
+                    (ADJP (JJ:[1472..1480] positive)
+                      (PP (IN:[1481..1484] for)
+                        (NP
+                          (QP (IN:[1485..1487] at) (JJS:[1488..1493] least)
+                              (CD:[1494..1497] one))
+                          (NN:[1498..1504] marker))))))
+                (-RRB-:[1504..1505] -RRB-)))
+            (,:[1505..1506] ,)
+            (NP (JJ:[1507..1524] histopathological) (NN:[1525..1530] stage)
+              (PRN (-LRB-:[1532..1533] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1533..1534] P))
+                  (VP (SYM:[1534..1535] <)
+                    (NP (CD:[1535..1542] 0.00001))))
+                (-RRB-:[1542..1543] -RRB-)))))))
+    (,:[1543..1544] ,)
+    (ADVP (RB:[1545..1557] respectively))
+    (NP-SBJ
+      (NP (DT:[1558..1561] the)
+        (NML
+          (NML (NN:[1562..1564] pT)
+            (PRN (-LRB-:[1565..1566] -LRB-)
+              (S
+                (NP-SBJ (NN:[1566..1567] P))
+                (VP (SYM:[1567..1568] <)
+                  (NP (CD:[1568..1572] 0.01))))
+              (-RRB-:[1572..1573] -RRB-))
+            (NML-1 (-NONE-:[1573..1573] *P*)))
+          (CC:[1574..1577] and)
+          (NML (NN:[1578..1580] pN)
+            (PRN (-LRB-:[1581..1582] -LRB-)
+              (S
+                (NP-SBJ (NN:[1582..1583] P))
+                (VP (SYM:[1583..1584] <)
+                  (NP (CD:[1584..1591] 0.00001))))
+              (-RRB-:[1591..1592] -RRB-))
+            (NML-1 (NNS:[1593..1603] categories)))))
+      (CC:[1604..1607] and)
+      (NP (DT:[1608..1611] the) (JJ:[1613..1621] multiple)
+        (NML (JJ:[1622..1631] molecular) (NN:[1632..1638] marker))
+        (NN:[1639..1648] parameter)
+        (PRN (-LRB-:[1649..1650] -LRB-)
+          (S
+            (NP-SBJ (NN:[1650..1651] P))
+            (VP (SYM:[1651..1652] <)
+              (NP (CD:[1652..1656] 0.01))))
+          (-RRB-:[1656..1657] -RRB-))))
+    (VP (VBD:[1658..1662] were)
+      (PP-PRD (IN:[1663..1665] of)
+        (NP (JJ:[1666..1677] significant) (JJ:[1678..1688] prognostic)
+            (NN:[1690..1700] importance))))
+    (.:[1700..1701] .)))
+
+;sentence 11 Span:1702..2034
+;This study demonstrates that testing 3 molecular markers (c-Ki-ras,  p53 and
+;c-erbB-2) improves estimation of prognosis compared to single marker  testing
+;and appears to define low (82.6%+/-7.9% 5-year survival) and high risk 
+;(40.2%+/-5.5% 5-year survival) groups for treatment failure in potentially 
+;curative (RO) resected NSCLC.
+;[1760..1768]:gene-rna:"c-Ki-ras"
+;[1771..1774]:gene-rna:"p53"
+;[1779..1787]:gene-rna:"c-erbB-2"
+;[2028..2033]:malignancy:"NSCLC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1702..1706] This) (NN:[1707..1712] study))
+    (VP (VBZ:[1713..1725] demonstrates)
+      (SBAR (IN:[1726..1730] that)
+        (S
+          (NP-SBJ (VBG:[1731..1738] testing) (CD:[1739..1740] 3)
+                  (JJ:[1741..1750] molecular) (NNS:[1751..1758] markers)
+            (PRN (-LRB-:[1759..1760] -LRB-)
+              (NP (NN:[1760..1768] c-Ki-ras) (,:[1768..1769] ,)
+                  (NN:[1771..1774] p53) (CC:[1775..1778] and)
+                  (NN:[1779..1787] c-erbB-2))
+              (-RRB-:[1787..1788] -RRB-)))
+          (VP
+            (VP (VBZ:[1789..1797] improves)
+              (NP
+                (NP (NN:[1798..1808] estimation))
+                (PP (IN:[1809..1811] of)
+                  (NP (NN:[1812..1821] prognosis))))
+              (S-ADV
+                (NP-SBJ (-NONE-:[1821..1821] *))
+                (VP (VBN:[1822..1830] compared)
+                  (NP (-NONE-:[1830..1830] *))
+                  (PP-CLR (TO:[1831..1833] to)
+                    (NP
+                      (NML (JJ:[1834..1840] single) (NN:[1841..1847] marker))
+                      (NN:[1849..1856] testing))))))
+            (CC:[1857..1860] and)
+            (VP (VBZ:[1861..1868] appears)
+              (S
+                (NP-SBJ (-NONE-:[1868..1868] *))
+                (VP (TO:[1869..1871] to)
+                  (VP (VB:[1872..1878] define)
+                    (NP
+                      (NP
+                        (NML (JJ:[1879..1882] low)
+                          (NML-2 (-NONE-:[1882..1882] *P*)))
+                        (PRN (-LRB-:[1883..1884] -LRB-)
+                          (NP
+                            (QP (CD:[1884..1888] 82.6) (NN:[1888..1889] %)
+                                (SYM:[1889..1892] +/-) (CD:[1892..1895] 7.9)
+                                (NN:[1895..1896] %))
+                            (NML
+                              (NML (CD:[1897..1898] 5) (HYPH:[1898..1899] -)
+                                   (NN:[1899..1903] year))
+                              (NN:[1904..1912] survival)))
+                          (-RRB-:[1912..1913] -RRB-))
+                        (NML-1 (-NONE-:[1913..1913] *P*)))
+                      (CC:[1914..1917] and)
+                      (NP
+                        (NML (JJ:[1918..1922] high)
+                          (NML-2 (NN:[1923..1927] risk)))
+                        (PRN (-LRB-:[1929..1930] -LRB-)
+                          (NP
+                            (QP (CD:[1930..1934] 40.2) (NN:[1934..1935] %)
+                                (SYM:[1935..1938] +/-) (CD:[1938..1941] 5.5)
+                                (NN:[1941..1942] %))
+                            (NML
+                              (NML (CD:[1943..1944] 5) (HYPH:[1944..1945] -)
+                                   (NN:[1945..1949] year))
+                              (NN:[1950..1958] survival)))
+                          (-RRB-:[1958..1959] -RRB-))
+                        (NML-1 (NNS:[1960..1966] groups))))
+                    (PP (IN:[1967..1970] for)
+                      (NP (NN:[1971..1980] treatment) (NN:[1981..1988] failure)))
+                    (PP (IN:[1989..1991] in)
+                      (NP
+                        (ADJP (RB:[1992..2003] potentially)
+                              (JJ:[2005..2013] curative))
+                        (PRN (-LRB-:[2014..2015] -LRB-)
+                          (NP (NN:[2015..2017] RO))
+                          (-RRB-:[2017..2018] -RRB-))
+                        (JJ:[2019..2027] resected) (NN:[2028..2033] NSCLC)))))))))))
+    (.:[2033..2034] .)))
+
+;section 12 Span:2038..2083
+;PMID: 10945494 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2038..2042] PMID) (::[2042..2043] :) (CD:[2044..2052] 10945494)
+        (NN:[2053..2054] -LSB-) (NNP:[2054..2060] PubMed) (::[2061..2062] -)
+        (NN:[2063..2070] indexed) (IN:[2071..2074] for)
+        (NNP:[2075..2083] MEDLINE-RSB-)))

@@ -1,0 +1,465 @@
+;PMID: 8528106
+;source_file_516.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..139] = [t:38..139]
+;2)section:[e:143..235] = [t:143..235]
+;3)section:[e:239..315] = [t:239..315]
+;4)sentence:[e:319..457] = [t:319..457]
+;5)sentence:[e:458..630] = [t:458..630]
+;6)sentence:[e:631..1046] = [t:631..1046]
+;7)sentence:[e:1047..1157] = [t:1047..1157]
+;8)sentence:[e:1158..1255] = [t:1158..1255]
+;9)sentence:[e:1256..1384] = [t:1256..1384]
+;10)sentence:[e:1385..1487] = [t:1385..1487]
+;11)sentence:[e:1488..1673] = [t:1488..1673]
+;12)sentence:[e:1674..1784] = [t:1674..1784]
+;13)section:[e:1788..1832] = [t:1788..1832]
+
+;section 0 Span:0..33
+;Stem Cells  1995 Sep;13(5):556-63
+(SEC
+  (FRAG (IN:[0..4] Stem) (NNP:[5..10] Cells) (CD:[12..16] 1995)
+        (CD:[17..22] Sep;1) (CD:[22..23] 3) (NN:[23..24] -LRB-) (NN:[24..25] 5)
+        (NN:[25..26] -RRB-) (,:[26..27] :) (CD:[27..29] 55) (CD:[29..33] 6-63)))
+
+;sentence 1 Span:38..139
+;Analysis of mutations of neurofibromatosis type 1 gene and N-ras gene in
+;acute  myelogenous leukemia.
+;[63..87]:gene-rna:"neurofibromatosis type 1"
+;[97..102]:gene-rna:"N-ras"
+;[111..138]:malignancy:"acute  myelogenous leukemia"
+(SENT
+  (NP-HLN
+    (NP (NN:[38..46] Analysis))
+    (PP (IN:[47..49] of)
+      (NP
+        (NP (NNS:[50..59] mutations))
+        (PP (IN:[60..62] of)
+          (NP
+            (NP
+               (NN:[63..80] neurofibromatosis) (NN:[81..85] type)
+               (CD:[86..87] 1)
+              (NN:[88..92] gene))
+            (CC:[93..96] and)
+            (NP (NN:[97..102] N-ras) (NN:[103..107] gene))))))
+    (PP (IN:[108..110] in)
+      (NP (JJ:[111..116] acute) (JJ:[118..129] myelogenous)
+          (NN:[130..138] leukemia)))
+    (.:[138..139] .)))
+
+;section 2 Span:143..235
+;Lee YY, Kim WS, Bang YJ, Jung CW, Park S, Yoon WJ, Cho KS, Kim IS, Jung TJ,
+;Choi  IY, et al.
+(SEC
+  (FRAG (NNP:[143..146] Lee) (NNP:[147..149] YY) (,:[149..150] ,)
+        (NNP:[151..154] Kim) (NNP:[155..157] WS) (,:[157..158] ,)
+        (NNP:[159..163] Bang) (NNP:[164..166] YJ) (,:[166..167] ,)
+        (DT:[168..172] Jung) (NNP:[173..176] CW,) (NNP:[177..181] Park)
+        (NNP:[182..183] S) (NNP:[183..184] ,) (NNP:[185..189] Yoon)
+        (NNP:[190..192] WJ) (,:[192..193] ,) (NNP:[194..197] Cho)
+        (NNP:[198..200] KS) (,:[200..201] ,) (NNP:[202..205] Kim)
+        (NNP:[206..208] IS) (,:[208..209] ,) (NNP:[210..214] Jung)
+        (NNP:[215..217] TJ) (,:[217..218] ,) (NNP:[219..223] Choi)
+        (NNP:[225..227] IY) (,:[227..228] ,) (DT:[229..231] et)
+        (NN:[232..234] al) (.:[234..235] .)))
+
+;section 3 Span:239..315
+;Department of Internal Medicine, Han Yang University Hospital, Seoul, Korea.
+(SEC
+  (FRAG (NNP:[239..249] Department) (IN:[250..252] of) (NNP:[253..261] Internal)
+        (NNP:[262..270] Medicine) (,:[270..271] ,) (NNP:[272..275] Han)
+        (NNP:[276..280] Yang) (NNP:[281..291] University)
+        (NNP:[292..300] Hospital) (,:[300..301] ,) (NNP:[302..307] Seoul)
+        (,:[307..308] ,) (NNP:[309..314] Korea) (.:[314..315] .)))
+
+;sentence 4 Span:319..457
+;Neurofibromatosis type 1 (NF1) gene is a tumor suppressor gene, and the NF1
+;gene  product, neurofibromin, can downregulate the N-ras gene.
+;[319..343]:gene-rna:"Neurofibromatosis type 1"
+;[345..348]:gene-rna:"NF1"
+;[360..381]:gene-rna:"tumor suppressor gene"
+;[391..394]:gene-rna:"NF1"
+;[410..423]:gene-protein:"neurofibromin"
+;[446..451]:gene-rna:"N-ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NML
+          (NML (NN:[319..336] Neurofibromatosis) (NN:[337..341] type)
+               (CD:[342..343] 1))
+          (NML (-LRB-:[344..345] -LRB-) (NN:[345..348] NF1)
+               (-RRB-:[348..349] -RRB-)))
+        (NN:[350..354] gene))
+      (VP (VBZ:[355..357] is)
+        (NP-PRD (DT:[358..359] a)
+          
+          (NML (NN:[360..365] tumor) (NN:[366..376] suppressor))
+          (NN:[377..381] gene))))
+    (,:[381..382] ,) (CC:[383..386] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[387..390] the) (NN:[391..394] NF1) (NN:[395..399] gene)
+            (NN:[401..408] product))
+        (,:[408..409] ,)
+        (NP (NN:[410..423] neurofibromin)))
+      (,:[423..424] ,)
+      (VP (MD:[425..428] can)
+        (VP (VB:[429..441] downregulate)
+          (NP (DT:[442..445] the) (NN:[446..451] N-ras) (NN:[452..456] gene)))))
+    (.:[456..457] .)))
+
+;sentence 5 Span:458..630
+;Because the N-ras gene  is often mutated in acute myelogenous leukemia (AML),
+;we wondered if the NF1  gene might be mutated in those AML samples not having
+;N-ras mutations.
+;[470..475]:gene-rna:"N-ras"
+;[502..528]:malignancy:"acute myelogenous leukemia"
+;[530..533]:malignancy:"AML"
+;[555..558]:gene-rna:"NF1"
+;[591..594]:malignancy:"AML"
+;[614..619]:gene-rna:"N-ras"
+(SENT
+  (S
+    (SBAR-PRP (IN:[458..465] Because)
+      (S
+        (NP-SBJ-2 (DT:[466..469] the) (NN:[470..475] N-ras) (NN:[476..480] gene))
+        (VP (VBZ:[482..484] is)
+          (ADVP-TMP (RB:[485..490] often))
+          (VP (JJ:[491..498] mutated)
+            (NP-2 (-NONE-:[498..498] *))
+            (PP (IN:[499..501] in)
+              (NP
+                (NP (JJ:[502..507] acute) (JJ:[508..519] myelogenous)
+                    (NN:[520..528] leukemia))
+                (NP (-LRB-:[529..530] -LRB-) (NN:[530..533] AML)
+                    (-RRB-:[533..534] -RRB-))))))))
+    (,:[534..535] ,)
+    (NP-SBJ (PRP:[536..538] we))
+    (VP (VBD:[539..547] wondered)
+      (SBAR (IN:[548..550] if)
+        (S
+          (NP-SBJ-1 (DT:[551..554] the) (NN:[555..558] NF1) (NN:[560..564] gene))
+          (VP (MD:[565..570] might)
+            (VP (VB:[571..573] be)
+              (VP (JJ:[574..581] mutated)
+                (NP-1 (-NONE-:[581..581] *))
+                (PP (IN:[582..584] in)
+                  (NP
+                    (NP (DT:[585..590] those) (NN:[591..594] AML)
+                        (NNS:[595..602] samples))
+                    (VP (RB:[603..606] not) (VBG:[607..613] having)
+                      (NP (NN:[614..619] N-ras) (NNS:[620..629] mutations)))))))))))
+    (.:[629..630] .)))
+
+;sentence 6 Span:631..1046
+;We  investigated the mutational status of the N-ras gene and the FLR exon of
+;codons  1371-1423 of the open reading frame of the full-length NF1 cDNA,
+;which has a  strong homology with the mammalian ras GTPase-activating protein
+;(GAP),  especially for a stretch of three consecutive amino acids (F, L, R),
+;by  single-strand conformation polymorphism analysis and direct sequencing in
+; samples from patients with AML.
+;[677..682]:gene-rna:"N-ras"
+;[696..704]:variation-location:"FLR exon"
+;[708..725]:variation-location:"codons  1371-1423"
+;[771..774]:gene-rna:"NF1"
+;[829..858]:gene-protein:"ras GTPase-activating protein"
+;[860..863]:gene-protein:"GAP"
+;[1042..1045]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ (PRP:[631..633] We))
+    (VP (VBD:[635..647] investigated)
+      (NP
+        (NP (DT:[648..651] the) (JJ:[652..662] mutational)
+            (NN:[663..669] status))
+        (PP (IN:[670..672] of)
+          (NP
+            (NP (DT:[673..676] the) (NN:[677..682] N-ras) (NN:[683..687] gene))
+            (CC:[688..691] and)
+            (NP
+              (NP (DT:[692..695] the)
+                 (NN:[696..699] FLR) (NN:[700..704] exon))
+              (PP (IN:[705..707] of)
+                (NP
+                  (NP
+                    (NML-2 (NNS:[708..714] codons))
+                    (CD:[716..720] 1371))
+                  (PP (HYPH:[720..721] -)
+                    (NP
+                      (NML-2 (-NONE-:[721..721] *P*))
+                      (CD:[721..725] 1423)))))
+              (PP (IN:[726..728] of)
+                (NP
+                  (NP (DT:[729..732] the) (JJ:[733..737] open)
+                      (NN:[738..745] reading) (NN:[746..751] frame))
+                  (PP (IN:[752..754] of)
+                    (NP
+                      (NP (DT:[755..758] the) (JJ:[759..770] full-length)
+                          (NN:[771..774] NF1) (NN:[775..779] cDNA))
+                      (,:[779..780] ,)
+                      (SBAR
+                        (WHNP-1 (WDT:[781..786] which))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[786..786] *T*))
+                          (VP (VBZ:[787..790] has)
+                            (NP
+                              (NP (DT:[791..792] a) (JJ:[794..800] strong)
+                                  (NN:[801..809] homology))
+                              (PP (IN:[810..814] with)
+                                (NML (DT:[815..818] the)
+                                     (JJ:[819..828] mammalian)
+                                     (NN:[829..832] ras)
+                                  (NML
+                                    (NML
+                                      (NML (NN:[833..839] GTPase)
+                                           (HYPH:[839..840] -)
+                                           (VBG:[840..850] activating))
+                                      (NN:[851..858] protein))
+                                    (NML (-LRB-:[859..860] -LRB-)
+                                         (NN:[860..863] GAP)
+                                         (-RRB-:[863..864] -RRB-))))))
+                            (,:[864..865] ,)
+                            (PP
+                              (ADVP (RB:[867..877] especially))
+                              (IN:[878..881] for)
+                              (NP
+                                (NP (DT:[882..883] a) (NN:[884..891] stretch))
+                                (PP (IN:[892..894] of)
+                                  (NP (CD:[895..900] three)
+                                      (JJ:[901..912] consecutive)
+                                      (JJ:[913..918] amino)
+                                      (NNS:[919..924] acids)
+                                    (PRN (-LRB-:[925..926] -LRB-)
+                                      (NP (NN:[926..927] F) (,:[927..928] ,)
+                                          (NN:[929..930] L) (,:[930..931] ,)
+                                          (NN:[932..933] R))
+                                      (-RRB-:[933..934] -RRB-)))))))))))))))))
+      (,:[934..935] ,)
+      (PP-MNR (IN:[936..938] by)
+        (NP
+          (NP (JJ:[940..953] single-strand) (NN:[954..966] conformation)
+              (NN:[967..979] polymorphism) (NN:[980..988] analysis))
+          (CC:[989..992] and)
+          (NP (JJ:[993..999] direct) (NN:[1000..1010] sequencing))))
+      (PP (IN:[1011..1013] in)
+        (NP
+          (NP (NNS:[1015..1022] samples))
+          (PP (IN:[1023..1027] from)
+            (NP
+              (NP (NNS:[1028..1036] patients))
+              (PP (IN:[1037..1041] with)
+                (NP (NN:[1042..1045] AML))))))))
+    (.:[1045..1046] .)))
+
+;sentence 7 Span:1047..1157
+;Of 48 AML patients, 10 (21%) had point  (missense) mutations of the N-ras
+;gene involving codons 12, 13 and 61.
+;[1053..1056]:malignancy:"AML"
+;[1080..1085]:variation-type:"point"
+;[1088..1096]:variation-type:"missense"
+;[1098..1107]:variation-event:"mutations"
+;[1115..1120]:gene-rna:"N-ras"
+;[1136..1145]:variation-location:"codons 12"
+;[1136..1142]...[1147..1149]:variation-location:"codons"..."13"
+;[1136..1142]...[1154..1156]:variation-location:"codons"..."61"
+(SENT
+  (S
+    (PP-2 (IN:[1047..1049] Of)
+      (NP (CD:[1050..1052] 48) (NN:[1053..1056] AML) (NNS:[1057..1065] patients)))
+    (,:[1065..1066] ,)
+    (NP-SBJ
+      (NP (CD:[1067..1069] 10)
+        (PRN (-LRB-:[1070..1071] -LRB-)
+          (NP (CD:[1071..1073] 21) (NN:[1073..1074] %))
+          (-RRB-:[1074..1075] -RRB-)))
+      (PP-2 (-NONE-:[1075..1075] *T*)))
+    (VP (VBD:[1076..1079] had)
+      (NP
+        (NP
+          (NP (NN:[1080..1085] point)
+            (PRN (-LRB-:[1087..1088] -LRB-)
+              (NP (JJ:[1088..1096] missense))
+              (-RRB-:[1096..1097] -RRB-))
+            (NNS:[1098..1107] mutations))
+          (PP (IN:[1108..1110] of)
+            (NP (DT:[1111..1114] the) (NN:[1115..1120] N-ras)
+                (NN:[1121..1125] gene))))
+        (VP (VBG:[1126..1135] involving)
+          (NP
+            (NP
+              (NML-1 (NNS:[1136..1142] codons))
+              (CD:[1143..1145] 12))
+            (,:[1145..1146] ,)
+            (NP
+              (NML-1 (-NONE-:[1146..1146] *P*))
+              (CD:[1147..1149] 13))
+            (CC:[1150..1153] and)
+            (NP
+              (NML-1 (-NONE-:[1153..1153] *P*))
+              (CD:[1154..1156] 61))))))
+    (.:[1156..1157] .)))
+
+;sentence 8 Span:1158..1255
+;However,  mutations in the FLR exon of the NF1 gene were not detected in any
+;of the AML  samples.
+;[1168..1177]:variation-event:"mutations"
+;[1185..1193]:variation-location:"FLR exon"
+;[1201..1204]:gene-rna:"NF1"
+;[1242..1245]:malignancy:"AML"
+(SENT
+  (S
+    (ADVP (RB:[1158..1165] However))
+    (,:[1165..1166] ,)
+    (NP-SBJ-1
+      (NP (NNS:[1168..1177] mutations))
+      (PP-LOC (IN:[1178..1180] in)
+        (NP
+          (NP (DT:[1181..1184] the)
+             (NN:[1185..1188] FLR) (NN:[1189..1193] exon))
+          (PP (IN:[1194..1196] of)
+            (NP (DT:[1197..1200] the) (NN:[1201..1204] NF1)
+                (NN:[1205..1209] gene))))))
+    (VP (VBD:[1210..1214] were) (RB:[1215..1218] not)
+      (VP (VBN:[1219..1227] detected)
+        (NP-1 (-NONE-:[1227..1227] *))
+        (PP (IN:[1228..1230] in)
+          (NP
+            (NP (DT:[1231..1234] any))
+            (PP (IN:[1235..1237] of)
+              (NP (DT:[1238..1241] the) (NN:[1242..1245] AML)
+                  (NNS:[1247..1254] samples)))))))
+    (.:[1254..1255] .)))
+
+;sentence 9 Span:1256..1384
+;We also examined the difference of clinical response to induction  therapy
+;between AML patients with and without N-ras mutation.
+;[1339..1342]:malignancy:"AML"
+;[1369..1374]:gene-rna:"N-ras"
+;[1375..1383]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1256..1258] We))
+    (ADVP (RB:[1259..1263] also))
+    (VP (VBD:[1264..1272] examined)
+      (NP
+        (NP (DT:[1273..1276] the) (NN:[1277..1287] difference))
+        (PP (IN:[1288..1290] of)
+          (NP
+            (NP (JJ:[1291..1299] clinical) (NN:[1300..1308] response))
+            (PP (TO:[1309..1311] to)
+              (NP (NN:[1312..1321] induction) (NN:[1323..1330] therapy)))))
+        (PP (IN:[1331..1338] between)
+          (NP
+            (NP (NN:[1339..1342] AML) (NNS:[1343..1351] patients))
+            (PP (IN:[1352..1356] with) (CC:[1357..1360] and)
+                (IN:[1361..1368] without)
+              (NP (NN:[1369..1374] N-ras) (NN:[1375..1383] mutation)))))))
+    (.:[1383..1384] .)))
+
+;sentence 10 Span:1385..1487
+;A significantly  lower rate of complete remission was noted in individuals
+;with N-ras gene  mutations.
+;[1465..1470]:gene-rna:"N-ras"
+;[1477..1486]:variation-event:"mutations"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1385..1386] A)
+        (ADJP (RB:[1387..1400] significantly) (JJR:[1402..1407] lower))
+        (NN:[1408..1412] rate))
+      (PP (IN:[1413..1415] of)
+        (NP (JJ:[1416..1424] complete) (NN:[1425..1434] remission))))
+    (VP (VBD:[1435..1438] was)
+      (VP (VBN:[1439..1444] noted)
+        (NP-1 (-NONE-:[1444..1444] *))
+        (PP-LOC (IN:[1445..1447] in)
+          (NP
+            (NP (NNS:[1448..1459] individuals))
+            (PP (IN:[1460..1464] with)
+              (NP (NN:[1465..1470] N-ras) (NN:[1471..1475] gene)
+                  (NNS:[1477..1486] mutations)))))))
+    (.:[1486..1487] .)))
+
+;sentence 11 Span:1488..1673
+;These results suggest that mutation of the NF1 gene, at least in the  FLR
+;exon, is very rare in AML and the NF1 gene probably is not a functional 
+;complement of the N-ras gene mutation.
+;[1515..1523]:variation-event:"mutation"
+;[1531..1534]:gene-rna:"NF1"
+;[1558..1566]:variation-location:"FLR exon"
+;[1584..1587]:malignancy:"AML"
+;[1596..1599]:gene-rna:"NF1"
+;[1653..1658]:gene-rna:"N-ras"
+;[1664..1672]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ (DT:[1488..1493] These) (NNS:[1494..1501] results))
+    (VP (VBP:[1502..1509] suggest)
+      (SBAR (IN:[1510..1514] that)
+        (S
+          (S
+            (NP-SBJ
+              (NP (NN:[1515..1523] mutation))
+              (PP (IN:[1524..1526] of)
+                (NP (DT:[1527..1530] the) (NN:[1531..1534] NF1)
+                    (NN:[1535..1539] gene))))
+            (,:[1539..1540] ,)
+            (PP
+              (ADVP (IN:[1541..1543] at) (JJS:[1544..1549] least))
+              (IN:[1550..1552] in)
+              (NP (DT:[1553..1556] the)
+                 (NN:[1558..1561] FLR) (NN:[1562..1566] exon)))
+            (,:[1566..1567] ,)
+            (VP (VBZ:[1568..1570] is)
+              (ADJP-PRD (RB:[1571..1575] very) (JJ:[1576..1580] rare))
+              (PP (IN:[1581..1583] in)
+                (NP (NN:[1584..1587] AML)))))
+          (CC:[1588..1591] and)
+          (S
+            (NP-SBJ (DT:[1592..1595] the) (NN:[1596..1599] NF1)
+                    (NN:[1600..1604] gene))
+            (ADVP (RB:[1605..1613] probably))
+            (VP (VBZ:[1614..1616] is) (RB:[1617..1620] not)
+              (NP-PRD
+                (NP (DT:[1621..1622] a) (JJ:[1623..1633] functional)
+                    (NN:[1635..1645] complement))
+                (PP (IN:[1646..1648] of)
+                  (NP (DT:[1649..1652] the) (NN:[1653..1658] N-ras)
+                      (NN:[1659..1663] gene) (NN:[1664..1672] mutation)))))))))
+    (.:[1672..1673] .)))
+
+;sentence 12 Span:1674..1784
+;The presence of N-ras gene mutation may  be associated with a lower clinical
+;response to antileukemic therapy.
+;[1690..1695]:gene-rna:"N-ras"
+;[1701..1709]:variation-event:"mutation"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1674..1677] The) (NN:[1678..1686] presence))
+      (PP (IN:[1687..1689] of)
+        (NP (NN:[1690..1695] N-ras) (NN:[1696..1700] gene)
+            (NN:[1701..1709] mutation))))
+    (VP (MD:[1710..1713] may)
+      (VP (VB:[1715..1717] be)
+        (VP (VBN:[1718..1728] associated)
+          (NP-1 (-NONE-:[1728..1728] *))
+          (PP-CLR (IN:[1729..1733] with)
+            (NP
+              (NP (DT:[1734..1735] a) (JJR:[1736..1741] lower)
+                  (JJ:[1742..1750] clinical) (NN:[1751..1759] response))
+              (PP (TO:[1760..1762] to)
+                (NP (JJ:[1763..1775] antileukemic) (NN:[1776..1783] therapy))))))))
+    (.:[1783..1784] .)))
+
+;section 13 Span:1788..1832
+;PMID: 8528106 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1788..1792] PMID) (::[1792..1793] :) (CD:[1794..1801] 8528106)
+        (NN:[1802..1803] -LSB-) (NNP:[1803..1809] PubMed) (::[1810..1811] -)
+        (NN:[1812..1819] indexed) (IN:[1820..1823] for)
+        (NNP:[1824..1832] MEDLINE-RSB-)))

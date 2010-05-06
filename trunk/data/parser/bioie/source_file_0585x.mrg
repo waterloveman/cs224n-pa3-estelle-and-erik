@@ -1,0 +1,283 @@
+;PMID: 11698147
+;source_file_2872.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..229] = [t:48..229]
+;2)section:[e:233..245] = [t:233..245]
+;3)section:[e:249..426] = [t:249..426]
+;4)sentence:[e:430..638] = [t:430..638]
+;5)sentence:[e:639..722] = [t:639..722]
+;6)sentence:[e:723..963] = [t:723..963]
+;7)sentence:[e:964..1115] = [t:964..1115]
+;8)sentence:[e:1116..1342] = [t:1116..1342]
+;9)section:[e:1346..1391] = [t:1346..1391]
+
+;section 0 Span:0..42
+;Neurosci Lett.  2001 Nov 13;314(1-2):61-4.
+(SEC
+  (FRAG (NNP:[0..8] Neurosci) (NNP:[9..13] Lett) (.:[13..14] .)
+        (CD:[16..20] 2001) (IN:[21..24] Nov) (CD:[25..32] 13;314-LRB-)
+        (NN:[32..35] 1-2) (-RRB-:[35..36] -RRB-) (::[36..37] :) (CD:[37..39] 61)
+        (CD:[39..42] -4.)))
+
+;sentence 1 Span:48..229
+;Hypoxanthine-guanine phosphoribosyltransferase-deficiency produces aberrant 
+;neurite outgrowth of rodent neuroblastoma used to model the neurological 
+;disorder Lesch Nyhan syndrome.
+;[48..94]:gene-protein:"Hypoxanthine-guanine phosphoribosyltransferase"
+;[153..166]:malignancy-type:"neuroblastoma"
+;[208..228]:malignancy-type:"Lesch Nyhan syndrome"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NML
+        (NML (NN:[48..60] Hypoxanthine) (HYPH:[60..61] -) (NN:[61..68] guanine))
+        (NN:[69..94] phosphoribosyltransferase))
+      (HYPH:[94..95] -) (NN:[95..105] deficiency))
+    (VP (VBZ:[106..114] produces)
+      (NP
+        (NP
+          (NP (JJ:[115..123] aberrant) (NN:[125..132] neurite)
+              (NN:[133..142] outgrowth))
+          (PP (IN:[143..145] of)
+            (NP (NN:[146..152] rodent) (NN:[153..166] neuroblastoma))))
+        (VP (VBN:[167..171] used) (-NONE-:[171..171] *)
+          (S-PRP
+            (NP-SBJ (-NONE-:[171..171] *))
+            (VP (TO:[172..174] to)
+              (VP (VB:[175..180] model)
+                (NP
+                  (NP (DT:[181..184] the) (JJ:[185..197] neurological)
+                      (NN:[199..207] disorder))
+                  (NP (NNP:[208..213] Lesch) (NNP:[214..219] Nyhan)
+                      (NN:[220..228] syndrome)))))))))
+    (.:[228..229] .)))
+
+;section 2 Span:233..245
+;Connolly GP.
+(SEC
+  (FRAG (RB:[233..241] Connolly) (NN:[242..244] GP) (.:[244..245] .)))
+
+;section 3 Span:249..426
+;Purine NeuroScience Laboratory, Chemical Pathology, Guy's King's and St.
+;Thomas'  Medical School, Kings College London, Guy's Hospital, London SE1
+;9RT, UK.  g.connolly@ucl.ac.uk
+(SEC
+  (FRAG (NN:[249..255] Purine) (NNP:[256..268] NeuroScience)
+        (NNP:[269..279] Laboratory) (,:[279..280] ,) (NNP:[281..289] Chemical)
+        (NNP:[290..299] Pathology) (,:[299..300] ,) (NNP:[301..304] Guy)
+        (POS:[304..306] 's) (NNP:[307..311] King) (POS:[311..313] 's)
+        ($:[314..317] and) (NNP:[318..321] St.) (NNP:[322..328] Thomas)
+        (POS:[328..329] ') (NNP:[331..338] Medical) (NNP:[339..345] School)
+        (,:[345..346] ,) (NNP:[347..352] Kings) (NNP:[353..360] College)
+        (NNP:[361..367] London) (,:[367..368] ,) (NNP:[369..372] Guy)
+        (POS:[372..374] 's) (NNP:[375..383] Hospital) (,:[383..384] ,)
+        (NNP:[385..391] London) (NNP:[392..395] SE1) (NNP:[396..399] 9RT)
+        (,:[399..400] ,) (NNP:[401..404] UK.) (NNP:[406..420] g.connolly@ucl)
+        (.:[420..426] .ac.uk)))
+
+;sentence 4 Span:430..638
+;Lesch Nyhan syndrome (LNS) manifests in bizarre and horrific neurological 
+;symptoms, the primary cause being a deficiency of the purine salvage enzyme, 
+;hypoxanthine-guanine phosphoribosyltransferase (HGPRT).
+;[430..450]:malignancy-type:"Lesch Nyhan syndrome"
+;[452..455]:malignancy-type:"LNS"
+;[583..629]:gene-protein:"hypoxanthine-guanine phosphoribosyltransferase"
+;[631..636]:gene-protein:"HGPRT"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNP:[430..435] Lesch) (NNP:[436..441] Nyhan) (NN:[442..450] syndrome))
+      (NP (-LRB-:[451..452] -LRB-) (NN:[452..455] LNS) (-RRB-:[455..456] -RRB-)))
+    (VP (VBZ:[457..466] manifests)
+      (PP (IN:[467..469] in)
+        (NP
+          (ADJP (JJ:[470..477] bizarre) (CC:[478..481] and)
+                (JJ:[482..490] horrific))
+          (JJ:[491..503] neurological) (NNS:[505..513] symptoms)))
+      (,:[513..514] ,)
+      (S-ADV
+        (NP-SBJ (DT:[515..518] the) (JJ:[519..526] primary)
+                (NN:[527..532] cause))
+        (VP (VBG:[533..538] being)
+          (NP-PRD
+            (NP (DT:[539..540] a) (NN:[541..551] deficiency))
+            (PP (IN:[552..554] of)
+              (NP
+                (NP (DT:[555..558] the)
+                  (NML (JJ:[559..565] purine) (NN:[566..573] salvage))
+                  (NN:[574..580] enzyme))
+                (,:[580..581] ,)
+                (NP
+                  (NP
+                    (NML (NN:[583..595] hypoxanthine) (HYPH:[595..596] -)
+                         (NN:[596..603] guanine))
+                    (NN:[604..629] phosphoribosyltransferase))
+                  (NP (-LRB-:[630..631] -LRB-) (NN:[631..636] HGPRT)
+                      (-RRB-:[636..637] -RRB-)))))))))
+    (.:[637..638] .)))
+
+;sentence 5 Span:639..722
+;How and why this enzyme  deficiency leads to abnormal brain development is
+;unknown.
+(SENT
+  (S
+    (SBAR-NOM-SBJ
+      (WHADVP-1 (WRB:[639..642] How) (CC:[643..646] and) (WRB:[647..650] why))
+      (S
+        (NP-SBJ (DT:[651..655] this) (NN:[656..662] enzyme)
+                (NN:[664..674] deficiency))
+        (VP (VBZ:[675..680] leads)
+          (PP (TO:[681..683] to)
+            (NP (JJ:[684..692] abnormal) (NN:[693..698] brain)
+                (NN:[699..710] development)))
+          (ADVP-1 (-NONE-:[710..710] *T*)))))
+    (VP (VBZ:[711..713] is)
+      (ADJP-PRD (JJ:[714..721] unknown)))
+    (.:[721..722] .)))
+
+;sentence 6 Span:723..963
+;To investigate this  phenomenon the present study was designed to examine if
+;the growth of two  HGPRT-deficient neuroblastomas, mouse N2aTG and rat
+;B103-4C was different with  respect to their corresponding control cell
+;lines, N2a and B103.
+;[819..824]:gene-protein:"HGPRT"
+;[835..849]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (S-PRP
+      (S
+        (NP-SBJ (-NONE-:[723..723] *))
+        (VP (TO:[723..725] To)
+          (VP (VB:[726..737] investigate)
+            (NP (DT:[738..742] this) (NN:[744..754] phenomenon))))))
+    (NP-SBJ-1 (DT:[755..758] the) (JJ:[759..766] present) (NN:[767..772] study))
+    (VP (VBD:[773..776] was)
+      (VP (VBN:[777..785] designed)
+        (S
+          (NP-SBJ-1 (-NONE-:[785..785] *))
+          (VP (TO:[786..788] to)
+            (VP (VB:[789..796] examine)
+              (SBAR (IN:[797..799] if)
+                (S
+                  (NP-SBJ
+                    (NP (DT:[800..803] the) (NN:[804..810] growth))
+                    (PP (IN:[811..813] of)
+                      (NP
+                        (NP (CD:[814..817] two)
+                          (ADJP (NN:[819..824] HGPRT) (HYPH:[824..825] -)
+                                (JJ:[825..834] deficient))
+                          (NNS:[835..849] neuroblastomas))
+                        (,:[849..850] ,)
+                        (NP
+                          (NP (NN:[851..856] mouse) (NN:[857..862] N2aTG))
+                          (CC:[863..866] and)
+                          (NP (NN:[867..870] rat) (NN:[871..878] B103-4C))))))
+                  (VP (VBD:[879..882] was)
+                    (ADJP-PRD (JJ:[883..892] different)
+                      (PP (IN:[893..897] with)
+                        (NP
+                          (NP (NN:[899..906] respect))
+                          (PP (TO:[907..909] to)
+                            (NP
+                              (NP (PRP$:[910..915] their)
+                                  (VBG:[916..929] corresponding)
+                                  (NN:[930..937] control) (NN:[938..942] cell)
+                                  (NNS:[943..948] lines))
+                              (,:[948..949] ,)
+                              (NP (NN:[950..953] N2a) (CC:[954..957] and)
+                                  (NN:[958..962] B103)))))))))))))))
+    (.:[962..963] .)))
+
+;sentence 7 Span:964..1115
+;Data is  provided showing that compared to control cell lines,
+;HGPRT-deficient cells  proliferated less and exhibited greater morphological
+;complexity.
+;[1027..1032]:gene-protein:"HGPRT"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[964..968] Data)
+      (S-1 (-NONE-:[968..968] *ICH*)))
+    (VP (VBZ:[969..971] is)
+      (VP (VBN:[973..981] provided)
+        (NP-2 (-NONE-:[981..981] *))
+        (S-1
+          (NP-SBJ (-NONE-:[981..981] *))
+          (VP (VBG:[982..989] showing)
+            (SBAR (IN:[990..994] that)
+              (S
+                (PP (VBN:[995..1003] compared)
+                  (PP (TO:[1004..1006] to)
+                    (NP (NN:[1007..1014] control) (NN:[1015..1019] cell)
+                        (NNS:[1020..1025] lines))))
+                (,:[1025..1026] ,)
+                (NP-SBJ
+                  (NML (NN:[1027..1032] HGPRT) (HYPH:[1032..1033] -)
+                       (JJ:[1033..1042] deficient))
+                  (NNS:[1043..1048] cells))
+                (VP
+                  (VP (VBD:[1050..1062] proliferated)
+                    (ADVP (RBR:[1063..1067] less)))
+                  (CC:[1068..1071] and)
+                  (VP (VBD:[1072..1081] exhibited)
+                    (NP (JJR:[1082..1089] greater)
+                        (JJ:[1090..1103] morphological)
+                        (NN:[1104..1114] complexity))))))))))
+    (.:[1114..1115] .)))
+
+;sentence 8 Span:1116..1342
+;If these  abnormalities occur during neurogenesis of human HGPRT-deficient
+;brain neurones,  they could profoundly influence central nervous system
+;development and thus, may  form the aetiological basis for the symptoms of
+;LNS.
+;[1175..1180]:gene-protein:"HGPRT"
+;[1338..1341]:malignancy-type:"LNS"
+(SENT
+  (S
+    (SBAR (IN:[1116..1118] If)
+      (S
+        (NP-SBJ (DT:[1119..1124] these) (NNS:[1126..1139] abnormalities))
+        (VP (VBP:[1140..1145] occur)
+          (PP-TMP (IN:[1146..1152] during)
+            (NP
+              (NP (NN:[1153..1165] neurogenesis))
+              (PP (IN:[1166..1168] of)
+                (NP (JJ:[1169..1174] human)
+                  (ADJP (NN:[1175..1180] HGPRT) (HYPH:[1180..1181] -)
+                        (JJ:[1181..1190] deficient))
+                  (NN:[1191..1196] brain) (NNS:[1197..1205] neurones))))))))
+    (,:[1205..1206] ,)
+    (NP-SBJ (PRP:[1208..1212] they))
+    (VP
+      (VP (MD:[1213..1218] could)
+        (VP
+          (ADVP (RB:[1219..1229] profoundly))
+          (VB:[1230..1239] influence)
+          (NP
+            (NML (JJ:[1240..1247] central) (JJ:[1248..1255] nervous)
+                 (NN:[1256..1262] system))
+            (NN:[1263..1274] development))))
+      (CC:[1275..1278] and)
+      (VP
+        (ADVP (RB:[1279..1283] thus))
+        (,:[1283..1284] ,) (MD:[1285..1288] may)
+        (VP (VB:[1290..1294] form)
+          (NP
+            (NP (DT:[1295..1298] the) (JJ:[1299..1311] aetiological)
+                (NN:[1312..1317] basis))
+            (PP (IN:[1318..1321] for)
+              (NP
+                (NP (DT:[1322..1325] the) (NNS:[1326..1334] symptoms))
+                (PP (IN:[1335..1337] of)
+                  (NP (NN:[1338..1341] LNS)))))))))
+    (.:[1341..1342] .)))
+
+;section 9 Span:1346..1391
+;PMID: 11698147 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1346..1350] PMID) (::[1350..1351] :) (CD:[1352..1360] 11698147)
+        (NN:[1361..1362] -LSB-) (NNP:[1362..1368] PubMed) (::[1369..1370] -)
+        (NN:[1371..1378] indexed) (IN:[1379..1382] for)
+        (NNP:[1383..1391] MEDLINE-RSB-)))

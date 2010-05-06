@@ -1,0 +1,247 @@
+;PMID: 3977942
+;source_file_907.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..194] = [t:48..194]
+;2)section:[e:198..220] = [t:198..220]
+;3)sentence:[e:224..451] = [t:224..451]
+;4)sentence:[e:452..501] = [t:452..501]
+;5)sentence:[e:502..678] = [t:502..678]
+;6)sentence:[e:679..771] = [t:679..771]
+;7)sentence:[e:772..948] = [t:772..948]
+;8)section:[e:952..996] = [t:952..996]
+;Token/POS Errors
+;ERROR_POS mismatch [33..34] t:token e:CD 5
+;ERROR_POS mismatch [41..42] t:token e:. .
+;ERROR_POS mismatch [995..996] t:token e:-RRB- ]
+
+;section 0 Span:0..42
+;Biochem Pharmacol. 1985 Mar 1;34(5):631-6.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1985) (NNP:[24..27] Mar) (CC:[28..30] 1;) (CD:[30..32] 34)
+        (NNS:[32..33] -LRB-) (token:[33..34] 5) (-RRB-:[34..35] -RRB-)
+        (::[35..36] :) (CD:[36..39] 631) (::[39..40] -) (CD:[40..41] 6)
+        (token:[41..42] .)))
+
+;sentence 1 Span:48..194
+;Inhibition of rabbit nasal and hepatic cytochrome P-450-dependent 
+;hexamethylphosphoramide (HMPA) N-demethylase by methylenedioxyphenyl
+;compounds.
+;[87..103]:cyp450:"cytochrome P-450"
+;[115..159]:substance:"hexamethylphosphoramide (HMPA) N-demethylase"
+;[163..193]:substance:"methylenedioxyphenyl compounds"
+(SENT
+  (NP-HLN
+    (NP (NN:[48..58] Inhibition))
+    (PP (IN:[59..61] of)
+      (NP
+        (NP
+          (NML-1 (NN:[62..68] rabbit))
+          (JJ:[69..74] nasal)
+          (NML-2 (-NONE-:[74..74] *P*)))
+        (CC:[75..78] and)
+        (NP
+          (NML-1 (-NONE-:[78..78] *P*))
+          (JJ:[79..86] hepatic)
+          (NML-2
+            (ADJP
+              (NML (NN:[87..97] cytochrome) (NN:[98..103] P-450))
+              (HYPH:[103..104] -) (JJ:[104..113] dependent))
+            
+            (NML
+              (NML (NN:[115..138] hexamethylphosphoramide))
+              (NML (-LRB-:[139..140] -LRB-) (NN:[140..144] HMPA)
+                   (-RRB-:[144..145] -RRB-)))
+            (NN:[146..159] N-demethylase)))))
+    (PP (IN:[160..162] by)
+      (NP (NN:[163..183] methylenedioxyphenyl) (NNS:[184..193] compounds)))
+    (.:[193..194] .)))
+
+;section 2 Span:198..220
+;Dahl AR, Brezinski DA.
+(SEC
+  (FRAG (NNP:[198..202] Dahl) (NNP:[203..205] AR) (,:[205..206] ,)
+        (NNP:[207..216] Brezinski) (NNP:[217..219] DA) (.:[219..220] .)))
+
+;sentence 3 Span:224..451
+;Eighteen methylenedioxyphenyl (MDP) compounds, including some commonly
+;inhaled  by people, were tested for the ability to inhibit rabbit nasal
+;microsomal  cytochrome P-450-dependent hexamethylphosphoramide (HMPA)
+;N-demethylase.
+;[233..269]:substance:"methylenedioxyphenyl (MDP) compounds"
+;[379..395]:cyp450:"cytochrome P-450"
+;[406..450]:substance:"hexamethylphosphoramide (HMPA) N-demethylase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[224..232] Eighteen)
+        
+        (NML
+          (NML (NN:[233..253] methylenedioxyphenyl))
+          (NML (-LRB-:[254..255] -LRB-) (NN:[255..258] MDP)
+               (-RRB-:[258..259] -RRB-)))
+        (NNS:[260..269] compounds))
+      (,:[269..270] ,)
+      (PP (VBG:[271..280] including)
+        (NP
+          (NP (DT:[281..285] some))
+          (VP
+            (ADVP (RB:[286..294] commonly))
+            (VBN:[295..302] inhaled)
+            (NP (-NONE-:[302..302] *))
+            (PP (IN:[304..306] by)
+              (NP-LGS (NNS:[307..313] people)))))))
+    (,:[313..314] ,)
+    (VP (VBD:[315..319] were)
+      (VP (VBN:[320..326] tested)
+        (NP-1 (-NONE-:[326..326] *))
+        (PP (IN:[327..330] for)
+          (NP (DT:[331..334] the) (NN:[335..342] ability)
+            (S
+              (NP-SBJ (-NONE-:[342..342] *))
+              (VP (TO:[343..345] to)
+                (VP (VB:[346..353] inhibit)
+                  (NP (NN:[354..360] rabbit) (JJ:[361..366] nasal)
+                      (JJ:[367..377] microsomal)
+                    (ADJP
+                      (NML (NN:[379..389] cytochrome) (NN:[390..395] P-450))
+                      (HYPH:[395..396] -) (JJ:[396..405] dependent))
+                    
+                    (NML
+                      (NML (NN:[406..429] hexamethylphosphoramide))
+                      (NML (-LRB-:[430..431] -LRB-) (NN:[431..435] HMPA)
+                           (-RRB-:[435..436] -RRB-)))
+                    (NN:[437..450] N-demethylase)))))))))
+    (.:[450..451] .)))
+
+;sentence 4 Span:452..501
+;For  comparison, liver microsomes were also used.
+(SENT
+  (S
+    (PP (IN:[452..455] For)
+      (NP (NN:[457..467] comparison)))
+    (,:[467..468] ,)
+    (NP-SBJ-1 (NN:[469..474] liver) (NNS:[475..485] microsomes))
+    (VP (VBD:[486..490] were)
+      (ADVP (RB:[491..495] also))
+      (VP (VBN:[496..500] used)
+        (NP-1 (-NONE-:[500..500] *))))
+    (.:[500..501] .)))
+
+;sentence 5 Span:502..678
+;Nasal cytochrome P-450 from rabbits  metabolized MDP compounds to form
+;cytochrome P-450-metabolite (P-450-MI)  complexes as indicated by difference
+;spectra in the Soret region.
+;[508..524]:cyp450:"cytochrome P-450"
+;[551..564]:substance:"MDP compounds"
+;[573..622]:substance:"cytochrome P-450-metabolite (P-450-MI)  complexes"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[502..507] Nasal)
+         (NN:[508..518] cytochrome) (NN:[519..524] P-450))
+      (PP (IN:[525..529] from)
+        (NP (NNS:[530..537] rabbits))))
+    (VP (VBD:[539..550] metabolized)
+      (NP (NN:[551..554] MDP) (NNS:[555..564] compounds))
+      (S-PRP
+        (NP-SBJ (-NONE-:[564..564] *))
+        (VP (TO:[565..567] to)
+          (VP (VB:[568..572] form)
+            (NP
+              (NML
+                (NML
+                  (NML (NN:[573..583] cytochrome) (NN:[584..589] P-450))
+                  (HYPH:[589..590] -) (NN:[590..600] metabolite))
+                (NML (-LRB-:[601..602] -LRB-) (NN:[602..607] P-450)
+                     (HYPH:[607..608] -) (NN:[608..610] MI)
+                     (-RRB-:[610..611] -RRB-)))
+              (NNS:[613..622] complexes)))))
+      (SBAR-ADV (IN:[623..625] as)
+        (S
+          (NP-SBJ-1 (-NONE-:[625..625] *))
+          (VP (VBN:[626..635] indicated)
+            (NP-1 (-NONE-:[635..635] *))
+            (PP (IN:[636..638] by)
+              (NP-LGS
+                (NP (NN:[639..649] difference) (NNS:[650..657] spectra))
+                (PP-LOC (IN:[658..660] in)
+                  (NP (DT:[661..664] the) (NNP:[665..670] Soret)
+                      (NN:[671..677] region)))))))))
+    (.:[677..678] .)))
+
+;sentence 6 Span:679..771
+;Several of the  MDP compounds were potent inhibitors of nasal P-450-dependent
+;N-demethylase.
+;[695..708]:substance:"MDP compounds"
+;[721..731]:substance:"inhibitors"
+;[741..746]:cyp450:"P-450"
+;[757..770]:substance:"N-demethylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[679..686] Several))
+      (PP (IN:[687..689] of)
+        (NP (DT:[690..693] the)
+           (NN:[695..698] MDP) (NNS:[699..708] compounds))))
+    (VP (VBD:[709..713] were)
+      (NP-PRD
+        (NP (JJ:[714..720] potent) (NNS:[721..731] inhibitors))
+        (PP (IN:[732..734] of)
+          (NP (JJ:[735..740] nasal)
+            (ADJP (NN:[741..746] P-450) (HYPH:[746..747] -)
+                  (JJ:[747..756] dependent))
+            (NN:[757..770] N-demethylase)))))
+    (.:[770..771] .)))
+
+;sentence 7 Span:772..948
+;If  inhibition of nasal P-450 also occurs in vivo after inhibiting MDP
+;compounds are  inhaled, the metabolism of concurrently or subsequently
+;inhaled compounds may be  altered.
+;[796..801]:cyp450:"P-450"
+;[839..852]:substance:"MDP compounds"
+;[922..931]:substance:"compounds"
+(SENT
+  (S
+    (SBAR-ADV (IN:[772..774] If)
+      (S
+        (NP-SBJ
+          (NP (NN:[776..786] inhibition))
+          (PP (IN:[787..789] of)
+            (NP (JJ:[790..795] nasal) (NN:[796..801] P-450))))
+        (ADVP (RB:[802..806] also))
+        (VP (VBZ:[807..813] occurs)
+          (ADVP (FW:[814..816] in) (FW:[817..821] vivo))
+          (SBAR-TMP (IN:[822..827] after)
+            (S
+              (NP-SBJ-2 (VBG:[828..838] inhibiting)
+                 (NN:[839..842] MDP) (NNS:[843..852] compounds))
+              (VP (VBP:[853..856] are)
+                (VP (VBN:[858..865] inhaled)
+                  (NP-2 (-NONE-:[865..865] *)))))))))
+    (,:[865..866] ,)
+    (NP-SBJ-3
+      (NP (DT:[867..870] the) (NN:[871..881] metabolism))
+      (PP (IN:[882..884] of)
+        (NP
+          (NP (RB:[885..897] concurrently)
+            (NML-1 (-NONE-:[897..897] *P*)))
+          (CC:[898..900] or)
+          (NP (RB:[901..913] subsequently)
+            (NML-1 (JJ:[914..921] inhaled) (NNS:[922..931] compounds))))))
+    (VP (MD:[932..935] may)
+      (VP (VB:[936..938] be)
+        (VP (VBN:[940..947] altered)
+          (NP-3 (-NONE-:[947..947] *)))))
+    (.:[947..948] .)))
+
+;section 8 Span:952..996
+;PMID: 3977942 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[952..956] PMID) (::[956..957] :) (CD:[958..965] 3977942)
+        (NN:[966..967] -LSB-) (NNP:[967..973] PubMed) (::[974..975] -)
+        (NN:[976..983] indexed) (IN:[984..987] for) (NNP:[988..995] MEDLINE)
+        (token:[995..996] -RSB-)))

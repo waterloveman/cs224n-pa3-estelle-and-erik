@@ -1,0 +1,370 @@
+;PMID: 9927029
+;source_file_1368.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..146] = [t:41..146]
+;2)section:[e:150..223] = [t:150..223]
+;3)section:[e:227..300] = [t:227..300]
+;4)sentence:[e:304..444] = [t:304..444]
+;5)sentence:[e:445..500] = [t:445..500]
+;6)sentence:[e:501..623] = [t:501..623]
+;7)sentence:[e:624..698] = [t:624..698]
+;8)sentence:[e:699..835] = [t:699..835]
+;9)sentence:[e:836..973] = [t:836..973]
+;10)sentence:[e:974..1165] = [t:974..1165]
+;11)sentence:[e:1166..1350] = [t:1166..1350]
+;12)sentence:[e:1351..1515] = [t:1351..1515]
+;13)sentence:[e:1516..1640] = [t:1516..1640]
+;14)section:[e:1644..1688] = [t:1644..1688]
+
+;section 0 Span:0..36
+;Cancer Res  1999 Jan 15;59(2):269-73
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1999)
+        (NNP:[17..20] Jan) (CD:[21..27] 15;59-LRB-) (CD:[27..28] 2)
+        (-RRB-:[28..29] -RRB-) (CD:[29..33] :269) (IN:[33..34] -)
+        (CD:[34..36] 73)))
+
+;sentence 1 Span:41..146
+;Childhood hepatoblastomas frequently carry a mutated degradation targeting
+;box  of the beta-catenin gene.
+;[41..66]:malignancy:"Childhood hepatoblastomas"
+;[128..140]:gene-rna:"beta-catenin"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[41..50] Childhood) (NNS:[51..66] hepatoblastomas))
+    (ADVP (RB:[67..77] frequently))
+    (VP (VBP:[78..83] carry)
+      (NP
+        (NP (DT:[84..85] a) (VBN:[86..93] mutated) (NN:[94..105] degradation)
+            (VBG:[106..115] targeting) (NN:[116..119] box))
+        (PP (IN:[121..123] of)
+          (NP (DT:[124..127] the) (NN:[128..140] beta-catenin)
+              (NN:[141..145] gene)))))
+    (.:[145..146] .)))
+
+;section 2 Span:150..223
+;Koch A, Denkhaus D, Albrecht S, Leuschner I, von Schweinitz D, Pietsch T.
+(SEC
+  (FRAG (NNP:[150..154] Koch) (NNP:[155..156] A) (,:[156..157] ,)
+        (NNP:[158..166] Denkhaus) (NNP:[167..168] D) (,:[168..169] ,)
+        (NNP:[170..178] Albrecht) (NNP:[179..181] S,) (NNP:[182..191] Leuschner)
+        (NNP:[192..193] I) (,:[193..194] ,) (NNP:[195..198] von)
+        (NNP:[199..209] Schweinitz) (NNP:[210..211] D) (,:[211..212] ,)
+        (NNP:[213..220] Pietsch) (NNP:[221..223] T.)))
+
+;section 3 Span:227..300
+;Department of Neuropathology, University of Bonn Medical Center, Germany.
+(SEC
+  (FRAG (NNP:[227..237] Department) (IN:[238..240] of)
+        (NNP:[241..255] Neuropathology) (,:[255..256] ,)
+        (NNP:[257..267] University) (IN:[268..270] of) (NNP:[271..275] Bonn)
+        (NNP:[276..283] Medical) (NNP:[284..290] Center) (,:[290..291] ,)
+        (NNP:[292..299] Germany) (.:[299..300] .)))
+
+;sentence 4 Span:304..444
+;Hepatoblastomas (HBs) are embryonal tumors affecting young children and 
+;representing the most frequent malignant liver tumors in childhood.
+;[304..319]:malignancy:"Hepatoblastomas"
+;[321..324]:malignancy:"HBs"
+;[330..346]:malignancy:"embryonal tumors"
+;[408..443]:malignancy:"malignant liver tumors in childhood"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[304..319] Hepatoblastomas))
+      (NP (-LRB-:[320..321] -LRB-) (NNS:[321..324] HBs) (-RRB-:[324..325] -RRB-)))
+    (VP (VBP:[326..329] are)
+      (NP-PRD
+        (NP (JJ:[330..339] embryonal) (NNS:[340..346] tumors))
+        (VP
+          (VP (VBG:[347..356] affecting)
+            (NP (JJ:[357..362] young) (NNS:[363..371] children)))
+          (CC:[372..375] and)
+          (VP (VBG:[377..389] representing)
+            (NP (DT:[390..393] the)
+              (ADJP (RBS:[394..398] most) (JJ:[399..407] frequent))
+              (JJ:[408..417] malignant) (NN:[418..423] liver)
+               (NNS:[424..430] tumors))
+            (PP (IN:[431..433] in)
+              (NP (NN:[434..443] childhood)))))))
+    (.:[443..444] .)))
+
+;sentence 5 Span:445..500
+;The  molecular pathogenesis of HB is poorly understood.
+;[476..478]:malignancy:"HB"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[445..448] The) (JJ:[450..459] molecular)
+          (NN:[460..472] pathogenesis))
+      (PP (IN:[473..475] of)
+        (NP (NN:[476..478] HB))))
+    (VP (VBZ:[479..481] is)
+      (ADVP (RB:[482..488] poorly))
+      (VP (VBN:[489..499] understood)
+        (NP-1 (-NONE-:[499..499] *))))
+    (.:[499..500] .)))
+
+;sentence 6 Span:501..623
+;Although most cases are  sporadic, the incidence is highly elevated in
+;patients with familial adenomatous  polyposis coli.
+;[586..622]:malignancy:"familial adenomatous  polyposis coli"
+(SENT
+  (S
+    (SBAR-ADV (IN:[501..509] Although)
+      (S
+        (NP-SBJ (JJS:[510..514] most) (NNS:[515..520] cases))
+        (VP (VBP:[521..524] are)
+          (ADJP-PRD (JJ:[526..534] sporadic)))))
+    (,:[534..535] ,)
+    (NP-SBJ-1 (DT:[536..539] the) (NN:[540..549] incidence))
+    (VP (VBZ:[550..552] is)
+      (ADVP (RB:[553..559] highly))
+      (VP (VBN:[560..568] elevated)
+        (NP-1 (-NONE-:[568..568] *))
+        (PP-LOC (IN:[569..571] in)
+          (NP
+            (NP (NNS:[572..580] patients))
+            (PP (IN:[581..585] with)
+              (NP (JJ:[586..594] familial) (JJ:[595..606] adenomatous)
+                  (NN:[608..617] polyposis) (NN:[618..622] coli)))))))
+    (.:[622..623] .)))
+
+;sentence 7 Span:624..698
+;These patients carry germline mutations of the APC tumor  suppressor gene.
+;[671..674]:gene-rna:"APC"
+(SENT
+  (S
+    (NP-SBJ (DT:[624..629] These) (NNS:[630..638] patients))
+    (VP (VBP:[639..644] carry)
+      (NP
+        (NP (NN:[645..653] germline) (NNS:[654..663] mutations))
+        (PP (IN:[664..666] of)
+          (NP (DT:[667..670] the) (NN:[671..674] APC)
+            (NML (NN:[675..680] tumor) (NN:[682..692] suppressor))
+            (NN:[693..697] gene)))))
+    (.:[697..698] .)))
+
+;sentence 8 Span:699..835
+;APC controls the degradation of the oncogene product  beta-catenin after its
+;NH2-terminal phosphorylation on serine/threonine  residues.
+;[699..702]:gene-rna:"APC"
+;[753..765]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (NN:[699..702] APC))
+    (VP (VBZ:[703..711] controls)
+      (NP
+        (NP (DT:[712..715] the) (NN:[716..727] degradation))
+        (PP (IN:[728..730] of)
+          (NP
+            (NP (DT:[731..734] the) (NN:[735..743] oncogene)
+                (NN:[744..751] product))
+            (NP (NN:[753..765] beta-catenin)))))
+      (PP-TMP (IN:[766..771] after)
+        (NP
+          (NP (PRP$:[772..775] its)
+            (NML (NN:[776..779] NH2) (HYPH:[779..780] -)
+                 (JJ:[780..788] terminal))
+            (NN:[789..804] phosphorylation))
+          (PP (IN:[805..807] on)
+            (NP
+              (NML (NN:[808..814] serine) (SYM:[814..815] /)
+                   (NN:[815..824] threonine))
+              (NNS:[826..834] residues))))))
+    (.:[834..835] .)))
+
+;sentence 9 Span:836..973
+;APC, as well as beta-catenin, has been found to be a central effector  of the
+;growth promoting wingless signaling pathway in development.
+;[836..839]:gene-rna:"APC"
+;[852..864]:gene-protein:"beta-catenin"
+;[931..939]:gene-rna:"wingless"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[836..839] APC))
+      (,:[839..840] ,)
+      (CONJP (RB:[841..843] as) (RB:[844..848] well) (IN:[849..851] as))
+      (NP (NN:[852..864] beta-catenin)))
+    (,:[864..865] ,)
+    (VP (VBZ:[866..869] has)
+      (VP (VBN:[870..874] been)
+        (VP (VBN:[875..880] found)
+          (S
+            (NP-SBJ-1 (-NONE-:[880..880] *))
+            (VP (TO:[881..883] to)
+              (VP (VB:[884..886] be)
+                (NP-PRD
+                  (NP (DT:[887..888] a) (JJ:[889..896] central)
+                      (NN:[897..905] effector))
+                  (PP (IN:[907..909] of)
+                    (NP (DT:[910..913] the)
+                      (ADJP (NN:[914..920] growth) (VBG:[921..930] promoting))
+                      (ADJP (JJ:[931..939] wingless) (VBG:[940..949] signaling))
+                      (NN:[950..957] pathway))))
+                (PP (IN:[958..960] in)
+                  (NP (NN:[961..972] development)))))))))
+    (.:[972..973] .)))
+
+;sentence 10 Span:974..1165
+;To find out  if this pathway is involved in the pathogenesis of sporadic HBs,
+;we examined 52  biopsies and three cell lines from sporadic HBs for mutations
+;in the APC and  beta-catenin genes.
+;[1038..1050]:malignancy:"sporadic HBs"
+;[1103..1115]:malignancy:"sporadic HBs"
+;[1137..1140]:gene-rna:"APC"
+;[1146..1158]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[974..974] *))
+      (VP (TO:[974..976] To)
+        (VP (VB:[977..981] find)
+          (PRT (RP:[982..985] out))
+          (SBAR (IN:[987..989] if)
+            (S
+              (NP-SBJ-2 (DT:[990..994] this) (NN:[995..1002] pathway))
+              (VP (VBZ:[1003..1005] is)
+                (VP (VBN:[1006..1014] involved)
+                  (NP-2 (-NONE-:[1014..1014] *))
+                  (PP-CLR (IN:[1015..1017] in)
+                    (NP
+                      (NP (DT:[1018..1021] the) (NN:[1022..1034] pathogenesis))
+                      (PP (IN:[1035..1037] of)
+                        (NP (JJ:[1038..1046] sporadic) (NNS:[1047..1050] HBs))))))))))))
+    (,:[1050..1051] ,)
+    (NP-SBJ (PRP:[1052..1054] we))
+    (VP (VBD:[1055..1063] examined)
+      (NP
+        (NP (CD:[1064..1066] 52) (NNS:[1068..1076] biopsies))
+        (CC:[1077..1080] and)
+        (NP
+          (NP (CD:[1081..1086] three) (NN:[1087..1091] cell)
+              (NNS:[1092..1097] lines))
+          (PP (IN:[1098..1102] from)
+            (NP (JJ:[1103..1111] sporadic) (NNS:[1112..1115] HBs)))))
+      (PP (IN:[1116..1119] for)
+        (NP
+          (NP (NNS:[1120..1129] mutations))
+          (PP-LOC (IN:[1130..1132] in)
+            (NP (DT:[1133..1136] the)
+              (NML
+                (NML (NN:[1137..1140] APC)
+                  (NML-1 (-NONE-:[1140..1140] *P*)))
+                (CC:[1141..1144] and)
+                (NML (NN:[1146..1158] beta-catenin)
+                  (NML-1 (NNS:[1159..1164] genes)))))))))
+    (.:[1164..1165] .)))
+
+;sentence 11 Span:1166..1350
+;Using single-strand conformational polymorphism analysis,  deletion screening
+;by PCR, and direct sequencing, we found a high frequency of  beta-catenin
+;mutations in sporadic HBs (48%).
+;[1305..1317]:gene-rna:"beta-catenin"
+;[1331..1343]:malignancy:"sporadic HBs"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[1166..1166] *))
+      (VP (VBG:[1166..1171] Using)
+        (NP
+          (NP
+            (NML (JJ:[1172..1178] single) (HYPH:[1178..1179] -)
+                 (NN:[1179..1185] strand))
+            (JJ:[1186..1200] conformational) (NN:[1201..1213] polymorphism)
+             (NN:[1214..1222] analysis))
+          (,:[1222..1223] ,)
+          (NP
+            (NP (NN:[1225..1233] deletion) (NN:[1234..1243] screening))
+            (PP (IN:[1244..1246] by)
+              (NP (NN:[1247..1250] PCR))))
+          (,:[1250..1251] ,) (CC:[1252..1255] and)
+          (NP (JJ:[1256..1262] direct) (NN:[1263..1273] sequencing)))))
+    (,:[1273..1274] ,)
+    (NP-SBJ (PRP:[1275..1277] we))
+    (VP (VBD:[1278..1283] found)
+      (NP
+        (NP (DT:[1284..1285] a) (JJ:[1286..1290] high)
+            (NN:[1291..1300] frequency))
+        (PP (IN:[1301..1303] of)
+          (NP (NN:[1305..1317] beta-catenin) (NNS:[1318..1327] mutations))))
+      (PP (IN:[1328..1330] in)
+        (NP (JJ:[1331..1339] sporadic) (NNS:[1340..1343] HBs)))
+      (PRN (-LRB-:[1344..1345] -LRB-)
+        (NP (CD:[1345..1347] 48) (NN:[1347..1348] %))
+        (-RRB-:[1348..1349] -RRB-)))
+    (.:[1349..1350] .)))
+
+;sentence 12 Span:1351..1515
+;The mutations affected exon 3  encoding the degradation targeting box of
+;beta-catenin leading to accumulation  of intracytoplasmic and nuclear
+;beta-catenin protein.
+;[1355..1364]:variation-event:"mutations"
+;[1374..1380]:variation-location:"exon 3"
+;[1424..1436]:gene-rna:"beta-catenin"
+;[1494..1506]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1351..1354] The) (NNS:[1355..1364] mutations))
+    (VP (VBD:[1365..1373] affected)
+      (NP
+        (NP (NN:[1374..1378] exon) (CD:[1379..1380] 3))
+        (VP (VBG:[1382..1390] encoding)
+          (NP
+            (NP (DT:[1391..1394] the) (NN:[1395..1406] degradation)
+                (VBG:[1407..1416] targeting) (NN:[1417..1420] box))
+            (PP (IN:[1421..1423] of)
+              (NP (NN:[1424..1436] beta-catenin))))))
+      (S-ADV
+        (NP-SBJ (-NONE-:[1436..1436] *))
+        (VP (VBG:[1437..1444] leading)
+          (PP-CLR (TO:[1445..1447] to)
+            (NP
+              (NP (NN:[1448..1460] accumulation))
+              (PP (IN:[1462..1464] of)
+                (NP
+                  (NP (JJ:[1465..1481] intracytoplasmic)
+                    (NML-1 (-NONE-:[1481..1481] *P*)))
+                  (CC:[1482..1485] and)
+                  (NP (JJ:[1486..1493] nuclear)
+                    (NML-1 (NN:[1494..1506] beta-catenin)
+                           (NN:[1507..1514] protein))))))))))
+    (.:[1514..1515] .)))
+
+;sentence 13 Span:1516..1640
+;The high frequency of  activating mutations in the beta-catenin gene
+;indicates an important role in the  pathogenesis of HB.
+;[1567..1579]:gene-rna:"beta-catenin"
+;[1637..1639]:malignancy:"HB"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1516..1519] The) (JJ:[1520..1524] high)
+          (NN:[1525..1534] frequency))
+      (PP (IN:[1535..1537] of)
+        (NP
+          (NP (VBG:[1539..1549] activating) (NNS:[1550..1559] mutations))
+          (PP (IN:[1560..1562] in)
+            (NP (DT:[1563..1566] the) (NN:[1567..1579] beta-catenin)
+                (NN:[1580..1584] gene))))))
+    (VP (VBZ:[1585..1594] indicates)
+      (NP (DT:[1595..1597] an) (JJ:[1598..1607] important)
+          (NN:[1608..1612] role))
+      (PP (IN:[1613..1615] in)
+        (NP
+          (NP (DT:[1616..1619] the) (NN:[1621..1633] pathogenesis))
+          (PP (IN:[1634..1636] of)
+            (NP (NN:[1637..1639] HB))))))
+    (.:[1639..1640] .)))
+
+;section 14 Span:1644..1688
+;PMID: 9927029 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1644..1648] PMID) (::[1648..1649] :) (CD:[1650..1657] 9927029)
+        (-LRB-:[1658..1659] -LSB-) (NNP:[1659..1665] PubMed)
+        (HYPH:[1666..1667] -) (NN:[1668..1675] indexed) (IN:[1676..1679] for)
+        (NNP:[1680..1687] MEDLINE) (-RRB-:[1687..1688] -RSB-)))

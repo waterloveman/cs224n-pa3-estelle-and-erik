@@ -1,0 +1,496 @@
+;PMID: 9671070
+;source_file_1305.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..114] = [t:36..114]
+;2)section:[e:118..200] = [t:118..200]
+;3)section:[e:204..263] = [t:204..263]
+;4)sentence:[e:267..277] = [t:267..277]
+;5)sentence:[e:278..485] = [t:278..485]
+;6)sentence:[e:486..511] = [t:486..511]
+;7)sentence:[e:512..740] = [t:512..740]
+;8)sentence:[e:741..849] = [t:741..849]
+;9)sentence:[e:850..858] = [t:850..858]
+;10)sentence:[e:859..1120] = [t:859..1120]
+;11)sentence:[e:1122..1130] = [t:1122..1130]
+;12)sentence:[e:1131..1284] = [t:1131..1284]
+;13)sentence:[e:1285..1388] = [t:1285..1388]
+;14)sentence:[e:1389..1488] = [t:1389..1488]
+;15)sentence:[e:1489..1631] = [t:1489..1631]
+;16)sentence:[e:1632..1838] = [t:1632..1838]
+;17)sentence:[e:1840..1852] = [t:1840..1852]
+;18)sentence:[e:1853..1996] = [t:1853..1996]
+;19)sentence:[e:1998..2169] = [t:1998..2169]
+;20)section:[e:2173..2217] = [t:2173..2217]
+
+;section 0 Span:0..31
+;Ann Surg  1998 Jul;228(1):79-86
+(SEC
+  (FRAG (NNP:[0..3] Ann) (NNP:[4..8] Surg) (CD:[10..14] 1998)
+        (CD:[15..22] Jul;228) (-LRB-:[22..23] -LRB-) (CD:[23..24] 1)
+        (-RRB-:[24..25] -RRB-) (::[25..26] :) (CD:[26..28] 79) (HYPH:[28..29] -)
+        (CD:[29..31] 86)))
+
+;sentence 1 Span:36..114
+;K-ras oncogene mutations indicate malignancy in cystic tumors of the
+;pancreas.
+;[36..41]:gene-rna:"K-ras"
+;[84..113]:malignancy-type:"cystic tumors of the pancreas"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[36..41] K-ras) (NN:[42..50] oncogene) (NNS:[51..60] mutations))
+    (VP (VBP:[61..69] indicate)
+      (NP (NN:[70..80] malignancy))
+      (PP-LOC (IN:[81..83] in)
+        (NP
+          (NP (JJ:[84..90] cystic) (NNS:[91..97] tumors))
+          (PP (IN:[98..100] of)
+            (NP (DT:[101..104] the) (NN:[105..113] pancreas))))))
+    (.:[113..114] .)))
+
+;section 2 Span:118..200
+;Bartsch D, Bastian D, Barth P, Schudy A, Nies C, Kisker O, Wagner HJ,
+;Rothmund  M.
+(SEC
+  (FRAG (NNP:[118..125] Bartsch) (NNP:[126..127] D) (,:[127..128] ,)
+        (NNP:[129..136] Bastian) (NNP:[137..138] D) (,:[138..139] ,)
+        (NNP:[140..145] Barth) (NNP:[146..148] P,) (NNP:[149..155] Schudy)
+        (NNP:[156..157] A) (,:[157..158] ,) (NNP:[159..163] Nies)
+        (NNP:[164..165] C) (,:[165..166] ,) (NNP:[167..173] Kisker)
+        (NNP:[174..175] O) (,:[175..176] ,) (NNP:[177..183] Wagner)
+        (NNP:[184..186] HJ) (,:[186..187] ,) (NNP:[188..196] Rothmund)
+        (NNP:[198..200] M.)))
+
+;section 3 Span:204..263
+;Department of Surgery, Philips-University Marburg, Germany.
+(SEC
+  (FRAG (NNP:[204..214] Department) (IN:[215..217] of) (NNP:[218..225] Surgery)
+        (,:[225..226] ,) (NNP:[227..234] Philips) (NNP:[234..245] -University)
+        (NNP:[246..253] Marburg) (,:[253..254] ,) (NNP:[255..262] Germany)
+        (.:[262..263] .)))
+
+;sentence 4 Span:267..277
+;OBJECTIVE:
+(SENT
+  (NP (NN:[267..276] OBJECTIVE) (::[276..277] :)))
+
+;sentence 5 Span:278..485
+;To evaluate clinical parameters, presurgical diagnostic tests,  histologic
+;findings, and the presence of K-ras oncogene mutations in cystic  tumors of
+;the pancreas to determine which best predict malignancy.
+;[383..388]:gene-rna:"K-ras"
+;[411..441]:malignancy-type:"cystic  tumors of the pancreas"
+(SENT
+  (S
+    (NP-SBJ (-NONE-:[278..278] *))
+    (VP (TO:[278..280] To)
+      (VP (VB:[281..289] evaluate)
+        (NP
+          (NP (JJ:[290..298] clinical) (NNS:[299..309] parameters))
+          (,:[309..310] ,)
+          (NP (JJ:[311..322] presurgical) (JJ:[323..333] diagnostic)
+              (NNS:[334..339] tests))
+          (,:[339..340] ,)
+          (NP (JJ:[342..352] histologic) (NNS:[353..361] findings))
+          (,:[361..362] ,) (CC:[363..366] and)
+          (NP
+            (NP (DT:[367..370] the) (NN:[371..379] presence))
+            (PP (IN:[380..382] of)
+              (NP (NN:[383..388] K-ras) (NN:[389..397] oncogene)
+                  (NNS:[398..407] mutations)))
+            (PP-LOC (IN:[408..410] in)
+              (NP
+                (NP (JJ:[411..417] cystic) (NNS:[419..425] tumors))
+                (PP (IN:[426..428] of)
+                  (NP (DT:[429..432] the) (NN:[433..441] pancreas)))))))
+        (S-ADV
+          (NP-SBJ (-NONE-:[441..441] *))
+          (VP (TO:[442..444] to)
+            (VP (VB:[445..454] determine)
+              (NP
+                (NP (WDT:[455..460] which))
+                (VP
+                  (ADVP (RBS:[461..465] best))
+                  (VBP:[466..473] predict)
+                  (NP (NN:[474..484] malignancy)))))))))
+    (.:[484..485] .)))
+
+;sentence 6 Span:486..511
+;SUMMARY  BACKGROUND DATA:
+(SENT
+  (NP (NN:[486..493] SUMMARY) (NN:[495..505] BACKGROUND) (NN:[506..510] DATA)
+      (::[510..511] :)))
+
+;sentence 7 Span:512..740
+;Because presurgical, intraoperative, and final pathologic  differentiation is
+;difficult in cystic tumors of the pancreas, it would be a  major benefit to
+;identify markers that accurately predict malignancy in these  rare tumors.
+;[603..632]:malignancy-type:"cystic tumors of the pancreas"
+(SENT
+  (S
+    (SBAR-PRP (IN:[512..519] Because)
+      (S
+        (NP-SBJ
+          (NP (JJ:[520..531] presurgical)
+            (NML-1 (-NONE-:[531..531] *P*)))
+          (,:[531..532] ,)
+          (NP (JJ:[533..547] intraoperative)
+            (NML-1 (-NONE-:[547..547] *P*)))
+          (,:[547..548] ,) (CC:[549..552] and)
+          (NP (JJ:[553..558] final)
+            (NML-1 (JJ:[559..569] pathologic) (NN:[571..586] differentiation))))
+        (VP (VBZ:[587..589] is)
+          (ADJP-PRD (JJ:[590..599] difficult))
+          (PP-CLR (IN:[600..602] in)
+            (NP
+              (NP (JJ:[603..609] cystic) (NNS:[610..616] tumors))
+              (PP (IN:[617..619] of)
+                (NP (DT:[620..623] the) (NN:[624..632] pancreas))))))))
+    (,:[632..633] ,)
+    (NP-SBJ (PRP:[634..636] it))
+    (VP (MD:[637..642] would)
+      (VP (VB:[643..645] be)
+        (NP-PRD (DT:[646..647] a) (JJ:[649..654] major) (NN:[655..662] benefit))
+        (S-ADV
+          (NP-SBJ (-NONE-:[662..662] *))
+          (VP (TO:[663..665] to)
+            (VP (VB:[666..674] identify)
+              (NP
+                (NP (NNS:[675..682] markers))
+                (SBAR
+                  (WHNP-2 (WDT:[683..687] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[687..687] *T*))
+                    (ADVP (RB:[688..698] accurately))
+                    (VP (VBP:[699..706] predict)
+                      (NP (NN:[707..717] malignancy))
+                      (PP-CLR (IN:[718..720] in)
+                        (NP (DT:[721..726] these) (JJ:[728..732] rare)
+                            (NNS:[733..739] tumors))))))))))))
+    (.:[739..740] .)))
+
+;sentence 8 Span:741..849
+;The role of K-ras oncogene mutations as an indicator of malignancy  has not
+;been determined in these tumors.
+;[753..758]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[741..744] The) (NN:[745..749] role))
+      (PP (IN:[750..752] of)
+        (NP
+          (NP (NN:[753..758] K-ras) (NN:[759..767] oncogene)
+              (NNS:[768..777] mutations))
+          (PP (IN:[778..780] as)
+            (NP
+              (NP (DT:[781..783] an) (NN:[784..793] indicator))
+              (PP (IN:[794..796] of)
+                (NP (NN:[797..807] malignancy))))))))
+    (VP (VBZ:[809..812] has) (RB:[813..816] not)
+      (VP (VBN:[817..821] been)
+        (VP (VBN:[822..832] determined)
+          (NP-1 (-NONE-:[832..832] *))
+          (PP-LOC (IN:[833..835] in)
+            (NP (DT:[836..841] these) (NNS:[842..848] tumors))))))
+    (.:[848..849] .)))
+
+;sentence 9 Span:850..858
+;METHODS:
+(SENT
+  (NP (NNS:[850..857] METHODS) (::[857..858] :)))
+
+;sentence 10 Span:859..1120
+;Nineteen patients with cystic  tumors of the pancreas were evaluated,
+;including K-ras mutation analysis based  on polymerase chain reaction and
+;restriction digestion assays and direct DNA  sequencing, to screen for
+;parameters that accurately predict malignancy.
+;[939..944]:gene-rna:"K-ras"
+;[973..983]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[859..867] Nineteen) (NNS:[868..876] patients))
+      (PP (IN:[877..881] with)
+        (NP
+          (NP (JJ:[882..888] cystic) (NNS:[890..896] tumors))
+          (PP (IN:[897..899] of)
+            (NP (DT:[900..903] the) (NN:[904..912] pancreas))))))
+    (VP (VBD:[913..917] were)
+      (VP (VBN:[918..927] evaluated)
+        (NP-1 (-NONE-:[927..927] *))
+        (,:[927..928] ,)
+        (PP (VBG:[929..938] including)
+          (NP
+            (NP
+              (NP (NN:[939..944] K-ras) (NN:[945..953] mutation)
+                  (NN:[954..962] analysis))
+              (VP (VBN:[963..968] based)
+                (NP (-NONE-:[968..968] *))
+                (PP-CLR (IN:[970..972] on)
+                  (NP
+                    (NP (NN:[973..983] polymerase) (NN:[984..989] chain)
+                        (NN:[990..998] reaction))
+                    (CC:[999..1002] and)
+                    (NP (NN:[1003..1014] restriction)
+                        (NN:[1015..1024] digestion) (NNS:[1025..1031] assays))))))
+            (CC:[1032..1035] and)
+            (NP (JJ:[1036..1042] direct) (NN:[1043..1046] DNA)
+                (NN:[1048..1058] sequencing))))
+        (,:[1058..1059] ,)
+        (S
+          (NP-SBJ (-NONE-:[1059..1059] *))
+          (VP (TO:[1060..1062] to)
+            (VP (VB:[1063..1069] screen)
+              (PP (IN:[1070..1073] for)
+                (NP
+                  (NP (NNS:[1074..1084] parameters))
+                  (SBAR
+                    (WHNP-2 (WDT:[1085..1089] that))
+                    (S
+                      (NP-SBJ-2 (-NONE-:[1089..1089] *T*))
+                      (ADVP (RB:[1090..1100] accurately))
+                      (VP (VBP:[1101..1108] predict)
+                        (NP (NN:[1109..1119] malignancy))))))))))))
+    (.:[1119..1120] .)))
+
+;sentence 11 Span:1122..1130
+;RESULTS:
+(SENT
+  (NP (NNS:[1122..1129] RESULTS) (::[1129..1130] :)))
+
+;sentence 12 Span:1131..1284
+;All malignant cystic pancreatic tumors (five cystadenocarcinomas and  three
+;mucin-producing adenocarcinomas) harbored K-ras mutations at codon 12 or 
+;13.
+;[1135..1144]:malignancy-clinical-stage:"malignant"
+;[1145..1169]:malignancy-type:"cystic pancreatic tumors"
+;[1176..1195]:malignancy-type:"cystadenocarcinomas"
+;[1207..1212]:gene-protein:"mucin"
+;[1223..1238]:malignancy-type:"adenocarcinomas"
+;[1249..1254]:gene-rna:"K-ras"
+;[1268..1276]:variation-location:"codon 12"
+;[1268..1273]...[1281..1283]:variation-location:"codon"..."13"
+(SENT
+  (S
+    (NP-SBJ (DT:[1131..1134] All) (JJ:[1135..1144] malignant)
+       (JJ:[1145..1151] cystic) (JJ:[1152..1162] pancreatic)
+       (NNS:[1163..1169] tumors)
+      (PRN (-LRB-:[1170..1171] -LRB-)
+        (NP
+          (NP (CD:[1171..1175] five) (NNS:[1176..1195] cystadenocarcinomas))
+          (CC:[1196..1199] and)
+          (NP (CD:[1201..1206] three)
+            (ADJP (NN:[1207..1212] mucin) (HYPH:[1212..1213] -)
+                  (VBG:[1213..1222] producing))
+            (NNS:[1223..1238] adenocarcinomas)))
+        (-RRB-:[1238..1239] -RRB-)))
+    (VP (VBD:[1240..1248] harbored)
+      (NP
+        (NP (NN:[1249..1254] K-ras) (NNS:[1255..1264] mutations))
+        (PP-LOC (IN:[1265..1267] at)
+          (NP
+            (NP
+              (NML-1 (NN:[1268..1273] codon))
+              (CD:[1274..1276] 12))
+            (CC:[1277..1279] or)
+            (NP
+              (NML-1 (-NONE-:[1279..1279] *P*))
+              (CD:[1281..1283] 13))))))
+    (.:[1283..1284] .)))
+
+;sentence 13 Span:1285..1388
+;K-ras mutations were also detected in the percutaneous fine-needle aspirates 
+;of two of these patients.
+;[1285..1290]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1285..1290] K-ras) (NNS:[1291..1300] mutations))
+    (VP (VBD:[1301..1305] were)
+      (ADVP (RB:[1306..1310] also))
+      (VP (VBN:[1311..1319] detected)
+        (NP-1 (-NONE-:[1319..1319] *))
+        (PP-LOC (IN:[1320..1322] in)
+          (NP
+            (NP (DT:[1323..1326] the) (JJ:[1327..1339] percutaneous)
+              (NML (JJ:[1340..1344] fine) (HYPH:[1344..1345] -)
+                   (NN:[1345..1351] needle))
+              (NNS:[1352..1361] aspirates))
+            (PP (IN:[1363..1365] of)
+              (NP
+                (NP (CD:[1366..1369] two))
+                (PP (IN:[1370..1372] of)
+                  (NP (DT:[1373..1378] these) (NNS:[1379..1387] patients)))))))))
+    (.:[1387..1388] .)))
+
+;sentence 14 Span:1389..1488
+;In contrast, none of nine benign cystadenomas or the  solid-papillary
+;neoplasm had K-ras mutations.
+;[1415..1421]:malignancy-clinical-stage:"benign"
+;[1422..1434]:malignancy-type:"cystadenomas"
+;[1443..1467]:malignancy-type:"solid-papillary neoplasm"
+;[1472..1477]:gene-rna:"K-ras"
+(SENT
+  (S
+    (PP (IN:[1389..1391] In)
+      (NP (NN:[1392..1400] contrast)))
+    (,:[1400..1401] ,)
+    (NP-SBJ
+      (NP (NN:[1402..1406] none))
+      (PP (IN:[1407..1409] of)
+        (NP
+          (NP (CD:[1410..1414] nine) (JJ:[1415..1421] benign)
+              (NNS:[1422..1434] cystadenomas))
+          (CC:[1435..1437] or)
+          (NP (DT:[1438..1441] the)
+             (JJ:[1443..1448] solid)
+            (ADJP (HYPH:[1448..1449] -) (JJ:[1449..1458] papillary))
+            (NN:[1459..1467] neoplasm)))))
+    (VP (VBD:[1468..1471] had)
+      (NP (NN:[1472..1477] K-ras) (NNS:[1478..1487] mutations)))
+    (.:[1487..1488] .)))
+
+;sentence 15 Span:1489..1631
+;None of the patients with a benign  tumor carrying K-ras wild-type sequences
+;developed recurrent disease after a  mean follow-up of 50 months.
+;[1540..1545]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1489..1493] None))
+      (PP (IN:[1494..1496] of)
+        (NP
+          (NP (DT:[1497..1500] the) (NNS:[1501..1509] patients))
+          (PP (IN:[1510..1514] with)
+            (NP
+              (NP (DT:[1515..1516] a) (JJ:[1517..1523] benign)
+                  (NN:[1525..1530] tumor))
+              (VP (VBG:[1531..1539] carrying)
+                (NP (NN:[1540..1545] K-ras)
+                  (NML (JJ:[1546..1550] wild) (HYPH:[1550..1551] -)
+                       (NN:[1551..1555] type))
+                  (NNS:[1556..1565] sequences))))))))
+    (VP (VBD:[1566..1575] developed)
+      (NP (JJ:[1576..1585] recurrent) (NN:[1586..1593] disease))
+      (PP-TMP (IN:[1594..1599] after)
+        (NP
+          (NP (DT:[1600..1601] a) (JJ:[1603..1607] mean)
+              (NN:[1608..1617] follow-up))
+          (PP (IN:[1618..1620] of)
+            (NP (CD:[1621..1623] 50) (NNS:[1624..1630] months))))))
+    (.:[1630..1631] .)))
+
+;sentence 16 Span:1632..1838
+;Seven of the 8 malignant cystic pancreatic tumors,  but none of the 11 benign
+;tumors, showed dilatation of the main pancreatic duct  on computed tomography
+;or endoscopic retrograde cholangiopancreatography.
+;[1647..1656]:malignancy-clinical-stage:"malignant"
+;[1657..1681]:malignancy-type:"cystic pancreatic tumors"
+;[1703..1716]:malignancy-type:"benign tumors"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (CD:[1632..1637] Seven))
+        (PP (IN:[1638..1640] of)
+          (NP (DT:[1641..1644] the) (CD:[1645..1646] 8)
+              (JJ:[1647..1656] malignant)
+             (JJ:[1657..1663] cystic) (JJ:[1664..1674] pancreatic)
+             (NNS:[1675..1681] tumors))))
+      (,:[1681..1682] ,) (CC:[1684..1687] but)
+      (NP
+        (NP (NN:[1688..1692] none))
+        (PP (IN:[1693..1695] of)
+          (NP (DT:[1696..1699] the) (CD:[1700..1702] 11)
+             (JJ:[1703..1709] benign) (NNS:[1710..1716] tumors)))))
+    (,:[1716..1717] ,)
+    (VP (VBD:[1718..1724] showed)
+      (NP
+        (NP (NN:[1725..1735] dilatation))
+        (PP (IN:[1736..1738] of)
+          (NP (DT:[1739..1742] the) (JJ:[1743..1747] main)
+              (JJ:[1748..1758] pancreatic) (NN:[1759..1763] duct)))
+        (PP (IN:[1765..1767] on)
+          (NP
+            (NP (VBN:[1768..1776] computed) (NN:[1777..1787] tomography))
+            (CC:[1788..1790] or)
+            (NP (JJ:[1791..1801] endoscopic) (JJ:[1802..1812] retrograde)
+                (NN:[1813..1837] cholangiopancreatography))))))
+    (.:[1837..1838] .)))
+
+;sentence 17 Span:1840..1852
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1840..1851] CONCLUSIONS) (::[1851..1852] :)))
+
+;sentence 18 Span:1853..1996
+;K-ras mutation analysis seems to be a powerful tool to determine  the
+;malignant potential of cystic pancreatic tumors before and after surgery.
+;[1853..1858]:gene-rna:"K-ras"
+;[1946..1970]:malignancy-type:"cystic pancreatic tumors"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1853..1858] K-ras) (NN:[1859..1867] mutation)
+              (NN:[1868..1876] analysis))
+    (VP (VBZ:[1877..1882] seems)
+      (S
+        (NP-SBJ-1 (-NONE-:[1882..1882] *))
+        (VP (TO:[1883..1885] to)
+          (VP (VB:[1886..1888] be)
+            (NP-PRD
+              (NP (DT:[1889..1890] a) (JJ:[1891..1899] powerful)
+                  (NN:[1900..1904] tool))
+              (SBAR
+                (WHNP (-NONE-:[1904..1904] 0))
+                (S
+                  (NP-SBJ (-NONE-:[1904..1904] *))
+                  (VP (TO:[1905..1907] to)
+                    (VP (VB:[1908..1917] determine)
+                      (NP
+                        (NP (DT:[1919..1922] the) (JJ:[1923..1932] malignant)
+                            (NN:[1933..1942] potential))
+                        (PP (IN:[1943..1945] of)
+                          (NP (JJ:[1946..1952] cystic)
+                              (JJ:[1953..1963] pancreatic)
+                              (NNS:[1964..1970] tumors))))
+                      (PP-TMP
+                        (PP (IN:[1971..1977] before))
+                        (CC:[1978..1981] and)
+                        (PP (IN:[1982..1987] after)
+                          (NP (NN:[1988..1995] surgery)))))))))))))
+    (.:[1995..1996] .)))
+
+;sentence 19 Span:1998..2169
+;Dilatation of the main pancreatic duct on computed tomography or endoscopic 
+;retrograde cholangiopancreatography is highly suggestive for malignancy in
+;these  rare tumors.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1998..2008] Dilatation))
+      (PP (IN:[2009..2011] of)
+        (NP (DT:[2012..2015] the) (JJ:[2016..2020] main)
+            (JJ:[2021..2031] pancreatic) (NN:[2032..2036] duct)))
+      (PP (IN:[2037..2039] on)
+        (NP
+          (NP (VBN:[2040..2048] computed) (NN:[2049..2059] tomography))
+          (CC:[2060..2062] or)
+          (NP (JJ:[2063..2073] endoscopic) (JJ:[2075..2085] retrograde)
+              (NN:[2086..2110] cholangiopancreatography)))))
+    (VP (VBZ:[2111..2113] is)
+      (ADJP-PRD (RB:[2114..2120] highly) (JJ:[2121..2131] suggestive)
+        (PP (IN:[2132..2135] for)
+          (NP (NN:[2136..2146] malignancy))))
+      (PP-LOC (IN:[2147..2149] in)
+        (NP (DT:[2150..2155] these) (JJ:[2157..2161] rare)
+            (NNS:[2162..2168] tumors))))
+    (.:[2168..2169] .)))
+
+;section 20 Span:2173..2217
+;PMID: 9671070 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2173..2177] PMID) (::[2177..2178] :) (CD:[2179..2186] 9671070)
+        (NN:[2187..2188] -LSB-) (NNP:[2188..2194] PubMed) (::[2195..2196] -)
+        (NN:[2197..2204] indexed) (IN:[2205..2208] for)
+        (NNP:[2209..2217] MEDLINE-RSB-)))

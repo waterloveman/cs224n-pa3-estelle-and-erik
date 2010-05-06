@@ -1,0 +1,438 @@
+;PMID: 3263862
+;source_file_888.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..44]
+;1)sentence:[e:51..146] = [t:51..146]
+;2)section:[e:150..221] = [t:150..220]
+;3)section:[e:225..281] = [t:225..281]
+;4)sentence:[e:285..690] = [t:285..690]
+;5)sentence:[e:691..855] = [t:691..855]
+;6)sentence:[e:856..956] = [t:856..956]
+;7)sentence:[e:957..1137] = [t:957..1137]
+;8)sentence:[e:1139..1462] = [t:1139..1462]
+;9)sentence:[e:1463..1557] = [t:1463..1557]
+;10)sentence:[e:1558..1686] = [t:1558..1686]
+;11)section:[e:1690..1734] = [t:1690..1733]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:0..45][t:0..44]
+;ERROR_Section end mismatch[e:150..221][t:150..220]
+;ERROR_Section end mismatch[e:1690..1734][t:1690..1733]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[44..45] .
+;ERROR_Token in entity file but not tree[220..221] .
+;ERROR_Token in entity file but not tree[1733..1734] ]
+;ERROR_POS mismatch [28..30] t:token e:CD 15
+
+;section 0 Span:0..44
+;Biochem Pharmacol. 1988 Oct 15;37(20):3861-6
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..17] Pharmacol) (.:[17..18] .)
+        (CD:[19..23] 1988) (NNP:[24..27] Oct) (token:[28..30] 15) (::[30..31] ;)
+        (CD:[31..33] 37) (-LRB-:[33..34] -LRB-) (CD:[34..36] 20)
+        (-RRB-:[36..37] -RRB-) (::[37..38] :) (CD:[38..42] 3861) (::[42..43] -)
+        (CD:[43..44] 6)))
+
+(ORPH .)
+
+;sentence 1 Span:51..146
+;Inhibition of human hepatic and placental xenobiotic monooxygenases by
+;imidazole  antimycotics.
+;[93..118]:cyp450:"xenobiotic monooxygenases"
+;[122..145]:substance:"imidazole  antimycotics"
+(SENT
+  (NP-HLN
+    (NP (NN:[51..61] Inhibition))
+    (PP (IN:[62..64] of)
+      (NP
+        (NP
+          (ADJP-2 (JJ:[65..70] human))
+          (JJ:[71..78] hepatic)
+          (NML-1 (-NONE-:[78..78] *P*)))
+        (CC:[79..82] and)
+        (NP
+          (ADJP-2 (-NONE-:[82..82] *P*))
+          (JJ:[83..92] placental)
+          (NML-1 (JJ:[93..103] xenobiotic) (NNS:[104..118] monooxygenases)))))
+    (PP (IN:[119..121] by)
+      (NP (NN:[122..131] imidazole) (NNS:[133..145] antimycotics)))
+    (.:[145..146] .)))
+;ERROR_Orphan Text from Tree File[44..51] .
+
+;section 2 Span:150..220
+;Pasanen M, Taskinen T, Iscan M, Sotaniemi EA, Kairaluoma M, Pelkonen O
+(SEC
+  (FRAG (NNP:[150..157] Pasanen) (NNP:[158..159] M) (,:[159..160] ,)
+        (NNP:[161..169] Taskinen) (NNP:[170..171] T) (,:[171..172] ,)
+        (NNP:[173..178] Iscan) (NNP:[179..180] M) (,:[180..181] ,)
+        (NNP:[182..191] Sotaniemi) (NNP:[192..194] EA) (,:[194..195] ,)
+        (NNP:[196..206] Kairaluoma) (NNP:[207..208] M) (,:[208..209] ,)
+        (NNP:[210..218] Pelkonen) (NNP:[219..220] O)))
+
+(ORPH .)
+
+;section 3 Span:225..281
+;Department of Pharmacology, University of Oulu, Finland.
+(SEC
+  (FRAG (NNP:[225..235] Department) (IN:[236..238] of)
+        (NNP:[239..251] Pharmacology) (,:[251..252] ,)
+        (NNP:[253..263] University) (IN:[264..266] of) (NNP:[267..271] Oulu)
+        (,:[271..272] ,) (NNP:[273..280] Finland) (.:[280..281] .)))
+;ERROR_Orphan Text from Tree File[220..225] .
+
+;sentence 4 Span:285..690
+;Three imidazole antimycotic drugs, ketoconazole, clotrimazole and miconazole,
+; were studied to characterize the inhibition of aryl hydrocarbon hydroxylase 
+;(AHH), 7-ethoxycoumarin O-deethylase (ECDE) and 7-ethoxyresorufin
+;O-deethylase  (ERDE) activities in human liver and placenta in vitro in
+;comparison with liver  enzymes from control, phenobarbital (PB) and
+;3-methylcholanthrene (MC)  pretreated rats.
+;[291..318]:substance:"imidazole antimycotic drugs"
+;[320..332]:substance:"ketoconazole"
+;[334..346]:substance:"clotrimazole"
+;[351..361]:substance:"miconazole"
+;[411..439]:cyp450:"aryl hydrocarbon hydroxylase"
+;[442..445]:cyp450:"AHH"
+;[448..477]:substance:"7-ethoxycoumarin O-deethylase"
+;[479..483]:substance:"ECDE"
+;[489..519]:cyp450:"7-ethoxyresorufin O-deethylase"
+;[522..526]:cyp450:"ERDE"
+;[602..609]:substance:"enzymes"
+;[624..637]:substance:"phenobarbital"
+;[639..641]:substance:"PB"
+;[647..667]:substance:"3-methylcholanthrene"
+;[669..671]:substance:"MC"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (CD:[285..290] Three)
+         (NN:[291..300] imidazole) (JJ:[301..312] antimycotic)
+         (NNS:[313..318] drugs))
+      (,:[318..319] ,)
+      (NP (NN:[320..332] ketoconazole) (,:[332..333] ,)
+          (NN:[334..346] clotrimazole) (CC:[347..350] and)
+          (NN:[351..361] miconazole)))
+    (,:[361..362] ,)
+    (VP (VBD:[364..368] were)
+      (VP (VBN:[369..376] studied)
+        (NP-4 (-NONE-:[376..376] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[376..376] *))
+          (VP (TO:[377..379] to)
+            (VP (VB:[380..392] characterize)
+              (NP
+                (NP (DT:[393..396] the) (NN:[397..407] inhibition))
+                (PP (IN:[408..410] of)
+                  (NP
+                    (NP
+                      (NML
+                        (NML (NN:[411..415] aryl) (NN:[416..427] hydrocarbon)
+                             (NN:[428..439] hydroxylase))
+                        (NML (-LRB-:[441..442] -LRB-) (NN:[442..445] AHH)
+                             (-RRB-:[445..446] -RRB-)))
+                      (NML-3 (-NONE-:[446..446] *P*)))
+                    (,:[446..447] ,)
+                    (NP
+                      (NML
+                        (NML (NN:[448..464] 7-ethoxycoumarin)
+                             (NN:[465..477] O-deethylase))
+                        (NML (-LRB-:[478..479] -LRB-) (NN:[479..483] ECDE)
+                             (-RRB-:[483..484] -RRB-)))
+                      (NML-3 (-NONE-:[484..484] *P*)))
+                    (CC:[485..488] and)
+                    (NP
+                      (NML
+                        (NML (NN:[489..506] 7-ethoxyresorufin)
+                             (NN:[507..519] O-deethylase))
+                        (NML (-LRB-:[521..522] -LRB-) (NN:[522..526] ERDE)
+                             (-RRB-:[526..527] -RRB-)))
+                      (NML-3 (NNS:[528..538] activities))))))
+              (PP-LOC (IN:[539..541] in)
+                (NP
+                  (NP
+                    (NP (JJ:[542..547] human) (NN:[548..553] liver))
+                    (CC:[554..557] and)
+                    (NP (NN:[558..566] placenta)))
+                  (ADJP (FW:[567..569] in) (FW:[570..575] vitro))))
+              (PP (IN:[576..578] in)
+                (NP
+                  (NP (NN:[579..589] comparison))
+                  (PP (IN:[590..594] with)
+                    (NP
+                      (NP (NN:[595..600] liver) (NNS:[602..609] enzymes))
+                      (PP (IN:[610..614] from)
+                        (NP
+                          (NP (NN:[615..622] control)
+                            (NML-1 (-NONE-:[622..622] *P*)))
+                          (,:[622..623] ,)
+                          (NP
+                            (ADJP
+                              (NML
+                                (NML (NN:[624..637] phenobarbital))
+                                (NML (-LRB-:[638..639] -LRB-) (NN:[639..641] PB)
+                                     (-RRB-:[641..642] -RRB-)))
+                              (ADJP-2 (-NONE-:[642..642] *P*)))
+                            (NML-1 (-NONE-:[642..642] *P*)))
+                          (CC:[643..646] and)
+                          (NP
+                            (ADJP
+                              (NML
+                                (NML (NN:[647..667] 3-methylcholanthrene))
+                                (NML (-LRB-:[668..669] -LRB-) (NN:[669..671] MC)
+                                     (-RRB-:[671..672] -RRB-)))
+                              (ADJP-2 (JJ:[674..684] pretreated)))
+                            (NML-1 (NNS:[685..689] rats))))))))))))))
+    (.:[689..690] .)))
+
+;sentence 5 Span:691..855
+;All three compounds inhibited rat liver enzymes, although MC  pretreatment
+;seemed to lead to a resistance of inhibition relative to PB-treated  and
+;control animals.
+;[701..710]:substance:"compounds"
+;[731..738]:substance:"enzymes"
+;[749..751]:substance:"MC"
+;[823..825]:substance:"PB"
+(SENT
+  (S
+    (NP-SBJ (DT:[691..694] All) (CD:[695..700] three) (NNS:[701..710] compounds))
+    (VP (VBD:[711..720] inhibited)
+      (NP (NN:[721..724] rat) (NN:[725..730] liver) (NNS:[731..738] enzymes))
+      (,:[738..739] ,)
+      (SBAR-ADV (IN:[740..748] although)
+        (S
+          (NP-SBJ-1 (NN:[749..751] MC) (NN:[753..765] pretreatment))
+          (VP (VBD:[766..772] seemed)
+            (S
+              (NP-SBJ-1 (-NONE-:[772..772] *))
+              (VP (TO:[773..775] to)
+                (VP (VB:[776..780] lead)
+                  (PP-CLR (TO:[781..783] to)
+                    (NP
+                      (NP
+                        (NP (DT:[784..785] a) (NN:[786..796] resistance))
+                        (PP (IN:[797..799] of)
+                          (NP (NN:[800..810] inhibition))))
+                      (ADJP (JJ:[811..819] relative)
+                        (PP (TO:[820..822] to)
+                          (NP
+                            (NP
+                              (ADJP (NN:[823..825] PB) (HYPH:[825..826] -)
+                                    (VBN:[826..833] treated))
+                              (NML-2 (-NONE-:[833..833] *P*)))
+                            (CC:[835..838] and)
+                            (NP (NN:[839..846] control)
+                              (NML-2 (NNS:[847..854] animals)))))))))))))))
+    (.:[854..855] .)))
+
+;sentence 6 Span:856..956
+;There were large differences in the extent of inhibition of  human hepatic
+;and placental activities.
+(SENT
+  (S
+    (NP-SBJ (EX:[856..861] There))
+    (VP (VBD:[862..866] were)
+      (ADJP-PRD (JJ:[867..872] large) (NNS:[873..884] differences))
+      (PP (IN:[885..887] in)
+        (NP
+          (NP (DT:[888..891] the) (NN:[892..898] extent))
+          (PP (IN:[899..901] of)
+            (NP
+              (NP (NN:[902..912] inhibition))
+              (PP (IN:[913..915] of)
+                (NP
+                  (NP
+                    (ADJP-1 (JJ:[917..922] human))
+                    (JJ:[923..930] hepatic)
+                    (NML-2 (-NONE-:[930..930] *P*)))
+                  (CC:[931..934] and)
+                  (NP
+                    (ADJP-1 (-NONE-:[934..934] *P*))
+                    (JJ:[935..944] placental)
+                    (NML-2 (NNS:[945..955] activities))))))))))
+    (.:[955..956] .)))
+
+;sentence 7 Span:957..1137
+;Furthermore, while the type of  inhibition of the hepatic ERDE was
+;competitive or mixed, that of the placental  enzyme cannot be described in
+;ordinary terms of inhibition kinetics.
+;[1015..1019]:cyp450:"ERDE"
+;[1069..1075]:cyp450:"enzyme"
+(SENT
+  (S
+    (ADVP (RB:[957..968] Furthermore))
+    (,:[968..969] ,)
+    (SBAR-ADV (IN:[970..975] while)
+      (S
+        (NP-SBJ
+          (NP (DT:[976..979] the) (NN:[980..984] type))
+          (PP (IN:[985..987] of)
+            (NP
+              (NP (NN:[989..999] inhibition))
+              (PP (IN:[1000..1002] of)
+                (NP (DT:[1003..1006] the) (JJ:[1007..1014] hepatic)
+                    (NN:[1015..1019] ERDE))))))
+        (VP (VBD:[1020..1023] was)
+          (ADJP-PRD (JJ:[1024..1035] competitive) (CC:[1036..1038] or)
+                    (JJ:[1039..1044] mixed)))))
+    (,:[1044..1045] ,)
+    (NP-SBJ-1
+      (NP (DT:[1046..1050] that))
+      (PP (IN:[1051..1053] of)
+        (NP (DT:[1054..1057] the) (JJ:[1058..1067] placental)
+            (NN:[1069..1075] enzyme))))
+    (VP (MD:[1076..1082] cannot)
+      (VP (VB:[1083..1085] be)
+        (VP (VBN:[1086..1095] described)
+          (NP-1 (-NONE-:[1095..1095] *))
+          (PP (IN:[1096..1098] in)
+            (NP
+              (NP (JJ:[1099..1107] ordinary) (NNS:[1108..1113] terms))
+              (PP (IN:[1114..1116] of)
+                (NP (NN:[1117..1127] inhibition) (NN:[1128..1136] kinetics))))))))
+    (.:[1136..1137] .)))
+
+;sentence 8 Span:1139..1462
+;Ketoconazole and clotrimazole were relatively potent inhibitors of maternal 
+;cigarette smoking-induced placental ECDE activities (IC50 values from 0.5
+;microM  to 5 microM), whereas much less inhibition of the placental AHH
+;activity was  obtained with ketoconazole and miconazole (IC50 values from 50
+;microM to 500  microM).
+;[1139..1151]:substance:"Ketoconazole"
+;[1156..1168]:substance:"clotrimazole"
+;[1192..1202]:substance:"inhibitors"
+;[1252..1256]:substance:"ECDE"
+;[1269..1273]:quantitative-name:"IC50"
+;[1286..1289]:quantitative-value:"0.5"
+;[1290..1296]:quantitative-units:"microM"
+;[1301..1302]:quantitative-value:"5"
+;[1303..1309]:quantitative-units:"microM"
+;[1358..1361]:cyp450:"AHH"
+;[1390..1402]:substance:"ketoconazole"
+;[1407..1417]:substance:"miconazole"
+;[1419..1423]:quantitative-name:"IC50"
+;[1436..1438]:quantitative-value:"50"
+;[1439..1445]:quantitative-units:"microM"
+;[1449..1452]:quantitative-value:"500"
+;[1454..1460]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (NN:[1139..1151] Ketoconazole) (CC:[1152..1155] and)
+            (NN:[1156..1168] clotrimazole))
+    (VP (VBD:[1169..1173] were)
+      (NP-PRD
+        (NP
+          (ADJP (RB:[1174..1184] relatively) (JJ:[1185..1191] potent))
+          (NNS:[1192..1202] inhibitors))
+        (PP (IN:[1203..1205] of)
+          (NP (JJ:[1206..1214] maternal)
+            (ADJP
+              (NML (NN:[1216..1225] cigarette) (NN:[1226..1233] smoking))
+              (HYPH:[1233..1234] -) (VBN:[1234..1241] induced))
+            (JJ:[1242..1251] placental) (NN:[1252..1256] ECDE)
+             (NNS:[1257..1267] activities)))
+        (PRN (-LRB-:[1268..1269] -LRB-)
+          (NP
+            (NP (NN:[1269..1273] IC50) (NNS:[1274..1280] values))
+            (PP
+              (PP (IN:[1281..1285] from)
+                (NP (CD:[1286..1289] 0.5) (NN:[1290..1296] microM)))
+              (PP (TO:[1298..1300] to)
+                (NP (CD:[1301..1302] 5) (NN:[1303..1309] microM)))))
+          (-RRB-:[1309..1310] -RRB-)))
+      (,:[1310..1311] ,)
+      (SBAR-ADV (IN:[1312..1319] whereas)
+        (S
+          (NP-SBJ-1
+            (NP
+              (ADJP (RB:[1320..1324] much) (JJR:[1325..1329] less))
+              (NN:[1330..1340] inhibition))
+            (PP (IN:[1341..1343] of)
+              (NP (DT:[1344..1347] the) (JJ:[1348..1357] placental)
+                  (NN:[1358..1361] AHH) (NN:[1362..1370] activity))))
+          (VP (VBD:[1371..1374] was)
+            (VP (VBN:[1376..1384] obtained)
+              (NP-1 (-NONE-:[1384..1384] *))
+              (PP-MNR (IN:[1385..1389] with)
+                (NP (NN:[1390..1402] ketoconazole) (CC:[1403..1406] and)
+                    (NN:[1407..1417] miconazole)))
+              (PRN (-LRB-:[1418..1419] -LRB-)
+                (NP
+                  (NP (NN:[1419..1423] IC50) (NNS:[1424..1430] values))
+                  (PP
+                    (PP (IN:[1431..1435] from)
+                      (NP (CD:[1436..1438] 50) (NN:[1439..1445] microM)))
+                    (PP (TO:[1446..1448] to)
+                      (NP (CD:[1449..1452] 500) (NN:[1454..1460] microM)))))
+                (-RRB-:[1460..1461] -RRB-)))))))
+    (.:[1461..1462] .)))
+
+;sentence 9 Span:1463..1557
+;In most cases, hepatic enzymes were less sensitive to antimycotics than 
+;placental activities.
+;[1486..1493]:substance:"enzymes"
+;[1517..1529]:substance:"antimycotics"
+(SENT
+  (S
+    (PP (IN:[1463..1465] In)
+      (NP (JJS:[1466..1470] most) (NNS:[1471..1476] cases)))
+    (,:[1476..1477] ,)
+    (NP-SBJ (JJ:[1478..1485] hepatic) (NNS:[1486..1493] enzymes))
+    (VP (VBD:[1494..1498] were)
+      (VP
+        (ADJP-PRD
+          (ADJP (RBR:[1499..1503] less) (JJ:[1504..1513] sensitive))
+          (PP-1 (-NONE-:[1513..1513] *ICH*)))
+        (PP (TO:[1514..1516] to)
+          (NP (NNS:[1517..1529] antimycotics)))
+        (PP-1 (IN:[1530..1534] than)
+          (NP (JJ:[1536..1545] placental) (NNS:[1546..1556] activities)))))
+    (.:[1556..1557] .)))
+
+;sentence 10 Span:1558..1686
+;This was in contrast with results from rat enzyme studies,  in which MC
+;pretreatment seemed to decrease the inhibitory response.
+;[1601..1607]:substance:"enzyme"
+;[1627..1629]:substance:"MC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1558..1562] This))
+    (VP (VBD:[1563..1566] was)
+      (PP-PRD (IN:[1567..1569] in)
+        (NP
+          (NP (NN:[1570..1578] contrast))
+          (PP (IN:[1579..1583] with)
+            (NP
+              (NP (NNS:[1584..1591] results))
+              (PP (IN:[1592..1596] from)
+                (NP
+                  (NP (NN:[1597..1600] rat) (NN:[1601..1607] enzyme)
+                      (NNS:[1608..1615] studies))
+                  (,:[1615..1616] ,)
+                  (SBAR
+                    (WHPP-2 (IN:[1618..1620] in)
+                      (WHNP (WDT:[1621..1626] which)))
+                    (S
+                      (NP-SBJ (NN:[1627..1629] MC)
+                              (NN:[1630..1642] pretreatment))
+                      (VP (VBD:[1643..1649] seemed)
+                        (S
+                          (NP-SBJ-1 (-NONE-:[1649..1649] *))
+                          (VP (TO:[1650..1652] to)
+                            (VP (VB:[1653..1661] decrease)
+                              (NP (DT:[1662..1665] the)
+                                  (JJ:[1666..1676] inhibitory)
+                                  (NN:[1677..1685] response)))))
+                        (PP-2 (-NONE-:[1685..1685] *T*))))))))))))
+    (.:[1685..1686] .)))
+
+;section 11 Span:1690..1733
+;PMID: 3263862 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1690..1694] PMID) (::[1694..1695] :) (CD:[1696..1703] 3263862)
+        (-LRB-:[1704..1705] -LSB-) (NNP:[1705..1711] PubMed) (::[1712..1713] -)
+        (NN:[1714..1721] indexed) (IN:[1722..1725] for)
+        (NNP:[1726..1733] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1733..EOF] ]
+
+(ORPH -RSB-)

@@ -1,0 +1,582 @@
+;PMID: 10499618
+;source_file_554.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..159] = [t:42..159]
+;2)section:[e:163..268] = [t:163..268]
+;3)section:[e:272..391] = [t:272..391]
+;4)sentence:[e:395..515] = [t:395..515]
+;5)sentence:[e:516..635] = [t:516..635]
+;6)sentence:[e:636..938] = [t:636..938]
+;7)sentence:[e:939..1056] = [t:939..1056]
+;8)sentence:[e:1057..1182] = [t:1057..1182]
+;9)sentence:[e:1183..1399] = [t:1183..1399]
+;10)sentence:[e:1400..1540] = [t:1400..1540]
+;11)sentence:[e:1541..1653] = [t:1541..1653]
+;12)sentence:[e:1654..1966] = [t:1654..1966]
+;13)sentence:[e:1967..2128] = [t:1967..2128]
+;14)sentence:[e:2129..2348] = [t:2129..2348]
+;15)sentence:[e:2349..2628] = [t:2349..2628]
+;16)section:[e:2632..2650] = [t:2632..2650]
+;17)section:[e:2652..2666] = [t:2652..2666]
+;18)section:[e:2668..2685] = [t:2668..2685]
+;19)section:[e:2689..2734] = [t:2689..2734]
+
+;section 0 Span:0..37
+;Clin Cancer Res  1999 Sep;5(9):2450-4
+(SEC
+  (FRAG (NNP:[0..4] Clin) (NNP:[5..11] Cancer) (NNP:[12..15] Res)
+        (CD:[17..21] 1999) (.:[22..28] Sep;5-LRB-) (CD:[28..29] 9)
+        (-RRB-:[29..30] -RRB-) (CD:[30..35] :2450) (::[35..36] -)
+        (CD:[36..37] 4)))
+
+;sentence 1 Span:42..159
+;Molecular detection of neoplastic cells in lymph nodes of metastatic
+;colorectal  cancer patients predicts recurrence.
+;[65..96]:malignancy:"neoplastic cells in lymph nodes"
+;[100..129]:malignancy:"metastatic colorectal  cancer"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (JJ:[42..51] Molecular) (NN:[52..61] detection))
+      (PP (IN:[62..64] of)
+        (NP (JJ:[65..75] neoplastic) (NNS:[76..81] cells)))
+      (PP-LOC (IN:[82..84] in)
+        (NP
+          (NP (NN:[85..90] lymph) (NNS:[91..96] nodes))
+          (PP (IN:[97..99] of)
+            (NP
+              (NML (JJ:[100..110] metastatic) (JJ:[111..121] colorectal)
+                   (NN:[123..129] cancer))
+              (NNS:[130..138] patients))))))
+    (VP (VBZ:[139..147] predicts)
+      (NP (NN:[148..158] recurrence)))
+    (.:[158..159] .)))
+
+;section 2 Span:163..268
+;Sanchez-Cespedes M, Esteller M, Hibi K, Cope FO, Westra WH, Piantadosi S,
+;Herman  JG, Jen J, Sidransky D.
+(SEC
+  (FRAG (NNP:[163..170] Sanchez) (::[170..171] -) (NNP:[171..179] Cespedes)
+        (NNP:[180..182] M,) (NNP:[183..191] Esteller) (NNP:[192..194] M,)
+        (NNP:[195..199] Hibi) (NNP:[200..201] K) (,:[201..202] ,)
+        (NNP:[203..207] Cope) (NNP:[208..210] FO) (,:[210..211] ,)
+        (NNP:[212..218] Westra) (NNP:[219..221] WH) (,:[221..222] ,)
+        (NNP:[223..233] Piantadosi) (NNP:[234..236] S,) (NNP:[237..243] Herman)
+        (NNP:[245..247] JG) (,:[247..248] ,) (NNP:[249..252] Jen)
+        (NNP:[253..255] J,) (NNP:[256..265] Sidransky) (NNP:[266..268] D.)))
+
+;section 3 Span:272..391
+;Department of Otolaryngology-Head and Neck Surgery, The Johns Hopkins
+;Oncology  Center, Baltimore, Maryland 21205, USA.
+(SEC
+  (FRAG (NNP:[272..282] Department) (IN:[283..285] of)
+        (NNP:[286..300] Otolaryngology) (::[300..301] -) (NNP:[301..305] Head)
+        (CC:[306..309] and) (NNP:[310..314] Neck) (NNP:[315..322] Surgery)
+        (,:[322..323] ,) (DT:[324..327] The) (NNP:[328..333] Johns)
+        (NNP:[334..341] Hopkins) (NNP:[342..350] Oncology)
+        (NNP:[352..358] Center) (,:[358..359] ,) (NNP:[360..369] Baltimore)
+        (,:[369..370] ,) (NNP:[371..379] Maryland) (VBZ:[380..385] 21205)
+        (NNP:[385..386] ,) (NNP:[387..390] USA) (.:[390..391] .)))
+
+;sentence 4 Span:395..515
+;Disseminated disease, especially to the liver, constitutes the major risk of 
+;recurrence for colorectal cancer patients.
+;[488..505]:malignancy:"colorectal cancer"
+(SENT
+  (S
+    (NP-SBJ (VBN:[395..407] Disseminated) (NN:[408..415] disease))
+    (,:[415..416] ,)
+    (PP
+      (ADVP (RB:[417..427] especially))
+      (TO:[428..430] to)
+      (NP (DT:[431..434] the) (NN:[435..440] liver)))
+    (,:[440..441] ,)
+    (VP (VBZ:[442..453] constitutes)
+      (NP
+        (NP (DT:[454..457] the) (JJ:[458..463] major) (NN:[464..468] risk))
+        (PP (IN:[469..471] of)
+          (NP (NN:[473..483] recurrence)))
+        (PP (IN:[484..487] for)
+          (NP
+            (NML (JJ:[488..498] colorectal) (NN:[499..505] cancer))
+            (NNS:[506..514] patients)))))
+    (.:[514..515] .)))
+
+;sentence 5 Span:516..635
+;However, successful resection can  still be achieved in 25-35% of colorectal
+;cancer patients with isolated  metastases.
+;[582..599]:malignancy:"colorectal cancer"
+;[624..634]:malignancy:"metastases"
+(SENT
+  (S
+    (ADVP (RB:[516..523] However))
+    (,:[523..524] ,)
+    (NP-SBJ-1 (JJ:[525..535] successful) (NN:[536..545] resection))
+    (VP (MD:[546..549] can)
+      (ADVP (RB:[551..556] still))
+      (VP (VB:[557..559] be)
+        (VP (VBN:[560..568] achieved)
+          (NP-1 (-NONE-:[568..568] *))
+          (PP (IN:[569..571] in)
+            (NP
+              (NP
+                (QP (CD:[572..574] 25) (HYPH:[574..575] -) (CD:[575..577] 35))
+                (NN:[577..578] %))
+              (PP (IN:[579..581] of)
+                (NP
+                  (NP
+                     (JJ:[582..592] colorectal) (NN:[593..599] cancer)
+                    (NNS:[600..608] patients))
+                  (PP (IN:[609..613] with)
+                    (NP (VBN:[614..622] isolated) (NNS:[624..634] metastases))))))))))
+    (.:[634..635] .)))
+
+;sentence 6 Span:636..938
+;To evaluate the clinical value of occult micrometastatic disease  detection
+;in lymph nodes, we tested genetic (K-ras and p53 gene mutations) and 
+;epigenetic (p16 promoter hypermethylation) molecular markers in the
+;perihepatic  lymph nodes from colorectal cancer patients with isolated liver
+;metastases.
+;[747..752]:gene-rna:"K-ras"
+;[757..760]:gene-rna:"p53"
+;[794..797]:gene-rna:"p16"
+;[880..897]:malignancy:"colorectal cancer"
+;[921..937]:malignancy:"liver metastases"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[636..636] *))
+      (VP (TO:[636..638] To)
+        (VP (VB:[639..647] evaluate)
+          (NP
+            (NP (DT:[648..651] the) (JJ:[652..660] clinical)
+                (NN:[661..666] value))
+            (PP (IN:[667..669] of)
+              (NP (JJ:[670..676] occult) (JJ:[677..692] micrometastatic)
+                  (NN:[693..700] disease) (NN:[702..711] detection))))
+          (PP-LOC (IN:[712..714] in)
+            (NP (NN:[715..720] lymph) (NNS:[721..726] nodes))))))
+    (,:[726..727] ,)
+    (NP-SBJ (PRP:[728..730] we))
+    (VP (VBD:[731..737] tested)
+      (NP
+        (NP (JJ:[738..745] genetic)
+          (PRN (-LRB-:[746..747] -LRB-)
+            (NP
+              (NP (NN:[747..752] K-ras)
+                (NML-2 (-NONE-:[752..752] *P*)))
+              (CC:[753..756] and)
+              (NP (NN:[757..760] p53)
+                (NML-2 (NN:[761..765] gene) (NNS:[766..775] mutations))))
+            (-RRB-:[775..776] -RRB-))
+          (NML-1 (-NONE-:[776..776] *P*)))
+        (CC:[777..780] and)
+        (NP (JJ:[782..792] epigenetic)
+          (PRN (-LRB-:[793..794] -LRB-)
+            (NP (NN:[794..797] p16) (NN:[798..806] promoter)
+                (NN:[807..823] hypermethylation))
+            (-RRB-:[823..824] -RRB-))
+          (NML-1 (JJ:[825..834] molecular) (NNS:[835..842] markers))))
+      (PP-LOC (IN:[843..845] in)
+        (NP
+          (NP (DT:[846..849] the) (JJ:[850..861] perihepatic)
+              (NN:[863..868] lymph) (NNS:[869..874] nodes))
+          (PP (IN:[875..879] from)
+            (NP
+              (NP
+                (NML (JJ:[880..890] colorectal) (NN:[891..897] cancer))
+                (NNS:[898..906] patients))
+              (PP (IN:[907..911] with)
+                (NP (VBN:[912..920] isolated)
+                   (NN:[921..926] liver) (NNS:[927..937] metastases))))))))
+    (.:[937..938] .)))
+
+;sentence 7 Span:939..1056
+;DNA  was extracted from 21 paraffin-embedded liver metastases and 80 lymph
+;nodes from  21 colorectal cancer patients.
+;[984..1000]:malignancy:"liver metastases"
+;[1029..1046]:malignancy:"colorectal cancer"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[939..942] DNA))
+    (VP (VBD:[944..947] was)
+      (VP (VBN:[948..957] extracted)
+        (NP-1 (-NONE-:[957..957] *))
+        (PP (IN:[958..962] from)
+          (NP
+            (NP
+              (NP (CD:[963..965] 21)
+                (ADJP (NN:[966..974] paraffin) (HYPH:[974..975] -)
+                      (VBN:[975..983] embedded))
+                 (NN:[984..989] liver) (NNS:[990..1000] metastases))
+              (CC:[1001..1004] and)
+              (NP (CD:[1005..1007] 80) (NN:[1008..1013] lymph)
+                  (NNS:[1014..1019] nodes)))
+            (PP (IN:[1020..1024] from)
+              (NP (CD:[1026..1028] 21)
+                (NML (JJ:[1029..1039] colorectal) (NN:[1040..1046] cancer))
+                (NNS:[1047..1055] patients)))))))
+    (.:[1055..1056] .)))
+
+;sentence 8 Span:1057..1182
+;K-ras and p53 gene mutations were identified in  DNA from liver metastases by
+;PCR amplification followed by cycle sequencing.
+;[1057..1062]:gene-rna:"K-ras"
+;[1067..1070]:gene-rna:"p53"
+;[1115..1131]:malignancy:"liver metastases"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[1057..1062] K-ras)
+        (NML-1 (-NONE-:[1062..1062] *P*)))
+      (CC:[1063..1066] and)
+      (NP (NN:[1067..1070] p53)
+        (NML-1 (NN:[1071..1075] gene) (NNS:[1076..1085] mutations))))
+    (VP (VBD:[1086..1090] were)
+      (VP (VBN:[1091..1101] identified)
+        (NP-2 (-NONE-:[1101..1101] *))
+        (PP (IN:[1102..1104] in)
+          (NP
+            (NP (NN:[1106..1109] DNA))
+            (PP (IN:[1110..1114] from)
+              (NP (NN:[1115..1120] liver) (NNS:[1121..1131] metastases)))))
+        (PP (IN:[1132..1134] by)
+          (NP
+            (NP (NN:[1135..1138] PCR) (NN:[1139..1152] amplification))
+            (VP (VBN:[1153..1161] followed)
+              (NP (-NONE-:[1161..1161] *))
+              (PP (IN:[1162..1164] by)
+                (NP-LGS (NN:[1165..1170] cycle) (NN:[1171..1181] sequencing))))))))
+    (.:[1181..1182] .)))
+
+;sentence 9 Span:1183..1399
+;A  sensitive oligonucleotide-mediated mismatch ligation assay was used to
+;search  for the presence of K-ras and p53 mutations to detect occult disease
+;in 68 lymph  nodes from tumors positive for these gene mutations.
+;[1285..1290]:gene-rna:"K-ras"
+;[1295..1298]:gene-rna:"p53"
+;[1358..1364]:malignancy:"tumors"
+;[1384..1388]:malignancy:"gene"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1183..1184] A) (JJ:[1186..1195] sensitive)
+      (ADJP (NN:[1196..1211] oligonucleotide) (HYPH:[1211..1212] -)
+            (VBN:[1212..1220] mediated))
+      (NN:[1221..1229] mismatch) (NN:[1230..1238] ligation)
+       (NN:[1239..1244] assay))
+    (VP (VBD:[1245..1248] was)
+      (VP (VBN:[1249..1253] used)
+        (NP-2 (-NONE-:[1253..1253] *))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1253..1253] *))
+          (VP (TO:[1254..1256] to)
+            (VP (VB:[1257..1263] search)
+              (PP (IN:[1265..1268] for)
+                (NP
+                  (NP (DT:[1269..1272] the) (NN:[1273..1281] presence))
+                  (PP (IN:[1282..1284] of)
+                    (NP
+                      (NP (NN:[1285..1290] K-ras)
+                        (NML-1 (-NONE-:[1290..1290] *P*)))
+                      (CC:[1291..1294] and)
+                      (NP (NN:[1295..1298] p53)
+                        (NML-1 (NNS:[1299..1308] mutations))))))))))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1308..1308] *))
+          (VP (TO:[1309..1311] to)
+            (VP (VB:[1312..1318] detect)
+              (NP (JJ:[1319..1325] occult) (NN:[1326..1333] disease))
+              (PP (IN:[1334..1336] in)
+                (NP
+                  (NP (CD:[1337..1339] 68) (NN:[1340..1345] lymph)
+                      (NNS:[1347..1352] nodes))
+                  (PP (IN:[1353..1357] from)
+                    (NP
+                      (NP (NNS:[1358..1364] tumors))
+                      (ADJP (JJ:[1365..1373] positive)
+                        (PP (IN:[1374..1377] for)
+                          (NP (DT:[1378..1383] these) (NN:[1384..1388] gene)
+                              (NNS:[1389..1398] mutations)))))))))))))
+    (.:[1398..1399] .)))
+
+;sentence 10 Span:1400..1540
+;Promoter hypermethylation  at the p16 tumor suppressor gene was examined in
+;both liver lesions and lymph  nodes by methylation-specific PCR.
+;[1434..1437]:gene-rna:"p16"
+;[1481..1494]:malignancy:"liver lesions"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1400..1408] Promoter) (NN:[1409..1425] hypermethylation))
+      (PP (IN:[1427..1429] at)
+        (NP (DT:[1430..1433] the) (NN:[1434..1437] p16)
+          (NML (NN:[1438..1443] tumor) (NN:[1444..1454] suppressor))
+          (NN:[1455..1459] gene))))
+    (VP (VBD:[1460..1463] was)
+      (VP (VBN:[1464..1472] examined)
+        (NP-1 (-NONE-:[1472..1472] *))
+        (PP-LOC (IN:[1473..1475] in)
+          (NP (CC:[1476..1480] both)
+            (NP (NN:[1481..1486] liver) (NNS:[1487..1494] lesions))
+            (CC:[1495..1498] and)
+            (NP (NN:[1499..1504] lymph) (NNS:[1506..1511] nodes))))
+        (PP-MNR (IN:[1512..1514] by)
+          (NP
+            (ADJP (NN:[1515..1526] methylation) (HYPH:[1526..1527] -)
+                  (JJ:[1527..1535] specific))
+            (NN:[1536..1539] PCR)))))
+    (.:[1539..1540] .)))
+
+;sentence 11 Span:1541..1653
+;Sixteen of the 21 (76%) liver metastases  harbored either gene point
+;mutations or p16 promoter hypermethylation.
+;[1565..1581]:malignancy:"liver metastases"
+;[1604..1619]:variation-type:"point mutations"
+;[1623..1626]:gene-rna:"p16"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1541..1548] Sixteen))
+      (PP (IN:[1549..1551] of)
+        (NP (DT:[1552..1555] the) (CD:[1556..1558] 21)
+          (PRN (-LRB-:[1559..1560] -LRB-)
+            (NP (CD:[1560..1562] 76) (NN:[1562..1563] %))
+            (-RRB-:[1563..1564] -RRB-))
+           (NN:[1565..1570] liver) (NNS:[1571..1581] metastases))))
+    (VP (VBD:[1583..1591] harbored)
+      (NP (CC:[1592..1598] either)
+        (NP (NN:[1599..1603] gene)
+           (NN:[1604..1609] point) (NNS:[1610..1619] mutations))
+        (CC:[1620..1622] or)
+        (NP (NN:[1623..1626] p16) (NN:[1627..1635] promoter)
+            (NN:[1636..1652] hypermethylation))))
+    (.:[1652..1653] .)))
+
+;sentence 12 Span:1654..1966
+;Twelve of  the 68 lymph nodes were positive for tumor cells by molecular
+;evaluation and  negative for tumor cells by histopathology and cytokeratin
+;immunohistochemistry,  whereas none were positive for tumor cells by
+;histopathology or negative for  tumor cells by molecular analysis (P =
+;0.0005, McNemar's test).
+;[1672..1683]...[1702..1713]:malignancy:"lymph nodes"..."tumor cells"
+;[1790..1801]:gene-protein:"cytokeratin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1654..1660] Twelve))
+      (PP (IN:[1661..1663] of)
+        (NP (DT:[1665..1668] the) (CD:[1669..1671] 68) (NN:[1672..1677] lymph)
+            (NNS:[1678..1683] nodes))))
+    (VP (VBD:[1684..1688] were)
+      (ADJP-PRD
+        (ADJP (JJ:[1689..1697] positive)
+          (PP (IN:[1698..1701] for)
+            (NP (NN:[1702..1707] tumor) (NNS:[1708..1713] cells)))
+          (PP (IN:[1714..1716] by)
+            (NP (JJ:[1717..1726] molecular) (NN:[1727..1737] evaluation))))
+        (CC:[1738..1741] and)
+        (ADJP (JJ:[1743..1751] negative)
+          (PP (IN:[1752..1755] for)
+            (NP (NN:[1756..1761] tumor) (NNS:[1762..1767] cells)))
+          (PP (IN:[1768..1770] by)
+            (NP
+              (NP (NN:[1771..1785] histopathology))
+              (CC:[1786..1789] and)
+              (NP (NN:[1790..1801] cytokeratin)
+                  (NN:[1802..1822] immunohistochemistry))))))
+      (,:[1822..1823] ,)
+      (SBAR-ADV (IN:[1825..1832] whereas)
+        (S
+          (NP-SBJ (NN:[1833..1837] none))
+          (VP (VBD:[1838..1842] were)
+            (ADJP-PRD
+              (ADJP (JJ:[1843..1851] positive)
+                (PP (IN:[1852..1855] for)
+                  (NP (NN:[1856..1861] tumor) (NNS:[1862..1867] cells)))
+                (PP (IN:[1868..1870] by)
+                  (NP (NN:[1871..1885] histopathology))))
+              (CC:[1886..1888] or)
+              (ADJP (JJ:[1889..1897] negative)
+                (PP (IN:[1898..1901] for)
+                  (NP (NN:[1903..1908] tumor) (NNS:[1909..1914] cells)))
+                (PP (IN:[1915..1917] by)
+                  (NP (JJ:[1918..1927] molecular) (NN:[1928..1936] analysis)))))
+            (PRN (-LRB-:[1937..1938] -LRB-)
+              (FRAG
+                (S
+                  (NP-SBJ (NN:[1938..1939] P))
+                  (VP (SYM:[1940..1941] =)
+                    (NP (CD:[1942..1948] 0.0005))))
+                (,:[1948..1949] ,)
+                (NP
+                  (NP (NNP:[1950..1957] McNemar) (POS:[1957..1959] 's))
+                  (NN:[1960..1964] test)))
+              (-RRB-:[1964..1965] -RRB-))))))
+    (.:[1965..1966] .)))
+
+;sentence 13 Span:1967..2128
+;Moreover, in  three patients with lymph nodes that were histologically
+;negative at all sites,  molecular screening detected tumor DNA at one or more
+;lymph nodes.
+(SENT
+  (S
+    (ADVP (RB:[1967..1975] Moreover))
+    (,:[1975..1976] ,)
+    (PP-LOC (IN:[1977..1979] in)
+      (NP
+        (NP (CD:[1981..1986] three) (NNS:[1987..1995] patients))
+        (PP (IN:[1996..2000] with)
+          (NP
+            (NP (NN:[2001..2006] lymph) (NNS:[2007..2012] nodes))
+            (SBAR
+              (WHNP-1 (WDT:[2013..2017] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[2017..2017] *T*))
+                (VP (VBD:[2018..2022] were)
+                  (NP (RB:[2023..2037] histologically)
+                      (JJ:[2038..2046] negative))
+                  (PP-LOC (IN:[2047..2049] at)
+                    (NP (DT:[2050..2053] all) (NNS:[2054..2059] sites))))))))))
+    (,:[2059..2060] ,)
+    (NP-SBJ (JJ:[2062..2071] molecular) (NN:[2072..2081] screening))
+    (VP (VBD:[2082..2090] detected)
+      (NP (NN:[2091..2096] tumor) (NN:[2097..2100] DNA))
+      (PP-LOC (IN:[2101..2103] at)
+        (NP
+          (QP (CD:[2104..2107] one) (CC:[2108..2110] or) (JJR:[2111..2115] more))
+          (NN:[2116..2121] lymph) (NNS:[2122..2127] nodes))))
+    (.:[2127..2128] .)))
+
+;sentence 14 Span:2129..2348
+;Survival  analysis showed a median survival of 1056 days for patients without
+;evidence of  lymph node involvement by molecular analysis and 165 days for
+;patients with  positive lymph nodes by this approach (P = 0.0005).
+;[2297..2317]:malignancy:"positive lymph nodes"
+(SENT
+  (S
+    (NP-SBJ (NN:[2129..2137] Survival) (NN:[2139..2147] analysis))
+    (VP (VBD:[2148..2154] showed)
+      (NP
+        (NP (DT:[2155..2156] a) (NN:[2157..2163] median)
+            (NN:[2164..2172] survival))
+        (PP (IN:[2173..2175] of)
+          (NP
+            (NP
+              (NP (CD:[2176..2180] 1056) (NNS:[2181..2185] days))
+              (PP (IN:[2186..2189] for)
+                (NP
+                  (NP (NNS:[2190..2198] patients))
+                  (PP (IN:[2199..2206] without)
+                    (NP
+                      (NP (NN:[2207..2215] evidence))
+                      (PP (IN:[2216..2218] of)
+                        (NP
+                          (NP (NN:[2220..2225] lymph) (NN:[2226..2230] node)
+                              (NN:[2231..2242] involvement))
+                          (PP-LOC (IN:[2243..2245] by)
+                            (NP (JJ:[2246..2255] molecular)
+                                (NN:[2256..2264] analysis))))))))))
+            (CC:[2265..2268] and)
+            (NP
+              (NP (CD:[2269..2272] 165) (NNS:[2273..2277] days))
+              (PP (IN:[2278..2281] for)
+                (NP
+                  (NP (NNS:[2282..2290] patients))
+                  (PP (IN:[2291..2295] with)
+                    (NP
+                      (NP (JJ:[2297..2305] positive) (NN:[2306..2311] lymph)
+                          (NNS:[2312..2317] nodes))
+                      (PP (IN:[2318..2320] by)
+                        (NP (DT:[2321..2325] this) (NN:[2326..2334] approach)))))))))))
+      (PRN (-LRB-:[2335..2336] -LRB-)
+        (S
+          (NP-SBJ (NN:[2336..2337] P))
+          (VP (SYM:[2338..2339] =)
+            (NP (CD:[2340..2346] 0.0005))))
+        (-RRB-:[2346..2347] -RRB-)))
+    (.:[2347..2348] .)))
+
+;sentence 15 Span:2349..2628
+;These results indicate that  lymph node metastasis screening in colorectal
+;cancer patients by molecular-based  techniques increases the sensitivity of
+;tumor cell detection and can be a good  predictor of recurrence in colorectal
+;cancer patients with resectable liver  metastases.
+;[2378..2399]:malignancy:"lymph node metastasis"
+;[2413..2430]:malignancy:"colorectal cancer"
+;[2567..2584]:malignancy:"colorectal cancer"
+;[2610..2627]:malignancy:"liver  metastases"
+(SENT
+  (S
+    (NP-SBJ (DT:[2349..2354] These) (NNS:[2355..2362] results))
+    (VP (VBP:[2363..2371] indicate)
+      (SBAR (IN:[2372..2376] that)
+        (S
+          (NP-SBJ
+            (NP
+              
+              (NML (NN:[2378..2383] lymph) (NN:[2384..2388] node))
+              (NN:[2389..2399] metastasis)
+              (NN:[2400..2409] screening))
+            (PP (IN:[2410..2412] in)
+              (NP
+                 (JJ:[2413..2423] colorectal) (NN:[2424..2430] cancer)
+                (NNS:[2431..2439] patients)))
+            (PP (IN:[2440..2442] by)
+              (NP
+                (ADJP (JJ:[2443..2452] molecular) (HYPH:[2452..2453] -)
+                      (VBN:[2453..2458] based))
+                (NNS:[2460..2470] techniques))))
+          (VP
+            (VP (VBZ:[2471..2480] increases)
+              (NP
+                (NP (DT:[2481..2484] the) (NN:[2485..2496] sensitivity))
+                (PP (IN:[2497..2499] of)
+                  (NP (NN:[2500..2505] tumor) (NN:[2506..2510] cell)
+                      (NN:[2511..2520] detection)))))
+            (CC:[2521..2524] and)
+            (VP (MD:[2525..2528] can)
+              (VP (VB:[2529..2531] be)
+                (NP-PRD
+                  (NP (DT:[2532..2533] a) (JJ:[2534..2538] good)
+                      (NN:[2540..2549] predictor))
+                  (PP (IN:[2550..2552] of)
+                    (NP
+                      (NP (NN:[2553..2563] recurrence))
+                      (PP (IN:[2564..2566] in)
+                        (NP
+                          (NP
+                            (NML (JJ:[2567..2577] colorectal)
+                                 (NN:[2578..2584] cancer))
+                            (NNS:[2585..2593] patients))
+                          (PP (IN:[2594..2598] with)
+                            (NP (JJ:[2599..2609] resectable)
+                               (NN:[2610..2615] liver)
+                               (NNS:[2617..2627] metastases))))))))))))))
+    (.:[2627..2628] .)))
+
+;section 16 Span:2632..2650
+;Publication Types:
+(SEC
+  (FRAG (NNP:[2632..2643] Publication) (NNP:[2644..2649] Types)
+        (::[2649..2650] :)))
+
+;section 17 Span:2652..2666
+;Clinical Trial
+(SEC
+  (FRAG (NNP:[2652..2660] Clinical) (NNP:[2661..2666] Trial)))
+
+;section 18 Span:2668..2685
+;Multicenter Study
+(SEC
+  (FRAG (NNP:[2668..2679] Multicenter) (NNP:[2680..2685] Study)))
+
+;section 19 Span:2689..2734
+;PMID: 10499618 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2689..2693] PMID) (::[2693..2694] :) (CD:[2695..2703] 10499618)
+        (NN:[2704..2705] -LSB-) (NNP:[2705..2711] PubMed) (::[2712..2713] -)
+        (NN:[2714..2721] indexed) (IN:[2722..2725] for)
+        (NNP:[2726..2734] MEDLINE-RSB-)))

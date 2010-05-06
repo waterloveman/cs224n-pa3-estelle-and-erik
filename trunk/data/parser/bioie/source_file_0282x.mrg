@@ -1,0 +1,332 @@
+;PMID: 8875708
+;source_file_2961.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..133] = [t:49..133]
+;2)section:[e:137..147] = [t:137..147]
+;3)section:[e:151..222] = [t:151..222]
+;4)sentence:[e:226..453] = [t:226..453]
+;5)sentence:[e:454..639] = [t:454..639]
+;6)sentence:[e:640..760] = [t:640..760]
+;7)sentence:[e:761..1009] = [t:761..1009]
+;8)sentence:[e:1011..1201] = [t:1011..1201]
+;9)sentence:[e:1202..1418] = [t:1202..1418]
+;10)section:[e:1422..1474] = [t:1422..1474]
+;11)section:[e:1478..1522] = [t:1478..1522]
+
+;section 0 Span:0..43
+;Semin Diagn Pathol.  1996 Aug;13(3):171-83.
+(SEC
+  (FRAG (NNP:[0..5] Semin) (NNP:[6..11] Diagn) (NNP:[12..18] Pathol)
+        (.:[18..19] .) (CD:[21..25] 1996) (NNP:[26..29] Aug) (::[29..30] ;)
+        (CD:[30..32] 13) (-LRB-:[32..33] -LRB-) (CD:[33..34] 3)
+        (-RRB-:[34..35] -RRB-) (::[35..36] :) (CD:[36..42] 171-83)
+        (.:[42..43] .)))
+
+;sentence 1 Span:49..133
+;Cytogenetics and tissue culture of small round cell tumors of bone and soft 
+;tissue.
+;[84..107]:malignancy-type:"small round cell tumors"
+(SENT
+  (NP-HLN
+    (NP (NNS:[49..61] Cytogenetics))
+    (CC:[62..65] and)
+    (NP (NN:[66..72] tissue) (NN:[73..80] culture))
+    (PP (IN:[81..83] of)
+      (NP
+        (NP
+          (NP (JJ:[84..89] small) (JJ:[90..95] round) (NN:[96..100] cell)
+              (NNS:[101..107] tumors))
+          (PP (IN:[108..110] of)
+            (NP (NN:[111..115] bone))))
+        (CC:[116..119] and)
+        (NP (JJ:[120..124] soft) (NN:[126..132] tissue))))
+    (.:[132..133] .)))
+
+;section 2 Span:137..147
+;Noguera R.
+(SEC
+  (FRAG (NNP:[137..144] Noguera) (NNP:[145..146] R) (.:[146..147] .)))
+
+;section 3 Span:151..222
+;Department of Pathology, Medical School, University of Valencia, Spain.
+(SEC
+  (FRAG (NNP:[151..161] Department) (IN:[162..164] of)
+        (NNP:[165..174] Pathology) (,:[174..175] ,) (NNP:[176..183] Medical)
+        (NNP:[184..190] School) (,:[190..191] ,) (NNP:[192..202] University)
+        (IN:[203..205] of) (NNP:[206..214] Valencia) (,:[214..215] ,)
+        (NNP:[216..221] Spain) (.:[221..222] .)))
+
+;sentence 4 Span:226..453
+;The variety of tumor-specific cytogenetic and genetic alterations among small
+; round cell tumors (Ewing family of tumors, rhabdomyosarcoma, neuroblastoma,
+;and  lymphoma) increases the possibility of genotypic diagnosis of them.
+;[298..322]:malignancy-type:"small  round cell tumors"
+;[324..346]:malignancy-type:"Ewing family of tumors"
+;[348..364]:malignancy-type:"rhabdomyosarcoma"
+;[366..379]:malignancy-type:"neuroblastoma"
+;[386..394]:malignancy-type:"lymphoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[226..229] The) (NN:[230..237] variety))
+      (PP (IN:[238..240] of)
+        (NP
+          (NP
+            (ADJP-1 (NN:[241..246] tumor) (HYPH:[246..247] -)
+                    (JJ:[247..255] specific))
+            (JJ:[256..267] cytogenetic)
+            (NML-2 (-NONE-:[267..267] *P*)))
+          (CC:[268..271] and)
+          (NP
+            (ADJP-1 (-NONE-:[271..271] *P*))
+            (JJ:[272..279] genetic)
+            (NML-2 (NNS:[280..291] alterations)))))
+      (PP (IN:[292..297] among)
+        (NP
+           (JJ:[298..303] small) (JJ:[305..310] round) (NN:[311..315] cell)
+           (NNS:[316..322] tumors)
+          (PRN (-LRB-:[323..324] -LRB-)
+            (NP
+              (NP
+                (NP (NNP:[324..329] Ewing) (NN:[330..336] family))
+                (PP (IN:[337..339] of)
+                  (NP (NNS:[340..346] tumors))))
+              (,:[346..347] ,)
+              (NP (NN:[348..364] rhabdomyosarcoma))
+              (,:[364..365] ,)
+              (NP (NN:[366..379] neuroblastoma))
+              (,:[379..380] ,) (CC:[381..384] and)
+              (NP (NN:[386..394] lymphoma)))
+            (-RRB-:[394..395] -RRB-)))))
+    (VP (VBZ:[396..405] increases)
+      (NP
+        (NP (DT:[406..409] the) (NN:[410..421] possibility))
+        (PP (IN:[422..424] of)
+          (NP
+            (NP (JJ:[425..434] genotypic) (NN:[435..444] diagnosis))
+            (PP (IN:[445..447] of)
+              (NP (PRP:[448..452] them)))))))
+    (.:[452..453] .)))
+
+;sentence 5 Span:454..639
+;In Ewing's  sarcoma and related peripheral primitive neuroectodermal tumors,
+;a  (11;22)(q24;q12) translocation is associated with hybrid transcripts of
+;the EWS  gene with the FLIl gene.
+;[457..473]:malignancy-type:"Ewing's  sarcoma"
+;[486..529]:malignancy-type:"peripheral primitive neuroectodermal tumors"
+;[535..537]:variation-state-original:"11"
+;[538..540]:variation-state-altered:"22"
+;[542..545]:variation-state-original:"q24"
+;[546..549]:variation-state-altered:"q12"
+;[551..564]:malignancy-type:"translocation"
+;[610..613]:gene-rna:"EWS"
+;[629..633]:gene-rna:"FLIl"
+(SENT
+  (S
+    (PP (IN:[454..456] In)
+      (NP
+        (NP
+          (NP (NNP:[457..462] Ewing) (POS:[462..464] 's))
+          (NN:[466..473] sarcoma))
+        (CC:[474..477] and)
+        (NP (VBN:[478..485] related)
+           (JJ:[486..496] peripheral) (JJ:[497..506] primitive)
+           (JJ:[507..522] neuroectodermal) (NNS:[523..529] tumors))))
+    (,:[529..530] ,)
+    (NP-SBJ-1 (DT:[531..532] a)
+      (NML (-LRB-:[534..535] -LRB-) (CD:[535..537] 11) (::[537..538] ;)
+           (CD:[538..540] 22) (-RRB-:[540..541] -RRB-))
+      (NML (-LRB-:[541..542] -LRB-) (NN:[542..545] q24) (::[545..546] ;)
+           (NN:[546..549] q12) (-RRB-:[549..550] -RRB-))
+      (NN:[551..564] translocation))
+    (VP (VBZ:[565..567] is)
+      (VP (VBN:[568..578] associated)
+        (NP-1 (-NONE-:[578..578] *))
+        (PP-CLR (IN:[579..583] with)
+          (NP
+            (NP (JJ:[584..590] hybrid) (NNS:[591..602] transcripts))
+            (PP (IN:[603..605] of)
+              (NP (DT:[606..609] the) (NN:[610..613] EWS) (NN:[615..619] gene)))
+            (PP (IN:[620..624] with)
+              (NP (DT:[625..628] the) (NN:[629..633] FLIl) (NN:[634..638] gene)))))))
+    (.:[638..639] .)))
+
+;sentence 6 Span:640..760
+;In alveolar rhabdomyosarcoma, a (2;13)(q35;qt4)  translocation is associated
+;with a chimeric gene between PAX3 and FKHR.
+;[643..668]:malignancy-type:"alveolar rhabdomyosarcoma"
+;[673..674]:variation-state-original:"2"
+;[675..677]:variation-state-altered:"13"
+;[679..682]:variation-state-original:"q35"
+;[683..686]:variation-state-altered:"qt4"
+;[689..702]:variation-type:"translocation"
+;[746..750]:gene-rna:"PAX3"
+;[755..759]:gene-rna:"FKHR"
+(SENT
+  (S
+    (PP (IN:[640..642] In)
+      (NP (JJ:[643..651] alveolar) (NN:[652..668] rhabdomyosarcoma)))
+    (,:[668..669] ,)
+    (NP-SBJ-1 (DT:[670..671] a)
+      (NML
+        (NML (-LRB-:[672..673] -LRB-) (CD:[673..674] 2) (::[674..675] ;)
+             (CD:[675..677] 13) (-RRB-:[677..678] -RRB-))
+        (NML (-LRB-:[678..679] -LRB-) (NN:[679..682] q35) (::[682..683] ;)
+             (NN:[683..686] qt4) (-RRB-:[686..687] -RRB-)))
+      (NN:[689..702] translocation))
+    (VP (VBZ:[703..705] is)
+      (VP (VBN:[706..716] associated)
+        (NP-1 (-NONE-:[716..716] *))
+        (PP-CLR (IN:[717..721] with)
+          (NP
+            (NP (DT:[722..723] a) (JJ:[724..732] chimeric) (NN:[733..737] gene))
+            (PP (IN:[738..745] between)
+              (NP (NN:[746..750] PAX3) (CC:[751..754] and) (NN:[755..759] FKHR)))))))
+    (.:[759..760] .)))
+
+;sentence 7 Span:761..1009
+;Specific  genetic alterations of the short arm of chromosome 1 and
+;amplification of the  MYCN gene are diagnostically useful in neuroblastomas
+;as the immunoglobulin or  T-cell receptor gene rearrangements and chromosome
+;translocations in lymphomas.
+;[771..790]:variation-event:"genetic alterations"
+;[798..823]:variation-location:"short arm of chromosome 1"
+;[828..841]:variation-type:"amplification"
+;[850..854]:gene-rna:"MYCN"
+;[889..903]:malignancy-type:"neuroblastomas"
+;[911..925]:gene-rna:"immunoglobulin"
+;[930..945]:gene-rna:"T-cell receptor"
+;[951..965]:variation-type:"rearrangements"
+;[981..995]:variation-type:"translocations"
+;[999..1008]:malignancy-type:"lymphomas"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[761..769] Specific)
+           (JJ:[771..778] genetic) (NNS:[779..790] alterations))
+        (PP (IN:[791..793] of)
+          (NP
+            (NP (DT:[794..797] the) (JJ:[798..803] short) (NN:[804..807] arm))
+            (PP (IN:[808..810] of)
+              (NP (NN:[811..821] chromosome) (CD:[822..823] 1))))))
+      (CC:[824..827] and)
+      (NP
+        (NP (NN:[828..841] amplification))
+        (PP (IN:[842..844] of)
+          (NP (DT:[845..848] the) (NN:[850..854] MYCN) (NN:[855..859] gene)))))
+    (VP (VBP:[860..863] are)
+      (ADJP-PRD
+        (ADVP (RB:[864..878] diagnostically))
+        (JJ:[879..885] useful)
+        (PP (IN:[886..888] in)
+          (NP (NNS:[889..903] neuroblastomas)))
+        (PP (IN:[904..906] as)
+          (NP (DT:[907..910] the)
+            (NML
+              (NML
+                (NML (NN:[911..925] immunoglobulin))
+                (NML-1 (-NONE-:[925..925] *P*)))
+              (CC:[926..928] or)
+              (NML
+                (NML (NN:[930..936] T-cell) (NN:[937..945] receptor))
+                (NML-1 (NN:[946..950] gene) (NNS:[951..965] rearrangements))))))
+        (CC:[966..969] and)
+        (NP
+          (NP (NN:[970..980] chromosome) (NNS:[981..995] translocations))
+          (PP (IN:[996..998] in)
+            (NP (NNS:[999..1008] lymphomas))))))
+    (.:[1008..1009] .)))
+
+;sentence 8 Span:1011..1201
+;Thus, cytogenetics and genetics provide an essential adjunct to diagnostic 
+;surgical pathology in the case of small round cell tumors, which often
+;present  substantial diagnostic challenges.
+;[1121..1144]:malignancy-type:"small round cell tumors"
+(SENT
+  (S
+    (ADVP (RB:[1011..1015] Thus))
+    (,:[1015..1016] ,)
+    (NP-SBJ
+      (NP (NNS:[1017..1029] cytogenetics))
+      (CC:[1030..1033] and)
+      (NP (NNS:[1034..1042] genetics)))
+    (VP (VBP:[1043..1050] provide)
+      (NP
+        (NP (DT:[1051..1053] an) (JJ:[1054..1063] essential)
+            (NN:[1064..1071] adjunct))
+        (PP (TO:[1072..1074] to)
+          (NP (JJ:[1075..1085] diagnostic) (JJ:[1087..1095] surgical)
+              (NN:[1096..1105] pathology))))
+      (PP (IN:[1106..1108] in)
+        (NP
+          (NP (DT:[1109..1112] the) (NN:[1113..1117] case))
+          (PP (IN:[1118..1120] of)
+            (NP
+              (NP (JJ:[1121..1126] small) (JJ:[1127..1132] round)
+                  (NN:[1133..1137] cell) (NNS:[1138..1144] tumors))
+              (,:[1144..1145] ,)
+              (SBAR
+                (WHNP-1 (WDT:[1146..1151] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1151..1151] *T*))
+                  (ADVP-TMP (RB:[1152..1157] often))
+                  (VP (VBP:[1158..1165] present)
+                    (NP (JJ:[1167..1178] substantial)
+                        (JJ:[1179..1189] diagnostic)
+                        (NNS:[1190..1200] challenges))))))))))
+    (.:[1200..1201] .)))
+
+;sentence 9 Span:1202..1418
+;Likewise, in vitro culture studies represent  another approach in determining
+;histogenetic origin, novel genes, novel  mechanisms of gene dysregulation,
+;and the biological characteristics of small  round cell tumors.
+;[1393..1417]:malignancy-type:"small  round cell tumors"
+(SENT
+  (S
+    (ADVP (RB:[1202..1210] Likewise))
+    (,:[1210..1211] ,)
+    (NP-SBJ
+      (ADJP (FW:[1212..1214] in) (FW:[1215..1220] vitro))
+      (NN:[1221..1228] culture) (NNS:[1229..1236] studies))
+    (VP (VBP:[1237..1246] represent)
+      (NP (DT:[1248..1255] another) (NN:[1256..1264] approach))
+      (PP (IN:[1265..1267] in)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1267..1267] *))
+          (VP (VBG:[1268..1279] determining)
+            (NP
+              (NP (JJ:[1280..1292] histogenetic) (NN:[1293..1299] origin))
+              (,:[1299..1300] ,)
+              (NP (JJ:[1301..1306] novel) (NNS:[1307..1312] genes))
+              (,:[1312..1313] ,)
+              (NP
+                (NP (JJ:[1314..1319] novel) (NNS:[1321..1331] mechanisms))
+                (PP (IN:[1332..1334] of)
+                  (NP (NN:[1335..1339] gene) (NN:[1340..1353] dysregulation))))
+              (,:[1353..1354] ,) (CC:[1355..1358] and)
+              (NP
+                (NP (DT:[1359..1362] the) (JJ:[1363..1373] biological)
+                    (NNS:[1374..1389] characteristics))
+                (PP (IN:[1390..1392] of)
+                  (NP (JJ:[1393..1398] small) (JJ:[1400..1405] round)
+                      (NN:[1406..1410] cell) (NNS:[1411..1417] tumors)))))))))
+    (.:[1417..1418] .)))
+
+;section 10 Span:1422..1474
+;Publication Types:      Review      Review, Tutorial
+(SEC
+  (FRAG (NNP:[1422..1433] Publication) (NNP:[1434..1439] Types)
+        (::[1439..1440] :) (NNP:[1446..1452] Review) (NNP:[1458..1464] Review)
+        (,:[1464..1465] ,) (NNP:[1466..1474] Tutorial)))
+
+;section 11 Span:1478..1522
+;PMID: 8875708 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1478..1482] PMID) (::[1482..1483] :) (CD:[1484..1491] 8875708)
+        (NN:[1492..1493] -LSB-) (NNP:[1493..1499] PubMed) (::[1500..1501] -)
+        (NN:[1502..1509] indexed) (IN:[1510..1513] for)
+        (NNP:[1514..1521] MEDLINE) (-RRB-:[1521..1522] -RSB-)))

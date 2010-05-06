@@ -1,0 +1,347 @@
+;PMID: 7772432
+;source_file_904.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..112] = [t:42..112]
+;2)section:[e:116..166] = [t:116..166]
+;3)section:[e:170..264] = [t:170..264]
+;4)sentence:[e:268..547] = [t:268..547]
+;5)sentence:[e:548..704] = [t:548..704]
+;6)sentence:[e:705..878] = [t:705..878]
+;7)sentence:[e:879..1015] = [t:879..1015]
+;8)sentence:[e:1016..1122] = [t:1016..1122]
+;9)sentence:[e:1123..1252] = [t:1123..1252]
+;10)sentence:[e:1253..1443] = [t:1253..1443]
+;11)section:[e:1447..1491] = [t:1447..1490]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1447..1491][t:1447..1490]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1490..1491] ]
+
+;section 0 Span:0..36
+;Br J Anaesth. 1995 May;74(5):558-62.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..12] Anaesth) (.:[12..13] .)
+        (CD:[14..18] 1995) (NNP:[19..22] May) (::[22..23] ;) (CD:[23..25] 74)
+        (-LRB-:[25..26] -LRB-) (CD:[26..27] 5) (-RRB-:[27..28] -RRB-)
+        (::[28..29] :) (CD:[29..32] 558) (::[32..33] -) (CD:[33..35] 62)
+        (.:[35..36] .)))
+
+;sentence 1 Span:42..112
+;Human cytochrome P450 mono-oxygenase system is suppressed by propofol.
+;[48..78]:substance:"cytochrome P450 mono-oxygenase"
+;[103..111]:substance:"propofol"
+(SENT
+  (S-HLN
+    (NP-SBJ-1 (JJ:[42..47] Human)
+      
+      (NML (NN:[48..58] cytochrome) (NN:[59..63] P450))
+      (NN:[64..78] mono-oxygenase)
+      (NN:[79..85] system))
+    (VP (VBZ:[86..88] is)
+      (VP (VBN:[89..99] suppressed)
+        (NP-1 (-NONE-:[99..99] *))
+        (PP (IN:[100..102] by)
+          (NP-LGS (NN:[103..111] propofol)))))
+    (.:[111..112] .)))
+
+;section 2 Span:116..166
+;Chen TL, Ueng TH, Chen SH, Lee PH, Fan SZ, Liu CC.
+(SEC
+  (FRAG (NNP:[116..120] Chen) (NNP:[121..123] TL) (,:[123..124] ,)
+        (NNP:[125..129] Ueng) (NNP:[130..132] TH) (,:[132..133] ,)
+        (NNP:[134..138] Chen) (NNP:[139..141] SH) (,:[141..142] ,)
+        (NNP:[143..146] Lee) (NNP:[147..149] PH) (,:[149..150] ,)
+        (NNP:[151..154] Fan) (NNP:[155..157] SZ) (,:[157..158] ,)
+        (NNP:[159..162] Liu) (NNP:[163..166] CC.)))
+
+;section 3 Span:170..264
+;Department of Anesthesiology, National Taiwan University Hospital, Taipei, 
+;Republic of China.
+(SEC
+  (FRAG (NNP:[170..180] Department) (IN:[181..183] of)
+        (NNP:[184..198] Anesthesiology) (,:[198..199] ,)
+        (NNP:[200..208] National) (NNP:[209..215] Taiwan)
+        (NNP:[216..226] University) (NNP:[227..235] Hospital) (,:[235..236] ,)
+        (NNP:[237..243] Taipei) (,:[243..244] ,) (NNP:[246..254] Republic)
+        (IN:[255..257] of) (NNP:[258..263] China) (.:[263..264] .)))
+
+;sentence 4 Span:268..547
+;We have studied the effect of propofol on the cytochrome P450-dependent 
+;mono-oxygenase system in human liver microsomes by assaying mono-oxygenase 
+;activities toward specific cytochrome P450 isoform test substrates, aniline, 
+;7-ethoxycoumarin, benzphetamine and benzo(a) pyrene.
+;[298..306]:substance:"propofol"
+;[314..355]:substance:"cytochrome P450-dependent  mono-oxygenase"
+;[401..415]:substance:"mono-oxygenase"
+;[444..467]:cyp450:"cytochrome P450 isoform"
+;[473..483]:substance:"substrates"
+;[485..492]:substance:"aniline"
+;[495..511]:substance:"7-ethoxycoumarin"
+;[513..526]:substance:"benzphetamine"
+;[531..546]:substance:"benzo(a) pyrene"
+(SENT
+  (S
+    (NP-SBJ (PRP:[268..270] We))
+    (VP (VBP:[271..275] have)
+      (VP (VBN:[276..283] studied)
+        (NP
+          (NP (DT:[284..287] the) (NN:[288..294] effect))
+          (PP (IN:[295..297] of)
+            (NP (NN:[298..306] propofol)))
+          (PP (IN:[307..309] on)
+            (NP (DT:[310..313] the)
+              
+              (ADJP
+                (NML (NN:[314..324] cytochrome) (NN:[325..329] P450))
+                (HYPH:[329..330] -) (JJ:[330..339] dependent))
+              (NN:[341..355] mono-oxygenase)
+              (NN:[356..362] system))))
+        (PP-LOC (IN:[363..365] in)
+          (NP (JJ:[366..371] human) (NN:[372..377] liver)
+              (NNS:[378..388] microsomes)))
+        (PP-MNR (IN:[389..391] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[391..391] *))
+            (VP (VBG:[392..400] assaying)
+              (NP (NN:[401..415] mono-oxygenase) (NNS:[417..427] activities))
+              (PP (IN:[428..434] toward)
+                (NP
+                  (NP (JJ:[435..443] specific)
+                    
+                    (NML (NN:[444..454] cytochrome) (NN:[455..459] P450))
+                    (NN:[460..467] isoform)
+                    (NN:[468..472] test) (NNS:[473..483] substrates))
+                  (,:[483..484] ,)
+                  (NP
+                    (NP (NN:[485..492] aniline))
+                    (,:[492..493] ,)
+                    (NP (NN:[495..511] 7-ethoxycoumarin))
+                    (,:[511..512] ,)
+                    (NP (NN:[513..526] benzphetamine))
+                    (CC:[527..530] and)
+                    (NP (NN:[531..539] benzo-LRB-a-RRB-) (NN:[540..546] pyrene))))))))))
+    (.:[546..547] .)))
+
+;sentence 5 Span:548..704
+;Propofol inhibited  benzo(a)pyrene hydroxylation to a greater extent than the
+;oxidative metabolism  of the other test substrates, even at 0.05 mmol
+;litre-1.
+;[548..556]:substance:"Propofol"
+;[568..582]:substance:"benzo(a)pyrene"
+;[666..676]:substance:"substrates"
+;[686..690]:quantitative-value:"0.05"
+;[691..703]:quantitative-units:"mmol litre-1"
+(SENT
+  (S
+    (NP-SBJ (NN:[548..556] Propofol))
+    (VP (VBD:[557..566] inhibited)
+      (NP (NN:[568..582] benzo-LRB-a-RRB-pyrene) (NN:[583..596] hydroxylation))
+      (PP (TO:[597..599] to)
+        (NP
+          (NP (DT:[600..601] a) (JJR:[602..609] greater) (NN:[610..616] extent))
+          (PP (IN:[617..621] than)
+            (NP
+              (NP (DT:[622..625] the) (JJ:[626..635] oxidative)
+                  (NN:[636..646] metabolism))
+              (PP (IN:[648..650] of)
+                (NP (DT:[651..654] the) (JJ:[655..660] other)
+                    (NN:[661..665] test) (NNS:[666..676] substrates)))))))
+      (,:[676..677] ,)
+      (PP
+        (ADVP (RB:[678..682] even))
+        (IN:[683..685] at)
+        (NP
+          (NML (CD:[686..690] 0.05) (NN:[691..695] mmol))
+          (NN:[696..703] litre-1))))
+    (.:[703..704] .)))
+
+;sentence 6 Span:705..878
+;The degrees of  inhibition of benzphetamine N-demethylation and
+;7-ethoxy-coumarin  O-de-ethylation were similar, while aniline hydroxylation
+;was least affected by  propofol.
+;[735..748]:substance:"benzphetamine"
+;[769..786]:substance:"7-ethoxy-coumarin"
+;[824..831]:substance:"aniline"
+;[869..877]:substance:"propofol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[705..708] The) (NNS:[709..716] degrees))
+      (PP (IN:[717..719] of)
+        (NP
+          (NP (NN:[721..731] inhibition))
+          (PP (IN:[732..734] of)
+            (NP
+              (NP (NN:[735..748] benzphetamine) (NN:[749..750] N)
+                  (HYPH:[750..751] -) (NN:[751..764] demethylation))
+              (CC:[765..768] and)
+              (NP (NN:[769..786] 7-ethoxy-coumarin) (NN:[788..789] O)
+                  (HYPH:[789..790] -) (NN:[790..803] de-ethylation)))))))
+    (VP (VBD:[804..808] were)
+      (ADJP-PRD (JJ:[809..816] similar))
+      (,:[816..817] ,)
+      (SBAR-ADV (IN:[818..823] while)
+        (S
+          (NP-SBJ-1 (NN:[824..831] aniline) (NN:[832..845] hydroxylation))
+          (VP (VBD:[846..849] was)
+            (ADVP (RBS:[850..855] least))
+            (VP (VBN:[856..864] affected)
+              (NP-1 (-NONE-:[864..864] *))
+              (PP (IN:[865..867] by)
+                (NP-LGS (NN:[869..877] propofol))))))))
+    (.:[877..878] .)))
+
+;sentence 7 Span:879..1015
+;Spectral analysis showed that propofol competed with carbon monoxide  for
+;binding to the haem moiety of haemoprotein in the P450 enzyme.
+;[909..917]:substance:"propofol"
+;[932..947]:substance:"carbon monoxide"
+;[968..972]:substance:"haem"
+;[983..995]:substance:"haemoprotein"
+;[1003..1014]:cyp450:"P450 enzyme"
+(SENT
+  (S
+    (NP-SBJ (JJ:[879..887] Spectral) (NN:[888..896] analysis))
+    (VP (VBD:[897..903] showed)
+      (SBAR (IN:[904..908] that)
+        (S
+          (NP-SBJ (NN:[909..917] propofol))
+          (VP (VBD:[918..926] competed)
+            (PP (IN:[927..931] with)
+              (NP (NN:[932..938] carbon) (NN:[939..947] monoxide)))
+            (PP (IN:[949..952] for)
+              (S-NOM
+                (NP-SBJ (-NONE-:[952..952] *))
+                (VP (VBG:[953..960] binding)
+                  (PP (TO:[961..963] to)
+                    (NP
+                      (NP (DT:[964..967] the) (NN:[968..972] haem)
+                          (NN:[973..979] moiety))
+                      (PP (IN:[980..982] of)
+                        (NP (NN:[983..995] haemoprotein))))))))
+            (PP (IN:[996..998] in)
+              (NP (DT:[999..1002] the)
+                 (NN:[1003..1007] P450) (NN:[1008..1014] enzyme)))))))
+    (.:[1014..1015] .)))
+
+;sentence 8 Span:1016..1122
+;The variable  inhibition observed may be caused by the differential binding
+;of propofol to  P450 isoforms.
+;[1095..1103]:substance:"propofol"
+;[1108..1121]:cyp450:"P450 isoforms"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1016..1019] The) (JJ:[1020..1028] variable)
+          (NN:[1030..1040] inhibition))
+      (VP (VBN:[1041..1049] observed)
+        (NP (-NONE-:[1049..1049] *))))
+    (VP (MD:[1050..1053] may)
+      (VP (VB:[1054..1056] be)
+        (VP (VBN:[1057..1063] caused)
+          (NP-1 (-NONE-:[1063..1063] *))
+          (PP (IN:[1064..1066] by)
+            (NP-LGS
+              (NP (DT:[1067..1070] the) (JJ:[1071..1083] differential)
+                  (NN:[1084..1091] binding))
+              (PP (IN:[1092..1094] of)
+                (NP (NN:[1095..1103] propofol)))
+              (PP (TO:[1104..1106] to)
+                (NP (NN:[1108..1112] P450) (NNS:[1113..1121] isoforms))))))))
+    (.:[1121..1122] .)))
+
+;sentence 9 Span:1123..1252
+;Propofol 0.05-1.0 mmol litre-1 exhibited a  concentration-dependent
+;inhibitory effect on human cytochrome P450 2E1, 2B1 and  1A1.
+;[1123..1131]:substance:"Propofol"
+;[1132..1140]:quantitative-value:"0.05-1.0"
+;[1141..1153]:quantitative-units:"mmol litre-1"
+;[1218..1237]:cyp450:"cytochrome P450 2E1"
+;[1218..1233]...[1248..1251]:cyp450:"cytochrome P450"..."1A1"
+;[1218..1233]...[1239..1242]:cyp450:"cytochrome P450"..."2B1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1123..1131] Propofol))
+      (NP
+        (NML
+          (QP (CD:[1132..1136] 0.05) (HYPH:[1136..1137] -) (CD:[1137..1140] 1.0))
+          (NN:[1141..1145] mmol))
+        (NN:[1146..1153] litre-1)))
+    (VP (VBD:[1154..1163] exhibited)
+      (NP (DT:[1164..1165] a)
+        (ADJP (NN:[1167..1180] concentration) (HYPH:[1180..1181] -)
+              (JJ:[1181..1190] dependent))
+        (JJ:[1191..1201] inhibitory) (NN:[1202..1208] effect))
+      (PP (IN:[1209..1211] on)
+        (NP
+          (NP
+            (ADJP-2 (JJ:[1212..1217] human))
+            
+            (NML-1 (NN:[1218..1228] cytochrome) (NN:[1229..1233] P450))
+            (NN:[1234..1237] 2E1))
+          (,:[1237..1238] ,)
+          (NP
+            (ADJP-2 (-NONE-:[1238..1238] *P*))
+            (NML-1 (-NONE-:[1238..1238] *P*))
+            (NN:[1239..1242] 2B1))
+          (CC:[1243..1246] and)
+          (NP
+            (ADJP-2 (-NONE-:[1246..1246] *P*))
+            (NML-1 (-NONE-:[1246..1246] *P*))
+            (NN:[1248..1251] 1A1)))))
+    (.:[1251..1252] .)))
+
+;sentence 10 Span:1253..1443
+;These inhibitory actions of propofol on human liver microsomal enzymes in 
+;vitro suggest that potential drug interactions may exist between propofol and
+; other drugs administered clinically.
+;[1281..1289]:substance:"propofol"
+;[1316..1323]:substance:"enzymes"
+;[1357..1361]:substance:"drug"
+;[1393..1401]:substance:"propofol"
+;[1413..1418]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1253..1258] These) (JJ:[1259..1269] inhibitory)
+          (NNS:[1270..1277] actions))
+      (PP (IN:[1278..1280] of)
+        (NP (NN:[1281..1289] propofol)))
+      (PP (IN:[1290..1292] on)
+        (NP (JJ:[1293..1298] human) (NN:[1299..1304] liver)
+            (JJ:[1305..1315] microsomal) (NNS:[1316..1323] enzymes)))
+      (ADVP (FW:[1324..1326] in) (FW:[1328..1333] vitro)))
+    (VP (VBP:[1334..1341] suggest)
+      (SBAR (IN:[1342..1346] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1347..1356] potential) (NN:[1357..1361] drug)
+                (NNS:[1362..1374] interactions))
+            (PP-1 (-NONE-:[1374..1374] *ICH*)))
+          (VP (MD:[1375..1378] may)
+            (VP (VB:[1379..1384] exist)
+              (PP-1 (IN:[1385..1392] between)
+                (NP
+                  (NP (NN:[1393..1401] propofol))
+                  (CC:[1402..1405] and)
+                  (NP
+                    (NP (JJ:[1407..1412] other) (NNS:[1413..1418] drugs))
+                    (VP (VBN:[1419..1431] administered)
+                      (NP (-NONE-:[1431..1431] *))
+                      (ADVP (RB:[1432..1442] clinically)))))))))))
+    (.:[1442..1443] .)))
+
+;section 11 Span:1447..1490
+;PMID: 7772432 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1447..1451] PMID) (::[1451..1452] :) (CD:[1453..1460] 7772432)
+        (-LRB-:[1461..1462] -LSB-) (NNP:[1462..1468] PubMed) (::[1469..1470] -)
+        (VBN:[1471..1478] indexed) (IN:[1479..1482] for)
+        (NNP:[1483..1490] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1490..EOF] ]
+
+(ORPH -RSB-)

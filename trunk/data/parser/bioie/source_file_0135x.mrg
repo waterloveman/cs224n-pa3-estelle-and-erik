@@ -1,0 +1,425 @@
+;PMID: 2064724
+;source_file_808.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..129] = [t:35..129]
+;2)section:[e:133..153] = [t:133..153]
+;3)section:[e:157..281] = [t:157..281]
+;4)sentence:[e:285..389] = [t:285..389]
+;5)sentence:[e:390..630] = [t:390..630]
+;6)sentence:[e:631..867] = [t:631..867]
+;7)sentence:[e:868..1048] = [t:868..1048]
+;8)sentence:[e:1049..1150] = [t:1049..1150]
+;9)sentence:[e:1151..1246] = [t:1151..1246]
+;10)sentence:[e:1247..1514] = [t:1247..1514]
+;11)section:[e:1518..1562] = [t:1518..1562]
+
+;section 0 Span:0..30
+;Mol Carcinog  1991;4(3):189-95
+(SEC
+  (FRAG (IN:[0..3] Mol) (NNP:[4..12] Carcinog) (CD:[14..18] 1991)
+        (CC:[18..21] ;4-LRB-) (CD:[21..22] 3) (-RRB-:[22..23] -RRB-)
+        (CD:[23..27] :189) (::[27..28] -) (CD:[28..30] 95)))
+
+;sentence 1 Span:35..129
+;Analysis of oncogene alterations in human endometrial carcinoma: prevalence
+;of  ras mutations.
+;[47..55]:gene-rna:"oncogene"
+;[77..98]:malignancy:"endometrial carcinoma"
+;[115..118]:gene-rna:"ras"
+;[119..128]:variation-event:"mutations"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[35..43] Analysis))
+      (PP (IN:[44..46] of)
+        (NP
+          (NP (NN:[47..55] oncogene) (NNS:[56..67] alterations))
+          (PP (IN:[68..70] in)
+            (NP (JJ:[71..76] human)
+               (JJ:[77..88] endometrial) (NN:[89..98] carcinoma))))))
+    (::[98..99] :)
+    (NP
+      (NP (NN:[100..110] prevalence))
+      (PP (IN:[111..113] of)
+        (NP (NN:[115..118] ras) (NNS:[119..128] mutations))))
+    (.:[128..129] .)))
+
+;section 2 Span:133..153
+;Boyd J, Risinger JI.
+(SEC
+  (FRAG (NNP:[133..137] Boyd) (NNP:[138..140] J,) (NNP:[141..149] Risinger)
+        (NNP:[150..153] JI.)))
+
+;section 3 Span:157..281
+;Gene Expression Section, National Institute of Environmental Health Sciences,
+; Research Triangle Park, North Carolina 27709.
+(SEC
+  (FRAG (NNP:[157..161] Gene) (NNP:[162..172] Expression)
+        (NNP:[173..180] Section) (,:[180..181] ,) (NNP:[182..190] National)
+        (NNP:[191..200] Institute) (IN:[201..203] of)
+        (NNP:[204..217] Environmental) (NNP:[218..224] Health)
+        (NNP:[225..233] Sciences) (,:[233..234] ,) (NNP:[236..244] Research)
+        (NNP:[245..253] Triangle) (NNP:[254..258] Park) (,:[258..259] ,)
+        (NNP:[260..265] North) (NNP:[266..274] Carolina) (.:[275..280] 27709)
+        (.:[280..281] .)))
+
+;sentence 4 Span:285..389
+;The molecular genetics of human endometrial carcinoma have yet to be defined
+;to  any significant extent.
+;[317..338]:malignancy:"endometrial carcinoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[285..288] The) (JJ:[289..298] molecular)
+          (NNS:[299..307] genetics))
+      (PP (IN:[308..310] of)
+        (NP (JJ:[311..316] human)
+           (JJ:[317..328] endometrial) (NN:[329..338] carcinoma))))
+    (VP (VBP:[339..343] have)
+      (ADVP (RB:[344..347] yet))
+      (VP (TO:[348..350] to)
+        (VP (VB:[351..353] be)
+          (VP (VBN:[354..361] defined)
+            (NP-1 (-NONE-:[361..361] *))
+            (PP (TO:[362..364] to)
+              (NP (DT:[366..369] any) (JJ:[370..381] significant)
+                  (NN:[382..388] extent)))))))
+    (.:[388..389] .)))
+
+;sentence 5 Span:390..630
+;Cell lines from 11 endometrial carcinomas were examined  for alterations in
+;proto-oncogenes that might predictably be present, based on  existing data
+;from the better-characterized human carcinomas of the uterine  cervix, ovary,
+;and breast.
+;[409..431]:malignancy:"endometrial carcinomas"
+;[466..481]:gene-rna:"proto-oncogenes"
+;[577..610]:malignancy:"carcinomas of the uterine  cervix"
+;[612..617]:malignancy:"ovary"
+;[623..629]:malignancy:"breast"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[390..394] Cell) (NNS:[395..400] lines))
+      (PP (IN:[401..405] from)
+        (NP (CD:[406..408] 11)
+           (JJ:[409..420] endometrial) (NNS:[421..431] carcinomas))))
+    (VP (VBD:[432..436] were)
+      (VP (VBN:[437..445] examined)
+        (NP-1 (-NONE-:[445..445] *))
+        (PP (IN:[447..450] for)
+          (NP
+            (NP (NNS:[451..462] alterations))
+            (PP (IN:[463..465] in)
+              (NP
+                (NP (AFX:[466..471] proto) (HYPH:[471..472] -)
+                    (NNS:[472..481] oncogenes))
+                (SBAR
+                  (WHNP-3 (WDT:[482..486] that))
+                  (S
+                    (NP-SBJ-3 (-NONE-:[486..486] *T*))
+                    (VP (MD:[487..492] might)
+                      (ADVP (RB:[493..504] predictably))
+                      (VP (VB:[505..507] be)
+                        (ADJP-PRD (JJ:[508..515] present))))))))))
+        (,:[515..516] ,)
+        (S-ADV
+          (NP-SBJ-2 (-NONE-:[516..516] *))
+          (VP (VBN:[517..522] based)
+            (NP-2 (-NONE-:[522..522] *))
+            (PP-CLR (IN:[523..525] on)
+              (NP
+                (NP (VBG:[527..535] existing) (NNS:[536..540] data))
+                (PP (IN:[541..545] from)
+                  (NP
+                    (NP (DT:[546..549] the)
+                      (ADJP (RBR:[550..556] better) (HYPH:[556..557] -)
+                            (VBN:[557..570] characterized))
+                      (JJ:[571..576] human) (NNS:[577..587] carcinomas))
+                    (PP (IN:[588..590] of)
+                      (NP
+                        (NP (DT:[591..594] the) (JJ:[595..602] uterine)
+                            (NN:[604..610] cervix))
+                        (,:[610..611] ,)
+                        (NP (NN:[612..617] ovary))
+                        (,:[617..618] ,) (CC:[619..622] and)
+                        (NP (NN:[623..629] breast))))))))))))
+    (.:[629..630] .)))
+
+;sentence 6 Span:631..867
+;Codons 12, 13, and 61 of the Ha-ras, Ki-ras, and  N-ras genes were examined
+;for possible point mutations, and the c-erbB2/neu,  c-myc, and epidermal
+;growth factor receptor (EGFR) genes were examined for  amplification or
+;overexpression.
+;[631..640]:variation-location:"Codons 12"
+;[631..637]...[650..652]:variation-location:"Codons"..."61"
+;[631..637]...[642..644]:variation-location:"Codons"..."13"
+;[660..666]:gene-rna:"Ha-ras"
+;[668..674]:gene-rna:"Ki-ras"
+;[681..686]:gene-rna:"N-ras"
+;[720..735]:variation-type:"point mutations"
+;[745..752]:gene-rna:"c-erbB2"
+;[753..756]:gene-rna:"neu"
+;[759..764]:gene-rna:"c-myc"
+;[770..802]:gene-rna:"epidermal growth factor receptor"
+;[804..808]:gene-rna:"EGFR"
+(SENT
+  (S
+    (S
+      (NP-SBJ-3
+        (NP
+          (NP
+            (NML-1 (NNS:[631..637] Codons))
+            (CD:[638..640] 12))
+          (,:[640..641] ,)
+          (NP
+            (NML-1 (-NONE-:[641..641] *P*))
+            (CD:[642..644] 13))
+          (,:[644..645] ,) (CC:[646..649] and)
+          (NP
+            (NML-1 (-NONE-:[649..649] *P*))
+            (CD:[650..652] 61)))
+        (PP (IN:[653..655] of)
+          (NP (DT:[656..659] the)
+            (NML
+              (NML (NN:[660..666] Ha-ras)
+                (NML-2 (-NONE-:[666..666] *P*)))
+              (,:[666..667] ,)
+              (NML (NN:[668..674] Ki-ras)
+                (NML-2 (-NONE-:[674..674] *P*)))
+              (,:[674..675] ,) (CC:[676..679] and)
+              (NML (NN:[681..686] N-ras)
+                (NML-2 (NNS:[687..692] genes)))))))
+      (VP (VBD:[693..697] were)
+        (VP (VBN:[698..706] examined)
+          (NP-3 (-NONE-:[706..706] *))
+          (PP (IN:[707..710] for)
+            (NP (JJ:[711..719] possible)
+               (NN:[720..725] point) (NNS:[726..735] mutations))))))
+    (,:[735..736] ,) (CC:[737..740] and)
+    (S
+      (NP-SBJ-4 (DT:[741..744] the)
+        (NML
+          (NML (NN:[745..752] c-erbB2) (SYM:[752..753] /) (NN:[753..756] neu)
+            (NML-5 (-NONE-:[756..756] *P*)))
+          (,:[756..757] ,)
+          (NML (NN:[759..764] c-myc)
+            (NML-5 (-NONE-:[764..764] *P*)))
+          (,:[764..765] ,) (CC:[766..769] and)
+          (NML
+            (NML
+              (NML (JJ:[770..779] epidermal)
+                (NML (NN:[780..786] growth) (NN:[787..793] factor))
+                (NN:[794..802] receptor))
+              (NML (-LRB-:[803..804] -LRB-) (NN:[804..808] EGFR)
+                   (-RRB-:[808..809] -RRB-)))
+            (NML-5 (NNS:[810..815] genes)))))
+      (VP (VBD:[816..820] were)
+        (VP (VBN:[821..829] examined)
+          (NP-4 (-NONE-:[829..829] *))
+          (PP (IN:[830..833] for)
+            (NP
+              (NP (NN:[835..848] amplification))
+              (CC:[849..851] or)
+              (NP (NN:[852..866] overexpression)))))))
+    (.:[866..867] .)))
+
+;sentence 7 Span:868..1048
+;Ras mutations were found in seven of 11 (64%)  tumors, including three in
+;codon 61 of Ha-ras (CAG----CAT) and four in codon 12  of Ki-ras (GGT----GAT
+;in two and GGT----GTT in two).
+;[868..871]:gene-rna:"Ras"
+;[872..881]:variation-event:"mutations"
+;[915..921]:malignancy:"tumors"
+;[942..950]:variation-location:"codon 61"
+;[954..960]:gene-rna:"Ha-ras"
+;[962..965]:variation-state-original:"CAG"
+;[969..972]:variation-state-altered:"CAT"
+;[986..994]:variation-location:"codon 12"
+;[999..1005]:gene-rna:"Ki-ras"
+;[1007..1010]:variation-state-original:"GGT"
+;[1014..1017]:variation-state-altered:"GAT"
+;[1029..1032]:variation-state-original:"GGT"
+;[1036..1039]:variation-state-altered:"GTT"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[868..871] Ras) (NNS:[872..881] mutations))
+    (VP (VBD:[882..886] were)
+      (VP (VBN:[887..892] found)
+        (NP-1 (-NONE-:[892..892] *))
+        (PP-LOC (IN:[893..895] in)
+          (NP
+            (NP (CD:[896..901] seven))
+            (PP (IN:[902..904] of)
+              (NP
+                (NP (CD:[905..907] 11)
+                  (PRN (-LRB-:[908..909] -LRB-)
+                    (NP (CD:[909..911] 64) (NN:[911..912] %))
+                    (-RRB-:[912..913] -RRB-))
+                  (NNS:[915..921] tumors))
+                (,:[921..922] ,)
+                (PP (VBG:[923..932] including)
+                  (NP
+                    (NP
+                      (NP (CD:[933..938] three))
+                      (PP-LOC (IN:[939..941] in)
+                        (NP
+                          (NP (NN:[942..947] codon) (CD:[948..950] 61))
+                          (PP (IN:[951..953] of)
+                            (NP (NN:[954..960] Ha-ras)))))
+                      (PRN (-LRB-:[961..962] -LRB-)
+                        (NP
+                          (NP (NN:[962..965] CAG))
+                          (PP (SYM:[965..969] ----)
+                            (NP (NN:[969..972] CAT))))
+                        (-RRB-:[972..973] -RRB-)))
+                    (CC:[974..977] and)
+                    (NP
+                      (NP (CD:[978..982] four))
+                      (PP-LOC (IN:[983..985] in)
+                        (NP
+                          (NP (NN:[986..991] codon) (CD:[992..994] 12))
+                          (PP (IN:[996..998] of)
+                            (NP (NN:[999..1005] Ki-ras)))))
+                      (PRN (-LRB-:[1006..1007] -LRB-)
+                        (NP
+                          (NP
+                            (NP
+                              (NP (NN:[1007..1010] GGT))
+                              (PP (SYM:[1010..1014] ----)
+                                (NP (NN:[1014..1017] GAT))))
+                            (PP (IN:[1018..1020] in)
+                              (NP (CD:[1021..1024] two))))
+                          (CC:[1025..1028] and)
+                          (NP
+                            (NP
+                              (NP (NN:[1029..1032] GGT))
+                              (PP (SYM:[1032..1036] ----)
+                                (NP (NN:[1036..1039] GTT))))
+                            (PP (IN:[1040..1042] in)
+                              (NP (CD:[1043..1046] two)))))
+                        (-RRB-:[1046..1047] -RRB-)))))))))))
+    (.:[1047..1048] .)))
+
+;sentence 8 Span:1049..1150
+;No evidence was found for  amplification or overexpression of the c-erbB2 or
+;EGFR genes in any tumor.
+;[1115..1122]:gene-rna:"c-erbB2"
+;[1126..1130]:gene-rna:"EGFR"
+;[1144..1149]:malignancy:"tumor"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1049..1051] No) (NN:[1052..1060] evidence))
+    (VP (VBD:[1061..1064] was)
+      (VP (VBN:[1065..1070] found)
+        (NP-1 (-NONE-:[1070..1070] *))
+        (PP (IN:[1071..1074] for)
+          (NP
+            (NP (NN:[1076..1089] amplification))
+            (CC:[1090..1092] or)
+            (NP
+              (NP (NN:[1093..1107] overexpression))
+              (PP (IN:[1108..1110] of)
+                (NP (DT:[1111..1114] the)
+                  (NML
+                    (NML (NN:[1115..1122] c-erbB2)
+                      (NML-2 (-NONE-:[1122..1122] *P*)))
+                    (CC:[1123..1125] or)
+                    (NML (NN:[1126..1130] EGFR)
+                      (NML-2 (NNS:[1131..1136] genes)))))))))
+        (PP-LOC (IN:[1137..1139] in)
+          (NP (DT:[1140..1143] any) (NN:[1144..1149] tumor)))))
+    (.:[1149..1150] .)))
+
+;sentence 9 Span:1151..1246
+;One  tumor contained amplified c-myc sequences and exhibited relative
+;overexpression  of c-myc.
+;[1156..1161]:malignancy:"tumor"
+;[1182..1187]:gene-rna:"c-myc"
+;[1240..1245]:gene-rna:"c-myc"
+(SENT
+  (S
+    (NP-SBJ (CD:[1151..1154] One) (NN:[1156..1161] tumor))
+    (VP
+      (VP (VBD:[1162..1171] contained)
+        (NP (JJ:[1172..1181] amplified) (NN:[1182..1187] c-myc)
+            (NNS:[1188..1197] sequences)))
+      (CC:[1198..1201] and)
+      (VP (VBD:[1202..1211] exhibited)
+        (NP
+          (NP (JJ:[1212..1220] relative) (NN:[1221..1235] overexpression))
+          (PP (IN:[1237..1239] of)
+            (NP (NN:[1240..1245] c-myc))))))
+    (.:[1245..1246] .)))
+
+;sentence 10 Span:1247..1514
+;These data suggest that the amplification or overexpression of several 
+;proto-oncogenes frequently observed in other human gynecologic and breast
+;tumors  are not prevalent in endometrial carcinoma and that ras gene
+;mutations are  relatively common in this tumor type.
+;[1319..1334]:gene-rna:"proto-oncogenes"
+;[1370..1381]:malignancy:"gynecologic"
+;[1386..1399]:malignancy:"breast tumors"
+;[1422..1443]:malignancy:"endometrial carcinoma"
+;[1453..1456]:gene-rna:"ras"
+;[1462..1471]:variation-event:"mutations"
+;[1498..1513]:malignancy:"this tumor type"
+(SENT
+  (S
+    (NP-SBJ (DT:[1247..1252] These) (NNS:[1253..1257] data))
+    (VP (VBP:[1258..1265] suggest)
+      (SBAR
+        (SBAR (IN:[1266..1270] that)
+          (S
+            (NP-SBJ
+              (NP
+                (NP (DT:[1271..1274] the) (NN:[1275..1288] amplification))
+                (CC:[1289..1291] or)
+                (NP (NN:[1292..1306] overexpression)))
+              (PP (IN:[1307..1309] of)
+                (NP
+                  (NP (JJ:[1310..1317] several)
+                     (AFX:[1319..1324] proto) (HYPH:[1324..1325] -)
+                     (NNS:[1325..1334] oncogenes))
+                  (VP
+                    (ADVP-TMP (RB:[1335..1345] frequently))
+                    (VBN:[1346..1354] observed)
+                    (NP (-NONE-:[1354..1354] *))
+                    (PP-LOC (IN:[1355..1357] in)
+                      (NP
+                        (NP
+                          (ADJP-2 (JJ:[1358..1363] other))
+                          (ADJP-1 (JJ:[1364..1369] human))
+                          (JJ:[1370..1381] gynecologic)
+                          (NML-3 (-NONE-:[1381..1381] *P*)))
+                        (CC:[1382..1385] and)
+                        (NP
+                          (ADJP-2 (-NONE-:[1385..1385] *P*))
+                          (ADJP-1 (-NONE-:[1385..1385] *P*))
+                           (NN:[1386..1392] breast)
+                          (NML-3 (NNS:[1393..1399] tumors)))))))))
+            (VP (VBP:[1401..1404] are)
+              (ADJP-PRD (RB:[1405..1408] not) (JJ:[1409..1418] prevalent))
+              (PP (IN:[1419..1421] in)
+                (NP (JJ:[1422..1433] endometrial) (NN:[1434..1443] carcinoma))))))
+        (CC:[1444..1447] and)
+        (SBAR (IN:[1448..1452] that)
+          (S
+            (NP-SBJ (NN:[1453..1456] ras) (NN:[1457..1461] gene)
+                    (NNS:[1462..1471] mutations))
+            (VP (VBP:[1472..1475] are)
+              (ADJP-PRD (RB:[1477..1487] relatively) (JJ:[1488..1494] common))
+              (PP (IN:[1495..1497] in)
+                (NP (DT:[1498..1502] this) (NN:[1503..1508] tumor)
+                    (NN:[1509..1513] type))))))))
+    (.:[1513..1514] .)))
+
+;section 11 Span:1518..1562
+;PMID: 2064724 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1518..1522] PMID) (::[1522..1523] :) (CD:[1524..1531] 2064724)
+        (NN:[1532..1533] -LSB-) (NNP:[1533..1539] PubMed) (::[1540..1541] -)
+        (NN:[1542..1549] indexed) (IN:[1550..1553] for)
+        (NNP:[1554..1562] MEDLINE-RSB-)))

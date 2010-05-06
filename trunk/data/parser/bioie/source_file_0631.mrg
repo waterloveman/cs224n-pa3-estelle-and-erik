@@ -1,0 +1,504 @@
+;PMID: 9765359
+;source_file_2664.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..159] = [t:50..159]
+;2)section:[e:163..224] = [t:163..224]
+;3)section:[e:228..347] = [t:228..347]
+;4)sentence:[e:351..538] = [t:351..538]
+;5)sentence:[e:539..702] = [t:539..702]
+;6)sentence:[e:703..911] = [t:703..911]
+;7)sentence:[e:912..1093] = [t:912..1093]
+;8)sentence:[e:1094..1227] = [t:1094..1227]
+;9)sentence:[e:1228..1346] = [t:1228..1346]
+;10)sentence:[e:1347..1537] = [t:1347..1537]
+;11)sentence:[e:1538..1717] = [t:1538..1717]
+;12)sentence:[e:1718..1870] = [t:1718..1870]
+;13)sentence:[e:1871..1982] = [t:1871..1982]
+;14)sentence:[e:1983..2124] = [t:1983..2124]
+;15)section:[e:2128..2172] = [t:2128..2172]
+
+;section 0 Span:0..44
+;J Pharmacol Exp Ther. 1998 Oct;287(1):381-8.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1998)
+        (DT:[27..34] Oct;287) (-LRB-:[34..35] -LRB-) (CD:[35..36] 1)
+        (-RRB-:[36..37] -RRB-) (::[37..38] :) (CD:[38..41] 381) (::[41..42] -)
+        (CD:[42..44] 8.)))
+
+;sentence 1 Span:50..159
+;Microsomal metabolism of delavirdine: evidence for mechanism-based
+;inactivation  of human cytochrome P450 3A.
+;[75..86]:substance:"delavirdine"
+;[140..158]:cyp450:"cytochrome P450 3A"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[50..60] Microsomal) (NN:[61..71] metabolism))
+      (PP (IN:[72..74] of)
+        (NP (NN:[75..86] delavirdine))))
+    (::[86..87] :)
+    (NP
+      (NP (NN:[88..96] evidence))
+      (PP (IN:[97..100] for)
+        (NP
+          (NP
+            (ADJP (NN:[101..110] mechanism) (HYPH:[110..111] -)
+                  (VBN:[111..116] based))
+            (NN:[117..129] inactivation))
+          (PP (IN:[131..133] of)
+            (NP (JJ:[134..139] human)
+               (NN:[140..150] cytochrome) (NN:[151..155] P450)
+               (NN:[156..158] 3A))))))
+    (.:[158..159] .)))
+
+;section 2 Span:163..224
+;Voorman RL, Maio SM, Payne NA, Zhao Z, Koeplinger KA, Wang X.
+(SEC
+  (FRAG (NNP:[163..170] Voorman) (NNP:[171..173] RL) (,:[173..174] ,)
+        (NNP:[175..179] Maio) (NNP:[180..182] SM) (,:[182..183] ,)
+        (NNP:[184..189] Payne) (NN:[190..192] NA) (,:[192..193] ,)
+        (NNP:[194..198] Zhao) (NNP:[199..200] Z) (,:[200..201] ,)
+        (NNP:[202..212] Koeplinger) (NNP:[213..215] KA) (,:[215..216] ,)
+        (NNP:[217..221] Wang) (NNP:[222..223] X) (.:[223..224] .)))
+
+;section 3 Span:228..347
+;Drug Metabolism and Disposition Research, Pharmacia and Upjohn, Kalamazoo, 
+;Michigan, USA. Richard.L.Voorman@am.pnu.com
+(SEC
+  (FRAG (NNP:[228..232] Drug) (NNP:[233..243] Metabolism) (CC:[244..247] and)
+        (NNP:[248..259] Disposition) (NNP:[260..268] Research) (,:[268..269] ,)
+        (NNP:[270..279] Pharmacia) (CC:[280..283] and) (NNP:[284..290] Upjohn)
+        (,:[290..291] ,) (NNP:[292..301] Kalamazoo) (,:[301..302] ,)
+        (NNP:[304..312] Michigan) (,:[312..313] ,) (NNP:[314..317] USA)
+        (.:[317..318] .) (NNP:[319..326] Richard) (NNP:[326..339] .L.Voorman@am)
+        (.:[339..347] .pnu.com)))
+
+;sentence 4 Span:351..538
+;Administration of delavirdine, an HIV-1 reverse transcriptase inhibitor, to
+;rats  or monkeys resulted in apparent loss of hepatic microsomal CYP3A and
+;delavirdine  desalkylation activity.
+;[369..380]:substance:"delavirdine"
+;[385..412]:substance:"HIV-1 reverse transcriptase"
+;[413..422]:substance:"inhibitor"
+;[492..497]:cyp450:"CYP3A"
+;[502..513]:substance:"delavirdine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[351..365] Administration))
+      (PP (IN:[366..368] of)
+        (NP
+          (NP (NN:[369..380] delavirdine))
+          (,:[380..381] ,)
+          (NP (DT:[382..384] an)
+            (NML (NN:[385..390] HIV-1) (JJ:[391..398] reverse)
+                 (NN:[399..412] transcriptase))
+            (NN:[413..422] inhibitor))))
+      (,:[422..423] ,)
+      (PP (TO:[424..426] to)
+        (NP (NNS:[427..431] rats) (CC:[433..435] or) (NNS:[436..443] monkeys))))
+    (VP (VBD:[444..452] resulted)
+      (PP-CLR (IN:[453..455] in)
+        (NP
+          (NP (JJ:[456..464] apparent) (NN:[465..469] loss))
+          (PP (IN:[470..472] of)
+            (NP
+              (NP (JJ:[473..480] hepatic) (JJ:[481..491] microsomal)
+                  (NN:[492..497] CYP3A)
+                (NML-1 (-NONE-:[497..497] *P*)))
+              (CC:[498..501] and)
+              (NP (NN:[502..513] delavirdine) (NN:[515..528] desalkylation)
+                (NML-1 (NN:[529..537] activity))))))))
+    (.:[537..538] .)))
+
+;sentence 5 Span:539..702
+;Human CYP3A catalyzes the formation of desalkyl  delavirdine and 6'-hydroxy
+;delavirdine, an unstable metabolite, while CYP2D6  catalyzes only desalkyl
+;delavirdine.
+;[545..550]:cyp450:"CYP3A"
+;[578..599]:substance:"desalkyl  delavirdine"
+;[604..626]:substance:"6'-hydroxy delavirdine"
+;[640..650]:substance:"metabolite"
+;[658..664]:cyp450:"CYP2D6"
+;[681..701]:substance:"desalkyl delavirdine"
+(SENT
+  (S
+    (NP-SBJ (JJ:[539..544] Human) (NN:[545..550] CYP3A))
+    (VP (VBZ:[551..560] catalyzes)
+      (NP
+        (NP (DT:[561..564] the) (NN:[565..574] formation))
+        (PP (IN:[575..577] of)
+          (NP
+            (NP (NN:[578..586] desalkyl) (NN:[588..599] delavirdine))
+            (CC:[600..603] and)
+            (NP
+              (NP (JJ:[604..614] 6'-hydroxy) (NN:[615..626] delavirdine))
+              (,:[626..627] ,)
+              (NP (DT:[628..630] an) (JJ:[631..639] unstable)
+                  (NN:[640..650] metabolite))))))
+      (,:[650..651] ,)
+      (SBAR-ADV (IN:[652..657] while)
+        (S
+          (NP-SBJ (NN:[658..664] CYP2D6))
+          (VP (VBZ:[666..675] catalyzes)
+            (ADVP (RB:[676..680] only))
+            (NP (NN:[681..689] desalkyl) (NN:[690..701] delavirdine))))))
+    (.:[701..702] .)))
+
+;sentence 6 Span:703..911
+;CYP2D6 catalyzed desalkyl delavirdine  formation was linear with time (up to
+;30 min) but when catalyzed by cDNA  expressed CYP3A4 or human liver
+;microsomes the reaction rate declined  progressively with time.
+;[703..709]:cyp450:"CYP2D6"
+;[720..740]:substance:"desalkyl delavirdine"
+;[774..782]:quantitative-value:"up to 30"
+;[783..786]:quantitative-units:"min"
+;[810..814]:substance:"cDNA"
+;[826..832]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (ADJP (NN:[703..709] CYP2D6) (VBN:[710..719] catalyzed))
+        (NML (NN:[720..728] desalkyl) (NN:[729..740] delavirdine))
+        (NN:[742..751] formation))
+      (VP (VBD:[752..755] was)
+        (ADJP-PRD (JJ:[756..762] linear)
+          (PP (IN:[763..767] with)
+            (NP (NN:[768..772] time)
+              (PRN (-LRB-:[773..774] -LRB-)
+                (PP (IN:[774..776] up)
+                  (PP (TO:[777..779] to)
+                    (NP (CD:[780..782] 30) (NN:[783..786] min))))
+                (-RRB-:[786..787] -RRB-)))))))
+    (CC:[788..791] but)
+    (S
+      (SBAR-ADV
+        (WHADVP-1 (WRB:[792..796] when))
+        (S
+          (NP-SBJ-2 (-NONE-:[796..796] *))
+          (VP (VBN:[797..806] catalyzed)
+            (NP-2 (-NONE-:[806..806] *))
+            (PP (IN:[807..809] by)
+              (NP-LGS
+                (NP
+                  (ADJP (NN:[810..814] cDNA) (VBN:[816..825] expressed))
+                  (NN:[826..832] CYP3A4))
+                (CC:[833..835] or)
+                (NP (JJ:[836..841] human) (NN:[842..847] liver)
+                    (NNS:[848..858] microsomes))))
+            (ADVP-TMP-1 (-NONE-:[858..858] *T*)))))
+      (NP-SBJ (DT:[859..862] the) (NN:[863..871] reaction) (NN:[872..876] rate))
+      (VP (VBD:[877..885] declined)
+        (ADVP (RB:[887..900] progressively))
+        (PP (IN:[901..905] with)
+          (NP (NN:[906..910] time)))))
+    (.:[910..911] .)))
+
+;sentence 7 Span:912..1093
+;Coincubation with triazolam showed that delavirdine  caused a time- and
+;NADPH-dependent loss of CYP3A4 activity in human liver  microsomes as
+;measured by triazolam 1'-hydroxylation.
+;[930..939]:substance:"triazolam"
+;[952..963]:substance:"delavirdine"
+;[984..989]:substance:"NADPH"
+;[1008..1014]:cyp450:"CYP3A4"
+;[1066..1075]:substance:"triazolam"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[912..924] Coincubation))
+      (PP (IN:[925..929] with)
+        (NP (NN:[930..939] triazolam))))
+    (VP (VBD:[940..946] showed)
+      (SBAR (IN:[947..951] that)
+        (S
+          (NP-SBJ (NN:[952..963] delavirdine))
+          (VP (VBD:[965..971] caused)
+            (NP
+              (NP (DT:[972..973] a)
+                (NML
+                  (NML
+                    (ADJP (NN:[974..978] time) (HYPH:[978..979] -)
+                      (ADJP-1 (-NONE-:[979..979] *P*)))
+                    (NML-2 (-NONE-:[979..979] *P*)))
+                  (CC:[980..983] and)
+                  (NML
+                    (ADJP (NN:[984..989] NADPH) (HYPH:[989..990] -)
+                      (ADJP-1 (JJ:[990..999] dependent)))
+                    (NML-2 (NN:[1000..1004] loss)))))
+              (PP (IN:[1005..1007] of)
+                (NP (NN:[1008..1014] CYP3A4) (NN:[1015..1023] activity))))
+            (PP-LOC (IN:[1024..1026] in)
+              (NP (JJ:[1027..1032] human) (NN:[1033..1038] liver)
+                  (NNS:[1040..1050] microsomes)))
+            (SBAR-ADV (IN:[1051..1053] as)
+              (S
+                (NP-SBJ-3 (-NONE-:[1053..1053] *))
+                (VP (VBN:[1054..1062] measured)
+                  (NP-3 (-NONE-:[1062..1062] *))
+                  (PP (IN:[1063..1065] by)
+                    (NP-LGS (NN:[1066..1075] triazolam)
+                            (NN:[1076..1092] 1'-hydroxylation))))))))))
+    (.:[1092..1093] .)))
+
+;sentence 8 Span:1094..1227
+;The catalytic activity  loss was saturable and was characterized by a Ki of
+;21.6 +/- 8.9 microM and a  kinact of 0.59 +/- 0.08 min-1.
+;[1164..1166]:quantitative-name:"Ki"
+;[1170..1182]:quantitative-value:"21.6 +/- 8.9"
+;[1183..1189]:quantitative-units:"microM"
+;[1197..1203]:quantitative-name:"kinact"
+;[1207..1220]:quantitative-value:"0.59 +/- 0.08"
+;[1221..1226]:quantitative-units:"min-1"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1094..1097] The) (JJ:[1098..1107] catalytic)
+              (NN:[1108..1116] activity) (NN:[1118..1122] loss))
+    (VP
+      (VP (VBD:[1123..1126] was)
+        (ADJP-PRD (JJ:[1127..1136] saturable)))
+      (CC:[1137..1140] and)
+      (VP (VBD:[1141..1144] was)
+        (VP (VBN:[1145..1158] characterized)
+          (NP-1 (-NONE-:[1158..1158] *))
+          (PP (IN:[1159..1161] by)
+            (NP-LGS
+              (NP
+                (NP (DT:[1162..1163] a) (NN:[1164..1166] Ki))
+                (PP (IN:[1167..1169] of)
+                  (NP
+                    (QP (CD:[1170..1174] 21.6) (SYM:[1175..1178] +/-)
+                        (CD:[1179..1182] 8.9))
+                    (NN:[1183..1189] microM))))
+              (CC:[1190..1193] and)
+              (NP
+                (NP (DT:[1194..1195] a) (NN:[1197..1203] kinact))
+                (PP (IN:[1204..1206] of)
+                  (NP
+                    (QP (CD:[1207..1211] 0.59) (SYM:[1212..1215] +/-)
+                        (CD:[1216..1220] 0.08))
+                    (NN:[1221..1226] min-1)))))))))
+    (.:[1226..1227] .)))
+
+;sentence 9 Span:1228..1346
+;An apparent partition ratio of 41 was determined  with cDNA expressed CYP3A4,
+;based on the substrate depletion method.
+;[1259..1261]:quantitative-value:"41"
+;[1283..1287]:substance:"cDNA"
+;[1298..1304]:cyp450:"CYP3A4"
+;[1319..1328]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1228..1230] An) (JJ:[1231..1239] apparent)
+          (NN:[1240..1249] partition) (NN:[1250..1255] ratio))
+      (PP (IN:[1256..1258] of)
+        (NP (CD:[1259..1261] 41))))
+    (VP (VBD:[1262..1265] was)
+      (VP (VBN:[1266..1276] determined)
+        (NP-1 (-NONE-:[1276..1276] *))
+        (PP-MNR (IN:[1278..1282] with)
+          (NP
+            (ADJP (NN:[1283..1287] cDNA) (VBN:[1288..1297] expressed))
+            (NN:[1298..1304] CYP3A4)))
+        (,:[1304..1305] ,)
+        (PP (VBN:[1306..1311] based)
+          (PP (IN:[1312..1314] on)
+            (NP (DT:[1315..1318] the)
+              (NML (NN:[1319..1328] substrate) (NN:[1329..1338] depletion))
+              (NN:[1339..1345] method))))))
+    (.:[1345..1346] .)))
+
+;sentence 10 Span:1347..1537
+;Incubation  of [14C]delavirdine with microsomes from several species resulted
+;in  irreversible association with an approximately 50 kDa protein, as
+;demonstrated  by SDS-PAGE/autoradiography.
+;[1362..1378]:substance:"[14C]delavirdine"
+;[1462..1478]:quantitative-value:"approximately 50"
+;[1479..1482]:quantitative-units:"kDa"
+;[1483..1490]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1347..1357] Incubation))
+      (NP (IN:[1359..1361] of)
+        (NP (NN:[1362..1378] -LSB-14C-RSB-delavirdine)))
+      (PP (IN:[1379..1383] with)
+        (NP
+          (NP (NNS:[1384..1394] microsomes))
+          (PP (IN:[1395..1399] from)
+            (NP (JJ:[1400..1407] several) (NNS:[1408..1415] species))))))
+    (VP (VBD:[1416..1424] resulted)
+      (PP-CLR (IN:[1425..1427] in)
+        (NP
+          (NP (JJ:[1429..1441] irreversible) (NN:[1442..1453] association))
+          (PP (IN:[1454..1458] with)
+            (NP (DT:[1459..1461] an)
+              (NML
+                (QP (RB:[1462..1475] approximately) (CD:[1476..1478] 50))
+                (NN:[1479..1482] kDa))
+              (NN:[1483..1490] protein)))))
+      (,:[1490..1491] ,)
+      (SBAR-ADV (IN:[1492..1494] as)
+        (S
+          (NP-SBJ-1 (-NONE-:[1494..1494] *))
+          (VP (VBN:[1495..1507] demonstrated)
+            (NP-1 (-NONE-:[1507..1507] *))
+            (PP (IN:[1509..1511] by)
+              (NP-LGS
+                (NP (NN:[1512..1515] SDS) (HYPH:[1515..1516] -)
+                    (NN:[1516..1520] PAGE))
+                (SYM:[1520..1521] /)
+                (NP (NN:[1521..1536] autoradiography))))))))
+    (.:[1536..1537] .)))
+
+;sentence 11 Span:1538..1717
+;Binding to the protein was NADPH dependent,  glutathione insensitive,
+;proportional to the level of CYP3A expression and was  inhibited by
+;ketoconazole, a specific CYP3A inhibitor.
+;[1553..1560]:substance:"protein"
+;[1565..1570]:substance:"NADPH"
+;[1583..1594]:substance:"glutathione"
+;[1637..1642]:cyp450:"CYP3A"
+;[1676..1688]:substance:"ketoconazole"
+;[1701..1706]:cyp450:"CYP3A"
+;[1707..1716]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1538..1545] Binding))
+      (PP (TO:[1546..1548] to)
+        (NP (DT:[1549..1552] the) (NN:[1553..1560] protein))))
+    (VP
+      (VP (VBD:[1561..1564] was)
+        (ADJP-PRD
+          (ADJP (NN:[1565..1570] NADPH) (JJ:[1571..1580] dependent))
+          (,:[1580..1581] ,)
+          (ADJP (NN:[1583..1594] glutathione) (JJ:[1595..1606] insensitive))
+          (,:[1606..1607] ,)
+          (ADJP (JJ:[1608..1620] proportional)
+            (PP (TO:[1621..1623] to)
+              (NP
+                (NP (DT:[1624..1627] the) (NN:[1628..1633] level))
+                (PP (IN:[1634..1636] of)
+                  (NP (NN:[1637..1642] CYP3A) (NN:[1643..1653] expression))))))))
+      (CC:[1654..1657] and)
+      (VP (VBD:[1658..1661] was)
+        (VP (VBN:[1663..1672] inhibited)
+          (NP-1 (-NONE-:[1672..1672] *))
+          (PP (IN:[1673..1675] by)
+            (NP-LGS
+              (NP (NN:[1676..1688] ketoconazole))
+              (,:[1688..1689] ,)
+              (NP (DT:[1690..1691] a) (JJ:[1692..1700] specific)
+                  (NN:[1701..1706] CYP3A) (NN:[1707..1716] inhibitor)))))))
+    (.:[1716..1717] .)))
+
+;sentence 12 Span:1718..1870
+;NADPH-dependent  irreversible binding to human and rat total microsomal
+;protein was demonstrated  following exhaustive extraction of microsomal
+;protein.
+;[1718..1723]:substance:"NADPH"
+;[1790..1797]:substance:"protein"
+;[1862..1869]:substance:"protein"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (ADJP (NN:[1718..1723] NADPH) (HYPH:[1723..1724] -)
+              (JJ:[1724..1733] dependent))
+        (JJ:[1735..1747] irreversible) (NN:[1748..1755] binding))
+      (PP (TO:[1756..1758] to)
+        (NP
+          (NP (JJ:[1759..1764] human)
+            (NML-1 (-NONE-:[1764..1764] *P*)))
+          (CC:[1765..1768] and)
+          (NP (NN:[1769..1772] rat)
+            (NML-1 (JJ:[1773..1778] total) (JJ:[1779..1789] microsomal)
+                   (NN:[1790..1797] protein))))))
+    (VP (VBD:[1798..1801] was)
+      (VP (VBN:[1802..1814] demonstrated)
+        (NP-2 (-NONE-:[1814..1814] *))
+        (PP (VBG:[1816..1825] following)
+          (NP
+            (NP (JJ:[1826..1836] exhaustive) (NN:[1837..1847] extraction))
+            (PP (IN:[1848..1850] of)
+              (NP (JJ:[1851..1861] microsomal) (NN:[1862..1869] protein)))))))
+    (.:[1869..1870] .)))
+
+;sentence 13 Span:1871..1982
+;Binding was decreased in  the presence of glutathione and appeared to be
+;related to expression level of  CYP3A.
+;[1913..1924]:substance:"glutathione"
+;[1976..1981]:cyp450:"CYP3A"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1871..1878] Binding))
+    (VP
+      (VP (VBD:[1879..1882] was)
+        (VP (VBN:[1883..1892] decreased)
+          (NP-1 (-NONE-:[1892..1892] *))
+          (PP (IN:[1893..1895] in)
+            (NP
+              (NP (DT:[1897..1900] the) (NN:[1901..1909] presence))
+              (PP (IN:[1910..1912] of)
+                (NP (NN:[1913..1924] glutathione)))))))
+      (CC:[1925..1928] and)
+      (VP (VBD:[1929..1937] appeared)
+        (S
+          (NP-SBJ-1 (-NONE-:[1937..1937] *))
+          (VP (TO:[1938..1940] to)
+            (VP (VB:[1941..1943] be)
+              (VP (VBN:[1944..1951] related)
+                (PP-CLR (TO:[1952..1954] to)
+                  (NP
+                    (NP (NN:[1955..1965] expression) (NN:[1966..1971] level))
+                    (PP (IN:[1972..1974] of)
+                      (NP (NN:[1976..1981] CYP3A)))))))))))
+    (.:[1981..1982] .)))
+
+;sentence 14 Span:1983..2124
+;These results suggest that delavirdine can inactivate CYP3A and has the 
+;potential to slow the metabolism of coadministered CYP3A substrates.
+;[2010..2021]:substance:"delavirdine"
+;[2037..2042]:cyp450:"CYP3A"
+;[2107..2112]:cyp450:"CYP3A"
+;[2113..2123]:substance:"substrates"
+(SENT
+  (S
+    (NP-SBJ (DT:[1983..1988] These) (NNS:[1989..1996] results))
+    (VP (VBP:[1997..2004] suggest)
+      (SBAR (IN:[2005..2009] that)
+        (S
+          (NP-SBJ (NN:[2010..2021] delavirdine))
+          (VP
+            (VP (MD:[2022..2025] can)
+              (VP (VB:[2026..2036] inactivate)
+                (NP (NN:[2037..2042] CYP3A))))
+            (CC:[2043..2046] and)
+            (VP (VBZ:[2047..2050] has)
+              (NP (DT:[2051..2054] the) (NN:[2056..2065] potential)
+                (S
+                  (NP-SBJ (-NONE-:[2065..2065] *))
+                  (VP (TO:[2066..2068] to)
+                    (VP (VB:[2069..2073] slow)
+                      (NP
+                        (NP (DT:[2074..2077] the) (NN:[2078..2088] metabolism))
+                        (PP (IN:[2089..2091] of)
+                          (NP (VBN:[2092..2106] coadministered)
+                              (NN:[2107..2112] CYP3A)
+                              (NNS:[2113..2123] substrates)))))))))))))
+    (.:[2123..2124] .)))
+
+;section 15 Span:2128..2172
+;PMID: 9765359 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2128..2132] PMID) (::[2132..2133] :) (CD:[2134..2141] 9765359)
+        (NN:[2142..2143] -LSB-) (NNP:[2143..2149] PubMed) (::[2150..2151] -)
+        (NN:[2152..2159] indexed) (IN:[2160..2163] for)
+        (NNP:[2164..2172] MEDLINE-RSB-)))

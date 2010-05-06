@@ -1,0 +1,434 @@
+;PMID: 1683380
+;source_file_812.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:46..160] = [t:46..160]
+;2)section:[e:164..206] = [t:164..206]
+;3)section:[e:210..276] = [t:210..276]
+;4)sentence:[e:280..573] = [t:280..573]
+;5)sentence:[e:574..750] = [t:574..750]
+;6)sentence:[e:751..834] = [t:751..834]
+;7)sentence:[e:835..1006] = [t:835..1006]
+;8)sentence:[e:1007..1188] = [t:1007..1188]
+;9)sentence:[e:1189..1311] = [t:1189..1311]
+;10)sentence:[e:1312..1465] = [t:1312..1465]
+;11)sentence:[e:1466..1624] = [t:1466..1624]
+;12)section:[e:1628..1672] = [t:1628..1672]
+
+;section 0 Span:0..41
+;J Formos Med Assoc  1991 Sep;90(9):825-30
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Formos) (NNP:[9..12] Med)
+        (NNP:[13..18] Assoc) (CD:[20..24] 1991) (CC:[25..32] Sep;90-LRB-)
+        (CD:[32..33] 9) (-RRB-:[33..34] -RRB-) (CD:[34..38] :825) (::[38..39] -)
+        (CD:[39..41] 30)))
+
+;sentence 1 Span:46..160
+;Mutation analysis of the ras gene in myelocytic leukemia by polymerase chain 
+;reaction and oligonucleotide probes.
+;[71..74]:gene-rna:"ras"
+;[83..102]:malignancy:"myelocytic leukemia"
+;[106..116]:gene-protein:"polymerase"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..54] Mutation) (NN:[55..63] analysis))
+    (PP (IN:[64..66] of)
+      (NP (DT:[67..70] the) (NN:[71..74] ras) (NN:[75..79] gene)))
+    (PP (IN:[80..82] in)
+      (NP (JJ:[83..93] myelocytic) (NN:[94..102] leukemia)))
+    (PP (IN:[103..105] by)
+      (NP
+        (NP (NN:[106..116] polymerase) (NN:[117..122] chain)
+            (NN:[124..132] reaction))
+        (CC:[133..136] and)
+        (NP (NN:[137..152] oligonucleotide) (NNS:[153..159] probes))))
+    (.:[159..160] .)))
+
+;section 2 Span:164..206
+;Liu TC, Lin SF, Chen TP, Liu HW, Chang JG.
+(SEC
+  (FRAG (NNP:[164..167] Liu) (NNP:[168..170] TC) (,:[170..171] ,)
+        (NNP:[172..175] Lin) (NNP:[176..178] SF) (,:[178..179] ,)
+        (NNP:[180..184] Chen) (NNP:[185..187] TP) (,:[187..188] ,)
+        (NNP:[189..192] Liu) (NNP:[193..195] HW) (,:[195..196] ,)
+        (NNP:[197..202] Chang) (NNP:[203..206] JG.)))
+
+;section 3 Span:210..276
+;Department of Internal Medicine, Kaohsiung Medical College, R.O.C.
+(SEC
+  (FRAG (NNP:[210..220] Department) (IN:[221..223] of) (NNP:[224..232] Internal)
+        (NNP:[233..241] Medicine) (,:[241..242] ,) (NNP:[243..252] Kaohsiung)
+        (NNP:[253..260] Medical) (NNP:[261..268] College) (,:[268..269] ,)
+        (NNP:[270..276] R.O.C.)))
+
+;sentence 4 Span:280..573
+;Twenty-nine patients with acute myelocytic leukemia (AML) and 14 patients
+;with  Philadelphia chromosome-positive chronic myelocytic leukemia (CML) were
+;analyzed  to detect the presence of mutations in their ras genes by the
+;polymerase chain  reaction and oligonucleotide hybridization methods.
+;[306..331]:malignancy:"acute myelocytic leukemia"
+;[333..336]:malignancy:"AML"
+;[360..420]:malignancy:"Philadelphia chromosome-positive chronic myelocytic
+;leukemia"
+;[360..383]:variation-event:"Philadelphia chromosome"
+;[422..425]:malignancy:"CML"
+;[487..490]:gene-rna:"ras"
+;[504..514]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (CD:[280..291] Twenty-nine) (NNS:[292..300] patients))
+        (PP (IN:[301..305] with)
+          (NP
+            (NP (JJ:[306..311] acute) (JJ:[312..322] myelocytic)
+                (NN:[323..331] leukemia))
+            (NP (-LRB-:[332..333] -LRB-) (NN:[333..336] AML)
+                (-RRB-:[336..337] -RRB-)))))
+      (CC:[338..341] and)
+      (NP
+        (NP (CD:[342..344] 14) (NNS:[345..353] patients))
+        (PP (IN:[354..358] with)
+          (NP
+            (ADJP
+              (NML (NNP:[360..372] Philadelphia) (NN:[373..383] chromosome))
+              (HYPH:[383..384] -) (JJ:[384..392] positive))
+            (NML
+              (NML (JJ:[393..400] chronic) (JJ:[401..411] myelocytic)
+                   (NN:[412..420] leukemia))
+              (NML (-LRB-:[421..422] -LRB-) (NN:[422..425] CML)
+                   (-RRB-:[425..426] -RRB-)))))))
+    (VP (VBD:[427..431] were)
+      (VP (VBN:[432..440] analyzed)
+        (NP-1 (-NONE-:[440..440] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[440..440] *))
+          (VP (TO:[442..444] to)
+            (VP (VB:[445..451] detect)
+              (NP
+                (NP (DT:[452..455] the) (NN:[456..464] presence))
+                (PP (IN:[465..467] of)
+                  (NP (NNS:[468..477] mutations))))
+              (PP-LOC (IN:[478..480] in)
+                (NP (PRP$:[481..486] their) (NN:[487..490] ras)
+                    (NNS:[491..496] genes)))
+              (PP (IN:[497..499] by)
+                (NP (DT:[500..503] the)
+                  (NML
+                    (NML
+                      (NML (NN:[504..514] polymerase) (NN:[515..520] chain)
+                           (NN:[522..530] reaction))
+                      (NML-2 (-NONE-:[530..530] *P*)))
+                    (CC:[531..534] and)
+                    (NML
+                      (NML (NN:[535..550] oligonucleotide)
+                           (NN:[551..564] hybridization))
+                      (NML-2 (NNS:[565..572] methods)))))))))))
+    (.:[572..573] .)))
+
+;sentence 5 Span:574..750
+;Deoxyribonucleic acid (DNA)  isolated from blood or bone marrow samples was
+;screened for mutations in codons  12, 13 and 61 of N-ras and in codons 12 and
+;61 of K-ras and H-ras.
+;[663..672]:variation-event:"mutations"
+;[676..686]:variation-location:"codons  12"
+;[676..682]...[695..697]:variation-location:"codons"..."61"
+;[676..682]...[688..690]:variation-location:"codons"..."13"
+;[701..706]:gene-rna:"N-ras"
+;[714..723]:variation-location:"codons 12"
+;[714..720]...[728..730]:variation-location:"codons"..."61"
+;[734..739]:gene-rna:"K-ras"
+;[744..749]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (NP (JJ:[574..590] Deoxyribonucleic) (NN:[591..595] acid))
+        (NP (-LRB-:[596..597] -LRB-) (NN:[597..600] DNA)
+            (-RRB-:[600..601] -RRB-)))
+      (VP (VBN:[603..611] isolated)
+        (NP (-NONE-:[611..611] *))
+        (PP (IN:[612..616] from)
+          (NP
+            (NP (NN:[617..622] blood)
+              (NML-1 (-NONE-:[622..622] *P*)))
+            (CC:[623..625] or)
+            (NP
+              (NML (NN:[626..630] bone) (NN:[631..637] marrow))
+              (NML-1 (NNS:[638..645] samples)))))))
+    (VP (VBD:[646..649] was)
+      (VP (VBN:[650..658] screened)
+        (NP-2 (-NONE-:[658..658] *))
+        (PP (IN:[659..662] for)
+          (NP
+            (NP (NNS:[663..672] mutations))
+            (PP-LOC
+              (PP (IN:[673..675] in)
+                (NP
+                  (NP
+                    (NP
+                      (NML-3 (NNS:[676..682] codons))
+                      (CD:[684..686] 12))
+                    (,:[686..687] ,)
+                    (NP
+                      (NML-3 (-NONE-:[687..687] *P*))
+                      (CD:[688..690] 13))
+                    (CC:[691..694] and)
+                    (NP
+                      (NML-3 (-NONE-:[694..694] *P*))
+                      (CD:[695..697] 61)))
+                  (PP (IN:[698..700] of)
+                    (NP (NN:[701..706] N-ras)))))
+              (CC:[707..710] and)
+              (PP (IN:[711..713] in)
+                (NP
+                  (NP
+                    (NP
+                      (NML-4 (NNS:[714..720] codons))
+                      (CD:[721..723] 12))
+                    (CC:[724..727] and)
+                    (NP
+                      (NML-4 (-NONE-:[727..727] *P*))
+                      (CD:[728..730] 61)))
+                  (PP (IN:[731..733] of)
+                    (NP (NN:[734..739] K-ras) (CC:[740..743] and)
+                        (NN:[744..749] H-ras))))))))))
+    (.:[749..750] .)))
+
+;sentence 6 Span:751..834
+;We detected  mutations of the ras gene in 7 patients with AML (7/29), all in
+;N-ras.
+;[764..773]:variation-event:"mutations"
+;[781..784]:gene-rna:"ras"
+;[809..812]:malignancy:"AML"
+;[828..833]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[751..753] We))
+    (VP (VBD:[754..762] detected)
+      (NP
+        (NP (NNS:[764..773] mutations))
+        (PP (IN:[774..776] of)
+          (NP (DT:[777..780] the) (NN:[781..784] ras) (NN:[785..789] gene))))
+      (PP-LOC (IN:[790..792] in)
+        (NP
+          (NP (CD:[793..794] 7) (NNS:[795..803] patients))
+          (PP (IN:[804..808] with)
+            (NP (NN:[809..812] AML)))
+          (PRN (-LRB-:[813..814] -LRB-)
+            (NP
+              (NP (CD:[814..815] 7))
+              (PP (SYM:[815..816] /)
+                (NP (CD:[816..818] 29))))
+            (-RRB-:[818..819] -RRB-))))
+      (,:[819..820] ,)
+      (PP-LOC
+        (ADVP (DT:[821..824] all))
+        (IN:[825..827] in)
+        (NP (NN:[828..833] N-ras))))
+    (.:[833..834] .)))
+
+;sentence 7 Span:835..1006
+;The  mutations were 3 GGT- greater than GAT transitions in codon 12, 1 GGT-
+;greater  than TGT transition in codon 13, and 3 CAA- greater than AAA
+;transitions in  codon 61.
+;[840..849]:variation-event:"mutations"
+;[857..860]:variation-state-original:"GGT"
+;[875..878]:variation-state-altered:"GAT"
+;[879..890]:variation-type:"transitions"
+;[894..902]:variation-location:"codon 12"
+;[906..909]:variation-state-original:"GGT"
+;[925..928]:variation-state-altered:"TGT"
+;[929..939]:variation-type:"transition"
+;[943..951]:variation-location:"codon 13"
+;[959..962]:variation-state-original:"CAA"
+;[977..980]:variation-state-altered:"AAA"
+;[981..992]:variation-type:"transitions"
+;[997..1005]:variation-location:"codon 61"
+(SENT
+  (S
+    (NP-SBJ (DT:[835..838] The) (NNS:[840..849] mutations))
+    (VP (VBD:[850..854] were)
+      (NP-PRD
+        (NP
+          (NP (CD:[855..856] 3)
+            (NML
+              (NML (NN:[857..860] GGT))
+              (PP (SYM:[860..874] --SP-greater-SP-than)
+                (NP (NN:[875..878] GAT))))
+            (NNS:[879..890] transitions))
+          (PP-LOC (IN:[891..893] in)
+            (NP (NN:[894..899] codon) (CD:[900..902] 12))))
+        (,:[902..903] ,)
+        (NP
+          (NP (CD:[904..905] 1)
+            (NML
+              (NML (NN:[906..909] GGT))
+              (PP (SYM:[909..924] --SP-greaterthan)
+                (NP (NN:[925..928] TGT))))
+            (NN:[929..939] transition))
+          (PP-LOC (IN:[940..942] in)
+            (NP (NN:[943..948] codon) (CD:[949..951] 13))))
+        (,:[951..952] ,) (CC:[953..956] and)
+        (NP
+          (NP (CD:[957..958] 3)
+            (NML
+              (NML (NN:[959..962] CAA))
+              (PP (SYM:[962..976] --SP-greater-SP-than)
+                (NP (NN:[977..980] AAA))))
+            (NNS:[981..992] transitions))
+          (PP-LOC (IN:[993..995] in)
+            (NP (NN:[997..1002] codon) (CD:[1003..1005] 61))))))
+    (.:[1005..1006] .)))
+
+;sentence 8 Span:1007..1188
+;No correlation has been observed between French-American-British  subtypes
+;and the incidence of N-ras mutation, nor between cytogenetic changes  and the
+;incidence of N-ras mutation.
+;[1103..1108]:gene-rna:"N-ras"
+;[1173..1178]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1007..1009] No) (NN:[1010..1021] correlation))
+    (VP (VBZ:[1022..1025] has)
+      (VP (VBN:[1026..1030] been)
+        (VP (VBN:[1031..1039] observed)
+          (NP-1 (-NONE-:[1039..1039] *))
+          (PP
+            (PP (IN:[1040..1047] between)
+              (NP
+                (NP
+                  (ADJP (JJ:[1048..1054] French) (HYPH:[1054..1055] -)
+                        (JJ:[1055..1063] American) (HYPH:[1063..1064] -)
+                        (JJ:[1064..1071] British))
+                  (NNS:[1073..1081] subtypes))
+                (CC:[1082..1085] and)
+                (NP
+                  (NP (DT:[1086..1089] the) (NN:[1090..1099] incidence))
+                  (PP (IN:[1100..1102] of)
+                    (NP (NN:[1103..1108] N-ras) (NN:[1109..1117] mutation))))))
+            (,:[1117..1118] ,) (CC:[1119..1122] nor)
+            (PP (IN:[1123..1130] between)
+              (NP
+                (NP (JJ:[1131..1142] cytogenetic) (NNS:[1143..1150] changes))
+                (CC:[1152..1155] and)
+                (NP
+                  (NP (DT:[1156..1159] the) (NN:[1160..1169] incidence))
+                  (PP (IN:[1170..1172] of)
+                    (NP (NN:[1173..1178] N-ras) (NN:[1179..1187] mutation))))))))))
+    (.:[1187..1188] .)))
+
+;sentence 9 Span:1189..1311
+;All ras gene mutations detected by the  oligonucleotide hybridization method
+;were further confirmed by direct  sequencing.
+;[1193..1196]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1189..1192] All) (NN:[1193..1196] ras) (NN:[1197..1201] gene)
+          (NNS:[1202..1211] mutations))
+      (VP (VBN:[1212..1220] detected)
+        (NP (-NONE-:[1220..1220] *))
+        (PP-MNR (IN:[1221..1223] by)
+          (NP (DT:[1224..1227] the)
+            (NML (NN:[1229..1244] oligonucleotide)
+                 (NN:[1245..1258] hybridization))
+            (NN:[1259..1265] method)))))
+    (VP (VBD:[1266..1270] were)
+      (ADVP (RB:[1271..1278] further))
+      (VP (VBN:[1279..1288] confirmed)
+        (NP-1 (-NONE-:[1288..1288] *))
+        (PP-MNR (IN:[1289..1291] by)
+          (NP (JJ:[1292..1298] direct) (NN:[1300..1310] sequencing)))))
+    (.:[1310..1311] .)))
+
+;sentence 10 Span:1312..1465
+;No mutations were detected in ras genes in samples from the 14  Philadelphia
+;chromosome-positive CML patients (12 in chronic phase, 2 in blastic  phase).
+;[1376..1412]:malignancy:"Philadelphia chromosome-positive CML"
+;[1376..1399]:variation-event:"Philadelphia chromosome"
+;[1429..1442]:malignancy:"chronic phase"
+;[1449..1463]:malignancy:"blastic  phase"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1312..1314] No) (NNS:[1315..1324] mutations))
+    (VP (VBD:[1325..1329] were)
+      (VP (VBN:[1330..1338] detected)
+        (NP-1 (-NONE-:[1338..1338] *))
+        (PP-LOC (IN:[1339..1341] in)
+          (NP (NN:[1342..1345] ras) (NNS:[1346..1351] genes)))
+        (PP-LOC (IN:[1352..1354] in)
+          (NP
+            (NP (NNS:[1355..1362] samples))
+            (PP (IN:[1363..1367] from)
+              (NP (DT:[1368..1371] the) (CD:[1372..1374] 14)
+                
+                (ADJP
+                  (NML (NNP:[1376..1388] Philadelphia)
+                       (NN:[1389..1399] chromosome))
+                  (HYPH:[1399..1400] -) (JJ:[1400..1408] positive))
+                (NN:[1409..1412] CML)
+                (NNS:[1413..1421] patients)
+                (PRN (-LRB-:[1422..1423] -LRB-)
+                  (NP
+                    (NP
+                      (NP (CD:[1423..1425] 12))
+                      (PP (IN:[1426..1428] in)
+                        (NP (JJ:[1429..1436] chronic) (NN:[1437..1442] phase))))
+                    (,:[1442..1443] ,)
+                    (NP
+                      (NP (CD:[1444..1445] 2))
+                      (PP (IN:[1446..1448] in)
+                        (NP (JJ:[1449..1456] blastic) (NN:[1458..1463] phase)))))
+                  (-RRB-:[1463..1464] -RRB-))))))))
+    (.:[1464..1465] .)))
+
+;sentence 11 Span:1466..1624
+;These findings are in line with previous results indicating that ras  gene
+;mutations in the codons tested play only a small role in the tumorigenesis 
+;of CML.
+;[1531..1534]:gene-rna:"ras"
+;[1620..1623]:malignancy:"CML"
+(SENT
+  (S
+    (NP-SBJ (DT:[1466..1471] These) (NNS:[1472..1480] findings))
+    (VP (VBP:[1481..1484] are)
+      (PP-PRD (IN:[1485..1487] in)
+        (NP
+          (NP (NN:[1488..1492] line))
+          (PP (IN:[1493..1497] with)
+            (NP
+              (NP (JJ:[1498..1506] previous) (NNS:[1507..1514] results))
+              (VP (VBG:[1515..1525] indicating)
+                (SBAR (IN:[1526..1530] that)
+                  (S
+                    (NP-SBJ
+                      (NP (NN:[1531..1534] ras) (NN:[1536..1540] gene)
+                          (NNS:[1541..1550] mutations))
+                      (PP-LOC (IN:[1551..1553] in)
+                        (NP
+                          (NP (DT:[1554..1557] the) (NNS:[1558..1564] codons))
+                          (VP (VBN:[1565..1571] tested)
+                            (NP (-NONE-:[1571..1571] *))))))
+                    (VP (VBP:[1572..1576] play)
+                      (NP
+                        (ADVP (RB:[1577..1581] only))
+                        (DT:[1582..1583] a) (JJ:[1584..1589] small)
+                         (NN:[1590..1594] role))
+                      (PP (IN:[1595..1597] in)
+                        (NP
+                          (NP (DT:[1598..1601] the)
+                              (NN:[1602..1615] tumorigenesis))
+                          (PP (IN:[1617..1619] of)
+                            (NP (NN:[1620..1623] CML))))))))))))))
+    (.:[1623..1624] .)))
+
+;section 12 Span:1628..1672
+;PMID: 1683380 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1628..1632] PMID) (::[1632..1633] :) (CD:[1634..1641] 1683380)
+        (NN:[1642..1643] -LSB-) (NNP:[1643..1649] PubMed) (::[1650..1651] -)
+        (NN:[1652..1659] indexed) (IN:[1660..1663] for)
+        (NNP:[1664..1672] MEDLINE-RSB-)))

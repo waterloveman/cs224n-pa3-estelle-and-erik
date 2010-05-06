@@ -1,0 +1,273 @@
+;PMID: 10366032
+;source_file_2864.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..32] = [t:0..32]
+;1)sentence:[e:38..209] = [t:38..209]
+;2)section:[e:213..252] = [t:213..252]
+;3)section:[e:256..329] = [t:256..329]
+;4)sentence:[e:333..409] = [t:333..409]
+;5)sentence:[e:410..795] = [t:410..795]
+;6)sentence:[e:796..905] = [t:796..905]
+;7)sentence:[e:906..1003] = [t:906..1003]
+;8)sentence:[e:1004..1167] = [t:1004..1167]
+;9)sentence:[e:1168..1323] = [t:1168..1323]
+;10)section:[e:1327..1372] = [t:1327..1372]
+
+;section 0 Span:0..32
+;Neuroscience.  1999;91(2):771-6.
+(SEC
+  (FRAG (NNP:[0..12] Neuroscience) (.:[12..13] .) (CD:[15..23] 1999;91-LRB-)
+        (CD:[23..24] 2) (-RRB-:[24..25] -RRB-) (CD:[25..29] :771)
+        (CD:[29..32] -6.)))
+
+;sentence 1 Span:38..209
+;Cyclic AMP responsive element binding protein phosphorylation and DNA binding
+;is  decreased by chronic lithium but not valproate treatment of SH-SY5Y 
+;neuroblastoma cells.
+;[38..83]:gene-protein:"Cyclic AMP responsive element binding protein"
+;[189..208]:malignancy-type:"neuroblastoma cells"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP
+        (NML (JJ:[38..44] Cyclic) (NN:[45..48] AMP) (JJ:[49..59] responsive)
+             (NN:[60..67] element) (NN:[68..75] binding) (NN:[76..83] protein))
+        (NN:[84..99] phosphorylation))
+      (CC:[100..103] and)
+      (NP (NN:[104..107] DNA) (NN:[108..115] binding)))
+    (VP (VBZ:[116..118] is)
+      (VP (VBN:[120..129] decreased)
+        (NP-1 (-NONE-:[129..129] *))
+        (PP (IN:[130..132] by)
+          (NP-LGS
+            (NP (JJ:[133..140] chronic) (NN:[141..148] lithium))
+            (CONJP (CC:[149..152] but) (RB:[153..156] not))
+            (NP
+              (NP (NN:[157..166] valproate) (NN:[167..176] treatment))
+              (PP (IN:[177..179] of)
+                (NP (NN:[180..187] SH-SY5Y)
+                   (NN:[189..202] neuroblastoma) (NNS:[203..208] cells))))))))
+    (.:[208..209] .)))
+
+;section 2 Span:213..252
+;Wang JF, Asghari V, Rockel C, Young LT.
+(SEC
+  (FRAG (NNP:[213..217] Wang) (NNP:[218..220] JF) (,:[220..221] ,)
+        (NNP:[222..229] Asghari) (NNP:[230..231] V) (,:[231..232] ,)
+        (NNP:[233..239] Rockel) (NNP:[240..241] C) (,:[241..242] ,)
+        (NNP:[243..248] Young) (NNP:[249..252] LT.)))
+
+;section 3 Span:256..329
+;Department of Psychiatry, McMaster University, Hamilton, Ontario, Canada.
+(SEC
+  (FRAG (NNP:[256..266] Department) (IN:[267..269] of)
+        (NNP:[270..280] Psychiatry) (,:[280..281] ,) (NNP:[282..290] McMaster)
+        (NNP:[291..301] University) (,:[301..302] ,) (NNP:[303..311] Hamilton)
+        (,:[311..312] ,) (NNP:[313..320] Ontario) (,:[320..321] ,)
+        (NNP:[322..328] Canada) (.:[328..329] .)))
+
+;sentence 4 Span:333..409
+;Mood stabilizing drugs decrease central nervous system cyclic AMP signaling.
+(SENT
+  (S
+    (NP-SBJ (NN:[333..337] Mood) (VBG:[338..349] stabilizing)
+            (NNS:[350..355] drugs))
+    (VP (VBP:[356..364] decrease)
+      (NP
+        (NML (JJ:[365..372] central) (JJ:[373..380] nervous)
+             (NN:[381..387] system))
+        (JJ:[388..394] cyclic) (NN:[395..398] AMP) (NN:[399..408] signaling)))
+    (.:[408..409] .)))
+
+;sentence 5 Span:410..795
+;We  report here that chronic, but not acute treatment with lithium chloride
+;in human  neuroblastoma SH-SY5Y cells, inhibits phosphorylation of cyclic AMP
+;responsive  element binding protein and cyclic AMP responsive element DNA
+;binding induced by  the adenylyl cyclase activator forskolin, but has no
+;effect on constitutive  expression of cyclic AMP responsive element binding
+;protein.
+;[496..509]:malignancy-type:"neuroblastoma"
+;[553..599]:gene-protein:"cyclic AMP responsive  element binding protein"
+;[662..678]:gene-protein:"adenylyl cyclase"
+;[749..794]:gene-protein:"cyclic AMP responsive element binding protein"
+(SENT
+  (S
+    (NP-SBJ (PRP:[410..412] We))
+    (VP (VBP:[414..420] report)
+      (ADVP (RB:[421..425] here))
+      (SBAR (IN:[426..430] that)
+        (S
+          (NP-SBJ
+            (NP
+              (NP (JJ:[431..438] chronic)
+                (NML-1 (-NONE-:[438..438] *P*)))
+              (,:[438..439] ,)
+              (CONJP (CC:[440..443] but) (RB:[444..447] not))
+              (NP (JJ:[448..453] acute)
+                (NML-1 (NN:[454..463] treatment))))
+            (PP (IN:[464..468] with)
+              (NP (NN:[469..476] lithium) (NN:[477..485] chloride)))
+            (PP (IN:[486..488] in)
+              (NP (JJ:[489..494] human) (NN:[496..509] neuroblastoma)
+                  (NN:[510..517] SH-SY5Y) (NNS:[518..523] cells))))
+          (,:[523..524] ,)
+          (VP
+            (VP (VBZ:[525..533] inhibits)
+              (NP
+                (NP
+                  (NP (NN:[534..549] phosphorylation))
+                  (PP (IN:[550..552] of)
+                    (NP (JJ:[553..559] cyclic) (NN:[560..563] AMP)
+                        (JJ:[564..574] responsive) (NN:[576..583] element)
+                        (NN:[584..591] binding) (NN:[592..599] protein))))
+                (CC:[600..603] and)
+                (NP
+                  (NP
+                    (NML (JJ:[604..610] cyclic) (NN:[611..614] AMP)
+                         (JJ:[615..625] responsive) (NN:[626..633] element))
+                    (NN:[634..637] DNA) (NN:[638..645] binding))
+                  (VP (VBN:[646..653] induced)
+                    (NP (-NONE-:[653..653] *))
+                    (PP (IN:[654..656] by)
+                      (NP-LGS
+                        (NP (DT:[658..661] the)
+                          (NML (NN:[662..670] adenylyl) (NN:[671..678] cyclase))
+                          (NN:[679..688] activator))
+                        (NP (NN:[689..698] forskolin))))))))
+            (,:[698..699] ,) (CC:[700..703] but)
+            (VP (VBZ:[704..707] has)
+              (NP
+                (NP (DT:[708..710] no) (NN:[711..717] effect))
+                (PP (IN:[718..720] on)
+                  (NP
+                    (NP (JJ:[721..733] constitutive) (NN:[735..745] expression))
+                    (PP (IN:[746..748] of)
+                      (NP (JJ:[749..755] cyclic) (NN:[756..759] AMP)
+                          (JJ:[760..770] responsive) (NN:[771..778] element)
+                          (NN:[779..786] binding) (NN:[787..794] protein)))))))))))
+    (.:[794..795] .)))
+
+;sentence 6 Span:796..905
+;These results are  consistent with an effect of lithium to blunt the cyclic
+;AMP signal transduction  pathway.
+(SENT
+  (S
+    (NP-SBJ (DT:[796..801] These) (NNS:[802..809] results))
+    (VP (VBP:[810..813] are)
+      (ADJP-PRD (JJ:[815..825] consistent)
+        (PP (IN:[826..830] with)
+          (NP
+            (NP
+              (NP (DT:[831..833] an) (NN:[834..840] effect))
+              (PP (IN:[841..843] of)
+                (NP (NN:[844..851] lithium))))
+            (SBAR
+              (WHNP-1 (-NONE-:[851..851] 0))
+              (S
+                (NP-SBJ-1 (-NONE-:[851..851] *T*))
+                (VP (TO:[852..854] to)
+                  (VP (VB:[855..860] blunt)
+                    (NP (DT:[861..864] the) (JJ:[865..871] cyclic)
+                        (NN:[872..875] AMP) (NN:[876..882] signal)
+                        (NN:[883..895] transduction) (NN:[897..904] pathway))))))))))
+    (.:[904..905] .)))
+
+;sentence 7 Span:906..1003
+;Such an effect is not shared by the other commonly prescribed mood 
+;stabilizer, sodium valproate.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (PDT:[906..910] Such))
+      (PP (DT:[911..913] an)
+        (NP (NN:[914..920] effect))))
+    (VP (VBZ:[921..923] is) (RB:[924..927] not)
+      (VP (VBN:[928..934] shared)
+        (NP-1 (-NONE-:[934..934] *))
+        (PP (IN:[935..937] by)
+          (NP-LGS
+            (NP (DT:[938..941] the) (JJ:[942..947] other)
+              (ADJP (RB:[948..956] commonly) (VBN:[957..967] prescribed))
+              (NN:[968..972] mood) (NN:[974..984] stabilizer))
+            (,:[984..985] ,)
+            (NP (NN:[986..992] sodium) (NN:[993..1002] valproate))))))
+    (.:[1002..1003] .)))
+
+;sentence 8 Span:1004..1167
+;Our results suggest that cyclic AMP responsive  element binding protein
+;regulated gene expression may be relevant to the  long-term prophylactic
+;effect of lithium.
+;[1029..1075]:gene-protein:"cyclic AMP responsive  element binding protein"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1004..1007] Our) (NNS:[1008..1015] results))
+    (VP (VBP:[1016..1023] suggest)
+      (SBAR (IN:[1024..1028] that)
+        (S
+          (NP-SBJ
+            (ADJP
+              (NML (JJ:[1029..1035] cyclic) (NN:[1036..1039] AMP)
+                   (JJ:[1040..1050] responsive) (NN:[1052..1059] element)
+                   (NN:[1060..1067] binding) (NN:[1068..1075] protein))
+              (VBN:[1076..1085] regulated))
+            (NN:[1086..1090] gene) (NN:[1091..1101] expression))
+          (VP (MD:[1102..1105] may)
+            (VP (VB:[1106..1108] be)
+              (ADJP-PRD (JJ:[1109..1117] relevant)
+                (PP (TO:[1118..1120] to)
+                  (NP
+                    (NP (DT:[1121..1124] the)
+                      (NML (JJ:[1126..1130] long) (HYPH:[1130..1131] -)
+                           (NN:[1131..1135] term))
+                      (JJ:[1136..1148] prophylactic) (NN:[1149..1155] effect))
+                    (PP (IN:[1156..1158] of)
+                      (NP (NN:[1159..1166] lithium)))))))))))
+    (.:[1166..1167] .)))
+
+;sentence 9 Span:1168..1323
+;Furthermore, sodium valproate, which  is also effective in bipolar disorder,
+;would appear to act on other pathways to  bring about its therapeutic
+;effects.
+(SENT
+  (S
+    (ADVP (RB:[1168..1179] Furthermore))
+    (,:[1179..1180] ,)
+    (NP-SBJ-2
+      (NP (NN:[1181..1187] sodium) (NN:[1188..1197] valproate))
+      (,:[1197..1198] ,)
+      (SBAR
+        (WHNP-1 (WDT:[1199..1204] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[1204..1204] *T*))
+          (VP (VBZ:[1206..1208] is)
+            (ADVP (RB:[1209..1213] also))
+            (ADJP-PRD (JJ:[1214..1223] effective)
+              (PP (IN:[1224..1226] in)
+                (NP (JJ:[1227..1234] bipolar) (NN:[1235..1243] disorder))))))))
+    (,:[1243..1244] ,)
+    (VP (MD:[1245..1250] would)
+      (VP (VB:[1251..1257] appear)
+        (S
+          (NP-SBJ-2 (-NONE-:[1257..1257] *))
+          (VP (TO:[1258..1260] to)
+            (VP (VB:[1261..1264] act)
+              (PP (IN:[1265..1267] on)
+                (NP (JJ:[1268..1273] other) (NNS:[1274..1282] pathways)))
+              (S-ADV
+                (NP-SBJ (-NONE-:[1282..1282] *))
+                (VP (TO:[1283..1285] to)
+                  (VP (VB:[1287..1292] bring)
+                    (PRT (RP:[1293..1298] about))
+                    (NP (PRP$:[1299..1302] its) (JJ:[1303..1314] therapeutic)
+                        (NNS:[1315..1322] effects))))))))))
+    (.:[1322..1323] .)))
+
+;section 10 Span:1327..1372
+;PMID: 10366032 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1327..1331] PMID) (::[1331..1332] :) (CD:[1333..1341] 10366032)
+        (NN:[1342..1343] -LSB-) (NNP:[1343..1349] PubMed) (::[1350..1351] -)
+        (NN:[1352..1359] indexed) (IN:[1360..1363] for)
+        (NNP:[1364..1372] MEDLINE-RSB-)))

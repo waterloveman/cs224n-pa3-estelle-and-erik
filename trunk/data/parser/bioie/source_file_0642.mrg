@@ -1,0 +1,494 @@
+;PMID: 9794700
+;source_file_629.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..99] = [t:46..99]
+;2)section:[e:103..180] = [t:103..180]
+;3)section:[e:184..300] = [t:184..300]
+;4)sentence:[e:304..533] = [t:304..533]
+;5)sentence:[e:534..730] = [t:534..730]
+;6)sentence:[e:731..861] = [t:731..861]
+;7)sentence:[e:862..994] = [t:862..994]
+;8)sentence:[e:995..1096] = [t:995..1096]
+;9)sentence:[e:1097..1275] = [t:1097..1275]
+;10)sentence:[e:1276..1580] = [t:1276..1580]
+;11)sentence:[e:1581..1671] = [t:1581..1671]
+;12)sentence:[e:1672..1825] = [t:1672..1825]
+;13)sentence:[e:1826..1891] = [t:1826..1891]
+;14)section:[e:1895..1939] = [t:1895..1939]
+
+;section 0 Span:0..40
+;J Lab Clin Med. 1998 Oct;132(4):294-302.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..5] Lab) (NNP:[6..10] Clin) (NNP:[11..14] Med)
+        (.:[14..15] .) (CD:[16..20] 1998) (JJ:[21..27] Oct;13) (CD:[27..28] 2)
+        (NN:[28..29] -LRB-) (NN:[29..30] 4) (NN:[30..31] -RRB-) (,:[31..32] :)
+        (CD:[32..34] 29) (CD:[34..39] 4-302) (.:[39..40] .)))
+
+;sentence 1 Span:46..99
+;Metabolism of ethanol by rat pancreatic acinar cells.
+;[60..67]:substance:"ethanol"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..56] Metabolism))
+    (PP (IN:[57..59] of)
+      (NP (NN:[60..67] ethanol)))
+    (PP (IN:[68..70] by)
+      (NP (NN:[71..74] rat) (JJ:[75..85] pancreatic) (JJ:[86..92] acinar)
+          (NNS:[93..98] cells)))
+    (.:[98..99] .)))
+
+;section 2 Span:103..180
+;Haber PS, Apte MV, Applegate TL, Norton ID, Korsten MA, Pirola RC, Wilson
+;JS.
+(SEC
+  (FRAG (IN:[103..108] Haber) (NNP:[109..111] PS) (,:[111..112] ,)
+        (NNP:[113..117] Apte) (NNP:[118..120] MV) (,:[120..121] ,)
+        (NNP:[122..131] Applegate) (NNP:[132..134] TL) (,:[134..135] ,)
+        (NNP:[136..142] Norton) (NNP:[143..145] ID) (,:[145..146] ,)
+        (NNP:[147..154] Korsten) (NNP:[155..157] MA) (,:[157..158] ,)
+        (NNP:[159..165] Pirola) (NNP:[166..168] RC) (,:[168..169] ,)
+        (NNP:[170..176] Wilson) (NNP:[177..180] JS.)))
+
+;section 3 Span:184..300
+;Department of Gastroenterology, Prince of Wales Hospital, and the University
+;of  New South Wales, Sydney, Australia.
+(SEC
+  (FRAG (NNP:[184..194] Department) (IN:[195..197] of)
+        (NNP:[198..214] Gastroenterology) (,:[214..215] ,)
+        (NNP:[216..222] Prince) (IN:[223..225] of) (NNP:[226..231] Wales)
+        (NNP:[232..240] Hospital) (,:[240..241] ,) (VBZ:[242..245] and)
+        (DT:[246..249] the) (NNP:[250..260] University) (IN:[261..263] of)
+        (NNP:[265..268] New) (NNP:[269..274] South) (NNP:[275..280] Wales)
+        (,:[280..281] ,) (NNP:[282..288] Sydney) (,:[288..289] ,)
+        (NNP:[290..299] Australia) (.:[299..300] .)))
+
+;sentence 4 Span:304..533
+;It has been postulated that ethanol-induced pancreatic injury may be mediated
+;by  the oxidation of ethanol within the pancreas with secondary toxic
+;metabolic  changes, but there is little evidence of pancreatic ethanol
+;oxidation.
+;[332..339]:substance:"ethanol"
+;[403..410]:substance:"ethanol"
+;[515..522]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[304..306] It))
+      (SBAR-1 (-NONE-:[306..306] *EXP*)))
+    (VP (VBZ:[307..310] has)
+      (VP (VBN:[311..315] been)
+        (VP (VBN:[316..326] postulated)
+          (NP-2 (-NONE-:[326..326] *))
+          (SBAR-1 (IN:[327..331] that)
+            (S
+              (S
+                (NP-SBJ-3
+                  (NML (NN:[332..339] ethanol) (HYPH:[339..340] -)
+                       (VBN:[340..347] induced))
+                  (JJ:[348..358] pancreatic) (NN:[359..365] injury))
+                (VP (MD:[366..369] may)
+                  (VP (VB:[370..372] be)
+                    (VP (VBN:[373..381] mediated)
+                      (NP-3 (-NONE-:[381..381] *))
+                      (PP (IN:[382..384] by)
+                        (NP-LGS
+                          (NP (DT:[386..389] the) (NN:[390..399] oxidation))
+                          (PP (IN:[400..402] of)
+                            (NP
+                              (NP (NN:[403..410] ethanol))
+                              (PP-LOC (IN:[411..417] within)
+                                (NP (DT:[418..421] the) (NN:[422..430] pancreas)))))))
+                      (PP (IN:[431..435] with)
+                        (NP (JJ:[436..445] secondary) (JJ:[446..451] toxic)
+                            (JJ:[452..461] metabolic) (NNS:[463..470] changes)))))))
+              (,:[470..471] ,) (CC:[472..475] but)
+              (S
+                (NP-SBJ (EX:[476..481] there))
+                (VP (VBZ:[482..484] is)
+                  (NP-PRD
+                    (NP (JJ:[485..491] little) (NN:[492..500] evidence))
+                    (PP (IN:[501..503] of)
+                      (NP (JJ:[504..514] pancreatic) (NN:[515..522] ethanol)
+                          (NN:[523..532] oxidation)))))))))))
+    (.:[532..533] .)))
+
+;sentence 5 Span:534..730
+;The aims  of this study were to determine whether pancreatic acinar cells
+;metabolize  significant amounts of ethanol and, if so, to compare their rate
+;of ethanol  oxidation to that of hepatocytes.
+;[643..650]:substance:"ethanol"
+;[688..695]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[534..537] The) (NNS:[538..542] aims))
+      (PP (IN:[544..546] of)
+        (NP (DT:[547..551] this) (NN:[552..557] study))))
+    (VP (VBD:[558..562] were)
+      (S-PRP-PRD
+        (S
+          (NP-SBJ (-NONE-:[562..562] *))
+          (VP (TO:[563..565] to)
+            (VP (VB:[566..575] determine)
+              (SBAR (IN:[576..583] whether)
+                (S
+                  (NP-SBJ (JJ:[584..594] pancreatic) (JJ:[595..601] acinar)
+                          (NNS:[602..607] cells))
+                  (VP (VBP:[608..618] metabolize)
+                    (NP
+                      (NP (JJ:[620..631] significant) (NNS:[632..639] amounts))
+                      (PP (IN:[640..642] of)
+                        (NP (NN:[643..650] ethanol))))))))))
+        (CC:[651..654] and) (,:[654..655] ,)
+        (S
+          (SBAR-ADV (IN:[656..658] if)
+            (FRAG
+              (ADVP (RB:[659..661] so))))
+          (,:[661..662] ,)
+          (NP-SBJ (-NONE-:[662..662] *))
+          (VP (TO:[663..665] to)
+            (VP (VB:[666..673] compare)
+              (NP
+                (NP (DT:[674..679] their) (NN:[680..684] rate))
+                (PP (IN:[685..687] of)
+                  (NP (NN:[688..695] ethanol) (NN:[697..706] oxidation))))
+              (PP-CLR (TO:[707..709] to)
+                (NP
+                  (NP (DT:[710..714] that))
+                  (PP (IN:[715..717] of)
+                    (NP (NNS:[718..729] hepatocytes))))))))))
+    (.:[729..730] .)))
+
+;sentence 6 Span:731..861
+;Cultured rat pancreatic acinar cells and  hepatocytes were incubated with 5
+;to 50 mmol/L carbon 14-labeled ethanol (25  dpm/nmol).
+;[805..812]:quantitative-value:"5 to 50"
+;[813..819]:quantitative-units:"mmol/L"
+;[820..829]:substance:"carbon 14"
+;[838..845]:substance:"ethanol"
+;[847..849]:quantitative-value:"25"
+;[851..859]:quantitative-units:"dpm/nmol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NML-2 (JJ:[731..739] Cultured) (NN:[740..743] rat)
+               (JJ:[744..754] pancreatic) (JJ:[755..761] acinar))
+        (NNS:[762..767] cells))
+      (CC:[768..771] and)
+      (NP
+        (NML-2 (-NONE-:[771..771] *P*))
+        (NNS:[773..784] hepatocytes)))
+    (VP (VBD:[785..789] were)
+      (VP (VBN:[790..799] incubated)
+        (NP-1 (-NONE-:[799..799] *))
+        (PP (IN:[800..804] with)
+          (NP
+            (NML
+              (NML
+                (QP (CD:[805..806] 5) (TO:[807..809] to) (CD:[810..812] 50))
+                (NN:[813..817] mmol))
+              (PP (SYM:[817..818] /)
+                (NP (NN:[818..819] L))))
+            (ADJP
+              (NML (NN:[820..826] carbon) (CD:[827..829] 14))
+              (HYPH:[829..830] -) (VBN:[830..837] labeled))
+            (NN:[838..845] ethanol)
+            (PRN (-LRB-:[846..847] -LRB-)
+              (NP
+                (NP (CD:[847..849] 25) (NN:[851..854] dpm))
+                (PP (SYM:[854..855] /)
+                  (NP (NN:[855..859] nmol))))
+              (-RRB-:[859..860] -RRB-))))))
+    (.:[860..861] .)))
+
+;sentence 7 Span:862..994
+;Ethanol oxidation was calculated from the production of 14C-labeled  acetate
+;that was isolated by Dowex ion-exchange chromatography.
+;[862..869]:substance:"Ethanol"
+;[918..921]:substance:"14C"
+;[931..938]:substance:"acetate"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[862..869] Ethanol) (NN:[870..879] oxidation))
+    (VP (VBD:[880..883] was)
+      (VP (VBN:[884..894] calculated)
+        (NP-2 (-NONE-:[894..894] *))
+        (PP (IN:[895..899] from)
+          (NP
+            (NP (DT:[900..903] the) (NN:[904..914] production))
+            (PP (IN:[915..917] of)
+              (NP
+                (NP
+                  (ADJP (NN:[918..921] 14C) (HYPH:[921..922] -)
+                        (VBN:[922..929] labeled))
+                  (NN:[931..938] acetate))
+                (SBAR
+                  (WHNP-1 (WDT:[939..943] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[943..943] *T*))
+                    (VP (VBD:[944..947] was)
+                      (VP (VBN:[948..956] isolated)
+                        (NP-1 (-NONE-:[956..956] *))
+                        (PP-MNR (IN:[957..959] by)
+                          (NP (NNP:[960..965] Dowex)
+                            (NML (NN:[966..969] ion) (HYPH:[969..970] -)
+                                 (NN:[970..978] exchange))
+                            (NN:[979..993] chromatography)))))))))))))
+    (.:[993..994] .)))
+
+;sentence 8 Span:995..1096
+;Ethanol  oxidation by pancreatic acinar cells was demonstrable at all ethanol
+; concentrations tested.
+;[995..1002]:substance:"Ethanol"
+;[1065..1072]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[995..1002] Ethanol) (NN:[1004..1013] oxidation))
+      (PP (IN:[1014..1016] by)
+        (NP (JJ:[1017..1027] pancreatic) (JJ:[1028..1034] acinar)
+            (NNS:[1035..1040] cells))))
+    (VP (VBD:[1041..1044] was)
+      (ADJP-PRD (JJ:[1045..1057] demonstrable))
+      (PP-LOC (IN:[1058..1060] at)
+        (NP
+          (NP (DT:[1061..1064] all) (NN:[1065..1072] ethanol)
+              (NNS:[1074..1088] concentrations))
+          (VP (VBN:[1089..1095] tested)
+            (NP (-NONE-:[1095..1095] *))))))
+    (.:[1095..1096] .)))
+
+;sentence 9 Span:1097..1275
+;At an intoxicating ethanol concentration (50 mmol/L),  14C-labeled acetate
+;production (227+/-20 nmol/10(6) cells/h) approached that of  hepatocytes
+;(337+/-61 nmol/10(6) cells/h).
+;[1116..1123]:substance:"ethanol"
+;[1139..1141]:quantitative-value:"50"
+;[1142..1148]:quantitative-units:"mmol/L"
+;[1152..1155]:substance:"14C"
+;[1164..1171]:substance:"acetate"
+;[1184..1192]:quantitative-value:"227+/-20"
+;[1193..1211]:quantitative-units:"nmol/10(6) cells/h"
+;[1246..1254]:quantitative-value:"337+/-61"
+;[1255..1273]:quantitative-units:"nmol/10(6) cells/h"
+(SENT
+  (S
+    (PP (IN:[1097..1099] At)
+      (NP (DT:[1100..1102] an) (VBG:[1103..1115] intoxicating)
+          (NN:[1116..1123] ethanol) (NN:[1124..1137] concentration)
+        (PRN (-LRB-:[1138..1139] -LRB-)
+          (NP
+            (NP (CD:[1139..1141] 50) (NN:[1142..1146] mmol))
+            (PP (SYM:[1146..1147] /)
+              (NP (NN:[1147..1148] L))))
+          (-RRB-:[1148..1149] -RRB-))))
+    (,:[1149..1150] ,)
+    (NP-SBJ
+      (NP
+        (NML
+          (ADJP (NN:[1152..1155] 14C) (HYPH:[1155..1156] -)
+                (VBN:[1156..1163] labeled))
+          (NN:[1164..1171] acetate))
+        (NN:[1172..1182] production))
+      (PRN (-LRB-:[1183..1184] -LRB-)
+        (NP
+          (NP
+            (QP (CD:[1184..1187] 227) (SYM:[1187..1190] +/-)
+                (CD:[1190..1192] 20))
+            (NN:[1193..1197] nmol))
+          (PP (SYM:[1197..1198] /)
+            (NP (CD:[1198..1203] 10-LRB-6-RRB-) (NNS:[1204..1209] cells)))
+          (PP (SYM:[1209..1210] /)
+            (NP (NN:[1210..1211] h))))
+        (-RRB-:[1211..1212] -RRB-)))
+    (VP (VBD:[1213..1223] approached)
+      (NP
+        (NP (DT:[1224..1228] that))
+        (PP (IN:[1229..1231] of)
+          (NP (NNS:[1233..1244] hepatocytes)))
+        (PRN (-LRB-:[1245..1246] -LRB-)
+          (NP
+            (NP
+              (QP (CD:[1246..1249] 337) (SYM:[1249..1252] +/-)
+                  (CD:[1252..1254] 61))
+              (NN:[1255..1259] nmol))
+            (PP (SYM:[1259..1260] /)
+              (NP (CD:[1260..1265] 10-LRB-6-RRB-) (NNS:[1266..1271] cells)))
+            (PP (SYM:[1271..1272] /)
+              (NP (NN:[1272..1273] h))))
+          (-RRB-:[1273..1274] -RRB-))))
+    (.:[1274..1275] .)))
+
+;sentence 10 Span:1276..1580
+;Phenanthroline (an inhibitor of  classes I through III isoenzymes of alcohol
+;dehydrogenase (ADH)) inhibited  pancreatic ethanol oxidation by 90%, but
+;4-methylpyrazole (a class I and II ADH  inhibitor), carbon monoxide (a
+;cytochrome P450 inhibitor), and sodium azide (a  catalase inhibitor) had no
+;effect.
+;[1276..1290]:substance:"Phenanthroline"
+;[1295..1304]:substance:"inhibitor"
+;[1309..1341]:substance:"classes I through III isoenzymes"
+;[1345..1366]:substance:"alcohol dehydrogenase"
+;[1368..1371]:substance:"ADH"
+;[1396..1403]:substance:"ethanol"
+;[1417..1420]:quantitative-value:"90%"
+;[1426..1442]:substance:"4-methylpyrazole"
+;[1446..1453]...[1461..1464]:substance:"class I"..."ADH"
+;[1446..1451]...[1458..1464]:substance:"class"..."II ADH"
+;[1466..1475]:substance:"inhibitor"
+;[1478..1493]:substance:"carbon monoxide"
+;[1497..1512]:cyp450:"cytochrome P450"
+;[1513..1522]:substance:"inhibitor"
+;[1529..1541]:substance:"sodium azide"
+;[1546..1554]:substance:"catalase"
+;[1555..1564]:substance:"inhibitor"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1276..1290] Phenanthroline)
+        (PRN (-LRB-:[1291..1292] -LRB-)
+          (NP
+            (NP (DT:[1292..1294] an) (NN:[1295..1304] inhibitor))
+            (PP (IN:[1305..1307] of)
+              (NP
+                (NP
+                  (NML
+                    (NML-1 (NNS:[1309..1316] classes))
+                    (CD:[1317..1318] I)
+                    (PP (IN:[1319..1326] through)
+                      (NP
+                        (NML-1 (-NONE-:[1326..1326] *P*))
+                        (CD:[1327..1330] III))))
+                  (NNS:[1331..1341] isoenzymes))
+                (PP (IN:[1342..1344] of)
+                  (NP
+                    (NP (NN:[1345..1352] alcohol)
+                        (NN:[1353..1366] dehydrogenase))
+                    (NP (-LRB-:[1367..1368] -LRB-) (NN:[1368..1371] ADH)
+                        (-RRB-:[1371..1372] -RRB-)))))))
+          (-RRB-:[1372..1373] -RRB-)))
+      (VP (VBD:[1374..1383] inhibited)
+        (NP (JJ:[1385..1395] pancreatic) (NN:[1396..1403] ethanol)
+            (NN:[1404..1413] oxidation))
+        (PP-EXT (IN:[1414..1416] by)
+          (NP (CD:[1417..1419] 90) (NN:[1419..1420] %)))))
+    (,:[1420..1421] ,) (CC:[1422..1425] but)
+    (S
+      (NP-SBJ
+        (NP (NN:[1426..1442] 4-methylpyrazole)
+          (PRN (-LRB-:[1443..1444] -LRB-)
+            (NP (DT:[1444..1445] a)
+              (NML
+                (NML
+                  (NML
+                    (NML-2 (NN:[1446..1451] class))
+                    (CD:[1452..1453] I))
+                  (NML-3 (-NONE-:[1453..1453] *P*)))
+                (CC:[1454..1457] and)
+                (NML
+                  (NML
+                    (NML-2 (-NONE-:[1457..1457] *P*))
+                    (CD:[1458..1460] II))
+                  (NML-3 (NN:[1461..1464] ADH) (NN:[1466..1475] inhibitor)))))
+            (-RRB-:[1475..1476] -RRB-)))
+        (,:[1476..1477] ,)
+        (NP
+           (NN:[1478..1484] carbon) (NN:[1485..1493] monoxide)
+          (PRN (-LRB-:[1494..1495] -LRB-)
+            (NP (DT:[1495..1496] a)
+              (NML (NN:[1497..1507] cytochrome) (NN:[1508..1512] P450))
+              (NN:[1513..1522] inhibitor))
+            (-RRB-:[1522..1523] -RRB-)))
+        (,:[1523..1524] ,) (CC:[1525..1528] and)
+        (NP
+           (NN:[1529..1535] sodium) (NN:[1536..1541] azide)
+          (PRN (-LRB-:[1542..1543] -LRB-)
+            (NP (DT:[1543..1544] a) (NN:[1546..1554] catalase)
+                (NN:[1555..1564] inhibitor))
+            (-RRB-:[1564..1565] -RRB-))))
+      (VP (VBD:[1566..1569] had)
+        (NP (DT:[1570..1572] no) (NN:[1573..1579] effect))))
+    (.:[1579..1580] .)))
+
+;sentence 11 Span:1581..1671
+;This study has shown that pancreatic acinar  cells oxidize significant
+;amounts of ethanol.
+;[1663..1670]:substance:"ethanol"
+(SENT
+  (S
+    (NP-SBJ (DT:[1581..1585] This) (NN:[1586..1591] study))
+    (VP (VBZ:[1592..1595] has)
+      (VP (VBN:[1596..1601] shown)
+        (SBAR (IN:[1602..1606] that)
+          (S
+            (NP-SBJ (JJ:[1607..1617] pancreatic) (JJ:[1618..1624] acinar)
+                    (NNS:[1626..1631] cells))
+            (VP (VBP:[1632..1639] oxidize)
+              (NP
+                (NP (JJ:[1640..1651] significant) (NNS:[1652..1659] amounts))
+                (PP (IN:[1660..1662] of)
+                  (NP (NN:[1663..1670] ethanol)))))))))
+    (.:[1670..1671] .)))
+
+;sentence 12 Span:1672..1825
+;At intoxicating concentrations of  ethanol, pancreatic acinar cell ethanol
+;oxidation may have the potential to  contribute to pancreatic cellular
+;injury.
+;[1707..1714]:substance:"ethanol"
+;[1739..1746]:substance:"ethanol"
+(SENT
+  (S
+    (PP (IN:[1672..1674] At)
+      (NP
+        (NP (VBG:[1675..1687] intoxicating) (NNS:[1688..1702] concentrations))
+        (PP (IN:[1703..1705] of)
+          (NP (NN:[1707..1714] ethanol)))))
+    (,:[1714..1715] ,)
+    (NP-SBJ
+      (NML (JJ:[1716..1726] pancreatic) (JJ:[1727..1733] acinar)
+           (NN:[1734..1738] cell))
+      (NN:[1739..1746] ethanol) (NN:[1747..1756] oxidation))
+    (VP (MD:[1757..1760] may)
+      (VP (VB:[1761..1765] have)
+        (NP (DT:[1766..1769] the) (NN:[1770..1779] potential)
+          (S
+            (NP-SBJ (-NONE-:[1779..1779] *))
+            (VP (TO:[1780..1782] to)
+              (VP (VB:[1784..1794] contribute)
+                (PP-CLR (TO:[1795..1797] to)
+                  (NP (JJ:[1798..1808] pancreatic) (JJ:[1809..1817] cellular)
+                      (NN:[1818..1824] injury)))))))))
+    (.:[1824..1825] .)))
+
+;sentence 13 Span:1826..1891
+;The mechanism appears to involve the  class III isoenzyme of ADH.
+;[1864..1883]:substance:"class III isoenzyme"
+;[1887..1890]:substance:"ADH"
+(SENT
+  (S
+    (NP-SBJ (DT:[1826..1829] The) (NN:[1830..1839] mechanism))
+    (VP (VBZ:[1840..1847] appears)
+      (S
+        (NP-SBJ (-NONE-:[1847..1847] *))
+        (VP (TO:[1848..1850] to)
+          (VP (VB:[1851..1858] involve)
+            (NP
+              (NP (DT:[1859..1862] the)
+                
+                (NML (NN:[1864..1869] class) (CD:[1870..1873] III))
+                (NN:[1874..1883] isoenzyme))
+              (PP (IN:[1884..1886] of)
+                (NP (NN:[1887..1890] ADH))))))))
+    (.:[1890..1891] .)))
+
+;section 14 Span:1895..1939
+;PMID: 9794700 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1895..1899] PMID) (::[1899..1900] :) (CD:[1901..1908] 9794700)
+        (NN:[1909..1910] -LSB-) (NNP:[1910..1916] PubMed) (::[1917..1918] -)
+        (NN:[1919..1926] indexed) (IN:[1927..1930] for)
+        (NNP:[1931..1939] MEDLINE-RSB-)))

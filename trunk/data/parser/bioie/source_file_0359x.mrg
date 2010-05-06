@@ -1,0 +1,495 @@
+;PMID: 11150913
+;source_file_672.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..25] = [t:0..25]
+;1)sentence:[e:30..105] = [t:30..105]
+;2)section:[e:109..195] = [t:109..195]
+;3)section:[e:199..294] = [t:199..294]
+;4)sentence:[e:298..308] = [t:298..308]
+;5)sentence:[e:309..508] = [t:309..508]
+;6)sentence:[e:509..612] = [t:509..612]
+;7)sentence:[e:613..621] = [t:613..621]
+;8)sentence:[e:622..830] = [t:622..830]
+;9)sentence:[e:831..839] = [t:831..839]
+;10)sentence:[e:840..952] = [t:840..952]
+;11)sentence:[e:953..1052] = [t:953..1052]
+;12)sentence:[e:1053..1152] = [t:1053..1152]
+;13)sentence:[e:1153..1261] = [t:1153..1261]
+;14)sentence:[e:1262..1419] = [t:1262..1419]
+;15)sentence:[e:1420..1580] = [t:1420..1580]
+;16)sentence:[e:1581..1593] = [t:1581..1593]
+;17)sentence:[e:1594..1704] = [t:1594..1704]
+;18)sentence:[e:1705..1883] = [t:1705..1883]
+;19)section:[e:1887..1932] = [t:1887..1932]
+
+;section 0 Span:0..25
+;Oncology  2001;60(1):81-7
+(SEC
+  (FRAG (NNP:[0..8] Oncology) (::[10..18] 2001;60-LRB-) (CD:[18..19] 1)
+        (-RRB-:[19..20] -RRB-) (CD:[20..23] :81) (::[23..24] -) (CD:[24..25] 7)))
+
+;sentence 1 Span:30..105
+;Genetic changes in contralateral bronchioloalveolar carcinomas of the lung.
+;[49..104]:malignancy:"contralateral bronchioloalveolar carcinomas of the
+;lung"
+(SENT
+  (NP-HLN
+    (NP (JJ:[30..37] Genetic) (NNS:[38..45] changes))
+    (PP (IN:[46..48] in)
+      (NP
+        (NP (JJ:[49..62] contralateral) (JJ:[63..81] bronchioloalveolar)
+            (NNS:[82..92] carcinomas))
+        (PP (IN:[93..95] of)
+          (NP (DT:[96..99] the) (NN:[100..104] lung)))))
+    (.:[104..105] .)))
+
+;section 2 Span:109..195
+;Shin SW, Breathnach OS, Linnoila RI, Williams J, Gillespie JW, Kelley MJ, 
+;Johnson BE.
+(SEC
+  (FRAG (NNP:[109..113] Shin) (NNP:[114..116] SW) (,:[116..117] ,)
+        (NNP:[118..128] Breathnach) (NNP:[129..131] OS) (,:[131..132] ,)
+        (NNP:[133..141] Linnoila) (NNP:[142..144] RI) (,:[144..145] ,)
+        (NNP:[146..154] Williams) (NNP:[155..157] J,) (NNP:[158..167] Gillespie)
+        (NNP:[168..170] JW) (,:[170..171] ,) (NNP:[172..178] Kelley)
+        (NNP:[179..181] MJ) (,:[181..182] ,) (NNP:[184..191] Johnson)
+        (NNP:[192..195] BE.)))
+
+;section 3 Span:199..294
+;Medicine Branch, Division of Clinical Sciences, National Cancer Institute, 
+;Bethesda, Md., USA.
+(SEC
+  (FRAG (NNP:[199..207] Medicine) (NNP:[208..214] Branch) (NNP:[214..215] ,)
+        (NNP:[216..224] Division) (IN:[225..227] of) (NNP:[228..236] Clinical)
+        (NNP:[237..245] Sciences) (,:[245..246] ,) (NNP:[247..255] National)
+        (NNP:[256..262] Cancer) (NNP:[263..272] Institute) (,:[272..273] ,)
+        (NNP:[275..283] Bethesda) (,:[283..284] ,) (NNP:[285..288] Md.)
+        (,:[288..289] ,) (NNP:[290..293] USA) (.:[293..294] .)))
+
+;sentence 4 Span:298..308
+;OBJECTIVE:
+(SENT
+  (NP (NN:[298..307] OBJECTIVE) (::[307..308] :)))
+
+;sentence 5 Span:309..508
+;The pattern of metastases and recurrence of bronchioloalveolar  carcinoma
+;(BAC) differs from adenocarcinoma of the lung, occurring more  frequently
+;within the lung without extrapulmonary involvement.
+;[324..334]...[350..382]:malignancy:"metastases"..."of bronchioloalveolar 
+;carcinoma"
+;[384..387]:malignancy:"BAC"
+;[402..428]:malignancy:"adenocarcinoma of the lung"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[309..312] The) (NN:[313..320] pattern))
+      (PP (IN:[321..323] of)
+        (NP
+          (NP (NNS:[324..334] metastases) (CC:[335..338] and)
+              (NN:[339..349] recurrence))
+          (PP (IN:[350..352] of)
+            (NP
+              (NP (JJ:[353..371] bronchioloalveolar) (NN:[373..382] carcinoma))
+              (NP (-LRB-:[383..384] -LRB-) (NN:[384..387] BAC)
+                  (-RRB-:[387..388] -RRB-)))))))
+    (VP (VBZ:[389..396] differs)
+      (PP (IN:[397..401] from)
+        (NP
+          (NP (NN:[402..416] adenocarcinoma))
+          (PP (IN:[417..419] of)
+            (NP (DT:[420..423] the) (NN:[424..428] lung)))))
+      (,:[428..429] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[429..429] *))
+        (VP (VBG:[430..439] occurring)
+          (ADVP-TMP (RBR:[440..444] more) (RB:[446..456] frequently))
+          (PP (IN:[457..463] within)
+            (NP (DT:[464..467] the) (NN:[468..472] lung)))
+          (PP (IN:[473..480] without)
+            (NP (JJ:[481..495] extrapulmonary) (NN:[496..507] involvement))))))
+    (.:[507..508] .)))
+
+;sentence 6 Span:509..612
+;Analyses of  genetic differences of contralateral BACs may help to explain
+;these clinical  differences.
+;[545..563]:malignancy:"contralateral BACs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[509..517] Analyses))
+      (PP (IN:[518..520] of)
+        (NP
+          (NP (JJ:[522..529] genetic) (NNS:[530..541] differences))
+          (PP (IN:[542..544] of)
+            (NP (JJ:[545..558] contralateral) (NNS:[559..563] BACs))))))
+    (VP (MD:[564..567] may)
+      (VP (VB:[568..572] help)
+        (S
+          (NP-SBJ (-NONE-:[572..572] *))
+          (VP (TO:[573..575] to)
+            (VP (VB:[576..583] explain)
+              (NP (DT:[584..589] these) (JJ:[590..598] clinical)
+                  (NNS:[600..611] differences)))))))
+    (.:[611..612] .)))
+
+;sentence 7 Span:613..621
+;METHODS:
+(SENT
+  (NP (NNS:[613..620] METHODS) (::[620..621] :)))
+
+;sentence 8 Span:622..830
+;We compared paired tumors from 5 patients with  contralateral metachronous
+;BACs for loss of heterozygosity (LOH) on 6  chromosomal arms (2q, 3p, 5q, 9p,
+;13q and 17p) and mutational analysis of p53  and K-ras.
+;[634..647]:malignancy:"paired tumors"
+;[670..701]:malignancy:"contralateral metachronous BACs"
+;[706..728]:variation-type:"loss of heterozygosity"
+;[730..733]:variation-type:"LOH"
+;[759..761]:variation-location:"2q"
+;[763..765]:variation-location:"3p"
+;[767..769]:variation-location:"5q"
+;[771..773]:variation-location:"9p"
+;[775..778]:variation-location:"13q"
+;[783..786]:variation-location:"17p"
+;[815..818]:gene-rna:"p53"
+;[824..829]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[622..624] We))
+    (VP (VBD:[625..633] compared)
+      (NP
+        (NP (VBN:[634..640] paired) (NNS:[641..647] tumors))
+        (PP (IN:[648..652] from)
+          (NP
+            (NP (CD:[653..654] 5) (NNS:[655..663] patients))
+            (PP (IN:[664..668] with)
+              (NP (JJ:[670..683] contralateral) (JJ:[684..696] metachronous)
+                  (NNS:[697..701] BACs))))))
+      (PP (IN:[702..705] for)
+        (NP
+          (NP
+            (NP
+              (NP
+                (NP (NN:[706..710] loss))
+                (PP (IN:[711..713] of)
+                  (NP (NN:[714..728] heterozygosity))))
+              (NP (-LRB-:[729..730] -LRB-) (NN:[730..733] LOH)
+                  (-RRB-:[733..734] -RRB-)))
+            (PP (IN:[735..737] on)
+              (NP (CD:[738..739] 6) (JJ:[741..752] chromosomal)
+                  (NNS:[753..757] arms)
+                (PRN (-LRB-:[758..759] -LRB-)
+                  (NP (NN:[759..761] 2q) (,:[761..762] ,) (NN:[763..765] 3p)
+                      (,:[765..766] ,) (NN:[767..769] 5q) (,:[769..770] ,)
+                      (NN:[771..773] 9p) (,:[773..774] ,) (NN:[775..778] 13q)
+                      (CC:[779..782] and) (NN:[783..786] 17p))
+                  (-RRB-:[786..787] -RRB-)))))
+          (CC:[788..791] and)
+          (NP
+            (NP (JJ:[792..802] mutational) (NN:[803..811] analysis))
+            (PP (IN:[812..814] of)
+              (NP (NN:[815..818] p53) (CC:[820..823] and) (NN:[824..829] K-ras)))))))
+    (.:[829..830] .)))
+
+;sentence 9 Span:831..839
+;RESULTS:
+(SENT
+  (NP (NNS:[831..838] RESULTS) (::[838..839] :)))
+
+;sentence 10 Span:840..952
+;Two patients, patients 1 and 2, had discordant patterns of  LOH on 2 and 3 of
+;the chromosome arms, respectively.
+;[900..903]:variation-type:"LOH"
+;[907..908]...[915..937]:variation-location:"2"..."of the chromosome arms"
+;[913..937]:variation-location:"3 of the chromosome arms"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[840..843] Two) (NNS:[844..852] patients))
+      (,:[852..853] ,)
+      (NP
+        (NP
+          (NML-1 (NNS:[854..862] patients))
+          (CD:[863..864] 1))
+        (CC:[865..868] and)
+        (NP
+          (NML-1 (-NONE-:[868..868] *P*))
+          (CD:[869..870] 2))))
+    (,:[870..871] ,)
+    (VP (VBD:[872..875] had)
+      (NP
+        (NP (JJ:[876..886] discordant) (NNS:[887..895] patterns))
+        (PP (IN:[896..898] of)
+          (NP (NN:[900..903] LOH)))
+        (PP (IN:[904..906] on)
+          (NP
+            (NP (CD:[907..908] 2) (CC:[909..912] and) (CD:[913..914] 3))
+            (PP (IN:[915..917] of)
+              (NP (DT:[918..921] the) (NN:[922..932] chromosome)
+                  (NNS:[933..937] arms))))))
+      (,:[937..938] ,)
+      (ADVP (RB:[939..951] respectively)))
+    (.:[951..952] .)))
+
+;sentence 11 Span:953..1052
+;In addition, patient 2 had  a detectable K-ras mutation in his initial tumor
+;but not in his second.
+;[994..999]:gene-rna:"K-ras"
+;[1016..1029]:malignancy:"initial tumor"
+;[1045..1051]:malignancy:"second"
+(SENT
+  (S
+    (PP (IN:[953..955] In)
+      (NP (NN:[956..964] addition)))
+    (,:[964..965] ,)
+    (NP-SBJ (NN:[966..973] patient) (CD:[974..975] 2))
+    (VP
+      (VP (VBD:[976..979] had)
+        (NP (DT:[981..982] a) (JJ:[983..993] detectable) (NN:[994..999] K-ras)
+            (NN:[1000..1008] mutation))
+        (PP-LOC=1 (IN:[1009..1011] in)
+          (NP (PRP$:[1012..1015] his)
+             (JJ:[1016..1023] initial) (NN:[1024..1029] tumor))))
+      (CC:[1030..1033] but)
+      (VP (RB:[1034..1037] not)
+        (PP-LOC=1 (IN:[1038..1040] in)
+          (NP (PRP$:[1041..1044] his) (JJ:[1045..1051] second)))))
+    (.:[1051..1052] .)))
+
+;sentence 12 Span:1053..1152
+;These  results suggest that in patients 1 and 2, the contralateral tumors
+;were clonally  unrelated.
+;[1106..1126]:malignancy:"contralateral tumors"
+(SENT
+  (S
+    (NP-SBJ (DT:[1053..1058] These) (NNS:[1060..1067] results))
+    (VP (VBP:[1068..1075] suggest)
+      (SBAR (IN:[1076..1080] that)
+        (S
+          (PP-LOC (IN:[1081..1083] in)
+            (NP
+              (NP
+                (NML-1 (NNS:[1084..1092] patients))
+                (CD:[1093..1094] 1))
+              (CC:[1095..1098] and)
+              (NP
+                (NML-1 (-NONE-:[1098..1098] *P*))
+                (CD:[1099..1100] 2))))
+          (,:[1100..1101] ,)
+          (NP-SBJ (DT:[1102..1105] the)
+             (JJ:[1106..1119] contralateral) (NNS:[1120..1126] tumors))
+          (VP (VBD:[1127..1131] were)
+            (ADJP-PRD (RB:[1132..1140] clonally) (JJ:[1142..1151] unrelated))))))
+    (.:[1151..1152] .)))
+
+;sentence 13 Span:1153..1261
+;Patient 3 had no mutations in the K-ras or p53 gene and no LOH on any  of the
+;5 informative chromosome arms.
+;[1187..1192]:gene-rna:"K-ras"
+;[1196..1199]:gene-rna:"p53"
+;[1212..1215]:variation-type:"LOH"
+(SENT
+  (S
+    (NP-SBJ (NN:[1153..1160] Patient) (CD:[1161..1162] 3))
+    (VP (VBD:[1163..1166] had)
+      (NP
+        (NP
+          (NP (DT:[1167..1169] no) (NNS:[1170..1179] mutations))
+          (PP (IN:[1180..1182] in)
+            (NP (DT:[1183..1186] the)
+              (NML
+                (NML (NN:[1187..1192] K-ras)
+                  (NML-1 (-NONE-:[1192..1192] *P*)))
+                (CC:[1193..1195] or)
+                (NML (NN:[1196..1199] p53)
+                  (NML-1 (NN:[1200..1204] gene)))))))
+        (CC:[1205..1208] and)
+        (NP
+          (NP (DT:[1209..1211] no) (NN:[1212..1215] LOH))
+          (PP (IN:[1216..1218] on)
+            (NP
+              (NP (DT:[1219..1222] any))
+              (PP (IN:[1224..1226] of)
+                (NP (DT:[1227..1230] the) (CD:[1231..1232] 5)
+                    (JJ:[1233..1244] informative) (NN:[1245..1255] chromosome)
+                    (NNS:[1256..1260] arms))))))))
+    (.:[1260..1261] .)))
+
+;sentence 14 Span:1262..1419
+;Patient 4 had LOH of 9p and mutated K-ras  in both the first and the second
+;tumor, with a mutation in the p53 gene in the  first but not in the second
+;tumor.
+;[1276..1279]:variation-type:"LOH"
+;[1283..1285]:variation-location:"9p"
+;[1298..1303]:gene-rna:"K-ras"
+;[1317..1322]...[1338..1343]:malignancy:"first"..."tumor"
+;[1331..1343]:malignancy:"second tumor"
+;[1368..1371]:gene-rna:"p53"
+;[1385..1390]...[1413..1418]:malignancy:"first"..."tumor"
+;[1406..1418]:malignancy:"second tumor"
+(SENT
+  (S
+    (NP-SBJ (NN:[1262..1269] Patient) (CD:[1270..1271] 4))
+    (VP (VBD:[1272..1275] had)
+      (NP
+        (NP
+          (NP (NN:[1276..1279] LOH))
+          (PP (IN:[1280..1282] of)
+            (NP (NN:[1283..1285] 9p))))
+        (CC:[1286..1289] and)
+        (NP
+          (NP (VBN:[1290..1297] mutated) (NN:[1298..1303] K-ras))
+          (PP (IN:[1305..1307] in)
+            (NP (CC:[1308..1312] both)
+              (NP (DT:[1313..1316] the) (JJ:[1317..1322] first)
+                (NML-1 (-NONE-:[1322..1322] *P*)))
+              (CC:[1323..1326] and)
+              (NP (DT:[1327..1330] the)
+                 (JJ:[1331..1337] second)
+                (NML-1 (NN:[1338..1343] tumor)))))))
+      (,:[1343..1344] ,)
+      (PP (IN:[1345..1349] with)
+        (NP
+          (NP (DT:[1350..1351] a) (NN:[1352..1360] mutation))
+          (PP-LOC (IN:[1361..1363] in)
+            (NP (DT:[1364..1367] the) (NN:[1368..1371] p53)
+                (NN:[1372..1376] gene)))
+          (PP-LOC
+            (PP (IN:[1377..1379] in)
+              (NP (DT:[1380..1383] the) (JJ:[1385..1390] first)))
+            (CONJP (CC:[1391..1394] but) (RB:[1395..1398] not))
+            (PP (IN:[1399..1401] in)
+              (NP (DT:[1402..1405] the)
+                 (JJ:[1406..1412] second) (NN:[1413..1418] tumor)))))))
+    (.:[1418..1419] .)))
+
+;sentence 15 Span:1420..1580
+;Patient 5 had LOH of 17p and the same p53  mutations in both the first and
+;the second tumor, with a mutation of K-ras in  the first tumor but not in the
+;second.
+;[1434..1437]:variation-type:"LOH"
+;[1441..1444]:variation-location:"17p"
+;[1458..1461]:gene-rna:"p53"
+;[1485..1490]...[1506..1511]:malignancy:"first"..."tumor"
+;[1499..1511]:malignancy:"second tumor"
+;[1532..1537]:gene-rna:"K-ras"
+;[1546..1557]:malignancy:"first tumor"
+;[1573..1579]:malignancy:"second"
+(SENT
+  (S
+    (NP-SBJ (NN:[1420..1427] Patient) (CD:[1428..1429] 5))
+    (VP (VBD:[1430..1433] had)
+      (NP
+        (NP
+          (NP (NN:[1434..1437] LOH))
+          (PP (IN:[1438..1440] of)
+            (NP (NN:[1441..1444] 17p))))
+        (CC:[1445..1448] and)
+        (NP
+          (NP (DT:[1449..1452] the) (JJ:[1453..1457] same) (NN:[1458..1461] p53)
+              (NNS:[1463..1472] mutations))
+          (PP (IN:[1473..1475] in)
+            (NP (CC:[1476..1480] both)
+              (NP (DT:[1481..1484] the) (JJ:[1485..1490] first)
+                (NML-1 (-NONE-:[1490..1490] *P*)))
+              (CC:[1491..1494] and)
+              (NP (DT:[1495..1498] the)
+                 (JJ:[1499..1505] second)
+                (NML-1 (NN:[1506..1511] tumor)))))))
+      (,:[1511..1512] ,)
+      (PP (IN:[1513..1517] with)
+        (NP
+          (NP (DT:[1518..1519] a) (NN:[1520..1528] mutation))
+          (PP (IN:[1529..1531] of)
+            (NP (NN:[1532..1537] K-ras)))
+          (PP-LOC
+            (PP (IN:[1538..1540] in)
+              (NP (DT:[1542..1545] the)
+                 (JJ:[1546..1551] first) (NN:[1552..1557] tumor)))
+            (CONJP (CC:[1558..1561] but) (RB:[1562..1565] not))
+            (PP (IN:[1566..1568] in)
+              (NP (DT:[1569..1572] the) (JJ:[1573..1579] second)))))))
+    (.:[1579..1580] .)))
+
+;sentence 16 Span:1581..1593
+;CONCLUSIONS:
+(SENT
+  (NP (NNS:[1581..1592] CONCLUSIONS) (::[1592..1593] :)))
+
+;sentence 17 Span:1594..1704
+;The preponderance of  evidence suggests that in patients 3, 4 and 5, the
+;paired tumors were clonally  related.
+;[1667..1680]:malignancy:"paired tumors"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1594..1597] The) (NN:[1598..1611] preponderance))
+      (PP (IN:[1612..1614] of)
+        (NP (NN:[1616..1624] evidence))))
+    (VP (VBZ:[1625..1633] suggests)
+      (SBAR (IN:[1634..1638] that)
+        (S
+          (PP-LOC (IN:[1639..1641] in)
+            (NP
+              (NP
+                (NML-1 (NNS:[1642..1650] patients))
+                (CD:[1651..1652] 3))
+              (,:[1652..1653] ,)
+              (NP
+                (NML-1 (-NONE-:[1653..1653] *P*))
+                (CD:[1654..1655] 4))
+              (CC:[1656..1659] and)
+              (NP
+                (NML-1 (-NONE-:[1659..1659] *P*))
+                (CD:[1660..1661] 5))))
+          (,:[1661..1662] ,)
+          (NP-SBJ (DT:[1663..1666] the)
+             (VBN:[1667..1673] paired) (NNS:[1674..1680] tumors))
+          (VP (VBD:[1681..1685] were)
+            (ADJP-PRD (RB:[1686..1694] clonally) (VBN:[1696..1703] related))))))
+    (.:[1703..1704] .)))
+
+;sentence 18 Span:1705..1883
+;The different patterns of LOH and mutations in clinically similar 
+;contralateral metachronous BACs provide evidence of genetic heterogeneity in
+;the  tumors of this patient group.
+;[1731..1734]:variation-type:"LOH"
+;[1739..1748]:variation-event:"mutations"
+;[1772..1803]:malignancy:"contralateral metachronous BACs"
+;[1854..1860]:malignancy:"tumors"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1705..1708] The) (JJ:[1709..1718] different)
+          (NNS:[1719..1727] patterns))
+      (PP (IN:[1728..1730] of)
+        (NP (NN:[1731..1734] LOH) (CC:[1735..1738] and)
+            (NNS:[1739..1748] mutations)))
+      (PP-LOC (IN:[1749..1751] in)
+        (NP
+          (ADJP (RB:[1752..1762] clinically) (JJ:[1763..1770] similar))
+           (JJ:[1772..1785] contralateral) (JJ:[1786..1798] metachronous)
+           (NNS:[1799..1803] BACs))))
+    (VP (VBP:[1804..1811] provide)
+      (NP
+        (NP (NN:[1812..1820] evidence))
+        (PP (IN:[1821..1823] of)
+          (NP
+            (NP (JJ:[1824..1831] genetic) (NN:[1832..1845] heterogeneity))
+            (PP-LOC (IN:[1846..1848] in)
+              (NP
+                (NP (DT:[1849..1852] the) (NNS:[1854..1860] tumors))
+                (PP (IN:[1861..1863] of)
+                  (NP (DT:[1864..1868] this) (NN:[1869..1876] patient)
+                      (NN:[1877..1882] group)))))))))
+    (.:[1882..1883] .)))
+
+;section 19 Span:1887..1932
+;PMID: 11150913 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1887..1891] PMID) (::[1891..1892] :) (CD:[1893..1901] 11150913)
+        (NN:[1902..1903] -LSB-) (NNP:[1903..1909] PubMed) (::[1910..1911] -)
+        (NN:[1912..1919] indexed) (IN:[1920..1923] for)
+        (NNP:[1924..1932] MEDLINE-RSB-)))

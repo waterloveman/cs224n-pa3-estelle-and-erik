@@ -1,0 +1,520 @@
+;PMID: 2106520
+;source_file_651.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..170] = [t:45..170]
+;2)section:[e:174..261] = [t:174..261]
+;3)section:[e:265..382] = [t:265..382]
+;4)sentence:[e:386..553] = [t:386..553]
+;5)sentence:[e:554..767] = [t:554..767]
+;6)sentence:[e:769..1042] = [t:769..1042]
+;7)sentence:[e:1043..1199] = [t:1043..1199]
+;8)sentence:[e:1200..1393] = [t:1200..1393]
+;9)sentence:[e:1395..1578] = [t:1395..1578]
+;10)sentence:[e:1579..1791] = [t:1579..1791]
+;11)sentence:[e:1792..1913] = [t:1792..1913]
+;12)sentence:[e:1914..2392] = [t:1914..2392]
+;13)section:[e:2396..2440] = [t:2396..2439]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:2396..2440][t:2396..2439]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[2439..2440] ]
+
+;section 0 Span:0..39
+;J Biol Chem. 1990 Mar 15;265(8):4541-6.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        (CD:[13..17] 1990) (NNP:[18..21] Mar) (CD:[22..24] 15)
+        (HYPH:[24..29] ;265-LRB-) (CD:[29..30] 8) (JJ:[30..31] -RRB-)
+        (CD:[31..36] :4541) (HYPH:[36..37] -) (CD:[37..39] 6.)))
+
+;sentence 1 Span:45..170
+;Purification of cholesterol 7 alpha-hydroxylase from human and rat liver and 
+;production of inhibiting polyclonal antibodies.
+;[61..92]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[148..169]:substance:"polyclonal antibodies"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[45..57] Purification))
+      (PP (IN:[58..60] of)
+        (NP
+          (NP (NN:[61..72] cholesterol) (CD:[73..74] 7) (SYM:[75..80] alpha)
+              (HYPH:[80..81] -) (NN:[81..92] hydroxylase))
+          (PP (IN:[93..97] from)
+            (NP
+              (NP (JJ:[98..103] human)
+                (NML-1 (-NONE-:[103..103] *P*)))
+              (CC:[104..107] and)
+              (NP (NN:[108..111] rat)
+                (NML-1 (NN:[112..117] liver))))))))
+    (CC:[118..121] and)
+    (NP
+      (NP (NN:[123..133] production))
+      (PP (IN:[134..136] of)
+        (NP (VBG:[137..147] inhibiting)
+           (JJ:[148..158] polyclonal) (NNS:[159..169] antibodies))))
+    (.:[169..170] .)))
+
+;section 2 Span:174..261
+;Nguyen LB, Shefer S, Salen G, Ness G, Tanaka RD, Packin V, Thomas P, Shore V,
+; Batta A.
+(SEC
+  (FRAG (NNP:[174..180] Nguyen) (NNP:[181..183] LB) (,:[183..184] ,)
+        (NNP:[185..191] Shefer) (NNP:[192..194] S,) (NNP:[195..200] Salen)
+        (NNP:[201..202] G) (,:[202..203] ,) (NNP:[204..208] Ness)
+        (NNP:[209..210] G) (,:[210..211] ,) (NNP:[212..218] Tanaka)
+        (NNP:[219..221] RD) (,:[221..222] ,) (NNP:[223..229] Packin)
+        (NNP:[230..231] V) (,:[231..232] ,) (NNP:[233..239] Thomas)
+        (NNP:[240..241] P) (,:[241..242] ,) (NNP:[243..248] Shore)
+        (NNP:[249..250] V) (,:[250..251] ,) (NNP:[253..258] Batta)
+        (NN:[259..261] A.)))
+
+;section 3 Span:265..382
+;Department of Medicine, University of Medicine and Dentistry of New Jersey,
+;New  Jersey Medical School, Newark 07103.
+(SEC
+  (FRAG (NNP:[265..275] Department) (IN:[276..278] of) (NNP:[279..287] Medicine)
+        (,:[287..288] ,) (NNP:[289..299] University) (IN:[300..302] of)
+        (NNP:[303..311] Medicine) (CC:[312..315] and) (DT:[316..325] Dentistry)
+        (IN:[326..328] of) (NNP:[329..332] New) (NNP:[333..339] Jersey)
+        (,:[339..340] ,) (NNP:[341..344] New) (NNP:[346..352] Jersey)
+        (NNP:[353..360] Medical) (NNP:[361..367] School) (,:[367..368] ,)
+        (NNP:[369..375] Newark) (CD:[376..381] 07103) (.:[381..382] .)))
+
+;sentence 4 Span:386..553
+;Cholesterol 7 alpha-hydroxylase, the cytochrome P-450-dependent and 
+;rate-controlling enzyme of bile acid synthesis, was purified from rat and
+;human  liver microsomes.
+;[386..417]:cyp450:"Cholesterol 7 alpha-hydroxylase"
+;[423..439]:cyp450:"cytochrome P-450"
+;[472..478]:substance:"enzyme"
+;[482..491]:substance:"bile acid"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[386..397] Cholesterol) (CD:[398..399] 7) (SYM:[400..405] alpha)
+          (HYPH:[405..406] -) (NN:[406..417] hydroxylase))
+      (,:[417..418] ,)
+      (NP
+        (NP (DT:[419..422] the)
+          (ADJP
+            (ADJP
+              (NML (NN:[423..433] cytochrome) (NN:[434..439] P-450))
+              (HYPH:[439..440] -) (JJ:[440..449] dependent))
+            (CC:[450..453] and)
+            (ADJP (NN:[455..459] rate) (HYPH:[459..460] -)
+                  (VBG:[460..471] controlling)))
+          (NN:[472..478] enzyme))
+        (PP (IN:[479..481] of)
+          (NP
+             (NN:[482..486] bile) (NN:[487..491] acid)
+            (NN:[492..501] synthesis)))))
+    (,:[501..502] ,)
+    (VP (VBD:[503..506] was)
+      (VP (VBN:[507..515] purified)
+        (NP-2 (-NONE-:[515..515] *))
+        (PP (IN:[516..520] from)
+          (NP
+            (NP (NN:[521..524] rat)
+              (NML-1 (-NONE-:[524..524] *P*)))
+            (CC:[525..528] and)
+            (NP (JJ:[529..534] human)
+              (NML-1 (NN:[536..541] liver) (NNS:[542..552] microsomes)))))))
+    (.:[552..553] .)))
+
+;sentence 5 Span:554..767
+;The purified fractions were assayed in a reconstituted system  containing
+;[4-14C]cholesterol, and cholesterol 7 alpha-hydroxylase activities in  these
+;fractions increased 500-600-fold relative to whole microsomes.
+;[628..646]:substance:"[4-14C]cholesterol"
+;[652..683]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[725..737]:quantitative-value:"500-600-fold"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[554..557] The) (VBN:[558..566] purified)
+                (NNS:[567..576] fractions))
+      (VP (VBD:[577..581] were)
+        (VP (VBN:[582..589] assayed)
+          (NP-1 (-NONE-:[589..589] *))
+          (PP (IN:[590..592] in)
+            (NP
+              (NP (DT:[593..594] a) (VBN:[595..608] reconstituted)
+                  (NN:[609..615] system))
+              (VP (VBG:[617..627] containing)
+                (NP (NN:[628..646] -LSB-4-14C-RSB-cholesterol))))))))
+    (,:[646..647] ,) (CC:[648..651] and)
+    (S
+      (NP-SBJ
+        (NP
+          (NML (NN:[652..663] cholesterol) (CD:[664..665] 7)
+               (SYM:[666..671] alpha) (HYPH:[671..672] -)
+               (NN:[672..683] hydroxylase))
+          (NNS:[684..694] activities))
+        (PP (IN:[695..697] in)
+          (NP (DT:[699..704] these) (NNS:[705..714] fractions))))
+      (VP (VBD:[715..724] increased)
+        (NP-EXT
+          (QP (CD:[725..728] 500) (HYPH:[728..729] -) (CD:[729..732] 600)
+              (HYPH:[732..733] -) (RB:[733..737] fold)))
+        (S-ADV
+          (NP-SBJ (-NONE-:[737..737] *))
+          (ADJP-PRD (JJ:[738..746] relative)
+            (PP (TO:[747..749] to)
+              (NP (JJ:[750..755] whole) (NNS:[756..766] microsomes)))))))
+    (.:[766..767] .)))
+
+;sentence 6 Span:769..1042
+;Polyacrylamide gel electrophoresis of rat microsomes followed by
+;immunoblotting  with polyclonal rabbit antisera raised against purified
+;cholesterol 7  alpha-hydroxylases revealed two peaks at molecular masses of
+;47,000 and 49,000  daltons for both rat and human fractions.
+;[769..783]:substance:"Polyacrylamide"
+;[855..881]:substance:"polyclonal rabbit antisera"
+;[906..939]:cyp450:"cholesterol 7  alpha-hydroxylases"
+;[982..988]:quantitative-value:"47,000"
+;[993..999]:quantitative-value:"49,000"
+;[1001..1008]:quantitative-units:"daltons"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[769..783] Polyacrylamide) (NN:[784..787] gel)
+            (NN:[788..803] electrophoresis))
+        (PP (IN:[804..806] of)
+          (NP (NN:[807..810] rat) (NNS:[811..821] microsomes))))
+      (VP (VBN:[822..830] followed)
+        (NP (-NONE-:[830..830] *))
+        (PP (IN:[831..833] by)
+          (NP-LGS
+            (NP (NN:[834..848] immunoblotting))
+            (PP (IN:[850..854] with)
+              (NP
+                (NP (JJ:[855..865] polyclonal) (NN:[866..872] rabbit)
+                    (NN:[873..881] antisera))
+                (VP (VBN:[882..888] raised)
+                  (NP (-NONE-:[888..888] *))
+                  (PP (IN:[889..896] against)
+                    (NP (VBN:[897..905] purified)
+                       (NN:[906..917] cholesterol) (CD:[918..919] 7)
+                       (SYM:[921..926] alpha) (HYPH:[926..927] -)
+                       (NNS:[927..939] hydroxylases))))))))))
+    (VP (VBD:[940..948] revealed)
+      (NP
+        (NP (CD:[949..952] two) (NNS:[953..958] peaks))
+        (PP (IN:[959..961] at)
+          (NP
+            (NP (JJ:[962..971] molecular) (NNS:[972..978] masses))
+            (PP (IN:[979..981] of)
+              (NP
+                (NP (CD:[982..988] 47,000)
+                  (NML-2 (-NONE-:[988..988] *P*)))
+                (CC:[989..992] and)
+                (NP (CD:[993..999] 49,000)
+                  (NML-2 (NNS:[1001..1008] daltons))))))))
+      (PP (IN:[1009..1012] for)
+        (NP (DT:[1013..1017] both)
+          (NP (NN:[1018..1021] rat)
+            (NML-1 (-NONE-:[1021..1021] *P*)))
+          (CC:[1022..1025] and)
+          (NP (JJ:[1026..1031] human)
+            (NML-1 (NNS:[1032..1041] fractions))))))
+    (.:[1041..1042] .)))
+
+;sentence 7 Span:1043..1199
+;Increasing amounts of rabbit anti-rat  and anti-human antibodies
+;progressively inhibited rat microsomal cholesterol 7  alpha-hydroxylase
+;activity up to 80%.
+;[1065..1080]...[1097..1107]:substance:"rabbit anti-rat"..."antibodies"
+;[1065..1071]...[1086..1107]:substance:"rabbit"..."anti-human antibodies"
+;[1147..1179]:cyp450:"cholesterol 7  alpha-hydroxylase"
+;[1195..1198]:quantitative-value:"80%"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (VBG:[1043..1053] Increasing) (NNS:[1054..1061] amounts))
+      (PP (IN:[1062..1064] of)
+        (NP
+          (NP
+            (NML-2 (NN:[1065..1071] rabbit))
+            (ADJP (AFX:[1072..1076] anti) (HYPH:[1076..1077] -)
+                  (NN:[1077..1080] rat))
+            (NML-1 (-NONE-:[1080..1080] *P*)))
+          (CC:[1082..1085] and)
+          (NP
+            (NML-2 (-NONE-:[1085..1085] *P*))
+            (ADJP (AFX:[1086..1090] anti) (HYPH:[1090..1091] -)
+                  (JJ:[1091..1096] human))
+            (NML-1 (NNS:[1097..1107] antibodies))))))
+    (ADVP (RB:[1108..1121] progressively))
+    (VP (VBD:[1122..1131] inhibited)
+      (NP (NN:[1132..1135] rat) (JJ:[1136..1146] microsomal)
+        (NML (NN:[1147..1158] cholesterol) (CD:[1159..1160] 7)
+             (SYM:[1162..1167] alpha) (HYPH:[1167..1168] -)
+             (NN:[1168..1179] hydroxylase))
+        (NN:[1180..1188] activity))
+      (NP-EXT
+        (QP (IN:[1189..1191] up) (TO:[1192..1194] to) (CD:[1195..1197] 80))
+        (NN:[1197..1198] %)))
+    (.:[1198..1199] .)))
+
+;sentence 8 Span:1200..1393
+;In contrast, monospecific antibodies  raised against other purified
+;cytochrome P-450 enzymes (P-450f, P-450g, and  P-450j) did not inhibit rat or
+;human cholesterol 7 alpha-hydroxylase activity.
+;[1213..1236]:substance:"monospecific antibodies"
+;[1268..1292]:cyp450:"cytochrome P-450 enzymes"
+;[1294..1300]:cyp450:"P-450f"
+;[1302..1308]:cyp450:"P-450g"
+;[1315..1321]:cyp450:"P-450j"
+;[1352..1383]:cyp450:"cholesterol 7 alpha-hydroxylase"
+(SENT
+  (S
+    (PP (IN:[1200..1202] In)
+      (NP (NN:[1203..1211] contrast)))
+    (,:[1211..1212] ,)
+    (NP-SBJ
+      (NP (JJ:[1213..1225] monospecific) (NNS:[1226..1236] antibodies))
+      (VP (VBN:[1238..1244] raised)
+        (NP (-NONE-:[1244..1244] *))
+        (PP (IN:[1245..1252] against)
+          (NP
+            (NP (JJ:[1253..1258] other) (VBD:[1259..1267] purified)
+              
+              (NML (NN:[1268..1278] cytochrome) (NN:[1279..1284] P-450))
+              (NNS:[1285..1292] enzymes))
+            (NP (-LRB-:[1293..1294] -LRB-) (NN:[1294..1300] P-450f)
+                (,:[1300..1301] ,) (NN:[1302..1308] P-450g) (,:[1308..1309] ,)
+                (CC:[1310..1313] and) (NN:[1315..1321] P-450j)
+                (-RRB-:[1321..1322] -RRB-))))))
+    (VP (VBD:[1323..1326] did) (RB:[1327..1330] not)
+      (VP (VB:[1331..1338] inhibit)
+        (NP
+          (NP (NN:[1339..1342] rat)
+            (NML-1 (-NONE-:[1342..1342] *P*)))
+          (CC:[1343..1345] or)
+          (NP (JJ:[1346..1351] human)
+            (NML-1
+              (NML (NN:[1352..1363] cholesterol) (CD:[1364..1365] 7)
+                   (SYM:[1366..1371] alpha) (HYPH:[1371..1372] -)
+                   (NN:[1372..1383] hydroxylase))
+              (NN:[1384..1392] activity))))))
+    (.:[1392..1393] .)))
+
+;sentence 9 Span:1395..1578
+;Immunoblots of rat microsomes with the rabbit anti-rat cholesterol 7 
+;alpha-hydroxylase antibody demonstrated that the antibody reacted
+;quantitatively  with the rat microsomal enzyme.
+;[1434..1491]:substance:"rabbit anti-rat cholesterol 7  alpha-hydroxylase
+;antibody"
+;[1514..1522]:substance:"antibody"
+;[1571..1577]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1395..1406] Immunoblots))
+      (PP (IN:[1407..1409] of)
+        (NP
+          (NP (NN:[1410..1413] rat) (NNS:[1414..1424] microsomes))
+          (PP (IN:[1425..1429] with)
+            (NP (DT:[1430..1433] the)
+               (NN:[1434..1440] rabbit)
+              (ADJP (AFX:[1441..1445] anti) (HYPH:[1445..1446] -)
+                    (NN:[1446..1449] rat))
+              (NML (NN:[1450..1461] cholesterol) (CD:[1462..1463] 7)
+                   (SYM:[1465..1470] alpha) (HYPH:[1470..1471] -)
+                   (NN:[1471..1482] hydroxylase))
+              (NN:[1483..1491] antibody))))))
+    (VP (VBD:[1492..1504] demonstrated)
+      (SBAR (IN:[1505..1509] that)
+        (S
+          (NP-SBJ (DT:[1510..1513] the) (NN:[1514..1522] antibody))
+          (VP (VBD:[1523..1530] reacted)
+            (ADVP (RB:[1531..1545] quantitatively))
+            (PP-CLR (IN:[1547..1551] with)
+              (NP (DT:[1552..1555] the) (NN:[1556..1559] rat)
+                  (JJ:[1560..1570] microsomal) (NN:[1571..1577] enzyme)))))))
+    (.:[1577..1578] .)))
+
+;sentence 10 Span:1579..1791
+;Microsomes from cholesterol-fed rats showed  increased cholesterol 7
+;alpha-hydroxylase mass, whereas treatment with  pravastatin, an inhibitor of
+;hydroxy-methylglutaryl-coenzyme A reductase,  reduced enzyme mass.
+;[1595..1606]:substance:"cholesterol"
+;[1634..1665]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[1696..1707]:substance:"pravastatin"
+;[1712..1721]:substance:"inhibitor"
+;[1725..1768]:substance:"hydroxy-methylglutaryl-coenzyme A reductase"
+;[1779..1785]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1579..1589] Microsomes))
+      (PP (IN:[1590..1594] from)
+        (NP
+          (ADJP (NN:[1595..1606] cholesterol) (HYPH:[1606..1607] -)
+                (VBN:[1607..1610] fed))
+          (NNS:[1611..1615] rats))))
+    (VP (VBD:[1616..1622] showed)
+      (NP (VBN:[1624..1633] increased)
+        (NML (NN:[1634..1645] cholesterol) (CD:[1646..1647] 7)
+             (SYM:[1648..1653] alpha) (HYPH:[1653..1654] -)
+             (NN:[1654..1665] hydroxylase))
+        (NN:[1666..1670] mass))
+      (,:[1670..1671] ,)
+      (SBAR-ADV (IN:[1672..1679] whereas)
+        (S
+          (NP-SBJ
+            (NP (NN:[1680..1689] treatment))
+            (PP (IN:[1690..1694] with)
+              (NP
+                (NP (NN:[1696..1707] pravastatin))
+                (,:[1707..1708] ,)
+                (NP
+                  (NP (DT:[1709..1711] an) (NN:[1712..1721] inhibitor))
+                  (PP (IN:[1722..1724] of)
+                    (NP (NN:[1725..1756] hydroxy-methylglutaryl-coenzyme)
+                        (NN:[1757..1758] A) (NN:[1759..1768] reductase)))))))
+          (,:[1768..1769] ,)
+          (VP (VBD:[1771..1778] reduced)
+            (NP (NN:[1779..1785] enzyme) (NN:[1786..1790] mass))))))
+    (.:[1790..1791] .)))
+
+;sentence 11 Span:1792..1913
+;Microsomes from starved rats contained slightly less  cholesterol 7
+;alpha-hydroxylase protein than chow-fed control rats.
+;[1846..1885]:cyp450:"cholesterol 7 alpha-hydroxylase protein"
+;[1891..1895]:substance:"chow"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1792..1802] Microsomes))
+      (PP (IN:[1803..1807] from)
+        (NP (VBD:[1808..1815] starved) (NNS:[1816..1820] rats))))
+    (VP (VBD:[1821..1830] contained)
+      (NP
+        (NP
+          (ADJP (RB:[1831..1839] slightly) (JJR:[1840..1844] less))
+          
+          (NML (NN:[1846..1857] cholesterol) (CD:[1858..1859] 7)
+               (SYM:[1860..1865] alpha) (HYPH:[1865..1866] -)
+               (NN:[1866..1877] hydroxylase))
+          (NN:[1878..1885] protein))
+        (PP (IN:[1886..1890] than)
+          (NP
+            (ADJP (NN:[1891..1895] chow) (HYPH:[1895..1896] -)
+                  (VBD:[1896..1899] fed))
+            (NN:[1900..1907] control) (NNS:[1908..1912] rats)))))
+    (.:[1912..1913] .)))
+
+;sentence 12 Span:1914..2392
+;These  results indicate a similarity in molecular mass, structure, and
+;antigenicity  between rat and human cholesterol 7 alpha-hydroxylases;
+;demonstrate the  production of inhibiting anti-cholesterol 7
+;alpha-hydroxylase antibodies that  can be used to measure the change in
+;cholesterol 7 alpha-hydroxylase enzyme mass  under various conditions; and
+;emphasize the unique structure of cholesterol 7  alpha-hydroxylase with
+;respect to other cytochrome P-450-dependent hydroxylases.
+;[2021..2053]:cyp450:"cholesterol 7 alpha-hydroxylases"
+;[2097..2144]:substance:"anti-cholesterol 7 alpha-hydroxylase antibodies"
+;[2188..2226]:cyp450:"cholesterol 7 alpha-hydroxylase enzyme"
+;[2297..2329]:cyp450:"cholesterol 7  alpha-hydroxylase"
+;[2352..2368]:cyp450:"cytochrome P-450"
+;[2379..2391]:substance:"hydroxylases"
+(SENT
+  (S
+    (NP-SBJ (DT:[1914..1919] These) (NNS:[1921..1928] results))
+    (VP
+      (VP (VBP:[1929..1937] indicate)
+        (NP
+          (NP (DT:[1938..1939] a) (NN:[1940..1950] similarity))
+          (PP (IN:[1951..1953] in)
+            (NP
+              (NP (JJ:[1954..1963] molecular) (NN:[1964..1968] mass))
+              (,:[1968..1969] ,)
+              (NP (NN:[1970..1979] structure))
+              (,:[1979..1980] ,) (CC:[1981..1984] and)
+              (NP (NN:[1985..1997] antigenicity))))
+          (PP (IN:[1999..2006] between)
+            (NP
+              (NP (NN:[2007..2010] rat)
+                (NML-2 (-NONE-:[2010..2010] *P*)))
+              (CC:[2011..2014] and)
+              (NP (JJ:[2015..2020] human)
+                (NML-2 (NN:[2021..2032] cholesterol) (CD:[2033..2034] 7)
+                       (SYM:[2035..2040] alpha) (HYPH:[2040..2041] -)
+                       (NNS:[2041..2053] hydroxylases)))))))
+      (TO:[2053..2054] ;)
+      (VP (VBP:[2055..2066] demonstrate)
+        (NP
+          (NP (DT:[2067..2070] the) (NN:[2072..2082] production))
+          (PP (IN:[2083..2085] of)
+            (NP
+              (NP (VBG:[2086..2096] inhibiting)
+                
+                (ADJP (AFX:[2097..2101] anti) (HYPH:[2101..2102] -)
+                      (NN:[2102..2113] cholesterol) (CD:[2114..2115] 7)
+                      (SYM:[2116..2121] alpha) (HYPH:[2121..2122] -)
+                      (NN:[2122..2133] hydroxylase))
+                (NNS:[2134..2144] antibodies))
+              (SBAR
+                (WHNP-1 (WDT:[2145..2149] that))
+                (S
+                  (NP-SBJ-1 (-NONE-:[2149..2149] *T*))
+                  (VP (MD:[2151..2154] can)
+                    (VP (VB:[2155..2157] be)
+                      (VP (VBN:[2158..2162] used)
+                        (NP-1 (-NONE-:[2162..2162] *))
+                        (S-PRP
+                          (NP-SBJ (-NONE-:[2162..2162] *))
+                          (VP (TO:[2163..2165] to)
+                            (VP (VB:[2166..2173] measure)
+                              (NP
+                                (NP (DT:[2174..2177] the)
+                                    (NN:[2178..2184] change))
+                                (PP (IN:[2185..2187] in)
+                                  (NP
+                                    
+                                    (NML (NN:[2188..2199] cholesterol)
+                                         (CD:[2200..2201] 7)
+                                         (SYM:[2202..2207] alpha)
+                                         (HYPH:[2207..2208] -)
+                                         (NN:[2208..2219] hydroxylase))
+                                    (NN:[2220..2226] enzyme)
+                                    (NN:[2227..2231] mass))))
+                              (PP (IN:[2233..2238] under)
+                                (NP (JJ:[2239..2246] various)
+                                    (NNS:[2247..2257] conditions)))))))))))))))
+      (,:[2257..2258] ;) (CC:[2259..2262] and)
+      (VP (VBP:[2263..2272] emphasize)
+        (NP
+          (NP (DT:[2273..2276] the) (JJ:[2277..2283] unique)
+              (NN:[2284..2293] structure))
+          (PP (IN:[2294..2296] of)
+            (NP (NN:[2297..2308] cholesterol) (CD:[2309..2310] 7)
+                (SYM:[2312..2317] alpha) (HYPH:[2317..2318] -)
+                (NN:[2318..2329] hydroxylase))))
+        (PP (IN:[2330..2334] with)
+          (NP
+            (NP (NN:[2335..2342] respect))
+            (PP (TO:[2343..2345] to)
+              (NP (JJ:[2346..2351] other)
+                (ADJP
+                  (NML (JJ:[2352..2362] cytochrome) (NNP:[2363..2368] P-450))
+                  (HYPH:[2368..2369] -) (JJ:[2369..2378] dependent))
+                (NNS:[2379..2391] hydroxylases)))))))
+    (.:[2391..2392] .)))
+
+;section 13 Span:2396..2439
+;PMID: 2106520 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[2396..2400] PMID) (::[2400..2401] :) (CD:[2402..2409] 2106520)
+        (-LRB-:[2410..2411] -LSB-) (NNP:[2411..2417] PubMed)
+        (HYPH:[2418..2419] -) (VBN:[2420..2427] indexed) (IN:[2428..2431] for)
+        (NNP:[2432..2439] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[2439..EOF] ]
+
+(ORPH -RSB-)

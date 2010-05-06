@@ -1,0 +1,399 @@
+;PMID: 10096433
+;source_file_923.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..29] = [t:0..29]
+;1)sentence:[e:35..122] = [t:35..122]
+;2)section:[e:126..206] = [t:126..206]
+;3)section:[e:210..311] = [t:210..311]
+;4)sentence:[e:315..379] = [t:315..379]
+;5)sentence:[e:380..557] = [t:380..557]
+;6)sentence:[e:558..654] = [t:558..654]
+;7)sentence:[e:655..775] = [t:655..775]
+;8)sentence:[e:776..844] = [t:776..844]
+;9)sentence:[e:845..965] = [t:845..965]
+;10)sentence:[e:966..1103] = [t:966..1103]
+;11)sentence:[e:1104..1170] = [t:1104..1170]
+;12)sentence:[e:1171..1245] = [t:1171..1245]
+;13)sentence:[e:1246..1320] = [t:1246..1320]
+;14)sentence:[e:1321..1425] = [t:1321..1425]
+;15)section:[e:null] = [t:1425..1579]
+;16)sentence:[e:1426..1579] = [t:null]
+;17)section:[e:1583..1628] = [t:1583..1628]
+;Sentence Matching Errors
+;ERROR_Tree section missing entity section[1425..1579]
+;ERROR_Entity section missing treebank section[1426..1579]
+;ERROR_Entity not in any tree[1479..1482] substance "CBZ"
+;ERROR_Entity not in any tree[1488..1501] substance "phenobarbital"
+;ERROR_Entity not in any tree[1503..1512] substance "phenytoin"
+;ERROR_Entity not in any tree[1514..1527] substance "ethosuccimide"
+;ERROR_Entity not in any tree[1529..1538] substance "primidone"
+;ERROR_Entity not in any tree[1541..1550] substance "progabide"
+;ERROR_Entity not in any tree[1552..1562] substance "vigabatrin"
+;ERROR_Entity not in any tree[1567..1578] substance "lamotrigine"
+
+;section 0 Span:0..29
+;Life Sci. 1999;64(10):827-35.
+(SEC
+  (FRAG (NNP:[0..4] Life) (NNP:[5..8] Sci) (.:[8..9] .)
+        (CD:[10..18] 1999;64-LRB-) (CD:[18..20] 10) (-RRB-:[20..21] -RRB-)
+        (CD:[21..25] :827) (HYPH:[25..26] -) (CD:[26..28] 35) (.:[28..29] .)))
+
+;sentence 1 Span:35..122
+;Metabolism of carbamazepine by CYP3A6: a model for in vitro drug interactions
+; studies.
+;[49..62]:substance:"carbamazepine"
+;[66..72]:cyp450:"CYP3A6"
+;[95..99]:substance:"drug"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[35..45] Metabolism))
+      (PP (IN:[46..48] of)
+        (NP (NN:[49..62] carbamazepine)))
+      (PP (IN:[63..65] by)
+        (NP (NN:[66..72] CYP3A6))))
+    (::[72..73] :)
+    (NP
+      (NP (DT:[74..75] a) (NN:[76..81] model))
+      (PP (IN:[82..85] for)
+        (NP
+          (ADJP (FW:[86..88] in) (FW:[89..94] vitro))
+          (NML (NN:[95..99] drug) (NNS:[100..112] interactions))
+          (NNS:[114..121] studies))))
+    (.:[121..122] .)))
+
+;section 2 Span:126..206
+;Mesdjian E, Seree E, Charvet B, Mirrione A, Bourgarel-Rey V, Desobry A, Barra
+;Y.
+(SEC
+  (FRAG (NNP:[126..134] Mesdjian) (NNP:[135..136] E) (,:[136..137] ,)
+        (NNP:[138..143] Seree) (NNP:[144..145] E) (,:[145..146] ,)
+        (NNP:[147..154] Charvet) (NNP:[155..156] B) (,:[156..157] ,)
+        (NNP:[158..166] Mirrione) (NNP:[167..168] A) (,:[168..169] ,)
+        (NNP:[170..179] Bourgarel) (::[179..180] -) (NNP:[180..183] Rey)
+        (NNP:[184..185] V) (,:[185..186] ,) (NNP:[187..194] Desobry)
+        (NNP:[195..196] A) (,:[196..197] ,) (NNP:[198..203] Barra)
+        (NNP:[204..206] Y.)))
+
+;section 3 Span:210..311
+;Centre Saint Paul et Laboratoire de Biologie Moleculaire appliquee au 
+;medicament, Marseille, France.
+(SEC
+  (FRAG (NNP:[210..216] Centre) (NNP:[217..222] Saint) (NNP:[223..227] Paul)
+        (NNP:[228..230] et) (NNP:[231..242] Laboratoire) (NNP:[243..245] de)
+        (NNP:[246..254] Biologie) (NNP:[255..266] Moleculaire)
+        (VBD:[267..276] appliquee) (NNP:[277..279] au)
+        (NN:[281..291] medicament) (,:[291..292] ,) (NNP:[293..302] Marseille)
+        (,:[302..303] ,) (NNP:[304..310] France) (.:[310..311] .)))
+
+;sentence 4 Span:315..379
+;Carbamazepine (CBZ) is widely used in the treatment of epilepsy.
+;[315..328]:substance:"Carbamazepine"
+;[330..333]:substance:"CBZ"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[315..328] Carbamazepine))
+      (NP (-LRB-:[329..330] -LRB-) (NN:[330..333] CBZ) (-RRB-:[333..334] -RRB-)))
+    (VP (VBZ:[335..337] is)
+      (ADVP (RB:[338..344] widely))
+      (VP (VBN:[345..349] used)
+        (NP-1 (-NONE-:[349..349] *))
+        (PP (IN:[350..352] in)
+          (NP
+            (NP (DT:[353..356] the) (NN:[357..366] treatment))
+            (PP (IN:[367..369] of)
+              (NP (NN:[370..378] epilepsy)))))))
+    (.:[378..379] .)))
+
+;sentence 5 Span:380..557
+;The drug is  principally metabolized by CYPs to 10, 11-epoxy carbamazepine
+;(CBZ-E) but this  metabolite more toxic than the parent drug, does possess
+;anticonvulsant  properties.
+;[384..388]:substance:"drug"
+;[420..424]:cyp450:"CYPs"
+;[428..454]:substance:"10, 11-epoxy carbamazepine"
+;[456..461]:substance:"CBZ-E"
+;[473..483]:substance:"metabolite"
+;[511..515]:substance:"drug"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[380..383] The) (NN:[384..388] drug))
+      (VP (VBZ:[389..391] is)
+        (ADVP (RB:[393..404] principally))
+        (VP (VBN:[405..416] metabolized)
+          (NP-1 (-NONE-:[416..416] *))
+          (PP (IN:[417..419] by)
+            (NP-LGS (NNS:[420..424] CYPs)))
+          (PP (TO:[425..427] to)
+            (NP
+              (NP
+                (ADJP (CD:[428..430] 10) (,:[430..431] ,) (CD:[432..434] 11)
+                      (HYPH:[434..435] -) (JJ:[435..440] epoxy))
+                (NN:[441..454] carbamazepine))
+              (NP (-LRB-:[455..456] -LRB-) (NN:[456..461] CBZ-E)
+                  (-RRB-:[461..462] -RRB-)))))))
+    (CC:[463..466] but)
+    (S
+      (NP-SBJ
+        (NP (DT:[467..471] this) (NN:[473..483] metabolite))
+        (ADJP
+          (ADJP (RBR:[484..488] more) (JJ:[489..494] toxic))
+          (PP (IN:[495..499] than)
+            (NP (DT:[500..503] the) (NN:[504..510] parent) (NN:[511..515] drug)))))
+      (,:[515..516] ,)
+      (VP (VBZ:[517..521] does)
+        (VP (VB:[522..529] possess)
+          (NP (JJ:[530..544] anticonvulsant) (NNS:[546..556] properties)))))
+    (.:[556..557] .)))
+
+;sentence 6 Span:558..654
+;In humans, CYP3A4, CYP2C8 and CYP1A2 have been shown to be  implicated in CBZ
+;biotransformation.
+;[569..575]:cyp450:"CYP3A4"
+;[577..583]:cyp450:"CYP2C8"
+;[588..594]:cyp450:"CYP1A2"
+;[632..635]:substance:"CBZ"
+(SENT
+  (S
+    (PP-LOC (IN:[558..560] In)
+      (NP (NNS:[561..567] humans)))
+    (,:[567..568] ,)
+    (NP-SBJ-1 (NN:[569..575] CYP3A4) (,:[575..576] ,) (NN:[577..583] CYP2C8)
+              (CC:[584..587] and) (NN:[588..594] CYP1A2))
+    (VP (VBP:[595..599] have)
+      (VP (VBN:[600..604] been)
+        (VP (VBN:[605..610] shown)
+          (S
+            (NP-SBJ-1 (-NONE-:[610..610] *))
+            (VP (TO:[611..613] to)
+              (VP (VB:[614..616] be)
+                (VP (VBN:[618..628] implicated)
+                  (NP-1 (-NONE-:[628..628] *))
+                  (PP-CLR (IN:[629..631] in)
+                    (NP (NN:[632..635] CBZ) (NN:[636..653] biotransformation))))))))))
+    (.:[653..654] .)))
+
+;sentence 7 Span:655..775
+;Our purpose was to establish an  experimental model to determine the
+;interaction of CBZ with other antiepileptic  drugs.
+;[739..742]:substance:"CBZ"
+;[754..774]:substance:"antiepileptic  drugs"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[655..658] Our) (NN:[659..666] purpose))
+    (VP (VBD:[667..670] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[670..670] *))
+        (VP (TO:[671..673] to)
+          (VP (VB:[674..683] establish)
+            (NP (DT:[684..686] an) (JJ:[688..700] experimental)
+                (NN:[701..706] model))
+            (S-PRP
+              (NP-SBJ (-NONE-:[706..706] *))
+              (VP (TO:[707..709] to)
+                (VP (VB:[710..719] determine)
+                  (NP
+                    (NP (DT:[720..723] the) (NN:[724..735] interaction))
+                    (PP (IN:[736..738] of)
+                      (NP (NN:[739..742] CBZ)))
+                    (PP (IN:[743..747] with)
+                      (NP (JJ:[748..753] other)
+                         (JJ:[754..767] antiepileptic) (NNS:[769..774] drugs)))))))))))
+    (.:[774..775] .)))
+
+;sentence 8 Span:776..844
+;We first identified the CYP isoforms that metabolized CBZ in rabbit.
+;[800..812]:cyp450:"CYP isoforms"
+;[830..833]:substance:"CBZ"
+(SENT
+  (S
+    (NP-SBJ (PRP:[776..778] We))
+    (ADVP-TMP (RB:[779..784] first))
+    (VP (VBD:[785..795] identified)
+      (NP
+        (NP (DT:[796..799] the)
+           (NN:[800..803] CYP) (NNS:[804..812] isoforms))
+        (SBAR
+          (WHNP-1 (WDT:[813..817] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[817..817] *T*))
+            (VP (VBD:[818..829] metabolized)
+              (NP (NN:[830..833] CBZ))
+              (PP-LOC (IN:[834..836] in)
+                (NP (NN:[837..843] rabbit))))))))
+    (.:[843..844] .)))
+
+;sentence 9 Span:845..965
+;We  used liver microsomes from rabbit treated with various compounds known to
+;induce  principally some CYPs subfamilies.
+;[904..913]:substance:"compounds"
+;[948..964]:cyp450:"CYPs subfamilies"
+(SENT
+  (S
+    (NP-SBJ (PRP:[845..847] We))
+    (VP (VBD:[849..853] used)
+      (NP
+        (NP (NN:[854..859] liver) (NNS:[860..870] microsomes))
+        (PP (IN:[871..875] from)
+          (NP
+            (NP (NN:[876..882] rabbit))
+            (VP (VBN:[883..890] treated)
+              (NP (-NONE-:[890..890] *))
+              (PP-CLR (IN:[891..895] with)
+                (NP
+                  (NP (JJ:[896..903] various) (NNS:[904..913] compounds))
+                  (VP (VBN:[914..919] known)
+                    (S
+                      (NP-SBJ (-NONE-:[919..919] *))
+                      (VP (TO:[920..922] to)
+                        (VP (VB:[923..929] induce)
+                          (ADVP (RB:[931..942] principally))
+                          (NP
+                            (NP (DT:[943..947] some) (NNS:[948..952] CYPs))
+                            (NNS:[953..964] subfamilies)))))))))))))
+    (.:[964..965] .)))
+
+;sentence 10 Span:966..1103
+;Having tested all the compounds we  demonstrated that only the animals
+;treated with CYP3A inducers were able to  metabolize CBZ strongly.
+;[988..997]:substance:"compounds"
+;[1050..1055]:cyp450:"CYP3A"
+;[1056..1064]:substance:"inducers"
+;[1090..1093]:substance:"CBZ"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ-2 (-NONE-:[966..966] *))
+      (VP (VBG:[966..972] Having)
+        (VP (VBN:[973..979] tested)
+          (NP (PDT:[980..983] all) (DT:[984..987] the)
+              (NNS:[988..997] compounds)))))
+    (NP-SBJ-2 (PRP:[998..1000] we))
+    (VP (VBD:[1002..1014] demonstrated)
+      (SBAR (IN:[1015..1019] that)
+        (S
+          (NP-SBJ
+            (NP (RB:[1020..1024] only) (DT:[1025..1028] the)
+                (NNS:[1029..1036] animals))
+            (VP (VBN:[1037..1044] treated)
+              (NP (-NONE-:[1044..1044] *))
+              (PP-CLR (IN:[1045..1049] with)
+                (NP (NN:[1050..1055] CYP3A) (NNS:[1056..1064] inducers)))))
+          (VP (VBD:[1065..1069] were)
+            (ADJP-PRD (JJ:[1070..1074] able)
+              (S
+                (NP-SBJ (-NONE-:[1074..1074] *))
+                (VP (TO:[1075..1077] to)
+                  (VP (VB:[1079..1089] metabolize)
+                    (NP (NN:[1090..1093] CBZ))
+                    (ADVP-MNR (RB:[1094..1102] strongly))))))))))
+    (.:[1102..1103] .)))
+
+;sentence 11 Span:1104..1170
+;The CBZ biotransformation was inhibited by anti CYP3A  antibodies.
+;[1108..1111]:substance:"CBZ"
+;[1147..1169]:substance:"anti CYP3A  antibodies"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1104..1107] The) (NN:[1108..1111] CBZ)
+              (NN:[1112..1129] biotransformation))
+    (VP (VBD:[1130..1133] was)
+      (VP (VBN:[1134..1143] inhibited)
+        (NP-1 (-NONE-:[1143..1143] *))
+        (PP (IN:[1144..1146] by)
+          (NP-LGS
+            (NML (AFX:[1147..1151] anti) (NN:[1152..1157] CYP3A))
+            (NNS:[1159..1169] antibodies)))))
+    (.:[1169..1170] .)))
+
+;sentence 12 Span:1171..1245
+;All the CYP3A subfamily substrates specifically decrease CBZ-E  formation.
+;[1179..1194]:cyp450:"CYP3A subfamily"
+;[1195..1205]:substance:"substrates"
+;[1228..1233]:substance:"CBZ-E"
+(SENT
+  (S
+    (NP-SBJ (PDT:[1171..1174] All) (DT:[1175..1178] the)
+      (NML (NN:[1179..1184] CYP3A) (NN:[1185..1194] subfamily))
+      (NNS:[1195..1205] substrates))
+    (ADVP (RB:[1206..1218] specifically))
+    (VP (VBP:[1219..1227] decrease)
+      (NP (NN:[1228..1233] CBZ-E) (NN:[1235..1244] formation)))
+    (.:[1244..1245] .)))
+
+;sentence 13 Span:1246..1320
+;In our experiment we did not observe any inhibition with CYP2C  substrate.
+;[1303..1308]:cyp450:"CYP2C"
+;[1310..1319]:substance:"substrate"
+(SENT
+  (S
+    (PP-LOC (IN:[1246..1248] In)
+      (NP (PRP$:[1249..1252] our) (NN:[1253..1263] experiment)))
+    (NP-SBJ (PRP:[1264..1266] we))
+    (VP (VBD:[1267..1270] did) (RB:[1271..1274] not)
+      (VP (VB:[1275..1282] observe)
+        (NP (DT:[1283..1286] any) (NN:[1287..1297] inhibition))
+        (PP (IN:[1298..1302] with)
+          (NP (NN:[1303..1308] CYP2C) (NN:[1310..1319] substrate)))))
+    (.:[1319..1320] .)))
+
+;sentence 14 Span:1321..1425
+;These data provide evidence that in rabbit the CYP3A subfamily is  primarily
+;involved in CBZ metabolism.
+;[1368..1383]:cyp450:"CYP3A subfamily"
+;[1410..1413]:substance:"CBZ"
+(SENT
+  (S
+    (NP-SBJ (DT:[1321..1326] These) (NNS:[1327..1331] data))
+    (VP (VBP:[1332..1339] provide)
+      (NP (NN:[1340..1348] evidence)
+        (SBAR (IN:[1349..1353] that)
+          (S
+            (PP-LOC (IN:[1354..1356] in)
+              (NP (NN:[1357..1363] rabbit)))
+            (NP-SBJ-1 (DT:[1364..1367] the)
+               (NN:[1368..1373] CYP3A) (NN:[1374..1383] subfamily))
+            (VP (VBZ:[1384..1386] is)
+              (ADVP (RB:[1388..1397] primarily))
+              (VP (VBN:[1398..1406] involved)
+                (NP-1 (-NONE-:[1406..1406] *))
+                (PP-CLR (IN:[1407..1409] in)
+                  (NP (NN:[1410..1413] CBZ) (NN:[1414..1424] metabolism)))))))))
+    (.:[1424..1425] .)))
+
+;section 15 Span:1425..1579
+; Using this model we investigated the  interaction of CBZ with phenobarbital,
+;phenytoin, ethosuccimide, primidone,  progabide, vigabatrin and lamotrigine.
+(SEC
+  (S
+    (S-MNR
+      (NP-SBJ-2 (-NONE-:[1425..1425] *))
+      (VP (VBG:[1426..1431] Using)
+        (NP (DT:[1432..1436] this) (NN:[1437..1442] model))))
+    (NP-SBJ-2 (PRP:[1443..1445] we))
+    (VP (VBD:[1446..1458] investigated)
+      (NP
+        (NP (DT:[1459..1462] the) (NN:[1464..1475] interaction))
+        (PP (IN:[1476..1478] of)
+          (NP (NN:[1479..1482] CBZ)))
+        (PP (IN:[1483..1487] with)
+          (NP (NN:[1488..1501] phenobarbital) (,:[1501..1502] ,)
+              (NN:[1503..1512] phenytoin) (,:[1512..1513] ,)
+              (NN:[1514..1527] ethosuccimide) (,:[1527..1528] ,)
+              (NN:[1529..1538] primidone) (,:[1538..1539] ,)
+              (NN:[1541..1550] progabide) (,:[1550..1551] ,)
+              (NN:[1552..1562] vigabatrin) (CC:[1563..1566] and)
+              (NN:[1567..1578] lamotrigine)))))
+    (.:[1578..1579] .)))
+
+;section 16 Span:1583..1628
+;PMID: 10096433 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1583..1587] PMID) (::[1587..1588] :) (CD:[1589..1597] 10096433)
+        (NN:[1598..1599] -LSB-) (NNP:[1599..1605] PubMed) (::[1606..1607] -)
+        (NN:[1608..1615] indexed) (IN:[1616..1619] for)
+        (NNP:[1620..1628] MEDLINE-RSB-)))

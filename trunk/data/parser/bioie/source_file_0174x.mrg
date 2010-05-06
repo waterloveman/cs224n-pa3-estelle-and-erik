@@ -1,0 +1,365 @@
+;PMID: 10213482
+;source_file_1303.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:41..133] = [t:41..133]
+;2)section:[e:137..211] = [t:137..211]
+;3)section:[e:215..334] = [t:215..334]
+;4)sentence:[e:338..536] = [t:338..536]
+;5)sentence:[e:537..749] = [t:537..749]
+;6)sentence:[e:750..895] = [t:750..895]
+;7)sentence:[e:896..1170] = [t:896..1170]
+;8)sentence:[e:1172..1267] = [t:1172..1267]
+;9)sentence:[e:1268..1434] = [t:1268..1434]
+;10)sentence:[e:1435..1625] = [t:1435..1625]
+;11)sentence:[e:1627..1762] = [t:1627..1762]
+;12)section:[e:1766..1811] = [t:1766..1811]
+
+;section 0 Span:0..36
+;Cancer Res  1999 Apr 15;59(8):1811-5
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1999)
+        (NNP:[17..20] Apr) (CD:[21..23] 15) (CD:[23..25] ;5) (CD:[25..26] 9)
+        (NN:[26..27] -LRB-) (NN:[27..28] 8) (NN:[28..29] -RRB-) (::[29..30] :)
+        (CD:[30..34] 1811) (::[34..36] -5)))
+
+;sentence 1 Span:41..133
+;Frequent mutation and nuclear localization of beta-catenin in anaplastic
+;thyroid  carcinoma.
+;[50..58]:variation-event:"mutation"
+;[87..99]:gene-protein:"beta-catenin"
+;[114..132]:malignancy-type:"thyroid  carcinoma"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[41..49] Frequent) (NN:[50..58] mutation))
+      (CC:[59..62] and)
+      (NP (JJ:[63..70] nuclear) (NN:[71..83] localization)))
+    (PP (IN:[84..86] of)
+      (NP (NN:[87..99] beta-catenin)))
+    (PP (IN:[100..102] in)
+      (NP (JJ:[103..113] anaplastic)
+         (NN:[114..121] thyroid) (NN:[123..132] carcinoma)))
+    (.:[132..133] .)))
+
+;section 2 Span:137..211
+;Garcia-Rostan G, Tallini G, Herrero A, D'Aquila TG, Carcangiu ML, Rimm DL.
+(SEC
+  (FRAG (NNP:[137..150] Garcia-Rostan) (NNP:[151..152] G) (,:[152..153] ,)
+        (NNP:[154..161] Tallini) (NNP:[162..163] G) (,:[163..164] ,)
+        (NNP:[165..172] Herrero) (NNP:[173..174] A) (,:[174..175] ,)
+        (NNP:[176..184] D'Aquila) (NNP:[185..187] TG) (,:[187..188] ,)
+        (NNP:[189..198] Carcangiu) (NNP:[199..201] ML) (,:[201..202] ,)
+        (NNP:[203..207] Rimm) (NNP:[208..211] DL.)))
+
+;section 3 Span:215..334
+;Department of Pathology, Yale University School of Medicine, New Haven, 
+;Connecticut 06520, USA. ginesa.rostan@yale.edu
+(SEC
+  (FRAG (NNP:[215..225] Department) (IN:[226..228] of)
+        (NNP:[229..238] Pathology) (,:[238..239] ,) (NNP:[240..244] Yale)
+        (NNP:[245..255] University) (NNP:[256..262] School) (IN:[263..265] of)
+        (NNP:[266..274] Medicine) (,:[274..275] ,) (NNP:[276..279] New)
+        (NNP:[280..285] Haven) (,:[285..286] ,) (NNP:[288..299] Connecticut)
+        (CD:[300..305] 06520) (,:[305..306] ,) (NNP:[307..310] USA)
+        (.:[310..311] .) (IN:[312..330] ginesa.rostan@yale) (NN:[330..334] .edu)))
+
+;sentence 4 Span:338..536
+;Beta-catenin is an ubiquitously expressed cytoplasmic protein that has a
+;crucial  role in both E-cadherin-mediated cell-cell adhesion and as a
+;downstream  signaling molecule in the wingless pathway.
+;[338..350]:gene-protein:"Beta-catenin"
+;[433..443]:gene-protein:"E-cadherin"
+;[519..527]:gene-generic:"wingless"
+(SENT
+  (S
+    (NP-SBJ (NN:[338..350] Beta-catenin))
+    (VP (VBZ:[351..353] is)
+      (NP-PRD
+        (NP (DT:[354..356] an)
+          (ADJP (RB:[357..369] ubiquitously) (VBN:[370..379] expressed))
+          (JJ:[380..391] cytoplasmic) (NN:[392..399] protein))
+        (SBAR
+          (WHNP-1 (WDT:[400..404] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[404..404] *T*))
+            (VP (VBZ:[405..408] has)
+              (NP
+                (NP (DT:[409..410] a) (JJ:[411..418] crucial)
+                    (NN:[420..424] role))
+                (PP
+                  (PP (IN:[425..427] in)
+                    (NP (CC:[428..432] both)
+                      (ADJP (NN:[433..443] E-cadherin) (HYPH:[443..444] -)
+                            (VBN:[444..452] mediated))
+                      (NML
+                        (NML (NN:[453..457] cell))
+                        (PP (HYPH:[457..458] -)
+                          (NP (NN:[458..462] cell))))
+                      (NN:[463..471] adhesion)))
+                  (CC:[472..475] and)
+                  (PP (IN:[476..478] as)
+                    (NP (DT:[479..480] a) (JJ:[481..491] downstream)
+                        (VBG:[493..502] signaling) (NN:[503..511] molecule))))
+                (PP (IN:[512..514] in)
+                  (NP (DT:[515..518] the) (JJ:[519..527] wingless)
+                      (NN:[528..535] pathway)))))))))
+    (.:[535..536] .)))
+
+;sentence 5 Span:537..749
+;Stabilization of beta-catenin  followed by nuclear translocation and
+;subsequent T-cell  factor/lymphoid-enhancing factor-mediated transcriptional
+;activation has been  proposed as an important step in oncogenesis.
+;[554..566]:gene-protein:"beta-catenin"
+;[617..631]:gene-protein:"T-cell  factor"
+;[632..657]:gene-protein:"lymphoid-enhancing factor"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (NN:[537..550] Stabilization))
+        (PP (IN:[551..553] of)
+          (NP (NN:[554..566] beta-catenin))))
+      (VP (VBN:[568..576] followed)
+        (NP (-NONE-:[576..576] *))
+        (PP (IN:[577..579] by)
+          (NP-LGS
+            (NP (JJ:[580..587] nuclear) (NN:[588..601] translocation))
+            (CC:[602..605] and)
+            (NP (JJ:[606..616] subsequent)
+              (ADJP
+                (NML
+                  (NML (NN:[617..623] T-cell) (NN:[625..631] factor))
+                  (SYM:[631..632] /)
+                  (NML (JJ:[632..640] lymphoid) (HYPH:[640..641] -)
+                       (VBG:[641..650] enhancing) (NN:[651..657] factor)))
+                (HYPH:[657..658] -) (VBN:[658..666] mediated))
+              (JJ:[667..682] transcriptional) (NN:[683..693] activation))))))
+    (VP (VBZ:[694..697] has)
+      (VP (VBN:[698..702] been)
+        (VP (VBN:[704..712] proposed)
+          (NP-1 (-NONE-:[712..712] *))
+          (PP (IN:[713..715] as)
+            (NP
+              (NP (DT:[716..718] an) (JJ:[719..728] important)
+                  (NN:[729..733] step))
+              (PP (IN:[734..736] in)
+                (NP (NN:[737..748] oncogenesis))))))))
+    (.:[748..749] .)))
+
+;sentence 6 Span:750..895
+;Stabilization may occur through  activating mutations in exon-3 at the
+;phosphorylation sites for ubiquitination  and degradation of beta-catenin.
+;[794..803]:variation-event:"mutations"
+;[807..813]:variation-location:"exon-3"
+;[882..894]:gene-protein:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (NN:[750..763] Stabilization))
+    (VP (MD:[764..767] may)
+      (VP (VB:[768..773] occur)
+        (PP (IN:[774..781] through)
+          (NP
+            (NP (VBG:[783..793] activating) (NNS:[794..803] mutations))
+            (PP (IN:[804..806] in)
+              (NP (NN:[807..813] exon-3)))))
+        (PP-LOC (IN:[814..816] at)
+          (NP
+            (NP (DT:[817..820] the) (NN:[821..836] phosphorylation)
+                (NNS:[837..842] sites))
+            (PP (IN:[843..846] for)
+              (NP
+                (NP (NN:[847..861] ubiquitination) (CC:[863..866] and)
+                    (NN:[867..878] degradation))
+                (PP (IN:[879..881] of)
+                  (NP (NN:[882..894] beta-catenin)))))))))
+    (.:[894..895] .)))
+
+;sentence 7 Span:896..1170
+;Immunohistochemical subcellular localization of  beta-catenin and mutational
+;analysis of exon-3 of the beta-catenin gene by  single-strand conformational
+;polymorphism followed by DNA sequencing was  performed on 37 samples from 31
+;patients with anaplastic thyroid carcinoma.
+;[945..957]:gene-protein:"beta-catenin"
+;[985..991]:variation-location:"exon-3"
+;[999..1011]:gene-rna:"beta-catenin"
+;[1152..1169]:malignancy-type:"thyroid carcinoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (JJ:[896..915] Immunohistochemical) (JJ:[916..927] subcellular)
+            (NN:[928..940] localization))
+        (PP (IN:[941..943] of)
+          (NP (NN:[945..957] beta-catenin))))
+      (CC:[958..961] and)
+      (NP
+        (NP (JJ:[962..972] mutational) (NN:[973..981] analysis))
+        (PP (IN:[982..984] of)
+          (NP
+            (NP (NN:[985..991] exon-3))
+            (PP (IN:[992..994] of)
+              (NP (DT:[995..998] the) (NN:[999..1011] beta-catenin)
+                  (NN:[1012..1016] gene)))))
+        (PP (IN:[1017..1019] by)
+          (NP
+            (NP
+              (NML (JJ:[1021..1027] single) (HYPH:[1027..1028] -)
+                   (NN:[1028..1034] strand))
+              (JJ:[1035..1049] conformational) (NN:[1050..1062] polymorphism))
+            (VP (VBN:[1063..1071] followed)
+              (NP (-NONE-:[1071..1071] *))
+              (PP (IN:[1072..1074] by)
+                (NP-LGS (NN:[1075..1078] DNA) (NN:[1079..1089] sequencing))))))))
+    (VP (VBD:[1090..1093] was)
+      (VP (VBN:[1095..1104] performed)
+        (NP-1 (-NONE-:[1104..1104] *))
+        (PP (IN:[1105..1107] on)
+          (NP
+            (NP (CD:[1108..1110] 37) (NNS:[1111..1118] samples))
+            (PP (IN:[1119..1123] from)
+              (NP
+                (NP (CD:[1124..1126] 31) (NNS:[1127..1135] patients))
+                (PP (IN:[1136..1140] with)
+                  (NP (JJ:[1141..1151] anaplastic)
+                     (NN:[1152..1159] thyroid) (NN:[1160..1169] carcinoma)))))))))
+    (.:[1169..1170] .)))
+
+;sentence 8 Span:1172..1267
+;Immunofluorescent staining showed nuclear localization in 15 (42%) of the 36 
+;samples examined.
+(SENT
+  (S
+    (NP-SBJ (JJ:[1172..1189] Immunofluorescent) (NN:[1190..1198] staining))
+    (VP (VBD:[1199..1205] showed)
+      (NP (JJ:[1206..1213] nuclear) (NN:[1214..1226] localization))
+      (PP (IN:[1227..1229] in)
+        (NP
+          (NP (CD:[1230..1232] 15)
+            (PRN (-LRB-:[1233..1234] -LRB-)
+              (NP (CD:[1234..1236] 42) (NN:[1236..1237] %))
+              (-RRB-:[1237..1238] -RRB-)))
+          (PP (IN:[1239..1241] of)
+            (NP
+              (NP (DT:[1242..1245] the) (CD:[1246..1248] 36)
+                  (NNS:[1250..1257] samples))
+              (VP (VBN:[1258..1266] examined)
+                (NP (-NONE-:[1266..1266] *))))))))
+    (.:[1266..1267] .)))
+
+;sentence 9 Span:1268..1434
+;Nucleotide sequencing of mobility shifts detected by  single-strand
+;conformational polymorphism revealed somatic alterations in 19  (61%) of the
+;31 patients analyzed.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1268..1278] Nucleotide) (NN:[1279..1289] sequencing))
+      (PP (IN:[1290..1292] of)
+        (NP
+          (NP (NN:[1293..1301] mobility) (NNS:[1302..1308] shifts))
+          (VP (VBN:[1309..1317] detected)
+            (NP (-NONE-:[1317..1317] *))
+            (PP-MNR (IN:[1318..1320] by)
+              (NP
+                (NML (JJ:[1322..1328] single) (HYPH:[1328..1329] -)
+                     (NN:[1329..1335] strand))
+                (JJ:[1336..1350] conformational) (NN:[1351..1363] polymorphism)))))))
+    (VP (VBD:[1364..1372] revealed)
+      (NP
+        (NP (JJ:[1373..1380] somatic) (NNS:[1381..1392] alterations))
+        (PP (IN:[1393..1395] in)
+          (NP
+            (NP (CD:[1396..1398] 19)
+              (PRN (-LRB-:[1400..1401] -LRB-)
+                (NP (CD:[1401..1403] 61) (NN:[1403..1404] %))
+                (-RRB-:[1404..1405] -RRB-)))
+            (PP (IN:[1406..1408] of)
+              (NP
+                (NP (DT:[1409..1412] the) (CD:[1413..1415] 31)
+                    (NNS:[1416..1424] patients))
+                (VP (VBN:[1425..1433] analyzed)
+                  (NP (-NONE-:[1433..1433] *)))))))))
+    (.:[1433..1434] .)))
+
+;sentence 10 Span:1435..1625
+;We conclude that mutations in beta-catenin  are common in anaplastic thyroid
+;cancer and that they may activate  transcription, as illustrated by frequent
+;nuclear localization of the protein.
+;[1465..1477]:gene-rna:"beta-catenin"
+;[1504..1518]:malignancy-type:"thyroid cancer"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1435..1437] We))
+    (VP (VBP:[1438..1446] conclude)
+      (SBAR
+        (SBAR (IN:[1447..1451] that)
+          (S
+            (NP-SBJ
+              (NP (NNS:[1452..1461] mutations))
+              (PP (IN:[1462..1464] in)
+                (NP (NN:[1465..1477] beta-catenin))))
+            (VP (VBP:[1479..1482] are)
+              (ADJP-PRD (JJ:[1483..1489] common))
+              (PP (IN:[1490..1492] in)
+                (NP (JJ:[1493..1503] anaplastic)
+                   (NN:[1504..1511] thyroid) (NN:[1512..1518] cancer))))))
+        (CC:[1519..1522] and)
+        (SBAR (IN:[1523..1527] that)
+          (S
+            (NP-SBJ (PRP:[1528..1532] they))
+            (VP (MD:[1533..1536] may)
+              (VP (VB:[1537..1545] activate)
+                (NP (NN:[1547..1560] transcription))
+                (,:[1560..1561] ,)
+                (SBAR (IN:[1562..1564] as)
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1564..1564] *))
+                    (VP (VBN:[1565..1576] illustrated)
+                      (NP-1 (-NONE-:[1576..1576] *))
+                      (PP (IN:[1577..1579] by)
+                        (NP
+                          (NP (JJ:[1580..1588] frequent)
+                              (JJ:[1589..1596] nuclear)
+                              (NN:[1597..1609] localization))
+                          (PP (IN:[1610..1612] of)
+                            (NP (DT:[1613..1616] the) (NN:[1617..1624] protein))))))))))))))
+    (.:[1624..1625] .)))
+
+;sentence 11 Span:1627..1762
+;These findings support the idea that beta-catenin acts as an oncogene and 
+;contributes to the highly aggressive behavior of this tumor.
+;[1664..1676]:gene-rna:"beta-catenin"
+(SENT
+  (S
+    (NP-SBJ (DT:[1627..1632] These) (NNS:[1633..1641] findings))
+    (VP (VBP:[1642..1649] support)
+      (NP (DT:[1650..1653] the) (NN:[1654..1658] idea)
+        (SBAR (IN:[1659..1663] that)
+          (S
+            (NP-SBJ (NN:[1664..1676] beta-catenin))
+            (VP
+              (VP (VBZ:[1677..1681] acts)
+                (PP (IN:[1682..1684] as)
+                  (NP (DT:[1685..1687] an) (NN:[1688..1696] oncogene))))
+              (CC:[1697..1700] and)
+              (VP (VBZ:[1702..1713] contributes)
+                (PP (TO:[1714..1716] to)
+                  (NP
+                    (NP (DT:[1717..1720] the)
+                      (ADJP (RB:[1721..1727] highly)
+                            (JJ:[1728..1738] aggressive))
+                      (NN:[1739..1747] behavior))
+                    (PP (IN:[1748..1750] of)
+                      (NP (DT:[1751..1755] this) (NN:[1756..1761] tumor)))))))))))
+    (.:[1761..1762] .)))
+
+;section 12 Span:1766..1811
+;PMID: 10213482 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1766..1770] PMID) (::[1770..1771] :) (CD:[1772..1780] 10213482)
+        (NN:[1781..1782] -LSB-) (NNP:[1782..1788] PubMed) (::[1789..1790] -)
+        (NN:[1791..1798] indexed) (IN:[1799..1802] for)
+        (NNP:[1803..1811] MEDLINE-RSB-)))

@@ -1,0 +1,407 @@
+;PMID: 1388041
+;source_file_862.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..138] = [t:48..138]
+;2)section:[e:142..198] = [t:142..197]
+;3)section:[e:202..313] = [t:202..313]
+;4)sentence:[e:317..409] = [t:317..409]
+;5)sentence:[e:410..553] = [t:410..553]
+;6)sentence:[e:554..727] = [t:554..727]
+;7)sentence:[e:728..866] = [t:728..866]
+;8)sentence:[e:867..1009] = [t:867..1009]
+;9)sentence:[e:1010..1114] = [t:1010..1114]
+;10)sentence:[e:1115..1257] = [t:1115..1257]
+;11)sentence:[e:1258..1435] = [t:1258..1435]
+;12)sentence:[e:1436..1547] = [t:1436..1547]
+;13)sentence:[e:1548..1695] = [t:1548..1695]
+;14)section:[e:1699..1743] = [t:1699..1742]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:142..198][t:142..197]
+;ERROR_Section end mismatch[e:1699..1743][t:1699..1742]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[197..198] .
+;ERROR_Token in entity file but not tree[1742..1743] ]
+
+;section 0 Span:0..42
+;Br J Clin Pharmacol. 1992 May;33(5):521-3.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..9] Clin)
+        (NNP:[10..19] Pharmacol) (.:[19..20] .) (CD:[21..25] 1992)
+        (NNP:[26..29] May) (::[29..30] ;) (CD:[30..32] 33)
+        (-LRB-:[32..33] -LRB-) (CD:[33..34] 5) (-RRB-:[34..35] -RRB-)
+        (::[35..36] :) (CD:[36..39] 521) (HYPH:[39..40] -) (CD:[40..41] 3)
+        (.:[41..42] .)))
+
+;sentence 1 Span:48..138
+;The role of cytochrome P4502D6 in the metabolism of paroxetine by human liver
+; microsomes.
+;[60..78]:cyp450:"cytochrome P4502D6"
+;[100..110]:substance:"paroxetine"
+(SENT
+  (NP-HLN
+    (NP (DT:[48..51] The) (NN:[52..56] role))
+    (PP (IN:[57..59] of)
+      (NP (NN:[60..70] cytochrome) (NN:[71..78] P4502D6)))
+    (PP (IN:[79..81] in)
+      (NP
+        (NP (DT:[82..85] the) (NN:[86..96] metabolism))
+        (PP (IN:[97..99] of)
+          (NP (NN:[100..110] paroxetine)))
+        (PP (IN:[111..113] by)
+          (NP (JJ:[114..119] human) (NN:[120..125] liver)
+              (NNS:[127..137] microsomes)))))
+    (.:[137..138] .)))
+
+;section 2 Span:142..197
+;Bloomer JC, Woods FR, Haddock RE, Lennard MS, Tucker GT
+(SEC
+  (FRAG (NNP:[142..149] Bloomer) (NNP:[150..152] JC) (,:[152..153] ,)
+        (NNP:[154..159] Woods) (NNP:[160..162] FR) (,:[162..163] ,)
+        (NNP:[164..171] Haddock) (NNP:[172..174] RE) (,:[174..175] ,)
+        (NNP:[176..183] Lennard) (NNP:[184..186] MS) (,:[186..187] ,)
+        (NNP:[188..194] Tucker) (NNP:[195..197] GT)))
+
+(ORPH .)
+
+;section 3 Span:202..313
+;Department of Drug Metabolism and Pharmacokinetics, SmithKline Beecham 
+;Pharmaceuticals, Welwyn, Hertfordshire.
+(SEC
+  (FRAG (NNP:[202..212] Department) (IN:[213..215] of) (NNP:[216..220] Drug)
+        (NNP:[221..231] Metabolism) (CC:[232..235] and)
+        (NNP:[236..252] Pharmacokinetics) (,:[252..253] ,)
+        (NNP:[254..264] SmithKline) (NNP:[265..272] Beecham)
+        (NNPS:[274..289] Pharmaceuticals) (,:[289..290] ,)
+        (NNPS:[291..297] Welwyn) (,:[297..298] ,) (NNP:[299..312] Hertfordshire)
+        (.:[312..313] .)))
+;ERROR_Orphan Text from Tree File[197..202] .
+
+;sentence 4 Span:317..409
+;Paroxetine is a selective serotonin reuptake inhibitor possessing 
+;anti-depressant activity.
+;[317..327]:substance:"Paroxetine"
+;[333..371]:substance:"selective serotonin reuptake inhibitor"
+(SENT
+  (S
+    (NP-SBJ (NN:[317..327] Paroxetine))
+    (VP (VBZ:[328..330] is)
+      (NP-PRD
+        (NP (DT:[331..332] a)
+           (JJ:[333..342] selective)
+          (NML (NN:[343..352] serotonin) (NN:[353..361] reuptake))
+          (NN:[362..371] inhibitor))
+        (VP (VBG:[372..382] possessing)
+          (NP
+            (NML (AFX:[384..388] anti) (HYPH:[388..389] -)
+                 (NN:[389..399] depressant))
+            (NN:[400..408] activity)))))
+    (.:[408..409] .)))
+
+;sentence 5 Span:410..553
+;Demethylenation of the methylenedioxy phenyl group is  the initial step in
+;its metabolism, the liberated carbon appearing in vitro as  formate.
+;[545..552]:substance:"formate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[410..425] Demethylenation))
+      (PP (IN:[426..428] of)
+        (NP (DT:[429..432] the) (NN:[433..447] methylenedioxy)
+            (JJ:[448..454] phenyl) (NN:[455..460] group))))
+    (VP (VBZ:[461..463] is)
+      (NP-PRD
+        (NP (DT:[465..468] the) (JJ:[469..476] initial) (NN:[477..481] step))
+        (PP (IN:[482..484] in)
+          (NP (PRP$:[485..488] its) (NN:[489..499] metabolism))))
+      (,:[499..500] ,)
+      (S-ADV
+        (NP-SBJ (DT:[501..504] the) (VBN:[505..514] liberated)
+                (NN:[515..521] carbon))
+        (VP (VBG:[522..531] appearing)
+          (ADVP (FW:[532..534] in) (FW:[535..540] vitro))
+          (PP (IN:[541..543] as)
+            (NP (NN:[545..552] formate))))))
+    (.:[552..553] .)))
+
+;sentence 6 Span:554..727
+;A radioassay involving [14C-methylenedioxy] paroxetine was developed  and
+;used to examine the role of cytochrome P4502D6 in paroxetine metabolism by 
+;human liver microsomes.
+;[577..608]:substance:"[14C-methylenedioxy] paroxetine"
+;[656..674]:cyp450:"cytochrome P4502D6"
+;[678..688]:substance:"paroxetine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[554..555] A) (NN:[556..566] radioassay))
+      (VP (VBG:[567..576] involving)
+        (NP (-LRB-:[577..578] -LSB-) (JJ:[578..596] 14C-methylenedioxy)
+            (-RRB-:[596..597] -RSB-) (NN:[598..608] paroxetine))))
+    (VP (VBD:[609..612] was)
+      (VP
+        (VP (VBN:[613..622] developed)
+          (NP-1 (-NONE-:[622..622] *)))
+        (CC:[624..627] and)
+        (VP (VBN:[628..632] used)
+          (S-PRP
+            (NP-SBJ-1 (-NONE-:[632..632] *))
+            (VP (TO:[633..635] to)
+              (VP (VB:[636..643] examine)
+                (NP
+                  (NP (DT:[644..647] the) (NN:[648..652] role))
+                  (PP (IN:[653..655] of)
+                    (NP (NN:[656..666] cytochrome) (NN:[667..674] P4502D6))))
+                (PP-LOC (IN:[675..677] in)
+                  (NP
+                    (NP (NN:[678..688] paroxetine) (NN:[689..699] metabolism))
+                    (PP (IN:[700..702] by)
+                      (NP (JJ:[704..709] human) (NN:[710..715] liver)
+                          (NNS:[716..726] microsomes)))))))))))
+    (.:[726..727] .)))
+
+;sentence 7 Span:728..866
+;The rate of formate production was much higher in  microsomes from an
+;extensive metaboliser of debrisoquine than from a poor  metaboliser.
+;[740..747]:substance:"formate"
+;[808..819]:substance:"metaboliser"
+;[823..835]:substance:"debrisoquine"
+;[854..865]:substance:"metaboliser"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[728..731] The) (NN:[732..736] rate))
+      (PP (IN:[737..739] of)
+        (NP (NN:[740..747] formate) (NN:[748..758] production))))
+    (VP (VBD:[759..762] was)
+      (ADJP-PRD
+        (ADJP (RB:[763..767] much) (JJR:[768..774] higher))
+        (PP-LOC (IN:[775..777] in)
+          (NP
+            (NP (NNS:[779..789] microsomes))
+            (PP (IN:[790..794] from)
+              (NP
+                (NP (DT:[795..797] an) (JJ:[798..807] extensive)
+                    (NN:[808..819] metaboliser))
+                (PP (IN:[820..822] of)
+                  (NP (NN:[823..835] debrisoquine)))))))
+        (PP (IN:[836..840] than)
+          (PP (IN:[841..845] from)
+            (NP (DT:[846..847] a) (JJ:[848..852] poor)
+                (NN:[854..865] metaboliser))))))
+    (.:[865..866] .)))
+
+;sentence 8 Span:867..1009
+;Also, demethylenation of paroxetine was inhibited by the quinidine  and
+;quinine isomer pair in microsomes from the extensive metaboliser only.
+;[892..902]:substance:"paroxetine"
+;[924..933]...[947..953]:substance:"quinidine"..."isomer"
+;[939..953]:substance:"quinine isomer"
+;[992..1003]:substance:"metaboliser"
+(SENT
+  (S
+    (ADVP (RB:[867..871] Also))
+    (,:[871..872] ,)
+    (NP-SBJ-1
+      (NP (NN:[873..888] demethylenation))
+      (PP (IN:[889..891] of)
+        (NP (NN:[892..902] paroxetine))))
+    (VP (VBD:[903..906] was)
+      (VP (VBN:[907..916] inhibited)
+        (NP-1 (-NONE-:[916..916] *))
+        (PP (IN:[917..919] by)
+          (NP-LGS (DT:[920..923] the)
+            (NML
+              (NML (NN:[924..933] quinidine) (CC:[935..938] and)
+                   (NN:[939..946] quinine))
+              (NN:[947..953] isomer) (NN:[954..958] pair))))
+        (PP-LOC (IN:[959..961] in)
+          (NP
+            (NP (NNS:[962..972] microsomes))
+            (PP (IN:[973..977] from)
+              (NP (DT:[978..981] the) (JJ:[982..991] extensive)
+                  (NN:[992..1003] metaboliser)))
+            (ADVP (RB:[1004..1008] only))))))
+    (.:[1008..1009] .)))
+
+;sentence 9 Span:1010..1114
+;These  observations strongly suggested that the process was catalysed by the
+;enzyme  cytochrome P4502D6.
+;[1087..1093]:substance:"enzyme"
+;[1095..1113]:cyp450:"cytochrome P4502D6"
+(SENT
+  (S
+    (NP-SBJ (DT:[1010..1015] These) (NNS:[1017..1029] observations))
+    (VP
+      (ADVP (RB:[1030..1038] strongly))
+      (VBD:[1039..1048] suggested)
+      (SBAR (IN:[1049..1053] that)
+        (S
+          (NP-SBJ-1 (DT:[1054..1057] the) (NN:[1058..1065] process))
+          (VP (VBD:[1066..1069] was)
+            (VP (VBN:[1070..1079] catalysed)
+              (NP-1 (-NONE-:[1079..1079] *))
+              (PP (IN:[1080..1082] by)
+                (NP-LGS
+                  (NP (DT:[1083..1086] the) (NN:[1087..1093] enzyme))
+                  (NP (NN:[1095..1105] cytochrome) (NN:[1106..1113] P4502D6)))))))))
+    (.:[1113..1114] .)))
+
+;sentence 10 Span:1115..1257
+;Metabolism could not be completely inhibited by quinidine,  the residual
+;activity representing the contribution of at least one other  enzyme.
+;[1163..1172]:substance:"quinidine"
+;[1250..1256]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1115..1125] Metabolism))
+    (VP (MD:[1126..1131] could) (RB:[1132..1135] not)
+      (VP (VB:[1136..1138] be)
+        (VP
+          (ADVP (RB:[1139..1149] completely))
+          (VBN:[1150..1159] inhibited)
+          (NP-1 (-NONE-:[1159..1159] *))
+          (PP-MNR (IN:[1160..1162] by)
+            (NP (NN:[1163..1172] quinidine)))
+          (,:[1172..1173] ,)
+          (S-ADV
+            (NP-SBJ (DT:[1175..1178] the) (JJ:[1179..1187] residual)
+                    (NN:[1188..1196] activity))
+            (VP (VBG:[1197..1209] representing)
+              (NP
+                (NP (DT:[1210..1213] the) (NN:[1214..1226] contribution))
+                (PP (IN:[1227..1229] of)
+                  (NP
+                    (QP (IN:[1230..1232] at) (JJS:[1233..1238] least)
+                        (CD:[1239..1242] one))
+                    (JJ:[1243..1248] other) (NN:[1250..1256] enzyme)))))))))
+    (.:[1256..1257] .)))
+
+;sentence 11 Span:1258..1435
+;The ability of microsomes from a poor metaboliser of debrisoquine to 
+;demethylenate paroxetine provided further evidence for the involvement of an 
+;enzyme distinct from P4502D6.
+;[1296..1307]:substance:"metaboliser"
+;[1311..1323]:substance:"debrisoquine"
+;[1328..1352]:substance:"demethylenate paroxetine"
+;[1406..1412]:substance:"enzyme"
+;[1427..1434]:cyp450:"P4502D6"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1258..1261] The) (NN:[1262..1269] ability)
+        (S-1 (-NONE-:[1269..1269] *ICH*)))
+      (PP (IN:[1270..1272] of)
+        (NP
+          (NP (NNS:[1273..1283] microsomes))
+          (PP (IN:[1284..1288] from)
+            (NP
+              (NP (DT:[1289..1290] a) (JJ:[1291..1295] poor)
+                  (NN:[1296..1307] metaboliser))
+              (PP (IN:[1308..1310] of)
+                (NP (NN:[1311..1323] debrisoquine)))))))
+      (S-1
+        (NP-SBJ (-NONE-:[1323..1323] *))
+        (VP (TO:[1324..1326] to)
+          (VP (VB:[1328..1341] demethylenate)
+            (NP (NN:[1342..1352] paroxetine))))))
+    (VP (VBD:[1353..1361] provided)
+      (NP
+        (NP (JJ:[1362..1369] further) (NN:[1370..1378] evidence))
+        (PP (IN:[1379..1382] for)
+          (NP
+            (NP (DT:[1383..1386] the) (NN:[1387..1398] involvement))
+            (PP (IN:[1399..1401] of)
+              (NP
+                (NP (DT:[1402..1404] an) (NN:[1406..1412] enzyme))
+                (ADJP (JJ:[1413..1421] distinct)
+                  (PP (IN:[1422..1426] from)
+                    (NP (NN:[1427..1434] P4502D6))))))))))
+    (.:[1434..1435] .)))
+
+;sentence 12 Span:1436..1547
+;This was confirmed by kinetic analysis of the  process in microsomes from
+;both poor and extensive metabolisers.
+;[1534..1546]:substance:"metabolisers"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[1436..1440] This))
+    (VP (VBD:[1441..1444] was)
+      (VP (VBN:[1445..1454] confirmed)
+        (NP-2 (-NONE-:[1454..1454] *))
+        (PP-MNR (IN:[1455..1457] by)
+          (NP
+            (NP (JJ:[1458..1465] kinetic) (NN:[1466..1474] analysis))
+            (PP (IN:[1475..1477] of)
+              (NP (DT:[1478..1481] the) (NN:[1483..1490] process)))))
+        (PP (IN:[1491..1493] in)
+          (NP
+            (NP (NNS:[1494..1504] microsomes))
+            (PP (IN:[1505..1509] from)
+              (NP (CC:[1510..1514] both)
+                (NML
+                  (NML (JJ:[1515..1519] poor)
+                    (NML-1 (-NONE-:[1519..1519] *P*)))
+                  (CC:[1520..1523] and)
+                  (NML (JJ:[1524..1533] extensive)
+                    (NML-1 (NNS:[1534..1546] metabolisers))))))))))
+    (.:[1546..1547] .)))
+
+;sentence 13 Span:1548..1695
+;It is concluded  that, in man, the initial step of paroxetine metabolism is
+;performed by at least  two enzymes, one of which is cytochrome P4502D6.
+;[1599..1609]:substance:"paroxetine"
+;[1651..1658]:substance:"enzymes"
+;[1676..1694]:cyp450:"cytochrome P4502D6"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[1548..1550] It))
+      (SBAR-3 (-NONE-:[1550..1550] *EXP*)))
+    (VP (VBZ:[1551..1553] is)
+      (VP (VBN:[1554..1563] concluded)
+        (NP-2 (-NONE-:[1563..1563] *))
+        (SBAR-3 (IN:[1565..1569] that) (,:[1569..1570] ,)
+          (S
+            (PP (IN:[1571..1573] in)
+              (NP (NN:[1574..1577] man)))
+            (,:[1577..1578] ,)
+            (NP-SBJ-1
+              (NP (DT:[1579..1582] the) (JJ:[1583..1590] initial)
+                  (NN:[1591..1595] step))
+              (PP (IN:[1596..1598] of)
+                (NP (NN:[1599..1609] paroxetine) (NN:[1610..1620] metabolism))))
+            (VP (VBZ:[1621..1623] is)
+              (VP (VBN:[1624..1633] performed)
+                (NP-1 (-NONE-:[1633..1633] *))
+                (PP (IN:[1634..1636] by)
+                  (NP-LGS
+                    (NP
+                      (QP (IN:[1637..1639] at) (JJS:[1640..1645] least)
+                          (CD:[1647..1650] two))
+                      (NNS:[1651..1658] enzymes))
+                    (,:[1658..1659] ,)
+                    (SBAR
+                      (WHNP-4
+                        (NP (CD:[1660..1663] one))
+                        (WHPP (IN:[1664..1666] of)
+                          (WHNP (WDT:[1667..1672] which))))
+                      (S
+                        (NP-SBJ-4 (-NONE-:[1672..1672] *T*))
+                        (VP (VBZ:[1673..1675] is)
+                          (NP-PRD (NN:[1676..1686] cytochrome)
+                                  (NN:[1687..1694] P4502D6)))))))))))))
+    (.:[1694..1695] .)))
+
+;section 14 Span:1699..1742
+;PMID: 1388041 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1699..1703] PMID) (::[1703..1704] :) (CD:[1705..1712] 1388041)
+        (-LRB-:[1713..1714] -LSB-) (NNP:[1714..1720] PubMed) (::[1721..1722] -)
+        (NN:[1723..1730] indexed) (IN:[1731..1734] for)
+        (NNP:[1735..1742] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1742..EOF] ]
+
+(ORPH -RSB-)

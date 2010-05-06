@@ -1,0 +1,446 @@
+;PMID: 9042254
+;source_file_520.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:47..170] = [t:47..170]
+;2)section:[e:174..284] = [t:174..284]
+;3)section:[e:288..362] = [t:288..362]
+;4)sentence:[e:366..501] = [t:366..501]
+;5)sentence:[e:502..818] = [t:502..818]
+;6)sentence:[e:819..997] = [t:819..997]
+;7)sentence:[e:998..1107] = [t:998..1107]
+;8)sentence:[e:1108..1284] = [t:1108..1284]
+;9)sentence:[e:1285..1372] = [t:1285..1372]
+;10)sentence:[e:1373..1475] = [t:1373..1475]
+;11)sentence:[e:1477..1587] = [t:1477..1587]
+;12)sentence:[e:1588..1718] = [t:1588..1718]
+;13)sentence:[e:1719..1875] = [t:1719..1875]
+;14)section:[e:1879..1923] = [t:1879..1923]
+
+;section 0 Span:0..42
+;Anticancer Res  1996 Nov-Dec;16(6B):3761-6
+(SEC
+  (FRAG (VBG:[0..10] Anticancer) (NNP:[11..14] Res) (CD:[16..20] 1996)
+        (HYPH:[21..25] Nov-) (CD:[25..32] Dec;16-LRB-) (CD:[32..35] 6B-RRB-)
+        (CD:[35..40] :3761) (HYPH:[40..41] -) (CD:[41..42] 6)))
+
+;sentence 1 Span:47..170
+;Concomitant point mutation of tumor suppressor gene p53 and oncogene c-N-ras
+;in  malignant neuroendocrine pancreatic tumor.
+;[59..73]:variation-type:"point mutation"
+;[99..102]:gene-rna:"p53"
+;[116..123]:gene-rna:"c-N-ras"
+;[128..169]:malignancy:"malignant neuroendocrine pancreatic tumor"
+(SENT
+  (NP-HLN
+    (NP (JJ:[47..58] Concomitant)
+       (NN:[59..64] point) (NN:[65..73] mutation))
+    (PP (IN:[74..76] of)
+      (NP
+        (NP
+          (NP (NN:[77..82] tumor) (NN:[83..93] suppressor) (NN:[94..98] gene))
+          (NP (NN:[99..102] p53)))
+        (CC:[103..106] and)
+        (NP
+          (NP (NN:[107..115] oncogene))
+          (NP (NN:[116..123] c-N-ras)))))
+    (PP-LOC (IN:[124..126] in)
+      (NP (JJ:[128..137] malignant) (JJ:[138..152] neuroendocrine)
+          (JJ:[153..163] pancreatic) (NN:[164..169] tumor)))
+    (.:[169..170] .)))
+
+;section 2 Span:174..284
+;Hrascan R, Pavelic K, Pavicic D, Krizanac S, Stajcer-Sittic V, Pecur L,
+;Spaventi  S, Klimpfinger M, Pavelic J.
+(SEC
+  (FRAG (NNP:[174..181] Hrascan) (NNP:[182..184] R,) (NNP:[185..192] Pavelic)
+        (NNP:[193..194] K) (,:[194..195] ,) (NNP:[196..203] Pavicic)
+        (NNP:[204..205] D) (,:[205..206] ,) (NNP:[207..215] Krizanac)
+        (NNP:[216..218] S,) (NNP:[219..226] Stajcer) (HYPH:[226..227] -)
+        (NNP:[227..233] Sittic) (NNP:[234..235] V) (,:[235..236] ,)
+        (NNP:[237..242] Pecur) (NNP:[243..245] L,) (NNP:[246..254] Spaventi)
+        (NNP:[256..258] S,) (NNP:[259..270] Klimpfinger) (NNP:[271..273] M,)
+        (NNP:[274..281] Pavelic) (NNP:[282..284] J.)))
+
+;section 3 Span:288..362
+;Division of Molecular Medicine, Ruder Boskovic Institute, Zagreb, Croatia.
+(SEC
+  (FRAG (NNP:[288..296] Division) (IN:[297..299] of) (NNP:[300..309] Molecular)
+        (NNP:[310..318] Medicine) (,:[318..319] ,) (NNP:[320..325] Ruder)
+        (NNP:[326..334] Boskovic) (NNP:[335..344] Institute) (,:[344..345] ,)
+        (NNP:[346..352] Zagreb) (,:[352..353] ,) (NNP:[354..361] Croatia)
+        (.:[361..362] .)))
+
+;sentence 4 Span:366..501
+;Activation by point mutation of ras family genes as well as point mutations
+;of  the p53 tumor suppressor gene are found in many tumors.
+;[380..394]:variation-type:"point mutation"
+;[398..401]:gene-rna:"ras"
+;[426..441]:variation-type:"point mutations"
+;[450..453]:gene-rna:"p53"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (NN:[366..376] Activation))
+        (PP (IN:[377..379] by)
+          (NP (NN:[380..385] point) (NN:[386..394] mutation)))
+        (PP (IN:[395..397] of)
+          (NP
+            (NML (NN:[398..401] ras) (NN:[402..408] family))
+            (NNS:[409..414] genes))))
+      (CONJP (RB:[415..417] as) (RB:[418..422] well) (IN:[423..425] as))
+      (NP
+        (NP (NN:[426..431] point) (NNS:[432..441] mutations))
+        (PP (IN:[442..444] of)
+          (NP (DT:[446..449] the) (NN:[450..453] p53)
+            (NML (NN:[454..459] tumor) (NN:[460..470] suppressor))
+            (NN:[471..475] gene)))))
+    (VP (VBP:[476..479] are)
+      (VP (VBN:[480..485] found)
+        (NP-1 (-NONE-:[485..485] *))
+        (PP-LOC (IN:[486..488] in)
+          (NP (JJ:[489..493] many) (NNS:[494..500] tumors)))))
+    (.:[500..501] .)))
+
+;sentence 5 Span:502..818
+;Here we describe a rare  case of malignant neuroendocrine pancreatic tumor
+;with multiple metastases in  different organs showing strong positivity for
+;synaptophysin, glucagon-like  peptide 1, pan-cytokeratin, moderate positivity
+;for chromogranin, Phe-5 and  calcitonin and weak positivity for
+;vasointestinal peptide.
+;[535..576]:malignancy:"malignant neuroendocrine pancreatic tumor"
+;[591..601]:malignancy:"metastases"
+;[653..666]:gene-protein:"synaptophysin"
+;[668..692]:gene-protein:"glucagon-like  peptide 1"
+;[694..709]:gene-protein:"pan-cytokeratin"
+;[735..747]:gene-protein:"chromogranin"
+;[749..754]:gene-protein:"Phe-5"
+;[760..770]:gene-protein:"calcitonin"
+;[795..817]:gene-protein:"vasointestinal peptide"
+(SENT
+  (S
+    (ADVP (RB:[502..506] Here))
+    (NP-SBJ (PRP:[507..509] we))
+    (VP (VBP:[510..518] describe)
+      (NP
+        (NP (DT:[519..520] a) (JJ:[521..525] rare) (NN:[527..531] case))
+        (PP (IN:[532..534] of)
+          (NP
+            (NP
+              (NP (JJ:[535..544] malignant) (JJ:[545..559] neuroendocrine)
+                  (JJ:[560..570] pancreatic) (NN:[571..576] tumor))
+              (PP (IN:[577..581] with)
+                (NP
+                  (NP (JJ:[582..590] multiple) (NNS:[591..601] metastases))
+                  (PP-LOC (IN:[602..604] in)
+                    (NP (JJ:[606..615] different) (NNS:[616..622] organs))))))
+            (VP (VBG:[623..630] showing)
+              (NP
+                (NP
+                  (NP (JJ:[631..637] strong) (NN:[638..648] positivity))
+                  (PP (IN:[649..652] for)
+                    (NP (NN:[653..666] synaptophysin))))
+                (,:[666..667] ,)
+                (NP
+                  (ADJP (NN:[668..676] glucagon) (HYPH:[676..677] -)
+                        (JJ:[677..681] like))
+                  (NN:[683..690] peptide) (CD:[691..692] 1))
+                (,:[692..693] ,)
+                (NP (NN:[694..709] pan-cytokeratin))
+                (,:[709..710] ,)
+                (NP
+                  (NP (JJ:[711..719] moderate) (NN:[720..730] positivity))
+                  (PP (IN:[731..734] for)
+                    (NP (NN:[735..747] chromogranin) (,:[747..748] ,)
+                        (NN:[749..754] Phe-5) (CC:[755..758] and)
+                        (NN:[760..770] calcitonin))))
+                (CC:[771..774] and)
+                (NP
+                  (NP (JJ:[775..779] weak) (NN:[780..790] positivity))
+                  (PP (IN:[791..794] for)
+                    (NP (JJ:[795..809] vasointestinal) (NN:[810..817] peptide))))))))))
+    (.:[817..818] .)))
+
+;sentence 6 Span:819..997
+;We found a point  mutation at codon 61 of the c-N-ras oncogene, and point
+;mutations in the p53  tumor suppressor gene in the primary tumor as well as
+;in its metastases in  liver.
+;[830..845]:variation-type:"point  mutation"
+;[849..857]:variation-location:"codon 61"
+;[865..872]:gene-rna:"c-N-ras"
+;[887..902]:variation-type:"point mutations"
+;[910..913]:gene-rna:"p53"
+;[944..957]:malignancy:"primary tumor"
+;[976..996]:malignancy:"metastases in  liver"
+(SENT
+  (S
+    (NP-SBJ (PRP:[819..821] We))
+    (VP (VBD:[822..827] found)
+      (NP
+        (NP
+          (NP (DT:[828..829] a)
+             (NN:[830..835] point) (NN:[837..845] mutation))
+          (PP-LOC (IN:[846..848] at)
+            (NP
+              (NP (NN:[849..854] codon) (CD:[855..857] 61))
+              (PP (IN:[858..860] of)
+                (NP (DT:[861..864] the) (NN:[865..872] c-N-ras)
+                    (NN:[873..881] oncogene))))))
+        (,:[881..882] ,) (CC:[883..886] and)
+        (NP
+          (NP (NN:[887..892] point) (NNS:[893..902] mutations))
+          (PP-LOC (IN:[903..905] in)
+            (NP (DT:[906..909] the) (NN:[910..913] p53)
+              (NML (NN:[915..920] tumor) (NN:[921..931] suppressor))
+              (NN:[932..936] gene)))
+          (PP-LOC
+            (PP (IN:[937..939] in)
+              (NP (DT:[940..943] the)
+                 (JJ:[944..951] primary) (NN:[952..957] tumor)))
+            (CONJP (RB:[958..960] as) (RB:[961..965] well) (IN:[966..968] as))
+            (PP (IN:[969..971] in)
+              (NP
+                (NP (PRP$:[972..975] its) (NNS:[976..986] metastases))
+                (PP (IN:[987..989] in)
+                  (NP (NN:[991..996] liver)))))))))
+    (.:[996..997] .)))
+
+;sentence 7 Span:998..1107
+;The mutation in the c-N-ras gene was a cytosine to adenine transversion, 
+;resulting in the amino-acid lysine.
+;[1002..1010]:variation-event:"mutation"
+;[1018..1025]:gene-rna:"c-N-ras"
+;[1037..1045]:variation-state-original:"cytosine"
+;[1049..1056]:variation-state-altered:"adenine"
+;[1057..1069]:variation-type:"transversion"
+;[1100..1106]:variation-state-altered:"lysine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[998..1001] The) (NN:[1002..1010] mutation))
+      (PP-LOC (IN:[1011..1013] in)
+        (NP (DT:[1014..1017] the) (NN:[1018..1025] c-N-ras)
+            (NN:[1026..1030] gene))))
+    (VP (VBD:[1031..1034] was)
+      (NP-PRD
+        (NP (DT:[1035..1036] a)
+          (NML
+            (NML (NN:[1037..1045] cytosine))
+            (PP (TO:[1046..1048] to)
+              (NP (NN:[1049..1056] adenine))))
+          (NN:[1057..1069] transversion))
+        (,:[1069..1070] ,)
+        (VP (VBG:[1072..1081] resulting)
+          (PP-CLR (IN:[1082..1084] in)
+            (NP
+              (NP (DT:[1085..1088] the) (JJ:[1089..1094] amino)
+                  (HYPH:[1094..1095] -) (NN:[1095..1099] acid))
+              (NP (NN:[1100..1106] lysine)))))))
+    (.:[1106..1107] .)))
+
+;sentence 8 Span:1108..1284
+;Allele specific hybridization showed that  the mutation involved one of two
+;c-N-ras alleles as the oligonucleotide for the  normal codon also hybridized
+;to amplified tumor DNA.
+;[1155..1163]:variation-event:"mutation"
+;[1184..1191]:gene-rna:"c-N-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (ADJP (NN:[1108..1114] Allele) (JJ:[1115..1123] specific))
+      (NN:[1124..1137] hybridization))
+    (VP (VBD:[1138..1144] showed)
+      (SBAR (IN:[1145..1149] that)
+        (S
+          (NP-SBJ (DT:[1151..1154] the) (NN:[1155..1163] mutation))
+          (VP (VBD:[1164..1172] involved)
+            (NP
+              (NP (CD:[1173..1176] one))
+              (PP (IN:[1177..1179] of)
+                (NP (CD:[1180..1183] two) (NN:[1184..1191] c-N-ras)
+                    (NNS:[1192..1199] alleles))))
+            (SBAR-ADV (IN:[1200..1202] as)
+              (S
+                (NP-SBJ
+                  (NP (DT:[1203..1206] the) (NN:[1207..1222] oligonucleotide))
+                  (PP (IN:[1223..1226] for)
+                    (NP (DT:[1227..1230] the) (JJ:[1232..1238] normal)
+                        (NN:[1239..1244] codon))))
+                (ADVP (RB:[1245..1249] also))
+                (VP (VBD:[1250..1260] hybridized)
+                  (PP-CLR (TO:[1261..1263] to)
+                    (NP (VBN:[1264..1273] amplified) (NN:[1274..1279] tumor)
+                        (NN:[1280..1283] DNA))))))))))
+    (.:[1283..1284] .)))
+
+;sentence 9 Span:1285..1372
+;Concomitant mutation of the  p53 tumor suppressor gene at codons 248 and 249
+;was found.
+;[1297..1305]:variation-event:"mutation"
+;[1314..1317]:gene-rna:"p53"
+;[1343..1353]:variation-location:"codons 248"
+;[1343..1349]...[1358..1361]:variation-location:"codons"..."249"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[1285..1296] Concomitant) (NN:[1297..1305] mutation))
+      (PP (IN:[1306..1308] of)
+        (NP (DT:[1309..1312] the) (NN:[1314..1317] p53)
+          (NML (NN:[1318..1323] tumor) (NN:[1324..1334] suppressor))
+          (NN:[1335..1339] gene)))
+      (PP-LOC (IN:[1340..1342] at)
+        (NP
+          (NP
+            (NML-1 (NNS:[1343..1349] codons))
+            (CD:[1350..1353] 248))
+          (CC:[1354..1357] and)
+          (NP
+            (NML-1 (-NONE-:[1357..1357] *P*))
+            (CD:[1358..1361] 249)))))
+    (VP (VBD:[1362..1365] was)
+      (VP (VBN:[1366..1371] found)
+        (NP-2 (-NONE-:[1371..1371] *))))
+    (.:[1371..1372] .)))
+
+;sentence 10 Span:1373..1475
+;The mutation in codon  248 was a cytosine to guanine transversion resulting
+;in the amino-acid glycine.
+;[1377..1385]:variation-event:"mutation"
+;[1389..1399]:variation-location:"codon  248"
+;[1406..1414]:variation-state-original:"cytosine"
+;[1418..1425]:variation-state-altered:"guanine"
+;[1426..1438]:variation-type:"transversion"
+;[1467..1474]:variation-state-altered:"glycine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1373..1376] The) (NN:[1377..1385] mutation))
+      (PP-LOC (IN:[1386..1388] in)
+        (NP (NN:[1389..1394] codon) (CD:[1396..1399] 248))))
+    (VP (VBD:[1400..1403] was)
+      (NP-PRD
+        (NP (DT:[1404..1405] a)
+          (NML
+            (NML (NN:[1406..1414] cytosine))
+            (PP (TO:[1415..1417] to)
+              (NP (NN:[1418..1425] guanine))))
+          (NN:[1426..1438] transversion))
+        (VP (VBG:[1439..1448] resulting)
+          (PP-CLR (IN:[1449..1451] in)
+            (NP
+              (NP (DT:[1452..1455] the) (JJ:[1456..1461] amino)
+                  (HYPH:[1461..1462] -) (NN:[1462..1466] acid))
+              (NP (NN:[1467..1474] glycine)))))))
+    (.:[1474..1475] .)))
+
+;sentence 11 Span:1477..1587
+;The mutation in codon 249 was a third base, G- > T, transversion leading to a
+; change from arginine to serine.
+;[1481..1489]:variation-event:"mutation"
+;[1493..1502]...[1509..1519]:variation-location:"codon 249"..."third base"
+;[1521..1522]:variation-state-original:"G"
+;[1526..1527]:variation-state-altered:"T"
+;[1529..1541]:variation-type:"transversion"
+;[1568..1576]:variation-state-original:"arginine"
+;[1580..1586]:variation-state-altered:"serine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1477..1480] The) (NN:[1481..1489] mutation))
+      (PP-LOC (IN:[1490..1492] in)
+        (NP (NN:[1493..1498] codon) (CD:[1499..1502] 249))))
+    (VP (VBD:[1503..1506] was)
+      (NP-PRD
+        (NP (DT:[1507..1508] a)
+          (NML (JJ:[1509..1514] third) (NN:[1515..1519] base))
+          (,:[1519..1520] ,)
+          (NML
+            (NML (NN:[1521..1522] G))
+            (PP (SYM:[1522..1523] -) (SYM:[1524..1525] >)
+              (NP (NN:[1526..1527] T))))
+          (,:[1527..1528] ,) (NN:[1529..1541] transversion))
+        (VP (VBG:[1542..1549] leading)
+          (PP (TO:[1550..1552] to)
+            (NP
+              (NP (DT:[1553..1554] a) (NN:[1556..1562] change))
+              (PP (IN:[1563..1567] from)
+                (NP (NN:[1568..1576] arginine)))
+              (PP (TO:[1577..1579] to)
+                (NP (NN:[1580..1586] serine))))))))
+    (.:[1586..1587] .)))
+
+;sentence 12 Span:1588..1718
+;This is the first time that concomitant point  mutations in c-N-ras and p53
+;have been found in a neuroendocrine pancreatic  tumor.
+;[1628..1644]:variation-type:"point  mutations"
+;[1648..1655]:gene-rna:"c-N-ras"
+;[1660..1663]:gene-rna:"p53"
+;[1685..1717]:malignancy:"neuroendocrine pancreatic  tumor"
+(SENT
+  (S
+    (NP-SBJ (DT:[1588..1592] This))
+    (VP (VBZ:[1593..1595] is)
+      (NP-PRD (DT:[1596..1599] the) (JJ:[1600..1605] first)
+              (NN:[1606..1610] time)
+        (SBAR (IN:[1611..1615] that)
+          (S
+            (NP-SBJ-1
+              (NP (JJ:[1616..1627] concomitant)
+                 (NN:[1628..1633] point) (NNS:[1635..1644] mutations))
+              (PP-LOC (IN:[1645..1647] in)
+                (NP (NN:[1648..1655] c-N-ras) (CC:[1656..1659] and)
+                    (NN:[1660..1663] p53))))
+            (VP (VBP:[1664..1668] have)
+              (VP (VBN:[1669..1673] been)
+                (VP (VBN:[1674..1679] found)
+                  (NP-1 (-NONE-:[1679..1679] *))
+                  (PP-LOC (IN:[1680..1682] in)
+                    (NP (DT:[1683..1684] a)
+                       (JJ:[1685..1699] neuroendocrine)
+                       (JJ:[1700..1710] pancreatic) (NN:[1712..1717] tumor))))))))))
+    (.:[1717..1718] .)))
+
+;sentence 13 Span:1719..1875
+;Based upon these and our previous results, we concluded that these  genetic
+;changes may play a role in the development of this particular pancreatic 
+;tumor.
+;[1857..1874]:malignancy:"pancreatic  tumor"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1719..1719] *))
+      (VP (VBN:[1719..1724] Based)
+        (PP-CLR (IN:[1725..1729] upon)
+          (NP
+            (NP (DT:[1730..1735] these))
+            (CC:[1736..1739] and)
+            (NP (PRP$:[1740..1743] our) (JJ:[1744..1752] previous)
+                (NNS:[1753..1760] results))))))
+    (,:[1760..1761] ,)
+    (NP-SBJ (PRP:[1762..1764] we))
+    (VP (VBD:[1765..1774] concluded)
+      (SBAR (IN:[1775..1779] that)
+        (S
+          (NP-SBJ (DT:[1780..1785] these) (JJ:[1787..1794] genetic)
+                  (NNS:[1795..1802] changes))
+          (VP (MD:[1803..1806] may)
+            (VP (VB:[1807..1811] play)
+              (NP (DT:[1812..1813] a) (NN:[1814..1818] role))
+              (PP (IN:[1819..1821] in)
+                (NP
+                  (NP (DT:[1822..1825] the) (NN:[1826..1837] development))
+                  (PP (IN:[1838..1840] of)
+                    (NP (DT:[1841..1845] this) (JJ:[1846..1856] particular)
+                       (JJ:[1857..1867] pancreatic) (NN:[1869..1874] tumor))))))))))
+    (.:[1874..1875] .)))
+
+;section 14 Span:1879..1923
+;PMID: 9042254 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1879..1883] PMID) (::[1883..1884] :) (CD:[1885..1892] 9042254)
+        (IN:[1893..1894] -LSB-) (NNP:[1894..1900] PubMed) (HYPH:[1901..1902] -)
+        (JJ:[1903..1910] indexed) (IN:[1911..1914] for)
+        (NNP:[1915..1923] MEDLINE-RSB-)))

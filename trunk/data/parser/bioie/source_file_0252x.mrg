@@ -1,0 +1,169 @@
+;PMID: 3038106
+;source_file_1237.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..53] = [t:0..53]
+;1)sentence:[e:58..135] = [t:58..135]
+;2)section:[e:139..181] = [t:139..181]
+;3)sentence:[e:185..423] = [t:185..423]
+;4)sentence:[e:424..623] = [t:424..623]
+;5)sentence:[e:624..711] = [t:624..711]
+;6)section:[e:715..759] = [t:715..759]
+
+;section 0 Span:0..53
+;Biochem Biophys Res Commun  1987 Jul 15;146(1):247-52
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (CD:[28..32] 1987) (NNP:[33..36] Jul)
+        (CD:[37..39] 15) (CD:[39..44] ;146-LRB-) (CD:[44..45] 1)
+        (-RRB-:[45..46] -RRB-) (CD:[46..50] :247) (::[50..51] -)
+        (CD:[51..53] 52)))
+
+;sentence 1 Span:58..135
+;A point mutation at codon 13 of the N-ras oncogene in a human stomach
+;cancer.
+;[60..74]:variation-type:"point mutation"
+;[78..86]:variation-location:"codon 13"
+;[94..99]:gene-rna:"N-ras"
+;[120..134]:malignancy:"stomach cancer"
+(SENT
+  (NP-HLN
+    (NP (DT:[58..59] A)
+       (NN:[60..65] point) (NN:[66..74] mutation))
+    (PP-LOC (IN:[75..77] at)
+      (NP
+        (NP (NN:[78..83] codon) (CD:[84..86] 13))
+        (PP (IN:[87..89] of)
+          (NP (DT:[90..93] the) (NN:[94..99] N-ras) (NN:[100..108] oncogene)))))
+    (PP-LOC (IN:[109..111] in)
+      (NP (DT:[112..113] a) (JJ:[114..119] human)
+         (NN:[120..127] stomach) (NN:[128..134] cancer)))
+    (.:[134..135] .)))
+
+;section 2 Span:139..181
+;Nishida J, Kobayashi Y, Hirai H, Takaku F.
+(SEC
+  (FRAG (NNP:[139..146] Nishida) (NNP:[147..149] J,) (NNP:[150..159] Kobayashi)
+        (NNP:[160..161] Y) (,:[161..162] ,) (NNP:[163..168] Hirai)
+        (NNP:[169..170] H) (,:[170..171] ,) (NNP:[172..178] Takaku)
+        (NNP:[179..181] F.)))
+
+;sentence 3 Span:185..423
+;A surgically removed human stomach cancer with the histological diagnosis of 
+;poorly differentiated adenocarcinoma contained an activated N-ras oncogene 
+;detected by an in vivo selection assay in nude mice using transfected NIH3T3 
+;cells.
+;[212..226]:malignancy:"stomach cancer"
+;[263..299]:malignancy:"poorly differentiated adenocarcinoma"
+;[323..328]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[185..186] A)
+        (ADJP (RB:[187..197] surgically) (VBN:[198..205] removed))
+        (JJ:[206..211] human)
+         (NN:[212..219] stomach) (NN:[220..226] cancer))
+      (PP (IN:[227..231] with)
+        (NP
+          (NP (DT:[232..235] the) (JJ:[236..248] histological)
+              (NN:[249..258] diagnosis))
+          (PP (IN:[259..261] of)
+            (NP
+              (ADJP (RB:[263..269] poorly) (VBN:[270..284] differentiated))
+              (NN:[285..299] adenocarcinoma))))))
+    (VP (VBD:[300..309] contained)
+      (NP
+        (NP (DT:[310..312] an) (VBN:[313..322] activated) (NN:[323..328] N-ras)
+            (NN:[329..337] oncogene))
+        (VP (VBN:[339..347] detected)
+          (NP (-NONE-:[347..347] *))
+          (PP-MNR (IN:[348..350] by)
+            (NP (DT:[351..353] an)
+              (ADJP (FW:[354..356] in) (FW:[357..361] vivo))
+              (NN:[362..371] selection) (NN:[372..377] assay)))
+          (PP (IN:[378..380] in)
+            (NP (JJ:[381..385] nude) (NNS:[386..390] mice)))
+          (S-ADV
+            (NP-SBJ (-NONE-:[390..390] *))
+            (VP (VBG:[391..396] using)
+              (NP (VBN:[397..408] transfected) (NN:[409..415] NIH3T3)
+                  (NNS:[417..422] cells)))))))
+    (.:[422..423] .)))
+
+;sentence 4 Span:424..623
+;Analysis using synthetic 20-mer oligonucleotide probes revealed a point 
+;mutation from G to C at the first letter of codon 13 of the N-ras gene
+;resulting  in the substitution of arginine for glycine.
+;[490..505]:variation-type:"point  mutation"
+;[511..512]:variation-state-original:"G"
+;[516..517]:variation-state-altered:"C"
+;[525..549]:variation-location:"first letter of codon 13"
+;[557..562]:gene-rna:"N-ras"
+;[586..598]:variation-type:"substitution"
+;[602..610]:variation-state-altered:"arginine"
+;[615..622]:variation-state-original:"glycine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[424..432] Analysis))
+      (VP (VBG:[433..438] using)
+        (NP (JJ:[439..448] synthetic)
+          (NML (CD:[449..451] 20) (HYPH:[451..452] -) (NN:[452..455] mer))
+          (NN:[456..471] oligonucleotide) (NNS:[472..478] probes))))
+    (VP (VBD:[479..487] revealed)
+      (NP
+        (NP (DT:[488..489] a)
+           (NN:[490..495] point) (NN:[497..505] mutation))
+        (PP (IN:[506..510] from)
+          (NP (NN:[511..512] G)))
+        (PP (TO:[513..515] to)
+          (NP (NN:[516..517] C))))
+      (PP-LOC (IN:[518..520] at)
+        (NP
+          (NP (DT:[521..524] the) (JJ:[525..530] first) (NN:[531..537] letter))
+          (PP (IN:[538..540] of)
+            (NP
+              (NP (NN:[541..546] codon) (CD:[547..549] 13))
+              (PP (IN:[550..552] of)
+                (NP (DT:[553..556] the) (NN:[557..562] N-ras)
+                    (NN:[563..567] gene)))))))
+      (S-ADV
+        (NP-SBJ (-NONE-:[567..567] *))
+        (VP (VBG:[568..577] resulting)
+          (PP-CLR (IN:[579..581] in)
+            (NP
+              (NP (DT:[582..585] the) (NN:[586..598] substitution))
+              (PP (IN:[599..601] of)
+                (NP (NN:[602..610] arginine)))
+              (PP (IN:[611..614] for)
+                (NP (NN:[615..622] glycine))))))))
+    (.:[622..623] .)))
+
+;sentence 5 Span:624..711
+;This is the first observation of an  activated N-ras oncogene in human
+;stomach cancers.
+;[671..676]:gene-rna:"N-ras"
+;[695..710]:malignancy:"stomach cancers"
+(SENT
+  (S
+    (NP-SBJ (DT:[624..628] This))
+    (VP (VBZ:[629..631] is)
+      (NP-PRD
+        (NP (DT:[632..635] the) (JJ:[636..641] first)
+            (NN:[642..653] observation))
+        (PP (IN:[654..656] of)
+          (NP (DT:[657..659] an) (VBN:[661..670] activated)
+              (NN:[671..676] N-ras) (NN:[677..685] oncogene)))
+        (PP (IN:[686..688] in)
+          (NP (JJ:[689..694] human)
+             (NN:[695..702] stomach) (NNS:[703..710] cancers)))))
+    (.:[710..711] .)))
+
+;section 6 Span:715..759
+;PMID: 3038106 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[715..719] PMID) (::[719..720] :) (CD:[721..728] 3038106)
+        (NN:[729..730] -LSB-) (NNP:[730..736] PubMed) (::[737..738] -)
+        (NN:[739..746] indexed) (IN:[747..750] for)
+        (NNP:[751..759] MEDLINE-RSB-)))

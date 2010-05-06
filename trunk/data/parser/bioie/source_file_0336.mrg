@@ -1,0 +1,371 @@
+;PMID: 9756770
+;source_file_630.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..52] = [t:0..52]
+;1)sentence:[e:58..112] = [t:58..112]
+;2)section:[e:116..219] = [t:116..219]
+;3)section:[e:223..378] = [t:223..378]
+;4)sentence:[e:382..487] = [t:382..487]
+;5)sentence:[e:488..708] = [t:488..708]
+;6)sentence:[e:709..952] = [t:709..952]
+;7)sentence:[e:953..1173] = [t:953..1173]
+;8)sentence:[e:1174..1287] = [t:1174..1287]
+;9)sentence:[e:1288..1416] = [t:1288..1416]
+;10)sentence:[e:1417..1531] = [t:1417..1531]
+;11)sentence:[e:1532..1715] = [t:1532..1715]
+;12)section:[e:1719..1763] = [t:1719..1763]
+;Token/POS Errors
+;ERROR_POS mismatch [41..43] t:token e:CD 10
+
+;section 0 Span:0..52
+;Antimicrob Agents Chemother. 1998 Oct;42(10):2645-9.
+(SEC
+  (FRAG (NNP:[0..10] Antimicrob) (NNPS:[11..17] Agents) (NNP:[18..27] Chemother)
+        (.:[27..28] .) (CD:[29..33] 1998) (JJ:[34..39] Oct;4) (CD:[39..40] 2)
+        (NN:[40..41] -LRB-) (token:[41..43] 10) (-RRB-:[43..44] -RRB-)
+        (::[44..45] :) (CD:[45..48] 264) (CD:[48..51] 5-9) (.:[51..52] .)))
+
+;sentence 1 Span:58..112
+;Mechanism of fluconazole resistance in Candida krusei.
+;[71..82]:substance:"fluconazole"
+(SENT
+  (NP-HLN
+    (NP (NN:[58..67] Mechanism))
+    (PP (IN:[68..70] of)
+      (NP (NN:[71..82] fluconazole) (NN:[83..93] resistance)))
+    (PP-LOC (IN:[94..96] in)
+      (NP (NNP:[97..104] Candida) (NNP:[105..111] krusei)))
+    (.:[111..112] .)))
+
+;section 2 Span:116..219
+;Orozco AS, Higginbotham LM, Hitchcock CA, Parkinson T, Falconer D, Ibrahim
+;AS,  Ghannoum MA, Filler SG.
+(SEC
+  (FRAG (NNP:[116..122] Orozco) (NNP:[123..125] AS) (,:[125..126] ,)
+        (NNP:[127..139] Higginbotham) (NNP:[140..142] LM) (,:[142..143] ,)
+        (NNP:[144..153] Hitchcock) (NNP:[154..156] CA) (,:[156..157] ,)
+        (NNP:[158..167] Parkinson) (NNP:[168..169] T) (,:[169..170] ,)
+        (NNP:[171..179] Falconer) (NNP:[180..181] D) (,:[181..182] ,)
+        (NNP:[183..190] Ibrahim) (NNP:[191..193] AS) (,:[193..194] ,)
+        (NNP:[196..204] Ghannoum) (NNP:[205..207] MA) (,:[207..208] ,)
+        (NNP:[209..215] Filler) (NNP:[216..219] SG.)))
+
+;section 3 Span:223..378
+;St. John's Cardiovascular Research Center, Division of Infectious Diseases, 
+;Harbor-UCLA Research and Education Institute, Torrance, California 90502,
+;USA.
+(SEC
+  (FRAG (NNP:[223..225] St) (,:[225..226] .) (NNP:[227..231] John)
+        (POS:[231..233] 's) (NNP:[234..248] Cardiovascular)
+        (NNP:[249..257] Research) (NNP:[258..264] Center) (,:[264..265] ,)
+        (NNP:[266..274] Division) (IN:[275..277] of) (NNP:[278..288] Infectious)
+        (NNP:[289..297] Diseases) (,:[297..298] ,) (NNP:[300..305] Harbo)
+        (NNP:[305..311] r-UCLA) (NNP:[312..320] Research) (CC:[321..324] and)
+        (NNP:[325..334] Education) (NNP:[335..344] Institute) (,:[344..345] ,)
+        (NNP:[346..354] Torrance) (,:[354..355] ,) (NNP:[356..366] California)
+        (CD:[367..372] 90502) (,:[372..373] ,) (NNP:[374..377] USA)
+        (.:[377..378] .)))
+
+;sentence 4 Span:382..487
+;The mechanisms of fluconazole resistance in three clinical isolates of
+;Candida  krusei were investigated.
+;[400..411]:substance:"fluconazole"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[382..385] The) (NNS:[386..396] mechanisms))
+      (PP (IN:[397..399] of)
+        (NP (NN:[400..411] fluconazole) (NN:[412..422] resistance)))
+      (PP-LOC (IN:[423..425] in)
+        (NP
+          (NP (CD:[426..431] three) (JJ:[432..440] clinical)
+              (NNS:[441..449] isolates))
+          (PP (IN:[450..452] of)
+            (NP (NNP:[453..460] Candida) (NNP:[462..468] krusei))))))
+    (VP (VBD:[469..473] were)
+      (NP (VBN:[474..486] investigated)
+        (NP-1 (-NONE-:[486..486] *))))
+    (.:[486..487] .)))
+
+;sentence 5 Span:488..708
+;Analysis of sterols of organisms grown in the absence  and presence of
+;fluconazole demonstrated that the predominant sterol of C.  krusei is
+;ergosterol and that fluconazole inhibits 14alpha-demethylase in this 
+;organism.
+;[500..507]:substance:"sterols"
+;[559..570]:substance:"fluconazole"
+;[605..611]:substance:"sterol"
+;[629..639]:substance:"ergosterol"
+;[649..660]:substance:"fluconazole"
+;[670..689]:substance:"14alpha-demethylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[488..496] Analysis))
+      (PP (IN:[497..499] of)
+        (NP
+          (NP (NNS:[500..507] sterols))
+          (PP (IN:[508..510] of)
+            (NP
+              (NP (NNS:[511..520] organisms))
+              (VP (VBN:[521..526] grown)
+                (NP (-NONE-:[526..526] *))
+                (PP (IN:[527..529] in)
+                  (NP
+                    (NP (DT:[530..533] the) (NN:[534..541] absence)
+                        (CC:[543..546] and) (NN:[547..555] presence))
+                    (PP (IN:[556..558] of)
+                      (NP (NN:[559..570] fluconazole)))))))))))
+    (VP (VBD:[571..583] demonstrated)
+      (SBAR
+        (SBAR (IN:[584..588] that)
+          (S
+            (NP-SBJ
+              (NP (DT:[589..592] the) (JJ:[593..604] predominant)
+                  (NN:[605..611] sterol))
+              (PP (IN:[612..614] of)
+                (NP (NNP:[615..617] C.) (NNP:[619..625] krusei))))
+            (VP (VBZ:[626..628] is)
+              (NP-PRD (NN:[629..639] ergosterol)))))
+        (CC:[640..643] and)
+        (SBAR (IN:[644..648] that)
+          (S
+            (NP-SBJ (NN:[649..660] fluconazole))
+            (VP (VBZ:[661..669] inhibits)
+              (NP (NN:[670..689] 14alpha-demethylase))
+              (PP (IN:[690..692] in)
+                (NP (DT:[693..697] this) (NN:[699..707] organism))))))))
+    (.:[707..708] .)))
+
+;sentence 6 Span:709..952
+;The 14alpha-demethylase activity in cell extracts of C. krusei was 16-  to
+;46-fold more resistant to inhibition by fluconazole than was 
+;14alpha-demethylase activity in cell extracts of two fluconazole-susceptible 
+;strains of Candida albicans.
+;[713..732]:substance:"14alpha-demethylase"
+;[776..791]:quantitative-value:"16-  to 46-fold"
+;[824..835]:substance:"fluconazole"
+;[846..865]:substance:"14alpha-demethylase"
+;[899..910]:substance:"fluconazole"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[709..712] The) (NN:[713..732] 14alpha-demethylase)
+          (NN:[733..741] activity))
+      (PP-LOC (IN:[742..744] in)
+        (NP
+          (NP (NN:[745..749] cell) (NNS:[750..758] extracts))
+          (PP (IN:[759..761] of)
+            (NP (NNP:[762..764] C.) (NNP:[765..771] krusei))))))
+    (VP (VBD:[772..775] was)
+      (ADJP-PRD
+        (ADJP
+          (ADVP
+            (QP (CD:[776..778] 16) (HYPH:[778..779] -) (TO:[781..783] to)
+                (CD:[784..786] 46))
+            (HYPH:[786..787] -) (RB:[787..791] fold))
+          (RBR:[792..796] more) (JJ:[797..806] resistant)
+          (PP (TO:[807..809] to)
+            (NP
+              (NP (NN:[810..820] inhibition))
+              (PP (IN:[821..823] by)
+                (NP (NN:[824..835] fluconazole))))))
+        (PP (IN:[836..840] than)
+          (SINV (VBD:[841..844] was)
+            (NP-SBJ
+              (NP (NN:[846..865] 14alpha-demethylase) (NN:[866..874] activity))
+              (PP-LOC (IN:[875..877] in)
+                (NP
+                  (NP (NN:[878..882] cell) (NNS:[883..891] extracts))
+                  (PP (IN:[892..894] of)
+                    (NP
+                      (NP (CD:[895..898] two)
+                        (ADJP (NN:[899..910] fluconazole) (HYPH:[910..911] -)
+                              (JJ:[911..922] susceptible))
+                        (NNS:[924..931] strains))
+                      (PP (IN:[932..934] of)
+                        (NP (NNP:[935..942] Candida) (NNP:[943..951] albicans))))))))
+            (ADJP-PRD (-NONE-:[951..951] *?*))))))
+    (.:[951..952] .)))
+
+;sentence 7 Span:953..1173
+;Comparing the carbon monoxide difference spectra of  microsomes from C.
+;krusei with those of microsomes from C. albicans indicated  that the total
+;cytochrome P-450 content of C. krusei is similar to that of C.  albicans.
+;[967..982]:substance:"carbon monoxide"
+;[1100..1116]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (S-NOM-SBJ
+      (NP-SBJ (-NONE-:[953..953] *))
+      (VP (VBG:[953..962] Comparing)
+        (NP
+          (NP (DT:[963..966] the)
+            (NML (NN:[967..973] carbon) (NN:[974..982] monoxide))
+            (NN:[983..993] difference) (NNS:[994..1001] spectra))
+          (PP (IN:[1002..1004] of)
+            (NP
+              (NP (NNS:[1006..1016] microsomes))
+              (PP (IN:[1017..1021] from)
+                (NP (NNP:[1022..1024] C.) (NNP:[1025..1031] krusei))))))
+        (PP-CLR (IN:[1032..1036] with)
+          (NP
+            (NP (DT:[1037..1042] those))
+            (PP (IN:[1043..1045] of)
+              (NP
+                (NP (NNS:[1046..1056] microsomes))
+                (PP (IN:[1057..1061] from)
+                  (NP (NNP:[1062..1064] C.) (NNP:[1065..1073] albicans)))))))))
+    (VP (VBD:[1074..1083] indicated)
+      (SBAR (IN:[1085..1089] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1090..1093] the)
+              (NML (JJ:[1094..1099] total)
+                 (NN:[1100..1110] cytochrome) (NN:[1111..1116] P-450))
+              (NN:[1117..1124] content))
+            (PP (IN:[1125..1127] of)
+              (NP (NNP:[1128..1130] C.) (NNP:[1131..1137] krusei))))
+          (VP (VBZ:[1138..1140] is)
+            (ADJP-PRD (JJ:[1141..1148] similar)
+              (PP (TO:[1149..1151] to)
+                (NP
+                  (NP (DT:[1152..1156] that))
+                  (PP (IN:[1157..1159] of)
+                    (NP (NNP:[1160..1162] C.) (NNP:[1164..1172] albicans))))))))))
+    (.:[1172..1173] .)))
+
+;sentence 8 Span:1174..1287
+;The Soret absorption maximum in these spectra was located at 448 nm  for C.
+;krusei and at 450 nm for C. albicans.
+;[1235..1238]:quantitative-value:"448"
+;[1239..1241]:quantitative-units:"nm"
+;[1264..1267]:quantitative-value:"450"
+;[1268..1270]:quantitative-units:"nm"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1174..1177] The) (NNP:[1178..1183] Soret)
+          (NN:[1184..1194] absorption) (NN:[1195..1202] maximum))
+      (PP-LOC (IN:[1203..1205] in)
+        (NP (DT:[1206..1211] these) (NNS:[1212..1219] spectra))))
+    (VP (VBD:[1220..1223] was)
+      (VP
+        (VP=1 (VBN:[1224..1231] located)
+          (PP-LOC=2 (IN:[1232..1234] at)
+            (NP (CD:[1235..1238] 448) (NN:[1239..1241] nm)))
+          (PP=3 (IN:[1243..1246] for)
+            (NP (NNP:[1247..1249] C.) (NNP:[1250..1256] krusei))))
+        (CC:[1257..1260] and)
+        (VP=1
+          (PP-LOC=2 (IN:[1261..1263] at)
+            (NP (CD:[1264..1267] 450) (NN:[1268..1270] nm)))
+          (PP=3 (IN:[1271..1274] for)
+            (NP (NNP:[1275..1277] C.) (NNP:[1278..1286] albicans))))))
+    (.:[1286..1287] .)))
+
+;sentence 9 Span:1288..1416
+;Finally, the fluconazole  accumulation of two of the C. krusei isolates was
+;similar to if not greater than  that of C. albicans.
+;[1301..1312]:substance:"fluconazole"
+(SENT
+  (S
+    (ADVP (RB:[1288..1295] Finally))
+    (,:[1295..1296] ,)
+    (NP-SBJ
+      (NP (DT:[1297..1300] the) (NN:[1301..1312] fluconazole)
+          (NN:[1314..1326] accumulation))
+      (PP (IN:[1327..1329] of)
+        (NP
+          (NP (CD:[1330..1333] two))
+          (PP (IN:[1334..1336] of)
+            (NP (DT:[1337..1340] the)
+              (NP (NNP:[1341..1343] C.) (NNP:[1344..1350] krusei))
+              (NNS:[1351..1359] isolates))))))
+    (VP (VBD:[1360..1363] was)
+      (ADJP-PRD
+        (ADJP (JJ:[1364..1371] similar)
+          (PP (TO:[1372..1374] to)
+            (NP-1 (-NONE-:[1374..1374] *RNR*))))
+        (CONJP (IN:[1375..1377] if) (RB:[1378..1381] not))
+        (ADJP (JJR:[1382..1389] greater)
+          (PP (IN:[1390..1394] than)
+            (NP-1 (-NONE-:[1394..1394] *RNR*))))
+        (NP-1
+          (NP (DT:[1396..1400] that))
+          (PP (IN:[1401..1403] of)
+            (NP (NNP:[1404..1406] C.) (NNP:[1407..1415] albicans))))))
+    (.:[1415..1416] .)))
+
+;sentence 10 Span:1417..1531
+;Thus, there are significant qualitative differences between  the
+;14alpha-demethylase of C. albicans and C. krusei.
+;[1482..1501]:substance:"14alpha-demethylase"
+(SENT
+  (S
+    (ADVP (RB:[1417..1421] Thus))
+    (,:[1421..1422] ,)
+    (NP-SBJ (EX:[1423..1428] there))
+    (VP (VBP:[1429..1432] are)
+      (NP-PRD
+        (NP (JJ:[1433..1444] significant) (JJ:[1445..1456] qualitative)
+            (NNS:[1457..1468] differences))
+        (PP (IN:[1469..1476] between)
+          (NP
+            (NP (DT:[1478..1481] the) (NN:[1482..1501] 14alpha-demethylase))
+            (PP (IN:[1502..1504] of)
+              (NP
+                (NP (NNP:[1505..1507] C.) (NNP:[1508..1516] albicans))
+                (CC:[1517..1520] and)
+                (NP (NNP:[1521..1523] C.) (NNP:[1524..1530] krusei))))))))
+    (.:[1530..1531] .)))
+
+;sentence 11 Span:1532..1715
+;In addition, fluconazole  resistance in these strains of C. krusei appears to
+;be mediated predominantly by  a reduced susceptibility of 14alpha-demethylase
+;to inhibition by this drug.
+;[1545..1556]:substance:"fluconazole"
+;[1668..1687]:substance:"14alpha-demethylase"
+;[1710..1714]:substance:"drug"
+(SENT
+  (S
+    (PP (IN:[1532..1534] In)
+      (NP (NN:[1535..1543] addition)))
+    (,:[1543..1544] ,)
+    (NP-SBJ-1
+      (NP (NN:[1545..1556] fluconazole) (NN:[1558..1568] resistance))
+      (PP-LOC (IN:[1569..1571] in)
+        (NP
+          (NP (DT:[1572..1577] these) (NNS:[1578..1585] strains))
+          (PP (IN:[1586..1588] of)
+            (NP (NNP:[1589..1591] C.) (NNP:[1592..1598] krusei))))))
+    (VP (VBZ:[1599..1606] appears)
+      (S
+        (NP-SBJ-1 (-NONE-:[1606..1606] *))
+        (VP (TO:[1607..1609] to)
+          (VP (VB:[1610..1612] be)
+            (VP (VBN:[1613..1621] mediated)
+              (NP-1 (-NONE-:[1621..1621] *))
+              (ADVP (RB:[1622..1635] predominantly))
+              (PP (IN:[1636..1638] by)
+                (NP-LGS
+                  (NP (DT:[1640..1641] a) (JJ:[1642..1649] reduced)
+                      (NN:[1650..1664] susceptibility))
+                  (PP (IN:[1665..1667] of)
+                    (NP (NN:[1668..1687] 14alpha-demethylase)))
+                  (PP (TO:[1688..1690] to)
+                    (NP
+                      (NP (NN:[1691..1701] inhibition))
+                      (PP (IN:[1702..1704] by)
+                        (NP (DT:[1705..1709] this) (NN:[1710..1714] drug))))))))))))
+    (.:[1714..1715] .)))
+
+;section 12 Span:1719..1763
+;PMID: 9756770 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1719..1723] PMID) (::[1723..1724] :) (CD:[1725..1732] 9756770)
+        (NN:[1733..1734] -LSB-) (NNP:[1734..1740] PubMed) (::[1741..1742] -)
+        (NN:[1743..1750] indexed) (IN:[1751..1754] for)
+        (NNP:[1755..1763] MEDLINE-RSB-)))

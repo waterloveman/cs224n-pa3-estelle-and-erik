@@ -1,0 +1,498 @@
+;PMID: 9738576
+;source_file_1398.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:40..148] = [t:40..148]
+;2)section:[e:152..206] = [t:152..206]
+;3)section:[e:210..290] = [t:210..290]
+;4)sentence:[e:294..302] = [t:294..302]
+;5)sentence:[e:303..433] = [t:303..433]
+;6)sentence:[e:434..634] = [t:434..634]
+;7)sentence:[e:635..800] = [t:635..800]
+;8)sentence:[e:801..822] = [t:801..822]
+;9)sentence:[e:823..946] = [t:823..946]
+;10)sentence:[e:947..1088] = [t:947..1088]
+;11)sentence:[e:1089..1097] = [t:1089..1097]
+;12)sentence:[e:1098..1186] = [t:1098..1186]
+;13)sentence:[e:1187..1325] = [t:1187..1325]
+;14)sentence:[e:1326..1431] = [t:1326..1431]
+;15)sentence:[e:1432..1564] = [t:1432..1564]
+;16)sentence:[e:1565..1686] = [t:1565..1686]
+;17)sentence:[e:1687..1698] = [t:1687..1698]
+;18)sentence:[e:1700..1831] = [t:1700..1831]
+;19)sentence:[e:1832..1925] = [t:1832..1925]
+;20)section:[e:1929..1973] = [t:1929..1973]
+
+;section 0 Span:0..35
+;J Clin Oncol  1998 Sep;16(9):3061-8
+(SEC
+  (FRAG (NNP:[0..1] J) (DT:[2..6] Clin) (NNP:[7..12] Oncol) (CD:[14..18] 1998)
+        (.:[19..27] Sep;16-LRB-9) (-RRB-:[27..28] -RRB-) (CD:[28..33] :3061)
+        (::[33..34] -) (CD:[34..35] 8)))
+
+;sentence 1 Span:40..148
+;Detection of K-ras point mutations in sputum from patients with
+;adenocarcinoma  of the lung by point-EXACCT.
+;[53..58]:gene-rna:"K-ras"
+;[59..74]:variation-type:"point mutations"
+;[104..131]:malignancy:"adenocarcinoma  of the lung"
+(SENT
+  (NP-HLN
+    (NP (NN:[40..49] Detection))
+    (PP (IN:[50..52] of)
+      (NP (NN:[53..58] K-ras)
+         (NN:[59..64] point) (NNS:[65..74] mutations)))
+    (PP-LOC (IN:[75..77] in)
+      (NP
+        (NP (NN:[78..84] sputum))
+        (PP (IN:[85..89] from)
+          (NP
+            (NP (NNS:[90..98] patients))
+            (PP (IN:[99..103] with)
+              (NP
+                (NP (NN:[104..118] adenocarcinoma))
+                (PP (IN:[120..122] of)
+                  (NP (DT:[123..126] the) (NN:[127..131] lung)))))))))
+    (PP-MNR (IN:[132..134] by)
+      (NP (NN:[135..140] point) (HYPH:[140..141] -) (NN:[141..147] EXACCT)))
+    (.:[147..148] .)))
+
+;section 2 Span:152..206
+;Somers VA, Pietersen AM, Theunissen PH, Thunnissen FB.
+(SEC
+  (FRAG (NNP:[152..158] Somers) (NNP:[159..161] VA) (,:[161..162] ,)
+        (NNP:[163..172] Pietersen) (VBP:[173..175] AM) (JJ:[175..176] ,)
+        (NNP:[177..187] Theunissen) (NNP:[188..190] PH) (,:[190..191] ,)
+        (NNP:[192..202] Thunnissen) (NNP:[203..206] FB.)))
+
+;section 3 Span:210..290
+;Department of Pathology, Maastricht University, The Netherlands.
+;vso@lpat.azm.nl
+(SEC
+  (FRAG (NNP:[210..220] Department) (IN:[221..223] of)
+        (NNP:[224..233] Pathology) (,:[233..234] ,) (NNP:[235..245] Maastricht)
+        (NNP:[246..256] University) (,:[256..257] ,) (DT:[258..261] The)
+        (NNP:[262..273] Netherlands) (.:[273..274] .) ('':[275..283] vso@lpat)
+        (VBD:[283..287] .azm) (.:[287..290] .nl)))
+
+;sentence 4 Span:294..302
+;PURPOSE:
+(SENT
+  (NP (NN:[294..301] PURPOSE) (::[301..302] :)))
+
+;sentence 5 Span:303..433
+;Kirsten ras (K-ras) point mutations are found in 30% to 56% of  pulmonary
+;adenocarcinomas by means of highly sensitive techniques.
+;[303..314]:gene-rna:"Kirsten ras"
+;[316..321]:gene-rna:"K-ras"
+;[323..338]:variation-type:"point mutations"
+;[367..392]:malignancy:"pulmonary adenocarcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML
+        (NML (NNP:[303..310] Kirsten) (NN:[311..314] ras))
+        (NML (-LRB-:[315..316] -LRB-) (NN:[316..321] K-ras)
+             (-RRB-:[321..322] -RRB-)))
+       (NN:[323..328] point) (NNS:[329..338] mutations))
+    (VP (VBP:[339..342] are)
+      (VP (VBN:[343..348] found)
+        (NP-1 (-NONE-:[348..348] *))
+        (PP-LOC (IN:[349..351] in)
+          (NP
+            (NP (CD:[352..354] 30) (NN:[354..355] %))
+            (PP (TO:[356..358] to)
+              (NP (CD:[359..361] 56) (NN:[361..362] %)))
+            (PP (IN:[363..365] of)
+              (NP (JJ:[367..376] pulmonary) (NNS:[377..392] adenocarcinomas)))))
+        (PP-MNR (IN:[393..395] by)
+          (NP
+            (NP (NNS:[396..401] means))
+            (PP (IN:[402..404] of)
+              (NP
+                (ADJP (RB:[405..411] highly) (JJ:[412..421] sensitive))
+                (NNS:[422..432] techniques)))))))
+    (.:[432..433] .)))
+
+;sentence 6 Span:434..634
+;Recently, the  Point-EXACCT (point mutation detection using exonuclease
+;amplification coupled  capture technique) method was described, which
+;detected one cell with a mutation  in 15,000 normal cells.
+;[463..477]:variation-type:"point mutation"
+;[494..505]:gene-protein:"exonuclease"
+;[601..609]:variation-event:"mutation"
+(SENT
+  (S
+    (ADVP (RB:[434..442] Recently))
+    (,:[442..443] ,)
+    (NP-SBJ-2
+      (NP (DT:[444..447] the)
+        (NML
+          (NML (NN:[449..454] Point) (HYPH:[454..455] -) (NN:[455..461] EXACCT))
+          (NML (-LRB-:[462..463] -LRB-)
+            (NML
+               (NN:[463..468] point) (NN:[469..477] mutation)
+              (NN:[478..487] detection))
+            (VP (VBG:[488..493] using)
+              (NP
+                (ADJP
+                  (NML (NN:[494..505] exonuclease) (NN:[506..519] amplification))
+                  (VBN:[520..527] coupled))
+                (NN:[529..536] capture) (NN:[537..546] technique)))
+            (-RRB-:[546..547] -RRB-)))
+        (NN:[548..554] method))
+      (SBAR-3 (-NONE-:[554..554] *ICH*)))
+    (VP (VBD:[555..558] was)
+      (VP (VBN:[559..568] described)
+        (NP-2 (-NONE-:[568..568] *))
+        (,:[568..569] ,)
+        (SBAR-3
+          (WHNP-1 (RB:[570..575] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[575..575] *T*))
+            (VP (VBD:[576..584] detected)
+              (NP
+                (NP (CD:[585..588] one) (NN:[589..593] cell))
+                (PP (IN:[594..598] with)
+                  (NP (DT:[599..600] a) (NN:[601..609] mutation))))
+              (PP-LOC (IN:[611..613] in)
+                (NP (CD:[614..620] 15,000) (JJ:[621..627] normal)
+                    (NNS:[628..633] cells))))))))
+    (.:[633..634] .)))
+
+;sentence 7 Span:635..800
+;The aim of this study was to examine whether K-ras point  mutations could be
+;found with this rapid method in the sputum of patients with  adenocarcinoma
+;of the lung.
+;[680..685]:gene-rna:"K-ras"
+;[686..702]:variation-type:"point  mutations"
+;[773..799]:malignancy:"adenocarcinoma of the lung"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[635..638] The) (NN:[639..642] aim))
+      (PP (IN:[643..645] of)
+        (NP (DT:[646..650] this) (NN:[651..656] study))))
+    (VP (VBD:[657..660] was)
+      (S-PRP-PRD
+        (NP-SBJ (-NONE-:[660..660] *))
+        (VP (TO:[661..663] to)
+          (VP (VB:[664..671] examine)
+            (SBAR (IN:[672..679] whether)
+              (S
+                (NP-SBJ-1 (NN:[680..685] K-ras)
+                   (NN:[686..691] point) (NNS:[693..702] mutations))
+                (VP (MD:[703..708] could)
+                  (VP (VB:[709..711] be)
+                    (VP (VBN:[712..717] found)
+                      (NP-1 (-NONE-:[717..717] *))
+                      (PP-MNR (IN:[718..722] with)
+                        (NP (DT:[723..727] this) (JJ:[728..733] rapid)
+                            (NN:[734..740] method)))
+                      (PP-LOC (IN:[741..743] in)
+                        (NP
+                          (NP (DT:[744..747] the) (NN:[748..754] sputum))
+                          (PP (IN:[755..757] of)
+                            (NP
+                              (NP (NNS:[758..766] patients))
+                              (PP (IN:[767..771] with)
+                                (NP
+                                  (NP (NN:[773..787] adenocarcinoma))
+                                  (PP (IN:[788..790] of)
+                                    (NP (DT:[791..794] the) (NN:[795..799] lung))))))))))))))))))
+    (.:[799..800] .)))
+
+;sentence 8 Span:801..822
+;PATIENTS AND METHODS:
+(SENT
+  (NP (NNS:[801..809] PATIENTS) (CC:[810..813] AND) (NNS:[814..821] METHODS)
+      (::[821..822] :)))
+
+;sentence 9 Span:823..946
+;DNA from paraffin-embedded  adenocarcinoma and corresponding sputum samples
+;were analyzed for mutations of  the K-ras gene.
+;[851..865]:malignancy:"adenocarcinoma"
+;[935..940]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[823..826] DNA))
+      (PP (IN:[827..831] from)
+        (NP
+          (NP
+            (ADJP (NN:[832..840] paraffin) (HYPH:[840..841] -)
+                  (VBN:[841..849] embedded))
+            (NN:[851..865] adenocarcinoma))
+          (CC:[866..869] and)
+          (NP (JJ:[870..883] corresponding) (NN:[884..890] sputum)
+              (NNS:[891..898] samples)))))
+    (VP (VBD:[899..903] were)
+      (VP (VBN:[904..912] analyzed)
+        (NP-1 (-NONE-:[912..912] *))
+        (PP-PRP (IN:[913..916] for)
+          (NP
+            (NP (NNS:[917..926] mutations))
+            (PP (IN:[927..929] of)
+              (NP (DT:[931..934] the) (NN:[935..940] K-ras) (NN:[941..945] gene)))))))
+    (.:[945..946] .)))
+
+;sentence 10 Span:947..1088
+;Twenty-eight biopsy specimens and 54 sputum samples of 22  patients were used
+;for amplification and K-ras codon 12 point mutation  detection.
+;[1047..1052]:gene-rna:"K-ras"
+;[1053..1061]:variation-location:"codon 12"
+;[1062..1076]:variation-type:"point mutation"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[947..959] Twenty-eight) (NN:[960..966] biopsy)
+          (NNS:[967..976] specimens))
+      (CC:[977..980] and)
+      (NP
+        (NP (CD:[981..983] 54) (NN:[984..990] sputum) (NNS:[991..998] samples))
+        (PP (IN:[999..1001] of)
+          (NP (CD:[1002..1004] 22) (NNS:[1006..1014] patients)))))
+    (VP (VBD:[1015..1019] were)
+      (VP (VBN:[1020..1024] used)
+        (NP-1 (-NONE-:[1024..1024] *))
+        (PP-PRP (IN:[1025..1028] for)
+          (NP
+            (NP (NN:[1029..1042] amplification))
+            (CC:[1043..1046] and)
+            (NP
+              (NML
+                (NML (NN:[1047..1052] K-ras)
+                   (NN:[1053..1058] codon) (CD:[1059..1061] 12))
+                 (NN:[1062..1067] point) (NN:[1068..1076] mutation))
+              (NN:[1078..1087] detection))))))
+    (.:[1087..1088] .)))
+
+;sentence 11 Span:1089..1097
+;RESULTS:
+(SENT
+  (NP (NNS:[1089..1096] RESULTS) (::[1096..1097] :)))
+
+;sentence 12 Span:1098..1186
+;In 11 of 22 patients (50%), a mutation in K-ras codon 12 was  shown in the
+;tumor sample.
+;[1140..1145]:gene-rna:"K-ras"
+;[1146..1154]:variation-location:"codon 12"
+;[1173..1185]:malignancy:"tumor sample"
+(SENT
+  (S
+    (PP-LOC (IN:[1098..1100] In)
+      (NP
+        (NP (CD:[1101..1103] 11))
+        (PP (IN:[1104..1106] of)
+          (NP (CD:[1107..1109] 22) (NNS:[1110..1118] patients)))
+        (PRN (-LRB-:[1119..1120] -LRB-)
+          (NP (CD:[1120..1122] 50) (NN:[1122..1123] %))
+          (-RRB-:[1123..1124] -RRB-))))
+    (,:[1124..1125] ,)
+    (NP-SBJ-1
+      (NP (DT:[1126..1127] a) (NN:[1128..1136] mutation))
+      (PP-LOC (IN:[1137..1139] in)
+        (NP (NN:[1140..1145] K-ras)
+           (NN:[1146..1151] codon) (CD:[1152..1154] 12))))
+    (VP (VBD:[1155..1158] was)
+      (VP (VBN:[1160..1165] shown)
+        (NP-1 (-NONE-:[1165..1165] *))
+        (PP-LOC (IN:[1166..1168] in)
+          (NP (DT:[1169..1172] the)
+             (NN:[1173..1178] tumor) (NN:[1179..1185] sample)))))
+    (.:[1185..1186] .)))
+
+;sentence 13 Span:1187..1325
+;In five of 11 patients (45%) with a K-ras mutation in  the tumor, the same
+;type of mutation was identified in at least one sputum  sample.
+;[1223..1228]:gene-rna:"K-ras"
+;[1246..1251]:malignancy:"tumor"
+;[1270..1278]:variation-event:"mutation"
+(SENT
+  (S
+    (PP-LOC (IN:[1187..1189] In)
+      (NP
+        (NP (CD:[1190..1194] five))
+        (PP (IN:[1195..1197] of)
+          (NP
+            (NP (CD:[1198..1200] 11) (NNS:[1201..1209] patients))
+            (PRN (-LRB-:[1210..1211] -LRB-) (CD:[1211..1213] 45)
+                 (NN:[1213..1214] %) (-RRB-:[1214..1215] -RRB-))
+            (PP (IN:[1216..1220] with)
+              (NP
+                (NP (DT:[1221..1222] a) (NN:[1223..1228] K-ras)
+                    (NN:[1229..1237] mutation))
+                (PP (IN:[1238..1240] in)
+                  (NP (DT:[1242..1245] the) (NN:[1246..1251] tumor)))))))))
+    (,:[1251..1252] ,)
+    (NP-SBJ-1
+      (NP (DT:[1253..1256] the) (JJ:[1257..1261] same) (NN:[1262..1266] type))
+      (PP (IN:[1267..1269] of)
+        (NP (NN:[1270..1278] mutation))))
+    (VP (VBD:[1279..1282] was)
+      (VP (VBN:[1283..1293] identified)
+        (NP-1 (-NONE-:[1293..1293] *))
+        (PP-LOC (IN:[1294..1296] in)
+          (NP
+            (QP (IN:[1297..1299] at) (JJS:[1300..1305] least)
+                (CD:[1306..1309] one))
+            (NN:[1310..1316] sputum) (NN:[1318..1324] sample)))))
+    (.:[1324..1325] .)))
+
+;sentence 14 Span:1326..1431
+;A mutation could not be detected in any of the sputum samples from  patients
+;with a K-ras-negative tumor.
+;[1410..1415]:gene-rna:"K-ras"
+;[1425..1430]:malignancy:"tumor"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1326..1327] A) (NN:[1328..1336] mutation))
+    (VP (MD:[1337..1342] could) (RB:[1343..1346] not)
+      (VP (VB:[1347..1349] be)
+        (VP (VBN:[1350..1358] detected)
+          (NP-1 (-NONE-:[1358..1358] *))
+          (PP-LOC (IN:[1359..1361] in)
+            (NP
+              (NP (DT:[1362..1365] any))
+              (PP (IN:[1366..1368] of)
+                (NP
+                  (NP (DT:[1369..1372] the) (NN:[1373..1379] sputum)
+                      (NNS:[1380..1387] samples))
+                  (PP (IN:[1388..1392] from)
+                    (NP
+                      (NP (NNS:[1394..1402] patients))
+                      (PP (IN:[1403..1407] with)
+                        (NP (DT:[1408..1409] a)
+                          (ADJP (NN:[1410..1415] K-ras) (HYPH:[1415..1416] -)
+                                (JJ:[1416..1424] negative))
+                          (NN:[1425..1430] tumor))))))))))))
+    (.:[1430..1431] .)))
+
+;sentence 15 Span:1432..1564
+;Time between K-ras point mutation  detection in sputum and clinical diagnosis
+;of lung cancer varied from 1 month to  almost 4 years.
+;[1445..1450]:gene-rna:"K-ras"
+;[1451..1465]:variation-type:"point mutation"
+;[1513..1524]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1432..1436] Time))
+      (PP (IN:[1437..1444] between)
+        (NP
+          (NP
+            (NP
+              (NML (NN:[1445..1450] K-ras)
+                 (NN:[1451..1456] point) (NN:[1457..1465] mutation))
+              (NN:[1467..1476] detection))
+            (PP-LOC (IN:[1477..1479] in)
+              (NP (NN:[1480..1486] sputum))))
+          (CC:[1487..1490] and)
+          (NP
+            (NP (JJ:[1491..1499] clinical) (NN:[1500..1509] diagnosis))
+            (PP (IN:[1510..1512] of)
+              (NP (NN:[1513..1517] lung) (NN:[1518..1524] cancer)))))))
+    (VP (VBD:[1525..1531] varied)
+      (PP-TMP
+        (PP (IN:[1532..1536] from)
+          (NP (CD:[1537..1538] 1) (NN:[1539..1544] month)))
+        (PP (TO:[1545..1547] to)
+          (NP
+            (QP (RB:[1549..1555] almost) (CD:[1556..1557] 4))
+            (NNS:[1558..1563] years)))))
+    (.:[1563..1564] .)))
+
+;sentence 16 Span:1565..1686
+;In two of the five patients with K-ras-positive sputum  specimens, malignant
+;cells were found with cytologic examination.
+;[1598..1603]:gene-rna:"K-ras"
+;[1632..1647]:malignancy:"malignant cells"
+(SENT
+  (S
+    (PP-LOC (IN:[1565..1567] In)
+      (NP
+        (NP (CD:[1568..1571] two))
+        (PP (IN:[1572..1574] of)
+          (NP
+            (NP (DT:[1575..1578] the) (CD:[1579..1583] five)
+                (NNS:[1584..1592] patients))
+            (PP (IN:[1593..1597] with)
+              (NP
+                (ADJP (NN:[1598..1603] K-ras) (HYPH:[1603..1604] -)
+                      (JJ:[1604..1612] positive))
+                (NN:[1613..1619] sputum) (NNS:[1621..1630] specimens)))))))
+    (,:[1630..1631] ,)
+    (NP-SBJ-1 (JJ:[1632..1641] malignant) (NNS:[1642..1647] cells))
+    (VP (VBD:[1648..1652] were)
+      (VP (VBN:[1653..1658] found)
+        (NP-1 (-NONE-:[1658..1658] *))
+        (PP-MNR (IN:[1659..1663] with)
+          (NP (JJ:[1664..1673] cytologic) (NN:[1674..1685] examination)))))
+    (.:[1685..1686] .)))
+
+;sentence 17 Span:1687..1698
+;CONCLUSION:
+(SENT
+  (NP (NN:[1687..1697] CONCLUSION) (::[1697..1698] :)))
+
+;sentence 18 Span:1700..1831
+;Point-EXACCT is suitable for the detection of K-ras point mutations in sputum
+; samples of patients with adenocarcinoma of the lung.
+;[1746..1751]:gene-rna:"K-ras"
+;[1752..1767]:variation-type:"point mutations"
+;[1804..1830]:malignancy:"adenocarcinoma of the lung"
+(SENT
+  (S
+    (NP-SBJ (NN:[1700..1705] Point) (HYPH:[1705..1706] -)
+            (NN:[1706..1712] EXACCT))
+    (VP (VBZ:[1713..1715] is)
+      (ADJP-PRD (JJ:[1716..1724] suitable)
+        (PP (IN:[1725..1728] for)
+          (NP
+            (NP (DT:[1729..1732] the) (NN:[1733..1742] detection))
+            (PP (IN:[1743..1745] of)
+              (NP (NN:[1746..1751] K-ras)
+                 (NN:[1752..1757] point) (NNS:[1758..1767] mutations)))
+            (PP-LOC (IN:[1768..1770] in)
+              (NP
+                (NP (NN:[1771..1777] sputum) (NNS:[1779..1786] samples))
+                (PP (IN:[1787..1789] of)
+                  (NP (NNS:[1790..1798] patients)))
+                (PP (IN:[1799..1803] with)
+                  (NP
+                    (NP (NN:[1804..1818] adenocarcinoma))
+                    (PP (IN:[1819..1821] of)
+                      (NP (DT:[1822..1825] the) (NN:[1826..1830] lung)))))))))))
+    (.:[1830..1831] .)))
+
+;sentence 19 Span:1832..1925
+;This approach may be an  important adjunct to cytology in the early diagnosis
+;of lung cancer.
+;[1913..1924]:malignancy:"lung cancer"
+(SENT
+  (S
+    (NP-SBJ (DT:[1832..1836] This) (NN:[1837..1845] approach))
+    (VP (MD:[1846..1849] may)
+      (VP (VB:[1850..1852] be)
+        (NP-PRD
+          (NP (DT:[1853..1855] an) (JJ:[1857..1866] important)
+              (NN:[1867..1874] adjunct))
+          (PP (TO:[1875..1877] to)
+            (NP (NN:[1878..1886] cytology))))
+        (PP (IN:[1887..1889] in)
+          (NP
+            (NP (DT:[1890..1893] the) (JJ:[1894..1899] early)
+                (NN:[1900..1909] diagnosis))
+            (PP (IN:[1910..1912] of)
+              (NP (NN:[1913..1917] lung) (NN:[1918..1924] cancer)))))))
+    (.:[1924..1925] .)))
+
+;section 20 Span:1929..1973
+;PMID: 9738576 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1929..1933] PMID) (::[1933..1934] :) (CD:[1935..1942] 9738576)
+        (IN:[1943..1944] -LSB-) (NNP:[1944..1950] PubMed) (HYPH:[1951..1952] -)
+        (JJ:[1953..1960] indexed) (IN:[1961..1964] for)
+        (NNP:[1965..1973] MEDLINE-RSB-)))

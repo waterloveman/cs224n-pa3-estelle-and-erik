@@ -1,0 +1,180 @@
+;PMID: 6543484
+;source_file_1000.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..116] = [t:42..116]
+;2)section:[e:120..147] = [t:120..147]
+;3)sentence:[e:151..401] = [t:151..401]
+;4)sentence:[e:402..485] = [t:402..485]
+;5)sentence:[e:486..653] = [t:486..653]
+;6)sentence:[e:654..717] = [t:654..717]
+;7)section:[e:721..765] = [t:721..765]
+
+;section 0 Span:0..36
+;Acta Biochim Pol. 1984;31(4):409-19.
+(SEC
+  (FRAG (NNP:[0..4] Acta) (NNP:[5..12] Biochim) (NNP:[13..16] Pol)
+        (.:[16..17] .) (CD:[18..22] 1984) (::[22..26] ;31-LRB-)
+        (CD:[26..28] 4-RRB-) (CD:[28..32] :409) (::[32..33] -) (CD:[33..35] 19)
+        (.:[35..36] .)))
+
+;sentence 1 Span:42..116
+;A study on the Prethcamide hydroxylation system in rat hepatic microsomes.
+;[57..68]:substance:"Prethcamide"
+(SENT
+  (NP-HLN
+    (NP (DT:[42..43] A) (NN:[44..49] study))
+    (PP (IN:[50..52] on)
+      (NP
+        (NP (DT:[53..56] the) (NNP:[57..68] Prethcamide)
+            (NN:[69..82] hydroxylation) (NN:[83..89] system))
+        (PP-LOC (IN:[90..92] in)
+          (NP (NN:[93..96] rat) (JJ:[97..104] hepatic)
+              (NNS:[105..115] microsomes)))))
+    (.:[115..116] .)))
+
+;section 2 Span:120..147
+;Szumilo T, Bryla P, Byra A.
+(SEC
+  (FRAG (NNP:[120..127] Szumilo) (NNP:[128..129] T) (,:[129..130] ,)
+        (NNP:[131..136] Bryla) (NNP:[137..138] P) (,:[138..139] ,)
+        (NNP:[140..144] Byra) (NN:[145..147] A.)))
+
+;sentence 3 Span:151..401
+;Ethyl butamide and propyl butamide, the active constituents of the analeptic 
+;drug named Prethcamide (Ciba-Geigy), undergo biotransformation to respective 
+;single metabolites in the presence of rat hepatic microsomes and the 
+;NADPH-generating system.
+;[151..165]:substance:"Ethyl butamide"
+;[170..185]:substance:"propyl butamide"
+;[218..233]:substance:"analeptic  drug"
+;[240..251]:substance:"Prethcamide"
+;[314..325]:substance:"metabolites"
+;[377..382]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[151..156] Ethyl) (NN:[157..165] butamide))
+        (CC:[166..169] and)
+        (NP (NN:[170..176] propyl) (NN:[177..185] butamide)))
+      (,:[185..186] ,)
+      (NP
+        (NP (DT:[187..190] the) (JJ:[191..197] active)
+            (NNS:[198..210] constituents))
+        (PP (IN:[211..213] of)
+          (NP
+            (NP (DT:[214..217] the)
+               (JJ:[218..227] analeptic) (NN:[229..233] drug))
+            (VP (VBN:[234..239] named)
+              (NP (-NONE-:[239..239] *))
+              (NP (NNP:[240..251] Prethcamide)
+                (PRN (-LRB-:[252..253] -LRB-)
+                  (NP (NNP:[253..257] Ciba) (HYPH:[257..258] -)
+                      (NNP:[258..263] Geigy))
+                  (-RRB-:[263..264] -RRB-))))))))
+    (,:[264..265] ,)
+    (VP (VBP:[266..273] undergo)
+      (NP
+        (NP (NN:[274..291] biotransformation))
+        (PP (TO:[292..294] to)
+          (NP (JJ:[295..305] respective) (JJ:[307..313] single)
+              (NNS:[314..325] metabolites))))
+      (PP (IN:[326..328] in)
+        (NP
+          (NP (DT:[329..332] the) (NN:[333..341] presence))
+          (PP (IN:[342..344] of)
+            (NP
+              (NP (NN:[345..348] rat) (JJ:[349..356] hepatic)
+                  (NNS:[357..367] microsomes))
+              (CC:[368..371] and)
+              (NP (DT:[372..375] the)
+                (ADJP (NN:[377..382] NADPH) (HYPH:[382..383] -)
+                      (VBG:[383..393] generating))
+                (NN:[394..400] system)))))))
+    (.:[400..401] .)))
+
+;sentence 4 Span:402..485
+;Spectral analysis showed that the metabolites were  hydroxylated forms of the
+;drug.
+;[436..447]:substance:"metabolites"
+;[480..484]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ (JJ:[402..410] Spectral) (NN:[411..419] analysis))
+    (VP (VBD:[420..426] showed)
+      (SBAR (IN:[427..431] that)
+        (S
+          (NP-SBJ (DT:[432..435] the) (NNS:[436..447] metabolites))
+          (VP (VBD:[448..452] were)
+            (NP-PRD
+              (NP (VBN:[454..466] hydroxylated) (NNS:[467..472] forms))
+              (PP (IN:[473..475] of)
+                (NP (DT:[476..479] the) (NN:[480..484] drug))))))))
+    (.:[484..485] .)))
+
+;sentence 5 Span:486..653
+;The hydroxylation was stimulated by NADH and  increased ionic strength, and
+;inhibited by the known cytochrome P-450  inhibitors, e.g. SKF-525A,
+;metyrapone, CO and KCN.
+;[522..526]:substance:"NADH"
+;[585..601]:cyp450:"cytochrome P-450"
+;[603..613]:substance:"inhibitors"
+;[620..628]:substance:"SKF-525A"
+;[630..640]:substance:"metyrapone"
+;[642..644]:substance:"CO"
+;[649..652]:substance:"KCN"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[486..489] The) (NN:[490..503] hydroxylation))
+    (VP (VBD:[504..507] was)
+      (VP
+        (VP (VBN:[508..518] stimulated)
+          (NP-1 (-NONE-:[518..518] *))
+          (PP (IN:[519..521] by)
+            (NP-LGS
+              (NP (NN:[522..526] NADH))
+              (CC:[527..530] and)
+              (NP (VBN:[532..541] increased) (JJ:[542..547] ionic)
+                  (NN:[548..556] strength)))))
+        (,:[556..557] ,) (CC:[558..561] and)
+        (VP (VBN:[562..571] inhibited)
+          (NP-1 (-NONE-:[571..571] *))
+          (PP (IN:[572..574] by)
+            (NP-LGS
+              (NP (DT:[575..578] the) (VBN:[579..584] known)
+                (NML (NN:[585..595] cytochrome) (NN:[596..601] P-450))
+                (NNS:[603..613] inhibitors))
+              (,:[613..614] ,)
+              (NP
+                (ADVP (FW:[615..619] e.g.))
+                (NN:[620..628] SKF-525A) (,:[628..629] ,)
+                 (NN:[630..640] metyrapone) (,:[640..641] ,) (NN:[642..644] CO)
+                 (CC:[645..648] and) (NN:[649..652] KCN)))))))
+    (.:[652..653] .)))
+
+;sentence 6 Span:654..717
+;The drug formed type I  binding spectrum with cytochrome P-450.
+;[658..662]:substance:"drug"
+;[700..716]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ (DT:[654..657] The) (NN:[658..662] drug))
+    (VP (VBD:[663..669] formed)
+      (NP
+        (NP
+          (NML (NN:[670..674] type) (CD:[675..676] I))
+          (NN:[678..685] binding) (NN:[686..694] spectrum))
+        (PP (IN:[695..699] with)
+          (NP (NN:[700..710] cytochrome) (NN:[711..716] P-450)))))
+    (.:[716..717] .)))
+
+;section 7 Span:721..765
+;PMID: 6543484 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[721..725] PMID) (::[725..726] :) (CD:[727..734] 6543484)
+        (NN:[735..736] -LSB-) (NNP:[736..742] PubMed) (::[743..744] -)
+        (NN:[745..752] indexed) (IN:[753..756] for)
+        (NNP:[757..765] MEDLINE-RSB-)))

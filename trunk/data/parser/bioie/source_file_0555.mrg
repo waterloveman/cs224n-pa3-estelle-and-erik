@@ -1,0 +1,175 @@
+;PMID: 1384545
+;source_file_1767.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..66] = [t:0..66]
+;1)sentence:[e:72..187] = [t:72..187]
+;2)section:[e:191..211] = [t:191..211]
+;3)section:[e:215..264] = [t:215..264]
+;4)section:[e:268..300] = [t:268..300]
+;5)sentence:[e:304..667] = [t:304..667]
+;6)sentence:[e:668..787] = [t:668..787]
+;7)section:[e:791..835] = [t:791..835]
+
+;section 0 Span:0..66
+;Zhongguo Zhong Yao Za Zhi. 1992 Apr;17(4):233-6, inside backcover.
+(SEC
+  (FRAG (NNP:[0..8] Zhongguo) (NNP:[9..14] Zhong) (NNP:[15..18] Yao)
+        (NNP:[19..21] Za) (NNP:[22..25] Zhi) (.:[25..26] .) (CD:[27..31] 1992)
+        (.:[32..39] Apr;17-LRB-) (CD:[39..40] 4) (-RRB-:[40..41] -RRB-)
+        (::[41..42] :) (CD:[42..45] 233) (JJ:[45..47] -6) (,:[47..48] ,)
+        (IN:[49..55] inside) (RB:[56..65] backcover) (.:[65..66] .)))
+
+;sentence 1 Span:72..187
+;[Mechanisms of protective action of radix Salviae miltiorrhizae (RSM) against
+; experimental hepatic injury in rats]
+;[108..135]:substance:"radix Salviae miltiorrhizae"
+;[137..140]:substance:"RSM"
+(SENT
+  (NP-HLN (-LRB-:[72..73] -LSB-)
+    (NP (NNS:[73..83] Mechanisms))
+    (PP (IN:[84..86] of)
+      (NP
+        (NP (JJ:[87..97] protective) (NN:[98..104] action))
+        (PP (IN:[105..107] of)
+          (NP
+            (NP (NN:[108..113] radix) (NNP:[114..121] Salviae)
+                (NNP:[122..135] miltiorrhizae))
+            (NP (-LRB-:[136..137] -LRB-) (NN:[137..140] RSM)
+                (-RRB-:[140..141] -RRB-))))))
+    (PP (IN:[142..149] against)
+      (NP (JJ:[151..163] experimental) (JJ:[164..171] hepatic)
+          (NN:[172..178] injury)))
+    (PP-LOC (IN:[179..181] in)
+      (NP (NNS:[182..186] rats)))
+    (-RRB-:[186..187] -RSB-)))
+
+;section 2 Span:191..211
+;[Article in Chinese]
+(SEC
+  (FRAG (-LRB-:[191..192] -LSB-) (NN:[192..199] Article) (IN:[200..202] in)
+        (JJ:[203..210] Chinese) (.:[210..211] -RSB-)))
+
+;section 3 Span:215..264
+;Deng H, Ma X, Xu R, Chen X, Zhao Y, Yin L, Han D.
+(SEC
+  (FRAG (NNP:[215..219] Deng) (NNP:[220..222] H,) (NNP:[223..225] Ma)
+        (NNP:[226..227] X) (,:[227..228] ,) (NNP:[229..231] Xu)
+        (NNP:[232..233] R) (,:[233..234] ,) (NNP:[235..239] Chen)
+        (NNP:[240..241] X) (,:[241..242] ,) (NNP:[243..247] Zhao)
+        (NNP:[248..249] Y) (,:[249..250] ,) (NNP:[251..254] Yin)
+        (NNP:[255..257] L,) (NNP:[258..261] Han) (NNP:[262..264] D.)))
+
+;section 4 Span:268..300
+;Shanxi Medical College, Taiyuan.
+(SEC
+  (FRAG (NNP:[268..274] Shanxi) (NNP:[275..282] Medical)
+        (NNP:[283..290] College) (,:[290..291] ,) (NNP:[292..299] Taiyuan)
+        (.:[299..300] .)))
+
+;sentence 5 Span:304..667
+;The results indicated that RSM could significantly inhibit the lipid 
+;peroxidation of normal livers and cultured hepatocytes of rats, induce liver 
+;microsomal cytochrome P450 in normal rats, increase nucleic acids, proteins, 
+;urea and cerolloplasmin of damaged cultured hepatocytes of rats, relieve 
+;ultrastructural damage of cultured hepatocytes induced by CCl4.
+;[331..334]:substance:"RSM"
+;[367..372]:substance:"lipid"
+;[463..478]:cyp450:"cytochrome P450"
+;[504..517]:substance:"nucleic acids"
+;[519..527]:substance:"proteins"
+;[530..534]:substance:"urea"
+;[539..553]:substance:"cerolloplasmin"
+;[662..666]:substance:"CCl4"
+(SENT
+  (S
+    (NP-SBJ (DT:[304..307] The) (NNS:[308..315] results))
+    (VP (VBD:[316..325] indicated)
+      (SBAR (IN:[326..330] that)
+        (S
+          (NP-SBJ (NN:[331..334] RSM))
+          (VP (MD:[335..340] could)
+            (VP
+              (VP
+                (ADVP (RB:[341..354] significantly))
+                (VB:[355..362] inhibit)
+                (NP
+                  (NP (DT:[363..366] the) (NN:[367..372] lipid)
+                      (NN:[374..386] peroxidation))
+                  (PP (IN:[387..389] of)
+                    (NP
+                      (NP
+                        (NP (JJ:[390..396] normal) (NNS:[397..403] livers))
+                        (CC:[404..407] and)
+                        (NP (VBN:[408..416] cultured)
+                            (NNS:[417..428] hepatocytes)))
+                      (PP (IN:[429..431] of)
+                        (NP (NNS:[432..436] rats)))))))
+              (,:[436..437] ,)
+              (VP (VB:[438..444] induce)
+                (NP (NN:[445..450] liver) (JJ:[452..462] microsomal)
+                   (NN:[463..473] cytochrome) (NN:[474..478] P450))
+                (PP-LOC (IN:[479..481] in)
+                  (NP (JJ:[482..488] normal) (NNS:[489..493] rats))))
+              (,:[493..494] ,)
+              (VP (VB:[495..503] increase)
+                (NP
+                  (NP
+                    (NP (JJ:[504..511] nucleic) (NNS:[512..517] acids))
+                    (,:[517..518] ,)
+                    (NP (NNS:[519..527] proteins))
+                    (,:[527..528] ,)
+                    (NP (NN:[530..534] urea))
+                    (CC:[535..538] and)
+                    (NP (NN:[539..553] cerolloplasmin)))
+                  (PP (IN:[554..556] of)
+                    (NP
+                      (NP (VBN:[557..564] damaged) (VBN:[565..573] cultured)
+                          (NNS:[574..585] hepatocytes))
+                      (PP (IN:[586..588] of)
+                        (NP (NNS:[589..593] rats)))))))
+              (,:[593..594] ,)
+              (VP (VB:[595..602] relieve)
+                (NP
+                  (NP (JJ:[604..619] ultrastructural) (NN:[620..626] damage))
+                  (PP (IN:[627..629] of)
+                    (NP (VBN:[630..638] cultured) (NNS:[639..650] hepatocytes)))
+                  (VP (VBN:[651..658] induced)
+                    (NP (-NONE-:[658..658] *))
+                    (PP (IN:[659..661] by)
+                      (NP-LGS (NN:[662..666] CCl4)))))))))))
+    (.:[666..667] .)))
+
+;sentence 6 Span:668..787
+;The  pharmacological actions mentioned above should be considered as
+;important  mechanisms of RSM against liver injury.
+;[762..765]:substance:"RSM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[668..671] The) (JJ:[673..688] pharmacological)
+          (NNS:[689..696] actions))
+      (VP (VBN:[697..706] mentioned)
+        (NP (-NONE-:[706..706] *))
+        (ADVP (RB:[707..712] above))))
+    (VP (MD:[713..719] should)
+      (VP (VB:[720..722] be)
+        (VP (VBN:[723..733] considered)
+          (NP-1 (-NONE-:[733..733] *))
+          (PP (IN:[734..736] as)
+            (NP
+              (NP (JJ:[737..746] important) (NNS:[748..758] mechanisms))
+              (PP (IN:[759..761] of)
+                (NP (NN:[762..765] RSM)))
+              (PP (IN:[766..773] against)
+                (NP (NN:[774..779] liver) (NN:[780..786] injury))))))))
+    (.:[786..787] .)))
+
+;section 7 Span:791..835
+;PMID: 1384545 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[791..795] PMID) (::[795..796] :) (CD:[797..804] 1384545)
+        (NN:[805..806] -LSB-) (NNP:[806..812] PubMed) (::[813..814] -)
+        (NN:[815..822] indexed) (IN:[823..826] for)
+        (NNP:[827..835] MEDLINE-RSB-)))

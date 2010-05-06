@@ -1,0 +1,256 @@
+;PMID: 3091830
+;source_file_662.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..85] = [t:41..85]
+;2)sentence:[e:86..195] = [t:86..195]
+;3)section:[e:199..244] = [t:199..244]
+;4)sentence:[e:248..412] = [t:248..412]
+;5)sentence:[e:413..549] = [t:413..549]
+;6)sentence:[e:550..697] = [t:550..697]
+;7)sentence:[e:698..925] = [t:698..925]
+;8)sentence:[e:926..1014] = [t:926..1014]
+;9)section:[e:1018..1062] = [t:1018..1062]
+
+;section 0 Span:0..35
+;J Med Chem. 1986 Sep;29(9):1643-50.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..5] Med) (NNP:[6..10] Chem) (.:[10..11] .)
+        (CD:[12..16] 1986) (CC:[17..22] Sep;2) (CD:[22..23] 9)
+        (NN:[23..24] -LRB-) (NN:[24..25] 9) (NN:[25..26] -RRB-) (::[26..27] :)
+        (CD:[27..30] 164) (CD:[30..34] 3-50) (.:[34..35] .)))
+
+;sentence 1 Span:41..85
+;Selective thromboxane synthetase inhibitors.
+;[51..73]:cyp450:"thromboxane synthetase"
+;[74..84]:substance:"inhibitors"
+(SENT
+  (NP-HLN (JJ:[41..50] Selective)
+    (NML (NN:[51..62] thromboxane) (NN:[63..73] synthetase))
+    (NNS:[74..84] inhibitors) (.:[84..85] .)))
+
+;sentence 2 Span:86..195
+;4. 2-(1H-imidazol-1-ylmethyl)  carboxylic acids of benzo[b]furan,
+;benzo[b]thiophene, indole, and naphthalene.
+;[89..133]:substance:"2-(1H-imidazol-1-ylmethyl)  carboxylic acids"
+;[137..150]:substance:"benzo[b]furan"
+;[152..169]:substance:"benzo[b]thiophene"
+;[171..177]:substance:"indole"
+;[183..194]:substance:"naphthalene"
+(SENT
+  (NP-HLN
+    (NP (LS:[86..88] 4.)
+       (NN:[89..115] 2--LRB-1H-imidazol-1-ylmethyl-RRB-)
+       (JJ:[117..127] carboxylic) (NNS:[128..133] acids))
+    (PP (IN:[134..136] of)
+      (NP (NN:[137..150] benzo-LSB-b-RSB-furan) (,:[150..151] ,)
+          (NN:[152..169] benzo-LSB-b-RSB-thiophene) (,:[169..170] ,)
+          (NN:[171..177] indole) (,:[177..178] ,) (CC:[179..182] and)
+          (NN:[183..194] naphthalene)))
+    (.:[194..195] .)))
+
+;section 3 Span:199..244
+;Cross PE, Dickinson RP, Parry MJ, Randall MJ.
+(SEC
+  (FRAG (NNP:[199..204] Cross) (NNP:[205..207] PE) (,:[207..208] ,)
+        (NNP:[209..218] Dickinson) (NNP:[219..221] RP) (,:[221..222] ,)
+        (NNP:[223..228] Parry) (NNP:[229..231] MJ) (,:[231..232] ,)
+        (NNP:[233..240] Randall) (NNP:[241..244] MJ.)))
+
+;sentence 4 Span:248..412
+;The preparation of a series of 2-(1H-imidazol-1-ylmethyl)-substituted
+;carboxylic  acids of benzo[b]furan, benzo-[b]thiophene, indole, and
+;naphthalene is  described.
+;[279..335]:substance:"2-(1H-imidazol-1-ylmethyl)-substituted carboxylic 
+;acids"
+;[339..352]:substance:"benzo[b]furan"
+;[354..372]:substance:"benzo-[b]thiophene"
+;[374..380]:substance:"indole"
+;[386..397]:substance:"naphthalene"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[248..251] The) (NN:[252..263] preparation))
+      (PP (IN:[264..266] of)
+        (NP
+          (NP (DT:[267..268] a) (NN:[269..275] series))
+          (PP (IN:[276..278] of)
+            (NP
+              (NP
+                (ADJP (NN:[279..305] 2--LRB-1H-imidazol-1-ylmethyl-RRB-)
+                      (HYPH:[305..306] -) (VBN:[306..317] substituted))
+                (JJ:[318..328] carboxylic) (NNS:[330..335] acids))
+              (PP (IN:[336..338] of)
+                (NP (NN:[339..352] benzo-LSB-b-RSB-furan) (,:[352..353] ,)
+                    (NN:[354..372] benzo--LSB-b-RSB-thiophene) (,:[372..373] ,)
+                    (NN:[374..380] indole) (,:[380..381] ,) (CC:[382..385] and)
+                    (NN:[386..397] naphthalene))))))))
+    (VP (VBZ:[398..400] is)
+      (VP (VBN:[402..411] described)
+        (NP-1 (-NONE-:[411..411] *))))
+    (.:[411..412] .)))
+
+;sentence 5 Span:413..549
+;All compounds showed a similar level of activity as TxA2 synthetase 
+;inhibitors in vitro, having IC50 values between 1 and 7 X 10(-8) M.
+;[417..426]:substance:"compounds"
+;[465..480]:cyp450:"TxA2 synthetase"
+;[482..492]:substance:"inhibitors"
+;[510..514]:quantitative-name:"IC50"
+;[530..546]:quantitative-value:"1 and 7 X 10(-8)"
+;[547..548]:quantitative-units:"M"
+(SENT
+  (S
+    (NP-SBJ (DT:[413..416] All) (NNS:[417..426] compounds))
+    (VP (VBD:[427..433] showed)
+      (NP
+        (NP (DT:[434..435] a) (JJ:[436..443] similar) (NN:[444..449] level))
+        (PP (IN:[450..452] of)
+          (NP (NN:[453..461] activity)))
+        (PP (IN:[462..464] as)
+          (NP
+             (NN:[465..469] TxA2) (NN:[470..480] synthetase)
+            (NNS:[482..492] inhibitors))))
+      (ADVP (FW:[493..495] in) (FW:[496..501] vitro))
+      (,:[501..502] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[502..502] *))
+        (VP (VBG:[503..509] having)
+          (NP
+            (NP (NN:[510..514] IC50) (NNS:[515..521] values))
+            (PP (IN:[522..529] between)
+              (NP
+                (QP (CD:[530..531] 1) (CC:[532..535] and) (CD:[536..537] 7)
+                    (SYM:[538..539] X) (CD:[540..546] 10-LRB--8-RRB-))
+                (NN:[547..548] M)))))))
+    (.:[548..549] .)))
+
+;sentence 6 Span:550..697
+;In the cases  examined, compounds had, at most, only negligible activity
+;against PGI2  synthetase, cyclooxygenase, and steroid 11 beta-hydroxylase.
+;[574..583]:substance:"compounds"
+;[631..647]:substance:"PGI2  synthetase"
+;[649..663]:substance:"cyclooxygenase"
+;[669..696]:cyp450:"steroid 11 beta-hydroxylase"
+(SENT
+  (S
+    (PP (IN:[550..552] In)
+      (NP
+        (NP (DT:[553..556] the) (NNS:[557..562] cases))
+        (VP (VBN:[564..572] examined)
+          (NP (-NONE-:[572..572] *)))))
+    (,:[572..573] ,)
+    (NP-SBJ (NNS:[574..583] compounds))
+    (VP (VBD:[584..587] had) (,:[587..588] ,)
+      (ADVP (IN:[589..591] at) (RBS:[592..596] most))
+      (,:[596..597] ,)
+      (NP
+        (NP
+          (ADJP (RB:[598..602] only) (JJ:[603..613] negligible))
+          (NN:[614..622] activity))
+        (PP (IN:[623..630] against)
+          (NP
+            (NP (NN:[631..635] PGI2) (NN:[637..647] synthetase))
+            (,:[647..648] ,)
+            (NP (NN:[649..663] cyclooxygenase))
+            (,:[663..664] ,) (CC:[665..668] and)
+            (NP (JJ:[669..676] steroid) (CD:[677..679] 11)
+                (NN:[680..696] beta-hydroxylase))))))
+    (.:[696..697] .)))
+
+;sentence 7 Span:698..925
+;The  benzo[b]thiophenes generally showed the greatest potency in vivo, and
+;compounds  72, 73, and 75 caused almost complete inhibition of thromboxane
+;production for 6  h after oral administration of 0.5 mg/kg to conscious
+;dogs.
+;[703..721]:substance:"benzo[b]thiophenes"
+;[773..782]:substance:"compounds"
+;[784..786]:substance:"72"
+;[788..790]:substance:"73"
+;[796..798]:substance:"75"
+;[836..847]:substance:"thromboxane"
+;[863..864]:quantitative-value:"6"
+;[866..867]:quantitative-units:"h"
+;[897..900]:quantitative-value:"0.5"
+;[901..906]:quantitative-units:"mg/kg"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[698..701] The) (NNS:[703..721] benzo-LSB-b-RSB-thiophenes))
+      (ADVP (RB:[722..731] generally))
+      (VP (VBD:[732..738] showed)
+        (NP (DT:[739..742] the) (JJS:[743..751] greatest)
+            (NN:[752..759] potency))
+        (ADVP (FW:[760..762] in) (FW:[763..767] vivo))))
+    (,:[767..768] ,) (CC:[769..772] and)
+    (S
+      (NP-SBJ
+        (NP
+          (NML-1 (NNS:[773..782] compounds))
+          (CD:[784..786] 72))
+        (,:[786..787] ,)
+        (NP
+          (NML-1 (-NONE-:[787..787] *P*))
+          (CD:[788..790] 73))
+        (,:[790..791] ,) (CC:[792..795] and)
+        (NP
+          (NML-1 (-NONE-:[795..795] *P*))
+          (CD:[796..798] 75)))
+      (VP (VBD:[799..805] caused)
+        (NP
+          (NP
+            (ADJP (RB:[806..812] almost) (JJ:[813..821] complete))
+            (NN:[822..832] inhibition))
+          (PP (IN:[833..835] of)
+            (NP (NN:[836..847] thromboxane) (NN:[848..858] production))))
+        (PP-TMP (IN:[859..862] for)
+          (NP (CD:[863..864] 6) (NN:[866..867] h)))
+        (PP-TMP (IN:[868..873] after)
+          (NP
+            (NP (JJ:[874..878] oral) (NN:[879..893] administration))
+            (PP (IN:[894..896] of)
+              (NP
+                (NP (CD:[897..900] 0.5) (NN:[901..903] mg))
+                (PP (SYM:[903..904] /)
+                  (NP (NN:[904..906] kg)))))
+            (PP (TO:[907..909] to)
+              (NP (JJ:[910..919] conscious) (NNS:[920..924] dogs)))))))
+    (.:[924..925] .)))
+
+;sentence 8 Span:926..1014
+;In the case of 73  and 75, thromboxane production was still inhibited by 80%
+;after 24 h.
+;[941..943]:substance:"73"
+;[949..951]:substance:"75"
+;[953..964]:substance:"thromboxane"
+;[999..1002]:quantitative-value:"80%"
+;[1009..1011]:quantitative-value:"24"
+;[1012..1013]:quantitative-units:"h"
+(SENT
+  (S
+    (PP (IN:[926..928] In)
+      (NP
+        (NP (DT:[929..932] the) (NN:[933..937] case))
+        (PP (IN:[938..940] of)
+          (NP (CD:[941..943] 73) (CC:[945..948] and) (CD:[949..951] 75)))))
+    (,:[951..952] ,)
+    (NP-SBJ-1 (NN:[953..964] thromboxane) (NN:[965..975] production))
+    (VP (VBD:[976..979] was)
+      (ADVP-TMP (RB:[980..985] still))
+      (VP (VBN:[986..995] inhibited)
+        (NP-1 (-NONE-:[995..995] *))
+        (PP-EXT (IN:[996..998] by)
+          (NP (CD:[999..1001] 80) (NN:[1001..1002] %)))
+        (PP-TMP (IN:[1003..1008] after)
+          (NP (CD:[1009..1011] 24) (NN:[1012..1013] h)))))
+    (.:[1013..1014] .)))
+
+;section 9 Span:1018..1062
+;PMID: 3091830 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1018..1022] PMID) (::[1022..1023] :) (CD:[1024..1031] 3091830)
+        (NN:[1032..1033] -LSB-) (NNP:[1033..1039] PubMed) (::[1040..1041] -)
+        (NN:[1042..1049] indexed) (IN:[1050..1053] for)
+        (NNP:[1054..1062] MEDLINE-RSB-)))

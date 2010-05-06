@@ -1,0 +1,236 @@
+;PMID: 10086144
+;source_file_982.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..49] = [t:0..49]
+;1)sentence:[e:55..124] = [t:55..124]
+;2)section:[e:128..146] = [t:128..146]
+;3)section:[e:150..158] = [t:150..158]
+;4)section:[e:162..193] = [t:162..193]
+;5)sentence:[e:197..333] = [t:197..333]
+;6)sentence:[e:334..502] = [t:334..502]
+;7)sentence:[e:504..648] = [t:504..648]
+;8)sentence:[e:649..907] = [t:649..907]
+;9)sentence:[e:908..952] = [t:908..952]
+;10)section:[e:956..1001] = [t:956..1001]
+
+;section 0 Span:0..49
+;Ned Tijdschr Geneeskd. 1999 Jan 23;143(4):208-10.
+(SEC
+  (FRAG (NNP:[0..3] Ned) (NNP:[4..12] Tijdschr) (NNP:[13..21] Geneeskd)
+        (.:[21..22] .) (CD:[23..27] 1999) (CC:[28..31] Jan)
+        (CD:[32..39] 23;143-LRB-) (CD:[39..41] 4-RRB-) (CD:[41..45] :208)
+        (HYPH:[45..46] -) (CD:[46..48] 10) (.:[48..49] .)))
+
+;sentence 1 Span:55..124
+;[Priapism caused by simultaneous use of zuclopentixol and paroxetine]
+;[95..108]:substance:"zuclopentixol"
+;[113..123]:substance:"paroxetine"
+(SENT
+  (NP-HLN (-LRB-:[55..56] -LSB-)
+    (NP (NN:[56..64] Priapism))
+    (VP (VBN:[65..71] caused)
+      (NP (-NONE-:[71..71] *))
+      (PP (IN:[72..74] by)
+        (NP-LGS
+          (NP (JJ:[75..87] simultaneous) (NN:[88..91] use))
+          (PP (IN:[92..94] of)
+            (NP (NN:[95..108] zuclopentixol) (CC:[109..112] and)
+                (NN:[113..123] paroxetine))))))
+    (-RRB-:[123..124] -RSB-)))
+
+;section 2 Span:128..146
+;[Article in Dutch]
+(SEC
+  (FRAG (-LRB-:[128..129] -LSB-) (NN:[129..136] Article) (NNP:[137..139] in)
+        (JJ:[140..145] Dutch) (-RRB-:[145..146] -RSB-)))
+
+;section 3 Span:150..158
+;Koers H.
+(SEC
+  (FRAG (NNP:[150..155] Koers) (NNP:[156..158] H.)))
+
+;section 4 Span:162..193
+;Mesos Medisch Centrum, Utrecht.
+(SEC
+  (FRAG (NNP:[162..167] Mesos) (NNP:[168..175] Medisch) (NNP:[176..183] Centrum)
+        (,:[183..184] ,) (NNP:[185..192] Utrecht) (.:[192..193] .)))
+
+;sentence 5 Span:197..333
+;A man aged 32 with psychotic and depressive symptoms was treated with 
+;zuclopentixol and paroxetine, following which priapism developed.
+;[268..281]:substance:"zuclopentixol"
+;[286..296]:substance:"paroxetine"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[197..198] A) (NN:[199..202] man))
+      (ADJP (VBN:[203..207] aged)
+        (NP (CD:[208..210] 32)))
+      (PP (IN:[211..215] with)
+        (NP
+          (ADJP (JJ:[216..225] psychotic) (CC:[226..229] and)
+                (JJ:[230..240] depressive))
+          (NNS:[241..249] symptoms))))
+    (VP (VBD:[250..253] was)
+      (VP (VBN:[254..261] treated)
+        (NP-2 (-NONE-:[261..261] *))
+        (PP-MNR (IN:[262..266] with)
+          (NP (NN:[268..281] zuclopentixol) (CC:[282..285] and)
+              (NN:[286..296] paroxetine)))
+        (,:[296..297] ,)
+        (SBAR
+          (WHPP-1 (VBG:[298..307] following)
+            (WHNP (WDT:[308..313] which)))
+          (S
+            (NP-SBJ (NN:[314..322] priapism))
+            (VP (VBD:[323..332] developed)
+              (PP-1 (-NONE-:[332..332] *T*)))))))
+    (.:[332..333] .)))
+
+;sentence 6 Span:334..502
+;After puncture  of coagulated blood from the corpora cavernosa urine
+;retention developed and a  suprapubic catheter had to be introduced
+;temporarily for urine drainage.
+;[397..402]:substance:"urine"
+;[487..492]:substance:"urine"
+(SENT
+  (S
+    (S
+      (PP-TMP (IN:[334..339] After)
+        (NP
+          (NP (NN:[340..348] puncture))
+          (PP (IN:[350..352] of)
+            (NP
+              (NP (VBN:[353..363] coagulated) (NN:[364..369] blood))
+              (PP (IN:[370..374] from)
+                (NP (DT:[375..378] the) (FW:[379..386] corpora)
+                    (FW:[387..396] cavernosa)))))))
+      (NP-SBJ (NN:[397..402] urine) (NN:[403..412] retention))
+      (VP (VBD:[413..422] developed)))
+    (CC:[423..426] and)
+    (S
+      (NP-SBJ-1 (DT:[427..428] a) (JJ:[430..440] suprapubic)
+                (NN:[441..449] catheter))
+      (VP (VBD:[450..453] had)
+        (S
+          (NP-SBJ-1 (-NONE-:[453..453] *))
+          (VP (TO:[454..456] to)
+            (VP (VB:[457..459] be)
+              (VP (VBN:[460..470] introduced)
+                (NP-1 (-NONE-:[470..470] *))
+                (ADVP (RB:[471..482] temporarily))
+                (PP (IN:[483..486] for)
+                  (NP (NN:[487..492] urine) (NN:[493..501] drainage)))))))))
+    (.:[501..502] .)))
+
+;sentence 7 Span:504..648
+;Zuclopentixol is an alpha 1-receptor blocker and paroxetine inhibits the
+;hepatic  enzyme P450-2D6 required for conversion of the two substances.
+;[504..517]:substance:"Zuclopentixol"
+;[524..540]:substance:"alpha 1-receptor"
+;[541..548]:substance:"blocker"
+;[553..563]:substance:"paroxetine"
+;[586..601]:cyp450:"enzyme P450-2D6"
+;[637..647]:substance:"substances"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[504..517] Zuclopentixol))
+      (VP (VBZ:[518..520] is)
+        (NP-PRD (DT:[521..523] an)
+          (NML
+            (NML (SYM:[524..529] alpha) (CD:[530..531] 1))
+            (HYPH:[531..532] -) (NN:[532..540] receptor))
+          (NN:[541..548] blocker))))
+    (CC:[549..552] and)
+    (S
+      (NP-SBJ (NN:[553..563] paroxetine))
+      (VP (VBZ:[564..572] inhibits)
+        (NP
+          (NP
+            (NP (DT:[573..576] the) (JJ:[577..584] hepatic)
+                (NN:[586..592] enzyme))
+            (NP (NN:[593..601] P450-2D6)))
+          (VP (VBN:[602..610] required)
+            (NP (-NONE-:[610..610] *))
+            (PP (IN:[611..614] for)
+              (NP
+                (NP (NN:[615..625] conversion))
+                (PP (IN:[626..628] of)
+                  (NP (DT:[629..632] the) (CD:[633..636] two)
+                      (NNS:[637..647] substances)))))))))
+    (.:[647..648] .)))
+
+;sentence 8 Span:649..907
+;Separately, and  especially in combination, these substances cause a
+;disturbance of the drainage  from the corpora cavernosa leading to ischaemia
+;and complications such as  dysuria, urine retention, impotence, fibrosis of
+;the corpora cavernosa and  gangrene.
+;[699..709]:substance:"substances"
+;[831..836]:substance:"urine"
+(SENT
+  (S
+    (UCP-ADV
+      (ADVP (RB:[649..659] Separately))
+      (,:[659..660] ,) (CC:[661..664] and)
+      (PP
+        (ADVP (RB:[666..676] especially))
+        (IN:[677..679] in)
+        (NP (NN:[680..691] combination))))
+    (,:[691..692] ,)
+    (NP-SBJ (DT:[693..698] these) (NNS:[699..709] substances))
+    (VP (VBP:[710..715] cause)
+      (NP
+        (NP
+          (NP
+            (NP (DT:[716..717] a) (NN:[718..729] disturbance))
+            (PP (IN:[730..732] of)
+              (NP
+                (NP (DT:[733..736] the) (NN:[737..745] drainage))
+                (PP (IN:[747..751] from)
+                  (NP (DT:[752..755] the) (FW:[756..763] corpora)
+                      (FW:[764..773] cavernosa))))))
+          (VP (VBG:[774..781] leading)
+            (PP-CLR (TO:[782..784] to)
+              (NP (NN:[785..794] ischaemia)))))
+        (CC:[795..798] and)
+        (NP
+          (NP (NNS:[799..812] complications))
+          (PP (JJ:[813..817] such) (IN:[818..820] as)
+            (NP
+              (NP (NN:[822..829] dysuria))
+              (,:[829..830] ,)
+              (NP (NN:[831..836] urine) (NN:[837..846] retention))
+              (,:[846..847] ,)
+              (NP (NN:[848..857] impotence))
+              (,:[857..858] ,)
+              (NP
+                (NP (NN:[859..867] fibrosis))
+                (PP (IN:[868..870] of)
+                  (NP (DT:[871..874] the) (FW:[875..882] corpora)
+                      (FW:[883..892] cavernosa))))
+              (CC:[893..896] and)
+              (NP (NN:[898..906] gangrene)))))))
+    (.:[906..907] .)))
+
+;sentence 9 Span:908..952
+;Consequently, timely treatment is indicated.
+(SENT
+  (S
+    (ADVP (RB:[908..920] Consequently))
+    (,:[920..921] ,)
+    (NP-SBJ-1 (JJ:[922..928] timely) (NN:[929..938] treatment))
+    (VP (VBZ:[939..941] is)
+      (VP (VBN:[942..951] indicated)
+        (NP-1 (-NONE-:[951..951] *))))
+    (.:[951..952] .)))
+
+;section 10 Span:956..1001
+;PMID: 10086144 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[956..960] PMID) (::[960..961] :) (CD:[962..970] 10086144)
+        (IN:[971..972] -LSB-) (NNP:[972..978] PubMed) (HYPH:[979..980] -)
+        (JJ:[981..988] indexed) (IN:[989..992] for)
+        (NNP:[993..1001] MEDLINE-RSB-)))

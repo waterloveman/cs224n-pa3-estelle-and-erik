@@ -1,0 +1,557 @@
+;PMID: 2850767
+;source_file_1929.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..229] = [t:51..229]
+;2)section:[e:233..257] = [t:233..257]
+;3)section:[e:261..355] = [t:261..355]
+;4)sentence:[e:359..577] = [t:359..577]
+;5)sentence:[e:578..765] = [t:578..765]
+;6)sentence:[e:766..876] = [t:766..876]
+;7)sentence:[e:877..980] = [t:877..980]
+;8)sentence:[e:982..1160] = [t:982..1160]
+;9)sentence:[e:1161..1243] = [t:1161..1243]
+;10)sentence:[e:1244..1403] = [t:1244..1403]
+;11)sentence:[e:1404..1520] = [t:1404..1520]
+;12)sentence:[e:1521..1665] = [t:1521..1665]
+;13)sentence:[e:1666..1810] = [t:1666..1810]
+;14)sentence:[e:1811..1887] = [t:1811..1887]
+;15)sentence:[e:1888..2094] = [t:1888..2094]
+;16)section:[e:2098..2142] = [t:2098..2142]
+
+;section 0 Span:0..45
+;Arch Biochem Biophys. 1988 Dec;267(2):606-13.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 1988) (CD:[27..34] Dec;267)
+        (-LRB-:[34..35] -LRB-) (CD:[35..36] 2) (-RRB-:[36..37] -RRB-)
+        (CD:[37..44] :606-13) (.:[44..45] .)))
+
+;sentence 1 Span:51..229
+;Microsomal reduction of low-molecular-weight Fe3+ chelates and ferritin: 
+;enhancement by adriamycin, paraquat, menadione, and anthraquinone 2-sulfonate
+; and inhibition by oxygen.
+;[96..109]:substance:"Fe3+ chelates"
+;[114..122]:substance:"ferritin"
+;[140..150]:substance:"adriamycin"
+;[152..160]:substance:"paraquat"
+;[162..171]:substance:"menadione"
+;[177..202]:substance:"anthraquinone 2-sulfonate"
+;[222..228]:substance:"oxygen"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (JJ:[51..61] Microsomal) (NN:[62..71] reduction))
+      (PP (IN:[72..74] of)
+        (NP
+          (NP
+            (NML (JJ:[75..78] low) (HYPH:[78..79] -) (JJ:[79..88] molecular)
+                 (HYPH:[88..89] -) (NN:[89..95] weight))
+            
+            (NML (NN:[96..99] Fe3) (SYM:[99..100] +))
+            (NNS:[101..109] chelates))
+          (CC:[110..113] and)
+          (NP (NN:[114..122] ferritin)))))
+    (::[122..123] :)
+    (NP
+      (NP
+        (NP (NN:[125..136] enhancement))
+        (PP (IN:[137..139] by)
+          (NP
+            (NP (NN:[140..150] adriamycin))
+            (,:[150..151] ,)
+            (NP (NN:[152..160] paraquat))
+            (,:[160..161] ,)
+            (NP (NN:[162..171] menadione))
+            (,:[171..172] ,) (CC:[173..176] and)
+            (NP (NN:[177..190] anthraquinone) (NN:[191..202] 2-sulfonate)))))
+      (CC:[204..207] and)
+      (NP
+        (NP (NN:[208..218] inhibition))
+        (PP (IN:[219..221] by)
+          (NP (NN:[222..228] oxygen)))))
+    (.:[228..229] .)))
+
+;section 2 Span:233..257
+;Vile GF, Winterbourn CC.
+(SEC
+  (FRAG (NNP:[233..237] Vile) (NNP:[238..240] GF) (,:[240..241] ,)
+        (NNP:[242..253] Winterbourn) (NNP:[254..256] CC) (.:[256..257] .)))
+
+;section 3 Span:261..355
+;Department of Pathology, Christchurch School of Medicine, Christchurch
+;Hospital,  New Zealand.
+(SEC
+  (FRAG (NNP:[261..271] Department) (IN:[272..274] of)
+        (NNP:[275..284] Pathology) (,:[284..285] ,)
+        (NNP:[286..298] Christchurch) (NNP:[299..305] School) (IN:[306..308] of)
+        (NNP:[309..317] Medicine) (,:[317..318] ,) (NNP:[319..331] Christchurch)
+        (NNP:[332..340] Hospital) (,:[340..341] ,) (NNP:[343..346] New)
+        (NNP:[347..354] Zealand) (.:[354..355] .)))
+
+;sentence 4 Span:359..577
+;Reduction of iron is important in promoting xenobiotic-enhanced, microsomal 
+;lipid peroxidation, yet there is little evidence that Fe3+ chelates that
+;promote  lipid peroxidation can be reduced by the microsomal system.
+;[372..376]:substance:"iron"
+;[403..413]:substance:"xenobiotic"
+;[436..441]:substance:"lipid"
+;[490..503]:substance:"Fe3+ chelates"
+;[518..523]:substance:"lipid"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[359..368] Reduction))
+        (PP (IN:[369..371] of)
+          (NP (NN:[372..376] iron))))
+      (VP (VBZ:[377..379] is)
+        (ADJP-PRD (JJ:[380..389] important))
+        (PP (IN:[390..392] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[392..392] *))
+            (VP (VBG:[393..402] promoting)
+              (NP
+                (ADJP (NN:[403..413] xenobiotic) (HYPH:[413..414] -)
+                      (VBN:[414..422] enhanced))
+                (,:[422..423] ,) (JJ:[424..434] microsomal)
+                 (NN:[436..441] lipid) (NN:[442..454] peroxidation)))))))
+    (,:[454..455] ,) (RB:[456..459] yet)
+    (S
+      (NP-SBJ (EX:[460..465] there))
+      (VP (VBZ:[466..468] is)
+        (NP-PRD (JJ:[469..475] little) (NN:[476..484] evidence)
+          (SBAR (IN:[485..489] that)
+            (S
+              (NP-SBJ-2
+                (NP
+                  (NML (NN:[490..493] Fe3) (SYM:[493..494] +))
+                  (NNS:[495..503] chelates))
+                (SBAR
+                  (WHNP-1 (WDT:[504..508] that))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[508..508] *T*))
+                    (VP (VBP:[509..516] promote)
+                      (NP (NN:[518..523] lipid) (NN:[524..536] peroxidation))))))
+              (VP (MD:[537..540] can)
+                (VP (VB:[541..543] be)
+                  (VP (VBN:[544..551] reduced)
+                    (NP-2 (-NONE-:[551..551] *))
+                    (PP (IN:[552..554] by)
+                      (NP (DT:[555..558] the) (JJ:[559..569] microsomal)
+                          (NN:[570..576] system)))))))))))
+    (.:[576..577] .)))
+
+;sentence 5 Span:578..765
+;We have shown that  rat liver microsomes catalyse NADPH-dependent reduction
+;of Fe3+ without  chelator, as well as Fe3+(ADP), Fe3+(ATP), Fe3+(citrate),
+;Fe3+(EDTA), and  ferrioxamine in N2.
+;[628..633]:substance:"NADPH"
+;[657..661]:substance:"Fe3+"
+;[671..679]:substance:"chelator"
+;[692..701]:substance:"Fe3+(ADP)"
+;[703..712]:substance:"Fe3+(ATP)"
+;[714..727]:substance:"Fe3+(citrate)"
+;[729..739]:substance:"Fe3+(EDTA)"
+;[746..758]:substance:"ferrioxamine"
+;[762..764]:substance:"N2"
+(SENT
+  (S
+    (NP-SBJ (PRP:[578..580] We))
+    (VP (VBP:[581..585] have)
+      (VP (VBN:[586..591] shown)
+        (SBAR (IN:[592..596] that)
+          (S
+            (NP-SBJ (NN:[598..601] rat) (NN:[602..607] liver)
+                    (NNS:[608..618] microsomes))
+            (VP (VBP:[619..627] catalyse)
+              (NP
+                (NP
+                  (ADJP (NN:[628..633] NADPH) (HYPH:[633..634] -)
+                        (JJ:[634..643] dependent))
+                  (NN:[644..653] reduction))
+                (PP (IN:[654..656] of)
+                  (NP
+                     (NN:[657..660] Fe3) (SYM:[660..661] +)
+                    (CONJP-2 (-NONE-:[661..661] *ICH*))
+                    (NP-1 (-NONE-:[661..661] *ICH*)))))
+              (PP (IN:[662..669] without)
+                (NP (NN:[671..679] chelator)))
+              (,:[679..680] ,)
+              (CONJP-2 (RB:[681..683] as) (RB:[684..688] well)
+                       (IN:[689..691] as))
+              (NP-1 (NN:[692..701] Fe3+-LRB-ADP-RRB-) (,:[701..702] ,)
+                    (NN:[703..712] Fe3+-LRB-ATP-RRB-) (,:[712..713] ,)
+                    (NN:[714..727] Fe3+-LRB-citrate-RRB-) (,:[727..728] ,)
+                    (NN:[729..739] Fe3+-LRB-EDTA-RRB-) (,:[739..740] ,)
+                    (CC:[741..744] and) (NN:[746..758] ferrioxamine))
+              (PP-LOC (IN:[759..761] in)
+                (NP (NN:[762..764] N2))))))))
+    (.:[764..765] .)))
+
+;sentence 6 Span:766..876
+;The NADPH oxidation that accompanied Fe3+ reduction was  inhibited by CO for
+;all chelates, except Fe3+ (EDTA).
+;[770..775]:substance:"NADPH"
+;[803..807]:substance:"Fe3+"
+;[836..838]:substance:"CO"
+;[847..855]:substance:"chelates"
+;[864..875]:substance:"Fe3+ (EDTA)"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[766..769] The) (NN:[770..775] NADPH) (NN:[776..785] oxidation))
+      (SBAR
+        (WHNP-1 (WDT:[786..790] that))
+        (S
+          (NP-SBJ-1 (-NONE-:[790..790] *T*))
+          (VP (VBD:[791..802] accompanied)
+            (NP
+              (NML (NN:[803..806] Fe3) (SYM:[806..807] +))
+              (NN:[808..817] reduction))))))
+    (VP (VBD:[818..821] was)
+      (VP (VBN:[823..832] inhibited)
+        (NP-2 (-NONE-:[832..832] *))
+        (PP (IN:[833..835] by)
+          (NP-LGS (NN:[836..838] CO)))
+        (PP (IN:[839..842] for)
+          (NP
+            (NP (DT:[843..846] all) (NNS:[847..855] chelates))
+            (,:[855..856] ,)
+            (PP (IN:[857..863] except)
+              (NP (NN:[864..867] Fe3) (SYM:[867..868] +)
+                (PRN (-LRB-:[869..870] -LRB-)
+                  (NP (NN:[870..874] EDTA))
+                  (-RRB-:[874..875] -RRB-))))))))
+    (.:[875..876] .)))
+
+;sentence 7 Span:877..980
+;This implies that, except  for Fe3+ (EDTA), cytochrome P450 was involved in
+;reduction of the complexes.
+;[908..919]:substance:"Fe3+ (EDTA)"
+;[921..936]:cyp450:"cytochrome P450"
+;[970..979]:substance:"complexes"
+(SENT
+  (S
+    (NP-SBJ (DT:[877..881] This))
+    (VP (VBZ:[882..889] implies)
+      (SBAR (IN:[890..894] that) (,:[894..895] ,)
+        (S
+          (PP (IN:[896..902] except)
+            (PP (IN:[904..907] for)
+              (NP (NN:[908..911] Fe3) (SYM:[911..912] +)
+                (PRN (-LRB-:[913..914] -LRB-)
+                  (NP (NN:[914..918] EDTA))
+                  (-RRB-:[918..919] -RRB-)))))
+          (,:[919..920] ,)
+          (NP-SBJ-1 (NN:[921..931] cytochrome) (NN:[932..936] P450))
+          (VP (VBD:[937..940] was)
+            (VP (VBN:[941..949] involved)
+              (NP-1 (-NONE-:[949..949] *))
+              (PP-CLR (IN:[950..952] in)
+                (NP
+                  (NP (NN:[953..962] reduction))
+                  (PP (IN:[963..965] of)
+                    (NP (DT:[966..969] the) (NNS:[970..979] complexes))))))))))
+    (.:[979..980] .)))
+
+;sentence 8 Span:982..1160
+;Adriamycin, paraquat, and anthraquinone 2-sulfonate (AQS) enhanced reduction
+;of  all the Fe3+ chelates, whereas menadione enhanced reduction only of
+;Fe3+(ADP)  and Fe3+(citrate).
+;[982..992]:substance:"Adriamycin"
+;[994..1002]:substance:"paraquat"
+;[1008..1033]:substance:"anthraquinone 2-sulfonate"
+;[1035..1038]:substance:"AQS"
+;[1071..1084]:substance:"Fe3+ chelates"
+;[1094..1103]:substance:"menadione"
+;[1131..1140]:substance:"Fe3+(ADP)"
+;[1146..1159]:substance:"Fe3+(citrate)"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[982..992] Adriamycin))
+        (,:[992..993] ,)
+        (NP (NN:[994..1002] paraquat))
+        (,:[1002..1003] ,) (CC:[1004..1007] and)
+        (NP
+          (NP (NN:[1008..1021] anthraquinone) (NN:[1022..1033] 2-sulfonate))
+          (NP (-LRB-:[1034..1035] -LRB-) (NN:[1035..1038] AQS)
+              (-RRB-:[1038..1039] -RRB-))))
+      (VP (VBD:[1040..1048] enhanced)
+        (NP
+          (NP (NN:[1049..1058] reduction))
+          (PP (IN:[1059..1061] of)
+            (NP (PDT:[1063..1066] all) (DT:[1067..1070] the)
+              
+              (NML (NN:[1071..1074] Fe3) (SYM:[1074..1075] +))
+              (NNS:[1076..1084] chelates))))
+        (,:[1084..1085] ,)
+        (SBAR-ADV (IN:[1086..1093] whereas)
+          (S
+            (NP-SBJ (NN:[1094..1103] menadione))
+            (VP (VBD:[1104..1112] enhanced)
+              (NP
+                (NP (NN:[1113..1122] reduction))
+                (PP (RB:[1123..1127] only) (IN:[1128..1130] of)
+                  (NP (NN:[1131..1140] Fe3+-LRB-ADP-RRB-) (CC:[1142..1145] and)
+                      (NN:[1146..1159] Fe3+-LRB-citrate-RRB-)))))))))
+    (.:[1159..1160] .)))
+
+;sentence 9 Span:1161..1243
+;All the compounds enhanced oxidation of NADPH in the presence  or absence of
+;iron.
+;[1169..1178]:substance:"compounds"
+;[1201..1206]:substance:"NADPH"
+;[1238..1242]:substance:"iron"
+(SENT
+  (S
+    (NP-SBJ (PDT:[1161..1164] All) (DT:[1165..1168] the)
+            (NNS:[1169..1178] compounds))
+    (VP (VBD:[1179..1187] enhanced)
+      (NP
+        (NP (NN:[1188..1197] oxidation))
+        (PP (IN:[1198..1200] of)
+          (NP (NN:[1201..1206] NADPH))))
+      (PP (IN:[1207..1209] in)
+        (NP
+          (NP (DT:[1210..1213] the) (NN:[1214..1222] presence)
+              (CC:[1224..1226] or) (NN:[1227..1234] absence))
+          (PP (IN:[1235..1237] of)
+            (NP (NN:[1238..1242] iron))))))
+    (.:[1242..1243] .)))
+
+;sentence 10 Span:1244..1403
+;This was not inhibited by CO, and the results are compatible  with Fe3+
+;reduction occurring via the xenobiotic radicals produced by cytochrome  P450
+;reductase.
+;[1270..1272]:substance:"CO"
+;[1311..1315]:substance:"Fe3+"
+;[1344..1363]:substance:"xenobiotic radicals"
+;[1376..1402]:substance:"cytochrome  P450 reductase"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[1244..1248] This))
+      (VP (VBD:[1249..1252] was) (RB:[1253..1256] not)
+        (VP (VBN:[1257..1266] inhibited)
+          (NP-1 (-NONE-:[1266..1266] *))
+          (PP (IN:[1267..1269] by)
+            (NP-LGS (NN:[1270..1272] CO))))))
+    (,:[1272..1273] ,) (CC:[1274..1277] and)
+    (S
+      (NP-SBJ (DT:[1278..1281] the) (NNS:[1282..1289] results))
+      (VP (VBP:[1290..1293] are)
+        (ADJP-PRD (JJ:[1294..1304] compatible)
+          (PP (IN:[1306..1310] with)
+            (S-NOM
+              (NP-SBJ
+                (NML (NN:[1311..1314] Fe3) (SYM:[1314..1315] +))
+                (NN:[1316..1325] reduction))
+              (VP (VBG:[1326..1335] occurring)
+                (PP-MNR (IN:[1336..1339] via)
+                  (NP
+                    (NP (DT:[1340..1343] the)
+                       (JJ:[1344..1354] xenobiotic) (NNS:[1355..1363] radicals))
+                    (VP (VBN:[1364..1372] produced)
+                      (NP (-NONE-:[1372..1372] *))
+                      (PP (IN:[1373..1375] by)
+                        (NP
+                          (NML (NN:[1376..1386] cytochrome)
+                               (NN:[1388..1392] P450))
+                          (NN:[1393..1402] reductase))))))))))))
+    (.:[1402..1403] .)))
+
+;sentence 11 Span:1404..1520
+;Microsomal reduction of the xenobiotics, except menadione,  enabled the
+;reduction and release of iron from ferritin.
+;[1432..1443]:substance:"xenobiotics"
+;[1452..1461]:substance:"menadione"
+;[1501..1505]:substance:"iron"
+;[1511..1519]:substance:"ferritin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1404..1414] Microsomal) (NN:[1415..1424] reduction))
+      (PP (IN:[1425..1427] of)
+        (NP
+          (NP (DT:[1428..1431] the) (NNS:[1432..1443] xenobiotics))
+          (,:[1443..1444] ,)
+          (PP (IN:[1445..1451] except)
+            (NP (NN:[1452..1461] menadione))))))
+    (,:[1461..1462] ,)
+    (VP (VBD:[1464..1471] enabled)
+      (NP
+        (NP (DT:[1472..1475] the) (NN:[1476..1485] reduction)
+            (CC:[1486..1489] and) (NN:[1490..1497] release))
+        (PP (IN:[1498..1500] of)
+          (NP
+            (NP (NN:[1501..1505] iron))
+            (PP (IN:[1506..1510] from)
+              (NP (NN:[1511..1519] ferritin)))))))
+    (.:[1519..1520] .)))
+
+;sentence 12 Span:1521..1665
+;Fe3+ chelate reduction,  both with and without xenobiotic, was inhibited by
+;O2, although it still  proceeded in air at 10-20% of the rate in N2.
+;[1521..1533]:substance:"Fe3+ chelate"
+;[1568..1578]:substance:"xenobiotic"
+;[1597..1599]:substance:"O2"
+;[1633..1636]:substance:"air"
+;[1640..1646]:quantitative-value:"10-20%"
+;[1662..1664]:substance:"N2"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (NP
+          (NML
+            (NML (NN:[1521..1524] Fe3) (SYM:[1524..1525] +))
+            (NN:[1526..1533] chelate))
+          (NN:[1534..1543] reduction))
+        (,:[1543..1544] ,)
+        (PP (CC:[1546..1550] both)
+          (PP (IN:[1551..1555] with)
+            (NP-1 (-NONE-:[1555..1555] *RNR*)))
+          (CC:[1556..1559] and)
+          (PP (IN:[1560..1567] without)
+            (NP-1 (-NONE-:[1567..1567] *RNR*)))
+          (NP-1 (NN:[1568..1578] xenobiotic))))
+      (,:[1578..1579] ,)
+      (VP (VBD:[1580..1583] was)
+        (VP (VBN:[1584..1593] inhibited)
+          (NP-2 (-NONE-:[1593..1593] *))
+          (PP (IN:[1594..1596] by)
+            (NP-LGS (NN:[1597..1599] O2)))
+          (,:[1599..1600] ,)
+          (SBAR-ADV (IN:[1601..1609] although)
+            (S
+              (NP-SBJ (PRP:[1610..1612] it))
+              (ADVP (RB:[1613..1618] still))
+              (VP (VBD:[1620..1629] proceeded)
+                (PP-LOC (IN:[1630..1632] in)
+                  (NP (NN:[1633..1636] air)))
+                (PP (IN:[1637..1639] at)
+                  (NP
+                    (NP
+                      (QP (CD:[1640..1642] 10) (HYPH:[1642..1643] -)
+                          (CD:[1643..1645] 20))
+                      (NN:[1645..1646] %))
+                    (PP (IN:[1647..1649] of)
+                      (NP
+                        (NP (DT:[1650..1653] the) (NN:[1654..1658] rate))
+                        (PP (IN:[1659..1661] in)
+                          (NP (NN:[1662..1664] N2)))))))))))))
+    (.:[1664..1665] .)))
+
+;sentence 13 Span:1666..1810
+;Iron-dependent lipid peroxidation  was promoted by ADP and ATP, inhibited 50%
+;by citrate, and completely inhibited  by EDTA and desferrioxamine.
+;[1666..1670]:substance:"Iron"
+;[1681..1686]:substance:"lipid"
+;[1717..1720]:substance:"ADP"
+;[1725..1728]:substance:"ATP"
+;[1740..1743]:quantitative-value:"50%"
+;[1747..1754]:substance:"citrate"
+;[1785..1789]:substance:"EDTA"
+;[1794..1809]:substance:"desferrioxamine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (ADJP (NN:[1666..1670] Iron) (HYPH:[1670..1671] -)
+            (JJ:[1671..1680] dependent))
+      (NN:[1681..1686] lipid) (NN:[1687..1699] peroxidation))
+    (VP (VBD:[1701..1704] was)
+      (VP
+        (VP (VBN:[1705..1713] promoted)
+          (NP-1 (-NONE-:[1713..1713] *))
+          (PP (IN:[1714..1716] by)
+            (NP-LGS (NN:[1717..1720] ADP) (CC:[1721..1724] and)
+                    (NN:[1725..1728] ATP))))
+        (,:[1728..1729] ,)
+        (VP (VBN:[1730..1739] inhibited)
+          (NP-EXT (CD:[1740..1742] 50) (NN:[1742..1743] %))
+          (PP (IN:[1744..1746] by)
+            (NP-LGS (NN:[1747..1754] citrate))))
+        (,:[1754..1755] ,) (CC:[1756..1759] and)
+        (VP
+          (ADVP (RB:[1760..1770] completely))
+          (VBN:[1771..1780] inhibited)
+          (PP (IN:[1782..1784] by)
+            (NP-LGS (NN:[1785..1789] EDTA) (CC:[1790..1793] and)
+                    (NN:[1794..1809] desferrioxamine))))))
+    (.:[1809..1810] .)))
+
+;sentence 14 Span:1811..1887
+;Of the xenobiotics, only Adriamycin enhanced  microsomal lipid peroxidation.
+;[1818..1829]:substance:"xenobiotics"
+;[1836..1846]:substance:"Adriamycin"
+;[1868..1873]:substance:"lipid"
+(SENT
+  (S
+    (PP-1 (IN:[1811..1813] Of)
+      (NP (DT:[1814..1817] the) (NNS:[1818..1829] xenobiotics))
+      (,:[1829..1830] ,))
+    (NP-SBJ
+      (NP (RB:[1831..1835] only) (NN:[1836..1846] Adriamycin))
+      (PP-1 (-NONE-:[1846..1846] *ICH*)))
+    (VP (VBD:[1847..1855] enhanced)
+      (NP (JJ:[1857..1867] microsomal) (NN:[1868..1873] lipid)
+          (NN:[1874..1886] peroxidation)))
+    (.:[1886..1887] .)))
+
+;sentence 15 Span:1888..2094
+;These results indicate that the effects of  chelators and xenobiotics on Fe3+
+;reduction do not correlate with lipid  peroxidation and, although reduction
+;is necessary, there must be other factors  involved.
+;[1932..1941]:substance:"chelators"
+;[1946..1957]:substance:"xenobiotics"
+;[1961..1965]:substance:"Fe3+"
+;[1998..2003]:substance:"lipid"
+(SENT
+  (S
+    (NP-SBJ (DT:[1888..1893] These) (NNS:[1894..1901] results))
+    (VP (VBP:[1902..1910] indicate)
+      (SBAR (IN:[1911..1915] that)
+        (S
+          (S
+            (NP-SBJ
+              (NP (DT:[1916..1919] the) (NNS:[1920..1927] effects))
+              (PP (IN:[1928..1930] of)
+                (NP (NNS:[1932..1941] chelators) (CC:[1942..1945] and)
+                    (NNS:[1946..1957] xenobiotics)))
+              (PP (IN:[1958..1960] on)
+                (NP
+                  (NML (NN:[1961..1964] Fe3) (SYM:[1964..1965] +))
+                  (NN:[1966..1975] reduction))))
+            (VP (VBP:[1976..1978] do) (RB:[1979..1982] not)
+              (VP (VB:[1983..1992] correlate)
+                (PP-CLR (IN:[1993..1997] with)
+                  (NP (NN:[1998..2003] lipid) (NN:[2005..2017] peroxidation))))))
+          (CC:[2018..2021] and) (,:[2021..2022] ,)
+          (S
+            (SBAR-ADV (IN:[2023..2031] although)
+              (S
+                (NP-SBJ (NN:[2032..2041] reduction))
+                (VP (VBZ:[2042..2044] is)
+                  (ADJP-PRD (JJ:[2045..2054] necessary)))))
+            (,:[2054..2055] ,)
+            (NP-SBJ (EX:[2056..2061] there))
+            (VP (MD:[2062..2066] must)
+              (VP (VB:[2067..2069] be)
+                (NP
+                  (NP (JJ:[2070..2075] other) (NNS:[2076..2083] factors))
+                  (VP (VBN:[2085..2093] involved)
+                    (NP (-NONE-:[2093..2093] *))))))))))
+    (.:[2093..2094] .)))
+
+;section 16 Span:2098..2142
+;PMID: 2850767 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2098..2102] PMID) (::[2102..2103] :) (CD:[2104..2111] 2850767)
+        (NN:[2112..2113] -LSB-) (NNP:[2113..2119] PubMed) (::[2120..2121] -)
+        (NN:[2122..2129] indexed) (IN:[2130..2133] for)
+        (NNP:[2134..2142] MEDLINE-RSB-)))

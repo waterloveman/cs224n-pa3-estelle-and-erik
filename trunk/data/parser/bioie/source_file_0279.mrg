@@ -1,0 +1,430 @@
+;PMID: 3773530
+;source_file_643.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..197] = [t:47..197]
+;2)section:[e:201..236] = [t:201..236]
+;3)sentence:[e:240..449] = [t:240..449]
+;4)sentence:[e:450..687] = [t:450..687]
+;5)sentence:[e:688..792] = [t:688..792]
+;6)sentence:[e:793..965] = [t:793..965]
+;7)sentence:[e:966..1113] = [t:966..1113]
+;8)sentence:[e:1114..1207] = [t:1114..1207]
+;9)sentence:[e:1208..1334] = [t:1208..1334]
+;10)sentence:[e:1335..1506] = [t:1335..1506]
+;11)sentence:[e:1507..1672] = [t:1507..1672]
+;12)section:[e:1676..1720] = [t:1676..1720]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[97..105] estrogen
+;ERROR_Token in entity file but not tree[105..106] -
+;ERROR_Token in entity file but not tree[106..107] 2
+;ERROR_Token in entity file but not tree[107..108] /
+;ERROR_Token in entity file but not tree[108..109] 4
+;ERROR_Token in entity file but not tree[109..110] -
+;ERROR_Token in entity file but not tree[110..121] hydroxylase
+;ERROR_Token in entity file but not tree[275..283] estrogen
+;ERROR_Token in entity file but not tree[283..284] -
+;ERROR_Token in entity file but not tree[284..285] 2
+;ERROR_Token in entity file but not tree[285..286] /
+;ERROR_Token in entity file but not tree[286..287] 4
+;ERROR_Token in entity file but not tree[287..288] -
+;ERROR_Token in entity file but not tree[288..299] hydroxylase
+;ERROR_Token in entity file but not tree[539..547] estrogen
+;ERROR_Token in entity file but not tree[547..548] -
+;ERROR_Token in entity file but not tree[548..549] 2
+;ERROR_Token in entity file but not tree[549..550] /
+;ERROR_Token in entity file but not tree[550..551] 4
+;ERROR_Token in entity file but not tree[551..552] -
+;ERROR_Token in entity file but not tree[552..563] hydroxylase
+;ERROR_Token in entity file but not tree[1646..1654] estrogen
+;ERROR_Token in entity file but not tree[1654..1655] -
+;ERROR_Token in entity file but not tree[1655..1656] 2
+;ERROR_Token in entity file but not tree[1656..1657] /
+;ERROR_Token in entity file but not tree[1657..1658] 4
+;ERROR_Token in entity file but not tree[1658..1659] -
+;ERROR_Token in entity file but not tree[1659..1671] hydroxylases
+;ERROR_Token in tree file but not entity[97..121] estrogen-2/4-hydroxylase
+;ERROR_Token in tree file but not entity[275..299] estrogen-2/4-hydroxylase
+;ERROR_Token in tree file but not entity[539..563] estrogen-2/4-hydroxylase
+;ERROR_Token in tree file but not entity[1646..1671]
+;estrogen-2/4-hydroxylases
+
+;section 0 Span:0..41
+;J Steroid Biochem. 1986 Oct;25(4):585-91.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Steroid) (NNP:[10..17] Biochem)
+        (.:[17..18] .) (CD:[19..23] 1986) (DT:[24..29] Oct;2) (CD:[29..30] 5)
+        (-LRB-:[30..31] -LRB-) (NN:[31..32] 4) (-RRB-:[32..33] -RRB-)
+        (,:[33..34] :) (CD:[34..36] 58) (CD:[36..40] 5-91) (.:[40..41] .)))
+
+;sentence 1 Span:47..197
+;Substrate dependency of specific and non-specific estrogen-2/4-hydroxylase 
+;activities measured by the radio-enzymatic method in rat brain microsomes.
+;[47..56]:substance:"Substrate"
+;[97..107]...[110..121]:substance:"estrogen-2"..."hydroxylase"
+;[97..105]...[108..121]:cyp450:"estrogen"..."4-hydroxylase"
+(SENT
+  (NP-HLN
+    (NP (NN:[47..56] Substrate) (NN:[57..67] dependency))
+    (PP (IN:[68..70] of)
+      (NP
+        (NP (JJ:[71..79] specific)
+          (NML-2 (-NONE-:[79..79] *P*)))
+        (CC:[80..83] and)
+        (NP
+          (ADJP (AFX:[84..87] non) (HYPH:[87..88] -) (JJ:[88..96] specific))
+          (NML-2 (NN:[97..121] estrogen-2/4-hydroxylase)
+                 (NNS:[123..133] activities)))))
+    (VP (VBN:[134..142] measured)
+      (NP (-NONE-:[142..142] *))
+      (PP-MNR (IN:[143..145] by)
+        (NP (DT:[146..149] the)
+          (ADJP (AFX:[150..155] radio) (HYPH:[155..156] -)
+                (JJ:[156..165] enzymatic))
+          (NN:[166..172] method)))
+      (PP-LOC (IN:[173..175] in)
+        (NP (NN:[176..179] rat) (NN:[180..185] brain)
+            (NNS:[186..196] microsomes))))
+    (.:[196..197] .)))
+
+;section 2 Span:201..236
+;Theron CN, Russell VA, Taljaard JJ.
+(SEC
+  (FRAG (NNP:[201..207] Theron) (NNP:[208..210] CN) (,:[210..211] ,)
+        (NNP:[212..219] Russell) (NNP:[220..222] VA) (,:[222..223] ,)
+        (NNP:[224..232] Taljaard) (NNP:[233..236] JJ.)))
+
+;sentence 3 Span:240..449
+;Putative specific and non-specific estrogen-2/4-hydroxylase activities which 
+;might affect the radio-enzymatic assay were characterized in terms of their 
+;requirements for NADPH and their substrate dependency.
+;[275..285]...[288..299]:substance:"estrogen-2"..."hydroxylase"
+;[275..283]...[286..299]:cyp450:"estrogen"..."4-hydroxylase"
+;[412..417]:substance:"NADPH"
+;[428..437]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (JJ:[240..248] Putative)
+        (NML
+          (NML (JJ:[249..257] specific)
+            (NML-3 (-NONE-:[257..257] *P*)))
+          (CC:[258..261] and)
+          (NML
+            (ADJP (AFX:[262..265] non) (HYPH:[265..266] -)
+                  (JJ:[266..274] specific))
+            (NML-3 (NN:[275..299] estrogen-2/4-hydroxylase)
+                   (NNS:[300..310] activities)))))
+      (SBAR
+        (WHNP-1 (WDT:[311..316] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[316..316] *T*))
+          (VP (MD:[318..323] might)
+            (VP (VB:[324..330] affect)
+              (NP (DT:[331..334] the)
+                (ADJP (AFX:[335..340] radio) (HYPH:[340..341] -)
+                      (JJ:[341..350] enzymatic))
+                (NN:[351..356] assay)))))))
+    (VP (VBD:[357..361] were)
+      (VP (VBN:[362..375] characterized)
+        (NP-4 (-NONE-:[375..375] *))
+        (PP (IN:[376..378] in)
+          (NP
+            (NP (NNS:[379..384] terms))
+            (PP (IN:[385..387] of)
+              (NP
+                (NP
+                  (NP (PRP$:[388..393] their) (NNS:[395..407] requirements))
+                  (PP (IN:[408..411] for)
+                    (NP (NN:[412..417] NADPH))))
+                (CC:[418..421] and)
+                (NP (PRP$:[422..427] their) (NN:[428..437] substrate)
+                    (NN:[438..448] dependency))))))))
+    (.:[448..449] .)))
+
+;sentence 4 Span:450..687
+;Using rat brain  microsomes and partially purified rat liver COMT three main
+;sources of  estrogen-2/4-hydroxylase activity could be distinguished; a
+;COMT-related  component and NADPH-dependent and NADPH-independent microsomal
+;components.
+;[511..515]:substance:"COMT"
+;[539..549]...[552..563]:substance:"estrogen-2"..."hydroxylase"
+;[539..547]...[550..563]:cyp450:"estrogen"..."4-hydroxylase"
+;[599..603]:substance:"COMT"
+;[627..632]:substance:"NADPH"
+;[647..652]:substance:"NADPH"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[450..450] *))
+      (VP (VBG:[450..455] Using)
+        (NP
+          (NP (NN:[456..459] rat) (NN:[460..465] brain)
+              (NNS:[467..477] microsomes))
+          (CC:[478..481] and)
+          (NP
+            (ADJP (RB:[482..491] partially) (JJ:[492..500] purified))
+            (NN:[501..504] rat) (NN:[505..510] liver) (NN:[511..515] COMT)))))
+    (NP-SBJ-2
+      (NP
+        (NP (CD:[516..521] three) (JJ:[522..526] main) (NNS:[527..534] sources))
+        (PP (IN:[535..537] of)
+          (NP (NN:[539..563] estrogen-2/4-hydroxylase) (NN:[564..572] activity))))
+      (NP-3 (-NONE-:[572..572] *ICH*)))
+    (VP (MD:[573..578] could)
+      (VP (VB:[579..581] be)
+        (VP (VBN:[582..595] distinguished)
+          (NP-2 (-NONE-:[595..595] *))
+          (::[595..596] ;)
+          (NP-3
+            (NP (DT:[597..598] a)
+              (ADJP (NN:[599..603] COMT) (HYPH:[603..604] -)
+                    (VBN:[604..611] related))
+              (NN:[613..622] component))
+            (CC:[623..626] and)
+            (NP
+              (NP
+                (ADJP (NN:[627..632] NADPH) (HYPH:[632..633] -)
+                      (JJ:[633..642] dependent))
+                (NML-1 (-NONE-:[642..642] *P*)))
+              (CC:[643..646] and)
+              (NP
+                (ADJP (NN:[647..652] NADPH) (HYPH:[652..653] -)
+                      (JJ:[653..664] independent))
+                (NML-1 (JJ:[665..675] microsomal) (NNS:[676..686] components))))))))
+    (.:[686..687] .)))
+
+;sentence 5 Span:688..792
+;The  COMT-related activity required NADPH and showed about equal preferences
+;for  estrone and estradiol.
+;[693..697]:substance:"COMT"
+;[724..729]:substance:"NADPH"
+;[770..777]:substance:"estrone"
+;[782..791]:substance:"estradiol"
+(SENT
+  (S
+    (NP-SBJ (DT:[688..691] The)
+      (ADJP (NN:[693..697] COMT) (HYPH:[697..698] -) (VBN:[698..705] related))
+      (NN:[706..714] activity))
+    (VP
+      (VP (VBD:[715..723] required)
+        (NP (NN:[724..729] NADPH)))
+      (CC:[730..733] and)
+      (VP (VBD:[734..740] showed)
+        (NP
+          (QP (RB:[741..746] about) (JJ:[747..752] equal))
+          (NNS:[753..764] preferences))
+        (PP (IN:[765..768] for)
+          (NP (NN:[770..777] estrone) (CC:[778..781] and)
+              (NN:[782..791] estradiol)))))
+    (.:[791..792] .)))
+
+;sentence 6 Span:793..965
+;The NADPH-dependent component was highly specific for  estradiol, the
+;relative activities observed with estrone and estriol being 7 and  1% of that
+;observed with estradiol.
+;[797..802]:substance:"NADPH"
+;[848..857]:substance:"estradiol"
+;[897..904]:substance:"estrone"
+;[909..916]:substance:"estriol"
+;[923..924]...[931..932]:quantitative-value:"7"..."%"
+;[930..932]:quantitative-value:"1%"
+;[955..964]:substance:"estradiol"
+(SENT
+  (S
+    (NP-SBJ (DT:[793..796] The)
+      (ADJP (NN:[797..802] NADPH) (HYPH:[802..803] -) (JJ:[803..812] dependent))
+      (NN:[813..822] component))
+    (VP (VBD:[823..826] was)
+      (ADJP-PRD (RB:[827..833] highly) (JJ:[834..842] specific)
+        (PP (IN:[843..846] for)
+          (NP (NN:[848..857] estradiol))))
+      (,:[857..858] ,)
+      (S-ADV
+        (NP-SBJ
+          (NP (DT:[859..862] the) (JJ:[863..871] relative)
+              (NNS:[872..882] activities))
+          (VP (VBN:[883..891] observed)
+            (NP (-NONE-:[891..891] *))
+            (PP (IN:[892..896] with)
+              (NP (NN:[897..904] estrone) (CC:[905..908] and)
+                  (NN:[909..916] estriol)))))
+        (VP (VBG:[917..922] being)
+          (NP-PRD
+            (NP
+              (NP (CD:[923..924] 7)
+                (NML-1 (-NONE-:[924..924] *P*)))
+              (CC:[925..928] and)
+              (NP (CD:[930..931] 1)
+                (NML-1 (NN:[931..932] %))))
+            (PP (IN:[933..935] of)
+              (NP
+                (NP (DT:[936..940] that))
+                (VP (VBN:[941..949] observed)
+                  (NP (-NONE-:[949..949] *))
+                  (PP (IN:[950..954] with)
+                    (NP (NN:[955..964] estradiol))))))))))
+    (.:[964..965] .)))
+
+;sentence 7 Span:966..1113
+;The NADPH-independent component exhibited  substrate saturation, was
+;heat-labile and could not be inhibited by  alpha-naphthoflavone or
+;metyrapone.
+;[970..975]:substance:"NADPH"
+;[1009..1018]:substance:"substrate"
+;[1078..1098]:substance:"alpha-naphthoflavone"
+;[1102..1112]:substance:"metyrapone"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[966..969] The)
+      (ADJP (NN:[970..975] NADPH) (HYPH:[975..976] -)
+            (JJ:[976..987] independent))
+      (NN:[988..997] component))
+    (VP
+      (VP (VBD:[998..1007] exhibited)
+        (NP (NN:[1009..1018] substrate) (NN:[1019..1029] saturation)))
+      (,:[1029..1030] ,)
+      (VP (VBD:[1031..1034] was)
+        (ADJP-PRD (NN:[1035..1039] heat) (HYPH:[1039..1040] -)
+                  (JJ:[1040..1046] labile)))
+      (CC:[1047..1050] and)
+      (VP (MD:[1051..1056] could) (RB:[1057..1060] not)
+        (VP (VB:[1061..1063] be)
+          (VP (VBN:[1064..1073] inhibited)
+            (NP-1 (-NONE-:[1073..1073] *))
+            (PP (IN:[1074..1076] by)
+              (NP-LGS (NN:[1078..1098] alpha-naphthoflavone)
+                      (CC:[1099..1101] or) (NN:[1102..1112] metyrapone)))))))
+    (.:[1112..1113] .)))
+
+;sentence 8 Span:1114..1207
+;It showed a preference for estrone over  estradiol, with estriol being a very
+;poor substrate.
+;[1141..1148]:substance:"estrone"
+;[1155..1164]:substance:"estradiol"
+;[1171..1178]:substance:"estriol"
+;[1197..1206]:substance:"substrate"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1114..1116] It))
+    (VP (VBD:[1117..1123] showed)
+      (NP
+        (NP (DT:[1124..1125] a) (NN:[1126..1136] preference))
+        (PP (IN:[1137..1140] for)
+          (NP (NN:[1141..1148] estrone)))
+        (PP (IN:[1149..1153] over)
+          (NP (NN:[1155..1164] estradiol))))
+      (,:[1164..1165] ,)
+      (PP (IN:[1166..1170] with)
+        (S-NOM
+          (NP-SBJ (NN:[1171..1178] estriol))
+          (VP (VBG:[1179..1184] being)
+            (NP-PRD (DT:[1185..1186] a)
+              (ADJP (RB:[1187..1191] very) (JJ:[1192..1196] poor))
+              (NN:[1197..1206] substrate))))))
+    (.:[1206..1207] .)))
+
+;sentence 9 Span:1208..1334
+;These findings indicate  that non-enzymatic factors contribute very little to
+;product formation in the  radio-enzymatic assay.
+;[1286..1293]:substance:"product"
+(SENT
+  (S
+    (NP-SBJ (DT:[1208..1213] These) (NNS:[1214..1222] findings))
+    (VP (VBP:[1223..1231] indicate)
+      (SBAR (IN:[1233..1237] that)
+        (S
+          (NP-SBJ
+            (ADJP (AFX:[1238..1241] non) (HYPH:[1241..1242] -)
+                  (JJ:[1242..1251] enzymatic))
+            (NNS:[1252..1259] factors))
+          (VP (VBP:[1260..1270] contribute)
+            (NP (RB:[1271..1275] very) (JJ:[1276..1282] little))
+            (PP-CLR (TO:[1283..1285] to)
+              (NP (NN:[1286..1293] product) (NN:[1294..1303] formation)))
+            (PP (IN:[1304..1306] in)
+              (NP (DT:[1307..1310] the)
+                (ADJP (AFX:[1312..1317] radio) (HYPH:[1317..1318] -)
+                      (JJ:[1318..1327] enzymatic))
+                (NN:[1328..1333] assay)))))))
+    (.:[1333..1334] .)))
+
+;sentence 10 Span:1335..1506
+;The specificity of the major NADPH-dependent microsomal  component towards
+;estradiol suggests a stereo-specific requirement for the  D-ring
+;configuration of this estrogen.
+;[1364..1369]:substance:"NADPH"
+;[1410..1419]:substance:"estradiol"
+;[1497..1505]:substance:"estrogen"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1335..1338] The) (NN:[1339..1350] specificity))
+      (PP (IN:[1351..1353] of)
+        (NP (DT:[1354..1357] the) (JJ:[1358..1363] major)
+          (ADJP (NN:[1364..1369] NADPH) (HYPH:[1369..1370] -)
+                (JJ:[1370..1379] dependent))
+          (JJ:[1380..1390] microsomal) (NN:[1392..1401] component)))
+      (PP (IN:[1402..1409] towards)
+        (NP (NN:[1410..1419] estradiol))))
+    (VP (VBZ:[1420..1428] suggests)
+      (NP
+        (NP (DT:[1429..1430] a)
+          (ADJP (AFX:[1431..1437] stereo) (HYPH:[1437..1438] -)
+                (JJ:[1438..1446] specific))
+          (NN:[1447..1458] requirement))
+        (PP (IN:[1459..1462] for)
+          (NP
+            (NP (DT:[1463..1466] the) (NN:[1468..1474] D-ring)
+                (NN:[1475..1488] configuration))
+            (PP (IN:[1489..1491] of)
+              (NP (DT:[1492..1496] this) (NN:[1497..1505] estrogen)))))))
+    (.:[1505..1506] .)))
+
+;sentence 11 Span:1507..1672
+;The use of no-cofactor blanks in the  radio-enzymatic assay may be very
+;important when different estrogens are  compared as substrates for
+;estrogen-2/4-hydroxylases.
+;[1604..1613]:substance:"estrogens"
+;[1631..1641]:substance:"substrates"
+;[1646..1656]...[1659..1671]:substance:"estrogen-2"..."hydroxylases"
+;[1646..1654]...[1657..1671]:cyp450:"estrogen"..."4-hydroxylases"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1507..1510] The) (NN:[1511..1514] use))
+      (PP (IN:[1515..1517] of)
+        (NP
+          (NML (DT:[1518..1520] no) (HYPH:[1520..1521] -)
+               (NN:[1521..1529] cofactor))
+          (NNS:[1530..1536] blanks)))
+      (PP-LOC (IN:[1537..1539] in)
+        (NP (DT:[1540..1543] the)
+          (ADJP (AFX:[1545..1550] radio) (HYPH:[1550..1551] -)
+                (JJ:[1551..1560] enzymatic))
+          (NN:[1561..1566] assay))))
+    (VP (MD:[1567..1570] may)
+      (VP (VB:[1571..1573] be)
+        (ADJP-PRD (RB:[1574..1578] very) (JJ:[1579..1588] important))
+        (SBAR-TMP (WRB:[1589..1593] when)
+          (S
+            (NP-SBJ-1 (JJ:[1594..1603] different) (NNS:[1604..1613] estrogens))
+            (VP (VBP:[1614..1617] are)
+              (VP (VBN:[1619..1627] compared)
+                (NP-1 (-NONE-:[1627..1627] *))
+                (PP (IN:[1628..1630] as)
+                  (NP
+                    (NP (NNS:[1631..1641] substrates))
+                    (PP (IN:[1642..1645] for)
+                      (NP (NNS:[1646..1671] estrogen-2/4-hydroxylases)))))))))))
+    (.:[1671..1672] .)))
+
+;section 12 Span:1676..1720
+;PMID: 3773530 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1676..1680] PMID) (::[1680..1681] :) (CD:[1682..1689] 3773530)
+        (NN:[1690..1691] -LSB-) (NNP:[1691..1697] PubMed) (::[1698..1699] -)
+        (NN:[1700..1707] indexed) (IN:[1708..1711] for)
+        (NNP:[1712..1720] MEDLINE-RSB-)))

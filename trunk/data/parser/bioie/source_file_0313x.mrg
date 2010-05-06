@@ -1,0 +1,200 @@
+;PMID: 8656681
+;source_file_775.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..142] = [t:35..142]
+;2)section:[e:146..194] = [t:146..194]
+;3)section:[e:198..306] = [t:198..306]
+;4)sentence:[e:310..432] = [t:310..432]
+;5)sentence:[e:433..537] = [t:433..537]
+;6)sentence:[e:538..685] = [t:538..685]
+;7)sentence:[e:686..802] = [t:686..802]
+;8)section:[e:806..850] = [t:806..850]
+
+;section 0 Span:0..30
+;Leukemia  1996 May;10(5):844-7
+(SEC
+  (FRAG (NNP:[0..8] Leukemia) (CD:[10..14] 1996) (NNP:[15..18] May)
+        (CD:[18..22] ;10-LRB-) (CD:[22..23] 5) (-RRB-:[23..24] -RRB-)
+        (CD:[24..28] :844) (::[28..29] -) (CD:[29..30] 7)))
+
+;sentence 1 Span:35..142
+;Mutation of the ras genes is a rare genetic event in the histologic 
+;transformation of follicular lymphoma.
+;[51..54]:gene-rna:"ras"
+;[122..141]:malignancy:"follicular lymphoma"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[35..43] Mutation))
+      (PP (IN:[44..46] of)
+        (NP (DT:[47..50] the) (NN:[51..54] ras) (NNS:[55..60] genes))))
+    (VP (VBZ:[61..63] is)
+      (NP-PRD (DT:[64..65] a) (JJ:[66..70] rare) (JJ:[71..78] genetic)
+              (NN:[79..84] event))
+      (PP (IN:[85..87] in)
+        (NP
+          (NP (DT:[88..91] the) (JJ:[92..102] histologic)
+              (NN:[104..118] transformation))
+          (PP (IN:[119..121] of)
+            (NP (JJ:[122..132] follicular) (NN:[133..141] lymphoma))))))
+    (.:[141..142] .)))
+
+;section 2 Span:146..194
+;Clark HM, Yano T, Sander C, Jaffe ES, Raffeld M.
+(SEC
+  (FRAG (NNP:[146..151] Clark) (NNP:[152..154] HM) (,:[154..155] ,)
+        (NNP:[156..160] Yano) (NNP:[161..162] T) (,:[162..163] ,)
+        (NNP:[164..170] Sander) (NNP:[171..172] C) (,:[172..173] ,)
+        (NNP:[174..179] Jaffe) (NNP:[180..182] ES) (,:[182..183] ,)
+        (NNP:[184..191] Raffeld) (NNP:[192..194] M.)))
+
+;section 3 Span:198..306
+;Hematopathology Section, National Cancer Institute, National Institutes of 
+;Health, Bethesda, MD 20892, USA.
+(SEC
+  (FRAG (NNP:[198..213] Hematopathology) (NNP:[214..221] Section)
+        (,:[221..222] ,) (NNP:[223..231] National) (NNP:[232..238] Cancer)
+        (NNP:[239..248] Institute) (,:[248..249] ,) (NNP:[250..258] National)
+        (NNPS:[259..269] Institutes) (IN:[270..272] of) (NNP:[274..280] Health)
+        (,:[280..281] ,) (NNP:[282..290] Bethesda) (,:[290..291] ,)
+        (NNP:[292..294] MD) (CD:[295..300] 20892) (,:[300..301] ,)
+        (NNP:[302..305] USA) (.:[305..306] .)))
+
+;sentence 4 Span:310..432
+;The role of ras gene mutations in the progression of follicular lymphoma has 
+;been ascertained by SSCP-PCR and sequencing.
+;[322..325]:gene-rna:"ras"
+;[363..382]:malignancy:"follicular lymphoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[310..313] The) (NN:[314..318] role))
+      (PP (IN:[319..321] of)
+        (NP (NN:[322..325] ras) (NN:[326..330] gene) (NNS:[331..340] mutations)))
+      (PP (IN:[341..343] in)
+        (NP
+          (NP (DT:[344..347] the) (NN:[348..359] progression))
+          (PP (IN:[360..362] of)
+            (NP (JJ:[363..373] follicular) (NN:[374..382] lymphoma))))))
+    (VP (VBZ:[383..386] has)
+      (VP (VBN:[388..392] been)
+        (VP (VBN:[393..404] ascertained)
+          (NP-1 (-NONE-:[404..404] *))
+          (PP-MNR (IN:[405..407] by)
+            (NP
+              (NP (NN:[408..412] SSCP) (HYPH:[412..413] -) (NN:[413..416] PCR))
+              (CC:[417..420] and)
+              (NP (NN:[421..431] sequencing)))))))
+    (.:[431..432] .)))
+
+;sentence 5 Span:433..537
+;A total of 40 transformed lymphomas  were studied, 16 of which had a matched
+;preceding low-grade biopsy.
+;[447..468]:malignancy:"transformed lymphomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[433..434] A) (NN:[435..440] total))
+        (PP (IN:[441..443] of)
+          (NP (CD:[444..446] 40)
+             (JJ:[447..458] transformed) (NNS:[459..468] lymphomas))))
+      (SBAR-3 (-NONE-:[468..468] *ICH*)))
+    (VP (VBD:[470..474] were)
+      (VP (VBN:[475..482] studied)
+        (NP-1 (-NONE-:[482..482] *))
+        (,:[482..483] ,)
+        (SBAR-3
+          (WHNP-2
+            (NP (CD:[484..486] 16))
+            (WHPP (IN:[487..489] of)
+              (WHNP (WDT:[490..495] which))))
+          (S
+            (NP-SBJ-2 (-NONE-:[495..495] *T*))
+            (VP (VBD:[496..499] had)
+              (NP (DT:[500..501] a) (JJ:[502..509] matched)
+                  (JJ:[510..519] preceding)
+                (NML (JJ:[520..523] low) (HYPH:[523..524] -)
+                     (NN:[524..529] grade))
+                (NN:[530..536] biopsy)))))))
+    (.:[536..537] .)))
+
+;sentence 6 Span:538..685
+;Only one  transformed lymphoma was found to have a missense mutation at codon
+;12 of N-ras,  resulting in an amino acid change of glycine to serine.
+;[548..568]:malignancy:"transformed lymphoma"
+;[589..606]:variation-type:"missense mutation"
+;[610..618]:variation-location:"codon 12"
+;[622..627]:gene-rna:"N-ras"
+;[646..663]:variation-type:"amino acid change"
+;[667..674]:variation-state-original:"glycine"
+;[678..684]:variation-state-altered:"serine"
+(SENT
+  (S
+    (NP-SBJ-1 (RB:[538..542] Only) (CD:[543..546] one)
+       (JJ:[548..559] transformed) (NN:[560..568] lymphoma))
+    (VP (VBD:[569..572] was)
+      (VP (VBN:[573..578] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[578..578] *))
+          (VP (TO:[579..581] to)
+            (VP (VB:[582..586] have)
+              (NP (DT:[587..588] a)
+                 (JJ:[589..597] missense) (NN:[598..606] mutation))
+              (PP-LOC (IN:[607..609] at)
+                (NP
+                  (NP (NN:[610..615] codon) (CD:[616..618] 12))
+                  (PP (IN:[619..621] of)
+                    (NP (NN:[622..627] N-ras)))))
+              (,:[627..628] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[628..628] *))
+                (VP (VBG:[630..639] resulting)
+                  (PP-CLR (IN:[640..642] in)
+                    (NP
+                      (NP (DT:[643..645] an)
+                        
+                        (NML (JJ:[646..651] amino) (NN:[652..656] acid))
+                        (NN:[657..663] change))
+                      (PP (IN:[664..666] of)
+                        (NP (NN:[667..674] glycine)))
+                      (PP (TO:[675..677] to)
+                        (NP (NN:[678..684] serine))))))))))))
+    (.:[684..685] .)))
+
+;sentence 7 Span:686..802
+;We conclude that  mutation within the ras gene family is a rare event in the
+;transformation of  follicular lymphoma.
+;[724..727]:gene-rna:"ras"
+;[782..801]:malignancy:"follicular lymphoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[686..688] We))
+    (VP (VBP:[689..697] conclude)
+      (SBAR (IN:[698..702] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[704..712] mutation))
+            (PP-LOC (IN:[713..719] within)
+              (NP (DT:[720..723] the)
+                (NML (NN:[724..727] ras) (NN:[728..732] gene))
+                (NN:[733..739] family))))
+          (VP (VBZ:[740..742] is)
+            (NP-PRD (DT:[743..744] a) (JJ:[745..749] rare) (NN:[750..755] event))
+            (PP (IN:[756..758] in)
+              (NP
+                (NP (DT:[759..762] the) (NN:[763..777] transformation))
+                (PP (IN:[778..780] of)
+                  (NP (JJ:[782..792] follicular) (NN:[793..801] lymphoma)))))))))
+    (.:[801..802] .)))
+
+;section 8 Span:806..850
+;PMID: 8656681 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[806..810] PMID) (::[810..811] :) (CD:[812..819] 8656681)
+        (NN:[820..821] -LSB-) (NNP:[821..827] PubMed) (::[828..829] -)
+        (NN:[830..837] indexed) (IN:[838..841] for)
+        (NNP:[842..850] MEDLINE-RSB-)))

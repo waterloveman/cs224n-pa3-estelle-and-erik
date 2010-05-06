@@ -1,0 +1,267 @@
+;PMID: 8463133
+;source_file_515.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:43..92] = [t:43..92]
+;2)section:[e:96..174] = [t:96..174]
+;3)section:[e:178..229] = [t:178..229]
+;4)sentence:[e:233..498] = [t:233..498]
+;5)sentence:[e:499..616] = [t:499..616]
+;6)sentence:[e:617..659] = [t:617..659]
+;7)sentence:[e:660..948] = [t:660..948]
+;8)sentence:[e:949..1129] = [t:949..1129]
+;9)section:[e:1133..1177] = [t:1133..1177]
+
+;section 0 Span:0..38
+;Jpn J Cancer Res  1993 Feb;84(2):163-7
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..12] Cancer) (NNP:[13..16] Res)
+        (CD:[18..22] 1993) (.:[23..28] Feb;8) (CD:[28..29] 4)
+        (NN:[29..30] -LRB-) (NN:[30..31] 2) (NN:[31..32] -RRB-) (VBZ:[32..33] :)
+        (CD:[33..35] 16) (CD:[35..38] 3-7)))
+
+;sentence 1 Span:43..92
+;Infrequent ras mutation in human stomach cancers.
+;[54..57]:gene-rna:"ras"
+;[76..91]:malignancy:"stomach cancers"
+(SENT
+  (NP-HLN
+    (NP (JJ:[43..53] Infrequent) (NN:[54..57] ras) (NN:[58..66] mutation))
+    (PP (IN:[67..69] in)
+      (NP (JJ:[70..75] human)
+         (NN:[76..83] stomach) (NNS:[84..91] cancers)))
+    (.:[91..92] .)))
+
+;section 2 Span:96..174
+;Koshiba M, Ogawa O, Habuchi T, Hamazaki S, Shimada T, Takahashi R, Sugiyama
+;T.
+(SEC
+  (FRAG (NNP:[96..103] Koshiba) (NNP:[104..106] M,) (NNP:[107..112] Ogawa)
+        (NNP:[113..115] O,) (NNP:[116..123] Habuchi) (NNP:[124..125] T)
+        (,:[125..126] ,) (NNP:[127..135] Hamazaki) (NNP:[136..137] S)
+        (,:[137..138] ,) (NNP:[139..146] Shimada) (NNP:[147..148] T)
+        (,:[148..149] ,) (NNP:[150..159] Takahashi) (NNP:[160..161] R)
+        (,:[161..162] ,) (NNP:[163..171] Sugiyama) (NNP:[172..174] T.)))
+
+;section 3 Span:178..229
+;Department of Geriatric Medicine, Kyoto University.
+(SEC
+  (FRAG (NNP:[178..188] Department) (IN:[189..191] of)
+        (NNP:[192..201] Geriatric) (NNP:[202..210] Medicine) (,:[210..211] ,)
+        (NNP:[212..217] Kyoto) (NNP:[218..228] University) (.:[228..229] .)))
+
+;sentence 4 Span:233..498
+;Mutations of ras oncogenes in 37 human stomach cancers and 13 adenomas were 
+;investigated with regard to the histological phenotypes using polymerase
+;chain  reaction (PCR), allele-specific oligonucleotide hybridization and/or
+;direct  sequencing of the PCR products.
+;[246..249]:gene-rna:"ras"
+;[272..287]:malignancy:"stomach cancers"
+;[295..303]:malignancy:"adenomas"
+;[372..382]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[233..242] Mutations))
+      (PP (IN:[243..245] of)
+        (NP (NN:[246..249] ras) (NNS:[250..259] oncogenes)))
+      (PP (IN:[260..262] in)
+        (NP
+          (NP (CD:[263..265] 37) (JJ:[266..271] human)
+             (NN:[272..279] stomach) (NNS:[280..287] cancers))
+          (CC:[288..291] and)
+          (NP (CD:[292..294] 13) (NNS:[295..303] adenomas)))))
+    (VP (VBD:[304..308] were)
+      (VP (VBN:[310..322] investigated)
+        (NP-1 (-NONE-:[322..322] *))
+        (PP (IN:[323..327] with)
+          (NP
+            (NP (NN:[328..334] regard))
+            (PP (TO:[335..337] to)
+              (NP (DT:[338..341] the) (JJ:[342..354] histological)
+                  (NNS:[355..365] phenotypes)))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[365..365] *))
+          (VP (VBG:[366..371] using)
+            (NP
+              (NP
+                (NP (NN:[372..382] polymerase) (NN:[383..388] chain)
+                    (NN:[390..398] reaction))
+                (NP (-LRB-:[399..400] -LRB-) (NN:[400..403] PCR)
+                    (-RRB-:[403..404] -RRB-)))
+              (,:[404..405] ,)
+              (NP
+                (ADJP (NN:[406..412] allele) (HYPH:[412..413] -)
+                      (JJ:[413..421] specific))
+                (NN:[422..437] oligonucleotide) (NN:[438..451] hybridization))
+              (CC:[452..458] and/or)
+              (NP
+                (NP (JJ:[459..465] direct) (NN:[467..477] sequencing))
+                (PP (IN:[478..480] of)
+                  (NP (DT:[481..484] the) (NN:[485..488] PCR)
+                      (NNS:[489..497] products)))))))))
+    (.:[497..498] .)))
+
+;sentence 5 Span:499..616
+;The ras mutation was found only in one case  (2.7%), the histology of which
+;was poorly differentiated adenocarcinoma.
+;[503..506]:gene-rna:"ras"
+;[507..515]:variation-event:"mutation"
+;[579..615]:malignancy:"poorly differentiated adenocarcinoma"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[499..502] The) (NN:[503..506] ras) (NN:[507..515] mutation))
+    (VP (VBD:[516..519] was)
+      (VP (VBN:[520..525] found)
+        (NP-2 (-NONE-:[525..525] *))
+        (ADVP (RB:[526..530] only))
+        (PP (IN:[531..533] in)
+          (NP
+            (NP (CD:[534..537] one) (NN:[538..542] case)
+              (PRN (-LRB-:[544..545] -LRB-)
+                (NP (CD:[545..548] 2.7) (NN:[548..549] %))
+                (-RRB-:[549..550] -RRB-)))
+            (,:[550..551] ,)
+            (SBAR
+              (WHNP-1
+                (NP (DT:[552..555] the) (NN:[556..565] histology))
+                (WHPP (IN:[566..568] of)
+                  (WHNP (WDT:[569..574] which))))
+              (S
+                (NP-SBJ-1 (-NONE-:[574..574] *T*))
+                (VP (VBD:[575..578] was)
+                  (NP-PRD
+                    (ADJP (RB:[579..585] poorly) (JJ:[586..600] differentiated))
+                    (NN:[601..615] adenocarcinoma)))))))))
+    (.:[615..616] .)))
+
+;sentence 6 Span:617..659
+;We  found no mutation in stomach adenomas.
+;[642..658]:malignancy:"stomach adenomas"
+(SENT
+  (S
+    (NP-SBJ (PRP:[617..619] We))
+    (VP (VBD:[621..626] found)
+      (NP (DT:[627..629] no) (NN:[630..638] mutation))
+      (PP-LOC (IN:[639..641] in)
+        (NP (NN:[642..649] stomach) (NNS:[650..658] adenomas))))
+    (.:[658..659] .)))
+
+;sentence 7 Span:660..948
+;The mutation consisted of a  guanine-to-adenine transition in the first base
+;of codon 13 of c-Ki-ras which  replaced wild-type glycine with serine,
+;indicating that a putative  glycine-to-aspartic acid change is not
+;necessarily the critical event for  c-Ki-ras gene activation in codon 13.
+;[664..672]:variation-event:"mutation"
+;[689..696]:variation-state-original:"guanine"
+;[700..707]:variation-state-altered:"adenine"
+;[726..748]:variation-location:"first base of codon 13"
+;[752..760]:gene-rna:"c-Ki-ras"
+;[787..794]:variation-state-original:"glycine"
+;[800..806]:variation-state-altered:"serine"
+;[836..843]:variation-state-original:"glycine"
+;[847..860]:variation-state-altered:"aspartic acid"
+;[911..919]:gene-rna:"c-Ki-ras"
+;[939..947]:variation-location:"codon 13"
+(SENT
+  (S
+    (NP-SBJ (DT:[660..663] The) (NN:[664..672] mutation))
+    (VP (VBD:[673..682] consisted)
+      (PP (IN:[683..685] of)
+        (NP
+          (NP
+            (NP (DT:[686..687] a)
+              (NML
+                (NML (NN:[689..696] guanine))
+                (HYPH:[696..697] -)
+                (PP (TO:[697..699] to) (HYPH:[699..700] -)
+                  (NP (NN:[700..707] adenine))))
+              (NN:[708..718] transition))
+            (PP-LOC (IN:[719..721] in)
+              (NP
+                (NP (DT:[722..725] the) (JJ:[726..731] first)
+                    (NN:[732..736] base))
+                (PP (IN:[737..739] of)
+                  (NP
+                    (NP (NN:[740..745] codon) (CD:[746..748] 13))
+                    (PP (IN:[749..751] of)
+                      (NP (NN:[752..760] c-Ki-ras))))))))
+          (SBAR
+            (WHNP-1 (WDT:[761..766] which))
+            (S
+              (NP-SBJ-1 (-NONE-:[766..766] *T*))
+              (VP (VBD:[768..776] replaced)
+                (NP (JJ:[777..786] wild-type) (NN:[787..794] glycine))
+                (PP (IN:[795..799] with)
+                  (NP (NN:[800..806] serine))))))))
+      (,:[806..807] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[807..807] *))
+        (VP (VBG:[808..818] indicating)
+          (SBAR (IN:[819..823] that)
+            (S
+              (NP-SBJ (DT:[824..825] a) (JJ:[826..834] putative)
+                (NML
+                  (NML (NN:[836..843] glycine))
+                  (HYPH:[843..844] -)
+                  (PP (TO:[844..846] to) (HYPH:[846..847] -)
+                    (NP (JJ:[847..855] aspartic) (NN:[856..860] acid))))
+                (NN:[861..867] change))
+              (VP (VBZ:[868..870] is) (RB:[871..874] not)
+                (ADVP (RB:[875..886] necessarily))
+                (NP-PRD (DT:[887..890] the) (JJ:[891..899] critical)
+                        (NN:[900..905] event))
+                (PP (IN:[906..909] for)
+                  (NP (NN:[911..919] c-Ki-ras) (NN:[920..924] gene)
+                      (NN:[925..935] activation)))))))))
+    (PP-LOC (IN:[936..938] in)
+      (NP (NN:[939..944] codon) (CD:[945..947] 13)))
+    (.:[947..948] .)))
+
+;sentence 8 Span:949..1129
+;These results further confirm the  infrequency of ras mutation in stomach
+;tumors and also suggest that ras  mutations are not specific to the
+;differentiated type of stomach cancer.
+;[999..1002]:gene-rna:"ras"
+;[1015..1029]:malignancy:"stomach tumors"
+;[1052..1055]:gene-rna:"ras"
+;[1091..1128]:malignancy:"differentiated type of stomach cancer"
+(SENT
+  (S
+    (NP-SBJ (DT:[949..954] These) (NNS:[955..962] results))
+    (VP
+      (VP
+        (ADVP (RB:[963..970] further))
+        (VBP:[971..978] confirm)
+        (NP
+          (NP (DT:[979..982] the) (NN:[984..995] infrequency))
+          (PP (IN:[996..998] of)
+            (NP (NN:[999..1002] ras) (NN:[1003..1011] mutation))))
+        (PP (IN:[1012..1014] in)
+          (NP (NN:[1015..1022] stomach) (NNS:[1023..1029] tumors))))
+      (CC:[1030..1033] and)
+      (VP
+        (ADVP (RB:[1034..1038] also))
+        (VBP:[1039..1046] suggest)
+        (SBAR (IN:[1047..1051] that)
+          (S
+            (NP-SBJ (NN:[1052..1055] ras) (NNS:[1057..1066] mutations))
+            (VP (VBP:[1067..1070] are) (RB:[1071..1074] not)
+              (ADJP-PRD (JJ:[1075..1083] specific)
+                (PP (TO:[1084..1086] to)
+                  (NP
+                    (NP (DT:[1087..1090] the) (JJ:[1091..1105] differentiated)
+                        (NN:[1106..1110] type))
+                    (PP (IN:[1111..1113] of)
+                      (NP (NN:[1114..1121] stomach) (NN:[1122..1128] cancer)))))))))))
+    (.:[1128..1129] .)))
+
+;section 9 Span:1133..1177
+;PMID: 8463133 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1133..1137] PMID) (::[1137..1138] :) (CD:[1139..1146] 8463133)
+        (NN:[1147..1148] -LSB-) (NNP:[1148..1154] PubMed) (::[1155..1156] -)
+        (NN:[1157..1164] indexed) (IN:[1165..1168] for)
+        (NNP:[1169..1177] MEDLINE-RSB-)))

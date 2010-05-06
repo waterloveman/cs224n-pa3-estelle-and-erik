@@ -1,0 +1,268 @@
+;PMID: 6974914
+;source_file_999.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:37..161] = [t:37..161]
+;2)section:[e:165..216] = [t:165..216]
+;3)sentence:[e:220..385] = [t:220..385]
+;4)sentence:[e:386..532] = [t:386..532]
+;5)sentence:[e:534..601] = [t:534..601]
+;6)sentence:[e:602..956] = [t:602..956]
+;7)sentence:[e:957..1179] = [t:957..1179]
+;8)sentence:[e:1181..1296] = [t:1181..1296]
+;9)section:[e:1300..1344] = [t:1300..1344]
+
+;section 0 Span:0..31
+;Steroids. 1981 Jun;37(6):673-9.
+(SEC
+  (FRAG (NNP:[0..8] Steroids) (IN:[8..9] .) (CD:[10..14] 1981)
+        (NNP:[15..22] Jun;37-LRB-) (CD:[22..24] 6-RRB-) (CD:[24..28] :673)
+        (::[28..29] -) (CD:[29..31] 9.)))
+
+;sentence 1 Span:37..161
+;Effects of cholesterol side chain cleavage inhibitors on 11
+;beta-hydroxylation:  linkage of mitochondrial oxygenase systems.
+;[48..79]:cyp450:"cholesterol side chain cleavage"
+;[80..90]:substance:"inhibitors"
+;[143..152]:substance:"oxygenase"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NNS:[37..44] Effects))
+      (PP (IN:[45..47] of)
+        (NP
+           (NN:[48..59] cholesterol)
+          (NML
+            (NML (NN:[60..64] side) (IN:[65..70] chain))
+            (NN:[71..79] cleavage))
+          (NNS:[80..90] inhibitors)))
+      (PP (IN:[91..93] on)
+        (NP (CD:[94..96] 11) (NN:[97..115] beta-hydroxylation))))
+    (::[115..116] :)
+    (NP
+      (NP (NN:[118..125] linkage))
+      (PP (IN:[126..128] of)
+        (NP (JJ:[129..142] mitochondrial) (NN:[143..152] oxygenase)
+            (NNS:[153..160] systems))))
+    (.:[160..161] .)))
+
+;section 2 Span:165..216
+;Whipple CA, Grodzicki RL, Hourihan J, Salhanick HA.
+(SEC
+  (FRAG (NNP:[165..172] Whipple) (NNP:[173..175] CA) (,:[175..176] ,)
+        (NNP:[177..186] Grodzicki) (NNP:[187..189] RL) (,:[189..190] ,)
+        (NNP:[191..199] Hourihan) (NNP:[200..202] J,) (NNP:[203..212] Salhanick)
+        (NNP:[213..215] HA) (.:[215..216] .)))
+
+;sentence 3 Span:220..385
+;Potent inhibitors of cholesterol side chain cleavage were tested for
+;inhibition  of 11 beta-hydroxylation of 11-deoxycortisol by bovine adrenal
+;cortex  mitochondria.
+;[227..237]:substance:"inhibitors"
+;[241..272]:cyp450:"cholesterol side chain cleavage"
+;[329..345]:substance:"11-deoxycortisol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[220..226] Potent) (NNS:[227..237] inhibitors))
+      (PP (IN:[238..240] of)
+        (NP (NN:[241..252] cholesterol)
+          (NML (NN:[253..257] side) (NN:[258..263] chain))
+          (NN:[264..272] cleavage))))
+    (VP (VBD:[273..277] were)
+      (VP (VBN:[278..284] tested)
+        (NP-1 (-NONE-:[284..284] *))
+        (PP (IN:[285..288] for)
+          (NP
+            (NP (NN:[289..299] inhibition))
+            (PP (IN:[301..303] of)
+              (NP
+                (NP (CD:[304..306] 11) (NN:[307..325] beta-hydroxylation))
+                (PP (IN:[326..328] of)
+                  (NP (NN:[329..345] 11-deoxycortisol)))))
+            (PP (IN:[346..348] by)
+              (NP (JJ:[349..355] bovine)
+                (NML (JJ:[356..363] adrenal) (NN:[364..370] cortex))
+                (NNS:[372..384] mitochondria)))))))
+    (.:[384..385] .)))
+
+;sentence 4 Span:386..532
+;Compounds which inhibited 11 beta-hydroxylation were metyrapone, 
+;4-phenylimidazole, 1-benzylimidazole, 17 beta-ureido - 1, 4-
+;androstadien-3-one.
+;[386..395]:substance:"Compounds"
+;[439..449]:substance:"metyrapone"
+;[452..469]:substance:"4-phenylimidazole"
+;[471..488]:substance:"1-benzylimidazole"
+;[490..531]:substance:"17 beta-ureido - 1, 4- androstadien-3-one"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[386..395] Compounds))
+      (SBAR
+        (WHNP-1 (WDT:[396..401] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[401..401] *T*))
+          (VP (VBD:[402..411] inhibited)
+            (NP (CD:[412..414] 11) (NN:[415..433] beta-hydroxylation))))))
+    (VP (VBD:[434..438] were)
+      (NP-PRD
+        (NP (NN:[439..449] metyrapone))
+        (,:[449..450] ,)
+        (NP (NN:[452..469] 4-phenylimidazole))
+        (,:[469..470] ,)
+        (NP (NN:[471..488] 1-benzylimidazole))
+        (,:[488..489] ,)
+        (NP (CD:[490..492] 17)
+            (NN:[493..531] beta-ureido-SP---SP-1,-SP-4--SP-androstadien-3-one))))
+    (.:[531..532] .)))
+
+;sentence 5 Span:534..601
+;SU-8000, 4-methylaminoglutethimide, and 20 alpha-hydroxycholestrol.
+;[534..541]:substance:"SU-8000"
+;[543..568]:substance:"4-methylaminoglutethimide"
+;[574..600]:substance:"20 alpha-hydroxycholestrol"
+(SENT
+  (FRAG
+    (NP
+      (NP (NN:[534..541] SU-8000))
+      (,:[541..542] ,)
+      (NP (NN:[543..568] 4-methylaminoglutethimide))
+      (,:[568..569] ,) (CC:[570..573] and)
+      (NP (CD:[574..576] 20) (NN:[577..600] alpha-hydroxycholestrol)))
+    (.:[600..601] .)))
+
+;sentence 6 Span:602..956
+;Compounds  which did not inhibit 11 beta-hydroxylation at concentrations of
+;0.5 mM were  d-aminoglutethimide tartrate, 1-aminoglutethimide tartrate, 
+;N-methylaminoglutethimide, 16 alpha-methylpregnenolone, 16 
+;beta-methylpregnenolone, 20-tolylpregnenediol, 16 
+;alpha-chloropregnenolone-3-acetate, 16 alpha-benzyloxpregnenolone-3-acetate
+;and  cyanoketone.
+;[602..611]:substance:"Compounds"
+;[678..681]:quantitative-value:"0.5"
+;[682..684]:quantitative-units:"mM"
+;[691..719]:substance:"d-aminoglutethimide tartrate"
+;[721..749]:substance:"1-aminoglutethimide tartrate"
+;[752..777]:substance:"N-methylaminoglutethimide"
+;[779..806]:substance:"16 alpha-methylpregnenolone"
+;[808..835]:substance:"16  beta-methylpregnenolone"
+;[837..857]:substance:"20-tolylpregnenediol"
+;[859..897]:substance:"16  alpha-chloropregnenolone-3-acetate"
+;[899..938]:substance:"16 alpha-benzyloxpregnenolone-3-acetate"
+;[944..955]:substance:"cyanoketone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[602..611] Compounds))
+      (SBAR
+        (WHNP-1 (WDT:[613..618] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[618..618] *T*))
+          (VP (VBD:[619..622] did) (RB:[623..626] not)
+            (VP (VB:[627..634] inhibit)
+              (NP (CD:[635..637] 11) (NN:[638..656] beta-hydroxylation))
+              (PP (IN:[657..659] at)
+                (NP
+                  (NP (NNS:[660..674] concentrations))
+                  (PP (IN:[675..677] of)
+                    (NP (CD:[678..681] 0.5) (NN:[682..684] mM))))))))))
+    (VP (VBD:[685..689] were)
+      (NP-PRD
+        (NP (NN:[691..710] d-aminoglutethimide) (NN:[711..719] tartrate))
+        (,:[719..720] ,)
+        (NP (NN:[721..740] 1-aminoglutethimide) (NN:[741..749] tartrate))
+        (,:[749..750] ,)
+        (NP (NN:[752..777] N-methylaminoglutethimide))
+        (,:[777..778] ,)
+        (NP (CD:[779..781] 16) (NN:[782..806] alpha-methylpregnenolone))
+        (,:[806..807] ,)
+        (NP (CD:[808..810] 16) (NN:[812..835] beta-methylpregnenolone))
+        (,:[835..836] ,)
+        (NP (NN:[837..857] 20-tolylpregnenediol))
+        (,:[857..858] ,)
+        (NP (CD:[859..861] 16)
+            (NN:[863..897] alpha-chloropregnenolone-3-acetate))
+        (,:[897..898] ,)
+        (NP (CD:[899..901] 16)
+            (NN:[902..938] alpha-benzyloxpregnenolone-3-acetate))
+        (CC:[939..942] and)
+        (NP (NN:[944..955] cyanoketone))))
+    (.:[955..956] .)))
+
+;sentence 7 Span:957..1179
+;The results obtained indicate that aminoglutethimide and its  congeners, the
+;16-halogenated and 16-benzoylated derivatives of pregnenolone and 
+;cyanoketone are specific inhibitors of cholesterol side chain cleavage
+;enzyme.
+;[992..1009]:substance:"aminoglutethimide"
+;[1019..1028]:substance:"congeners"
+;[1034..1048]...[1068..1079]:substance:"16-halogenated"..."derivatives"
+;[1053..1079]:substance:"16-benzoylated derivatives"
+;[1083..1095]:substance:"pregnenolone"
+;[1101..1112]:substance:"cyanoketone"
+;[1126..1136]:substance:"inhibitors"
+;[1140..1178]:cyp450:"cholesterol side chain cleavage enzyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[957..960] The) (NNS:[961..968] results))
+      (VP (VBN:[969..977] obtained)
+        (NP (-NONE-:[977..977] *))))
+    (VP (VBP:[978..986] indicate)
+      (SBAR (IN:[987..991] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[992..1009] aminoglutethimide))
+            (CC:[1010..1013] and)
+            (NP
+              (NP (PRP$:[1014..1017] its) (NNS:[1019..1028] congeners))
+              (,:[1028..1029] ,)
+              (NP
+                (NP (DT:[1030..1033] the)
+                  (ADJP (VBN:[1034..1048] 16-halogenated) (CC:[1049..1052] and)
+                        (VBN:[1053..1067] 16-benzoylated))
+                  (NNS:[1068..1079] derivatives))
+                (PP (IN:[1080..1082] of)
+                  (NP (NN:[1083..1095] pregnenolone) (CC:[1096..1099] and)
+                      (NN:[1101..1112] cyanoketone))))))
+          (VP (VBP:[1113..1116] are)
+            (NP-PRD
+              (NP (JJ:[1117..1125] specific) (NNS:[1126..1136] inhibitors))
+              (PP (IN:[1137..1139] of)
+                (NP (NN:[1140..1151] cholesterol)
+                  (NML
+                    (NML (NN:[1152..1156] side) (NN:[1157..1162] chain))
+                    (NN:[1163..1171] cleavage))
+                  (NN:[1172..1178] enzyme))))))))
+    (.:[1178..1179] .)))
+
+;sentence 8 Span:1181..1296
+;The two mitochondrial steroid oxyganase systems are linked through their 
+;competition for a single electron source.
+;[1203..1220]:substance:"steroid oxyganase"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1181..1184] The) (CD:[1185..1188] two)
+      (NML (JJ:[1189..1202] mitochondrial) (NN:[1203..1210] steroid))
+      (NN:[1211..1220] oxyganase) (NNS:[1221..1228] systems))
+    (VP (VBP:[1229..1232] are)
+      (VP (VBN:[1233..1239] linked)
+        (NP-1 (-NONE-:[1239..1239] *))
+        (PP-MNR (IN:[1240..1247] through)
+          (NP
+            (NP (PRP$:[1248..1253] their) (NN:[1255..1266] competition))
+            (PP (IN:[1267..1270] for)
+              (NP (DT:[1271..1272] a) (JJ:[1273..1279] single)
+                  (NN:[1280..1288] electron) (NN:[1289..1295] source)))))))
+    (.:[1295..1296] .)))
+
+;section 9 Span:1300..1344
+;PMID: 6974914 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1300..1304] PMID) (::[1304..1305] :) (CD:[1306..1313] 6974914)
+        (NN:[1314..1315] -LSB-) (NNP:[1315..1321] PubMed) (::[1322..1323] -)
+        (NN:[1324..1331] indexed) (IN:[1332..1335] for)
+        (NNP:[1336..1344] MEDLINE-RSB-)))

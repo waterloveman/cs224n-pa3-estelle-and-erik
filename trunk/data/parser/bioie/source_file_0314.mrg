@@ -1,0 +1,654 @@
+;PMID: 8733576
+;source_file_1786.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..160] = [t:44..160]
+;2)section:[e:164..179] = [t:164..179]
+;3)section:[e:183..287] = [t:183..287]
+;4)sentence:[e:291..293] = [t:291..293]
+;5)sentence:[e:294..698] = [t:294..698]
+;6)sentence:[e:699..701] = [t:699..701]
+;7)sentence:[e:702..896] = [t:702..896]
+;8)sentence:[e:897..995] = [t:897..995]
+;9)sentence:[e:996..1090] = [t:996..1090]
+;10)sentence:[e:1091..1093] = [t:1091..1093]
+;11)sentence:[e:1094..1307] = [t:1094..1307]
+;12)sentence:[e:1308..1310] = [t:1308..1310]
+;13)sentence:[e:1311..1580] = [t:1311..1580]
+;14)sentence:[e:1581..1583] = [t:1581..1583]
+;15)sentence:[e:1584..1814] = [t:1584..1814]
+;16)sentence:[e:1815..1927] = [t:1815..1927]
+;17)sentence:[e:1928..1930] = [t:1928..1930]
+;18)sentence:[e:1931..2062] = [t:1931..2062]
+;19)sentence:[e:2063..2181] = [t:2063..2181]
+;20)sentence:[e:2182..2184] = [t:2182..2184]
+;21)sentence:[e:2185..2341] = [t:2185..2341]
+;22)section:[e:2345..2389] = [t:2345..2389]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[58..60] NO
+;ERROR_Token in entity file but not tree[60..61] -
+;ERROR_Token in entity file but not tree[61..69] medicate
+;ERROR_Token in tree file but not entity[58..69] NO-medicate
+
+;section 0 Span:0..38
+;Br J Pharmacol. 1996 May;118(1):57-62.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..14] Pharmacol) (,:[14..15] .)
+        (CD:[16..20] 1996) (NNP:[21..24] May) (CD:[24..28] ;118)
+        (-LRB-:[28..29] -LRB-) (CD:[29..30] 1) (-RRB-:[30..31] -RRB-)
+        (::[31..32] :) (CD:[32..34] 57) (HYPH:[34..35] -) (CD:[35..37] 62)
+        (.:[37..38] .)))
+
+;sentence 1 Span:44..160
+;Inhibition of NO-medicate responses by 7-ethoxyresorufin, a substrate and 
+;competitive inhibitor of cytochrome P450.
+;[58..60]:substance:"NO"
+;[83..100]:substance:"7-ethoxyresorufin"
+;[104..113]:substance:"substrate"
+;[131..140]:substance:"inhibitor"
+;[144..159]:cyp450:"cytochrome P450"
+(SENT
+  (NP-HLN
+    (NP (NN:[44..54] Inhibition))
+    (PP (IN:[55..57] of)
+      (NP (NN:[58..69] NO-medicate) (NNS:[70..79] responses)))
+    (PP (IN:[80..82] by)
+      (NP
+        (NP (NN:[83..100] 7-ethoxyresorufin))
+        (,:[100..101] ,)
+        (NP
+          (NP (DT:[102..103] a)
+            (NML
+              (NML (NN:[104..113] substrate))
+              (CC:[114..117] and)
+              (NML (JJ:[119..130] competitive) (NN:[131..140] inhibitor))))
+          (PP (IN:[141..143] of)
+            (NP (NN:[144..154] cytochrome) (NN:[155..159] P450))))))
+    (.:[159..160] .)))
+
+;section 2 Span:164..179
+;Li CG, Rand MJ.
+(SEC
+  (FRAG (NNP:[164..166] Li) (NNP:[167..169] CG) (,:[169..170] ,)
+        (NNP:[171..175] Rand) (NNP:[176..179] MJ.)))
+
+;section 3 Span:183..287
+;Department of Medical Laboratory Science, Royal Melbourne Institute of 
+;Technology, Victoria, Australia.
+(SEC
+  (FRAG (NNP:[183..193] Department) (IN:[194..196] of) (NNP:[197..204] Medical)
+        (NNP:[205..215] Laboratory) (NNP:[216..223] Science) (,:[223..224] ,)
+        (NNP:[225..230] Royal) (NNP:[231..240] Melbourne)
+        (NNP:[241..250] Institute) (IN:[251..253] of)
+        (NNP:[255..265] Technology) (,:[265..266] ,) (NNP:[267..275] Victoria)
+        (,:[275..276] ,) (NNP:[277..286] Australia) (.:[286..287] .)))
+
+;sentence 4 Span:291..293
+;1.
+(SENT
+  (NP (LS:[291..293] 1.)))
+
+;sentence 5 Span:294..698
+;The effects of 7-ethoxyresorufin (7-ER), which is a substrate for and 
+;competitive inhibitor of cytochrome P450, were studied on responses to nitric
+; oxide (NO), the NO donors sodium nitroprusside (SNP) and glyceryl trinitrate
+; (GTN), acetylcholine-induced endothelium-dependent relaxations of rat and
+;rabbit  aortic rings and nitrergic nerve stimulation-induced relaxations of
+;rat  anococcygeus muscles.
+;[309..326]:substance:"7-ethoxyresorufin"
+;[328..332]:substance:"7-ER"
+;[346..355]:substance:"substrate"
+;[377..386]:substance:"inhibitor"
+;[390..405]:cyp450:"cytochrome P450"
+;[436..449]:substance:"nitric  oxide"
+;[451..453]:substance:"NO"
+;[460..462]:substance:"NO"
+;[470..490]:substance:"sodium nitroprusside"
+;[492..495]:substance:"SNP"
+;[501..520]:substance:"glyceryl trinitrate"
+;[523..526]:substance:"GTN"
+;[529..542]:substance:"acetylcholine"
+(SENT
+  (S
+    (NP-SBJ-5
+      (NP (DT:[294..297] The) (NNS:[298..305] effects))
+      (PP (IN:[306..308] of)
+        (NP
+          (NP
+            (NP (NN:[309..326] 7-ethoxyresorufin))
+            (NP (-LRB-:[327..328] -LRB-) (NN:[328..332] 7-ER)
+                (-RRB-:[332..333] -RRB-)))
+          (,:[333..334] ,)
+          (SBAR
+            (WHNP-4 (WDT:[335..340] which))
+            (S
+              (NP-SBJ-4 (-NONE-:[340..340] *T*))
+              (VP (VBZ:[341..343] is)
+                (NP-PRD
+                  (NP
+                    (NP (DT:[344..345] a) (NN:[346..355] substrate))
+                    (PP (IN:[356..359] for)
+                      (NP-3 (-NONE-:[359..359] *RNR*))))
+                  (CC:[360..363] and)
+                  (NP
+                    (NP (JJ:[365..376] competitive) (NN:[377..386] inhibitor))
+                    (PP (IN:[387..389] of)
+                      (NP-3 (-NONE-:[389..389] *RNR*))))
+                  (NP-3 (NN:[390..400] cytochrome) (NN:[401..405] P450)))))))))
+    (,:[405..406] ,)
+    (VP (VBD:[407..411] were)
+      (VP (VBN:[412..419] studied)
+        (NP-5 (-NONE-:[419..419] *))
+        (PP-LOC (IN:[420..422] on)
+          (NP
+            (NP (NNS:[423..432] responses))
+            (PP (TO:[433..435] to)
+              (NP
+                (NP
+                  (NP (JJ:[436..442] nitric) (NN:[444..449] oxide))
+                  (NP (-LRB-:[450..451] -LRB-) (NN:[451..453] NO)
+                      (-RRB-:[453..454] -RRB-)))
+                (,:[454..455] ,)
+                (NP
+                  (NP (DT:[456..459] the) (NN:[460..462] NO)
+                      (NNS:[463..469] donors))
+                  (NP
+                    (NP (NN:[470..476] sodium) (NN:[477..490] nitroprusside))
+                    (NP (-LRB-:[491..492] -LRB-) (NN:[492..495] SNP)
+                        (-RRB-:[495..496] -RRB-)))
+                  (CC:[497..500] and)
+                  (NP
+                    (NP (NN:[501..509] glyceryl) (NN:[510..520] trinitrate))
+                    (NP (-LRB-:[522..523] -LRB-) (NN:[523..526] GTN)
+                        (-RRB-:[526..527] -RRB-))))
+                (,:[527..528] ,)
+                (NP
+                  (NP
+                    (ADJP (NN:[529..542] acetylcholine) (HYPH:[542..543] -)
+                          (VBN:[543..550] induced))
+                    (ADJP (NN:[551..562] endothelium) (HYPH:[562..563] -)
+                          (JJ:[563..572] dependent))
+                    (NNS:[573..584] relaxations))
+                  (PP (IN:[585..587] of)
+                    (NP
+                      (NP (NN:[588..591] rat)
+                        (NML-1 (-NONE-:[591..591] *P*)))
+                      (CC:[592..595] and)
+                      (NP (NN:[596..602] rabbit)
+                        (NML-1 (JJ:[604..610] aortic) (NNS:[611..616] rings))))))
+                (CC:[617..620] and)
+                (NP
+                  (NP
+                    (ADJP
+                      (NML
+                        (NML (JJ:[621..630] nitrergic) (NN:[631..636] nerve))
+                        (NN:[637..648] stimulation))
+                      (HYPH:[648..649] -) (VBN:[649..656] induced))
+                    (NNS:[657..668] relaxations))
+                  (PP (IN:[669..671] of)
+                    (NP (NN:[672..675] rat) (NN:[677..689] anococcygeus)
+                        (NNS:[690..697] muscles))))))))))
+    (.:[697..698] .)))
+
+;sentence 6 Span:699..701
+;2.
+(SENT
+  (NP (LS:[699..701] 2.)))
+
+;sentence 7 Span:702..896
+;In rat and rabbit aortic rings, 7-ER (2 microM)  inhibited the relaxations to
+;acetylcholine in endothelium-intact preparations  and the relaxant action of
+;NO in endothelium-denuded preparations.
+;[734..738]:substance:"7-ER"
+;[740..741]:quantitative-value:"2"
+;[742..748]:quantitative-units:"microM"
+;[780..793]:substance:"acetylcholine"
+;[857..859]:substance:"NO"
+(SENT
+  (S
+    (PP (IN:[702..704] In)
+      (NP
+        (NP (NN:[705..708] rat)
+          (NML-1 (-NONE-:[708..708] *P*)))
+        (CC:[709..712] and)
+        (NP (NN:[713..719] rabbit)
+          (NML-1 (JJ:[720..726] aortic) (NNS:[727..732] rings)))))
+    (,:[732..733] ,)
+    (NP-SBJ
+      (NP (NN:[734..738] 7-ER))
+      (PRN (-LRB-:[739..740] -LRB-)
+        (NP (CD:[740..741] 2) (NN:[742..748] microM))
+        (-RRB-:[748..749] -RRB-)))
+    (VP (VBD:[751..760] inhibited)
+      (NP
+        (NP
+          (NP (DT:[761..764] the) (NNS:[765..776] relaxations))
+          (PP (TO:[777..779] to)
+            (NP (NN:[780..793] acetylcholine)))
+          (PP-LOC (IN:[794..796] in)
+            (NP
+              (ADJP (NN:[797..808] endothelium) (HYPH:[808..809] -)
+                    (JJ:[809..815] intact))
+              (NNS:[816..828] preparations))))
+        (CC:[830..833] and)
+        (NP
+          (NP (DT:[834..837] the) (JJ:[838..846] relaxant)
+              (NN:[847..853] action))
+          (PP (IN:[854..856] of)
+            (NP (NN:[857..859] NO)))
+          (PP-LOC (IN:[860..862] in)
+            (NP
+              (ADJP (NN:[863..874] endothelium) (HYPH:[874..875] -)
+                    (VBN:[875..882] denuded))
+              (NNS:[883..895] preparations))))))
+    (.:[895..896] .)))
+
+;sentence 8 Span:897..995
+;Relaxant  responses to SNP and GTN were inhibited by 7-ER in the rat but not
+;rabbit aortic  rings.
+;[920..923]:substance:"SNP"
+;[928..931]:substance:"GTN"
+;[950..954]:substance:"7-ER"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[897..905] Relaxant) (NNS:[907..916] responses))
+      (PP (TO:[917..919] to)
+        (NP (NN:[920..923] SNP) (CC:[924..927] and) (NN:[928..931] GTN))))
+    (VP (VBD:[932..936] were)
+      (VP (VBN:[937..946] inhibited)
+        (NP-2 (-NONE-:[946..946] *))
+        (PP (IN:[947..949] by)
+          (NP-LGS (NN:[950..954] 7-ER)))
+        (PP-LOC (IN:[955..957] in)
+          (NP (DT:[958..961] the)
+            (NML
+              (NML (NN:[962..965] rat)
+                (NML-1 (-NONE-:[965..965] *P*)))
+              (CONJP (CC:[966..969] but) (RB:[970..973] not))
+              (NML (NN:[974..980] rabbit)
+                (NML-1 (JJ:[981..987] aortic) (NNS:[989..994] rings))))))))
+    (.:[994..995] .)))
+
+;sentence 9 Span:996..1090
+;However, the relaxant actions of papaverine and 8-bromo-cyclic GMP were  not
+;affected by 7-ER.
+;[1029..1039]:substance:"papaverine"
+;[1044..1062]:substance:"8-bromo-cyclic GMP"
+;[1085..1089]:substance:"7-ER"
+(SENT
+  (S
+    (ADVP (RB:[996..1003] However))
+    (,:[1003..1004] ,)
+    (NP-SBJ-1
+      (NP (DT:[1005..1008] the) (JJ:[1009..1017] relaxant)
+          (NNS:[1018..1025] actions))
+      (PP (IN:[1026..1028] of)
+        (NP
+          (NP (NN:[1029..1039] papaverine))
+          (CC:[1040..1043] and)
+          (NP (JJ:[1044..1058] 8-bromo-cyclic) (NN:[1059..1062] GMP)))))
+    (VP (VBD:[1063..1067] were) (RB:[1069..1072] not)
+      (VP (VBN:[1073..1081] affected)
+        (NP-1 (-NONE-:[1081..1081] *))
+        (PP (IN:[1082..1084] by)
+          (NP-LGS (NN:[1085..1089] 7-ER)))))
+    (.:[1089..1090] .)))
+
+;sentence 10 Span:1091..1093
+;3.
+(SENT
+  (NP (LS:[1091..1093] 3.)))
+
+;sentence 11 Span:1094..1307
+;In rat anococcygeus muscles, 7ER (2 microM) inhibited  the relaxant action of
+;NO, but relaxations elicited by nitrergic nerve  stimulation were only partly
+;inhibited by a higher concentration of 7-ER (10  microM).
+;[1123..1126]:substance:"7ER"
+;[1128..1129]:quantitative-value:"2"
+;[1130..1136]:quantitative-units:"microM"
+;[1172..1174]:substance:"NO"
+;[1289..1293]:substance:"7-ER"
+;[1295..1297]:quantitative-value:"10"
+;[1299..1305]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP-LOC (IN:[1094..1096] In)
+      (NP (NN:[1097..1100] rat) (NN:[1101..1113] anococcygeus)
+          (NNS:[1114..1121] muscles)))
+    (,:[1121..1122] ,)
+    (S
+      (NP-SBJ
+        (NP (NN:[1123..1126] 7ER))
+        (PRN (-LRB-:[1127..1128] -LRB-)
+          (NP (CD:[1128..1129] 2) (NN:[1130..1136] microM))
+          (-RRB-:[1136..1137] -RRB-)))
+      (VP (VBD:[1138..1147] inhibited)
+        (NP
+          (NP (DT:[1149..1152] the) (JJ:[1153..1161] relaxant)
+              (NN:[1162..1168] action))
+          (PP (IN:[1169..1171] of)
+            (NP (NN:[1172..1174] NO))))))
+    (,:[1174..1175] ,) (CC:[1176..1179] but)
+    (S
+      (NP-SBJ-1
+        (NP (NNS:[1180..1191] relaxations))
+        (VP (VBN:[1192..1200] elicited)
+          (NP (-NONE-:[1200..1200] *))
+          (PP (IN:[1201..1203] by)
+            (NP-LGS
+              (NML (JJ:[1204..1213] nitrergic) (NN:[1214..1219] nerve))
+              (NN:[1221..1232] stimulation)))))
+      (VP (VBD:[1233..1237] were)
+        (ADVP (RB:[1238..1242] only) (RB:[1243..1249] partly))
+        (VP (VBN:[1250..1259] inhibited)
+          (NP-1 (-NONE-:[1259..1259] *))
+          (PP (IN:[1260..1262] by)
+            (NP-LGS
+              (NP (DT:[1263..1264] a) (JJR:[1265..1271] higher)
+                  (NN:[1272..1285] concentration))
+              (PP (IN:[1286..1288] of)
+                (NP (NN:[1289..1293] 7-ER)))
+              (PRN (-LRB-:[1294..1295] -LRB-) (CD:[1295..1297] 10)
+                   (NN:[1299..1305] microM) (-RRB-:[1305..1306] -RRB-)))))))
+    (.:[1306..1307] .)))
+
+;sentence 12 Span:1308..1310
+;4.
+(SENT
+  (NP (LS:[1308..1310] 4.)))
+
+;sentence 13 Span:1311..1580
+;After inhibition by 7-ER, superoxide dismutase (100 u ml-1) restored 
+;NO-induced relaxations of the rat aortic rings, but not acetylcholine-, SNP
+;or  GTN-induced relaxations, and restored NO- and nitrergic nerve 
+;stimulation-induced relaxations of anococcygeus muscles.
+;[1331..1335]:substance:"7-ER"
+;[1337..1357]:substance:"superoxide dismutase"
+;[1359..1362]:quantitative-value:"100"
+;[1363..1369]:quantitative-units:"u ml-1"
+;[1381..1383]:substance:"NO"
+;[1437..1450]:substance:"acetylcholine"
+;[1453..1456]:substance:"SNP"
+;[1461..1464]:substance:"GTN"
+;[1499..1501]:substance:"NO"
+(SENT
+  (S
+    (PP-TMP (IN:[1311..1316] After)
+      (NP
+        (NP (NN:[1317..1327] inhibition))
+        (PP (IN:[1328..1330] by)
+          (NP (NN:[1331..1335] 7-ER)))))
+    (,:[1335..1336] ,)
+    (NP-SBJ
+      (NP (NN:[1337..1347] superoxide) (NN:[1348..1357] dismutase))
+      (PRN (-LRB-:[1358..1359] -LRB-)
+        (NP
+          (NML (CD:[1359..1362] 100) (NN:[1363..1364] u))
+          (NN:[1365..1369] ml-1))
+        (-RRB-:[1369..1370] -RRB-)))
+    (VP
+      (VP
+        (VP=5 (VBD:[1371..1379] restored)
+          (NP=6
+            (NP
+              (ADJP (NN:[1381..1383] NO) (HYPH:[1383..1384] -)
+                    (VBN:[1384..1391] induced))
+              (NNS:[1392..1403] relaxations))
+            (PP (IN:[1404..1406] of)
+              (NP (DT:[1407..1410] the) (NN:[1411..1414] rat)
+                  (JJ:[1415..1421] aortic) (NNS:[1422..1427] rings)))))
+        (,:[1427..1428] ,) (CC:[1429..1432] but)
+        (VP=5 (RB:[1433..1436] not)
+          (NP=6
+            (NP
+              (ADJP (NN:[1437..1450] acetylcholine) (HYPH:[1450..1451] -)
+                (ADJP-3 (-NONE-:[1451..1451] *P*)))
+              (NML-4 (-NONE-:[1451..1451] *P*)))
+            (,:[1451..1452] ,)
+            (NP
+              (ADJP (NN:[1453..1456] SNP)
+                (ADJP-3 (-NONE-:[1456..1456] *P*)))
+              (NML-4 (-NONE-:[1456..1456] *P*)))
+            (CC:[1457..1459] or)
+            (NP
+              (ADJP (NN:[1461..1464] GTN) (HYPH:[1464..1465] -)
+                (ADJP-3 (VBN:[1465..1472] induced)))
+              (NML-4 (NNS:[1473..1484] relaxations))))))
+      (,:[1484..1485] ,) (CC:[1486..1489] and)
+      (VP (VBD:[1490..1498] restored)
+        (NP
+          (NP
+            (NP
+              (ADJP (NN:[1499..1501] NO) (HYPH:[1501..1502] -)
+                (ADJP-1 (-NONE-:[1502..1502] *P*)))
+              (NML-2 (-NONE-:[1502..1502] *P*)))
+            (CC:[1503..1506] and)
+            (NP
+              (ADJP
+                (NML
+                  (NML (JJ:[1507..1516] nitrergic) (NN:[1517..1522] nerve))
+                  (NN:[1524..1535] stimulation))
+                (HYPH:[1535..1536] -)
+                (ADJP-1 (VBN:[1536..1543] induced)))
+              (NML-2 (NNS:[1544..1555] relaxations))))
+          (PP (IN:[1556..1558] of)
+            (NP (NN:[1559..1571] anococcygeus) (NNS:[1572..1579] muscles))))))
+    (.:[1579..1580] .)))
+
+;sentence 14 Span:1581..1583
+;5.
+(SENT
+  (NP (LS:[1581..1583] 5.)))
+
+;sentence 15 Span:1584..1814
+;Another cytochrome  P450 inhibitor, troleandomycin (10-30 microM), had no
+;effect on NO- or  acetylcholine-induced relaxations of rat aortic rings and
+;NO- or nitrergic nerve  stimulation-induced relaxations of anococcygeus
+;muscles.
+;[1592..1608]:cyp450:"cytochrome  P450"
+;[1609..1618]:substance:"inhibitor"
+;[1620..1634]:substance:"troleandomycin"
+;[1636..1641]:quantitative-value:"10-30"
+;[1642..1648]:quantitative-units:"microM"
+;[1668..1670]:substance:"NO"
+;[1676..1689]:substance:"acetylcholine"
+;[1734..1736]:substance:"NO"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1584..1591] Another)
+        (NML (NN:[1592..1602] cytochrome) (NN:[1604..1608] P450))
+        (NN:[1609..1618] inhibitor))
+      (,:[1618..1619] ,)
+      (NP (NN:[1620..1634] troleandomycin))
+      (PRN (-LRB-:[1635..1636] -LRB-)
+        (NP
+          (QP (CD:[1636..1638] 10) (HYPH:[1638..1639] -) (CD:[1639..1641] 30))
+          (NN:[1642..1648] microM))
+        (-RRB-:[1648..1649] -RRB-)))
+    (,:[1649..1650] ,)
+    (VP (VBD:[1651..1654] had)
+      (NP
+        (NP (DT:[1655..1657] no) (NN:[1658..1664] effect))
+        (PP (IN:[1665..1667] on)
+          (NP
+            (NP
+              (NP
+                (NP
+                  (ADJP (NN:[1668..1670] NO) (HYPH:[1670..1671] -)
+                    (ADJP-3 (-NONE-:[1671..1671] *P*)))
+                  (NML-4 (-NONE-:[1671..1671] *P*)))
+                (CC:[1672..1674] or)
+                (NP
+                  (ADJP (NN:[1676..1689] acetylcholine) (HYPH:[1689..1690] -)
+                    (ADJP-3 (VBN:[1690..1697] induced)))
+                  (NML-4 (NNS:[1698..1709] relaxations))))
+              (PP (IN:[1710..1712] of)
+                (NP (NN:[1713..1716] rat) (JJ:[1717..1723] aortic)
+                    (NNS:[1724..1729] rings))))
+            (CC:[1730..1733] and)
+            (NP
+              (NP
+                (NP
+                  (ADJP (NN:[1734..1736] NO) (HYPH:[1736..1737] -)
+                    (ADJP-1 (-NONE-:[1737..1737] *P*)))
+                  (NML-2 (-NONE-:[1737..1737] *P*)))
+                (CC:[1738..1740] or)
+                (NP
+                  (ADJP
+                    (NML
+                      (NML (JJ:[1741..1750] nitrergic) (NN:[1751..1756] nerve))
+                      (NN:[1758..1769] stimulation))
+                    (HYPH:[1769..1770] -)
+                    (ADJP-1 (VBN:[1770..1777] induced)))
+                  (NML-2 (NNS:[1778..1789] relaxations))))
+              (PP (IN:[1790..1792] of)
+                (NP (NN:[1793..1805] anococcygeus) (NNS:[1806..1813] muscles))))))))
+    (.:[1813..1814] .)))
+
+;sentence 16 Span:1815..1927
+;However, resorufin, an  analogue of 7-ER, inhibited responses to
+;acetylcholine, NO and GTN in rat aortic  rings.
+;[1824..1833]:substance:"resorufin"
+;[1839..1847]:substance:"analogue"
+;[1851..1855]:substance:"7-ER"
+;[1880..1893]:substance:"acetylcholine"
+;[1895..1897]:substance:"NO"
+;[1902..1905]:substance:"GTN"
+(SENT
+  (S
+    (ADVP (RB:[1815..1822] However))
+    (,:[1822..1823] ,)
+    (NP-SBJ
+      (NP (NN:[1824..1833] resorufin))
+      (,:[1833..1834] ,)
+      (NP
+        (NP (DT:[1835..1837] an) (NN:[1839..1847] analogue))
+        (PP (IN:[1848..1850] of)
+          (NP (NN:[1851..1855] 7-ER)))))
+    (,:[1855..1856] ,)
+    (VP (VBD:[1857..1866] inhibited)
+      (NP
+        (NP (NNS:[1867..1876] responses))
+        (PP (TO:[1877..1879] to)
+          (NP (NN:[1880..1893] acetylcholine) (,:[1893..1894] ,)
+              (NN:[1895..1897] NO) (CC:[1898..1901] and) (NN:[1902..1905] GTN))))
+      (PP-LOC (IN:[1906..1908] in)
+        (NP (NN:[1909..1912] rat) (JJ:[1913..1919] aortic)
+            (NNS:[1921..1926] rings))))
+    (.:[1926..1927] .)))
+
+;sentence 17 Span:1928..1930
+;6.
+(SENT
+  (NP (LS:[1928..1930] 6.)))
+
+;sentence 18 Span:1931..2062
+;The results suggest that 7-ER inhibited responses to NO and nitrergic  nerve
+;stimulation through generation of superoxide radicals.
+;[1956..1960]:substance:"7-ER"
+;[1984..1986]:substance:"NO"
+;[2042..2061]:substance:"superoxide radicals"
+(SENT
+  (S
+    (NP-SBJ (DT:[1931..1934] The) (NNS:[1935..1942] results))
+    (VP (VBP:[1943..1950] suggest)
+      (SBAR (IN:[1951..1955] that)
+        (S
+          (NP-SBJ (NN:[1956..1960] 7-ER))
+          (VP (VBD:[1961..1970] inhibited)
+            (NP
+              (NP (NNS:[1971..1980] responses))
+              (PP (TO:[1981..1983] to)
+                (NP
+                  (NP (NN:[1984..1986] NO)
+                    (NML-1 (-NONE-:[1986..1986] *P*)))
+                  (CC:[1987..1990] and)
+                  (NP
+                    (NML (JJ:[1991..2000] nitrergic) (NN:[2002..2007] nerve))
+                    (NML-1 (NN:[2008..2019] stimulation))))))
+            (PP-MNR (IN:[2020..2027] through)
+              (NP
+                (NP (NN:[2028..2038] generation))
+                (PP (IN:[2039..2041] of)
+                  (NP (NN:[2042..2052] superoxide) (NNS:[2053..2061] radicals)))))))))
+    (.:[2061..2062] .)))
+
+;sentence 19 Span:2063..2181
+;However, an  additional mechanism may be involved in the reduction in
+;acetylcholine-induced  response in aortic rings.
+;[2133..2146]:substance:"acetylcholine"
+(SENT
+  (S
+    (ADVP (RB:[2063..2070] However))
+    (,:[2070..2071] ,)
+    (NP-SBJ-1 (DT:[2072..2074] an) (JJ:[2076..2086] additional)
+              (NN:[2087..2096] mechanism))
+    (VP (MD:[2097..2100] may)
+      (VP (VB:[2101..2103] be)
+        (VP (VBN:[2104..2112] involved)
+          (NP-1 (-NONE-:[2112..2112] *))
+          (PP-CLR (IN:[2113..2115] in)
+            (NP
+              (NP (DT:[2116..2119] the) (NN:[2120..2129] reduction))
+              (PP (IN:[2130..2132] in)
+                (NP
+                  (ADJP (NN:[2133..2146] acetylcholine) (HYPH:[2146..2147] -)
+                        (VBN:[2147..2154] induced))
+                  (NN:[2156..2164] response)))
+              (PP-LOC (IN:[2165..2167] in)
+                (NP (JJ:[2168..2174] aortic) (NNS:[2175..2180] rings))))))))
+    (.:[2180..2181] .)))
+
+;sentence 20 Span:2182..2184
+;7.
+(SENT
+  (NP (LS:[2182..2184] 7.)))
+
+;sentence 21 Span:2185..2341
+;A 7-ER sensitive P450 system may be involved in the  bioactivation of GTN and
+;SNP in rat aortic rings, but not in rabbit aorta or rat  anococcygeus
+;muscles.
+;[2187..2191]:substance:"7-ER"
+;[2202..2206]:cyp450:"P450"
+;[2255..2258]:substance:"GTN"
+;[2263..2266]:substance:"SNP"
+(SENT
+  (S
+    (NP-SBJ-3 (DT:[2185..2186] A)
+      (ADJP (NN:[2187..2191] 7-ER) (JJ:[2192..2201] sensitive))
+      (NN:[2202..2206] P450) (NN:[2207..2213] system))
+    (VP (MD:[2214..2217] may)
+      (VP (VB:[2218..2220] be)
+        (VP
+          (VP=1 (VBN:[2221..2229] involved)
+            (NP-3 (-NONE-:[2229..2229] *))
+            (PP-CLR=2 (IN:[2230..2232] in)
+              (NP
+                (NP (DT:[2233..2236] the) (NN:[2238..2251] bioactivation))
+                (PP (IN:[2252..2254] of)
+                  (NP (NN:[2255..2258] GTN) (CC:[2259..2262] and)
+                      (NN:[2263..2266] SNP)))
+                (PP-LOC (IN:[2267..2269] in)
+                  (NP (NN:[2270..2273] rat) (JJ:[2274..2280] aortic)
+                      (NNS:[2281..2286] rings))))))
+          (,:[2286..2287] ,) (CC:[2288..2291] but)
+          (VP=1 (RB:[2292..2295] not)
+            (PP-CLR=2 (IN:[2296..2298] in)
+              (NP
+                (NP (NN:[2299..2305] rabbit) (NN:[2306..2311] aorta))
+                (CC:[2312..2314] or)
+                (NP (NN:[2315..2318] rat) (NN:[2320..2332] anococcygeus)
+                    (NNS:[2333..2340] muscles))))))))
+    (.:[2340..2341] .)))
+
+;section 22 Span:2345..2389
+;PMID: 8733576 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2345..2349] PMID) (::[2349..2350] :) (CD:[2351..2358] 8733576)
+        (NN:[2359..2360] -LSB-) (NNP:[2360..2366] PubMed) (::[2367..2368] -)
+        (NN:[2369..2376] indexed) (IN:[2377..2380] for)
+        (NNP:[2381..2389] MEDLINE-RSB-)))

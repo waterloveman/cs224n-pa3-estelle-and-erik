@@ -1,0 +1,331 @@
+;PMID: 3437890
+;source_file_2867.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..97] = [t:45..97]
+;2)section:[e:101..123] = [t:101..123]
+;3)section:[e:127..232] = [t:127..232]
+;4)sentence:[e:236..360] = [t:236..360]
+;5)sentence:[e:361..431] = [t:361..431]
+;6)sentence:[e:432..549] = [t:432..549]
+;7)sentence:[e:550..796] = [t:550..796]
+;8)sentence:[e:797..944] = [t:797..944]
+;9)sentence:[e:945..1008] = [t:945..1008]
+;10)sentence:[e:1009..1090] = [t:1009..1090]
+;11)sentence:[e:1092..1218] = [t:1092..1218]
+;12)sentence:[e:1219..1332] = [t:1219..1332]
+;13)section:[e:1336..1380] = [t:1336..1380]
+
+;section 0 Span:0..39
+;Mol Cell Biol.  1987 Dec;7(12):4266-72.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..8] Cell) (NNP:[9..13] Biol) (.:[13..14] .)
+        (CD:[16..20] 1987) (NNP:[21..25] Dec;) (HYPH:[25..27] 7-LRB-)
+        (CD:[27..29] 12) (-RRB-:[29..30] -RRB-) (::[30..31] :)
+        (CD:[31..38] 4266-72) (.:[38..39] .)))
+
+;sentence 1 Span:45..97
+;Alternative processing of RNA transcribed from NMYC.
+;[92..96]:gene-rna:"NMYC"
+(SENT
+  (NP-HLN
+    (NP (JJ:[45..56] Alternative) (NN:[57..67] processing))
+    (PP (IN:[68..70] of)
+      (NP
+        (NP (NN:[71..74] RNA))
+        (VP (VBN:[75..86] transcribed)
+          (NP (-NONE-:[86..86] *))
+          (PP (IN:[87..91] from)
+            (NP (NN:[92..96] NMYC))))))
+    (.:[96..97] .)))
+
+;section 2 Span:101..123
+;Stanton LW, Bishop JM.
+(SEC
+  (FRAG (NNP:[101..108] Stanton) (NNP:[109..111] LW) (,:[111..112] ,)
+        (NNP:[113..119] Bishop) (NNP:[120..122] JM) (.:[122..123] .)))
+
+;section 3 Span:127..232
+;Department of Microbiology and Immunology, University of California Medical 
+;Center, San Francisco 94143.
+(SEC
+  (FRAG (NNP:[127..137] Department) (IN:[138..140] of)
+        (NNP:[141..153] Microbiology) (CC:[154..157] and)
+        (NNP:[158..168] Immunology) (,:[168..169] ,) (NNP:[170..180] University)
+        (IN:[181..183] of) (NNP:[184..194] California) (NNP:[195..202] Medical)
+        (NNP:[204..210] Center) (,:[210..211] ,) (NNP:[212..215] San)
+        (NNP:[216..225] Francisco) (CD:[226..231] 94143) (.:[231..232] .)))
+
+;sentence 4 Span:236..360
+;NMYC is a gene whose amplification and overexpression have been implicated in
+; the generation of certain human malignancies.
+;[236..240]:gene-rna:"NMYC"
+;[257..270]:variation-type:"amplification"
+(SENT
+  (S
+    (NP-SBJ (NN:[236..240] NMYC))
+    (VP (VBZ:[241..243] is)
+      (NP-PRD
+        (NP (DT:[244..245] a) (NN:[246..250] gene))
+        (SBAR
+          (WHNP-1
+            (NP (WP$:[251..256] whose))
+            (NN:[257..270] amplification) (CC:[271..274] and)
+             (NN:[275..289] overexpression))
+          (S
+            (NP-SBJ-1 (-NONE-:[289..289] *T*))
+            (VP (VBP:[290..294] have)
+              (VP (VBN:[295..299] been)
+                (VP (VBN:[300..310] implicated)
+                  (NP-1 (-NONE-:[310..310] *))
+                  (PP (IN:[311..313] in)
+                    (NP
+                      (NP (DT:[315..318] the) (NN:[319..329] generation))
+                      (PP (IN:[330..332] of)
+                        (NP (JJ:[333..340] certain) (JJ:[341..346] human)
+                            (NNS:[347..359] malignancies))))))))))))
+    (.:[359..360] .)))
+
+;sentence 5 Span:361..431
+;Little is known of how the  expression of NMYC is normally controlled.
+;[403..407]:gene-rna:"NMYC"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[361..367] Little))
+    (VP (VBZ:[368..370] is)
+      (VP (VBN:[371..376] known)
+        (NP-1 (-NONE-:[376..376] *))
+        (PP (IN:[377..379] of)
+          (SBAR-NOM
+            (WHADVP-3 (WRB:[380..383] how))
+            (S
+              (NP-SBJ-2
+                (NP (DT:[384..387] the) (NN:[389..399] expression))
+                (PP (IN:[400..402] of)
+                  (NP (NN:[403..407] NMYC))))
+              (VP (VBZ:[408..410] is)
+                (ADVP (RB:[411..419] normally))
+                (VP (VBN:[420..430] controlled)
+                  (NP-2 (-NONE-:[430..430] *))
+                  (ADVP-3 (-NONE-:[430..430] *T*)))))))))
+    (.:[430..431] .)))
+
+;sentence 6 Span:432..549
+;We have therefore characterized  transcription from the gene and the
+;structure and stability of the resulting  mRNAs.
+(SENT
+  (S
+    (NP-SBJ (PRP:[432..434] We))
+    (VP (VBP:[435..439] have)
+      (ADVP (RB:[440..449] therefore))
+      (VP (VBN:[450..463] characterized)
+        (NP
+          (NP (NN:[465..478] transcription))
+          (PP (IN:[479..483] from)
+            (NP
+              (NP (DT:[484..487] the) (NN:[488..492] gene))
+              (CC:[493..496] and)
+              (NP
+                (NP (DT:[497..500] the) (NN:[501..510] structure)
+                    (CC:[511..514] and) (NN:[515..524] stability))
+                (PP (IN:[525..527] of)
+                  (NP (DT:[528..531] the) (VBG:[532..541] resulting)
+                      (NNS:[543..548] mRNAs)))))))))
+    (.:[548..549] .)))
+
+;sentence 7 Span:550..796
+;Transcription from NMYC is exceptionally complex: it initiates at  numerous
+;sites that may be grouped under the control of two promoters, and the 
+;multiplicity of initiation sites combines with alternative splicing to
+;engender  two forms of mRNA.
+;[569..573]:gene-rna:"NMYC"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[550..563] Transcription))
+        (PP (IN:[564..568] from)
+          (NP (NN:[569..573] NMYC))))
+      (VP (VBZ:[574..576] is)
+        (ADJP-PRD (RB:[577..590] exceptionally) (JJ:[591..598] complex)
+                  (::[598..599] :)
+          (S
+            (NP-SBJ (PRP:[600..602] it))
+            (VP (VBZ:[603..612] initiates)
+              (PP-LOC (IN:[613..615] at)
+                (NP
+                  (NP (JJ:[617..625] numerous) (NNS:[626..631] sites))
+                  (SBAR
+                    (WHNP-1 (WDT:[632..636] that))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[636..636] *T*))
+                      (VP (MD:[637..640] may)
+                        (VP (VB:[641..643] be)
+                          (VP (VBN:[644..651] grouped)
+                            (NP-1 (-NONE-:[651..651] *))
+                            (PP (IN:[652..657] under)
+                              (NP
+                                (NP (DT:[658..661] the) (NN:[662..669] control))
+                                (PP (IN:[670..672] of)
+                                  (NP (CD:[673..676] two)
+                                      (NNS:[677..686] promoters)))))))))))))))))
+    (,:[686..687] ,) (CC:[688..691] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[692..695] the) (NN:[697..709] multiplicity))
+        (PP (IN:[710..712] of)
+          (NP (NN:[713..723] initiation) (NNS:[724..729] sites))))
+      (VP (VBZ:[730..738] combines)
+        (PP (IN:[739..743] with)
+          (NP (JJ:[744..755] alternative) (NN:[756..764] splicing)))
+        (S
+          (NP-SBJ (-NONE-:[764..764] *))
+          (VP (TO:[765..767] to)
+            (VP (VB:[768..776] engender)
+              (NP
+                (NP (CD:[778..781] two) (NNS:[782..787] forms))
+                (PP (IN:[788..790] of)
+                  (NP (NN:[791..795] mRNA)))))))))
+    (.:[795..796] .)))
+
+;sentence 8 Span:797..944
+;The mRNAs have different 5' leader sequences (alternative  first exons of the
+;gene) but identical bodies (the second and third exons of the  gene).
+(SENT
+  (S
+    (NP-SBJ (DT:[797..800] The) (NNS:[801..806] mRNAs))
+    (VP (VBP:[807..811] have)
+      (NP
+        (NP (JJ:[812..821] different)
+          (NML (CD:[822..823] 5) (SYM:[823..824] '))
+          (NN:[825..831] leader) (NNS:[832..841] sequences)
+          (PRN (-LRB-:[842..843] -LRB-)
+            (NP
+              (NP (JJ:[843..854] alternative) (JJ:[856..861] first)
+                  (NNS:[862..867] exons))
+              (PP (IN:[868..870] of)
+                (NP (DT:[871..874] the) (NN:[875..879] gene))))
+            (-RRB-:[879..880] -RRB-)))
+        (CC:[881..884] but)
+        (NP (JJ:[885..894] identical) (NNS:[895..901] bodies)
+          (PRN (-LRB-:[902..903] -LRB-)
+            (NP
+              (NP (DT:[903..906] the)
+                (ADJP (JJ:[907..913] second) (CC:[914..917] and)
+                      (JJ:[918..923] third))
+                (NNS:[924..929] exons))
+              (PP (IN:[930..932] of)
+                (NP (DT:[933..936] the) (NN:[938..942] gene))))
+            (-RRB-:[942..943] -RRB-)))))
+    (.:[943..944] .)))
+
+;sentence 9 Span:945..1008
+;Both forms of mRNA are unstable, with half-lives of ca. 15 min.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[945..949] Both) (NNS:[950..955] forms))
+      (PP (IN:[956..958] of)
+        (NP (NN:[959..963] mRNA))))
+    (VP (VBP:[964..967] are)
+      (ADJP-PRD (JJ:[968..976] unstable))
+      (,:[976..977] ,)
+      (PP (IN:[978..982] with)
+        (NP
+          (NP
+            (NML (JJ:[983..987] half) (HYPH:[987..988] -))
+            (NNS:[988..993] lives))
+          (PP (IN:[994..996] of)
+            (NP
+              (ADVP (RB:[997..1000] ca.))
+              (CD:[1001..1003] 15) (NN:[1004..1007] min))))))
+    (.:[1007..1008] .)))
+
+;sentence 10 Span:1009..1090
+;Both  encode the previously identified 65,000 and 67,000-dalton products of
+;NMYC.
+;[1085..1089]:gene-rna:"NMYC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1009..1013] Both))
+    (VP (VBP:[1015..1021] encode)
+      (NP
+        (NP (DT:[1022..1025] the)
+          (ADJP (RB:[1026..1036] previously) (VBN:[1037..1047] identified)
+            (NML
+              (NML (CD:[1048..1054] 65,000)
+                (NML-1 (-NONE-:[1054..1054] *P*)))
+              (CC:[1055..1058] and)
+              (NML (CD:[1059..1065] 67,000) (HYPH:[1065..1066] -)
+                (NML-1 (NN:[1066..1072] dalton) (NNS:[1073..1081] products))))))
+        (PP (IN:[1082..1084] of)
+          (NP (NN:[1085..1089] NMYC)))))
+    (.:[1089..1090] .)))
+
+;sentence 11 Span:1092..1218
+;However, the alternative first exons contain distinctive open reading frames 
+;that may diversify the coding potential of NMYC.
+;[1213..1217]:gene-rna:"NMYC"
+(SENT
+  (S
+    (ADVP (RB:[1092..1099] However))
+    (,:[1099..1100] ,)
+    (NP-SBJ (DT:[1101..1104] the) (JJ:[1105..1116] alternative)
+            (JJ:[1117..1122] first) (NNS:[1123..1128] exons))
+    (VP (VBP:[1129..1136] contain)
+      (NP
+        (NP (JJ:[1137..1148] distinctive) (JJ:[1149..1153] open)
+            (NN:[1154..1161] reading) (NNS:[1162..1168] frames))
+        (SBAR
+          (WHNP-1 (WDT:[1170..1174] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[1174..1174] *T*))
+            (VP (MD:[1175..1178] may)
+              (VP (VB:[1179..1188] diversify)
+                (NP
+                  (NP (DT:[1189..1192] the) (NN:[1193..1199] coding)
+                      (NN:[1200..1209] potential))
+                  (PP (IN:[1210..1212] of)
+                    (NP (NN:[1213..1217] NMYC))))))))))
+    (.:[1217..1218] .)))
+
+;sentence 12 Span:1219..1332
+;The complexities in  transcription of NMYC expand the means by which
+;expression of the gene might be  controlled.
+;[1257..1261]:gene-rna:"NMYC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1219..1222] The) (NNS:[1223..1235] complexities))
+      (PP (IN:[1236..1238] in)
+        (NP
+          (NP (NN:[1240..1253] transcription))
+          (PP (IN:[1254..1256] of)
+            (NP (NN:[1257..1261] NMYC))))))
+    (VP (VBP:[1262..1268] expand)
+      (NP
+        (NP (DT:[1269..1272] the) (NNS:[1273..1278] means))
+        (SBAR
+          (WHPP-2 (IN:[1279..1281] by)
+            (WHNP (WDT:[1282..1287] which)))
+          (S
+            (NP-SBJ-1
+              (NP (NN:[1288..1298] expression))
+              (PP (IN:[1299..1301] of)
+                (NP (DT:[1302..1305] the) (NN:[1306..1310] gene))))
+            (VP (MD:[1311..1316] might)
+              (VP (VB:[1317..1319] be)
+                (VP (VBN:[1321..1331] controlled)
+                  (NP-1 (-NONE-:[1331..1331] *))
+                  (PP-2 (-NONE-:[1331..1331] *T*)))))))))
+    (.:[1331..1332] .)))
+
+;section 13 Span:1336..1380
+;PMID: 3437890 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1336..1340] PMID) (::[1340..1341] :) (CD:[1342..1349] 3437890)
+        (NN:[1350..1351] -LSB-) (NNP:[1351..1357] PubMed) (::[1358..1359] -)
+        (NN:[1360..1367] indexed) (IN:[1368..1371] for)
+        (NNP:[1372..1380] MEDLINE-RSB-)))

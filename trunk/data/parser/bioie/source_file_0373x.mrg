@@ -1,0 +1,541 @@
+;PMID: 1913654
+;source_file_811.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..129] = [t:42..129]
+;2)section:[e:133..206] = [t:133..206]
+;3)section:[e:210..350] = [t:210..350]
+;4)sentence:[e:354..565] = [t:354..565]
+;5)sentence:[e:566..903] = [t:566..903]
+;6)sentence:[e:905..1018] = [t:905..1018]
+;7)sentence:[e:1019..1177] = [t:1019..1177]
+;8)sentence:[e:1178..1251] = [t:1178..1251]
+;9)sentence:[e:1252..1352] = [t:1252..1352]
+;10)sentence:[e:1353..1451] = [t:1353..1451]
+;11)sentence:[e:1452..1532] = [t:1452..1532]
+;12)sentence:[e:1533..1702] = [t:1533..1702]
+;13)sentence:[e:1703..1899] = [t:1703..1899]
+;14)sentence:[e:1900..2065] = [t:1900..2065]
+;15)sentence:[e:2066..2147] = [t:2066..2147]
+;16)section:[e:2151..2195] = [t:2151..2195]
+
+;section 0 Span:0..37
+;Cancer Res  1991 Oct 1;51(19):5308-14
+(SEC
+  (FRAG (NN:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1991)
+        (IN:[17..20] Oct) (CD:[21..26] 1;51-LRB-) (CD:[26..28] 19)
+        (-RRB-:[28..29] -RRB-) (CD:[29..34] :5308) (::[34..35] -)
+        (CD:[35..37] 14)))
+
+;sentence 1 Span:42..129
+;K-ras activation in premalignant and malignant epithelial lesions of the
+;human  uterus.
+;[42..47]:gene-rna:"K-ras"
+;[62..74]:malignancy:"premalignant"
+;[79..128]:malignancy:"malignant epithelial lesions of the human  uterus"
+(SENT
+  (NP-HLN
+    (NP (NN:[42..47] K-ras) (NN:[48..58] activation))
+    (PP (IN:[59..61] in)
+      (NP
+        (NP
+          (NP (JJ:[62..74] premalignant)
+            (NML-1 (-NONE-:[74..74] *P*)))
+          (CC:[75..78] and)
+          (NP (JJ:[79..88] malignant)
+            (NML-1 (JJ:[89..99] epithelial) (NNS:[100..107] lesions))))
+        (PP (IN:[108..110] of)
+          (NP (DT:[111..114] the) (JJ:[115..120] human) (NN:[122..128] uterus)))))
+    (.:[128..129] .)))
+
+;section 2 Span:133..206
+;Enomoto T, Inoue M, Perantoni AO, Buzard GS, Miki H, Tanizawa O, Rice JM.
+(SEC
+  (FRAG (NNP:[133..140] Enomoto) (NNP:[141..142] T) (,:[142..143] ,)
+        (NNP:[144..149] Inoue) (NNP:[150..152] M,) (NNP:[153..162] Perantoni)
+        (NNP:[163..165] AO) (,:[165..166] ,) (NNP:[167..173] Buzard)
+        (NNP:[174..176] GS) (,:[176..177] ,) (NNP:[178..182] Miki)
+        (NNP:[183..184] H) (,:[184..185] ,) (NNP:[186..194] Tanizawa)
+        (NNP:[195..196] O) (,:[196..197] ,) (NNP:[198..202] Rice)
+        (NNPS:[203..205] JM) (.:[205..206] .)))
+
+;section 3 Span:210..350
+;Laboratory of Comparative Carcinogenesis, National Cancer Institute,
+;Frederick  Cancer Research and Development Center, Maryland 21702-1201.
+(SEC
+  (FRAG (NN:[210..220] Laboratory) (IN:[221..223] of)
+        (NNP:[224..235] Comparative) (NNP:[236..250] Carcinogenesis)
+        (,:[250..251] ,) (NNP:[252..260] National) (NNP:[261..267] Cancer)
+        (NNP:[268..277] Institute) (,:[277..278] ,) (NNP:[279..288] Frederick)
+        (NNP:[290..296] Cancer) (NNP:[297..305] Research) (CC:[306..309] and)
+        (NNP:[310..321] Development) (NNP:[322..328] Center) (,:[328..329] ,)
+        (NNP:[330..338] Maryland) (CD:[339..344] 21702) (::[344..345] -)
+        (CD:[345..349] 1201) (.:[349..350] .)))
+
+;sentence 4 Span:354..565
+;We previously reported (Cancer Res., 50:6139-6145, 1990) a significant
+;frequency  of activating point mutations in codon 12 of the K-ras oncogene in
+;endometrial  adenocarcinomas of the uterine corpus (series 1).
+;[450..465]:variation-type:"point mutations"
+;[469..477]:variation-location:"codon 12"
+;[485..490]:gene-rna:"K-ras"
+;[503..553]:malignancy:"endometrial  adenocarcinomas of the uterine corpus"
+(SENT
+  (S
+    (NP-SBJ (PRP:[354..356] We))
+    (ADVP-TMP (RB:[357..367] previously))
+    (VP (VBD:[368..376] reported)
+      (PRN (-LRB-:[377..378] -LRB-)
+        (FRAG (NNP:[378..384] Cancer) (NNP:[385..389] Res.) (,:[389..390] ,)
+              (CD:[391..393] 50) (::[393..394] :) (CD:[394..398] 6139)
+              (HYPH:[398..399] -) (CD:[399..403] 6145) (,:[403..404] ,)
+              (CD:[405..409] 1990))
+        (-RRB-:[409..410] -RRB-))
+      (NP
+        (NP (DT:[411..412] a) (JJ:[413..424] significant)
+            (NN:[425..434] frequency))
+        (PP (IN:[436..438] of)
+          (NP
+            (NP (VBG:[439..449] activating)
+               (NN:[450..455] point) (NNS:[456..465] mutations))
+            (PP-LOC (IN:[466..468] in)
+              (NP
+                (NP (NN:[469..474] codon) (CD:[475..477] 12))
+                (PP (IN:[478..480] of)
+                  (NP (DT:[481..484] the) (NN:[485..490] K-ras)
+                      (NN:[491..499] oncogene)))))
+            (PP-LOC (IN:[500..502] in)
+              (NP
+                (NP (JJ:[503..514] endometrial) (NNS:[516..531] adenocarcinomas))
+                (PP (IN:[532..534] of)
+                  (NP (DT:[535..538] the) (JJ:[539..546] uterine)
+                      (NN:[547..553] corpus)
+                    (PRN (-LRB-:[554..555] -LRB-)
+                      (NP
+                        (NML (NN:[555..561] series))
+                        (CD:[562..563] 1))
+                      (-RRB-:[563..564] -RRB-))))))))))
+    (.:[564..565] .)))
+
+;sentence 5 Span:566..903
+;To further define the role of  ras activation in the development of
+;endometrial adenocarcinoma, we surveyed  cystic, adenomatous, and atypical
+;hyperplasias of uterine endometrium and  additional cases of endometrial and
+;cervical carcinoma (series 2) for the  presence of activating mutations in
+;cellular protooncogenes of the ras family.
+;[597..600]:gene-rna:"ras"
+;[634..660]:malignancy:"endometrial adenocarcinoma"
+;[675..681]:malignancy:"cystic"
+;[683..694]:malignancy:"adenomatous"
+;[700..744]:malignancy:"atypical hyperplasias of uterine endometrium"
+;[770..804]:malignancy:"endometrial and cervical carcinoma"
+;[848..857]:variation-event:"mutations"
+;[892..895]:gene-rna:"ras"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[566..566] *))
+      (VP (TO:[566..568] To)
+        (ADVP (RB:[569..576] further))
+        (VP (VB:[577..583] define)
+          (NP
+            (NP (DT:[584..587] the) (NN:[588..592] role))
+            (PP (IN:[593..595] of)
+              (NP (NN:[597..600] ras) (NN:[601..611] activation))))
+          (PP (IN:[612..614] in)
+            (NP
+              (NP (DT:[615..618] the) (NN:[619..630] development))
+              (PP (IN:[631..633] of)
+                (NP (JJ:[634..645] endometrial) (NN:[646..660] adenocarcinoma))))))))
+    (,:[660..661] ,)
+    (NP-SBJ (PRP:[662..664] we))
+    (VP (VBD:[665..673] surveyed)
+      (NP
+        (NP
+          (NP
+            (NP (JJ:[675..681] cystic)
+              (NML-1 (-NONE-:[681..681] *P*)))
+            (,:[681..682] ,)
+            (NP (JJ:[683..694] adenomatous)
+              (NML-1 (-NONE-:[694..694] *P*)))
+            (,:[694..695] ,) (CC:[696..699] and)
+            (NP (JJ:[700..708] atypical)
+              (NML-1 (NNS:[709..721] hyperplasias))))
+          (PP (IN:[722..724] of)
+            (NP (JJ:[725..732] uterine) (NN:[733..744] endometrium))))
+        (CC:[745..748] and)
+        (NP
+          (NP (JJ:[750..760] additional) (NNS:[761..766] cases))
+          (PP (IN:[767..769] of)
+            (NP
+              (NP (JJ:[770..781] endometrial)
+                (NML-2 (-NONE-:[781..781] *P*)))
+              (CC:[782..785] and)
+              (NP (JJ:[786..794] cervical)
+                (NML-2 (NN:[795..804] carcinoma))
+                (PRN (-LRB-:[805..806] -LRB-) (NN:[806..812] series)
+                     (CD:[813..814] 2) (-RRB-:[814..815] -RRB-)))))))
+      (PP (IN:[816..819] for)
+        (NP
+          (NP (DT:[820..823] the) (NN:[825..833] presence))
+          (PP (IN:[834..836] of)
+            (NP
+              (NP (VBG:[837..847] activating) (NNS:[848..857] mutations))
+              (PP-LOC (IN:[858..860] in)
+                (NP
+                  (NP (JJ:[861..869] cellular) (NNS:[870..884] protooncogenes))
+                  (PP (IN:[885..887] of)
+                    (NP (DT:[888..891] the) (NN:[892..895] ras)
+                        (NN:[896..902] family))))))))))
+    (.:[902..903] .)))
+
+;sentence 6 Span:905..1018
+;Polymerase chain reaction was performed from deparaffinized sections of 
+;formalin-fixed paraffin-embedded tissue.
+;[905..915]:gene-protein:"Polymerase"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[905..915] Polymerase) (NN:[916..921] chain)
+              (NN:[922..930] reaction))
+    (VP (VBD:[931..934] was)
+      (VP (VBN:[935..944] performed)
+        (NP-1 (-NONE-:[944..944] *))
+        (PP (IN:[945..949] from)
+          (NP
+            (NP (VBN:[950..964] deparaffinized) (NNS:[965..973] sections))
+            (PP (IN:[974..976] of)
+              (NP
+                (ADJP
+                  (ADJP (NN:[978..986] formalin) (HYPH:[986..987] -)
+                        (VBN:[987..992] fixed))
+                  (ADJP (NN:[993..1001] paraffin) (HYPH:[1001..1002] -)
+                        (VBN:[1002..1010] embedded)))
+                (NN:[1011..1017] tissue)))))))
+    (.:[1017..1018] .)))
+
+;sentence 7 Span:1019..1177
+;We screened for point mutations in  codons 12, 13, and 61 of the K-, H-, and
+;N-ras genes by dot blot hybridization  analysis with mutation-specific
+;oligomers.
+;[1035..1050]:variation-type:"point mutations"
+;[1055..1064]:variation-location:"codons 12"
+;[1055..1061]...[1074..1076]:variation-location:"codons"..."61"
+;[1055..1061]...[1066..1068]:variation-location:"codons"..."13"
+;[1084..1086]...[1098..1101]:gene-rna:"K-"..."ras"
+;[1088..1090]...[1098..1101]:gene-rna:"H-"..."ras"
+;[1096..1101]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1019..1021] We))
+    (VP (VBD:[1022..1030] screened)
+      (PP (IN:[1031..1034] for)
+        (NP
+          (NP (NN:[1035..1040] point) (NNS:[1041..1050] mutations))
+          (PP-LOC (IN:[1051..1053] in)
+            (NP
+              (NP
+                (NP
+                  (NML-1 (NNS:[1055..1061] codons))
+                  (CD:[1062..1064] 12))
+                (,:[1064..1065] ,)
+                (NP
+                  (NML-1 (-NONE-:[1065..1065] *P*))
+                  (CD:[1066..1068] 13))
+                (,:[1068..1069] ,) (CC:[1070..1073] and)
+                (NP
+                  (NML-1 (-NONE-:[1073..1073] *P*))
+                  (CD:[1074..1076] 61)))
+              (PP (IN:[1077..1079] of)
+                (NP (DT:[1080..1083] the)
+                  (NML
+                    (NML
+                      (NML (NN:[1084..1085] K) (HYPH:[1085..1086] -)
+                        (NML-2 (-NONE-:[1086..1086] *P*)))
+                      (NML-3 (-NONE-:[1086..1086] *P*)))
+                    (,:[1086..1087] ,)
+                    (NML
+                      (NML (NN:[1088..1089] H) (HYPH:[1089..1090] -)
+                        (NML-2 (-NONE-:[1090..1090] *P*)))
+                      (NML-3 (-NONE-:[1090..1090] *P*)))
+                    (,:[1090..1091] ,) (CC:[1092..1095] and)
+                    (NML
+                      (NML (NN:[1096..1097] N) (HYPH:[1097..1098] -)
+                        (NML-2 (NN:[1098..1101] ras)))
+                      (NML-3 (NNS:[1102..1107] genes))))))))))
+      (PP-MNR (IN:[1108..1110] by)
+        (NP
+          (NP
+            (NML (NN:[1111..1114] dot) (NN:[1115..1119] blot))
+            (NN:[1120..1133] hybridization) (NN:[1135..1143] analysis))
+          (PP (IN:[1144..1148] with)
+            (NP
+              (ADJP (NN:[1149..1157] mutation) (HYPH:[1157..1158] -)
+                    (JJ:[1158..1166] specific))
+              (NNS:[1167..1176] oligomers))))))
+    (.:[1176..1177] .)))
+
+;sentence 8 Span:1178..1251
+;Mutations in K-ras were also  confirmed by direct genomic DNA sequencing.
+;[1191..1196]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[1178..1187] Mutations))
+      (PP-LOC (IN:[1188..1190] in)
+        (NP (NN:[1191..1196] K-ras))))
+    (VP (VBD:[1197..1201] were)
+      (ADVP (RB:[1202..1206] also))
+      (VP (VBN:[1208..1217] confirmed)
+        (NP-1 (-NONE-:[1217..1217] *))
+        (PP-MNR (IN:[1218..1220] by)
+          (NP (JJ:[1221..1227] direct) (JJ:[1228..1235] genomic)
+              (NN:[1236..1239] DNA) (NN:[1240..1250] sequencing)))))
+    (.:[1250..1251] .)))
+
+;sentence 9 Span:1252..1352
+;Of 19 endometrial adenocarcinomas in  series 2, point mutations in ras genes
+;were found in 7 tumors.
+;[1258..1285]:malignancy:"endometrial adenocarcinomas"
+;[1300..1315]:variation-type:"point mutations"
+;[1319..1322]:gene-rna:"ras"
+;[1345..1351]:malignancy:"tumors"
+(SENT
+  (S
+    (PP (IN:[1252..1254] Of)
+      (NP
+        (NP (CD:[1255..1257] 19)
+           (JJ:[1258..1269] endometrial) (NNS:[1270..1285] adenocarcinomas))
+        (PP (IN:[1286..1288] in)
+          (NP (NN:[1290..1296] series) (CD:[1297..1298] 2)))))
+    (,:[1298..1299] ,)
+    (NP-SBJ-1
+      (NP (NN:[1300..1305] point) (NNS:[1306..1315] mutations))
+      (PP-LOC (IN:[1316..1318] in)
+        (NP (NN:[1319..1322] ras) (NNS:[1323..1328] genes))))
+    (VP (VBD:[1329..1333] were)
+      (VP (VBN:[1334..1339] found)
+        (NP-1 (-NONE-:[1339..1339] *))
+        (PP (IN:[1340..1342] in)
+          (NP (CD:[1343..1344] 7) (NNS:[1345..1351] tumors)))))
+    (.:[1351..1352] .)))
+
+;sentence 10 Span:1353..1451
+;Six contained  single-base substitutions, five in codon 12 of K-ras and one
+;in codon 12 of  N-ras.
+;[1368..1393]:variation-type:"single-base substitutions"
+;[1403..1411]:variation-location:"codon 12"
+;[1415..1420]:gene-rna:"K-ras"
+;[1432..1440]:variation-location:"codon 12"
+;[1445..1450]:gene-rna:"N-ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1353..1356] Six))
+      (NP-1 (-NONE-:[1356..1356] *ICH*)))
+    (VP (VBD:[1357..1366] contained)
+      (NP (JJ:[1368..1379] single-base) (NNS:[1380..1393] substitutions))
+      (,:[1393..1394] ,)
+      (NP-1
+        (NP
+          (NP (CD:[1395..1399] five))
+          (PP-LOC (IN:[1400..1402] in)
+            (NP
+              (NP (NN:[1403..1408] codon) (CD:[1409..1411] 12))
+              (PP (IN:[1412..1414] of)
+                (NP (NN:[1415..1420] K-ras))))))
+        (CC:[1421..1424] and)
+        (NP
+          (NP (CD:[1425..1428] one))
+          (PP-LOC (IN:[1429..1431] in)
+            (NP
+              (NP (NN:[1432..1437] codon) (CD:[1438..1440] 12))
+              (PP (IN:[1441..1443] of)
+                (NP (NN:[1445..1450] N-ras))))))))
+    (.:[1450..1451] .)))
+
+;sentence 11 Span:1452..1532
+;The seventh tumor contained two different point mutations in codon 12 of 
+;K-ras.
+;[1464..1469]:malignancy:"tumor"
+;[1494..1509]:variation-type:"point mutations"
+;[1513..1521]:variation-location:"codon 12"
+;[1526..1531]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[1452..1455] The) (JJ:[1456..1463] seventh)
+            (NN:[1464..1469] tumor))
+    (VP (VBD:[1470..1479] contained)
+      (NP (CD:[1480..1483] two) (JJ:[1484..1493] different)
+         (NN:[1494..1499] point) (NNS:[1500..1509] mutations))
+      (PP-LOC (IN:[1510..1512] in)
+        (NP
+          (NP (NN:[1513..1518] codon) (CD:[1519..1521] 12))
+          (PP (IN:[1522..1524] of)
+            (NP (NN:[1526..1531] K-ras))))))
+    (.:[1531..1532] .)))
+
+;sentence 12 Span:1533..1702
+;In one endometrial adenocarcinoma, tumor cells with point mutations in  K-ras
+;were predominantly localized to a portion that had a more aggressive 
+;histological pattern.
+;[1540..1566]:malignancy:"endometrial adenocarcinoma"
+;[1568..1579]:malignancy:"tumor cells"
+;[1585..1600]:variation-type:"point mutations"
+;[1605..1610]:gene-rna:"K-ras"
+(SENT
+  (S
+    (PP-LOC (IN:[1533..1535] In)
+      (NP (CD:[1536..1539] one)
+         (JJ:[1540..1551] endometrial) (NN:[1552..1566] adenocarcinoma)))
+    (,:[1566..1567] ,)
+    (NP-SBJ-1
+      (NP (NN:[1568..1573] tumor) (NNS:[1574..1579] cells))
+      (PP (IN:[1580..1584] with)
+        (NP
+          (NP (NN:[1585..1590] point) (NNS:[1591..1600] mutations))
+          (PP (IN:[1601..1603] in)
+            (NP (NN:[1605..1610] K-ras))))))
+    (VP (VBD:[1611..1615] were)
+      (ADVP (RB:[1616..1629] predominantly))
+      (VP (VBN:[1630..1639] localized)
+        (NP-1 (-NONE-:[1639..1639] *))
+        (PP (TO:[1640..1642] to)
+          (NP
+            (NP (DT:[1643..1644] a) (NN:[1645..1652] portion))
+            (SBAR
+              (WHNP-2 (WDT:[1653..1657] that))
+              (S
+                (NP-SBJ-2 (-NONE-:[1657..1657] *T*))
+                (VP (VBD:[1658..1661] had)
+                  (NP (DT:[1662..1663] a)
+                    (ADJP (RBR:[1664..1668] more) (JJ:[1669..1679] aggressive))
+                    (JJ:[1681..1693] histological) (NN:[1694..1701] pattern)))))))))
+    (.:[1701..1702] .)))
+
+;sentence 13 Span:1703..1899
+;In endometrial hyperplasia, K-ras mutations, one in codon  12 and one in
+;codon 13, were found in 2 of 16 hyperplasias histologically  classified as
+;atypical and clinically considered premalignant.
+;[1706..1729]:malignancy:"endometrial hyperplasia"
+;[1731..1736]:gene-rna:"K-ras"
+;[1737..1746]:variation-event:"mutations"
+;[1755..1764]:variation-location:"codon  12"
+;[1776..1784]:variation-location:"codon 13"
+;[1808..1898]:malignancy:"hyperplasias histologically  classified as atypical
+;and clinically considered premalignant"
+(SENT
+  (S
+    (PP (IN:[1703..1705] In)
+      (NP (JJ:[1706..1717] endometrial) (NN:[1718..1729] hyperplasia)))
+    (,:[1729..1730] ,)
+    (NP-SBJ-1
+      (NP (NN:[1731..1736] K-ras) (NNS:[1737..1746] mutations))
+      (,:[1746..1747] ,)
+      (NP
+        (NP
+          (NP (CD:[1748..1751] one))
+          (PP-LOC (IN:[1752..1754] in)
+            (NP (NN:[1755..1760] codon) (CD:[1762..1764] 12))))
+        (CC:[1765..1768] and)
+        (NP
+          (NP (CD:[1769..1772] one))
+          (PP-LOC (IN:[1773..1775] in)
+            (NP (NN:[1776..1781] codon) (CD:[1782..1784] 13))))))
+    (,:[1784..1785] ,)
+    (VP (VBD:[1786..1790] were)
+      (VP (VBN:[1791..1796] found)
+        (NP-1 (-NONE-:[1796..1796] *))
+        (PP-LOC (IN:[1797..1799] in)
+          (NP
+            (NP (CD:[1800..1801] 2))
+            (PP (IN:[1802..1804] of)
+              (NP
+                (NP (CD:[1805..1807] 16) (NNS:[1808..1820] hyperplasias))
+                (VP
+                  (VP
+                    (ADVP (RB:[1821..1835] histologically))
+                    (VBN:[1837..1847] classified)
+                    (NP (-NONE-:[1847..1847] *))
+                    (PP-CLR (IN:[1848..1850] as)
+                      (NP (JJ:[1851..1859] atypical))))
+                  (CC:[1860..1863] and)
+                  (VP
+                    (ADVP (RB:[1864..1874] clinically))
+                    (VBN:[1875..1885] considered)
+                    (S
+                      (NP-SBJ (-NONE-:[1885..1885] *))
+                      (ADJP-PRD (JJ:[1886..1898] premalignant)))))))))))
+    (.:[1898..1899] .)))
+
+;sentence 14 Span:1900..2065
+;None of 6  adenomatous hyperplasias and none of 12 cystic hyperplasias, the
+;latter of which  is considered clinically benign, contained any detectable
+;ras mutations.
+;[1911..1935]:malignancy:"adenomatous hyperplasias"
+;[1951..1970]:malignancy:"cystic hyperplasias"
+;[2051..2054]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1900..1904] None))
+        (PP (IN:[1905..1907] of)
+          (NP (CD:[1908..1909] 6)
+             (JJ:[1911..1922] adenomatous) (NNS:[1923..1935] hyperplasias))))
+      (CC:[1936..1939] and)
+      (NP
+        (NP (NN:[1940..1944] none))
+        (PP (IN:[1945..1947] of)
+          (NP (CD:[1948..1950] 12)
+             (JJ:[1951..1957] cystic) (NNS:[1958..1970] hyperplasias)))))
+    (,:[1970..1971] ,)
+    (NP-ADV
+      (NP (DT:[1972..1975] the) (JJ:[1976..1982] latter))
+      (PP (IN:[1983..1985] of)
+        (SBAR
+          (WHNP-1 (WDT:[1986..1991] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1991..1991] *T*))
+            (VP (VBZ:[1993..1995] is)
+              (VP (VBN:[1996..2006] considered)
+                (S
+                  (NP-SBJ-1 (-NONE-:[2006..2006] *))
+                  (ADJP-PRD (RB:[2007..2017] clinically)
+                            (JJ:[2018..2024] benign)))))))))
+    (,:[2024..2025] ,)
+    (VP (VBD:[2026..2035] contained)
+      (NP (DT:[2036..2039] any) (JJ:[2040..2050] detectable)
+          (NN:[2051..2054] ras) (NNS:[2055..2064] mutations)))
+    (.:[2064..2065] .)))
+
+;sentence 15 Span:2066..2147
+;No  mutations in H-ras were detected in either carcinomas or hyperplastic
+;tissue.
+;[2083..2088]:gene-rna:"H-ras"
+;[2113..2123]:malignancy:"carcinomas"
+;[2127..2146]:malignancy:"hyperplastic tissue"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[2066..2068] No) (NNS:[2070..2079] mutations))
+      (PP (IN:[2080..2082] in)
+        (NP (NN:[2083..2088] H-ras))))
+    (VP (VBD:[2089..2093] were)
+      (VP (VBN:[2094..2102] detected)
+        (NP-1 (-NONE-:[2102..2102] *))
+        (PP-LOC (IN:[2103..2105] in)
+          (NP (CC:[2106..2112] either)
+            (NP (NNS:[2113..2123] carcinomas))
+            (CC:[2124..2126] or)
+            (NP (JJ:[2127..2139] hyperplastic) (NN:[2140..2146] tissue))))))
+    (.:[2146..2147] .)))
+
+;section 16 Span:2151..2195
+;PMID: 1913654 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2151..2155] PMID) (::[2155..2156] :) (CD:[2157..2164] 1913654)
+        (NN:[2165..2166] -LSB-) (NNP:[2166..2172] PubMed) (::[2173..2174] -)
+        (NN:[2175..2182] indexed) (IN:[2183..2186] for)
+        (NNP:[2187..2195] MEDLINE-RSB-)))

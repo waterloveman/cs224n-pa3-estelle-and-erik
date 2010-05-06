@@ -1,0 +1,467 @@
+;PMID: 7986091
+;source_file_856.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..107] = [t:50..107]
+;2)section:[e:111..127] = [t:111..127]
+;3)section:[e:131..229] = [t:131..229]
+;4)sentence:[e:233..368] = [t:233..368]
+;5)sentence:[e:369..802] = [t:369..802]
+;6)sentence:[e:803..910] = [t:803..910]
+;7)sentence:[e:911..1157] = [t:911..1157]
+;8)sentence:[e:1158..1320] = [t:1158..1320]
+;9)sentence:[e:1321..1478] = [t:1321..1478]
+;10)sentence:[e:1479..1802] = [t:1479..1802]
+;11)sentence:[e:1803..2030] = [t:1803..2030]
+;12)section:[e:2034..2078] = [t:2034..2078]
+
+;section 0 Span:0..44
+;Arch Biochem Biophys. 1994 Dec;315(2):454-9.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 1994) (CC:[27..35] Dec;315-LRB-)
+        (CD:[35..36] 2) (-RRB-:[36..37] -RRB-) (CD:[37..41] :454) (::[41..42] -)
+        (CD:[42..44] 9.)))
+
+;sentence 1 Span:50..107
+;Steroid metabolism by rabbit olfactory-specific P450 2G1.
+;[50..57]:substance:"Steroid"
+;[98..106]:cyp450:"P450 2G1"
+(SENT
+  (NP-HLN
+    (NP (JJ:[50..57] Steroid) (NN:[58..68] metabolism))
+    (PP (IN:[69..71] by)
+      (NP (NN:[72..78] rabbit)
+        (ADJP (JJ:[79..88] olfactory) (HYPH:[88..89] -) (JJ:[89..97] specific))
+         (NN:[98..102] P450) (NN:[103..106] 2G1)))
+    (.:[106..107] .)))
+
+;section 2 Span:111..127
+;Ding X, Coon MJ.
+(SEC
+  (FRAG (NNP:[111..115] Ding) (NNP:[116..117] X) (,:[117..118] ,)
+        (NNP:[119..123] Coon) (NNP:[124..127] MJ.)))
+
+;section 3 Span:131..229
+;Department of Biological Chemistry, Medical School, University of Michigan,
+;Ann  Arbor 48109-0606.
+(SEC
+  (FRAG (NNP:[131..141] Department) (IN:[142..144] of)
+        (NNP:[145..155] Biological) (NNP:[156..165] Chemistry) (,:[165..166] ,)
+        (NNP:[167..174] Medical) (NNP:[175..181] School) (,:[181..182] ,)
+        (NNP:[183..193] University) (IN:[194..196] of) (NNP:[197..205] Michigan)
+        (,:[205..206] ,) (NNP:[207..210] Ann) (NNP:[212..217] Arbor)
+        (CC:[218..223] 48109) (CD:[223..228] -0606) (.:[228..229] .)))
+
+;sentence 4 Span:233..368
+;Cytochrome P450 2G1 (2G1), which is uniquely expressed in the olfactory
+;mucosa  in mammals, may have important physiological functions.
+;[233..252]:cyp450:"Cytochrome P450 2G1"
+;[254..257]:cyp450:"2G1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[233..243] Cytochrome) (NN:[244..248] P450) (NN:[249..252] 2G1))
+        (NP (-LRB-:[253..254] -LRB-) (NN:[254..257] 2G1)
+            (-RRB-:[257..258] -RRB-)))
+      (,:[258..259] ,)
+      (SBAR
+        (WHNP-1 (WDT:[260..265] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[265..265] *T*))
+          (VP (VBZ:[266..268] is)
+            (ADVP (RB:[269..277] uniquely))
+            (VP (VBN:[278..287] expressed)
+              (NP-1 (-NONE-:[287..287] *))
+              (PP-LOC (IN:[288..290] in)
+                (NP
+                  (NP (DT:[291..294] the) (JJ:[295..304] olfactory)
+                      (NN:[305..311] mucosa))
+                  (PP-LOC (IN:[313..315] in)
+                    (NP (NNS:[316..323] mammals))))))))))
+    (,:[323..324] ,)
+    (VP (MD:[325..328] may)
+      (VP (VB:[329..333] have)
+        (NP (JJ:[334..343] important) (JJ:[344..357] physiological)
+            (NNS:[358..367] functions))))
+    (.:[367..368] .)))
+
+;sentence 5 Span:369..802
+;In the present study, we  have examined the catalytic activity of rabbit 2G1
+;toward a number of steroid  sex hormones, including androstenedione,
+;estradiol, progesterone, testosterone,  and 5 alpha-dihydrotestosterone; the
+;purified cytochrome is active toward all of  these compounds in a
+;reconstituted enzyme system with turnover numbers of 1.84,  0.34, 1.46, 1.04,
+;and 0.84, respectively, at a substrate concentration of 5  microM.
+;[442..445]:cyp450:"2G1"
+;[465..472]:substance:"steroid"
+;[478..486]:substance:"hormones"
+;[498..513]:substance:"androstenedione"
+;[515..524]:substance:"estradiol"
+;[526..538]:substance:"progesterone"
+;[540..552]:substance:"testosterone"
+;[559..586]:substance:"5 alpha-dihydrotestosterone"
+;[601..611]:substance:"cytochrome"
+;[643..652]:substance:"compounds"
+;[672..678]:substance:"enzyme"
+;[711..715]:quantitative-value:"1.84"
+;[718..722]:quantitative-value:"0.34"
+;[724..728]:quantitative-value:"1.46"
+;[730..734]:quantitative-value:"1.04"
+;[740..744]:quantitative-value:"0.84"
+;[765..774]:substance:"substrate"
+;[792..793]:quantitative-value:"5"
+;[795..801]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[369..371] In)
+      (NP (DT:[372..375] the) (JJ:[376..383] present) (NN:[384..389] study)))
+    (,:[389..390] ,)
+    (NP-SBJ (PRP:[391..393] we))
+    (VP (VBP:[395..399] have)
+      (VP (VBN:[400..408] examined)
+        (NP
+          (NP (DT:[409..412] the) (JJ:[413..422] catalytic)
+              (NN:[423..431] activity))
+          (PP (IN:[432..434] of)
+            (NP (NN:[435..441] rabbit) (NN:[442..445] 2G1)))
+          (PP (IN:[446..452] toward)
+            (NP
+              (NP (DT:[453..454] a) (NN:[455..461] number))
+              (PP (IN:[462..464] of)
+                (NP
+                  (NP (JJ:[465..472] steroid) (NN:[474..477] sex)
+                      (NNS:[478..486] hormones))
+                  (,:[486..487] ,)
+                  (PP (VBG:[488..497] including)
+                    (NP
+                      (NP (NN:[498..513] androstenedione))
+                      (,:[513..514] ,)
+                      (NP (NN:[515..524] estradiol))
+                      (,:[524..525] ,)
+                      (NP (NN:[526..538] progesterone))
+                      (,:[538..539] ,)
+                      (NP (NN:[540..552] testosterone))
+                      (,:[552..553] ,) (CC:[555..558] and)
+                      (NP (CD:[559..560] 5)
+                          (NN:[561..586] alpha-dihydrotestosterone)))))))))
+        (::[586..587] ;)
+        (S-ADV
+          (NP-SBJ (DT:[588..591] the) (JJ:[592..600] purified)
+                  (NN:[601..611] cytochrome))
+          (VP (VBZ:[612..614] is)
+            (ADJP-PRD (JJ:[615..621] active))
+            (PP (IN:[622..628] toward)
+              (NP
+                (NP (DT:[629..632] all))
+                (PP (IN:[633..635] of)
+                  (NP (DT:[637..642] these) (NNS:[643..652] compounds)))))
+            (PP (IN:[653..655] in)
+              (NP (DT:[656..657] a) (JJ:[658..671] reconstituted)
+                  (NN:[672..678] enzyme) (NN:[679..685] system)))
+            (PP (IN:[686..690] with)
+              (NP
+                (NP (NN:[691..699] turnover) (NNS:[700..707] numbers))
+                (PP (IN:[708..710] of)
+                  (NP (CD:[711..715] 1.84) (,:[715..716] ,) (CD:[718..722] 0.34)
+                      (,:[722..723] ,) (CD:[724..728] 1.46) (,:[728..729] ,)
+                      (CD:[730..734] 1.04) (,:[734..735] ,) (CC:[736..739] and)
+                      (CD:[740..744] 0.84)))))
+            (,:[744..745] ,)
+            (ADVP (RB:[746..758] respectively))
+            (,:[758..759] ,)
+            (PP (IN:[760..762] at)
+              (NP
+                (NP (DT:[763..764] a) (NN:[765..774] substrate)
+                    (NN:[775..788] concentration))
+                (PP (IN:[789..791] of)
+                  (NP (CD:[792..793] 5) (NN:[795..801] microM)))))))))
+    (.:[801..802] .)))
+
+;sentence 6 Span:803..910
+;In the presence of cytochrome b5, the turnover numbers are 1.58, 0.66,  1.66,
+;2.74, and 1.34, respectively.
+;[822..835]:substance:"cytochrome b5"
+;[862..866]:quantitative-value:"1.58"
+;[868..872]:quantitative-value:"0.66"
+;[875..879]:quantitative-value:"1.66"
+;[881..885]:quantitative-value:"2.74"
+;[891..895]:quantitative-value:"1.34"
+(SENT
+  (S
+    (PP (IN:[803..805] In)
+      (NP
+        (NP (DT:[806..809] the) (NN:[810..818] presence))
+        (PP (IN:[819..821] of)
+          (NP (NN:[822..832] cytochrome) (NN:[833..835] b5)))))
+    (,:[835..836] ,)
+    (NP-SBJ (DT:[837..840] the) (NN:[841..849] turnover)
+            (NNS:[850..857] numbers))
+    (VP (VBP:[858..861] are)
+      (NP-PRD (CD:[862..866] 1.58) (,:[866..867] ,) (CD:[868..872] 0.66)
+              (,:[872..873] ,) (CD:[875..879] 1.66) (,:[879..880] ,)
+              (CD:[881..885] 2.74) (,:[885..886] ,) (CC:[887..890] and)
+              (CD:[891..895] 1.34))
+      (,:[895..896] ,)
+      (ADVP (RB:[897..909] respectively)))
+    (.:[909..910] .)))
+
+;sentence 7 Span:911..1157
+;Estradiol is converted to the 2-hydroxy  compound (major product) and
+;4-hydroxy compound (minor product) by 2G1, and  progesterone is converted to
+;the 16 alpha-hydroxy derivative as well as the  corresponding keto compound
+;as a secondary product.
+;[911..920]:substance:"Estradiol"
+;[941..960]:substance:"2-hydroxy  compound"
+;[968..975]:substance:"product"
+;[981..999]:substance:"4-hydroxy compound"
+;[1007..1014]:substance:"product"
+;[1019..1022]:cyp450:"2G1"
+;[1029..1041]:substance:"progesterone"
+;[1062..1089]:substance:"16 alpha-hydroxy derivative"
+;[1120..1133]:substance:"keto compound"
+;[1149..1156]:substance:"product"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (NN:[911..920] Estradiol))
+      (VP (VBZ:[921..923] is)
+        (VP (VBN:[924..933] converted)
+          (NP-2 (-NONE-:[933..933] *))
+          (PP-CLR (TO:[934..936] to)
+            (NP
+              (NP (DT:[937..940] the)
+                 (NN:[941..950] 2-hydroxy) (NN:[952..960] compound)
+                (PRN (-LRB-:[961..962] -LRB-)
+                  (NP (JJ:[962..967] major) (NN:[968..975] product))
+                  (-RRB-:[975..976] -RRB-)))
+              (CC:[977..980] and)
+              (NP
+                 (NN:[981..990] 4-hydroxy) (NN:[991..999] compound)
+                (PRN (-LRB-:[1000..1001] -LRB-)
+                  (NP (JJ:[1001..1006] minor) (NN:[1007..1014] product))
+                  (-RRB-:[1014..1015] -RRB-)))))
+          (PP (IN:[1016..1018] by)
+            (NP-LGS (NN:[1019..1022] 2G1))))))
+    (,:[1022..1023] ,) (CC:[1024..1027] and)
+    (S
+      (NP-SBJ-1 (NN:[1029..1041] progesterone))
+      (VP (VBZ:[1042..1044] is)
+        (VP (VBN:[1045..1054] converted)
+          (NP-1 (-NONE-:[1054..1054] *))
+          (PP-CLR (TO:[1055..1057] to)
+            (NP
+              (NP (DT:[1058..1061] the)
+                
+                (NML (CD:[1062..1064] 16) (NN:[1065..1078] alpha-hydroxy))
+                (NN:[1079..1089] derivative))
+              (CONJP (RB:[1090..1092] as) (RB:[1093..1097] well)
+                     (IN:[1098..1100] as))
+              (NP
+                (NP (DT:[1101..1104] the) (VBG:[1106..1119] corresponding)
+                   (NN:[1120..1124] keto) (NN:[1125..1133] compound))
+                (PP (IN:[1134..1136] as)
+                  (NP (DT:[1137..1138] a) (JJ:[1139..1148] secondary)
+                      (NN:[1149..1156] product)))))))))
+    (.:[1156..1157] .)))
+
+;sentence 8 Span:1158..1320
+;The same products are formed  in olfactory microsomal suspensions as major
+;metabolites of progesterone, and  the reactions are inhibited strongly by
+;anti-2G1 IgG.
+;[1167..1175]:substance:"products"
+;[1233..1244]:substance:"metabolites"
+;[1248..1260]:substance:"progesterone"
+;[1307..1319]:substance:"anti-2G1 IgG"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2 (DT:[1158..1161] The) (JJ:[1162..1166] same)
+                (NNS:[1167..1175] products))
+      (VP (VBP:[1176..1179] are)
+        (VP (VBN:[1180..1186] formed)
+          (NP-2 (-NONE-:[1186..1186] *))
+          (PP (IN:[1188..1190] in)
+            (NP (JJ:[1191..1200] olfactory) (JJ:[1201..1211] microsomal)
+                (NNS:[1212..1223] suspensions)))
+          (PP (IN:[1224..1226] as)
+            (NP
+              (NP (JJ:[1227..1232] major) (NNS:[1233..1244] metabolites))
+              (PP (IN:[1245..1247] of)
+                (NP (NN:[1248..1260] progesterone))))))))
+    (,:[1260..1261] ,) (CC:[1262..1265] and)
+    (S
+      (NP-SBJ-1 (DT:[1267..1270] the) (NNS:[1271..1280] reactions))
+      (VP (VBP:[1281..1284] are)
+        (VP (VBN:[1285..1294] inhibited)
+          (NP-1 (-NONE-:[1294..1294] *))
+          (ADVP (RB:[1295..1303] strongly))
+          (PP (IN:[1304..1306] by)
+            (NP-LGS
+              (ADJP (AFX:[1307..1311] anti) (HYPH:[1311..1312] -)
+                    (NN:[1312..1315] 2G1))
+              (NN:[1316..1319] IgG))))))
+    (.:[1319..1320] .)))
+
+;sentence 9 Span:1321..1478
+;In a reconstituted system,  2G1 has an apparent Km of 2.0 microM and a Vmax
+;of 1.8 nmol/min/nmol P450 for  the formation of the 16
+;alpha-hydroxyprogesterone.
+;[1349..1352]:cyp450:"2G1"
+;[1369..1371]:quantitative-name:"Km"
+;[1375..1378]:quantitative-value:"2.0"
+;[1379..1385]:quantitative-units:"microM"
+;[1392..1396]:quantitative-name:"Vmax"
+;[1400..1403]:quantitative-value:"1.8"
+;[1404..1422]:quantitative-units:"nmol/min/nmol P450"
+;[1449..1477]:substance:"16 alpha-hydroxyprogesterone"
+(SENT
+  (S
+    (PP (IN:[1321..1323] In)
+      (NP (DT:[1324..1325] a) (JJ:[1326..1339] reconstituted)
+          (NN:[1340..1346] system)))
+    (,:[1346..1347] ,)
+    (NP-SBJ (NN:[1349..1352] 2G1))
+    (VP (VBZ:[1353..1356] has)
+      (NP
+        (NP
+          (NP (DT:[1357..1359] an) (JJ:[1360..1368] apparent)
+              (NN:[1369..1371] Km))
+          (PP (IN:[1372..1374] of)
+            (NP (CD:[1375..1378] 2.0) (NN:[1379..1385] microM))))
+        (CC:[1386..1389] and)
+        (NP
+          (NP (DT:[1390..1391] a) (NN:[1392..1396] Vmax))
+          (PP (IN:[1397..1399] of)
+            (NP
+              (NP (CD:[1400..1403] 1.8) (NN:[1404..1408] nmol))
+              (PP (SYM:[1408..1409] /)
+                (NP (NN:[1409..1412] min)))
+              (PP (SYM:[1412..1413] /)
+                (NP (NN:[1413..1417] nmol) (NN:[1418..1422] P450)))))
+          (PP (IN:[1423..1426] for)
+            (NP
+              (NP (DT:[1428..1431] the) (NN:[1432..1441] formation))
+              (PP (IN:[1442..1444] of)
+                (NP (DT:[1445..1448] the)
+                   (CD:[1449..1451] 16)
+                   (NN:[1452..1477] alpha-hydroxyprogesterone))))))))
+    (.:[1477..1478] .)))
+
+;sentence 10 Span:1479..1802
+;Of particular interest,  2G1-catalyzed progesterone metabolism is effectively
+;inhibited by the boar  pheromones, 5 alpha-androst-16-en-3-one and 5
+;alpha-androst-16-en-3 alpha-ol,  and to a lesser extent by a variety of
+;odorant compounds as well as by known  P450 inhibitors, including
+;ketoconazole and alpha-naphthoflavone.
+;[1504..1507]:cyp450:"2G1"
+;[1518..1530]:substance:"progesterone"
+;[1580..1590]:substance:"pheromones"
+;[1592..1619]:substance:"5 alpha-androst-16-en-3-one"
+;[1624..1656]:substance:"5 alpha-androst-16-en-3 alpha-ol"
+;[1698..1715]:substance:"odorant compounds"
+;[1737..1741]:cyp450:"P450"
+;[1742..1752]:substance:"inhibitors"
+;[1764..1776]:substance:"ketoconazole"
+;[1781..1801]:substance:"alpha-naphthoflavone"
+(SENT
+  (S
+    (PP (IN:[1479..1481] Of)
+      (NP (JJ:[1482..1492] particular) (NN:[1493..1501] interest)))
+    (,:[1501..1502] ,)
+    (NP-SBJ-1
+      (ADJP (NN:[1504..1507] 2G1) (HYPH:[1507..1508] -)
+            (VBN:[1508..1517] catalyzed))
+      (NN:[1518..1530] progesterone) (NN:[1531..1541] metabolism))
+    (VP (VBZ:[1542..1544] is)
+      (ADVP (RB:[1545..1556] effectively))
+      (VP (VBN:[1557..1566] inhibited)
+        (NP-1 (-NONE-:[1566..1566] *))
+        (PP
+          (PP (IN:[1567..1569] by)
+            (NP-LGS
+              (NP (DT:[1570..1573] the) (NN:[1574..1578] boar)
+                  (NNS:[1580..1590] pheromones))
+              (,:[1590..1591] ,)
+              (NP
+                (NP (CD:[1592..1593] 5)
+                    (NN:[1594..1619] alpha-androst-16-en-3-one))
+                (CC:[1620..1623] and)
+                (NP (CD:[1624..1625] 5)
+                    (NN:[1626..1656] alpha-androst-16-en-3-SP-alpha-ol)))))
+          (,:[1656..1657] ,) (CC:[1659..1662] and)
+          (PP
+            (PP
+              (PP (TO:[1663..1665] to)
+                (NP (DT:[1666..1667] a) (JJR:[1668..1674] lesser)
+                    (NN:[1675..1681] extent)))
+              (IN:[1682..1684] by)
+              (NP-LGS
+                (NP (DT:[1685..1686] a) (NN:[1687..1694] variety))
+                (PP (IN:[1695..1697] of)
+                  (NP (JJ:[1698..1705] odorant) (NNS:[1706..1715] compounds)))))
+            (CONJP (RB:[1716..1718] as) (RB:[1719..1723] well)
+                   (IN:[1724..1726] as))
+            (PP (IN:[1727..1729] by)
+              (NP-LGS
+                (NP (JJ:[1730..1735] known) (NN:[1737..1741] P450)
+                    (NNS:[1742..1752] inhibitors))
+                (,:[1752..1753] ,)
+                (PP (VBG:[1754..1763] including)
+                  (NP (NN:[1764..1776] ketoconazole) (CC:[1777..1780] and)
+                      (NN:[1781..1801] alpha-naphthoflavone)))))))))
+    (.:[1801..1802] .)))
+
+;sentence 11 Span:1803..2030
+;The broad  substrate specificity and relatively high catalytic efficiency of
+;2G1 in sex  steroid metabolism suggest a role for this unique P450 isozyme in
+;the  maintenance of steroid hormone homeostasis in the olfactory mucosa.
+;[1814..1823]:substance:"substrate"
+;[1880..1883]:cyp450:"2G1"
+;[1892..1899]:substance:"steroid"
+;[1942..1954]:cyp450:"P450 isozyme"
+;[1978..1993]:substance:"steroid hormone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1803..1806] The) (JJ:[1807..1812] broad)
+            (NN:[1814..1823] substrate) (NN:[1824..1835] specificity))
+        (CC:[1836..1839] and)
+        (NP
+          (ADJP (RB:[1840..1850] relatively) (JJ:[1851..1855] high))
+          (JJ:[1856..1865] catalytic) (NN:[1866..1876] efficiency)))
+      (PP (IN:[1877..1879] of)
+        (NP (NN:[1880..1883] 2G1)))
+      (PP (IN:[1884..1886] in)
+        (NP (NN:[1887..1890] sex) (JJ:[1892..1899] steroid)
+            (NN:[1900..1910] metabolism))))
+    (VP (VBP:[1911..1918] suggest)
+      (NP
+        (NP (DT:[1919..1920] a) (NN:[1921..1925] role))
+        (PP (IN:[1926..1929] for)
+          (NP (DT:[1930..1934] this) (JJ:[1935..1941] unique)
+             (NN:[1942..1946] P450) (NN:[1947..1954] isozyme)))
+        (PP-LOC (IN:[1955..1957] in)
+          (NP
+            (NP (DT:[1958..1961] the) (NN:[1963..1974] maintenance))
+            (PP (IN:[1975..1977] of)
+              (NP
+                (NP
+                  (NML (JJ:[1978..1985] steroid) (NN:[1986..1993] hormone))
+                  (NN:[1994..2005] homeostasis))
+                (PP-LOC (IN:[2006..2008] in)
+                  (NP (DT:[2009..2012] the) (JJ:[2013..2022] olfactory)
+                      (NN:[2023..2029] mucosa)))))))))
+    (.:[2029..2030] .)))
+
+;section 12 Span:2034..2078
+;PMID: 7986091 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2034..2038] PMID) (::[2038..2039] :) (CD:[2040..2047] 7986091)
+        (NN:[2048..2049] -LSB-) (NNP:[2049..2055] PubMed) (::[2056..2057] -)
+        (NN:[2058..2065] indexed) (IN:[2066..2069] for)
+        (NNP:[2070..2078] MEDLINE-RSB-)))

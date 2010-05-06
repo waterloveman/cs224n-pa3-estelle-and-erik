@@ -1,0 +1,387 @@
+;PMID: 11211612
+;source_file_579.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:45..101] = [t:45..101]
+;2)sentence:[e:102..179] = [t:102..179]
+;3)section:[e:183..268] = [t:183..268]
+;4)section:[e:272..402] = [t:272..402]
+;5)sentence:[e:406..547] = [t:406..547]
+;6)sentence:[e:548..685] = [t:548..685]
+;7)sentence:[e:686..1057] = [t:686..1057]
+;8)sentence:[e:1058..1136] = [t:1058..1136]
+;9)sentence:[e:1137..1258] = [t:1137..1258]
+;10)sentence:[e:1259..1394] = [t:1259..1394]
+;11)section:[e:1395..1606] = [t:1395..1606]
+;12)section:[e:1610..1655] = [t:1610..1655]
+
+;section 0 Span:0..40
+;Am J Clin Pathol  2001 Feb;115(2):235-42
+(SEC
+  (FRAG (NNP:[0..2] Am) (NNP:[3..4] J) (NNP:[5..9] Clin) (NNP:[10..16] Pathol)
+        (CD:[18..22] 2001) (IN:[23..29] Feb;11) (CD:[29..30] 5)
+        (NN:[30..31] -LRB-) (CD:[31..32] 2) (NN:[32..33] -RRB-) (::[33..34] :)
+        (CD:[34..36] 23) (CD:[36..40] 5-42)))
+
+;sentence 1 Span:45..101
+;H-ras oncogene mutation in dedifferentiated liposarcoma.
+;[45..50]:gene-rna:"H-ras"
+;[72..100]:malignancy:"dedifferentiated liposarcoma"
+(SENT
+  (NP-HLN
+    (NP (NN:[45..50] H-ras) (NN:[51..59] oncogene) (NN:[60..68] mutation))
+    (PP (IN:[69..71] in)
+      (NP (VBN:[72..88] dedifferentiated) (NN:[89..100] liposarcoma)))
+    (.:[100..101] .)))
+
+;sentence 2 Span:102..179
+;Polymerase chain  reaction-restriction fragment length polymorphism
+;analysis.
+;[102..112]:gene-protein:"Polymerase"
+(SENT
+  (NP
+    (NML (NN:[102..112] Polymerase) (NN:[113..118] chain)
+         (NN:[120..128] reaction))
+    (HYPH:[128..129] -)
+    (NML (NN:[129..140] restriction) (NN:[141..149] fragment)
+         (NN:[150..156] length) (NN:[157..169] polymorphism))
+    (NN:[170..178] analysis) (.:[178..179] .)))
+
+;section 3 Span:183..268
+;Sakamoto A, Oda Y, Adachi T, Tamiya S, Matsuda S, Tanaka K, Iwamoto Y, 
+;Tsuneyoshi M.
+(SEC
+  (FRAG (NNP:[183..191] Sakamoto) (NNP:[192..193] A) (,:[193..194] ,)
+        (NNP:[195..198] Oda) (NNP:[199..200] Y) (,:[200..201] ,)
+        (NNP:[202..208] Adachi) (NNP:[209..210] T) (,:[210..211] ,)
+        (NNP:[212..218] Tamiya) (NNP:[219..220] S) (,:[220..221] ,)
+        (NNP:[222..229] Matsuda) (NNP:[230..231] S) (,:[231..232] ,)
+        (NNP:[233..239] Tanaka) (NNP:[240..242] K,) (NNP:[243..250] Iwamoto)
+        (NNP:[251..252] Y) (,:[252..253] ,) (NNP:[255..265] Tsuneyoshi)
+        (NNP:[266..268] M.)))
+
+;section 4 Span:272..402
+;Departments of Anatomic Pathology, Pathological Sciences, Graduate School of 
+;Medical Sciences, Kyushu University, Fukuoka, Japan.
+(SEC
+  (FRAG (NNP:[272..283] Departments) (IN:[284..286] of)
+        (NNP:[287..295] Anatomic) (NNP:[296..305] Pathology) (,:[305..306] ,)
+        (NNP:[307..319] Pathological) (NNP:[320..328] Sciences) (,:[328..329] ,)
+        (NNP:[330..338] Graduate) (NNP:[339..345] School) (IN:[346..348] of)
+        (NNP:[350..357] Medical) (NNPS:[358..366] Sciences) (,:[366..367] ,)
+        (NNP:[368..374] Kyushu) (NNP:[375..385] University) (,:[385..386] ,)
+        (NNP:[387..394] Fukuoka) (,:[394..395] ,) (NNP:[396..401] Japan)
+        (.:[401..402] .)))
+
+;sentence 5 Span:406..547
+;Point mutations of the ras gene family (K-ras, H-ras, and N-ras) are thought
+;to  be involved in the development of a variety of human tumors.
+;[406..421]:variation-type:"Point mutations"
+;[429..432]:gene-rna:"ras"
+;[446..451]:gene-rna:"K-ras"
+;[453..458]:gene-rna:"H-ras"
+;[464..469]:gene-rna:"N-ras"
+;[540..546]:malignancy:"tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[406..411] Point) (NNS:[412..421] mutations))
+      (PP (IN:[422..424] of)
+        (NP (DT:[425..428] the)
+          (NML (NN:[429..432] ras) (NN:[433..437] gene))
+          (NN:[438..444] family)
+          (PRN (-LRB-:[445..446] -LRB-)
+            (NP (NN:[446..451] K-ras) (,:[451..452] ,) (NN:[453..458] H-ras)
+                (,:[458..459] ,) (CC:[460..463] and) (NN:[464..469] N-ras))
+            (-RRB-:[469..470] -RRB-)))))
+    (VP (VBP:[471..474] are)
+      (VP (VBN:[475..482] thought)
+        (S
+          (NP-SBJ-1 (-NONE-:[482..482] *))
+          (VP (TO:[483..485] to)
+            (VP (VB:[487..489] be)
+              (VP (JJ:[490..498] involved)
+                (NP-1 (-NONE-:[498..498] *))
+                (PP-CLR (IN:[499..501] in)
+                  (NP
+                    (NP (DT:[502..505] the) (NN:[506..517] development))
+                    (PP (IN:[518..520] of)
+                      (NP
+                        (NP (DT:[521..522] a) (NN:[523..530] variety))
+                        (PP (IN:[531..533] of)
+                          (NP (JJ:[534..539] human) (NNS:[540..546] tumors)))))))))))))
+    (.:[546..547] .)))
+
+;sentence 6 Span:548..685
+;Dedifferentiated  liposarcoma is characterized by the coexistence of
+;well-differentiated (WD) and  high-grade anaplastic (HG) components.
+;[548..577]:malignancy:"Dedifferentiated  liposarcoma"
+;[617..636]:malignancy:"well-differentiated"
+;[638..640]:malignancy:"WD"
+;[647..668]:malignancy:"high-grade anaplastic"
+;[670..672]:malignancy:"HG"
+(SENT
+  (S
+    (NP-SBJ-2 (VBN:[548..564] Dedifferentiated) (NN:[566..577] liposarcoma))
+    (VP (VBZ:[578..580] is)
+      (VP (VBN:[581..594] characterized)
+        (NP-2 (-NONE-:[594..594] *))
+        (PP (IN:[595..597] by)
+          (NP
+            (NP (DT:[598..601] the) (NN:[602..613] coexistence))
+            (PP (IN:[614..616] of)
+              (NP
+                (NP
+                  (ADJP (RB:[617..621] well) (HYPH:[621..622] -)
+                        (VBN:[622..636] differentiated))
+                  (PRN (-LRB-:[637..638] -LRB-) (JJ:[638..640] WD)
+                       (-RRB-:[640..641] -RRB-))
+                  (NML-1 (-NONE-:[641..641] *P*)))
+                (CC:[642..645] and)
+                (NP
+                  (NML
+                    (NML (JJ:[647..657] high-grade) (JJ:[658..668] anaplastic))
+                    (NML (-LRB-:[669..670] -LRB-) (JJ:[670..672] HG)
+                         (-RRB-:[672..673] -RRB-)))
+                  (NML-1 (NNS:[674..684] components)))))))))
+    (.:[684..685] .)))
+
+;sentence 7 Span:686..1057
+;The presence of point mutations at codons  12 and 13 of the H-ras gene was
+;studied in 34 liposarcomas, comprising 15  well-differentiated liposarcomas
+;and 19 dedifferentiated liposarcomas, and in 8  storiform-pleomorphic type
+;malignant fibrous histiocytomas (MFHs) using  polymerase chain
+;reaction-restriction fragment length polymorphism and direct  sequencing
+;analysis.
+;[702..717]:variation-type:"point mutations"
+;[721..731]:variation-location:"codons  12"
+;[721..727]...[736..738]:variation-location:"codons"..."13"
+;[746..751]:gene-rna:"H-ras"
+;[775..787]:malignancy:"liposarcomas"
+;[804..836]:malignancy:"well-differentiated liposarcomas"
+;[844..873]:malignancy:"dedifferentiated liposarcomas"
+;[885..943]:malignancy:"storiform-pleomorphic type malignant fibrous
+;histiocytomas"
+;[945..949]:malignancy:"MFHs"
+;[958..968]:gene-protein:"polymerase"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[686..689] The) (NN:[690..698] presence))
+      (PP (IN:[699..701] of)
+        (NP (NN:[702..707] point) (NNS:[708..717] mutations)))
+      (PP (IN:[718..720] at)
+        (NP
+          (NP
+            (NP
+              (NML-1 (NNS:[721..727] codons))
+              (CD:[729..731] 12))
+            (CC:[732..735] and)
+            (NP
+              (NML-1 (-NONE-:[735..735] *P*))
+              (CD:[736..738] 13)))
+          (PP (IN:[739..741] of)
+            (NP (DT:[742..745] the) (NN:[746..751] H-ras) (NN:[752..756] gene))))))
+    (VP (VBD:[757..760] was)
+      (VP (VBN:[761..768] studied)
+        (NP-2 (-NONE-:[768..768] *))
+        (PP-LOC
+          (PP (IN:[769..771] in)
+            (NP
+              (NP (CD:[772..774] 34) (NNS:[775..787] liposarcomas))
+              (,:[787..788] ,)
+              (VP (VBG:[789..799] comprising)
+                (NP
+                  (NP (CD:[800..802] 15)
+                    
+                    (ADJP (RB:[804..808] well) (HYPH:[808..809] -)
+                          (VBN:[809..823] differentiated))
+                    (NNS:[824..836] liposarcomas))
+                  (CC:[837..840] and)
+                  (NP (CD:[841..843] 19)
+                     (VBN:[844..860] dedifferentiated)
+                     (NNS:[861..873] liposarcomas))))))
+          (,:[873..874] ,) (CC:[875..878] and)
+          (PP (IN:[879..881] in)
+            (NP (CD:[882..883] 8)
+              (NML
+                (ADJP (JJ:[885..894] storiform) (HYPH:[894..895] -)
+                      (JJ:[895..906] pleomorphic))
+                (NN:[907..911] type))
+              (NML
+                (NML (JJ:[912..921] malignant) (JJ:[922..929] fibrous)
+                     (NNS:[930..943] histiocytomas))
+                (NML (-LRB-:[944..945] -LRB-) (NNS:[945..949] MFHs)
+                     (-RRB-:[949..950] -RRB-))))))
+        (S-MNR
+          (NP-SBJ (-NONE-:[950..950] *))
+          (VP (VBG:[951..956] using)
+            (NP
+              (NP
+                (NML (NN:[958..968] polymerase) (NN:[969..974] chain)
+                     (NN:[975..983] reaction))
+                (HYPH:[983..984] -)
+                (NML (NN:[984..995] restriction) (NN:[996..1004] fragment)
+                     (NN:[1005..1011] length) (NN:[1012..1024] polymorphism)))
+              (CC:[1025..1028] and)
+              (NP (JJ:[1029..1035] direct) (NN:[1037..1047] sequencing)
+                  (NN:[1048..1056] analysis)))))))
+    (.:[1056..1057] .)))
+
+;sentence 8 Span:1058..1136
+;The 2 components of dedifferentiated liposarcoma were  analyzed
+;independently.
+;[1078..1106]:malignancy:"dedifferentiated liposarcoma"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1058..1061] The) (CD:[1062..1063] 2)
+          (NNS:[1064..1074] components))
+      (PP (IN:[1075..1077] of)
+        (NP (VBN:[1078..1094] dedifferentiated) (NN:[1095..1106] liposarcoma))))
+    (VP (VBD:[1107..1111] were)
+      (VP (VBN:[1113..1121] analyzed)
+        (NP-1 (-NONE-:[1121..1121] *))
+        (ADVP (RB:[1122..1135] independently))))
+    (.:[1135..1136] .)))
+
+;sentence 9 Span:1137..1258
+;H-ras mutations were seen only in dedifferentiated  liposarcomas (4/19
+;[21%]), 1 in WD components and 3 in HG components.
+;[1137..1142]:gene-rna:"H-ras"
+;[1171..1201]:malignancy:"dedifferentiated  liposarcomas"
+;[1221..1234]:malignancy:"WD components"
+;[1244..1257]:malignancy:"HG components"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1137..1142] H-ras) (NNS:[1143..1152] mutations))
+    (VP (VBD:[1153..1157] were)
+      (VP (VBN:[1158..1162] seen)
+        (NP-1 (-NONE-:[1162..1162] *))
+        (ADVP (RB:[1163..1167] only))
+        (PP (IN:[1168..1170] in)
+          (NP
+            (NP
+               (VBN:[1171..1187] dedifferentiated)
+               (NNS:[1189..1201] liposarcomas)
+              (PRN (-LRB-:[1202..1203] -LRB-)
+                (NP
+                  (NP (CD:[1203..1204] 4))
+                  (PP (SYM:[1204..1205] /)
+                    (NP (CD:[1205..1207] 19)
+                      (PRN (-LRB-:[1208..1209] -LSB-)
+                        (NP (CD:[1209..1211] 21) (NN:[1211..1212] %))
+                        (-RRB-:[1212..1213] -RSB-)))))
+                (-RRB-:[1213..1214] -RRB-)))
+            (,:[1214..1215] ,)
+            (NP
+              (NP
+                (NP (CD:[1216..1217] 1))
+                (PP (IN:[1218..1220] in)
+                  (NP (JJ:[1221..1223] WD) (NNS:[1224..1234] components))))
+              (CC:[1235..1238] and)
+              (NP
+                (NP (CD:[1239..1240] 3))
+                (PP (IN:[1241..1243] in)
+                  (NP (JJ:[1244..1246] HG) (NNS:[1247..1257] components)))))))))
+    (.:[1257..1258] .)))
+
+;sentence 10 Span:1259..1394
+;The  mutation was not seen in any of 15 cases of well-differentiated
+;liposarcoma.  MFHs showed an H-ras mutation in 1 (12%) of 8 cases.
+;[1259..1272]:variation-event:"The  mutation"
+;[1308..1339]:malignancy:"well-differentiated liposarcoma"
+;[1342..1346]:malignancy:"MFHs"
+;[1357..1362]:gene-rna:"H-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1259..1262] The) (NN:[1264..1272] mutation))
+    (VP (VBD:[1273..1276] was) (RB:[1277..1280] not)
+      (VP (VBN:[1281..1285] seen)
+        (NP-1 (-NONE-:[1285..1285] *))
+        (PP (IN:[1286..1288] in)
+          (NP
+            (NP (DT:[1289..1292] any))
+            (PP (IN:[1293..1295] of)
+              (NP
+                (NP (CD:[1296..1298] 15) (NNS:[1299..1304] cases))
+                (PP (IN:[1305..1307] of)
+                  (NP
+                    (ADJP (RB:[1308..1312] well) (HYPH:[1312..1313] -)
+                          (VBN:[1313..1327] differentiated))
+                    (NN:[1328..1339] liposarcoma)))))))))
+    (.:[1339..1340] .))
+  (S
+    (NP-SBJ (NNS:[1342..1346] MFHs))
+    (VP (VBD:[1347..1353] showed)
+      (NP (DT:[1354..1356] an) (NN:[1357..1362] H-ras)
+          (NN:[1363..1371] mutation))
+      (PP (IN:[1372..1374] in)
+        (NP
+          (NP (CD:[1375..1376] 1)
+            (PRN (-LRB-:[1377..1378] -LRB-)
+              (NP (CD:[1378..1380] 12) (NN:[1380..1381] %))
+              (-RRB-:[1381..1382] -RRB-)))
+          (PP (IN:[1383..1385] of)
+            (NP (CD:[1386..1387] 8) (NNS:[1388..1393] cases))))))
+    (.:[1393..1394] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1259..1394]::S:S:
+
+;section 11 Span:1395..1606
+;Our results seem to suggest  that the H-ras mutation is a relatively uncommon
+;event in dedifferentiated  liposarcoma, which may demonstrate an
+;epiphenomenon of dedifferentiation in  dedifferentiated liposarcoma.
+;[1433..1438]:gene-rna:"H-ras"
+;[1482..1511]:malignancy:"dedifferentiated  liposarcoma"
+;[1577..1605]:malignancy:"dedifferentiated liposarcoma"
+(SEC
+  (S
+    (NP-SBJ-2 (PRP$:[1395..1398] Our) (NNS:[1399..1406] results))
+    (VP (VBP:[1407..1411] seem)
+      (S
+        (NP-SBJ-2 (-NONE-:[1411..1411] *))
+        (VP (TO:[1412..1414] to)
+          (VP (VB:[1415..1422] suggest)
+            (SBAR (IN:[1424..1428] that)
+              (S
+                (NP-SBJ (DT:[1429..1432] the) (NN:[1433..1438] H-ras)
+                        (NN:[1439..1447] mutation))
+                (VP (VBZ:[1448..1450] is)
+                  (NP-PRD (DT:[1451..1452] a)
+                    (ADJP (RB:[1453..1463] relatively)
+                          (JJ:[1464..1472] uncommon))
+                    (NN:[1473..1478] event))
+                  (PP (IN:[1479..1481] in)
+                    (NP (VBN:[1482..1498] dedifferentiated)
+                        (NN:[1500..1511] liposarcoma)))
+                  (,:[1511..1512] ,)
+                  (SBAR-ADV
+                    (WHNP-1 (WDT:[1513..1518] which))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1518..1518] *T*))
+                      (VP (MD:[1519..1522] may)
+                        (VP (VB:[1523..1534] demonstrate)
+                          (NP
+                            (NP (DT:[1535..1537] an)
+                                (NN:[1538..1551] epiphenomenon))
+                            (PP (IN:[1552..1554] of)
+                              (NP (NN:[1555..1572] dedifferentiation))))
+                          (PP (IN:[1573..1575] in)
+                            (NP (VBN:[1577..1593] dedifferentiated)
+                                (NN:[1594..1605] liposarcoma))))))))))))))
+    (.:[1605..1606] .)))
+;ERROR_Entity in section[1433..1438]:gene-rna "H-ras"
+;ERROR_Entity in section[1482..1511]:malignancy "dedifferentiated 
+;liposarcoma"
+;ERROR_Entity in section[1577..1605]:malignancy "dedifferentiated
+;liposarcoma"
+
+;section 12 Span:1610..1655
+;PMID: 11211612 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1610..1614] PMID) (::[1614..1615] :) (CD:[1616..1624] 11211612)
+        (NN:[1625..1626] -LSB-) (NNP:[1626..1632] PubMed) (::[1633..1634] -)
+        (NN:[1635..1642] indexed) (IN:[1643..1646] for)
+        (NNP:[1647..1655] MEDLINE-RSB-)))

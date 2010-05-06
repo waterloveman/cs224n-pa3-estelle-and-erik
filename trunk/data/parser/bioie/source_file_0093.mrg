@@ -1,0 +1,362 @@
+;PMID: 12049480
+;source_file_618.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..49] = [t:0..49]
+;1)section:[e:55..197] = [t:55..197]
+;2)section:[e:201..250] = [t:201..249]
+;3)section:[e:254..324] = [t:254..323]
+;4)sentence:[e:328..700] = [t:328..700]
+;5)sentence:[e:701..979] = [t:701..979]
+;6)sentence:[e:980..1207] = [t:980..1207]
+;7)sentence:[e:1208..1319] = [t:1208..1319]
+;8)section:[e:1320..1474] = [t:1320..1474]
+;9)section:[e:1478..1523] = [t:1478..1522]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:201..250][t:201..249]
+;ERROR_Section end mismatch[e:254..324][t:254..323]
+;ERROR_Section end mismatch[e:1478..1523][t:1478..1522]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[40..41] )
+;ERROR_Token in entity file but not tree[41..42] :
+;ERROR_Token in entity file but not tree[249..250] .
+;ERROR_Token in entity file but not tree[323..324] .
+;ERROR_Token in entity file but not tree[1522..1523] ]
+;ERROR_Token in tree file but not entity[40..42] ):
+
+;section 0 Span:0..49
+;Anticancer Drug Des. 2001 Aug-Oct;16(4-5):217-25.
+(SEC
+  (FRAG (NNP:[0..10] Anticancer) (NNP:[11..15] Drug) (NNP:[16..19] Des)
+        (.:[19..20] .) (CD:[21..25] 2001) (NNP:[26..30] Aug-) (CD:[30..33] Oct)
+        (::[33..34] ;) (CD:[34..36] 16) (-LRB-:[36..37] -LRB-) (CD:[37..38] 4)
+        (HYPH:[38..39] -) (CD:[39..40] 5) (-RRB-:[40..42] -RRB-:)
+        (CD:[42..45] 217) (HYPH:[45..46] -) (CD:[46..48] 25) (.:[48..49] .)))
+
+;section 1 Span:55..197
+;1-[(Benzofuran-2-yl)phenylmethyl]triazoles as steroidogenic inhibitors: 
+;synthesis and in vitro inhibition of human placental CYP19 aromatase.
+;[55..97]:substance:"1-[(Benzofuran-2-yl)phenylmethyl]triazoles"
+;[101..125]:substance:"steroidogenic inhibitors"
+;[181..196]:cyp450:"CYP19 aromatase"
+(SEC
+  (NP-HLN
+    (NP
+      (NP
+          (NNS:[55..97] 1--LSB--LRB-Benzofuran-2-yl-RRB-phenylmethyl-RSB-triazoles))
+      (PP (IN:[98..100] as)
+        (NP (JJ:[101..114] steroidogenic) (NNS:[115..125] inhibitors))))
+    (::[125..126] :)
+    (NP
+      (NP
+        (NP (NN:[128..137] synthesis))
+        (CC:[138..141] and)
+        (NP
+          (ADJP (FW:[142..144] in) (FW:[145..150] vitro))
+          (NN:[151..161] inhibition)))
+      (PP (IN:[162..164] of)
+        (NP (JJ:[165..170] human) (JJ:[171..180] placental)
+           (NN:[181..186] CYP19) (NN:[187..196] aromatase))))
+    (.:[196..197] .)))
+;ERROR_Entity in section[55..97]:substance
+;"1-[(Benzofuran-2-yl)phenylmethyl]triazoles"
+;ERROR_Entity in section[101..125]:substance "steroidogenic inhibitors"
+;ERROR_Entity in section[181..196]:cyp450 "CYP19 aromatase"
+
+;section 2 Span:201..249
+;Vinh TK, Yee SW, Kirby AJ, Nicholls PJ, Simons C
+(SEC
+  (FRAG (NNP:[201..205] Vinh) (NNP:[206..208] TK) (,:[208..209] ,)
+        (NNP:[210..213] Yee) (NNP:[214..216] SW) (,:[216..217] ,)
+        (NNP:[218..223] Kirby) (NNP:[224..226] AJ) (,:[226..227] ,)
+        (NNP:[228..236] Nicholls) (NNP:[237..239] PJ) (,:[239..240] ,)
+        (NNP:[241..247] Simons) (NNP:[248..249] C)))
+
+(ORPH .)
+
+;section 3 Span:254..323
+;Medicinal Chemistry, Welsh School of Pharmacy, Cardiff University, UK
+(SEC
+  (FRAG (NNP:[254..263] Medicinal) (NNP:[264..273] Chemistry) (,:[273..274] ,)
+        (NNP:[275..280] Welsh) (NNP:[281..287] School) (IN:[288..290] of)
+        (NNP:[291..299] Pharmacy) (,:[299..300] ,) (NNP:[301..308] Cardiff)
+        (NNP:[309..319] University) (,:[319..320] ,) (NNP:[321..323] UK)))
+;ERROR_Orphan Text from Tree File[249..254] .
+
+(ORPH .)
+
+;sentence 4 Span:328..700
+;Hormone-dependent breast cancer is stimulated by the female hormones oestrone
+; and oestradiol, therefore compounds which inhibit the specific enzymes
+;involved  in the formation of the nitogenic hormones, namely CYP19 aromatase
+;(P450arom)  and 17beta-hydroxysteroid dehydrogenase (17beta-HSD) type 1, are
+;targets of  therapeutic interest for the treatment of breast cancer.
+;[328..335]:substance:"Hormone"
+;[388..396]:substance:"hormones"
+;[397..405]:substance:"oestrone"
+;[411..421]:substance:"oestradiol"
+;[433..442]:substance:"compounds"
+;[470..477]:cyp450:"enzymes"
+;[512..530]:substance:"nitogenic hormones"
+;[539..554]:cyp450:"CYP19 aromatase"
+;[556..564]:cyp450:"P450arom"
+;[571..626]:substance:"17beta-hydroxysteroid dehydrogenase (17beta-HSD) type
+;1"
+;[632..639]:substance:"targets"
+(SENT
+  (S
+    (S
+      (NP-SBJ-2
+        (ADJP (NN:[328..335] Hormone) (HYPH:[335..336] -)
+              (JJ:[336..345] dependent))
+        (NN:[346..352] breast) (NN:[353..359] cancer))
+      (VP (VBZ:[360..362] is)
+        (VP (VBN:[363..373] stimulated)
+          (NP-2 (-NONE-:[373..373] *))
+          (PP (IN:[374..376] by)
+            (NP-LGS
+              (NP (DT:[377..380] the) (JJ:[381..387] female)
+                  (NNS:[388..396] hormones))
+              (NP (NN:[397..405] oestrone) (CC:[407..410] and)
+                  (NN:[411..421] oestradiol)))))))
+    (,:[421..422] ,)
+    (S
+      (ADVP (RB:[423..432] therefore))
+      (NP-SBJ
+        (NP (NNS:[433..442] compounds))
+        (SBAR
+          (WHNP-1 (WDT:[443..448] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[448..448] *T*))
+            (VP (VBP:[449..456] inhibit)
+              (NP
+                (NP (DT:[457..460] the) (JJ:[461..469] specific)
+                    (NNS:[470..477] enzymes))
+                (VP (VBN:[478..486] involved)
+                  (NP (-NONE-:[486..486] *))
+                  (PP-CLR (IN:[488..490] in)
+                    (NP
+                      (NP (DT:[491..494] the) (NN:[495..504] formation))
+                      (PP (IN:[505..507] of)
+                        (NP
+                          (NP (DT:[508..511] the)
+                             (JJ:[512..521] nitogenic) (NNS:[522..530] hormones))
+                          (,:[530..531] ,)
+                          (NP
+                            (ADVP (RB:[532..538] namely))
+                            (NP
+                              (NP (NN:[539..544] CYP19)
+                                  (NN:[545..554] aromatase))
+                              (NP (-LRB-:[555..556] -LRB-)
+                                  (NN:[556..564] P450arom)
+                                  (-RRB-:[564..565] -RRB-)))
+                            (CC:[567..570] and)
+                            (NP
+                              (NML
+                                (NML (NN:[571..592] 17beta-hydroxysteroid)
+                                     (NN:[593..606] dehydrogenase))
+                                (NML (-LRB-:[607..608] -LRB-)
+                                     (NN:[608..618] 17beta-HSD)
+                                     (-RRB-:[618..619] -RRB-)))
+                              (NN:[620..624] type) (CD:[625..626] 1)))))))))))))
+      (,:[626..627] ,)
+      (VP (VBP:[628..631] are)
+        (NP-PRD
+          (NP (NNS:[632..639] targets))
+          (PP (IN:[640..642] of)
+            (NP (JJ:[644..655] therapeutic) (NN:[656..664] interest)))
+          (PP (IN:[665..668] for)
+            (NP
+              (NP (DT:[669..672] the) (NN:[673..682] treatment))
+              (PP (IN:[683..685] of)
+                (NP (NN:[686..692] breast) (NN:[693..699] cancer))))))))
+    (.:[699..700] .)))
+;ERROR_Orphan Text from Tree File[323..328] .
+
+;sentence 5 Span:701..979
+;A series of novel  1-[(benzofuran-2-yl)phenylmethyl]1,2,4-triazoles were
+;prepared using a  three-step synthesis and evaluated for their inhibitory
+;activity against human  placental aromatase in vitro, using
+;[1,2,6,7-3H]androstenedione as the substrate  for the aromatase enzyme.
+;[720..768]:substance:"1-[(benzofuran-2-yl)phenylmethyl]1,2,4-triazoles"
+;[882..891]:cyp450:"aromatase"
+;[908..935]:substance:"[1,2,6,7-3H]androstenedione"
+;[943..952]:substance:"substrate"
+;[962..978]:cyp450:"aromatase enzyme"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[701..702] A) (NN:[703..709] series))
+      (PP (IN:[710..712] of)
+        (NP (JJ:[713..718] novel)
+            (NNS:[720..768] 1--LSB--LRB-benzofuran-2-yl-RRB-phenylmethyl-RSB-1,2,4-triazoles))))
+    (VP
+      (VP (VBD:[769..773] were)
+        (VP (VBN:[774..782] prepared)
+          (NP-1 (-NONE-:[782..782] *))
+          (S-MNR
+            (NP-SBJ (-NONE-:[782..782] *))
+            (VP (VBG:[783..788] using)
+              (NP (DT:[789..790] a)
+                (NML (CD:[792..797] three) (HYPH:[797..798] -)
+                     (NN:[798..802] step))
+                (NN:[803..812] synthesis))))))
+      (CC:[813..816] and)
+      (VP (VBN:[817..826] evaluated)
+        (NP-1 (-NONE-:[826..826] *))
+        (PP (IN:[827..830] for)
+          (NP
+            (NP (PRP:[831..836] their) (JJ:[837..847] inhibitory)
+                (NN:[848..856] activity))
+            (PP (IN:[857..864] against)
+              (NP (JJ:[865..870] human) (JJ:[872..881] placental)
+                  (NN:[882..891] aromatase)))))
+        (ADVP (FW:[892..894] in) (FW:[895..900] vitro))
+        (,:[900..901] ,)
+        (S-MNR
+          (NP-SBJ (-NONE-:[901..901] *))
+          (VP (VBG:[902..907] using)
+            (NP (NN:[908..935] -LSB-1,2,6,7-3H-RSB-androstenedione))
+            (PP (IN:[936..938] as)
+              (NP
+                (NP (DT:[939..942] the) (NN:[943..952] substrate))
+                (PP (IN:[954..957] for)
+                  (NP (DT:[958..961] the)
+                     (NN:[962..971] aromatase) (NN:[972..978] enzyme)))))))))
+    (.:[978..979] .)))
+
+;sentence 6 Span:980..1207
+;Inhibitory activity was dependent on both substituent  and position of
+;substitution, with introduction of small electron-withdrawing  groups in the
+;phenyl ring showing optimum activity (IC50 ranging from 0.065 to  2.02
+;microm).
+;[1166..1170]:quantitative-name:"IC50"
+;[1184..1198]:quantitative-value:"0.065 to  2.02"
+;[1199..1205]:quantitative-units:"microm"
+(SENT
+  (S
+    (NP-SBJ (JJ:[980..990] Inhibitory) (NN:[991..999] activity))
+    (VP (VBD:[1000..1003] was)
+      (ADJP-PRD (JJ:[1004..1013] dependent)
+        (PP (IN:[1014..1016] on)
+          (NP (DT:[1017..1021] both)
+            (NP (NN:[1022..1033] substituent))
+            (CC:[1035..1038] and)
+            (NP (NN:[1039..1047] position)
+              (PP (IN:[1048..1050] of)
+                (NP (NN:[1051..1063] substitution)))))))
+      (,:[1063..1064] ,)
+      (PP (IN:[1065..1069] with)
+        (NP
+          (NP (NN:[1070..1082] introduction))
+          (PP (IN:[1083..1085] of)
+            (NP
+              (NP (JJ:[1086..1091] small)
+                (NML (NN:[1092..1100] electron) (HYPH:[1100..1101] -)
+                     (VBG:[1101..1112] withdrawing))
+                (NNS:[1114..1120] groups))
+              (VP-2 (-NONE-:[1120..1120] *ICH*))))
+          (PP-LOC (IN:[1121..1123] in)
+            (NP (DT:[1124..1127] the) (NN:[1128..1134] phenyl)
+                (NN:[1135..1139] ring)))
+          (VP-2 (VBG:[1140..1147] showing)
+            (NP (JJ:[1148..1155] optimum) (NN:[1156..1164] activity))
+            (PRN (-LRB-:[1165..1166] -LRB-)
+              (S
+                (NP-SBJ (NN:[1166..1170] IC50))
+                (VP (VBG:[1171..1178] ranging)
+                  (PP (IN:[1179..1183] from)
+                    (NP (CD:[1184..1189] 0.065)
+                      (NML-3 (-NONE-:[1189..1189] *RNR*))))
+                  (PP (TO:[1190..1192] to)
+                    (NP (CD:[1194..1198] 2.02)
+                      (NML-3 (-NONE-:[1198..1198] *RNR*))))
+                  (NML-3 (NN:[1199..1205] microm))))
+              (-RRB-:[1205..1206] -RRB-))))))
+    (.:[1206..1207] .)))
+
+;sentence 7 Span:1208..1319
+;Substitution in the benzofuran ring resulted in a loss of activity  when
+;substituted at C-5 (IC50 > 20 microm).
+;[1301..1305]:quantitative-name:"IC50"
+;[1306..1310]:quantitative-value:"> 20"
+;[1311..1317]:quantitative-units:"microm"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1208..1220] Substitution))
+      (PP-LOC (IN:[1221..1223] in)
+        (NP (DT:[1224..1227] the) (NN:[1228..1238] benzofuran)
+            (NN:[1239..1243] ring))))
+    (VP (VBD:[1244..1252] resulted)
+      (PP-CLR (IN:[1253..1255] in)
+        (NP
+          (NP (DT:[1256..1257] a) (NN:[1258..1262] loss))
+          (PP (IN:[1263..1265] of)
+            (NP (NN:[1266..1274] activity)))))
+      (SBAR-ADV
+        (WHADVP-1 (IN:[1276..1280] when))
+        (S
+          (NP-SBJ-2 (-NONE-:[1280..1280] *))
+          (VP (VBN:[1281..1292] substituted)
+            (NP-2 (-NONE-:[1292..1292] *))
+            (PP-LOC (NN:[1293..1295] at)
+              (NP (NN:[1296..1299] C-5)))
+            (ADVP-TMP-1 (-NONE-:[1299..1299] *T*)))))
+      (PRN (-LRB-:[1300..1301] -LRB-)
+        (S
+          (NP-SBJ (NN:[1301..1305] IC50))
+          (VP (SYM:[1306..1307] >)
+            (NP (CD:[1308..1310] 20) (NN:[1311..1317] microm))))
+        (-RRB-:[1317..1318] -RRB-)))
+    (.:[1318..1319] .)))
+
+;section 8 Span:1320..1474
+;The compounds were all shown to  exhibit weak inhibitory activity against rat
+;testes P450 17 (17,20-lyase),  indicating good selectivity towards P450arom.
+;[1324..1333]:substance:"compounds"
+;[1405..1412]:cyp450:"P450 17"
+;[1414..1425]:cyp450:"17,20-lyase"
+;[1465..1473]:cyp450:"P450arom"
+(SEC
+  (S
+    (NP-SBJ-1 (DT:[1320..1323] The) (NNS:[1324..1333] compounds))
+    (VP (VBD:[1334..1338] were) (DT:[1339..1342] all)
+      (VP (VBN:[1343..1348] shown)
+        (S
+          (NP-SBJ-1 (-NONE-:[1348..1348] *))
+          (VP (DT:[1349..1351] to)
+            (VP (VB:[1353..1360] exhibit)
+              (NP (JJ:[1361..1365] weak) (JJ:[1366..1376] inhibitory)
+                  (NN:[1377..1385] activity))
+              (PP (IN:[1386..1393] against)
+                (NP
+                  (NP
+                    (NML (DT:[1394..1397] rat) (NNS:[1398..1404] testes))
+                     (NN:[1405..1409] P450) (CD:[1410..1412] 17))
+                  (NP (-LRB-:[1413..1414] -LRB-) (NN:[1414..1425] 17,20-lyase)
+                      (-RRB-:[1425..1426] -RRB-))))
+              (,:[1426..1427] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[1427..1427] *))
+                (VP (VBG:[1429..1439] indicating)
+                  (NP (JJ:[1440..1444] good) (NN:[1445..1456] selectivity))
+                  (PP (IN:[1457..1464] towards)
+                    (NP (NN:[1465..1473] P450arom))))))))))
+    (.:[1473..1474] .)))
+;ERROR_Entity in section[1324..1333]:substance "compounds"
+;ERROR_Entity in section[1405..1412]:cyp450 "P450 17"
+;ERROR_Entity in section[1414..1425]:cyp450 "17,20-lyase"
+;ERROR_Entity in section[1465..1473]:cyp450 "P450arom"
+
+;section 9 Span:1478..1522
+;PMID: 12049480 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1478..1482] PMID) (::[1482..1483] :) (CD:[1484..1492] 12049480)
+        (-LRB-:[1493..1494] -LSB-) (NNP:[1494..1500] PubMed) (::[1501..1502] -)
+        (VBN:[1503..1510] indexed) (IN:[1511..1514] for)
+        (NNP:[1515..1522] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1522..EOF] ]
+
+(ORPH -RSB-)

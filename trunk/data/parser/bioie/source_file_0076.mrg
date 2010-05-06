@@ -1,0 +1,528 @@
+;PMID: 2842891
+;source_file_841.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:51..187] = [t:51..187]
+;2)section:[e:191..211] = [t:191..211]
+;3)section:[e:215..325] = [t:215..325]
+;4)sentence:[e:329..628] = [t:329..628]
+;5)sentence:[e:629..809] = [t:629..809]
+;6)sentence:[e:810..953] = [t:810..953]
+;7)sentence:[e:955..1159] = [t:955..1159]
+;8)sentence:[e:1160..1317] = [t:1160..1317]
+;9)sentence:[e:1318..1552] = [t:1318..1552]
+;10)sentence:[e:1553..1779] = [t:1553..1779]
+;11)sentence:[e:1780..1883] = [t:1780..1883]
+;12)sentence:[e:1884..2043] = [t:1884..2043]
+;13)section:[e:2047..2091] = [t:2047..2091]
+
+;section 0 Span:0..45
+;Toxicol Appl Pharmacol. 1988 Aug;95(1):72-81.
+(SEC
+  (FRAG (NNP:[0..7] Toxicol) (NNP:[8..12] Appl) (NNP:[13..22] Pharmacol)
+        (.:[22..23] .) (CD:[24..28] 1988) (::[29..36] Aug;95-LRB-)
+        (CD:[36..37] 1) (-RRB-:[37..38] -RRB-) (CD:[38..41] :72) (::[41..42] -)
+        (CD:[42..44] 81) (.:[44..45] .)))
+
+;sentence 1 Span:51..187
+;Alteration of methylcholanthrene-mediated suppression of cutaneous delayed 
+;hypersensitivity by benzoflavone treatment of C57BL/6J mice.
+;[65..83]:substance:"methylcholanthrene"
+;[147..159]:substance:"benzoflavone"
+(SENT
+  (NP-HLN
+    (NP (NN:[51..61] Alteration))
+    (PP (IN:[62..64] of)
+      (NP
+        (NP
+          (ADJP (NN:[65..83] methylcholanthrene) (HYPH:[83..84] -)
+                (JJ:[84..92] mediated))
+          (NN:[93..104] suppression))
+        (PP (IN:[105..107] of)
+          (NP (JJ:[108..117] cutaneous) (JJ:[118..125] delayed)
+              (NN:[127..143] hypersensitivity)))))
+    (PP (IN:[144..146] by)
+      (NP
+        (NP (NN:[147..159] benzoflavone) (NN:[160..169] treatment))
+        (PP (IN:[170..172] of)
+          (NP (NN:[173..181] C57BL/6J) (NNS:[182..186] mice)))))
+    (.:[186..187] .)))
+
+;section 2 Span:191..211
+;Frank DM, Blumer JL.
+(SEC
+  (FRAG (NNP:[191..196] Frank) (NNP:[197..199] DM) (,:[199..200] ,)
+        (NNP:[201..207] Blumer) (NNP:[208..211] JL.)))
+
+;section 3 Span:215..325
+;Division of Pediatric Pharmacology and Critical Care, Rainbow Babies and 
+;Childrens Hospital, Cleveland, Ohio.
+(SEC
+  (FRAG (NNP:[215..223] Division) (IN:[224..226] of) (NNP:[227..236] Pediatric)
+        (NNP:[237..249] Pharmacology) (CC:[250..253] and)
+        (NNP:[254..262] Critical) (NNP:[263..267] Care) (,:[267..268] ,)
+        (NNP:[269..276] Rainbow) (NNP:[277..283] Babies) (CC:[284..287] and)
+        (NNP:[289..298] Childrens) (NNP:[299..307] Hospital) (,:[307..308] ,)
+        (NNP:[309..318] Cleveland) (,:[318..319] ,) (NNP:[320..324] Ohio)
+        (.:[324..325] .)))
+
+;sentence 4 Span:329..628
+;The potential role of the cytochromes P-450 in methylcholanthrene
+;(MC)-mediated  suppression of cutaneous delayed hypersensitivity (CDH) in
+;C57BL/6J (B6) mice  was evaluated indirectly by treating mice with agents
+;known to induce or inhibit  hepatic cytochromes P-450 prior to contact
+;sensitization.
+;[355..372]:cyp450:"cytochromes P-450"
+;[376..394]:substance:"methylcholanthrene"
+;[396..398]:substance:"MC"
+;[536..542]:substance:"agents"
+;[579..596]:cyp450:"cytochromes P-450"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[329..332] The) (JJ:[333..342] potential) (NN:[343..347] role))
+      (PP (IN:[348..350] of)
+        (NP (DT:[351..354] the)
+           (NNS:[355..366] cytochromes) (NN:[367..372] P-450)))
+      (PP (IN:[373..375] in)
+        (NP
+          (NP
+            (ADJP
+              (NML
+                (NML (NN:[376..394] methylcholanthrene))
+                (NML (-LRB-:[395..396] -LRB-) (NN:[396..398] MC)
+                     (-RRB-:[398..399] -RRB-)))
+              (HYPH:[399..400] -) (JJ:[400..408] mediated))
+            (NN:[410..421] suppression))
+          (PP (IN:[422..424] of)
+            (NP
+              (NP (JJ:[425..434] cutaneous) (JJ:[435..442] delayed)
+                  (NN:[443..459] hypersensitivity))
+              (NP (-LRB-:[460..461] -LRB-) (NN:[461..464] CDH)
+                  (-RRB-:[464..465] -RRB-))))
+          (PP-LOC (IN:[466..468] in)
+            (NP
+              (NML
+                (NML (NN:[469..477] C57BL/6J))
+                (NML (-LRB-:[478..479] -LRB-) (NN:[479..481] B6)
+                     (-RRB-:[481..482] -RRB-)))
+              (NNS:[483..487] mice))))))
+    (VP (VBD:[489..492] was)
+      (VP (VBN:[493..502] evaluated)
+        (NP-1 (-NONE-:[502..502] *))
+        (ADVP (RB:[503..513] indirectly))
+        (PP-MNR (IN:[514..516] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[516..516] *))
+            (VP (VBG:[517..525] treating)
+              (NP (NNS:[526..530] mice))
+              (PP-MNR (IN:[531..535] with)
+                (NP
+                  (NP (NNS:[536..542] agents))
+                  (VP (VBN:[543..548] known)
+                    (S
+                      (NP-SBJ (-NONE-:[548..548] *))
+                      (VP (TO:[549..551] to)
+                        (VP (VB:[552..558] induce) (CC:[559..561] or)
+                            (VB:[562..569] inhibit)
+                          (NP (JJ:[571..578] hepatic)
+                             (NNS:[579..590] cytochromes) (NN:[591..596] P-450))
+                          (PP-TMP (JJ:[597..602] prior)
+                            (PP (TO:[603..605] to)
+                              (NP (NN:[606..613] contact)
+                                  (NN:[614..627] sensitization)))))))))))))))
+    (.:[627..628] .)))
+
+;sentence 5 Span:629..809
+;Subsequent alterations  in aryl hydrocarbon hydroxylase (AHH) activity and
+;CDH, as measured by  suppression of 2,4-dinitrofluorobenzene (DNFB)-induced
+;ear swelling, were  measured.
+;[656..684]:substance:"aryl hydrocarbon hydroxylase"
+;[686..689]:substance:"AHH"
+;[740..764]:substance:"2,4-dinitrofluorobenzene"
+;[766..770]:substance:"DNFB"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (JJ:[629..639] Subsequent) (NNS:[640..651] alterations))
+        (PP (IN:[653..655] in)
+          (NP
+            (NP
+              (NML
+                (NML (NN:[656..660] aryl) (NN:[661..672] hydrocarbon)
+                     (NN:[673..684] hydroxylase))
+                (NML (-LRB-:[685..686] -LRB-) (NN:[686..689] AHH)
+                     (-RRB-:[689..690] -RRB-)))
+              (NN:[691..699] activity))
+            (CC:[700..703] and)
+            (NP (NN:[704..707] CDH)))))
+      (,:[707..708] ,)
+      (SBAR (IN:[709..711] as)
+        (S
+          (NP-SBJ-2 (-NONE-:[711..711] *))
+          (VP (VBN:[712..720] measured)
+            (NP-2 (-NONE-:[720..720] *))
+            (PP-MNR (IN:[721..723] by)
+              (NP
+                (NP (NN:[725..736] suppression))
+                (PP (IN:[737..739] of)
+                  (NP
+                    (ADJP
+                      (NML
+                        (NML (NN:[740..764] 2,4-dinitrofluorobenzene))
+                        (NML (-LRB-:[765..766] -LRB-) (NN:[766..770] DNFB)
+                             (-RRB-:[770..771] -RRB-)))
+                      (HYPH:[771..772] -) (VBN:[772..779] induced))
+                    (NN:[780..783] ear) (NN:[784..792] swelling)))))))))
+    (,:[792..793] ,)
+    (VP (VBD:[794..798] were)
+      (VP (VBN:[800..808] measured)
+        (NP-1 (-NONE-:[808..808] *))))
+    (.:[808..809] .)))
+
+;sentence 6 Span:810..953
+;MC administration resulted in a dose-dependent suppression of ear  swelling
+;and a concomitant dose-dependent induction of hepatic AHH activity.
+;[810..812]:substance:"MC"
+;[940..943]:substance:"AHH"
+(SENT
+  (S
+    (NP-SBJ (NN:[810..812] MC) (NN:[813..827] administration))
+    (VP (VBD:[828..836] resulted)
+      (PP-CLR (IN:[837..839] in)
+        (NP
+          (NP
+            (NP (DT:[840..841] a)
+              (ADJP (NN:[842..846] dose) (HYPH:[846..847] -)
+                    (JJ:[847..856] dependent))
+              (NN:[857..868] suppression))
+            (PP (IN:[869..871] of)
+              (NP (NN:[872..875] ear) (NN:[877..885] swelling))))
+          (CC:[886..889] and)
+          (NP
+            (NP (DT:[890..891] a) (JJ:[892..903] concomitant)
+              (ADJP (NN:[904..908] dose) (HYPH:[908..909] -)
+                    (JJ:[909..918] dependent))
+              (NN:[919..928] induction))
+            (PP (IN:[929..931] of)
+              (NP (JJ:[932..939] hepatic) (NN:[940..943] AHH)
+                  (NN:[944..952] activity)))))))
+    (.:[952..953] .)))
+
+;sentence 7 Span:955..1159
+;Treatment of B6 mice with phenobarbital (PB), 80 mg/kg daily X 3, a broad 
+;spectrum inducer of P-450, resulted in a 2.5-fold increase in benzo[a]pyrene 
+;(B[a]P) hydroxylase activity without affecting CDH.
+;[981..994]:substance:"phenobarbital"
+;[996..998]:substance:"PB"
+;[1001..1003]:quantitative-value:"80"
+;[1004..1009]:quantitative-units:"mg/kg"
+;[1010..1015]:quantitative-units:"daily"
+;[1016..1019]:quantitative-value:"X 3"
+;[1039..1046]:substance:"inducer"
+;[1050..1055]:cyp450:"P-450"
+;[1071..1079]:quantitative-value:"2.5-fold"
+;[1092..1127]:substance:"benzo[a]pyrene  (B[a]P) hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[955..964] Treatment))
+      (PP (IN:[965..967] of)
+        (NP (NN:[968..970] B6) (NNS:[971..975] mice)))
+      (PP (IN:[976..980] with)
+        (NP
+          (NP
+            (NP
+              (NP (NN:[981..994] phenobarbital))
+              (NP (-LRB-:[995..996] -LRB-) (NN:[996..998] PB)
+                  (-RRB-:[998..999] -RRB-)))
+            (,:[999..1000] ,)
+            (NP
+              (NP (CD:[1001..1003] 80) (NN:[1004..1006] mg))
+              (PP (SYM:[1006..1007] /)
+                (NP (NN:[1007..1009] kg)))
+              (ADVP (JJ:[1010..1015] daily)
+                (PP (SYM:[1016..1017] X)
+                  (NP (CD:[1018..1019] 3))))))
+          (,:[1019..1020] ,)
+          (NP
+            (NP (DT:[1021..1022] a) (JJ:[1023..1028] broad)
+                (NN:[1030..1038] spectrum) (NN:[1039..1046] inducer))
+            (PP (JJ:[1047..1049] of)
+              (NP (NN:[1050..1055] P-450)))))))
+    (,:[1055..1056] ,)
+    (VP (VBD:[1057..1065] resulted)
+      (PP-CLR (IN:[1066..1068] in)
+        (NP
+          (NP (DT:[1069..1070] a)
+            (QP (CD:[1071..1074] 2.5) (HYPH:[1074..1075] -)
+                (JJ:[1075..1079] fold))
+            (NN:[1080..1088] increase))
+          (PP (IN:[1089..1091] in)
+            (NP
+              (NML
+                (NML
+                  (NML (NN:[1092..1106] benzo-LSB-a-RSB-pyrene))
+                  (NML (-LRB-:[1108..1109] -LRB-)
+                       (NN:[1109..1114] B-LSB-a-RSB-P)
+                       (-RRB-:[1114..1115] -RRB-)))
+                (NN:[1116..1127] hydroxylase))
+              (NN:[1128..1136] activity)))))
+      (PP (IN:[1137..1144] without)
+        (S-NOM
+          (NP-SBJ (-NONE-:[1144..1144] *))
+          (VP (VBG:[1145..1154] affecting)
+            (NP (NN:[1155..1158] CDH))))))
+    (.:[1158..1159] .)))
+
+;sentence 8 Span:1160..1317
+;Animals treated with the  same PB protocol prior to an ED20 dose of MC showed
+;no difference in suppression  of CDH compared to animals treated with MC
+;alone.
+;[1191..1193]:substance:"PB"
+;[1215..1219]:quantitative-name:"ED20"
+;[1228..1230]:substance:"MC"
+;[1308..1310]:substance:"MC"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1160..1167] Animals))
+      (VP (VBN:[1168..1175] treated)
+        (NP (-NONE-:[1175..1175] *))
+        (PP-MNR (IN:[1176..1180] with)
+          (NP (DT:[1181..1184] the) (JJ:[1186..1190] same) (NN:[1191..1193] PB)
+              (NN:[1194..1202] protocol)))
+        (PP-TMP (JJ:[1203..1208] prior)
+          (PP (TO:[1209..1211] to)
+            (NP
+              (NP (DT:[1212..1214] an) (NN:[1215..1219] ED20)
+                  (NN:[1220..1224] dose))
+              (PP (IN:[1225..1227] of)
+                (NP (NN:[1228..1230] MC))))))))
+    (VP (VBD:[1231..1237] showed)
+      (NP
+        (NP (DT:[1238..1240] no) (NN:[1241..1251] difference))
+        (PP (IN:[1252..1254] in)
+          (NP
+            (NP (NN:[1255..1266] suppression))
+            (PP (IN:[1268..1270] of)
+              (NP (NN:[1271..1274] CDH))))))
+      (S-ADV
+        (NP-SBJ-1 (-NONE-:[1274..1274] *))
+        (VP (VBN:[1275..1283] compared)
+          (NP-1 (-NONE-:[1283..1283] *))
+          (PP-CLR (TO:[1284..1286] to)
+            (NP
+              (NP (NNS:[1287..1294] animals))
+              (VP (VBN:[1295..1302] treated)
+                (NP (-NONE-:[1302..1302] *))
+                (PP-MNR (IN:[1303..1307] with)
+                  (NP
+                    (NP (NN:[1308..1310] MC))
+                    (ADVP (RB:[1311..1316] alone))))))))))
+    (.:[1316..1317] .)))
+
+;sentence 9 Span:1318..1552
+;In contrast, successive  treatment with the selective P1-450 inducer,
+;5,6-benzoflavone (beta NF), prior  to and following an ED20 dose of MC
+;significantly increased suppression of CDH  (p less than 0.001) usually seen
+;at this MC dose.
+;[1372..1378]:cyp450:"P1-450"
+;[1379..1386]:substance:"inducer"
+;[1388..1404]:substance:"5,6-benzoflavone"
+;[1406..1413]:substance:"beta NF"
+;[1443..1447]:quantitative-name:"ED20"
+;[1456..1458]:substance:"MC"
+;[1544..1546]:substance:"MC"
+(SENT
+  (S
+    (PP (IN:[1318..1320] In)
+      (NP (NN:[1321..1329] contrast)))
+    (,:[1329..1330] ,)
+    (NP-SBJ
+      (NP (JJ:[1331..1341] successive) (NN:[1343..1352] treatment))
+      (PP (IN:[1353..1357] with)
+        (NP
+          (NP (DT:[1358..1361] the) (JJ:[1362..1371] selective)
+              (NN:[1372..1378] P1-450) (NN:[1379..1386] inducer))
+          (,:[1386..1387] ,)
+          (NP (NN:[1388..1404] 5,6-benzoflavone)
+            (PRN (-LRB-:[1405..1406] -LRB-)
+              (NP (SYM:[1406..1410] beta) (NN:[1411..1413] NF))
+              (-RRB-:[1413..1414] -RRB-)))))
+      (,:[1414..1415] ,)
+      (PP-TMP
+        (PP (JJ:[1416..1421] prior)
+          (PP (TO:[1423..1425] to)
+            (NP-1 (-NONE-:[1425..1425] *RNR*))))
+        (DT:[1426..1429] and)
+        (PP (VBG:[1430..1439] following)
+          (NP-1 (-NONE-:[1439..1439] *RNR*)))
+        (NP-1
+          (NP (DT:[1440..1442] an) (NN:[1443..1447] ED20) (NN:[1448..1452] dose))
+          (PP (IN:[1453..1455] of)
+            (NP (NN:[1456..1458] MC))))))
+    (ADVP (RB:[1459..1472] significantly))
+    (VP (VBD:[1473..1482] increased)
+      (NP
+        (NP
+          (NP (NN:[1483..1494] suppression))
+          (PP (IN:[1495..1497] of)
+            (NP (NN:[1498..1501] CDH)))
+          (PRN (-LRB-:[1503..1504] -LRB-)
+            (S
+              (NP-SBJ (NN:[1504..1505] p))
+              (ADJP-PRD
+                (ADJP (JJR:[1506..1510] less))
+                (PP (IN:[1511..1515] than)
+                  (NP (CD:[1516..1521] 0.001)))))
+            (-RRB-:[1521..1522] -RRB-)))
+        (VP
+          (ADVP (RB:[1523..1530] usually))
+          (VBN:[1531..1535] seen)
+          (NP (-NONE-:[1535..1535] *))
+          (PP (IN:[1536..1538] at)
+            (NP (DT:[1539..1543] this) (NN:[1544..1546] MC)
+                (NN:[1547..1551] dose))))))
+    (.:[1551..1552] .)))
+
+;sentence 10 Span:1553..1779
+;Treatment with a known  inhibitor of cytochrome P1-450 activity,
+;7,8-benzoflavone (alpha NF), did not  prevent AHH induction when administered
+;prior to and following MC (ED100) nor  did it suppress CDH when administered
+;alone.
+;[1577..1586]:substance:"inhibitor"
+;[1590..1607]:cyp450:"cytochrome P1-450"
+;[1618..1634]:substance:"7,8-benzoflavone"
+;[1636..1644]:substance:"alpha NF"
+;[1664..1667]:substance:"AHH"
+;[1719..1721]:substance:"MC"
+;[1723..1728]:quantitative-name:"ED100"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[1553..1562] Treatment))
+        (PP (IN:[1563..1567] with)
+          (NP
+            (NP
+              (NP (DT:[1568..1569] a) (JJ:[1570..1575] known)
+                  (NN:[1577..1586] inhibitor))
+              (PP (IN:[1587..1589] of)
+                (NP
+                   (NN:[1590..1600] cytochrome) (NN:[1601..1607] P1-450)
+                  (NN:[1608..1616] activity))))
+            (,:[1616..1617] ,)
+            (NP (NN:[1618..1634] 7,8-benzoflavone)
+              (PRN (-LRB-:[1635..1636] -LRB-)
+                (NP (SYM:[1636..1641] alpha) (NN:[1642..1644] NF))
+                (-RRB-:[1644..1645] -RRB-))))))
+      (,:[1645..1646] ,)
+      (VP (VBD:[1647..1650] did) (RB:[1651..1654] not)
+        (VP (VB:[1656..1663] prevent)
+          (NP (NN:[1664..1667] AHH) (NN:[1668..1677] induction))
+          (SBAR-ADV
+            (WHADVP-4 (WRB:[1678..1682] when))
+            (S
+              (NP-SBJ-5 (-NONE-:[1682..1682] *))
+              (VP (VBN:[1683..1695] administered)
+                (NP-5 (-NONE-:[1695..1695] *))
+                (PP-TMP
+                  (PP (JJ:[1696..1701] prior)
+                    (PP (TO:[1702..1704] to)
+                      (NP-3 (-NONE-:[1704..1704] *RNR*))))
+                  (CC:[1705..1708] and)
+                  (PP (VBG:[1709..1718] following)
+                    (NP-3 (-NONE-:[1718..1718] *RNR*)))
+                  (NP-3 (NN:[1719..1721] MC)
+                    (PRN (-LRB-:[1722..1723] -LRB-)
+                      (NP (NN:[1723..1728] ED100))
+                      (-RRB-:[1728..1729] -RRB-))))
+                (ADVP-TMP-4 (-NONE-:[1729..1729] *T*))))))))
+    (CC:[1730..1733] nor)
+    (SINV (VBD:[1735..1738] did)
+      (NP-SBJ (PRP:[1739..1741] it))
+      (VP (VB:[1742..1750] suppress)
+        (NP (NN:[1751..1754] CDH))
+        (SBAR-ADV
+          (WHADVP-2 (WRB:[1755..1759] when))
+          (S
+            (NP-SBJ-1 (-NONE-:[1759..1759] *))
+            (VP (VBN:[1760..1772] administered)
+              (NP-1 (-NONE-:[1772..1772] *))
+              (ADVP (RB:[1773..1778] alone))
+              (ADVP-TMP-2 (-NONE-:[1778..1778] *T*)))))))
+    (.:[1778..1779] .)))
+
+;sentence 11 Span:1780..1883
+;However, this alpha NF treatment  completely prevented suppression of CDH
+;usually seen at this MC dose.
+;[1794..1802]:substance:"alpha NF"
+;[1875..1877]:substance:"MC"
+(SENT
+  (S
+    (ADVP (RB:[1780..1787] However))
+    (,:[1787..1788] ,)
+    (NP-SBJ (DT:[1789..1793] this)
+      (NML (SYM:[1794..1799] alpha) (NN:[1800..1802] NF))
+      (NN:[1803..1812] treatment))
+    (ADVP (RB:[1814..1824] completely))
+    (VP (VBD:[1825..1834] prevented)
+      (NP
+        (NP
+          (NP (NN:[1835..1846] suppression))
+          (PP (IN:[1847..1849] of)
+            (NP (NN:[1850..1853] CDH))))
+        (VP
+          (ADVP (RB:[1854..1861] usually))
+          (VBN:[1862..1866] seen)
+          (NP (-NONE-:[1866..1866] *))
+          (PP (IN:[1867..1869] at)
+            (NP (DT:[1870..1874] this) (NN:[1875..1877] MC)
+                (NN:[1878..1882] dose))))))
+    (.:[1882..1883] .)))
+
+;sentence 12 Span:1884..2043
+;These data  provide evidence suggesting that metabolic activation by
+;cytochrome P1-450 is  required for the expression of the immunosuppressive
+;activity of MC.
+;[1953..1970]:cyp450:"cytochrome P1-450"
+;[2040..2042]:substance:"MC"
+(SENT
+  (S
+    (NP-SBJ (DT:[1884..1889] These) (NNS:[1890..1894] data))
+    (VP (VBP:[1896..1903] provide)
+      (NP
+        (NP (NN:[1904..1912] evidence))
+        (VP (VBG:[1913..1923] suggesting)
+          (SBAR (IN:[1924..1928] that)
+            (S
+              (NP-SBJ-1
+                (NP (JJ:[1929..1938] metabolic) (NN:[1939..1949] activation))
+                (PP (IN:[1950..1952] by)
+                  (NP (NN:[1953..1963] cytochrome) (NN:[1964..1970] P1-450))))
+              (VP (VBZ:[1971..1973] is)
+                (VP (JJ:[1975..1983] required)
+                  (NP-1 (-NONE-:[1983..1983] *))
+                  (PP (IN:[1984..1987] for)
+                    (NP
+                      (NP (DT:[1988..1991] the) (NN:[1992..2002] expression))
+                      (PP (IN:[2003..2005] of)
+                        (NP
+                          (NP (DT:[2006..2009] the)
+                              (JJ:[2010..2027] immunosuppressive)
+                              (NN:[2028..2036] activity))
+                          (PP (IN:[2037..2039] of)
+                            (NP (NN:[2040..2042] MC))))))))))))))
+    (.:[2042..2043] .)))
+
+;section 13 Span:2047..2091
+;PMID: 2842891 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2047..2051] PMID) (::[2051..2052] :) (CD:[2053..2060] 2842891)
+        (NN:[2061..2062] -LSB-) (NNP:[2062..2068] PubMed) (::[2069..2070] -)
+        (NN:[2071..2078] indexed) (IN:[2079..2082] for)
+        (NNP:[2083..2091] MEDLINE-RSB-)))

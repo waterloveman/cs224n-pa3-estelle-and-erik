@@ -1,0 +1,475 @@
+;PMID: 3871600
+;source_file_642.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..47] = [t:0..47]
+;1)sentence:[e:53..194] = [t:53..194]
+;2)section:[e:198..221] = [t:198..221]
+;3)sentence:[e:225..551] = [t:225..551]
+;4)sentence:[e:552..674] = [t:552..674]
+;5)sentence:[e:675..852] = [t:675..852]
+;6)sentence:[e:853..1107] = [t:853..1107]
+;7)sentence:[e:1108..1317] = [t:1108..1317]
+;8)sentence:[e:1318..1443] = [t:1318..1443]
+;9)sentence:[e:1444..1614] = [t:1444..1614]
+;10)sentence:[e:1615..1800] = [t:1615..1800]
+;11)sentence:[e:1801..1984] = [t:1801..1984]
+;12)section:[e:1988..2032] = [t:1988..2032]
+
+;section 0 Span:0..47
+;Arch Biochem Biophys. 1985 Feb 15;237(1):55-64.
+(SEC
+  (FRAG (NNP:[0..4] Arch) (NNP:[5..12] Biochem) (NNP:[13..20] Biophys)
+        (.:[20..21] .) (CD:[22..26] 1985) (NNP:[27..30] Feb) (CD:[31..36] 15;23)
+        (CD:[36..37] 7) (NN:[37..38] -LRB-) (NN:[38..39] 1) (NN:[39..40] -RRB-)
+        (::[40..41] :) (CD:[41..42] 5) (CD:[42..46] 5-64) (.:[46..47] .)))
+
+;sentence 1 Span:53..194
+;Variations in hepatic progesterone 21-hydroxylase activity reflect
+;differences  in the microsomal concentration of rabbit cytochrome P-450 1.
+;[75..102]:cyp450:"progesterone 21-hydroxylase"
+;[175..193]:cyp450:"cytochrome P-450 1"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NNS:[53..63] Variations))
+      (PP (IN:[64..66] in)
+        (NP (JJ:[67..74] hepatic)
+          (NML (NN:[75..87] progesterone) (NN:[88..102] 21-hydroxylase))
+          (NN:[103..111] activity))))
+    (VP (VBP:[112..119] reflect)
+      (NP
+        (NP (NNS:[120..131] differences))
+        (PP (IN:[133..135] in)
+          (NP
+            (NP (DT:[136..139] the) (JJ:[140..150] microsomal)
+                (NN:[151..164] concentration))
+            (PP (IN:[165..167] of)
+              (NP (NN:[168..174] rabbit)
+                
+                (NML (NN:[175..185] cytochrome) (NN:[186..191] P-450))
+                (CD:[192..193] 1)))))))
+    (.:[193..194] .)))
+
+;section 2 Span:198..221
+;Johnson EF, Griffin KJ.
+(SEC
+  (FRAG (NNP:[198..205] Johnson) (NNP:[206..208] EF) (,:[208..209] ,)
+        (NNP:[210..217] Griffin) (NNP:[218..221] KJ.)))
+
+;sentence 3 Span:225..551
+;A monoclonal antibody specific for cytochrome P-450 1 that extensively
+;(greater  than 95%) inhibits the hepatic 21-hydroxylation of progesterone was
+;used in a  two-site immunoradiometric assay to estimate the concentration of
+;cytochrome  P-450 1 in microsomes prepared from 24 individual, untreated New
+;Zealand White  rabbits.
+;[238..246]:substance:"antibody"
+;[260..278]:cyp450:"cytochrome P-450 1"
+;[297..314]:quantitative-value:"greater  than 95%"
+;[357..369]:substance:"progesterone"
+;[451..470]:cyp450:"cytochrome  P-450 1"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP
+        (NP (DT:[225..226] A) (JJ:[227..237] monoclonal)
+            (NN:[238..246] antibody))
+        (ADJP (JJ:[247..255] specific)
+          (PP (IN:[256..259] for)
+            (NP
+              (NML (NN:[260..270] cytochrome) (NN:[271..276] P-450))
+              (CD:[277..278] 1)))))
+      (SBAR
+        (WHNP-1 (WDT:[279..283] that))
+        (S
+          (NP-SBJ-1 (-NONE-:[283..283] *T*))
+          (ADVP (RB:[284..295] extensively)
+            (PRN (-LRB-:[296..297] -LRB-)
+              (ADJP (JJR:[297..304] greater)
+                (PP (IN:[306..310] than)
+                  (NP (CD:[311..313] 95) (NN:[313..314] %))))
+              (-RRB-:[314..315] -RRB-)))
+          (VP (VBZ:[316..324] inhibits)
+            (NP
+              (NP (DT:[325..328] the) (JJ:[329..336] hepatic)
+                  (NN:[337..353] 21-hydroxylation))
+              (PP (IN:[354..356] of)
+                (NP (NN:[357..369] progesterone))))))))
+    (VP (VBD:[370..373] was)
+      (VP (VBN:[374..378] used)
+        (NP-2 (-NONE-:[378..378] *))
+        (PP-LOC (IN:[379..381] in)
+          (NP (DT:[382..383] a)
+            (NML (CD:[385..388] two) (HYPH:[388..389] -) (NN:[389..393] site))
+            (JJ:[394..411] immunoradiometric) (NN:[412..417] assay)))
+        (S-ADV
+          (NP-SBJ (-NONE-:[417..417] *))
+          (VP (TO:[418..420] to)
+            (VP (VB:[421..429] estimate)
+              (NP
+                (NP (DT:[430..433] the) (NN:[434..447] concentration))
+                (PP (IN:[448..450] of)
+                  (NP
+                    (NP
+                      (NML (NN:[451..461] cytochrome) (NN:[463..468] P-450))
+                      (CD:[469..470] 1))
+                    (PP-LOC (IN:[471..473] in)
+                      (NP
+                        (NP (NNS:[474..484] microsomes))
+                        (VP (VBN:[485..493] prepared)
+                          (NP (-NONE-:[493..493] *))
+                          (PP (IN:[494..498] from)
+                            (NP (CD:[499..501] 24) (JJ:[502..512] individual)
+                                (,:[512..513] ,) (JJ:[514..523] untreated)
+                              (NML
+                                (NML (NNP:[524..527] New)
+                                     (NNP:[528..535] Zealand))
+                                (NNP:[536..541] White))
+                              (NNS:[543..550] rabbits))))))))))))))
+    (.:[550..551] .)))
+
+;sentence 4 Span:552..674
+;The progesterone 21-hydroxylase activities of these microsomes ranged  from
+;0.2 to 5.8 nmol min-1 mg microsomal protein-1.
+;[556..583]:cyp450:"progesterone 21-hydroxylase"
+;[623..638]:quantitative-value:"from 0.2 to 5.8"
+;[639..673]:quantitative-units:"nmol min-1 mg microsomal protein-1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[552..555] The)
+        (NML (NN:[556..568] progesterone) (NN:[569..583] 21-hydroxylase))
+        (NNS:[584..594] activities))
+      (PP (IN:[595..597] of)
+        (NP (DT:[598..603] these) (NNS:[604..614] microsomes))))
+    (VP (VBD:[615..621] ranged)
+      (PP
+        (PP (IN:[623..627] from)
+          (NP
+            (NML (CD:[628..631] 0.2)
+              (NML-1 (-NONE-:[631..631] *RNR*)))
+            (NML-2 (-NONE-:[631..631] *RNR*))))
+        (PP (TO:[632..634] to)
+          (NP
+            (NML (CD:[635..638] 5.8)
+              (NML-1 (-NONE-:[638..638] *RNR*)))
+            (NML-2 (-NONE-:[638..638] *RNR*))))
+        
+        (NML-1 (NN:[639..643] nmol))
+        (NML-2 (NN:[644..649] min-1) (NN:[650..652] mg)
+               (JJ:[653..663] microsomal) (NN:[664..673] protein-1))))
+    (.:[673..674] .)))
+
+;sentence 5 Span:675..852
+;Scatchard analysis revealed  similar slopes and thus apparent affinities
+;between the antibody and microsome  samples that varied greater than 10-fold
+;in 21-hydroxylase activity.
+;[760..768]:substance:"antibody"
+;[804..824]:quantitative-value:"greater than 10-fold"
+;[828..842]:cyp450:"21-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ (NNP:[675..684] Scatchard) (NN:[685..693] analysis))
+    (VP (VBD:[694..702] revealed)
+      (NP
+        (NP
+          (NP (JJ:[704..711] similar) (NNS:[712..718] slopes))
+          (CONJP (CC:[719..722] and) (RB:[723..727] thus))
+          (NP (JJ:[728..736] apparent) (NNS:[737..747] affinities)))
+        (PP (IN:[748..755] between)
+          (NP
+            (NP (DT:[756..759] the)
+              (NML
+                (NML (NN:[760..768] antibody)
+                  (NML-2 (-NONE-:[768..768] *P*)))
+                (CC:[769..772] and)
+                (NML (NN:[773..782] microsome)
+                  (NML-2 (NNS:[784..791] samples)))))
+            (SBAR
+              (WHNP-1 (WDT:[792..796] that))
+              (S
+                (NP-SBJ-1 (-NONE-:[796..796] *T*))
+                (VP (VBD:[797..803] varied)
+                  (ADVP-EXT
+                    (QP (JJR:[804..811] greater) (IN:[812..816] than)
+                        (CD:[817..819] 10) (HYPH:[819..820] -)
+                        (JJ:[820..824] fold)))
+                  (PP-LOC (IN:[825..827] in)
+                    (NP (NN:[828..842] 21-hydroxylase) (NN:[843..851] activity))))))))))
+    (.:[851..852] .)))
+
+;sentence 6 Span:853..1107
+;The maximal  extent of binding of the antibody to different microsomal
+;preparations was  greater for microsomes exhibiting high as compared to low
+;21-hydroxylase  activity, suggesting that the level of binding reflects the
+;microsomal content  of P-450 1.
+;[891..899]:substance:"antibody"
+;[1000..1014]:cyp450:"21-hydroxylase"
+;[1099..1106]:cyp450:"P-450 1"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[853..856] The) (JJ:[857..864] maximal) (NN:[866..872] extent))
+      (PP (IN:[873..875] of)
+        (NP
+          (NP (NN:[876..883] binding))
+          (PP (IN:[884..886] of)
+            (NP (DT:[887..890] the) (NN:[891..899] antibody)))
+          (PP (TO:[900..902] to)
+            (NP (JJ:[903..912] different) (JJ:[913..923] microsomal)
+                (NNS:[924..936] preparations))))))
+    (VP (VBD:[937..940] was)
+      (ADJP-PRD (JJR:[942..949] greater))
+      (PP (IN:[950..953] for)
+        (NP
+          (NP (NNS:[954..964] microsomes))
+          (VP (VBG:[965..975] exhibiting)
+            (NP
+              (ADJP (JJ:[976..980] high)
+                (SBAR (IN:[981..983] as)
+                  (S
+                    (NP-SBJ-1 (-NONE-:[983..983] *))
+                    (VP (VBN:[984..992] compared)
+                      (NP-1 (-NONE-:[992..992] *))
+                      (PP-CLR (TO:[993..995] to)
+                        (ADJP (JJ:[996..999] low)))))))
+              (NN:[1000..1014] 21-hydroxylase) (NN:[1016..1024] activity)))))
+      (,:[1024..1025] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1025..1025] *))
+        (VP (VBG:[1026..1036] suggesting)
+          (SBAR (IN:[1037..1041] that)
+            (S
+              (NP-SBJ
+                (NP (DT:[1042..1045] the) (NN:[1046..1051] level))
+                (PP (IN:[1052..1054] of)
+                  (NP (NN:[1055..1062] binding))))
+              (VP (VBZ:[1063..1071] reflects)
+                (NP
+                  (NP (DT:[1072..1075] the) (JJ:[1076..1086] microsomal)
+                      (NN:[1087..1094] content))
+                  (PP (IN:[1096..1098] of)
+                    (NP (NN:[1099..1104] P-450) (CD:[1105..1106] 1))))))))))
+    (.:[1106..1107] .)))
+
+;sentence 7 Span:1108..1317
+;Quantitation was based on the extent of binding of the 125I-labeled 
+;monoclonal antibody to P-450 1 sequestered from a sample by a heterologous 
+;monoclonal antibody adsorbed to the wells of a microtiter plate.
+;[1163..1167]:substance:"125I"
+;[1188..1196]:substance:"antibody"
+;[1200..1207]:cyp450:"P-450 1"
+;[1264..1272]:substance:"antibody"
+(SENT
+  (S
+    (NP-SBJ (NN:[1108..1120] Quantitation))
+    (VP (VBD:[1121..1124] was)
+      (VP (VBN:[1125..1130] based)
+        (NP-1 (-NONE-:[1130..1130] *))
+        (PP-CLR (IN:[1131..1133] on)
+          (NP
+            (NP (DT:[1134..1137] the) (NN:[1138..1144] extent))
+            (PP (IN:[1145..1147] of)
+              (NP
+                (NP (NN:[1148..1155] binding))
+                (PP (IN:[1156..1158] of)
+                  (NP (DT:[1159..1162] the)
+                    (ADJP (NN:[1163..1167] 125I) (HYPH:[1167..1168] -)
+                          (VBN:[1168..1175] labeled))
+                    (JJ:[1177..1187] monoclonal) (NN:[1188..1196] antibody)))
+                (PP (TO:[1197..1199] to)
+                  (NP
+                    (NP (NN:[1200..1205] P-450) (CD:[1206..1207] 1))
+                    (VP (VBN:[1208..1219] sequestered)
+                      (NP (-NONE-:[1219..1219] *))
+                      (PP (IN:[1220..1224] from)
+                        (NP (DT:[1225..1226] a) (NN:[1227..1233] sample)))
+                      (PP (IN:[1234..1236] by)
+                        (NP
+                          (NP (DT:[1237..1238] a) (JJ:[1239..1251] heterologous)
+                              (JJ:[1253..1263] monoclonal)
+                              (NN:[1264..1272] antibody))
+                          (VP (VBN:[1273..1281] adsorbed)
+                            (NP (-NONE-:[1281..1281] *))
+                            (PP-CLR (TO:[1282..1284] to)
+                              (NP
+                                (NP (DT:[1285..1288] the)
+                                    (NNS:[1289..1294] wells))
+                                (PP (IN:[1295..1297] of)
+                                  (NP (DT:[1298..1299] a)
+                                      (NN:[1300..1310] microtiter)
+                                      (NN:[1311..1316] plate)))))))))))))))))
+    (.:[1316..1317] .)))
+
+;sentence 8 Span:1318..1443
+;These results  indicate that the microsomal content of P-450 1 varies from
+;less than 0.05 to  0.5 nmol/mg microsomal protein.
+;[1373..1380]:cyp450:"P-450 1"
+;[1388..1415]:quantitative-value:"from less than 0.05 to  0.5"
+;[1416..1442]:quantitative-units:"nmol/mg microsomal protein"
+(SENT
+  (S
+    (NP-SBJ (DT:[1318..1323] These) (NNS:[1324..1331] results))
+    (VP (VBP:[1333..1341] indicate)
+      (SBAR (IN:[1342..1346] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1347..1350] the) (JJ:[1351..1361] microsomal)
+                (NN:[1362..1369] content))
+            (PP (IN:[1370..1372] of)
+              (NP (NN:[1373..1378] P-450) (CD:[1379..1380] 1))))
+          (VP (VBZ:[1381..1387] varies)
+            (PP (IN:[1388..1392] from)
+              (NP
+                (NP
+                  (QP (JJR:[1393..1397] less) (IN:[1398..1402] than)
+                      (CD:[1403..1407] 0.05))
+                  (NML-1 (-NONE-:[1407..1407] *RNR*)))
+                (PP-2 (-NONE-:[1407..1407] *RNR*))))
+            (PP (TO:[1408..1410] to)
+              (NP
+                (NP (CD:[1412..1415] 0.5)
+                  (NML-1 (-NONE-:[1415..1415] *RNR*)))
+                (PP-2 (-NONE-:[1415..1415] *RNR*))))
+            
+            (NML-1 (NN:[1416..1420] nmol))
+            (PP-2 (SYM:[1420..1421] /)
+              (NP (NN:[1421..1423] mg) (JJ:[1424..1434] microsomal)
+                  (NN:[1435..1442] protein)))))))
+    (.:[1442..1443] .)))
+
+;sentence 9 Span:1444..1614
+;The microsomal content of this antigen as  determined in the two-site
+;immunoradiometric assay was highly correlated (r =  0.97) with progesterone
+;21-hydroxylase activity.
+;[1475..1482]:substance:"antigen"
+;[1577..1604]:cyp450:"progesterone 21-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1444..1447] The) (JJ:[1448..1458] microsomal)
+          (NN:[1459..1466] content))
+      (PP (IN:[1467..1469] of)
+        (NP (DT:[1470..1474] this) (NN:[1475..1482] antigen)))
+      (PP (IN:[1483..1485] as)
+        (S-NOM
+          (NP-SBJ-1 (-NONE-:[1485..1485] *))
+          (VP (VBN:[1487..1497] determined)
+            (NP-1 (-NONE-:[1497..1497] *))
+            (PP-LOC (IN:[1498..1500] in)
+              (NP (DT:[1501..1504] the)
+                (NML (CD:[1505..1508] two) (HYPH:[1508..1509] -)
+                     (NN:[1509..1513] site))
+                (JJ:[1514..1531] immunoradiometric) (NN:[1532..1537] assay)))))))
+    (VP (VBD:[1538..1541] was)
+      (ADJP-PRD (RB:[1542..1548] highly) (JJ:[1549..1559] correlated)
+        (PRN (-LRB-:[1560..1561] -LRB-)
+          (S
+            (NP-SBJ (NN:[1561..1562] r))
+            (VP (SYM:[1563..1564] =)
+              (NP (CD:[1566..1570] 0.97))))
+          (-RRB-:[1570..1571] -RRB-)))
+      (PP (IN:[1572..1576] with)
+        (NP
+          (NML (NN:[1577..1589] progesterone) (NN:[1590..1604] 21-hydroxylase))
+          (NN:[1605..1613] activity))))
+    (.:[1613..1614] .)))
+
+;sentence 10 Span:1615..1800
+;Linear regression analysis was  used to estimate the turnover number for
+;progesterone in situ, yielding a value  of 11 nmol deoxycorticosterone formed
+;min-1 nmol microsomal P-450 1(-1).
+;[1688..1700]:substance:"progesterone"
+;[1731..1733]:quantitative-value:"11"
+;[1734..1799]:quantitative-units:"nmol deoxycorticosterone formed min-1 nmol
+;microsomal P-450 1(-1)"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (JJ:[1615..1621] Linear) (NN:[1622..1632] regression))
+      (NN:[1633..1641] analysis))
+    (VP (VBD:[1642..1645] was)
+      (VP (VBN:[1647..1651] used)
+        (NP-1 (-NONE-:[1651..1651] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[1651..1651] *))
+          (VP (TO:[1652..1654] to)
+            (VP (VB:[1655..1663] estimate)
+              (NP (DT:[1664..1667] the) (NN:[1668..1676] turnover)
+                  (NN:[1677..1683] number))
+              (PP (IN:[1684..1687] for)
+                (NP (NN:[1688..1700] progesterone)))
+              (ADVP (FW:[1701..1703] in) (FW:[1704..1708] situ))
+              (,:[1708..1709] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[1709..1709] *))
+                (VP (VBG:[1710..1718] yielding)
+                  (NP
+                    (NP (DT:[1719..1720] a) (NN:[1721..1726] value))
+                    (PP (IN:[1728..1730] of)
+                      (NP
+                        (NP
+                          (NML
+                            (NML (CD:[1731..1733] 11) (NN:[1734..1738] nmol))
+                            (NN:[1739..1758] deoxycorticosterone))
+                          (NML-2 (-NONE-:[1758..1758] *ICH*)))
+                        (VP (VBN:[1759..1765] formed)
+                          (NP (-NONE-:[1765..1765] *)))
+                        (NML-2 (NN:[1766..1771] min-1) (NN:[1772..1776] nmol)
+                               (JJ:[1777..1787] microsomal)
+                               (NN:[1788..1793] P-450)
+                               (CD:[1794..1799] 1-LRB--1-RRB-))))))))))))
+    (.:[1799..1800] .)))
+
+;sentence 11 Span:1801..1984
+;This is  similar to the value of 14 nmol deoxycorticosterone formed min-1
+;nmol-1 obtained  for the reconstituted, purified P-450 1 used as a standard
+;in the  immunoquantitation assay.
+;[1834..1836]:quantitative-value:"14"
+;[1837..1881]:quantitative-units:"nmol deoxycorticosterone formed min-1
+;nmol-1"
+;[1924..1931]:cyp450:"P-450 1"
+(SENT
+  (S
+    (NP-SBJ (DT:[1801..1805] This))
+    (VP (VBZ:[1806..1808] is)
+      (ADJP-PRD (JJ:[1810..1817] similar)
+        (PP (TO:[1818..1820] to)
+          (NP
+            (NP
+              (NP (DT:[1821..1824] the) (NN:[1825..1830] value))
+              (PP (IN:[1831..1833] of)
+                (NP
+                  (NP
+                    (NML
+                      (NML (CD:[1834..1836] 14) (NN:[1837..1841] nmol))
+                      (NN:[1842..1861] deoxycorticosterone))
+                    (NML-1 (-NONE-:[1861..1861] *ICH*)))
+                  (VP (VBN:[1862..1868] formed)
+                    (NP (-NONE-:[1868..1868] *)))
+                  (NML-1 (NN:[1869..1874] min-1) (NN:[1875..1881] nmol-1)))))
+            (VP (VBN:[1882..1890] obtained)
+              (NP (-NONE-:[1890..1890] *))
+              (PP (IN:[1892..1895] for)
+                (NP
+                  (NP (DT:[1896..1899] the) (JJ:[1900..1913] reconstituted)
+                      (,:[1913..1914] ,) (JJ:[1915..1923] purified)
+                     (NN:[1924..1929] P-450) (CD:[1930..1931] 1))
+                  (VP (VBN:[1932..1936] used)
+                    (NP (-NONE-:[1936..1936] *))
+                    (PP (IN:[1937..1939] as)
+                      (NP (DT:[1940..1941] a) (NN:[1942..1950] standard)))
+                    (PP (IN:[1951..1953] in)
+                      (NP (DT:[1954..1957] the)
+                          (NN:[1959..1977] immunoquantitation)
+                          (NN:[1978..1983] assay)))))))))))
+    (.:[1983..1984] .)))
+
+;section 12 Span:1988..2032
+;PMID: 3871600 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1988..1992] PMID) (::[1992..1993] :) (CD:[1994..2001] 3871600)
+        (NN:[2002..2003] -LSB-) (NNP:[2003..2009] PubMed) (::[2010..2011] -)
+        (NN:[2012..2019] indexed) (IN:[2020..2023] for)
+        (NNP:[2024..2032] MEDLINE-RSB-)))

@@ -1,0 +1,441 @@
+;PMID: 8753804
+;source_file_1015.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..54] = [t:0..54]
+;1)sentence:[e:60..229] = [t:60..229]
+;2)section:[e:233..288] = [t:233..288]
+;3)section:[e:292..423] = [t:292..423]
+;4)sentence:[e:427..619] = [t:427..619]
+;5)sentence:[e:620..792] = [t:620..792]
+;6)sentence:[e:793..895] = [t:793..895]
+;7)sentence:[e:896..1091] = [t:896..1091]
+;8)sentence:[e:1092..1200] = [t:1092..1200]
+;9)sentence:[e:1201..1306] = [t:1201..1306]
+;10)sentence:[e:1308..1388] = [t:1308..1388]
+;11)sentence:[e:1390..1486] = [t:1390..1486]
+;12)sentence:[e:1487..1531] = [t:1487..1531]
+;13)sentence:[e:1532..1679] = [t:1532..1679]
+;14)sentence:[e:1680..1785] = [t:1680..1785]
+;15)sentence:[e:1786..1905] = [t:1786..1905]
+;16)section:[e:1909..1953] = [t:1909..1953]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1313..1317] like
+
+;section 0 Span:0..54
+;Biochem Biophys Res Commun. 1996 Aug 14;225(2):585-92.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..15] Biophys) (NNP:[16..19] Res)
+        (NNP:[20..26] Commun) (RB:[26..27] .) (CD:[28..32] 1996)
+        (IN:[33..36] Aug) (CD:[37..44] 14;225-LRB-) (CD:[44..45] 2)
+        (-RRB-:[45..46] -RRB-) (CD:[46..50] :585) (::[50..51] -)
+        (CD:[51..53] 92) (.:[53..54] .)))
+
+;sentence 1 Span:60..229
+;The opposing effects of retinoic acid and phorbol esters converge to a common
+; response element in the promoter of the rat cholesterol 7 alpha-hydroxylase
+;gene  (CYP7A).
+;[84..97]:substance:"retinoic acid"
+;[102..116]:substance:"phorbol esters"
+;[163..171]:substance:"promoter"
+;[222..227]:cyp450:"CYP7A"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (DT:[60..63] The) (JJ:[64..72] opposing) (NNS:[73..80] effects))
+      (PP (IN:[81..83] of)
+        (NP
+          (NP (JJ:[84..92] retinoic) (NN:[93..97] acid))
+          (CC:[98..101] and)
+          (NP (NN:[102..109] phorbol) (NNS:[110..116] esters)))))
+    (VP (VBP:[117..125] converge)
+      (PP-CLR (TO:[126..128] to)
+        (NP (DT:[129..130] a) (JJ:[131..137] common) (NN:[139..147] response)
+            (NN:[148..155] element)))
+      (PP (IN:[156..158] in)
+        (NP
+          (NP (DT:[159..162] the) (NN:[163..171] promoter))
+          (PP (IN:[172..174] of)
+            (NP
+              (NP (DT:[175..178] the) (NN:[179..182] rat)
+                  (NN:[183..194] cholesterol)
+                (NML (CD:[195..196] 7) (NN:[197..214] alpha-hydroxylase))
+                (NN:[215..219] gene))
+              (NP (-LRB-:[221..222] -LRB-) (NN:[222..227] CYP7A)
+                  (-RRB-:[227..228] -RRB-)))))))
+    (.:[228..229] .)))
+
+;section 2 Span:233..288
+;Crestani M, Sadeghpour A, Stroup D, Galli G, Chiang JY.
+(SEC
+  (FRAG (NNP:[233..241] Crestani) (NNP:[242..244] M,)
+        (NNP:[245..255] Sadeghpour) (NNP:[256..257] A) (,:[257..258] ,)
+        (NNP:[259..265] Stroup) (NNP:[266..267] D) (,:[267..268] ,)
+        (NNP:[269..274] Galli) (NNP:[275..276] G) (,:[276..277] ,)
+        (NNP:[278..284] Chiang) (NNP:[285..287] JY) (.:[287..288] .)))
+
+;section 3 Span:292..423
+;Department of Biochemistry and Molecular Pathology, Northeastern Ohio 
+;Universities College of Medicine, Rootstown 44272-0095, USA.
+(SEC
+  (FRAG (NNP:[292..302] Department) (IN:[303..305] of)
+        (NNP:[306..318] Biochemistry) (CC:[319..322] and)
+        (NNP:[323..332] Molecular) (NNP:[333..342] Pathology) (,:[342..343] ,)
+        (DT:[344..356] Northeastern) (NNP:[357..361] Ohio)
+        (NNP:[363..375] Universities) (NNP:[376..383] College)
+        (IN:[384..386] of) (NNP:[387..395] Medicine) (,:[395..396] ,)
+        (NNP:[397..406] Rootstown) (CD:[407..412] 44272) (CD:[412..417] -0095)
+        (,:[417..418] ,) (NNP:[419..422] USA) (.:[422..423] .)))
+
+;sentence 4 Span:427..619
+;The activity of the rat CYP7A/luciferase reporter gene was increased
+;five-fold  by all-trans retinoic acid (atRA) or 9-cis retinoic acid (9cRA) in
+;transient  transfection assay in HepG2 cells.
+;[496..505]:quantitative-value:"five-fold"
+;[510..533]:substance:"all-trans retinoic acid"
+;[535..539]:substance:"atRA"
+;[544..563]:substance:"9-cis retinoic acid"
+;[565..569]:substance:"9cRA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[427..430] The) (NN:[431..439] activity))
+      (PP (IN:[440..442] of)
+        (NP (DT:[443..446] the) (NN:[447..450] rat)
+          (NML (NN:[451..456] CYP7A) (SYM:[456..457] /)
+               (NN:[457..467] luciferase))
+          (NN:[468..476] reporter) (NN:[477..481] gene))))
+    (VP (VBD:[482..485] was)
+      (VP (VBN:[486..495] increased)
+        (NP-1 (-NONE-:[495..495] *))
+        (ADVP-EXT
+          (QP (CD:[496..500] five) (HYPH:[500..501] -) (RB:[501..505] fold)))
+        (PP (IN:[507..509] by)
+          (NP-LGS
+            (NP
+              (NP (NN:[510..519] all-trans) (JJ:[520..528] retinoic)
+                  (NN:[529..533] acid))
+              (NP (-LRB-:[534..535] -LRB-) (NN:[535..539] atRA)
+                  (-RRB-:[539..540] -RRB-)))
+            (CC:[541..543] or)
+            (NP
+              (NP (NN:[544..549] 9-cis) (JJ:[550..558] retinoic)
+                  (NN:[559..563] acid))
+              (NP (-LRB-:[564..565] -LRB-) (NN:[565..569] 9cRA)
+                  (-RRB-:[569..570] -RRB-)))))
+        (PP (IN:[571..573] in)
+          (NP (JJ:[574..583] transient) (NN:[585..597] transfection)
+              (NN:[598..603] assay)))
+        (PP-LOC (IN:[604..606] in)
+          (NP (NN:[607..612] HepG2) (NNS:[613..618] cells)))))
+    (.:[618..619] .)))
+
+;sentence 5 Span:620..792
+;Cotransfection with retinoid X receptor (RXR)  stimulated the promoter
+;activity in the absence of ligand, however, addition of  atRA inhibited the
+;transcriptional activity.
+;[640..659]:substance:"retinoid X receptor"
+;[661..664]:substance:"RXR"
+;[682..690]:substance:"promoter"
+;[718..724]:substance:"ligand"
+;[748..752]:substance:"atRA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[620..634] Cotransfection))
+      (PP (IN:[635..639] with)
+        (NP
+          (NP (JJ:[640..648] retinoid) (NN:[649..650] X)
+              (NN:[651..659] receptor))
+          (NP (-LRB-:[660..661] -LRB-) (NN:[661..664] RXR)
+              (-RRB-:[664..665] -RRB-)))))
+    (VP (VBD:[667..677] stimulated)
+      (NP (DT:[678..681] the) (NN:[682..690] promoter) (NN:[691..699] activity))
+      (PP (IN:[700..702] in)
+        (NP
+          (NP (DT:[703..706] the) (NN:[707..714] absence))
+          (PP (IN:[715..717] of)
+            (NP (NN:[718..724] ligand)))))
+      (,:[724..725] ,)
+      (S-ADV
+        (ADVP (RB:[726..733] however))
+        (,:[733..734] ,)
+        (NP-SBJ
+          (NP (NN:[735..743] addition))
+          (PP (IN:[744..746] of)
+            (NP (NN:[748..752] atRA))))
+        (VP (VBD:[753..762] inhibited)
+          (NP (DT:[763..766] the) (JJ:[767..782] transcriptional)
+              (NN:[783..791] activity)))))
+    (.:[791..792] .)))
+
+;sentence 6 Span:793..895
+;Cotransfection with retinoic acid  receptor (RAR) did not have much effect on
+;CYP7A promoter activity.
+;[813..836]:substance:"retinoic acid  receptor"
+;[838..841]:substance:"RAR"
+;[871..876]:cyp450:"CYP7A"
+;[877..885]:substance:"promoter"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[793..807] Cotransfection))
+      (PP (IN:[808..812] with)
+        (NP
+          (NP (JJ:[813..821] retinoic) (NN:[822..826] acid)
+              (NN:[828..836] receptor))
+          (NP (-LRB-:[837..838] -LRB-) (NN:[838..841] RAR)
+              (-RRB-:[841..842] -RRB-)))))
+    (VP (VBD:[843..846] did) (RB:[847..850] not)
+      (VP (VB:[851..855] have)
+        (NP
+          (NP (JJ:[856..860] much) (NN:[861..867] effect))
+          (PP (IN:[868..870] on)
+            (NP (NN:[871..876] CYP7A) (NN:[877..885] promoter)
+                (NN:[886..894] activity))))))
+    (.:[894..895] .)))
+
+;sentence 7 Span:896..1091
+;The CYP7A  promoter, when linked upstream to the SV40/ luciferase reporter
+;gene, strongly  repressed the phorbol 12-myristate 13-acetate
+;(PMA)-stimulated SV40/ luciferase  reporter gene activity.
+;[900..905]:cyp450:"CYP7A"
+;[907..915]:substance:"promoter"
+;[1001..1032]:substance:"phorbol 12-myristate 13-acetate"
+;[1034..1037]:substance:"PMA"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[896..899] The) (NN:[900..905] CYP7A) (NN:[907..915] promoter))
+      (,:[915..916] ,)
+      (SBAR
+        (WHADVP-2 (WRB:[917..921] when))
+        (S
+          (NP-SBJ-1 (-NONE-:[921..921] *))
+          (VP (VBN:[922..928] linked)
+            (NP-1 (-NONE-:[928..928] *))
+            (ADVP (RB:[929..937] upstream))
+            (PP-CLR (TO:[938..940] to)
+              (NP (DT:[941..944] the)
+                (NML (NN:[945..949] SV40) (SYM:[949..950] /)
+                     (NN:[951..961] luciferase))
+                (NN:[962..970] reporter) (NN:[971..975] gene)))
+            (ADVP-TMP-2 (-NONE-:[975..975] *T*))))))
+    (,:[975..976] ,)
+    (ADVP (RB:[977..985] strongly))
+    (VP (VBD:[987..996] repressed)
+      (NP (DT:[997..1000] the)
+        (NML
+          (NML
+            (NML
+              (NML (NN:[1001..1008] phorbol) (NN:[1009..1021] 12-myristate)
+                   (NN:[1022..1032] 13-acetate))
+              (NML (-LRB-:[1033..1034] -LRB-) (NN:[1034..1037] PMA)
+                   (-RRB-:[1037..1038] -RRB-)))
+            (HYPH:[1038..1039] -) (VBN:[1039..1049] stimulated))
+          (NML (NN:[1050..1054] SV40) (SYM:[1054..1055] /)
+               (NN:[1056..1066] luciferase))
+          (NN:[1068..1076] reporter) (NN:[1077..1081] gene))
+        (NN:[1082..1090] activity)))
+    (.:[1090..1091] .)))
+
+;sentence 8 Span:1092..1200
+;The regions conferring the effects of RA and PMA were  mapped to nt-176/ -117
+;and nt-148/-129, respectively.
+;[1130..1132]:substance:"RA"
+;[1137..1140]:substance:"PMA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1092..1095] The) (NNS:[1096..1103] regions))
+      (VP (VBG:[1104..1114] conferring)
+        (NP
+          (NP (DT:[1115..1118] the) (NNS:[1119..1126] effects))
+          (PP (IN:[1127..1129] of)
+            (NP (NN:[1130..1132] RA) (CC:[1133..1136] and) (NN:[1137..1140] PMA))))))
+    (VP (VBD:[1141..1145] were)
+      (VP (VBN:[1147..1153] mapped)
+        (NP-1 (-NONE-:[1153..1153] *))
+        (PP-LOC (TO:[1154..1156] to)
+          (NP
+            (NP (NN:[1157..1159] nt) (SYM:[1159..1160] -) (CD:[1160..1163] 176)
+                (SYM:[1163..1164] /) (SYM:[1165..1166] -) (CD:[1166..1169] 117))
+            (CC:[1170..1173] and)
+            (NP (NN:[1174..1176] nt) (SYM:[1176..1177] -) (CD:[1177..1180] 148)
+                (SYM:[1180..1181] /) (SYM:[1181..1182] -) (CD:[1182..1185] 129))))
+        (,:[1185..1186] ,)
+        (ADVP (RB:[1187..1199] respectively))))
+    (.:[1199..1200] .)))
+
+;sentence 9 Span:1201..1306
+;Several direct repeats of  hormone response element (AGTTCA) in this region
+;are required for RA response.
+;[1228..1235]:substance:"hormone"
+;[1294..1296]:substance:"RA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[1201..1208] Several) (JJ:[1209..1215] direct)
+          (NNS:[1216..1223] repeats))
+      (PP (IN:[1224..1226] of)
+        (NP (NN:[1228..1235] hormone) (NN:[1236..1244] response)
+            (NN:[1245..1252] element)
+          (PRN (-LRB-:[1253..1254] -LRB-)
+            (NP (NN:[1254..1260] AGTTCA))
+            (-RRB-:[1260..1261] -RRB-))))
+      (PP-LOC (IN:[1262..1264] in)
+        (NP (DT:[1265..1269] this) (NN:[1270..1276] region))))
+    (VP (VBP:[1277..1280] are)
+      (VP (VBN:[1281..1289] required)
+        (NP-1 (-NONE-:[1289..1289] *))
+        (PP (IN:[1290..1293] for)
+          (NP (NN:[1294..1296] RA) (NN:[1297..1305] response)))))
+    (.:[1305..1306] .)))
+
+;sentence 10 Span:1308..1388
+;AP-1 like sequences are located within the region responding to both RA and
+;PMA.
+;[1308..1312]:substance:"AP-1"
+;[1377..1379]:substance:"RA"
+;[1384..1387]:substance:"PMA"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1308..1312] AP-1) (NNS:[1318..1327] sequences))
+    (VP (VBP:[1328..1331] are)
+      (VP (VBN:[1332..1339] located)
+        (NP-1 (-NONE-:[1339..1339] *))
+        (PP-LOC (IN:[1340..1346] within)
+          (NP
+            (NP (DT:[1347..1350] the) (NN:[1351..1357] region))
+            (VP (VBG:[1358..1368] responding)
+              (PP-CLR (TO:[1369..1371] to)
+                (NP (DT:[1372..1376] both) (NN:[1377..1379] RA)
+                    (CC:[1380..1383] and) (NN:[1384..1387] PMA))))))))
+    (.:[1387..1388] .)))
+
+;sentence 11 Span:1390..1486
+;Site-directed mutagenesis of the AP-1 site abolished the effects of both RA
+;and  phorbol esters.
+;[1423..1427]:substance:"AP-1"
+;[1463..1465]:substance:"RA"
+;[1471..1485]:substance:"phorbol esters"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (ADJP (NN:[1390..1394] Site) (HYPH:[1394..1395] -)
+              (VBN:[1395..1403] directed))
+        (NN:[1404..1415] mutagenesis))
+      (PP (IN:[1416..1418] of)
+        (NP (DT:[1419..1422] the) (NN:[1423..1427] AP-1) (NN:[1428..1432] site))))
+    (VP (VBD:[1433..1442] abolished)
+      (NP
+        (NP (DT:[1443..1446] the) (NNS:[1447..1454] effects))
+        (PP (IN:[1455..1457] of)
+          (NP (DT:[1458..1462] both)
+            (NP (NN:[1463..1465] RA))
+            (CC:[1466..1469] and)
+            (NP (NN:[1471..1478] phorbol) (NNS:[1479..1485] esters))))))
+    (.:[1485..1486] .)))
+
+;sentence 12 Span:1487..1531
+;Retinoic acid effect was antagonized by PMA.
+;[1487..1500]:substance:"Retinoic acid"
+;[1527..1530]:substance:"PMA"
+(SENT
+  (S
+    (NP-SBJ-1
+       (JJ:[1487..1495] Retinoic) (NN:[1496..1500] acid)
+      (NN:[1501..1507] effect))
+    (VP (VBD:[1508..1511] was)
+      (VP (VBN:[1512..1523] antagonized)
+        (NP-1 (-NONE-:[1523..1523] *))
+        (PP (IN:[1524..1526] by)
+          (NP-LGS (NN:[1527..1530] PMA)))))
+    (.:[1530..1531] .)))
+
+;sentence 13 Span:1532..1679
+;Moreover,  cotransfection of Fos and Jun expression vectors blunted the
+;stimulatory effect  of retinoic acid on the CYP7A/luciferase gene activity.
+;[1627..1640]:substance:"retinoic acid"
+(SENT
+  (S
+    (ADVP (RB:[1532..1540] Moreover))
+    (,:[1540..1541] ,)
+    (NP-SBJ
+      (NP (NN:[1543..1557] cotransfection))
+      (PP (IN:[1558..1560] of)
+        (NP
+          (NP (NN:[1561..1564] Fos)
+            (NML-1 (-NONE-:[1564..1564] *P*)))
+          (CC:[1565..1568] and)
+          (NP (NN:[1569..1572] Jun)
+            (NML-1 (NN:[1573..1583] expression) (NNS:[1584..1591] vectors))))))
+    (VP (VBD:[1592..1599] blunted)
+      (NP
+        (NP (DT:[1600..1603] the) (JJ:[1604..1615] stimulatory)
+            (NN:[1616..1622] effect))
+        (PP (IN:[1624..1626] of)
+          (NP (JJ:[1627..1635] retinoic) (NN:[1636..1640] acid)))
+        (PP (IN:[1641..1643] on)
+          (NP (DT:[1644..1647] the)
+            (NML
+              (NML (NN:[1648..1653] CYP7A) (SYM:[1653..1654] /)
+                   (NN:[1654..1664] luciferase))
+              (NN:[1665..1669] gene))
+            (NN:[1670..1678] activity)))))
+    (.:[1678..1679] .)))
+
+;sentence 14 Span:1680..1785
+;Therefore, effects of  two different signal transduction pathways converge to
+;a common response  element.
+(SENT
+  (S
+    (ADVP (RB:[1680..1689] Therefore))
+    (,:[1689..1690] ,)
+    (NP-SBJ
+      (NP (NNS:[1691..1698] effects))
+      (PP (IN:[1699..1701] of)
+        (NP (CD:[1703..1706] two) (JJ:[1707..1716] different)
+          (NML (NN:[1717..1723] signal) (NN:[1724..1736] transduction))
+          (NNS:[1737..1745] pathways))))
+    (VP (VBP:[1746..1754] converge)
+      (PP (TO:[1755..1757] to)
+        (NP (DT:[1758..1759] a) (JJ:[1760..1766] common)
+            (NN:[1767..1775] response) (NN:[1777..1784] element))))
+    (.:[1784..1785] .)))
+
+;sentence 15 Span:1786..1905
+;This regulatory cross-talk may be involved in bile acid repression and 
+;regulates CYP7 gene transcription in the liver.
+;[1832..1841]:substance:"bile acid"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[1786..1790] This) (JJ:[1791..1801] regulatory)
+              (NN:[1802..1807] cross) (HYPH:[1807..1808] -)
+              (NN:[1808..1812] talk))
+    (VP
+      (VP (MD:[1813..1816] may)
+        (VP (VB:[1817..1819] be)
+          (VP (VBN:[1820..1828] involved)
+            (NP-1 (-NONE-:[1828..1828] *))
+            (PP-CLR (IN:[1829..1831] in)
+              (NP
+                 (NN:[1832..1836] bile) (NN:[1837..1841] acid)
+                (NN:[1842..1852] repression))))))
+      (CC:[1853..1856] and)
+      (VP (VBZ:[1858..1867] regulates)
+        (NP (NN:[1868..1872] CYP7) (NN:[1873..1877] gene)
+            (NN:[1878..1891] transcription))
+        (PP-LOC (IN:[1892..1894] in)
+          (NP (DT:[1895..1898] the) (NN:[1899..1904] liver)))))
+    (.:[1904..1905] .)))
+
+;section 16 Span:1909..1953
+;PMID: 8753804 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1909..1913] PMID) (::[1913..1914] :) (CD:[1915..1922] 8753804)
+        (NN:[1923..1924] -LSB-) (NNP:[1924..1930] PubMed) (::[1931..1932] -)
+        (NN:[1933..1940] indexed) (IN:[1941..1944] for)
+        (NNP:[1945..1953] MEDLINE-RSB-)))

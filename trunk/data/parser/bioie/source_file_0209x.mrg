@@ -1,0 +1,268 @@
+;PMID: 9761241
+;source_file_1397.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..150] = [t:38..150]
+;2)section:[e:154..248] = [t:154..248]
+;3)section:[e:252..399] = [t:252..399]
+;4)sentence:[e:403..606] = [t:403..606]
+;5)sentence:[e:607..807] = [t:607..807]
+;6)sentence:[e:808..965] = [t:808..965]
+;7)sentence:[e:966..1193] = [t:966..1193]
+;8)section:[e:1197..1241] = [t:1197..1241]
+
+;section 0 Span:0..33
+;Clin Chem  1998 Oct;44(10):2103-7
+(SEC
+  (FRAG (DT:[0..4] Clin) (JJ:[5..9] Chem) (CD:[11..15] 1998)
+        (IN:[16..23] Oct;44-LRB-) (CD:[23..25] 10) (HYPH:[25..26] -RRB-)
+        (CD:[26..31] :2103) (HYPH:[31..32] -) (CD:[32..33] 7)))
+
+;sentence 1 Span:38..150
+;K-ras mutations in stools and tissue samples from patients with malignant and
+; nonmalignant pancreatic diseases.
+;[38..43]:gene-rna:"K-ras"
+;[102..111]...[130..149]:malignancy:"malignant"..."pancreatic diseases"
+(SENT
+  (NP-HLN
+    (NP-SBJ (NN:[38..43] K-ras) (NNS:[44..53] mutations))
+    (PP-LOC (IN:[54..56] in)
+      (NP
+        (NP
+          (NP (NNS:[57..63] stools))
+          (CC:[64..67] and)
+          (NP (NN:[68..74] tissue) (NNS:[75..82] samples)))
+        (PP (IN:[83..87] from)
+          (NP
+            (NP (NNS:[88..96] patients))
+            (PP (IN:[97..101] with)
+              (NP
+                (NP (JJ:[102..111] malignant)
+                  (NML-1 (-NONE-:[111..111] *P*)))
+                (CC:[112..115] and)
+                (NP (JJ:[117..129] nonmalignant)
+                  (NML-1 (JJ:[130..140] pancreatic) (NNS:[141..149] diseases)))))))))
+    (.:[149..150] .)))
+
+;section 2 Span:154..248
+;Berndt C, Haubold K, Wenger F, Brux B, Muller J, Bendzko P, Hillebrand T, 
+;Kottgen E, Zanow J.
+(SEC
+  (FRAG (NNP:[154..160] Berndt) (NNP:[161..162] C) (,:[162..163] ,)
+        (NNP:[164..171] Haubold) (NNP:[172..173] K) (NNP:[173..174] ,)
+        (NNP:[175..181] Wenger) (NNP:[182..183] F) (,:[183..184] ,)
+        (DT:[185..189] Brux) (NNP:[190..191] B) (,:[191..192] ,)
+        (NNP:[193..199] Muller) (NNP:[200..202] J,) (NNP:[203..210] Bendzko)
+        (NNP:[211..212] P) (VBD:[212..213] ,) (NNP:[214..224] Hillebrand)
+        (NNP:[225..226] T) (,:[226..227] ,) (NNP:[229..236] Kottgen)
+        (NNP:[237..238] E) (,:[238..239] ,) (NNP:[240..245] Zanow)
+        (NNP:[246..248] J.)))
+
+;section 3 Span:252..399
+;Institute of Laboratory Medicine and Pathobiochemistry, Medical Faculty
+;Charite,  Humboldt-University, Berlin, Germany. christoph.berndt@charite.de
+(SEC
+  (FRAG (NNP:[252..261] Institute) (NNP:[262..264] of)
+        (NNP:[265..275] Laboratory) (NNP:[276..284] Medicine)
+        (VBD:[285..288] and) (NNP:[289..306] Pathobiochemistry) (,:[306..307] ,)
+        (NNP:[308..315] Medical) (NNP:[316..323] Faculty)
+        (NNP:[324..331] Charite) (,:[331..332] ,) (NNP:[334..342] Humboldt)
+        (HYPH:[342..343] -) (NNP:[343..353] University) (,:[353..354] ,)
+        (NNP:[355..361] Berlin) (,:[361..362] ,) (NNP:[363..370] Germany)
+        (.:[370..371] .) ('':[372..381] christoph)
+        (VBD:[381..396] .berndt@charite) (.:[396..399] .de)))
+
+;sentence 4 Span:403..606
+;Mutant-enriched PCR and reverse dot blot hybridization in microplates were 
+;applied for examining K-ras status in stools and tissue samples from patients
+; with pancreatic tumors and chronic pancreatitis.
+;[501..506]:gene-rna:"K-ras"
+;[563..580]:malignancy:"pancreatic tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (ADJP (NN:[403..409] Mutant) (HYPH:[409..410] -)
+              (VBN:[410..418] enriched))
+        (NN:[419..422] PCR))
+      (CC:[423..426] and)
+      (NP
+        (NP (JJ:[427..434] reverse)
+          (NML (NN:[435..438] dot) (NN:[439..443] blot))
+          (NN:[444..457] hybridization))
+        (PP (IN:[458..460] in)
+          (NP (NNS:[461..472] microplates)))))
+    (VP (VBD:[473..477] were)
+      (VP (VBN:[479..486] applied)
+        (NP-1 (-NONE-:[486..486] *))
+        (PP-PRP (IN:[487..490] for)
+          (S-NOM
+            (NP-SBJ (-NONE-:[490..490] *))
+            (VP (VBG:[491..500] examining)
+              (NP (NN:[501..506] K-ras) (NN:[507..513] status))
+              (PP-LOC (IN:[514..516] in)
+                (NP
+                  (NP
+                    (NP (NNS:[517..523] stools))
+                    (CC:[524..527] and)
+                    (NP (NN:[528..534] tissue) (NNS:[535..542] samples)))
+                  (PP (IN:[543..547] from)
+                    (NP
+                      (NP (NNS:[548..556] patients))
+                      (PP (IN:[558..562] with)
+                        (NP
+                          (NP (JJ:[563..573] pancreatic) (NNS:[574..580] tumors))
+                          (CC:[581..584] and)
+                          (NP (JJ:[585..592] chronic)
+                              (NN:[593..605] pancreatitis)))))))))))))
+    (.:[605..606] .)))
+
+;sentence 5 Span:607..807
+;In tissue samples, K-ras  mutations were found in 32 of 35 cases of ductal
+;adenocarcinoma, in 5 of 7  periampullary cancers, in 1 cystadenocarcinoma,
+;and in 3 of 5 patients with  chronic pancreatitis.
+;[626..631]:gene-rna:"K-ras"
+;[675..696]:malignancy:"ductal adenocarcinoma"
+;[709..730]:malignancy:"periampullary cancers"
+;[737..755]:malignancy:"cystadenocarcinoma"
+;[786..806]:malignancy:"chronic pancreatitis"
+(SENT
+  (S
+    (PP (IN:[607..609] In)
+      (NP (NN:[610..616] tissue) (NNS:[617..624] samples)))
+    (,:[624..625] ,)
+    (NP-SBJ-1 (NN:[626..631] K-ras) (NNS:[633..642] mutations))
+    (VP (VBD:[643..647] were)
+      (VP (VBN:[648..653] found)
+        (NP-1 (-NONE-:[653..653] *))
+        (PP
+          (PP (IN:[654..656] in)
+            (NP
+              (NP (CD:[657..659] 32))
+              (PP (IN:[660..662] of)
+                (NP
+                  (NP (CD:[663..665] 35) (NNS:[666..671] cases))
+                  (PP (IN:[672..674] of)
+                    (NP (JJ:[675..681] ductal) (NN:[682..696] adenocarcinoma)))))))
+          (,:[696..697] ,)
+          (PP (IN:[698..700] in)
+            (NP
+              (NP (CD:[701..702] 5))
+              (PP (IN:[703..705] of)
+                (NP (CD:[706..707] 7)
+                   (JJ:[709..722] periampullary) (NNS:[723..730] cancers)))))
+          (,:[730..731] ,)
+          (PP-LOC (IN:[732..734] in)
+            (NP (CD:[735..736] 1) (NN:[737..755] cystadenocarcinoma)))
+          (,:[755..756] ,) (CC:[757..760] and)
+          (PP-LOC (IN:[761..763] in)
+            (NP
+              (NP (CD:[764..765] 3))
+              (PP (IN:[766..768] of)
+                (NP
+                  (NP (CD:[769..770] 5) (NNS:[771..779] patients))
+                  (PP (IN:[780..784] with)
+                    (NP (JJ:[786..793] chronic) (NN:[794..806] pancreatitis))))))))))
+    (.:[806..807] .)))
+
+;sentence 6 Span:808..965
+;In stools, mutated K-ras was seen in 10 of 25 cases of  ductal
+;adenocarcinoma, in 1 case of cystadenocarcinoma, and in 2 of 6 cases of 
+;chronic pancreatitis.
+;[827..832]:gene-rna:"K-ras"
+;[864..885]:malignancy:"ductal adenocarcinoma"
+;[900..918]:malignancy:"cystadenocarcinoma"
+(SENT
+  (S
+    (PP-LOC (IN:[808..810] In)
+      (NP (NNS:[811..817] stools)))
+    (,:[817..818] ,)
+    (NP-SBJ-1 (VBN:[819..826] mutated) (NN:[827..832] K-ras))
+    (VP (VBD:[833..836] was)
+      (VP (VBN:[837..841] seen)
+        (NP-1 (-NONE-:[841..841] *))
+        (PP
+          (PP (IN:[842..844] in)
+            (NP
+              (NP (CD:[845..847] 10))
+              (PP (IN:[848..850] of)
+                (NP
+                  (NP (CD:[851..853] 25) (NNS:[854..859] cases))
+                  (PP (IN:[860..862] of)
+                    (NP (JJ:[864..870] ductal) (NN:[871..885] adenocarcinoma)))))))
+          (,:[885..886] ,)
+          (PP (IN:[887..889] in)
+            (NP
+              (NP (CD:[890..891] 1) (NN:[892..896] case))
+              (PP (IN:[897..899] of)
+                (NP (NN:[900..918] cystadenocarcinoma)))))
+          (,:[918..919] ,) (CC:[920..923] and)
+          (PP (IN:[924..926] in)
+            (NP
+              (NP (CD:[927..928] 2))
+              (PP (IN:[929..931] of)
+                (NP
+                  (NP (CD:[932..933] 6) (NNS:[934..939] cases))
+                  (PP (IN:[940..942] of)
+                    (NP (JJ:[944..951] chronic) (NN:[952..964] pancreatitis))))))))))
+    (.:[964..965] .)))
+
+;sentence 7 Span:966..1193
+;These data indicate that the K-ras status of stool samples  may help identify
+;pancreatic carcinoma and persons at risk for cancer  development; however, it
+;does not allow discrimination of malignant from  nonmalignant diseases.
+;[995..1000]:gene-rna:"K-ras"
+;[1044..1064]:malignancy:"pancreatic carcinoma"
+(SENT
+  (S
+    (NP-SBJ (DT:[966..971] These) (NNS:[972..976] data))
+    (VP (VBP:[977..985] indicate)
+      (SBAR (IN:[986..990] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[991..994] the) (NN:[995..1000] K-ras)
+                (NN:[1001..1007] status))
+            (PP (IN:[1008..1010] of)
+              (NP (NN:[1011..1016] stool) (NNS:[1017..1024] samples))))
+          (VP (MD:[1026..1029] may)
+            (VP (VB:[1030..1034] help)
+              (S-ADV
+                (NP-SBJ (-NONE-:[1034..1034] *))
+                (VP (VB:[1035..1043] identify)
+                  (NP
+                    (NP (JJ:[1044..1054] pancreatic) (NN:[1055..1064] carcinoma))
+                    (CC:[1065..1068] and)
+                    (NP
+                      (NP (NNS:[1069..1076] persons))
+                      (PP (IN:[1077..1079] at)
+                        (NP
+                          (NP (NN:[1080..1084] risk))
+                          (PP (IN:[1085..1088] for)
+                            (NP (NN:[1089..1095] cancer)
+                                (NN:[1097..1108] development)))))))))))))
+      (,:[1108..1109] ;)
+      (S-ADV
+        (ADVP (RB:[1110..1117] however))
+        (,:[1117..1118] ,)
+        (NP-SBJ (PRP:[1119..1121] it))
+        (VP (VBZ:[1122..1126] does) (RB:[1127..1130] not)
+          (VP (VB:[1131..1136] allow)
+            (NP
+              (NP (NN:[1137..1151] discrimination))
+              (PP (IN:[1152..1154] of)
+                (NP (JJ:[1155..1164] malignant)
+                  (NML-1 (-NONE-:[1164..1164] *P*))))
+              (PP (IN:[1165..1169] from)
+                (NP (JJ:[1171..1183] nonmalignant)
+                  (NML-1 (NNS:[1184..1192] diseases)))))))))
+    (.:[1192..1193] .)))
+
+;section 8 Span:1197..1241
+;PMID: 9761241 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1197..1201] PMID) (::[1201..1202] :) (CD:[1203..1210] 9761241)
+        (IN:[1211..1212] -LSB-) (NNP:[1212..1218] PubMed) (HYPH:[1219..1220] -)
+        (JJ:[1221..1228] indexed) (IN:[1229..1232] for)
+        (NNP:[1233..1241] MEDLINE-RSB-)))

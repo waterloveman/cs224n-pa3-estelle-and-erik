@@ -1,0 +1,443 @@
+;PMID: 9143866
+;source_file_1787.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..38] = [t:0..38]
+;1)sentence:[e:44..144] = [t:44..144]
+;2)section:[e:148..163] = [t:148..163]
+;3)section:[e:167..241] = [t:167..241]
+;4)sentence:[e:245..255] = [t:245..255]
+;5)sentence:[e:256..342] = [t:256..342]
+;6)sentence:[e:343..481] = [t:343..481]
+;7)sentence:[e:482..490] = [t:482..490]
+;8)sentence:[e:491..620] = [t:491..620]
+;9)sentence:[e:621..718] = [t:621..718]
+;10)sentence:[e:719..998] = [t:719..998]
+;11)sentence:[e:999..1174] = [t:999..1174]
+;12)sentence:[e:1175..1346] = [t:1175..1346]
+;13)sentence:[e:1347..1358] = [t:1347..1358]
+;14)sentence:[e:1359..1740] = [t:1359..1740]
+;15)section:[e:1744..1788] = [t:1744..1788]
+
+;section 0 Span:0..38
+;Eur J Clin Pharmacol. 1997;52(1):41-7.
+(SEC
+  (FRAG (NNP:[0..3] Eur) (NNP:[4..5] J) (NNP:[6..10] Clin)
+        (NNP:[11..20] Pharmacol) (.:[20..21] .) (CD:[22..30] 1997;52-LRB-)
+        (CD:[30..31] 1) (-RRB-:[31..32] -RRB-) (::[32..33] :) (CD:[33..35] 41)
+        (HYPH:[35..36] -) (CD:[36..38] 7.)))
+
+;sentence 1 Span:44..144
+;Different effects of inhibitors on the O- and N-demethylation of codeine in 
+;human liver microsomes.
+;[65..75]:substance:"inhibitors"
+;[109..116]:substance:"codeine"
+(SENT
+  (NP-HLN
+    (NP (JJ:[44..53] Different) (NNS:[54..61] effects))
+    (PP (IN:[62..64] of)
+      (NP (NNS:[65..75] inhibitors)))
+    (PP (IN:[76..78] on)
+      (NP
+        (NP (DT:[79..82] the)
+          (NML (NN:[83..84] O) (HYPH:[84..85] -)
+            (NML-1 (-NONE-:[85..85] *P*)))
+          (CC:[86..89] and)
+          (NML (NN:[90..91] N) (HYPH:[91..92] -)
+            (NML-1 (NN:[92..105] demethylation))))
+        (PP (IN:[106..108] of)
+          (NP (NN:[109..116] codeine)))))
+    (PP-LOC (IN:[117..119] in)
+      (NP (JJ:[121..126] human) (NN:[127..132] liver)
+          (NNS:[133..143] microsomes)))
+    (.:[143..144] .)))
+
+;section 2 Span:148..163
+;Yue QY, Sawe J.
+(SEC
+  (FRAG (NNP:[148..151] Yue) (NNP:[152..154] QY) (,:[154..155] ,)
+        (NNP:[156..160] Sawe) (NNP:[161..163] J.)))
+
+;section 3 Span:167..241
+;Department of Clinical Pharmacology, Huddinge University Hospital, Sweden.
+(SEC
+  (FRAG (NNP:[167..177] Department) (IN:[178..180] of) (NNP:[181..189] Clinical)
+        (NNP:[190..202] Pharmacology) (,:[202..203] ,) (NNP:[204..212] Huddinge)
+        (NNP:[213..223] University) (NNP:[224..232] Hospital) (,:[232..233] ,)
+        (NNP:[234..240] Sweden) (.:[240..241] .)))
+
+;sentence 4 Span:245..255
+;OBJECTIVE:
+(SENT
+  (NP (NN:[245..254] OBJECTIVE) (::[254..255] :)))
+
+;sentence 5 Span:256..342
+;The O- and N-demethylation of codeine is catalysed by CYP2D6 and  CYP3A4
+;respectively.
+;[286..293]:substance:"codeine"
+;[310..316]:cyp450:"CYP2D6"
+;[322..328]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[256..259] The)
+        (NML
+          (NML (NN:[260..261] O) (HYPH:[261..262] -)
+            (NML-1 (-NONE-:[262..262] *P*)))
+          (CC:[263..266] and)
+          (NML (NN:[267..268] N) (HYPH:[268..269] -)
+            (NML-1 (NN:[269..282] demethylation)))))
+      (PP (IN:[283..285] of)
+        (NP (NN:[286..293] codeine))))
+    (VP (VBZ:[294..296] is)
+      (VP (VBN:[297..306] catalysed)
+        (NP-2 (-NONE-:[306..306] *))
+        (PP (IN:[307..309] by)
+          (NP-LGS (NN:[310..316] CYP2D6) (CC:[317..320] and)
+                  (NN:[322..328] CYP3A4)))
+        (ADVP (RB:[329..341] respectively))))
+    (.:[341..342] .)))
+
+;sentence 6 Span:343..481
+;The formation rates of morphine by O-demethylation and  norcodeine by
+;N-demethylation were studied in two sets of human liver  microsomes.
+;[366..374]:substance:"morphine"
+;[399..409]:substance:"norcodeine"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[343..346] The) (NN:[347..356] formation) (NNS:[357..362] rates))
+      (PP (IN:[363..365] of)
+        (NP
+          (NP
+            (NP (NN:[366..374] morphine))
+            (PP (IN:[375..377] by)
+              (NP (NN:[378..393] O-demethylation))))
+          (CC:[394..397] and)
+          (NP
+            (NP (NN:[399..409] norcodeine))
+            (PP (IN:[410..412] by)
+              (NP (NN:[413..428] N-demethylation)))))))
+    (VP (VBD:[429..433] were)
+      (VP (VBN:[434..441] studied)
+        (NP-1 (-NONE-:[441..441] *))
+        (PP-LOC (IN:[442..444] in)
+          (NP
+            (NP (CD:[445..448] two) (NNS:[449..453] sets))
+            (PP (IN:[454..456] of)
+              (NP (JJ:[457..462] human) (NN:[463..468] liver)
+                  (NNS:[470..480] microsomes)))))))
+    (.:[480..481] .)))
+
+;sentence 7 Span:482..490
+;RESULTS:
+(SENT
+  (NP (NNS:[482..489] RESULTS) (::[489..490] :)))
+
+;sentence 8 Span:491..620
+;Relatively high K(m) values were found for both O- and  N-demethylations,
+;suggesting a low affinity to the corresponding enzymes.
+;[507..511]:quantitative-name:"K(m)"
+;[612..619]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ-2
+      (ADJP (RB:[491..501] Relatively) (JJ:[502..506] high))
+      (NN:[507..511] K-LRB-m-RRB-) (NNS:[512..518] values))
+    (VP (VBD:[519..523] were)
+      (VP (VBN:[524..529] found)
+        (NP-2 (-NONE-:[529..529] *))
+        (PP (IN:[530..533] for)
+          (NP (CC:[534..538] both)
+            (NP
+              (NP (NN:[539..540] O) (HYPH:[540..541] -)
+                (NML-1 (-NONE-:[541..541] *P*)))
+              (CC:[542..545] and)
+              (NP (NN:[547..548] N) (HYPH:[548..549] -)
+                (NML-1 (NNS:[549..563] demethylations))))))
+        (,:[563..564] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[564..564] *))
+          (VP (VBG:[565..575] suggesting)
+            (NP
+              (NP (DT:[576..577] a) (JJ:[578..581] low) (NN:[582..590] affinity))
+              (PP (TO:[591..593] to)
+                (NP (DT:[594..597] the) (VBG:[598..611] corresponding)
+                    (NNS:[612..619] enzymes))))))))
+    (.:[619..620] .)))
+
+;sentence 9 Span:621..718
+;The  inhibitory effects of various drugs were found to be different for O-
+;and  N-demethylations.
+;[656..661]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[621..624] The) (JJ:[626..636] inhibitory)
+          (NNS:[637..644] effects))
+      (PP (IN:[645..647] of)
+        (NP (JJ:[648..655] various) (NNS:[656..661] drugs))))
+    (VP (VBD:[662..666] were)
+      (VP (VBN:[667..672] found)
+        (S
+          (NP-SBJ-2 (-NONE-:[672..672] *))
+          (VP (TO:[673..675] to)
+            (VP (VB:[676..678] be)
+              (ADJP-PRD (JJ:[679..688] different)
+                (PP (IN:[689..692] for)
+                  (NP
+                    (NP (NN:[693..694] O) (HYPH:[694..695] -)
+                      (NML-1 (-NONE-:[695..695] *P*)))
+                    (CC:[696..699] and)
+                    (NP (NN:[701..702] N) (HYPH:[702..703] -)
+                      (NML-1 (NNS:[703..717] demethylations)))))))))))
+    (.:[717..718] .)))
+
+;sentence 10 Span:719..998
+;The substrates of CYP2D6 such as thioridazine, amitriptyline  and metoprolol
+;inhibited the O-demethylation of codeine preferentially, while  the
+;substrates of CYP3A4 such as cyclosporine A, midazolam and erythromycin were 
+;all strong inhibitors of the N-demethylation of codeine.
+;[723..733]:substance:"substrates"
+;[737..743]:cyp450:"CYP2D6"
+;[752..764]:substance:"thioridazine"
+;[766..779]:substance:"amitriptyline"
+;[785..795]:substance:"metoprolol"
+;[829..836]:substance:"codeine"
+;[864..874]:substance:"substrates"
+;[878..884]:cyp450:"CYP3A4"
+;[893..907]:substance:"cyclosporine A"
+;[909..918]:substance:"midazolam"
+;[923..935]:substance:"erythromycin"
+;[953..963]:substance:"inhibitors"
+;[990..997]:substance:"codeine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[719..722] The) (NNS:[723..733] substrates))
+      (PP (IN:[734..736] of)
+        (NP (NN:[737..743] CYP2D6)))
+      (PP (JJ:[744..748] such) (IN:[749..751] as)
+        (NP (NN:[752..764] thioridazine) (,:[764..765] ,)
+            (NN:[766..779] amitriptyline) (CC:[781..784] and)
+            (NN:[785..795] metoprolol))))
+    (VP (VBD:[796..805] inhibited)
+      (NP
+        (NP (DT:[806..809] the) (NN:[810..825] O-demethylation))
+        (PP (IN:[826..828] of)
+          (NP (NN:[829..836] codeine))))
+      (ADVP (RB:[837..851] preferentially))
+      (,:[851..852] ,)
+      (SBAR-ADV (IN:[853..858] while)
+        (S
+          (NP-SBJ
+            (NP (DT:[860..863] the) (NNS:[864..874] substrates))
+            (PP (IN:[875..877] of)
+              (NP (NN:[878..884] CYP3A4)))
+            (PP (JJ:[885..889] such) (IN:[890..892] as)
+              (NP
+                (NP (NN:[893..905] cyclosporine) (NN:[906..907] A))
+                (,:[907..908] ,)
+                (NP (NN:[909..918] midazolam))
+                (CC:[919..922] and)
+                (NP (NN:[923..935] erythromycin)))))
+          (VP (VBD:[936..940] were) (DT:[942..945] all)
+            (NP-PRD
+              (NP (JJ:[946..952] strong) (NNS:[953..963] inhibitors))
+              (PP (IN:[964..966] of)
+                (NP
+                  (NP (DT:[967..970] the) (NN:[971..986] N-demethylation))
+                  (PP (IN:[987..989] of)
+                    (NP (NN:[990..997] codeine))))))))))
+    (.:[997..998] .)))
+
+;sentence 11 Span:999..1174
+;Quinidine and  lignocaine, although they are substrates of CYP3A, showed
+;preferential  inhibition over the O-demethylation of codeine, suggesting a
+;low affinity to the  CYP3A.
+;[999..1008]:substance:"Quinidine"
+;[1014..1024]:substance:"lignocaine"
+;[1044..1054]:substance:"substrates"
+;[1058..1063]:cyp450:"CYP3A"
+;[1125..1132]:substance:"codeine"
+;[1168..1173]:cyp450:"CYP3A"
+(SENT
+  (S
+    (NP-SBJ (NN:[999..1008] Quinidine) (CC:[1009..1012] and)
+            (NN:[1014..1024] lignocaine))
+    (,:[1024..1025] ,)
+    (SBAR-ADV (IN:[1026..1034] although)
+      (S
+        (NP-SBJ (PRP:[1035..1039] they))
+        (VP (VBP:[1040..1043] are)
+          (NP-PRD
+            (NP (NNS:[1044..1054] substrates))
+            (PP (IN:[1055..1057] of)
+              (NP (NN:[1058..1063] CYP3A)))))))
+    (,:[1063..1064] ,)
+    (VP (VBD:[1065..1071] showed)
+      (NP
+        (NP (JJ:[1072..1084] preferential) (NN:[1086..1096] inhibition))
+        (PP (IN:[1097..1101] over)
+          (NP
+            (NP (DT:[1102..1105] the) (NN:[1106..1121] O-demethylation))
+            (PP (IN:[1122..1124] of)
+              (NP (NN:[1125..1132] codeine))))))
+      (,:[1132..1133] ,)
+      (S-MNR
+        (NP-SBJ (-NONE-:[1133..1133] *))
+        (VP (VBG:[1134..1144] suggesting)
+          (NP
+            (NP (DT:[1145..1146] a) (JJ:[1147..1150] low)
+                (NN:[1151..1159] affinity))
+            (PP (TO:[1160..1162] to)
+              (NP (DT:[1163..1166] the) (NN:[1168..1173] CYP3A)))))))
+    (.:[1173..1174] .)))
+
+;sentence 12 Span:1175..1346
+;Methadone and dextropropoxyphene showed a preferential inhibition of  CYP2D6
+;over CYP3A, while theophylline did not inhibit the O- or N-demethylation  to
+;a greater extent.
+;[1175..1184]:substance:"Methadone"
+;[1189..1207]:substance:"dextropropoxyphene"
+;[1245..1251]:cyp450:"CYP2D6"
+;[1257..1262]:cyp450:"CYP3A"
+;[1270..1282]:substance:"theophylline"
+(SENT
+  (S
+    (NP-SBJ (NN:[1175..1184] Methadone) (CC:[1185..1188] and)
+            (NN:[1189..1207] dextropropoxyphene))
+    (VP (VBD:[1208..1214] showed)
+      (NP
+        (NP (DT:[1215..1216] a) (JJ:[1217..1229] preferential)
+            (NN:[1230..1240] inhibition))
+        (PP (IN:[1241..1243] of)
+          (NP (NN:[1245..1251] CYP2D6)))
+        (PP (IN:[1252..1256] over)
+          (NP (NN:[1257..1262] CYP3A))))
+      (,:[1262..1263] ,)
+      (SBAR-ADV (IN:[1264..1269] while)
+        (S
+          (NP-SBJ (NN:[1270..1282] theophylline))
+          (VP (VBD:[1283..1286] did) (RB:[1287..1290] not)
+            (VP (VB:[1291..1298] inhibit)
+              (NP (DT:[1299..1302] the)
+                (NML
+                  (NML (NN:[1303..1304] O) (HYPH:[1304..1305] -)
+                    (NML-1 (-NONE-:[1305..1305] *P*)))
+                  (CC:[1306..1308] or)
+                  (NML (NN:[1309..1310] N) (HYPH:[1310..1311] -)
+                    (NML-1 (NN:[1311..1324] demethylation)))))
+              (PP (TO:[1326..1328] to)
+                (NP (DT:[1329..1330] a) (JJR:[1331..1338] greater)
+                    (NN:[1339..1345] extent))))))))
+    (.:[1345..1346] .)))
+
+;sentence 13 Span:1347..1358
+;CONCLUSION:
+(SENT
+  (NP (NN:[1347..1357] CONCLUSION) (::[1357..1358] :)))
+
+;sentence 14 Span:1359..1740
+;It seems that there was a good correspondence  between the capacity of drugs
+;to inhibit the O- and N-demethylation of codeine  in human liver microsomes
+;and their apparent metabolism by CYP2D6 or CYP3A4,  respectively in vivo in
+;man, suggesting that this in vitro inhibition test may  be a useful screen
+;for drugs which interact with these two important  drug-metabolising
+;enzymes.
+;[1430..1435]:substance:"drugs"
+;[1477..1484]:substance:"codeine"
+;[1545..1551]:cyp450:"CYP2D6"
+;[1555..1561]:cyp450:"CYP3A4"
+;[1667..1672]:substance:"drugs"
+;[1714..1718]:substance:"drug"
+;[1732..1739]:cyp450:"enzymes"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1359..1361] It))
+    (VP (VBZ:[1362..1367] seems)
+      (SBAR (IN:[1368..1372] that)
+        (S
+          (NP-SBJ (EX:[1373..1378] there))
+          (VP (VBD:[1379..1382] was)
+            (NP-PRD
+              (NP (DT:[1383..1384] a) (JJ:[1385..1389] good)
+                  (NN:[1390..1404] correspondence))
+              (PP (IN:[1406..1413] between)
+                (NP
+                  (NP
+                    (NP (DT:[1414..1417] the) (NN:[1418..1426] capacity)
+                      (S-3 (-NONE-:[1426..1426] *ICH*)))
+                    (PP (IN:[1427..1429] of)
+                      (NP (NNS:[1430..1435] drugs)))
+                    (S-3
+                      (NP-SBJ (-NONE-:[1435..1435] *))
+                      (VP (TO:[1436..1438] to)
+                        (VP (VB:[1439..1446] inhibit)
+                          (NP
+                            (NP (DT:[1447..1450] the)
+                              (NML
+                                (NML (NN:[1451..1452] O) (HYPH:[1452..1453] -)
+                                  (NML-2 (-NONE-:[1453..1453] *P*)))
+                                (CC:[1454..1457] and)
+                                (NML (NN:[1458..1459] N) (HYPH:[1459..1460] -)
+                                  (NML-2 (NN:[1460..1473] demethylation)))))
+                            (PP (IN:[1474..1476] of)
+                              (NP (NN:[1477..1484] codeine)))
+                            (PP-LOC (IN:[1486..1488] in)
+                              (NP (JJ:[1489..1494] human)
+                                  (NN:[1495..1500] liver)
+                                  (NNS:[1501..1511] microsomes))))))))
+                  (CC:[1512..1515] and)
+                  (NP
+                    (NP (PRP$:[1516..1521] their) (JJ:[1522..1530] apparent)
+                        (NN:[1531..1541] metabolism))
+                    (PP (IN:[1542..1544] by)
+                      (NP
+                        (NP (NN:[1545..1551] CYP2D6) (CC:[1552..1554] or)
+                            (NN:[1555..1561] CYP3A4))
+                        (,:[1561..1562] ,)
+                        (ADVP (RB:[1564..1576] respectively))))
+                    (ADVP (FW:[1577..1579] in) (FW:[1580..1584] vivo))
+                    (PP-LOC (IN:[1585..1587] in)
+                      (NP (NN:[1588..1591] man)))))))
+            (,:[1591..1592] ,)
+            (S-ADV
+              (NP-SBJ (-NONE-:[1592..1592] *))
+              (VP (VBG:[1593..1603] suggesting)
+                (SBAR (IN:[1604..1608] that)
+                  (S
+                    (NP-SBJ (DT:[1609..1613] this)
+                      (NML (FW:[1614..1616] in) (FW:[1617..1622] vitro))
+                      (NN:[1623..1633] inhibition) (NN:[1634..1638] test))
+                    (VP (MD:[1639..1642] may)
+                      (VP (VB:[1644..1646] be)
+                        (NP-PRD
+                          (NP (DT:[1647..1648] a) (JJ:[1649..1655] useful)
+                              (NN:[1656..1662] screen))
+                          (PP (IN:[1663..1666] for)
+                            (NP
+                              (NP (NNS:[1667..1672] drugs))
+                              (SBAR
+                                (WHNP-1 (WDT:[1673..1678] which))
+                                (S
+                                  (NP-SBJ-1 (-NONE-:[1678..1678] *T*))
+                                  (VP (VBP:[1679..1687] interact)
+                                    (PP-CLR (IN:[1688..1692] with)
+                                      (NP (DT:[1693..1698] these)
+                                          (CD:[1699..1702] two)
+                                          (JJ:[1703..1712] important)
+                                        (ADJP (NN:[1714..1718] drug)
+                                              (HYPH:[1718..1719] -)
+                                              (VBG:[1719..1731] metabolising))
+                                        (NNS:[1732..1739] enzymes)))))))))))))))))))
+    (.:[1739..1740] .)))
+
+;section 15 Span:1744..1788
+;PMID: 9143866 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1744..1748] PMID) (::[1748..1749] :) (CD:[1750..1757] 9143866)
+        (NN:[1758..1759] -LSB-) (NNP:[1759..1765] PubMed) (::[1766..1767] -)
+        (NN:[1768..1775] indexed) (IN:[1776..1779] for)
+        (NNP:[1780..1788] MEDLINE-RSB-)))

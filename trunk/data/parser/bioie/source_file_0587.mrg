@@ -1,0 +1,508 @@
+;PMID: 2154492
+;source_file_910.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..104] = [t:45..104]
+;2)sentence:[e:105..280] = [t:105..280]
+;3)section:[e:284..313] = [t:284..313]
+;4)section:[e:317..438] = [t:317..438]
+;5)sentence:[e:442..626] = [t:442..626]
+;6)sentence:[e:627..805] = [t:627..805]
+;7)sentence:[e:806..863] = [t:806..863]
+;8)sentence:[e:864..954] = [t:864..954]
+;9)sentence:[e:955..1211] = [t:955..1211]
+;10)sentence:[e:1212..1365] = [t:1212..1365]
+;11)sentence:[e:1366..1519] = [t:1366..1519]
+;12)sentence:[e:1520..1618] = [t:1520..1618]
+;13)sentence:[e:1619..1742] = [t:1619..1742]
+;14)sentence:[e:1743..1914] = [t:1743..1914]
+;15)sentence:[e:1915..2149] = [t:1915..2149]
+;16)sentence:[e:2150..2385] = [t:2150..2385]
+;17)section:[e:2389..2433] = [t:2389..2433]
+;Token/POS Errors
+;ERROR_POS mismatch [28..29] t:token e:CD 7
+;ERROR_POS mismatch [2432..2433] t:token e:-RRB- ]
+
+;section 0 Span:0..39
+;J Biol Chem. 1990 Mar 5;265(7):3889-97.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        (CD:[13..17] 1990) (NNP:[18..21] Mar) (CD:[22..23] 5) (NN:[23..24] ;)
+        (CD:[24..27] 265) (NN:[27..28] -LRB-) (token:[28..29] 7)
+        (NN:[29..30] -RRB-) (::[30..31] :) (CD:[31..35] 3889) (::[35..36] -)
+        (CD:[36..38] 97) (.:[38..39] .)))
+
+;sentence 1 Span:45..104
+;Regulation of cholesterol 7 alpha-hydroxylase in the liver.
+;[59..90]:cyp450:"cholesterol 7 alpha-hydroxylase"
+(SENT
+  (NP-HLN
+    (NP (NN:[45..55] Regulation))
+    (PP (IN:[56..58] of)
+      (NP (NN:[59..70] cholesterol) (CD:[71..72] 7)
+          (NN:[73..90] alpha-hydroxylase)))
+    (PP-LOC (IN:[91..93] in)
+      (NP (DT:[94..97] the) (NN:[98..103] liver)))
+    (.:[103..104] .)))
+
+;sentence 2 Span:105..280
+;Purification of  cholesterol 7 alpha-hydroxylase and the immunochemical
+;evidence for the  induction of cholesterol 7 alpha-hydroxylase by
+;cholestyramine and circadian  rhythm.
+;[122..153]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[208..239]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[243..257]:substance:"cholestyramine"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[105..117] Purification))
+      (PP (IN:[118..120] of)
+        (NP (NN:[122..133] cholesterol) (CD:[134..135] 7)
+            (NN:[136..153] alpha-hydroxylase))))
+    (CC:[154..157] and)
+    (NP
+      (NP (DT:[158..161] the) (JJ:[162..176] immunochemical)
+          (NN:[177..185] evidence))
+      (PP (IN:[186..189] for)
+        (NP
+          (NP (DT:[190..193] the) (NN:[195..204] induction))
+          (PP (IN:[205..207] of)
+            (NP (NN:[208..219] cholesterol) (CD:[220..221] 7)
+                (NN:[222..239] alpha-hydroxylase)))
+          (PP (IN:[240..242] by)
+            (NP
+              (NP (NN:[243..257] cholestyramine))
+              (CC:[258..261] and)
+              (NP (JJ:[262..271] circadian) (NN:[273..279] rhythm)))))))
+    (.:[279..280] .)))
+
+;section 3 Span:284..313
+;Chiang JY, Miller WF, Lin GM.
+(SEC
+  (FRAG (NNP:[284..290] Chiang) (NNP:[291..293] JY) (,:[293..294] ,)
+        (NNP:[295..301] Miller) (NNP:[302..304] WF) (,:[304..305] ,)
+        (NNP:[306..309] Lin) (NNP:[310..312] GM) (.:[312..313] .)))
+
+;section 4 Span:317..438
+;Department of Biochemistry and Molecular Pathology, Northeastern Ohio 
+;Universities College of Medicine, Rootstown 44272.
+(SEC
+  (FRAG (NNP:[317..327] Department) (IN:[328..330] of)
+        (NNP:[331..343] Biochemistry) (CC:[344..347] and)
+        (NNP:[348..357] Molecular) (NNP:[358..367] Pathology) (,:[367..368] ,)
+        (DT:[369..381] Northeastern) (NNP:[382..386] Ohio)
+        (NNP:[388..400] Universities) (NNP:[401..408] College)
+        (IN:[409..411] of) (NNP:[412..420] Medicine) (,:[420..421] ,)
+        (NNP:[422..431] Rootstown) (CD:[432..437] 44272) (.:[437..438] .)))
+
+;sentence 5 Span:442..626
+;Two cholesterol 7 alpha-hydroxylase isozymes were purified from liver
+;microsomes  of cholestyramine-treated female rats by using anion exchange
+;high performance  liquid chromatography.
+;[446..486]:cyp450:"cholesterol 7 alpha-hydroxylase isozymes"
+;[527..541]:substance:"cholestyramine"
+(SENT
+  (S
+    (NP-SBJ-1 (CD:[442..445] Two)
+      
+      (NML (NN:[446..457] cholesterol) (CD:[458..459] 7)
+           (NN:[460..477] alpha-hydroxylase))
+      (NNS:[478..486] isozymes))
+    (VP (VBD:[487..491] were)
+      (VP (VBN:[492..500] purified)
+        (NP-1 (-NONE-:[500..500] *))
+        (PP (IN:[501..505] from)
+          (NP
+            (NP (NN:[506..511] liver) (NNS:[512..522] microsomes))
+            (PP (IN:[524..526] of)
+              (NP
+                (ADJP (NN:[527..541] cholestyramine) (HYPH:[541..542] -)
+                      (VBN:[542..549] treated))
+                (JJ:[550..556] female) (NNS:[557..561] rats)))))
+        (PP-MNR (IN:[562..564] by)
+          (S-NOM
+            (NP-SBJ (-NONE-:[564..564] *))
+            (VP (VBG:[565..570] using)
+              (NP
+                (NML (NN:[571..576] anion) (NN:[577..585] exchange))
+                (NML (JJ:[586..590] high) (NN:[591..602] performance))
+                (NN:[604..610] liquid) (NN:[611..625] chromatography)))))))
+    (.:[625..626] .)))
+
+;sentence 6 Span:627..805
+;These two cytochrome P-450 isozymes were similar in  electrophoretic
+;mobility, immunocross-reactivity, and Vmax but differed in Km  for
+;cholesterol, turnover number, and charges.
+;[637..662]:cyp450:"cytochrome P-450 isozymes"
+;[734..738]:quantitative-name:"Vmax"
+;[755..757]:quantitative-name:"Km"
+;[763..774]:substance:"cholesterol"
+(SENT
+  (S
+    (NP-SBJ (DT:[627..632] These) (CD:[633..636] two)
+      
+      (NML (NN:[637..647] cytochrome) (NN:[648..653] P-450))
+      (NNS:[654..662] isozymes))
+    (VP
+      (VP (VBD:[663..667] were)
+        (ADJP-PRD (JJ:[668..675] similar)
+          (PP (IN:[676..678] in)
+            (NP
+              (NP (JJ:[680..695] electrophoretic) (NN:[696..704] mobility))
+              (,:[704..705] ,)
+              (NP (AFX:[706..717] immunocross) (HYPH:[717..718] -)
+                  (NN:[718..728] reactivity))
+              (,:[728..729] ,) (CC:[730..733] and)
+              (NP (NN:[734..738] Vmax))))))
+      (CC:[739..742] but)
+      (VP (VBD:[743..751] differed)
+        (PP (IN:[752..754] in)
+          (NP
+            (NP (NN:[755..757] Km))
+            (PP (IN:[759..762] for)
+              (NP
+                (NP (NN:[763..774] cholesterol))
+                (,:[774..775] ,)
+                (NP (NN:[776..784] turnover) (NN:[785..791] number))
+                (,:[791..792] ,) (CC:[793..796] and)
+                (NP (NNS:[797..804] charges))))))))
+    (.:[804..805] .)))
+
+;sentence 7 Span:806..863
+;Antibody against the major  isozyme was raised in rabbit.
+;[806..814]:substance:"Antibody"
+;[834..841]:cyp450:"isozyme"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[806..814] Antibody))
+      (PP (IN:[815..822] against)
+        (NP (DT:[823..826] the) (JJ:[827..832] major) (NN:[834..841] isozyme))))
+    (VP (VBD:[842..845] was)
+      (VP (VBN:[846..852] raised)
+        (NP-1 (-NONE-:[852..852] *))
+        (PP (IN:[853..855] in)
+          (NP (NN:[856..862] rabbit)))))
+    (.:[862..863] .)))
+
+;sentence 8 Span:864..954
+;This antibody specifically inhibited microsomal  cholesterol 7
+;alpha-hydroxylase activity.
+;[869..877]:substance:"antibody"
+;[913..944]:cyp450:"cholesterol 7 alpha-hydroxylase"
+(SENT
+  (S
+    (NP-SBJ (DT:[864..868] This) (NN:[869..877] antibody))
+    (ADVP (RB:[878..890] specifically))
+    (VP (VBD:[891..900] inhibited)
+      (NP (JJ:[901..911] microsomal)
+        (NML (NN:[913..924] cholesterol) (CD:[925..926] 7)
+             (NN:[927..944] alpha-hydroxylase))
+        (NN:[945..953] activity)))
+    (.:[953..954] .)))
+
+;sentence 9 Span:955..1211
+;Immunoblot of microsomal polypeptides  indicated that microsomal cholesterol
+;7 alpha-hydroxylase enzyme levels were  increased in parallel with
+;cholesterol 7 alpha-hydroxylase activity upon the  treatment of rats with
+;diet supplemented with cholestyramine.
+;[980..992]:substance:"polypeptides"
+;[1020..1058]:cyp450:"cholesterol 7 alpha-hydroxylase enzyme"
+;[1099..1130]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[1196..1210]:substance:"cholestyramine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[955..965] Immunoblot))
+      (PP (IN:[966..968] of)
+        (NP (JJ:[969..979] microsomal) (NNS:[980..992] polypeptides))))
+    (VP (VBD:[994..1003] indicated)
+      (SBAR (IN:[1004..1008] that)
+        (S
+          (NP-SBJ-1 (JJ:[1009..1019] microsomal)
+            
+            (NML (NN:[1020..1031] cholesterol) (CD:[1032..1033] 7)
+                 (NN:[1034..1051] alpha-hydroxylase))
+            (NN:[1052..1058] enzyme)
+            (NNS:[1059..1065] levels))
+          (VP (VBD:[1066..1070] were)
+            (VP (VBN:[1072..1081] increased)
+              (NP-1 (-NONE-:[1081..1081] *))
+              (PP (IN:[1082..1084] in)
+                (NP
+                  (NP (NN:[1085..1093] parallel))
+                  (PP (IN:[1094..1098] with)
+                    (NP
+                      (NML (NN:[1099..1110] cholesterol) (CD:[1111..1112] 7)
+                           (NN:[1113..1130] alpha-hydroxylase))
+                      (NN:[1131..1139] activity)))))
+              (PP (IN:[1140..1144] upon)
+                (NP
+                  (NP (DT:[1145..1148] the) (NN:[1150..1159] treatment))
+                  (PP (IN:[1160..1162] of)
+                    (NP (NNS:[1163..1167] rats)))
+                  (PP (IN:[1168..1172] with)
+                    (NP
+                      (NP (NN:[1173..1177] diet))
+                      (VP (VBN:[1178..1190] supplemented)
+                        (NP (-NONE-:[1190..1190] *))
+                        (PP (IN:[1191..1195] with)
+                          (NP (NN:[1196..1210] cholestyramine)))))))))))))
+    (.:[1210..1211] .)))
+
+;sentence 10 Span:1212..1365
+;Both cholesterol 7  alpha-hydroxylase activity and enzyme levels were
+;drastically reduced  immediately after the removal of cholestyramine from the
+;diet.
+;[1217..1249]:cyp450:"cholesterol 7  alpha-hydroxylase"
+;[1263..1269]:substance:"enzyme"
+;[1336..1350]:substance:"cholestyramine"
+(SENT
+  (S
+    (NP-SBJ-1 (CC:[1212..1216] Both)
+      (NP
+        (NML-2 (NN:[1217..1228] cholesterol) (CD:[1229..1230] 7)
+               (NN:[1232..1249] alpha-hydroxylase))
+        (NN:[1250..1258] activity))
+      (CC:[1259..1262] and)
+      (NP
+        (NML-2 (-NONE-:[1262..1262] *P*))
+        (NN:[1263..1269] enzyme) (NNS:[1270..1276] levels)))
+    (VP (VBD:[1277..1281] were)
+      (ADVP (RB:[1282..1293] drastically))
+      (VP (VBN:[1294..1301] reduced)
+        (NP-1 (-NONE-:[1301..1301] *))
+        (PP-TMP
+          (ADVP (RB:[1303..1314] immediately))
+          (IN:[1315..1320] after)
+          (NP
+            (NP (DT:[1321..1324] the) (NN:[1325..1332] removal))
+            (PP (IN:[1333..1335] of)
+              (NP (NN:[1336..1350] cholestyramine)))
+            (PP (IN:[1351..1355] from)
+              (NP (DT:[1356..1359] the) (NN:[1360..1364] diet)))))))
+    (.:[1364..1365] .)))
+
+;sentence 11 Span:1366..1519
+;Cholesterol 7  alpha-hydroxylase activity was also detected in the microsomes
+;of kidney, heart,  and lung in about 7-27% of the level found in the liver.
+;[1366..1398]:cyp450:"Cholesterol 7  alpha-hydroxylase"
+;[1481..1486]:quantitative-value:"7-27%"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NML (NN:[1366..1377] Cholesterol) (CD:[1378..1379] 7)
+           (NN:[1381..1398] alpha-hydroxylase))
+      (NN:[1399..1407] activity))
+    (VP (VBD:[1408..1411] was)
+      (ADVP (RB:[1412..1416] also))
+      (VP (VBN:[1417..1425] detected)
+        (NP-1 (-NONE-:[1425..1425] *))
+        (PP-LOC (IN:[1426..1428] in)
+          (NP
+            (NP (DT:[1429..1432] the) (NNS:[1433..1443] microsomes))
+            (PP (IN:[1444..1446] of)
+              (NP (NN:[1447..1453] kidney) (,:[1453..1454] ,)
+                  (NN:[1455..1460] heart) (,:[1460..1461] ,)
+                  (CC:[1463..1466] and) (NN:[1467..1471] lung)))))
+        (PP (IN:[1472..1474] in)
+          (NP
+            (NP
+              (QP (RB:[1475..1480] about) (CD:[1481..1482] 7)
+                  (HYPH:[1482..1483] -) (CD:[1483..1485] 27))
+              (NN:[1485..1486] %))
+            (PP (IN:[1487..1489] of)
+              (NP
+                (NP (DT:[1490..1493] the) (NN:[1494..1499] level))
+                (VP (VBN:[1500..1505] found)
+                  (NP (-NONE-:[1505..1505] *))
+                  (PP-LOC (IN:[1506..1508] in)
+                    (NP (DT:[1509..1512] the) (NN:[1513..1518] liver))))))))))
+    (.:[1518..1519] .)))
+
+;sentence 12 Span:1520..1618
+;3-Methylcholanthrene  treatment induced cholesterol 7 alpha-hydroxylase
+;activity and enzyme level.
+;[1520..1540]:substance:"3-Methylcholanthrene"
+;[1560..1591]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[1605..1611]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ (NN:[1520..1540] 3-Methylcholanthrene) (NN:[1542..1551] treatment))
+    (VP (VBD:[1552..1559] induced)
+      (NP
+        (NP
+          (NML-1 (NN:[1560..1571] cholesterol) (CD:[1572..1573] 7)
+                 (NN:[1574..1591] alpha-hydroxylase))
+          (NN:[1592..1600] activity))
+        (CC:[1601..1604] and)
+        (NP
+          (NML-1 (-NONE-:[1604..1604] *P*))
+          (NN:[1605..1611] enzyme) (NN:[1612..1617] level))))
+    (.:[1617..1618] .)))
+
+;sentence 13 Span:1619..1742
+;In  contrast, pregnenolone-16 alpha-carbonitrile or dexamethasone treatment
+;greatly  depressed enzyme and activity in rats.
+;[1633..1667]:substance:"pregnenolone-16 alpha-carbonitrile"
+;[1671..1684]:substance:"dexamethasone"
+;[1714..1720]:substance:"enzyme"
+(SENT
+  (S
+    (PP (IN:[1619..1621] In)
+      (NP (NN:[1623..1631] contrast)))
+    (,:[1631..1632] ,)
+    (NP-SBJ
+      (NP
+         (NN:[1633..1648] pregnenolone-16) (NN:[1649..1667] alpha-carbonitrile)
+        (NML-1 (-NONE-:[1667..1667] *P*)))
+      (CC:[1668..1670] or)
+      (NP (NN:[1671..1684] dexamethasone)
+        (NML-1 (NN:[1685..1694] treatment))))
+    (ADVP (RB:[1695..1702] greatly))
+    (VP (VBD:[1704..1713] depressed)
+      (NP (NN:[1714..1720] enzyme) (CC:[1721..1724] and)
+          (NN:[1725..1733] activity))
+      (PP-LOC (IN:[1734..1736] in)
+        (NP (NNS:[1737..1741] rats))))
+    (.:[1741..1742] .)))
+
+;sentence 14 Span:1743..1914
+;Cholesterol 7 alpha-hydroxylase enzyme  level was 2-3-fold higher in liver
+;microsomes of rats maintained under the  reversed light cycle than under the
+;normal light cycle.
+;[1743..1781]:cyp450:"Cholesterol 7 alpha-hydroxylase enzyme"
+;[1793..1801]:quantitative-value:"2-3-fold"
+(SENT
+  (S
+    (NP-SBJ
+      
+      (NML (NN:[1743..1754] Cholesterol) (CD:[1755..1756] 7)
+           (NN:[1757..1774] alpha-hydroxylase))
+      (NN:[1775..1781] enzyme)
+      (NN:[1783..1788] level))
+    (VP (VBD:[1789..1792] was)
+      (ADJP-PRD
+        (ADJP
+          (QP (CD:[1793..1794] 2) (HYPH:[1794..1795] -) (CD:[1795..1796] 3)
+              (HYPH:[1796..1797] -) (RB:[1797..1801] fold))
+          (JJR:[1802..1808] higher))
+        (PP-1 (-NONE-:[1808..1808] *ICH*)))
+      (PP (IN:[1809..1811] in)
+        (NP
+          (NP (NN:[1812..1817] liver) (NNS:[1818..1828] microsomes))
+          (PP (IN:[1829..1831] of)
+            (NP
+              (NP (NNS:[1832..1836] rats))
+              (VP (VBN:[1837..1847] maintained)
+                (NP (-NONE-:[1847..1847] *))
+                (PP (IN:[1848..1853] under)
+                  (NP (DT:[1854..1857] the) (JJ:[1859..1867] reversed)
+                      (NN:[1868..1873] light) (NN:[1874..1879] cycle))))))))
+      (PP-1 (IN:[1880..1884] than)
+        (PP (IN:[1885..1890] under)
+          (NP (DT:[1891..1894] the) (JJ:[1895..1901] normal)
+              (NN:[1902..1907] light) (NN:[1908..1913] cycle)))))
+    (.:[1913..1914] .)))
+
+;sentence 15 Span:1915..2149
+;In genetically obese  Zucker rats, cholesterol 7 alpha-hydroxylase activity
+;and enzyme level did not  respond to the change in the light cycle, however,
+;were induced to the same  levels as in the lean rats by cholestyramine
+;treatment.
+;[1950..1981]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[1995..2001]:substance:"enzyme"
+;[2124..2138]:substance:"cholestyramine"
+(SENT
+  (S
+    (PP (IN:[1915..1917] In)
+      (NP
+        (ADJP (RB:[1918..1929] genetically) (JJ:[1930..1935] obese))
+        (NNP:[1937..1943] Zucker) (NNS:[1944..1948] rats)))
+    (,:[1948..1949] ,)
+    (NP-SBJ-1
+      (NP
+        (NML-2 (NN:[1950..1961] cholesterol) (CD:[1962..1963] 7)
+               (NN:[1964..1981] alpha-hydroxylase))
+        (NN:[1982..1990] activity))
+      (CC:[1991..1994] and)
+      (NP
+        (NML-2 (-NONE-:[1994..1994] *P*))
+        (NN:[1995..2001] enzyme) (NN:[2002..2007] level)))
+    (VP
+      (VP (VBD:[2008..2011] did) (RB:[2012..2015] not)
+        (VP (VB:[2017..2024] respond)
+          (PP-CLR (TO:[2025..2027] to)
+            (NP
+              (NP (DT:[2028..2031] the) (NN:[2032..2038] change))
+              (PP (IN:[2039..2041] in)
+                (NP (DT:[2042..2045] the) (NN:[2046..2051] light)
+                    (NN:[2052..2057] cycle)))))))
+      (,:[2057..2058] ,)
+      (VP
+        (ADVP (RB:[2059..2066] however))
+        (,:[2066..2067] ,) (VBD:[2068..2072] were)
+        (VP (VBN:[2073..2080] induced)
+          (NP-1 (-NONE-:[2080..2080] *))
+          (PP (TO:[2081..2083] to)
+            (NP (DT:[2084..2087] the) (JJ:[2088..2092] same)
+                (NNS:[2094..2100] levels)))
+          (PP (IN:[2101..2103] as)
+            (PP-LOC (IN:[2104..2106] in)
+              (NP (DT:[2107..2110] the) (JJ:[2111..2115] lean)
+                  (NNS:[2116..2120] rats))))
+          (PP (IN:[2121..2123] by)
+            (NP-LGS (NN:[2124..2138] cholestyramine) (NN:[2139..2148] treatment))))))
+    (.:[2148..2149] .)))
+
+;sentence 16 Span:2150..2385
+;This study provided the  first direct evidence that the bile acid feedback
+;regulation and circadian  rhythm of microsomal cholesterol 7
+;alpha-hydroxylase activity involved the  induction of cholesterol 7
+;alpha-hydroxylase enzyme level.
+;[2206..2215]:substance:"bile acid"
+;[2272..2303]:cyp450:"cholesterol 7 alpha-hydroxylase"
+;[2340..2378]:cyp450:"cholesterol 7 alpha-hydroxylase enzyme"
+(SENT
+  (S
+    (NP-SBJ (DT:[2150..2154] This) (NN:[2155..2160] study))
+    (VP (VBD:[2161..2169] provided)
+      (NP (DT:[2170..2173] the) (JJ:[2175..2180] first) (JJ:[2181..2187] direct)
+          (NN:[2188..2196] evidence)
+        (SBAR (IN:[2197..2201] that)
+          (S
+            (NP-SBJ
+              (NP
+                (NP (DT:[2202..2205] the)
+                  (NML
+                    (NML (NN:[2206..2210] bile) (NN:[2211..2215] acid))
+                    (NN:[2216..2224] feedback))
+                  (NN:[2225..2235] regulation))
+                (CC:[2236..2239] and)
+                (NP (JJ:[2240..2249] circadian) (NN:[2251..2257] rhythm)))
+              (PP (IN:[2258..2260] of)
+                (NP (JJ:[2261..2271] microsomal)
+                  (NML (NN:[2272..2283] cholesterol) (CD:[2284..2285] 7)
+                       (NN:[2286..2303] alpha-hydroxylase))
+                  (NN:[2304..2312] activity))))
+            (VP (VBD:[2313..2321] involved)
+              (NP
+                (NP (DT:[2322..2325] the) (NN:[2327..2336] induction))
+                (PP (IN:[2337..2339] of)
+                  (NP
+                    
+                    (NML (NN:[2340..2351] cholesterol) (CD:[2352..2353] 7)
+                         (NN:[2354..2371] alpha-hydroxylase))
+                    (NN:[2372..2378] enzyme)
+                    (NN:[2379..2384] level)))))))))
+    (.:[2384..2385] .)))
+
+;section 17 Span:2389..2433
+;PMID: 2154492 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2389..2393] PMID) (::[2393..2394] :) (CD:[2395..2402] 2154492)
+        (NN:[2403..2404] -LSB-) (NNP:[2404..2410] PubMed) (::[2411..2412] -)
+        (NN:[2413..2420] indexed) (IN:[2421..2424] for)
+        (NNP:[2425..2432] MEDLINE) (token:[2432..2433] -RSB-)))

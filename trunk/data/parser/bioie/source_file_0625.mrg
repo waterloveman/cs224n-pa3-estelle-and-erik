@@ -1,0 +1,391 @@
+;PMID: 2115851
+;source_file_860.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..46] = [t:0..46]
+;1)sentence:[e:52..177] = [t:52..177]
+;2)section:[e:181..207] = [t:181..207]
+;3)section:[e:211..307] = [t:211..307]
+;4)sentence:[e:311..493] = [t:311..493]
+;5)sentence:[e:494..669] = [t:494..669]
+;6)sentence:[e:670..798] = [t:670..798]
+;7)sentence:[e:799..916] = [t:799..916]
+;8)sentence:[e:917..1038] = [t:917..1038]
+;9)sentence:[e:1039..1175] = [t:1039..1175]
+;10)sentence:[e:1176..1397] = [t:1176..1397]
+;11)sentence:[e:1398..1628] = [t:1398..1628]
+;12)section:[e:1632..1676] = [t:1632..1675]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1632..1676][t:1632..1675]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1675..1676] ]
+
+;section 0 Span:0..46
+;Mol Cell Endocrinol. 1990 Jun 18;71(2):133-40.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..8] Cell) (NNP:[9..19] Endocrinol)
+        (.:[19..20] .) (CD:[21..25] 1990) (NNP:[26..29] Jun) (CC:[30..32] 18)
+        (::[32..33] ;) (CD:[33..35] 71) (-LRB-:[35..36] -LRB-) (CD:[36..37] 2)
+        (-RRB-:[37..38] -RRB-) (::[38..39] :) (CD:[39..42] 133)
+        (HYPH:[42..43] -) (CD:[43..45] 40) (.:[45..46] .)))
+
+;sentence 1 Span:52..177
+;Cellular distribution of prostacyclin synthase and specific prostacyclin
+;binding  sites in bovine corpora lutea of pregnancy.
+;[77..98]:cyp450:"prostacyclin synthase"
+;[112..124]:substance:"prostacyclin"
+(SENT
+  (NP-HLN
+    (NP (JJ:[52..60] Cellular) (NN:[61..73] distribution))
+    (PP (IN:[74..76] of)
+      (NP
+        (NP (NN:[77..89] prostacyclin) (NN:[90..98] synthase))
+        (CC:[99..102] and)
+        (NP (JJ:[103..111] specific) (NN:[112..124] prostacyclin)
+            (NN:[125..132] binding) (NNS:[134..139] sites))))
+    (PP-LOC (IN:[140..142] in)
+      (NP
+        (NP (JJ:[143..149] bovine) (FW:[150..157] corpora) (FW:[158..163] lutea))
+        (PP (IN:[164..166] of)
+          (NP (NN:[167..176] pregnancy)))))
+    (.:[176..177] .)))
+
+;section 2 Span:181..207
+;Chegini N, Lei ZM, Rao CV.
+(SEC
+  (FRAG (NNP:[181..188] Chegini) (NNP:[189..190] N) (,:[190..191] ,)
+        (NNP:[192..195] Lei) (NNP:[196..198] ZM) (,:[198..199] ,)
+        (NNP:[200..203] Rao) (NNP:[204..206] CV) (.:[206..207] .)))
+
+;section 3 Span:211..307
+;Department of Obstetrics and Gynecology, University of Louisville School of 
+;Medicine, KY 40292.
+(SEC
+  (FRAG (NNP:[211..221] Department) (IN:[222..224] of)
+        (NNP:[225..235] Obstetrics) (CC:[236..239] and)
+        (NNP:[240..250] Gynecology) (,:[250..251] ,) (NNP:[252..262] University)
+        (IN:[263..265] of) (NNP:[266..276] Louisville) (NNP:[277..283] School)
+        (IN:[284..286] of) (NNP:[288..296] Medicine) (,:[296..297] ,)
+        (NNP:[298..300] KY) (CD:[301..306] 40292) (.:[306..307] .)))
+
+;sentence 4 Span:311..493
+;The cellular distribution of prostacyclin (PGI2) synthase and specific PGI2 
+;binding sites was investigated by light microscope immunocytochemistry and 
+;quantitative autoradiography.
+;[340..368]:cyp450:"prostacyclin (PGI2) synthase"
+;[382..386]:substance:"PGI2"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[311..314] The) (JJ:[315..323] cellular)
+          (NN:[324..336] distribution))
+      (PP (IN:[337..339] of)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[340..352] prostacyclin))
+              (NML (-LRB-:[353..354] -LRB-) (NN:[354..358] PGI2)
+                   (-RRB-:[358..359] -RRB-)))
+            (NN:[360..368] synthase))
+          (CC:[369..372] and)
+          (NP (JJ:[373..381] specific) (NN:[382..386] PGI2)
+              (NN:[388..395] binding) (NNS:[396..401] sites)))))
+    (VP (VBD:[402..405] was)
+      (VP (VBN:[406..418] investigated)
+        (NP-1 (-NONE-:[418..418] *))
+        (PP-MNR (IN:[419..421] by)
+          (NP
+            (NP (NN:[422..427] light) (NN:[428..438] microscope)
+                (NN:[439..458] immunocytochemistry))
+            (CC:[459..462] and)
+            (NP (JJ:[464..476] quantitative) (NN:[477..492] autoradiography))))))
+    (.:[492..493] .)))
+
+;sentence 5 Span:494..669
+;The immunostaining for the enzyme was found in  small (15-18 microns) and
+;large (18-45 microns) cells as well as in non-luteal  cells, arteriole smooth
+;muscle and endothelium.
+;[521..527]:substance:"enzyme"
+;[549..554]:quantitative-value:"15-18"
+;[555..562]:quantitative-units:"microns"
+;[575..580]:quantitative-value:"18-45"
+;[581..588]:quantitative-units:"microns"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (DT:[494..497] The) (NN:[498..512] immunostaining))
+      (PP (IN:[513..516] for)
+        (NP (DT:[517..520] the) (NN:[521..527] enzyme))))
+    (VP (VBD:[528..531] was)
+      (VP (VBN:[532..537] found)
+        (NP-4 (-NONE-:[537..537] *))
+        (PP-LOC
+          (PP (IN:[538..540] in)
+            (NP
+              (NP
+                (ADJP (JJ:[542..547] small)
+                  (PRN (-LRB-:[548..549] -LRB-)
+                    (NP
+                      (NP (CD:[549..551] 15))
+                      (PP (HYPH:[551..552] -)
+                        (NP (CD:[552..554] 18) (NNS:[555..562] microns))))
+                    (-RRB-:[562..563] -RRB-)))
+                (NML-3 (-NONE-:[563..563] *P*)))
+              (CC:[564..567] and)
+              (NP
+                (ADJP (JJ:[568..573] large)
+                  (PRN (-LRB-:[574..575] -LRB-)
+                    (NP
+                      (NP (CD:[575..577] 18))
+                      (PP (HYPH:[577..578] -)
+                        (NP (CD:[578..580] 45) (NNS:[581..588] microns))))
+                    (-RRB-:[588..589] -RRB-)))
+                (NML-3 (NNS:[590..595] cells)))))
+          (CONJP (RB:[596..598] as) (RB:[599..603] well) (IN:[604..606] as))
+          (PP (IN:[607..609] in)
+            (NP
+              (NP
+                (ADJP (AFX:[610..613] non) (HYPH:[613..614] -)
+                      (JJ:[614..620] luteal))
+                (NNS:[622..627] cells))
+              (,:[627..628] ,)
+              (NP (JJ:[629..638] arteriole) (JJ:[639..645] smooth)
+                  (NN:[646..652] muscle))
+              (CD:[653..656] and)
+              (NP (NN:[657..668] endothelium)))))))
+    (.:[668..669] .)))
+
+;sentence 6 Span:670..798
+;There was no consistent  difference between small and large luteal cells and
+;luteal vs. non-luteal cells  in the immunostaining.
+(SENT
+  (S
+    (NP-SBJ (EX:[670..675] There))
+    (VP (VBD:[676..679] was)
+      (NP-PRD
+        (NP (DT:[680..682] no) (JJ:[683..693] consistent)
+            (NN:[695..705] difference))
+        (PP (IN:[706..713] between)
+          (NP
+            (NP
+              (NP (JJ:[714..719] small)
+                (NML-1 (-NONE-:[719..719] *P*)))
+              (CC:[720..723] and)
+              (NP (JJ:[724..729] large)
+                (NML-1 (JJ:[730..736] luteal) (NNS:[737..742] cells))))
+            (CC:[743..746] and)
+            (NP
+              (NP (JJ:[747..753] luteal)
+                (NML-2 (-NONE-:[753..753] *P*)))
+              (FW:[754..757] vs.)
+              (NP
+                (ADJP (AFX:[758..761] non) (HYPH:[761..762] -)
+                      (JJ:[762..768] luteal))
+                (NML-2 (NNS:[769..774] cells)))))))
+      (PP-LOC (IN:[776..778] in)
+        (NP (DT:[779..782] the) (NN:[783..797] immunostaining))))
+    (.:[797..798] .)))
+
+;sentence 7 Span:799..916
+;Vascular smooth muscle and endothelial cells, on the  other hand, contained
+;less immunostaining than the other cells.
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[799..807] Vascular)
+          (NML (JJ:[808..814] smooth) (NN:[815..821] muscle))
+          (NML-1 (-NONE-:[821..821] *P*)))
+        (CC:[822..825] and)
+        (NP (JJ:[826..837] endothelial)
+          (NML-1 (NNS:[838..843] cells))))
+      (,:[843..844] ,)
+      (PP (IN:[845..847] on)
+        (NP (DT:[848..851] the) (JJ:[853..858] other) (NN:[859..863] hand))))
+    (,:[863..864] ,)
+    (VP (VBD:[865..874] contained)
+      (NP
+        (NP (JJR:[875..879] less) (NN:[880..894] immunostaining))
+        (PP (IN:[895..899] than)
+          (NP (DT:[900..903] the) (JJ:[904..909] other) (NNS:[910..915] cells)))))
+    (.:[915..916] .)))
+
+;sentence 8 Span:917..1038
+;Contrary to  wide-spread distribution of PGI2 synthase, specific PGI2 binding
+;sites were only  found in the luteal cells.
+;[958..971]:cyp450:"PGI2 synthase"
+;[982..986]:substance:"PGI2"
+(SENT
+  (S
+    (ADVP (RB:[917..925] Contrary)
+      (PP (TO:[926..928] to)
+        (NP
+          (NP
+            (ADJP (RB:[930..934] wide) (HYPH:[934..935] -)
+                  (VBN:[935..941] spread))
+            (NN:[942..954] distribution))
+          (PP (IN:[955..957] of)
+            (NP (NN:[958..962] PGI2) (NN:[963..971] synthase))))))
+    (,:[971..972] ,)
+    (NP-SBJ-1 (JJ:[973..981] specific) (NN:[982..986] PGI2)
+              (NN:[987..994] binding) (NNS:[995..1000] sites))
+    (VP (VBD:[1001..1005] were)
+      (ADVP (RB:[1006..1010] only))
+      (VP (VBN:[1012..1017] found)
+        (NP-1 (-NONE-:[1017..1017] *))
+        (PP-LOC (IN:[1018..1020] in)
+          (NP (DT:[1021..1024] the) (JJ:[1025..1031] luteal)
+              (NNS:[1032..1037] cells)))))
+    (.:[1037..1038] .)))
+
+;sentence 9 Span:1039..1175
+;On a per cell basis, large luteal cells contained  more sites than small
+;luteal cells and vice versa when expressed per unit cell  area.
+(SENT
+  (S
+    (PP-MNR (IN:[1039..1041] On)
+      (NP (DT:[1042..1043] a)
+        (PP (IN:[1044..1047] per)
+          (NP (NN:[1048..1052] cell)))
+        (NN:[1053..1058] basis)))
+    (,:[1058..1059] ,)
+    (NP-SBJ (JJ:[1060..1065] large) (JJ:[1066..1072] luteal)
+            (NNS:[1073..1078] cells))
+    (VP (VBD:[1079..1088] contained)
+      (NP
+        (NP
+          (NP (NN:[1090..1094] more) (NNS:[1095..1100] sites))
+          (PP (IN:[1101..1105] than)
+            (NP (JJ:[1106..1111] small) (JJ:[1112..1118] luteal)
+                (NNS:[1119..1124] cells))))
+        (CC:[1125..1128] and)
+        (NP (NN:[1129..1133] vice) (NN:[1134..1139] versa)))
+      (SBAR-TMP
+        (WHADVP-2 (WRB:[1140..1144] when))
+        (S
+          (NP-SBJ-1 (-NONE-:[1144..1144] *))
+          (VP (VBN:[1145..1154] expressed)
+            (NP-1 (-NONE-:[1154..1154] *))
+            (PP (IN:[1155..1158] per)
+              (NP
+                (NML (NN:[1159..1163] unit) (NN:[1164..1168] cell))
+                (NN:[1170..1174] area)))
+            (ADVP-2 (-NONE-:[1174..1174] *T*))))))
+    (.:[1174..1175] .)))
+
+;sentence 10 Span:1176..1397
+;The [3H]PGI2 binding to the luteal cells was time and temperature  dependent
+;and was inhibited by excess unlabeled PGI2 but not by its metabolite, 
+;6-keto-PGF1 alpha or other eicosanoids which bind to their own receptors.
+;[1180..1188]:substance:"[3H]PGI2"
+;[1291..1295]:substance:"PGI2"
+;[1311..1321]:substance:"metabolite"
+;[1324..1341]:substance:"6-keto-PGF1 alpha"
+;[1351..1362]:substance:"eicosanoids"
+;[1387..1396]:substance:"receptors"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[1176..1179] The) (NN:[1180..1188] -LSB-3H-RSB-PGI2)
+          (VBG:[1189..1196] binding))
+      (PP (TO:[1197..1199] to)
+        (NP (DT:[1200..1203] the) (JJ:[1204..1210] luteal)
+            (NNS:[1211..1216] cells))))
+    (VP
+      (VP (VBD:[1217..1220] was)
+        (ADJP-PRD
+          (ADJP (NN:[1221..1225] time)
+            (ADJP-2 (-NONE-:[1225..1225] *P*)))
+          (CC:[1226..1229] and)
+          (ADJP (NN:[1230..1241] temperature)
+            (ADJP-2 (JJ:[1243..1252] dependent)))))
+      (CC:[1253..1256] and)
+      (VP (VBD:[1257..1260] was)
+        (VP
+          (VP (VBN:[1261..1270] inhibited)
+            (NP-3 (-NONE-:[1270..1270] *))
+            (PP-LGS=4 (IN:[1271..1273] by)
+              (NP (JJ:[1274..1280] excess) (JJ:[1281..1290] unlabeled)
+                  (NN:[1291..1295] PGI2))))
+          (CC:[1296..1299] but) (RB:[1300..1303] not)
+          (VP
+            (PP-LGS=4 (IN:[1304..1306] by)
+              (NP
+                (NP
+                  (NP (PRP$:[1307..1310] its) (NN:[1311..1321] metabolite))
+                  (,:[1321..1322] ,)
+                  (NP (NN:[1324..1335] 6-keto-PGF1) (SYM:[1336..1341] alpha)))
+                (CC:[1342..1344] or)
+                (NP
+                  (NP (JJ:[1345..1350] other) (NNS:[1351..1362] eicosanoids))
+                  (SBAR
+                    (WHNP-1 (WDT:[1363..1368] which))
+                    (S
+                      (NP-SBJ-1 (-NONE-:[1368..1368] *T*))
+                      (VP (VBP:[1369..1373] bind)
+                        (PP-CLR (TO:[1374..1376] to)
+                          (NP (PRP$:[1377..1382] their) (JJ:[1383..1386] own)
+                              (NNS:[1387..1396] receptors)))))))))))))
+    (.:[1396..1397] .)))
+
+;sentence 11 Span:1398..1628
+;In  conclusion, while PGI2 synthase is widely distributed among different
+;cell types  in bovine corpora lutea, specific binding sites which may mediate
+;luteotropic  actions of PGI2 are only present in small and large luteal
+;cells.
+;[1420..1433]:cyp450:"PGI2 synthase"
+;[1574..1578]:substance:"PGI2"
+(SENT
+  (S
+    (PP (IN:[1398..1400] In)
+      (NP (NN:[1402..1412] conclusion)))
+    (,:[1412..1413] ,)
+    (SBAR-ADV (IN:[1414..1419] while)
+      (S
+        (NP-SBJ (NN:[1420..1424] PGI2) (NN:[1425..1433] synthase))
+        (VP (VBZ:[1434..1436] is)
+          (ADJP-PRD
+            (ADVP (RB:[1437..1443] widely))
+            (JJ:[1444..1455] distributed)
+            (PP (IN:[1456..1461] among)
+              (NP (JJ:[1462..1471] different) (NN:[1472..1476] cell)
+                  (NNS:[1477..1482] types))))
+          (PP-LOC (IN:[1484..1486] in)
+            (NP (JJ:[1487..1493] bovine) (FW:[1494..1501] corpora)
+                (FW:[1502..1507] lutea))))))
+    (,:[1507..1508] ,)
+    (NP-SBJ
+      (NP (JJ:[1509..1517] specific) (NN:[1518..1525] binding)
+          (NNS:[1526..1531] sites))
+      (SBAR
+        (WHNP-2 (WDT:[1532..1537] which))
+        (S
+          (NP-SBJ-2 (-NONE-:[1537..1537] *T*))
+          (VP (MD:[1538..1541] may)
+            (VP (VB:[1542..1549] mediate)
+              (NP
+                (NP (JJ:[1550..1561] luteotropic) (NNS:[1563..1570] actions))
+                (PP (IN:[1571..1573] of)
+                  (NP (NN:[1574..1578] PGI2)))))))))
+    (VP (VBP:[1579..1582] are)
+      (ADJP-PRD (RB:[1583..1587] only) (JJ:[1588..1595] present)
+        (PP-LOC (IN:[1596..1598] in)
+          (NP
+            (NP (JJ:[1599..1604] small)
+              (NML-1 (-NONE-:[1604..1604] *P*)))
+            (CC:[1605..1608] and)
+            (NP (JJ:[1609..1614] large)
+              (NML-1 (JJ:[1615..1621] luteal) (NNS:[1622..1627] cells)))))))
+    (.:[1627..1628] .)))
+
+;section 12 Span:1632..1675
+;PMID: 2115851 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1632..1636] PMID) (::[1636..1637] :) (CD:[1638..1645] 2115851)
+        (-LRB-:[1646..1647] -LSB-) (NNP:[1647..1653] PubMed) (::[1654..1655] -)
+        (NN:[1656..1663] indexed) (IN:[1664..1667] for)
+        (NNP:[1668..1675] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1675..EOF] ]
+
+(ORPH -RSB-)

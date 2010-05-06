@@ -1,0 +1,348 @@
+;PMID: 6278080
+;source_file_2935.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..166] = [t:42..166]
+;2)section:[e:170..220] = [t:170..220]
+;3)sentence:[e:224..396] = [t:224..396]
+;4)sentence:[e:397..555] = [t:397..555]
+;5)sentence:[e:556..743] = [t:556..743]
+;6)sentence:[e:744..839] = [t:744..839]
+;7)sentence:[e:840..1087] = [t:840..1087]
+;8)sentence:[e:1088..1287] = [t:1088..1287]
+;9)sentence:[e:1288..1443] = [t:1288..1443]
+;10)section:[e:1447..1491] = [t:1447..1491]
+
+;section 0 Span:0..36
+;J Neurochem.  1981 Dec;37(6):1613-7.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Neurochem) (.:[11..12] .) (CD:[14..18] 1981)
+        (CD:[19..25] Dec;37) (-LRB-:[25..26] -LRB-) (CD:[26..27] 6)
+        (-RRB-:[27..28] -RRB-) (CD:[28..34] :1613-) (CD:[34..36] 7.)))
+
+;sentence 1 Span:42..166
+;Dermorphins, opioid peptides from amphibian skin, act on opioid receptors of 
+;mouse neuroblastoma x rat glioma hybrid cells.
+;[42..53]:gene-protein:"Dermorphins"
+;[55..70]:gene-protein:"opioid peptides"
+;[99..115]:gene-protein:"opioid receptors"
+;[126..139]:malignancy-type:"neuroblastoma"
+;[146..152]:malignancy-type:"glioma"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NNS:[42..53] Dermorphins))
+      (,:[53..54] ,)
+      (NP
+        (NP (JJ:[55..61] opioid) (NNS:[62..70] peptides))
+        (PP (IN:[71..75] from)
+          (NP (NN:[76..85] amphibian) (NN:[86..90] skin)))))
+    (,:[90..91] ,)
+    (VP (VBP:[92..95] act)
+      (PP-CLR (IN:[96..98] on)
+        (NP
+          (NP (JJ:[99..105] opioid) (NNS:[106..115] receptors))
+          (PP (IN:[116..118] of)
+            (NP
+              (NML
+                (NML (NN:[120..125] mouse) (NN:[126..139] neuroblastoma))
+                (PP (SYM:[140..141] x)
+                  (NP (NN:[142..145] rat) (NN:[146..152] glioma))))
+              (JJ:[153..159] hybrid) (NNS:[160..165] cells))))))
+    (.:[165..166] .)))
+
+;section 2 Span:170..220
+;Glaser T, Hubner K, de Castiglione R, Hamprecht B.
+(SEC
+  (FRAG (NNP:[170..176] Glaser) (NNP:[177..178] T) (,:[178..179] ,)
+        (NNP:[180..186] Hubner) (NNP:[187..189] K,) (NNP:[190..192] de)
+        (NNP:[193..204] Castiglione) (NNP:[205..206] R) (,:[206..207] ,)
+        (NNP:[208..217] Hamprecht) (NNP:[218..220] B.)))
+
+;sentence 3 Span:224..396
+;Dermorphin and its Hyp6 analogue are opiate-like heptapeptides originally 
+;discovered in frog skin and characterized by the presence of a D-Ala2 residue
+;in  their sequence.
+;[224..234]:gene-protein:"Dermorphin"
+;[243..247]:gene-protein:"Hyp6"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[224..234] Dermorphin))
+      (CC:[235..238] and)
+      (NP (PRP$:[239..242] its) (NN:[243..247] Hyp6) (NN:[248..256] analogue)))
+    (VP (VBP:[257..260] are)
+      (NP-PRD
+        (NP
+          (ADJP (NN:[261..267] opiate) (HYPH:[267..268] -) (JJ:[268..272] like))
+          (NNS:[273..286] heptapeptides))
+        (VP
+          (VP
+            (ADVP (RB:[287..297] originally))
+            (VBN:[299..309] discovered)
+            (NP (-NONE-:[309..309] *))
+            (PP (IN:[310..312] in)
+              (NP (NN:[313..317] frog) (NN:[318..322] skin))))
+          (CC:[323..326] and)
+          (VP (VBN:[327..340] characterized)
+            (NP (-NONE-:[340..340] *))
+            (PP (IN:[341..343] by)
+              (NP-LGS
+                (NP (DT:[344..347] the) (NN:[348..356] presence))
+                (PP (IN:[357..359] of)
+                  (NP (DT:[360..361] a) (NN:[362..368] D-Ala2)
+                      (NN:[369..376] residue)))
+                (PP (IN:[377..379] in)
+                  (NP (PRP$:[381..386] their) (NN:[387..395] sequence)))))))))
+    (.:[395..396] .)))
+
+;sentence 4 Span:397..555
+;They were assayed for their capacity to compete with  [3H]Leu-enkephalin for
+;binding to opioid receptors in membranes of neuroblastoma  x glioma hybrid
+;cells.
+;[459..469]:gene-protein:"enkephalin"
+;[485..501]:gene-protein:"opioid receptors"
+;[518..531]:malignancy-type:"neuroblastoma"
+;[535..541]:malignancy-type:"glioma"
+(SENT
+  (S
+    (NP-SBJ-1 (PRP:[397..401] They))
+    (VP (VBD:[402..406] were)
+      (VP (VBN:[407..414] assayed)
+        (NP-1 (-NONE-:[414..414] *))
+        (PP (IN:[415..418] for)
+          (NP (PRP$:[419..424] their) (NN:[425..433] capacity)
+            (S
+              (NP-SBJ (-NONE-:[433..433] *))
+              (VP (TO:[434..436] to)
+                (VP (VB:[437..444] compete)
+                  (PP (IN:[445..449] with)
+                    (NP
+                      (NP (NN:[451..458] -LSB-3H-RSB-Leu) (HYPH:[458..459] -)
+                          (NN:[459..469] enkephalin))
+                      (PP (IN:[470..473] for)
+                        (S-NOM
+                          (NP-SBJ (-NONE-:[473..473] *))
+                          (VP (VBG:[474..481] binding)
+                            (PP (TO:[482..484] to)
+                              (NP (JJ:[485..491] opioid)
+                                  (NNS:[492..501] receptors)))
+                            (PP (IN:[502..504] in)
+                              (NP
+                                (NP (NNS:[505..514] membranes))
+                                (PP (IN:[515..517] of)
+                                  (NP
+                                    (NML
+                                      (NML (NN:[518..531] neuroblastoma))
+                                      (PP (SYM:[533..534] x)
+                                        (NP (NN:[535..541] glioma))))
+                                    (JJ:[542..548] hybrid)
+                                     (NNS:[549..554] cells)))))))))))))))))
+    (.:[554..555] .)))
+
+;sentence 5 Span:556..743
+;In the presence of 7 nM-[3H]Leu-enkephalin, the  concentrations at which they
+;caused 50% inhibition of [3H]enkephalin binding  (IC50 values) are 0.1 micro
+;M and 0.3 micro M, respectively.
+;[588..598]:gene-protein:"enkephalin"
+;[663..673]:gene-protein:"enkephalin"
+(SENT
+  (S
+    (PP (IN:[556..558] In)
+      (NP
+        (NP (DT:[559..562] the) (NN:[563..571] presence))
+        (PP (IN:[572..574] of)
+          (NP
+            (NML (CD:[575..576] 7) (NN:[577..579] nM))
+            (HYPH:[579..580] -) (NN:[580..587] -LSB-3H-RSB-Leu)
+             (HYPH:[587..588] -) (NN:[588..598] enkephalin)))))
+    (,:[598..599] ,)
+    (NP-SBJ
+      (NP (DT:[600..603] the) (NNS:[605..619] concentrations))
+      (SBAR
+        (WHPP (IN:[620..622] at)
+          (WHNP (WDT:[623..628] which)))
+        (S
+          (NP-SBJ (PRP:[629..633] they))
+          (VP (VBD:[634..640] caused)
+            (NP
+              (NP
+                (NML (CD:[641..643] 50) (NN:[643..644] %))
+                (NN:[645..655] inhibition))
+              (PP (IN:[656..658] of)
+                (NP (NN:[659..663] -LSB-3H-RSB-) (NN:[663..673] enkephalin)
+                    (NN:[674..681] binding)))))))
+      (PRN (-LRB-:[683..684] -LRB-)
+        (NP (NN:[684..688] IC50) (NNS:[689..695] values))
+        (-RRB-:[695..696] -RRB-)))
+    (VP (VBP:[697..700] are)
+      (NP-PRD
+        (NP (CD:[701..704] 0.1) (JJ:[705..710] micro) (NN:[711..712] M))
+        (CC:[713..716] and)
+        (NP (CD:[717..720] 0.3) (JJ:[721..726] micro) (NN:[727..728] M)))
+      (,:[728..729] ,)
+      (ADVP (RB:[730..742] respectively)))
+    (.:[742..743] .)))
+
+;sentence 6 Span:744..839
+;In contrast, the  synthetic L-Ala2-dermorphin shows very low affinity for the
+;opioid receptors.
+;[779..789]:gene-protein:"dermorphin"
+;[822..838]:gene-protein:"opioid receptors"
+(SENT
+  (S
+    (PP (IN:[744..746] In)
+      (NP (NN:[747..755] contrast)))
+    (,:[755..756] ,)
+    (NP-SBJ (DT:[757..760] the) (JJ:[762..771] synthetic) (NN:[772..778] L-Ala2)
+            (HYPH:[778..779] -) (NN:[779..789] dermorphin))
+    (VP (VBZ:[790..795] shows)
+      (NP
+        (NP
+          (ADJP (RB:[796..800] very) (JJ:[801..804] low))
+          (NN:[805..813] affinity))
+        (PP (IN:[814..817] for)
+          (NP (DT:[818..821] the)
+             (JJ:[822..828] opioid) (NNS:[829..838] receptors)))))
+    (.:[838..839] .)))
+
+;sentence 7 Span:840..1087
+;In  addition, like other opioid peptides, dermorphin and hyp6-dermorphin
+;inhibit the  elevation by prostaglandin E1 (PGE1) of the level of adenosine
+;3':5'-cyclic  monophosphate (cyclic AMP) (IC50 values 0.2 micro M and 0.4
+;micro M,  respectively).
+;[865..880]:gene-protein:"opioid peptides"
+;[882..892]:gene-protein:"dermorphin"
+;[897..912]:gene-protein:"hyp6-dermorphin"
+(SENT
+  (S
+    (PP (IN:[840..842] In)
+      (NP (NN:[844..852] addition)))
+    (,:[852..853] ,)
+    (PP (IN:[854..858] like)
+      (NP (JJ:[859..864] other)
+         (JJ:[865..871] opioid) (NNS:[872..880] peptides)))
+    (,:[880..881] ,)
+    (NP-SBJ (NN:[882..892] dermorphin) (CC:[893..896] and)
+            (NN:[897..912] hyp6-dermorphin))
+    (VP (VBP:[913..920] inhibit)
+      (NP (DT:[921..924] the) (NN:[926..935] elevation))
+      (PP-MNR (IN:[936..938] by)
+        (NP
+          (NP (NN:[939..952] prostaglandin) (NN:[953..955] E1)
+            (PRN (-LRB-:[956..957] -LRB-)
+              (NP (NN:[957..961] PGE1))
+              (-RRB-:[961..962] -RRB-)))
+          (PP (IN:[963..965] of)
+            (NP
+              (NP (DT:[966..969] the) (NN:[970..975] level))
+              (PP (IN:[976..978] of)
+                (NP
+                  (NP (NN:[979..988] adenosine) (JJ:[989..1001] 3':5'-cyclic)
+                      (NN:[1003..1016] monophosphate))
+                  (NP (-LRB-:[1017..1018] -LRB-) (JJ:[1018..1024] cyclic)
+                      (NN:[1025..1028] AMP) (-RRB-:[1028..1029] -RRB-))))))
+          (PRN (-LRB-:[1030..1031] -LRB-)
+            (S
+              (NP-SBJ (NN:[1031..1035] IC50) (NNS:[1036..1042] values))
+              (NP-PRD
+                (NP (CD:[1043..1046] 0.2) (JJ:[1047..1052] micro)
+                    (NN:[1053..1054] M))
+                (CC:[1055..1058] and)
+                (NP (CD:[1059..1062] 0.4) (JJ:[1063..1068] micro)
+                    (NN:[1069..1070] M)))
+              (,:[1070..1071] ,)
+              (ADVP (RB:[1073..1085] respectively)))
+            (-RRB-:[1085..1086] -RRB-)))))
+    (.:[1086..1087] .)))
+
+;sentence 8 Span:1088..1287
+;The inhibition is prevented by the opiate antagonist naloxone, 
+;L-Ala2-dermorphin is at least three orders of magnitude less potent in 
+;inhibiting the PGE1-evoked increase in the level of cyclic AMP.
+;[1159..1169]:gene-protein:"dermorphin"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (DT:[1088..1091] The) (NN:[1092..1102] inhibition))
+      (VP (VBZ:[1103..1105] is)
+        (VP (VBN:[1106..1115] prevented)
+          (NP-1 (-NONE-:[1115..1115] *))
+          (PP (IN:[1116..1118] by)
+            (NP-LGS
+              (NP (DT:[1119..1122] the) (NN:[1123..1129] opiate)
+                  (NN:[1130..1140] antagonist))
+              (NP (NN:[1141..1149] naloxone)))))))
+    (,:[1149..1150] ,)
+    (S
+      (NP-SBJ (NN:[1152..1158] L-Ala2) (HYPH:[1158..1159] -)
+              (NN:[1159..1169] dermorphin))
+      (VP (VBZ:[1170..1172] is)
+        (ADJP-PRD
+          (NP-ADV
+            (QP (IN:[1173..1175] at) (JJS:[1176..1181] least)
+                (CD:[1182..1187] three))
+            (NNS:[1188..1194] orders))
+          (PP (IN:[1195..1197] of)
+            (NP (NN:[1198..1207] magnitude)))
+          (RBR:[1208..1212] less) (JJ:[1213..1219] potent))
+        (PP (IN:[1220..1222] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1222..1222] *))
+            (VP (VBG:[1224..1234] inhibiting)
+              (NP
+                (NP (DT:[1235..1238] the)
+                  (ADJP (NN:[1239..1243] PGE1) (HYPH:[1243..1244] -)
+                        (VBN:[1244..1250] evoked))
+                  (NN:[1251..1259] increase))
+                (PP (IN:[1260..1262] in)
+                  (NP
+                    (NP (DT:[1263..1266] the) (NN:[1267..1272] level))
+                    (PP (IN:[1273..1275] of)
+                      (NP (JJ:[1276..1282] cyclic) (NN:[1283..1286] AMP)))))))))))
+    (.:[1286..1287] .)))
+
+;sentence 9 Span:1288..1443
+;The results show  that peptides with an amino acid sequence quite different
+;from that of the  enkephalins can bind to opioid receptors of the hybrid
+;cells.
+;[1382..1393]:gene-protein:"enkephalins"
+;[1406..1422]:gene-protein:"opioid receptors"
+(SENT
+  (S
+    (NP-SBJ (DT:[1288..1291] The) (NNS:[1292..1299] results))
+    (VP (VBP:[1300..1304] show)
+      (SBAR (IN:[1306..1310] that)
+        (S
+          (NP-SBJ
+            (NP (NNS:[1311..1319] peptides))
+            (PP (IN:[1320..1324] with)
+              (NP
+                (NP (DT:[1325..1327] an)
+                  (NML (JJ:[1328..1333] amino) (NN:[1334..1338] acid))
+                  (NN:[1339..1347] sequence))
+                (ADJP (RB:[1348..1353] quite) (JJ:[1354..1363] different)
+                  (PP (IN:[1364..1368] from)
+                    (NP
+                      (NP (DT:[1369..1373] that))
+                      (PP (IN:[1374..1376] of)
+                        (NP (DT:[1377..1380] the) (NNS:[1382..1393] enkephalins)))))))))
+          (VP (MD:[1394..1397] can)
+            (VP (VB:[1398..1402] bind)
+              (PP (TO:[1403..1405] to)
+                (NP
+                  (NP (JJ:[1406..1412] opioid) (NNS:[1413..1422] receptors))
+                  (PP (IN:[1423..1425] of)
+                    (NP (DT:[1426..1429] the) (JJ:[1430..1436] hybrid)
+                        (NNS:[1437..1442] cells))))))))))
+    (.:[1442..1443] .)))
+
+;section 10 Span:1447..1491
+;PMID: 6278080 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1447..1451] PMID) (::[1451..1452] :) (CD:[1453..1460] 6278080)
+        (NN:[1461..1462] -LSB-) (NNP:[1462..1468] PubMed) (::[1469..1470] -)
+        (NN:[1471..1478] indexed) (IN:[1479..1482] for)
+        (NNP:[1483..1491] MEDLINE-RSB-)))

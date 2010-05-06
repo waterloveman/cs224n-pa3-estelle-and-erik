@@ -1,0 +1,520 @@
+;PMID: 10086344
+;source_file_678.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..137] = [t:42..137]
+;2)section:[e:141..217] = [t:141..217]
+;3)section:[e:221..297] = [t:221..297]
+;4)sentence:[e:301..501] = [t:301..501]
+;5)sentence:[e:502..630] = [t:502..630]
+;6)sentence:[e:631..906] = [t:631..906]
+;7)sentence:[e:907..1069] = [t:907..1069]
+;8)sentence:[e:1070..1153] = [t:1070..1153]
+;9)sentence:[e:1154..1247] = [t:1154..1247]
+;10)sentence:[e:1249..1322] = [t:1249..1322]
+;11)sentence:[e:1323..1448] = [t:1323..1448]
+;12)sentence:[e:1449..1567] = [t:1449..1567]
+;13)sentence:[e:1568..1672] = [t:1568..1672]
+;14)sentence:[e:1673..1859] = [t:1673..1859]
+;15)sentence:[e:1860..2040] = [t:1860..2040]
+;16)section:[e:2044..2089] = [t:2044..2089]
+
+;section 0 Span:0..37
+;Oncogene  1999 Mar 11;18(10):1897-902
+(SEC
+  (FRAG (RB:[0..8] Oncogene) (CD:[10..14] 1999) (.:[15..18] Mar)
+        (CD:[19..21] 11) (::[21..25] ;18-LRB-) (CD:[25..27] 10)
+        (-RRB-:[27..28] -RRB-) (CD:[28..33] :1897) (::[33..34] -)
+        (CD:[34..37] 902)))
+
+;sentence 1 Span:42..137
+;Mutations of c-kit JM domain are found in a minority of human
+;gastrointestinal  stromal tumors.
+;[42..51]:variation-event:"Mutations"
+;[55..60]:gene-rna:"c-kit"
+;[61..70]:variation-location:"JM domain"
+;[104..136]:malignancy:"gastrointestinal  stromal tumors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[42..51] Mutations))
+      (PP (IN:[52..54] of)
+        (NP (NN:[55..60] c-kit)
+           (NN:[61..63] JM) (NN:[64..70] domain))))
+    (VP (VBP:[71..74] are)
+      (VP (VBN:[75..80] found)
+        (NP-1 (-NONE-:[80..80] *))
+        (PP-LOC (IN:[81..83] in)
+          (NP
+            (NP (DT:[84..85] a) (NN:[86..94] minority))
+            (PP (IN:[95..97] of)
+              (NP (JJ:[98..103] human)
+                 (JJ:[104..120] gastrointestinal) (JJ:[122..129] stromal)
+                 (NNS:[130..136] tumors)))))))
+    (.:[136..137] .)))
+
+;section 2 Span:141..217
+;Moskaluk CA, Tian Q, Marshall CR, Rumpel CA, Franquemont DW, Frierson HF Jr.
+(SEC
+  (FRAG (NNP:[141..149] Moskaluk) (NNP:[150..152] CA) (,:[152..153] ,)
+        (NNP:[154..158] Tian) (NNP:[159..160] Q) (,:[160..161] ,)
+        (NNP:[162..170] Marshall) (NNP:[171..173] CR) (,:[173..174] ,)
+        (NNP:[175..181] Rumpel) (NNP:[182..184] CA) (,:[184..185] ,)
+        (NNP:[186..197] Franquemont) (NNP:[198..200] DW) (,:[200..201] ,)
+        (NNP:[202..210] Frierson) (NNP:[211..213] HF) (NNP:[214..217] Jr.)))
+
+;section 3 Span:221..297
+;Department of Pathology, University of Virginia, Charlottesville 22908, USA.
+(SEC
+  (FRAG (NNP:[221..231] Department) (IN:[232..234] of)
+        (NNP:[235..244] Pathology) (,:[244..245] ,) (NNP:[246..256] University)
+        (IN:[257..259] of) (NNP:[260..268] Virginia) (,:[268..269] ,)
+        (NNP:[270..285] Charlottesville) (CD:[286..291] 22908) (,:[291..292] ,)
+        (NNP:[293..296] USA) (.:[296..297] .)))
+
+;sentence 4 Span:301..501
+;The c-kit gene encodes a transmembrane receptor kinase (KIT) which is
+;expressed  in the majority of human gastrointestinal stromal tumors (GISTs),
+;a subtype of  gastrointestinal mesenchymal neoplasms.
+;[305..310]:gene-rna:"c-kit"
+;[326..355]:gene-protein:"transmembrane receptor kinase"
+;[357..360]:gene-protein:"KIT"
+;[407..440]:malignancy:"gastrointestinal stromal tumors ("
+;[440..445]:malignancy:"GISTs"
+;[462..500]:malignancy:"gastrointestinal mesenchymal neoplasms"
+(SENT
+  (S
+    (NP-SBJ (DT:[301..304] The) (NN:[305..310] c-kit) (NN:[311..315] gene))
+    (VP (VBZ:[316..323] encodes)
+      (NP
+        (NP (DT:[324..325] a)
+           (JJ:[326..339] transmembrane) (NN:[340..348] receptor)
+           (NN:[349..355] kinase)
+          (PRN (-LRB-:[356..357] -LRB-)
+            (NP (NN:[357..360] KIT))
+            (-RRB-:[360..361] -RRB-)))
+        (SBAR
+          (WHNP-1 (WDT:[362..367] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[367..367] *T*))
+            (VP (VBZ:[368..370] is)
+              (VP (VBN:[371..380] expressed)
+                (NP-1 (-NONE-:[380..380] *))
+                (PP-LOC (IN:[382..384] in)
+                  (NP
+                    (NP (DT:[385..388] the) (NN:[389..397] majority))
+                    (PP (IN:[398..400] of)
+                      (NP
+                        (NP
+                          (NP (JJ:[401..406] human)
+                              (JJ:[407..423] gastrointestinal)
+                              (JJ:[424..431] stromal) (NNS:[432..438] tumors))
+                          (NP (-LRB-:[439..440] -LRB-) (NNS:[440..445] GISTs)
+                              (-RRB-:[445..446] -RRB-)))
+                        (,:[446..447] ,)
+                        (NP
+                          (NP (DT:[448..449] a) (NN:[450..457] subtype))
+                          (PP (IN:[458..460] of)
+                            (NP (JJ:[462..478] gastrointestinal)
+                                (JJ:[479..490] mesenchymal)
+                                (NNS:[491..500] neoplasms))))))))))))))
+    (.:[500..501] .)))
+
+;sentence 5 Span:502..630
+;A previous study identified mutations in  the juxtamembrane (JM) domain of
+;c-kit in five of six GISTs (Science 279: 577,  1998).
+;[530..539]:variation-event:"mutations"
+;[548..561]...[567..573]:variation-location:"juxtamembrane"..."domain"
+;[563..565]:variation-location:"JM"
+;[577..582]:gene-rna:"c-kit"
+;[598..603]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ (DT:[502..503] A) (JJ:[504..512] previous) (NN:[513..518] study))
+    (VP (VBD:[519..529] identified)
+      (NP
+        (NP (NNS:[530..539] mutations))
+        (PP-LOC (IN:[540..542] in)
+          (NP
+            (NP (DT:[544..547] the)
+              (NML
+                (NML (NN:[548..561] juxtamembrane))
+                (NML (-LRB-:[562..563] -LRB-) (NN:[563..565] JM)
+                     (-RRB-:[565..566] -RRB-)))
+              (NN:[567..573] domain))
+            (PP (IN:[574..576] of)
+              (NP (NN:[577..582] c-kit))))))
+      (PP-LOC (IN:[583..585] in)
+        (NP
+          (NP (CD:[586..590] five))
+          (PP (IN:[591..593] of)
+            (NP (CD:[594..597] six) (NNS:[598..603] GISTs)))))
+      (PRN (-LRB-:[604..605] -LRB-)
+        (FRAG (NNP:[605..612] Science) (CD:[613..616] 279) (::[616..617] :)
+              (CD:[618..621] 577) (,:[621..622] ,) (CD:[624..628] 1998))
+        (-RRB-:[628..629] -RRB-)))
+    (.:[629..630] .)))
+
+;sentence 6 Span:631..906
+;To better define the frequency and spectrum of c-kit gene mutations in 
+;mesenchymal neoplasms of the GI tract that had been characterized for KIT 
+;protein expression, we examined archived tissue samples for mutations in the
+;JM  domain by PCR amplification and DNA sequencing.
+;[678..683]:gene-rna:"c-kit"
+;[703..740]:malignancy:"mesenchymal neoplasms of the GI tract"
+;[773..776]:gene-protein:"KIT"
+;[838..847]:variation-event:"mutations"
+;[855..865]:variation-location:"JM  domain"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[631..631] *))
+      (VP (TO:[631..633] To)
+        (ADVP (RBR:[634..640] better))
+        (VP (VB:[641..647] define)
+          (NP
+            (NP (DT:[648..651] the) (NN:[652..661] frequency)
+                (CC:[662..665] and) (NN:[666..674] spectrum))
+            (PP (IN:[675..677] of)
+              (NP
+                (NP (NN:[678..683] c-kit) (NN:[684..688] gene)
+                    (NNS:[689..698] mutations))
+                (PP-LOC (IN:[699..701] in)
+                  (NP
+                    (NP
+                      (NP (JJ:[703..714] mesenchymal) (NNS:[715..724] neoplasms))
+                      (PP (IN:[725..727] of)
+                        (NP (DT:[728..731] the) (NN:[732..734] GI)
+                            (NN:[735..740] tract))))
+                    (SBAR
+                      (WHNP-1 (WDT:[741..745] that))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[745..745] *T*))
+                        (VP (VBD:[746..749] had)
+                          (VP (VBN:[750..754] been)
+                            (VP (VBN:[755..768] characterized)
+                              (NP-1 (-NONE-:[768..768] *))
+                              (PP (IN:[769..772] for)
+                                (NP (NN:[773..776] KIT) (NN:[778..785] protein)
+                                    (NN:[786..796] expression))))))))))))))))
+    (,:[796..797] ,)
+    (NP-SBJ (PRP:[798..800] we))
+    (VP (VBD:[801..809] examined)
+      (NP (VBN:[810..818] archived) (NN:[819..825] tissue)
+          (NNS:[826..833] samples))
+      (PP-PRP (IN:[834..837] for)
+        (NP
+          (NP (NNS:[838..847] mutations))
+          (PP-LOC (IN:[848..850] in)
+            (NP (DT:[851..854] the)
+               (NN:[855..857] JM) (NN:[859..865] domain)))))
+      (PP-MNR (IN:[866..868] by)
+        (NP
+          (NP (NN:[869..872] PCR) (NN:[873..886] amplification))
+          (CC:[887..890] and)
+          (NP (NN:[891..894] DNA) (NN:[895..905] sequencing)))))
+    (.:[905..906] .)))
+
+;sentence 7 Span:907..1069
+;c-kit JM domain mutations were  found in nine of 56 mesenchymal tumors (46
+;GISTs, eight leiomyomas, two  leiomyosarcomas) and occurred exclusively in
+;GISTs (21%).
+;[907..912]:gene-rna:"c-kit"
+;[913..922]:variation-location:"JM domain"
+;[923..932]:variation-event:"mutations"
+;[959..977]:malignancy:"mesenchymal tumors"
+;[982..987]:malignancy:"GISTs"
+;[995..1005]:malignancy:"leiomyomas"
+;[1012..1027]:malignancy:"leiomyosarcomas"
+;[1057..1062]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[907..912] c-kit)
+      (NML (NN:[913..915] JM) (NN:[916..922] domain))
+      (NNS:[923..932] mutations))
+    (VP
+      (VP (VBD:[933..937] were)
+        (VP (VBN:[939..944] found)
+          (NP-1 (-NONE-:[944..944] *))
+          (PP-LOC (IN:[945..947] in)
+            (NP
+              (NP (CD:[948..952] nine))
+              (PP (IN:[953..955] of)
+                (NP (CD:[956..958] 56)
+                   (JJ:[959..970] mesenchymal) (NNS:[971..977] tumors)
+                  (PRN (-LRB-:[978..979] -LRB-)
+                    (NP
+                      (NP (CD:[979..981] 46) (NNS:[982..987] GISTs))
+                      (,:[987..988] ,)
+                      (NP (CD:[989..994] eight) (NNS:[995..1005] leiomyomas))
+                      (,:[1005..1006] ,)
+                      (NP (CD:[1007..1010] two)
+                          (NNS:[1012..1027] leiomyosarcomas)))
+                    (-RRB-:[1027..1028] -RRB-))))))))
+      (CC:[1029..1032] and)
+      (VP (VBD:[1033..1041] occurred)
+        (ADVP (RB:[1042..1053] exclusively))
+        (PP-LOC (IN:[1054..1056] in) (NNS:[1057..1062] GISTs))
+        (PRN (-LRB-:[1063..1064] -LRB-)
+          (NP (CD:[1064..1066] 21) (NN:[1066..1067] %))
+          (-RRB-:[1067..1068] -RRB-))))
+    (.:[1068..1069] .)))
+
+;sentence 8 Span:1070..1153
+;Seven of the nine  mutations consisted of intragenic deletions of one to 19
+;codons.
+;[1089..1098]:variation-event:"mutations"
+;[1123..1132]:variation-type:"deletions"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[1070..1075] Seven))
+      (PP (IN:[1076..1078] of)
+        (NP (DT:[1079..1082] the) (CD:[1083..1087] nine)
+            (NNS:[1089..1098] mutations))))
+    (VP (VBD:[1099..1108] consisted)
+      (PP-CLR (IN:[1109..1111] of)
+        (NP
+          (NP (JJ:[1112..1122] intragenic) (NNS:[1123..1132] deletions))
+          (PP (IN:[1133..1135] of)
+            (NP
+              (QP (CD:[1136..1139] one) (TO:[1140..1142] to)
+                  (CD:[1143..1145] 19))
+              (NNS:[1146..1152] codons))))))
+    (.:[1152..1153] .)))
+
+;sentence 9 Span:1154..1247
+;There was one  insertion mutation that added 12 codons and one missense
+;mutation (Val560Asp).
+;[1169..1178]:variation-type:"insertion"
+;[1179..1187]:variation-event:"mutation"
+;[1217..1234]:variation-type:"missense mutation"
+;[1236..1239]:variation-state-original:"Val"
+;[1239..1242]:variation-location:"560"
+;[1242..1245]:variation-state-altered:"Asp"
+(SENT
+  (S
+    (NP-SBJ (EX:[1154..1159] There))
+    (VP (VBD:[1160..1163] was)
+      (NP-PRD
+        (NP
+          (NP (CD:[1164..1167] one) (NN:[1169..1178] insertion)
+              (NN:[1179..1187] mutation))
+          (SBAR
+            (WHNP-1 (WDT:[1188..1192] that))
+            (S
+              (NP-SBJ-1 (-NONE-:[1192..1192] *T*))
+              (VP (VBD:[1193..1198] added)
+                (NP (CD:[1199..1201] 12) (NNS:[1202..1208] codons))))))
+        (CC:[1209..1212] and)
+        (NP (CD:[1213..1216] one)
+           (JJ:[1217..1225] missense) (NN:[1226..1234] mutation)
+          (PRN (-LRB-:[1235..1236] -LRB-)
+            (NP (NN:[1236..1239] Val) (CD:[1239..1242] 560)
+                (NN:[1242..1245] Asp))
+            (-RRB-:[1245..1246] -RRB-)))))
+    (.:[1246..1247] .)))
+
+;sentence 10 Span:1249..1322
+;None of the mutations disrupted the downstream reading frame of the gene.
+;[1261..1270]:variation-event:"mutations"
+;[1317..1321]:gene-rna:"gene"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1249..1253] None))
+      (PP (IN:[1254..1256] of)
+        (NP (DT:[1257..1260] the) (NNS:[1261..1270] mutations))))
+    (VP (VBD:[1271..1280] disrupted)
+      (NP
+        (NP (DT:[1281..1284] the) (RB:[1285..1295] downstream)
+            (VBG:[1296..1303] reading) (NN:[1304..1309] frame))
+        (PP (IN:[1310..1312] of)
+          (NP (DT:[1313..1316] the) (NN:[1317..1321] gene)))))
+    (.:[1321..1322] .)))
+
+;sentence 11 Span:1323..1448
+;The  single missense mutation (Val560Asp) is very similar to the only other
+;missense  mutation reported in GISTs (Val599Asp).
+;[1335..1352]:variation-type:"missense mutation"
+;[1354..1357]:variation-state-original:"Val"
+;[1357..1360]:variation-location:"560"
+;[1360..1363]:variation-state-altered:"Asp"
+;[1399..1417]:variation-type:"missense  mutation"
+;[1430..1435]:malignancy:"GISTs"
+;[1437..1440]:variation-state-original:"Val"
+;[1440..1443]:variation-location:"599"
+;[1443..1446]:variation-state-altered:"Asp"
+(SENT
+  (S
+    (NP-SBJ (DT:[1323..1326] The) (JJ:[1328..1334] single)
+       (JJ:[1335..1343] missense) (NN:[1344..1352] mutation)
+      (PRN (-LRB-:[1353..1354] -LRB-)
+        (NP (NN:[1354..1357] Val) (CD:[1357..1360] 560) (NN:[1360..1363] Asp))
+        (-RRB-:[1363..1364] -RRB-)))
+    (VP (VBZ:[1365..1367] is)
+      (ADJP-PRD (RB:[1368..1372] very) (JJ:[1373..1380] similar)
+        (PP (TO:[1381..1383] to)
+          (NP
+            (NP (DT:[1384..1387] the) (RB:[1388..1392] only)
+                (JJ:[1393..1398] other)
+               (JJ:[1399..1407] missense) (NN:[1409..1417] mutation))
+            (VP (VBN:[1418..1426] reported)
+              (NP (-NONE-:[1426..1426] *))
+              (PP-LOC (IN:[1427..1429] in)
+                (NP (NNS:[1430..1435] GISTs))))
+            (PRN (-LRB-:[1436..1437] -LRB-)
+              (NP (NN:[1437..1440] Val) (CD:[1440..1443] 599)
+                  (NN:[1443..1446] Asp))
+              (-RRB-:[1446..1447] -RRB-))))))
+    (.:[1447..1448] .)))
+
+;sentence 12 Span:1449..1567
+;Of the 46 GISTs, 43 were strongly  positive for KIT protein expression and
+;negative for diffuse expression of  desmin.
+;[1459..1464]:malignancy:"GISTs"
+;[1497..1500]:gene-protein:"KIT"
+;[1560..1566]:gene-protein:"desmin"
+(SENT
+  (S
+    (PP-TPC-1 (IN:[1449..1451] Of)
+      (NP (DT:[1452..1455] the) (CD:[1456..1458] 46) (NNS:[1459..1464] GISTs)))
+    (,:[1464..1465] ,)
+    (NP-SBJ
+      (NP (CD:[1466..1468] 43))
+      (PP-1 (-NONE-:[1468..1468] *T*)))
+    (VP (VBD:[1469..1473] were)
+      (ADJP-PRD
+        (ADJP (RB:[1474..1482] strongly) (JJ:[1484..1492] positive)
+          (PP (IN:[1493..1496] for)
+            (NP (NN:[1497..1500] KIT) (NN:[1501..1508] protein)
+                (NN:[1509..1519] expression))))
+        (CC:[1520..1523] and)
+        (ADJP (JJ:[1524..1532] negative)
+          (PP (IN:[1533..1536] for)
+            (NP
+              (NP (JJ:[1537..1544] diffuse) (NN:[1545..1555] expression))
+              (PP (IN:[1556..1558] of)
+                (NP (NN:[1560..1566] desmin))))))))
+    (.:[1566..1567] .)))
+
+;sentence 13 Span:1568..1672
+;Neither KIT expression nor gene mutations were found in gastrointestinal 
+;leiomyomas or leiomyosarcomas.
+;[1576..1579]:gene-protein:"KIT"
+;[1624..1652]:malignancy:"gastrointestinal  leiomyomas"
+;[1624..1640]...[1656..1671]:malignancy:"gastrointestinal"..."leiomyosarcomas"
+(SENT
+  (S
+    (NP-SBJ-2 (CC:[1568..1575] Neither)
+      (NP (NN:[1576..1579] KIT) (NN:[1580..1590] expression))
+      (CC:[1591..1594] nor)
+      (NP (NN:[1595..1599] gene) (NNS:[1600..1609] mutations)))
+    (VP (VBD:[1610..1614] were)
+      (VP (VBN:[1615..1620] found)
+        (NP-2 (-NONE-:[1620..1620] *))
+        (PP-LOC (IN:[1621..1623] in)
+          (NP
+            (NP
+              (ADJP-1 (JJ:[1624..1640] gastrointestinal))
+              (NNS:[1642..1652] leiomyomas))
+            (CC:[1653..1655] or)
+            (NP
+              (ADJP-1 (-NONE-:[1655..1655] *P*))
+              (NNS:[1656..1671] leiomyosarcomas))))))
+    (.:[1671..1672] .)))
+
+;sentence 14 Span:1673..1859
+;We conclude that mutation of the c-kit JM domain  does not occur in
+;gastrointestinal mesenchymal neoplasms with well  developed-smooth muscle
+;differentiation, and is restricted to GISTs.
+;[1690..1698]:variation-event:"mutation"
+;[1706..1711]:gene-rna:"c-kit"
+;[1712..1721]:variation-location:"JM domain"
+;[1741..1830]:malignancy:"gastrointestinal mesenchymal neoplasms with well 
+;developed-smooth muscle differentiation"
+;[1853..1858]:malignancy:"GISTs"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1673..1675] We))
+    (VP (VBP:[1676..1684] conclude)
+      (SBAR (IN:[1685..1689] that)
+        (S
+          (NP-SBJ-1
+            (NP (NN:[1690..1698] mutation))
+            (PP (IN:[1699..1701] of)
+              (NP (DT:[1702..1705] the) (NN:[1706..1711] c-kit)
+                 (NN:[1712..1714] JM) (NN:[1715..1721] domain))))
+          (VP
+            (VP (VBZ:[1723..1727] does) (RB:[1728..1731] not)
+              (VP (VB:[1732..1737] occur)
+                (PP-LOC (IN:[1738..1740] in)
+                  
+                  (NP (JJ:[1741..1757] gastrointestinal)
+                      (JJ:[1758..1769] mesenchymal) (NNS:[1770..1779] neoplasms))
+                  (PP (IN:[1780..1784] with)
+                    (NP
+                      (ADJP (RB:[1785..1789] well) (VBN:[1791..1800] developed))
+                      (HYPH:[1800..1801] -)
+                      (NML (JJ:[1801..1807] smooth) (NN:[1808..1814] muscle))
+                      (NN:[1815..1830] differentiation))))))
+            (,:[1830..1831] ,) (CC:[1832..1835] and)
+            (VP (VBZ:[1836..1838] is)
+              (VP (VBN:[1839..1849] restricted)
+                (NP-1 (-NONE-:[1849..1849] *))
+                (PP-CLR (TO:[1850..1852] to)
+                  (NP (NNS:[1853..1858] GISTs)))))))))
+    (.:[1858..1859] .)))
+
+;sentence 15 Span:1860..2040
+;However,  since these mutations are only found in a minority of GISTs,
+;further  investigation into the mechanisms of c-kit gene activation in this
+;group of  neoplasms is warranted.
+;[1882..1891]:variation-event:"mutations"
+;[1924..1929]:malignancy:"GISTs"
+;[1977..1982]:gene-rna:"c-kit"
+;[2017..2026]:malignancy:"neoplasms"
+(SENT
+  (S
+    (ADVP (RB:[1860..1867] However))
+    (,:[1867..1868] ,)
+    (SBAR-ADV (IN:[1870..1875] since)
+      (S
+        (NP-SBJ-2 (DT:[1876..1881] these) (NNS:[1882..1891] mutations))
+        (VP (VBP:[1892..1895] are)
+          (ADVP (RB:[1896..1900] only))
+          (VP (VBN:[1901..1906] found)
+            (NP-2 (-NONE-:[1906..1906] *))
+            (PP-LOC (IN:[1907..1909] in)
+              (NP
+                (NP (DT:[1910..1911] a) (NN:[1912..1920] minority))
+                (PP (IN:[1921..1923] of)
+                  (NP (NNS:[1924..1929] GISTs)))))))))
+    (,:[1929..1930] ,)
+    (NP-SBJ-1
+      (NP (JJ:[1931..1938] further) (NN:[1940..1953] investigation))
+      (PP (IN:[1954..1958] into)
+        (NP
+          (NP (DT:[1959..1962] the) (NNS:[1963..1973] mechanisms))
+          (PP (IN:[1974..1976] of)
+            (NP (NN:[1977..1982] c-kit) (NN:[1983..1987] gene)
+                (NN:[1988..1998] activation)))
+          (PP (IN:[1999..2001] in)
+            (NP
+              (NP (DT:[2002..2006] this) (NN:[2007..2012] group))
+              (PP (IN:[2013..2015] of)
+                (NP (NNS:[2017..2026] neoplasms))))))))
+    (VP (VBZ:[2027..2029] is)
+      (VP (VBN:[2030..2039] warranted)
+        (NP-1 (-NONE-:[2039..2039] *))))
+    (.:[2039..2040] .)))
+
+;section 16 Span:2044..2089
+;PMID: 10086344 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2044..2048] PMID) (::[2048..2049] :) (CD:[2050..2058] 10086344)
+        (NN:[2059..2060] -LSB-) (NNP:[2060..2066] PubMed) (::[2067..2068] -)
+        (NN:[2069..2076] indexed) (IN:[2077..2080] for)
+        (NNP:[2081..2089] MEDLINE-RSB-)))

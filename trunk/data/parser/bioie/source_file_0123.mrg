@@ -1,0 +1,649 @@
+;PMID: 9311623
+;source_file_928.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..216] = [t:48..216]
+;2)section:[e:220..265] = [t:220..265]
+;3)section:[e:269..344] = [t:269..344]
+;4)sentence:[e:348..419] = [t:348..419]
+;5)sentence:[e:420..481] = [t:420..481]
+;6)sentence:[e:482..646] = [t:482..646]
+;7)sentence:[e:647..737] = [t:647..737]
+;8)sentence:[e:738..1007] = [t:738..1007]
+;9)sentence:[e:1008..1098] = [t:1008..1098]
+;10)sentence:[e:1099..1200] = [t:1099..1200]
+;11)sentence:[e:1201..1321] = [t:1201..1321]
+;12)sentence:[e:1322..1437] = [t:1322..1437]
+;13)sentence:[e:1438..1716] = [t:1438..1716]
+;14)sentence:[e:1717..1871] = [t:1717..1871]
+;15)sentence:[e:1872..1981] = [t:1872..1981]
+;16)sentence:[e:1982..2128] = [t:1982..2128]
+;17)sentence:[e:2129..2320] = [t:2129..2320]
+;18)sentence:[e:2321..2500] = [t:2321..2500]
+;19)sentence:[e:2501..2637] = [t:2501..2637]
+;20)sentence:[e:2638..2826] = [t:2638..2826]
+;21)section:[e:2830..2874] = [t:2830..2874]
+
+;section 0 Span:0..42
+;Drug Metab Dispos. 1997 Sep;25(9):1072-80.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1997) (CC:[24..31] Sep;25-LRB-)
+        (CD:[31..32] 9) (-RRB-:[32..33] -RRB-) (CD:[33..38] :1072)
+        (::[38..39] -) (CD:[39..41] 80) (.:[41..42] .)))
+
+;sentence 1 Span:48..216
+;Fentanyl metabolism by human hepatic and intestinal cytochrome P450 3A4: 
+;implications for interindividual variability in disposition, efficacy, and
+;drug  interactions.
+;[48..56]:substance:"Fentanyl"
+;[100..119]:cyp450:"cytochrome P450 3A4"
+;[197..201]:substance:"drug"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[48..56] Fentanyl) (NN:[57..67] metabolism))
+      (PP (IN:[68..70] by)
+        (NP
+          (NP
+            (ADJP-2 (JJ:[71..76] human))
+            (JJ:[77..84] hepatic)
+            (NML-1 (-NONE-:[84..84] *P*)))
+          (CC:[85..88] and)
+          (NP
+            (ADJP-2 (-NONE-:[88..88] *P*))
+            (JJ:[89..99] intestinal)
+            (NML-1
+              (NML (NN:[100..110] cytochrome) (NN:[111..115] P450))
+              (NN:[116..119] 3A4))))))
+    (::[119..120] :)
+    (NP
+      (NP (NNS:[122..134] implications))
+      (PP (IN:[135..138] for)
+        (NP
+          (NP (JJ:[139..154] interindividual) (NN:[155..166] variability))
+          (PP-LOC (IN:[167..169] in)
+            (NP
+              (NP (NN:[170..181] disposition))
+              (,:[181..182] ,)
+              (NP (NN:[183..191] efficacy))
+              (,:[191..192] ,) (CC:[193..196] and)
+              (NP (NN:[197..201] drug) (NNS:[203..215] interactions)))))))
+    (.:[215..216] .)))
+
+;section 2 Span:220..265
+;Labroo RB, Paine MF, Thummel KE, Kharasch ED.
+(SEC
+  (FRAG (NNP:[220..226] Labroo) (NN:[227..229] RB) (,:[229..230] ,)
+        (NNP:[231..236] Paine) (NNP:[237..239] MF) (,:[239..240] ,)
+        (NNP:[241..248] Thummel) (NNP:[249..251] KE) (,:[251..252] ,)
+        (NNP:[253..261] Kharasch) (NNP:[262..264] ED) (.:[264..265] .)))
+
+;section 3 Span:269..344
+;Department of Anesthesiology, University of Washington, Seattle 98195, USA.
+(SEC
+  (FRAG (NNP:[269..279] Department) (IN:[280..282] of)
+        (NNP:[283..297] Anesthesiology) (,:[297..298] ,)
+        (NNP:[299..309] University) (IN:[310..312] of)
+        (NNP:[313..323] Washington) (,:[323..324] ,) (NNP:[325..332] Seattle)
+        (CD:[333..338] 98195) (,:[338..339] ,) (NNP:[340..343] USA)
+        (.:[343..344] .)))
+
+;sentence 4 Span:348..419
+;The synthetic opioid fentanyl undergoes extensive metabolism in humans.
+;[362..368]:substance:"opioid"
+;[369..377]:substance:"fentanyl"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[348..351] The) (JJ:[352..361] synthetic) (JJ:[362..368] opioid))
+      (NP (NN:[369..377] fentanyl)))
+    (VP (VBZ:[378..387] undergoes)
+      (NP (JJ:[388..397] extensive) (NN:[398..408] metabolism))
+      (PP-LOC (IN:[409..411] in)
+        (NP (NNS:[412..418] humans))))
+    (.:[418..419] .)))
+
+;sentence 5 Span:420..481
+;Systemic  elimination occurs primarily by hepatic metabolism.
+(SENT
+  (S
+    (NP-SBJ (JJ:[420..428] Systemic) (NN:[430..441] elimination))
+    (VP (VBZ:[442..448] occurs)
+      (ADVP (RB:[449..458] primarily))
+      (PP-MNR (IN:[459..461] by)
+        (NP (JJ:[462..469] hepatic) (NN:[470..480] metabolism))))
+    (.:[480..481] .)))
+
+;sentence 6 Span:482..646
+;When administered as a  lozenge for oral transmucosal absorption, swallowed
+;fentanyl is subject to first  pass metabolism in the liver and possibly small
+;intestine.
+;[506..513]:substance:"lozenge"
+;[558..566]:substance:"fentanyl"
+(SENT
+  (S
+    (SBAR-TMP
+      (WHADVP-3 (WRB:[482..486] When))
+      (S
+        (NP-SBJ-2 (-NONE-:[486..486] *))
+        (VP (VBN:[487..499] administered)
+          (NP-2 (-NONE-:[499..499] *))
+          (PP (IN:[500..502] as)
+            (NP
+              (NP (DT:[503..504] a) (NN:[506..513] lozenge))
+              (PP (IN:[514..517] for)
+                (NP (JJ:[518..522] oral) (JJ:[523..535] transmucosal)
+                    (NN:[536..546] absorption)))))
+          (ADVP-TMP-3 (-NONE-:[546..546] *T*)))))
+    (,:[546..547] ,)
+    (NP-SBJ (VBN:[548..557] swallowed) (NN:[558..566] fentanyl))
+    (VP (VBZ:[567..569] is)
+      (ADJP-PRD (JJ:[570..577] subject)
+        (PP (TO:[578..580] to)
+          (NP
+            (NP
+              (NML (JJ:[581..586] first) (NN:[588..592] pass))
+              (NN:[593..603] metabolism))
+            (PP-LOC (IN:[604..606] in)
+              (NP
+                (NP (DT:[607..610] the) (NN:[611..616] liver))
+                (CC:[617..620] and)
+                (NP
+                  (ADVP (RB:[621..629] possibly))
+                  (JJ:[630..635] small) (NN:[636..645] intestine))))))))
+    (.:[645..646] .)))
+
+;sentence 7 Span:647..737
+;Little is known,  however, about the identity and formation of human fentanyl
+;metabolites.
+;[716..736]:substance:"fentanyl metabolites"
+(SENT
+  (S
+    (NP-SBJ-1 (JJ:[647..653] Little))
+    (VP (VBZ:[654..656] is)
+      (VP (VBN:[657..662] known)
+        (NP-1 (-NONE-:[662..662] *))
+        (,:[662..663] ,)
+        (ADVP (RB:[665..672] however))
+        (,:[672..673] ,)
+        (PP (IN:[674..679] about)
+          (NP
+            (NP (DT:[680..683] the) (NN:[684..692] identity) (CC:[693..696] and)
+                (NN:[697..706] formation))
+            (PP (IN:[707..709] of)
+              (NP (JJ:[710..715] human)
+                 (NN:[716..724] fentanyl) (NNS:[725..736] metabolites)))))))
+    (.:[736..737] .)))
+
+;sentence 8 Span:738..1007
+;This  investigation identified routes of human liver microsomal fentanyl
+;metabolism  and their relative importance, tested the hypothesis that
+;fentanyl is  metabolized by human duodenal microsomes, and identified the
+;predominantly  responsible cytochrome P450 isoforms.
+;[802..810]:substance:"fentanyl"
+;[881..889]:substance:"fentanyl"
+;[982..1006]:cyp450:"cytochrome P450 isoforms"
+(SENT
+  (S
+    (NP-SBJ (DT:[738..742] This) (NN:[744..757] investigation))
+    (VP
+      (VP (VBD:[758..768] identified)
+        (NP
+          (NP
+            (NP (NNS:[769..775] routes))
+            (PP (IN:[776..778] of)
+              (NP (JJ:[779..784] human) (NN:[785..790] liver)
+                  (JJ:[791..801] microsomal) (NN:[802..810] fentanyl)
+                  (NN:[811..821] metabolism))))
+          (CC:[823..826] and)
+          (NP (PRP$:[827..832] their) (JJ:[833..841] relative)
+              (NN:[842..852] importance))))
+      (,:[852..853] ,)
+      (VP (VBD:[854..860] tested)
+        (NP (DT:[861..864] the) (NN:[865..875] hypothesis)
+          (SBAR (IN:[876..880] that)
+            (S
+              (NP-SBJ-1 (NN:[881..889] fentanyl))
+              (VP (VBZ:[890..892] is)
+                (VP (VBN:[894..905] metabolized)
+                  (NP-1 (-NONE-:[905..905] *))
+                  (PP (IN:[906..908] by)
+                    (NP-LGS (JJ:[909..914] human) (JJ:[915..923] duodenal)
+                            (NNS:[924..934] microsomes)))))))))
+      (,:[934..935] ,) (CC:[936..939] and)
+      (VP (VBD:[940..950] identified)
+        (NP (DT:[951..954] the)
+          (ADJP (RB:[955..968] predominantly) (JJ:[970..981] responsible))
+          
+          (NML (NN:[982..992] cytochrome) (NN:[993..997] P450))
+          (NNS:[998..1006] isoforms))))
+    (.:[1006..1007] .)))
+
+;sentence 9 Span:1008..1098
+;A GC/MS assay using deuterated internal  standards was developed for fentanyl
+;metabolites.
+;[1077..1097]:substance:"fentanyl metabolites"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1008..1009] A)
+        (NML (NN:[1010..1012] GC) (SYM:[1012..1013] /) (NN:[1013..1015] MS))
+        (NN:[1016..1021] assay))
+      (VP (VBG:[1022..1027] using)
+        (NP (VBN:[1028..1038] deuterated) (JJ:[1039..1047] internal)
+            (NNS:[1049..1058] standards))))
+    (VP (VBD:[1059..1062] was)
+      (VP (VBN:[1063..1072] developed)
+        (NP-1 (-NONE-:[1072..1072] *))
+        (PP (IN:[1073..1076] for)
+          (NP (NN:[1077..1085] fentanyl) (NNS:[1086..1097] metabolites)))))
+    (.:[1097..1098] .)))
+
+;sentence 10 Span:1099..1200
+;Piperidine N-dealkylation to  norfentanyl was the predominant pathway of
+;liver microsomal metabolism.
+;[1099..1109]:substance:"Piperidine"
+;[1129..1140]:substance:"norfentanyl"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1099..1109] Piperidine) (NN:[1110..1124] N-dealkylation))
+      (PP (TO:[1125..1127] to)
+        (NP (NN:[1129..1140] norfentanyl))))
+    (VP (VBD:[1141..1144] was)
+      (NP-PRD
+        (NP (DT:[1145..1148] the) (JJ:[1149..1160] predominant)
+            (NN:[1161..1168] pathway))
+        (PP (IN:[1169..1171] of)
+          (NP (NN:[1172..1177] liver) (JJ:[1178..1188] microsomal)
+              (NN:[1189..1199] metabolism)))))
+    (.:[1199..1200] .)))
+
+;sentence 11 Span:1201..1321
+;Amide  hydrolysis to despropionylfentanyl and alkyl hydroxylation to
+;hydroxyfentanyl  were comparatively minor pathways.
+;[1222..1242]:substance:"despropionylfentanyl"
+;[1270..1285]:substance:"hydroxyfentanyl"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1201..1206] Amide) (NN:[1208..1218] hydrolysis))
+        (PP (TO:[1219..1221] to)
+          (NP (NN:[1222..1242] despropionylfentanyl))))
+      (CC:[1243..1246] and)
+      (NP
+        (NP (NN:[1247..1252] alkyl) (NN:[1253..1266] hydroxylation))
+        (PP (TO:[1267..1269] to)
+          (NP (NN:[1270..1285] hydroxyfentanyl)))))
+    (VP (VBD:[1287..1291] were)
+      (NP-PRD
+        (ADJP (RB:[1292..1305] comparatively) (JJ:[1306..1311] minor))
+        (NNS:[1312..1320] pathways)))
+    (.:[1320..1321] .)))
+
+;sentence 12 Span:1322..1437
+;Hydroxynorfentanyl was identified as a minor,  secondary metabolite arising
+;from N-dealkylation of hydroxyfentanyl.
+;[1322..1340]:substance:"Hydroxynorfentanyl"
+;[1379..1389]:substance:"metabolite"
+;[1421..1436]:substance:"hydroxyfentanyl"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[1322..1340] Hydroxynorfentanyl))
+    (VP (VBD:[1341..1344] was)
+      (VP (VBN:[1345..1355] identified)
+        (NP-1 (-NONE-:[1355..1355] *))
+        (PP-CLR (IN:[1356..1358] as)
+          (NP
+            (NP (DT:[1359..1360] a) (JJ:[1361..1366] minor) (,:[1366..1367] ,)
+                (JJ:[1369..1378] secondary) (NN:[1379..1389] metabolite))
+            (VP (VBG:[1390..1397] arising)
+              (PP-CLR (IN:[1398..1402] from)
+                (NP
+                  (NP (NN:[1403..1417] N-dealkylation))
+                  (PP (IN:[1418..1420] of)
+                    (NP (NN:[1421..1436] hydroxyfentanyl))))))))))
+    (.:[1436..1437] .)))
+
+;sentence 13 Span:1438..1716
+;Liver  microsomal norfentanyl formation was significantly inhibited by the 
+;mechanism-based P450 3A4 inhibitor troleandomycin and the P450 3A4 substrate
+;and  competitive inhibitor midazolam, and was significantly correlated with
+;P450 3A4  protein content and catalytic activity.
+;[1456..1467]:substance:"norfentanyl"
+;[1530..1538]:cyp450:"P450 3A4"
+;[1539..1548]:substance:"inhibitor"
+;[1549..1563]:substance:"troleandomycin"
+;[1572..1580]:cyp450:"P450 3A4"
+;[1581..1590]:substance:"substrate"
+;[1608..1617]:substance:"inhibitor"
+;[1618..1627]:substance:"midazolam"
+;[1667..1684]:cyp450:"P450 3A4  protein"
+(SENT
+  (S
+    (NP-SBJ-3 (NN:[1438..1443] Liver) (JJ:[1445..1455] microsomal)
+              (NN:[1456..1467] norfentanyl) (NN:[1468..1477] formation))
+    (VP
+      (VP (VBD:[1478..1481] was)
+        (ADVP-EXT (RB:[1482..1495] significantly))
+        (VP (VBN:[1496..1505] inhibited)
+          (NP-3 (-NONE-:[1505..1505] *))
+          (PP (IN:[1506..1508] by)
+            (NP-LGS
+              (NP
+                (NP (DT:[1509..1512] the)
+                  (ADJP (NN:[1514..1523] mechanism) (HYPH:[1523..1524] -)
+                        (VBN:[1524..1529] based))
+                  (NML (NN:[1530..1534] P450) (NN:[1535..1538] 3A4))
+                  (NN:[1539..1548] inhibitor))
+                (NP (NN:[1549..1563] troleandomycin)))
+              (CC:[1564..1567] and)
+              (NP
+                (NP (DT:[1568..1571] the)
+                  (NML
+                    (NML
+                      (NML-2 (NN:[1572..1576] P450) (NN:[1577..1580] 3A4))
+                      (NN:[1581..1590] substrate))
+                    (CC:[1591..1594] and)
+                    (NML
+                      (NML-2 (-NONE-:[1594..1594] *P*))
+                      (JJ:[1596..1607] competitive) (NN:[1608..1617] inhibitor))))
+                (NP (NN:[1618..1627] midazolam)))))))
+      (,:[1627..1628] ,) (CC:[1629..1632] and)
+      (VP (VBD:[1633..1636] was)
+        (ADVP-EXT (RB:[1637..1650] significantly))
+        (VP (VBN:[1651..1661] correlated)
+          (NP-3 (-NONE-:[1661..1661] *))
+          (PP-CLR (IN:[1662..1666] with)
+            (NP
+              (NP
+                
+                (NML-1 (NN:[1667..1671] P450) (NN:[1672..1675] 3A4))
+                (NN:[1677..1684] protein)
+                (NN:[1685..1692] content))
+              (CC:[1693..1696] and)
+              (NP
+                (NML-1 (-NONE-:[1696..1696] *P*))
+                (JJ:[1697..1706] catalytic) (NN:[1707..1715] activity)))))))
+    (.:[1715..1716] .)))
+
+;sentence 14 Span:1717..1871
+;Of six expressed human P450 isoforms  (P450s 1A2, 2B6, 2C9, 2D6, 2E1, and
+;3A4), only P450 3A4 exhibited significant  fentanyl dealkylation to
+;norfentanyl.
+;[1740..1753]:cyp450:"P450 isoforms"
+;[1756..1765]:cyp450:"P450s 1A2"
+;[1756..1761]...[1791..1794]:cyp450:"P450s"..."3A4"
+;[1756..1761]...[1782..1785]:cyp450:"P450s"..."2E1"
+;[1756..1761]...[1777..1780]:cyp450:"P450s"..."2D6"
+;[1756..1761]...[1772..1775]:cyp450:"P450s"..."2C9"
+;[1756..1761]...[1767..1770]:cyp450:"P450s"..."2B6"
+;[1802..1810]:cyp450:"P450 3A4"
+;[1834..1842]:substance:"fentanyl"
+;[1859..1870]:substance:"norfentanyl"
+(SENT
+  (S
+    (PP (IN:[1717..1719] Of)
+      (NP (CD:[1720..1723] six) (VBN:[1724..1733] expressed)
+          (JJ:[1734..1739] human)
+         (NN:[1740..1744] P450) (NNS:[1745..1753] isoforms)
+        (PRN (-LRB-:[1755..1756] -LRB-)
+          (NP
+            (NP
+              (NML-1 (NNS:[1756..1761] P450s))
+              (NN:[1762..1765] 1A2))
+            (,:[1765..1766] ,)
+            (NP
+              (NML-1 (-NONE-:[1766..1766] *P*))
+              (NN:[1767..1770] 2B6))
+            (,:[1770..1771] ,)
+            (NP
+              (NML-1 (-NONE-:[1771..1771] *P*))
+              (NN:[1772..1775] 2C9))
+            (,:[1775..1776] ,)
+            (NP
+              (NML-1 (-NONE-:[1776..1776] *P*))
+              (NN:[1777..1780] 2D6))
+            (,:[1780..1781] ,)
+            (NP
+              (NML-1 (-NONE-:[1781..1781] *P*))
+              (NN:[1782..1785] 2E1))
+            (,:[1785..1786] ,) (CC:[1787..1790] and)
+            (NP
+              (NML-1 (-NONE-:[1790..1790] *P*))
+              (NN:[1791..1794] 3A4)))
+          (-RRB-:[1794..1795] -RRB-))))
+    (,:[1795..1796] ,)
+    (NP-SBJ (RB:[1797..1801] only)
+       (NN:[1802..1806] P450) (NN:[1807..1810] 3A4))
+    (VP (VBD:[1811..1820] exhibited)
+      (NP
+        (NP (JJ:[1821..1832] significant) (NN:[1834..1842] fentanyl)
+            (NN:[1843..1855] dealkylation))
+        (PP (TO:[1856..1858] to)
+          (NP (NN:[1859..1870] norfentanyl)))))
+    (.:[1870..1871] .)))
+
+;sentence 15 Span:1872..1981
+;These results indicate the predominant  role of P450 3A4 in the primary route
+;of hepatic fentanyl metabolism.
+;[1920..1928]:cyp450:"P450 3A4"
+;[1961..1969]:substance:"fentanyl"
+(SENT
+  (S
+    (NP-SBJ (DT:[1872..1877] These) (NNS:[1878..1885] results))
+    (VP (VBP:[1886..1894] indicate)
+      (NP
+        (NP (DT:[1895..1898] the) (JJ:[1899..1910] predominant)
+            (NN:[1912..1916] role))
+        (PP (IN:[1917..1919] of)
+          (NP (NN:[1920..1924] P450) (NN:[1925..1928] 3A4))))
+      (PP (IN:[1929..1931] in)
+        (NP
+          (NP (DT:[1932..1935] the) (JJ:[1936..1943] primary)
+              (NN:[1944..1949] route))
+          (PP (IN:[1950..1952] of)
+            (NP (JJ:[1953..1960] hepatic) (NN:[1961..1969] fentanyl)
+                (NN:[1970..1980] metabolism))))))
+    (.:[1980..1981] .)))
+
+;sentence 16 Span:1982..2128
+;Human  duodenal microsomes also catalyzed fentanyl metabolism to norfentanyl;
+;the  average rate was approximately half that of hepatic metabolism.
+;[2024..2032]:substance:"fentanyl"
+;[2047..2058]:substance:"norfentanyl"
+(SENT
+  (S
+    (S
+      (NP-SBJ (JJ:[1982..1987] Human) (JJ:[1989..1997] duodenal)
+              (NNS:[1998..2008] microsomes))
+      (ADVP (RB:[2009..2013] also))
+      (VP (VBD:[2014..2023] catalyzed)
+        (NP
+          (NP (NN:[2024..2032] fentanyl) (NN:[2033..2043] metabolism))
+          (PP (TO:[2044..2046] to)
+            (NP (NN:[2047..2058] norfentanyl))))))
+    (::[2058..2059] ;)
+    (S
+      (NP-SBJ (DT:[2060..2063] the) (JJ:[2065..2072] average)
+              (NN:[2073..2077] rate))
+      (VP (VBD:[2078..2081] was)
+        (NP-PRD
+          (NP
+            (QP (RB:[2082..2095] approximately) (RB:[2096..2100] half))
+            (DT:[2101..2105] that))
+          (PP (IN:[2106..2108] of)
+            (NP (JJ:[2109..2116] hepatic) (NN:[2117..2127] metabolism))))))
+    (.:[2127..2128] .)))
+
+;sentence 17 Span:2129..2320
+;Rates of  duodenal norfentanyl formation were diminished by troleandomycin
+;and midazolam,  and were significantly correlated with P450 3A4 activity,
+;suggesting a prominent  role for P450 3A4.
+;[2148..2159]:substance:"norfentanyl"
+;[2189..2203]:substance:"troleandomycin"
+;[2208..2217]:substance:"midazolam"
+;[2259..2267]:cyp450:"P450 3A4"
+;[2311..2319]:cyp450:"P450 3A4"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[2129..2134] Rates))
+      (PP (IN:[2135..2137] of)
+        (NP (JJ:[2139..2147] duodenal) (NN:[2148..2159] norfentanyl)
+            (NN:[2160..2169] formation))))
+    (VP
+      (VP (VBD:[2170..2174] were)
+        (VP (VBN:[2175..2185] diminished)
+          (NP-1 (-NONE-:[2185..2185] *))
+          (PP (IN:[2186..2188] by)
+            (NP-LGS (NN:[2189..2203] troleandomycin) (CC:[2204..2207] and)
+                    (NN:[2208..2217] midazolam)))))
+      (,:[2217..2218] ,) (CC:[2220..2223] and)
+      (VP (VBD:[2224..2228] were)
+        (ADVP (RB:[2229..2242] significantly))
+        (VP (VBN:[2243..2253] correlated)
+          (NP-1 (-NONE-:[2253..2253] *))
+          (PP-CLR (IN:[2254..2258] with)
+            (NP
+              (NML (NN:[2259..2263] P450) (NN:[2264..2267] 3A4))
+              (NN:[2268..2276] activity)))
+          (,:[2276..2277] ,)
+          (S-ADV
+            (NP-SBJ (-NONE-:[2277..2277] *))
+            (VP (VBG:[2278..2288] suggesting)
+              (NP
+                (NP (DT:[2289..2290] a) (JJ:[2291..2300] prominent)
+                    (NN:[2302..2306] role))
+                (PP (IN:[2307..2310] for)
+                  (NP (NN:[2311..2315] P450) (NN:[2316..2319] 3A4)))))))))
+    (.:[2319..2320] .)))
+
+;sentence 18 Span:2321..2500
+;These results demonstrate that human intestinal as well as  liver microsomes
+;catalyze fentanyl metabolism, and N-dealkylation by P450 3A4 is  the
+;predominant route in both organs.
+;[2407..2415]:substance:"fentanyl"
+;[2450..2458]:cyp450:"P450 3A4"
+(SENT
+  (S
+    (NP-SBJ (DT:[2321..2326] These) (NNS:[2327..2334] results))
+    (VP (VBP:[2335..2346] demonstrate)
+      (SBAR (IN:[2347..2351] that)
+        (S
+          (S
+            (NP-SBJ
+              (NP
+                (ADJP-2 (JJ:[2352..2357] human))
+                (JJ:[2358..2368] intestinal)
+                (NML-1 (-NONE-:[2368..2368] *P*)))
+              (CONJP (RB:[2369..2371] as) (RB:[2372..2376] well)
+                     (IN:[2377..2379] as))
+              (NP
+                (ADJP-2 (-NONE-:[2379..2379] *P*))
+                (NN:[2381..2386] liver)
+                (NML-1 (NNS:[2387..2397] microsomes))))
+            (VP (VBP:[2398..2406] catalyze)
+              (NP (NN:[2407..2415] fentanyl) (NN:[2416..2426] metabolism))))
+          (,:[2426..2427] ,) (CC:[2428..2431] and)
+          (S
+            (NP-SBJ
+              (NP (NN:[2432..2446] N-dealkylation))
+              (PP (IN:[2447..2449] by)
+                (NP (NN:[2450..2454] P450) (NN:[2455..2458] 3A4))))
+            (VP (VBZ:[2459..2461] is)
+              (NP-PRD (DT:[2463..2466] the) (JJ:[2467..2478] predominant)
+                      (NN:[2479..2484] route))
+              (PP-LOC (IN:[2485..2487] in)
+                (NP (DT:[2488..2492] both) (NNS:[2493..2499] organs))))))))
+    (.:[2499..2500] .)))
+
+;sentence 19 Span:2501..2637
+;The fraction of fentanyl lozenge that is  swallowed likely undergoes
+;significant intestinal, as well as hepatic,  first-pass metabolism.
+;[2517..2533]:substance:"fentanyl lozenge"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[2501..2504] The) (NN:[2505..2513] fraction))
+        (PP (IN:[2514..2516] of)
+          (NP (NN:[2517..2525] fentanyl) (NN:[2526..2533] lozenge))))
+      (SBAR
+        (WHNP-4 (WDT:[2534..2538] that))
+        (S
+          (NP-SBJ-4 (-NONE-:[2538..2538] *T*))
+          (VP (VBZ:[2539..2541] is)
+            (VP (VBN:[2543..2552] swallowed)
+              (NP-4 (-NONE-:[2552..2552] *)))))))
+    (ADVP (RB:[2553..2559] likely))
+    (VP (VBZ:[2560..2569] undergoes)
+      (NP
+        (NP
+          (ADJP-3 (JJ:[2570..2581] significant))
+          (JJ:[2582..2592] intestinal)
+          (NML-1 (-NONE-:[2592..2592] *P*))
+          (NML-2 (-NONE-:[2592..2592] *P*)))
+        (,:[2592..2593] ,)
+        (CONJP (RB:[2594..2596] as) (RB:[2597..2601] well) (IN:[2602..2604] as))
+        (NP
+          (ADJP-3 (-NONE-:[2604..2604] *P*))
+          (JJ:[2605..2612] hepatic) (,:[2612..2613] ,)
+          (NML-1 (JJ:[2615..2620] first) (HYPH:[2620..2621] -)
+                 (NN:[2621..2625] pass))
+          (NML-2 (NN:[2626..2636] metabolism)))))
+    (.:[2636..2637] .)))
+
+;sentence 20 Span:2638..2826
+;Intestinal and hepatic first-pass metabolism, as well as  systemic
+;metabolism, may be subject to individual variability in P450 3A4  expression
+;and to drug interactions involving P450 3A4.
+;[2761..2769]:cyp450:"P450 3A4"
+;[2789..2793]:substance:"drug"
+;[2817..2825]:cyp450:"P450 3A4"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[2638..2648] Intestinal)
+          (NML-1 (-NONE-:[2648..2648] *P*))
+          (NML-2 (-NONE-:[2648..2648] *P*)))
+        (CC:[2649..2652] and)
+        (NP (JJ:[2653..2660] hepatic)
+          (NML-1 (JJ:[2661..2666] first) (HYPH:[2666..2667] -)
+                 (NN:[2667..2671] pass))
+          (NML-2 (NN:[2672..2682] metabolism))))
+      (,:[2682..2683] ,)
+      (CONJP (RB:[2684..2686] as) (RB:[2687..2691] well) (IN:[2692..2694] as))
+      (NP (JJ:[2696..2704] systemic) (NN:[2705..2715] metabolism)))
+    (,:[2715..2716] ,)
+    (VP (MD:[2717..2720] may)
+      (VP (VB:[2721..2723] be)
+        (ADJP-PRD (JJ:[2724..2731] subject)
+          (PP
+            (PP (TO:[2732..2734] to)
+              (NP
+                (NP (JJ:[2735..2745] individual) (NN:[2746..2757] variability))
+                (PP (IN:[2758..2760] in)
+                  (NP
+                    (NML (NN:[2761..2765] P450) (NN:[2766..2769] 3A4))
+                    (NN:[2771..2781] expression)))))
+            (CC:[2782..2785] and)
+            (PP (TO:[2786..2788] to)
+              (NP
+                (NP (NN:[2789..2793] drug) (NNS:[2794..2806] interactions))
+                (VP (VBG:[2807..2816] involving)
+                  (NP (NN:[2817..2821] P450) (NN:[2822..2825] 3A4)))))))))
+    (.:[2825..2826] .)))
+
+;section 21 Span:2830..2874
+;PMID: 9311623 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2830..2834] PMID) (::[2834..2835] :) (CD:[2836..2843] 9311623)
+        (NN:[2844..2845] -LSB-) (NNP:[2845..2851] PubMed) (::[2852..2853] -)
+        (NN:[2854..2861] indexed) (IN:[2862..2865] for)
+        (NNP:[2866..2874] MEDLINE-RSB-)))

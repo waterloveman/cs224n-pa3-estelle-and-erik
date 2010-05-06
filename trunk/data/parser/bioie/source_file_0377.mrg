@@ -1,0 +1,154 @@
+;PMID: 1458177
+;source_file_1936.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..236] = [t:50..236]
+;2)section:[e:240..260] = [t:240..260]
+;3)section:[e:264..291] = [t:264..291]
+;4)sentence:[e:295..448] = [t:295..448]
+;5)sentence:[e:450..635] = [t:450..635]
+;6)section:[e:639..683] = [t:639..683]
+
+;section 0 Span:0..44
+;Eksp Klin Farmakol. 1992 Jul-Aug;55(4):16-7.
+(SEC
+  (FRAG (NN:[0..4] Eksp) (NNP:[5..9] Klin) (NNP:[10..18] Farmakol)
+        (.:[18..19] .) (CD:[20..24] 1992) (NNP:[25..29] Jul-)
+        (CD:[29..35] Aug;55) (-LRB-:[35..36] -LRB-) (CD:[36..37] 4)
+        (-RRB-:[37..38] -RRB-) (CD:[38..44] :16-7.)))
+
+;sentence 1 Span:50..236
+;[The efficacy of hepatoprotectors and cytochrome P-450 inducers in correcting
+; the functional activity of the hepatocyte microsomal system in an acute
+;lesion  of the liver in prepuberty]
+;[67..83]:substance:"hepatoprotectors"
+;[88..104]:cyp450:"cytochrome P-450"
+;[105..113]:substance:"inducers"
+(SENT
+  (NP-HLN (-LRB-:[50..51] -LSB-)
+    (NP (DT:[51..54] The) (NN:[55..63] efficacy))
+    (PP (IN:[64..66] of)
+      (NP
+        (NP (NNS:[67..83] hepatoprotectors))
+        (CC:[84..87] and)
+        (NP
+          (NML (NN:[88..98] cytochrome) (NN:[99..104] P-450))
+          (NNS:[105..113] inducers))))
+    (PP (IN:[114..116] in)
+      (S-NOM
+        (NP-SBJ (-NONE-:[116..116] *))
+        (VP (VBG:[117..127] correcting)
+          (NP
+            (NP (DT:[129..132] the) (JJ:[133..143] functional)
+                (NN:[144..152] activity))
+            (PP (IN:[153..155] of)
+              (NP (DT:[156..159] the) (NN:[160..170] hepatocyte)
+                  (JJ:[171..181] microsomal) (NN:[182..188] system))))
+          (PP-LOC (IN:[189..191] in)
+            (NP
+              (NP (DT:[192..194] an) (JJ:[195..200] acute)
+                  (NN:[201..207] lesion))
+              (PP (IN:[209..211] of)
+                (NP (DT:[212..215] the) (NN:[216..221] liver)))))
+          (PP-TMP (IN:[222..224] in)
+            (NP (NN:[225..235] prepuberty))))))
+    (-RRB-:[235..236] -RSB-)))
+
+;section 2 Span:240..260
+;[Article in Russian]
+(SEC
+  (FRAG (-LRB-:[240..241] -LSB-) (NN:[241..248] Article) (IN:[249..251] in)
+        (NNP:[252..259] Russian) (-RRB-:[259..260] -RSB-)))
+
+;section 3 Span:264..291
+;Khakimov ZZ, Rakhmanov AKh.
+(SEC
+  (FRAG (NNP:[264..272] Khakimov) (NNP:[273..275] ZZ) (,:[275..276] ,)
+        (NNP:[277..286] Rakhmanov) (NNP:[287..290] AKh) (.:[290..291] .)))
+
+;sentence 4 Span:295..448
+;Intragastric CCl4 inhibited the activity of and lowered the levels of the
+;major  components of the hepatic monoohygenase enzyme system in one-month
+;rats.
+;[308..312]:substance:"CCl4"
+;[402..422]:substance:"monoohygenase enzyme"
+(SENT
+  (S
+    (NP-SBJ (JJ:[295..307] Intragastric) (NN:[308..312] CCl4))
+    (VP
+      (VP (VBD:[313..322] inhibited)
+        (NP
+          (NP (DT:[323..326] the) (NN:[327..335] activity))
+          (PP (IN:[336..338] of)
+            (NP-1 (-NONE-:[338..338] *RNR*)))))
+      (CC:[339..342] and)
+      (VP (VBD:[343..350] lowered)
+        (NP
+          (NP (DT:[351..354] the) (NNS:[355..361] levels))
+          (PP (IN:[362..364] of)
+            (NP-1 (-NONE-:[364..364] *RNR*)))))
+      (NP-1
+        (NP (DT:[365..368] the) (JJ:[369..374] major)
+            (NNS:[376..386] components))
+        (PP (IN:[387..389] of)
+          (NP (DT:[390..393] the) (JJ:[394..401] hepatic)
+            (NML (NN:[402..415] monoohygenase) (NN:[416..422] enzyme))
+            (NN:[423..429] system))))
+      (PP-LOC (IN:[430..432] in)
+        (NP
+          (NML (CD:[433..436] one) (HYPH:[436..437] -) (NN:[437..442] month))
+          (NNS:[443..447] rats))))
+    (.:[447..448] .)))
+
+;sentence 5 Span:450..635
+;Benzonal was found to be more effective in correcting the impaired
+;monooxygenase  enzyme system of hepatic cells in immature rats with acute
+;hepatitis than  silibor, phytin and zyxorin.
+;[450..458]:substance:"Benzonal"
+;[517..538]:substance:"monooxygenase  enzyme"
+;[607..614]:substance:"silibor"
+;[616..622]:substance:"phytin"
+;[627..634]:substance:"zyxorin"
+(SENT
+  (S
+    (NP-SBJ-2 (NN:[450..458] Benzonal))
+    (VP (VBD:[459..462] was)
+      (VP (VBN:[463..468] found)
+        (S
+          (NP-SBJ-2 (-NONE-:[468..468] *))
+          (VP (TO:[469..471] to)
+            (VP (VB:[472..474] be)
+              (ADJP-PRD
+                (ADJP (RBR:[475..479] more) (JJ:[480..489] effective))
+                (PP-1 (-NONE-:[489..489] *ICH*)))
+              (PP (IN:[490..492] in)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[492..492] *))
+                  (VP (VBG:[493..503] correcting)
+                    (NP
+                      (NP (DT:[504..507] the) (VBN:[508..516] impaired)
+                        (NML (NN:[517..530] monooxygenase)
+                             (NN:[532..538] enzyme))
+                        (NN:[539..545] system))
+                      (PP (IN:[546..548] of)
+                        (NP (JJ:[549..556] hepatic) (NNS:[557..562] cells))))
+                    (PP-LOC (IN:[563..565] in)
+                      (NP
+                        (NP (JJ:[566..574] immature) (NNS:[575..579] rats))
+                        (PP (IN:[580..584] with)
+                          (NP (JJ:[585..590] acute) (NN:[591..600] hepatitis))))))))
+              (PP-1 (IN:[601..605] than)
+                (NP (NN:[607..614] silibor) (,:[614..615] ,)
+                    (NN:[616..622] phytin) (CC:[623..626] and)
+                    (NN:[627..634] zyxorin))))))))
+    (.:[634..635] .)))
+
+;section 6 Span:639..683
+;PMID: 1458177 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[639..643] PMID) (::[643..644] :) (CD:[645..652] 1458177)
+        (NN:[653..654] -LSB-) (NNP:[654..660] PubMed) (::[661..662] -)
+        (NN:[663..670] indexed) (IN:[671..674] for)
+        (NNP:[675..683] MEDLINE-RSB-)))

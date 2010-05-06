@@ -1,0 +1,558 @@
+;PMID: 8117926
+;source_file_1794.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..112] = [t:49..112]
+;2)section:[e:116..146] = [t:116..146]
+;3)section:[e:150..239] = [t:150..239]
+;4)sentence:[e:243..458] = [t:243..458]
+;5)sentence:[e:459..602] = [t:459..602]
+;6)sentence:[e:603..736] = [t:603..736]
+;7)sentence:[e:737..858] = [t:737..858]
+;8)sentence:[e:859..1094] = [t:859..1094]
+;9)sentence:[e:1095..1354] = [t:1095..1354]
+;10)sentence:[e:1355..1505] = [t:1355..1505]
+;11)sentence:[e:1506..1682] = [t:1506..1682]
+;12)sentence:[e:1683..1854] = [t:1683..1854]
+;13)sentence:[e:1855..2010] = [t:1855..2010]
+;14)section:[e:2010..2044] = [t:2010..2044]
+;15)section:[e:2048..2092] = [t:2048..2092]
+
+;section 0 Span:0..43
+;Chem Res Toxicol. 1993 Nov-Dec;6(6):866-71.
+(SEC
+  (FRAG (NNP:[0..4] Chem) (NNP:[5..8] Res) (NNP:[9..16] Toxicol) (.:[16..17] .)
+        (CD:[18..22] 1993) (NN:[23..31] Nov-Dec;) (CD:[31..32] 6)
+        (NN:[32..33] -LRB-) (NN:[33..34] 6) (NN:[34..35] -RRB-) (::[35..36] :)
+        (CD:[36..40] 866-) (CD:[40..42] 71) (.:[42..43] .)))
+
+;sentence 1 Span:49..112
+;Epoxidation of acrylonitrile by rat and human cytochromes P450.
+;[64..77]:substance:"acrylonitrile"
+;[95..111]:cyp450:"cytochromes P450"
+(SENT
+  (NP-HLN
+    (NP (NN:[49..60] Epoxidation))
+    (PP (IN:[61..63] of)
+      (NP (NN:[64..77] acrylonitrile)))
+    (PP (IN:[78..80] by)
+      (NP
+        (NP (NN:[81..84] rat)
+          (NML-1 (-NONE-:[84..84] *P*)))
+        (CC:[85..88] and)
+        (NP (JJ:[89..94] human)
+          (NML-1 (NNS:[95..106] cytochromes) (NN:[107..111] P450)))))
+    (.:[111..112] .)))
+
+;section 2 Span:116..146
+;Kedderis GL, Batra R, Koop DR.
+(SEC
+  (FRAG (NNP:[116..124] Kedderis) (NNP:[125..127] GL) (,:[127..128] ,)
+        (NNP:[129..134] Batra) (NNP:[135..136] R) (,:[136..137] ,)
+        (NNP:[138..142] Koop) (NNP:[143..146] DR.)))
+
+;section 3 Span:150..239
+;Chemical Industry Institute of Toxicology, Research Triangle Park, North 
+;Carolina 27709.
+(SEC
+  (FRAG (NNP:[150..158] Chemical) (NNP:[159..167] Industry)
+        (NNP:[168..177] Institute) (IN:[178..180] of)
+        (NNP:[181..191] Toxicology) (,:[191..192] ,) (NNP:[193..201] Research)
+        (NNP:[202..210] Triangle) (NNP:[211..215] Park) (,:[215..216] ,)
+        (NNP:[217..222] North) (NNP:[224..232] Carolina) (.:[233..238] 27709)
+        (.:[238..239] .)))
+
+;sentence 4 Span:243..458
+;The cytochromes P450 (P450) involved in the epoxidation of the rat carcinogen
+; acrylonitrile (ACN) to the mutagen 2-cyanoethylene oxide (CEO) have been 
+;investigated in hepatic microsomes from F-344 rats and humans.
+;[247..263]:cyp450:"cytochromes P450"
+;[265..269]:cyp450:"P450"
+;[310..320]:substance:"carcinogen"
+;[322..335]:substance:"acrylonitrile"
+;[337..340]:substance:"ACN"
+;[349..356]:substance:"mutagen"
+;[357..378]:substance:"2-cyanoethylene oxide"
+;[380..383]:substance:"CEO"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[243..246] The)
+           (NNS:[247..258] cytochromes) (NN:[259..263] P450))
+        (NP (-LRB-:[264..265] -LRB-) (NN:[265..269] P450)
+            (-RRB-:[269..270] -RRB-)))
+      (VP (VBN:[271..279] involved)
+        (NP (-NONE-:[279..279] *))
+        (PP-CLR (IN:[280..282] in)
+          (NP
+            (NP (DT:[283..286] the) (NN:[287..298] epoxidation))
+            (PP (IN:[299..301] of)
+              (NP
+                (NP (DT:[302..305] the) (NN:[306..309] rat)
+                    (NN:[310..320] carcinogen))
+                (NP
+                  (NP (NN:[322..335] acrylonitrile))
+                  (NP (-LRB-:[336..337] -LRB-) (NN:[337..340] ACN)
+                      (-RRB-:[340..341] -RRB-)))))
+            (PP (TO:[342..344] to)
+              (NP
+                (NP (DT:[345..348] the) (NN:[349..356] mutagen))
+                (NP
+                  (NP (NN:[357..372] 2-cyanoethylene) (NN:[373..378] oxide))
+                  (NP (-LRB-:[379..380] -LRB-) (NN:[380..383] CEO)
+                      (-RRB-:[383..384] -RRB-)))))))))
+    (VP (VBP:[385..389] have)
+      (VP (VBN:[390..394] been)
+        (VP (VBN:[396..408] investigated)
+          (NP-1 (-NONE-:[408..408] *))
+          (PP-LOC (IN:[409..411] in)
+            (NP
+              (NP (JJ:[412..419] hepatic) (NNS:[420..430] microsomes))
+              (PP (IN:[431..435] from)
+                (NP
+                  (NP (NN:[436..441] F-344) (NNS:[442..446] rats))
+                  (CC:[447..450] and)
+                  (NP (NNS:[451..457] humans)))))))))
+    (.:[457..458] .)))
+
+;sentence 5 Span:459..602
+;Induction of P450  2E1 by acetone treatment increased the Vmax for rat
+;microsomal CEO formation  5-fold, while ACN treatment had little effect.
+;[472..481]:cyp450:"P450  2E1"
+;[485..492]:substance:"acetone"
+;[517..521]:quantitative-name:"Vmax"
+;[541..544]:substance:"CEO"
+;[556..562]:quantitative-value:"5-fold"
+;[570..573]:substance:"ACN"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[459..468] Induction))
+      (PP (IN:[469..471] of)
+        (NP (NN:[472..476] P450) (NN:[478..481] 2E1)))
+      (PP (IN:[482..484] by)
+        (NP (NN:[485..492] acetone) (NN:[493..502] treatment))))
+    (VP (VBD:[503..512] increased)
+      (NP
+        (NP (DT:[513..516] the) (NN:[517..521] Vmax))
+        (PP (IN:[522..525] for)
+          (NP (NN:[526..529] rat) (JJ:[530..540] microsomal) (NN:[541..544] CEO)
+              (NN:[545..554] formation))))
+      (ADVP-EXT (CD:[556..557] 5) (HYPH:[557..558] -) (RB:[558..562] fold))
+      (,:[562..563] ,)
+      (SBAR-ADV (IN:[564..569] while)
+        (S
+          (NP-SBJ (NN:[570..573] ACN) (NN:[574..583] treatment))
+          (VP (VBD:[584..587] had)
+            (NP (JJ:[588..594] little) (NN:[595..601] effect))))))
+    (.:[601..602] .)))
+
+;sentence 6 Span:603..736
+;Treatment with  beta-naphthoflavone, dexamethasone, and phenobarbital had
+;little effect upon  Vmax but increased the KM 3- to 5-fold.
+;[619..638]:substance:"beta-naphthoflavone"
+;[640..653]:substance:"dexamethasone"
+;[659..672]:substance:"phenobarbital"
+;[697..701]:quantitative-name:"Vmax"
+;[720..722]:quantitative-name:"KM"
+;[723..735]:quantitative-value:"3- to 5-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[603..612] Treatment))
+      (PP (IN:[613..617] with)
+        (NP (NN:[619..638] beta-naphthoflavone) (,:[638..639] ,)
+            (NN:[640..653] dexamethasone) (,:[653..654] ,) (CC:[655..658] and)
+            (NN:[659..672] phenobarbital))))
+    (VP
+      (VP (VBD:[673..676] had)
+        (NP
+          (NP (JJ:[677..683] little) (NN:[684..690] effect))
+          (PP (IN:[691..695] upon)
+            (NP (NN:[697..701] Vmax)))))
+      (CC:[702..705] but)
+      (VP (VBD:[706..715] increased)
+        (NP (DT:[716..719] the) (NN:[720..722] KM))
+        (ADVP-EXT
+          (QP (CD:[723..724] 3) (HYPH:[724..725] -) (TO:[726..728] to)
+              (CD:[729..730] 5))
+          (HYPH:[730..731] -) (RB:[731..735] fold))))
+    (.:[735..736] .)))
+
+;sentence 7 Span:737..858
+;The P450 ligand 1-phenylimidazole and  substrate ethanol were potent
+;inhibitors of ACN epoxidation after all  treatments.
+;[741..745]:cyp450:"P450"
+;[746..752]:substance:"ligand"
+;[753..770]:substance:"1-phenylimidazole"
+;[776..785]:substance:"substrate"
+;[786..793]:substance:"ethanol"
+;[806..816]:substance:"inhibitors"
+;[820..823]:substance:"ACN"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[737..740] The)
+          (NML-1 (NN:[741..745] P450))
+          (NN:[746..752] ligand))
+        (NP (NN:[753..770] 1-phenylimidazole)))
+      (CC:[771..774] and)
+      (NP
+        (NP
+          (NML-1 (-NONE-:[774..774] *P*))
+          (NN:[776..785] substrate))
+        (NP (NN:[786..793] ethanol))))
+    (VP (VBD:[794..798] were)
+      (NP-PRD
+        (NP (JJ:[799..805] potent) (NNS:[806..816] inhibitors))
+        (PP (IN:[817..819] of)
+          (NP (NN:[820..823] ACN) (NN:[824..835] epoxidation)))
+        (PP-TMP (IN:[836..841] after)
+          (NP (DT:[842..845] all) (NNS:[847..857] treatments)))))
+    (.:[857..858] .)))
+
+;sentence 8 Span:859..1094
+;2-(Diethylamino)ethyl 2,2-diphenylvalerate (SKF 525A; 0.1 mM) was  not an
+;effective inhibitor with microsomes from untreated or acetone-treated  rats,
+;but inhibited approximately 50% following dexamethasone or phenobarbital 
+;treatment.
+;[859..901]:substance:"2-(Diethylamino)ethyl 2,2-diphenylvalerate"
+;[903..911]:substance:"SKF 525A"
+;[913..916]:quantitative-value:"0.1"
+;[917..919]:quantitative-units:"mM"
+;[943..952]:substance:"inhibitor"
+;[987..994]:substance:"acetone"
+;[1024..1041]:quantitative-value:"approximately 50%"
+;[1052..1065]:substance:"dexamethasone"
+;[1069..1082]:substance:"phenobarbital"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[859..880] 2--LRB-Diethylamino-RRB-ethyl)
+          (NN:[881..901] 2,2-diphenylvalerate))
+      (PRN (-LRB-:[902..903] -LRB-)
+        (NP (NN:[903..906] SKF) (NN:[907..911] 525A))
+        (::[911..912] ;)
+        (NP (CD:[913..916] 0.1) (NN:[917..919] mM))
+        (-RRB-:[919..920] -RRB-)))
+    (VP
+      (VP (VBD:[921..924] was) (RB:[926..929] not)
+        (NP-PRD
+          (NP (DT:[930..932] an) (JJ:[933..942] effective)
+              (NN:[943..952] inhibitor))
+          (PP (IN:[953..957] with)
+            (NP
+              (NP (NNS:[958..968] microsomes))
+              (PP (IN:[969..973] from)
+                (NP
+                  (NP (JJ:[974..983] untreated)
+                    (NML-2 (-NONE-:[983..983] *P*)))
+                  (CC:[984..986] or)
+                  (NP
+                    (ADJP (NN:[987..994] acetone) (HYPH:[994..995] -)
+                          (VBN:[995..1002] treated))
+                    (NML-2 (NNS:[1004..1008] rats)))))))))
+      (,:[1008..1009] ,) (CC:[1010..1013] but)
+      (VP (VBD:[1014..1023] inhibited)
+        (NP-EXT
+          (QP (RB:[1024..1037] approximately) (CD:[1038..1040] 50))
+          (NN:[1040..1041] %))
+        (S-TMP
+          (NP-SBJ (-NONE-:[1041..1041] *))
+          (VP (VBG:[1042..1051] following)
+            (NP
+              (NP (NN:[1052..1065] dexamethasone)
+                (NML-1 (-NONE-:[1065..1065] *P*)))
+              (CC:[1066..1068] or)
+              (NP (NN:[1069..1082] phenobarbital)
+                (NML-1 (NN:[1084..1093] treatment))))))))
+    (.:[1093..1094] .)))
+
+;sentence 9 Span:1095..1354
+;Antibodies to P450 2E1 inhibited > 85% of the ACN epoxidation  activity in
+;microsomes from untreated or beta-naphthoflavone- or acetone-treated  rats,
+;but only produced 40% and 60% inhibition following dexamethasone or 
+;phenobarbital treatments, respectively.
+;[1095..1105]:substance:"Antibodies"
+;[1109..1117]:cyp450:"P450 2E1"
+;[1128..1133]:quantitative-value:"> 85%"
+;[1141..1144]:substance:"ACN"
+;[1199..1218]:substance:"beta-naphthoflavone"
+;[1223..1230]:substance:"acetone"
+;[1264..1267]:quantitative-value:"40%"
+;[1272..1275]:quantitative-value:"60%"
+;[1297..1310]:substance:"dexamethasone"
+;[1315..1328]:substance:"phenobarbital"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[1095..1105] Antibodies))
+      (PP (TO:[1106..1108] to)
+        (NP (NN:[1109..1113] P450) (NN:[1114..1117] 2E1))))
+    (VP
+      (VP (VBD:[1118..1127] inhibited)
+        (NP
+          (NP
+            (QP (SYM:[1128..1129] >) (CD:[1130..1132] 85))
+            (NN:[1132..1133] %))
+          (PP (IN:[1134..1136] of)
+            (NP (DT:[1137..1140] the)
+              (NML (NN:[1141..1144] ACN) (NN:[1145..1156] epoxidation))
+              (NN:[1158..1166] activity))))
+        (PP-LOC (IN:[1167..1169] in)
+          (NP
+            (NP (NNS:[1170..1180] microsomes))
+            (PP (IN:[1181..1185] from)
+              (NP
+                (NP (JJ:[1186..1195] untreated)
+                  (NML-4 (-NONE-:[1195..1195] *P*)))
+                (CC:[1196..1198] or)
+                (NP
+                  (NP
+                    (ADJP (NN:[1199..1218] beta-naphthoflavone)
+                          (HYPH:[1218..1219] -)
+                      (ADJP-3 (-NONE-:[1219..1219] *P*)))
+                    (NML-4 (-NONE-:[1219..1219] *P*)))
+                  (CC:[1220..1222] or)
+                  (NP
+                    (ADJP (NN:[1223..1230] acetone) (HYPH:[1230..1231] -)
+                      (ADJP-3 (VBN:[1231..1238] treated)))
+                    (NML-4 (NNS:[1240..1244] rats)))))))))
+      (,:[1244..1245] ,) (CC:[1246..1249] but)
+      (VP
+        (ADVP (RB:[1250..1254] only))
+        (VBD:[1255..1263] produced)
+        (NP
+          (NP
+            (NML-EXT (CD:[1264..1266] 40) (NN:[1266..1267] %))
+            (NML-2 (-NONE-:[1267..1267] *P*)))
+          (CC:[1268..1271] and)
+          (NP
+            (NML-EXT (CD:[1272..1274] 60) (NN:[1274..1275] %))
+            (NML-2 (NN:[1276..1286] inhibition))))
+        (S-TMP
+          (NP-SBJ (-NONE-:[1286..1286] *))
+          (VP (VBG:[1287..1296] following)
+            (NP
+              (NP (NN:[1297..1310] dexamethasone)
+                (NML-1 (-NONE-:[1310..1310] *P*)))
+              (CC:[1311..1313] or)
+              (NP (NN:[1315..1328] phenobarbital)
+                (NML-1 (NNS:[1329..1339] treatments))))
+            (,:[1339..1340] ,)
+            (ADVP (RB:[1341..1353] respectively))))))
+    (.:[1353..1354] .)))
+
+;sentence 10 Span:1355..1505
+;These results indicate that P450 2E1 is  the major catalyst of ACN
+;epoxidation in untreated rats and that other forms of  P450 can also
+;epoxidize ACN.
+;[1383..1391]:cyp450:"P450 2E1"
+;[1406..1414]:substance:"catalyst"
+;[1418..1421]:substance:"ACN"
+;[1477..1481]:cyp450:"P450"
+;[1501..1504]:substance:"ACN"
+(SENT
+  (S
+    (NP-SBJ (DT:[1355..1360] These) (NNS:[1361..1368] results))
+    (VP (VBP:[1369..1377] indicate)
+      (SBAR
+        (SBAR (IN:[1378..1382] that)
+          (S
+            (NP-SBJ (NN:[1383..1387] P450) (NN:[1388..1391] 2E1))
+            (VP (VBZ:[1392..1394] is)
+              (NP-PRD
+                (NP (DT:[1396..1399] the) (JJ:[1400..1405] major)
+                    (NN:[1406..1414] catalyst))
+                (PP (IN:[1415..1417] of)
+                  (NP (NN:[1418..1421] ACN) (NN:[1422..1433] epoxidation)))
+                (PP-LOC (IN:[1434..1436] in)
+                  (NP (JJ:[1437..1446] untreated) (NNS:[1447..1451] rats)))))))
+        (CC:[1452..1455] and)
+        (SBAR (IN:[1456..1460] that)
+          (S
+            (NP-SBJ
+              (NP (JJ:[1461..1466] other) (NNS:[1467..1472] forms))
+              (PP (IN:[1473..1475] of)
+                (NP (NN:[1477..1481] P450))))
+            (VP (MD:[1482..1485] can)
+              (ADVP (RB:[1486..1490] also))
+              (VP (VB:[1491..1500] epoxidize)
+                (NP (NN:[1501..1504] ACN))))))))
+    (.:[1504..1505] .)))
+
+;sentence 11 Span:1506..1682
+;Diethyldithiocarbamate (0.1 mM) was a potent  irreversible inhibitor of ACN
+;epoxidation after all of the induction treatments,  indicating that it is not
+;specific for P450 2E1.
+;[1506..1528]:substance:"Diethyldithiocarbamate"
+;[1530..1533]:quantitative-value:"0.1"
+;[1534..1536]:quantitative-units:"mM"
+;[1565..1574]:substance:"inhibitor"
+;[1578..1581]:substance:"ACN"
+;[1673..1681]:cyp450:"P450 2E1"
+(SENT
+  (S
+    (NP-SBJ (NN:[1506..1528] Diethyldithiocarbamate)
+      (PRN (-LRB-:[1529..1530] -LRB-)
+        (NP (CD:[1530..1533] 0.1) (NN:[1534..1536] mM))
+        (-RRB-:[1536..1537] -RRB-)))
+    (VP (VBD:[1538..1541] was)
+      (NP-PRD
+        (NP (DT:[1542..1543] a) (JJ:[1544..1550] potent)
+            (JJ:[1552..1564] irreversible) (NN:[1565..1574] inhibitor))
+        (PP (IN:[1575..1577] of)
+          (NP (NN:[1578..1581] ACN) (NN:[1582..1593] epoxidation))))
+      (PP-TMP (IN:[1594..1599] after)
+        (NP
+          (NP (DT:[1600..1603] all))
+          (PP (IN:[1604..1606] of)
+            (NP (DT:[1607..1610] the) (NN:[1611..1620] induction)
+                (NNS:[1621..1631] treatments)))))
+      (,:[1631..1632] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1632..1632] *))
+        (VP (VBG:[1634..1644] indicating)
+          (SBAR (IN:[1645..1649] that)
+            (S
+              (NP-SBJ (PRP:[1650..1652] it))
+              (VP (VBZ:[1653..1655] is) (RB:[1656..1659] not)
+                (ADJP-PRD (JJ:[1660..1668] specific)
+                  (PP (IN:[1669..1672] for)
+                    (NP (NN:[1673..1677] P450) (NN:[1678..1681] 2E1))))))))))
+    (.:[1681..1682] .)))
+
+;sentence 12 Span:1683..1854
+;Chlorzoxazone (2 mM) produced  75-90% inhibition after all of the induction
+;treatments, indicating that it  interacts with several rodent P450 isoforms
+;in addition to 2E1.
+;[1683..1696]:substance:"Chlorzoxazone"
+;[1698..1699]:quantitative-value:"2"
+;[1700..1702]:quantitative-units:"mM"
+;[1714..1720]:quantitative-value:"75-90%"
+;[1821..1834]:cyp450:"P450 isoforms"
+;[1850..1853]:cyp450:"2E1"
+(SENT
+  (S
+    (NP-SBJ (NN:[1683..1696] Chlorzoxazone)
+      (PRN (-LRB-:[1697..1698] -LRB-)
+        (NP (CD:[1698..1699] 2) (NN:[1700..1702] mM))
+        (-RRB-:[1702..1703] -RRB-)))
+    (VP (VBD:[1704..1712] produced)
+      (NP
+        (NML-EXT
+          (QP (CD:[1714..1716] 75) (HYPH:[1716..1717] -) (CD:[1717..1719] 90))
+          (NN:[1719..1720] %))
+        (NN:[1721..1731] inhibition))
+      (PP-TMP (IN:[1732..1737] after)
+        (NP
+          (NP (DT:[1738..1741] all))
+          (PP (IN:[1742..1744] of)
+            (NP (DT:[1745..1748] the) (NN:[1749..1758] induction)
+                (NNS:[1759..1769] treatments)))))
+      (,:[1769..1770] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1770..1770] *))
+        (VP (VBG:[1771..1781] indicating)
+          (SBAR (IN:[1782..1786] that)
+            (S
+              (NP-SBJ (PRP:[1787..1789] it))
+              (VP (VBZ:[1791..1800] interacts)
+                (PP (IN:[1801..1805] with)
+                  (NP
+                    (NP (JJ:[1806..1813] several) (NN:[1814..1820] rodent)
+                       (NN:[1821..1825] P450) (NNS:[1826..1834] isoforms))
+                    (PP (IN:[1835..1837] in)
+                      (NP
+                        (NP (NN:[1838..1846] addition))
+                        (PP (TO:[1847..1849] to)
+                          (NP (NN:[1850..1853] 2E1)))))))))))))
+    (.:[1853..1854] .)))
+
+;sentence 13 Span:1855..2010
+;Human hepatic  microsomes (n = 6) epoxidized ACN with Vmax'S ranging from 129
+;to 315 pmol of  CEO formed/(min.mg of protein) and KM's from 12 to 18
+;microM.
+;[1900..1903]:substance:"ACN"
+;[1909..1915]:quantitative-name:"Vmax'S"
+;[1929..1939]:quantitative-value:"129 to 315"
+;[1940..1979]:quantitative-units:"pmol of  CEO formed/(min.mg of protein)"
+;[1984..1988]:quantitative-name:"KM's"
+;[1994..2002]:quantitative-value:"12 to 18"
+;[2003..2009]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1855..1860] Human) (JJ:[1861..1868] hepatic)
+            (NNS:[1870..1880] microsomes)
+      (PRN (-LRB-:[1881..1882] -LRB-)
+        (S
+          (NP-SBJ (NN:[1882..1883] n))
+          (VP (SYM:[1884..1885] =)
+            (NP (CD:[1886..1887] 6))))
+        (-RRB-:[1887..1888] -RRB-)))
+    (VP (VBD:[1889..1899] epoxidized)
+      (NP (NN:[1900..1903] ACN))
+      (PP (IN:[1904..1908] with)
+        (NP
+          (NP
+            (NP (NNS:[1909..1915] Vmax'S))
+            (VP (VBG:[1916..1923] ranging)
+              (PP
+                (PP (IN:[1924..1928] from)
+                  (NP
+                    (NP (CD:[1929..1932] 129)
+                      (NML-1 (-NONE-:[1932..1932] *RNR*)))
+                    (PP-2 (-NONE-:[1932..1932] *RNR*))))
+                (PP (TO:[1933..1935] to)
+                  (NP
+                    (NP (CD:[1936..1939] 315)
+                      (NML-1 (-NONE-:[1939..1939] *RNR*)))
+                    (PP-2 (-NONE-:[1939..1939] *RNR*))))
+                
+                (NML-1 (NN:[1940..1944] pmol))
+                (PP-2 (IN:[1945..1947] of)
+                  (NP
+                    (NP
+                      (NP (NN:[1949..1952] CEO))
+                      (VP (VBN:[1953..1959] formed)
+                        (NP (-NONE-:[1959..1959] *))))
+                    (PP (SYM:[1959..1960] /)
+                      (NP (-LRB-:[1960..1961] -LRB-)
+                        (NP (NN:[1961..1964] min))
+                        (PP (.:[1964..1965] .)
+                          (NP
+                            (NP (NN:[1965..1967] mg))
+                            (PP (IN:[1968..1970] of)
+                              (NP (NN:[1971..1978] protein)))))
+                        (-RRB-:[1978..1979] -RRB-))))))))
+          (CC:[1980..1983] and)
+          (NP
+            (NP (NNS:[1984..1988] KM's))
+            (PP
+              (PP (IN:[1989..1993] from)
+                (NP (CD:[1994..1996] 12)
+                  (NML-3 (-NONE-:[1996..1996] *RNR*))))
+              (PP (TO:[1997..1999] to)
+                (NP (CD:[2000..2002] 18)
+                  (NML-3 (-NONE-:[2002..2002] *RNR*))))
+              (NML-3 (NN:[2003..2009] microM)))))))
+    (.:[2009..2010] .)))
+
+;section 14 Span:2010..2044
+;(ABSTRACT TRUNCATED  AT 250 WORDS)
+(SEC
+  (FRAG (-LRB-:[2010..2011] -LRB-) (NN:[2011..2019] ABSTRACT)
+        (VBN:[2020..2029] TRUNCATED) (IN:[2031..2033] AT) (CD:[2034..2037] 250)
+        (NNS:[2038..2043] WORDS) (-RRB-:[2043..2044] -RRB-)))
+
+;section 15 Span:2048..2092
+;PMID: 8117926 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2048..2052] PMID) (::[2052..2053] :) (CD:[2054..2061] 8117926)
+        (NN:[2062..2063] -LSB-) (NNP:[2063..2069] PubMed) (::[2070..2071] -)
+        (NN:[2072..2079] indexed) (IN:[2080..2083] for)
+        (NNP:[2084..2092] MEDLINE-RSB-)))

@@ -1,0 +1,351 @@
+;PMID: 11133003
+;source_file_915.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..36] = [t:0..36]
+;1)sentence:[e:42..177] = [t:42..177]
+;2)section:[e:181..269] = [t:181..269]
+;3)section:[e:273..391] = [t:273..391]
+;4)sentence:[e:395..507] = [t:395..507]
+;5)sentence:[e:508..797] = [t:508..797]
+;6)sentence:[e:798..1020] = [t:798..1020]
+;7)sentence:[e:1021..1100] = [t:1021..1100]
+;8)sentence:[e:1101..1273] = [t:1101..1273]
+;9)section:[e:1274..1585] = [t:1274..1585]
+;10)section:[e:1589..1634] = [t:1589..1634]
+
+;section 0 Span:0..36
+;Life Sci. 2000 Nov 3;67(24):2913-20.
+(SEC
+  (FRAG (NNP:[0..4] Life) (NNP:[5..8] Sci) (.:[8..9] .) (CD:[10..14] 2000)
+        (NNP:[15..18] Nov) (CD:[19..23] 3;67) (-LRB-:[23..24] -LRB-)
+        (CD:[24..26] 24) (-RRB-:[26..27] -RRB-) (::[27..28] :)
+        (CD:[28..35] 2913-20) (.:[35..36] .)))
+
+;sentence 1 Span:42..177
+;CYP3A is responsible for N-dealkylation of haloperidol and bromperidol and 
+;oxidation of their reduced forms by human liver microsomes.
+;[42..47]:cyp450:"CYP3A"
+;[85..96]:substance:"haloperidol"
+;[101..112]:substance:"bromperidol"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[42..47] CYP3A))
+    (VP (VBZ:[48..50] is)
+      (ADJP-PRD (JJ:[51..62] responsible)
+        (PP (IN:[63..66] for)
+          (NP
+            (NP
+              (NP (NN:[67..81] N-dealkylation))
+              (PP (IN:[82..84] of)
+                (NP (NN:[85..96] haloperidol) (CC:[97..100] and)
+                    (NN:[101..112] bromperidol))))
+            (CC:[113..116] and)
+            (NP
+              (NP (NN:[118..127] oxidation))
+              (PP (IN:[128..130] of)
+                (NP (PRP$:[131..136] their) (VBN:[137..144] reduced)
+                    (NNS:[145..150] forms)))
+              (PP (IN:[151..153] by)
+                (NP (JJ:[154..159] human) (NN:[160..165] liver)
+                    (NNS:[166..176] microsomes))))))))
+    (.:[176..177] .)))
+
+;section 2 Span:181..269
+;Tateishi T, Watanabe M, Kumai T, Tanaka M, Moriya H, Yamaguchi S, Satoh T, 
+;Kobayashi S.
+(SEC
+  (FRAG (NNP:[181..189] Tateishi) (NNP:[190..191] T) (,:[191..192] ,)
+        (NNP:[193..201] Watanabe) (NNP:[202..204] M,) (NNP:[205..210] Kumai)
+        (NNP:[211..212] T) (,:[212..213] ,) (NNP:[214..220] Tanaka)
+        (NNP:[221..223] M,) (NNP:[224..230] Moriya) (NNP:[231..233] H,)
+        (NNP:[234..243] Yamaguchi) (NNP:[244..245] S) (,:[245..246] ,)
+        (NNP:[247..252] Satoh) (NNP:[253..254] T) (,:[254..255] ,)
+        (NNP:[257..266] Kobayashi) (NNP:[267..269] S.)))
+
+;section 3 Span:273..391
+;Department of Pharmacology, St. Marianna University School of Medicine, 
+;Kanagawa, Japan. tateishi@cc.hirosaki-u.ac.jp
+(SEC
+  (FRAG (NNP:[273..283] Department) (IN:[284..286] of)
+        (NNP:[287..299] Pharmacology) (,:[299..300] ,) (NNP:[301..304] St.)
+        (NNP:[305..313] Marianna) (NNP:[314..324] University)
+        (NNP:[325..331] School) (IN:[332..334] of) (NNP:[335..343] Medicine)
+        (,:[343..344] ,) (NNP:[346..354] Kanagawa) (,:[354..355] ,)
+        (NNP:[356..361] Japan) (.:[361..362] .)
+        (``:[363..383] tateishi@cc.hirosaki) (NN:[383..391] -u.ac.jp)))
+
+;sentence 4 Span:395..507
+;We studied the biotransformation of haloperidol, bromperidol and their
+;reduced  forms by human liver microsomes.
+;[431..442]:substance:"haloperidol"
+;[444..455]:substance:"bromperidol"
+(SENT
+  (S
+    (NP-SBJ (PRP:[395..397] We))
+    (VP (VBD:[398..405] studied)
+      (NP
+        (NP (DT:[406..409] the) (NN:[410..427] biotransformation))
+        (PP (IN:[428..430] of)
+          (NP
+            (NP (NN:[431..442] haloperidol))
+            (,:[442..443] ,)
+            (NP (NN:[444..455] bromperidol))
+            (CC:[456..459] and)
+            (NP (PRP$:[460..465] their) (VBN:[466..473] reduced)
+                (NNS:[475..480] forms))))
+        (PP (IN:[481..483] by)
+          (NP (JJ:[484..489] human) (NN:[490..495] liver)
+              (NNS:[496..506] microsomes)))))
+    (.:[506..507] .)))
+
+;sentence 5 Span:508..797
+;Nifedipine oxidation (CYP3A) activity  correlated significantly with
+;N-dealkylation rates of haloperidol and  bromperidol and oxidation rates of
+;their reduced forms, while neither  ethoxyresorufin O-deethylation (CYP1A2)
+;activity nor dextromethorphan  O-deethylation (CYP2D6) activity did.
+;[508..518]:substance:"Nifedipine"
+;[530..535]:cyp450:"CYP3A"
+;[601..612]:substance:"haloperidol"
+;[618..629]:substance:"bromperidol"
+;[689..704]:substance:"ethoxyresorufin"
+;[721..727]:cyp450:"CYP1A2"
+;[742..758]:substance:"dextromethorphan"
+;[776..782]:cyp450:"CYP2D6"
+(SENT
+  (S
+    (NP-SBJ
+      (NML
+        (NML (NN:[508..518] Nifedipine) (NN:[519..528] oxidation))
+        (NML (-LRB-:[529..530] -LRB-) (NN:[530..535] CYP3A)
+             (-RRB-:[535..536] -RRB-)))
+      (NN:[537..545] activity))
+    (VP (VBD:[547..557] correlated)
+      (ADVP (RB:[558..571] significantly))
+      (PP-CLR (IN:[572..576] with)
+        (NP
+          (NP
+            (NP (NN:[577..591] N-dealkylation) (NNS:[592..597] rates))
+            (PP (IN:[598..600] of)
+              (NP (NN:[601..612] haloperidol) (CC:[613..616] and)
+                  (NN:[618..629] bromperidol))))
+          (CC:[630..633] and)
+          (NP
+            (NP (NN:[634..643] oxidation) (NNS:[644..649] rates))
+            (PP (IN:[650..652] of)
+              (NP (PRP$:[653..658] their) (VBN:[659..666] reduced)
+                  (NNS:[667..672] forms))))))
+      (,:[672..673] ,)
+      (SBAR-ADV (IN:[674..679] while)
+        (S
+          (NP-SBJ (CC:[680..687] neither)
+            (NP
+              (NML
+                (NML (NN:[689..704] ethoxyresorufin)
+                     (NN:[705..719] O-deethylation))
+                (NML (-LRB-:[720..721] -LRB-) (NN:[721..727] CYP1A2)
+                     (-RRB-:[727..728] -RRB-)))
+              (NN:[729..737] activity))
+            (CC:[738..741] nor)
+            (NP
+              (NML
+                (NML (NN:[742..758] dextromethorphan)
+                     (NN:[760..774] O-deethylation))
+                (NML (-LRB-:[775..776] -LRB-) (NN:[776..782] CYP2D6)
+                     (-RRB-:[782..783] -RRB-)))
+              (NN:[784..792] activity)))
+          (VP (VBD:[793..796] did)
+            (VP (-NONE-:[796..796] *?*))))))
+    (.:[796..797] .)))
+
+;sentence 6 Span:798..1020
+;In chemical and immunoinhibition studies,  only troleandomycin and
+;anti-CYP3A4 serum inhibited both formation rates of  4-fluorobenzoylpropionic
+;acid, a metabolite of haloperidol and bromperidol, and  back oxidation
+;rates.
+;[846..860]:substance:"troleandomycin"
+;[865..876]:substance:"anti-CYP3A4"
+;[918..947]:substance:"4-fluorobenzoylpropionic acid"
+;[951..961]:substance:"metabolite"
+;[965..976]:substance:"haloperidol"
+;[981..992]:substance:"bromperidol"
+(SENT
+  (S
+    (PP-LOC (IN:[798..800] In)
+      (NP
+        (NP (NN:[801..809] chemical)
+          (NML-1 (-NONE-:[809..809] *P*)))
+        (CC:[810..813] and)
+        (NP (NN:[814..830] immunoinhibition)
+          (NML-1 (NNS:[831..838] studies)))))
+    (,:[838..839] ,)
+    (NP-SBJ (RB:[841..845] only)
+      (NP (NN:[846..860] troleandomycin))
+      (CC:[861..864] and)
+      (NP
+        (NML (AFX:[865..869] anti) (HYPH:[869..870] -) (NN:[870..876] CYP3A4))
+        (NN:[877..882] serum)))
+    (VP (VBD:[883..892] inhibited)
+      (NP (CC:[893..897] both)
+        (NP
+          (NP (NN:[898..907] formation) (NNS:[908..913] rates))
+          (PP (IN:[914..916] of)
+            (NP
+              (NP (JJ:[918..942] 4-fluorobenzoylpropionic) (NN:[943..947] acid))
+              (,:[947..948] ,)
+              (NP
+                (NP (DT:[949..950] a) (NN:[951..961] metabolite))
+                (PP (IN:[962..964] of)
+                  (NP (NN:[965..976] haloperidol) (CC:[977..980] and)
+                      (NN:[981..992] bromperidol)))))))
+        (,:[992..993] ,) (CC:[994..997] and)
+        (NP (NN:[999..1003] back) (NN:[1004..1013] oxidation)
+            (NNS:[1014..1019] rates))))
+    (.:[1019..1020] .)))
+
+;sentence 7 Span:1021..1100
+;Among 10 recombinant isoforms examined, only CYP3A4 showed  catalytic
+;activity.
+;[1042..1050]:cyp450:"isoforms"
+;[1066..1072]:cyp450:"CYP3A4"
+(SENT
+  (S
+    (PP (IN:[1021..1026] Among)
+      (NP
+        (NP (CD:[1027..1029] 10) (JJ:[1030..1041] recombinant)
+            (NNS:[1042..1050] isoforms))
+        (VP (VBN:[1051..1059] examined)
+          (NP (-NONE-:[1059..1059] *)))))
+    (,:[1059..1060] ,)
+    (NP-SBJ (RB:[1061..1065] only) (NN:[1066..1072] CYP3A4))
+    (VP (VBD:[1073..1079] showed)
+      (NP (JJ:[1081..1090] catalytic) (NN:[1091..1099] activity)))
+    (.:[1099..1100] .)))
+
+;sentence 8 Span:1101..1273
+;The Vmax and Km values of N-dealkylation of bromperidol and  reoxidation of
+;reduced bromperidol were similar to those of haloperidol and  reduced
+;haloperidol, respectively.
+;[1105..1109]:quantitative-name:"Vmax"
+;[1114..1116]:quantitative-name:"Km"
+;[1145..1156]:substance:"bromperidol"
+;[1185..1196]:substance:"bromperidol"
+;[1222..1233]:substance:"haloperidol"
+;[1247..1258]:substance:"haloperidol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1101..1104] The)
+        (NML (NN:[1105..1109] Vmax)
+          (NML-1 (-NONE-:[1109..1109] *P*)))
+        (CC:[1110..1113] and)
+        (NML (NN:[1114..1116] Km)
+          (NML-1 (NNS:[1117..1123] values))))
+      (PP (IN:[1124..1126] of)
+        (NP
+          (NP
+            (NP (NN:[1127..1141] N-dealkylation))
+            (PP (IN:[1142..1144] of)
+              (NP (NN:[1145..1156] bromperidol))))
+          (CC:[1157..1160] and)
+          (NP
+            (NP (NN:[1162..1173] reoxidation))
+            (PP (IN:[1174..1176] of)
+              (NP (VBN:[1177..1184] reduced) (NN:[1185..1196] bromperidol)))))))
+    (VP (VBD:[1197..1201] were)
+      (ADJP-PRD (JJ:[1202..1209] similar)
+        (PP (TO:[1210..1212] to)
+          (NP
+            (NP (DT:[1213..1218] those))
+            (PP (IN:[1219..1221] of)
+              (NP
+                (NP (NN:[1222..1233] haloperidol))
+                (CC:[1234..1237] and)
+                (NP (VBN:[1239..1246] reduced) (NN:[1247..1258] haloperidol))
+                (,:[1258..1259] ,)
+                (ADVP (RB:[1260..1272] respectively))))))))
+    (.:[1272..1273] .)))
+
+;section 9 Span:1274..1585
+;The present study indicates that CYP3A plays  a major role in N-dealkylation
+;of and oxidation back to bromperidol as well as  haloperidol and suggests
+;that modification of in vivo CYP3A activity by  inhibition or induction may
+;affect the pharmacokinetics and therapeutic effects  of haloperidol and
+;bromperidol.
+;[1307..1312]:cyp450:"CYP3A"
+;[1376..1387]:substance:"bromperidol"
+;[1400..1411]:substance:"haloperidol"
+;[1454..1459]:cyp450:"CYP3A"
+;[1557..1568]:substance:"haloperidol"
+;[1573..1584]:substance:"bromperidol"
+(SEC
+  (S
+    (NP-SBJ (DT:[1274..1277] The) (JJ:[1278..1285] present)
+            (NN:[1286..1291] study))
+    (VP
+      (VP (VBZ:[1292..1301] indicates)
+        (SBAR (IN:[1302..1306] that)
+          (S
+            (NP-SBJ (NN:[1307..1312] CYP3A))
+            (VP (VBZ:[1313..1318] plays)
+              (NP
+                (NP (DT:[1320..1321] a) (JJ:[1322..1327] major)
+                    (NN:[1328..1332] role))
+                (PP (IN:[1333..1335] in)
+                  (NP
+                    (NP
+                      (NP (NN:[1336..1350] N-dealkylation))
+                      (PP (IN:[1351..1353] of)
+                        (NP-1 (-NONE-:[1353..1353] *RNR*))))
+                    (CC:[1354..1357] and)
+                    (NP
+                      (NP (NN:[1358..1367] oxidation))
+                      (ADJP (NN:[1368..1372] back)
+                        (PP (TO:[1373..1375] to)
+                          (NP-1 (-NONE-:[1375..1375] *RNR*)))))
+                    (NP-1
+                      (NP (NN:[1376..1387] bromperidol))
+                      (CONJP (RB:[1388..1390] as) (RB:[1391..1395] well)
+                             (IN:[1396..1398] as))
+                      (NP (NN:[1400..1411] haloperidol))))))))))
+      (CC:[1412..1415] and)
+      (VP (VBZ:[1416..1424] suggests)
+        (SBAR (IN:[1425..1429] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1430..1442] modification))
+              (PP (IN:[1443..1445] of)
+                (NP
+                  (ADJP (FW:[1446..1448] in) (FW:[1449..1453] vivo))
+                  (NN:[1454..1459] CYP3A) (NN:[1460..1468] activity)))
+              (PP (IN:[1469..1471] by)
+                (NP (NN:[1473..1483] inhibition) (CC:[1484..1486] or)
+                    (NN:[1487..1496] induction))))
+            (VP (MD:[1497..1500] may)
+              (VP (VB:[1501..1507] affect)
+                (NP
+                  (NP (DT:[1508..1511] the)
+                    (NML
+                      (NML (NNS:[1512..1528] pharmacokinetics))
+                      (CC:[1529..1532] and)
+                      (NML (JJ:[1533..1544] therapeutic)
+                           (NNS:[1545..1552] effects))))
+                  (PP (IN:[1554..1556] of)
+                    (NP (NN:[1557..1568] haloperidol) (CC:[1569..1572] and)
+                        (NN:[1573..1584] bromperidol))))))))))
+    (.:[1584..1585] .)))
+;ERROR_Entity in section[1307..1312]:cyp450 "CYP3A"
+;ERROR_Entity in section[1376..1387]:substance "bromperidol"
+;ERROR_Entity in section[1400..1411]:substance "haloperidol"
+;ERROR_Entity in section[1454..1459]:cyp450 "CYP3A"
+;ERROR_Entity in section[1557..1568]:substance "haloperidol"
+;ERROR_Entity in section[1573..1584]:substance "bromperidol"
+
+;section 10 Span:1589..1634
+;PMID: 11133003 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1589..1593] PMID) (::[1593..1594] :) (CD:[1595..1603] 11133003)
+        (-LRB-:[1604..1605] -LSB-) (NNP:[1605..1611] PubMed)
+        (HYPH:[1612..1613] -) (NN:[1614..1621] indexed) (IN:[1622..1625] for)
+        (NNP:[1626..1633] MEDLINE) (-RRB-:[1633..1634] -RSB-)))

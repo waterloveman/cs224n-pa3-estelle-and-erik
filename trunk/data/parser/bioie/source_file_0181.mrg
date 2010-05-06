@@ -1,0 +1,403 @@
+;PMID: 2498299
+;source_file_1892.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..41] = [t:0..41]
+;1)sentence:[e:47..199] = [t:47..199]
+;2)section:[e:203..231] = [t:203..231]
+;3)section:[e:235..341] = [t:235..341]
+;4)sentence:[e:345..524] = [t:345..524]
+;5)sentence:[e:525..705] = [t:525..705]
+;6)sentence:[e:706..877] = [t:706..877]
+;7)sentence:[e:878..1087] = [t:878..1087]
+;8)sentence:[e:1088..1363] = [t:1088..1363]
+;9)sentence:[e:1364..1485] = [t:1364..1485]
+;10)sentence:[e:1486..1667] = [t:1486..1667]
+;11)section:[e:1671..1715] = [t:1671..1715]
+
+;section 0 Span:0..41
+;J Biochem (Tokyo). 1989 Feb;105(2):234-8.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..9] Biochem) (NN:[10..11] -LRB-)
+        (NN:[11..16] Tokyo) (NN:[16..17] -RRB-) (.:[17..18] .)
+        (CD:[19..23] 1989) (NNP:[24..31] Feb;105) (-LRB-:[31..32] -LRB-)
+        (CD:[32..33] 2) (-RRB-:[33..34] -RRB-) (::[34..35] :) (CD:[35..38] 234)
+        (::[38..39] -) (CD:[39..41] 8.)))
+
+;sentence 1 Span:47..199
+;Purification and properties of cytochrome P-450 generally acting as a
+;catalyst  on benzo[a]pyrene hydroxylation from liver microsomes of untreated
+;rats.
+;[78..94]:cyp450:"cytochrome P-450"
+;[117..125]:cyp450:"catalyst"
+;[130..144]:substance:"benzo[a]pyrene"
+(SENT
+  (NP-HLN
+    (NP (NN:[47..59] Purification) (CC:[60..63] and) (NNS:[64..74] properties))
+    (PP (IN:[75..77] of)
+      (NP
+        (NP
+          (NP (NN:[78..88] cytochrome) (NN:[89..94] P-450))
+          (VP
+            (ADVP (RB:[95..104] generally))
+            (VBG:[105..111] acting)
+            (PP-MNR (IN:[112..114] as)
+              (NP
+                (NP (DT:[115..116] a) (NN:[117..125] catalyst))
+                (PP (IN:[127..129] on)
+                  (NP (NN:[130..144] benzo-LSB-a-RSB-pyrene)
+                      (NN:[145..158] hydroxylation)))))))
+        (PP (IN:[159..163] from)
+          (NP
+            (NP (NN:[164..169] liver) (NNS:[170..180] microsomes))
+            (PP (IN:[181..183] of)
+              (NP (JJ:[184..193] untreated) (NNS:[194..198] rats)))))))
+    (.:[198..199] .)))
+
+;section 2 Span:203..231
+;Ohgiya N, Yokota H, Yuasa A.
+(SEC
+  (FRAG (NNP:[203..209] Ohgiya) (NNP:[210..211] N) (,:[211..212] ,)
+        (NNP:[213..219] Yokota) (NNP:[220..222] H,) (NNP:[223..228] Yuasa)
+        (NNP:[229..230] A) (.:[230..231] .)))
+
+;section 3 Span:235..341
+;Department of Veterinary Biochemistry, School of Veterinary Medicine, Rakuno 
+;Gakuen University, Hokkaido.
+(SEC
+  (FRAG (NNP:[235..245] Department) (IN:[246..248] of)
+        (NNP:[249..259] Veterinary) (NNP:[260..272] Biochemistry)
+        (,:[272..273] ,) (NNP:[274..280] School) (IN:[281..283] of)
+        (NNP:[284..294] Veterinary) (NNP:[295..303] Medicine) (,:[303..304] ,)
+        (NNP:[305..311] Rakuno) (NNP:[313..319] Gakuen)
+        (NNP:[320..330] University) (,:[330..331] ,) (NNP:[332..340] Hokkaido)
+        (.:[340..341] .)))
+
+;sentence 4 Span:345..524
+;A form of cytochrome P-450 generally catalyzing benzo[a]pyrene (B[a]P) 
+;hydroxylation was purified from liver microsomes of untreated rats on the
+;basis  of the catalytic activity.
+;[355..371]:cyp450:"cytochrome P-450"
+;[393..407]:substance:"benzo[a]pyrene"
+;[409..414]:substance:"B[a]P"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[345..346] A) (NN:[347..351] form))
+      (PP (IN:[352..354] of)
+        (NP
+          (NP (NN:[355..365] cytochrome) (NN:[366..371] P-450))
+          (VP
+            (ADVP (RB:[372..381] generally))
+            (VBG:[382..392] catalyzing)
+            (NP
+              (NML
+                (NML (NN:[393..407] benzo-LSB-a-RSB-pyrene))
+                (NML (-LRB-:[408..409] -LRB-) (NN:[409..414] B-LSB-a-RSB-P)
+                     (-RRB-:[414..415] -RRB-)))
+              (NN:[417..430] hydroxylation))))))
+    (VP (VBD:[431..434] was)
+      (VP (VBN:[435..443] purified)
+        (NP-1 (-NONE-:[443..443] *))
+        (PP (IN:[444..448] from)
+          (NP
+            (NP (NN:[449..454] liver) (NNS:[455..465] microsomes))
+            (PP (IN:[466..468] of)
+              (NP (JJ:[469..478] untreated) (NNS:[479..483] rats)))))
+        (PP (IN:[484..486] on)
+          (NP
+            (NP (DT:[487..490] the) (NN:[491..496] basis))
+            (PP (IN:[498..500] of)
+              (NP (DT:[501..504] the) (JJ:[505..514] catalytic)
+                  (NN:[515..523] activity)))))))
+    (.:[523..524] .)))
+
+;sentence 5 Span:525..705
+;The purification procedures consisted of cholate  solubilization and
+;chromatography in 3 steps, on DEAE-Toyopearl (at room  temperature),
+;hydroxylapatite, and CM-Toyopearl columns.
+;[566..573]:substance:"cholate"
+;[624..638]:substance:"DEAE-Toyopearl"
+;[663..678]:substance:"hydroxylapatite"
+;[684..696]:substance:"CM-Toyopearl"
+(SENT
+  (S
+    (NP-SBJ (DT:[525..528] The) (NN:[529..541] purification)
+            (NNS:[542..552] procedures))
+    (VP (VBD:[553..562] consisted)
+      (PP-CLR (IN:[563..565] of)
+        (NP
+          (NP
+            (NP (NN:[566..573] cholate) (NN:[575..589] solubilization))
+            (CC:[590..593] and)
+            (NP
+              (NP (NN:[594..608] chromatography))
+              (PP (IN:[609..611] in)
+                (NP (CD:[612..613] 3) (NNS:[614..619] steps)))))
+          (,:[619..620] ,)
+          (PP (IN:[621..623] on)
+            (NP
+              (NP (NN:[624..638] DEAE-Toyopearl)
+                (PRN (-LRB-:[639..640] -LRB-)
+                  (PP (IN:[640..642] at)
+                    (NP (NN:[643..647] room) (NN:[649..660] temperature)))
+                  (-RRB-:[660..661] -RRB-))
+                (NML-1 (-NONE-:[661..661] *P*)))
+              (,:[661..662] ,)
+              (NP (NN:[663..678] hydroxylapatite)
+                (NML-1 (-NONE-:[678..678] *P*)))
+              (,:[678..679] ,) (CC:[680..683] and)
+              (NP (NN:[684..696] CM-Toyopearl)
+                (NML-1 (NNS:[697..704] columns))))))))
+    (.:[704..705] .)))
+
+;sentence 6 Span:706..877
+;Cytochrome P-450  purified in this way (named P-450/B[a]P) was homogeneous on
+;SDS-polyacrylamide  gel electrophoresis, and the molecular weight was
+;estimated to be 51,000.
+;[706..722]:cyp450:"Cytochrome P-450"
+;[752..757]:cyp450:"P-450"
+;[758..763]:substance:"B[a]P"
+;[870..876]:quantitative-value:"51,000"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[706..716] Cytochrome) (NN:[717..722] P-450))
+        (VP (VBN:[724..732] purified)
+          (NP (-NONE-:[732..732] *))
+          (PP (IN:[733..735] in)
+            (NP (DT:[736..740] this) (NN:[741..744] way))))
+        (PRN (-LRB-:[745..746] -LRB-)
+          (VP (VBN:[746..751] named)
+            (NP (NN:[752..757] P-450) (SYM:[757..758] /)
+                (NN:[758..763] B-LSB-a-RSB-P)))
+          (-RRB-:[763..764] -RRB-)))
+      (VP (VBD:[765..768] was)
+        (ADJP-PRD (JJ:[769..780] homogeneous))
+        (PP-LOC (IN:[781..783] on)
+          (NP
+            (NML (NN:[784..802] SDS-polyacrylamide) (NN:[804..807] gel))
+            (NN:[808..823] electrophoresis)))))
+    (,:[823..824] ,) (CC:[825..828] and)
+    (S
+      (NP-SBJ-1 (DT:[829..832] the) (JJ:[833..842] molecular)
+                (NN:[843..849] weight))
+      (VP (VBD:[850..853] was)
+        (VP (VBN:[854..863] estimated)
+          (S
+            (NP-SBJ-1 (-NONE-:[863..863] *))
+            (VP (TO:[864..866] to)
+              (VP (VB:[867..869] be)
+                (NP-PRD (CD:[870..876] 51,000))))))))
+    (.:[876..877] .)))
+
+;sentence 7 Span:878..1087
+;The  absorption spectra of the oxidized form of P-450/B[a]P showed a Soret
+;peak at  417 nm, characteristic of low-spin hemoprotein, and the Soret peak
+;of the  reduced cytochrome P-450-CO complex was at 451 nm.
+;[926..931]:cyp450:"P-450"
+;[932..937]:substance:"B[a]P"
+;[962..965]:quantitative-value:"417"
+;[966..968]:quantitative-units:"nm"
+;[997..1008]:substance:"hemoprotein"
+;[1045..1072]:substance:"cytochrome P-450-CO complex"
+;[1080..1083]:quantitative-value:"451"
+;[1084..1086]:quantitative-units:"nm"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (DT:[878..881] The) (NN:[883..893] absorption)
+            (NNS:[894..901] spectra))
+        (PP (IN:[902..904] of)
+          (NP
+            (NP (DT:[905..908] the) (VBN:[909..917] oxidized)
+                (NN:[918..922] form))
+            (PP (IN:[923..925] of)
+              (NP (NN:[926..931] P-450) (SYM:[931..932] /)
+                  (NN:[932..937] B-LSB-a-RSB-P))))))
+      (VP (VBD:[938..944] showed)
+        (NP
+          (NP (DT:[945..946] a) (NNP:[947..952] Soret) (NN:[953..957] peak))
+          (PP (IN:[958..960] at)
+            (NP (CD:[962..965] 417) (NN:[966..968] nm))))
+        (,:[968..969] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[969..969] *))
+          (ADJP-PRD (JJ:[970..984] characteristic)
+            (PP (IN:[985..987] of)
+              (NP
+                (NML (JJ:[988..991] low) (HYPH:[991..992] -)
+                     (NN:[992..996] spin))
+                (NN:[997..1008] hemoprotein)))))))
+    (,:[1008..1009] ,) (CC:[1010..1013] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[1014..1017] the) (NNP:[1018..1023] Soret)
+            (NN:[1024..1028] peak))
+        (PP (IN:[1029..1031] of)
+          (NP (DT:[1032..1035] the) (VBN:[1037..1044] reduced)
+            
+            (NML
+              (NML (NN:[1045..1055] cytochrome) (NN:[1056..1061] P-450))
+              (HYPH:[1061..1062] -) (NN:[1062..1064] CO))
+            (NN:[1065..1072] complex))))
+      (VP (VBD:[1073..1076] was)
+        (PP-LOC-PRD (IN:[1077..1079] at)
+          (NP (CD:[1080..1083] 451) (NN:[1084..1086] nm)))))
+    (.:[1086..1087] .)))
+
+;sentence 8 Span:1088..1363
+;Immunochemical analysis of  P-450/B[a]P indicated that P-450/B[a]P is
+;immunologically distinct from P-450b  (a major phenobarbital-inducible form
+;of P-450) and P-450c (a major  3-methylcholanthrene-inducible form of P-450,
+;which highly catalyzes the  hydroxylation of B[a]P).
+;[1116..1121]:cyp450:"P-450"
+;[1122..1127]:substance:"B[a]P"
+;[1143..1148]:cyp450:"P-450"
+;[1149..1154]:substance:"B[a]P"
+;[1188..1194]:cyp450:"P-450b"
+;[1205..1218]:substance:"phenobarbital"
+;[1237..1242]:cyp450:"P-450"
+;[1248..1254]:cyp450:"P-450c"
+;[1265..1285]:substance:"3-methylcholanthrene"
+;[1304..1309]:cyp450:"P-450"
+;[1356..1361]:substance:"B[a]P"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[1088..1102] Immunochemical) (NN:[1103..1111] analysis))
+      (PP (IN:[1112..1114] of)
+        (NP (NN:[1116..1121] P-450) (SYM:[1121..1122] /)
+            (NN:[1122..1127] B-LSB-a-RSB-P))))
+    (VP (VBD:[1128..1137] indicated)
+      (SBAR (IN:[1138..1142] that)
+        (S
+          (NP-SBJ (NN:[1143..1148] P-450) (SYM:[1148..1149] /)
+                  (NN:[1149..1154] B-LSB-a-RSB-P))
+          (VP (VBZ:[1155..1157] is)
+            (ADJP-PRD (RB:[1158..1173] immunologically)
+                      (JJ:[1174..1182] distinct)
+              (PP (IN:[1183..1187] from)
+                (NP
+                  (NP (NN:[1188..1194] P-450b)
+                    (PRN (-LRB-:[1196..1197] -LRB-)
+                      (NP
+                        (NP (DT:[1197..1198] a) (JJ:[1199..1204] major)
+                          (ADJP (NN:[1205..1218] phenobarbital)
+                                (HYPH:[1218..1219] -)
+                                (JJ:[1219..1228] inducible))
+                          (NN:[1229..1233] form))
+                        (PP (IN:[1234..1236] of)
+                          (NP (NN:[1237..1242] P-450))))
+                      (-RRB-:[1242..1243] -RRB-)))
+                  (CC:[1244..1247] and)
+                  (NP (NN:[1248..1254] P-450c)
+                    (PRN (-LRB-:[1255..1256] -LRB-)
+                      (NP
+                        (NP
+                          (NP (DT:[1256..1257] a) (JJ:[1258..1263] major)
+                            (ADJP (NN:[1265..1285] 3-methylcholanthrene)
+                                  (HYPH:[1285..1286] -)
+                                  (JJ:[1286..1295] inducible))
+                            (NN:[1296..1300] form))
+                          (PP (IN:[1301..1303] of)
+                            (NP (NN:[1304..1309] P-450))))
+                        (,:[1309..1310] ,)
+                        (SBAR
+                          (WHNP-1 (WDT:[1311..1316] which))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[1316..1316] *T*))
+                            (ADVP (RB:[1317..1323] highly))
+                            (VP (VBZ:[1324..1333] catalyzes)
+                              (NP
+                                (NP (DT:[1334..1337] the)
+                                    (NN:[1339..1352] hydroxylation))
+                                (PP (IN:[1353..1355] of)
+                                  (NP (NN:[1356..1361] B-LSB-a-RSB-P))))))))
+                      (-RRB-:[1361..1362] -RRB-))))))))))
+    (.:[1362..1363] .)))
+
+;sentence 9 Span:1364..1485
+;B[a]P hydroxylase activity in liver microsomes of  untreated rats was
+;inhibited to about 20% by the P-450/B[a]P antibody.
+;[1364..1381]:substance:"B[a]P hydroxylase"
+;[1453..1456]:quantitative-value:"20%"
+;[1464..1484]:substance:"P-450/B[a]P antibody"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+         (NN:[1364..1369] B-LSB-a-RSB-P) (NN:[1370..1381] hydroxylase)
+        (NN:[1382..1390] activity))
+      (PP-LOC (IN:[1391..1393] in)
+        (NP
+          (NP (NN:[1394..1399] liver) (NNS:[1400..1410] microsomes))
+          (PP (IN:[1411..1413] of)
+            (NP (JJ:[1415..1424] untreated) (NNS:[1425..1429] rats))))))
+    (VP (VBD:[1430..1433] was)
+      (VP (VBN:[1434..1443] inhibited)
+        (NP-1 (-NONE-:[1443..1443] *))
+        (PP (TO:[1444..1446] to)
+          (NP-EXT
+            (QP (RB:[1447..1452] about) (CD:[1453..1455] 20))
+            (NN:[1455..1456] %)))
+        (PP (IN:[1457..1459] by)
+          (NP-LGS (DT:[1460..1463] the)
+            
+            (NML (NN:[1464..1469] P-450) (SYM:[1469..1470] /)
+                 (NN:[1470..1475] B-LSB-a-RSB-P))
+            (NN:[1476..1484] antibody)))))
+    (.:[1484..1485] .)))
+
+;sentence 10 Span:1486..1667
+;These  results demonstrate that P-450/B[a]P is a different form of P-450 from
+;P-450b  and P-450c, and generally catalyzes B[a]P hydroxylation in liver
+;microsomes of  untreated rats.
+;[1518..1523]:cyp450:"P-450"
+;[1524..1529]:substance:"B[a]P"
+;[1553..1558]:cyp450:"P-450"
+;[1564..1570]:cyp450:"P-450b"
+;[1576..1582]:cyp450:"P-450c"
+;[1608..1613]:substance:"B[a]P"
+(SENT
+  (S
+    (NP-SBJ (DT:[1486..1491] These) (NNS:[1493..1500] results))
+    (VP (VBP:[1501..1512] demonstrate)
+      (SBAR (IN:[1513..1517] that)
+        (S
+          (NP-SBJ (NN:[1518..1523] P-450) (SYM:[1523..1524] /)
+                  (NN:[1524..1529] B-LSB-a-RSB-P))
+          (VP
+            (VP (VBZ:[1530..1532] is)
+              (NP-PRD
+                (NP (DT:[1533..1534] a) (JJ:[1535..1544] different)
+                    (NN:[1545..1549] form))
+                (PP (IN:[1550..1552] of)
+                  (NP
+                    (NP (NN:[1553..1558] P-450))
+                    (PP (IN:[1559..1563] from)
+                      (NP (NN:[1564..1570] P-450b) (CC:[1572..1575] and)
+                          (NN:[1576..1582] P-450c)))))))
+            (,:[1582..1583] ,) (CC:[1584..1587] and)
+            (VP
+              (ADVP (RB:[1588..1597] generally))
+              (VBZ:[1598..1607] catalyzes)
+              (NP (NN:[1608..1613] B-LSB-a-RSB-P)
+                  (NN:[1614..1627] hydroxylation))
+              (PP-LOC (IN:[1628..1630] in)
+                (NP
+                  (NP (NN:[1631..1636] liver) (NNS:[1637..1647] microsomes))
+                  (PP (IN:[1648..1650] of)
+                    (NP (JJ:[1652..1661] untreated) (NNS:[1662..1666] rats))))))))))
+    (.:[1666..1667] .)))
+
+;section 11 Span:1671..1715
+;PMID: 2498299 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1671..1675] PMID) (::[1675..1676] :) (CD:[1677..1684] 2498299)
+        (NN:[1685..1686] -LSB-) (NNP:[1686..1692] PubMed) (::[1693..1694] -)
+        (NN:[1695..1702] indexed) (IN:[1703..1706] for)
+        (NNP:[1707..1715] MEDLINE-RSB-)))

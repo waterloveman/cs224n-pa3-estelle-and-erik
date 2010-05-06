@@ -1,0 +1,476 @@
+;PMID: 7512175
+;source_file_796.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..115] = [t:35..115]
+;2)section:[e:119..171] = [t:119..171]
+;3)section:[e:175..292] = [t:175..292]
+;4)sentence:[e:296..453] = [t:296..453]
+;5)sentence:[e:455..692] = [t:455..692]
+;6)sentence:[e:694..994] = [t:694..994]
+;7)sentence:[e:995..1111] = [t:995..1111]
+;8)sentence:[e:1112..1317] = [t:1112..1317]
+;9)sentence:[e:1318..1397] = [t:1318..1397]
+;10)sentence:[e:1398..1560] = [t:1398..1560]
+;11)sentence:[e:1562..1751] = [t:1562..1751]
+;12)section:[e:1755..1799] = [t:1755..1799]
+
+;section 0 Span:0..30
+;Leukemia  1994 Apr;8(4):638-41
+(SEC
+  (FRAG (NNP:[0..8] Leukemia) (CD:[10..14] 1994) (.:[15..21] Apr;8-LRB-)
+        (CD:[21..23] 4-RRB-) (CD:[23..27] :638) (::[27..28] -) (CD:[28..30] 41)))
+
+;sentence 1 Span:35..115
+;Mutations in the ras proto-oncogenes in patients with myelodysplastic
+;syndromes.
+;[52..55]:gene-rna:"ras"
+;[89..114]:malignancy:"myelodysplastic syndromes"
+(SENT
+  (NP-HLN
+    (NP (NNS:[35..44] Mutations))
+    (PP-LOC (IN:[45..47] in)
+      (NP (DT:[48..51] the) (NN:[52..55] ras) (AFX:[56..61] proto)
+          (HYPH:[61..62] -) (NNS:[62..71] oncogenes)))
+    (PP-LOC (IN:[72..74] in)
+      (NP
+        (NP (NNS:[75..83] patients))
+        (PP (IN:[84..88] with)
+          (NP (JJ:[89..104] myelodysplastic) (NNS:[105..114] syndromes)))))
+    (.:[114..115] .)))
+
+;section 2 Span:119..171
+;Neubauer A, Greenberg P, Negrin R, Ginzton N, Liu E.
+(SEC
+  (FRAG (NNP:[119..127] Neubauer) (NNP:[128..129] A) (,:[129..130] ,)
+        (NNP:[131..140] Greenberg) (NNP:[141..142] P) (,:[142..143] ,)
+        (NNP:[144..150] Negrin) (NNP:[151..153] R,) (NNP:[154..161] Ginzton)
+        (NNP:[162..163] N) (,:[163..164] ,) (NNP:[165..168] Liu)
+        (NNP:[169..171] E.)))
+
+;section 3 Span:175..292
+;Department of Medicine and Genetics, Lineberger Cancer Research Center, 
+;University of North Carolina at Chapel Hill.
+(SEC
+  (FRAG (NNP:[175..185] Department) (IN:[186..188] of) (NN:[189..197] Medicine)
+        (CC:[198..201] and) (NNP:[202..210] Genetics) (NNP:[210..211] ,)
+        (NNP:[212..222] Lineberger) (NNP:[223..229] Cancer)
+        (NNP:[230..238] Research) (NNP:[239..245] Center) (,:[245..246] ,)
+        (NNP:[248..258] University) (IN:[259..261] of) (NNP:[262..267] North)
+        (NNP:[268..276] Carolina) (IN:[277..279] at) (NNP:[280..286] Chapel)
+        (NNP:[287..291] Hill) (.:[291..292] .)))
+
+;sentence 4 Span:296..453
+;Activation of the N- and K-ras proto-oncogenes is the most common molecular 
+;abnormality in myelodysplastic syndromes (MDS) and acute myeloid leukemia
+;(AML).
+;[314..316]...[323..326]:gene-rna:"N-"..."ras"
+;[321..326]:gene-rna:"K-ras"
+;[388..413]:malignancy:"myelodysplastic syndromes"
+;[415..418]:malignancy:"MDS"
+;[424..446]:malignancy:"acute myeloid leukemia"
+;[448..451]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[296..306] Activation))
+      (PP (IN:[307..309] of)
+        (NP (DT:[310..313] the)
+          (NML
+            (NML
+              (NML (NN:[314..315] N) (HYPH:[315..316] -)
+                (NML-1 (-NONE-:[316..316] *P*)))
+              (NML-2 (-NONE-:[316..316] *P*)))
+            (CC:[317..320] and)
+            (NML
+              (NML (NN:[321..322] K) (HYPH:[322..323] -)
+                (NML-1 (NN:[323..326] ras)))
+              (NML-2 (AFX:[327..332] proto) (HYPH:[332..333] -)
+                     (NNS:[333..342] oncogenes)))))))
+    (VP (VBZ:[343..345] is)
+      (NP-PRD (DT:[346..349] the)
+        (ADJP (RBS:[350..354] most) (JJ:[355..361] common))
+        (JJ:[362..371] molecular) (NN:[373..384] abnormality))
+      (PP (IN:[385..387] in)
+        (NP
+          (NP
+            (NP (JJ:[388..403] myelodysplastic) (NNS:[404..413] syndromes))
+            (NP (-LRB-:[414..415] -LRB-) (NN:[415..418] MDS)
+                (-RRB-:[418..419] -RRB-)))
+          (CC:[420..423] and)
+          (NP
+            (NP (JJ:[424..429] acute) (JJ:[430..437] myeloid)
+                (NN:[438..446] leukemia))
+            (NP (-LRB-:[447..448] -LRB-) (NN:[448..451] AML)
+                (-RRB-:[451..452] -RRB-))))))
+    (.:[452..453] .)))
+
+;sentence 5 Span:455..692
+;In retrospective studies, approximately 3-36% of MDS patients were reported
+;to  harbor a mutated ras proto-oncogene, with some series suggesting the
+;presence of  ras-mutations are associated with progressive disease and a poor
+;prognosis.
+;[504..507]:malignancy:"MDS"
+;[552..555]:gene-rna:"ras"
+;[617..620]:gene-rna:"ras"
+(SENT
+  (S
+    (PP (IN:[455..457] In)
+      (NP (JJ:[458..471] retrospective) (NNS:[472..479] studies)))
+    (,:[479..480] ,)
+    (NP-SBJ-2
+      (NP
+        (QP (RB:[481..494] approximately) (CD:[495..496] 3) (HYPH:[496..497] -)
+            (CD:[497..499] 36))
+        (NN:[499..500] %))
+      (PP (IN:[501..503] of)
+        (NP (NN:[504..507] MDS) (NNS:[508..516] patients))))
+    (VP (VBD:[517..521] were)
+      (VP (VBN:[522..530] reported)
+        (S
+          (NP-SBJ-2 (-NONE-:[530..530] *))
+          (VP (TO:[531..533] to)
+            (VP (VB:[535..541] harbor)
+              (NP (DT:[542..543] a) (JJ:[544..551] mutated) (NN:[552..555] ras)
+                  (AFX:[556..561] proto) (HYPH:[561..562] -)
+                  (NN:[562..570] oncogene)))))
+        (,:[570..571] ,)
+        (PP (IN:[572..576] with)
+          (S-NOM
+            (NP-SBJ (DT:[577..581] some) (NNS:[582..588] series))
+            (VP (VBG:[589..599] suggesting)
+              (SBAR (-NONE-:[599..599] 0)
+                (S
+                  (NP-SBJ-1
+                    (NP (DT:[600..603] the) (NN:[604..612] presence))
+                    (PP (IN:[613..615] of)
+                      (NP (NN:[617..620] ras) (HYPH:[620..621] -)
+                          (NNS:[621..630] mutations))))
+                  (VP (VBP:[631..634] are)
+                    (VP (JJ:[635..645] associated)
+                      (NP-1 (-NONE-:[645..645] *))
+                      (PP-CLR (IN:[646..650] with)
+                        (NP
+                          (NP (JJ:[651..662] progressive)
+                              (NN:[663..670] disease))
+                          (CC:[671..674] and)
+                          (NP (DT:[675..676] a) (JJ:[677..681] poor)
+                              (NN:[682..691] prognosis)))))))))))))
+    (.:[691..692] .)))
+
+;sentence 6 Span:694..994
+;Since hematopoietic growth factors such as granulocyte colony-stimulating
+;factor  (G-CSF) are currently used for therapy in MDS but may stimulate the 
+;proliferation of leukemic cells, we assessed the frequency and significance
+;of  ras mutations in 27 MDS patients, 15 of whom underwent G-CSF therapy.
+;[700..728]:gene-protein:"hematopoietic growth factors"
+;[737..774]:gene-protein:"granulocyte colony-stimulating factor"
+;[777..782]:gene-protein:"G-CSF"
+;[818..821]:malignancy:"MDS"
+;[862..876]:malignancy:"leukemic cells"
+;[925..928]:gene-rna:"ras"
+;[945..948]:malignancy:"MDS"
+;[980..985]:gene-protein:"G-CSF"
+(SENT
+  (S
+    (SBAR-ADV (IN:[694..699] Since)
+      (S
+        (NP-SBJ-1
+          (NP (JJ:[700..713] hematopoietic) (NN:[714..720] growth)
+              (NNS:[721..728] factors))
+          (PP (JJ:[729..733] such) (IN:[734..736] as)
+            (NP
+              (NP (NN:[737..748] granulocyte)
+                (NML (NN:[749..755] colony) (HYPH:[755..756] -)
+                     (VBG:[756..767] stimulating))
+                (NN:[768..774] factor))
+              (NP (-LRB-:[776..777] -LRB-) (NN:[777..782] G-CSF)
+                  (-RRB-:[782..783] -RRB-)))))
+        (VP
+          (VP (VBP:[784..787] are)
+            (ADVP-TMP (RB:[788..797] currently))
+            (VP (VBN:[798..802] used)
+              (NP-1 (-NONE-:[802..802] *))
+              (PP (IN:[803..806] for)
+                (NP (NN:[807..814] therapy)))
+              (PP (IN:[815..817] in)
+                (NP (NN:[818..821] MDS)))))
+          (CC:[822..825] but)
+          (VP (MD:[826..829] may)
+            (VP (VB:[830..839] stimulate)
+              (NP
+                (NP (DT:[840..843] the) (NN:[845..858] proliferation))
+                (PP (IN:[859..861] of)
+                  (NP (JJ:[862..870] leukemic) (NNS:[871..876] cells)))))))))
+    (,:[876..877] ,)
+    (NP-SBJ (PRP:[878..880] we))
+    (VP (VBD:[881..889] assessed)
+      (NP
+        (NP
+          (NP (DT:[890..893] the) (NN:[894..903] frequency))
+          (CC:[904..907] and)
+          (NP (NN:[908..920] significance)))
+        (PP (IN:[921..923] of)
+          (NP
+            (NP (NN:[925..928] ras) (NNS:[929..938] mutations))
+            (PP (IN:[939..941] in)
+              (NP
+                (NP (CD:[942..944] 27) (NN:[945..948] MDS)
+                    (NNS:[949..957] patients))
+                (,:[957..958] ,)
+                (SBAR
+                  (WHNP-2
+                    (NP (CD:[959..961] 15))
+                    (WHPP (IN:[962..964] of)
+                      (WHNP (WP:[965..969] whom))))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[969..969] *T*))
+                    (VP (VBD:[970..979] underwent)
+                      (NP (NN:[980..985] G-CSF) (NN:[986..993] therapy)))))))))))
+    (.:[993..994] .)))
+
+;sentence 7 Span:995..1111
+;Patients  were analyzed for the presence of mutations in codons 12, 13, and
+;61 of the N-  and K-ras proto-oncogenes.
+;[1039..1048]:variation-event:"mutations"
+;[1052..1061]:variation-location:"codons 12"
+;[1052..1058]...[1071..1073]:variation-location:"codons"..."61"
+;[1052..1058]...[1063..1065]:variation-location:"codons"..."13"
+;[1081..1083]...[1091..1094]:gene-rna:"N-"..."ras"
+;[1089..1094]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[995..1003] Patients))
+    (VP (VBD:[1005..1009] were)
+      (VP (VBN:[1010..1018] analyzed)
+        (NP-1 (-NONE-:[1018..1018] *))
+        (PP (IN:[1019..1022] for)
+          (NP
+            (NP (DT:[1023..1026] the) (NN:[1027..1035] presence))
+            (PP (IN:[1036..1038] of)
+              (NP
+                (NP (NNS:[1039..1048] mutations))
+                (PP-LOC (IN:[1049..1051] in)
+                  (NP
+                    (NP
+                      (NP
+                        (NML-2 (NNS:[1052..1058] codons))
+                        (CD:[1059..1061] 12))
+                      (,:[1061..1062] ,)
+                      (NP
+                        (NML-2 (-NONE-:[1062..1062] *P*))
+                        (CD:[1063..1065] 13))
+                      (,:[1065..1066] ,) (CC:[1067..1070] and)
+                      (NP
+                        (NML-2 (-NONE-:[1070..1070] *P*))
+                        (CD:[1071..1073] 61)))
+                    (PP (IN:[1074..1076] of)
+                      (NP (DT:[1077..1080] the)
+                        (NML
+                          (NML
+                            (NML (NN:[1081..1082] N) (HYPH:[1082..1083] -)
+                              (NML-3 (-NONE-:[1083..1083] *P*)))
+                            (NML-4 (-NONE-:[1083..1083] *P*)))
+                          (CC:[1085..1088] and)
+                          (NML
+                            (NML (NN:[1089..1090] K) (HYPH:[1090..1091] -)
+                              (NML-3 (NN:[1091..1094] ras)))
+                            (NML-4 (AFX:[1095..1100] proto)
+                                   (HYPH:[1100..1101] -)
+                                   (NNS:[1101..1110] oncogenes))))))))))))))
+    (.:[1110..1111] .)))
+
+;sentence 8 Span:1112..1317
+;Only three patients (11%, two refractory anemia with  excess of blasts
+;(RAEB), one RAEB in transformation (RAEB-T)) harbored activated  ras
+;oncogenes with the mutations localized in N-ras codons 12 and 61.
+;[1142..1182]:malignancy:"refractory anemia with  excess of blasts"
+;[1184..1188]:malignancy:"RAEB"
+;[1195..1217]:malignancy:"RAEB in transformation"
+;[1219..1225]:malignancy:"RAEB-T"
+;[1248..1251]:gene-rna:"ras"
+;[1271..1280]:variation-event:"mutations"
+;[1294..1299]:gene-rna:"N-ras"
+;[1300..1309]:variation-location:"codons 12"
+;[1300..1306]...[1314..1316]:variation-location:"codons"..."61"
+(SENT
+  (S
+    (NP-SBJ (RB:[1112..1116] Only) (CD:[1117..1122] three)
+            (NNS:[1123..1131] patients)
+      (PRN (-LRB-:[1132..1133] -LRB-)
+        (FRAG
+          (NP (CD:[1133..1135] 11) (NN:[1135..1136] %))
+          (,:[1136..1137] ,)
+          (NP (CD:[1138..1141] two)
+            (NML
+              (NML
+                (NML (JJ:[1142..1152] refractory) (NN:[1153..1159] anemia))
+                (PP (IN:[1160..1164] with)
+                  (NP
+                    (NP (NN:[1166..1172] excess))
+                    (PP (IN:[1173..1175] of)
+                      (NP (NNS:[1176..1182] blasts))))))
+              (NML (-LRB-:[1183..1184] -LRB-) (NN:[1184..1188] RAEB)
+                   (-RRB-:[1188..1189] -RRB-))))
+          (,:[1189..1190] ,)
+          (NP (CD:[1191..1194] one)
+            (NML
+              (NML
+                (NML (NN:[1195..1199] RAEB))
+                (PP (IN:[1200..1202] in)
+                  (NP (NN:[1203..1217] transformation))))
+              (NML (-LRB-:[1218..1219] -LRB-) (NN:[1219..1225] RAEB-T)
+                   (-RRB-:[1225..1226] -RRB-)))))
+        (-RRB-:[1226..1227] -RRB-)))
+    (VP (VBD:[1228..1236] harbored)
+      (NP (JJ:[1237..1246] activated) (NN:[1248..1251] ras)
+          (NNS:[1252..1261] oncogenes))
+      (PP (IN:[1262..1266] with)
+        (S-NOM
+          (NP-SBJ (DT:[1267..1270] the) (NNS:[1271..1280] mutations))
+          (VP (VBN:[1281..1290] localized)
+            (PP-LOC (IN:[1291..1293] in)
+              (NP
+                (NP
+                  (NML-2 (NN:[1294..1299] N-ras))
+                  (NML
+                    (NML-1 (NNS:[1300..1306] codons))
+                    (CD:[1307..1309] 12)))
+                (CC:[1310..1313] and)
+                (NP
+                  (NML-2 (-NONE-:[1313..1313] *P*))
+                  (NML
+                    (NML-1 (-NONE-:[1313..1313] *P*))
+                    (CD:[1314..1316] 61)))))))))
+    (.:[1316..1317] .)))
+
+;sentence 9 Span:1318..1397
+;Patients  were followed for periods of up to 4 years or until death
+;supervened.
+(SENT
+  (S
+    (NP-SBJ-1 (NNS:[1318..1326] Patients))
+    (VP (VBD:[1328..1332] were)
+      (VP (VBN:[1333..1341] followed)
+        (NP-1 (-NONE-:[1341..1341] *))
+        (UCP-TMP
+          (PP (IN:[1342..1345] for)
+            (NP
+              (NP (NNS:[1346..1353] periods))
+              (PP (IN:[1354..1356] of)
+                (NP
+                  (QP (IN:[1357..1359] up) (TO:[1360..1362] to)
+                      (CD:[1363..1364] 4))
+                  (NNS:[1365..1370] years)))))
+          (CC:[1371..1373] or)
+          (SBAR (IN:[1374..1379] until)
+            (S
+              (NP-SBJ (NN:[1380..1385] death))
+              (VP (VBD:[1386..1396] supervened)))))))
+    (.:[1396..1397] .)))
+
+;sentence 10 Span:1398..1560
+;Patients  exhibiting ras mutations were no more likely to develop AML
+;compared to  ras-negative patients (1/3 vs. 10/24) or to have decreased
+;survival (p = 0.64).
+;[1419..1422]:gene-rna:"ras"
+;[1464..1467]:malignancy:"AML"
+;[1481..1484]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[1398..1406] Patients))
+      (VP (VBG:[1408..1418] exhibiting)
+        (NP (NN:[1419..1422] ras) (NNS:[1423..1432] mutations))))
+    (VP (VBD:[1433..1437] were)
+      (ADJP-PRD (DT:[1438..1440] no) (RBR:[1441..1445] more)
+                (JJ:[1446..1452] likely)
+        (S
+          (NP-SBJ-1 (-NONE-:[1452..1452] *))
+          (VP
+            (VP (TO:[1453..1455] to)
+              (VP (VB:[1456..1463] develop)
+                (NP (NN:[1464..1467] AML))
+                (S-ADV
+                  (NP-SBJ-2 (-NONE-:[1467..1467] *))
+                  (VP (VBN:[1468..1476] compared)
+                    (NP-2 (-NONE-:[1476..1476] *))
+                    (PP-CLR (TO:[1477..1479] to)
+                      (NP
+                        (ADJP (NN:[1481..1484] ras) (HYPH:[1484..1485] -)
+                              (JJ:[1485..1493] negative))
+                        (NNS:[1494..1502] patients)))
+                    (PRN (-LRB-:[1503..1504] -LRB-)
+                      (NP
+                        (NP
+                          (NP (CD:[1504..1505] 1))
+                          (PP (SYM:[1505..1506] /)
+                            (NP (CD:[1506..1507] 3))))
+                        (PP (IN:[1508..1511] vs.)
+                          (NP
+                            (NP (CD:[1512..1514] 10))
+                            (PP (SYM:[1514..1515] /)
+                              (NP (CD:[1515..1517] 24))))))
+                      (-RRB-:[1517..1518] -RRB-))))))
+            (CC:[1519..1521] or)
+            (VP (TO:[1522..1524] to)
+              (VP (VB:[1525..1529] have)
+                (NP (JJ:[1530..1539] decreased) (NN:[1540..1548] survival)
+                  (PRN (-LRB-:[1549..1550] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[1550..1551] p))
+                      (VP (SYM:[1552..1553] =)
+                        (NP (CD:[1554..1558] 0.64))))
+                    (-RRB-:[1558..1559] -RRB-)))))))))
+    (.:[1559..1560] .)))
+
+;sentence 11 Span:1562..1751
+;These data indicate that, in this group of MDS patients, ras mutations do not
+; appear to correlate with a poor prognosis, and do not adversely interact
+;with  exogenously administered G-CSF.
+;[1605..1608]:malignancy:"MDS"
+;[1619..1622]:gene-rna:"ras"
+;[1745..1750]:gene-protein:"G-CSF"
+(SENT
+  (S
+    (NP-SBJ (DT:[1562..1567] These) (NNS:[1568..1572] data))
+    (VP (VBP:[1573..1581] indicate)
+      (SBAR (IN:[1582..1586] that) (,:[1586..1587] ,)
+        (S
+          (PP (IN:[1588..1590] in)
+            (NP
+              (NP (DT:[1591..1595] this) (NN:[1596..1601] group))
+              (PP (IN:[1602..1604] of)
+                (NP (NN:[1605..1608] MDS) (NNS:[1609..1617] patients)))))
+          (,:[1617..1618] ,)
+          (NP-SBJ-1 (NN:[1619..1622] ras) (NNS:[1623..1632] mutations))
+          (VP
+            (VP (VBP:[1633..1635] do) (RB:[1636..1639] not)
+              (VP (VB:[1641..1647] appear)
+                (S
+                  (NP-SBJ-1 (-NONE-:[1647..1647] *))
+                  (VP (TO:[1648..1650] to)
+                    (VP (VB:[1651..1660] correlate)
+                      (PP-CLR (IN:[1661..1665] with)
+                        (NP (DT:[1666..1667] a) (JJ:[1668..1672] poor)
+                            (NN:[1673..1682] prognosis))))))))
+            (,:[1682..1683] ,) (CC:[1684..1687] and)
+            (VP (VBP:[1688..1690] do) (RB:[1691..1694] not)
+              (ADVP (RB:[1695..1704] adversely))
+              (VP (VB:[1705..1713] interact)
+                (PP-CLR (IN:[1714..1718] with)
+                  (NP
+                    (ADJP (RB:[1720..1731] exogenously)
+                          (VBN:[1732..1744] administered))
+                    (NN:[1745..1750] G-CSF)))))))))
+    (.:[1750..1751] .)))
+
+;section 12 Span:1755..1799
+;PMID: 7512175 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1755..1759] PMID) (::[1759..1760] :) (CD:[1761..1768] 7512175)
+        (NN:[1769..1770] -LSB-) (NNP:[1770..1776] PubMed) (::[1777..1778] -)
+        (NN:[1779..1786] indexed) (IN:[1787..1790] for)
+        (NNP:[1791..1799] MEDLINE-RSB-)))

@@ -1,0 +1,307 @@
+;PMID: 9377572
+;source_file_2888.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..188] = [t:46..188]
+;2)section:[e:192..282] = [t:192..282]
+;3)section:[e:286..388] = [t:286..388]
+;4)sentence:[e:392..586] = [t:392..586]
+;5)sentence:[e:587..781] = [t:587..781]
+;6)sentence:[e:782..967] = [t:782..967]
+;7)sentence:[e:968..1216] = [t:968..1216]
+;8)sentence:[e:1217..1372] = [t:1217..1372]
+;9)section:[e:1376..1420] = [t:1376..1420]
+
+;section 0 Span:0..40
+;Cancer Res.  1997 Oct 15;57(20):4578-84.
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (.:[10..11] .) (CD:[13..17] 1997)
+        (NNP:[18..21] Oct) (CD:[22..24] 15) (CD:[24..27] ;57)
+        (-LRB-:[27..28] -LRB-) (CD:[28..30] 20) (-RRB-:[30..31] -RRB-)
+        (CD:[31..36] :4578) (CD:[36..39] -84) (.:[39..40] .)))
+
+;sentence 1 Span:46..188
+;High levels of expression and nuclear localization of interleukin-1 beta 
+;converting enzyme (ICE) and CPP32 in favorable human neuroblastomas.
+;[100..137]:gene-protein:"interleukin-1 beta  converting enzyme"
+;[139..142]:gene-protein:"ICE"
+;[148..153]:gene-protein:"CPP32"
+;[173..187]:malignancy-type:"neuroblastomas"
+(SENT
+  (NP-HLN
+    (NP (JJ:[46..50] High) (NNS:[51..57] levels))
+    (PP (IN:[58..60] of)
+      (NP
+        (NP
+          (NP (NN:[61..71] expression))
+          (CC:[72..75] and)
+          (NP (JJ:[76..83] nuclear) (NN:[84..96] localization)))
+        (PP (IN:[97..99] of)
+          (NP
+            (NP
+              (NP
+                (ADJP
+                  (NML (NN:[100..113] interleukin-1) (SYM:[114..118] beta))
+                  (VBG:[120..130] converting))
+                (NN:[131..137] enzyme))
+              (NP (-LRB-:[138..139] -LRB-) (NN:[139..142] ICE)
+                  (-RRB-:[142..143] -RRB-)))
+            (CC:[144..147] and)
+            (NP (NN:[148..153] CPP32))))))
+    (PP-LOC (IN:[154..156] in)
+      (NP (JJ:[157..166] favorable) (JJ:[167..172] human)
+          (NNS:[173..187] neuroblastomas)))
+    (.:[187..188] .)))
+
+;section 2 Span:192..282
+;Nakagawara A, Nakamura Y, Ikeda H, Hiwasa T, Kuida K, Su MS, Zhao H, Cnaan A,
+; Sakiyama S.
+(SEC
+  (FRAG (NNP:[192..202] Nakagawara) (NNP:[203..204] A) (,:[204..205] ,)
+        (NNP:[206..214] Nakamura) (NNP:[215..216] Y) (,:[216..217] ,)
+        (NNP:[218..223] Ikeda) (NNP:[224..226] H,) (NNP:[227..233] Hiwasa)
+        (NNP:[234..235] T) (,:[235..236] ,) (NNP:[237..242] Kuida)
+        (NNP:[243..245] K,) (NNP:[246..248] Su) (NNP:[249..251] MS)
+        (,:[251..252] ,) (NNP:[253..257] Zhao) (NNP:[258..260] H,)
+        (NNP:[261..266] Cnaan) (NNP:[267..268] A) (,:[268..269] ,)
+        (NNP:[271..279] Sakiyama) (NNP:[280..282] S.)))
+
+;section 3 Span:286..388
+;Division of Biochemistry, Chiba Cancer Center Research Institute, Japan. 
+;akiranak@biolab.kazusa.or.jp
+(SEC
+  (FRAG (NNP:[286..294] Division) (IN:[295..297] of)
+        (NNP:[298..310] Biochemistry) (,:[310..311] ,) (NNP:[312..317] Chiba)
+        (NNP:[318..324] Cancer) (NNP:[325..331] Center)
+        (NNP:[332..340] Research) (NNP:[341..350] Institute) (,:[350..351] ,)
+        (NNP:[352..357] Japan) (.:[357..358] .)
+        (``:[360..385] akiranak@biolab.kazusa.or) (NN:[385..388] .jp)))
+
+;sentence 4 Span:392..586
+;Neuroblastomas frequently show spontaneous regression and differentiation,
+;which  may at least partly be regulated by signaling through nerve growth
+;factor and  its receptors, TRK-A and p75LNTR.
+;[392..406]:malignancy-type:"Neuroblastomas"
+;[528..547]:gene-protein:"nerve growth factor"
+;[568..573]:gene-protein:"TRK-A"
+;[578..585]:gene-protein:"p75LNTR"
+(SENT
+  (S
+    (NP-SBJ (NNS:[392..406] Neuroblastomas))
+    (ADVP (RB:[407..417] frequently))
+    (VP (VBP:[418..422] show)
+      (NP (JJ:[423..434] spontaneous) (NN:[435..445] regression)
+          (CC:[446..449] and) (NN:[450..465] differentiation))
+      (,:[465..466] ,)
+      (SBAR-ADV
+        (WHNP-1 (WDT:[467..472] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[472..472] *T*))
+          (VP (MD:[474..477] may)
+            (ADVP
+              (PP (IN:[478..480] at)
+                (ADJP (JJS:[481..486] least)))
+              (RB:[487..493] partly))
+            (VP (VB:[494..496] be)
+              (VP (VBN:[497..506] regulated)
+                (NP-1 (-NONE-:[506..506] *))
+                (PP (IN:[507..509] by)
+                  (S-NOM-LGS
+                    (NP-SBJ (-NONE-:[509..509] *))
+                    (VP (VBG:[510..519] signaling)
+                      (PP (IN:[520..527] through)
+                        (NP
+                          (NP (NN:[528..533] nerve) (NN:[534..540] growth)
+                              (NN:[541..547] factor))
+                          (CC:[548..551] and)
+                          (NP
+                            (NP (PRP$:[553..556] its) (NNS:[557..566] receptors))
+                            (,:[566..567] ,)
+                            (NP (NN:[568..573] TRK-A) (CC:[574..577] and)
+                                (NN:[578..585] p75LNTR))))))))))))))
+    (.:[585..586] .)))
+
+;sentence 5 Span:587..781
+;We studied 52 neuroblastic tumors to test  whether the cell death-related
+;proteases, interleukin-1 beta converting enzyme  (ICE), CPP32, and Ich-1,
+;were involved in the regression of the tumors.
+;[601..620]:malignancy-type:"neuroblastic tumors"
+;[661..670]:gene-protein:"proteases"
+;[672..708]:gene-protein:"interleukin-1 beta converting enzyme"
+;[711..714]:gene-protein:"ICE"
+;[717..722]:gene-protein:"CPP32"
+;[728..733]:gene-protein:"Ich-1"
+(SENT
+  (S
+    (NP-SBJ (PRP:[587..589] We))
+    (VP (VBD:[590..597] studied)
+      (NP (CD:[598..600] 52)
+         (JJ:[601..613] neuroblastic) (NNS:[614..620] tumors))
+      (S-PRP
+        (NP-SBJ (-NONE-:[620..620] *))
+        (VP (TO:[621..623] to)
+          (VP (VB:[624..628] test)
+            (SBAR-NOM (IN:[630..637] whether)
+              (S
+                (NP-SBJ-1
+                  (NP (DT:[638..641] the)
+                    (ADJP
+                      (NML (NN:[642..646] cell) (NN:[647..652] death))
+                      (HYPH:[652..653] -) (VBN:[653..660] related))
+                    (NNS:[661..670] proteases))
+                  (,:[670..671] ,)
+                  (NP
+                    (NP
+                      (NML
+                        (ADJP
+                          (NML (NN:[672..685] interleukin-1)
+                               (SYM:[686..690] beta))
+                          (VBG:[691..701] converting))
+                        (NN:[702..708] enzyme))
+                      (NML (-LRB-:[710..711] -LRB-) (NN:[711..714] ICE)
+                           (-RRB-:[714..715] -RRB-)))
+                    (,:[715..716] ,)
+                    (NP (NN:[717..722] CPP32))
+                    (,:[722..723] ,) (CC:[724..727] and)
+                    (NP (NN:[728..733] Ich-1))))
+                (,:[733..734] ,)
+                (VP (VBD:[735..739] were)
+                  (VP (VBN:[740..748] involved)
+                    (NP-1 (-NONE-:[748..748] *))
+                    (PP-CLR (IN:[749..751] in)
+                      (NP
+                        (NP (DT:[752..755] the) (NN:[756..766] regression))
+                        (PP (IN:[767..769] of)
+                          (NP (DT:[770..773] the) (NNS:[774..780] tumors)))))))))))))
+    (.:[780..781] .)))
+
+;sentence 6 Span:782..967
+;High  levels of expression of ICE and CPP32 were significantly correlated
+;with a high  level of TRK-A expression, single copy of N-myc, younger age,
+;lower stages, and  better prognosis.
+;[812..815]:gene-protein:"ICE"
+;[820..825]:gene-protein:"CPP32"
+;[878..883]:gene-protein:"TRK-A"
+;[911..916]:gene-rna:"N-myc"
+;[918..929]:malignancy-developmental-state:"younger age"
+;[931..943]:malignancy-clinical-stage:"lower stages"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[782..786] High) (NNS:[788..794] levels))
+      (PP (IN:[795..797] of)
+        (NP
+          (NP (NN:[798..808] expression))
+          (PP (IN:[809..811] of)
+            (NP (NN:[812..815] ICE) (CC:[816..819] and) (NN:[820..825] CPP32))))))
+    (VP (VBD:[826..830] were)
+      (ADVP (RB:[831..844] significantly))
+      (VP (VBN:[845..855] correlated)
+        (NP-1 (-NONE-:[855..855] *))
+        (PP-CLR (IN:[856..860] with)
+          (NP
+            (NP
+              (NP (DT:[861..862] a) (JJ:[863..867] high) (NN:[869..874] level))
+              (PP (IN:[875..877] of)
+                (NP (NN:[878..883] TRK-A) (NN:[884..894] expression))))
+            (,:[894..895] ,)
+            (NP
+              (NP (JJ:[896..902] single) (NN:[903..907] copy))
+              (PP (IN:[908..910] of)
+                (NP (NN:[911..916] N-myc))))
+            (,:[916..917] ,)
+            (NP (JJR:[918..925] younger) (NN:[926..929] age))
+            (,:[929..930] ,)
+            (NP (JJR:[931..936] lower) (NNS:[937..943] stages))
+            (,:[943..944] ,) (CC:[945..948] and)
+            (NP (JJR:[950..956] better) (NN:[957..966] prognosis))))))
+    (.:[966..967] .)))
+
+;sentence 7 Span:968..1216
+;The immunohistochemical studies and Western analyses as well  as the terminal
+;dUTP-biotin nick end labeling (TUNEL) method revealed that both  ICE and
+;CPP32 were translocated from the cytoplasm into the nuclei in  regressing,
+;apoptotic tumor cells.
+;[1051..1057]:gene-protein:"biotin"
+;[1111..1114]:gene-protein:"ICE"
+;[1119..1124]:gene-protein:"CPP32"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[968..971] The)
+        (NML
+          (NML (JJ:[972..991] immunohistochemical) (NNS:[992..999] studies))
+          (CC:[1000..1003] and)
+          (NML (JJ:[1004..1011] Western) (NNS:[1012..1020] analyses))))
+      (CONJP (RB:[1021..1023] as) (RB:[1024..1028] well) (IN:[1030..1032] as))
+      (NP (DT:[1033..1036] the)
+        (NML
+          (NML (JJ:[1037..1045] terminal) (NN:[1046..1051] dUTP-)
+               (NN:[1051..1057] biotin) (NN:[1058..1062] nick)
+               (NN:[1063..1066] end) (NN:[1067..1075] labeling))
+          (NML (-LRB-:[1076..1077] -LRB-) (NN:[1077..1082] TUNEL)
+               (-RRB-:[1082..1083] -RRB-)))
+        (NN:[1084..1090] method)))
+    (VP (VBD:[1091..1099] revealed)
+      (SBAR (IN:[1100..1104] that)
+        (S
+          (NP-SBJ-1 (CC:[1105..1109] both) (NN:[1111..1114] ICE)
+                    (CC:[1115..1118] and) (NN:[1119..1124] CPP32))
+          (VP (VBD:[1125..1129] were)
+            (VP (VBN:[1130..1142] translocated)
+              (NP-1 (-NONE-:[1142..1142] *))
+              (PP-DIR (IN:[1143..1147] from)
+                (NP (DT:[1148..1151] the) (NN:[1152..1161] cytoplasm)))
+              (PP-DIR (IN:[1162..1166] into)
+                (NP (DT:[1167..1170] the) (NNS:[1171..1177] nuclei)))
+              (PP-LOC (IN:[1178..1180] in)
+                (NP (VBG:[1182..1192] regressing) (,:[1192..1193] ,)
+                    (JJ:[1194..1203] apoptotic) (NN:[1204..1209] tumor)
+                    (NNS:[1210..1215] cells))))))))
+    (.:[1215..1216] .)))
+
+;sentence 8 Span:1217..1372
+;Our results suggest that ICE and CPP32  cysteine proteases may play an
+;important role in regulating the apoptotic  process of the favorable
+;neuroblastomas.
+;[1242..1245]:gene-protein:"ICE"
+;[1250..1255]:gene-protein:"CPP32"
+;[1257..1275]:gene-protein:"cysteine proteases"
+;[1357..1371]:malignancy-type:"neuroblastomas"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1217..1220] Our) (NNS:[1221..1228] results))
+    (VP (VBP:[1229..1236] suggest)
+      (SBAR (IN:[1237..1241] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1242..1245] ICE)
+              (NML-1 (-NONE-:[1245..1245] *P*)))
+            (CC:[1246..1249] and)
+            (NP (NN:[1250..1255] CPP32)
+              (NML-1 (NN:[1257..1265] cysteine) (NNS:[1266..1275] proteases))))
+          (VP (MD:[1276..1279] may)
+            (VP (VB:[1280..1284] play)
+              (NP (DT:[1285..1287] an) (JJ:[1288..1297] important)
+                  (NN:[1298..1302] role))
+              (PP (IN:[1303..1305] in)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[1305..1305] *))
+                  (VP (VBG:[1306..1316] regulating)
+                    (NP
+                      (NP (DT:[1317..1320] the) (JJ:[1321..1330] apoptotic)
+                          (NN:[1332..1339] process))
+                      (PP (IN:[1340..1342] of)
+                        (NP (DT:[1343..1346] the) (JJ:[1347..1356] favorable)
+                            (NNS:[1357..1371] neuroblastomas))))))))))))
+    (.:[1371..1372] .)))
+
+;section 9 Span:1376..1420
+;PMID: 9377572 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1376..1380] PMID) (::[1380..1381] :) (CD:[1382..1389] 9377572)
+        (NN:[1390..1391] -LSB-) (NNP:[1391..1397] PubMed) (::[1398..1399] -)
+        (NN:[1400..1407] indexed) (IN:[1408..1411] for)
+        (NNP:[1412..1420] MEDLINE-RSB-)))

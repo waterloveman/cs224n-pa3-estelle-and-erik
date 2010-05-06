@@ -1,0 +1,421 @@
+;PMID: 8157709
+;source_file_782.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..45] = [t:0..45]
+;1)sentence:[e:50..106] = [t:50..106]
+;2)section:[e:110..161] = [t:110..161]
+;3)section:[e:165..248] = [t:165..248]
+;4)sentence:[e:252..550] = [t:252..550]
+;5)sentence:[e:551..754] = [t:551..754]
+;6)sentence:[e:755..950] = [t:755..950]
+;7)sentence:[e:951..1164] = [t:951..1164]
+;8)sentence:[e:1165..1325] = [t:1165..1325]
+;9)sentence:[e:1326..1551] = [t:1326..1551]
+;10)sentence:[e:1552..1690] = [t:1552..1690]
+;11)section:[e:1694..1738] = [t:1694..1738]
+
+;section 0 Span:0..45
+;J Clin Endocrinol Metab  1994 Apr;78(4):842-6
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Clin) (NNP:[7..17] Endocrinol)
+        (NNP:[18..23] Metab) (CD:[25..29] 1994) (.:[30..37] Apr;78-LRB-)
+        (CD:[37..39] 4-RRB-) (CD:[39..43] :842) (::[43..44] -) (CD:[44..45] 6)))
+
+;sentence 1 Span:50..106
+;H-ras mutations in human pituitary carcinoma metastases.
+;[50..55]:gene-rna:"H-ras"
+;[75..105]:malignancy:"pituitary carcinoma metastases"
+(SENT
+  (NP-HLN
+    (NP (NN:[50..55] H-ras) (NNS:[56..65] mutations))
+    (PP-LOC (IN:[66..68] in)
+      (NP (JJ:[69..74] human)
+         (JJ:[75..84] pituitary) (NN:[85..94] carcinoma)
+         (NNS:[95..105] metastases)))
+    (.:[105..106] .)))
+
+;section 2 Span:110..161
+;Pei L, Melmed S, Scheithauer B, Kovacs K, Prager D.
+(SEC
+  (FRAG (NNP:[110..113] Pei) (NNP:[114..116] L,) (NNP:[117..123] Melmed)
+        (NNP:[124..126] S,) (NNP:[127..138] Scheithauer) (NNP:[139..140] B)
+        (,:[140..141] ,) (NNP:[142..148] Kovacs) (NNP:[149..150] K)
+        (,:[150..151] ,) (NNP:[152..158] Prager) (NNP:[159..161] D.)))
+
+;section 3 Span:165..248
+;Department of Medicine, Cedars-Sinai Medical Center-UCLA School of Medicine 
+;90048.
+(SEC
+  (FRAG (NNP:[165..175] Department) (IN:[176..178] of) (NNP:[179..187] Medicine)
+        (,:[187..188] ,) (NNP:[189..195] Cedars) (::[195..196] -)
+        (NNP:[196..201] Sinai) (NNP:[202..209] Medical) (NNP:[210..216] Center)
+        (::[216..217] -) (NNP:[217..221] UCLA) (NNP:[222..228] School)
+        (IN:[229..231] of) (NNP:[232..240] Medicine) (CD:[242..247] 90048)
+        (.:[247..248] .)))
+
+;sentence 4 Span:252..550
+;Molecular mechanisms of pituitary tumorigenesis were studied using Polymerase
+; chain reaction-single stranded conformational polymorphism with DNA
+;sequencing  to identify potential mutations in the ras protooncogenes and the
+;tumor  suppressor gene p53 in invasive pituitary adenomas and carcinomas.
+;[319..329]:gene-protein:"Polymerase"
+;[450..453]:gene-rna:"ras"
+;[477..503]:gene-rna:"tumor  suppressor gene p53"
+;[507..534]:malignancy:"invasive pituitary adenomas"
+;[539..549]:malignancy:"carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[252..261] Molecular) (NNS:[262..272] mechanisms))
+      (PP (IN:[273..275] of)
+        (NP (JJ:[276..285] pituitary) (NN:[286..299] tumorigenesis))))
+    (VP (VBD:[300..304] were)
+      (VP (VBN:[305..312] studied)
+        (NP-SBJ (-NONE-:[312..312] *))
+        (S-MNR
+          (NP-SBJ (-NONE-:[312..312] *))
+          (VP (VBG:[313..318] using)
+            (NP
+              (NP
+                (NML (NN:[319..329] Polymerase) (NN:[331..336] chain)
+                     (NN:[337..345] reaction))
+                (HYPH:[345..346] -)
+                (ADJP (JJ:[346..352] single) (JJ:[353..361] stranded))
+                (JJ:[362..376] conformational) (NN:[377..389] polymorphism))
+              (PP (IN:[390..394] with)
+                (NP (NN:[395..398] DNA) (NN:[399..409] sequencing))))
+            (S-PRP
+              (NP-SBJ (-NONE-:[409..409] *))
+              (VP (TO:[411..413] to)
+                (VP (VB:[414..422] identify)
+                  (NP
+                    (NP (JJ:[423..432] potential) (NNS:[433..442] mutations))
+                    (PP-LOC (IN:[443..445] in)
+                      (NP (DT:[446..449] the) (NN:[450..453] ras)
+                          (NNS:[454..468] protooncogenes))))
+                  (CC:[469..472] and)
+                  (NP
+                    (NP
+                      (NP (DT:[473..476] the)
+                        (NML (NN:[477..482] tumor) (NN:[484..494] suppressor))
+                        (NN:[495..499] gene))
+                      (NP (NN:[500..503] p53)))
+                    (PP-LOC (IN:[504..506] in)
+                      (NP
+                        (NP
+                          (ADJP-3 (JJ:[507..515] invasive))
+                          (ADJP-2 (JJ:[516..525] pituitary))
+                          (NNS:[526..534] adenomas))
+                        (CC:[535..538] and)
+                        (NP
+                          (ADJP-3 (-NONE-:[538..538] *P*))
+                          (ADJP-2 (-NONE-:[538..538] *P*))
+                          (NNS:[539..549] carcinomas))))))))))))
+    (.:[549..550] .)))
+
+;sentence 5 Span:551..754
+;Sequencing of  exons 5 through 8 of the p53 gene revealed no mutations, nor
+;were mutations  detected in the N- or K-ras protooncogenes in four of the
+;carcinomas and their  respective metastatic deposits.
+;[566..583]:variation-location:"exons 5 through 8"
+;[591..594]:gene-rna:"p53"
+;[612..621]:variation-event:"mutations"
+;[632..641]:variation-event:"mutations"
+;[659..661]:gene-rna:"N-"
+;[665..670]:gene-rna:"K-ras"
+;[701..711]:malignancy:"carcinomas"
+;[734..753]:malignancy:"metastatic deposits"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NN:[551..561] Sequencing))
+        (PP (IN:[562..564] of)
+          (NP
+            
+            (NP
+              (NML-1 (NNS:[566..571] exons))
+              (CD:[572..573] 5))
+            (PP (IN:[574..581] through)
+              (NP
+                (NML-1 (-NONE-:[581..581] *P*))
+                (CD:[582..583] 8)))
+            (PP (IN:[584..586] of)
+              (NP (DT:[587..590] the) (NN:[591..594] p53) (NN:[595..599] gene))))))
+      (VP (VBD:[600..608] revealed)
+        (NP (DT:[609..611] no) (NNS:[612..621] mutations))))
+    (,:[621..622] ,) (CC:[623..626] nor)
+    (SINV (VBD:[627..631] were)
+      (NP-SBJ-2 (NNS:[632..641] mutations))
+      (VP (VBN:[643..651] detected)
+        (NP-2 (-NONE-:[651..651] *))
+        (PP-LOC (IN:[652..654] in)
+          (NP (DT:[655..658] the)
+            (NML
+              (NML
+                (NML
+                   (NN:[659..660] N) (HYPH:[660..661] -)
+                  (NML-3 (-NONE-:[661..661] *P*)))
+                (NML-4 (-NONE-:[661..661] *P*)))
+              (CC:[662..664] or)
+              (NML
+                (NML (NN:[665..666] K) (HYPH:[666..667] -)
+                  (NML-3 (NN:[667..670] ras)))
+                (NML-4 (NNS:[671..685] protooncogenes))))))
+        (PP-LOC (IN:[686..688] in)
+          (NP
+            (NP (CD:[689..693] four))
+            (PP (IN:[694..696] of)
+              (NP
+                (NP (DT:[697..700] the) (NNS:[701..711] carcinomas))
+                (CC:[712..715] and)
+                (NP (PRP$:[716..721] their) (JJ:[723..733] respective)
+                   (JJ:[734..744] metastatic) (NNS:[745..753] deposits))))))))
+    (.:[753..754] .)))
+
+;sentence 6 Span:755..950
+;Point mutations of H-ras however, were  identified in three distant
+;metastatic pituitary tumor secondaries, but not in  their respective primary
+;pituitary carcinomas, or in six invasive adenomas.
+;[755..770]:variation-type:"Point mutations"
+;[774..779]:gene-rna:"H-ras"
+;[815..861]:malignancy:"distant metastatic pituitary tumor secondaries"
+;[892..920]:malignancy:"primary pituitary carcinomas"
+;[932..949]:malignancy:"invasive adenomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[755..760] Point) (NNS:[761..770] mutations))
+      (PP (IN:[771..773] of)
+        (NP (NN:[774..779] H-ras))))
+    (VP
+      (ADVP (RB:[780..787] however))
+      (,:[787..788] ,) (VBD:[789..793] were)
+      (VP
+        (VP (VBN:[795..805] identified)
+          (NP-1 (-NONE-:[805..805] *))
+          (PP-LOC=2 (IN:[806..808] in)
+            (NP (CD:[809..814] three)
+               (JJ:[815..822] distant)
+              (NML (JJ:[823..833] metastatic) (JJ:[834..843] pituitary)
+                   (NN:[844..849] tumor))
+              (NNS:[850..861] secondaries))))
+        (,:[861..862] ,)
+        (CONJP (CC:[863..866] but) (RB:[867..870] not))
+        (VP
+          (PP-LOC=2
+            (PP (IN:[871..873] in)
+              (NP (PRP$:[875..880] their) (JJ:[881..891] respective)
+                 (JJ:[892..899] primary) (JJ:[900..909] pituitary)
+                 (NNS:[910..920] carcinomas)))
+            (,:[920..921] ,) (CC:[922..924] or)
+            (PP (IN:[925..927] in)
+              (NP (CD:[928..931] six)
+                 (JJ:[932..940] invasive) (NNS:[941..949] adenomas)))))))
+    (.:[949..950] .)))
+
+;sentence 7 Span:951..1164
+;Two  of the mutations included a G to C substitution at codon 12, and a G to
+;A  substitution at codon 18, resulting in a glycine to arginine, and an
+;alanine to  threonine change at these amino acids, respectively.
+;[963..972]:variation-event:"mutations"
+;[984..985]:variation-state-original:"G"
+;[989..990]:variation-state-altered:"C"
+;[991..1003]:variation-type:"substitution"
+;[1007..1015]:variation-location:"codon 12"
+;[1023..1024]:variation-state-original:"G"
+;[1028..1029]:variation-state-altered:"A"
+;[1031..1043]:variation-type:"substitution"
+;[1047..1055]:variation-location:"codon 18"
+;[1072..1079]:variation-state-original:"glycine"
+;[1083..1091]:variation-state-altered:"arginine"
+;[1100..1107]:variation-state-original:"alanine"
+;[1112..1121]:variation-state-altered:"threonine"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (CD:[951..954] Two))
+      (PP (IN:[956..958] of)
+        (NP (DT:[959..962] the) (NNS:[963..972] mutations))))
+    (VP (VBD:[973..981] included)
+      (NP
+        (NP
+          (NP (DT:[982..983] a)
+            (NML
+              (NML (NN:[984..985] G))
+              (PP (TO:[986..988] to)
+                (NP (NN:[989..990] C))))
+            (NN:[991..1003] substitution))
+          (PP-LOC (IN:[1004..1006] at)
+            (NP (NN:[1007..1012] codon) (CD:[1013..1015] 12))))
+        (,:[1015..1016] ,) (CC:[1017..1020] and)
+        (NP
+          (NP (DT:[1021..1022] a)
+            (NML
+              (NML (NN:[1023..1024] G))
+              (PP (TO:[1025..1027] to)
+                (NP (NN:[1028..1029] A))))
+            (NN:[1031..1043] substitution))
+          (PP-LOC (IN:[1044..1046] at)
+            (NP (NN:[1047..1052] codon) (CD:[1053..1055] 18)))))
+      (,:[1055..1056] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1056..1056] *))
+        (VP (VBG:[1057..1066] resulting)
+          (PP-CLR (IN:[1067..1069] in)
+            (NP
+              (NP (DT:[1070..1071] a)
+                (NML
+                  (NML
+                    (NML
+                      (NML (NN:[1072..1079] glycine))
+                      (PP (TO:[1080..1082] to)
+                        (NP (NN:[1083..1091] arginine))))
+                    (NML-1 (-NONE-:[1091..1091] *P*)))
+                  (,:[1091..1092] ,) (CC:[1093..1096] and)
+                  (NML
+                    (NML
+                      (NML (DT:[1097..1099] an) (NN:[1100..1107] alanine))
+                      (PP (TO:[1108..1110] to)
+                        (NP (NN:[1112..1121] threonine))))
+                    (NML-1 (NN:[1122..1128] change)))))
+              (PP-LOC (IN:[1129..1131] at)
+                (NP (DT:[1132..1137] these) (JJ:[1138..1143] amino)
+                    (NNS:[1144..1149] acids)))))
+          (,:[1149..1150] ,)
+          (ADVP (RB:[1151..1163] respectively)))))
+    (.:[1163..1164] .)))
+
+;sentence 8 Span:1165..1325
+;A third mutation involved a  single base pair (adenine) deletion in codon 3
+;of H-ras which causes a frame  shift, resulting in a termination signal at
+;codon 19.
+;[1173..1181]:variation-event:"mutation"
+;[1212..1219]:variation-state-original:"adenine"
+;[1221..1229]:variation-type:"deletion"
+;[1233..1240]:variation-location:"codon 3"
+;[1244..1249]:gene-rna:"H-ras"
+;[1265..1277]:variation-type:"frame  shift"
+;[1316..1324]:variation-location:"codon 19"
+(SENT
+  (S
+    (NP-SBJ (DT:[1165..1166] A) (JJ:[1167..1172] third)
+            (NN:[1173..1181] mutation))
+    (VP (VBD:[1182..1190] involved)
+      (NP
+        (NP
+          (NP (DT:[1191..1192] a) (JJ:[1194..1200] single)
+            (NML (NN:[1201..1205] base) (NN:[1206..1210] pair)
+              (PRN (-LRB-:[1211..1212] -LRB-)
+                (NP (NN:[1212..1219] adenine))
+                (-RRB-:[1219..1220] -RRB-)))
+            (NN:[1221..1229] deletion))
+          (PP-LOC (IN:[1230..1232] in)
+            (NP
+              (NP (NN:[1233..1238] codon) (CD:[1239..1240] 3))
+              (PP (IN:[1241..1243] of)
+                (NP (NN:[1244..1249] H-ras))))))
+        (SBAR
+          (WHNP-1 (WDT:[1250..1255] which))
+          (S
+            (NP-SBJ-1 (-NONE-:[1255..1255] *T*))
+            (VP (VBZ:[1256..1262] causes)
+              (NP (DT:[1263..1264] a)
+                 (NN:[1265..1270] frame) (NN:[1272..1277] shift))
+              (,:[1277..1278] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[1278..1278] *))
+                (VP (VBG:[1279..1288] resulting)
+                  (PP-CLR (IN:[1289..1291] in)
+                    (NP
+                      (NP (DT:[1292..1293] a) (NN:[1294..1305] termination)
+                          (NN:[1306..1312] signal))
+                      (PP-LOC (IN:[1313..1315] at)
+                        (NP (NN:[1316..1321] codon) (CD:[1322..1324] 19))))))))))))
+    (.:[1324..1325] .)))
+
+;sentence 9 Span:1326..1551
+;These results suggest that  point mutations in p53 and ras are not associated
+;with pituitary tumorigenesis,  however, point mutations of the H-ras gene may
+;be important in the formation and  or growth of pituitary metastases.
+;[1354..1369]:variation-type:"point mutations"
+;[1373..1376]:gene-rna:"p53"
+;[1381..1384]:gene-rna:"ras"
+;[1444..1459]:variation-type:"point mutations"
+;[1467..1472]:gene-rna:"H-ras"
+;[1530..1550]:malignancy:"pituitary metastases"
+(SENT
+  (S
+    (NP-SBJ (DT:[1326..1331] These) (NNS:[1332..1339] results))
+    (VP (VBP:[1340..1347] suggest)
+      (SBAR (IN:[1348..1352] that)
+        (S
+          (S
+            (NP-SBJ-1
+              (NP (NN:[1354..1359] point) (NNS:[1360..1369] mutations))
+              (PP (IN:[1370..1372] in)
+                (NP (NN:[1373..1376] p53) (CC:[1377..1380] and)
+                    (NN:[1381..1384] ras))))
+            (VP (VBP:[1385..1388] are) (RB:[1389..1392] not)
+              (VP (JJ:[1393..1403] associated)
+                (NP-1 (-NONE-:[1403..1403] *))
+                (PP-CLR (IN:[1404..1408] with)
+                  (NP (JJ:[1409..1418] pituitary)
+                      (NN:[1419..1432] tumorigenesis))))))
+          (,:[1432..1433] ,)
+          (S
+            (ADVP (RB:[1435..1442] however))
+            (,:[1442..1443] ,)
+            (NP-SBJ
+              (NP (NN:[1444..1449] point) (NNS:[1450..1459] mutations))
+              (PP (IN:[1460..1462] of)
+                (NP (DT:[1463..1466] the) (NN:[1467..1472] H-ras)
+                    (NN:[1473..1477] gene))))
+            (VP (MD:[1478..1481] may)
+              (VP (VB:[1482..1484] be)
+                (ADJP-PRD (JJ:[1485..1494] important))
+                (PP (IN:[1495..1497] in)
+                  (NP
+                    (NP
+                      (NP (DT:[1498..1501] the) (NN:[1502..1511] formation))
+                      (CONJP (CC:[1512..1515] and) (CC:[1517..1519] or))
+                      (NP (NN:[1520..1526] growth)))
+                    (PP (IN:[1527..1529] of)
+                      (NP (JJ:[1530..1539] pituitary)
+                          (NNS:[1540..1550] metastases)))))))))))
+    (.:[1550..1551] .)))
+
+;sentence 10 Span:1552..1690
+;This observed genomic instability will be of  value in predicting the
+;potential metastatic behavior of these aggressive  pituitary tumors.
+;[1661..1689]:malignancy:"aggressive  pituitary tumors"
+(SENT
+  (S
+    (NP-SBJ (DT:[1552..1556] This) (JJ:[1557..1565] observed)
+            (JJ:[1566..1573] genomic) (NN:[1574..1585] instability))
+    (VP (MD:[1586..1590] will)
+      (VP (VB:[1591..1593] be)
+        (PP-PRD (IN:[1594..1596] of)
+          (NP (NN:[1598..1603] value)))
+        (PP (IN:[1604..1606] in)
+          (S-NOM
+            (NP-SBJ (-NONE-:[1606..1606] *))
+            (VP (VBG:[1607..1617] predicting)
+              (NP
+                (NP (DT:[1618..1621] the) (JJ:[1622..1631] potential)
+                    (JJ:[1632..1642] metastatic) (NN:[1643..1651] behavior))
+                (PP (IN:[1652..1654] of)
+                  (NP (DT:[1655..1660] these)
+                     (JJ:[1661..1671] aggressive) (JJ:[1673..1682] pituitary)
+                     (NNS:[1683..1689] tumors)))))))))
+    (.:[1689..1690] .)))
+
+;section 11 Span:1694..1738
+;PMID: 8157709 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1694..1698] PMID) (::[1698..1699] :) (CD:[1700..1707] 8157709)
+        (NN:[1708..1709] -LSB-) (NNP:[1709..1715] PubMed) (::[1716..1717] -)
+        (NN:[1718..1725] indexed) (IN:[1726..1729] for)
+        (NNP:[1730..1738] MEDLINE-RSB-)))

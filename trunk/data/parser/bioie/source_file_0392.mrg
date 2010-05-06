@@ -1,0 +1,502 @@
+;PMID: 9660772
+;source_file_869.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..200] = [t:48..200]
+;2)section:[e:204..245] = [t:204..245]
+;3)section:[e:249..336] = [t:249..336]
+;4)sentence:[e:340..564] = [t:340..564]
+;5)sentence:[e:565..726] = [t:565..726]
+;6)sentence:[e:727..856] = [t:727..856]
+;7)sentence:[e:857..1015] = [t:857..1015]
+;8)sentence:[e:1016..1162] = [t:1016..1162]
+;9)sentence:[e:1163..1273] = [t:1163..1273]
+;10)sentence:[e:1274..1477] = [t:1274..1477]
+;11)sentence:[e:1478..1523] = [t:1478..1523]
+;12)sentence:[e:1525..1773] = [t:1525..1773]
+;13)sentence:[e:1774..1834] = [t:1774..1834]
+;14)sentence:[e:1836..2023] = [t:1836..2023]
+;15)section:[e:2027..2071] = [t:2027..2071]
+
+;section 0 Span:0..42
+;J Biol Chem. 1998 Jul 17;273(29):18139-45.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Biol) (NNP:[7..11] Chem) (.:[11..12] .)
+        (CD:[13..17] 1998) (VBD:[18..21] Jul) (JJ:[22..29] 17;273-LRB-)
+        (CD:[29..31] 29) (-RRB-:[31..32] -RRB-) (CD:[32..38] :18139)
+        (::[38..39] -) (CD:[39..41] 45) (.:[41..42] .)))
+
+;sentence 1 Span:48..200
+;Aspirin inhibition and acetylation of the plant cytochrome P450, allene oxide
+; synthase, resembles that of animal prostaglandin endoperoxide H synthase.
+;[48..55]:substance:"Aspirin"
+;[96..111]:cyp450:"cytochrome P450"
+;[113..135]:cyp450:"allene oxide  synthase"
+;[162..199]:substance:"prostaglandin endoperoxide H synthase"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP
+        (NP
+          (NML-1 (NN:[48..55] Aspirin))
+          (NN:[56..66] inhibition))
+        (CC:[67..70] and)
+        (NP
+          (NML-1 (-NONE-:[70..70] *P*))
+          (NN:[71..82] acetylation)))
+      (PP (IN:[83..85] of)
+        (NP
+          (NP (DT:[86..89] the) (NN:[90..95] plant)
+             (NN:[96..106] cytochrome) (NN:[107..111] P450))
+          (,:[111..112] ,)
+          (NP (NN:[113..119] allene) (NN:[120..125] oxide)
+              (NN:[127..135] synthase)))))
+    (,:[135..136] ,)
+    (VP (VBZ:[137..146] resembles)
+      (NP
+        (NP (DT:[147..151] that))
+        (PP (IN:[152..154] of)
+          (NP (NN:[155..161] animal)
+             (NN:[162..175] prostaglandin) (NN:[176..188] endoperoxide)
+             (NN:[189..190] H) (NN:[191..199] synthase)))))
+    (.:[199..200] .)))
+
+;section 2 Span:204..245
+;Pan Z, Camara B, Gardner HW, Backhaus RA.
+(SEC
+  (FRAG (NNP:[204..207] Pan) (NNP:[208..209] Z) (,:[209..210] ,)
+        (NNP:[211..217] Camara) (NNP:[218..219] B) (,:[219..220] ,)
+        (NNP:[221..228] Gardner) (NNP:[229..231] HW) (,:[231..232] ,)
+        (NNP:[233..241] Backhaus) (NNP:[242..245] RA.)))
+
+;section 3 Span:249..336
+;Department of Plant Biology, Arizona State University, Tempe, Arizona 
+;85287-1601, USA.
+(SEC
+  (FRAG (NNP:[249..259] Department) (IN:[260..262] of) (NNP:[263..268] Plant)
+        (NNP:[269..276] Biology) (,:[276..277] ,) (NNP:[278..285] Arizona)
+        (NNP:[286..291] State) (NNP:[292..302] University) (,:[302..303] ,)
+        (NNP:[304..309] Tempe) (,:[309..310] ,) (NNP:[311..318] Arizona)
+        (CD:[320..325] 85287) (::[325..326] -) (CD:[326..330] 1601)
+        (,:[330..331] ,) (NNP:[332..335] USA) (.:[335..336] .)))
+
+;sentence 4 Span:340..564
+;The enzymatic reactions leading to octadecanoid lipid signaling intermediates
+;in  plants are similar to those of animals and are inhibited by nonsteroidal 
+;anti-inflammatory drugs (NSAIDs) such as salicylic acid and aspirin.
+;[375..393]:substance:"octadecanoid lipid"
+;[404..417]:substance:"intermediates"
+;[482..519]:substance:"nonsteroidal  anti-inflammatory drugs"
+;[521..527]:substance:"NSAIDs"
+;[537..551]:substance:"salicylic acid"
+;[556..563]:substance:"aspirin"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[340..343] The) (JJ:[344..353] enzymatic)
+          (NNS:[354..363] reactions))
+      (VP (VBG:[364..371] leading)
+        (PP-CLR (TO:[372..374] to)
+          (NP
+             (JJ:[375..387] octadecanoid) (NN:[388..393] lipid)
+            (VBG:[394..403] signaling) (NNS:[404..417] intermediates)))
+        (PP-LOC (IN:[418..420] in)
+          (NP (NNS:[422..428] plants)))))
+    (VP
+      (VP (VBP:[429..432] are)
+        (ADJP-PRD (JJ:[433..440] similar)
+          (PP (TO:[441..443] to)
+            (NP
+              (NP (DT:[444..449] those))
+              (PP (IN:[450..452] of)
+                (NP (NNS:[453..460] animals)))))))
+      (CC:[461..464] and)
+      (VP (VBP:[465..468] are)
+        (VP (VBN:[469..478] inhibited)
+          (NP-1 (-NONE-:[478..478] *))
+          (PP (IN:[479..481] by)
+            (NP-LGS
+              (NP
+                (NP (JJ:[482..494] nonsteroidal)
+                  (ADJP (AFX:[496..500] anti) (HYPH:[500..501] -)
+                        (JJ:[501..513] inflammatory))
+                  (NNS:[514..519] drugs))
+                (NP (-LRB-:[520..521] -LRB-) (NNS:[521..527] NSAIDs)
+                    (-RRB-:[527..528] -RRB-)))
+              (PP (JJ:[529..533] such) (IN:[534..536] as)
+                (NP
+                  (NP (JJ:[537..546] salicylic) (NN:[547..551] acid))
+                  (CC:[552..555] and)
+                  (NP (NN:[556..563] aspirin)))))))))
+    (.:[563..564] .)))
+
+;sentence 5 Span:565..726
+;In animals,  NSAIDs inhibit the cyclooxygenase (COX) activity of
+;prostaglandin endoperoxide H  synthase, which ultimately blocks the formation
+;of prostaglandins.
+;[578..584]:substance:"NSAIDs"
+;[597..611]:substance:"cyclooxygenase"
+;[613..616]:substance:"COX"
+;[630..668]:substance:"prostaglandin endoperoxide H  synthase"
+;[711..725]:substance:"prostaglandins"
+(SENT
+  (S
+    (PP-LOC (IN:[565..567] In)
+      (NP (NNS:[568..575] animals)))
+    (,:[575..576] ,)
+    (NP-SBJ (NNS:[578..584] NSAIDs))
+    (VP (VBP:[585..592] inhibit)
+      (NP
+        (NP (DT:[593..596] the)
+          (NML
+            (NML (NN:[597..611] cyclooxygenase))
+            (NML (-LRB-:[612..613] -LRB-) (NN:[613..616] COX)
+                 (-RRB-:[616..617] -RRB-)))
+          (NN:[618..626] activity))
+        (PP (IN:[627..629] of)
+          (NP (NN:[630..643] prostaglandin) (NN:[644..656] endoperoxide)
+              (NN:[657..658] H) (NN:[660..668] synthase))))
+      (,:[668..669] ,)
+      (SBAR-ADV
+        (WHNP-1 (WDT:[670..675] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[675..675] *T*))
+          (ADVP (RB:[676..686] ultimately))
+          (VP (VBZ:[687..693] blocks)
+            (NP
+              (NP (DT:[694..697] the) (NN:[698..707] formation))
+              (PP (IN:[708..710] of)
+                (NP (NNS:[711..725] prostaglandins))))))))
+    (.:[725..726] .)))
+
+;sentence 6 Span:727..856
+;In plants,  NSAIDs block the formation of 12-oxo-phytodienoic acid and
+;jasmonates, which are  the equivalent signaling compounds.
+;[739..745]:substance:"NSAIDs"
+;[769..793]:substance:"12-oxo-phytodienoic acid"
+;[798..808]:substance:"jasmonates"
+;[846..855]:substance:"compounds"
+(SENT
+  (S
+    (PP-LOC (IN:[727..729] In)
+      (NP (NNS:[730..736] plants)))
+    (,:[736..737] ,)
+    (NP-SBJ (NNS:[739..745] NSAIDs))
+    (VP (VBP:[746..751] block)
+      (NP
+        (NP (DT:[752..755] the) (NN:[756..765] formation))
+        (PP (IN:[766..768] of)
+          (NP
+            (NP
+              (NP (JJ:[769..788] 12-oxo-phytodienoic) (NN:[789..793] acid))
+              (CC:[794..797] and)
+              (NP (NNS:[798..808] jasmonates)))
+            (,:[808..809] ,)
+            (SBAR
+              (WHNP-1 (WDT:[810..815] which))
+              (S
+                (NP-SBJ-1 (-NONE-:[815..815] *T*))
+                (VP (VBP:[816..819] are)
+                  (NP-PRD (DT:[821..824] the) (JJ:[825..835] equivalent)
+                          (VBG:[836..845] signaling) (NNS:[846..855] compounds)))))))))
+    (.:[855..856] .)))
+
+;sentence 7 Span:857..1015
+;In this study we show that NSAIDs act as  competitive inhibitors of allene
+;oxide synthase (AOS), the cytochrome P450 that  initiates plant oxylipin
+;synthesis.
+;[884..890]:substance:"NSAIDs"
+;[911..921]:substance:"inhibitors"
+;[925..946]:cyp450:"allene oxide synthase"
+;[948..951]:cyp450:"AOS"
+;[958..973]:cyp450:"cytochrome P450"
+;[996..1004]:substance:"oxylipin"
+(SENT
+  (S
+    (PP (IN:[857..859] In)
+      (NP (DT:[860..864] this) (NN:[865..870] study)))
+    (NP-SBJ (PRP:[871..873] we))
+    (VP (VBP:[874..878] show)
+      (SBAR (IN:[879..883] that)
+        (S
+          (NP-SBJ (NNS:[884..890] NSAIDs))
+          (VP (VBP:[891..894] act)
+            (PP (IN:[895..897] as)
+              (NP
+                (NP (JJ:[899..910] competitive) (NNS:[911..921] inhibitors))
+                (PP (IN:[922..924] of)
+                  (NP
+                    (NP
+                      (NP (NN:[925..931] allene) (NN:[932..937] oxide)
+                          (NN:[938..946] synthase))
+                      (NP (-LRB-:[947..948] -LRB-) (NN:[948..951] AOS)
+                          (-RRB-:[951..952] -RRB-)))
+                    (,:[952..953] ,)
+                    (NP
+                      (NP (DT:[954..957] the)
+                         (NN:[958..968] cytochrome) (NN:[969..973] P450))
+                      (SBAR
+                        (WHNP-1 (WDT:[974..978] that))
+                        (S
+                          (NP-SBJ-1 (-NONE-:[978..978] *T*))
+                          (VP (VBZ:[980..989] initiates)
+                            (NP (NN:[990..995] plant) (NN:[996..1004] oxylipin)
+                                (NN:[1005..1014] synthesis))))))))))))))
+    (.:[1014..1015] .)))
+
+;sentence 8 Span:1016..1162
+;We also show that aspirin causes the  time-dependent inhibition and
+;acetylation of AOS, which leads the irreversible  inactivation of this
+;enzyme.
+;[1034..1041]:substance:"aspirin"
+;[1099..1102]:cyp450:"AOS"
+;[1155..1161]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1016..1018] We))
+    (ADVP (RB:[1019..1023] also))
+    (VP (VBP:[1024..1028] show)
+      (SBAR (IN:[1029..1033] that)
+        (S
+          (NP-SBJ (NN:[1034..1041] aspirin))
+          (VP (VBZ:[1042..1048] causes)
+            (NP
+              (NP
+                (NP (DT:[1049..1052] the)
+                  (ADJP (NN:[1054..1058] time) (HYPH:[1058..1059] -)
+                        (JJ:[1059..1068] dependent))
+                  (NN:[1069..1079] inhibition) (CC:[1080..1083] and)
+                   (NN:[1084..1095] acetylation))
+                (PP (IN:[1096..1098] of)
+                  (NP (NN:[1099..1102] AOS))))
+              (,:[1102..1103] ,)
+              (SBAR
+                (WHNP-1 (WDT:[1104..1109] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1109..1109] *T*))
+                  (VP (VBZ:[1110..1115] leads)
+                    (NP
+                      (NP (DT:[1116..1119] the) (JJ:[1120..1132] irreversible)
+                          (NN:[1134..1146] inactivation))
+                      (PP (IN:[1147..1149] of)
+                        (NP (DT:[1150..1154] this) (NN:[1155..1161] enzyme))))))))))))
+    (.:[1161..1162] .)))
+
+;sentence 9 Span:1163..1273
+;This inhibition and acetylation superficially  resembles that observed for
+;the inactivation of COX in animals.
+;[1258..1261]:substance:"COX"
+(SENT
+  (S
+    (NP-SBJ (DT:[1163..1167] This) (NN:[1168..1178] inhibition)
+            (CC:[1179..1182] and) (NN:[1183..1194] acetylation))
+    (ADVP (RB:[1195..1208] superficially))
+    (VP (VBZ:[1210..1219] resembles)
+      (NP
+        (NP (DT:[1220..1224] that))
+        (VP (VBN:[1225..1233] observed)
+          (NP (-NONE-:[1233..1233] *))
+          (PP (IN:[1234..1237] for)
+            (NP
+              (NP (DT:[1238..1241] the) (NN:[1242..1254] inactivation))
+              (PP (IN:[1255..1257] of)
+                (NP (NN:[1258..1261] COX)))
+              (PP-LOC (IN:[1262..1264] in)
+                (NP (NNS:[1265..1272] animals))))))))
+    (.:[1272..1273] .)))
+
+;sentence 10 Span:1274..1477
+;In AOS, aspirin  acetylates three serine residues near the C-terminal region
+;that appear to be  highly conserved among AOS sequences from other plants but
+;are not conserved  among "classical" type P450s.
+;[1277..1280]:cyp450:"AOS"
+;[1282..1289]:substance:"aspirin"
+;[1393..1396]:cyp450:"AOS"
+;[1471..1476]:cyp450:"P450s"
+(SENT
+  (S
+    (PP (IN:[1274..1276] In)
+      (NP (NN:[1277..1280] AOS)))
+    (,:[1280..1281] ,)
+    (NP-SBJ (NN:[1282..1289] aspirin))
+    (VP (VBZ:[1291..1301] acetylates)
+      (NP
+        (NP
+          (NP (CD:[1302..1307] three) (NN:[1308..1314] serine)
+              (NNS:[1315..1323] residues))
+          (PP (IN:[1324..1328] near)
+            (NP (DT:[1329..1332] the) (JJ:[1333..1343] C-terminal)
+                (NN:[1344..1350] region))))
+        (SBAR
+          (WHNP-1 (WDT:[1351..1355] that))
+          (S
+            (NP-SBJ-1 (-NONE-:[1355..1355] *T*))
+            (VP
+              (VP (VBP:[1356..1362] appear)
+                (S
+                  (NP-SBJ-1 (-NONE-:[1362..1362] *))
+                  (VP (TO:[1363..1365] to)
+                    (VP (VB:[1366..1368] be)
+                      (ADJP-PRD (RB:[1370..1376] highly)
+                                (VBN:[1377..1386] conserved))
+                      (PP (IN:[1387..1392] among)
+                        (NP
+                          (NP (NN:[1393..1396] AOS) (NNS:[1397..1406] sequences))
+                          (PP (IN:[1407..1411] from)
+                            (NP (JJ:[1412..1417] other)
+                                (NNS:[1418..1424] plants)))))))))
+              (CC:[1425..1428] but)
+              (VP (VBP:[1429..1432] are) (RB:[1433..1436] not)
+                (VP (VBN:[1437..1446] conserved)
+                  (NP-1 (-NONE-:[1446..1446] *))
+                  (PP (IN:[1448..1453] among)
+                    (NP
+                      (NML (``:[1454..1455] ") (JJ:[1455..1464] classical)
+                           ('':[1464..1465] ") (NN:[1466..1470] type))
+                      (NNS:[1471..1476] P450s))))))))))
+    (.:[1476..1477] .)))
+
+;sentence 11 Span:1478..1523
+;The role of these serine residues is unclear.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1478..1481] The) (NN:[1482..1486] role))
+      (PP (IN:[1487..1489] of)
+        (NP (DT:[1490..1495] these) (NN:[1496..1502] serine)
+            (NNS:[1503..1511] residues))))
+    (VP (VBZ:[1512..1514] is)
+      (ADJP-PRD (JJ:[1515..1522] unclear)))
+    (.:[1522..1523] .)))
+
+;sentence 12 Span:1525..1773
+;Unlike animal COX, where acetylation of a single serine residue within the 
+;substrate channel leads to inactivation of prostaglandin endoperoxide H 
+;synthase, the three serine residues in AOS are not thought to line the
+;putative  substrate channel.
+;[1539..1542]:substance:"COX"
+;[1644..1682]:substance:"prostaglandin endoperoxide H  synthase"
+;[1713..1716]:cyp450:"AOS"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1525..1525] *))
+      (ADJP-PRD (IN:[1525..1531] Unlike)
+        (NP
+          (NP (NN:[1532..1538] animal) (NN:[1539..1542] COX))
+          (,:[1542..1543] ,)
+          (SBAR
+            (WHADVP-1 (WRB:[1544..1549] where))
+            (S
+              (NP-SBJ
+                (NP (NN:[1550..1561] acetylation))
+                (PP (IN:[1562..1564] of)
+                  (NP
+                    (NP (DT:[1565..1566] a) (JJ:[1567..1573] single)
+                        (NN:[1574..1580] serine) (NN:[1581..1588] residue))
+                    (PP-LOC (IN:[1589..1595] within)
+                      (NP (DT:[1596..1599] the) (NN:[1601..1610] substrate)
+                          (NN:[1611..1618] channel))))))
+              (VP (VBZ:[1619..1624] leads)
+                (PP-CLR (TO:[1625..1627] to)
+                  (NP
+                    (NP (NN:[1628..1640] inactivation))
+                    (PP (IN:[1641..1643] of)
+                      (NP (NN:[1644..1657] prostaglandin)
+                          (NN:[1658..1670] endoperoxide) (NN:[1671..1672] H)
+                          (NN:[1674..1682] synthase)))))
+                (ADVP-1 (-NONE-:[1682..1682] *T*))))))))
+    (,:[1682..1683] ,)
+    (NP-SBJ-2
+      (NP (DT:[1684..1687] the) (CD:[1688..1693] three) (NN:[1694..1700] serine)
+          (NNS:[1701..1709] residues))
+      (PP (IN:[1710..1712] in)
+        (NP (NN:[1713..1716] AOS))))
+    (VP (VBP:[1717..1720] are) (RB:[1721..1724] not)
+      (VP (VBN:[1725..1732] thought)
+        (S
+          (NP-SBJ-2 (-NONE-:[1732..1732] *))
+          (VP (TO:[1733..1735] to)
+            (VP (VB:[1736..1740] line)
+              (NP (DT:[1741..1744] the) (JJ:[1745..1753] putative)
+                  (NN:[1755..1764] substrate) (NN:[1765..1772] channel)))))))
+    (.:[1772..1773] .)))
+
+;sentence 13 Span:1774..1834
+;Thus, inhibition by aspirin may be by a different mechanism.
+;[1794..1801]:substance:"aspirin"
+(SENT
+  (S
+    (ADVP (RB:[1774..1778] Thus))
+    (,:[1778..1779] ,)
+    (NP-SBJ
+      (NP (NN:[1780..1790] inhibition))
+      (PP (IN:[1791..1793] by)
+        (NP (NN:[1794..1801] aspirin))))
+    (VP (MD:[1802..1805] may)
+      (VP (VB:[1806..1808] be)
+        (PP-PRD (IN:[1809..1811] by)
+          (NP (DT:[1812..1813] a) (JJ:[1814..1823] different)
+              (NN:[1824..1833] mechanism)))))
+    (.:[1833..1834] .)))
+
+;sentence 14 Span:1836..2023
+;It is possible that aspirin and related NSAIDs could inhibit other P450s that
+; have motifs similar to AOS and consequently serve as potential biochemical 
+;targets for this class of drugs.
+;[1856..1863]:substance:"aspirin"
+;[1876..1882]:substance:"NSAIDs"
+;[1903..1908]:cyp450:"P450s"
+;[1938..1941]:cyp450:"AOS"
+;[2017..2022]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1836..1838] It))
+    (VP (VBZ:[1839..1841] is)
+      (ADJP-PRD (JJ:[1842..1850] possible)
+        (SBAR (IN:[1851..1855] that)
+          (S
+            (NP-SBJ
+              (NP (NN:[1856..1863] aspirin))
+              (CC:[1864..1867] and)
+              (NP (VBN:[1868..1875] related) (NNS:[1876..1882] NSAIDs)))
+            (VP (MD:[1883..1888] could)
+              (VP
+                (VP (VB:[1889..1896] inhibit)
+                  (NP
+                    (NP (JJ:[1897..1902] other) (NNS:[1903..1908] P450s))
+                    (SBAR
+                      (WHNP-1 (WDT:[1909..1913] that))
+                      (S
+                        (NP-SBJ-1 (-NONE-:[1913..1913] *T*))
+                        (VP (VBP:[1915..1919] have)
+                          (NP
+                            (NP (NNS:[1920..1926] motifs))
+                            (ADJP (JJ:[1927..1934] similar)
+                              (PP (TO:[1935..1937] to)
+                                (NP (NN:[1938..1941] AOS))))))))))
+                (CC:[1942..1945] and)
+                (VP
+                  (ADVP (RB:[1946..1958] consequently))
+                  (VB:[1959..1964] serve)
+                  (PP (IN:[1965..1967] as)
+                    (NP
+                      (NP (JJ:[1968..1977] potential)
+                          (JJ:[1978..1989] biochemical)
+                          (NNS:[1991..1998] targets))
+                      (PP (IN:[1999..2002] for)
+                        (NP
+                          (NP (DT:[2003..2007] this) (NN:[2008..2013] class))
+                          (PP (IN:[2014..2016] of)
+                            (NP (NNS:[2017..2022] drugs))))))))))))))
+    (.:[2022..2023] .)))
+
+;section 15 Span:2027..2071
+;PMID: 9660772 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2027..2031] PMID) (::[2031..2032] :) (CD:[2033..2040] 9660772)
+        (NN:[2041..2042] -LSB-) (NNP:[2042..2048] PubMed) (::[2049..2050] -)
+        (NN:[2051..2058] indexed) (IN:[2059..2062] for)
+        (NNP:[2063..2071] MEDLINE-RSB-)))

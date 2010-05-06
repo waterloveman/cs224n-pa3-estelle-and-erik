@@ -1,0 +1,448 @@
+;PMID: 10341997
+;source_file_1941.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..47] = [t:0..47]
+;1)sentence:[e:53..126] = [t:53..126]
+;2)section:[e:130..174] = [t:130..174]
+;3)section:[e:178..237] = [t:178..237]
+;4)sentence:[e:241..252] = [t:241..252]
+;5)sentence:[e:253..375] = [t:253..375]
+;6)sentence:[e:376..508] = [t:376..508]
+;7)sentence:[e:509..517] = [t:509..517]
+;8)sentence:[e:518..755] = [t:518..755]
+;9)sentence:[e:756..876] = [t:756..876]
+;10)sentence:[e:877..957] = [t:877..957]
+;11)sentence:[e:958..1135] = [t:958..1135]
+;12)sentence:[e:1136..1144] = [t:1136..1144]
+;13)sentence:[e:1145..1271] = [t:1145..1271]
+;14)sentence:[e:1272..1336] = [t:1272..1336]
+;15)sentence:[e:1338..1448] = [t:1338..1448]
+;16)sentence:[e:1449..1460] = [t:1449..1460]
+;17)sentence:[e:1461..1612] = [t:1461..1612]
+;18)section:[e:1616..1661] = [t:1616..1661]
+
+;section 0 Span:0..47
+;Acta Anaesthesiol Scand. 1999 May;43(5):509-14.
+(SEC
+  (FRAG (NNP:[0..4] Acta) (NNP:[5..17] Anaesthesiol) (NNP:[18..23] Scand)
+        (.:[23..24] .) (CD:[25..29] 1999) (NNP:[30..33] May) (CD:[33..36] ;43)
+        (-LRB-:[36..37] -LRB-) (CD:[37..38] 5) (-RRB-:[38..39] -RRB-)
+        (::[39..40] :) (CD:[40..43] 509) (::[43..44] -) (CD:[44..46] 14)
+        (.:[46..47] .)))
+
+;sentence 1 Span:53..126
+;Interaction between fluconazole and midazolam in intensive care patients.
+;[73..84]:substance:"fluconazole"
+;[89..98]:substance:"midazolam"
+(SENT
+  (NP-HLN
+    (NP (NN:[53..64] Interaction))
+    (PP (IN:[65..72] between)
+      (NP (NN:[73..84] fluconazole) (CC:[85..88] and) (NN:[89..98] midazolam)))
+    (PP-LOC (IN:[99..101] in)
+      (NP
+        (NML (JJ:[102..111] intensive) (NN:[112..116] care))
+        (NNS:[117..125] patients)))
+    (.:[125..126] .)))
+
+;section 2 Span:130..174
+;Ahonen J, Olkkola KT, Takala A, Neuvonen PJ.
+(SEC
+  (FRAG (NNP:[130..136] Ahonen) (NNP:[137..139] J,) (NNP:[140..147] Olkkola)
+        (NNP:[148..150] KT) (,:[150..151] ,) (NNP:[152..158] Takala)
+        (NNP:[159..160] A) (,:[160..161] ,) (NNP:[162..170] Neuvonen)
+        (NNP:[171..174] PJ.)))
+
+;section 3 Span:178..237
+;Department of Anaesthesia, University of Helsinki, Finland.
+(SEC
+  (FRAG (NNP:[178..188] Department) (IN:[189..191] of)
+        (NNP:[192..203] Anaesthesia) (,:[203..204] ,)
+        (NNP:[205..215] University) (IN:[216..218] of) (NNP:[219..227] Helsinki)
+        (,:[227..228] ,) (NNP:[229..236] Finland) (.:[236..237] .)))
+
+;sentence 4 Span:241..252
+;BACKGROUND:
+(SENT
+  (NP (NN:[241..251] BACKGROUND) (::[251..252] :)))
+
+;sentence 5 Span:253..375
+;Midazolam is used for sedation of intensive care unit (ICU) patients  and it
+;is extensively metabolised by CYP3A4 enzymes.
+;[253..262]:substance:"Midazolam"
+;[360..374]:cyp450:"CYP3A4 enzymes"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[253..262] Midazolam))
+      (VP (VBZ:[263..265] is)
+        (VP (VBN:[266..270] used)
+          (NP-1 (-NONE-:[270..270] *))
+          (PP (IN:[271..274] for)
+            (NP
+              (NP (NN:[275..283] sedation))
+              (PP (IN:[284..286] of)
+                (NP
+                  (NML
+                    (NML (JJ:[287..296] intensive) (NN:[297..301] care)
+                         (NN:[302..306] unit))
+                    (NML (-LRB-:[307..308] -LRB-) (NN:[308..311] ICU)
+                         (-RRB-:[311..312] -RRB-)))
+                  (NNS:[313..321] patients))))))))
+    (CC:[323..326] and)
+    (S
+      (NP-SBJ-2 (PRP:[327..329] it))
+      (VP (VBZ:[330..332] is)
+        (VP
+          (ADVP (RB:[333..344] extensively))
+          (VBN:[345..356] metabolised)
+          (NP-2 (-NONE-:[356..356] *))
+          (PP (IN:[357..359] by)
+            (NP-LGS (NN:[360..366] CYP3A4) (NNS:[367..374] enzymes))))))
+    (.:[374..375] .)))
+
+;sentence 6 Span:376..508
+;The antimycotic fluconazole  is often used in these patients as well and has
+;been shown to inhibit  CYP3A4-mediated drug metabolism.
+;[380..391]:substance:"antimycotic"
+;[392..403]:substance:"fluconazole"
+;[476..482]:cyp450:"CYP3A4"
+;[492..496]:substance:"drug"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[376..379] The) (JJ:[380..391] antimycotic)
+              (NN:[392..403] fluconazole))
+    (VP
+      (VP (VBZ:[405..407] is)
+        (ADVP (RB:[408..413] often))
+        (VP (VBN:[414..418] used)
+          (NP-1 (-NONE-:[418..418] *))
+          (PP-LOC (IN:[419..421] in)
+            (NP (DT:[422..427] these) (NNS:[428..436] patients)))
+          (ADVP (RB:[437..439] as) (RB:[440..444] well))))
+      (CC:[445..448] and)
+      (VP (VBZ:[449..452] has)
+        (VP (VBN:[453..457] been)
+          (VP (VBN:[458..463] shown)
+            (S
+              (NP-SBJ-1 (-NONE-:[463..463] *))
+              (VP (TO:[464..466] to)
+                (VP (VB:[467..474] inhibit)
+                  (NP
+                    (ADJP (NN:[476..482] CYP3A4) (HYPH:[482..483] -)
+                          (VBN:[483..491] mediated))
+                    (NN:[492..496] drug) (NN:[497..507] metabolism)))))))))
+    (.:[507..508] .)))
+
+;sentence 7 Span:509..517
+;METHODS:
+(SENT
+  (NP (NNS:[509..516] METHODS) (::[516..517] :)))
+
+;sentence 8 Span:518..755
+;In a study of the effect of  fluconazole on midazolam in the ICU, ten
+;mechanically ventilated patients (age  29 to 61 years, 8 male) sedated with a
+;stable midazolam infusion were enrolled  after a decision to start
+;fluconazole treatment.
+;[547..558]:substance:"fluconazole"
+;[562..571]:substance:"midazolam"
+;[627..635]:quantitative-value:"29 to 61"
+;[636..641]:quantitative-units:"years"
+;[673..682]:substance:"midazolam"
+;[733..744]:substance:"fluconazole"
+(SENT
+  (S
+    (PP (IN:[518..520] In)
+      (NP
+        (NP (DT:[521..522] a) (NN:[523..528] study))
+        (PP (IN:[529..531] of)
+          (NP
+            (NP (DT:[532..535] the) (NN:[536..542] effect))
+            (NP (IN:[543..545] of)
+              (NP (NN:[547..558] fluconazole)))
+            (PP (IN:[559..561] on)
+              (NP (NN:[562..571] midazolam)))
+            (PP-LOC (IN:[572..574] in)
+              (NP (DT:[575..578] the) (NN:[579..582] ICU)))))))
+    (,:[582..583] ,)
+    (NP-SBJ-1
+      (NP (CD:[584..587] ten)
+        (ADVP (RB:[588..600] mechanically) (VBN:[601..611] ventilated))
+        (NNS:[612..620] patients))
+      (PRN (-LRB-:[621..622] -LRB-)
+        (FRAG
+          (NP
+            (NP (NN:[622..625] age))
+            (NP
+              (QP (CD:[627..629] 29) (TO:[630..632] to) (CD:[633..635] 61))
+              (NNS:[636..641] years)))
+          (,:[641..642] ,)
+          (NP (CD:[643..644] 8) (JJ:[645..649] male)))
+        (-RRB-:[649..650] -RRB-))
+      (VP (VBN:[651..658] sedated)
+        (NP (-NONE-:[658..658] *))
+        (PP (IN:[659..663] with)
+          (NP (DT:[664..665] a) (JJ:[666..672] stable) (NN:[673..682] midazolam)
+              (NN:[683..691] infusion)))))
+    (VP (VBD:[692..696] were)
+      (VP (VBN:[697..705] enrolled)
+        (NP-1 (-NONE-:[705..705] *))
+        (PP-TMP (IN:[707..712] after)
+          (NP (DT:[713..714] a) (NN:[715..723] decision)
+            (S
+              (NP-SBJ (-NONE-:[723..723] *))
+              (VP (TO:[724..726] to)
+                (VP (VB:[727..732] start)
+                  (NP (NN:[733..744] fluconazole) (NN:[745..754] treatment)))))))))
+    (.:[754..755] .)))
+
+;sentence 9 Span:756..876
+;Fluconazole was infused for 30  min at intervals of 24 h, with an initial
+;dose of 400 mg and following doses of  200 mg.
+;[756..767]:substance:"Fluconazole"
+;[784..786]:quantitative-value:"30"
+;[788..791]:quantitative-units:"min"
+;[808..810]:quantitative-value:"24"
+;[811..812]:quantitative-units:"h"
+;[838..841]:quantitative-value:"400"
+;[842..844]:quantitative-units:"mg"
+;[869..872]:quantitative-value:"200"
+;[873..875]:quantitative-units:"mg"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[756..767] Fluconazole))
+    (VP (VBD:[768..771] was)
+      (VP (VBN:[772..779] infused)
+        (NP-1 (-NONE-:[779..779] *))
+        (PP-TMP (IN:[780..783] for)
+          (NP (CD:[784..786] 30) (NN:[788..791] min)))
+        (PP (IN:[792..794] at)
+          (NP
+            (NP (NNS:[795..804] intervals))
+            (PP (IN:[805..807] of)
+              (NP (CD:[808..810] 24) (NN:[811..812] h)))))
+        (,:[812..813] ,)
+        (PP (IN:[814..818] with)
+          (NP
+            (NP
+              (NP (DT:[819..821] an) (JJ:[822..829] initial)
+                  (NN:[830..834] dose))
+              (PP (IN:[835..837] of)
+                (NP (CD:[838..841] 400) (NN:[842..844] mg))))
+            (CC:[845..848] and)
+            (NP
+              (NP (VBG:[849..858] following) (NNS:[859..864] doses))
+              (PP (IN:[865..867] of)
+                (NP (CD:[869..872] 200) (NN:[873..875] mg))))))))
+    (.:[875..876] .)))
+
+;sentence 10 Span:877..957
+;The midazolam infusion rate remained unchanged during the study period  of 48
+;h.
+;[881..890]:substance:"midazolam"
+;[952..954]:quantitative-value:"48"
+;[955..956]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ (DT:[877..880] The) (NN:[881..890] midazolam)
+            (NN:[891..899] infusion) (NN:[900..904] rate))
+    (VP (VBD:[905..913] remained)
+      (ADJP-PRD (JJ:[914..923] unchanged))
+      (PP-TMP (IN:[924..930] during)
+        (NP
+          (NP (DT:[931..934] the) (NN:[935..940] study) (NN:[941..947] period))
+          (PP (IN:[949..951] of)
+            (NP (CD:[952..954] 48) (NN:[955..956] h))))))
+    (.:[956..957] .)))
+
+;sentence 11 Span:958..1135
+;Plasma concentrations of midazolam, alpha-hydroxymidazolam, and 
+;alpha-hydroxymidazolam conjugate were determined at baseline, and at 6, 12,
+;18,  24, 36, and at 48 h thereafter.
+;[983..992]:substance:"midazolam"
+;[994..1016]:substance:"alpha-hydroxymidazolam"
+;[1023..1055]:substance:"alpha-hydroxymidazolam conjugate"
+;[1092..1093]:quantitative-value:"6"
+;[1095..1097]:quantitative-value:"12"
+;[1099..1101]:quantitative-value:"18"
+;[1104..1106]:quantitative-value:"24"
+;[1108..1110]:quantitative-value:"36"
+;[1119..1121]:quantitative-value:"48"
+;[1122..1123]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[958..964] Plasma) (NNS:[965..979] concentrations))
+      (PP (IN:[980..982] of)
+        (NP
+          (NP (NN:[983..992] midazolam))
+          (,:[992..993] ,)
+          (NP (NN:[994..1016] alpha-hydroxymidazolam))
+          (,:[1016..1017] ,) (CC:[1018..1021] and)
+          (NP (NN:[1023..1045] alpha-hydroxymidazolam)
+              (NN:[1046..1055] conjugate)))))
+    (VP (VBD:[1056..1060] were)
+      (VP (VBN:[1061..1071] determined)
+        (NP-2 (-NONE-:[1071..1071] *))
+        (PP-TMP
+          (PP (IN:[1072..1074] at)
+            (NP (NN:[1075..1083] baseline)))
+          (,:[1083..1084] ,) (CC:[1085..1088] and)
+          (PP (IN:[1089..1091] at)
+            (NP
+              (NP (CD:[1092..1093] 6)
+                (NML-1 (-NONE-:[1093..1093] *P*)))
+              (,:[1093..1094] ,)
+              (NP (CD:[1095..1097] 12)
+                (NML-1 (-NONE-:[1097..1097] *P*)))
+              (,:[1097..1098] ,)
+              (NP (CD:[1099..1101] 18)
+                (NML-1 (-NONE-:[1101..1101] *P*)))
+              (,:[1101..1102] ,)
+              (NP (CD:[1104..1106] 24)
+                (NML-1 (-NONE-:[1106..1106] *P*)))
+              (,:[1106..1107] ,)
+              (NP (CD:[1108..1110] 36)
+                (NML-1 (-NONE-:[1110..1110] *P*)))
+              (,:[1110..1111] ,)))
+          (CC:[1112..1115] and)
+          (PP (IN:[1116..1118] at)
+            (NP (CD:[1119..1121] 48)
+              (NML-1 (NN:[1122..1123] h))))
+          (ADVP (RB:[1124..1134] thereafter)))))
+    (.:[1134..1135] .)))
+
+;sentence 12 Span:1136..1144
+;RESULTS:
+(SENT
+  (NML (NNS:[1136..1143] RESULTS) (::[1143..1144] :)))
+
+;sentence 13 Span:1145..1271
+;Concentrations of midazolam were  significantly increased (range 0 to 4-fold,
+;P < 0.05) after start of fluconazole  treatment.
+;[1163..1172]:substance:"midazolam"
+;[1210..1221]:quantitative-value:"0 to 4-fold"
+;[1248..1259]:substance:"fluconazole"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[1145..1159] Concentrations))
+      (PP (IN:[1160..1162] of)
+        (NP (NN:[1163..1172] midazolam))))
+    (VP (VBD:[1173..1177] were)
+      (ADVP (RB:[1179..1192] significantly))
+      (VP (VBN:[1193..1202] increased)
+        (NP-1 (-NONE-:[1202..1202] *))
+        (PRN (-LRB-:[1203..1204] -LRB-)
+          (FRAG
+            (NP
+              (NP (NN:[1204..1209] range))
+              (QP
+                (QP (CD:[1210..1211] 0) (TO:[1212..1214] to) (CD:[1215..1216] 4))
+                (HYPH:[1216..1217] -) (RB:[1217..1221] fold)))
+            (,:[1221..1222] ,)
+            (S
+              (NP-SBJ (NN:[1223..1224] P))
+              (VP (SYM:[1225..1226] <)
+                (NP (CD:[1227..1231] 0.05)))))
+          (-RRB-:[1231..1232] -RRB-))
+        (PP-TMP (IN:[1233..1238] after)
+          (NP
+            (NP (NN:[1239..1244] start))
+            (PP (IN:[1245..1247] of)
+              (NP (NN:[1248..1259] fluconazole) (NN:[1261..1270] treatment)))))))
+    (.:[1270..1271] .)))
+
+;sentence 14 Span:1272..1336
+;These increases were most marked in patients with renal failure.
+(SENT
+  (S
+    (NP-SBJ (DT:[1272..1277] These) (NNS:[1278..1287] increases))
+    (VP (VBD:[1288..1292] were)
+      (ADJP-PRD
+        (ADVP (RBS:[1293..1297] most))
+        (VBN:[1298..1304] marked))
+      (PP-LOC (IN:[1305..1307] in)
+        (NP
+          (NP (NNS:[1308..1316] patients))
+          (PP (IN:[1317..1321] with)
+            (NP (JJ:[1322..1327] renal) (NN:[1328..1335] failure))))))
+    (.:[1335..1336] .)))
+
+;sentence 15 Span:1338..1448
+;During the study period, the ratio of alpha-hydroxymidazolam to midazolam 
+;decreased progressively (P < 0.05).
+;[1376..1398]:substance:"alpha-hydroxymidazolam"
+;[1402..1411]:substance:"midazolam"
+(SENT
+  (S
+    (PP-TMP (IN:[1338..1344] During)
+      (NP (DT:[1345..1348] the) (NN:[1349..1354] study) (NN:[1355..1361] period)))
+    (,:[1361..1362] ,)
+    (NP-SBJ
+      (NP (DT:[1363..1366] the) (NN:[1367..1372] ratio))
+      (PP (IN:[1373..1375] of)
+        (NP (NN:[1376..1398] alpha-hydroxymidazolam)))
+      (PP (TO:[1399..1401] to)
+        (NP (NN:[1402..1411] midazolam))))
+    (VP (VBD:[1413..1422] decreased)
+      (ADVP (RB:[1423..1436] progressively))
+      (PRN (-LRB-:[1437..1438] -LRB-)
+        (S
+          (NP-SBJ (NN:[1438..1439] P))
+          (VP (SYM:[1440..1441] <)
+            (NP (CD:[1442..1446] 0.05))))
+        (-RRB-:[1446..1447] -RRB-)))
+    (.:[1447..1448] .)))
+
+;sentence 16 Span:1449..1460
+;CONCLUSION:
+(SENT
+  (NP (NN:[1449..1459] CONCLUSION) (::[1459..1460] :)))
+
+;sentence 17 Span:1461..1612
+;In ICU patients receiving  fluconazole, reduction of midazolam infusion rate
+;should be considered if the  degree of sedation is found to be increasing.
+;[1488..1499]:substance:"fluconazole"
+;[1514..1523]:substance:"midazolam"
+(SENT
+  (S
+    (PP-LOC (IN:[1461..1463] In)
+      (NP
+        (NP (NN:[1464..1467] ICU) (NNS:[1468..1476] patients))
+        (VP (VBG:[1477..1486] receiving)
+          (NP (NN:[1488..1499] fluconazole)))))
+    (,:[1499..1500] ,)
+    (NP-SBJ-2
+      (NP (NN:[1501..1510] reduction))
+      (PP (IN:[1511..1513] of)
+        (NP (NN:[1514..1523] midazolam) (NN:[1524..1532] infusion)
+            (NN:[1533..1537] rate))))
+    (VP (MD:[1538..1544] should)
+      (VP (VB:[1545..1547] be)
+        (VP (VBN:[1548..1558] considered)
+          (NP-2 (-NONE-:[1558..1558] *))
+          (SBAR-ADV (IN:[1559..1561] if)
+            (S
+              (NP-SBJ-1
+                (NP (DT:[1562..1565] the) (NN:[1567..1573] degree))
+                (PP (IN:[1574..1576] of)
+                  (NP (NN:[1577..1585] sedation))))
+              (VP (VBZ:[1586..1588] is)
+                (VP (VBN:[1589..1594] found)
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1594..1594] *))
+                    (VP (TO:[1595..1597] to)
+                      (VP (VB:[1598..1600] be)
+                        (VP (VBG:[1601..1611] increasing))))))))))))
+    (.:[1611..1612] .)))
+
+;section 18 Span:1616..1661
+;PMID: 10341997 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1616..1620] PMID) (::[1620..1621] :) (CD:[1622..1630] 10341997)
+        (NN:[1631..1632] -LSB-) (NNP:[1632..1638] PubMed) (::[1639..1640] -)
+        (NN:[1641..1648] indexed) (IN:[1649..1652] for)
+        (NNP:[1653..1661] MEDLINE-RSB-)))

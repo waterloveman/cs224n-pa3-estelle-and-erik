@@ -1,0 +1,268 @@
+;PMID: 10402253
+;source_file_1214.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:38..159] = [t:38..159]
+;2)section:[e:163..211] = [t:163..211]
+;3)section:[e:215..310] = [t:215..310]
+;4)sentence:[e:314..485] = [t:314..485]
+;5)sentence:[e:486..631] = [t:486..631]
+;6)sentence:[e:633..879] = [t:633..879]
+;7)sentence:[e:880..1095] = [t:880..1095]
+;8)section:[e:1099..1144] = [t:1099..1144]
+
+;section 0 Span:0..33
+;Int J Oncol  1999 Aug;15(2):391-8
+(SEC
+  (FRAG (NNP:[0..3] Int) (NNP:[4..5] J) (NNP:[6..11] Oncol) (CD:[13..17] 1999)
+        (.:[18..25] Aug;15-LRB-) (CD:[25..26] 2) (-RRB-:[26..27] -RRB-)
+        (CD:[27..31] :391) (::[31..32] -) (CD:[32..33] 8)))
+
+;sentence 1 Span:38..159
+;Sampling technique influences the detection of K-ras mutations in normal 
+;appearing mucosa of colorectal cancer patients.
+;[85..90]:gene-rna:"K-ras"
+;[132..149]:malignancy:"colorectal cancer"
+(SENT
+  (S
+    (S-NOM-SBJ
+      (NP-SBJ (-NONE-:[38..38] *))
+      (VP (VBG:[38..46] Sampling)
+        (NP (NN:[47..56] technique))))
+    (VP (VBZ:[57..67] influences)
+      (NP
+        (NP (DT:[68..71] the) (NN:[72..81] detection))
+        (PP (IN:[82..84] of)
+          (NP (NN:[85..90] K-ras) (NNS:[91..100] mutations)))
+        (PP-LOC (IN:[101..103] in)
+          (NP
+            (NP
+              (ADJP (JJ:[104..110] normal) (VBG:[112..121] appearing))
+              (NN:[122..128] mucosa))
+            (PP (IN:[129..131] of)
+              (NP
+                (NML (JJ:[132..142] colorectal) (NN:[143..149] cancer))
+                (NNS:[150..158] patients)))))))
+    (.:[158..159] .)))
+
+;section 2 Span:163..211
+;Schimanski CC, Sutter C, Linnemann U, Berger MR.
+(SEC
+  (FRAG (NNP:[163..173] Schimanski) (NNP:[174..176] CC) (,:[176..177] ,)
+        (NNP:[178..184] Sutter) (NNP:[185..186] C) (,:[186..187] ,)
+        (NNP:[188..197] Linnemann) (NNP:[198..199] U) (,:[199..200] ,)
+        (NNP:[201..207] Berger) (NNP:[208..210] MR) (.:[210..211] .)))
+
+;section 3 Span:215..310
+;Unit of Toxicology and Chemotherapy, German Cancer Research Centre, 69120 
+;Heidelberg, Germany.
+(SEC
+  (FRAG (NNP:[215..219] Unit) (IN:[220..222] of) (NNP:[223..233] Toxicology)
+        (CC:[234..237] and) (NNP:[238..250] Chemotherapy) (,:[250..251] ,)
+        (NNP:[252..258] German) (NNP:[259..265] Cancer)
+        (NNP:[266..274] Research) (NNP:[275..281] Centre) (,:[281..282] ,)
+        (CD:[283..288] 69120) (NNP:[290..300] Heidelberg) (,:[300..301] ,)
+        (NNP:[302..309] Germany) (.:[309..310] .)))
+
+;sentence 4 Span:314..485
+;Based on three colorectal cancer cell lines with specified K-ras status, a 
+;sensitive PCR-RFLP assay was established detecting one K-ras mutant among 106
+; wild-type cells.
+;[329..357]:malignancy:"colorectal cancer cell lines"
+;[373..378]:gene-rna:"K-ras"
+;[445..450]:gene-rna:"K-ras"
+(SENT
+  (S
+    (PP (VBN:[314..319] Based)
+      (PP (IN:[320..322] on)
+        (NP
+          (NP (CD:[323..328] three)
+             (JJ:[329..339] colorectal) (NN:[340..346] cancer)
+             (NN:[347..351] cell) (NN:[352..357] lines))
+          (PP (IN:[358..362] with)
+            (NP (VBN:[363..372] specified) (NN:[373..378] K-ras)
+                (NN:[379..385] status))))))
+    (,:[385..386] ,)
+    (NP-SBJ-1 (DT:[387..388] a) (JJ:[390..399] sensitive)
+      (NML (NN:[400..403] PCR) (HYPH:[403..404] -) (NN:[404..408] RFLP))
+      (NN:[409..414] assay))
+    (VP (VBD:[415..418] was)
+      (VP (VBN:[419..430] established)
+        (NP-1 (-NONE-:[430..430] *))
+        (S-ADV
+          (NP-SBJ (-NONE-:[430..430] *))
+          (VP (VBG:[431..440] detecting)
+            (NP
+              (NP (CD:[441..444] one) (NN:[445..450] K-ras)
+                  (NN:[451..457] mutant))
+              (PP (IN:[458..463] among)
+                (NP (CD:[464..467] 106)
+                  (NML (JJ:[469..473] wild) (HYPH:[473..474] -)
+                       (NN:[474..478] type))
+                  (NNS:[479..484] cells))))))))
+    (.:[484..485] .)))
+
+;sentence 5 Span:486..631
+;Using this assay for tissues of 124 colorectal cancer patients,  59 tumor
+;(46%) and 11 mucosa samples (9%) were found to harbor a K-ras mutation.
+;[522..539]:malignancy:"colorectal cancer"
+;[554..559]:malignancy:"tumor"
+;[616..621]:gene-rna:"K-ras"
+(SENT
+  (S
+    (S-MNR
+      (NP-SBJ (-NONE-:[486..486] *))
+      (VP (VBG:[486..491] Using)
+        (NP
+          (NP (DT:[492..496] this) (NN:[497..502] assay))
+          (PP (IN:[503..506] for)
+            (NP
+              (NP (NNS:[507..514] tissues))
+              (PP (IN:[515..517] of)
+                (NP (CD:[518..521] 124)
+                  (NML (JJ:[522..532] colorectal) (NN:[533..539] cancer))
+                  (NNS:[540..548] patients))))))))
+    (,:[548..549] ,)
+    (NP-SBJ-1
+      (NP (CD:[551..553] 59) (NN:[554..559] tumor)
+        (PRN (-LRB-:[560..561] -LRB-)
+          (NP (CD:[561..563] 46) (NN:[563..564] %))
+          (-RRB-:[564..565] -RRB-)))
+      (CC:[566..569] and)
+      (NP (CD:[570..572] 11) (NN:[573..579] mucosa) (NNS:[580..587] samples)
+        (PRN (-LRB-:[588..589] -LRB-)
+          (NP (CD:[589..590] 9) (NN:[590..591] %))
+          (-RRB-:[591..592] -RRB-))))
+    (VP (VBD:[593..597] were)
+      (VP (VBN:[598..603] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[603..603] *))
+          (VP (TO:[604..606] to)
+            (VP (VB:[607..613] harbor)
+              (NP (DT:[614..615] a) (NN:[616..621] K-ras)
+                  (NN:[622..630] mutation)))))))
+    (.:[630..631] .)))
+
+;sentence 6 Span:633..879
+;When using the same scalpel for collecting tumor and mucosa tissues (group
+;A),  18% of the patients had a matching K-ras mutation in both tissues, but
+;this  coincidence was seen in 3% of patients only, when separate scalpels
+;were used  (group B).
+;[676..681]...[693..700]:malignancy:"tumor"..."tissues"
+;[748..753]:gene-rna:"K-ras"
+(SENT
+  (S
+    (S
+      (SBAR
+        (WHADVP-2 (WRB:[633..637] When))
+        (S
+          (NP-SBJ (-NONE-:[637..637] *))
+          (VP (VBG:[638..643] using)
+            (NP (DT:[644..647] the) (JJ:[648..652] same) (NN:[653..660] scalpel))
+            (PP-PRP (IN:[661..664] for)
+              (S-NOM
+                (NP-SBJ (-NONE-:[664..664] *))
+                (VP (VBG:[665..675] collecting)
+                  (NP
+                    (NP (NN:[676..681] tumor)
+                      (NML-1 (-NONE-:[681..681] *P*)))
+                    (CC:[682..685] and)
+                    (NP (JJ:[686..692] mucosa)
+                      (NML-1 (NNS:[693..700] tissues)))))))
+            (PRN (-LRB-:[701..702] -LRB-)
+              (NP (NN:[702..707] group) (NN:[708..709] A))
+              (-RRB-:[709..710] -RRB-))
+            (ADVP-TMP-2 (-NONE-:[710..710] *T*)))))
+      (,:[710..711] ,)
+      (NP-SBJ
+        (NP (CD:[713..715] 18) (NN:[715..716] %))
+        (PP (IN:[717..719] of)
+          (NP (DT:[720..723] the) (NNS:[724..732] patients))))
+      (VP (VBD:[733..736] had)
+        (NP (DT:[737..738] a) (VBG:[739..747] matching) (NN:[748..753] K-ras)
+            (NN:[754..762] mutation))
+        (PP-LOC (IN:[763..765] in)
+          (NP (DT:[766..770] both) (NNS:[771..778] tissues)))))
+    (,:[778..779] ,) (CC:[780..783] but)
+    (S
+      (NP-SBJ-3 (DT:[784..788] this) (NN:[790..801] coincidence))
+      (VP (VBD:[802..805] was)
+        (VP (VBN:[806..810] seen)
+          (NP-3 (-NONE-:[810..810] *))
+          (PP (IN:[811..813] in)
+            (NP
+              (NP (CD:[814..815] 3) (NN:[815..816] %))
+              (PP (IN:[817..819] of)
+                (NP (NNS:[820..828] patients)))
+              (ADVP (RB:[829..833] only))))
+          (,:[833..834] ,)
+          (SBAR-ADV
+            (WHADVP-5 (WRB:[835..839] when))
+            (S
+              (NP-SBJ-4 (JJ:[840..848] separate) (NNS:[849..857] scalpels))
+              (VP (VBD:[858..862] were)
+                (VP (VBN:[863..867] used)
+                  (NP-4 (-NONE-:[867..867] *))
+                  (PRN (-LRB-:[869..870] -LRB-)
+                    (NP (NN:[870..875] group) (NN:[876..877] B))
+                    (-RRB-:[877..878] -RRB-))
+                  (ADVP-TMP-5 (-NONE-:[878..878] *T*)))))))))
+    (.:[878..879] .)))
+
+;sentence 7 Span:880..1095
+;Thus we conclude that the sampling technique used for collecting  specimens
+;is a major contributor to the detection of K-ras mutations in normal 
+;appearing mucosa when a highly sensitive detection technique is used.
+;[999..1004]:gene-rna:"K-ras"
+(SENT
+  (S
+    (ADVP (RB:[880..884] Thus))
+    (NP-SBJ (PRP:[885..887] we))
+    (VP (VBP:[888..896] conclude)
+      (SBAR (IN:[897..901] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[902..905] the) (VBG:[906..914] sampling)
+                (NN:[915..924] technique))
+            (VP (VBN:[925..929] used)
+              (NP (-NONE-:[929..929] *))
+              (PP (IN:[930..933] for)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[933..933] *))
+                  (VP (VBG:[934..944] collecting)
+                    (NP (NNS:[946..955] specimens)))))))
+          (VP (VBZ:[956..958] is)
+            (NP-PRD
+              (NP (DT:[959..960] a) (JJ:[961..966] major)
+                  (NN:[967..978] contributor))
+              (PP (TO:[979..981] to)
+                (NP
+                  (NP (DT:[982..985] the) (NN:[986..995] detection))
+                  (PP (IN:[996..998] of)
+                    (NP (NN:[999..1004] K-ras) (NNS:[1005..1014] mutations)))
+                  (PP (IN:[1015..1017] in)
+                    (NP
+                      (ADJP (JJ:[1018..1024] normal)
+                            (VBG:[1026..1035] appearing))
+                      (NN:[1036..1042] mucosa))))))
+            (SBAR
+              (WHADVP-2 (WRB:[1043..1047] when))
+              (S
+                (NP-SBJ-1 (DT:[1048..1049] a)
+                  (ADJP (RB:[1050..1056] highly) (JJ:[1057..1066] sensitive))
+                  (NN:[1067..1076] detection) (NN:[1077..1086] technique))
+                (VP (VBZ:[1087..1089] is)
+                  (VP (VBN:[1090..1094] used)
+                    (NP-1 (-NONE-:[1094..1094] *))
+                    (ADVP-TMP-2 (-NONE-:[1094..1094] *T*))))))))))
+    (.:[1094..1095] .)))
+
+;section 8 Span:1099..1144
+;PMID: 10402253 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1099..1103] PMID) (::[1103..1104] :) (CD:[1105..1113] 10402253)
+        (NN:[1114..1115] -LSB-) (NNP:[1115..1121] PubMed) (::[1122..1123] -)
+        (NN:[1124..1131] indexed) (IN:[1132..1135] for)
+        (NNP:[1136..1144] MEDLINE-RSB-)))

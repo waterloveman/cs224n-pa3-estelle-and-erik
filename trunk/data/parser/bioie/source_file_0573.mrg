@@ -1,0 +1,586 @@
+;PMID: 12355562
+;source_file_875.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..42] = [t:0..42]
+;1)sentence:[e:48..142] = [t:48..142]
+;2)section:[e:146..231] = [t:146..231]
+;3)section:[e:235..362] = [t:235..362]
+;4)sentence:[e:366..564] = [t:366..564]
+;5)sentence:[e:565..720] = [t:565..720]
+;6)sentence:[e:721..875] = [t:721..875]
+;7)sentence:[e:876..1078] = [t:876..1078]
+;8)sentence:[e:1079..1268] = [t:1079..1268]
+;9)sentence:[e:1269..1415] = [t:1269..1415]
+;10)sentence:[e:1416..1546] = [t:1416..1546]
+;11)sentence:[e:1547..1765] = [t:1547..1765]
+;12)sentence:[e:1766..1951] = [t:1766..1951]
+;13)sentence:[e:1952..2143] = [t:1952..2143]
+;14)section:[e:2144..2182] = [t:2144..2182]
+;15)section:[e:2186..2231] = [t:2186..2231]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[876..877] R
+;ERROR_Token in entity file but not tree[877..878] ,
+;ERROR_Token in entity file but not tree[878..879] S
+;ERROR_Token in entity file but not tree[879..880] -
+;ERROR_Token in entity file but not tree[880..888] Warfarin
+;ERROR_Token in entity file but not tree[2089..2091] wt
+;ERROR_Token in entity file but not tree[2091..2092] .
+;ERROR_Token in tree file but not entity[876..888] R,S-Warfarin
+;ERROR_Token in tree file but not entity[2089..2092] wt.
+
+;section 0 Span:0..42
+;J Appl Toxicol. 2002 Sep-Oct;22(5):327-32.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..6] Appl) (NNP:[7..14] Toxicol) (.:[14..15] .)
+        (``:[16..20] 2002) (NNP:[21..24] Sep) (::[24..25] -)
+        (CC:[25..32] Oct;22-LRB-) (CD:[32..33] 5) (-RRB-:[33..34] -RRB-)
+        (CD:[34..38] :327) (::[38..39] -) (CD:[39..41] 32) (.:[41..42] .)))
+
+;sentence 1 Span:48..142
+;In vivo effect of 5- and 8-methoxypsoralens and cimetidine on R,S-warfarin 
+;metabolism in rat.
+;[66..68]...[75..91]:substance:"5-"..."methoxypsoralens"
+;[73..91]:substance:"8-methoxypsoralens"
+;[96..106]:substance:"cimetidine"
+;[110..122]:substance:"R,S-warfarin"
+(SENT
+  (NP-HLN
+    (NP
+      (ADJP (FW:[48..50] In) (FW:[51..55] vivo))
+      (NN:[56..62] effect))
+    (PP (IN:[63..65] of)
+      (NP
+        (NP
+          (NML (CD:[66..67] 5) (HYPH:[67..68] -)
+            (NML-1 (-NONE-:[68..68] *P*)))
+          (CC:[69..72] and)
+          (NML (CD:[73..74] 8) (HYPH:[74..75] -)
+            (NML-1 (NNS:[75..91] methoxypsoralens))))
+        (CC:[92..95] and)
+        (NP (NN:[96..106] cimetidine))))
+    (PP (IN:[107..109] on)
+      (NP (NN:[110..122] R,S-warfarin) (NN:[124..134] metabolism)))
+    (PP-LOC (IN:[135..137] in)
+      (NP (NN:[138..141] rat)))
+    (.:[141..142] .)))
+
+;section 2 Span:146..231
+;Szutowski MM, Lukasik M, Wawer ZT, Chrobak K, Michalska M, Borzecka K, 
+;Brzezinski J.
+(SEC
+  (FRAG (NNP:[146..155] Szutowski) (NNP:[156..158] MM) (,:[158..159] ,)
+        (NNP:[160..167] Lukasik) (NNP:[168..170] M,) (NNP:[171..176] Wawer)
+        (NNP:[177..179] ZT) (,:[179..180] ,) (NNP:[181..188] Chrobak)
+        (NNP:[189..190] K) (,:[190..191] ,) (NNP:[192..201] Michalska)
+        (NNP:[202..204] M,) (NNP:[205..213] Borzecka) (NNP:[214..215] K)
+        (,:[215..216] ,) (NNP:[218..228] Brzezinski) (NNP:[229..231] J.)))
+
+;section 3 Span:235..362
+;Department of Toxicology, The Medical University of Warsaw, 1 Banacha Street,
+; 02-097 Warsaw, Poland. mszutow@farm.amwaw.edu.pl
+(SEC
+  (FRAG (NNP:[235..245] Department) (IN:[246..248] of)
+        (NNP:[249..259] Toxicology) (,:[259..260] ,) (DT:[261..264] The)
+        (NNP:[265..272] Medical) (NNP:[273..283] University) (IN:[284..286] of)
+        (NNP:[287..293] Warsaw) (,:[293..294] ,) (IN:[295..296] 1)
+        (NNP:[297..304] Banacha) (NNP:[305..311] Street) (,:[311..312] ,)
+        (DT:[314..316] 02) (JJ:[316..320] -097) (NNP:[321..327] Warsaw)
+        (,:[327..328] ,) (NNP:[329..335] Poland) (.:[335..336] .)
+        ('':[337..349] mszutow@farm) (VBD:[349..355] .amwaw)
+        (.:[355..362] .edu.pl)))
+
+;sentence 4 Span:366..564
+;Several forms of cytochrome P-450 (CYP) metabolize R,S-warfarin in a regio-
+;and  enantioselective manner, therefore R,S-warfarin can be recognized as a
+;metabolic  probe for a number of CYP isoforms.
+;[383..399]:cyp450:"cytochrome P-450"
+;[401..404]:cyp450:"CYP"
+;[417..429]:substance:"R,S-warfarin"
+;[482..494]:substance:"R,S-warfarin"
+;[529..534]:substance:"probe"
+;[551..563]:cyp450:"CYP isoforms"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (JJ:[366..373] Several) (NNS:[374..379] forms))
+        (PP (IN:[380..382] of)
+          (NP
+            (NP (NN:[383..393] cytochrome) (NN:[394..399] P-450))
+            (NP (-LRB-:[400..401] -LRB-) (NN:[401..404] CYP)
+                (-RRB-:[404..405] -RRB-)))))
+      (VP (VBP:[406..416] metabolize)
+        (NP (NN:[417..429] R,S-warfarin))
+        (PP (IN:[430..432] in)
+          (NP (DT:[433..434] a)
+            (NML
+              (NML
+                (ADJP (AFX:[435..440] regio) (HYPH:[440..441] -)
+                  (ADJP-2 (-NONE-:[441..441] *P*)))
+                (NML-1 (-NONE-:[441..441] *P*)))
+              (CC:[442..445] and)
+              (NML
+                (ADJP (AFX:[447..454] enantio)
+                  (ADJP-2 (JJ:[454..463] selective)))
+                (NML-1 (NN:[464..470] manner))))))))
+    (,:[470..471] ,)
+    (S
+      (ADVP (RB:[472..481] therefore))
+      (NP-SBJ-3 (NN:[482..494] R,S-warfarin))
+      (VP (MD:[495..498] can)
+        (VP (VB:[499..501] be)
+          (VP (VBN:[502..512] recognized)
+            (NP-3 (-NONE-:[512..512] *))
+            (PP (IN:[513..515] as)
+              (NP (DT:[516..517] a) (JJ:[518..527] metabolic)
+                  (NN:[529..534] probe)))
+            (PP (IN:[535..538] for)
+              (NP
+                (NP (DT:[539..540] a) (NN:[541..547] number))
+                (PP (IN:[548..550] of)
+                  (NP (NN:[551..554] CYP) (NNS:[555..563] isoforms)))))))))
+    (.:[563..564] .)))
+
+;sentence 5 Span:565..720
+;We have applied a warfarin model in vivo in  order to estimate the inhibitory
+;properties of 5- and 8-methoxypsoralens on the  activity of rat CYP
+;isoforms.
+;[583..591]:substance:"warfarin"
+;[657..659]...[666..682]:substance:"5-"..."methoxypsoralens"
+;[664..682]:substance:"8-methoxypsoralens"
+;[707..719]:cyp450:"CYP isoforms"
+(SENT
+  (NP-SBJ (PRP:[565..567] We))
+  (VP (VBP:[568..572] have)
+    (VP (VBN:[573..580] applied)
+      (NP (DT:[581..582] a) (NN:[583..591] warfarin) (NN:[592..597] model))
+      (ADVP (FW:[598..600] in) (FW:[601..605] vivo))
+      (SBAR-PRP (IN:[606..608] in) (NN:[610..615] order)
+        (S
+          (NP-SBJ (-NONE-:[615..615] *))
+          (VP (TO:[616..618] to)
+            (VP (VB:[619..627] estimate)
+              (NP
+                (NP (DT:[628..631] the) (JJ:[632..642] inhibitory)
+                    (NNS:[643..653] properties))
+                (PP (IN:[654..656] of)
+                  (NP
+                    (NP (CD:[657..658] 5) (HYPH:[658..659] -)
+                      (NML-1 (-NONE-:[659..659] *P*)))
+                    (CC:[660..663] and)
+                    (NP (CD:[664..665] 8) (HYPH:[665..666] -)
+                      (NML-1 (NNS:[666..682] methoxypsoralens)))))
+                (PP (IN:[683..685] on)
+                  (NP
+                    (NP (DT:[686..689] the) (NN:[691..699] activity))
+                    (PP (IN:[700..702] of)
+                      (NP (NN:[703..706] rat)
+                         (NN:[707..710] CYP) (NNS:[711..719] isoforms))))))))))))
+  (.:[719..720] .))
+;ERROR_Sentence has multiple children (TB Error):[565..720]::NP:VP:.:
+
+;sentence 6 Span:721..875
+;The area under the serum concentration versus time  curve (AUC) values from
+;time zero to 5 h for R- and S-warfarin and their  metabolites were
+;calculated.
+;[740..745]:substance:"serum"
+;[780..783]:quantitative-name:"AUC"
+;[802..811]:quantitative-value:"zero to 5"
+;[812..813]:quantitative-units:"h"
+;[818..820]...[827..835]:substance:"R-"..."warfarin"
+;[825..835]:substance:"S-warfarin"
+;[847..858]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (DT:[721..724] The) (NN:[725..729] area))
+      (PP (IN:[730..735] under)
+        (NP
+          (NP (DT:[736..739] the)
+            (NML
+              (NML
+                (NML
+                  (NML (NN:[740..745] serum) (NN:[746..759] concentration))
+                  (PP (IN:[760..766] versus)
+                    (NP (NN:[767..771] time))))
+                (NN:[773..778] curve))
+              (NML (-LRB-:[779..780] -LRB-) (NN:[780..783] AUC)
+                   (-RRB-:[783..784] -RRB-)))
+            (NNS:[785..791] values))
+          (PP (IN:[792..796] from)
+            (NP (NN:[797..801] time) (CD:[802..806] zero)))
+          (PP (TO:[807..809] to)
+            (NP (CD:[810..811] 5) (NN:[812..813] h)))
+          (PP (IN:[814..817] for)
+            (NP
+              (NP
+                (NP (NN:[818..819] R) (HYPH:[819..820] -)
+                  (NML-3 (-NONE-:[820..820] *P*)))
+                (CC:[821..824] and)
+                (NP (NN:[825..826] S) (HYPH:[826..827] -)
+                  (NML-3 (NN:[827..835] warfarin))))
+              (CC:[836..839] and)
+              (NP (PRP$:[840..845] their) (NNS:[847..858] metabolites)))))))
+    (VP (VBD:[859..863] were)
+      (VP (VBN:[864..874] calculated)
+        (NP-4 (-NONE-:[874..874] *))))
+    (.:[874..875] .)))
+
+;sentence 7 Span:876..1078
+;R,S-Warfarin kinetics measurements were made three  times on each rat: a week
+;before the 7-days inhibitor treatment, 3 h after the  last dose of inhibitor
+;and 3-7 days after the inhibitor was withdrawn.
+;[876..888]:substance:"R,S-Warfarin"
+;[965..966]:quantitative-value:"7"
+;[967..971]:quantitative-units:"days"
+;[972..981]:substance:"inhibitor"
+;[993..994]:quantitative-value:"3"
+;[995..996]:quantitative-units:"h"
+;[1021..1030]:substance:"inhibitor"
+;[1035..1038]:quantitative-value:"3-7"
+;[1039..1043]:quantitative-units:"days"
+;[1054..1063]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NML (NN:[876..888] R,S-Warfarin) (NNS:[889..897] kinetics))
+      (NNS:[898..910] measurements))
+    (VP (VBD:[911..915] were)
+      (VP (VBN:[916..920] made)
+        (NP-3 (-NONE-:[920..920] *))
+        (NP
+          (NP (CD:[921..926] three) (NNS:[928..933] times))
+          (UCP-TMP-2 (-NONE-:[933..933] *ICH*)))
+        (PP (IN:[934..936] on)
+          (NP (DT:[937..941] each) (NN:[942..945] rat)))
+        (::[945..946] :)
+        (UCP-TMP-2
+          (PP
+            (NP-ADV (DT:[947..948] a) (NN:[949..953] week))
+            (IN:[954..960] before)
+            (NP (DT:[961..964] the)
+              (NML (CD:[965..966] 7) (HYPH:[966..967] -) (NNS:[967..971] days))
+              (NN:[972..981] inhibitor) (NN:[982..991] treatment)))
+          (,:[991..992] ,)
+          (PP
+            (NP-ADV (CD:[993..994] 3) (NN:[995..996] h))
+            (IN:[997..1002] after)
+            (NP
+              (NP (DT:[1003..1006] the) (JJ:[1008..1012] last)
+                  (NN:[1013..1017] dose))
+              (PP (IN:[1018..1020] of)
+                (NP (NN:[1021..1030] inhibitor)))))
+          (CC:[1031..1034] and)
+          (SBAR
+            (NP-ADV
+              (QP (CD:[1035..1036] 3) (HYPH:[1036..1037] -) (CD:[1037..1038] 7))
+              (NNS:[1039..1043] days))
+            (IN:[1044..1049] after)
+            (S
+              (NP-SBJ-1 (DT:[1050..1053] the) (NN:[1054..1063] inhibitor))
+              (VP (VBD:[1064..1067] was)
+                (VP (VBN:[1068..1077] withdrawn)
+                  (NP-1 (-NONE-:[1077..1077] *)))))))))
+    (.:[1077..1078] .)))
+
+;sentence 8 Span:1079..1268
+;The  inhibitory effect of cimetidine on CYP 2C11 and CYP 2C6 activities was
+;confirmed  in this approach and can be recognized as a positive control in
+;validation of  the in vivo experiment.
+;[1105..1115]:substance:"cimetidine"
+;[1119..1127]:cyp450:"CYP 2C11"
+;[1132..1139]:cyp450:"CYP 2C6"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[1079..1082] The) (JJ:[1084..1094] inhibitory)
+          (NN:[1095..1101] effect))
+      (PP (IN:[1102..1104] of)
+        (NP (NN:[1105..1115] cimetidine)))
+      (PP (IN:[1116..1118] on)
+        (NP
+          (NP
+            (NML (NN:[1119..1122] CYP) (NN:[1123..1127] 2C11))
+            (NML-1 (-NONE-:[1127..1127] *P*)))
+          (CC:[1128..1131] and)
+          (NP
+            (NML (NN:[1132..1135] CYP) (NN:[1136..1139] 2C6))
+            (NML-1 (NNS:[1140..1150] activities))))))
+    (VP
+      (VP (VBD:[1151..1154] was)
+        (VP (VBN:[1155..1164] confirmed)
+          (NP-2 (-NONE-:[1164..1164] *))
+          (PP (IN:[1166..1168] in)
+            (NP (DT:[1169..1173] this) (NN:[1174..1182] approach)))))
+      (CC:[1183..1186] and)
+      (VP (MD:[1187..1190] can)
+        (VP (VB:[1191..1193] be)
+          (VP (VBN:[1194..1204] recognized)
+            (NP-2 (-NONE-:[1204..1204] *))
+            (PP-CLR (IN:[1205..1207] as)
+              (NP (DT:[1208..1209] a) (JJ:[1210..1218] positive)
+                  (NN:[1219..1226] control)))
+            (PP (IN:[1227..1229] in)
+              (NP
+                (NP (NN:[1230..1240] validation))
+                (PP (IN:[1241..1243] of)
+                  (NP (DT:[1245..1248] the)
+                    (ADJP (FW:[1249..1251] in) (FW:[1252..1256] vivo))
+                    (NN:[1257..1267] experiment)))))))))
+    (.:[1267..1268] .)))
+
+;sentence 9 Span:1269..1415
+;Both 5- and 8-methoxypsoralen inhibited CYP 2C6 activity  as the respective
+;AUC for metabolite/warfarin enantiomer ratio decreased  significantly.
+;[1274..1276]...[1283..1298]:substance:"5-"..."methoxypsoralen"
+;[1281..1298]:substance:"8-methoxypsoralen"
+;[1309..1316]:cyp450:"CYP 2C6"
+;[1345..1348]:quantitative-name:"AUC"
+;[1353..1363]:substance:"metabolite"
+;[1364..1383]:substance:"warfarin enantiomer"
+(SENT
+  (S
+    (NP-SBJ (CC:[1269..1273] Both)
+      (NP (CD:[1274..1275] 5) (HYPH:[1275..1276] -)
+        (NML-1 (-NONE-:[1276..1276] *P*)))
+      (CC:[1277..1280] and)
+      (NP (CD:[1281..1282] 8) (HYPH:[1282..1283] -)
+        (NML-1 (NN:[1283..1298] methoxypsoralen))))
+    (VP (VBD:[1299..1308] inhibited)
+      (NP
+        (NML (NN:[1309..1312] CYP) (NN:[1313..1316] 2C6))
+        (NN:[1317..1325] activity))
+      (SBAR-ADV (IN:[1327..1329] as)
+        (S
+          (NP-SBJ
+            (NP (DT:[1330..1333] the) (JJ:[1334..1344] respective)
+                (NN:[1345..1348] AUC))
+            (PP (IN:[1349..1352] for)
+              (NP
+                (NML
+                  (NML (NN:[1353..1363] metabolite))
+                  (PP (SYM:[1363..1364] /)
+                    (NP (NN:[1364..1372] warfarin) (NN:[1373..1383] enantiomer))))
+                (NN:[1384..1389] ratio))))
+          (VP (VBD:[1390..1399] decreased)
+            (ADVP (RB:[1401..1414] significantly))))))
+    (.:[1414..1415] .)))
+
+;sentence 10 Span:1416..1546
+;The activity of CYP 2C6 in 5- and 8-methoxypsoralen-treated rats  increased
+;over control values after the inhibitor was withdrawn.
+;[1432..1439]:cyp450:"CYP 2C6"
+;[1443..1445]...[1452..1467]:substance:"5-"..."methoxypsoralen"
+;[1450..1467]:substance:"8-methoxypsoralen"
+;[1522..1531]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1416..1419] The) (NN:[1420..1428] activity))
+      (PP (IN:[1429..1431] of)
+        (NP (NN:[1432..1435] CYP) (NN:[1436..1439] 2C6)))
+      (PP-LOC (IN:[1440..1442] in)
+        (NP
+          (NP
+            (ADJP
+              (NML (CD:[1443..1444] 5) (HYPH:[1444..1445] -)
+                (NML-3 (-NONE-:[1445..1445] *P*)))
+              (ADJP-2 (-NONE-:[1445..1445] *P*)))
+            (NML-1 (-NONE-:[1445..1445] *P*)))
+          (CC:[1446..1449] and)
+          (NP
+            (ADJP
+              (NML (CD:[1450..1451] 8) (HYPH:[1451..1452] -)
+                (NML-3 (NN:[1452..1467] methoxypsoralen)))
+              (HYPH:[1467..1468] -)
+              (ADJP-2 (VBN:[1468..1475] treated)))
+            (NML-1 (NNS:[1476..1480] rats))))))
+    (VP (VBD:[1482..1491] increased)
+      (PP (IN:[1492..1496] over)
+        (NP (NN:[1497..1504] control) (NNS:[1505..1511] values)))
+      (SBAR-TMP (IN:[1512..1517] after)
+        (S
+          (NP-SBJ-4 (DT:[1518..1521] the) (NN:[1522..1531] inhibitor))
+          (VP (VBD:[1532..1535] was)
+            (VP (VBN:[1536..1545] withdrawn)
+              (NP-4 (-NONE-:[1545..1545] *)))))))
+    (.:[1545..1546] .)))
+
+;sentence 11 Span:1547..1765
+;It was also  observed that cimetidine additionally inhibits the absorption of
+;R,S-warfarin  and a decrease in the sum of AUC for R- and S-enantiomers
+;became evident in  spite of inhibition of the activity of both CYPs.
+;[1574..1584]:substance:"cimetidine"
+;[1625..1637]:substance:"R,S-warfarin"
+;[1668..1671]:quantitative-name:"AUC"
+;[1676..1678]...[1685..1696]:substance:"R-"..."enantiomers"
+;[1683..1696]:substance:"S-enantiomers"
+;[1760..1764]:cyp450:"CYPs"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (PRP:[1547..1549] It))
+      (SBAR-2 (-NONE-:[1549..1549] *EXP*)))
+    (VP (VBD:[1550..1553] was)
+      (ADVP (RB:[1554..1558] also))
+      (VP (VBN:[1560..1568] observed)
+        (NP-3 (-NONE-:[1568..1568] *))
+        (SBAR-2 (IN:[1569..1573] that)
+          (S
+            (S
+              (NP-SBJ (NN:[1574..1584] cimetidine))
+              (ADVP (RB:[1585..1597] additionally))
+              (VP (VBZ:[1598..1606] inhibits)
+                (NP
+                  (NP (DT:[1607..1610] the) (NN:[1611..1621] absorption))
+                  (PP (IN:[1622..1624] of)
+                    (NP (NN:[1625..1637] R,S-warfarin))))))
+            (CC:[1639..1642] and)
+            (S
+              (NP-SBJ
+                (NP (DT:[1643..1644] a) (NN:[1645..1653] decrease))
+                (PP (IN:[1654..1656] in)
+                  (NP
+                    (NP (DT:[1657..1660] the) (NN:[1661..1664] sum))
+                    (PP (IN:[1665..1667] of)
+                      (NP (NN:[1668..1671] AUC)))))
+                (PP (IN:[1672..1675] for)
+                  (NP
+                    (NP (NN:[1676..1677] R) (HYPH:[1677..1678] -)
+                      (NML-1 (-NONE-:[1678..1678] *P*)))
+                    (CC:[1679..1682] and)
+                    (NP (NN:[1683..1684] S) (HYPH:[1684..1685] -)
+                      (NML-1 (NNS:[1685..1696] enantiomers))))))
+              (VP (VBD:[1697..1703] became)
+                (ADJP-PRD (JJ:[1704..1711] evident))
+                (PP (IN:[1712..1714] in)
+                  (NP
+                    (NP (NN:[1716..1721] spite))
+                    (PP (IN:[1722..1724] of)
+                      (NP
+                        (NP (NN:[1725..1735] inhibition))
+                        (PP (IN:[1736..1738] of)
+                          (NP
+                            (NP (DT:[1739..1742] the) (NN:[1743..1751] activity))
+                            (PP (IN:[1752..1754] of)
+                              (NP (DT:[1755..1759] both) (NNS:[1760..1764] CYPs)))))))))))))))
+    (.:[1764..1765] .)))
+
+;sentence 12 Span:1766..1951
+;5-Methoxypsoralen modified the  serum R-warfarin/S-warfarin ratio and a
+;selective increase in AUC(S-warfarin)  was observed, the most pronounced
+;being after the inhibitor was withdrawn.
+;[1766..1783]:substance:"5-Methoxypsoralen"
+;[1798..1803]:substance:"serum"
+;[1804..1814]:substance:"R-warfarin"
+;[1815..1825]:substance:"S-warfarin"
+;[1860..1863]:quantitative-name:"AUC"
+;[1864..1874]:substance:"S-warfarin"
+;[1927..1936]:substance:"inhibitor"
+(SENT
+  (S
+    (S
+      (NP-SBJ (NN:[1766..1783] 5-Methoxypsoralen))
+      (VP (VBD:[1784..1792] modified)
+        (NP (DT:[1793..1796] the) (NN:[1798..1803] serum)
+          (NML
+            (NML (NN:[1804..1814] R-warfarin))
+            (PP (SYM:[1814..1815] /)
+              (NML (NN:[1815..1825] S-warfarin))))
+          (NN:[1826..1831] ratio))))
+    (CC:[1832..1835] and)
+    (S
+      (NP-SBJ-2
+        (NP (DT:[1836..1837] a) (JJ:[1838..1847] selective)
+            (NN:[1848..1856] increase))
+        (PP (IN:[1857..1859] in)
+          (NP (NN:[1860..1863] AUC)
+            (PRN (-LRB-:[1863..1864] -LRB-)
+              (NP (NN:[1864..1874] S-warfarin))
+              (-RRB-:[1874..1875] -RRB-)))))
+      (VP (VBD:[1877..1880] was)
+        (VP (VBN:[1881..1889] observed)
+          (NP-2 (-NONE-:[1889..1889] *))
+          (,:[1889..1890] ,)
+          (S-ADV
+            (NP-SBJ (DT:[1891..1894] the)
+              (ADJP (RBS:[1895..1899] most) (JJ:[1900..1910] pronounced)))
+            (VP (VBG:[1911..1916] being)
+              (SBAR-TMP (IN:[1917..1922] after)
+                (S
+                  (NP-SBJ-1 (DT:[1923..1926] the) (NN:[1927..1936] inhibitor))
+                  (VP (VBD:[1937..1940] was)
+                    (VP (VBN:[1941..1950] withdrawn)
+                      (NP-1 (-NONE-:[1950..1950] *)))))))))))
+    (.:[1950..1951] .)))
+
+;sentence 13 Span:1952..2143
+;This  effect is not likely to be mediated by P-glycoprotein (P-gp) because 
+;quinidine--, a P-gp inhibitor at a dose of 15 mg kg(-1) body wt.--did not 
+;influence the AUC for either enantiomer.
+;[1997..2011]:substance:"P-glycoprotein"
+;[2013..2017]:substance:"P-gp"
+;[2028..2037]:substance:"quinidine"
+;[2043..2047]:substance:"P-gp"
+;[2048..2057]:substance:"inhibitor"
+;[2071..2073]:quantitative-value:"15"
+;[2074..2091]:quantitative-units:"mg kg(-1) body wt"
+;[2117..2120]:quantitative-name:"AUC"
+;[2132..2142]:substance:"enantiomer"
+(SENT
+  (S
+    (NP-SBJ (DT:[1952..1956] This) (NN:[1958..1964] effect))
+    (VP (VBZ:[1965..1967] is) (RB:[1968..1971] not)
+      (ADJP-PRD (JJ:[1972..1978] likely)
+        (S
+          (NP-SBJ-1 (-NONE-:[1978..1978] *))
+          (VP (TO:[1979..1981] to)
+            (VP (VB:[1982..1984] be)
+              (VP (VBN:[1985..1993] mediated)
+                (NP-1 (-NONE-:[1993..1993] *))
+                (PP (IN:[1994..1996] by)
+                  (NP-LGS
+                    (NP (NN:[1997..2011] P-glycoprotein))
+                    (NP (-LRB-:[2012..2013] -LRB-) (NN:[2013..2017] P-gp)
+                        (-RRB-:[2017..2018] -RRB-))))
+                (SBAR-ADV (IN:[2019..2026] because)
+                  (S
+                    (NP-SBJ
+                      (NP (NN:[2028..2037] quinidine))
+                      (::[2037..2039] --) (,:[2039..2040] ,)
+                      (NP
+                        (NP (DT:[2041..2042] a) (NN:[2043..2047] P-gp)
+                            (NN:[2048..2057] inhibitor))
+                        (PP (IN:[2058..2060] at)
+                          (NP
+                            (NP (DT:[2061..2062] a) (NN:[2063..2067] dose))
+                            (PP (IN:[2068..2070] of)
+                              (NP
+                                (NML (CD:[2071..2073] 15) (NN:[2074..2076] mg))
+                                (NN:[2077..2083] kg-LRB--1-RRB-)
+                                 (NN:[2084..2088] body) (NN:[2089..2092] wt.)))))))
+                    (::[2092..2094] --)
+                    (VP (VBD:[2094..2097] did) (RB:[2098..2101] not)
+                      (VP (VB:[2103..2112] influence)
+                        (NP (DT:[2113..2116] the) (NN:[2117..2120] AUC))
+                        (PP (IN:[2121..2124] for)
+                          (NP (DT:[2125..2131] either)
+                              (NN:[2132..2142] enantiomer)))))))))))))
+    (.:[2142..2143] .)))
+
+;section 14 Span:2144..2182
+;Copyright 2002 John Wiley & Sons, Ltd.
+(SEC
+  (FRAG (NN:[2144..2153] Copyright) (CD:[2154..2158] 2002)
+        (NNP:[2159..2163] John) (NNP:[2164..2169] Wiley) (CC:[2170..2171] &)
+        (NNP:[2172..2176] Sons) (,:[2176..2177] ,) (NNP:[2178..2182] Ltd.)))
+
+;section 15 Span:2186..2231
+;PMID: 12355562 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2186..2190] PMID) (::[2190..2191] :) (CD:[2192..2200] 12355562)
+        (NN:[2201..2202] -LSB-) (NNP:[2202..2208] PubMed) (::[2209..2210] -)
+        (NN:[2211..2218] indexed) (IN:[2219..2222] for)
+        (NNP:[2223..2231] MEDLINE-RSB-)))

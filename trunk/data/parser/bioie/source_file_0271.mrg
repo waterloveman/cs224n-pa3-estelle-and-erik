@@ -1,0 +1,128 @@
+;PMID: 8590376
+;source_file_1789.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..63] = [t:0..63]
+;1)sentence:[e:69..233] = [t:69..233]
+;2)section:[e:237..274] = [t:237..274]
+;3)section:[e:278..386] = [t:278..386]
+;4)sentence:[e:390..507] = [t:390..507]
+;5)sentence:[e:508..640] = [t:508..640]
+;6)section:[e:644..688] = [t:644..688]
+
+;section 0 Span:0..63
+;Comp Biochem Physiol B Biochem Mol Biol. 1995 Dec;112(4):613-8.
+(SEC
+  (FRAG (NNP:[0..4] Comp) (NNP:[5..12] Biochem) (NNP:[13..20] Physiol)
+        (NNP:[21..22] B) (NNP:[23..30] Biochem) (NNP:[31..34] Mol)
+        (NNP:[35..39] Biol) (.:[39..40] .) (CD:[41..45] 1995)
+        (.:[46..54] Dec;112-LRB-) (CD:[54..55] 4) (-RRB-:[55..56] -RRB-)
+        (::[56..57] :) (CD:[57..61] 613-) (CD:[61..63] 8.)))
+
+;sentence 1 Span:69..233
+;The synthesis of 19-norandrostenedione from dehydroepiandrosterone in equine 
+;placenta is inhibited by aromatase inhibitors 4-hydroxyandrostenedione and 
+;fadrozole.
+;[86..107]:substance:"19-norandrostenedione"
+;[113..135]:substance:"dehydroepiandrosterone"
+;[172..181]:cyp450:"aromatase"
+;[182..192]:substance:"inhibitors"
+;[193..217]:substance:"4-hydroxyandrostenedione"
+;[223..232]:substance:"fadrozole"
+(SENT
+  (S-HLN
+    (NP-SBJ-1
+      (NP (DT:[69..72] The) (NN:[73..82] synthesis))
+      (PP (IN:[83..85] of)
+        (NP (NN:[86..107] 19-norandrostenedione)))
+      (PP (IN:[108..112] from)
+        (NP (NN:[113..135] dehydroepiandrosterone)))
+      (PP-LOC (IN:[136..138] in)
+        (NP (JJ:[139..145] equine) (NN:[147..155] placenta))))
+    (VP (VBZ:[156..158] is)
+      (VP (VBN:[159..168] inhibited)
+        (NP-1 (-NONE-:[168..168] *))
+        (PP (IN:[169..171] by)
+          (NP-LGS
+            (NP (NN:[172..181] aromatase) (NNS:[182..192] inhibitors))
+            (NP (NN:[193..217] 4-hydroxyandrostenedione) (CC:[218..221] and)
+                (NN:[223..232] fadrozole))))))
+    (.:[232..233] .)))
+
+;section 2 Span:237..274
+;Moslemi S, Silberzahn P, Gaillard JL.
+(SEC
+  (FRAG (NNP:[237..244] Moslemi) (NNP:[245..246] S) (,:[246..247] ,)
+        (NNP:[248..258] Silberzahn) (NNP:[259..261] P,)
+        (NNP:[262..270] Gaillard) (NNP:[271..274] JL.)))
+
+;section 3 Span:278..386
+;Laboratoire de Biochimie, Centre National de la Recherche Scientifique URA
+;609,  Universite de Caen, France.
+(SEC
+  (FRAG (NNP:[278..289] Laboratoire) (IN:[290..292] de)
+        (NNP:[293..302] Biochimie) (,:[302..303] ,) (NNP:[304..310] Centre)
+        (NNP:[311..319] National) (NNP:[320..322] de) (NNP:[323..325] la)
+        (NNP:[326..335] Recherche) (NNP:[336..348] Scientifique)
+        (NNP:[349..352] URA) (CD:[353..356] 609) (,:[356..357] ,)
+        (NNP:[359..369] Universite) (IN:[370..372] de) (NNP:[373..377] Caen)
+        (,:[377..378] ,) (NNP:[379..385] France) (.:[385..386] .)))
+
+;sentence 4 Span:390..507
+;19-Norandrostenedione was synthesized in vitro from dehydroepiandrosterone by
+; explants of equine full-term placenta.
+;[390..411]:substance:"19-Norandrostenedione"
+;[442..464]:substance:"dehydroepiandrosterone"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[390..411] 19-Norandrostenedione))
+    (VP (VBD:[412..415] was)
+      (VP (VBN:[416..427] synthesized)
+        (NP-1 (-NONE-:[427..427] *))
+        (ADVP (FW:[428..430] in) (FW:[431..436] vitro))
+        (PP (IN:[437..441] from)
+          (NP (NN:[442..464] dehydroepiandrosterone)))
+        (PP (IN:[465..467] by)
+          (NP-LGS
+            (NP (NNS:[469..477] explants))
+            (PP (IN:[478..480] of)
+              (NP (JJ:[481..487] equine)
+                (NML (JJ:[488..492] full) (HYPH:[492..493] -)
+                     (NN:[493..497] term))
+                (NN:[498..506] placenta)))))))
+    (.:[506..507] .)))
+
+;sentence 5 Span:508..640
+;The synthesis of 19-norandrostenedione  was inhibited by two specific
+;aromatase inhibitors, 4-hydroxyandrostenedione and  fadrozole.
+;[525..546]:substance:"19-norandrostenedione"
+;[578..587]:cyp450:"aromatase"
+;[588..598]:substance:"inhibitors"
+;[600..624]:substance:"4-hydroxyandrostenedione"
+;[630..639]:substance:"fadrozole"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[508..511] The) (NN:[512..521] synthesis))
+      (PP (IN:[522..524] of)
+        (NP (NN:[525..546] 19-norandrostenedione))))
+    (VP (VBD:[548..551] was)
+      (VP (VBN:[552..561] inhibited)
+        (NP-1 (-NONE-:[561..561] *))
+        (PP (IN:[562..564] by)
+          (NP-LGS
+            (NP (CD:[565..568] two) (JJ:[569..577] specific)
+                (NN:[578..587] aromatase) (NNS:[588..598] inhibitors))
+            (,:[598..599] ,)
+            (NP (NN:[600..624] 4-hydroxyandrostenedione) (CC:[625..628] and)
+                (NN:[630..639] fadrozole))))))
+    (.:[639..640] .)))
+
+;section 6 Span:644..688
+;PMID: 8590376 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[644..648] PMID) (::[648..649] :) (CD:[650..657] 8590376)
+        (NN:[658..659] -LSB-) (NNP:[659..665] PubMed) (::[666..667] -)
+        (NN:[668..675] indexed) (IN:[676..679] for)
+        (NNP:[680..688] MEDLINE-RSB-)))

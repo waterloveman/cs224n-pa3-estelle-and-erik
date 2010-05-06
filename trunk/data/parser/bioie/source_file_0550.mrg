@@ -1,0 +1,444 @@
+;PMID: 99592
+;source_file_898.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..134] = [t:45..134]
+;2)section:[e:138..157] = [t:138..156]
+;3)sentence:[e:161..380] = [t:161..380]
+;4)sentence:[e:381..487] = [t:381..487]
+;5)sentence:[e:488..617] = [t:488..617]
+;6)sentence:[e:618..786] = [t:618..786]
+;7)sentence:[e:787..886] = [t:787..886]
+;8)sentence:[e:887..1065] = [t:887..1065]
+;9)sentence:[e:1066..1321] = [t:1066..1321]
+;10)sentence:[e:1322..1426] = [t:1322..1426]
+;11)sentence:[e:1427..1633] = [t:1427..1633]
+;12)sentence:[e:1634..1678] = [t:1634..1678]
+;13)section:[e:1682..1724] = [t:1682..1723]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:138..157][t:138..156]
+;ERROR_Section end mismatch[e:1682..1724][t:1682..1723]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[30..31] )
+;ERROR_Token in entity file but not tree[31..32] :
+;ERROR_Token in entity file but not tree[156..157] .
+;ERROR_Token in entity file but not tree[1723..1724] ]
+;ERROR_POS mismatch [22..25] t:token e:NNP Apr
+;ERROR_Token in tree file but not entity[30..32] ):
+
+;section 0 Span:0..39
+;Jpn J Pharmacol. 1978 Apr;28(2):305-15.
+(SEC
+  (FRAG (NNP:[0..3] Jpn) (NNP:[4..5] J) (NNP:[6..15] Pharmacol) (.:[15..16] .)
+        (CD:[17..21] 1978) (token:[22..25] Apr) (::[25..26] ;) (CD:[26..28] 28)
+        (-LRB-:[28..29] -LRB-) (CD:[29..30] 2) (-RRB-:[30..32] -RRB-:)
+        (CD:[32..35] 305) (::[35..36] -) (CD:[36..38] 15) (.:[38..39] .)))
+
+;sentence 1 Span:45..134
+;Polychlorinated dibenzofurans--potent inducers of rat hepatic
+;drug-metabolizing  enzymes.
+;[45..74]:substance:"Polychlorinated dibenzofurans"
+;[83..91]:substance:"inducers"
+;[107..111]:substance:"drug"
+;[126..133]:substance:"enzymes"
+(SENT
+  (NP-HLN
+    (NP (JJ:[45..60] Polychlorinated) (NNS:[61..74] dibenzofurans))
+    (::[74..76] --)
+    (NP
+      (NP (JJ:[76..82] potent) (NNS:[83..91] inducers))
+      (PP (IN:[92..94] of)
+        (NP (NN:[95..98] rat) (JJ:[99..106] hepatic)
+          (ADJP (NN:[107..111] drug) (HYPH:[111..112] -)
+                (VBG:[112..124] metabolizing))
+          (NNS:[126..133] enzymes))))
+    (.:[133..134] .)))
+
+;section 2 Span:138..156
+;Kawano S, Hiraga K
+(SEC
+  (FRAG (NNP:[138..144] Kawano) (NNP:[145..146] S) (,:[146..147] ,)
+        (NNP:[148..154] Hiraga) (NNP:[155..156] K)))
+
+(ORPH .)
+
+;sentence 3 Span:161..380
+;The effects of polychlorinated dibenzofurans (PCDFs), trace toxic
+;contaminants  of commercial polychlorinated biphenyl preparations (PCBs), on
+;the induction of  hepatic drug-metabolizing enzymes were studied in the rat.
+;[176..205]:substance:"polychlorinated dibenzofurans"
+;[207..212]:substance:"PCDFs"
+;[227..239]:substance:"contaminants"
+;[255..292]:substance:"polychlorinated biphenyl preparations"
+;[294..298]:substance:"PCBs"
+;[330..334]:substance:"drug"
+;[348..355]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[161..164] The) (NNS:[165..172] effects))
+      (PP (IN:[173..175] of)
+        (NP
+          (NP
+            (NP (JJ:[176..191] polychlorinated) (NNS:[192..205] dibenzofurans))
+            (NP (-LRB-:[206..207] -LRB-) (NNS:[207..212] PCDFs)
+                (-RRB-:[212..213] -RRB-)))
+          (,:[213..214] ,)
+          (NP
+            (NP (JJ:[215..220] trace) (JJ:[221..226] toxic)
+                (NNS:[227..239] contaminants))
+            (PP (IN:[241..243] of)
+              (NP (JJ:[244..254] commercial)
+                (NML
+                  (NML (JJ:[255..270] polychlorinated) (NN:[271..279] biphenyl)
+                       (NNS:[280..292] preparations))
+                  (NML (-LRB-:[293..294] -LRB-) (NNS:[294..298] PCBs)
+                       (-RRB-:[298..299] -RRB-))))))))
+      (,:[299..300] ,)
+      (PP (IN:[301..303] on)
+        (NP
+          (NP (DT:[304..307] the) (NN:[308..317] induction))
+          (PP (IN:[318..320] of)
+            (NP (JJ:[322..329] hepatic)
+              (ADJP (NN:[330..334] drug) (HYPH:[334..335] -)
+                    (VBG:[335..347] metabolizing))
+              (NNS:[348..355] enzymes))))))
+    (VP (VBD:[356..360] were)
+      (VP (VBN:[361..368] studied)
+        (NP-1 (-NONE-:[368..368] *))
+        (PP (IN:[369..371] in)
+          (NP (DT:[372..375] the) (NN:[376..379] rat)))))
+    (.:[379..380] .)))
+;ERROR_Orphan Text from Tree File[156..161] .
+
+;sentence 4 Span:381..487
+;PCDFs were about a  thousand times more potent than PCBs (Kanechlor-500) as
+;inducers of cytochrome  P-450.
+;[381..386]:substance:"PCDFs"
+;[401..415]:quantitative-value:"thousand times"
+;[433..437]:substance:"PCBs"
+;[439..452]:substance:"Kanechlor-500"
+;[457..465]:substance:"inducers"
+;[469..486]:cyp450:"cytochrome  P-450"
+(SENT
+  (S
+    (NP-SBJ (NNS:[381..386] PCDFs))
+    (VP (VBD:[387..391] were)
+      (NP-PRD
+        (NP
+          (QP (RB:[392..397] about) (DT:[398..399] a)
+             (CD:[401..409] thousand) (NNS:[410..415] times))
+          (RBR:[416..420] more) (JJ:[421..427] potent))
+        (PP (IN:[428..432] than)
+          (NP (NNS:[433..437] PCBs)))
+        (PRN (-LRB-:[438..439] -LRB-)
+          (NP (NNP:[439..448] Kanechlor) (HYPH:[448..449] -) (CD:[449..452] 500))
+          (-RRB-:[452..453] -RRB-)))
+      (PP (IN:[454..456] as)
+        (NP
+          (NP (NNS:[457..465] inducers))
+          (PP (IN:[466..468] of)
+            (NP (NN:[469..479] cytochrome) (NN:[481..486] P-450))))))
+    (.:[486..487] .)))
+
+;sentence 5 Span:488..617
+;Rats given 10 microgram/kg of PCDFs intraperitoneally for 3 days showed 
+;significantly increased hepatic cytochrome P-450 levels.
+;[499..501]:quantitative-value:"10"
+;[502..514]:quantitative-units:"microgram/kg"
+;[518..523]:substance:"PCDFs"
+;[546..547]:quantitative-value:"3"
+;[548..552]:quantitative-units:"days"
+;[593..609]:cyp450:"cytochrome P-450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NNS:[488..492] Rats))
+      (VP (VBN:[493..498] given)
+        (NP (-NONE-:[498..498] *))
+        (NP
+          (NP (CD:[499..501] 10) (NN:[502..511] microgram))
+          (PP (SYM:[511..512] /)
+            (NP (NN:[512..514] kg)))
+          (PP (IN:[515..517] of)
+            (NP (NNS:[518..523] PCDFs))))
+        (ADVP-MNR (RB:[524..541] intraperitoneally))
+        (PP-TMP (IN:[542..545] for)
+          (NP (CD:[546..547] 3) (NNS:[548..552] days)))))
+    (VP (VBD:[553..559] showed)
+      (NP
+        (ADJP (RB:[561..574] significantly) (VBD:[575..584] increased))
+        (JJ:[585..592] hepatic)
+        (NML (NN:[593..603] cytochrome) (NN:[604..609] P-450))
+        (NNS:[610..616] levels)))
+    (.:[616..617] .)))
+
+;sentence 6 Span:618..786
+;At the highest dose  tested, 1000 microgram/kg, a two-fold increase of
+;cytochrome P-450 and a  three-fold increase of p-nitroanisole demethylase
+;activity were observed.
+;[647..651]:quantitative-value:"1000"
+;[652..664]:quantitative-units:"microgram/kg"
+;[668..676]:quantitative-value:"two-fold"
+;[689..705]:cyp450:"cytochrome P-450"
+;[713..723]:quantitative-value:"three-fold"
+;[736..762]:substance:"p-nitroanisole demethylase"
+(SENT
+  (S
+    (PP (IN:[618..620] At)
+      (NP
+        (NP
+          (NP (DT:[621..624] the) (JJS:[625..632] highest) (NN:[633..637] dose))
+          (VP (VBN:[639..645] tested)
+            (NP (-NONE-:[645..645] *))))
+        (,:[645..646] ,)
+        (NP
+          (NP (CD:[647..651] 1000) (NN:[652..661] microgram))
+          (PP (SYM:[661..662] /)
+            (NP (NN:[662..664] kg))))))
+    (,:[664..665] ,)
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[666..667] a)
+          (QP (CD:[668..671] two) (HYPH:[671..672] -) (JJ:[672..676] fold))
+          (NN:[677..685] increase))
+        (PP (IN:[686..688] of)
+          (NP (NN:[689..699] cytochrome) (NN:[700..705] P-450))))
+      (CC:[706..709] and)
+      (NP
+        (NP (DT:[710..711] a)
+          (QP (CD:[713..718] three) (HYPH:[718..719] -) (JJ:[719..723] fold))
+          (NN:[724..732] increase))
+        (PP (IN:[733..735] of)
+          (NP
+             (NN:[736..750] p-nitroanisole) (NN:[751..762] demethylase)
+            (NN:[763..771] activity)))))
+    (VP (VBD:[772..776] were)
+      (VP (VBN:[777..785] observed)
+        (NP-1 (-NONE-:[785..785] *))))
+    (.:[785..786] .)))
+
+;sentence 7 Span:787..886
+;PCDFs  and 3-methylcholanthrene had quite similar effects on microsomal 
+;drug-metabolizing enzymes.
+;[787..792]:substance:"PCDFs"
+;[798..818]:substance:"3-methylcholanthrene"
+;[860..864]:substance:"drug"
+;[878..885]:substance:"enzymes"
+(SENT
+  (S
+    (NP-SBJ (NNS:[787..792] PCDFs) (CC:[794..797] and)
+            (NN:[798..818] 3-methylcholanthrene))
+    (VP (VBD:[819..822] had)
+      (NP
+        (NP
+          (ADJP (RB:[823..828] quite) (JJ:[829..836] similar))
+          (NNS:[837..844] effects))
+        (PP (IN:[845..847] on)
+          (NP (JJ:[848..858] microsomal)
+            (ADJP (NN:[860..864] drug) (HYPH:[864..865] -)
+                  (VBG:[865..877] metabolizing))
+            (NNS:[878..885] enzymes)))))
+    (.:[885..886] .)))
+
+;sentence 8 Span:887..1065
+;Both drugs increased p-nitroanisole demethylase  activity strikingly and
+;aniline hydroxylase activity moderately, but produced  little change in
+;aminopyrine demethylase activity.
+;[892..897]:substance:"drugs"
+;[908..934]:substance:"p-nitroanisole demethylase"
+;[960..979]:cyp450:"aniline hydroxylase"
+;[1032..1055]:substance:"aminopyrine demethylase"
+(SENT
+  (S
+    (NP-SBJ (DT:[887..891] Both) (NNS:[892..897] drugs))
+    (VP
+      (VP
+        (VP (VBD:[898..907] increased)
+          (NP=1
+             (NN:[908..922] p-nitroanisole) (NN:[923..934] demethylase)
+            (NN:[936..944] activity))
+          (ADVP=2 (RB:[945..955] strikingly)))
+        (CC:[956..959] and)
+        (VP
+          (NP=1
+             (NN:[960..967] aniline) (NN:[968..979] hydroxylase)
+            (NN:[980..988] activity))
+          (ADVP=2 (RB:[989..999] moderately))))
+      (,:[999..1000] ,) (CC:[1001..1004] but)
+      (VP (VBD:[1005..1013] produced)
+        (NP
+          (NP (JJ:[1015..1021] little) (NN:[1022..1028] change))
+          (PP (IN:[1029..1031] in)
+            (NP
+               (NN:[1032..1043] aminopyrine) (NN:[1044..1055] demethylase)
+              (NN:[1056..1064] activity))))))
+    (.:[1064..1065] .)))
+
+;sentence 9 Span:1066..1321
+;alpha-Naphthoflavone, which  is known to be a specific inhibitor of aryl
+;hydrocarbon hydroxylase induced by  polycyclic aromatic hydrocarbons,
+;inhibited at low concentrations p-nitroanisole  demethylase activity of rats
+;previously treated with both drugs.
+;[1066..1086]:substance:"alpha-Naphthoflavone"
+;[1121..1130]:substance:"inhibitor"
+;[1134..1162]:cyp450:"aryl hydrocarbon hydroxylase"
+;[1175..1207]:substance:"polycyclic aromatic hydrocarbons"
+;[1241..1268]:substance:"p-nitroanisole  demethylase"
+;[1315..1320]:substance:"drugs"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1066..1086] alpha-Naphthoflavone))
+      (,:[1086..1087] ,)
+      (SBAR
+        (WHNP-1 (WDT:[1088..1093] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[1093..1093] *T*))
+          (VP (VBZ:[1095..1097] is)
+            (VP (VBN:[1098..1103] known)
+              (S
+                (NP-SBJ-1 (-NONE-:[1103..1103] *))
+                (VP (TO:[1104..1106] to)
+                  (VP (VB:[1107..1109] be)
+                    (NP-PRD
+                      (NP
+                        (NP (DT:[1110..1111] a) (JJ:[1112..1120] specific)
+                            (NN:[1121..1130] inhibitor))
+                        (PP (IN:[1131..1133] of)
+                          (NP (NN:[1134..1138] aryl)
+                              (NN:[1139..1150] hydrocarbon)
+                              (NN:[1151..1162] hydroxylase))))
+                      (VP (VBN:[1163..1170] induced)
+                        (NP (-NONE-:[1170..1170] *))
+                        (PP (IN:[1171..1173] by)
+                          (NP (JJ:[1175..1185] polycyclic)
+                              (JJ:[1186..1194] aromatic)
+                              (NNS:[1195..1207] hydrocarbons)))))))))))))
+    (,:[1207..1208] ,)
+    (VP (VBD:[1209..1218] inhibited)
+      (PP (IN:[1219..1221] at)
+        (NP (JJ:[1222..1225] low) (NNS:[1226..1240] concentrations)))
+      (NP
+        (NP
+           (NN:[1241..1255] p-nitroanisole) (NN:[1257..1268] demethylase)
+          (NN:[1269..1277] activity))
+        (PP (IN:[1278..1280] of)
+          (NP
+            (NP (NNS:[1281..1285] rats))
+            (VP
+              (ADVP (RB:[1286..1296] previously))
+              (VBN:[1297..1304] treated)
+              (NP (-NONE-:[1304..1304] *))
+              (PP-MNR (IN:[1305..1309] with)
+                (NP (DT:[1310..1314] both) (NNS:[1315..1320] drugs))))))))
+    (.:[1320..1321] .)))
+
+;sentence 10 Span:1322..1426
+;Further, both  drugs increased the 455 nm to 430 nm peak ratios of ethyl
+;isocyanide difference  spectra.
+;[1337..1342]:substance:"drugs"
+;[1357..1360]:quantitative-value:"455"
+;[1361..1363]:quantitative-units:"nm"
+;[1367..1370]:quantitative-value:"430"
+;[1371..1373]:quantitative-units:"nm"
+;[1389..1405]:substance:"ethyl isocyanide"
+(SENT
+  (S
+    (ADVP (RB:[1322..1329] Further))
+    (,:[1329..1330] ,)
+    (NP-SBJ (DT:[1331..1335] both) (NNS:[1337..1342] drugs))
+    (VP (VBD:[1343..1352] increased)
+      (NP (DT:[1353..1356] the)
+        (NML
+          (NML (CD:[1357..1360] 455) (NN:[1361..1363] nm))
+          (PP (TO:[1364..1366] to)
+            (NP (CD:[1367..1370] 430) (NN:[1371..1373] nm))))
+        (NN:[1374..1378] peak) (NNS:[1379..1385] ratios))
+      (PP (IN:[1386..1388] of)
+        (NP
+          (NML (NN:[1389..1394] ethyl) (NN:[1395..1405] isocyanide))
+          (NN:[1406..1416] difference) (NNS:[1418..1425] spectra))))
+    (.:[1425..1426] .)))
+
+;sentence 11 Span:1427..1633
+;Following three daily doses of PCDFs (100 microgram/kg), cytochrome  P-450
+;level and p-nitroanisole demethylase activity remained elevated for over  15
+;days, with a decrease to control levels after 30 days.
+;[1437..1442]:quantitative-value:"three"
+;[1443..1448]:quantitative-units:"daily"
+;[1458..1463]:substance:"PCDFs"
+;[1465..1468]:quantitative-value:"100"
+;[1469..1481]:quantitative-units:"microgram/kg"
+;[1484..1501]:cyp450:"cytochrome  P-450"
+;[1512..1538]:substance:"p-nitroanisole demethylase"
+;[1576..1578]:quantitative-value:"15"
+;[1579..1583]:quantitative-units:"days"
+;[1625..1627]:quantitative-value:"30"
+;[1628..1632]:quantitative-units:"days"
+(SENT
+  (S
+    (S-ADV
+      (NP-SBJ (-NONE-:[1427..1427] *))
+      (VP (VBG:[1427..1436] Following)
+        (NP
+          (NP (CD:[1437..1442] three) (JJ:[1443..1448] daily)
+              (NNS:[1449..1454] doses))
+          (PP (IN:[1455..1457] of)
+            (NP (NNS:[1458..1463] PCDFs)))
+          (PRN (-LRB-:[1464..1465] -LRB-)
+            (NP
+              (NP (CD:[1465..1468] 100) (NN:[1469..1478] microgram))
+              (PP (SYM:[1478..1479] /)
+                (NP (NN:[1479..1481] kg))))
+            (-RRB-:[1481..1482] -RRB-)))))
+    (,:[1482..1483] ,)
+    (NP-SBJ
+      (NP
+        (NML (NN:[1484..1494] cytochrome) (NN:[1496..1501] P-450))
+        (NN:[1502..1507] level))
+      (CC:[1508..1511] and)
+      (NP
+        (NML (NN:[1512..1526] p-nitroanisole) (NN:[1527..1538] demethylase))
+        (NN:[1539..1547] activity)))
+    (VP (VBD:[1548..1556] remained)
+      (ADJP-PRD (JJ:[1557..1565] elevated))
+      (PP-TMP (IN:[1566..1569] for)
+        (PP (IN:[1570..1574] over)
+          (NP (CD:[1576..1578] 15) (NNS:[1579..1583] days))))
+      (,:[1583..1584] ,)
+      (PP (IN:[1585..1589] with)
+        (NP
+          (NP (DT:[1590..1591] a) (NN:[1592..1600] decrease))
+          (PP (TO:[1601..1603] to)
+            (NP (NN:[1604..1611] control) (NNS:[1612..1618] levels)))
+          (PP-TMP (IN:[1619..1624] after)
+            (NP (CD:[1625..1627] 30) (NNS:[1628..1632] days))))))
+    (.:[1632..1633] .)))
+
+;sentence 12 Span:1634..1678
+;Such indicates the  slow excretion of PCDFs.
+;[1672..1677]:substance:"PCDFs"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1634..1638] Such))
+    (VP (VBZ:[1639..1648] indicates)
+      (NP
+        (NP (DT:[1649..1652] the) (JJ:[1654..1658] slow)
+            (NN:[1659..1668] excretion))
+        (PP (IN:[1669..1671] of)
+          (NP (NNS:[1672..1677] PCDFs)))))
+    (.:[1677..1678] .)))
+
+;section 13 Span:1682..1723
+;PMID: 99592 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1682..1686] PMID) (::[1686..1687] :) (CD:[1688..1693] 99592)
+        (-LRB-:[1694..1695] -LSB-) (NNP:[1695..1701] PubMed) (::[1702..1703] -)
+        (VBN:[1704..1711] indexed) (IN:[1712..1715] for)
+        (NNP:[1716..1723] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1723..EOF] ]
+
+(ORPH -RSB-)

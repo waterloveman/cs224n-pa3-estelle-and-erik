@@ -1,0 +1,373 @@
+;PMID: 9020195
+;source_file_1730.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..121] = [t:43..121]
+;2)section:[e:125..178] = [t:125..178]
+;3)section:[e:182..280] = [t:182..280]
+;4)sentence:[e:284..383] = [t:284..383]
+;5)sentence:[e:384..496] = [t:384..496]
+;6)sentence:[e:497..650] = [t:497..650]
+;7)sentence:[e:651..757] = [t:651..757]
+;8)sentence:[e:758..924] = [t:758..924]
+;9)sentence:[e:925..1058] = [t:925..1058]
+;10)sentence:[e:1060..1174] = [t:1060..1174]
+;11)sentence:[e:1175..1388] = [t:1175..1388]
+;12)section:[e:1392..1436] = [t:1392..1436]
+
+;section 0 Span:0..37
+;Toxicology. 1997 Feb 14;117(1):13-23.
+(SEC
+  (FRAG (NNP:[0..10] Toxicology) (,:[10..11] .) (CD:[12..16] 1997)
+        (NNP:[17..20] Feb) (CC:[21..28] 14;117-LRB-) (CD:[28..29] 1)
+        (-RRB-:[29..30] -RRB-) (::[30..31] :) (CD:[31..36] 13-23) (.:[36..37] .)))
+
+;sentence 1 Span:43..121
+;Interaction of methadone with substrates of human hepatic cytochrome P450
+;3A4.
+;[58..67]:substance:"methadone"
+;[73..83]:substance:"substrates"
+;[101..120]:cyp450:"cytochrome P450 3A4"
+(SENT
+  (NP-SBJ
+    (NP (NN:[43..54] Interaction))
+    (PP (IN:[55..57] of)
+      (NP (NN:[58..67] methadone)))
+    (PP (IN:[68..72] with)
+      (NP
+        (NP (NNS:[73..83] substrates))
+        (PP (IN:[84..86] of)
+          (NP (JJ:[87..92] human) (JJ:[93..100] hepatic)
+            
+            (NML (NN:[101..111] cytochrome) (NN:[112..116] P450))
+            (NN:[117..120] 3A4)))))
+    (.:[120..121] .)))
+
+;section 2 Span:125..178
+;Iribarne C, Dreano Y, Bardou LG, Menez JF, Berthou F.
+(SEC
+  (FRAG (NNP:[125..133] Iribarne) (NNP:[134..135] C) (,:[135..136] ,)
+        (NNP:[137..143] Dreano) (NNP:[144..145] Y) (,:[145..146] ,)
+        (NNP:[147..153] Bardou) (NNP:[154..156] LG) (,:[156..157] ,)
+        (NNP:[158..163] Menez) (NNP:[164..166] JF) (,:[166..167] ,)
+        (NNP:[168..175] Berthou) (NNP:[176..178] F.)))
+
+;section 3 Span:182..280
+;Equipe d'Accueil EA 948, Laboratoires de Biochimie-Nutrition, Faculte de 
+;medecine, Brest, France.
+(SEC
+  (FRAG (NN:[182..188] Equipe) (NN:[189..198] d'Accueil) (NNS:[199..201] EA)
+        (CD:[202..205] 948) (,:[205..206] ,) (NNP:[207..219] Laboratoires)
+        (IN:[220..222] de) (NNP:[223..233] Biochimie-)
+        (NNP:[233..242] Nutrition) (,:[242..243] ,) (NNP:[244..251] Faculte)
+        (IN:[252..254] de) (NN:[256..264] medecine) (,:[264..265] ,)
+        (NNP:[266..271] Brest) (,:[271..272] ,) (NNP:[273..279] France)
+        (.:[279..280] .)))
+
+;sentence 4 Span:284..383
+;Methadone, a synthetic drug, is one of the most widely used drugs for opiate 
+;dependency treatment.
+;[284..293]:substance:"Methadone"
+;[307..311]:substance:"drug"
+;[344..349]:substance:"drugs"
+;[354..360]:substance:"opiate"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[284..293] Methadone))
+      (,:[293..294] ,)
+      (NP (DT:[295..296] a) (JJ:[297..306] synthetic) (NN:[307..311] drug)))
+    (,:[311..312] ,)
+    (VP (VBZ:[313..315] is)
+      (NP-PRD
+        (NP (CD:[316..319] one))
+        (PP (IN:[320..322] of)
+          (NP
+            (NP (DT:[323..326] the)
+              (ADJP
+                (ADVP (RBS:[327..331] most) (RB:[332..338] widely))
+                (VBN:[339..343] used))
+              (NNS:[344..349] drugs))
+            (PP (IN:[350..353] for)
+              (NP
+                (NML (NN:[354..360] opiate) (NN:[362..372] dependency))
+                (NN:[373..382] treatment)))))))
+    (.:[382..383] .)))
+
+;sentence 5 Span:384..496
+;This drug has been demonstrated to be extensively  metabolized by cytochrome
+;P450 3A4 in human liver microsomes.
+;[389..393]:substance:"drug"
+;[450..469]:cyp450:"cytochrome P450 3A4"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[384..388] This) (NN:[389..393] drug))
+    (VP (VBZ:[394..397] has)
+      (VP (VBN:[398..402] been)
+        (VP (VBN:[403..415] demonstrated)
+          (S
+            (NP-SBJ-1 (-NONE-:[415..415] *))
+            (VP (TO:[416..418] to)
+              (VP (VB:[419..421] be)
+                (ADVP (RB:[422..433] extensively))
+                (VP (VBN:[435..446] metabolized)
+                  (NP-1 (-NONE-:[446..446] *))
+                  (PP (IN:[447..449] by)
+                    (NP-LGS (NN:[450..460] cytochrome) (NN:[461..465] P450)
+                            (NN:[466..469] 3A4)))
+                  (PP-LOC (IN:[470..472] in)
+                    (NP (JJ:[473..478] human) (NN:[479..484] liver)
+                        (NNS:[485..495] microsomes))))))))))
+    (.:[495..496] .)))
+
+;sentence 6 Span:497..650
+;Thus, the aim of  this in vitro study was to determine if methadone is an
+;inhibitor of other P450s  characterized by their specific catalytic
+;activities.
+;[555..564]:substance:"methadone"
+;[571..580]:substance:"inhibitor"
+;[590..595]:cyp450:"P450s"
+(SENT
+  (S
+    (ADVP (RB:[497..501] Thus))
+    (,:[501..502] ,)
+    (NP-SBJ-1
+      (NP (DT:[503..506] the) (NN:[507..510] aim))
+      (PP (IN:[511..513] of)
+        (NP (DT:[515..519] this)
+          (ADJP (FW:[520..522] in) (FW:[523..528] vitro))
+          (NN:[529..534] study))))
+    (VP (VBD:[535..538] was)
+      (S-PRP-PRD
+        (NP-SBJ-1 (-NONE-:[538..538] *))
+        (VP (TO:[539..541] to)
+          (VP (VB:[542..551] determine)
+            (SBAR (IN:[552..554] if)
+              (S
+                (NP-SBJ (NN:[555..564] methadone))
+                (VP (VBZ:[565..567] is)
+                  (NP-PRD
+                    (NP (DT:[568..570] an) (NN:[571..580] inhibitor))
+                    (PP (IN:[581..583] of)
+                      (NP
+                        (NP (JJ:[584..589] other) (NNS:[590..595] P450s))
+                        (VP (VBN:[597..610] characterized)
+                          (NP (-NONE-:[610..610] *))
+                          (PP (IN:[611..613] by)
+                            (NP-LGS (PRP$:[614..619] their)
+                                    (JJ:[620..628] specific)
+                                    (JJ:[629..638] catalytic)
+                                    (NNS:[639..649] activities))))))))))))))
+    (.:[649..650] .)))
+
+;sentence 7 Span:651..757
+;Enzymatic activities  specific to P450 2E1, P450 1A, P450 2B and P450 2C were
+;not inhibited by  methadone.
+;[685..693]:cyp450:"P450 2E1"
+;[695..702]:cyp450:"P450 1A"
+;[704..711]:cyp450:"P450 2B"
+;[716..723]:cyp450:"P450 2C"
+;[747..756]:substance:"methadone"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[651..660] Enzymatic) (NNS:[661..671] activities))
+      (ADJP (JJ:[673..681] specific)
+        (PP (TO:[682..684] to)
+          (NP
+            (NP (NN:[685..689] P450) (NN:[690..693] 2E1))
+            (,:[693..694] ,)
+            (NP (NN:[695..699] P450) (NN:[700..702] 1A))
+            (,:[702..703] ,)
+            (NP (NN:[704..708] P450) (NN:[709..711] 2B))
+            (CC:[712..715] and)
+            (NP (NN:[716..720] P450) (NN:[721..723] 2C))))))
+    (VP (VBD:[724..728] were) (RB:[729..732] not)
+      (VP (VBN:[733..742] inhibited)
+        (NP-1 (-NONE-:[742..742] *))
+        (PP (IN:[743..745] by)
+          (NP-LGS (NN:[747..756] methadone)))))
+    (.:[756..757] .)))
+
+;sentence 8 Span:758..924
+;Conversely, nifedipine oxidation, mediated by cytochrome P450 3A4,  was
+;potently inhibited by methadone by a mixed-type inhibition mechanism with a 
+;Ki of 100 microM.
+;[770..780]:substance:"nifedipine"
+;[804..823]:cyp450:"cytochrome P450 3A4"
+;[852..861]:substance:"methadone"
+;[907..909]:quantitative-name:"Ki"
+;[913..916]:quantitative-value:"100"
+;[917..923]:quantitative-units:"microM"
+(SENT
+  (S
+    (ADVP (RB:[758..768] Conversely))
+    (,:[768..769] ,)
+    (NP-SBJ-1
+      (NP (NN:[770..780] nifedipine) (NN:[781..790] oxidation))
+      (,:[790..791] ,)
+      (VP (VBN:[792..800] mediated)
+        (NP (-NONE-:[800..800] *))
+        (PP (IN:[801..803] by)
+          (NP-LGS (NN:[804..814] cytochrome) (NN:[815..819] P450)
+                  (NN:[820..823] 3A4)))))
+    (,:[823..824] ,)
+    (VP (VBD:[826..829] was)
+      (ADVP (RB:[830..838] potently))
+      (VP (VBN:[839..848] inhibited)
+        (NP-1 (-NONE-:[848..848] *))
+        (PP (IN:[849..851] by)
+          (NP-LGS (NN:[852..861] methadone)))
+        (PP-MNR (IN:[862..864] by)
+          (NP (DT:[865..866] a)
+            (NML (VBN:[867..872] mixed) (HYPH:[872..873] -) (NN:[873..877] type))
+            (NN:[878..888] inhibition) (NN:[889..898] mechanism)))
+        (PP (IN:[899..903] with)
+          (NP
+            (NP (DT:[904..905] a) (NN:[907..909] Ki))
+            (PP (IN:[910..912] of)
+              (NP (CD:[913..916] 100) (NN:[917..923] microM)))))))
+    (.:[923..924] .)))
+
+;sentence 9 Span:925..1058
+;Fluvoxamine, a new antidepressant, was shown to be a potent  mixed-type
+;inhibitor of methadone N-demethylation with a Ki of 7 microM.
+;[925..936]:substance:"Fluvoxamine"
+;[944..958]:substance:"antidepressant"
+;[997..1006]:substance:"inhibitor"
+;[1010..1019]:substance:"methadone"
+;[1043..1045]:quantitative-name:"Ki"
+;[1049..1050]:quantitative-value:"7"
+;[1051..1057]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[925..936] Fluvoxamine))
+      (,:[936..937] ,)
+      (NP (DT:[938..939] a) (JJ:[940..943] new) (NN:[944..958] antidepressant)))
+    (,:[958..959] ,)
+    (VP (VBD:[960..963] was)
+      (VP (VBN:[964..969] shown)
+        (S
+          (NP-SBJ-1 (-NONE-:[969..969] *))
+          (VP (TO:[970..972] to)
+            (VP (VB:[973..975] be)
+              (NP-PRD
+                (NP (DT:[976..977] a) (JJ:[978..984] potent)
+                  (NML (VBN:[986..991] mixed) (HYPH:[991..992] -)
+                       (NN:[992..996] type))
+                  (NN:[997..1006] inhibitor))
+                (PP (IN:[1007..1009] of)
+                  (NP (NN:[1010..1019] methadone)
+                      (NN:[1020..1035] N-demethylation)))
+                (PP (IN:[1036..1040] with)
+                  (NP
+                    (NP (DT:[1041..1042] a) (NN:[1043..1045] Ki))
+                    (PP (IN:[1046..1048] of)
+                      (NP (CD:[1049..1050] 7) (NN:[1051..1057] microM)))))))))))
+    (.:[1057..1058] .)))
+
+;sentence 10 Span:1060..1174
+;Finally, methadone appears to be a mixed-type inhibitor and not a suicide 
+;inhibitor of cytochrome P450 3A family.
+;[1069..1078]:substance:"methadone"
+;[1106..1115]:substance:"inhibitor"
+;[1135..1144]:substance:"inhibitor"
+;[1148..1166]:cyp450:"cytochrome P450 3A"
+(SENT
+  (S
+    (ADVP (RB:[1060..1067] Finally))
+    (,:[1067..1068] ,)
+    (NP-SBJ (NN:[1069..1078] methadone))
+    (VP (VBZ:[1079..1086] appears)
+      (S
+        (NP-SBJ (-NONE-:[1086..1086] *))
+        (VP (TO:[1087..1089] to)
+          (VP
+            (VP (VB:[1090..1092] be)
+              (NP-PRD (DT:[1093..1094] a)
+                (NML (VBN:[1095..1100] mixed) (HYPH:[1100..1101] -)
+                     (NN:[1101..1105] type))
+                (NN:[1106..1115] inhibitor)))
+            (CC:[1116..1119] and)
+            (VP (RB:[1120..1123] not)
+              (NP-PRD
+                (NP (DT:[1124..1125] a) (NN:[1126..1133] suicide)
+                    (NN:[1135..1144] inhibitor))
+                (PP (IN:[1145..1147] of)
+                  (NP
+                    (NML
+                      (NML (NN:[1148..1158] cytochrome) (NN:[1159..1163] P450))
+                      (NN:[1164..1166] 3A))
+                    (NN:[1167..1173] family)))))))))
+    (.:[1173..1174] .)))
+
+;sentence 11 Span:1175..1388
+;Accordingly, caution should be advised  in the clinical use of methadone when
+;other drugs are administered that are able  to induce or inhibit P450 3A4,
+;such as rifampicin or nifedipine, diazepam and  fluvoxamine.
+;[1238..1247]:substance:"methadone"
+;[1259..1264]:substance:"drugs"
+;[1318..1326]:cyp450:"P450 3A4"
+;[1336..1346]:substance:"rifampicin"
+;[1350..1360]:substance:"nifedipine"
+;[1362..1370]:substance:"diazepam"
+;[1376..1387]:substance:"fluvoxamine"
+(SENT
+  (S
+    (ADVP (RB:[1175..1186] Accordingly))
+    (,:[1186..1187] ,)
+    (NP-SBJ-4 (NN:[1188..1195] caution))
+    (VP (MD:[1196..1202] should)
+      (VP (VB:[1203..1205] be)
+        (VP (VBN:[1206..1213] advised)
+          (NP-4 (-NONE-:[1213..1213] *))
+          (PP (IN:[1215..1217] in)
+            (NP
+              (NP (DT:[1218..1221] the) (JJ:[1222..1230] clinical)
+                  (NN:[1231..1234] use))
+              (PP (IN:[1235..1237] of)
+                (NP (NN:[1238..1247] methadone)))))
+          (SBAR-TMP
+            (WHADVP-3 (WRB:[1248..1252] when))
+            (S
+              (NP-SBJ-5
+                (NP
+                  (NP (JJ:[1253..1258] other) (NNS:[1259..1264] drugs))
+                  (SBAR-6 (-NONE-:[1264..1264] *ICH*)))
+                (PP-1 (-NONE-:[1264..1264] *ICH*)))
+              (VP (VBP:[1265..1268] are)
+                (VP (VBN:[1269..1281] administered)
+                  (NP-5 (-NONE-:[1281..1281] *))
+                  (SBAR-6
+                    (WHNP-2 (WDT:[1282..1286] that))
+                    (S
+                      (NP-SBJ-2 (-NONE-:[1286..1286] *T*))
+                      (VP (VBP:[1287..1290] are)
+                        (ADJP-PRD (JJ:[1291..1295] able)
+                          (S
+                            (NP-SBJ (-NONE-:[1295..1295] *))
+                            (VP (TO:[1297..1299] to)
+                              (VP (VB:[1300..1306] induce) (CC:[1307..1309] or)
+                                  (VB:[1310..1317] inhibit)
+                                (NP (NN:[1318..1322] P450) (NN:[1323..1326] 3A4)))))))))
+                  (,:[1326..1327] ,)
+                  (PP-1 (JJ:[1328..1332] such) (IN:[1333..1335] as)
+                    (NP
+                      (NP (NN:[1336..1346] rifampicin))
+                      (CC:[1347..1349] or)
+                      (NP (NN:[1350..1360] nifedipine) (,:[1360..1361] ,)
+                          (NN:[1362..1370] diazepam) (CC:[1371..1374] and)
+                          (NN:[1376..1387] fluvoxamine))))
+                  (ADVP-TMP-3 (-NONE-:[1387..1387] *T*)))))))))
+    (.:[1387..1388] .)))
+
+;section 12 Span:1392..1436
+;PMID: 9020195 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1392..1396] PMID) (::[1396..1397] :) (CD:[1398..1405] 9020195)
+        (NN:[1406..1407] -LSB-) (NNP:[1407..1413] PubMed) (::[1414..1415] -)
+        (NN:[1416..1423] indexed) (IN:[1424..1427] for)
+        (NNP:[1428..1436] MEDLINE-RSB-)))

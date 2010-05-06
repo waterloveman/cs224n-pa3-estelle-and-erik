@@ -1,0 +1,337 @@
+;PMID: 3514847
+;source_file_1950.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..123] = [t:50..123]
+;2)sentence:[e:124..188] = [t:null]
+;3)section:[e:null] = [t:129..188]
+;4)section:[e:192..260] = [t:192..260]
+;5)sentence:[e:264..623] = [t:264..623]
+;6)sentence:[e:624..794] = [t:624..794]
+;7)sentence:[e:795..1086] = [t:795..1086]
+;8)sentence:[e:1087..1420] = [t:1087..1420]
+;9)sentence:[e:1421..1570] = [t:1421..1570]
+;10)section:[e:1574..1618] = [t:1574..1618]
+;Sentence Matching Errors
+;ERROR_Entity section missing treebank section[124..188]
+;ERROR_Tree section missing entity section[129..188]
+;ERROR_Entity not in any tree[139..155] substance "cyclophosphamide"
+;ERROR_Entity not in any tree[163..180] substance "aldoketoreductase"
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[124..127] II.
+
+;section 0 Span:0..44
+;J Pharmacol Exp Ther. 1986 Apr;237(1):271-4.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1986)
+        (NNP:[27..35] Apr;237-LRB-) (CD:[35..36] 1) (-RRB-:[36..37] -RRB-)
+        (CD:[37..41] :271) (::[41..42] -) (CD:[42..44] 4.)))
+
+;sentence 1 Span:50..123
+;Interactions between cyclophosphamide and doxorubicin metabolism in rats.
+;[71..87]:substance:"cyclophosphamide"
+;[92..103]:substance:"doxorubicin"
+(SENT
+  (NP-HLN
+    (NP (NNS:[50..62] Interactions))
+    (PP (IN:[63..70] between)
+      (NP
+        (NP (NN:[71..87] cyclophosphamide)
+          (NML-1 (-NONE-:[87..87] *P*)))
+        (CC:[88..91] and)
+        (NP (NN:[92..103] doxorubicin)
+          (NML-1 (NN:[104..114] metabolism)))))
+    (PP-LOC (IN:[115..117] in)
+      (NP (NNS:[118..122] rats)))
+    (.:[122..123] .)))
+
+(ORPH II.)
+
+;section 2 Span:129..188
+;Effect of cyclophosphamide on the aldoketoreductase system.
+(SEC
+  (NP-HLN
+    (NP (NN:[129..135] Effect))
+    (PP (IN:[136..138] of)
+      (NP (NN:[139..155] cyclophosphamide)))
+    (PP (IN:[156..158] on)
+      (NP (DT:[159..162] the) (NN:[163..180] aldoketoreductase)
+          (NN:[181..187] system)))
+    (.:[187..188] .)))
+;ERROR_Orphan Text from Tree File[123..129] II.
+
+;section 3 Span:192..260
+;Dodion P, Akman SR, Tamburini JM, Riggs CE Jr, Colvin OM, Bachur NR.
+(SEC
+  (FRAG (NNP:[192..198] Dodion) (NNP:[199..200] P) (,:[200..201] ,)
+        (NNP:[202..207] Akman) (NNP:[208..210] SR) (,:[210..211] ,)
+        (NNP:[212..221] Tamburini) (NNP:[222..224] JM) (,:[224..225] ,)
+        (NNP:[226..231] Riggs) (IN:[232..234] CE) (NNP:[235..237] Jr)
+        (,:[237..238] ,) (NNP:[239..245] Colvin) (NNP:[246..248] OM)
+        (,:[248..249] ,) (NNP:[250..256] Bachur) (NNP:[257..259] NR)
+        (.:[259..260] .)))
+
+;sentence 4 Span:264..623
+;Under anaerobic conditions, in comparison to liver microsomes obtained from 
+;normal controls, liver microsomes obtained from rats pretreated with 
+;cyclophosphamide formed significantly less 7-deoxydoxorubicinol aglycone (P
+;less  than or equal to .05), whereas the disappearance of doxorubicin and the
+; formation of 7-deoxydoxorubicin aglycone were unaffected.
+;[411..427]:substance:"cyclophosphamide"
+;[454..483]:substance:"7-deoxydoxorubicinol aglycone"
+;[545..556]:substance:"doxorubicin"
+;[579..606]:substance:"7-deoxydoxorubicin aglycone"
+(SENT
+  (S
+    (PP (IN:[264..269] Under)
+      (NP (JJ:[270..279] anaerobic) (NNS:[280..290] conditions)))
+    (,:[290..291] ,)
+    (PP (IN:[292..294] in)
+      (NP
+        (NP (NN:[295..305] comparison))
+        (PP (TO:[306..308] to)
+          (NP
+            (NP (NN:[309..314] liver) (NNS:[315..325] microsomes))
+            (VP (VBN:[326..334] obtained)
+              (NP (-NONE-:[334..334] *))
+              (PP (IN:[335..339] from)
+                (NP (JJ:[341..347] normal) (NNS:[348..356] controls))))))))
+    (,:[356..357] ,)
+    (NP-SBJ
+      (NP (NN:[358..363] liver) (NNS:[364..374] microsomes))
+      (VP (VBN:[375..383] obtained)
+        (NP (-NONE-:[383..383] *))
+        (PP (IN:[384..388] from)
+          (NP
+            (NP (NNS:[389..393] rats))
+            (VP (VBN:[394..404] pretreated)
+              (NP (-NONE-:[404..404] *))
+              (PP-MNR (IN:[405..409] with)
+                (NP (NN:[411..427] cyclophosphamide))))))))
+    (VP (VBD:[428..434] formed)
+      (NP
+        (ADJP (RB:[435..448] significantly) (JJR:[449..453] less))
+         (NN:[454..474] 7-deoxydoxorubicinol) (NN:[475..483] aglycone)
+        (PRN (-LRB-:[484..485] -LRB-)
+          (S
+            (NP-SBJ (NN:[485..486] P))
+            (ADJP-PRD
+              (ADJP
+                (ADJP (JJR:[487..491] less))
+                (PP (IN:[493..497] than)
+                  (NP-2 (-NONE-:[497..497] *RNR*))))
+              (CC:[498..500] or)
+              (ADJP (JJ:[501..506] equal)
+                (PP (TO:[507..509] to)
+                  (NP-2 (-NONE-:[509..509] *RNR*))))
+              (NP-2 (CD:[510..513] .05))))
+          (-RRB-:[513..514] -RRB-)))
+      (,:[514..515] ,)
+      (SBAR-ADV (IN:[516..523] whereas)
+        (S
+          (NP-SBJ-1
+            (NP
+              (NP (DT:[524..527] the) (NN:[528..541] disappearance))
+              (PP (IN:[542..544] of)
+                (NP (NN:[545..556] doxorubicin))))
+            (CC:[557..560] and)
+            (NP
+              (NP (DT:[561..564] the) (NN:[566..575] formation))
+              (PP (IN:[576..578] of)
+                (NP (NN:[579..597] 7-deoxydoxorubicin) (NN:[598..606] aglycone)))))
+          (VP (VBD:[607..611] were)
+            (VP (JJ:[612..622] unaffected)
+              (NP-1 (-NONE-:[622..622] *)))))))
+    (.:[622..623] .)))
+
+;sentence 5 Span:624..794
+;When directly  investigated, the reduction of 7-deoxydoxorubicin aglycone to 
+;7-deoxydoxorubicinol aglycone by microsomes was inhibited by cyclophosphamide
+; pretreatment.
+;[670..697]:substance:"7-deoxydoxorubicin aglycone"
+;[702..731]:substance:"7-deoxydoxorubicinol aglycone"
+;[763..779]:substance:"cyclophosphamide"
+(SENT
+  (S
+    (SBAR-ADV
+      (WHADVP-2 (WRB:[624..628] When))
+      (S
+        (NP-SBJ-3 (-NONE-:[628..628] *))
+        (ADVP (RB:[629..637] directly))
+        (VP (VBN:[639..651] investigated)
+          (NP-3 (-NONE-:[651..651] *))
+          (ADVP-TMP-2 (-NONE-:[651..651] *T*)))))
+    (,:[651..652] ,)
+    (NP-SBJ-1
+      (NP (DT:[653..656] the) (NN:[657..666] reduction))
+      (PP (IN:[667..669] of)
+        (NP (NN:[670..688] 7-deoxydoxorubicin) (NN:[689..697] aglycone)))
+      (PP (TO:[698..700] to)
+        (NP (NN:[702..722] 7-deoxydoxorubicinol) (NN:[723..731] aglycone)))
+      (PP (IN:[732..734] by)
+        (NP (NNS:[735..745] microsomes))))
+    (VP (VBD:[746..749] was)
+      (VP (VBN:[750..759] inhibited)
+        (NP-1 (-NONE-:[759..759] *))
+        (PP (IN:[760..762] by)
+          (NP-LGS (NN:[763..779] cyclophosphamide) (NN:[781..793] pretreatment)))))
+    (.:[793..794] .)))
+
+;sentence 6 Span:795..1086
+;Liver cytosols from controls and cyclophosphamide-treated rats  reduced
+;daunorubicin to daunorubicinol and 7-deoxydoxorubicin aglycone to 
+;7-deoxydoxorubicinol aglycone at the same rate, which indicates the lack of 
+;effect of cyclophosphamide pretreatment on the cytosolic aldoketoreductase.
+;[828..844]:substance:"cyclophosphamide"
+;[867..879]:substance:"daunorubicin"
+;[883..897]:substance:"daunorubicinol"
+;[902..929]:substance:"7-deoxydoxorubicin aglycone"
+;[934..963]:substance:"7-deoxydoxorubicinol aglycone"
+;[1021..1037]:substance:"cyclophosphamide"
+;[1068..1085]:substance:"aldoketoreductase"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[795..800] Liver) (NNS:[801..809] cytosols))
+      (PP (IN:[810..814] from)
+        (NP
+          (NP (NNS:[815..823] controls))
+          (CC:[824..827] and)
+          (NP
+            (ADJP (NN:[828..844] cyclophosphamide) (HYPH:[844..845] -)
+                  (VBN:[845..852] treated))
+            (NNS:[853..857] rats)))))
+    (VP
+      (VP (VBD:[859..866] reduced)
+        (NP=2 (NN:[867..879] daunorubicin))
+        (PP=3 (TO:[880..882] to)
+          (NP (NN:[883..897] daunorubicinol))))
+      (CC:[898..901] and)
+      (VP
+        (NP=2 (NN:[902..920] 7-deoxydoxorubicin) (NN:[921..929] aglycone))
+        (PP=3 (TO:[930..932] to)
+          (NP (NN:[934..954] 7-deoxydoxorubicinol) (NN:[955..963] aglycone))))
+      (PP (IN:[964..966] at)
+        (NP (DT:[967..970] the) (JJ:[971..975] same) (NN:[976..980] rate)))
+      (,:[980..981] ,)
+      (SBAR-ADV
+        (WHNP-1 (WDT:[982..987] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[987..987] *T*))
+          (VP (VBZ:[988..997] indicates)
+            (NP
+              (NP (DT:[998..1001] the) (NN:[1002..1006] lack))
+              (PP (IN:[1007..1009] of)
+                (NP
+                  (NP (NN:[1011..1017] effect))
+                  (PP (IN:[1018..1020] of)
+                    (NP (NN:[1021..1037] cyclophosphamide)
+                        (NN:[1038..1050] pretreatment)))
+                  (PP (IN:[1051..1053] on)
+                    (NP (DT:[1054..1057] the) (JJ:[1058..1067] cytosolic)
+                        (NN:[1068..1085] aldoketoreductase))))))))))
+    (.:[1085..1086] .)))
+
+;sentence 7 Span:1087..1420
+;The  results suggest the existence of a microsomal carbonyl reduction system
+;for  anthracycline antibiotics and indicate that cyclophosphamide does affect
+;the  metabolism of doxorubicin; in rats, this interaction results only in an 
+;alteration of the relative concentrations of presumably inactive metabolites,
+; the 7-deoxyaglycones.
+;[1169..1194]:substance:"anthracycline antibiotics"
+;[1213..1229]:substance:"cyclophosphamide"
+;[1261..1272]:substance:"doxorubicin"
+;[1385..1396]:substance:"metabolites"
+;[1403..1419]:substance:"7-deoxyaglycones"
+(SENT
+  (S
+    (S
+      (NP-SBJ (DT:[1087..1090] The) (NNS:[1092..1099] results))
+      (VP
+        (VP (VBP:[1100..1107] suggest)
+          (NP
+            (NP (DT:[1108..1111] the) (NN:[1112..1121] existence))
+            (PP (IN:[1122..1124] of)
+              (NP
+                (NP (DT:[1125..1126] a) (JJ:[1127..1137] microsomal)
+                    (NN:[1138..1146] carbonyl) (NN:[1147..1156] reduction)
+                    (NN:[1157..1163] system))
+                (PP (IN:[1164..1167] for)
+                  (NP (NN:[1169..1182] anthracycline)
+                      (NNS:[1183..1194] antibiotics)))))))
+        (CC:[1195..1198] and)
+        (VP (VBP:[1199..1207] indicate)
+          (SBAR (IN:[1208..1212] that)
+            (S
+              (NP-SBJ (NN:[1213..1229] cyclophosphamide))
+              (VP (VBZ:[1230..1234] does)
+                (VP (VB:[1235..1241] affect)
+                  (NP
+                    (NP (DT:[1242..1245] the) (NN:[1247..1257] metabolism))
+                    (PP (IN:[1258..1260] of)
+                      (NP (NN:[1261..1272] doxorubicin)))))))))))
+    (::[1272..1273] ;)
+    (S
+      (PP-LOC (IN:[1274..1276] in)
+        (NP (NNS:[1277..1281] rats)))
+      (,:[1281..1282] ,)
+      (NP-SBJ (DT:[1283..1287] this) (NN:[1288..1299] interaction))
+      (VP (VBZ:[1300..1307] results)
+        (ADVP (RB:[1308..1312] only))
+        (PP (IN:[1313..1315] in)
+          (NP
+            (NP (DT:[1316..1318] an) (NN:[1320..1330] alteration))
+            (PP (IN:[1331..1333] of)
+              (NP
+                (NP (DT:[1334..1337] the) (JJ:[1338..1346] relative)
+                    (NNS:[1347..1361] concentrations))
+                (PP (IN:[1362..1364] of)
+                  (NP
+                    (NP
+                      (ADJP (RB:[1365..1375] presumably)
+                            (JJ:[1376..1384] inactive))
+                      (NNS:[1385..1396] metabolites))
+                    (,:[1396..1397] ,)
+                    (NP (DT:[1399..1402] the)
+                        (NNS:[1403..1419] 7-deoxyaglycones))))))))))
+    (.:[1419..1420] .)))
+
+;sentence 8 Span:1421..1570
+;The importance of these findings for the pharmacological  interaction between
+;doxorubicin and cyclophosphamide in humans remains to be  investigated.
+;[1499..1510]:substance:"doxorubicin"
+;[1515..1531]:substance:"cyclophosphamide"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1421..1424] The) (NN:[1425..1435] importance))
+      (PP (IN:[1436..1438] of)
+        (NP (DT:[1439..1444] these) (NNS:[1445..1453] findings)))
+      (PP (IN:[1454..1457] for)
+        (NP
+          (NP (DT:[1458..1461] the) (JJ:[1462..1477] pharmacological)
+              (NN:[1479..1490] interaction))
+          (PP (IN:[1491..1498] between)
+            (NP (NN:[1499..1510] doxorubicin) (CC:[1511..1514] and)
+                (NN:[1515..1531] cyclophosphamide)))
+          (PP-LOC (IN:[1532..1534] in)
+            (NP (NNS:[1535..1541] humans))))))
+    (VP (VBZ:[1542..1549] remains)
+      (S-PRD
+        (NP-SBJ-1 (-NONE-:[1549..1549] *))
+        (VP (TO:[1550..1552] to)
+          (VP (VB:[1553..1555] be)
+            (VP (VBN:[1557..1569] investigated)
+              (NP-1 (-NONE-:[1569..1569] *)))))))
+    (.:[1569..1570] .)))
+
+;section 9 Span:1574..1618
+;PMID: 3514847 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1574..1578] PMID) (::[1578..1579] :) (CD:[1580..1587] 3514847)
+        (NN:[1588..1589] -LSB-) (NNP:[1589..1595] PubMed) (::[1596..1597] -)
+        (NN:[1598..1605] indexed) (IN:[1606..1609] for)
+        (NNP:[1610..1618] MEDLINE-RSB-)))

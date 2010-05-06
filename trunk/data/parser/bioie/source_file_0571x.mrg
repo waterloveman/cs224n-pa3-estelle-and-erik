@@ -1,0 +1,315 @@
+;PMID: 12871580
+;source_file_2883.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..150] = [t:43..150]
+;2)section:[e:154..219] = [t:154..219]
+;3)section:[e:223..324] = [t:223..324]
+;4)sentence:[e:328..455] = [t:328..455]
+;5)sentence:[e:456..510] = [t:456..510]
+;6)sentence:[e:511..645] = [t:511..645]
+;7)sentence:[e:646..759] = [t:646..759]
+;8)sentence:[e:760..993] = [t:760..993]
+;9)sentence:[e:994..1070] = [t:994..1070]
+;10)sentence:[e:1071..1212] = [t:1071..1212]
+;11)sentence:[e:1213..1367] = [t:1213..1367]
+;12)section:[e:1371..1416] = [t:1371..1416]
+
+;section 0 Span:0..37
+;J Neurochem.  2003 Jul;86(2):394-404.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Neurochem) (.:[11..12] .) ('':[14..18] 2003)
+        (NNP:[19..24] Jul;8) (CD:[24..26] 6-LRB-) (CD:[26..27] 2)
+        (-RRB-:[27..28] -RRB-) (::[28..29] :) (CD:[29..32] 394)
+        (CD:[32..36] -404) (.:[36..37] .)))
+
+;sentence 1 Span:43..150
+;Alzheimer's associated variant ubiquitin causes inhibition of the 26S
+;proteasome  and chaperone expression.
+;[74..83]:gene-protein:"ubiquitin"
+;[109..123]:gene-protein:"26S proteasome"
+;[129..138]:gene-protein:"chaperone"
+(SENT
+  (S
+    (NP-SBJ
+      (NML
+        (NML
+          (NP (NNP:[43..52] Alzheimer) (POS:[52..54] 's))
+          (ADJP (VBN:[55..65] associated)))
+        (JJ:[66..73] variant))
+      (NN:[74..83] ubiquitin))
+    (VP (VBZ:[84..90] causes)
+      (NP
+        (NP (NN:[91..101] inhibition))
+        (PP (IN:[102..104] of)
+          (NP (DT:[105..108] the)
+            (NML
+              (NML
+                (NML (NN:[109..112] 26S) (NN:[113..123] proteasome))
+                (NML-1 (-NONE-:[123..123] *P*)))
+              (CC:[125..128] and)
+              (NML (NN:[129..138] chaperone)
+                (NML-1 (NN:[139..149] expression))))))))
+    (.:[149..150] .)))
+
+;section 2 Span:154..219
+;Hope AD, de Silva R, Fischer DF, Hol EM, van Leeuwen FW, Lees AJ.
+(SEC
+  (FRAG (NNP:[154..158] Hope) (NNP:[159..161] AD) (,:[161..162] ,)
+        (NNP:[163..165] de) (NNP:[166..171] Silva) (NNP:[172..173] R)
+        (,:[173..174] ,) (NNP:[175..182] Fischer) (NNP:[183..185] DF)
+        (,:[185..186] ,) (NNP:[187..190] Hol) (NNP:[191..193] EM)
+        (,:[193..194] ,) (NNP:[195..198] van) (NNP:[199..206] Leeuwen)
+        (NNP:[207..209] FW) (,:[209..210] ,) (NNP:[211..215] Lees)
+        (NNP:[216..219] AJ.)))
+
+;section 3 Span:223..324
+;Reta Lila Weston Institute of Neurological Studies, University College,
+;London,  UK. a.hope@ucl.ac.uk
+(SEC
+  (FRAG (NNP:[223..227] Reta) (NNP:[228..232] Lila) (NNP:[233..239] Weston)
+        (NNP:[240..249] Institute) (IN:[250..252] of)
+        (NNP:[253..265] Neurological) (NNS:[266..273] Studies) (,:[273..274] ,)
+        (NNP:[275..285] University) (NNP:[286..293] College) (,:[293..294] ,)
+        (NNP:[295..301] London) (,:[301..302] ,) (NNP:[304..307] UK.)
+        (DT:[308..309] a) (NN:[309..318] .hope@ucl) (.:[318..324] .ac.uk)))
+
+;sentence 4 Span:328..455
+;Intracellular protein inclusions in Alzheimer's disease and progressive 
+;supranuclear palsy contain UBB+1, a variant ubiquitin.
+;[428..433]:gene-protein:"UBB+1"
+;[445..454]:gene-protein:"ubiquitin"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[328..341] Intracellular) (NN:[342..349] protein)
+            (NNS:[350..360] inclusions))
+        (PP (IN:[361..363] in)
+          (NP
+            (NP (NNP:[364..373] Alzheimer) (POS:[373..375] 's))
+            (NN:[376..383] disease))))
+      (CC:[384..387] and)
+      (NP (JJ:[388..399] progressive) (JJ:[401..413] supranuclear)
+          (NN:[414..419] palsy)))
+    (VP (VBP:[420..427] contain)
+      (NP
+        (NP (NN:[428..433] UBB+1))
+        (,:[433..434] ,)
+        (NP (DT:[435..436] a) (JJ:[437..444] variant) (NN:[445..454] ubiquitin))))
+    (.:[454..455] .)))
+
+;sentence 5 Span:456..510
+;UBB+1 is able block the  26S proteasome in cell lines.
+;[456..461]:gene-protein:"UBB+1"
+;[481..495]:gene-protein:"26S proteasome"
+(SENT
+  (S
+    (NP-SBJ (NN:[456..461] UBB+1))
+    (VP (VBZ:[462..464] is)
+      (ADJP-PRD (JJ:[465..469] able)
+        (S
+          (NP-SBJ (-NONE-:[469..469] *))
+          (VP (VB:[470..475] block)
+            (NP (DT:[476..479] the)
+               (NN:[481..484] 26S) (NN:[485..495] proteasome))
+            (PP (IN:[496..498] in)
+              (NP (NN:[499..503] cell) (NNS:[504..509] lines)))))))
+    (.:[509..510] .)))
+
+;sentence 6 Span:511..645
+;Proteasome inhibition by drug action has  previously been shown to induce a
+;heat-shock response and render protection  against stress.
+;[511..521]:gene-protein:"Proteasome"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[511..521] Proteasome) (NN:[522..532] inhibition))
+      (PP (IN:[533..535] by)
+        (NP (NN:[536..540] drug) (NN:[541..547] action))))
+    (VP (VBZ:[548..551] has)
+      (ADVP-TMP (RB:[553..563] previously))
+      (VP (VBN:[564..568] been)
+        (VP (VBN:[569..574] shown)
+          (S
+            (NP-SBJ-1 (-NONE-:[574..574] *))
+            (VP (TO:[575..577] to)
+              (VP
+                (VP (VB:[578..584] induce)
+                  (NP (DT:[585..586] a)
+                    (ADJP (NN:[587..591] heat) (HYPH:[591..592] -)
+                          (NN:[592..597] shock))
+                    (NN:[598..606] response)))
+                (CC:[607..610] and)
+                (VP (VB:[611..617] render)
+                  (NP
+                    (NP (NN:[618..628] protection))
+                    (PP (IN:[630..637] against)
+                      (NP (NN:[638..644] stress)))))))))))
+    (.:[644..645] .)))
+
+;sentence 7 Span:646..759
+;We investigated UBB+1 by developing a stable, conditional  expression model
+;in SH-SY5Y human neuroblastoma cells.
+;[662..667]:gene-protein:"UBB+1"
+;[739..752]:malignancy-type:"neuroblastoma"
+(SENT
+  (S
+    (NP-SBJ (PRP:[646..648] We))
+    (VP (VBD:[649..661] investigated)
+      (NP (NN:[662..667] UBB+1))
+      (PP-MNR (IN:[668..670] by)
+        (S-NOM
+          (NP-SBJ (-NONE-:[670..670] *))
+          (VP (VBG:[671..681] developing)
+            (NP (DT:[682..683] a) (JJ:[684..690] stable) (,:[690..691] ,)
+                (JJ:[692..703] conditional) (NN:[705..715] expression)
+                (NN:[716..721] model))
+            (PP (IN:[722..724] in)
+              (NP (NN:[725..732] SH-SY5Y) (JJ:[733..738] human)
+                  (NN:[739..752] neuroblastoma) (NNS:[753..758] cells)))))))
+    (.:[758..759] .)))
+
+;sentence 8 Span:760..993
+;Induction of UBB+1  expression caused proteasome inhibition as was confirmed
+;by reduced ability to  process misfolded canavanyl proteins, accumulation of
+;GFPu, a proteasome  substrate, and reduced cleavage of a fluorogenic
+;substrate.
+;[773..778]:gene-protein:"UBB+1"
+;[798..808]:gene-protein:"proteasome"
+;[878..896]:gene-protein:"canavanyl proteins"
+;[914..918]:gene-protein:"GFPu"
+;[922..932]:gene-protein:"proteasome"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[760..769] Induction))
+      (PP (IN:[770..772] of)
+        (NP (NN:[773..778] UBB+1) (NN:[780..790] expression))))
+    (VP (VBD:[791..797] caused)
+      (NP (NN:[798..808] proteasome) (NN:[809..819] inhibition))
+      (SBAR (IN:[820..822] as)
+        (S
+          (NP-SBJ-1 (-NONE-:[822..822] *))
+          (VP (VBD:[823..826] was)
+            (VP (VBN:[827..836] confirmed)
+              (NP-1 (-NONE-:[836..836] *))
+              (PP (IN:[837..839] by)
+                (NP
+                  (NP (VBN:[840..847] reduced) (NN:[848..855] ability)
+                    (S
+                      (NP-SBJ (-NONE-:[855..855] *))
+                      (VP (TO:[856..858] to)
+                        (VP (VB:[860..867] process)
+                          (NP (VBN:[868..877] misfolded)
+                             (NN:[878..887] canavanyl) (NNS:[888..896] proteins))))))
+                  (,:[896..897] ,)
+                  (NP
+                    (NP (NN:[898..910] accumulation))
+                    (PP (IN:[911..913] of)
+                      (NP
+                        (NP (NN:[914..918] GFPu))
+                        (,:[918..919] ,)
+                        (NP (DT:[920..921] a) (NN:[922..932] proteasome)
+                            (NN:[934..943] substrate)))))
+                  (,:[943..944] ,) (CC:[945..948] and)
+                  (NP
+                    (NP (VBN:[949..956] reduced) (NN:[957..965] cleavage))
+                    (PP (IN:[966..968] of)
+                      (NP (DT:[969..970] a) (JJ:[971..982] fluorogenic)
+                          (NN:[983..992] substrate)))))))))))
+    (.:[992..993] .)))
+
+;sentence 9 Span:994..1070
+;We show that  expression of UBB+1 induces expression of heat-shock proteins.
+;[1022..1027]:gene-protein:"UBB+1"
+;[1050..1069]:gene-protein:"heat-shock proteins"
+(SENT
+  (S
+    (NP-SBJ (PRP:[994..996] We))
+    (VP (VBP:[997..1001] show)
+      (SBAR (IN:[1002..1006] that)
+        (S
+          (NP-SBJ
+            (NP (NN:[1008..1018] expression))
+            (PP (IN:[1019..1021] of)
+              (NP (NN:[1022..1027] UBB+1))))
+          (VP (VBZ:[1028..1035] induces)
+            (NP
+              (NP (NN:[1036..1046] expression))
+              (PP (IN:[1047..1049] of)
+                (NP
+                  (NML (NN:[1050..1054] heat) (HYPH:[1054..1055] -)
+                       (NN:[1055..1060] shock))
+                  (NNS:[1061..1069] proteins))))))))
+    (.:[1069..1070] .)))
+
+;sentence 10 Span:1071..1212
+;This priming of  the chaperone system in these cells promotes a subsequent
+;resistance to  tert-butyl hydroperoxide-mediated oxidative stress.
+;[1092..1101]:gene-protein:"chaperone"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1071..1075] This) (NN:[1076..1083] priming))
+      (PP (IN:[1084..1086] of)
+        (NP (DT:[1088..1091] the) (NN:[1092..1101] chaperone)
+            (NN:[1102..1108] system)))
+      (PP (IN:[1109..1111] in)
+        (NP (DT:[1112..1117] these) (NNS:[1118..1123] cells))))
+    (VP (VBZ:[1124..1132] promotes)
+      (NP
+        (NP (DT:[1133..1134] a) (JJ:[1135..1145] subsequent)
+            (NN:[1146..1156] resistance))
+        (PP (TO:[1157..1159] to)
+          (NP
+            (ADJP
+              (NML (NN:[1161..1171] tert-butyl) (NN:[1172..1185] hydroperoxide))
+              (HYPH:[1185..1186] -) (VBN:[1186..1194] mediated))
+            (JJ:[1195..1204] oxidative) (NN:[1205..1211] stress)))))
+    (.:[1211..1212] .)))
+
+;sentence 11 Span:1213..1367
+;We conclude that although  UBB+1-expressing cells have a compromised
+;ubiquitin-proteasome system, they are  protected against oxidative stress
+;conditions.
+;[1240..1246]:gene-protein:"UBB+1-"
+;[1282..1291]:gene-protein:"ubiquitin"
+;[1292..1302]:gene-protein:"proteasome"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1213..1215] We))
+    (VP (VBP:[1216..1224] conclude)
+      (SBAR (IN:[1225..1229] that)
+        (S
+          (SBAR-ADV (IN:[1230..1238] although)
+            (S
+              (NP-SBJ
+                (ADJP
+                   (NN:[1240..1245] UBB+1) (HYPH:[1245..1246] -)
+                  (VBG:[1246..1256] expressing))
+                (NNS:[1257..1262] cells))
+              (VP (VBP:[1263..1267] have)
+                (NP (DT:[1268..1269] a) (VBN:[1270..1281] compromised)
+                  (NML (NN:[1282..1291] ubiquitin) (HYPH:[1291..1292] -)
+                       (NN:[1292..1302] proteasome))
+                  (NN:[1303..1309] system)))))
+          (,:[1309..1310] ,)
+          (NP-SBJ-1 (PRP:[1311..1315] they))
+          (VP (VBP:[1316..1319] are)
+            (VP (VBN:[1321..1330] protected)
+              (NP-1 (-NONE-:[1330..1330] *))
+              (PP (IN:[1331..1338] against)
+                (NP (JJ:[1339..1348] oxidative) (NN:[1349..1355] stress)
+                    (NNS:[1356..1366] conditions))))))))
+    (.:[1366..1367] .)))
+
+;section 12 Span:1371..1416
+;PMID: 12871580 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1371..1375] PMID) (::[1375..1376] :) (CD:[1377..1385] 12871580)
+        (NN:[1386..1387] -LSB-) (NNP:[1387..1393] PubMed) (::[1394..1395] -)
+        (NN:[1396..1403] indexed) (IN:[1404..1407] for)
+        (NNP:[1408..1416] MEDLINE-RSB-)))

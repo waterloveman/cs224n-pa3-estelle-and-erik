@@ -1,0 +1,579 @@
+;PMID: 8220911
+;source_file_829.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..207] = [t:45..207]
+;2)section:[e:211..235] = [t:211..235]
+;3)section:[e:239..365] = [t:239..365]
+;4)sentence:[e:369..371] = [t:369..371]
+;5)sentence:[e:372..619] = [t:372..619]
+;6)sentence:[e:620..735] = [t:620..735]
+;7)sentence:[e:736..738] = [t:736..738]
+;8)sentence:[e:739..904] = [t:739..904]
+;9)sentence:[e:905..907] = [t:905..907]
+;10)sentence:[e:908..1118] = [t:908..1118]
+;11)sentence:[e:1119..1121] = [t:1119..1121]
+;12)sentence:[e:1122..1262] = [t:1122..1262]
+;13)sentence:[e:1263..1265] = [t:1263..1265]
+;14)sentence:[e:1266..1441] = [t:1266..1441]
+;15)sentence:[e:1442..1444] = [t:1442..1444]
+;16)sentence:[e:1445..1702] = [t:1445..1702]
+;17)sentence:[e:1703..1705] = [t:1703..1705]
+;18)sentence:[e:1706..1936] = [t:1706..1936]
+;19)section:[e:1936..1969] = [t:1936..1969]
+;20)section:[e:1973..2017] = [t:1973..2017]
+
+;section 0 Span:0..39
+;Br J Pharmacol. 1993 Sep;110(1):482-90.
+(SEC
+  (FRAG (NNP:[0..2] Br) (NNP:[3..4] J) (NNP:[5..14] Pharmacol) (.:[14..15] .)
+        (CD:[16..20] 1993) (CC:[21..29] Sep;110-LRB-) (CD:[29..30] 1)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :482) (HYPH:[35..36] -)
+        (CD:[36..38] 90) (.:[38..39] .)))
+
+;sentence 1 Span:45..207
+;Human liver microsomal metabolism of the enantiomers of warfarin and 
+;acenocoumarol: P450 isozyme diversity determines the differences in their 
+;pharmacokinetics.
+;[86..97]:substance:"enantiomers"
+;[101..109]:substance:"warfarin"
+;[115..128]:substance:"acenocoumarol"
+;[130..142]:cyp450:"P450 isozyme"
+(SENT
+  (FRAG-HLN
+    (NP
+      (NP (JJ:[45..50] Human) (NN:[51..56] liver) (JJ:[57..67] microsomal)
+          (NN:[68..78] metabolism))
+      (PP (IN:[79..81] of)
+        (NP
+          (NP (DT:[82..85] the) (NNS:[86..97] enantiomers))
+          (PP (IN:[98..100] of)
+            (NP (NN:[101..109] warfarin) (CC:[110..113] and)
+                (NN:[115..128] acenocoumarol))))))
+    (::[128..129] :)
+    (S
+      (NP-SBJ
+        (NML (NN:[130..134] P450) (NN:[135..142] isozyme))
+        (NN:[143..152] diversity))
+      (VP (VBZ:[153..163] determines)
+        (NP
+          (NP (DT:[164..167] the) (NNS:[168..179] differences))
+          (PP (IN:[180..182] in)
+            (NP (PRP$:[183..188] their) (NNS:[190..206] pharmacokinetics))))))
+    (.:[206..207] .)))
+
+;section 2 Span:211..235
+;Hermans JJ, Thijssen HH.
+(SEC
+  (FRAG (NNP:[211..218] Hermans) (NNP:[219..221] JJ) (,:[221..222] ,)
+        (NNP:[223..231] Thijssen) (NNP:[232..235] HH.)))
+
+;section 3 Span:239..365
+;Cardiovascular Research Institute Maastricht, Department of Pharmacology, 
+;University of Limburg, Maastricht, The Netherlands.
+(SEC
+  (FRAG (NNP:[239..253] Cardiovascular) (NNP:[254..262] Research)
+        (NNP:[263..272] Institute) (NNP:[273..283] Maastricht) (,:[283..284] ,)
+        (NNP:[285..295] Department) (IN:[296..298] of)
+        (NNP:[299..311] Pharmacology) (,:[311..312] ,)
+        (NNP:[314..324] University) (IN:[325..327] of) (NNP:[328..335] Limburg)
+        (,:[335..336] ,) (NNP:[337..347] Maastricht) (,:[347..348] ,)
+        (DT:[349..352] The) (NNP:[353..364] Netherlands) (.:[364..365] .)))
+
+;sentence 4 Span:369..371
+;1.
+(SENT
+  (NP (LS:[369..371] 1.)))
+
+;sentence 5 Span:372..619
+;To explain the large differences in (the stereoselectivity of) the clearances
+; of the enantiomers of warfarin and acenocoumarol (4'-nitrowarfarin) their
+;human  liver microsomal metabolism has been studied and enzyme kinetic
+;parameters  determined.
+;[458..469]:substance:"enantiomers"
+;[473..481]:substance:"warfarin"
+;[486..499]:substance:"acenocoumarol"
+;[501..517]:substance:"4'-nitrowarfarin"
+;[581..587]:substance:"enzyme"
+(SENT
+  (S
+    (S
+      (S-PRP
+        (NP-SBJ (-NONE-:[372..372] *))
+        (VP (TO:[372..374] To)
+          (VP (VB:[375..382] explain)
+            (NP
+              (NP (DT:[383..386] the) (JJ:[387..392] large)
+                  (NNS:[393..404] differences))
+              (PP (IN:[405..407] in)
+                (NP
+                  (PRN (-LRB-:[408..409] -LRB-)
+                    (NP
+                      (NP (DT:[409..412] the) (NN:[413..430] stereoselectivity))
+                      (PP (IN:[431..433] of)))
+                    (-RRB-:[433..434] -RRB-))
+                  (NP (DT:[435..438] the) (NNS:[439..449] clearances))
+                  (PP (IN:[451..453] of)
+                    (NP
+                      (NP (DT:[454..457] the) (NNS:[458..469] enantiomers))
+                      (PP (IN:[470..472] of)
+                        (NP
+                          (NP (NN:[473..481] warfarin))
+                          (CC:[482..485] and)
+                          (NP
+                            (NP (NN:[486..499] acenocoumarol))
+                            (NP (-LRB-:[500..501] -LRB-)
+                                (NN:[501..517] 4'-nitrowarfarin)
+                                (-RRB-:[517..518] -RRB-)))))))))))))
+      (NP-SBJ-1=3 (PRP$:[519..524] their) (JJ:[525..530] human)
+                  (NN:[532..537] liver) (JJ:[538..548] microsomal)
+                  (NN:[549..559] metabolism))
+      (VP=4 (VBZ:[560..563] has)
+        (VP (VBN:[564..568] been)
+          (VP (VBN:[569..576] studied)
+            (NP-1 (-NONE-:[576..576] *))))))
+    (CC:[577..580] and)
+    (S
+      (NP-SBJ-2=3 (NN:[581..587] enzyme) (JJ:[588..595] kinetic)
+                  (NNS:[596..606] parameters))
+      (VP=4 (VBN:[608..618] determined)
+        (NP-2 (-NONE-:[618..618] *))))
+    (.:[618..619] .)))
+
+;sentence 6 Span:620..735
+;The effects of cimetidine, propafenone, sulphaphenazole, and  omeprazole on
+;their metabolism has been investigated.
+;[635..645]:substance:"cimetidine"
+;[647..658]:substance:"propafenone"
+;[660..675]:substance:"sulphaphenazole"
+;[682..692]:substance:"omeprazole"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[620..623] The) (NNS:[624..631] effects))
+      (PP (IN:[632..634] of)
+        (NP (NN:[635..645] cimetidine) (,:[645..646] ,)
+            (NN:[647..658] propafenone) (,:[658..659] ,)
+            (NN:[660..675] sulphaphenazole) (,:[675..676] ,) (CC:[677..680] and)
+            (NN:[682..692] omeprazole)))
+      (PP (IN:[693..695] on)
+        (NP (PRP$:[696..701] their) (NN:[702..712] metabolism))))
+    (VP (VBZ:[713..716] has)
+      (VP (VBN:[717..721] been)
+        (VP (VBN:[722..734] investigated)
+          (NP-1 (-NONE-:[734..734] *)))))
+    (.:[734..735] .)))
+
+;sentence 7 Span:736..738
+;2.
+(SENT
+  (NP (LS:[736..738] 2.)))
+
+;sentence 8 Span:739..904
+;The 4-hydroxycoumarins  follow similar metabolic routes and are mainly
+;hydroxylated at the 6- and  7-position (accounting for 63 to 99% of the
+;metabolic clearances).
+;[743..761]:substance:"4-hydroxycoumarins"
+;[865..874]:quantitative-value:"63 to 99%"
+(SENT
+  (S
+    (NP-SBJ-2 (DT:[739..742] The) (NNS:[743..761] 4-hydroxycoumarins))
+    (VP
+      (VP (VBP:[763..769] follow)
+        (NP (JJ:[770..777] similar) (JJ:[778..787] metabolic)
+            (NNS:[788..794] routes)))
+      (CC:[795..798] and)
+      (VP (VBP:[799..802] are)
+        (ADVP (RB:[803..809] mainly))
+        (VP (VBN:[810..822] hydroxylated)
+          (NP-2 (-NONE-:[822..822] *))
+          (PP-LOC (IN:[823..825] at)
+            (NP (DT:[826..829] the)
+              (NP
+                (NP (CD:[830..831] 6) (HYPH:[831..832] -)
+                  (NML-1 (-NONE-:[832..832] *P*)))
+                (CC:[833..836] and)
+                (NP (CD:[838..839] 7) (HYPH:[839..840] -)
+                  (NML-1 (NN:[840..848] position))))))
+          (PRN (-LRB-:[849..850] -LRB-)
+            (VP (VBG:[850..860] accounting)
+              (PP-CLR (IN:[861..864] for)
+                (NP
+                  (NP
+                    (QP (CD:[865..867] 63) (TO:[868..870] to) (CD:[871..873] 99))
+                    (NN:[873..874] %))
+                  (PP (IN:[875..877] of)
+                    (NP (DT:[878..881] the) (JJ:[882..891] metabolic)
+                        (NNS:[892..902] clearances))))))
+            (-RRB-:[902..903] -RRB-)))))
+    (.:[903..904] .)))
+
+;sentence 9 Span:905..907
+;3.
+(SENT
+  (NP (LS:[905..907] 3.)))
+
+;sentence 10 Span:908..1118
+;Due to the  lower Km values of R- and S-acenocoumarol and higher Vmax values
+;of  S-acenocoumarol, the overall metabolic clearances of R/S acenocoumarol
+;exceed  those of R/S warfarin 6 and 66 times respectively.
+;[926..928]:quantitative-name:"Km"
+;[939..941]...[948..961]:substance:"R-"..."acenocoumarol"
+;[946..961]:substance:"S-acenocoumarol"
+;[973..977]:quantitative-name:"Vmax"
+;[989..1004]:substance:"S-acenocoumarol"
+;[1042..1043]...[1046..1059]:substance:"R"..."acenocoumarol"
+;[1044..1059]:substance:"S acenocoumarol"
+;[1077..1078]...[1081..1089]:substance:"R"..."warfarin"
+;[1079..1089]:substance:"S warfarin"
+;[1090..1091]...[1099..1104]:quantitative-value:"6"..."times"
+;[1096..1104]:quantitative-value:"66 times"
+(SENT
+  (S
+    (PP (JJ:[908..911] Due)
+      (PP (TO:[912..914] to)
+        (NP
+          (NP
+            (NP (DT:[915..918] the) (JJR:[920..925] lower) (NN:[926..928] Km)
+                (NNS:[929..935] values))
+            (PP (IN:[936..938] of)
+              (NP
+                (NP (NN:[939..940] R) (HYPH:[940..941] -)
+                  (NML-1 (-NONE-:[941..941] *P*)))
+                (CC:[942..945] and)
+                (NP (NN:[946..947] S) (HYPH:[947..948] -)
+                  (NML-1 (NN:[948..961] acenocoumarol))))))
+          (CC:[962..965] and)
+          (NP
+            (NP (JJR:[966..972] higher) (NN:[973..977] Vmax)
+                (NNS:[978..984] values))
+            (PP (IN:[985..987] of)
+              (NP (NN:[989..1004] S-acenocoumarol)))))))
+    (,:[1004..1005] ,)
+    (NP-SBJ
+      (NP (DT:[1006..1009] the) (JJ:[1010..1017] overall)
+          (JJ:[1018..1027] metabolic) (NNS:[1028..1038] clearances))
+      (PP (IN:[1039..1041] of)
+        (NP
+          (NP (NN:[1042..1043] R)
+            (NML-4 (-NONE-:[1043..1043] *P*)))
+          (SYM:[1043..1044] /)
+          (NP (NN:[1044..1045] S)
+            (NML-4 (NN:[1046..1059] acenocoumarol))))))
+    (VP (VBP:[1060..1066] exceed)
+      (NP
+        (NP (DT:[1068..1073] those))
+        (PP (IN:[1074..1076] of)
+          (NP
+            (NP (NN:[1077..1078] R)
+              (NML-2 (-NONE-:[1078..1078] *P*)))
+            (SYM:[1078..1079] /)
+            (NP (NN:[1079..1080] S)
+              (NML-2 (NN:[1081..1089] warfarin))))))
+      (NP-EXT
+        (NP (CD:[1090..1091] 6)
+          (NML-3 (-NONE-:[1091..1091] *P*)))
+        (CC:[1092..1095] and)
+        (NP (CD:[1096..1098] 66)
+          (NML-3 (NNS:[1099..1104] times))))
+      (ADVP (RB:[1105..1117] respectively)))
+    (.:[1117..1118] .)))
+
+;sentence 11 Span:1119..1121
+;4.
+(SENT
+  (NP (LS:[1119..1121] 4.)))
+
+;sentence 12 Span:1122..1262
+;The metabolism of both  compounds is stereoselective for the S-enantiomers,
+;which is 10 times more  pronounced in the case of acenocoumarol.
+;[1146..1155]:substance:"compounds"
+;[1183..1196]:substance:"S-enantiomers"
+;[1207..1215]:quantitative-value:"10 times"
+;[1248..1261]:substance:"acenocoumarol"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1122..1125] The) (NN:[1126..1136] metabolism))
+      (PP (IN:[1137..1139] of)
+        (NP (DT:[1140..1144] both) (NNS:[1146..1155] compounds))))
+    (VP (VBZ:[1156..1158] is)
+      (ADJP-PRD (JJ:[1159..1174] stereoselective)
+        (PP (IN:[1175..1178] for)
+          (NP (DT:[1179..1182] the) (NNS:[1183..1196] S-enantiomers))))
+      (,:[1196..1197] ,)
+      (SBAR-ADV
+        (WHNP-1 (WDT:[1198..1203] which))
+        (S
+          (NP-SBJ-1 (-NONE-:[1203..1203] *T*))
+          (VP (VBZ:[1204..1206] is)
+            (ADJP-PRD
+              (ADVP
+                (NP-ADV (CD:[1207..1209] 10) (NNS:[1210..1215] times))
+                (RBR:[1216..1220] more))
+              (JJ:[1222..1232] pronounced))
+            (PP (IN:[1233..1235] in)
+              (NP
+                (NP (DT:[1236..1239] the) (NN:[1240..1244] case))
+                (PP (IN:[1245..1247] of)
+                  (NP (NN:[1248..1261] acenocoumarol)))))))))
+    (.:[1261..1262] .)))
+
+;sentence 13 Span:1263..1265
+;5.
+(SENT
+  (NP (LS:[1263..1265] 5.)))
+
+;sentence 14 Span:1266..1441
+;Except for the 7-hydroxylation of  the R-enantiomers (r = 0.90; P < 0.025),
+;the 6- and 7-hydroxylation rates of R/S  warfarin do not correlate with those
+;of R/S acenocoumarol.
+;[1305..1318]:substance:"R-enantiomers"
+;[1378..1379]...[1383..1391]:substance:"R"..."warfarin"
+;[1380..1391]:substance:"S  warfarin"
+;[1423..1424]...[1427..1440]:substance:"R"..."acenocoumarol"
+;[1425..1440]:substance:"S acenocoumarol"
+(SENT
+  (S
+    (PP (IN:[1266..1272] Except)
+      (PP (IN:[1273..1276] for)
+        (NP
+          (NP (DT:[1277..1280] the) (NN:[1281..1296] 7-hydroxylation))
+          (PP (IN:[1297..1299] of)
+            (NP (DT:[1301..1304] the) (NNS:[1305..1318] R-enantiomers)))
+          (PRN (-LRB-:[1319..1320] -LRB-)
+            (S
+              (S
+                (NP-SBJ (NN:[1320..1321] r))
+                (VP (SYM:[1322..1323] =)
+                  (NP (CD:[1324..1328] 0.90))))
+              (::[1328..1329] ;)
+              (S
+                (NP-SBJ (NN:[1330..1331] P))
+                (VP (SYM:[1332..1333] <)
+                  (NP (CD:[1334..1339] 0.025)))))
+            (-RRB-:[1339..1340] -RRB-)))))
+    (,:[1340..1341] ,)
+    (NP-SBJ
+      (NP (DT:[1342..1345] the)
+        (NML
+          (NML
+            (NML (CD:[1346..1347] 6) (HYPH:[1347..1348] -)
+              (NML-1 (-NONE-:[1348..1348] *P*)))
+            (NML-2 (-NONE-:[1348..1348] *P*)))
+          (CC:[1349..1352] and)
+          (NML
+            (NML (CD:[1353..1354] 7) (HYPH:[1354..1355] -)
+              (NML-1 (NN:[1355..1368] hydroxylation)))
+            (NML-2 (NNS:[1369..1374] rates)))))
+      (PP (IN:[1375..1377] of)
+        (NP
+          (NP (NN:[1378..1379] R)
+            (NML-3 (-NONE-:[1379..1379] *P*)))
+          (SYM:[1379..1380] /)
+          (NP (NN:[1380..1381] S)
+            (NML-3 (NN:[1383..1391] warfarin))))))
+    (VP (VBP:[1392..1394] do) (RB:[1395..1398] not)
+      (VP (VB:[1399..1408] correlate)
+        (PP-CLR (IN:[1409..1413] with)
+          (NP
+            (NP (DT:[1414..1419] those))
+            (PP (IN:[1420..1422] of)
+              (NP
+                (NP (NN:[1423..1424] R)
+                  (NML-4 (-NONE-:[1424..1424] *P*)))
+                (SYM:[1424..1425] /)
+                (NP (NN:[1425..1426] S)
+                  (NML-4 (NN:[1427..1440] acenocoumarol)))))))))
+    (.:[1440..1441] .)))
+
+;sentence 15 Span:1442..1444
+;6.
+(SENT
+  (NP (LS:[1442..1444] 6.)))
+
+;sentence 16 Span:1445..1702
+;Sulphaphenazole  competitively inhibits the 7- and in some samples partly (up
+;to 50%) the  6-hydroxylation of S-warfarin as well as the 7-hydroxylation of
+;R- and  S-acenocoumarol and the 6-hydroxylation of S-acenocoumarol (Kis
+;ranging from  0.5-1.3 microM).
+;[1445..1460]:substance:"Sulphaphenazole"
+;[1520..1529]:quantitative-value:"up to 50%"
+;[1555..1565]:substance:"S-warfarin"
+;[1600..1602]...[1610..1623]:substance:"R-"..."acenocoumarol"
+;[1608..1623]:substance:"S-acenocoumarol"
+;[1651..1666]:substance:"S-acenocoumarol"
+;[1668..1671]:quantitative-name:"Kis"
+;[1686..1693]:quantitative-value:"0.5-1.3"
+;[1694..1700]:quantitative-units:"microM"
+(SENT
+  (S
+    (NP-SBJ (NN:[1445..1460] Sulphaphenazole))
+    (ADVP (RB:[1462..1475] competitively))
+    (VP (VBZ:[1476..1484] inhibits)
+      (NP
+        (NP
+          (NP
+            (NP (DT:[1485..1488] the) (CD:[1489..1490] 7) (HYPH:[1490..1491] -)
+              (NML-2 (-NONE-:[1491..1491] *P*)))
+            (CC:[1492..1495] and)
+            (NP
+              (PP-LOC (IN:[1496..1498] in)
+                (NP (DT:[1499..1503] some) (NNS:[1504..1511] samples)))
+              (ADVP (RB:[1512..1518] partly)
+                (PRN (-LRB-:[1519..1520] -LRB-)
+                  (NP
+                    (QP (IN:[1520..1522] up) (TO:[1523..1525] to)
+                        (CD:[1526..1528] 50))
+                    (NN:[1528..1529] %))
+                  (-RRB-:[1529..1530] -RRB-)))
+              (DT:[1531..1534] the) (CD:[1536..1537] 6) (HYPH:[1537..1538] -)
+              (NML-2 (NN:[1538..1551] hydroxylation))))
+          (PP (IN:[1552..1554] of)
+            (NP (NN:[1555..1565] S-warfarin))))
+        (CONJP (RB:[1566..1568] as) (RB:[1569..1573] well) (IN:[1574..1576] as))
+        (NP
+          (NP
+            (NP (DT:[1577..1580] the) (NN:[1581..1596] 7-hydroxylation))
+            (PP (IN:[1597..1599] of)
+              (NP
+                (NP (NN:[1600..1601] R) (HYPH:[1601..1602] -)
+                  (NML-3 (-NONE-:[1602..1602] *P*)))
+                (CC:[1603..1606] and)
+                (NP (NN:[1608..1609] S) (HYPH:[1609..1610] -)
+                  (NML-3 (NN:[1610..1623] acenocoumarol))))))
+          (CC:[1624..1627] and)
+          (NP
+            (NP (DT:[1628..1631] the) (NN:[1632..1647] 6-hydroxylation))
+            (PP (IN:[1648..1650] of)
+              (NP (NN:[1651..1666] S-acenocoumarol))))))
+      (PRN (-LRB-:[1667..1668] -LRB-)
+        (S
+          (NP-SBJ (NNS:[1668..1671] Kis))
+          (VP (VBG:[1672..1679] ranging)
+            (PP
+              (PP (IN:[1680..1684] from)
+                (NP (CD:[1686..1689] 0.5)
+                  (NML-1 (-NONE-:[1689..1689] *RNR*))))
+              (PP (HYPH:[1689..1690] -)
+                (NP (CD:[1690..1693] 1.3)
+                  (NML-1 (-NONE-:[1693..1693] *RNR*))))
+              (NML-1 (NN:[1694..1700] microM)))))
+        (-RRB-:[1700..1701] -RRB-)))
+    (.:[1701..1702] .)))
+
+;sentence 17 Span:1703..1705
+;7.
+(SENT
+  (NP (LS:[1703..1705] 7.)))
+
+;sentence 18 Span:1706..1936
+;Omeprazole partly (40-80%) inhibits the 6- and  7-hydroxylation of R-warfarin
+;(Ki = 99 and 117 microM) and of R- (Ki = 219 and  7.2 microM) and
+;S-acenocoumarol (Ki = 6.1 and 7.7 microM) but not S-warfarin in  a
+;competitive manner.
+;[1706..1716]:substance:"Omeprazole"
+;[1725..1731]:quantitative-value:"40-80%"
+;[1773..1783]:substance:"R-warfarin"
+;[1785..1787]:quantitative-name:"Ki"
+;[1790..1792]:quantitative-value:"99"
+;[1797..1800]:quantitative-value:"117"
+;[1801..1807]:quantitative-units:"microM"
+;[1816..1818]...[1852..1865]:substance:"R-"..."acenocoumarol"
+;[1820..1822]:quantitative-name:"Ki"
+;[1825..1828]:quantitative-value:"219"
+;[1834..1837]:quantitative-value:"7.2"
+;[1838..1844]:quantitative-units:"microM"
+;[1850..1865]:substance:"S-acenocoumarol"
+;[1867..1869]:quantitative-name:"Ki"
+;[1872..1875]:quantitative-value:"6.1"
+;[1880..1883]:quantitative-value:"7.7"
+;[1884..1890]:quantitative-units:"microM"
+;[1900..1910]:substance:"S-warfarin"
+(SENT
+  (S
+    (NP-SBJ (NN:[1706..1716] Omeprazole))
+    (ADVP-EXT (RB:[1717..1723] partly)
+      (PRN (-LRB-:[1724..1725] -LRB-)
+        (NP
+          (QP (CD:[1725..1727] 40) (HYPH:[1727..1728] -) (CD:[1728..1730] 80))
+          (NN:[1730..1731] %))
+        (-RRB-:[1731..1732] -RRB-)))
+    (VP (VBZ:[1733..1741] inhibits)
+      (NP
+        (NP (DT:[1742..1745] the)
+          (NML
+            (NML (CD:[1746..1747] 6) (HYPH:[1747..1748] -)
+              (NML-1 (-NONE-:[1748..1748] *P*)))
+            (CC:[1749..1752] and)
+            (NML (CD:[1754..1755] 7) (HYPH:[1755..1756] -)
+              (NML-1 (NN:[1756..1769] hydroxylation)))))
+        (PP
+          (PP (IN:[1770..1772] of)
+            (NP (NN:[1773..1783] R-warfarin)
+              (PRN (-LRB-:[1784..1785] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1785..1787] Ki))
+                  (VP (SYM:[1788..1789] =)
+                    (NP
+                      (NP (CD:[1790..1792] 99)
+                        (NML-2 (-NONE-:[1792..1792] *P*)))
+                      (CC:[1793..1796] and)
+                      (NP (CD:[1797..1800] 117)
+                        (NML-2 (NN:[1801..1807] microM))))))
+                (-RRB-:[1807..1808] -RRB-))))
+          (CC:[1809..1812] and)
+          (PP (IN:[1813..1815] of)
+            (NP
+              (NP
+                (NP (NN:[1816..1817] R) (HYPH:[1817..1818] -)
+                  (NML-3 (-NONE-:[1818..1818] *P*))
+                  (PRN (-LRB-:[1819..1820] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[1820..1822] Ki))
+                      (VP (SYM:[1823..1824] =)
+                        (NP
+                          (NP (CD:[1825..1828] 219)
+                            (NML-4 (-NONE-:[1828..1828] *P*)))
+                          (CC:[1829..1832] and)
+                          (NP (CD:[1834..1837] 7.2)
+                            (NML-4 (NN:[1838..1844] microM))))))
+                    (-RRB-:[1844..1845] -RRB-)))
+                (CC:[1846..1849] and)
+                (NP
+                   (NN:[1850..1851] S) (HYPH:[1851..1852] -)
+                  (NML-3 (NN:[1852..1865] acenocoumarol))
+                  (PRN (-LRB-:[1866..1867] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[1867..1869] Ki))
+                      (VP (SYM:[1870..1871] =)
+                        (NP
+                          (NP (CD:[1872..1875] 6.1)
+                            (NML-5 (-NONE-:[1875..1875] *P*)))
+                          (CC:[1876..1879] and)
+                          (NP (CD:[1880..1883] 7.7)
+                            (NML-5 (NN:[1884..1890] microM))))))
+                    (-RRB-:[1890..1891] -RRB-))))
+              (CONJP (CC:[1892..1895] but) (RB:[1896..1899] not))
+              (NP (NN:[1900..1910] S-warfarin))))))
+      (PP (IN:[1911..1913] in)
+        (NP (DT:[1915..1916] a) (JJ:[1917..1928] competitive)
+            (NN:[1929..1935] manner))))
+    (.:[1935..1936] .)))
+
+;section 19 Span:1936..1969
+;(ABSTRACT TRUNCATED AT 250 WORDS)
+(SEC
+  (FRAG (-LRB-:[1936..1937] -LRB-) (NN:[1937..1945] ABSTRACT)
+        (VBN:[1946..1955] TRUNCATED) (IN:[1956..1958] AT) (CD:[1959..1962] 250)
+        (NNS:[1963..1968] WORDS) (-RRB-:[1968..1969] -RRB-)))
+
+;section 20 Span:1973..2017
+;PMID: 8220911 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1973..1977] PMID) (::[1977..1978] :) (CD:[1979..1986] 8220911)
+        (-LRB-:[1987..1988] -LSB-) (NN:[1988..1994] PubMed)
+        (HYPH:[1995..1996] -) (NN:[1997..2004] indexed) (IN:[2005..2008] for)
+        (NNP:[2009..2016] MEDLINE) (-RRB-:[2016..2017] -RSB-)))

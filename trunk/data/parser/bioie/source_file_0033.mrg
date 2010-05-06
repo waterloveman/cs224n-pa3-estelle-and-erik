@@ -1,0 +1,220 @@
+;PMID: 8137936
+;source_file_1793.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..39] = [t:0..39]
+;1)sentence:[e:45..167] = [t:45..167]
+;2)section:[e:171..192] = [t:171..192]
+;3)section:[e:196..285] = [t:196..285]
+;4)sentence:[e:289..499] = [t:289..499]
+;5)sentence:[e:500..663] = [t:500..663]
+;6)sentence:[e:664..782] = [t:664..782]
+;7)sentence:[e:783..904] = [t:783..904]
+;8)section:[e:908..952] = [t:908..952]
+
+;section 0 Span:0..39
+;FEBS Lett. 1994 Mar 21;341(2-3):177-81.
+(SEC
+  (FRAG (NNP:[0..4] FEBS) (NNP:[5..9] Lett) (.:[9..10] .) (CD:[11..15] 1994)
+        (NNP:[16..19] Mar) (CC:[20..27] 21;341-LRB-) (NN:[27..30] 2-3)
+        (-RRB-:[30..31] -RRB-) (CD:[31..35] :177) (::[35..36] -)
+        (CD:[36..38] 81) (.:[38..39] .)))
+
+;sentence 1 Span:45..167
+;Induction of aromatase in stromal vascular cells from human breast adipose 
+;tissue depends on cortisol and growth factors.
+;[58..67]:cyp450:"aromatase"
+;[139..147]:substance:"cortisol"
+;[152..166]:substance:"growth factors"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (NN:[45..54] Induction))
+      (PP (IN:[55..57] of)
+        (NP (NN:[58..67] aromatase)))
+      (PP-LOC (IN:[68..70] in)
+        (NP
+          (NP (JJ:[71..78] stromal) (JJ:[79..87] vascular) (NNS:[88..93] cells))
+          (PP (IN:[94..98] from)
+            (NP (JJ:[99..104] human) (NN:[105..111] breast)
+                (NN:[112..119] adipose) (NN:[121..127] tissue))))))
+    (VP (VBZ:[128..135] depends)
+      (PP-CLR (IN:[136..138] on)
+        (NP
+          (NP (NN:[139..147] cortisol))
+          (CC:[148..151] and)
+          (NP (NN:[152..158] growth) (NNS:[159..166] factors)))))
+    (.:[166..167] .)))
+
+;section 2 Span:171..192
+;Schmidt M, Loffler G.
+(SEC
+  (FRAG (NNP:[171..178] Schmidt) (NNP:[179..181] M,) (NNP:[182..189] Loffler)
+        (NNP:[190..192] G.)))
+
+;section 3 Span:196..285
+;Institute of Biochemistry, Genetics and Microbiology, University of
+;Regensburg,  Germany.
+(SEC
+  (FRAG (NNP:[196..205] Institute) (IN:[206..208] of)
+        (NNP:[209..221] Biochemistry) (,:[221..222] ,) (NNP:[223..231] Genetics)
+        (CC:[232..235] and) (NNP:[236..248] Microbiology) (,:[248..249] ,)
+        (NNP:[250..260] University) (IN:[261..263] of)
+        (NNP:[264..274] Regensburg) (,:[274..275] ,) (NNP:[277..284] Germany)
+        (.:[284..285] .)))
+
+;sentence 4 Span:289..499
+;The regulation of aromatase (estrogen synthase) activity of cultured stromal 
+;vascular cells from human breast adipose tissue by cortisol, db-cAMP and
+;growth  factors was studied in a serum-free culture system.
+;[307..316]:cyp450:"aromatase"
+;[318..335]:cyp450:"estrogen synthase"
+;[418..426]:substance:"cortisol"
+;[428..435]:substance:"db-cAMP"
+;[440..455]:substance:"growth  factors"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[289..292] The) (NN:[293..303] regulation))
+      (PP (IN:[304..306] of)
+        (NP
+          (NP
+            (NML
+              (NML (NN:[307..316] aromatase))
+              (NML (-LRB-:[317..318] -LRB-)
+                 (NN:[318..326] estrogen) (NN:[327..335] synthase)
+                (-RRB-:[335..336] -RRB-)))
+            (NN:[337..345] activity))
+          (PP (IN:[346..348] of)
+            (NP
+              (NP (VBN:[349..357] cultured) (JJ:[358..365] stromal)
+                  (JJ:[367..375] vascular) (NNS:[376..381] cells))
+              (PP (IN:[382..386] from)
+                (NP (JJ:[387..392] human) (NN:[393..399] breast)
+                    (NN:[400..407] adipose) (NN:[408..414] tissue)))))))
+      (PP (IN:[415..417] by)
+        (NP
+          (NP (NN:[418..426] cortisol))
+          (,:[426..427] ,)
+          (NP (NN:[428..435] db-cAMP))
+          (CC:[436..439] and)
+          (NP (NN:[440..446] growth) (NNS:[448..455] factors)))))
+    (VP (VBD:[456..459] was)
+      (VP (VBN:[460..467] studied)
+        (NP-1 (-NONE-:[467..467] *))
+        (PP-LOC (IN:[468..470] in)
+          (NP (DT:[471..472] a)
+            (ADJP (NN:[473..478] serum) (HYPH:[478..479] -) (JJ:[479..483] free))
+            (NN:[484..491] culture) (NN:[492..498] system)))))
+    (.:[498..499] .)))
+
+;sentence 5 Span:500..663
+;While PDGF-BB alone  inhibited the effect of db-cAMP on aromatase induction,
+;it stimulated aromatase  activity in the presence of cortisol with or without
+;db-cAMP.
+;[506..513]:substance:"PDGF-BB"
+;[545..552]:substance:"db-cAMP"
+;[556..565]:cyp450:"aromatase"
+;[591..600]:cyp450:"aromatase"
+;[630..638]:substance:"cortisol"
+;[655..662]:substance:"db-cAMP"
+(SENT
+  (S
+    (SBAR (IN:[500..505] While)
+      (S
+        (NP-SBJ (NN:[506..513] PDGF-BB)
+          (ADJP (RB:[514..519] alone)))
+        (VP (VBD:[521..530] inhibited)
+          (NP
+            (NP (DT:[531..534] the) (NN:[535..541] effect))
+            (PP (IN:[542..544] of)
+              (NP (NN:[545..552] db-cAMP)))
+            (PP (IN:[553..555] on)
+              (NP (NN:[556..565] aromatase) (NN:[566..575] induction)))))))
+    (,:[575..576] ,)
+    (NP-SBJ (PRP:[577..579] it))
+    (VP (VBD:[580..590] stimulated)
+      (NP (NN:[591..600] aromatase) (NN:[602..610] activity))
+      (PP-LOC (IN:[611..613] in)
+        (NP
+          (NP (DT:[614..617] the) (NN:[618..626] presence))
+          (PP (IN:[627..629] of)
+            (NP (NN:[630..638] cortisol)))))
+      (PP (IN:[639..643] with) (CC:[644..646] or) (IN:[647..654] without)
+        (NP (NN:[655..662] db-cAMP))))
+    (.:[662..663] .)))
+
+;sentence 6 Span:664..782
+;In the presence of  1 microM insulin consistently higher aromatase activities
+;were found as compared  to 1 nM insulin.
+;[684..685]:quantitative-value:"1"
+;[686..692]:quantitative-units:"microM"
+;[693..700]:substance:"insulin"
+;[721..730]:cyp450:"aromatase"
+;[769..770]:quantitative-value:"1"
+;[771..773]:quantitative-units:"nM"
+;[774..781]:substance:"insulin"
+(SENT
+  (S
+    (PP-LOC (IN:[664..666] In)
+      (NP
+        (NP (DT:[667..670] the) (NN:[671..679] presence))
+        (PP (IN:[680..682] of)
+          (NP
+            (NML (CD:[684..685] 1) (NN:[686..692] microM))
+            (NN:[693..700] insulin)))))
+    (NP-SBJ-1
+      (ADJP (RB:[701..713] consistently) (JJR:[714..720] higher))
+      (NN:[721..730] aromatase) (NNS:[731..741] activities))
+    (VP (VBD:[742..746] were)
+      (VP (VBN:[747..752] found)
+        (NP-1 (-NONE-:[752..752] *))
+        (PP (IN:[753..755] as)
+          (S-NOM
+            (NP-SBJ (-NONE-:[755..755] *))
+            (VP (VBN:[756..764] compared)
+              (PP-CLR (TO:[766..768] to)
+                (NP
+                  (NML (CD:[769..770] 1) (NN:[771..773] nM))
+                  (NN:[774..781] insulin))))))))
+    (.:[781..782] .)))
+
+;sentence 7 Span:783..904
+;In contrast to PDGF-BB, bFGF led to an increase of aromatase  activity only
+;in the presence of both cortisol and db-cAMP.
+;[798..805]:substance:"PDGF-BB"
+;[807..811]:substance:"bFGF"
+;[834..843]:cyp450:"aromatase"
+;[883..891]:substance:"cortisol"
+;[896..903]:substance:"db-cAMP"
+(SENT
+  (S
+    (PP (IN:[783..785] In)
+      (NP
+        (NP (NN:[786..794] contrast))
+        (PP (TO:[795..797] to)
+          (NP (NN:[798..805] PDGF-BB)))))
+    (,:[805..806] ,)
+    (NP-SBJ (NN:[807..811] bFGF))
+    (VP (VBD:[812..815] led)
+      (PP-CLR (TO:[816..818] to)
+        (NP
+          (NP (DT:[819..821] an) (NN:[822..830] increase))
+          (PP (IN:[831..833] of)
+            (NP (NN:[834..843] aromatase) (NN:[845..853] activity)))))
+      (PP-LOC (RB:[854..858] only) (IN:[859..861] in)
+        (NP
+          (NP (DT:[862..865] the) (NN:[866..874] presence))
+          (PP (IN:[875..877] of)
+            (NP (CC:[878..882] both) (NN:[883..891] cortisol)
+                (CC:[892..895] and) (NN:[896..903] db-cAMP))))))
+    (.:[903..904] .)))
+
+;section 8 Span:908..952
+;PMID: 8137936 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[908..912] PMID) (::[912..913] :) (CD:[914..921] 8137936)
+        (NN:[922..923] -LSB-) (NNP:[923..929] PubMed) (::[930..931] -)
+        (NN:[932..939] indexed) (IN:[940..943] for)
+        (NNP:[944..952] MEDLINE-RSB-)))

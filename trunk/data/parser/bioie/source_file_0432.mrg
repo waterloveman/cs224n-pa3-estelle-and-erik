@@ -1,0 +1,658 @@
+;PMID: 1872951
+;source_file_843.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:37..191] = [t:37..191]
+;2)section:[e:195..266] = [t:195..266]
+;3)section:[e:270..388] = [t:270..388]
+;4)sentence:[e:392..706] = [t:392..706]
+;5)sentence:[e:708..1096] = [t:708..1096]
+;6)sentence:[e:1097..1278] = [t:1097..1278]
+;7)sentence:[e:1279..1393] = [t:null]
+;8)section:[e:null] = [t:1282..1393]
+;9)sentence:[e:1394..1577] = [t:1394..1577]
+;10)sentence:[e:1578..1728] = [t:1578..1728]
+;11)sentence:[e:1729..1888] = [t:1729..2094]
+;12)sentence:[e:1890..2094] = [t:null]
+;13)sentence:[e:2095..2253] = [t:2095..2253]
+;14)sentence:[e:2254..2421] = [t:2254..2421]
+;15)sentence:[e:2422..2581] = [t:2422..2581]
+;16)section:[e:2585..2629] = [t:2585..2629]
+;Sentence Matching Errors
+;ERROR_Different number of sections entity has 16 tree 15
+;ERROR_Entity section missing treebank section[1279..1393]
+;ERROR_Tree section missing entity section[1282..1393]
+;ERROR_Section end mismatch[e:1729..1888][t:1729..2094]
+;ERROR_Entity section missing treebank section[1890..2094]
+;ERROR_Entity not in any tree[1279..1297] substance "BP-7,8-dihydrodiol"
+;ERROR_Entity not in any tree[1328..1337] quantitative-value "38 to 77%"
+;ERROR_Entity not in any tree[1367..1370] quantitative-value "50%"
+;ERROR_Entity not in any tree[1958..1964] substance "adduct"
+;ERROR_Entity not in any tree[1966..1982] substance "BP  diol epoxide"
+;ERROR_Entity not in any tree[2015..2029] substance "deoxyguanosine"
+;ERROR_Entity not in any tree[2072..2074] substance "PB"
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1279..1281] BP
+;ERROR_Token in entity file but not tree[1281..1282] -
+
+;section 0 Span:0..31
+;Mol Carcinog. 1991;4(4):308-14.
+(SEC
+  (FRAG (NNP:[0..3] Mol) (NNP:[4..12] Carcinog) (.:[12..13] .)
+        (CD:[14..18] 1991) (CC:[18..21] ;4-LRB-) (CD:[21..23] 4-RRB-)
+        (CD:[23..27] :308) (::[27..28] -) (CD:[28..30] 14) (.:[30..31] .)))
+
+;sentence 1 Span:37..191
+;A monoclonal antibody to rat liver cytochrome P450 IIC11 strongly and 
+;regiospecifically inhibits constitutive benzo[a]pyrene metabolism and DNA 
+;binding.
+;[50..58]:substance:"antibody"
+;[72..93]:cyp450:"cytochrome P450 IIC11"
+;[148..162]:substance:"benzo[a]pyrene"
+;[178..181]:substance:"DNA"
+(SENT
+  (S-HLN
+    (NP-SBJ
+      (NP (DT:[37..38] A) (JJ:[39..49] monoclonal) (NN:[50..58] antibody))
+      (PP (TO:[59..61] to)
+        (NP (NN:[62..65] rat) (NN:[66..71] liver)
+           (NN:[72..82] cytochrome) (NN:[83..87] P450) (NN:[88..93] IIC11))))
+    (ADVP (RB:[94..102] strongly) (CC:[103..106] and)
+          (RB:[108..125] regiospecifically))
+    (VP (VBZ:[126..134] inhibits)
+      (NP
+        (NP (JJ:[135..147] constitutive) (NN:[148..162] benzo-LSB-a-RSB-pyrene)
+            (NN:[163..173] metabolism))
+        (CC:[174..177] and)
+        (NP (NN:[178..181] DNA) (NN:[183..190] binding))))
+    (.:[190..191] .)))
+
+;section 2 Span:195..266
+;Todorovic R, Devanesan PD, Cavalieri EL, Rogan EG, Park SS, Gelboin HV.
+(SEC
+  (FRAG (NNP:[195..204] Todorovic) (NNP:[205..207] R,)
+        (NNP:[208..217] Devanesan) (NNP:[218..220] PD) (,:[220..221] ,)
+        (NNP:[222..231] Cavalieri) (NNP:[232..234] EL) (,:[234..235] ,)
+        (NNP:[236..241] Rogan) (NNP:[242..244] EG) (,:[244..245] ,)
+        (NNP:[246..250] Park) (NNP:[251..253] SS) (,:[253..254] ,)
+        (NNP:[255..262] Gelboin) (NNP:[263..265] HV) (.:[265..266] .)))
+
+;section 3 Span:270..388
+;Eppley Institute for Research in Cancer and Allied Diseases, University of 
+;Nebraska Medical Center, Omaha 68198-6805.
+(SEC
+  (FRAG (NNP:[270..276] Eppley) (NNP:[277..286] Institute) (IN:[287..290] for)
+        (NNP:[291..299] Research) (NNP:[300..302] in) (NNP:[303..309] Cancer)
+        (CC:[310..313] and) (NNP:[314..320] Allied) (NNP:[321..329] Diseases)
+        (,:[329..330] ,) (NNP:[331..341] University) (IN:[342..344] of)
+        (NNP:[346..354] Nebraska) (NNP:[355..362] Medical)
+        (NNP:[363..369] Center) (,:[369..370] ,) (NNP:[371..376] Omaha)
+        (CD:[377..382] 68198) (::[382..383] -) (CD:[383..387] 6805)
+        (.:[387..388] .)))
+
+;sentence 4 Span:392..706
+;The monoclonal antibody MAb 1-68-11, prepared to constitutive cytochrome P450
+; IIC11 (2c/RLM5) from male Sprague-Dawley rat liver, was used to study the 
+;contribution of the class of cytochrome P450s epitopically related to P450
+;IIC11  to the regiospecific metabolism of benzo[a]pyrene (BP) and its binding
+;to DNA.
+;[396..415]:substance:"monoclonal antibody"
+;[416..427]:substance:"MAb 1-68-11"
+;[454..476]:cyp450:"cytochrome P450  IIC11"
+;[478..485]:cyp450:"2c/RLM5"
+;[575..591]:cyp450:"cytochrome P450s"
+;[616..626]:cyp450:"P450 IIC11"
+;[663..677]:substance:"benzo[a]pyrene"
+;[679..681]:substance:"BP"
+;[702..705]:substance:"DNA"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[392..395] The)
+           (JJ:[396..406] monoclonal) (NN:[407..415] antibody))
+        (NP (NN:[416..419] MAb) (NN:[420..427] 1-68-11)))
+      (,:[427..428] ,)
+      (VP (VBN:[429..437] prepared)
+        (NP (-NONE-:[437..437] *))
+        (PP (TO:[438..440] to)
+          (NP (VB:[441..453] constitutive)
+             (NN:[454..464] cytochrome) (NN:[465..469] P450)
+             (NN:[471..476] IIC11)
+            (PRN (-LRB-:[477..478] -LRB-)
+              (NP (NN:[478..485] 2c/RLM5))
+              (-RRB-:[485..486] -RRB-))))
+        (PP (IN:[487..491] from)
+          (NP (JJ:[492..496] male)
+            (NML (NNP:[497..504] Sprague) (HYPH:[504..505] -)
+                 (NNP:[505..511] Dawley))
+            (NN:[512..515] rat) (NN:[516..521] liver)))))
+    (,:[521..522] ,)
+    (VP (VBD:[523..526] was)
+      (VP (VBN:[527..531] used)
+        (NP-1 (-NONE-:[531..531] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[531..531] *))
+          (VP (TO:[532..534] to)
+            (VP (VB:[535..540] study)
+              (NP
+                (NP (DT:[541..544] the) (NN:[546..558] contribution))
+                (PP (IN:[559..561] of)
+                  (NP
+                    (NP (DT:[562..565] the) (NN:[566..571] class))
+                    (PP (IN:[572..574] of)
+                      (NP
+                        (NP (NN:[575..585] cytochrome) (NNS:[586..591] P450s))
+                        (VP
+                          (ADVP (RB:[592..604] epitopically))
+                          (JJ:[605..612] related)
+                          (NP (-NONE-:[612..612] *))
+                          (PP-CLR (TO:[613..615] to)
+                            (NP (NN:[616..620] P450) (NN:[621..626] IIC11))))))))
+                (PP (TO:[628..630] to)
+                  (NP
+                    (NP
+                      (NP (DT:[631..634] the) (JJ:[635..648] regiospecific)
+                          (NN:[649..659] metabolism))
+                      (PP (NN:[660..662] of)
+                        (NP
+                          (NP (NN:[663..677] benzo-LSB-a-RSB-pyrene))
+                          (NP (-LRB-:[678..679] -LRB-) (NN:[679..681] BP)
+                              (-RRB-:[681..682] -RRB-)))))
+                    (CC:[683..686] and)
+                    (NP
+                      (NP (PRP$:[687..690] its) (NN:[691..698] binding))
+                      (PP (TO:[699..701] to)
+                        (NP (NN:[702..705] DNA))))))))))))
+    (.:[705..706] .)))
+
+;sentence 5 Span:708..1096
+;The effect of MAb 1-68-11 was determined on the conversion of BP to 
+;BP-9,10-dihydrodiol, BP-7,8-dihydrodiol, BP-4,5-dihydrodiol, BP phenols, and
+;BP  quinones, and on the P450-dependent DNA binding catalyzed by P450 in
+;microsomes  from uninduced male and female Wistar and Sprague-Dawley rat
+;livers, as well as  3-methylcholanthrene- and phenobarbital (PB)-induced male
+;Wistar rat livers.
+;[722..733]:substance:"MAb 1-68-11"
+;[770..772]:substance:"BP"
+;[777..796]:substance:"BP-9,10-dihydrodiol"
+;[798..816]:substance:"BP-7,8-dihydrodiol"
+;[818..836]:substance:"BP-4,5-dihydrodiol"
+;[838..848]:substance:"BP phenols"
+;[854..866]:substance:"BP  quinones"
+;[879..883]:cyp450:"P450"
+;[894..897]:substance:"DNA"
+;[919..923]:cyp450:"P450"
+;[1020..1040]:substance:"3-methylcholanthrene"
+;[1046..1059]:substance:"phenobarbital"
+;[1061..1063]:substance:"PB"
+(SENT
+  (S
+    (NP-SBJ-4
+      (NP (DT:[708..711] The) (NN:[712..718] effect))
+      (PP (IN:[719..721] of)
+        (NP (NN:[722..725] MAb) (NN:[726..733] 1-68-11))))
+    (VP (VBD:[734..737] was)
+      (VP (VBN:[738..748] determined)
+        (NP-4 (-NONE-:[748..748] *))
+        (PP
+          (PP (IN:[749..751] on)
+            (NP
+              (NP (DT:[752..755] the) (NN:[756..766] conversion))
+              (PP (IN:[767..769] of)
+                (NP (NN:[770..772] BP)))
+              (PP (TO:[773..775] to)
+                (NP
+                  (NP (NN:[777..779] BP) (HYPH:[779..780] -)
+                      (NN:[780..796] 9,10-dihydrodiol))
+                  (,:[796..797] ,)
+                  (NP (NN:[798..800] BP) (HYPH:[800..801] -)
+                      (NN:[801..816] 7,8-dihydrodiol))
+                  (,:[816..817] ,)
+                  (NP (NN:[818..820] BP) (HYPH:[820..821] -)
+                      (NN:[821..836] 4,5-dihydrodiol))
+                  (,:[836..837] ,)
+                  (NP (NN:[838..840] BP) (NNS:[841..848] phenols))
+                  (,:[848..849] ,) (CC:[850..853] and)
+                  (NP (NN:[854..856] BP) (NNS:[858..866] quinones))))))
+          (,:[866..867] ,) (CC:[868..871] and)
+          (PP (IN:[872..874] on)
+            (NP
+              (NP
+                (NP (DT:[875..878] the)
+                  (ADJP (NN:[879..883] P450) (HYPH:[883..884] -)
+                        (JJ:[884..893] dependent))
+                  (NN:[894..897] DNA) (NN:[898..905] binding))
+                (VP (VBN:[906..915] catalyzed)
+                  (NP (-NONE-:[915..915] *))
+                  (PP (IN:[916..918] by)
+                    (NP-LGS (NN:[919..923] P450)))
+                  (PP-LOC (IN:[924..926] in)
+                    (NP
+                      (NP (NNS:[927..937] microsomes))
+                      (PP (IN:[939..943] from)
+                        (NP
+                          (NP
+                            (ADJP-5 (JJ:[944..953] uninduced))
+                            (ADJP-3 (JJ:[954..958] male) (CC:[959..962] and)
+                                    (JJ:[963..969] female))
+                            (NML (NNP:[970..976] Wistar))
+                            (NML-2 (-NONE-:[976..976] *P*)))
+                          (CC:[977..980] and)
+                          (NP
+                            (ADJP-5 (-NONE-:[980..980] *P*))
+                            (ADJP-3 (-NONE-:[980..980] *P*))
+                            (NML (NNP:[981..988] Sprague) (HYPH:[988..989] -)
+                                 (NNP:[989..995] Dawley))
+                            (NML-2 (NN:[996..999] rat) (NNS:[1000..1006] livers)))))))))
+              (,:[1006..1007] ,)
+              (CONJP (RB:[1008..1010] as) (RB:[1011..1015] well)
+                     (IN:[1016..1018] as))
+              (NP
+                (NP
+                  (ADJP (NN:[1020..1040] 3-methylcholanthrene)
+                        (HYPH:[1040..1041] -)
+                    (ADJP-1 (-NONE-:[1041..1041] *P*)))
+                  (NML-6 (-NONE-:[1041..1041] *P*)))
+                (CC:[1042..1045] and)
+                (NP
+                  (ADJP
+                    (NML
+                      (NML (NN:[1046..1059] phenobarbital))
+                      (NML (-LRB-:[1060..1061] -LRB-) (NN:[1061..1063] PB)
+                           (-RRB-:[1063..1064] -RRB-)))
+                    (HYPH:[1064..1065] -)
+                    (ADJP-1 (VBN:[1065..1072] induced)))
+                  (NML-6 (JJ:[1073..1077] male) (NNP:[1078..1084] Wistar)
+                         (NN:[1085..1088] rat) (NNS:[1089..1095] livers)))))))))
+    (.:[1095..1096] .)))
+
+;sentence 6 Span:1097..1278
+;In  liver microsomes from untreated male rats, MAb 1-68-11 inhibited 
+;BP-9,10-dihydrodiol formation by 80%; in liver microsomes from untreated
+;female  rats, the inhibition was 100%.
+;[1144..1155]:substance:"MAb 1-68-11"
+;[1167..1186]:substance:"BP-9,10-dihydrodiol"
+;[1200..1203]:quantitative-value:"80%"
+;[1273..1277]:quantitative-value:"100%"
+(SENT
+  (S
+    (S
+      (PP-LOC (IN:[1097..1099] In)
+        (NP
+          (NP (NN:[1101..1106] liver) (NNS:[1107..1117] microsomes))
+          (PP (IN:[1118..1122] from)
+            (NP (JJ:[1123..1132] untreated) (JJ:[1133..1137] male)
+                (NNS:[1138..1142] rats)))))
+      (,:[1142..1143] ,)
+      (NP-SBJ (NN:[1144..1147] MAb) (NN:[1148..1155] 1-68-11))
+      (VP (VBD:[1156..1165] inhibited)
+        (NP
+          (NML (NN:[1167..1169] BP) (HYPH:[1169..1170] -)
+               (NN:[1170..1186] 9,10-dihydrodiol))
+          (NN:[1187..1196] formation))
+        (PP-EXT (IN:[1197..1199] by)
+          (NP (CD:[1200..1202] 80) (NN:[1202..1203] %)))))
+    (::[1203..1204] ;)
+    (S
+      (PP-LOC (IN:[1205..1207] in)
+        (NP
+          (NP (NN:[1208..1213] liver) (NNS:[1214..1224] microsomes))
+          (PP (IN:[1225..1229] from)
+            (NP (JJ:[1230..1239] untreated) (JJ:[1240..1246] female)
+                (NNS:[1248..1252] rats)))))
+      (,:[1252..1253] ,)
+      (NP-SBJ (DT:[1254..1257] the) (NN:[1258..1268] inhibition))
+      (VP (VBD:[1269..1272] was)
+        (NP-PRD (CD:[1273..1276] 100) (NN:[1276..1277] %))))
+    (.:[1277..1278] .)))
+
+(ORPH BP-)
+
+;section 7 Span:1282..1393
+;7,8-dihydrodiol formation was inhibited from  38 to 77% in microsomes from
+;males and 50% in those from females.
+(SEC
+  (S
+    (NP-SBJ-3 (NN:[1282..1297] 7,8-dihydrodiol) (NN:[1298..1307] formation))
+    (VP (VBD:[1308..1311] was)
+      (VP
+        (VP (VBN:[1312..1321] inhibited)
+          (NP-3 (-NONE-:[1321..1321] *))
+          (NP-EXT=1
+            (QP (IN:[1322..1326] from) (CD:[1328..1330] 38) (TO:[1331..1333] to)
+                (CD:[1334..1336] 77))
+            (NN:[1336..1337] %))
+          (PP-LOC=2 (IN:[1338..1340] in)
+            (NP
+              (NP (NNS:[1341..1351] microsomes))
+              (PP (IN:[1352..1356] from)
+                (NP (NNS:[1357..1362] males))))))
+        (CC:[1363..1366] and)
+        (VP
+          (NP-EXT=1 (CD:[1367..1369] 50) (NN:[1369..1370] %))
+          (PP-LOC=2 (IN:[1371..1373] in)
+            (NP
+              (NP (DT:[1374..1379] those))
+              (PP (IN:[1380..1384] from)
+                (NP (NNS:[1385..1392] females))))))))
+    (.:[1392..1393] .)))
+;ERROR_Orphan Text from Tree File[1278..1282] BP-
+
+;sentence 8 Span:1394..1577
+;In microsomes  from PB-induced rats, inhibition of the 9,10-dihydrodiol and
+;the 7,8-dihydrodiol  was 90% and 73%, respectively, whereas
+;BP-4,5-dihydrodiol formation was enhanced  80%.
+;[1414..1416]:substance:"PB"
+;[1449..1465]:substance:"9,10-dihydrodiol"
+;[1474..1489]:substance:"7,8-dihydrodiol"
+;[1495..1498]:quantitative-value:"90%"
+;[1503..1506]:quantitative-value:"73%"
+;[1530..1548]:substance:"BP-4,5-dihydrodiol"
+;[1573..1576]:quantitative-value:"80%"
+(SENT
+  (S
+    (PP-LOC (IN:[1394..1396] In)
+      (NP
+        (NP (NNS:[1397..1407] microsomes))
+        (PP (IN:[1409..1413] from)
+          (NP
+            (ADJP (NN:[1414..1416] PB) (HYPH:[1416..1417] -)
+                  (VBN:[1417..1424] induced))
+            (NNS:[1425..1429] rats)))))
+    (,:[1429..1430] ,)
+    (NP-SBJ
+      (NP (NN:[1431..1441] inhibition))
+      (PP (IN:[1442..1444] of)
+        (NP
+          (NP (DT:[1445..1448] the) (NN:[1449..1465] 9,10-dihydrodiol))
+          (CC:[1466..1469] and)
+          (NP (DT:[1470..1473] the) (NN:[1474..1489] 7,8-dihydrodiol)))))
+    (VP (VBD:[1491..1494] was)
+      (NP-PRD
+        (NP (CD:[1495..1497] 90) (NN:[1497..1498] %))
+        (CC:[1499..1502] and)
+        (NP (CD:[1503..1505] 73) (NN:[1505..1506] %)))
+      (,:[1506..1507] ,)
+      (ADVP (RB:[1508..1520] respectively))
+      (,:[1520..1521] ,)
+      (SBAR-ADV (IN:[1522..1529] whereas)
+        (S
+          (NP-SBJ-1
+            (NML (NN:[1530..1532] BP) (HYPH:[1532..1533] -)
+                 (NN:[1533..1548] 4,5-dihydrodiol))
+            (NN:[1549..1558] formation))
+          (VP (VBD:[1559..1562] was)
+            (VP (VBN:[1563..1571] enhanced)
+              (NP-1 (-NONE-:[1571..1571] *))
+              (NP-EXT (CD:[1573..1575] 80) (NN:[1575..1576] %)))))))
+    (.:[1576..1577] .)))
+
+;sentence 9 Span:1578..1728
+;In microsomes from 3-methylcholanthrene-treated rats, no inhibition of MAb 
+;1-68-11 was observed on either the metabolism of BP or its binding to DNA.
+;[1597..1617]:substance:"3-methylcholanthrene"
+;[1649..1661]:substance:"MAb  1-68-11"
+;[1703..1705]:substance:"BP"
+;[1724..1727]:substance:"DNA"
+(SENT
+  (S
+    (PP-LOC (IN:[1578..1580] In)
+      (NP
+        (NP (NNS:[1581..1591] microsomes))
+        (PP (IN:[1592..1596] from)
+          (NP
+            (ADJP (NN:[1597..1617] 3-methylcholanthrene) (HYPH:[1617..1618] -)
+                  (VBN:[1618..1625] treated))
+            (NNS:[1626..1630] rats)))))
+    (,:[1630..1631] ,)
+    (NP-SBJ-1
+      (NP (DT:[1632..1634] no) (NN:[1635..1645] inhibition))
+      (PP (IN:[1646..1648] of)
+        (NP (NN:[1649..1652] MAb) (NN:[1654..1661] 1-68-11))))
+    (VP (VBD:[1662..1665] was)
+      (VP (VBN:[1666..1674] observed)
+        (NP-1 (-NONE-:[1674..1674] *))
+        (PP (IN:[1675..1677] on)
+          (NP (CC:[1678..1684] either)
+            (NP
+              (NP (DT:[1685..1688] the) (NN:[1689..1699] metabolism))
+              (PP (IN:[1700..1702] of)
+                (NP (NN:[1703..1705] BP))))
+            (CC:[1706..1708] or)
+            (NP
+              (NP (PRP$:[1709..1712] its) (NN:[1713..1720] binding))
+              (PP (TO:[1721..1723] to)
+                (NP (NN:[1724..1727] DNA))))))))
+    (.:[1727..1728] .)))
+
+;sentence 10 Span:1729..2094
+;In  contrast, the binding of BP to DNA was completely inhibited by MAb
+;1-68-11 in  microsomes from uninduced male Wistar rats and 70% in PB-induced
+;microsomes.  32P-postlabeling analysis showed that formation of the major
+;stable adduct, BP  diol epoxide bound at C-10 to the 2-amino of
+;deoxyguanosine, was strongly  inhibited in uninduced and PB-induced
+;microsomes.
+;[1758..1760]:substance:"BP"
+;[1764..1767]:substance:"DNA"
+;[1796..1807]:substance:"MAb 1-68-11"
+;[1859..1862]:quantitative-value:"70%"
+;[1866..1868]:substance:"PB"
+(SENT
+  (S
+    (PP (IN:[1729..1731] In)
+      (NP (NN:[1733..1741] contrast)))
+    (,:[1741..1742] ,)
+    (NP-SBJ-5
+      (NP (DT:[1743..1746] the) (NN:[1747..1754] binding))
+      (PP (IN:[1755..1757] of)
+        (NP (NN:[1758..1760] BP)))
+      (PP (TO:[1761..1763] to)
+        (NP (NN:[1764..1767] DNA))))
+    (VP
+      (VP (VBD:[1768..1771] was)
+        (ADVP=3 (RB:[1772..1782] completely))
+        (VP (VBN:[1783..1792] inhibited)
+          (NP-5 (-NONE-:[1792..1792] *))
+          (PP (IN:[1793..1795] by)
+            (NP-LGS (NN:[1796..1799] MAb) (NN:[1800..1807] 1-68-11)))
+          (PP-LOC=4 (IN:[1808..1810] in)
+            (NP
+              (NP (NNS:[1812..1822] microsomes))
+              (PP (IN:[1823..1827] from)
+                (NP (JJ:[1828..1837] uninduced) (JJ:[1838..1842] male)
+                    (NNP:[1843..1849] Wistar) (NNS:[1850..1854] rats)))))))
+      (CC:[1855..1858] and)
+      (VP
+        (ADVP=3 (-NONE-:[1858..1858] *NOT*))
+        (NP-EXT (CD:[1859..1861] 70) (NN:[1861..1862] %))
+        (PP-LOC=4 (IN:[1863..1865] in)
+          (NP
+            (ADJP (NN:[1866..1868] PB) (HYPH:[1868..1869] -)
+                  (VBN:[1869..1876] induced))
+            (NNS:[1877..1887] microsomes)))))
+    (.:[1887..1888] .))
+  (S
+    (NP-SBJ
+      (NML (NN:[1890..1893] 32P) (HYPH:[1893..1894] -)
+           (NN:[1894..1906] postlabeling))
+      (NN:[1907..1915] analysis))
+    (VP (VBD:[1916..1922] showed)
+      (SBAR (IN:[1923..1927] that)
+        (S
+          (NP-SBJ-2
+            (NP (NN:[1928..1937] formation))
+            (PP (IN:[1938..1940] of)
+              (NP
+                (NP (DT:[1941..1944] the) (JJ:[1945..1950] major)
+                    (JJ:[1951..1957] stable) (NN:[1958..1964] adduct))
+                (,:[1964..1965] ,)
+                (NP
+                  (NP (NN:[1966..1968] BP) (NN:[1970..1974] diol)
+                      (NN:[1975..1982] epoxide))
+                  (VP (VBN:[1983..1988] bound)
+                    (NP (-NONE-:[1988..1988] *))
+                    (PP-LOC (IN:[1989..1991] at)
+                      (NP (NN:[1992..1996] C-10)))
+                    (PP-CLR (TO:[1997..1999] to)
+                      (NP
+                        (NP (DT:[2000..2003] the) (NN:[2004..2011] 2-amino))
+                        (PP (IN:[2012..2014] of)
+                          (NP (NN:[2015..2029] deoxyguanosine))))))))))
+          (,:[2029..2030] ,)
+          (VP (VBD:[2031..2034] was)
+            (ADVP (RB:[2035..2043] strongly))
+            (VP (VBN:[2045..2054] inhibited)
+              (NP-2 (-NONE-:[2054..2054] *))
+              (PP-LOC (IN:[2055..2057] in)
+                (NP
+                  (NP (JJ:[2058..2067] uninduced)
+                    (NML-1 (-NONE-:[2067..2067] *P*)))
+                  (CC:[2068..2071] and)
+                  (NP
+                    (ADJP (NN:[2072..2074] PB) (HYPH:[2074..2075] -)
+                          (VBN:[2075..2082] induced))
+                    (NML-1 (NNS:[2083..2093] microsomes))))))))))
+    (.:[2093..2094] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[1729..2094]::S:S:
+
+;sentence 11 Span:2095..2253
+;Formation of the major labile  BP-DNA adduct 7-(benzo[a]pyren-6-yl) guanine
+;(BP-N7Gua) was inhibited about 60%  in microsomes from untreated male Wistar
+;rats.
+;[2126..2132]:substance:"BP-DNA"
+;[2133..2139]:substance:"adduct"
+;[2140..2170]:substance:"7-(benzo[a]pyren-6-yl) guanine"
+;[2172..2180]:substance:"BP-N7Gua"
+;[2196..2205]:quantitative-value:"about 60%"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[2095..2104] Formation))
+      (PP (IN:[2105..2107] of)
+        (NP
+          (NP (DT:[2108..2111] the) (JJ:[2112..2117] major)
+              (JJ:[2118..2124] labile)
+            (NML (NN:[2126..2128] BP) (HYPH:[2128..2129] -)
+                 (NN:[2129..2132] DNA))
+            (NN:[2133..2139] adduct))
+          (NP
+            (NML (NN:[2140..2162] 7--LRB-benzo-LSB-a-RSB-pyren-6-yl-RRB-)
+                 (NN:[2163..2170] guanine))
+            (NML (-LRB-:[2171..2172] -LRB-)
+               (NN:[2172..2174] BP) (HYPH:[2174..2175] -)
+               (NN:[2175..2180] N7Gua)
+              (-RRB-:[2180..2181] -RRB-))))))
+    (VP (VBD:[2182..2185] was)
+      (VP (VBN:[2186..2195] inhibited)
+        (NP-1 (-NONE-:[2195..2195] *))
+        (NP-EXT
+          (QP (RB:[2196..2201] about) (CD:[2202..2204] 60))
+          (NN:[2204..2205] %))
+        (PP-LOC (IN:[2207..2209] in)
+          (NP
+            (NP (NNS:[2210..2220] microsomes))
+            (PP (IN:[2221..2225] from)
+              (NP (JJ:[2226..2235] untreated) (JJ:[2236..2240] male)
+                  (NNP:[2241..2247] Wistar) (NNS:[2248..2252] rats)))))))
+    (.:[2252..2253] .)))
+
+;sentence 12 Span:2254..2421
+;These results show that MAb  1-68-11 regiospecifically inhibits cytochrome
+;P450 IIC11 and epitopically  related P450s that metabolize BP at the 7,8 and
+;9,10 positions.
+;[2278..2290]:substance:"MAb  1-68-11"
+;[2318..2339]:cyp450:"cytochrome P450 IIC11"
+;[2366..2371]:cyp450:"P450s"
+;[2388..2390]:substance:"BP"
+(SENT
+  (S
+    (NP-SBJ (DT:[2254..2259] These) (NNS:[2260..2267] results))
+    (VP (VBP:[2268..2272] show)
+      (SBAR (IN:[2273..2277] that)
+        (S
+          (NP-SBJ (NN:[2278..2281] MAb) (NN:[2283..2290] 1-68-11))
+          (ADVP (RB:[2291..2308] regiospecifically))
+          (VP (VBZ:[2309..2317] inhibits)
+            (NP
+              (NP (NN:[2318..2328] cytochrome) (NN:[2329..2333] P450)
+                  (NN:[2334..2339] IIC11))
+              (CC:[2340..2343] and)
+              (NP
+                (NP
+                  (ADJP (RB:[2344..2356] epitopically)
+                        (VBN:[2358..2365] related))
+                  (NNS:[2366..2371] P450s))
+                (SBAR
+                  (WHNP-2 (WDT:[2372..2376] that))
+                  (S
+                    (NP-SBJ-2 (-NONE-:[2376..2376] *T*))
+                    (VP (VBP:[2377..2387] metabolize)
+                      (NP (NN:[2388..2390] BP))
+                      (PP-LOC (IN:[2391..2393] at)
+                        (NP (DT:[2394..2397] the)
+                          (NML
+                            (NML
+                              (NML (CD:[2398..2399] 7) (,:[2399..2400] ,)
+                                   (CD:[2400..2401] 8))
+                              (NML-1 (-NONE-:[2401..2401] *P*)))
+                            (CC:[2402..2405] and)
+                            (NML
+                              (NML (CD:[2406..2407] 9) (,:[2407..2408] ,)
+                                   (CD:[2408..2410] 10))
+                              (NML-1 (NNS:[2411..2420] positions)))))))))))))))
+    (.:[2420..2421] .)))
+
+;sentence 13 Span:2422..2581
+;MAb 1-68-11 also  inhibits enzyme-catalyzed binding of BP to DNA in the
+;specific formation of  BP-N7Gua and adducts detected by the 32P-postlabeling
+;technique.
+;[2422..2433]:substance:"MAb 1-68-11"
+;[2449..2455]:substance:"enzyme"
+;[2477..2479]:substance:"BP"
+;[2483..2486]:substance:"DNA"
+;[2517..2525]:substance:"BP-N7Gua"
+;[2530..2537]:substance:"adducts"
+(SENT
+  (S
+    (NP-SBJ (NN:[2422..2425] MAb) (NN:[2426..2433] 1-68-11))
+    (ADVP (RB:[2434..2438] also))
+    (VP (VBZ:[2440..2448] inhibits)
+      (NP
+        (NP
+          (ADJP (NN:[2449..2455] enzyme) (HYPH:[2455..2456] -)
+                (VBN:[2456..2465] catalyzed))
+          (NN:[2466..2473] binding))
+        (PP (IN:[2474..2476] of)
+          (NP (NN:[2477..2479] BP)))
+        (PP (TO:[2480..2482] to)
+          (NP (NN:[2483..2486] DNA))))
+      (PP (IN:[2487..2489] in)
+        (NP
+          (NP (DT:[2490..2493] the) (JJ:[2494..2502] specific)
+              (NN:[2503..2512] formation))
+          (PP (IN:[2513..2515] of)
+            (NP
+              (NP (NN:[2517..2519] BP) (HYPH:[2519..2520] -)
+                  (NN:[2520..2525] N7Gua))
+              (CC:[2526..2529] and)
+              (NP
+                (NP (NNS:[2530..2537] adducts))
+                (VP (VBN:[2538..2546] detected)
+                  (NP (-NONE-:[2546..2546] *))
+                  (PP-MNR (IN:[2547..2549] by)
+                    (NP (DT:[2550..2553] the)
+                      (NML (NN:[2554..2557] 32P) (HYPH:[2557..2558] -)
+                           (NN:[2558..2570] postlabeling))
+                      (NN:[2571..2580] technique))))))))))
+    (.:[2580..2581] .)))
+
+;section 14 Span:2585..2629
+;PMID: 1872951 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2585..2589] PMID) (::[2589..2590] :) (CD:[2591..2598] 1872951)
+        (NN:[2599..2600] -LSB-) (NNP:[2600..2606] PubMed) (::[2607..2608] -)
+        (NN:[2609..2616] indexed) (IN:[2617..2620] for)
+        (NNP:[2621..2629] MEDLINE-RSB-)))

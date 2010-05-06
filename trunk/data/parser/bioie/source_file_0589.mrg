@@ -1,0 +1,332 @@
+;PMID: 3240323
+;source_file_943.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..35] = [t:0..35]
+;1)sentence:[e:41..121] = [t:41..121]
+;2)section:[e:125..155] = [t:125..155]
+;3)section:[e:159..242] = [t:159..242]
+;4)sentence:[e:246..336] = [t:246..336]
+;5)sentence:[e:337..485] = [t:337..485]
+;6)sentence:[e:487..636] = [t:487..636]
+;7)sentence:[e:637..944] = [t:637..944]
+;8)sentence:[e:945..1131] = [t:945..1131]
+;9)sentence:[e:1132..1497] = [t:1132..1497]
+;10)section:[e:1501..1545] = [t:1501..1545]
+
+;section 0 Span:0..35
+;Biochem Int. 1988 Oct;17(4):755-62.
+(SEC
+  (FRAG (NNP:[0..7] Biochem) (NNP:[8..11] Int) (.:[11..12] .) (CD:[13..17] 1988)
+        (.:[18..25] Oct;17-LRB-) (CD:[25..26] 4) (-RRB-:[26..27] -RRB-)
+        (CD:[27..31] :755) (::[31..32] -) (CD:[32..34] 62) (.:[34..35] .)))
+
+;sentence 1 Span:41..121
+;Spectral perturbation of human microsomal cytochrome P-450 by flavonoid
+;binding.
+;[83..99]:cyp450:"cytochrome P-450"
+;[103..112]:substance:"flavonoid"
+(SENT
+  (NP-HLN
+    (NP (JJ:[41..49] Spectral) (NN:[50..62] perturbation))
+    (PP (IN:[63..65] of)
+      (NP (JJ:[66..71] human) (JJ:[72..82] microsomal)
+         (NN:[83..93] cytochrome) (NN:[94..99] P-450)))
+    (PP (IN:[100..102] by)
+      (NP (NN:[103..112] flavonoid) (NN:[113..120] binding)))
+    (.:[120..121] .)))
+
+;section 2 Span:125..155
+;Moochhala SM, Loke KH, Das NP.
+(SEC
+  (FRAG (NNP:[125..134] Moochhala) (NNP:[135..137] SM) (,:[137..138] ,)
+        (NNP:[139..143] Loke) (NNP:[144..146] KH) (,:[146..147] ,)
+        (NNP:[148..151] Das) (NNP:[152..154] NP) (.:[154..155] .)))
+
+;section 3 Span:159..242
+;Department of Pharmacology, Faculty of Medicine, National University of 
+;Singapore.
+(SEC
+  (FRAG (NNP:[159..169] Department) (IN:[170..172] of)
+        (NNP:[173..185] Pharmacology) (,:[185..186] ,) (NNP:[187..194] Faculty)
+        (IN:[195..197] of) (NNP:[198..206] Medicine) (,:[206..207] ,)
+        (NNP:[208..216] National) (NNP:[217..227] University) (IN:[228..230] of)
+        (NNP:[232..241] Singapore) (.:[241..242] .)))
+
+;sentence 4 Span:246..336
+;Aromatase is the cytochrome P-450 complex responsible for oestrogen
+;biosynthesis  in vivo.
+;[246..255]:cyp450:"Aromatase"
+;[263..287]:cyp450:"cytochrome P-450 complex"
+;[304..313]:substance:"oestrogen"
+(SENT
+  (S
+    (NP-SBJ (NN:[246..255] Aromatase))
+    (VP (VBZ:[256..258] is)
+      (NP-PRD
+        (NP (DT:[259..262] the)
+          
+          (NML (NN:[263..273] cytochrome) (NN:[274..279] P-450))
+          (NN:[280..287] complex))
+        (ADJP (JJ:[288..299] responsible)
+          (PP (IN:[300..303] for)
+            (NP
+              (NP (NN:[304..313] oestrogen) (NN:[314..326] biosynthesis))
+              (ADVP (FW:[328..330] in) (FW:[331..335] vivo)))))))
+    (.:[335..336] .)))
+
+;sentence 5 Span:337..485
+;Inhibitors of this enzyme complex might therefore serve to modulate 
+;oestrogen-dependent processes by interfering with the production of
+;oestrogens.
+;[337..347]:substance:"Inhibitors"
+;[356..370]:substance:"enzyme complex"
+;[406..415]:substance:"oestrogen"
+;[474..484]:substance:"oestrogens"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[337..347] Inhibitors))
+      (PP (IN:[348..350] of)
+        (NP (DT:[351..355] this)
+           (NN:[356..362] enzyme) (NN:[363..370] complex))))
+    (VP (MD:[371..376] might)
+      (ADVP (RB:[377..386] therefore))
+      (VP (VB:[387..392] serve)
+        (S
+          (NP-SBJ-1 (-NONE-:[392..392] *))
+          (VP (TO:[393..395] to)
+            (VP (VB:[396..404] modulate)
+              (NP
+                (ADJP (NN:[406..415] oestrogen) (HYPH:[415..416] -)
+                      (JJ:[416..425] dependent))
+                (NNS:[426..435] processes))
+              (PP-MNR (IN:[436..438] by)
+                (S-NOM
+                  (NP-SBJ (-NONE-:[438..438] *))
+                  (VP (VBG:[439..450] interfering)
+                    (PP-CLR (IN:[451..455] with)
+                      (NP
+                        (NP (DT:[456..459] the) (NN:[460..470] production))
+                        (PP (IN:[471..473] of)
+                          (NP (NNS:[474..484] oestrogens)))))))))))))
+    (.:[484..485] .)))
+
+;sentence 6 Span:487..636
+;Thus, these agents may be useful in reproductive processes and in treating 
+;oestrogen-dependent disease states such as breast and endometrial cancer.
+;[499..505]:substance:"agents"
+;[563..572]:substance:"oestrogen"
+(SENT
+  (S
+    (ADVP (RB:[487..491] Thus))
+    (,:[491..492] ,)
+    (NP-SBJ (DT:[493..498] these) (NNS:[499..505] agents))
+    (VP (MD:[506..509] may)
+      (VP (VB:[510..512] be)
+        (ADJP-PRD (JJ:[513..519] useful))
+        (PP
+          (PP (IN:[520..522] in)
+            (NP (JJ:[523..535] reproductive) (NNS:[536..545] processes)))
+          (CC:[546..549] and)
+          (PP (IN:[550..552] in)
+            (S-NOM
+              (NP-SBJ (-NONE-:[552..552] *))
+              (VP (VBG:[553..561] treating)
+                (NP
+                  (NP
+                    (ADJP (NN:[563..572] oestrogen) (HYPH:[572..573] -)
+                          (JJ:[573..582] dependent))
+                    (NN:[583..590] disease) (NNS:[591..597] states))
+                  (PP (JJ:[598..602] such) (IN:[603..605] as)
+                    (NP
+                      (NP (NN:[606..612] breast)
+                        (NML-1 (-NONE-:[612..612] *P*)))
+                      (CC:[613..616] and)
+                      (NP (JJ:[617..628] endometrial)
+                        (NML-1 (NN:[629..635] cancer))))))))))))
+    (.:[635..636] .)))
+
+;sentence 7 Span:637..944
+;We  have demonstrated that inhibitors such as the naturally occurring
+;flavonoids  having 5,7-dihydroxy substituents can bind to human placental
+;cytochrome P-450  with affinity comparable to their ability to inhibit
+;aromatization of  androstenedione and testosterone to oestradiol and
+;oestrone, respectively.
+;[664..674]:substance:"inhibitors"
+;[707..717]:substance:"flavonoids"
+;[781..797]:cyp450:"cytochrome P-450"
+;[870..885]:substance:"androstenedione"
+;[890..902]:substance:"testosterone"
+;[906..916]:substance:"oestradiol"
+;[921..929]:substance:"oestrone"
+(SENT
+  (S
+    (NP-SBJ (PRP:[637..639] We))
+    (VP (VBP:[641..645] have)
+      (VP (VBN:[646..658] demonstrated)
+        (SBAR (IN:[659..663] that)
+          (S
+            (NP-SBJ
+              (NP (NNS:[664..674] inhibitors))
+              (PP (JJ:[675..679] such) (IN:[680..682] as)
+                (NP
+                  (NP (DT:[683..686] the)
+                    (ADJP (RB:[687..696] naturally) (VBG:[697..706] occurring))
+                    (NNS:[707..717] flavonoids))
+                  (VP (VBG:[719..725] having)
+                    (NP (NN:[726..739] 5,7-dihydroxy)
+                        (NNS:[740..752] substituents))))))
+            (VP (MD:[753..756] can)
+              (VP (VB:[757..761] bind)
+                (PP-CLR (TO:[762..764] to)
+                  (NP (JJ:[765..770] human) (JJ:[771..780] placental)
+                     (NN:[781..791] cytochrome) (NN:[792..797] P-450)))
+                (PP (IN:[799..803] with)
+                  (NP
+                    (NP (NN:[804..812] affinity))
+                    (ADJP (JJ:[813..823] comparable)
+                      (PP (TO:[824..826] to)
+                        (NP (PRP$:[827..832] their) (NN:[833..840] ability)
+                          (S
+                            (NP-SBJ (-NONE-:[840..840] *))
+                            (VP (TO:[841..843] to)
+                              (VP (VB:[844..851] inhibit)
+                                (NP
+                                  (NP (NN:[852..865] aromatization))
+                                  (PP (IN:[866..868] of)
+                                    (NP (NN:[870..885] androstenedione)
+                                        (CC:[886..889] and)
+                                        (NN:[890..902] testosterone)))
+                                  (PP (TO:[903..905] to)
+                                    (NP (NN:[906..916] oestradiol)
+                                        (CC:[917..920] and)
+                                        (NN:[921..929] oestrone))))
+                                (,:[929..930] ,)
+                                (ADVP (RB:[931..943] respectively))))))))))))))))
+    (.:[943..944] .)))
+
+;sentence 8 Span:945..1131
+;It  appears that the mechanism of this inhibition requires the flavonoid to
+;bind to  the active site of the cytochrome P-450 without prior generation of
+;metabolic  intermediate products.
+;[1008..1017]:substance:"flavonoid"
+;[1053..1069]:cyp450:"cytochrome P-450"
+;[1122..1130]:substance:"products"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (PRP:[945..947] It))
+      (SBAR-1 (-NONE-:[947..947] *EXP*)))
+    (VP (VBZ:[949..956] appears)
+      (SBAR-1 (IN:[957..961] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[962..965] the) (NN:[966..975] mechanism))
+            (PP (IN:[976..978] of)
+              (NP (DT:[979..983] this) (NN:[984..994] inhibition))))
+          (VP (VBZ:[995..1003] requires)
+            (S
+              (NP-SBJ (DT:[1004..1007] the) (NN:[1008..1017] flavonoid))
+              (VP (TO:[1018..1020] to)
+                (VP (VB:[1021..1025] bind)
+                  (PP-CLR (TO:[1026..1028] to)
+                    (NP
+                      (NP (DT:[1030..1033] the) (JJ:[1034..1040] active)
+                          (NN:[1041..1045] site))
+                      (PP (IN:[1046..1048] of)
+                        (NP (DT:[1049..1052] the)
+                           (NN:[1053..1063] cytochrome) (NN:[1064..1069] P-450)))))
+                  (PP (IN:[1070..1077] without)
+                    (NP
+                      (NP (JJ:[1078..1083] prior) (NN:[1084..1094] generation))
+                      (PP (IN:[1095..1097] of)
+                        (NP (JJ:[1098..1107] metabolic)
+                            (JJ:[1109..1121] intermediate)
+                            (NNS:[1122..1130] products))))))))))))
+    (.:[1130..1131] .)))
+
+;sentence 9 Span:1132..1497
+;Our data also suggest that the presently known  differences in potency of
+;inhibition of cytochrome P-450-mediated aromatization  of steroids by
+;different hydroxylated derivatives of 5,7-dihydroxyflavones may  arise from
+;their different binding affinity to the enzyme, particularly those  compounds
+;hydroxylated in the C3 position in ring C of the flavonoid nucleus.
+;[1220..1236]:cyp450:"cytochrome P-450"
+;[1264..1272]:substance:"steroids"
+;[1299..1310]:substance:"derivatives"
+;[1314..1335]:substance:"5,7-dihydroxyflavones"
+;[1392..1398]:cyp450:"enzyme"
+;[1420..1429]:substance:"compounds"
+;[1479..1488]:substance:"flavonoid"
+(SENT
+  (S
+    (NP-SBJ (PRP$:[1132..1135] Our) (NNS:[1136..1140] data))
+    (VP
+      (ADVP (RB:[1141..1145] also))
+      (VBP:[1146..1153] suggest)
+      (SBAR (IN:[1154..1158] that)
+        (S
+          (NP-SBJ
+            (NP (DT:[1159..1162] the)
+              (ADJP (RB:[1163..1172] presently) (VBN:[1173..1178] known))
+              (NNS:[1180..1191] differences))
+            (PP (IN:[1192..1194] in)
+              (NP
+                (NP (NN:[1195..1202] potency))
+                (PP (IN:[1203..1205] of)
+                  (NP
+                    (NP (NN:[1206..1216] inhibition))
+                    (PP (IN:[1217..1219] of)
+                      (NP
+                        (NP
+                          (ADJP
+                            (NML (NN:[1220..1230] cytochrome)
+                                 (NN:[1231..1236] P-450))
+                            (HYPH:[1236..1237] -) (VBN:[1237..1245] mediated))
+                          (NN:[1246..1259] aromatization))
+                        (PP (IN:[1261..1263] of)
+                          (NP (NNS:[1264..1272] steroids)))
+                        (PP (IN:[1273..1275] by)
+                          (NP
+                            (NP (JJ:[1276..1285] different)
+                                (VBN:[1286..1298] hydroxylated)
+                                (NNS:[1299..1310] derivatives))
+                            (PP (IN:[1311..1313] of)
+                              (NP (NNS:[1314..1335] 5,7-dihydroxyflavones))))))))))))
+          (VP (MD:[1336..1339] may)
+            (VP (VB:[1341..1346] arise)
+              (PP (IN:[1347..1351] from)
+                (NP
+                  (NP
+                    (NP (PRP$:[1352..1357] their) (JJ:[1358..1367] different)
+                        (NN:[1368..1375] binding) (NN:[1376..1384] affinity))
+                    (PP (TO:[1385..1387] to)
+                      (NP (DT:[1388..1391] the) (NN:[1392..1398] enzyme))))
+                  (,:[1398..1399] ,)
+                  (ADVP (RB:[1400..1412] particularly))
+                  (NP
+                    (NP (DT:[1413..1418] those) (NNS:[1420..1429] compounds))
+                    (VP (VBN:[1430..1442] hydroxylated)
+                      (NP (-NONE-:[1442..1442] *))
+                      (PP-LOC (IN:[1443..1445] in)
+                        (NP
+                          (NP (DT:[1446..1449] the) (NN:[1450..1452] C3)
+                              (NN:[1453..1461] position))
+                          (PP-LOC (IN:[1462..1464] in)
+                            (NP
+                              (NP (NN:[1465..1469] ring) (NN:[1470..1471] C))
+                              (PP (IN:[1472..1474] of)
+                                (NP (DT:[1475..1478] the)
+                                    (JJ:[1479..1488] flavonoid)
+                                    (NN:[1489..1496] nucleus))))))))))))))))
+    (.:[1496..1497] .)))
+
+;section 10 Span:1501..1545
+;PMID: 3240323 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1501..1505] PMID) (::[1505..1506] :) (CD:[1507..1514] 3240323)
+        (-LRB-:[1515..1516] -LSB-) (NNP:[1516..1522] PubMed)
+        (HYPH:[1523..1524] -) (NN:[1525..1532] indexed) (IN:[1533..1536] for)
+        (NNP:[1537..1544] MEDLINE) (-RRB-:[1544..1545] -RSB-)))

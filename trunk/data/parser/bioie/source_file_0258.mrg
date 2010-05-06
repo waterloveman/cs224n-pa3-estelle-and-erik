@@ -1,0 +1,449 @@
+;PMID: 1686370
+;source_file_664.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)section:[e:50..168] = [t:50..168]
+;2)section:[e:172..195] = [t:172..195]
+;3)section:[e:199..285] = [t:199..285]
+;4)sentence:[e:289..376] = [t:289..376]
+;5)sentence:[e:377..555] = [t:377..555]
+;6)sentence:[e:556..816] = [t:556..816]
+;7)sentence:[e:817..983] = [t:817..983]
+;8)sentence:[e:985..1208] = [t:985..1208]
+;9)sentence:[e:1209..1399] = [t:1209..1399]
+;10)sentence:[e:1400..1662] = [t:1400..1662]
+;11)sentence:[e:1663..1828] = [t:1663..1828]
+;12)sentence:[e:1829..1996] = [t:1829..1996]
+;13)section:[e:1996..2030] = [t:1996..2030]
+;14)section:[e:2034..2078] = [t:2034..2078]
+
+;section 0 Span:0..44
+;Alcohol Clin Exp Res. 1991 Dec;15(6):1072-6.
+(SEC
+  (FRAG (NNP:[0..7] Alcohol) (NNP:[8..12] Clin) (NNP:[13..16] Exp)
+        (NNP:[17..20] Res) (.:[20..21] .) (CD:[22..26] 1991) (CC:[27..32] Dec;1)
+        (CD:[32..33] 5) (NN:[33..34] -LRB-) (NN:[34..35] 6) (NN:[35..36] -RRB-)
+        (::[36..37] :) (CD:[37..40] 107) (CD:[40..43] 2-6) (.:[43..44] .)))
+
+;section 1 Span:50..168
+;Increased oxidation of dimethylnitrosamine in pericentral microsomes after 
+;pyrazole induction of cytochrome P-4502E1.
+;[73..92]:substance:"dimethylnitrosamine"
+;[126..134]:substance:"pyrazole"
+;[148..167]:cyp450:"cytochrome P-4502E1"
+(SEC
+  (NP-HLN
+    (NP (JJ:[50..59] Increased) (NN:[60..69] oxidation))
+    (PP (IN:[70..72] of)
+      (NP (NN:[73..92] dimethylnitrosamine)))
+    (PP-LOC (IN:[93..95] in)
+      (NP (JJ:[96..107] pericentral) (NNS:[108..118] microsomes)))
+    (PP-TMP (IN:[119..124] after)
+      (NP
+        (NP (NN:[126..134] pyrazole) (NN:[135..144] induction))
+        (PP (IN:[145..147] of)
+          (NP (NN:[148..158] cytochrome) (NN:[159..167] P-4502E1)))))
+    (.:[167..168] .)))
+;ERROR_Entity in section[73..92]:substance "dimethylnitrosamine"
+;ERROR_Entity in section[126..134]:substance "pyrazole"
+;ERROR_Entity in section[148..167]:cyp450 "cytochrome P-4502E1"
+
+;section 2 Span:172..195
+;Dicker E, Cederbaum AI.
+(SEC
+  (FRAG (NNP:[172..178] Dicker) (NNP:[179..180] E) (,:[180..181] ,)
+        (NNP:[182..191] Cederbaum) (NNP:[192..195] AI.)))
+
+;section 3 Span:199..285
+;Department of Biochemistry, Mount Sinai School of Medicine, New York, New
+;York  10029.
+(SEC
+  (FRAG (NNP:[199..209] Department) (IN:[210..212] of)
+        (NNP:[213..225] Biochemistry) (,:[225..226] ,) (NNP:[227..232] Mount)
+        (NNP:[233..238] Sinai) (NNP:[239..245] School) (IN:[246..248] of)
+        (NNP:[249..257] Medicine) (,:[257..258] ,) (NNP:[259..262] New)
+        (NNP:[263..267] York) (,:[267..268] ,) (NNP:[269..272] New)
+        (NNP:[273..277] York) (.:[279..284] 10029) (.:[284..285] .)))
+
+;sentence 4 Span:289..376
+;The cytochrome P-450IIE1 (CYP2E1) isozyme activates several toxins and 
+;procarcinogens.
+;[293..330]:cyp450:"cytochrome P-450IIE1 (CYP2E1) isozyme"
+;[349..355]:substance:"toxins"
+;[361..375]:substance:"procarcinogens"
+(SENT
+  (S
+    (NP-SBJ (DT:[289..292] The)
+      
+      (NML
+        (NML (NN:[293..303] cytochrome) (NN:[304..313] P-450IIE1))
+        (NML (-LRB-:[314..315] -LRB-) (NN:[315..321] CYP2E1)
+             (-RRB-:[321..322] -RRB-)))
+      (NN:[323..330] isozyme))
+    (VP (VBZ:[331..340] activates)
+      (NP (JJ:[341..348] several) (NNS:[349..355] toxins) (CC:[356..359] and)
+          (NNS:[361..375] procarcinogens)))
+    (.:[375..376] .)))
+
+;sentence 5 Span:377..555
+;Recent studies employing immunohistochemical and immuno-analysis  techniques
+;have shown that this isozyme is predominantly localized in the  pericentral
+;zone of the liver acinus.
+;[475..482]:substance:"isozyme"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[377..383] Recent) (NNS:[384..391] studies))
+      (VP (VBG:[392..401] employing)
+        (NP
+          (NP (JJ:[402..421] immunohistochemical)
+            (NML-1 (-NONE-:[421..421] *P*)))
+          (CC:[422..425] and)
+          (NP
+            (NML (AFX:[426..432] immuno) (HYPH:[432..433] -)
+                 (NN:[433..441] analysis))
+            (NML-1 (NNS:[443..453] techniques))))))
+    (VP (VBP:[454..458] have)
+      (VP (VBN:[459..464] shown)
+        (SBAR (IN:[465..469] that)
+          (S
+            (NP-SBJ-2 (DT:[470..474] this) (NN:[475..482] isozyme))
+            (VP (VBZ:[483..485] is)
+              (ADVP (RB:[486..499] predominantly))
+              (VP (VBN:[500..509] localized)
+                (NP-2 (-NONE-:[509..509] *))
+                (PP-LOC (IN:[510..512] in)
+                  (NP
+                    (NP (DT:[513..516] the) (JJ:[518..529] pericentral)
+                        (NN:[530..534] zone))
+                    (PP (IN:[535..537] of)
+                      (NP (DT:[538..541] the) (NN:[542..547] liver)
+                          (NN:[548..554] acinus)))))))))))
+    (.:[554..555] .)))
+
+;sentence 6 Span:556..816
+;Experiments were conducted to evaluate  whether microsomes isolated from the
+;pericentral region of the liver display  elevated catalytic activity towards
+;effective substrates for CYP2E1 such as  dimethylnitrosamine (DMN) as
+;compared with periportal microsomes.
+;[720..730]:substance:"substrates"
+;[735..741]:cyp450:"CYP2E1"
+;[751..770]:substance:"dimethylnitrosamine"
+;[772..775]:substance:"DMN"
+(SENT
+  (S
+    (NP-SBJ-2 (NNS:[556..567] Experiments))
+    (VP (VBD:[568..572] were)
+      (VP (VBN:[573..582] conducted)
+        (NP-2 (-NONE-:[582..582] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[582..582] *))
+          (VP (TO:[583..585] to)
+            (VP (VB:[586..594] evaluate)
+              (SBAR (IN:[596..603] whether)
+                (S
+                  (NP-SBJ
+                    (NP (NNS:[604..614] microsomes))
+                    (VP (VBN:[615..623] isolated)
+                      (NP (-NONE-:[623..623] *))
+                      (PP (IN:[624..628] from)
+                        (NP
+                          (NP (DT:[629..632] the) (JJ:[633..644] pericentral)
+                              (NN:[645..651] region))
+                          (PP (IN:[652..654] of)
+                            (NP (DT:[655..658] the) (NN:[659..664] liver)))))))
+                  (VP (VBP:[665..672] display)
+                    (NP
+                      (NP (JJ:[674..682] elevated) (JJ:[683..692] catalytic)
+                          (NN:[693..701] activity))
+                      (PP (IN:[702..709] towards)
+                        (NP
+                          (NP (JJ:[710..719] effective)
+                              (NNS:[720..730] substrates))
+                          (PP (IN:[731..734] for)
+                            (NP (NN:[735..741] CYP2E1)))
+                          (PP (JJ:[742..746] such) (IN:[747..749] as)
+                            (NP
+                              (NP (NN:[751..770] dimethylnitrosamine))
+                              (NP (-LRB-:[771..772] -LRB-) (NN:[772..775] DMN)
+                                  (-RRB-:[775..776] -RRB-)))))))
+                    (SBAR-ADV (IN:[777..779] as)
+                      (S
+                        (NP-SBJ-1 (-NONE-:[779..779] *))
+                        (VP (VBN:[780..788] compared)
+                          (NP-1 (-NONE-:[788..788] *))
+                          (PP-CLR (IN:[789..793] with)
+                            (NP (JJ:[794..804] periportal)
+                                (NNS:[805..815] microsomes))))))))))))))
+    (.:[815..816] .)))
+
+;sentence 7 Span:817..983
+;Rats were  treated with pyrazole to induce CYP2E1 and hepatocytes prepared
+;from periportal  or pericentral zones of the livers by the
+;digitonin-collagenase procedure.
+;[841..849]:substance:"pyrazole"
+;[860..866]:cyp450:"CYP2E1"
+;[951..960]:substance:"digitonin"
+;[961..972]:substance:"collagenase"
+(SENT
+  (S
+    (NP-SBJ-2 (NNS:[817..821] Rats))
+    (VP (VBD:[822..826] were)
+      (VP (VBN:[828..835] treated)
+        (NP-2 (-NONE-:[835..835] *))
+        (PP-MNR (IN:[836..840] with)
+          (NP (NN:[841..849] pyrazole)))
+        (S-PRP
+          (NP-SBJ (-NONE-:[849..849] *))
+          (VP (TO:[850..852] to)
+            (VP (VB:[853..859] induce)
+              (NP
+                (NP (NN:[860..866] CYP2E1) (CC:[867..870] and)
+                    (NNS:[871..882] hepatocytes))
+                (VP (VBN:[883..891] prepared)
+                  (NP (-NONE-:[891..891] *))
+                  (PP (IN:[892..896] from)
+                    (NP
+                      (NP
+                        (NP (JJ:[897..907] periportal)
+                          (NML-1 (-NONE-:[907..907] *P*)))
+                        (CC:[909..911] or)
+                        (NP (JJ:[912..923] pericentral)
+                          (NML-1 (NNS:[924..929] zones))))
+                      (PP (IN:[930..932] of)
+                        (NP (DT:[933..936] the) (NNS:[937..943] livers)))))
+                  (PP-MNR (IN:[944..946] by)
+                    (NP (DT:[947..950] the)
+                      (NML (NN:[951..960] digitonin) (HYPH:[960..961] -)
+                           (NN:[961..972] collagenase))
+                      (NN:[973..982] procedure))))))))))
+    (.:[982..983] .)))
+
+;sentence 8 Span:985..1208
+;Microsomes isolated from these hepatocytes had similar total P-450 contents; 
+;however, the microsomes from the pericentral hepatocytes displayed an
+;increased  DMSO binding spectrum suggesting an increased content of CYP2E1.
+;[1046..1051]:cyp450:"P-450"
+;[1144..1148]:substance:"DMSO"
+;[1201..1207]:cyp450:"CYP2E1"
+(SENT
+  (S
+    (S
+      (NP-SBJ
+        (NP (NNS:[985..995] Microsomes))
+        (VP (VBN:[996..1004] isolated)
+          (NP (-NONE-:[1004..1004] *))
+          (PP (IN:[1005..1009] from)
+            (NP (DT:[1010..1015] these) (NNS:[1016..1027] hepatocytes)))))
+      (VP (VBD:[1028..1031] had)
+        (NP (JJ:[1032..1039] similar) (JJ:[1040..1045] total)
+            (NN:[1046..1051] P-450) (NNS:[1052..1060] contents))))
+    (::[1060..1061] ;)
+    (S
+      (ADVP (RB:[1063..1070] however))
+      (,:[1070..1071] ,)
+      (NP-SBJ
+        (NP (DT:[1072..1075] the) (NNS:[1076..1086] microsomes))
+        (PP (IN:[1087..1091] from)
+          (NP (DT:[1092..1095] the) (JJ:[1096..1107] pericentral)
+              (NNS:[1108..1119] hepatocytes))))
+      (VP (VBD:[1120..1129] displayed)
+        (NP (DT:[1130..1132] an) (JJ:[1133..1142] increased)
+            (NN:[1144..1148] DMSO) (NN:[1149..1156] binding)
+            (NN:[1157..1165] spectrum))
+        (S-ADV
+          (NP-SBJ (-NONE-:[1165..1165] *))
+          (VP (VBG:[1166..1176] suggesting)
+            (NP
+              (NP (DT:[1177..1179] an) (JJ:[1180..1189] increased)
+                  (NN:[1190..1197] content))
+              (PP (IN:[1198..1200] of)
+                (NP (NN:[1201..1207] CYP2E1))))))))
+    (.:[1207..1208] .)))
+
+;sentence 9 Span:1209..1399
+;Low Km DMN  demethylase activity (but not high Km activity) as well as the
+;oxidation of  aniline and p-nitrophenol were 2- to 3-fold higher in
+;pericentral compared to  periportal microsomes.
+;[1213..1215]:quantitative-name:"Km"
+;[1216..1232]:substance:"DMN  demethylase"
+;[1256..1258]:quantitative-name:"Km"
+;[1298..1305]:substance:"aniline"
+;[1310..1323]:substance:"p-nitrophenol"
+;[1329..1341]:quantitative-value:"2- to 3-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NML
+          (NML (JJ:[1209..1212] Low) (NN:[1213..1215] Km))
+           (NN:[1216..1219] DMN) (NN:[1221..1232] demethylase))
+        (NN:[1233..1241] activity)
+        (PRN (-LRB-:[1242..1243] -LRB-)
+          (FRAG (CC:[1243..1246] but) (RB:[1247..1250] not)
+            (NP
+              (NML (JJ:[1251..1255] high) (NN:[1256..1258] Km))
+              (NN:[1259..1267] activity)))
+          (-RRB-:[1267..1268] -RRB-)))
+      (CONJP (RB:[1269..1271] as) (RB:[1272..1276] well) (IN:[1277..1279] as))
+      (NP
+        (NP (DT:[1280..1283] the) (NN:[1284..1293] oxidation))
+        (PP (IN:[1294..1296] of)
+          (NP (NN:[1298..1305] aniline) (CC:[1306..1309] and)
+              (NN:[1310..1323] p-nitrophenol)))))
+    (VP (VBD:[1324..1328] were)
+      (ADJP-PRD
+        (QP (CD:[1329..1330] 2) (HYPH:[1330..1331] -) (TO:[1332..1334] to)
+            (CD:[1335..1336] 3) (HYPH:[1336..1337] -) (RB:[1337..1341] fold))
+        (JJR:[1342..1348] higher))
+      (PP-LOC (IN:[1349..1351] in)
+        (NP
+          (NP (JJ:[1352..1363] pericentral))
+          (VP (VBN:[1364..1372] compared)
+            (NP (-NONE-:[1372..1372] *))
+            (PP-CLR (TO:[1373..1375] to)
+              (NP (JJ:[1377..1387] periportal) (NNS:[1388..1398] microsomes)))))))
+    (.:[1398..1399] .)))
+
+;sentence 10 Span:1400..1662
+;The oxidation of DMN by both microsomal preparations, as  well as the
+;increased rates obtained with the pericentral microsomes, was  sensitive to
+;inhibition by carbon monoxide as well as to other CYP2E1 substrates  such as
+;ethanol, pyrazole, or 4-methylpyrazole.
+;[1417..1420]:substance:"DMN"
+;[1560..1575]:substance:"carbon monoxide"
+;[1596..1602]:cyp450:"CYP2E1"
+;[1603..1613]:substance:"substrates"
+;[1623..1630]:substance:"ethanol"
+;[1632..1640]:substance:"pyrazole"
+;[1645..1661]:substance:"4-methylpyrazole"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (DT:[1400..1403] The) (NN:[1404..1413] oxidation))
+        (PP (IN:[1414..1416] of)
+          (NP (NN:[1417..1420] DMN)))
+        (PP (IN:[1421..1423] by)
+          (NP (DT:[1424..1428] both) (JJ:[1429..1439] microsomal)
+              (NNS:[1440..1452] preparations))))
+      (,:[1452..1453] ,)
+      (CONJP (RB:[1454..1456] as) (RB:[1458..1462] well) (IN:[1463..1465] as))
+      (NP
+        (NP (DT:[1466..1469] the) (JJ:[1470..1479] increased)
+            (NNS:[1480..1485] rates))
+        (VP (VBN:[1486..1494] obtained)
+          (NP (-NONE-:[1494..1494] *))
+          (PP (IN:[1495..1499] with)
+            (NP (DT:[1500..1503] the) (JJ:[1504..1515] pericentral)
+                (NNS:[1516..1526] microsomes))))))
+    (,:[1526..1527] ,)
+    (VP (VBD:[1528..1531] was)
+      (ADJP-PRD (JJ:[1533..1542] sensitive)
+        (PP
+          (PP (TO:[1543..1545] to)
+            (NP
+              (NP (NN:[1546..1556] inhibition))
+              (PP (IN:[1557..1559] by)
+                (NP (NN:[1560..1566] carbon) (NN:[1567..1575] monoxide)))))
+          (CONJP (RB:[1576..1578] as) (RB:[1579..1583] well)
+                 (IN:[1584..1586] as))
+          (PP (TO:[1587..1589] to)
+            (NP
+              (NP (JJ:[1590..1595] other) (NN:[1596..1602] CYP2E1)
+                  (NNS:[1603..1613] substrates))
+              (PP (JJ:[1615..1619] such) (IN:[1620..1622] as)
+                (NP (NN:[1623..1630] ethanol) (,:[1630..1631] ,)
+                    (NN:[1632..1640] pyrazole) (,:[1640..1641] ,)
+                    (CC:[1642..1644] or) (NN:[1645..1661] 4-methylpyrazole))))))))
+    (.:[1661..1662] .)))
+
+;sentence 11 Span:1663..1828
+;Anti-CYP2E1 IgG inhibited the  oxidation of DMN by both microsomal
+;preparations 75% to 85% and prevented most  of the increase found with the
+;pericentral microsomes.
+;[1663..1678]:substance:"Anti-CYP2E1 IgG"
+;[1707..1710]:substance:"DMN"
+;[1743..1753]:quantitative-value:"75% to 85%"
+(SENT
+  (S
+    (NP-SBJ
+      (NML (AFX:[1663..1667] Anti) (HYPH:[1667..1668] -)
+           (NN:[1668..1674] CYP2E1))
+      (NN:[1675..1678] IgG))
+    (VP
+      (VP (VBD:[1679..1688] inhibited)
+        (NP
+          (NP (DT:[1689..1692] the) (NN:[1694..1703] oxidation))
+          (PP (IN:[1704..1706] of)
+            (NP (NN:[1707..1710] DMN)))
+          (PP (IN:[1711..1713] by)
+            (NP (DT:[1714..1718] both) (JJ:[1719..1729] microsomal)
+                (NNS:[1730..1742] preparations))))
+        (NP-EXT
+          (NP (CD:[1743..1745] 75) (NN:[1745..1746] %))
+          (PP (TO:[1747..1749] to)
+            (NP (CD:[1750..1752] 85) (NN:[1752..1753] %)))))
+      (CC:[1754..1757] and)
+      (VP (VBD:[1758..1767] prevented)
+        (NP
+          (NP (JJS:[1768..1772] most))
+          (PP (IN:[1774..1776] of)
+            (NP
+              (NP (DT:[1777..1780] the) (NN:[1781..1789] increase))
+              (VP (VBN:[1790..1795] found)
+                (NP (-NONE-:[1795..1795] *))
+                (PP (IN:[1796..1800] with)
+                  (NP (DT:[1801..1804] the) (JJ:[1805..1816] pericentral)
+                      (NNS:[1817..1827] microsomes)))))))))
+    (.:[1827..1828] .)))
+
+;sentence 12 Span:1829..1996
+;Oxidation of aniline and  p-nitrophenol was elevated in pericentral
+;hepatocytes compared with periportal  hepatocytes to the same extent as in
+;the isolated microsomes.
+;[1842..1849]:substance:"aniline"
+;[1855..1868]:substance:"p-nitrophenol"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1829..1838] Oxidation))
+      (PP (IN:[1839..1841] of)
+        (NP (NN:[1842..1849] aniline) (CC:[1850..1853] and)
+            (NN:[1855..1868] p-nitrophenol))))
+    (VP (VBD:[1869..1872] was)
+      (VP (JJ:[1873..1881] elevated)
+        (NP-1 (-NONE-:[1881..1881] *))
+        (PP-LOC (IN:[1882..1884] in)
+          (NP
+            (NP (JJ:[1885..1896] pericentral) (NNS:[1897..1908] hepatocytes))
+            (VP (VBN:[1909..1917] compared)
+              (NP (-NONE-:[1917..1917] *))
+              (PP-CLR (IN:[1918..1922] with)
+                (NP (JJ:[1923..1933] periportal) (NNS:[1935..1946] hepatocytes))))))
+        (PP (TO:[1947..1949] to)
+          (NP
+            (NP (DT:[1950..1953] the) (JJ:[1954..1958] same)
+                (NN:[1959..1965] extent))
+            (PP (IN:[1966..1968] as)
+              (PP-LOC (IN:[1969..1971] in)
+                (NP (DT:[1972..1975] the) (JJ:[1976..1984] isolated)
+                    (NNS:[1985..1995] microsomes))))))))
+    (.:[1995..1996] .)))
+
+;section 13 Span:1996..2030
+;(ABSTRACT TRUNCATED  AT 250 WORDS)
+(SEC
+  (FRAG (-LRB-:[1996..1997] -LRB-) (NN:[1997..2005] ABSTRACT)
+        (VBN:[2006..2015] TRUNCATED) (IN:[2017..2019] AT) (CD:[2020..2023] 250)
+        (NNS:[2024..2029] WORDS) (-RRB-:[2029..2030] -RRB-)))
+
+;section 14 Span:2034..2078
+;PMID: 1686370 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2034..2038] PMID) (::[2038..2039] :) (CD:[2040..2047] 1686370)
+        (NN:[2048..2049] -LSB-) (NNP:[2049..2055] PubMed) (::[2056..2057] -)
+        (NN:[2058..2065] indexed) (IN:[2066..2069] for)
+        (NNP:[2070..2078] MEDLINE-RSB-)))

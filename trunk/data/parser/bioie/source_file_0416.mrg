@@ -1,0 +1,317 @@
+;PMID: 2098522
+;source_file_911.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..33] = [t:0..33]
+;1)sentence:[e:39..91] = [t:39..91]
+;2)section:[e:95..167] = [t:95..166]
+;3)section:[e:171..259] = [t:171..259]
+;4)sentence:[e:263..430] = [t:263..430]
+;5)sentence:[e:431..687] = [t:431..687]
+;6)sentence:[e:688..890] = [t:688..890]
+;7)sentence:[e:892..1080] = [t:892..1080]
+;8)sentence:[e:1081..1246] = [t:1081..1246]
+;9)section:[e:1250..1294] = [t:1250..1293]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:95..167][t:95..166]
+;ERROR_Section end mismatch[e:1250..1294][t:1250..1293]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[166..167] .
+;ERROR_Token in entity file but not tree[1293..1294] ]
+
+;section 0 Span:0..33
+;J Enzyme Inhib. 1990;4(2):159-67.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Enzyme) (NNP:[9..14] Inhib) (.:[14..15] .)
+        (CD:[16..20] 1990) (::[20..21] ;) (CD:[21..22] 4) (-LRB-:[22..23] -LRB-)
+        (CD:[23..24] 2) (-RRB-:[24..25] -RRB-) (::[25..26] :) (CD:[26..29] 159)
+        (::[29..30] -) (CD:[30..32] 67) (.:[32..33] .)))
+
+;sentence 1 Span:39..91
+;Endocrine and antitumoral effects of R76713 in rats.
+;[76..82]:substance:"R76713"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NN:[39..48] Endocrine)
+        (NML-1 (-NONE-:[48..48] *P*)))
+      (CC:[49..52] and)
+      (NP (JJ:[53..64] antitumoral)
+        (NML-1 (NNS:[65..72] effects))))
+    (PP (IN:[73..75] of)
+      (NP (NN:[76..82] R76713)))
+    (PP-LOC (IN:[83..85] in)
+      (NP (NNS:[86..90] rats)))
+    (.:[90..91] .)))
+
+;section 2 Span:95..166
+;De Coster R, Van Ginckel R, Wouters W, Goeminne N, Vanherck W, Byloos M
+(SEC
+  (FRAG (NNP:[95..97] De) (NNP:[98..104] Coster) (NNP:[105..106] R)
+        (,:[106..107] ,) (NNP:[108..111] Van) (NNP:[112..119] Ginckel)
+        (NNP:[120..121] R) (,:[121..122] ,) (NNP:[123..130] Wouters)
+        (NNP:[131..132] W) (,:[132..133] ,) (NNP:[134..142] Goeminne)
+        (NNP:[143..144] N) (,:[144..145] ,) (NNP:[146..154] Vanherck)
+        (NNP:[155..156] W) (,:[156..157] ,) (NNP:[158..164] Byloos)
+        (NNP:[165..166] M)))
+
+(ORPH .)
+
+;section 3 Span:171..259
+;Department of Endocrinology and Oncology, Janssen Research Foundation,
+;Beerse,  Belgium.
+(SEC
+  (FRAG (NNP:[171..181] Department) (IN:[182..184] of)
+        (NNP:[185..198] Endocrinology) (CC:[199..202] and)
+        (NNP:[203..211] Oncology) (,:[211..212] ,) (NNP:[213..220] Janssen)
+        (NNP:[221..229] Research) (NNP:[230..240] Foundation) (,:[240..241] ,)
+        (NNP:[242..248] Beerse) (,:[248..249] ,) (NNP:[251..258] Belgium)
+        (.:[258..259] .)))
+;ERROR_Orphan Text from Tree File[166..171] .
+
+;sentence 4 Span:263..430
+;Some effects of daily oral administration of a new non-steroidal aromatase 
+;inhibitor on the pituitary-gonadal and adrenal functions were investigated in
+; female rats.
+;[328..337]:cyp450:"aromatase"
+;[339..348]:substance:"inhibitor"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (DT:[263..267] Some) (NNS:[268..275] effects))
+      (PP (IN:[276..278] of)
+        (NP
+          (NP (JJ:[279..284] daily) (JJ:[285..289] oral)
+              (NN:[290..304] administration))
+          (PP (IN:[305..307] of)
+            (NP (DT:[308..309] a) (JJ:[310..313] new)
+              (ADJP (AFX:[314..317] non) (HYPH:[317..318] -)
+                    (JJ:[318..327] steroidal))
+              (NN:[328..337] aromatase) (NN:[339..348] inhibitor)))))
+      (PP (IN:[349..351] on)
+        (NP (DT:[352..355] the)
+          (NML
+            (NML
+              (ADJP (JJ:[356..365] pituitary) (HYPH:[365..366] -)
+                    (JJ:[366..373] gonadal))
+              (NML-1 (-NONE-:[373..373] *P*)))
+            (CC:[374..377] and)
+            (NML (JJ:[378..385] adrenal)
+              (NML-1 (NNS:[386..395] functions)))))))
+    (VP (VBD:[396..400] were)
+      (VP (VBN:[401..413] investigated)
+        (NP-2 (-NONE-:[413..413] *))
+        (PP-LOC (IN:[414..416] in)
+          (NP (JJ:[418..424] female) (NNS:[425..429] rats)))))
+    (.:[429..430] .)))
+
+;sentence 5 Span:431..687
+;At doses of 1 mg/kg twice daily or higher, R 76713 lowered plasma  estradiol
+;levels to the range measured after ovariectomy Plasma progesterone  levels
+;and uterine weights decreased whilst LH levels increased but to a lesser 
+;extent than after ovariectomy.
+;[443..444]:quantitative-value:"1"
+;[445..450]:quantitative-units:"mg/kg"
+;[474..481]:substance:"R 76713"
+;[498..507]:substance:"estradiol"
+;[562..574]:substance:"progesterone"
+;[620..622]:substance:"LH"
+(SENT
+  (S
+    (PP (IN:[431..433] At)
+      (NP
+        (NP (NNS:[434..439] doses))
+        (PP (IN:[440..442] of)
+          (UCP
+            (NP
+              (NP (CD:[443..444] 1) (NN:[445..447] mg))
+              (PP (SYM:[447..448] /)
+                (NP (NN:[448..450] kg)))
+              (ADVP-TMP (RB:[451..456] twice) (JJ:[457..462] daily)))
+            (CC:[463..465] or)
+            (ADJP (JJR:[466..472] higher))))))
+    (,:[472..473] ,)
+    (NP-SBJ (NN:[474..475] R) (CD:[476..481] 76713))
+    (VP (VBD:[482..489] lowered)
+      (NP (NN:[490..496] plasma) (NN:[498..507] estradiol)
+          (NNS:[508..514] levels))
+      (PP (TO:[515..517] to)
+        (VP
+          (NP (DT:[518..521] the) (NN:[522..527] range))
+          (VP (VBN:[528..536] measured)
+            (NP (-NONE-:[536..536] *))
+            (PP-TMP (IN:[537..542] after)
+              (NP (NN:[543..554] ovariectomy))))))))
+  (S
+    (NP-SBJ
+      (NP (NN:[555..561] Plasma) (NN:[562..574] progesterone)
+          (NNS:[576..582] levels))
+      (CC:[583..586] and)
+      (NP (JJ:[587..594] uterine) (NNS:[595..602] weights)))
+    (VP (VBD:[603..612] decreased)
+      (SBAR-ADV (IN:[613..619] whilst)
+        (S
+          (NP-SBJ (NN:[620..622] LH) (NNS:[623..629] levels))
+          (VP (VBD:[630..639] increased)
+            (NAC (CC:[640..643] but)
+              (PP (TO:[644..646] to)
+                (NP
+                  (NP (DT:[647..648] a) (JJR:[649..655] lesser)
+                      (NN:[657..663] extent))
+                  (PP (IN:[664..668] than)
+                    (PP-TMP (IN:[669..674] after)
+                      (NP (NN:[675..686] ovariectomy)))))))))))
+    (.:[686..687] .)))
+;ERROR_Sentence has multiple Children (Sentence Error)[431..687]::S:S:
+
+;sentence 6 Span:688..890
+;The other hormonal data show that long-term  administration of R 76 713 does
+;not modify the gluco- and mineralocorticoid  hormone levels even at the
+;highest dose studied (20 mg/kg, 4 h after treatment).
+;[751..759]:substance:"R 76 713"
+;[780..786]...[799..817]:substance:"gluco-"..."corticoid  hormone"
+;[791..817]:substance:"mineralocorticoid  hormone"
+;[859..861]:quantitative-value:"20"
+;[862..867]:quantitative-units:"mg/kg"
+;[869..870]:quantitative-value:"4"
+;[871..872]:quantitative-units:"h"
+(SENT
+  (S
+    (NP-SBJ (DT:[688..691] The) (JJ:[692..697] other) (JJ:[698..706] hormonal)
+            (NNS:[707..711] data))
+    (VP (VBP:[712..716] show)
+      (SBAR (IN:[717..721] that)
+        (S
+          (NP-SBJ
+            (NP (JJ:[722..731] long-term) (NN:[733..747] administration))
+            (PP (IN:[748..750] of)
+              (NP (NN:[751..752] R) (CD:[753..755] 76) (CD:[756..759] 713))))
+          (VP (VBZ:[760..764] does) (RB:[765..768] not)
+            (VP (VB:[769..775] modify)
+              (NP (DT:[776..779] the)
+                (NML
+                  (NML
+                    (NML (AFX:[780..785] gluco) (HYPH:[785..786] -)
+                      (NML-1 (-NONE-:[786..786] *P*)))
+                    (NML-2 (-NONE-:[786..786] *P*)))
+                  (CC:[787..790] and)
+                  (NML
+                    (NML (AFX:[791..799] mineralo)
+                      (NML-1 (JJ:[799..808] corticoid)))
+                    (NML-2 (NN:[810..817] hormone) (NNS:[818..824] levels)))))
+              (PP
+                (ADVP (RB:[825..829] even))
+                (IN:[830..832] at)
+                (NP
+                  (NP (DT:[833..836] the) (JJS:[837..844] highest)
+                      (NN:[845..849] dose))
+                  (VP (VBN:[850..857] studied)
+                    (NP (-NONE-:[857..857] *)))
+                  (PRN (-LRB-:[858..859] -LRB-)
+                    (FRAG
+                      (NP
+                        (NP (CD:[859..861] 20) (NN:[862..864] mg))
+                        (PP (SYM:[864..865] /)
+                          (NP (NN:[865..867] kg))))
+                      (,:[867..868] ,)
+                      (PP-TMP
+                        (NP-ADV (CD:[869..870] 4) (NN:[871..872] h))
+                        (IN:[873..878] after)
+                        (NP (NN:[879..888] treatment))))
+                    (-RRB-:[888..889] -RRB-)))))))))
+    (.:[889..890] .)))
+
+;sentence 7 Span:892..1080
+;Furthermore, both ovariectomy and R 76 713 treatment (1 and 5 mg/kg twice a
+;day)  induced almost complete regression of
+;9,12-dimethyl-1,2-benzanthracene-induced  mammary carcinoma in rats.
+;[926..934]:substance:"R 76 713"
+;[946..947]:quantitative-value:"1"
+;[952..953]:quantitative-value:"5"
+;[954..959]:quantitative-units:"mg/kg"
+;[1012..1044]:substance:"9,12-dimethyl-1,2-benzanthracene"
+(SENT
+  (S
+    (ADVP (RB:[892..903] Furthermore))
+    (,:[903..904] ,)
+    (NP-SBJ (CC:[905..909] both)
+      (NP (NN:[910..921] ovariectomy)
+        (NML-2 (-NONE-:[921..921] *P*)))
+      (CC:[922..925] and)
+      (NP
+        (NML (NN:[926..927] R) (CD:[928..930] 76) (CD:[931..934] 713))
+        (NML-2 (NN:[935..944] treatment)))
+      (PRN (-LRB-:[945..946] -LRB-)
+        (FRAG
+          (NP
+            (NP
+              (NP (CD:[946..947] 1)
+                (NML-1 (-NONE-:[947..947] *P*)))
+              (CC:[948..951] and)
+              (NP (CD:[952..953] 5)
+                (NML-1 (NN:[954..956] mg))))
+            (PP (SYM:[956..957] /)
+              (NP (NN:[957..959] kg))))
+          (ADVP-TMP (RB:[960..965] twice)
+            (NP (IN:[966..967] a) (NN:[968..971] day))))
+        (-RRB-:[971..972] -RRB-)))
+    (VP (VBD:[974..981] induced)
+      (NP
+        (NP
+          (ADJP (RB:[982..988] almost) (JJ:[989..997] complete))
+          (NN:[998..1008] regression))
+        (PP (IN:[1009..1011] of)
+          (NP
+            (ADJP (NN:[1012..1044] 9,12-dimethyl-1,2-benzanthracene)
+                  (HYPH:[1044..1045] -) (VBN:[1045..1052] induced))
+            (JJ:[1054..1061] mammary) (NN:[1062..1071] carcinoma))))
+      (PP-LOC (IN:[1072..1074] in)
+        (NP (NNS:[1075..1079] rats))))
+    (.:[1079..1080] .)))
+
+;sentence 8 Span:1081..1246
+;The appearance of new tumors during the treatment  period was completely
+;inhibited by R 76 713 whilst multiplicity of the remaining  tumors was
+;dramatically reduced.
+;[1167..1175]:substance:"R 76 713"
+(SENT
+  (S
+    (NP-SBJ-3
+      (NP (DT:[1081..1084] The) (NN:[1085..1095] appearance))
+      (PP (IN:[1096..1098] of)
+        (NP (JJ:[1099..1102] new) (NNS:[1103..1109] tumors)))
+      (PP-TMP (IN:[1110..1116] during)
+        (NP (DT:[1117..1120] the) (NN:[1121..1130] treatment)
+            (NN:[1132..1138] period))))
+    (VP (VBD:[1139..1142] was)
+      (ADVP (RB:[1143..1153] completely))
+      (VP (VBN:[1154..1163] inhibited)
+        (NP-3 (-NONE-:[1163..1163] *))
+        (PP (IN:[1164..1166] by)
+          (NP-LGS (NN:[1167..1168] R) (CD:[1169..1171] 76) (CD:[1172..1175] 713)))
+        (SBAR-ADV
+          (WHADVP-2 (IN:[1176..1182] whilst))
+          (S
+            (NP-SBJ-1
+              (NP (NN:[1183..1195] multiplicity))
+              (PP (IN:[1196..1198] of)
+                (NP (DT:[1199..1202] the) (VBG:[1203..1212] remaining)
+                    (NN:[1214..1220] tumors))))
+            (VP (VBD:[1221..1224] was)
+              (ADVP (RB:[1225..1237] dramatically))
+              (VP (VBN:[1238..1245] reduced)
+                (NP-1 (-NONE-:[1245..1245] *))
+                (ADVP-TMP-2 (-NONE-:[1245..1245] *T*))))))))
+    (.:[1245..1246] .)))
+
+;section 9 Span:1250..1293
+;PMID: 2098522 [PubMed - indexed for MEDLINE
+(SEC
+  (FRAG (NNP:[1250..1254] PMID) (::[1254..1255] :) (CD:[1256..1263] 2098522)
+        (-LRB-:[1264..1265] -LSB-) (NNP:[1265..1271] PubMed) (::[1272..1273] -)
+        (VBN:[1274..1281] indexed) (IN:[1282..1285] for)
+        (NNP:[1286..1293] MEDLINE)))
+;ERROR_Orphan Text from EOF Tree File[1293..EOF] ]
+
+(ORPH -RSB-)

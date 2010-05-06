@@ -1,0 +1,312 @@
+;PMID: 789067
+;source_file_1938.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..43] = [t:0..43]
+;1)sentence:[e:49..127] = [t:49..127]
+;2)section:[e:131..143] = [t:131..143]
+;3)sentence:[e:147..385] = [t:147..385]
+;4)sentence:[e:387..446] = [t:387..446]
+;5)sentence:[e:447..703] = [t:447..703]
+;6)sentence:[e:705..852] = [t:705..852]
+;7)sentence:[e:853..943] = [t:853..943]
+;8)sentence:[e:945..1006] = [t:945..1006]
+;9)sentence:[e:1007..1211] = [t:1007..1211]
+;10)section:[e:1215..1233] = [t:1215..1233]
+;11)section:[e:1239..1245] = [t:1239..1245]
+;12)section:[e:1249..1292] = [t:1249..1292]
+
+;section 0 Span:0..43
+;Environ Health Perspect. 1976 Apr;14:29-37.
+(SEC
+  (FRAG (NNP:[0..7] Environ) (NNP:[8..14] Health) (NNP:[15..23] Perspect)
+        (.:[23..24] .) (CD:[25..29] 1976) (CC:[30..36] Apr;14)
+        (CD:[36..40] :29-) (CD:[40..42] 37) (.:[42..43] .)))
+
+;sentence 1 Span:49..127
+;Methylenedioxyphenyl insecticide synergists as potential human health
+;hazards.
+;[49..81]:substance:"Methylenedioxyphenyl insecticide"
+;[82..92]:substance:"synergists"
+(SENT
+  (NP-HLN
+    (NP
+       (NN:[49..69] Methylenedioxyphenyl) (NN:[70..81] insecticide)
+      (NNS:[82..92] synergists))
+    (PP (IN:[93..95] as)
+      (NP (JJ:[96..105] potential) (JJ:[106..111] human) (NN:[112..118] health)
+          (NNS:[119..126] hazards)))
+    (.:[126..127] .)))
+
+;section 2 Span:131..143
+;Franklin MR.
+(SEC
+  (FRAG (NNP:[131..139] Franklin) (NNP:[140..143] MR.)))
+
+;sentence 3 Span:147..385
+;The effects of methylenedioxyphenyl insecticide synergists on human health 
+;arise, not from their intrinsic toxicity which is relatively low, but from
+;their  dual effect on the oxidative detoxication or intoxication processes of
+;the body.
+;[162..194]:substance:"methylenedioxyphenyl insecticide"
+;[195..205]:substance:"synergists"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[147..150] The) (NNS:[151..158] effects))
+      (PP (IN:[159..161] of)
+        (NP
+           (NN:[162..182] methylenedioxyphenyl) (NN:[183..194] insecticide)
+          (NNS:[195..205] synergists)))
+      (PP (IN:[206..208] on)
+        (NP (JJ:[209..214] human) (NN:[215..221] health))))
+    (VP (VBP:[223..228] arise) (,:[228..229] ,)
+      (PP (RB:[230..233] not)
+        (PP (IN:[234..238] from)
+          (NP
+            (NP (PRP$:[239..244] their) (JJ:[245..254] intrinsic)
+                (NN:[255..263] toxicity))
+            (SBAR
+              (WHNP-2 (WDT:[264..269] which))
+              (S
+                (NP-SBJ-2 (-NONE-:[269..269] *T*))
+                (VP (VBZ:[270..272] is)
+                  (ADJP-PRD (RB:[273..283] relatively) (JJ:[284..287] low)))))))
+        (,:[287..288] ,) (CC:[289..292] but)
+        (PP (IN:[293..297] from)
+          (NP
+            (NP (PRP$:[298..303] their) (JJ:[305..309] dual)
+                (NN:[310..316] effect))
+            (PP (IN:[317..319] on)
+              (NP
+                (NP (DT:[320..323] the)
+                  (NML
+                    (NML
+                      (ADJP-3 (JJ:[324..333] oxidative))
+                      (NN:[334..346] detoxication)
+                      (NML-1 (-NONE-:[346..346] *P*)))
+                    (CC:[347..349] or)
+                    (NML
+                      (ADJP-3 (-NONE-:[349..349] *P*))
+                      (NN:[350..362] intoxication)
+                      (NML-1 (NNS:[363..372] processes)))))
+                (PP (IN:[373..375] of)
+                  (NP (DT:[376..379] the) (NN:[380..384] body)))))))))
+    (.:[384..385] .)))
+
+;sentence 4 Span:387..446
+;They are able to inhibit these reactions by two mechanisms.
+(SENT
+  (S
+    (NP-SBJ (PRP:[387..391] They))
+    (VP (VBP:[392..395] are)
+      (ADJP-PRD (JJ:[396..400] able)
+        (S
+          (NP-SBJ (-NONE-:[400..400] *))
+          (VP (TO:[401..403] to)
+            (VP (VB:[404..411] inhibit)
+              (NP (DT:[412..417] these) (NNS:[418..427] reactions))
+              (PP-MNR (IN:[428..430] by)
+                (NP (CD:[431..434] two) (NNS:[435..445] mechanisms))))))))
+    (.:[445..446] .)))
+
+;sentence 5 Span:447..703
+;They are substrates  for mixed function oxidation and, thus, compete with
+;other xenobiotics for  available enzyme, and an intermediate in their
+;metabolism is able to bind with  cytochrome P-450 to form an inactive complex
+;which absorbs maximally at 455 nm.
+;[456..466]:substance:"substrates"
+;[527..538]:substance:"xenobiotics"
+;[554..560]:substance:"enzyme"
+;[569..581]:substance:"intermediate"
+;[624..640]:cyp450:"cytochrome P-450"
+;[661..668]:substance:"complex"
+;[696..699]:quantitative-value:"455"
+;[700..702]:quantitative-units:"nm"
+(SENT
+  (S
+    (S
+      (NP-SBJ (PRP:[447..451] They))
+      (VP
+        (VP (VBP:[452..455] are)
+          (NP-PRD
+            (NP (NNS:[456..466] substrates))
+            (PP (IN:[468..471] for)
+              (NP
+                (NML (VBN:[472..477] mixed) (NN:[478..486] function))
+                (NN:[487..496] oxidation)))))
+        (CC:[497..500] and) (,:[500..501] ,)
+        (VP
+          (ADVP (RB:[502..506] thus))
+          (,:[506..507] ,) (VBP:[508..515] compete)
+          (PP (IN:[516..520] with)
+            (NP (JJ:[521..526] other) (NNS:[527..538] xenobiotics)))
+          (PP (IN:[539..542] for)
+            (NP (JJ:[544..553] available) (NN:[554..560] enzyme))))))
+    (,:[560..561] ,) (CC:[562..565] and)
+    (S
+      (NP-SBJ
+        (NP (DT:[566..568] an) (NN:[569..581] intermediate))
+        (PP (IN:[582..584] in)
+          (NP (PRP$:[585..590] their) (NN:[591..601] metabolism))))
+      (VP (VBZ:[602..604] is)
+        (ADJP-PRD (JJ:[605..609] able)
+          (S
+            (NP-SBJ (-NONE-:[609..609] *))
+            (VP (TO:[610..612] to)
+              (VP (VB:[613..617] bind)
+                (PP-CLR (IN:[618..622] with)
+                  (NP (NN:[624..634] cytochrome) (NN:[635..640] P-450)))
+                (S-PRP
+                  (NP-SBJ (-NONE-:[640..640] *))
+                  (VP (TO:[641..643] to)
+                    (VP (VB:[644..648] form)
+                      (NP
+                        (NP (DT:[649..651] an) (JJ:[652..660] inactive)
+                            (NN:[661..668] complex))
+                        (SBAR
+                          (WHNP-1 (WDT:[669..674] which))
+                          (S
+                            (NP-SBJ-1 (-NONE-:[674..674] *T*))
+                            (VP (VBZ:[675..682] absorbs)
+                              (ADVP (RB:[683..692] maximally))
+                              (PP (IN:[693..695] at)
+                                (NP (CD:[696..699] 455) (NN:[700..702] nm))))))))))))))))
+    (.:[702..703] .)))
+
+;sentence 6 Span:705..852
+;In addition, they are able to activate xenobiotic metabolism by induction
+;(the  increased synthesis and retention) of microsomal oxidative enzymes.
+;[744..754]:substance:"xenobiotic"
+;[844..851]:substance:"enzymes"
+(SENT
+  (S
+    (PP (IN:[705..707] In)
+      (NP (NN:[708..716] addition)))
+    (,:[716..717] ,)
+    (NP-SBJ (PRP:[718..722] they))
+    (VP (VBP:[723..726] are)
+      (ADJP-PRD (JJ:[727..731] able)
+        (S
+          (NP-SBJ (-NONE-:[731..731] *))
+          (VP (TO:[732..734] to)
+            (VP (VB:[735..743] activate)
+              (NP (JJ:[744..754] xenobiotic) (NN:[755..765] metabolism))
+              (PP-MNR (IN:[766..768] by)
+                (NP
+                  (NP
+                    (NP (NN:[769..778] induction))
+                    (PRN (-LRB-:[779..780] -LRB-)
+                      (NP (DT:[780..783] the)
+                        (NML
+                          (NML
+                            (ADJP-1 (VBN:[785..794] increased))
+                            (NN:[795..804] synthesis))
+                          (CC:[805..808] and)
+                          (NML
+                            (ADJP-1 (-NONE-:[808..808] *P*))
+                            (NN:[809..818] retention))))
+                      (-RRB-:[818..819] -RRB-)))
+                  (PP (IN:[820..822] of)
+                    (NP (JJ:[823..833] microsomal) (JJ:[834..843] oxidative)
+                        (NNS:[844..851] enzymes))))))))))
+    (.:[851..852] .)))
+
+;sentence 7 Span:853..943
+;Evidence for  these effects is presented, including spectroscopic and enzyme
+;kinetic data.
+;[923..929]:substance:"enzyme"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (NN:[853..861] Evidence))
+      (PP (IN:[862..865] for)
+        (NP (DT:[867..872] these) (NNS:[873..880] effects))))
+    (VP (VBZ:[881..883] is)
+      (VP (VBN:[884..893] presented)
+        (NP-2 (-NONE-:[893..893] *))
+        (,:[893..894] ,)
+        (PP (VBG:[895..904] including)
+          (NP
+            (NP (JJ:[905..918] spectroscopic)
+              (NML-1 (-NONE-:[918..918] *P*)))
+            (CC:[919..922] and)
+            (NP (NN:[923..929] enzyme) (JJ:[930..937] kinetic)
+              (NML-1 (NN:[938..942] data)))))))
+    (.:[942..943] .)))
+
+;sentence 8 Span:945..1006
+;Correlations with existing in vivo observations are outlined.
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NNS:[945..957] Correlations))
+      (PP (IN:[958..962] with)
+        (NP (VBG:[963..971] existing)
+          (ADJP (FW:[972..974] in) (FW:[975..979] vivo))
+          (NNS:[980..992] observations))))
+    (VP (VBP:[993..996] are)
+      (VP (VBN:[997..1005] outlined)
+        (NP-1 (-NONE-:[1005..1005] *))))
+    (.:[1005..1006] .)))
+
+;sentence 9 Span:1007..1211
+;The inhibition and  induction of cytochrome P-450, the central enzyme in the
+;metabolism of  xenobiotics, thus provides the focus for consideration of
+;methylenedioxyphenyl  synergists as potential hazards.
+;[1040..1056]:cyp450:"cytochrome P-450"
+;[1070..1076]:cyp450:"enzyme"
+;[1099..1110]:substance:"xenobiotics"
+;[1157..1177]:substance:"methylenedioxyphenyl"
+;[1179..1189]:substance:"synergists"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1007..1010] The) (NN:[1011..1021] inhibition)
+          (CC:[1022..1025] and) (NN:[1027..1036] induction))
+      (PP (IN:[1037..1039] of)
+        (NP
+          (NP (NN:[1040..1050] cytochrome) (NN:[1051..1056] P-450))
+          (,:[1056..1057] ,)
+          (NP
+            (NP (DT:[1058..1061] the) (JJ:[1062..1069] central)
+                (NN:[1070..1076] enzyme))
+            (PP (IN:[1077..1079] in)
+              (NP
+                (NP (DT:[1080..1083] the) (NN:[1084..1094] metabolism))
+                (PP (IN:[1095..1097] of)
+                  (NP (NNS:[1099..1110] xenobiotics)))))))))
+    (,:[1110..1111] ,)
+    (ADVP (RB:[1112..1116] thus))
+    (VP (VBZ:[1117..1125] provides)
+      (NP
+        (NP (DT:[1126..1129] the) (NN:[1130..1135] focus))
+        (PP (IN:[1136..1139] for)
+          (NP
+            (NP (NN:[1140..1153] consideration))
+            (PP (IN:[1154..1156] of)
+              (NP (NN:[1157..1177] methylenedioxyphenyl)
+                  (NNS:[1179..1189] synergists)))
+            (PP (IN:[1190..1192] as)
+              (NP (JJ:[1193..1202] potential) (NNS:[1203..1210] hazards)))))))
+    (.:[1210..1211] .)))
+
+;section 10 Span:1215..1233
+;Publication Types:
+(SEC
+  (FRAG (NNP:[1215..1226] Publication) (NNP:[1227..1232] Types)
+        (::[1232..1233] :)))
+
+;section 11 Span:1239..1245
+;Review
+(SEC
+  (FRAG (NNP:[1239..1245] Review)))
+
+;section 12 Span:1249..1292
+;PMID: 789067 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1249..1253] PMID) (::[1253..1254] :) (CD:[1255..1261] 789067)
+        (NN:[1262..1263] -LSB-) (NNP:[1263..1269] PubMed) (::[1270..1271] -)
+        (NN:[1272..1279] indexed) (IN:[1280..1283] for)
+        (NNP:[1284..1292] MEDLINE-RSB-)))

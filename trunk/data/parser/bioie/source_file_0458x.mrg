@@ -1,0 +1,560 @@
+;PMID: 2564452
+;source_file_802.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..30] = [t:0..30]
+;1)sentence:[e:35..142] = [t:35..142]
+;2)section:[e:146..247] = [t:146..247]
+;3)section:[e:251..305] = [t:251..305]
+;4)sentence:[e:309..477] = [t:309..477]
+;5)sentence:[e:478..588] = [t:478..588]
+;6)sentence:[e:589..701] = [t:589..701]
+;7)sentence:[e:702..982] = [t:702..982]
+;8)sentence:[e:983..1074] = [t:983..1074]
+;9)sentence:[e:1075..1363] = [t:1075..1363]
+;10)sentence:[e:1364..1571] = [t:1364..1571]
+;11)sentence:[e:1572..1756] = [t:1572..1756]
+;12)sentence:[e:1757..1842] = [t:1757..1842]
+;13)sentence:[e:1843..1941] = [t:1843..1941]
+;14)sentence:[e:1942..2139] = [t:1942..2139]
+;15)sentence:[e:2140..2279] = [t:2140..2279]
+;16)section:[e:2283..2327] = [t:2283..2327]
+
+;section 0 Span:0..30
+;Leukemia  1989 Apr;3(4):247-56
+(SEC
+  (FRAG (IN:[0..8] Leukemia) (CD:[10..14] 1989) (.:[15..21] Apr;3-LRB-)
+        (CD:[21..23] 4-RRB-) (CD:[23..27] :247) (::[27..28] -) (CD:[28..30] 56)))
+
+;sentence 1 Span:35..142
+;Acute myeloid leukemia: analysis of ras gene mutations and clonality defined
+;by  polymorphic X-linked loci.
+;[35..57]:malignancy:"Acute myeloid leukemia"
+;[71..74]:gene-rna:"ras"
+(SENT
+  (NP-HLN
+    (NP (JJ:[35..40] Acute) (JJ:[41..48] myeloid) (NN:[49..57] leukemia))
+    (::[57..58] :)
+    (NP
+      (NP (NN:[59..67] analysis))
+      (PP (IN:[68..70] of)
+        (NP
+          (NP
+            (NP (NN:[71..74] ras) (NN:[75..79] gene) (NNS:[80..89] mutations))
+            (CC:[90..93] and)
+            (NP (NN:[94..103] clonality)))
+          (VP (VBN:[104..111] defined)
+            (NP (-NONE-:[111..111] *))
+            (PP (IN:[112..114] by)
+              (NP-LGS (JJ:[116..127] polymorphic)
+                (ADJP (NN:[128..129] X) (HYPH:[129..130] -)
+                      (VBD:[130..136] linked))
+                (NNS:[137..141] loci)))))))
+    (.:[141..142] .)))
+
+;section 2 Span:146..247
+;Bartram CR, Ludwig WD, Hiddemann W, Lyons J, Buschle M, Ritter J, Harbott J, 
+;Frohlich A, Janssen JW.
+(SEC
+  (FRAG (NNP:[146..153] Bartram) (NNP:[154..156] CR) (,:[156..157] ,)
+        (NNP:[158..164] Ludwig) (NNP:[165..167] WD) (,:[167..168] ,)
+        (NNP:[169..178] Hiddemann) (NNP:[179..180] W) (,:[180..181] ,)
+        (NNP:[182..187] Lyons) (NNP:[188..190] J,) (NNP:[191..198] Buschle)
+        (NNP:[199..201] M,) (NNP:[202..208] Ritter) (NNP:[209..211] J,)
+        (NNP:[212..219] Harbott) (NNP:[220..222] J,) (NNP:[224..232] Frohlich)
+        (NNP:[233..234] A) (,:[234..235] ,) (NNP:[236..243] Janssen)
+        (NNP:[244..247] JW.)))
+
+;section 3 Span:251..305
+;Department of Pediatrics II, University of Ulm, F.R.G.
+(SEC
+  (FRAG (NNP:[251..261] Department) (IN:[262..264] of)
+        (NNP:[265..275] Pediatrics) (NNP:[276..278] II) (,:[278..279] ,)
+        (NNP:[280..290] University) (IN:[291..293] of) (NNP:[294..297] Ulm)
+        (,:[297..298] ,) (NNP:[299..305] F.R.G.)))
+
+;sentence 4 Span:309..477
+;In vitro DNA amplification and synthetic oligonucleotide hybridization was
+;used  to analyze 57 acute myelocytic leukemias (AML) for the presence of ras
+;gene  mutations.
+;[404..430]:malignancy:"acute myelocytic leukemias"
+;[432..435]:malignancy:"AML"
+;[457..460]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (ADJP (FW:[309..311] In) (FW:[312..317] vitro))
+        (NN:[318..321] DNA) (NN:[322..335] amplification))
+      (CC:[336..339] and)
+      (NP
+        (NML (JJ:[340..349] synthetic) (NN:[350..365] oligonucleotide))
+        (NN:[366..379] hybridization)))
+    (VP (VBD:[380..383] was)
+      (VP (VBN:[384..388] used)
+        (NP-1 (-NONE-:[388..388] *))
+        (S-PRP
+          (NP-SBJ (-NONE-:[388..388] *))
+          (VP (TO:[390..392] to)
+            (VP (VB:[393..400] analyze)
+              (NP (CD:[401..403] 57)
+                (NML
+                  (NML (JJ:[404..409] acute) (JJ:[410..420] myelocytic)
+                       (NNS:[421..430] leukemias))
+                  (NML (-LRB-:[431..432] -LRB-) (NN:[432..435] AML)
+                       (-RRB-:[435..436] -RRB-))))
+              (PP (IN:[437..440] for)
+                (NP
+                  (NP (DT:[441..444] the) (NN:[445..453] presence))
+                  (PP (IN:[454..456] of)
+                    (NP (NN:[457..460] ras) (NN:[461..465] gene)
+                        (NNS:[467..476] mutations))))))))))
+    (.:[476..477] .)))
+
+;sentence 5 Span:478..588
+;We demonstrated mutated alleles in 19% of primary AMLs (10/51) as  well as in
+;five of six secondary leukemias.
+;[520..532]:malignancy:"primary AMLs"
+;[568..587]:malignancy:"secondary leukemias"
+(SENT
+  (S
+    (NP-SBJ (PRP:[478..480] We))
+    (VP (VBD:[481..493] demonstrated)
+      (NP (JJ:[494..501] mutated) (NNS:[502..509] alleles))
+      (PP-LOC
+        (PP (IN:[510..512] in)
+          (NP
+            (NP (CD:[513..515] 19) (NN:[515..516] %))
+            (PP (IN:[517..519] of)
+              (NP (JJ:[520..527] primary) (NNS:[528..532] AMLs)))
+            (PRN (-LRB-:[533..534] -LRB-)
+              (NP
+                (NP (CD:[534..536] 10))
+                (PP (SYM:[536..537] /)
+                  (NP (CD:[537..539] 51))))
+              (-RRB-:[539..540] -RRB-))))
+        (CONJP (RB:[541..543] as) (RB:[545..549] well) (IN:[550..552] as))
+        (PP (IN:[553..555] in)
+          (NP
+            (NP (CD:[556..560] five))
+            (PP (IN:[561..563] of)
+              (NP (CD:[564..567] six)
+                 (JJ:[568..577] secondary) (NNS:[578..587] leukemias)))))))
+    (.:[587..588] .)))
+
+;sentence 6 Span:589..701
+;Mutations occurred predominantly at  N-ras codons 12, 13, or 61 (13 cases)
+;and twice at Ki-ras codons 12 and 13.
+;[589..598]:variation-event:"Mutations"
+;[626..631]:gene-rna:"N-ras"
+;[632..641]:variation-location:"codons 12"
+;[632..638]...[650..652]:variation-location:"codons"..."61"
+;[632..638]...[643..645]:variation-location:"codons"..."13"
+;[677..683]:gene-rna:"Ki-ras"
+;[684..693]:variation-location:"codons 12"
+;[684..690]...[698..700]:variation-location:"codons"..."13"
+(SENT
+  (S
+    (NP-SBJ (NNS:[589..598] Mutations))
+    (VP (VBD:[599..607] occurred)
+      (PP-LOC
+        (PP
+          (ADVP (RB:[608..621] predominantly))
+          (IN:[622..624] at)
+          (NP
+            (NP
+              (NML-2 (NN:[626..631] N-ras))
+              
+              (NML-1 (NNS:[632..638] codons))
+              (CD:[639..641] 12))
+            (,:[641..642] ,)
+            (NP
+              (NML-2 (-NONE-:[642..642] *P*))
+              (NML-1 (-NONE-:[642..642] *P*))
+              (CD:[643..645] 13))
+            (,:[645..646] ,) (CC:[647..649] or)
+            (NP
+              (NML-2 (-NONE-:[649..649] *P*))
+              (NML-1 (-NONE-:[649..649] *P*))
+              (CD:[650..652] 61))
+            (PRN (-LRB-:[653..654] -LRB-)
+              (NP (CD:[654..656] 13) (NNS:[657..662] cases))
+              (-RRB-:[662..663] -RRB-))))
+        (CC:[664..667] and)
+        (PP
+          (ADVP (RB:[668..673] twice))
+          (IN:[674..676] at)
+          (NP
+            (NP
+              (NML-3 (NN:[677..683] Ki-ras))
+              
+              (NML-4 (NNS:[684..690] codons))
+              (CD:[691..693] 12))
+            (CC:[694..697] and)
+            (NP
+              (NML-3 (-NONE-:[697..697] *P*))
+              (NML-4 (-NONE-:[697..697] *P*))
+              (CD:[698..700] 13))))))
+    (.:[700..701] .)))
+
+;sentence 7 Span:702..982
+;Ras  gene mutations were preferentially associated with an M4 morphology
+;according to  the FAB (French-American-British) classification, but no
+;particular correlation  was observed with respect to clinical parameter (sex,
+;age, course of disease) or  immunophenotype and karyotype.
+;[702..705]:gene-rna:"Ras"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[702..705] Ras) (NN:[707..711] gene)
+                (NNS:[712..721] mutations))
+      (VP (VBD:[722..726] were)
+        (ADVP (RB:[727..741] preferentially))
+        (VP (JJ:[742..752] associated)
+          (NP-1 (-NONE-:[752..752] *))
+          (PP-CLR (IN:[753..757] with)
+            (NP (DT:[758..760] an) (NN:[761..763] M4) (NN:[764..774] morphology)))
+          (PP (VBG:[775..784] according)
+            (PP (TO:[785..787] to)
+              (NP (DT:[789..792] the)
+                (ADJP
+                  (ADJP (JJ:[793..796] FAB))
+                  (ADJP (-LRB-:[797..798] -LRB-) (JJ:[798..804] French)
+                        (HYPH:[804..805] -) (JJ:[805..813] American)
+                        (HYPH:[813..814] -) (JJ:[814..821] British)
+                        (-RRB-:[821..822] -RRB-)))
+                (NN:[823..837] classification)))))))
+    (,:[837..838] ,) (CC:[839..842] but)
+    (S
+      (NP-SBJ-2 (DT:[843..845] no) (JJ:[846..856] particular)
+                (NN:[857..868] correlation))
+      (VP (VBD:[870..873] was)
+        (VP (VBN:[874..882] observed)
+          (NP-2 (-NONE-:[882..882] *))
+          (PP (IN:[883..887] with)
+            (NP
+              (NP (NN:[888..895] respect))
+              (PP (TO:[896..898] to)
+                (NP
+                  (NP (JJ:[899..907] clinical) (NN:[908..917] parameter)
+                    (PRN (-LRB-:[918..919] -LRB-)
+                      (NP
+                        (NP (NN:[919..922] sex))
+                        (,:[922..923] ,)
+                        (NP (NN:[924..927] age))
+                        (,:[927..928] ,)
+                        (NP
+                          (NP (NN:[929..935] course))
+                          (PP (IN:[936..938] of)
+                            (NP (NN:[939..946] disease)))))
+                      (-RRB-:[946..947] -RRB-)))
+                  (CC:[948..950] or)
+                  (NP (NN:[952..967] immunophenotype) (CC:[968..971] and)
+                      (NN:[972..981] karyotype)))))))))
+    (.:[981..982] .)))
+
+;sentence 8 Span:983..1074
+;Mutated ras alleles were absent in nine  mutation-positive cases analyzed
+;during remission.
+;[991..994]:gene-rna:"ras"
+(SENT
+  (S
+    (NP-SBJ (JJ:[983..990] Mutated) (NN:[991..994] ras)
+            (NNS:[995..1002] alleles))
+    (VP (VBD:[1003..1007] were)
+      (ADJP-PRD (JJ:[1008..1014] absent))
+      (PP (IN:[1015..1017] in)
+        (NP
+          (NP (CD:[1018..1022] nine)
+            (ADJP (NN:[1024..1032] mutation) (HYPH:[1032..1033] -)
+                  (JJ:[1033..1041] positive))
+            (NNS:[1042..1047] cases))
+          (VP (VBN:[1048..1056] analyzed)
+            (NP (-NONE-:[1056..1056] *))
+            (PP-TMP (IN:[1057..1063] during)
+              (NP (NN:[1064..1073] remission)))))))
+    (.:[1073..1074] .)))
+
+;sentence 9 Span:1075..1363
+;However, a more complex  pattern emerged from the five patients analyzed in
+;relapse exhibiting identical  ras mutations in three cases, absence of a
+;mutated allele in one patient, and  acquisition of a N-ras mutation in yet
+;another case, in which no mutation had  been detected initially.
+;[1181..1184]:gene-rna:"ras"
+;[1277..1282]:gene-rna:"N-ras"
+(SENT
+  (S
+    (ADVP (RB:[1075..1082] However))
+    (,:[1082..1083] ,)
+    (NP-SBJ (DT:[1084..1085] a)
+      (ADJP (RBR:[1086..1090] more) (JJ:[1091..1098] complex))
+      (NN:[1100..1107] pattern))
+    (VP (VBD:[1108..1115] emerged)
+      (PP (IN:[1116..1120] from)
+        (NP
+          (NP
+            (NP (DT:[1121..1124] the) (CD:[1125..1129] five)
+                (NNS:[1130..1138] patients))
+            (VP (VBN:[1139..1147] analyzed)
+              (NP (-NONE-:[1147..1147] *))
+              (PP (IN:[1148..1150] in)
+                (NP (NN:[1151..1158] relapse)))))
+          (VP (VBG:[1159..1169] exhibiting)
+            (NP
+              (NP
+                (NP (JJ:[1170..1179] identical) (NN:[1181..1184] ras)
+                    (NNS:[1185..1194] mutations))
+                (PP (IN:[1195..1197] in)
+                  (NP (CD:[1198..1203] three) (NNS:[1204..1209] cases))))
+              (,:[1209..1210] ,)
+              (NP
+                (NP (NN:[1211..1218] absence))
+                (PP (IN:[1219..1221] of)
+                  (NP (DT:[1222..1223] a) (JJ:[1224..1231] mutated)
+                      (NN:[1232..1238] allele)))
+                (PP (IN:[1239..1241] in)
+                  (NP (CD:[1242..1245] one) (NN:[1246..1253] patient))))
+              (,:[1253..1254] ,) (CC:[1255..1258] and)
+              (NP
+                (NP (NN:[1260..1271] acquisition))
+                (PP (IN:[1272..1274] of)
+                  (NP (DT:[1275..1276] a) (NN:[1277..1282] N-ras)
+                      (NN:[1283..1291] mutation)))
+                (PP (IN:[1292..1294] in)
+                  (NP
+                    (NP (RB:[1295..1298] yet) (JJ:[1299..1306] another)
+                        (NN:[1307..1311] case))
+                    (,:[1311..1312] ,)
+                    (SBAR
+                      (WHPP-2 (IN:[1313..1315] in)
+                        (WHNP (WDT:[1316..1321] which)))
+                      (S
+                        (NP-SBJ-1 (DT:[1322..1324] no)
+                                  (NN:[1325..1333] mutation))
+                        (VP (VBD:[1334..1337] had)
+                          (VP (VBN:[1339..1343] been)
+                            (VP (VBN:[1344..1352] detected)
+                              (NP-1 (-NONE-:[1352..1352] *))
+                              (ADVP (RB:[1353..1362] initially))
+                              (PP-2 (-NONE-:[1362..1362] *T*)))))))))))))))
+    (.:[1362..1363] .)))
+
+;sentence 10 Span:1364..1571
+;Moreover, restriction fragment length polymorphisms  (RFLP) of the
+;X-chromosome genes hypoxanthine phosphoribosyl transferase (HPRT)  and
+;phosphoglycerate kinase (PGK) were studied in 19 of the AML patients.
+;[1450..1489]:gene-protein:"hypoxanthine phosphoribosyl transferase"
+;[1491..1495]:gene-protein:"HPRT"
+;[1502..1525]:gene-protein:"phosphoglycerate kinase"
+;[1527..1530]:gene-protein:"PGK"
+;[1558..1561]:malignancy:"AML"
+(SENT
+  (S
+    (ADVP (RB:[1364..1372] Moreover))
+    (,:[1372..1373] ,)
+    (NP-SBJ-1
+      (NP
+        (NP
+          (NML (NN:[1374..1385] restriction) (NN:[1386..1394] fragment)
+               (NN:[1395..1401] length))
+          (NNS:[1402..1415] polymorphisms))
+        (NP (-LRB-:[1417..1418] -LRB-) (NN:[1418..1422] RFLP)
+            (-RRB-:[1422..1423] -RRB-)))
+      (PP (IN:[1424..1426] of)
+        (NP
+          (NP (DT:[1427..1430] the)
+            (NML (NN:[1431..1432] X) (HYPH:[1432..1433] -)
+                 (NN:[1433..1443] chromosome))
+            (NNS:[1444..1449] genes))
+          (NP
+            (NP
+              (NP (NN:[1450..1462] hypoxanthine)
+                  (NN:[1463..1477] phosphoribosyl) (NN:[1478..1489] transferase))
+              (NP (-LRB-:[1490..1491] -LRB-) (NN:[1491..1495] HPRT)
+                  (-RRB-:[1495..1496] -RRB-)))
+            (CC:[1498..1501] and)
+            (NP
+              (NP (NN:[1502..1518] phosphoglycerate) (NN:[1519..1525] kinase))
+              (NP (-LRB-:[1526..1527] -LRB-) (NN:[1527..1530] PGK)
+                  (-RRB-:[1530..1531] -RRB-)))))))
+    (VP (VBD:[1532..1536] were)
+      (VP (VBN:[1537..1544] studied)
+        (NP-1 (-NONE-:[1544..1544] *))
+        (PP (IN:[1545..1547] in)
+          (NP
+            (NP (CD:[1548..1550] 19))
+            (PP (IN:[1551..1553] of)
+              (NP (DT:[1554..1557] the) (NN:[1558..1561] AML)
+                  (NNS:[1562..1570] patients)))))))
+    (.:[1570..1571] .)))
+
+;sentence 11 Span:1572..1756
+;Nine  cases (47%) were heterozygous for BglI or BamHI RFLPs at the PGK or
+;HPRT loci,  respectively, and therefore suitable for clonal analysis
+;investigating  X-chromosome inactivation.
+;[1612..1616]:gene-protein:"BglI"
+;[1620..1625]:gene-protein:"BamHI"
+;[1639..1642]:gene-generic:"PGK"
+;[1646..1650]:gene-generic:"HPRT"
+(SENT
+  (S
+    (S
+      (NP-SBJ (CD:[1572..1576] Nine) (NNS:[1578..1583] cases)
+        (PRN (-LRB-:[1584..1585] -LRB-)
+          (NP (CD:[1585..1587] 47) (NN:[1587..1588] %))
+          (-RRB-:[1588..1589] -RRB-)))
+      (VP
+        (VP (VBD:[1590..1594] were)
+          (ADJP-PRD=3 (JJ:[1595..1607] heterozygous)
+            (PP (IN:[1608..1611] for)
+              (NP
+                (NP (NN:[1612..1616] BglI)
+                  (NML-2 (-NONE-:[1616..1616] *P*)))
+                (CC:[1617..1619] or)
+                (NP (NN:[1620..1625] BamHI)
+                  (NML-2 (NNS:[1626..1631] RFLPs))))))
+          (PP-LOC=5 (IN:[1632..1634] at)
+            (NP (DT:[1635..1638] the)
+              (NML
+                (NML (NN:[1639..1642] PGK)
+                  (NML-1 (-NONE-:[1642..1642] *P*)))
+                (CC:[1643..1645] or)
+                (NML (NN:[1646..1650] HPRT)
+                  (NML-1 (NNS:[1651..1655] loci))))))
+          (,:[1655..1656] ,)
+          (ADVP=4 (RB:[1658..1670] respectively)))
+        (,:[1670..1671] ,) (CC:[1672..1675] and)
+        (VP
+          (ADVP (RB:[1676..1685] therefore))
+          (ADJP-PRD=3 (JJ:[1686..1694] suitable)
+            (PP (IN:[1695..1698] for)
+              (NP
+                (NP (JJ:[1699..1705] clonal) (NN:[1706..1714] analysis))
+                (VP (VBG:[1715..1728] investigating)
+                  (NP
+                    (NML (NN:[1730..1731] X) (HYPH:[1731..1732] -)
+                         (NN:[1732..1742] chromosome))
+                    (NN:[1743..1755] inactivation))))))
+          (PP-LOC=5 (-NONE-:[1755..1755] *NOT*))
+          (ADVP=4 (-NONE-:[1755..1755] *NOT*)))))
+    (.:[1755..1756] .)))
+
+;sentence 12 Span:1757..1842
+;All of the patients exhibited a monoclonal leukemic  cell population at
+;presentation.
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1757..1760] All))
+      (PP (IN:[1761..1763] of)
+        (NP (DT:[1764..1767] the) (NNS:[1768..1776] patients))))
+    (VP (VBD:[1777..1786] exhibited)
+      (NP (DT:[1787..1788] a) (JJ:[1789..1799] monoclonal)
+          (JJ:[1800..1808] leukemic) (NN:[1810..1814] cell)
+          (NN:[1815..1825] population))
+      (PP-TMP (IN:[1826..1828] at)
+        (NP (NN:[1829..1841] presentation))))
+    (.:[1841..1842] .)))
+
+;sentence 13 Span:1843..1941
+;In addition, five of seven cases studied in  remission showed reemergence of
+;a polyclonal pattern.
+(SENT
+  (S
+    (PP (IN:[1843..1845] In)
+      (NP (NN:[1846..1854] addition)))
+    (,:[1854..1855] ,)
+    (NP-SBJ
+      (NP (CD:[1856..1860] five))
+      (PP (IN:[1861..1863] of)
+        (NP
+          (NP (CD:[1864..1869] seven) (NNS:[1870..1875] cases))
+          (VP (VBN:[1876..1883] studied)
+            (NP (-NONE-:[1883..1883] *))
+            (PP (IN:[1884..1886] in)
+              (NP (NN:[1888..1897] remission)))))))
+    (VP (VBD:[1898..1904] showed)
+      (NP
+        (NP (NN:[1905..1916] reemergence))
+        (PP (IN:[1917..1919] of)
+          (NP (DT:[1920..1921] a) (JJ:[1922..1932] polyclonal)
+              (NN:[1933..1940] pattern)))))
+    (.:[1940..1941] .)))
+
+;sentence 14 Span:1942..2139
+;However, two children  exhibited persistence of monoclonal hematopoiesis
+;despite complete  clinical/hematological remission and a corresponding loss
+;of a mutated ras  allele in one of the patients.
+;[2086..2115]:variation-type:"loss of a mutated ras  allele"
+;[2104..2107]:gene-rna:"ras"
+(SENT
+  (S
+    (ADVP (RB:[1942..1949] However))
+    (,:[1949..1950] ,)
+    (NP-SBJ (CD:[1951..1954] two) (NNS:[1955..1963] children))
+    (VP (VBD:[1965..1974] exhibited)
+      (NP
+        (NP (NN:[1975..1986] persistence))
+        (PP (IN:[1987..1989] of)
+          (NP (JJ:[1990..2000] monoclonal) (NN:[2001..2014] hematopoiesis))))
+      (PP (IN:[2015..2022] despite)
+        (NP
+          (NP
+            (NP
+              (NP
+                (ADJP-1 (JJ:[2023..2031] complete))
+                (JJ:[2033..2041] clinical)
+                (NML-2 (-NONE-:[2041..2041] *P*)))
+              (SYM:[2041..2042] /)
+              (NP
+                (ADJP-1 (-NONE-:[2042..2042] *P*))
+                (JJ:[2042..2055] hematological)
+                (NML-2 (NN:[2056..2065] remission))))
+            (CC:[2066..2069] and)
+            (NP
+              (NP (DT:[2070..2071] a) (JJ:[2072..2085] corresponding)
+                  (NN:[2086..2090] loss))
+              (PP (IN:[2091..2093] of)
+                (NP (DT:[2094..2095] a) (JJ:[2096..2103] mutated)
+                    (NN:[2104..2107] ras) (NN:[2109..2115] allele)))))
+          (PP-LOC (IN:[2116..2118] in)
+            (NP
+              (NP (CD:[2119..2122] one))
+              (PP (IN:[2123..2125] of)
+                (NP (DT:[2126..2129] the) (NNS:[2130..2138] patients))))))))
+    (.:[2138..2139] .)))
+
+;sentence 15 Span:2140..2279
+;These data indicate the value of molecular  genetic approaches for evaluation
+;of the heterogeneous nature of remission and  relapse in AML.
+;[2275..2278]:malignancy:"AML"
+(SENT
+  (S
+    (NP-SBJ (DT:[2140..2145] These) (NNS:[2146..2150] data))
+    (VP (VBP:[2151..2159] indicate)
+      (NP
+        (NP (DT:[2160..2163] the) (NN:[2164..2169] value))
+        (PP (IN:[2170..2172] of)
+          (NP (JJ:[2173..2182] molecular) (JJ:[2184..2191] genetic)
+              (NNS:[2192..2202] approaches)))
+        (PP (DT:[2203..2206] for)
+          (NP (NN:[2207..2217] evaluation)
+            (PP (IN:[2218..2220] of)
+              (NP
+                (NP (DT:[2221..2224] the) (JJ:[2225..2238] heterogeneous)
+                    (NN:[2239..2245] nature))
+                (PP (IN:[2246..2248] of)
+                  (NP (NN:[2249..2258] remission) (CC:[2259..2262] and)
+                      (NN:[2264..2271] relapse)))
+                (PP (IN:[2272..2274] in)
+                  (NP (NN:[2275..2278] AML)))))))))
+    (.:[2278..2279] .)))
+
+;section 16 Span:2283..2327
+;PMID: 2564452 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2283..2287] PMID) (::[2287..2288] :) (CD:[2289..2296] 2564452)
+        (NN:[2297..2298] -LSB-) (NNP:[2298..2304] PubMed) (::[2305..2306] -)
+        (NN:[2307..2314] indexed) (IN:[2315..2318] for)
+        (NNP:[2319..2327] MEDLINE-RSB-)))

@@ -1,0 +1,388 @@
+;PMID: 9010637
+;source_file_1917.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..40] = [t:0..40]
+;1)sentence:[e:46..186] = [t:46..186]
+;2)section:[e:190..249] = [t:190..249]
+;3)section:[e:253..337] = [t:253..337]
+;4)sentence:[e:341..547] = [t:341..547]
+;5)sentence:[e:548..683] = [t:548..683]
+;6)sentence:[e:684..1117] = [t:684..1117]
+;7)sentence:[e:1118..1411] = [t:1118..1411]
+;8)sentence:[e:1412..1533] = [t:1412..1533]
+;9)section:[e:1537..1581] = [t:1537..1581]
+
+;section 0 Span:0..40
+;Drug Metab Dispos. 1997 Jan;25(1):110-5.
+(SEC
+  (FRAG (NNP:[0..4] Drug) (NNP:[5..10] Metab) (NNP:[11..17] Dispos)
+        (.:[17..18] .) (CD:[19..23] 1997) (CC:[24..31] Jan;25-LRB-)
+        (CD:[31..32] 1) (-RRB-:[32..33] -RRB-) (::[33..34] :)
+        (CD:[34..39] 110-5) (.:[39..40] .)))
+
+;sentence 1 Span:46..186
+;Identification of cytochromes P450 involved in the human liver microsomal 
+;metabolism of the thromboxane A2 inhibitor seratrodast (ABT-001).
+;[64..80]:cyp450:"cytochromes P450"
+;[139..153]:substance:"thromboxane A2"
+;[154..163]:substance:"inhibitor"
+;[164..175]:substance:"seratrodast"
+;[177..184]:substance:"ABT-001"
+(SENT
+  (NP-HLN
+    (NP (NN:[46..60] Identification))
+    (PP (IN:[61..63] of)
+      (NP
+        (NP (NNS:[64..75] cytochromes) (NN:[76..80] P450))
+        (VP (VBN:[81..89] involved)
+          (NP (-NONE-:[89..89] *))
+          (PP-CLR (IN:[90..92] in)
+            (NP
+              (NP (DT:[93..96] the) (JJ:[97..102] human) (NN:[103..108] liver)
+                  (JJ:[109..119] microsomal) (NN:[121..131] metabolism))
+              (PP (IN:[132..134] of)
+                (NP
+                  (NP (DT:[135..138] the)
+                    (NML (NN:[139..150] thromboxane) (NN:[151..153] A2))
+                    (NN:[154..163] inhibitor))
+                  (NP (NN:[164..175] seratrodast)
+                    (PRN (-LRB-:[176..177] -LRB-)
+                      (NP (NN:[177..184] ABT-001))
+                      (-RRB-:[184..185] -RRB-))))))))))
+    (.:[185..186] .)))
+
+;section 2 Span:190..249
+;Kumar GN, Dubberke E, Rodrigues AD, Roberts E, Dennisen JF.
+(SEC
+  (FRAG (NNP:[190..195] Kumar) (NNP:[196..198] GN) (,:[198..199] ,)
+        (NNP:[200..208] Dubberke) (NNP:[209..210] E) (,:[210..211] ,)
+        (NNP:[212..221] Rodrigues) (NNP:[222..224] AD) (,:[224..225] ,)
+        (NNP:[226..233] Roberts) (NNP:[234..235] E) (,:[235..236] ,)
+        (NNP:[237..245] Dennisen) (NNP:[246..249] JF.)))
+
+;section 3 Span:253..337
+;Biotransformation Department, Abbott Laboratories, Abbott Park, IL
+;60064-3500,  USA.
+(SEC
+  (FRAG (NNP:[253..270] Biotransformation) (NNP:[271..281] Department)
+        (,:[281..282] ,) (NNP:[283..289] Abbott) (NNP:[290..302] Laboratories)
+        (,:[302..303] ,) (NNP:[304..310] Abbott) (NNP:[311..315] Park)
+        (,:[315..316] ,) (NNP:[317..319] IL) (CD:[320..325] 60064)
+        (CD:[325..330] -3500) (,:[330..331] ,) (NNP:[333..336] USA)
+        (.:[336..337] .)))
+
+;sentence 4 Span:341..547
+;Seratrodast (ABT-001, AA-2414) undergoes cytochrome P450 (CYP)-dependent 
+;metabolism to a major (5-methylhydroxy seratrodast; 5-HOS) and a minor 
+;4'-hydroxy seratrodast metabolite in human liver microsomes.
+;[341..352]:substance:"Seratrodast"
+;[354..361]:substance:"ABT-001"
+;[363..370]:substance:"AA-2414"
+;[382..397]:cyp450:"cytochrome P450"
+;[399..402]:cyp450:"CYP"
+;[438..465]:substance:"5-methylhydroxy seratrodast"
+;[467..472]:substance:"5-HOS"
+;[487..520]:substance:"4'-hydroxy seratrodast metabolite"
+(SENT
+  (S
+    (NP-SBJ (NN:[341..352] Seratrodast)
+      (PRN (-LRB-:[353..354] -LRB-)
+        (NP (NN:[354..361] ABT-001) (,:[361..362] ,) (NN:[363..370] AA-2414))
+        (-RRB-:[370..371] -RRB-)))
+    (VP (VBZ:[372..381] undergoes)
+      (NP
+        (NP
+          (ADJP
+            (NML
+              (NML (NN:[382..392] cytochrome) (NN:[393..397] P450))
+              (NML (-LRB-:[398..399] -LRB-) (NN:[399..402] CYP)
+                   (-RRB-:[402..403] -RRB-)))
+            (HYPH:[403..404] -) (JJ:[404..413] dependent))
+          (NN:[415..425] metabolism))
+        (PP (TO:[426..428] to)
+          (NP
+            (NP (DT:[429..430] a) (JJ:[431..436] major)
+              (PRN (-LRB-:[437..438] -LRB-)
+                (FRAG
+                  (NP (NN:[438..453] 5-methylhydroxy)
+                      (NN:[454..465] seratrodast))
+                  (::[465..466] ;)
+                  (NP (NN:[467..472] 5-HOS)))
+                (-RRB-:[472..473] -RRB-))
+              (NML-1 (-NONE-:[473..473] *P*)))
+            (CC:[474..477] and)
+            (NP (DT:[478..479] a) (JJ:[480..485] minor)
+               (NN:[487..497] 4'-hydroxy)
+              (NML-1 (NN:[498..509] seratrodast) (NN:[510..520] metabolite))))))
+      (PP-LOC (IN:[521..523] in)
+        (NP (JJ:[524..529] human) (NN:[530..535] liver)
+            (NNS:[536..546] microsomes))))
+    (.:[546..547] .)))
+
+;sentence 5 Span:548..683
+;The mean apparent  K(m) and Vmax for the formation of 5-HOS were 15.5 microM
+;and 589.0 pmol 5-HOS  formed/mg protein/min, respectively.
+;[567..571]:quantitative-name:"K(m)"
+;[576..580]:quantitative-name:"Vmax"
+;[602..607]:substance:"5-HOS"
+;[613..617]:quantitative-value:"15.5"
+;[618..624]:quantitative-units:"microM"
+;[629..634]:quantitative-value:"589.0"
+;[635..668]:quantitative-units:"pmol 5-HOS  formed/mg protein/min"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[548..551] The)
+        (NML
+          (NML
+            (ADJP-3 (JJ:[552..556] mean))
+            (ADJP-2 (JJ:[557..565] apparent))
+            (NN:[567..571] K-LRB-m-RRB-))
+          (CC:[572..575] and)
+          (NML
+            (ADJP-3 (-NONE-:[575..575] *P*))
+            (ADJP-2 (-NONE-:[575..575] *P*))
+            (NN:[576..580] Vmax))))
+      (PP (IN:[581..584] for)
+        (NP
+          (NP (DT:[585..588] the) (NN:[589..598] formation))
+          (PP (IN:[599..601] of)
+            (NP (NN:[602..607] 5-HOS))))))
+    (VP (VBD:[608..612] were)
+      (NP-PRD
+        (NP
+          (NP
+            (NP
+              (NML (CD:[613..617] 15.5) (NN:[618..624] microM))
+              (NML-1 (-NONE-:[624..624] *P*)))
+            (CC:[625..628] and)
+            (NP
+              (NML (CD:[629..634] 589.0) (NN:[635..639] pmol))
+              (NML-1 (NN:[640..645] 5-HOS))))
+          (VP (VBN:[647..653] formed)
+            (NP (-NONE-:[653..653] *))))
+        (PP (SYM:[653..654] /)
+          (NP
+            (NP (NN:[654..656] mg))
+            (NP (NN:[657..664] protein))))
+        (PP (SYM:[664..665] /)
+          (NP (NN:[665..668] min))))
+      (,:[668..669] ,)
+      (ADVP (RB:[670..682] respectively)))
+    (.:[682..683] .)))
+
+;sentence 6 Span:684..1117
+;Chemical inhibition using isoform-selective  CYP inhibitors, correlation of
+;5-HOS formation with several isoform-specific CYP  activities in a panel of
+;liver microsomes, metabolism by microsomes derived from  CYP cDNA-expressed
+;B-lymphoblastoid cells, and immunoinhibition by  isoform-specific anti-CYP
+;antibodies indicated that 5-HOS formation is catalyzed  by CYP3A and
+;CYP2C9/10, with a minor contribution from CYP2C8 and CYP2C19.
+;[710..717]:cyp450:"isoform"
+;[729..732]:cyp450:"CYP"
+;[733..743]:substance:"inhibitors"
+;[760..765]:substance:"5-HOS"
+;[789..796]:cyp450:"isoform"
+;[806..809]:cyp450:"CYP"
+;[893..901]:substance:"CYP cDNA"
+;[961..968]:substance:"isoform"
+;[978..997]:substance:"anti-CYP antibodies"
+;[1013..1018]:substance:"5-HOS"
+;[1046..1051]:cyp450:"CYP3A"
+;[1056..1062]:cyp450:"CYP2C9"
+;[1056..1061]...[1063..1065]:cyp450:"CYP2C"..."10"
+;[1098..1104]:cyp450:"CYP2C8"
+;[1109..1116]:cyp450:"CYP2C19"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (JJ:[684..692] Chemical) (NN:[693..703] inhibition))
+        (VP (VBG:[704..709] using)
+          (NP
+            (ADJP (NN:[710..717] isoform) (HYPH:[717..718] -)
+                  (JJ:[718..727] selective))
+            (NN:[729..732] CYP) (NNS:[733..743] inhibitors))))
+      (,:[743..744] ,)
+      (NP
+        (NP (NN:[745..756] correlation))
+        (PP (IN:[757..759] of)
+          (NP (NN:[760..765] 5-HOS) (NN:[766..775] formation)))
+        (PP (IN:[776..780] with)
+          (NP
+            (NP (JJ:[781..788] several)
+              (ADJP (NN:[789..796] isoform) (HYPH:[796..797] -)
+                    (JJ:[797..805] specific))
+              (NN:[806..809] CYP) (NNS:[811..821] activities))
+            (PP (IN:[822..824] in)
+              (NP
+                (NP (DT:[825..826] a) (NN:[827..832] panel))
+                (PP (IN:[833..835] of)
+                  (NP (NN:[836..841] liver) (NNS:[842..852] microsomes))))))))
+      (,:[852..853] ,)
+      (NP
+        (NP (NN:[854..864] metabolism))
+        (PP (IN:[865..867] by)
+          (NP
+            (NP (NNS:[868..878] microsomes))
+            (VP (VBN:[879..886] derived)
+              (NP (-NONE-:[886..886] *))
+              (PP (IN:[887..891] from)
+                (NP (NN:[893..896] CYP)
+                  (ADJP (NN:[897..901] cDNA) (HYPH:[901..902] -)
+                        (VBN:[902..911] expressed))
+                  (JJ:[912..928] B-lymphoblastoid) (NNS:[929..934] cells)))))))
+      (,:[934..935] ,) (CC:[936..939] and)
+      (NP
+        (NP (NN:[940..956] immunoinhibition))
+        (PP (IN:[957..959] by)
+          (NP
+            (ADJP (NN:[961..968] isoform) (HYPH:[968..969] -)
+                  (JJ:[969..977] specific))
+            
+            (NML (AFX:[978..982] anti) (HYPH:[982..983] -) (NN:[983..986] CYP))
+            (NNS:[987..997] antibodies)))))
+    (VP (VBD:[998..1007] indicated)
+      (SBAR (IN:[1008..1012] that)
+        (S
+          (NP-SBJ-2 (NN:[1013..1018] 5-HOS) (NN:[1019..1028] formation))
+          (VP (VBZ:[1029..1031] is)
+            (VP (VBN:[1032..1041] catalyzed)
+              (NP-2 (-NONE-:[1041..1041] *))
+              (PP (IN:[1043..1045] by)
+                (NP-LGS
+                  (NP (NN:[1046..1051] CYP3A))
+                  (CC:[1052..1055] and)
+                  (NP
+                    (NP
+                      (NML-1 (NN:[1056..1061] CYP2C))
+                      (CD:[1061..1062] 9))
+                    (SYM:[1062..1063] /)
+                    (NP
+                      (NML-1 (-NONE-:[1063..1063] *P*))
+                      (CD:[1063..1065] 10)))))
+              (,:[1065..1066] ,)
+              (PP-MNR (IN:[1067..1071] with)
+                (NP
+                  (NP (DT:[1072..1073] a) (JJ:[1074..1079] minor)
+                      (NN:[1080..1092] contribution))
+                  (PP (IN:[1093..1097] from)
+                    (NP (NN:[1098..1104] CYP2C8) (CC:[1105..1108] and)
+                        (NN:[1109..1116] CYP2C19))))))))))
+    (.:[1116..1117] .)))
+
+;sentence 7 Span:1118..1411
+;At  clinically relevant concentrations, seratrodast was found to inhibit
+;tolbutamide  methylhydroxylation (IC50 = 60 microM), (S)-mephenytoin
+;4'-hydroxylation (IC50 =  50 microM), and coumarin 7-hydroxylation (IC60 = 95
+;microM), indicating the  potential for significant clinical interactions.
+;[1158..1169]:substance:"seratrodast"
+;[1191..1223]:substance:"tolbutamide  methylhydroxylation"
+;[1225..1229]:quantitative-name:"IC50"
+;[1232..1234]:quantitative-value:"60"
+;[1235..1241]:quantitative-units:"microM"
+;[1244..1259]:substance:"(S)-mephenytoin"
+;[1278..1282]:quantitative-name:"IC50"
+;[1286..1288]:quantitative-value:"50"
+;[1289..1295]:quantitative-units:"microM"
+;[1302..1310]:substance:"coumarin"
+;[1328..1332]:quantitative-name:"IC60"
+;[1335..1337]:quantitative-value:"95"
+;[1338..1344]:quantitative-units:"microM"
+(SENT
+  (S
+    (PP (IN:[1118..1120] At)
+      (NP
+        (ADJP (RB:[1122..1132] clinically) (JJ:[1133..1141] relevant))
+        (NNS:[1142..1156] concentrations)))
+    (,:[1156..1157] ,)
+    (NP-SBJ-1 (NN:[1158..1169] seratrodast))
+    (VP (VBD:[1170..1173] was)
+      (VP (VBN:[1174..1179] found)
+        (S
+          (NP-SBJ-1 (-NONE-:[1179..1179] *))
+          (VP (TO:[1180..1182] to)
+            (VP (VB:[1183..1190] inhibit)
+              (NP
+                (NP
+                   (NN:[1191..1202] tolbutamide)
+                   (NN:[1204..1223] methylhydroxylation)
+                  (PRN (-LRB-:[1224..1225] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[1225..1229] IC50))
+                      (VP (SYM:[1230..1231] =)
+                        (NP (CD:[1232..1234] 60) (NN:[1235..1241] microM))))
+                    (-RRB-:[1241..1242] -RRB-)))
+                (,:[1242..1243] ,)
+                (NP (NN:[1244..1259] -LRB-S-RRB--mephenytoin)
+                    (NN:[1260..1276] 4'-hydroxylation)
+                  (PRN (-LRB-:[1277..1278] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[1278..1282] IC50))
+                      (VP (SYM:[1283..1284] =)
+                        (NP (CD:[1286..1288] 50) (NN:[1289..1295] microM))))
+                    (-RRB-:[1295..1296] -RRB-)))
+                (,:[1296..1297] ,) (CC:[1298..1301] and)
+                (NP (NN:[1302..1310] coumarin) (NN:[1311..1326] 7-hydroxylation)
+                  (PRN (-LRB-:[1327..1328] -LRB-)
+                    (S
+                      (NP-SBJ (NN:[1328..1332] IC60))
+                      (VP (SYM:[1333..1334] =)
+                        (NP (CD:[1335..1337] 95) (NN:[1338..1344] microM))))
+                    (-RRB-:[1344..1345] -RRB-))))
+              (,:[1345..1346] ,)
+              (S-ADV
+                (NP-SBJ (-NONE-:[1346..1346] *))
+                (VP (VBG:[1347..1357] indicating)
+                  (NP
+                    (NP (DT:[1358..1361] the) (NN:[1363..1372] potential))
+                    (PP (IN:[1373..1376] for)
+                      (NP (JJ:[1377..1388] significant)
+                          (JJ:[1389..1397] clinical)
+                          (NNS:[1398..1410] interactions)))))))))))
+    (.:[1410..1411] .)))
+
+;sentence 8 Span:1412..1533
+;The inducers of CYP3A and/or  CYP2C9 (e.g. rifampicin and phenytoin) are
+;likely to alter the disposition of  seratrodast.
+;[1416..1424]:substance:"inducers"
+;[1428..1433]:cyp450:"CYP3A"
+;[1442..1448]:cyp450:"CYP2C9"
+;[1455..1465]:substance:"rifampicin"
+;[1470..1479]:substance:"phenytoin"
+;[1521..1532]:substance:"seratrodast"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP
+        (NP (DT:[1412..1415] The) (NNS:[1416..1424] inducers))
+        (PP (IN:[1425..1427] of)
+          (NP (NN:[1428..1433] CYP3A) (CC:[1434..1440] and/or)
+              (NN:[1442..1448] CYP2C9))))
+      (PRN (-LRB-:[1449..1450] -LRB-)
+        (NP
+          (ADVP (FW:[1450..1454] e.g.))
+          (NN:[1455..1465] rifampicin) (CC:[1466..1469] and)
+           (NN:[1470..1479] phenytoin))
+        (-RRB-:[1479..1480] -RRB-)))
+    (VP (VBP:[1481..1484] are)
+      (ADJP-PRD (JJ:[1485..1491] likely)
+        (S
+          (NP-SBJ-1 (-NONE-:[1491..1491] *))
+          (VP (TO:[1492..1494] to)
+            (VP (VB:[1495..1500] alter)
+              (NP
+                (NP (DT:[1501..1504] the) (NN:[1505..1516] disposition))
+                (PP (IN:[1517..1519] of)
+                  (NP (NN:[1521..1532] seratrodast)))))))))
+    (.:[1532..1533] .)))
+
+;section 9 Span:1537..1581
+;PMID: 9010637 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1537..1541] PMID) (::[1541..1542] :) (CD:[1543..1550] 9010637)
+        (NN:[1551..1552] -LSB-) (NNP:[1552..1558] PubMed) (::[1559..1560] -)
+        (NN:[1561..1568] indexed) (IN:[1569..1572] for)
+        (NNP:[1573..1581] MEDLINE-RSB-)))

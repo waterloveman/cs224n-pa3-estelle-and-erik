@@ -1,0 +1,407 @@
+;PMID: 8242757
+;source_file_1945.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:43..175] = [t:43..175]
+;2)section:[e:179..236] = [t:179..236]
+;3)section:[e:240..287] = [t:240..287]
+;4)sentence:[e:291..522] = [t:291..522]
+;5)sentence:[e:524..737] = [t:524..737]
+;6)sentence:[e:738..883] = [t:738..883]
+;7)sentence:[e:884..1207] = [t:884..1207]
+;8)sentence:[e:1208..1551] = [t:1208..1551]
+;9)sentence:[e:1552..1742] = [t:1552..1742]
+;10)section:[e:1746..1790] = [t:1746..1790]
+
+;section 0 Span:0..37
+;Cell Immunol. 1993 Nov;152(1):143-51.
+(SEC
+  (FRAG (NNP:[0..4] Cell) (NNP:[5..12] Immunol) (.:[12..13] .)
+        (CD:[14..18] 1993) (CC:[19..27] Nov;152-LRB-) (CD:[27..28] 1)
+        (-RRB-:[28..29] -RRB-) (::[29..30] :) (CD:[30..33] 143)
+        (CD:[33..36] -51) (.:[36..37] .)))
+
+;sentence 1 Span:43..175
+;CD3 monoclonal antibodies evoke the same cytochrome P450-regulated
+;capacitative  entry of calcium as thapsigargin in Jurkat T cells.
+;[43..68]:substance:"CD3 monoclonal antibodies"
+;[84..99]:cyp450:"cytochrome P450"
+;[133..140]:substance:"calcium"
+;[144..156]:substance:"thapsigargin"
+(SENT
+  (S-HLN
+    (NP-SBJ (NN:[43..46] CD3) (JJ:[47..57] monoclonal) (NNS:[58..68] antibodies))
+    (VP (VBP:[69..74] evoke)
+      (NP
+        (NP (DT:[75..78] the) (JJ:[79..83] same)
+          (ADJP
+            (NML (NN:[84..94] cytochrome) (NN:[95..99] P450))
+            (HYPH:[99..100] -) (VBN:[100..109] regulated))
+          (JJ:[110..122] capacitative) (NN:[124..129] entry))
+        (PP (IN:[130..132] of)
+          (NP (NN:[133..140] calcium)))
+        (PP (IN:[141..143] as)
+          (NP (NN:[144..156] thapsigargin))))
+      (PP-LOC (IN:[157..159] in)
+        (NP (NNP:[160..166] Jurkat) (NN:[167..168] T) (NNS:[169..174] cells))))
+    (.:[174..175] .)))
+
+;section 2 Span:179..236
+;Breittmayer JP, Berthe P, Cousin JL, Bernard A, Aussel C.
+(SEC
+  (FRAG (NNP:[179..190] Breittmayer) (NNP:[191..193] JP) (,:[193..194] ,)
+        (NNP:[195..201] Berthe) (NNP:[202..204] P,) (NNP:[205..211] Cousin)
+        (NNP:[212..214] JL) (,:[214..215] ,) (NNP:[216..223] Bernard)
+        (NNP:[224..225] A) (,:[225..226] ,) (NNP:[227..233] Aussel)
+        (NNP:[234..236] C.)))
+
+;section 3 Span:240..287
+;INSERM U343, Faculte de Medecine, Nice, France.
+(SEC
+  (FRAG (NNP:[240..246] INSERM) (NNP:[247..251] U343) (,:[251..252] ,)
+        (NNP:[253..260] Faculte) (IN:[261..263] de) (NNP:[264..272] Medecine)
+        (,:[272..273] ,) (NNP:[274..278] Nice) (,:[278..279] ,)
+        (NNP:[280..286] France) (.:[286..287] .)))
+
+;sentence 4 Span:291..522
+;In T cells CD3 monoclonal antibodies mediate an elevation of cytosolic Ca2+ 
+;concentration due to a release from internal stores and also due to an entry 
+;from extracellular medium, the mechanism of which is not clearly elucidated.
+;[302..327]:substance:"CD3 monoclonal antibodies"
+;[362..366]:substance:"Ca2+"
+(SENT
+  (S
+    (PP-LOC (IN:[291..293] In)
+      (NP (NN:[294..295] T) (NNS:[296..301] cells)))
+    (NP-SBJ (NN:[302..305] CD3) (JJ:[306..316] monoclonal)
+            (NNS:[317..327] antibodies))
+    (VP (VBP:[328..335] mediate)
+      (NP
+        (NP
+          (NP (DT:[336..338] an) (NN:[339..348] elevation))
+          (PP (IN:[349..351] of)
+            (NP (JJ:[352..361] cytosolic)
+              (NML (NN:[362..365] Ca2) (SYM:[365..366] +))
+              (NN:[368..381] concentration))))
+        (PP
+          (PP (JJ:[382..385] due)
+            (PP (TO:[386..388] to)
+              (NP
+                (NP (DT:[389..390] a) (NN:[391..398] release))
+                (PP (IN:[399..403] from)
+                  (NP (JJ:[404..412] internal) (NNS:[413..419] stores))))))
+          (CC:[420..423] and)
+          (PP
+            (ADVP (RB:[424..428] also))
+            (JJ:[429..432] due)
+            (PP (TO:[433..435] to)
+              (NP
+                (NP
+                  (NP (DT:[436..438] an) (NN:[439..444] entry))
+                  (PP (IN:[446..450] from)
+                    (NP (JJ:[451..464] extracellular) (NN:[465..471] medium))))
+                (,:[471..472] ,)
+                (SBAR
+                  (WHNP-1
+                    (NP (DT:[473..476] the) (NN:[477..486] mechanism))
+                    (WHPP (IN:[487..489] of)
+                      (WHNP (WDT:[490..495] which))))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[495..495] *T*))
+                    (VP (VBZ:[496..498] is) (RB:[499..502] not)
+                      (ADVP (RB:[503..510] clearly))
+                      (VP (VBN:[511..521] elucidated)
+                        (NP-1 (-NONE-:[521..521] *))))))))))))
+    (.:[521..522] .)))
+
+;sentence 5 Span:524..737
+;Previous studies on several cell types have reported that depleting 
+;intracellular Ca2+ stores with inhibitors of the reticulum Ca(2+)-ATPase 
+;resulted in an increased plasma membrane permeability to calcium ions.
+;[607..611]:substance:"Ca2+"
+;[624..634]:substance:"inhibitors"
+;[652..665]:substance:"Ca(2+)-ATPase"
+;[724..736]:substance:"calcium ions"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (JJ:[524..532] Previous) (NNS:[533..540] studies))
+      (PP (IN:[541..543] on)
+        (NP (JJ:[544..551] several) (NN:[552..556] cell) (NNS:[557..562] types))))
+    (VP (VBP:[563..567] have)
+      (VP (VBN:[568..576] reported)
+        (SBAR (IN:[577..581] that)
+          (S
+            (S-NOM-SBJ
+              (NP-SBJ (-NONE-:[581..581] *))
+              (VP (VBG:[582..591] depleting)
+                (NP (JJ:[593..606] intracellular)
+                  (NML (NN:[607..610] Ca2) (SYM:[610..611] +))
+                  (NNS:[612..618] stores))
+                (PP (IN:[619..623] with)
+                  (NP
+                    (NP (NNS:[624..634] inhibitors))
+                    (PP (IN:[635..637] of)
+                      (NP (DT:[638..641] the) (NN:[642..651] reticulum)
+                         (NN:[652..658] Ca-LRB-2+-RRB-) (HYPH:[658..659] -)
+                         (NN:[659..665] ATPase)))))))
+            (VP (VBD:[667..675] resulted)
+              (PP-CLR (IN:[676..678] in)
+                (NP
+                  (NP (DT:[679..681] an) (VBN:[682..691] increased)
+                    (NML (NN:[692..698] plasma) (NN:[699..707] membrane))
+                    (NN:[708..720] permeability))
+                  (PP (TO:[721..723] to)
+                    (NP (NN:[724..731] calcium) (NNS:[732..736] ions))))))))))
+    (.:[736..737] .)))
+
+;sentence 6 Span:738..883
+;It has  been suggested that emptying the reticulum triggers a Ca2+ influx
+;from  extracellular medium, independent of phosphoinositide hydrolysis.
+;[800..804]:substance:"Ca2+"
+;[855..871]:substance:"phosphoinositide"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (PRP:[738..740] It))
+      (SBAR-1 (-NONE-:[740..740] *ICH*)))
+    (VP (VBZ:[741..744] has)
+      (VP (VBN:[746..750] been)
+        (VP (VBN:[751..760] suggested)
+          (NP-2 (-NONE-:[760..760] *))
+          (SBAR-1 (IN:[761..765] that)
+            (S
+              (S-NOM-SBJ
+                (NP-SBJ (-NONE-:[765..765] *))
+                (VP (VBG:[766..774] emptying)
+                  (NP (DT:[775..778] the) (NN:[779..788] reticulum))))
+              (VP (VBZ:[789..797] triggers)
+                (NP
+                  (NP (DT:[798..799] a)
+                    (NML (NN:[800..803] Ca2) (SYM:[803..804] +))
+                    (NN:[805..811] influx))
+                  (PP (IN:[812..816] from)
+                    (NP (JJ:[818..831] extracellular) (NN:[832..838] medium))))
+                (,:[838..839] ,)
+                (S-ADV
+                  (NP-SBJ (-NONE-:[839..839] *))
+                  (ADJP-PRD (JJ:[840..851] independent)
+                    (PP (IN:[852..854] of)
+                      (NP (NN:[855..871] phosphoinositide)
+                          (NN:[872..882] hydrolysis)))))))))))
+    (.:[882..883] .)))
+
+;sentence 7 Span:884..1207
+;To document  the physiological relevance of such a mechanism, we compared
+;CD3- and  thapsigargin-induced sustained increase of cytosolic Ca2+
+;concentration in  Jurkat T cells with regard to their sensitivity to internal
+;and external Ca2+  level and to several inhibitors which do not affect the
+;release of internal  stores.
+;[958..961]:substance:"CD3"
+;[968..980]:substance:"thapsigargin"
+;[1021..1025]:substance:"Ca2+"
+;[1117..1121]:substance:"Ca2+"
+;[1144..1154]:substance:"inhibitors"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[884..884] *))
+      (VP (TO:[884..886] To)
+        (VP (VB:[887..895] document)
+          (NP
+            (NP (DT:[897..900] the) (JJ:[901..914] physiological)
+                (NN:[915..924] relevance))
+            (PP (IN:[925..927] of)
+              (NP (JJ:[928..932] such) (DT:[933..934] a)
+                  (NN:[935..944] mechanism)))))))
+    (,:[944..945] ,)
+    (NP-SBJ (PRP:[946..948] we))
+    (VP (VBD:[949..957] compared)
+      (NP
+        (NP
+          (NP
+            (ADJP (NN:[958..961] CD3) (HYPH:[961..962] -)
+              (ADJP-3 (-NONE-:[962..962] *P*)))
+            (NML-5 (-NONE-:[962..962] *P*)))
+          (CC:[963..966] and)
+          (NP
+            (ADJP (NN:[968..980] thapsigargin) (HYPH:[980..981] -)
+              (ADJP-3 (VBN:[981..988] induced)))
+            (NML-5 (VBN:[989..998] sustained) (NN:[999..1007] increase))))
+        (PP (IN:[1008..1010] of)
+          (NP (JJ:[1011..1020] cytosolic)
+            (NML (NN:[1021..1024] Ca2) (SYM:[1024..1025] +))
+            (NN:[1026..1039] concentration))))
+      (PP-LOC (IN:[1040..1042] in)
+        (NP (NNP:[1044..1050] Jurkat) (NN:[1051..1052] T)
+            (NNS:[1053..1058] cells)))
+      (PP (IN:[1059..1063] with)
+        (NP
+          (NP (NN:[1064..1070] regard))
+          (PP
+            (PP (TO:[1071..1073] to)
+              (NP
+                (NP (PRP$:[1074..1079] their) (NN:[1080..1091] sensitivity))
+                (PP (TO:[1092..1094] to)
+                  (NP
+                    (NP (JJ:[1095..1103] internal)
+                      (NML-2 (-NONE-:[1103..1103] *P*)))
+                    (CC:[1104..1107] and)
+                    (NP (JJ:[1108..1116] external)
+                      (NML-2
+                        (NML (NN:[1117..1120] Ca2) (SYM:[1120..1121] +))
+                        (NN:[1123..1128] level)))))))
+            (CC:[1129..1132] and)
+            (PP (TO:[1133..1135] to)
+              (NP
+                (NP (JJ:[1136..1143] several) (NNS:[1144..1154] inhibitors))
+                (SBAR
+                  (WHNP-1 (WDT:[1155..1160] which))
+                  (S
+                    (NP-SBJ-1 (-NONE-:[1160..1160] *T*))
+                    (VP (VBP:[1161..1163] do) (RB:[1164..1167] not)
+                      (VP (VB:[1168..1174] affect)
+                        (NP
+                          (NP (DT:[1175..1178] the) (NN:[1179..1186] release))
+                          (PP (IN:[1187..1189] of)
+                            (NP (JJ:[1190..1198] internal)
+                                (NNS:[1200..1206] stores))))))))))))))
+    (.:[1206..1207] .)))
+
+;sentence 8 Span:1208..1551
+;We show that (1) there was no additivity of the two effects; (2) both  CD3-
+;and thapsigargin-evoked Ca2+ influx were inhibited when membrane was 
+;depolarized by either gramicidin or a high potassium concentration; and (3)
+;Ca2+  influx was abrogated by cytochrome P450 inhibitors such as lipoxygenase
+; inhibitors or imidazole antimicotic drugs.
+;[1279..1282]:substance:"CD3"
+;[1288..1300]:substance:"thapsigargin"
+;[1308..1312]:substance:"Ca2+"
+;[1376..1386]:substance:"gramicidin"
+;[1397..1406]:substance:"potassium"
+;[1430..1434]:substance:"Ca2+"
+;[1460..1475]:cyp450:"cytochrome P450"
+;[1476..1486]:substance:"inhibitors"
+;[1495..1507]:substance:"lipoxygenase"
+;[1509..1519]:substance:"inhibitors"
+;[1523..1550]:substance:"imidazole antimicotic drugs"
+(SENT
+  (S
+    (NP-SBJ (PRP:[1208..1210] We))
+    (VP (VBP:[1211..1215] show)
+      (SBAR (IN:[1216..1220] that)
+        (S
+          (S
+            (LST (LS:[1221..1224] -LRB-1-RRB-))
+            (NP-SBJ (EX:[1225..1230] there))
+            (VP (VBD:[1231..1234] was)
+              (NP-PRD
+                (NP (DT:[1235..1237] no) (NN:[1238..1248] additivity))
+                (PP (IN:[1249..1251] of)
+                  (NP (DT:[1252..1255] the) (CD:[1256..1259] two)
+                      (NNS:[1260..1267] effects))))))
+          (::[1267..1268] ;)
+          (S
+            (LST (LS:[1269..1272] -LRB-2-RRB-))
+            (NP-SBJ-6 (CC:[1273..1277] both)
+              (NP
+                (ADJP (NN:[1279..1282] CD3) (HYPH:[1282..1283] -)
+                  (ADJP-4 (-NONE-:[1283..1283] *P*)))
+                (NML-5 (-NONE-:[1283..1283] *P*)))
+              (CC:[1284..1287] and)
+              (NP
+                (ADJP (NN:[1288..1300] thapsigargin) (HYPH:[1300..1301] -)
+                  (ADJP-4 (VBN:[1301..1307] evoked)))
+                (NML-5
+                  (NML (NN:[1308..1311] Ca2) (SYM:[1311..1312] +))
+                  (NN:[1313..1319] influx))))
+            (VP (VBD:[1320..1324] were)
+              (VP (VBN:[1325..1334] inhibited)
+                (NP-6 (-NONE-:[1334..1334] *))
+                (SBAR-ADV
+                  (WHADVP-3 (WRB:[1335..1339] when))
+                  (S
+                    (NP-SBJ-2 (NN:[1340..1348] membrane))
+                    (VP (VBD:[1349..1352] was)
+                      (VP (VBN:[1354..1365] depolarized)
+                        (NP-2 (-NONE-:[1365..1365] *))
+                        (PP (IN:[1366..1368] by)
+                          (NP-LGS (CC:[1369..1375] either)
+                            (NP (NN:[1376..1386] gramicidin))
+                            (CC:[1387..1389] or)
+                            (NP (DT:[1390..1391] a) (JJ:[1392..1396] high)
+                                (NN:[1397..1406] potassium)
+                                (NN:[1407..1420] concentration))))
+                        (ADVP-TMP-3 (-NONE-:[1420..1420] *T*)))))))))
+          (::[1420..1421] ;) (CC:[1422..1425] and)
+          (S
+            (LST (LS:[1426..1429] -LRB-3-RRB-))
+            (NP-SBJ-1
+              (NML (NN:[1430..1433] Ca2) (SYM:[1433..1434] +))
+              (NN:[1436..1442] influx))
+            (VP (VBD:[1443..1446] was)
+              (VP (VBN:[1447..1456] abrogated)
+                (NP-1 (-NONE-:[1456..1456] *))
+                (PP (IN:[1457..1459] by)
+                  (NP-LGS
+                    (NP
+                      (NML (NN:[1460..1470] cytochrome) (NN:[1471..1475] P450))
+                      (NNS:[1476..1486] inhibitors))
+                    (PP (JJ:[1487..1491] such) (IN:[1492..1494] as)
+                      (NP
+                        (NP (NN:[1495..1507] lipoxygenase)
+                            (NNS:[1509..1519] inhibitors))
+                        (CC:[1520..1522] or)
+                        (NP (NN:[1523..1532] imidazole)
+                            (JJ:[1533..1544] antimicotic)
+                            (NNS:[1545..1550] drugs))))))))))))
+    (.:[1550..1551] .)))
+
+;sentence 9 Span:1552..1742
+;CD3 mAb and thapsigargin thus  triggered the same signaling events, probably
+;involving a cytochrome P450, to  transmit information from depleted
+;endoplasmic reticulum to the plasma membrane.
+;[1552..1559]:substance:"CD3 mAb"
+;[1564..1576]:substance:"thapsigargin"
+;[1641..1656]:cyp450:"cytochrome P450"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1552..1555] CD3) (NN:[1556..1559] mAb))
+      (CC:[1560..1563] and)
+      (NP (NN:[1564..1576] thapsigargin)))
+    (ADVP (RB:[1577..1581] thus))
+    (VP (VBD:[1583..1592] triggered)
+      (NP (DT:[1593..1596] the) (JJ:[1597..1601] same)
+          (VBG:[1602..1611] signaling) (NNS:[1612..1618] events))
+      (,:[1618..1619] ,)
+      (S-ADV
+        (NP-SBJ (-NONE-:[1619..1619] *))
+        (VP
+          (ADVP (RB:[1620..1628] probably))
+          (VBG:[1629..1638] involving)
+          (NP (DT:[1639..1640] a)
+             (NN:[1641..1651] cytochrome) (NN:[1652..1656] P450))))
+      (,:[1656..1657] ,)
+      (S-PRP
+        (NP-SBJ-1 (-NONE-:[1657..1657] *))
+        (VP (TO:[1658..1660] to)
+          (VP (VB:[1662..1670] transmit)
+            (NP (NN:[1671..1682] information))
+            (PP (IN:[1683..1687] from)
+              (NP (VBN:[1688..1696] depleted) (JJ:[1697..1708] endoplasmic)
+                  (NN:[1709..1718] reticulum)))
+            (PP (TO:[1719..1721] to)
+              (NP (DT:[1722..1725] the) (NN:[1726..1732] plasma)
+                  (NN:[1733..1741] membrane)))))))
+    (.:[1741..1742] .)))
+
+;section 10 Span:1746..1790
+;PMID: 8242757 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1746..1750] PMID) (::[1750..1751] :) (CD:[1752..1759] 8242757)
+        (NN:[1760..1761] -LSB-) (NNP:[1761..1767] PubMed) (::[1768..1769] -)
+        (NN:[1770..1777] indexed) (IN:[1778..1781] for)
+        (NNP:[1782..1790] MEDLINE-RSB-)))

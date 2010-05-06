@@ -1,0 +1,285 @@
+;PMID: 2680062
+;source_file_690.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..37] = [t:0..37]
+;1)sentence:[e:42..198] = [t:42..198]
+;2)section:[e:202..249] = [t:202..249]
+;3)section:[e:253..372] = [t:253..372]
+;4)sentence:[e:376..516] = [t:376..516]
+;5)sentence:[e:517..689] = [t:517..689]
+;6)sentence:[e:691..839] = [t:691..839]
+;7)sentence:[e:840..962] = [t:840..962]
+;8)sentence:[e:963..1145] = [t:963..1145]
+;9)section:[e:1149..1193] = [t:1149..1193]
+
+;section 0 Span:0..37
+;Cancer Res  1989 Nov 15;49(22):6324-7
+(SEC
+  (FRAG (NNP:[0..6] Cancer) (NNP:[7..10] Res) (CD:[12..16] 1989)
+        (NNP:[17..20] Nov) (CD:[21..23] 15) (CC:[23..27] ;49-LRB-)
+        (CD:[27..29] 22) (-RRB-:[29..30] -RRB-) (CD:[30..35] :6324)
+        (::[35..36] -) (CD:[36..37] 7)))
+
+;sentence 1 Span:42..198
+;Detection of point mutations in N-ras and K-ras genes of human embryonal 
+;rhabdomyosarcomas using oligonucleotide probes and the polymerase chain 
+;reaction.
+;[55..70]:variation-type:"point mutations"
+;[74..79]:gene-rna:"N-ras"
+;[84..89]:gene-rna:"K-ras"
+;[105..133]:malignancy:"embryonal  rhabdomyosarcomas"
+;[171..181]:gene-protein:"polymerase"
+(SENT
+  (FRAG-HLN
+    (NP
+      (NP (NN:[42..51] Detection))
+      (PP (IN:[52..54] of)
+        (NP
+          (NP (NN:[55..60] point) (NNS:[61..70] mutations))
+          (PP (IN:[71..73] in)
+            (NP
+              (NP
+                (NP (NN:[74..79] N-ras)
+                  (NML-1 (-NONE-:[79..79] *P*)))
+                (CC:[80..83] and)
+                (NP (NN:[84..89] K-ras)
+                  (NML-1 (NNS:[90..95] genes))))
+              (PP (IN:[96..98] of)
+                (NP (JJ:[99..104] human)
+                   (JJ:[105..114] embryonal) (NNS:[116..133] rhabdomyosarcomas))))))))
+    (S-MNR
+      (NP-SBJ (-NONE-:[133..133] *))
+      (VP (VBG:[134..139] using)
+        (NP
+          (NP (NN:[140..155] oligonucleotide) (NNS:[156..162] probes))
+          (CC:[163..166] and)
+          (NP (DT:[167..170] the) (NN:[171..181] polymerase)
+              (NN:[182..187] chain) (NN:[189..197] reaction)))))
+    (.:[197..198] .)))
+
+;section 2 Span:202..249
+;Stratton MR, Fisher C, Gusterson BA, Cooper CS.
+(SEC
+  (FRAG (NNP:[202..210] Stratton) (NN:[211..213] MR) (IN:[213..214] ,)
+        (NNP:[215..221] Fisher) (NNP:[222..223] C) (,:[223..224] ,)
+        (NNP:[225..234] Gusterson) (NNP:[235..237] BA) (,:[237..238] ,)
+        (NNP:[239..245] Cooper) (NNP:[246..248] CS) (.:[248..249] .)))
+
+;section 3 Span:253..372
+;Section of Chemical Carcinogenesis, Chester Beatty Laboratories, Institute of
+; Cancer Research, London, United Kingdom.
+(SEC
+  (FRAG (NN:[253..260] Section) (IN:[261..263] of) (NNP:[264..272] Chemical)
+        (NNP:[273..287] Carcinogenesis) (,:[287..288] ,)
+        (NNP:[289..296] Chester) (NNP:[297..303] Beatty)
+        (NNP:[304..316] Laboratories) (,:[316..317] ,)
+        (NNP:[318..327] Institute) (IN:[328..330] of) (NNP:[332..338] Cancer)
+        (NNP:[339..347] Research) (,:[347..348] ,) (NNP:[349..355] London)
+        (,:[355..356] ,) (NNP:[357..363] United) (NNP:[364..371] Kingdom)
+        (.:[371..372] .)))
+
+;sentence 4 Span:376..516
+;Previous studies have demonstrated that genes of the ras family (H, K, and N)
+; can be activated by point mutations at codons 12, 13, and 61.
+;[429..432]:gene-rna:"ras"
+;[441..442]:gene-rna:"H"
+;[444..445]:gene-rna:"K"
+;[451..452]:gene-rna:"N"
+;[475..490]:variation-type:"point mutations"
+;[494..500]:variation-location:"codons"
+;[501..503]:variation-location:"12"
+;[505..507]:variation-location:"13"
+;[513..515]:variation-location:"61"
+(SENT
+  (S
+    (NP-SBJ (JJ:[376..384] Previous) (NNS:[385..392] studies))
+    (VP (VBP:[393..397] have)
+      (VP (VBN:[398..410] demonstrated)
+        (SBAR (IN:[411..415] that)
+          (S
+            (NP-SBJ-2
+              (NP (NNS:[416..421] genes))
+              (PP (IN:[422..424] of)
+                (NP (DT:[425..428] the) (NN:[429..432] ras)
+                    (NN:[433..439] family)
+                  (PRN (-LRB-:[440..441] -LRB-)
+                    (NP (NN:[441..442] H) (,:[442..443] ,) (NN:[444..445] K)
+                        (,:[445..446] ,) (CC:[447..450] and) (NN:[451..452] N))
+                    (-RRB-:[452..453] -RRB-)))))
+            (VP (MD:[455..458] can)
+              (VP (VB:[459..461] be)
+                (VP (VBN:[462..471] activated)
+                  (NP-2 (-NONE-:[471..471] *))
+                  (PP (IN:[472..474] by)
+                    (NP-LGS
+                      (NP (NN:[475..480] point) (NNS:[481..490] mutations))
+                      (PP-LOC (IN:[491..493] at)
+                        (NP
+                          (NP
+                            (NML-1 (NNS:[494..500] codons))
+                            (CD:[501..503] 12))
+                          (,:[503..504] ,)
+                          (NP
+                            (NML-1 (-NONE-:[504..504] *P*))
+                            (CD:[505..507] 13))
+                          (,:[507..508] ,) (CC:[509..512] and)
+                          (NP
+                            (NML-1 (-NONE-:[512..512] *P*))
+                            (CD:[513..515] 61)))))))))))))
+    (.:[515..516] .)))
+
+;sentence 5 Span:517..689
+;In the present  study we have used oligonucleotide probes corresponding to
+;these regions to  assess the role of ras gene mutations in the genesis of
+;human rhabdomyosarcoma.
+;[629..632]:gene-rna:"ras"
+;[672..688]:malignancy:"rhabdomyosarcoma"
+(SENT
+  (S
+    (PP (IN:[517..519] In)
+      (NP (DT:[520..523] the) (JJ:[524..531] present) (NN:[533..538] study)))
+    (NP-SBJ (PRP:[539..541] we))
+    (VP (VBP:[542..546] have)
+      (VP (VBD:[547..551] used)
+        (NP
+          (NP (NN:[552..567] oligonucleotide) (NNS:[568..574] probes))
+          (VP (VBG:[575..588] corresponding)
+            (PP-CLR (TO:[589..591] to)
+              (NP (DT:[592..597] these) (NNS:[598..605] regions)))))
+        (S-PRP
+          (NP-SBJ (-NONE-:[605..605] *))
+          (VP (TO:[606..608] to)
+            (VP (VB:[610..616] assess)
+              (NP
+                (NP (DT:[617..620] the) (NN:[621..625] role))
+                (PP (IN:[626..628] of)
+                  (NP (NN:[629..632] ras) (NN:[633..637] gene)
+                      (NNS:[638..647] mutations))))
+              (PP (IN:[648..650] in)
+                (NP
+                  (NP (DT:[651..654] the) (NN:[655..662] genesis))
+                  (PP (IN:[663..665] of)
+                    (NP (JJ:[666..671] human) (NN:[672..688] rhabdomyosarcoma))))))))))
+    (.:[688..689] .)))
+
+;sentence 6 Span:691..839
+;To increase the sensitivity of this method the appropriate regions of the
+;three  ras genes were first amplified using the polymerase chain reaction.
+;[772..775]:gene-rna:"ras"
+;[813..823]:gene-protein:"polymerase"
+(SENT
+  (S
+    (S-PRP
+      (NP-SBJ (-NONE-:[691..691] *))
+      (VP (TO:[691..693] To)
+        (VP (VB:[694..702] increase)
+          (NP
+            (NP (DT:[703..706] the) (NN:[707..718] sensitivity))
+            (PP (IN:[719..721] of)
+              (NP (DT:[722..726] this) (NN:[727..733] method)))))))
+    (NP-SBJ
+      (NP (IN:[734..737] the) (JJ:[738..749] appropriate)
+          (NNS:[750..757] regions))
+      (PP (IN:[758..760] of)
+        (NP (DT:[761..764] the) (CD:[765..770] three) (NN:[772..775] ras)
+            (NNS:[776..781] genes))))
+    (VP (VBD:[782..786] were)
+      (ADVP (RB:[787..792] first))
+      (VP (VBN:[793..802] amplified)
+        (S-MNR
+          (NP-SBJ (-NONE-:[802..802] *))
+          (VP (VBG:[803..808] using)
+            (NP (DT:[809..812] the) (NN:[813..823] polymerase)
+                (NN:[824..829] chain) (NN:[830..838] reaction))))))
+    (.:[838..839] .)))
+
+;sentence 7 Span:840..962
+;The results  show that 35% (5/14) embryonal rhabdomyosarcomas investigated
+;contain mutations  in the N-ras or K-ras genes.
+;[874..901]:malignancy:"embryonal rhabdomyosarcomas"
+;[923..932]:variation-event:"mutations"
+;[941..946]:gene-rna:"N-ras"
+;[950..955]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ (DT:[840..843] The) (NNS:[844..851] results))
+    (VP (VBP:[853..857] show)
+      (SBAR (IN:[858..862] that)
+        (S
+          (NP-SBJ
+            (NP (CD:[863..865] 35) (NN:[865..866] %)
+              (PRN (-LRB-:[867..868] -LRB-)
+                (NP
+                  (NP (CD:[868..869] 5))
+                  (PP (SYM:[869..870] /)
+                    (NP (CD:[870..872] 14))))
+                (-RRB-:[872..873] -RRB-))
+               (JJ:[874..883] embryonal) (NNS:[884..901] rhabdomyosarcomas))
+            (VP (VBN:[902..914] investigated)
+              (NP (-NONE-:[914..914] *))))
+          (VP (VBP:[915..922] contain)
+            (NP
+              (NP (NNS:[923..932] mutations))
+              (PP-LOC (IN:[934..936] in)
+                (NP (DT:[937..940] the)
+                  (NML
+                    (NML (NN:[941..946] N-ras)
+                      (NML-1 (-NONE-:[946..946] *P*)))
+                    (CC:[947..949] or)
+                    (NML (NN:[950..955] K-ras)
+                      (NML-1 (NNS:[956..961] genes)))))))))))
+    (.:[961..962] .)))
+
+;sentence 8 Span:963..1145
+;Thus ras gene mutation is implicated in the  development of mesenchymal and
+;embryonal tumors in addition to its previously  documented role in epithelial
+;and hematological neoplasia.
+;[968..971]:gene-rna:"ras"
+;[1023..1034]:malignancy:"mesenchymal"
+;[1039..1048]:malignancy:"embryonal"
+;[1049..1055]:malignancy:"tumors"
+;[1106..1116]:malignancy:"epithelial"
+;[1121..1134]:malignancy:"hematological"
+;[1135..1144]:malignancy:"neoplasia"
+(SENT
+  (S
+    (ADVP (RB:[963..967] Thus))
+    (NP-SBJ-3 (NN:[968..971] ras) (NN:[972..976] gene) (NN:[977..985] mutation))
+    (VP (VBZ:[986..988] is)
+      (UCP
+        (VP (VBN:[989..999] implicated)
+          (NP-3 (-NONE-:[999..999] *))
+          (PP-CLR (IN:[1000..1002] in)
+            (NP
+              (NP (DT:[1003..1006] the) (NN:[1008..1019] development))
+              (PP (IN:[1020..1022] of)
+                (NP
+                  (NP (JJ:[1023..1034] mesenchymal)
+                    (NML-2 (-NONE-:[1034..1034] *P*)))
+                  (CC:[1035..1038] and)
+                  (NP (JJ:[1039..1048] embryonal)
+                    (NML-2 (NNS:[1049..1055] tumors))))))))
+        (CONJP (IN:[1056..1058] in) (NN:[1059..1067] addition)
+               (TO:[1068..1070] to))
+        (NP
+          (NP (PRP$:[1071..1074] its)
+            (ADJP (RB:[1075..1085] previously) (VBN:[1087..1097] documented))
+            (NN:[1098..1102] role))
+          (PP (IN:[1103..1105] in)
+            (NP
+              (NP (JJ:[1106..1116] epithelial)
+                (NML-1 (-NONE-:[1116..1116] *P*)))
+              (CC:[1117..1120] and)
+              (NP (JJ:[1121..1134] hematological)
+                (NML-1 (NN:[1135..1144] neoplasia))))))))
+    (.:[1144..1145] .)))
+
+;section 9 Span:1149..1193
+;PMID: 2680062 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1149..1153] PMID) (::[1153..1154] :) (CD:[1155..1162] 2680062)
+        (NN:[1163..1164] -LSB-) (NNP:[1164..1170] PubMed) (::[1171..1172] -)
+        (NN:[1173..1180] indexed) (IN:[1181..1184] for)
+        (NNP:[1185..1193] MEDLINE-RSB-)))

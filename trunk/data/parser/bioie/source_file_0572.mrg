@@ -1,0 +1,524 @@
+;PMID: 9435160
+;source_file_660.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..44] = [t:0..44]
+;1)sentence:[e:50..221] = [t:50..221]
+;2)section:[e:225..262] = [t:225..262]
+;3)section:[e:266..363] = [t:266..363]
+;4)sentence:[e:367..487] = [t:367..487]
+;5)sentence:[e:488..611] = [t:488..611]
+;6)sentence:[e:612..908] = [t:612..908]
+;7)sentence:[e:909..971] = [t:909..971]
+;8)sentence:[e:972..1103] = [t:972..1103]
+;9)sentence:[e:1104..1309] = [t:1104..1309]
+;10)sentence:[e:1310..1429] = [t:1310..1428]
+;11)sentence:[e:1430..1593] = [t:1430..1593]
+;12)sentence:[e:1594..1762] = [t:1594..1762]
+;13)sentence:[e:1764..2031] = [t:1764..2031]
+;14)sentence:[e:2032..2214] = [t:2032..2214]
+;15)section:[e:2218..2262] = [t:2218..2262]
+;Sentence Matching Errors
+;ERROR_Section end mismatch[e:1310..1429][t:1310..1428]
+;Token/POS Errors
+;ERROR_Token in entity file but not tree[1428..1429] .
+
+;section 0 Span:0..44
+;J Pharmacol Exp Ther. 1998 Jan;284(1):51-60.
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..11] Pharmacol) (NNP:[12..15] Exp)
+        (NNP:[16..20] Ther) (.:[20..21] .) (CD:[22..26] 1998)
+        (JJ:[27..33] Jan;28) (JJ:[33..34] 4) (NN:[34..35] -LRB-) (NN:[35..36] 1)
+        (NN:[36..37] -RRB-) (::[37..38] :) (CD:[38..39] 5) (CD:[39..43] 1-60)
+        (.:[43..44] .)))
+
+;sentence 1 Span:50..221
+;Cytochromes P450 with bisallylic hydroxylation activity on arachidonic and 
+;linoleic acids studied with human recombinant enzymes and with human and rat 
+;liver microsomes.
+;[50..66]:cyp450:"Cytochromes P450"
+;[109..120]...[135..140]:substance:"arachidonic"..."acids"
+;[126..140]:substance:"linoleic acids"
+;[172..179]:substance:"enzymes"
+(SENT
+  (NP-HLN
+    (NP
+      (NP (NNS:[50..61] Cytochromes) (NN:[62..66] P450))
+      (PP (IN:[67..71] with)
+        (NP
+          (NP (JJ:[72..82] bisallylic) (NN:[83..96] hydroxylation)
+              (NN:[97..105] activity))
+          (PP (IN:[106..108] on)
+            (NP
+              (NP (JJ:[109..120] arachidonic)
+                (NML-2 (-NONE-:[120..120] *P*)))
+              (CC:[121..124] and)
+              (NP (JJ:[126..134] linoleic)
+                (NML-2 (NNS:[135..140] acids))))))))
+    (VP (VBN:[141..148] studied)
+      (NP (-NONE-:[148..148] *))
+      (PP-MNR
+        (PP (IN:[149..153] with)
+          (NP (JJ:[154..159] human) (JJ:[160..171] recombinant)
+              (NNS:[172..179] enzymes)))
+        (CC:[180..183] and)
+        (PP (IN:[184..188] with)
+          (NP
+            (NP (JJ:[189..194] human)
+              (NML-1 (-NONE-:[194..194] *P*)))
+            (CC:[195..198] and)
+            (NP (NN:[199..202] rat)
+              (NML-1 (NN:[204..209] liver) (NNS:[210..220] microsomes)))))))
+    (.:[220..221] .)))
+
+;section 2 Span:225..262
+;Bylund J, Kunz T, Valmsen K, Oliw EH.
+(SEC
+  (FRAG (NNP:[225..231] Bylund) (NNP:[232..234] J,) (NNP:[235..239] Kunz)
+        (NNP:[240..241] T) (,:[241..242] ,) (NNP:[243..250] Valmsen)
+        (NNP:[251..253] K,) (NNP:[254..258] Oliw) (NNP:[259..262] EH.)))
+
+;section 3 Span:266..363
+;Department of Pharmaceutical Biosciences, Uppsala Biomedical Center, Uppsala 
+;University, Sweden.
+(SEC
+  (FRAG (NNP:[266..276] Department) (IN:[277..279] of)
+        (NNP:[280..294] Pharmaceutical) (NNP:[295..306] Biosciences)
+        (,:[306..307] ,) (NNP:[308..315] Uppsala) (NNP:[316..326] Biomedical)
+        (NNP:[327..333] Center) (,:[333..334] ,) (NNP:[335..342] Uppsala)
+        (NNP:[344..354] University) (IN:[354..355] ,) (NNP:[356..362] Sweden)
+        (.:[362..363] .)))
+
+;sentence 4 Span:367..487
+;Bisallylic carbons of polyunsaturated fatty acids can be hydroxylated in 
+;NADPH-dependent reactions in liver microsomes.
+;[389..416]:substance:"polyunsaturated fatty acids"
+;[441..446]:substance:"NADPH"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (JJ:[367..377] Bisallylic) (NNS:[378..385] carbons))
+      (PP (IN:[386..388] of)
+        (NP (JJ:[389..404] polyunsaturated) (JJ:[405..410] fatty)
+            (NNS:[411..416] acids))))
+    (VP (MD:[417..420] can)
+      (VP (VB:[421..423] be)
+        (VP (VBN:[424..436] hydroxylated)
+          (NP-1 (-NONE-:[436..436] *))
+          (PP (IN:[437..439] in)
+            (NP
+              (ADJP (NN:[441..446] NADPH) (HYPH:[446..447] -)
+                    (JJ:[447..456] dependent))
+              (NNS:[457..466] reactions)))
+          (PP-LOC (IN:[467..469] in)
+            (NP (NN:[470..475] liver) (NNS:[476..486] microsomes))))))
+    (.:[486..487] .)))
+
+;sentence 5 Span:488..611
+;Human recombinant cytochromes  P450 and human and rat liver microsomes were
+;assayed for bisallylic  hydroxylation activity.
+;[506..523]:cyp450:"cytochromes  P450"
+(SENT
+  (S
+    (NP-SBJ-2
+      (NP (JJ:[488..493] Human) (JJ:[494..505] recombinant)
+         (NNS:[506..517] cytochromes) (NN:[519..523] P450))
+      (CC:[524..527] and)
+      (NP
+        (NP (JJ:[528..533] human)
+          (NML-1 (-NONE-:[533..533] *P*)))
+        (CC:[534..537] and)
+        (NP (NN:[538..541] rat)
+          (NML-1 (NN:[542..547] liver) (NNS:[548..558] microsomes)))))
+    (VP (VBD:[559..563] were)
+      (VP (VBN:[564..571] assayed)
+        (NP-2 (-NONE-:[571..571] *))
+        (PP (IN:[572..575] for)
+          (NP (JJ:[576..586] bisallylic) (NN:[588..601] hydroxylation)
+              (NN:[602..610] activity)))))
+    (.:[610..611] .)))
+
+;sentence 6 Span:612..908
+;CYP1A2, CYP2C8, CYP2C9, CYP2C19 and CYP3A4 converted  [14C]linoleic acid to
+;14C-labeled 11-hydroxyoctadecadienoic acid (11-HODE),  whereas
+;[14C]arachidonic acid was oxygenated by CYP1A2 and CYP3A4 to 14C-labeled 
+;13-hydroxyeicosatrienoic acid (13-HETE), 10-HETE and 7-HETE as determined by 
+;HPLC.
+;[612..618]:cyp450:"CYP1A2"
+;[620..626]:cyp450:"CYP2C8"
+;[628..634]:cyp450:"CYP2C9"
+;[636..643]:cyp450:"CYP2C19"
+;[648..654]:cyp450:"CYP3A4"
+;[666..684]:substance:"[14C]linoleic acid"
+;[700..730]:substance:"11-hydroxyoctadecadienoic acid"
+;[732..739]:substance:"11-HODE"
+;[751..772]:substance:"[14C]arachidonic acid"
+;[791..797]:cyp450:"CYP1A2"
+;[802..808]:cyp450:"CYP3A4"
+;[825..854]:substance:"13-hydroxyeicosatrienoic acid"
+;[856..863]:substance:"13-HETE"
+;[866..873]:substance:"10-HETE"
+;[878..884]:substance:"7-HETE"
+(SENT
+  (S
+    (NP-SBJ (NN:[612..618] CYP1A2) (,:[618..619] ,) (NN:[620..626] CYP2C8)
+            (,:[626..627] ,) (NN:[628..634] CYP2C9) (,:[634..635] ,)
+            (NN:[636..643] CYP2C19) (CC:[644..647] and) (NN:[648..654] CYP3A4))
+    (VP (VBD:[655..664] converted)
+      (NP (JJ:[666..679] -LSB-14C-RSB-linoleic) (NN:[680..684] acid))
+      (PP-CLR (TO:[685..687] to)
+        (NP
+          (ADJP (NN:[688..691] 14C) (HYPH:[691..692] -) (VBN:[692..699] labeled))
+          (NML
+            (NML (JJ:[700..725] 11-hydroxyoctadecadienoic) (NN:[726..730] acid))
+            (NML (-LRB-:[731..732] -LRB-) (NN:[732..739] 11-HODE)
+                 (-RRB-:[739..740] -RRB-)))))
+      (,:[740..741] ,)
+      (SBAR-ADV (IN:[743..750] whereas)
+        (S
+          (NP-SBJ-3 (JJ:[751..767] -LSB-14C-RSB-arachidonic)
+                    (NN:[768..772] acid))
+          (VP (VBD:[773..776] was)
+            (VP (VBN:[777..787] oxygenated)
+              (NP-3 (-NONE-:[787..787] *))
+              (PP (IN:[788..790] by)
+                (NP-LGS (NN:[791..797] CYP1A2) (CC:[798..801] and)
+                        (NN:[802..808] CYP3A4)))
+              (PP (TO:[809..811] to)
+                (NP
+                  (NP
+                    (ADJP-2 (NN:[812..815] 14C) (HYPH:[815..816] -)
+                            (VBN:[816..823] labeled))
+                    (NML
+                      (NML (JJ:[825..849] 13-hydroxyeicosatrienoic)
+                           (NN:[850..854] acid))
+                      (NML (-LRB-:[855..856] -LRB-) (NN:[856..863] 13-HETE)
+                           (-RRB-:[863..864] -RRB-))))
+                  (,:[864..865] ,)
+                  (NP
+                    (ADJP-2 (-NONE-:[865..865] *P*))
+                    (NN:[866..873] 10-HETE))
+                  (CC:[874..877] and)
+                  (NP
+                    (ADJP-2 (-NONE-:[877..877] *P*))
+                    (NN:[878..884] 7-HETE))))
+              (SBAR-ADV (IN:[885..887] as)
+                (S
+                  (NP-SBJ-1 (-NONE-:[887..887] *))
+                  (VP (VBN:[888..898] determined)
+                    (NP-1 (-NONE-:[898..898] *))
+                    (PP-MNR (IN:[899..901] by)
+                      (NP (NN:[903..907] HPLC)))))))))))
+    (.:[907..908] .)))
+
+;sentence 7 Span:909..971
+;Both substrates were also converted to many other metabolites.
+;[914..924]:substance:"substrates"
+;[959..970]:substance:"metabolites"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[909..913] Both) (NNS:[914..924] substrates))
+    (VP (VBD:[925..929] were)
+      (ADVP (RB:[930..934] also))
+      (VP (VBN:[935..944] converted)
+        (NP-1 (-NONE-:[944..944] *))
+        (PP-CLR (TO:[945..947] to)
+          (NP (JJ:[948..952] many) (JJ:[953..958] other)
+              (NNS:[959..970] metabolites)))))
+    (.:[970..971] .)))
+
+;sentence 8 Span:972..1103
+;CYP2C9  appeared to form 12R-HETE and 13-HETE, whereas CYP2C8 formed 13-HETE,
+;11-HETE  and 15-HETE as main monohydroxy metabolites.
+;[972..978]:cyp450:"CYP2C9"
+;[997..1005]:substance:"12R-HETE"
+;[1010..1017]:substance:"13-HETE"
+;[1027..1033]:cyp450:"CYP2C8"
+;[1041..1048]:substance:"13-HETE"
+;[1050..1057]:substance:"11-HETE"
+;[1063..1070]:substance:"15-HETE"
+;[1079..1102]:substance:"monohydroxy metabolites"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[972..978] CYP2C9))
+      (VP (VBD:[980..988] appeared)
+        (S
+          (NP-SBJ-1 (-NONE-:[988..988] *))
+          (VP (TO:[989..991] to)
+            (VP (VB:[992..996] form)
+              (NP (NN:[997..1005] 12R-HETE) (CC:[1006..1009] and)
+                  (NN:[1010..1017] 13-HETE)))))
+        (,:[1017..1018] ,)
+        (SBAR-ADV (IN:[1019..1026] whereas)
+          (S
+            (NP-SBJ (NN:[1027..1033] CYP2C8))
+            (VP (VBD:[1034..1040] formed)
+              (NP (NN:[1041..1048] 13-HETE) (,:[1048..1049] ,)
+                  (NN:[1050..1057] 11-HETE) (CC:[1059..1062] and)
+                  (NN:[1063..1070] 15-HETE))
+              (PP (IN:[1071..1073] as)
+                (NP (JJ:[1074..1078] main)
+                   (JJ:[1079..1090] monohydroxy) (NNS:[1091..1102] metabolites))))))))
+    (.:[1102..1103] .)))
+
+;sentence 9 Span:1104..1309
+;Fetal human liver microsomes  metabolized linoleic acid to 11-HODE as a major
+;hydroxy metabolite, whereas  arachidonic acid appeared to be hydroxylated at
+;C13, C20 and, to some extent, at  C10, C19 and C7.
+;[1146..1159]:substance:"linoleic acid"
+;[1163..1170]:substance:"11-HODE"
+;[1182..1200]:substance:"hydroxy metabolite"
+;[1211..1227]:substance:"arachidonic acid"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1104..1109] Fetal) (JJ:[1110..1115] human)
+            (NN:[1116..1121] liver) (NNS:[1122..1132] microsomes))
+    (VP (VBD:[1134..1145] metabolized)
+      (NP (JJ:[1146..1154] linoleic) (NN:[1155..1159] acid))
+      (PP (TO:[1160..1162] to)
+        (NP (NN:[1163..1170] 11-HODE)))
+      (PP (IN:[1171..1173] as)
+        (NP (DT:[1174..1175] a) (JJ:[1176..1181] major)
+           (JJ:[1182..1189] hydroxy) (NN:[1190..1200] metabolite)))
+      (,:[1200..1201] ,)
+      (SBAR-ADV (IN:[1202..1209] whereas)
+        (S
+          (NP-SBJ (JJ:[1211..1222] arachidonic) (NN:[1223..1227] acid))
+          (VP (VBD:[1228..1236] appeared)
+            (S
+              (NP-SBJ-1 (-NONE-:[1236..1236] *))
+              (VP (TO:[1237..1239] to)
+                (VP (VB:[1240..1242] be)
+                  (VP (VBN:[1243..1255] hydroxylated)
+                    (NP-1 (-NONE-:[1255..1255] *))
+                    (PP-LOC
+                      (PP (IN:[1256..1258] at)
+                        (NP (NN:[1259..1262] C13) (,:[1262..1263] ,)
+                            (NN:[1264..1267] C20)))
+                      (CC:[1268..1271] and) (,:[1271..1272] ,)
+                      (PP
+                        (PP (TO:[1273..1275] to)
+                          (NP (JJ:[1276..1280] some) (NN:[1281..1287] extent)))
+                        (,:[1287..1288] ,) (IN:[1289..1291] at)
+                        (NP (NN:[1293..1296] C10) (,:[1296..1297] ,)
+                            (NN:[1298..1301] C19) (CC:[1302..1305] and)
+                            (NN:[1306..1308] C7))))))))))))
+    (.:[1308..1309] .)))
+
+;sentence 10 Span:1310..1428
+;Fetal liver microsomes mainly formed 13R-HETE, whereas adult  human liver
+;microsomes and CYP1A2 mainly formed 13S-HETE
+;[1347..1355]:substance:"13R-HETE"
+;[1399..1405]:cyp450:"CYP1A2"
+;[1420..1428]:substance:"13S-HETE"
+(SENT
+  (S
+    (NP-SBJ (JJ:[1310..1315] Fetal) (NN:[1316..1321] liver)
+            (NNS:[1322..1332] microsomes))
+    (ADVP (RB:[1333..1339] mainly))
+    (VP (VBD:[1340..1346] formed)
+      (NP (NN:[1347..1355] 13R-HETE))
+      (,:[1355..1356] ,)
+      (SBAR-ADV (IN:[1357..1364] whereas)
+        (S
+          (NP-SBJ
+            (NP (JJ:[1365..1370] adult) (JJ:[1372..1377] human)
+                (NN:[1378..1383] liver) (NNS:[1384..1394] microsomes))
+            (CC:[1395..1398] and)
+            (NP (NN:[1399..1405] CYP1A2)))
+          (ADVP (RB:[1406..1412] mainly))
+          (VP (VBD:[1413..1419] formed)
+            (NP (NN:[1420..1428] 13S-HETE))))))))
+
+(ORPH .)
+
+;sentence 11 Span:1430..1593
+;7,8-Benzoflavone (5  microM) and furafylline (20 microM), two inhibitors of
+;CYP1A2, reduced the  bisallylic hydroxylation activity of adult human liver
+;microsomes.
+;[1430..1446]:substance:"7,8-Benzoflavone"
+;[1448..1449]:quantitative-value:"5"
+;[1451..1457]:quantitative-units:"microM"
+;[1463..1474]:substance:"furafylline"
+;[1476..1478]:quantitative-value:"20"
+;[1479..1485]:quantitative-units:"microM"
+;[1492..1502]:substance:"inhibitors"
+;[1506..1512]:cyp450:"CYP1A2"
+(SENT
+  (S
+    (NP-SBJ
+      (NP
+        (NP (NN:[1430..1446] 7,8-Benzoflavone)
+          (PRN (-LRB-:[1447..1448] -LRB-)
+            (NP (CD:[1448..1449] 5) (NN:[1451..1457] microM))
+            (-RRB-:[1457..1458] -RRB-)))
+        (CC:[1459..1462] and)
+        (NP (NN:[1463..1474] furafylline)
+          (PRN (-LRB-:[1475..1476] -LRB-)
+            (NP (CD:[1476..1478] 20) (NN:[1479..1485] microM))
+            (-RRB-:[1485..1486] -RRB-))))
+      (,:[1486..1487] ,)
+      (NP
+        (NP (CD:[1488..1491] two) (NNS:[1492..1502] inhibitors))
+        (PP (IN:[1503..1505] of)
+          (NP (NN:[1506..1512] CYP1A2)))))
+    (,:[1512..1513] ,)
+    (VP (VBD:[1514..1521] reduced)
+      (NP
+        (NP (DT:[1522..1525] the) (JJ:[1527..1537] bisallylic)
+            (NN:[1538..1551] hydroxylation) (NN:[1552..1560] activity))
+        (PP (IN:[1561..1563] of)
+          (NP (JJ:[1564..1569] adult) (JJ:[1570..1575] human)
+              (NN:[1576..1581] liver) (NNS:[1582..1592] microsomes)))))
+    (.:[1592..1593] .)))
+;ERROR_Orphan Text from Tree File[1428..1430] .
+
+;sentence 12 Span:1594..1762
+;Treatment of  rats with erythromycin or dexamethasone induced bisallylic
+;hydroxylation of  linoleic acid to 11-HODE in liver microsomes by 2- and
+;10-fold, respectively.
+;[1618..1630]:substance:"erythromycin"
+;[1634..1647]:substance:"dexamethasone"
+;[1685..1698]:substance:"linoleic acid"
+;[1702..1709]:substance:"11-HODE"
+;[1733..1735]...[1743..1747]:quantitative-value:"2-"..."fold"
+;[1740..1747]:quantitative-value:"10-fold"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (NN:[1594..1603] Treatment))
+      (PP (IN:[1604..1606] of)
+        (NP (NNS:[1608..1612] rats)))
+      (PP (IN:[1613..1617] with)
+        (NP (NN:[1618..1630] erythromycin) (CC:[1631..1633] or)
+            (NN:[1634..1647] dexamethasone))))
+    (VP (VBD:[1648..1655] induced)
+      (NP
+        (NP (JJ:[1656..1666] bisallylic) (NN:[1667..1680] hydroxylation))
+        (PP (IN:[1681..1683] of)
+          (NP (JJ:[1685..1693] linoleic) (NN:[1694..1698] acid)))
+        (PP (TO:[1699..1701] to)
+          (NP (NN:[1702..1709] 11-HODE))))
+      (PP-LOC (IN:[1710..1712] in)
+        (NP (NN:[1713..1718] liver) (NNS:[1719..1729] microsomes)))
+      (PP (IN:[1730..1732] by)
+        (ADVP
+          (ADVP (CD:[1733..1734] 2) (HYPH:[1734..1735] -)
+            (ADVP-1 (-NONE-:[1735..1735] *P*)))
+          (CC:[1736..1739] and)
+          (ADVP (CD:[1740..1742] 10) (HYPH:[1742..1743] -)
+            (ADVP-1 (JJ:[1743..1747] fold)))))
+      (,:[1747..1748] ,)
+      (ADVP (RB:[1749..1761] respectively)))
+    (.:[1761..1762] .)))
+
+;sentence 13 Span:1764..2031
+;The biosynthesis of 11-HODE by microsomes of dexamethasone-treated rats was 
+;inhibited by troleandomycin (ED50 = 1 microM) and by polyclonal antibodies 
+;against CYP3A1, suggesting that CYP3A1 could catalyze bisallylic
+;hydroxylations  in the dexamethasone-treated rat.
+;[1784..1791]:substance:"11-HODE"
+;[1809..1822]:substance:"dexamethasone"
+;[1854..1868]:substance:"troleandomycin"
+;[1870..1874]:quantitative-name:"ED50"
+;[1877..1878]:quantitative-value:"1"
+;[1879..1885]:quantitative-units:"microM"
+;[1894..1915]:substance:"polyclonal antibodies"
+;[1925..1931]:cyp450:"CYP3A1"
+;[1949..1955]:cyp450:"CYP3A1"
+;[2005..2018]:substance:"dexamethasone"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (DT:[1764..1767] The) (NN:[1768..1780] biosynthesis))
+      (PP (IN:[1781..1783] of)
+        (NP (NN:[1784..1791] 11-HODE)))
+      (PP (IN:[1792..1794] by)
+        (NP
+          (NP (NNS:[1795..1805] microsomes))
+          (PP (IN:[1806..1808] of)
+            (NP
+              (ADJP (NN:[1809..1822] dexamethasone) (HYPH:[1822..1823] -)
+                    (VBN:[1823..1830] treated))
+              (NNS:[1831..1835] rats))))))
+    (VP (VBD:[1836..1839] was)
+      (VP (VBN:[1841..1850] inhibited)
+        (NP-1 (-NONE-:[1850..1850] *))
+        (PP
+          (PP (IN:[1851..1853] by)
+            (NP-LGS (NN:[1854..1868] troleandomycin)
+              (PRN (-LRB-:[1869..1870] -LRB-)
+                (S
+                  (NP-SBJ (NN:[1870..1874] ED50))
+                  (VP (SYM:[1875..1876] =)
+                    (NP-PRD (CD:[1877..1878] 1) (NN:[1879..1885] microM))))
+                (-RRB-:[1885..1886] -RRB-))))
+          (CC:[1887..1890] and)
+          (PP (IN:[1891..1893] by)
+            (NP-LGS
+              (NP (JJ:[1894..1904] polyclonal) (NNS:[1905..1915] antibodies))
+              (PP (IN:[1917..1924] against)
+                (NP (NN:[1925..1931] CYP3A1))))))
+        (,:[1931..1932] ,)
+        (S-ADV
+          (NP-SBJ (-NONE-:[1932..1932] *))
+          (VP (VBG:[1933..1943] suggesting)
+            (SBAR (IN:[1944..1948] that)
+              (S
+                (NP-SBJ (NN:[1949..1955] CYP3A1))
+                (VP (MD:[1956..1961] could)
+                  (VP (VB:[1962..1970] catalyze)
+                    (NP (JJ:[1971..1981] bisallylic)
+                        (NNS:[1982..1996] hydroxylations))
+                    (PP-LOC (IN:[1998..2000] in)
+                      (NP (DT:[2001..2004] the)
+                        (ADJP (NN:[2005..2018] dexamethasone)
+                              (HYPH:[2018..2019] -) (VBN:[2019..2026] treated))
+                        (NN:[2027..2030] rat)))))))))))
+    (.:[2030..2031] .)))
+
+;sentence 14 Span:2032..2214
+;We conclude from steric analysis of 13-HETE  and the effects of CYP
+;inhibitors on adult human liver microsomes that CYP1A2  might contribute to
+;its bisallylic hydroxylation activity.
+;[2068..2075]:substance:"13-HETE"
+;[2096..2099]:cyp450:"CYP"
+;[2100..2110]:substance:"inhibitors"
+;[2148..2154]:cyp450:"CYP1A2"
+(SENT
+  (S
+    (NP-SBJ (PRP:[2032..2034] We))
+    (VP (VBP:[2035..2043] conclude)
+      (PP (IN:[2044..2048] from)
+        (NP
+          (NP
+            (NP (JJ:[2049..2055] steric) (NN:[2056..2064] analysis))
+            (PP (IN:[2065..2067] of)
+              (NP (NN:[2068..2075] 13-HETE))))
+          (CC:[2077..2080] and)
+          (NP
+            (NP (DT:[2081..2084] the) (NNS:[2085..2092] effects))
+            (PP (IN:[2093..2095] of)
+              (NP (NN:[2096..2099] CYP) (NNS:[2100..2110] inhibitors)))
+            (PP (IN:[2111..2113] on)
+              (NP (JJ:[2114..2119] adult) (JJ:[2120..2125] human)
+                  (NN:[2126..2131] liver) (NNS:[2132..2142] microsomes))))))
+      (SBAR (IN:[2143..2147] that)
+        (S
+          (NP-SBJ (NN:[2148..2154] CYP1A2))
+          (VP (MD:[2156..2161] might)
+            (VP (VB:[2162..2172] contribute)
+              (PP-CLR (TO:[2173..2175] to)
+                (NP (PRP$:[2176..2179] its) (JJ:[2180..2190] bisallylic)
+                    (NN:[2191..2204] hydroxylation) (NN:[2205..2213] activity))))))))
+    (.:[2213..2214] .)))
+
+;section 15 Span:2218..2262
+;PMID: 9435160 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[2218..2222] PMID) (::[2222..2223] :) (CD:[2224..2231] 9435160)
+        (NN:[2232..2233] -LSB-) (NNP:[2233..2239] PubMed) (::[2240..2241] -)
+        (NN:[2242..2249] indexed) (IN:[2250..2253] for)
+        (NNP:[2254..2262] MEDLINE-RSB-)))

@@ -1,0 +1,420 @@
+;PMID: 11180166
+;source_file_671.mrg
+;Release 0.9 of PennBioIE
+;Funded by NSF ITR EIA-0205448
+
+;0)section:[e:0..31] = [t:0..31]
+;1)sentence:[e:36..110] = [t:36..110]
+;2)section:[e:114..171] = [t:114..171]
+;3)section:[e:175..275] = [t:175..275]
+;4)sentence:[e:279..365] = [t:279..365]
+;5)sentence:[e:366..484] = [t:366..484]
+;6)sentence:[e:485..703] = [t:485..703]
+;7)sentence:[e:704..833] = [t:704..833]
+;8)sentence:[e:834..882] = [t:834..882]
+;9)sentence:[e:883..928] = [t:883..928]
+;10)sentence:[e:929..1046] = [t:929..1046]
+;11)sentence:[e:1048..1185] = [t:1048..1185]
+;12)sentence:[e:1186..1326] = [t:1186..1326]
+;13)sentence:[e:1327..1444] = [t:1327..1444]
+;14)sentence:[e:1445..1649] = [t:1445..1649]
+;15)section:[e:1653..1698] = [t:1653..1698]
+
+;section 0 Span:0..31
+;J Pathol  2001 Feb;193(2):193-9
+(SEC
+  (FRAG (NNP:[0..1] J) (NNP:[2..8] Pathol) (CD:[10..14] 2001)
+        (-LRB-:[15..23] Feb;193-LRB-) (CD:[23..24] 2) (-RRB-:[24..25] -RRB-)
+        (CD:[25..29] :193) (::[29..30] -) (CD:[30..31] 9)))
+
+;sentence 1 Span:36..110
+;K-ras mutations in endometrial carcinomas with microsatellite instability.
+;[36..41]:gene-rna:"K-ras"
+;[55..77]:malignancy:"endometrial carcinomas"
+(SENT
+  (NP-HLN
+    (NP (NN:[36..41] K-ras) (NNS:[42..51] mutations))
+    (PP-LOC (IN:[52..54] in)
+      (NP
+        (NP (JJ:[55..66] endometrial) (NNS:[67..77] carcinomas))
+        (PP (IN:[78..82] with)
+          (NP (NN:[83..97] microsatellite) (NN:[98..109] instability)))))
+    (.:[109..110] .)))
+
+;section 2 Span:114..171
+;Lagarda H, Catasus L, Arguelles R, Matias-Guiu X, Prat J.
+(SEC
+  (FRAG (NNP:[114..121] Lagarda) (NNP:[122..123] H) (,:[123..124] ,)
+        (NNP:[125..132] Catasus) (NNP:[133..135] L,) (NNP:[136..145] Arguelles)
+        (NNP:[146..148] R,) (NNP:[149..155] Matias) (HYPH:[155..156] -)
+        (NNP:[156..160] Guiu) (NNP:[161..162] X) (,:[162..163] ,)
+        (NNP:[164..168] Prat) (NNP:[169..171] J.)))
+
+;section 3 Span:175..275
+;Department of Pathology, Hospital Santa Creu i Sant Pau, Autonomous
+;University  of Barcelona, Spain.
+(SEC
+  (FRAG (NNP:[175..185] Department) (IN:[186..188] of)
+        (NNP:[189..198] Pathology) (,:[198..199] ,) (NNP:[200..208] Hospital)
+        (NNP:[209..214] Santa) (NNP:[215..219] Creu) (NNP:[220..221] i)
+        (NNP:[222..226] Sant) (NNP:[227..230] Pau) (,:[230..231] ,)
+        (NNP:[232..242] Autonomous) (NNP:[243..253] University)
+        (IN:[255..257] of) (NNP:[258..267] Barcelona) (,:[267..268] ,)
+        (NNP:[269..274] Spain) (.:[274..275] .)))
+
+;sentence 4 Span:279..365
+;K-ras mutations are known to occur in hyperplasias and carcinomas of the 
+;endometrium.
+;[279..284]:gene-rna:"K-ras"
+;[317..329]...[345..364]:malignancy:"hyperplasias"..."of the  endometrium"
+;[334..364]:malignancy:"carcinomas of the  endometrium"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[279..284] K-ras) (NNS:[285..294] mutations))
+    (VP (VBP:[295..298] are)
+      (VP (VBN:[299..304] known)
+        (S
+          (NP-SBJ-1 (-NONE-:[304..304] *))
+          (VP (TO:[305..307] to)
+            (VP (VB:[308..313] occur)
+              (PP-LOC (IN:[314..316] in)
+                (NP
+                  (NP (NNS:[317..329] hyperplasias) (CC:[330..333] and)
+                      (NNS:[334..344] carcinomas))
+                  (PP (IN:[345..347] of)
+                    (NP (DT:[348..351] the) (NN:[353..364] endometrium))))))))))
+    (.:[364..365] .)))
+
+;sentence 5 Span:366..484
+;No clear correlation has been found yet between K-ras mutations and 
+;microsatellite instability (MI) in these lesions.
+;[414..419]:gene-rna:"K-ras"
+;[476..483]:malignancy:"lesions"
+(SENT
+  (S
+    (NP-SBJ-1 (DT:[366..368] No) (JJ:[369..374] clear)
+              (NN:[375..386] correlation))
+    (VP (VBZ:[387..390] has)
+      (VP (VBN:[391..395] been)
+        (VP (VBN:[396..401] found)
+          (NP-1 (-NONE-:[401..401] *))
+          (ADVP (RB:[402..405] yet))
+          (PP (IN:[406..413] between)
+            (NP
+              (NP (NN:[414..419] K-ras) (NNS:[420..429] mutations))
+              (CC:[430..433] and)
+              (NP
+                (NP (NN:[435..449] microsatellite) (NN:[450..461] instability))
+                (NP (-LRB-:[462..463] -LRB-) (NN:[463..465] MI)
+                    (-RRB-:[465..466] -RRB-)))))
+          (PP-LOC (IN:[467..469] in)
+            (NP (DT:[470..475] these) (NNS:[476..483] lesions))))))
+    (.:[483..484] .)))
+
+;sentence 6 Span:485..703
+;Fifty-eight endometrial  carcinomas (ECs) and 22 endometrial hyperplasias
+;(EHs) were analysed for K-ras  mutation by single-strand conformational
+;polymorphism analysis (SSCP),  restriction analysis, and DNA sequencing.
+;[497..520]:malignancy:"endometrial  carcinomas"
+;[522..525]:malignancy:"ECs"
+;[534..558]:malignancy:"endometrial hyperplasias"
+;[560..563]:malignancy:"EHs"
+;[583..588]:gene-rna:"K-ras"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (CD:[485..496] Fifty-eight)
+        (NML
+          (NML (JJ:[497..508] endometrial) (NNS:[510..520] carcinomas))
+          (NML (-LRB-:[521..522] -LRB-) (NNS:[522..525] ECs)
+               (-RRB-:[525..526] -RRB-))))
+      (CC:[527..530] and)
+      (NP (CD:[531..533] 22)
+        (NML
+          (NML (JJ:[534..545] endometrial) (NNS:[546..558] hyperplasias))
+          (NML (-LRB-:[559..560] -LRB-) (NNS:[560..563] EHs)
+               (-RRB-:[563..564] -RRB-)))))
+    (VP (VBD:[565..569] were)
+      (VP (VBN:[570..578] analysed)
+        (NP-1 (-NONE-:[578..578] *))
+        (PP (IN:[579..582] for)
+          (NP (NN:[583..588] K-ras) (NN:[590..598] mutation)))
+        (PP-MNR (IN:[599..601] by)
+          (NP
+            (NP
+              (NP
+                (NML (JJ:[602..608] single) (HYPH:[608..609] -)
+                     (NN:[609..615] strand))
+                (JJ:[616..630] conformational) (NN:[631..643] polymorphism)
+                 (NN:[644..652] analysis))
+              (NP (-LRB-:[653..654] -LRB-) (NN:[654..658] SSCP)
+                  (-RRB-:[658..659] -RRB-)))
+            (,:[659..660] ,)
+            (NP (NN:[662..673] restriction) (NN:[674..682] analysis))
+            (,:[682..683] ,) (CC:[684..687] and)
+            (NP (NN:[688..691] DNA) (NN:[692..702] sequencing))))))
+    (.:[702..703] .)))
+
+;sentence 7 Span:704..833
+;MI status had been established  previously at five dinucleotide loci and was
+;reconfirmed with markers BAT-25 and  BAT-26 by SSCP.
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[704..706] MI) (NN:[707..713] status))
+    (VP
+      (VP (VBD:[714..717] had)
+        (VP (VBN:[718..722] been)
+          (VP (VBN:[723..734] established)
+            (NP-1 (-NONE-:[734..734] *))
+            (ADVP-TMP (RB:[736..746] previously))
+            (PP-LOC (IN:[747..749] at)
+              (NP (CD:[750..754] five) (NN:[755..767] dinucleotide)
+                  (NNS:[768..772] loci))))))
+      (CC:[773..776] and)
+      (VP (VBD:[777..780] was)
+        (VP (VBN:[781..792] reconfirmed)
+          (NP-1 (-NONE-:[792..792] *))
+          (PP (IN:[793..797] with)
+            (NP
+              (NP
+                (NML-2 (NNS:[798..805] markers))
+                (NN:[806..812] BAT-25))
+              (CC:[813..816] and)
+              (NP
+                (NML-2 (-NONE-:[816..816] *P*))
+                (NN:[818..824] BAT-26))))
+          (PP-MNR (IN:[825..827] by)
+            (NP (NN:[828..832] SSCP))))))
+    (.:[832..833] .)))
+
+;sentence 8 Span:834..882
+;K-ras mutations were detected in 11 ECs (18.9%).
+;[834..839]:gene-rna:"K-ras"
+;[870..873]:malignancy:"ECs"
+(SENT
+  (S
+    (NP-SBJ-1 (NN:[834..839] K-ras) (NNS:[840..849] mutations))
+    (VP (VBD:[850..854] were)
+      (VP (VBN:[855..863] detected)
+        (NP-1 (-NONE-:[863..863] *))
+        (PP-LOC (IN:[864..866] in)
+          (NP (CD:[867..869] 11) (NNS:[870..873] ECs)))
+        (PRN (-LRB-:[874..875] -LRB-)
+          (NP (CD:[875..879] 18.9) (NN:[879..880] %))
+          (-RRB-:[880..881] -RRB-))))
+    (.:[881..882] .)))
+
+;sentence 9 Span:883..928
+;All 11 tumours  were endometrioid carcinomas.
+;[890..897]:malignancy:"tumours"
+;[904..927]:malignancy:"endometrioid carcinomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[883..886] All) (CD:[887..889] 11) (NNS:[890..897] tumours))
+    (VP (VBD:[899..903] were)
+      (NP-PRD (JJ:[904..916] endometrioid) (NNS:[917..927] carcinomas)))
+    (.:[927..928] .)))
+
+;sentence 10 Span:929..1046
+;K-ras mutations were more frequent in MI-positive  (6/14, 42.8%) than in
+;MI-negative tumours (5/44, 11.3%) (p=0.017).
+;[929..934]:gene-rna:"K-ras"
+;[967..978]...[1014..1021]:malignancy:"MI-positive"..."tumours"
+;[1002..1021]:malignancy:"MI-negative tumours"
+(SENT
+  (S
+    (NP-SBJ (NN:[929..934] K-ras) (NNS:[935..944] mutations))
+    (VP (VBD:[945..949] were)
+      (ADJP-PRD
+        (ADJP (RBR:[950..954] more) (JJ:[955..963] frequent))
+        (PP (IN:[964..966] in)
+          (NP (NN:[967..969] MI) (HYPH:[969..970] -) (JJ:[970..978] positive)
+            (PRN (-LRB-:[980..981] -LRB-)
+              (FRAG
+                (NP
+                  (NP (CD:[981..982] 6))
+                  (PP (SYM:[982..983] /)
+                    (NP (CD:[983..985] 14))))
+                (,:[985..986] ,)
+                (NP (CD:[987..991] 42.8) (NN:[991..992] %)))
+              (-RRB-:[992..993] -RRB-))))
+        (PP (IN:[994..998] than)
+          (PP (IN:[999..1001] in)
+            (NP
+              
+              (NML (NN:[1002..1004] MI) (HYPH:[1004..1005] -)
+                   (JJ:[1005..1013] negative))
+              (NNS:[1014..1021] tumours)
+              (PRN (-LRB-:[1022..1023] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (CD:[1023..1024] 5))
+                    (PP (SYM:[1024..1025] /)
+                      (NP (CD:[1025..1027] 44))))
+                  (,:[1027..1028] ,)
+                  (NP (CD:[1029..1033] 11.3) (NN:[1033..1034] %)))
+                (-RRB-:[1034..1035] -RRB-)))))
+        (PRN (-LRB-:[1036..1037] -LRB-)
+          (S
+            (NP-SBJ (NN:[1037..1038] p))
+            (VP (SYM:[1038..1039] =)
+              (NP (CD:[1039..1044] 0.017))))
+          (-RRB-:[1044..1045] -RRB-))))
+    (.:[1045..1046] .)))
+
+;sentence 11 Span:1048..1185
+;Methylation-related transitions were detected in five of the six MI-positive 
+;tumours but in only one of the five MI-negative carcinomas.
+;[1113..1133]:malignancy:"MI-positive  tumours"
+;[1162..1184]:malignancy:"MI-negative carcinomas"
+(SENT
+  (S
+    (NP-SBJ-1
+      (NP (NN:[1048..1059] Methylation) (HYPH:[1059..1060] -)
+          (VBN:[1060..1067] related))
+      (NNS:[1068..1079] transitions))
+    (VP (VBD:[1080..1084] were)
+      (VP (VBN:[1085..1093] detected)
+        (NP-1 (-NONE-:[1093..1093] *))
+        (PP
+          (PP (IN:[1094..1096] in)
+            (NP
+              (NP (CD:[1097..1101] five))
+              (PP (IN:[1102..1104] of)
+                (NP (DT:[1105..1108] the) (CD:[1109..1112] six)
+                  
+                  (NP (NN:[1113..1115] MI) (HYPH:[1115..1116] -)
+                      (JJ:[1116..1124] positive))
+                  (NNS:[1126..1133] tumours)))))
+          (CC:[1134..1137] but)
+          (PP (IN:[1138..1140] in)
+            (NP
+              (NP (RB:[1141..1145] only) (CD:[1146..1149] one))
+              (PP (IN:[1150..1152] of)
+                (NP (DT:[1153..1156] the) (CD:[1157..1161] five)
+                  
+                  (NML (NN:[1162..1164] MI) (HYPH:[1164..1165] -)
+                       (JJ:[1165..1173] negative))
+                  (NNS:[1174..1184] carcinomas))))))))
+    (.:[1184..1185] .)))
+
+;sentence 12 Span:1186..1326
+;K-ras mutation was  identified in only one atypical EH (1/22, 4.5%); in this
+;case, the EH co-existed  with EC and both lesions exhibited MI.
+;[1186..1191]:gene-rna:"K-ras"
+;[1229..1240]:malignancy:"atypical EH"
+;[1273..1275]:malignancy:"EH"
+;[1293..1295]:malignancy:"EC"
+;[1305..1312]:malignancy:"lesions"
+(SENT
+  (S
+    (S
+      (NP-SBJ-1 (NN:[1186..1191] K-ras) (NN:[1192..1200] mutation))
+      (VP (VBD:[1201..1204] was)
+        (VP (VBN:[1206..1216] identified)
+          (NP-1 (-NONE-:[1216..1216] *))
+          (PP-LOC (IN:[1217..1219] in)
+            (NP (RB:[1220..1224] only) (CD:[1225..1228] one)
+               (JJ:[1229..1237] atypical) (NN:[1238..1240] EH)
+              (PRN (-LRB-:[1241..1242] -LRB-)
+                (FRAG
+                  (NP
+                    (NP (CD:[1242..1243] 1))
+                    (PP (SYM:[1243..1244] /)
+                      (NP (CD:[1244..1246] 22))))
+                  (,:[1246..1247] ,)
+                  (NP (CD:[1248..1251] 4.5) (NN:[1251..1252] %)))
+                (-RRB-:[1252..1253] -RRB-)))))))
+    (::[1253..1254] ;)
+    (S
+      (S
+        (PP (IN:[1255..1257] in)
+          (NP (DT:[1258..1262] this) (NN:[1263..1267] case)))
+        (,:[1267..1268] ,)
+        (NP-SBJ (DT:[1269..1272] the) (NN:[1273..1275] EH))
+        (VP (AFX:[1276..1278] co) (HYPH:[1278..1279] -)
+            (VBD:[1279..1286] existed)
+          (PP (IN:[1288..1292] with)
+            (NP (NN:[1293..1295] EC)))))
+      (CC:[1296..1299] and)
+      (S
+        (NP-SBJ (DT:[1300..1304] both) (NNS:[1305..1312] lesions))
+        (VP (VBD:[1313..1322] exhibited)
+          (NP (NN:[1323..1325] MI)))))
+    (.:[1325..1326] .)))
+
+;sentence 13 Span:1327..1444
+;The results support a close relationship  between K-ras mutations and the
+;phenomenon of MI in endometrial carcinomas.
+;[1377..1382]:gene-rna:"K-ras"
+;[1421..1443]:malignancy:"endometrial carcinomas"
+(SENT
+  (S
+    (NP-SBJ (DT:[1327..1330] The) (NNS:[1331..1338] results))
+    (VP (VBP:[1339..1346] support)
+      (NP
+        (NP (DT:[1347..1348] a) (JJ:[1349..1354] close)
+            (NN:[1355..1367] relationship))
+        (PP (IN:[1369..1376] between)
+          (NP
+            (NP
+              (NP (NN:[1377..1382] K-ras) (NNS:[1383..1392] mutations))
+              (CC:[1393..1396] and)
+              (NP
+                (NP (DT:[1397..1400] the) (NN:[1401..1411] phenomenon))
+                (PP (IN:[1412..1414] of)
+                  (NP (NN:[1415..1417] MI)))))
+            (PP-LOC (IN:[1418..1420] in)
+              (NP (JJ:[1421..1432] endometrial) (NNS:[1433..1443] carcinomas)))))))
+    (.:[1443..1444] .)))
+
+;sentence 14 Span:1445..1649
+;The  frequent occurrence of methylation-related transitions in these tumours
+;may  indicate a cause-effect relationship with the altered methylation status
+;which  has been described in association with MI.
+;[1514..1521]:malignancy:"tumours"
+(SENT
+  (S
+    (NP-SBJ
+      (NP (DT:[1445..1448] The) (JJ:[1450..1458] frequent)
+          (NN:[1459..1469] occurrence))
+      (PP (IN:[1470..1472] of)
+        (NP
+          (ADJP (NN:[1473..1484] methylation) (HYPH:[1484..1485] -)
+                (VBN:[1485..1492] related))
+          (NNS:[1493..1504] transitions)))
+      (PP-LOC (IN:[1505..1507] in)
+        (NP (DT:[1508..1513] these) (NNS:[1514..1521] tumours))))
+    (VP (MD:[1522..1525] may)
+      (VP (VB:[1527..1535] indicate)
+        (NP
+          (NP (DT:[1536..1537] a)
+            (NML (NN:[1538..1543] cause) (HYPH:[1543..1544] -)
+                 (NN:[1544..1550] effect))
+            (NN:[1551..1563] relationship))
+          (PP (IN:[1564..1568] with)
+            (NP
+              (NP (DT:[1569..1572] the) (VBN:[1573..1580] altered)
+                  (NN:[1581..1592] methylation) (NN:[1593..1599] status))
+              (SBAR
+                (WHNP-1 (WDT:[1600..1605] which))
+                (S
+                  (NP-SBJ-1 (-NONE-:[1605..1605] *T*))
+                  (VP (VBZ:[1607..1610] has)
+                    (VP (VBN:[1611..1615] been)
+                      (VP (VBN:[1616..1625] described)
+                        (NP-1 (-NONE-:[1625..1625] *))
+                        (PP (IN:[1626..1628] in)
+                          (NP
+                            (NP (NN:[1629..1640] association))
+                            (PP (IN:[1641..1645] with)
+                              (NP (NN:[1646..1648] MI)))))))))))))))
+    (.:[1648..1649] .)))
+
+;section 15 Span:1653..1698
+;PMID: 11180166 [PubMed - indexed for MEDLINE]
+(SEC
+  (FRAG (NNP:[1653..1657] PMID) (::[1657..1658] :) (CD:[1659..1667] 11180166)
+        (-LRB-:[1668..1669] -LSB-) (NNP:[1669..1675] PubMed)
+        (HYPH:[1676..1677] -) (JJ:[1678..1685] indexed) (IN:[1686..1689] for)
+        (NNP:[1690..1697] MEDLINE) (-RRB-:[1697..1698] -RSB-)))
