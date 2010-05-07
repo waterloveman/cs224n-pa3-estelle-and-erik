@@ -247,7 +247,7 @@ public class PCFGParserTester {
         System.out.println();
       }
     }
-
+  }
   // BaselineParser =============================================================
 
   /**
