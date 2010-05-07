@@ -109,8 +109,19 @@ public class PCFGParserTester {
       }
       nonterminals = new ArrayList<String>(allNonterminals);
       Collections.sort(nonterminals);
-      // nonterminals.remove("NP");
-      // nonterminals.add(0, "NP");
+
+      HashSet<BinaryRule> binaryRules = new HashSet<BinaryRule>();
+      for (List<BinaryRule> rules : grammar.binaryRulesByLeftChild.values()) {
+        for (BinaryRule rule : rules) {
+          binaryRules.add(rule);
+        }
+      }
+      HashSet<UnaryRule> unaryRules = new HashSet<UnaryRule>();
+      for (List<UnaryRule> rules : grammar.unaryRulesByChild.values()) {
+        for (UnaryRule rule : rules) {
+          unaryRules.add(rule);
+        }
+      }
 
       int nNonterminals = nonterminals.size();
       int nWords = words.size();
@@ -120,7 +131,6 @@ public class PCFGParserTester {
 
       // First loop - fill in the diagonal
       for (int i = 0; i < nWords; i++) { // For each word in the sentence
-        System.out.println("i=" + i);
         // Get the probability of each nonterminal generating that word
         for (int A = 0; A < nonterminals.size(); A++) {
           score[i][i + 1][A] =
@@ -130,17 +140,15 @@ public class PCFGParserTester {
         boolean added = true;
         while (added) {
           added = false;
-          // Check each pair of nonterminals
-          for (int A = 0; A < nonterminals.size(); A++) {
-            for (int B = 0; B < nonterminals.size(); B++) {
-              double p = P(nonterminals.get(A), nonterminals.get(B));
-              if (score[i][i + 1][B] > 0 && p > 0) {
-                double prob = p * score[i][i + 1][B];
-                if (prob > score[i][i + 1][A]) {
-                  score[i][i + 1][A] = prob;
-                  back[i][i + 1][A] = new int[] {B};
-                  added = true;
-                }
+          for (UnaryRule rule : unaryRules) {
+            int A = Collections.binarySearch(nonterminals, rule.parent);
+            int B = Collections.binarySearch(nonterminals, rule.child);
+            if (score[i][i + 1][B] > 0 && rule.score > 0) {
+              double prob = rule.score * score[i][i + 1][B];
+              if (prob > score[i][i + 1][A]) {
+                score[i][i + 1][A] = prob;
+                back[i][i + 1][A] = new int[] {B};
+                added = true;
               }
             }
           }
@@ -151,46 +159,33 @@ public class PCFGParserTester {
 
       // Second loop, run DP
       for (int span = 2; span <= nWords; span++) {
-        System.out.println("span=" + span);
         for (int begin = 0; begin <= nWords - span; begin++) {
           int end = begin + span;
           for (int split = begin + 1; split < end; split++) {
-            System.out.println("split=" + split);
             // Handle binaries
-            int i = 0;
-            for (int A = 0; A < nNonterminals; A++) {
-              for (int B = 0; B < nNonterminals; B++) {
-                for (int C = 0; C < nNonterminals; C++) {
-                  System.out.printf("%d/%d%n", i++, nNonterminals
-                                                     * nNonterminals
-                                                     * nNonterminals);
-                  double prob =
-                      score[begin][split][B]
-                          * score[split][end][C]
-                          * P(nonterminals.get(A),
-                              nonterminals.get(B),
-                              nonterminals.get(C));
-                  if (prob > score[begin][end][A]) {
-                    score[begin][end][A] = prob;
-                    back[begin][end][A] = new int[] {split, B, C};
-                  }
-                }
+            for (BinaryRule rule : binaryRules) {
+              int A = Collections.binarySearch(nonterminals, rule.parent);
+              int B = Collections.binarySearch(nonterminals, rule.leftChild);
+              int C = Collections.binarySearch(nonterminals, rule.rightChild);
+              double prob =
+                  score[begin][split][B] * score[split][end][C] * rule.score;
+              if (prob > score[begin][end][A]) {
+                score[begin][end][A] = prob;
+                back[begin][end][A] = new int[] {split, B, C};
               }
             }
             // Handle unaries
             boolean added = true;
             while (added) {
               added = false;
-              for (int A = 0; A < nNonterminals; A++) {
-                for (int B = 0; B < nNonterminals; B++) {
-                  double prob =
-                      P(nonterminals.get(A), nonterminals.get(B))
-                          * score[begin][end][B];
-                  if (prob > score[begin][end][A]) {
-                    score[begin][end][A] = prob;
-                    back[begin][end][A] = new int[] {B};
-                    added = true;
-                  }
+              for (UnaryRule rule : unaryRules) {
+                int A = Collections.binarySearch(nonterminals, rule.parent);
+                int B = Collections.binarySearch(nonterminals, rule.child);
+                double prob = rule.score * score[begin][end][B];
+                if (prob > score[begin][end][A]) {
+                  score[begin][end][A] = prob;
+                  back[begin][end][A] = new int[] {B};
+                  added = true;
                 }
               }
             }
@@ -230,7 +225,7 @@ public class PCFGParserTester {
         return new Tree<String>(label, children);
       } else if (triple.length == 0) {
         if (start != end - 1) {
-          throw new AssertionError();
+          throw new AssertionError(nonterminal + " " + start + " " + end);
         }
         Tree<String> child = new Tree<String>(words.get(start));
         children.add(child);
@@ -247,32 +242,11 @@ public class PCFGParserTester {
           for (int k = 1; k < score[i][j].length; k++) {
             max = Math.max(max, score[i][j][k]);
           }
-          System.out.printf("%.6f ", max);
+          System.out.printf("%.2e ", max);
         }
         System.out.println();
       }
     }
-
-    private double P(String parent, String child) {
-      List<UnaryRule> rules = grammar.getUnaryRulesByChild(child);
-      for (UnaryRule rule : rules) {
-        if (rule.parent.equals(parent)) {
-          return rule.score;
-        }
-      }
-      return 0;
-    }
-
-    private double P(String parent, String lchild, String rchild) {
-      List<BinaryRule> rules = grammar.getBinaryRulesByLeftChild(lchild);
-      for (BinaryRule rule : rules) {
-        if (rule.parent.equals(parent) && rule.rightChild.equals(rchild)) {
-          return rule.score;
-        }
-      }
-      return 0;
-    }
-  }
 
   // BaselineParser =============================================================
 
