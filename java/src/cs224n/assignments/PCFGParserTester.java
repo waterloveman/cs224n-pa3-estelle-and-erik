@@ -18,6 +18,7 @@ import cs224n.io.GENIATreebankReader;
 import cs224n.io.PennTreebankReader;
 import cs224n.ling.Tree;
 import cs224n.ling.Trees;
+import cs224n.ling.Trees.PennTreeRenderer;
 import cs224n.parser.EnglishPennTreebankParseEvaluator;
 import cs224n.util.CollectionUtils;
 import cs224n.util.CommandLineUtils;
@@ -55,10 +56,13 @@ public class PCFGParserTester {
     private Grammar grammar;
     private Lexicon lexicon;
     private CounterMap<String, String> pTagToWord;
+    private double[][][] score;
+    private int[][][][] back;
+    private ArrayList<String> nonterminals;
+    private ArrayList<String> words;
 
     public void train(List<Tree<String>> trainTrees) {
       List<Tree<String>> binarizedTrees = new LinkedList<Tree<String>>();
-      System.out.println(trainTrees);
       for (Tree<String> tree : trainTrees) {
         Tree<String> binarized = TreeAnnotations.annotateTree(tree);
         binarizedTrees.add(binarized);
@@ -82,11 +86,13 @@ public class PCFGParserTester {
     }
 
     public Tree<String> getBestParse(List<String> sentence) {
-      cky(new ArrayList<String>(sentence));
-      return null;
+      Tree<String> result = cky(new ArrayList<String>(sentence));
+      System.out.println(PennTreeRenderer.render(result));
+      return TreeAnnotations.unAnnotateTree(result);
     }
 
-    private void cky(ArrayList<String> words) {
+    private Tree<String> cky(ArrayList<String> words) {
+      this.words = words;
       Set<String> allNonterminals = new HashSet<String>();
       for (List<BinaryRule> rules : grammar.binaryRulesByLeftChild.values()) {
         for (BinaryRule rule : rules) {
@@ -101,66 +107,79 @@ public class PCFGParserTester {
           allNonterminals.add(rule.child);
         }
       }
-      ArrayList<String> nonterminals = new ArrayList<String>(allNonterminals);
+      nonterminals = new ArrayList<String>(allNonterminals);
+      Collections.sort(nonterminals);
+      // nonterminals.remove("NP");
+      // nonterminals.add(0, "NP");
 
       int nNonterminals = nonterminals.size();
       int nWords = words.size();
 
-      double[][][] score = new double[nWords + 1][nWords + 1][nNonterminals];
-      int[][][] back = new int[nWords + 1][nWords + 1][nNonterminals];
+      score = new double[nWords + 1][nWords + 1][nNonterminals];
+      back = new int[nWords + 1][nWords + 1][nNonterminals][0];
 
       // First loop - fill in the diagonal
       for (int i = 0; i < nWords; i++) { // For each word in the sentence
+        System.out.println("i=" + i);
         // Get the probability of each nonterminal generating that word
         for (int A = 0; A < nonterminals.size(); A++) {
           score[i][i + 1][A] =
               pTagToWord.getCount(nonterminals.get(A), words.get(i));
         }
         // Handle unaries
-        boolean added;
-        do {
+        boolean added = true;
+        while (added) {
           added = false;
           // Check each pair of nonterminals
           for (int A = 0; A < nonterminals.size(); A++) {
             for (int B = 0; B < nonterminals.size(); B++) {
               double p = P(nonterminals.get(A), nonterminals.get(B));
-              if (score[i][i + 1][B] > 0 &&  p > 0) {
+              if (score[i][i + 1][B] > 0 && p > 0) {
                 double prob = p * score[i][i + 1][B];
                 if (prob > score[i][i + 1][A]) {
                   score[i][i + 1][A] = prob;
-                  back[i][i + 1][A] = B;
+                  back[i][i + 1][A] = new int[] {B};
                   added = true;
                 }
               }
             }
           }
-        } while (added);
+        }
       }
+
+      System.out.println("Done with initialization");
 
       // Second loop, run DP
       for (int span = 2; span <= nWords; span++) {
+        System.out.println("span=" + span);
         for (int begin = 0; begin <= nWords - span; begin++) {
           int end = begin + span;
           for (int split = begin + 1; split < end; split++) {
+            System.out.println("split=" + split);
             // Handle binaries
+            int i = 0;
             for (int A = 0; A < nNonterminals; A++) {
               for (int B = 0; B < nNonterminals; B++) {
                 for (int C = 0; C < nNonterminals; C++) {
+                  System.out.printf("%d/%d%n", i++, nNonterminals
+                                                     * nNonterminals
+                                                     * nNonterminals);
                   double prob =
-                      score[begin][split][B] * score[split][end][C]
+                      score[begin][split][B]
+                          * score[split][end][C]
                           * P(nonterminals.get(A),
                               nonterminals.get(B),
                               nonterminals.get(C));
                   if (prob > score[begin][end][A]) {
                     score[begin][end][A] = prob;
-                    back[begin][end][A] = 0 /*new Triple(split, B, C)*/;
+                    back[begin][end][A] = new int[] {split, B, C};
                   }
                 }
               }
             }
             // Handle unaries
-            boolean added;
-            do {
+            boolean added = true;
+            while (added) {
               added = false;
               for (int A = 0; A < nNonterminals; A++) {
                 for (int B = 0; B < nNonterminals; B++) {
@@ -169,17 +188,56 @@ public class PCFGParserTester {
                           * score[begin][end][B];
                   if (prob > score[begin][end][A]) {
                     score[begin][end][A] = prob;
-                    back[begin][end][A] = B;
+                    back[begin][end][A] = new int[] {B};
                     added = true;
                   }
                 }
               }
-            } while (added);
+            }
           }
         }
       }
 
       renderScores(score);
+
+      // Build tree
+      double max = score[0][nWords][0];
+      int maxi = 0;
+      for (int A = 1; A < nNonterminals; A++) {
+        if (score[0][nWords][A] > max) {
+          max = score[0][nWords][A];
+          maxi = A;
+        }
+      }
+      return buildTree(maxi, 0, nWords);
+    }
+
+    private Tree<String> buildTree(int nonterminal, int start, int end) {
+      int[] triple = back[start][end][nonterminal];
+      String label = nonterminals.get(nonterminal);
+      List<Tree<String>> children = new ArrayList<Tree<String>>();
+
+      if (triple.length == 3) {
+        int split = triple[0];
+        Tree<String> leftChild = buildTree(triple[1], start, split);
+        Tree<String> rightChild = buildTree(triple[2], split, end);
+        children.add(leftChild);
+        children.add(rightChild);
+        return new Tree<String>(label, children);
+      } else if (triple.length == 1) {
+        Tree<String> child = buildTree(triple[0], start, end);
+        children.add(child);
+        return new Tree<String>(label, children);
+      } else if (triple.length == 0) {
+        if (start != end - 1) {
+          throw new AssertionError();
+        }
+        Tree<String> child = new Tree<String>(words.get(start));
+        children.add(child);
+        return new Tree<String>(label, children);
+      } else {
+        throw new AssertionError();
+      }
     }
 
     private void renderScores(double[][][] score) {
@@ -736,9 +794,10 @@ public class PCFGParserTester {
       new EnglishPennTreebankParseEvaluator.LabeledConstituentEval<String>
       (Collections.singleton("ROOT"),
        new HashSet<String>(Arrays.asList(new String[] {"''", "``", ".", ":", ","})));
+    int i = 0;
     for (Tree<String> testTree : testTrees) {
+      System.out.printf("%d/%d%n", i++, testTrees.size());
       List<String> testSentence = testTree.getYield();
-
       if (nerClassifier != null) {
         System.err.println(testTree);
         System.err.println("test sentence: "+testSentence);
@@ -752,6 +811,7 @@ public class PCFGParserTester {
 
       if (testSentence.size() > MAX_LENGTH)
         continue;
+      System.out.println(testSentence);
       Tree<String> guessedTree = parser.getBestParse(testSentence);
       System.out.println("Guess:\n"+Trees.PennTreeRenderer.render(guessedTree));
       System.out.println("Gold:\n"+Trees.PennTreeRenderer.render(testTree));
