@@ -62,7 +62,6 @@ public class PCFGParserTester {
       for (Tree<String> tree : trainTrees) {
         Tree<String> binarized = TreeAnnotations.annotateTree(tree);
         binarizedTrees.add(binarized);
-        System.out.println(Trees.PennTreeRenderer.render(binarized));
       }
       lexicon = new Lexicon(binarizedTrees);
       grammar = new Grammar(binarizedTrees);
@@ -110,7 +109,7 @@ public class PCFGParserTester {
       double[][][] score = new double[nWords + 1][nWords + 1][nNonterminals];
       int[][][] back = new int[nWords + 1][nWords + 1][nNonterminals];
 
-      // First loop - fill in the diagonal?
+      // First loop - fill in the diagonal
       for (int i = 0; i < nWords; i++) { // For each word in the sentence
         // Get the probability of each nonterminal generating that word
         for (int A = 0; A < nonterminals.size(); A++) {
@@ -139,10 +138,10 @@ public class PCFGParserTester {
       }
 
       // Second loop, run DP
-      for (int span = 2; span < nWords; span++) {
-        for (int begin = 0; begin < nWords - span; begin++) {
+      for (int span = 2; span <= nWords; span++) {
+        for (int begin = 0; begin <= nWords - span; begin++) {
           int end = begin + span;
-          for (int split = begin + 1; split < end - 1; split++) {
+          for (int split = begin + 1; split < end; split++) {
             // Handle binaries
             for (int A = 0; A < nNonterminals; A++) {
               for (int B = 0; B < nNonterminals; B++) {
@@ -181,18 +180,16 @@ public class PCFGParserTester {
       }
 
       renderScores(score);
-      System.out.println(nonterminals);
-      // System.out.println(Arrays.deepToString(score));
     }
 
     private void renderScores(double[][][] score) {
       for (int i = 0; i < score.length; i++) {
         for (int j = 0; j < score[i].length; j++) {
           double max = score[i][j][0];
-          for (int k = 1; k < score[j].length; k++) {
+          for (int k = 1; k < score[i][j].length; k++) {
             max = Math.max(max, score[i][j][k]);
           }
-          System.out.printf("%.2f ", max);
+          System.out.printf("%.6f ", max);
         }
         System.out.println();
       }
