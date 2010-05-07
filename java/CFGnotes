@@ -1,0 +1,50 @@
+Baseline: dumb smoothing, disallow @->terminal, max length 15
+ [Average]    P: 76.47   R: 65.73   F1: 70.69   EX:  4.76 
+
+Let's try smarter smoothing.
+ F1: 70.80
+
+What if we make delta larger?
+ dumb smooth: 77.44
+ smart smooth: 69.03
+
+There are a lot of errors mapping words to punctuation. Lets say punctuation
+tags can only match to the corresponding word
+ [Average]    P: 83.66   R: 71.91   F1: 77.34   EX:  4.76 
+
+In the training data, it's only possible for sentences to be rooted as
+sentences, fragments, or NPs. Let's force it.
+ [Average]    P: 81.61   R: 79.78   F1: 80.68   EX: 28.57 
+
+Now we assign too many things to SQ. What happens if we strictly force it to
+S. This might be overfitting.
+ [Average]    P: 85.14   R: 83.71   F1: 84.42   EX: 38.10 
+ 
+But we can be smarter about this. Multiply the probability of the entire tree
+by the probability of ROOT going to the root of that tree.
+ [Average]    P: 84.39   R: 82.02   F1: 83.19   EX: 38.10 
+
+It's a little worse, but maybe we're just overfit to out training data. Let's
+try on bioie:
+general:     [Average]    P: 83.55   R: 80.04   F1: 81.76   EX: 42.19 
+specialized: [Average]    P: 81.44   R: 66.39   F1: 73.15   EX:  0.00 
+
+We're still using dumb smoothing, but let's see if it makes any sense to at
+least normalize the probabilities so they sum to 1.
+ [Average]    P: 83.24   R: 80.90   F1: 82.05   EX: 33.33
+ 
+Time to try second-order vertical markovization.
+ [Average]    P: 84.21   R: 89.89   F1: 86.96   EX: 42.86 
+
+But we have to fix up our handling of puntuation now. Turns out that 
+special-casing punctuation doesn't help when we have markovization.
+ [Average]    P: 84.21   R: 89.89   F1: 86.96   EX: 42.86 
+
+Let's see if it's the same with bioie:
+specialized: [Average]    P: 82.27   R: 86.76   F1: 84.46   EX: 50.00 
+generalized: [Average]    P: 82.27   R: 86.76   F1: 84.46   EX: 50.00 
+Yep. Should probably stick with the generalized version, then.
+
+What happens if we markovize before we binarize?
+ [Average]    P: 87.71   R: 88.20   F1: 87.96   EX: 42.86 
+
