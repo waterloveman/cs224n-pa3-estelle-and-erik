@@ -53,6 +53,8 @@ public class PCFGParserTester {
    */
   public static class PCFGParser implements Parser {
 
+    private static final double DELTA = .00000000001;
+
     private Grammar grammar;
     private Lexicon lexicon;
     private CounterMap<String, String> pTagToWord;
@@ -61,34 +63,72 @@ public class PCFGParserTester {
     private ArrayList<String> nonterminals;
     private ArrayList<String> words;
 
+    private Counter<String> tagUnknownProb;
+
+
     public void train(List<Tree<String>> trainTrees) {
       List<Tree<String>> binarizedTrees = new LinkedList<Tree<String>>();
       for (Tree<String> tree : trainTrees) {
+        markovize(tree);
         Tree<String> binarized = TreeAnnotations.annotateTree(tree);
+        //markovize(binarized);
         binarizedTrees.add(binarized);
+        //System.out.println(PennTreeRenderer.render(binarized));
       }
       lexicon = new Lexicon(binarizedTrees);
       grammar = new Grammar(binarizedTrees);
 
-      pTagToWord = new CounterMap<String, String>();
+      // Count tags to words
+      CounterMap<String, String> countTagToWord =
+          new CounterMap<String, String>();
       for (String word : lexicon.wordToTagCounters.keySet()) {
         for (String tag : lexicon.wordToTagCounters.getCounter(word).keySet()) {
-          pTagToWord.incrementCount(tag, word, 1);
+          countTagToWord.incrementCount(tag, word, 1);
         }
       }
-      for (String tag : pTagToWord.keySet()) {
-        double total = pTagToWord.getCounter(tag).totalCount();
-        for (String word : pTagToWord.getCounter(tag).keySet()) {
-          double oldCount = pTagToWord.getCount(tag, word);
-          pTagToWord.setCount(tag, word, oldCount / total);
+
+      // Normalize
+      pTagToWord = new CounterMap<String, String>();
+      tagUnknownProb = new Counter<String>();
+      for (String tag : countTagToWord.keySet()) {
+        Counter<String> countWord = countTagToWord.getCounter(tag);
+        double total = countWord.totalCount()/* + DELTA * (countWord.size() + 1)*/;
+        for (String word : countWord.keySet()) {
+          double oldCount = countTagToWord.getCount(tag, word)/* + DELTA*/;
+          double prob = oldCount / total;
+          pTagToWord.setCount(tag, word, prob);
+        }
+        // tagUnknownProb.setCount(tag, DELTA / total);
+        tagUnknownProb.setCount(tag, DELTA);
+      }
+    }
+
+    private void markovize(Tree<String> tree) {
+      String parentLabel = tree.getLabel();
+      for (Tree<String> child : tree.getChildren()) {
+        if (!child.isLeaf()) {
+          markovize(child);
+          child.setLabel(child.getLabel() + "^" + parentLabel);
         }
       }
     }
 
+    private void unmarkovize(Tree<String> tree) {
+      for (Tree<String> child : tree.getChildren()) {
+        child.setLabel(child.getLabel().split("\\^", 2)[0]);
+        unmarkovize(child);
+      }
+    }
+
     public Tree<String> getBestParse(List<String> sentence) {
-      Tree<String> result = cky(new ArrayList<String>(sentence));
-      System.out.println(PennTreeRenderer.render(result));
-      return TreeAnnotations.unAnnotateTree(result);
+      Tree<String> tree = new Tree<String>("ROOT");
+      ArrayList<Tree<String>> children = new ArrayList<Tree<String>>();
+      children.add(cky(new ArrayList<String>(sentence)));
+      tree.setChildren(children);
+      System.out.println(PennTreeRenderer.render(tree));
+      Tree<String> unannotated = TreeAnnotations.unAnnotateTree(tree);
+      unmarkovize(unannotated);
+      return unannotated;
     }
 
     private Tree<String> cky(ArrayList<String> words) {
@@ -133,8 +173,18 @@ public class PCFGParserTester {
       for (int i = 0; i < nWords; i++) { // For each word in the sentence
         // Get the probability of each nonterminal generating that word
         for (int A = 0; A < nonterminals.size(); A++) {
-          score[i][i + 1][A] =
-              pTagToWord.getCount(nonterminals.get(A), words.get(i));
+          String nonterminal = nonterminals.get(A);
+          if (nonterminal.startsWith("@")) {
+            score[i][i + 1][A] = 0;
+            continue;
+          }
+          double prob = pTagToWord.getCount(nonterminal, words.get(i));
+          if (prob == 0) {
+            score[i][i + 1][A] =
+                tagUnknownProb.getCount(nonterminal) / (1 + DELTA);
+          } else {
+            score[i][i + 1][A] = prob / (1 + DELTA);
+          }
         }
         // Handle unaries
         boolean added = true;
@@ -154,8 +204,6 @@ public class PCFGParserTester {
           }
         }
       }
-
-      System.out.println("Done with initialization");
 
       // Second loop, run DP
       for (int span = 2; span <= nWords; span++) {
@@ -193,14 +241,26 @@ public class PCFGParserTester {
         }
       }
 
-      renderScores(score);
+      // renderScores(score);
 
       // Build tree
       double max = score[0][nWords][0];
       int maxi = 0;
       for (int A = 1; A < nNonterminals; A++) {
-        if (score[0][nWords][A] > max) {
-          max = score[0][nWords][A];
+        List<UnaryRule> rules =
+            grammar.unaryRulesByChild.get(nonterminals.get(A));
+        double rootProb = 0;
+        if (rules != null) {
+          for (UnaryRule rule : rules) {
+            if (rule.parent.equals("ROOT")) {
+              rootProb = rule.score;
+              break;
+            }
+            }
+          }
+        double prob = score[0][nWords][A] * rootProb;
+        if (prob > max) {
+          max = prob;
           maxi = A;
         }
       }
