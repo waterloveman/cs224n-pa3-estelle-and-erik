@@ -1,0 +1,408 @@
+Baseline:
+processed 69051 tokens with 7119 phrases; found: 4173 phrases; correct: 2281.
+accuracy:  83.72%; precision:  54.66%; recall:  32.04%; FB1:  40.40
+              DNA: precision:  35.59%; recall:  11.65%; FB1:  17.56  458
+              RNA: precision:   9.23%; recall:   4.58%; FB1:   6.12  65
+        cell_line: precision:  75.00%; recall:  16.48%; FB1:  27.02  116
+        cell_type: precision:  45.15%; recall:  47.76%; FB1:  46.42  970
+          protein: precision:  61.90%; recall:  38.30%; FB1:  47.32  2564
+
+I made a script to only look at errors. Looks like a lot of things to identify
+have numbers. 
+
+XAdd a feature for contains digit? Nope, that hurts it:
+Xaccuracy:  83.08%; precision:  51.73%; recall:  32.70%; FB1:  40.07
+X              DNA: precision:  30.72%; recall:   7.29%; FB1:  11.79  332
+X              RNA: precision:   9.72%; recall:   5.34%; FB1:   6.90  72
+X        cell_line: precision:  71.54%; recall:  16.67%; FB1:  27.04  123
+X        cell_type: precision:  38.37%; recall:  40.46%; FB1:  39.38  967
+X          protein: precision:  58.55%; recall:  42.47%; FB1:  49.23  3006
+          
+Let's just try adding the previous word. That helps:
+accuracy:  83.59%; precision:  68.25%; recall:  31.41%; FB1:  43.02
+              DNA: precision:  53.68%; recall:  14.08%; FB1:  22.31  367
+              RNA: precision:  26.32%; recall:   3.82%; FB1:   6.67  19
+        cell_line: precision:  82.47%; recall:  15.15%; FB1:  25.60  97
+        cell_type: precision:  61.22%; recall:  43.73%; FB1:  51.02  655
+          protein: precision:  72.64%; recall:  37.48%; FB1:  49.44  2138
+
+Does the word contain a dash? helps:
+accuracy:  84.02%; precision:  63.31%; recall:  34.93%; FB1:  45.03
+              DNA: precision:  57.39%; recall:  16.65%; FB1:  25.82  406
+              RNA: precision:  29.41%; recall:   3.82%; FB1:   6.76  17
+        cell_line: precision:  85.87%; recall:  14.96%; FB1:  25.48  92
+        cell_type: precision:  58.71%; recall:  40.79%; FB1:  48.13  637
+          protein: precision:  64.70%; recall:  43.34%; FB1:  51.91  2776
+
+How about an upper-case letter? good:
+accuracy:  84.57%; precision:  60.70%; recall:  44.54%; FB1:  51.38
+              DNA: precision:  51.13%; recall:  19.37%; FB1:  28.10  530
+              RNA: precision:  31.58%; recall:   4.58%; FB1:   8.00  19
+        cell_line: precision:  57.08%; recall:  24.43%; FB1:  34.22  226
+        cell_type: precision:  57.74%; recall:  43.95%; FB1:  49.91  698
+          protein: precision:  62.97%; recall:  57.00%; FB1:  59.84  3751
+
+Xwhat about all upper-case letters? Same as looking for a lower-case letter. Nope, that hurts:
+Xaccuracy:  84.08%; precision:  59.43%; recall:  41.86%; FB1:  49.12
+X              DNA: precision:  54.96%; recall:  15.44%; FB1:  24.11  393
+X              RNA: precision:  28.00%; recall:   5.34%; FB1:   8.97  25
+X        cell_line: precision:  53.85%; recall:  25.19%; FB1:  34.32  247
+X        cell_type: precision:  59.71%; recall:  35.55%; FB1:  44.57  546
+X          protein: precision:  60.43%; recall:  55.45%; FB1:  57.83  3803
+
+Let's try digit again? Odd, now it helps:
+accuracy:  84.73%; precision:  60.83%; recall:  45.17%; FB1:  51.85
+              DNA: precision:  53.86%; recall:  19.94%; FB1:  29.11  518
+              RNA: precision:  16.28%; recall:   5.34%; FB1:   8.05  43
+        cell_line: precision:  60.87%; recall:  23.86%; FB1:  34.29  207
+        cell_type: precision:  61.83%; recall:  45.04%; FB1:  52.11  668
+          protein: precision:  62.09%; recall:  57.70%; FB1:  59.81  3851
+
+XTime for some bio terms. Does it contain alpha or beta? That hurts:
+Xaccuracy:  84.83%; precision:  62.84%; recall:  43.97%; FB1:  51.74
+X              DNA: precision:  52.69%; recall:  21.73%; FB1:  30.77  577
+X              RNA: precision:  25.93%; recall:   5.34%; FB1:   8.86  27
+X        cell_line: precision:  69.82%; recall:  22.35%; FB1:  33.86  169
+X        cell_type: precision:  60.03%; recall:  44.38%; FB1:  51.03  678
+X          protein: precision:  64.99%; recall:  55.36%; FB1:  59.79  3530
+
+XWhat about words ending in 'ase'? Nope:
+Xaccuracy:  84.73%; precision:  60.30%; recall:  45.23%; FB1:  51.69
+X              DNA: precision:  49.73%; recall:  20.01%; FB1:  28.54  563
+X              RNA: precision:  31.58%; recall:   4.58%; FB1:   8.00  19
+X        cell_line: precision:  65.10%; recall:  23.67%; FB1:  34.72  192
+X        cell_type: precision:  57.01%; recall:  45.69%; FB1:  50.73  735
+X          protein: precision:  62.39%; recall:  57.67%; FB1:  59.94  3831
+
+XOkay, what about ending in 'NA'? No again, lets give up on these:
+Xaccuracy:  84.77%; precision:  63.92%; recall:  43.38%; FB1:  51.68
+X              DNA: precision:  52.35%; recall:  25.45%; FB1:  34.25  680
+X              RNA: precision:  44.44%; recall:   3.05%; FB1:   5.71  9
+X        cell_line: precision:  66.67%; recall:  22.35%; FB1:  33.48  177
+X        cell_type: precision:  60.33%; recall:  44.27%; FB1:  51.07  673
+X          protein: precision:  66.95%; recall:  53.19%; FB1:  59.28  3292
+
+How about suffixes in general? with length 3, that's much better:
+accuracy:  86.04%; precision:  63.23%; recall:  50.89%; FB1:  56.39
+              DNA: precision:  53.53%; recall:  32.52%; FB1:  40.46  850
+              RNA: precision:  23.08%; recall:   2.29%; FB1:   4.17  13
+        cell_line: precision:  67.69%; recall:  25.00%; FB1:  36.51  195
+        cell_type: precision:  58.08%; recall:  48.20%; FB1:  52.68  761
+          protein: precision:  66.25%; recall:  62.52%; FB1:  64.33  3911
+
+That worked, let's do 2 and 4 also. It helps a bit:
+accuracy:  86.17%; precision:  64.30%; recall:  50.88%; FB1:  56.81
+              DNA: precision:  52.91%; recall:  31.81%; FB1:  39.73  841
+              RNA: precision:  41.67%; recall:   3.82%; FB1:   6.99  12
+        cell_line: precision:  68.69%; recall:  27.84%; FB1:  39.62  214
+        cell_type: precision:  59.87%; recall:  49.95%; FB1:  54.46  765
+          protein: precision:  67.53%; recall:  61.94%; FB1:  64.62  3801
+
+Now prefixes too? that's good:
+accuracy:  86.77%; precision:  66.65%; recall:  52.58%; FB1:  58.78
+              DNA: precision:  56.54%; recall:  25.66%; FB1:  35.30  635
+              RNA: precision:  50.00%; recall:   3.82%; FB1:   7.09  10
+        cell_line: precision:  79.23%; recall:  27.46%; FB1:  40.79  183
+        cell_type: precision:  63.06%; recall:  52.13%; FB1:  57.07  758
+          protein: precision:  68.39%; recall:  66.51%; FB1:  67.43  4030
+
+Taking another look at the data. Maybe just searching "cell" would be useful. Yep:
+accuracy:  86.93%; precision:  65.91%; recall:  53.98%; FB1:  59.35
+              DNA: precision:  52.95%; recall:  30.16%; FB1:  38.43  797
+              RNA: precision:  30.00%; recall:   4.58%; FB1:   7.95  20
+        cell_line: precision:  78.14%; recall:  27.08%; FB1:  40.23  183
+        cell_type: precision:  60.07%; recall:  54.31%; FB1:  57.04  829
+          protein: precision:  69.32%; recall:  66.94%; FB1:  68.11  4002
+
+Biologists like their x's. Lets have a feature just for that:
+accuracy:  86.97%; precision:  67.21%; recall:  53.48%; FB1:  59.56
+              DNA: precision:  56.61%; recall:  29.09%; FB1:  38.43  719
+              RNA: precision:  42.86%; recall:   2.29%; FB1:   4.35  7
+        cell_line: precision:  78.72%; recall:  28.03%; FB1:  41.34  188
+        cell_type: precision:  62.32%; recall:  52.67%; FB1:  57.09  775
+          protein: precision:  69.58%; recall:  66.75%; FB1:  68.14  3975
+          
+XSeems like a lot of words end in l, but that doesn't help:
+Xaccuracy:  86.72%; precision:  64.94%; recall:  53.39%; FB1:  58.60
+X              DNA: precision:  55.23%; recall:  30.95%; FB1:  39.67  784
+X              RNA: precision:  42.86%; recall:   4.58%; FB1:   8.28  14
+X        cell_line: precision:  75.12%; recall:  28.60%; FB1:  41.43  201
+X        cell_type: precision:  60.24%; recall:  49.73%; FB1:  54.48  757
+X          protein: precision:  67.24%; recall:  66.48%; FB1:  66.86  4097
+
+Let's add an extra word of lookback? Yeah, that helps:
+accuracy:  87.36%; precision:  65.99%; recall:  56.26%; FB1:  60.74
+              DNA: precision:  55.52%; recall:  34.88%; FB1:  42.84  879
+              RNA: precision:  40.00%; recall:   4.58%; FB1:   8.22  15
+        cell_line: precision:  68.11%; recall:  32.77%; FB1:  44.25  254
+        cell_type: precision:  60.00%; recall:  56.92%; FB1:  58.42  870
+          protein: precision:  69.51%; recall:  67.95%; FB1:  68.72  4051
+
+XAccuracy still sucks for RNA, maybe we can add a feature that just looks for
+X'RNA'. Doesn't work, RNA class is too small:
+Xaccuracy:  87.37%; precision:  67.12%; recall:  55.32%; FB1:  60.65
+X              DNA: precision:  57.59%; recall:  33.10%; FB1:  42.03  804
+X              RNA: precision:  31.25%; recall:   3.82%; FB1:   6.80  16
+X        cell_line: precision:  72.22%; recall:  32.01%; FB1:  44.36  234
+X        cell_type: precision:  61.27%; recall:  54.53%; FB1:  57.70  816
+X          protein: precision:  70.08%; recall:  67.59%; FB1:  68.81  3997
+
+
+
+We seem to miss a lot of the type "XXX cells". Maybe we can check if the next word
+is "cells"? Good:
+accuracy:  87.86%; precision:  66.55%; recall:  57.68%; FB1:  61.80
+              DNA: precision:  56.34%; recall:  37.46%; FB1:  45.00  930
+              RNA: precision:  41.18%; recall:   5.34%; FB1:   9.46  17
+        cell_line: precision:  68.37%; recall:  38.07%; FB1:  48.91  294
+        cell_type: precision:  60.42%; recall:  62.27%; FB1:  61.33  945
+          protein: precision:  70.36%; recall:  67.64%; FB1:  68.97  3984
+
+
+MaxEnt tends to be smarter than me, let's use the next word in general. Great
+(wow, it really helped RNA):
+accuracy:  89.82%; precision:  70.32%; recall:  64.85%; FB1:  67.48
+              DNA: precision:  62.42%; recall:  49.04%; FB1:  54.92  1099
+              RNA: precision:  67.39%; recall:  47.33%; FB1:  55.61  92
+        cell_line: precision:  64.89%; recall:  43.75%; FB1:  52.26  356
+        cell_type: precision:  68.58%; recall:  67.83%; FB1:  68.20  907
+          protein: precision:  73.35%; recall:  72.78%; FB1:  73.06  4112
+
+But I still like "cells", let's add an extra one for that? Oh good:
+accuracy:  89.81%; precision:  71.99%; recall:  63.84%; FB1:  67.67
+              DNA: precision:  65.88%; recall:  44.17%; FB1:  52.89  938
+              RNA: precision:  81.43%; recall:  43.51%; FB1:  56.72  70
+        cell_line: precision:  68.05%; recall:  43.56%; FB1:  53.12  338
+        cell_type: precision:  69.83%; recall:  67.39%; FB1:  68.59  885
+          protein: precision:  74.03%; recall:  72.92%; FB1:  73.47  4082
+
+Can we extend it to the next next word? Sweet:
+accuracy:  90.76%; precision:  73.85%; recall:  66.46%; FB1:  69.96
+              DNA: precision:  67.74%; recall:  52.39%; FB1:  59.09  1082
+              RNA: precision:  67.37%; recall:  48.85%; FB1:  56.64  95
+        cell_line: precision:  69.07%; recall:  50.76%; FB1:  58.52  388
+        cell_type: precision:  70.33%; recall:  67.72%; FB1:  69.00  883
+          protein: precision:  76.93%; recall:  73.48%; FB1:  75.17  3958
+
+XI wonder if we can fight sparsity by collapsing next and next-next, prev and
+Xprev-prev into a single feature. Nah, no good:
+Xaccuracy:  91.25%; precision:  72.46%; recall:  66.75%; FB1:  69.49
+X              DNA: precision:  62.77%; recall:  57.11%; FB1:  59.81  1273
+X              RNA: precision:  62.04%; recall:  51.15%; FB1:  56.07  108
+X        cell_line: precision:  65.50%; recall:  53.22%; FB1:  58.73  429
+X        cell_type: precision:  69.54%; recall:  69.47%; FB1:  69.50  916
+X          protein: precision:  77.45%; recall:  71.62%; FB1:  74.42  3832
+
+XHow far can we take this word chaining? Let's add another prev and another next.
+XNow we're out of memory!
+
+Let's try one more marker. "oxy" seems relevant. And it pushes us over 70:
+accuracy:  90.83%; precision:  74.25%; recall:  66.47%; FB1:  70.15
+              DNA: precision:  66.73%; recall:  54.47%; FB1:  59.98  1142
+              RNA: precision:  68.04%; recall:  50.38%; FB1:  57.89  97
+        cell_line: precision:  68.59%; recall:  54.17%; FB1:  60.53  417
+        cell_type: precision:  71.01%; recall:  68.38%; FB1:  69.67  883
+          protein: precision:  78.01%; recall:  72.18%; FB1:  74.98  3834
+
+Accuracy is above 90, F-score is above 70, and there are no obvious error classes
+in the analysis. Let's call it a day.
+
+==================================================
+Second day 
+
+Adding prevLabel to all Erik's features.
+
+// current word and previous label 
+processed 69051 tokens with 7119 phrases; found: 6672 phrases; correct: 4938.
+accuracy:  91.29%; precision:  74.01%; recall:  69.36%; FB1:  71.61
+              DNA: precision:  64.17%; recall:  59.40%; FB1:  61.69  1295
+              RNA: precision:  71.43%; recall:  45.80%; FB1:  55.81  84
+        cell_line: precision:  69.14%; recall:  54.73%; FB1:  61.10  418
+        cell_type: precision:  71.38%; recall:  72.08%; FB1:  71.73  926
+          protein: precision:  78.42%; recall:  74.73%; FB1:  76.54  3949
+
+// previous word and previous label
+xprocessed 69051 tokens with 7119 phrases; found: 6323 phrases; correct: 4741.
+xaccuracy:  90.76%; precision:  74.98%; recall:  66.60%; FB1:  70.54
+x              DNA: precision:  69.19%; recall:  51.68%; FB1:  59.17  1045
+x              RNA: precision:  72.73%; recall:  48.85%; FB1:  58.45  88
+x        cell_line: precision:  70.38%; recall:  52.65%; FB1:  60.24  395
+x        cell_type: precision:  72.38%; recall:  66.30%; FB1:  69.21  840
+x          protein: precision:  77.57%; recall:  74.03%; FB1:  75.76  3955
+=> went down. weird.
+
+// previous previous word and previous label
+xprocessed 69051 tokens with 7119 phrases; found: 6477 phrases; correct: 4801.
+xaccuracy:  90.93%; precision:  74.12%; recall:  67.44%; FB1:  70.62
+x              DNA: precision:  66.85%; recall:  52.89%; FB1:  59.06  1107
+x              RNA: precision:  67.37%; recall:  48.85%; FB1:  56.64  95
+x        cell_line: precision:  68.18%; recall:  53.98%; FB1:  60.25  418
+x        cell_type: precision:  72.13%; recall:  68.59%; FB1:  70.32  872
+x          protein: precision:  77.37%; recall:  74.40%; FB1:  75.85  3985
+
+// Has digit + previous label
+xprocessed 69051 tokens with 7119 phrases; found: 6424 phrases; correct: 4797.
+Xaccuracy:  91.04%; precision:  74.67%; recall:  67.38%; FB1:  70.84
+X              DNA: precision:  68.29%; recall:  52.18%; FB1:  59.16  1069
+X              RNA: precision:  76.71%; recall:  42.75%; FB1:  54.90  73
+X        cell_line: precision:  70.00%; recall:  51.70%; FB1:  59.48  390
+X        cell_type: precision:  71.79%; recall:  70.23%; FB1:  71.00  897
+X          protein: precision:  77.45%; recall:  74.66%; FB1:  76.03  3995
+
+// Has cell + previous label
+xprocessed 69051 tokens with 7119 phrases; found: 6478 phrases; correct: 4782.
+xaccuracy:  90.83%; precision:  73.82%; recall:  67.17%; FB1:  70.34
+x              DNA: precision:  67.31%; recall:  54.61%; FB1:  60.30  1135
+x              RNA: precision:  72.29%; recall:  45.80%; FB1:  56.07  83
+x        cell_line: precision:  70.44%; recall:  51.89%; FB1:  59.76  389
+x        cell_type: precision:  72.91%; recall:  64.56%; FB1:  68.48  812
+x          protein: precision:  76.18%; recall:  74.61%; FB1:  75.39  4059
+
+// has cell, previous word
+xprocessed 69051 tokens with 7119 phrases; found: 6328 phrases; correct: 4735.
+xaccuracy:  90.86%; precision:  74.83%; recall:  66.51%; FB1:  70.42
+x              DNA: precision:  70.00%; recall:  50.54%; FB1:  58.70  1010
+x              RNA: precision:  75.00%; recall:  41.22%; FB1:  53.20  72
+x        cell_line: precision:  69.92%; recall:  50.19%; FB1:  58.43  379
+x        cell_type: precision:  72.29%; recall:  68.27%; FB1:  70.22  866
+x          protein: precision:  77.06%; recall:  74.40%; FB1:  75.70  4001
+
+// has dash + previous label
+xprocessed 69051 tokens with 7119 phrases; found: 6448 phrases; correct: 4797.
+xaccuracy:  90.92%; precision:  74.40%; recall:  67.38%; FB1:  70.72
+x              DNA: precision:  63.95%; recall:  57.18%; FB1:  60.38  1251
+x              RNA: precision:  68.89%; recall:  47.33%; FB1:  56.11  90
+x        cell_line: precision:  69.55%; recall:  53.22%; FB1:  60.30  404
+x        cell_type: precision:  69.78%; recall:  72.52%; FB1:  71.12  953
+x          protein: precision:  79.71%; recall:  72.13%; FB1:  75.73  3750
+
+// has dash + previous word
+xprocessed 69051 tokens with 7119 phrases; found: 6589 phrases; correct: 4864.
+xaccuracy:  91.07%; precision:  73.82%; recall:  68.32%; FB1:  70.97
+x              DNA: precision:  66.20%; recall:  54.47%; FB1:  59.76  1151
+x              RNA: precision:  70.33%; recall:  48.85%; FB1:  57.66  91
+x        cell_line: precision:  68.42%; recall:  54.17%; FB1:  60.47  418
+x        cell_type: precision:  72.13%; recall:  68.59%; FB1:  70.32  872
+x          protein: precision:  76.98%; recall:  75.36%; FB1:  76.16  4057
+
+// has dash, next word
+xprocessed 69051 tokens with 7119 phrases; found: 6413 phrases; correct: 4779.
+xaccuracy:  90.97%; precision:  74.52%; recall:  67.13%; FB1:  70.63
+x              DNA: precision:  69.11%; recall:  52.61%; FB1:  59.74  1065
+x              RNA: precision:  67.39%; recall:  47.33%; FB1:  55.61  92
+x        cell_line: precision:  69.62%; recall:  52.08%; FB1:  59.59  395
+x        cell_type: precision:  72.27%; recall:  67.94%; FB1:  70.04  862
+x          protein: precision:  77.09%; recall:  74.40%; FB1:  75.72  3999
+
+// has 2 upper case letters in a row (at least)
+xprocessed 69051 tokens with 7119 phrases; found: 6550 phrases; correct: 4827.
+xaccuracy:  90.94%; precision:  73.69%; recall:  67.80%; FB1:  70.63
+x              DNA: precision:  68.44%; recall:  51.47%; FB1:  58.75  1052
+x              RNA: precision:  69.57%; recall:  48.85%; FB1:  57.40  92
+x        cell_line: precision:  69.64%; recall:  51.70%; FB1:  59.35  392
+x        cell_type: precision:  71.52%; recall:  70.67%; FB1:  71.09  906
+x          protein: precision:  76.00%; recall:  75.34%; FB1:  75.67  4108
+
+// does word have upper case inside the word?
+xprocessed 69051 tokens with 7119 phrases; found: 6496 phrases; correct: 4701.
+xaccuracy:  90.54%; precision:  72.37%; recall:  66.03%; FB1:  69.06
+x              DNA: precision:  68.12%; recall:  48.11%; FB1:  56.39  988
+x              RNA: precision:  62.62%; recall:  51.15%; FB1:  56.30  107
+x        cell_line: precision:  71.07%; recall:  48.86%; FB1:  57.91  363
+x        cell_type: precision:  68.81%; recall:  67.83%; FB1:  68.31  904
+x          protein: precision:  74.53%; recall:  74.35%; FB1:  74.44  4134
+
+// has an x, previous label
+xprocessed 69051 tokens with 7119 phrases; found: 6693 phrases; correct: 4873.
+xaccuracy:  90.92%; precision:  72.81%; recall:  68.45%; FB1:  70.56
+x              DNA: precision:  70.88%; recall:  47.32%; FB1:  56.75  934
+x              RNA: precision:  70.79%; recall:  48.09%; FB1:  57.27  89
+x        cell_line: precision:  70.70%; recall:  49.81%; FB1:  58.44  372
+x        cell_type: precision:  71.09%; recall:  69.47%; FB1:  70.27  896
+x          protein: precision:  73.78%; recall:  78.38%; FB1:  76.01  4402
+
+// has x, prev word
+xprocessed 69051 tokens with 7119 phrases; found: 6407 phrases; correct: 4781.
+xaccuracy:  90.90%; precision:  74.62%; recall:  67.16%; FB1:  70.69
+x              DNA: precision:  68.43%; recall:  51.75%; FB1:  58.93  1058
+x              RNA: precision:  75.32%; recall:  44.27%; FB1:  55.77  77
+x        cell_line: precision:  68.64%; recall:  52.65%; FB1:  59.59  405
+x        cell_type: precision:  73.47%; recall:  68.27%; FB1:  70.77  852
+x          protein: precision:  77.09%; recall:  74.69%; FB1:  75.87  4015
+
+// has x, prev label INSTEAD of has x
+xprocessed 69051 tokens with 7119 phrases; found: 6430 phrases; correct: 4792.
+xaccuracy:  91.00%; precision:  74.53%; recall:  67.31%; FB1:  70.74
+x              DNA: precision:  69.11%; recall:  53.25%; FB1:  60.15  1078
+x              RNA: precision:  74.07%; recall:  45.80%; FB1:  56.60  81
+x        cell_line: precision:  70.26%; recall:  51.89%; FB1:  59.69  390
+x        cell_type: precision:  72.35%; recall:  69.36%; FB1:  70.82  879
+x          protein: precision:  76.89%; recall:  74.25%; FB1:  75.55  4002
+
+// using all the bad features I previously ruled out
+// has digit + prevLabel, prevWord+prevLabel, prevprevWord + prevLabel, has cell + prevLabel, has cell +
+// prev Word, has dash + prevLabel, has dash + prevWord, has dash + next word, has 2 upper + prevLabel, 
+//has middle upeer + prevLabel
+xprocessed 69051 tokens with 7119 phrases; found: 6486 phrases; correct: 4670.
+xaccuracy:  90.29%; precision:  72.00%; recall:  65.60%; FB1:  68.65
+x              DNA: precision:  66.83%; recall:  49.82%; FB1:  57.08  1043
+x              RNA: precision:  70.79%; recall:  48.09%; FB1:  57.27  89
+x        cell_line: precision:  64.86%; recall:  50.00%; FB1:  56.47  407
+x        cell_type: precision:  67.16%; recall:  68.92%; FB1:  68.03  941
+x          protein: precision:  75.24%; recall:  72.73%; FB1:  73.96  4006
+=> it's worse. No surprise.
+
+// prefix_2 and suffix_2, with prevLabel
+xprocessed 69051 tokens with 7119 phrases; found: 6516 phrases; correct: 4825.
+xaccuracy:  90.86%; precision:  74.05%; recall:  67.78%; FB1:  70.77
+x              DNA: precision:  65.95%; recall:  52.75%; FB1:  58.62  1119
+x              RNA: precision:  74.70%; recall:  47.33%; FB1:  57.94  83
+x        cell_line: precision:  68.19%; recall:  50.76%; FB1:  58.20  393
+x        cell_type: precision:  71.54%; recall:  70.45%; FB1:  70.99  903
+x          protein: precision:  77.43%; recall:  75.07%; FB1:  76.23  4018
+
+// swap "has x" with "has x and next word"
+xprocessed 69051 tokens with 7119 phrases; found: 6471 phrases; correct: 4774.
+xaccuracy:  90.76%; precision:  73.78%; recall:  67.06%; FB1:  70.26
+x              DNA: precision:  67.01%; recall:  51.82%; FB1:  58.44  1082
+x              RNA: precision:  70.93%; recall:  46.56%; FB1:  56.22  86
+x        cell_line: precision:  70.15%; recall:  52.08%; FB1:  59.78  392
+x        cell_type: precision:  72.24%; recall:  66.96%; FB1:  69.50  850
+x          protein: precision:  76.31%; recall:  74.78%; FB1:  75.54  4061
+
+// NEW feature : does the word contain a Y
+xprocessed 69051 tokens with 7119 phrases; found: 6434 phrases; correct: 4753.
+xaccuracy:  90.74%; precision:  73.87%; recall:  66.76%; FB1:  70.14
+x              DNA: precision:  67.64%; recall:  51.54%; FB1:  58.50  1066
+x              RNA: precision:  66.30%; recall:  46.56%; FB1:  54.71  92
+x        cell_line: precision:  69.92%; recall:  51.52%; FB1:  59.32  389
+x        cell_type: precision:  71.99%; recall:  70.34%; FB1:  71.15  896
+x          protein: precision:  76.52%; recall:  73.70%; FB1:  75.08  3991
+
+//has oxy, prevLabel
+xprocessed 69051 tokens with 7119 phrases; found: 6190 phrases; correct: 4622.
+xaccuracy:  90.52%; precision:  74.67%; recall:  64.92%; FB1:  69.46
+x              DNA: precision:  72.66%; recall:  44.46%; FB1:  55.17  856
+x              RNA: precision:  74.67%; recall:  42.75%; FB1:  54.37  75
+x        cell_line: precision:  72.44%; recall:  48.30%; FB1:  57.95  352
+x        cell_type: precision:  73.93%; recall:  66.19%; FB1:  69.85  821
+x          protein: precision:  75.43%; recall:  74.37%; FB1:  74.90  4086
+
+// has greek
+xprocessed 69051 tokens with 7119 phrases; found: 6517 phrases; correct: 4842.
+xaccuracy:  91.12%; precision:  74.30%; recall:  68.02%; FB1:  71.02
+x              DNA: precision:  66.39%; recall:  56.18%; FB1:  60.86  1184
+x              RNA: precision:  67.02%; recall:  48.09%; FB1:  56.00  94
+x        cell_line: precision:  69.77%; recall:  52.46%; FB1:  59.89  397
+x        cell_type: precision:  71.49%; recall:  71.10%; FB1:  71.30  912
+x          protein: precision:  77.96%; recall:  73.94%; FB1:  75.90  3930
+=> ALMOST!! maybe with a bit more greek letters?
+
+// has "cell" + next word has "line"
+xprocessed 69051 tokens with 7119 phrases; found: 6488 phrases; correct: 4799.
+xaccuracy:  90.91%; precision:  73.97%; recall:  67.41%; FB1:  70.54
+x              DNA: precision:  66.94%; recall:  53.40%; FB1:  59.40  1116
+x              RNA: precision:  71.43%; recall:  45.80%; FB1:  55.81  84
+x        cell_line: precision:  69.70%; recall:  52.27%; FB1:  59.74  396
+x        cell_type: precision:  73.29%; recall:  67.61%; FB1:  70.33  846
+x          protein: precision:  76.52%; recall:  74.71%; FB1:  75.60  4046
