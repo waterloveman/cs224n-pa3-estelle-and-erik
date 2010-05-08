@@ -507,7 +507,7 @@ public class MaximumEntropyClassifierTester {
     }
     if (position > 1){
       features.add("PREV_PREV_WORD-" + sentence.get(position - 2));
-      // TEST :  BAD : features.add("PREV_PREV_WORD-" + sentence.get(position - 2)+", PREV_LABEL-"+prevLabel); 
+      // TEST :  BAD :    features.add("PREV_PREV_WORD-" + sentence.get(position - 2)+", PREV_LABEL-"+prevLabel); 
     }
     
     // add feature for next words
@@ -522,10 +522,14 @@ public class MaximumEntropyClassifierTester {
     // Does the word contain "cell"?
     if (word.contains("cell")) {
     	features.add("HAS_CELL");
-    	// TEST : BAD    	features.add("HAS_CELL, PREV_LABEL-"+prevLabel);
+    	// TEST : BAD    		features.add("HAS_CELL, PREV_LABEL-"+prevLabel);
     	if (position>0){
-    	// TEST : 
-    		features.add("HAS_CELL, PREV_WORD-"+ sentence.get(position-1));
+    	// TEST : BAD :  features.add("HAS_CELL, PREV_WORD-"+ sentence.get(position-1));
+
+    	}
+    	if (position < sentence.size()-1){
+    		// TEST :
+    		features.add("HAS_CELL, NEXT_HAS_LINE");
     	}
     }
     
@@ -533,12 +537,12 @@ public class MaximumEntropyClassifierTester {
     for (char c : word.toCharArray()) {
       if (c == '-') {
         features.add("HAS_DASH");
-        // TEST : features.add("HAS_DASH, PREV_LABEL-"+prevLabel);
+        // TEST : BAD :features.add("HAS_DASH, PREV_LABEL-"+prevLabel);
         if (position>0){
-        // TEST : features.add("HAS_DASH, PREV_WORD-"+sentence.get(position-1));
+        // TEST : BAD : features.add("HAS_DASH, PREV_WORD-"+sentence.get(position-1));
       	}
         if (position<sentence.size()-1){
-      	// TEST : features.add("HAS_DASH, NEXT_WORD-"+sentence.get(position+1));
+      	//TEST : BAD : features.add("HAS_DASH, NEXT_WORD-"+sentence.get(position+1));
         }
         break;
       }
@@ -551,25 +555,26 @@ public class MaximumEntropyClassifierTester {
         break;
       }
     }
-    // TEST : does the word have more than 2 upper case letters in a row? or a capital that's not at the beginning?
-    //Pattern acronymPatt = Pattern.compile("*[A-Z]+*");
-    /*if(word.matches("*[A-Z]+*")){
+    // TEST :BAD : does the word have more than 2 upper case letters in a row? or a capital that's not at the beginning?
+ /*   if(word.matches(".*[A-Z]{2,}.*")){
+    	//System.out.println("Match! "+word);
     	features.add("HAS_2_UPPER");
     	features.add("HAS_2_UPPER, PREV_LABEL-"+prevLabel);
     }
+    // TEST : BAD : does the word have a capital letter inside the word?
     if(word.matches(".+[A-Z]*")){
     	features.add("HAS_MIDDLE_UPPER");
     	features.add("HAS_MIDDLE_UPPER, PREV_LABEL-"+prevLabel);
-    }
-    */
+    }*/
+    
     
     
     // Add prefixes/suffixes
     if (word.length() > 1) {
       features.add("SUFFIX_2-" + word.substring(word.length() - 2));
       features.add("PREFIX_2-" + word.substring(0, 2));
-      // TEST : features.add("SUFFIX_2-" + word.substring(word.length() - 2)+", PREV_LABEL-"+prevLabel);
-      // TEST : features.add("PREFIX_2-" + word.substring(0, 2)+", PREV_LABEL-"+prevLabel);
+      // TEST :       features.add("SUFFIX_2-" + word.substring(word.length() - 2)+", PREV_LABEL-"+prevLabel);
+      // TEST :       features.add("PREFIX_2-" + word.substring(0, 2)+", PREV_LABEL-"+prevLabel);
     }
     if (word.length() > 2) {
       features.add("SUFFIX_3-" + word.substring(word.length() - 3));
@@ -585,22 +590,23 @@ public class MaximumEntropyClassifierTester {
     // Does the word contain an x?
     if (lword.contains("x")) {
     	features.add("HAS_X");
-    	// TEST : features.add("HAS_X, PREV_LABEL-"+prevLabel);
+    	// TEST : BAD : 
+    	//features.add("HAS_X, PREV_LABEL-"+prevLabel);
     	if (position >0){
-    	// TEST : features.add("HAS_X, PREV_WORD-"+ sentence.get(position-1));
+    	// TEST : BAD : features.add("HAS_X, PREV_WORD-"+ sentence.get(position-1));
     	}
     	if (position< sentence.size() -1){
-        // TEST : features.add("HAS_X, NEXT_WORD-"+ sentence.get(position+1));    	
+        // TEST : BAD :    		features.add("HAS_X, NEXT_WORD-"+ sentence.get(position+1));    	
     	}
     }
     // TEST : does the word contain a y?
-    //if (lword.contains("y")) features.add("HAS_Y");
+    // BAD : if (lword.contains("y")) features.add("HAS_Y");
     
     
     // Does the word contain "oxy"?
     if (lword.contains("oxy")) {
     	features.add("HAS_OXY");
-    	// TEST : features.add("HAS_OXY, PREV_LABEL-"+prevLabel);
+    	// TEST : BAD : features.add("HAS_OXY, PREV_LABEL-"+prevLabel);
     	if (position >0){
     	// TEST : features.add("HAS_OXY, PREV_WORD-"+ sentence.get(position-1));
     	}
@@ -619,8 +625,8 @@ public class MaximumEntropyClassifierTester {
     // => surprised that this doesn't help... Is it redundant with other features?
     
     // Does the word contain alpha or beta?
-    // if (word.contains("alpha") || word.contains("beta"))
-    // features.add("HAS_GREEK");
+    if (word.contains("alpha") || word.contains("beta"))
+     features.add("HAS_GREEK");
 
     // Does the word contain a lower-case letter?
     // for (char c : word.toCharArray()) {
@@ -832,6 +838,11 @@ public class MaximumEntropyClassifierTester {
       return;
     }
 
+    System.out.println("tests");
+    String test = "aaEARsr";
+    System.out.println(test.matches(".*[A-Z]+.*"));
+    System.out.println("done tests");
+    
     Map<String, String> props = CommandLineUtils.simpleCommandLineParser(args);
 
     String trainFile = args[0] + ".train";
