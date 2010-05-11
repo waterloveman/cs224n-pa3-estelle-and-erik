@@ -32,6 +32,8 @@ Gold
     (NP (JJ CD40-activated) (JJ human) (NN B) (NNS lymphocytes)))
   (. .))
 
+=================================================================================================
+
 Chunked:
 (ROOT
   (S
@@ -58,5 +60,40 @@ Gold
       (NP (NN CrmA))))
   (VP (VBD blocked)
     (NP (JJ Fas-mediated) (NN apoptosis)))
+  (. .))
+
+================================================================================================
+Unchunked
+(ROOT
+  (NP
+    (NP
+      (NP (NN Tumor)
+        (ADJP (NN necrosis) (NN factor) (NN receptor))
+        (NN expression))
+      (CC and)
+      (NP (JJ signal) (NN transduction)))
+    (PP (IN in)
+      (NP (JJ HIV-1-infected) (NNS cells)))
+    (. .)))
+
+Chunked
+(ROOT
+  (NP
+    (NP
+      (NP (DT Tumor_necrosis_factor_receptor) (NN expression))
+      (CC and)
+      (NP (JJ signal) (NN transduction)))
+    (PP (IN in)
+      (NP (NN HIV-1-infected_cells)))
+    (. .)))
+
+Gold
+(NP
+  (NP
+    (NP (NN Tumor) (NN necrosis) (NN factor) (NN receptor) (NN expression))
+    (CC and)
+    (NP (NN signal) (NN transduction)))
+  (PP (IN in)
+    (NP (JJ HIV-1-infected) (NNS cells)))
   (. .))
 
