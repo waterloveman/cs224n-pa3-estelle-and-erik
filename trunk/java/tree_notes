@@ -1,0 +1,62 @@
+Chunked
+(ROOT
+  (NP
+    (NP
+      (NP (NN Tyrosine) (NN kinase))
+      (CC and)
+      (NP (JJ cAMP-dependent_protein_kinase) (NNS activities)))
+    (PP (IN in)
+      (NP (NN CD40-activated_human_B_lymphocytes)))
+    (. .)))
+    
+Unchunked
+(ROOT
+  (NP
+    (NP
+      (NP (NN Tyrosine) (NN kinase))
+      (CC and)
+      (NP (JJ cAMP-dependent) (NN protein) (NN kinase) (NNS activities)))
+    (PP (IN in)
+      (NP (JJ CD40-activated) (JJ human) (NN B) (NNS lymphocytes)))
+    (. .)))
+
+Gold
+(NP
+  (NP
+    (NP
+      (NP (NN Tyrosine) (NN kinase))
+      (CC and)
+      (NP (JJ cAMP-dependent) (NN protein) (NN kinase)))
+    (NNS activities))
+  (PP (IN in)
+    (NP (JJ CD40-activated) (JJ human) (NN B) (NNS lymphocytes)))
+  (. .))
+
+Chunked:
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN contrast)))
+    (, ,)
+    (NP
+      (NP (NN interleukin-1beta-converting_enzyme_family_protease_inhibitors_Ac-DEVD-CHO))
+      (CC and)
+      (NP (NN CrmA)))
+    (VP (VBD blocked)
+      (NP (JJ Fas-mediated) (NNS apoptosis)))
+    (. .)))
+
+Gold
+(S
+  (PP (IN In)
+    (NP (NN contrast)))
+  (, ,)
+  (NP (JJ interleukin-1beta-converting) (NN enzyme) (NN family) (NN protease) (NNS inhibitors)
+    (NP
+      (NP (NN Ac-DEVD-CHO))
+      (CC and)
+      (NP (NN CrmA))))
+  (VP (VBD blocked)
+    (NP (JJ Fas-mediated) (NN apoptosis)))
+  (. .))
+
